@@ -1,7 +1,7 @@
 // Module ID: 14940
 // Function ID: 14941
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 5088, 9036, 5379, 5391, 1105, 2]
+// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 5088, 9031, 5379, 5391, 1105, 2]
 
 // Module 14940 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
-            const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+            const NitroWheelIcon = tmp(9031).NitroWheelIcon;
             const tmp18 = hasOwnProperty(NitroWheelIcon, obj2);
             cResult[12] = tmp18;
             tmp15 = tmp18;
@@ -228,7 +228,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
   const Button = tmp6(5379).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(9036).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9031).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }

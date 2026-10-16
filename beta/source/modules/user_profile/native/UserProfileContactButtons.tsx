@@ -1,7 +1,7 @@
 // Module ID: 13420
 // Function ID: 13421
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4760, 1085, 21, 5092, 587, 558, 576, 5379, 6852, 8315, 13188, 504, 4962, 13421, 5032, 1126, 12363, 7018, 10625, 5056, 5934, 7015, 13423, 8199, 7574, 9322, 12852, 2]
+// Dependencies: [109, 19, 17, 4760, 1085, 21, 5092, 587, 558, 576, 5379, 6852, 8310, 13188, 504, 4962, 13421, 5032, 1126, 12363, 7018, 10625, 5056, 5934, 7015, 13423, 8194, 7569, 9317, 12852, 2]
 
 // Module 13420 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
@@ -155,7 +155,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   user = user.user;
   ({ hasCustomProfileTheme, location: _location, ButtonComponent } = user);
   const newestAnalyticsLocation = trackUserProfileAction(6852)().newestAnalyticsLocation;
-  let obj2 = user(8315);
+  let obj2 = user(8310);
   const tmp4 = trackUserProfileAction;
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
@@ -323,7 +323,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   ({ hasCustomProfileTheme, ButtonComponent } = user);
   const tmp = trackUserProfileAction;
   const newestAnalyticsLocation = trackUserProfileAction(6852)().newestAnalyticsLocation;
-  let obj = user(8315);
+  let obj = user(8310);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
     _location = newestAnalyticsLocation;
@@ -420,7 +420,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   const cResult = obj.c(88);
   user = user.user;
   ({ disableMessage, disableCalls, location: _location, hasCustomProfileTheme, style } = user);
-  let obj2 = user(8315);
+  let obj2 = user(8310);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -591,8 +591,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
       }
       const obj3 = { color: tmp15, size: "xs" };
       cResult[57] = tmp15;
-      cResult[58] = closure_8(user(8199).ChatIcon, obj3);
-      const tmp26 = closure_8(user(8199).ChatIcon, obj3);
+      cResult[58] = closure_8(user(8194).ChatIcon, obj3);
+      const tmp26 = closure_8(user(8194).ChatIcon, obj3);
     } else {
       class O {
         constructor() {

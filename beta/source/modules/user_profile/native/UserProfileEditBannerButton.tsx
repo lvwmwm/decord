@@ -1,17 +1,17 @@
 // Module ID: 14854
 // Function ID: 14855
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 8315, 8304, 1126, 5088, 6185, 9724, 8357, 8373, 14855, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 8310, 8299, 1126, 5088, 6185, 9719, 8352, 8368, 14855, 2]
 
 // Module 14854 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Pressables from "Pressables" /* 6185 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8357 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8373 */;
-import PencilIcon2 from "PencilIcon" /* 9724 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8352 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8368 */;
+import PencilIcon2 from "PencilIcon" /* 9719 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -144,7 +144,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditBut
   const tmp5 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const PencilIcon = tmp(9724).PencilIcon;
+    const PencilIcon = tmp(9719).PencilIcon;
     const tmp9 = hasOwnProperty(PencilIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;

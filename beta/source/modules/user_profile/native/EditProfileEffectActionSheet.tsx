@@ -1,7 +1,7 @@
 // Module ID: 14887
 // Function ID: 14888
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7280, 7270, 1085, 21, 5092, 587, 558, 576, 8311, 8295, 6852, 6879, 1265, 8296, 8292, 8289, 1126, 5088, 8297, 6840, 10090, 504, 14888, 8291, 8312, 14889, 13478, 13479, 8298, 10511, 5391, 2]
+// Dependencies: [32, 19, 17, 7275, 7265, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8291, 8287, 8284, 1126, 5088, 8292, 6840, 10090, 504, 14888, 8286, 8307, 14889, 13478, 13479, 8293, 10511, 5391, 2]
 
 // Module 14887 (EditProfileEffectActionSheet)
 import react2 from "react" /* 576 */;
@@ -10,18 +10,18 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7270 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8292 */;
-import useShopProductItems from "useShopProductItems" /* 8296 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7265 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8287 */;
+import useShopProductItems from "useShopProductItems" /* 8291 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
 import EditProfileEffectSection from "EditProfileEffectSection" /* 14889 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
   let memo;
   let tmp = closure_12();
   let str = user.id;
-  let tmp4 = isTryItOut(8311);
+  let tmp4 = isTryItOut(8306);
   if (str == null) {
     str = "";
   }
@@ -231,7 +231,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
   const tmp6 = selectedProfileEffect(memo.useState(currentProfileEffect), 2);
   selectedProfileEffect = tmp6[0];
   const tmp8 = tmp6[1];
-  let obj = guildId(8295);
+  let obj = guildId(8290);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   const tmp2Result = isTryItOut(6852);
   const analyticsLocations = tmp2Result(tmp2(6879).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
@@ -294,7 +294,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
   const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(6879).EDIT_PROFILE_EFFECT_SHEET };
   skuId = undefined;
   tmp14 = closure_10;
-  const tmp2Result2 = isTryItOut(8297);
+  const tmp2Result2 = isTryItOut(8292);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }
@@ -736,7 +736,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8298)(previewSkuId);
+  const tmp2 = purchase(8293)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;

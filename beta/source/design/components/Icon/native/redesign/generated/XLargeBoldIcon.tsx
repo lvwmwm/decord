@@ -1,14 +1,14 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 8846
+// Function ID: 8847
 // Name: XLargeBoldIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8852, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8847, 4817, 2]
 
-// Module 8851 (XLargeBoldIcon)
+// Module 8846 (XLargeBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8852 */;
+import AssetRegistry from "AssetRegistry" /* 8847 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 15351
 // Function ID: 15352
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1390, 1087, 558, 576, 15352, 15353, 15354, 504, 4769, 7275, 2]
+// Dependencies: [19, 1390, 1087, 558, 576, 15352, 15353, 15354, 504, 4769, 7270, 2]
 
 // Module 15351 (useFilteredAndSortedProducts)
 import react2 from "react" /* 576 */;

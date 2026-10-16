@@ -1,7 +1,7 @@
 // Module ID: 18342
 // Function ID: 18343
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1390, 18338, 1085, 21, 5092, 587, 1126, 4962, 18340, 558, 576, 4832, 6266, 10300, 1631, 1503, 6095, 18343, 1200, 11146, 18344, 6262, 6739, 8359, 8625, 6728, 2]
+// Dependencies: [32, 19, 17, 1390, 18338, 1085, 21, 5092, 587, 1126, 4962, 18340, 558, 576, 4832, 6266, 10300, 1631, 1503, 6095, 18343, 1200, 11146, 18344, 6262, 6739, 8354, 8620, 6728, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
 // Module 18342 (GuildSettingsModalAuditLogFilter)

@@ -1,7 +1,7 @@
 // Module ID: 16145
 // Function ID: 16146
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1085, 21, 558, 576, 4818, 587, 8542, 6265, 6190, 6741, 5377, 5043, 5379, 5088, 4827, 5391, 8582, 7093, 2]
+// Dependencies: [19, 17, 1085, 21, 558, 576, 4818, 587, 8537, 6265, 6190, 6741, 5377, 5043, 5379, 5088, 4827, 5391, 8577, 7093, 2]
 
 // Module 16145 (UserSettingsDesignSystemExperimentalButtons)
 import react2 from "react" /* 576 */;
@@ -18,8 +18,8 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 6190 */;
 import TableRowGroup7 from "TableRowGroup" /* 6265 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 6741 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 7093 */;
-import native2 from "native" /* 8542 */;
-import RowButton2 from "RowButton" /* 8582 */;
+import native2 from "native" /* 8537 */;
+import RowButton2 from "RowButton" /* 8577 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -107,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       accessibilityHint: "double-tap for more options",
       iconOpticalOffsetMargin: -6
     };
-    HeaderButton = tmp(8542).HeaderButton;
+    HeaderButton = tmp(8537).HeaderButton;
     const tmp13 = metroRequire(TableRowGroup, obj7);
     cResult[3] = tmp13;
     tmp10 = tmp13;
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       icon: AssetRegistryDefault3,
       round: true
     };
-    const InputButton = tmp(8542).InputButton;
+    const InputButton = tmp(8537).InputButton;
     const tmp16 = metroRequire(InputButton, obj10);
     cResult[4] = tmp16;
     tmp14 = tmp16;
@@ -147,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       iconPosition: "end",
       accessibilityLabel: "Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     };
-    const InputButton2 = tmp(8542).InputButton;
+    const InputButton2 = tmp(8537).InputButton;
     items[1] = metroRequire(InputButton2, obj13);
     const tmp20 = metroRequire(TableRowGroup2, obj11);
     cResult[5] = tmp20;
@@ -173,7 +173,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const TableRowGroup3 = tmp(6265).TableRowGroup;
     obj16 = { children: items1 };
     items1 = [tmp21, ];
-    TwinButtons = tmp(8542).TwinButtons;
+    TwinButtons = tmp(8537).TwinButtons;
     const obj17 = {
       onPress() {
 
@@ -207,7 +207,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     const obj19 = { onPress: tmp29, children: metroRequire(_false, obj20) };
     obj20 = { style: { borderColor: "pink", borderWidth: 1, borderRadius: 8, padding: 12 }, children: metroRequire(Text_Text.Text, { variant: "text-md/semibold", children: "This is a custom button" }) };
-    const PressableScale = tmp(8542).PressableScale;
+    const PressableScale = tmp(8537).PressableScale;
     const tmp33 = metroRequire(PressableScale, obj19);
     cResult[11] = tmp33;
     tmp30 = tmp33;
@@ -267,7 +267,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         }
     };
     tmp4Result = LinearGradientDefault;
-    RowButton = tmp(8582).RowButton;
+    RowButton = tmp(8577).RowButton;
     const tmp50 = metroRequire(ThemeContextProvider, obj25);
     cResult[19] = tmp50;
     tmp46 = tmp50;
@@ -308,7 +308,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       }
       if (cResult[28] !== collapsibleFloatingActionButtonState) {
         const obj30 = { icon: AssetRegistryDefault4, onPress: tmp61, positionBottom: 32, text: "Floating Action Button", state: collapsibleFloatingActionButtonState };
-        const CollapsibleFloatingActionButton = tmp(8542).CollapsibleFloatingActionButton;
+        const CollapsibleFloatingActionButton = tmp(8537).CollapsibleFloatingActionButton;
         const tmp64 = metroRequire(CollapsibleFloatingActionButton, obj30);
         cResult[28] = collapsibleFloatingActionButtonState;
         cResult[29] = tmp64;

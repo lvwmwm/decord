@@ -1,7 +1,7 @@
 // Module ID: 17693
 // Function ID: 17694
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1390, 2062, 21, 5092, 587, 558, 576, 504, 4769, 5056, 13747, 6157, 17694, 1200, 9538, 5088, 1126, 5379, 6840, 2]
+// Dependencies: [19, 17, 1390, 2062, 21, 5092, 587, 558, 576, 504, 4769, 5056, 13747, 6157, 17694, 1200, 9533, 5088, 1126, 5379, 6840, 2]
 
 // Module 17693 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9538 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9533 */;
 import AppIconUtils from "AppIconUtils" /* 13747 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17694 */;
 import react from "react" /* 19 */;

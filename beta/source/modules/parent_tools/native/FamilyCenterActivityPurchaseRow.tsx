@@ -1,7 +1,7 @@
 // Module ID: 15180
 // Function ID: 15181
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8298, 15181, 6940, 15182, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8293, 15181, 6940, 15182, 5088, 2]
 
 // Module 15180 (FamilyCenterActivityPurchaseRow)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
 import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 11988
 // Function ID: 11989
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5081, 2062, 1393, 21, 5092, 587, 1382, 558, 576, 573, 1415, 6820, 5088, 1126, 11989, 6208, 6185, 8972, 1273, 4850, 5093, 1200, 5056, 12090, 2000, 5922, 5397, 8542, 2041, 7990, 7987, 2049, 10013, 2]
+// Dependencies: [32, 19, 17, 5081, 2062, 1393, 21, 5092, 587, 1382, 558, 576, 573, 1415, 6820, 5088, 1126, 11989, 6208, 6185, 8967, 1273, 4850, 5093, 1200, 5056, 12090, 2000, 5922, 5397, 8537, 2041, 7985, 7982, 2049, 10008, 2]
 
 // Module 11988 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7990 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7985 */;
 import _mod11989 from "module_11989" /* 11989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -497,13 +497,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapToR
     }
     let tmp9 = !tmp7;
     if (tmp9) {
-      tmp9 = null != channel.lastMessageId && emoji(7990)(channel);
-      const tmp10 = null != channel.lastMessageId && emoji(7990)(channel);
+      tmp9 = null != channel.lastMessageId && emoji(7985)(channel);
+      const tmp10 = null != channel.lastMessageId && emoji(7985)(channel);
     }
     tmp5 = tmp9;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7987);
+    const tmpResult = tmp(7982);
     const fallbackDoubleTapDisambiguatedEmoji = tmpResult.getFallbackDoubleTapDisambiguatedEmoji();
     cResult[0] = fallbackDoubleTapDisambiguatedEmoji;
     emoji = fallbackDoubleTapDisambiguatedEmoji;
@@ -540,7 +540,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapToR
                   return tmp;
                 }
         };
-        const tmp20 = closure_9(emoji(10013), obj2);
+        const tmp20 = closure_9(emoji(10008), obj2);
         cResult[2] = channel;
         cResult[3] = tmp20;
         tmp17 = tmp20;

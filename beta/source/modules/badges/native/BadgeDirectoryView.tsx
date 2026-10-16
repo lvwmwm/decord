@@ -1,13 +1,13 @@
 // Module ID: 10577
 // Function ID: 10578
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 10578, 1390, 8317, 1085, 21, 5092, 587, 558, 1497, 576, 5088, 8542, 1126, 10570, 1631, 504, 8322, 10579, 10580, 10575, 7094, 10582, 5379, 6154, 2]
+// Dependencies: [19, 17, 10578, 1390, 8312, 1085, 21, 5092, 587, 558, 1497, 576, 5088, 8537, 1126, 10570, 1631, 504, 8317, 10579, 10580, 10575, 7094, 10582, 5379, 6154, 2]
 
 // Module 10577 (BadgeDirectoryView)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10570 */;
 import BadgeUtils from "BadgeUtils" /* 10579 */;
 import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10582 */;
@@ -15,7 +15,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10578 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

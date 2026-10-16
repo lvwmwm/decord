@@ -1,17 +1,17 @@
 // Module ID: 18613
 // Function ID: 18614
 // Name: GuildSettingsModalGuildSpace
-// Dependencies: [19, 4750, 8639, 1085, 21, 5092, 587, 558, 576, 1403, 8638, 18294, 6896, 504, 1126, 2472, 6265, 5377, 8580, 6728, 2]
+// Dependencies: [19, 4750, 8634, 1085, 21, 5092, 587, 558, 576, 1403, 8633, 18294, 6896, 504, 1126, 2472, 6265, 5377, 8575, 6728, 2]
 
 // Module 18613 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 587 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import _modDef2472 from "module_2472" /* 2472 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import ServerHubAnalytics from "ServerHubAnalytics" /* 18294 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj3 = { children: items5 };
     const obj4 = { style: tmp.container, contentContainerStyle: items3, children: closure_8(Stack, obj5) };
     items3 = [tmp.content, contentContainerStyle];
-    const Form = tmp2(8580).Form;
+    const Form = tmp2(8575).Form;
     obj5 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: closure_9(TableRowGroup, obj6) };
     Stack = tmp2(5377).Stack;
     obj6 = { title: intl.string(stateFromStores(1126).t["0JLdD3"]), description: intl2.string(stateFromStores(1126).t.Xa1KEN), hasIcons: false, children: items4 };

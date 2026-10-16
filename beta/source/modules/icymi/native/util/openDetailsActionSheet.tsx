@@ -1,13 +1,13 @@
 // Module ID: 16954
 // Function ID: 16955
 // Name: openDetailsActionSheet
-// Dependencies: [8472, 5056, 16922, 2000, 2]
+// Dependencies: [8467, 5056, 16922, 2000, 2]
 // Exports: openDetailsActionSheet
 
 // Module 16954 (openDetailsActionSheet)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/native/util/openDetailsActionSheet.tsx");

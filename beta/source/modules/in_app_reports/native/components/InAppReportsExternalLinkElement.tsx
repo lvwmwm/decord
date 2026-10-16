@@ -1,7 +1,7 @@
 // Module ID: 13574
 // Function ID: 13575
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5092, 558, 576, 6663, 5088, 1126, 4806, 6188, 13575, 8582, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 6663, 5088, 1126, 4806, 6188, 13575, 8577, 2]
 
 // Module 13574 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
@@ -222,7 +222,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       }
     }
     const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
-    const tmp12 = closure_4(url(8582).RowButton, obj3);
+    const tmp12 = closure_4(url(8577).RowButton, obj3);
     cResult[3] = link_description;
     cResult[4] = link_text;
     cResult[5] = tmp5;
@@ -249,7 +249,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       arrow: false,
       accessibilityRole: "link"
     };
-    const RowButton = url(8582).RowButton;
+    const RowButton = url(8577).RowButton;
     obj2 = { IconComponent: url(13575).LinkExternalMediumIcon };
     TableRowIcon = url(6188).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);

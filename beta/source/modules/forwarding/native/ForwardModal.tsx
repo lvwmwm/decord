@@ -1,7 +1,7 @@
 // Module ID: 11556
 // Function ID: 11557
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7314, 7319, 8454, 2065, 5432, 8481, 11557, 10217, 21, 5092, 587, 558, 576, 1497, 11558, 504, 11554, 11553, 6207, 11560, 4809, 1126, 1388, 11562, 5301, 11563, 9317, 5103, 11564, 11565, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11568, 10226, 11569, 11579, 11593, 2]
+// Dependencies: [5, 32, 19, 17, 7309, 7314, 8449, 2065, 5432, 8476, 11557, 10217, 21, 5092, 587, 558, 576, 1497, 11558, 504, 11554, 11553, 6207, 11560, 4809, 1126, 1388, 11562, 5301, 11563, 9312, 5103, 11564, 11565, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11568, 10226, 11569, 11579, 11593, 2]
 
 // Module 11556 (ForwardModal)
 import react_native from "react-native" /* 17 */;
@@ -24,12 +24,12 @@ import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11560 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7314 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7319 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8454 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7309 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7314 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8449 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8481 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8476 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

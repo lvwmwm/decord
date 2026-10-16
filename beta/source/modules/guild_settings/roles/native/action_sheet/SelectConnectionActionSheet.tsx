@@ -1,7 +1,7 @@
 // Module ID: 18436
 // Function ID: 18437
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 558, 576, 10712, 1200, 6180, 5031, 6839, 1126, 7225, 1415, 4969, 5056, 8530, 8779, 6307, 6814, 6265, 6899, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 10712, 1200, 6180, 5031, 6839, 1126, 7220, 1415, 4969, 5056, 8525, 8774, 6307, 6814, 6265, 6899, 2]
 
 // Module 18436 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -31,9 +31,9 @@ const TableRowGroup = tmp3(6265);
 const BottomSheetModal = tmp3(6307);
 const common_SafeAreaView = tmp3(6814);
 const ActionSheet2 = tmp3(6899);
-const ConnectionsHooks = tmp3(7225);
-const SegmentedControlState = tmp3(8530);
-const SegmentedControl = tmp3(8779);
+const ConnectionsHooks = tmp3(7220);
+const SegmentedControlState = tmp3(8525);
+const SegmentedControl = tmp3(8774);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;

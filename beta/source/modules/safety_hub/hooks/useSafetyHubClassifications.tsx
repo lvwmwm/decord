@@ -1,15 +1,15 @@
 // Module ID: 11473
 // Function ID: 11474
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 7537, 7513, 558, 576, 504, 11, 7512, 7514, 11474, 2]
+// Dependencies: [19, 7532, 7508, 558, 576, 504, 11, 7507, 7509, 11474, 2]
 
 // Module 11473 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11474 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
   }
   const tmpResult7 = tmp(504);
   const stateFromStores3 = tmpResult7.useStateFromStores(tmp16, tmp17);
-  const tmpResult8 = tmp(7512);
+  const tmpResult8 = tmp(7507);
   if (tmpResult8.isGuildClassification(stateFromStores)) {
     let GUILD_MEMBER;
     const guild_metadata = stateFromStores.guild_metadata;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
         return SafetyHubStore.getIsAppealEligible();
       }
     }
-    if (undefined === tmp(7514).MemberType.OWNER) {
+    if (undefined === tmp(7509).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -267,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(7514).MemberType.OWNER) {
+    if (member_type === tmp(7509).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;

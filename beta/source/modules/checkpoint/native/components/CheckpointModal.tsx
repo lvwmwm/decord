@@ -1,7 +1,7 @@
 // Module ID: 15999
 // Function ID: 16000
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 16000, 5437, 1096, 21, 5092, 587, 1631, 15995, 16001, 16002, 504, 11082, 8229, 16005, 16006, 16007, 16009, 16012, 5934, 4808, 1126, 4827, 16013, 16014, 16016, 16023, 16036, 16037, 6208, 16038, 16042, 16048, 558, 576, 16050, 2]
+// Dependencies: [5, 32, 19, 17, 16000, 5437, 1096, 21, 5092, 587, 1631, 15995, 16001, 16002, 504, 11082, 8224, 16005, 16006, 16007, 16009, 16012, 5934, 4808, 1126, 4827, 16013, 16014, 16016, 16023, 16036, 16037, 6208, 16038, 16042, 16048, 558, 576, 16050, 2]
 
 // Module 15999 (CheckpointModal)
 import react2 from "react" /* 576 */;
@@ -248,7 +248,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   if (stateFromStores) {
     VoiceNormalIcon = tmp5(11082).VoiceXIcon;
   } else {
-    VoiceNormalIcon = tmp5(8229).VoiceNormalIcon;
+    VoiceNormalIcon = tmp5(8224).VoiceNormalIcon;
   }
   const tmp2Result = tmp2(16005);
   react = tmp2Result(tmp2(16006));

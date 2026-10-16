@@ -1,7 +1,7 @@
 // Module ID: 10352
 // Function ID: 10353
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 576, 4972, 10353, 4827, 5421, 5106, 8225, 5002, 9636, 2]
+// Dependencies: [19, 21, 558, 576, 4972, 10353, 4827, 5421, 5106, 8220, 5002, 9631, 2]
 
 // Module 10352 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let tmp;
 let tmp4;
 const native = tmp(4827);
-const ModalStackNavigatorDefault = tmp4(9636);
+const ModalStackNavigatorDefault = tmp4(9631);
 const ChannelVoiceChatDefault = tmp4(10353);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelVoice
     str = "";
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(tmp(8225).StageIcon, { size: "sm" });
+    const tmp11 = jsx(tmp(8220).StageIcon, { size: "sm" });
     cResult[3] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -142,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelVoice
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8225).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8220).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     const Provider = reactDefault.Provider;
     const tmp2 = channel;

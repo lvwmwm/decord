@@ -1,7 +1,7 @@
 // Module ID: 12927
 // Function ID: 12928
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5092, 558, 576, 9215, 12912, 6157, 1126, 5088, 5379, 6814, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 9210, 12912, 6157, 1126, 5088, 5379, 6814, 2]
 
 // Module 12927 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
 import _modDef12912 from "module_12912" /* 12912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

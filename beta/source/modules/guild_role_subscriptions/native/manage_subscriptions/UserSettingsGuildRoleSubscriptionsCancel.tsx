@@ -1,7 +1,7 @@
 // Module ID: 15519
 // Function ID: 15520
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 4775, 21, 5092, 587, 558, 576, 15520, 4702, 1126, 6159, 1200, 5088, 15510, 6157, 15528, 6852, 6879, 9399, 5300, 5724, 4808, 4791, 5379, 6663, 15516, 15505, 15529, 15530, 504, 2]
+// Dependencies: [5, 32, 19, 17, 4775, 21, 5092, 587, 558, 576, 15520, 4702, 1126, 6159, 1200, 5088, 15510, 6157, 15528, 6852, 6879, 9394, 5300, 5724, 4808, 4791, 5379, 6663, 15516, 15505, 15529, 15530, 504, 2]
 
 // Module 15519 (UserSettingsGuildRoleSubscriptionsCancel)
 import react2 from "react" /* 576 */;
@@ -57,7 +57,7 @@ function CancelSubscriptionButtonFooter(guild) {
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp5 = subscription(6852);
   const analyticsLocations = tmp5(subscription(6879).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(9399);
+  let obj = subscription(9394);
   const cancelSubscription1 = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription1.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;

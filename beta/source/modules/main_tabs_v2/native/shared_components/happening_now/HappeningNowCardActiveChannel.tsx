@@ -1,7 +1,7 @@
 // Module ID: 16524
 // Function ID: 16525
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 14001, 2065, 11639, 1390, 15589, 1085, 21, 5092, 558, 576, 504, 11, 1388, 12, 7011, 1265, 1112, 5421, 1126, 8159, 16518, 15590, 2]
+// Dependencies: [19, 17, 14001, 2065, 11639, 1390, 15589, 1085, 21, 5092, 558, 576, 504, 11, 1388, 12, 7011, 1265, 1112, 5421, 1126, 8154, 16518, 15590, 2]
 
 // Module 16524 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;

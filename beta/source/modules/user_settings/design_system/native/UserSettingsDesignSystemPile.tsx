@@ -1,7 +1,7 @@
 // Module ID: 16176
 // Function ID: 16177
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [32, 19, 17, 21, 5092, 1200, 6159, 558, 576, 5377, 5088, 6182, 13152, 1418, 14292, 12361, 11598, 12362, 9017, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 1200, 6159, 558, 576, 5377, 5088, 6182, 13152, 1418, 14292, 12361, 11598, 12362, 9012, 2]
 
 // Module 16176 (UserSettingsDesignSystemPile)
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
 import Card_Card from "Card/Card" /* 6182 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import ListUtils from "ListUtils" /* 12362 */;
 import AvatarDuoPile2 from "AvatarDuoPile" /* 14292 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

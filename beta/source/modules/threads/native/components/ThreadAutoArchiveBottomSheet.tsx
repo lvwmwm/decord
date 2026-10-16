@@ -1,7 +1,7 @@
 // Module ID: 17573
 // Function ID: 17574
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2072, 21, 558, 576, 9262, 6263, 1126, 6262, 2]
+// Dependencies: [19, 2072, 21, 558, 576, 9257, 6263, 1126, 6262, 2]
 
 // Module 17573 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 17586
 // Function ID: 17587
 // Name: ViewModerators
-// Dependencies: [5, 19, 2125, 2119, 2087, 1085, 7490, 21, 1265, 5056, 17587, 2000, 558, 576, 1503, 504, 5893, 8603, 2073, 1998, 5300, 1126, 7015, 8604, 4808, 1200, 8621, 5377, 6265, 6180, 10610, 2]
+// Dependencies: [5, 19, 2125, 2119, 2087, 1085, 7485, 21, 1265, 5056, 17587, 2000, 558, 576, 1503, 504, 5893, 8598, 2073, 1998, 5300, 1126, 7015, 8599, 4808, 1200, 8616, 5377, 6265, 6180, 10610, 2]
 // Exports: openAddModeratorsActionSheet
 
 // Module 17586 (ViewModerators)
@@ -9,8 +9,8 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8621 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8616 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -130,9 +130,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
         id = guild.id;
       }
       const memberIds = getMemberIds(id);
-      let obj7 = canUpdateStageChannelModerators(8603);
+      let obj7 = canUpdateStageChannelModerators(8598);
       const existingMembersRows = obj7.getExistingMembersRows(memberIds, channel, guild, tmp(2073).MODERATE_STAGE_CHANNEL_PERMISSIONS);
-      let obj8 = canUpdateStageChannelModerators(8603);
+      let obj8 = canUpdateStageChannelModerators(8598);
       const existingRolesRowWithPermissionDisabled = obj8.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, tmp(2073).MODERATE_STAGE_CHANNEL_PERMISSIONS);
       if (cResult[14] !== channel) {
         function handleRemovePermission(id) {

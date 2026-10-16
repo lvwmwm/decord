@@ -1,7 +1,7 @@
 // Module ID: 18463
 // Function ID: 18464
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 18462, 558, 576, 6207, 6201, 1126, 7089, 7729, 18464, 18465, 18477, 18478, 6688, 2]
+// Dependencies: [19, 21, 18462, 558, 576, 6207, 6201, 1126, 7089, 7724, 18464, 18465, 18477, 18478, 6688, 2]
 
 // Module 18463 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;

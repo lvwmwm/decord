@@ -1,15 +1,15 @@
 // Module ID: 13553
 // Function ID: 13554
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1085, 4702, 7573, 8167, 7512, 7891, 1126, 2]
+// Dependencies: [17, 1085, 4702, 7568, 8162, 7507, 7886, 1126, 2]
 // Exports: createSafetySystemNotificationEmbed
 
 // Module 13553 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7891 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -67,7 +67,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7573 : 8167))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7568 : 8162))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result4 = renderer_EmbedUtils;
             const intl = tmp6(1126).intl;
             formatToPlainString = intl.formatToPlainString;

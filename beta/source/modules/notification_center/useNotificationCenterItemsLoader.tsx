@@ -1,7 +1,7 @@
 // Module ID: 16873
 // Function ID: 16874
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 6079, 6057, 16872, 5967, 558, 576, 504, 16874, 6800, 8376, 2]
+// Dependencies: [5, 32, 19, 6079, 6057, 16872, 5967, 558, 576, 504, 16874, 6800, 8371, 2]
 
 // Module 16873 (useNotificationCenterItemsLoader)
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;

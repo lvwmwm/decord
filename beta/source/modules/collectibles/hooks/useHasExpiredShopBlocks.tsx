@@ -1,7 +1,7 @@
 // Module ID: 16202
 // Function ID: 16203
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 1085, 558, 576, 7295, 2]
+// Dependencies: [32, 19, 1085, 558, 576, 7290, 2]
 
 // Module 16202 (useHasExpiredShopBlocks)
 import Constants from "Constants" /* 1085 */;

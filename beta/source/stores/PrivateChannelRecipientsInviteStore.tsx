@@ -1,7 +1,7 @@
 // Module ID: 14044
 // Function ID: 14045
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [5016, 7348, 2069, 2065, 5932, 6087, 2125, 2087, 4760, 1390, 1085, 2031, 4962, 8704, 504, 584, 2]
+// Dependencies: [5016, 7343, 2069, 2065, 5932, 6087, 2125, 2087, 4760, 1390, 1085, 2031, 4962, 8699, 504, 584, 2]
 
 // Module 14044 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,9 +9,9 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import StringUtils from "StringUtils" /* 2031 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8699 */;
 import ExperimentStore from "ExperimentStore" /* 5016 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ConsentStore from "ConsentStore" /* 5932 */;
 import FrecencyStore from "FrecencyStore" /* 6087 */;

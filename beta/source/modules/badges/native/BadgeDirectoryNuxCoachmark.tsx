@@ -1,7 +1,7 @@
 // Module ID: 13193
 // Function ID: 13194
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 13194, 13198, 13202, 13191, 13206, 13210, 10571, 1126, 10575, 9443, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 13194, 13198, 13202, 13191, 13206, 13210, 10571, 1126, 10575, 9438, 2]
 
 // Module 13193 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;

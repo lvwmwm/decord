@@ -1,7 +1,7 @@
 // Module ID: 15025
 // Function ID: 15026
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 7572, 1126, 5088, 13865, 10533, 8674, 7512, 11, 15026, 7514, 5934, 11471, 2000, 11475, 504, 1265, 11473, 2]
+// Dependencies: [32, 19, 17, 7532, 7508, 1085, 21, 5092, 587, 558, 576, 7567, 1126, 5088, 13865, 10533, 8669, 7507, 11, 15026, 7509, 5934, 11471, 2000, 11475, 504, 1265, 11473, 2]
 
 // Module 15025 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
@@ -12,16 +12,16 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
-import SafetyHubModels from "SafetyHubModels" /* 7514 */;
-import WarningIcon2 from "WarningIcon" /* 7572 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
+import SafetyHubModels from "SafetyHubModels" /* 7509 */;
+import WarningIcon2 from "WarningIcon" /* 7567 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -265,7 +265,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
             }
             const obj5 = { onPress: onClick, style: tmp4.header, children: items };
             items = [tmp11, tmp23, tmp27];
-            const tmp32 = authStore2(tmp7(8674), obj5);
+            const tmp32 = authStore2(tmp7(8669), obj5);
             cResult[21] = onClick;
             cResult[22] = tmp4.header;
             cResult[23] = tmp11;

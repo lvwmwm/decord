@@ -1,7 +1,7 @@
 // Module ID: 17910
 // Function ID: 17911
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 109, 19, 2065, 11972, 11975, 1096, 21, 11895, 587, 5092, 558, 576, 5377, 8582, 4827, 11971, 17816, 7101, 573, 17813, 17911, 4850, 11979, 11577, 5378, 10013, 6762, 2]
+// Dependencies: [32, 109, 19, 2065, 11972, 11975, 1096, 21, 11895, 587, 5092, 558, 576, 5377, 8577, 4827, 11971, 17816, 7101, 573, 17813, 17911, 4850, 11979, 11577, 5378, 10008, 6762, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
 // Module 17910 (VoicePanelFloatingCTAContainer)
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1096 */;
 import native from "native" /* 4827 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import spring from "spring" /* 5378 */;
-import RowButton2 from "RowButton" /* 8582 */;
+import RowButton2 from "RowButton" /* 8577 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11895 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
@@ -66,7 +66,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
     }
   }
   const Stack = tmp(5377).Stack;
-  const RowButton = tmp(8582).RowButton;
+  const RowButton = tmp(8577).RowButton;
   const merged = Object.assign(tmp4);
   const tmp12 = <Stack>{null}</Stack>;
   cResult[3] = tmp4;

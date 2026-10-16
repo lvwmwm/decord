@@ -1,15 +1,15 @@
 // Module ID: 13165
 // Function ID: 13166
 // Name: useUserProfileActivity
-// Dependencies: [19, 8997, 2012, 5108, 5117, 558, 576, 504, 10237, 13166, 8272, 8460, 8456, 2]
+// Dependencies: [19, 8992, 2012, 5108, 5117, 558, 576, 504, 10237, 13166, 8267, 8455, 8451, 2]
 
 // Module 13165 (useUserProfileActivity)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 5117 */;
-import utils from "utils" /* 8272 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8460 */;
+import utils from "utils" /* 8267 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8455 */;
 import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 13166 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8997 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8992 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

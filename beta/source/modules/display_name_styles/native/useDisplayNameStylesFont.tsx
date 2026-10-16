@@ -1,9 +1,9 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8849
+// Function ID: 8850
 // Name: useDisplayNameStylesFont
 // Dependencies: [1410, 558, 576, 5629, 2]
 
-// Module 8854 (useDisplayNameStylesFont)
+// Module 8849 (useDisplayNameStylesFont)
 import react from "react" /* 576 */;
 import DisplayNameFont from "DisplayNameFont" /* 1410 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

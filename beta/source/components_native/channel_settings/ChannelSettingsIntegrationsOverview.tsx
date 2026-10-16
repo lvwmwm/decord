@@ -1,7 +1,7 @@
 // Module ID: 17601
 // Function ID: 17602
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 2069, 2065, 1085, 21, 558, 576, 1503, 6858, 1126, 8612, 6265, 6180, 5092, 587, 504, 17493, 17602, 5377, 8580, 2]
+// Dependencies: [19, 2069, 2065, 1085, 21, 558, 576, 1503, 6858, 1126, 8607, 6265, 6180, 5092, 587, 504, 17493, 17602, 5377, 8575, 2]
 
 // Module 17601 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import useNavigation from "useNavigation" /* 1503 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8612 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8607 */;
 import WebhookIcon from "WebhookIcon" /* 17493 */;
 import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 17602 */;
 import react from "react" /* 19 */;
@@ -59,7 +59,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkedL
     }
     if (cResult[1] !== getOrFetchApplication) {
       const obj3 = { application: getOrFetchApplication };
-      const tmp15 = closure_6(navigation(8612), obj3);
+      const tmp15 = closure_6(navigation(8607), obj3);
       cResult[1] = getOrFetchApplication;
       cResult[2] = tmp15;
       tmp12 = tmp15;
@@ -212,7 +212,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedC
               tmp10 = tmp27;
             }
             const obj4 = { style: tmp9.screenContainer, children: tmp23 };
-            const tmp29 = closure_6(channelId(8580).Form, obj4);
+            const tmp29 = closure_6(channelId(8575).Form, obj4);
             cResult[14] = tmp9.screenContainer;
             cResult[15] = tmp23;
             cResult[16] = tmp29;
@@ -303,7 +303,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedC
   let tmp6Result = null;
   if (null != stateFromStores) {
     const obj3 = { style: tmp4.screenContainer, children: closure_7(Stack, obj4) };
-    const Form = tmp(8580).Form;
+    const Form = tmp(8575).Form;
     obj4 = { style: obj5, spacing: nativeDefault.space.PX_24, children: items2 };
     obj5 = { paddingHorizontal: nativeDefault.space.PX_12 };
     Stack = tmp(5377).Stack;

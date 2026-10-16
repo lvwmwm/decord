@@ -1,17 +1,17 @@
 // Module ID: 18227
 // Function ID: 18228
 // Name: MobileGiftIntentCardManager
-// Dependencies: [7348, 2065, 5432, 2116, 8107, 1392, 18228, 1106, 2041, 10097, 8972, 1273, 2060, 8717, 2]
+// Dependencies: [7343, 2065, 5432, 2116, 8102, 1392, 18228, 1106, 2041, 10097, 8967, 1273, 2060, 8712, 2]
 
 // Module 18227 (MobileGiftIntentCardManager)
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import Timers from "Timers" /* 2060 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8717 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8712 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8107 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8102 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 18228 */;
 import size from "module_2" /* 2 */;
@@ -45,8 +45,8 @@ class MobileGiftIntentCardManager extends GiftIntentReconcilingManager {
               const result = tmpResult.logMessageGiftIntentShown(found);
               const userAffinity = self.getUserAffinity(found);
               const obj = { name: tmp(1273).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1273).ImpressionTypes.VIEW, properties: obj2 };
-              const trackImpression = tmp(8972).trackImpression;
-              tmp(8972);
+              const trackImpression = tmp(8967).trackImpression;
+              tmp(8967);
               obj2 = { gift_intent_type: tmp6.FRIEND_ANNIVERSARY, dm_affinity: dmProbability, channel_id: id };
               dmProbability = undefined;
               if (userAffinity != null) {

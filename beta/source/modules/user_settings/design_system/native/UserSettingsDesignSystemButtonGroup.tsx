@@ -1,7 +1,7 @@
 // Module ID: 16141
 // Function ID: 16142
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 5379, 5377, 5958, 7574, 7093, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 5379, 5377, 5958, 7569, 7093, 2]
 
 // Module 16141 (UserSettingsDesignSystemButtonGroup)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ButtonGroup4 from "ButtonGroup" /* 5958 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7093 */;
-import IconButton4 from "IconButton" /* 7574 */;
+import IconButton4 from "IconButton" /* 7569 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -124,7 +124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
 
         }
     };
-    const IconButton = tmp(7574).IconButton;
+    const IconButton = tmp(7569).IconButton;
     const tmp26 = hasOwnProperty(IconButton, obj7);
     cResult[6] = tmp26;
     tmp23 = tmp26;
@@ -147,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
 
         }
     };
-    const IconButton2 = tmp(7574).IconButton;
+    const IconButton2 = tmp(7569).IconButton;
     items3[1] = hasOwnProperty(IconButton2, obj11);
     items2[2] = metroRequire(ButtonGroup2, obj10);
     const tmp32 = hasOwnProperty(_false, obj8);
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
 
         }
     };
-    const IconButton3 = tmp(7574).IconButton;
+    const IconButton3 = tmp(7569).IconButton;
     items6[1] = hasOwnProperty(IconButton3, obj17);
     items5[3] = metroRequire(ButtonGroup3, obj16);
     items5[4] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });

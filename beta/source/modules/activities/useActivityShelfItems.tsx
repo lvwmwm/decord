@@ -1,11 +1,11 @@
 // Module ID: 11716
 // Function ID: 11717
 // Name: useActivityShelfItems
-// Dependencies: [19, 9066, 558, 576, 504, 11717, 11719, 11720, 2]
+// Dependencies: [19, 9061, 558, 576, 504, 11717, 11719, 11720, 2]
 
 // Module 11716 (useActivityShelfItems)
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9066 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

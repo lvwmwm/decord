@@ -1,7 +1,7 @@
 // Module ID: 14788
 // Function ID: 14789
 // Name: VoiceSettingsEventsFactory
-// Dependencies: [5639, 1085, 8458, 12, 2]
+// Dependencies: [5639, 1085, 8453, 12, 2]
 // Exports: default
 
 // Module 14788 (VoiceSettingsEventsFactory)

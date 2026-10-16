@@ -1,9 +1,9 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8365
+// Function ID: 8366
 // Name: useUserProfileOverscrollStyles
 // Dependencies: [32, 19, 5081, 558, 576, 1497, 504, 4850, 2]
 
-// Module 8370 (useUserProfileOverscrollStyles)
+// Module 8365 (useUserProfileOverscrollStyles)
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

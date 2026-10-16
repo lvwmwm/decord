@@ -1,7 +1,7 @@
 // Module ID: 13425
 // Function ID: 13426
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2062, 21, 5092, 558, 576, 13426, 6157, 1126, 9443, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 558, 576, 13426, 6157, 1126, 9438, 2]
 
 // Module 13425 (WishlistViewerCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistVi
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9443);
+      const tmpResult = markAsDismissed(9438);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }

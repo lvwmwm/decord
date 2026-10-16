@@ -1,10 +1,10 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8018
+// Function ID: 8019
 // Name: getNumSubscriptionsPurchasedFromSystemMessage
 // Dependencies: [2]
 // Exports: default
 
-// Module 8023 (getNumSubscriptionsPurchasedFromSystemMessage)
+// Module 8018 (getNumSubscriptionsPurchasedFromSystemMessage)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/getNumSubscriptionsPurchasedFromSystemMessage.tsx");

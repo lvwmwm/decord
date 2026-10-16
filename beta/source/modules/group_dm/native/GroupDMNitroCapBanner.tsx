@@ -1,7 +1,7 @@
 // Module ID: 17461
 // Function ID: 17462
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 13710, 5391, 9036, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 13710, 5391, 9031, 2]
 
 // Module 17461 (GroupDMNitroCapBanner)
 import react2 from "react" /* 576 */;
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const NitroWheelIcon2 = tmp2(9036);
+const NitroWheelIcon2 = tmp2(9031);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const locations = [0.0065, 0.5046, 0.9196];
@@ -207,7 +207,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
           if (tmp28) {
             const obj11 = { style: tmp5.iconContainer, children: hasOwnProperty(NitroWheelIcon, obj12) };
             obj12 = { size: "md", color: nativeDefault.colors.WHITE };
-            NitroWheelIcon = tmp(9036).NitroWheelIcon;
+            NitroWheelIcon = tmp(9031).NitroWheelIcon;
             tmp28 = hasOwnProperty(React3, obj11);
           }
           cResult[19] = undefined === showLeadingIcon || showLeadingIcon;

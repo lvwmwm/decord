@@ -1,7 +1,7 @@
 // Module ID: 16026
 // Function ID: 16027
 // Name: CheckpointEmphasis
-// Dependencies: [19, 17, 5437, 21, 1383, 16009, 5092, 587, 558, 576, 5386, 10515, 7577, 5088, 2]
+// Dependencies: [19, 17, 5437, 21, 1383, 16009, 5092, 587, 558, 576, 5386, 10515, 7572, 5088, 2]
 
 // Module 16026 (CheckpointEmphasis)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,7 +1,7 @@
 // Module ID: 15185
 // Function ID: 15186
 // Name: FamilyCenterSettingsControls
-// Dependencies: [19, 17, 7260, 1085, 21, 5092, 587, 5088, 1126, 2568, 5934, 15186, 2000, 558, 576, 15188, 6180, 7739, 15172, 1503, 7307, 7015, 15189, 5377, 6265, 5379, 15097, 7261, 15190, 2]
+// Dependencies: [19, 17, 7255, 1085, 21, 5092, 587, 5088, 1126, 2568, 5934, 15186, 2000, 558, 576, 15188, 6180, 7734, 15172, 1503, 7302, 7015, 15189, 5377, 6265, 5379, 15097, 7256, 15190, 2]
 
 // Module 15185 (FamilyCenterSettingsControls)
 import react_native from "react-native" /* 17 */;
@@ -14,10 +14,10 @@ import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
-import LayerActionCreators from "LayerActionCreators" /* 7307 */;
-import useUserLinks from "useUserLinks" /* 7739 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7256 */;
+import LayerActionCreators from "LayerActionCreators" /* 7302 */;
+import useUserLinks from "useUserLinks" /* 7734 */;
 import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -207,7 +207,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   let obj = activeLinkUserIds(576);
   const cResult = obj.c(40);
   const tmp4 = closure_9();
-  let obj2 = activeLinkUserIds(7739);
+  let obj2 = activeLinkUserIds(7734);
   activeLinkUserIds = obj2.useActiveLinkUserIds();
   let obj3 = activeLinkUserIds(15172);
   const selectedTeenUser = obj3.useSelectedTeenUser();

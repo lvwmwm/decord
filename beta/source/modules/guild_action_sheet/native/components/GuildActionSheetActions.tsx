@@ -1,7 +1,7 @@
 // Module ID: 14138
 // Function ID: 14139
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 7255, 1244, 2083, 6078, 2119, 4750, 6035, 5966, 1390, 1085, 6786, 7888, 5967, 21, 5092, 587, 558, 576, 504, 1126, 10351, 6895, 7045, 4938, 2049, 7251, 5056, 5934, 10698, 2000, 11989, 5409, 6852, 6879, 10641, 1200, 8766, 14139, 1209, 2046, 8641, 14140, 8290, 8859, 5088, 2041, 6684, 6809, 10445, 6804, 14188, 10463, 14189, 8654, 6876, 8606, 8535, 10719, 13530, 2438, 14190, 14196, 5301, 38, 14137, 12581, 12580, 6077, 10704, 14197, 7722, 8046, 11384, 6885, 6886, 4808, 1415, 2]
+// Dependencies: [19, 17, 7250, 1244, 2083, 6078, 2119, 4750, 6035, 5966, 1390, 1085, 6786, 7883, 5967, 21, 5092, 587, 558, 576, 504, 1126, 10351, 6895, 7045, 4938, 2049, 7246, 5056, 5934, 10698, 2000, 11989, 5409, 6852, 6879, 10641, 1200, 8761, 14139, 1209, 2046, 8636, 14140, 8285, 8854, 5088, 2041, 6684, 6809, 10445, 6804, 14188, 10463, 14189, 8649, 6876, 8601, 8530, 10719, 13530, 2438, 14190, 14196, 5301, 38, 14137, 12581, 12580, 6077, 10704, 14197, 7717, 8041, 11384, 6885, 6886, 4808, 1415, 2]
 // Exports: GuildActionSheetGameOrganizationActions, GuildActionSheetSecondaryActions, GuildUnreadAction, handleLeaveServer
 
 // Module 14138 (GuildActionSheetActions)
@@ -29,14 +29,14 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import TidaWebformExperimentDefault from "TidaWebformExperiment" /* 6885 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7045 */;
-import ChannelListState from "ChannelListState" /* 7251 */;
-import ReportModals from "ReportModals" /* 7722 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8046 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8535 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8606 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8654 */;
-import DiscordTagDefault from "DiscordTag" /* 8766 */;
+import ChannelListState from "ChannelListState" /* 7246 */;
+import ReportModals from "ReportModals" /* 7717 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8041 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8530 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8601 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8649 */;
+import DiscordTagDefault from "DiscordTag" /* 8761 */;
 import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10351 */;
 import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 10641 */;
 import OptInOnboardingUtils from "OptInOnboardingUtils" /* 10704 */;
@@ -45,7 +45,7 @@ import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableF
 import markGuildsAsReadDefault from "markGuildsAsRead" /* 14188 */;
 import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 14197 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7255 */;
+import NewChannelsStore from "NewChannelsStore" /* 7250 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
@@ -128,15 +128,15 @@ function ServerTagOption(guild) {
   const tmp2 = guild;
   let tmp3 = dependencyMap;
   const tmp = closure_25();
-  let obj = guild(8641);
+  let obj = guild(8636);
   [][0] = guild.id;
   const result = obj.canViewMobileServerTag(guild.id);
   if (result) {
     const profile = guild.profile;
     let badge;
-    const getGuildTagBadgeUrl = tmp2(8290).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = tmp2(8285).getGuildTagBadgeUrl;
     const id = guild.id;
-    tmp2(8290);
+    tmp2(8285);
     if (profile != null) {
       badge = profile.badge;
     }
@@ -145,7 +145,7 @@ function ServerTagOption(guild) {
     const ActionSheetRow = tmp2(6895).ActionSheetRow;
     const profile2 = guild.profile;
     let tag;
-    const BaseGuildTagChiplet = tmp2(8859).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(8854).BaseGuildTagChiplet;
     const tmp10 = GuildTagBadgeSize;
     const tmp13 = closure_24;
     if (profile2 != null) {

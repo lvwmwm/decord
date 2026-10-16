@@ -1,7 +1,7 @@
 // Module ID: 16977
 // Function ID: 16978
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 5081, 2087, 8454, 1085, 21, 16914, 587, 558, 576, 504, 1415, 2079, 9017, 6157, 6159, 8472, 4809, 1126, 6098, 5088, 5379, 16953, 6744, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 2087, 8449, 1085, 21, 16914, 587, 558, 576, 504, 1415, 2079, 9012, 6157, 6159, 8467, 4809, 1126, 6098, 5088, 5379, 16953, 6744, 2]
 
 // Module 16977 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
@@ -14,14 +14,14 @@ import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import FastestListDefault from "FastestList" /* 6744 */;
-import ClipViewDefault from "ClipView" /* 9017 */;
+import ClipViewDefault from "ClipView" /* 9012 */;
 import ICYMIShared from "ICYMIShared" /* 16953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import ICYMIStore from "ICYMIStore" /* 8454 */;
+import ICYMIStore from "ICYMIStore" /* 8449 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createICYMIStyles from "createICYMIStyles" /* 16914 */;
@@ -309,7 +309,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
         }
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          size = { shape: guild(9017).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+          size = { shape: guild(9012).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
           const items1 = [size];
           cResult[9] = items1;
           tmp16 = items1;
@@ -433,7 +433,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
     return obj.fromClientDiscoverableGuild(guild);
   }, items1);
   const obj4 = { cutouts: items2, children: tmp12Result };
-  size = { shape: guild(9017).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9012).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items2 = [size];
   const tmp10 = closure_15;
   const tmp14 = ClipViewDefault;

@@ -1,13 +1,13 @@
 // Module ID: 14837
 // Function ID: 14838
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1390, 21, 558, 576, 6852, 6879, 504, 8312, 14838, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 6852, 6879, 504, 8307, 14838, 2]
 
 // Module 14837 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

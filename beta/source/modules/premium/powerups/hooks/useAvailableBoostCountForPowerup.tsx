@@ -1,7 +1,7 @@
 // Module ID: 12275
 // Function ID: 12276
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2087, 5007, 5008, 558, 576, 504, 8030, 1388, 2]
+// Dependencies: [32, 19, 2087, 5007, 5008, 558, 576, 504, 8025, 1388, 2]
 
 // Module 12275 (useAvailableBoostCountForPowerup)
 import _slicedToArray from "_slicedToArray" /* 32 */;

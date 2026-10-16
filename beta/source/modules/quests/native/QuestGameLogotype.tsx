@@ -1,7 +1,7 @@
 // Module ID: 15429
 // Function ID: 15430
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5382, 5092, 587, 558, 576, 4850, 5378, 7577, 6157, 2]
+// Dependencies: [32, 19, 17, 21, 5382, 5092, 587, 558, 576, 4850, 5378, 7572, 6157, 2]
 
 // Module 15429 (QuestGameLogotype)
 import Fragment from "Fragment" /* 21 */;

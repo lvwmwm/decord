@@ -1,10 +1,10 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 9200
+// Function ID: 9201
 // Name: authorizeConnection
-// Dependencies: [6877, 1085, 584, 5056, 9206, 12918, 12929, 5934, 12940, 2000, 5763, 12942, 8491, 4806, 6875, 2]
+// Dependencies: [6877, 1085, 584, 5056, 9201, 12918, 12929, 5934, 12940, 2000, 5763, 12942, 8486, 4806, 6875, 2]
 // Exports: default
 
-// Module 9205 (authorizeConnection)
+// Module 9200 (authorizeConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import LinkingDefault from "Linking" /* 4806 */;
@@ -41,7 +41,7 @@ export default function authorizeConnection(overrideUrl) {
     const obj15 = overrideUrl(5056);
     obj15.hideActionSheet();
     const items = [_location];
-    const obj16 = overrideUrl(9206);
+    const obj16 = overrideUrl(9201);
     obj16.showModal(items);
     const tmp23 = overrideUrl;
     if (null != onClose) {
@@ -107,7 +107,7 @@ export default function authorizeConnection(overrideUrl) {
                                   obj.openURL(overrideUrl);
                                 }
                 };
-                const obj3 = onClose(8491);
+                const obj3 = onClose(8486);
                 obj3.handleClick(obj4);
               }
             }

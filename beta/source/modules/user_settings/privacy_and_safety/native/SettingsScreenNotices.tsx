@@ -1,7 +1,7 @@
 // Module ID: 15092
 // Function ID: 15093
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 7742, 15093, 15094, 5921, 5920, 5909, 15101, 15102, 558, 576, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 7737, 15093, 15094, 5921, 5920, 5909, 15101, 15102, 558, 576, 2]
 
 // Module 15092 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 5920 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7742 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7737 */;
 import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15093 */;
 import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15094 */;
 import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15101 */;

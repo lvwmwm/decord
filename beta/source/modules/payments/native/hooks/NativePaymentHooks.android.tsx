@@ -1,10 +1,10 @@
-// Module ID: 9399
-// Function ID: 9400
+// Module ID: 9394
+// Function ID: 9395
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 502, 7132, 3, 558, 576, 504, 12, 9400, 4784, 4782, 2]
+// Dependencies: [5, 32, 19, 502, 7132, 3, 558, 576, 504, 12, 9395, 4784, 4782, 2]
 // Exports: useNativeIAPPayments
 
-// Module 9399 (NativePaymentHooks)
+// Module 9394 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

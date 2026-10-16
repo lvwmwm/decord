@@ -1,7 +1,7 @@
 // Module ID: 16845
 // Function ID: 16846
 // Name: YouBarNameplate
-// Dependencies: [19, 5081, 15373, 21, 558, 576, 4818, 587, 15461, 504, 4850, 5378, 9022, 2]
+// Dependencies: [19, 5081, 15373, 21, 558, 576, 4818, 587, 15461, 504, 4850, 5378, 9017, 2]
 
 // Module 16845 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
@@ -105,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             cResult[15] = tmp21;
             tmp19 = tmp21;
           }
-          const tmp18 = jsx(token(9022), { nameplate, isFocused: true, animate: stateFromStores && "always" });
+          const tmp18 = jsx(token(9017), { nameplate, isFocused: true, animate: stateFromStores && "always" });
           cResult[10] = nameplate;
           cResult[11] = stateFromStores && "always";
           cResult[12] = tmp18;
@@ -170,7 +170,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const items1 = [rect, animatedStyle];
   let str = stateFromStores;
-  tmp2(9022);
+  tmp2(9017);
   if (str) {
     str = "always";
   }

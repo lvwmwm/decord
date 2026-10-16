@@ -1,7 +1,7 @@
 // Module ID: 16684
 // Function ID: 16685
 // Name: GenericUpsellActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8295, 6157, 6844, 5088, 1200, 5379, 6840, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8290, 6157, 6844, 5088, 1200, 5379, 6840, 2]
 
 // Module 16684 (GenericUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericUps
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp4 = closure_7();
-  const obj2 = markAsDismissed(8295);
+  const obj2 = markAsDismissed(8290);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   if (cResult[0] !== markAsDismissed) {
@@ -189,7 +189,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericUps
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
   const tmp = closure_7();
-  const obj = markAsDismissed(8295);
+  const obj = markAsDismissed(8290);
   const bottomSheetRef1 = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   const obj2 = {

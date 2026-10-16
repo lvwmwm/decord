@@ -1,10 +1,10 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8665
+// Function ID: 8666
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 5934, 558, 576, 1126, 6185, 1200, 6778, 8671, 6159, 6909, 504, 8580, 5088, 8674, 8675, 8676, 5396, 1265, 1894, 7488, 6913, 5635, 8677, 8678, 7497, 5379, 6814, 6729, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 5934, 558, 576, 1126, 6185, 1200, 6778, 8666, 6159, 6909, 504, 8575, 5088, 8669, 8670, 8671, 5396, 1265, 1894, 7483, 6913, 5635, 8672, 8673, 7492, 5379, 6814, 6729, 2]
 // Exports: default
 
-// Module 8670 (StartStageChannelModal)
+// Module 8665 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,8 +19,8 @@ import GuildIconDefault from "GuildIcon" /* 6159 */;
 import Pressables from "Pressables" /* 6185 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6778 */;
 import HotspotStore2 from "HotspotStore" /* 6909 */;
-import Form from "Form" /* 8580 */;
-import StageSparkleDefault from "StageSparkle" /* 8671 */;
+import Form from "Form" /* 8575 */;
+import StageSparkleDefault from "StageSparkle" /* 8666 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -228,7 +228,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = tmp(8580).FormLabel;
+    const FormLabel = tmp(8575).FormLabel;
     intl = tmp(1126).intl;
     const tmp10 = syncedClientThemes(FormLabel, obj2);
     cResult[2] = tmp10;

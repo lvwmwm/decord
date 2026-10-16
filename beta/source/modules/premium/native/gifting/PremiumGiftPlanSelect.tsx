@@ -1,9 +1,9 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 10049
+// Function ID: 10050
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8317, 9122, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10055, 5362, 6207, 504, 10098, 10096, 8309, 10100, 10052, 10104, 10107, 9333, 4850, 1200, 5093, 10115, 6879, 10116, 10150, 10361, 1126, 6208, 6157, 12735, 5391, 5088, 2]
+// Dependencies: [32, 19, 17, 8312, 9117, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10050, 5362, 6207, 504, 10098, 10096, 8304, 10100, 10047, 10104, 10107, 9328, 4850, 1200, 5093, 10115, 6879, 10116, 10150, 10361, 1126, 6208, 6157, 12735, 5391, 5088, 2]
 
-// Module 10054 (PremiumGiftPlanSelect)
+// Module 10049 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
@@ -14,8 +14,8 @@ import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10107 */
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8317 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9122 */;
+import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8312 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9117 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

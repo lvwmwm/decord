@@ -1,7 +1,7 @@
 // Module ID: 15629
 // Function ID: 15630
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5081, 1390, 1085, 1627, 21, 1409, 5092, 587, 1504, 504, 15630, 8291, 5628, 5031, 1410, 1407, 14870, 10266, 10267, 568, 15631, 15632, 15633, 15634, 1265, 5057, 8292, 8289, 5056, 15637, 2000, 15639, 15640, 15645, 15649, 1126, 14871, 4827, 5630, 15650, 2958, 5088, 1200, 6906, 1103, 14872, 5379, 9037, 9372, 558, 576, 1631, 4850, 5378, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 1085, 1627, 21, 1409, 5092, 587, 1504, 504, 15630, 8286, 5628, 5031, 1410, 1407, 14870, 10266, 10267, 568, 15631, 15632, 15633, 15634, 1265, 5057, 8287, 8284, 5056, 15637, 2000, 15639, 15640, 15645, 15649, 1126, 14871, 4827, 5630, 15650, 2958, 5088, 1200, 6906, 1103, 14872, 5379, 9032, 9367, 558, 576, 1631, 4850, 5378, 2]
 // Exports: default
 
 // Module 15629 (DisplayNameStylesEditScreen)
@@ -16,8 +16,8 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import spring from "spring" /* 5378 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8292 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

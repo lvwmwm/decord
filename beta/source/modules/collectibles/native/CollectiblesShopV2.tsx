@@ -1,7 +1,7 @@
 // Module ID: 16199
 // Function ID: 16200
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5091, 1205, 1390, 7264, 7306, 7299, 1087, 1085, 2062, 21, 5092, 6879, 558, 576, 13749, 16200, 504, 1279, 6170, 10090, 16201, 16203, 16204, 9091, 1382, 9059, 9399, 8303, 8980, 4969, 6852, 1503, 16206, 4782, 16208, 4938, 2049, 4769, 16209, 1265, 7310, 8312, 16210, 16211, 16213, 16214, 16246, 1255, 16249, 16250, 16217, 10176, 9079, 16251, 8971, 5730, 1628, 2]
+// Dependencies: [32, 19, 17, 5091, 1205, 1390, 7259, 7301, 7294, 1087, 1085, 2062, 21, 5092, 6879, 558, 576, 13749, 16200, 504, 1279, 6170, 10090, 16201, 16203, 16204, 9086, 1382, 9054, 9394, 8298, 8975, 4969, 6852, 1503, 16206, 4782, 16208, 4938, 2049, 4769, 16209, 1265, 7305, 8307, 16210, 16211, 16213, 16214, 16246, 1255, 16249, 16250, 16217, 10176, 9074, 16251, 8966, 5730, 1628, 2]
 
 // Module 16199 (CollectiblesShopV2)
 import react2 from "react" /* 576 */;
@@ -12,13 +12,13 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 7299 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7310 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9059 */;
-import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9079 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9091 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9399 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 7294 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7305 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9054 */;
+import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9074 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9086 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9394 */;
 import takeWhileDefault from "takeWhile" /* 16206 */;
 import ShopCategory from "ShopCategory" /* 16211 */;
 import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 16213 */;
@@ -29,8 +29,8 @@ import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5091 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserStore from "UserStore" /* 1390 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7306 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7301 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -494,7 +494,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       if (true !== isFetchingCategories) {
         const obj = PlatformUtils;
         if (false !== obj.isAndroid()) {
-          const getGoogleSkuIds = tmp4(9059).getGoogleSkuIds;
+          const getGoogleSkuIds = tmp4(9054).getGoogleSkuIds;
           const items = [];
           collectibles_CollectiblesUtils;
           HermesBuiltin.arraySpread(items, categories.values(), 0);

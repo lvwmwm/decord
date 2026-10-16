@@ -1,25 +1,25 @@
-// Module ID: 9175
-// Function ID: 9176
+// Module ID: 9170
+// Function ID: 9171
 // Name: captureAdUserAction
-// Dependencies: [5, 7391, 1085, 5979, 7407, 7387, 7416, 7422, 1265, 1279, 1382, 7365, 9176, 7417, 7398, 9178, 2]
+// Dependencies: [5, 7386, 1085, 5979, 7402, 7382, 7411, 7417, 1265, 1279, 1382, 7360, 9171, 7412, 7393, 9173, 2]
 // Exports: captureAdUserAction
 
-// Module 9175 (captureAdUserAction)
+// Module 9170 (captureAdUserAction)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7365 */;
-import QuestDataUtils from "QuestDataUtils" /* 7387 */;
-import getQuestLogger from "getQuestLogger" /* 7398 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import AdDataUtils from "AdDataUtils" /* 7417 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7422 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 9176 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7360 */;
+import QuestDataUtils from "QuestDataUtils" /* 7382 */;
+import getQuestLogger from "getQuestLogger" /* 7393 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import AdDataUtils from "AdDataUtils" /* 7412 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7417 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 9171 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;

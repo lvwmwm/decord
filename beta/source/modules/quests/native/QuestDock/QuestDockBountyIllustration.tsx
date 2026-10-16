@@ -1,7 +1,7 @@
 // Module ID: 15489
 // Function ID: 15490
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5081, 5972, 15370, 21, 5092, 558, 15485, 15367, 576, 9012, 15490, 504, 1382, 6157, 4827, 9182, 2]
+// Dependencies: [19, 17, 5081, 5972, 15370, 21, 5092, 558, 15485, 15367, 576, 9007, 15490, 504, 1382, 6157, 4827, 9177, 2]
 
 // Module 15489 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
@@ -11,8 +11,8 @@ import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import APNGPlayer2 from "APNGPlayer" /* 9012 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9182 */;
+import APNGPlayer2 from "APNGPlayer" /* 9007 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9177 */;
 import QuestDockHooks from "QuestDockHooks" /* 15367 */;
 import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15485 */;
 import _modDef15490 from "module_15490" /* 15490 */;
@@ -463,7 +463,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const BountiesMobileQuestBarExperiment = tmp(9182).BountiesMobileQuestBarExperiment;
+  const BountiesMobileQuestBarExperiment = tmp(9177).BountiesMobileQuestBarExperiment;
   const illustration = BountiesMobileQuestBarExperiment.useConfig(first).illustration;
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     let tmp23;

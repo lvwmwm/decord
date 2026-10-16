@@ -1,7 +1,7 @@
 // Module ID: 13875
 // Function ID: 13876
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1085, 21, 13876, 13877, 13878, 5092, 587, 558, 576, 5031, 4850, 4967, 4969, 5378, 12322, 6157, 10713, 8025, 5088, 2]
+// Dependencies: [19, 17, 1085, 21, 13876, 13877, 13878, 5092, 587, 558, 576, 5031, 4850, 4967, 4969, 5378, 12322, 6157, 10713, 8020, 5088, 2]
 
 // Module 13875 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
@@ -444,7 +444,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                                 tmp34 = cResult[27];
                               }
                               if (cResult[28] !== tier) {
-                                const tmpResult4 = tmp(8025);
+                                const tmpResult4 = tmp(8020);
                                 const tierName = tmpResult4.getTierName(tier, { useLevels: false });
                                 cResult[28] = tier;
                                 cResult[29] = tierName;
@@ -658,7 +658,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
     const Text = tmp5(5088).Text;
-    tmp5Result4 = useReducedMotion(8025);
+    tmp5Result4 = useReducedMotion(8020);
     items5[1] = closure_6(Text, obj9);
     items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
     return closure_7(PREMIUM_PERK_PINK, obj3);

@@ -1,7 +1,7 @@
 // Module ID: 12135
 // Function ID: 12136
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5081, 7244, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 4818, 1126, 5088, 6621, 6185, 504, 4832, 5628, 8854, 7980, 12136, 4936, 4850, 5093, 9691, 1265, 9689, 1112, 5627, 7919, 9293, 9295, 12137, 2]
+// Dependencies: [19, 17, 5081, 7239, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 4818, 1126, 5088, 6621, 6185, 504, 4832, 5628, 8849, 7975, 12136, 4936, 4850, 5093, 9686, 1265, 9684, 1112, 5627, 7914, 9288, 9290, 12137, 2]
 
 // Module 12135 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
@@ -13,11 +13,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useToken from "useToken" /* 4818 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9293 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9295 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9691 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9288 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9290 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9686 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -1572,7 +1572,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(9689);
+      tmp8Result = tmp8(9684);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {

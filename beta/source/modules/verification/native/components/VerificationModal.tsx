@@ -1,7 +1,7 @@
 // Module ID: 18271
 // Function ID: 18272
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 18272, 2059, 1390, 1085, 21, 5092, 558, 576, 1126, 5379, 1504, 1200, 18273, 1273, 6201, 7089, 8665, 6891, 5930, 18277, 6274, 6283, 6280, 6669, 6733, 6734, 6275, 18278, 6767, 6682, 504, 5056, 4985, 6688, 2]
+// Dependencies: [5, 19, 17, 18272, 2059, 1390, 1085, 21, 5092, 558, 576, 1126, 5379, 1504, 1200, 18273, 1273, 6201, 7089, 8660, 6891, 5930, 18277, 6274, 6283, 6280, 6669, 6733, 6734, 6275, 18278, 6767, 6682, 504, 5056, 4985, 6688, 2]
 
 // Module 18271 (VerificationModal)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 
 import Navigator2 from "Navigator" /* 6688 */;
 import VerifyPhoneDefault from "VerifyPhone" /* 6767 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8660 */;
 import OverviewDefault from "Overview" /* 18277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

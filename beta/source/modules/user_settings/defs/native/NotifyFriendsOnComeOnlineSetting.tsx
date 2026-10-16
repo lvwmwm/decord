@@ -1,13 +1,13 @@
 // Module ID: 16322
 // Function ID: 16323
 // Name: NotifyFriendsOnComeOnlineSetting
-// Dependencies: [7993, 10663, 1126, 2734, 2041, 15803, 2]
+// Dependencies: [7988, 10663, 1126, 2734, 2041, 15803, 2]
 
 // Module 16322 (NotifyFriendsOnComeOnlineSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import _modDef2734 from "module_2734" /* 2734 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15803 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

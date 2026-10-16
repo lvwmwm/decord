@@ -1,7 +1,7 @@
 // Module ID: 11771
 // Function ID: 11772
 // Name: HeroMedia
-// Dependencies: [19, 5081, 1502, 21, 5092, 558, 576, 10624, 10962, 504, 6858, 11736, 1126, 8426, 2]
+// Dependencies: [19, 5081, 1502, 21, 5092, 558, 576, 10624, 10962, 504, 6858, 11736, 1126, 8421, 2]
 
 // Module 11771 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
@@ -9,7 +9,7 @@ import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import common_VideoDefault from "common/Video" /* 8426 */;
+import common_VideoDefault from "common/Video" /* 8421 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

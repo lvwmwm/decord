@@ -1,7 +1,7 @@
 // Module ID: 17490
 // Function ID: 17491
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2065, 4760, 1390, 17491, 12050, 9313, 1085, 21, 558, 576, 504, 17395, 12036, 12061, 12057, 4962, 5421, 12043, 17492, 12042, 12044, 17455, 17387, 1126, 17399, 2]
+// Dependencies: [32, 19, 2065, 4760, 1390, 17491, 12050, 9308, 1085, 21, 558, 576, 504, 17395, 12036, 12061, 12057, 4962, 5421, 12043, 17492, 12042, 12044, 17455, 17387, 1126, 17399, 2]
 
 // Module 17490 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -18,7 +18,7 @@ import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17491 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

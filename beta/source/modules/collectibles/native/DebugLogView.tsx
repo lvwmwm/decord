@@ -1,7 +1,7 @@
 // Module ID: 16251
 // Function ID: 16252
 // Name: DebugLogView
-// Dependencies: [19, 17, 5091, 7278, 21, 5092, 587, 558, 576, 504, 5088, 2]
+// Dependencies: [19, 17, 5091, 7273, 21, 5092, 587, 558, 576, 504, 5088, 2]
 
 // Module 16251 (DebugLogView)
 import nativeDefault from "native" /* 587 */;
@@ -9,7 +9,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5091 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7278 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7273 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

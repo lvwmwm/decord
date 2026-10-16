@@ -1,20 +1,20 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9084
+// Function ID: 9085
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9090, 8345, 7265, 7266, 558, 576, 9091, 504, 7263, 8344, 9092, 2]
+// Dependencies: [32, 19, 9085, 8340, 7260, 7261, 558, 576, 9086, 504, 7258, 8339, 9087, 2]
 // Exports: useCollectiblesShopProducts
 
-// Module 9089 (useCollectiblesShopProducts)
+// Module 9084 (useCollectiblesShopProducts)
 import react2 from "react" /* 576 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8344 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9091 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8339 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9090 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8345 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7265 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7266 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9085 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8340 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7260 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7261 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9092);
+const StorefrontCollectionActionCreators = tmp(9087);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;

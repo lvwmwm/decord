@@ -1,7 +1,7 @@
 // Module ID: 17968
 // Function ID: 17969
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 2065, 5432, 4760, 1390, 1085, 17797, 21, 5092, 587, 558, 576, 4818, 5421, 504, 8394, 5088, 17969, 5391, 7179, 6950, 4850, 5093, 1126, 8542, 6205, 10259, 1265, 14805, 4735, 17966, 8403, 8401, 17970, 2]
+// Dependencies: [32, 19, 17, 2065, 5432, 4760, 1390, 1085, 17797, 21, 5092, 587, 558, 576, 4818, 5421, 504, 8389, 5088, 17969, 5391, 7174, 6950, 4850, 5093, 1126, 8537, 6205, 10259, 1265, 14805, 4735, 17966, 8398, 8396, 17970, 2]
 
 // Module 17968 (MediaPlaybackPip)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import timing from "timing" /* 5093 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
 import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14805 */;
 import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -319,7 +319,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8394)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8389)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -464,7 +464,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = closure_15(tmp(8542).BackgroundBlurFill, { blurAmount: 0.05 });
+      const tmp15 = closure_15(tmp(8537).BackgroundBlurFill, { blurAmount: 0.05 });
       cResult[9] = tmp15;
       tmp13 = tmp15;
     } else {
@@ -637,7 +637,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
   const obj3 = { style: items1, children: items2 };
   items1 = [tmp.pipControls, animatedStyle];
   const View = visible(4850).View;
-  items2 = [closure_15(message(8542).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  items2 = [closure_15(message(8537).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const obj4 = { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(6205).ArrowLargeLeftIcon, { size: "sm" }) };
   items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
@@ -1383,9 +1383,9 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPlay
     let PlayIcon;
     const tmp = authStore3;
     if (isPlaying) {
-      PlayIcon = tmp2(8403).PauseIcon;
+      PlayIcon = tmp2(8398).PauseIcon;
     } else {
-      PlayIcon = tmp2(8401).PlayIcon;
+      PlayIcon = tmp2(8396).PlayIcon;
     }
     const obj = { color: nativeDefault.colors.WHITE, size: "md" };
     return tmp(PlayIcon, obj);

@@ -1,7 +1,7 @@
 // Module ID: 16526
 // Function ID: 16527
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4748, 2087, 2116, 15589, 1085, 21, 5092, 587, 1265, 558, 576, 8606, 1126, 16527, 8638, 16528, 8683, 16529, 12006, 12542, 6157, 5088, 15590, 2]
+// Dependencies: [19, 17, 4748, 2087, 2116, 15589, 1085, 21, 5092, 587, 1265, 558, 576, 8601, 1126, 16527, 8633, 16528, 8678, 16529, 12006, 12542, 6157, 5088, 15590, 2]
 
 // Module 16526 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
@@ -9,9 +9,9 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8606 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8601 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12006 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12542 */;
 import HappeningNowCardDefault from "HappeningNowCard" /* 15590 */;

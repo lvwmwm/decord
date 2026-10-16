@@ -1,14 +1,14 @@
-// Module ID: 7558
-// Function ID: 7559
+// Module ID: 7553
+// Function ID: 7554
 // Name: CreditCardIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7559, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7554, 4817, 2]
 
-// Module 7558 (CreditCardIcon)
+// Module 7553 (CreditCardIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 7559 */;
+import AssetRegistry from "AssetRegistry" /* 7554 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

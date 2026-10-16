@@ -1,9 +1,9 @@
-// Module ID: 9646
-// Function ID: 9647
+// Module ID: 9641
+// Function ID: 9642
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 5081, 2065, 2119, 2087, 5432, 4760, 1390, 9248, 5403, 1085, 1502, 5404, 21, 5092, 587, 1998, 1200, 5056, 8304, 4962, 5088, 5421, 1126, 558, 576, 6852, 504, 5628, 8854, 7980, 6157, 1418, 6182, 9647, 4808, 6180, 1629, 7247, 5377, 6265, 6879, 8255, 6840, 2]
+// Dependencies: [19, 17, 5081, 2065, 2119, 2087, 5432, 4760, 1390, 9243, 5403, 1085, 1502, 5404, 21, 5092, 587, 1998, 1200, 5056, 8299, 4962, 5088, 5421, 1126, 558, 576, 6852, 504, 5628, 8849, 7975, 6157, 1418, 6182, 9642, 4808, 6180, 1629, 7242, 5377, 6265, 6879, 8250, 6840, 2]
 
-// Module 9646 (ExecutedApplicationCommandPopout)
+// Module 9641 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
@@ -17,10 +17,10 @@ import Text_Text from "Text/Text" /* 5088 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8255 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import react_nativeDefault from "react-native" /* 9647 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8250 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import react_nativeDefault from "react-native" /* 9642 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -30,7 +30,7 @@ import GuildStore from "GuildStore" /* 2087 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
 import Fragment_mod from "Fragment" /* 21 */;

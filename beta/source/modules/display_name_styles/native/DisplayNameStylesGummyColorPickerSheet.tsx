@@ -1,7 +1,7 @@
 // Module ID: 15640
 // Function ID: 15641
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1408, 1085, 21, 1407, 5092, 587, 558, 576, 10266, 1409, 568, 15641, 5057, 15642, 1265, 5056, 1126, 5379, 15638, 14873, 9724, 6840, 2]
+// Dependencies: [32, 19, 17, 1408, 1085, 21, 1407, 5092, 587, 558, 576, 10266, 1409, 568, 15641, 5057, 15642, 1265, 5056, 1126, 5379, 15638, 14873, 9719, 6840, 2]
 
 // Module 15640 (DisplayNameStylesGummyColorPickerSheet)
 import shallowEqual from "shallowEqual" /* 568 */;
@@ -599,7 +599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   }
   items4 = [tmp18Result, ];
   const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: closure_9(closure_5, obj12) };
-  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(9724).PencilIcon, { color: "white", size: "sm" }) };
+  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(9719).PencilIcon, { color: "white", size: "sm" }) };
   items4[1] = closure_9(closure_5, obj11);
   items5 = [
     closure_9(closure_5, obj7),

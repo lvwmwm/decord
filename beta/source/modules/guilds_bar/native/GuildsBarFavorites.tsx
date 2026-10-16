@@ -1,7 +1,7 @@
 // Module ID: 16768
 // Function ID: 16769
 // Name: GuildsBarFavorites
-// Dependencies: [19, 17, 2068, 1085, 2062, 21, 5092, 587, 558, 576, 16751, 10313, 504, 16769, 16754, 10327, 16766, 16573, 1126, 16770, 9553, 16771, 2]
+// Dependencies: [19, 17, 2068, 1085, 2062, 21, 5092, 587, 558, 576, 16751, 10313, 504, 16769, 16754, 10327, 16766, 16573, 1126, 16770, 9548, 16771, 2]
 
 // Module 16768 (GuildsBarFavorites)
 import react_native from "react-native" /* 17 */;
@@ -194,8 +194,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj6 = { color: tmp28 };
       cResult[13] = tmp28;
-      cResult[14] = closure_8(tmp(9553).StarIcon, obj6);
-      const tmp30 = closure_8(tmp(9553).StarIcon, obj6);
+      cResult[14] = closure_8(tmp(9548).StarIcon, obj6);
+      const tmp30 = closure_8(tmp(9548).StarIcon, obj6);
     } else {
       class F {
         constructor() {
@@ -307,7 +307,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: intl.string(shouldShowPopover(1126).t.wMWyci), externalChildren: badge2, expandedChildren: closure_8(shouldShowPopover(16770).HomeDrawerFavoritesRowExpandedChildren, {}), children: closure_8(StarIcon, obj6) };
   const tmp16 = markPopoverAsDismissed(16751);
   intl = shouldShowPopover(1126).intl;
-  StarIcon = shouldShowPopover(9553).StarIcon;
+  StarIcon = shouldShowPopover(9548).StarIcon;
   const colors = markPopoverAsDismissed(587).colors;
   obj6 = { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
   const children = [closure_8(tmp16, obj5), , ];

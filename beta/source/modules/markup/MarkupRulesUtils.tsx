@@ -1,10 +1,10 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8123
+// Function ID: 8124
 // Name: MarkupRulesUtils
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput
 
-// Module 8128 (MarkupRulesUtils)
+// Module 8123 (MarkupRulesUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/MarkupRulesUtils.tsx");

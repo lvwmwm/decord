@@ -1,7 +1,7 @@
 // Module ID: 16570
 // Function ID: 16571
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5081, 4802, 11760, 1085, 21, 558, 576, 9308, 5031, 4969, 5386, 16571, 2090, 16541, 10515, 4818, 587, 5384, 11577, 5092, 4850, 10226, 4851, 16572, 1497, 504, 1504, 5378, 5382, 14135, 1415, 6157, 16613, 2]
+// Dependencies: [19, 17, 5081, 4802, 11760, 1085, 21, 558, 576, 9303, 5031, 4969, 5386, 16571, 2090, 16541, 10515, 4818, 587, 5384, 11577, 5092, 4850, 10226, 4851, 16572, 1497, 504, 1504, 5378, 5382, 14135, 1415, 6157, 16613, 2]
 
 // Module 16570 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
@@ -16,7 +16,7 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import useFontScale from "useFontScale" /* 5386 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9308 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9303 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;

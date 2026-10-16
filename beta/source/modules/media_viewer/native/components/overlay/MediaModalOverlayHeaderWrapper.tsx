@@ -1,9 +1,9 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8485
+// Function ID: 8486
 // Name: MediaModalOverlayHeaderWrapper
 // Dependencies: [19, 17, 21, 5092, 6259, 558, 576, 1631, 2]
 
-// Module 8490 (MediaModalOverlayHeaderWrapper)
+// Module 8485 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

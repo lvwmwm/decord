@@ -1,7 +1,7 @@
 // Module ID: 17983
 // Function ID: 17984
 // Name: SimpleGuild
-// Dependencies: [19, 17, 2083, 6078, 2087, 1085, 21, 5092, 558, 576, 6159, 17984, 504, 17985, 17987, 1126, 16791, 8199, 587, 17986, 2]
+// Dependencies: [19, 17, 2083, 6078, 2087, 1085, 21, 5092, 558, 576, 6159, 17984, 504, 17985, 17987, 1126, 16791, 8194, 587, 17986, 2]
 
 // Module 17983 (SimpleGuild)
 import react_native from "react-native" /* 17 */;
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
               }
               if (guildId === ME) {
                 const obj6 = { style: tmp7.dmsWrapper, children: null };
-                const ChatIcon = tmp(8199).ChatIcon;
+                const ChatIcon = tmp(8194).ChatIcon;
                 const colors = tmp8(587).colors;
                 tmp48Result = tmp43(View, obj6);
               } else if ((unread2 || tmp6 || badge2 > 0 || null != activityIndicatorState.source) && "transparent" === backgroundColor) {

@@ -1,7 +1,7 @@
 // Module ID: 12145
 // Function ID: 12146
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1205, 1241, 21, 5092, 587, 1382, 4818, 12140, 4850, 5378, 11862, 6185, 1126, 6157, 4969, 6821, 6822, 9515, 1200, 2]
+// Dependencies: [32, 19, 17, 1205, 1241, 21, 5092, 587, 1382, 4818, 12140, 4850, 5378, 11862, 6185, 1126, 6157, 4969, 6821, 6822, 9510, 1200, 2]
 // Exports: EmojiSuggestionChatButton
 
 // Module 12145 (EmojiSuggestionChatButton)

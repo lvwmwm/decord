@@ -1,7 +1,7 @@
 // Module ID: 12390
 // Function ID: 12391
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5081, 11634, 11635, 21, 4850, 5092, 587, 1382, 558, 576, 5378, 5093, 4818, 7787, 5088, 2]
+// Dependencies: [32, 19, 17, 5081, 11634, 11635, 21, 4850, 5092, 587, 1382, 558, 576, 5378, 5093, 4818, 7782, 5088, 2]
 
 // Module 12390 (VoiceMessageChat)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 7787 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 7782 */;
 import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

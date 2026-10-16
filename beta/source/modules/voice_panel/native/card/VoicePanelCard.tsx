@@ -1,7 +1,7 @@
 // Module ID: 17862
 // Function ID: 17863
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 5897, 5110, 5947, 11972, 11970, 17797, 11975, 1085, 5115, 11973, 21, 4850, 5088, 5391, 1200, 5092, 587, 558, 576, 7444, 5900, 6162, 1126, 5379, 11971, 504, 10885, 5137, 13163, 10887, 10884, 17863, 10893, 9030, 8378, 5093, 5378, 6157, 6762, 4818, 10907, 17865, 11577, 9580, 4827, 6852, 17798, 17810, 17796, 17866, 8304, 17867, 6335, 17868, 11974, 17869, 17870, 17871, 17872, 17873, 17883, 2]
+// Dependencies: [32, 19, 17, 5897, 5110, 5947, 11972, 11970, 17797, 11975, 1085, 5115, 11973, 21, 4850, 5088, 5391, 1200, 5092, 587, 558, 576, 7439, 5900, 6162, 1126, 5379, 11971, 504, 10885, 5137, 13163, 10887, 10884, 17863, 10893, 9025, 8373, 5093, 5378, 6157, 6762, 4818, 10907, 17865, 11577, 9575, 4827, 6852, 17798, 17810, 17796, 17866, 8299, 17867, 6335, 17868, 11974, 17869, 17870, 17871, 17872, 17873, 17883, 2]
 
 // Module 17862 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
@@ -16,9 +16,9 @@ import CallConstants from "CallConstants" /* 5115 */;
 import spring from "spring" /* 5378 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11973 */;

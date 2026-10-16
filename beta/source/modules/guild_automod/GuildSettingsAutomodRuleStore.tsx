@@ -1,7 +1,7 @@
 // Module ID: 18302
 // Function ID: 18303
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1085, 1126, 1267, 12, 1388, 1272, 18303, 18308, 18304, 7882, 18301, 11455, 5635, 4733, 2]
+// Dependencies: [5, 1085, 1126, 1267, 12, 1388, 1272, 18303, 18308, 18304, 7877, 18301, 11455, 5635, 4733, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
 // Module 18302 (GuildSettingsAutomodRuleStore)

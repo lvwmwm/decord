@@ -1,7 +1,7 @@
 // Module ID: 12352
 // Function ID: 12353
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [32, 19, 17, 5108, 8308, 21, 5092, 587, 558, 576, 6053, 504, 1200, 5409, 10235, 6180, 6159, 5088, 12347, 12353, 10530, 12348, 12357, 12358, 8530, 1126, 12359, 10601, 2]
+// Dependencies: [32, 19, 17, 5108, 8303, 21, 5092, 587, 558, 576, 6053, 504, 1200, 5409, 10235, 6180, 6159, 5088, 12347, 12353, 10530, 12348, 12357, 12358, 8525, 1126, 12359, 10601, 2]
 
 // Module 12352 (UserProfileMutualsActionSheet)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1200 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import Constants from "Constants" /* 8308 */;
+import Constants from "Constants" /* 8303 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
 import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10530 */;
 import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12347 */;
@@ -704,8 +704,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
   useUserProfileMutualsDefault(user);
   const obj2 = { pageWidth: first, defaultIndex: num, items };
   num = 0;
-  const useSegmentedControlState = user(8530).useSegmentedControlState;
-  user(8530);
+  const useSegmentedControlState = user(8525).useSegmentedControlState;
+  user(8525);
   if (section === UserProfileSections.MUTUAL_GUILDS) {
     num = 1;
   }

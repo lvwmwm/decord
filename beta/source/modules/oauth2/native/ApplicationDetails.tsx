@@ -1,7 +1,7 @@
 // Module ID: 12904
 // Function ID: 12905
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5092, 587, 9229, 9104, 12905, 558, 576, 11, 9227, 5038, 1126, 9231, 8223, 11443, 5051, 8458, 11435, 10409, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 9224, 9099, 12905, 558, 576, 11, 9222, 5038, 1126, 9226, 8218, 11443, 5051, 8453, 11435, 10409, 5088, 2]
 
 // Module 12904 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -10,12 +10,12 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import LinkIcon from "LinkIcon" /* 5038 */;
-import LockIcon from "LockIcon" /* 8223 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9104 */;
-import scopes from "scopes" /* 9227 */;
-import disclosures from "disclosures" /* 9229 */;
-import Utils from "Utils" /* 9231 */;
+import LockIcon from "LockIcon" /* 8218 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9099 */;
+import scopes from "scopes" /* 9222 */;
+import disclosures from "disclosures" /* 9224 */;
+import Utils from "Utils" /* 9226 */;
 import RobotIcon from "RobotIcon" /* 11435 */;
 import HammerIcon from "HammerIcon" /* 11443 */;
 import EmbedIcon from "EmbedIcon" /* 12905 */;

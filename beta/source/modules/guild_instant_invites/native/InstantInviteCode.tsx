@@ -1,7 +1,7 @@
 // Module ID: 10298
 // Function ID: 10299
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 2069, 4760, 1390, 21, 5092, 587, 558, 576, 8159, 8208, 5421, 5088, 5377, 5051, 1126, 9642, 2]
+// Dependencies: [19, 17, 2069, 4760, 1390, 21, 5092, 587, 558, 576, 8154, 8203, 5421, 5088, 5377, 5051, 1126, 9637, 2]
 
 // Module 10298 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import ClockIcon from "ClockIcon" /* 5051 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import CountDownDefault from "CountDown" /* 9642 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import CountDownDefault from "CountDown" /* 9637 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
     const tmpResult = utils_ChannelUtils;
     let TextIcon = tmpResult.getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp(8208).TextIcon;
+      TextIcon = tmp(8203).TextIcon;
     }
     cResult[0] = channel;
     cResult[1] = TextIcon;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
   const obj = utils_ChannelUtils;
   let TextIcon = obj.getSimpleChannelIconComponent(channel);
   if (TextIcon == null) {
-    TextIcon = tmp2(8208).TextIcon;
+    TextIcon = tmp2(8203).TextIcon;
   }
   const Stack = tmp2(5377).Stack;
   const obj2 = { direction: "horizontal", align: "center", children: items };

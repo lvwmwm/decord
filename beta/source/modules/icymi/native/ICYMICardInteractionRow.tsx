@@ -1,7 +1,7 @@
 // Module ID: 16959
 // Function ID: 16960
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7006, 2065, 5891, 4750, 1085, 1393, 21, 4762, 7900, 5092, 587, 1382, 4967, 558, 576, 504, 7015, 7179, 9427, 1126, 8961, 5088, 6185, 9588, 1103, 1415, 9383, 6157, 10257, 10470, 11565, 12833, 16953, 8199, 7901, 7990, 9683, 8472, 11553, 9691, 4818, 5391, 683, 6906, 2]
+// Dependencies: [32, 19, 17, 7006, 2065, 5891, 4750, 1085, 1393, 21, 4762, 7895, 5092, 587, 1382, 4967, 558, 576, 504, 7015, 7174, 9422, 1126, 8956, 5088, 6185, 9583, 1103, 1415, 9378, 6157, 10257, 10470, 11565, 12833, 16953, 8194, 7896, 7985, 9678, 8467, 11553, 9686, 4818, 5391, 683, 6906, 2]
 // Exports: onAddReaction
 
 // Module 16959 (ICYMICardInteractionRow)
@@ -14,14 +14,14 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import ReactionUtils from "ReactionUtils" /* 4762 */;
 import Pressables from "Pressables" /* 6185 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7900 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7901 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7990 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9427 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9691 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7895 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7985 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9422 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9686 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 11565 */;
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12833 */;

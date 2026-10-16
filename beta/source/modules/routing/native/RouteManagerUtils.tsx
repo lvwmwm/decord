@@ -1,7 +1,7 @@
 // Module ID: 11193
 // Function ID: 11194
 // Name: RouteManagerUtils
-// Dependencies: [109, 10354, 2069, 2065, 4943, 4748, 2116, 1085, 10355, 3, 4957, 11194, 5889, 1112, 11199, 5934, 7482, 6098, 4976, 584, 5106, 5027, 11200, 2]
+// Dependencies: [109, 10354, 2069, 2065, 4943, 4748, 2116, 1085, 10355, 3, 4957, 11194, 5889, 1112, 11199, 5934, 7477, 6098, 4976, 584, 5106, 5027, 11200, 2]
 // Exports: cleanupRouteManager, extractParamsFromVoiceModalRoute, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
 
 // Module 11193 (RouteManagerUtils)
@@ -15,7 +15,7 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 *
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
 import _mod11194 from "module_11194" /* 11194 */;
@@ -181,7 +181,7 @@ function updateSelectedChannelListener(location, arg1) {
       if (isGuildVoiceResult) {
         const popWithKey = ModalActionCreatorsDefault.popWithKey;
         ModalActionCreatorsDefault;
-        const tmpResult = channel1(7482);
+        const tmpResult = channel1(7477);
         popWithKey(tmpResult.getVoiceChannelKey(channel.id));
       }
       const obj17 = GuildActionCreatorsDefault;
@@ -249,11 +249,11 @@ function updateSelectedChannelListener(location, arg1) {
   }
   const isModalOpen = channel1(4976).isModalOpen;
   channel1(4976);
-  const tmpResult5 = channel1(7482);
+  const tmpResult5 = channel1(7477);
   if (!isModalOpen(tmpResult5.getVoiceChannelKey(channel1.id))) {
     const popAboveKey = ModalActionCreatorsDefault.popAboveKey;
     ModalActionCreatorsDefault;
-    const tmpResult6 = channel1(7482);
+    const tmpResult6 = channel1(7477);
     popAboveKey(tmpResult6.getVoiceChannelKey(channel1.id));
     const obj12 = DispatcherDefault;
     obj12.wait(() => {

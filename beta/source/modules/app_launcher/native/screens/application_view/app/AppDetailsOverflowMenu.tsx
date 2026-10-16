@@ -1,7 +1,7 @@
 // Module ID: 11821
 // Function ID: 11822
 // Name: AppDetailsOverflowMenu
-// Dependencies: [109, 19, 21, 558, 576, 9247, 10861, 1126, 10610, 2041, 6886, 4808, 10017, 7574, 8772, 9363, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9242, 10861, 1126, 10610, 2041, 6886, 4808, 10012, 7569, 8767, 9358, 2]
 
 // Module 11821 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;

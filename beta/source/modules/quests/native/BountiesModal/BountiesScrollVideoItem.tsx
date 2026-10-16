@@ -1,7 +1,7 @@
 // Module ID: 15294
 // Function ID: 15295
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9063, 7390, 5972, 21, 558, 576, 15295, 504, 15296, 12973, 15301, 15302, 15303, 15299, 12983, 5979, 5977, 15306, 15311, 2]
+// Dependencies: [5, 32, 19, 17, 9058, 7385, 5972, 21, 558, 576, 15295, 504, 15296, 12973, 15301, 15302, 15303, 15299, 12983, 5979, 5977, 15306, 15311, 2]
 
 // Module 15294 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
@@ -14,8 +14,8 @@ import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9063 */;
-import BountyStore from "BountyStore" /* 7390 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9058 */;
+import BountyStore from "BountyStore" /* 7385 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

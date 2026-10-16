@@ -1,9 +1,9 @@
 // Module ID: 17971
 // Function ID: 17972
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7577, 8745]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7572, 8740]
 
 // Module 17971
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -12,14 +12,14 @@ import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_8745_mod from "module_8745" /* 8745 */;
+import module_8740_mod from "module_8740" /* 8740 */;
 
 let Animated;
 let hasOwnProperty;
 let items1;
 let metroImportDefault;
 let metroRequire;
-let module_8745;
+let module_8740;
 let oneOfType;
 function _isNativeReflectConstruct() {
   try {
@@ -172,7 +172,7 @@ let items = [
       G = inlineStyles.G;
       if (backgroundColor) {
         const obj4 = { d: circlePathResult, stroke: backgroundColor, strokeWidth: backgroundWidth, strokeLinecap: lineCap, strokeDasharray: mapped1, fill: "transparent" };
-        const Path = tmp24(7577).Path;
+        const Path = tmp24(7572).Path;
         if (!backgroundWidth) {
           backgroundWidth = width;
         }
@@ -182,7 +182,7 @@ let items = [
       let tmp23Result3 = fill > 0;
       if (tmp23Result3) {
         const obj5 = { d: circlePathResult1, stroke: tintColor, strokeWidth: width, strokeLinecap: fillLineCap, strokeDasharray: mapped, fill: "transparent" };
-        tmp23Result3 = tmp23(tmp24(7577).Path, obj5);
+        tmp23Result3 = tmp23(tmp24(7572).Path, obj5);
       }
       items[1] = tmp23Result3;
       items[2] = renderCapResult;
@@ -198,12 +198,12 @@ let items = [
   }
 ];
 const importDefaultResultResult = _createClass(CircularProgress, items);
-let obj = { style: module_8745.object, size: oneOfType(items1).isRequired, fill: module_8745.number.isRequired, width: module_8745.number.isRequired, backgroundWidth: module_8745.number, tintColor: module_8745.string, tintTransparency: module_8745.bool, backgroundColor: module_8745.string, rotation: module_8745.number, lineCap: module_8745.string, arcSweepAngle: module_8745.number, children: module_8745.func, childrenContainerStyle: module_8745.object, padding: module_8745.number, renderCap: module_8745.func, dashedBackground: module_8745.object, dashedTint: module_8745.object };
-module_8745 = module_8745_mod;
-oneOfType = module_8745.oneOfType;
-items1 = [module_8745.number, ];
-module_8745 = module_8745_mod;
-items1[1] = module_8745.instanceOf(Animated.Value);
+let obj = { style: module_8740.object, size: oneOfType(items1).isRequired, fill: module_8740.number.isRequired, width: module_8740.number.isRequired, backgroundWidth: module_8740.number, tintColor: module_8740.string, tintTransparency: module_8740.bool, backgroundColor: module_8740.string, rotation: module_8740.number, lineCap: module_8740.string, arcSweepAngle: module_8740.number, children: module_8740.func, childrenContainerStyle: module_8740.object, padding: module_8740.number, renderCap: module_8740.func, dashedBackground: module_8740.object, dashedTint: module_8740.object };
+module_8740 = module_8740_mod;
+oneOfType = module_8740.oneOfType;
+items1 = [module_8740.number, ];
+module_8740 = module_8740_mod;
+items1[1] = module_8740.instanceOf(Animated.Value);
 importDefaultResultResult.propTypes = obj;
 importDefaultResultResult.defaultProps = { tintColor: "black", tintTransparency: true, rotation: 90, lineCap: "butt", arcSweepAngle: 360, padding: 0, dashedBackground: { width: 0, gap: 0 }, dashedTint: { width: 0, gap: 0 } };
 

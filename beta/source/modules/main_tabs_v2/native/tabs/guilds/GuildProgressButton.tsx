@@ -1,7 +1,7 @@
 // Module ID: 16633
 // Function ID: 16634
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 11895, 587, 10515, 558, 576, 12209, 12212, 8582, 16634, 1126, 12329, 2]
+// Dependencies: [19, 21, 11895, 587, 10515, 558, 576, 12209, 12212, 8577, 16634, 1126, 12329, 2]
 // Exports: getScaledGuildProgressButtonHeight
 
 // Module 16633 (GuildProgressButton)
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const Icon = tmp(8582).RowButton.Icon;
+        const Icon = tmp(8577).RowButton.Icon;
         const tmp15 = <Icon source={completed(16634)} />;
         const intl = tmp(1126).intl;
         const stringResult = intl.string(tmp(1126).t.o3HK3d);
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
           return tmp21;
         }
       }
-      const tmp23 = jsx(tmp(8582).RowButton, { icon: tmp11, label: tmp12, subLabel: subtitle, onPress: tmp9, trailing: tmp17 });
+      const tmp23 = jsx(tmp(8577).RowButton, { icon: tmp11, label: tmp12, subLabel: subtitle, onPress: tmp9, trailing: tmp17 });
       cResult[11] = tmp9;
       cResult[12] = subtitle;
       cResult[13] = tmp17;
@@ -135,9 +135,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgr
     const obj2 = GuildProgressUtils;
     obj2.openActionSheet(guild);
   }, items1);
-  const RowButton = guild(8582).RowButton;
+  const RowButton = guild(8577).RowButton;
   ({ source: completed(16634) });
-  const Icon = guild(8582).RowButton.Icon;
+  const Icon = guild(8577).RowButton.Icon;
   const intl = guild(1126).intl;
   return <RowButton icon={null} label={intl.string(guild(1126).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;
 });

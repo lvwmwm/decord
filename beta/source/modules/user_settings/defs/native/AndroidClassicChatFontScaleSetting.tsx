@@ -1,13 +1,13 @@
 // Module ID: 15610
 // Function ID: 15611
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [15558, 7993, 558, 576, 4733, 1272, 1126, 10663, 1382, 2]
+// Dependencies: [15558, 7988, 558, 576, 4733, 1272, 1126, 10663, 1382, 2]
 
 // Module 15610 (AndroidClassicChatFontScaleSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import FontScaleStore from "FontScaleStore" /* 15558 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

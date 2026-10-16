@@ -1,7 +1,7 @@
 // Module ID: 11966
 // Function ID: 11967
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9384, 5757, 5432, 21, 5092, 587, 1382, 4818, 558, 576, 504, 11026, 1126, 11967, 11968, 11969, 2]
+// Dependencies: [19, 17, 9379, 5757, 5432, 21, 5092, 587, 1382, 4818, 558, 576, 504, 11026, 1126, 11967, 11968, 11969, 2]
 
 // Module 11966 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9384 */;
+import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9379 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import createStyles from "createStyles" /* 5092 */;

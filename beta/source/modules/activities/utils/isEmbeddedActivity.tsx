@@ -1,10 +1,10 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7422
+// Function ID: 7423
 // Name: isEmbeddedActivity
 // Dependencies: [1085, 7013, 2]
 // Exports: default
 
-// Module 7427 (isEmbeddedActivity)
+// Module 7422 (isEmbeddedActivity)
 import Constants from "Constants" /* 1085 */;
 import hasFlagDefault from "hasFlag" /* 7013 */;
 import size from "module_2" /* 2 */;

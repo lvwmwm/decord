@@ -1,7 +1,7 @@
 // Module ID: 12831
 // Function ID: 12832
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1393, 21, 5092, 587, 558, 576, 4969, 1126, 8961, 6185, 6820, 1415, 4767, 2]
+// Dependencies: [19, 17, 1393, 21, 5092, 587, 558, 576, 4969, 1126, 8956, 6185, 6820, 1415, 4767, 2]
 // Exports: getEmojiKey
 
 // Module 12831 (EmojiReactionRowButton)
@@ -15,7 +15,7 @@ import EmojiTypes from "EmojiTypes" /* 4767 */;
 import shared from "shared" /* 4969 */;
 import Pressables from "Pressables" /* 6185 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import ReactionIcon2 from "ReactionIcon" /* 8961 */;
+import ReactionIcon2 from "ReactionIcon" /* 8956 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -115,7 +115,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerR
   const PressableOpacity = tmp2(6185).PressableOpacity;
   const intl = tmp2(1126).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(8961).ReactionIcon;
+  const ReactionIcon = tmp2(8956).ReactionIcon;
   if (str == null) {
     str = "md";
   }

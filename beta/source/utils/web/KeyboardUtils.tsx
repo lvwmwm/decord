@@ -1,7 +1,7 @@
 // Module ID: 14375
 // Function ID: 14376
 // Name: KeyboardUtils
-// Dependencies: [32, 7226, 1382, 12, 14376, 14377, 14378, 1388, 2]
+// Dependencies: [32, 7221, 1382, 12, 14376, 14377, 14378, 1388, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
 // Module 14375 (KeyboardUtils)
@@ -9,7 +9,7 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import keyCodeDefault from "keyCode" /* 14376 */;
 import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 14377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import KeyboardConstants from "KeyboardConstants" /* 7226 */;
+import KeyboardConstants from "KeyboardConstants" /* 7221 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

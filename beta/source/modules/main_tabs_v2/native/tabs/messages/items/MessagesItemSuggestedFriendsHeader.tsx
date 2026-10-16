@@ -1,14 +1,14 @@
 // Module ID: 16532
 // Function ID: 16533
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5088, 587, 5092, 558, 576, 4850, 8395, 10226, 1126, 2]
+// Dependencies: [19, 17, 21, 5088, 587, 5092, 558, 576, 4850, 8390, 10226, 1126, 2]
 
 // Module 16532 (MessagesItemSuggestedFriendsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8395 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

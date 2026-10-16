@@ -1,10 +1,10 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7439
+// Function ID: 7440
 // Name: StreamActionCreators
-// Dependencies: [5, 5111, 7445, 7446, 5897, 502, 2065, 2087, 2116, 5113, 1085, 5898, 584, 5900, 38, 5414, 7447, 5106, 7481, 1295, 1102, 5938, 1273, 5270, 5889, 7015, 7017, 2]
+// Dependencies: [5, 5111, 7440, 7441, 5897, 502, 2065, 2087, 2116, 5113, 1085, 5898, 584, 5900, 38, 5414, 7442, 5106, 7476, 1295, 1102, 5938, 1273, 5270, 5889, 7015, 7017, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 7444 (StreamActionCreators)
+// Module 7439 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -16,11 +16,11 @@ import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
-import transitionToStreamDefault from "transitionToStream" /* 7481 */;
+import transitionToStreamDefault from "transitionToStream" /* 7476 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7445 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7446 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7440 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7441 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -59,7 +59,7 @@ function watchStream(stream, forceMultiple) {
       obj3.dispatch(obj4);
       const tmp18 = importDefault;
       if (null != guildId) {
-        const tmp12Result = tmp12(7447);
+        const tmp12Result = tmp12(7442);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;

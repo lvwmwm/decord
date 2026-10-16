@@ -1,7 +1,7 @@
 // Module ID: 18714
 // Function ID: 18715
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 2064, 10807, 2019, 5897, 2037, 5116, 7391, 17776, 5972, 10802, 1102, 7398, 7397, 12969, 5973, 9172, 5975, 7416, 7437, 7436, 6808, 5980, 7413, 5900, 1388, 7435, 7411, 2]
+// Dependencies: [5, 32, 2064, 10807, 2019, 5897, 2037, 5116, 7386, 17776, 5972, 10802, 1102, 7393, 7392, 12969, 5973, 9167, 5975, 7411, 7432, 7431, 6808, 5980, 7408, 5900, 1388, 7430, 7406, 2]
 
 // Module 18714 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1102 */;
@@ -9,13 +9,13 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import QuestVariants from "QuestVariants" /* 5973 */;
 import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5980 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7397 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7411 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7435 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7436 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7437 */;
-import QuestActionCreators from "QuestActionCreators" /* 9172 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7392 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7406 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7430 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7431 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7432 */;
+import QuestActionCreators from "QuestActionCreators" /* 9167 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import QuestMatchingUtils from "QuestMatchingUtils" /* 12969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -26,10 +26,10 @@ import RunningGameStore from "RunningGameStore" /* 2019 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17776 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import getQuestLogger from "getQuestLogger" /* 7398 */;
+import getQuestLogger from "getQuestLogger" /* 7393 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
       let features = tmp2.config.features;
       let tmp5 = require;
       if (features.includes(QuestVariants.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
-        let tmp5Result = tmp5(9172);
-        let obj3 = { questContent: tmp5(5975).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(7416).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5975).QuestContent.RUNNING_ACTIVITY };
+        let tmp5Result = tmp5(9167);
+        let obj3 = { questContent: tmp5(5975).QuestContent.RUNNING_ACTIVITY, questContentCTA: tmp5(7411).QuestContentCTA.START_QUEST, sourceQuestContent: tmp5(5975).QuestContent.RUNNING_ACTIVITY };
         let enrollInQuest = tmp5Result.enrollInQuest;
         let id = item10020.id;
         let enrollInQuestResult = enrollInQuest(id, obj3);
@@ -481,7 +481,7 @@ class QuestProgressManager extends AutomaticLifecycleManager {
               let obj3 = { applicationId: tmp25, executablePath: result, executableFingerprint: tmp.executableFingerprint };
               let result1 = map.set(tmp5.id, obj3);
             } else if (isQuestRobloxRelated(desktopApplicationIds, tmp)) {
-              let obj4 = { applicationId: tmp7(7437).ROBLOX_APPLICATION_ID, executablePath: result, executableFingerprint: tmp.executableFingerprint };
+              let obj4 = { applicationId: tmp7(7432).ROBLOX_APPLICATION_ID, executablePath: result, executableFingerprint: tmp.executableFingerprint };
               set = map.set;
               let id = tmp5.id;
               let result2 = set(id, obj4);

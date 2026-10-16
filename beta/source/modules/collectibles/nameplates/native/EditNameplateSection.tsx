@@ -1,7 +1,7 @@
 // Module ID: 14898
 // Function ID: 14899
 // Name: EditNameplateSection
-// Dependencies: [19, 17, 1991, 21, 5092, 13474, 558, 576, 14897, 13475, 6879, 1990, 9022, 2]
+// Dependencies: [19, 17, 1991, 21, 5092, 13474, 558, 576, 14897, 13475, 6879, 1990, 9017, 2]
 
 // Module 14898 (EditNameplateSection)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import utils from "utils" /* 1990 */;
 import NameplateRecord from "NameplateRecord" /* 1991 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import NameplateDefault from "Nameplate" /* 9022 */;
+import NameplateDefault from "Nameplate" /* 9017 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 13474 */;
 import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 13475 */;
 import useNameplateSections from "useNameplateSections" /* 14897 */;
@@ -305,7 +305,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((namep
   const callback = react.useCallback(() => {
     setSelectedNameplate(nameplate);
   }, items1);
-  let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: closure_6(setSelectedNameplate(9022), obj2) };
+  let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: closure_6(setSelectedNameplate(9017), obj2) };
   const EditCollectiblesListItemProduct = nameplate(13475).EditCollectiblesListItemProduct;
   obj2 = { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: items2 };
   items2 = [tmp.nameplate, { borderRadius: 6 }];

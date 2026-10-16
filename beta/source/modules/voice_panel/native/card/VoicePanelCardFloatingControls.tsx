@@ -1,7 +1,7 @@
 // Module ID: 17883
 // Function ID: 17884
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 5081, 2064, 5897, 5110, 11972, 11970, 11975, 1085, 5115, 21, 4850, 1200, 5092, 587, 558, 576, 11971, 17839, 17884, 11176, 17885, 17812, 1126, 11082, 8799, 8798, 6162, 6290, 5378, 17810, 7444, 5900, 10812, 17779, 17886, 17887, 504, 17869, 17888, 6762, 4827, 8856, 8883, 8238, 8881, 8879, 8859, 17889, 5362, 6852, 8304, 8810, 5628, 8854, 5088, 13023, 17890, 2]
+// Dependencies: [19, 17, 5081, 2064, 5897, 5110, 11972, 11970, 11975, 1085, 5115, 21, 4850, 1200, 5092, 587, 558, 576, 11971, 17839, 17884, 11176, 17885, 17812, 1126, 11082, 8794, 8793, 6162, 6290, 5378, 17810, 7439, 5900, 10812, 17779, 17886, 17887, 504, 17869, 17888, 6762, 4827, 8851, 8878, 8233, 8876, 8874, 8854, 17889, 5362, 6852, 8299, 8805, 5628, 8849, 5088, 13023, 17890, 2]
 
 // Module 17883 (VoicePanelCardFloatingControls)
 import react2 from "react" /* 576 */;
@@ -12,15 +12,15 @@ import native from "native" /* 1200 */;
 import spring from "spring" /* 5378 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 8798 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8799 */;
-import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 8856 */;
-import GuildTagDefault from "GuildTag" /* 8859 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8881 */;
-import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 8883 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8793 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8794 */;
+import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 8851 */;
+import GuildTagDefault from "GuildTag" /* 8854 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8876 */;
+import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 8878 */;
 import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10812 */;
 import VoiceXIcon from "VoiceXIcon" /* 11082 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
@@ -59,7 +59,7 @@ let closure_17;
 let closure_18;
 let tmp;
 const native2 = tmp(4827);
-const useGameProfileObscuredDefault = tmp(8238);
+const useGameProfileObscuredDefault = tmp(8233);
 function getAccessibilityLabel(tmp4ResultResult, label) {
   if (null != tmp4ResultResult.find((type) => type.type === require("useVoicePanelCardUserStateIcons").VoicePanelCardUserStateIconType.STREAM_ICON)) {
     const intl3 = intl5.intl;
@@ -1128,8 +1128,8 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   } else {
     tmp6 = cResult[1];
   }
-  gameRecord = tmp3(8883)(tmp6).gameRecord;
-  let tmp7 = tmp3(8238)(gameRecord);
+  gameRecord = tmp3(8878)(tmp6).gameRecord;
+  let tmp7 = tmp3(8233)(gameRecord);
   importDefault = tmp7;
   dependencyMap = react.useRef(false);
   const obj3 = react;

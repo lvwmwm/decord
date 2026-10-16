@@ -1,16 +1,16 @@
-// Module ID: 9300
-// Function ID: 9301
+// Module ID: 9295
+// Function ID: 9296
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2065, 6078, 2116, 21, 5092, 1200, 587, 558, 576, 504, 4818, 4936, 1126, 6157, 9301, 9302, 9304, 6185, 2]
+// Dependencies: [109, 19, 17, 2065, 6078, 2116, 21, 5092, 1200, 587, 558, 576, 504, 4818, 4936, 1126, 6157, 9296, 9297, 9299, 6185, 2]
 
-// Module 9300 (PressableNavigatorBackIcon)
+// Module 9295 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9301 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9302 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9304 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9296 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9297 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9299 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

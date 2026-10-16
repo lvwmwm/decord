@@ -1,7 +1,7 @@
 // Module ID: 17091
 // Function ID: 17092
 // Name: ConjureAppIdentity
-// Dependencies: [109, 32, 5, 19, 17, 21, 5092, 587, 7760, 7770, 17060, 1126, 3849, 1494, 17087, 558, 576, 6157, 17092, 6182, 5088, 5377, 9406, 5379, 6286, 6947, 6774, 2031, 8767, 2]
+// Dependencies: [109, 32, 5, 19, 17, 21, 5092, 587, 7755, 7765, 17060, 1126, 3849, 1494, 17087, 558, 576, 6157, 17092, 6182, 5088, 5377, 9401, 5379, 6286, 6947, 6774, 2031, 8762, 2]
 
 // Module 17091 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
@@ -16,8 +16,8 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 6286 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import ImagePickerDefault from "ImagePicker" /* 7770 */;
-import BotTagDefault from "BotTag" /* 8767 */;
+import ImagePickerDefault from "ImagePicker" /* 7765 */;
+import BotTagDefault from "BotTag" /* 8762 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -283,7 +283,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                   }
                   const _Symbol2 = Symbol;
                   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                    const tmp36 = closure_9(tmp(9406).UploadIcon, { size: "sm" });
+                    const tmp36 = closure_9(tmp(9401).UploadIcon, { size: "sm" });
                     cResult[21] = tmp36;
                     tmp34 = tmp36;
                   } else {
@@ -582,7 +582,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   items4 = [closure_10(Stack3, obj8), ];
   const obj12 = { direction: "horizontal", spacing: onChange(587).space.PX_8, align: "center", children: items5 };
   const Stack4 = tmp6(5377).Stack;
-  const obj13 = { size: "sm", variant: "secondary", icon: closure_9(disabled(9406).UploadIcon, { size: "sm" }), text: string(iwCCor), accessibilityLabel: stringResult1, disabled, onPress: callback };
+  const obj13 = { size: "sm", variant: "secondary", icon: closure_9(disabled(9401).UploadIcon, { size: "sm" }), text: string(iwCCor), accessibilityLabel: stringResult1, disabled, onPress: callback };
   const Button = tmp6(5379).Button;
   const intl3 = tmp6(1126).intl;
   string = intl3.string;

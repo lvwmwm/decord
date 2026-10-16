@@ -1,7 +1,7 @@
 // Module ID: 16680
 // Function ID: 16681
 // Name: GuildTooltipActionSheets
-// Dependencies: [32, 19, 2062, 21, 16681, 2000, 16683, 16686, 16688, 558, 576, 16689, 2049, 16690, 6027, 16691, 10014, 10013, 4850, 2]
+// Dependencies: [32, 19, 2062, 21, 16681, 2000, 16683, 16686, 16688, 558, 576, 16689, 2049, 16690, 6027, 16691, 10009, 10008, 4850, 2]
 
 // Module 16680 (GuildTooltipActionSheets)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10013 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 10014 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10008 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 10009 */;
 import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 16690 */;
 import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 16691 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

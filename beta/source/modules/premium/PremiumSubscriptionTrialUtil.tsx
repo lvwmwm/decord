@@ -1,14 +1,14 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8084
+// Function ID: 8085
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1390, 4775, 7173, 1392, 558, 576, 504, 2]
+// Dependencies: [1390, 4775, 7168, 1392, 558, 576, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub
 
-// Module 8089 (PremiumSubscriptionTrialUtil)
+// Module 8084 (PremiumSubscriptionTrialUtil)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import UserOfferStore from "UserOfferStore" /* 7173 */;
+import UserOfferStore from "UserOfferStore" /* 7168 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 12589
 // Function ID: 12590
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 4818, 587, 7577, 8930, 12590, 5419, 11865, 7002, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 4818, 587, 7572, 8925, 12590, 5419, 11865, 7002, 2]
 
 // Module 12589 (usePreviewableMedia)
 import react2 from "react" /* 576 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
 import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 8930 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 8925 */;
 import WaveformIcon from "WaveformIcon" /* 12590 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj3;
 let tmp5;
-const inlineStylesDefault = tmp5(7577);
+const inlineStylesDefault = tmp5(7572);
 function getBasePreviewableMedia(arg0) {
   let isForward;
   let message;
@@ -93,7 +93,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = metroImportDefault(tmp8(8930).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = metroImportDefault(tmp8(8925).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";

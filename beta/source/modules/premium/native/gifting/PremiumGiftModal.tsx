@@ -1,17 +1,17 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10047
+// Function ID: 10048
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1390, 21, 10053, 5092, 587, 558, 576, 504, 8980, 1126, 6201, 10054, 12736, 12738, 12767, 2664, 12725, 10051, 6879, 6852, 1279, 6170, 5934, 4782, 10179, 6688, 12796, 10055, 2]
+// Dependencies: [32, 19, 1390, 21, 10048, 5092, 587, 558, 576, 504, 8975, 1126, 6201, 10049, 12736, 12738, 12767, 2664, 12725, 10046, 6879, 6852, 1279, 6170, 5934, 4782, 10179, 6688, 12796, 10050, 2]
 
-// Module 10052 (PremiumGiftModal)
+// Module 10047 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10053 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10054 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10048 */;
+import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10049 */;
 import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10179 */;
 import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 12725 */;
 import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 12736 */;
@@ -92,7 +92,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult4 = tmp(8980);
+  const tmpResult4 = tmp(8975);
   const fetchWishlistAndProfileInfoForUser = tmpResult4.useFetchWishlistAndProfileInfoForUser(arg2);
   ({ wishlist, userProfile, wishlistId, error } = fetchWishlistAndProfileInfoForUser);
   if (cResult[3] !== stateFromStores) {
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
       }
     }
   }
-  const tmpResult5 = tmp(8980);
+  const tmpResult5 = tmp(8975);
   const shouldShowWishlistInDMGifting = tmpResult5.useShouldShowWishlistInDMGifting(tmp10);
   let tmp13 = null != arg2 && !shouldShowWishlistInDMGifting && null == error;
   if (tmp13) {
@@ -488,8 +488,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
             cResult[19] = premiumType;
             cResult[20] = recipientUserId;
             cResult[21] = tmp29;
-            cResult[22] = jsx(onDismiss(10055).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
-            const tmp34 = jsx(onDismiss(10055).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            cResult[22] = jsx(onDismiss(10050).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            const tmp34 = jsx(onDismiss(10050).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
           }
           cResult[12] = tmp19;
           cResult[13] = tmp26;
@@ -540,7 +540,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
       return tmp21;
     }
   }
-  const tmpResult2 = onDismiss(10053);
+  const tmpResult2 = onDismiss(10048);
   const basePurchaseFlowAnalyticsFields = tmpResult2.getBasePurchaseFlowAnalyticsFields({ isGift: true, analyticsLoadId: tmp6, analyticsLocation, analyticsLocations });
   cResult[1] = tmp6;
   cResult[2] = analyticsLocation;

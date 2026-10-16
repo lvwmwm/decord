@@ -1,7 +1,7 @@
 // Module ID: 10456
 // Function ID: 10457
 // Name: LongPressForumPostActionSheet
-// Dependencies: [19, 4751, 4752, 7006, 502, 2087, 6035, 1085, 2072, 21, 10330, 10341, 1126, 10342, 10344, 6652, 6800, 5036, 7902, 8773, 5051, 10259, 10457, 8223, 9724, 9692, 11, 6879, 7092, 9697, 10459, 5056, 10461, 2000, 5038, 9383, 10346, 10463, 10348, 10466, 10333, 5299, 5049, 7179, 1200, 10017, 6886, 4808, 558, 576, 504, 7004, 6972, 9327, 2041, 5421, 10468, 6159, 1628, 10469, 6895, 6899, 2]
+// Dependencies: [19, 4751, 4752, 7006, 502, 2087, 6035, 1085, 2072, 21, 10330, 10341, 1126, 10342, 10344, 6652, 6800, 5036, 7897, 8768, 5051, 10259, 10457, 8218, 9719, 9687, 11, 6879, 7092, 9692, 10459, 5056, 10461, 2000, 5038, 9378, 10346, 10463, 10348, 10466, 10333, 5299, 5049, 7174, 1200, 10012, 6886, 4808, 558, 576, 504, 7004, 6972, 9322, 2041, 5421, 10468, 6159, 1628, 10469, 6895, 6899, 2]
 
 // Module 10456 (LongPressForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -18,10 +18,10 @@ import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7902 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9692 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9687 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import markChannelUnreadDefault from "markChannelUnread" /* 10344 */;
 import threadActionSheets from "threadActionSheets" /* 10466 */;
 import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 10468 */;
@@ -670,7 +670,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const canManageThread = tmpResult20.useCanManageThread(thread);
   const tmpResult21 = tmp(6972);
   const canUnarchiveThread = tmpResult21.useCanUnarchiveThread(thread);
-  const tmpResult22 = tmp(9327);
+  const tmpResult22 = tmp(9322);
   const existingPin = tmpResult22.useExistingPin(thread);
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -938,7 +938,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const canManageThread = obj9.useCanManageThread(thread);
   const obj10 = thread(6972);
   const canUnarchiveThread = obj10.useCanUnarchiveThread(thread);
-  const obj11 = thread(9327);
+  const obj11 = thread(9322);
   const existingPin = obj11.useExistingPin(thread);
   const items5 = [ThreadMessageStore];
   const obj12 = thread(504);

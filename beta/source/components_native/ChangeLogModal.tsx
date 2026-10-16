@@ -1,7 +1,7 @@
 // Module ID: 15844
 // Function ID: 15845
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1085, 2115, 21, 5092, 587, 4827, 1265, 8387, 15845, 6157, 8426, 1126, 6185, 8674, 9770, 1200, 8122, 558, 576, 1497, 8123, 1504, 6201, 4702, 8124, 5088, 5934, 6688, 2]
+// Dependencies: [19, 17, 1085, 2115, 21, 5092, 587, 4827, 1265, 8382, 15845, 6157, 8421, 1126, 6185, 8669, 9765, 1200, 8117, 558, 576, 1497, 8118, 1504, 6201, 4702, 8119, 5088, 5934, 6688, 2]
 
 // Module 15844 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
@@ -15,11 +15,11 @@ import native from "native" /* 4827 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
 import Navigator from "Navigator" /* 6688 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8122 */;
-import openMediaModal2 from "openMediaModal" /* 8387 */;
-import common_VideoDefault from "common/Video" /* 8426 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9770 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8117 */;
+import openMediaModal2 from "openMediaModal" /* 8382 */;
+import common_VideoDefault from "common/Video" /* 8421 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9765 */;
 import _modDef15845 from "module_15845" /* 15845 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

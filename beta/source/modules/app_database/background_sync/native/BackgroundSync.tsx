@@ -1,7 +1,7 @@
 // Module ID: 18057
 // Function ID: 18058
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2069, 2065, 6035, 1999, 7201, 1085, 6030, 5987, 2087, 3, 1102, 510, 9702, 1382, 584, 1255, 1265, 2091, 1295, 11, 12, 7342, 7345, 7343, 13965, 15876, 7199, 1388, 7209, 2]
+// Dependencies: [32, 5, 2069, 2065, 6035, 1999, 7196, 1085, 6030, 5987, 2087, 3, 1102, 510, 9697, 1382, 584, 1255, 1265, 2091, 1295, 11, 12, 7337, 7340, 7338, 13965, 15876, 7194, 1388, 7204, 2]
 // Exports: backgroundSync
 
 // Module 18057 (background_sync/BackgroundSync)
@@ -11,17 +11,17 @@ import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
-import modules_Messages from "modules/Messages" /* 7199 */;
-import GuildVersionsDefault from "GuildVersions" /* 7342 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7343 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7345 */;
+import modules_Messages from "modules/Messages" /* 7194 */;
+import GuildVersionsDefault from "GuildVersions" /* 7337 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7338 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7340 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import "ChannelStore";
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import FileSystemStore from "FileSystemStore" /* 7201 */;
+import FileSystemStore from "FileSystemStore" /* 7196 */;
 import Constants from "Constants" /* 1085 */;
 import StickersStore from "StickersStore" /* 6030 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

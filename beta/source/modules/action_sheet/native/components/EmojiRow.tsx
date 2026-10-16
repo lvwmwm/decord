@@ -1,7 +1,7 @@
 // Module ID: 12829
 // Function ID: 12830
 // Name: EmojiRow
-// Dependencies: [19, 17, 6841, 21, 5092, 5056, 5057, 7900, 4762, 7179, 9439, 558, 576, 4818, 587, 12830, 12831, 9385, 12832, 6879, 2]
+// Dependencies: [19, 17, 6841, 21, 5092, 5056, 5057, 7895, 4762, 7174, 9434, 558, 576, 4818, 587, 12830, 12831, 9380, 12832, 6879, 2]
 
 // Module 12829 (EmojiRow)
 import react_native from "react-native" /* 17 */;
@@ -10,9 +10,9 @@ import useToken from "useToken" /* 4818 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7900 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9385 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9439 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7895 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9380 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9434 */;
 import useEmojisForReactionRow from "useEmojisForReactionRow" /* 12830 */;
 import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 12831 */;
 import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 12832 */;
@@ -27,7 +27,7 @@ let dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const MessageActionCreatorsDefault = tmp3(7179);
+const MessageActionCreatorsDefault = tmp3(7174);
 const View = react_native.View;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

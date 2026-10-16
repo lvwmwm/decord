@@ -1,10 +1,10 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9331
+// Function ID: 9332
 // Name: ConversationExperiments
 // Dependencies: [2087, 1085, 1453, 558, 576, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled
 
-// Module 9336 (ConversationExperiments)
+// Module 9331 (ConversationExperiments)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2087 */;

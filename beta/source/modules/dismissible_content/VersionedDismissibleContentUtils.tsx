@@ -1,7 +1,7 @@
 // Module ID: 2063
 // Function ID: 2064
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2064, 7279, 2049, 13011, 14300, 1998, 14301, 2077, 2]
+// Dependencies: [2064, 7274, 2049, 13011, 14300, 1998, 14301, 2077, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
 // Module 2063 (VersionedDismissibleContentUtils)
@@ -11,7 +11,7 @@ import TypeUtils from "TypeUtils" /* 2077 */;
 import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14300 */;
 import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14301 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7279 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");

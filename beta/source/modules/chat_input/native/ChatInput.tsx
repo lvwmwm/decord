@@ -1,7 +1,7 @@
 // Module ID: 11632
 // Function ID: 11633
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 7922, 11633, 9694, 7368, 11634, 7244, 7369, 4750, 7908, 9384, 11636, 1085, 1502, 2062, 1393, 1627, 21, 5092, 587, 1382, 11637, 2041, 4936, 4818, 11638, 504, 6972, 6852, 7898, 4850, 4987, 8513, 11660, 11661, 9294, 11662, 11663, 6924, 1121, 1630, 11707, 11708, 7769, 9263, 7759, 1279, 5057, 1265, 1629, 5107, 10853, 11712, 11907, 10023, 4985, 7758, 1893, 11908, 9428, 9364, 11929, 10040, 9260, 11932, 11933, 4782, 11951, 11952, 11953, 11954, 11960, 11961, 1103, 11962, 11963, 11966, 11982, 11985, 11988, 12092, 12094, 12119, 12121, 12122, 12135, 12139, 12144, 12146, 12147, 12148, 12153, 2]
+// Dependencies: [5, 32, 19, 17, 7917, 11633, 9689, 7363, 11634, 7239, 7364, 4750, 7903, 9379, 11636, 1085, 1502, 2062, 1393, 1627, 21, 5092, 587, 1382, 11637, 2041, 4936, 4818, 11638, 504, 6972, 6852, 7893, 4850, 4987, 8508, 11660, 11661, 9289, 11662, 11663, 6924, 1121, 1630, 11707, 11708, 7764, 9258, 7754, 1279, 5057, 1265, 1629, 5107, 10853, 11712, 11907, 10018, 4985, 7753, 1893, 11908, 9423, 9359, 11929, 10035, 9255, 11932, 11933, 4782, 11951, 11952, 11953, 11954, 11960, 11961, 1103, 11962, 11963, 11966, 11982, 11985, 11988, 12092, 12094, 12119, 12121, 12122, 12135, 12139, 12144, 12146, 12147, 12148, 12153, 2]
 
 // Module 11632 (ChatInput)
 import nativeDefault from "native" /* 587 */;
@@ -12,20 +12,20 @@ import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6924 */;
 import ThreadHooks from "ThreadHooks" /* 6972 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
 import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11634 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7922 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7917 */;
 import DiceRollStore from "DiceRollStore" /* 11633 */;
-import NativeMenuStore from "NativeMenuStore" /* 9694 */;
-import PendingReplyStore from "PendingReplyStore" /* 7368 */;
-import EditMessageStore from "EditMessageStore" /* 7369 */;
+import NativeMenuStore from "NativeMenuStore" /* 9689 */;
+import PendingReplyStore from "PendingReplyStore" /* 7363 */;
+import EditMessageStore from "EditMessageStore" /* 7364 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import ChatInputConstants from "ChatInputConstants" /* 11636 */;
 import Constants from "Constants" /* 1085 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
@@ -283,7 +283,7 @@ class ChatInput {
     if (canStartThread) {
       canStartThread = !tmp22;
     }
-    const tmpResult44 = tmp(7898);
+    const tmpResult44 = tmp(7893);
     const tmp40 = tmpResult44.useCanPostPollsInChannel(channel) && null == threadCreationCallback;
     const tmpResult45 = tmp(4850);
     sharedValue = tmpResult45.useSharedValue(token);
@@ -299,7 +299,7 @@ class ChatInput {
     let result3 = !tmp22;
     let isAppLauncherEnabled = result3;
     if (null == threadCreationCallback) {
-      const tmpResult47 = tmp(8513);
+      const tmpResult47 = tmp(8508);
       isAppLauncherEnabled = tmpResult47.getIsAppLauncherEnabled(channel);
     }
     const items9 = [stateFromStores1];
@@ -323,7 +323,7 @@ class ChatInput {
     let obj3 = { disabled: !editable };
     const tmpResult50 = tmp(11661);
     const refreshChatInputCoachmark = tmpResult50.useRefreshChatInputCoachmark(obj3);
-    const tmpResult51 = tmp(9294);
+    const tmpResult51 = tmp(9289);
     let canUseScheduledMessages = tmpResult51.useCanUseScheduledMessages();
     const useScheduledMessageDraftCoachmarkState = tmp(11662).useScheduledMessageDraftCoachmarkState;
     tmp(11662);

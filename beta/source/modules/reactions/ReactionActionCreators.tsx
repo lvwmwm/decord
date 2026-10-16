@@ -1,18 +1,18 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7895
+// Function ID: 7896
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2065, 5432, 1085, 1102, 5299, 1126, 1121, 584, 7901, 1295, 7902, 1265, 5107, 4969, 7925, 4768, 2]
+// Dependencies: [5, 502, 2065, 5432, 1085, 1102, 5299, 1126, 1121, 584, 7896, 1295, 7897, 1265, 5107, 4969, 7920, 4768, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7900 (ReactionActionCreators)
+// Module 7895 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl4 from "intl" /* 1126 */;
 import EmojiUtils from "EmojiUtils" /* 4768 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7901 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7902 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

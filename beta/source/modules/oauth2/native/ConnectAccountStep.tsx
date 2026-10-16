@@ -1,9 +1,9 @@
-// Module ID: 9241
-// Function ID: 9242
+// Module ID: 9236
+// Function ID: 9237
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 5440, 502, 1390, 21, 5092, 587, 558, 576, 5031, 504, 5763, 1415, 4969, 6853, 9205, 1200, 9242, 5088, 1126, 5379, 5046, 6196, 2]
+// Dependencies: [19, 17, 5440, 502, 1390, 21, 5092, 587, 558, 576, 5031, 504, 5763, 1415, 4969, 6853, 9200, 1200, 9237, 5088, 1126, 5379, 5046, 6196, 2]
 
-// Module 9241 (ConnectAccountStep)
+// Module 9236 (ConnectAccountStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
         }
       }
       const obj4 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-      const MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
+      const MoreHorizontalIcon = tmp(9237).MoreHorizontalIcon;
       const tmp36 = closure_8(MoreHorizontalIcon, obj4);
       class E {
         constructor() {
@@ -415,7 +415,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   const Avatar = tmp5(1200).Avatar;
   items4 = [closure_8(Avatar, obj9), , ];
   const obj10 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-  const MoreHorizontalIcon = tmp5(9242).MoreHorizontalIcon;
+  const MoreHorizontalIcon = tmp5(9237).MoreHorizontalIcon;
   items4[1] = closure_8(MoreHorizontalIcon, obj10);
   const obj11 = { source: userAvatarSource, size: clientId(1200).AvatarSizes.XLARGE };
   const Avatar2 = tmp5(1200).Avatar;

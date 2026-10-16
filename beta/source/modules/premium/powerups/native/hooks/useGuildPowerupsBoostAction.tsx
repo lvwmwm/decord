@@ -1,7 +1,7 @@
 // Module ID: 16608
 // Function ID: 16609
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 7119, 5008, 1085, 558, 576, 12276, 6852, 7139, 8027, 8025, 5959, 7120, 2]
+// Dependencies: [5, 19, 7119, 5008, 1085, 558, 576, 12276, 6852, 7139, 8022, 8020, 5959, 7120, 2]
 
 // Module 16608 (useGuildPowerupsBoostAction)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;

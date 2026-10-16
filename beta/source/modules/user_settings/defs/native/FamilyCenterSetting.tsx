@@ -1,7 +1,7 @@
 // Module ID: 15143
 // Function ID: 15144
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1085, 21, 558, 576, 15144, 15145, 7572, 587, 1126, 2568, 10663, 8217, 15148, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 15144, 15145, 7567, 587, 1126, 2568, 10663, 8212, 15148, 2]
 
 // Module 15143 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GroupIcon from "GroupIcon" /* 8217 */;
+import GroupIcon from "GroupIcon" /* 8212 */;
 import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15144 */;
 import useParentalConsentWarning from "useParentalConsentWarning" /* 15145 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFamilyC
         let first;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const WarningIcon = tmp(7572).WarningIcon;
+          const WarningIcon = tmp(7567).WarningIcon;
           const intl = tmp(1126).intl;
           const tmp12 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2568.wucWfE)} />;
           cResult[0] = tmp12;
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFamilyC
     if (null != daysRemaining) {
       tmp6 = null;
       if (daysRemaining >= 0) {
-        const WarningIcon = tmp(7572).WarningIcon;
+        const WarningIcon = tmp(7567).WarningIcon;
         const intl = tmp(1126).intl;
         tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2568.wucWfE)} />;
       }

@@ -1,7 +1,7 @@
 // Module ID: 18257
 // Function ID: 18258
 // Name: TelecomManager
-// Dependencies: [5, 17, 10981, 5897, 502, 5758, 2065, 2012, 12566, 5110, 4760, 4963, 1390, 1085, 5117, 3, 14800, 6808, 18258, 5889, 7017, 7482, 5243, 11047, 11052, 1628, 5421, 10980, 2]
+// Dependencies: [5, 17, 10981, 5897, 502, 5758, 2065, 2012, 12566, 5110, 4760, 4963, 1390, 1085, 5117, 3, 14800, 6808, 18258, 5889, 7017, 7477, 5243, 11047, 11052, 1628, 5421, 10980, 2]
 
 // Module 18257 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,7 +11,7 @@ import Constants2 from "Constants" /* 5117 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import useHasVideoPermission from "useHasVideoPermission" /* 11047 */;
 import useScreenshareUtils from "useScreenshareUtils" /* 11052 */;
 import react_nativeDefault from "react-native" /* 14800 */;

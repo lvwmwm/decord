@@ -1,7 +1,7 @@
 // Module ID: 18618
 // Function ID: 18619
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4760, 1390, 21, 5092, 8159, 5421, 18619, 8687, 18620, 5056, 18621, 2000, 18622, 1126, 6159, 6188, 5377, 587, 6265, 6180, 6896, 1403, 8511, 2]
+// Dependencies: [19, 17, 4760, 1390, 21, 5092, 8154, 5421, 18619, 8682, 18620, 5056, 18621, 2000, 18622, 1126, 6159, 6188, 5377, 587, 6265, 6180, 6896, 1403, 8506, 2]
 // Exports: default
 
 // Module 18618 (AdvancedInstantInvite)
@@ -10,7 +10,7 @@ import intl11 from "intl" /* 1126 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8511 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8506 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

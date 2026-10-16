@@ -1,7 +1,7 @@
 // Module ID: 17410
 // Function ID: 17411
 // Name: renderChannelItem
-// Dependencies: [19, 17, 2087, 4760, 1390, 5967, 21, 8651, 1126, 5092, 587, 558, 576, 17411, 504, 6159, 11899, 6059, 17412, 10280, 17414, 5421, 2]
+// Dependencies: [19, 17, 2087, 4760, 1390, 5967, 21, 8646, 1126, 5092, 587, 558, 576, 17411, 504, 6159, 11899, 6059, 17412, 10280, 17414, 5421, 2]
 // Exports: default, getChannelAccessibilityProps
 
 // Module 17410 (renderChannelItem)
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 6059 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8651 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
 import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
 import renderChannelWrapperDefault from "renderChannelWrapper" /* 17412 */;
 import renderChannelContentDefault from "renderChannelContent" /* 17414 */;

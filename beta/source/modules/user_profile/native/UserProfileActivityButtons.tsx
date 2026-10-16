@@ -1,7 +1,7 @@
 // Module ID: 13157
 // Function ID: 13158
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8459, 21, 5092, 587, 558, 576, 6852, 4739, 13158, 573, 5924, 13159, 7427, 1126, 8234, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8278, 10784, 4806, 13161, 8385, 4977, 7493, 7482, 5763, 1415, 9205, 7094, 8463, 10788, 1384, 8491, 2]
+// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8454, 21, 5092, 587, 558, 576, 6852, 4739, 13158, 573, 5924, 13159, 7422, 1126, 8229, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8273, 10784, 4806, 13161, 8380, 4977, 7488, 7477, 5763, 1415, 9200, 7094, 8458, 10788, 1384, 8486, 2]
 // Exports: CustomActivityButton
 
 // Module 13157 (UserProfileActivityButtons)
@@ -16,10 +16,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
 import GamesActionCreatorsDefault from "GamesActionCreators" /* 10801 */;
 import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10822 */;
 import getActivityChannelIdDefault from "getActivityChannelId" /* 13158 */;
@@ -39,7 +39,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
-import SpotifyConstants from "SpotifyConstants" /* 8459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8454 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -558,7 +558,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
       }
       if (cResult[2] !== tmp4.icon) {
         const Icon = tmp(1200).Icon;
-        const tmp11 = <Icon size={tmp(1200).Icon.Sizes.SMALL} source={tmp5(8278)} disableColor style={tmp4.icon} />;
+        const tmp11 = <Icon size={tmp(1200).Icon.Sizes.SMALL} source={tmp5(8273)} disableColor style={tmp4.icon} />;
         cResult[2] = tmp4.icon;
         cResult[3] = tmp11;
         tmp9 = tmp11;
@@ -688,7 +688,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
       const Button = components_Button_Button.Button;
       const intl = intl5.intl;
       let obj2 = { platform: activity.name };
-      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8278), disableColor: true, style: tmp.icon };
+      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8273), disableColor: true, style: tmp.icon };
       const Icon = native.Icon;
       tmp4 = <Button text={intl.formatToPlainString(intl5.t.LEgD7t, obj2)} icon={null} variant="secondary" onPress={_asyncToGenerator(async (arg0, value) => {
         let closure_0;

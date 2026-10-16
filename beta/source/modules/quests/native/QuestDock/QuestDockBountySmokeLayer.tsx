@@ -1,7 +1,7 @@
 // Module ID: 15481
 // Function ID: 15482
 // Name: QuestDockBountySmokeLayer
-// Dependencies: [32, 19, 17, 5081, 5972, 21, 558, 15482, 1382, 15483, 15484, 576, 1497, 1631, 15369, 6157, 504, 15485, 8426, 15486, 15459, 15487, 2]
+// Dependencies: [32, 19, 17, 5081, 5972, 21, 558, 15482, 1382, 15483, 15484, 576, 1497, 1631, 15369, 6157, 504, 15485, 8421, 15486, 15459, 15487, 2]
 
 // Module 15481 (QuestDockBountySmokeLayer)
 import react_native from "react-native" /* 17 */;
@@ -214,7 +214,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
     const obj2 = { style: tmp12 ? closure_13.video : closure_13.hiddenVideo, source: obj3, resizeMode: "cover", paused: undefined !== paused && paused || !tmp10, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: tmp18, onError: tmp19 };
     obj3 = { uri: _modDef15486 };
-    const VideoComponent = tmp(8426).VideoComponent;
+    const VideoComponent = tmp(8421).VideoComponent;
     tmp21Result = tmp21(VideoComponent, obj2);
   }
   cResult[4] = tmp10;
@@ -259,7 +259,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   if (!stateFromStores) {
     const obj3 = { style: tmp7 ? closure_13.video : closure_13.hiddenVideo, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: callback, onError: tmp14 };
     obj4 = { uri: _modDef15486 };
-    const VideoComponent = tmp(8426).VideoComponent;
+    const VideoComponent = tmp(8421).VideoComponent;
     const tmp18 = closure_8;
     if (!flag) {
       flag = !tmp5;
@@ -478,7 +478,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
     const obj2 = { style: closure_13.video, source: obj4, resizeMode: "cover", paused: tmp38, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: tmp32, onError: tmp33 };
     obj4 = { uri: tmp9Result };
-    const VideoComponent = tmp(8426).VideoComponent;
+    const VideoComponent = tmp(8421).VideoComponent;
     if (!(undefined !== paused && paused)) {
       class U {
         constructor() {
@@ -590,7 +590,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   if (tmp28Result) {
     const obj3 = { style: closure_13.video, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onLoad: callback, onError: tmp24 };
     obj4 = { uri: tmp4Result };
-    const VideoComponent = tmp(8426).VideoComponent;
+    const VideoComponent = tmp(8421).VideoComponent;
     const tmp28 = closure_8;
     if (!flag) {
       flag = !tmp5;

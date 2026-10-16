@@ -1,7 +1,7 @@
 // Module ID: 17967
 // Function ID: 17968
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 10969, 14806, 11973, 11972, 21, 5092, 587, 558, 576, 1631, 1497, 17966, 4850, 9580, 10373, 17763, 5093, 5096, 5378, 17765, 17968, 6335, 6846, 2]
+// Dependencies: [32, 19, 10969, 14806, 11973, 11972, 21, 5092, 587, 558, 576, 1631, 1497, 17966, 4850, 9575, 10373, 17763, 5093, 5096, 5378, 17765, 17968, 6335, 6846, 2]
 
 // Module 17967 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
@@ -16,7 +16,7 @@ import timingPresets from "timingPresets" /* 5096 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import LayerScope2 from "LayerScope" /* 6846 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11973 */;

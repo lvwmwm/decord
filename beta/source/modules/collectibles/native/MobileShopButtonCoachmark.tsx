@@ -1,7 +1,7 @@
 // Module ID: 13010
 // Function ID: 13011
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 2062, 21, 5092, 587, 558, 576, 6157, 1126, 9443, 2]
+// Dependencies: [19, 2062, 21, 5092, 587, 558, 576, 6157, 1126, 9438, 2]
 
 // Module 13010 (MobileShopButtonCoachmark)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 17497
 // Function ID: 17498
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 2065, 2087, 4750, 5108, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1200, 5421, 1503, 5103, 1126, 5088, 6185, 5414, 3785, 10280, 8159, 10263, 6852, 8304, 2]
+// Dependencies: [19, 17, 2065, 2087, 4750, 5108, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1200, 5421, 1503, 5103, 1126, 5088, 6185, 5414, 3785, 10280, 8154, 10263, 6852, 8299, 2]
 
 // Module 17497 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import _modDef3785 from "module_3785" /* 3785 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10280 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

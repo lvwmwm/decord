@@ -1,7 +1,7 @@
 // Module ID: 12642
 // Function ID: 12643
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 6159, 9017, 587, 5092, 558, 576, 12580, 1126, 5103, 7572, 12586, 12616, 2]
+// Dependencies: [19, 17, 21, 6159, 9012, 587, 5092, 558, 576, 12580, 1126, 5103, 7567, 12586, 12616, 2]
 
 // Module 12642 (AlertNotification)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
       }
     }
     const obj6 = { style: tmp4.warningIcon, color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const WarningIcon = tmp(7572).WarningIcon;
+    const WarningIcon = tmp(7567).WarningIcon;
     cResult[10] = tmp4.warningIcon;
     cResult[11] = closure_5(WarningIcon, obj6);
     const tmp23 = closure_5(WarningIcon, obj6);
@@ -292,11 +292,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
   const NotificationPressable = tmp2(12616).NotificationPressable;
   const obj4 = { cutouts: items2, children: closure_5(guild(6159), { guild, selected: false }) };
   items2 = [size];
-  const tmp8 = guild(9017);
+  const tmp8 = guild(9012);
   items3 = [closure_5(tmp8, obj4), ];
   const obj5 = { style: tmp.warningBadge, children: closure_5(WarningIcon, obj6) };
   obj6 = { style: tmp.warningIcon, color: guild(587).colors.ICON_FEEDBACK_WARNING };
-  WarningIcon = tmp2(7572).WarningIcon;
+  WarningIcon = tmp2(7567).WarningIcon;
   items3[1] = closure_5(View, obj5);
   return closure_5(NotificationPressable, obj2);
 });

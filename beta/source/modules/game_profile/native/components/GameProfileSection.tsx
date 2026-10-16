@@ -1,16 +1,16 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 8944
+// Function ID: 8945
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8947, 5088, 5379, 1126, 6906, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8942, 5088, 5379, 1126, 6906, 2]
 
-// Module 8949 (GameProfileSection)
+// Module 8944 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6906 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8947 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8942 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
           tmp8 = cResult[10];
         }
         if (cResult[11] !== showViewAllSkeleton) {
-          const tmp13 = showViewAllSkeleton && React3(tmp(8947).GameProfileSkeletonButton, { size: "sm" });
+          const tmp13 = showViewAllSkeleton && React3(tmp(8942).GameProfileSkeletonButton, { size: "sm" });
           cResult[11] = showViewAllSkeleton;
           cResult[12] = tmp13;
           tmp12 = tmp13;

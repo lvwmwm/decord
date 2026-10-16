@@ -1,12 +1,12 @@
 // Module ID: 10353
 // Function ID: 10354
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 10354, 21, 5092, 587, 558, 576, 9317, 1631, 10360, 12, 10358, 5031, 10226, 10361, 4969, 10363, 1126, 1200, 10734, 6185, 12556, 12563, 2]
+// Dependencies: [19, 17, 10354, 21, 5092, 587, 558, 576, 9312, 1631, 10360, 12, 10358, 5031, 10226, 10361, 4969, 10363, 1126, 1200, 10734, 6185, 12556, 12563, 2]
 
 // Module 10353 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import MessageManagerDefault from "MessageManager" /* 9317 */;
+import MessageManagerDefault from "MessageManager" /* 9312 */;
 import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

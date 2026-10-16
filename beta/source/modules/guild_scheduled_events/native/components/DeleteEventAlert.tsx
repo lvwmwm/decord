@@ -1,9 +1,9 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8674
+// Function ID: 8675
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6054, 21, 5092, 558, 576, 504, 8519, 5056, 1126, 5088, 5305, 2]
+// Dependencies: [5, 19, 6054, 21, 5092, 558, 576, 504, 8514, 5056, 1126, 5088, 5305, 2]
 
-// Module 8679 (DeleteEventAlert)
+// Module 8674 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

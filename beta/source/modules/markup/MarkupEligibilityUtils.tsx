@@ -1,10 +1,10 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8114
+// Function ID: 8115
 // Name: MarkupEligibilityUtils
 // Dependencies: [11, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 8119 (MarkupEligibilityUtils)
+// Module 8114 (MarkupEligibilityUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

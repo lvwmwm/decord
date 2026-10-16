@@ -1,15 +1,15 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8152
+// Function ID: 8153
 // Name: transformNativeMarkupMention
-// Dependencies: [8158, 5402, 5400, 5412, 8239, 2]
+// Dependencies: [8153, 5402, 5400, 5412, 8234, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8157 (transformNativeMarkupMention)
+// Module 8152 (transformNativeMarkupMention)
 import MarkupTypes from "MarkupTypes" /* 5400 */;
 import MarkupRules from "MarkupRules" /* 5402 */;
 import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5412 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8158 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8239 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8153 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8234 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");

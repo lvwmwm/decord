@@ -1,9 +1,9 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9034
+// Function ID: 9035
 // Name: LimitedTimeBadge
 // Dependencies: [19, 17, 2129, 1205, 21, 5092, 587, 1126, 558, 576, 4969, 504, 7162, 5088, 2]
 
-// Module 9039 (LimitedTimeBadge)
+// Module 9034 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

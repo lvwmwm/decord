@@ -1,9 +1,9 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 9529
+// Function ID: 9530
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 6305, 1105, 4850, 9535, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 6305, 1105, 4850, 9530, 2]
 
-// Module 9534 (PremiumExpressionPickerFeatureUpsell)
+// Module 9529 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

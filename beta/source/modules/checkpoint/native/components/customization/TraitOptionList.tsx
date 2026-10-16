@@ -1,7 +1,7 @@
 // Module ID: 16044
 // Function ID: 16045
 // Name: TraitOptionList
-// Dependencies: [19, 17, 5081, 5437, 21, 587, 5092, 558, 576, 7577, 16009, 504, 5362, 4850, 6170, 1497, 5093, 5057, 16045, 2]
+// Dependencies: [19, 17, 5081, 5437, 21, 587, 5092, 558, 576, 7572, 16009, 504, 5362, 4850, 6170, 1497, 5093, 5057, 16045, 2]
 
 // Module 16044 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -45,7 +45,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
-    const Polygon = tmp(7577).Polygon;
+    const Polygon = tmp(7572).Polygon;
     const tmp8 = React4(Polygon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

@@ -1,12 +1,12 @@
 // Module ID: 13725
 // Function ID: 13726
 // Name: useReferralProgramBannerDetails
-// Dependencies: [19, 1390, 7175, 558, 576, 504, 8306, 2]
+// Dependencies: [19, 1390, 7170, 558, 576, 504, 8301, 2]
 
 // Module 13725 (useReferralProgramBannerDetails)
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7175 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7170 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

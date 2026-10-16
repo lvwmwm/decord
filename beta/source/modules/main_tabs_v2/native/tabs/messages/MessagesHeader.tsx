@@ -1,7 +1,7 @@
 // Module ID: 16462
 // Function ID: 16463
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1085, 21, 587, 11895, 10515, 5384, 5092, 558, 576, 4850, 5378, 16457, 4977, 12036, 6202, 10309, 7574, 1126, 5088, 6741, 16463, 5379, 5033, 2]
+// Dependencies: [19, 17, 1085, 21, 587, 11895, 10515, 5384, 5092, 558, 576, 4850, 5378, 16457, 4977, 12036, 6202, 10309, 7569, 1126, 5088, 6741, 16463, 5379, 5033, 2]
 // Exports: getMessagesHeaderHeight
 
 // Module 16462 (MessagesHeader)
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       const obj5 = { variant: "primary", icon: tmp18, size: "sm", accessibilityLabel: intl.string(tmp(1126).t.jD1qzM), onPress: tmp15 };
-      const IconButton = tmp(7574).IconButton;
+      const IconButton = tmp(7569).IconButton;
       intl = tmp(1126).intl;
       const tmp21 = closure_6(IconButton, obj5);
       cResult[10] = tmp21;
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj7 = { onPress: tmp14, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl2.string(tmp(1126).t["5h0QOP"]) };
-        const IconButton2 = tmp(7574).IconButton;
+        const IconButton2 = tmp(7569).IconButton;
         intl2 = tmp(1126).intl;
         const tmp34 = closure_6(IconButton2, obj7);
         const obj8 = { noMargin: true, onPress: tmp12, alternateVariant: true };
@@ -639,7 +639,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, []);
   const obj4 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj5), size: "sm", accessibilityLabel: intl.string(height(1126).t.jD1qzM), onPress: callback3 };
   const tmp12 = scrollPosition(6202)("bespoke");
-  const IconButton = height(7574).IconButton;
+  const IconButton = height(7569).IconButton;
   obj5 = { size: "sm", color: scrollPosition(587).colors.WHITE };
   PlusLargeIcon = height(10309).PlusLargeIcon;
   intl = height(1126).intl;
@@ -659,7 +659,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1 = [closure_6(closure_4, obj7), , , ];
   const obj9 = { style: tmp.headerPanelButtons, children: items2 };
   const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(6741), accessibilityLabel: intl3.string(height(1126).t["5h0QOP"]) };
-  const IconButton2 = tmp3(7574).IconButton;
+  const IconButton2 = tmp3(7569).IconButton;
   intl3 = tmp3(1126).intl;
   items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(16463), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5033), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1126).t.zIJnA6) };

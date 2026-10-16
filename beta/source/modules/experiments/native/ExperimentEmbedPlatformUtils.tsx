@@ -1,14 +1,14 @@
 // Module ID: 11360
 // Function ID: 11361
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [5056, 11361, 2000, 10673, 10674, 8142, 5021, 2]
+// Dependencies: [5056, 11361, 2000, 10673, 10674, 8137, 5021, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
 // Module 11360 (ExperimentEmbedPlatformUtils)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ExperimentManager from "ExperimentManager" /* 5021 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8142 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8137 */;
 import useLegacyExperiments from "useLegacyExperiments" /* 10673 */;
 import useApexExperiments from "useApexExperiments" /* 10674 */;
 import size from "module_2" /* 2 */;

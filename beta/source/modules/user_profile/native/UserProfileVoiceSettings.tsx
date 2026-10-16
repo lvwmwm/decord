@@ -1,7 +1,7 @@
 // Module ID: 13168
 // Function ID: 13169
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5428, 2012, 4750, 5110, 1085, 1096, 21, 5092, 558, 576, 8315, 504, 5416, 8848, 5243, 11081, 1126, 8806, 11104, 6904, 13169, 12264, 1265, 13171, 10770, 6290, 5088, 12363, 13023, 8580, 5056, 8833, 8829, 2]
+// Dependencies: [19, 17, 5428, 2012, 4750, 5110, 1085, 1096, 21, 5092, 558, 576, 8310, 504, 5416, 8843, 5243, 11081, 1126, 8801, 11104, 6904, 13169, 12264, 1265, 13171, 10770, 6290, 5088, 12363, 13023, 8575, 5056, 8828, 8824, 2]
 
 // Module 13168 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8833 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8828 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12363 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 5428 */;
@@ -470,7 +470,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_13();
-  const obj2 = channel(8315);
+  const obj2 = channel(8310);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
@@ -697,7 +697,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   channel = channel.channel;
   ({ user, style } = channel);
   let tmp = closure_13();
-  let obj = channel(8315);
+  let obj = channel(8310);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [MediaEngineStore];
   const obj2 = channel(504);
@@ -741,7 +741,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
             }
       };
       if (stateFromStores) {
-        MicrophoneIcon = tmp2(8806).MicrophoneSlashIcon;
+        MicrophoneIcon = tmp2(8801).MicrophoneSlashIcon;
       } else {
         MicrophoneIcon = tmp2(11104).MicrophoneIcon;
       }

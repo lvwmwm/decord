@@ -1,7 +1,7 @@
 // Module ID: 14877
 // Function ID: 14878
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8285, 1390, 8317, 1085, 6841, 1392, 21, 5092, 587, 5057, 9365, 14878, 558, 576, 1126, 6652, 6650, 9363, 5046, 10570, 5088, 6182, 10579, 8542, 6646, 4850, 5093, 5096, 13387, 9364, 6335, 4828, 10572, 1631, 504, 4769, 6852, 6879, 6842, 9394, 9395, 8316, 1265, 8322, 4809, 1497, 11577, 14879, 6154, 6840, 6839, 6307, 2]
+// Dependencies: [19, 17, 8280, 1390, 8312, 1085, 6841, 1392, 21, 5092, 587, 5057, 9360, 14878, 558, 576, 1126, 6652, 6650, 9358, 5046, 10570, 5088, 6182, 10579, 8537, 6646, 4850, 5093, 5096, 13387, 9359, 6335, 4828, 10572, 1631, 504, 4769, 6852, 6879, 6842, 9389, 9390, 8311, 1265, 8317, 4809, 1497, 11577, 14879, 6154, 6840, 6839, 6307, 2]
 // Exports: default
 
 // Module 14877 (CustomizeBadgesSheet)
@@ -21,14 +21,14 @@ import timingPresets from "timingPresets" /* 5096 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import EyeSlashIcon2 from "EyeSlashIcon" /* 6650 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
-import native from "native" /* 8542 */;
-import ContextMenu2 from "ContextMenu" /* 9363 */;
-import ContextMenuState from "ContextMenuState" /* 9364 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9365 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8311 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
+import native from "native" /* 8537 */;
+import ContextMenu2 from "ContextMenu" /* 9358 */;
+import ContextMenuState from "ContextMenuState" /* 9359 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9360 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10570 */;
 import BadgeUtils from "BadgeUtils" /* 10579 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
@@ -36,9 +36,9 @@ import PendingBadgeSettings from "PendingBadgeSettings" /* 13387 */;
 import BadgeGrid from "BadgeGrid" /* 14878 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

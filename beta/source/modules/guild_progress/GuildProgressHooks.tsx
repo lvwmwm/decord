@@ -1,13 +1,13 @@
 // Module ID: 12207
 // Function ID: 12208
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2065, 4748, 5020, 2087, 12208, 5432, 4750, 1085, 558, 576, 8533, 504, 11, 12, 6080, 2]
+// Dependencies: [19, 502, 2065, 4748, 5020, 2087, 12208, 5432, 4750, 1085, 558, 576, 8528, 504, 11, 12, 6080, 2]
 
 // Module 12207 (GuildProgressHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import canViewInviteModal from "canViewInviteModal" /* 8533 */;
+import canViewInviteModal from "canViewInviteModal" /* 8528 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

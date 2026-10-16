@@ -1,7 +1,7 @@
 // Module ID: 17999
 // Function ID: 18000
 // Name: VoiceOrStageChannel
-// Dependencies: [5, 19, 17, 5896, 2070, 2129, 5966, 5116, 1085, 1204, 2072, 21, 1126, 7482, 2000, 5413, 8188, 6145, 1112, 558, 576, 7053, 12689, 10283, 5092, 5031, 9308, 4969, 17411, 10358, 16802, 504, 5956, 5950, 11737, 17410, 5421, 17994, 5386, 11758, 16669, 11989, 17996, 17991, 18000, 17992, 6185, 16676, 2]
+// Dependencies: [5, 19, 17, 5896, 2070, 2129, 5966, 5116, 1085, 1204, 2072, 21, 1126, 7477, 2000, 5413, 8183, 6145, 1112, 558, 576, 7053, 12689, 10283, 5092, 5031, 9303, 4969, 17411, 10358, 16802, 504, 5956, 5950, 11737, 17410, 5421, 17994, 5386, 11758, 16669, 11989, 17996, 17991, 18000, 17992, 6185, 16676, 2]
 
 // Module 17999 (VoiceOrStageChannel)
 import react_native from "react-native" /* 17 */;
@@ -362,7 +362,7 @@ let closure_22 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   }
   ({ id, guild_id } = channel);
   const tmp5 = subtitle(5031)();
-  const tmp6 = subtitle(9308)();
+  const tmp6 = subtitle(9303)();
   if (cResult[0] !== tmp5) {
     const tmpResult = tmp(4969);
     const isThemeLightResult = tmpResult.isThemeLight(tmp5);
@@ -455,7 +455,7 @@ let closure_22 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   let tmp2 = dependencyMap;
   ({ id, guild_id } = channel);
   const tmp3 = subtitle(5031)();
-  const tmp4 = subtitle(9308)();
+  const tmp4 = subtitle(9303)();
   obj = channel(4969);
   const tmp6 = closure_20(tmp4, obj.isThemeLight(tmp3));
   const tmp7 = subtitle(17411)();

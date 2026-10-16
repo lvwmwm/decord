@@ -1,9 +1,9 @@
-// Module ID: 7969
-// Function ID: 7970
+// Module ID: 7964
+// Function ID: 7965
 // Name: FadeOutLottieAnimation
 // Dependencies: [32, 109, 19, 5081, 21, 5092, 558, 576, 504, 4850, 5093, 6106, 2]
 
-// Module 7969 (FadeOutLottieAnimation)
+// Module 7964 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;

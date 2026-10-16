@@ -1,7 +1,7 @@
 // Module ID: 2018
 // Function ID: 2019
 // Name: ClipsStore
-// Dependencies: [5, 2019, 502, 7763, 1085, 5212, 4731, 14304, 1403, 14305, 14307, 14308, 504, 584, 2]
+// Dependencies: [5, 2019, 502, 7758, 1085, 5212, 4731, 14304, 1403, 14305, 14307, 14308, 504, 584, 2]
 
 // Module 2018 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -14,7 +14,7 @@ import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideE
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7763 */;
+import ClipsConstants from "ClipsConstants" /* 7758 */;
 import Constants from "Constants" /* 1085 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
 import size from "module_2" /* 2 */;

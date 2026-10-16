@@ -1,7 +1,7 @@
 // Module ID: 15404
 // Function ID: 15405
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 15370, 1085, 21, 5092, 587, 558, 576, 15405, 12989, 7407, 15371, 8395, 4850, 5378, 1631, 6762, 15406, 15409, 15436, 6814, 9168, 9171, 12983, 5975, 10603, 2]
+// Dependencies: [32, 19, 17, 15370, 1085, 21, 5092, 587, 558, 576, 15405, 12989, 7402, 15371, 8390, 4850, 5378, 1631, 6762, 15406, 15409, 15436, 6814, 9163, 9166, 12983, 5975, 10603, 2]
 
 // Module 15404 (VideoQuestModal)
 import nativeDefault from "native" /* 587 */;
@@ -9,8 +9,8 @@ import Constants from "Constants" /* 1085 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import QuestUtils from "QuestUtils" /* 9168 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
 import applyOrientationLock2 from "applyOrientationLock" /* 12989 */;
 import QuestDockConstants from "QuestDockConstants" /* 15370 */;

@@ -1,7 +1,7 @@
 // Module ID: 12985
 // Function ID: 12986
 // Name: QuestOrbsRewardModal
-// Dependencies: [32, 5, 19, 17, 5081, 1390, 1999, 5972, 21, 5934, 12985, 2000, 5092, 587, 558, 576, 9040, 6208, 1126, 6210, 1899, 6157, 9012, 1383, 12986, 12987, 12988, 504, 9061, 1105, 9190, 12989, 9168, 5975, 12990, 6814, 5088, 5379, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 1390, 1999, 5972, 21, 5934, 12985, 2000, 5092, 587, 558, 576, 9035, 6208, 1126, 6210, 1899, 6157, 9007, 1383, 12986, 12987, 12988, 504, 9056, 1105, 9185, 12989, 9163, 5975, 12990, 6814, 5088, 5379, 2]
 // Exports: openQuestOrbsRewardModal
 
 // Module 12985 (QuestOrbsRewardModal)
@@ -13,7 +13,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
-import APNGPlayer from "APNGPlayer" /* 9012 */;
+import APNGPlayer from "APNGPlayer" /* 9007 */;
 import _modDef12986 from "module_12986" /* 12986 */;
 import _modDef12987 from "module_12987" /* 12987 */;
 import _modDef12988 from "module_12988" /* 12988 */;
@@ -43,7 +43,7 @@ let obj2;
 let obj3;
 let obj5;
 let tmp;
-const OrbsIcon2 = tmp(9040);
+const OrbsIcon2 = tmp(9035);
 ({ ActivityIndicator: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll } = react_native);
 const RewardFilterTypes = QuestConstants.RewardFilterTypes;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
@@ -739,7 +739,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
   }
   const tmpResult = balance(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult5 = balance(9061);
+  const tmpResult5 = balance(9056);
   balance = tmpResult5.useFetchVirtualCurrencyBalance().balance;
   [tmp10, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
@@ -785,7 +785,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
     orbQuantityClaimed = userStatus.orbQuantityClaimed;
   }
   if (orbQuantityClaimed == null) {
-    const tmpResult8 = balance(9190);
+    const tmpResult8 = balance(9185);
     orbQuantityClaimed = tmpResult8.getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1063,7 +1063,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
   let obj = num(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = num(9061);
+  let obj2 = num(9056);
   num = obj2.useFetchVirtualCurrencyBalance().balance;
   let obj3 = react;
   [tmp6, c1] = react.useState(false);
@@ -1081,7 +1081,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
     num2 = userStatus.orbQuantityClaimed;
   }
   if (num2 == null) {
-    const tmp2Result = num(9190);
+    const tmp2Result = num(9185);
     num2 = tmp2Result.getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
   }
   const effect = obj3.useEffect(() => {

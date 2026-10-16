@@ -1,7 +1,7 @@
 // Module ID: 14865
 // Function ID: 14866
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 504, 4769, 1126, 9036, 6839, 6180, 8580, 14844, 6265, 6899, 2]
+// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 504, 4769, 1126, 9031, 6839, 6180, 8575, 14844, 6265, 6899, 2]
 
 // Module 14865 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -15,7 +15,7 @@ import TableRow6 from "TableRow" /* 6180 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
 import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14844 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -113,7 +113,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
     tmp15 = cResult[4];
   }
   if (cResult[5] !== tmp11) {
-    const tmp18 = tmp11 && metroRequire(tmp(9036).NitroWheelIcon, {});
+    const tmp18 = tmp11 && metroRequire(tmp(9031).NitroWheelIcon, {});
     cResult[5] = tmp11;
     cResult[6] = tmp18;
     tmp17 = tmp18;
@@ -223,7 +223,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
                     obj7 = { style: items3, text: intl9.string(intl10.t.twB3fz) };
                     items3 = [, ];
                     ({ label: arr4[0], remove: arr4[1] } = tmp6);
-                    FormLabel3 = tmp(8580).FormLabel;
+                    FormLabel3 = tmp(8575).FormLabel;
                     intl9 = tmp(1126).intl;
                     tmp46 = metroRequire(TableRow4, obj6);
                   }
@@ -240,7 +240,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
                   obj9 = { style: tmp6.upsellTitleContainer, children: metroRequire(FormLabel2, obj10) };
                   const TableRow3 = tmp(6180).TableRow;
                   obj10 = { text: intl8.string(intl10.t.BVcYCx) };
-                  FormLabel2 = tmp(8580).FormLabel;
+                  FormLabel2 = tmp(8575).FormLabel;
                   intl8 = tmp(1126).intl;
                   tmp42 = metroRequire(TableRow3, obj8);
                 }
@@ -258,14 +258,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
           obj12 = { style: tmp6.upsellTitleContainer, children: items4 };
           const TableRow2 = tmp(6180).TableRow;
           const obj13 = { text: intl5.string(intl10.t.xZ0Wot) };
-          const FormLabel = tmp(8580).FormLabel;
+          const FormLabel = tmp(8575).FormLabel;
           intl5 = tmp(1126).intl;
           items4 = [metroRequire(FormLabel, obj13), ];
           const obj14 = { style: tmp6.nitroWheel, size: "sm" };
           items4[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj14);
           obj15 = { children: items5 };
           const obj16 = { style: tmp6.sublabel, numberOfLines: 3, text: intl6.string(intl10.t.L3UPqR) };
-          const FormSubLabel = tmp(8580).FormSubLabel;
+          const FormSubLabel = tmp(8575).FormSubLabel;
           intl6 = tmp(1126).intl;
           items5 = [metroRequire(FormSubLabel, obj16), ];
           const obj17 = { style: tmp6.upsellButton, children: metroRequire(tmp39, obj18) };
@@ -351,7 +351,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl10.intl;
   if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(9036).NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(9031).NitroWheelIcon, {});
   }
   ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
   const items1 = [metroRequire(BottomSheetTitleHeader, obj4), ];
@@ -374,14 +374,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
     obj8 = { style: tmp.upsellTitleContainer, children: items3 };
     const TableRow3 = tmp2(6180).TableRow;
     const obj9 = { text: intl5.string(intl10.t.xZ0Wot) };
-    const FormLabel = tmp2(8580).FormLabel;
+    const FormLabel = tmp2(8575).FormLabel;
     intl5 = tmp2(1126).intl;
     items3 = [metroRequire(FormLabel, obj9), ];
     const obj10 = { style: tmp.nitroWheel, size: "sm" };
     items3[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj10);
     obj11 = { children: items4 };
     const obj12 = { style: tmp.sublabel, numberOfLines: 3, text: intl6.string(intl10.t.L3UPqR) };
-    const FormSubLabel = tmp2(8580).FormSubLabel;
+    const FormSubLabel = tmp2(8575).FormSubLabel;
     intl6 = tmp2(1126).intl;
     items4 = [metroRequire(FormSubLabel, obj12), ];
     const obj13 = { style: tmp.upsellButton, children: metroRequire(tmp5Result, obj14) };
@@ -398,7 +398,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
     obj16 = { style: tmp.upsellTitleContainer, children: metroRequire(FormLabel2, obj17) };
     const TableRow4 = tmp2(6180).TableRow;
     obj17 = { text: intl8.string(intl10.t.BVcYCx) };
-    FormLabel2 = tmp2(8580).FormLabel;
+    FormLabel2 = tmp2(8575).FormLabel;
     intl8 = tmp2(1126).intl;
     tmp8Result2 = tmp8(TableRow4, obj15);
   }
@@ -409,7 +409,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeAvatar
     obj19 = { style: items5, text: intl9.string(intl10.t.twB3fz) };
     items5 = [, ];
     ({ label: arr6[0], remove: arr6[1] } = tmp);
-    FormLabel3 = tmp2(8580).FormLabel;
+    FormLabel3 = tmp2(8575).FormLabel;
     intl9 = tmp2(1126).intl;
     flag = tmp8(TableRow5, obj18);
   }

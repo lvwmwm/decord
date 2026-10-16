@@ -1,7 +1,7 @@
 // Module ID: 11403
 // Function ID: 11404
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 11404, 21, 11402, 1273, 1126, 6201, 11405, 6284, 8638, 4808, 558, 576, 6688, 2]
+// Dependencies: [5, 19, 11404, 21, 11402, 1273, 1126, 6201, 11405, 6284, 8633, 4808, 558, 576, 6688, 2]
 
 // Module 11403 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;

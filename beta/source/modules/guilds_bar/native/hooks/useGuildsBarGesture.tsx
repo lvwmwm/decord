@@ -1,7 +1,7 @@
 // Module ID: 16741
 // Function ID: 16742
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2087, 5963, 16742, 16739, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16457, 4818, 587, 4733, 11577, 1272, 6098, 5260, 9364, 1382, 1631, 5362, 16743, 16744, 9364, 15374, 6335, 2]
+// Dependencies: [5, 19, 17, 2087, 5963, 16742, 16739, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16457, 4818, 587, 4733, 11577, 1272, 6098, 5260, 9359, 1382, 1631, 5362, 16743, 16744, 9359, 15374, 6335, 2]
 // Exports: default
 
 // Module 16741 (useGuildsBarGesture)
@@ -15,7 +15,7 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 5963 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import FastList from "FastList" /* 6761 */;
-import ContextMenuState from "ContextMenuState" /* 9364 */;
+import ContextMenuState from "ContextMenuState" /* 9359 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -892,7 +892,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9364).ContextMenuStore;
+        const ContextMenuStore = tmp66(9359).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

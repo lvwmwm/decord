@@ -1,7 +1,7 @@
 // Module ID: 17491
 // Function ID: 17492
 // Name: SearchAutocompleteStore
-// Dependencies: [2065, 2125, 2087, 2116, 4963, 1390, 12046, 1085, 6093, 12043, 8704, 4962, 5202, 6097, 5970, 12047, 12044, 504, 584, 2]
+// Dependencies: [2065, 2125, 2087, 2116, 4963, 1390, 12046, 1085, 6093, 12043, 8699, 4962, 5202, 6097, 5970, 12047, 12044, 504, 584, 2]
 
 // Module 17491 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import isEqualDefault from "isEqual" /* 5202 */;
 import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6093 */;
 import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8699 */;
 import SearchUtils from "SearchUtils" /* 12043 */;
 import SearchTokens from "SearchTokens" /* 12044 */;
 import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12047 */;

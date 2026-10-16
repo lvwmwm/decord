@@ -1,7 +1,7 @@
 // Module ID: 17503
 // Function ID: 17504
 // Name: AutoAnalytics
-// Dependencies: [19, 6036, 5757, 6054, 2070, 2065, 2125, 2087, 2012, 5282, 5110, 2116, 4939, 5759, 5966, 1390, 1085, 2072, 21, 7913, 7917, 5107, 17504, 17505, 2090, 17506, 1265, 1388, 17507, 558, 576, 504, 17508, 17509, 2]
+// Dependencies: [19, 6036, 5757, 6054, 2070, 2065, 2125, 2087, 2012, 5282, 5110, 2116, 4939, 5759, 5966, 1390, 1085, 2072, 21, 7908, 7912, 5107, 17504, 17505, 2090, 17506, 1265, 1388, 17507, 558, 576, 504, 17508, 17509, 2]
 
 // Module 17503 (AutoAnalytics)
 import Fragment from "Fragment" /* 21 */;
@@ -10,8 +10,8 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7913 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7917 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7908 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7912 */;
 import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17504 */;
 import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17505 */;
 import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17507 */;

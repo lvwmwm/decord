@@ -1,7 +1,7 @@
 // Module ID: 18467
 // Function ID: 18468
 // Name: useEnableCommunityModalIcons
-// Dependencies: [32, 19, 1096, 4969, 18468, 18469, 18470, 18474, 18475, 7729, 558, 576, 5031, 2]
+// Dependencies: [32, 19, 1096, 4969, 18468, 18469, 18470, 18474, 18475, 7724, 558, 576, 5031, 2]
 
 // Module 18467 (useEnableCommunityModalIcons)
 import Constants from "Constants" /* 1096 */;

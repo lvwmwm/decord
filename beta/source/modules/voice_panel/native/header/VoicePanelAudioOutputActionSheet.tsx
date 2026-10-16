@@ -1,9 +1,9 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8790
+// Function ID: 8791
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 5111, 8787, 2065, 5112, 8794, 1085, 21, 5092, 5056, 558, 576, 573, 8796, 8797, 1126, 6263, 6262, 6188, 8786, 11108, 11025, 13026, 4938, 2049, 13027, 6839, 6840, 6162, 2]
+// Dependencies: [19, 17, 5111, 8782, 2065, 5112, 8789, 1085, 21, 5092, 5056, 558, 576, 573, 8791, 8792, 1126, 6263, 6262, 6188, 8781, 11108, 11025, 13026, 4938, 2049, 13027, 6839, 6840, 6162, 2]
 
-// Module 8795 (VoicePanelAudioOutputActionSheet)
+// Module 8790 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,11 +12,11 @@ import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 8794 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 8789 */;
 import useOnConnectToConsole from "useOnConnectToConsole" /* 13026 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;
-import AudioManagerStore from "AudioManagerStore" /* 8787 */;
+import AudioManagerStore from "AudioManagerStore" /* 8782 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SessionsStore from "SessionsStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp11 = null;
   if (availableDevices.length > 0) {
     let obj2 = { style: tmp4.sectionContainer, title: intl.string(tmp(1126).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
-    const VoicePanelFormSection = tmp(8797).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp(8792).VoicePanelFormSection;
     intl = tmp(1126).intl;
     obj3 = {
       value: activeDevice.deviceId,
@@ -154,7 +154,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp5 = null;
   if (availableDevices.length > 0) {
     let obj2 = { style: tmp.sectionContainer, title: intl.string(tmp2(1126).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
-    const VoicePanelFormSection = tmp2(8797).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp2(8792).VoicePanelFormSection;
     intl = tmp2(1126).intl;
     obj3 = {
       value: activeDevice.deviceId,
@@ -547,7 +547,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp10 = null;
   if (arr.length > 0) {
     let obj4 = { title: intl.string(tmp3(1126).t.q22XnQ), style: tmp.sectionContainer, hasIcons: true, children: closure_11(TableRadioGroup, obj5) };
-    const VoicePanelFormSection = tmp3(8797).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp3(8792).VoicePanelFormSection;
     intl = tmp3(1126).intl;
     obj5 = { defaultValue: memo, onChange: callback, hasIcons: true, children: mapped.filter((item) => Boolean(item)) };
     TableRadioGroup = tmp3(6263).TableRadioGroup;

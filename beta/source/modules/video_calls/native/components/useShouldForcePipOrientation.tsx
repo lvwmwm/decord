@@ -1,7 +1,7 @@
 // Module ID: 10834
 // Function ID: 10835
 // Name: useShouldForcePipOrientation
-// Dependencies: [2064, 6036, 502, 2024, 5115, 558, 576, 10835, 504, 6038, 8451, 2]
+// Dependencies: [2064, 6036, 502, 2024, 5115, 558, 576, 10835, 504, 6038, 8446, 2]
 
 // Module 10834 (useShouldForcePipOrientation)
 import Constants from "Constants" /* 2024 */;
@@ -404,17 +404,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldF
     if (closure_7(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(8451).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(8446).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(8451).OrientationType.LANDSCAPE;
+    LANDSCAPE1 = tmp3(8446).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
     if (activityLockOrientation === tmp9.PORTRAIT) {
-      LANDSCAPE1 = tmp3(8451).OrientationType.PORTRAIT;
+      LANDSCAPE1 = tmp3(8446).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

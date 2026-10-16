@@ -1,9 +1,9 @@
-// Module ID: 7337
-// Function ID: 7338
+// Module ID: 7332
+// Function ID: 7333
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5757, 2069, 502, 2065, 2119, 2087, 4750, 2066, 3, 2091, 7338, 1097, 4759, 2]
+// Dependencies: [32, 5, 5757, 2069, 502, 2065, 2119, 2087, 4750, 2066, 3, 2091, 7333, 1097, 4759, 2]
 
-// Module 7337 (GuildBasicChannels)
+// Module 7332 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import ChannelStore2 from "ChannelStore" /* 2065 */;

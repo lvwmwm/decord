@@ -1,7 +1,7 @@
 // Module ID: 16989
 // Function ID: 16990
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9299, 1085, 1096, 21, 5092, 558, 576, 4850, 16990, 16992, 5396, 5031, 4979, 16993, 4827, 16994, 5330, 4851, 1504, 4985, 16436, 16843, 6335, 4972, 16435, 584, 4986, 2]
+// Dependencies: [32, 19, 17, 9294, 1085, 1096, 21, 5092, 558, 576, 4850, 16990, 16992, 5396, 5031, 4979, 16993, 4827, 16994, 5330, 4851, 1504, 4985, 16436, 16843, 6335, 4972, 16435, 584, 4986, 2]
 
 // Module 16989 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import useChatLayoutDefault from "useChatLayout" /* 4979 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import react_native from "react-native" /* 9299 */;
+import react_native from "react-native" /* 9294 */;
 import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16435 */;
 import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 16436 */;
 import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16843 */;

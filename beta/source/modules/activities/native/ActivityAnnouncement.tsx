@@ -1,11 +1,11 @@
 // Module ID: 10873
 // Function ID: 10874
 // Name: ActivityAnnouncement
-// Dependencies: [19, 21, 558, 576, 7577, 2]
+// Dependencies: [19, 21, 558, 576, 7572, 2]
 
 // Module 10873 (ActivityAnnouncement)
 import react2 from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 7577 */;
+import inlineStylesDefault from "inlineStyles" /* 7572 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const inlineStyles = tmp(7577);
+const inlineStyles = tmp(7572);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent(arg0) {
   let items;

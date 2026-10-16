@@ -1,9 +1,9 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9552
+// Function ID: 9553
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 6160, 21, 5092, 587, 558, 576, 6159, 1415, 6157, 5088, 1126, 6185, 9556, 6163, 1200, 2]
+// Dependencies: [19, 17, 6160, 21, 5092, 587, 558, 576, 6159, 1415, 6157, 5088, 1126, 6185, 9551, 6163, 1200, 2]
 
-// Module 9557 (ExpressionGuildDetails)
+// Module 9552 (ExpressionGuildDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6160 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9556 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9551 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

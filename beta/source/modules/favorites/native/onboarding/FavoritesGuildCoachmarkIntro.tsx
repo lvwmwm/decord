@@ -1,7 +1,7 @@
 // Module ID: 16771
 // Function ID: 16772
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16742, 1085, 2062, 21, 558, 576, 4850, 10323, 16766, 1126, 3442, 16772, 9443, 2]
+// Dependencies: [32, 19, 16742, 1085, 2062, 21, 558, 576, 4850, 10323, 16766, 1126, 3442, 16772, 9438, 2]
 
 // Module 16771 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 15334
 // Function ID: 15335
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1205, 6841, 21, 5092, 587, 12949, 5396, 4850, 7407, 4800, 12945, 6335, 5093, 5096, 6844, 558, 576, 504, 4827, 2]
+// Dependencies: [19, 17, 1205, 6841, 21, 5092, 587, 12949, 5396, 4850, 7402, 4800, 12945, 6335, 5093, 5096, 6844, 558, 576, 504, 4827, 2]
 
 // Module 15334 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
@@ -14,7 +14,7 @@ import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import AppStoreOverlayContent from "AppStoreOverlayContent" /* 12945 */;
 import AppStoreOverlayBody from "AppStoreOverlayBody" /* 12949 */;
 import react from "react" /* 19 */;

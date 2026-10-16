@@ -1,14 +1,14 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9368
+// Function ID: 9369
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 5081, 2125, 21, 7747, 8264, 5092, 587, 558, 576, 504, 5409, 7980, 2041, 4793, 1200, 5088, 9374, 2]
+// Dependencies: [19, 17, 5081, 2125, 21, 7742, 8259, 5092, 587, 558, 576, 504, 5409, 7975, 2041, 4793, 1200, 5088, 9369, 2]
 
-// Module 9373 (ConversationPreviewMessage)
+// Module 9368 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4793 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8264 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8259 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -89,13 +89,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
         tmp15 = cResult[9];
       }
       let colorStrings;
-      const useProcessColorStringsArray = message(7980).useProcessColorStringsArray;
-      message(7980);
+      const useProcessColorStringsArray = message(7975).useProcessColorStringsArray;
+      message(7975);
       if (stateFromStores1 != null) {
         colorStrings = stateFromStores1.colorStrings;
       }
       const processColorStringsArray = useProcessColorStringsArray(colorStrings);
-      const tmpResult9 = message(7980);
+      const tmpResult9 = message(7975);
       const isRoleStyleAndRoleColorsEligibleForERC = tmpResult9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, message.author.id, stateFromStores, processColorStringsArray);
       const TimestampHourCycle = tmp(2041).TimestampHourCycle;
       const setting = TimestampHourCycle.useSetting();
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                             }
                             if (cResult[35] !== message) {
                               const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };
-                              const tmp57 = closure_7(guildId(9374), obj2);
+                              const tmp57 = closure_7(guildId(9369), obj2);
                               cResult[35] = message;
                               cResult[36] = tmp57;
                               tmp52 = tmp57;

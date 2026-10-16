@@ -1,7 +1,7 @@
 // Module ID: 17460
 // Function ID: 17461
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 5081, 10751, 21, 587, 5092, 558, 576, 1631, 17118, 4818, 4850, 683, 5378, 5391, 504, 10752, 10749, 10756, 1126, 5379, 8081, 5088, 17461, 2]
+// Dependencies: [32, 19, 17, 5081, 10751, 21, 587, 5092, 558, 576, 1631, 17118, 4818, 4850, 683, 5378, 5391, 504, 10752, 10749, 10756, 1126, 5379, 8076, 5088, 17461, 2]
 
 // Module 17460 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1126 */;
 import spring from "spring" /* 5378 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8081 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8076 */;
 import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10749 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 10752 */;

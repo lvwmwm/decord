@@ -1,7 +1,7 @@
 // Module ID: 18281
 // Function ID: 18282
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 4748, 2087, 4750, 1390, 16580, 8639, 1085, 21, 5107, 5092, 558, 576, 1126, 6180, 5046, 4755, 18282, 15236, 8641, 9076, 18284, 5038, 13524, 6265, 8961, 12269, 12837, 8217, 8622, 18285, 11435, 6114, 11443, 15897, 9755, 4818, 587, 1503, 504, 8638, 18287, 6963, 6970, 4808, 1415, 17614, 18288, 5377, 8580, 6728, 2]
+// Dependencies: [19, 4748, 2087, 4750, 1390, 16580, 8634, 1085, 21, 5107, 5092, 558, 576, 1126, 6180, 5046, 4755, 18282, 15236, 8636, 9071, 18284, 5038, 13524, 6265, 8956, 12269, 12837, 8212, 8617, 18285, 11435, 6114, 11443, 15897, 9750, 4818, 587, 1503, 504, 8633, 18287, 6963, 6970, 4808, 1415, 17614, 18288, 5377, 8575, 6728, 2]
 
 // Module 18281 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6114 */;
 import TableRow7 from "TableRow" /* 6180 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import RobotIcon from "RobotIcon" /* 11435 */;
 import HammerIcon from "HammerIcon" /* 11443 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13524 */;
@@ -24,7 +24,7 @@ import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import UserStore from "UserStore" /* 1390 */;
 import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16580 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -190,7 +190,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     PermissionUtilsAll;
   }
   if (!canManageGuild) {
-    const tmpResult = guild(8641);
+    const tmpResult = guild(8636);
     if (tmpResult.canUseMobileServerTagSettings(guild.id)) {
       let tmp32;
       let tmp34;
@@ -206,7 +206,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
       }
       const _Symbol4 = Symbol;
       if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { IconComponent: guild(9076).TagIcon };
+        const obj7 = { IconComponent: guild(9071).TagIcon };
         const Icon4 = tmp(6180).TableRow.Icon;
         const tmp36 = closure_15(Icon4, obj7);
         cResult[24] = tmp36;
@@ -446,7 +446,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     Icon3 = tmp2(6180).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
-  const tmp2Result = guild(8641);
+  const tmp2Result = guild(8636);
   if (tmp2Result.canUseMobileServerTagSettings(guild.id)) {
     const obj8 = {
       label: intl4.string(guild(1126).t["2QmKZ2"]),
@@ -458,7 +458,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     };
     const TableRow4 = tmp2(6180).TableRow;
     intl4 = tmp2(1126).intl;
-    obj9 = { IconComponent: guild(9076).TagIcon };
+    obj9 = { IconComponent: guild(9071).TagIcon };
     Icon4 = tmp2(6180).TableRow.Icon;
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
@@ -565,7 +565,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     }
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { IconComponent: pushScreen(8961).ReactionIcon };
+      const obj3 = { IconComponent: pushScreen(8956).ReactionIcon };
       const Icon = tmp(6180).TableRow.Icon;
       const tmp9 = closure_15(Icon, obj3);
       cResult[5] = tmp9;
@@ -698,7 +698,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
     };
     const TableRow = pushScreen(6180).TableRow;
     intl = pushScreen(1126).intl;
-    obj2 = { IconComponent: pushScreen(8961).ReactionIcon };
+    obj2 = { IconComponent: pushScreen(8956).ReactionIcon };
     Icon = pushScreen(6180).TableRow.Icon;
     items.push(closure_15(TableRow, obj, "emoji"));
     const obj3 = {
@@ -759,7 +759,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function People
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: pushScreen(8217).GroupIcon };
+    const obj2 = { IconComponent: pushScreen(8212).GroupIcon };
     const Icon = tmp(6180).TableRow.Icon;
     const tmp8 = closure_15(Icon, obj2);
     cResult[1] = tmp8;
@@ -830,7 +830,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function People
     }
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { IconComponent: pushScreen(8622).ShieldUserIcon };
+      const obj5 = { IconComponent: pushScreen(8617).ShieldUserIcon };
       const Icon2 = tmp(6180).TableRow.Icon;
       const tmp17 = closure_15(Icon2, obj5);
       cResult[10] = tmp17;
@@ -928,7 +928,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function People
   };
   const TableRow = pushScreen(6180).TableRow;
   intl = pushScreen(1126).intl;
-  obj2 = { IconComponent: pushScreen(8217).GroupIcon };
+  obj2 = { IconComponent: pushScreen(8212).GroupIcon };
   Icon = pushScreen(6180).TableRow.Icon;
   const items = [closure_15(TableRow, obj, "members")];
   if (canManageRoles) {
@@ -942,7 +942,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function People
     };
     const TableRow2 = tmp2(6180).TableRow;
     intl2 = tmp2(1126).intl;
-    obj4 = { IconComponent: pushScreen(8622).ShieldUserIcon };
+    obj4 = { IconComponent: pushScreen(8617).ShieldUserIcon };
     Icon2 = tmp2(6180).TableRow.Icon;
     items.push(closure_15(TableRow2, obj3, "roles"));
   }
@@ -1188,7 +1188,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modera
     }
     const _Symbol10 = Symbol;
     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj11 = { IconComponent: pushScreen(8622).ShieldUserIcon };
+      const obj11 = { IconComponent: pushScreen(8617).ShieldUserIcon };
       const Icon5 = tmp(6180).TableRow.Icon;
       const tmp48 = closure_15(Icon5, obj11);
       cResult[22] = tmp48;
@@ -1436,7 +1436,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj6 = { IconComponent: pushScreen(9755).AnalyticsIcon };
+        const obj6 = { IconComponent: pushScreen(9750).AnalyticsIcon };
         const Icon3 = tmp(6180).TableRow.Icon;
         const tmp16 = closure_15(Icon3, obj6);
         cResult[11] = tmp16;
@@ -1523,7 +1523,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
     };
     const TableRow2 = pushScreen(6180).TableRow;
     intl2 = pushScreen(1126).intl;
-    obj5 = { IconComponent: pushScreen(9755).AnalyticsIcon };
+    obj5 = { IconComponent: pushScreen(9750).AnalyticsIcon };
     Icon3 = pushScreen(6180).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "analytics"));
   }
@@ -1907,7 +1907,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
   }, items3);
   const obj8 = { style: tmp5.container, contentContainerStyle: items4, children: closure_16(Stack, obj9) };
   items4 = [tmp5.containerContent, contentContainerStyle];
-  const Form = tmp(8580).Form;
+  const Form = tmp(8575).Form;
   obj9 = { style: { paddingHorizontal: token }, spacing: tmp3(587).space.PX_24, children: items5 };
   Stack = tmp(5377).Stack;
   items5 = [, , , , , , ];

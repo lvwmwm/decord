@@ -1,7 +1,7 @@
 // Module ID: 18373
 // Function ID: 18374
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1390, 6031, 558, 576, 504, 9759, 2]
+// Dependencies: [5, 32, 19, 1390, 6031, 558, 576, 504, 9754, 2]
 
 // Module 18373 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

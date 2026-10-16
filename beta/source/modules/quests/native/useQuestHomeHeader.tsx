@@ -1,7 +1,7 @@
 // Module ID: 15278
 // Function ID: 15279
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5972, 1085, 1087, 21, 5092, 587, 558, 576, 13007, 1126, 5088, 9062, 5056, 12789, 2000, 1265, 6879, 7263, 12778, 15279, 7575, 15280, 1503, 13043, 2]
+// Dependencies: [19, 17, 5972, 1085, 1087, 21, 5092, 587, 558, 576, 13007, 1126, 5088, 9057, 5056, 12789, 2000, 1265, 6879, 7258, 12778, 15279, 7570, 15280, 1503, 13043, 2]
 
 // Module 15278 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
@@ -37,7 +37,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_10();
-  let obj = balance(9062);
+  let obj = balance(9057);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: items };

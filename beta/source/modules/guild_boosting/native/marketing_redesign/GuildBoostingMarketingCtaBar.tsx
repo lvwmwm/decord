@@ -1,7 +1,7 @@
 // Module ID: 13867
 // Function ID: 13868
 // Name: GuildBoostingMarketingCtaBar
-// Dependencies: [32, 19, 17, 1390, 7119, 1085, 1392, 21, 1102, 5092, 587, 1200, 558, 4850, 5093, 576, 6852, 6879, 573, 13753, 8095, 8030, 4769, 5959, 10051, 9394, 1398, 13805, 13807, 13868, 1126, 5088, 6159, 13792, 6185, 7118, 13871, 13872, 5391, 5379, 13873, 2]
+// Dependencies: [32, 19, 17, 1390, 7119, 1085, 1392, 21, 1102, 5092, 587, 1200, 558, 4850, 5093, 576, 6852, 6879, 573, 13753, 8090, 8025, 4769, 5959, 10046, 9389, 1398, 13805, 13807, 13868, 1126, 5088, 6159, 13792, 6185, 7118, 13871, 13872, 5391, 5379, 13873, 2]
 
 // Module 13867 (GuildBoostingMarketingCtaBar)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import DurationsDefault from "Durations" /* 1102 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import timing from "timing" /* 5093 */;
 import BoostingActionCreators from "BoostingActionCreators" /* 5959 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10051 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10046 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore_mod from "UserStore" /* 1390 */;
@@ -186,9 +186,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       const tmp20 = closure_18(!first);
       const tmp7Result = first(13753);
       const tmp7ResultResult = tmp7Result(fractionalPremiumInfo.endsAt, tmp(13753).CountDownMessageTypes.LONG_TIME_LEFT);
-      const tmpResult4 = tmp(8095);
+      const tmpResult4 = tmp(8090);
       const isInReverseTrial = tmpResult4.useIsInReverseTrial();
-      const total = tmp7(8030)(guild.guild.id).total;
+      const total = tmp7(8025)(guild.guild.id).total;
       UserStore = obj2.useRef(-1);
       if (cResult[10] === first) {
         let tmp24;
@@ -965,9 +965,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   const tmp12 = closure_18(!first);
   const tmp13 = first(13753);
   const tmp13Result = tmp13(fractionalPremiumInfo.endsAt, guild(13753).CountDownMessageTypes.LONG_TIME_LEFT);
-  let obj3 = guild(8095);
+  let obj3 = guild(8090);
   const isInReverseTrial = obj3.useIsInReverseTrial();
-  const total = first(8030)(premiumGroupRole.guild.id).total;
+  const total = first(8025)(premiumGroupRole.guild.id).total;
   ref = stateFromStores1.useRef(-1);
   const items3 = [first, memo];
   const effect = stateFromStores1.useEffect(() => {

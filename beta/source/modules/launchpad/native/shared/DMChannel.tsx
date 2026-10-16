@@ -1,7 +1,7 @@
 // Module ID: 17998
 // Function ID: 17999
 // Name: shared/DMChannel
-// Dependencies: [19, 5967, 21, 558, 576, 5103, 10283, 5092, 587, 17411, 16802, 15612, 11, 5386, 17992, 6185, 17990, 12588, 9314, 17410, 5421, 2]
+// Dependencies: [19, 5967, 21, 558, 576, 5103, 10283, 5092, 587, 17411, 16802, 15612, 11, 5386, 17992, 6185, 17990, 12588, 9309, 17410, 5421, 2]
 
 // Module 17998 (shared/DMChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -12,7 +12,7 @@ import transitionToChannel from "transitionToChannel" /* 5103 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 15612 */;
 import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16802 */;

@@ -1,7 +1,7 @@
 // Module ID: 10289
 // Function ID: 10290
 // Name: InstantInvite
-// Dependencies: [109, 19, 17, 2069, 1390, 1085, 21, 5092, 587, 558, 576, 504, 6858, 10290, 10291, 5300, 1126, 10292, 1112, 10294, 6862, 5088, 7574, 9363, 5377, 10298, 10299, 6182, 10301, 10304, 10306, 2]
+// Dependencies: [109, 19, 17, 2069, 1390, 1085, 21, 5092, 587, 558, 576, 504, 6858, 10290, 10291, 5300, 1126, 10292, 1112, 10294, 6862, 5088, 7569, 9358, 5377, 10298, 10299, 6182, 10301, 10304, 10306, 2]
 
 // Module 10289 (InstantInvite)
 import react_native from "react-native" /* 17 */;
@@ -33,7 +33,7 @@ let tmp;
 let unpackModuleId;
 const Text_Text = tmp(5088);
 const Stack_Stack = tmp(5377);
-const ContextMenu = tmp(9363);
+const ContextMenu = tmp(9358);
 const InstantInviteCode = tmp(10298);
 const guild_instant_invites_InstantInviteUtils = tmp(10301);
 let closure_3 = ["ref"];
@@ -232,8 +232,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkedChanne
                 }
                 const obj4 = { items: tmp26, children: tmp39 };
                 cResult[26] = tmp26;
-                cResult[27] = closure_11(tmp(9363).ContextMenu, obj4);
-                const tmp41 = closure_11(tmp(9363).ContextMenu, obj4);
+                cResult[27] = closure_11(tmp(9358).ContextMenu, obj4);
+                const tmp41 = closure_11(tmp(9358).ContextMenu, obj4);
               } else {
                 class R {
                   constructor(ref) {
@@ -527,7 +527,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkedChanne
       return closure_1_11(IconButton, obj);
     }
   };
-  items4[1] = closure_11(channel(9363).ContextMenu, obj7);
+  items4[1] = closure_11(channel(9358).ContextMenu, obj7);
   items5 = [closure_12(Stack, obj6), closure_11(tmp2(10298).InstantInviteDetails, { channel }), ];
   const obj8 = { direction: "horizontal", align: "flex-end", children: closure_11(View, obj9) };
   obj9 = { style: tmp.creatorWrapper, children: closure_11(canUnlinkLobbyChannel(10299), obj10) };
@@ -852,7 +852,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return closure_1_11(IconButton, obj);
     }
   };
-  items2[1] = closure_11(invite(9363).ContextMenu, obj4);
+  items2[1] = closure_11(invite(9358).ContextMenu, obj4);
   const items3 = [closure_12(Stack, obj2), , , ];
   const obj5 = { channel: memo, expiresAt: invite.getExpiresAt() };
   const InstantInviteDetails = tmp4(10298).InstantInviteDetails;

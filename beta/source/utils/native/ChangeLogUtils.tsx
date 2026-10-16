@@ -1,9 +1,9 @@
-// Module ID: 8126
-// Function ID: 8127
+// Module ID: 8121
+// Function ID: 8122
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5092, 587, 5969, 5399, 5088, 558, 576, 8127, 6664, 8128, 8129, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 5969, 5399, 5088, 558, 576, 8122, 6664, 8123, 8124, 2]
 
-// Module 8126 (utils/ChangeLogUtils)
+// Module 8121 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,8 +11,8 @@ import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import LegacyTokens from "LegacyTokens" /* 5969 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8128 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8129 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8123 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8124 */;
 import React from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import CustomMarkup from "CustomMarkup" /* 5399 */;
@@ -306,10 +306,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult = output(8127);
+  const tmpResult = output(8122);
   const result = tmpResult.splitParagraphAtImages(node.content);
   if (true !== state.changelogImagesDisabled) {
-    const tmpResult2 = output(8127);
+    const tmpResult2 = output(8122);
     if (tmpResult2.hasImageSegment(result)) {
       if (cResult[18] === Paragraph) {
         if (cResult[19] === output) {
@@ -473,12 +473,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = output(5088).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8127);
+  const obj = output(8122);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8127);
+    const tmp5Result = tmp5(8122);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

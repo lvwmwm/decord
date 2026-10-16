@@ -1,9 +1,9 @@
-// Module ID: 9317
-// Function ID: 9318
+// Module ID: 9312
+// Function ID: 9313
 // Name: MessageManager
-// Dependencies: [32, 6036, 5757, 2069, 6061, 2065, 2087, 6035, 2116, 4939, 1085, 2072, 1102, 3, 5752, 9318, 5027, 6085, 7179, 9319, 510, 4944, 1112, 6063, 5299, 1126, 584, 6808, 2]
+// Dependencies: [32, 6036, 5757, 2069, 6061, 2065, 2087, 6035, 2116, 4939, 1085, 2072, 1102, 3, 5752, 9313, 5027, 6085, 7174, 9314, 510, 4944, 1112, 6063, 5299, 1126, 584, 6808, 2]
 
-// Module 9317 (MessageManager)
+// Module 9312 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -17,9 +17,9 @@ import flow_Client from "flow/Client" /* 5027 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 5752 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9318 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9319 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9313 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9314 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;

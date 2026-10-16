@@ -1,9 +1,9 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9764
+// Function ID: 9765
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 9728, 21, 5092, 587, 558, 576, 5088, 5749, 1200, 9770, 9771, 1126, 9772, 6185, 2]
+// Dependencies: [19, 17, 9723, 21, 5092, 587, 558, 576, 5088, 5749, 1200, 9765, 9766, 1126, 9767, 6185, 2]
 
-// Module 9769 (StickerPackHeader)
+// Module 9764 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,11 +11,11 @@ import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import StickersUtils from "StickersUtils" /* 5749 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9770 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9771 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 9772 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9765 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9766 */;
+import StickerPackBannerDefault from "StickerPackBanner" /* 9767 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9728 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9723 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

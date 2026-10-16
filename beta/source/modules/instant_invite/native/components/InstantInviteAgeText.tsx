@@ -1,17 +1,17 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8756
+// Function ID: 8757
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8684, 21, 5092, 558, 576, 6664, 504, 8685, 5088, 6185, 8683, 1126, 2]
+// Dependencies: [19, 17, 8679, 21, 5092, 558, 576, 6664, 504, 8680, 5088, 6185, 8678, 1126, 2]
 
-// Module 8761 (InstantInviteAgeText)
+// Module 8756 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1126 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8685 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8680 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8684 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8679 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

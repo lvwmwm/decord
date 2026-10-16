@@ -1,12 +1,12 @@
 // Module ID: 15082
 // Function ID: 15083
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1390, 21, 7018, 558, 576, 6852, 1126, 8304, 1200, 15083, 5379, 6180, 504, 2]
+// Dependencies: [19, 1390, 21, 7018, 558, 576, 6852, 1126, 8299, 1200, 15083, 5379, 6180, 504, 2]
 
 // Module 15082 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

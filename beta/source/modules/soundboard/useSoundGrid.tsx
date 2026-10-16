@@ -1,14 +1,14 @@
 // Module ID: 17821
 // Function ID: 17822
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2065, 2087, 4750, 2116, 1390, 5428, 5430, 1392, 7049, 8025, 17822, 558, 576, 504, 4769, 5431, 17823, 8573, 17824, 17825, 5396, 2]
+// Dependencies: [32, 19, 2065, 2087, 4750, 2116, 1390, 5428, 5430, 1392, 7049, 8020, 17822, 558, 576, 504, 4769, 5431, 17823, 8568, 17824, 17825, 5396, 2]
 
 // Module 17821 (useSoundGrid)
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import SoundboardTypes from "SoundboardTypes" /* 7049 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8025 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8573 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8568 */;
 import useSoundOrganizer from "useSoundOrganizer" /* 17822 */;
 import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17825 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

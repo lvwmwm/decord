@@ -1,7 +1,7 @@
 // Module ID: 5760
 // Function ID: 5761
 // Name: SpotifyStore
-// Dependencies: [2019, 502, 5761, 5888, 5108, 5947, 5113, 8459, 1085, 5763, 1102, 3, 2060, 584, 569, 10787, 12, 1265, 568, 13927, 6039, 1388, 504, 8275, 2]
+// Dependencies: [2019, 502, 5761, 5888, 5108, 5947, 5113, 8454, 1085, 5763, 1102, 3, 2060, 584, 569, 10787, 12, 1265, 568, 13927, 6039, 1388, 504, 8270, 2]
 
 // Module 5760 (SpotifyStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -13,7 +13,7 @@ import DurationsDefault from "Durations" /* 1102 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Timers from "Timers" /* 2060 */;
 import useIsSpeaking from "useIsSpeaking" /* 6039 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
 import SpotifyActionCreators from "SpotifyActionCreators" /* 10787 */;
 import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 13927 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
@@ -23,7 +23,7 @@ import IdleStore from "IdleStore" /* 5888 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import SpeakingStore from "SpeakingStore" /* 5947 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import SpotifyConstants from "SpotifyConstants" /* 8459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8454 */;
 import Constants from "Constants" /* 1085 */;
 import Platforms from "Platforms" /* 5763 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 18603
 // Function ID: 18604
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1204, 1096, 21, 5092, 587, 5906, 558, 576, 15505, 8580, 5088, 1126, 1200, 6185, 6839, 6761, 6899, 2]
+// Dependencies: [32, 19, 17, 1204, 1096, 21, 5092, 587, 5906, 558, 576, 15505, 8575, 5088, 1126, 1200, 6185, 6839, 6761, 6899, 2]
 
 // Module 18603 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;

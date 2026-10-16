@@ -1,11 +1,11 @@
 // Module ID: 15612
 // Function ID: 15613
 // Name: useMessagePreviews
-// Dependencies: [1244, 6035, 2041, 558, 576, 504, 9326, 9314, 15613, 2]
+// Dependencies: [1244, 6035, 2041, 558, 576, 504, 9321, 9309, 15613, 2]
 
 // Module 15612 (useMessagePreviews)
 import UserSettings from "UserSettings" /* 2041 */;
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 9326 */;
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 9321 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -137,10 +137,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     disabled = useIsNsfwGatedDefault(guild_id);
   }
   if (!disabled) {
-    disabled = tmp4 === tmp(9314).MessagePreviewTypes.NONE;
+    disabled = tmp4 === tmp(9309).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp10 = tmp4 === tmp(9314).MessagePreviewTypes.UNREADS;
+    let tmp10 = tmp4 === tmp(9309).MessagePreviewTypes.UNREADS;
     if (tmp10) {
       if (unread == null) {
         unread = stateFromStores;
@@ -166,10 +166,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     disabled = useIsNsfwGatedDefault(guild_id);
   }
   if (!disabled) {
-    disabled = tmp === tmp2(9314).MessagePreviewTypes.NONE;
+    disabled = tmp === tmp2(9309).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp6 = tmp === tmp2(9314).MessagePreviewTypes.UNREADS;
+    let tmp6 = tmp === tmp2(9309).MessagePreviewTypes.UNREADS;
     if (tmp6) {
       if (unread == null) {
         unread = stateFromStores;

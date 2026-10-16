@@ -1,7 +1,7 @@
 // Module ID: 15184
 // Function ID: 15185
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8298, 15172, 15181, 15183, 4962, 15182, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8293, 15172, 15181, 15183, 4962, 15182, 5088, 2]
 
 // Module 15184 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
 import useSelectedTeenUser from "useSelectedTeenUser" /* 15172 */;
 import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15181 */;
 import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 15182 */;

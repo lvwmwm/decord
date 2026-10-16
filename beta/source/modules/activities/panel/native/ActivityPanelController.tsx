@@ -1,7 +1,7 @@
 // Module ID: 17752
 // Function ID: 17753
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 5440, 8417, 10969, 2065, 2064, 2024, 6067, 21, 2039, 558, 576, 17751, 4850, 8451, 17753, 1631, 1497, 17754, 17757, 10359, 10922, 11026, 17758, 6207, 10925, 4985, 4739, 10481, 504, 5889, 5103, 17759, 10853, 2]
+// Dependencies: [32, 19, 5440, 8412, 10969, 2065, 2064, 2024, 6067, 21, 2039, 558, 576, 17751, 4850, 8446, 17753, 1631, 1497, 17754, 17757, 10359, 10922, 11026, 17758, 6207, 10925, 4985, 4739, 10481, 504, 5889, 5103, 17759, 10853, 2]
 
 // Module 17752 (ActivityPanelController)
 import Fragment from "Fragment" /* 21 */;
@@ -10,14 +10,14 @@ import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import DeviceOrientation from "DeviceOrientation" /* 8451 */;
+import DeviceOrientation from "DeviceOrientation" /* 8446 */;
 import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 10853 */;
 import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10925 */;
 import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17753 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import AppFreezeStore_mod from "AppFreezeStore" /* 8417 */;
+import AppFreezeStore_mod from "AppFreezeStore" /* 8412 */;
 import SafeAreaDisabledStore_mod from "SafeAreaDisabledStore" /* 10969 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;

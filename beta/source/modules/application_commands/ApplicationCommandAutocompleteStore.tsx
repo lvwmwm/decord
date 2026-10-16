@@ -1,15 +1,15 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7916
+// Function ID: 7917
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [7922, 1085, 1382, 1998, 5107, 504, 584, 2]
+// Dependencies: [7917, 1085, 1382, 1998, 5107, 504, 584, 2]
 
-// Module 7921 (ApplicationCommandAutocompleteStore)
+// Module 7916 (ApplicationCommandAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Server from "Server" /* 1998 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7922 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7917 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 15229
 // Function ID: 15230
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 15060, 504, 15230, 1126, 6265, 6180, 5377, 5088, 6814, 1388, 6185, 1200, 7729, 1503, 15231, 6680, 15232, 9097, 11176, 6642, 15233, 2]
+// Dependencies: [32, 19, 17, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 15060, 504, 15230, 1126, 6265, 6180, 5377, 5088, 6814, 1388, 6185, 1200, 7724, 1503, 15231, 6680, 15232, 9092, 11176, 6642, 15233, 2]
 
 // Module 15229 (UserSettingsSessions)
 import react2 from "react" /* 576 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 6642 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import ScreenIcon from "ScreenIcon" /* 9097 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
+import ScreenIcon from "ScreenIcon" /* 9092 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11176 */;
 import AuthSessionsActionCreators from "AuthSessionsActionCreators" /* 15230 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 15231 */;

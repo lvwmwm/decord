@@ -1,7 +1,7 @@
 // Module ID: 12595
 // Function ID: 12596
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2069, 2065, 4760, 5966, 1390, 1085, 21, 6809, 6804, 5421, 8580, 1126, 12596, 7094, 558, 576, 504, 6201, 6688, 2]
+// Dependencies: [19, 2069, 2065, 4760, 5966, 1390, 1085, 21, 6809, 6804, 5421, 8575, 1126, 12596, 7094, 558, 576, 504, 6201, 6688, 2]
 
 // Module 12595 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import Form2 from "Form" /* 8580 */;
+import Form2 from "Form" /* 8575 */;
 import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12596 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

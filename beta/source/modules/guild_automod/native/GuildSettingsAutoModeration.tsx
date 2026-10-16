@@ -1,7 +1,7 @@
 // Module ID: 18299
 // Function ID: 18300
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 18300, 18302, 1085, 21, 5092, 587, 18304, 1126, 558, 576, 1503, 18309, 18317, 6154, 6265, 5088, 5377, 2128, 8580, 6728, 2]
+// Dependencies: [32, 19, 18300, 18302, 1085, 21, 5092, 587, 18304, 1126, 558, 576, 1503, 18309, 18317, 6154, 6265, 5088, 5377, 2128, 8575, 6728, 2]
 
 // Module 18299 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 587 */;

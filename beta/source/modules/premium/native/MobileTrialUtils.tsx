@@ -1,16 +1,16 @@
-// Module ID: 7169
-// Function ID: 7170
+// Module ID: 7164
+// Function ID: 7165
 // Name: MobileTrialUtils
-// Dependencies: [1392, 558, 7170, 4938, 2049, 576, 13627, 4769, 1126, 2]
+// Dependencies: [1392, 558, 7165, 4938, 2049, 576, 13627, 4769, 1126, 2]
 
-// Module 7169 (MobileTrialUtils)
+// Module 7164 (MobileTrialUtils)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7165 */;
 import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 13627 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

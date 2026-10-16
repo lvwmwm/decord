@@ -1,7 +1,7 @@
 // Module ID: 16409
 // Function ID: 16410
 // Name: PrivacyHint
-// Dependencies: [19, 17, 5931, 16371, 1085, 21, 5092, 558, 576, 1126, 5088, 4832, 6178, 8580, 16410, 2]
+// Dependencies: [19, 17, 5931, 16371, 1085, 21, 5092, 558, 576, 1126, 5088, 4832, 6178, 8575, 16410, 2]
 
 // Module 16409 (PrivacyHint)
 import react2 from "react" /* 576 */;
@@ -168,7 +168,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
     tmp13Result = tmp13(tmp(6178).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8580).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8575).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -201,7 +201,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8580).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8575).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];

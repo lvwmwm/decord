@@ -1,7 +1,7 @@
 // Module ID: 12895
 // Function ID: 12896
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9232, 8458, 1126, 4815, 12896, 9212, 7092, 5088, 12898, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9227, 8453, 1126, 4815, 12896, 9207, 7092, 5088, 12898, 2]
 
 // Module 12895 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import FriendsIcon from "FriendsIcon" /* 4815 */;
 import SettingsIcon from "SettingsIcon" /* 7092 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9232 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
+import GameControllerIcon from "GameControllerIcon" /* 9207 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9227 */;
 import ChatSmileIcon from "ChatSmileIcon" /* 12896 */;
 import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 12898 */;
 import react from "react" /* 19 */;

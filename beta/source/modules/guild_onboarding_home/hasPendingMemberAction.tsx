@@ -1,10 +1,10 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7910
+// Function ID: 7911
 // Name: hasPendingMemberAction
-// Dependencies: [2065, 2125, 2087, 6926, 7916, 1085, 4736, 6928, 1403, 2]
+// Dependencies: [2065, 2125, 2087, 6926, 7911, 1085, 4736, 6928, 1403, 2]
 // Exports: hasPendingMemberAction
 
-// Module 7915 (hasPendingMemberAction)
+// Module 7910 (hasPendingMemberAction)
 import Constants from "Constants" /* 1085 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
@@ -13,7 +13,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7916 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

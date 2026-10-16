@@ -1,7 +1,7 @@
 // Module ID: 10830
 // Function ID: 10831
 // Name: CameraPreview
-// Dependencies: [32, 19, 17, 2064, 6036, 9384, 5897, 502, 10831, 10354, 10355, 1085, 5115, 21, 6335, 4850, 1200, 558, 576, 504, 10832, 10827, 10840, 10828, 8327, 1631, 10838, 8451, 5922, 10833, 6259, 5093, 10850, 1126, 10851, 10879, 10964, 10835, 10357, 6038, 10965, 10966, 2]
+// Dependencies: [32, 19, 17, 2064, 6036, 9379, 5897, 502, 10831, 10354, 10355, 1085, 5115, 21, 6335, 4850, 1200, 558, 576, 504, 10832, 10827, 10840, 10828, 8322, 1631, 10838, 8446, 5922, 10833, 6259, 5093, 10850, 1126, 10851, 10879, 10964, 10835, 10357, 6038, 10965, 10966, 2]
 
 // Module 10830 (CameraPreview)
 import Constants from "Constants" /* 1085 */;
@@ -10,7 +10,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import useSelectedParticipantDefault from "useSelectedParticipant" /* 10357 */;
 import PictureInPicture from "PictureInPicture" /* 10833 */;
@@ -109,7 +109,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   let closure_5 = tmp13;
   const tmp14 = stateFromStores(10828)(channel.id);
   let closure_6 = tmp14;
-  const tmpResult5 = tmp(8327);
+  const tmpResult5 = tmp(8322);
   const isScreenLandscape = tmpResult5.useIsScreenLandscape();
   const rect = stateFromStores(1631)();
   const bottom = rect.bottom;
@@ -142,7 +142,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   }
   const tmpResult7 = tmp(504);
   const tmp21 = tmpResult7.useStateFromStores(tmp18, tmp19)[constants2.CAMERA_PREVIEW_PICTURE_IN_PICTURE];
-  const OrientationType = tmp(8451).OrientationType;
+  const OrientationType = tmp(8446).OrientationType;
   const tmp22 = isScreenLandscape ? OrientationType.LANDSCAPE : OrientationType.PORTRAIT;
   closure_9 = tmp22;
   let tmp23 = tmp8(5922)(tmp22);
@@ -457,7 +457,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   let closure_5 = tmp10;
   const tmp11 = stateFromStores(10828)(channel.id);
   let closure_6 = tmp11;
-  let obj3 = participantScreenIsFocused(8327);
+  let obj3 = participantScreenIsFocused(8322);
   const isScreenLandscape = obj3.useIsScreenLandscape();
   const rect = stateFromStores(1631)();
   const bottom = rect.bottom;
@@ -469,7 +469,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   const items1 = [closure_12];
   const obj6 = participantScreenIsFocused(504);
   const tmp14 = obj6.useStateFromStores(items1, () => closure_12.getVoiceCallOverlayLayoutStates())[constants2.CAMERA_PREVIEW_PICTURE_IN_PICTURE];
-  const OrientationType = participantScreenIsFocused(8451).OrientationType;
+  const OrientationType = participantScreenIsFocused(8446).OrientationType;
   const tmp15 = isScreenLandscape ? OrientationType.LANDSCAPE : OrientationType.PORTRAIT;
   closure_9 = tmp15;
   const tmp16 = tmp4(5922)(tmp15);

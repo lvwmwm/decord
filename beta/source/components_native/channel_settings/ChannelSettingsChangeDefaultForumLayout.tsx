@@ -1,13 +1,13 @@
 // Module ID: 17619
 // Function ID: 17620
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 2065, 21, 5092, 587, 558, 576, 9697, 1126, 2075, 6262, 17580, 6782, 6263, 5088, 6265, 17620, 17621, 6157, 504, 2]
+// Dependencies: [32, 19, 17, 2065, 21, 5092, 587, 558, 576, 9692, 1126, 2075, 6262, 17580, 6782, 6263, 5088, 6265, 17620, 17621, 6157, 504, 2]
 
 // Module 17619 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17620 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17621 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

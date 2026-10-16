@@ -1,14 +1,14 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9098
+// Function ID: 9099
 // Name: getGameProfileWebsiteData
-// Dependencies: [21, 8893, 9104, 8879, 1126, 8133, 9106, 8135, 8137, 9108, 9110, 9112, 2]
+// Dependencies: [21, 8888, 9099, 8874, 1126, 8128, 9101, 8130, 8132, 9103, 9105, 9107, 2]
 // Exports: default
 
-// Module 9103 (getGameProfileWebsiteData)
+// Module 9098 (getGameProfileWebsiteData)
 import Fragment from "Fragment" /* 21 */;
 import intl9 from "intl" /* 1126 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8893 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 8888 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

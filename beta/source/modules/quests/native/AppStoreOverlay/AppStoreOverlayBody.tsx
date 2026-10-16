@@ -1,7 +1,7 @@
 // Module ID: 12949
 // Function ID: 12950
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1085, 6841, 21, 5092, 587, 558, 576, 7407, 6157, 5088, 12950, 1126, 12953, 12958, 1631, 4818, 683, 5391, 5379, 2]
+// Dependencies: [19, 17, 1085, 6841, 21, 5092, 587, 558, 576, 7402, 6157, 5088, 12950, 1126, 12953, 12958, 1631, 4818, 683, 5391, 5379, 2]
 
 // Module 12949 (AppStoreOverlayBody)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 12950 */;
 import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 12953 */;
 import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 12958 */;

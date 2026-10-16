@@ -1,7 +1,7 @@
 // Module ID: 13176
 // Function ID: 13177
 // Name: UserProfileNote
-// Dependencies: [19, 21, 558, 576, 8315, 13177, 5056, 13179, 5088, 1126, 6180, 13183, 2]
+// Dependencies: [19, 21, 558, 576, 8310, 13177, 5056, 13179, 5088, 1126, 6180, 13183, 2]
 
 // Module 13176 (UserProfileNote)
 import Fragment from "Fragment" /* 21 */;

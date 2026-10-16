@@ -1,7 +1,7 @@
 // Module ID: 17080
 // Function ID: 17081
 // Name: conjureRemoveApp
-// Dependencies: [19, 5440, 7321, 4748, 2125, 2087, 4750, 4760, 1390, 10652, 1085, 11409, 5421, 558, 576, 504, 12, 6098, 1126, 3849, 2]
+// Dependencies: [19, 5440, 7316, 4748, 2125, 2087, 4750, 4760, 1390, 10652, 1085, 11409, 5421, 558, 576, 504, 12, 6098, 1126, 3849, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjurePreviewAppItem, conjureRemoveAppItems, conjureRemoveAppKeptChannels, conjureRemoveAppSuccess, conjureTitleWithAppTag
 
 // Module 17080 (conjureRemoveApp)
@@ -13,7 +13,7 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import conjureAppInServer from "conjureAppInServer" /* 11409 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;

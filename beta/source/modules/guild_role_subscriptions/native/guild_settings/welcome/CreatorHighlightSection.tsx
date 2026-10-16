@@ -1,7 +1,7 @@
 // Module ID: 18531
 // Function ID: 18532
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1200, 9467, 1126, 6663, 18532, 4806, 18504, 6157, 15533, 5380, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1200, 9462, 1126, 6663, 18532, 4806, 18504, 6157, 15533, 5380, 2]
 
 // Module 18531 (CreatorHighlightSection)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9467 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9462 */;
 import EmojiIconDefault from "EmojiIcon" /* 15533 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

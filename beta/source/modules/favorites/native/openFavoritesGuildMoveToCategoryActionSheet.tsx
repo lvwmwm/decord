@@ -1,7 +1,7 @@
 // Module ID: 10311
 // Function ID: 10312
 // Name: openFavoritesGuildMoveToCategoryActionSheet
-// Dependencies: [1085, 6892, 8202, 10312, 2]
+// Dependencies: [1085, 6892, 8197, 10312, 2]
 // Exports: default
 
 // Module 10311 (openFavoritesGuildMoveToCategoryActionSheet)

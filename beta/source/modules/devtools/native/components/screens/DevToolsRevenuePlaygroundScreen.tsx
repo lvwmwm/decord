@@ -1,7 +1,7 @@
 // Module ID: 16056
 // Function ID: 16057
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8107, 7348, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6180, 6189, 6265, 6892, 7179, 1200, 587, 10097, 5092, 7170, 5056, 16057, 2000, 558, 576, 6896, 16064, 12742, 11343, 5934, 16065, 16068, 16072, 16074, 16077, 2]
+// Dependencies: [5, 32, 19, 17, 8102, 7343, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6180, 6189, 6265, 6892, 7174, 1200, 587, 10097, 5092, 7165, 5056, 16057, 2000, 558, 576, 6896, 16064, 12742, 11343, 5934, 16065, 16068, 16072, 16074, 16077, 2]
 
 // Module 16056 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
@@ -22,8 +22,8 @@ import DevSettingsActions from "DevSettingsActions" /* 16064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8107 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8102 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -689,7 +689,7 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7170);
+  let obj = premiumTrialOffer(7165);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   const TableRowGroup = premiumTrialOffer(6265).TableRowGroup;
   const TableRow = premiumTrialOffer(6180).TableRow;

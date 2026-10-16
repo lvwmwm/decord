@@ -1,12 +1,12 @@
 // Module ID: 12525
 // Function ID: 12526
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 4748, 1085, 21, 5092, 587, 558, 576, 1631, 504, 12005, 6157, 12526, 1126, 1200, 5088, 8580, 12006, 12527, 8683, 12528, 2]
+// Dependencies: [19, 17, 4748, 1085, 21, 5092, 587, 558, 576, 1631, 504, 12005, 6157, 12526, 1126, 1200, 5088, 8575, 12006, 12527, 8678, 12528, 2]
 
 // Module 12525 (GuildDirectoryEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12006 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
@@ -317,7 +317,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       iconSource: channel(12527),
       title: intl3.string(guild(1126).t.hyK15i)
     };
-    const FormCTA = tmp4(8580).FormCTA;
+    const FormCTA = tmp4(8575).FormCTA;
     intl3 = tmp4(1126).intl;
     tmp8Result = tmp8(FormCTA, obj9);
   }
@@ -331,7 +331,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
     iconSource: channel(12528),
     title: intl4.string(guild(1126).t.L4bwJ9)
   };
-  const FormCTA2 = tmp4(8580).FormCTA;
+  const FormCTA2 = tmp4(8575).FormCTA;
   intl4 = tmp4(1126).intl;
   items2[4] = closure_6(FormCTA2, obj10);
   return tmp6(tmp7, obj3);

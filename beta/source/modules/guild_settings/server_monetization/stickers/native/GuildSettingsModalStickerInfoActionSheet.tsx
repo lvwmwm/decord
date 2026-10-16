@@ -1,7 +1,7 @@
 // Module ID: 18381
 // Function ID: 18382
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6030, 21, 504, 9759, 4809, 1126, 6840, 6839, 587, 6265, 6180, 9724, 18374, 5049, 2]
+// Dependencies: [5, 32, 19, 17, 6030, 21, 504, 9754, 4809, 1126, 6840, 6839, 587, 6265, 6180, 9719, 18374, 5049, 2]
 
 // Module 18381 (GuildSettingsModalStickerInfoActionSheet)
 import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18374 */;

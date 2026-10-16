@@ -1,9 +1,9 @@
-// Module ID: 7535
-// Function ID: 7536
+// Module ID: 7530
+// Function ID: 7531
 // Name: AgeVerificationModal
-// Dependencies: [19, 5917, 21, 4976, 5909, 4806, 7522, 5092, 587, 5934, 7089, 1126, 558, 576, 6688, 2]
+// Dependencies: [19, 5917, 21, 4976, 5909, 4806, 7517, 5092, 587, 5934, 7089, 1126, 558, 576, 6688, 2]
 
-// Module 7535 (AgeVerificationModal)
+// Module 7530 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 4806 */;

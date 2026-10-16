@@ -1,14 +1,14 @@
-// Module ID: 7716
-// Function ID: 7717
+// Module ID: 7711
+// Function ID: 7712
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 3184, 5305, 5305, 7717, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 3184, 5305, 5305, 7712, 2]
 
-// Module 7716 (ManualReviewFallbackAlertModal)
+// Module 7711 (ManualReviewFallbackAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef3184 from "module_3184" /* 3184 */;
 import AlertModal2 from "AlertModal" /* 5305 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7717 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7712 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

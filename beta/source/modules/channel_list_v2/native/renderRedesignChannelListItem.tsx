@@ -1,7 +1,7 @@
 // Module ID: 16625
 // Function ID: 16626
 // Name: renderRedesignChannelListItem
-// Dependencies: [19, 17, 5896, 2069, 2065, 4748, 5116, 11760, 2072, 7257, 21, 16624, 16626, 16630, 587, 6761, 7251, 16542, 1126, 11993, 16619, 16631, 16564, 5384, 16633, 16635, 16637, 16641, 16643, 16644, 16645, 16646, 16647, 16650, 16652, 16656, 16660, 16550, 16664, 1106, 16672, 16675, 16677, 2090, 16678, 16557, 5950, 16555, 16679, 2]
+// Dependencies: [19, 17, 5896, 2069, 2065, 4748, 5116, 11760, 2072, 7252, 21, 16624, 16626, 16630, 587, 6761, 7246, 16542, 1126, 11993, 16619, 16631, 16564, 5384, 16633, 16635, 16637, 16641, 16643, 16644, 16645, 16646, 16647, 16650, 16652, 16656, 16660, 16550, 16664, 1106, 16672, 16675, 16677, 2090, 16678, 16557, 5950, 16555, 16679, 2]
 // Exports: calculateVoiceSummary, getChannelListItemSize, getChannelListSectionFooterSize, getChannelListSectionHasFooterDivider, getChannelListSectionHeaderSize, getFastListRecyclerKey, renderChannelListItem, renderChannelListSectionFooter, renderChannelListSectionHeader
 
 // Module 16625 (renderRedesignChannelListItem)
@@ -13,7 +13,7 @@ import ChannelConstants from "ChannelConstants" /* 2072 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
 import FastList from "FastList" /* 6761 */;
-import ChannelListState from "ChannelListState" /* 7251 */;
+import ChannelListState from "ChannelListState" /* 7246 */;
 import Divider from "Divider" /* 11993 */;
 import CategoryChannel from "CategoryChannel" /* 16542 */;
 import ThreadChannelDefault from "ThreadChannel" /* 16550 */;
@@ -35,7 +35,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7252 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -379,7 +379,7 @@ export const renderChannelListItem = function renderChannelListItem(arg0) {
   let tmp52;
   ({ guildChannels, section, row, selectedChannelId, guild, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = arg0);
   let tmp = channel;
-  if (channel(7251).SECTION_INDEX_CHANNEL_NOTICES === section) {
+  if (channel(7246).SECTION_INDEX_CHANNEL_NOTICES === section) {
     const channelNoticeSection = guildChannels.getChannelNoticeSection();
     const row1 = channelNoticeSection.getRow(row);
     let tmp61 = null;
@@ -428,7 +428,7 @@ export const renderChannelListItem = function renderChannelListItem(arg0) {
       }
     }
     return tmp61;
-  } else if (tmp(7251).SECTION_INDEX_GUILD_ACTIONS === section) {
+  } else if (tmp(7246).SECTION_INDEX_GUILD_ACTIONS === section) {
     const guildActionSection = guildChannels.getGuildActionSection();
     const row2 = guildActionSection.getRow(row);
     let tmp51Result = null;

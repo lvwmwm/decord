@@ -1,7 +1,7 @@
 // Module ID: 15303
 // Function ID: 15304
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 5282, 1085, 9202, 1279, 7417, 7416, 5977, 15304, 7407, 5979, 7365, 1382, 7398, 12966, 15295, 15305, 5729, 5734, 2]
+// Dependencies: [5, 32, 19, 5282, 1085, 9197, 1279, 7412, 7411, 5977, 15304, 7402, 5979, 7360, 1382, 7393, 12966, 15295, 15305, 5729, 5734, 2]
 // Exports: useBountiesModalVideoAnalytics
 
 // Module 15303 (useBountiesModalVideoAnalytics)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
 import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import AdsVideoUtils from "AdsVideoUtils" /* 15305 */;

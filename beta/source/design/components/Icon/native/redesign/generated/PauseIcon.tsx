@@ -1,14 +1,14 @@
-// Module ID: 8403
-// Function ID: 8404
+// Module ID: 8398
+// Function ID: 8399
 // Name: PauseIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8404, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8399, 4817, 2]
 
-// Module 8403 (PauseIcon)
+// Module 8398 (PauseIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8404 */;
+import AssetRegistry from "AssetRegistry" /* 8399 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

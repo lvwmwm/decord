@@ -1,14 +1,14 @@
 // Module ID: 17386
 // Function ID: 17387
 // Name: SearchListRow
-// Dependencies: [19, 17, 9313, 21, 5092, 587, 558, 576, 5088, 6185, 2]
+// Dependencies: [19, 17, 9308, 21, 5092, 587, 558, 576, 5088, 6185, 2]
 
 // Module 17386 (SearchListRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Pressables from "Pressables" /* 6185 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

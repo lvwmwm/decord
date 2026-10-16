@@ -1,9 +1,9 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8696
+// Function ID: 8697
 // Name: Autocompleter
-// Dependencies: [8702, 8703, 4748, 4760, 1390, 6093, 5970, 8704, 2046, 6097, 8706, 8710, 2031, 5072, 5077, 1949, 1384, 12, 6096, 2]
+// Dependencies: [8697, 8698, 4748, 4760, 1390, 6093, 5970, 8699, 2046, 6097, 8701, 8705, 2031, 5072, 5077, 1949, 1384, 12, 6096, 2]
 
-// Module 8701 (Autocompleter)
+// Module 8696 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import _modDef1949 from "module_1949" /* 1949 */;
@@ -15,9 +15,9 @@ import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6093 */;
 import sortByMatchScoreDefault from "sortByMatchScore" /* 6096 */;
 import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 8702 */;
-import LinkRecord from "LinkRecord" /* 8703 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8699 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 8697 */;
+import LinkRecord from "LinkRecord" /* 8698 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;

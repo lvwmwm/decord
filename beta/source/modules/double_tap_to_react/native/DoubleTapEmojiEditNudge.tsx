@@ -1,7 +1,7 @@
 // Module ID: 12832
 // Function ID: 12833
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5081, 1498, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7987, 1500, 504, 1415, 9427, 1265, 9440, 5088, 1126, 6820, 6185, 2]
+// Dependencies: [5, 19, 17, 5081, 1498, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7982, 1500, 504, 1415, 9422, 1265, 9435, 5088, 1126, 6820, 6185, 2]
 
 // Module 12832 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7987 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7982 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

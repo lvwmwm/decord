@@ -1,7 +1,7 @@
 // Module ID: 16953
 // Function ID: 16954
 // Name: ICYMIShared
-// Dependencies: [19, 17, 7006, 2065, 2125, 4750, 1390, 1085, 21, 8467, 13015, 8215, 8930, 9565, 6800, 6950, 6726, 7179, 5027, 16914, 1382, 587, 558, 576, 1200, 9017, 6159, 5386, 5088, 6059, 6185, 16954, 9242, 504, 5409, 8472, 8304, 8222, 8471, 7011, 8680, 1126, 16915, 5031, 4818, 4967, 4850, 5093, 7015, 8199, 6906, 5079, 2]
+// Dependencies: [19, 17, 7006, 2065, 2125, 4750, 1390, 1085, 21, 8462, 13015, 8210, 8925, 9560, 6800, 6950, 6726, 7174, 5027, 16914, 1382, 587, 558, 576, 1200, 9012, 6159, 5386, 5088, 6059, 6185, 16954, 9237, 504, 5409, 8467, 8299, 8217, 8466, 7011, 8675, 1126, 16915, 5031, 4818, 4967, 4850, 5093, 7015, 8194, 6906, 5079, 2]
 // Exports: navigateToPost, truncateUsername
 
 // Module 16953 (ICYMIShared)
@@ -18,11 +18,11 @@ import GuildIcon from "GuildIcon" /* 6159 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import ICYMIUtils from "ICYMIUtils" /* 8471 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import ClipView from "ClipView" /* 9017 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import ICYMIUtils from "ICYMIUtils" /* 8466 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import ClipView from "ClipView" /* 9012 */;
 import openDetailsActionSheet2 from "openDetailsActionSheet" /* 16954 */;
 import react from "react" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 7006 */;
@@ -519,7 +519,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildContent
       };
       const PressableOpacity = tmp2(6185).PressableOpacity;
       obj10 = { color: nativeDefault.colors.ICON_MUTED, size: "sm" };
-      MoreHorizontalIcon = tmp2(9242).MoreHorizontalIcon;
+      MoreHorizontalIcon = tmp2(9237).MoreHorizontalIcon;
       tmp7Result2 = tmp7(PressableOpacity, obj9);
     }
   }
@@ -2221,7 +2221,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCom
               }
               if (cResult[33] !== tmp4.commentsIcon) {
                 const obj2 = { style: tmp4.commentsIcon };
-                const tmp23 = closure_18(parentMessage(8199).ChatIcon, obj2);
+                const tmp23 = closure_18(parentMessage(8194).ChatIcon, obj2);
                 cResult[33] = tmp4.commentsIcon;
                 cResult[34] = tmp23;
                 tmp21 = tmp23;
@@ -2341,7 +2341,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCom
       }
       if (cResult[9] !== tmp4.commentsIcon) {
         const obj11 = { style: tmp4.commentsIcon };
-        const tmp45 = closure_18(parentMessage(8199).ChatIcon, obj11);
+        const tmp45 = closure_18(parentMessage(8194).ChatIcon, obj11);
         cResult[9] = tmp4.commentsIcon;
         cResult[10] = tmp45;
         tmp43 = tmp45;
@@ -2460,7 +2460,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCom
         items2[1] = closure_18(Text, obj4);
         const obj6 = { style: tmp.commentCount, children: items3 };
         const obj7 = { style: tmp.commentsIcon };
-        items3 = [closure_18(parentMessage(8199).ChatIcon, obj7), , ];
+        items3 = [closure_18(parentMessage(8194).ChatIcon, obj7), , ];
         const obj8 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
         items3[1] = closure_18(parentMessage(5088).Text, obj8);
         const obj9 = { style: tmp.chevron, size: "xxs" };
@@ -2478,7 +2478,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadAsCom
     items5 = [closure_18(Text2, obj11), ];
     const obj12 = { style: tmp.commentCount, children: items6 };
     const obj13 = { style: tmp.commentsIcon };
-    items6 = [closure_18(parentMessage(8199).ChatIcon, obj13), ];
+    items6 = [closure_18(parentMessage(8194).ChatIcon, obj13), ];
     const obj14 = { style: tmp.chevron, size: "xxs" };
     items6[1] = closure_18(parentMessage(6906).ChevronSmallRightIcon, obj14);
     items5[1] = closure_19(View, obj12);

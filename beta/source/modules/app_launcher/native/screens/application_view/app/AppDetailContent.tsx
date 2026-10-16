@@ -1,7 +1,7 @@
 // Module ID: 11817
 // Function ID: 11818
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9248, 1502, 1085, 5403, 21, 5092, 11818, 587, 558, 576, 11732, 6180, 10622, 7243, 10860, 11793, 1126, 1631, 9808, 1998, 11822, 9247, 7247, 11729, 1382, 11824, 5088, 11826, 11790, 11828, 9246, 1200, 11835, 11837, 5056, 5107, 10862, 2]
+// Dependencies: [5, 19, 17, 9243, 1502, 1085, 5403, 21, 5092, 11818, 587, 558, 576, 11732, 6180, 10622, 7238, 10860, 11793, 1126, 1631, 9803, 1998, 11822, 9242, 7242, 11729, 1382, 11824, 5088, 11826, 11790, 11828, 9241, 1200, 11835, 11837, 5056, 5107, 10862, 2]
 // Exports: default
 
 // Module 11817 (AppDetailContent)
@@ -14,9 +14,9 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
 import AppLauncherContext from "AppLauncherContext" /* 10622 */;
 import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11729 */;
 import usePlaceholderSize from "usePlaceholderSize" /* 11732 */;
@@ -26,7 +26,7 @@ import BillIcon from "BillIcon" /* 11824 */;
 import ShopIcon from "ShopIcon" /* 11826 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

@@ -1,12 +1,12 @@
 // Module ID: 17658
 // Function ID: 17659
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 6035, 1085, 21, 558, 576, 12161, 9317, 17659, 10363, 12563, 2]
+// Dependencies: [19, 6035, 1085, 21, 558, 576, 12161, 9312, 17659, 10363, 12563, 2]
 
 // Module 17658 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import MessageManagerDefault from "MessageManager" /* 9317 */;
+import MessageManagerDefault from "MessageManager" /* 9312 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 14727
 // Function ID: 14728
 // Name: ActivitySessionAnalytics
-// Dependencies: [5, 5440, 6036, 7391, 2065, 5110, 1390, 14728, 2064, 1085, 11718, 1382, 10856, 9233, 12969, 5729, 10857, 1279, 10869, 5296, 1265, 9253, 5734, 10814, 2]
+// Dependencies: [5, 5440, 6036, 7386, 2065, 5110, 1390, 14728, 2064, 1085, 11718, 1382, 10856, 9228, 12969, 5729, 10857, 1279, 10869, 5296, 1265, 9248, 5734, 10814, 2]
 // Exports: getActiveAnalyticsSessionIDs, getShelfItemTrackingProperties, trackFrameSessionEnd, trackFrameSessionStart, trackFrameSessionStartFailed
 
 // Module 14727 (ActivitySessionAnalytics)
@@ -10,8 +10,8 @@ import v1 from "v1" /* 1279 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9233 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9253 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9248 */;
 import activityLaunchErrorUtils from "activityLaunchErrorUtils" /* 10814 */;
 import pendingFrameLaunch from "pendingFrameLaunch" /* 10856 */;
 import getShelfItemDataDefault from "getShelfItemData" /* 10869 */;
@@ -19,7 +19,7 @@ import getPlatformDefault from "getPlatform" /* 11718 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import UserStore from "UserStore" /* 1390 */;

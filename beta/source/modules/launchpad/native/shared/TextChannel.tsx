@@ -1,7 +1,7 @@
 // Module ID: 17993
 // Function ID: 17994
 // Name: shared/TextChannel
-// Dependencies: [19, 17, 6034, 2129, 2065, 1204, 5967, 21, 5092, 17411, 587, 558, 576, 16802, 6972, 504, 5421, 9327, 15612, 5944, 5386, 17994, 5413, 11737, 12588, 9314, 17996, 8513, 16669, 17992, 6185, 17997, 17410, 17990, 17991, 2]
+// Dependencies: [19, 17, 6034, 2129, 2065, 1204, 5967, 21, 5092, 17411, 587, 558, 576, 16802, 6972, 504, 5421, 9322, 15612, 5944, 5386, 17994, 5413, 11737, 12588, 9309, 17996, 8508, 16669, 17992, 6185, 17997, 17410, 17990, 17991, 2]
 
 // Module 17993 (shared/TextChannel)
 import react_native from "react-native" /* 17 */;
@@ -125,7 +125,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult14 = channel(504);
     const stateFromStores1 = tmpResult14.useStateFromStores(tmp13, tmp15);
     useChannelNameDefault(stateFromStores1);
-    const tmpResult15 = channel(9327);
+    const tmpResult15 = channel(9322);
     const unreadThreadsCountForParent = tmpResult15.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
     if (cResult[7] !== (unread && !tmp4)) {
       const obj2 = { unread: unread && !tmp4 };
@@ -174,7 +174,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
         }
-        const obj3 = { channel: null, message: tmp23, color: "text-muted", muted: tmp4, layout: channel(9314).ChannelListLayoutTypes.COMPACT };
+        const obj3 = { channel: null, message: tmp23, color: "text-muted", muted: tmp4, layout: channel(9309).ChannelListLayoutTypes.COMPACT };
         class X {
           constructor() {
             return locale.locale;
@@ -189,7 +189,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         cResult[15] = tmp35;
         result = tmp35;
       }
-      channel(8513);
+      channel(8508);
       class X {
         constructor() {
           return locale.locale;
@@ -457,7 +457,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj4 = channel(504);
   const stateFromStores1 = obj4.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
   const tmp9 = arr4(5421)(stateFromStores1);
-  const tmp2Result = channel(9327);
+  const tmp2Result = channel(9322);
   const unreadThreadsCountForParent = tmp2Result.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   let tmp12 = unread;
   const tmp8Result = arr4(15612);
@@ -479,13 +479,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != tmp8ResultResult) {
     let result;
     if (!isChannelSpoilerGated) {
-      const obj5 = { channel, message: tmp8ResultResult, color: "text-muted", muted: flag, layout: channel(9314).ChannelListLayoutTypes.COMPACT };
+      const obj5 = { channel, message: tmp8ResultResult, color: "text-muted", muted: flag, layout: channel(9309).ChannelListLayoutTypes.COMPACT };
       const ChannelRowPreview = tmp2(12588).ChannelRowPreview;
       result = closure_10(ChannelRowPreview, obj5);
     }
     dependencyMap = tmp22;
     const items3 = [arr4.length > 0, arr4];
-    const tmp2Result11 = channel(8513);
+    const tmp2Result11 = channel(8508);
     const isActivitiesInTextEnabled = tmp2Result11.useIsActivitiesInTextEnabled(channel.id);
     const memo = react.useMemo(() => {
       let tmp = null;

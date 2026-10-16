@@ -1,7 +1,7 @@
 // Module ID: 10272
 // Function ID: 10273
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 5092, 558, 576, 10273, 10274, 10276, 587, 8926, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 10273, 10274, 10276, 587, 8921, 2]
 
 // Module 10272 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Leaderboar
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const TrophyIcon = tmp(8926).TrophyIcon;
+      const TrophyIcon = tmp(8921).TrophyIcon;
       const tmp13 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
       cResult[8] = tmp13;
       tmp11 = tmp13;
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Leaderboar
   } else {
     const tmp5Result2 = GuildLeaderboardUtils;
     ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
-    const TrophyIcon = tmp5(8926).TrophyIcon;
+    const TrophyIcon = tmp5(8921).TrophyIcon;
     tmp10 = <View style={tmp.container} accessible accessibilityLabel={tmp5Result2.getLeaderboardWinnerBadgeText(tmp4)}>{null}</View>;
   }
   return tmp10;

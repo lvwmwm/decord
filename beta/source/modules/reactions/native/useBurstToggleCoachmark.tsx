@@ -1,9 +1,9 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9437
+// Function ID: 9438
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1390, 2062, 21, 2049, 5092, 587, 558, 576, 9408, 504, 4769, 7100, 1126, 9443, 2]
+// Dependencies: [32, 19, 17, 1390, 2062, 21, 2049, 5092, 587, 558, 576, 9403, 504, 4769, 7100, 1126, 9438, 2]
 
-// Module 9442 (useBurstToggleCoachmark)
+// Module 9437 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(9408);
+const SuperReactionIcon2 = tmp(9403);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9443);
+  const tmpResult2 = first(9438);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

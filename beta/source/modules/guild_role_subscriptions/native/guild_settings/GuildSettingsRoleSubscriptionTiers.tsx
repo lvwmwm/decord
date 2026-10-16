@@ -1,7 +1,7 @@
 // Module ID: 18557
 // Function ID: 18558
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 8639, 2087, 4743, 15498, 1085, 1392, 21, 5092, 587, 5056, 18558, 2000, 1126, 6940, 15524, 558, 576, 5088, 8674, 573, 15520, 6157, 9724, 1631, 14125, 1503, 15506, 18548, 14120, 15505, 12, 6201, 18560, 18561, 38, 8677, 18595, 18556, 2]
+// Dependencies: [32, 19, 17, 8634, 2087, 4743, 15498, 1085, 1392, 21, 5092, 587, 5056, 18558, 2000, 1126, 6940, 15524, 558, 576, 5088, 8669, 573, 15520, 6157, 9719, 1631, 14125, 1503, 15506, 18548, 14120, 15505, 12, 6201, 18560, 18561, 38, 8672, 18595, 18556, 2]
 
 // Module 18557 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
@@ -14,7 +14,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15524 */;
@@ -24,7 +24,7 @@ import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptions
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
 import Constants from "Constants" /* 1085 */;
@@ -484,7 +484,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditLi
                           }
                         }
                         if (tmp43 === Symbol.for("react.memo_cache_sentinel")) {
-                          const tmp46 = closure_17(editStateId(9724).PencilIcon, {});
+                          const tmp46 = closure_17(editStateId(9719).PencilIcon, {});
                           class H {
                             constructor() {
                               const obj = ActionSheetActionCreatorsDefault;
@@ -686,7 +686,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditLi
   items3[3] = closure_17(editStateId(5088).Text, obj11);
   items2[1] = closure_18(closure_7, obj9);
   items1[1] = closure_18(closure_7, obj8);
-  items1[2] = closure_17(editStateId(9724).PencilIcon, {});
+  items1[2] = closure_17(editStateId(9719).PencilIcon, {});
   return closure_17(closure_7, obj10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

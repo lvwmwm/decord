@@ -1,18 +1,18 @@
 // Module ID: 14889
 // Function ID: 14890
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7270, 9002, 21, 5092, 13474, 558, 576, 14888, 13475, 6879, 8353, 9027, 6157, 9005, 2]
+// Dependencies: [19, 17, 7265, 8997, 21, 5092, 13474, 558, 576, 14888, 13475, 6879, 8348, 9022, 6157, 9000, 2]
 
 // Module 14889 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7270 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8353 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9002 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9005 */;
-import _modDef9027 from "module_9027" /* 9027 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7265 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8348 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8997 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9000 */;
+import _modDef9022 from "module_9022" /* 9022 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 13474 */;
 import useProfileEffectSections from "useProfileEffectSections" /* 14888 */;
 import react from "react" /* 19 */;
@@ -256,7 +256,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item)
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef9027 };
+      const obj3 = { uri: _modDef9022 };
       cResult[6] = obj3;
       tmp15 = obj3;
     } else {
@@ -389,7 +389,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item)
   obj2 = { style: items2, accessible: false, importantForAccessibility: "no", children: items3 };
   items2 = [tmp.profileEffect, { borderRadius: 6 }];
   const obj3 = { source: obj4, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj4 = { uri: _modDef9027 };
+  obj4 = { uri: _modDef9022 };
   const tmp2Result = FastImageDefault;
   items3 = [metroRequire(tmp2Result, obj3), ];
   const obj5 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true, thumbnailUrlOverride: memo };

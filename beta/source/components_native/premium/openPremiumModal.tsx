@@ -1,10 +1,10 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9389
+// Function ID: 9390
 // Name: openPremiumModal
 // Dependencies: [5934, 7130, 2000, 2]
 // Exports: default
 
-// Module 9394 (openPremiumModal)
+// Module 9389 (openPremiumModal)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import size from "module_2" /* 2 */;

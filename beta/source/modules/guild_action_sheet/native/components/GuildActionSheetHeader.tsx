@@ -1,7 +1,7 @@
 // Module ID: 14201
 // Function ID: 14202
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 14202, 2087, 6980, 1085, 21, 5092, 587, 1383, 558, 576, 1126, 8872, 8868, 9104, 8875, 4809, 1200, 5088, 6185, 6627, 504, 2079, 14203, 14204, 1497, 6159, 1415, 6157, 1450, 9307, 4818, 8870, 12863, 2]
+// Dependencies: [19, 17, 14202, 2087, 6980, 1085, 21, 5092, 587, 1383, 558, 576, 1126, 8867, 8863, 9099, 8870, 4809, 1200, 5088, 6185, 6627, 504, 2079, 14203, 14204, 1497, 6159, 1415, 6157, 1450, 9302, 4818, 8865, 12863, 2]
 // Exports: default
 
 // Module 14201 (GuildActionSheetHeader)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8872 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8867 */;
 import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14203 */;
 import react from "react" /* 19 */;
 import GuildPopoutStore from "GuildPopoutStore" /* 14202 */;
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const AssetRegistryDefault2 = tmp4(8875);
+const AssetRegistryDefault2 = tmp4(8870);
 const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -68,9 +68,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
       const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(require("intl").t.op2cJ6);
       importDefault = stringResult1;
-      const GlobeEarthIcon = tmp(9104).GlobeEarthIcon;
+      const GlobeEarthIcon = tmp(9099).GlobeEarthIcon;
       _require = GlobeEarthIcon;
-      tmp9Result = tmp9(8875);
+      tmp9Result = tmp9(8870);
       tmp11 = stringResult1;
       tmp12 = GlobeEarthIcon;
     }
@@ -162,10 +162,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
   const intl = GlobeEarthIcon(1126).intl;
   importDefault = intl.string(GlobeEarthIcon(1126).t.TME4LJ);
   let tmp4Result = AssetRegistryDefault;
-  if (guildVisibility === GlobeEarthIcon(8868).GuildVisibility.PUBLIC) {
+  if (guildVisibility === GlobeEarthIcon(8863).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1126).intl;
     importDefault = intl2.string(tmp2(1126).t.op2cJ6);
-    GlobeEarthIcon = tmp2(9104).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(9099).GlobeEarthIcon;
     tmp4Result = AssetRegistryDefault2;
   }
   let obj = {

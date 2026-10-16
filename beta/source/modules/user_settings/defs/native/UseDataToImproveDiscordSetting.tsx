@@ -1,7 +1,7 @@
 // Module ID: 15133
 // Function ID: 15134
 // Name: UseDataToImproveDiscordSetting
-// Dependencies: [5932, 7993, 1085, 558, 15096, 5299, 1126, 5398, 15134, 15135, 576, 504, 10663, 2]
+// Dependencies: [5932, 7988, 1085, 558, 15096, 5299, 1126, 5398, 15134, 15135, 576, 504, 10663, 2]
 
 // Module 15133 (UseDataToImproveDiscordSetting)
 import react from "react" /* 576 */;
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import AlertDefault from "Alert" /* 5398 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import ConsentActionCreators from "ConsentActionCreators" /* 15134 */;
 import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15135 */;

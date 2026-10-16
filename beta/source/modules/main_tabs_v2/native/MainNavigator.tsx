@@ -1,7 +1,7 @@
 // Module ID: 16365
 // Function ID: 16366
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 16366, 1085, 21, 5092, 1382, 5068, 14287, 16367, 16368, 16432, 558, 576, 17503, 17510, 17542, 17564, 9344, 17628, 17631, 17635, 17637, 17666, 17672, 4985, 1501, 1629, 5107, 9298, 17673, 17733, 573, 10829, 4979, 6688, 17736, 9637, 11631, 17973, 18004, 11028, 17550, 2]
+// Dependencies: [32, 19, 17, 502, 16366, 1085, 21, 5092, 1382, 5068, 14287, 16367, 16368, 16432, 558, 576, 17503, 17510, 17542, 17564, 9339, 17628, 17631, 17635, 17637, 17666, 17672, 4985, 1501, 1629, 5107, 9293, 17673, 17733, 573, 10829, 4979, 6688, 17736, 9632, 11631, 17973, 18004, 11028, 17550, 2]
 // Exports: getChannelScreen
 
 // Module 16365 (MainNavigator)
@@ -38,7 +38,7 @@ let metroImportAll;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(9637);
+const getNavigationModalPresentationDefault = tmp2(9632);
 const AutoAnalytics = tmp(17503);
 function getId(params) {
   return params.params.screenKey;

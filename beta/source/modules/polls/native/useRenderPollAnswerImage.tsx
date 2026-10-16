@@ -1,7 +1,7 @@
 // Module ID: 11924
 // Function ID: 11925
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 7244, 7908, 1393, 21, 558, 576, 504, 11916, 6157, 4767, 1415, 6820, 2]
+// Dependencies: [32, 19, 17, 7239, 7903, 1393, 21, 558, 576, 504, 11916, 6157, 4767, 1415, 6820, 2]
 
 // Module 11924 (useRenderPollAnswerImage)
 import react_native from "react-native" /* 17 */;
@@ -11,10 +11,10 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import EmojiTypes from "EmojiTypes" /* 4767 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import DraftStore from "DraftStore" /* 7244 */;
+import DraftStore from "DraftStore" /* 7239 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

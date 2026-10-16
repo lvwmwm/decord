@@ -1,7 +1,7 @@
 // Module ID: 13550
 // Function ID: 13551
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5091, 2065, 2087, 4939, 1390, 10487, 5417, 5422, 1126, 7979, 7981, 587, 5419, 13551, 8243, 5909, 5418, 2]
+// Dependencies: [17, 5091, 2065, 2087, 4939, 1390, 10487, 5417, 5422, 1126, 7974, 7976, 587, 5419, 13551, 8238, 5909, 5418, 2]
 // Exports: default
 
 // Module 13550 (createMediaPostPreviewEmbedContent)
@@ -12,9 +12,9 @@ import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5418 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
 import LinkUtils from "LinkUtils" /* 5422 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8243 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7974 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7976 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8238 */;
 import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10487 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5091 */;

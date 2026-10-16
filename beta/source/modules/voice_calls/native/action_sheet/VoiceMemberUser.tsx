@@ -1,7 +1,7 @@
 // Module ID: 13602
 // Function ID: 13603
 // Name: VoiceMemberUser
-// Dependencies: [109, 19, 17, 1205, 502, 5758, 2065, 2125, 2012, 5108, 1085, 21, 5092, 587, 558, 576, 6039, 10907, 504, 4969, 13603, 13604, 1200, 13605, 13606, 13607, 13608, 10910, 5088, 1126, 8580, 7426, 11170, 4976, 7482, 5056, 7017, 6185, 5409, 7027, 4962, 2]
+// Dependencies: [109, 19, 17, 1205, 502, 5758, 2065, 2125, 2012, 5108, 1085, 21, 5092, 587, 558, 576, 6039, 10907, 504, 4969, 13603, 13604, 1200, 13605, 13606, 13607, 13608, 10910, 5088, 1126, 8575, 7421, 11170, 4976, 7477, 5056, 7017, 6185, 5409, 7027, 4962, 2]
 
 // Module 13602 (VoiceMemberUser)
 import nativeDefault from "native" /* 587 */;
@@ -15,8 +15,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import useIsSpeakingDefault from "useIsSpeaking" /* 6039 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7426 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7421 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10910 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 13605 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 13606 */;
@@ -740,11 +740,11 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     }
   }
   const obj13 = { disabled: flag4, label: closure_13(Label, obj16), subLabel: stringResult };
-  const FormRow = tmp8(8580).FormRow;
+  const FormRow = tmp8(8575).FormRow;
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(obj4);
   let tmp37 = name;
-  Label = tmp8(8580).FormRow.Label;
+  Label = tmp8(8575).FormRow.Label;
   if (stateFromStores1) {
     const obj14 = { children: items4 };
     items4 = [name, ];
@@ -920,7 +920,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     cResult[10] = tmp23;
     tmp17 = tmp23;
   }
-  const tmp16 = closure_13(tmp(8580).FormSubLabel, { text: tmp10, style: labelCallScreen });
+  const tmp16 = closure_13(tmp(8575).FormSubLabel, { text: tmp10, style: labelCallScreen });
   cResult[5] = tmp10;
   cResult[6] = labelCallScreen;
   cResult[7] = tmp16;
@@ -964,7 +964,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   const merged = Object.assign(user);
   obj4 = { text: formatResult, style: labelCallScreen };
   labelCallScreen = null;
-  FormSubLabel = tmp3(8580).FormSubLabel;
+  FormSubLabel = tmp3(8575).FormSubLabel;
   const tmp11 = closure_18;
   const tmp8 = closure_14;
   const tmp9 = closure_15;
@@ -1411,7 +1411,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const canRing = obj3.useCanRing(user);
   obj5 = { text: name, style: labelCallScreen };
   labelCallScreen = null;
-  Label = user(8580).FormRow.Label;
+  Label = user(8575).FormRow.Label;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
@@ -1423,7 +1423,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     tmp7Result = tmp7(stateFromStores ? closure_21 : closure_20, obj7);
   }
   const obj8 = {};
-  const FormRow = tmp2(8580).FormRow;
+  const FormRow = tmp2(8575).FormRow;
   const merged = Object.assign(obj4);
   return closure_13(FormRow, obj8);
 }));

@@ -1,15 +1,15 @@
 // Module ID: 17522
 // Function ID: 17523
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7347, 4760, 1390, 12424, 1085, 12402, 21, 5092, 587, 12400, 8497, 4808, 1126, 8694, 558, 576, 12404, 1382, 6852, 6879, 6738, 17523, 1265, 5396, 8304, 12, 4962, 573, 16481, 6858, 6180, 4815, 8218, 17524, 17525, 17527, 10226, 8724, 6154, 10223, 17528, 2]
+// Dependencies: [32, 5, 19, 17, 7342, 4760, 1390, 12424, 1085, 12402, 21, 5092, 587, 12400, 8492, 4808, 1126, 8689, 558, 576, 12404, 1382, 6852, 6879, 6738, 17523, 1265, 5396, 8299, 12, 4962, 573, 16481, 6858, 6180, 4815, 8213, 17524, 17525, 17527, 10226, 8719, 6154, 10223, 17528, 2]
 
 // Module 17522 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
@@ -20,7 +20,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
 import RelationshipStore_mod from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

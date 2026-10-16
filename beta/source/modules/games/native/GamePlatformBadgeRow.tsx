@@ -1,15 +1,15 @@
 // Module ID: 12098
 // Function ID: 12099
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 12099, 9097, 6642, 9212, 5092, 558, 576, 12100, 5377, 587, 2]
+// Dependencies: [19, 21, 12099, 9092, 6642, 9207, 5092, 558, 576, 12100, 5377, 587, 2]
 
 // Module 12098 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 6642 */;
-import ScreenIcon from "ScreenIcon" /* 9097 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import ScreenIcon from "ScreenIcon" /* 9092 */;
+import GameControllerIcon from "GameControllerIcon" /* 9207 */;
 import GamePlatformAvailability from "GamePlatformAvailability" /* 12099 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;

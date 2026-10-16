@@ -1,11 +1,11 @@
 // Module ID: 13167
 // Function ID: 13168
 // Name: useUserProfileVoiceActivity
-// Dependencies: [5108, 5113, 7427, 558, 576, 10238, 504, 2]
+// Dependencies: [5108, 5113, 7422, 558, 576, 10238, 504, 2]
 // Exports: isUserProfileVoiceActivityForChannel
 
 // Module 13167 (useUserProfileVoiceActivity)
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7427 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7422 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

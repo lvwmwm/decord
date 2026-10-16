@@ -1,12 +1,12 @@
 // Module ID: 13729
 // Function ID: 13730
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4775, 558, 576, 8086, 13726, 504, 2]
+// Dependencies: [4775, 558, 576, 8081, 13726, 504, 2]
 
 // Module 13729 (useReferralIncentiveEligibility)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8086 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8081 */;
 import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13726 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

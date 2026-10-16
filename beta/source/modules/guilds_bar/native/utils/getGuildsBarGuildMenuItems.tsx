@@ -1,7 +1,7 @@
 // Module ID: 16743
 // Function ID: 16744
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2087, 5966, 1085, 10445, 6770, 1126, 14188, 2000, 8773, 6809, 7092, 14135, 12085, 5056, 10463, 12086, 6804, 2]
+// Dependencies: [5, 2087, 5966, 1085, 10445, 6770, 1126, 14188, 2000, 8768, 6809, 7092, 14135, 12085, 5056, 10463, 12086, 6804, 2]
 // Exports: default
 
 // Module 16743 (getGuildsBarGuildMenuItems)

@@ -1,7 +1,7 @@
 // Module ID: 12317
 // Function ID: 12318
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5081, 21, 5092, 587, 558, 576, 6664, 12318, 4793, 504, 7980, 9410, 12320, 12322, 1200, 5088, 12324, 1126, 2]
+// Dependencies: [17, 5081, 21, 5092, 587, 558, 576, 6664, 12318, 4793, 504, 7975, 9405, 12320, 12322, 1200, 5088, 12324, 1126, 2]
 
 // Module 12317 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1126 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7980 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7975 */;
 import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12318 */;
 import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12324 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -101,7 +101,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     }
     const isRoleStyleAndRoleColorsEligibleForERC = obj8.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(9410).BoostGemIcon;
+      BoostGemSlashIcon = tmp(9405).BoostGemIcon;
     } else if ("expiring" === phase) {
       BoostGemSlashIcon = tmp(12320).BoostTier1Icon;
     } else {
@@ -234,7 +234,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     const tmpResult2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(9410).BoostGemIcon;
+      BoostGemSlashIcon = tmp(9405).BoostGemIcon;
     } else if ("expiring" === phase) {
       BoostGemSlashIcon = tmp(12320).BoostTier1Icon;
     } else {

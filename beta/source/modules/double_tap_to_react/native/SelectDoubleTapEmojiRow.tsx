@@ -1,7 +1,7 @@
 // Module ID: 12091
 // Function ID: 12092
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 5081, 6841, 1393, 21, 5092, 1382, 587, 558, 576, 504, 1415, 6820, 6185, 9431, 1497, 4768, 7987, 9427, 7901, 8961, 2]
+// Dependencies: [19, 17, 5081, 6841, 1393, 21, 5092, 1382, 587, 558, 576, 504, 1415, 6820, 6185, 9426, 1497, 4768, 7982, 9422, 7896, 8956, 2]
 
 // Module 12091 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import EmojiDefault from "Emoji" /* 6820 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7901 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7987 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9427 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7982 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9422 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
@@ -298,7 +298,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const onPressEmoji = selectedEmoji.onPressEmoji;
   const style = selectedEmoji.style;
   const tmp4 = closure_12();
-  let obj2 = selectedEmoji(9431);
+  let obj2 = selectedEmoji(9426);
   const frequentlyUsedReactionEmojis = obj2.useFrequentlyUsedReactionEmojis(undefined);
   const rounded = Math.floor(Math.min(onPressEmoji(1497)().width, ACTION_SHEET_MAX_WIDTH) / 60);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

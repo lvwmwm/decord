@@ -1,10 +1,10 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9524
+// Function ID: 9525
 // Name: PortalKeyboardModalContext
 // Dependencies: [19, 558, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 9529 (PortalKeyboardModalContext)
+// Module 9524 (PortalKeyboardModalContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

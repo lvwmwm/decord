@@ -1,7 +1,7 @@
 // Module ID: 10449
 // Function ID: 10450
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 4751, 4752, 2065, 1085, 21, 5092, 587, 558, 576, 504, 7004, 1497, 9383, 7179, 11, 5027, 9307, 10450, 6185, 1126, 6196, 5088, 8773, 5038, 10472, 2]
+// Dependencies: [32, 19, 17, 4751, 4752, 2065, 1085, 21, 5092, 587, 558, 576, 504, 7004, 1497, 9378, 7174, 11, 5027, 9302, 10450, 6185, 1126, 6196, 5088, 8768, 5038, 10472, 2]
 
 // Module 10449 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import flow_Client from "flow/Client" /* 5027 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
         }
       }
     }
-    const tmpResult8 = tmp(9307);
+    const tmpResult8 = tmp(9302);
     const gradientTop = tmpResult8.useGradientTop();
     if (cResult[20] === gradientTop) {
       class S {
@@ -269,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   }, items3);
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.actionBarContainer, ];
-  const obj5 = channel(9307);
+  const obj5 = channel(9302);
   items4[1] = obj5.useGradientTop();
   let tmp12 = null != firstMessage;
   if (tmp12) {
@@ -308,7 +308,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       obj10.accessibilityLabel = string(t["DjZ+6E"]);
       obj10.style = tmp.actionButton;
       obj10.onPress = handleFollow;
-      const items8 = [closure_10(channel(8773).BellIcon, { size: "xs" }), ];
+      const items8 = [closure_10(channel(8768).BellIcon, { size: "xs" }), ];
       const obj12 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default", children: intl2.string(channel(1126).t["0rQinA"]) };
       const Text = tmp2(5088).Text;
       intl2 = tmp2(1126).intl;

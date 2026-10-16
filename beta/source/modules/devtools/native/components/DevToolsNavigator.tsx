@@ -1,7 +1,7 @@
 // Module ID: 14831
 // Function ID: 14832
 // Name: DevToolsNavigator
-// Dependencies: [32, 109, 19, 17, 21, 9345, 558, 576, 6688, 14832, 9298, 16121, 11443, 5088, 587, 15884, 14969, 5056, 5934, 4984, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9340, 558, 576, 6688, 14832, 9293, 16121, 11443, 5088, 587, 15884, 14969, 5056, 5934, 4984, 2]
 // Exports: navigateToDevTools
 
 // Module 14831 (DevToolsNavigator)
@@ -9,14 +9,14 @@ import react_native from "react-native" /* 17 */;
 import Types from "Types" /* 4984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
 import SettingHookHarnessDefault from "SettingHookHarness" /* 14832 */;
 import DevToolsContentDefault from "DevToolsContent" /* 16121 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

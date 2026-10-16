@@ -1,7 +1,7 @@
 // Module ID: 18577
 // Function ID: 18578
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 2065, 6801, 4750, 1085, 5967, 21, 5092, 587, 5906, 558, 576, 5421, 5056, 16565, 6157, 18516, 504, 6899, 5088, 1126, 6739, 6185, 5934, 8579, 2000, 8601, 8606, 1200, 13899, 6307, 2]
+// Dependencies: [32, 19, 17, 2065, 6801, 4750, 1085, 5967, 21, 5092, 587, 5906, 558, 576, 5421, 5056, 16565, 6157, 18516, 504, 6899, 5088, 1126, 6739, 6185, 5934, 8574, 2000, 8596, 8601, 1200, 13899, 6307, 2]
 // Exports: default
 
 // Module 18577 (ChannelSelectorActionSheet)
@@ -11,8 +11,8 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8601 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8606 */;
+import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8596 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8601 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -259,7 +259,7 @@ export default function ChannelSelectorActionSheet(guildId) {
             }
           };
           ModalActionCreatorsDefault;
-          const tmp3 = asyncRequire(8579, dependencyMap.paths);
+          const tmp3 = asyncRequire(8574, dependencyMap.paths);
           pushLazy(tmp3, obj2, CreateChannelModalActionCreatorsDefault.CREATE_CHANNEL_MODAL_KEY);
         },
       children: items3

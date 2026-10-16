@@ -1,7 +1,7 @@
 // Module ID: 11887
 // Function ID: 11888
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 109, 19, 6818, 2120, 2119, 1085, 21, 558, 576, 8622, 11888, 504, 6819, 5088, 8217, 6180, 6095, 5056, 11853, 11855, 2]
+// Dependencies: [32, 109, 19, 6818, 2120, 2119, 1085, 21, 558, 576, 8617, 11888, 504, 6819, 5088, 8212, 6180, 6095, 5056, 11853, 11855, 2]
 
 // Module 11887 (AppLauncherRoleListActionSheet)
 import react2 from "react" /* 576 */;
@@ -26,7 +26,7 @@ let _require;
 let closure_12;
 let map1;
 let tmp;
-const ShieldUserIcon2 = tmp(8622);
+const ShieldUserIcon2 = tmp(8617);
 let closure_4 = ["guildRole", "guildId"];
 let react = react_mod;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
     if (null != stateFromStores) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
       const Text = tmp2(5088).Text;
-      items2 = [closure_12(tmp2(8217).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+      items2 = [closure_12(tmp2(8212).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
       tmp8 = closure_13(Text, obj4);
     }
   }

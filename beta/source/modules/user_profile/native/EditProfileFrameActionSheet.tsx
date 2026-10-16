@@ -1,7 +1,7 @@
 // Module ID: 14891
 // Function ID: 14892
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7280, 7271, 1085, 21, 5092, 587, 558, 576, 8311, 8295, 6852, 6879, 1265, 8289, 8296, 1126, 5088, 8297, 6840, 10090, 504, 14892, 8291, 8312, 14893, 13478, 13479, 8298, 10627, 5391, 2]
+// Dependencies: [32, 19, 17, 7275, 7266, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8284, 8291, 1126, 5088, 8292, 6840, 10090, 504, 14892, 8286, 8307, 14893, 13478, 13479, 8293, 10627, 5391, 2]
 
 // Module 14891 (EditProfileFrameActionSheet)
 import react2 from "react" /* 576 */;
@@ -10,17 +10,17 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7271 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
-import useShopProductItems from "useShopProductItems" /* 8296 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7266 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
+import useShopProductItems from "useShopProductItems" /* 8291 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
 import EditProfileFrameSection from "EditProfileFrameSection" /* 14893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -64,13 +64,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileF
   ({ user, currentProfileFrame, guildId } = arg0);
   const tmp4 = closure_12();
   let str = user.id;
-  const tmp6 = selectedProfileFrame(8311);
+  const tmp6 = selectedProfileFrame(8306);
   if (str == null) {
     str = "";
   }
   const tmp6Result = tmp6(str);
   [selectedProfileFrame, tmp9] = react.useState(currentProfileFrame);
-  const tmpResult = tmp(8295);
+  const tmpResult = tmp(8290);
   const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
   const tmp5Result = selectedProfileFrame(6852);
   const analyticsLocations = tmp5Result(tmp5(6879).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
@@ -881,7 +881,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8298)(previewSkuId);
+  const tmp2 = purchase(8293)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;

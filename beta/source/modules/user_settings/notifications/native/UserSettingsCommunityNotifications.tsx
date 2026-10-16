@@ -1,7 +1,7 @@
 // Module ID: 15820
 // Function ID: 15821
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10694, 21, 5092, 558, 576, 504, 11, 8580, 5377, 6265, 6896, 1126, 2046, 2]
+// Dependencies: [19, 10694, 21, 5092, 558, 576, 504, 11, 8575, 5377, 6265, 6896, 1126, 2046, 2]
 
 // Module 15820 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp20;
   if (0 !== keys.length) {
     let tmp21;
-    const Form = tmp(8580).Form;
+    const Form = tmp(8575).Form;
     const Stack = tmp(5377).Stack;
     const container = tmp4.container;
     if (cResult[10] !== stateFromStores) {
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8580).Form;
+    const Form = tmp2(8575).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,

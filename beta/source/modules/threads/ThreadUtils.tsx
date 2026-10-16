@@ -1,18 +1,18 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7918
+// Function ID: 7919
 // Name: ThreadUtils
-// Dependencies: [109, 6035, 5966, 4752, 1125, 1085, 1126, 7221, 5107, 1265, 7912, 6804, 1403, 558, 576, 504, 11, 4702, 2]
+// Dependencies: [109, 6035, 5966, 4752, 1125, 1085, 1126, 7216, 5107, 1265, 7907, 6804, 1403, 558, 576, 504, 11, 4702, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 7923 (ThreadUtils)
+// Module 7918 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import getTimestampStringDefault from "getTimestampString" /* 7221 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7912 */;
+import getTimestampStringDefault from "getTimestampString" /* 7216 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7907 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

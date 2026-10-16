@@ -1,10 +1,10 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9293
+// Function ID: 9294
 // Name: HeaderShared
-// Dependencies: [109, 19, 17, 9299, 21, 5092, 587, 5088, 558, 576, 4818, 6202, 6210, 9300, 1382, 9305, 1631, 1504, 9307, 6667, 568, 9310, 12854, 1200, 6185, 2]
+// Dependencies: [109, 19, 17, 9294, 21, 5092, 587, 5088, 558, 576, 4818, 6202, 6210, 9295, 1382, 9300, 1631, 1504, 9302, 6667, 568, 9305, 12854, 1200, 6185, 2]
 // Exports: getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9298 (HeaderShared)
+// Module 9293 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import useToken2 from "useToken" /* 4818 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import react_native from "react-native" /* 9299 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9305 */;
-import ChannelActionsDefault from "ChannelActions" /* 9310 */;
+import react_native from "react-native" /* 9294 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9300 */;
+import ChannelActionsDefault from "ChannelActions" /* 9305 */;
 import ChannelHeaderDefault from "ChannelHeader" /* 12854 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = navigation(1504);
   const text = tmpResult.useTheme().colors.text;
-  const tmpResult2 = navigation(9307);
+  const tmpResult2 = navigation(9302);
   const gradientTop = tmpResult2.useGradientTop();
   const sum = num + MIN_HEADER_HEIGHT;
   if (cResult[0] === num) {

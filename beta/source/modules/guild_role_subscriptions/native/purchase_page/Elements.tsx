@@ -1,14 +1,14 @@
 // Module ID: 17008
 // Function ID: 17009
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4774, 21, 5092, 587, 558, 576, 5088, 1126, 1200, 17009, 6185, 9399, 15520, 573, 9402, 6940, 2]
+// Dependencies: [32, 109, 19, 17, 4774, 21, 5092, 587, 558, 576, 5088, 1126, 1200, 17009, 6185, 9394, 15520, 573, 9397, 6940, 2]
 
 // Module 17008 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import Pressables from "Pressables" /* 6185 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9399 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9394 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -35,7 +35,7 @@ let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1126);
 const Text_Text = tmp(5088);
-const useStoreFrontPriceDefault = tmp4(9402);
+const useStoreFrontPriceDefault = tmp4(9397);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);

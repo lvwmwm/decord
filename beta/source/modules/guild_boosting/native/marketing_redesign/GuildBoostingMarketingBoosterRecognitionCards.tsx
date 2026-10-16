@@ -1,16 +1,16 @@
 // Module ID: 13889
 // Function ID: 13890
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 13890, 9410, 13891, 13815, 13892, 8622, 13893, 8978, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 13890, 9405, 13891, 13815, 13892, 8617, 13893, 8973, 2]
 
 // Module 13889 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
-import HeartIcon from "HeartIcon" /* 8978 */;
-import BoostGemIcon from "BoostGemIcon" /* 9410 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import HeartIcon from "HeartIcon" /* 8973 */;
+import BoostGemIcon from "BoostGemIcon" /* 9405 */;
 import BoostTier3Icon from "BoostTier3Icon" /* 13815 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13890 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 13891 */;

@@ -1,7 +1,7 @@
 // Module ID: 18605
 // Function ID: 18606
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6663, 5088, 5056, 18606, 2000, 18610, 1200, 18609, 1126, 6848, 1503, 15520, 18611, 1265, 5107, 15526, 18607, 9561, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6663, 5088, 5056, 18606, 2000, 18610, 1200, 18609, 1126, 6848, 1503, 15520, 18611, 1265, 5107, 15526, 18607, 9556, 2]
 
 // Module 18605 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import react2 from "react" /* 576 */;

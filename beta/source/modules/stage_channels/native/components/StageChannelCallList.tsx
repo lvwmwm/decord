@@ -1,7 +1,7 @@
 // Module ID: 11157
 // Function ID: 11158
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 11158, 5892, 21, 1200, 11159, 5950, 558, 576, 5396, 5956, 38, 11166, 1126, 10723, 11167, 11181, 6761, 11185, 1497, 8327, 2]
+// Dependencies: [32, 19, 11158, 5892, 21, 1200, 11159, 5950, 558, 576, 5396, 5956, 38, 11166, 1126, 10723, 11167, 11181, 6761, 11185, 1497, 8322, 2]
 
 // Module 11157 (StageChannelCallList)
 import _modDef38 from "module_38" /* 38 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1200 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8322 */;
 import SpeakerTile from "SpeakerTile" /* 11159 */;
 import StageSectionHeaderDefault from "StageSectionHeader" /* 11166 */;
 import StageGridRowDefault from "StageGridRow" /* 11167 */;
@@ -834,7 +834,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChann
   let obj = width(11185);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1497)().width;
-  const obj2 = width(8327);
+  const obj2 = width(8322);
   isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = react.useMemo(() => {

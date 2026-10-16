@@ -1,7 +1,7 @@
 // Module ID: 15389
 // Function ID: 15390
 // Name: QuestDisclosureModal
-// Dependencies: [21, 558, 576, 15388, 7089, 7729, 1126, 6201, 15390, 6688, 2]
+// Dependencies: [21, 558, 576, 15388, 7089, 7724, 1126, 6201, 15390, 6688, 2]
 
 // Module 15389 (QuestDisclosureModal)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import intl2 from "intl" /* 1126 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
 import Navigator2 from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
 import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15388 */;
 import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 15390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

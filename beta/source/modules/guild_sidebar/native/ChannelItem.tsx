@@ -1,7 +1,7 @@
 // Module ID: 16565
 // Function ID: 16566
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5108, 4760, 1390, 1085, 2072, 5967, 21, 5092, 587, 5969, 12087, 558, 576, 1415, 6157, 16566, 8203, 8159, 504, 1200, 5413, 1112, 16567, 5421, 2]
+// Dependencies: [109, 19, 17, 5108, 4760, 1390, 1085, 2072, 5967, 21, 5092, 587, 5969, 12087, 558, 576, 1415, 6157, 16566, 8198, 8154, 504, 1200, 5413, 1112, 16567, 5421, 2]
 
 // Module 16565 (ChannelItem)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import LegacyTokens from "LegacyTokens" /* 5969 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8203 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8198 */;
 import BaseChannelItem from "BaseChannelItem" /* 12087 */;
 import AssetRegistryDefault from "AssetRegistry" /* 16566 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -159,7 +159,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     if (tmp5) {
       tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(8203).BookCheckIcon;
+      BookCheckIcon = tmp(8198).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {

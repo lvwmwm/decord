@@ -1,7 +1,7 @@
 // Module ID: 15471
 // Function ID: 15472
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 5972, 15370, 21, 5092, 587, 5378, 558, 576, 15371, 1383, 4818, 15461, 4850, 6185, 5088, 1126, 12793, 15472, 15438, 6762, 15474, 9242, 2]
+// Dependencies: [32, 19, 17, 5972, 15370, 21, 5092, 587, 5378, 558, 576, 15371, 1383, 4818, 15461, 4850, 6185, 5088, 1126, 12793, 15472, 15438, 6762, 15474, 9237, 2]
 
 // Module 15471 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 587 */;
@@ -387,7 +387,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                       const _Symbol2 = Symbol;
                                       if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
                                         const obj9 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE };
-                                        const MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
+                                        const MoreHorizontalIcon = tmp(9237).MoreHorizontalIcon;
                                         const tmp69 = closure_12(MoreHorizontalIcon, obj9);
                                         cResult[45] = tmp69;
                                         tmp67 = tmp69;
@@ -926,7 +926,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const PressableOpacity2 = tmp(6185).PressableOpacity;
     intl3 = tmp(1126).intl;
     obj32 = { color: questDockWrapperSpecs(587).colors.INTERACTIVE_TEXT_ACTIVE };
-    MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
+    MoreHorizontalIcon = tmp(9237).MoreHorizontalIcon;
     items12[1] = tmp23(PressableOpacity2, obj31);
     items8[1] = tmp23(tmp7Result5, obj28);
     items4[2] = closure_14(tmp33, obj25);

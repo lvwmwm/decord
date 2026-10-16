@@ -1,7 +1,7 @@
 // Module ID: 15825
 // Function ID: 15826
 // Name: AppIcon
-// Dependencies: [19, 17, 9469, 21, 5092, 587, 558, 576, 5031, 4969, 6157, 2]
+// Dependencies: [19, 17, 9464, 21, 5092, 587, 558, 576, 5031, 4969, 6157, 2]
 
 // Module 15825 (AppIcon)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import AppIconConstants from "AppIconConstants" /* 9469 */;
+import AppIconConstants from "AppIconConstants" /* 9464 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

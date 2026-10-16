@@ -1,7 +1,7 @@
 // Module ID: 5080
 // Function ID: 5081
 // Name: MarkupReactRules
-// Dependencies: [109, 19, 17, 5081, 2065, 2119, 1085, 2072, 1096, 21, 5087, 558, 576, 5088, 5092, 587, 5103, 5422, 4977, 5934, 8304, 5299, 1126, 6886, 4808, 6159, 1200, 1384, 8491, 4806, 9619, 9674, 8128, 504, 4967, 7980, 5056, 10745, 2000, 11, 2041, 6157, 10714, 14062, 14064, 5038, 10697, 14066, 10619, 5400, 11767, 5402, 1382, 8159, 14067, 11769, 2]
+// Dependencies: [109, 19, 17, 5081, 2065, 2119, 1085, 2072, 1096, 21, 5087, 558, 576, 5088, 5092, 587, 5103, 5422, 4977, 5934, 8299, 5299, 1126, 6886, 4808, 6159, 1200, 1384, 8486, 4806, 9614, 9669, 8123, 504, 4967, 7975, 5056, 10745, 2000, 11, 2041, 6157, 10714, 14062, 14064, 5038, 10697, 14066, 10619, 5400, 11767, 5402, 1382, 8154, 14067, 11769, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5080 (MarkupReactRules)
@@ -25,8 +25,8 @@ import LinkUtils from "LinkUtils" /* 5422 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9674 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9669 */;
 import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 10619 */;
 import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 10697 */;
 import SpoilerDefault from "Spoiler" /* 11767 */;
@@ -61,7 +61,7 @@ let obj9;
 let tmp;
 const get_initialized = tmp(504);
 const Text_Text = tmp(5088);
-const MarkupRulesUtils = tmp(8128);
+const MarkupRulesUtils = tmp(8123);
 function MarkupMention(styles) {
   let backgroundColor;
   let items2;
@@ -393,8 +393,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       }
     }
     let obj2 = { inLink: true };
-    const smartOutput = tmp(8128).smartOutput;
-    tmp(8128);
+    const smartOutput = tmp(8123).smartOutput;
+    tmp(8123);
     const merged = Object.assign(state);
     cResult[7] = node;
     cResult[8] = output;
@@ -516,8 +516,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     link = tmp.link;
   }
   obj2 = { inLink: true };
-  smartOutput = tmp3(8128).smartOutput;
-  node(8128);
+  smartOutput = tmp3(8123).smartOutput;
+  node(8123);
   const merged = Object.assign(state);
   return tmp2(Text, obj, state.key);
 });
@@ -666,7 +666,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           tmp11 = tmp14;
         }
       }
-      const tmpResult = tmp(8128);
+      const tmpResult = tmp(8123);
       const smartOutputResult = tmpResult.smartOutput(node, output, state);
       cResult[6] = node;
       cResult[7] = output;
@@ -748,7 +748,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       }
     };
   }
-  obj3 = node(8128);
+  obj3 = node(8123);
   return tmp4(tmp5, obj2, state.key);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1180,7 +1180,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           tmp16 = tmp18;
         }
       }
-      const tmpResult = state(8128);
+      const tmpResult = state(8123);
       const smartOutputResult = tmpResult.smartOutput(node, output, state);
       cResult[6] = node;
       cResult[7] = output;
@@ -1244,7 +1244,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     tmp7Result = tmp7(ThemedIcon, obj2);
   }
   items[1] = tmp7Result;
-  const tmp3Result = tmp3(8128);
+  const tmp3Result = tmp3(8123);
   items[2] = tmp3Result.smartOutput(node, output, state);
   const tmp2Result = tmp2(Text, obj, state.key);
   let tmp13Result = tmp2Result;
@@ -1540,7 +1540,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
         tmp19 = tmp22;
       }
     }
-    const tmpResult = tmp(8128);
+    const tmpResult = tmp(8123);
     const smartOutputResult = tmpResult.smartOutput(node, output, state);
     cResult[3] = node;
     cResult[4] = output;
@@ -1598,7 +1598,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       str3 = str4;
     }
     items = [closure_14(closure_8, obj2), ];
-    const tmp2Result = state(8128);
+    const tmp2Result = state(8123);
     items[1] = tmp2Result.smartOutput(node, output, state);
     const tmp5Result = tmp5(Text, obj, state.key);
     if (state.disablePressableChannelMention) {
@@ -1799,7 +1799,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       tmp13 = tmp15;
     }
   }
-  const tmpResult = state(8128);
+  const tmpResult = state(8123);
   const smartOutputResult = tmpResult.smartOutput(node, output, state);
   cResult[1] = node;
   cResult[2] = output;
@@ -1841,7 +1841,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     SMALL = tmp3(1200).Icon.Sizes.SMALL;
   }
   items = [tmp5(ThemedIcon, obj2), ];
-  const tmp3Result = state(8128);
+  const tmp3Result = state(8123);
   items[1] = tmp3Result.smartOutput(node, output, state);
   const tmp2Result = tmp2(Text, obj, state.key);
   let tmp5Result = tmp2Result;

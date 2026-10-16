@@ -1,7 +1,7 @@
 // Module ID: 13464
 // Function ID: 13465
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 9398, 9045, 12706, 1382, 4782, 5056, 8301, 13465, 10176, 10163, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 9393, 9040, 12706, 1382, 4782, 5056, 8296, 13465, 10176, 10163, 2]
 
 // Module 13464 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
@@ -11,8 +11,8 @@ import Constants2 from "Constants" /* 1096 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
-import ACOMExperiments from "ACOMExperiments" /* 9398 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
+import ACOMExperiments from "ACOMExperiments" /* 9393 */;
 import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 12706 */;
 import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13465 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeadlessCollecti
   } else {
     first = cResult[0];
   }
-  const OTPACOMOrderExperiment = tmp(9398).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp(9393).OTPACOMOrderExperiment;
   const enabled = OTPACOMOrderExperiment.useConfig(first).enabled;
   const tmpResult = useProductPurchaseState;
   const isPurchased = tmpResult.useProductPurchaseState(product).isPurchased;

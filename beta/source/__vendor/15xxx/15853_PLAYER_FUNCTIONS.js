@@ -1,15 +1,15 @@
 // Module ID: 15853
 // Function ID: 15854
 // Name: PLAYER_FUNCTIONS
-// Dependencies: [8406, 15854, 15849]
+// Dependencies: [8401, 15854, 15849]
 // Exports: MAIN_SCRIPT
 
 // Module 15853 (PLAYER_FUNCTIONS)
 import PLAY_MODE from "PLAY_MODE" /* 15849 */;
 import _defineProperty2 from "_defineProperty" /* 15854 */;
-import module_8406 from "module_8406" /* 8406 */;
+import module_8401 from "module_8401" /* 8401 */;
 
-const _defineProperty = module_8406(_defineProperty2);
+const _defineProperty = module_8401(_defineProperty2);
 let obj = {
   muteVideo: "player.mute(); true;",
   unMuteVideo: "player.unMute(); true;",

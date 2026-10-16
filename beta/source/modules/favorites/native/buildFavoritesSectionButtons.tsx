@@ -1,7 +1,7 @@
 // Module ID: 10330
 // Function ID: 10331
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10312, 2000, 5056, 10317, 10316, 1126, 3442, 9036, 9553, 9551, 1200, 2]
+// Dependencies: [5, 21, 10312, 2000, 5056, 10317, 10316, 1126, 3442, 9031, 9548, 9546, 1200, 2]
 // Exports: default
 
 // Module 10330 (buildFavoritesSectionButtons)
@@ -11,9 +11,9 @@ import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef3442 from "module_3442" /* 3442 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9551 */;
-import StarIcon from "StarIcon" /* 9553 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9546 */;
+import StarIcon from "StarIcon" /* 9548 */;
 import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10316 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

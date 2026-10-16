@@ -1,7 +1,7 @@
 // Module ID: 17959
 // Function ID: 17960
 // Name: useControllerPIPState
-// Dependencies: [32, 19, 2064, 6036, 10807, 2065, 5947, 11972, 6067, 10802, 558, 576, 17781, 4739, 8513, 504, 9580, 4850, 17897, 17960, 550, 17961, 17796, 17962, 2]
+// Dependencies: [32, 19, 2064, 6036, 10807, 2065, 5947, 11972, 6067, 10802, 558, 576, 17781, 4739, 8508, 504, 9575, 4850, 17897, 17960, 550, 17961, 17796, 17962, 2]
 // Exports: useControllerPIPState
 
 // Module 17959 (useControllerPIPState)
@@ -85,7 +85,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
       const activityPanelMode = obj3.getActivityPanelMode();
       const tmp14 = require;
       if (result) {
-        const tmp14Result = tmp14(8513);
+        const tmp14Result = tmp14(8508);
         result = tmp14Result.isActivityInTextSupportedForChannel(channel1);
       }
       if (result) {
@@ -149,7 +149,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
       const activityPanelMode = obj3.getActivityPanelMode();
       const tmp14 = require;
       if (result) {
-        const tmp14Result = tmp14(8513);
+        const tmp14Result = tmp14(8508);
         result = tmp14Result.isActivityInTextSupportedForChannel(channel1);
       }
       if (result) {

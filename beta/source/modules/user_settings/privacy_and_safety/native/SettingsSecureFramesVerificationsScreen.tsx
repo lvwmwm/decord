@@ -1,7 +1,7 @@
 // Module ID: 16264
 // Function ID: 16265
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1390, 21, 5092, 558, 576, 8829, 1126, 6208, 6185, 6180, 5088, 6683, 1503, 504, 4962, 9298, 16260, 8625, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 558, 576, 8824, 1126, 6208, 6185, 6180, 5088, 6683, 1503, 504, 4962, 9293, 16260, 8620, 2]
 
 // Module 16264 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8829 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8824 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -45,7 +45,7 @@ function VerificationListItem(verification) {
         tmp12 = cResult[2];
       }
       if (cResult[3] !== verification2.timestamp) {
-        const tmp9Result = userId(8829);
+        const tmp9Result = userId(8824);
         const secureFramesUserVerifiedTimestamp = tmp9Result.getSecureFramesUserVerifiedTimestamp(verification2.timestamp);
         cResult[3] = verification2.timestamp;
         cResult[4] = secureFramesUserVerifiedTimestamp;
@@ -370,7 +370,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
                 }
               }
             }
-            const tmp32 = jsx(userId(8625).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
+            const tmp32 = jsx(userId(8620).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
             cResult[22] = tmp15;
             cResult[23] = tmp4.listContent;
             cResult[24] = tmp24;
@@ -508,7 +508,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
       navigation.pop();
     }
   }, items2);
-  const FlashList = userId(8625).FlashList;
+  const FlashList = userId(8620).FlashList;
   return <View style={tmp.list}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");

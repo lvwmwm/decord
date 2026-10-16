@@ -1,13 +1,13 @@
 // Module ID: 16705
 // Function ID: 16706
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12210, 4748, 2087, 1390, 7257, 1085, 2062, 558, 576, 573, 6853, 6855, 16706, 2049, 7100, 4938, 16620, 16707, 2]
+// Dependencies: [32, 19, 12210, 4748, 2087, 1390, 7252, 1085, 2062, 558, 576, 573, 6853, 6855, 16706, 2049, 7100, 4938, 16620, 16707, 2]
 
 // Module 16705 (useChannelNoticeRows)
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7252 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildProgressStore from "GuildProgressStore" /* 12210 */;

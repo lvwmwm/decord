@@ -1,7 +1,7 @@
 // Module ID: 14126
 // Function ID: 14127
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 2065, 14073, 21, 3, 5934, 558, 576, 8483, 504, 7015, 1106, 14127, 2]
+// Dependencies: [5, 32, 19, 2065, 14073, 21, 3, 5934, 558, 576, 8478, 504, 7015, 1106, 14127, 2]
 
 // Module 14126 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;

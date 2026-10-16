@@ -1,7 +1,7 @@
 // Module ID: 5757
 // Function ID: 5758
 // Name: GatewayConnectionStore
-// Dependencies: [5, 1244, 502, 5758, 2065, 2012, 5110, 5211, 2116, 5759, 7429, 1085, 1095, 13928, 13971, 3, 510, 14053, 5889, 1382, 6071, 13963, 12, 5900, 13942, 504, 584, 2]
+// Dependencies: [5, 1244, 502, 5758, 2065, 2012, 5110, 5211, 2116, 5759, 7424, 1085, 1095, 13928, 13971, 3, 510, 14053, 5889, 1382, 6071, 13963, 12, 5900, 13942, 504, 584, 2]
 
 // Module 5757 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -25,7 +25,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import RTCRegionStore from "RTCRegionStore" /* 5211 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

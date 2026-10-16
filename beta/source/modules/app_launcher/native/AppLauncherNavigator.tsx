@@ -1,7 +1,7 @@
 // Module ID: 11756
 // Function ID: 11757
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1502, 1085, 21, 9345, 5092, 587, 558, 576, 6852, 6879, 1504, 5375, 4987, 1629, 6688, 5107, 11757, 11815, 11841, 11903, 10622, 2]
+// Dependencies: [109, 19, 1502, 1085, 21, 9340, 5092, 587, 558, 576, 6852, 6879, 1504, 5375, 4987, 1629, 6688, 5107, 11757, 11815, 11841, 11903, 10622, 2]
 
 // Module 11756 (AppLauncherNavigator)
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11903 
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

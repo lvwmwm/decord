@@ -1,9 +1,9 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8539
+// Function ID: 8540
 // Name: TwinButtons
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5386, 5379, 2]
 
-// Module 8544 (TwinButtons)
+// Module 8539 (TwinButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

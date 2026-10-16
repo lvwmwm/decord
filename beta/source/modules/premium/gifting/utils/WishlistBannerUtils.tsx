@@ -1,7 +1,7 @@
 // Module ID: 10155
 // Function ID: 10156
 // Name: WishlistBannerUtils
-// Dependencies: [19, 1126, 8980, 6931, 558, 576, 2]
+// Dependencies: [19, 1126, 8975, 6931, 558, 576, 2]
 // Exports: getBannerMode
 
 // Module 10155 (WishlistBannerUtils)

@@ -1,7 +1,7 @@
 // Module ID: 16380
 // Function ID: 16381
 // Name: RegisterIdentity
-// Dependencies: [5, 32, 19, 17, 16371, 16372, 21, 5092, 5386, 6626, 1503, 16381, 1105, 16368, 16387, 16388, 16370, 5396, 6645, 6654, 16389, 5379, 1126, 6622, 6729, 558, 576, 16390, 16391, 8530, 8779, 2]
+// Dependencies: [5, 32, 19, 17, 16371, 16372, 21, 5092, 5386, 6626, 1503, 16381, 1105, 16368, 16387, 16388, 16370, 5396, 6645, 6654, 16389, 5379, 1126, 6622, 6729, 558, 576, 16390, 16391, 8525, 8774, 2]
 
 // Module 16380 (RegisterIdentity)
 import intl3 from "intl" /* 1126 */;
@@ -453,7 +453,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterId
     metroImportAll();
     closure_2(memo[arg0].mode);
   }, items1);
-  const tmpResult = hasItem(8530);
+  const tmpResult = hasItem(8525);
   let obj3 = {
     pageWidth: 0,
     defaultIndex: 0,
@@ -482,7 +482,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterId
     controlComponent: closure_14(closure_6, obj5),
     headerText: intl.string(hasItem(1126).t.WEdDgv)
   };
-  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(8779).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
+  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(8774).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
   intl = tmp(1126).intl;
   return closure_14(RegisterIdentityBase, obj4);
 });

@@ -1,7 +1,7 @@
 // Module ID: 12120
 // Function ID: 12121
 // Name: ApplicationCommandManager
-// Dependencies: [32, 7244, 7922, 1085, 5404, 1627, 11668, 11667, 7920, 7243, 9808, 7247, 9803, 1998, 9263, 4987, 1629, 11843, 12, 11705, 11670, 5076, 11845, 11669, 5057, 5107, 9716, 2]
+// Dependencies: [32, 7239, 7917, 1085, 5404, 1627, 11668, 11667, 7915, 7238, 9803, 7242, 9798, 1998, 9258, 4987, 1629, 11843, 12, 11705, 11670, 5076, 11845, 11669, 5057, 5107, 9711, 2]
 
 // Module 12120 (ApplicationCommandManager)
 import _modDef12 from "module_12" /* 12 */;
@@ -9,20 +9,20 @@ import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Server from "Server" /* 1998 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import ApplicationCommandActionCreators from "ApplicationCommandActionCreators" /* 7920 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9716 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 9803 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9808 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import ApplicationCommandActionCreators from "ApplicationCommandActionCreators" /* 7915 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9711 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 9798 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9803 */;
 import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11667 */;
 import ChatInputParser from "ChatInputParser" /* 11668 */;
 import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11669 */;
 import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7922 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7917 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
 import size from "module_2" /* 2 */;

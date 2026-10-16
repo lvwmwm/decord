@@ -1,7 +1,7 @@
 // Module ID: 15460
 // Function ID: 15461
 // Name: QuestDock
-// Dependencies: [5, 32, 109, 19, 17, 15368, 5972, 15370, 1085, 1096, 21, 5092, 587, 558, 576, 1382, 15400, 15367, 15371, 15374, 5362, 4850, 8395, 1631, 15375, 4818, 15461, 5378, 15369, 5382, 1126, 6762, 15462, 15463, 15464, 15465, 5359, 5363, 5975, 9171, 15466, 5729, 5734, 5979, 7416, 15459, 504, 9166, 9172, 4827, 15366, 1265, 15467, 15468, 15475, 15476, 15478, 12983, 15481, 15482, 15488, 15491, 15493, 15494, 6627, 15496, 2]
+// Dependencies: [5, 32, 109, 19, 17, 15368, 5972, 15370, 1085, 1096, 21, 5092, 587, 558, 576, 1382, 15400, 15367, 15371, 15374, 5362, 4850, 8390, 1631, 15375, 4818, 15461, 5378, 15369, 5382, 1126, 6762, 15462, 15463, 15464, 15465, 5359, 5363, 5975, 9166, 15466, 5729, 5734, 5979, 7411, 15459, 504, 9161, 9167, 4827, 15366, 1265, 15467, 15468, 15475, 15476, 15478, 12983, 15481, 15482, 15488, 15491, 15493, 15494, 6627, 15496, 2]
 
 // Module 15460 (QuestDock)
 import react2 from "react" /* 576 */;
@@ -18,9 +18,9 @@ import MetricEvents from "MetricEvents" /* 5734 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
-import QuestActionCreators from "QuestActionCreators" /* 9172 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
+import QuestActionCreators from "QuestActionCreators" /* 9167 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
 import QuestHooks from "QuestHooks" /* 15366 */;
 import QuestDockUtils from "QuestDockUtils" /* 15369 */;
@@ -1809,7 +1809,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
   const cResult = obj.c(27);
   const tmp = quest;
   quest = quest.quest;
-  let obj2 = quest(9171);
+  let obj2 = quest(9166);
   const questBarImpressionSurvey = obj2.useQuestBarImpressionSurvey(quest);
   const obj3 = quest(15367);
   const questDockAppThemedBackgroundColor = obj3.useQuestDockAppThemedBackgroundColor();
@@ -1936,7 +1936,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
   let tmp7Result;
   let tmp8;
   quest = quest.quest;
-  let obj = quest(9171);
+  let obj = quest(9166);
   const onImpression = obj.useQuestBarImpressionSurvey(quest);
   let obj2 = quest(15367);
   const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();

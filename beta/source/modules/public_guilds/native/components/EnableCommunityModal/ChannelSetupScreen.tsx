@@ -1,7 +1,7 @@
 // Module ID: 18477
 // Function ID: 18478
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8639, 2065, 4748, 4760, 1390, 8065, 1085, 21, 4818, 587, 18466, 504, 5421, 1126, 18467, 5056, 8554, 2000, 8638, 18464, 5088, 6157, 5377, 6265, 6180, 2]
+// Dependencies: [19, 17, 8634, 2065, 4748, 4760, 1390, 8060, 1085, 21, 4818, 587, 18466, 504, 5421, 1126, 18467, 5056, 8549, 2000, 8633, 18464, 5088, 6157, 5377, 6265, 6180, 2]
 // Exports: default
 
 // Module 18477 (ChannelSetupScreen)
@@ -11,9 +11,9 @@ import intl10 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8065 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8060 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -145,7 +145,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8554, dependencyMap.paths);
+    const tmp2 = asyncRequire(8549, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -174,7 +174,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8554, dependencyMap.paths);
+    const tmp2 = asyncRequire(8549, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {

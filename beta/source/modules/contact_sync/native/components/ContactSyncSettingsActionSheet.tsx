@@ -1,7 +1,7 @@
 // Module ID: 12411
 // Function ID: 12412
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 12401, 1085, 21, 5092, 587, 558, 576, 1126, 8580, 5088, 12404, 6899, 2]
+// Dependencies: [19, 17, 12401, 1085, 21, 5092, 587, 558, 576, 1126, 8575, 5088, 12404, 6899, 2]
 
 // Module 12411 (ContactSyncSettingsActionSheet)
 import react_native from "react-native" /* 17 */;

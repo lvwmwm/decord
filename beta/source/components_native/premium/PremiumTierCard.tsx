@@ -1,7 +1,7 @@
 // Module ID: 13858
 // Function ID: 13859
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7152, 1392, 21, 5092, 587, 558, 576, 13859, 13860, 8097, 7156, 7157, 10072, 4769, 6157, 5391, 1105, 6182, 2]
+// Dependencies: [19, 17, 7152, 1392, 21, 5092, 587, 558, 576, 13859, 13860, 8092, 7156, 7157, 10072, 4769, 6157, 5391, 1105, 6182, 2]
 
 // Module 13858 (PremiumTierCard)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import ColorConstants from "ColorConstants" /* 7152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7156 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7157 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8097 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8092 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 10072 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 13859 */;
 import AssetRegistryDefault6 from "AssetRegistry" /* 13860 */;
@@ -318,7 +318,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   } else if (PremiumTypes.TIER_1 === premiumType) {
     tmp5Result = tmp5(13860);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result = tmp5(8097);
+    tmp5Result = tmp5(8092);
   }
   const items = [metroRequire(tmp7, obj), , ];
   const items1 = [tmp.wumpusLogo, ];

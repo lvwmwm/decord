@@ -1,7 +1,7 @@
 // Module ID: 16506
 // Function ID: 16507
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15589, 1085, 21, 5092, 587, 1265, 11338, 2000, 16507, 16508, 16509, 15590, 8225, 1200, 16518, 558, 576, 5421, 1126, 5409, 2]
+// Dependencies: [19, 17, 15589, 1085, 21, 5092, 587, 1265, 11338, 2000, 16507, 16508, 16509, 15590, 8220, 1200, 16518, 558, 576, 5421, 1126, 5409, 2]
 
 // Module 16506 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;

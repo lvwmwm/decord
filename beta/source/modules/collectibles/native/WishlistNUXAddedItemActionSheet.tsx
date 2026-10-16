@@ -1,17 +1,17 @@
-// Module ID: 8975
-// Function ID: 8976
+// Module ID: 8970
+// Function ID: 8971
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1390, 8308, 21, 5092, 587, 558, 576, 504, 1993, 5056, 8304, 6879, 8976, 8977, 5088, 1126, 5379, 5958, 6840, 2]
+// Dependencies: [32, 19, 17, 1390, 8303, 21, 5092, 587, 558, 576, 504, 1993, 5056, 8299, 6879, 8971, 8972, 5088, 1126, 5379, 5958, 6840, 2]
 
-// Module 8975 (WishlistNUXAddedItemActionSheet)
+// Module 8970 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import Constants from "Constants" /* 8308 */;
-import SKUPreview from "SKUPreview" /* 8976 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import Constants from "Constants" /* 8303 */;
+import SKUPreview from "SKUPreview" /* 8971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(8977), obj5);
-    const tmp21 = closure_8(obj4(8977), obj5);
+    cResult[14] = closure_8(obj4(8972), obj5);
+    const tmp21 = closure_8(obj4(8972), obj5);
   } else {
     class L {
       constructor() {

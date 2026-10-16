@@ -1,9 +1,9 @@
-// Module ID: 7491
-// Function ID: 7492
+// Module ID: 7486
+// Function ID: 7487
 // Name: ForumPlatformUtils
 // Dependencies: [1126, 2]
 
-// Module 7491 (ForumPlatformUtils)
+// Module 7486 (ForumPlatformUtils)
 import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 

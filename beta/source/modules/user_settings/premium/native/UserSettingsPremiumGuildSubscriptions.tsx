@@ -1,7 +1,7 @@
 // Module ID: 13790
 // Function ID: 13791
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1390, 4771, 7119, 4774, 4775, 1085, 1392, 21, 5092, 5969, 4827, 8027, 6960, 5724, 6680, 6684, 5088, 1126, 2128, 13791, 1398, 13805, 13807, 13809, 13813, 558, 576, 13691, 7109, 8095, 13753, 504, 1503, 7121, 1628, 2]
+// Dependencies: [19, 17, 1390, 4771, 7119, 4774, 4775, 1085, 1392, 21, 5092, 5969, 4827, 8022, 6960, 5724, 6680, 6684, 5088, 1126, 2128, 13791, 1398, 13805, 13807, 13809, 13813, 558, 576, 13691, 7109, 8090, 13753, 504, 1503, 7121, 1628, 2]
 
 // Module 13790 (UserSettingsPremiumGuildSubscriptions)
 import intl3 from "intl" /* 1126 */;
@@ -15,7 +15,7 @@ import LegacyTokens from "LegacyTokens" /* 5969 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6960 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8027 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8022 */;
 import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 13805 */;
 import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 13807 */;
 import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 13813 */;

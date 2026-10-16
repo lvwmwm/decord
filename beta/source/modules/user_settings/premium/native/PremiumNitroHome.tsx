@@ -1,7 +1,7 @@
 // Module ID: 13686
 // Function ID: 13687
 // Name: PremiumNitroHome
-// Dependencies: [32, 19, 17, 5081, 4775, 13687, 1085, 2062, 1392, 21, 683, 587, 5092, 558, 576, 1503, 13688, 6205, 6185, 1126, 5088, 1265, 7092, 13689, 8086, 13690, 13711, 10095, 13712, 13713, 13714, 13719, 13723, 13746, 13747, 13749, 13750, 7097, 1631, 13751, 504, 7109, 8095, 13752, 8530, 4850, 5378, 4969, 13753, 4938, 2049, 8085, 2050, 6157, 13754, 13755, 10601, 8779, 5391, 1382, 5364, 2]
+// Dependencies: [32, 19, 17, 5081, 4775, 13687, 1085, 2062, 1392, 21, 683, 587, 5092, 558, 576, 1503, 13688, 6205, 6185, 1126, 5088, 1265, 7092, 13689, 8081, 13690, 13711, 10095, 13712, 13713, 13714, 13719, 13723, 13746, 13747, 13749, 13750, 7097, 1631, 13751, 504, 7109, 8090, 13752, 8525, 4850, 5378, 4969, 13753, 4938, 2049, 8080, 2050, 6157, 13754, 13755, 10601, 8774, 5391, 1382, 5364, 2]
 
 // Module 13686 (PremiumNitroHome)
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import spring from "spring" /* 5378 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8085 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8080 */;
 import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 13687 */;
 import PremiumPerkCardDefault from "PremiumPerkCard" /* 13690 */;
 import useScrollToSectionDefault from "useScrollToSection" /* 13712 */;
@@ -983,7 +983,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
     }
   }
   const tmp28 = tmp7(7109)();
-  let tmpResult5 = tmp(8095);
+  let tmpResult5 = tmp(8090);
   const isInReverseTrial = tmpResult5.useIsInReverseTrial();
   let tmpResult6 = tmp(13752);
   const maybeFetchTieredTenureBadgeData = tmpResult6.useMaybeFetchTieredTenureBadgeData();
@@ -1153,7 +1153,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
     }
   }, []);
   const tmp21 = navigation(7109)();
-  const obj8 = bottom(8095);
+  const obj8 = bottom(8090);
   const isInReverseTrial = obj8.useIsInReverseTrial();
   const obj9 = bottom(13752);
   const maybeFetchTieredTenureBadgeData = obj9.useMaybeFetchTieredTenureBadgeData();
@@ -1163,8 +1163,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   }, []);
   const obj10 = { items: items3, pageWidth: tmp11, onPageChange: callback2 };
   const obj11 = { label: intl.string(bottom(1126).t.tahjbP), id: intl2.string(bottom(1126).t.tahjbP), page: closure_17(closure_28, obj12) };
-  const useSegmentedControlState = bottom(8530).useSegmentedControlState;
-  bottom(8530);
+  const useSegmentedControlState = bottom(8525).useSegmentedControlState;
+  bottom(8525);
   intl = bottom(1126).intl;
   intl2 = bottom(1126).intl;
   items3 = [obj11, ];
@@ -1209,7 +1209,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   const ONYX = constants2.ONYX;
   const tmp6Result = navigation(13753);
   const tmp6ResultResult = tmp6Result(tmp21.endsAt, tmp(13753).CountDownMessageTypes.ENDS_IN);
-  const tmpResult8 = tmp(8086);
+  const tmpResult8 = tmp(8081);
   isEligibleSenderForReferralProgram = tmpResult8.useIsEligibleSenderForReferralProgram();
   const items5 = [isEligibleSenderForReferralProgram];
   const effect2 = obj5.useEffect(() => {
@@ -1273,7 +1273,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   items9[1] = tmp27Result4;
   items8[3] = closure_18(c5, obj18);
   const obj20 = { style: animatedStyle, onLayout: callback1, children: items10 };
-  const obj21 = { style: tmp5.segmentedControlActual, onLayout: callback, children: closure_17(tmp(8779).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
+  const obj21 = { style: tmp5.segmentedControlActual, onLayout: callback, children: closure_17(tmp(8774).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
   const View = tmp6(4850).View;
   items10 = [closure_17(c5, obj21), , ];
   let tmp27Result5 = !isThemeDarkResult;

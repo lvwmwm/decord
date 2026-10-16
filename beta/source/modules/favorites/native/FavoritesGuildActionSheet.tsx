@@ -1,7 +1,7 @@
 // Module ID: 16574
 // Function ID: 16575
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 2068, 21, 558, 576, 16575, 16576, 16577, 10313, 504, 6839, 1126, 6895, 8201, 11839, 16578, 6208, 6650, 5049, 6899, 2]
+// Dependencies: [19, 2068, 21, 558, 576, 16575, 16576, 16577, 10313, 504, 6839, 1126, 6895, 8196, 11839, 16578, 6208, 6650, 5049, 6899, 2]
 
 // Module 16574 (FavoritesGuildActionSheet)
 import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16575 */;
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
         closure_1.perform();
       }
     }
-    obj30 = { IconComponent: onClose(8201).ThreadIcon };
+    obj30 = { IconComponent: onClose(8196).ThreadIcon };
     Icon = tmp(6895).ActionSheetRow.Icon;
     ({ isEnabled: obj6.value, toggle: obj6.onValueChange } = tmp6);
     tmp15 = closure_4(Group, obj16);
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     ({ label: obj6.label, subLabel: obj6.subLabel } = tmp4);
     obj7 = { label: null, subLabel: null, icon: closure_4(Icon, obj8), value: null, onValueChange: null };
     ActionSheetSwitchRow = tmp5(6895).ActionSheetSwitchRow;
-    obj8 = { IconComponent: onClose(8201).ThreadIcon };
+    obj8 = { IconComponent: onClose(8196).ThreadIcon };
     Icon = tmp5(6895).ActionSheetRow.Icon;
     ({ isEnabled: obj6.value, toggle: obj6.onValueChange } = tmp4);
     tmp8Result = tmp8(Group, obj5);

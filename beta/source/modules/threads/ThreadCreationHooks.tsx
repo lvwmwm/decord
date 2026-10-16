@@ -1,17 +1,17 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9256
+// Function ID: 9257
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7005, 502, 2065, 7244, 5432, 7375, 1125, 1085, 5085, 558, 6972, 7370, 6976, 576, 1126, 9262, 11, 1295, 7919, 9263, 7372, 1403, 7760, 9265, 7904, 5107, 7179, 5299, 584, 4969, 1102, 9807, 12892, 2]
+// Dependencies: [32, 5, 19, 7005, 502, 2065, 7239, 5432, 7370, 1125, 1085, 5085, 558, 6972, 7365, 6976, 576, 1126, 9257, 11, 1295, 7914, 9258, 7367, 1403, 7755, 9260, 7899, 5107, 7174, 5299, 584, 4969, 1102, 9802, 12892, 2]
 // Exports: createThread
 
-// Module 9261 (ThreadCreationHooks)
+// Module 9256 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
 import ThreadHooks from "ThreadHooks" /* 6972 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import MessageParserDefault from "MessageParser" /* 7370 */;
-import SlowmodeStore from "SlowmodeStore" /* 7375 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import MessageParserDefault from "MessageParser" /* 7365 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 17642
 // Function ID: 17643
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4760, 1085, 21, 5092, 5906, 587, 558, 576, 12335, 504, 1265, 1126, 8139, 5749, 1200, 2]
+// Dependencies: [19, 17, 4760, 1085, 21, 5092, 5906, 587, 558, 576, 12335, 504, 1265, 1126, 8134, 5749, 1200, 2]
 
 // Module 17642 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
@@ -704,7 +704,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8139)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8134)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;

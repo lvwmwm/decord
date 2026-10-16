@@ -1,7 +1,7 @@
 // Module ID: 11095
 // Function ID: 11096
 // Name: VideoBackgroundOptionsRadioGroup
-// Dependencies: [19, 1085, 21, 558, 576, 9539, 5258, 11096, 5253, 5256, 1126, 6262, 6263, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 9534, 5258, 11096, 5253, 5256, 1126, 6262, 6263, 2]
 
 // Module 11095 (VideoBackgroundOptionsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackg
   let obj = analyticsContext(576);
   const cResult = obj.c(13);
   title = title.title;
-  let obj2 = analyticsContext(9539);
+  let obj2 = analyticsContext(9534);
   analyticsContext = obj2.useAnalyticsContext();
   let obj3 = analyticsContext(5258);
   const lastUsedVideoBackgroundOption = obj3.useLastUsedVideoBackgroundOption();

@@ -1,7 +1,7 @@
 // Module ID: 16254
 // Function ID: 16255
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [19, 17, 1087, 1085, 21, 5092, 587, 558, 576, 12774, 6879, 6852, 1631, 15351, 4850, 5378, 1265, 7310, 16255, 16256, 1126, 16235, 10176, 8971, 2]
+// Dependencies: [19, 17, 1087, 1085, 21, 5092, 587, 558, 576, 12774, 6879, 6852, 1631, 15351, 4850, 5378, 1265, 7305, 16255, 16256, 1126, 16235, 10176, 8966, 2]
 
 // Module 16254 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 587 */;
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import spring from "spring" /* 5378 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7310 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7305 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

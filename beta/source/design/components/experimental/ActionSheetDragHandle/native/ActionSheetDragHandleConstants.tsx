@@ -1,9 +1,9 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8538
+// Function ID: 8539
 // Name: ActionSheetDragHandleConstants
 // Dependencies: [587, 2]
 
-// Module 8543 (ActionSheetDragHandleConstants)
+// Module 8538 (ActionSheetDragHandleConstants)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

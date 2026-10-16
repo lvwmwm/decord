@@ -1,7 +1,7 @@
 // Module ID: 16626
 // Function ID: 16627
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1085, 2062, 21, 587, 16627, 10515, 5384, 5092, 558, 576, 16628, 1126, 13256, 6208, 6185, 5088, 7706, 5379, 7034, 7038, 6182, 2]
+// Dependencies: [5, 19, 17, 1085, 2062, 21, 587, 16627, 10515, 5384, 5092, 558, 576, 16628, 1126, 13256, 6208, 6185, 5088, 7701, 5379, 7034, 7038, 6182, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
 // Module 16626 (GameClaimCoachmark)
@@ -40,7 +40,7 @@ const components_Button_Button = tmp2(5379);
 const Card_Card = tmp2(6182);
 const Pressables = tmp2(6185);
 const XSmallIcon = tmp2(6208);
-const LinkExternalSmallIcon = tmp2(7706);
+const LinkExternalSmallIcon = tmp2(7701);
 const GameClaimCardStackDefault = tmp8(16627);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
@@ -179,7 +179,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
               const intl4 = tmp(1126).intl;
               const stringResult2 = intl4.string(markAsDismissed(1126).t["2u6ZlY"]);
-              const tmp37 = closure_8(markAsDismissed(7706).LinkExternalSmallIcon, { size: "xs", color: "white" });
+              const tmp37 = closure_8(markAsDismissed(7701).LinkExternalSmallIcon, { size: "xs", color: "white" });
               cResult[22] = stringResult2;
               cResult[23] = tmp37;
               tmp34 = tmp37;

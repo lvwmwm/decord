@@ -1,9 +1,9 @@
-// Module ID: 8858
-// Function ID: 8859
+// Module ID: 8853
+// Function ID: 8854
 // Name: useGetGameForAppId
 // Dependencies: [19, 2020, 558, 576, 6858, 7009, 1388, 504, 2]
 
-// Module 8858 (useGetGameForAppId)
+// Module 8853 (useGetGameForAppId)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;

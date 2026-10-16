@@ -1,13 +1,13 @@
 // Module ID: 16448
 // Function ID: 16449
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 2116, 4939, 10637, 21, 9345, 16449, 16862, 16911, 504, 558, 576, 16983, 8473, 6688, 6846, 2]
+// Dependencies: [19, 17, 2116, 4939, 10637, 21, 9340, 16449, 16862, 16911, 504, 558, 576, 16983, 8468, 6688, 6846, 2]
 
 // Module 16448 (YouBarStackNavigator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Navigator2 from "Navigator" /* 6688 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8473 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8468 */;
 import MainTabsConstants from "MainTabsConstants" /* 10637 */;
 import notifications_Notifications from "notifications/Notifications" /* 16862 */;
 import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16983 */;
@@ -16,7 +16,7 @@ import react_native from "react-native" /* 17 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8728
+// Function ID: 8729
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 2087, 1390, 1085, 21, 5092, 587, 6159, 558, 576, 504, 1126, 584, 4808, 6839, 8734, 5088, 6899, 2]
+// Dependencies: [19, 17, 2087, 1390, 1085, 21, 5092, 587, 6159, 558, 576, 504, 1126, 584, 4808, 6839, 8729, 5088, 6899, 2]
 
-// Module 8733 (InstantInviteQRCodeActionSheet)
+// Module 8728 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import ToastUtils from "ToastUtils" /* 4808 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 8734 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 8729 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;

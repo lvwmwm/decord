@@ -1,10 +1,10 @@
-// Module ID: 9774
-// Function ID: 9775
+// Module ID: 9769
+// Function ID: 9770
 // Name: Sticker
-// Dependencies: [19, 17, 1205, 21, 5750, 5749, 558, 576, 1126, 8018, 9775, 6157, 4969, 6821, 6822, 2]
+// Dependencies: [19, 17, 1205, 21, 5750, 5749, 558, 576, 1126, 8013, 9770, 6157, 4969, 6821, 6822, 2]
 // Exports: getStickerAssetUrl
 
-// Module 9774 (Sticker)
+// Module 9769 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import shared from "shared" /* 4969 */;
 import StickersUtils from "StickersUtils" /* 5749 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8018 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 9775 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8013 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 9770 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         if (str4 == null) {
           str4 = "";
         }
-        const NativeLottieRenderMode = tmp(8018).NativeLottieRenderMode;
+        const NativeLottieRenderMode = tmp(8013).NativeLottieRenderMode;
         const tmp33 = undefined === animated || animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
         if (cResult[6] === tmp8) {
           if (cResult[7] === num) {
@@ -275,7 +275,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8018).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8013).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {

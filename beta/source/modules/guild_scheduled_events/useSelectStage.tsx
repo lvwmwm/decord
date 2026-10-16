@@ -1,9 +1,9 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 8770
+// Function ID: 8771
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2065, 2116, 558, 576, 504, 7493, 2]
+// Dependencies: [5, 32, 19, 2065, 2116, 558, 576, 504, 7488, 2]
 
-// Module 8775 (useSelectStage)
+// Module 8770 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9801
+// Function ID: 9802
 // Name: PlaintextResolvers
-// Dependencies: [32, 5987, 6034, 2065, 4748, 2125, 2119, 2087, 4750, 4760, 1390, 1085, 1393, 7374, 5421, 11, 5970, 4764, 4768, 2]
+// Dependencies: [32, 5987, 6034, 2065, 4748, 2125, 2119, 2087, 4750, 4760, 1390, 1085, 1393, 7369, 5421, 11, 5970, 4764, 4768, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9806 (PlaintextResolvers)
+// Module 9801 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
@@ -12,7 +12,7 @@ import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
-import SlateUtils from "SlateUtils" /* 7374 */;
+import SlateUtils from "SlateUtils" /* 7369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;

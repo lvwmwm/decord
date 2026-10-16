@@ -1,16 +1,16 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8611
+// Function ID: 8612
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8617, 1085, 21, 558, 576, 8618, 6127, 5088, 1126, 2]
+// Dependencies: [19, 17, 8612, 1085, 21, 558, 576, 8613, 6127, 5088, 1126, 2]
 
-// Module 8616 (CreateChannelTypeDescription)
+// Module 8611 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import GuildProfileStore from "GuildProfileStore" /* 8617 */;
-import useGuildProfile from "useGuildProfile" /* 8618 */;
+import GuildProfileStore from "GuildProfileStore" /* 8612 */;
+import useGuildProfile from "useGuildProfile" /* 8613 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

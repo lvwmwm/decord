@@ -1,7 +1,7 @@
 // Module ID: 11958
 // Function ID: 11959
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1499, 11634, 558, 576, 1126, 6305, 9444, 2]
+// Dependencies: [19, 1499, 11634, 558, 576, 1126, 6305, 9439, 2]
 
 // Module 11958 (useVoiceMessageTooltip)
 import intl2 from "intl" /* 1126 */;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceMe
     tmp11 = cResult[6];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  const tmpResult = tmp(9444);
+  const tmpResult = tmp(9439);
   const tooltip = tmpResult.useTooltip(ref, tmp9);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { tooltipTargetRef: ref, showVoiceMessagesTooltip };

@@ -1,26 +1,26 @@
-// Module ID: 8250
-// Function ID: 8251
+// Module ID: 8245
+// Function ID: 8246
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 7884, 4751, 2065, 2125, 5891, 1390, 8251, 21, 1998, 5445, 5443, 5442, 558, 576, 504, 7995, 6972, 8253, 8254, 584, 5396, 5436, 2]
+// Dependencies: [32, 19, 7879, 4751, 2065, 2125, 5891, 1390, 8246, 21, 1998, 5445, 5443, 5442, 558, 576, 504, 7990, 6972, 8248, 8249, 584, 5396, 5436, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentState, useComponentStateContext
 
-// Module 8250 (ComponentStateContext)
+// Module 8245 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Server from "Server" /* 1998 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5445 */;
-import InteractionUtils from "InteractionUtils" /* 8254 */;
+import InteractionUtils from "InteractionUtils" /* 8249 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InteractionStore_mod from "InteractionStore" /* 7884 */;
+import InteractionStore_mod from "InteractionStore" /* 7879 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
 import UserStore from "UserStore" /* 1390 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8251 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8246 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -307,8 +307,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDis
   }
   const tmpResult7 = tmp(504);
   const stateFromStores2 = tmpResult7.useStateFromStores(tmp17, tmp20);
-  const useCurrentUserCommunicationDisabled = tmp(7995).useCurrentUserCommunicationDisabled;
-  tmp(7995);
+  const useCurrentUserCommunicationDisabled = tmp(7990).useCurrentUserCommunicationDisabled;
+  tmp(7990);
   if (tmp4 != null) {
     class I {
       constructor() {
@@ -495,8 +495,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDis
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(7995).useCurrentUserCommunicationDisabled;
-  channel(7995);
+  const useCurrentUserCommunicationDisabled = channel(7990).useCurrentUserCommunicationDisabled;
+  channel(7990);
   if (channel != null) {
     guild_id = channel.guild_id;
   }

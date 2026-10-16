@@ -1,7 +1,7 @@
 // Module ID: 17367
 // Function ID: 17368
 // Name: ChannelDetails
-// Dependencies: [19, 17, 12050, 2065, 9311, 9630, 21, 587, 5092, 558, 576, 504, 11997, 17368, 6852, 6879, 1503, 17365, 5362, 6627, 1631, 1382, 5068, 7197, 12061, 12036, 4850, 5093, 5096, 5378, 12070, 4985, 17369, 17379, 17495, 17497, 17498, 17499, 5330, 6335, 2]
+// Dependencies: [19, 17, 12050, 2065, 9306, 9625, 21, 587, 5092, 558, 576, 504, 11997, 17368, 6852, 6879, 1503, 17365, 5362, 6627, 1631, 1382, 5068, 7192, 12061, 12036, 4850, 5093, 5096, 5378, 12070, 4985, 17369, 17379, 17495, 17497, 17498, 17499, 5330, 6335, 2]
 
 // Module 17367 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
@@ -16,8 +16,8 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9630 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9306 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9625 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 10567
 // Function ID: 10568
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 10568, 6157, 1126, 4977, 9443, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 10568, 6157, 1126, 4977, 9438, 2]
 // Exports: default
 
 // Module 10567 (OrbsBadgeCoachmark)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import useCoachmark from "useCoachmark" /* 9443 */;
+import useCoachmark from "useCoachmark" /* 9438 */;
 import _modDef10568 from "module_10568" /* 10568 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -216,7 +216,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9443);
+    const tmp8Result = tmp8(9438);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     badgeRef = badgeRef.badgeRef;

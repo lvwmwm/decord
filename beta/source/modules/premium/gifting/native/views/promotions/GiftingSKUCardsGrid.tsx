@@ -1,7 +1,7 @@
 // Module ID: 12737
 // Function ID: 12738
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7269, 1991, 21, 587, 5092, 558, 576, 8303, 4832, 10507, 9028, 9014, 8849, 5088, 1126, 6185, 1497, 12, 2]
+// Dependencies: [19, 17, 7264, 1991, 21, 587, 5092, 558, 576, 8298, 4832, 10507, 9023, 9009, 8844, 5088, 1126, 6185, 1497, 12, 2]
 
 // Module 12737 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import NameplateRecord from "NameplateRecord" /* 1991 */;
 import react_native from "react-native" /* 4832 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7269 */;
-import useCurrentUser from "useCurrentUser" /* 8303 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7264 */;
+import useCurrentUser from "useCurrentUser" /* 8298 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

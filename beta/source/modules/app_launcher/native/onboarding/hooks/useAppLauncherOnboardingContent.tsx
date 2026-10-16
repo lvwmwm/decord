@@ -1,7 +1,7 @@
 // Module ID: 11714
 // Function ID: 11715
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9249, 2065, 2062, 558, 576, 4938, 2049, 504, 11715, 11721, 7100, 2]
+// Dependencies: [32, 9244, 2065, 2062, 558, 576, 4938, 2049, 504, 11715, 11721, 7100, 2]
 
 // Module 11714 (useAppLauncherOnboardingContent)
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import useActivityApplications2 from "useActivityApplications" /* 11715 */;
 import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9249 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

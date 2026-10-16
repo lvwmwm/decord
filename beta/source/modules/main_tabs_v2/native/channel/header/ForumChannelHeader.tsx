@@ -1,13 +1,13 @@
 // Module ID: 12865
 // Function ID: 12866
 // Name: ForumChannelHeader
-// Dependencies: [19, 17, 9299, 21, 5092, 558, 576, 12866, 12847, 12867, 2]
+// Dependencies: [19, 17, 9294, 21, 5092, 558, 576, 12866, 12847, 12867, 2]
 
 // Module 12865 (ForumChannelHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 9299 */;
+import react_native2 from "react-native" /* 9294 */;
 import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 12866 */;
 import GuildChannelHeaderDefault from "GuildChannelHeader" /* 12867 */;
 import react from "react" /* 19 */;

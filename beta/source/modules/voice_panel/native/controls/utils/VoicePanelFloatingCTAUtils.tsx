@@ -1,7 +1,7 @@
 // Module ID: 17813
 // Function ID: 17814
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6036, 17814, 6054, 2065, 2071, 21, 558, 576, 5031, 11971, 17781, 8655, 573, 8573, 8521, 8517, 5056, 8535, 17815, 8776, 8582, 8680, 1126, 6208, 17808, 10331, 17816, 7101, 8395, 4938, 6290, 2049, 17817, 12264, 7966, 2]
+// Dependencies: [32, 19, 17, 6036, 17814, 6054, 2065, 2071, 21, 558, 576, 5031, 11971, 17781, 8650, 573, 8568, 8516, 8512, 5056, 8530, 17815, 8771, 8577, 8675, 1126, 6208, 17808, 10331, 17816, 7101, 8390, 4938, 6290, 2049, 17817, 12264, 7961, 2]
 
 // Module 17813 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8395 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8535 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8530 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
 import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17781 */;
 import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17815 */;
@@ -33,7 +33,7 @@ let _require, dependencyMap;
 
 let tmp;
 const intl4 = tmp(1126);
-const getDeviceSpecificString2 = tmp(7966);
+const getDeviceSpecificString2 = tmp(7961);
 const SoundboardIcon = tmp(12264);
 function getBadConnectionCTAProps(arg0) {
   let closure_0;
@@ -132,8 +132,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
   stateFromStores(5031)();
   id = undefined;
   const tmp6 = stateFromStores(17781)(react.useContext(stateFromStores(11971)).channelId);
-  const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(8655).useImminentUpcomingGuildEvents;
-  imminentUpcomingGuildEvents(8655);
+  const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(8650).useImminentUpcomingGuildEvents;
+  imminentUpcomingGuildEvents(8650);
   const tmp4 = stateFromStores;
   if (id != null) {
     id = id.id;
@@ -168,13 +168,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
   const tmpResult = tmp(573);
   stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13);
   let tmp16 = null != stateFromStores;
-  const tmpResult3 = tmp(8573);
+  const tmpResult3 = tmp(8568);
   tmpResult3.useManageResourcePermissions(id).canManageGuildEvent(stateFromStores);
   if (tmp16) {
     tmp16 = closure_8(stateFromStores);
   }
   if (cResult[4] !== stateFromStores) {
-    const tmpResult4 = tmp(8521);
+    const tmpResult4 = tmp(8516);
     const nextRecurrenceIdInEvent = tmpResult4.getNextRecurrenceIdInEvent(stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = nextRecurrenceIdInEvent;
@@ -184,7 +184,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
   }
   dependencyMap = tmp18;
   let guild_id;
-  const tmp4Result = tmp4(8517);
+  const tmp4Result = tmp4(8512);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
@@ -385,7 +385,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCal
           intl = tmp(1126).intl;
           intl2 = tmp(1126).intl;
           ({ IconComponent: tmp(10331).GroupPlusIcon, variant: "translucent" });
-          const Icon = tmp(8582).RowButton.Icon;
+          const Icon = tmp(8577).RowButton.Icon;
           tmp13 = obj2;
         }
       }
@@ -427,7 +427,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCal
           intl = tmp3(1126).intl;
           intl2 = tmp3(1126).intl;
           ({ IconComponent: tmp3(10331).GroupPlusIcon, variant: "translucent" });
-          const Icon = tmp3(8582).RowButton.Icon;
+          const Icon = tmp3(8577).RowButton.Icon;
           tmp7 = obj2;
         }
       }

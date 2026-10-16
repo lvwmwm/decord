@@ -5263,7 +5263,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_listeners", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._listeners = undefined;
       }
@@ -5401,19 +5401,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -5540,7 +5540,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.viewErrored = undefined;
       }
@@ -5648,13 +5648,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -5722,31 +5722,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -5891,7 +5891,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -6060,31 +6060,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -6225,7 +6225,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -6320,31 +6320,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6455,7 +6455,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.isSeeking = undefined;
       }
@@ -6580,55 +6580,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.pm = undefined;
       }
@@ -6933,7 +6933,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7770,73 +7770,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "mux", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "envKey", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "options", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+          Object.defineProperty(self, "viewerData", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
         } else {
           self.viewerData = undefined;
         }
@@ -8506,7 +8506,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8804,7 +8804,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8817,7 +8817,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8830,7 +8830,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8843,7 +8843,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8856,7 +8856,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8869,7 +8869,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8882,7 +8882,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                        Object.defineProperty(callResult, "data", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8895,7 +8895,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8908,7 +8908,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8921,7 +8921,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8934,7 +8934,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8947,7 +8947,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8960,7 +8960,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8973,7 +8973,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8986,7 +8986,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -8999,7 +8999,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9012,7 +9012,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9025,7 +9025,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9038,7 +9038,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9051,7 +9051,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9064,7 +9064,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9077,7 +9077,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9090,7 +9090,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9103,7 +9103,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9116,7 +9116,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9129,7 +9129,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9142,7 +9142,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9155,7 +9155,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9168,7 +9168,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9181,7 +9181,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: "handleGoToUndetermined", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: "getExtraButtonProps", configurable: null, writable: "\u{1F1F1}\u{1F1F8}" });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }

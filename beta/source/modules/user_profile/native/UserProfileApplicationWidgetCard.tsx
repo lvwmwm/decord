@@ -1,7 +1,7 @@
 // Module ID: 13265
 // Function ID: 13266
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2129, 502, 21, 5092, 587, 13266, 13267, 13359, 13360, 13361, 13362, 558, 576, 504, 13268, 6858, 7009, 8879, 8880, 13363, 6855, 12334, 13369, 13351, 6157, 8458, 13259, 13129, 5088, 1126, 6904, 6185, 12622, 2]
+// Dependencies: [19, 17, 2129, 502, 21, 5092, 587, 13266, 13267, 13359, 13360, 13361, 13362, 558, 576, 504, 13268, 6858, 7009, 8874, 8875, 13363, 6855, 12334, 13369, 13351, 6157, 8453, 13259, 13129, 5088, 1126, 6904, 6185, 12622, 2]
 
 // Module 13265 (UserProfileApplicationWidgetCard)
 import nativeDefault from "native" /* 587 */;
@@ -374,11 +374,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   }
   const data = useGame(canonicalGameId).data;
   let id;
-  const tmp11 = stateFromStores(8880);
+  const tmp11 = stateFromStores(8875);
   if (data != null) {
     id = data.id;
   }
-  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8879).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
+  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8874).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp11Result = tmp11(obj4);
   dependencyMap = tmp11Result;
   let tmp14 = rendererProps;
@@ -406,18 +406,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
         let tmp22 = null != token;
         if (tmp22) {
           const _Array = Array;
-          const arr = Array.from(userId(8458).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES);
+          const arr = Array.from(userId(8453).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES);
           let someResult = arr.some((item) => {
             const scopes = token.scopes;
             return scopes.includes(item);
           });
           if (!someResult) {
             let scopes = token.scopes;
-            someResult = scopes.includes(tmp2(8458).OAuth2Scopes.SDK_SOCIAL_LAYER);
+            someResult = scopes.includes(tmp2(8453).OAuth2Scopes.SDK_SOCIAL_LAYER);
           }
           if (!someResult) {
             const scopes2 = token.scopes;
-            someResult = scopes2.includes(tmp2(8458).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
+            someResult = scopes2.includes(tmp2(8453).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
           }
           tmp22 = someResult;
         }

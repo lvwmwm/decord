@@ -1,9 +1,9 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 7489
+// Function ID: 7490
 // Name: StageLurkingManager
 // Dependencies: [2065, 4939, 2002, 584, 7039, 1388, 2]
 
-// Module 7494 (StageLurkingManager)
+// Module 7489 (StageLurkingManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import LurkerActionCreators from "LurkerActionCreators" /* 7039 */;

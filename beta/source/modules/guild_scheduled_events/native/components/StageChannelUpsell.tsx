@@ -1,10 +1,10 @@
-// Module ID: 8576
-// Function ID: 8577
+// Module ID: 8571
+// Function ID: 8572
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 2069, 8577, 8515, 1085, 21, 5092, 587, 6185, 1200, 7729, 6157, 8578, 5088, 1126, 5379, 5934, 8579, 2000, 5056, 2]
+// Dependencies: [32, 19, 17, 2069, 8572, 8510, 1085, 21, 5092, 587, 6185, 1200, 7724, 6157, 8573, 5088, 1126, 5379, 5934, 8574, 2000, 5056, 2]
 // Exports: default
 
-// Module 8576 (StageChannelUpsell)
+// Module 8571 (StageChannelUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -18,10 +18,10 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8515 */;
-import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8577 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8578 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8510 */;
+import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8572 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -117,7 +117,7 @@ export default function StageChannelUpsell(arg0) {
               obj.popWithKey(closure_1_11);
             }
           };
-          obj2.pushLazy(asyncRequire(8579, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
+          obj2.pushLazy(asyncRequire(8574, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
           closure_2();
           const obj4 = ActionSheetActionCreatorsDefault;
           obj4.hideActionSheet();

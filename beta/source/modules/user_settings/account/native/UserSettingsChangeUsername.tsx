@@ -1,7 +1,7 @@
 // Module ID: 14982
 // Function ID: 14983
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5092, 587, 5745, 14983, 5088, 1126, 558, 576, 1503, 504, 4769, 14984, 6680, 6671, 1295, 1504, 9298, 6286, 6686, 6619, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5092, 587, 5745, 14983, 5088, 1126, 558, 576, 1503, 504, 4769, 14984, 6680, 6671, 1295, 1504, 9293, 6286, 6686, 6619, 2]
 
 // Module 14982 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;

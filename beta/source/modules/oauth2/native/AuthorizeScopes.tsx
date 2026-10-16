@@ -1,7 +1,7 @@
 // Module ID: 12899
 // Function ID: 12900
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 5092, 558, 576, 1126, 6296, 587, 6868, 5088, 9227, 6170, 9235, 8458, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1126, 6296, 587, 6868, 5088, 9222, 6170, 9230, 8453, 2]
 
 // Module 12899 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
@@ -374,7 +374,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
       cResult[8] = formatResult;
       tmp14 = formatResult;
     }
-    const hasItem = integrationType === tmp(9235).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(8458).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    const hasItem = integrationType === tmp(9230).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(8453).OAuth2Scopes.APPLICATIONS_COMMANDS);
     cResult[3] = integrationType;
     cResult[4] = requestedScopes;
     cResult[5] = hasItem;
@@ -413,9 +413,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(9235).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(9230).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(8458).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(8453).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };

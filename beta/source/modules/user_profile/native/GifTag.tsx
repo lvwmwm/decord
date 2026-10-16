@@ -1,9 +1,9 @@
-// Module ID: 8130
-// Function ID: 8131
+// Module ID: 8125
+// Function ID: 8126
 // Name: GifTag
 // Dependencies: [17, 21, 5092, 587, 683, 558, 576, 1126, 5088, 2]
 
-// Module 8130 (GifTag)
+// Module 8125 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;

@@ -1,7 +1,7 @@
 // Module ID: 10784
 // Function ID: 10785
 // Name: UserActivitySpotify
-// Dependencies: [19, 17, 8459, 21, 1381, 1295, 4806, 10785, 558, 576, 5379, 8278, 1126, 1200, 2]
+// Dependencies: [19, 17, 8454, 21, 1381, 1295, 4806, 10785, 558, 576, 5379, 8273, 1126, 1200, 2]
 // Exports: attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
 // Module 10784 (UserActivitySpotify)
@@ -9,10 +9,10 @@ import native from "native" /* 1200 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import react_nativeAll from "react-native" /* 1381 */;
 import LinkingDefault from "Linking" /* 4806 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8278 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8273 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SpotifyConstants from "SpotifyConstants" /* 8459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8454 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
 // Module ID: 13864
 // Function ID: 13865
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8317, 21, 5092, 587, 558, 576, 10100, 6852, 6879, 8309, 504, 5088, 1126, 2664, 10106, 11538, 5379, 10051, 13865, 10533, 2]
+// Dependencies: [32, 19, 17, 8312, 21, 5092, 587, 558, 576, 10100, 6852, 6879, 8304, 504, 5088, 1126, 2664, 10106, 11538, 5379, 10046, 13865, 10533, 2]
 
 // Module 13864 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 587 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8317 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10051 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8312 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10046 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10100 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

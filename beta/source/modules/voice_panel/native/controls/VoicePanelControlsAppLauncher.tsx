@@ -1,7 +1,7 @@
 // Module ID: 17954
 // Function ID: 17955
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 2065, 11970, 1085, 21, 5092, 558, 576, 9307, 11971, 8395, 504, 38, 11979, 1121, 10622, 10623, 4850, 11756, 11980, 1126, 2]
+// Dependencies: [19, 2065, 11970, 1085, 21, 5092, 558, 576, 9302, 11971, 8390, 504, 38, 11979, 1121, 10622, 10623, 4850, 11756, 11980, 1126, 2]
 
 // Module 17954 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1085 */;
@@ -207,14 +207,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   let derivedValue1;
   const tmp = closure_10();
-  let obj = gestureSpecs(9307);
+  let obj = gestureSpecs(9302);
   const gradientTop = obj.useGradientTop();
   const context = react.useContext(setControlsMode(11971));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8395)(windowDimensions);
+  const tmp4 = setControlsMode(8390)(windowDimensions);
   react = tmp4;
-  const rect = setControlsMode(8395)(safeArea);
+  const rect = setControlsMode(8390)(safeArea);
   const items = [rect];
   const obj2 = gestureSpecs(504);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));

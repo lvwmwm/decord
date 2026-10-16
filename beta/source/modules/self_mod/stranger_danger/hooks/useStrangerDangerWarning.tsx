@@ -1,12 +1,12 @@
 // Module ID: 10383
 // Function ID: 10384
 // Name: useStrangerDangerWarning
-// Dependencies: [1390, 10285, 558, 576, 504, 10384, 10385, 10386, 7738, 10387, 2]
+// Dependencies: [1390, 10285, 558, 576, 504, 10384, 10385, 10386, 7733, 10387, 2]
 
 // Module 10383 (useStrangerDangerWarning)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 7738 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10285 */;
 import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10384 */;
 import useIsMessageRequest from "useIsMessageRequest" /* 10385 */;

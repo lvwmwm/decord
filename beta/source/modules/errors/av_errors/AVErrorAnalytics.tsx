@@ -1,7 +1,7 @@
 // Module ID: 18673
 // Function ID: 18674
 // Name: AVErrorAnalytics
-// Dependencies: [32, 5130, 7431, 5271, 2065, 2012, 5110, 5211, 2116, 7429, 1085, 5117, 5289, 5900, 7435, 12, 5292, 5220, 1376, 5086, 1265, 2]
+// Dependencies: [32, 5130, 7426, 5271, 2065, 2012, 5110, 5211, 2116, 7424, 1085, 5117, 5289, 5900, 7430, 12, 5292, 5220, 1376, 5086, 1265, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
 // Module 18673 (AVErrorAnalytics)
@@ -11,7 +11,7 @@ import ProcessUtilsDefault from "ProcessUtils" /* 1376 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5086 */;
 import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 5220 */;
 import VideoQualityStats from "VideoQualityStats" /* 5292 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7431 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5130 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5271 */;
@@ -20,7 +20,7 @@ import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import RTCRegionStore from "RTCRegionStore" /* 5211 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import Constants from "Constants" /* 5117 */;
 import size from "module_2" /* 2 */;
 

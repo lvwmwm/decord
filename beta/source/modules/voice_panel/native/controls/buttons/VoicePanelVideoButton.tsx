@@ -1,7 +1,7 @@
 // Module ID: 17929
 // Function ID: 17930
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 10831, 2065, 2087, 2012, 4750, 5117, 21, 558, 576, 11971, 17917, 5907, 504, 12850, 5301, 12853, 1126, 17930, 8786, 10851, 12873, 17918, 10770, 13171, 4904, 2]
+// Dependencies: [19, 17, 10831, 2065, 2087, 2012, 4750, 5117, 21, 558, 576, 11971, 17917, 5907, 504, 12850, 5301, 12853, 1126, 17930, 8781, 10851, 12873, 17918, 10770, 13171, 4904, 2]
 
 // Module 17929 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import CameraRive2 from "CameraRive" /* 4904 */;
 import Constants from "Constants" /* 5117 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 5907 */;
-import CallsUtils from "CallsUtils" /* 8786 */;
+import CallsUtils from "CallsUtils" /* 8781 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10851 */;
 import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12853 */;
 import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17930 */;

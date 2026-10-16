@@ -1,15 +1,15 @@
 // Module ID: 16424
 // Function ID: 16425
 // Name: AuthManager
-// Dependencies: [5, 17, 12123, 1085, 7483, 12430, 2002, 584, 2061, 7506, 16425, 1382, 12126, 8683, 12514, 12429, 7053, 13620, 2]
+// Dependencies: [5, 17, 12123, 1085, 7478, 12430, 2002, 584, 2061, 7501, 16425, 1382, 12126, 8678, 12514, 12429, 7053, 13620, 2]
 
 // Module 16424 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import transitionToGuild from "transitionToGuild" /* 7053 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12123 */;
 import NUFActionCreators from "NUFActionCreators" /* 12429 */;
 import NUFConstants from "NUFConstants" /* 12430 */;

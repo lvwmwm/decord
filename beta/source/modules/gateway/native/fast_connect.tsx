@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1273, 9704, 13964, 14447, 7338, 1382, 13946, 13933, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1273, 9699, 13964, 14447, 7333, 1382, 13946, 13933, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -10,7 +10,7 @@ import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1273 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9704 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9699 */;
 import react_nativeDefault from "react-native" /* 14447 */;
 import checkEnv from "checkEnv" /* 16 */;
 import react_native from "react-native" /* 17 */;

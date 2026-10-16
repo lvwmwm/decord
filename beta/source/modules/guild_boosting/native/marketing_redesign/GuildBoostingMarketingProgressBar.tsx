@@ -1,7 +1,7 @@
 // Module ID: 13874
 // Function ID: 13875
 // Name: GuildBoostingMarketingProgressBar
-// Dependencies: [32, 19, 17, 5081, 1085, 21, 5092, 13875, 587, 558, 576, 5031, 573, 4850, 8025, 5378, 4969, 5391, 2]
+// Dependencies: [32, 19, 17, 5081, 1085, 21, 5092, 13875, 587, 558, 576, 5031, 573, 4850, 8020, 5378, 4969, 5391, 2]
 
 // Module 13874 (GuildBoostingMarketingProgressBar)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8025 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
 import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 13875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

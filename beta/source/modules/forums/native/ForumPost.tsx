@@ -1,7 +1,7 @@
 // Module ID: 11676
 // Function ID: 11677
 // Name: ForumPost
-// Dependencies: [19, 2065, 4760, 11677, 21, 558, 576, 11678, 11682, 11694, 504, 38, 7004, 9327, 11698, 11697, 8479, 11704, 2075, 2]
+// Dependencies: [19, 2065, 4760, 11677, 21, 558, 576, 11678, 11682, 11694, 504, 38, 7004, 9322, 11698, 11697, 8474, 11704, 2075, 2]
 
 // Module 11676 (ForumPost)
 import react2 from "react" /* 576 */;
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   } else {
     tmp15 = cResult[7];
   }
-  const tmpResult6 = threadId(9327);
+  const tmpResult6 = threadId(9322);
   const content = tmpResult6.useForumPostFirstMessageMarkup(tmp15).content;
   let tmp16 = null;
   if (loaded) {
@@ -242,7 +242,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   const obj3 = threadId(7004);
   const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(9327);
+  threadId(9322);
   const tmp = threadId;
   const tmp4 = stateFromStores;
   if (loaded) {

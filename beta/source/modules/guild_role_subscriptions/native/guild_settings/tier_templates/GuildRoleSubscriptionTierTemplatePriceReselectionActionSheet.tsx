@@ -1,7 +1,7 @@
 // Module ID: 18610
 // Function ID: 18611
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1392, 1096, 21, 5092, 587, 558, 576, 4832, 18516, 17029, 6157, 1126, 6940, 15524, 5088, 8674, 1631, 1200, 5380, 5056, 6307, 6840, 2]
+// Dependencies: [32, 19, 17, 1392, 1096, 21, 5092, 587, 558, 576, 4832, 18516, 17029, 6157, 1126, 6940, 15524, 5088, 8669, 1631, 1200, 5380, 5056, 6307, 6840, 2]
 
 // Module 18610 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import react_native from "react-native" /* 4832 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15524 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

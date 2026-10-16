@@ -1,7 +1,7 @@
 // Module ID: 11985
 // Function ID: 11986
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 11359, 1415, 6157, 4764, 11986, 9321, 4850, 5093, 11987, 6185, 1112, 11984, 6925, 2]
+// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 11359, 1415, 6157, 4764, 11986, 9316, 4850, 5093, 11987, 6185, 1112, 11984, 6925, 2]
 
 // Module 11985 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ let obj3;
 let size;
 let size1;
 let tmp;
-const GuildOnboardingHomeTypes = tmp(9321);
+const GuildOnboardingHomeTypes = tmp(9316);
 let View = react_native.View;
 let ChannelStore = ChannelStore_mod;
 let Routes = Constants.Routes;

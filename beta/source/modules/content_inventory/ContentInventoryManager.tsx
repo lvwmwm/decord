@@ -1,13 +1,13 @@
 // Module ID: 18632
 // Function ID: 18633
 // Name: ContentInventoryManager
-// Dependencies: [5, 5757, 5761, 5888, 6065, 11605, 8455, 8470, 1085, 1102, 12, 13382, 584, 13986, 18633, 6808, 2]
+// Dependencies: [5, 5757, 5761, 5888, 6065, 11605, 8450, 8465, 1085, 1102, 12, 13382, 584, 13986, 18633, 6808, 2]
 
 // Module 18632 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8470 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8465 */;
 import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13382 */;
 import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13986 */;
 import ContentInventoryFeature from "ContentInventoryFeature" /* 18633 */;
@@ -17,7 +17,7 @@ import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import IdleStore from "IdleStore" /* 5888 */;
 import WindowStore from "WindowStore" /* 6065 */;
 import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11605 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8455 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8450 */;
 import module_12 from "module_12" /* 12 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 17055
 // Function ID: 17056
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1244, 10652, 21, 5092, 587, 558, 576, 1631, 1503, 504, 6946, 17054, 5056, 17056, 17072, 17074, 11415, 17080, 17081, 6892, 17100, 10309, 1126, 5088, 3849, 5379, 11413, 17101, 6265, 11414, 6059, 13002, 16655, 9242, 6180, 2]
+// Dependencies: [19, 17, 1244, 10652, 21, 5092, 587, 558, 576, 1631, 1503, 504, 6946, 17054, 5056, 17056, 17072, 17074, 11415, 17080, 17081, 6892, 17100, 10309, 1126, 5088, 3849, 5379, 11413, 17101, 6265, 11414, 6059, 13002, 16655, 9237, 6180, 2]
 
 // Module 17055 (ConjureProjectList)
 import nativeDefault from "native" /* 587 */;
@@ -903,7 +903,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         tmp30 = closure_9(MentionsBadgeDefault, obj9);
       }
       items3 = [tmp30, ];
-      const obj10 = { IconComponent: project(9242).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
+      const obj10 = { IconComponent: project(9237).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
       const tmp35 = ConjureHeaderIconButtonDefault;
       intl4 = tmp(1126).intl;
       items3[1] = closure_9(tmp35, obj10);
@@ -978,7 +978,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       tmp14Result3 = tmp14(tmp18(16655), obj6);
     }
     items2 = [tmp14Result3, ];
-    const obj7 = { IconComponent: project(9242).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
+    const obj7 = { IconComponent: project(9237).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
     const tmp18Result = ConjureHeaderIconButtonDefault;
     intl4 = tmp2(1126).intl;
     items2[1] = closure_9(tmp18Result, obj7);

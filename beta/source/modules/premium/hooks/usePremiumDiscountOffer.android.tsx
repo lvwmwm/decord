@@ -1,12 +1,12 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8085
+// Function ID: 8086
 // Name: usePremiumDiscountOffer
-// Dependencies: [7132, 1392, 558, 576, 8091, 7127, 573, 2]
+// Dependencies: [7132, 1392, 558, 576, 8086, 7127, 573, 2]
 // Exports: usePremiumGroupDiscountOffer
 
-// Module 8090 (usePremiumDiscountOffer)
+// Module 8085 (usePremiumDiscountOffer)
 import react from "react" /* 576 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8091 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8086 */;
 import IAPStore from "IAPStore" /* 7132 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

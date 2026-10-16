@@ -1,7 +1,7 @@
 // Module ID: 10720
 // Function ID: 10721
 // Name: GuildRoleConnectionsModal
-// Dependencies: [19, 21, 1126, 7089, 7729, 10721, 558, 576, 6688, 2]
+// Dependencies: [19, 21, 1126, 7089, 7724, 10721, 558, 576, 6688, 2]
 
 // Module 10720 (GuildRoleConnectionsModal)
 import Fragment from "Fragment" /* 21 */;

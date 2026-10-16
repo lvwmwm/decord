@@ -1,9 +1,9 @@
-// Module ID: 8602
-// Function ID: 8603
+// Module ID: 8597
+// Function ID: 8598
 // Name: CreateChannelActionCreators
 // Dependencies: [5966, 1085, 1095, 584, 5938, 1273, 2077, 1295, 6809, 6804, 7028, 2]
 
-// Module 8602 (CreateChannelActionCreators)
+// Module 8597 (CreateChannelActionCreators)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;

@@ -1,7 +1,7 @@
 // Module ID: 11513
 // Function ID: 11514
 // Name: formatPollMessageChatData
-// Dependencies: [5081, 5987, 2065, 2125, 5432, 1390, 10489, 1085, 1096, 5745, 4764, 4768, 1415, 8958, 4756, 4737, 11514, 1126, 7898, 11516, 1382, 11517, 11518, 2]
+// Dependencies: [5081, 5987, 2065, 2125, 5432, 1390, 10489, 1085, 1096, 5745, 4764, 4768, 1415, 8953, 4756, 4737, 11514, 1126, 7893, 11516, 1382, 11517, 11518, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
 // Module 11513 (formatPollMessageChatData)
@@ -13,7 +13,7 @@ import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;
 import merged5 from "merged5" /* 5745 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8958 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8953 */;
 import PollsInteractionStore from "PollsInteractionStore" /* 10489 */;
 import PollLayoutTypes from "PollLayoutTypes" /* 11516 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

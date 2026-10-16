@@ -1,16 +1,16 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8072
+// Function ID: 8073
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [4783, 5092, 587, 7891, 8078, 8079, 1126, 3280, 2]
+// Dependencies: [4783, 5092, 587, 7886, 8073, 8074, 1126, 3280, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8077 (PremiumGroupInviteEmbed)
+// Module 8072 (PremiumGroupInviteEmbed)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import createStyles from "createStyles" /* 5092 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7891 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8078 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8079 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8073 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8074 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 4783 */;
 import size from "module_2" /* 2 */;
 

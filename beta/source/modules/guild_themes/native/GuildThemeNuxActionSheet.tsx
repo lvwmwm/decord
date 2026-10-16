@@ -1,7 +1,7 @@
 // Module ID: 16596
 // Function ID: 16597
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4939, 5006, 2062, 21, 3, 5092, 587, 558, 576, 16597, 5027, 504, 5056, 1126, 16598, 5088, 6262, 6263, 7568, 5379, 6840, 2]
+// Dependencies: [5, 32, 19, 17, 4939, 5006, 2062, 21, 3, 5092, 587, 558, 576, 16597, 5027, 504, 5056, 1126, 16598, 5088, 6262, 6263, 7563, 5379, 6840, 2]
 
 // Module 16596 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
@@ -514,14 +514,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   if (tmp10) {
     const obj10 = { style: tmp.warning, children: closure_10(InlineNotice, obj11) };
     obj11 = { type: "warning", message: intl7.string(tmp2(1126).t.tTHQAy), role: "status" };
-    InlineNotice = tmp2(7568).InlineNotice;
+    InlineNotice = tmp2(7563).InlineNotice;
     intl7 = tmp2(1126).intl;
     tmp20Result = tmp20(tmp21, obj10);
   }
   items7[4] = tmp20Result;
   let tmp20Result2 = null;
   if (null != tmp7) {
-    const obj12 = { style: tmp.warning, children: closure_10(tmp2(7568).InlineNotice, obj13) };
+    const obj12 = { style: tmp.warning, children: closure_10(tmp2(7563).InlineNotice, obj13) };
     obj13 = { type: "critical", message: tmp7, role: "alert" };
     tmp20Result2 = tmp20(tmp21, obj12);
   }

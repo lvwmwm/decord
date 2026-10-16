@@ -1,7 +1,7 @@
 // Module ID: 11052
 // Function ID: 11053
 // Name: useScreenshareUtils
-// Dependencies: [19, 17, 5897, 2012, 1085, 5117, 5068, 9703, 2014, 8786, 7444, 5900, 5243, 5289, 11053, 11047, 1628, 11063, 11064, 11065, 11066, 558, 576, 504, 11058, 6852, 1126, 2]
+// Dependencies: [19, 17, 5897, 2012, 1085, 5117, 5068, 9698, 2014, 8781, 7439, 5900, 5243, 5289, 11053, 11047, 1628, 11063, 11064, 11065, 11066, 558, 576, 504, 11058, 6852, 1126, 2]
 // Exports: getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
 // Module 11052 (useScreenshareUtils)
@@ -14,9 +14,9 @@ import Constants2 from "Constants" /* 5117 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import CallsUtils from "CallsUtils" /* 8786 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9703 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import CallsUtils from "CallsUtils" /* 8781 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9698 */;
 import useHasVideoPermission from "useHasVideoPermission" /* 11047 */;
 import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11058 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 18565
 // Function ID: 18566
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 15521, 18553, 15498, 21, 5092, 587, 558, 576, 6157, 18566, 5088, 8674, 1126, 1415, 18567, 14125, 15525, 38, 18548, 8580, 8677, 18568, 18569, 18571, 15505, 18544, 15520, 18572, 18573, 18582, 15524, 18583, 18555, 2]
+// Dependencies: [32, 19, 17, 15521, 18553, 15498, 21, 5092, 587, 558, 576, 6157, 18566, 5088, 8669, 1126, 1415, 18567, 14125, 15525, 38, 18548, 8575, 8672, 18568, 18569, 18571, 15505, 18544, 15520, 18572, 18573, 18582, 15524, 18583, 18555, 2]
 
 // Module 18565 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15521 */;
 import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 18544 */;
@@ -677,7 +677,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
           }
           if (cResult[15] !== tmp6.header) {
             const obj3 = { style: header, children: tmp24 };
-            const tmp28 = closure_12(options(8677), obj3);
+            const tmp28 = closure_12(options(8672), obj3);
             cResult[15] = tmp6.header;
             cResult[16] = tmp28;
             tmp26 = tmp28;
@@ -735,7 +735,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                   }
                   if (cResult[29] !== tmp6.header) {
                     const obj5 = { style: header2, children: tmp40 };
-                    const tmp44 = closure_12(options(8677), obj5);
+                    const tmp44 = closure_12(options(8672), obj5);
                     cResult[29] = tmp6.header;
                     cResult[30] = tmp44;
                     tmp42 = tmp44;
@@ -868,7 +868,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
       }
     }
     const obj11 = { label: tmp13, value: null != selectedOption, onValueChange: tmp8, disabled: roleSubscriptionSettingsDisabled };
-    const tmp17 = closure_12(onChangeTrialInterval(8580).FormSwitchRow, obj11);
+    const tmp17 = closure_12(onChangeTrialInterval(8575).FormSwitchRow, obj11);
     cResult[4] = tmp8;
     cResult[5] = null != selectedOption;
     cResult[6] = roleSubscriptionSettingsDisabled;
@@ -930,7 +930,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const obj2 = { style: tmp.listFooterContainer, children: items1 };
   const obj3 = { label: intl.string(onChangeTrialInterval(1126).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
-  const FormSwitchRow = onChangeTrialInterval(8580).FormSwitchRow;
+  const FormSwitchRow = onChangeTrialInterval(8575).FormSwitchRow;
   intl = onChangeTrialInterval(1126).intl;
   items1 = [closure_12(FormSwitchRow, obj3), ];
   if (null == selectedOption) {
@@ -944,7 +944,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   intl2 = tmp8(1126).intl;
   items3 = [closure_12(Text, obj5), , , , , , ];
   const obj6 = { style: tmp4.header, children: intl3.string(onChangeTrialInterval(1126).t.m1KuWd) };
-  const tmp2Result = options(8677);
+  const tmp2Result = options(8672);
   intl3 = tmp8(1126).intl;
   items3[1] = closure_12(tmp2Result, obj6);
   const obj7 = { style: items4, variant: "text-sm/medium", color: "text-default", children: intl4.string(onChangeTrialInterval(1126).t.NB9NLF) };
@@ -962,7 +962,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   }
   items3[3] = closure_12(tmp2Result4, obj8);
   const obj9 = { style: tmp4.header, children: intl5.string(onChangeTrialInterval(1126).t["/JD9oe"]) };
-  const tmp2Result5 = options(8677);
+  const tmp2Result5 = options(8672);
   intl5 = tmp8(1126).intl;
   items3[4] = closure_12(tmp2Result5, obj9);
   const obj10 = { style: items5, variant: "text-sm/medium", color: "text-default", children: intl6.string(onChangeTrialInterval(1126).t.Cg5eBm) };

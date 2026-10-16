@@ -1,7 +1,7 @@
 // Module ID: 10705
 // Function ID: 10706
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7255, 6801, 4748, 2087, 5966, 1085, 2062, 21, 5092, 587, 558, 576, 6665, 10706, 504, 10708, 4938, 2049, 10704, 6739, 6182, 6185, 1126, 6296, 6157, 10710, 5088, 8625, 5421, 4832, 6265, 6178, 4818, 8159, 6177, 6188, 1200, 5079, 2]
+// Dependencies: [32, 19, 17, 7250, 6801, 4748, 2087, 5966, 1085, 2062, 21, 5092, 587, 558, 576, 6665, 10706, 504, 10708, 4938, 2049, 10704, 6739, 6182, 6185, 1126, 6296, 6157, 10710, 5088, 8620, 5421, 4832, 6265, 6178, 4818, 8154, 6177, 6188, 1200, 5079, 2]
 
 // Module 10705 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7255 */;
+import NewChannelsStore from "NewChannelsStore" /* 7250 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;

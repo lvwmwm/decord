@@ -1,14 +1,14 @@
 // Module ID: 15598
 // Function ID: 15599
 // Name: LightModeThemeSetting
-// Dependencies: [1205, 1208, 7993, 1085, 558, 576, 504, 10663, 1126, 15599, 15600, 2]
+// Dependencies: [1205, 1208, 7988, 1085, 558, 576, 504, 10663, 1126, 15599, 15600, 2]
 
 // Module 15598 (LightModeThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15599 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

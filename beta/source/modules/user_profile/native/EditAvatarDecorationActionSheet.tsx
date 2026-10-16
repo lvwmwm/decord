@@ -1,23 +1,23 @@
-// Module ID: 8283
-// Function ID: 8284
+// Module ID: 8278
+// Function ID: 8279
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7280, 7269, 2125, 1085, 21, 5092, 587, 558, 576, 8284, 8294, 8295, 6852, 6879, 1265, 8296, 1126, 5088, 8297, 6840, 4827, 10090, 504, 13468, 8291, 13473, 13478, 13479, 8298, 8383, 1200, 13480, 2]
+// Dependencies: [32, 19, 17, 7275, 7264, 2125, 1085, 21, 5092, 587, 558, 576, 8279, 8289, 8290, 6852, 6879, 1265, 8291, 1126, 5088, 8292, 6840, 4827, 10090, 504, 13468, 8286, 13473, 13478, 13479, 8293, 8378, 1200, 13480, 2]
 
-// Module 8283 (EditAvatarDecorationActionSheet)
+// Module 8278 (EditAvatarDecorationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7269 */;
-import useShopProductItems from "useShopProductItems" /* 8296 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8383 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7264 */;
+import useShopProductItems from "useShopProductItems" /* 8291 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8378 */;
 import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 13473 */;
 import AvatarGridDefault from "AvatarGrid" /* 13480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -64,8 +64,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
       if (cResult[2] === isTryItOut) {
         tmp5 = cResult[3];
       }
-      ({ pendingAvatar, setPendingAvatarDecoration } = selectedAvatarDecoration(8284)(tmp5));
-      selectedAvatarDecoration(8284)(tmp5);
+      ({ pendingAvatar, setPendingAvatarDecoration } = selectedAvatarDecoration(8279)(tmp5));
+      selectedAvatarDecoration(8279)(tmp5);
       if (cResult[4] === pendingAvatar) {
         let tmp8;
         let tmp15;
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
           tmp8 = cResult[6];
         }
         [selectedAvatarDecoration, tmp14] = react.useState(currentAvatarDecoration);
-        const tmpResult = tmp(8295);
+        const tmpResult = tmp(8290);
         const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
         if (cResult[7] !== analyticsLocations) {
           let items = analyticsLocations;
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
         cResult[12] = N;
       }
       const obj5 = { userId: user.id, image: pendingAvatar };
-      const tmpResult2 = tmp(8294);
+      const tmpResult2 = tmp(8289);
       const pendingAvatarSrc = tmpResult2.getPendingAvatarSrc(obj5);
       cResult[4] = pendingAvatar;
       cResult[5] = user.id;
@@ -276,14 +276,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   selectedAvatarDecoration = undefined;
   let tmp = closure_13();
-  const tmp4 = selectedAvatarDecoration(8284)({ analyticsLocations, isTryItOut, guildId });
+  const tmp4 = selectedAvatarDecoration(8279)({ analyticsLocations, isTryItOut, guildId });
   const setPendingAvatarDecoration = tmp4.setPendingAvatarDecoration;
   const pendingAvatar = tmp4.pendingAvatar;
-  let obj = setPendingAvatarDecoration(8294);
+  let obj = setPendingAvatarDecoration(8289);
   let obj2 = { userId: user.id, image: pendingAvatar };
   const pendingAvatarSrc = obj.getPendingAvatarSrc(obj2);
   [selectedAvatarDecoration, tmp9] = react.useState(currentAvatarDecoration);
-  const obj4 = setPendingAvatarDecoration(8295);
+  const obj4 = setPendingAvatarDecoration(8290);
   const bottomSheetRef = obj4.useBottomSheetRef().bottomSheetRef;
   const tmp10 = selectedAvatarDecoration(6852);
   if (analyticsLocations == null) {
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   const obj10 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(6879).EDIT_AVATAR_DECORATION_SHEET };
   skuId = undefined;
   tmp14 = closure_11;
-  const tmp2Result = selectedAvatarDecoration(8297);
+  const tmp2Result = selectedAvatarDecoration(8292);
   if (currentAvatarDecoration != null) {
     skuId = currentAvatarDecoration.skuId;
   }
@@ -754,7 +754,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   previewSkuId = previewSkuId.previewSkuId;
   let tmp3 = dependencyMap;
   const tmp = closure_13();
-  const tmp4 = purchase(8298)(previewSkuId);
+  const tmp4 = purchase(8293)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -791,7 +791,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     tmp10 = _require;
   }
   const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1200).AvatarSizes.EDIT_AVATAR_DECORATION };
-  const tmp2Result = purchase(8383);
+  const tmp2Result = purchase(8378);
   items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(13480), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 });

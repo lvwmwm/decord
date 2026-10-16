@@ -1,7 +1,7 @@
 // Module ID: 18589
 // Function ID: 18590
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 15498, 1085, 21, 5092, 587, 558, 576, 4818, 15531, 14125, 18571, 15520, 6884, 18548, 1126, 8677, 18554, 18590, 18555, 2]
+// Dependencies: [32, 19, 17, 15498, 1085, 21, 5092, 587, 558, 576, 4818, 15531, 14125, 18571, 15520, 6884, 18548, 1126, 8672, 18554, 18590, 18555, 2]
 
 // Module 18589 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import useToken5 from "useToken" /* 4818 */;
 import RoleIconUtils from "RoleIconUtils" /* 6884 */;
-import FormHeaderDefault from "FormHeader" /* 8677 */;
+import FormHeaderDefault from "FormHeader" /* 8672 */;
 import FormStylesDefault from "FormStyles" /* 14125 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
@@ -358,7 +358,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   const obj6 = { children: items1 };
   items1 = [closure_9(closure_13, { role }), , , , ];
   const obj7 = { style: tmp3.header, children: intl.string(require("intl").t.sEr1zr) };
-  const tmpResult = role(8677);
+  const tmpResult = role(8672);
   intl = tmp4(1126).intl;
   items1[1] = closure_9(tmpResult, obj7);
   const obj8 = {
@@ -377,7 +377,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   intl2 = tmp4(1126).intl;
   items1[2] = closure_9(tmpResult3, obj8);
   const obj9 = { style: tmp3.header, children: intl3.string(require("intl").t["W7hH+z"]) };
-  const tmpResult4 = role(8677);
+  const tmpResult4 = role(8672);
   intl3 = tmp4(1126).intl;
   items1[3] = closure_9(tmpResult4, obj9);
   items1[4] = closure_9(role(18590), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });

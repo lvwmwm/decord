@@ -1,7 +1,7 @@
 // Module ID: 7131
 // Function ID: 7132
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1390, 4774, 4775, 7110, 1999, 7132, 1085, 1392, 21, 5092, 7134, 1631, 6852, 6879, 6683, 5396, 1265, 504, 1503, 2082, 7135, 7137, 7139, 7116, 9400, 7170, 10063, 7169, 13641, 8092, 6680, 6684, 4769, 4784, 13642, 13683, 13685, 13686, 9395, 13756, 10497, 1382, 2]
+// Dependencies: [32, 19, 17, 1390, 4774, 4775, 7110, 1999, 7132, 1085, 1392, 21, 5092, 7134, 1631, 6852, 6879, 6683, 5396, 1265, 504, 1503, 2082, 7135, 7137, 7139, 7116, 9395, 7165, 10058, 7164, 13641, 8087, 6680, 6684, 4769, 4784, 13642, 13683, 13685, 13686, 9390, 13756, 10497, 1382, 2]
 // Exports: default
 
 // Module 7131 (UserSettingsPremium)
@@ -13,7 +13,7 @@ import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7134 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 7139 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8092 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8087 */;
 import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 13641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -209,11 +209,11 @@ export default function UserSettingsPremium(applicationId) {
     }
     ref.current = tmp;
   }, items11);
-  const obj12 = applicationId(7170);
+  const obj12 = applicationId(7165);
   premiumTrialOffer = obj12.usePremiumTrialOffer();
-  const obj13 = applicationId(10063);
+  const obj13 = applicationId(10058);
   premiumDiscountOffer = obj13.usePremiumDiscountOffer();
-  const obj14 = applicationId(7169);
+  const obj14 = applicationId(7164);
   const premiumTrialOfferPremiumType = obj14.usePremiumTrialOfferPremiumType();
   const items12 = [premiumTrialOffer, premiumDiscountOffer];
   const effect2 = analyticsLocations.useEffect(() => {
@@ -282,9 +282,9 @@ export default function UserSettingsPremium(applicationId) {
     let TIER_2_LEADING = premiumFeatureCardOrder;
     if (null == premiumFeatureCardOrder) {
       if (premiumTrialOfferPremiumType === TIER_0.TIER_0) {
-        premiumFeatureCardOrder = tmp6(9395).PremiumFeatureCardOrder.TIER_0_LEADING;
+        premiumFeatureCardOrder = tmp6(9390).PremiumFeatureCardOrder.TIER_0_LEADING;
       } else if (premiumTrialOfferPremiumType === tmp33.TIER_2) {
-        premiumFeatureCardOrder = tmp6(9395).PremiumFeatureCardOrder.TIER_2_LEADING;
+        premiumFeatureCardOrder = tmp6(9390).PremiumFeatureCardOrder.TIER_2_LEADING;
       }
       TIER_2_LEADING = premiumFeatureCardOrder;
     }
@@ -318,7 +318,7 @@ export default function UserSettingsPremium(applicationId) {
       stateFromStores3 = tmp30(PremiumAccountCreditDefault, obj24);
     }
     if (TIER_2_LEADING == null) {
-      TIER_2_LEADING = tmp6(9395).PremiumFeatureCardOrder.TIER_2_LEADING;
+      TIER_2_LEADING = tmp6(9390).PremiumFeatureCardOrder.TIER_2_LEADING;
     }
     tmp30Result4 = tmp30(tmp2Result, obj21);
   }

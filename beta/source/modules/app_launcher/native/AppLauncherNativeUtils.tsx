@@ -1,7 +1,7 @@
 // Module ID: 11729
 // Function ID: 11730
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2065, 1390, 1502, 1085, 5403, 5107, 7247, 11730, 7243, 1998, 7920, 1988, 9247, 1415, 558, 576, 10622, 9539, 11735, 6858, 5057, 2]
+// Dependencies: [19, 2065, 1390, 1502, 1085, 5403, 5107, 7242, 11730, 7238, 1998, 7915, 1988, 9242, 1415, 558, 576, 10622, 9534, 11735, 6858, 5057, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
 // Module 11729 (AppLauncherNativeUtils)
@@ -12,9 +12,9 @@ import Server from "Server" /* 1998 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7920 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 7915 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
 import FrecencySection from "FrecencySection" /* 11730 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -302,9 +302,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   const APPLICATION_COMMAND_SECTION_SELECTED = AnalyticEvents.APPLICATION_COMMAND_SECTION_SELECTED;
   AppAnalyticsUtils;
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    APP = tmp(7247).ApplicationCommandTriggerSections.BUILT_IN;
+    APP = tmp(7242).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7247).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7242).ApplicationCommandTriggerSections.APP;
   }
   id = application.id;
   if (id == null) {

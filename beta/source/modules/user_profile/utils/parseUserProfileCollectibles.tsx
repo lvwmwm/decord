@@ -1,10 +1,10 @@
-// Module ID: 7331
-// Function ID: 7332
+// Module ID: 7326
+// Function ID: 7327
 // Name: parseUserProfileCollectibles
 // Dependencies: [1993, 2]
 // Exports: default
 
-// Module 7331 (parseUserProfileCollectibles)
+// Module 7326 (parseUserProfileCollectibles)
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import size from "module_2" /* 2 */;
 

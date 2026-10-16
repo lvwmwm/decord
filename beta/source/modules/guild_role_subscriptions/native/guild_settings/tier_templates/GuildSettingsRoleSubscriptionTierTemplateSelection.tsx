@@ -1,7 +1,7 @@
 // Module ID: 18604
 // Function ID: 18605
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 15527, 18553, 1085, 21, 5092, 587, 558, 576, 5088, 18605, 573, 15505, 15506, 11913, 18611, 1631, 1503, 1265, 5107, 18561, 9724, 1126, 6201, 1273, 8972, 1200, 18548, 2]
+// Dependencies: [32, 19, 17, 15527, 18553, 1085, 21, 5092, 587, 558, 576, 5088, 18605, 573, 15505, 15506, 11913, 18611, 1631, 1503, 1265, 5107, 18561, 9719, 1126, 6201, 1273, 8967, 1200, 18548, 2]
 
 // Module 18604 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import react2 from "react" /* 576 */;

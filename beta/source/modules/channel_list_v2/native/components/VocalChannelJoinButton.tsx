@@ -1,7 +1,7 @@
 // Module ID: 11991
 // Function ID: 11992
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4750, 5113, 1085, 21, 5092, 587, 1382, 558, 576, 9308, 5031, 4969, 10358, 573, 5956, 5950, 5895, 11992, 8225, 8229, 1126, 5088, 5379, 2]
+// Dependencies: [19, 17, 4750, 5113, 1085, 21, 5092, 587, 1382, 558, 576, 9303, 5031, 4969, 10358, 573, 5956, 5950, 5895, 11992, 8220, 8224, 1126, 5088, 5379, 2]
 
 // Module 11991 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
@@ -242,7 +242,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (small === undefined) {
     small = false;
   }
-  const tmp2 = voiceStates(9308)();
+  const tmp2 = voiceStates(9303)();
   const tmp3 = voiceStates(5031)();
   const obj = channel(4969);
   const tmp5 = closure_11(tmp2, obj.isThemeLight(tmp3));
@@ -314,9 +314,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
           if (!memo) {
             if (isGuildStageVoiceResult) {
-              let VoiceNormalIcon = tmp4(8225).StageIcon;
+              let VoiceNormalIcon = tmp4(8220).StageIcon;
             } else {
-              VoiceNormalIcon = tmp4(8229).VoiceNormalIcon;
+              VoiceNormalIcon = tmp4(8224).VoiceNormalIcon;
             }
             tmp20Result2 = <VoiceNormalIcon size="xs" style={items3} />;
           }

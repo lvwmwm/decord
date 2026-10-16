@@ -1,7 +1,7 @@
 // Module ID: 17299
 // Function ID: 17300
 // Name: ConjurePlanWidget
-// Dependencies: [19, 502, 21, 5092, 587, 558, 576, 8368, 504, 7326, 5088, 1126, 3849, 13265, 5377, 2]
+// Dependencies: [19, 502, 21, 5092, 587, 558, 576, 8363, 504, 7321, 5088, 1126, 3849, 13265, 5377, 2]
 
 // Module 17299 (ConjurePlanWidget)
 import get_initialized from "get initialized" /* 504 */;
@@ -9,8 +9,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7326 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
 import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13265 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePla
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7326).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7321).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp11 = applicationWidget;

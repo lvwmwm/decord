@@ -1,7 +1,7 @@
 // Module ID: 11759
 // Function ID: 11760
 // Name: MarkupMessagePreviewReactRules
-// Dependencies: [19, 11760, 21, 5087, 8128, 11761, 6300, 5400, 5402, 11766, 6157, 1383, 11767, 11768, 1200, 11769, 2]
+// Dependencies: [19, 11760, 21, 5087, 8123, 11761, 6300, 5400, 5402, 11766, 6157, 1383, 11767, 11768, 1200, 11769, 2]
 // Exports: default
 
 // Module 11759 (MarkupMessagePreviewReactRules)
@@ -9,7 +9,7 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 5087 */;
 import MarkupRulesDefault from "MarkupRules" /* 5402 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8128 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8123 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import ChannelListLayout from "ChannelListLayout" /* 11761 */;
 import HighlightTextDefault from "HighlightText" /* 11766 */;

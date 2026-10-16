@@ -1,7 +1,7 @@
 // Module ID: 13558
 // Function ID: 13559
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 8368, 7327, 13373, 7323, 13250, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 8363, 7322, 13373, 7318, 13250, 1126, 5088, 2]
 
 // Module 13558 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7323 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7327 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7318 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7322 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

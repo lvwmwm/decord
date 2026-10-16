@@ -1,7 +1,7 @@
 // Module ID: 16309
 // Function ID: 16310
 // Name: ParentalControlsFriendRequestsMutualGuildsSetting
-// Dependencies: [19, 7259, 7993, 1085, 558, 576, 7741, 15097, 6684, 1403, 10663, 1126, 2]
+// Dependencies: [19, 7254, 7988, 1085, 558, 576, 7736, 15097, 6684, 1403, 10663, 1126, 2]
 
 // Module 16309 (ParentalControlsFriendRequestsMutualGuildsSetting)
 import react2 from "react" /* 576 */;
@@ -9,11 +9,11 @@ import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
-import useSelectedTeen from "useSelectedTeen" /* 7741 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useSelectedTeen from "useSelectedTeen" /* 7736 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15097 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendR
   return tmp6.mutualGuilds;
 }) : (function useFriendRequestsMutualGuildsSettingValue() {
   let controlledSetting;
-  let obj = controlledSetting(7741);
+  let obj = controlledSetting(7736);
   const selectedTeenId = obj.useSelectedTeenId();
   const ParentalControlledFriendSourceFlags = controlledSetting(15097).ParentalControlledFriendSourceFlags;
   controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);

@@ -1,7 +1,7 @@
 // Module ID: 16157
 // Function ID: 16158
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12542, 6783, 7985, 10718, 5052, 16158, 16159, 10713, 5092, 587, 12, 558, 576, 5379, 9363, 5088, 6182, 2]
+// Dependencies: [109, 19, 17, 21, 12542, 6783, 7980, 10718, 5052, 16158, 16159, 10713, 5092, 587, 12, 558, 576, 5379, 9358, 5088, 6182, 2]
 
 // Module 16157 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 6783 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7985 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7980 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 10713 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 10718 */;
 import AssetRegistryDefault6 from "AssetRegistry" /* 12542 */;

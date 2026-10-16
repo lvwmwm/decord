@@ -1,12 +1,12 @@
 // Module ID: 17579
 // Function ID: 17580
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1126, 3947, 558, 576, 17577, 5056, 6839, 6262, 8612, 6899, 6263, 2]
+// Dependencies: [19, 21, 1126, 3947, 558, 576, 17577, 5056, 6839, 6262, 8607, 6899, 6263, 2]
 
 // Module 17579 (VoiceChannelAppActionSheet)
 import _modDef3947 from "module_3947" /* 3947 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8612 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8607 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

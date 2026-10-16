@@ -1,12 +1,12 @@
 // Module ID: 16540
 // Function ID: 16541
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 5081, 7249, 16452, 2087, 2116, 5116, 1085, 21, 558, 576, 1506, 4976, 10626, 16541, 16542, 16569, 16615, 16616, 15374, 16457, 16617, 16570, 16619, 7258, 504, 6077, 16620, 16624, 7251, 16625, 11577, 16438, 15375, 16680, 16692, 16695, 16697, 11631, 6846, 16538, 16699, 16705, 16709, 16710, 16723, 2090, 16728, 9461, 16736, 11494, 2]
+// Dependencies: [109, 32, 19, 17, 5081, 7244, 16452, 2087, 2116, 5116, 1085, 21, 558, 576, 1506, 4976, 10626, 16541, 16542, 16569, 16615, 16616, 15374, 16457, 16617, 16570, 16619, 7253, 504, 6077, 16620, 16624, 7246, 16625, 11577, 16438, 15375, 16680, 16692, 16695, 16697, 11631, 6846, 16538, 16699, 16705, 16709, 16710, 16723, 2090, 16728, 9456, 16736, 11494, 2]
 
 // Module 16540 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ChannelListState from "ChannelListState" /* 7251 */;
+import ChannelListState from "ChannelListState" /* 7246 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16457 */;
 import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 16570 */;
@@ -20,7 +20,7 @@ import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ChannelListStore from "ChannelListStore" /* 7249 */;
+import ChannelListStore from "ChannelListStore" /* 7244 */;
 import HomeDrawerStore from "HomeDrawerStore" /* 16452 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -858,7 +858,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           return closure_16(_default, obj4);
         } else {
           let tmp6Result;
-          const tmp2Result2 = selectedGuildId(9461);
+          const tmp2Result2 = selectedGuildId(9456);
           if (tmp2Result2.shouldNSFWGateGuild(selectedGuildId)) {
             const obj5 = { style: merged.style, guildId: selectedGuildId };
             tmp6Result = tmp6(NsfwGateGuildSidebarDefault, obj5);

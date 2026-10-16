@@ -1,7 +1,7 @@
 // Module ID: 16738
 // Function ID: 16739
 // Name: HomePanelContent
-// Dependencies: [19, 17, 16452, 1085, 16739, 21, 5092, 558, 576, 16457, 16740, 4850, 11577, 10226, 16460, 9309, 4818, 587, 1383, 5371, 16819, 2]
+// Dependencies: [19, 17, 16452, 1085, 16739, 21, 5092, 558, 576, 16457, 16740, 4850, 11577, 10226, 16460, 9304, 4818, 587, 1383, 5371, 16819, 2]
 
 // Module 16738 (HomePanelContent)
 import react2 from "react" /* 576 */;
@@ -210,7 +210,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   const tmp9 = HomeDrawerStore((maxX) => maxX.maxX);
   dependencyMap = tmp9;
   const obj4 = isClientThemeOrCustomThemeActive;
-  const obj6 = ref(9309);
+  const obj6 = ref(9304);
   isClientThemeOrCustomThemeActive = obj6.useIsClientThemeOrCustomThemeActive();
   const obj7 = ref(4818);
   const token = obj7.useToken(panelTranslateX(587).colors.BACKGROUND_BASE_LOWEST);
@@ -442,7 +442,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   const guildsBarDrawerStyle = homeDrawerState.guildsBarDrawerStyle;
   const tmp8 = HomeDrawerStore((maxX) => maxX.maxX);
   dependencyMap = tmp8;
-  const obj4 = ref(9309);
+  const obj4 = ref(9304);
   isClientThemeOrCustomThemeActive = obj4.useIsClientThemeOrCustomThemeActive();
   const obj5 = ref(4818);
   const token = obj5.useToken(panelTranslateX(587).colors.BACKGROUND_BASE_LOWEST);

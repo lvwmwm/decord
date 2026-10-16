@@ -1,13 +1,13 @@
 // Module ID: 15488
 // Function ID: 15489
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 5972, 15370, 21, 587, 5092, 558, 576, 15400, 15371, 4850, 5378, 8395, 15482, 1382, 15481, 15367, 15388, 5975, 7416, 15489, 6762, 6157, 5088, 1126, 6185, 15471, 2]
+// Dependencies: [19, 17, 5972, 15370, 21, 587, 5092, 558, 576, 15400, 15371, 4850, 5378, 8390, 15482, 1382, 15481, 15367, 15388, 5975, 7411, 15489, 6762, 6157, 5088, 1126, 6185, 15471, 2]
 
 // Module 15488 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5378 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15388 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -103,7 +103,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ withSpring: tmp(5378).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle1 = tmpResult7.useAnimatedStyle(fn2);
   const EXPANDED = QuestDockMode.EXPANDED;
-  const tmp9 = bountyCreative(8395)(activeQuestDockMode);
+  const tmp9 = bountyCreative(8390)(activeQuestDockMode);
   const tmpResult8 = tmp(15482);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = tmpResult8.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   if (cResult[0] !== isBountiesAndroidQuestBarSmokeAnimationEnabled) {

@@ -1,7 +1,7 @@
 // Module ID: 14853
 // Function ID: 14854
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5092, 587, 558, 576, 6673, 14843, 8294, 8292, 8289, 8291, 6679, 5056, 1126, 9036, 6839, 9734, 6840, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5092, 587, 558, 576, 6673, 14843, 8289, 8287, 8284, 8286, 6679, 5056, 1126, 9031, 6839, 9729, 6840, 2]
 
 // Module 14853 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
-import GIFPickerDefault from "GIFPicker" /* 9734 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
+import GIFPickerDefault from "GIFPicker" /* 9729 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

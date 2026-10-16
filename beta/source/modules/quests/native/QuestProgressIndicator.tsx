@@ -1,13 +1,13 @@
 // Module ID: 15410
 // Function ID: 15411
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 5081, 21, 4850, 7577, 5092, 587, 558, 576, 504, 5093, 6185, 1126, 6106, 15411, 12975, 2]
+// Dependencies: [19, 17, 5081, 21, 4850, 7572, 5092, 587, 558, 576, 504, 5093, 6185, 1126, 6106, 15411, 12975, 2]
 
 // Module 15410 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;

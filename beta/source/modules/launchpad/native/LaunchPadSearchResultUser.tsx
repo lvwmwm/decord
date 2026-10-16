@@ -1,7 +1,7 @@
 // Module ID: 18001
 // Function ID: 18002
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5081, 2129, 2065, 5108, 11639, 5966, 1085, 5967, 21, 5092, 587, 558, 576, 17411, 7015, 5386, 504, 11, 6059, 17992, 6185, 17412, 17990, 8385, 1200, 12588, 9314, 17414, 4962, 17991, 16802, 15612, 2]
+// Dependencies: [19, 5081, 2129, 2065, 5108, 11639, 5966, 1085, 5967, 21, 5092, 587, 558, 576, 17411, 7015, 5386, 504, 11, 6059, 17992, 6185, 17412, 17990, 8380, 1200, 12588, 9309, 17414, 4962, 17991, 16802, 15612, 2]
 
 // Module 18001 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1085 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
 import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16802 */;
 import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
 import renderChannelWrapperDefault from "renderChannelWrapper" /* 17412 */;
@@ -546,7 +546,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   tmp14Result = undefined;
   if (null != lastMessage) {
     if (null != channel) {
-      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(9314).ChannelListLayoutTypes.COMPACT };
+      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(9309).ChannelListLayoutTypes.COMPACT };
       const ChannelRowPreview = tmp6(12588).ChannelRowPreview;
       tmp14Result = tmp14(ChannelRowPreview, obj9);
     }

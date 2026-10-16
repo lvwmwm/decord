@@ -1,13 +1,13 @@
 // Module ID: 12313
 // Function ID: 12314
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8031, 558, 576, 504, 12297, 1126, 2600, 2]
+// Dependencies: [19, 8026, 558, 576, 504, 12297, 1126, 2600, 2]
 
 // Module 12313 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1126 */;
 import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12297 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8031 */;
+import GameServerStore from "GameServerStore" /* 8026 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

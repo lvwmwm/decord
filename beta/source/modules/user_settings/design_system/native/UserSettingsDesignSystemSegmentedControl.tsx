@@ -1,7 +1,7 @@
 // Module ID: 16153
 // Function ID: 16154
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 8530, 8779, 10601, 4828, 5379, 5377, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 8525, 8774, 10601, 4828, 5379, 5377, 2]
 
 // Module 16153 (UserSettingsDesignSystemSegmentedControl)
 import react2 from "react" /* 576 */;

@@ -1,7 +1,7 @@
 // Module ID: 14890
 // Function ID: 14891
 // Name: UserProfileFrameEditButton
-// Dependencies: [32, 19, 17, 6905, 2062, 1096, 21, 587, 5092, 7100, 2049, 8291, 10507, 1993, 5056, 14891, 2000, 1126, 14874, 6154, 9026, 1200, 13476, 2]
+// Dependencies: [32, 19, 17, 6905, 2062, 1096, 21, 587, 5092, 7100, 2049, 8286, 10507, 1993, 5056, 14891, 2000, 1126, 14874, 6154, 9021, 1200, 13476, 2]
 // Exports: default
 
 // Module 14890 (UserProfileFrameEditButton)
@@ -65,8 +65,8 @@ export default function UserProfileFrameEditButton(arg0) {
   const first = tmp5[0];
   let obj = { pendingValue: pendingProfileFrame, userValue: profileFrame, guildValue: profileFrame1, guildId };
   profileFrame = undefined;
-  const getProfilePreviewValue = user(8291).getProfilePreviewValue;
-  user(8291);
+  const getProfilePreviewValue = user(8286).getProfilePreviewValue;
+  user(8286);
   if (displayProfile != null) {
     const _userProfile = displayProfile._userProfile;
     if (_userProfile != null) {
@@ -100,7 +100,7 @@ export default function UserProfileFrameEditButton(arg0) {
   if (type === user(1993).CollectiblesItemType.PROFILE_FRAME) {
     first2 = product.items[0];
   }
-  const tmp2Result2 = user(8291);
+  const tmp2Result2 = user(8286);
   userProfileFrame = tmp2Result2.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
@@ -144,7 +144,7 @@ export default function UserProfileFrameEditButton(arg0) {
     if (null != first2) {
       const obj7 = { style: tmp.previewContainer, children: null };
       ({ profileFrame: first2, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(587).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(587).colors.BACKGROUND_SURFACE_HIGH });
-      guildId(9026);
+      guildId(9021);
       tmp22Result = tmp22(View, obj7);
     } else {
       const obj9 = { source: guildId(13476), style: tmp.noneIcon };

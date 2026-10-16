@@ -1,7 +1,7 @@
 // Module ID: 12184
 // Function ID: 12185
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 12185, 12186, 12187, 12188, 12189, 12190, 1126, 5092, 558, 576, 5031, 4969, 12, 7163, 6157, 5088, 5398, 2]
+// Dependencies: [19, 21, 12185, 12186, 12187, 12188, 12189, 12190, 1126, 5092, 558, 576, 5031, 4969, 12, 10060, 6157, 5088, 5398, 2]
 
 // Module 12184 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp8 = cResult[1];
     tmp9 = cResult[2];
   }
-  const tmpResult = require("module_7163");
+  const tmpResult = require("module_10060");
   const stableMemo = tmpResult.useStableMemo(tmp8, tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function y() {
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp11 = cResult[3];
     tmp12 = cResult[4];
   }
-  const tmpResult2 = require("module_7163");
+  const tmpResult2 = require("module_10060");
   const stableMemo1 = tmpResult2.useStableMemo(tmp11, tmp12);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -214,12 +214,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_7163");
+  const tmp5Result = require("module_10060");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_7163");
+  const tmp5Result2 = require("module_10060");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);

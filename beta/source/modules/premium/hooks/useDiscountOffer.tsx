@@ -1,14 +1,14 @@
-// Module ID: 8091
-// Function ID: 8092
+// Module ID: 8086
+// Function ID: 8087
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1390, 7173, 1392, 558, 576, 504, 4769, 2060, 2]
+// Dependencies: [32, 19, 1390, 7168, 1392, 558, 576, 504, 4769, 2060, 2]
 
-// Module 8091 (useDiscountOffer)
+// Module 8086 (useDiscountOffer)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserOfferStore from "UserOfferStore" /* 7173 */;
+import UserOfferStore from "UserOfferStore" /* 7168 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

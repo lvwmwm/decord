@@ -1,7 +1,7 @@
 // Module ID: 10635
 // Function ID: 10636
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 6088, 21, 5092, 587, 558, 576, 504, 10503, 6858, 10507, 7276, 1993, 8296, 10636, 6931, 9029, 6862, 9001, 5745, 1200, 10511, 10627, 10628, 10629, 5088, 1126, 5633, 5379, 5934, 6814, 2]
+// Dependencies: [32, 19, 17, 6088, 21, 5092, 587, 558, 576, 504, 10503, 6858, 10507, 7271, 1993, 8291, 10636, 6931, 9024, 6862, 8996, 5745, 1200, 10511, 10627, 10628, 10629, 5088, 1126, 5633, 5379, 5934, 6814, 2]
 
 // Module 10635 (GiftCodeRedeemSuccess)
 import nativeDefault from "native" /* 587 */;
@@ -14,8 +14,8 @@ import merged5 from "merged5" /* 5745 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import GameIcon from "GameIcon" /* 6862 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9001 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 8996 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9024 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
 import NameplatePreview from "NameplatePreview" /* 10628 */;
@@ -98,7 +98,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   const useFetchCollectiblesProduct = tmp(10507).useFetchCollectiblesProduct;
   tmp(10507);
   let skuId = null;
-  const tmpResult10 = tmp(7276);
+  const tmpResult10 = tmp(7271);
   if (tmpResult10.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
   }
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   } else {
     tmp16 = cResult[4];
   }
-  const tmpResult11 = tmp(8296);
+  const tmpResult11 = tmp(8291);
   const shopProductItems = tmpResult11.useShopProductItems(tmp16);
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   firstProfileEffect = shopProductItems.firstProfileEffect;
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   const useFetchCollectiblesProduct = giftCode(10507).useFetchCollectiblesProduct;
   giftCode(10507);
   let skuId = null;
-  const obj4 = giftCode(7276);
+  const obj4 = giftCode(7271);
   if (obj4.isCollectiblesGiftCode(giftCode)) {
     skuId = giftCode.skuId;
   }
@@ -622,8 +622,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   }
   const BUNDLE = tmp2(1993).CollectiblesItemType.BUNDLE;
   let tmp12 = product;
-  const useShopProductItems = tmp2(8296).useShopProductItems;
-  tmp2(8296);
+  const useShopProductItems = tmp2(8291).useShopProductItems;
+  tmp2(8291);
   if (product == null) {
     tmp12 = { items: [] };
     const obj5 = { items: [] };
@@ -665,7 +665,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
       let tmp28Result;
       const tmp2Result7 = tmp2(6931);
       if (tmp2Result7.isGameItemSKU(stateFromStores)) {
-        const obj9 = { style: tmp.gameItemCard, children: closure_8(user(9029), obj10) };
+        const obj9 = { style: tmp.gameItemCard, children: closure_8(user(9024), obj10) };
         obj10 = { sku: stateFromStores };
         tmp28Result = tmp28(closure_5, obj9);
       } else {
@@ -781,7 +781,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
       tmp24Result = null != tmp18;
       if (tmp24Result) {
         const obj27 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp18 };
-        tmp24Result = tmp24(user(9001), obj27);
+        tmp24Result = tmp24(user(8996), obj27);
       }
       tmp24Result2 = tmp24(tmp25, obj25);
     }

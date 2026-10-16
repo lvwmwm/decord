@@ -1,14 +1,14 @@
 // Module ID: 16194
 // Function ID: 16195
 // Name: UserProfileTryItOutGetPremiumUpsell
-// Dependencies: [19, 1085, 21, 558, 576, 7169, 6852, 9394, 9395, 9519, 14943, 1126, 14951, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 7164, 6852, 9389, 9390, 9514, 14943, 1126, 14951, 2]
 
 // Module 16194 (UserProfileTryItOutGetPremiumUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9519 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
 import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 14951 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let obj = analyticsLocations(576);
   const cResult = obj.c(12);
   onLayout = onLayout.onLayout;
-  let obj2 = analyticsLocations(7169);
+  let obj2 = analyticsLocations(7164);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let analyticsLocations;
   let tmp = analyticsLocations;
   onLayout = onLayout.onLayout;
-  let obj = analyticsLocations(7169);
+  let obj = analyticsLocations(7164);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const items = [analyticsLocations];

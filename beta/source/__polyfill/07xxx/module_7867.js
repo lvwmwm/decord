@@ -1,80 +1,81 @@
 // Module ID: 7867
 // Function ID: 7868
-// Dependencies: [32, 7828, 7845, 7868]
+// Dependencies: [7828, 7843, 7844, 7823]
 
 // Module 7867
-import _mod7828 from "module_7828" /* 7828 */;
-import _modDef7845 from "module_7845" /* 7845 */;
-import PathRecordTypesDefault from "PathRecordTypes" /* 7868 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod7823 from "module_7823" /* 7823 */;
+import _modDef7828 from "module_7828" /* 7828 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 7843 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 7844 */;
 
-let length;
-let metroImportDefault;
-function getTagName(dataView, sum1) {
-  let num;
-  let sum;
-  const obj = _mod7828;
-  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
-  const first = tmp[0];
-  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
-  num = 0;
-  sum = 1 + first;
-  if (first % 2 === 0) {
-    num = 1;
-  }
-  return obj2;
-}
-let obj = {
-  read(arg0, arg1) {
-    let tmp4Result2;
-    const getDataView = _mod7828.getDataView;
-    _mod7828;
-    const uint8Array = new Uint8Array(arg0);
-    const dataView = getDataView(uint8Array.buffer);
-    const obj = {};
-    let num = 0;
-    if (0 < arg0.length) {
-      const sum = num + metroImportDefault;
-      const obj2 = _mod7828;
-      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
-      const obj3 = _modDef7845;
-      const shortAt = obj3.getShortAt(dataView, sum);
-      const sum1 = sum + c5;
-      const tmp14 = getTagName(dataView, sum1);
-      let name = tmp14.tagName;
-      const sum2 = sum1 + tmp14.tagNameSize;
-      const obj4 = _modDef7845;
-      const longAt = obj4.getLongAt(dataView, sum2);
-      const sum3 = sum2 + c6;
-      if (stringFromDataView === c4) {
-        const tmp4Result = _mod7828;
-        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
-        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
-        tmp4Result2 = _mod7828;
-        if (PathRecordTypesDefault[shortAt]) {
-          try {
-            const obj5 = PathRecordTypesDefault[shortAt];
-            obj6.description = obj5.description(dataView1);
-          } catch (err) {
-            obj6.description = "<no description formatter>";
-          }
-          if (!name) {
-            name = tmp9(7868)[shortAt].name;
-          }
-          obj[name] = obj6;
-        } else if (arg1) {
-          const _HermesInternal = HermesInternal;
-          obj["undefined-" + shortAt] = obj6;
-        }
-      }
-      num = sum3 + (longAt + longAt % 2);
+const MODEL_ID = { K3_III: 78420 };
+let obj2 = { CAMERA_ORIENTATION: 1, ROLL_ANGLE: 3, PITCH_ANGLE: 5 };
+
+export default {
+  read(byteLength, arg1, arg2, arg3) {
+    let str6;
+    const obj = _modDef7828;
+    const byteOrder = obj.getByteOrder(byteLength, arg1 + arg2 + 8);
+    const sum = arg1 + arg2;
+    obj2 = get0thIfdOffset;
+    const ifd = obj2.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_PENTAX, sum, sum + 10, byteOrder, arg3, true);
+    let LevelInfo = ifd.PentaxModelID;
+    if (LevelInfo) {
+      LevelInfo = ifd.PentaxModelID.value === obj.K3_III;
     }
-    return obj;
-  }
+    if (LevelInfo) {
+      LevelInfo = ifd.LevelInfo;
+    }
+    let tmp8 = ifd;
+    if (LevelInfo) {
+      const sum1 = sum + ifd.LevelInfo.__offset;
+      const obj3 = {};
+      const objectAssign = tmp5(7823).objectAssign;
+      _mod7823;
+      if (sum1 + 7 <= byteLength.byteLength) {
+        const int8 = byteLength.getInt8(sum1 + obj2.CAMERA_ORIENTATION);
+        const obj4 = { value: int8, description: str6 };
+        str6 = "Horizontal (normal)";
+        if (0 !== int8) {
+          let str = "Rotate 270 CW";
+          if (1 !== int8) {
+            let str2 = "Rotate 180";
+            if (2 !== int8) {
+              let str3 = "Rotate 90 CW";
+              if (3 !== int8) {
+                let str4 = "Upwards";
+                if (4 !== int8) {
+                  let str5 = "Unknown";
+                  if (5 === int8) {
+                    str5 = "Downwards";
+                  }
+                  str4 = str5;
+                }
+                str3 = str4;
+              }
+              str2 = str3;
+            }
+            str = str2;
+          }
+          str6 = str;
+        }
+        obj3.CameraOrientation = obj4;
+        const sum2 = sum1 + tmp16.ROLL_ANGLE;
+        const int16 = byteLength.getInt16(sum2, byteOrder === tmp(7828).LITTLE_ENDIAN);
+        const obj5 = { value: int16, description: "" + -0.5 * int16 };
+        obj3.RollAngle = obj5;
+        const sum3 = sum1 + tmp16.PITCH_ANGLE;
+        const int161 = byteLength.getInt16(sum3, byteOrder === tmp(7828).LITTLE_ENDIAN);
+        const obj6 = { value: int161, description: "" + -0.5 * int161 };
+        obj3.PitchAngle = obj6;
+      }
+      const objectAssignResult = objectAssign({}, ifd, obj3);
+      delete tmp15["LevelInfo"];
+      tmp8 = objectAssignResult;
+    }
+    return tmp8;
+  },
+  PENTAX_IFD_OFFSET: 10,
+  MODEL_ID,
+  LIK3III: obj2
 };
-let c4 = "8BIM";
-let c5 = 2;
-let c6 = 4;
-({ length, length: metroImportDefault } = "8BIM");
-
-export default obj;

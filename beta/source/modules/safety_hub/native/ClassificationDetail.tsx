@@ -1,7 +1,7 @@
 // Module ID: 11472
 // Function ID: 11473
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2129, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 5088, 7514, 1126, 504, 3184, 4806, 10409, 8674, 6180, 5379, 11473, 11475, 7536, 5918, 1265, 11476, 5729, 5734, 11478, 11483, 7512, 6814, 2]
+// Dependencies: [19, 17, 2129, 7532, 7508, 1085, 21, 5092, 587, 558, 576, 5088, 7509, 1126, 504, 3184, 4806, 10409, 8669, 6180, 5379, 11473, 11475, 7531, 5918, 1265, 11476, 5729, 5734, 11478, 11483, 7507, 6814, 2]
 
 // Module 11472 (ClassificationDetail)
 import react2 from "react" /* 576 */;
@@ -16,15 +16,15 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import SafetyHubModels from "SafetyHubModels" /* 7514 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import SafetyHubModels from "SafetyHubModels" /* 7509 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11476 */;
 import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11478 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

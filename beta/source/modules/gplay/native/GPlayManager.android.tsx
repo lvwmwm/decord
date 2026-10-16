@@ -1,7 +1,7 @@
 // Module ID: 10065
 // Function ID: 10066
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7140, 7141, 502, 4775, 7132, 9401, 7133, 1085, 5071, 1392, 21, 3, 7127, 584, 9400, 1264, 4702, 7149, 4784, 5724, 1265, 5300, 1126, 10066, 2000, 5934, 7130, 2]
+// Dependencies: [109, 5, 19, 17, 7140, 7141, 502, 4775, 7132, 9396, 7133, 1085, 5071, 1392, 21, 3, 7127, 584, 9395, 1264, 4702, 7149, 4784, 5724, 1265, 5300, 1126, 10066, 2000, 5934, 7130, 2]
 
 // Module 10065 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,8 +11,8 @@ import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PaymentConstants from "PaymentConstants" /* 5071 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
 import ProductIds from "ProductIds" /* 7127 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9400 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9401 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9395 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9396 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

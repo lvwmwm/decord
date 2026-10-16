@@ -1,15 +1,15 @@
 // Module ID: 11659
 // Function ID: 11660
 // Name: SlowModeIndicator
-// Dependencies: [19, 7375, 21, 5092, 587, 558, 576, 504, 7376, 4809, 10763, 5088, 6185, 2]
+// Dependencies: [19, 7370, 21, 5092, 587, 558, 576, 504, 7371, 4809, 10763, 5088, 6185, 2]
 
 // Module 11659 (SlowModeIndicator)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7376 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7371 */;
 import TimerIcon from "TimerIcon" /* 10763 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7375 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    const tmpResult3 = tmp(7376);
+    const tmpResult3 = tmp(7371);
     const canBypassSlowmode = tmpResult3.useCanBypassSlowmode(channel);
     if (hasTypingText) {
       let tmp13;
@@ -117,7 +117,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       tmp10 = tmp11;
     }
-    const tmpResult4 = tmp(7376);
+    const tmpResult4 = tmp(7371);
     const slowmodeIndicatorText = tmpResult4.getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode);
     cResult[4] = canBypassSlowmode;
     cResult[5] = stateFromStores;

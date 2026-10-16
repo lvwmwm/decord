@@ -1,10 +1,10 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7315
+// Function ID: 7316
 // Name: handleExplicitMediaScanTimeoutForMessage
 // Dependencies: [6993, 7001, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage
 
-// Module 7320 (handleExplicitMediaScanTimeoutForMessage)
+// Module 7315 (handleExplicitMediaScanTimeoutForMessage)
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6993 */;
 import findComponentMediaDefault from "findComponentMedia" /* 7001 */;
 import size from "module_2" /* 2 */;
@@ -32,11 +32,11 @@ const FAILOVER_SCAN_VERSION = ExplicitMediaRedactionConstants.FAILOVER_SCAN_VERS
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/handleExplicitMediaScanTimeoutForMessage.tsx");
 
 export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f96273 = (item) => {
+  const f96272 = (item) => {
     item.content_scan_version = -1;
     return item;
   };
-  const f96274 = (components) => {
+  const f96273 = (components) => {
     components.contentScanVersion = -1;
     components = components.components;
     const tmp = closure_1_3;
@@ -48,9 +48,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f96273);
+  const attachments1 = attachments.map(f96272);
   let components = message.components;
-  const embeds1 = embeds.map(f96274);
+  const embeds1 = embeds.map(f96273);
   failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
@@ -61,9 +61,9 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f96273);
+        const mapped = attachments.map(f96272);
         let components = message.components;
-        const mapped1 = embeds.map(f96274);
+        const mapped1 = embeds.map(f96273);
         failOverComponentMedia(components);
         const obj = { message: message.merge({ attachments: mapped, embeds: mapped1, components }) };
         return message.merge(obj);

@@ -1,7 +1,7 @@
 // Module ID: 16057
 // Function ID: 16058
 // Name: PremiumTrialOfferActionSheet
-// Dependencies: [19, 1392, 1085, 2062, 21, 6852, 6879, 1265, 13641, 9394, 4769, 6840, 16058, 2]
+// Dependencies: [19, 1392, 1085, 2062, 21, 6852, 6879, 1265, 13641, 9389, 4769, 6840, 16058, 2]
 // Exports: default
 
 // Module 16057 (PremiumTrialOfferActionSheet)
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet;
 
 let tmp;
-const openPremiumModalDefault = tmp(9394);
+const openPremiumModalDefault = tmp(9389);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

@@ -1,7 +1,7 @@
 // Module ID: 12009
 // Function ID: 12010
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 12010, 12008, 21, 5092, 587, 558, 576, 504, 6159, 12011, 6180, 1126, 8530, 5088, 8779, 1631, 5379, 1503, 6161, 12016, 12007, 2]
+// Dependencies: [32, 19, 17, 12010, 12008, 21, 5092, 587, 558, 576, 504, 6159, 12011, 6180, 1126, 8525, 5088, 8774, 1631, 5379, 1503, 6161, 12016, 12007, 2]
 
 // Module 12009 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import SegmentedControlState from "SegmentedControlState" /* 8530 */;
-import SegmentedControl from "SegmentedControl" /* 8779 */;
+import SegmentedControlState from "SegmentedControlState" /* 8525 */;
+import SegmentedControl from "SegmentedControl" /* 8774 */;
 import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

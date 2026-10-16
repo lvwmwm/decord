@@ -1,10 +1,10 @@
 // Module ID: 17689
 // Function ID: 17690
-// Dependencies: [8504, 17690, 17691, 5193]
+// Dependencies: [8499, 17690, 17691, 5193]
 
 // Module 17689
 import baseFlatten from "baseFlatten" /* 5193 */;
-import baseRest from "baseRest" /* 8504 */;
+import baseRest from "baseRest" /* 8499 */;
 import isArrayLikeObject from "isArrayLikeObject" /* 17690 */;
 import baseDifference from "baseDifference" /* 17691 */;
 

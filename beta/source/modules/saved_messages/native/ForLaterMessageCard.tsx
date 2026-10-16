@@ -1,7 +1,7 @@
 // Module ID: 12653
 // Function ID: 12654
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4750, 1085, 21, 5092, 587, 558, 576, 6290, 1126, 5088, 7574, 5050, 12654, 6182, 12658, 5934, 1265, 9682, 4702, 12659, 504, 12660, 12669, 12671, 12672, 2]
+// Dependencies: [5, 19, 17, 4750, 1085, 21, 5092, 587, 558, 576, 6290, 1126, 5088, 7569, 5050, 12654, 6182, 12658, 5934, 1265, 9677, 4702, 12659, 504, 12660, 12669, 12671, 12672, 2]
 
 // Module 12653 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
                   return obj.removeSavedMessage(savedMessage.saveData);
                 }
         };
-        const IconButton = tmp(7574).IconButton;
+        const IconButton = tmp(7569).IconButton;
         const tmp22 = closure_10(IconButton, obj3);
         cResult[10] = savedMessage.saveData;
         cResult[11] = tmp22;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterDele
       return obj.removeSavedMessage(savedMessage.saveData);
     }
   };
-  IconButton = tmp3(7574).IconButton;
+  IconButton = tmp3(7569).IconButton;
   intl3 = tmp3(1126).intl;
   items1[2] = closure_10(View, obj4);
   return tmp2(Card, obj);

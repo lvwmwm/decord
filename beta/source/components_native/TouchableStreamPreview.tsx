@@ -1,7 +1,7 @@
 // Module ID: 11170
 // Function ID: 11171
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 5111, 5897, 502, 2065, 2087, 4750, 5113, 1085, 21, 5092, 4967, 587, 558, 576, 5414, 504, 1126, 5889, 7444, 7481, 5106, 5900, 5396, 5088, 11171, 2]
+// Dependencies: [19, 17, 5111, 5897, 502, 2065, 2087, 4750, 5113, 1085, 21, 5092, 4967, 587, 558, 576, 5414, 504, 1126, 5889, 7439, 7476, 5106, 5900, 5396, 5088, 11171, 2]
 
 // Module 11170 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import transitionToStreamDefault from "transitionToStream" /* 7481 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import transitionToStreamDefault from "transitionToStream" /* 7476 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;

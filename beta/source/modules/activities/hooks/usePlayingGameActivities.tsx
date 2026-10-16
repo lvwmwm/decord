@@ -1,10 +1,10 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8851
+// Function ID: 8852
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 5108, 5759, 558, 576, 504, 8857, 2]
+// Dependencies: [19, 502, 5108, 5759, 558, 576, 504, 8852, 2]
 
-// Module 8856 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8857 */;
+// Module 8851 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8852 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 5108 */;

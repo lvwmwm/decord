@@ -1,7 +1,7 @@
 // Module ID: 17674
 // Function ID: 17675
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2064, 6036, 9384, 502, 2012, 1085, 5115, 21, 5092, 1200, 587, 558, 576, 10835, 504, 6038, 10828, 7482, 10834, 8327, 10837, 8451, 10880, 10884, 10894, 10905, 10824, 10917, 10881, 10833, 6072, 4850, 5093, 6259, 17675, 1631, 2]
+// Dependencies: [32, 19, 17, 2064, 6036, 9379, 502, 2012, 1085, 5115, 21, 5092, 1200, 587, 558, 576, 10835, 504, 6038, 10828, 7477, 10834, 8322, 10837, 8446, 10880, 10884, 10894, 10905, 10824, 10917, 10881, 10833, 6072, 4850, 5093, 6259, 17675, 1631, 2]
 
 // Module 17674 (PictureInPictureGlobal)
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import timing from "timing" /* 5093 */;
 import CallConstants from "CallConstants" /* 5115 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import transitionToActivityDefault from "transitionToActivity" /* 10824 */;
 import PictureInPictureDefault from "PictureInPicture" /* 10833 */;
 import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17675 */;

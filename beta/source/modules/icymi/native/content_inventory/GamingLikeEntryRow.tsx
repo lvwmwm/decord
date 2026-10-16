@@ -1,16 +1,16 @@
 // Module ID: 16963
 // Function ID: 16964
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1390, 21, 13133, 8272, 13138, 16914, 587, 504, 5628, 8854, 6858, 8270, 8880, 8879, 8268, 16964, 2000, 8472, 5934, 16966, 1126, 16968, 5088, 4962, 6059, 11, 683, 6185, 6157, 16969, 2]
+// Dependencies: [19, 17, 1390, 21, 13133, 8267, 13138, 16914, 587, 504, 5628, 8849, 6858, 8265, 8875, 8874, 8263, 16964, 2000, 8467, 5934, 16966, 1126, 16968, 5088, 4962, 6059, 11, 683, 6185, 6157, 16969, 2]
 // Exports: default
 
 // Module 16963 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8268 */;
-import utils from "utils" /* 8272 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8263 */;
+import utils from "utils" /* 8267 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
 import BadgesAll from "Badges" /* 13133 */;
 import TrendingType from "TrendingType" /* 13138 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 17859
 // Function ID: 17860
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1085, 21, 5092, 587, 558, 576, 1121, 17860, 17779, 8199, 1126, 6162, 2]
+// Dependencies: [19, 1085, 21, 5092, 587, 558, 576, 1121, 17860, 17779, 8194, 1126, 6162, 2]
 
 // Module 17859 (VoicePanelHeaderChatButton)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl2 from "intl" /* 1126 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import ChatIcon2 from "ChatIcon" /* 8199 */;
+import ChatIcon2 from "ChatIcon" /* 8194 */;
 import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17779 */;
 import useChatBadgeDefault from "useChatBadge" /* 17860 */;
 import react from "react" /* 19 */;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHe
     const obj2 = { icon: hasOwnProperty(ChatIcon, obj3), accessibilityLabel: intl.string(intl2.t["5KxXrK"]), onPress: first };
     obj3 = { color: nativeDefault.colors.WHITE, size: "sm" };
     const tmp6Result = VoicePanelIconButtonDefault;
-    ChatIcon = tmp(8199).ChatIcon;
+    ChatIcon = tmp(8194).ChatIcon;
     intl = tmp(1126).intl;
     const tmp11 = hasOwnProperty(tmp6Result, obj2);
     cResult[1] = tmp11;

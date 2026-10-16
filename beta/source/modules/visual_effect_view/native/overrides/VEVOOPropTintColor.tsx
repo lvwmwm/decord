@@ -1,7 +1,7 @@
 // Module ID: 16348
 // Function ID: 16349
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5366, 21, 5092, 587, 558, 576, 16345, 4967, 6897, 8580, 16347, 14845, 1103, 2]
+// Dependencies: [32, 19, 17, 5366, 21, 5092, 587, 558, 576, 16345, 4967, 6897, 8575, 16347, 14845, 1103, 2]
 
 // Module 16348 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
@@ -30,7 +30,7 @@ let metroRequire;
 let size;
 let tmp;
 const FormSwitch = tmp(6897);
-const Form = tmp(8580);
+const Form = tmp(8575);
 let react = react_mod;
 const View = react_native.View;
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: metroImportDefault } = VEVOOStore);
@@ -804,7 +804,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp(obj);
     }
   };
-  const FormRow = tmp2(8580).FormRow;
+  const FormRow = tmp2(8575).FormRow;
   obj4 = {
     value: tmp7,
     onValueChange(arg0) {
@@ -819,11 +819,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj5 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: closure_8(closure_5, obj6) };
   obj6 = { style: items };
   items = [tmp.tintColor, { backgroundColor }];
-  const FormRow2 = tmp2(8580).FormRow;
+  const FormRow2 = tmp2(8575).FormRow;
   const items1 = [closure_8(FormRow2, obj5), ];
   const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(16347), obj9) };
   str2 = undefined;
-  const FormRow3 = tmp2(8580).FormRow;
+  const FormRow3 = tmp2(8575).FormRow;
   tmp14 = closure_10;
   tmp15 = closure_9;
   if (first1 != null) {

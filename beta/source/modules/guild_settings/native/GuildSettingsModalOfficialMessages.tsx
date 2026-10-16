@@ -1,7 +1,7 @@
 // Module ID: 18612
 // Function ID: 18613
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6176, 5081, 2087, 8639, 5085, 1096, 21, 5092, 587, 1126, 15562, 12684, 15564, 1503, 504, 8638, 6201, 7089, 5056, 16748, 2000, 8530, 4850, 6180, 14847, 1103, 5088, 8779, 558, 576, 4793, 6970, 683, 1200, 15577, 2]
+// Dependencies: [32, 19, 17, 6176, 5081, 2087, 8634, 5085, 1096, 21, 5092, 587, 1126, 15562, 12684, 15564, 1503, 504, 8633, 6201, 7089, 5056, 16748, 2000, 8525, 4850, 6180, 14847, 1103, 5088, 8774, 558, 576, 4793, 6970, 683, 1200, 15577, 2]
 // Exports: default
 
 // Module 18612 (GuildSettingsModalOfficialMessages)
@@ -25,7 +25,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

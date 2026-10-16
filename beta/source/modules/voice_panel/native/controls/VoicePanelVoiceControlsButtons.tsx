@@ -1,7 +1,7 @@
 // Module ID: 17944
 // Function ID: 17945
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2064, 6036, 1207, 10831, 5897, 502, 2012, 5113, 1085, 17945, 5117, 21, 5300, 17946, 2000, 1126, 558, 576, 11108, 6265, 11016, 504, 4809, 13026, 13027, 6188, 6180, 11971, 17904, 8234, 8199, 17932, 12264, 11052, 1265, 11134, 1382, 11081, 587, 5243, 8802, 17848, 6896, 8786, 8793, 6189, 17807, 17808, 10331, 11100, 5106, 10770, 11051, 17947, 9412, 10812, 10400, 17948, 584, 13580, 11071, 7092, 17847, 2]
+// Dependencies: [32, 19, 2064, 6036, 1207, 10831, 5897, 502, 2012, 5113, 1085, 17945, 5117, 21, 5300, 17946, 2000, 1126, 558, 576, 11108, 6265, 11016, 504, 4809, 13026, 13027, 6188, 6180, 11971, 17904, 8229, 8194, 17932, 12264, 11052, 1265, 11134, 1382, 11081, 587, 5243, 8797, 17848, 6896, 8781, 8788, 6189, 17807, 17808, 10331, 11100, 5106, 10770, 11051, 17947, 9407, 10812, 10400, 17948, 584, 13580, 11071, 7092, 17847, 2]
 
 // Module 17944 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
@@ -20,9 +20,9 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import TableRow2 from "TableRow" /* 6180 */;
 import TableRowIcon2 from "TableRowIcon" /* 6188 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
-import CallsUtils from "CallsUtils" /* 8786 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 8793 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8802 */;
+import CallsUtils from "CallsUtils" /* 8781 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 8788 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8797 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10331 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10400 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11016 */;
@@ -427,7 +427,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const TableRowIcon = tmp(6188).TableRowIcon;
-      const tmp9 = <TableRowIcon IconComponent={tmp(8234).AppsIcon} />;
+      const tmp9 = <TableRowIcon IconComponent={tmp(8229).AppsIcon} />;
       const intl = tmp(1126).intl;
       const stringResult = intl.string(tmp(1126).t.aeuOoh);
       cResult[3] = tmp9;
@@ -472,7 +472,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
     }, 200);
   }, items);
   const TableRow = openTab(6180).TableRow;
-  ({ IconComponent: openTab(8234).AppsIcon });
+  ({ IconComponent: openTab(8229).AppsIcon });
   const TableRowIcon = openTab(6188).TableRowIcon;
   const intl = openTab(1126).intl;
   return <TableRow onPress={callback} icon={null} label={intl.string(openTab(1126).t.aeuOoh)} />;
@@ -496,7 +496,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const TableRowIcon = tmp(6188).TableRowIcon;
-      const tmp9 = <TableRowIcon IconComponent={tmp(8199).ChatIcon} />;
+      const tmp9 = <TableRowIcon IconComponent={tmp(8194).ChatIcon} />;
       const intl = tmp(1126).intl;
       const stringResult = intl.string(tmp(1126).t["5KxXrK"]);
       cResult[3] = tmp9;
@@ -541,7 +541,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
     }, 200);
   }, items);
   const TableRow = openTab(6180).TableRow;
-  ({ IconComponent: openTab(8199).ChatIcon });
+  ({ IconComponent: openTab(8194).ChatIcon });
   const TableRowIcon = openTab(6188).TableRowIcon;
   const intl = openTab(1126).intl;
   return <TableRow onPress={callback} icon={null} label={intl.string(openTab(1126).t["5KxXrK"])} />;
@@ -885,7 +885,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function AudioRouteB
   const cResult = obj.c(10);
   channel = channel.channel;
   const connected = channel.connected;
-  const obj2 = channel(8786);
+  const obj2 = channel(8781);
   const routeSource = obj2.useMaskedSpeakerStates().routeSource;
   if (cResult[0] !== routeSource) {
     const tmp6 = jsx(channel(6188).TableRowIcon, { source: routeSource });

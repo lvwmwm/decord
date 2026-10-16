@@ -1,7 +1,7 @@
 // Module ID: 18376
 // Function ID: 18377
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5987, 6030, 1085, 1393, 2044, 21, 5092, 587, 6665, 10525, 6170, 4764, 7769, 18377, 9759, 5749, 5088, 1126, 5640, 2128, 5379, 5377, 6185, 9774, 18378, 9427, 6820, 1415, 8961, 6286, 6774, 2]
+// Dependencies: [5, 32, 19, 17, 5987, 6030, 1085, 1393, 2044, 21, 5092, 587, 6665, 10525, 6170, 4764, 7764, 18377, 9754, 5749, 5088, 1126, 5640, 2128, 5379, 5377, 6185, 9769, 18378, 9422, 6820, 1415, 8956, 6286, 6774, 2]
 // Exports: default
 
 // Module 18376 (GuildSettingsStickerCreate)
@@ -10,7 +10,7 @@ import StickersConstants from "StickersConstants" /* 2044 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
 import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10525 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -48,7 +48,7 @@ let unpackModuleId;
 const AvatarUtilsDefault = tmp14(1415);
 const HelpdeskUtilsDefault = tmp14(2128);
 const EmojiDefault = tmp14(6820);
-const StickerDefault = tmp14(9774);
+const StickerDefault = tmp14(9769);
 ({ Image: metroRequire, ScrollView: metroImportDefault } = react_native);
 let StickersStore = StickersStore_mod;
 ({ HelpdeskArticles: c10, UPLOAD_STICKER_SIZE: unpackModuleId } = Constants);
@@ -593,7 +593,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     }
     tmp32Result2 = tmp32(tmp14Result5, obj22);
   } else {
-    tmp32Result2 = tmp32(tmp31(8961).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(8956).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   items5 = [tmp32Result2, ];
   const Text6 = tmp31(5088).Text;

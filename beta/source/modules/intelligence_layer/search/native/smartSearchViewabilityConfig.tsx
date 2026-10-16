@@ -1,10 +1,10 @@
 // Module ID: 17453
 // Function ID: 17454
 // Name: smartSearchViewabilityConfig
-// Dependencies: [9313, 12060, 12058, 2]
+// Dependencies: [9308, 12060, 12058, 2]
 
 // Module 17453 (smartSearchViewabilityConfig)
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12058 */;
 import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12060 */;
 import size from "module_2" /* 2 */;

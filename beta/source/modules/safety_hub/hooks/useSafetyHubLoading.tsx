@@ -1,11 +1,11 @@
 // Module ID: 15021
 // Function ID: 15022
 // Name: useSafetyHubLoading
-// Dependencies: [7537, 558, 576, 504, 2]
+// Dependencies: [7532, 558, 576, 504, 2]
 
 // Module 15021 (useSafetyHubLoading)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

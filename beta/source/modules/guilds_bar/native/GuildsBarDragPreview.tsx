@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: 251658654, children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: 268435870, children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: 251658654, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: 268435870, children: items };
         items = [tmp2];
         return element;
       }

@@ -1,7 +1,7 @@
 // Module ID: 10686
 // Function ID: 10687
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 9384, 2125, 4750, 6035, 6088, 7748, 1085, 21, 9, 10687, 9383, 10677, 9381, 7747, 9600, 10669, 12, 11, 10690, 9172, 9605, 9599, 10692, 7179, 10693, 11621, 5027, 1255, 9602, 11490, 11628, 10676, 568, 5077, 7423, 11629, 11487, 9677, 1382, 1629, 5975, 11630, 2]
+// Dependencies: [5, 32, 19, 9379, 2125, 4750, 6035, 6088, 7743, 1085, 21, 9, 10687, 9378, 10677, 9376, 7742, 9595, 10669, 12, 11, 10690, 9167, 9600, 9594, 10692, 7174, 10693, 11621, 5027, 1255, 9597, 11490, 11628, 10676, 568, 5077, 7418, 11629, 11487, 9672, 1382, 1629, 5975, 11630, 2]
 
 // Module 10686 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -13,17 +13,17 @@ import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import flow_Client from "flow/Client" /* 5027 */;
 import CodedLink from "CodedLink" /* 5077 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7748 */;
-import QuestActionCreators from "QuestActionCreators" /* 9172 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
-import computeScrollData from "computeScrollData" /* 9599 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 9600 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9602 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 9605 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9677 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7418 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7743 */;
+import QuestActionCreators from "QuestActionCreators" /* 9167 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
+import computeScrollData from "computeScrollData" /* 9594 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 9595 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9597 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 9600 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9672 */;
 import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10687 */;
 import MessagesHandlers from "MessagesHandlers" /* 10693 */;
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11490 */;

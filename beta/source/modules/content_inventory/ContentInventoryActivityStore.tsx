@@ -1,19 +1,19 @@
 // Module ID: 13120
 // Function ID: 13121
 // Name: ContentInventoryActivityStore
-// Dependencies: [5108, 8455, 1085, 8268, 8272, 8478, 8460, 8456, 12, 504, 584, 2]
+// Dependencies: [5108, 8450, 1085, 8263, 8267, 8473, 8455, 8451, 12, 504, 584, 2]
 
 // Module 13120 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8268 */;
-import utils from "utils" /* 8272 */;
-import matchUtils from "matchUtils" /* 8456 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8460 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8263 */;
+import utils from "utils" /* 8267 */;
+import matchUtils from "matchUtils" /* 8451 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8455 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8455 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8450 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -29,9 +29,9 @@ function getMatchingActivity(author_type) {
   let tmp3 = null;
   if (!obj.isEntryExpired(author_type)) {
     let found;
-    const tmpResult = tmp(8272);
+    const tmpResult = tmp(8267);
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8478).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(8473).ContentInventoryAuthorType.USER) {
         let tmp5 = PresenceStore;
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
@@ -42,7 +42,7 @@ function getMatchingActivity(author_type) {
             const tmp2 = require;
             const tmp4 = author_type;
             if (obj.isApplicationEntry(author_type)) {
-              const tmp2Result = tmp2(8456);
+              const tmp2Result = tmp2(8451);
               result = tmp2Result.isMatchingApplicationActivity(tmp4, type);
             }
             return result;

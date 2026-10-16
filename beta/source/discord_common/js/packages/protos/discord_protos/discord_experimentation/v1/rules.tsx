@@ -1,9 +1,9 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 8141
+// Function ID: 8142
 // Name: rules
 // Dependencies: [32, 1210, 1240, 2]
 
-// Module 8146 (rules)
+// Module 8141 (rules)
 import _mod1210 from "module_1210" /* 1210 */;
 import wrappers from "wrappers" /* 1240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

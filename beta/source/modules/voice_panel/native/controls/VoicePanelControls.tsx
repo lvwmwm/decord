@@ -1,7 +1,7 @@
 // Module ID: 17902
 // Function ID: 17903
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6036, 11972, 11975, 11970, 1085, 21, 5092, 587, 1628, 558, 576, 17903, 8542, 11971, 4850, 17794, 4818, 6335, 17904, 11976, 11979, 5057, 5362, 11710, 9580, 17905, 17813, 17906, 4827, 17910, 17912, 6161, 17915, 5378, 6762, 17781, 17828, 1272, 17939, 17940, 1121, 1631, 1497, 11577, 17911, 17941, 17914, 17942, 17802, 11791, 2]
+// Dependencies: [32, 19, 17, 6036, 11972, 11975, 11970, 1085, 21, 5092, 587, 1628, 558, 576, 17903, 8537, 11971, 4850, 17794, 4818, 6335, 17904, 11976, 11979, 5057, 5362, 11710, 9575, 17905, 17813, 17906, 4827, 17910, 17912, 6161, 17915, 5378, 6762, 17781, 17828, 1272, 17939, 17940, 1121, 1631, 1497, 11577, 17911, 17941, 17914, 17942, 17802, 11791, 2]
 
 // Module 17902 (VoicePanelControls)
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11976 */;
@@ -62,7 +62,7 @@ let rect;
 let rect1;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8542);
+const native2 = tmp(8537);
 function useControlsGesture(tab, sharedValue, sharedValue1, G) {
   let controlsSpecs;
   let sharedTab;
@@ -520,7 +520,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
       }
     }
   };
-  let obj4 = { cheapWorkletShallowEqual: tmp(9580).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4850).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11979).getControlsDefaultWidth, getDrawerSpec: tmp(17905).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11979).getControlsDrawerOpenWidth };
+  let obj4 = { cheapWorkletShallowEqual: tmp(9575).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4850).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11979).getControlsDefaultWidth, getDrawerSpec: tmp(17905).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11979).getControlsDrawerOpenWidth };
   fn2.__closure = obj4;
   fn2.__workletHash = 12616753127721;
   fn2.__initData = __initData4;

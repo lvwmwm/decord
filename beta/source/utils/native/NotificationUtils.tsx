@@ -1,7 +1,7 @@
 // Module ID: 12132
 // Function ID: 12133
 // Name: NotificationUtils
-// Dependencies: [5, 12123, 1085, 12126, 1265, 11031, 7506, 10980, 2]
+// Dependencies: [5, 12123, 1085, 12126, 1265, 11031, 7501, 10980, 2]
 
 // Module 12132 (NotificationUtils)
 import Constants from "Constants" /* 1085 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c0;
 
 let tmp;
-const react_nativeDefault = tmp(7506);
+const react_nativeDefault = tmp(7501);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {

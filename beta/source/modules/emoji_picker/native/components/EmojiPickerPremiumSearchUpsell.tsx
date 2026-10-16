@@ -1,9 +1,9 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9513
+// Function ID: 9514
 // Name: EmojiPickerPremiumSearchUpsell
-// Dependencies: [19, 1390, 1085, 1392, 21, 5092, 558, 576, 1265, 9282, 9462, 9281, 9270, 9519, 4769, 5056, 9394, 9395, 1126, 9036, 587, 1200, 9520, 9521, 2]
+// Dependencies: [19, 1390, 1085, 1392, 21, 5092, 558, 576, 1265, 9277, 9457, 9276, 9265, 9514, 4769, 5056, 9389, 9390, 1126, 9031, 587, 1200, 9515, 9516, 2]
 
-// Module 9518 (EmojiPickerPremiumSearchUpsell)
+// Module 9513 (EmojiPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import MobileEmojiPickerUpsellRestyleExperiment from "MobileEmojiPickerUpsellRestyleExperiment" /* 9282 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9520 */;
-import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9521 */;
+import MobileEmojiPickerUpsellRestyleExperiment from "MobileEmojiPickerUpsellRestyleExperiment" /* 9277 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9515 */;
+import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9516 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -321,7 +321,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (mobileEmojiPickerUpsellRestyleEnabled) {
     const obj5 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp4.nitroIcon };
-    const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+    const NitroWheelIcon = tmp(9031).NitroWheelIcon;
     tmp14Result = tmp14(NitroWheelIcon, obj5);
   } else {
     const obj6 = { style: tmp4.nitroIcon, source: AssetRegistryDefault, disableColor: true, size: native.Icon.Sizes.MEDIUM };
@@ -368,7 +368,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (mobileEmojiPickerUpsellRestyleEnabled) {
     const obj4 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp.nitroIcon };
-    const NitroWheelIcon = tmp3(9036).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9031).NitroWheelIcon;
     tmp7Result = tmp7(NitroWheelIcon, obj4);
   } else {
     const obj5 = { style: tmp.nitroIcon, source: AssetRegistryDefault, disableColor: true, size: native.Icon.Sizes.MEDIUM };

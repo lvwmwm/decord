@@ -1,7 +1,7 @@
 // Module ID: 12843
 // Function ID: 12844
 // Name: useConjureAppChannelRefreshButton
-// Dependencies: [558, 576, 6946, 9315, 11431, 1126, 3849, 12622, 2]
+// Dependencies: [558, 576, 6946, 9310, 11431, 1126, 3849, 12622, 2]
 
 // Module 12843 (useConjureAppChannelRefreshButton)
 import _modDef3849 from "module_3849" /* 3849 */;

@@ -1,14 +1,14 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7203
+// Function ID: 7204
 // Name: withFallbacks
-// Dependencies: [32, 2065, 5963, 1085, 7202, 7206, 7207, 2]
+// Dependencies: [32, 2065, 5963, 1085, 7197, 7201, 7202, 2]
 // Exports: withFallbacks
 
-// Module 7208 (withFallbacks)
+// Module 7203 (withFallbacks)
 import Constants from "Constants" /* 1085 */;
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7202 */;
-import isReadableChannel from "isReadableChannel" /* 7206 */;
-import isLimitedChannel from "isLimitedChannel" /* 7207 */;
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7197 */;
+import isReadableChannel from "isReadableChannel" /* 7201 */;
+import isLimitedChannel from "isLimitedChannel" /* 7202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;

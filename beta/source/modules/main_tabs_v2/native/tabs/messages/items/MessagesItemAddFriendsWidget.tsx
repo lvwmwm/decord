@@ -1,7 +1,7 @@
 // Module ID: 16533
 // Function ID: 16534
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1085, 21, 12846, 587, 5092, 8497, 4808, 1126, 8683, 8694, 558, 576, 4977, 5088, 6185, 14076, 16534, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 12846, 587, 5092, 8492, 4808, 1126, 8678, 8689, 558, 576, 4977, 5088, 6185, 14076, 16534, 2]
 
 // Module 16533 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import intl5 from "intl" /* 1126 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
 import IconActionButton from "IconActionButton" /* 12846 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14076 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 16534 */;

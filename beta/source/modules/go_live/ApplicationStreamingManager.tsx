@@ -1,14 +1,14 @@
 // Module ID: 18675
 // Function ID: 18676
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [5897, 502, 2065, 5020, 5211, 2116, 7429, 1390, 5898, 1085, 12, 7444, 1102, 584, 5900, 2060, 6808, 5289, 18655, 2]
+// Dependencies: [5897, 502, 2065, 5020, 5211, 2116, 7424, 1390, 5898, 1085, 12, 7439, 1102, 584, 5900, 2060, 6808, 5289, 18655, 2]
 
 // Module 18675 (go_live/ApplicationStreamingManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import AVError from "AVError" /* 5289 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
 import AVErrorContext from "AVErrorContext" /* 18655 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -16,7 +16,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import RTCRegionStore from "RTCRegionStore" /* 5211 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants_mod from "Constants" /* 5898 */;
 import Constants_mod2 from "Constants" /* 1085 */;

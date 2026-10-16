@@ -1,14 +1,14 @@
-// Module ID: 9099
-// Function ID: 9100
+// Module ID: 9094
+// Function ID: 9095
 // Name: PlaystationNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9100, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9095, 4817, 2]
 
-// Module 9099 (PlaystationNeutralIcon)
+// Module 9094 (PlaystationNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 9100 */;
+import AssetRegistry from "AssetRegistry" /* 9095 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

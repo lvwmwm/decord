@@ -1,12 +1,12 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7352
+// Function ID: 7353
 // Name: AuthenticationUtils
-// Dependencies: [1111, 7358, 2]
+// Dependencies: [1111, 7353, 2]
 // Exports: getArtForPath, getToken, isAuthenticated
 
-// Module 7357 (AuthenticationUtils)
+// Module 7352 (AuthenticationUtils)
 import TokenManagerAll from "TokenManager" /* 1111 */;
-import AssetRegistry from "AssetRegistry" /* 7358 */;
+import AssetRegistry from "AssetRegistry" /* 7353 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/AuthenticationUtils.tsx");

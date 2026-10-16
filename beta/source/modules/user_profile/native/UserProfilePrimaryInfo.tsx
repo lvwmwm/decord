@@ -1,7 +1,7 @@
 // Module ID: 10532
 // Function ID: 10533
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1390, 8308, 6905, 1085, 7888, 8319, 21, 5092, 587, 558, 576, 10263, 10264, 8767, 10533, 6185, 5088, 10535, 7417, 4977, 10567, 8309, 7094, 4809, 8369, 9174, 9175, 9178, 5975, 1265, 7416, 1382, 1126, 10569, 6157, 10570, 10572, 10573, 10575, 10579, 10604, 1497, 10605, 8290, 8859, 4962, 2]
+// Dependencies: [19, 17, 1390, 8303, 6905, 1085, 7883, 8314, 21, 5092, 587, 558, 576, 10263, 10264, 8762, 10533, 6185, 5088, 10535, 7412, 4977, 10567, 8304, 7094, 4809, 8364, 9169, 9170, 9173, 5975, 1265, 7411, 1382, 1126, 10569, 6157, 10570, 10572, 10573, 10575, 10579, 10604, 1497, 10605, 8285, 8854, 4962, 2]
 
 // Module 10532 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
@@ -13,18 +13,18 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
-import GuildTagUtils from "GuildTagUtils" /* 8290 */;
-import Constants2 from "Constants" /* 8308 */;
-import BadgeId from "BadgeId" /* 8309 */;
-import Constants3 from "Constants" /* 8319 */;
-import useBadges from "useBadges" /* 8369 */;
-import BotTagDefault from "BotTag" /* 8767 */;
-import GuildTagDefault from "GuildTag" /* 8859 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9175 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import GuildTagUtils from "GuildTagUtils" /* 8285 */;
+import Constants2 from "Constants" /* 8303 */;
+import BadgeId from "BadgeId" /* 8304 */;
+import Constants3 from "Constants" /* 8314 */;
+import useBadges from "useBadges" /* 8364 */;
+import BotTagDefault from "BotTag" /* 8762 */;
+import GuildTagDefault from "GuildTag" /* 8854 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
 import types from "types" /* 10264 */;
 import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10575 */;

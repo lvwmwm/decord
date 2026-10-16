@@ -1,12 +1,12 @@
 // Module ID: 16586
 // Function ID: 16587
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 576, 16587, 6209, 10606, 16588, 7574, 2]
+// Dependencies: [19, 21, 558, 576, 16587, 6209, 10606, 16588, 7569, 2]
 
 // Module 16586 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconButton2 from "IconButton" /* 7574 */;
+import IconButton2 from "IconButton" /* 7569 */;
 import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16587 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

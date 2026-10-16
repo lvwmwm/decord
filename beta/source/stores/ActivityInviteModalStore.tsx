@@ -1,13 +1,13 @@
 // Module ID: 14032
 // Function ID: 14033
 // Name: ActivityInviteModalStore
-// Dependencies: [2065, 2087, 10648, 5108, 4760, 1390, 6923, 1085, 8700, 1126, 5421, 10667, 504, 584, 2]
+// Dependencies: [2065, 2087, 10648, 5108, 4760, 1390, 6923, 1085, 8695, 1126, 5421, 10667, 504, 584, 2]
 
 // Module 14032 (ActivityInviteModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1126 */;
-import _mod8700 from "module_8700" /* 8700 */;
+import _mod8695 from "module_8695" /* 8695 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import LocalActivityStore from "LocalActivityStore" /* 10648 */;
@@ -18,13 +18,13 @@ import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6923 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-const _modDef8700 = _mod8700;
+const _modDef8695 = _mod8695;
 let _null, _null2, activity, channel, guild, privateChannelIds, set, user;
 
 let closure_12;
 let unpackModuleId;
 const f117279 = (type) => {
-  if (type.type === _mod8700.AutocompleterResultTypes.USER) {
+  if (type.type === _mod8695.AutocompleterResultTypes.USER) {
     let tmp7;
     const status = PresenceStore.getStatus(type.data.record.id);
     const id = type.data.record.id;
@@ -46,8 +46,8 @@ const f117279 = (type) => {
 };
 function toHeaderResult(intl) {
   let obj2;
-  const obj = { type: _mod8700.AutocompleterResultTypes.HEADER, sent: false, data: obj2.createHeaderResult(intl) };
-  obj2 = _mod8700;
+  const obj = { type: _mod8695.AutocompleterResultTypes.HEADER, sent: false, data: obj2.createHeaderResult(intl) };
+  obj2 = _mod8695;
   return obj;
 }
 function withSameGameSection(mapped) {
@@ -64,7 +64,7 @@ function withSameGameSection(mapped) {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp6 = nextResult;
-      if (nextResult.type === _mod8700.AutocompleterResultTypes.USER) {
+      if (nextResult.type === _mod8695.AutocompleterResultTypes.USER) {
         if (true === tmp6.playingSameGame) {
           let arr = items.push(tmp6);
           continue;
@@ -139,7 +139,7 @@ function handleLocalActivityUpdate() {
   return tmp5;
 }
 ({ ChannelTypes: unpackModuleId, ActivityActionTypes: closure_12 } = Constants);
-let items = [_mod8700.AutocompleterResultTypes.TEXT_CHANNEL, _mod8700.AutocompleterResultTypes.GROUP_DM, _mod8700.AutocompleterResultTypes.USER];
+let items = [_mod8695.AutocompleterResultTypes.TEXT_CHANNEL, _mod8695.AutocompleterResultTypes.GROUP_DM, _mod8695.AutocompleterResultTypes.USER];
 let c14 = null;
 let c15 = null;
 items = [];
@@ -178,7 +178,7 @@ let obj = {
     if (null == _null) {
       const self = this;
       const self2 = this;
-      const tmp4 = new _modDef8700((arg0, str) => {
+      const tmp4 = new _modDef8695((arg0, str) => {
         let status;
         let arr = arg0;
         if ("" === str.trim()) {
@@ -195,12 +195,12 @@ let obj = {
                 }
                 if (null != user) {
                   const push2 = items.push;
-                  const obj = { type: _mod8700.AutocompleterResultTypes.USER, record: user, score: 0 };
+                  const obj = { type: _mod8695.AutocompleterResultTypes.USER, record: user, score: 0 };
                   push2(obj);
                 }
               } else if (channel.isMultiUserDM()) {
                 const push = items.push;
-                const obj2 = { type: _mod8700.AutocompleterResultTypes.GROUP_DM, record: channel, score: 0 };
+                const obj2 = { type: _mod8695.AutocompleterResultTypes.GROUP_DM, record: channel, score: 0 };
                 push(obj2);
               }
             }

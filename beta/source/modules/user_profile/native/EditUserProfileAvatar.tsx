@@ -1,7 +1,7 @@
 // Module ID: 14863
 // Function ID: 14864
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 5081, 21, 5092, 6852, 6879, 4769, 8284, 8294, 14864, 5056, 14865, 2000, 14853, 14853, 8282, 8291, 504, 2041, 8383, 14866, 14855, 1126, 6185, 14867, 1200, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 6852, 6879, 4769, 8279, 8289, 14864, 5056, 14865, 2000, 14853, 14853, 8277, 8286, 504, 2041, 8378, 14866, 14855, 1126, 6185, 14867, 1200, 2]
 // Exports: default
 
 // Module 14863 (EditUserProfileAvatar)
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8291);
+const ProfileCustomizationUtils = tmp3(8286);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });

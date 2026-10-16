@@ -1,14 +1,14 @@
 // Module ID: 16781
 // Function ID: 16782
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16782, 8159, 8208, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16782, 8154, 8203, 1126, 5088, 2]
 
 // Module 16781 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import useSubtitleStyles from "useSubtitleStyles" /* 16782 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8208).TextIcon;
+    channelIconComponentWithGuild = tmp(8203).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -126,7 +126,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8208).TextIcon;
+    channelIconComponentWithGuild = tmp(8203).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];

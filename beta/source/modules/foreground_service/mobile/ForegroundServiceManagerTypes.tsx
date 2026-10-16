@@ -1,9 +1,9 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9700
+// Function ID: 9701
 // Name: ForegroundServiceManagerTypes
 // Dependencies: [2]
 
-// Module 9705 (ForegroundServiceManagerTypes)
+// Module 9700 (ForegroundServiceManagerTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx");

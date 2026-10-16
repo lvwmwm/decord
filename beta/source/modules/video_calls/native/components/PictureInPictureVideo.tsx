@@ -1,7 +1,7 @@
 // Module ID: 10879
 // Function ID: 10880
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 2064, 6036, 502, 2012, 2116, 5947, 10831, 10354, 5115, 21, 5092, 1200, 587, 558, 576, 10360, 12, 10828, 10880, 504, 5106, 10881, 10884, 10894, 10904, 10905, 10824, 10917, 10963, 4818, 8269, 10907, 10910, 10838, 10834, 10837, 1497, 1382, 8451, 2]
+// Dependencies: [32, 19, 17, 2064, 6036, 502, 2012, 2116, 5947, 10831, 10354, 5115, 21, 5092, 1200, 587, 558, 576, 10360, 12, 10828, 10880, 504, 5106, 10881, 10884, 10894, 10904, 10905, 10824, 10917, 10963, 4818, 8264, 10907, 10910, 10838, 10834, 10837, 1497, 1382, 8446, 2]
 
 // Module 10879 (PictureInPictureVideo)
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useToken2 from "useToken" /* 4818 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8269 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8264 */;
 import transitionToActivityDefault from "transitionToActivity" /* 10824 */;
 import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10834 */;
 import usePipDimensionsDefault from "usePipDimensions" /* 10837 */;

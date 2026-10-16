@@ -1,7 +1,7 @@
 // Module ID: 16058
 // Function ID: 16059
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 11380, 1126, 12896, 8202, 7761, 4769, 16059, 5088, 16063, 9036, 5379, 2]
+// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 11380, 1126, 12896, 8197, 7756, 4769, 16059, 5088, 16063, 9031, 5379, 2]
 
 // Module 16058 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7761 */;
-import FolderIcon from "FolderIcon" /* 8202 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7756 */;
+import FolderIcon from "FolderIcon" /* 8197 */;
 import UserIcon from "UserIcon" /* 11380 */;
 import ChatSmileIcon from "ChatSmileIcon" /* 12896 */;
 import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16059 */;
@@ -158,7 +158,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj10 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-        const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+        const NitroWheelIcon = tmp(9031).NitroWheelIcon;
         const tmp40 = hasOwnProperty(NitroWheelIcon, obj10);
         cResult[15] = tmp40;
         tmp37 = tmp40;
@@ -325,7 +325,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   Button = tmp3(5379).Button;
   intl9 = tmp3(1126).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9036).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9031).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 }));

@@ -1,10 +1,10 @@
 // Module ID: 16207
 // Function ID: 16208
 // Name: baseWhile
-// Dependencies: [9560]
+// Dependencies: [9555]
 
 // Module 16207 (baseWhile)
-import baseSlice from "baseSlice" /* 9560 */;
+import baseSlice from "baseSlice" /* 9555 */;
 
 
 export default function baseWhile(arg0, fn, arg2, arg3) {

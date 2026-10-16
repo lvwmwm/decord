@@ -1,7 +1,7 @@
 // Module ID: 16290
 // Function ID: 16291
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2087, 16280, 7993, 10664, 558, 576, 16291, 15096, 2041, 5299, 1126, 5398, 16292, 7498, 5918, 6684, 16283, 10663, 2]
+// Dependencies: [2087, 16280, 7988, 10664, 558, 576, 16291, 15096, 2041, 5299, 1126, 5398, 16292, 7493, 5918, 6684, 16283, 10663, 2]
 
 // Module 16290 (SafetyGuildSettingMessageRequests)
 import react from "react" /* 576 */;
@@ -10,8 +10,8 @@ import UserSettings from "UserSettings" /* 2041 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import AlertDefault from "Alert" /* 5398 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16283 */;

@@ -1,7 +1,7 @@
 // Module ID: 12864
 // Function ID: 12865
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7100, 1126, 1200, 10332, 9036, 587, 10748, 9443, 2]
+// Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7100, 1126, 1200, 10332, 9031, 587, 10748, 9438, 2]
 
 // Module 12864 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap;
 
 let tmp;
-const NitroWheelIcon2 = tmp(9036);
+const NitroWheelIcon2 = tmp(9031);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
             return closure_4(ContentDismissActionType.USER_DISMISS);
           }
         }
-        const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+        const NitroWheelIcon = tmp(9031).NitroWheelIcon;
         class H {
           constructor() {
             const tmp = closure_2;
@@ -318,7 +318,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       }
       return obj;
     }, items1);
-    const tmp3Result = tmp3(9443);
+    const tmp3Result = tmp3(9438);
     const coachmark = tmp3Result.useCoachmark(ref, memo);
     return <closure_5 ref={ref} collapsable={false}>{children}</closure_5>;
   }

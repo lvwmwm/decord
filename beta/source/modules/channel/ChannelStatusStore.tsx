@@ -1,9 +1,9 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7247
+// Function ID: 7248
 // Name: ChannelStatusStore
 // Dependencies: [5757, 504, 1106, 584, 2]
 
-// Module 7252 (ChannelStatusStore)
+// Module 7247 (ChannelStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;

@@ -1,7 +1,7 @@
 // Module ID: 16165
 // Function ID: 16166
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 8451, 9444, 5379, 6896, 6262, 6263, 5088, 6846, 6814, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 8446, 9439, 5379, 6896, 6262, 6263, 5088, 6846, 6814, 2]
 
 // Module 16165 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import LayerScope2 from "LayerScope" /* 6846 */;
-import DeviceOrientation from "DeviceOrientation" /* 8451 */;
+import DeviceOrientation from "DeviceOrientation" /* 8446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -136,7 +136,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     if (cResult[2] === visible) {
       tmp15 = cResult[3];
     }
-    const tmpResult = visible(9444);
+    const tmpResult = visible(9439);
     const tooltip = tmpResult.useTooltip(ref, tmp15);
     if (cResult[4] !== visible) {
       class U {
@@ -296,7 +296,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       return closure_1_1(false);
     }
   }), items);
-  const obj2 = visible(9444);
+  const obj2 = visible(9439);
   const tooltip = obj2.useTooltip(ref, memo);
   const obj3 = { children: items1 };
   const obj4 = { style: tmp.container, children: closure_5(visible(5379).Button, obj5) };

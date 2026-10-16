@@ -1,14 +1,14 @@
 // Module ID: 18115
 // Function ID: 18116
 // Name: GuildPowerupsManager
-// Dependencies: [2087, 4750, 4939, 5007, 6808, 2090, 5026, 5013, 5025, 12249, 16602, 5294, 5012, 12226, 8027, 2]
+// Dependencies: [2087, 4750, 4939, 5007, 6808, 2090, 5026, 5013, 5025, 12249, 16602, 5294, 5012, 12226, 8022, 2]
 
 // Module 18115 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5012 */;
 import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5013 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5294 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8027 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8022 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12226 */;
 import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 12249 */;
 import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 16602 */;

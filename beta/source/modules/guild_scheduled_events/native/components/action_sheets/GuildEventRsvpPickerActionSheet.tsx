@@ -1,14 +1,14 @@
-// Module ID: 8682
-// Function ID: 8683
+// Module ID: 8677
+// Function ID: 8678
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 2071, 21, 5092, 587, 558, 576, 8525, 1126, 8535, 5056, 6839, 6262, 6263, 5379, 6814, 6840, 2]
+// Dependencies: [32, 19, 17, 2071, 21, 5092, 587, 558, 576, 8520, 1126, 8530, 5056, 6839, 6262, 6263, 5379, 6814, 6840, 2]
 
-// Module 8682 (GuildEventRsvpPickerActionSheet)
+// Module 8677 (GuildEventRsvpPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8525 */;
+import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8520 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8535);
+const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8530);
 const View = react_native.View;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventUserResponses;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -221,8 +221,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
   let closure_5;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  [defaultValue, tmp6] = defaultValue.useState(event(8525).ResponseOptions.SERIES);
-  let obj = event(8525);
+  [defaultValue, tmp6] = defaultValue.useState(event(8520).ResponseOptions.SERIES);
+  let obj = event(8520);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
     })
   };
   const TableRadioGroup = tmp2(6263).TableRadioGroup;
-  const tmp2Result = event(8525);
+  const tmp2Result = event(8520);
   responseOptions = tmp2Result.getResponseOptions();
   items = [closure_7(TableRadioGroup, obj4), ];
   const obj5 = { style: tmp.buttonWrapper, children: closure_7(Button, obj6) };

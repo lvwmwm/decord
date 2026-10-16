@@ -1,7 +1,7 @@
 // Module ID: 16788
 // Function ID: 16789
 // Name: useGuildMediaState
-// Dependencies: [2064, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 558, 576, 504, 8655, 4739, 14004, 8513, 11, 5894, 2]
+// Dependencies: [2064, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 558, 576, 504, 8650, 4739, 14004, 8508, 11, 5894, 2]
 
 // Module 16788 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;

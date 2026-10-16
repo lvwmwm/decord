@@ -1,10 +1,10 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7687
+// Function ID: 7688
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5729, 5734, 1503, 5909, 7693, 7697, 7546, 7694, 7515, 7516, 5377, 5088, 1126, 3120, 5958, 5379, 5918, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5729, 5734, 1503, 5909, 7688, 7692, 7541, 7689, 7510, 7511, 5377, 5088, 1126, 3120, 5958, 5379, 5918, 2]
 // Exports: default
 
-// Module 7692 (AppStoreAgeVerificationScreen)
+// Module 7687 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
@@ -242,8 +242,8 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7515).ModalScreen;
-  const ModalContent = modalSessionId(7516).ModalContent;
+  const ModalScreen = modalSessionId(7510).ModalScreen;
+  const ModalContent = modalSessionId(7511).ModalContent;
   const Stack = modalSessionId(5377).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };

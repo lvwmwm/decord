@@ -1,13 +1,13 @@
 // Module ID: 12052
 // Function ID: 12053
 // Name: SearchPlatformConstants
-// Dependencies: [4807, 12053, 12055, 8137, 8135, 9106, 2]
+// Dependencies: [4807, 12053, 12055, 8132, 8130, 9101, 2]
 
 // Module 12052 (SearchPlatformConstants)
 import LinkingWhitelist from "LinkingWhitelist" /* 4807 */;
-import FacebookNeutralIcon from "FacebookNeutralIcon" /* 8135 */;
-import InstagramNeutralIcon from "InstagramNeutralIcon" /* 8137 */;
-import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 9106 */;
+import FacebookNeutralIcon from "FacebookNeutralIcon" /* 8130 */;
+import InstagramNeutralIcon from "InstagramNeutralIcon" /* 8132 */;
+import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 9101 */;
 import TiktokNeutralIcon from "TiktokNeutralIcon" /* 12053 */;
 import TwitterNeutralIcon from "TwitterNeutralIcon" /* 12055 */;
 import size from "module_2" /* 2 */;

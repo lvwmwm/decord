@@ -1,13 +1,13 @@
 // Module ID: 15048
 // Function ID: 15049
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 7993, 1085, 15042, 1126, 1200, 15049, 558, 576, 10663, 14960, 15051, 2]
+// Dependencies: [19, 7988, 1085, 15042, 1126, 1200, 15049, 558, 576, 10663, 14960, 15051, 2]
 
 // Module 15048 (AccountViewBackupCodesSetting)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
 import MFAActionCreatorsDefault from "MFAActionCreators" /* 15042 */;
 import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15049 */;

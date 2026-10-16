@@ -1,7 +1,7 @@
 // Module ID: 12117
 // Function ID: 12118
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 2125, 21, 5092, 587, 5969, 558, 576, 1126, 1200, 6185, 504, 11929, 6157, 5088, 8580, 5922, 12118, 2]
+// Dependencies: [32, 109, 19, 17, 2125, 21, 5092, 587, 5969, 558, 576, 1126, 1200, 6185, 504, 11929, 6157, 5088, 8575, 5922, 12118, 2]
 
 // Module 12117 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
@@ -927,10 +927,10 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   items5[3] = tmp19Result;
   items8 = [closure_12(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = c10(command(8580).FormDivider, obj9);
+  items8[1] = c10(command(8575).FormDivider, obj9);
   items8[2] = c10(closure_15, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = c10(command(8580).FormDivider, obj10);
+  items8[3] = c10(command(8575).FormDivider, obj10);
   return closure_12(ref, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

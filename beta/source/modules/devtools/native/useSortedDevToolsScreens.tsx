@@ -1,7 +1,7 @@
 // Module ID: 16122
 // Function ID: 16123
 // Name: useSortedDevToolsScreens
-// Dependencies: [32, 7408, 15884, 15880, 558, 576, 504, 2]
+// Dependencies: [32, 7403, 15884, 15880, 558, 576, 504, 2]
 // Exports: updateSortOrder
 
 // Module 16122 (useSortedDevToolsScreens)
@@ -10,7 +10,7 @@ import react from "react" /* 576 */;
 import DevToolsActionCreators from "DevToolsActionCreators" /* 15880 */;
 import DevToolsScreens from "DevToolsScreens" /* 15884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7408 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

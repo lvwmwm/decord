@@ -1,7 +1,7 @@
 // Module ID: 10097
 // Function ID: 10098
 // Name: PremiumGiftingIntentActionCreators
-// Dependencies: [7348, 502, 5432, 1392, 1085, 1295, 584, 1255, 1265, 2]
+// Dependencies: [7343, 502, 5432, 1392, 1085, 1295, 584, 1255, 1265, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
 // Module 10097 (PremiumGiftingIntentActionCreators)
@@ -10,7 +10,7 @@ import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import Constants from "Constants" /* 1085 */;

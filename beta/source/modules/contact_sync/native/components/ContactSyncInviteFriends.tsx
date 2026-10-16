@@ -1,7 +1,7 @@
 // Module ID: 12425
 // Function ID: 12426
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1265, 1126, 4962, 8482, 6157, 12426, 5088, 5379, 2]
+// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1265, 1126, 4962, 8477, 6157, 12426, 5088, 5379, 2]
 
 // Module 12425 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
@@ -30,7 +30,7 @@ let obj2;
 let tmp;
 let tmp5;
 const UserUtilsDefault = tmp(4962);
-const showShareActionSheet = tmp5(8482);
+const showShareActionSheet = tmp5(8477);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);

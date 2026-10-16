@@ -1,7 +1,7 @@
 // Module ID: 11375
 // Function ID: 11376
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 8257, 1998, 5056, 6820, 5088, 1126, 11376, 2]
+// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 8252, 1998, 5056, 6820, 5088, 1126, 11376, 2]
 
 // Module 11375 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
   const containerId = selectionActionComponent.containerId;
   let tmp3 = closure_6();
   dependencyMap = tmp3;
-  let obj2 = selectionActionComponent(8257);
+  let obj2 = selectionActionComponent(8252);
   const useState = react.useState;
   set = new Set(obj2.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp5 = first(useState(set), 2);
@@ -593,7 +593,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8257);
+  let obj = selectionActionComponent(8252);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);

@@ -1,7 +1,7 @@
 // Module ID: 16496
 // Function ID: 16497
 // Name: useHappeningNowData
-// Dependencies: [32, 19, 2064, 5757, 14001, 6054, 2070, 7348, 5897, 502, 6981, 2065, 4748, 2087, 4750, 5108, 4760, 5966, 1390, 5113, 15589, 1085, 558, 576, 8717, 504, 16497, 16498, 7012, 6984, 584, 11026, 10, 12, 5924, 16499, 16500, 16501, 7013, 16502, 8686, 1388, 6161, 2]
+// Dependencies: [32, 19, 2064, 5757, 14001, 6054, 2070, 7343, 5897, 502, 6981, 2065, 4748, 2087, 4750, 5108, 4760, 5966, 1390, 5113, 15589, 1085, 558, 576, 8712, 504, 16497, 16498, 7012, 6984, 584, 11026, 10, 12, 5924, 16499, 16500, 16501, 7013, 16502, 8681, 1388, 6161, 2]
 // Exports: default
 
 // Module 16496 (useHappeningNowData)
@@ -20,7 +20,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ActiveChannelsStore from "ActiveChannelsStore" /* 14001 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6054 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

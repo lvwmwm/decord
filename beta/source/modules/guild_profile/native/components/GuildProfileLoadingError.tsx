@@ -1,7 +1,7 @@
 // Module ID: 13020
 // Function ID: 13021
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 558, 576, 8863, 5031, 4818, 587, 5391, 7572, 5088, 1126, 6185, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8858, 5031, 4818, 587, 5391, 7567, 5088, 1126, 6185, 2]
 
 // Module 13020 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import Pressables from "Pressables" /* 6185 */;
-import WarningIcon3 from "WarningIcon" /* 7572 */;
-import GuildProfileView from "GuildProfileView" /* 8863 */;
+import WarningIcon3 from "WarningIcon" /* 7567 */;
+import GuildProfileView from "GuildProfileView" /* 8858 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { size: "lg", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-        const WarningIcon = tmp(7572).WarningIcon;
+        const WarningIcon = tmp(7567).WarningIcon;
         const tmp19 = React3(WarningIcon, obj4);
         cResult[6] = tmp19;
         tmp17 = tmp19;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
             const intl2 = tmp(1126).intl;
             const stringResult = intl2.string(intl4.t.s1fAEw);
             const obj7 = { size: "sm", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-            const WarningIcon2 = tmp(7572).WarningIcon;
+            const WarningIcon2 = tmp(7567).WarningIcon;
             const tmp39 = React3(WarningIcon2, obj7);
             cResult[16] = stringResult;
             cResult[17] = tmp39;

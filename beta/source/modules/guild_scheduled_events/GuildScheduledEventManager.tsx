@@ -1,10 +1,10 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8513
+// Function ID: 8514
 // Name: GuildScheduledEventManager
-// Dependencies: [5, 4939, 6054, 8519, 6808, 2]
+// Dependencies: [5, 4939, 6054, 8514, 6808, 2]
 
-// Module 8518 (GuildScheduledEventManager)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8519 */;
+// Module 8513 (GuildScheduledEventManager)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8514 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;

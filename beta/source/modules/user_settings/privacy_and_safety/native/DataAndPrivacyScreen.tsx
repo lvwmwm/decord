@@ -1,13 +1,13 @@
 // Module ID: 16276
 // Function ID: 16277
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 5932, 7993, 1085, 21, 558, 576, 16269, 1126, 2128, 8829, 1503, 15134, 15137, 10663, 15092, 14965, 2]
+// Dependencies: [19, 5932, 7988, 1085, 21, 558, 576, 16269, 1126, 2128, 8824, 1503, 15134, 15137, 10663, 15092, 14965, 2]
 
 // Module 16276 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8829 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8824 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15092 */;
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   obj8 = { helpArticle: tmp2Result2.getSecureFramesHelpdeskArticle() };
   prop = tmp2(1126).t["/6sFWa"];
   const items4 = [obj7];
-  tmp2Result2 = stackNavigation(8829);
+  tmp2Result2 = stackNavigation(8824);
   const obj9 = { label: intl3.string(stackNavigation(1126).t["+uHbqE"]), settings: items5, subLabel: intl4.format(stackNavigation(1126).t.R5N31P, obj10) };
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, items4, tmp12);
   intl3 = tmp2(1126).intl;

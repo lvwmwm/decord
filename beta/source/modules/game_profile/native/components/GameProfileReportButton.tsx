@@ -1,16 +1,16 @@
-// Module ID: 9115
-// Function ID: 9116
+// Module ID: 9110
+// Function ID: 9111
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 5056, 8879, 5934, 9116, 2000, 9116, 5379, 1126, 2]
+// Dependencies: [19, 21, 5056, 8874, 5934, 9111, 2000, 9111, 5379, 1126, 2]
 // Exports: default
 
-// Module 9115 (GameProfileReportButton)
+// Module 9110 (GameProfileReportButton)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import GameDetectionReportModal from "GameDetectionReportModal" /* 9116 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import GameDetectionReportModal from "GameDetectionReportModal" /* 9111 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export default function GameProfileReportButton(applicationId) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const obj2 = { applicationId };
     ModalActionCreatorsDefault;
-    const tmp4 = asyncRequire(9116, dependencyMap.paths);
+    const tmp4 = asyncRequire(9111, dependencyMap.paths);
     pushLazy(tmp4, obj2, GameDetectionReportModal.MODAL_KEY);
   }, items);
   const Button = applicationId(5379).Button;

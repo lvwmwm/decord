@@ -1,7 +1,7 @@
 // Module ID: 13090
 // Function ID: 13091
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1126, 1200, 13091, 13092, 13088, 13093, 5088, 6665, 10530, 6839, 6739, 8685, 6840, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1126, 1200, 13091, 13092, 13088, 13093, 5088, 6665, 10530, 6839, 6739, 8680, 6840, 2]
 
 // Module 13090 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import SearchField2 from "SearchField" /* 6739 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8685 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8680 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13091 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 13092 */;
 import GuildInviteRowDefault from "GuildInviteRow" /* 13093 */;

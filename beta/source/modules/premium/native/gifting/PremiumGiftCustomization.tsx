@@ -1,7 +1,7 @@
 // Module ID: 12738
 // Function ID: 12739
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1392, 21, 5092, 587, 558, 576, 1503, 10055, 12739, 1126, 10186, 12740, 5088, 10213, 10215, 12741, 2]
+// Dependencies: [32, 19, 17, 1392, 21, 5092, 587, 558, 576, 1503, 10050, 12739, 1126, 10186, 12740, 5088, 10213, 10215, 12741, 2]
 
 // Module 12738 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 587 */;

@@ -1,7 +1,7 @@
 // Module ID: 11638
 // Function ID: 11639
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9384, 5091, 5989, 7375, 11639, 1390, 1085, 21, 558, 576, 11640, 504, 5092, 587, 11641, 11642, 11643, 5409, 1265, 6852, 6879, 11644, 11645, 4850, 4818, 4827, 5378, 5382, 11655, 1200, 5088, 11659, 2]
+// Dependencies: [19, 17, 9379, 5091, 5989, 7370, 11639, 1390, 1085, 21, 558, 576, 11640, 504, 5092, 587, 11641, 11642, 11643, 5409, 1265, 6852, 6879, 11644, 11645, 4850, 4818, 4827, 5378, 5382, 11655, 1200, 5088, 11659, 2]
 // Exports: hasTypingIndicatorContent
 
 // Module 11638 (TypingIndicator)
@@ -14,8 +14,8 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import SlowmodeStore from "SlowmodeStore" /* 7375 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import useTypingUsersIds from "useTypingUsersIds" /* 11640 */;
 import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11643 */;
 import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 11644 */;

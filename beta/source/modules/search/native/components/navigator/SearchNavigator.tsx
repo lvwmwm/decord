@@ -1,7 +1,7 @@
 // Module ID: 17628
 // Function ID: 17629
 // Name: SearchNavigator
-// Dependencies: [19, 17, 9312, 17392, 1085, 21, 5092, 587, 9345, 558, 576, 6688, 12057, 1631, 17629, 9298, 17623, 17624, 9357, 1383, 17625, 9356, 2]
+// Dependencies: [19, 17, 9307, 17392, 1085, 21, 5092, 587, 9340, 558, 576, 6688, 12057, 1631, 17629, 9293, 17623, 17624, 9352, 1383, 17625, 9351, 2]
 
 // Module 17628 (SearchNavigator)
 import react_native from "react-native" /* 17 */;
@@ -9,15 +9,15 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import TrackingConstants from "TrackingConstants" /* 9312 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9357 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9352 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
 import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17392 */;
 import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 17623 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -245,7 +245,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
         const Screen = closure_11.Screen;
-        const obj8 = { name: tmp(9356).ConversationNavigatorScreens.FOCUS, options: tmp28, getComponent: tmp29 };
+        const obj8 = { name: tmp(9351).ConversationNavigatorScreens.FOCUS, options: tmp28, getComponent: tmp29 };
         cResult[21] = tmp28;
         cResult[22] = closure_8(Screen, obj8);
         const tmp31 = closure_8(Screen, obj8);
@@ -350,7 +350,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   };
   items2[1] = closure_8(closure_11.Screen, obj6);
   const obj7 = {
-    name: searchContext(9356).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(9351).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);

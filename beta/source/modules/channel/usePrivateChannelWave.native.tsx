@@ -1,7 +1,7 @@
 // Module ID: 16472
 // Function ID: 16473
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 5085, 558, 576, 11964, 1112, 7179, 4809, 1126, 16473, 2]
+// Dependencies: [5, 32, 19, 1085, 5085, 558, 576, 11964, 1112, 7174, 4809, 1126, 16473, 2]
 
 // Module 16472 (usePrivateChannelWave)
 import MessageConstants from "MessageConstants" /* 5085 */;

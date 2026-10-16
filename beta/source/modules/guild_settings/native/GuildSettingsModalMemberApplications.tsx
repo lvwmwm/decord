@@ -1,7 +1,7 @@
 // Module ID: 17045
 // Function ID: 17046
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6118, 21, 5092, 587, 558, 576, 4962, 5088, 17046, 1415, 1200, 6180, 1631, 4942, 17051, 17052, 504, 1126, 8625, 8359, 6728, 2]
+// Dependencies: [19, 17, 6118, 21, 5092, 587, 558, 576, 4962, 5088, 17046, 1415, 1200, 6180, 1631, 4942, 17051, 17052, 504, 1126, 8620, 8354, 6728, 2]
 
 // Module 17045 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;

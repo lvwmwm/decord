@@ -1,9 +1,9 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9543
+// Function ID: 9544
 // Name: useEmojiAndSource
 // Dependencies: [5, 32, 19, 2087, 5987, 6160, 1085, 4767, 558, 576, 573, 2]
 
-// Module 9548 (useEmojiAndSource)
+// Module 9543 (useEmojiAndSource)
 import Constants from "Constants" /* 1085 */;
 import EmojiTypes from "EmojiTypes" /* 4767 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

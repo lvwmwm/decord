@@ -1,7 +1,7 @@
 // Module ID: 18298
 // Function ID: 18299
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 4750, 8639, 1085, 21, 5092, 587, 558, 576, 7738, 8638, 1126, 2128, 6896, 6265, 4827, 6201, 7089, 6263, 15116, 6262, 5088, 8580, 5377, 6728, 1503, 504, 2]
+// Dependencies: [19, 4750, 8634, 1085, 21, 5092, 587, 558, 576, 7733, 8633, 1126, 2128, 6896, 6265, 4827, 6201, 7089, 6263, 15116, 6262, 5088, 8575, 5377, 6728, 1503, 504, 2]
 
 // Module 18298 (GuildSettingsModalModeration)
 import react2 from "react" /* 576 */;
@@ -14,12 +14,12 @@ import TableRadioRow2 from "TableRadioRow" /* 6262 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import useUserIsTeen from "useUserIsTeen" /* 7738 */;
-import Form2 from "Form" /* 8580 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
+import Form2 from "Form" /* 8575 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

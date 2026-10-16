@@ -1,7 +1,7 @@
 // Module ID: 17326
 // Function ID: 17327
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 13219, 21, 5092, 587, 558, 576, 17327, 6906, 10533, 5088, 7572, 17328, 17330, 1631, 17331, 13235, 5379, 504, 6201, 5934, 10603, 2]
+// Dependencies: [19, 17, 13219, 21, 5092, 587, 558, 576, 17327, 6906, 10533, 5088, 7567, 17328, 17330, 1631, 17331, 13235, 5379, 504, 6201, 5934, 10603, 2]
 
 // Module 17326 (ConjurePerfTraceModal)
 import react2 from "react" /* 576 */;
@@ -640,7 +640,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   let tmp14Result5 = null;
   if (node.failed) {
     const obj15 = { size: "xs", color: selected(587).colors.STATUS_DANGER };
-    const WarningIcon = tmp2(7572).WarningIcon;
+    const WarningIcon = tmp2(7567).WarningIcon;
     tmp14Result5 = tmp14(WarningIcon, obj15);
   }
   items2[6] = tmp14Result5;

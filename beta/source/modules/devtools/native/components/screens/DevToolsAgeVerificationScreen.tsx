@@ -1,7 +1,7 @@
 // Module ID: 16083
 // Function ID: 16084
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 5092, 587, 7511, 7498, 4809, 5918, 558, 576, 1631, 6180, 6640, 6189, 6265, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 587, 7506, 7493, 4809, 5918, 558, 576, 1631, 6180, 6640, 6189, 6265, 2]
 
 // Module 16083 (DevToolsAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import TableRow3 from "TableRow" /* 6180 */;
 import TableRowArrow from "TableRowArrow" /* 6189 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
 import KeyIcon from "KeyIcon" /* 6640 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7511 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7506 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

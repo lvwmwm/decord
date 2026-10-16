@@ -1,14 +1,14 @@
 // Module ID: 17985
 // Function ID: 17986
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 5092, 558, 576, 9302, 16791, 587, 17984, 4818, 17986, 4850, 5378, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 9297, 16791, 587, 17984, 4818, 17986, 4850, 5378, 2]
 // Exports: SimpleGuildContainer
 
 // Module 17985 (SimpleGuildContainer)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9302 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9297 */;
 import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16791 */;
 import CutoutImageDefault from "CutoutImage" /* 17986 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 15605
 // Function ID: 15606
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 7993, 2041, 558, 576, 1126, 1209, 10663, 5012, 2]
+// Dependencies: [19, 7988, 2041, 558, 576, 1126, 1209, 10663, 5012, 2]
 
 // Module 15605 (DefaultGuildThemePreferenceSetting)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import intl3 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5012 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

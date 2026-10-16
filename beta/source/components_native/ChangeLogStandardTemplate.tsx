@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8117
+// Function ID: 8118
 // Name: ChangeLogStandardTemplate
-// Dependencies: [19, 17, 2129, 1085, 21, 5092, 587, 558, 576, 1200, 573, 8123, 1265, 4806, 1949, 8125, 5079, 7574, 8133, 1126, 4732, 8135, 8137, 6814, 2]
+// Dependencies: [19, 17, 2129, 1085, 21, 5092, 587, 558, 576, 1200, 573, 8118, 1265, 4806, 1949, 8120, 5079, 7569, 8128, 1126, 4732, 8130, 8132, 6814, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 8122 (ChangeLogStandardTemplate)
+// Module 8117 (ChangeLogStandardTemplate)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -12,7 +12,7 @@ import _mod1949 from "module_1949" /* 1949 */;
 import getLocalizedLinkDefault from "getLocalizedLink" /* 4732 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
-import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8125 */;
+import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8120 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
@@ -313,7 +313,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = tmp(8123);
+  const tmpResult2 = tmp(8118);
   const changelog = tmpResult2.useChangelog(changelogId, stateFromStores).changelog;
   let date;
   const tmp8 = cResult[2];
@@ -403,7 +403,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
   let obj = target(573);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = target(8123);
+  let obj2 = target(8118);
   const changelog = obj2.useChangelog(changelogId, stateFromStores).changelog;
   const obj3 = {
     accessibilityRole: "link",
@@ -552,14 +552,14 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8133).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              icon: closure_10(onScroll(8128).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
               accessibilityLabel: intl.string(onScroll(1126).t["/lXfom"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(getLocalizedLinkDefault(constants.TWITTER));
                         }
             };
-            const IconButton = tmp(7574).IconButton;
+            const IconButton = tmp(7569).IconButton;
             intl = tmp(1126).intl;
             const tmp20 = closure_10(IconButton, obj7);
             cResult[10] = tmp20;
@@ -573,14 +573,14 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8135).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              icon: closure_10(onScroll(8130).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
               accessibilityLabel: intl2.string(onScroll(1126).t["h0or/l"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(constants2.FACEBOOK_URL);
                         }
             };
-            const IconButton2 = tmp(7574).IconButton;
+            const IconButton2 = tmp(7569).IconButton;
             intl2 = tmp(1126).intl;
             const tmp23 = closure_10(IconButton2, obj8);
             cResult[11] = tmp23;
@@ -594,14 +594,14 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8137).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              icon: closure_10(onScroll(8132).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
               accessibilityLabel: intl3.string(onScroll(1126).t["5uVPyf"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(constants2.INSTAGRAM_URL);
                         }
             };
-            const IconButton3 = tmp(7574).IconButton;
+            const IconButton3 = tmp(7569).IconButton;
             intl3 = tmp(1126).intl;
             const tmp26 = closure_10(IconButton3, obj9);
             cResult[12] = tmp26;
@@ -696,42 +696,42 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8133).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8128).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl.string(onScroll(1126).t["/lXfom"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(getLocalizedLinkDefault(constants.TWITTER));
     }
   };
-  const IconButton = onScroll(7574).IconButton;
+  const IconButton = onScroll(7569).IconButton;
   intl = onScroll(1126).intl;
   items3 = [closure_10(IconButton, obj7), , ];
   const obj8 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8135).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8130).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl2.string(onScroll(1126).t["h0or/l"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.FACEBOOK_URL);
     }
   };
-  const IconButton2 = onScroll(7574).IconButton;
+  const IconButton2 = onScroll(7569).IconButton;
   intl2 = onScroll(1126).intl;
   items3[1] = closure_10(IconButton2, obj8);
   const obj9 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8137).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8132).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl3.string(onScroll(1126).t["5uVPyf"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.INSTAGRAM_URL);
     }
   };
-  const IconButton3 = onScroll(7574).IconButton;
+  const IconButton3 = onScroll(7569).IconButton;
   intl3 = onScroll(1126).intl;
   items3[2] = closure_10(IconButton3, obj9);
   items2[1] = closure_11(SafeAreaPaddingView, obj6);

@@ -1,12 +1,12 @@
 // Module ID: 12115
 // Function ID: 12116
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 9717, 21, 558, 576, 1998, 9254, 9808, 7247, 12112, 12113, 2]
+// Dependencies: [19, 17, 9712, 21, 558, 576, 1998, 9249, 9803, 7242, 12112, 12113, 2]
 
 // Module 12115 (ApplicationCommandList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11943
 // Function ID: 11944
 // Name: AppLauncherButtonIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 4987, 1629, 10309, 8234, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 4987, 1629, 10309, 8229, 2]
 
 // Module 11943 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
     tmp12Result = tmp12(PlusLargeIcon, obj4);
   } else {
     const obj6 = { style: tmp5 };
-    const AppsIcon = tmp(8234).AppsIcon;
+    const AppsIcon = tmp(8229).AppsIcon;
     const merged1 = Object.assign(tmp4);
     tmp12Result = tmp12(AppsIcon, obj6);
   }
@@ -94,7 +94,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
     tmp4Result = tmp4(PlusLargeIcon, obj2);
   } else {
     const obj4 = { style };
-    const AppsIcon = tmp6(8234).AppsIcon;
+    const AppsIcon = tmp6(8229).AppsIcon;
     const merged2 = Object.assign(merged);
     tmp4Result = tmp4(AppsIcon, obj4);
   }

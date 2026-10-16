@@ -1,7 +1,7 @@
 // Module ID: 10569
 // Function ID: 10570
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 558, 576, 10538, 6157, 7330, 2049, 7100, 1126, 7094, 9443, 2]
+// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 558, 576, 10538, 6157, 7325, 2049, 7100, 1126, 7094, 9438, 2]
 
 // Module 10569 (TieredTenureBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -256,11 +256,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TieredTenu
   let first;
   dependencyMap = undefined;
   ({ targetRef, badgeId } = arg0);
-  let obj = tieredTenureBadgeData(7330);
+  let obj = tieredTenureBadgeData(7325);
   const tieredTenureBadge = obj.getTieredTenureBadge(badgeId);
   tieredTenureBadgeData = null;
   if (null != tieredTenureBadge) {
-    const tmpResult = tieredTenureBadgeData(7330);
+    const tmpResult = tieredTenureBadgeData(7325);
     tieredTenureBadgeData = tmpResult.getTieredTenureBadgeData(tieredTenureBadge);
   }
   if (null != tieredTenureBadgeData) {
@@ -304,7 +304,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TieredTenu
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  const tmpResult4 = tieredTenureBadgeData(9443);
+  const tmpResult4 = tieredTenureBadgeData(9438);
   const coachmark = tmpResult4.useCoachmark(targetRef, memo);
   return null;
 });

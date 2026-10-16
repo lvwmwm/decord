@@ -1,14 +1,14 @@
 // Module ID: 12146
 // Function ID: 12147
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 4769, 504, 9260, 9270, 4809, 1126, 5088, 9036, 6185, 2]
+// Dependencies: [32, 19, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 4769, 504, 9255, 9265, 4809, 1126, 5088, 9031, 6185, 2]
 
 // Module 12146 (ChatInputCharCounter)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(9260)();
+  const tmp9 = stateFromStores(9255)();
   dependencyMap = tmp9;
   let result = tmp9 / 10;
   _slicedToArray = result;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               if (cResult[15] !== stateFromStores) {
                 let tmp42 = null;
                 if (!stateFromStores) {
-                  tmp42 = closure_9(tmp(9036).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+                  tmp42 = closure_9(tmp(9031).NitroWheelIcon, { size: "xs", color: "icon-muted" });
                 }
                 class S {
                   constructor() {
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const obj = stateFromStores(maxLength[10]);
     return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
   });
-  const tmp5 = stateFromStores(9260)();
+  const tmp5 = stateFromStores(9255)();
   dependencyMap = tmp5;
   let result = tmp5 / 10;
   _slicedToArray = result;
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     let tmp20Result = null;
     const tmp20 = closure_9;
     if (!stateFromStores) {
-      tmp20Result = tmp20(tmp2(9036).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp20Result = tmp20(tmp2(9031).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items3[1] = tmp20Result;
     tmp16Result = tmp19(PressableOpacity3, obj2);
@@ -389,14 +389,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const tmp16 = closure_10;
     const tmp17 = closure_9;
     if (tmp11) {
-      tmp17Result = tmp17(tmp2(9036).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp17Result = tmp17(tmp2(9031).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items5[1] = tmp17Result;
     tmp16Result = tmp16(PressableOpacity2, obj4);
   } else {
     tmp16Result = null;
     if (tmp11) {
-      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9036).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9031).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
       items6 = [tmp.container, style];
       const PressableOpacity = tmp2(6185).PressableOpacity;
       tmp16Result = closure_9(PressableOpacity, obj6);

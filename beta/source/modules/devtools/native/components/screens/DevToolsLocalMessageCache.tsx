@@ -1,7 +1,7 @@
 // Module ID: 15892
 // Function ID: 15893
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 2065, 21, 5092, 587, 558, 576, 6180, 6265, 7210, 5088, 5377, 2]
+// Dependencies: [17, 2065, 21, 5092, 587, 558, 576, 6180, 6265, 7205, 5088, 5377, 2]
 
 // Module 15892 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import TableRowGroup3 from "TableRowGroup" /* 6265 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7210 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7205 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

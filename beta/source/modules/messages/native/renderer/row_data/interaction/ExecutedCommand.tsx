@@ -1,7 +1,7 @@
 // Module ID: 13492
 // Function ID: 13493
 // Name: ExecutedCommand
-// Dependencies: [17, 1404, 2065, 1390, 1085, 1418, 1415, 5627, 9644, 587, 7243, 5442, 7980, 7982, 8513, 1126, 9247, 2]
+// Dependencies: [17, 1404, 2065, 1390, 1085, 1418, 1415, 5627, 9639, 587, 7238, 5442, 7975, 7977, 8508, 1126, 9242, 2]
 // Exports: createExecutedCommand
 
 // Module 13492 (ExecutedCommand)
@@ -11,12 +11,12 @@ import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7980 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7982 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8513 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9644 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7975 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7977 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8508 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9639 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;

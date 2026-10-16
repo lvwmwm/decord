@@ -1,11 +1,11 @@
 // Module ID: 18280
 // Function ID: 18281
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2087, 8639, 1085, 21, 16581, 8638, 1273, 1126, 6201, 18281, 18293, 18298, 18299, 18318, 18337, 18342, 18357, 18358, 18370, 18382, 18384, 17604, 17613, 18392, 18396, 18397, 17615, 16582, 18398, 18399, 18419, 18440, 18444, 18447, 18450, 11393, 11407, 11437, 18451, 18456, 18457, 18479, 18502, 18542, 18543, 18557, 18596, 18600, 18601, 18604, 18612, 18613, 558, 576, 1631, 6170, 504, 6688, 2]
+// Dependencies: [32, 19, 2087, 8634, 1085, 21, 16581, 8633, 1273, 1126, 6201, 18281, 18293, 18298, 18299, 18318, 18337, 18342, 18357, 18358, 18370, 18382, 18384, 17604, 17613, 18392, 18396, 18397, 17615, 16582, 18398, 18399, 18419, 18440, 18444, 18447, 18450, 11393, 11407, 11437, 18451, 18456, 18457, 18479, 18502, 18542, 18543, 18557, 18596, 18600, 18601, 18604, 18612, 18613, 558, 576, 1631, 6170, 504, 6688, 2]
 
 // Module 18280 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11393 */;
 import KickConfirmDefault from "KickConfirm" /* 11407 */;
 import BanConfirmDefault from "BanConfirm" /* 11437 */;
@@ -53,7 +53,7 @@ import GuildSettingsModalGuildSpaceDefault from "GuildSettingsModalGuildSpace" /
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

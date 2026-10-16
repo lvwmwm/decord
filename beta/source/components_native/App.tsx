@@ -1,7 +1,7 @@
 // Module ID: 14647
 // Function ID: 14648
 // Name: App
-// Dependencies: [19, 14648, 502, 8787, 13980, 13990, 14649, 14010, 9122, 14309, 14650, 14651, 14652, 7333, 4775, 5081, 14653, 6624, 14654, 14656, 21, 14657, 2000, 558, 576, 14690, 5361, 14696, 14697, 14698, 9703, 14708, 13620, 14709, 14712, 10065, 14791, 14799, 14802, 8391, 14805, 14807, 14811, 14813, 14814, 14815, 14817, 7443, 14818, 1382, 7778, 11193, 504, 5930, 14820, 7506, 9, 13965, 14447, 11631, 14822, 16365, 2]
+// Dependencies: [19, 14648, 502, 8782, 13980, 13990, 14649, 14010, 9117, 14309, 14650, 14651, 14652, 7328, 4775, 5081, 14653, 6624, 14654, 14656, 21, 14657, 2000, 558, 576, 14690, 5361, 14696, 14697, 14698, 9698, 14708, 13620, 14709, 14712, 10065, 14791, 14799, 14802, 8386, 14805, 14807, 14811, 14813, 14814, 14815, 14817, 7438, 14818, 1382, 7773, 11193, 504, 5930, 14820, 7501, 9, 13965, 14447, 11631, 14822, 16365, 2]
 
 // Module 14647 (App)
 import TTITrackerDefault from "TTITracker" /* 9 */;
@@ -11,9 +11,9 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5361 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 7443 */;
-import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8391 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9703 */;
+import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 7438 */;
+import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8386 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9698 */;
 import GPlayManagerDefault from "GPlayManager" /* 10065 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11631 */;
 import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13620 */;
@@ -41,17 +41,17 @@ import AppContainerDefault from "AppContainer" /* 14822 */;
 import react from "react" /* 19 */;
 import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14648 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AudioManagerStore from "AudioManagerStore" /* 8787 */;
+import AudioManagerStore from "AudioManagerStore" /* 8782 */;
 import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13980 */;
 import RequestReviewStore from "RequestReviewStore" /* 13990 */;
 import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 14649 */;
 import LocalPushNotificationStore from "LocalPushNotificationStore" /* 14010 */;
-import PromotionsStore from "PromotionsStore" /* 9122 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
 import BitRateStore from "BitRateStore" /* 14309 */;
 import ShareStore from "ShareStore" /* 14650 */;
 import PermissionVADStore from "PermissionVADStore" /* 14651 */;
 import InteractionModalStore from "InteractionModalStore" /* 14652 */;
-import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 7333 */;
+import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 7328 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import AnalyticsLogStore from "AnalyticsLogStore" /* 14653 */;
@@ -63,7 +63,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp28;
-const IosImageTypesManagerDefault = tmp(7778);
+const IosImageTypesManagerDefault = tmp(7773);
 const RouteManagerUtils = tmp28(11193);
 const StartupProfiler = tmp(11631);
 const jsx = Fragment.jsx;
@@ -313,7 +313,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuth
           const obj3 = PlatformUtils;
           const tmp5 = importDefault;
           if (obj3.isAndroid()) {
-            const tmp5Result = tmp5(7506);
+            const tmp5Result = tmp5(7501);
             const notificationAuthorization = tmp5Result.requestNotificationAuthorization();
           }
           return () => {
@@ -374,7 +374,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuth
         const obj3 = PlatformUtils;
         const tmp5 = importDefault;
         if (obj3.isAndroid()) {
-          const tmp5Result = tmp5(7506);
+          const tmp5Result = tmp5(7501);
           const notificationAuthorization = tmp5Result.requestNotificationAuthorization();
         }
         return () => {

@@ -1,7 +1,7 @@
 // Module ID: 13461
 // Function ID: 13462
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7263, 5056, 12772, 4809, 1126, 2]
+// Dependencies: [5, 19, 558, 576, 7258, 5056, 12772, 4809, 1126, 2]
 
 // Module 13461 (useHandleClaim)
 import react2 from "react" /* 576 */;

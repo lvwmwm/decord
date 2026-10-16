@@ -1,7 +1,7 @@
 // Module ID: 17593
 // Function ID: 17594
 // Name: PermissionSpecUtils
-// Dependencies: [2069, 2087, 1085, 7490, 17594, 6954, 11601, 17595, 1126, 2128, 6972, 5895, 17596, 6971, 17597, 8638, 7904, 2]
+// Dependencies: [2069, 2087, 1085, 7485, 17594, 6954, 11601, 17595, 1126, 2128, 6972, 5895, 17596, 6971, 17597, 8633, 7899, 2]
 
 // Module 17593 (PermissionSpecUtils)
 import intl34 from "intl" /* 1126 */;
@@ -9,9 +9,9 @@ import ChannelRecord from "ChannelRecord" /* 2069 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6954 */;
 import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6971 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
-import Tracking from "Tracking" /* 7904 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import Tracking from "Tracking" /* 7899 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 11601 */;
 import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 17594 */;
 import HangoutWindowExperiment from "HangoutWindowExperiment" /* 17595 */;

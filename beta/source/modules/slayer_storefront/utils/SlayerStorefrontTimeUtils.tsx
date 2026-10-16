@@ -1,7 +1,7 @@
 // Module ID: 10111
 // Function ID: 10112
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4702, 1102, 558, 576, 7168, 1126, 3719, 2]
+// Dependencies: [32, 19, 4702, 1102, 558, 576, 7163, 1126, 3719, 2]
 
 // Module 10111 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef3719 from "module_3719" /* 3719 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import useIntervalDefault from "useInterval" /* 7168 */;
+import useIntervalDefault from "useInterval" /* 7163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

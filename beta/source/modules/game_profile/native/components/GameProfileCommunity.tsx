@@ -1,18 +1,18 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8947
+// Function ID: 8948
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 6627, 8947, 8949, 8921, 8879, 7053, 8953, 2079, 1126, 6159, 5088, 8870, 1200, 5379, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 6627, 8942, 8944, 8916, 8874, 7053, 8948, 2079, 1126, 6159, 5088, 8865, 1200, 5379, 2]
 
-// Module 8952 (GameProfileCommunity)
+// Module 8947 (GameProfileCommunity)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
 import transitionToGuild from "transitionToGuild" /* 7053 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8947 */;
-import GameProfileSection from "GameProfileSection" /* 8949 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8953 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8942 */;
+import GameProfileSection from "GameProfileSection" /* 8944 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8948 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -162,7 +162,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ga
                 }
                 const obj6 = { animationDelayMs: result, showViewAllSkeleton: false, skeletonTitleWidth: 80, children: hasOwnProperty(View, obj7) };
                 obj7 = { style: tmp4.card, children: tmp34 };
-                const GameProfileSectionSkeleton = tmp(8949).GameProfileSectionSkeleton;
+                const GameProfileSectionSkeleton = tmp(8944).GameProfileSectionSkeleton;
                 const tmp40 = hasOwnProperty(GameProfileSectionSkeleton, obj6);
                 cResult[24] = tmp4.card;
                 cResult[25] = tmp34;

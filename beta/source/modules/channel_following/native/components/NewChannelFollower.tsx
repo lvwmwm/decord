@@ -1,7 +1,7 @@
 // Module ID: 12177
 // Function ID: 12178
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 2069, 2065, 4748, 2087, 4750, 5963, 1085, 21, 5092, 587, 8295, 5031, 504, 5421, 5396, 4969, 12178, 12179, 6840, 6307, 6157, 6159, 1200, 8159, 5088, 1126, 5377, 6265, 6180, 5056, 8554, 2000, 12180, 8580, 5958, 5379, 12183, 6844, 2]
+// Dependencies: [32, 19, 17, 2069, 2065, 4748, 2087, 4750, 5963, 1085, 21, 5092, 587, 8290, 5031, 504, 5421, 5396, 4969, 12178, 12179, 6840, 6307, 6157, 6159, 1200, 8154, 5088, 1126, 5377, 6265, 6180, 5056, 8549, 2000, 12180, 8575, 5958, 5379, 12183, 6844, 2]
 // Exports: default
 
 // Module 12177 (NewChannelFollower)
@@ -225,7 +225,7 @@ export default function NewChannelFollower(targetChannelId) {
         },
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8554, dependencyMap.paths);
+      const tmp2 = asyncRequire(8549, dependencyMap.paths);
       intl = intl10.intl;
       const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
       reduce = flattenedGuildIds.reduce;

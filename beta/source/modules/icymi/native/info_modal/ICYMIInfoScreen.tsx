@@ -1,7 +1,7 @@
 // Module ID: 16932
 // Function ID: 16933
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1096, 21, 5092, 587, 6259, 1631, 5031, 1503, 14655, 16933, 5934, 9298, 9306, 1126, 6157, 16935, 16936, 16937, 16938, 5088, 9244, 13134, 6868, 5056, 16939, 2000, 5379, 2]
+// Dependencies: [32, 5, 19, 17, 1096, 21, 5092, 587, 6259, 1631, 5031, 1503, 14655, 16933, 5934, 9293, 9301, 1126, 6157, 16935, 16936, 16937, 16938, 5088, 9239, 13134, 6868, 5056, 16939, 2000, 5379, 2]
 // Exports: default
 
 // Module 16932 (ICYMIInfoScreen)
@@ -167,7 +167,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj2 = { style: items2, children: closure_9(HeaderIconButton, obj3) };
   items2 = [{ marginTop: top }, tmp.closeIcon];
   obj3 = {
-    source: navigation(9306),
+    source: navigation(9301),
     onPress() {
       const arr = navigation(closure_2[14]);
       return arr.pop();
@@ -175,7 +175,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
     accessibilityLabel: intl.string(extendedOnboarding(1126).t.cpT0Cq),
     color: tmp.closeIconColor.backgroundColor
   };
-  HeaderIconButton = extendedOnboarding(9298).HeaderIconButton;
+  HeaderIconButton = extendedOnboarding(9293).HeaderIconButton;
   intl = extendedOnboarding(1126).intl;
   const items3 = [closure_9(closure_6, obj2), , ];
   let obj4 = { style: items4, children: items5 };
@@ -215,7 +215,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items9 = [, ];
   const obj14 = { children: items13 };
   const obj15 = { style: tmp.body, children: items10 };
-  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(9244).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(9239).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   items9[0] = closure_9(closure_6, obj17);
   const obj18 = { variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl4.string(extendedOnboarding(1126).t.knxfqR) };
   const Text3 = tmp6(5088).Text;

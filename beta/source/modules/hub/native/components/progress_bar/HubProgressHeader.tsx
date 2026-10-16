@@ -1,7 +1,7 @@
 // Module ID: 12398
 // Function ID: 12399
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 8696, 12008, 21, 5092, 587, 12395, 1209, 1126, 8580, 5056, 12399, 2000, 12522, 2]
+// Dependencies: [19, 17, 8691, 12008, 21, 5092, 587, 12395, 1209, 1126, 8575, 5056, 12399, 2000, 12522, 2]
 // Exports: default
 
 // Module 12398 (HubProgressHeader)
@@ -13,7 +13,7 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12008 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 8696 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8691 */;
 import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 

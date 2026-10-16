@@ -1,14 +1,14 @@
 // Module ID: 15826
 // Function ID: 15827
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 19, 17, 1390, 1085, 9469, 21, 5092, 558, 576, 504, 13747, 1989, 6852, 9470, 9270, 8580, 15827, 9782, 9394, 9395, 1126, 2]
+// Dependencies: [5, 19, 17, 1390, 1085, 9464, 21, 5092, 558, 576, 504, 13747, 1989, 6852, 9465, 9265, 8575, 15827, 9777, 9389, 9390, 1126, 2]
 
 // Module 15826 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
-import AppIconConstants from "AppIconConstants" /* 9469 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import AppIconConstants from "AppIconConstants" /* 9464 */;
 import AppIconRowsDefault from "AppIconRows" /* 15827 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(9782);
+const NitroUpsellButtonDefault = tmp6(9777);
 const View = react_native.View;
 ({ UpsellTypes: metroRequire, AnalyticsPages: metroImportDefault } = Constants);
 const getIconById = AppIconConstants.getIconById;
@@ -105,7 +105,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         let obj3 = { children: closure_9(analyticsLocation, obj4) };
         let tmp22 = analyticsLocation;
         obj4 = { accessibilityRole: "radiogroup", children: closure_9(tmp12(15827), obj5) };
-        const Form = tmp(8580).Form;
+        const Form = tmp(8575).Form;
         obj5 = { onSelect: tmp18 };
         const tmp23 = closure_9(Form, obj3);
         cResult[9] = tmp18;
@@ -149,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 },
           text: intl.string(tmp(1126).t.M0rDSO)
         };
-        tmp12Result = currentAppIcon(9782);
+        tmp12Result = currentAppIcon(9777);
         intl = tmp(1126).intl;
         tmp25 = closure_9(analyticsLocation, obj7);
       }
@@ -383,7 +383,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp9 = closure_9;
   let obj5 = { children: closure_9(obj4, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_9(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8580).Form;
+  const Form = stateFromStores(8575).Form;
   obj7 = {
     onSelect(arg0) {
       return obj(...arguments);

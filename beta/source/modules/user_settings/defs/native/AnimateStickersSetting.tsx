@@ -1,14 +1,14 @@
 // Module ID: 15716
 // Function ID: 15717
 // Name: AnimateStickersSetting
-// Dependencies: [19, 7993, 2044, 2041, 558, 576, 1126, 10663, 2]
+// Dependencies: [19, 7988, 2044, 2041, 558, 576, 1126, 10663, 2]
 
 // Module 15716 (AnimateStickersSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import StickersConstants from "StickersConstants" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

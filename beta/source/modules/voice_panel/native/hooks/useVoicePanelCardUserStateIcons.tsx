@@ -1,13 +1,13 @@
 // Module ID: 17812
 // Function ID: 17813
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11971, 8799, 573, 11134, 5137, 11075, 16673, 17813, 4809, 1126, 6290, 587, 2]
+// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11971, 8794, 573, 11134, 5137, 11075, 16673, 17813, 4809, 1126, 6290, 587, 2]
 
 // Module 17812 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8799 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8794 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
 import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17813 */;
 import react from "react" /* 19 */;
@@ -219,8 +219,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(8799).useVideoIconState;
-  tmp4(8799);
+  const useVideoIconState = tmp4(8794).useVideoIconState;
+  tmp4(8794);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }

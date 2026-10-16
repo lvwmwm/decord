@@ -1,7 +1,7 @@
 // Module ID: 10711
 // Function ID: 10712
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 6797, 2129, 1404, 502, 2065, 5761, 2125, 4750, 6877, 1085, 21, 5092, 587, 558, 576, 5031, 5763, 1415, 4969, 1200, 8159, 5421, 5088, 1126, 6876, 10712, 6855, 8767, 10713, 10714, 12, 4818, 10715, 38, 4809, 5046, 10718, 5396, 6875, 8580, 504, 6878, 6098, 1265, 5107, 5056, 7094, 10719, 9205, 584, 5934, 10724, 2000, 9235, 10728, 6840, 10729, 6900, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 6797, 2129, 1404, 502, 2065, 5761, 2125, 4750, 6877, 1085, 21, 5092, 587, 558, 576, 5031, 5763, 1415, 4969, 1200, 8154, 5421, 5088, 1126, 6876, 10712, 6855, 8762, 10713, 10714, 12, 4818, 10715, 38, 4809, 5046, 10718, 5396, 6875, 8575, 504, 6878, 6098, 1265, 5107, 5056, 7094, 10719, 9200, 584, 5934, 10724, 2000, 9230, 10728, 6840, 10729, 6900, 5379, 2]
 
 // Module 10711 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
@@ -28,7 +28,7 @@ import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreat
 import ConnectionsUtils from "ConnectionsUtils" /* 6876 */;
 import getConnectionsRolesDefault from "getConnectionsRoles" /* 6878 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 10728 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -1108,7 +1108,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                               }
                               let tmp41 = null;
                               if (null != obj4) {
-                                const obj13 = { style: tmp4.appIcon, user: obj4, size: tmp(tmp2[23]).AvatarSizes.XSMALL, guildId: "a" };
+                                const obj13 = { style: tmp4.appIcon, user: obj4, size: tmp(tmp2[23]).AvatarSizes.XSMALL, guildId: "Array" };
                                 const Avatar = tmp(tmp2[23]).Avatar;
                                 tmp41 = closure_29(Avatar, obj13);
                               }
@@ -1492,7 +1492,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
     items2[2] = prop1;
     let tmp15Result = null;
     if (null != memo) {
-      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[23]).AvatarSizes.XSMALL, guildId: "a" };
+      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[23]).AvatarSizes.XSMALL, guildId: "Array" };
       const Avatar = tmp2(tmp3[23]).Avatar;
       tmp15Result = tmp15(Avatar, obj8);
     }
@@ -1955,7 +1955,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       items1[1] = tmp22Result6;
       let tmp22Result7 = null;
       if (null != tmp11) {
-        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[23]).AvatarSizes.XSMALL, guildId: "a" };
+        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[23]).AvatarSizes.XSMALL, guildId: "Array" };
         const Avatar = tmp13(tmp6[23]).Avatar;
         tmp22Result7 = tmp22(Avatar, obj13);
       }
@@ -2369,7 +2369,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setFriendSync(account.type, account.id, enabled);
         }
     };
-    const FormSwitchRow = account(8580).FormSwitchRow;
+    const FormSwitchRow = account(8575).FormSwitchRow;
     intl = account(1126).intl;
     tmp13 = closure_29(FormSwitchRow, obj2);
   }
@@ -2384,7 +2384,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setShowActivity(account.type, account.id, show_activity);
         }
     };
-    const FormSwitchRow2 = account(8580).FormSwitchRow;
+    const FormSwitchRow2 = account(8575).FormSwitchRow;
     intl2 = account(1126).intl;
     obj4 = { platform: value.name };
     tmp16 = closure_29(FormSwitchRow2, obj3);
@@ -2410,7 +2410,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           const result = setMetadataVisibility(type, id, num);
         }
     };
-    const FormSwitchRow3 = account(8580).FormSwitchRow;
+    const FormSwitchRow3 = account(8575).FormSwitchRow;
     intl3 = account(1126).intl;
     tmp19 = closure_29(FormSwitchRow3, obj5);
   }
@@ -2433,7 +2433,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       setVisibility(type, id, num);
     }
   };
-  const FormSwitchRow4 = account(8580).FormSwitchRow;
+  const FormSwitchRow4 = account(8575).FormSwitchRow;
   intl4 = account(1126).intl;
   items = [closure_29(FormSwitchRow4, obj7), tmp19, tmp16, tmp13];
   return closure_30(closure_8, obj6);

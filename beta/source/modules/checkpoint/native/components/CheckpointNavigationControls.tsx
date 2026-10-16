@@ -1,7 +1,7 @@
 // Module ID: 16048
 // Function ID: 16049
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5437, 1085, 21, 5092, 587, 558, 576, 16041, 1631, 4818, 1126, 16002, 16049, 8401, 3118, 16019, 4806, 2128, 10725, 10292, 2]
+// Dependencies: [17, 5437, 1085, 21, 5092, 587, 558, 576, 16041, 1631, 4818, 1126, 16002, 16049, 8396, 3118, 16019, 4806, 2128, 10725, 10292, 2]
 
 // Module 16048 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
@@ -215,7 +215,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       tmp60 = tmp63;
                     }
                   }
-                  const obj7 = { Icon: tmp(8401).PlayIcon, label: tmp48, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp50 };
+                  const obj7 = { Icon: tmp(8396).PlayIcon, label: tmp48, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp50 };
                   const tmp12Result = nextBlockedTrait(16049);
                   const tmp54 = closure_7(tmp12Result, obj7);
                   cResult[24] = tmp11;

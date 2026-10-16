@@ -1,13 +1,13 @@
 // Module ID: 15403
 // Function ID: 15404
 // Name: openVideoQuestModal
-// Dependencies: [7391, 15396, 1279, 5934, 15404, 2000, 12966, 2]
+// Dependencies: [7386, 15396, 1279, 5934, 15404, 2000, 12966, 2]
 // Exports: default
 
 // Module 15403 (openVideoQuestModal)
 import v1All from "v1" /* 1279 */;
 import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import size from "module_2" /* 2 */;
 
 let importAll;

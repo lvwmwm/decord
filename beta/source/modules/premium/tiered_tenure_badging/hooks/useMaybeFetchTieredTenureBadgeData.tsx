@@ -1,12 +1,12 @@
 // Module ID: 13752
 // Function ID: 13753
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1390, 1392, 558, 576, 504, 10536, 8312, 5396, 2]
+// Dependencies: [1390, 1392, 558, 576, 504, 10536, 8307, 5396, 2]
 
 // Module 13752 (useMaybeFetchTieredTenureBadgeData)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

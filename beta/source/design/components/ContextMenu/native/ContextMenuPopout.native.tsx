@@ -1,7 +1,7 @@
 // Module ID: 14276
 // Function ID: 14277
 // Name: ContextMenuPopout
-// Dependencies: [32, 19, 17, 21, 5092, 587, 9365, 4850, 4827, 6665, 1497, 1382, 5378, 9364, 6335, 5372, 5088, 558, 576, 14274, 5362, 1126, 5363, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 9360, 4850, 4827, 6665, 1497, 1382, 5378, 9359, 6335, 5372, 5088, 558, 576, 14274, 5362, 1126, 5363, 2]
 // Exports: ContextMenuPopout
 
 // Module 14276 (ContextMenuPopout)
@@ -11,8 +11,8 @@ import native from "native" /* 4827 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import ContextMenuState from "ContextMenuState" /* 9364 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9365 */;
+import ContextMenuState from "ContextMenuState" /* 9359 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9360 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -94,10 +94,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
     return obj;
   };
   const obj2 = visible(4850);
-  fn.__closure = { withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9365).CONTEXT_MENU_SPRING };
+  fn.__closure = { withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9360).CONTEXT_MENU_SPRING };
   fn.__workletHash = 6862317967896;
   fn.__initData = __initData2;
-  ({ withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9365).CONTEXT_MENU_SPRING });
+  ({ withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9360).CONTEXT_MENU_SPRING });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let stringResult;
@@ -147,10 +147,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
     value = visible.get();
     return obj;
   };
-  fn.__closure = { withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9365).CONTEXT_MENU_SPRING };
+  fn.__closure = { withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9360).CONTEXT_MENU_SPRING };
   fn.__workletHash = 7758377027899;
   fn.__initData = __initData3;
-  ({ withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9365).CONTEXT_MENU_SPRING });
+  ({ withSpring: visible(5378).withSpring, visible, CONTEXT_MENU_SPRING: visible(9360).CONTEXT_MENU_SPRING });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { blur: "none", style: animatedStyle, accessibleDismissStyle: tmp.accessibleDismiss, onDismiss: onPress, accessibilityLabel: stringResult };
   const Backdrop = visible(5363).Backdrop;
@@ -289,7 +289,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       const tmp2Result8 = ReanimatedRexport;
       let obj2 = { transitionState, TransitionStates: tmp2(4827).TransitionStates, runOnJS: tmp2(4850).runOnJS, cleanUp, onClose };
       interpolateResult = tmp2Result8.interpolate(sharedValue.get(), [0, 1], [0, 1]);
-      CONTEXT_MENU_SPRING = tmp2(9365).CONTEXT_MENU_SPRING;
+      CONTEXT_MENU_SPRING = tmp2(9360).CONTEXT_MENU_SPRING;
       fn.__closure = obj2;
       fn.__workletHash = 4025068986009;
       fn.__initData = __initData;
@@ -299,7 +299,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       const interpolate = tmp2(4850).interpolate;
       ReanimatedRexport;
       const value = sharedValue.get();
-      const items = [num2 * result1 + tmp2(9365).CONTEXT_MENU_MIN_SCALE * -num2 * result1, 0];
+      const items = [num2 * result1 + tmp2(9360).CONTEXT_MENU_MIN_SCALE * -num2 * result1, 0];
       items1 = [obj3, , ];
       interpolateResult1 = interpolate(value, [0, 1], items);
       const obj4 = { translateY: withSpring3(interpolate2Result, ContextMenuConstants.CONTEXT_MENU_SPRING) };
@@ -308,7 +308,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       const interpolate2 = tmp2(4850).interpolate;
       ReanimatedRexport;
       const value3 = sharedValue.get();
-      const items2 = [num * result + tmp2(9365).CONTEXT_MENU_MIN_SCALE * -num * result, 0];
+      const items2 = [num * result + tmp2(9360).CONTEXT_MENU_MIN_SCALE * -num * result, 0];
       items1[1] = obj4;
       interpolate2Result = interpolate2(value3, [0, 1], items2);
       const obj5 = { scale: withSpring4(interpolate3Result, ContextMenuConstants.CONTEXT_MENU_SPRING) };
@@ -317,7 +317,7 @@ export const ContextMenuPopout = function ContextMenuPopout(cleanUp) {
       const interpolate3 = tmp2(4850).interpolate;
       ReanimatedRexport;
       const value4 = sharedValue.get();
-      const items3 = [tmp2(9365).CONTEXT_MENU_MIN_SCALE, 1];
+      const items3 = [tmp2(9360).CONTEXT_MENU_MIN_SCALE, 1];
       items1[2] = obj5;
       interpolate3Result = interpolate3(value4, [0, 1], items3);
       return obj;

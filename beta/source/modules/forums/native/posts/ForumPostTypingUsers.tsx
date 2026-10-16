@@ -1,7 +1,7 @@
 // Module ID: 11696
 // Function ID: 11697
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9327, 11642, 11697, 4850, 1200, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9322, 11642, 11697, 4850, 1200, 5088, 2]
 
 // Module 11696 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;

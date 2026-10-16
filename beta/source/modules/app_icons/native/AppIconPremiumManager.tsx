@@ -1,15 +1,15 @@
 // Module ID: 18047
 // Function ID: 18048
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1390, 9469, 1085, 3, 9470, 6808, 1382, 13747, 4769, 1265, 2]
+// Dependencies: [5, 1390, 9464, 1085, 3, 9465, 6808, 1382, 13747, 4769, 1265, 2]
 
 // Module 18047 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppIconConstants from "AppIconConstants" /* 9469 */;
-import AppIconTypes from "AppIconTypes" /* 9470 */;
+import AppIconConstants from "AppIconConstants" /* 9464 */;
+import AppIconTypes from "AppIconTypes" /* 9465 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

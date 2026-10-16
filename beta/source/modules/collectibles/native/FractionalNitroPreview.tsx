@@ -1,7 +1,7 @@
 // Module ID: 13437
 // Function ID: 13438
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 558, 576, 1126, 7761, 4769, 5391, 13438, 6157, 13439, 6823, 5088, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 558, 576, 1126, 7756, 4769, 5391, 13438, 6157, 13439, 6823, 5088, 2]
 
 // Module 13437 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;

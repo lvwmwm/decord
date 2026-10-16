@@ -1,9 +1,9 @@
-// Module ID: 9640
-// Function ID: 9641
+// Module ID: 9635
+// Function ID: 9636
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1085, 21, 5092, 558, 576, 7769, 6159, 1415, 6157, 9641, 1126, 6185, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 558, 576, 7764, 6159, 1415, 6157, 9636, 1126, 6185, 2]
 
-// Module 9640 (IconUploader)
+// Module 9635 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import AvatarUtils from "AvatarUtils" /* 1415 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
 import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9641 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
     }
     let tmp24 = null;
     if (!tmp4) {
-      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9641) };
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9636) };
       const tmp27 = onChangeIconPress(6157);
       tmp24 = closure_7(tmp27, obj8);
     }

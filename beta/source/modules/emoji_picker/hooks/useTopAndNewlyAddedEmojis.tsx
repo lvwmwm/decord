@@ -1,10 +1,10 @@
-// Module ID: 9435
-// Function ID: 9436
+// Module ID: 9430
+// Function ID: 9431
 // Name: useTopAndNewlyAddedEmojis
 // Dependencies: [5987, 1393, 558, 576, 573, 2]
 // Exports: getTopAndNewlyAddedEmojis
 
-// Module 9435 (useTopAndNewlyAddedEmojis)
+// Module 9430 (useTopAndNewlyAddedEmojis)
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

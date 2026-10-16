@@ -1,13 +1,13 @@
 // Module ID: 16755
 // Function ID: 16756
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 16739, 1200, 9017, 2]
+// Dependencies: [17, 16739, 1200, 9012, 2]
 // Exports: default
 
 // Module 16755 (computeGuildsBarCutout)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1200 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
 import size_mod from "module_2" /* 2 */;
 

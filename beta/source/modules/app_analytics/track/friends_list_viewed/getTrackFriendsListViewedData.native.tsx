@@ -1,7 +1,7 @@
 // Module ID: 17514
 // Function ID: 17515
 // Name: getTrackFriendsListViewedData
-// Dependencies: [12403, 7351, 7347, 5761, 4760, 1085, 2041, 1403, 17515, 12404, 2]
+// Dependencies: [12403, 7346, 7342, 5761, 4760, 1085, 2041, 1403, 17515, 12404, 2]
 // Exports: default
 
 // Module 17514 (getTrackFriendsListViewedData)
@@ -10,8 +10,8 @@ import UserSettings from "UserSettings" /* 2041 */;
 import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12403 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
 import getFriendStatusCountsDefault from "getFriendStatusCounts" /* 17515 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7351 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7346 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Constants from "Constants" /* 1085 */;

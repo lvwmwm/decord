@@ -1,16 +1,16 @@
 // Module ID: 18004
 // Function ID: 18005
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7260, 1085, 21, 587, 5092, 558, 576, 1631, 15145, 15144, 18005, 11023, 4818, 7274, 1265, 7261, 7094, 5088, 5391, 1126, 2568, 2]
+// Dependencies: [19, 17, 7255, 1085, 21, 587, 5092, 558, 576, 1631, 15145, 15144, 18005, 11023, 4818, 7269, 1265, 7256, 7094, 5088, 5391, 1126, 2568, 2]
 
 // Module 18004 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
-import _modDef7274 from "module_7274" /* 7274 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7256 */;
+import _modDef7269 from "module_7269" /* 7269 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
@@ -74,7 +74,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   const obj6 = require("useToken");
   const token = obj6.useToken(daysRemaining(587).colors.BACKGROUND_FEEDBACK_WARNING);
   if (cResult[0] !== token) {
-    const obj7 = daysRemaining(7274)(token);
+    const obj7 = daysRemaining(7269)(token);
     const setAlphaResult = obj7.setAlpha(0);
     const toRgbStringResult = setAlphaResult.toRgbString();
     cResult[0] = token;
@@ -295,7 +295,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7274(token);
+    const obj = _modDef7269(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

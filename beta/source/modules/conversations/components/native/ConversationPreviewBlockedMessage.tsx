@@ -1,9 +1,9 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9366
+// Function ID: 9367
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 576, 9372, 587, 6650, 1126, 5088, 5377, 2]
+// Dependencies: [19, 21, 558, 576, 9367, 587, 6650, 1126, 5088, 5377, 2]
 
-// Module 9371 (ConversationPreviewBlockedMessage)
+// Module 9366 (ConversationPreviewBlockedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -28,7 +28,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     let EyeSlashIcon;
     const tmp5 = _false;
     if ("blocked" === reason) {
-      EyeSlashIcon = tmp(9372).DenyIcon;
+      EyeSlashIcon = tmp(9367).DenyIcon;
     } else {
       EyeSlashIcon = tmp(6650).EyeSlashIcon;
     }
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(9372).DenyIcon;
+    EyeSlashIcon = tmp2(9367).DenyIcon;
   } else {
     EyeSlashIcon = tmp2(6650).EyeSlashIcon;
   }

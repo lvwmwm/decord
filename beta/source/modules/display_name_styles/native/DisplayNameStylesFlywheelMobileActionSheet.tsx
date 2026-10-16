@@ -1,7 +1,7 @@
 // Module ID: 17702
 // Function ID: 17703
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1390, 1085, 2062, 21, 558, 576, 4834, 4969, 5031, 6663, 504, 4769, 1126, 2958, 7094, 6726, 4938, 2049, 6844, 17703, 1382, 6157, 17707, 9012, 5088, 5379, 6814, 6840, 5092, 587, 2]
+// Dependencies: [19, 17, 1390, 1085, 2062, 21, 558, 576, 4834, 4969, 5031, 6663, 504, 4769, 1126, 2958, 7094, 6726, 4938, 2049, 6844, 17703, 1382, 6157, 17707, 9007, 5088, 5379, 6814, 6840, 5092, 587, 2]
 
 // Module 17702 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -210,7 +210,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             markAsDismissed(ContentDismissActionType.USER_DISMISS);
           }
         }
-        const APNGPlayer = tmp(9012).APNGPlayer;
+        const APNGPlayer = tmp(9007).APNGPlayer;
         tmp28[0] = ref(17707);
         tmp28[1] = tmp7.image;
         tmp27Result = tmp27(APNGPlayer, tmp28);
@@ -330,7 +330,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       tmp15Result = tmp15(tmp4Result, obj10);
     } else {
       const obj12 = { url: ref(17707), style: tmp6.image, autoplay: true };
-      const APNGPlayer = tmp2(9012).APNGPlayer;
+      const APNGPlayer = tmp2(9007).APNGPlayer;
       tmp15Result = tmp15(APNGPlayer, obj12);
     }
     tmp19 = tmp15Result;

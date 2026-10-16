@@ -1,7 +1,7 @@
 // Module ID: 17335
 // Function ID: 17336
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 13224, 21, 5092, 587, 558, 576, 17336, 10533, 6906, 17337, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17338, 8530, 8779, 6739, 17339, 17340, 8625, 2]
+// Dependencies: [32, 19, 17, 13224, 21, 5092, 587, 558, 576, 17336, 10533, 6906, 17337, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17338, 8525, 8774, 6739, 17339, 17340, 8620, 2]
 
 // Module 17335 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
@@ -528,7 +528,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       }
     }
   }
-  const tmpResult4 = tmp(8530);
+  const tmpResult4 = tmp(8525);
   const segmentedControlState = tmpResult4.useSegmentedControlState(tmp17);
   if (cResult[9] === first1) {
     class L {

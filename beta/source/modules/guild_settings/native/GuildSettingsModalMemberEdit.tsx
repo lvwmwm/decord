@@ -1,7 +1,7 @@
 // Module ID: 11393
 // Function ID: 11394
 // Name: GuildSettingsModalMemberEdit
-// Dependencies: [19, 17, 2083, 2120, 2125, 2119, 2087, 4750, 1390, 11394, 1085, 21, 5092, 587, 4755, 12, 6177, 11395, 6180, 1126, 6265, 4827, 7089, 6201, 4962, 5088, 8767, 4737, 8580, 5377, 1200, 6286, 11396, 11397, 4808, 11402, 558, 576, 1503, 504, 38, 11392, 7011, 6728, 11407, 11437, 6170, 6688, 2]
+// Dependencies: [19, 17, 2083, 2120, 2125, 2119, 2087, 4750, 1390, 11394, 1085, 21, 5092, 587, 4755, 12, 6177, 11395, 6180, 1126, 6265, 4827, 7089, 6201, 4962, 5088, 8762, 4737, 8575, 5377, 1200, 6286, 11396, 11397, 4808, 11402, 558, 576, 1503, 504, 38, 11392, 7011, 6728, 11407, 11437, 6170, 6688, 2]
 
 // Module 11393 (GuildSettingsModalMemberEdit)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import BotTagDefault from "BotTag" /* 8767 */;
+import BotTagDefault from "BotTag" /* 8762 */;
 import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 11392 */;
 import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 11396 */;
 import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11397 */;
@@ -403,7 +403,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
       const obj10 = { style: tmp.form, contentContainerStyle: items1, children: closure_19(Stack, obj11) };
       items1 = [tmp.formContent, self.props.contentContainerStyle];
-      const Form = tmp17(8580).Form;
+      const Form = tmp17(8575).Form;
       obj11 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: items2 };
       Stack = tmp17(5377).Stack;
       const obj12 = { hasIcons: true, children: authStore5(TableRow3, obj13) };

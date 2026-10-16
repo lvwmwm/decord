@@ -1,12 +1,12 @@
 // Module ID: 10188
 // Function ID: 10189
 // Name: GiftAnimationData
-// Dependencies: [1392, 8110, 10189, 10190, 10191, 10192, 10193, 10194, 10195, 10196, 10197, 10198, 10199, 10200, 10201, 10202, 10203, 10204, 10205, 10206, 10207, 10208, 10209, 10210, 10211, 10212, 2]
+// Dependencies: [1392, 8105, 10189, 10190, 10191, 10192, 10193, 10194, 10195, 10196, 10197, 10198, 10199, 10200, 10201, 10202, 10203, 10204, 10205, 10206, 10207, 10208, 10209, 10210, 10211, 10212, 2]
 // Exports: getGiftAnimationData, getLottieType
 
 // Module 10188 (GiftAnimationData)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8110 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8105 */;
 import _mod10189 from "module_10189" /* 10189 */;
 import _mod10190 from "module_10190" /* 10190 */;
 import _mod10191 from "module_10191" /* 10191 */;

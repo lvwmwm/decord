@@ -1,7 +1,7 @@
 // Module ID: 10747
 // Function ID: 10748
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2065, 4750, 4760, 1390, 10224, 1085, 21, 5092, 558, 576, 573, 8603, 6738, 10748, 10757, 10758, 1126, 10332, 10331, 4938, 2049, 10760, 10765, 7092, 10766, 1894, 8683, 8582, 2]
+// Dependencies: [32, 19, 17, 2065, 4750, 4760, 1390, 10224, 1085, 21, 5092, 558, 576, 573, 8598, 6738, 10748, 10757, 10758, 1126, 10332, 10331, 4938, 2049, 10760, 10765, 7092, 10766, 1894, 8678, 8577, 2]
 
 // Module 10747 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10224 */;
 import openGroupDMAddMembers from "openGroupDMAddMembers" /* 10748 */;
 import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 10760 */;

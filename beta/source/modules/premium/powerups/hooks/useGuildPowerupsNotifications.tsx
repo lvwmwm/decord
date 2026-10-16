@@ -1,15 +1,15 @@
 // Module ID: 12229
 // Function ID: 12230
 // Name: useGuildPowerupsNotifications
-// Dependencies: [32, 19, 8031, 2087, 12230, 5007, 5008, 1085, 2062, 8025, 12232, 12233, 5011, 12234, 1388, 2049, 5026, 558, 576, 8030, 12235, 2050, 573, 12231, 12239, 5013, 5012, 12241, 12242, 12243, 12244, 12246, 12226, 2]
+// Dependencies: [32, 19, 8026, 2087, 12230, 5007, 5008, 1085, 2062, 8020, 12232, 12233, 5011, 12234, 1388, 2049, 5026, 558, 576, 8025, 12235, 2050, 573, 12231, 12239, 5013, 5012, 12241, 12242, 12243, 12244, 12246, 12226, 2]
 // Exports: maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF
 
 // Module 12229 (useGuildPowerupsNotifications)
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import GameServerExperiment from "GameServerExperiment" /* 5026 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8025 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8030 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8025 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12226 */;
 import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 12231 */;
 import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12232 */;
@@ -21,7 +21,7 @@ import useCanPurchaseBoostsDefault from "useCanPurchaseBoosts" /* 12243 */;
 import useFeaturedExpiringPowerupDefault from "useFeaturedExpiringPowerup" /* 12244 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8031 */;
+import GameServerStore from "GameServerStore" /* 8026 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 12230 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
@@ -619,7 +619,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
               }
               _require = c0;
               importDefault = allPowerups;
-              const ReverseOrderedTiers = tmp(8025).ReverseOrderedTiers;
+              const ReverseOrderedTiers = tmp(8020).ReverseOrderedTiers;
               const found = ReverseOrderedTiers.find((item) => {
                 let tmp2;
                 if (null != markAsDismissed2[item]) {

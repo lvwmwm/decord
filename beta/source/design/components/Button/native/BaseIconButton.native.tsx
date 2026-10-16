@@ -1,9 +1,9 @@
-// Module ID: 7575
-// Function ID: 7576
+// Module ID: 7570
+// Function ID: 7571
 // Name: BaseIconButton
 // Dependencies: [109, 19, 21, 5092, 5384, 4850, 5381, 558, 576, 5385, 5387, 5389, 2]
 
-// Module 7575 (BaseIconButton)
+// Module 7570 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;

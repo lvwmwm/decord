@@ -1,9 +1,9 @@
-// Module ID: 9415
-// Function ID: 9416
+// Module ID: 9410
+// Function ID: 9411
 // Name: useDiscountedPremiumPlan
 // Dependencies: [19, 7132, 558, 576, 504, 2]
 
-// Module 9415 (useDiscountedPremiumPlan)
+// Module 9410 (useDiscountedPremiumPlan)
 import react from "react" /* 19 */;
 import IAPStore from "IAPStore" /* 7132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

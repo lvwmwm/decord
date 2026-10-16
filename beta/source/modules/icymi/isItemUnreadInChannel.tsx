@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 8464
+// Function ID: 8465
 // Name: isItemUnreadInChannel
 // Dependencies: [6035, 11, 2]
 // Exports: isItemUnreadInChannel
 
-// Module 8469 (isItemUnreadInChannel)
+// Module 8464 (isItemUnreadInChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import size from "module_2" /* 2 */;

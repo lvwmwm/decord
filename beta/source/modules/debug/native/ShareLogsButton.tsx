@@ -1,13 +1,13 @@
 // Module ID: 15868
 // Function ID: 15869
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 558, 576, 6185, 1126, 8482, 7, 13052, 2]
+// Dependencies: [19, 21, 558, 576, 6185, 1126, 8477, 7, 13052, 2]
 
 // Module 15868 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8482 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8477 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

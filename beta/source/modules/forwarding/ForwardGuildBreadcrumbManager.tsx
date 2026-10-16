@@ -1,13 +1,13 @@
 // Module ID: 18645
 // Function ID: 18646
 // Name: ForwardGuildBreadcrumbManager
-// Dependencies: [7974, 2087, 1085, 18158, 18646, 6808, 18171, 2]
+// Dependencies: [7969, 2087, 1085, 18158, 18646, 6808, 18171, 2]
 
 // Module 18645 (ForwardGuildBreadcrumbManager)
 import Constants from "Constants" /* 1085 */;
 import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18171 */;
 import BasicGuildActionCreators from "BasicGuildActionCreators" /* 18646 */;
-import BasicGuildStore from "BasicGuildStore" /* 7974 */;
+import BasicGuildStore from "BasicGuildStore" /* 7969 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;

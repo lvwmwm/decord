@@ -1,7 +1,7 @@
 // Module ID: 16555
 // Function ID: 16556
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2125, 21, 5092, 587, 11761, 558, 576, 9308, 504, 16556, 10515, 1126, 12266, 5088, 8855, 7011, 16560, 16563, 2]
+// Dependencies: [19, 17, 2125, 21, 5092, 587, 11761, 558, 576, 9303, 504, 16556, 10515, 1126, 12266, 5088, 8850, 7011, 16560, 16563, 2]
 // Exports: getAudienceItemHeight
 
 // Module 16555 (VoiceUsers)
@@ -10,7 +10,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9308 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9303 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import ChannelListLayout from "ChannelListLayout" /* 11761 */;
 import HeadphonesIcon from "HeadphonesIcon" /* 12266 */;
@@ -68,7 +68,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   ({ member, voiceState: voiceState2 } = voiceState);
   const isFirst = collapsed.isFirst;
   const tmp4 = user;
-  const tmp5 = closure_11(user(9308)());
+  const tmp5 = closure_11(user(9303)());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMemberStore];
     cResult[0] = items;
@@ -178,7 +178,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const isFirst = voiceState.isFirst;
-  const tmp3 = closure_11(channel(9308)());
+  const tmp3 = closure_11(channel(9303)());
   let obj = user(504);
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
@@ -314,7 +314,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsers(c
   collapsed = collapsed.collapsed;
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
-  const tmp5 = channel(8855)("channel_list");
+  const tmp5 = channel(8850)("channel_list");
   const guild_id = channel.guild_id;
   if (cResult[0] === tmp5) {
     if (cResult[1] === guild_id) {

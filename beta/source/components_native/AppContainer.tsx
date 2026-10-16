@@ -1,7 +1,7 @@
 // Module ID: 14822
 // Function ID: 14823
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 6073, 2065, 2116, 1085, 2072, 21, 5092, 587, 4850, 558, 576, 8327, 14823, 5937, 1121, 1256, 4977, 5307, 6724, 14825, 6075, 4976, 1112, 5031, 5375, 1265, 4978, 14826, 6730, 1504, 1388, 14827, 1382, 11200, 14828, 14829, 14830, 10953, 11194, 16350, 4992, 16351, 16353, 1500, 11631, 16354, 16362, 4893, 16364, 1255, 2]
+// Dependencies: [32, 19, 17, 6073, 2065, 2116, 1085, 2072, 21, 5092, 587, 4850, 558, 576, 8322, 14823, 5937, 1121, 1256, 4977, 5307, 6724, 14825, 6075, 4976, 1112, 5031, 5375, 1265, 4978, 14826, 6730, 1504, 1388, 14827, 1382, 11200, 14828, 14829, 14830, 10953, 11194, 16350, 4992, 16351, 16353, 1500, 11631, 16354, 16362, 4893, 16364, 1255, 2]
 
 // Module 14822 (AppContainer)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 5937 */;
 import NavigationHistoryStore from "NavigationHistoryStore" /* 6073 */;
 import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6075 */;
 import useNavigationTheme from "useNavigationTheme" /* 6730 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8322 */;
 import RouteManagerDefault from "RouteManager" /* 11200 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11631 */;
 import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14823 */;

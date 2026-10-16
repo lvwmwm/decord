@@ -1,15 +1,15 @@
 // Module ID: 18212
 // Function ID: 18213
 // Name: NotificationsManager
-// Dependencies: [5, 4752, 502, 2065, 5966, 12123, 1085, 7483, 12124, 5056, 18213, 2000, 1273, 4702, 7506, 12126, 12570, 1265, 1382, 6808, 15781, 1105, 2]
+// Dependencies: [5, 4752, 502, 2065, 5966, 12123, 1085, 7478, 12124, 5056, 18213, 2000, 1273, 4702, 7501, 12126, 12570, 1265, 1382, 6808, 15781, 1105, 2]
 
 // Module 18212 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import react_nativeDefault from "react-native" /* 7506 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import react_nativeDefault from "react-native" /* 7501 */;
 import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 12123 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

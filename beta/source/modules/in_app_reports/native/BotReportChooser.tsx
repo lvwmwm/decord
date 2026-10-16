@@ -1,7 +1,7 @@
 // Module ID: 13105
 // Function ID: 13106
 // Name: BotReportChooser
-// Dependencies: [19, 5440, 21, 558, 576, 5088, 1126, 6899, 6895, 5056, 7722, 504, 6853, 2]
+// Dependencies: [19, 5440, 21, 558, 576, 5088, 1126, 6899, 6895, 5056, 7717, 504, 6853, 2]
 
 // Module 13105 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import ReportModals from "ReportModals" /* 7722 */;
+import ReportModals from "ReportModals" /* 7717 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Fragment from "Fragment" /* 21 */;

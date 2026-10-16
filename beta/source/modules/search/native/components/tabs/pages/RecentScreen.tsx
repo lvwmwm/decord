@@ -1,7 +1,7 @@
 // Module ID: 17389
 // Function ID: 17390
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6062, 12063, 17390, 12050, 9313, 12052, 1085, 21, 558, 576, 12061, 1126, 5088, 6185, 10219, 17391, 7015, 12057, 12043, 504, 12039, 17384, 1504, 17394, 12036, 15105, 7498, 5918, 17395, 17396, 17399, 2]
+// Dependencies: [32, 5, 19, 6062, 12063, 17390, 12050, 9308, 12052, 1085, 21, 558, 576, 12061, 1126, 5088, 6185, 10219, 17391, 7015, 12057, 12043, 504, 12039, 17384, 1504, 17394, 12036, 15105, 7493, 5918, 17395, 17396, 17399, 2]
 
 // Module 17389 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 12036 */;
 import SmartSearchUtils from "SmartSearchUtils" /* 12039 */;
 import SearchUtils from "SearchUtils" /* 12043 */;
@@ -26,7 +26,7 @@ import SearchMessageStore from "SearchMessageStore" /* 6062 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12063 */;
 import SearchHistoryStore from "SearchHistoryStore" /* 17390 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 13357
 // Function ID: 13358
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [5401, 12, 5402, 13358, 5080, 8005, 2]
+// Dependencies: [5401, 12, 5402, 13358, 5080, 8000, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
 // Module 13357 (ApplicationWidgetMarkupUtils)
@@ -10,7 +10,7 @@ import MarkupRulesDefault from "MarkupRules" /* 5402 */;
 import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 13358 */;
 import combineMarkupRules from "combineMarkupRules" /* 5401 */;
 import module_12 from "module_12" /* 12 */;
-import MarkupParser_mod from "MarkupParser" /* 8005 */;
+import MarkupParser_mod from "MarkupParser" /* 8000 */;
 import size from "module_2" /* 2 */;
 
 const items = ["text", "link", "emoji"];

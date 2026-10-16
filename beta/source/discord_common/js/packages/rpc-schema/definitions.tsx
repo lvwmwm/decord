@@ -1,11 +1,11 @@
 // Module ID: 14737
 // Function ID: 14738
 // Name: definitions
-// Dependencies: [14738, 8458, 10941, 14739, 8611, 2]
+// Dependencies: [14738, 8453, 10941, 14739, 8606, 2]
 
 // Module 14737 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import ActivityPlatform from "ActivityPlatform" /* 10941 */;
 import helpers from "helpers" /* 14738 */;
 import contextMenuIcons from "contextMenuIcons" /* 14739 */;

@@ -1,91 +1,107 @@
 // Module ID: 7586
 // Function ID: 7587
-// Dependencies: []
-// Exports: appendTransform, reset, toArray
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7580, 7587, 7594, 7595, 7596]
 
 // Module 7586
-function append(arg0, arg1, arg2, arg3, arg4, arg5) {
-  if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
-    const tmp3 = c8;
-    if (tmp3) {
-      c8 = false;
-      c2 = arg0;
-      c3 = arg1;
-      c4 = arg2;
-      c5 = arg3;
-      closure_6 = arg4;
-      closure_7 = arg5;
-    } else {
-      if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
-        c2 = tmp4 * arg0 + tmp6 * arg1;
-        c3 = tmp5 * arg0 + tmp7 * arg1;
-        c4 = tmp4 * arg2 + tmp6 * arg3;
-        c5 = tmp5 * arg2 + tmp7 * arg3;
-      }
-      if (0 !== arg4 || 0 !== arg5) {
-        closure_6 = tmp4 * arg4 + tmp6 * arg5 + closure_6;
-        closure_7 = tmp5 * arg4 + tmp7 * arg5 + closure_7;
-      }
-    }
-  }
-}
-let closure_0 = Math.PI / 180;
-let items = [1, 0, 0, 1, 0, 0];
-let c2 = 1;
-let c3 = 0;
-let c4 = 0;
-let c5 = 1;
-let closure_6 = 0;
-let closure_7 = 0;
-let c8 = true;
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 7587 */;
+import extractText from "extractText" /* 7594 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7596 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-export const identity = items;
-export function reset() {
-  const tmp = c8;
-  if (!tmp) {
-    c5 = 1;
-    c2 = 1;
-    closure_7 = 0;
-    closure_6 = 0;
-    c4 = 0;
-    c3 = 0;
-    c8 = true;
+const extractPropsDefault = extractProps;
+let root;
+
+let tmp4;
+const _modDef7595 = tmp4(7595);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-export function toArray() {
-  const tmp = c8;
-  if (!tmp) {
-    items = [c2, c3, c4, c5, closure_6, closure_7];
+const jsx = Fragment.jsx;
+class G {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, G);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(G);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      const tmp = !matrix.matrix && closure_2_1(closure_2_2[7])(matrix);
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(matrix);
+      }
+    };
+    return tmp3Result;
   }
-  return items;
 }
-export { append };
-export const appendTransform = function appendTransform(arg0, arg1, scaleX, scaleY, rotation, skewX, skewY, originX, originY) {
-  let num2 = 1;
-  let num3 = 0;
-  if (rotation % 360) {
-    const result = rotation * closure_0;
-    const _Math = Math;
-    num2 = Math.cos(result);
-    const _Math2 = Math;
-    num3 = Math.sin(result);
-  }
-  const result1 = num2 * scaleX;
-  const result2 = num3 * scaleX;
-  const result3 = -num3 * scaleY;
-  const result4 = num2 * scaleY;
-  if (!skewX) {
-    if (!skewY) {
-      append(result1, result2, result3, result4, arg0, arg1);
+_inherits(G, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    const obj = extractProps;
+    const propsAndStylesResult = obj.propsAndStyles(props);
+    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
+    const obj2 = extractText;
+    const extractFontResult = obj2.extractFont(propsAndStylesResult);
+    if (typeof hasProps === "function") {
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        let flag = true;
+        if (flag) {
+          tmp5.font = extractFontResult;
+        }
+        _modDef7595;
+        const merged = Object.assign(tmp5);
+        return <tmp4Result ref={function ref(arg0) {
+          return self.refMethod(arg0);
+        }}>{props.children}</tmp4Result>;
+      }
+      flag = false;
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    const tmp19 = originX || originY;
-    if (tmp19) {
-      closure_6 = closure_6 - (originX * c2 + originY * c4);
-      closure_7 = closure_7 - (originX * c3 + originY * c5);
-      c8 = false;
-    }
   }
-  const tanResult = Math.tan(skewY * closure_0);
-  const tanResult1 = Math.tan(skewX * closure_0);
-  append(result1 + tanResult1 * result2, tanResult * result1 + result2, result3 + tanResult1 * result4, tanResult * result3 + result4, arg0, arg1);
 };
+let items = [entry];
+const importDefaultResultResult = _createClass(G, items);
+importDefaultResultResult.displayName = "G";
+function hasProps(arg0) {
+
+}
+
+export default importDefaultResultResult;

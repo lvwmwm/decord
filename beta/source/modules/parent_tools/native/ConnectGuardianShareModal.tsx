@@ -1,7 +1,7 @@
 // Module ID: 18219
 // Function ID: 18220
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7259, 21, 5092, 587, 1126, 2568, 4808, 5934, 11532, 573, 15159, 7515, 7516, 5377, 5088, 15160, 6154, 6201, 558, 576, 10603, 2]
+// Dependencies: [19, 17, 7254, 21, 5092, 587, 1126, 2568, 4808, 5934, 11532, 573, 15159, 7510, 7511, 5377, 5088, 15160, 6154, 6201, 558, 576, 10603, 2]
 
 // Module 18219 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import Modal2 from "Modal" /* 10603 */;
 import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15159 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -60,8 +60,8 @@ function ConnectGuardianShareScreen() {
   }, []);
   const tmp9 = useOnNewPendingRequestDefault;
   tmp9(ModalActionCreatorsDefault.pop);
-  const ModalScreen = getLinkCode(7515).ModalScreen;
-  const ModalContent = getLinkCode(7516).ModalContent;
+  const ModalScreen = getLinkCode(7510).ModalScreen;
+  const ModalContent = getLinkCode(7511).ModalContent;
   const obj5 = { spacing: nativeDefault.space.PX_40, children: null };
   const Stack = getLinkCode(5377).Stack;
   const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };

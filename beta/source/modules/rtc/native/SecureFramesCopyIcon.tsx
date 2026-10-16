@@ -1,9 +1,9 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8841
+// Function ID: 8842
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 558, 576, 4808, 6886, 5042, 1126, 7574, 2]
+// Dependencies: [19, 21, 558, 576, 4808, 6886, 5042, 1126, 7569, 2]
 
-// Module 8846 (SecureFramesCopyIcon)
+// Module 8841 (SecureFramesCopyIcon)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;

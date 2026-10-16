@@ -1,7 +1,7 @@
 // Module ID: 17898
 // Function ID: 17899
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2064, 6036, 10831, 5897, 502, 2065, 1390, 11972, 17797, 1085, 2024, 5115, 21, 5092, 587, 4850, 5391, 558, 576, 11971, 17864, 10900, 1121, 4827, 17798, 17796, 6162, 573, 1497, 10924, 9030, 8378, 5231, 10904, 1200, 10910, 11974, 6762, 17748, 5221, 10888, 2]
+// Dependencies: [32, 19, 17, 2064, 6036, 10831, 5897, 502, 2065, 1390, 11972, 17797, 1085, 2024, 5115, 21, 5092, 587, 4850, 5391, 558, 576, 11971, 17864, 10900, 1121, 4827, 17798, 17796, 6162, 573, 1497, 10924, 9025, 8373, 5231, 10904, 1200, 10910, 11974, 6762, 17748, 5221, 10888, 2]
 
 // Module 17898 (VoicePanelPIPContent)
 import react2 from "react" /* 576 */;
@@ -58,7 +58,7 @@ let size;
 let size1;
 let tmp3;
 const ReanimatedNativeViewDefault = tmp3(6762);
-const useProfileTileGradientDefault = tmp3(8378);
+const useProfileTileGradientDefault = tmp3(8373);
 const VideoRendererNativeComponentDefault = tmp3(10900);
 const AssetRegistryDefault = tmp3(10910);
 function markContentReady() {
@@ -1155,8 +1155,8 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     user1 = UserStore.getCurrentUser();
   }
   let avatarURL;
-  const useDominantColorFromImage = tmp6(9030).useDominantColorFromImage;
-  participantId(9030);
+  const useDominantColorFromImage = tmp6(9025).useDominantColorFromImage;
+  participantId(9025);
   if (user1 != null) {
     avatarURL = user1.getAvatarURL(guildId, 80, false);
   }
@@ -1309,7 +1309,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     if (null != user1) {
       const obj10 = { source: tmp6Result12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp18 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
       const Avatar = tmp6(1200).Avatar;
-      tmp6Result12 = participantId(9030);
+      tmp6Result12 = participantId(9025);
       AvatarSizes = tmp6(1200).AvatarSizes;
       userAvatarDecoration = undefined;
       if (stateFromStores != null) {

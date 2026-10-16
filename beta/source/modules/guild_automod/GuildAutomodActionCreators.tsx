@@ -1,7 +1,7 @@
 // Module ID: 11455
 // Function ID: 11456
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2119, 2087, 4750, 1085, 11456, 1388, 11, 1295, 11449, 5107, 7240, 584, 2]
+// Dependencies: [5, 2119, 2087, 4750, 1085, 11456, 1388, 11, 1295, 11449, 5107, 7235, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
 // Module 11455 (GuildAutomodActionCreators)
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import AutomodFeedback from "AutomodFeedback" /* 7240 */;
+import AutomodFeedback from "AutomodFeedback" /* 7235 */;
 import DataUtils from "DataUtils" /* 11456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;

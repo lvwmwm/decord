@@ -1,7 +1,7 @@
 // Module ID: 15468
 // Function ID: 15469
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1096, 21, 5092, 558, 576, 15400, 15367, 15388, 5975, 7416, 5031, 4969, 15366, 1126, 5088, 15469, 15470, 6157, 15429, 15471, 2]
+// Dependencies: [19, 17, 1096, 21, 5092, 558, 576, 15400, 15367, 15388, 5975, 7411, 5031, 4969, 15366, 1126, 5088, 15469, 15470, 6157, 15429, 15471, 2]
 
 // Module 15468 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1096 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15388 */;
 import QuestGameLogotypeDefault from "QuestGameLogotype" /* 15429 */;
 import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 15471 */;

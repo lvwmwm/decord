@@ -1,7 +1,7 @@
 // Module ID: 13531
 // Function ID: 13532
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [10485, 9610, 10486, 7424, 7889, 1126, 2438, 7751, 587, 4967, 2]
+// Dependencies: [10485, 9605, 10486, 7419, 7884, 1126, 2438, 7746, 587, 4967, 2]
 // Exports: createGameOrganizationInviteEmbed
 
 // Module 13531 (GameOrganizationInviteEmbed)
@@ -9,10 +9,10 @@ import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import _modDef2438 from "module_2438" /* 2438 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
-import Constants from "Constants" /* 7424 */;
-import react_native from "react-native" /* 7751 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9610 */;
+import Constants from "Constants" /* 7419 */;
+import react_native from "react-native" /* 7746 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9605 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10486 */;
 import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10485 */;
 import size from "module_2" /* 2 */;

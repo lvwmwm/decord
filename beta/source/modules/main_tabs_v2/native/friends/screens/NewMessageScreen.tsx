@@ -1,7 +1,7 @@
 // Module ID: 17517
 // Function ID: 17518
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 2069, 2065, 4760, 6923, 10217, 1085, 21, 4850, 5088, 5092, 587, 1382, 7015, 558, 576, 6924, 584, 504, 1265, 17518, 5093, 17519, 9298, 1126, 10363, 17141, 6852, 6879, 6665, 5396, 10752, 10750, 10749, 9310, 1112, 10753, 4808, 10332, 10331, 5033, 5032, 5379, 11578, 17460, 12066, 2]
+// Dependencies: [5, 32, 19, 17, 2069, 2065, 4760, 6923, 10217, 1085, 21, 4850, 5088, 5092, 587, 1382, 7015, 558, 576, 6924, 584, 504, 1265, 17518, 5093, 17519, 9293, 1126, 10363, 17141, 6852, 6879, 6665, 5396, 10752, 10750, 10749, 9305, 1112, 10753, 4808, 10332, 10331, 5033, 5032, 5379, 11578, 17460, 12066, 2]
 
 // Module 17517 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
@@ -793,7 +793,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     let stringResult;
     if (cResult[4] !== title) {
       const obj5 = { title };
-      const tmp9 = closure_17(numInGroup(9298).GenericHeaderTitle, obj5);
+      const tmp9 = closure_17(numInGroup(9293).GenericHeaderTitle, obj5);
       let num = 4;
       cResult[4] = title;
       let num2 = 5;
@@ -903,7 +903,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     let num = 0;
     const obj3 = { style: tmp.header, children: items1 };
     const obj4 = { title };
-    items1 = [closure_17(tmp3(9298).GenericHeaderTitle, obj4), ];
+    items1 = [closure_17(tmp3(9293).GenericHeaderTitle, obj4), ];
     const obj5 = { style: tmp6, variant: "text-xs/medium", color: str, children: stringResult };
     str = "text-muted";
     const tmp10 = closure_17;

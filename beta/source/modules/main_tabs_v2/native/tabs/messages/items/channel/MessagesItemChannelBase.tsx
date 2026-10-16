@@ -1,7 +1,7 @@
 // Module ID: 16466
 // Function ID: 16467
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5108, 6035, 4760, 2116, 5966, 1390, 1085, 21, 5092, 587, 558, 576, 504, 16467, 8343, 1382, 7015, 5103, 10283, 8651, 9022, 16468, 9314, 8385, 16469, 9018, 16470, 6185, 2]
+// Dependencies: [19, 17, 5108, 6035, 4760, 2116, 5966, 1390, 1085, 21, 5092, 587, 558, 576, 504, 16467, 8338, 1382, 7015, 5103, 10283, 8646, 9017, 16468, 9309, 8380, 16469, 9013, 16470, 6185, 2]
 
 // Module 16466 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
@@ -480,7 +480,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const tmpResult13 = channel(8343);
+    const tmpResult13 = channel(8338);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {

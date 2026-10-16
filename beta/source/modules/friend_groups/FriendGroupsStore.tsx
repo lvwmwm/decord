@@ -1,12 +1,12 @@
 // Module ID: 13996
 // Function ID: 13997
 // Name: FriendGroupsStore
-// Dependencies: [7348, 5932, 4760, 1390, 504, 584, 2]
+// Dependencies: [7343, 5932, 4760, 1390, 504, 584, 2]
 
 // Module 13996 (FriendGroupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import ConsentStore from "ConsentStore" /* 5932 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

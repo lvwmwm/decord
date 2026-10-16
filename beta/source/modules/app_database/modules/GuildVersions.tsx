@@ -1,9 +1,9 @@
-// Module ID: 7342
-// Function ID: 7343
+// Module ID: 7337
+// Function ID: 7338
 // Name: GuildVersions
 // Dependencies: [32, 5, 2087, 3, 2091, 1388, 2]
 
-// Module 7342 (GuildVersions)
+// Module 7337 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;

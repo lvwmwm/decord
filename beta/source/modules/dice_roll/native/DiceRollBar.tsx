@@ -1,7 +1,7 @@
 // Module ID: 12092
 // Function ID: 12093
 // Name: DiceRollBar
-// Dependencies: [19, 17, 5081, 11633, 21, 5092, 587, 558, 576, 504, 4850, 5093, 1200, 12093, 9037, 5088, 2]
+// Dependencies: [19, 17, 5081, 11633, 21, 5092, 587, 558, 576, 504, 4850, 5093, 1200, 12093, 9032, 5088, 2]
 
 // Module 12092 (DiceRollBar)
 import react_native from "react-native" /* 17 */;

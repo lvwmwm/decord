@@ -1,9 +1,9 @@
-// Module ID: 7825
-// Function ID: 7826
+// Module ID: 7820
+// Function ID: 7821
 // Name: DiscordImagePng
-// Dependencies: [5, 1996, 7826, 2]
+// Dependencies: [5, 1996, 7821, 2]
 
-// Module 7825 (DiscordImagePng)
+// Module 7820 (DiscordImagePng)
 import _modDef1996 from "module_1996" /* 1996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

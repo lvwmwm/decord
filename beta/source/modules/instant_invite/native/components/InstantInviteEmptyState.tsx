@@ -1,17 +1,17 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8717
+// Function ID: 8718
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8684, 21, 5092, 587, 558, 576, 504, 8685, 1126, 1200, 8723, 6620, 7092, 6185, 5088, 5379, 2]
+// Dependencies: [19, 17, 8679, 21, 5092, 587, 558, 576, 504, 8680, 1126, 1200, 8718, 6620, 7092, 6185, 5088, 5379, 2]
 
-// Module 8722 (InstantInviteEmptyState)
+// Module 8717 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import FreeFormTextInputDefault from "FreeFormTextInput" /* 6620 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8685 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8723 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8680 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8718 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8684 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8679 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           }
           str2 = str;
         }
-        const getMaxUsesOptions = tmp5(8685).getMaxUsesOptions;
+        const getMaxUsesOptions = tmp5(8680).getMaxUsesOptions;
         const found = getMaxUsesOptions.find((value) => value.value === maxUses.maxUses);
         let str3 = "";
         if (null != found) {
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
       }
       str3 = str4;
     }
-    const getMaxUsesOptions = tmp8(8685).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(8680).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     let str5 = "";
     if (null != found) {

@@ -1,9 +1,9 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8616
+// Function ID: 8617
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1390, 7490, 21, 5092, 5305, 1126, 7015, 4808, 558, 576, 6296, 6185, 8622, 8603, 6180, 5088, 1200, 8623, 8624, 4832, 6178, 2]
+// Dependencies: [109, 19, 17, 1390, 7485, 21, 5092, 5305, 1126, 7015, 4808, 558, 576, 6296, 6185, 8617, 8598, 6180, 5088, 1200, 8618, 8619, 4832, 6178, 2]
 
-// Module 8621 (ChannelOverwritesItem)
+// Module 8616 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
@@ -13,11 +13,11 @@ import Text_Text from "Text/Text" /* 5088 */;
 import AlertModal from "AlertModal" /* 5305 */;
 import FormCheckbox from "FormCheckbox" /* 6178 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8603 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8623 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8624 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8598 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8618 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8619 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F99104 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,7 +147,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F99104 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F99104 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }

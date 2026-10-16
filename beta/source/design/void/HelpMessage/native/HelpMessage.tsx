@@ -1,9 +1,9 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7564
+// Function ID: 7565
 // Name: HelpMessage
 // Dependencies: [19, 17, 21, 5092, 587, 1103, 6290, 5046, 6296, 6868, 558, 576, 5088, 2]
 
-// Module 7569 (HelpMessage)
+// Module 7564 (HelpMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

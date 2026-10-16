@@ -1,10 +1,10 @@
 // Module ID: 14827
 // Function ID: 14828
 // Name: useRequestGatewaySocket
-// Dependencies: [19, 558, 576, 6071, 9704, 2]
+// Dependencies: [19, 558, 576, 6071, 9699, 2]
 
 // Module 14827 (useRequestGatewaySocket)
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9704 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9699 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

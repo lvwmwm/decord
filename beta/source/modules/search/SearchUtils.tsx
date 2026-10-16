@@ -1,7 +1,7 @@
 // Module ID: 12043
 // Function ID: 12044
 // Name: SearchUtils
-// Dependencies: [32, 2065, 4748, 5925, 2087, 4760, 2116, 1390, 9313, 1085, 4702, 1126, 12044, 11, 12042, 12, 584, 5421, 4962, 12047, 2]
+// Dependencies: [32, 2065, 4748, 5925, 2087, 4760, 2116, 1390, 9308, 1085, 4702, 1126, 12044, 11, 12042, 12, 584, 5421, 4962, 12047, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
 // Module 12043 (SearchUtils)
@@ -12,7 +12,7 @@ import intl11 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import QueryTokenizerDefault from "QueryTokenizer" /* 12042 */;
 import SearchTokens from "SearchTokens" /* 12044 */;
 import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12047 */;

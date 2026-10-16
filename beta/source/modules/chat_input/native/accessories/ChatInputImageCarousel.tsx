@@ -1,15 +1,15 @@
 // Module ID: 11932
 // Function ID: 11933
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 7922, 7244, 7908, 9384, 21, 558, 576, 504, 10019, 2]
+// Dependencies: [19, 7917, 7239, 7903, 9379, 21, 558, 576, 504, 10014, 2]
 
 // Module 11932 (ChatInputImageCarousel)
 import Fragment from "Fragment" /* 21 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import react from "react" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7922 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7917 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       let tmp12 = null;
       if (null != stateFromStores) {
-        tmp12 = jsx(channelId(10019), { attachments: stateFromStores, channelId });
+        tmp12 = jsx(channelId(10014), { attachments: stateFromStores, channelId });
       }
       cResult[6] = stateFromStores;
       cResult[7] = channelId;
@@ -113,7 +113,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp4 = null;
   if (null != stateFromStores) {
     let tmp5 = jsx;
-    tmp4 = jsx(channelId(10019), { attachments: stateFromStores, channelId });
+    tmp4 = jsx(channelId(10014), { attachments: stateFromStores, channelId });
   }
   return tmp4;
 }));

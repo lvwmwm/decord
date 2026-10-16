@@ -1,12 +1,12 @@
 // Module ID: 15714
 // Function ID: 15715
 // Name: AutoplayGifSetting
-// Dependencies: [7993, 10663, 1126, 2041, 2]
+// Dependencies: [7988, 10663, 1126, 2041, 2]
 
 // Module 15714 (AutoplayGifSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 13747
 // Function ID: 13748
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9469, 1085, 1392, 3, 13748, 9470, 558, 576, 584, 5396, 1265, 4809, 1126, 7094, 1628, 2]
+// Dependencies: [32, 5, 19, 9464, 1085, 1392, 3, 13748, 9465, 558, 576, 584, 5396, 1265, 4809, 1126, 7094, 1628, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
 // Module 13747 (AppIconUtils)
@@ -16,7 +16,7 @@ import react_nativeDefault from "react-native" /* 13748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 9469 */;
+import AppIconConstants from "AppIconConstants" /* 9464 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

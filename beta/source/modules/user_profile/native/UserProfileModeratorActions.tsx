@@ -1,7 +1,7 @@
 // Module ID: 13173
 // Function ID: 13174
 // Name: UserProfileModeratorActions
-// Dependencies: [19, 5948, 2065, 4748, 2125, 2087, 4750, 5113, 1085, 4736, 21, 5092, 587, 558, 576, 6180, 8315, 5056, 10238, 504, 6972, 11391, 2073, 11392, 5421, 5416, 5414, 4755, 1126, 10996, 7488, 10998, 8580, 8229, 12181, 2000, 6098, 7092, 5934, 11393, 1403, 12837, 4737, 11439, 11397, 8806, 11104, 8802, 12266, 9324, 5036, 11441, 11443, 11445, 13174, 12363, 7902, 6904, 6265, 2]
+// Dependencies: [19, 5948, 2065, 4748, 2125, 2087, 4750, 5113, 1085, 4736, 21, 5092, 587, 558, 576, 6180, 8310, 5056, 10238, 504, 6972, 11391, 2073, 11392, 5421, 5416, 5414, 4755, 1126, 10996, 7483, 10998, 8575, 8224, 12181, 2000, 6098, 7092, 5934, 11393, 1403, 12837, 4737, 11439, 11397, 8801, 11104, 8797, 12266, 9319, 5036, 11441, 11443, 11445, 13174, 12363, 7897, 6904, 6265, 2]
 // Exports: default
 
 // Module 13173 (UserProfileModeratorActions)
@@ -17,7 +17,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7488 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7483 */;
 import GuildMemberUtils from "GuildMemberUtils" /* 11391 */;
 import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11397 */;
 import showKickConfirmModalDefault from "showKickConfirmModal" /* 11441 */;

@@ -1,7 +1,7 @@
 // Module ID: 17519
 // Function ID: 17520
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 10749, 4818, 1126, 5088, 9036, 11896, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 10749, 4818, 1126, 5088, 9031, 11896, 2]
 
 // Module 17519 (GroupDMRecipientLimitTitle)
 import react2 from "react" /* 576 */;
@@ -179,7 +179,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
         let tmp20Result = null;
         if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
           let tmp21 = token2;
-          const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9031).NitroWheelIcon;
           const tmp20 = metroRequire;
           if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
             tmp21 = token1;
@@ -249,7 +249,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9036).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

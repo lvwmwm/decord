@@ -1,7 +1,7 @@
 // Module ID: 11667
 // Function ID: 11668
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 5081, 5987, 2119, 4750, 1085, 5404, 1393, 11668, 4768, 11669, 2030, 2031, 7690, 8156, 7044, 9716, 2041, 587, 5421, 2]
+// Dependencies: [32, 17, 5081, 5987, 2119, 4750, 1085, 5404, 1393, 11668, 4768, 11669, 2030, 2031, 7685, 8151, 7044, 9711, 2041, 587, 5421, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
 // Module 11667 (ChatInputCommandOptionParser)
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault = tmp(7690);
+const AssetRegistryDefault = tmp(7685);
 function findTokenLocations(arr, arg1, fn) {
   const items = [];
   let index = arr.indexOf(arg1);

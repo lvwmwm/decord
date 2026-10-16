@@ -1,14 +1,14 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 9209
+// Function ID: 9210
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 5761, 21, 5092, 558, 576, 9215, 504, 6157, 5088, 6180, 1126, 5379, 5377, 6814, 2]
+// Dependencies: [19, 17, 5761, 21, 5092, 558, 576, 9210, 504, 6157, 5088, 6180, 1126, 5379, 5377, 6814, 2]
 
-// Module 9214 (TwoWayLinkLanding)
+// Module 9209 (TwoWayLinkLanding)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -44,7 +44,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   ({ img, imgStyle, headerConnect, headerReconnect, body, valueProps } = platformType);
   ({ learnMoreLink, onNext } = platformType);
   const tmp4 = closure_8();
-  const obj2 = platformType(9215);
+  const obj2 = platformType(9210);
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConnectedAccountsStore];

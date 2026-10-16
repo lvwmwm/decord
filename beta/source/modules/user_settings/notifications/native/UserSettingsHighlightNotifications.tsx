@@ -1,7 +1,7 @@
 // Module ID: 15822
 // Function ID: 15823
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 2087, 5963, 5966, 1085, 21, 558, 576, 6809, 6804, 504, 6159, 6896, 8580, 2]
+// Dependencies: [19, 2087, 5963, 5966, 1085, 21, 558, 576, 6809, 6804, 504, 6159, 6896, 8575, 2]
 
 // Module 15822 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (0 !== stateFromStoresArray.length) {
     let tmp11;
     if (cResult[6] !== tmp7) {
-      const tmp13 = jsx(stateFromStoresArray(8580).Form, { children: tmp7 });
+      const tmp13 = jsx(stateFromStoresArray(8575).Form, { children: tmp7 });
       cResult[6] = tmp7;
       cResult[7] = tmp13;
       tmp11 = tmp13;
@@ -224,7 +224,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    tmp4 = jsx(tmp(8580).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(8575).Form, { children: tmp3 });
   }
   return tmp4;
 });

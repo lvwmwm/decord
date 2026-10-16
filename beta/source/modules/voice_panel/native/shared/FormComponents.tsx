@@ -1,10 +1,10 @@
-// Module ID: 8797
-// Function ID: 8798
+// Module ID: 8792
+// Function ID: 8793
 // Name: FormComponents
-// Dependencies: [109, 19, 5108, 21, 5092, 587, 558, 576, 6265, 6162, 8798, 1200, 6852, 8799, 8810, 7027, 5628, 8854, 8304, 7426, 504, 8855, 8856, 8858, 5088, 1126, 4962, 8859, 13023, 5379, 7017, 13025, 6180, 2]
+// Dependencies: [109, 19, 5108, 21, 5092, 587, 558, 576, 6265, 6162, 8793, 1200, 6852, 8794, 8805, 7027, 5628, 8849, 8299, 7421, 504, 8850, 8851, 8853, 5088, 1126, 4962, 8854, 13023, 5379, 7017, 13025, 6180, 2]
 // Exports: VoicePanelFormSection
 
-// Module 8797 (FormComponents)
+// Module 8792 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5088 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import TableRowGroup3 from "TableRowGroup" /* 6265 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7426 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 8798 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7421 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8793 */;
 import ShieldLockIcon from "ShieldLockIcon" /* 13023 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(8859);
+const GuildTagDefault = tmp6(8854);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(8798).VideoIcon;
+        VideoIcon = tmp(8793).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(8798).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(8793).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;

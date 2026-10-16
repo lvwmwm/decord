@@ -1,7 +1,7 @@
 // Module ID: 15401
 // Function ID: 15402
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 5081, 1390, 7391, 6841, 21, 587, 5092, 5975, 9171, 9190, 9193, 10507, 504, 4818, 7274, 9168, 558, 576, 15402, 12967, 5379, 9204, 15366, 12980, 15396, 15398, 7574, 1126, 6205, 12979, 9202, 9174, 9175, 9178, 5979, 7416, 15252, 1631, 1497, 4850, 5093, 5384, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 7386, 6841, 21, 587, 5092, 5975, 9166, 9185, 9188, 10507, 504, 4818, 7269, 9163, 558, 576, 15402, 12967, 5379, 9199, 15366, 12980, 15396, 15398, 7569, 1126, 6205, 12979, 9197, 9169, 9170, 9173, 5979, 7411, 15252, 1631, 1497, 4850, 5093, 5384, 2]
 
 // Module 15401 (QuestBottomSheetFooter)
 import react_native from "react-native" /* 17 */;
@@ -16,15 +16,15 @@ import QuestTypes from "QuestTypes" /* 5975 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6205 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import QuestUtils from "QuestUtils" /* 9168 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9175 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
-import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9202 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9204 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
+import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9197 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
 import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
 import AnalyticsHooks from "AnalyticsHooks" /* 12979 */;
 import QuestCopyHooks from "QuestCopyHooks" /* 12980 */;
@@ -37,7 +37,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import UserStore from "UserStore" /* 1390 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -486,7 +486,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
                 let tmp75 = null != onBack;
                 if (tmp75) {
                   const obj9 = { accessibilityLabel: intl.string(intl2.t["13/7kX"]), variant: "secondary", icon: authStore(ArrowLargeLeftIcon.ArrowLargeLeftIcon, {}), onPress: onBack, size: "lg" };
-                  const IconButton = tmp(7574).IconButton;
+                  const IconButton = tmp(7569).IconButton;
                   intl = tmp(1126).intl;
                   tmp75 = authStore(IconButton, obj9);
                 }
@@ -584,13 +584,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   ({ onBack, sourceQuestContent } = quest);
   ({ onConnectConsoleNext, onDefib, style, withSafeArea } = quest);
   const tmp = useQuestRewardClaimHandler({ quest, sourceQuestContent });
-  let obj = quest(9171);
+  let obj = quest(9166);
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  const obj2 = quest(9171);
+  const obj2 = quest(9166);
   const isQuestProgressing = obj2.useIsQuestProgressing(quest);
-  const obj3 = quest(9171);
+  const obj3 = quest(9166);
   const first = _slicedToArray(obj3.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
-  const obj4 = quest(9171);
+  const obj4 = quest(9166);
   const xboxAndPlaystationAccounts = obj4.useConnectedAccounts().xboxAndPlaystationAccounts;
   const items = [quest, xboxAndPlaystationAccounts];
   const memo = react.useMemo(() => {
@@ -622,7 +622,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   if (userStatus2 != null) {
     claimedAt = userStatus2.claimedAt;
   }
-  const tmp2Result = quest(9171);
+  const tmp2Result = quest(9166);
   const isQuestAccessSuspended = tmp2Result.useIsQuestAccessSuspended();
   const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(15396) };
   let tmp41Result6 = null;
@@ -665,7 +665,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
           const obj15 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp2Result2.getPrimaryCtaIcon(quest) };
           const Button = tmp2(5379).Button;
           let tmp24 = null;
-          tmp2Result2 = quest(9168);
+          tmp2Result2 = quest(9163);
           if (isQuestAccessSuspended) {
             tmp24 = obj10;
           }
@@ -693,7 +693,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
     tmp41Result5 = null != onBack;
     if (tmp41Result5) {
       const obj18 = { accessibilityLabel: intl.string(quest(1126).t["13/7kX"]), variant: "secondary", icon: closure_10(quest(6205).ArrowLargeLeftIcon, {}), onPress: onBack, size: "lg" };
-      const IconButton = tmp2(7574).IconButton;
+      const IconButton = tmp2(7569).IconButton;
       intl = tmp2(1126).intl;
       tmp41Result5 = tmp41(IconButton, obj18);
     }

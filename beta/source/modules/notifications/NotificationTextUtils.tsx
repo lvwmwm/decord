@@ -1,7 +1,7 @@
 // Module ID: 12570
 // Function ID: 12571
 // Name: NotificationTextUtils
-// Dependencies: [2064, 4751, 6055, 4752, 6074, 2069, 2065, 2087, 5110, 4760, 2116, 4939, 5759, 5966, 2059, 1390, 12571, 1085, 6067, 1125, 5924, 2041, 1403, 12572, 6084, 5632, 4977, 6072, 7373, 5421, 1126, 8394, 5409, 6080, 8004, 3, 7002, 4962, 1998, 7370, 12573, 558, 576, 504, 2]
+// Dependencies: [2064, 4751, 6055, 4752, 6074, 2069, 2065, 2087, 5110, 4760, 2116, 4939, 5759, 5966, 2059, 1390, 12571, 1085, 6067, 1125, 5924, 2041, 1403, 12572, 6084, 5632, 4977, 6072, 7368, 5421, 1126, 8389, 5409, 6080, 7999, 3, 7002, 4962, 1998, 7365, 12573, 558, 576, 504, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel
 
 // Module 12570 (NotificationTextUtils)
@@ -22,10 +22,10 @@ import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6080 */;
 import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6084 */;
 import isForwardMessage from "isForwardMessage" /* 7002 */;
-import MessageParserDefault from "MessageParser" /* 7370 */;
-import IsolateString from "IsolateString" /* 7373 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8004 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8394 */;
+import MessageParserDefault from "MessageParser" /* 7365 */;
+import IsolateString from "IsolateString" /* 7368 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7999 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8389 */;
 import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 12572 */;
 import FocusModeUtils from "FocusModeUtils" /* 12573 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;

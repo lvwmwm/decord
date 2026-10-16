@@ -1,7 +1,7 @@
 // Module ID: 14003
 // Function ID: 14004
 // Name: GuildMediaStateStore
-// Dependencies: [2064, 6054, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 4739, 14004, 8655, 11, 5894, 8513, 504, 568, 584, 2]
+// Dependencies: [2064, 6054, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 4739, 14004, 8650, 11, 5894, 8508, 504, 568, 584, 2]
 
 // Module 14003 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -257,7 +257,7 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp29Result = tmp29(8513);
+        let tmp29Result = tmp29(8508);
         if (tmp29Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -270,7 +270,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp29Result2.getGuildActiveEvent(guildId), activity: someResult2, isCurrentUserConnected: false };
-        let tmp29Result2 = tmp29(8655);
+        let tmp29Result2 = tmp29(8650);
         return obj4;
       }
       continue;

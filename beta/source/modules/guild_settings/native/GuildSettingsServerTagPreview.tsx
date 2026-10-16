@@ -1,12 +1,12 @@
 // Module ID: 14141
 // Function ID: 14142
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1390, 7888, 21, 5092, 587, 558, 576, 504, 5409, 1415, 14142, 1126, 5088, 6157, 12606, 8859, 14143, 14187, 5379, 5377, 6182, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 7883, 21, 5092, 587, 558, 576, 504, 5409, 1415, 14142, 1126, 5088, 6157, 12606, 8854, 14143, 14187, 5379, 5377, 6182, 2]
 
 // Module 14141 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -442,7 +442,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                 if (tmp55Result2) {
                   const obj20 = { guildTag: tag, guildBadge: tmp55Result };
                   tmp55Result = undefined;
-                  const BaseGuildTagChiplet = tmp(8859).BaseGuildTagChiplet;
+                  const BaseGuildTagChiplet = tmp(8854).BaseGuildTagChiplet;
                   if (null != badge) {
                     size = { badge, primaryTintColor: tmp57, secondaryTintColor: tmp58, width: null, height: null };
                     const GuildBadge = tmp(14143).GuildBadge;
@@ -743,7 +743,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   if (tmp17Result3) {
     const obj13 = { guildTag: tag, guildBadge: tmp17Result };
     tmp17Result = undefined;
-    const BaseGuildTagChiplet = tmp2(8859).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(8854).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
       const GuildBadge = tmp2(14143).GuildBadge;

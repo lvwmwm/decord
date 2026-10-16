@@ -1,13 +1,13 @@
 // Module ID: 12287
 // Function ID: 12288
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 2087, 558, 576, 8290, 504, 1126, 2600, 12288, 12289, 1388, 2]
+// Dependencies: [19, 2087, 558, 576, 8285, 504, 1126, 2600, 12288, 12289, 1388, 2]
 
 // Module 12287 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _modDef2600 from "module_2600" /* 2600 */;
-import GuildTagUtils from "GuildTagUtils" /* 8290 */;
+import GuildTagUtils from "GuildTagUtils" /* 8285 */;
 import _modDef12288 from "module_12288" /* 12288 */;
 import _modDef12289 from "module_12289" /* 12289 */;
 import react from "react" /* 19 */;

@@ -1,11 +1,11 @@
 // Module ID: 18259
 // Function ID: 18260
 // Name: ThreadManager
-// Dependencies: [502, 2065, 6808, 504, 584, 9329, 2]
+// Dependencies: [502, 2065, 6808, 504, 584, 9324, 2]
 
 // Module 18259 (ThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9324 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

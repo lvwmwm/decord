@@ -1,7 +1,7 @@
 // Module ID: 11923
 // Function ID: 11924
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2065, 7244, 7971, 1393, 21, 5092, 587, 558, 576, 11924, 1126, 7898, 1200, 6185, 9427, 9263, 5056, 11925, 2000, 8962, 8580, 5050, 11928, 2]
+// Dependencies: [19, 17, 2065, 7239, 7966, 1393, 21, 5092, 587, 558, 576, 11924, 1126, 7893, 1200, 6185, 9422, 9258, 5056, 11925, 2000, 8957, 8575, 5050, 11928, 2]
 // Exports: default
 
 // Module 11923 (PollAnswerInput)
@@ -12,15 +12,15 @@ import EmojiConstants from "EmojiConstants" /* 1393 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Pressables from "Pressables" /* 6185 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import PollsUtils from "PollsUtils" /* 7898 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import PollsUtils from "PollsUtils" /* 7893 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
 import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11924 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PollsConstants from "PollsConstants" /* 7971 */;
+import PollsConstants from "PollsConstants" /* 7966 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

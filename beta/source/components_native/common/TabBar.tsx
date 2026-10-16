@@ -1,10 +1,10 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9586
+// Function ID: 9587
 // Name: TabBar
 // Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 6335, 1126, 2]
 // Exports: default
 
-// Module 9591 (TabBar)
+// Module 9586 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -141,16 +141,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tab(ar
   let tabStyleSelected;
   let tmp3;
   let tmp4;
-  const f102014 = () => false;
+  const f102013 = () => false;
   index = index.index;
   ({ isSelected, onSelect } = index);
   ({ children, tabStyle, tabStyleActive, tabStyleSelected } = index);
   const tmp = closure_9();
-  [tmp3, tmp4] = react.useState(f102014);
+  [tmp3, tmp4] = react.useState(f102013);
   let c2 = tmp4;
   const items = [tmp4];
   const items1 = [tmp4];
-  _slicedToArray(react.useState(f102014), 2);
+  _slicedToArray(react.useState(f102013), 2);
   const callback = react.useCallback(() => _undefined(true), items);
   const items2 = [onSelect, index];
   const callback1 = react.useCallback(() => _undefined(false), items1);

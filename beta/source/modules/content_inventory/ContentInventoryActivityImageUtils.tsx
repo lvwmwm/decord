@@ -1,7 +1,7 @@
 // Module ID: 13118
 // Function ID: 13119
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5440, 1085, 2024, 8460, 8275, 1126, 558, 576, 13119, 7009, 13121, 10254, 1415, 13125, 5763, 13126, 10247, 6858, 504, 1265, 8463, 2]
+// Dependencies: [19, 5440, 1085, 2024, 8455, 8270, 1126, 558, 576, 13119, 7009, 13121, 10254, 1415, 13125, 5763, 13126, 10247, 6858, 504, 1265, 8458, 2]
 // Exports: getApplicationImage
 
 // Module 13118 (ContentInventoryActivityImageUtils)
@@ -13,9 +13,9 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import Constants2 from "Constants" /* 2024 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8460 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8463 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8455 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8458 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10247 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10254 */;
 import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13119 */;

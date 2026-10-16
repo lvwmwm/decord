@@ -1,7 +1,7 @@
 // Module ID: 16607
 // Function ID: 16608
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 5081, 2087, 5008, 1085, 2062, 1096, 21, 5092, 587, 558, 576, 504, 5031, 8030, 12249, 12233, 16608, 12217, 12257, 1126, 2600, 12259, 16609, 12256, 5011, 16605, 16610, 16611, 12289, 16612, 9443, 2]
+// Dependencies: [19, 5081, 2087, 5008, 1085, 2062, 1096, 21, 5092, 587, 558, 576, 504, 5031, 8025, 12249, 12233, 16608, 12217, 12257, 1126, 2600, 12259, 16609, 12256, 5011, 16605, 16610, 16611, 12289, 16612, 9438, 2]
 
 // Module 16607 (useGuildPowerupsCoachmark)
 import Fragment from "Fragment" /* 21 */;
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult3 = tmp(504);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp11, tmp12);
-  const available = tmp9(8030)(guildId).available;
+  const available = tmp9(8025)(guildId).available;
   const tmp15 = useHasAllocateBoostPermissionDefault(guildId);
   let type1;
   if (type != null) {
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
           if (cResult[11] === tmp20) {
             if (cResult[12] === type) {
               if (cResult[13] === tmp10) {
-                tmp(9443);
+                tmp(9438);
                 class S {
                   constructor() {
                     return closure_4.useReducedMotion;

@@ -1,14 +1,14 @@
 // Module ID: 11779
 // Function ID: 11780
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9247, 8312, 1415, 11757, 6185, 11780, 1998, 11773, 5088, 1126, 11734, 6189, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9242, 8307, 1415, 11757, 6185, 11780, 1998, 11773, 5088, 1126, 11734, 6189, 2]
 
 // Module 11779 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11773 */;
 import RecommendationsBannerDefault from "RecommendationsBanner" /* 11780 */;
 import react from "react" /* 19 */;
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
       tmp6 = cResult[2];
     }
     if (cResult[3] !== application) {
-      const tmpResult = tmp(9247);
+      const tmpResult = tmp(9242);
       const shelfBadgeTypeIfActive = tmpResult.getShelfBadgeTypeIfActive(application);
       cResult[3] = application;
       cResult[4] = shelfBadgeTypeIfActive;
@@ -219,7 +219,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
           const obj8 = { applicationBot: application.bot, isActivity: tmpResult3.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
           const tmp27 = RecommendationsBannerDefault;
           ({ id: obj9.applicationId, icon } = application);
-          tmpResult3 = tmp(9247);
+          tmpResult3 = tmp(9242);
           items2 = [closure_6(tmp27, obj8), ];
           const tmp26 = importDefault;
           if (tmp6) {
@@ -341,7 +341,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   }
   let result = tmp4;
   if (!result) {
-    const tmpResult4 = tmp(9247);
+    const tmpResult4 = tmp(9242);
     result = tmpResult4.isPromotedApplication(application);
   }
   cResult[0] = application;
@@ -375,10 +375,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   const overrideImageUrl = application.overrideImageUrl;
   let tmp = closure_8();
   if (!showsPromoted) {
-    const obj = application(9247);
+    const obj = application(9242);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  const obj2 = application(9247);
+  const obj2 = application(9242);
   const shelfBadgeTypeIfActive = obj2.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -425,7 +425,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
     const obj10 = { applicationBot: application.bot, isActivity: tmp4Result.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
     const tmp10Result = RecommendationsBannerDefault;
     ({ id: obj8.applicationId, icon } = application);
-    tmp4Result = application(9247);
+    tmp4Result = application(9242);
     items2 = [closure_6(tmp10Result, obj10), ];
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: items3 };

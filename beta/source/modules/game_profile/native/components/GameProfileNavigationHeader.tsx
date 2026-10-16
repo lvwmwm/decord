@@ -1,9 +1,9 @@
-// Module ID: 9118
-// Function ID: 9119
+// Module ID: 9113
+// Function ID: 9114
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5093, 1415, 8542, 6157, 5088, 8925, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5093, 1415, 8537, 6157, 5088, 8920, 2]
 
-// Module 9118 (GameProfileNavigationHeader)
+// Module 9113 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 587 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import timing from "timing" /* 5093 */;
@@ -244,9 +244,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           if (tmp37) {
             const obj11 = { style: tmp4.rankPillContainer, children: items4 };
             const obj12 = { rank: game.l30Rank, compact: true };
-            items4 = [closure_6(sharedValue(8925), obj12), ];
+            items4 = [closure_6(sharedValue(8920), obj12), ];
             const items5 = [StyleSheet.absoluteFill, animatedStyle1];
-            const obj13 = { style: null, children: closure_6(sharedValue(8925), obj14) };
+            const obj13 = { style: null, children: closure_6(sharedValue(8920), obj14) };
             class T {
               constructor() {
                 const obj = { opacity: 1 - sharedValue.get() };
@@ -435,7 +435,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   if (null != name) {
     const obj2 = { style: tmp.headerContainer, children: items2 };
     const obj3 = { android_fallbackColor: token };
-    items2 = [closure_6(tmp2(8542).BackgroundBlurFill, obj3), ];
+    items2 = [closure_6(tmp2(8537).BackgroundBlurFill, obj3), ];
     let tmp18Result = null != memo;
     const obj4 = { style: tmp.headerRow, children: items3 };
     if (tmp18Result) {
@@ -455,8 +455,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     if (tmp16Result) {
       const obj10 = { rank: game.l30Rank, compact: true };
       const obj9 = { style: tmp.rankPillContainer, children: items5 };
-      items5 = [closure_6(tmp4(8925), obj10), ];
-      const obj11 = { style: items6, children: closure_6(application(8925), obj12) };
+      items5 = [closure_6(tmp4(8920), obj10), ];
+      const obj11 = { style: items6, children: closure_6(application(8920), obj12) };
       items6 = [StyleSheet.absoluteFill, animatedStyle1];
       const View = tmp4(4850).View;
       obj12 = { rank: game.l30Rank };

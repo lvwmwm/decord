@@ -1,14 +1,14 @@
 // Module ID: 17047
 // Function ID: 17048
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 5081, 1404, 1390, 1085, 21, 5092, 558, 576, 504, 8311, 8295, 4850, 8354, 5031, 6881, 4818, 587, 1103, 8356, 6119, 2114, 8312, 6840, 1200, 8359, 1126, 17048, 6307, 6844, 4827, 2]
+// Dependencies: [19, 17, 5081, 1404, 1390, 1085, 21, 5092, 558, 576, 504, 8306, 8290, 4850, 8349, 5031, 6881, 4818, 587, 1103, 8351, 6119, 2114, 8307, 6840, 1200, 8354, 1126, 17048, 6307, 6844, 4827, 2]
 
 // Module 17047 (JoinRequestActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import isChangelogUserDefault from "isChangelogUser" /* 2114 */;
 import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6119 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import UserRecord from "UserRecord" /* 1404 */;

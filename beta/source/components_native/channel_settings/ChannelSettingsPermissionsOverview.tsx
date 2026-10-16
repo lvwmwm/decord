@@ -1,7 +1,7 @@
 // Module ID: 17588
 // Function ID: 17589
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2120, 2065, 2119, 2087, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 5299, 1126, 5421, 4755, 10768, 8605, 9697, 12, 6265, 15252, 6180, 1503, 10605, 9725, 15607, 504, 1998, 10300, 17589, 6667, 9298, 7015, 2]
+// Dependencies: [32, 5, 19, 17, 2120, 2065, 2119, 2087, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 5299, 1126, 5421, 4755, 10768, 8600, 9692, 12, 6265, 15252, 6180, 1503, 10605, 9720, 15607, 504, 1998, 10300, 17589, 6667, 9293, 7015, 2]
 
 // Module 17588 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
@@ -15,7 +15,7 @@ import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import TableRow3 from "TableRow" /* 6180 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6667 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import RoleLabel from "RoleLabel" /* 9725 */;
+import RoleLabel from "RoleLabel" /* 9720 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10300 */;
 import CircleMinusIcon2 from "CircleMinusIcon" /* 15607 */;
 import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17589 */;

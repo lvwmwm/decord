@@ -1,7 +1,7 @@
 // Module ID: 10282
 // Function ID: 10283
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10217, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10283, 11597, 8216, 8208, 5088, 4793, 4702, 6177, 6180, 2]
+// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10217, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10283, 11597, 8211, 8203, 5088, 4793, 4702, 6177, 6180, 2]
 
 // Module 10282 (ChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -418,9 +418,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8216).ForumIcon;
+        TextIcon = tmp3(8211).ForumIcon;
       } else {
-        TextIcon = tmp3(8208).TextIcon;
+        TextIcon = tmp3(8203).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };

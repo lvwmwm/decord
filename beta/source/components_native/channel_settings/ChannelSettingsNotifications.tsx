@@ -1,7 +1,7 @@
 // Module ID: 12596
 // Function ID: 12597
 // Name: ChannelSettingsNotifications
-// Dependencies: [19, 2069, 2065, 5020, 4760, 5966, 1390, 1085, 21, 1126, 5092, 587, 4827, 5107, 6809, 5056, 10463, 2000, 6804, 5421, 6265, 6180, 10465, 6896, 6263, 6262, 5088, 8580, 5377, 558, 576, 504, 10445, 12597, 2]
+// Dependencies: [19, 2069, 2065, 5020, 4760, 5966, 1390, 1085, 21, 1126, 5092, 587, 4827, 5107, 6809, 5056, 10463, 2000, 6804, 5421, 6265, 6180, 10465, 6896, 6263, 6262, 5088, 8575, 5377, 558, 576, 504, 10445, 12597, 2]
 
 // Module 12596 (ChannelSettingsNotifications)
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6265 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
-import Form2 from "Form" /* 8580 */;
+import Form2 from "Form" /* 8575 */;
 import MutedUntilTextDefault from "MutedUntilText" /* 10465 */;
 import NotificationSettingsChannelDefault from "NotificationSettingsChannel" /* 12597 */;
 import react_mod from "react" /* 19 */;

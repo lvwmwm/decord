@@ -1,7 +1,10 @@
 // Module ID: 8430
 // Function ID: 8431
-// Dependencies: []
+// Dependencies: [4947]
 
 // Module 8430
+import module_4947 from "module_4947" /* 4947 */;
 
-export default { NONE: "", INVERT: "CIColorInvert", MONOCHROME: "CIColorMonochrome", POSTERIZE: "CIColorPosterize", FALSE: "CIFalseColor", MAXIMUMCOMPONENT: "CIMaximumComponent", MINIMUMCOMPONENT: "CIMinimumComponent", CHROME: "CIPhotoEffectChrome", FADE: "CIPhotoEffectFade", INSTANT: "CIPhotoEffectInstant", MONO: "CIPhotoEffectMono", NOIR: "CIPhotoEffectNoir", PROCESS: "CIPhotoEffectProcess", TONAL: "CIPhotoEffectTonal", TRANSFER: "CIPhotoEffectTransfer", SEPIA: "CISepiaTone" };
+const rect = { top: module_4947.number, left: module_4947.number, bottom: module_4947.number, right: module_4947.number };
+
+export default module_4947.shape(rect);

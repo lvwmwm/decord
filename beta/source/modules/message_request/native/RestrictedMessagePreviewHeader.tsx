@@ -1,7 +1,7 @@
 // Module ID: 17660
 // Function ID: 17661
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 12163, 21, 5092, 587, 6852, 4962, 8304, 6886, 4808, 5056, 12346, 2000, 8316, 7053, 5934, 6185, 1126, 1200, 5088, 17643, 6159, 17661, 2]
+// Dependencies: [19, 17, 12163, 21, 5092, 587, 6852, 4962, 8299, 6886, 4808, 5056, 12346, 2000, 8311, 7053, 5934, 6185, 1126, 1200, 5088, 17643, 6159, 17661, 2]
 // Exports: default
 
 // Module 17660 (RestrictedMessagePreviewHeader)
@@ -11,7 +11,7 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import MessageRequestConstants from "MessageRequestConstants" /* 12163 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

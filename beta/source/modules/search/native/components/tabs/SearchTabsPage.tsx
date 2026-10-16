@@ -1,7 +1,7 @@
 // Module ID: 17388
 // Function ID: 17389
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 2065, 9313, 1085, 21, 5092, 558, 576, 504, 5944, 5924, 11190, 12393, 17389, 17454, 17456, 17462, 17463, 17471, 17473, 17474, 17480, 17482, 38, 8395, 2]
+// Dependencies: [32, 19, 17, 2065, 9308, 1085, 21, 5092, 558, 576, 504, 5944, 5924, 11190, 12393, 17389, 17454, 17456, 17462, 17463, 17471, 17473, 17474, 17480, 17482, 38, 8390, 2]
 
 // Module 17388 (SearchTabsPage)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8395 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import GuildNSFWDefault from "GuildNSFW" /* 11190 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 12393 */;
 import RecentScreenDefault from "RecentScreen" /* 17389 */;

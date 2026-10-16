@@ -1,15 +1,15 @@
 // Module ID: 15112
 // Function ID: 15113
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [7993, 558, 7738, 15096, 576, 15104, 8243, 7000, 15105, 1126, 1209, 10663, 2]
+// Dependencies: [7988, 558, 7733, 15096, 576, 15104, 8238, 7000, 15105, 1126, 1209, 10663, 2]
 
 // Module 15112 (GoreMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7000 */;
-import useUserIsTeen from "useUserIsTeen" /* 7738 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15104 */;
 import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15105 */;
@@ -18,7 +18,7 @@ import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8243);
+const ExplicitMediaRedactionUtils = tmp(8238);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {

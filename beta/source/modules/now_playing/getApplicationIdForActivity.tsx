@@ -1,12 +1,12 @@
 // Module ID: 14038
 // Function ID: 14039
 // Name: getApplicationIdForActivity
-// Dependencies: [13535, 14039, 14040, 2024, 10253, 8385, 13125, 2]
+// Dependencies: [13535, 14039, 14040, 2024, 10253, 8380, 13125, 2]
 // Exports: default
 
 // Module 14038 (getApplicationIdForActivity)
 import Constants from "Constants" /* 2024 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10253 */;
 import isOnXboxDefault from "isOnXbox" /* 13125 */;
 import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 13535 */;

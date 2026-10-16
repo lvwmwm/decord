@@ -1,7 +1,7 @@
 // Module ID: 15480
 // Function ID: 15481
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 15370, 558, 15371, 4850, 5378, 8395, 2]
+// Dependencies: [19, 15370, 558, 15371, 4850, 5378, 8390, 2]
 
 // Module 15480 (useIsQuestDockModeActiveOrExiting)
 import spring from "spring" /* 5378 */;

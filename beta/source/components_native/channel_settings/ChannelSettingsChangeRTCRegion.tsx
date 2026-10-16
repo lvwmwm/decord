@@ -1,7 +1,7 @@
 // Module ID: 17617
 // Function ID: 17618
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 2065, 17567, 21, 5092, 587, 4827, 1126, 9697, 6262, 6263, 8580, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 2065, 17567, 21, 5092, 587, 4827, 1126, 9692, 6262, 6263, 8575, 558, 576, 504, 38, 2]
 
 // Module 17617 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
@@ -11,8 +11,8 @@ import intl2 from "intl" /* 1126 */;
 import native from "native" /* 4827 */;
 import TableRadioRow from "TableRadioRow" /* 6262 */;
 import TableRadioGroup from "TableRadioGroup" /* 6263 */;
-import Form2 from "Form" /* 8580 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import Form2 from "Form" /* 8575 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(9697);
+    let obj = self(9692);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

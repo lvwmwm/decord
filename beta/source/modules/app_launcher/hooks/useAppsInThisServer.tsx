@@ -1,13 +1,13 @@
 // Module ID: 11809
 // Function ID: 11810
 // Name: useAppsInThisServer
-// Dependencies: [19, 9248, 1390, 5403, 558, 576, 504, 1998, 9808, 9256, 11808, 9810, 12, 2]
+// Dependencies: [19, 9243, 1390, 5403, 558, 576, 504, 1998, 9803, 9251, 11808, 9805, 12, 2]
 
 // Module 11809 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9810 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9805 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppsInThi
   } else {
     tmp15 = cResult[5];
   }
-  const obj6 = reduced(9808);
+  const obj6 = reduced(9803);
   const discovery = obj6.useDiscovery(tmp15);
   ({ commandsByActiveSection, loading } = discovery);
   if (cResult[6] !== commandsByActiveSection) {

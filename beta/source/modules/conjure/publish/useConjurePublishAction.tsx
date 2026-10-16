@@ -1,7 +1,7 @@
 // Module ID: 17109
 // Function ID: 17110
 // Name: useConjurePublishAction
-// Dependencies: [5, 19, 5440, 7321, 2065, 4748, 2087, 4750, 12998, 10652, 13229, 1085, 6947, 6946, 11409, 17110, 6853, 11421, 11413, 13244, 17111, 1126, 3849, 11411, 584, 8306, 17112, 11412, 17107, 17113, 504, 2]
+// Dependencies: [5, 19, 5440, 7316, 2065, 4748, 2087, 4750, 12998, 10652, 13229, 1085, 6947, 6946, 11409, 17110, 6853, 11421, 11413, 13244, 17111, 1126, 3849, 11411, 584, 8301, 17112, 11412, 17107, 17113, 504, 2]
 // Exports: default, isConjureLiveNameOutdated, saveConjureFirstPublishDetails
 
 // Module 17109 (useConjurePublishAction)
@@ -11,14 +11,14 @@ import intl2 from "intl" /* 1126 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import UserActionCreators from "UserActionCreators" /* 8306 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
 import conjureAppInServer from "conjureAppInServer" /* 11409 */;
 import conjurePublishFailureMessage from "conjurePublishFailureMessage" /* 17111 */;
 import conjurePublishAction2 from "conjurePublishAction" /* 17112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;

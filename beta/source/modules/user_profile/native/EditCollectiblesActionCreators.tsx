@@ -1,10 +1,10 @@
-// Module ID: 8300
-// Function ID: 8301
+// Module ID: 8295
+// Function ID: 8296
 // Name: EditCollectiblesActionCreators
 // Dependencies: [1085, 7094, 2]
 // Exports: navigateToNitroManagement
 
-// Module 8300 (EditCollectiblesActionCreators)
+// Module 8295 (EditCollectiblesActionCreators)
 import Constants from "Constants" /* 1085 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
 // Module ID: 16192
 // Function ID: 16193
 // Name: ProfileCustomizationTryItOutV2SettingScreen
-// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 1503, 6683, 6852, 6879, 504, 14860, 14908, 8312, 1265, 5088, 1126, 1200, 9037, 16193, 2]
+// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 1503, 6683, 6852, 6879, 504, 14860, 14908, 8307, 1265, 5088, 1126, 1200, 9032, 16193, 2]
 
 // Module 16192 (ProfileCustomizationTryItOutV2SettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;

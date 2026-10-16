@@ -1,7 +1,7 @@
 // Module ID: 13441
 // Function ID: 13442
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 5092, 587, 558, 576, 13442, 5088, 7276, 9045, 1126, 13443, 1993, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 13442, 5088, 7271, 9040, 1126, 13443, 1993, 2]
 
 // Module 13441 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
 import useProductDescription from "useProductDescription" /* 13442 */;
 import InlinePriceTagDefault from "InlinePriceTag" /* 13443 */;
 import Fragment from "Fragment" /* 21 */;

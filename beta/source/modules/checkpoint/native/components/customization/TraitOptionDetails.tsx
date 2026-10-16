@@ -1,7 +1,7 @@
 // Module ID: 16046
 // Function ID: 16047
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5438, 1126, 3118, 5088, 9394, 6879, 16009, 16047, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5438, 1126, 3118, 5088, 9389, 6879, 16009, 16047, 2]
 
 // Module 16046 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;

@@ -1,7 +1,7 @@
 // Module ID: 17125
 // Function ID: 17126
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 10807, 502, 2065, 6035, 1999, 17104, 10652, 1085, 10802, 21, 5092, 587, 558, 576, 5088, 6182, 11423, 10821, 11427, 504, 17126, 11421, 10804, 6665, 17127, 17128, 17129, 17130, 17134, 17135, 17137, 1126, 3849, 5379, 7326, 13265, 6853, 7015, 6800, 10363, 1382, 17141, 2]
+// Dependencies: [32, 19, 17, 10807, 502, 2065, 6035, 1999, 17104, 10652, 1085, 10802, 21, 5092, 587, 558, 576, 5088, 6182, 11423, 10821, 11427, 504, 17126, 11421, 10804, 6665, 17127, 17128, 17129, 17130, 17134, 17135, 17137, 1126, 3849, 5379, 7321, 13265, 6853, 7015, 6800, 10363, 1382, 17141, 2]
 // Exports: leaveConjurePreviewFrame
 
 // Module 17125 (ConjureNativePreview)
@@ -15,7 +15,7 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7326 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import leaveFrame from "leaveFrame" /* 10821 */;
@@ -642,7 +642,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7326).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7321).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp9 = applicationWidget;

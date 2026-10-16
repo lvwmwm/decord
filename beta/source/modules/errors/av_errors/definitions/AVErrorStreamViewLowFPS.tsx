@@ -1,7 +1,7 @@
 // Module ID: 18657
 // Function ID: 18658
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [6036, 5897, 502, 7429, 1085, 18658, 5900, 5270, 5289, 18655, 2]
+// Dependencies: [6036, 5897, 502, 7424, 1085, 18658, 5900, 5270, 5289, 18655, 2]
 
 // Module 18657 (AVErrorStreamViewLowFPS)
 import Constants from "Constants" /* 1085 */;
@@ -13,7 +13,7 @@ import AVErrorUtils from "AVErrorUtils" /* 18658 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import size from "module_2" /* 2 */;
 
 let getParticipant, getRTCConnection;

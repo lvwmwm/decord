@@ -1,14 +1,14 @@
 // Module ID: 13434
 // Function ID: 13435
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1087, 21, 5092, 587, 558, 576, 5391, 8303, 10511, 10627, 13435, 13436, 1993, 1088, 13437, 13440, 2]
+// Dependencies: [19, 17, 1087, 21, 5092, 587, 558, 576, 5391, 8298, 10511, 10627, 13435, 13436, 1993, 1088, 13437, 13440, 2]
 
 // Module 13434 (IndividualProductPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import useCurrentUser from "useCurrentUser" /* 8303 */;
+import useCurrentUser from "useCurrentUser" /* 8298 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
 import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13435 */;

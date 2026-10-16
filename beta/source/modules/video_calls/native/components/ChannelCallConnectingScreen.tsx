@@ -1,7 +1,7 @@
 // Module ID: 11071
 // Function ID: 11072
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 5111, 2012, 4750, 5112, 10354, 1085, 1096, 21, 5092, 10840, 5056, 558, 576, 1628, 6840, 6307, 11072, 5421, 11016, 8683, 11099, 11100, 1126, 1894, 5243, 5889, 5031, 11101, 11025, 504, 11108, 7057, 11109, 11110, 587, 10913, 11127, 11128, 2]
+// Dependencies: [19, 17, 5111, 2012, 4750, 5112, 10354, 1085, 1096, 21, 5092, 10840, 5056, 558, 576, 1628, 6840, 6307, 11072, 5421, 11016, 8678, 11099, 11100, 1126, 1894, 5243, 5889, 5031, 11101, 11025, 504, 11108, 7057, 11109, 11110, 587, 10913, 11127, 11128, 2]
 // Exports: showVoiceSettingsActionSheet
 
 // Module 11071 (ChannelCallConnectingScreen)
@@ -18,7 +18,7 @@ import useChannelNameDefault from "useChannelName" /* 5421 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import BottomSheetModal from "BottomSheetModal" /* 6307 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import useActionBarHeight from "useActionBarHeight" /* 10840 */;
 import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11072 */;

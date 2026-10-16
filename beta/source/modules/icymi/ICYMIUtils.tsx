@@ -1,24 +1,24 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8466
+// Function ID: 8467
 // Name: ICYMIUtils
-// Dependencies: [5, 6054, 2069, 2065, 2087, 8468, 1085, 8467, 8472, 8477, 5434, 8478, 8268, 8479, 1126, 2]
+// Dependencies: [5, 6054, 2069, 2065, 2087, 8463, 1085, 8462, 8467, 8472, 5434, 8473, 8263, 8474, 1126, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 8471 (ICYMIUtils)
+// Module 8466 (ICYMIUtils)
 import intl11 from "intl" /* 1126 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8268 */;
-import ICYMITypes from "ICYMITypes" /* 8467 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import generateHydrationId from "generateHydrationId" /* 8477 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8478 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8479 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8263 */;
+import ICYMITypes from "ICYMITypes" /* 8462 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import generateHydrationId from "generateHydrationId" /* 8472 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8473 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8468 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8463 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -369,11 +369,11 @@ export const determineContentType = function determineContentType(channel, messa
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(8467).ContentType.IMAGE;
+        IMAGE = tmp6(8462).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(8467).ContentType;
+        const ContentType = tmp6(8462).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;

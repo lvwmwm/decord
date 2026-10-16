@@ -1,7 +1,7 @@
 // Module ID: 10354
 // Function ID: 10355
 // Name: ChannelCallStore
-// Dependencies: [19, 2064, 10355, 2024, 5115, 2060, 8451, 570, 1272, 5106, 12, 558, 576, 10356, 10357, 10358, 504, 10359, 2]
+// Dependencies: [19, 2064, 10355, 2024, 5115, 2060, 8446, 570, 1272, 5106, 12, 558, 576, 10356, 10357, 10358, 504, 10359, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus
 
 // Module 10354 (ChannelCallStore)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 2024 */;
 import Timers from "Timers" /* 2060 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import DeviceOrientation from "DeviceOrientation" /* 8451 */;
+import DeviceOrientation from "DeviceOrientation" /* 8446 */;
 import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10356 */;
 import useSelectedParticipantDefault from "useSelectedParticipant" /* 10357 */;
 import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10359 */;

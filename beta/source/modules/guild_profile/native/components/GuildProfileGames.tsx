@@ -1,16 +1,16 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8873
+// Function ID: 8874
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8879, 8880, 13013, 5088, 13017, 4809, 5056, 13018, 2000, 6185, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8874, 8875, 13013, 5088, 13017, 4809, 5056, 13018, 2000, 6185, 2]
 // Exports: default
 
-// Module 8878 (GuildProfileGames)
+// Module 8873 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -23,7 +23,7 @@ let rect;
 let tmp;
 let tmp5;
 const Text_Text = tmp(5088);
-const GameProfileAnalyticUtils = tmp(8879);
+const GameProfileAnalyticUtils = tmp(8874);
 const components_GameIconDefault = tmp5(13013);
 let react = react_mod;
 const View = react_native.View;

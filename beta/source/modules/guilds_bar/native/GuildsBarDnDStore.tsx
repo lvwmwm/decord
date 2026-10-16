@@ -39,7 +39,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: "expensive",
+    windowSize: "pressRetentionOffset",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();

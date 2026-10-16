@@ -1,7 +1,7 @@
 // Module ID: 15972
 // Function ID: 15973
 // Name: DevToolsQuickActionsScreen
-// Dependencies: [32, 5, 19, 17, 5081, 5757, 1391, 2129, 1205, 1207, 1390, 7408, 1085, 12430, 1392, 10382, 1208, 21, 5092, 587, 12514, 12429, 5260, 14693, 5934, 15973, 2000, 15989, 10435, 2046, 2049, 15033, 15035, 13992, 4809, 15864, 558, 576, 5460, 1631, 504, 2041, 15993, 15880, 6265, 6896, 1200, 15562, 4969, 15622, 15994, 9724, 1126, 15718, 6189, 6180, 6640, 15995, 15998, 4808, 16052, 6650, 1255, 562, 584, 1382, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 5757, 1391, 2129, 1205, 1207, 1390, 7403, 1085, 12430, 1392, 10382, 1208, 21, 5092, 587, 12514, 12429, 5260, 14693, 5934, 15973, 2000, 15989, 10435, 2046, 2049, 15033, 15035, 13992, 4809, 15864, 558, 576, 5460, 1631, 504, 2041, 15993, 15880, 6265, 6896, 1200, 15562, 4969, 15622, 15994, 9719, 1126, 15718, 6189, 6180, 6640, 15995, 15998, 4808, 16052, 6650, 1255, 562, 584, 1382, 2]
 
 // Module 15972 (DevToolsQuickActionsScreen)
 import react_native from "react-native" /* 17 */;
@@ -32,7 +32,7 @@ import LocaleStore from "LocaleStore" /* 2129 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import UserStore from "UserStore" /* 1390 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7408 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7403 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

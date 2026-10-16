@@ -1,7 +1,7 @@
 // Module ID: 16831
 // Function ID: 16832
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 12127, 1205, 1404, 7409, 4963, 1390, 1085, 12128, 21, 5092, 587, 558, 576, 5088, 6188, 14421, 14418, 14419, 14420, 2041, 6664, 12574, 5056, 1126, 6262, 8651, 6263, 504, 15455, 11619, 5260, 15562, 1252, 16832, 12684, 15564, 4962, 1200, 16376, 16834, 1265, 6879, 12131, 6185, 12573, 6265, 6896, 10346, 16839, 2000, 16829, 10513, 4818, 10239, 10517, 10257, 8961, 10524, 6157, 6778, 6182, 6203, 6839, 16840, 16121, 5377, 6899, 2]
+// Dependencies: [19, 17, 12127, 1205, 1404, 7404, 4963, 1390, 1085, 12128, 21, 5092, 587, 558, 576, 5088, 6188, 14421, 14418, 14419, 14420, 2041, 6664, 12574, 5056, 1126, 6262, 8646, 6263, 504, 15455, 11619, 5260, 15562, 1252, 16832, 12684, 15564, 4962, 1200, 16376, 16834, 1265, 6879, 12131, 6185, 12573, 6265, 6896, 10346, 16839, 2000, 16829, 10513, 4818, 10239, 10517, 10257, 8956, 10524, 6157, 6778, 6182, 6203, 6839, 16840, 16121, 5377, 6899, 2]
 
 // Module 16831 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -29,7 +29,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 6778 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import getChannelA11yLabel from "getChannelA11yLabel" /* 8651 */;
+import getChannelA11yLabel from "getChannelA11yLabel" /* 8646 */;
 import useGameMentionsAsPlainText2 from "useGameMentionsAsPlainText" /* 10239 */;
 import userSettingToActivity from "userSettingToActivity" /* 10513 */;
 import removeCustomStatusDefault from "removeCustomStatus" /* 10524 */;
@@ -52,7 +52,7 @@ import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 16
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7409 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7404 */;
 import StreamerModeStore from "StreamerModeStore" /* 4963 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -80,7 +80,7 @@ let tmp;
 let tmp2;
 const Text_Text = tmp(5088);
 const TableRowGroup2 = tmp2(6265);
-const ReactionIcon = tmp2(8961);
+const ReactionIcon = tmp2(8956);
 function FocusModeSetting() {
   let date;
   let intl;
@@ -1244,7 +1244,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
         tmp25 = authStore5(tmp6(10257), obj10);
       } else {
         const obj11 = { size: "md", style: tmp4.leadingIcon };
-        tmp25 = authStore5(tmp(8961).ReactionIcon, obj11);
+        tmp25 = authStore5(tmp(8956).ReactionIcon, obj11);
       }
       cResult[7] = customStatusActivity;
       cResult[8] = tmp4.leadingIcon;

@@ -1,7 +1,7 @@
 // Module ID: 17395
 // Function ID: 17396
 // Name: usePlaceholderStyles
-// Dependencies: [5081, 9313, 558, 576, 1497, 504, 4850, 5093, 1200, 2]
+// Dependencies: [5081, 9308, 558, 576, 1497, 504, 4850, 5093, 1200, 2]
 
 // Module 17395 (usePlaceholderStyles)
 import react from "react" /* 576 */;
@@ -9,7 +9,7 @@ import native from "native" /* 1200 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

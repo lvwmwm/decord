@@ -1,7 +1,7 @@
 // Module ID: 10867
 // Function ID: 10868
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2065, 2064, 1085, 10868, 10857, 584, 5635, 4739, 10871, 10812, 10872, 9233, 10874, 2]
+// Dependencies: [5, 2065, 2064, 1085, 10868, 10857, 584, 5635, 4739, 10871, 10812, 10872, 9228, 10874, 2]
 // Exports: confirmActivityLaunchChecks
 
 // Module 10867 (confirmActivityLaunchChecks)

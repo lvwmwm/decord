@@ -1,7 +1,7 @@
 // Module ID: 17563
 // Function ID: 17564
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7348, 4760, 1390, 1085, 21, 1200, 5092, 558, 576, 504, 13188, 8717, 12, 1388, 5088, 1126, 6180, 2]
+// Dependencies: [32, 19, 17, 7343, 4760, 1390, 1085, 21, 1200, 5092, 558, 576, 504, 13188, 8712, 12, 1388, 5088, 1126, 6180, 2]
 
 // Module 17563 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1200 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import createStyles from "createStyles" /* 5092 */;

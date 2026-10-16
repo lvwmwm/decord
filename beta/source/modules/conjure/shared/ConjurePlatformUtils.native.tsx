@@ -1,13 +1,13 @@
 // Module ID: 11421
 // Function ID: 11422
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 1999, 10652, 10802, 11422, 8458, 9235, 10862, 1097, 11031, 11423, 11425, 7522, 10931, 11426, 11427, 11428, 11430, 11431, 2]
+// Dependencies: [5, 1999, 10652, 10802, 11422, 8453, 9230, 10862, 1097, 11031, 11423, 11425, 7517, 10931, 11426, 11427, 11428, 11430, 11431, 2]
 // Exports: inspectConjurePreviewPoint, setConjurePreviewFrameVisibility
 
 // Module 11421 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9235 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9230 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import ApplicationUtils from "ApplicationUtils" /* 10862 */;
 import PushNotificationDefault from "PushNotification" /* 11031 */;

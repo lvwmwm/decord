@@ -1,7 +1,7 @@
 // Module ID: 10613
 // Function ID: 10614
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2129, 2125, 2087, 6905, 1085, 1502, 21, 5092, 558, 576, 4818, 587, 5088, 8315, 1126, 10614, 504, 6876, 11, 10172, 6159, 10616, 8491, 1200, 6852, 10617, 5056, 4977, 1112, 6726, 4985, 1629, 8304, 10618, 5379, 6904, 2]
+// Dependencies: [19, 17, 2129, 2125, 2087, 6905, 1085, 1502, 21, 5092, 558, 576, 4818, 587, 5088, 8310, 1126, 10614, 504, 6876, 11, 10172, 6159, 10616, 8486, 1200, 6852, 10617, 5056, 4977, 1112, 6726, 4985, 1629, 8299, 10618, 5379, 6904, 2]
 
 // Module 10613 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -16,8 +16,8 @@ import useToken from "useToken" /* 4818 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
-import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8315 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8310 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
 import BioTextDefault from "BioText" /* 10614 */;
 import useFriendsSinceDate from "useFriendsSinceDate" /* 10616 */;
 import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10618 */;

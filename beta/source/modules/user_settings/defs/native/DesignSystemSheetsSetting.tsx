@@ -1,11 +1,11 @@
 // Module ID: 16179
 // Function ID: 16180
 // Name: DesignSystemSheetsSetting
-// Dependencies: [7993, 1085, 10663, 16180, 2]
+// Dependencies: [7988, 1085, 10663, 16180, 2]
 
 // Module 16179 (DesignSystemSheetsSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

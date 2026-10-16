@@ -1,9 +1,9 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7482
+// Function ID: 7483
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 558, 576, 504, 5949, 1265, 5396, 1894, 7488, 5056, 5635, 1126, 5088, 6286, 7497, 5379, 6840, 6814, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 558, 576, 504, 5949, 1265, 5396, 1894, 7483, 5056, 5635, 1126, 5088, 6286, 7492, 5379, 6840, 6814, 2]
 
-// Module 7487 (StartStageChannelActionSheet)
+// Module 7482 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -271,8 +271,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
                   let obj6 = { onConfirmPress: tmp47, style: tmp4.ageVerificationNotice, channelId: channel.id };
                   cResult[32] = channel.id;
                   cResult[33] = tmp4.ageVerificationNotice;
-                  cResult[34] = closure_13(tmp19(7497), obj6);
-                  const tmp50 = closure_13(tmp19(7497), obj6);
+                  cResult[34] = closure_13(tmp19(7492), obj6);
+                  const tmp50 = closure_13(tmp19(7492), obj6);
                 }
                 let obj7 = { label: tmp39, maxLength, value: first1, placeholder: tmp41, onChange: tmp11, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: tmp21 };
                 const tmp46 = closure_13(tmp(6286).TextInput, obj7);
@@ -641,7 +641,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(7497), obj9);
+  items2[2] = closure_13(tmp12(7492), obj9);
   let tmp16Result = null;
   if (null != obj3) {
     const obj10 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };

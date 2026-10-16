@@ -1,7 +1,7 @@
 // Module ID: 12140
 // Function ID: 12141
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5081, 1085, 21, 1200, 558, 576, 4850, 5378, 4827, 5093, 504, 12105, 12141, 12143, 9270, 2]
+// Dependencies: [32, 19, 5081, 1085, 21, 1200, 558, 576, 4850, 5378, 4827, 5093, 504, 12105, 12141, 12143, 9265, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
 // Module 12140 (EmojiSuggestionBarUtils)

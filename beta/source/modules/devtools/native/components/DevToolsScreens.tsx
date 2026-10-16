@@ -1,16 +1,16 @@
 // Module ID: 15884
 // Function ID: 15885
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 6114, 15885, 15252, 15886, 15889, 11366, 9342, 15891, 15892, 11380, 15893, 15840, 15919, 15555, 15920, 15921, 15925, 15718, 15928, 5044, 15963, 10763, 15966, 8926, 15971, 12600, 15972, 11539, 16056, 9724, 16079, 15647, 16081, 10409, 16083, 11435, 16084, 11826, 16091, 16092, 16094, 15899, 16095, 5038, 16102, 11059, 16103, 16104, 16105, 2]
+// Dependencies: [19, 21, 6114, 15885, 15252, 15886, 15889, 11366, 9337, 15891, 15892, 11380, 15893, 15840, 15919, 15555, 15920, 15921, 15925, 15718, 15928, 5044, 15963, 10763, 15966, 8921, 15971, 12600, 15972, 11539, 16056, 9719, 16079, 15647, 16081, 10409, 16083, 11435, 16084, 11826, 16091, 16092, 16094, 15899, 16095, 5038, 16102, 11059, 16103, 16104, 16105, 2]
 
 // Module 15884 (DevToolsScreens)
 import Fragment from "Fragment" /* 21 */;
 import LinkIcon from "LinkIcon" /* 5038 */;
 import DownloadIcon from "DownloadIcon" /* 5044 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6114 */;
-import TrophyIcon from "TrophyIcon" /* 8926 */;
-import PaperIcon from "PaperIcon" /* 9342 */;
-import PencilIcon from "PencilIcon" /* 9724 */;
+import TrophyIcon from "TrophyIcon" /* 8921 */;
+import PaperIcon from "PaperIcon" /* 9337 */;
+import PencilIcon from "PencilIcon" /* 9719 */;
 import ShieldIcon from "ShieldIcon" /* 10409 */;
 import TimerIcon from "TimerIcon" /* 10763 */;
 import SpeedometerIcon from "SpeedometerIcon" /* 11059 */;

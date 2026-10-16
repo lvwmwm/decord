@@ -1,7 +1,7 @@
 // Module ID: 2012
 // Function ID: 2013
 // Name: MediaEngineStore
-// Dependencies: [32, 5, 2013, 2018, 5016, 2019, 7431, 1244, 502, 14309, 5247, 2065, 5110, 1390, 14310, 1085, 5898, 7483, 1095, 14311, 5117, 3, 1102, 1382, 5137, 12850, 2060, 7500, 14312, 14313, 14314, 11039, 12, 14315, 5242, 14316, 14317, 14318, 14319, 14320, 5289, 1265, 584, 11090, 14321, 14322, 14323, 5228, 14324, 14369, 14370, 14371, 14372, 14373, 14374, 7441, 5086, 4731, 510, 14375, 11075, 6140, 14379, 14380, 1126, 5219, 14381, 14382, 14383, 38, 14060, 5234, 1255, 5221, 504, 14384, 14385, 14386, 14387, 2]
+// Dependencies: [32, 5, 2013, 2018, 5016, 2019, 7426, 1244, 502, 14309, 5247, 2065, 5110, 1390, 14310, 1085, 5898, 7478, 1095, 14311, 5117, 3, 1102, 1382, 5137, 12850, 2060, 7495, 14312, 14313, 14314, 11039, 12, 14315, 5242, 14316, 14317, 14318, 14319, 14320, 5289, 1265, 584, 11090, 14321, 14322, 14323, 5228, 14324, 14369, 14370, 14371, 14372, 14373, 14374, 7436, 5086, 4731, 510, 14375, 11075, 6140, 14379, 14380, 1126, 5219, 14381, 14382, 14383, 38, 14060, 5234, 1255, 5221, 504, 14384, 14385, 14386, 14387, 2]
 
 // Module 2012 (MediaEngineStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -21,7 +21,7 @@ import ExternalPipDefault from "ExternalPip" /* 5221 */;
 import KrispUtilsDefault from "KrispUtils" /* 5234 */;
 import NativeMuteManagerDefault from "NativeMuteManager" /* 5242 */;
 import AVError from "AVError" /* 5289 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7431 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7426 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11039 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11075 */;
 import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 11090 */;
@@ -57,11 +57,11 @@ import UserStore from "UserStore" /* 1390 */;
 import VideoQualityModeStore from "VideoQualityModeStore" /* 14310 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 5898 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import Constants_mod3 from "Constants" /* 5117 */;
 import BaseConnectionEvent_mod from "BaseConnectionEvent" /* 5137 */;
-import NativePermissionUtils_mod from "NativePermissionUtils" /* 7500 */;
+import NativePermissionUtils_mod from "NativePermissionUtils" /* 7495 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -1656,7 +1656,7 @@ let obj4 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 
 const inputDevices = { [DEFAULT_DEVICE_ID]: obj4 };
 let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "color", hardwareId: "hash", containerId: "lineClamp" };
 const outputDevices = { [DEFAULT_DEVICE_ID]: obj5 };
-let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "apply", hardwareId: "hd", containerId: "code" };
+let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "apply", hardwareId: "header", containerId: "code" };
 let closure_87 = { [DEFAULT_DEVICE_ID]: obj6 };
 const timeout = new Timers.Timeout();
 let c89 = false;

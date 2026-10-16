@@ -1,7 +1,7 @@
 // Module ID: 14121
 // Function ID: 14122
 // Name: GuildPicker
-// Dependencies: [19, 21, 14122, 14123, 5056, 8554, 2000, 1126, 2]
+// Dependencies: [19, 21, 14122, 14123, 5056, 8549, 2000, 1126, 2]
 // Exports: default
 
 // Module 14121 (GuildPicker)
@@ -58,7 +58,7 @@ export default function GuildPicker(isGuildIncluded) {
         selectedItem: guildId,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8554, dependencyMap.paths);
+      const tmp2 = asyncRequire(8549, dependencyMap.paths);
       intl = intl2.intl;
       openLazy(tmp2, GuildPicker_str, obj);
     },

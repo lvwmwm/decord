@@ -1,7 +1,7 @@
 // Module ID: 17881
 // Function ID: 17882
 // Name: ActivityShelfItem
-// Dependencies: [19, 1085, 1204, 21, 5092, 587, 4967, 558, 576, 11829, 11735, 6162, 17879, 1898, 7247, 10962, 9065, 17878, 11773, 1200, 17882, 4827, 6185, 17880, 5409, 11834, 1126, 12560, 5088, 2]
+// Dependencies: [19, 1085, 1204, 21, 5092, 587, 4967, 558, 576, 11829, 11735, 6162, 17879, 1898, 7242, 10962, 9060, 17878, 11773, 1200, 17882, 4827, 6185, 17880, 5409, 11834, 1126, 12560, 5088, 2]
 
 // Module 17881 (ActivityShelfItem)
 import react2 from "react" /* 576 */;
@@ -15,8 +15,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import Pressables from "Pressables" /* 6185 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import TestModeUtils from "TestModeUtils" /* 9065 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import TestModeUtils from "TestModeUtils" /* 9060 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
 import useActivityShelfItem from "useActivityShelfItem" /* 11735 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11829 */;

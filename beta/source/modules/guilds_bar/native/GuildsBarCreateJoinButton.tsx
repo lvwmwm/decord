@@ -1,7 +1,7 @@
 // Module ID: 16810
 // Function ID: 16811
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 4939, 1085, 1392, 21, 5092, 9743, 2000, 12433, 6908, 9270, 6879, 558, 576, 16751, 14009, 504, 16766, 1126, 16811, 587, 10610, 2]
+// Dependencies: [5, 19, 17, 4939, 1085, 1392, 21, 5092, 9738, 2000, 12433, 6908, 9265, 6879, 558, 576, 16751, 14009, 504, 16766, 1126, 16811, 587, 10610, 2]
 
 // Module 16810 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
@@ -277,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, items1);
-  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1126).t.l5WIbf), expandedChildren: "guilds-bar-drag-preview", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1126).t.l5WIbf), expandedChildren: null, children: jsx(CirclePlusIcon, obj5) };
   tmp9 = GuildsBarAnimatedItemWrapperDefault;
   intl = tmp2(1126).intl;
   CirclePlusIcon = tmp2(10610).CirclePlusIcon;

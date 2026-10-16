@@ -1,9 +1,9 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7441
+// Function ID: 7442
 // Name: ApplicationStreamPreviewStore
 // Dependencies: [5898, 12, 5900, 504, 584, 2]
 
-// Module 7446 (ApplicationStreamPreviewStore)
+// Module 7441 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

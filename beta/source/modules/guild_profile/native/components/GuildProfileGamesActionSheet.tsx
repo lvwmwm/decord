@@ -1,7 +1,7 @@
 // Module ID: 13018
 // Function ID: 13019
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 558, 576, 8879, 8880, 13013, 6180, 5092, 13017, 8295, 1126, 5056, 8860, 2000, 6840, 6307, 6265, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8874, 8875, 13013, 6180, 5092, 13017, 8290, 1126, 5056, 8855, 2000, 6840, 6307, 6265, 2]
 // Exports: default
 
 // Module 13018 (GuildProfileGamesActionSheet)
@@ -11,8 +11,8 @@ import react2 from "react" /* 576 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -111,7 +111,7 @@ export default function GuildProfileGamesActionSheet(profile) {
   const tmp = closure_7();
   let obj = id(13017);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
-  const obj2 = id(8295);
+  const obj2 = id(8290);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
   const name = profile.name;
   const intl = id(1126).intl;
@@ -122,7 +122,7 @@ export default function GuildProfileGamesActionSheet(profile) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: id };
-    const tmp2 = asyncRequire(8860, dependencyMap.paths);
+    const tmp2 = asyncRequire(8855, dependencyMap.paths);
     openLazy(tmp2, "GuildProfileActionSheet:" + id, obj);
   }, items);
   BottomSheet = id(6840).BottomSheet;

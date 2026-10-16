@@ -1,15 +1,15 @@
 // Module ID: 17031
 // Function ID: 17032
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2065, 4748, 5432, 4750, 1085, 21, 5092, 587, 558, 576, 504, 8479, 11686, 17032, 7179, 9320, 1415, 5088, 5079, 6157, 6185, 17025, 1112, 1126, 17033, 5379, 2]
+// Dependencies: [19, 17, 2065, 4748, 5432, 4750, 1085, 21, 5092, 587, 558, 576, 504, 8474, 11686, 17032, 7174, 9315, 1415, 5088, 5079, 6157, 6185, 17025, 1112, 1126, 17033, 5379, 2]
 
 // Module 17031 (GuildHomeResources)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9320 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9315 */;
 import useResourceChannelsDefault from "useResourceChannels" /* 17025 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17033 */;
 import react from "react" /* 19 */;
@@ -165,9 +165,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
       }
     }
   }
-  const tmpResult8 = tmp(8479);
+  const tmpResult8 = tmp(8474);
   const forumPostMediaProperties = tmpResult8.useForumPostMediaProperties(tmp14, false);
-  const tmpResult9 = tmp(8479);
+  const tmpResult9 = tmp(8474);
   const firstMediaIsEmbed = tmpResult9.useFirstMediaIsEmbed(tmp14, false);
   if (forumPostMediaProperties != null) {
     class F {
@@ -283,10 +283,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
   const obj3 = channelId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => MessageStore.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  const obj5 = channelId(8479);
+  const obj5 = channelId(8474);
   const forumPostMediaProperties = obj5.useForumPostMediaProperties(firstResult, false);
   let length;
-  const obj6 = channelId(8479);
+  const obj6 = channelId(8474);
   const firstMediaIsEmbed = obj6.useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
     length = forumPostMediaProperties.length;
@@ -366,8 +366,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resour
             if (null != first) {
               const obj17 = { channel: stateFromStores, media: first, isEmbed: firstMediaIsEmbed, embedLeftBorderColor: getEmbedColor(firstResult, flag), firstMessageId: id, containerStyle: tmp.thumbnail };
               const ForumPostMediaThumbnail = tmp2(11686).ForumPostMediaThumbnail;
-              getEmbedColor = tmp2(8479).getEmbedColor;
-              channelId(8479);
+              getEmbedColor = tmp2(8474).getEmbedColor;
+              channelId(8474);
               if (flag == null) {
                 flag = false;
               }

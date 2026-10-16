@@ -1,7 +1,7 @@
 // Module ID: 11774
 // Function ID: 11775
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 11775, 558, 576, 4850, 11776, 8972, 1273, 2]
+// Dependencies: [19, 11775, 558, 576, 4850, 11776, 8967, 1273, 2]
 
 // Module 11774 (useViewableAppLauncherHomeItems)
 import react_mod from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 15348
 // Function ID: 15349
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1087, 1102, 1090, 15349, 15350, 1091, 9089, 15351, 2]
+// Dependencies: [5, 32, 19, 1087, 1102, 1090, 15349, 15350, 1091, 9084, 15351, 2]
 // Exports: usePopularOrbShopProducts
 
 // Module 15348 (usePopularOrbShopProducts)

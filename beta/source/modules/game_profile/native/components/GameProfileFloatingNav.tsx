@@ -1,17 +1,17 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 9114
+// Function ID: 9115
 // Name: GameProfileFloatingNav
-// Dependencies: [109, 32, 19, 17, 21, 587, 4850, 5092, 9120, 558, 576, 13006, 5088, 8542, 1631, 13012, 4818, 683, 5093, 8915, 9212, 1126, 8217, 5391, 2]
+// Dependencies: [109, 32, 19, 17, 21, 587, 4850, 5092, 9115, 558, 576, 13006, 5088, 8537, 1631, 13012, 4818, 683, 5093, 8910, 9207, 1126, 8212, 5391, 2]
 
-// Module 9119 (GameProfileFloatingNav)
+// Module 9114 (GameProfileFloatingNav)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
-import native from "native" /* 8542 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9120 */;
+import native from "native" /* 8537 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9115 */;
 import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 13006 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -154,7 +154,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavIte
         }
       }
       const obj6 = { ref: containerRef, style: tmp7, accessibilityRole: "tab", accessibilityLabel: label, accessibilityState: tmp8, onPress, onLayout: tmp5, hitSlop: nativeDefault.space.PX_8, children: items };
-      const PressableScale = tmp(8542).PressableScale;
+      const PressableScale = tmp(8537).PressableScale;
       items = [tmp9, tmp13];
       const tmp19 = authStore(PressableScale, obj6);
       cResult[14] = containerRef;
@@ -420,8 +420,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
             });
           }
         }
-        tmp25[0] = tmp(8915).GameProfileNavTab.OVERVIEW;
-        tmp25[1] = tmp(9212).GameControllerIcon;
+        tmp25[0] = tmp(8910).GameProfileNavTab.OVERVIEW;
+        tmp25[1] = tmp(9207).GameControllerIcon;
         const intl = tmp(1126).intl;
         tmp25[2] = intl.string(tmp(1126).t.qHmbyh);
         cResult[8] = tmp25;
@@ -485,7 +485,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
           }
         }
         tmp26[0] = tmp24;
-        let obj6 = { tab: tmp(8915).GameProfileNavTab.COMMUNITIES, IconComponent: tmp(8217).GroupIcon, label: intl2.string(tmp(1126).t["3xFZEo"]) };
+        let obj6 = { tab: tmp(8910).GameProfileNavTab.COMMUNITIES, IconComponent: tmp(8212).GroupIcon, label: intl2.string(tmp(1126).t["3xFZEo"]) };
         intl2 = tmp(1126).intl;
         tmp26[1] = obj6;
         cResult[9] = tmp26;
@@ -577,7 +577,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
               });
             }
           }
-          const tmp31 = closure_9(tmp(8542).BackgroundBlurFill, {});
+          const tmp31 = closure_9(tmp(8537).BackgroundBlurFill, {});
           cResult[13] = tmp31;
           tmp30 = tmp31;
         } else {
@@ -959,17 +959,17 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   fn.__workletHash = 5966559078959;
   fn.__initData = __initData2;
   if (isGameProfileCommunitiesMobileEnabled) {
-    let obj4 = { tab: tmp4(8915).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(9212).GameControllerIcon, label: intl.string(tmp4(1126).t.qHmbyh) };
+    let obj4 = { tab: tmp4(8910).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(9207).GameControllerIcon, label: intl.string(tmp4(1126).t.qHmbyh) };
     intl = tmp4(1126).intl;
     const items1 = [obj4, ];
-    let obj5 = { tab: tmp4(8915).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(8217).GroupIcon, label: intl2.string(tmp4(1126).t["3xFZEo"]) };
+    let obj5 = { tab: tmp4(8910).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(8212).GroupIcon, label: intl2.string(tmp4(1126).t["3xFZEo"]) };
     intl2 = tmp4(1126).intl;
     items1[1] = obj5;
     let obj6 = { style: tmp3.wrap, pointerEvents: "box-none", onLayout, children: items2 };
     const obj7 = { colors: memo, style: tmp3.scrim, pointerEvents: "none" };
     items2 = [closure_9(tmp(5391), obj7), ];
     const obj8 = { style: tmp3.pill, accessibilityRole: "tablist", children: items3 };
-    const obj9 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_9(selectedTab(8542).BackgroundBlurFill, {}) };
+    const obj9 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_9(selectedTab(8537).BackgroundBlurFill, {}) };
     items3 = [closure_9(closure_7, obj9), ];
     const obj11 = { style: items4, pointerEvents: "none" };
     items4 = [tmp3.selection, tmp12];

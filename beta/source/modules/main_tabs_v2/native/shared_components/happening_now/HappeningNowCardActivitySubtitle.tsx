@@ -1,7 +1,7 @@
 // Module ID: 16515
 // Function ID: 16516
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 2065, 1085, 21, 5092, 558, 576, 504, 5421, 8651, 15590, 1126, 8385, 10253, 2]
+// Dependencies: [19, 17, 2065, 1085, 21, 5092, 558, 576, 504, 5421, 8646, 15590, 1126, 8380, 10253, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
 // Module 16515 (HappeningNowCardActivitySubtitle)
@@ -11,7 +11,7 @@ import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
 import HappeningNowCard from "HappeningNowCard" /* 15590 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -124,7 +124,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
       let tmp29;
       if (null != stateFromStores) {
         const obj2 = { channel: stateFromStores };
-        tmp29 = tmp25(8651)(obj2);
+        tmp29 = tmp25(8646)(obj2);
       }
       cResult[3] = stateFromStores;
       cResult[4] = tmp29;
@@ -168,7 +168,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     const tmp8 = importDefault;
     if (null != stateFromStores1) {
       const obj7 = { channel: stateFromStores1 };
-      const tmp13 = tmp8(8651)(obj7);
+      const tmp13 = tmp8(8646)(obj7);
     }
     tmp10Result = tmp10(tmp11, obj6);
   }

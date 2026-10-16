@@ -1,10 +1,10 @@
-// Module ID: 7888
-// Function ID: 7889
+// Module ID: 7883
+// Function ID: 7884
 // Name: GuildTagConstants
 // Dependencies: [1085, 5011, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7888 (GuildTagConstants)
+// Module 7883 (GuildTagConstants)
 import Constants from "Constants" /* 1085 */;
 import Powerups from "Powerups" /* 5011 */;
 import size from "module_2" /* 2 */;

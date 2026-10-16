@@ -1,9 +1,9 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9728
+// Function ID: 9729
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1085, 1393, 21, 5092, 587, 1265, 558, 576, 4850, 9431, 6852, 6879, 9438, 9732, 1126, 6739, 9456, 9540, 4967, 5391, 9562, 2]
+// Dependencies: [19, 17, 1085, 1393, 21, 5092, 587, 1265, 558, 576, 4850, 9426, 6852, 6879, 9433, 9727, 1126, 6739, 9451, 9535, 4967, 5391, 9557, 2]
 
-// Module 9733 (EmojiPicker)
+// Module 9728 (EmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;

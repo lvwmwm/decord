@@ -1,7 +1,7 @@
 // Module ID: 12919
 // Function ID: 12920
 // Name: PlayStationLinkModal
-// Dependencies: [19, 12920, 21, 558, 576, 12918, 7089, 7729, 1126, 12921, 9216, 12923, 12925, 12927, 12928, 9215, 12917, 6688, 2]
+// Dependencies: [19, 12920, 21, 558, 576, 12918, 7089, 7724, 1126, 12921, 9211, 12923, 12925, 12927, 12928, 9210, 12917, 6688, 2]
 
 // Module 12919 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Navigator2 from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
 import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 12917 */;
 import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 12918 */;
 import PlayStationLinkConstants from "PlayStationLinkConstants" /* 12920 */;
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
 }) : (function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
   const locationStack = platformType.locationStack;
-  const obj = platformType(9215);
+  const obj = platformType(9210);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(platformType, twoWayLinkStyles), items);

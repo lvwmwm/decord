@@ -1,10 +1,10 @@
-// Module ID: 8400
-// Function ID: 8401
+// Module ID: 8395
+// Function ID: 8396
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5092, 1382, 6170, 12, 683, 7787, 6185, 1126, 8401, 8403, 5088, 8405, 8414, 587, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 1382, 6170, 12, 683, 7782, 6185, 1126, 8396, 8398, 5088, 8400, 8409, 587, 2]
 // Exports: default
 
-// Module 8400 (MediaSlider)
+// Module 8395 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -128,7 +128,7 @@ export default function MediaSlider(controls) {
       tmp2.current = false;
     }
   }, items2);
-  let obj = controls(7787);
+  let obj = controls(7782);
   const obj2 = { style: items3, children: items4 };
   items3 = [tmp.container, style];
   const timeFormat = obj.getTimeFormat(tmp3);
@@ -155,9 +155,9 @@ export default function MediaSlider(controls) {
     stringResult = string(t.ZcgDJX);
   }
   if (paused) {
-    PauseIcon = tmp18(8401).PlayIcon;
+    PauseIcon = tmp18(8396).PlayIcon;
   } else {
-    PauseIcon = tmp18(8403).PauseIcon;
+    PauseIcon = tmp18(8398).PauseIcon;
   }
   items4 = [closure_6(PressableOpacity, obj3), , , ];
   const obj4 = { style: items5, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
@@ -166,7 +166,7 @@ export default function MediaSlider(controls) {
   const obj5 = { style: tmp.sliderContainer, children: items7 };
   const obj6 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items6 };
   const obj7 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
-  const tmp11Result = paused(8405);
+  const tmp11Result = paused(8400);
   const obj8 = paused(683)("#FFFFFF");
   alphaResult = obj8.alpha(0);
   const obj10 = paused(683)("#FFFFFF");
@@ -175,15 +175,15 @@ export default function MediaSlider(controls) {
   alphaResult2 = obj12.alpha(0.1);
   items6 = [closure_6(tmp11Result, obj7), ];
   const obj9 = { style: tmp.downloadProgressSlider, value: first, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult3.hex(), minimumTrackTintColor: alphaResult4.hex(), maximumTrackTintColor: tmp7 };
-  const tmp11Result3 = paused(8405);
+  const tmp11Result3 = paused(8400);
   const obj15 = paused(683)("#FFFFFF");
   alphaResult3 = obj15.alpha(0);
   const obj17 = paused(683)("#FFFFFF");
   alphaResult4 = obj17.alpha(0.2);
   items6[1] = closure_6(tmp11Result3, obj9);
   items7 = [c7(c5, obj6), ];
-  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8414), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(587).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
-  const tmp11Result4 = paused(8405);
+  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8409), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(587).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
+  const tmp11Result4 = paused(8400);
   items7[1] = closure_6(tmp11Result4, obj11);
   items4[2] = c7(c5, obj5);
   const obj13 = {
@@ -198,7 +198,7 @@ export default function MediaSlider(controls) {
     children: tmp18Result.getTimeFormat(ref.current)
   };
   const Text = tmp18(5088).Text;
-  tmp18Result = controls(7787);
+  tmp18Result = controls(7782);
   items4[3] = closure_6(Text, obj13);
   return c7(c5, obj2);
 };

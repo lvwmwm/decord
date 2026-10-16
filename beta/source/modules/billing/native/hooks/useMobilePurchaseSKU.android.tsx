@@ -1,7 +1,7 @@
 // Module ID: 10169
 // Function ID: 10170
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7144, 1390, 1085, 7133, 3, 10060, 6170, 1265, 584, 7149, 4784, 2031, 10170, 1279, 2]
+// Dependencies: [5, 19, 7144, 1390, 1085, 7133, 3, 10055, 6170, 1265, 584, 7149, 4784, 2031, 10170, 1279, 2]
 // Exports: default
 
 // Module 10169 (useMobilePurchaseSKU)

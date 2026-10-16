@@ -1,7 +1,7 @@
 // Module ID: 10491
 // Function ID: 10492
 // Name: GiftCodeStore
-// Dependencies: [10056, 1085, 2060, 4702, 5633, 10492, 504, 584, 2]
+// Dependencies: [10051, 1085, 2060, 4702, 5633, 10492, 504, 584, 2]
 
 // Module 10491 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 5633 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10492 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10056 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10051 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

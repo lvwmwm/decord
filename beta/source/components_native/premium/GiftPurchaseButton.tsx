@@ -1,7 +1,7 @@
 // Module ID: 13861
 // Function ID: 13862
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4775, 7132, 21, 558, 576, 5385, 5088, 504, 7127, 12742, 6852, 10099, 5300, 1126, 4769, 10051, 5380, 13862, 2]
+// Dependencies: [5, 19, 17, 4775, 7132, 21, 558, 576, 5385, 5088, 504, 7127, 12742, 6852, 10099, 5300, 1126, 4769, 10046, 5380, 13862, 2]
 
 // Module 13861 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;

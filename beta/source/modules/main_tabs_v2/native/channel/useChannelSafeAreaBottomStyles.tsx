@@ -1,7 +1,7 @@
 // Module ID: 10376
 // Function ID: 10377
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5757, 4751, 2065, 2012, 5110, 1085, 2072, 5092, 587, 558, 576, 10377, 5413, 4987, 1629, 1382, 573, 4818, 9307, 2]
+// Dependencies: [19, 5757, 4751, 2065, 2012, 5110, 1085, 2072, 5092, 587, 558, 576, 10377, 5413, 4987, 1629, 1382, 573, 4818, 9302, 2]
 
 // Module 10376 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import useToken from "useToken" /* 4818 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9307 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9302 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
@@ -349,7 +349,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSa
   let gradientBottom;
   let obj = gradientBottom(4818);
   const token = obj.useToken(nativeDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND);
-  let obj2 = gradientBottom(9307);
+  let obj2 = gradientBottom(9302);
   gradientBottom = obj2.useGradientBottom();
   let backgroundColor1;
   if (gradientBottom != null) {

@@ -1,7 +1,7 @@
 // Module ID: 14942
 // Function ID: 14943
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1085, 21, 6879, 5092, 558, 576, 5088, 14879, 1503, 6680, 1126, 7169, 6852, 9394, 9395, 9519, 14943, 1631, 2]
+// Dependencies: [19, 1085, 21, 6879, 5092, 558, 576, 5088, 14879, 1503, 6680, 1126, 7164, 6852, 9389, 9390, 9514, 14943, 1631, 2]
 
 // Module 14942 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
@@ -10,9 +10,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9519 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
 import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14879 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -159,7 +159,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
   style = style.style;
-  let obj2 = analyticsLocations(7169);
+  let obj2 = analyticsLocations(7164);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
@@ -228,7 +228,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(7169);
+  let obj = analyticsLocations(7164);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

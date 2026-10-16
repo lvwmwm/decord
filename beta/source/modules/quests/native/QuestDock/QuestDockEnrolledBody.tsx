@@ -1,7 +1,7 @@
 // Module ID: 15475
 // Function ID: 15476
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 7391, 15368, 5972, 15370, 21, 5092, 587, 558, 576, 15374, 15371, 8395, 15366, 15403, 5975, 15399, 15398, 15401, 15400, 1631, 7413, 2]
+// Dependencies: [5, 19, 17, 7386, 15368, 5972, 15370, 21, 5092, 587, 558, 576, 15374, 15371, 8390, 15366, 15403, 5975, 15399, 15398, 15401, 15400, 1631, 7408, 2]
 
 // Module 15475 (QuestDockEnrolledBody)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 15399 */;
 import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 15401 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import QuestDockStore from "QuestDockStore" /* 15368 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import QuestDockConstants from "QuestDockConstants" /* 15370 */;
@@ -731,7 +731,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj2 = { style: items2, onLayout: callback, children: tmp5Result };
   items2 = [tmp2.wrapper, { paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) }];
   ({ paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) });
-  const obj4 = minExpandedContentHeight(7413);
+  const obj4 = minExpandedContentHeight(7408);
   const tmp6 = View;
   if (obj4.hasWatchVideoTasks(questDockQuest)) {
     const obj5 = { quest: questDockQuest };

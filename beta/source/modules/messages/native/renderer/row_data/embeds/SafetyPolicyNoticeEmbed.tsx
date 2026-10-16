@@ -1,7 +1,7 @@
 // Module ID: 13552
 // Function ID: 13553
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1085, 7513, 4702, 1126, 7891, 7573, 2]
+// Dependencies: [17, 1085, 7508, 4702, 1126, 7886, 7568, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
 // Module 13552 (SafetyPolicyNoticeEmbed)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7573 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7891 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7568 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

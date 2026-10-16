@@ -1,9 +1,9 @@
-// Module ID: 8833
-// Function ID: 8834
+// Module ID: 8828
+// Function ID: 8829
 // Name: SecureFramesPlatformUtils
-// Dependencies: [2065, 5110, 8830, 1085, 5934, 8834, 2000, 5056, 8844, 1126, 5300, 1200, 6950, 8847, 2]
+// Dependencies: [2065, 5110, 8825, 1085, 5934, 8829, 2000, 5056, 8839, 1126, 5300, 1200, 6950, 8842, 2]
 
-// Module 8833 (SecureFramesPlatformUtils)
+// Module 8828 (SecureFramesPlatformUtils)
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
@@ -13,7 +13,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -28,13 +28,13 @@ let obj = {
   openSecureFramesStreamVerification(streamKey, channelId) {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { streamKey, channelId };
-    obj.openLazy(asyncRequire(8844, dependencyMap.paths), metroRequire, obj2);
+    obj.openLazy(asyncRequire(8839, dependencyMap.paths), metroRequire, obj2);
   },
   openSecureFramesUserVerificationModal(id, id2, fn) {
     if (fn()) {
       const obj2 = { userId: id, channelId: id2 };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(8834, dependencyMap.paths), obj2, metroImportDefault);
+      obj.pushLazy(asyncRequire(8829, dependencyMap.paths), obj2, metroImportDefault);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
@@ -82,7 +82,7 @@ let obj = {
         tmp7(React4.CHANNEL(guildId, channelId));
         const obj = { userId, channelId, guildId, fingerprint };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(8847, dependencyMap.paths), hasOwnProperty, obj);
+        obj3.openLazy(asyncRequire(8842, dependencyMap.paths), hasOwnProperty, obj);
       }
     }
     const obj2 = { title: intl.string(intl3.t["5ICxE6"]), body: intl2.string(intl3.t["v1eXp/"]) };

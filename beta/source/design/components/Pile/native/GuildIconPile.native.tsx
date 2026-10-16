@@ -1,12 +1,12 @@
 // Module ID: 12361
 // Function ID: 12362
 // Name: GuildIconPile
-// Dependencies: [19, 21, 558, 576, 6159, 12362, 11599, 11598, 9017, 2]
+// Dependencies: [19, 21, 558, 576, 6159, 12362, 11599, 11598, 9012, 2]
 
 // Module 12361 (GuildIconPile)
 import react2 from "react" /* 576 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import Pile2 from "Pile" /* 11598 */;
 import ListUtils from "ListUtils" /* 12362 */;
 import react from "react" /* 19 */;

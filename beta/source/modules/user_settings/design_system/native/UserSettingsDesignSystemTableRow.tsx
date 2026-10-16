@@ -1,7 +1,7 @@
 // Module ID: 16147
 // Function ID: 16148
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 4939, 1390, 1085, 21, 558, 576, 6180, 7092, 504, 1631, 5088, 6157, 1415, 6265, 1200, 6896, 6177, 6263, 6262, 6188, 14421, 14418, 14419, 14420, 8582, 5377, 5391, 2]
+// Dependencies: [32, 19, 17, 4939, 1390, 1085, 21, 558, 576, 6180, 7092, 504, 1631, 5088, 6157, 1415, 6265, 1200, 6896, 6177, 6263, 6262, 6188, 14421, 14418, 14419, 14420, 8577, 5377, 5391, 2]
 
 // Module 16147 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
@@ -21,7 +21,7 @@ import TableRadioGroup3 from "TableRadioGroup" /* 6263 */;
 import TableRowGroup5 from "TableRowGroup" /* 6265 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 6896 */;
 import SettingsIcon from "SettingsIcon" /* 7092 */;
-import RowButton3 from "RowButton" /* 8582 */;
+import RowButton3 from "RowButton" /* 8577 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14418 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14419 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 14420 */;

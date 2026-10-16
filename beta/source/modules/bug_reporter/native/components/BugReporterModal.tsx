@@ -1,7 +1,7 @@
 // Module ID: 12627
 // Function ID: 12628
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1390, 12626, 21, 5092, 587, 683, 1102, 5934, 1503, 504, 1126, 6201, 7759, 7758, 4809, 12628, 569, 12629, 7089, 6262, 6157, 1415, 7770, 1645, 6775, 5377, 5088, 6182, 11867, 6185, 1200, 7729, 5379, 6286, 6265, 6180, 5056, 12639, 2000, 6263, 6774, 1371, 12640, 9774, 558, 576, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 12626, 21, 5092, 587, 683, 1102, 5934, 1503, 504, 1126, 6201, 7754, 7753, 4809, 12628, 569, 12629, 7089, 6262, 6157, 1415, 7765, 1645, 6775, 5377, 5088, 6182, 11867, 6185, 1200, 7724, 5379, 6286, 6265, 6180, 5056, 12639, 2000, 6263, 6774, 1371, 12640, 9769, 558, 576, 6688, 2]
 
 // Module 12627 (BugReporterModal)
 import react2 from "react" /* 576 */;
@@ -17,8 +17,8 @@ import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import TableRadioRow2 from "TableRadioRow" /* 6262 */;
 import Navigator from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import UploadDefault from "Upload" /* 7758 */;
-import UploadPlatform from "UploadPlatform" /* 7759 */;
+import UploadDefault from "Upload" /* 7753 */;
+import UploadPlatform from "UploadPlatform" /* 7754 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

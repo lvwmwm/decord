@@ -1,7 +1,7 @@
 // Module ID: 13373
 // Function ID: 13374
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1085, 21, 5092, 587, 558, 576, 13374, 13375, 5088, 1126, 2041, 13376, 6157, 5391, 8130, 4827, 504, 9036, 13263, 6904, 2]
+// Dependencies: [32, 19, 17, 502, 1085, 21, 5092, 587, 558, 576, 13374, 13375, 5088, 1126, 2041, 13376, 6157, 5391, 8125, 4827, 504, 9031, 13263, 6904, 2]
 
 // Module 13373 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
-import GifTagDefault from "GifTag" /* 8130 */;
+import GifTagDefault from "GifTag" /* 8125 */;
 import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 13263 */;
 import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 13374 */;
 import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 13375 */;
@@ -612,7 +612,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8130), obj10);
+      tmp24Result5 = tmp24(tmp14(8125), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -922,7 +922,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(9036).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9031).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1043,7 +1043,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9036).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9031).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
   const tmp6 = disableInteraction(6904);

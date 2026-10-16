@@ -1,7 +1,7 @@
 // Module ID: 11682
 // Function ID: 11683
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1200, 11683, 11684, 11685, 5088, 1497, 1388, 11686, 6977, 8479, 11690, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1200, 11683, 11684, 11685, 5088, 1497, 1388, 11686, 6977, 8474, 11690, 2]
 
 // Module 11682 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8479 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8474 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11683 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11684 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11685 */;
@@ -436,7 +436,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   const arr2 = closure_15(tmp8, tmp11);
   let wideAspectRatioGrid = tmp11;
   if (cResult[4] !== media) {
-    const tmpResult = tmp(8479);
+    const tmpResult = tmp(8474);
     const result = tmpResult.messageContainsGifOrVideo(media);
     cResult[4] = media;
     cResult[5] = result;

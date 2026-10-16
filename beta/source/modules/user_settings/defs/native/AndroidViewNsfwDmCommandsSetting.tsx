@@ -1,7 +1,7 @@
 // Module ID: 15119
 // Function ID: 15120
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [7993, 558, 6917, 576, 5924, 6918, 5909, 1382, 7498, 5918, 2041, 10663, 1126, 2]
+// Dependencies: [7988, 558, 6917, 576, 5924, 6918, 5909, 1382, 7493, 5918, 2041, 10663, 1126, 2]
 
 // Module 15119 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
@@ -12,8 +12,8 @@ import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 591
 import AgeGateUtils from "AgeGateUtils" /* 5924 */;
 import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6917 */;
 import useNSFWAllowed from "useNSFWAllowed" /* 6918 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

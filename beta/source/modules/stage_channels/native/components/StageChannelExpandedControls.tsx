@@ -1,7 +1,7 @@
 // Module ID: 11130
 // Function ID: 11131
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 5897, 502, 2087, 21, 5092, 4967, 587, 558, 576, 10849, 10358, 504, 5895, 8789, 11131, 2]
+// Dependencies: [19, 17, 5897, 502, 2087, 21, 5092, 4967, 587, 558, 576, 10849, 10358, 504, 5895, 8784, 11131, 2]
 
 // Module 11130 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ let importDefault;
 let ColorUtils;
 let obj2;
 let tmp2;
-const useChannelVideoLimitDefault = tmp2(8789);
+const useChannelVideoLimitDefault = tmp2(8784);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult6 = channel(5895);
   const stageHasMedia = tmpResult6.useStageHasMedia(channel.id);
-  const reachedLimit = tmp5(8789)(channel).reachedLimit;
+  const reachedLimit = tmp5(8784)(channel).reachedLimit;
   if (cResult[10] === channel) {
     if (cResult[11] === stateFromStores1) {
       if (cResult[12] === stageHasMedia) {

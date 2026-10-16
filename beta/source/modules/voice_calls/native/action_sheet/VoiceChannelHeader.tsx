@@ -1,7 +1,7 @@
 // Module ID: 13610
 // Function ID: 13611
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2064, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 13611, 13612, 5088, 13613, 504, 11016, 5421, 8683, 1126, 10748, 6796, 13615, 11127, 1200, 10332, 6185, 2]
+// Dependencies: [19, 17, 2064, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 13611, 13612, 5088, 13613, 504, 11016, 5421, 8678, 1126, 10748, 6796, 13615, 11127, 1200, 10332, 6185, 2]
 
 // Module 13610 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1200 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import Pressables from "Pressables" /* 6185 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 6796 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10332 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10748 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11016 */;

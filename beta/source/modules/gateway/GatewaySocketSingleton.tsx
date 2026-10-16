@@ -1,14 +1,14 @@
 // Module ID: 13928
 // Function ID: 13929
 // Name: GatewaySocketSingleton
-// Dependencies: [13929, 502, 3, 13930, 13967, 13970, 6071, 1265, 9704, 1382, 4731, 1481, 584, 2]
+// Dependencies: [13929, 502, 3, 13930, 13967, 13970, 6071, 1265, 9699, 1382, 4731, 1481, 584, 2]
 
 // Module 13928 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DiscordNativeDefault from "DiscordNative" /* 4731 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6071 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9704 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9699 */;
 import GatewaySocketDefault from "GatewaySocket" /* 13930 */;
 import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13967 */;
 import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13970 */;

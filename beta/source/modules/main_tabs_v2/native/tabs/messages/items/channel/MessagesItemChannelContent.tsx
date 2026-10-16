@@ -1,7 +1,7 @@
 // Module ID: 16470
 // Function ID: 16471
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6035, 5967, 21, 5092, 587, 558, 576, 1200, 8325, 6651, 10464, 10334, 5031, 4825, 504, 15612, 4702, 6085, 11, 16471, 5421, 16472, 4818, 10263, 10264, 5088, 8859, 8767, 12588, 9314, 10235, 1126, 16474, 2]
+// Dependencies: [19, 17, 6035, 5967, 21, 5092, 587, 558, 576, 1200, 8320, 6651, 10464, 10334, 5031, 4825, 504, 15612, 4702, 6085, 11, 16471, 5421, 16472, 4818, 10263, 10264, 5088, 8854, 8762, 12588, 9309, 10235, 1126, 16474, 2]
 
 // Module 16470 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -15,8 +15,8 @@ import useChannelNameDefault from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import isChangelogChannelDefault from "isChangelogChannel" /* 6085 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6651 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8325 */;
-import BotTagDefault from "BotTag" /* 8767 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8320 */;
+import BotTagDefault from "BotTag" /* 8762 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 10334 */;
@@ -401,7 +401,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       let tmp22Result = null;
       if (tmp17) {
         const obj9 = { userId: channel.recipients[0], disabledTooltip: true };
-        tmp22Result = tmp22(tmp3(8859), obj9);
+        tmp22Result = tmp22(tmp3(8854), obj9);
       }
       items2[1] = tmp22Result;
       let tmp22Result5 = null;
@@ -476,7 +476,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj19 = { style: contentPadded, children: tmp22Result7 };
       if (tmp12) {
         let str6 = "text-muted";
-        const obj20 = { message: tmp11, channel, color: str7, layout: channel(9314).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
+        const obj20 = { message: tmp11, channel, color: str7, layout: channel(9309).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
         str7 = "text-muted";
         const ChannelRowPreview = tmp(12588).ChannelRowPreview;
         if (!((muted || ignored || blocked) && !channelSelected)) {

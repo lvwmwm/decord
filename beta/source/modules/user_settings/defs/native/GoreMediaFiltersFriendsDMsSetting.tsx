@@ -1,13 +1,13 @@
 // Module ID: 15110
 // Function ID: 15111
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7993, 558, 576, 15104, 8243, 7000, 15105, 1126, 10663, 15107, 2]
+// Dependencies: [7988, 558, 576, 15104, 8238, 7000, 15105, 1126, 10663, 15107, 2]
 
 // Module 15110 (GoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7000 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15104 */;
 import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15105 */;
 import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15107 */;
@@ -16,7 +16,7 @@ import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8243);
+const ExplicitMediaRedactionUtils = tmp(8238);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl4.intl;

@@ -1,7 +1,7 @@
 // Module ID: 17289
 // Function ID: 17290
 // Name: ConjurePlanTypeTags
-// Dependencies: [19, 17, 21, 6947, 8234, 8229, 17290, 9212, 17292, 10409, 11435, 10620, 5092, 587, 558, 576, 5088, 1126, 17283, 2]
+// Dependencies: [19, 17, 21, 6947, 8229, 8224, 17290, 9207, 17292, 10409, 11435, 10620, 5092, 587, 558, 576, 5088, 1126, 17283, 2]
 
 // Module 17289 (ConjurePlanTypeTags)
 import react_native from "react-native" /* 17 */;
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
-import AppsIcon from "AppsIcon" /* 8234 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8224 */;
+import AppsIcon from "AppsIcon" /* 8229 */;
+import GameControllerIcon from "GameControllerIcon" /* 9207 */;
 import ShieldIcon from "ShieldIcon" /* 10409 */;
 import SlashBoxIcon from "SlashBoxIcon" /* 10620 */;
 import RobotIcon from "RobotIcon" /* 11435 */;

@@ -1,16 +1,16 @@
 // Module ID: 14423
 // Function ID: 14424
 // Name: Avatar
-// Dependencies: [19, 17, 1085, 1201, 21, 5092, 587, 13153, 14412, 14413, 9017, 8282, 558, 576, 9016, 14414, 5381, 10912, 10913, 14424, 2]
+// Dependencies: [19, 17, 1085, 1201, 21, 5092, 587, 13153, 14412, 14413, 9012, 8277, 558, 576, 9011, 14414, 5381, 10912, 10913, 14424, 2]
 
 // Module 14423 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import IconDefault from "Icon" /* 5381 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8282 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9016 */;
-import ClipView from "ClipView" /* 9017 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8277 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9011 */;
+import ClipView from "ClipView" /* 9012 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10912 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10913 */;
 import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13153 */;

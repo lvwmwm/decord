@@ -1,13 +1,13 @@
 // Module ID: 18157
 // Function ID: 18158
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7180, 2065, 5073, 5072, 5077, 18158, 8497, 7029, 13530, 18165, 18168, 11748, 6808, 18171, 2]
+// Dependencies: [5, 7175, 2065, 5073, 5072, 5077, 18158, 8492, 7029, 13530, 18165, 18168, 11748, 6808, 18171, 2]
 
 // Module 18157 (MessageCodedLinkManager)
 import findCodedLinksDefault from "findCodedLinks" /* 5072 */;
 import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7180 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7175 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import InviteStore from "InviteStore" /* 5073 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

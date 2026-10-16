@@ -1,14 +1,14 @@
 // Module ID: 10825
 // Function ID: 10826
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6036, 2065, 10354, 10355, 10826, 1085, 21, 558, 576, 10358, 10827, 4976, 10830, 10967, 10361, 10968, 4850, 4985, 11192, 504, 1497, 10828, 11193, 6852, 6879, 11337, 7482, 6335, 10360, 2]
+// Dependencies: [32, 19, 6036, 2065, 10354, 10355, 10826, 1085, 21, 558, 576, 10358, 10827, 4976, 10830, 10967, 10361, 10968, 4850, 4985, 11192, 504, 1497, 10828, 11193, 6852, 6879, 11337, 7477, 6335, 10360, 2]
 
 // Module 10825 (ChannelCallModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1085 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
 import VoiceChatHooks from "VoiceChatHooks" /* 10358 */;
 import RevealProvider from "RevealProvider" /* 10827 */;

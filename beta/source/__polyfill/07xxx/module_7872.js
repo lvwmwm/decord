@@ -1,81 +1,56 @@
 // Module ID: 7872
 // Function ID: 7873
-// Dependencies: [7833, 7848, 7849, 7828]
+// Dependencies: [7840]
 
 // Module 7872
-import _mod7828 from "module_7828" /* 7828 */;
-import _modDef7833 from "module_7833" /* 7833 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 7848 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 7849 */;
+import _modDef7840 from "module_7840" /* 7840 */;
 
-const MODEL_ID = { K3_III: 78420 };
-let obj2 = { CAMERA_ORIENTATION: 1, ROLL_ANGLE: 3, PITCH_ANGLE: 5 };
-
-export default {
-  read(byteLength, arg1, arg2, arg3) {
-    let str6;
-    const obj = _modDef7833;
-    const byteOrder = obj.getByteOrder(byteLength, arg1 + arg2 + 8);
-    const sum = arg1 + arg2;
-    obj2 = get0thIfdOffset;
-    const ifd = obj2.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_PENTAX, sum, sum + 10, byteOrder, arg3, true);
-    let LevelInfo = ifd.PentaxModelID;
-    if (LevelInfo) {
-      LevelInfo = ifd.PentaxModelID.value === obj.K3_III;
+let obj = {
+  read(getUint8, sum) {
+    let obj4;
+    let obj5;
+    let str2;
+    let sum5;
+    const obj = _modDef7840;
+    const byteAt = obj.getByteAt(getUint8, sum);
+    let num = 0;
+    if (16 & byteAt) {
+      num = 1;
     }
-    if (LevelInfo) {
-      LevelInfo = ifd.LevelInfo;
+    let str = "No";
+    const obj2 = { value: num, description: str2 };
+    str2 = "No";
+    if (16 & byteAt) {
+      str2 = "Yes";
     }
-    let tmp8 = ifd;
-    if (LevelInfo) {
-      const sum1 = sum + ifd.LevelInfo.__offset;
-      const obj3 = {};
-      const objectAssign = tmp5(7828).objectAssign;
-      _mod7828;
-      if (sum1 + 7 <= byteLength.byteLength) {
-        const int8 = byteLength.getInt8(sum1 + obj2.CAMERA_ORIENTATION);
-        const obj4 = { value: int8, description: str6 };
-        str6 = "Horizontal (normal)";
-        if (0 !== int8) {
-          let str = "Rotate 270 CW";
-          if (1 !== int8) {
-            let str2 = "Rotate 180";
-            if (2 !== int8) {
-              let str3 = "Rotate 90 CW";
-              if (3 !== int8) {
-                let str4 = "Upwards";
-                if (4 !== int8) {
-                  let str5 = "Unknown";
-                  if (5 === int8) {
-                    str5 = "Downwards";
-                  }
-                  str4 = str5;
-                }
-                str3 = str4;
-              }
-              str2 = str3;
-            }
-            str = str2;
-          }
-          str6 = str;
-        }
-        obj3.CameraOrientation = obj4;
-        const sum2 = sum1 + tmp16.ROLL_ANGLE;
-        const int16 = byteLength.getInt16(sum2, byteOrder === tmp(7833).LITTLE_ENDIAN);
-        const obj5 = { value: int16, description: "" + -0.5 * int16 };
-        obj3.RollAngle = obj5;
-        const sum3 = sum1 + tmp16.PITCH_ANGLE;
-        const int161 = byteLength.getInt16(sum3, byteOrder === tmp(7833).LITTLE_ENDIAN);
-        const obj6 = { value: int161, description: "" + -0.5 * int161 };
-        obj3.PitchAngle = obj6;
-      }
-      const objectAssignResult = objectAssign({}, ifd, obj3);
-      delete tmp15["LevelInfo"];
-      tmp8 = objectAssignResult;
+    let num2 = 0;
+    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
+    if (2 & byteAt) {
+      num2 = 1;
     }
-    return tmp8;
-  },
-  PENTAX_IFD_OFFSET: 10,
-  MODEL_ID,
-  LIK3III: obj2
+    obj4 = { value: num2, description: str };
+    if (2 & byteAt) {
+      str = "Yes";
+    }
+    sum = sum + c2;
+    const tmpResult = _modDef7840;
+    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
+    const tmpResult6 = _modDef7840;
+    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
+    const tmpResult7 = _modDef7840;
+    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
+    const sum3 = sum + c3;
+    obj5 = { value: sum2, description: `${tmp9}px` };
+    const tmpResult8 = _modDef7840;
+    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
+    const tmpResult9 = _modDef7840;
+    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
+    const tmpResult10 = _modDef7840;
+    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
+    return obj3;
+  }
 };
+let c2 = 4;
+let c3 = 7;
+
+export default obj;

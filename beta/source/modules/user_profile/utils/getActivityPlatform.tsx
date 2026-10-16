@@ -1,13 +1,13 @@
 // Module ID: 13141
 // Function ID: 13142
 // Name: getActivityPlatform
-// Dependencies: [1085, 13140, 10253, 5763, 8463, 13125, 13126, 13142, 13143, 2]
+// Dependencies: [1085, 13140, 10253, 5763, 8458, 13125, 13126, 13142, 13143, 2]
 // Exports: default
 
 // Module 13141 (getActivityPlatform)
 import Constants from "Constants" /* 1085 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8463 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8458 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10253 */;
 import isOnXboxDefault from "isOnXbox" /* 13125 */;
 import isOnPlayStationDefault from "isOnPlayStation" /* 13126 */;

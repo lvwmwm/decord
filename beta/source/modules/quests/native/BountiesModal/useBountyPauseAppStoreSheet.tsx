@@ -1,14 +1,14 @@
 // Module ID: 15300
 // Function ID: 15301
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5972, 1085, 9182, 558, 576, 9202, 15298, 1121, 5977, 7416, 9204, 7407, 5979, 12961, 15295, 2]
+// Dependencies: [19, 5972, 1085, 9177, 558, 576, 9197, 15298, 1121, 5977, 7411, 9199, 7402, 5979, 12961, 15295, 2]
 
 // Module 15300 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 12961 */;
 import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15298 */;
@@ -370,7 +370,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9182).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9177).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

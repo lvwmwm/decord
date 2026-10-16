@@ -1,7 +1,7 @@
 // Module ID: 12067
 // Function ID: 12068
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 1382, 558, 576, 1388, 10220, 6185, 1126, 12068, 10610, 5088, 4828, 8626, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 1382, 558, 576, 1388, 10220, 6185, 1126, 12068, 10610, 5088, 4828, 8621, 2]
 
 // Module 12067 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
@@ -141,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
             }
-            const tmp26 = jsx(tags(8626), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(8621), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;

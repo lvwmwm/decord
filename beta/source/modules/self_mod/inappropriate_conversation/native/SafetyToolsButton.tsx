@@ -1,7 +1,7 @@
 // Module ID: 12870
 // Function ID: 12871
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 10427, 10429, 1126, 10395, 5396, 10396, 10424, 9444, 12846, 10410, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 10427, 10429, 1126, 10395, 5396, 10396, 10424, 9439, 12846, 10410, 2]
 
 // Module 12870 (SafetyToolsButton)
 import react_native from "react-native" /* 17 */;

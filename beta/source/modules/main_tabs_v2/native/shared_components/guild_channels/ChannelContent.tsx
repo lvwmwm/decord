@@ -1,7 +1,7 @@
 // Module ID: 17408
 // Function ID: 17409
 // Name: ChannelContent
-// Dependencies: [19, 17, 11760, 5967, 21, 5092, 1382, 558, 576, 11761, 6796, 17409, 8223, 7572, 16567, 5088, 2]
+// Dependencies: [19, 17, 11760, 5967, 21, 5092, 1382, 558, 576, 11761, 6796, 17409, 8218, 7567, 16567, 5088, 2]
 // Exports: renderChannelContent
 
 // Module 17408 (ChannelContent)
@@ -364,13 +364,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
                   let tmp33 = tmp7;
                   if (tmp33) {
                     const obj18 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                    tmp33 = metroRequire(tmp(8223).LockIcon, obj18);
+                    tmp33 = metroRequire(tmp(8218).LockIcon, obj18);
                   }
                   items7 = [tmp33, , ];
                   let tmp35 = tmp11;
                   if (tmp35) {
                     const obj19 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                    tmp35 = metroRequire(tmp(7572).WarningIcon, obj19);
+                    tmp35 = metroRequire(tmp(7567).WarningIcon, obj19);
                   }
                   items7[1] = tmp35;
                   let tmp37 = isSubscriptionGated;
@@ -497,12 +497,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     items2[1] = obj8;
     if (tmp10Result) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp10Result = tmp10(tmp2(8223).LockIcon, obj9);
+      tmp10Result = tmp10(tmp2(8218).LockIcon, obj9);
     }
     items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = tmp10(tmp2(7572).WarningIcon, obj10);
+      isNSFWResult = tmp10(tmp2(7567).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {

@@ -1,7 +1,7 @@
 // Module ID: 14838
 // Function ID: 14839
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8317, 10578, 6905, 1085, 1095, 14839, 21, 6679, 14840, 558, 576, 4769, 6852, 6879, 8291, 14841, 1126, 14854, 8368, 14856, 8287, 6305, 4850, 6665, 587, 10525, 14857, 10090, 11459, 8311, 10513, 11641, 8294, 8369, 10572, 504, 8322, 13387, 14860, 8354, 8365, 14861, 14862, 5088, 4827, 10531, 14863, 10514, 10532, 14868, 8289, 14869, 14875, 14881, 8292, 14885, 14886, 14890, 14894, 14899, 14900, 14906, 14907, 14941, 14942, 2]
+// Dependencies: [19, 17, 8312, 10578, 6905, 1085, 1095, 14839, 21, 6679, 14840, 558, 576, 4769, 6852, 6879, 8286, 14841, 1126, 14854, 8363, 14856, 8282, 6305, 4850, 6665, 587, 10525, 14857, 10090, 11459, 8306, 10513, 11641, 8289, 8364, 10572, 504, 8317, 13387, 14860, 8349, 8360, 14861, 14862, 5088, 4827, 10531, 14863, 10514, 10532, 14868, 8284, 14869, 14875, 14881, 8287, 14885, 14886, 14890, 14894, 14899, 14900, 14906, 14907, 14941, 14942, 2]
 
 // Module 14838 (UserProfileEditForm)
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6679 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import Constants2 from "Constants" /* 6905 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8291 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8286 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
 import PendingBadgeSettings from "PendingBadgeSettings" /* 13387 */;
 import UserProfileEditConstants from "UserProfileEditConstants" /* 14839 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14840 */;
@@ -22,7 +22,7 @@ import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionShee
 import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14854 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10578 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -543,9 +543,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   maxLength = undefined;
   let tmp = sharedValue;
   const tmp2 = dependencyMap;
-  let tmp3 = sharedValue(8368)();
+  let tmp3 = sharedValue(8363)();
   const tmp4 = sharedValue(14856)();
-  obj = str(8287);
+  obj = str(8282);
   const bioMaxLength = obj.useBioMaxLength({ location: "user_profile_edit_form" });
   let obj2 = pendingBadgeDisplayOrder;
   const tmp7 = sharedValue(6305)();
@@ -577,7 +577,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   const obj9 = str(11459);
   const guildAutomodProfileQuarantineErrors = obj9.useGuildAutomodProfileQuarantineErrors();
   let str2 = str.id;
-  const tmp17 = sharedValue(8311);
+  const tmp17 = sharedValue(8306);
   if (str2 == null) {
     str2 = "";
   }
@@ -587,9 +587,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   const tmp5Result8 = str(11641);
   const entryPoint = tmp5Result8.useCustomTypingIndicatorConfig("UserProfileEditForm").entryPoint;
   const obj10 = { userId: str.id, image: pendingAvatar };
-  const tmp5Result9 = str(8294);
+  const tmp5Result9 = str(8289);
   const pendingAvatarSrc = tmp5Result9.getPendingAvatarSrc(obj10);
-  const tmp20 = tmp(8369)(tmp17Result, pendingLegacyUsernameDisabled);
+  const tmp20 = tmp(8364)(tmp17Result, pendingLegacyUsernameDisabled);
   closure_5 = tmp20;
   const tmp5Result10 = str(10572);
   isBadgeManagementEnabled = tmp5Result10.useIsBadgeManagementEnabled({ location: "UserProfileEditForm" });
@@ -661,13 +661,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   }
   const obj11 = { user: str, displayProfile: tmp17Result, pendingThemeColors: tmp32, isPreview: isTryItOut };
   tmp32 = pendingThemeColors;
-  const tmpResult11 = tmp(8354);
+  const tmpResult11 = tmp(8349);
   if (isTryItOut) {
     tmp32 = tryItOutThemeColors;
   }
   ({ theme, primaryColor, secondaryColor } = tmpResult11(obj11));
   tmpResult11(obj11);
-  const tmp5Result14 = str(8365);
+  const tmp5Result14 = str(8360);
   const userProfileColors = tmp5Result14.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientFallbackBackground, gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
@@ -874,7 +874,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   const obj31 = { user: str, onProfileThemeColorsChanged: fn, pendingAvatarSrc, pendingThemeColors, isTryItOut };
   const tmpResult18 = tmp(14881);
   if (isTryItOut) {
-    fn = tmp5(8292).setTryItOutThemeColors;
+    fn = tmp5(8287).setTryItOutThemeColors;
   } else {
     fn = (themeColors) => {
       obj = str(ref[52]);

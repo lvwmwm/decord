@@ -1,12 +1,12 @@
 // Module ID: 15113
 // Function ID: 15114
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [7993, 558, 576, 11464, 10389, 10391, 10663, 1126, 10390, 15114, 2]
+// Dependencies: [7988, 558, 576, 11464, 10389, 10391, 10663, 1126, 10390, 15114, 2]
 
 // Module 15113 (DirectMessageSafetyAlertsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10389 */;
 import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10390 */;
 import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10391 */;

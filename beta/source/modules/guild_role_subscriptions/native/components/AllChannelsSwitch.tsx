@@ -1,7 +1,7 @@
 // Module ID: 18583
 // Function ID: 18584
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 15521, 1085, 21, 5092, 587, 5906, 558, 576, 4832, 1200, 8674, 1126, 18584, 18585, 2]
+// Dependencies: [19, 17, 15521, 1085, 21, 5092, 587, 5906, 558, 576, 4832, 1200, 8669, 1126, 18584, 18585, 2]
 
 // Module 18583 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import react_native2 from "react-native" /* 4832 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15521 */;
 import AssetRegistryDefault from "AssetRegistry" /* 18584 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 18585 */;

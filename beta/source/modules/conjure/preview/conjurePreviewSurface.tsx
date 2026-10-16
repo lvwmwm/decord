@@ -1,11 +1,11 @@
 // Module ID: 11423
 // Function ID: 11424
 // Name: conjurePreviewSurface
-// Dependencies: [10807, 10802, 8611, 11424, 2]
+// Dependencies: [10807, 10802, 8606, 11424, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewSurface
 
 // Module 11423 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11424 */;
 import FramesStore from "FramesStore" /* 10807 */;
 import FramesConstants from "FramesConstants" /* 10802 */;

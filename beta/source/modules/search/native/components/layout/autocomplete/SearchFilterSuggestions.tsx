@@ -1,7 +1,7 @@
 // Module ID: 17373
 // Function ID: 17374
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 109, 19, 17, 9312, 21, 5092, 587, 558, 576, 17374, 5088, 6180, 4850, 5378, 5382, 4827, 17368, 17377, 12036, 2]
+// Dependencies: [32, 109, 19, 17, 9307, 21, 5092, 587, 558, 576, 17374, 5088, 6180, 4850, 5378, 5382, 4827, 17368, 17377, 12036, 2]
 
 // Module 17373 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
-import TrackingConstants from "TrackingConstants" /* 9312 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
 import SearchFilterUtils from "SearchFilterUtils" /* 17374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

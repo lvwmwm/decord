@@ -1,7 +1,7 @@
 // Module ID: 10501
 // Function ID: 10502
 // Name: GiftCodeRedeemStart
-// Dependencies: [32, 19, 17, 10491, 1390, 6088, 1085, 21, 5633, 6931, 1126, 5745, 1993, 5092, 587, 558, 576, 1503, 504, 4962, 10502, 10503, 6858, 10507, 7276, 8296, 6855, 10508, 6852, 6879, 1265, 10157, 7048, 5088, 10509, 6862, 9001, 1200, 10511, 10627, 10628, 10629, 5379, 10500, 5934, 8950, 10494, 6157, 10633, 10634, 6814, 2]
+// Dependencies: [32, 19, 17, 10491, 1390, 6088, 1085, 21, 5633, 6931, 1126, 5745, 1993, 5092, 587, 558, 576, 1503, 504, 4962, 10502, 10503, 6858, 10507, 7271, 8291, 6855, 10508, 6852, 6879, 1265, 10157, 7048, 5088, 10509, 6862, 8996, 1200, 10511, 10627, 10628, 10629, 5379, 10500, 5934, 8945, 10494, 6157, 10633, 10634, 6814, 2]
 
 // Module 10501 (GiftCodeRedeemStart)
 import nativeDefault from "native" /* 587 */;
@@ -17,8 +17,8 @@ import merged5 from "merged5" /* 5745 */;
 import GameIcon from "GameIcon" /* 6862 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 7048 */;
-import ExperimentalGameControllerLinkIcon2 from "ExperimentalGameControllerLinkIcon" /* 8950 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9001 */;
+import ExperimentalGameControllerLinkIcon2 from "ExperimentalGameControllerLinkIcon" /* 8945 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 8996 */;
 import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 10494 */;
 import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 10500 */;
 import SlayerStorefrontGiftPreviewDefault from "SlayerStorefrontGiftPreview" /* 10509 */;

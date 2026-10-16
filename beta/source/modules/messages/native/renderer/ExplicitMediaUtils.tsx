@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 8264
+// Module ID: 8258
+// Function ID: 8259
 // Name: ExplicitMediaUtils
 // Dependencies: [1085, 1403, 6990, 6996, 5909, 1126, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8263 (ExplicitMediaUtils)
+// Module 8258 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import FlagUtils from "FlagUtils" /* 1403 */;

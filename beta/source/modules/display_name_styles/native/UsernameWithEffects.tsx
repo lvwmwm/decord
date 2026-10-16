@@ -1,7 +1,7 @@
 // Module ID: 10263
 // Function ID: 10264
 // Name: UsernameWithEffects
-// Dependencies: [109, 19, 17, 1408, 21, 1409, 5092, 587, 1383, 558, 576, 10264, 5628, 5629, 8854, 4818, 10265, 1407, 5088, 5098, 4821, 10268, 1388, 2]
+// Dependencies: [109, 19, 17, 1408, 21, 1409, 5092, 587, 1383, 558, 576, 10264, 5628, 5629, 8849, 4818, 10265, 1407, 5088, 5098, 4821, 10268, 1388, 2]
 
 // Module 10263 (UsernameWithEffects)
 import react2 from "react" /* 576 */;
@@ -15,7 +15,7 @@ import getNodeText from "getNodeText" /* 4821 */;
 import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5098 */;
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5628 */;
 import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5629 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8854 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8849 */;
 import types from "types" /* 10264 */;
 import useDisplayNameStylesAccessibleColors from "useDisplayNameStylesAccessibleColors" /* 10265 */;
 import PerLetterEffectDefault from "PerLetterEffect" /* 10268 */;
@@ -760,7 +760,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp7 = num2(5628)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
   let obj = userName(5629);
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  const obj2 = userName(8854);
+  const obj2 = userName(8849);
   const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp7, ignoreDisabledStylesSetting });
   let tmp11;
   if (null != displayNameStylesFont) {

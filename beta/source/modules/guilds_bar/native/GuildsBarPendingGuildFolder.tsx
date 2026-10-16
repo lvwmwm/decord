@@ -253,7 +253,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj5 = { folderId: id, totalItems: childNodes.length };
     tmp8Result = tmp8(tmp(16750).GuildsBarGuildFolderBG, obj5);
   }
-  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1126).t["scsU+l"])} sharedId={sharedValue} cutouts="IconComponent" overState="a" preventClipping={4} config={memo1} externalChildren={tmp8Result}>{"properties"}</tmp9>;
+  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1126).t["scsU+l"])} sharedId={sharedValue} cutouts="IconComponent" overState="a" preventClipping="film" config={memo1} externalChildren={tmp8Result}>{"klaptr\u00E6"}</tmp9>;
 }));
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

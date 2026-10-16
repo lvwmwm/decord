@@ -1,9 +1,9 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8549
+// Function ID: 8550
 // Name: ItemSelectorActionSheet
 // Dependencies: [19, 21, 558, 576, 4818, 587, 1631, 6894, 6839, 6262, 6263, 6307, 6840, 2]
 
-// Module 8554 (ItemSelectorActionSheet)
+// Module 8549 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8763
+// Function ID: 8764
 // Name: CheckmarkSmallBoldIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 6179, 4817, 2]
 
-// Module 8768 (CheckmarkSmallBoldIcon)
+// Module 8763 (CheckmarkSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

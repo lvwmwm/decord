@@ -1,20 +1,20 @@
-// Module ID: 9369
-// Function ID: 9370
+// Module ID: 9364
+// Function ID: 9365
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7314, 7316, 1085, 21, 5092, 587, 558, 576, 1503, 504, 9338, 9356, 9341, 5088, 1126, 5391, 9370, 9371, 9373, 6243, 6182, 2]
+// Dependencies: [19, 17, 7309, 7311, 1085, 21, 5092, 587, 558, 576, 1503, 504, 9333, 9351, 9336, 5088, 1126, 5391, 9365, 9366, 9368, 6243, 6182, 2]
 
-// Module 9369 (ConversationListItem)
+// Module 9364 (ConversationListItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ConversationConstants from "ConversationConstants" /* 7316 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9338 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9341 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9356 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9371 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9373 */;
+import ConversationConstants from "ConversationConstants" /* 7311 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9333 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9336 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9351 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9366 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9368 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7314 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7309 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -216,7 +216,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(9370), {});
+                          mapped = closure_8(navigation(9365), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {

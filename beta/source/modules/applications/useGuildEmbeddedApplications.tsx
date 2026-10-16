@@ -1,9 +1,9 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8605
+// Function ID: 8606
 // Name: useGuildEmbeddedApplications
 // Dependencies: [5, 19, 5440, 1085, 504, 1102, 1388, 6853, 558, 576, 2]
 
-// Module 8610 (useGuildEmbeddedApplications)
+// Module 8605 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;

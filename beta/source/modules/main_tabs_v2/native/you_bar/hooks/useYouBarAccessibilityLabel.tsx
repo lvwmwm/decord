@@ -1,7 +1,7 @@
 // Module ID: 16828
 // Function ID: 16829
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 558, 576, 4962, 2041, 10239, 8290, 10237, 10238, 10245, 1126, 10250, 504, 2]
+// Dependencies: [5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 558, 576, 4962, 2041, 10239, 8285, 10237, 10238, 10245, 1126, 10250, 504, 2]
 
 // Module 16828 (useYouBarAccessibilityLabel)
 import UserUtils from "UserUtils" /* 4962 */;

@@ -1,7 +1,7 @@
 // Module ID: 12628
 // Function ID: 12629
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1279, 7769, 1255, 2]
+// Dependencies: [5, 3, 1279, 7764, 1255, 2]
 // Exports: getAttachments
 
 // Module 12628 (BugReportUtils)

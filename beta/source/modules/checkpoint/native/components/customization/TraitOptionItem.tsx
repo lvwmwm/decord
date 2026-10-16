@@ -1,7 +1,7 @@
 // Module ID: 16045
 // Function ID: 16046
 // Name: TraitOptionItem
-// Dependencies: [17, 5437, 21, 587, 5092, 558, 576, 5438, 9036, 5391, 6243, 16009, 7577, 6157, 4832, 2]
+// Dependencies: [17, 5437, 21, 587, 5092, 558, 576, 5438, 9031, 5391, 6243, 16009, 7572, 6157, 4832, 2]
 
 // Module 16045 (TraitOptionItem)
 import react from "react" /* 576 */;
@@ -11,7 +11,7 @@ import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import _modDef6243 from "module_6243" /* 6243 */;
-import inlineStylesDefault from "inlineStyles" /* 7577 */;
+import inlineStylesDefault from "inlineStyles" /* 7572 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
 import react_native2 from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
@@ -32,8 +32,8 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const inlineStyles = tmp(7577);
-const NitroWheelIcon = tmp(9036);
+const inlineStyles = tmp(7572);
+const NitroWheelIcon = tmp(9031);
 ({ Pressable: c3, View: closure_4 } = react_native2);
 ({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_NITRO_GRADIENT_COLORS: metroRequire, CHECKPOINT_PRIMARY: metroImportDefault, CHECKPOINT_RARITY_COLORS: metroImportAll, TRAIT_OPTION_HEIGHT } = CheckpointConstants);
 const TRAIT_OPTION_WIDTH = CheckpointConstants.TRAIT_OPTION_WIDTH;
@@ -267,9 +267,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     let tmp6 = !isNoneOption;
     if (tmp6) {
       const obj2 = { children: authStore2(LinearGradient, obj3) };
-      const Defs = tmp(7577).Defs;
+      const Defs = tmp(7572).Defs;
       obj3 = { id: checkpointTraitGradient, x1: "0", y1: "1", x2: "0", y2: "0", children: items };
-      LinearGradient = tmp(7577).LinearGradient;
+      LinearGradient = tmp(7572).LinearGradient;
       const obj4 = { offset: "0", stopColor: hasOwnProperty, stopOpacity };
       items = [unpackModuleId(inlineStyles.Stop, obj4), ];
       const obj5 = { offset: "1", stopColor: hasOwnProperty, stopOpacity };
@@ -297,7 +297,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
       let tmp17 = !isNoneOption;
       if (tmp17) {
         const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-        const Polygon2 = tmp(7577).Polygon;
+        const Polygon2 = tmp(7572).Polygon;
         const _HermesInternal = HermesInternal;
         tmp17 = unpackModuleId(Polygon2, obj6);
       }
@@ -329,7 +329,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     tmp21 = tmp26;
   }
   const obj7 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: tmp13, strokeWidth: num3 };
-  const Polygon = tmp(7577).Polygon;
+  const Polygon = tmp(7572).Polygon;
   const tmp15 = unpackModuleId(Polygon, obj7);
   cResult[2] = tmp13;
   cResult[3] = num3;
@@ -370,7 +370,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   let tmp12Result = !isNoneOption;
   if (tmp12Result) {
     const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp13(7577).Polygon;
+    const Polygon2 = tmp13(7572).Polygon;
     const _HermesInternal = HermesInternal;
     tmp12Result = tmp12(Polygon2, obj6);
   }

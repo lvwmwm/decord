@@ -1,15 +1,15 @@
 // Module ID: 17564
 // Function ID: 17565
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 2065, 9630, 1085, 17392, 21, 9345, 558, 576, 573, 6972, 12159, 1126, 9298, 12542, 1265, 9697, 17565, 6688, 4977, 6207, 1631, 17622, 1382, 17623, 17624, 9356, 9357, 17625, 17626, 17627, 17474, 2]
+// Dependencies: [32, 19, 17, 2065, 9625, 1085, 17392, 21, 9340, 558, 576, 573, 6972, 12159, 1126, 9293, 12542, 1265, 9692, 17565, 6688, 4977, 6207, 1631, 17622, 1382, 17623, 17624, 9351, 9352, 17625, 17626, 17627, 17474, 2]
 
 // Module 17564 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9630 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9625 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 12159 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12542 */;
 import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17392 */;
@@ -18,7 +18,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,7 +119,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
     }
     if (cResult[3] !== tmp5) {
       const obj3 = { accessibilityLabel: tmp8, onPress: tmp5, source: AssetRegistryDefault };
-      const HeaderIconButton = tmp(9298).HeaderIconButton;
+      const HeaderIconButton = tmp(9293).HeaderIconButton;
       const tmp13 = closure_10(HeaderIconButton, obj3);
       cResult[3] = tmp5;
       cResult[4] = tmp13;
@@ -139,7 +139,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
   let tmp5 = null;
   if (canStartThread) {
     const obj2 = { accessibilityLabel: intl.string(channel(1126).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(9298).HeaderIconButton;
+    const HeaderIconButton = tmp(9293).HeaderIconButton;
     intl = tmp(1126).intl;
     tmp5 = closure_10(HeaderIconButton, obj2);
   }

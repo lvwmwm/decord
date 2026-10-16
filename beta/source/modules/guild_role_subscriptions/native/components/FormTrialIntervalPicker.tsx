@@ -1,7 +1,7 @@
 // Module ID: 18568
 // Function ID: 18569
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 14123, 1126, 15524, 5056, 8554, 2000, 2]
+// Dependencies: [19, 21, 14123, 1126, 15524, 5056, 8549, 2000, 2]
 // Exports: default
 
 // Module 18568 (FormTrialIntervalPicker)
@@ -54,7 +54,7 @@ export default function FormTrialIntervalPicker(interval) {
         selectedItem: tmp4,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8554, dependencyMap.paths);
+      const tmp2 = asyncRequire(8549, dependencyMap.paths);
       intl = intl2.intl;
       tmp4 = interval;
       const tmp3 = GuildRoleSubscriptionTrialIntervalSelect;

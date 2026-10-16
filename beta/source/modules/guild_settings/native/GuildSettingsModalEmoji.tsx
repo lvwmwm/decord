@@ -1,7 +1,7 @@
 // Module ID: 18358
 // Function ID: 18359
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 2087, 18359, 21, 12, 9547, 5092, 587, 1126, 5992, 8025, 558, 576, 504, 8573, 5088, 18361, 18365, 1200, 18366, 6154, 6728, 1503, 6201, 2]
+// Dependencies: [32, 19, 17, 2087, 18359, 21, 12, 9542, 5092, 587, 1126, 5992, 8020, 558, 576, 504, 8568, 5088, 18361, 18365, 1200, 18366, 6154, 6728, 1503, 6201, 2]
 // Exports: computeSectionItem
 
 // Module 18358 (GuildSettingsModalEmoji)
@@ -10,7 +10,7 @@ import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5992 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9547 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9542 */;
 import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 18361 */;
 import HeaderRow from "HeaderRow" /* 18365 */;
 import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 18366 */;

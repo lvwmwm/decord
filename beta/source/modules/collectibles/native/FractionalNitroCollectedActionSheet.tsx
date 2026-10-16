@@ -1,7 +1,7 @@
 // Module ID: 13459
 // Function ID: 13460
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9049, 558, 576, 6157, 13460, 5031, 7308, 4969, 10080, 10081, 5088, 1126, 2128, 4806, 7151, 12793, 6185, 5379, 5056, 6844, 6840, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9044, 558, 576, 6157, 13460, 5031, 7303, 4969, 10080, 10081, 5088, 1126, 2128, 4806, 7151, 12793, 6185, 5379, 5056, 6844, 6840, 2]
 
 // Module 13459 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
@@ -18,8 +18,8 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7308 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9049 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7303 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9044 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13460 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -82,7 +82,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroA
   }
   if (cResult[1] !== skuId) {
     size = { skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };
-    const FractionalNitroCoinIllustration = tmp(9049).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp(9044).FractionalNitroCoinIllustration;
     const tmp12 = React4(FractionalNitroCoinIllustration, size);
     cResult[1] = skuId;
     cResult[2] = tmp12;
@@ -437,7 +437,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const tmp4 = consumed(5031)();
   react = tmp4;
   let tmp5 = skuId;
-  let obj = skuId(7308);
+  let obj = skuId(7303);
   const fetchFractionalPremiumInfo = obj.useFetchFractionalPremiumInfo();
   const isFractionalPremiumActive = fetchFractionalPremiumInfo.isFractionalPremiumActive;
   const expiresAt = fetchFractionalPremiumInfo.expiresAt;

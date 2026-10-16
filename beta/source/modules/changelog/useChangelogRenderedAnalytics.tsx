@@ -1,12 +1,12 @@
 // Module ID: 12157
 // Function ID: 12158
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2129, 6035, 7016, 1085, 558, 576, 12158, 504, 6085, 8124, 1265, 2]
+// Dependencies: [19, 2129, 6035, 7016, 1085, 558, 576, 12158, 504, 6085, 8119, 1265, 2]
 
 // Module 12157 (useChangelogRenderedAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8124 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8119 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import ReadStateStore_mod from "ReadStateStore" /* 6035 */;

@@ -1,7 +1,7 @@
 // Module ID: 13489
 // Function ID: 13490
 // Name: SurveyIndication
-// Dependencies: [5933, 1126, 7891, 4969, 13490, 13491, 2]
+// Dependencies: [5933, 1126, 7886, 4969, 13490, 13491, 2]
 // Exports: createSurveyIndication
 
 // Module 13489 (SurveyIndication)
@@ -33,8 +33,8 @@ export const createSurveyIndication = function createSurveyIndication(message, f
     TOP_MESSAGE_PUSH = tmp.TOP_MESSAGE_PUSH;
   }
   const obj2 = { content: formatToParts(GwWhce, { handleMessage: obj }), feedbackIconUrl: getAssetUriForEmbed(tmp8Result) };
-  getAssetUriForEmbed = tmp2(7891).getAssetUriForEmbed;
-  tmp2(7891);
+  getAssetUriForEmbed = tmp2(7886).getAssetUriForEmbed;
+  tmp2(7886);
   const tmp2Result2 = tmp2(4969);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
     tmp8Result = tmp8(13490);

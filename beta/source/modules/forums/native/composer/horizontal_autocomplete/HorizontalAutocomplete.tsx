@@ -1,9 +1,9 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10007
+// Function ID: 10008
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6884, 6902, 8262, 8159, 5421, 6157, 2]
+// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6884, 6902, 8257, 8154, 5421, 6157, 2]
 
-// Module 10012 (HorizontalAutocomplete)
+// Module 10007 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import RoleIconUtils from "RoleIconUtils" /* 6884 */;
 import RoleIconDefault from "RoleIcon" /* 6902 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8262 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8257 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8159);
+      const tmpResult4 = channel(8154);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,7 +613,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8159);
+      const tmp2Result = channel(8154);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };

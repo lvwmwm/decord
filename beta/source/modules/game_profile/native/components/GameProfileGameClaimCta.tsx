@@ -1,9 +1,9 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9109
+// Function ID: 9110
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1085, 21, 558, 576, 8879, 7034, 7038, 1998, 1126, 5379, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 8874, 7034, 7038, 1998, 1126, 5379, 2]
 
-// Module 9114 (GameProfileGameClaimCta)
+// Module 9109 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7034 */;

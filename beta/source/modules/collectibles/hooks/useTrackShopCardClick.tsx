@@ -1,14 +1,14 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 9026
+// Function ID: 9027
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9032, 1085, 558, 576, 8971, 8303, 7276, 7275, 1265, 2]
+// Dependencies: [19, 9027, 1085, 558, 576, 8966, 8298, 7271, 7270, 1265, 2]
 
-// Module 9031 (useTrackShopCardClick)
+// Module 9026 (useTrackShopCardClick)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 9032 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7270 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
+import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 9027 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

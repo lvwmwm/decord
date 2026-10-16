@@ -1,7 +1,7 @@
 // Module ID: 11479
 // Function ID: 11480
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 5088, 504, 11473, 1503, 7514, 11478, 11474, 7512, 6814, 1126, 5379, 6201, 11480, 1273, 11500, 11502, 11504, 11506, 11507, 6170, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 7532, 7508, 1085, 21, 5092, 587, 558, 576, 5088, 504, 11473, 1503, 7509, 11478, 11474, 7507, 6814, 1126, 5379, 6201, 11480, 1273, 11500, 11502, 11504, 11506, 11507, 6170, 6688, 2]
 
 // Module 11479 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
@@ -16,8 +16,8 @@ import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmi
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 16552
 // Function ID: 16553
 // Name: ThreadLongPressActionSheet
-// Dependencies: [19, 2065, 2087, 6035, 5113, 4752, 1085, 21, 10341, 1126, 10342, 10344, 6652, 6800, 10330, 5036, 7902, 10331, 9322, 5051, 10259, 10457, 8223, 9724, 9697, 5038, 10335, 10346, 5056, 10463, 2000, 8773, 10348, 10466, 558, 576, 504, 6972, 12, 9334, 5421, 2041, 10468, 6159, 1200, 6899, 10469, 6895, 10017, 6886, 4808, 2]
+// Dependencies: [19, 2065, 2087, 6035, 5113, 4752, 1085, 21, 10341, 1126, 10342, 10344, 6652, 6800, 10330, 5036, 7897, 10331, 9317, 5051, 10259, 10457, 8218, 9719, 9692, 5038, 10335, 10346, 5056, 10463, 2000, 8768, 10348, 10466, 558, 576, 504, 6972, 12, 9329, 5421, 2041, 10468, 6159, 1200, 6899, 10469, 6895, 10012, 6886, 4808, 2]
 
 // Module 16552 (ThreadLongPressActionSheet)
 import _modDef12 from "module_12" /* 12 */;
@@ -11,8 +11,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7902 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10335 */;
 import markChannelUnreadDefault from "markChannelUnread" /* 10344 */;
 import threadActionSheets from "threadActionSheets" /* 10466 */;
@@ -139,7 +139,7 @@ function getActionSheetButtons(channel) {
         } else {
           string3Result = string3(t3.My50nf);
         }
-        const obj7 = { label: string3Result, IconComponent: tmp(9322).PhoneCallIcon, onPress: handleJoinThreadVoice };
+        const obj7 = { label: string3Result, IconComponent: tmp(9317).PhoneCallIcon, onPress: handleJoinThreadVoice };
         push4(obj7);
       }
       const threadMetadata = channel.threadMetadata;
@@ -222,7 +222,7 @@ function getActionSheetButtons(channel) {
             string6Result1 = string6(t6.HoCqm8);
           }
           obj10.label = string6Result1;
-          obj10.IconComponent = tmp(8223).LockIcon;
+          obj10.IconComponent = tmp(8218).LockIcon;
           obj10.onPress = function onPress() {
             const obj = ThreadActionCreatorsDefault;
             obj.lockThread(channel);
@@ -244,7 +244,7 @@ function getActionSheetButtons(channel) {
         }
         const obj11 = {
           label: string7Result,
-          IconComponent: tmp(9724).PencilIcon,
+          IconComponent: tmp(9719).PencilIcon,
           onPress() {
                   const obj = ChannelSettingsActionCreatorsDefault;
                   obj.setSection(constants3.OVERVIEW);
@@ -283,7 +283,7 @@ function getActionSheetButtons(channel) {
           string8Result = string8(t8["Cq/TzF"]);
         }
         obj14.label = string8Result;
-        obj14.IconComponent = tmp(8773).BellIcon;
+        obj14.IconComponent = tmp(8768).BellIcon;
         obj14.onPress = function onPress() {
           const obj = ThreadActionCreatorsDefault;
           const obj2 = { muted: !isMuted };
@@ -559,7 +559,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   }
   const tmpResult18 = tmp(504);
   const stateFromStores3 = tmpResult18.useStateFromStores(tmp25, tmp26);
-  onClose(9334)(channel);
+  onClose(9329)(channel);
   const tmp29 = onClose(5421)(channel);
   const DeveloperMode = tmp(2041).DeveloperMode;
   const setting = DeveloperMode.useSetting();
@@ -748,7 +748,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
             }
       };
       ActionSheetRow = tmp(6895).ActionSheetRow;
-      obj5 = { IconComponent: tmp(10017).IdIcon };
+      obj5 = { IconComponent: tmp(10012).IdIcon };
       Icon = tmp(6895).ActionSheetRow.Icon;
       intl = tmp(1126).intl;
       let str = "developer-actions";
@@ -813,7 +813,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
     const obj = _modDef12;
     return !obj.isEmpty(VoiceStateStore.getVoiceStatesForChannel(channel.id));
   });
-  const tmp14 = onClose(9334)(channel);
+  const tmp14 = onClose(9329)(channel);
   const tmp15 = onClose(5421)(channel);
   const DeveloperMode = channel(2041).DeveloperMode;
   let setting = DeveloperMode.useSetting();
@@ -905,7 +905,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
         }
     };
     ActionSheetRow = tmp(6895).ActionSheetRow;
-    obj17 = { IconComponent: tmp(10017).IdIcon };
+    obj17 = { IconComponent: tmp(10012).IdIcon };
     Icon = tmp(6895).ActionSheetRow.Icon;
     intl = tmp(1126).intl;
     let str = "developer-actions";

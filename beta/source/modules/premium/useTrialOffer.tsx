@@ -1,14 +1,14 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7167
+// Function ID: 7168
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1390, 7173, 558, 576, 504, 4769, 2060, 2]
+// Dependencies: [32, 19, 1390, 7168, 558, 576, 504, 4769, 2060, 2]
 // Exports: hasUserTrialOfferExpired
 
-// Module 7172 (useTrialOffer)
+// Module 7167 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserOfferStore from "UserOfferStore" /* 7173 */;
+import UserOfferStore from "UserOfferStore" /* 7168 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

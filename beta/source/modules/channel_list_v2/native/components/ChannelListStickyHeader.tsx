@@ -1,12 +1,12 @@
 // Module ID: 16572
 // Function ID: 16573
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1085, 21, 4850, 5092, 587, 558, 576, 16541, 2090, 1126, 16573, 14135, 16571, 6187, 4818, 9553, 5088, 8870, 1200, 6906, 16586, 11995, 16591, 16592, 2]
+// Dependencies: [19, 17, 1085, 21, 4850, 5092, 587, 558, 576, 16541, 2090, 1126, 16573, 14135, 16571, 6187, 4818, 9548, 5088, 8865, 1200, 6906, 16586, 11995, 16591, 16592, 2]
 
 // Module 16572 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 8870 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 8865 */;
 import openGuildActionSheetDefault from "openGuildActionSheet" /* 14135 */;
 import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16541 */;
 import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16571 */;
@@ -405,7 +405,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
         let tmp28 = null;
         if (tmp11) {
           const obj20 = { style: tmp7.headerIcon, size: "sm", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-          const StarIcon = tmp(9553).StarIcon;
+          const StarIcon = tmp(9548).StarIcon;
           tmp28 = closure_6(StarIcon, obj20);
         }
         cResult[13] = tmp11;
@@ -530,7 +530,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
   const obj4 = { style: tmp.header, children: items2 };
   if (isFavoritesGuildIdResult) {
     const obj5 = { style: tmp.headerIcon, size: "sm", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-    const StarIcon = tmp6(9553).StarIcon;
+    const StarIcon = tmp6(9548).StarIcon;
     tmp22 = closure_6(StarIcon, obj5);
   }
   items2 = [tmp22, , , ];

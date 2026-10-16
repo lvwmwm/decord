@@ -1,11 +1,11 @@
 // Module ID: 17035
 // Function ID: 17036
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 558, 576, 1503, 1631, 8638, 6201, 1126, 17036, 11393, 11407, 11437, 6688, 2]
+// Dependencies: [19, 21, 558, 576, 1503, 1631, 8633, 6201, 1126, 17036, 11393, 11407, 11437, 6688, 2]
 
 // Module 17035 (StandaloneMembersView)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11393 */;
 import KickConfirmDefault from "KickConfirm" /* 11407 */;
 import BanConfirmDefault from "BanConfirm" /* 11437 */;

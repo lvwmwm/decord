@@ -1,118 +1,106 @@
 // Module ID: 7841
 // Function ID: 7842
-// Dependencies: [7828, 7831]
+// Dependencies: [7840]
 
 // Module 7841
-import _mod7828 from "module_7828" /* 7828 */;
-import _modDef7831 from "module_7831" /* 7831 */;
+import _modDef7840 from "module_7840" /* 7840 */;
 
 
 export default {
-  isWebpFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod7828;
-      tmp = obj.getStringFromDataView(dataView, 0, 4) === "RIFF";
+  read(buffer, sum) {
+    let str6;
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    const obj = _modDef7840;
+    const shortAt = obj.getShortAt(buffer, sum);
+    let tmp4;
+    if (15 <= shortAt) {
+      const tmpResult = _modDef7840;
+      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
+      const _HermesInternal = HermesInternal;
+      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
+      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
     }
-    if (tmp) {
-      const obj2 = _mod7828;
-      tmp = obj2.getStringFromDataView(dataView, 8, 4) === "WEBP";
+    let tmp7;
+    if (16 <= shortAt) {
+      const tmpResult7 = _modDef7840;
+      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
+      const _HermesInternal2 = HermesInternal;
+      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
+      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
     }
-    return tmp;
-  },
-  findOffsets(byteLength) {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let flag = false;
-    let num = 12;
-    let hasAppMarkers = false;
-    let vp8xChunkOffset;
-    let iccChunks;
-    let xmpChunks;
-    let tiffHeaderOffset;
-    if (20 < byteLength.byteLength) {
-      while (true) {
-        let tmp4;
-        let sum4;
+    let tmp10;
+    if (9 <= shortAt) {
+      const tmpResult8 = _modDef7840;
+      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
+      const tmpResult9 = _modDef7840;
+      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
+      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+    }
+    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
+    tmp13 = undefined;
+    if (10 <= shortAt) {
+      const tmpResult10 = _modDef7840;
+      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: str6 };
+      str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
+          }
+          str7 = str8;
+        }
+        str6 = str7;
+      }
+      tmp13 = obj6;
+    }
+    tmp15 = undefined;
+    if (12 <= shortAt) {
+      const tmpResult11 = _modDef7840;
+      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
+      tmp15 = { value: shortAt1, description: "" + shortAt1 };
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
+    }
+    tmp17 = undefined;
+    if (14 <= shortAt) {
+      const tmpResult12 = _modDef7840;
+      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
+      tmp17 = { value: shortAt2, description: "" + shortAt2 };
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
+    }
+    if (undefined !== tmp4) {
+      if (undefined !== tmp7) {
+        const result = 3 * tmp4.value * tmp7.value;
         let tmp20;
-        let tmp21;
-        let tmp22;
-        let tmp9 = require;
-        let obj = _mod7828;
-        let stringFromDataView = obj.getStringFromDataView(byteLength, num, 4);
-        let uint32 = byteLength.getUint32(num + 4, true);
-        let tmp13 = importDefault;
-        let flag3 = flag;
-        if (_modDef7831.USE_EXIF) {
-          if ("EXIF" === stringFromDataView) {
-            let tmp9Result = tmp9(7828);
-            let sum = num + 8;
-            let sum1 = sum;
-            if (tmp9Result.getStringFromDataView(byteLength, sum, 6) === "Exif\0\0") {
-              sum1 = sum + 6;
-            }
-            tmp22 = sum1;
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = tmp3;
-            let sum2 = uint32;
-            if (uint32 % 2 !== 0) {
-              sum2 = uint32 + 1;
-            }
-            let sum3 = num + (8 + sum2);
-            flag = flag3;
-            num = sum3;
-            tmp = sum4;
-            tmp2 = tmp20;
-            tmp3 = tmp21;
-            tmp4 = tmp22;
-            hasAppMarkers = flag3;
-            vp8xChunkOffset = sum4;
-            iccChunks = tmp20;
-            xmpChunks = tmp21;
-            tiffHeaderOffset = tmp22;
-            if (sum3 + 8 >= byteLength.byteLength) {
-              break;
-            }
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
           }
         }
-        if (tmp13(7831).USE_XMP) {
-          if ("XMP " === stringFromDataView) {
-            let obj2 = { dataOffset: num + 8, length: uint32 };
-            let items = [obj2];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = tmp2;
-            tmp21 = items;
-            tmp22 = tmp4;
-          }
-        }
-        if (tmp13(7831).USE_ICC) {
-          if ("ICCP" === stringFromDataView) {
-            let obj3 = { offset: num + 8, length: uint32, chunkNumber: 1, chunksTotal: 1 };
-            let items1 = [obj3];
-            flag3 = true;
-            sum4 = tmp;
-            tmp20 = items1;
-            tmp21 = tmp3;
-            tmp22 = tmp4;
-          }
-        }
-        sum4 = tmp;
-        tmp20 = tmp2;
-        tmp21 = tmp3;
-        tmp22 = tmp4;
-        if ("VP8X" === stringFromDataView) {
-          sum4 = num + 8;
-          flag3 = true;
-          tmp20 = tmp2;
-          tmp21 = tmp3;
-          tmp22 = tmp4;
+        if (tmp20) {
+          obj5["JFIF Thumbnail"] = tmp20;
         }
       }
     }
-    return { hasAppMarkers, tiffHeaderOffset, xmpChunks, iccChunks, vp8xChunkOffset };
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp22]) {
+          continue;
+        } else {
+          delete obj9[tmp23];
+          continue;
+        }
+        continue;
+      }
+    }
+    return obj5;
   }
 };

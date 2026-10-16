@@ -1,7 +1,7 @@
 // Module ID: 18552
 // Function ID: 18553
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18553, 15498, 1085, 21, 5092, 558, 576, 14125, 18548, 1126, 8677, 18554, 5088, 15510, 8580, 18555, 2]
+// Dependencies: [32, 19, 17, 18553, 15498, 1085, 21, 5092, 558, 576, 14125, 18548, 1126, 8672, 18554, 5088, 15510, 8575, 18555, 2]
 
 // Module 18552 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Form from "Form" /* 8580 */;
-import FormHeaderDefault from "FormHeader" /* 8677 */;
+import Form from "Form" /* 8575 */;
+import FormHeaderDefault from "FormHeader" /* 8672 */;
 import FormStylesDefault from "FormStyles" /* 14125 */;
 import FormSeparatorDefault from "FormSeparator" /* 15510 */;
 import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18548 */;

@@ -1,16 +1,16 @@
 // Module ID: 18634
 // Function ID: 18635
 // Name: QuestFetchManager
-// Dependencies: [7391, 1102, 6808, 9166, 1255, 9172, 1382, 6071, 18635, 2]
+// Dependencies: [7386, 1102, 6808, 9161, 1255, 9167, 1382, 6071, 18635, 2]
 
 // Module 18634 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1102 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import QuestsEligibility from "QuestsEligibility" /* 9166 */;
-import QuestActionCreators from "QuestActionCreators" /* 9172 */;
+import QuestsEligibility from "QuestsEligibility" /* 9161 */;
+import QuestActionCreators from "QuestActionCreators" /* 9167 */;
 import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18635 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 17671
 // Function ID: 17672
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2129, 7993, 21, 1126, 1388, 15786, 558, 576, 4769, 504, 10663, 14966, 2]
+// Dependencies: [19, 2129, 7988, 21, 1126, 1388, 15786, 558, 576, 4769, 504, 10663, 14966, 2]
 
 // Module 17671 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import react2 from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import MobileNotifSettings from "MobileNotifSettings" /* 15786 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 13107
 // Function ID: 13108
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2062, 6905, 21, 5092, 558, 576, 13108, 13102, 1126, 9443, 2]
+// Dependencies: [19, 17, 2062, 6905, 21, 5092, 558, 576, 13108, 13102, 1126, 9438, 2]
 
 // Module 13107 (ShopThisLookMarketingCoachmark)
 import react_native from "react-native" /* 17 */;

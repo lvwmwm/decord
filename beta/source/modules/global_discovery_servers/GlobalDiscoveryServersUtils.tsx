@@ -1,7 +1,7 @@
 // Module ID: 18649
 // Function ID: 18650
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2129, 8640, 1085, 1126, 1388, 7052, 1265, 1279, 2]
+// Dependencies: [5, 2129, 8635, 1085, 1126, 1388, 7052, 1265, 1279, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
 // Module 18649 (GlobalDiscoveryServersUtils)
@@ -11,7 +11,7 @@ import v1 from "v1" /* 1279 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8640 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8635 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,15 +1,15 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9238
+// Function ID: 9239
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1415, 9235, 5032, 1126, 9244, 6157, 5088, 9246, 6265, 6180, 1200, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1415, 9230, 5032, 1126, 9239, 6157, 5088, 9241, 6265, 6180, 1200, 2]
 
-// Module 9243 (IntegrationTypeSelector)
+// Module 9238 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UserPlusIcon from "UserPlusIcon" /* 5032 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9235 */;
-import ServerIcon from "ServerIcon" /* 9244 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9230 */;
+import ServerIcon from "ServerIcon" /* 9239 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

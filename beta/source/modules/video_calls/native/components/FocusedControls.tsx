@@ -1,7 +1,7 @@
 // Module ID: 11021
 // Function ID: 11022
 // Name: FocusedControls
-// Dependencies: [19, 17, 1085, 21, 5092, 1200, 558, 576, 4850, 11022, 5093, 6814, 1497, 7577, 11023, 11028, 10827, 5362, 6852, 6879, 10919, 1265, 11035, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 1200, 558, 576, 4850, 11022, 5093, 6814, 1497, 7572, 11023, 11028, 10827, 5362, 6852, 6879, 10919, 1265, 11035, 2]
 
 // Module 11021 (FocusedControls)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import RevealProvider from "RevealProvider" /* 10827 */;
 import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11023 */;
 import GlobalStatusIndicator from "GlobalStatusIndicator" /* 11028 */;
@@ -192,9 +192,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { children: metroImportAll(LinearGradient, obj4) };
-      const Defs = tmp(7577).Defs;
+      const Defs = tmp(7572).Defs;
       obj4 = { id: "grad", y1: "0%", x1: "0", x2: "0", y2: "100%", children: items };
-      LinearGradient = tmp(7577).LinearGradient;
+      LinearGradient = tmp(7572).LinearGradient;
       items = [metroImportDefault(inlineStyles.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), metroImportDefault(inlineStyles.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), metroImportDefault(inlineStyles.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
       const tmp11 = metroImportDefault(Defs, obj3);
       cResult[5] = tmp11;

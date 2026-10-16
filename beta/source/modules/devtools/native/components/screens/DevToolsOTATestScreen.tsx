@@ -1,7 +1,7 @@
 // Module ID: 15963
 // Function ID: 15964
 // Name: DevToolsOTATestScreen
-// Dependencies: [5, 32, 19, 17, 1096, 21, 5092, 587, 558, 576, 6839, 5088, 6840, 11343, 6886, 5056, 15864, 6180, 6265, 9342, 5044, 15964, 5377, 2]
+// Dependencies: [5, 32, 19, 17, 1096, 21, 5092, 587, 558, 576, 6839, 5088, 6840, 11343, 6886, 5056, 15864, 6180, 6265, 9337, 5044, 15964, 5377, 2]
 
 // Module 15963 (DevToolsOTATestScreen)
 import nativeDefault from "native" /* 587 */;
@@ -550,7 +550,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsOT
       }
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp40 = closure_8(tmp(9342).PaperIcon, {});
+        const tmp40 = closure_8(tmp(9337).PaperIcon, {});
         cResult[17] = tmp40;
         tmp38 = tmp40;
       } else {
@@ -860,7 +860,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsOT
   }
   let obj5 = { label: "Manifest Source", subLabel: str, icon: tmp13(tmp16(15864).WrenchIcon, {}) };
   const items2 = [tmp13(TableRow2, obj5), ];
-  let obj6 = { icon: tmp13(tmp16(9342).PaperIcon, {}), label: str2 };
+  let obj6 = { icon: tmp13(tmp16(9337).PaperIcon, {}), label: str2 };
   const TableRow3 = tmp16(6180).TableRow;
   str2 = "{}";
   if (null != tmp5) {

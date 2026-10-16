@@ -1,18 +1,18 @@
 // Module ID: 18478
 // Function ID: 18479
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8639, 2119, 8065, 1085, 21, 558, 576, 4818, 587, 504, 4755, 8638, 1097, 18420, 18467, 18466, 1126, 5088, 6157, 6896, 18476, 6265, 5377, 2128, 18464, 2]
+// Dependencies: [32, 19, 17, 8634, 2119, 8060, 1085, 21, 558, 576, 4818, 587, 504, 4755, 8633, 1097, 18420, 18467, 18466, 1126, 5088, 6157, 6896, 18476, 6265, 5377, 2128, 18464, 2]
 
 // Module 18478 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8065 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8060 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 18444
 // Function ID: 18445
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 10694, 8499, 2065, 2087, 8639, 1085, 21, 5092, 558, 576, 1126, 2128, 5088, 6188, 13901, 6177, 12079, 504, 12, 8046, 8044, 5056, 11384, 2000, 4809, 10289, 6727, 1200, 18445, 6728, 2]
+// Dependencies: [32, 19, 17, 10694, 8494, 2065, 2087, 8634, 1085, 21, 5092, 558, 576, 1126, 2128, 5088, 6188, 13901, 6177, 12079, 504, 12, 8041, 8039, 5056, 11384, 2000, 4809, 10289, 6727, 1200, 18445, 6728, 2]
 
 // Module 18444 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
@@ -12,18 +12,18 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 6177 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8044 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8046 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8039 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8041 */;
 import InstantInvite from "InstantInvite" /* 10289 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
-import InviteRecord from "InviteRecord" /* 8499 */;
+import InviteRecord from "InviteRecord" /* 8494 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

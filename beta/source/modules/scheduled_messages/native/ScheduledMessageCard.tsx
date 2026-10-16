@@ -1,7 +1,7 @@
 // Module ID: 12876
 // Function ID: 12877
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 504, 1112, 5934, 12671, 6154, 12672, 10028, 5088, 1126, 6182, 9294, 12877, 12670, 11919, 2]
+// Dependencies: [19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 504, 1112, 5934, 12671, 6154, 12672, 10023, 5088, 1126, 6182, 9289, 12877, 12670, 11919, 2]
 
 // Module 12876 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9294 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9289 */;
 import CalendarPlusIcon from "CalendarPlusIcon" /* 11919 */;
 import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 12670 */;
 import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12877 */;
@@ -226,7 +226,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
           }
           const obj5 = { style: tmp4.attachmentCount, children: items1 };
           const obj6 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-          const AttachmentIcon = tmp(10028).AttachmentIcon;
+          const AttachmentIcon = tmp(10023).AttachmentIcon;
           items1 = [closure_7(AttachmentIcon, obj6), ];
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj8) };
           const Text = tmp(5088).Text;
@@ -286,7 +286,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
       if (scheduledMessage.attachmentUploads.length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: items2 };
         const obj9 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-        const AttachmentIcon = tmp2(10028).AttachmentIcon;
+        const AttachmentIcon = tmp2(10023).AttachmentIcon;
         items2 = [closure_7(AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj11) };
         const Text = tmp2(5088).Text;

@@ -1,10 +1,10 @@
 // Module ID: 12373
 // Function ID: 12374
 // Name: useProvisionalAccountApplication
-// Dependencies: [7347, 558, 576, 504, 6858, 2]
+// Dependencies: [7342, 558, 576, 504, 6858, 2]
 
 // Module 12373 (useProvisionalAccountApplication)
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

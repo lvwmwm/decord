@@ -1,7 +1,7 @@
 // Module ID: 14135
 // Function ID: 14136
 // Name: openGuildActionSheet
-// Dependencies: [1085, 2090, 1265, 9461, 5056, 14136, 2000, 14200, 14206, 2]
+// Dependencies: [1085, 2090, 1265, 9456, 5056, 14136, 2000, 14200, 14206, 2]
 // Exports: default
 
 // Module 14135 (openGuildActionSheet)
@@ -9,7 +9,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9461 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9456 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

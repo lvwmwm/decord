@@ -1,7 +1,7 @@
 // Module ID: 17903
 // Function ID: 17904
 // Name: useDrawerToggle
-// Dependencies: [19, 11970, 558, 576, 11971, 4850, 8395, 17904, 1126, 2]
+// Dependencies: [19, 11970, 558, 576, 11971, 4850, 8390, 17904, 1126, 2]
 
 // Module 17903 (useDrawerToggle)
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;

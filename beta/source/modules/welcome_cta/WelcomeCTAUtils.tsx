@@ -1,15 +1,15 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8015
+// Function ID: 8016
 // Name: WelcomeCTAUtils
-// Dependencies: [1390, 8021, 1085, 11, 7179, 1265, 2]
+// Dependencies: [1390, 8016, 1085, 11, 7174, 1265, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 8020 (WelcomeCTAUtils)
+// Module 8015 (WelcomeCTAUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import WelcomeCTAConstants from "WelcomeCTAConstants" /* 8021 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import WelcomeCTAConstants from "WelcomeCTAConstants" /* 8016 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

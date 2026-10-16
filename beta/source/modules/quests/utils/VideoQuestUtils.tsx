@@ -1,24 +1,24 @@
 // Module ID: 12966
 // Function ID: 12967
 // Name: VideoQuestUtils
-// Dependencies: [5282, 7391, 7393, 1085, 7397, 9172, 7413, 1126, 7407, 4976, 2, 12967]
+// Dependencies: [5282, 7386, 7388, 1085, 7392, 9167, 7408, 1126, 7402, 4976, 2, 12967]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
 // Module 12966 (VideoQuestUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7397 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7392 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
 import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
 import NetworkStore from "NetworkStore" /* 5282 */;
-import QuestStore from "QuestStore" /* 7391 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7393 */;
+import QuestStore from "QuestStore" /* 7386 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7388 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const NavigationRouteUtils = tmp(4976);
-const QuestActionCreators = tmp(9172);
+const QuestActionCreators = tmp(9167);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -175,7 +175,7 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp6Result = tmp6(9172);
+        const tmp6Result = tmp6(9167);
         tmp6Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }

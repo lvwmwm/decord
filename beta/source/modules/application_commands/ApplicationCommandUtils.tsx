@@ -1,10 +1,10 @@
-// Module ID: 7243
-// Function ID: 7244
+// Module ID: 7238
+// Function ID: 7239
 // Name: ApplicationCommandUtils
-// Dependencies: [2069, 7244, 5403, 1085, 1096, 7246, 1998, 7247, 1097, 12, 38, 14, 5107, 2]
+// Dependencies: [2069, 7239, 5403, 1085, 1096, 7241, 1998, 7242, 1097, 12, 38, 14, 5107, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7243 (ApplicationCommandUtils)
+// Module 7238 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef14 from "module_14" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -12,9 +12,9 @@ import Constants2 from "Constants" /* 1096 */;
 import Server from "Server" /* 1998 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7246 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7241 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
@@ -37,7 +37,7 @@ function buildCommand(arg0) {
   let rootCommand;
   let subCommandPath;
   let useKeyedPermissions;
-  const f95998 = (choices) => {
+  const f95997 = (choices) => {
     let description;
     let mapped;
     let mapped1;
@@ -63,7 +63,7 @@ function buildCommand(arg0) {
     const options = choices.options;
     mapped1 = undefined;
     if (options != null) {
-      mapped1 = options.map(f95998);
+      mapped1 = options.map(f95997);
     }
     ({ name_localized: obj.serverLocalizedName, name_localized } = choices);
     if (name_localized == null) {
@@ -147,7 +147,7 @@ function buildCommand(arg0) {
   ({ description: obj3.untranslatedDescription, options } = command);
   mapped2 = undefined;
   if (options != null) {
-    mapped2 = options.map(f95998);
+    mapped2 = options.map(f95997);
   }
   deserializeResult = undefined;
   if (null != rootCommand.default_member_permissions) {

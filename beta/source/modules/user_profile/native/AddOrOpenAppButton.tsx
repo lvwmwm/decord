@@ -1,7 +1,7 @@
 // Module ID: 13116
 // Function ID: 13117
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9248, 1085, 1502, 21, 558, 576, 11833, 10862, 5056, 6886, 11820, 4808, 1384, 7706, 9082, 1126, 587, 5379, 6853, 7015, 4985, 1629, 1265, 2]
+// Dependencies: [5, 32, 19, 9243, 1085, 1502, 21, 558, 576, 11833, 10862, 5056, 6886, 11820, 4808, 1384, 7701, 9077, 1126, 587, 5379, 6853, 7015, 4985, 1629, 1265, 2]
 
 // Module 13116 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
@@ -11,7 +11,7 @@ import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import ApplicationUtils from "ApplicationUtils" /* 10862 */;
 import getApplicationInstallURL from "getApplicationInstallURL" /* 11820 */;
 import useIsAppDMDefault from "useIsAppDM" /* 11833 */;
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             let tmp11;
             let obj2 = guildId(1384);
             if (!obj2.isDiscordUrl(customInstallUrl)) {
-              PlusSmallIcon = tmp(7706).LinkExternalSmallIcon;
+              PlusSmallIcon = tmp(7701).LinkExternalSmallIcon;
             }
             const _Symbol = Symbol;
             if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -243,7 +243,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             cResult[18] = jsx(tmp(5379).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
             const tmp18 = jsx(tmp(5379).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
           }
-          PlusSmallIcon = tmp(9082).PlusSmallIcon;
+          PlusSmallIcon = tmp(9077).PlusSmallIcon;
         }
       }
     }
@@ -282,7 +282,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
     let tmp6;
     let obj2 = guildId(1384);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(7706).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(7701).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
@@ -308,7 +308,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
     ({ size: "sm", color: guildId(587).colors.WHITE });
     return <Button text={intl.string(tmp6(1126).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(9082).PlusSmallIcon;
+  PlusSmallIcon = application(9077).PlusSmallIcon;
   tmp6 = application;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

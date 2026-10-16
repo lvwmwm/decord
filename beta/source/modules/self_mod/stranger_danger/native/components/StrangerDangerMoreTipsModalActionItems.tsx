@@ -1,7 +1,7 @@
 // Module ID: 10418
 // Function ID: 10419
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4760, 1390, 10285, 21, 558, 576, 504, 4962, 10395, 7018, 1126, 6652, 6650, 9372, 6265, 10419, 2]
+// Dependencies: [32, 19, 4760, 1390, 10285, 21, 558, 576, 504, 4962, 10395, 7018, 1126, 6652, 6650, 9367, 6265, 10419, 2]
 
 // Module 10418 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;

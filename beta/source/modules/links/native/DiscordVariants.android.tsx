@@ -1,11 +1,11 @@
 // Module ID: 16841
 // Function ID: 16842
 // Name: DiscordVariants
-// Dependencies: [7440, 16842, 2]
+// Dependencies: [7435, 16842, 2]
 // Exports: getCurrentVariant, isVariantInstalled, launchVariant
 
 // Module 16841 (DiscordVariants)
-import react_nativeDefault from "react-native" /* 7440 */;
+import react_nativeDefault from "react-native" /* 7435 */;
 import DiscordVariantTypes from "DiscordVariantTypes" /* 16842 */;
 import size from "module_2" /* 2 */;
 

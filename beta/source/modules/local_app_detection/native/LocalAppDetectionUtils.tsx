@@ -1,7 +1,7 @@
 // Module ID: 14008
 // Function ID: 14009
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 5932, 1085, 14009, 14007, 1383, 7439, 1265, 584, 2]
+// Dependencies: [5, 5932, 1085, 14009, 14007, 1383, 7434, 1265, 584, 2]
 // Exports: detectLocalApps
 
 // Module 14008 (LocalAppDetectionUtils)

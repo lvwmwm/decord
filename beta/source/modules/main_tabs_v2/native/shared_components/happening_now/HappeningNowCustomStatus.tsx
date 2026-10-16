@@ -1,7 +1,7 @@
 // Module ID: 16512
 // Function ID: 16513
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5108, 15589, 1096, 21, 5092, 587, 558, 576, 573, 5628, 8854, 16513, 16514, 10239, 8651, 1382, 6157, 10257, 1200, 15590, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 5108, 15589, 1096, 21, 5092, 587, 558, 576, 573, 5628, 8849, 16513, 16514, 10239, 8646, 1382, 6157, 10257, 1200, 15590, 5088, 2]
 
 // Module 16512 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     } else {
       tmp15 = cResult[7];
     }
-    const tmpResult3 = tmp(8854);
+    const tmpResult3 = tmp(8849);
     const displayNameStylesFont = tmpResult3.useDisplayNameStylesFont(tmp15);
     if (cResult[8] !== activity.emoji) {
       class J {
@@ -783,7 +783,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
   let tmp10 = activity(5628)(obj2);
-  let obj3 = user(8854);
+  let obj3 = user(8849);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -885,7 +885,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   const tmp6Result = user(10239);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(8651);
+  const tmp6Result3 = user(8646);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");

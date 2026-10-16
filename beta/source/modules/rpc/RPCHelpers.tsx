@@ -1,7 +1,7 @@
 // Module ID: 10945
 // Function ID: 10946
 // Name: RPCHelpers
-// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7179, 5079, 5627, 10946, 5409, 1386, 8458, 1295, 10936, 10808, 10947, 2]
+// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7174, 5079, 5627, 10946, 5409, 1386, 8453, 1295, 10936, 10808, 10947, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
 // Module 10945 (RPCHelpers)
@@ -13,8 +13,8 @@ import ChannelRecord from "ChannelRecord" /* 2069 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import LeakyBucketDefault from "LeakyBucket" /* 10947 */;

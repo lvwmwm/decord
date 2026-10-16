@@ -1,20 +1,20 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 9021
+// Function ID: 9022
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9002, 6905, 21, 5092, 587, 558, 576, 8351, 4818, 8347, 8334, 6243, 9027, 6157, 2]
+// Dependencies: [19, 17, 8997, 6905, 21, 5092, 587, 558, 576, 8346, 4818, 8342, 8329, 6243, 9022, 6157, 2]
 
-// Module 9026 (ProfileFrameSamplePreview)
+// Module 9021 (ProfileFrameSamplePreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import _modDef6243 from "module_6243" /* 6243 */;
 import Constants from "Constants" /* 6905 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8334 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8347 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8351 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9002 */;
-import _modDef9027 from "module_9027" /* 9027 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8329 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8342 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8346 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8997 */;
+import _modDef9022 from "module_9022" /* 9022 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
                                                                 }
                                                                 const _Symbol = Symbol;
                                                                 if (cResult[69] === Symbol.for("react.memo_cache_sentinel")) {
-                                                                  const obj5 = { uri: _modDef9027 };
+                                                                  const obj5 = { uri: _modDef9022 };
                                                                   cResult[69] = obj5;
                                                                   tmp83 = obj5;
                                                                 } else {
@@ -484,7 +484,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef9027 };
+  obj18 = { uri: _modDef9022 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

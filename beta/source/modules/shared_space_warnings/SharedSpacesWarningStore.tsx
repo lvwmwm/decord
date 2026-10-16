@@ -1,7 +1,7 @@
 // Module ID: 14026
 // Function ID: 14027
 // Name: SharedSpacesWarningStore
-// Dependencies: [1102, 570, 4990, 7395, 2]
+// Dependencies: [1102, 570, 4990, 7390, 2]
 // Exports: dequeueBlockWarning, gdmBlockedWarningInCooldown, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers, userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
 // Module 14026 (SharedSpacesWarningStore)

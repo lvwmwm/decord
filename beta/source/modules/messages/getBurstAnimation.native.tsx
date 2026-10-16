@@ -1,10 +1,10 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 7922
+// Function ID: 7923
 // Name: getBurstAnimation
-// Dependencies: [5, 7928, 7929, 7930, 7931, 7932, 7933, 7934, 7935, 7936, 7937, 7938, 7939, 7940, 7941, 7942, 7943, 7944, 7945, 7946, 7947, 7948, 7949, 7950, 7951, 7952, 7953, 7954, 7955, 7956, 7957, 7958, 7959, 7960, 7961, 7962, 7963, 7964, 2]
+// Dependencies: [5, 7923, 7924, 7925, 7926, 7927, 7928, 7929, 7930, 7931, 7932, 7933, 7934, 7935, 7936, 7937, 7938, 7939, 7940, 7941, 7942, 7943, 7944, 7945, 7946, 7947, 7948, 7949, 7950, 7951, 7952, 7953, 7954, 7955, 7956, 7957, 7958, 7959, 2]
 // Exports: getBurstAnimation
 
-// Module 7927 (getBurstAnimation)
+// Module 7922 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,11 +13,36 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_7928");
+    return require("module_7923");
   }
 };
 const items = [
   obj,
+  {
+    load() {
+      return require("module_7924");
+    }
+  },
+  {
+    load() {
+      return require("module_7925");
+    }
+  },
+  {
+    load() {
+      return require("module_7926");
+    }
+  },
+  {
+    load() {
+      return require("module_7927");
+    }
+  },
+  {
+    load() {
+      return require("module_7928");
+    }
+  },
   {
     load() {
       return require("module_7929");
@@ -77,12 +102,15 @@ const items = [
     load() {
       return require("module_7940");
     }
-  },
-  {
-    load() {
-      return require("module_7941");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_7941");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_7942");
@@ -102,15 +130,12 @@ const items = [
     load() {
       return require("module_7945");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_7946");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_7946");
+    }
+  },
   {
     load() {
       return require("module_7947");
@@ -169,31 +194,6 @@ const items1 = [
   {
     load() {
       return require("module_7958");
-    }
-  },
-  {
-    load() {
-      return require("module_7959");
-    }
-  },
-  {
-    load() {
-      return require("module_7960");
-    }
-  },
-  {
-    load() {
-      return require("module_7961");
-    }
-  },
-  {
-    load() {
-      return require("module_7962");
-    }
-  },
-  {
-    load() {
-      return require("module_7963");
     }
   }
 ];

@@ -1,12 +1,12 @@
 // Module ID: 18216
 // Function ID: 18217
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1390, 1999, 1085, 7697, 7546, 1255, 1382, 7693, 7694, 1265, 5921, 5121, 2]
+// Dependencies: [32, 5, 1390, 1999, 1085, 7692, 7541, 1255, 1382, 7688, 7689, 1265, 5921, 5121, 2]
 // Exports: beginAppStoreAgeSignalReport, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
 // Module 18216 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7546 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7541 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;

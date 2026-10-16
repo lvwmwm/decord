@@ -1,12 +1,12 @@
 // Module ID: 18195
 // Function ID: 18196
 // Name: RedesignNewUserManager
-// Dependencies: [12401, 502, 2059, 6134, 18196, 4977, 4976, 18199, 6808, 8683, 18200, 5934, 18201, 2000, 1382, 2]
+// Dependencies: [12401, 502, 2059, 6134, 18196, 4977, 4976, 18199, 6808, 8678, 18200, 5934, 18201, 2000, 1382, 2]
 
 // Module 18195 (RedesignNewUserManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 18196 */;
 import NewUserUtils from "NewUserUtils" /* 18200 */;
 import ContactSyncModalStore from "ContactSyncModalStore" /* 12401 */;

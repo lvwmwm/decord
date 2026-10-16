@@ -1,7 +1,7 @@
 // Module ID: 13784
 // Function ID: 13785
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1085, 1392, 558, 576, 6852, 7170, 7169, 7142, 1126, 4769, 2]
+// Dependencies: [19, 1085, 1392, 558, 576, 6852, 7165, 7164, 7142, 1126, 4769, 2]
 
 // Module 13784 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1126 */;
@@ -30,9 +30,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
   analyticsLocations = premiumTrialOfferPremiumType(6852)(arg0).analyticsLocations;
-  const obj2 = analyticsLocations(7170);
+  const obj2 = analyticsLocations(7165);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
-  const obj3 = analyticsLocations(7169);
+  const obj3 = analyticsLocations(7164);
   premiumTrialOfferPremiumType = obj3.usePremiumTrialOfferPremiumType();
   if (cResult[0] === analyticsLocations) {
     let tmp6;

@@ -1,7 +1,7 @@
 // Module ID: 10628
 // Function ID: 10629
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5081, 2125, 21, 5092, 587, 558, 576, 1990, 6053, 8284, 504, 4962, 5628, 1200, 8374, 9022, 10263, 10264, 5088, 2]
+// Dependencies: [19, 17, 5081, 2125, 21, 5092, 587, 558, 576, 1990, 6053, 8279, 504, 4962, 5628, 1200, 8369, 9017, 10263, 10264, 5088, 2]
 
 // Module 10628 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(8374);
+const profile_customization_ProfileCustomizationUtils = tmp(8369);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
     } else {
       tmp12 = cResult[4];
     }
-    const pendingAvatarDecoration = guildId(8284)(tmp12).pendingAvatarDecoration;
+    const pendingAvatarDecoration = guildId(8279)(tmp12).pendingAvatarDecoration;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
@@ -209,7 +209,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
                   }
                 }
               }
-              const tmpResult7 = tmp(8374);
+              const tmpResult7 = tmp(8369);
               const avatarSource = tmpResult7.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
               cResult[18] = guildId;
               cResult[19] = pendingAvatarSrc;
@@ -352,8 +352,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
             cResult[31] = undefined !== animate && animate;
             cResult[32] = tmp9;
             cResult[33] = tmp6Result.nameplate;
-            cResult[34] = closure_7(guildId(9022), obj10);
-            closure_7(guildId(9022), obj10);
+            cResult[34] = closure_7(guildId(9017), obj10);
+            closure_7(guildId(9017), obj10);
             class E {
               constructor() {
                 let member = null;

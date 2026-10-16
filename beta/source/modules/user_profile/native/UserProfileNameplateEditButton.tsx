@@ -1,7 +1,7 @@
 // Module ID: 14894
 // Function ID: 14895
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 2125, 6905, 1096, 21, 5092, 587, 504, 8291, 14895, 5056, 14896, 2000, 14874, 1126, 9022, 1200, 13476, 2]
+// Dependencies: [19, 17, 2125, 6905, 1096, 21, 5092, 587, 504, 8286, 14895, 5056, 14896, 2000, 14874, 1126, 9017, 1200, 13476, 2]
 // Exports: default
 
 // Module 14894 (UserProfileNameplateEditButton)
@@ -65,8 +65,8 @@ export default function UserProfileNameplateEditButton(user) {
   let obj2 = { pendingValue: pendingNameplate, userValue: nameplate1, guildValue: nameplate2, guildId };
   const collectibles = user.collectibles;
   nameplate1 = undefined;
-  const getProfilePreviewValue = user(8291).getProfilePreviewValue;
-  user(8291);
+  const getProfilePreviewValue = user(8286).getProfilePreviewValue;
+  user(8286);
   if (collectibles != null) {
     nameplate1 = collectibles.nameplate;
   }

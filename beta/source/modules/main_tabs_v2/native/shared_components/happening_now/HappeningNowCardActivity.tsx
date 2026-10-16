@@ -1,7 +1,7 @@
 // Module ID: 16509
 // Function ID: 16510
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2070, 1390, 15589, 1085, 1096, 21, 16510, 16511, 5092, 587, 6852, 504, 6858, 1265, 11338, 2000, 8304, 16505, 5409, 16512, 15590, 16506, 1200, 16515, 10253, 16516, 10248, 13125, 8912, 8225, 9212, 1126, 558, 576, 4967, 1382, 11171, 6157, 16507, 16518, 11174, 8275, 16520, 8375, 2]
+// Dependencies: [19, 17, 2070, 1390, 15589, 1085, 1096, 21, 16510, 16511, 5092, 587, 6852, 504, 6858, 1265, 11338, 2000, 8299, 16505, 5409, 16512, 15590, 16506, 1200, 16515, 10253, 16516, 10248, 13125, 8907, 8220, 9207, 1126, 558, 576, 4967, 1382, 11171, 6157, 16507, 16518, 11174, 8270, 16520, 8370, 2]
 
 // Module 16509 (HappeningNowCardActivity)
 import react2 from "react" /* 576 */;
@@ -14,8 +14,8 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
-import VideoBackground from "VideoBackground" /* 8375 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
+import VideoBackground from "VideoBackground" /* 8370 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10253 */;
 import StreamPreviewDefault from "StreamPreview" /* 11171 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11174 */;
@@ -205,7 +205,7 @@ const memoResult = react.memo(function ActivityCard(userId) {
       const promise2 = asyncRequire(11338, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
-      const promise = asyncRequire(8304, dependencyMap.paths);
+      const promise = asyncRequire(8299, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId, localUser, sourceAnalyticsLocations };
         return result.default(obj);

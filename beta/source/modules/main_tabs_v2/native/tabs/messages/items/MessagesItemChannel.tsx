@@ -1,7 +1,7 @@
 // Module ID: 16465
 // Function ID: 16466
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2065, 21, 10515, 587, 16466, 558, 576, 504, 16475, 8625, 16476, 2]
+// Dependencies: [32, 19, 2065, 21, 10515, 587, 16466, 558, 576, 504, 16475, 8620, 16476, 2]
 // Exports: getMessagesItemChannelSizes
 
 // Module 16465 (MessagesItemChannel)
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
 
 let tmp;
-const defaultMVCPConfig = tmp(8625);
+const defaultMVCPConfig = tmp(8620);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannel(channelId) {

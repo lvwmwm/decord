@@ -1,7 +1,7 @@
 // Module ID: 18479
 // Function ID: 18480
 // Name: GuildSettingsModalAnalytics
-// Dependencies: [5, 19, 17, 2129, 1085, 21, 5092, 587, 558, 576, 504, 18480, 1265, 7034, 7038, 5088, 1126, 7568, 5379, 5377, 18500, 6728, 2]
+// Dependencies: [5, 19, 17, 2129, 1085, 21, 5092, 587, 558, 576, 504, 18480, 1265, 7034, 7038, 5088, 1126, 7563, 5379, 5377, 18500, 6728, 2]
 
 // Module 18479 (GuildSettingsModalAnalytics)
 import react_native from "react-native" /* 17 */;
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         let obj3 = { type: null, message: null, role: str2 };
         ({ type: obj5.type, message: obj5.message } = notice);
         str2 = "static";
-        const InlineNotice = tmp(7568).InlineNotice;
+        const InlineNotice = tmp(7563).InlineNotice;
         const tmp19 = closure_9;
         if ("critical" === notice.type) {
           str2 = "alert";
@@ -412,7 +412,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj7 = { type: null, message: null, role: str2 };
     ({ type: obj6.type, message: obj6.message } = notice);
     str2 = "static";
-    const InlineNotice = tmp2(7568).InlineNotice;
+    const InlineNotice = tmp2(7563).InlineNotice;
     if ("critical" === notice.type) {
       str2 = "alert";
     }

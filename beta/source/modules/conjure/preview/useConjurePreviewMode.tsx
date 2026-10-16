@@ -1,11 +1,11 @@
 // Module ID: 17119
 // Function ID: 17120
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 10802, 558, 576, 504, 17120, 17113, 13351, 6853, 10803, 11424, 11423, 10821, 8611, 2]
+// Dependencies: [32, 19, 502, 10802, 558, 576, 504, 17120, 17113, 13351, 6853, 10803, 11424, 11423, 10821, 8606, 2]
 // Exports: resolvePreviewAppChannel
 
 // Module 17119 (useConjurePreviewMode)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11423 */;
 import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11424 */;
@@ -233,7 +233,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   const tmpResult16 = tmp(11424);
   previewFrameSurface = tmpResult16.resolvePreviewFrameSurface(tmp9, tmp44);
   let tmp49 = null;
-  if (previewFrameSurface === tmp(8611).EmbeddedSurfaceType.APP_CHANNEL) {
+  if (previewFrameSurface === tmp(8606).EmbeddedSurfaceType.APP_CHANNEL) {
     tmp49 = null;
     if (previewAppChannels.length >= 2) {
       let first;

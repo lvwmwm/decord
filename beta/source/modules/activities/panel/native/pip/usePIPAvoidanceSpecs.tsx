@@ -1,10 +1,10 @@
 // Module ID: 17754
 // Function ID: 17755
 // Name: pip/usePIPAvoidanceSpecs
-// Dependencies: [558, 4850, 17118, 17755, 9580, 17675, 17756, 10373, 2]
+// Dependencies: [558, 4850, 17118, 17755, 9575, 17675, 17756, 10373, 2]
 
 // Module 17754 (pip/usePIPAvoidanceSpecs)
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 17675 */;
 import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 17756 */;

@@ -1,12 +1,12 @@
 // Module ID: 14742
 // Function ID: 14743
 // Name: invites
-// Dependencies: [5, 2064, 2065, 5639, 1085, 1096, 14736, 8458, 10937, 10857, 14743, 1106, 10853, 2]
+// Dependencies: [5, 2064, 2065, 5639, 1085, 1096, 14736, 8453, 10937, 10857, 14743, 1106, 10853, 2]
 
 // Module 14742 (invites)
 import Constants2 from "Constants" /* 1085 */;
 import Constants3 from "Constants" /* 5639 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

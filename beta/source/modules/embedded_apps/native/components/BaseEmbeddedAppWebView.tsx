@@ -1,7 +1,7 @@
 // Module ID: 10952
 // Function ID: 10953
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 9066, 1085, 2024, 21, 5092, 3, 1382, 558, 576, 10953, 7522, 10954, 1381, 10941, 10955, 10951, 1265, 573, 5299, 1126, 10808, 1295, 10956, 1384, 10931, 5922, 2]
+// Dependencies: [5, 32, 19, 17, 9061, 1085, 2024, 21, 5092, 3, 1382, 558, 576, 10953, 7517, 10954, 1381, 10941, 10955, 10951, 1265, 573, 5299, 1126, 10808, 1295, 10956, 1384, 10931, 5922, 2]
 
 // Module 10952 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
@@ -15,12 +15,12 @@ import URLUtilsDefault from "URLUtils" /* 1384 */;
 import Constants2 from "Constants" /* 2024 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import usePreviousDefault from "usePrevious" /* 5922 */;
-import WebView2 from "WebView" /* 7522 */;
+import WebView2 from "WebView" /* 7517 */;
 import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9066 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9061 */;
 import createStyles from "createStyles" /* 5092 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

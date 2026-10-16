@@ -1,13 +1,13 @@
 // Module ID: 12133
 // Function ID: 12134
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5910, 5913, 558, 576, 504, 10339, 7738, 2]
+// Dependencies: [19, 5910, 5913, 558, 576, 504, 10339, 7733, 2]
 // Exports: useIsTeenInStrictCountry
 
 // Module 12133 (RegionalTeenUtils)
 import react2 from "react" /* 576 */;
 import CountryCodes from "CountryCodes" /* 5913 */;
-import useUserIsTeen from "useUserIsTeen" /* 7738 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
 import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10339 */;
 import react from "react" /* 19 */;
 import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5910 */;

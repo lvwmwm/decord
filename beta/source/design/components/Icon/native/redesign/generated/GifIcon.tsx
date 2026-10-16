@@ -1,14 +1,14 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9747
+// Function ID: 9748
 // Name: GifIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8112, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8107, 4817, 2]
 
-// Module 9752 (GifIcon)
+// Module 9747 (GifIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8112 */;
+import AssetRegistry from "AssetRegistry" /* 8107 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,15 +1,15 @@
 // Module ID: 10317
 // Function ID: 10318
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 2078, 1085, 21, 558, 576, 10314, 10318, 5056, 10316, 1126, 3442, 10319, 5379, 9394, 9395, 10323, 1112, 5958, 10324, 2]
+// Dependencies: [19, 2078, 1085, 21, 558, 576, 10314, 10318, 5056, 10316, 1126, 3442, 10319, 5379, 9389, 9390, 10323, 1112, 5958, 10324, 2]
 
 // Module 10317 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import FavoritesConstants from "FavoritesConstants" /* 2078 */;
 import _modDef3442 from "module_3442" /* 3442 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
 import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10318 */;
 import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10323 */;
 import react from "react" /* 19 */;

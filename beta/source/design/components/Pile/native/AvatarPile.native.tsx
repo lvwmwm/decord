@@ -1,11 +1,11 @@
 // Module ID: 13152
 // Function ID: 13153
 // Name: AvatarPile
-// Dependencies: [19, 21, 558, 576, 13153, 12362, 11599, 11598, 9017, 2]
+// Dependencies: [19, 21, 558, 576, 13153, 12362, 11599, 11598, 9012, 2]
 
 // Module 13152 (AvatarPile)
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import Pile2 from "Pile" /* 11598 */;
 import ListUtils from "ListUtils" /* 12362 */;
 import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13153 */;

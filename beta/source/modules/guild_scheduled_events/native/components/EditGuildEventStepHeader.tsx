@@ -1,9 +1,9 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8631
+// Function ID: 8632
 // Name: EditGuildEventStepHeader
 // Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 2]
 
-// Module 8636 (EditGuildEventStepHeader)
+// Module 8631 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;

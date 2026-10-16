@@ -1,7 +1,7 @@
 // Module ID: 12584
 // Function ID: 12585
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 9694, 12578, 1085, 21, 4850, 5092, 558, 576, 12585, 12621, 12624, 12625, 12642, 12643, 12644, 12683, 12686, 12577, 504, 5093, 5396, 1265, 6335, 5378, 12594, 1200, 6814, 2]
+// Dependencies: [32, 19, 17, 9689, 12578, 1085, 21, 4850, 5092, 558, 576, 12585, 12621, 12624, 12625, 12642, 12643, 12644, 12683, 12686, 12577, 504, 5093, 5396, 1265, 6335, 5378, 12594, 1200, 6814, 2]
 
 // Module 12584 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNot
 import MessageRequestNotificationDefault from "MessageRequestNotification" /* 12686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9694 */;
+import NativeMenuStore from "NativeMenuStore" /* 9689 */;
 import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
 import Constants from "Constants" /* 1085 */;
 import createStyles from "createStyles" /* 5092 */;

@@ -1,7 +1,7 @@
 // Module ID: 10518
 // Function ID: 10519
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1390, 10519, 1085, 1393, 21, 5092, 587, 558, 576, 1126, 1200, 6621, 6185, 10520, 1265, 10513, 504, 10521, 10522, 4969, 10524, 5371, 9427, 6665, 10525, 9634, 4985, 10527, 9298, 6201, 5088, 10257, 8586, 6265, 6180, 5056, 10607, 2000, 10609, 5049, 1383, 1645, 5934, 6688, 2]
+// Dependencies: [32, 19, 17, 1390, 10519, 1085, 1393, 21, 5092, 587, 558, 576, 1126, 1200, 6621, 6185, 10520, 1265, 10513, 504, 10521, 10522, 4969, 10524, 5371, 9422, 6665, 10525, 9629, 4985, 10527, 9293, 6201, 5088, 10257, 8581, 6265, 6180, 5056, 10607, 2000, 10609, 5049, 1383, 1645, 5934, 6688, 2]
 
 // Module 10518 (EditCustomStatusWithPreview)
 import react2 from "react" /* 576 */;
@@ -19,8 +19,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import Pressables from "Pressables" /* 6185 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6621 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9634 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9629 */;
 import Constants2 from "Constants" /* 10519 */;
 import setCustomStatusDefault from "setCustomStatus" /* 10522 */;
 import removeCustomStatusDefault from "removeCustomStatus" /* 10524 */;

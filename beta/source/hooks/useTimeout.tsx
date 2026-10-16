@@ -19,7 +19,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
   let tmp8;
   let closure_0 = arg0;
   let closure_1 = arg1;
-  const obj = react2;
+  let obj = react2;
   const cResult = obj.c(6);
   const tmp2 = _false(arg0);
   let c2 = tmp2;
@@ -28,8 +28,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
       closure_2.current = current;
     };
     const items = [arg0];
+    let num = 0;
     cResult[0] = arg0;
+    let num2 = 1;
     cResult[1] = fn;
+    let num3 = 2;
     cResult[2] = items;
     tmp4 = items;
     tmp3 = fn;
@@ -37,8 +40,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
     tmp3 = cResult[1];
     tmp4 = cResult[2];
   }
-  React2(tmp3, tmp4);
-  const tmp5 = React2;
+  let tmp5 = React2;
+  let tmp6 = React2(tmp3, tmp4);
   if (cResult[3] !== arg1) {
     const fn2 = function l() {
       let closure_0;
@@ -50,8 +53,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
       }
     };
     const items1 = [arg1, tmp2];
+    let num4 = 3;
     cResult[3] = arg1;
+    let num5 = 4;
     cResult[4] = fn2;
+    let num6 = 5;
     cResult[5] = items1;
     tmp8 = items1;
     tmp7 = fn2;
@@ -66,11 +72,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
   const tmp = _false(arg0);
   let c2 = tmp;
   const items = [arg0];
-  const tmp2 = React2(() => {
+  React2(() => {
     closure_2.current = current;
   }, items);
   const items1 = [arg1, tmp];
-  React2(() => {
+  const tmp3 = React2(() => {
     let closure_0;
     let ref;
     if (null !== closure_1) {
@@ -80,6 +86,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeout(a
     }
   }, items1);
 });
-const result = size.fileFinishedImporting("hooks/useTimeout.tsx");
+let result = size.fileFinishedImporting("hooks/useTimeout.tsx");
 
 export default tmp3;

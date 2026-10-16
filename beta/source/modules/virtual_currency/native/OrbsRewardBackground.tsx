@@ -1,7 +1,7 @@
 // Module ID: 12990
 // Function ID: 12991
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 5081, 1999, 21, 558, 576, 504, 1105, 12991, 6157, 8426, 12992, 2]
+// Dependencies: [32, 19, 5081, 1999, 21, 558, 576, 504, 1105, 12991, 6157, 8421, 12992, 2]
 
 // Module 12990 (OrbsRewardBackground)
 import FastImageDefault from "FastImage" /* 6157 */;
@@ -151,7 +151,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
     if (tmp30) {
       const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: tmp17, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
       obj7 = { uri: _modDef12992 };
-      const VideoComponent = tmp(8426).VideoComponent;
+      const VideoComponent = tmp(8421).VideoComponent;
       tmp30 = closure_7(VideoComponent, obj6);
     }
     cResult[13] = stateFromStores1 === ACTIVE;
@@ -231,7 +231,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
     obj7 = { uri: _modDef12992 };
-    const VideoComponent = tmp(8426).VideoComponent;
+    const VideoComponent = tmp(8421).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }
   children[1] = tmp14Result;

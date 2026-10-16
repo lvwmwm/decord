@@ -1,7 +1,7 @@
 // Module ID: 16750
 // Function ID: 16751
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5081, 6078, 2087, 4939, 5963, 16742, 16747, 16739, 21, 5092, 587, 558, 576, 4818, 504, 6159, 5378, 4967, 1103, 6762, 4850, 4827, 6157, 8162, 16751, 16754, 12362, 16761, 5057, 6098, 6162, 16744, 16762, 2]
+// Dependencies: [19, 5081, 6078, 2087, 4939, 5963, 16742, 16747, 16739, 21, 5092, 587, 558, 576, 4818, 504, 6159, 5378, 4967, 1103, 6762, 4850, 4827, 6157, 8157, 16751, 16754, 12362, 16761, 5057, 6098, 6162, 16744, 16762, 2]
 
 // Module 16750 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
@@ -19,7 +19,7 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8162 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8157 */;
 import ListUtils from "ListUtils" /* 12362 */;
 import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16744 */;
 import react from "react" /* 19 */;

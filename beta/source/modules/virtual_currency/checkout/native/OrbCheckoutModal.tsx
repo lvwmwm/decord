@@ -1,7 +1,7 @@
 // Module ID: 13454
 // Function ID: 13455
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 13455, 10507, 13456, 5377, 13457, 9179, 10164, 1265, 5934, 7515, 7516, 11541, 38, 1279, 1126, 6201, 10603, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 13455, 10507, 13456, 5377, 13457, 9174, 10164, 1265, 5934, 7510, 7511, 11541, 38, 1279, 1126, 6201, 10603, 2]
 // Exports: default
 
 // Module 13454 (OrbCheckoutModal)
@@ -10,7 +10,7 @@ import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9179 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9174 */;
 import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10164 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
 import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13455 */;
@@ -188,7 +188,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrb
   const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
   const tmp = _require;
   if (cResult[0] !== skuId) {
-    const tmpResult = tmp(9179);
+    const tmpResult = tmp(9174);
     let result = tmpResult.get1PShopApplicationIdForSKU(skuId);
     cResult[0] = skuId;
     cResult[1] = result;

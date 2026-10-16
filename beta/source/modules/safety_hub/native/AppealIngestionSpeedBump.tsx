@@ -1,7 +1,7 @@
 // Module ID: 11480
 // Function ID: 11481
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7537, 7513, 1085, 21, 5092, 558, 576, 504, 11473, 11481, 1126, 11479, 11482, 11498, 11499, 5088, 2]
+// Dependencies: [19, 17, 7532, 7508, 1085, 21, 5092, 558, 576, 504, 11473, 11481, 1126, 11479, 11482, 11498, 11499, 5088, 2]
 
 // Module 11480 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummar
 import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11498 */;
 import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11499 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7423
+// Function ID: 7424
 // Name: ClipAnalyticsUtils
-// Dependencies: [5271, 5897, 5110, 7429, 2018, 7763, 1085, 5900, 5292, 5202, 1265, 2]
+// Dependencies: [5271, 5897, 5110, 7424, 2018, 7758, 1085, 5900, 5292, 5202, 1265, 2]
 // Exports: getClipBaseProperties, getClipContextProperties, getClipSaveFailureAnalytics, getClipSavedAnalytics, getClipType, getPreSaveClipAnalytics, trackClipEdited
 
-// Module 7428 (ClipAnalyticsUtils)
+// Module 7423 (ClipAnalyticsUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import isEqualDefault from "isEqual" /* 5202 */;
@@ -13,9 +13,9 @@ import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5271 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import ClipsStore from "ClipsStore" /* 2018 */;
-import ClipsConstants from "ClipsConstants" /* 7763 */;
+import ClipsConstants from "ClipsConstants" /* 7758 */;
 import size from "module_2" /* 2 */;
 
 let map;

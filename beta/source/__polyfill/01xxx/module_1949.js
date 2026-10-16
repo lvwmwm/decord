@@ -288,7 +288,7 @@ let fn = function t() {
   };
   const parse9 = function parse(content, arg1, arg2) {
     let items;
-    obj = { type: "link", content: items, target: content[1], title: "IconComponent" };
+    obj = { type: "link", content: items, target: content[1], title: "code" };
     items = [];
     const obj2 = { type: "text", content: content[1] };
     items[0] = obj2;

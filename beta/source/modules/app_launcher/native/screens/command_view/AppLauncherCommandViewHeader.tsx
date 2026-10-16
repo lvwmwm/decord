@@ -1,13 +1,13 @@
 // Module ID: 11842
 // Function ID: 11843
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1502, 21, 11819, 5092, 587, 558, 576, 11729, 4850, 4818, 8269, 6157, 5088, 1200, 2]
+// Dependencies: [19, 17, 1502, 21, 11819, 5092, 587, 558, 576, 11729, 4850, 4818, 8264, 6157, 5088, 1200, 2]
 
 // Module 11842 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8269 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8264 */;
 import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11729 */;
 import AppLauncherBackButton from "AppLauncherBackButton" /* 11819 */;
 import react from "react" /* 19 */;
@@ -438,7 +438,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let obj7 = scrollOffsetY(4818);
   let str = obj7.useToken(section(587).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(8269);
+  const tmp9 = section(8264);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {

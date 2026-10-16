@@ -1,12 +1,12 @@
 // Module ID: 18312
 // Function ID: 18313
 // Name: getRuleInfo
-// Dependencies: [11450, 8218, 18313, 18315, 16247, 11435, 18316, 5038, 2]
+// Dependencies: [11450, 8213, 18313, 18315, 16247, 11435, 18316, 5038, 2]
 // Exports: getRuleInfo
 
 // Module 18312 (getRuleInfo)
 import LinkIcon from "LinkIcon" /* 5038 */;
-import AtIcon from "AtIcon" /* 8218 */;
+import AtIcon from "AtIcon" /* 8213 */;
 import RobotIcon from "RobotIcon" /* 11435 */;
 import Constants from "Constants" /* 11450 */;
 import MenuIcon from "MenuIcon" /* 16247 */;

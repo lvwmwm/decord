@@ -1,7 +1,7 @@
 // Module ID: 10822
 // Function ID: 10823
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5440, 2065, 2116, 1390, 2064, 2024, 10823, 4739, 10824, 10868, 10867, 10481, 10878, 8513, 11339, 10853, 2]
+// Dependencies: [5, 5440, 2065, 2116, 1390, 2064, 2024, 10823, 4739, 10824, 10868, 10867, 10481, 10878, 8508, 11339, 10853, 2]
 // Exports: default
 
 // Module 10822 (handleJoinEmbeddedActivity)

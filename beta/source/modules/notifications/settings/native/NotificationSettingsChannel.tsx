@@ -1,7 +1,7 @@
 // Module ID: 12597
 // Function ID: 12598
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 5966, 21, 5092, 587, 558, 576, 10447, 1126, 5421, 1503, 6201, 6809, 6804, 504, 12598, 12599, 12603, 12610, 12615, 5379, 8580, 2]
+// Dependencies: [19, 17, 5966, 21, 5092, 587, 558, 576, 10447, 1126, 5421, 1503, 6201, 6809, 6804, 504, 12598, 12599, 12603, 12610, 12615, 5379, 8575, 2]
 
 // Module 12597 (NotificationSettingsChannel)
 import react_native from "react-native" /* 17 */;
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                   tmp37[3] = tmp26;
                   tmp37[4] = tmp27;
                   tmp37[5] = tmp31;
-                  const tmp38 = closure_7(tmp(8580).Form, obj8);
+                  const tmp38 = closure_7(tmp(8575).Form, obj8);
                   cResult[31] = tmp9.screenContainer;
                   cResult[32] = tmp26;
                   cResult[33] = tmp27;

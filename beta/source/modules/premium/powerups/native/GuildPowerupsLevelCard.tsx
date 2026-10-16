@@ -1,7 +1,7 @@
 // Module ID: 12302
 // Function ID: 12303
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5008, 1085, 12303, 21, 5092, 587, 558, 576, 5391, 9410, 6664, 12286, 12263, 5088, 1126, 2600, 12238, 12255, 12304, 12260, 12305, 2]
+// Dependencies: [19, 17, 5008, 1085, 12303, 21, 5092, 587, 558, 576, 5391, 9405, 6664, 12286, 12263, 5088, 1126, 2600, 12238, 12255, 12304, 12260, 12305, 2]
 
 // Module 12302 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
@@ -46,7 +46,7 @@ let tmp;
 let tmp6;
 let unpackModuleId;
 const Text_Text = tmp(5088);
-const BoostGemIcon2 = tmp(9410);
+const BoostGemIcon2 = tmp(9405);
 const GuildPowerupsCardFooter = tmp(12260);
 const GuildPowerupsCardDefault = tmp6(12305);
 const View = react_native.View;

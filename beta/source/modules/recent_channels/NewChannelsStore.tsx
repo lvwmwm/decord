@@ -1,9 +1,9 @@
-// Module ID: 7255
-// Function ID: 7256
+// Module ID: 7250
+// Function ID: 7251
 // Name: NewChannelsStore
 // Dependencies: [1244, 502, 2065, 4748, 2125, 2087, 6035, 5966, 1085, 1102, 6063, 6800, 11, 504, 5943, 584, 2]
 
-// Module 7255 (NewChannelsStore)
+// Module 7250 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

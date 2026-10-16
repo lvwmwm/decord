@@ -1,7 +1,7 @@
 // Module ID: 12083
 // Function ID: 12084
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 2087, 5966, 5967, 21, 5092, 558, 576, 504, 6159, 1126, 6839, 1200, 12084, 8580, 6800, 5056, 12085, 12086, 6809, 6804, 6899, 2]
+// Dependencies: [19, 17, 2087, 5966, 5967, 21, 5092, 558, 576, 504, 6159, 1126, 6839, 1200, 12084, 8575, 6800, 5056, 12085, 12086, 6809, 6804, 6899, 2]
 
 // Module 12083 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     const _Symbol3 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { text: intl2.string(tmp(1126).t.e6RscS) };
-      const FormLabel = tmp(8580).FormLabel;
+      const FormLabel = tmp(8575).FormLabel;
       intl2 = tmp(1126).intl;
       const tmp31 = closure_7(FormLabel, obj5);
       cResult[15] = tmp31;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
               obj2.hideActionSheet();
             }
       };
-      const tmp34 = closure_7(tmp(8580).FormRow, obj6);
+      const tmp34 = closure_7(tmp(8575).FormRow, obj6);
       cResult[16] = guildId;
       cResult[17] = tmp34;
       tmp32 = tmp34;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
     if (cResult[22] !== tmp39) {
       const obj8 = { text: tmp39 };
-      const tmp43 = closure_7(tmp(8580).FormLabel, obj8);
+      const tmp43 = closure_7(tmp(8575).FormLabel, obj8);
       cResult[22] = tmp39;
       cResult[23] = tmp43;
       tmp41 = tmp43;
@@ -221,7 +221,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
         }
       }
       const obj10 = { leading: tmp36, label: tmp41, onPress: tmp44 };
-      const tmp47 = closure_7(tmp(8580).FormRow, obj10);
+      const tmp47 = closure_7(tmp(8575).FormRow, obj10);
       cResult[27] = tmp36;
       cResult[28] = tmp41;
       cResult[29] = tmp44;
@@ -286,14 +286,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(8580).FormRow;
+  const FormRow = guildId(8575).FormRow;
   obj7 = { source: stateFromStores1(12084) };
   Icon = guildId(1200).Icon;
   obj8 = { text: intl2.string(guildId(1126).t.e6RscS) };
-  FormLabel = guildId(8580).FormLabel;
+  FormLabel = guildId(8575).FormLabel;
   intl2 = guildId(1126).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(8580).FormRow;
+  const FormRow2 = guildId(8575).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
   };
   obj10 = { source: stateFromStores1(stateFromStores1 ? 12085 : 12086) };
   Icon2 = guildId(1200).Icon;
-  FormLabel2 = tmp2(8580).FormLabel;
+  FormLabel2 = tmp2(8575).FormLabel;
   const intl3 = tmp2(1126).intl;
   const string = intl3.string;
   const t = tmp2(1126).t;

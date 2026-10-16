@@ -1,7 +1,7 @@
 // Module ID: 14885
 // Function ID: 14886
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 2125, 6905, 1096, 21, 5092, 587, 558, 576, 504, 8291, 8384, 10507, 8282, 9016, 1200, 13476, 1126, 14874, 2]
+// Dependencies: [19, 17, 2125, 6905, 1096, 21, 5092, 587, 558, 576, 504, 8286, 8379, 10507, 8277, 9011, 1200, 13476, 1126, 14874, 2]
 
 // Module 14885 (UserProfileAvatarDecorationEditButton)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1200 */;
 import Constants2 from "Constants" /* 6905 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8282 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9016 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8277 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9011 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13476 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,14 +1,14 @@
 // Module ID: 16849
 // Function ID: 16850
 // Name: YouBarName
-// Dependencies: [19, 17, 5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 21, 5092, 587, 558, 576, 10263, 8859, 10533, 504, 10513, 10239, 10237, 10238, 16850, 10235, 10257, 5088, 4962, 2]
+// Dependencies: [19, 17, 5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 21, 5092, 587, 558, 576, 10263, 8854, 10533, 504, 10513, 10239, 10237, 10238, 16850, 10235, 10257, 5088, 4962, 2]
 
 // Module 16849 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GuildTagDefault from "GuildTag" /* 8859 */;
+import GuildTagDefault from "GuildTag" /* 8854 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10237 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10238 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;

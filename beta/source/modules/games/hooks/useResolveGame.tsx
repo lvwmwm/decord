@@ -1,9 +1,9 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 8879
+// Function ID: 8880
 // Name: useResolveGame
 // Dependencies: [19, 558, 576, 6858, 7009, 2]
 
-// Module 8884 (useResolveGame)
+// Module 8879 (useResolveGame)
 import react2 from "react" /* 576 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
 import react from "react" /* 19 */;

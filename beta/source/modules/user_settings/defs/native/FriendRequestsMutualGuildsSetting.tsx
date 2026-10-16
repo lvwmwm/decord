@@ -1,7 +1,7 @@
 // Module ID: 15261
 // Function ID: 15262
 // Name: FriendRequestsMutualGuildsSetting
-// Dependencies: [19, 7993, 1085, 558, 15096, 576, 2041, 6684, 1403, 10663, 1126, 2]
+// Dependencies: [19, 7988, 1085, 558, 15096, 576, 2041, 6684, 1403, 10663, 1126, 2]
 
 // Module 15261 (FriendRequestsMutualGuildsSetting)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

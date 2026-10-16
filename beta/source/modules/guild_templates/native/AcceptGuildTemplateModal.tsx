@@ -1,7 +1,7 @@
 // Module ID: 11347
 // Function ID: 11348
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 7180, 1085, 21, 5092, 6259, 558, 576, 504, 6097, 11348, 11349, 11346, 7769, 11350, 6814, 6201, 6688, 2]
+// Dependencies: [5, 32, 19, 7175, 1085, 21, 5092, 6259, 558, 576, 504, 6097, 11348, 11349, 11346, 7764, 11350, 6814, 6201, 6688, 2]
 
 // Module 11347 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionC
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7180 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7175 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

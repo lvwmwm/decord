@@ -1,15 +1,15 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7708
+// Function ID: 7709
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 5917, 21, 558, 576, 7714, 5088, 7498, 2128, 1126, 3184, 5305, 5305, 2]
+// Dependencies: [19, 5917, 21, 558, 576, 7709, 5088, 7493, 2128, 1126, 3184, 5305, 5305, 2]
 
-// Module 7713 (ManualReviewDecidedTeenAlertModal)
+// Module 7708 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _modDef3184 from "module_3184" /* 3184 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
-import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 7714 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 7709 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11735
 // Function ID: 11736
 // Name: useActivityShelfItem
-// Dependencies: [5, 2064, 2024, 1085, 10802, 558, 576, 11718, 1382, 10962, 11736, 11737, 1998, 9233, 10919, 10918, 6858, 4739, 6852, 10803, 10854, 10804, 7015, 11615, 10822, 10812, 2]
+// Dependencies: [5, 2064, 2024, 1085, 10802, 558, 576, 11718, 1382, 10962, 11736, 11737, 1998, 9228, 10919, 10918, 6858, 4739, 6852, 10803, 10854, 10804, 7015, 11615, 10822, 10812, 2]
 // Exports: getStaffReleasePhase
 
 // Module 11735 (useActivityShelfItem)
@@ -11,7 +11,7 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Constants2 from "Constants" /* 2024 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9233 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
 import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10812 */;

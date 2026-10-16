@@ -1,7 +1,7 @@
 // Module ID: 11661
 // Function ID: 11662
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 2062, 558, 576, 2049, 7100, 1126, 4924, 9443, 2]
+// Dependencies: [109, 32, 19, 2062, 558, 576, 2049, 7100, 1126, 4924, 9438, 2]
 
 // Module 11661 (RefreshChatInputCoachmark)
 import react2 from "react" /* 576 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
-const useCoachmark = tmp(9443);
+const useCoachmark = tmp(9438);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let ReactCompilerGating = ReactCompilerGating_mod;

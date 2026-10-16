@@ -1,10 +1,10 @@
-// Module ID: 9094
-// Function ID: 9095
+// Module ID: 9089
+// Function ID: 9090
 // Name: useSimilarGames
-// Dependencies: [2020, 1390, 8965, 558, 576, 8964, 7009, 504, 8881, 8238, 2]
+// Dependencies: [2020, 1390, 8960, 558, 576, 8959, 7009, 504, 8876, 8233, 2]
 
-// Module 9094 (useSimilarGames)
-import SimilarGamesConstants from "SimilarGamesConstants" /* 8965 */;
+// Module 9089 (useSimilarGames)
+import SimilarGamesConstants from "SimilarGamesConstants" /* 8960 */;
 import GameStore from "GameStore" /* 2020 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
     tmp4 = cResult[1];
   }
   const tmp7 = !tmp4;
-  let tmpResult = tmp(8964);
+  let tmpResult = tmp(8959);
   const similarGameIds = tmpResult.useSimilarGameIds(arg0, tmp7);
   ({ data, isLoading, error } = similarGameIds);
   if (tmp4) {
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   let tmp7;
   const hasItem = set.has(arg0);
   let tmp2 = !hasItem;
-  let obj = data(8964);
+  let obj = data(8959);
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp2);
   ({ data, isLoading, error } = similarGameIds);
   if (hasItem) {

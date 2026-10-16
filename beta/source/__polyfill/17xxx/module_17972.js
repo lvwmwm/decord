@@ -1,10 +1,10 @@
 // Module ID: 17972
 // Function ID: 17973
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 17971, 8745]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 17971, 8740]
 
 // Module 17972
 import Fragment from "Fragment" /* 21 */;
-import _modDef8745 from "module_8745" /* 8745 */;
+import _modDef8740 from "module_8740" /* 8740 */;
 import _modDef17971 from "module_17971" /* 17971 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
@@ -139,7 +139,7 @@ let items = [
   }
 ];
 const importDefaultResultResult = _createClass(AnimatedCircularProgress, items);
-let obj = { prefill: _modDef8745.number, duration: _modDef8745.number, easing: _modDef8745.func, onAnimationComplete: _modDef8745.func, useNativeDriver: _modDef8745.bool, delay: _modDef8745.number };
+let obj = { prefill: _modDef8740.number, duration: _modDef8740.number, easing: _modDef8740.func, onAnimationComplete: _modDef8740.func, useNativeDriver: _modDef8740.bool, delay: _modDef8740.number };
 let merged = Object.assign(_modDef17971.propTypes);
 importDefaultResultResult.propTypes = obj;
 let obj2 = { duration: 500, easing: Easing.out(Easing.ease), prefill: 0, useNativeDriver: false, delay: 0 };

@@ -1,7 +1,7 @@
 // Module ID: 15885
 // Function ID: 15886
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1390, 14653, 1085, 21, 5092, 587, 558, 576, 5088, 9755, 6180, 4702, 8766, 6185, 6886, 5042, 504, 11839, 6896, 5049, 15880, 6265, 6739, 5377, 8625, 2]
+// Dependencies: [32, 19, 17, 1390, 14653, 1085, 21, 5092, 587, 558, 576, 5088, 9750, 6180, 4702, 8761, 6185, 6886, 5042, 504, 11839, 6896, 5049, 15880, 6265, 6739, 5377, 8620, 2]
 
 // Module 15885 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
@@ -117,7 +117,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_8(tmp(9755).AnalyticsIcon, {});
+    const tmp13 = closure_8(tmp(9750).AnalyticsIcon, {});
     cResult[2] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -203,7 +203,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   let tmp6 = View;
   let obj = {
     arrow: !tmp5Result2,
-    icon: closure_8(fingerprint(9755).AnalyticsIcon, {}),
+    icon: closure_8(fingerprint(9750).AnalyticsIcon, {}),
     label: event,
     subLabel: str2,
     onPress() {
@@ -237,7 +237,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
     let tmp7Result = null != user;
     const tmp12 = importDefault;
     if (tmp7Result) {
-      const obj7 = { name: "User ", children: closure_8(tmp12(8766), obj8) };
+      const obj7 = { name: "User ", children: closure_8(tmp12(8761), obj8) };
       obj8 = { user };
       tmp7Result = tmp7(tmp11, obj7);
     }
@@ -464,7 +464,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
             }
           }
           const obj9 = { ListHeaderComponent: tmp43, contentContainerStyle: tmp4.contentContainer, extraData: stateFromStores, data: arr4, renderItem: tmp46 };
-          const tmp49 = closure_8(trimmed(8625).FlashList, obj9);
+          const tmp49 = closure_8(trimmed(8620).FlashList, obj9);
           cResult[26] = arr4;
           cResult[27] = stateFromStores;
           cResult[28] = tmp4.contentContainer;
@@ -559,7 +559,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     reversed = items1;
   }
   const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
-  FlashList = tmp2(8625).FlashList;
+  FlashList = tmp2(8620).FlashList;
   const Stack = tmp2(5377).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(6265).TableRowGroup;

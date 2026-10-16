@@ -1,17 +1,17 @@
-// Module ID: 8100
-// Function ID: 8101
+// Module ID: 8095
+// Function ID: 8096
 // Name: VoiceSessionUtils
-// Dependencies: [19, 7348, 2065, 1390, 8101, 558, 576, 504, 7998, 5627, 1126, 12, 2]
+// Dependencies: [19, 7343, 2065, 1390, 8096, 558, 576, 504, 7993, 5627, 1126, 12, 2]
 // Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent
 
-// Module 8100 (VoiceSessionUtils)
+// Module 8095 (VoiceSessionUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7998 */;
-import maybeSortByProbability from "maybeSortByProbability" /* 8101 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7993 */;
+import maybeSortByProbability from "maybeSortByProbability" /* 8096 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -201,7 +201,7 @@ export const getVoiceSessionMessageContent = function getVoiceSessionMessageCont
     reduced = [];
   }
   const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
-  const tmp3Result = tmp3(8101);
+  const tmp3Result = tmp3(8096);
   const result = tmp3Result.maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
   const mapped = result.map((user) => {
     let obj2;

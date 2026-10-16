@@ -1,7 +1,7 @@
 // Module ID: 11743
 // Function ID: 11744
 // Name: useBannerBots
-// Dependencies: [19, 2087, 11723, 558, 576, 504, 9255, 11744, 11715, 2]
+// Dependencies: [19, 2087, 11723, 558, 576, 504, 9250, 11744, 11715, 2]
 
 // Module 11743 (useBannerBots)
 import get_initialized from "get initialized" /* 504 */;
@@ -65,7 +65,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrec
     if (cResult[4] === stateFromStores) {
       tmp11 = cResult[5];
     }
-    const tmpResult2 = context(9255);
+    const tmpResult2 = context(9250);
     return tmpResult2.useTopCommands(tmp11);
   }
   const obj2 = { channel: context.channel, guild: stateFromStores };
@@ -89,7 +89,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrec
       return getGuild(guild_id);
     })
   };
-  const obj3 = context(9255);
+  const obj3 = context(9250);
   return obj3.useTopCommands(obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

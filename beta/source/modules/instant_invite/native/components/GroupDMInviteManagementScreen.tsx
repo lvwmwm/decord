@@ -1,7 +1,7 @@
 // Module ID: 10288
 // Function ID: 10289
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8499, 9698, 1085, 21, 5092, 558, 576, 1295, 5396, 12, 587, 10289, 6727, 1200, 10307, 10308, 1126, 6201, 1273, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 8494, 9693, 1085, 21, 5092, 558, 576, 1295, 5396, 12, 587, 10289, 6727, 1200, 10307, 10308, 1126, 6201, 1273, 6688, 2]
 
 // Module 10288 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
@@ -14,8 +14,8 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InviteRecord from "InviteRecord" /* 8499 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9698 */;
+import InviteRecord from "InviteRecord" /* 8494 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9693 */;
 import Constants from "Constants" /* 1085 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

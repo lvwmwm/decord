@@ -1,14 +1,14 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8840
+// Function ID: 8841
 // Name: SecureFramesVerificationBottomSheet
-// Dependencies: [19, 17, 8830, 21, 5092, 587, 558, 576, 8837, 5056, 6894, 1126, 5088, 6839, 6185, 8223, 5377, 8846, 8843, 6840, 2]
+// Dependencies: [19, 17, 8825, 21, 5092, 587, 558, 576, 8832, 5056, 6894, 1126, 5088, 6839, 6185, 8218, 5377, 8841, 8838, 6840, 2]
 
-// Module 8845 (SecureFramesVerificationBottomSheet)
+// Module 8840 (SecureFramesVerificationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import react from "react" /* 19 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = onShareClick(8837);
+  const tmpResult = onShareClick(8832);
   const readableSecureFramesFingerprint = tmpResult.useReadableSecureFramesFingerprint(tmp5);
   if (cResult[2] === readableSecureFramesFingerprint) {
     let tmp9;
@@ -195,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   onShareClick = onShareClick.onShareClick;
   ({ title, subtitle, footer, epochAuthenticator } = onShareClick);
   const tmp = closure_10();
-  let obj = onShareClick(8837);
+  let obj = onShareClick(8832);
   let obj2 = { fingerprintBase64: epochAuthenticator, chunkSize, desiredLength };
   const readableSecureFramesFingerprint = obj.useReadableSecureFramesFingerprint(obj2);
   const items = [readableSecureFramesFingerprint, onShareClick];
@@ -227,13 +227,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   const obj9 = { style: tmp.iconContainer, children: closure_8(LockIcon, obj10) };
   const Stack = onShareClick(5377).Stack;
   obj10 = { style: tmp.icon, color: readableSecureFramesFingerprint(587).colors.TEXT_SUBTLE };
-  LockIcon = onShareClick(8223).LockIcon;
+  LockIcon = onShareClick(8218).LockIcon;
   items1 = [closure_8(View, obj9), closure_8(onShareClick(5088).Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title }), ];
   const obj11 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: subtitle };
   items1[2] = closure_8(onShareClick(5088).Text, obj11);
   items2 = [closure_9(Stack, obj8), , ];
   const obj12 = { title: intl3.string(onShareClick(1126).t.cgBTyO), trailing: tmp7Result, chunks: readableSecureFramesFingerprint, columns };
-  const tmp11 = readableSecureFramesFingerprint(8843);
+  const tmp11 = readableSecureFramesFingerprint(8838);
   intl3 = onShareClick(1126).intl;
   tmp7Result = null != readableSecureFramesFingerprint;
   const tmp10 = readableSecureFramesFingerprint;
@@ -242,7 +242,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   tmp9 = View;
   if (tmp7Result) {
     const obj13 = { chunks: readableSecureFramesFingerprint };
-    tmp7Result = tmp7(tmp10(8846), obj13);
+    tmp7Result = tmp7(tmp10(8841), obj13);
   }
   items2[1] = closure_8(tmp11, obj12);
   const obj14 = { style: tmp.footer, variant: "text-xs/normal", color: "text-muted", children: footer };

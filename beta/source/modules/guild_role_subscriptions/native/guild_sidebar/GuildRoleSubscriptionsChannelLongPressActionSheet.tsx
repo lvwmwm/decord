@@ -1,7 +1,7 @@
 // Module ID: 16642
 // Function ID: 16643
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2072, 21, 5092, 587, 558, 576, 1200, 12561, 1126, 6839, 16534, 8580, 10335, 6899, 2]
+// Dependencies: [19, 17, 2072, 21, 5092, 587, 558, 576, 1200, 12561, 1126, 6839, 16534, 8575, 10335, 6899, 2]
 
 // Module 16642 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1200 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import Form from "Form" /* 8580 */;
+import Form from "Form" /* 8575 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10335 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12561 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 16534 */;
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { text: intl2.string(guildId(1126).t.WqhZss) };
-    const FormLabel = tmp(8580).FormLabel;
+    const FormLabel = tmp(8575).FormLabel;
     intl2 = tmp(1126).intl;
     const tmp24 = closure_5(FormLabel, obj6);
     cResult[7] = tmp24;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const tmp26 = closure_5(guildId(8580).FormRow, obj8);
+  const tmp26 = closure_5(guildId(8575).FormRow, obj8);
   cResult[8] = guildId;
   cResult[9] = onClose;
   cResult[10] = tmp26;

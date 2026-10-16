@@ -1,7 +1,7 @@
 // Module ID: 16848
 // Function ID: 16849
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5081, 5759, 1390, 15373, 1085, 21, 5092, 587, 558, 576, 504, 1200, 4827, 4850, 6053, 9017, 5378, 4818, 9016, 8282, 5057, 7094, 2000, 6335, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5759, 1390, 15373, 1085, 21, 5092, 587, 558, 576, 504, 1200, 4827, 4850, 6053, 9012, 5378, 4818, 9011, 8277, 5057, 7094, 2000, 6335, 2]
 
 // Module 16848 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native2 from "native" /* 4827 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

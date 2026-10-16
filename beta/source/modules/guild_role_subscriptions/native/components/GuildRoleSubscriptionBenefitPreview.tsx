@@ -1,7 +1,7 @@
 // Module ID: 18582
 // Function ID: 18583
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 15498, 21, 5092, 558, 576, 15533, 1200, 11018, 5088, 4764, 15526, 5421, 8159, 1126, 2]
+// Dependencies: [19, 17, 15498, 21, 5092, 558, 576, 15533, 1200, 11018, 5088, 4764, 15526, 5421, 8154, 1126, 2]
 
 // Module 18582 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11018 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
 import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15526 */;

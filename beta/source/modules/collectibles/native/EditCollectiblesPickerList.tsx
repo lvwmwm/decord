@@ -1,7 +1,7 @@
 // Module ID: 13479
 // Function ID: 13480
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5092, 13474, 558, 576, 5088, 12, 8625, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 13474, 558, 576, 5088, 12, 8620, 2]
 
 // Module 13479 (EditCollectiblesPickerList)
 import Fragment from "Fragment" /* 21 */;

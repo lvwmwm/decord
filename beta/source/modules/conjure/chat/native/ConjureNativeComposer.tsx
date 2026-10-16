@@ -1,7 +1,7 @@
 // Module ID: 17322
 // Function ID: 17323
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5081, 13227, 17182, 21, 587, 5092, 1126, 3849, 558, 576, 4818, 7572, 10019, 17323, 11664, 17180, 504, 17060, 17306, 12797, 11585, 10248, 12798, 15840, 5056, 17099, 11937, 17222, 15280, 5040, 11945, 5088, 10309, 9363, 11951, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 13227, 17182, 21, 587, 5092, 1126, 3849, 558, 576, 4818, 7567, 10014, 17323, 11664, 17180, 504, 17060, 17306, 12797, 11585, 10248, 12798, 15840, 5056, 17099, 11937, 17222, 15280, 5040, 11945, 5088, 10309, 9358, 11951, 4827, 2]
 
 // Module 17322 (ConjureNativeComposer)
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import _modDef3849 from "module_3849" /* 3849 */;
 import useToken from "useToken" /* 4818 */;
 import SendMessageIcon from "SendMessageIcon" /* 5040 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import ImageCarousel from "ImageCarousel" /* 10019 */;
+import ImageCarousel from "ImageCarousel" /* 10014 */;
 import MusicIcon from "MusicIcon" /* 10248 */;
 import PlusLargeIcon from "PlusLargeIcon" /* 10309 */;
 import ImagesIcon from "ImagesIcon" /* 11585 */;
@@ -213,7 +213,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       if ("error" === draft.status) {
         const obj7 = { style: tmp4.draftOverlay, children: unpackModuleId(WarningIcon, obj8) };
         obj8 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        WarningIcon = tmp(7572).WarningIcon;
+        WarningIcon = tmp(7567).WarningIcon;
         tmp21 = unpackModuleId(metroImportDefault, obj7);
       }
     }
@@ -266,7 +266,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     if ("error" === draft.status) {
       const obj7 = { style: tmp.draftOverlay, children: unpackModuleId(WarningIcon, obj13) };
       obj13 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      WarningIcon = tmp2(7572).WarningIcon;
+      WarningIcon = tmp2(7567).WarningIcon;
       tmp7Result = tmp7(metroImportDefault, obj7);
     }
   }

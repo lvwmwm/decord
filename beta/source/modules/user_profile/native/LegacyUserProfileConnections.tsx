@@ -1,7 +1,7 @@
 // Module ID: 10729
 // Function ID: 10730
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2129, 1404, 4963, 7321, 1085, 1204, 6877, 21, 5092, 587, 558, 576, 6876, 10730, 5763, 1415, 4969, 1200, 10733, 10734, 4818, 10735, 10736, 5057, 6886, 4808, 1126, 8491, 5107, 4806, 6185, 5088, 4827, 504, 7225, 10737, 2]
+// Dependencies: [19, 17, 2129, 1404, 4963, 7316, 1085, 1204, 6877, 21, 5092, 587, 558, 576, 6876, 10730, 5763, 1415, 4969, 1200, 10733, 10734, 4818, 10735, 10736, 5057, 6886, 4808, 1126, 8486, 5107, 4806, 6185, 5088, 4827, 504, 7220, 10737, 2]
 
 // Module 10729 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 587 */;
@@ -14,13 +14,13 @@ import Text_Text from "Text/Text" /* 5088 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
 import Constants2 from "Constants" /* 6877 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import StreamerModeStore from "StreamerModeStore" /* 4963 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -939,7 +939,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
                   if (null != applicationRoleConnection.application.bot) {
                     const self = this;
                     const self2 = this;
-                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
+                    const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
                     const Avatar = native.Avatar;
                     tmp10 = new UserRecord(applicationRoleConnection.application.bot);
                     tmp5 = syncedClientThemes(Avatar, obj2);
@@ -1040,7 +1040,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
       if (null != applicationRoleConnection.application.bot) {
         const self = this;
         const self2 = this;
-        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
+        const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
         const Avatar = native.Avatar;
         tmp10 = new UserRecord(applicationRoleConnection.application.bot);
         tmp5 = syncedClientThemes(Avatar, obj2);

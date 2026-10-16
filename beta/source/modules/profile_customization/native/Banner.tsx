@@ -1,9 +1,9 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8376
+// Function ID: 8377
 // Name: Banner
 // Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 1103, 6157, 2]
 
-// Module 8381 (Banner)
+// Module 8376 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

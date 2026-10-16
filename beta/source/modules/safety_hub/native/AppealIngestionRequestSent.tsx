@@ -1,7 +1,7 @@
 // Module ID: 11504
 // Function ID: 11505
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7513, 21, 5092, 558, 576, 11481, 1126, 6157, 11505, 11479, 5088, 11499, 2]
+// Dependencies: [19, 17, 7508, 21, 5092, 558, 576, 11481, 1126, 6157, 11505, 11479, 5088, 11499, 2]
 
 // Module 11504 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11499 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11505 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

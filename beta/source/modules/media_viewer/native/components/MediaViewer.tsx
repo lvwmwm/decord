@@ -1,13 +1,13 @@
 // Module ID: 13079
 // Function ID: 13080
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1382, 558, 576, 4850, 13080, 13081, 8395, 6761, 6335, 6852, 6879, 8420, 13085, 5372, 5093, 8390, 8451, 10361, 4851, 10829, 2]
+// Dependencies: [32, 19, 17, 21, 1382, 558, 576, 4850, 13080, 13081, 8390, 6761, 6335, 6852, 6879, 8415, 13085, 5372, 5093, 8385, 8446, 10361, 4851, 10829, 2]
 
 // Module 13079 (MediaViewer)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
-import useVideoControls from "useVideoControls" /* 8390 */;
+import useVideoControls from "useVideoControls" /* 8385 */;
 import MediaViewerItem2 from "MediaViewerItem" /* 13081 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(8420);
+const MediaViewerDimensionsContext = tmp(8415);
 function MediaViewer(arg0) {
   let closure_2;
   let height;

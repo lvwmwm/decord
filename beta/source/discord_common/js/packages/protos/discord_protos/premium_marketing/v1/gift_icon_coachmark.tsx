@@ -1,12 +1,12 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9131
+// Function ID: 9132
 // Name: gift_icon_coachmark
-// Dependencies: [32, 1210, 9137, 9127, 2]
+// Dependencies: [32, 1210, 9132, 9122, 2]
 
-// Module 9136 (gift_icon_coachmark)
+// Module 9131 (gift_icon_coachmark)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9127 */;
-import theme_aware_asset from "theme_aware_asset" /* 9137 */;
+import localized_string from "localized_string" /* 9122 */;
+import theme_aware_asset from "theme_aware_asset" /* 9132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

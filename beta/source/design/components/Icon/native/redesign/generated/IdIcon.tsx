@@ -1,14 +1,14 @@
-// Module ID: 10017
-// Function ID: 10018
+// Module ID: 10012
+// Function ID: 10013
 // Name: IdIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10018, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10013, 4817, 2]
 
-// Module 10017 (IdIcon)
+// Module 10012 (IdIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10018 */;
+import AssetRegistry from "AssetRegistry" /* 10013 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

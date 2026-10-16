@@ -1,14 +1,14 @@
 // Module ID: 16853
 // Function ID: 16854
 // Name: YouBarButton
-// Dependencies: [19, 17, 15373, 21, 5092, 587, 558, 576, 9017, 9303, 7574, 2]
+// Dependencies: [19, 17, 15373, 21, 5092, 587, 558, 576, 9012, 9298, 7569, 2]
 
 // Module 16853 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ClipViewDefault from "ClipView" /* 9017 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9303 */;
+import ClipViewDefault from "ClipView" /* 9012 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9298 */;
 import react from "react" /* 19 */;
 import YouBarConstants from "YouBarConstants" /* 15373 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,8 +22,8 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const IconButton2 = tmp(7574);
-const ClipView = tmp(9017);
+const IconButton2 = tmp(7569);
+const ClipView = tmp(9012);
 const View = react_native.View;
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

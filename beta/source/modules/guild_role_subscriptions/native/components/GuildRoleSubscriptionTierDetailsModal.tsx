@@ -1,13 +1,13 @@
 // Module ID: 18591
 // Function ID: 18592
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 15498, 1085, 21, 558, 576, 14125, 18571, 15520, 15505, 18548, 1126, 8677, 18554, 8580, 1200, 18592, 18555, 2]
+// Dependencies: [32, 19, 15498, 1085, 21, 558, 576, 14125, 18571, 15520, 15505, 18548, 1126, 8672, 18554, 8575, 1200, 18592, 18555, 2]
 
 // Module 18591 (GuildRoleSubscriptionTierDetailsModal)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
-import FormHeaderDefault from "FormHeader" /* 8677 */;
+import FormHeaderDefault from "FormHeader" /* 8672 */;
 import FormStylesDefault from "FormStyles" /* 14125 */;
 import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15505 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
@@ -34,7 +34,7 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const native = tmp4(1200);
-const Form = tmp4(8580);
+const Form = tmp4(8575);
 const FormPriceTierDefault = tmp(18592);
 ({ GuildRoleSubscriptionsTierScenes: hasOwnProperty, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroRequire, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: metroImportDefault } = GuildRoleSubscriptionsConstants);
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;

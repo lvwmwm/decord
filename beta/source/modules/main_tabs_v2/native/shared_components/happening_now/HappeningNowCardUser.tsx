@@ -1,7 +1,7 @@
 // Module ID: 16525
 // Function ID: 16526
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 5108, 1390, 15589, 1085, 21, 1200, 5092, 6852, 504, 1265, 8304, 2000, 4962, 8651, 15590, 8385, 2]
+// Dependencies: [19, 17, 5108, 1390, 15589, 1085, 21, 1200, 5092, 6852, 504, 1265, 8299, 2000, 4962, 8646, 15590, 8380, 2]
 
 // Module 16525 (HappeningNowCardUser)
 import react_native from "react-native" /* 17 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function HappeningNowCardUser(index) {
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
     const tmp = dependencyMap;
     if (null != stateFromStores) {
-      const promise = asyncRequire(8304, tmp.paths);
+      const promise = asyncRequire(8299, tmp.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

@@ -1,7 +1,7 @@
 // Module ID: 13250
 // Function ID: 13251
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 502, 8308, 21, 5092, 587, 558, 576, 8879, 8880, 8315, 6157, 13251, 5088, 13256, 2031, 13257, 504, 12, 7322, 1126, 13259, 13263, 6904, 7326, 13265, 7327, 13373, 13377, 2]
+// Dependencies: [32, 19, 17, 502, 8303, 21, 5092, 587, 558, 576, 8874, 8875, 8310, 6157, 13251, 5088, 13256, 2031, 13257, 504, 12, 7317, 1126, 13259, 13263, 6904, 7321, 13265, 7322, 13373, 13377, 2]
 
 // Module 13250 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
@@ -9,9 +9,9 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import StringUtils from "StringUtils" /* 2031 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7326 */;
-import Constants from "Constants" /* 8308 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
+import Constants from "Constants" /* 8303 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 13256 */;
 import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13265 */;
 import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 13373 */;
@@ -46,8 +46,8 @@ let obj9;
 let tmp;
 let unpackModuleId;
 const Text_Text = tmp(5088);
-const UserProfilePersonalWidget = tmp(7327);
-const GameProfileAnalyticUtils = tmp(8879);
+const UserProfilePersonalWidget = tmp(7322);
+const GameProfileAnalyticUtils = tmp(8874);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
@@ -997,7 +997,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     arr2 = cResult[4];
   }
   const type = widget.type;
-  if (userId(7322).WidgetType.FAVORITE_GAMES === type) {
+  if (userId(7317).WidgetType.FAVORITE_GAMES === type) {
     if (cResult[5] === tmp12) {
       if (cResult[6] === result) {
         if (cResult[7] === disableInteraction) {
@@ -1023,7 +1023,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     cResult[9] = userId;
     cResult[10] = tmp54;
     tmp53 = tmp54;
-  } else if (userId(7322).WidgetType.CURRENT_GAMES === type) {
+  } else if (userId(7317).WidgetType.CURRENT_GAMES === type) {
     if (cResult[11] === tmp10) {
       let arr5;
       if (cResult[12] === arr2) {
@@ -1128,8 +1128,8 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     cResult[13] = substr;
     arr5 = substr;
   } else {
-    if (userId(7322).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-      if (userId(7322).WidgetType.PLAYED_GAMES !== type) {
+    if (userId(7317).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+      if (userId(7317).WidgetType.PLAYED_GAMES !== type) {
         return null;
       }
     }

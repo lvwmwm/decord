@@ -1,16 +1,16 @@
 // Module ID: 12347
 // Function ID: 12348
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7348, 5963, 7321, 558, 576, 504, 12, 8663, 2]
+// Dependencies: [32, 19, 7343, 5963, 7316, 558, 576, 504, 12, 8658, 2]
 
 // Module 12347 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 8663 */;
+import reactDefault from "react" /* 8658 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

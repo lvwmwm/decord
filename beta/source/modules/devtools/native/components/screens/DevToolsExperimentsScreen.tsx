@@ -1,7 +1,7 @@
 // Module ID: 11366
 // Function ID: 11367
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 5016, 502, 2087, 5017, 21, 5092, 587, 558, 576, 10673, 10674, 6665, 6738, 11367, 12, 1200, 8359, 6739, 6744, 8144, 5021, 5056, 5088, 6180, 1278, 11364, 6265, 8142, 6886, 4809, 6839, 6840, 2]
+// Dependencies: [32, 19, 17, 5016, 502, 2087, 5017, 21, 5092, 587, 558, 576, 10673, 10674, 6665, 6738, 11367, 12, 1200, 8354, 6739, 6744, 8139, 5021, 5056, 5088, 6180, 1278, 11364, 6265, 8137, 6886, 4809, 6839, 6840, 2]
 
 // Module 11366 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8144 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ExperimentStore from "ExperimentStore" /* 5016 */;
@@ -1759,7 +1759,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
   ({ experiment, override, id, options, onCopyLink } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] !== id) {
-    const tmpResult = tmp(8142);
+    const tmpResult = tmp(8137);
     const uRLForExperiment = tmpResult.getURLForExperiment(id);
     cResult[0] = id;
     cResult[1] = uRLForExperiment;
@@ -1979,7 +1979,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
   let tmp6Result;
   ({ experiment, override, id, options, onCopyLink } = arg0);
   let tmp = closure_13();
-  let obj = onCopyLink(8142);
+  let obj = onCopyLink(8137);
   const uRLForExperiment = obj.getURLForExperiment(id);
   const items = [uRLForExperiment, onCopyLink];
   const obj2 = { style: obj3, children: items1 };

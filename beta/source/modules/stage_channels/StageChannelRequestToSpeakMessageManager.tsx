@@ -1,7 +1,7 @@
 // Module ID: 18251
 // Function ID: 18252
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 2065, 5432, 4750, 2116, 1390, 1085, 6808, 2073, 18252, 1101, 7179, 2]
+// Dependencies: [502, 2065, 5432, 4750, 2116, 1390, 1085, 6808, 2073, 18252, 1101, 7174, 2]
 
 // Module 18251 (StageChannelRequestToSpeakMessageManager)
 import Constants from "Constants" /* 1085 */;

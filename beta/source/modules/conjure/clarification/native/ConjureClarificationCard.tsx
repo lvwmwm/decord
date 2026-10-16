@@ -1,7 +1,7 @@
 // Module ID: 17300
 // Function ID: 17301
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5092, 587, 1126, 3849, 558, 576, 17301, 17302, 17303, 6286, 5088, 7574, 6208, 17304, 6265, 6177, 6182, 17307, 5379, 17278, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 1126, 3849, 558, 576, 17301, 17302, 17303, 6286, 5088, 7569, 6208, 17304, 6265, 6177, 6182, 17307, 5379, 17278, 2]
 
 // Module 17300 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
@@ -270,7 +270,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                         let tmp70 = null;
                                                         if (null != onDismiss) {
                                                           const obj9 = { variant: "tertiary", size: "sm", icon: closure_6(tmp(6208).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(onSubmit(3849).qVXlk0) };
-                                                          const IconButton = tmp(7574).IconButton;
+                                                          const IconButton = tmp(7569).IconButton;
                                                           intl4 = tmp(1126).intl;
                                                           tmp70 = closure_6(IconButton, obj9);
                                                         }
@@ -1122,7 +1122,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp52Result = null;
   if (null != onDismiss) {
     const obj12 = { variant: "tertiary", size: "sm", icon: c6(clarification(6208).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(onSubmit(3849).qVXlk0) };
-    const IconButton = tmp18(7574).IconButton;
+    const IconButton = tmp18(7569).IconButton;
     intl4 = tmp18(1126).intl;
     tmp52Result = tmp52(IconButton, obj12);
   }

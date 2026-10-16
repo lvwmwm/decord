@@ -1,7 +1,7 @@
 // Module ID: 12930
 // Function ID: 12931
 // Name: CrunchyrollLinkModal
-// Dependencies: [19, 12931, 1085, 21, 558, 576, 12929, 7089, 7729, 1126, 12932, 9216, 12934, 12936, 12937, 12939, 9215, 12917, 6688, 2]
+// Dependencies: [19, 12931, 1085, 21, 558, 576, 12929, 7089, 7724, 1126, 12932, 9211, 12934, 12936, 12937, 12939, 9210, 12917, 6688, 2]
 
 // Module 12930 (CrunchyrollLinkModal)
 import Fragment from "Fragment" /* 21 */;
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import Navigator2 from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
 import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 12917 */;
 import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 12929 */;
 import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12931 */;
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
 }) : (function CrunchyrollLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  const obj = twoWayLinkStyles(9215);
+  const obj = twoWayLinkStyles(9210);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(twoWayLinkStyles), items);

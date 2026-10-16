@@ -1,7 +1,7 @@
 // Module ID: 17414
 // Function ID: 17415
 // Name: renderChannelContent
-// Dependencies: [19, 17, 11760, 5967, 21, 5092, 1382, 558, 576, 17411, 6796, 17415, 5088, 8223, 7572, 16567, 2]
+// Dependencies: [19, 17, 11760, 5967, 21, 5092, 1382, 558, 576, 17411, 6796, 17415, 5088, 8218, 7567, 16567, 2]
 // Exports: default
 
 // Module 17414 (renderChannelContent)
@@ -10,8 +10,8 @@ import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 6796 */;
-import WarningIcon from "WarningIcon" /* 7572 */;
-import LockIcon from "LockIcon" /* 8223 */;
+import WarningIcon from "WarningIcon" /* 7567 */;
+import LockIcon from "LockIcon" /* 8218 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16567 */;
 import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
@@ -388,13 +388,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                 let tmp37 = tmp8;
                 if (tmp37) {
                   const obj20 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp37 = metroImportDefault(tmp(8223).LockIcon, obj20);
+                  tmp37 = metroImportDefault(tmp(8218).LockIcon, obj20);
                 }
                 items7 = [tmp37, , ];
                 let tmp39 = tmp12;
                 if (tmp39) {
                   const obj21 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp39 = metroImportDefault(tmp(7572).WarningIcon, obj21);
+                  tmp39 = metroImportDefault(tmp(7567).WarningIcon, obj21);
                 }
                 items7[1] = tmp39;
                 let tmp41 = isSubscriptionGated;

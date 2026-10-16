@@ -1,7 +1,7 @@
 // Module ID: 12095
 // Function ID: 12096
 // Name: Autocomplete
-// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9717, 21, 5092, 587, 558, 576, 8580, 504, 4962, 1200, 8766, 6191, 6180, 1126, 8262, 8159, 5421, 5088, 6157, 12096, 9758, 9774, 6185, 12, 8156, 12097, 2030, 2031, 7689, 12098, 2]
+// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9712, 21, 5092, 587, 558, 576, 8575, 504, 4962, 1200, 8761, 6191, 6180, 1126, 8257, 8154, 5421, 5088, 6157, 12096, 9753, 9769, 6185, 12, 8151, 12097, 2030, 2031, 7684, 12098, 2]
 
 // Module 12095 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
@@ -16,12 +16,12 @@ import useChannelName from "useChannelName" /* 5421 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import TableRow2 from "TableRow" /* 6180 */;
 import TableRowTrailingText2 from "TableRowTrailingText" /* 6191 */;
-import TimestampUtils from "TimestampUtils" /* 8156 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8262 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
-import StickersHooks from "StickersHooks" /* 9758 */;
-import StickerDefault from "Sticker" /* 9774 */;
+import TimestampUtils from "TimestampUtils" /* 8151 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8257 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
+import StickersHooks from "StickersHooks" /* 9753 */;
+import StickerDefault from "Sticker" /* 9769 */;
 import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12096 */;
 import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12097 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ let size1;
 let tmp;
 let tmp15;
 const Pressables = tmp(6185);
-const Form = tmp(8580);
+const Form = tmp(8575);
 const View = react_native.View;
 ({ ChannelTypes: metroImportAll, Fonts } = Constants);
 const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
@@ -163,7 +163,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
                     }
                   }
                   const obj4 = { DEPRECATED_style: tmp4.row, onPress, accessibilityRole: "menuitem", label: tmp13, leading: tmp17, trailing: tmp21 };
-                  const tmp27 = closure_9(user(8580).FormRow, obj4);
+                  const tmp27 = closure_9(user(8575).FormRow, obj4);
                   cResult[21] = onPress;
                   cResult[22] = tmp4.row;
                   cResult[23] = tmp13;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
                 }
               }
               const obj5 = { user, usernameStyle: tmp20, discriminatorStyle: tmp4.trailing };
-              const tmp24 = closure_9(guildId(8766), obj5);
+              const tmp24 = closure_9(guildId(8761), obj5);
               cResult[17] = tmp4.trailing;
               cResult[18] = tmp20;
               cResult[19] = user;
@@ -247,8 +247,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(user) {
     }
     return nickname;
   });
-  const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(8766), obj5) };
-  const FormRow = user(8580).FormRow;
+  const obj2 = { DEPRECATED_style: tmp.row, onPress, accessibilityRole: "menuitem", label: closure_9(tmp6, { text: nick }), leading: closure_9(Avatar, obj4), trailing: closure_9(guildId(8761), obj5) };
+  const FormRow = user(8575).FormRow;
   tmp6 = closure_12;
   if (nick == null) {
     nick = stateFromStores;
@@ -1029,7 +1029,7 @@ let obj9 = {
     const tmpResult = StringUtils;
     if (tmpResult.isNullOrEmpty(tmp8)) {
       const obj7 = { size: "sm", style: tmp4.gameIcon };
-      tmp9Result = tmp9(tmp(7689).UnknownGameIcon, obj7);
+      tmp9Result = tmp9(tmp(7684).UnknownGameIcon, obj7);
     } else {
       const obj8 = { style: tmp4.gameIcon, source: obj9 };
       obj9 = { uri: tmp8 };
@@ -1055,7 +1055,7 @@ let obj9 = {
     const obj2 = StringUtils;
     if (obj2.isNullOrEmpty(tmp4)) {
       const obj3 = { size: "sm", style: tmp.gameIcon };
-      tmp6Result = tmp6(tmp5(7689).UnknownGameIcon, obj3);
+      tmp6Result = tmp6(tmp5(7684).UnknownGameIcon, obj3);
       tmp8 = tmp6;
     } else {
       const obj4 = { style: tmp.gameIcon, source: obj5 };
@@ -1065,7 +1065,7 @@ let obj9 = {
     }
     const obj6 = { onPress, accessibilityRole: "menuitem", leading: tmp6Result, label: tmp8(closure_12, obj7), trailing: tmp8Result };
     obj7 = { text: game.name };
-    const FormRow = tmp5(8580).FormRow;
+    const FormRow = tmp5(8575).FormRow;
     tmp8Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };

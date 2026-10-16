@@ -1,7 +1,7 @@
 // Module ID: 16823
 // Function ID: 16824
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 16824, 1209, 1126, 7738, 2041, 2049, 7094, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 16824, 1209, 1126, 7733, 2041, 2049, 7094, 2]
 
 // Module 16823 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(7738);
+  let obj2 = markAsDismissed(7733);
   let userIsTeen = obj2.useUserIsTeen();
   const ProfileVisibility = markAsDismissed(2041).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();

@@ -1,7 +1,7 @@
 // Module ID: 11758
 // Function ID: 11759
 // Name: MessagePreviewMarkup
-// Dependencies: [5401, 5402, 11759, 1949, 5079, 9314, 1457, 2]
+// Dependencies: [5401, 5402, 11759, 1949, 5079, 9309, 1457, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
 // Module 11758 (MessagePreviewMarkup)
@@ -10,7 +10,7 @@ import _modDef1949 from "module_1949" /* 1949 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import combineMarkupRulesDefault from "combineMarkupRules" /* 5401 */;
 import MarkupRulesDefault from "MarkupRules" /* 5402 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
 import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11759 */;
 import size from "module_2" /* 2 */;
 

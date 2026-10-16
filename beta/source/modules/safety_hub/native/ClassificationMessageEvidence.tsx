@@ -1,21 +1,21 @@
 // Module ID: 11484
 // Function ID: 11485
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1205, 1390, 7537, 7513, 1085, 21, 7747, 5092, 558, 576, 504, 4969, 11485, 11486, 7512, 5419, 8387, 8427, 11487, 5434, 11, 9374, 2]
+// Dependencies: [32, 19, 17, 1205, 1390, 7532, 7508, 1085, 21, 7742, 5092, 558, 576, 504, 4969, 11485, 11486, 7507, 5419, 8382, 8422, 11487, 5434, 11, 9369, 2]
 
 // Module 11484 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1085 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import openMediaModal from "openMediaModal" /* 8387 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import openMediaModal from "openMediaModal" /* 8382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserStore from "UserStore" /* 1390 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -725,7 +725,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
       const obj6 = { ref, onTapImage: callback, inverted: false };
       const items9 = [closure_18(tmp14(11487), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(9374);
+      const tmp14Result = tmp14(9369);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id, type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
       createMessageRecord = tmp2(5434).createMessageRecord;

@@ -1,7 +1,7 @@
 // Module ID: 15649
 // Function ID: 15650
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1408, 1085, 21, 1103, 15646, 5092, 587, 558, 576, 8295, 10267, 1407, 5057, 5056, 14845, 1265, 1126, 2958, 15638, 5379, 6196, 12, 15647, 6840, 2]
+// Dependencies: [32, 19, 17, 1408, 1085, 21, 1103, 15646, 5092, 587, 558, 576, 8290, 10267, 1407, 5057, 5056, 14845, 1265, 1126, 2958, 15638, 5379, 6196, 12, 15647, 6840, 2]
 
 // Module 15649 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;

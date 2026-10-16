@@ -1,12 +1,14 @@
 // Module ID: 9965
 // Function ID: 9966
-// Dependencies: [41, 42, 93, 95, 98, 9834]
+// Dependencies: [41, 42, 93, 95, 98, 9820, 9821, 9822]
 
 // Module 9965
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9834 */;
+import Meridiem from "Meridiem" /* 9820 */;
+import assignSimilarDate from "assignSimilarDate" /* 9821 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9822 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,14 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ESTimeExpressionParser {
+class ESCasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESTimeExpressionParser);
-    const obj = _getPrototypeOf(ESTimeExpressionParser);
+    _classCallCheck(this, ESCasualTimeParser);
+    const obj = _getPrototypeOf(ESCasualTimeParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -42,21 +44,49 @@ class ESTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(ESCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:aslas|deslas|las?|al?|de|del)\\s*)?";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return /(?:esta\s*)?(mañana|tarde|medianoche|mediodia|mediodía|noche)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:l)?|\\?)\\s*";
+    key: "innerExtract",
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      if ("tarde" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("noche" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 22);
+      } else if ("ma\u00F1ana" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("medianoche" === formatted) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() + 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+        assignSimilarDate.implySimilarTime(parsingComponents, date);
+        parsingComponents.imply("hour", 0);
+        parsingComponents.imply("minute", 0);
+        parsingComponents.imply("second", 0);
+      } else if ("mediodia" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 12);
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(ESTimeExpressionParser, items);
+export default _createClass(ESCasualTimeParser, items);

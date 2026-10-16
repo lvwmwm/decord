@@ -1,7 +1,7 @@
 // Module ID: 16591
 // Function ID: 16592
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 2065, 4751, 1085, 21, 8695, 1209, 6098, 6920, 5379, 1126, 2]
+// Dependencies: [5, 32, 19, 2065, 4751, 1085, 21, 8690, 1209, 6098, 6920, 5379, 1126, 2]
 
 // Module 16591 (LurkerServerPreviewJoinButton)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 17592
 // Function ID: 17593
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 2083, 2065, 2119, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 1503, 1631, 504, 6949, 10768, 4755, 1097, 8605, 7015, 1998, 4962, 5299, 1126, 4806, 2128, 2073, 17593, 9298, 5088, 5421, 10300, 6180, 7568, 6265, 17597, 1382, 17598, 2]
+// Dependencies: [32, 5, 19, 17, 2083, 2065, 2119, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 1503, 1631, 504, 6949, 10768, 4755, 1097, 8600, 7015, 1998, 4962, 5299, 1126, 4806, 2128, 2073, 17593, 9293, 5088, 5421, 10300, 6180, 7563, 6265, 17597, 1382, 17598, 2]
 // Exports: default
 
 // Module 17592 (ChannelSettingsPermissionsOverrides)
@@ -50,7 +50,7 @@ const intl5 = tmp2(1126);
 const Text_Text = tmp2(5088);
 const useChannelName = tmp2(5421);
 const TableRow2 = tmp2(6180);
-const InlineNotice2 = tmp2(7568);
+const InlineNotice2 = tmp2(7563);
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = Constants);

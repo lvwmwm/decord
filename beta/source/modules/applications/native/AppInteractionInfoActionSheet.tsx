@@ -1,14 +1,14 @@
 // Module ID: 12826
 // Function ID: 12827
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1404, 2087, 1390, 21, 5092, 558, 576, 1631, 12827, 9235, 504, 8306, 6159, 5088, 1126, 8304, 1200, 6185, 6840, 2]
+// Dependencies: [19, 17, 1404, 2087, 1390, 21, 5092, 558, 576, 1631, 12827, 9230, 504, 8301, 6159, 5088, 1126, 8299, 1200, 6185, 6840, 2]
 
 // Module 12826 (AppInteractionInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import UserActionCreators from "UserActionCreators" /* 8306 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
 import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 12827 */;
 import react_mod from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -59,13 +59,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   const interactionMetadata = message.interactionMetadata;
   let tmp9;
   if (interactionMetadata != null) {
-    tmp9 = interactionMetadata.authorizing_integration_owners[tmp(undefined, 9235).ApplicationIntegrationType.USER_INSTALL];
+    tmp9 = interactionMetadata.authorizing_integration_owners[tmp(undefined, 9230).ApplicationIntegrationType.USER_INSTALL];
   }
   importDefault = tmp9;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp10;
   if (interactionMetadata2 != null) {
-    tmp10 = interactionMetadata2.authorizing_integration_owners[tmp(undefined, 9235).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp10 = interactionMetadata2.authorizing_integration_owners[tmp(undefined, 9230).ApplicationIntegrationType.GUILD_INSTALL];
   }
   dependencyMap = tmp10;
   const interactionMetadata3 = message.interactionMetadata;
@@ -411,13 +411,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   }, items);
   const tmp2 = onBack;
   if (interactionMetadata != null) {
-    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9235).ApplicationIntegrationType.USER_INSTALL];
+    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9230).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp5;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp7;
   if (interactionMetadata2 != null) {
-    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9235).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9230).ApplicationIntegrationType.GUILD_INSTALL];
   }
   react = tmp7;
   const interactionMetadata3 = message.interactionMetadata;

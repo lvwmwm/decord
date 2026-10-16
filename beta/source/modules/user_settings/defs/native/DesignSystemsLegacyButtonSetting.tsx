@@ -1,11 +1,11 @@
 // Module ID: 16138
 // Function ID: 16139
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [7993, 1085, 10663, 16139, 2]
+// Dependencies: [7988, 1085, 10663, 16139, 2]
 
 // Module 16138 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 17744
 // Function ID: 17745
 // Name: ExternalPipView
-// Dependencies: [32, 19, 8417, 21, 558, 576, 5221, 17745, 17747, 2]
+// Dependencies: [32, 19, 8412, 21, 558, 576, 5221, 17745, 17747, 2]
 
 // Module 17744 (ExternalPipView)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import ExternalPipDefault from "ExternalPip" /* 5221 */;
 import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 17747 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 8417 */;
+import AppFreezeStore from "AppFreezeStore" /* 8412 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

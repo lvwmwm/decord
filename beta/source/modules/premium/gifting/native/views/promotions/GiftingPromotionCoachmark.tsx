@@ -1,7 +1,7 @@
 // Module ID: 17695
 // Function ID: 17696
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 5081, 9122, 1085, 2062, 21, 5092, 587, 558, 576, 504, 10110, 10094, 10111, 5922, 5056, 6852, 6879, 10051, 1382, 9012, 6157, 10112, 5088, 11538, 1126, 5379, 6840, 2]
+// Dependencies: [19, 17, 5081, 9117, 1085, 2062, 21, 5092, 587, 558, 576, 504, 10110, 10094, 10111, 5922, 5056, 6852, 6879, 10046, 1382, 9007, 6157, 10112, 5088, 11538, 1126, 5379, 6840, 2]
 
 // Module 17695 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -10,10 +10,10 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import usePreviousDefault from "usePrevious" /* 5922 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10051 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10046 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import PromotionsStore from "PromotionsStore" /* 9122 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -332,7 +332,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingPromo
       if (tmp2Result4.isAndroid()) {
         let tmp21Result;
         if (!stateFromStores) {
-          let obj4 = { style: items4, children: closure_11(tmp2(9012).APNGPlayer, obj5) };
+          let obj4 = { style: items4, children: closure_11(tmp2(9007).APNGPlayer, obj5) };
           items4 = [, ];
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
           obj5 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };

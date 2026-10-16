@@ -1,16 +1,16 @@
 // Module ID: 17584
 // Function ID: 17585
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17585, 2065, 2125, 2119, 2087, 4750, 4760, 1390, 7490, 1085, 21, 5092, 587, 558, 576, 1503, 10768, 504, 8603, 8604, 8605, 1126, 5421, 5299, 8621, 4755, 5377, 6896, 6265, 7568, 10610, 6180, 10766, 6207, 5107, 8530, 8779, 17586, 17588, 2]
+// Dependencies: [32, 5, 19, 17, 17585, 2065, 2125, 2119, 2087, 4750, 4760, 1390, 7485, 1085, 21, 5092, 587, 558, 576, 1503, 10768, 504, 8598, 8599, 8600, 1126, 5421, 5299, 8616, 4755, 5377, 6896, 6265, 7563, 10610, 6180, 10766, 6207, 5107, 8525, 8774, 17586, 17588, 2]
 
 // Module 17584 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8603 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8604 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8621 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8598 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8599 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8616 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

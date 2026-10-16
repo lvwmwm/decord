@@ -1,12 +1,12 @@
 // Module ID: 12113
 // Function ID: 12114
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2125, 9717, 21, 5092, 587, 558, 576, 5386, 504, 11929, 1126, 6157, 5088, 6185, 2]
+// Dependencies: [19, 17, 2125, 9712, 21, 5092, 587, 558, 576, 5386, 504, 11929, 1126, 6157, 5088, 6185, 2]
 
 // Module 12113 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
 import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11929 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;

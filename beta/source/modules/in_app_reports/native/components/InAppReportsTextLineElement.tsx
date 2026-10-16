@@ -1,9 +1,9 @@
-// Module ID: 7744
-// Function ID: 7745
+// Module ID: 7739
+// Function ID: 7740
 // Name: InAppReportsTextLineElement
 // Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5399, 6170, 6886, 4808, 1382, 5068, 4806, 5088, 1126, 5379, 2]
 
-// Module 7744 (InAppReportsTextLineElement)
+// Module 7739 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;

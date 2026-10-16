@@ -1,21 +1,21 @@
-// Module ID: 7904
-// Function ID: 7905
+// Module ID: 7899
+// Function ID: 7900
 // Name: Tracking
-// Dependencies: [2065, 7244, 6979, 7905, 1085, 5107, 7906, 1265, 7912, 7913, 1382, 7917, 2]
+// Dependencies: [2065, 7239, 6979, 7900, 1085, 5107, 7901, 1265, 7907, 7908, 1382, 7912, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7904 (Tracking)
+// Module 7899 (Tracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import TrackingUtils from "TrackingUtils" /* 7906 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7912 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7913 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7917 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import TrackingUtils from "TrackingUtils" /* 7901 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7907 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7908 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7912 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
-import ForumSearchStore from "ForumSearchStore" /* 7905 */;
+import ForumSearchStore from "ForumSearchStore" /* 7900 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 

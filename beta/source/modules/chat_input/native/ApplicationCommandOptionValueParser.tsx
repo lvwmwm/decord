@@ -1,7 +1,7 @@
 // Module ID: 11669
 // Function ID: 11670
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 6034, 2069, 4748, 2125, 2119, 4760, 1390, 5404, 12, 1388, 5421, 5970, 1998, 7370, 558, 576, 2]
+// Dependencies: [32, 19, 6034, 2069, 4748, 2125, 2119, 4760, 1390, 5404, 12, 1388, 5421, 5970, 1998, 7365, 558, 576, 2]
 // Exports: getRoles, parseOptionValuesForSend
 
 // Module 11669 (ApplicationCommandOptionValueParser)
@@ -10,7 +10,7 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Server from "Server" /* 1998 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import MessageParser from "MessageParser" /* 7370 */;
+import MessageParser from "MessageParser" /* 7365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;

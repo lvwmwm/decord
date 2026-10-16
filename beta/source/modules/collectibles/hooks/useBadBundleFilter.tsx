@@ -1,17 +1,17 @@
 // Module ID: 15352
 // Function ID: 15353
 // Name: useBadBundleFilter
-// Dependencies: [19, 1390, 7280, 558, 576, 573, 4769, 9045, 7276, 7275, 2]
+// Dependencies: [19, 1390, 7275, 558, 576, 573, 4769, 9040, 7271, 7270, 2]
 
 // Module 15352 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7270 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
 import UserStore from "UserStore" /* 1390 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

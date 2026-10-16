@@ -1,7 +1,7 @@
 // Module ID: 17403
 // Function ID: 17404
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2070, 9313, 21, 11761, 4962, 1126, 5092, 558, 576, 504, 17404, 5956, 5950, 17405, 11989, 17407, 2]
+// Dependencies: [19, 17, 2070, 9308, 21, 11761, 4962, 1126, 5092, 558, 576, 504, 17404, 5956, 5950, 17405, 11989, 17407, 2]
 
 // Module 17403 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import react2 from "react" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
 import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5956 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import ChannelListLayout from "ChannelListLayout" /* 11761 */;
 import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17404 */;
 import GuildChannelRowDefault from "GuildChannelRow" /* 17407 */;

@@ -1,7 +1,7 @@
 // Module ID: 12867
 // Function ID: 12868
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 12868, 5757, 2069, 6981, 2065, 5020, 2087, 4760, 1390, 1085, 2062, 21, 558, 576, 4818, 587, 504, 6300, 12861, 9461, 1126, 5421, 12859, 2049, 7100, 2128, 8159, 9443, 9695, 12854, 2]
+// Dependencies: [32, 19, 17, 12868, 5757, 2069, 6981, 2065, 5020, 2087, 4760, 1390, 1085, 2062, 21, 558, 576, 4818, 587, 504, 6300, 12861, 9456, 1126, 5421, 12859, 2049, 7100, 2128, 8154, 9438, 9690, 12854, 2]
 
 // Module 12867 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import useChannelName2 from "useChannelName" /* 5421 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9461 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9456 */;
 import ChannelHeader from "ChannelHeader" /* 12854 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const utils_ChannelUtils = tmp(8159);
+const utils_ChannelUtils = tmp(8154);
 function computeVisibleChannelName(channel) {
   let guildId;
   let isConnected;
@@ -430,7 +430,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
       tmp15 = result;
     }
   }
-  const tmpResult10 = guildId(9461);
+  const tmpResult10 = guildId(9456);
   let tmp10 = !tmpResult10.shouldNSFWGateGuild(guildId);
   tmpResult10.shouldNSFWGateGuild(guildId);
   if (tmp10) {
@@ -468,7 +468,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
   const obj = guildId(504);
   const obj2 = { channel, guildId, showCreateThread, isConnected: obj.useStateFromStores(items, () => connected.isConnected()) };
   const tmp3 = computeVisibleChannelName(obj2);
-  const obj3 = guildId(9461);
+  const obj3 = guildId(9456);
   let tmp5 = !obj3.shouldNSFWGateGuild(guildId);
   obj3.shouldNSFWGateGuild(guildId);
   if (tmp5) {
@@ -690,7 +690,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     return obj;
   }, items1);
-  let obj = guild(9443);
+  let obj = guild(9438);
   const coachmark = obj.useCoachmark(iconRef, memo);
   return null;
 });

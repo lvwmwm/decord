@@ -1,7 +1,7 @@
 // Module ID: 14900
 // Function ID: 14901
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2087, 7888, 21, 5092, 587, 504, 14901, 14902, 8290, 8289, 1126, 1382, 5088, 14874, 5056, 14904, 2000, 6159, 8859, 2]
+// Dependencies: [19, 2087, 7883, 21, 5092, 587, 504, 14901, 14902, 8285, 8284, 1126, 1382, 5088, 14874, 5056, 14904, 2000, 6159, 8854, 2]
 // Exports: default
 
 // Module 14900 (UserProfilePrimaryGuildEditButton)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import createStyles from "createStyles" /* 5092 */;

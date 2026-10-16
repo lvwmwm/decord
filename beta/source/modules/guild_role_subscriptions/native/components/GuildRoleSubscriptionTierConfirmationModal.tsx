@@ -1,7 +1,7 @@
 // Module ID: 18586
 // Function ID: 18587
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 18553, 21, 5092, 587, 14125, 18571, 18555, 1126, 8677, 6157, 5088, 18587, 2]
+// Dependencies: [5, 32, 19, 17, 18553, 21, 5092, 587, 14125, 18571, 18555, 1126, 8672, 6157, 5088, 18587, 2]
 // Exports: default
 
 // Module 18586 (GuildRoleSubscriptionTierConfirmationModal)
@@ -28,7 +28,7 @@ let metroImportAll;
 let size;
 let tmp3;
 const FastImageDefault = tmp3(6157);
-const FormHeaderDefault = tmp3(8677);
+const FormHeaderDefault = tmp3(8672);
 const View = react_native.View;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let obj = { description: { paddingHorizontal: 16 }, coverPhotoContainer: { marginHorizontal: 16 }, coverPhoto: size };

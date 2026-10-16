@@ -1,7 +1,7 @@
 // Module ID: 11168
 // Function ID: 11169
 // Name: MediaTile
-// Dependencies: [19, 17, 6036, 5115, 21, 5092, 587, 558, 576, 11159, 1497, 8327, 504, 11169, 1200, 2]
+// Dependencies: [19, 17, 6036, 5115, 21, 5092, 587, 558, 576, 11159, 1497, 8322, 504, 11169, 1200, 2]
 
 // Module 11168 (MediaTile)
 import react_native from "react-native" /* 17 */;
@@ -33,7 +33,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj2 = channel(11159);
   const speakerTileStyles = obj2.useSpeakerTileStyles();
   const width = participant(1497)().width;
-  const obj3 = channel(8327);
+  const obj3 = channel(8322);
   const isScreenLandscape = obj3.useIsScreenLandscape();
   const tmp6 = participant;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -144,7 +144,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj = channel(11159);
   const speakerTileStyles = obj.useSpeakerTileStyles();
   const width = participant(1497)().width;
-  const obj2 = channel(8327);
+  const obj2 = channel(8322);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [ChannelRTCStore];
   const items1 = [channel.id, participant.id];

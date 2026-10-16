@@ -1,7 +1,7 @@
 // Module ID: 12849
 // Function ID: 12850
 // Name: PrivateChannelButtons
-// Dependencies: [19, 17, 6036, 2065, 2012, 4760, 1390, 5113, 9311, 1085, 5115, 2115, 9312, 5117, 21, 1200, 5092, 587, 504, 10428, 12850, 7999, 12851, 10229, 12852, 5301, 12853, 1126, 12854, 11997, 12057, 5107, 5056, 12869, 2000, 6185, 6740, 12870, 6085, 4806, 1265, 12871, 7092, 7482, 8229, 9324, 9322, 5088, 12873, 10770, 2]
+// Dependencies: [19, 17, 6036, 2065, 2012, 4760, 1390, 5113, 9306, 1085, 5115, 2115, 9307, 5117, 21, 1200, 5092, 587, 504, 10428, 12850, 7994, 12851, 10229, 12852, 5301, 12853, 1126, 12854, 11997, 12057, 5107, 5056, 12869, 2000, 6185, 6740, 12870, 6085, 4806, 1265, 12871, 7092, 7477, 8224, 9319, 9317, 5088, 12873, 10770, 2]
 
 // Module 12849 (PrivateChannelButtons)
 import react_native from "react-native" /* 17 */;
@@ -17,9 +17,9 @@ import Constants2 from "Constants" /* 5117 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
 import ChannelRTCStore2 from "ChannelRTCStore" /* 6036 */;
 import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6740 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
-import TrackingConstants from "TrackingConstants" /* 9312 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9306 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
 import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10229 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
 import ConfirmStartCall from "ConfirmStartCall" /* 12852 */;
@@ -147,8 +147,8 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
   const videoEnabled = VideoGuardExperiment.useConfig({ location: "PrivateChannelButtons" }).videoEnabled;
   closure_7 = tmp10;
   let id;
-  const useIsCallActiveNullable = tmp2(7999).useIsCallActiveNullable;
-  tmp2(7999);
+  const useIsCallActiveNullable = tmp2(7994).useIsCallActiveNullable;
+  tmp2(7994);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -382,19 +382,19 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     }
     items14[2] = disabledButton;
     if (tmp16) {
-      const VoiceNormalIcon = tmp2(8229).VoiceNormalIcon;
+      const VoiceNormalIcon = tmp2(8224).VoiceNormalIcon;
       const unsafe_rawColors2 = tmp17(587).unsafe_rawColors;
       const obj11 = { size: "sm", color: stateFromStores1 ? unsafe_rawColors2.GREEN_360 : unsafe_rawColors2.BRAND_400 };
       tmp31Result = tmp31(VoiceNormalIcon, obj11);
       tmp34 = tmp31;
     } else if (stateFromStores1) {
       const obj12 = { size: "sm", color: screenIndex(587).unsafe_rawColors.RED_400 };
-      const PhoneHangUpIcon = tmp2(9324).PhoneHangUpIcon;
+      const PhoneHangUpIcon = tmp2(9319).PhoneHangUpIcon;
       tmp31Result = tmp31(PhoneHangUpIcon, obj12);
       tmp34 = tmp31;
     } else {
       let GREEN_360;
-      const PhoneCallIcon = tmp2(9322).PhoneCallIcon;
+      const PhoneCallIcon = tmp2(9317).PhoneCallIcon;
       if (isCallActiveNullable) {
         GREEN_360 = tmp17(587).unsafe_rawColors.GREEN_360;
       }

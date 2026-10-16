@@ -1,14 +1,14 @@
 // Module ID: 18464
 // Function ID: 18465
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 8639, 1085, 21, 5092, 558, 576, 504, 1503, 5362, 5371, 18462, 6727, 1126, 5379, 6814, 2]
+// Dependencies: [19, 17, 8634, 1085, 21, 5092, 558, 576, 504, 1503, 5362, 5371, 18462, 6727, 1126, 5379, 6814, 2]
 
 // Module 18464 (EnableCommunitySharedNavigation)
 import Constants from "Constants" /* 1085 */;
 import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18462 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

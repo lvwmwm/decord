@@ -1,7 +1,7 @@
 // Module ID: 16493
 // Function ID: 16494
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 15589, 21, 11895, 587, 5092, 558, 576, 4818, 16494, 9018, 2]
+// Dependencies: [19, 17, 15589, 21, 11895, 587, 5092, 558, 576, 4818, 16494, 9013, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
 // Module 16493 (MessagesItemHappeningNow)
@@ -21,7 +21,7 @@ let HappeningNowItem;
 let closure_4;
 let tmp;
 let tmp4;
-const CutoutBackgroundContext = tmp(9018);
+const CutoutBackgroundContext = tmp(9013);
 const HappeningNowDefault = tmp4(16494);
 const View = react_native.View;
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);

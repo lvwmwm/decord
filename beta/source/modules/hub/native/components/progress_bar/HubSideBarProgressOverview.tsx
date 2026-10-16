@@ -1,7 +1,7 @@
 // Module ID: 16649
 // Function ID: 16650
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 8696, 21, 12395, 1126, 12209, 14209, 5056, 12399, 2000, 2]
+// Dependencies: [19, 8691, 21, 12395, 1126, 12209, 14209, 5056, 12399, 2000, 2]
 // Exports: default
 
 // Module 16649 (HubSideBarProgressOverview)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 8696 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8691 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

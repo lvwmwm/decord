@@ -1,7 +1,7 @@
 // Module ID: 18760
 // Function ID: 18761
 // Name: DirectReply
-// Dependencies: [5, 17, 5085, 3, 18754, 7179, 2]
+// Dependencies: [5, 17, 5085, 3, 18754, 7174, 2]
 
 // Module 18760 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;

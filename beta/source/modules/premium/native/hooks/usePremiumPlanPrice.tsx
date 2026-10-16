@@ -1,9 +1,9 @@
-// Module ID: 9397
-// Function ID: 9398
+// Module ID: 9392
+// Function ID: 9393
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4774, 4775, 7132, 1096, 558, 576, 504, 9398, 9399, 9402, 7127, 1382, 569, 6170, 6960, 6940, 2]
+// Dependencies: [19, 4774, 4775, 7132, 1096, 558, 576, 504, 9393, 9394, 9397, 7127, 1382, 569, 6170, 6960, 6940, 2]
 
-// Module 9397 (usePremiumPlanPrice)
+// Module 9392 (usePremiumPlanPrice)
 import Constants from "Constants" /* 1096 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6960 */;
 import react_mod from "react" /* 19 */;

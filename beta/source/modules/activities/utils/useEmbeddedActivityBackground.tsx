@@ -1,7 +1,7 @@
 // Module ID: 10962
 // Function ID: 10963
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 558, 576, 8275, 2]
+// Dependencies: [32, 19, 558, 576, 8270, 2]
 
 // Module 10962 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

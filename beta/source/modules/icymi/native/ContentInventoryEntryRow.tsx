@@ -1,7 +1,7 @@
 // Module ID: 16962
 // Function ID: 16963
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4760, 21, 558, 576, 504, 8268, 16963, 16970, 2]
+// Dependencies: [19, 4760, 21, 558, 576, 504, 8263, 16963, 16970, 2]
 
 // Module 16962 (ContentInventoryEntryRow)
 import Fragment from "Fragment" /* 21 */;
@@ -44,9 +44,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(8268).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(8268).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(8268).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8263).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8263).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8263).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           if (visible == null) {
             visible = false;
           }
@@ -96,9 +96,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(8268).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(8268).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(8268).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8263).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8263).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8263).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           const obj2 = { content, renderForScreenshot: flag, visible: flag2 };
           const tmp4 = jsx;
           const tmp6 = CustomStatusEntryRowDefault;

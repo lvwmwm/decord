@@ -1,7 +1,7 @@
 // Module ID: 14190
 // Function ID: 14191
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 8764, 2087, 8698, 1096, 21, 5092, 587, 8685, 4809, 1126, 558, 576, 8693, 504, 8716, 14191, 2438, 6899, 5377, 5088, 6739, 14194, 2]
+// Dependencies: [32, 19, 17, 8759, 2087, 8693, 1096, 21, 5092, 587, 8680, 4809, 1126, 558, 576, 8688, 504, 8711, 14191, 2438, 6899, 5377, 5088, 6739, 14194, 2]
 
 // Module 14190 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -10,15 +10,15 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl6 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8685 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8693 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8716 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8764 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8680 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8688 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8711 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8759 */;
 import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 14191 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8698 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8693 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

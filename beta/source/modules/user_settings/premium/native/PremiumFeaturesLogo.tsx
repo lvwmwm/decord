@@ -1,14 +1,14 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9412
+// Function ID: 9413
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1392, 21, 558, 576, 9418, 7155, 4769, 6157, 2]
+// Dependencies: [19, 1392, 21, 558, 576, 9413, 7155, 4769, 6157, 2]
 
-// Module 9417 (PremiumFeaturesLogo)
+// Module 9412 (PremiumFeaturesLogo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7155 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9418 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9413 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

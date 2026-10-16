@@ -1,7 +1,7 @@
 // Module ID: 11903
 // Function ID: 11904
 // Name: AppLauncherViewAllScreen
-// Dependencies: [19, 17, 1502, 21, 5092, 587, 11819, 558, 576, 1631, 10622, 11729, 7247, 1126, 6205, 6185, 5088, 1200, 11781, 11734, 11817, 11786, 11789, 11790, 11730, 10623, 2]
+// Dependencies: [19, 17, 1502, 21, 5092, 587, 11819, 558, 576, 1631, 10622, 11729, 7242, 1126, 6205, 6185, 5088, 1200, 11781, 11734, 11817, 11786, 11789, 11790, 11730, 10623, 2]
 
 // Module 11903 (AppLauncherViewAllScreen)
 import react_native from "react-native" /* 17 */;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const ApplicationCommandTypes = tmp(7247);
+const ApplicationCommandTypes = tmp(7242);
 const View = react_native.View;
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;

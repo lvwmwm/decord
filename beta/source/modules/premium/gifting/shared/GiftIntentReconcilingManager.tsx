@@ -1,19 +1,19 @@
 // Module ID: 18228
 // Function ID: 18229
 // Name: GiftIntentReconcilingManager
-// Dependencies: [5433, 1244, 2065, 8107, 1085, 1102, 6808, 569, 10097, 584, 7179, 2]
+// Dependencies: [5433, 1244, 2065, 8102, 1085, 1102, 6808, 569, 10097, 584, 7174, 2]
 
 // Module 18228 (GiftIntentReconcilingManager)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10097 */;
 import EphemeralMessageStore from "EphemeralMessageStore" /* 5433 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8107 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8102 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

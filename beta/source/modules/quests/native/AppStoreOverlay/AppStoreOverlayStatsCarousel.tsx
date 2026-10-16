@@ -1,7 +1,7 @@
 // Module ID: 12950
 // Function ID: 12951
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 587, 5092, 12951, 1126, 12952, 558, 576, 5088, 1382, 6335, 7407, 7416, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 12951, 1126, 12952, 558, 576, 5088, 1382, 6335, 7402, 7411, 2]
 
 // Module 12950 (AppStoreOverlayStatsCarousel)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 12951 */;
 import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 12952 */;
 import react from "react" /* 19 */;
@@ -568,9 +568,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (bound !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
             if (bound > current) {
-              LEFT = tmp2(7416).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp2(7411).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp2(7416).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp2(7411).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = bound;
@@ -619,9 +619,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7416).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7411).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7416).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7411).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

@@ -1,7 +1,7 @@
 // Module ID: 18182
 // Function ID: 18183
 // Name: AddAvatarModalActionCreators
-// Dependencies: [18183, 1085, 1265, 6671, 5299, 1126, 8289, 8291, 5934, 18184, 2000, 12429, 2]
+// Dependencies: [18183, 1085, 1265, 6671, 5299, 1126, 8284, 8286, 5934, 18184, 2000, 12429, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
 // Module 18182 (AddAvatarModalActionCreators)
@@ -11,8 +11,8 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6671 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8291 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8286 */;
 import NUFActionCreators from "NUFActionCreators" /* 12429 */;
 import AddAvatarModalConstants from "AddAvatarModalConstants" /* 18183 */;
 import size from "module_2" /* 2 */;

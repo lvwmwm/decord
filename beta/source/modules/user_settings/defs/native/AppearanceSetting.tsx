@@ -1,7 +1,7 @@
 // Module ID: 15554
 // Function ID: 15555
 // Name: AppearanceSetting
-// Dependencies: [4937, 1208, 1085, 558, 576, 5031, 504, 1252, 9309, 1126, 2798, 10663, 15555, 15557, 2]
+// Dependencies: [4937, 1208, 1085, 558, 576, 5031, 504, 1252, 9304, 1126, 2798, 10663, 15555, 15557, 2]
 
 // Module 15554 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1126 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import useActiveTheme from "useActiveTheme" /* 9309 */;
+import useActiveTheme from "useActiveTheme" /* 9304 */;
 import PaintPaletteIcon from "PaintPaletteIcon" /* 15555 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

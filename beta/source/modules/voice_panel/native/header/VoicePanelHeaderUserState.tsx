@@ -1,7 +1,7 @@
 // Module ID: 17811
 // Function ID: 17812
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6036, 21, 4850, 8542, 5092, 587, 558, 576, 17812, 17810, 8798, 6162, 11971, 504, 5093, 2]
+// Dependencies: [19, 6036, 21, 4850, 8537, 5092, 587, 558, 576, 17812, 17810, 8793, 6162, 11971, 504, 5093, 2]
 
 // Module 17811 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import native from "native" /* 8542 */;
+import native from "native" /* 8537 */;
 import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17812 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
     let tmp14 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items1.push;
-      let BackgroundBlurView = tmp14(8542).BackgroundBlurView;
+      let BackgroundBlurView = tmp14(8537).BackgroundBlurView;
       let obj4 = { style: tmp6.floatingIcon, state: tmp12.videoIconState };
       let arr2 = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp6.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
@@ -101,11 +101,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
       let tmp42 = jsx;
       let items2 = [tmp6.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp14(8542).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp14(8537).BackgroundBlurView;
       if (tmp12.withLeftMargin) {
         leftMargin = tmp6.leftMargin;
       }
-      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(8798).MuteDeafenIcon, obj6) };
+      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(8793).MuteDeafenIcon, obj6) };
       items2[1] = leftMargin;
       obj6 = { style: tmp6.floatingIcon, state: tmp12.muteDeafenIconState };
       let push2Result = push2(tmp41(BackgroundBlurView2, obj5, "mute-deafen"));
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items.push;
-      let BackgroundBlurView = tmp11(8542).BackgroundBlurView;
+      let BackgroundBlurView = tmp11(8537).BackgroundBlurView;
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
@@ -148,11 +148,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp11(8542).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp11(8537).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(8798).MuteDeafenIcon, obj5) };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(8793).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
       obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
       let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));

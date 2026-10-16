@@ -1,16 +1,16 @@
 // Module ID: 10150
 // Function ID: 10151
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6932, 1392, 1085, 1087, 8308, 21, 587, 5092, 558, 576, 8968, 8980, 10151, 10155, 6852, 6879, 1265, 8304, 10098, 10156, 4977, 4809, 1126, 7263, 12704, 4962, 5088, 12729, 12734, 2]
+// Dependencies: [5, 19, 17, 6932, 1392, 1085, 1087, 8303, 21, 587, 5092, 558, 576, 8963, 8975, 10151, 10155, 6852, 6879, 1265, 8299, 10098, 10156, 4977, 4809, 1126, 7258, 12704, 4962, 5088, 12729, 12734, 2]
 
 // Module 10150 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6932 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import Constants2 from "Constants" /* 8308 */;
-import useWishlistHooks from "useWishlistHooks" /* 8980 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import Constants2 from "Constants" /* 8303 */;
+import useWishlistHooks from "useWishlistHooks" /* 8975 */;
 import WishlistBannerUtils from "WishlistBannerUtils" /* 10155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

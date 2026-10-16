@@ -1,15 +1,15 @@
 // Module ID: 17618
 // Function ID: 17619
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5987, 2065, 1393, 21, 5092, 587, 558, 576, 1503, 504, 5088, 1126, 9329, 7089, 9427, 5300, 6820, 1415, 8961, 6185, 1200, 6296, 6265, 6180, 6896, 5377, 2]
+// Dependencies: [32, 19, 17, 5987, 2065, 1393, 21, 5092, 587, 558, 576, 1503, 504, 5088, 1126, 9324, 7089, 9422, 5300, 6820, 1415, 8956, 6185, 1200, 6296, 6265, 6180, 6896, 5377, 2]
 
 // Module 17618 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9324 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
@@ -571,7 +571,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(8961).ReactionIcon, {});
+  tmp27Result4 = tmp27(tmp3(8956).ReactionIcon, {});
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");

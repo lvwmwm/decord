@@ -1,14 +1,14 @@
 // Module ID: 11401
 // Function ID: 11402
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1390, 2127, 1085, 21, 5092, 558, 576, 7995, 9642, 1265, 5396, 5409, 11400, 4809, 1126, 5088, 5398, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1390, 2127, 1085, 21, 5092, 558, 576, 7990, 9637, 1265, 5396, 5409, 11400, 4809, 1126, 5088, 5398, 2]
 
 // Module 11401 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 7995 */;
-import CountDownDefault from "CountDown" /* 9642 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 7990 */;
+import CountDownDefault from "CountDown" /* 9637 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -201,7 +201,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  closure_3 = _slicedToArray(userId(7995)(userId, guildId), 1)[0];
+  closure_3 = _slicedToArray(userId(7990)(userId, guildId), 1)[0];
   userId(5396)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guildId, other_user_id: userId };

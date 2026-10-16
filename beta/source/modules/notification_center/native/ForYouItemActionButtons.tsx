@@ -1,7 +1,7 @@
 // Module ID: 16881
 // Function ID: 16882
 // Name: ForYouItemActionButtons
-// Dependencies: [109, 5, 19, 17, 2065, 1390, 1085, 21, 5092, 1121, 558, 576, 4850, 5093, 1126, 5379, 5377, 5088, 573, 7994, 16479, 5069, 14072, 10230, 6058, 7015, 7018, 4809, 9691, 1265, 2]
+// Dependencies: [109, 5, 19, 17, 2065, 1390, 1085, 21, 5092, 1121, 558, 576, 4850, 5093, 1126, 5379, 5377, 5088, 573, 7989, 16479, 5069, 14072, 10230, 6058, 7015, 7018, 4809, 9686, 1265, 2]
 
 // Module 16881 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
@@ -722,7 +722,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
   const message3 = other_user.message;
-  const tmpResult3 = tmp(7994);
+  const tmpResult3 = tmp(7989);
   const canReplyToMessage = tmpResult3.useCanReplyToMessage(stateFromStores, other_user.message);
   if (message3 != null) {
     const type = message3.type;

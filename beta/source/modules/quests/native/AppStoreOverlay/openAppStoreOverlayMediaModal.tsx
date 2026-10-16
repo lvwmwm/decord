@@ -1,7 +1,7 @@
 // Module ID: 12955
 // Function ID: 12956
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4802, 1085, 1497, 8388, 2000, 8389, 8390, 12956, 1126, 5056, 5934, 12957, 2]
+// Dependencies: [32, 5, 4802, 1085, 1497, 8383, 2000, 8384, 8385, 12956, 1126, 5056, 5934, 12957, 2]
 // Exports: openAppStoreOverlayMediaModal
 
 // Module 12955 (openAppStoreOverlayMediaModal)

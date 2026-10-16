@@ -1,7 +1,7 @@
 // Module ID: 17582
 // Function ID: 17583
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 9698, 2065, 1085, 21, 5092, 587, 558, 576, 1631, 504, 9697, 10289, 1200, 10307, 10308, 1126, 6727, 17583, 6744, 2]
+// Dependencies: [32, 19, 17, 9693, 2065, 1085, 21, 5092, 587, 558, 576, 1631, 504, 9692, 10289, 1200, 10307, 10308, 1126, 6727, 17583, 6744, 2]
 
 // Module 17582 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 10307 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10308 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9698 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9693 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

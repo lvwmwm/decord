@@ -1,7 +1,7 @@
 // Module ID: 16230
 // Function ID: 16231
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 2062, 558, 576, 8974, 2049, 7100, 16217, 1126, 9443, 2]
+// Dependencies: [32, 19, 2062, 558, 576, 8969, 2049, 7100, 16217, 1126, 9438, 2]
 
 // Module 16230 (WishlistButtonCoachmark)
 import intl3 from "intl" /* 1126 */;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
   _slicedToArray = undefined;
   let registerDismiss;
   anchorRef = anchorRef.anchorRef;
-  let obj = hasNeverWishlisted(8974);
+  let obj = hasNeverWishlisted(8969);
   hasNeverWishlisted = obj.useHasNeverWishlisted();
   let items = [hasNeverWishlisted];
   const memo = registerDismiss.useMemo(() => {
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
     intl2 = intl3.intl;
     return obj;
   }, items2);
-  const obj4 = hasNeverWishlisted(9443);
+  const obj4 = hasNeverWishlisted(9438);
   const coachmark = obj4.useCoachmark(anchorRef, memo1);
   return null;
 });

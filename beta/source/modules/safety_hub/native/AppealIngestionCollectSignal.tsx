@@ -1,7 +1,7 @@
 // Module ID: 11500
 // Function ID: 11501
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 7513, 21, 5092, 587, 558, 576, 4832, 7512, 8580, 11473, 584, 5056, 11501, 2000, 1126, 11479, 5088, 2]
+// Dependencies: [19, 17, 7508, 21, 5092, 587, 558, 576, 4832, 7507, 8575, 11473, 584, 5056, 11501, 2000, 1126, 11479, 5088, 2]
 // Exports: default
 
 // Module 11500 (AppealIngestionCollectSignal)
@@ -11,10 +11,10 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import react_native2 from "react-native" /* 4832 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
-import Form2 from "Form" /* 8580 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
+import Form2 from "Form" /* 8575 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -217,7 +217,7 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   items = [closure_6(isDsaEligible(11479).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8580).Form;
+  Form = isDsaEligible(8575).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -226,7 +226,7 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(closure_9, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8580).FormSection;
+  const FormSection = isDsaEligible(8575).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1126).t["8k9GCW"], {}) };

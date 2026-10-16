@@ -1,10 +1,10 @@
-// Module ID: 9327
-// Function ID: 9328
+// Module ID: 9322
+// Function ID: 9323
 // Name: ForumHooks
-// Dependencies: [5, 19, 5987, 6034, 6060, 7006, 2065, 5951, 2087, 4750, 6035, 1390, 7005, 6979, 9328, 7905, 6975, 1085, 2072, 1125, 558, 576, 504, 7007, 584, 12, 1388, 5396, 11, 7923, 2074, 7890, 5627, 8139, 8479, 9329, 6800, 2]
+// Dependencies: [5, 19, 5987, 6034, 6060, 7006, 2065, 5951, 2087, 4750, 6035, 1390, 7005, 6979, 9323, 7900, 6975, 1085, 2072, 1125, 558, 576, 504, 7007, 584, 12, 1388, 5396, 11, 7918, 2074, 7885, 5627, 8134, 8474, 9324, 6800, 2]
 // Exports: getForumPostAuthor
 
-// Module 9327 (ForumHooks)
+// Module 9322 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
@@ -17,9 +17,9 @@ import useMessageAuthor from "useMessageAuthor" /* 5627 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import ForumConstants from "ForumConstants" /* 6975 */;
 import ForumUtils from "ForumUtils" /* 7007 */;
-import ThreadUtils from "ThreadUtils" /* 7923 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8139 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8479 */;
+import ThreadUtils from "ThreadUtils" /* 7918 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8134 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
@@ -34,8 +34,8 @@ import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserStore from "UserStore" /* 1390 */;
 import ForumActivePostStore from "ForumActivePostStore" /* 7005 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9328 */;
-import ForumSearchStore from "ForumSearchStore" /* 7905 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9323 */;
+import ForumSearchStore from "ForumSearchStore" /* 7900 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,8 +47,8 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f101274 = (count) => count.count + count.burst_count;
-const f101275 = (burst_count) => burst_count.burst_count;
+const f101273 = (count) => count.count + count.burst_count;
+const f101274 = (burst_count) => burst_count.burst_count;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -449,7 +449,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostUsedR
   if (0 !== arr.length) {
     let tmp7;
     if (cResult[2] !== arr) {
-      const items = [f101274, f101275];
+      const items = [f101273, f101274];
       const obj2 = _modDef12;
       const orderByResult = obj2.orderBy(arr, items, ["desc", "desc"]);
       cResult[2] = arr;
@@ -477,7 +477,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostUsedR
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f101274, f101275];
+      const items = [f101273, f101274];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -713,7 +713,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeForum
         return parentChannel.count + parentChannel.burst_count;
       }
     }
-    const items2 = [f101274, f101275];
+    const items2 = [f101273, f101274];
     const obj2 = _modDef12;
     orderByResult = obj2.orderBy(tmp7, items2, ["desc", "desc"]);
   }
@@ -751,7 +751,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeForum
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f101274, f101275];
+      const items = [f101273, f101274];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -809,7 +809,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxPossi
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp6) {
-    const items = [f101274, f101275];
+    const items = [f101273, f101274];
     const obj2 = _modDef12;
     const orderByResult = obj2.orderBy(tmp6, items, ["desc", "desc"]);
     cResult[2] = tmp6;
@@ -916,7 +916,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxPossi
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f101274, f101275];
+    const items = [f101273, f101274];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items);

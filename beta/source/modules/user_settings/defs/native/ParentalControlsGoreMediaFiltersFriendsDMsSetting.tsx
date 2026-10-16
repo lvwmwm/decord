@@ -1,21 +1,21 @@
 // Module ID: 16312
 // Function ID: 16313
 // Name: ParentalControlsGoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7259, 7993, 558, 576, 15096, 8243, 15100, 15105, 1126, 1209, 10663, 2]
+// Dependencies: [7254, 7988, 558, 576, 15096, 8238, 15100, 15105, 1126, 1209, 10663, 2]
 
 // Module 16312 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15100 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8243);
+const ExplicitMediaRedactionUtils = tmp(8238);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl3.intl;

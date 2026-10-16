@@ -1,12 +1,12 @@
 // Module ID: 15046
 // Function ID: 15047
 // Name: AccountRemove2faSetting
-// Dependencies: [7993, 558, 15047, 5299, 1126, 15042, 10663, 14960, 2]
+// Dependencies: [7988, 558, 15047, 5299, 1126, 15042, 10663, 14960, 2]
 
 // Module 15046 (AccountRemove2faSetting)
 import intl4 from "intl" /* 1126 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
 import MFAActionCreatorsDefault from "MFAActionCreators" /* 15042 */;
 import account_MFAUtils from "account/MFAUtils" /* 15047 */;

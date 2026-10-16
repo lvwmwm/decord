@@ -1,13 +1,13 @@
 // Module ID: 12611
 // Function ID: 12612
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 5967, 21, 5092, 587, 558, 576, 1126, 12088, 8208, 5088, 1200, 2]
+// Dependencies: [19, 17, 5967, 21, 5092, 587, 558, 576, 1126, 12088, 8203, 5088, 1200, 2]
 
 // Module 12611 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import TextIcon2 from "TextIcon" /* 8208 */;
+import TextIcon2 from "TextIcon" /* 8203 */;
 import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

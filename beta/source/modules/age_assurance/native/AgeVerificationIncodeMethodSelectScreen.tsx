@@ -1,12 +1,12 @@
-// Module ID: 7510
-// Function ID: 7511
+// Module ID: 7505
+// Function ID: 7506
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1205, 5917, 7499, 21, 5092, 7511, 7515, 7516, 5377, 6154, 7517, 5088, 1126, 3120, 6265, 6180, 2]
+// Dependencies: [5, 32, 19, 1205, 5917, 7494, 21, 5092, 7506, 7510, 7511, 5377, 6154, 7512, 5088, 1126, 3120, 6265, 6180, 2]
 // Exports: default
 
-// Module 7510 (AgeVerificationIncodeMethodSelectScreen)
+// Module 7505 (AgeVerificationIncodeMethodSelectScreen)
 import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7499 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7494 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -153,8 +153,8 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     return closure_0(...arguments);
   }, items);
   const obj = { children: null };
-  const ModalScreen = onMethodSelected(7515).ModalScreen;
-  const ModalContent = onMethodSelected(7516).ModalContent;
+  const ModalScreen = onMethodSelected(7510).ModalScreen;
+  const ModalContent = onMethodSelected(7511).ModalContent;
   const obj2 = { children: null };
   if (tmp2) {
     let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6154).ActivityIndicator, { size: "large" }) };
@@ -167,7 +167,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     const Stack = tmp7(5377).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
     const Stack2 = tmp7(5377).Stack;
-    items1 = [tmp6(tmp7(7517).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+    items1 = [tmp6(tmp7(7512).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
     const Stack3 = tmp7(5377).Stack;
     let obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3120).eZvwAe) };

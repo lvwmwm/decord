@@ -1,7 +1,7 @@
 // Module ID: 16821
 // Function ID: 16822
 // Name: YouBar
-// Dependencies: [5, 32, 19, 17, 4937, 4939, 1390, 15373, 1085, 2062, 21, 5092, 587, 1497, 15366, 10679, 4979, 15372, 15376, 4850, 5378, 8473, 16822, 14993, 504, 8343, 16828, 4977, 5057, 1388, 12, 16829, 2000, 4976, 10626, 7053, 2049, 1126, 7094, 16843, 6335, 1200, 16844, 16845, 16846, 16851, 16854, 558, 576, 16856, 16857, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 4937, 4939, 1390, 15373, 1085, 2062, 21, 5092, 587, 1497, 15366, 10679, 4979, 15372, 15376, 4850, 5378, 8468, 16822, 14993, 504, 8338, 16828, 4977, 5057, 1388, 12, 16829, 2000, 4976, 10626, 7053, 2049, 1126, 7094, 16843, 6335, 1200, 16844, 16845, 16846, 16851, 16854, 558, 576, 16856, 16857, 4827, 2]
 
 // Module 16821 (YouBar)
 import _mod12 from "module_12" /* 12 */;
@@ -131,7 +131,7 @@ let closure_26 = react.memo(function YouBar() {
   fn.__workletHash = 7314807713815;
   fn.__initData = __initData;
   const animatedStyle = tmp4Result13.useAnimatedStyle(fn);
-  const tmp4Result14 = tmp4(8473);
+  const tmp4Result14 = tmp4(8468);
   const iCYMIEnabled = tmp4Result14.useICYMIEnabled("TabsNavigator");
   const tmp4Result15 = tmp4(16822);
   const youBarCoachmark = tmp4Result15.useYouBarCoachmark({ isQuestRendered: isMobileQuestDockRenderedBase });
@@ -150,7 +150,7 @@ let closure_26 = react.memo(function YouBar() {
   const items2 = [currentUser];
   const tmp4Result17 = tmp4(504);
   const stateFromStores = tmp4Result17.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const tmp4Result18 = tmp4(8343);
+  const tmp4Result18 = tmp4(8338);
   const nameplate = tmp4Result18.useNameplate({ user: stateFromStores });
   const tmp4Result19 = tmp4(16828);
   const youBarAccessibilityLabel = tmp4Result19.useYouBarAccessibilityLabel(stateFromStores);

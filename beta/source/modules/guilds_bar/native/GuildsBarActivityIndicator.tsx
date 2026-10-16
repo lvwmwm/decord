@@ -1,7 +1,7 @@
 // Module ID: 16791
 // Function ID: 16792
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 5092, 587, 558, 576, 4818, 1200, 6162, 8680, 8777, 8225, 8561, 9097, 16792, 10770, 16793, 8229, 16794, 8234, 8164, 16787, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 4818, 1200, 6162, 8675, 8772, 8220, 8556, 9092, 16792, 10770, 16793, 8224, 16794, 8229, 8159, 16787, 2]
 
 // Module 16791 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
@@ -9,14 +9,14 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8164 */;
-import StageIcon from "StageIcon" /* 8225 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
-import AppsIcon from "AppsIcon" /* 8234 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8561 */;
-import CalendarIcon from "CalendarIcon" /* 8680 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8777 */;
-import ScreenIcon from "ScreenIcon" /* 9097 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8159 */;
+import StageIcon from "StageIcon" /* 8220 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8224 */;
+import AppsIcon from "AppsIcon" /* 8229 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8556 */;
+import CalendarIcon from "CalendarIcon" /* 8675 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8772 */;
+import ScreenIcon from "ScreenIcon" /* 9092 */;
 import VideoIcon from "VideoIcon" /* 10770 */;
 import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 16787 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 16792 */;

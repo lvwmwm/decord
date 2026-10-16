@@ -1,7 +1,7 @@
 // Module ID: 13746
 // Function ID: 13747
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 13690, 5088, 9506, 1200, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 13690, 5088, 9501, 1200, 2]
 
 // Module 13746 (PremiumPerkCarousel)
 import react_native from "react-native" /* 17 */;

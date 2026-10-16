@@ -1,7 +1,7 @@
 // Module ID: 11446
 // Function ID: 11447
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 558, 576, 9635, 1126, 9636, 11437, 2]
+// Dependencies: [19, 21, 558, 576, 9630, 1126, 9631, 11437, 2]
 
 // Module 11446 (BanConfirmModal)
 import Fragment from "Fragment" /* 21 */;

@@ -1,13 +1,13 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9216
+// Function ID: 9217
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9208, 1085, 9222, 21, 558, 576, 1503, 9223, 12340, 2]
+// Dependencies: [19, 9203, 1085, 9217, 21, 558, 576, 1503, 9218, 12340, 2]
 
-// Module 9221 (XboxLinkDiscordConsent)
+// Module 9216 (XboxLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9208 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9222 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9203 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9217 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDi
       }
     }
   }
-  const TwoWayLinkDiscordConsent = tmp(9223).TwoWayLinkDiscordConsent;
+  const TwoWayLinkDiscordConsent = tmp(9218).TwoWayLinkDiscordConsent;
   const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(12340).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
   cResult[4] = callbackCode;
   cResult[5] = callbackState;
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDi
   const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const TwoWayLinkDiscordConsent = navigation(9223).TwoWayLinkDiscordConsent;
+  const TwoWayLinkDiscordConsent = navigation(9218).TwoWayLinkDiscordConsent;
   return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(12340).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");

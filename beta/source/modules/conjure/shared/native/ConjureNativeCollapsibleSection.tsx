@@ -1,7 +1,7 @@
 // Module ID: 17280
 // Function ID: 17281
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 10533, 6906, 8542, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 10533, 6906, 8537, 2]
 
 // Module 17280 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
@@ -150,7 +150,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
         const obj6 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj7, accessibilityLabel: tmp15, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj8) };
         tmp15 = showLabel;
         obj7 = { expanded: undefined === expanded || expanded };
-        const PressableScale = tmp(8542).PressableScale;
+        const PressableScale = tmp(8537).PressableScale;
         if (undefined === expanded || expanded) {
           tmp15 = hideLabel;
         }
@@ -226,7 +226,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
       if (null != onToggleExpanded) {
         const obj5 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj6, accessibilityLabel: showLabel, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
         obj6 = { expanded: flag3 };
-        const PressableScale = tmp4(8542).PressableScale;
+        const PressableScale = tmp4(8537).PressableScale;
         if (flag3) {
           showLabel = hideLabel;
         }

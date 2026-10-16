@@ -1,12 +1,12 @@
-// Module ID: 7493
-// Function ID: 7494
+// Module ID: 7488
+// Function ID: 7489
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 5897, 2065, 2087, 4750, 2116, 2073, 7484, 7039, 6098, 7494, 5889, 5900, 7444, 7495, 2]
+// Dependencies: [5, 5897, 2065, 2087, 4750, 2116, 2073, 7479, 7039, 6098, 7489, 5889, 5900, 7439, 7490, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7493 (StageChannelModalActionCreators)
+// Module 7488 (StageChannelModalActionCreators)
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7484 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -32,7 +32,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(7484);
+        const tmp7Result = tmp7(7479);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -81,14 +81,14 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(7484);
+    const obj2 = flag2(7479);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(7484);
+      const obj3 = flag2(7479);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }

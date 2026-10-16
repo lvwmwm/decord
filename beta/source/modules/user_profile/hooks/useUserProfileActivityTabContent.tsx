@@ -1,19 +1,19 @@
 // Module ID: 13380
 // Function ID: 13381
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 8997, 5108, 5759, 5113, 7321, 1085, 3, 558, 576, 13381, 13165, 13167, 8460, 504, 2]
+// Dependencies: [19, 8992, 5108, 5759, 5113, 7316, 1085, 3, 558, 576, 13381, 13165, 13167, 8455, 504, 2]
 
 // Module 13380 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8460 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8455 */;
 import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 13381 */;
 import react_mod from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8997 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8992 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

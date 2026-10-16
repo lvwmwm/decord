@@ -1,9 +1,9 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 9506
+// Function ID: 9507
 // Name: PremiumUpsellGradientBackground
 // Dependencies: [19, 17, 7152, 21, 5092, 558, 576, 5391, 1105, 2]
 
-// Module 9511 (PremiumUpsellGradientBackground)
+// Module 9506 (PremiumUpsellGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

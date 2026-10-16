@@ -1,7 +1,9 @@
 // Module ID: 8740
 // Function ID: 8741
-// Dependencies: []
+// Dependencies: [8741]
 
 // Module 8740
+import _mod8741 from "module_8741" /* 8741 */;
 
-export default { L: 1, M: 0, Q: 3, H: 2 };
+
+export default _mod8741();

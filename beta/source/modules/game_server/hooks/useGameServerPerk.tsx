@@ -1,7 +1,7 @@
 // Module ID: 12314
 // Function ID: 12315
 // Name: useGameServerPerk
-// Dependencies: [19, 8031, 5009, 5008, 558, 576, 5026, 504, 12315, 1126, 3022, 12316, 2]
+// Dependencies: [19, 8026, 5009, 5008, 558, 576, 5026, 504, 12315, 1126, 3022, 12316, 2]
 
 // Module 12314 (useGameServerPerk)
 import intl3 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import GameServerConstants from "GameServerConstants" /* 5009 */;
 import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 12315 */;
 import _modDef12316 from "module_12316" /* 12316 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8031 */;
+import GameServerStore from "GameServerStore" /* 8026 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

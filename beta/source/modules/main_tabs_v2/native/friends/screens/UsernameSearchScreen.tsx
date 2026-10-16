@@ -1,7 +1,7 @@
 // Module ID: 17533
 // Function ID: 17534
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 1265, 6665, 5362, 9307, 1382, 10226, 1126, 14077, 6729, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 1265, 6665, 5362, 9302, 1382, 10226, 1126, 14077, 6729, 2]
 
 // Module 17533 (UsernameSearchScreen)
 import nativeDefault from "native" /* 587 */;
@@ -110,7 +110,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
     tmp10 = cResult[4];
   }
   const effect1 = obj2.useEffect(tmp9, tmp10);
-  const tmpResult = navigation(9307);
+  const tmpResult = navigation(9302);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   if (cResult[5] === insets.top) {
     class T {
@@ -229,7 +229,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
       }
     }
   }), items);
-  let obj = navigation(9307);
+  let obj = navigation(9302);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj2 = navigation(1382);
   let prop = null;

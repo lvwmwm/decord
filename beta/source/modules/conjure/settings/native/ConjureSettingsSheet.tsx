@@ -1,7 +1,7 @@
 // Module ID: 17081
 // Function ID: 17082
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 13218, 13227, 10652, 21, 3849, 5092, 587, 558, 576, 6665, 504, 17082, 17094, 5056, 1126, 6839, 17099, 5088, 6154, 5379, 6899, 8530, 12359, 8779, 2]
+// Dependencies: [5, 32, 19, 17, 13218, 13227, 10652, 21, 3849, 5092, 587, 558, 576, 6665, 504, 17082, 17094, 5056, 1126, 6839, 17099, 5088, 6154, 5379, 6899, 8525, 12359, 8774, 2]
 
 // Module 17081 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
@@ -670,7 +670,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     intl = tabs(_undefined[18]).intl;
     return obj;
   }), items);
-  const tmp7 = tabs(8530);
+  const tmp7 = tabs(8525);
   obj = {
     items: memo,
     pageWidth: tmp2,
@@ -690,7 +690,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     tmp9Result = tmp9(tmp5(12359).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp5(8779).SegmentedControl, obj4);
+    tmp9Result = tmp9(tmp5(8774).SegmentedControl, obj4);
   }
   return closure_11(tmp10, obj2);
 });

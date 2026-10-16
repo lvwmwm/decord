@@ -1,7 +1,7 @@
 // Module ID: 14801
 // Function ID: 14802
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6036, 2069, 502, 2065, 5110, 2116, 1390, 14728, 2064, 1085, 14727, 1295, 4739, 10869, 5296, 1265, 10804, 10855, 10856, 5106, 1279, 2031, 9253, 2002, 1121, 584, 10481, 10808, 10814, 10820, 6853, 10846, 1126, 10921, 10848, 10923, 11615, 5442, 6879, 2]
+// Dependencies: [5, 6036, 2069, 502, 2065, 5110, 2116, 1390, 14728, 2064, 1085, 14727, 1295, 4739, 10869, 5296, 1265, 10804, 10855, 10856, 5106, 1279, 2031, 9248, 2002, 1121, 584, 10481, 10808, 10814, 10820, 6853, 10846, 1126, 10921, 10848, 10923, 11615, 5442, 6879, 2]
 
 // Module 14801 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -15,7 +15,7 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 *
 import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9253 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9248 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import getURLForApplication from "getURLForApplication" /* 10808 */;
 import tryLaunchAsFrame from "tryLaunchAsFrame" /* 10855 */;

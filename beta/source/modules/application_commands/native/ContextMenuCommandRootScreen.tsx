@@ -1,14 +1,14 @@
 // Module ID: 17632
 // Function ID: 17633
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2087, 5403, 21, 5092, 587, 558, 576, 504, 9254, 9808, 9802, 6665, 6738, 10515, 1126, 5088, 17633, 6739, 6744, 2]
+// Dependencies: [32, 19, 17, 2087, 5403, 21, 5092, 587, 558, 576, 504, 9249, 9803, 9797, 6665, 6738, 10515, 1126, 5088, 17633, 6739, 6744, 2]
 
 // Module 17632 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import executeCommandDefault from "executeCommand" /* 9802 */;
+import executeCommandDefault from "executeCommand" /* 9797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;

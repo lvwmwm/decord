@@ -1,7 +1,7 @@
 // Module ID: 12556
 // Function ID: 12557
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5757, 2069, 2065, 2087, 5108, 4760, 1390, 1085, 2072, 2062, 21, 5092, 5906, 587, 558, 576, 504, 1126, 8159, 5421, 10235, 12557, 12558, 1200, 12559, 12560, 6157, 12561, 9461, 6185, 5088, 4962, 8385, 8674, 4938, 2049, 10013, 12562, 2]
+// Dependencies: [19, 17, 5757, 2069, 2065, 2087, 5108, 4760, 1390, 1085, 2072, 2062, 21, 5092, 5906, 587, 558, 576, 504, 1126, 8154, 5421, 10235, 12557, 12558, 1200, 12559, 12560, 6157, 12561, 9456, 6185, 5088, 4962, 8380, 8669, 4938, 2049, 10008, 12562, 2]
 
 // Module 12556 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
@@ -17,8 +17,8 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(8159);
+      const tmpResult5 = channelId(8154);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {

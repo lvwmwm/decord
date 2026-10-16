@@ -1,10 +1,10 @@
-// Module ID: 9204
-// Function ID: 9205
+// Module ID: 9199
+// Function ID: 9200
 // Name: QuestPlatformUtils
-// Dependencies: [5972, 1085, 7413, 5980, 9174, 9175, 9178, 5979, 7407, 9205, 1126, 1382, 9193, 5053, 12944, 1121, 9162, 4800, 12945, 12947, 1279, 12959, 12961, 12962, 7416, 7094, 584, 2]
+// Dependencies: [5972, 1085, 7408, 5980, 9169, 9170, 9173, 5979, 7402, 9200, 1126, 1382, 9188, 5053, 12944, 1121, 9157, 4800, 12945, 12947, 1279, 12959, 12961, 12962, 7411, 7094, 584, 2]
 // Exports: getExpiredCredentialsHintMessage, getPlatformTypeForHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAdGameLinkDirectlyFromBountyEntireVideoTap, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
-// Module 9204 (QuestPlatformUtils)
+// Module 9199 (QuestPlatformUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -14,13 +14,13 @@ import QuestConstants from "QuestConstants" /* 5972 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
 import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5980 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9175 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9170 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
 import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 12944 */;
 import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 12961 */;
 import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 12962 */;

@@ -1,7 +1,7 @@
 // Module ID: 12090
 // Function ID: 12091
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5081, 5987, 1085, 1393, 21, 5092, 1382, 587, 4850, 5093, 558, 576, 5396, 504, 5378, 2041, 4764, 7987, 1415, 6820, 1265, 6879, 9440, 5056, 5088, 1126, 11989, 12091, 5379, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5987, 1085, 1393, 21, 5092, 1382, 587, 4850, 5093, 558, 576, 5396, 504, 5378, 2041, 4764, 7982, 1415, 6820, 1265, 6879, 9435, 5056, 5088, 1126, 11989, 12091, 5379, 6899, 2]
 
 // Module 12090 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(7987);
+const DoubleTapToReactUtils = tmp(7982);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;

@@ -1,7 +1,7 @@
 // Module ID: 10228
 // Function ID: 10229
 // Name: UserRow
-// Dependencies: [19, 17, 5081, 5440, 7351, 2065, 5108, 4760, 10217, 1085, 21, 5092, 587, 7015, 38, 10229, 10230, 4808, 10231, 7018, 7352, 558, 576, 504, 1200, 5088, 4962, 10235, 6852, 6053, 1126, 10258, 10259, 6196, 5379, 2032, 9322, 8199, 8304, 2000, 8343, 10261, 9410, 5408, 7980, 5628, 8854, 10263, 8767, 10271, 8859, 10272, 6177, 10278, 6180, 2]
+// Dependencies: [19, 17, 5081, 5440, 7346, 2065, 5108, 4760, 10217, 1085, 21, 5092, 587, 7015, 38, 10229, 10230, 4808, 10231, 7018, 7347, 558, 576, 504, 1200, 5088, 4962, 10235, 6852, 6053, 1126, 10258, 10259, 6196, 5379, 2032, 9317, 8194, 8299, 2000, 8338, 10261, 9405, 5408, 7975, 5628, 8849, 10263, 8762, 10271, 8854, 10272, 6177, 10278, 6180, 2]
 
 // Module 10228 (UserRow)
 import react_native from "react-native" /* 17 */;
@@ -17,10 +17,10 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6196 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7352 */;
-import ChatIcon from "ChatIcon" /* 8199 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9322 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9410 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7347 */;
+import ChatIcon from "ChatIcon" /* 8194 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9317 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9405 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10230 */;
 import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10231 */;
@@ -31,7 +31,7 @@ import CrownIcon2 from "CrownIcon" /* 10261 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7351 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7346 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -763,7 +763,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8304, dependencyMap.paths);
+      const promise = asyncRequire(8299, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

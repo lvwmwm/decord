@@ -1,10 +1,10 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 9540
+// Function ID: 9541
 // Name: useMaybeAddReactionMarketingEasterEggNote
-// Dependencies: [558, 9546, 2]
+// Dependencies: [558, 9541, 2]
 
-// Module 9545 (useMaybeAddReactionMarketingEasterEggNote)
-import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 9546 */;
+// Module 9540 (useMaybeAddReactionMarketingEasterEggNote)
+import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 9541 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 11534
 // Function ID: 11535
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5088, 6180, 6265, 5377, 1126, 2568, 11535, 5032, 9244, 8216, 11536, 7558, 11538, 9575, 5051, 11539, 7092, 6208, 2]
+// Dependencies: [19, 21, 558, 576, 5088, 6180, 6265, 5377, 1126, 2568, 11535, 5032, 9239, 8211, 11536, 7553, 11538, 9570, 5051, 11539, 7092, 6208, 2]
 
 // Module 11534 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
@@ -23,10 +23,10 @@ const UserPlusIcon = tmp(5032);
 const ClockIcon = tmp(5051);
 const XSmallIcon = tmp(6208);
 const SettingsIcon = tmp(7092);
-const CreditCardIcon = tmp(7558);
-const ForumIcon = tmp(8216);
-const ServerIcon = tmp(9244);
-const FlagIcon = tmp(9575);
+const CreditCardIcon = tmp(7553);
+const ForumIcon = tmp(8211);
+const ServerIcon = tmp(9239);
+const FlagIcon = tmp(9570);
 const useAgeSpecificText12 = tmp(11535);
 const PhoneIcon = tmp(11536);
 const GiftIcon = tmp(11538);

@@ -1,7 +1,7 @@
 // Module ID: 15863
 // Function ID: 15864
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9636, 6895, 6839, 1126, 15864, 15866, 5051, 6899, 15869, 1382, 10348, 15870, 10663, 14064, 2041, 2]
+// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9631, 6895, 6839, 1126, 15864, 15866, 5051, 6899, 15869, 1382, 10348, 15870, 10663, 14064, 2041, 2]
 
 // Module 15863 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheetRow from "ActionSheetRow" /* 6895 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9636 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9631 */;
 import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10348 */;
 import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14064 */;
 import WrenchIcon from "WrenchIcon" /* 15864 */;

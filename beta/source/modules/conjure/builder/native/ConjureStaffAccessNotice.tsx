@@ -1,7 +1,7 @@
 // Module ID: 17101
 // Function ID: 17102
 // Name: ConjureStaffAccessNotice
-// Dependencies: [19, 1085, 21, 558, 576, 17102, 1112, 4806, 1126, 3849, 7571, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 17102, 1112, 4806, 1126, 3849, 7566, 2]
 
 // Module 17101 (ConjureStaffAccessNotice)
 import Fragment from "Fragment" /* 21 */;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
       tmp7 = cResult[3];
     }
     if (cResult[4] !== tmp7) {
-      const tmp13 = jsx(conjureStaffAccessTarget(7571).NewInlineNotice, { type: "info", role: "static", message: tmp7 });
+      const tmp13 = jsx(conjureStaffAccessTarget(7566).NewInlineNotice, { type: "info", role: "static", message: tmp7 });
       cResult[4] = tmp7;
       cResult[5] = tmp13;
       tmp11 = tmp13;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
   [][0] = conjureStaffAccessTarget;
   let tmp5 = null;
   if (null != conjureStaffAccessTarget) {
-    const NewInlineNotice = tmp(7571).NewInlineNotice;
+    const NewInlineNotice = tmp(7566).NewInlineNotice;
     const intl = tmp(1126).intl;
     const format = intl.format;
     const obj3 = { channel: conjureStaffAccessTarget(17102).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };

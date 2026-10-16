@@ -1,7 +1,7 @@
 // Module ID: 15870
 // Function ID: 15871
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 510, 12633, 1631, 6739, 1126, 8482, 12634, 13052, 6185, 5088, 8625, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 510, 12633, 1631, 6739, 1126, 8477, 12634, 13052, 6185, 5088, 8620, 2]
 
 // Module 15870 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
@@ -602,7 +602,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     }
   };
   obj5 = { paddingBottom: bottom + first1(587).space.PX_16 };
-  const FlashList = defaultValue(8625).FlashList;
+  const FlashList = defaultValue(8620).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);

@@ -1,11 +1,11 @@
 // Module ID: 18386
 // Function ID: 18387
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7888, 21, 587, 5092, 558, 576, 18387, 12217, 5088, 1126, 18388, 18389, 14143, 6906, 5377, 2]
+// Dependencies: [19, 17, 7883, 21, 587, 5092, 558, 576, 18387, 12217, 5088, 1126, 18388, 18389, 14143, 6906, 5377, 2]
 
 // Module 18386 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
 import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18387 */;
 import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18388 */;

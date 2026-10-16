@@ -1,7 +1,7 @@
 // Module ID: 17422
 // Function ID: 17423
 // Name: MessageRow
-// Dependencies: [109, 19, 17, 5081, 2068, 2065, 2087, 5966, 1085, 21, 5092, 587, 558, 576, 504, 8159, 5421, 1200, 5088, 10464, 9763, 8767, 4962, 8306, 17423, 12667, 17424, 5627, 7980, 5944, 1126, 12588, 9314, 17386, 2]
+// Dependencies: [109, 19, 17, 5081, 2068, 2065, 2087, 5966, 1085, 21, 5092, 587, 558, 576, 504, 8154, 5421, 1200, 5088, 10464, 9758, 8762, 4962, 8301, 17423, 12667, 17424, 5627, 7975, 5944, 1126, 12588, 9309, 17386, 2]
 
 // Module 17422 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
@@ -14,10 +14,10 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import useMessageAuthorDefault from "useMessageAuthor" /* 5627 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7980 */;
-import BotTagDefault from "BotTag" /* 8767 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9763 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7975 */;
+import BotTagDefault from "BotTag" /* 8762 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9758 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10464 */;
 import SearchListRow2 from "SearchListRow" /* 17386 */;
 import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 17423 */;
@@ -189,7 +189,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
     cResult[8] = tmp15;
     tmp13 = tmp15;
   }
-  const tmpResult2 = channel(8159);
+  const tmpResult2 = channel(8154);
   const channelIcon = tmpResult2.getChannelIcon(channel, { isRulesChannel: tmp8 });
   cResult[3] = channel;
   cResult[4] = tmp8;
@@ -212,7 +212,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
     }
     return rulesChannelId;
   });
-  const obj2 = channel(8159);
+  const obj2 = channel(8154);
   const obj3 = { isRulesChannel: stateFromStores === channel.id };
   const channelIcon = obj2.getChannelIcon(channel, obj3);
   const obj4 = { style: tmp.header, children: items1 };
@@ -489,8 +489,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
   items2[1] = muted;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: channel(8767).Types.SYSTEM_DM, verified: true };
-    const tmp13 = channel(8767);
+    const obj5 = { type: channel(8762).Types.SYSTEM_DM, verified: true };
+    const tmp13 = channel(8762);
     isSystemDMResult = tmp9(tmp13, obj5);
   }
   items2[2] = isSystemDMResult;

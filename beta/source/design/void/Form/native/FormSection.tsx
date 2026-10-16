@@ -1,17 +1,17 @@
-// Module ID: 8587
-// Function ID: 8588
+// Module ID: 8582
+// Function ID: 8583
 // Name: FormSection
-// Dependencies: [19, 17, 1204, 21, 5092, 587, 558, 576, 6264, 6828, 8584, 6265, 8588, 1382, 2]
+// Dependencies: [19, 17, 1204, 21, 5092, 587, 558, 576, 6264, 6828, 8579, 6265, 8583, 1382, 2]
 
-// Module 8587 (FormSection)
+// Module 8582 (FormSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1204 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import RedesignCompat from "RedesignCompat" /* 6264 */;
 import FormRowDefault from "FormRow" /* 6828 */;
-import FormDividerDefault from "FormDivider" /* 8584 */;
-import FormTitleDefault from "FormTitle" /* 8588 */;
+import FormDividerDefault from "FormDivider" /* 8579 */;
+import FormTitleDefault from "FormTitle" /* 8583 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

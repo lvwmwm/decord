@@ -1,7 +1,7 @@
 // Module ID: 13394
 // Function ID: 13395
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1390, 8308, 7152, 2062, 21, 5092, 587, 558, 576, 13395, 8315, 504, 4769, 2049, 10013, 1200, 5088, 1126, 6185, 6208, 5379, 9036, 11826, 2]
+// Dependencies: [19, 17, 1390, 8303, 7152, 2062, 21, 5092, 587, 558, 576, 13395, 8310, 504, 4769, 2049, 10008, 1200, 5088, 1126, 6185, 6208, 5379, 9031, 11826, 2]
 
 // Module 13394 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
 import ColorConstants from "ColorConstants" /* 7152 */;
-import Constants from "Constants" /* 8308 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
+import Constants from "Constants" /* 8303 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
 import ShopIcon from "ShopIcon" /* 11826 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;

@@ -1,7 +1,7 @@
 // Module ID: 15154
 // Function ID: 15155
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5092, 558, 576, 7739, 7740, 15155, 587, 1126, 2568, 11535, 15162, 15163, 6157, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 7734, 7735, 15155, 587, 1126, 2568, 11535, 15162, 15163, 6157, 5088, 2]
 
 // Module 15154 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
@@ -11,8 +11,8 @@ import intl5 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import useUserLinks from "useUserLinks" /* 7739 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
+import useUserLinks from "useUserLinks" /* 7734 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7735 */;
 import useAgeSpecificText3 from "useAgeSpecificText" /* 11535 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

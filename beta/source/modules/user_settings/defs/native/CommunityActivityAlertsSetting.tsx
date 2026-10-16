@@ -1,13 +1,13 @@
 // Module ID: 15819
 // Function ID: 15820
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10694, 7993, 1085, 558, 576, 504, 1126, 10663, 15820, 2]
+// Dependencies: [10694, 7988, 1085, 558, 576, 504, 1126, 10663, 15820, 2]
 
 // Module 15819 (CommunityActivityAlertsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

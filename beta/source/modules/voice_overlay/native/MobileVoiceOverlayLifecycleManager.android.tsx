@@ -1,7 +1,7 @@
 // Module ID: 14791
 // Function ID: 14792
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [2065, 4748, 2087, 2012, 4750, 5110, 4760, 5947, 1390, 5113, 11073, 1085, 14792, 14793, 14794, 14795, 7729, 13603, 14796, 14797, 13578, 1126, 14798, 11086, 9703, 5421, 5970, 1265, 5107, 2002, 2]
+// Dependencies: [2065, 4748, 2087, 2012, 4750, 5110, 4760, 5947, 1390, 5113, 11073, 1085, 14792, 14793, 14794, 14795, 7724, 13603, 14796, 14797, 13578, 1126, 14798, 11086, 9698, 5421, 5970, 1265, 5107, 2002, 2]
 
 // Module 14791 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1126 */;
@@ -10,7 +10,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9703 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9698 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11086 */;
 import react_nativeDefault from "react-native" /* 14798 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

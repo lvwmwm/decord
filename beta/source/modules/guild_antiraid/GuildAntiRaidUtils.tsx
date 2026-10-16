@@ -1,14 +1,14 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8039
+// Function ID: 8040
 // Name: GuildAntiRaidUtils
-// Dependencies: [8045, 4702, 8046, 1126, 2]
+// Dependencies: [8040, 4702, 8041, 1126, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 8044 (GuildAntiRaidUtils)
+// Module 8039 (GuildAntiRaidUtils)
 import intl4 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8046 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8045 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8041 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8040 */;
 import size from "module_2" /* 2 */;
 
 let c3;

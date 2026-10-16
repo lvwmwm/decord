@@ -1,7 +1,7 @@
 // Module ID: 17914
 // Function ID: 17915
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 1205, 21, 5092, 587, 558, 576, 4818, 4969, 504, 1382, 8542, 2]
+// Dependencies: [19, 17, 1205, 21, 5092, 587, 558, 576, 4818, 4969, 504, 1382, 8537, 2]
 
 // Module 17914 (VoicePanelVisualEffectView)
 import get_initialized from "get initialized" /* 504 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useToken2 from "useToken" /* 4818 */;
 import shared from "shared" /* 4969 */;
-import native from "native" /* 8542 */;
+import native from "native" /* 8537 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;

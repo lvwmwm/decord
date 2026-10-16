@@ -1,7 +1,7 @@
 // Module ID: 16645
 // Function ID: 16646
 // Name: DirectoryChannel
-// Dependencies: [19, 2065, 4748, 11760, 5967, 21, 5092, 587, 558, 576, 573, 1112, 10283, 8651, 16565, 2]
+// Dependencies: [19, 2065, 4748, 11760, 5967, 21, 5092, 587, 558, 576, 573, 1112, 10283, 8646, 16565, 2]
 
 // Module 16645 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const container = tmp4.container;
       if (cResult[8] !== stateFromStores) {
         const obj2 = { channel: stateFromStores };
-        const tmp15 = id(8651)(obj2);
+        const tmp15 = id(8646)(obj2);
         cResult[8] = stateFromStores;
         cResult[9] = tmp15;
         tmp13 = tmp15;
@@ -186,7 +186,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj3 = { channel: stateFromStores };
     id(16565);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8651)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8646)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 }));

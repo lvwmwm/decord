@@ -1,7 +1,7 @@
 // Module ID: 10066
 // Function ID: 10067
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1085, 21, 5092, 5969, 4769, 10067, 10068, 10069, 10070, 10071, 7156, 7157, 10072, 10073, 10074, 10075, 10076, 8097, 10077, 4969, 10078, 10079, 10080, 10081, 10082, 10083, 10084, 10085, 10086, 1126, 558, 576, 5031, 6157, 10087, 10088, 1200, 5398, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 5969, 4769, 10067, 10068, 10069, 10070, 10071, 7156, 7157, 10072, 10073, 10074, 10075, 10076, 8092, 10077, 4969, 10078, 10079, 10080, 10081, 10082, 10083, 10084, 10085, 10086, 1126, 558, 576, 5031, 6157, 10087, 10088, 1200, 5398, 2]
 
 // Module 10066 (PremiumActivatedAlert)
 import react2 from "react" /* 576 */;
@@ -243,7 +243,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
             }
           }
         }
-        tmp7Result4 = tmp7(8097);
+        tmp7Result4 = tmp7(8092);
       }
       cResult[8] = tmp9;
       cResult[9] = tmp7Result4;
@@ -515,7 +515,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAct
         }
       }
     }
-    tmp4Result12 = tmp4(8097);
+    tmp4Result12 = tmp4(8092);
   }
   const obj9 = { source: tmp4Result12, style: tmp9.logo };
   items[1] = hasOwnProperty(tmp4Result11, obj9);

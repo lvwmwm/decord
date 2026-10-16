@@ -1,10 +1,10 @@
 // Module ID: 14735
 // Function ID: 14736
 // Name: context
-// Dependencies: [5639, 1085, 8611, 14736, 14719, 10936, 2]
+// Dependencies: [5639, 1085, 8606, 14736, 14719, 10936, 2]
 
 // Module 14735 (context)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
 import Constants_mod from "Constants" /* 5639 */;
 import Constants_mod2 from "Constants" /* 1085 */;

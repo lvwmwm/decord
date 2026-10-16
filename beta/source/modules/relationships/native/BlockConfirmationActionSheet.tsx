@@ -1,7 +1,7 @@
 // Module ID: 10416
 // Function ID: 10417
 // Name: BlockConfirmationActionSheet
-// Dependencies: [32, 19, 17, 2065, 4760, 1390, 7019, 10415, 1085, 21, 5092, 587, 8310, 1126, 5048, 558, 576, 6265, 6180, 1200, 1631, 6852, 6879, 504, 8306, 6840, 1265, 6307, 8325, 5088, 5409, 6651, 5056, 10417, 2000, 1273, 5379, 7018, 7026, 2128, 4806, 2]
+// Dependencies: [32, 19, 17, 2065, 4760, 1390, 7019, 10415, 1085, 21, 5092, 587, 8305, 1126, 5048, 558, 576, 6265, 6180, 1200, 1631, 6852, 6879, 504, 8301, 6840, 1265, 6307, 8320, 5088, 5409, 6651, 5056, 10417, 2000, 1273, 5379, 7018, 7026, 2128, 4806, 2]
 
 // Module 10416 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -18,8 +18,8 @@ import TableRow2 from "TableRow" /* 6180 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import RelationshipConstants from "RelationshipConstants" /* 7019 */;
-import UserActionCreators from "UserActionCreators" /* 8306 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8310 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -263,7 +263,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     const Avatar = tmp7(1200).Avatar;
     items8 = [closure_14(Avatar, obj9), ];
     const obj10 = { style: tmp.avatarIconContainer, children: closure_14(Icon, obj11) };
-    obj11 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(8325) };
+    obj11 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(8320) };
     Icon = tmp7(1200).Icon;
     items8[1] = closure_14(c5, obj10);
     items9 = [closure_15(c5, obj8), , ];

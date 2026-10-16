@@ -1,16 +1,16 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 8780
+// Function ID: 8781
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2071, 1085, 21, 5092, 587, 558, 576, 8655, 5056, 8786, 8519, 1126, 1200, 5088, 5379, 13028, 2]
+// Dependencies: [19, 17, 2071, 1085, 21, 5092, 587, 558, 576, 8650, 5056, 8781, 8514, 1126, 1200, 5088, 5379, 13028, 2]
 
-// Module 8785 (EndEventActionSheet)
+// Module 8780 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8519 */;
-import CallsUtils from "CallsUtils" /* 8786 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8514 */;
+import CallsUtils from "CallsUtils" /* 8781 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
   const cResult = obj.c(29);
   channel = channel.channel;
   const tmp4 = closure_7();
-  let obj2 = channel(8655);
+  let obj2 = channel(8650);
   const activeEvent = obj2.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
   let obj9;
   channel = channel.channel;
   const tmp = closure_7();
-  let obj = channel(8655);
+  let obj = channel(8650);
   const activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;

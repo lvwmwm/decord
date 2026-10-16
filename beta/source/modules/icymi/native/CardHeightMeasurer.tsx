@@ -1,12 +1,12 @@
 // Module ID: 16980
 // Function ID: 16981
 // Name: CardHeightMeasurer
-// Dependencies: [19, 17, 21, 558, 576, 16915, 8472, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16915, 8467, 2]
 
 // Module 16980 (CardHeightMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

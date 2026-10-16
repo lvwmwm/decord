@@ -1,7 +1,7 @@
 // Module ID: 16854
 // Function ID: 16855
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 9681, 15373, 21, 5092, 587, 558, 576, 16855, 4850, 5378, 504, 5057, 12645, 9682, 1126, 8773, 16853, 1200, 4977, 7574, 2]
+// Dependencies: [19, 17, 9676, 15373, 21, 5092, 587, 558, 576, 16855, 4850, 5378, 504, 5057, 12645, 9677, 1126, 8768, 16853, 1200, 4977, 7569, 2]
 
 // Module 16854 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
@@ -13,14 +13,14 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import spring from "spring" /* 5378 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import BellIcon2 from "BellIcon" /* 8773 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9682 */;
+import IconButton2 from "IconButton" /* 7569 */;
+import BellIcon2 from "BellIcon" /* 8768 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9677 */;
 import showForLaterModal from "showForLaterModal" /* 12645 */;
 import YouBarButton from "YouBarButton" /* 16853 */;
 import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16855 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9681 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9676 */;
 import YouBarConstants from "YouBarConstants" /* 15373 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -379,7 +379,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items1);
   const obj4 = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(8773).BellIcon;
+  const BellIcon = tmp4(8768).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
@@ -412,7 +412,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     hitSlop
   };
   str4 = "secondary-overlay";
-  const IconButton = tmp4(7574).IconButton;
+  const IconButton = tmp4(7569).IconButton;
   if (!hasNameplate) {
     let str5 = "tertiary";
     if (value > 0) {

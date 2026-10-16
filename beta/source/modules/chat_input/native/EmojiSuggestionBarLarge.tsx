@@ -1,7 +1,7 @@
 // Module ID: 12139
 // Function ID: 12140
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [109, 32, 19, 17, 9430, 21, 5092, 587, 558, 576, 12140, 4850, 9514, 9540, 4827, 2]
+// Dependencies: [109, 32, 19, 17, 9425, 21, 5092, 587, 558, 576, 12140, 4850, 9509, 9535, 4827, 2]
 
 // Module 12139 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4827 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9430 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 9514 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9425 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 9509 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -130,7 +130,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(9540).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(9535).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));
@@ -242,7 +242,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiS
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(9540).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(9535).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));

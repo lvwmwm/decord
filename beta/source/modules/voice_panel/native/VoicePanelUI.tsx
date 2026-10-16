@@ -1,7 +1,7 @@
 // Module ID: 17793
 // Function ID: 17794
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6036, 8417, 6074, 11972, 11970, 5115, 11973, 21, 3, 5378, 5092, 587, 4850, 1628, 558, 576, 11971, 1631, 6335, 9580, 10373, 17794, 17795, 5057, 17796, 4818, 11976, 11023, 17798, 17799, 11577, 5221, 5730, 6762, 6852, 6879, 1272, 17800, 6846, 17801, 17802, 10805, 17803, 17805, 17861, 17892, 17896, 17902, 2]
+// Dependencies: [32, 19, 17, 6036, 8412, 6074, 11972, 11970, 5115, 11973, 21, 3, 5378, 5092, 587, 4850, 1628, 558, 576, 11971, 1631, 6335, 9575, 10373, 17794, 17795, 5057, 17796, 4818, 11976, 11023, 17798, 17799, 11577, 5221, 5730, 6762, 6852, 6879, 1272, 17800, 6846, 17801, 17802, 10805, 17803, 17805, 17861, 17892, 17896, 17902, 2]
 
 // Module 17793 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
@@ -16,7 +16,7 @@ import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 10805 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
@@ -36,7 +36,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import AppFreezeStore from "AppFreezeStore" /* 8417 */;
+import AppFreezeStore from "AppFreezeStore" /* 8412 */;
 import VoicePanelStore from "VoicePanelStore" /* 6074 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import Fragment from "Fragment" /* 21 */;

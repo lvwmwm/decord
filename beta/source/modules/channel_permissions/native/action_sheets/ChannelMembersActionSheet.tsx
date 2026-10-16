@@ -1,7 +1,7 @@
 // Module ID: 10767
 // Function ID: 10768
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10768, 8603, 5056, 9697, 10769, 5088, 1126, 8621, 6185, 7092, 6839, 8582, 10766, 10331, 7568, 6307, 6840, 2]
+// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10768, 8598, 5056, 9692, 10769, 5088, 1126, 8616, 6185, 7092, 6839, 8577, 10766, 10331, 7563, 6307, 6840, 2]
 
 // Module 10767 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -14,9 +14,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import SettingsIcon from "SettingsIcon" /* 7092 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8603 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8621 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8598 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8616 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10331 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10768 */;
@@ -303,13 +303,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
                     },
             icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
           };
-          const RowButton = tmp5(8582).RowButton;
+          const RowButton = tmp5(8577).RowButton;
           intl3 = tmp5(1126).intl;
           tmp32Result2 = tmp32(RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: closure_11(InlineNotice, obj14) };
           obj14 = { type: "info", message: intl2.string(intl7.t.VOuiSj), role: "static" };
-          InlineNotice = tmp5(7568).InlineNotice;
+          InlineNotice = tmp5(7563).InlineNotice;
           intl2 = tmp5(1126).intl;
           tmp32Result2 = tmp32(tmp14, obj13);
         }

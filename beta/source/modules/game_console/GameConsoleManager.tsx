@@ -1,7 +1,7 @@
 // Module ID: 18110
 // Function ID: 18111
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2012, 5110, 5112, 5113, 5111, 9222, 5117, 3, 38, 5243, 11109, 6808, 2060, 11111, 1388, 5299, 1126, 18111, 11115, 2]
+// Dependencies: [5, 502, 2012, 5110, 5112, 5113, 5111, 9217, 5117, 3, 38, 5243, 11109, 6808, 2060, 11111, 1388, 5299, 1126, 18111, 11115, 2]
 
 // Module 18110 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -21,7 +21,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import SessionsStore from "SessionsStore" /* 5112 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9222 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9217 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

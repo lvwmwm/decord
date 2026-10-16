@@ -1,7 +1,7 @@
 // Module ID: 11144
 // Function ID: 11145
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6036, 2065, 6078, 2087, 2070, 10977, 1085, 21, 5092, 6259, 4967, 587, 1265, 5107, 10361, 5934, 7482, 558, 576, 504, 5106, 1126, 1200, 11003, 11145, 5421, 5956, 5950, 5391, 5088, 8561, 7719, 11146, 7484, 11147, 8655, 8683, 10332, 10331, 10979, 10985, 10986, 10989, 11148, 11149, 2]
+// Dependencies: [19, 17, 6036, 2065, 6078, 2087, 2070, 10977, 1085, 21, 5092, 6259, 4967, 587, 1265, 5107, 10361, 5934, 7477, 558, 576, 504, 5106, 1126, 1200, 11003, 11145, 5421, 5956, 5950, 5391, 5088, 8556, 7714, 11146, 7479, 11147, 8650, 8678, 10332, 10331, 10979, 10985, 10986, 10989, 11148, 11149, 2]
 // Exports: closeStageModal
 
 // Module 11144 (StageActionHeader)
@@ -15,11 +15,11 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7484 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7719 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8561 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7479 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7714 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8556 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import StatusBarDefault from "StatusBar" /* 10361 */;
 import StageMusicActionCreators from "StageMusicActionCreators" /* 10989 */;
 import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11003 */;

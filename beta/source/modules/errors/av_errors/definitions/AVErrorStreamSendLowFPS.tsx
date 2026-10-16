@@ -1,7 +1,7 @@
 // Module ID: 18661
 // Function ID: 18662
 // Name: AVErrorStreamSendLowFPS
-// Dependencies: [6036, 5897, 7429, 1085, 1102, 5900, 18658, 5270, 5289, 18655, 2]
+// Dependencies: [6036, 5897, 7424, 1085, 1102, 5900, 18658, 5270, 5289, 18655, 2]
 
 // Module 18661 (AVErrorStreamSendLowFPS)
 import Constants from "Constants" /* 1085 */;
@@ -13,7 +13,7 @@ import AVErrorContext from "AVErrorContext" /* 18655 */;
 import AVErrorUtils from "AVErrorUtils" /* 18658 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamStates = Constants.ApplicationStreamStates;

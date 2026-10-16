@@ -1,7 +1,7 @@
 // Module ID: 17708
 // Function ID: 17709
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8317, 2062, 21, 5092, 587, 558, 576, 10100, 5056, 4977, 10106, 1126, 2664, 5088, 5379, 6840, 10051, 6879, 17709, 6157, 11538, 8309, 504, 2]
+// Dependencies: [19, 17, 8312, 2062, 21, 5092, 587, 558, 576, 10100, 5056, 4977, 10106, 1126, 2664, 5088, 5379, 6840, 10046, 6879, 17709, 6157, 11538, 8304, 504, 2]
 
 // Module 17708 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,11 +13,11 @@ import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10051 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10046 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10106 */;
 import _modDef17709 from "module_17709" /* 17709 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,13 +1,13 @@
 // Module ID: 17513
 // Function ID: 17514
 // Name: trackFriendListViewed
-// Dependencies: [1085, 17514, 1265, 7188, 2]
+// Dependencies: [1085, 17514, 1265, 7183, 2]
 // Exports: default
 
 // Module 17513 (trackFriendListViewed)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Clickstream from "Clickstream" /* 7188 */;
+import Clickstream from "Clickstream" /* 7183 */;
 import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 17514 */;
 import size from "module_2" /* 2 */;
 

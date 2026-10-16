@@ -1,12 +1,12 @@
 // Module ID: 10324
 // Function ID: 10325
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 9454, 9453, 5088, 5377, 6840, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 9449, 9448, 5088, 5377, 6840, 2]
 
 // Module 10324 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExpressiveGradient2 from "ExpressiveGradient" /* 9454 */;
+import ExpressiveGradient2 from "ExpressiveGradient" /* 9449 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
       }
     }
     let obj2 = { style: tmp14.graphic };
-    const Graphic = tmp(9453).Graphic;
+    const Graphic = tmp(9448).Graphic;
     let merged = Object.assign(tmp7);
     tmp17 = closure_8(Graphic, obj2);
   } else {
@@ -182,7 +182,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
   Stack = gradientColor(5377).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(9453).Graphic;
+    const Graphic = tmp5(9448).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {

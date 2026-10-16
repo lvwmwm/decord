@@ -1,7 +1,7 @@
 // Module ID: 15155
 // Function ID: 15156
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1390, 7259, 7260, 1085, 7483, 21, 5092, 587, 558, 576, 7739, 4808, 1126, 11532, 573, 15156, 1265, 15157, 5056, 15158, 2000, 5377, 5379, 13052, 2568, 15161, 5934, 1384, 11529, 1628, 7500, 14095, 2]
+// Dependencies: [19, 17, 1390, 7254, 7255, 1085, 7478, 21, 5092, 587, 558, 576, 7734, 4808, 1126, 11532, 573, 15156, 1265, 15157, 5056, 15158, 2000, 5377, 5379, 13052, 2568, 15161, 5934, 1384, 11529, 1628, 7495, 14095, 2]
 // Exports: FamilyCenterParentQRCodeButton
 
 // Module 15155 (FamilyCenterBannerButton)
@@ -15,14 +15,14 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import useUserLinks from "useUserLinks" /* 7739 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import useUserLinks from "useUserLinks" /* 7734 */;
 import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15157 */;
 import QrCodeIcon from "QrCodeIcon" /* 15161 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const NativePermissionUtilsDefault = tmp(7500);
+const NativePermissionUtilsDefault = tmp(7495);
 function FamilyCenterTeenQRCodeButtonInner() {
   let currentUser;
   let getLinkCode;
@@ -256,7 +256,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     return tmp4;
   }
   let tmp = handleQrCodeScanSucess;
-  let obj = handleQrCodeScanSucess(7739);
+  let obj = handleQrCodeScanSucess(7734);
   if (obj.useHasMaxConnections()) {
     const tmp6 = null;
     return null;

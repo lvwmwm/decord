@@ -1,7 +1,7 @@
 // Module ID: 13787
 // Function ID: 13788
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 6176, 4770, 1390, 4771, 4774, 4775, 7110, 1999, 7132, 1085, 5071, 1392, 21, 3, 5092, 587, 558, 576, 1503, 6205, 6185, 5088, 1126, 6852, 13679, 6879, 504, 4827, 4969, 1105, 5724, 6170, 10053, 7121, 1265, 13676, 13684, 4769, 38, 6940, 6157, 13788, 13789, 13653, 13663, 8097, 5379, 13642, 13683, 8219, 9396, 13689, 7572, 2128, 5391, 1200, 8081, 6182, 1631, 13751, 7109, 6960, 5396, 8095, 13753, 13713, 2082, 6680, 6684, 5364, 13685, 13766, 2]
+// Dependencies: [5, 32, 19, 17, 6176, 4770, 1390, 4771, 4774, 4775, 7110, 1999, 7132, 1085, 5071, 1392, 21, 3, 5092, 587, 558, 576, 1503, 6205, 6185, 5088, 1126, 6852, 13679, 6879, 504, 4827, 4969, 1105, 5724, 6170, 10048, 7121, 1265, 13676, 13684, 4769, 38, 6940, 6157, 13788, 13789, 13653, 13663, 8092, 5379, 13642, 13683, 8214, 9391, 13689, 7567, 2128, 5391, 1200, 8076, 6182, 1631, 13751, 7109, 6960, 5396, 8090, 13753, 13713, 2082, 6680, 6684, 5364, 13685, 13766, 2]
 
 // Module 13787 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
@@ -25,8 +25,8 @@ import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6205 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
 import PremiumManagementUtils from "PremiumManagementUtils" /* 7121 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8081 */;
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9396 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8076 */;
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9391 */;
 import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13642 */;
 import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 13683 */;
 import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13685 */;
@@ -1309,7 +1309,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
     }
   }
   useMountEffectDefault(tmp28);
-  const tmpResult8 = navigation(8095);
+  const tmpResult8 = navigation(8090);
   const isInReverseTrial = tmpResult8.useIsInReverseTrial();
   const tmp5Result = useFPDurationLeftDefault;
   tmp5Result(tmp27.endsAt, navigation(13753).CountDownMessageTypes.SHORT_TIME);
@@ -1678,7 +1678,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
       const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
     }
   });
-  const obj8 = navigation(8095);
+  const obj8 = navigation(8090);
   let isInReverseTrial = obj8.useIsInReverseTrial();
   const tmp15 = useFPDurationLeftDefault;
   const tmp15Result = tmp15(tmp12.endsAt, navigation(13753).CountDownMessageTypes.SHORT_TIME);
@@ -1762,13 +1762,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   items9 = [tmp29Result, , , , , , ];
   if (isInReverseTrial) {
     const obj13 = { premiumType: closure_26.TIER_2, forFractionalPremium: true, hideButton: true };
-    isInReverseTrial = tmp29(tmp2(9396), obj13);
+    isInReverseTrial = tmp29(tmp2(9391), obj13);
   }
   items9[1] = isInReverseTrial;
   let tmp29Result3 = result && !tmp23;
   if (tmp29Result3) {
     const obj14 = { premiumType: closure_26.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
-    tmp29Result3 = tmp29(tmp2(9396), obj14);
+    tmp29Result3 = tmp29(tmp2(9391), obj14);
   }
   items9[2] = tmp29Result3;
   if (tmp29Result4) {

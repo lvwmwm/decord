@@ -1,13 +1,13 @@
-// Module ID: 8604
-// Function ID: 8605
+// Module ID: 8599
+// Function ID: 8600
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 8605, 584, 7015, 2]
+// Dependencies: [5, 8600, 584, 7015, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8604 (ChannelSettingsPermissionsActionCreators)
+// Module 8599 (ChannelSettingsPermissionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8605 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8600 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 11689
 // Function ID: 11690
 // Name: MessageAttachmentUtils
-// Dependencies: [4750, 1085, 6990, 6996, 6995, 8479, 558, 576, 573, 2041, 8399, 1126, 2]
+// Dependencies: [4750, 1085, 6990, 6996, 6995, 8474, 558, 576, 573, 2041, 8394, 1126, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt
 
 // Module 11689 (MessageAttachmentUtils)
@@ -10,8 +10,8 @@ import intl3 from "intl" /* 1126 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6990 */;
 import ObscureMediaModels from "ObscureMediaModels" /* 6995 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6996 */;
-import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8399 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8479 */;
+import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 8394 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8474 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

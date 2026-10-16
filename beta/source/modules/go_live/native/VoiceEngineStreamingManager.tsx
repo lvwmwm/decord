@@ -1,9 +1,9 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7438
+// Function ID: 7439
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 5897, 2065, 2116, 1085, 2024, 3, 2060, 2041, 584, 1295, 2002, 2014, 38, 7444, 5106, 5900, 1497, 11052, 11031, 1126, 2]
+// Dependencies: [5, 17, 5897, 2065, 2116, 1085, 2024, 3, 2060, 2041, 584, 1295, 2002, 2014, 38, 7439, 5106, 5900, 1497, 11052, 11031, 1126, 2]
 
-// Module 7443 (VoiceEngineStreamingManager)
+// Module 7438 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -15,7 +15,7 @@ import Constants2 from "Constants" /* 2024 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import Timers from "Timers" /* 2060 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
 import PushNotificationDefault from "PushNotification" /* 11031 */;
 import useScreenshareUtils from "useScreenshareUtils" /* 11052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

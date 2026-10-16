@@ -1,9 +1,9 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7699
+// Function ID: 7700
 // Name: SafetyTipsRow
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6180, 2]
 
-// Module 7704 (SafetyTipsRow)
+// Module 7699 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

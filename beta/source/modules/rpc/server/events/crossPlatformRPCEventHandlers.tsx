@@ -1,14 +1,14 @@
 // Module ID: 14783
 // Function ID: 14784
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [5440, 2019, 2083, 5897, 2065, 2125, 2087, 2012, 5110, 1390, 5113, 5639, 1085, 10939, 10945, 10936, 5924, 14714, 8458, 12, 14722, 1097, 568, 10946, 14784, 14785, 2]
+// Dependencies: [5440, 2019, 2083, 5897, 2065, 2125, 2087, 2012, 5110, 1390, 5113, 5639, 1085, 10939, 10945, 10936, 5924, 14714, 8453, 12, 14722, 1097, 568, 10946, 14784, 14785, 2]
 
 // Module 14783 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;

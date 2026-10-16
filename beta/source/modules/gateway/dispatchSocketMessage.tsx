@@ -1,7 +1,7 @@
 // Module ID: 13971
 // Function ID: 13972
 // Name: dispatchSocketMessage
-// Dependencies: [109, 2069, 8029, 1404, 2065, 2125, 1390, 5113, 4774, 4775, 1085, 3, 13943, 13928, 9, 504, 13972, 1246, 13973, 7214, 13977, 14049, 584, 1411, 12, 7924, 1986, 1407, 4738, 9682, 7901, 14050, 5724, 6960, 8306, 8322, 5742, 5436, 7452, 1985, 14051, 2]
+// Dependencies: [109, 2069, 8024, 1404, 2065, 2125, 1390, 5113, 4774, 4775, 1085, 3, 13943, 13928, 9, 504, 13972, 1246, 13973, 7209, 13977, 14049, 584, 1411, 12, 7919, 1986, 1407, 4738, 9677, 7896, 14050, 5724, 6960, 8301, 8317, 5742, 5436, 7447, 1985, 14051, 2]
 // Exports: default
 
 // Module 13971 (dispatchSocketMessage)
@@ -14,15 +14,15 @@ import Constants from "Constants" /* 1085 */;
 import ChannelStore2 from "ChannelStore" /* 2065 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import SubscriptionPlanActionCreatorsAll from "SubscriptionPlanActionCreators" /* 6960 */;
-import convertServerThreadMemberDefault from "convertServerThreadMember" /* 7924 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8306 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import convertServerThreadMemberDefault from "convertServerThreadMember" /* 7919 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8301 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
 import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13928 */;
 import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 13972 */;
 import isUserSettingsOpen from "isUserSettingsOpen" /* 14050 */;
 import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 14051 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8029 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8024 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -1814,7 +1814,7 @@ defineSimpleDispatch(["RECENT_MENTION_DELETE"], (id) => {
 defineSimpleDispatch(["SAVED_MESSAGE_CREATE"], (body) => {
   let obj2;
   const obj = { type: "SAVED_MESSAGE_CREATE", savedMessage: obj2.savedMessageCreateObjectToClient(body) };
-  obj2 = obj(9682);
+  obj2 = obj(9677);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -1827,7 +1827,7 @@ defineSimpleDispatch(["SAVED_MESSAGE_CREATE"], (body) => {
 defineSimpleDispatch(["SAVED_MESSAGE_DELETE"], (channelId) => {
   let obj2;
   const obj = { type: "SAVED_MESSAGE_DELETE", savedMessageData: obj2.savedMessageDeleteObjectToClient(channelId) };
-  obj2 = obj(9682);
+  obj2 = obj(9677);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -1887,7 +1887,7 @@ defineSimpleDispatch(["MESSAGE_POLL_VOTE_ADD", "MESSAGE_POLL_VOTE_REMOVE"], (cha
   if ("MESSAGE_POLL_VOTE_ADD" === arg1) {
     str = "MESSAGE_REACTION_ADD";
   }
-  obj = { type: str, channelId: channelId.channel_id, messageId: channelId.message_id, userId: channelId.user_id, emoji: { id: channelId.answer_id, name: "" }, reactionType: obj(7901).ReactionTypes.VOTE };
+  obj = { type: str, channelId: channelId.channel_id, messageId: channelId.message_id, userId: channelId.user_id, emoji: { id: channelId.answer_id, name: "" }, reactionType: obj(7896).ReactionTypes.VOTE };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -3108,7 +3108,7 @@ defineSimpleDispatch(["SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE"], (intera
 defineSimpleDispatch(["GUILD_ROOM_CONNECT"], (body, type) => {
   let obj2;
   const obj = { type, room: obj2.serverGuildRoomToClient(body) };
-  obj2 = obj(7452);
+  obj2 = obj(7447);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -3132,7 +3132,7 @@ defineSimpleDispatch(["GUILD_ROOM_DISCONNECT"], (userId, type) => {
 defineSimpleDispatch(["GUILD_ROOM_UPDATE"], (body, type) => {
   let obj2;
   const obj = { type, room: obj2.serverGuildRoomToClient(body) };
-  obj2 = obj(7452);
+  obj2 = obj(7447);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {

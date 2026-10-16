@@ -1,9 +1,9 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8774
+// Function ID: 8775
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5378, 8780, 6335, 1382, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5378, 8775, 6335, 1382, 2]
 
-// Module 8779 (SegmentedControl)
+// Module 8774 (SegmentedControl)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;

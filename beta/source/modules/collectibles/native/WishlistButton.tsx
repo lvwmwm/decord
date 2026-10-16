@@ -1,9 +1,9 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 9037
+// Function ID: 9038
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1390, 1087, 1096, 21, 4850, 5384, 5092, 587, 4827, 558, 576, 6300, 4969, 4834, 4809, 1126, 5093, 5378, 5382, 9043, 8978, 504, 8974, 9033, 9045, 8973, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1390, 1087, 1096, 21, 4850, 5384, 5092, 587, 4827, 558, 576, 6300, 4969, 4834, 4809, 1126, 5093, 5378, 5382, 9038, 8973, 504, 8969, 9028, 9040, 8968, 2]
 
-// Module 9042 (WishlistButton)
+// Module 9037 (WishlistButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -15,9 +15,9 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import ButtonConstants from "ButtonConstants" /* 5384 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8973 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8974 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8968 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8969 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -683,7 +683,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(9033);
+            const tmpResult4 = tmp(9028);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {

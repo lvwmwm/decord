@@ -1,12 +1,12 @@
 // Module ID: 16819
 // Function ID: 16820
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 7197, 11494, 2]
+// Dependencies: [19, 21, 558, 576, 7192, 11494, 2]
 
 // Module 16819 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7197 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7192 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

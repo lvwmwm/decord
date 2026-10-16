@@ -1,7 +1,7 @@
 // Module ID: 17371
 // Function ID: 17372
 // Name: SearchBar
-// Dependencies: [19, 17, 2065, 2087, 4760, 1390, 12050, 9313, 9312, 1085, 21, 5092, 1126, 5421, 558, 576, 504, 17368, 5386, 12036, 12061, 4828, 12057, 12044, 17372, 8626, 2]
+// Dependencies: [19, 17, 2065, 2087, 4760, 1390, 12050, 9308, 9307, 1085, 21, 5092, 1126, 5421, 558, 576, 504, 17368, 5386, 12036, 12061, 4828, 12057, 12044, 17372, 8621, 2]
 
 // Module 17371 (SearchBar)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import TrackingConstants from "TrackingConstants" /* 9312 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 12036 */;
 import SearchTokens from "SearchTokens" /* 12044 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
@@ -21,7 +21,7 @@ import GuildStore from "GuildStore" /* 2087 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

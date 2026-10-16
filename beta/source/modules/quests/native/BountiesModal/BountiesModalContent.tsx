@@ -1,7 +1,7 @@
 // Module ID: 15337
 // Function ID: 15338
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7390, 5972, 15287, 1085, 1096, 21, 558, 576, 1497, 1631, 5092, 587, 1382, 12787, 5059, 504, 9061, 15296, 12973, 15301, 9182, 15303, 15299, 7407, 5979, 7416, 5977, 12966, 15283, 12983, 15338, 15311, 15335, 15310, 6814, 4850, 5093, 5096, 12944, 1121, 15334, 15297, 7387, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 7385, 5972, 15287, 1085, 1096, 21, 558, 576, 1497, 1631, 5092, 587, 1382, 12787, 5059, 504, 9056, 15296, 12973, 15301, 9177, 15303, 15299, 7402, 5979, 7411, 5977, 12966, 15283, 12983, 15338, 15311, 15335, 15310, 6814, 4850, 5093, 5096, 12944, 1121, 15334, 15297, 7382, 4827, 2]
 
 // Module 15337 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
@@ -16,9 +16,9 @@ import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
 import QuestContent from "QuestContent" /* 5977 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestDataUtils from "QuestDataUtils" /* 7387 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import QuestDataUtils from "QuestDataUtils" /* 7382 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import AnimationUtils from "AnimationUtils" /* 12787 */;
 import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 12944 */;
 import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
@@ -27,7 +27,7 @@ import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7390 */;
+import BountyStore from "BountyStore" /* 7385 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import BountiesModalConstants from "BountiesModalConstants" /* 15287 */;
 import Constants from "Constants" /* 1085 */;
@@ -232,7 +232,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
                         }
                         const tmpResult = tmp(504);
                         const stateFromStores = tmpResult.useStateFromStores(tmp18, tmp20);
-                        const tmpResult2 = tmp(9061);
+                        const tmpResult2 = tmp(9056);
                         const balance = tmpResult2.useFetchVirtualCurrencyBalance().balance;
                         let obj7 = react;
                         const tmp24 = _slicedToArray(react.useState(null), 2);

@@ -1,7 +1,7 @@
 // Module ID: 10180
 // Function ID: 10181
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6858, 10161, 1415, 9029, 6157, 5088, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6858, 10161, 1415, 9024, 6157, 5088, 2]
 
 // Module 10180 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9024 */;
 import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10161 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

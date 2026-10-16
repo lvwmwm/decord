@@ -1,7 +1,7 @@
 // Module ID: 16620
 // Function ID: 16621
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5896, 2070, 5897, 2065, 4750, 5116, 16621, 2071, 1096, 558, 576, 16622, 504, 8655, 16623, 5956, 5950, 2]
+// Dependencies: [19, 5896, 2070, 5897, 2065, 4750, 5116, 16621, 2071, 1096, 558, 576, 16622, 504, 8650, 16623, 5956, 5950, 2]
 
 // Module 16620 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1096 */;
@@ -276,7 +276,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildLi
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(8655);
+  const tmpResult5 = tmp(8650);
   const guildActiveEvent = tmpResult5.useGuildActiveEvent(arg0);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class S {

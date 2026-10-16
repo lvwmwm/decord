@@ -1,7 +1,7 @@
 // Module ID: 18724
 // Function ID: 18725
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [11422, 1085, 2072, 7197, 584, 1255, 1265, 6098, 11338, 2000, 5103, 5027, 1112, 2]
+// Dependencies: [11422, 1085, 2072, 7192, 584, 1255, 1265, 6098, 11338, 2000, 5103, 5027, 1112, 2]
 // Exports: receiveLocalNotification
 
 // Module 18724 (LocalPushNotificationActionCreators)
@@ -26,7 +26,7 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
   let constants2;
   let data;
   if (null != getData.getData) {
-    let obj2 = data(7197);
+    let obj2 = data(7192);
     obj2.trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;

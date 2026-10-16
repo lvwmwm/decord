@@ -1,9 +1,9 @@
-// Module ID: 8628
-// Function ID: 8629
+// Module ID: 8623
+// Function ID: 8624
 // Name: void/TextInput/TextInput
 // Dependencies: [109, 19, 17, 1085, 21, 5092, 587, 558, 576, 4969, 1382, 4967, 2]
 
-// Module 8628 (void/TextInput/TextInput)
+// Module 8623 (void/TextInput/TextInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

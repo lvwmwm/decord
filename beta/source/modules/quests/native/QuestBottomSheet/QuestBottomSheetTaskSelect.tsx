@@ -1,7 +1,7 @@
 // Module ID: 15439
 // Function ID: 15440
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5972, 21, 558, 576, 9097, 1126, 6180, 9212, 6265, 2]
+// Dependencies: [19, 5972, 21, 558, 576, 9092, 1126, 6180, 9207, 6265, 2]
 
 // Module 15439 (QuestBottomSheetTaskSelect)
 import QuestConstants from "QuestConstants" /* 5972 */;
@@ -27,7 +27,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const cResult = obj.c(11);
   onTaskSelect = onTaskSelect.onTaskSelect;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_3(tmp(9097).ScreenIcon, {});
+    const tmp7 = closure_3(tmp(9092).ScreenIcon, {});
     const intl = tmp(1126).intl;
     const stringResult = intl.string(tmp(1126).t["QXc01+"]);
     cResult[0] = tmp7;
@@ -58,7 +58,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = closure_3(tmp(9212).GameControllerIcon, {});
+    const tmp15 = closure_3(tmp(9207).GameControllerIcon, {});
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(tmp(1126).t["8lAfuB"]);
     cResult[4] = tmp15;
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const TableRowGroup = onTaskSelect(6265).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9097).ScreenIcon, {}),
+    icon: closure_3(onTaskSelect(9092).ScreenIcon, {}),
     label: intl.string(onTaskSelect(1126).t["QXc01+"]),
     onPress() {
       let tmpResult;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9212).GameControllerIcon, {}),
+    icon: closure_3(onTaskSelect(9207).GameControllerIcon, {}),
     label: intl2.string(onTaskSelect(1126).t["8lAfuB"]),
     onPress() {
       let tmpResult;

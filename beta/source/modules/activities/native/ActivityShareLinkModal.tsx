@@ -1,7 +1,7 @@
 // Module ID: 14750
 // Function ID: 14751
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10217, 5085, 21, 5092, 587, 558, 576, 504, 11558, 11820, 14749, 6858, 1388, 14751, 7179, 7370, 4809, 1126, 6886, 4808, 7089, 5038, 1497, 1631, 1382, 9298, 6201, 6210, 10226, 11569, 11593, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10217, 5085, 21, 5092, 587, 558, 576, 504, 11558, 11820, 14749, 6858, 1388, 14751, 7174, 7365, 4809, 1126, 6886, 4808, 7089, 5038, 1497, 1631, 1382, 9293, 6201, 6210, 10226, 11569, 11593, 2]
 
 // Module 14750 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import LinkIcon from "LinkIcon" /* 5038 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
 import formatResults from "formatResults" /* 11558 */;
 import getApplicationInstallURL from "getApplicationInstallURL" /* 11820 */;

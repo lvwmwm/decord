@@ -1,7 +1,7 @@
 // Module ID: 12260
 // Function ID: 12261
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5092, 558, 576, 6868, 587, 5088, 6290, 1126, 2600, 12261, 12236, 6664, 9410, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 6868, 587, 5088, 6290, 1126, 2600, 12261, 12236, 6664, 9405, 2]
 
 // Module 12260 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
@@ -311,7 +311,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     const inline = tmp4.inline;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp(9410).BoostGemIcon;
+      const BoostGemIcon = tmp(9405).BoostGemIcon;
       const tmp10 = React3(BoostGemIcon, obj2);
       cResult[0] = tmp10;
       first = tmp10;
@@ -382,7 +382,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   if (null != cost) {
     const obj = { style: tmp.inline, children: items };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const BoostGemIcon = tmp2(9410).BoostGemIcon;
+    const BoostGemIcon = tmp2(9405).BoostGemIcon;
     items = [React3(BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
     const Text = tmp2(5088).Text;

@@ -1,7 +1,7 @@
 // Module ID: 18409
 // Function ID: 18410
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5081, 2087, 18405, 1085, 21, 5092, 587, 558, 576, 6627, 1497, 5362, 4850, 1265, 5107, 5088, 1200, 10713, 5379, 1126, 8405, 6185, 10116, 2]
+// Dependencies: [32, 19, 17, 5081, 2087, 18405, 1085, 21, 5092, 587, 558, 576, 6627, 1497, 5362, 4850, 1265, 5107, 5088, 1200, 10713, 5379, 1126, 8400, 6185, 10116, 2]
 
 // Module 18409 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 587 */;
@@ -42,7 +42,7 @@ let tmp11;
 let tmp2;
 let unpackModuleId;
 const ReanimatedRexport = tmp11(4850);
-const _modDef8405 = tmp2(8405);
+const _modDef8400 = tmp2(8400);
 const PaginationDefault = tmp2(10116);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
@@ -337,7 +337,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   const values = Object.values(num);
   let obj4 = { ref, style: tmp.container, children: items3 };
   let obj5 = { style: tmp.sliderContainer, children: items2 };
-  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8405, obj7) };
+  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8400, obj7) };
   obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items2 = [closure_14(ref1, obj6), ];
   let obj8 = {

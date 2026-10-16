@@ -1,7 +1,7 @@
 // Module ID: 17616
 // Function ID: 17617
 // Name: ChannelSettingsChangeCategory
-// Dependencies: [32, 729, 19, 2065, 6801, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 4827, 6802, 12130, 4755, 6098, 5299, 1126, 5421, 6180, 6265, 8580, 5377, 5088, 558, 576, 504, 1503, 10768, 38, 2]
+// Dependencies: [32, 729, 19, 2065, 6801, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 4827, 6802, 12130, 4755, 6098, 5299, 1126, 5421, 6180, 6265, 8575, 5377, 5088, 558, 576, 504, 1503, 10768, 38, 2]
 
 // Module 17616 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
@@ -16,7 +16,7 @@ import useChannelName from "useChannelName" /* 5421 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import TableRow from "TableRow" /* 6180 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import Form2 from "Form" /* 8580 */;
+import Form2 from "Form" /* 8575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;

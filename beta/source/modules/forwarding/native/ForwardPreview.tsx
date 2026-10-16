@@ -1,7 +1,7 @@
 // Module ID: 11581
 // Function ID: 11582
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 8264, 7747, 9374, 11582, 5459, 11583, 12, 1126, 11585, 8930, 8215, 10028, 1496, 6157, 9017, 5088, 11587, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 8259, 7742, 9369, 11582, 5459, 11583, 12, 1126, 11585, 8925, 8210, 10023, 1496, 6157, 9012, 5088, 11587, 2]
 
 // Module 11581 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
@@ -14,11 +14,11 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5459 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8264 */;
-import CirclePlayIcon2 from "CirclePlayIcon" /* 8930 */;
-import ClipView from "ClipView" /* 9017 */;
-import ChatItemDefault from "ChatItem" /* 9374 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8259 */;
+import CirclePlayIcon2 from "CirclePlayIcon" /* 8925 */;
+import ClipView from "ClipView" /* 9012 */;
+import ChatItemDefault from "ChatItem" /* 9369 */;
 import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11582 */;
 import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11587 */;
 import react from "react" /* 19 */;
@@ -641,7 +641,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
           }
           const obj21 = { count: VIDEO };
           formatToPlainStringResult = obj6.formatToPlainString(intl5.t.SJ6pPX, obj21);
-          CirclePlayIcon = tmp(8930).CirclePlayIcon;
+          CirclePlayIcon = tmp(8925).CirclePlayIcon;
         } else {
           class G {
             constructor(arg0) {
@@ -957,14 +957,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl3 = tmp2(1126).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1126).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(8930).CirclePlayIcon;
+      AttachmentIcon = tmp2(8925).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1126).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(8215).ImageIcon;
+        ImagesIcon = tmp2(8210).ImageIcon;
       } else {
         ImagesIcon = tmp2(11585).ImagesIcon;
       }
@@ -974,7 +974,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl = tmp2(1126).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10028).AttachmentIcon;
+      AttachmentIcon = tmp2(10023).AttachmentIcon;
     }
   } else {
     tmp6 = null;

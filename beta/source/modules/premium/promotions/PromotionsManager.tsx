@@ -1,15 +1,15 @@
 // Module ID: 18229
 // Function ID: 18230
 // Name: PromotionsManager
-// Dependencies: [2129, 4775, 9122, 1085, 1096, 6808, 9158, 2]
+// Dependencies: [2129, 4775, 9117, 1085, 1096, 6808, 9153, 2]
 
 // Module 18229 (PromotionsManager)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import PromotionsActionCreators from "PromotionsActionCreators" /* 9158 */;
+import PromotionsActionCreators from "PromotionsActionCreators" /* 9153 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import PromotionsStore from "PromotionsStore" /* 9122 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

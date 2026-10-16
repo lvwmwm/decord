@@ -1,19 +1,19 @@
 // Module ID: 16994
 // Function ID: 16995
 // Name: StandaloneChannelScreen
-// Dependencies: [109, 19, 17, 2065, 9299, 1085, 2072, 21, 5092, 587, 558, 576, 1504, 1631, 9307, 2090, 504, 1126, 9244, 4976, 9363, 9300, 12854, 9310, 6846, 16995, 10661, 5413, 6925, 5031, 4979, 12866, 9315, 1200, 10226, 17000, 17017, 17035, 17053, 17352, 17361, 10363, 17365, 17366, 11628, 2]
+// Dependencies: [109, 19, 17, 2065, 9294, 1085, 2072, 21, 5092, 587, 558, 576, 1504, 1631, 9302, 2090, 504, 1126, 9239, 4976, 9358, 9295, 12854, 9305, 6846, 16995, 10661, 5413, 6925, 5031, 4979, 12866, 9310, 1200, 10226, 17000, 17017, 17035, 17053, 17352, 17361, 10363, 17365, 17366, 11628, 2]
 
 // Module 16994 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 587 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9300 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9295 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import react_native_mod2 from "react-native" /* 9299 */;
+import react_native_mod2 from "react-native" /* 9294 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -831,7 +831,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return channel;
   }, items3);
-  channelId(9315);
+  channelId(9310);
   if (null != channelId) {
     if (null != guildId) {
       if (channelId !== StaticChannelRoute.ROLE_SUBSCRIPTIONS) {

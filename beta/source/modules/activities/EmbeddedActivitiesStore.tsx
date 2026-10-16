@@ -1,7 +1,7 @@
 // Module ID: 2064
 // Function ID: 2065
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 2065, 2116, 1390, 2024, 6067, 1085, 6040, 6041, 4739, 10808, 14299, 1121, 10823, 584, 10481, 11718, 1382, 1998, 7247, 504, 2]
+// Dependencies: [32, 502, 2065, 2116, 1390, 2024, 6067, 1085, 6040, 6041, 4739, 10808, 14299, 1121, 10823, 584, 10481, 11718, 1382, 1998, 7242, 504, 2]
 
 // Module 2064 (EmbeddedActivitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import Constants2 from "Constants" /* 2024 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
 import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6040 */;
 import ContentClassificationReference from "ContentClassificationReference" /* 6041 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
 import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10481 */;
 import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
 import getPlatformDefault from "getPlatform" /* 11718 */;

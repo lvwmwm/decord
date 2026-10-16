@@ -1,12 +1,12 @@
 // Module ID: 16699
 // Function ID: 16700
 // Name: useGuildActionRows
-// Dependencies: [32, 6926, 7257, 1085, 558, 576, 12080, 6967, 6953, 6965, 6931, 6925, 573, 6946, 6927, 11986, 16700, 16703, 6968, 6929, 12249, 16662, 6970, 5026, 16704, 2049, 7100, 2]
+// Dependencies: [32, 6926, 7252, 1085, 558, 576, 12080, 6967, 6953, 6965, 6931, 6925, 573, 6946, 6927, 11986, 16700, 16703, 6968, 6929, 12249, 16662, 6970, 5026, 16704, 2049, 7100, 2]
 
 // Module 16699 (useGuildActionRows)
 import Constants from "Constants" /* 1085 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 6927 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7252 */;
 import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12080 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12249 */;
 import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16662 */;

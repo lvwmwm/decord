@@ -1,7 +1,7 @@
 // Module ID: 15509
 // Function ID: 15510
 // Name: ManageSubscriptionCard
-// Dependencies: [5, 32, 19, 17, 1085, 2072, 21, 5092, 587, 558, 576, 1126, 5088, 6159, 1200, 8555, 6185, 15510, 5300, 15511, 2000, 9399, 6852, 5724, 15513, 13682, 4808, 8580, 9561, 15514, 4806, 4769, 1112, 9466, 15516, 1503, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 2072, 21, 5092, 587, 558, 576, 1126, 5088, 6159, 1200, 8550, 6185, 15510, 5300, 15511, 2000, 9394, 6852, 5724, 15513, 13682, 4808, 8575, 9556, 15514, 4806, 4769, 1112, 9461, 15516, 1503, 2]
 
 // Module 15509 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
@@ -17,7 +17,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8555 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8550 */;
 import FormSeparatorDefault from "FormSeparator" /* 15510 */;
 import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -219,7 +219,7 @@ function CardBody(isTrial) {
   const tmp = closure_14();
   dependencyMap = tmp;
   const tmp3 = dependencyMap;
-  obj = subscription(9399);
+  obj = subscription(9394);
   let resubscribeSubscription = obj.useResubscribeSubscription(subscription.id);
   resubscribeSubscription = resubscribeSubscription.resubscribeSubscription;
   const nativePaymentsConnected = resubscribeSubscription.nativePaymentsConnected;
@@ -263,7 +263,7 @@ function CardBody(isTrial) {
   items3[2] = closure_11(tmp2Result8, obj8);
   items2[3] = closure_12(obj, obj7);
   const obj9 = { inset: true, titleViewStyle: tmp.manageSection, title: intl4.string(isTrial(1126).t["4neDM+"]), children: closure_11(obj, obj10) };
-  const FormSection = tmp15(8580).FormSection;
+  const FormSection = tmp15(8575).FormSection;
   intl4 = tmp15(1126).intl;
   obj10 = { style: tmp.buttonsContainer, children: closure_12(GappedList, obj11) };
   obj11 = {
@@ -273,7 +273,7 @@ function CardBody(isTrial) {
     },
     children: items4
   };
-  GappedList = tmp15(9561).GappedList;
+  GappedList = tmp15(9556).GappedList;
   const obj12 = {
     text: intl5.string(isTrial(1126).t["7spYft"]),
     onPress: function handleUpdatePaymentMethod() {
@@ -318,7 +318,7 @@ function CardBody(isTrial) {
         },
       loading: tmp6
     };
-    tmp2Result11 = subscription(9466);
+    tmp2Result11 = subscription(9461);
     intl8 = tmp15(1126).intl;
     tmp13Result = tmp13(tmp8, obj14);
   } else {

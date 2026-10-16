@@ -1,7 +1,7 @@
 // Module ID: 18129
 // Function ID: 18130
 // Name: InteractionModalManager
-// Dependencies: [5, 5440, 7884, 1085, 5442, 18130, 2000, 1265, 559, 1255, 18141, 14804, 8611, 18144, 6808, 2]
+// Dependencies: [5, 5440, 7879, 1085, 5442, 18130, 2000, 1265, 559, 1255, 18141, 14804, 8606, 18144, 6808, 2]
 
 // Module 18129 (InteractionModalManager)
 import Constants from "Constants" /* 1085 */;
@@ -10,7 +10,7 @@ import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 14804 */
 import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18141 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import InteractionStore from "InteractionStore" /* 7884 */;
+import InteractionStore from "InteractionStore" /* 7879 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

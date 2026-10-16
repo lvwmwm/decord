@@ -1,10 +1,10 @@
-// Module ID: 8635
-// Function ID: 8636
+// Module ID: 8630
+// Function ID: 8631
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 2125, 2119, 1390, 7490, 1096, 21, 5092, 587, 4755, 6665, 504, 5076, 8603, 1200, 1126, 8621, 4828, 6307, 8626, 6097, 5088, 7568, 8631, 2]
+// Dependencies: [109, 32, 19, 17, 2125, 2119, 1390, 7485, 1096, 21, 5092, 587, 4755, 6665, 504, 5076, 8598, 1200, 1126, 8616, 4828, 6307, 8621, 6097, 5088, 7563, 8626, 2]
 // Exports: default
 
-// Module 8635 (AddMembersBody)
+// Module 8630 (AddMembersBody)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl6 from "intl" /* 1126 */;
@@ -20,7 +20,7 @@ import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import UserStore from "UserStore" /* 1390 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ let obj5;
 let size;
 let size1;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(8603);
+const ChannelPermissionsUtilsAll = tmp10(8598);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -238,7 +238,7 @@ export default function AddMembersBody(pendingAdditions) {
     },
     autoFocus: true
   };
-  tmp4Result = tmp4(8626);
+  tmp4Result = tmp4(8621);
   intl3 = tmp6(1126).intl;
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
@@ -253,7 +253,7 @@ export default function AddMembersBody(pendingAdditions) {
   if (canEveryoneRoleResult) {
     const obj13 = { style: tmp3.adminWarning, children: closure_16(InlineNotice, obj14) };
     obj14 = { type: "warning", message: intl4.string(guild(1126).t["5f3HIC"]), role: "status" };
-    InlineNotice = tmp6(7568).InlineNotice;
+    InlineNotice = tmp6(7563).InlineNotice;
     intl4 = tmp6(1126).intl;
     canEveryoneRoleResult = tmp27(tmp28, obj13);
   }
@@ -263,7 +263,7 @@ export default function AddMembersBody(pendingAdditions) {
       let tmp27Result2;
       if (0 === membersRows.length) {
         const obj15 = { children: closure_16(EmptyState, obj16) };
-        obj16 = { Illustration: guild(8631).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1126).t.ErpIY3, obj17) };
+        obj16 = { Illustration: guild(8626).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1126).t.ErpIY3, obj17) };
         EmptyState = tmp6(1200).EmptyState;
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         intl5 = tmp6(1126).intl;

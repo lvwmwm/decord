@@ -1,15 +1,15 @@
 // Module ID: 15834
 // Function ID: 15835
 // Name: IcymiTabSetting
-// Dependencies: [7993, 558, 8476, 8473, 8472, 15835, 576, 10663, 1126, 2]
+// Dependencies: [7988, 558, 8471, 8468, 8467, 15835, 576, 10663, 1126, 2]
 
 // Module 15834 (IcymiTabSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8473 */;
-import useLabFeatureDefault from "useLabFeature" /* 8476 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8468 */;
+import useLabFeatureDefault from "useLabFeature" /* 8471 */;
 import LabFeatureActions from "LabFeatureActions" /* 15835 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

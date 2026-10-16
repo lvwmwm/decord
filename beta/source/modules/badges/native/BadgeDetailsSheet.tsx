@@ -1,7 +1,7 @@
 // Module ID: 10583
 // Function ID: 10584
 // Name: BadgeDetailsSheet
-// Dependencies: [32, 19, 17, 5081, 1390, 8317, 1085, 6841, 21, 5092, 587, 558, 576, 5046, 5088, 504, 10584, 10585, 10586, 10579, 10587, 2031, 1394, 10588, 10597, 10598, 5056, 10582, 10575, 7094, 1126, 10571, 10599, 5379, 10600, 1631, 1497, 10574, 8530, 8322, 10580, 10601, 6307, 6840, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 8312, 1085, 6841, 21, 5092, 587, 558, 576, 5046, 5088, 504, 10584, 10585, 10586, 10579, 10587, 2031, 1394, 10588, 10597, 10598, 5056, 10582, 10575, 7094, 1126, 10571, 10599, 5379, 10600, 1631, 1497, 10574, 8525, 8317, 10580, 10601, 6307, 6840, 2]
 
 // Module 10583 (BadgeDetailsSheet)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
 import BadgeUtils from "BadgeUtils" /* 10579 */;
 import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10582 */;
 import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 10598 */;
@@ -19,7 +19,7 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

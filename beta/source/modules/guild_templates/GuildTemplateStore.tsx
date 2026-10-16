@@ -1,9 +1,9 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 7175
+// Function ID: 7176
 // Name: GuildTemplateStore
 // Dependencies: [7031, 7030, 504, 584, 2]
 
-// Module 7180 (GuildTemplateStore)
+// Module 7175 (GuildTemplateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7030 */;

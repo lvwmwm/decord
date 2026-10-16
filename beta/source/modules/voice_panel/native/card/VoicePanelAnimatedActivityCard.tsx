@@ -1,7 +1,7 @@
 // Module ID: 17873
 // Function ID: 17874
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 2064, 10831, 2065, 11972, 11970, 1085, 2024, 21, 5092, 587, 558, 576, 11971, 17118, 504, 17874, 10848, 6858, 10918, 6852, 6879, 9539, 14299, 4850, 6038, 6335, 1497, 10359, 10924, 17875, 17876, 6762, 17877, 17881, 4827, 2]
+// Dependencies: [32, 19, 2064, 10831, 2065, 11972, 11970, 1085, 2024, 21, 5092, 587, 558, 576, 11971, 17118, 504, 17874, 10848, 6858, 10918, 6852, 6879, 9534, 14299, 4850, 6038, 6335, 1497, 10359, 10924, 17875, 17876, 6762, 17877, 17881, 4827, 2]
 
 // Module 17873 (VoicePanelAnimatedActivityCard)
 import react2 from "react" /* 576 */;
@@ -279,7 +279,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
     const stateFromStores1 = tmpResult9.useStateFromStores(tmp31, de);
     const tmp7Result = sharedVisible(6852);
     const analyticsLocations = tmp7Result(tmp7(6879).ACTIVITY_TILE).analyticsLocations;
-    const tmpResult10 = tmp(9539);
+    const tmpResult10 = tmp(9534);
     const analyticsContext = tmpResult10.useAnalyticsContext();
     const tmp36 = cResult[18];
     if (stateFromStores1 != null) {
@@ -686,7 +686,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   const tmp5Result = sharedVisible(6852);
   const analyticsLocations = tmp5Result(tmp5(6879).ACTIVITY_TILE).analyticsLocations;
   let tmp23 = null != tmp19;
-  const tmp9Result12 = applicationId(9539);
+  const tmp9Result12 = applicationId(9534);
   const analyticsContext = tmp9Result12.useAnalyticsContext();
   if (tmp23) {
     let id1;

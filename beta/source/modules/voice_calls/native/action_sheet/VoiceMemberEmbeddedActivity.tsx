@@ -1,7 +1,7 @@
 // Module ID: 13601
 // Function ID: 13602
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 2064, 2065, 1390, 1204, 6841, 21, 1200, 5092, 587, 558, 576, 6858, 1388, 504, 4739, 10920, 1497, 8164, 10923, 1126, 6157, 5088, 10961, 5380, 6185, 2]
+// Dependencies: [32, 19, 17, 2064, 2065, 1390, 1204, 6841, 21, 1200, 5092, 587, 558, 576, 6858, 1388, 504, 4739, 10920, 1497, 8159, 10923, 1126, 6157, 5088, 10961, 5380, 6185, 2]
 // Exports: calculateActivityRowHeight
 
 // Module 13601 (VoiceMemberEmbeddedActivity)

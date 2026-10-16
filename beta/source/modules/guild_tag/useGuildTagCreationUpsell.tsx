@@ -1,7 +1,7 @@
 // Module ID: 14902
 // Function ID: 14903
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 2087, 4750, 1390, 4771, 4775, 558, 576, 12, 8290, 12249, 504, 1989, 5724, 14903, 2]
+// Dependencies: [19, 2087, 4750, 1390, 4771, 4775, 558, 576, 12, 8285, 12249, 504, 1989, 5724, 14903, 2]
 
 // Module 14902 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;

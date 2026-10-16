@@ -1,7 +1,7 @@
 // Module ID: 5078
 // Function ID: 5079
 // Name: findCodedLinkUrls
-// Dependencies: [5079, 8007, 5400, 14068, 14069, 2]
+// Dependencies: [5079, 8002, 5400, 14068, 14069, 2]
 // Exports: default
 
 // Module 5078 (findCodedLinkUrls)
@@ -21,7 +21,7 @@ export default function findCodedLinkUrls(content) {
     items = [];
     const _default = tmp(5079).default;
     const parseToASTResult = _default.parseToAST(content, true, { allowLinks: true });
-    const tmpResult = tmp(8007);
+    const tmpResult = tmp(8002);
     tmpResult.walkAst(parseToASTResult, (type) => {
       const tmp = type.type === MarkupTypes.AST_KEY.LINK && typeof type.target === "string" && type.target.length > 0;
       if (tmp) {

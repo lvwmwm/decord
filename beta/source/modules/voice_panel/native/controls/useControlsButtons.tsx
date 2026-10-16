@@ -1,7 +1,7 @@
 // Module ID: 17915
 // Function ID: 17916
 // Name: useControlsButtons
-// Dependencies: [19, 2012, 11970, 1085, 21, 17916, 17919, 17925, 17927, 17929, 17931, 17933, 17938, 17806, 1628, 11971, 17781, 504, 4850, 11979, 8395, 2]
+// Dependencies: [19, 2012, 11970, 1085, 21, 17916, 17919, 17925, 17927, 17929, 17931, 17933, 17938, 17806, 1628, 11971, 17781, 504, 4850, 11979, 8390, 2]
 // Exports: default
 
 // Module 17915 (useControlsButtons)
@@ -110,7 +110,7 @@ export default function useControlsButtons() {
   fn.__workletHash = 16456936876254;
   fn.__initData = __initData;
   const derivedValue = obj3.useDerivedValue(fn);
-  const tmp5 = safeArea(8395)(derivedValue);
+  const tmp5 = safeArea(8390)(derivedValue);
   let closure_5 = tmp5;
   const items1 = [tmp2, stateFromStores, tmp5, treatment];
   return treatment.useMemo(() => {

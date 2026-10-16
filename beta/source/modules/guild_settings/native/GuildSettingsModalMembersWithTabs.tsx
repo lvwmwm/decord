@@ -1,7 +1,7 @@
 // Module ID: 17036
 // Function ID: 17037
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 2087, 4750, 1390, 21, 5092, 587, 558, 576, 16651, 504, 6968, 1126, 17037, 17038, 17045, 4942, 1503, 9363, 17040, 7089, 8665, 8530, 12359, 10601, 2]
+// Dependencies: [109, 32, 19, 17, 2087, 4750, 1390, 21, 5092, 587, 558, 576, 16651, 504, 6968, 1126, 17037, 17038, 17045, 4942, 1503, 9358, 17040, 7089, 8660, 8525, 12359, 10601, 2]
 
 // Module 17036 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6968 */;
-import ContextMenu2 from "ContextMenu" /* 9363 */;
+import ContextMenu2 from "ContextMenu" /* 9358 */;
 import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17037 */;
 import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17038 */;
 import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17045 */;

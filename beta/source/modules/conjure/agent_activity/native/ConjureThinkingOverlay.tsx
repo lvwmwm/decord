@@ -1,7 +1,7 @@
 // Module ID: 17316
 // Function ID: 17317
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 12998, 21, 5092, 587, 558, 576, 504, 17214, 9565, 5088, 1126, 3849, 17212, 6182, 2]
+// Dependencies: [19, 17, 12998, 21, 5092, 587, 558, 576, 504, 17214, 9560, 5088, 1126, 3849, 17212, 6182, 2]
 
 // Module 17316 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const text = useConjureRevealedText(str2, tmp12).text;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-    const LightbulbIcon = tmp(9565).LightbulbIcon;
+    const LightbulbIcon = tmp(9560).LightbulbIcon;
     const tmp17 = closure_7(LightbulbIcon, obj3);
     cResult[6] = tmp17;
     tmp14 = tmp17;
@@ -231,7 +231,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj5 = { style: tmp.header, children: items2 };
   Card = tmp3(6182).Card;
   const obj6 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-  const LightbulbIcon = tmp3(9565).LightbulbIcon;
+  const LightbulbIcon = tmp3(9560).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3849).XXYIeI) };
   const Text = tmp3(5088).Text;

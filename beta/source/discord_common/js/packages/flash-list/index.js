@@ -1,9 +1,9 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8620
+// Function ID: 8621
 // Name: defaultMVCPConfig
 // Dependencies: [109, 19, 17, 21, 1382, 558, 576, 6532, 4850, 6531, 6307, 2]
 
-// Module 8625 (defaultMVCPConfig)
+// Module 8620 (defaultMVCPConfig)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

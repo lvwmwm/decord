@@ -1,7 +1,7 @@
 // Module ID: 11852
 // Function ID: 11853
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1502, 21, 5092, 587, 558, 576, 8625, 1631, 1382, 5970, 8580, 5056, 6627, 11853, 11855, 2]
+// Dependencies: [32, 109, 19, 17, 1502, 21, 5092, 587, 558, 576, 8620, 1631, 1382, 5970, 8575, 5056, 6627, 11853, 11855, 2]
 
 // Module 11852 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import Form from "Form" /* 8580 */;
+import Form from "Form" /* 8575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8625);
+const defaultMVCPConfig = tmp(8620);
 const f110176 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;

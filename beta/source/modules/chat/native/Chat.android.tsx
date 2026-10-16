@@ -1,11 +1,11 @@
 // Module ID: 11487
 // Function ID: 11488
 // Name: Chat
-// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 11488, 6335, 11494, 11497, 504, 9601, 2]
+// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 11488, 6335, 11494, 11497, 504, 9596, 2]
 
 // Module 11487 (Chat)
 import react2 from "react" /* 576 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 9601 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 9596 */;
 import useNavigationTTIContentPainted from "useNavigationTTIContentPainted" /* 11488 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11494 */;
 import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11497 */;

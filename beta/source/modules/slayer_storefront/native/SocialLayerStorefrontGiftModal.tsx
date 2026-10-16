@@ -1,7 +1,7 @@
 // Module ID: 10178
 // Function ID: 10179
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 6088, 1085, 21, 558, 576, 504, 6879, 6852, 1382, 9398, 1265, 10156, 5396, 4782, 1126, 10179, 10180, 10181, 10183, 10176, 10163, 2]
+// Dependencies: [19, 6088, 1085, 21, 558, 576, 504, 6879, 6852, 1382, 9393, 1265, 10156, 5396, 4782, 1126, 10179, 10180, 10181, 10183, 10176, 10163, 2]
 
 // Module 10178 (SocialLayerStorefrontGiftModal)
 import Fragment from "Fragment" /* 21 */;

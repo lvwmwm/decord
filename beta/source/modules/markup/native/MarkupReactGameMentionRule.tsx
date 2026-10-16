@@ -1,15 +1,15 @@
 // Module ID: 14067
 // Function ID: 14068
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 21, 5092, 587, 558, 576, 8235, 1126, 2030, 5080, 8885, 8879, 7689, 6157, 5088, 7009, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 8230, 1126, 2030, 5080, 8880, 8874, 7684, 6157, 5088, 7009, 2]
 // Exports: createFetchingGameMentionRule
 
 // Module 14067 (MarkupReactGameMentionRule)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useGame from "useGame" /* 7009 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8885 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -40,7 +40,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   const node = state.node;
   const tmp4 = closure_5();
   const gameId = node.gameId;
-  let obj2 = state(8235);
+  let obj2 = state(8230);
   const gameMentionData = obj2.useGameMentionData(gameId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -91,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
         let textColor;
         if (cResult[10] !== tmp4.icon) {
           const obj4 = { size: "sm", style: tmp4.icon };
-          const tmp15 = closure_4(state(7689).UnknownGameIcon, obj4);
+          const tmp15 = closure_4(state(7684).UnknownGameIcon, obj4);
           cResult[10] = tmp4.icon;
           cResult[11] = tmp15;
           tmp13 = tmp15;
@@ -197,7 +197,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   const node = state.node;
   const tmp = closure_5();
   const gameId = node.gameId;
-  let obj = state(8235);
+  let obj = state(8230);
   const gameMentionData = obj.useGameMentionData(gameId);
   const intl = state(1126).intl;
   const stringResult = intl.string(state(1126).t["11pdXZ"]);
@@ -228,7 +228,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   } else {
     let tmp11 = null != tmp8Result;
     const obj3 = { size: "sm", style: tmp.icon };
-    const tmp18 = closure_4(state(7689).UnknownGameIcon, obj3);
+    const tmp18 = closure_4(state(7684).UnknownGameIcon, obj3);
     if (tmp11) {
       tmp11 = "" !== tmp8Result;
     }

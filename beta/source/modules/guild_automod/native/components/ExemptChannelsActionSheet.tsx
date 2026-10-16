@@ -1,12 +1,12 @@
 // Module ID: 18336
 // Function ID: 18337
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 6801, 2087, 4760, 1390, 21, 558, 576, 504, 5421, 6802, 8159, 6180, 1126, 18335, 2]
+// Dependencies: [19, 6801, 2087, 4760, 1390, 21, 558, 576, 504, 5421, 6802, 8154, 6180, 1126, 18335, 2]
 
 // Module 18336 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import react from "react" /* 19 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildStore from "GuildStore" /* 2087 */;

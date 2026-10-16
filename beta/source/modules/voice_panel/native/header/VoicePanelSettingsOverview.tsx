@@ -1,7 +1,7 @@
 // Module ID: 17842
 // Function ID: 17843
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 2064, 6036, 10831, 502, 2065, 2012, 4750, 1390, 5116, 1085, 5115, 8830, 21, 5092, 587, 558, 576, 17843, 504, 5421, 8848, 8810, 5088, 13023, 1126, 6162, 8223, 7, 4809, 17840, 8482, 6180, 6188, 15864, 13580, 6189, 584, 6896, 2041, 5243, 5106, 9697, 11071, 5056, 17844, 2000, 8833, 8853, 17845, 17807, 17808, 10479, 8797, 17846, 7092, 17847, 8802, 17848, 10770, 11051, 10331, 10332, 2]
+// Dependencies: [19, 2064, 6036, 10831, 502, 2065, 2012, 4750, 1390, 5116, 1085, 5115, 8825, 21, 5092, 587, 558, 576, 17843, 504, 5421, 8843, 8805, 5088, 13023, 1126, 6162, 8218, 7, 4809, 17840, 8477, 6180, 6188, 15864, 13580, 6189, 584, 6896, 2041, 5243, 5106, 9692, 11071, 5056, 17844, 2000, 8828, 8848, 17845, 17807, 17808, 10479, 8792, 17846, 7092, 17847, 8797, 17848, 10770, 11051, 10331, 10332, 2]
 
 // Module 17842 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
@@ -17,14 +17,14 @@ import Text_Text from "Text/Text" /* 5088 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import CallConstants from "CallConstants" /* 5115 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 6896 */;
-import LockIcon from "LockIcon" /* 8223 */;
-import showShareActionSheet from "showShareActionSheet" /* 8482 */;
-import FormComponents from "FormComponents" /* 8797 */;
-import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 8810 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8833 */;
-import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 8848 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import LockIcon from "LockIcon" /* 8218 */;
+import showShareActionSheet from "showShareActionSheet" /* 8477 */;
+import FormComponents from "FormComponents" /* 8792 */;
+import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 8805 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8828 */;
+import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 8843 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11071 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13580 */;
 import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17840 */;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
     } else {
       tmp16 = cResult[9];
     }
-    const tmpResult5 = guildId(8848);
+    const tmpResult5 = guildId(8843);
     const isSecureFramesUIEnabled = tmpResult5.useIsSecureFramesUIEnabled(tmp16);
     if (cResult[10] !== channelId) {
       const obj3 = { channelId };
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
     } else {
       tmp18 = cResult[11];
     }
-    const tmpResult6 = guildId(8810);
+    const tmpResult6 = guildId(8805);
     const isCallSecureFramesVerified = tmpResult6.useIsCallSecureFramesVerified(tmp18);
     if (cResult[12] === tmp15) {
       let tmp20;
@@ -195,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
                 const obj5 = { style: tmp4.secureFrames, children: items4 };
                 items4 = [, ];
                 const tmp14Result = channelId(6162);
-                items4[0] = closure_18(guildId(8223).LockIcon, { size: "xxs", color: "status-positive" });
+                items4[0] = closure_18(guildId(8218).LockIcon, { size: "xxs", color: "status-positive" });
                 const obj6 = { variant: "text-xs/medium", color: "status-positive", children: intl2.string(guildId(1126).t["3BogKe"]) };
                 const Text = tmp(5088).Text;
                 intl2 = tmp(1126).intl;

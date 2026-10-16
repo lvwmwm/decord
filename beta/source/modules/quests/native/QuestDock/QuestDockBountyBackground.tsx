@@ -1,7 +1,7 @@
 // Module ID: 15493
 // Function ID: 15494
 // Name: QuestDockBountyBackground
-// Dependencies: [19, 17, 15368, 5972, 15370, 21, 5092, 558, 576, 573, 15480, 15481, 15400, 9185, 4818, 587, 683, 15479, 2]
+// Dependencies: [19, 17, 15368, 5972, 15370, 21, 5092, 558, 576, 573, 15480, 15481, 15400, 9180, 4818, 587, 683, 15479, 2]
 
 // Module 15493 (QuestDockBountyBackground)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import useToken from "useToken" /* 4818 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import AssetUtils from "AssetUtils" /* 9185 */;
+import AssetUtils from "AssetUtils" /* 9180 */;
 import QuestDockConstants from "QuestDockConstants" /* 15370 */;
 import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15400 */;
 import QuestDockVideoBackground from "QuestDockVideoBackground" /* 15479 */;

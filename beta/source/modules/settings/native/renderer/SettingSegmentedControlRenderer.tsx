@@ -1,7 +1,7 @@
 // Module ID: 14980
 // Function ID: 14981
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 14967, 10664, 21, 5092, 587, 558, 576, 14970, 14834, 38, 14969, 8530, 8779, 10601, 2]
+// Dependencies: [32, 19, 17, 14967, 10664, 21, 5092, 587, 558, 576, 14970, 14834, 38, 14969, 8525, 8774, 10601, 2]
 
 // Module 14980 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;

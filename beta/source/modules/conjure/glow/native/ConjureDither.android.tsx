@@ -1,11 +1,11 @@
 // Module ID: 17191
 // Function ID: 17192
 // Name: ConjureDither
-// Dependencies: [19, 17, 21, 558, 576, 17192, 7577, 4850, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17192, 7572, 4850, 2]
 
 // Module 17191 (ConjureDither)
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import _mod17192 from "module_17192" /* 17192 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

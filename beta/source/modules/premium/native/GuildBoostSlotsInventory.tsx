@@ -1,7 +1,7 @@
 // Module ID: 13791
 // Function ID: 13792
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1205, 2087, 7119, 4775, 1085, 21, 5092, 587, 5906, 558, 576, 7162, 1126, 5088, 11, 6185, 5959, 6159, 6157, 13792, 504, 1415, 13793, 13797, 5724, 8027, 12, 2]
+// Dependencies: [19, 17, 1205, 2087, 7119, 4775, 1085, 21, 5092, 587, 5906, 558, 576, 7162, 1126, 5088, 11, 6185, 5959, 6159, 6157, 13792, 504, 1415, 13793, 13797, 5724, 8022, 12, 2]
 
 // Module 13791 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -18,7 +18,7 @@ import BoostingActionCreators from "BoostingActionCreators" /* 5959 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
 import useCountdownDefault from "useCountdown" /* 7162 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8027 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8022 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13792 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;

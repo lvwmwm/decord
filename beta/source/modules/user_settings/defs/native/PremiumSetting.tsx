@@ -1,7 +1,7 @@
 // Module ID: 15263
 // Function ID: 15264
 // Name: PremiumSetting
-// Dependencies: [19, 1390, 4775, 1085, 21, 13688, 4769, 1126, 558, 576, 7137, 10495, 15264, 10663, 9036, 15266, 2]
+// Dependencies: [19, 1390, 4775, 1085, 21, 13688, 4769, 1126, 558, 576, 7137, 10495, 15264, 10663, 9031, 15266, 2]
 
 // Module 15263 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7137 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
 import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13688 */;
 import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15264 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 16319
 // Function ID: 16320
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 7993, 558, 576, 1209, 1126, 2041, 15130, 5056, 16320, 2000, 10663, 2]
+// Dependencies: [19, 7988, 558, 576, 1209, 1126, 2041, 15130, 5056, 16320, 2000, 10663, 2]
 
 // Module 16319 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15130 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

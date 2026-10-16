@@ -1,7 +1,7 @@
 // Module ID: 13832
 // Function ID: 13833
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7144, 2087, 4774, 4775, 7132, 13833, 1392, 1085, 7152, 5071, 21, 5092, 5906, 5969, 587, 558, 576, 13834, 1126, 5088, 5377, 4769, 13838, 13839, 13840, 13841, 13842, 13843, 9036, 4818, 504, 13844, 13628, 5031, 1200, 1265, 13666, 13667, 13845, 6154, 6180, 4969, 6335, 1383, 7126, 10053, 5300, 13846, 2000, 6265, 5391, 7128, 7127, 4784, 5934, 7130, 10066, 6852, 6960, 6170, 5396, 10164, 10060, 1503, 7137, 13679, 6879, 10061, 5724, 10497, 13642, 7121, 9398, 4781, 10163, 2]
+// Dependencies: [5, 32, 19, 17, 7144, 2087, 4774, 4775, 7132, 13833, 1392, 1085, 7152, 5071, 21, 5092, 5906, 5969, 587, 558, 576, 13834, 1126, 5088, 5377, 4769, 13838, 13839, 13840, 13841, 13842, 13843, 9031, 4818, 504, 13844, 13628, 5031, 1200, 1265, 13666, 13667, 13845, 6154, 6180, 4969, 6335, 1383, 7126, 10048, 5300, 13846, 2000, 6265, 5391, 7128, 7127, 4784, 5934, 7130, 10066, 6852, 6960, 6170, 5396, 10164, 10055, 1503, 7137, 13679, 6879, 10056, 5724, 10497, 13642, 7121, 9393, 4781, 10163, 2]
 
 // Module 13832 (PremiumPlanSelect)
 import react2 from "react" /* 576 */;
@@ -21,8 +21,8 @@ import LegacyTokens from "LegacyTokens" /* 5969 */;
 import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6960 */;
 import ProductIds from "ProductIds" /* 7127 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9036 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10053 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9031 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10048 */;
 import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10164 */;
 import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13666 */;
 import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13667 */;
@@ -575,7 +575,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
   ({ price, interval } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+    const NitroWheelIcon = tmp(9031).NitroWheelIcon;
     const tmp7 = closure_31(NitroWheelIcon, obj2);
     cResult[0] = tmp7;
     first = tmp7;

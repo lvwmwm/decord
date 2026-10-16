@@ -1,7 +1,7 @@
 // Module ID: 11442
 // Function ID: 11443
 // Name: KickConfirmModal
-// Dependencies: [19, 21, 558, 576, 9635, 1126, 9636, 11407, 2]
+// Dependencies: [19, 21, 558, 576, 9630, 1126, 9631, 11407, 2]
 
 // Module 11442 (KickConfirmModal)
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 18708
 // Function ID: 18709
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4806, 1126, 2862, 5088, 5377, 7516, 18692, 11541, 11594, 7706, 7515, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4806, 1126, 2862, 5088, 5377, 7511, 18692, 11541, 11594, 7701, 7510, 2]
 
 // Module 18708 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
@@ -12,9 +12,9 @@ import _modDef2862 from "module_2862" /* 2862 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import ModalScreen2 from "ModalScreen" /* 7515 */;
-import ModalContent2 from "ModalContent" /* 7516 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 7706 */;
+import ModalScreen2 from "ModalScreen" /* 7510 */;
+import ModalContent2 from "ModalContent" /* 7511 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 7701 */;
 import ModalFooter2 from "ModalFooter" /* 11541 */;
 import ModalActionButton2 from "ModalActionButton" /* 11594 */;
 import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18692 */;
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
                 const ModalActionButton = tmp(11594).ModalActionButton;
                 intl4 = tmp(1126).intl;
                 obj8 = { color: nativeDefault.colors.WHITE };
-                LinkExternalSmallIcon = tmp(7706).LinkExternalSmallIcon;
+                LinkExternalSmallIcon = tmp(7701).LinkExternalSmallIcon;
                 items[1] = hasOwnProperty(ModalActionButton, obj7);
                 const tmp51 = metroRequire(ModalFooter, obj6);
                 cResult[27] = tmp51;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
           const obj10 = { children: metroRequire(View, obj11) };
           obj11 = { style: content, children: items2 };
           items2 = [tmp30, tmp34];
-          const ModalContent = tmp(7516).ModalContent;
+          const ModalContent = tmp(7511).ModalContent;
           const tmp42 = hasOwnProperty(ModalContent, obj10);
           cResult[22] = tmp4.content;
           cResult[23] = tmp30;

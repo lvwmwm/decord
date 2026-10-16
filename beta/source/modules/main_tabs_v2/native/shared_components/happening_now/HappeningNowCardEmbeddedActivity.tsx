@@ -1,7 +1,7 @@
 // Module ID: 16521
 // Function ID: 16522
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1390, 15589, 1085, 21, 5092, 587, 573, 16522, 6858, 1265, 6879, 11338, 2000, 16494, 4850, 8972, 1273, 16505, 15590, 8234, 6157, 16518, 2]
+// Dependencies: [32, 19, 17, 1390, 15589, 1085, 21, 5092, 587, 573, 16522, 6858, 1265, 6879, 11338, 2000, 16494, 4850, 8967, 1273, 16505, 15590, 8229, 6157, 16518, 2]
 // Exports: default
 
 // Module 16521 (HappeningNowCardEmbeddedActivity)

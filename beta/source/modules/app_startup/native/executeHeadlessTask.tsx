@@ -1,7 +1,7 @@
 // Module ID: 18750
 // Function ID: 18751
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 18007, 1085, 3, 1255, 9704, 15, 9, 13963, 1265, 1273, 18089, 2060, 2]
+// Dependencies: [5, 17, 502, 18007, 1085, 3, 1255, 9699, 15, 9, 13963, 1265, 1273, 18089, 2060, 2]
 // Exports: default
 
 // Module 18750 (executeHeadlessTask)
@@ -12,7 +12,7 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9704 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9699 */;
 import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

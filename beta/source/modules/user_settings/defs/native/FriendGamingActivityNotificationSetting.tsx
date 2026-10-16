@@ -1,12 +1,12 @@
 // Module ID: 15804
 // Function ID: 15805
 // Name: FriendGamingActivityNotificationSetting
-// Dependencies: [7993, 10663, 1126, 2041, 15805, 2]
+// Dependencies: [7988, 10663, 1126, 2041, 15805, 2]
 
 // Module 15804 (FriendGamingActivityNotificationSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 15805 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

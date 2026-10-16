@@ -1,14 +1,14 @@
 // Module ID: 16316
 // Function ID: 16317
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7259, 7993, 558, 576, 15097, 1126, 2568, 10663, 2]
+// Dependencies: [7254, 7988, 558, 576, 15097, 1126, 2568, 10663, 2]
 
 // Module 16316 (ParentalControlsUseDataForQuestsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

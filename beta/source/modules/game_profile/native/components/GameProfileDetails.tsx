@@ -1,17 +1,17 @@
-// Module ID: 9095
-// Function ID: 9096
+// Module ID: 9090
+// Function ID: 9091
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8470, 21, 5092, 587, 558, 576, 4806, 8923, 1126, 1998, 4793, 9096, 9103, 5088, 2]
+// Dependencies: [19, 17, 8465, 21, 5092, 587, 558, 576, 4806, 8918, 1126, 1998, 4793, 9091, 9098, 5088, 2]
 
-// Module 9095 (GameProfileDetails)
+// Module 9090 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1126 */;
 import Server from "Server" /* 1998 */;
 import DateUtilsAll from "DateUtils" /* 4793 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8470 */;
-import SKUUtils from "SKUUtils" /* 8923 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8465 */;
+import SKUUtils from "SKUUtils" /* 8918 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(8923).getGenreText);
+        const mapped = genres1.map(tmp(8918).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;

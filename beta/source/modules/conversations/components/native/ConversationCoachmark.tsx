@@ -1,7 +1,7 @@
 // Module ID: 12845
 // Function ID: 12846
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 2062, 21, 2049, 5092, 587, 558, 576, 5088, 1126, 7100, 9443, 2]
+// Dependencies: [32, 19, 17, 2062, 21, 2049, 5092, 587, 558, 576, 5088, 1126, 7100, 9438, 2]
 
 // Module 12845 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9443);
+  const obj2 = first(9438);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

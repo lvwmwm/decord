@@ -1,7 +1,7 @@
 // Module ID: 10278
 // Function ID: 10279
 // Name: UserNameplateRow
-// Dependencies: [32, 109, 19, 21, 5092, 587, 558, 576, 6181, 4818, 9022, 6180, 6182, 6175, 2]
+// Dependencies: [32, 109, 19, 21, 5092, 587, 558, 576, 6181, 4818, 9017, 6180, 6182, 6175, 2]
 
 // Module 10278 (UserNameplateRow)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import TableRowDivider from "TableRowDivider" /* 6175 */;
 import react3 from "react" /* 6181 */;
-import NameplateDefault from "Nameplate" /* 9022 */;
+import NameplateDefault from "Nameplate" /* 9017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

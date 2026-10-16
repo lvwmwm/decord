@@ -1,9 +1,9 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9688
+// Function ID: 9689
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 9694, 2065, 7244, 7908, 6979, 21, 5092, 587, 1894, 5300, 1126, 7919, 9263, 558, 576, 6852, 504, 9695, 9692, 1501, 1629, 11, 7904, 6207, 9696, 2]
+// Dependencies: [19, 17, 9689, 2065, 7239, 7903, 6979, 21, 5092, 587, 1894, 5300, 1126, 7914, 9258, 558, 576, 6852, 504, 9690, 9687, 1501, 1629, 11, 7899, 6207, 9691, 2]
 
-// Module 9693 (ForumComposerModal)
+// Module 9688 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,14 +13,14 @@ import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9692 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9687 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9694 */;
+import NativeMenuStore from "NativeMenuStore" /* 9689 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

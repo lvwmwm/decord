@@ -1,7 +1,7 @@
 // Module ID: 16477
 // Function ID: 16478
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4760, 1085, 21, 5092, 587, 10515, 8304, 2000, 573, 1126, 4962, 16478, 16479, 1265, 6185, 1200, 5088, 5379, 5040, 558, 576, 8625, 16476, 2]
+// Dependencies: [32, 19, 17, 4760, 1085, 21, 5092, 587, 10515, 8299, 2000, 573, 1126, 4962, 16478, 16479, 1265, 6185, 1200, 5088, 5379, 5040, 558, 576, 8620, 16476, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
 // Module 16477 (MessagesItemSuggestedFriend)
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8625);
+const defaultMVCPConfig = tmp(8620);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);
@@ -72,7 +72,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(8304, dependencyMap.paths);
+    const promise = asyncRequire(8299, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);

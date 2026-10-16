@@ -1,7 +1,7 @@
 // Module ID: 14746
 // Function ID: 14747
 // Name: internalDeepLinks
-// Dependencies: [32, 1384, 4800, 8496, 2]
+// Dependencies: [32, 1384, 4800, 8491, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
 // Module 14746 (internalDeepLinks)

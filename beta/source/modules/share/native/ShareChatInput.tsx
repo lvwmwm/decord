@@ -1,7 +1,7 @@
 // Module ID: 11591
 // Function ID: 11592
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 9260, 1126, 8586, 8961, 6185, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 9255, 1126, 8581, 8956, 6185, 2]
 
 // Module 11591 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import Pressables from "Pressables" /* 6185 */;
-import ReactionIcon from "ReactionIcon" /* 8961 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9260 */;
+import ReactionIcon from "ReactionIcon" /* 8956 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp6;
-const FormInputDefault = tmp6(8586);
+const FormInputDefault = tmp6(8581);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

@@ -1,7 +1,7 @@
 // Module ID: 18295
 // Function ID: 18296
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7769, 6185, 1126, 6157, 18296, 18297, 1200, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7764, 6185, 1126, 6157, 18296, 18297, 1200, 2]
 
 // Module 18295 (AssetChooser)
 import nativeDefault from "native" /* 587 */;

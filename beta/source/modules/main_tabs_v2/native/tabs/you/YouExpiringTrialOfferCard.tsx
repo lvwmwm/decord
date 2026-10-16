@@ -1,7 +1,7 @@
 // Module ID: 17561
 // Function ID: 17562
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 14015, 1085, 7152, 1392, 21, 1102, 5092, 587, 17562, 1265, 1126, 558, 576, 4702, 573, 7170, 7162, 17560, 2128, 5088, 4769, 1200, 6185, 9036, 5391, 6904, 2]
+// Dependencies: [19, 17, 14015, 1085, 7152, 1392, 21, 1102, 5092, 587, 17562, 1265, 1126, 558, 576, 4702, 573, 7165, 7162, 17560, 2128, 5088, 4769, 1200, 6185, 9031, 5391, 6904, 2]
 
 // Module 17561 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmpResult4 = tmp(7170);
+  const tmpResult4 = tmp(7165);
   const premiumTrialOffer = tmpResult4.usePremiumTrialOffer();
   if (cResult[3] !== premiumTrialOffer) {
     let num5 = 0;
@@ -632,7 +632,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   let obj2 = navigateToPremium(573);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(7170);
+  let obj3 = navigateToPremium(7165);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;

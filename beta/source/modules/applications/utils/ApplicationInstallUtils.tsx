@@ -1,13 +1,13 @@
 // Module ID: 10861
 // Function ID: 10862
 // Name: ApplicationInstallUtils
-// Dependencies: [9248, 5403, 9235, 2]
+// Dependencies: [9243, 5403, 9230, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
 // Module 10861 (ApplicationInstallUtils)
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9235 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9230 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import size from "module_2" /* 2 */;
 
 const f106607 = (oauth2_install_params) => {

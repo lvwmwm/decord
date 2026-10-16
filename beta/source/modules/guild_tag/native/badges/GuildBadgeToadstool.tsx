@@ -1,11 +1,11 @@
 // Module ID: 14149
 // Function ID: 14150
 // Name: GuildBadgeToadstool
-// Dependencies: [109, 19, 21, 558, 576, 14145, 7577, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14145, 7572, 2]
 
 // Module 14149 (GuildBadgeToadstool)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import GuildBadgeUtils from "GuildBadgeUtils" /* 14145 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeTo
       }
     }
     const obj10 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7577).Svg;
+    const Svg = tmp(7572).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp22, tmp23, tmp24, tmp30, tmp33, tmp36, tmp37, tmp41, tmp44, tmp47, tmp50, tmp53, tmp56, tmp59, tmp60, tmp61, tmp62, tmp63];
     const tmp75 = hasOwnProperty(Svg, obj10);

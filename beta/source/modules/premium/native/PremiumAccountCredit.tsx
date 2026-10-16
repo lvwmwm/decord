@@ -1,7 +1,7 @@
 // Module ID: 13685
 // Function ID: 13686
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7110, 1085, 21, 5092, 587, 6862, 558, 576, 4769, 1126, 3280, 9410, 5088, 504, 12, 2]
+// Dependencies: [19, 17, 7110, 1085, 21, 5092, 587, 6862, 558, 576, 4769, 1126, 3280, 9405, 5088, 504, 12, 2]
 
 // Module 13685 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
@@ -368,7 +368,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
     if (tmp9) {
       const obj13 = { style: tmp4.boostIcon, children: metroRequire(BoostGemIcon, obj14) };
       obj14 = { size: "md", color: tmp23(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-      BoostGemIcon = tmp(9410).BoostGemIcon;
+      BoostGemIcon = tmp(9405).BoostGemIcon;
       tmp43Result = tmp43(tmp39, obj13);
     } else {
       const obj15 = { size: GameIcon.GameIconSizes.SMALL, skuId: tmp5 };
@@ -467,7 +467,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(9410).BoostGemIcon;
+    BoostGemIcon = tmp2(9405).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {

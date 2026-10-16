@@ -1,7 +1,7 @@
 // Module ID: 13267
 // Function ID: 13268
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1085, 6905, 21, 5092, 587, 558, 576, 13268, 8368, 13355, 13356, 6243, 5391, 6157, 2]
+// Dependencies: [32, 19, 17, 1085, 6905, 21, 5092, 587, 558, 576, 13268, 8363, 13355, 13356, 6243, 5391, 6157, 2]
 
 // Module 13267 (UserProfileApplicationWidgetTopHeroLayout)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import _modDef6243 from "module_6243" /* 6243 */;
 import Constants2 from "Constants" /* 6905 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8368 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8363 */;
 import _mod13268 from "module_13268" /* 13268 */;
 import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 13355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

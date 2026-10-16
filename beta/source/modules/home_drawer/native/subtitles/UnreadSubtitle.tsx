@@ -1,7 +1,7 @@
 // Module ID: 16784
 // Function ID: 16785
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16782, 8159, 8208, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16782, 8154, 8203, 1126, 5088, 2]
 
 // Module 16784 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
@@ -102,11 +102,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
   }
   let channelIconComponentWithGuild;
   if (null != channel) {
-    const tmpResult = subtitleStyles(8159);
+    const tmpResult = subtitleStyles(8154);
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8208).TextIcon;
+    channelIconComponentWithGuild = tmp(8203).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;

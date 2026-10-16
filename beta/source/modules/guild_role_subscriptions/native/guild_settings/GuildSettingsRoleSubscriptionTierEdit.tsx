@@ -1,7 +1,7 @@
 // Module ID: 18596
 // Function ID: 18597
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4743, 18553, 15498, 1085, 2062, 21, 5092, 587, 558, 576, 1503, 18571, 18559, 6956, 8677, 5088, 1200, 18597, 5379, 6814, 18591, 18589, 18565, 15505, 18548, 11921, 1126, 18598, 15520, 4808, 6201, 7089, 8530, 2049, 18599, 2000, 10013, 10014, 8779, 2]
+// Dependencies: [32, 19, 17, 4743, 18553, 15498, 1085, 2062, 21, 5092, 587, 558, 576, 1503, 18571, 18559, 6956, 8672, 5088, 1200, 18597, 5379, 6814, 18591, 18589, 18565, 15505, 18548, 11921, 1126, 18598, 15520, 4808, 6201, 7089, 8525, 2049, 18599, 2000, 10008, 10009, 8774, 2]
 // Exports: default
 
 // Module 18596 (GuildSettingsRoleSubscriptionTierEdit)
@@ -18,7 +18,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6956 */;
-import FormHeaderDefault from "FormHeader" /* 8677 */;
+import FormHeaderDefault from "FormHeader" /* 8672 */;
 import ErrorBlockDefault from "ErrorBlock" /* 11921 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
 import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15505 */;
@@ -51,7 +51,7 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const DismissibleActionSheet = tmp(10014);
+const DismissibleActionSheet = tmp(10009);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;

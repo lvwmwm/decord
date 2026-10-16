@@ -1,15 +1,15 @@
 // Module ID: 16955
 // Function ID: 16956
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 2065, 2125, 2087, 4760, 5966, 1390, 16952, 1085, 21, 587, 16914, 1382, 558, 576, 16915, 8393, 8467, 504, 16956, 16957, 5088, 1126, 1200, 5409, 6098, 16917, 8472, 10283, 9678, 16953, 11, 8651, 6185, 16959, 16960, 2]
+// Dependencies: [19, 17, 2065, 2125, 2087, 4760, 5966, 1390, 16952, 1085, 21, 587, 16914, 1382, 558, 576, 16915, 8388, 8462, 504, 16956, 16957, 5088, 1126, 1200, 5409, 6098, 16917, 8467, 10283, 9673, 16953, 11, 8646, 6185, 16959, 16960, 2]
 
 // Module 16955 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9678 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9673 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import DesignConstants from "DesignConstants" /* 16952 */;
 import ICYMIShared from "ICYMIShared" /* 16953 */;
@@ -275,8 +275,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
     cResult[10] = undefined !== nested && nested;
     cResult[11] = tmp21;
   }
-  const tmpResult2 = channel(8393);
-  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8467).GRAVITY_VALID_EMBED_TYPES);
+  const tmpResult2 = channel(8388);
+  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8462).GRAVITY_VALID_EMBED_TYPES);
   cResult[0] = channel.guild_id;
   cResult[1] = message;
   cResult[2] = result;
@@ -305,8 +305,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   let tmp2 = message;
   let tmp3 = dependencyMap;
   const context = react.useContext(message(16915).ICYMIContext);
-  const obj = message(8393);
-  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8467).GRAVITY_VALID_EMBED_TYPES);
+  const obj = message(8388);
+  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8462).GRAVITY_VALID_EMBED_TYPES);
   const items = [UserGuildSettingsStore];
   const obj2 = message(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id));

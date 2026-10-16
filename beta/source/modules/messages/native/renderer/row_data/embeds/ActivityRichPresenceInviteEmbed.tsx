@@ -1,7 +1,7 @@
 // Module ID: 13534
 // Function ID: 13535
 // Name: ActivityRichPresenceInviteEmbed
-// Dependencies: [5440, 5760, 13535, 1404, 502, 2065, 13536, 10648, 5432, 5108, 5759, 1390, 10647, 1085, 8459, 6853, 13537, 1126, 11609, 13538, 10790, 10795, 8275, 13539, 10791, 13160, 10797, 10794, 13540, 10803, 10789, 8272, 11612, 13541, 13542, 10798, 10799, 13543, 13544, 13547, 3054, 2]
+// Dependencies: [5440, 5760, 13535, 1404, 502, 2065, 13536, 10648, 5432, 5108, 5759, 1390, 10647, 1085, 8454, 6853, 13537, 1126, 11609, 13538, 10790, 10795, 8270, 13539, 10791, 13160, 10797, 10794, 13540, 10803, 10789, 8267, 11612, 13541, 13542, 10798, 10799, 13543, 13544, 13547, 3054, 2]
 // Exports: createActivityRichPresenceInviteEmbed
 
 // Module 13534 (ActivityRichPresenceInviteEmbed)
@@ -24,7 +24,7 @@ import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import UserStore from "UserStore" /* 1390 */;
 import ActivityLauncherStore from "ActivityLauncherStore" /* 10647 */;
 import Constants from "Constants" /* 1085 */;
-import SpotifyConstants from "SpotifyConstants" /* 8459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8454 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -207,7 +207,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               }
               let assetImage = null;
               if (null != icon_override) {
-                const tmp4Result30 = tmp4(8275);
+                const tmp4Result30 = tmp4(8270);
                 assetImage = tmp4Result30.getAssetImage(application1.id, message.activity.icon_override);
               }
               const activity5 = message.activity;
@@ -306,7 +306,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 if (null != start) {
                   const _Date = Date;
                   const obj6 = { start, end };
-                  const tmp4Result38 = tmp4(8272);
+                  const tmp4Result38 = tmp4(8267);
                   str2 = tmp4Result38.formatActiveTimestamp(obj6, Date.now());
                 }
                 if (assetImage == null) {
@@ -594,7 +594,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1126).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Set", ctaButtonIsLoading: "Array", footerLabel: "Symbol", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "set", maxPartySize: "marginTop", partyMemberAvatarURIs: "useMemo", partySizeText: "ACCOUNT_AGE_GROUP", platformIconKeys: [], coverImageUrl: "&#39;", detailsText: "person_with_blond_hair_tone5", title: "OTHER_AND_ANDROID_NONDISCOVERABLE" };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1126).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Set", ctaButtonIsLoading: "Array", footerLabel: "Symbol", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "set", maxPartySize: "Error", partyMemberAvatarURIs: "filter", partySizeText: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023934350365286177, platformIconKeys: [], coverImageUrl: 9712341839464171000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, detailsText: -5026533810386042000000000000000000000000000000000000000000000000000000000000000000, title: -94012527189886620000000000000000000000000000000000000000000000 };
           intl = tmp4(1126).intl;
           if (contentClassificationVisibility === tmp4(11609).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1126).intl;

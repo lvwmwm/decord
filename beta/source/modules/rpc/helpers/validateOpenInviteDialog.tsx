@@ -1,12 +1,12 @@
 // Module ID: 14743
 // Function ID: 14744
 // Name: validateOpenInviteDialog
-// Dependencies: [2065, 2087, 4750, 1085, 14719, 10936, 10810, 10809, 10943, 8533, 2]
+// Dependencies: [2065, 2087, 4750, 1085, 14719, 10936, 10810, 10809, 10943, 8528, 2]
 // Exports: validateOpenInviteDialog
 
 // Module 14743 (validateOpenInviteDialog)
 import Constants from "Constants" /* 1085 */;
-import canViewInviteModal from "canViewInviteModal" /* 8533 */;
+import canViewInviteModal from "canViewInviteModal" /* 8528 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 10809 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;

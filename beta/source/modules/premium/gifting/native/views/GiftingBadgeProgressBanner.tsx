@@ -1,7 +1,7 @@
 // Module ID: 10115
 // Function ID: 10116
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 1273, 8972, 10106, 1126, 2664, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 1273, 8967, 10106, 1126, 2664, 5088, 2]
 
 // Module 10115 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import _modDef2664 from "module_2664" /* 2664 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

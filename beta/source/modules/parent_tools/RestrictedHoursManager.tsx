@@ -1,7 +1,7 @@
 // Module ID: 18712
 // Function ID: 18713
 // Name: RestrictedHoursManager
-// Dependencies: [12566, 1390, 7259, 1126, 2568, 1413, 12568, 584, 18028, 6808, 2]
+// Dependencies: [12566, 1390, 7254, 1126, 2568, 1413, 12568, 584, 18028, 6808, 2]
 // Exports: getCurrentRestrictedHoursState
 
 // Module 18712 (RestrictedHoursManager)
@@ -13,7 +13,7 @@ import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" 
 import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 18028 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 12566 */;
 import UserStore from "UserStore" /* 1390 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 18365
 // Function ID: 18366
 // Name: HeaderRow
-// Dependencies: [11939, 5, 32, 19, 17, 18359, 1085, 1393, 21, 5092, 587, 8573, 9547, 1265, 1126, 1279, 7769, 5379, 5088, 558, 576, 504, 2]
+// Dependencies: [11939, 5, 32, 19, 17, 18359, 1085, 1393, 21, 5092, 587, 8568, 9542, 1265, 1126, 1279, 7764, 5379, 5088, 558, 576, 504, 2]
 
 // Module 18365 (HeaderRow)
 import react2 from "react" /* 576 */;
@@ -235,7 +235,7 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(8573);
+  obj = guild(8568);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1126).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };

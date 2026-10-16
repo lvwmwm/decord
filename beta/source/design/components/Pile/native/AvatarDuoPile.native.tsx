@@ -1,13 +1,13 @@
 // Module ID: 14292
 // Function ID: 14293
 // Name: AvatarDuoPile
-// Dependencies: [109, 19, 21, 558, 576, 11598, 12362, 12, 13153, 9017, 2]
+// Dependencies: [109, 19, 21, 558, 576, 11598, 12362, 12, 13153, 9012, 2]
 
 // Module 14292 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import Pile2 from "Pile" /* 11598 */;
 import ListUtils from "ListUtils" /* 12362 */;
 import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13153 */;

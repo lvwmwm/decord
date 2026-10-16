@@ -1,7 +1,7 @@
 // Module ID: 14904
 // Function ID: 14905
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 7888, 21, 5092, 1382, 587, 558, 576, 8290, 4832, 5056, 1126, 6159, 8859, 6266, 6180, 14902, 12, 4828, 12217, 5011, 6879, 14905, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 6307, 8580, 2]
+// Dependencies: [32, 19, 17, 7883, 21, 5092, 1382, 587, 558, 576, 8285, 4832, 5056, 1126, 6159, 8854, 6266, 6180, 14902, 12, 4828, 12217, 5011, 6879, 14905, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 6307, 8575, 2]
 // Exports: default
 
 // Module 14904 (UserPrimaryGuildListBottomSheet)
@@ -15,8 +15,8 @@ import Powerups from "Powerups" /* 5011 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
-import Form from "Form" /* 8580 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import Form from "Form" /* 8575 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -193,7 +193,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
           const obj7 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: tmp8, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
           ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp4);
           tag = profile.tag;
-          const BaseGuildTagChiplet = tmp(8859).BaseGuildTagChiplet;
+          const BaseGuildTagChiplet = tmp(8854).BaseGuildTagChiplet;
           tmp28Result = closure_7(BaseGuildTagChiplet, obj7);
         }
         cResult[13] = tmp8;
@@ -240,9 +240,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge1;
-    const getGuildTagBadgeUrl = tmp(8290).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = tmp(8285).getGuildTagBadgeUrl;
     let id = item.id;
-    tmp(8290);
+    tmp(8285);
     if (profile != null) {
       badge1 = profile.badge;
     }
@@ -280,9 +280,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
-    const getGuildTagBadgeUrl = item(8290).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = item(8285).getGuildTagBadgeUrl;
     let id = item.id;
-    item(8290);
+    item(8285);
     if (profile != null) {
       badge = profile.badge;
     }
@@ -337,7 +337,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(8859).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(8854).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
   items = [tmp11Result2, closure_7(item(6266).FormRadio, { selected })];

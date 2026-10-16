@@ -1,7 +1,7 @@
 // Module ID: 15657
 // Function ID: 15658
 // Name: CustomTypingIndicatorEmojiSlots
-// Dependencies: [32, 19, 1393, 21, 15658, 15660, 15662, 15664, 15666, 15668, 15670, 15672, 15674, 15676, 15678, 15680, 15682, 15684, 15686, 15688, 15690, 15692, 15694, 15696, 15698, 15700, 5092, 558, 576, 11658, 1415, 6820, 4850, 5378, 5382, 9427, 1126, 3851, 1411, 6182, 12, 5377, 2]
+// Dependencies: [32, 19, 1393, 21, 15658, 15660, 15662, 15664, 15666, 15668, 15670, 15672, 15674, 15676, 15678, 15680, 15682, 15684, 15686, 15688, 15690, 15692, 15694, 15696, 15698, 15700, 5092, 558, 576, 11658, 1415, 6820, 4850, 5378, 5382, 9422, 1126, 3851, 1411, 6182, 12, 5377, 2]
 
 // Module 15657 (CustomTypingIndicatorEmojiSlots)
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
 import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 11658 */;
 import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 15658 */;
 import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 15660 */;

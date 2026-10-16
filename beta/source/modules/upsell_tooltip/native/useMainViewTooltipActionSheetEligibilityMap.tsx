@@ -1,7 +1,7 @@
 // Module ID: 17727
 // Function ID: 17728
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 17698, 9122, 1244, 2059, 1085, 1392, 1095, 558, 576, 504, 17728, 1628, 8090, 7170, 17729, 13711, 10095, 10094, 10100, 4938, 2049, 17730, 17731, 17696, 17710, 14870, 11641, 2]
+// Dependencies: [32, 17698, 9117, 1244, 2059, 1085, 1392, 1095, 558, 576, 504, 17728, 1628, 8085, 7165, 17729, 13711, 10095, 10094, 10100, 4938, 2049, 17730, 17731, 17696, 17710, 14870, 11641, 2]
 
 // Module 17727 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
@@ -10,8 +10,8 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8090 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7165 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8085 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10100 */;
 import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11641 */;
 import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13711 */;
@@ -22,7 +22,7 @@ import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewToolti
 import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 17731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17698 */;
-import PromotionsStore from "PromotionsStore" /* 9122 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;

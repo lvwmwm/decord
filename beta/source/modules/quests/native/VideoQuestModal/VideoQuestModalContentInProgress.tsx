@@ -1,7 +1,7 @@
 // Module ID: 15409
 // Function ID: 15410
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [109, 32, 19, 17, 5972, 1096, 21, 683, 587, 15410, 5092, 558, 576, 1382, 9185, 4850, 5093, 1631, 15412, 15427, 4827, 6762, 15428, 15406, 15429, 5377, 6185, 5088, 15430, 6157, 5379, 9193, 7574, 1126, 8729, 10293, 6814, 9171, 12966, 15371, 8395, 5391, 15432, 10292, 15317, 15315, 13052, 9242, 15405, 5056, 15433, 2000, 9202, 7411, 9174, 9175, 9178, 5979, 7416, 5975, 7407, 8482, 15434, 9168, 15435, 5980, 2]
+// Dependencies: [109, 32, 19, 17, 5972, 1096, 21, 683, 587, 15410, 5092, 558, 576, 1382, 9180, 4850, 5093, 1631, 15412, 15427, 4827, 6762, 15428, 15406, 15429, 5377, 6185, 5088, 15430, 6157, 5379, 9188, 7569, 1126, 8724, 10293, 6814, 9166, 12966, 15371, 8390, 5391, 15432, 10292, 15317, 15315, 13052, 9237, 15405, 5056, 15433, 2000, 9197, 7406, 9169, 9170, 9173, 5979, 7411, 5975, 7402, 8477, 15434, 9163, 15435, 5980, 2]
 
 // Module 15409 (VideoQuestModalContentInProgress)
 import react2 from "react" /* 576 */;
@@ -14,18 +14,18 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import timing from "timing" /* 5093 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8395 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8482 */;
-import QuestUtils from "QuestUtils" /* 9168 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9175 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
-import AssetUtils from "AssetUtils" /* 9185 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9242 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8477 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
+import AssetUtils from "AssetUtils" /* 9180 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9237 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -170,8 +170,8 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   }
   const tmp6 = closure_24(first);
   if (cResult[1] !== quest) {
-    const tmpResult7 = tmp(9185);
-    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9185).QuestAssetType.HERO);
+    const tmpResult7 = tmp(9180);
+    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9180).QuestAssetType.HERO);
     cResult[1] = quest;
     cResult[2] = questAsset;
   }
@@ -1074,11 +1074,11 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const tmp2 = asyncRequire(15433, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
-  let obj2 = sourceQuestContent(9202);
+  let obj2 = sourceQuestContent(9197);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   [tmp11, closure_4] = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
   const tmp10 = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
-  let obj3 = sourceQuestContent(7411);
+  let obj3 = sourceQuestContent(7406);
   const isShareableQuestResult = obj3.isShareableQuest(quest.config);
   _objectWithoutProperties = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];

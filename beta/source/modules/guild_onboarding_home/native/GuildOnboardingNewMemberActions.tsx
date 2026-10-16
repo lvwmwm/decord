@@ -1,7 +1,7 @@
 // Module ID: 17028
 // Function ID: 17029
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5987, 2065, 2125, 2087, 4750, 6926, 7916, 1085, 1393, 4736, 21, 5092, 587, 558, 576, 504, 5421, 1415, 9320, 6157, 4764, 5088, 1200, 11359, 1126, 11987, 17029, 6185, 1403, 17030, 2]
+// Dependencies: [19, 17, 5987, 2065, 2125, 2087, 4750, 6926, 7911, 1085, 1393, 4736, 21, 5092, 587, 558, 576, 504, 5421, 1415, 9315, 6157, 4764, 5088, 1200, 11359, 1126, 11987, 17029, 6185, 1403, 17030, 2]
 
 // Module 17028 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9320 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9315 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -18,7 +18,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7916 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

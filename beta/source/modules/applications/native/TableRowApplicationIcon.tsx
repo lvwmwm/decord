@@ -1,9 +1,9 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 8607
+// Function ID: 8608
 // Name: TableRowApplicationIcon
 // Dependencies: [19, 21, 5092, 587, 558, 576, 1415, 6157, 2]
 
-// Module 8612 (TableRowApplicationIcon)
+// Module 8607 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

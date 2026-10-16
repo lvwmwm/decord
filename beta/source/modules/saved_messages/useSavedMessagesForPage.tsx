@@ -1,16 +1,16 @@
 // Module ID: 12649
 // Function ID: 12650
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 9681, 9682, 558, 576, 12650, 12652, 1388, 504, 2]
+// Dependencies: [32, 19, 9676, 9677, 558, 576, 12650, 12652, 1388, 504, 2]
 
 // Module 12649 (useSavedMessagesForPage)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9682 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9677 */;
 import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 12650 */;
 import useBookmarksPaginationDefault from "useBookmarksPagination" /* 12652 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9681 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9676 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
   const obj = ALL(576);
   const cResult = obj.c(12);
   if (undefined === arg0) {
-    ALL = tmp(9682).SavedMessageSortTypes.ALL;
+    ALL = tmp(9677).SavedMessageSortTypes.ALL;
   }
   if (cResult[0] !== ALL) {
     const fn = function v() {
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
               const tmp4 = require;
               if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
                 messageBookmarks = obj.getMessageBookmarks();
-              } else if (tmp4(9682).SavedMessageSortTypes.REMINDER === tmp3) {
+              } else if (tmp4(9677).SavedMessageSortTypes.REMINDER === tmp3) {
                 messageBookmarks = obj.getMessageReminders();
               } else {
                 messageBookmarks = obj.getSavedMessages();
@@ -144,7 +144,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
   const effect = obj2.useEffect(tmp10, tmp11);
   first(12650)();
   const tmp14 = first(12652);
-  const tmp14Result = tmp14(ALL !== tmp(9682).SavedMessageSortTypes.REMINDER);
+  const tmp14Result = tmp14(ALL !== tmp(9677).SavedMessageSortTypes.REMINDER);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SavedMessagesStore];
     cResult[6] = items1;
@@ -200,7 +200,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
   if (arg0 === undefined) {
     let tmp = ALL;
     let tmp2 = dependencyMap;
-    ALL = ALL(9682).SavedMessageSortTypes.ALL;
+    ALL = ALL(9677).SavedMessageSortTypes.ALL;
   }
   importDefault = undefined;
   dependencyMap = undefined;
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
             const tmp4 = require;
             if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === ALL) {
               messageBookmarks = obj.getMessageBookmarks();
-            } else if (tmp4(9682).SavedMessageSortTypes.REMINDER === tmp3) {
+            } else if (tmp4(9677).SavedMessageSortTypes.REMINDER === tmp3) {
               messageBookmarks = obj.getMessageReminders();
             } else {
               messageBookmarks = obj.getSavedMessages();
@@ -286,7 +286,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMess
     })
   };
   items1 = [SavedMessagesStore];
-  const tmp6Result = tmp6(ALL !== ALL(9682).SavedMessageSortTypes.REMINDER);
+  const tmp6Result = tmp6(ALL !== ALL(9677).SavedMessageSortTypes.REMINDER);
   obj2 = ALL(504);
   const merged = Object.assign(tmp6Result);
   return obj;

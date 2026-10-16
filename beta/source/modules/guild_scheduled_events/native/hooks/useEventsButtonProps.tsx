@@ -1,7 +1,7 @@
 // Module ID: 12082
 // Function ID: 12083
 // Name: useEventsButtonProps
-// Dependencies: [19, 6035, 5966, 5967, 504, 8655, 8188, 6145, 8535, 5056, 12083, 2000, 1126, 12087, 2]
+// Dependencies: [19, 6035, 5966, 5967, 504, 8650, 8183, 6145, 8530, 5056, 12083, 2000, 1126, 12087, 2]
 // Exports: default
 
 // Module 12082 (useEventsButtonProps)
@@ -9,9 +9,9 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6145 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8188 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8535 */;
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 8655 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8183 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8530 */;
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 8650 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

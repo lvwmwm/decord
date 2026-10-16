@@ -1,9 +1,9 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8911
+// Function ID: 8912
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8888, 4806, 1631, 1126, 5088, 5379, 5056, 6899, 6307, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8883, 4806, 1631, 1126, 5088, 5379, 5056, 6899, 6307, 2]
 
-// Module 8916 (GameProfileStoreLinksActionSheet)
+// Module 8911 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import BottomSheetModal from "BottomSheetModal" /* 6307 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8888 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8883 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

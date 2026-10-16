@@ -1,7 +1,7 @@
 // Module ID: 13632
 // Function ID: 13633
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1085, 1087, 21, 5092, 587, 558, 576, 1273, 8972, 7263, 6879, 7094, 12990, 6814, 6894, 6157, 13633, 5088, 1126, 5379, 2]
+// Dependencies: [32, 19, 17, 1085, 1087, 21, 5092, 587, 558, 576, 1273, 8967, 7258, 6879, 7094, 12990, 6814, 6894, 6157, 13633, 5088, 1126, 5379, 2]
 
 // Module 13632 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
@@ -10,8 +10,8 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13633 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

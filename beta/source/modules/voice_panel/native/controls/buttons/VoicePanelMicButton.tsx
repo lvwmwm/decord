@@ -1,7 +1,7 @@
 // Module ID: 17916
 // Function ID: 17917
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5111, 2118, 502, 2065, 2012, 4750, 1390, 5113, 21, 3, 5092, 558, 576, 7057, 11102, 504, 11135, 11971, 4850, 17794, 5057, 11039, 6335, 17917, 17918, 1126, 11104, 5088, 8804, 11103, 2]
+// Dependencies: [32, 19, 5111, 2118, 502, 2065, 2012, 4750, 1390, 5113, 21, 3, 5092, 558, 576, 7057, 11102, 504, 11135, 11971, 4850, 17794, 5057, 11039, 6335, 17917, 17918, 1126, 11104, 5088, 8799, 11103, 2]
 // Exports: PTTButton
 
 // Module 17916 (VoicePanelMicButton)
@@ -11,7 +11,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import useMuteStates from "useMuteStates" /* 7057 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 8804 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 8799 */;
 import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11039 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 11102 */;
 import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 11103 */;
@@ -336,7 +336,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MicButton(props)
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(8804).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(8799).MicrophoneDenyIcon, obj2);
     } else {
       let color;
       const VoicePanelRiveMicButton = tmp(11103).VoicePanelRiveMicButton;

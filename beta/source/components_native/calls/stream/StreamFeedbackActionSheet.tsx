@@ -1,7 +1,7 @@
 // Module ID: 18095
 // Function ID: 18096
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1085, 9651, 21, 7426, 504, 1126, 2830, 9654, 18096, 1265, 17952, 18097, 5056, 18098, 2000, 4808, 2]
+// Dependencies: [19, 502, 1085, 9646, 21, 7421, 504, 1126, 2830, 9649, 18096, 1265, 17952, 18097, 5056, 18098, 2000, 4808, 2]
 // Exports: default
 
 // Module 18095 (StreamFeedbackActionSheet)
@@ -10,12 +10,12 @@ import Constants2 from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
-import FeedbackUtils from "FeedbackUtils" /* 9654 */;
+import FeedbackUtils from "FeedbackUtils" /* 9649 */;
 import trackStreamProblemDefault from "trackStreamProblem" /* 17952 */;
 import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 18097 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 9651 */;
+import Constants from "Constants" /* 9646 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,7 +44,7 @@ export default function StreamFeedbackActionSheet(stream) {
   dependencyMap = undefined;
   const tmp = stream;
   const tmp2 = dependencyMap;
-  let obj = stream(7426);
+  let obj = stream(7421);
   dependencyMap = obj.useGetStreamApplication(stream);
   let obj2 = stream(504);
   const items = [AuthenticationStore];
@@ -67,7 +67,7 @@ export default function StreamFeedbackActionSheet(stream) {
     tmp10 = tmp8;
   }
   intl5 = tmp(1126).intl;
-  tmpResult = tmp(9654);
+  tmpResult = tmp(9649);
   obj4 = { value: constants2.FREEFORM, label: intl6.string(tmp(1126).t.emlT91) };
   intl6 = tmp(1126).intl;
   let obj5 = {

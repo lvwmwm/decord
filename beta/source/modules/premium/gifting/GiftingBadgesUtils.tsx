@@ -1,16 +1,16 @@
 // Module ID: 10100
 // Function ID: 10101
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8317, 1390, 1126, 2664, 558, 576, 10096, 10101, 10102, 10103, 504, 4938, 2049, 8309, 8322, 2]
+// Dependencies: [19, 8312, 1390, 1126, 2664, 558, 576, 10096, 10101, 10102, 10103, 504, 4938, 2049, 8304, 8317, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled
 
 // Module 10100 (GiftingBadgesUtils)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2664 from "module_2664" /* 2664 */;
-import BadgeId from "BadgeId" /* 8309 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8317 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import BadgeId from "BadgeId" /* 8304 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8312 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
 import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10096 */;
 import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10101 */;
 import react from "react" /* 19 */;

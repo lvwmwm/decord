@@ -1,17 +1,17 @@
 // Module ID: 12263
 // Function ID: 12264
 // Name: GuildBoostingMarketingUtils
-// Dependencies: [1392, 8961, 12264, 9752, 12266, 12268, 9406, 8622, 11585, 9553, 8225, 12269, 2]
+// Dependencies: [1392, 8956, 12264, 9747, 12266, 12268, 9401, 8617, 11585, 9548, 8220, 12269, 2]
 // Exports: getIconForPerk
 
 // Module 12263 (GuildBoostingMarketingUtils)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import StageIcon from "StageIcon" /* 8225 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
-import ReactionIcon from "ReactionIcon" /* 8961 */;
-import UploadIcon from "UploadIcon" /* 9406 */;
-import StarIcon from "StarIcon" /* 9553 */;
-import GifIcon from "GifIcon" /* 9752 */;
+import StageIcon from "StageIcon" /* 8220 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import ReactionIcon from "ReactionIcon" /* 8956 */;
+import UploadIcon from "UploadIcon" /* 9401 */;
+import StarIcon from "StarIcon" /* 9548 */;
+import GifIcon from "GifIcon" /* 9747 */;
 import ImagesIcon from "ImagesIcon" /* 11585 */;
 import SoundboardIcon from "SoundboardIcon" /* 12264 */;
 import HeadphonesIcon from "HeadphonesIcon" /* 12266 */;

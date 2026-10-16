@@ -1,11 +1,11 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 8990
+// Function ID: 8991
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 6933, 558, 576, 8311, 8996, 7323, 7326, 504, 12, 2]
+// Dependencies: [19, 6933, 558, 576, 8306, 8991, 7318, 7321, 504, 12, 2]
 
-// Module 8995 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 8990 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7323 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7318 */;
 import react from "react" /* 19 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
                 set.add(applicationIdFromDetectableId);
               }
             });
-          } else if (tmp5 instanceof tmp6(7326).ApplicationWidget) {
+          } else if (tmp5 instanceof tmp6(7321).ApplicationWidget) {
             let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
             if (null != applicationIdFromDetectableId) {
               let addResult = set.add(tmp12);
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
               set.add(applicationIdFromDetectableId);
             }
           });
-        } else if (tmp5 instanceof tmp6(7326).ApplicationWidget) {
+        } else if (tmp5 instanceof tmp6(7321).ApplicationWidget) {
           let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
           if (null != applicationIdFromDetectableId) {
             let addResult = set.add(tmp12);

@@ -1,14 +1,14 @@
 // Module ID: 14037
 // Function ID: 14038
 // Name: NowPlayingStore
-// Dependencies: [7348, 5108, 1390, 1085, 14038, 504, 584, 2]
+// Dependencies: [7343, 5108, 1390, 1085, 14038, 504, 584, 2]
 
 // Module 14037 (NowPlayingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14038 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;

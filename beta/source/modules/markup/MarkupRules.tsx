@@ -1,7 +1,7 @@
 // Module ID: 5402
 // Function ID: 5403
 // Name: MarkupRules
-// Dependencies: [32, 729, 2065, 2119, 2087, 1390, 1085, 5403, 5404, 5087, 5405, 1126, 5408, 2122, 5409, 4962, 5410, 1949, 5411, 5412, 5425, 4764, 5427, 8156, 14057, 8131, 8132, 5401, 8158, 12, 2]
+// Dependencies: [32, 729, 2065, 2119, 2087, 1390, 1085, 5403, 5404, 5087, 5405, 1126, 5408, 2122, 5409, 4962, 5410, 1949, 5411, 5412, 5425, 4764, 5427, 8151, 14057, 8126, 8127, 5401, 8153, 12, 2]
 // Exports: hydrateCommandMention
 
 // Module 5402 (MarkupRules)
@@ -18,10 +18,10 @@ import MarkupTextRuleDefault from "MarkupTextRule" /* 5411 */;
 import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5412 */;
 import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5425 */;
 import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5427 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 8131 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8132 */;
-import TimestampUtils from "TimestampUtils" /* 8156 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8158 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 8126 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8127 */;
+import TimestampUtils from "TimestampUtils" /* 8151 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8153 */;
 import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 14057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
@@ -255,7 +255,7 @@ function parseLink(arg0) {
     obj3 = { type: "text", content: arg0[1] };
     const obj2 = { type: "text", content: arg0[1] };
   } else {
-    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "IconComponent" };
+    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "code" };
     items = [{ type: "text", content: punycodeLinkResult.displayTarget }];
     const obj4 = { type: "text", content: punycodeLinkResult.displayTarget };
   }

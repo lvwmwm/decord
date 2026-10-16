@@ -1,7 +1,7 @@
 // Module ID: 16180
 // Function ID: 16181
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 8563, 6894, 6839, 6286, 5377, 6895, 6899, 5056, 5379, 1126, 10324, 16181, 5088, 6182, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 8558, 6894, 6839, 6286, 5377, 6895, 6899, 5056, 5379, 1126, 10324, 16181, 5088, 6182, 2]
 
 // Module 16180 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
@@ -225,7 +225,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
       }
     }
     const obj12 = { onPress: NOOP, label: tmp17 };
-    tmp21 = metroImportDefault(tmp(8563).ActionSheetHeaderPressableText, obj12);
+    tmp21 = metroImportDefault(tmp(8558).ActionSheetHeaderPressableText, obj12);
   }
   cResult[0] = tmp17;
   cResult[1] = first;
@@ -270,7 +270,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
   tmp16Result = first;
   if (tmp16Result) {
     const obj2 = { onPress: NOOP, label: tmp14 };
-    tmp16Result = tmp16(tmp17(8563).ActionSheetHeaderPressableText, obj2);
+    tmp16Result = tmp16(tmp17(8558).ActionSheetHeaderPressableText, obj2);
   }
   tmp16Result2 = tmp2;
   if (tmp16Result2) {

@@ -1,14 +1,14 @@
 // Module ID: 18554
 // Function ID: 18555
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7769, 1450, 8674, 1126, 6157, 17092, 9724, 558, 576, 5088, 5379, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7764, 1450, 8669, 1126, 6157, 17092, 9719, 558, 576, 5088, 5379, 2]
 
 // Module 18554 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7769 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7764 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(9724).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9719).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }

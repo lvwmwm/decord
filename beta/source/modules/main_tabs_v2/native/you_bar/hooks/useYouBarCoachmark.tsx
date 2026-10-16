@@ -1,7 +1,7 @@
 // Module ID: 16822
 // Function ID: 16823
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4939, 2062, 558, 576, 1126, 2049, 4850, 14993, 1504, 13994, 5121, 504, 7100, 16823, 9443, 2]
+// Dependencies: [32, 19, 4939, 2062, 558, 576, 1126, 2049, 4850, 14993, 1504, 13994, 5121, 504, 7100, 16823, 9438, 2]
 
 // Module 16822 (useYouBarCoachmark)
 import react2 from "react" /* 576 */;
@@ -22,7 +22,7 @@ let tmp;
 const get_initialized = tmp(504);
 const dismissible_content = tmp(2049);
 const useSelectedDismissibleContent = tmp(7100);
-const useCoachmark = tmp(9443);
+const useCoachmark = tmp(9438);
 const usePrivateProfileCoachmarkProps = tmp(16823);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_6 = [];

@@ -1,7 +1,7 @@
 // Module ID: 10157
 // Function ID: 10158
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8991, 6933, 1085, 1102, 584, 6931, 9065, 1295, 2031, 569, 2]
+// Dependencies: [5, 8986, 6933, 1085, 1102, 584, 6931, 9060, 1295, 2031, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
 // Module 10157 (SocialLayerStorefrontActionCreators)
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8991 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8986 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 18007
 // Function ID: 18008
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18008, 18010, 17, 18033, 2130, 2116, 1999, 7183, 18034, 1085, 9, 3, 18717, 7214, 18718, 11343, 504, 1272, 1257, 18720, 2003, 1382, 10, 18721, 14800, 584, 18722, 7197, 1255, 18723, 18724, 11031, 510, 1265, 14447, 2108, 9251, 2141, 1165, 18725, 2000, 8451, 18727, 14644, 7362, 18745, 18746, 18747, 9317, 7210, 7198, 4978, 1205, 5081, 14694, 17734, 17735, 1111, 14444, 7182, 14698, 14712, 6078, 18748, 6335, 7184, 7198, 2]
+// Dependencies: [32, 5, 18008, 18010, 17, 18033, 2130, 2116, 1999, 7178, 18034, 1085, 9, 3, 18717, 7209, 18718, 11343, 504, 1272, 1257, 18720, 2003, 1382, 10, 18721, 14800, 584, 18722, 7192, 1255, 18723, 18724, 11031, 510, 1265, 14447, 2108, 9246, 2141, 1165, 18725, 2000, 8446, 18727, 14644, 7357, 18745, 18746, 18747, 9312, 7205, 7193, 4978, 1205, 5081, 14694, 17734, 17735, 1111, 14444, 7177, 14698, 14712, 6078, 18748, 6335, 7179, 7193, 2]
 // Exports: init, initHeadlessTask
 
 // Module 18007 (NativeAppStartup)
@@ -13,8 +13,8 @@ import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2108 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
-import timeRequireDefault from "timeRequire" /* 7214 */;
-import Future from "Future" /* 9251 */;
+import timeRequireDefault from "timeRequire" /* 7209 */;
+import Future from "Future" /* 9246 */;
 import react_nativeDefault from "react-native" /* 14447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -24,7 +24,7 @@ import react_native from "react-native" /* 17 */;
 import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18033 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7183 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7178 */;
 import ManagerRegistry from "ManagerRegistry" /* 18034 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

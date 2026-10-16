@@ -1,7 +1,7 @@
 // Module ID: 16751
 // Function ID: 16752
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5388, 16739, 21, 5092, 587, 558, 576, 4818, 4827, 5378, 4850, 6762, 16752, 16457, 16460, 1126, 4828, 16753, 6162, 9017, 2]
+// Dependencies: [19, 5388, 16739, 21, 5092, 587, 558, 576, 4818, 4827, 5378, 4850, 6762, 16752, 16457, 16460, 1126, 4828, 16753, 6162, 9012, 2]
 
 // Module 16751 (GuildsBarAnimatedItemWrapper)
 import react2 from "react" /* 576 */;

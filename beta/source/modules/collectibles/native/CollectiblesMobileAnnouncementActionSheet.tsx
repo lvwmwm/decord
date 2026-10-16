@@ -1,7 +1,7 @@
 // Module ID: 17714
 // Function ID: 17715
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1087, 6841, 2062, 21, 5092, 587, 558, 576, 1497, 6307, 1631, 4850, 17715, 6157, 5088, 7263, 6879, 17716, 1126, 12456, 12444, 17717, 5379, 6840, 2]
+// Dependencies: [19, 17, 1087, 6841, 2062, 21, 5092, 587, 558, 576, 1497, 6307, 1631, 4850, 17715, 6157, 5088, 7258, 6879, 17716, 1126, 12456, 12444, 17717, 5379, 6840, 2]
 
 // Module 17714 (CollectiblesMobileAnnouncementActionSheet)
 import react2 from "react" /* 576 */;
@@ -15,7 +15,7 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import BottomSheetModal from "BottomSheetModal" /* 6307 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
 import _modDef17715 from "module_17715" /* 17715 */;
 import _modDef17716 from "module_17716" /* 17716 */;
 import react from "react" /* 19 */;

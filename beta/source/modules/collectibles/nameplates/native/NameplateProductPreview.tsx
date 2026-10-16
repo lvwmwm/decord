@@ -1,7 +1,7 @@
 // Module ID: 13436
 // Function ID: 13437
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 8296, 1990, 1126, 5088, 5391, 8303, 8291, 8384, 504, 4962, 5628, 10263, 10264, 1200, 10278, 6180, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 8291, 1990, 1126, 5088, 5391, 8298, 8286, 8379, 504, 4962, 5628, 10263, 10264, 1200, 10278, 6180, 2]
 
 // Module 13436 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
@@ -16,10 +16,10 @@ import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5628 */;
 import TableRow2 from "TableRow" /* 6180 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8291 */;
-import useShopProductItems from "useShopProductItems" /* 8296 */;
-import useCurrentUser from "useCurrentUser" /* 8303 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8384 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8286 */;
+import useShopProductItems from "useShopProductItems" /* 8291 */;
+import useCurrentUser from "useCurrentUser" /* 8298 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8379 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
 import types from "types" /* 10264 */;
 import UserNameplateRow from "UserNameplateRow" /* 10278 */;

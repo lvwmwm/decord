@@ -1,7 +1,7 @@
 // Module ID: 11828
 // Function ID: 11829
 // Name: ActivityDetailContent
-// Dependencies: [5, 32, 19, 17, 9066, 2022, 1085, 21, 587, 5092, 558, 576, 5088, 10622, 11735, 11829, 7247, 11729, 9247, 1126, 1265, 10623, 5379, 7015, 11615, 10859, 6852, 6879, 11577, 8327, 504, 6175, 6896, 11616, 6286, 6858, 11830, 11831, 11832, 7568, 11771, 9246, 8217, 11834, 2]
+// Dependencies: [5, 32, 19, 17, 9061, 2022, 1085, 21, 587, 5092, 558, 576, 5088, 10622, 11735, 11829, 7242, 11729, 9242, 1126, 1265, 10623, 5379, 7015, 11615, 10859, 6852, 6879, 11577, 8322, 504, 6175, 6896, 11616, 6286, 6858, 11830, 11831, 11832, 7563, 11771, 9241, 8212, 11834, 2]
 
 // Module 11828 (ActivityDetailContent)
 import react_native from "react-native" /* 17 */;
@@ -11,8 +11,8 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import DetailsHeaderDefault from "DetailsHeader" /* 9246 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
+import DetailsHeaderDefault from "DetailsHeader" /* 9241 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
 import AppLauncherContext from "AppLauncherContext" /* 10622 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
@@ -25,7 +25,7 @@ import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9066 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9061 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -687,7 +687,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   } else {
     first = cResult[0];
   }
-  const tmpResult = application(8327);
+  const tmpResult = application(8322);
   const isScreenLandscape = tmpResult.useIsScreenLandscape();
   entrypoint !== application(10623).AppLauncherEntrypoint.VOICE && isScreenLandscape;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -718,7 +718,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   const tmpResult3 = application(504);
   const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp11, tmp13);
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  const tmpResult4 = application(9247);
+  const tmpResult4 = application(9242);
   if (tmpResult4.isRealApplication(application)) {
     class G {
       constructor() {
@@ -865,7 +865,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   const callback = react.useCallback((nativeEvent) => {
     _undefined(roundToNearestPixelDefault(nativeEvent.nativeEvent.layout.width));
   }, []);
-  const obj3 = application(8327);
+  const obj3 = application(8322);
   const isScreenLandscape = obj3.useIsScreenLandscape();
   let detailsContainerLandscape = entrypoint !== application(10623).AppLauncherEntrypoint.VOICE && isScreenLandscape;
   const items = [DeveloperActivityShelfStore];
@@ -875,7 +875,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
     return obj;
   });
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  const tmp2Result7 = application(9247);
+  const tmp2Result7 = application(9242);
   if (tmp2Result7.isRealApplication(application)) {
     let tmp35Result;
     let tmp31;
@@ -961,13 +961,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
         isDeveloperOfThisApp = !hasCommands;
       }
       if (isDeveloperOfThisApp) {
-        const tmp2Result11 = application(9247);
+        const tmp2Result11 = application(9242);
         isDeveloperOfThisApp = tmp2Result11.isActivityApp(application);
       }
       if (isDeveloperOfThisApp) {
         const obj18 = { style: tmp.buttonContainer, children: closure_11(InlineNotice, obj19) };
         obj19 = { type: "warning", message: intl2.format(application(1126).t["s/3hjE"], {}), role: "static" };
-        InlineNotice = tmp2(7568).InlineNotice;
+        InlineNotice = tmp2(7563).InlineNotice;
         intl2 = tmp2(1126).intl;
         tmp31 = closure_11(View, obj18);
       }
@@ -999,7 +999,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
     const obj27 = { application };
     items6 = [closure_11(DetailsHeaderDefault, obj27), , , , ];
     const obj28 = { style: tmp.tagList, children: items7 };
-    const obj29 = { icon: closure_11(application(8217).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
+    const obj29 = { icon: closure_11(application(8212).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
     num5 = num;
     obj30 = { style: tmp.tagIcon, size: "xs" };
     getItemSubtitleForMaxPlayersShort = application(11834).getItemSubtitleForMaxPlayersShort;

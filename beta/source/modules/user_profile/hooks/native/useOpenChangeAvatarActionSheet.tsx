@@ -1,7 +1,7 @@
 // Module ID: 14932
 // Function ID: 14933
 // Name: useOpenChangeAvatarActionSheet
-// Dependencies: [19, 4769, 8284, 14864, 5056, 14865, 2000, 14853, 14853, 8282, 8291, 2]
+// Dependencies: [19, 4769, 8279, 14864, 5056, 14865, 2000, 14853, 14853, 8277, 8286, 2]
 // Exports: default
 
 // Module 14932 (useOpenChangeAvatarActionSheet)
@@ -11,7 +11,7 @@ import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8291);
+const ProfileCustomizationUtils = tmp3(8286);
 let react = react_mod;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useOpenChangeAvatarActionSheet.tsx");
 

@@ -1,11 +1,11 @@
 // Module ID: 17488
 // Function ID: 17489
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 12050, 12052, 558, 576, 8717, 12061, 12, 12036, 2]
+// Dependencies: [19, 12050, 12052, 558, 576, 8712, 12061, 12, 12036, 2]
 
 // Module 17488 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8717 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8712 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
 import SearchPlatformConstants from "SearchPlatformConstants" /* 12052 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;

@@ -1,7 +1,7 @@
 // Module ID: 15073
 // Function ID: 15074
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 1085, 21, 5092, 587, 558, 576, 6683, 1503, 5939, 4809, 1126, 8580, 1200, 5379, 2]
+// Dependencies: [32, 19, 1085, 21, 5092, 587, 558, 576, 6683, 1503, 5939, 4809, 1126, 8575, 1200, 5379, 2]
 
 // Module 15073 (WebAuthnEditStep)
 import nativeDefault from "native" /* 587 */;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
               }
               const _Symbol2 = Symbol;
               if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp22 = closure_6(tmp(8580).FormDivider, {});
+                const tmp22 = closure_6(tmp(8575).FormDivider, {});
                 cResult[11] = tmp22;
                 tmp20 = tmp22;
               } else {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
                   }
                   const obj4 = { style: form, children: items };
                   items = [tmp17, tmp20, tmp26];
-                  const tmp31 = closure_7(tmp(8580).Form, obj4);
+                  const tmp31 = closure_7(tmp(8575).Form, obj4);
                   cResult[17] = tmp4.form;
                   cResult[18] = tmp17;
                   cResult[19] = tmp26;
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
         }
       }
       const obj6 = { showTopContainer: false, value, onChange: tmp10, style: inputField, error: tmp12, title: tmp15, placeholder: credential.name, disabled: tmp7, clearButtonVisibility: tmp(1200).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-      const FormInput = tmp(8580).FormInput;
+      const FormInput = tmp(8575).FormInput;
       const tmp19 = closure_6(FormInput, obj6);
       cResult[5] = credential.name;
       cResult[6] = tmp12;
@@ -192,11 +192,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnEdit
   const tmp9 = value(react.useState(null), 2);
   [tmp10, react] = tmp9;
   const obj3 = { style: tmp3.form, children: items };
-  const Form = credential(8580).Form;
+  const Form = credential(8575).Form;
   const obj4 = { showTopContainer: false, value, onChange: tmp8, style: tmp3.inputField, error: tmp10, title: intl.string(credential(1126).t["Jzd+z/"]), placeholder: credential.name, disabled: tmp5, clearButtonVisibility: credential(1200).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = credential(8580).FormInput;
+  const FormInput = credential(8575).FormInput;
   intl = credential(1126).intl;
-  items = [closure_6(FormInput, obj4), closure_6(credential(8580).FormDivider, {}), ];
+  items = [closure_6(FormInput, obj4), closure_6(credential(8575).FormDivider, {}), ];
   const obj5 = {
     onPress() {
       const tmp = dependencyMap(true);

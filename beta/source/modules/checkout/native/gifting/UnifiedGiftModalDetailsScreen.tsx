@@ -1,7 +1,7 @@
 // Module ID: 10185
 // Function ID: 10186
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1503, 10184, 10058, 10186, 1126, 5088, 10213, 10214, 10215, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1503, 10184, 10053, 10186, 1126, 5088, 10213, 10214, 10215, 2]
 
 // Module 10185 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 587 */;

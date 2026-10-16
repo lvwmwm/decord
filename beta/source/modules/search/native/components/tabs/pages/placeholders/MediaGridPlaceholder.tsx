@@ -1,7 +1,7 @@
 // Module ID: 17396
 // Function ID: 17397
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 9313, 21, 5092, 587, 558, 576, 17395, 17397, 4850, 12, 1126, 5088, 12036, 17398, 2]
+// Dependencies: [19, 17, 9308, 21, 5092, 587, 558, 576, 17395, 17397, 4850, 12, 1126, 5088, 12036, 17398, 2]
 
 // Module 17396 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
@@ -15,7 +15,7 @@ import SearchPlatformUtils from "SearchPlatformUtils" /* 12036 */;
 import usePlaceholderStyles from "usePlaceholderStyles" /* 17395 */;
 import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17397 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

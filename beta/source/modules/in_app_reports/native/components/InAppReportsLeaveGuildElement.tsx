@@ -1,7 +1,7 @@
 // Module ID: 13571
 // Function ID: 13572
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1085, 21, 558, 576, 8638, 5107, 5300, 1126, 5398, 10992, 13566, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 8633, 5107, 5300, 1126, 5398, 10992, 13566, 2]
 
 // Module 13571 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;

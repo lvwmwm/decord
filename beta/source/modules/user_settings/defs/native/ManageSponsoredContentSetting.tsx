@@ -1,13 +1,13 @@
 // Module ID: 16272
 // Function ID: 16273
 // Name: ManageSponsoredContentSetting
-// Dependencies: [7993, 1085, 10663, 1126, 2174, 16273, 2]
+// Dependencies: [7988, 1085, 10663, 1126, 2174, 16273, 2]
 
 // Module 16272 (ManageSponsoredContentSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2174 from "module_2174" /* 2174 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

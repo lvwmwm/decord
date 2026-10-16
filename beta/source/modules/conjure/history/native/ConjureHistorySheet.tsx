@@ -1,7 +1,7 @@
 // Module ID: 17158
 // Function ID: 17159
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5088, 5379, 1126, 3849, 5377, 6154, 6265, 17115, 6180, 14269, 17159, 7574, 8772, 9363, 6182, 8530, 12359, 5056, 8562, 2000, 4702, 1631, 17160, 17157, 17084, 5305, 17156, 4809, 4808, 17154, 17162, 17162, 6899, 6839, 6307, 17161, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5088, 5379, 1126, 3849, 5377, 6154, 6265, 17115, 6180, 14269, 17159, 7569, 8767, 9358, 6182, 8525, 12359, 5056, 8557, 2000, 4702, 1631, 17160, 17157, 17084, 5305, 17156, 4809, 4808, 17154, 17162, 17162, 6899, 6839, 6307, 17161, 2]
 // Exports: default
 
 // Module 17158 (ConjureHistorySheet)
@@ -14,8 +14,8 @@ import _modDef3849 from "module_3849" /* 3849 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8772 */;
+import IconButton2 from "IconButton" /* 7569 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8767 */;
 import ConjureHistoryFormat from "ConjureHistoryFormat" /* 17115 */;
 import conjureHistoryRequests from "conjureHistoryRequests" /* 17154 */;
 import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 17159 */;
@@ -40,7 +40,7 @@ const ActivityIndicator_ActivityIndicator = tmp(6154);
 const TableRow2 = tmp4(6180);
 const Card_Card = tmp4(6182);
 const TableRowGroup3 = tmp4(6265);
-const ContextMenu = tmp4(9363);
+const ContextMenu = tmp4(9358);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -1647,7 +1647,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
     items[1] = obj2;
     return items;
   }, []);
-  let obj = onChange(8530);
+  let obj = onChange(8525);
   let obj2 = {
     items: memo,
     pageWidth: tmp2,
@@ -1942,7 +1942,7 @@ export default function ConjureHistorySheet(projectId) {
               });
             }
           };
-          const tmp5 = asyncRequire(8562, dependencyMap.paths);
+          const tmp5 = asyncRequire(8557, dependencyMap.paths);
           intl = intl8.intl;
           [obj.minimumDate, obj.maximumDate] = items;
           openLazy(tmp5, "VibegrationsHistoryRewindTime", obj, "stack");

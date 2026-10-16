@@ -1,7 +1,7 @@
 // Module ID: 12393
 // Function ID: 12394
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6036, 2065, 2087, 11970, 21, 5092, 587, 558, 576, 504, 5421, 11971, 5106, 6098, 4977, 8159, 5088, 1126, 5377, 5079, 6185, 11191, 5918, 2]
+// Dependencies: [32, 19, 17, 6036, 2065, 2087, 11970, 21, 5092, 587, 558, 576, 504, 5421, 11971, 5106, 6098, 4977, 8154, 5088, 1126, 5377, 5079, 6185, 11191, 5918, 2]
 
 // Module 12393 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
@@ -219,7 +219,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }, items3);
   if (null != stateFromStores1) {
-    const tmpResult = tmp(8159);
+    const tmpResult = tmp(8154);
     channelIconComponent = tmpResult.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {

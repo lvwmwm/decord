@@ -1,7 +1,7 @@
 // Module ID: 12254
 // Function ID: 12255
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 5081, 5008, 5009, 21, 5092, 587, 558, 576, 12238, 12234, 12255, 12256, 504, 12257, 4918, 12259, 5088, 12260, 12262, 12263, 5046, 1126, 2600, 12249, 12271, 5011, 8641, 12272, 12273, 12277, 12282, 12283, 5379, 12281, 6840, 2]
+// Dependencies: [17, 5081, 5008, 5009, 21, 5092, 587, 558, 576, 12238, 12234, 12255, 12256, 504, 12257, 4918, 12259, 5088, 12260, 12262, 12263, 5046, 1126, 2600, 12249, 12271, 5011, 8636, 12272, 12273, 12277, 12282, 12283, 5379, 12281, 6840, 2]
 
 // Module 12254 (GuildPowerupsBottomSheet)
 import react_native from "react-native" /* 17 */;
@@ -52,7 +52,7 @@ const intl4 = tmp(1126);
 const Powerups = tmp(5011);
 const components_Button_Button = tmp(5379);
 const Sheet_BottomSheet = tmp(6840);
-const GuildSettingsServerTagUtils = tmp(8641);
+const GuildSettingsServerTagUtils = tmp(8636);
 const useCanGuildPowerupBeToggledDefault = tmp5(12272);
 const useGuildPowerupOnActivateDefault = tmp5(12273);
 const useGuildPowerupOnShowDeactivateDefault = tmp5(12277);
@@ -679,7 +679,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     let result = powerup.skuId !== Powerups.GUILD_POWERUP_TAG_SKU_ID;
     const tmp6 = require;
     if (!result) {
-      const tmp6Result = tmp6(8641);
+      const tmp6Result = tmp6(8636);
       result = tmp6Result.canUseMobileServerTagSettings(guildId);
     }
     showConfigureButton = result;

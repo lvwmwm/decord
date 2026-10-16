@@ -1,7 +1,7 @@
 // Module ID: 16878
 // Function ID: 16879
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5081, 5440, 2065, 2087, 1390, 16872, 1085, 5933, 21, 5092, 5088, 587, 558, 5399, 576, 16877, 1126, 1403, 8072, 7898, 11685, 9797, 7719, 504, 8139, 1200, 12371, 16879, 1503, 5069, 14072, 6058, 1265, 13491, 9565, 9648, 4809, 9671, 2000, 5056, 16880, 5049, 16874, 6891, 16881, 16882, 11, 6185, 16883, 6059, 13416, 1504, 2041, 9314, 16893, 16894, 16895, 16896, 16897, 16903, 686, 16904, 16905, 1388, 16876, 16906, 8625, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5440, 2065, 2087, 1390, 16872, 1085, 5933, 21, 5092, 5088, 587, 558, 5399, 576, 16877, 1126, 1403, 8067, 7893, 11685, 9792, 7714, 504, 8134, 1200, 12371, 16879, 1503, 5069, 14072, 6058, 1265, 13491, 9560, 9643, 4809, 9666, 2000, 5056, 16880, 5049, 16874, 6891, 16881, 16882, 11, 6185, 16883, 6059, 13416, 1504, 2041, 9309, 16893, 16894, 16895, 16896, 16897, 16903, 686, 16904, 16905, 1388, 16876, 16906, 8620, 2]
 
 // Module 16878 (ForYouItems)
 import react2 from "react" /* 576 */;
@@ -16,8 +16,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import CustomMarkupAll from "CustomMarkup" /* 5399 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
-import PollsUtils from "PollsUtils" /* 7898 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8072 */;
+import PollsUtils from "PollsUtils" /* 7893 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8067 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12371 */;
 import handleSupportedURLDefault from "handleSupportedURL" /* 14072 */;
 import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16876 */;
@@ -500,8 +500,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
       const message5 = item.message;
       const obj4 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id1 };
       id1 = undefined;
-      const renderMessageContentMarkup = item(8139).renderMessageContentMarkup;
-      item(8139);
+      const renderMessageContentMarkup = item(8134).renderMessageContentMarkup;
+      item(8134);
       if (message5 != null) {
         id1 = message5.author.id;
       }
@@ -519,11 +519,11 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
         if (constants4.ATTACHMENT === iconType) {
           tmp38 = guild_id(11685);
         } else if (constants4.STICKER === iconType) {
-          tmp38 = guild_id(9797);
+          tmp38 = guild_id(9792);
         } else {
           tmp38 = null;
           if (constants4.VOICE_MESSAGE === iconType) {
-            tmp38 = guild_id(7719);
+            tmp38 = guild_id(7714);
           }
         }
         obj7 = { source: tmp38, size: item(1200).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
@@ -689,8 +689,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   let message = item.message;
   const obj8 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(8139).renderMessageContentMarkup;
-  item(8139);
+  const renderMessageContentMarkup = item(8134).renderMessageContentMarkup;
+  item(8134);
   if (message != null) {
     id = message.author.id;
   }
@@ -707,11 +707,11 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
     if (constants4.ATTACHMENT === iconType) {
       tmp17 = guild_id(11685);
     } else if (constants4.STICKER === iconType) {
-      tmp17 = guild_id(9797);
+      tmp17 = guild_id(9792);
     } else {
       tmp17 = null;
       if (constants4.VOICE_MESSAGE === iconType) {
-        tmp17 = guild_id(7719);
+        tmp17 = guild_id(7714);
       }
     }
     obj10 = { source: tmp17, size: item(1200).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };

@@ -1,13 +1,13 @@
 // Module ID: 15115
 // Function ID: 15116
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 7993, 558, 576, 15116, 2041, 10663, 1126, 15118, 2]
+// Dependencies: [19, 7988, 558, 576, 15116, 2041, 10663, 1126, 15118, 2]
 
 // Module 15115 (DirectMessageSpamFilterSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 15118 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

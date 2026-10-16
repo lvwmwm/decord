@@ -1,7 +1,7 @@
 // Module ID: 10654
 // Function ID: 10655
 // Name: ExternalStreamingStore
-// Dependencies: [5, 5761, 4963, 1085, 1102, 1295, 6875, 584, 8275, 5763, 1355, 504, 2]
+// Dependencies: [5, 5761, 4963, 1085, 1102, 1295, 6875, 584, 8270, 5763, 1355, 504, 2]
 
 // Module 10654 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;

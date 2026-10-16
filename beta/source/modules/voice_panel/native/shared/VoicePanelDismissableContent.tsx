@@ -1,7 +1,7 @@
 // Module ID: 17803
 // Function ID: 17804
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 6036, 11972, 5115, 21, 17804, 2000, 558, 576, 11971, 4850, 2049, 10014, 10013, 2]
+// Dependencies: [32, 19, 6036, 11972, 5115, 21, 17804, 2000, 558, 576, 11971, 4850, 2049, 10009, 10008, 2]
 
 // Module 17803 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;

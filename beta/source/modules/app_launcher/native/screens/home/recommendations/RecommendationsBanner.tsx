@@ -1,15 +1,15 @@
 // Module ID: 11780
 // Function ID: 11781
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1404, 1085, 21, 5092, 558, 576, 10622, 11771, 10962, 6157, 8311, 8373, 1415, 8269, 2]
+// Dependencies: [19, 17, 1404, 1085, 21, 5092, 558, 576, 10622, 11771, 10962, 6157, 8306, 8368, 1415, 8264, 2]
 
 // Module 11780 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8269 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8311 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8264 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8306 */;
 import AppLauncherContext from "AppLauncherContext" /* 10622 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
 import react from "react" /* 19 */;
@@ -26,7 +26,7 @@ let metroRequire;
 let tmp;
 let tmp3;
 const FastImageDefault = tmp3(6157);
-const UserProfileBannerDefault = tmp3(8373);
+const UserProfileBannerDefault = tmp3(8368);
 const HeroMedia = tmp(11771);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);

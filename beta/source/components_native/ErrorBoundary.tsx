@@ -1,7 +1,7 @@
 // Module ID: 16350
 // Function ID: 16351
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10484, 21, 5092, 558, 576, 11341, 504, 1126, 5379, 4827, 1255, 584, 1200, 8718, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 10484, 21, 5092, 558, 576, 11341, 504, 1126, 5379, 4827, 1255, 584, 1200, 8713, 5088, 2]
 
 // Module 16350 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1200 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import native2 from "native" /* 4827 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AppCrash from "AppCrash" /* 8718 */;
+import AppCrash from "AppCrash" /* 8713 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

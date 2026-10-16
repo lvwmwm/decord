@@ -1,7 +1,7 @@
 // Module ID: 17892
 // Function ID: 17893
 // Name: VoicePanelPreJoinContent
-// Dependencies: [109, 5, 32, 19, 17, 2064, 5111, 14024, 5897, 502, 2065, 2012, 4750, 5112, 1390, 5113, 5116, 11972, 11975, 1085, 14028, 5117, 21, 5092, 11976, 587, 558, 576, 11971, 504, 5924, 7493, 5889, 7444, 5900, 1126, 5088, 13163, 6162, 6858, 4739, 17880, 1497, 4850, 10920, 10923, 10962, 17878, 5379, 6185, 1273, 8972, 6290, 8797, 5409, 6180, 11577, 10479, 6852, 6879, 1265, 17794, 17846, 17893, 5378, 4827, 6762, 17781, 17895, 2]
+// Dependencies: [109, 5, 32, 19, 17, 2064, 5111, 14024, 5897, 502, 2065, 2012, 4750, 5112, 1390, 5113, 5116, 11972, 11975, 1085, 14028, 5117, 21, 5092, 11976, 587, 558, 576, 11971, 504, 5924, 7488, 5889, 7439, 5900, 1126, 5088, 13163, 6162, 6858, 4739, 17880, 1497, 4850, 10920, 10923, 10962, 17878, 5379, 6185, 1273, 8967, 6290, 8792, 5409, 6180, 11577, 10479, 6852, 6879, 1265, 17794, 17846, 17893, 5378, 4827, 6762, 17781, 17895, 2]
 
 // Module 17892 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
@@ -20,10 +20,10 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
-import FormComponents from "FormComponents" /* 8797 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
+import FormComponents from "FormComponents" /* 8792 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11975 */;

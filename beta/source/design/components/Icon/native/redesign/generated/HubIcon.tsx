@@ -1,14 +1,14 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8225
+// Function ID: 8226
 // Name: HubIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8170, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8165, 4817, 2]
 
-// Module 8230 (HubIcon)
+// Module 8225 (HubIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8170 */;
+import AssetRegistry from "AssetRegistry" /* 8165 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 15650
 // Function ID: 15651
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5081, 8285, 21, 5092, 587, 558, 576, 8291, 1990, 8294, 504, 1126, 2958, 10512, 10628, 6053, 8284, 4793, 1200, 8374, 10263, 10264, 5088, 2]
+// Dependencies: [19, 17, 5081, 8280, 21, 5092, 587, 558, 576, 8286, 1990, 8289, 504, 1126, 2958, 10512, 10628, 6053, 8279, 4793, 1200, 8369, 10263, 10264, 5088, 2]
 
 // Module 15650 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
@@ -13,14 +13,14 @@ import _modDef2958 from "module_2958" /* 2958 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 6053 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8284 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8294 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8374 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8279 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8289 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8369 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
 import types from "types" /* 10264 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -64,7 +64,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut } = user);
   dependencyMap = tmp4;
   const tmp5 = closure_9();
-  const tmpResult = user(8291);
+  const tmpResult = user(8286);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ guildNameplate, pendingNameplate, userNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {

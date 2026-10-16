@@ -1,10 +1,10 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 7718
+// Function ID: 7719
 // Name: MenuTypes
 // Dependencies: [2]
 // Exports: isMediaTakedownRegulation
 
-// Module 7723 (MenuTypes)
+// Module 7718 (MenuTypes)
 import size from "module_2" /* 2 */;
 
 const MediaTakedownRegulation = { TIDA: "tida", UK_STOPNCII: "uk_stopncii", BRAZIL_ONLINE_SAFETY_OF_WOMEN: "brazil_online_safety_of_women" };

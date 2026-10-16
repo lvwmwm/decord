@@ -1,7 +1,7 @@
 // Module ID: 10158
 // Function ID: 10159
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 6088, 6933, 10159, 1085, 21, 683, 587, 5092, 6259, 10160, 558, 576, 8426, 6157, 5088, 1126, 10161, 1200, 2031, 5644, 1631, 8327, 9399, 504, 6858, 6855, 6931, 6879, 1265, 10156, 5396, 10157, 1382, 4782, 10162, 9398, 10163, 10167, 6936, 9029, 10171, 3719, 5379, 7574, 8111, 10174, 6208, 6210, 5391, 10176, 2]
+// Dependencies: [32, 19, 17, 6088, 6933, 10159, 1085, 21, 683, 587, 5092, 6259, 10160, 558, 576, 8421, 6157, 5088, 1126, 10161, 1200, 2031, 5644, 1631, 8322, 9394, 504, 6858, 6855, 6931, 6879, 1265, 10156, 5396, 10157, 1382, 4782, 10162, 9393, 10163, 10167, 6936, 9024, 10171, 3719, 5379, 7569, 8106, 10174, 6208, 6210, 5391, 10176, 2]
 
 // Module 10158 (SocialLayerStorefrontProductDetailsModal)
 import react2 from "react" /* 576 */;
@@ -69,7 +69,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const common_Video = tmp(8426);
+const common_Video = tmp(8421);
 const NativePaymentContext = tmp(10176);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
@@ -1452,9 +1452,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp3 = dependencyMap;
   const rect = analyticsLocations(1631)();
   let tmp4 = skuId;
-  let obj = skuId(8327);
+  let obj = skuId(8322);
   const isScreenLandscape = obj.useIsScreenLandscape();
-  let obj2 = analyticsLocations(9399);
+  let obj2 = analyticsLocations(9394);
   const mobileStoreFront = obj2.useMobileStoreFront();
   let items = [trackPDPClick];
   const obj3 = skuId(504);
@@ -1659,7 +1659,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       });
     }
   }, items9);
-  const OTPACOMOrderExperiment = tmp4(9398).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp4(9393).OTPACOMOrderExperiment;
   let enabled = OTPACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontProductDetailsModal" }).enabled;
   const tmp4Result6 = tmp4(1382);
   if (tmp4Result6.isIOS()) {
@@ -1712,7 +1712,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       tmp51 = null;
       if (null != memo) {
         const obj10 = { sku: stateFromStores };
-        tmp51 = closure_14(tmp2(9029), obj10);
+        tmp51 = closure_14(tmp2(9024), obj10);
       }
     }
     let tmp55 = null;
@@ -1762,8 +1762,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     }
     items14 = [closure_14(memo1, obj19), ];
     if (result1) {
-      const obj21 = { icon: tmp2(8111), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
-      const IconButton = tmp4(7574).IconButton;
+      const obj21 = { icon: tmp2(8106), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
+      const IconButton = tmp4(7569).IconButton;
       intl2 = tmp4(1126).intl;
       result1 = tmp67(IconButton, obj21);
     }

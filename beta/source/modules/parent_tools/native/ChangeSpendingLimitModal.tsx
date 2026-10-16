@@ -1,7 +1,7 @@
 // Module ID: 15186
 // Function ID: 15187
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 5092, 587, 7572, 5088, 1126, 2568, 558, 576, 15187, 4809, 5934, 4808, 6940, 7515, 7516, 5377, 6286, 5379, 11541, 5958, 6201, 10603, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 587, 7567, 5088, 1126, 2568, 558, 576, 15187, 4809, 5934, 4808, 6940, 7510, 7511, 5377, 6286, 5379, 11541, 5958, 6201, 10603, 2]
 
 // Module 15186 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import WarningIcon2 from "WarningIcon" /* 7572 */;
+import WarningIcon2 from "WarningIcon" /* 7567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -365,8 +365,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
   }
   const tmp19 = amountInput.length > 0;
-  const ModalScreen = tmp(7515).ModalScreen;
-  const ModalContent = tmp(7516).ModalContent;
+  const ModalScreen = tmp(7510).ModalScreen;
+  const ModalContent = tmp(7511).ModalContent;
   const Stack = tmp(5377).Stack;
   const PX_16 = nativeDefault.space.PX_16;
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
@@ -612,8 +612,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   }
   let tmp8 = closure_7;
   const tmp7 = amountInput.length > 0;
-  const ModalScreen = tmp2(7515).ModalScreen;
-  const ModalContent = tmp2(7516).ModalContent;
+  const ModalScreen = tmp2(7510).ModalScreen;
+  const ModalContent = tmp2(7511).ModalContent;
   let obj2 = { spacing: obj(587).space.PX_16, children: items };
   const Stack = tmp2(5377).Stack;
   let obj3 = { variant: "text-sm/normal", children: intl.string(obj(2568).IFguF2) };

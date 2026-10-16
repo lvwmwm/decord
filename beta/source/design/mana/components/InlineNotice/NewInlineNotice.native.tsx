@@ -1,9 +1,9 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7566
+// Function ID: 7567
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 6290, 587, 2142, 7572, 5046, 6868, 5089, 5092, 558, 576, 5386, 1126, 4822, 1383, 4828, 5088, 5379, 7574, 6208, 2]
+// Dependencies: [19, 17, 21, 6290, 587, 2142, 7567, 5046, 6868, 5089, 5092, 558, 576, 5386, 1126, 4822, 1383, 4828, 5088, 5379, 7569, 6208, 2]
 
-// Module 7571 (NewInlineNotice)
+// Module 7566 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
@@ -12,7 +12,7 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import TextVariants from "TextVariants" /* 5089 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
-import WarningIcon from "WarningIcon" /* 7572 */;
+import WarningIcon from "WarningIcon" /* 7567 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

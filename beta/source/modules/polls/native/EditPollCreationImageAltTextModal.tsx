@@ -1,11 +1,11 @@
 // Module ID: 11927
 // Function ID: 11928
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 7971, 21, 5092, 587, 558, 576, 11924, 11926, 1126, 1200, 7729, 5088, 8677, 8580, 6729, 6814, 2]
+// Dependencies: [32, 19, 17, 7966, 21, 5092, 587, 558, 576, 11924, 11926, 1126, 1200, 7724, 5088, 8672, 8575, 6729, 6814, 2]
 
 // Module 11927 (EditPollCreationImageAltTextModal)
 import nativeDefault from "native" /* 587 */;
-import PollsConstants from "PollsConstants" /* 7971 */;
+import PollsConstants from "PollsConstants" /* 7966 */;
 import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 11926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -85,7 +85,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { onPress: tmp(11926).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(1126).t.cpT0Cq), children: closure_8(Icon, obj3) };
       intl = tmp(1126).intl;
-      obj3 = { source: value(7729) };
+      obj3 = { source: value(7724) };
       Icon = tmp(1200).Icon;
       const tmp16 = closure_8(closure_5, obj2);
       cResult[3] = tmp16;
@@ -159,7 +159,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
         const _Symbol5 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { children: intl4.string(tmp(1126).t["/2Gnoa"]) };
-          const tmp5Result = value(8677);
+          const tmp5Result = value(8672);
           intl4 = tmp(1126).intl;
           const tmp46 = closure_8(tmp5Result, obj8);
           cResult[17] = tmp46;
@@ -242,7 +242,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
           tmp56 = tmp59;
         }
         const obj12 = { showTopContainer: false, showBorder: false, multiline: false, value, onChange: tmp10, clearButtonVisibility: tmp(1200).ClearButtonVisibility.WITH_CONTENT, style: textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true, accessibilityLabel: tmp47 };
-        const FormInput = tmp(8580).FormInput;
+        const FormInput = tmp(8575).FormInput;
         const tmp52 = closure_8(FormInput, obj12);
         cResult[19] = tmp4.textInput;
         cResult[20] = value;
@@ -328,7 +328,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
   const obj4 = { onPress: onSave(11926).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1126).t.cpT0Cq), children: closure_8(Icon, obj5) };
   const SafeAreaPaddingView = onSave(6814).SafeAreaPaddingView;
   intl = onSave(1126).intl;
-  obj5 = { source: value(7729) };
+  obj5 = { source: value(7724) };
   Icon = onSave(1200).Icon;
   items1 = [closure_8(closure_5, obj4), , ];
   const obj6 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(onSave(1126).t.Cq44Rg) };
@@ -351,11 +351,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
   const obj12 = { style: tmp.formContainer, children: items4 };
   items4 = [closure_8(onSave(1200).Spacer, { size: 27 }), , , ];
   const obj13 = { children: intl4.string(onSave(1126).t["/2Gnoa"]) };
-  const tmp2Result2 = value(8677);
+  const tmp2Result2 = value(8672);
   intl4 = onSave(1126).intl;
   items4[1] = closure_8(tmp2Result2, obj13);
   const obj14 = { showTopContainer: false, showBorder: false, multiline: false, value, onChange: tmp7, clearButtonVisibility: onSave(1200).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true, accessibilityLabel: intl5.string(onSave(1126).t["/2Gnoa"]) };
-  const FormInput = onSave(8580).FormInput;
+  const FormInput = onSave(8575).FormInput;
   intl5 = onSave(1126).intl;
   items4[2] = closure_8(FormInput, obj14);
   items4[3] = closure_8(onSave(1200).Spacer, { size: 27 });

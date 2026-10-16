@@ -1,7 +1,7 @@
 // Module ID: 16174
 // Function ID: 16175
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6201, 5934, 7089, 1126, 6286, 4806, 6688, 10603, 14289, 5088, 7516, 11541, 14291, 11594, 7515, 11593, 6896, 6265, 5379, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6201, 5934, 7089, 1126, 6286, 4806, 6688, 10603, 14289, 5088, 7511, 11541, 14291, 11594, 7510, 11593, 6896, 6265, 5379, 2]
 
 // Module 16174 (UserSettingsDesignSystemModal)
 import react2 from "react" /* 576 */;
@@ -10,8 +10,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import ModalScreen2 from "ModalScreen" /* 7515 */;
-import ModalContent2 from "ModalContent" /* 7516 */;
+import ModalScreen2 from "ModalScreen" /* 7510 */;
+import ModalContent2 from "ModalContent" /* 7511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,7 +1,7 @@
 // Module ID: 10477
 // Function ID: 10478
 // Name: ChatBanner
-// Dependencies: [19, 17, 5757, 6035, 10478, 1085, 21, 5092, 587, 558, 576, 10479, 10480, 11, 504, 1265, 5107, 6803, 1126, 5088, 5379, 7902, 6972, 6185, 6800, 10482, 2]
+// Dependencies: [19, 17, 5757, 6035, 10478, 1085, 21, 5092, 587, 558, 576, 10479, 10480, 11, 504, 1265, 5107, 6803, 1126, 5088, 5379, 7897, 6972, 6185, 6800, 10482, 2]
 
 // Module 10477 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -10,7 +10,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6803 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7902 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
 import ChatOverlayConstants from "ChatOverlayConstants" /* 10478 */;
 import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10479 */;
 import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10480 */;

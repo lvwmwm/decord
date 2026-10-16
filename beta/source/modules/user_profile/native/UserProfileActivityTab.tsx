@@ -1,7 +1,7 @@
 // Module ID: 13379
 // Function ID: 13380
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5088, 1126, 8491, 2128, 13380, 13383, 13117, 13384, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5088, 1126, 8486, 2128, 13380, 13383, 13117, 13384, 2]
 
 // Module 13379 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;

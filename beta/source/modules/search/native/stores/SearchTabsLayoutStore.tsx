@@ -1,7 +1,7 @@
 // Module ID: 12062
 // Function ID: 12063
 // Name: SearchTabsLayoutStore
-// Dependencies: [12040, 2065, 6062, 12063, 12064, 12065, 12050, 9313, 568, 12043, 12039, 12041, 504, 584, 2]
+// Dependencies: [12040, 2065, 6062, 12063, 12064, 12065, 12050, 9308, 568, 12043, 12039, 12041, 504, 584, 2]
 
 // Module 12062 (SearchTabsLayoutStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -15,7 +15,7 @@ import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12063 */;
 import SearchMemberTabStore from "SearchMemberTabStore" /* 12064 */;
 import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12065 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

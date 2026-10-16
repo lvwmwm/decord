@@ -1,13 +1,13 @@
 // Module ID: 15532
 // Function ID: 15533
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 576, 9559, 9561, 15533, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9554, 9556, 15533, 2]
 
 // Module 15532 (GuildRoleSubscriptionEmojiGallery)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import chunkDefault from "chunk" /* 9559 */;
-import LayoutUtils from "LayoutUtils" /* 9561 */;
+import chunkDefault from "chunk" /* 9554 */;
+import LayoutUtils from "LayoutUtils" /* 9556 */;
 import EmojiIconDefault from "EmojiIcon" /* 15533 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
     }
   }
   const arr = chunkDefault(emojiIds, num);
-  let GappedList = tmp(9561).GappedList;
+  let GappedList = tmp(9556).GappedList;
   if (cResult[7] !== guildId) {
     class I {
       constructor(arg0, arg1) {

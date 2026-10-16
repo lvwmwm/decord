@@ -1,7 +1,7 @@
 // Module ID: 12409
 // Function ID: 12410
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1390, 1999, 12401, 12402, 1085, 7483, 21, 5092, 587, 6259, 12400, 558, 576, 1126, 12404, 5088, 12410, 1631, 1503, 504, 12408, 1382, 1105, 1265, 5056, 12411, 2000, 7500, 10226, 12412, 12413, 12417, 12420, 12421, 12422, 12423, 12425, 1273, 6201, 12427, 12428, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1999, 12401, 12402, 1085, 7478, 21, 5092, 587, 6259, 12400, 558, 576, 1126, 12404, 5088, 12410, 1631, 1503, 504, 12408, 1382, 1105, 1265, 5056, 12411, 2000, 7495, 10226, 12412, 12413, 12417, 12420, 12421, 12422, 12423, 12425, 1273, 6201, 12427, 12428, 6688, 2]
 
 // Module 12409 (RedesignContactSyncModal)
 import react_native from "react-native" /* 17 */;
@@ -17,7 +17,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
 import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12410 */;

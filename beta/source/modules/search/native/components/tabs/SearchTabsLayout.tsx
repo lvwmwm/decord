@@ -1,7 +1,7 @@
 // Module ID: 17380
 // Function ID: 17381
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 6062, 12050, 12062, 9313, 1085, 21, 5092, 12, 12057, 558, 576, 504, 12039, 17381, 17382, 17387, 1126, 12043, 17388, 12058, 12060, 12036, 17483, 17365, 6335, 4850, 12061, 12070, 12071, 1121, 17484, 17485, 10601, 17486, 17487, 17488, 17489, 2]
+// Dependencies: [19, 17, 6062, 12050, 12062, 9308, 1085, 21, 5092, 12, 12057, 558, 576, 504, 12039, 17381, 17382, 17387, 1126, 12043, 17388, 12058, 12060, 12036, 17483, 17365, 6335, 4850, 12061, 12070, 12071, 1121, 17484, 17485, 10601, 17486, 17487, 17488, 17489, 2]
 
 // Module 17380 (SearchTabsLayout)
 import react_native from "react-native" /* 17 */;
@@ -23,7 +23,7 @@ import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6062 */;
 import SearchQueryStore from "SearchQueryStore" /* 12050 */;
 import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 12062 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import module_12 from "module_12" /* 12 */;

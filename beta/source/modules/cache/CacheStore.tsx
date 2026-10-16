@@ -1,19 +1,19 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7193
+// Function ID: 7194
 // Name: CacheStore
-// Dependencies: [32, 5, 5757, 502, 2116, 4939, 1085, 3, 510, 2113, 7199, 7210, 9, 10, 2112, 7211, 7212, 7213, 7214, 7215, 7333, 7354, 504, 584, 2111, 7339, 7345, 7343, 7337, 559, 7355, 1382, 7357, 7359, 2108, 2]
+// Dependencies: [32, 5, 5757, 502, 2116, 4939, 1085, 3, 510, 2113, 7194, 7205, 9, 10, 2112, 7206, 7207, 7208, 7209, 7210, 7328, 7349, 504, 584, 2111, 7334, 7340, 7338, 7332, 559, 7350, 1382, 7352, 7354, 2108, 2]
 
-// Module 7198 (CacheStore)
+// Module 7193 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TryLoad from "TryLoad" /* 2111 */;
-import modules_MessagesDefault from "modules/Messages" /* 7199 */;
-import timeRequireDefault from "timeRequire" /* 7214 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7345 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7357 */;
+import modules_MessagesDefault from "modules/Messages" /* 7194 */;
+import timeRequireDefault from "timeRequire" /* 7209 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7340 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7352 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;

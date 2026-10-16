@@ -1,7 +1,7 @@
 // Module ID: 15869
 // Function ID: 15870
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1370, 1085, 21, 5092, 587, 558, 576, 5088, 4983, 1631, 12635, 504, 9, 7197, 8482, 5377, 6265, 6177, 1371, 6180, 13052, 8625, 2]
+// Dependencies: [5, 32, 19, 17, 1370, 1085, 21, 5092, 587, 558, 576, 5088, 4983, 1631, 12635, 504, 9, 7192, 8477, 5377, 6265, 6177, 1371, 6180, 13052, 8620, 2]
 
 // Module 15869 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       let closure_10 = Math.ceil(tmp5(9).renderLatestMessages.importTime);
       const _Symbol2 = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult2 = tmp(7197);
+        const tmpResult2 = tmp(7192);
         const lastTrackedAppUiViewed2Properties = tmpResult2.getLastTrackedAppUiViewed2Properties();
         class G {
           constructor() {
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                 }
               }
               let obj4 = { contentContainerStyle: tmp28, ListHeaderComponent: tmp29, data: tmp11, renderItem: tmp31 };
-              const tmp34 = closure_8(tmp(8625).FlashList, obj4);
+              const tmp34 = closure_8(tmp(8620).FlashList, obj4);
               cResult[19] = tmp11;
               cResult[20] = tmp28;
               cResult[21] = tmp29;
@@ -750,7 +750,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     }
   };
   obj6 = { paddingBottom: bottom + tmp2(587).space.PX_16 };
-  FlashList = tmp10(8625).FlashList;
+  FlashList = tmp10(8620).FlashList;
   return closure_8(checked, obj4);
 });
 let result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsStartupTimings.tsx");

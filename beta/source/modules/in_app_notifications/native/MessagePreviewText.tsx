@@ -1,7 +1,7 @@
 // Module ID: 12586
 // Function ID: 12587
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2065, 12578, 1096, 21, 5092, 1383, 587, 558, 576, 12587, 12588, 12577, 5088, 6157, 12589, 5627, 12592, 12593, 1107, 7002, 1126, 9314, 2]
+// Dependencies: [19, 17, 2065, 12578, 1096, 21, 5092, 1383, 587, 558, 576, 12587, 12588, 12577, 5088, 6157, 12589, 5627, 12592, 12593, 1107, 7002, 1126, 9309, 2]
 
 // Module 12586 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
 import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12587 */;
 import usePreviewableMedia from "usePreviewableMedia" /* 12589 */;

@@ -1,11 +1,11 @@
 // Module ID: 16911
 // Function ID: 16912
 // Name: ICYMINavigator
-// Dependencies: [21, 9345, 558, 576, 6688, 16912, 16862, 2]
+// Dependencies: [21, 9340, 558, 576, 6688, 16912, 16862, 2]
 
 // Module 16911 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

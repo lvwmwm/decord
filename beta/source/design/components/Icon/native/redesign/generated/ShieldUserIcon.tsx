@@ -1,14 +1,14 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8617
+// Function ID: 8618
 // Name: ShieldUserIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8261, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8256, 4817, 2]
 
-// Module 8622 (ShieldUserIcon)
+// Module 8617 (ShieldUserIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8261 */;
+import AssetRegistry from "AssetRegistry" /* 8256 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 11079
 // Function ID: 11080
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2012, 5947, 1999, 1085, 7483, 21, 5092, 587, 4967, 558, 576, 1497, 504, 7500, 5137, 4828, 1126, 1200, 8580, 1382, 8405, 2]
+// Dependencies: [5, 32, 19, 17, 2012, 5947, 1999, 1085, 7478, 21, 5092, 587, 4967, 558, 576, 1497, 504, 7495, 5137, 4828, 1126, 1200, 8575, 1382, 8400, 2]
 
 // Module 11079 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

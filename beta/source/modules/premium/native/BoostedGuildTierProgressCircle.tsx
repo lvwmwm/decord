@@ -1,7 +1,7 @@
 // Module ID: 13797
 // Function ID: 13798
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 13798, 13802, 13803, 13804, 558, 576, 8030, 6157, 8025, 5088, 12330, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 13798, 13802, 13803, 13804, 558, 576, 8025, 6157, 8020, 5088, 12330, 2]
 
 // Module 13797 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8025 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8030 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8025 */;
 import ProgressCircleDefault from "ProgressCircle" /* 12330 */;
 import Tier048Px from "Tier048Px" /* 13798 */;
 import react from "react" /* 19 */;

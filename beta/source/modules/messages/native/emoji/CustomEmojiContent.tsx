@@ -1,10 +1,10 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 9544
+// Function ID: 9545
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5988, 4939, 1390, 1085, 21, 5092, 587, 4769, 1265, 9394, 5056, 9543, 504, 6852, 5992, 4767, 4742, 9431, 6885, 2041, 9550, 7094, 9544, 9547, 4809, 1126, 9551, 9553, 9555, 2000, 9242, 1200, 5379, 6157, 5088, 9556, 8580, 9557, 9558, 2]
+// Dependencies: [19, 17, 5988, 4939, 1390, 1085, 21, 5092, 587, 4769, 1265, 9389, 5056, 9538, 504, 6852, 5992, 4767, 4742, 9426, 6885, 2041, 9545, 7094, 9539, 9542, 4809, 1126, 9546, 9548, 9550, 2000, 9237, 1200, 5379, 6157, 5088, 9551, 8575, 9552, 9553, 2]
 // Exports: default
 
-// Module 9549 (CustomEmojiContent)
+// Module 9544 (CustomEmojiContent)
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -14,11 +14,11 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5992 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9547 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9551 */;
-import StarIcon2 from "StarIcon" /* 9553 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 9556 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9542 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9546 */;
+import StarIcon2 from "StarIcon" /* 9548 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 9551 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5988 */;
@@ -320,7 +320,7 @@ export default function CustomEmojiContent(emojiNode) {
       handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
         const obj = ActionSheetActionCreatorsDefault;
         const obj2 = { emojiSrc: emojiNode.src };
-        obj.openLazy(asyncRequire(9555, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+        obj.openLazy(asyncRequire(9550, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
       };
       intl3 = tmp2(tmp3[27]).intl;
       obj23 = { color: expressionSourceGuild(tmp3[8]).colors.INTERACTIVE_TEXT_DEFAULT };

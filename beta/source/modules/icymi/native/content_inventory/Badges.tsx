@@ -1,7 +1,7 @@
 // Module ID: 13133
 // Function ID: 13134
 // Name: Badges
-// Dependencies: [19, 17, 2129, 21, 587, 5092, 558, 576, 13131, 8272, 5088, 504, 9212, 10763, 13134, 1126, 13136, 13138, 13015, 12622, 1102, 8926, 2]
+// Dependencies: [19, 17, 2129, 21, 587, 5092, 558, 576, 13131, 8267, 5088, 504, 9207, 10763, 13134, 1126, 13136, 13138, 13015, 12622, 1102, 8921, 2]
 
 // Module 13133 (Badges)
 import react_native from "react-native" /* 17 */;
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import utils from "utils" /* 8272 */;
-import TrophyIcon from "TrophyIcon" /* 8926 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import utils from "utils" /* 8267 */;
+import TrophyIcon from "TrophyIcon" /* 8921 */;
+import GameControllerIcon from "GameControllerIcon" /* 9207 */;
 import TimerIcon2 from "TimerIcon" /* 10763 */;
 import RetryIcon from "RetryIcon" /* 12622 */;
 import FireIcon from "FireIcon" /* 13015 */;
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameTimestam
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(9212).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(9207).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);

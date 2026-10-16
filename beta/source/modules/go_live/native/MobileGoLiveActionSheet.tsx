@@ -1,7 +1,7 @@
 // Module ID: 11053
 // Function ID: 11054
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 5271, 5897, 2065, 2087, 2116, 1390, 5212, 1085, 5117, 21, 5092, 587, 1383, 5056, 11053, 2000, 1273, 558, 576, 504, 11054, 11058, 6852, 6879, 4850, 7444, 5243, 6642, 1126, 2374, 11059, 11061, 6162, 5088, 4817, 9538, 6840, 6307, 6814, 9270, 1105, 6262, 6265, 6263, 9535, 9281, 9782, 6896, 5379, 11052, 2]
+// Dependencies: [32, 19, 5271, 5897, 2065, 2087, 2116, 1390, 5212, 1085, 5117, 21, 5092, 587, 1383, 5056, 11053, 2000, 1273, 558, 576, 504, 11054, 11058, 6852, 6879, 4850, 7439, 5243, 6642, 1126, 2374, 11059, 11061, 6162, 5088, 4817, 9533, 6840, 6307, 6814, 9265, 1105, 6262, 6265, 6263, 9530, 9276, 9777, 6896, 5379, 11052, 2]
 // Exports: showMobileGoLiveActionSheet
 
 // Module 11053 (MobileGoLiveActionSheet)
@@ -18,9 +18,9 @@ import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import TableRadioRow2 from "TableRadioRow" /* 6262 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 6642 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9538 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9533 */;
 import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11054 */;
 import SpeedometerIcon from "SpeedometerIcon" /* 11059 */;
 import ImageSparkleIcon from "ImageSparkleIcon" /* 11061 */;
@@ -1180,7 +1180,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               }
                             }
                             obj10 = { text: intl3.string(guildPremiumTier(2374).u72Prd), onPress: null };
-                            tmp22Result = guildPremiumTier(9782);
+                            tmp22Result = guildPremiumTier(9777);
                             intl3 = tmp(1126).intl;
                             class R {
                               constructor() {

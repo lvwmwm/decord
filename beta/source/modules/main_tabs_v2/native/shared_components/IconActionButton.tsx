@@ -1,7 +1,7 @@
 // Module ID: 12846
 // Function ID: 12847
 // Name: IconActionButton
-// Dependencies: [377, 19, 21, 5092, 587, 1382, 558, 576, 1200, 5386, 5088, 6185, 9303, 2]
+// Dependencies: [377, 19, 21, 5092, 587, 1382, 558, 576, 1200, 5386, 5088, 6185, 9298, 2]
 
 // Module 12846 (IconActionButton)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1200 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import Pressables from "Pressables" /* 6185 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9303 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9298 */;
 import _readOnlyError from "_readOnlyError" /* 377 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const shared_components_Badge = tmp(9303);
+const shared_components_Badge = tmp(9298);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
   let num;

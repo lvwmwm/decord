@@ -1,7 +1,7 @@
 // Module ID: 12725
 // Function ID: 12726
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8317, 12726, 2062, 21, 5092, 587, 558, 576, 1631, 5934, 4977, 11538, 1126, 2664, 5379, 12727, 5088, 10100, 5057, 5058, 10106, 12728, 4938, 2049, 8309, 504, 2]
+// Dependencies: [19, 17, 8312, 12726, 2062, 21, 5092, 587, 558, 576, 1631, 5934, 4977, 11538, 1126, 2664, 5379, 12727, 5088, 10100, 5057, 5058, 10106, 12728, 4938, 2049, 8304, 504, 2]
 
 // Module 12725 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10100 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10106 */;
 import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 12728 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import GiftingBadgeConstants from "GiftingBadgeConstants" /* 12726 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

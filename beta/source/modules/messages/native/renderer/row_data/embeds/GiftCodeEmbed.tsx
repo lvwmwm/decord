@@ -1,7 +1,7 @@
 // Module ID: 13493
 // Function ID: 13494
 // Name: GiftCodeEmbed
-// Dependencies: [17, 502, 10491, 1390, 6088, 1085, 1392, 13494, 13495, 13496, 13497, 13498, 13499, 13500, 13501, 13502, 13503, 13504, 12719, 4962, 7889, 4969, 4936, 1126, 11362, 11363, 587, 4702, 7751, 7891, 13505, 13506, 13507, 13508, 13509, 6931, 4769, 2]
+// Dependencies: [17, 502, 10491, 1390, 6088, 1085, 1392, 13494, 13495, 13496, 13497, 13498, 13499, 13500, 13501, 13502, 13503, 13504, 12719, 4962, 7884, 4969, 4936, 1126, 11362, 11363, 587, 4702, 7746, 7886, 13505, 13506, 13507, 13508, 13509, 6931, 4769, 2]
 // Exports: createGiftCodeEmbed
 
 // Module 13493 (GiftCodeEmbed)
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 587 */;
 import intl17 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import shared from "shared" /* 4969 */;
-import react_native from "react-native" /* 7751 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7891 */;
+import react_native from "react-native" /* 7746 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
 import _modDef12719 from "module_12719" /* 12719 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13494 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 13495 */;

@@ -1,7 +1,7 @@
 // Module ID: 11474
 // Function ID: 11475
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 7537, 7513, 1085, 584, 1295, 5419, 7512, 2]
+// Dependencies: [5, 502, 7532, 7508, 1085, 584, 1295, 5419, 7507, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
 // Module 11474 (SafetyHubActionCreators)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

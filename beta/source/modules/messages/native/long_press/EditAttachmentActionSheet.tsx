@@ -1,13 +1,13 @@
 // Module ID: 12825
 // Function ID: 12826
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 5432, 5085, 1085, 21, 558, 576, 8295, 8394, 1403, 1126, 4828, 7179, 6839, 5088, 6774, 6177, 5379, 5377, 587, 6899, 2]
+// Dependencies: [5, 32, 19, 5432, 5085, 1085, 21, 558, 576, 8290, 8389, 1403, 1126, 4828, 7174, 6839, 5088, 6774, 6177, 5379, 5377, 587, 6899, 2]
 
 // Module 12825 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1085 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8295 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -520,7 +520,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8394)(attachment);
+  const tmp5 = attachment(8389)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;

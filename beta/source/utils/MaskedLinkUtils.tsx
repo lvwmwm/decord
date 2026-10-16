@@ -1,16 +1,16 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8486
+// Function ID: 8487
 // Name: MaskedLinkUtils
-// Dependencies: [8492, 2065, 2087, 8493, 5432, 4760, 2116, 1085, 1949, 5299, 1126, 1265, 8494, 6085, 8495, 8496, 4800, 13044, 13048, 5405, 13049, 13051, 2]
+// Dependencies: [8487, 2065, 2087, 8488, 5432, 4760, 2116, 1085, 1949, 5299, 1126, 1265, 8489, 6085, 8490, 8491, 4800, 13044, 13048, 5405, 13049, 13051, 2]
 // Exports: handleClick, isLinkTrusted
 
-// Module 8491 (MaskedLinkUtils)
+// Module 8486 (MaskedLinkUtils)
 import openURLDefault from "openURL" /* 4800 */;
-import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 8495 */;
-import BlockedDomainStore from "BlockedDomainStore" /* 8492 */;
+import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 8490 */;
+import BlockedDomainStore from "BlockedDomainStore" /* 8487 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import MaskedLinkStore from "MaskedLinkStore" /* 8493 */;
+import MaskedLinkStore from "MaskedLinkStore" /* 8488 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -234,7 +234,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         tmpResult9.track(constants2.CHANGE_LOG_CTA_CLICKED, obj6);
       }
     }
-    const tmpResult10 = tmp(8495);
+    const tmpResult10 = tmp(8490);
     tmpResult10.trackLinkClicked(tmp6);
     if (null == onClick) {
       const obj7 = { skipExtensionCheck: "a", analyticsLocations: items, messageId, channelId };
@@ -297,7 +297,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         handleConfirm();
       } else if (flag2) {
         const obj11 = { messageId: tmp11, channelId, guildId: tmp12, sourceChannelId: tmp10, sourceGuildId: tmp9 };
-        const tmpResult14 = tmp(8495);
+        const tmpResult14 = tmp(8490);
         let result = tmpResult14.trackAnnouncementMessageLinkClicked(obj11);
       }
     }

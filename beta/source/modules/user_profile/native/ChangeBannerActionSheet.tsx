@@ -1,7 +1,7 @@
 // Module ID: 14842
 // Function ID: 14843
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8285, 1085, 21, 5092, 587, 558, 576, 6852, 4769, 5056, 7769, 14843, 6679, 1126, 9036, 6839, 8580, 14844, 6180, 6265, 6899, 504, 8294, 8311, 8375, 1103, 8289, 14845, 14847, 5088, 1200, 14852, 2]
+// Dependencies: [5, 19, 17, 8280, 1085, 21, 5092, 587, 558, 576, 6852, 4769, 5056, 7764, 14843, 6679, 1126, 9031, 6839, 8575, 14844, 6180, 6265, 6899, 504, 8289, 8306, 8370, 1103, 8284, 14845, 14847, 5088, 1200, 14852, 2]
 
 // Module 14842 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -12,14 +12,14 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7769 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7764 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
 import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14844 */;
 import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
     if (cResult[8] !== tmp8) {
       let tmp17 = tmp8;
       if (tmp17) {
-        tmp17 = closure_9(tmp(9036).NitroWheelIcon, {});
+        tmp17 = closure_9(tmp(9031).NitroWheelIcon, {});
       }
       cResult[8] = tmp8;
       cResult[9] = tmp17;
@@ -231,7 +231,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
           }
           if (cResult[19] !== tmp26) {
             let obj2 = { text: tmp26 };
-            const tmp30 = closure_9(tmp(8580).FormLabel, obj2);
+            const tmp30 = closure_9(tmp(8575).FormLabel, obj2);
             cResult[19] = tmp26;
             cResult[20] = tmp30;
             tmp28 = tmp30;
@@ -360,7 +360,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
                               items2 = [, ];
                               ({ label: arr3[0], remove: arr3[1] } = tmp6);
                               stringResult2 = removeText;
-                              const FormLabel = tmp(8580).FormLabel;
+                              const FormLabel = tmp(8575).FormLabel;
                               if (removeText == null) {
                                 const intl5 = tmp(1126).intl;
                                 stringResult2 = intl5.string(tmp(1126).t.tT9n7D);
@@ -417,7 +417,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
                   tmp43 = tmp44;
                 }
                 const obj14 = { style: tmp6.sublabel, numberOfLines: 2, text: tmp38 };
-                const tmp42 = closure_9(tmp(8580).FormSubLabel, obj14);
+                const tmp42 = closure_9(tmp(8575).FormSubLabel, obj14);
                 cResult[30] = tmp6.sublabel;
                 cResult[31] = tmp38;
                 cResult[32] = tmp42;
@@ -436,7 +436,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
           let tmp32 = !tmp8;
           if (tmp32) {
             const obj16 = { style: tmp6.nitroWheel, size: "sm" };
-            tmp32 = closure_9(tmp(9036).NitroWheelIcon, obj16);
+            tmp32 = closure_9(tmp(9031).NitroWheelIcon, obj16);
           }
           cResult[21] = tmp8;
           cResult[22] = tmp6.nitroWheel;
@@ -598,7 +598,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
   let tmp10 = View;
   let obj5 = { style: tmp.label, children: items2 };
   const TableRow = tmp5(6180).TableRow;
-  const FormLabel = tmp5(8580).FormLabel;
+  const FormLabel = tmp5(8575).FormLabel;
   const intl2 = tmp5(1126).intl;
   const string = intl2.string;
   const t = tmp5(1126).t;
@@ -611,12 +611,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
   let tmp4Result3 = !flag;
   if (tmp4Result3) {
     let obj6 = { style: tmp.nitroWheel, size: "sm" };
-    tmp4Result3 = tmp4(tmp5(9036).NitroWheelIcon, obj6);
+    tmp4Result3 = tmp4(tmp5(9031).NitroWheelIcon, obj6);
   }
   let obj7 = { label: tmp6(tmp10, obj5), subLabel: tmp6(tmp13, { children: items3 }), onPress: handleBannerUploadSelect };
   items2[1] = tmp4Result3;
   const obj8 = { style: tmp.sublabel, numberOfLines: 2, text: string2Result };
-  const FormSubLabel = tmp5(8580).FormSubLabel;
+  const FormSubLabel = tmp5(8575).FormSubLabel;
   const intl3 = tmp5(1126).intl;
   const string2 = intl3.string;
   const t2 = tmp5(1126).t;
@@ -656,7 +656,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
     const obj12 = { style: items4, text: removeText };
     items4 = [, ];
     ({ label: arr5[0], remove: arr5[1] } = tmp);
-    const FormLabel2 = tmp5(8580).FormLabel;
+    const FormLabel2 = tmp5(8575).FormLabel;
     if (removeText == null) {
       const intl5 = tmp5(1126).intl;
       removeText = intl5.string(tmp5(1126).t.tT9n7D);
@@ -709,15 +709,15 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
   ({ pendingAccentColor, pendingAvatar } = stateFromStoresObject);
   const obj2 = { userId: user.id, image: pendingAvatar };
-  const tmpResult6 = tmp(8294);
+  const tmpResult6 = tmp(8289);
   let pendingAvatarSrc = tmpResult6.getPendingAvatarSrc(obj2);
-  const tmp11 = pendingAccentColor(8311)(user.id);
+  const tmp11 = pendingAccentColor(8306)(user.id);
   if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
-  const tmpResult7 = tmp(8375);
+  const tmpResult7 = tmp(8370);
   const memoizedImageSourceResult = tmpResult7.memoizedImageSource(pendingAvatarSrc);
-  const tmpResult8 = tmp(8375);
+  const tmpResult8 = tmp(8370);
   const dominantColorFromImage = tmpResult8.useDominantColorFromImage(pendingAvatarSrc, memoizedImageSourceResult);
   if (cResult[2] !== dominantColorFromImage) {
     const tmpResult9 = tmp(1103);
@@ -777,7 +777,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
     if (cResult[10] !== tmp4.label) {
       const obj3 = { style: label, text: tmp19 };
-      const tmp23 = closure_9(tmp(8580).FormLabel, obj3);
+      const tmp23 = closure_9(tmp(8575).FormLabel, obj3);
       cResult[10] = tmp4.label;
       cResult[11] = tmp23;
       tmp21 = tmp23;
@@ -898,7 +898,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const obj2 = require("RecentAvatarUtils");
   const obj3 = { userId: user.id, image: pendingAvatar };
   let pendingAvatarSrc = obj2.getPendingAvatarSrc(obj3);
-  const tmp7 = pendingAccentColor(8311)(user.id);
+  const tmp7 = pendingAccentColor(8306)(user.id);
   if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
@@ -941,7 +941,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   };
   const TableRow = tmp2(6180).TableRow;
   obj5 = { style: tmp.label, text: intl.string(require("intl").t.xzNfPz) };
-  FormLabel = tmp2(8580).FormLabel;
+  FormLabel = tmp2(8575).FormLabel;
   intl = tmp2(1126).intl;
   obj6 = { style: tmp.selectedColor, children: items2 };
   items2 = [, , ];

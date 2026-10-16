@@ -1,7 +1,7 @@
 // Module ID: 17510
 // Function ID: 17511
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 9345, 5092, 587, 558, 576, 1126, 9304, 9298, 12337, 7197, 6688, 17511, 17517, 17520, 17521, 17522, 17533, 17534, 17535, 17537, 17540, 17541, 4972, 1631, 4827, 2]
+// Dependencies: [109, 19, 17, 21, 9340, 5092, 587, 558, 576, 1126, 9299, 9293, 12337, 7192, 6688, 17511, 17517, 17520, 17521, 17522, 17533, 17534, 17535, 17537, 17540, 17541, 4972, 1631, 4827, 2]
 
 // Module 17510 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
@@ -10,13 +10,13 @@ import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9304 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9299 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12337 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reques
     const obj2 = { isModal: true, children: metroImportDefault(HeaderIconButton, obj3) };
     obj3 = { source: AssetRegistryDefault, onPress, accessibilityLabel: first };
     const tmp9 = PressableNavigatorButtonWrapperDefault;
-    HeaderIconButton = tmp(9298).HeaderIconButton;
+    HeaderIconButton = tmp(9293).HeaderIconButton;
     const tmp10 = metroImportDefault(tmp9, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;

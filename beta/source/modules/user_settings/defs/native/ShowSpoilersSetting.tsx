@@ -1,14 +1,14 @@
 // Module ID: 15768
 // Function ID: 15769
 // Name: ShowSpoilersSetting
-// Dependencies: [19, 7993, 1085, 2041, 558, 576, 1126, 10663, 2]
+// Dependencies: [19, 7988, 1085, 2041, 558, 576, 1126, 10663, 2]
 
 // Module 15768 (ShowSpoilersSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

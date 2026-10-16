@@ -1,7 +1,7 @@
 // Module ID: 12773
 // Function ID: 12774
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5081, 1085, 21, 5092, 587, 1993, 558, 576, 12772, 6208, 1126, 6210, 4850, 5378, 5093, 5057, 7274, 12774, 4818, 5391, 8303, 12776, 504, 12777, 10636, 9062, 8451, 8296, 9001, 9014, 10511, 10627, 10628, 6157, 12778, 5088, 7276, 5379, 6814, 2]
+// Dependencies: [32, 729, 19, 17, 5081, 1085, 21, 5092, 587, 1993, 558, 576, 12772, 6208, 1126, 6210, 4850, 5378, 5093, 5057, 7269, 12774, 4818, 5391, 8298, 12776, 504, 12777, 10636, 9057, 8446, 8291, 8996, 9009, 10511, 10627, 10628, 6157, 12778, 5088, 7271, 5379, 6814, 2]
 
 // Module 12773 (ProductPurchaseSuccessModal)
 import react2 from "react" /* 576 */;
@@ -15,9 +15,9 @@ import spring from "spring" /* 5378 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
 import _mod6210 from "module_6210" /* 6210 */;
-import _modDef7274 from "module_7274" /* 7274 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9001 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9014 */;
+import _modDef7269 from "module_7269" /* 7269 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 8996 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9009 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
 import NameplatePreview from "NameplatePreview" /* 10628 */;
@@ -49,10 +49,10 @@ let unpackModuleId;
 const get_initialized = tmp(504);
 const Text_Text = tmp(5088);
 const common_SafeAreaView = tmp(6814);
-const CollectiblesUtils = tmp(7276);
-const useShopProductItems = tmp(8296);
-const useCurrentUser = tmp(8303);
-const useFetchVirtualCurrencyBalance = tmp(9062);
+const CollectiblesUtils = tmp(7271);
+const useShopProductItems = tmp(8291);
+const useCurrentUser = tmp(8298);
+const useFetchVirtualCurrencyBalance = tmp(9057);
 const useHandleUseNow = tmp(10636);
 const useAvatarDecorationPreviewSizes = tmp(12776);
 const useFetchCollectiblesProductCategory = tmp(12777);
@@ -439,7 +439,7 @@ let closure_25 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
 function useDrummingHapticFeedbacks() {
 
 }
-let obj7 = _modDef7274("black");
+let obj7 = _modDef7269("black");
 let closure_27 = obj7.toHexString();
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurchaseGradientBackground(product) {
@@ -1561,12 +1561,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
         if (tmp32Result) {
           const obj15 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp25 };
           ({ firstAvatarDecoration: obj27.deco, firstProfileEffect: obj27.pfx, firstNameplate: obj27.nameplate } = shopProductItems);
-          tmp32Result = tmp32(tmp4(9001), obj15);
+          tmp32Result = tmp32(tmp4(8996), obj15);
         }
         tmp32Result2 = tmp32(tmp28, obj14);
       } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
         const obj16 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-        tmp32Result2 = tmp32(tmp4(9014), obj16);
+        tmp32Result2 = tmp32(tmp4(9009), obj16);
       } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
         const obj17 = { user: currentUser, profileEffect: product.items[0] };
         tmp32Result2 = tmp32(tmp4(10511), obj17);

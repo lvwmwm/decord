@@ -1,7 +1,7 @@
 // Module ID: 18406
 // Function ID: 18407
 // Name: GuildSettingsRolesStore
-// Dependencies: [2080, 18407, 2120, 2119, 8639, 18401, 1085, 18408, 12130, 5408, 1388, 1097, 4755, 1103, 2122, 12, 504, 584, 2]
+// Dependencies: [2080, 18407, 2120, 2119, 8634, 18401, 1085, 18408, 12130, 5408, 1388, 1097, 4755, 1103, 2122, 12, 504, 584, 2]
 
 // Module 18406 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -18,7 +18,7 @@ import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12130 */;
 import GuildSettingsConstants from "GuildSettingsConstants" /* 18401 */;
 import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18407 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18408 */;
 import module_12 from "module_12" /* 12 */;

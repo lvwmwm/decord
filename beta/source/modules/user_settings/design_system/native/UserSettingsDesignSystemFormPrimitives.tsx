@@ -1,7 +1,7 @@
 // Module ID: 16183
 // Function ID: 16184
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 5088, 6263, 6262, 6265, 6896, 12903, 6177, 6180, 14293, 11082, 8229, 5377, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 5088, 6263, 6262, 6265, 6896, 12903, 6177, 6180, 14293, 11082, 8224, 5377, 2]
 
 // Module 16183 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
@@ -14,7 +14,7 @@ import TableRadioRow from "TableRadioRow" /* 6262 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
 import TableRowGroup3 from "TableRowGroup" /* 6265 */;
 import TableSwitchRow5 from "TableSwitchRow" /* 6896 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8224 */;
 import VoiceXIcon from "VoiceXIcon" /* 11082 */;
 import Slider2 from "Slider" /* 14293 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

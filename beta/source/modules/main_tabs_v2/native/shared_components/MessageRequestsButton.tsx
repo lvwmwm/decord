@@ -1,7 +1,7 @@
 // Module ID: 16463
 // Function ID: 16464
 // Name: MessageRequestsButton
-// Dependencies: [109, 19, 17, 6055, 6056, 21, 5092, 558, 576, 504, 16464, 5379, 1126, 7574, 12846, 8753, 2]
+// Dependencies: [109, 19, 17, 6055, 6056, 21, 5092, 558, 576, 504, 16464, 5379, 1126, 7569, 12846, 8748, 2]
 
 // Module 16463 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8753 */;
+import IconButton2 from "IconButton" /* 7569 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8748 */;
 import IconActionButtonDefault from "IconActionButton" /* 12846 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -237,7 +237,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
       tmp36 = React4(Button, obj3);
     } else {
       const obj4 = { variant: "secondary", size: "sm", icon: React4(IconComponent, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const IconButton = tmp(7574).IconButton;
+      const IconButton = tmp(7569).IconButton;
       intl2 = tmp(1126).intl;
       const merged1 = Object.assign(tmp4);
       tmp36 = React4(IconButton, obj4);

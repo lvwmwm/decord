@@ -1,7 +1,7 @@
 // Module ID: 11608
 // Function ID: 11609
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1390, 8276, 5440, 1502, 10802, 9610, 6853, 11609, 7889, 1126, 11610, 9247, 8275, 10803, 11611, 11612, 1415, 1384, 11613, 6879, 11614, 7247, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
+// Dependencies: [32, 1390, 8271, 5440, 1502, 10802, 9605, 6853, 11609, 7884, 1126, 11610, 9242, 8270, 10803, 11611, 11612, 1415, 1384, 11613, 6879, 11614, 7242, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
 // Module 11608 (createAppMessageEmbed)
@@ -15,12 +15,12 @@ import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8276 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9610 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8271 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9605 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;

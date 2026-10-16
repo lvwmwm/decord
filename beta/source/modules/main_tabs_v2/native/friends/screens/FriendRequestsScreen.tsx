@@ -1,14 +1,14 @@
 // Module ID: 17537
 // Function ID: 17538
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6057, 4760, 1390, 10217, 1085, 10233, 21, 5092, 587, 17538, 2000, 5301, 558, 576, 6058, 573, 2041, 16874, 6059, 11, 6852, 6879, 1265, 13188, 6858, 17539, 1355, 8304, 1126, 1503, 6265, 6180, 5088, 8530, 10226, 8779, 6185, 11578, 15391, 10223, 2]
+// Dependencies: [32, 19, 17, 6057, 4760, 1390, 10217, 1085, 10233, 21, 5092, 587, 17538, 2000, 5301, 558, 576, 6058, 573, 2041, 16874, 6059, 11, 6852, 6879, 1265, 13188, 6858, 17539, 1355, 8299, 1126, 1503, 6265, 6180, 5088, 8525, 10226, 8774, 6185, 11578, 15391, 10223, 2]
 
 // Module 17537 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
 import Constants2 from "Constants" /* 10233 */;
 import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16874 */;
@@ -513,9 +513,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   };
   const tmp27 = first1 === tmp24.Incoming && incoming.length >= incomingData;
   const obj7 = { id: str.toString(), label: intl.string(analyticsLocations(1126).t.bekioP), page: null };
-  const useSegmentedControlState = tmp7(8530).useSegmentedControlState;
+  const useSegmentedControlState = tmp7(8525).useSegmentedControlState;
   str = Outgoing.Incoming;
-  analyticsLocations(8530);
+  analyticsLocations(8525);
   intl = tmp7(1126).intl;
   items8 = [obj7, ];
   const obj8 = { id: str2.toString(), label: intl2.string(analyticsLocations(1126).t.tWqcIF), page: null };
@@ -528,7 +528,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   items9 = [outgoingData(tmp2(10226), { absolute: true }), ];
   const obj10 = { style: tmp.container, children: items10 };
   items10 = [, , ];
-  const obj11 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8779).SegmentedControl, { state: segmentedControlState }) };
+  const obj11 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8774).SegmentedControl, { state: segmentedControlState }) };
   items10[0] = outgoingData(pendingIncomingIds, obj11);
   let tmp32Result = null;
   if (tmp27) {

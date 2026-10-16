@@ -1,19 +1,19 @@
 // Module ID: 15178
 // Function ID: 15179
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7260, 21, 5092, 587, 558, 576, 7740, 7742, 15173, 5088, 11532, 1126, 2568, 15179, 6185, 2]
+// Dependencies: [32, 19, 17, 7255, 21, 5092, 587, 558, 576, 7735, 7737, 15173, 5088, 11532, 1126, 2568, 15179, 6185, 2]
 
 // Module 15178 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7742 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7735 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7737 */;
 import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15173 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

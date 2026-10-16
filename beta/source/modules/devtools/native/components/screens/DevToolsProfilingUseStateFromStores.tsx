@@ -1,7 +1,7 @@
 // Module ID: 15967
 // Function ID: 15968
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 558, 576, 15968, 5088, 6265, 6896, 6180, 6293, 10763, 9755, 15969, 5049, 1126, 2]
+// Dependencies: [32, 19, 21, 558, 576, 15968, 5088, 6265, 6896, 6180, 6293, 10763, 9750, 15969, 5049, 1126, 2]
 
 // Module 15967 (DevToolsProfilingUseStateFromStores)
 import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 15968 */;

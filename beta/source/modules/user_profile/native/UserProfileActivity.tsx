@@ -1,7 +1,7 @@
 // Module ID: 13117
 // Function ID: 13118
 // Name: UserProfileActivity
-// Dependencies: [32, 109, 19, 17, 5440, 5897, 2065, 2087, 4750, 5108, 5759, 5113, 7321, 6905, 1085, 21, 5092, 587, 1382, 558, 576, 5088, 8491, 13118, 4827, 10253, 1126, 10784, 6157, 1415, 8463, 7689, 4969, 10245, 7427, 13127, 13139, 6852, 6879, 13145, 8879, 8880, 13146, 504, 13132, 13147, 13149, 13157, 13160, 8385, 5109, 13125, 13126, 6185, 6904, 1200, 13162, 11134, 5137, 5907, 5889, 7444, 5056, 11075, 13163, 11081, 13150, 5421, 10256, 8651, 5934, 7482, 7053, 10805, 13164, 13165, 13167, 13168, 2]
+// Dependencies: [32, 109, 19, 17, 5440, 5897, 2065, 2087, 4750, 5108, 5759, 5113, 7316, 6905, 1085, 21, 5092, 587, 1382, 558, 576, 5088, 8486, 13118, 4827, 10253, 1126, 10784, 6157, 1415, 8458, 7684, 4969, 10245, 7422, 13127, 13139, 6852, 6879, 13145, 8874, 8875, 13146, 504, 13132, 13147, 13149, 13157, 13160, 8380, 5109, 13125, 13126, 6185, 6904, 1200, 13162, 11134, 5137, 5907, 5889, 7439, 5056, 11075, 13163, 11081, 13150, 5421, 10256, 8646, 5934, 7477, 7053, 10805, 13164, 13165, 13167, 13168, 2]
 
 // Module 13117 (UserProfileActivity)
 import react2 from "react" /* 576 */;
@@ -21,14 +21,14 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
 import Constants2 from "Constants" /* 6905 */;
 import transitionToGuild from "transitionToGuild" /* 7053 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7427 */;
-import StreamActionCreators from "StreamActionCreators" /* 7444 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import UnknownGameIcon2 from "UnknownGameIcon" /* 7689 */;
-import isStreamingDefault from "isStreaming" /* 8385 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8463 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8651 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7422 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import UnknownGameIcon2 from "UnknownGameIcon" /* 7684 */;
+import isStreamingDefault from "isStreaming" /* 8380 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8458 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
 import isGameActivityDefault from "isGameActivity" /* 10245 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10253 */;
 import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10256 */;
@@ -54,7 +54,7 @@ import PermissionStore from "PermissionStore" /* 4750 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -1194,8 +1194,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   const tmp6Result = tmp6({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
   dependencyMap = tmp6Result;
   const application_id = activity.application_id;
-  const tmp2Result = activity(8880);
-  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(8879).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  const tmp2Result = activity(8875);
+  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(8874).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
   const tmp2ResultResult = tmp2Result(obj);
   closure_3 = tmp2ResultResult;
   const items = [tmp2ResultResult];
@@ -1296,7 +1296,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         if (activity(10253)(activity)) {
           const obj13 = { activity, onAction: tmp6Result };
           tmp33Result7 = tmp33(tmp10(13157).PlayOnSpotifyButton, obj13);
-        } else if (activity(7427)(activity)) {
+        } else if (activity(7422)(activity)) {
           const obj14 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp6Result };
           tmp33Result7 = tmp33(tmp10(13157).JoinActivityButton, obj14);
         } else {
@@ -1328,7 +1328,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               }
             }
           }
-          if (activity(8385)(activity)) {
+          if (activity(8380)(activity)) {
             const obj16 = { activity, onAction: tmp6Result };
             tmp33Result7 = tmp33(tmp10(13157).WatchActivityButton, obj16);
           } else {
@@ -2049,7 +2049,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     if (stateFromStores1) {
       const obj9 = {
         accessibilityRole: "button",
-        accessibilityLabel: stateFromStores(8651)(obj10),
+        accessibilityLabel: stateFromStores(8646)(obj10),
         accessibilityHint: intl3.string(channel(1126).t["9C444m"]),
         onPress() {
               closure_3({ action: "OPEN_VOICE_CHANNEL" });

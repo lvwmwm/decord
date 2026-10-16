@@ -1,7 +1,7 @@
 // Module ID: 15557
 // Function ID: 15558
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1206, 1205, 15558, 7993, 1085, 21, 558, 576, 1503, 1382, 9298, 1126, 10516, 1272, 3442, 2128, 15559, 5396, 573, 10663, 14965, 2]
+// Dependencies: [19, 4937, 1206, 1205, 15558, 7988, 1085, 21, 558, 576, 1503, 1382, 9293, 1126, 10516, 1272, 3442, 2128, 15559, 5396, 573, 10663, 14965, 2]
 
 // Module 15557 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -13,8 +13,8 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef3442 from "module_3442" /* 3442 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;

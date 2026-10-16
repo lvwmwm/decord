@@ -1,7 +1,7 @@
 // Module ID: 12276
 // Function ID: 12277
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1085, 3, 558, 576, 7123, 10053, 7122, 1265, 5300, 1126, 5959, 2]
+// Dependencies: [5, 19, 1085, 3, 558, 576, 7123, 10048, 7122, 1265, 5300, 1126, 5959, 2]
 
 // Module 12276 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;

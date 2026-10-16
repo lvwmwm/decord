@@ -1,7 +1,7 @@
 // Module ID: 10417
 // Function ID: 10418
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 2065, 1390, 7019, 10415, 1085, 21, 5092, 587, 8310, 1126, 5048, 558, 576, 6265, 6180, 1200, 1631, 6852, 6879, 504, 1265, 8306, 6840, 6307, 6651, 5088, 5409, 8325, 5056, 10416, 2000, 1273, 5379, 7018, 2128, 4806, 2]
+// Dependencies: [32, 19, 17, 2065, 1390, 7019, 10415, 1085, 21, 5092, 587, 8305, 1126, 5048, 558, 576, 6265, 6180, 1200, 1631, 6852, 6879, 504, 1265, 8301, 6840, 6307, 6651, 5088, 5409, 8320, 5056, 10416, 2000, 1273, 5379, 7018, 2128, 4806, 2]
 
 // Module 10417 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -18,8 +18,8 @@ import TableRow2 from "TableRow" /* 6180 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import RelationshipConstants from "RelationshipConstants" /* 7019 */;
-import UserActionCreators from "UserActionCreators" /* 8306 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8310 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -297,7 +297,7 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
       arrow: true
     };
     TableRow = tmp7(6180).TableRow;
-    obj19 = { size: userId(1200).Icon.Sizes.MEDIUM, source: channelId(8325), color: tmp.destructiveIcon.color };
+    obj19 = { size: userId(1200).Icon.Sizes.MEDIUM, source: channelId(8320), color: tmp.destructiveIcon.color };
     Icon2 = tmp7(1200).Icon;
     intl4 = tmp7(1126).intl;
     obj20 = { variant: "text-xs/medium", color: "text-feedback-critical", children: intl5.string(userId(1126).t.NTnf1T) };

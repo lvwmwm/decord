@@ -1,10 +1,10 @@
 // Module ID: 15009
 // Function ID: 15010
 // Name: AgeGroupConfirmSetting
-// Dependencies: [7993, 10663, 15007, 2]
+// Dependencies: [7988, 10663, 15007, 2]
 
 // Module 15009 (AgeGroupConfirmSetting)
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15007 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

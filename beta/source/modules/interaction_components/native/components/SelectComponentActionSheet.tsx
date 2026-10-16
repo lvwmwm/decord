@@ -1,7 +1,7 @@
 // Module ID: 11376
 // Function ID: 11377
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2065, 2116, 6841, 21, 5092, 587, 558, 576, 1126, 5379, 6839, 8626, 4832, 6178, 8768, 6180, 6665, 4828, 1631, 1497, 6259, 504, 5056, 6307, 6840, 2]
+// Dependencies: [19, 17, 2065, 2116, 6841, 21, 5092, 587, 558, 576, 1126, 5379, 6839, 8621, 4832, 6178, 8763, 6180, 6665, 4828, 1631, 1497, 6259, 504, 5056, 6307, 6840, 2]
 
 // Module 11376 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(8626);
+      const tmp13 = selectedOptions(8621);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -714,7 +714,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(8768).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(8763).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

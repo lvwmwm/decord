@@ -1,7 +1,7 @@
 // Module ID: 16721
 // Function ID: 16722
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 15926, 21, 5092, 8972, 1273, 558, 576, 1504, 504, 6852, 6879, 16722, 8625, 2]
+// Dependencies: [32, 19, 15926, 21, 5092, 8967, 1273, 558, 576, 1504, 504, 6852, 6879, 16722, 8620, 2]
 
 // Module 16721 (OneColumnGuildUpsellList)
 import Fragment from "Fragment" /* 21 */;

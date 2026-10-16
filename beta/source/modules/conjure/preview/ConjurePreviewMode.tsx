@@ -1,13 +1,13 @@
 // Module ID: 17114
 // Function ID: 17115
 // Name: ConjurePreviewMode
-// Dependencies: [3849, 1126, 8611, 2]
+// Dependencies: [3849, 1126, 8606, 2]
 // Exports: getPreviewFrameSurfaceLabel, getPreviewModeLabel
 
 // Module 17114 (ConjurePreviewMode)
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import size from "module_2" /* 2 */;
 
 const obj = { frame: _modDef3849.FKuG6X, widget: _modDef3849.oOAVlP, overlay: _modDef3849.EnTNKg, bot: _modDef3849.uE5z15 };

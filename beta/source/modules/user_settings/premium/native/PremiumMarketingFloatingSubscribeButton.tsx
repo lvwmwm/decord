@@ -1,7 +1,7 @@
 // Module ID: 13786
 // Function ID: 13787
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5081, 1085, 21, 5092, 587, 558, 576, 1631, 504, 13784, 6879, 683, 4850, 5093, 5391, 9782, 2]
+// Dependencies: [19, 17, 5081, 1085, 21, 5092, 587, 558, 576, 1631, 504, 13784, 6879, 683, 4850, 5093, 5391, 9777, 2]
 
 // Module 13786 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
@@ -424,7 +424,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
               }
             }
             const obj9 = { onPress: openPayment, text: buttonText };
-            const tmp33 = closure_7(stateFromStores(9782), obj9);
+            const tmp33 = closure_7(stateFromStores(9777), obj9);
             cResult[20] = buttonText;
             cResult[21] = openPayment;
             cResult[22] = tmp33;

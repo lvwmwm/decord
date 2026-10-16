@@ -1,7 +1,7 @@
 // Module ID: 11502
 // Function ID: 11503
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 7537, 1085, 21, 5092, 504, 11473, 1126, 11479, 11503, 7512, 5088, 5056, 11501, 2000, 584, 11482, 11498, 2]
+// Dependencies: [19, 17, 7532, 1085, 21, 5092, 504, 11473, 1126, 11479, 11503, 7507, 5088, 5056, 11501, 2000, 584, 11482, 11498, 2]
 // Exports: default
 
 // Module 11502 (AppealIngestionConfirmSubmission)
@@ -9,13 +9,13 @@ import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
 import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11473 */;
 import AppealIngestionModal from "AppealIngestionModal" /* 11479 */;
 import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11498 */;
 import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 11503 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;

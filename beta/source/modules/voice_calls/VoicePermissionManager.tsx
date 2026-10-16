@@ -1,14 +1,14 @@
 // Module ID: 18053
 // Function ID: 18054
 // Name: VoicePermissionManager
-// Dependencies: [5948, 5114, 502, 2065, 2012, 5110, 1085, 7483, 7500, 18054, 5416, 6808, 2]
+// Dependencies: [5948, 5114, 502, 2065, 2012, 5110, 1085, 7478, 7495, 18054, 5416, 6808, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
 // Module 18053 (VoicePermissionManager)
 import Constants from "Constants" /* 1085 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7500 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7495 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
 import VoiceStateRecord from "VoiceStateRecord" /* 5114 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

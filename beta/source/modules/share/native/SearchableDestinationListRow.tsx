@@ -1,13 +1,13 @@
 // Module ID: 16639
 // Function ID: 16640
 // Name: SearchableDestinationListRow
-// Dependencies: [109, 19, 21, 558, 576, 8700, 11558, 7350, 10228, 10279, 10282, 1388, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8695, 11558, 7345, 10228, 10279, 10282, 1388, 2]
 
 // Module 16639 (SearchableDestinationListRow)
 import Fragment from "Fragment" /* 21 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserSearchUtils from "UserSearchUtils" /* 7350 */;
-import _mod8700 from "module_8700" /* 8700 */;
+import UserSearchUtils from "UserSearchUtils" /* 7345 */;
+import _mod8695 from "module_8695" /* 8695 */;
 import UserRowDefault from "UserRow" /* 10228 */;
 import GroupDMRowDefault from "GroupDMRow" /* 10279 */;
 import ChannelRowDefault from "ChannelRow" /* 10282 */;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     importDefault = cResult[3];
   }
   ({ type, record } = tmp6);
-  if (type === require("module_8700").AutocompleterResultTypes.HEADER) {
+  if (type === require("module_8695").AutocompleterResultTypes.HEADER) {
     return null;
   } else {
     if (cResult[4] === tmp4) {
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
       if (cResult[5] === tmp6) {
         tmp10 = cResult[6];
       }
-      if (require("module_8700").AutocompleterResultTypes.USER === type) {
+      if (require("module_8695").AutocompleterResultTypes.USER === type) {
         let tmp30;
         if (cResult[7] !== record.id) {
           const tmpResult = require("UserSearchUtils");
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
         cResult[12] = tmp30;
         cResult[13] = tmp39;
         tmp32 = tmp39;
-      } else if (require("module_8700").AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (require("module_8695").AutocompleterResultTypes.GROUP_DM === type) {
         if (cResult[14] === tmp10) {
           if (cResult[15] === tmp5) {
             let tmp22;
@@ -104,8 +104,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
         cResult[17] = tmp29;
         tmp22 = tmp29;
       } else {
-        if (require("module_8700").AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (require("module_8700").AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (require("module_8695").AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (require("module_8695").AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             let tmp12;
             if (cResult[22] !== type) {
               const tmpResult2 = require("GlobalUtils");
@@ -158,7 +158,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
   const onPressDestination = result.onPressDestination;
   const merged = Object.assign(result, Object.assign({ result: 0, onPressDestination: 0 }));
   ({ type, record } = result);
-  if (type === _mod8700.AutocompleterResultTypes.HEADER) {
+  if (type === _mod8695.AutocompleterResultTypes.HEADER) {
     return null;
   } else {
     let fn;
@@ -168,18 +168,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
         return onPressDestination(obj.getDestinationIdFromResult(require));
       };
     }
-    if (_mod8700.AutocompleterResultTypes.USER === type) {
+    if (_mod8695.AutocompleterResultTypes.USER === type) {
       onPressDestination(10228);
       const merged1 = Object.assign(merged);
       const tmp2Result = UserSearchUtils;
       return <tmp18 user={record} type={tmp2Result.getRelationshipType(record.id)} onPress={fn} />;
-    } else if (_mod8700.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod8695.AutocompleterResultTypes.GROUP_DM === type) {
       onPressDestination(10279);
       const merged2 = Object.assign(merged);
       return <tmp12 channel={record} onPress={fn} />;
     } else {
-      if (_mod8700.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod8700.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod8695.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod8695.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmp2Result2 = GlobalUtils;
           return tmp2Result2.assertNever(type);
         }

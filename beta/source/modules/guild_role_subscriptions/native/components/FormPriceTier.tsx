@@ -1,7 +1,7 @@
 // Module ID: 18592
 // Function ID: 18593
 // Name: FormPriceTier
-// Dependencies: [19, 18553, 1085, 21, 1126, 14123, 6940, 38, 5056, 8554, 2000, 2]
+// Dependencies: [19, 18553, 1085, 21, 1126, 14123, 6940, 38, 5056, 8549, 2000, 2]
 // Exports: default
 
 // Module 18592 (FormPriceTier)
@@ -93,7 +93,7 @@ export default function FormPriceTier(guildId) {
             selectedItem: tmp4,
             hasIcons: false
           };
-          const tmp3 = asyncRequire(8554, dependencyMap.paths);
+          const tmp3 = asyncRequire(8549, dependencyMap.paths);
           intl = intl4.intl;
           openLazy(tmp3, "GuildRoleSubscriptionPriceTierSelect", obj);
           tmp4 = price;

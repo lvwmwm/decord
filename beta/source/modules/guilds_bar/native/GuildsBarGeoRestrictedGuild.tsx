@@ -1,7 +1,7 @@
 // Module ID: 16805
 // Function ID: 16806
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 16739, 21, 5092, 587, 16755, 558, 576, 16751, 1415, 6159, 5299, 1126, 8638, 16806, 16774, 6157, 2]
+// Dependencies: [19, 16739, 21, 5092, 587, 16755, 558, 576, 16751, 1415, 6159, 5299, 1126, 8633, 16806, 16774, 6157, 2]
 
 // Module 16805 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
@@ -11,7 +11,7 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
 import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16751 */;
 import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16755 */;

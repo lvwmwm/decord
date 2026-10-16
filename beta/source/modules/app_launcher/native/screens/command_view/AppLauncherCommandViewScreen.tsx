@@ -1,7 +1,7 @@
 // Module ID: 11841
 // Function ID: 11842
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5081, 9248, 2119, 1502, 1085, 1627, 21, 5092, 587, 11842, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10622, 5107, 6665, 11843, 7247, 5922, 11729, 1272, 11705, 11845, 1998, 9247, 11669, 10860, 1497, 10375, 10023, 11846, 10024, 7769, 1894, 7758, 11847, 10623, 6307, 5088, 11848, 11849, 11900, 1200, 38, 11816, 9808, 7243, 9253, 9809, 11901, 11902, 11801, 11802, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 9243, 2119, 1502, 1085, 1627, 21, 5092, 587, 11842, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10622, 5107, 6665, 11843, 7242, 5922, 11729, 1272, 11705, 11845, 1998, 9242, 11669, 10860, 1497, 10375, 10018, 11846, 10019, 7764, 1894, 7753, 11847, 10623, 6307, 5088, 11848, 11849, 11900, 1200, 38, 11816, 9803, 7238, 9248, 9804, 11901, 11902, 11801, 11802, 2]
 
 // Module 11841 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
@@ -16,12 +16,12 @@ import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import BaseTextButton2 from "BaseTextButton" /* 5380 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10024 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10018 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10019 */;
 import AppLauncherContext from "AppLauncherContext" /* 10622 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
 import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11669 */;
@@ -39,7 +39,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Constants from "Constants" /* 1085 */;
@@ -755,7 +755,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7758).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7753).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };

@@ -1,7 +1,7 @@
 // Module ID: 17407
 // Function ID: 17408
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 9313, 21, 5092, 587, 558, 576, 5421, 17408, 6157, 8159, 17410, 17386, 2]
+// Dependencies: [109, 19, 17, 9308, 21, 5092, 587, 558, 576, 5421, 17408, 6157, 8154, 17410, 17386, 2]
 
 // Module 17407 (GuildChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import SearchListRow2 from "SearchListRow" /* 17386 */;
 import renderChannelItem from "renderChannelItem" /* 17410 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

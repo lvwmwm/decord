@@ -1,9 +1,9 @@
-// Module ID: 9396
-// Function ID: 9397
+// Module ID: 9391
+// Function ID: 9392
 // Name: PremiumFeaturesCard
-// Dependencies: [32, 19, 17, 5081, 4774, 4775, 1085, 1392, 1096, 21, 5092, 587, 5906, 558, 576, 9397, 4769, 6940, 5088, 1126, 8079, 3280, 1398, 38, 7170, 8090, 8088, 7109, 7169, 9403, 6852, 504, 9405, 1628, 7126, 9414, 7161, 9035, 9416, 9417, 9419, 9424, 5379, 9036, 7142, 2]
+// Dependencies: [32, 19, 17, 5081, 4774, 4775, 1085, 1392, 1096, 21, 5092, 587, 5906, 558, 576, 9392, 4769, 6940, 5088, 1126, 8074, 3280, 1398, 38, 7165, 8085, 8083, 7109, 7164, 9398, 6852, 504, 9400, 1628, 7126, 9409, 7161, 9030, 9411, 9412, 9414, 9419, 5379, 9031, 7142, 2]
 
-// Module 9396 (PremiumFeaturesCard)
+// Module 9391 (PremiumFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -15,13 +15,13 @@ import Text_Text from "Text/Text" /* 5088 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
 import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7109 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7142 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8079 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9035 */;
-import usePremiumPlanPrice from "usePremiumPlanPrice" /* 9397 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9405 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9416 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9419 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9424 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8074 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9030 */;
+import usePremiumPlanPrice from "usePremiumPlanPrice" /* 9392 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9400 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9411 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9414 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9419 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -719,15 +719,15 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   const tmp8 = closure_23();
   const tmp10 = _modDef38;
   tmp10(set.has(premiumType), "only Tier 0 and Tier 2 are supported");
-  const tmpResult = tmp(7170);
+  const tmpResult = tmp(7165);
   const premiumTrialOffer = tmpResult.usePremiumTrialOffer();
-  const tmpResult13 = tmp(8090);
+  const tmpResult13 = tmp(8085);
   const premiumDiscountOffer = tmpResult13.usePremiumDiscountOffer();
-  const tmpResult14 = tmp(8088);
+  const tmpResult14 = tmp(8083);
   const activeDiscountInfo = tmpResult14.useActiveDiscountInfo();
   const tmp15 = useFractionalPremiumInfoDefault();
   let subscriptionTrial;
-  const tmpResult15 = tmp(7169);
+  const tmpResult15 = tmp(7164);
   const premiumTrialOfferPremiumType = tmpResult15.usePremiumTrialOfferPremiumType();
   if (premiumTrialOffer != null) {
     subscriptionTrial = premiumTrialOffer.subscriptionTrial;
@@ -747,8 +747,8 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   const result = formatIntervalDuration(obj2);
   if (premiumType === premiumTrialOfferPremiumType) {
     let TIER_2;
-    const getTrialCtaOverride = tmp(9403).getTrialCtaOverride;
-    tmp(9403);
+    const getTrialCtaOverride = tmp(9398).getTrialCtaOverride;
+    tmp(9398);
     if (premiumType === PremiumTypes.TIER_0) {
       TIER_2 = closure_13.TIER_0;
     } else {
@@ -887,7 +887,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
     } else {
       tmp56 = cResult[13];
     }
-    const tmpResult22 = tmp(9414);
+    const tmpResult22 = tmp(9409);
     const discountedPriceString = tmpResult22.useDiscountedPremiumProductInfo(premiumDiscountOffer, tmp56).discountedPriceString;
     if (cResult[14] !== premiumType) {
       function getCTA() {
@@ -1021,7 +1021,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
                                                 };
                                                 if (null != premiumDiscountOffer) {
                                                   const obj8 = { style: tmp8.buttonIcon, color: null, size: "sm" };
-                                                  const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+                                                  const NitroWheelIcon = tmp(9031).NitroWheelIcon;
                                                   class K {
                                                     constructor() {
                                                       const items = [closure_7.getPremiumTypeSubscription(), closure_7.hasFetchedSubscriptions()];
@@ -1251,15 +1251,15 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   const tmp3 = closure_23();
   const tmp6 = _modDef38;
   tmp6(set.has(premiumType), "only Tier 0 and Tier 2 are supported");
-  let obj = premiumType(7170);
+  let obj = premiumType(7165);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
-  const obj2 = premiumType(8090);
+  const obj2 = premiumType(8085);
   const premiumDiscountOffer = obj2.usePremiumDiscountOffer();
-  const obj3 = premiumType(8088);
+  const obj3 = premiumType(8083);
   const activeDiscountInfo = obj3.useActiveDiscountInfo();
   let subscriptionTrial;
   const tmp12 = useFractionalPremiumInfoDefault();
-  const obj4 = premiumType(7169);
+  const obj4 = premiumType(7164);
   const premiumTrialOfferPremiumType = obj4.usePremiumTrialOfferPremiumType();
   if (premiumTrialOffer != null) {
     subscriptionTrial = premiumTrialOffer.subscriptionTrial;
@@ -1280,8 +1280,8 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   const result = formatIntervalDuration(obj5);
   if (tmp44Result8) {
     let TIER_2;
-    const getTrialCtaOverride = premiumType(9403).getTrialCtaOverride;
-    premiumType(9403);
+    const getTrialCtaOverride = premiumType(9398).getTrialCtaOverride;
+    premiumType(9398);
     if (premiumType === PremiumTypes.TIER_0) {
       TIER_2 = closure_13.TIER_0;
     } else {
@@ -1356,7 +1356,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   });
   _modDef38(null != premiumBundleWithPredicate, "could not find a premium item");
   const items3 = [premiumBundleWithPredicate];
-  const tmp8Result15 = premiumType(9414);
+  const tmp8Result15 = premiumType(9409);
   const discountedPriceString = tmp8Result15.useDiscountedPremiumProductInfo(premiumDiscountOffer, items3).discountedPriceString;
   let tmp39 = tmp31;
   if (tmp39) {
@@ -1382,10 +1382,10 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
   const obj9 = { style: tmp3.card, children: items5 };
   const tmp4Result = PremiumFeaturesBackgroundDefault;
   if (flag3) {
-    tmp44Result = tmp44(tmp4(9416), { width: 185, height: 20, alwaysWhite: true });
+    tmp44Result = tmp44(tmp4(9411), { width: 185, height: 20, alwaysWhite: true });
   } else {
     const obj11 = { premiumType, style: tmp3.logo };
-    tmp44Result = tmp44(tmp4(9417), obj11);
+    tmp44Result = tmp44(tmp4(9412), obj11);
   }
   items5 = [closure_20(analyticsLocations, obj10), closure_20(PremiumFeaturesWumpusDefault, { premiumType }), , , ];
   if (flag3) {
@@ -1442,7 +1442,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeat
       };
       if (null != premiumDiscountOffer) {
         const obj19 = { style: tmp3.buttonIcon, color: nativeDefault.colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT, size: "sm" };
-        const NitroWheelIcon = tmp8(9036).NitroWheelIcon;
+        const NitroWheelIcon = tmp8(9031).NitroWheelIcon;
         tmp44Result6 = closure_20(NitroWheelIcon, obj19);
       }
       str = undefined;

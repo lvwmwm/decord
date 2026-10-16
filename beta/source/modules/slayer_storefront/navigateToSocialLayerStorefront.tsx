@@ -1,7 +1,7 @@
 // Module ID: 13716
 // Function ID: 13717
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 2087, 6933, 1085, 10157, 6931, 1112, 7052, 8497, 2]
+// Dependencies: [5, 2087, 6933, 1085, 10157, 6931, 1112, 7052, 8492, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
 // Module 13716 (navigateToSocialLayerStorefront)

@@ -1,14 +1,14 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9409
+// Function ID: 9410
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1096, 558, 576, 9415, 7127, 6940, 2]
+// Dependencies: [19, 1096, 558, 576, 9410, 7127, 6940, 2]
 
-// Module 9414 (useDiscountedPremiumProductInfo)
+// Module 9409 (useDiscountedPremiumProductInfo)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
 import ProductIds from "ProductIds" /* 7127 */;
-import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9415 */;
+import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9410 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

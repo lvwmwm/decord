@@ -1,9 +1,9 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7174
+// Function ID: 7175
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 5757, 6118, 7180, 7181, 7366, 7368, 7313, 6030, 5897, 502, 2065, 7369, 2087, 5073, 5432, 4750, 5108, 6035, 7375, 1390, 1085, 7377, 7031, 5085, 17, 3, 5072, 7378, 5077, 7381, 7382, 5107, 7387, 5977, 7407, 1265, 5074, 7423, 7426, 5633, 7428, 1126, 2128, 7760, 584, 9812, 5745, 9807, 8243, 1295, 5434, 6924, 9, 7210, 5752, 11, 2091, 2111, 7199, 5755, 13619, 9702, 8694, 13620, 4769, 7372, 1403, 6970, 7898, 13621, 7754, 13625, 9267, 12875, 12881, 6119, 1102, 7882, 1998, 7902, 4969, 10097, 5299, 2]
+// Dependencies: [32, 5, 5757, 6118, 7175, 7176, 7361, 7363, 7308, 6030, 5897, 502, 2065, 7364, 2087, 5073, 5432, 4750, 5108, 6035, 7370, 1390, 1085, 7372, 7031, 5085, 17, 3, 5072, 7373, 5077, 7376, 7377, 5107, 7382, 5977, 7402, 1265, 5074, 7418, 7421, 5633, 7423, 1126, 2128, 7755, 584, 9807, 5745, 9802, 8238, 1295, 5434, 6924, 9, 7205, 5752, 11, 2091, 2111, 7194, 5755, 13619, 9697, 8689, 13620, 4769, 7367, 1403, 6970, 7893, 13621, 7749, 13625, 9262, 12875, 12881, 6119, 1102, 7877, 1998, 7897, 4969, 10097, 5299, 2]
 
-// Module 7179 (MessageActionCreators)
+// Module 7174 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -16,33 +16,33 @@ import InviteCodeUtils from "InviteCodeUtils" /* 5074 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import merged5 from "merged5" /* 5745 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7031 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7210 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7313 */;
-import SlowmodeStore from "SlowmodeStore" /* 7375 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7377 */;
-import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7382 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7426 */;
-import UploadUtils from "UploadUtils" /* 7760 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8243 */;
-import getInviteURLDefault from "getInviteURL" /* 8694 */;
-import createNonce from "createNonce" /* 9807 */;
-import createMessage from "createMessage" /* 9812 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7205 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7308 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7372 */;
+import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7377 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7418 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7421 */;
+import UploadUtils from "UploadUtils" /* 7755 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8238 */;
+import getInviteURLDefault from "getInviteURL" /* 8689 */;
+import createNonce from "createNonce" /* 9802 */;
+import createMessage from "createMessage" /* 9807 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10097 */;
 import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6118 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7180 */;
-import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7181 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7366 */;
-import PendingReplyStore from "PendingReplyStore" /* 7368 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7175 */;
+import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7176 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7361 */;
+import PendingReplyStore from "PendingReplyStore" /* 7363 */;
 import StickersStore from "StickersStore" /* 6030 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import EditMessageStore from "EditMessageStore" /* 7369 */;
+import EditMessageStore from "EditMessageStore" /* 7364 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import InviteStore from "InviteStore" /* 5073 */;
 import MessageStore from "MessageStore" /* 5432 */;
@@ -454,7 +454,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f95832 = () => {
+    const f95831 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -478,8 +478,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f95832));
-      withResult1.otherwise(f95832);
+      ({ message, messageName } = withResult1.otherwise(f95831));
+      withResult1.otherwise(f95831);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);

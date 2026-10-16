@@ -1,14 +1,14 @@
-// Module ID: 8532
-// Function ID: 8533
+// Module ID: 8527
+// Function ID: 8528
 // Name: useCanInviteForGuildEvent
-// Dependencies: [2070, 2065, 4748, 2087, 4750, 6054, 2071, 1085, 4755, 8533, 558, 576, 504, 2]
+// Dependencies: [2070, 2065, 4748, 2087, 4750, 6054, 2071, 1085, 4755, 8528, 558, 576, 504, 2]
 
-// Module 8532 (useCanInviteForGuildEvent)
+// Module 8527 (useCanInviteForGuildEvent)
 import Constants from "Constants" /* 1085 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import canViewInviteModal from "canViewInviteModal" /* 8533 */;
+import canViewInviteModal from "canViewInviteModal" /* 8528 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;

@@ -1,7 +1,7 @@
 // Module ID: 17226
 // Function ID: 17227
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 17196, 587, 558, 576, 17227, 17176, 17273, 1126, 3849, 17194, 17274, 5088, 17060, 7572, 17275, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 17196, 587, 558, 576, 17227, 17176, 17273, 1126, 3849, 17194, 17274, 5088, 17060, 7567, 17275, 2]
 // Exports: stretchOf
 
 // Module 17226 (ConjureActivityBox)
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const WarningIcon2 = tmp2(7572);
+const WarningIcon2 = tmp2(7567);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;

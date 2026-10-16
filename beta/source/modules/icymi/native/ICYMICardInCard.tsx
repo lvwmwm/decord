@@ -1,7 +1,7 @@
 // Module ID: 16960
 // Function ID: 16961
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2065, 2125, 2087, 1085, 21, 16914, 587, 558, 576, 9017, 6159, 1200, 5386, 504, 5628, 8854, 5409, 5088, 5421, 16961, 1126, 8208, 16954, 6185, 6059, 9242, 2]
+// Dependencies: [19, 17, 2065, 2125, 2087, 1085, 21, 16914, 587, 558, 576, 9012, 6159, 1200, 5386, 504, 5628, 8849, 5409, 5088, 5421, 16961, 1126, 8203, 16954, 6185, 6059, 9237, 2]
 // Exports: default
 
 // Module 16960 (ICYMICardInCard)
@@ -13,8 +13,8 @@ import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import GuildIcon from "GuildIcon" /* 6159 */;
-import TextIcon2 from "TextIcon" /* 8208 */;
-import ClipView from "ClipView" /* 9017 */;
+import TextIcon2 from "TextIcon" /* 8203 */;
+import ClipView from "ClipView" /* 9012 */;
 import openDetailsActionSheet from "openDetailsActionSheet" /* 16954 */;
 import getIconForChannel from "getIconForChannel" /* 16961 */;
 import react from "react" /* 19 */;

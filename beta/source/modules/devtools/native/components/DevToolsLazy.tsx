@@ -1,7 +1,7 @@
 // Module ID: 14830
 // Function ID: 14831
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7409, 7408, 21, 5373, 14831, 2000, 558, 576, 504, 1382, 16344, 2]
+// Dependencies: [19, 17, 7404, 7403, 21, 5373, 14831, 2000, 558, 576, 504, 1382, 16344, 2]
 
 // Module 14830 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import KeyCommands from "KeyCommands" /* 5373 */;
 import react from "react" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7409 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7408 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7404 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

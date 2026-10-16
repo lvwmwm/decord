@@ -1,7 +1,7 @@
 // Module ID: 17575
 // Function ID: 17576
 // Name: VoiceChannelAppSetting
-// Dependencies: [19, 21, 558, 576, 17576, 17577, 1126, 3947, 6265, 6180, 8612, 5056, 17579, 2000, 17579, 2]
+// Dependencies: [19, 21, 558, 576, 17576, 17577, 1126, 3947, 6265, 6180, 8607, 5056, 17579, 2000, 17579, 2]
 
 // Module 17575 (VoiceChannelAppSetting)
 import Fragment from "Fragment" /* 21 */;

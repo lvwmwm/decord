@@ -1,7 +1,7 @@
 // Module ID: 12618
 // Function ID: 12619
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 5081, 4760, 1390, 21, 5092, 587, 558, 576, 5088, 5421, 1106, 8199, 8201, 8159, 504, 2]
+// Dependencies: [19, 17, 5081, 4760, 1390, 21, 5092, 587, 558, 576, 5088, 5421, 1106, 8194, 8196, 8154, 504, 2]
 
 // Module 12618 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -302,11 +302,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
       if (null != parentChannel) {
         let ThreadIcon;
         if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-          ThreadIcon = tmp(8199).ChatIcon;
+          ThreadIcon = tmp(8194).ChatIcon;
         }
         simpleChannelIconComponent = ThreadIcon;
       }
-      ThreadIcon = tmp(8201).ThreadIcon;
+      ThreadIcon = tmp(8196).ThreadIcon;
     } else {
       const tmpResult = utils_ChannelUtils;
       simpleChannelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
@@ -343,11 +343,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8199).ChatIcon;
+            ThreadIcon = tmp3(8194).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8201).ThreadIcon;
+        ThreadIcon = tmp3(8196).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);

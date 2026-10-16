@@ -1,7 +1,7 @@
 // Module ID: 18352
 // Function ID: 18353
 // Name: AuditLog
-// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6858, 5088, 1382, 4827, 18340, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10015, 6820, 6182, 18344, 6185, 5056, 8304, 14852, 504, 2]
+// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6858, 5088, 1382, 4827, 18340, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10010, 6820, 6182, 18344, 6185, 5056, 8299, 14852, 504, 2]
 
 // Module 18352 (AuditLog)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import PlatformsDefault from "Platforms" /* 5763 */;
 import EmojiDefault from "Emoji" /* 6820 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import AppliedForumTag from "AppliedForumTag" /* 10015 */;
+import AppliedForumTag from "AppliedForumTag" /* 10010 */;
 import AuditLogUtilsAll from "AuditLogUtils" /* 18340 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
@@ -56,7 +56,7 @@ let size1;
 let tmp;
 let unpackModuleId;
 const Text_Text = tmp(5088);
-const showUserProfileActionSheetDefault = tmp(8304);
+const showUserProfileActionSheetDefault = tmp(8299);
 const View = react_native.View;
 ({ AuditLogTargetTypes: c10, AuditLogActionTypes: unpackModuleId, AuditLogActions: closure_12, Fonts, AuditLogChangeKeys: map1 } = Constants);
 let Fragment = Fragment_mod;

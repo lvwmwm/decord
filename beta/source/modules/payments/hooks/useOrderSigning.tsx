@@ -1,10 +1,10 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9066
+// Function ID: 9067
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5071, 4791, 4784, 6945, 9072, 1126, 9074, 2]
+// Dependencies: [5, 32, 19, 5071, 4791, 4784, 6945, 9067, 1126, 9069, 2]
 // Exports: useOrderSigning
 
-// Module 9071 (useOrderSigning)
+// Module 9066 (useOrderSigning)
 import BillingUtils from "BillingUtils" /* 4784 */;
 import BillingErrorDefault from "BillingError" /* 4791 */;
 import PaymentConstants from "PaymentConstants" /* 5071 */;

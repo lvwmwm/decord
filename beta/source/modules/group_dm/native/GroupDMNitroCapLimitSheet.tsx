@@ -1,14 +1,14 @@
 // Module ID: 10754
 // Function ID: 10755
 // Name: GroupDMNitroCapLimitSheet
-// Dependencies: [19, 17, 5081, 10751, 1085, 21, 5092, 587, 558, 576, 504, 10749, 1265, 5056, 10755, 9519, 10756, 1126, 5088, 9036, 5379, 6840, 2]
+// Dependencies: [19, 17, 5081, 10751, 1085, 21, 5092, 587, 558, 576, 504, 10749, 1265, 5056, 10755, 9514, 10756, 1126, 5088, 9031, 5379, 6840, 2]
 
 // Module 10754 (GroupDMNitroCapLimitSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9519 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import PremiumMarketingUtil from "PremiumMarketingUtil" /* 10755 */;
 import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 10756 */;
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   string = intl3.string;
   tmp2Result = _location(10749);
   obj12 = { style: tmp.nitroWheelIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: "custom" };
-  NitroWheelIcon = tmp2(9036).NitroWheelIcon;
+  NitroWheelIcon = tmp2(9031).NitroWheelIcon;
   tmp16 = null;
   if (!loading) {
     tmp16 = callback1;

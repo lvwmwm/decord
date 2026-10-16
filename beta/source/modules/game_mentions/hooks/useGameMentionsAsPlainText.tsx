@@ -1,7 +1,7 @@
 // Module ID: 10239
 // Function ID: 10240
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2020, 1390, 5404, 558, 576, 7009, 2031, 8238, 1126, 504, 2]
+// Dependencies: [19, 2020, 1390, 5404, 558, 576, 7009, 2031, 8233, 1126, 504, 2]
 
 // Module 10239 (useGameMentionsAsPlainText)
 import StringUtils from "StringUtils" /* 2031 */;

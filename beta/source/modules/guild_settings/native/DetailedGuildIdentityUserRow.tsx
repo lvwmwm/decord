@@ -1,7 +1,7 @@
 // Module ID: 10300
 // Function ID: 10301
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 5409, 4962, 8766, 1200, 504, 8580, 6180, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 5409, 4962, 8761, 1200, 504, 8575, 6180, 2]
 
 // Module 10300 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import DiscordTagDefault from "DiscordTag" /* 8766 */;
+import DiscordTagDefault from "DiscordTag" /* 8761 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -102,7 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const tmp17 = metroRequire;
           const tmp18 = View;
           if (tmp8) {
-            const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "a" };
+            const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "Array" };
             const Avatar = tmp(1200).Avatar;
             tmp19 = hasOwnProperty(Avatar, obj6);
           }
@@ -165,7 +165,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }
@@ -261,7 +261,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                 }
               }
               const obj2 = { accessibilityLabel, disabled, leading: tmp19, label: tmp22, onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp28 = closure_5(userId(8580).FormRow, obj2);
+              const tmp28 = closure_5(userId(8575).FormRow, obj2);
               cResult[11] = accessibilityLabel;
               cResult[12] = accessibilityRole;
               cResult[13] = accessibilityState;
@@ -407,7 +407,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     let tmp4Result;
     if (deprecatedFormRow) {
       const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-      const FormRow = tmp(8580).FormRow;
+      const FormRow = tmp(8575).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar2 = tmp(1200).Avatar;

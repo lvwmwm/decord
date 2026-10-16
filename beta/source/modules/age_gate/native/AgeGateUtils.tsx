@@ -1,10 +1,10 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9456
+// Function ID: 9457
 // Name: age_gate/AgeGateUtils
 // Dependencies: [2087, 4750, 1390, 1085, 1382, 6917, 2]
 // Exports: shouldNSFWGateGuild
 
-// Module 9461 (age_gate/AgeGateUtils)
+// Module 9456 (age_gate/AgeGateUtils)
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

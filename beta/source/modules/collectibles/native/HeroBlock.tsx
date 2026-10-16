@@ -1,7 +1,7 @@
 // Module ID: 16216
 // Function ID: 16217
 // Name: HeroBlock
-// Dependencies: [19, 17, 7264, 1087, 1085, 21, 8968, 5092, 587, 558, 576, 9087, 16217, 1503, 8971, 504, 9166, 5031, 16218, 4818, 4967, 16219, 15351, 6852, 6879, 16229, 1265, 9168, 5977, 4969, 16231, 16232, 5391, 6157, 5088, 5379, 1126, 6185, 6906, 6846, 16233, 8625, 16236, 2]
+// Dependencies: [19, 17, 7259, 1087, 1085, 21, 8963, 5092, 587, 558, 576, 9082, 16217, 1503, 8966, 504, 9161, 5031, 16218, 4818, 4967, 16219, 15351, 6852, 6879, 16229, 1265, 9163, 5977, 4969, 16231, 16232, 5391, 6157, 5088, 5379, 1126, 6185, 6906, 6846, 16233, 8620, 16236, 2]
 
 // Module 16216 (HeroBlock)
 import react_native from "react-native" /* 17 */;
@@ -9,11 +9,11 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8968 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8971 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9087 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8963 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8966 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9082 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesCategoryStore_mod from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesCategoryStore_mod from "CollectiblesCategoryStore" /* 7259 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -330,7 +330,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const handleDismissCoachmarkOnScroll = obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
   let obj2 = heroBlock(1503);
   dependencyMap = obj2.useNavigation();
-  let obj3 = heroBlock(8971);
+  let obj3 = heroBlock(8966);
   react = obj3.useCollectiblesAnalyticsContext();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (heroBannerUrl == null) {
@@ -341,7 +341,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const items = [closure_5];
   stateFromStores = tmpResult.useStateFromStores(items, () => CollectiblesCategoryStore.getCategory(heroBlock.categorySkuId));
   let tmp4 = null != stateFromStores && stateFromStores.isOrbsExclusive;
-  const tmpResult9 = tmp(9166);
+  const tmpResult9 = tmp(9161);
   let isEligibleForQuests = tmpResult9.getIsEligibleForQuests();
   const tmp7 = preferVCPrice(5031)();
   const tmpResult10 = tmp(16218);
@@ -536,7 +536,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
           onScroll: handleDismissCoachmarkOnScroll,
           renderItem: tmp18,
           decelerationRate: "fast",
-          snapToInterval: tmp(8968).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(587).space.PX_12,
+          snapToInterval: tmp(8963).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(587).space.PX_12,
           showsHorizontalScrollIndicator: false,
           ListHeaderComponent() {
                   const obj = { style: { width: preferVCPrice(navigation[8]).space.PX_16 } };
@@ -554,7 +554,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
                   return closure_1_10(stateFromStores, obj);
                 }
         };
-        const FlashList = tmp(8625).FlashList;
+        const FlashList = tmp(8620).FlashList;
         intl6 = tmp(1126).intl;
         obj35 = { category: stateFromStores.name };
         tmp22Result10 = tmp22(FlashList, obj34);

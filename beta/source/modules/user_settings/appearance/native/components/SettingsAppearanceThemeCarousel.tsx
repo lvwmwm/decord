@@ -1,7 +1,7 @@
 // Module ID: 15566
 // Function ID: 15567
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15567, 1085, 21, 4850, 1200, 5092, 587, 558, 576, 5362, 12, 5057, 1254, 1126, 15568, 5093, 5096, 9505, 5088, 1628, 10116, 15571, 2]
+// Dependencies: [19, 17, 15567, 1085, 21, 4850, 1200, 5092, 587, 558, 576, 5362, 12, 5057, 1254, 1126, 15568, 5093, 5096, 9500, 5088, 1628, 10116, 15571, 2]
 
 // Module 15566 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;

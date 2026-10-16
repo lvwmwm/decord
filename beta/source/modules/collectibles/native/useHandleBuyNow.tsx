@@ -1,7 +1,7 @@
 // Module ID: 13466
 // Function ID: 13467
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1085, 3, 12711, 7263, 5056, 12772, 1628, 7034, 4784, 4809, 1126, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 12711, 7258, 5056, 12772, 1628, 7034, 4784, 4809, 1126, 2]
 // Exports: default, useHandleBuyNow
 
 // Module 13466 (useHandleBuyNow)

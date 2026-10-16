@@ -1,7 +1,7 @@
 // Module ID: 15206
 // Function ID: 15207
 // Name: FamilyCenterModalAccept
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5934, 4808, 1126, 11532, 15203, 5039, 2568, 5088, 15171, 11534, 7516, 5379, 11541, 5958, 7515, 6201, 10603, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5934, 4808, 1126, 11532, 15203, 5039, 2568, 5088, 15171, 11534, 7511, 5379, 11541, 5958, 7510, 6201, 10603, 2]
 
 // Module 15206 (FamilyCenterModalAccept)
 import react_native from "react-native" /* 17 */;
@@ -212,7 +212,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                   }
                   const obj9 = { children: items1 };
                   items1 = [tmp40, tmp53];
-                  const tmp59 = closure_6(tmp(7515).ModalScreen, obj9);
+                  const tmp59 = closure_6(tmp(7510).ModalScreen, obj9);
                   cResult[35] = tmp40;
                   cResult[36] = tmp53;
                   cResult[37] = tmp59;
@@ -227,7 +227,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
               }
               const obj11 = { children: items2 };
               items2 = [tmp26, tmp30, tmp37];
-              const tmp42 = closure_6(tmp(7516).ModalContent, obj11);
+              const tmp42 = closure_6(tmp(7511).ModalContent, obj11);
               cResult[25] = tmp26;
               cResult[26] = tmp37;
               cResult[27] = tmp42;
@@ -300,10 +300,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     acceptLinkRequest(otherUser.id);
   }, items);
   const obj2 = { children: items3 };
-  const ModalScreen = otherUser(7515).ModalScreen;
+  const ModalScreen = otherUser(7510).ModalScreen;
   const obj3 = { children: items2 };
   const obj4 = { style: tmp.header, children: items1 };
-  const ModalContent = otherUser(7516).ModalContent;
+  const ModalContent = otherUser(7511).ModalContent;
   const obj5 = { otherUser, iconSrc: acceptLinkRequest(5039), iconStyles: tmp.icon };
   const tmp6 = acceptLinkRequest(15203);
   items1 = [closure_5(tmp6, obj5), , ];

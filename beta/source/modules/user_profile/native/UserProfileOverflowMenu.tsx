@@ -1,7 +1,7 @@
 // Module ID: 13087
 // Function ID: 13088
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 6036, 2065, 4760, 2116, 6905, 1085, 5115, 10415, 21, 504, 13088, 13094, 13095, 8315, 6852, 6879, 8311, 8341, 8342, 13096, 13097, 13098, 7027, 6885, 8304, 1126, 7015, 5056, 5934, 13104, 2000, 7018, 10417, 1273, 7026, 10416, 13105, 13105, 7722, 1382, 12363, 1265, 7017, 2041, 6886, 4962, 4808, 2029, 8611, 9247, 11820, 6892, 13106, 4850, 9363, 13102, 7574, 9242, 587, 13107, 2]
+// Dependencies: [32, 19, 17, 6036, 2065, 4760, 2116, 6905, 1085, 5115, 10415, 21, 504, 13088, 13094, 13095, 8310, 6852, 6879, 8306, 8336, 8337, 13096, 13097, 13098, 7027, 6885, 8299, 1126, 7015, 5056, 5934, 13104, 2000, 7018, 10417, 1273, 7026, 10416, 13105, 13105, 7717, 1382, 12363, 1265, 7017, 2041, 6886, 4962, 4808, 2029, 8606, 9242, 11820, 6892, 13106, 4850, 9358, 13102, 7569, 9237, 587, 13107, 2]
 // Exports: default
 
 // Module 13087 (UserProfileOverflowMenu)
@@ -19,8 +19,8 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7026 */;
-import ReportModals from "ReportModals" /* 7722 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import ReportModals from "ReportModals" /* 7717 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import getApplicationInstallURL2 from "getApplicationInstallURL" /* 11820 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12363 */;
 import GuildInviteUtils from "GuildInviteUtils" /* 13088 */;

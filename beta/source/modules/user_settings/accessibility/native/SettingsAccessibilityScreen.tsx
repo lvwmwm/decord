@@ -1,7 +1,7 @@
 // Module ID: 15624
 // Function ID: 15625
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5081, 2042, 7993, 1085, 21, 1126, 2128, 2958, 7094, 6726, 15625, 558, 576, 1503, 573, 10663, 14965, 2]
+// Dependencies: [19, 5081, 2042, 7988, 1085, 21, 1126, 2128, 2958, 7094, 6726, 15625, 558, 576, 1503, 573, 10663, 14965, 2]
 
 // Module 15624 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import useNavigation from "useNavigation" /* 1503 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef2958 from "module_2958" /* 2958 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15625 */;

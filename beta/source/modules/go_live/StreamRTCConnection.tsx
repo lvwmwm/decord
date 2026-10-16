@@ -1,9 +1,9 @@
-// Module ID: 7430
-// Function ID: 7431
+// Module ID: 7425
+// Function ID: 7426
 // Name: StreamRTCConnection
-// Dependencies: [2018, 7431, 5271, 502, 2065, 7432, 2012, 5282, 5110, 5211, 1085, 5117, 1102, 5119, 7433, 2060, 5900, 7434, 12, 584, 5226, 5137, 7435, 1265, 5086, 7441, 5121, 5272, 7442, 7443, 13617, 5233, 2]
+// Dependencies: [2018, 7426, 5271, 502, 2065, 7427, 2012, 5282, 5110, 5211, 1085, 5117, 1102, 5119, 7428, 2060, 5900, 7429, 12, 584, 5226, 5137, 7430, 1265, 5086, 7436, 5121, 5272, 7437, 7438, 13617, 5233, 2]
 
-// Module 7430 (StreamRTCConnection)
+// Module 7425 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
@@ -13,17 +13,17 @@ import Constants2 from "Constants" /* 5117 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
 import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5272 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7431 */;
-import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 7433 */;
-import VideoStreamStatsDefault from "VideoStreamStats" /* 7434 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7435 */;
-import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 7441 */;
-import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 7442 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7426 */;
+import SoundshareStatsAggregatorDefault from "SoundshareStatsAggregator" /* 7428 */;
+import VideoStreamStatsDefault from "VideoStreamStats" /* 7429 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7430 */;
+import getSoundshareAnalyticsContextDefault from "getSoundshareAnalyticsContext" /* 7436 */;
+import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 7437 */;
 import ClipsStore from "ClipsStore" /* 2018 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5271 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import HookErrorStore from "HookErrorStore" /* 7432 */;
+import HookErrorStore from "HookErrorStore" /* 7427 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import NetworkStore from "NetworkStore" /* 5282 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
@@ -741,7 +741,7 @@ class StreamRTCConnection extends RTCConnection {
         codecUsageStats = getCodecUsageStats("receiver", tmp3);
       }
       let obj = { stream_application_name: _default.getApplicationNames() };
-      _default = obj5(7443).default;
+      _default = obj5(7438).default;
       const tmp5 = obj5;
       if (self.isOwner) {
         let obj2 = { clips_enabled: tmp5Result.isClipsEnabled(), clips_buffer_length: tmp8.clipsLength };

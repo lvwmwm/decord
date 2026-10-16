@@ -1,7 +1,7 @@
 // Module ID: 12531
 // Function ID: 12532
 // Name: ReportToModChannelStore
-// Dependencies: [570, 4990, 1272, 7395, 558, 576, 2]
+// Dependencies: [570, 4990, 1272, 7390, 558, 576, 2]
 
 // Module 12531 (ReportToModChannelStore)
 import react from "react" /* 576 */;

@@ -1,22 +1,22 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 8758
+// Function ID: 8759
 // Name: InstantInviteRow
-// Dependencies: [19, 17, 2065, 8684, 2087, 8698, 1390, 8764, 7424, 21, 5092, 587, 558, 576, 504, 5421, 8685, 8765, 6185, 1200, 8766, 4962, 1126, 1415, 2031, 5088, 8769, 6180, 2]
+// Dependencies: [19, 17, 2065, 8679, 2087, 8693, 1390, 8759, 7419, 21, 5092, 587, 558, 576, 504, 5421, 8680, 8760, 6185, 1200, 8761, 4962, 1126, 1415, 2031, 5088, 8764, 6180, 2]
 
-// Module 8763 (InstantInviteRow)
+// Module 8758 (InstantInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7424 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8685 */;
-import InviteQueue from "InviteQueue" /* 8765 */;
+import Constants from "Constants" /* 7419 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8680 */;
+import InviteQueue from "InviteQueue" /* 8760 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8684 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8679 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8698 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8693 */;
 import UserStore from "UserStore" /* 1390 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8764 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8759 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

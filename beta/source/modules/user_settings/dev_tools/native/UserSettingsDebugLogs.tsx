@@ -1,7 +1,7 @@
 // Module ID: 15866
 // Function ID: 15867
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 1631, 4809, 510, 7, 5088, 1126, 15867, 5056, 6739, 15280, 15868, 8625, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 1631, 4809, 510, 7, 5088, 1126, 15867, 5056, 6739, 15280, 15868, 8620, 2]
 
 // Module 15866 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;

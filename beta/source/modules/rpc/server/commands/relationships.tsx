@@ -1,12 +1,12 @@
 // Module ID: 14755
 // Function ID: 14756
 // Name: relationships
-// Dependencies: [32, 4760, 1390, 5639, 1085, 14736, 8458, 1097, 10936, 10945, 2]
+// Dependencies: [32, 4760, 1390, 5639, 1085, 14736, 8453, 1097, 10936, 10945, 2]
 
 // Module 14755 (relationships)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import Constants2 from "Constants" /* 5639 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

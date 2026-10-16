@@ -1,7 +1,7 @@
 // Module ID: 16647
 // Function ID: 16648
 // Name: HubSidebar
-// Dependencies: [19, 17, 4748, 2116, 1085, 11760, 21, 5092, 587, 558, 576, 12087, 1200, 504, 16648, 16649, 1126, 5103, 15899, 10605, 12006, 5032, 8683, 2]
+// Dependencies: [19, 17, 4748, 2116, 1085, 11760, 21, 5092, 587, 558, 576, 12087, 1200, 504, 16648, 16649, 1126, 5103, 15899, 10605, 12006, 5032, 8678, 2]
 
 // Module 16647 (HubSidebar)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12006 */;
 import BaseChannelItem from "BaseChannelItem" /* 12087 */;

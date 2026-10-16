@@ -1,17 +1,17 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8286
+// Function ID: 8287
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 8285, 7321, 2125, 558, 576, 504, 4969, 1126, 2]
+// Dependencies: [19, 8280, 7316, 2125, 558, 576, 504, 4969, 1126, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner
 
-// Module 8291 (ProfileCustomizationUtils)
+// Module 8286 (ProfileCustomizationUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import shared from "shared" /* 4969 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

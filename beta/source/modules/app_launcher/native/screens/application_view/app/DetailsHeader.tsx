@@ -1,9 +1,9 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9241
+// Function ID: 9242
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 9247, 10615, 8327, 5922, 5093, 5096, 6161, 5088, 1126, 6243, 5391, 1105, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 9242, 10615, 8322, 5922, 5093, 5096, 6161, 5088, 1126, 6243, 5391, 1105, 2]
 
-// Module 9246 (DetailsHeader)
+// Module 9241 (DetailsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
@@ -132,7 +132,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ application, viewContainerStyle, mainContainerStyle, hideName } = arg0);
   const tmp4 = ref2();
   if (cResult[0] !== application) {
-    const tmpResult = tmp(9247);
+    const tmpResult = tmp(9242);
     const isPartnerApplicationResult = tmpResult.isPartnerApplication(application);
     cResult[0] = application;
     cResult[1] = isPartnerApplicationResult;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ containerStyle, containerHeight } = closure_15());
   const tmp13 = closure_15();
   if (cResult[2] !== application) {
-    const tmpResult5 = tmp(9247);
+    const tmpResult5 = tmp(9242);
     const sectionName = tmpResult5.getSectionName(application);
     cResult[2] = application;
     cResult[3] = sectionName;
@@ -160,7 +160,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp14 = cResult[3];
   }
   if (cResult[4] !== application) {
-    const tmpResult6 = tmp(9247);
+    const tmpResult6 = tmp(9242);
     const str = tmpResult6.getSectionDescription(application);
     const tmp18 = null != str && str.trim().length > 0;
     cResult[4] = application;
@@ -199,7 +199,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     tmp27 = tmp28;
   }
-  const tmpResult8 = tmp(8327);
+  const tmpResult8 = tmp(8322);
   const isScreenLandscape = tmpResult8.useIsScreenLandscape();
   const tmp32 = first(5922)(isScreenLandscape);
   closure_17 = tmp32;
@@ -696,7 +696,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref();
-  let obj = ref(9247);
+  let obj = ref(9242);
   let obj2 = react;
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
@@ -709,9 +709,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let closure_5 = react.useRef(true);
   ({ containerHeight: c6, containerStyle } = first2());
   const tmp11 = first2();
-  const obj3 = ref(9247);
+  const obj3 = ref(9242);
   const sectionName = obj3.getSectionName(application);
-  const obj4 = ref(9247);
+  const obj4 = ref(9242);
   const str = obj4.getSectionDescription(application);
   let tmp27Result5 = null != str;
   if (tmp27Result5) {
@@ -739,7 +739,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return result;
   }, items);
-  const tmp2Result = ref(8327);
+  const tmp2Result = ref(8322);
   isScreenLandscape = tmp2Result.useIsScreenLandscape();
   const tmp23 = first(5922)(isScreenLandscape);
   closure_18 = tmp23;

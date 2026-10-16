@@ -1,7 +1,7 @@
 // Module ID: 16195
 // Function ID: 16196
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6852, 6879, 504, 10091, 8284, 8312, 7276, 15632, 15633, 8292, 1407, 1265, 14838, 2]
+// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6852, 6879, 504, 10091, 8279, 8307, 7271, 15632, 15633, 8287, 1407, 1265, 14838, 2]
 
 // Module 16195 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8292 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8287 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;

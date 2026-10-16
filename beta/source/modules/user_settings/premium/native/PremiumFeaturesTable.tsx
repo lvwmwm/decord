@@ -1,7 +1,7 @@
 // Module ID: 13766
 // Function ID: 13767
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1085, 1392, 21, 5092, 587, 5969, 558, 576, 5031, 4969, 1200, 13767, 13768, 5088, 1126, 5391, 9397, 4769, 13769, 13770, 13771, 13772, 6157, 13773, 13774, 13775, 2]
+// Dependencies: [32, 19, 17, 1085, 1392, 21, 5092, 587, 5969, 558, 576, 5031, 4969, 1200, 13767, 13768, 5088, 1126, 5391, 9392, 4769, 13769, 13770, 13771, 13772, 6157, 13773, 13774, 13775, 2]
 
 // Module 13766 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
@@ -640,8 +640,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   dependencyMap = tmp5;
   const tmp6 = closure_14();
   const tmp8 = str(5031)();
-  const tmp9 = str(9397)(closure_10.PREMIUM_MONTH_TIER_0);
-  const tmp10 = str(9397)(closure_10.PREMIUM_MONTH_TIER_2);
+  const tmp9 = str(9392)(closure_10.PREMIUM_MONTH_TIER_0);
+  const tmp10 = str(9392)(closure_10.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp9 != null) {
     priceString = tmp9.priceString;

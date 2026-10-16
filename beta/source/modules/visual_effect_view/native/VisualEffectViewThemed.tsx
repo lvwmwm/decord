@@ -1,9 +1,9 @@
-// Module ID: 8372
-// Function ID: 8373
+// Module ID: 8367
+// Function ID: 8368
 // Name: VisualEffectViewThemed
 // Dependencies: [109, 19, 21, 558, 576, 5031, 4969, 5365, 2]
 
-// Module 8372 (VisualEffectViewThemed)
+// Module 8367 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useThemeDefault from "useTheme" /* 5031 */;

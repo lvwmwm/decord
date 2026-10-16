@@ -1,7 +1,7 @@
 // Module ID: 16650
 // Function ID: 16651
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1085, 2072, 11760, 21, 5092, 587, 558, 576, 16651, 6117, 4942, 1112, 12087, 1126, 8217, 1200, 2]
+// Dependencies: [19, 1085, 2072, 11760, 21, 5092, 587, 558, 576, 16651, 6117, 4942, 1112, 12087, 1126, 8212, 1200, 2]
 
 // Module 16650 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
           }
           const tmp23 = jsx(tmp(12087).BaseChannelName, { name: tmp19, mode: tmp13 });
           const BaseChannelIcon = tmp(12087).BaseChannelIcon;
-          const tmp24 = <BaseChannelIcon mode={tmp13} IconComponent={tmp(8217).GroupIcon} />;
+          const tmp24 = <BaseChannelIcon mode={tmp13} IconComponent={tmp(8212).GroupIcon} />;
           cResult[15] = tmp13;
           cResult[16] = tmp24;
           cResult[17] = tmp23;
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMemberD
   ({ name: intl2.string(id(1126).t["9Oq93m"]), mode: tmp7 });
   const BaseChannelName = tmp2(12087).BaseChannelName;
   intl2 = tmp2(1126).intl;
-  ({ mode: tmp7, IconComponent: id(8217).GroupIcon });
+  ({ mode: tmp7, IconComponent: id(8212).GroupIcon });
   const BaseChannelIcon = tmp2(12087).BaseChannelIcon;
   let tmp8Result = null;
   if (num > 0) {

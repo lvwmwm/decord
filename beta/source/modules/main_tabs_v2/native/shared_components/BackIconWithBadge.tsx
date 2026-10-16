@@ -1,7 +1,7 @@
 // Module ID: 16864
 // Function ID: 16865
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6078, 21, 5092, 587, 558, 576, 504, 16855, 1200, 9017, 1383, 6205, 6208, 10259, 2]
+// Dependencies: [19, 17, 6078, 21, 5092, 587, 558, 576, 504, 16855, 1200, 9012, 1383, 6205, 6208, 10259, 2]
 
 // Module 16864 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1200 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6205 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
-import ClipView from "ClipView" /* 9017 */;
+import ClipView from "ClipView" /* 9012 */;
 import XLargeIcon from "XLargeIcon" /* 10259 */;
 import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16855 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp10;
-const ClipViewDefault = tmp10(9017);
+const ClipViewDefault = tmp10(9012);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: obj2 };
@@ -262,7 +262,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(9017);
+  const tmp5Result = tmp5(9012);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;

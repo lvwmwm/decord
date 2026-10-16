@@ -1,12 +1,12 @@
 // Module ID: 10246
 // Function ID: 10247
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1085, 21, 7427, 10247, 9212, 8234, 10248, 10242, 558, 576, 10250, 10241, 10244, 2]
+// Dependencies: [19, 1085, 21, 7422, 10247, 9207, 8229, 10248, 10242, 558, 576, 10250, 10241, 10244, 2]
 
 // Module 10246 (PresenceActivityStatus)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7427 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7422 */;
 import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10241 */;
 import ActivityStatusTextDefault from "ActivityStatusText" /* 10244 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10247 */;
@@ -27,7 +27,7 @@ function getActivityStatusIcon(activity) {
     const obj = conjurePresenceActivity;
     if (!obj.isConjurePresenceActivity(activity)) {
       if (activity.type === ActivityTypes.PLAYING) {
-        GameControllerIcon = tmp2(9212).GameControllerIcon;
+        GameControllerIcon = tmp2(9207).GameControllerIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
         GameControllerIcon = tmp2(10248).MusicIcon;
       } else {
@@ -35,7 +35,7 @@ function getActivityStatusIcon(activity) {
           if (activity.type !== ActivityTypes.STREAMING) {
             GameControllerIcon = null;
             if (activity.type === ActivityTypes.COMPETING) {
-              GameControllerIcon = tmp2(9212).GameControllerIcon;
+              GameControllerIcon = tmp2(9207).GameControllerIcon;
             }
           }
         }
@@ -45,9 +45,9 @@ function getActivityStatusIcon(activity) {
     return GameControllerIcon;
   }
   if (flag) {
-    AppsIcon = tmp5(9212).GameControllerIcon;
+    AppsIcon = tmp5(9207).GameControllerIcon;
   } else {
-    AppsIcon = tmp5(8234).AppsIcon;
+    AppsIcon = tmp5(8229).AppsIcon;
   }
   GameControllerIcon = AppsIcon;
 }

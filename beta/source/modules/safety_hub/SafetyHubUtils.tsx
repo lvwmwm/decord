@@ -1,17 +1,17 @@
-// Module ID: 7512
-// Function ID: 7513
+// Module ID: 7507
+// Function ID: 7508
 // Name: SafetyHubUtils
-// Dependencies: [502, 7513, 1085, 4702, 5419, 1126, 7514, 558, 576, 504, 2]
+// Dependencies: [502, 7508, 1085, 4702, 5419, 1126, 7509, 558, 576, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7512 (SafetyHubUtils)
+// Module 7507 (SafetyHubUtils)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import SafetyHubModels from "SafetyHubModels" /* 7514 */;
+import SafetyHubModels from "SafetyHubModels" /* 7509 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

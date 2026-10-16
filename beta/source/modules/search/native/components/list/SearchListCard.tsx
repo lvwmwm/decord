@@ -1,7 +1,7 @@
 // Module ID: 17420
 // Function ID: 17421
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 4962, 5088, 5421, 10280, 8216, 1126, 8159, 6182, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 4962, 5088, 5421, 10280, 8211, 1126, 8154, 6182, 2]
 
 // Module 17420 (SearchListCard)
 import react_native from "react-native" /* 17 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1200 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import ForumIcon from "ForumIcon" /* 8216 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import ForumIcon from "ForumIcon" /* 8211 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

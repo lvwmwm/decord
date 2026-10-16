@@ -1,7 +1,7 @@
 // Module ID: 16494
 // Function ID: 16495
 // Name: HappeningNow
-// Dependencies: [32, 109, 19, 17, 15589, 1085, 21, 6763, 5092, 587, 6335, 558, 576, 16495, 6646, 1265, 5396, 1504, 16496, 6852, 6879, 16503, 16504, 4850, 10373, 12, 1126, 8625, 16505, 16506, 16523, 16524, 16525, 16509, 16522, 16526, 16521, 16508, 1388, 2]
+// Dependencies: [32, 109, 19, 17, 15589, 1085, 21, 6763, 5092, 587, 6335, 558, 576, 16495, 6646, 1265, 5396, 1504, 16496, 6852, 6879, 16503, 16504, 4850, 10373, 12, 1126, 8620, 16505, 16506, 16523, 16524, 16525, 16509, 16522, 16526, 16521, 16508, 1388, 2]
 
 // Module 16494 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
@@ -814,8 +814,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             cResult[36] = tmp30;
             cResult[37] = tmp25;
             cResult[38] = tmp4.containerInner;
-            cResult[39] = jsx(tmp(8625).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
-            const tmp41 = jsx(tmp(8625).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
+            cResult[39] = jsx(tmp(8620).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
+            const tmp41 = jsx(tmp(8620).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: tmp34, contentContainerStyle: tmp4.containerInner, data: tmp26, renderItem: tmp30, onViewableItemsChanged: tmp33, keyExtractor, getItemType });
           }
         }
         class D {

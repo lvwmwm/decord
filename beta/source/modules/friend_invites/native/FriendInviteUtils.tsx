@@ -1,14 +1,14 @@
 // Module ID: 18037
 // Function ID: 18038
 // Name: FriendInviteUtils
-// Dependencies: [2065, 4760, 8497, 4809, 1126, 584, 10625, 2]
+// Dependencies: [2065, 4760, 8492, 4809, 1126, 584, 10625, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
 // Module 18037 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import size from "module_2" /* 2 */;

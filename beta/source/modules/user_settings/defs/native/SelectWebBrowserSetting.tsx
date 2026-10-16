@@ -1,7 +1,7 @@
 // Module ID: 15775
 // Function ID: 15776
 // Name: SelectWebBrowserSetting
-// Dependencies: [7993, 558, 5053, 576, 1126, 1105, 1382, 10663, 2]
+// Dependencies: [7988, 558, 5053, 576, 1126, 1105, 1382, 10663, 2]
 
 // Module 15775 (SelectWebBrowserSetting)
 import react from "react" /* 576 */;
@@ -9,7 +9,7 @@ import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import BrowserManager from "BrowserManager" /* 5053 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

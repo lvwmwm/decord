@@ -1,7 +1,7 @@
 // Module ID: 18279
 // Function ID: 18280
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 2059, 1085, 21, 5092, 587, 6891, 1126, 5930, 558, 576, 1631, 6207, 5372, 8306, 1273, 8972, 5088, 5379, 8674, 8665, 2]
+// Dependencies: [5, 32, 19, 17, 2059, 1085, 21, 5092, 587, 6891, 1126, 5930, 558, 576, 1631, 6207, 5372, 8301, 1273, 8967, 5088, 5379, 8669, 8660, 2]
 
 // Module 18279 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
@@ -9,9 +9,9 @@ import intl10 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6891 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8660 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

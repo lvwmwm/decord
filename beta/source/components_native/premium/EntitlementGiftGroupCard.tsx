@@ -1,7 +1,7 @@
 // Module ID: 13856
 // Function ID: 13857
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5440, 502, 10491, 4774, 6088, 1085, 1392, 21, 5092, 587, 4827, 10492, 5088, 1126, 5379, 6931, 9029, 1200, 6862, 10533, 6906, 13497, 13499, 13500, 13498, 13501, 13502, 13503, 13504, 12719, 13505, 13508, 13509, 13857, 504, 10503, 2]
+// Dependencies: [19, 17, 5440, 502, 10491, 4774, 6088, 1085, 1392, 21, 5092, 587, 4827, 10492, 5088, 1126, 5379, 6931, 9024, 1200, 6862, 10533, 6906, 13497, 13499, 13500, 13498, 13501, 13502, 13503, 13504, 12719, 13505, 13508, 13509, 13857, 504, 10503, 2]
 
 // Module 13856 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import GameIconDefault from "GameIcon" /* 6862 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9024 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10492 */;
 import SubscriptionUtils from "SubscriptionUtils" /* 10503 */;
 import _modDef12719 from "module_12719" /* 12719 */;

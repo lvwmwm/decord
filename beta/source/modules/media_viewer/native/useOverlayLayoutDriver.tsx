@@ -1,7 +1,7 @@
 // Module ID: 13057
 // Function ID: 13058
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 558, 576, 4850, 8420, 5093, 1200, 2]
+// Dependencies: [19, 558, 576, 4850, 8415, 5093, 1200, 2]
 
 // Module 13057 (useOverlayLayoutDriver)
 import native from "native" /* 1200 */;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlay
   const cResult = obj.c(6);
   let obj2 = sharedValue(4850);
   sharedValue = obj2.useSharedValue(0);
-  const obj3 = sharedValue(8420);
+  const obj3 = sharedValue(8415);
   const mediaViewerDimensions = obj3.useMediaViewerDimensions();
   ({ height, width } = mediaViewerDimensions);
   if (cResult[0] !== sharedValue) {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlay
   let sharedValue;
   let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(8420);
+  let obj2 = sharedValue(8415);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);

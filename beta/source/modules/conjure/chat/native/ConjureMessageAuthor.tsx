@@ -1,7 +1,7 @@
 // Module ID: 17198
 // Function ID: 17199
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 17194, 558, 576, 17199, 504, 17200, 5088, 6185, 1126, 4962, 17201, 3849, 1200, 8234, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 17194, 558, 576, 17199, 504, 17200, 5088, 6185, 1126, 4962, 17201, 3849, 1200, 8229, 2]
 
 // Module 17198 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const AppsIcon2 = tmp(8234);
+const AppsIcon2 = tmp(8229);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

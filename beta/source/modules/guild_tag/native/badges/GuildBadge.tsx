@@ -1,12 +1,12 @@
 // Module ID: 14143
 // Function ID: 14144
 // Name: badges/GuildBadge
-// Dependencies: [109, 19, 7888, 21, 558, 576, 14144, 14147, 14148, 14149, 14150, 14151, 14152, 14153, 14154, 14155, 14156, 14157, 14158, 14159, 14160, 14161, 14162, 14163, 14164, 14165, 14166, 14167, 14168, 14169, 14170, 14171, 14172, 14173, 14174, 14175, 14176, 14177, 14178, 14179, 14180, 14181, 14182, 14183, 14184, 14185, 14186, 2]
+// Dependencies: [109, 19, 7883, 21, 558, 576, 14144, 14147, 14148, 14149, 14150, 14151, 14152, 14153, 14154, 14155, 14156, 14157, 14158, 14159, 14160, 14161, 14162, 14163, 14164, 14165, 14166, 14167, 14168, 14169, 14170, 14171, 14172, 14173, 14174, 14175, 14176, 14177, 14178, 14179, 14180, 14181, 14182, 14183, 14184, 14185, 14186, 2]
 
 // Module 14143 (badges/GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import GuildBadgeSword2 from "GuildBadgeSword" /* 14144 */;
 import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 14147 */;
 import GuildBadgeSkull2 from "GuildBadgeSkull" /* 14148 */;

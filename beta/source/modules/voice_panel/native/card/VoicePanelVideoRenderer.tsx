@@ -1,14 +1,14 @@
 // Module ID: 17863
 // Function ID: 17864
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11972, 11970, 17797, 11973, 21, 4850, 10899, 5092, 558, 576, 11971, 5378, 9580, 5057, 6335, 5231, 17798, 10896, 10895, 17864, 10373, 17748, 5221, 4818, 587, 5093, 6762, 10898, 2]
+// Dependencies: [32, 19, 17, 11972, 11970, 17797, 11973, 21, 4850, 10899, 5092, 558, 576, 11971, 5378, 9575, 5057, 6335, 5231, 17798, 10896, 10895, 17864, 10373, 17748, 5221, 4818, 587, 5093, 6762, 10898, 2]
 
 // Module 17863 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import DCDVideoRendererDefault from "DCDVideoRenderer" /* 10899 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;

@@ -1,7 +1,7 @@
 // Module ID: 15540
 // Function ID: 15541
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2012, 7993, 1085, 21, 2128, 5092, 558, 576, 5031, 4969, 11093, 11094, 1126, 6157, 6335, 11092, 5088, 11089, 10663, 14965, 2]
+// Dependencies: [19, 17, 2012, 7988, 1085, 21, 2128, 5092, 558, 576, 5031, 4969, 11093, 11094, 1126, 6157, 6335, 11092, 5088, 11089, 10663, 14965, 2]
 
 // Module 15540 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import intl10 from "intl" /* 1126 */;
 import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11089 */;
 import KrispLogo2 from "KrispLogo" /* 11092 */;

@@ -1,7 +1,7 @@
 // Module ID: 13456
 // Function ID: 13457
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6290, 5377, 5088, 12707, 1126, 12709, 13455, 6943, 5031, 13457, 4969, 9040, 5379, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6290, 5377, 5088, 12707, 1126, 12709, 13455, 6943, 5031, 13457, 4969, 9035, 5379, 2]
 
 // Module 13456 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6943 */;
-import OrbsIcon2 from "OrbsIcon" /* 9040 */;
+import OrbsIcon2 from "OrbsIcon" /* 9035 */;
 import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 12707 */;
 import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 12709 */;
 import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13455 */;
@@ -465,7 +465,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutP
   }
   const obj3 = { variant: str, size: "lg", text: intl.string(intl3.t["zLch/S"]), icon: metroRequire(OrbsIcon, { size: "md", color: str2 }), iconPosition: "start", loading: isRedeeming, onPress, disabled: isRedeeming };
   intl = tmp3(1126).intl;
-  OrbsIcon = tmp3(9040).OrbsIcon;
+  OrbsIcon = tmp3(9035).OrbsIcon;
   str2 = "control-primary-text-default";
   const tmp3Result2 = shared;
   if (tmp3Result2.isThemeDark(tmp2)) {

@@ -1,7 +1,7 @@
 // Module ID: 18616
 // Function ID: 18617
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2065, 8684, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18617, 8690, 5299, 1126, 5396, 7089, 18618, 8685, 8580, 1273, 6201, 6688, 2]
+// Dependencies: [32, 19, 2065, 8679, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18617, 8685, 5299, 1126, 5396, 7089, 18618, 8680, 8575, 1273, 6201, 6688, 2]
 
 // Module 18616 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
@@ -12,12 +12,12 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import Navigator from "Navigator" /* 6688 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8690 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8685 */;
 import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8684 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8679 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
@@ -418,8 +418,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8580).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8685).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  const Form = tmp2(8575).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8680).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
   channel(18618);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;

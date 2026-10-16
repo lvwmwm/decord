@@ -1,7 +1,7 @@
 // Module ID: 11023
 // Function ID: 11024
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [2065, 5110, 11024, 1085, 558, 576, 10835, 11025, 504, 11022, 11020, 4976, 7482, 11026, 11027, 2]
+// Dependencies: [2065, 5110, 11024, 1085, 558, 576, 10835, 11025, 504, 11022, 11020, 4976, 7477, 11026, 11027, 2]
 
 // Module 11023 (useGlobalStatusIndicatorState)
 import Constants from "Constants" /* 1085 */;
@@ -152,8 +152,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
     let tmp23 = null != tmp8;
     if (tmp23) {
       let channelId = tmp8.channelId;
-      const getVoiceChannelKey = stateFromStores(7482).getVoiceChannelKey;
-      stateFromStores(7482);
+      const getVoiceChannelKey = stateFromStores(7477).getVoiceChannelKey;
+      stateFromStores(7477);
       if (channelId == null) {
         channelId = EMPTY_STRING_SNOWFLAKE_ID;
       }
@@ -218,8 +218,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
   let tmp12 = null != tmp5;
   if (tmp12) {
     let channelId = tmp5.channelId;
-    const getVoiceChannelKey = stateFromStores(7482).getVoiceChannelKey;
-    stateFromStores(7482);
+    const getVoiceChannelKey = stateFromStores(7477).getVoiceChannelKey;
+    stateFromStores(7477);
     if (channelId == null) {
       channelId = EMPTY_STRING_SNOWFLAKE_ID;
     }

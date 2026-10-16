@@ -1,7 +1,7 @@
 // Module ID: 15101
 // Function ID: 15102
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7020, 21, 558, 576, 7000, 14964, 4806, 2128, 7498, 5918, 587, 1126, 5088, 7568, 2]
+// Dependencies: [19, 17, 7020, 21, 558, 576, 7000, 14964, 4806, 2128, 7493, 5918, 587, 1126, 5088, 7563, 2]
 
 // Module 15101 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
@@ -226,7 +226,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1126).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(7568).InlineNotice;
+  const InlineNotice = sensitiveContentFilterHelpArticle(7563).InlineNotice;
   intl = sensitiveContentFilterHelpArticle(1126).intl;
   obj5 = {
     hook(children) {

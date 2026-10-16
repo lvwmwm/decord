@@ -1,7 +1,7 @@
 // Module ID: 10683
 // Function ID: 10684
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 5440, 6088, 7424, 7889, 1126, 10684, 6936, 6931, 3719, 558, 576, 5077, 10685, 1388, 504, 6858, 2]
+// Dependencies: [19, 5440, 6088, 7419, 7884, 1126, 10684, 6936, 6931, 3719, 558, 576, 5077, 10685, 1388, 504, 6858, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
 // Module 10683 (createSocialLayerStorefrontProductDetailsEmbed)
@@ -10,8 +10,8 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
 import StorefrontUtils from "StorefrontUtils" /* 6936 */;
-import Constants from "Constants" /* 7424 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
+import Constants from "Constants" /* 7419 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
 import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 10684 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

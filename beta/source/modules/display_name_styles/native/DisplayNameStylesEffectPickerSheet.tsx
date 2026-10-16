@@ -1,7 +1,7 @@
 // Module ID: 15639
 // Function ID: 15640
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8295, 15633, 15634, 5057, 5056, 1126, 2958, 15638, 5379, 5377, 6840, 10266, 10263, 10264, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8290, 15633, 15634, 5057, 5056, 1126, 2958, 15638, 5379, 5377, 6840, 10266, 10263, 10264, 2]
 
 // Module 15639 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
@@ -378,7 +378,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   closure_5 = undefined;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = userId(8295);
+  let obj = userId(8290);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   let obj2 = userId(15633);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();

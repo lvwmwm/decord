@@ -1,7 +1,7 @@
 // Module ID: 16543
 // Function ID: 16544
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7254, 6807, 5966, 11760, 21, 5092, 1382, 587, 5088, 10605, 6185, 10533, 558, 576, 10707, 10283, 504, 5421, 12691, 16544, 16545, 6803, 1126, 6892, 10708, 6296, 2]
+// Dependencies: [19, 17, 7249, 6807, 5966, 11760, 21, 5092, 1382, 587, 5088, 10605, 6185, 10533, 558, 576, 10707, 10283, 504, 5421, 12691, 16544, 16545, 6803, 1126, 6892, 10708, 6296, 2]
 
 // Module 16543 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
@@ -18,7 +18,7 @@ import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategory
 import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 16544 */;
 import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 16545 */;
 import react from "react" /* 19 */;
-import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7254 */;
+import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7249 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 6807 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;

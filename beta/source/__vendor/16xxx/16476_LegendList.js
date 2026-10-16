@@ -19701,7 +19701,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
       stylePaddingLeft: tmp37,
       stylePaddingRight: tmp38,
       stylePaddingTop: tmp35,
-      useWindowScroll: null
+      useWindowScroll: false
     };
     items3 = [getFixedItemSize];
     items4 = [getItemType];

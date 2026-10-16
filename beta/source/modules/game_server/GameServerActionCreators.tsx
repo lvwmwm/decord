@@ -1,7 +1,7 @@
 // Module ID: 12220
 // Function ID: 12221
 // Name: GameServerActionCreators
-// Dependencies: [2129, 1390, 12221, 5009, 1085, 584, 12222, 5644, 1295, 12224, 8033, 1265, 12225, 12223, 2]
+// Dependencies: [2129, 1390, 12221, 5009, 1085, 584, 12222, 5644, 1295, 12224, 8028, 1265, 12225, 12223, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
 // Module 12220 (GameServerActionCreators)
@@ -10,7 +10,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GameServerConstants from "GameServerConstants" /* 5009 */;
 import StoreUtils from "StoreUtils" /* 5644 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8033 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8028 */;
 import GameServerMocks from "GameServerMocks" /* 12222 */;
 import GameServerStatus from "GameServerStatus" /* 12223 */;
 import regionResponseToRegionDefault from "regionResponseToRegion" /* 12225 */;

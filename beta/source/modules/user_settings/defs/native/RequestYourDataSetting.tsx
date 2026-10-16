@@ -1,7 +1,7 @@
 // Module ID: 15137
 // Function ID: 15138
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1390, 7993, 1085, 21, 1267, 6671, 1272, 558, 576, 504, 4733, 15138, 1126, 4702, 10663, 15140, 2]
+// Dependencies: [17, 1390, 7988, 1085, 21, 1267, 6671, 1272, 558, 576, 504, 4733, 15138, 1126, 4702, 10663, 15140, 2]
 // Exports: fetchHarvestStatus
 
 // Module 15137 (RequestYourDataSetting)
@@ -14,7 +14,7 @@ import react_native2 from "react-native" /* 1272 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import _slicedToArray from "_slicedToArray" /* 4733 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6671 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import HarvesterUtils from "HarvesterUtils" /* 15138 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

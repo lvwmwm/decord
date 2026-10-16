@@ -1,7 +1,7 @@
 // Module ID: 18392
 // Function ID: 18393
 // Name: GuildSettingsModalIntegrationSettings
-// Dependencies: [19, 17, 2119, 8639, 21, 18393, 1126, 5092, 587, 558, 576, 6262, 6180, 18394, 6185, 6265, 6896, 4827, 5088, 5763, 6157, 1415, 4969, 8580, 5377, 4702, 6263, 18395, 6728, 8638, 504, 5031, 18357, 2]
+// Dependencies: [19, 17, 2119, 8634, 21, 18393, 1126, 5092, 587, 558, 576, 6262, 6180, 18394, 6185, 6265, 6896, 4827, 5088, 5763, 6157, 1415, 4969, 8575, 5377, 4702, 6263, 18395, 6728, 8633, 504, 5031, 18357, 2]
 
 // Module 18392 (GuildSettingsModalIntegrationSettings)
 import react_native from "react-native" /* 17 */;
@@ -14,11 +14,11 @@ import TableRow4 from "TableRow" /* 6180 */;
 import Pressables from "Pressables" /* 6185 */;
 import TableRowGroup4 from "TableRowGroup" /* 6265 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import AssetRegistryDefault from "AssetRegistry" /* 18394 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -343,7 +343,7 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     });
     const obj6 = { style: { flex: 1 }, contentContainerStyle: items, children: closure_7(Stack, obj7) };
     items = [{ paddingTop: 16 }, self.props.contentContainerStyle];
-    const Form = tmp15(8580).Form;
+    const Form = tmp15(8575).Form;
     obj7 = { style: iter.stackPadding, spacing: self(587).space.PX_24, children: items1 };
     Stack = tmp15(5377).Stack;
     const TableRowGroup = tmp15(6265).TableRowGroup;

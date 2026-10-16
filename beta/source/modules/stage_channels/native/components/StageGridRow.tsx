@@ -1,13 +1,13 @@
 // Module ID: 11167
 // Function ID: 11168
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 5092, 11160, 5950, 558, 576, 8327, 11168, 11159, 2]
+// Dependencies: [19, 17, 21, 5092, 11160, 5950, 558, 576, 8322, 11168, 11159, 2]
 
 // Module 11167 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8322 */;
 import SpeakerTileDefault from "SpeakerTile" /* 11159 */;
 import MediaTileDefault from "MediaTile" /* 11168 */;
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const participants = channel.participants;
   const row = channel.row;
   const tmp4 = closure_5();
-  let obj2 = channel(8327);
+  let obj2 = channel(8322);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let num = 3;
   if (0 === row) {

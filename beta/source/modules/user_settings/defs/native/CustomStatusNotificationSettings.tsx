@@ -1,7 +1,7 @@
 // Module ID: 15789
 // Function ID: 15790
 // Name: CustomStatusNotificationSettings
-// Dependencies: [7993, 1085, 4763, 2041, 1209, 1265, 558, 10663, 1126, 2]
+// Dependencies: [7988, 1085, 4763, 2041, 1209, 1265, 558, 10663, 1126, 2]
 // Exports: onChange
 
 // Module 15789 (CustomStatusNotificationSettings)
@@ -11,7 +11,7 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import NotificationConstants from "NotificationConstants" /* 4763 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9202
+// Function ID: 9203
 // Name: XboxLinkModal
-// Dependencies: [19, 9208, 1085, 21, 558, 576, 9206, 7089, 7729, 1126, 9209, 9216, 9217, 9221, 12908, 12911, 12913, 9215, 12917, 6688, 2]
+// Dependencies: [19, 9203, 1085, 21, 558, 576, 9201, 7089, 7724, 1126, 9204, 9211, 9212, 9216, 12908, 12911, 12913, 9210, 12917, 6688, 2]
 
-// Module 9207 (XboxLinkModal)
+// Module 9202 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import Navigator2 from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9206 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9208 */;
-import XboxLinkLandingDefault from "XboxLinkLanding" /* 9209 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
-import XboxLinkPreConnectDefault from "XboxLinkPreConnect" /* 9217 */;
-import XboxLinkDiscordConsentDefault from "XboxLinkDiscordConsent" /* 9221 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9201 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9203 */;
+import XboxLinkLandingDefault from "XboxLinkLanding" /* 9204 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
+import XboxLinkPreConnectDefault from "XboxLinkPreConnect" /* 9212 */;
+import XboxLinkDiscordConsentDefault from "XboxLinkDiscordConsent" /* 9216 */;
 import XboxLinkSuccessDefault from "XboxLinkSuccess" /* 12908 */;
 import XboxLinkEducationDefault from "XboxLinkEducation" /* 12911 */;
 import XboxLinkErrorDefault from "XboxLinkError" /* 12913 */;
@@ -177,7 +177,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkMo
 }) : (function XboxLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  const obj = twoWayLinkStyles(9215);
+  const obj = twoWayLinkStyles(9210);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(twoWayLinkStyles), items);

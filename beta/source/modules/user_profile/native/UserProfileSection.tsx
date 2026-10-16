@@ -1,7 +1,7 @@
 // Module ID: 10737
 // Function ID: 10738
 // Name: UserProfileSection
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 4827, 6881, 4967, 8584, 5088, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 4827, 6881, 4967, 8579, 5088, 2]
 
 // Module 10737 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmpResult4 = ColorUtils;
-      borderColor = tmpResult4.hexOpacityToRgba(tmp(8584).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmpResult4.hexOpacityToRgba(tmp(8579).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     cResult[8] = primaryColor;
     cResult[9] = profileThemeValues;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8584).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8579).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };

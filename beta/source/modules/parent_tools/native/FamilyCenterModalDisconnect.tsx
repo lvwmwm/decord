@@ -1,7 +1,7 @@
 // Module ID: 15202
 // Function ID: 15203
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5934, 4962, 7739, 4808, 1126, 11532, 2568, 11535, 15203, 7729, 5088, 15153, 12903, 5377, 7516, 5379, 11541, 5958, 7515, 6201, 10603, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5934, 4962, 7734, 4808, 1126, 11532, 2568, 11535, 15203, 7724, 5088, 15153, 12903, 5377, 7511, 5379, 11541, 5958, 7510, 6201, 10603, 2]
 
 // Module 15202 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import ToastUtils from "ToastUtils" /* 4808 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
 import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 15203 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   }
   const obj2 = UserUtilsDefault;
   const name = obj2.useName(otherUser);
-  const tmpResult = tmp(7739);
+  const tmpResult = tmp(7734);
   const requiresParentalConsent = tmpResult.useRequiresParentalConsent(otherUser.id);
   [r10038, importDefault] = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
   disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
@@ -377,7 +377,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   }, []);
   const obj = UserUtilsDefault;
   const name = obj.useName(otherUser);
-  const obj2 = otherUser(7739);
+  const obj2 = otherUser(7734);
   const requiresParentalConsent = obj2.useRequiresParentalConsent(otherUser.id);
   [tmp9, c1] = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
   disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
@@ -443,9 +443,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
       c2(arg0);
     }
   }, items2);
-  const ModalScreen = otherUser(7515).ModalScreen;
+  const ModalScreen = otherUser(7510).ModalScreen;
   const obj4 = { style: tmp.header, children: items3 };
-  const ModalContent = otherUser(7516).ModalContent;
+  const ModalContent = otherUser(7511).ModalContent;
   const obj5 = { otherUser, iconSrc: AssetRegistryDefault };
   const tmp34 = FamilyCenterAvatarPairDefault;
   items3 = [closure_6(tmp34, obj5), , ];

@@ -1,7 +1,7 @@
 // Module ID: 17861
 // Function ID: 17862
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6036, 11972, 11970, 17797, 11975, 5115, 21, 17862, 558, 4850, 9580, 11971, 4818, 587, 11976, 11577, 5378, 576, 17798, 6161, 5330, 6762, 17891, 504, 12, 4828, 1126, 4827, 2]
+// Dependencies: [32, 19, 17, 6036, 11972, 11970, 17797, 11975, 5115, 21, 17862, 558, 4850, 9575, 11971, 4818, 587, 11976, 11577, 5378, 576, 17798, 6161, 5330, 6762, 17891, 504, 12, 4828, 1126, 4827, 2]
 
 // Module 17861 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
@@ -12,7 +12,7 @@ import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import CallConstants from "CallConstants" /* 5115 */;
 import spring from "spring" /* 5378 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11975 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11976 */;

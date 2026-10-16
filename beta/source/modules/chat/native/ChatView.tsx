@@ -1,7 +1,7 @@
 // Module ID: 10363
 // Function ID: 10364
 // Name: ChatView
-// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7197, 7014, 9676, 6800, 10367, 10381, 10483, 11632, 12203, 1382, 12380, 12381, 11966, 12385, 12388, 9, 9461, 12391, 1200, 11190, 12393, 12394, 12529, 12543, 10226, 11631, 2]
+// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7192, 7014, 9671, 6800, 10367, 10381, 10483, 11632, 12203, 1382, 12380, 12381, 11966, 12385, 12388, 9, 9456, 12391, 1200, 11190, 12393, 12394, 12529, 12543, 10226, 11631, 2]
 
 // Module 10363 (ChatView)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7014 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 9676 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 9671 */;
 import ChatViewWrapperDefault from "ChatViewWrapper" /* 10367 */;
 import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10381 */;
 import MessagesDefault from "Messages" /* 10483 */;

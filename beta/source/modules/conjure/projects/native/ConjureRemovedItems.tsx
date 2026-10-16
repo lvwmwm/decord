@@ -1,7 +1,7 @@
 // Module ID: 11434
 // Function ID: 11435
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5092, 587, 1126, 8767, 558, 576, 8234, 11435, 8202, 5377, 5088, 4832, 6178, 3849, 6265, 6177, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1126, 8762, 558, 576, 8229, 11435, 8197, 5377, 5088, 4832, 6178, 3849, 6265, 6177, 2]
 // Exports: formatWithAppTag
 
 // Module 11434 (ConjureRemovedItems)
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5088 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 6177 */;
 import FormCheckbox from "FormCheckbox" /* 6178 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import FolderIcon from "FolderIcon" /* 8202 */;
-import AppsIcon from "AppsIcon" /* 8234 */;
-import BotTagDefault from "BotTag" /* 8767 */;
+import FolderIcon from "FolderIcon" /* 8197 */;
+import AppsIcon from "AppsIcon" /* 8229 */;
+import BotTagDefault from "BotTag" /* 8762 */;
 import RobotIcon from "RobotIcon" /* 11435 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

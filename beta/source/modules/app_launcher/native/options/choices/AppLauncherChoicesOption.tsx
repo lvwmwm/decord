@@ -1,7 +1,7 @@
 // Module ID: 11851
 // Function ID: 11852
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 5092, 587, 1894, 5056, 11852, 2000, 11856, 8580, 5088, 2]
+// Dependencies: [32, 19, 21, 5092, 587, 1894, 5056, 11852, 2000, 11856, 8575, 5088, 2]
 // Exports: default
 
 // Module 11851 (AppLauncherChoicesOption)

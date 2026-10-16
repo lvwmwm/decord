@@ -1,7 +1,7 @@
 // Module ID: 12724
 // Function ID: 12725
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 5934, 7263, 6879, 1126, 6208, 5088, 2664, 12725, 7515, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 5934, 7258, 6879, 1126, 6208, 5088, 2664, 12725, 7510, 2]
 
 // Module 12724 (CollectiblesShopGiftBadgePostPurchaseModal)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
 import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 12725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -27,7 +27,7 @@ let tmp;
 const intl3 = tmp(1126);
 const Text_Text = tmp(5088);
 const XSmallIcon = tmp(6208);
-const ModalScreen2 = tmp(7515);
+const ModalScreen2 = tmp(7510);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((paddingTop) => {

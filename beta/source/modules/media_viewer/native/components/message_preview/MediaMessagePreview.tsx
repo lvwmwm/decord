@@ -1,7 +1,7 @@
 // Module ID: 13068
 // Function ID: 13069
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 6979, 6062, 2065, 5432, 8481, 1085, 21, 7747, 8264, 5092, 558, 576, 8420, 9374, 587, 504, 10451, 1126, 11, 9614, 5103, 13069, 9677, 9383, 7900, 9674, 6335, 11487, 2]
+// Dependencies: [32, 19, 17, 6979, 6062, 2065, 5432, 8476, 1085, 21, 7742, 8259, 5092, 558, 576, 8415, 9369, 587, 504, 10451, 1126, 11, 9609, 5103, 13069, 9672, 9378, 7895, 9669, 6335, 11487, 2]
 
 // Module 13068 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -9,11 +9,11 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8264 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 9614 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9677 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8259 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 9609 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9672 */;
 import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 13069 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
 import SearchMessageStore from "SearchMessageStore" /* 6062 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8481 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8476 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -489,7 +489,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(7900).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(7895).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

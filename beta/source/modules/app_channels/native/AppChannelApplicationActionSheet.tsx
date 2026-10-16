@@ -1,12 +1,12 @@
-// Module ID: 8613
-// Function ID: 8614
+// Module ID: 8608
+// Function ID: 8609
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 558, 576, 8609, 5056, 6839, 1126, 6262, 8614, 8612, 6899, 6263, 2]
+// Dependencies: [19, 21, 558, 576, 8604, 5056, 6839, 1126, 6262, 8609, 8607, 6899, 6263, 2]
 
-// Module 8613 (AppChannelApplicationActionSheet)
+// Module 8608 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8614 */;
+import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8609 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
   const cResult = obj.c(11);
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  const obj2 = onChange(8609);
+  const obj2 = onChange(8604);
   const options = obj2.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   if (cResult[0] !== onChange) {
     const fn = function l(arg0) {
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
   let selectedApplicationId;
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(8609);
+  let obj = onChange(8604);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = react.useCallback((arg0) => {

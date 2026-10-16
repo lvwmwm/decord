@@ -1,7 +1,7 @@
 // Module ID: 16193
 // Function ID: 16194
 // Name: UserProfileTryItOutEditForm
-// Dependencies: [109, 19, 17, 8285, 21, 558, 576, 6852, 6879, 14841, 1126, 14854, 8368, 14856, 14860, 14908, 1631, 14951, 504, 8311, 10513, 8294, 8369, 8354, 8365, 587, 14863, 10514, 10532, 5379, 9037, 14930, 10531, 11189, 16194, 4827, 2]
+// Dependencies: [109, 19, 17, 8280, 21, 558, 576, 6852, 6879, 14841, 1126, 14854, 8363, 14856, 14860, 14908, 1631, 14951, 504, 8306, 10513, 8289, 8364, 8349, 8360, 587, 14863, 10514, 10532, 5379, 9032, 14930, 10531, 11189, 16194, 4827, 2]
 
 // Module 16193 (UserProfileTryItOutEditForm)
 import get_initialized from "get initialized" /* 504 */;
@@ -12,12 +12,12 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import native from "native" /* 4827 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8294 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8311 */;
-import useProfileThemeDefault from "useProfileTheme" /* 8354 */;
-import useUserProfileColors from "useUserProfileColors" /* 8365 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
-import useBadgesDefault from "useBadges" /* 8369 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8289 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8306 */;
+import useProfileThemeDefault from "useProfileTheme" /* 8349 */;
+import useUserProfileColors from "useUserProfileColors" /* 8360 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
+import useBadgesDefault from "useBadges" /* 8364 */;
 import userSettingToActivity from "userSettingToActivity" /* 10513 */;
 import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10514 */;
 import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 10531 */;
@@ -34,7 +34,7 @@ import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPr
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -515,7 +515,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileT
                                                         const obj21 = { icon: metroImportAll(DiceIcon, obj22), text: intl.string(intl2.t.VzqqFC), variant: "secondary", onPress: tmp7 };
                                                         const Button = tmp(5379).Button;
                                                         obj22 = { size: "sm", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-                                                        DiceIcon = tmp(9037).DiceIcon;
+                                                        DiceIcon = tmp(9032).DiceIcon;
                                                         intl = tmp(1126).intl;
                                                         tmp58 = metroImportAll(Button, obj21);
                                                       }
@@ -744,7 +744,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileT
     const obj14 = { icon: metroImportAll(DiceIcon, obj15), text: intl.string(intl2.t.VzqqFC), variant: "secondary", onPress: tmp6 };
     const Button = tmp5(5379).Button;
     obj15 = { size: "sm", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-    DiceIcon = tmp5(9037).DiceIcon;
+    DiceIcon = tmp5(9032).DiceIcon;
     intl = tmp5(1126).intl;
     tmp19Result = tmp19(Button, obj14);
   }

@@ -1,7 +1,7 @@
 // Module ID: 11409
 // Function ID: 11410
 // Name: conjureAppInServer
-// Dependencies: [5440, 7321, 4748, 2087, 4750, 1085, 6946, 6947, 2]
+// Dependencies: [5440, 7316, 4748, 2087, 4750, 1085, 6946, 6947, 2]
 // Exports: canRemoveConjureBot, conjurePreviewBotUserId, conjureProductionBotUserId, findConjureAppChannels, readConjureAppServerPresence, readConjureBotInGuild
 
 // Module 11409 (conjureAppInServer)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import size from "module_2" /* 2 */;

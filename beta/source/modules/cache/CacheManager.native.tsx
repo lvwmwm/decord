@@ -1,16 +1,16 @@
 // Module ID: 18060
 // Function ID: 18061
 // Name: CacheManager
-// Dependencies: [5757, 7198, 3, 1102, 6808, 7343, 15876, 1382, 1105, 2]
+// Dependencies: [5757, 7193, 3, 1102, 6808, 7338, 15876, 1382, 1105, 2]
 
 // Module 18060 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7343 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7338 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import CacheStore from "CacheStore" /* 7198 */;
+import CacheStore from "CacheStore" /* 7193 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
 // Module ID: 13473
 // Function ID: 13474
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 7269, 1416, 21, 5092, 13474, 558, 576, 13468, 13475, 6879, 9016, 2]
+// Dependencies: [19, 17, 7264, 1416, 21, 5092, 13474, 558, 576, 13468, 13475, 6879, 9011, 2]
 
 // Module 13473 (EditAvatarDecorationSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1416 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7269 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9016 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7264 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9011 */;
 import useAvatarDecorationSections from "useAvatarDecorationSections" /* 13468 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 13474 */;
 import react from "react" /* 19 */;

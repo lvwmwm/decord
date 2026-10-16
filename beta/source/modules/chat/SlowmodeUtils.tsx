@@ -1,10 +1,10 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7371
+// Function ID: 7372
 // Name: SlowmodeUtils
 // Dependencies: [4750, 1085, 558, 576, 504, 1126, 1102, 4702, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText
 
-// Module 7376 (SlowmodeUtils)
+// Module 7371 (SlowmodeUtils)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;

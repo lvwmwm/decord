@@ -1,14 +1,14 @@
 // Module ID: 13512
 // Function ID: 13513
 // Name: InviteEmbed
-// Dependencies: [5073, 1390, 1085, 7424, 13513, 7423, 13515, 13516, 13517, 13520, 13522, 9607, 9608, 2]
+// Dependencies: [5073, 1390, 1085, 7419, 13513, 7418, 13515, 13516, 13517, 13520, 13522, 9602, 9603, 2]
 // Exports: createInviteEmbed
 
 // Module 13512 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
-import Constants2 from "Constants" /* 7424 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9607 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9608 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7418 */;
+import Constants2 from "Constants" /* 7419 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9602 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9603 */;
 import invite_GuildInvite from "invite/GuildInvite" /* 13513 */;
 import GroupDMInvite from "GroupDMInvite" /* 13515 */;
 import FriendInvite from "FriendInvite" /* 13516 */;

@@ -1,17 +1,17 @@
-// Module ID: 7259
-// Function ID: 7260
+// Module ID: 7254
+// Function ID: 7255
 // Name: FamilyCenterStore
-// Dependencies: [32, 5911, 1084, 1390, 7260, 2079, 11, 7261, 2]
+// Dependencies: [32, 5911, 1084, 1390, 7255, 2079, 11, 7256, 2]
 
-// Module 7259 (FamilyCenterStore)
+// Module 7254 (FamilyCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5911 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import UserStore from "UserStore" /* 1390 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_15, closure_29, closure_30, closure_32, map, map1, set2, set3, set4;
@@ -21,13 +21,13 @@ let REQUESTS;
 let metroRequire;
 let tmp;
 let tmp2;
-const f96081 = (acc, user_id) => {
+const f96080 = (acc, user_id) => {
   const obj = {};
   const merged = Object.assign(acc);
   obj[user_id.user_id] = user_id;
   return obj;
 };
-const f96083 = (acc, id) => {
+const f96082 = (acc, id) => {
   let num;
   const obj = {};
   const merged = Object.assign(acc);
@@ -42,7 +42,7 @@ const f96083 = (acc, id) => {
   obj[id] = obj2;
   return obj;
 };
-const f96084 = (acc, invoice_items) => {
+const f96083 = (acc, invoice_items) => {
   let sku_id;
   let subscription_plan_id;
   if (null != invoice_items.invoice_items) {
@@ -58,7 +58,7 @@ const f96084 = (acc, invoice_items) => {
   }
   return acc;
 };
-const f96085 = (acc, entitlement_id) => {
+const f96084 = (acc, entitlement_id) => {
   acc[entitlement_id.entitlement_id] = entitlement_id;
   return acc;
 };
@@ -125,21 +125,21 @@ function handleInitialLoad(arg0) {
   if (undefined !== totals) {
     closure_15 = totals;
   }
-  closure_32 = guilds.reduce(f96083, closure_32);
+  closure_32 = guilds.reduce(f96082, closure_32);
   if (linkedUsers === undefined) {
     linkedUsers = [];
   }
   if (linkedUsers.length > 0) {
-    reduced = linkedUsers.reduce(f96081, {});
+    reduced = linkedUsers.reduce(f96080, {});
   } else {
     reduced = {};
   }
   c13 = true;
   if (null != invoices) {
-    closure_29 = invoices.reduce(f96084, {});
+    closure_29 = invoices.reduce(f96083, {});
   }
   if (null != gifts) {
-    closure_30 = gifts.reduce(f96085, {});
+    closure_30 = gifts.reduce(f96084, {});
   }
   if (spendingLimit == null) {
     spendingLimit = null;
@@ -161,7 +161,7 @@ function handleLinkedUserFetch(linkedUsers) {
     linkedUsers = [];
   }
   if (linkedUsers.length > 0) {
-    reduced = linkedUsers.reduce(f96081, {});
+    reduced = linkedUsers.reduce(f96080, {});
   } else {
     reduced = {};
   }
@@ -173,7 +173,7 @@ function handleRequestLinkSuccess(linkedUsers) {
     linkedUsers = [];
   }
   if (linkedUsers.length > 0) {
-    reduced = linkedUsers.reduce(f96081, {});
+    reduced = linkedUsers.reduce(f96080, {});
   } else {
     reduced = {};
   }
@@ -205,12 +205,12 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       closure_15 = totals;
     }
     let tmp = closure_32;
-    closure_32 = guilds.reduce(f96083, closure_32);
+    closure_32 = guilds.reduce(f96082, closure_32);
     if (null != invoices) {
-      closure_29 = invoices.reduce(f96084, {});
+      closure_29 = invoices.reduce(f96083, {});
     }
     if (null != gifts) {
-      closure_30 = gifts.reduce(f96085, {});
+      closure_30 = gifts.reduce(f96084, {});
     }
     c20 = false;
     let obj = SnowflakeUtilsDefault;
@@ -236,7 +236,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
       const result = value.set(display_type.event_id, display_type);
     }
   });
-  closure_32 = guilds.reduce(f96083, closure_32);
+  closure_32 = guilds.reduce(f96082, closure_32);
 }
 function handleUserLinkStatusUpdate(linkedUsers) {
   linkedUsers = linkedUsers.linkedUsers;
@@ -244,7 +244,7 @@ function handleUserLinkStatusUpdate(linkedUsers) {
     linkedUsers = [];
   }
   if (linkedUsers.length > 0) {
-    reduced = linkedUsers.reduce(f96081, {});
+    reduced = linkedUsers.reduce(f96080, {});
   } else {
     reduced = {};
   }
@@ -256,7 +256,7 @@ function handleUserLinkRemove(linkedUsers) {
     linkedUsers = [];
   }
   if (linkedUsers.length > 0) {
-    reduced = linkedUsers.reduce(f96081, {});
+    reduced = linkedUsers.reduce(f96080, {});
   } else {
     reduced = {};
   }
@@ -288,7 +288,7 @@ function handleCurrentUserUpdate(user) {
       linked_users1 = [];
     }
     if (linked_users1.length > 0) {
-      reduced = linked_users1.reduce(f96081, {});
+      reduced = linked_users1.reduce(f96080, {});
     } else {
       reduced = {};
     }
@@ -304,7 +304,7 @@ function handleConnectionOpen(linkedUsers) {
       linkedUsers = [];
     }
     if (linkedUsers.length > 0) {
-      reduced = linkedUsers.reduce(f96081, {});
+      reduced = linkedUsers.reduce(f96080, {});
     } else {
       reduced = {};
     }
@@ -453,14 +453,14 @@ class FamilyCenterStore extends MobileCacheSnapshotStore {
       }
       let num = 0;
       if (linkedUsers.length > 0) {
-        reduced = linkedUsers.reduce(f96081, {});
+        reduced = linkedUsers.reduce(f96080, {});
       } else {
         reduced = {};
       }
       c13 = true;
       const guilds = snapshot.guilds;
       let tmp2 = closure_32;
-      closure_32 = guilds.reduce(f96083, closure_32);
+      closure_32 = guilds.reduce(f96082, closure_32);
       const teenActivity = snapshot.teenActivity;
       let tmp3 = freshTeenActivityWithMap;
       let tmp4 = freshTeenActivityWithMap();

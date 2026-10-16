@@ -1,7 +1,7 @@
 // Module ID: 15596
 // Function ID: 15597
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5081, 1085, 21, 4850, 5391, 5378, 5382, 5092, 587, 558, 576, 6852, 6879, 9394, 9395, 1126, 1200, 5379, 504, 9449, 2]
+// Dependencies: [19, 17, 5081, 1085, 21, 4850, 5391, 5378, 5382, 5092, 587, 558, 576, 6852, 6879, 9389, 9390, 1126, 1200, 5379, 504, 9444, 2]
 
 // Module 15596 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import react2 from "react" /* 576 */;
@@ -9,9 +9,9 @@ import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9449 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9444 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

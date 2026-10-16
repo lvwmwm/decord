@@ -1,9 +1,9 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8633
+// Function ID: 8634
 // Name: GuildSettingsActionCreators
-// Dependencies: [5, 2118, 4751, 502, 2125, 2087, 8639, 1085, 3, 584, 1295, 7028, 8646, 6672, 6676, 5938, 1273, 4970, 1126, 1112, 6128, 2]
+// Dependencies: [5, 2118, 4751, 502, 2125, 2087, 8634, 1085, 3, 584, 1295, 7028, 8641, 6672, 6676, 5938, 1273, 4970, 1126, 1112, 6128, 2]
 
-// Module 8638 (GuildSettingsActionCreators)
+// Module 8633 (GuildSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
@@ -16,7 +16,7 @@ import LurkingStore from "LurkingStore" /* 4751 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8491
+// Function ID: 8492
 // Name: getOnClick
-// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8497, 8519, 2000, 6098, 6950, 8514, 5072, 5077, 7379, 4800, 1265, 11611, 13038, 10853, 7015, 11615, 13042, 10685, 10156, 9166, 1384, 9168, 5977, 13043, 7263, 5107, 5422, 8265, 10742, 2]
+// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8492, 8514, 2000, 6098, 6950, 8509, 5072, 5077, 7374, 4800, 1265, 11611, 13038, 10853, 7015, 11615, 13042, 10685, 10156, 9161, 1384, 9163, 5977, 13043, 7258, 5107, 5422, 8260, 10742, 2]
 // Exports: default
 
-// Module 8496 (getOnClick)
+// Module 8491 (getOnClick)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
@@ -14,9 +14,9 @@ import CodedLink from "CodedLink" /* 5077 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6934 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
-import _slicedToArray2 from "_slicedToArray" /* 7379 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
-import QuestUtils from "QuestUtils" /* 9168 */;
+import _slicedToArray2 from "_slicedToArray" /* 7374 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
 import storefrontCodedLink from "storefrontCodedLink" /* 10685 */;
 import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -600,7 +600,7 @@ export default function getOnClick(url) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5077).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(9166);
+      const tmp2Result = tmp2(9161);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -752,7 +752,7 @@ export default function getOnClick(url) {
   const tmp2Result3 = tmp2(5422);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(8265);
+    const tmp2Result4 = tmp2(8260);
     if (null != tmp2Result4.isSuspiciousDownload(url)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

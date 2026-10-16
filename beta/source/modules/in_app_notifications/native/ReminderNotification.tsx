@@ -1,7 +1,7 @@
 // Module ID: 12644
 // Function ID: 12645
 // Name: ReminderNotification
-// Dependencies: [19, 17, 2065, 2087, 12578, 1085, 21, 5092, 1200, 558, 576, 5051, 587, 12577, 12620, 504, 1106, 12618, 12586, 12588, 9314, 38, 1126, 5934, 12645, 9682, 1265, 12616, 2]
+// Dependencies: [19, 17, 2065, 2087, 12578, 1085, 21, 5092, 1200, 558, 576, 5051, 587, 12577, 12620, 504, 1106, 12618, 12586, 12588, 9309, 38, 1126, 5934, 12645, 9677, 1265, 12616, 2]
 
 // Module 12644 (ReminderNotification)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ClockIcon2 from "ClockIcon" /* 5051 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9682 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9677 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
 import MessagePreviewTextDefault from "MessagePreviewText" /* 12586 */;
 import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 12618 */;
@@ -267,7 +267,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
         if (!hasPreviewableMedia) {
           let tmp23;
           if (null == message.poll) {
-            const obj3 = { channel, message, color: "text-default", layout: channel(9314).ChannelListLayoutTypes.COZY, variant: tmp14, muted: false, lineClamp: num7 };
+            const obj3 = { channel, message, color: "text-default", layout: channel(9309).ChannelListLayoutTypes.COZY, variant: tmp14, muted: false, lineClamp: num7 };
             const ChannelRowPreview = tmp(12588).ChannelRowPreview;
             tmp23 = closure_10(ChannelRowPreview, obj3);
           }
@@ -323,7 +323,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   if (!hasPreviewableMedia) {
     let tmp14;
     if (null == message.poll) {
-      const obj5 = { channel, message, color: "text-default", layout: channel(9314).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      const obj5 = { channel, message, color: "text-default", layout: channel(9309).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
       const ChannelRowPreview = tmp(12588).ChannelRowPreview;
       tmp14 = closure_10(ChannelRowPreview, obj5);
     }

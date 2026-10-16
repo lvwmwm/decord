@@ -1,13 +1,13 @@
 // Module ID: 17027
 // Function ID: 17028
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2087, 1390, 6926, 21, 5092, 587, 558, 576, 573, 8311, 8354, 7011, 8312, 4962, 1103, 8383, 1200, 5409, 5088, 8623, 10531, 4827, 2]
+// Dependencies: [19, 17, 2087, 1390, 6926, 21, 5092, 587, 558, 576, 573, 8306, 8349, 7011, 8307, 4962, 1103, 8378, 1200, 5409, 5088, 8618, 10531, 4827, 2]
 
 // Module 17027 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;

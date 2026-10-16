@@ -1,16 +1,16 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9694
+// Function ID: 9695
 // Name: useCreateThread
-// Dependencies: [5, 19, 7244, 5085, 558, 576, 6852, 7179, 7370, 9265, 9263, 9261, 9700, 7765, 7780, 9266, 2]
+// Dependencies: [5, 19, 7239, 5085, 558, 576, 6852, 7174, 7365, 9260, 9258, 9256, 9695, 7760, 7775, 9261, 2]
 
-// Module 9699 (useCreateThread)
+// Module 9694 (useCreateThread)
 import MessageConstants from "MessageConstants" /* 5085 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import MessageParserDefault from "MessageParser" /* 7370 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9265 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import MessageParserDefault from "MessageParser" /* 7365 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThr
                 if (cResult[9] === useDefaultThreadName) {
                   tmp5 = cResult[10];
                 }
-                const tmpResult = tmp(9261);
+                const tmpResult = tmp(9256);
                 return tmpResult.useCreateThreadCommon(tmp5);
               }
             }
@@ -107,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThr
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj = analyticsLocations(9261);
+  let obj = analyticsLocations(9256);
   let obj2 = {
     parentChannel,
     parentMessageId,
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
               if (cResult[8] === tmp4) {
                 tmp6 = cResult[9];
               }
-              const tmpResult = tmp(9261);
+              const tmpResult = tmp(9256);
               return tmpResult.useCreateForumPostCommon(tmp6);
             }
           }
@@ -274,7 +274,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
   const callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  const tmp2 = parentChannel(9261);
+  const tmp2 = parentChannel(9256);
   let obj = { parentChannel, name: str, appliedTags, analyticsLocations, onThreadCreated, upload: callback };
   str = undefined;
   const useCreateForumPostCommon = tmp2.useCreateForumPostCommon;

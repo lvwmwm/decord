@@ -1,18 +1,18 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 9087
+// Function ID: 9088
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2129, 9090, 7283, 1085, 8346, 584, 5644, 5636, 2]
+// Dependencies: [5, 2129, 9085, 7278, 1085, 8341, 584, 5644, 5636, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9092 (StorefrontCollectionActionCreators)
+// Module 9087 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import StoreUtils from "StoreUtils" /* 5644 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8346 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9090 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7283 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9085 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7278 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;

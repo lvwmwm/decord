@@ -1,7 +1,7 @@
 // Module ID: 16413
 // Function ID: 16414
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6626, 1503, 6201, 6207, 1126, 6657, 6660, 7517, 6656, 2128, 5088, 5379, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6626, 1503, 6201, 6207, 1126, 6657, 6660, 7512, 6656, 2128, 5088, 5379, 2]
 
 // Module 16413 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(7517).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7512).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;

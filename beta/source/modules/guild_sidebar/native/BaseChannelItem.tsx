@@ -1,7 +1,7 @@
 // Module ID: 12087
 // Function ID: 12088
 // Name: BaseChannelItem
-// Dependencies: [109, 19, 17, 11760, 5967, 21, 5092, 587, 558, 576, 1383, 5088, 1200, 12088, 8542, 12089, 2]
+// Dependencies: [109, 19, 17, 11760, 5967, 21, 5092, 587, 558, 576, 1383, 5088, 1200, 12088, 8537, 12089, 2]
 // Exports: getChannelSubtitleTextProps, useChannelNameTextProps
 
 // Module 12087 (BaseChannelItem)
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8542);
+const native2 = tmp(8537);
 let closure_3 = ["icon", "name", "mode", "hideIcon", "disableHighlightOnPress", "channelInfo", "children", "unread"];
 const View = react_native.View;
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: metroImportDefault, CHANNEL_TITLE_LINE_HEIGHT: metroImportAll } = RedesignChannelListConstants);
@@ -641,7 +641,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelI
   if (flag) {
     AnimatedPressableHighlight = hideIcon(12089);
   } else {
-    AnimatedPressableHighlight = mode(8542).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(8537).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);

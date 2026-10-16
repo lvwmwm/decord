@@ -1,7 +1,7 @@
 // Module ID: 13185
 // Function ID: 13186
 // Name: UserProfileContent
-// Dependencies: [32, 19, 17, 8317, 8981, 2087, 4760, 1390, 8285, 7321, 8308, 6905, 1085, 6841, 2062, 21, 8368, 504, 5056, 10528, 2000, 10520, 10514, 558, 576, 8315, 6852, 7018, 4962, 13186, 1126, 7574, 12363, 13187, 5034, 8369, 13189, 2049, 7100, 13192, 5409, 6886, 4808, 10532, 13193, 10641, 10805, 9724, 587, 5379, 13115, 13214, 13215, 13250, 13379, 8357, 8370, 1631, 13188, 13385, 13386, 7011, 10529, 8294, 10572, 8322, 13387, 8354, 8365, 8980, 13388, 13377, 13216, 13389, 13390, 13391, 13392, 13393, 12370, 13394, 13117, 13396, 10613, 6882, 13173, 13397, 13176, 13402, 13407, 8530, 13413, 13414, 13419, 13420, 8382, 13424, 8371, 4850, 13087, 6846, 12359, 10601, 13425, 2]
+// Dependencies: [32, 19, 17, 8312, 8976, 2087, 4760, 1390, 8280, 7316, 8303, 6905, 1085, 6841, 2062, 21, 8363, 504, 5056, 10528, 2000, 10520, 10514, 558, 576, 8310, 6852, 7018, 4962, 13186, 1126, 7569, 12363, 13187, 5034, 8364, 13189, 2049, 7100, 13192, 5409, 6886, 4808, 10532, 13193, 10641, 10805, 9719, 587, 5379, 13115, 13214, 13215, 13250, 13379, 8352, 8365, 1631, 13188, 13385, 13386, 7011, 10529, 8289, 10572, 8317, 13387, 8349, 8360, 8975, 13388, 13377, 13216, 13389, 13390, 13391, 13392, 13393, 12370, 13394, 13117, 13396, 10613, 6882, 13173, 13397, 13176, 13402, 13407, 8525, 13413, 13414, 13419, 13420, 8377, 13424, 8366, 4850, 13087, 6846, 12359, 10601, 13425, 2]
 
 // Module 13185 (UserProfileContent)
 import react2 from "react" /* 576 */;
@@ -14,9 +14,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
-import Constants3 from "Constants" /* 8308 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
+import Constants3 from "Constants" /* 8303 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
 import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10613 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 10805 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12363 */;
@@ -36,13 +36,13 @@ import UserProfileRemediatedNoticeDefault from "UserProfileRemediatedNotice" /* 
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
-import WishlistStore from "WishlistStore" /* 8981 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
+import WishlistStore from "WishlistStore" /* 8976 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import Constants from "Constants" /* 6905 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -274,7 +274,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryInfo(
   }
   let obj2 = trackUserProfileAction(4962);
   userTag = obj2.useUserTag(user);
-  const tmp7 = trackUserProfileAction(8369)(displayProfile);
+  const tmp7 = trackUserProfileAction(8364)(displayProfile);
   if (tmp4) {
     let flag;
     if (displayProfile != null) {
@@ -321,7 +321,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryInfo(
       if (cResult[6] === displayNameOverride) {
         tmp19 = cResult[7];
       }
-      const tmpResult6 = userTag(8315);
+      const tmpResult6 = userTag(8310);
       trackUserProfileAction = tmpResult6.useUserProfileAnalyticsContext().trackUserProfileAction;
       if (cResult[8] === trackUserProfileAction) {
         let tmp22;
@@ -570,7 +570,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryInfo(
   let obj = trackUserProfileAction(4962);
   const userTag = obj.useUserTag(user);
   let obj2 = { userId: user.id, enabled: showBadgeDirectoryNuxCoachmark, fetchCatalog: false, location: "UserProfileContent" };
-  const tmp4 = trackUserProfileAction(8369)(displayProfile);
+  const tmp4 = trackUserProfileAction(8364)(displayProfile);
   const useBadgeDirectoryNuxCoachmarkVariant = userTag(13189).useBadgeDirectoryNuxCoachmarkVariant;
   userTag(13189);
   if (showBadgeDirectoryNuxCoachmark) {
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryInfo(
       tmp15 = displayNameOverride;
     }
   }
-  const tmp5Result4 = userTag(8315);
+  const tmp5Result4 = userTag(8310);
   trackUserProfileAction = tmp5Result4.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items2 = [trackUserProfileAction, userTag];
   const callback = react.useCallback(() => {
@@ -671,8 +671,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
   let obj = guildId(576);
   const cResult = obj.c(24);
   guildId = guildId.guildId;
-  const tmp5 = trackUserProfileAction(8368)();
-  const obj2 = guildId(8315);
+  const tmp5 = trackUserProfileAction(8363)();
+  const obj2 = guildId(8310);
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -720,7 +720,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { size: "sm", color: trackUserProfileAction(587).colors.WHITE };
-        const PencilIcon = tmp(9724).PencilIcon;
+        const PencilIcon = tmp(9719).PencilIcon;
         const tmp17 = closure_20(PencilIcon, obj4);
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -774,7 +774,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
           const obj6 = { variant: "primary", icon: closure_20(PencilIcon2, obj7), text: intl3.string(guildId(1126).t["PKQB/H"]), onPress: tmp14, grow: true };
           const Button = tmp(5379).Button;
           obj7 = { size: "sm", color: trackUserProfileAction(587).colors.WHITE };
-          PencilIcon2 = tmp(9724).PencilIcon;
+          PencilIcon2 = tmp(9719).PencilIcon;
           intl3 = tmp(1126).intl;
           tmp26 = closure_20(Button, obj6);
         }
@@ -826,8 +826,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
   let tmp6Result;
   guildId = guildId.guildId;
   let trackUserProfileAction;
-  const tmp3 = trackUserProfileAction(8368)();
-  let obj = guildId(8315);
+  const tmp3 = trackUserProfileAction(8363)();
+  let obj = guildId(8310);
   const tmp = trackUserProfileAction;
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [GuildStore];
@@ -852,7 +852,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
   const tmp7 = trackUserProfileAction(13115);
   Button = guildId(5379).Button;
   obj5 = { size: "sm", color: trackUserProfileAction(587).colors.WHITE };
-  PencilIcon = guildId(9724).PencilIcon;
+  PencilIcon = guildId(9719).PencilIcon;
   if (null != stateFromStores) {
     const intl2 = tmp4(1126).intl;
     stringResult = intl2.string(tmp4(1126).t.HmFaFB);
@@ -877,7 +877,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSe
     };
     const Button2 = tmp4(5379).Button;
     obj7 = { size: "sm", color: tmp(587).colors.WHITE };
-    PencilIcon2 = tmp4(9724).PencilIcon;
+    PencilIcon2 = tmp4(9719).PencilIcon;
     intl3 = tmp4(1126).intl;
     tmp6Result = tmp6(Button2, obj6);
   }

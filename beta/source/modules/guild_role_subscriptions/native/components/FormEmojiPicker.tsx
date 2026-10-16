@@ -1,13 +1,13 @@
 // Module ID: 18579
 // Function ID: 18580
 // Name: FormEmojiPicker
-// Dependencies: [19, 1085, 1393, 21, 5092, 5906, 587, 558, 576, 14125, 4764, 15534, 15533, 6157, 18580, 9427, 4768, 1126, 1200, 11018, 8674, 2]
+// Dependencies: [19, 1085, 1393, 21, 5092, 5906, 587, 558, 576, 14125, 4764, 15534, 15533, 6157, 18580, 9422, 4768, 1126, 1200, 11018, 8669, 2]
 
 // Module 18579 (FormEmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -120,7 +120,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
               }
               const obj3 = { style: tmp19, accessibilityRole: "link", onPress: tmp18, children: items };
               items = [tmp12, tmp25, tmp29];
-              const tmp34 = closure_5(onChange(8674), obj3);
+              const tmp34 = closure_5(onChange(8669), obj3);
               cResult[21] = tmp12;
               cResult[22] = tmp18;
               cResult[23] = tmp19;
@@ -265,7 +265,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   const items2 = [tmp.content, ];
   const obj5 = { style: items2, children: allEmojiNamesString };
   items2[1] = null != emojiByIdOrName ? tmp.text : tmp.placeholder;
-  const tmp2Result4 = onChange(8674);
+  const tmp2Result4 = onChange(8669);
   const LegacyText = tmp6(1200).LegacyText;
   const tmp13 = closure_5;
   if (null != emojiByIdOrName) {

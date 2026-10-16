@@ -1,7 +1,7 @@
 // Module ID: 17696
 // Function ID: 17697
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 5761, 1390, 14006, 1085, 2062, 21, 5092, 587, 558, 576, 4827, 1631, 5056, 9205, 7094, 6839, 6894, 5377, 1126, 5088, 12871, 5379, 6840, 4825, 5763, 1415, 1200, 7577, 504, 14007, 6875, 4938, 2049, 2]
+// Dependencies: [32, 19, 17, 5761, 1390, 14006, 1085, 2062, 21, 5092, 587, 558, 576, 4827, 1631, 5056, 9200, 7094, 6839, 6894, 5377, 1126, 5088, 12871, 5379, 6840, 4825, 5763, 1415, 1200, 7572, 504, 14007, 6875, 4938, 2049, 2]
 
 // Module 17696 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
@@ -19,7 +19,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import PlatformsDefault from "Platforms" /* 5763 */;
 import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6875 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -43,7 +43,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const authorizeConnectionDefault = tmp(9205);
+const authorizeConnectionDefault = tmp(9200);
 const View = react_native.View;
 ({ AnalyticsLocations: c9, PlatformTypes: c10, UserSettingsSections: unpackModuleId } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -547,9 +547,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnionIcon(th
   }
   if (cResult[1] !== str) {
     const obj3 = { children: syncedClientThemes(LinearGradient, obj4) };
-    const Defs = tmp(7577).Defs;
+    const Defs = tmp(7572).Defs;
     obj4 = { id: "a", x1: 0.5, y1: 2, x2: 24.5, y2: 2, gradientUnits: "userSpaceOnUse", children: items };
-    LinearGradient = tmp(7577).LinearGradient;
+    LinearGradient = tmp(7572).LinearGradient;
     const obj5 = { stopColor: str, stopOpacity: 0.3 };
     items = [map1(inlineStyles.Stop, obj5), ];
     const obj6 = { offset: 1, stopColor: str, stopOpacity: 0.7 };
@@ -592,9 +592,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnionIcon(th
   const tmp4 = inlineStylesDefault;
   items[0] = map1(inlineStyles.Path, { fill: "url(#a)", d: "M1.7002 0.799805C2.36285 0.79991 2.90039 1.33732 2.90039 2C2.90029 2.66259 2.36278 3.20009 1.7002 3.2002C1.03752 3.2002 0.500106 2.66265 0.5 2C0.5 1.33726 1.03745 0.799805 1.7002 0.799805ZM8.90039 0.799805C9.56297 0.799989 10.0996 1.33737 10.0996 2C10.0995 2.66254 9.56291 3.20001 8.90039 3.2002C8.23771 3.2002 7.70029 2.66266 7.7002 2C7.7002 1.33726 8.23765 0.799805 8.90039 0.799805ZM16.0996 0.799805C16.7624 0.799805 17.2998 1.33726 17.2998 2C17.2997 2.66266 16.7623 3.2002 16.0996 3.2002C15.4371 3.19996 14.9005 2.66251 14.9004 2C14.9004 1.3374 15.4371 0.800042 16.0996 0.799805ZM23.2998 0.799805C23.9625 0.799805 24.5 1.33726 24.5 2C24.4999 2.66266 23.9625 3.2002 23.2998 3.2002C22.6372 3.20006 22.0997 2.66258 22.0996 2C22.0996 1.33734 22.6372 0.799936 23.2998 0.799805Z" });
   const obj2 = { children: syncedClientThemes(LinearGradient, obj3) };
-  const Defs = tmp(7577).Defs;
+  const Defs = tmp(7572).Defs;
   obj3 = { id: "a", x1: 0.5, y1: 2, x2: 24.5, y2: 2, gradientUnits: "userSpaceOnUse", children: items1 };
-  LinearGradient = tmp(7577).LinearGradient;
+  LinearGradient = tmp(7572).LinearGradient;
   items1 = [map1(inlineStyles.Stop, { stopColor: str, stopOpacity: 0.3 }), map1(inlineStyles.Stop, { offset: 1, stopColor: str, stopOpacity: 0.7 })];
   items[1] = map1(Defs, obj2);
   return syncedClientThemes(tmp4, size);

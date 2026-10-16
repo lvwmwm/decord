@@ -1,9 +1,9 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8075
+// Function ID: 8076
 // Dependencies: [4774, 4769, 6940, 2]
 // Exports: getPriceString
 
-// Module 8080
+// Module 8075
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4774 */;

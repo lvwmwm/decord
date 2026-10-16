@@ -1,9 +1,9 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9030
+// Function ID: 9031
 // Name: PremiumFeaturesBackground
 // Dependencies: [109, 19, 7152, 1392, 21, 5092, 587, 558, 576, 683, 5391, 1105, 2]
 
-// Module 9035 (PremiumFeaturesBackground)
+// Module 9030 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;

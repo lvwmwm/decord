@@ -1,7 +1,7 @@
 // Module ID: 17014
 // Function ID: 17015
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 2116, 4743, 1085, 2072, 21, 15520, 504, 9399, 5088, 5300, 1126, 6145, 4702, 1200, 17008, 5056, 17015, 2000, 558, 576, 17004, 8188, 5379, 9466, 2]
+// Dependencies: [5, 32, 19, 17, 2116, 4743, 1085, 2072, 21, 15520, 504, 9394, 5088, 5300, 1126, 6145, 4702, 1200, 17008, 5056, 17015, 2000, 558, 576, 17004, 8183, 5379, 9461, 2]
 
 // Module 17014 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9399 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9394 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

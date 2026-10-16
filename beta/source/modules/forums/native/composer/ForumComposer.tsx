@@ -1,10 +1,10 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9691
+// Function ID: 9692
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5081, 1205, 7244, 2125, 4750, 2116, 7375, 7908, 1390, 1085, 2072, 2062, 1241, 1125, 1096, 21, 5092, 587, 6852, 504, 4969, 4987, 9260, 5421, 9327, 7370, 6977, 4962, 6665, 4850, 7919, 5103, 7179, 12, 9329, 9697, 9699, 9710, 5300, 1126, 9711, 9713, 1382, 9714, 9715, 9718, 2049, 9719, 2000, 9720, 9721, 8580, 1200, 6976, 1629, 1501, 6622, 8304, 9725, 5088, 9726, 9798, 10013, 10014, 558, 576, 9076, 10015, 10019, 7089, 12817, 8215, 10023, 7904, 5056, 10461, 8961, 5379, 8199, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 1205, 7239, 2125, 4750, 2116, 7370, 7903, 1390, 1085, 2072, 2062, 1241, 1125, 1096, 21, 5092, 587, 6852, 504, 4969, 4987, 9255, 5421, 9322, 7365, 6977, 4962, 6665, 4850, 7914, 5103, 7174, 12, 9324, 9692, 9694, 9705, 5300, 1126, 9706, 9708, 1382, 9709, 9710, 9713, 2049, 9714, 2000, 9715, 9716, 8575, 1200, 6976, 1629, 1501, 6622, 8299, 9720, 5088, 9721, 9793, 10008, 10009, 558, 576, 9071, 10010, 10014, 7089, 12817, 8210, 10018, 7899, 5056, 10461, 8956, 5379, 8194, 2]
 // Exports: default
 
-// Module 9696 (ForumComposer)
+// Module 9691 (ForumComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
@@ -22,17 +22,17 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6976 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import MessageParser from "MessageParser" /* 7370 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7375 */;
-import Tracking from "Tracking" /* 7904 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import useFocusHandlers from "useFocusHandlers" /* 9713 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 9721 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 9726 */;
-import AppliedForumTag from "AppliedForumTag" /* 10015 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import MessageParser from "MessageParser" /* 7365 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7370 */;
+import Tracking from "Tracking" /* 7899 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import useFocusHandlers from "useFocusHandlers" /* 9708 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 9716 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 9721 */;
+import AppliedForumTag from "AppliedForumTag" /* 10010 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ import ThemeStore from "ThemeStore" /* 1205 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 1096 */;
@@ -77,9 +77,9 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const TagIcon = tmp(9076);
-const DismissibleActionSheet = tmp(10014);
-const ImageCarouselDefault = tmp5(10019);
+const TagIcon = tmp(9071);
+const DismissibleActionSheet = tmp(10009);
+const ImageCarouselDefault = tmp5(10014);
 function ActionBar(channel) {
   let Button;
   let ChatIcon;
@@ -174,7 +174,7 @@ function ActionBar(channel) {
     if (tmp8) {
       ImageIcon = tmp2(12817).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(8215).ImageIcon;
+      ImageIcon = tmp2(8210).ImageIcon;
     }
     tmp16Result = tmp16(HeaderActionButton, obj6);
   }
@@ -183,7 +183,7 @@ function ActionBar(channel) {
     const obj7 = {
       accessibilityLabel: intl2.string(tmp2(1126).t["112vVE"]),
       style: items6,
-      IconComponent: tmp2(9076).TagIcon,
+      IconComponent: tmp2(9071).TagIcon,
       onPress: function handlePressTagsButton() {
           let intl;
           metroRequire.dismiss();
@@ -219,9 +219,9 @@ function ActionBar(channel) {
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(9713).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(9708).PostComposerInputs.CONTENT;
   if (tmp18) {
-    const obj8 = { accessibilityLabel: intl3.string(tmp2(1126).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(8961).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
+    const obj8 = { accessibilityLabel: intl3.string(tmp2(1126).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(8956).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
     const HeaderActionButton3 = tmp2(7089).HeaderActionButton;
     intl3 = tmp2(1126).intl;
     tmp18 = closure_29(HeaderActionButton3, obj8);
@@ -253,7 +253,7 @@ function ActionBar(channel) {
     submitting = !canPost;
   }
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  ChatIcon = tmp2(8199).ChatIcon;
+  ChatIcon = tmp2(8194).ChatIcon;
   items5[3] = closure_29(closure_9, obj9);
   items3[1] = closure_30(closure_9, obj5);
   return closure_30(closure_9, obj3);
@@ -1190,7 +1190,7 @@ export default function ForumComposer(parentChannel) {
               }
               if (tmp7Result !== name2) {
                 const obj = { name: tmp7Result };
-                const tmp5Result = tmp5(7919);
+                const tmp5Result = tmp5(7914);
                 tmp5Result.changeThreadSettings(parentChannel.id, obj);
                 closure_15(tmp7Result);
               }

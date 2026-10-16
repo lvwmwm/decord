@@ -1,10 +1,10 @@
 // Module ID: 17958
 // Function ID: 17959
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11972, 11970, 11973, 558, 4850, 17118, 17755, 4818, 587, 9580, 17675, 17756, 11976, 10373, 2]
+// Dependencies: [11972, 11970, 11973, 558, 4850, 17118, 17755, 4818, 587, 9575, 17675, 17756, 11976, 10373, 2]
 
 // Module 17958 (usePIPAvoidanceSpecs)
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;

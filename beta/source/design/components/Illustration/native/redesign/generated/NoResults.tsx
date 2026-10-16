@@ -1,15 +1,15 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8354
+// Function ID: 8355
 // Name: generated/NoResults
-// Dependencies: [19, 17, 21, 8360, 8361, 8362, 8363, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8355, 8356, 8357, 8358, 558, 576, 4969, 2]
 // Exports: getNoResultsSource
 
-// Module 8359 (generated/NoResults)
+// Module 8354 (generated/NoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4969 */;
-import _mod8360 from "module_8360" /* 8360 */;
+import _mod8355 from "module_8355" /* 8355 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoResults
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8360;
+    const tmpResult = _mod8355;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoResults
 }) : (function useNoResultsSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8360;
+  const obj2 = _mod8355;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResults(ar
   return <Image source={tmp} />;
 });
 function getNoResultsSource(theme) {
-  const obj = _mod8360;
+  const obj = _mod8355;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

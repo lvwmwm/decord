@@ -1,7 +1,7 @@
 // Module ID: 17012
 // Function ID: 17013
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2065, 21, 5092, 587, 558, 576, 6663, 5088, 5056, 17013, 2000, 9561, 15533, 1200, 504, 5421, 1126, 8159, 15520, 17008, 6157, 17014, 2]
+// Dependencies: [32, 19, 17, 2065, 21, 5092, 587, 558, 576, 6663, 5088, 5056, 17013, 2000, 9556, 15533, 1200, 504, 5421, 1126, 8154, 15520, 17008, 6157, 17014, 2]
 
 // Module 17012 (GuildRoleSubscriptionPurchasePreviewCard)
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
-import LayoutUtils from "LayoutUtils" /* 9561 */;
+import LayoutUtils from "LayoutUtils" /* 9556 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import EmojiIconDefault from "EmojiIcon" /* 15533 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -198,7 +198,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiG
   }
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
-  const GappedList = tmp(9561).GappedList;
+  const GappedList = tmp(9556).GappedList;
   const tmp12 = closure_6;
   if (cResult[10] !== guildId) {
     class I {
@@ -405,7 +405,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       tmp12 = cResult[5];
     }
     if (cResult[6] !== stateFromStores) {
-      const tmpResult2 = channelId(8159);
+      const tmpResult2 = channelId(8154);
       const channelIcon = tmpResult2.getChannelIcon(stateFromStores);
       cResult[6] = stateFromStores;
       cResult[7] = channelIcon;
@@ -483,7 +483,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
     const obj3 = { size: channelId(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
     const Icon = tmp(1200).Icon;
-    tmpResult = channelId(8159);
+    tmpResult = channelId(8154);
     items2 = [closure_8(Icon, obj3), closure_8(channelId(1200).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
     items2[2] = closure_8(channelId(5088).Text, obj4);
@@ -740,7 +740,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                             },
                 children: items4
               };
-              GappedList = tmp2(9561).GappedList;
+              GappedList = tmp2(9556).GappedList;
               const tmp50 = closure_10;
               if (size > 0) {
                 const obj15 = { children: items2 };
@@ -898,7 +898,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         },
       children: items6
     };
-    GappedList = tmp6(9561).GappedList;
+    GappedList = tmp6(9556).GappedList;
     const tmp16 = closure_10;
     if (size > 0) {
       const obj13 = { children: items4 };

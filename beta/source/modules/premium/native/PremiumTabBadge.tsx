@@ -1,7 +1,7 @@
 // Module ID: 15264
 // Function ID: 15265
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4775, 1392, 7152, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10095, 8972, 1200, 15265, 7170, 8090, 4769, 4938, 2049, 504, 7100, 8086, 8085, 13711, 1126, 1382, 5391, 1105, 2]
+// Dependencies: [32, 19, 17, 4775, 1392, 7152, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10095, 8967, 1200, 15265, 7165, 8085, 4769, 4938, 2049, 504, 7100, 8081, 8080, 13711, 1126, 1382, 5391, 1105, 2]
 
 // Module 15264 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
@@ -23,11 +23,11 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
 import ColorConstants from "ColorConstants" /* 7152 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8085 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8086 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8090 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7165 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8080 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8081 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8085 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
 import MarketingComponentType from "MarketingComponentType" /* 10095 */;
 import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

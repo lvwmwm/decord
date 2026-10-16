@@ -1,7 +1,7 @@
 // Module ID: 14841
 // Function ID: 14842
 // Name: useOpenChangeBannerActionSheet
-// Dependencies: [19, 5056, 14842, 2000, 8292, 8289, 14853, 14853, 2]
+// Dependencies: [19, 5056, 14842, 2000, 8287, 8284, 14853, 14853, 2]
 // Exports: default
 
 // Module 14841 (useOpenChangeBannerActionSheet)
@@ -11,7 +11,7 @@ import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const UserProfileActionCreators = tmp3(8292);
+const UserProfileActionCreators = tmp3(8287);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useOpenChangeBannerActionSheet.tsx");
 
 export default function useOpenChangeBannerActionSheet(user) {

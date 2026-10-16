@@ -1,7 +1,7 @@
 // Module ID: 18749
 // Function ID: 18750
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7183, 14650, 502, 1085, 12128, 21, 558, 576, 504, 5930, 1382, 7506, 14690, 12131, 7197, 1265, 5396, 14127, 1628, 8483, 6727, 17673, 17732, 5305, 14822, 2]
+// Dependencies: [32, 19, 17, 7178, 14650, 502, 1085, 12128, 21, 558, 576, 504, 5930, 1382, 7501, 14690, 12131, 7192, 1265, 5396, 14127, 1628, 8478, 6727, 17673, 17732, 5305, 14822, 2]
 
 // Module 18749 (AppShare)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7197 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7192 */;
 import Constants2 from "Constants" /* 12128 */;
 import ShareScreenDefault from "ShareScreen" /* 14127 */;
 import AccessibilityManagerDefault from "AccessibilityManager" /* 14690 */;
@@ -18,7 +18,7 @@ import AppContainerDefault from "AppContainer" /* 14822 */;
 import AppToastContainerDefault from "AppToastContainer" /* 17732 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7183 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7178 */;
 import ShareStore from "ShareStore" /* 14650 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
@@ -70,7 +70,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAut
         const obj2 = PlatformUtils;
         const tmp2 = importDefault;
         if (obj2.isAndroid()) {
-          const tmp2Result = tmp2(7506);
+          const tmp2Result = tmp2(7501);
           const notificationAuthorization = tmp2Result.requestNotificationAuthorization();
         }
       }
@@ -101,7 +101,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAut
       const obj2 = PlatformUtils;
       const tmp2 = importDefault;
       if (obj2.isAndroid()) {
-        const tmp2Result = tmp2(7506);
+        const tmp2Result = tmp2(7501);
         const notificationAuthorization = tmp2Result.requestNotificationAuthorization();
       }
     }
@@ -365,7 +365,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
       const tmp11Result = ShareScreenDefault;
       const tmpResult = tmp(1628);
       if (tmpResult.isMetaQuest()) {
-        exitApp = tmp11(8483).close;
+        exitApp = tmp11(8478).close;
       } else {
         exitApp = BackHandler.exitApp;
       }
@@ -439,7 +439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
     const obj3 = require("MetaQuestUtils");
     const tmp15 = _require;
     if (obj3.isMetaQuest()) {
-      exitApp = tmp4(8483).close;
+      exitApp = tmp4(8478).close;
     } else {
       exitApp = BackHandler.exitApp;
     }

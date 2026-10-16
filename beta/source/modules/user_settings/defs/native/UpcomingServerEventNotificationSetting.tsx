@@ -1,12 +1,12 @@
 // Module ID: 15810
 // Function ID: 15811
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [7993, 558, 15811, 10663, 1126, 2041, 15812, 2]
+// Dependencies: [7988, 558, 15811, 10663, 1126, 2041, 15812, 2]
 
 // Module 15810 (UpcomingServerEventNotificationSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15811 */;
 import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15812 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

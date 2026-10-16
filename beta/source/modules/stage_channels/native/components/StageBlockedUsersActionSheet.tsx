@@ -1,9 +1,9 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7713
+// Function ID: 7714
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4760, 5948, 5892, 21, 5092, 587, 558, 576, 504, 1126, 1200, 7719, 5088, 5056, 7720, 5379, 6814, 6761, 6840, 2]
+// Dependencies: [32, 19, 17, 4760, 5948, 5892, 21, 5092, 587, 558, 576, 504, 1126, 1200, 7714, 5088, 5056, 7715, 5379, 6814, 6761, 6840, 2]
 
-// Module 7718 (StageBlockedUsersActionSheet)
+// Module 7713 (StageBlockedUsersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -168,7 +168,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restri
             }
           }
           const obj2 = { style: tmp4.iconContainer, children: closure_9(Icon, obj3) };
-          obj3 = { style: tmp4.icon, source: user(7719), color: user(587).unsafe_rawColors.WHITE };
+          obj3 = { style: tmp4.icon, source: user(7714), color: user(587).unsafe_rawColors.WHITE };
           Icon = tmp(1200).Icon;
           tmp23 = closure_9(View, obj2);
         }
@@ -239,7 +239,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restri
   items2 = [closure_9(CutoutableAvatarImage, obj5), ];
   if (speaker) {
     const obj6 = { style: tmp.iconContainer, children: closure_9(Icon, obj7) };
-    obj7 = { style: tmp.icon, source: user(7719), color: user(587).unsafe_rawColors.WHITE };
+    obj7 = { style: tmp.icon, source: user(7714), color: user(587).unsafe_rawColors.WHITE };
     Icon = tmp2(1200).Icon;
     speaker = tmp11(tmp10, obj6);
   }
@@ -585,9 +585,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
     if (cResult[2] === onAccept) {
       tmp8 = cResult[3];
     }
-    const tmp2Result = channel(7720);
+    const tmp2Result = channel(7715);
     const stageBlockedUsers = tmp2Result.useStageBlockedUsers(channel.id);
-    const tmp2Result2 = channel(7720);
+    const tmp2Result2 = channel(7715);
     const stageIgnoredUsers = tmp2Result2.useStageIgnoredUsers(channel.id);
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -801,9 +801,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
   const tmp3 = items1(react.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  let obj = channel(7720);
+  let obj = channel(7715);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  const obj2 = channel(7720);
+  const obj2 = channel(7715);
   const stageIgnoredUsers = obj2.useStageIgnoredUsers(channel.id);
   const length = stageBlockedUsers.length;
   const length2 = stageIgnoredUsers.length;

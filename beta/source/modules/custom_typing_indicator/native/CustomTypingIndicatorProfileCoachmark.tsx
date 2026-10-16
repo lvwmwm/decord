@@ -1,7 +1,7 @@
 // Module ID: 17549
 // Function ID: 17550
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 558, 576, 1126, 3851, 6852, 6879, 7094, 9443, 11650, 11651, 11649, 1398, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 558, 576, 1126, 3851, 6852, 6879, 7094, 9438, 11650, 11651, 11649, 1398, 2]
 
 // Module 17549 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;

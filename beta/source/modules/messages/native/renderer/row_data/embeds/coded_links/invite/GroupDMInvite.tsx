@@ -1,14 +1,14 @@
 // Module ID: 13515
 // Function ID: 13516
 // Name: GroupDMInvite
-// Dependencies: [2065, 4760, 1390, 7424, 7889, 9611, 1126, 13155, 1418, 5421, 2]
+// Dependencies: [2065, 4760, 1390, 7419, 7884, 9606, 1126, 13155, 1418, 5421, 2]
 // Exports: createGroupDMInvite
 
 // Module 13515 (GroupDMInvite)
 import intl7 from "intl" /* 1126 */;
-import Constants from "Constants" /* 7424 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9611 */;
+import Constants from "Constants" /* 7419 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9606 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

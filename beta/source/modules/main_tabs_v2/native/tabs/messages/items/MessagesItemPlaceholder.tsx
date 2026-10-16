@@ -1,12 +1,12 @@
 // Module ID: 16475
 // Function ID: 16476
 // Name: MessagesItemPlaceholder
-// Dependencies: [19, 21, 558, 576, 8693, 2]
+// Dependencies: [19, 21, 558, 576, 8688, 2]
 
 // Module 16475 (MessagesItemPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8693 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8688 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

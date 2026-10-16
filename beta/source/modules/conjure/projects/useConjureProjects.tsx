@@ -1,7 +1,7 @@
 // Module ID: 12997
 // Function ID: 12998
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5440, 7321, 4748, 2087, 4750, 4939, 12998, 10652, 1126, 3849, 558, 576, 6948, 12342, 11409, 1453, 504, 6946, 2]
+// Dependencies: [32, 19, 5440, 7316, 4748, 2087, 4750, 4939, 12998, 10652, 1126, 3849, 558, 576, 6948, 12342, 11409, 1453, 504, 6946, 2]
 // Exports: describeConjureProjectRow
 
 // Module 12997 (useConjureProjects)
@@ -15,7 +15,7 @@ import ConjureActivity from "ConjureActivity" /* 12342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

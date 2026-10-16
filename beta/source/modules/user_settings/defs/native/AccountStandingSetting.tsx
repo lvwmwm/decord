@@ -1,12 +1,12 @@
 // Module ID: 15013
 // Function ID: 15014
 // Name: AccountStandingSetting
-// Dependencies: [7993, 1085, 10663, 1126, 15014, 15017, 2]
+// Dependencies: [7988, 1085, 10663, 1126, 15014, 15017, 2]
 
 // Module 15013 (AccountStandingSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 15014 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 17778
 // Function ID: 17779
 // Name: QuestProgressBottomSheet
-// Dependencies: [5, 19, 17, 10807, 7391, 5972, 6067, 21, 5092, 587, 558, 576, 504, 12983, 5975, 7574, 8772, 1126, 8327, 7413, 6858, 10962, 9171, 12980, 15401, 10804, 5056, 9168, 8482, 9193, 6157, 5391, 1105, 12975, 8729, 15430, 5088, 5377, 15396, 5379, 6840, 2]
+// Dependencies: [5, 19, 17, 10807, 7386, 5972, 6067, 21, 5092, 587, 558, 576, 504, 12983, 5975, 7569, 8767, 1126, 8322, 7408, 6858, 10962, 9166, 12980, 15401, 10804, 5056, 9163, 8477, 9188, 6157, 5391, 1105, 12975, 8724, 15430, 5088, 5377, 15396, 5379, 6840, 2]
 
 // Module 17778 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 587 */;
@@ -10,16 +10,16 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import QuestConstants from "QuestConstants" /* 5972 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8482 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8772 */;
-import QuestUtils from "QuestUtils" /* 9168 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
+import IconButton2 from "IconButton" /* 7569 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8767 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import FramesStore from "FramesStore" /* 10807 */;
-import QuestStore from "QuestStore" /* 7391 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -181,12 +181,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
   let obj = quest(576);
   const cResult = obj.c(79);
   quest = quest.quest;
-  let obj2 = quest(8327);
+  let obj2 = quest(8322);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   const tmp5 = closure_13(isScreenLandscape);
   const gradientEnd = closure_14().gradientEnd;
   if (cResult[0] !== quest) {
-    let tmpResult = tmp(7413);
+    let tmpResult = tmp(7408);
     const activityApplicationId = tmpResult.getActivityApplicationId(quest);
     cResult[0] = quest;
     cResult[1] = activityApplicationId;
@@ -216,7 +216,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
     tmp11 = cResult[4];
   }
   const url = claim(10962)(tmp11).url;
-  const tmpResult7 = tmp(9171);
+  const tmpResult7 = tmp(9166);
   const questTaskDetails = tmpResult7.useQuestTaskDetails(quest);
   if (cResult[5] !== quest.config.messages.questName) {
     const intl = tmp(1126).intl;
@@ -247,7 +247,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
       }
       tmp19 = null == claimedAt;
     }
-    const tmpResult9 = tmp(9171);
+    const tmpResult9 = tmp(9166);
     const isQuestAccessSuspended = tmpResult9.useIsQuestAccessSuspended();
     if (cResult[10] !== quest) {
       let obj5 = { quest, questContent: tmp(5975).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(5975).QuestContent.RUNNING_ACTIVITY };
@@ -519,13 +519,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
   quest = quest.quest;
   claim = undefined;
   let tmp = quest;
-  let obj = quest(8327);
+  let obj = quest(8322);
   const isScreenLandscape = obj.useIsScreenLandscape();
   const tmp4 = closure_13(isScreenLandscape);
   const gradientEnd = closure_14().gradientEnd;
   const useGetOrFetchApplication = quest(6858).useGetOrFetchApplication;
   const tmp5 = quest(6858);
-  let obj2 = quest(7413);
+  let obj2 = quest(7408);
   const getOrFetchApplication = useGetOrFetchApplication(obj2.getActivityApplicationId(quest));
   let id;
   const tmp8 = claim(10962);
@@ -533,7 +533,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
     id = getOrFetchApplication.id;
   }
   const url = tmp8({ applicationId: id, size: 600, names: ["embedded_cover"] }).url;
-  let tmpResult = tmp(9171);
+  let tmpResult = tmp(9166);
   const questTaskDetails = tmpResult.useQuestTaskDetails(quest);
   const intl = tmp(1126).intl;
   let obj3 = { questName: quest.config.messages.questName };
@@ -556,7 +556,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
     }
     tmp15 = null == claimedAt;
   }
-  const tmpResult5 = tmp(9171);
+  const tmpResult5 = tmp(9166);
   const isQuestAccessSuspended = tmpResult5.useIsQuestAccessSuspended();
   const tmpResult6 = tmp(15401);
   let obj5 = { quest, questContent: tmp(5975).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(5975).QuestContent.RUNNING_ACTIVITY };
@@ -675,8 +675,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestP
   }
   items3[2] = closure_11(closure_5, obj10);
   const obj11 = { style: tmp4.contextMenuContainer, children: items5 };
-  const obj12 = { icon: claim(8729), onPress: callback2, variant: "secondary-overlay", size: "sm", accessibilityLabel: intl2.string(tmp(1126).t.RDE0Sc) };
-  const IconButton = tmp(7574).IconButton;
+  const obj12 = { icon: claim(8724), onPress: callback2, variant: "secondary-overlay", size: "sm", accessibilityLabel: intl2.string(tmp(1126).t.RDE0Sc) };
+  const IconButton = tmp(7569).IconButton;
   intl2 = tmp(1126).intl;
   items5 = [closure_11(IconButton, obj12), ];
   const obj13 = { quest, showShareLink: true, location: tmp12.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(5975).QuestContent.RUNNING_ACTIVITY, children: contextMenuButton };

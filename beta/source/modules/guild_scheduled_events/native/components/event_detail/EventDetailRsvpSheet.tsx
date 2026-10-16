@@ -1,10 +1,10 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8777
+// Function ID: 8778
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5108, 1390, 1096, 21, 5092, 587, 5906, 558, 576, 8671, 8783, 1126, 5088, 6157, 8580, 6852, 504, 1200, 4962, 8766, 8304, 8784, 6307, 6154, 2]
+// Dependencies: [19, 17, 5108, 1390, 1096, 21, 5092, 587, 5906, 558, 576, 8666, 8778, 1126, 5088, 6157, 8575, 6852, 504, 1200, 4962, 8761, 8299, 8779, 6307, 6154, 2]
 // Exports: default
 
-// Module 8782 (EventDetailRsvpSheet)
+// Module 8777 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,11 +13,11 @@ import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import BottomSheetModal from "BottomSheetModal" /* 6307 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import Form from "Form" /* 8580 */;
-import StageSparkleDefault from "StageSparkle" /* 8671 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8783 */;
-import EventDetailTypes from "EventDetailTypes" /* 8784 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import Form from "Form" /* 8575 */;
+import StageSparkleDefault from "StageSparkle" /* 8666 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8778 */;
+import EventDetailTypes from "EventDetailTypes" /* 8779 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -416,7 +416,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   };
   tmp7Result = null;
-  const FormRow = eventUser(8580).FormRow;
+  const FormRow = eventUser(8575).FormRow;
   if (null != stateFromStores) {
     const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1200).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
     const Avatar = tmp4(1200).Avatar;
@@ -425,7 +425,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(8766);
+  tmp2Result = analyticsLocations(8761);
   if (member != null) {
     nick = member.nick;
   }
@@ -553,7 +553,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp8 = closure_7(StaticMessageContainer, obj6);
   } else {
-    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8580).FormDivider, keyExtractor };
+    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8575).FormDivider, keyExtractor };
     items4 = [tmp.userList, ];
     class StaticMessageContainer {
       constructor(children) {

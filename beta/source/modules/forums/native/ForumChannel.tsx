@@ -1,7 +1,7 @@
 // Module ID: 12529
 // Function ID: 12530
 // Name: ForumChannel
-// Dependencies: [19, 17, 4751, 6060, 2065, 7244, 5891, 11677, 1085, 1096, 21, 5092, 587, 5906, 558, 576, 9307, 1126, 5088, 9327, 7004, 504, 12530, 6974, 9, 8879, 8881, 8885, 6862, 6185, 5056, 12532, 2000, 5379, 11839, 12533, 9076, 9331, 12534, 5421, 11704, 11676, 12535, 7904, 8625, 10226, 4809, 5046, 6972, 6852, 6879, 8188, 10479, 9329, 12538, 7919, 9692, 9723, 5057, 5058, 9721, 6145, 6665, 10477, 8549, 12542, 11985, 2]
+// Dependencies: [19, 17, 4751, 6060, 2065, 7239, 5891, 11677, 1085, 1096, 21, 5092, 587, 5906, 558, 576, 9302, 1126, 5088, 9322, 7004, 504, 12530, 6974, 9, 8874, 8876, 8880, 6862, 6185, 5056, 12532, 2000, 5379, 11839, 12533, 9071, 9326, 12534, 5421, 11704, 11676, 12535, 7899, 8620, 10226, 4809, 5046, 6972, 6852, 6879, 8183, 10479, 9324, 12538, 7914, 9687, 9718, 5057, 5058, 9716, 6145, 6665, 10477, 8544, 12542, 11985, 2]
 
 // Module 12529 (ForumChannel)
 import TTITrackerDefault from "TTITracker" /* 9 */;
@@ -16,12 +16,12 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ForumPostDataLoader from "ForumPostDataLoader" /* 7004 */;
-import Tracking from "Tracking" /* 7904 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8885 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9307 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9692 */;
+import Tracking from "Tracking" /* 7899 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8880 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9302 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9687 */;
 import ForumPostDefault from "ForumPost" /* 11676 */;
 import ForumChannelStore from "ForumChannelStore" /* 11677 */;
 import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 11704 */;
@@ -30,7 +30,7 @@ import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6060 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import DraftStore from "DraftStore" /* 7244 */;
+import DraftStore from "DraftStore" /* 7239 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -106,7 +106,7 @@ function TagFilter(channel) {
       obj.openLazy(asyncRequire(12533, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_14(channel(9076).TagIcon, { size: "xxs" })
+    icon: closure_14(channel(9071).TagIcon, { size: "xxs" })
   };
   const Button = channel(5379).Button;
   intl = channel(1126).intl;
@@ -1617,7 +1617,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(7919).changeThreadSettings;
+        const changeThreadSettings = tmp2(7914).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {
@@ -1716,7 +1716,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(7919).changeThreadSettings;
+        const changeThreadSettings = tmp2(7914).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {

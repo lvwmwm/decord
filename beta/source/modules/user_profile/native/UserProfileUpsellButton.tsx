@@ -1,13 +1,13 @@
 // Module ID: 14844
 // Function ID: 14845
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1085, 1392, 21, 5092, 558, 576, 6852, 7169, 1265, 9270, 1126, 9036, 5379, 2]
+// Dependencies: [19, 1085, 1392, 21, 5092, 558, 576, 6852, 7164, 1265, 9265, 1126, 9031, 5379, 2]
 
 // Module 14844 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const label = analyticsObject.label;
   const tmp4 = closure_10();
   analyticsLocations = analyticsLocations(6852)().analyticsLocations;
-  let obj2 = analyticsObject(7169);
+  let obj2 = analyticsObject(7164);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_upsell_button");
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp11 = cResult[9];
         }
         if (cResult[10] !== tmp4.nitroWheel) {
-          const tmp16 = jsx(analyticsObject(9036).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
+          const tmp16 = jsx(analyticsObject(9031).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
           cResult[10] = tmp4.nitroWheel;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const label = analyticsObject.label;
   const tmp = closure_10();
   analyticsLocations = analyticsLocations(6852)().analyticsLocations;
-  let obj = analyticsObject(7169);
+  let obj = analyticsObject(7164);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {

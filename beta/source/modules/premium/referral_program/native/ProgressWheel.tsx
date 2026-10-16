@@ -1,7 +1,7 @@
 // Module ID: 13742
 // Function ID: 13743
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 5092, 558, 576, 4818, 587, 13725, 6157, 13743, 7577, 13744, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 4818, 587, 13725, 6157, 13743, 7572, 13744, 2]
 
 // Module 13742 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13725 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13743 */;
 import react from "react" /* 19 */;

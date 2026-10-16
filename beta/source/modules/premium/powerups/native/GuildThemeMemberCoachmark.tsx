@@ -1,7 +1,7 @@
 // Module ID: 16604
 // Function ID: 16605
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 5081, 5007, 5008, 2062, 21, 5092, 587, 558, 576, 5011, 504, 12256, 16605, 8030, 5959, 1126, 2600, 12259, 9443, 2]
+// Dependencies: [19, 5081, 5007, 5008, 2062, 21, 5092, 587, 558, 576, 5011, 504, 12256, 16605, 8025, 5959, 1126, 2600, 12259, 9438, 2]
 
 // Module 16604 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
       }
     }
     AccessibilityStore = guildPowerupBannerImage;
-    const diff = closure_6 - markAsDismissed(8030)(guildId).available;
+    const diff = closure_6 - markAsDismissed(8025)(guildId).available;
     GuildPowerupsStore = diff;
     if (cResult[9] !== markAsDismissed) {
       class D {
@@ -214,7 +214,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
   if (guildPowerupBannerImage == null) {
     guildPowerupBannerImage = markAsDismissed(16605);
   }
-  const diff = onDismiss - markAsDismissed(8030)(guildId).available;
+  const diff = onDismiss - markAsDismissed(8025)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   onDismiss = stateFromStores1.useCallback(() => {
@@ -254,7 +254,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
     intl3 = intl4.intl;
     return obj;
   }, items5);
-  const tmp2Result = tmp2(9443);
+  const tmp2Result = tmp2(9438);
   const coachmark = tmp2Result.useCoachmark(targetRef, memo);
   return null;
 });

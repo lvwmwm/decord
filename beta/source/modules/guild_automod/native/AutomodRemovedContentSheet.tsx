@@ -1,7 +1,7 @@
 // Module ID: 18050
 // Function ID: 18051
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1085, 21, 7747, 5092, 587, 558, 576, 1126, 5434, 6839, 9374, 5088, 6899, 2]
+// Dependencies: [19, 17, 1085, 21, 7742, 5092, 587, 558, 576, 1126, 5434, 6839, 9369, 5088, 6899, 2]
 
 // Module 18050 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import intl2 from "intl" /* 1126 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import ChatItemDefault from "ChatItem" /* 9374 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import ChatItemDefault from "ChatItem" /* 9369 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,7 +1,7 @@
 // Module ID: 17130
 // Function ID: 17131
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 5092, 558, 576, 17131, 7522, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 17131, 7517, 2]
 
 // Module 17130 (FrameRenderTarget)
 import Fragment from "Fragment" /* 21 */;
@@ -13,7 +13,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const WebView = tmp(7522);
+const WebView = tmp(7517);
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ target: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;

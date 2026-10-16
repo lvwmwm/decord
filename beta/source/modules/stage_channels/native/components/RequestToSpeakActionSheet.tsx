@@ -1,7 +1,7 @@
 // Module ID: 10994
 // Function ID: 10995
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2065, 5892, 21, 5092, 587, 558, 576, 10995, 1126, 6896, 504, 5416, 5949, 7498, 5918, 5056, 7488, 10996, 10998, 1200, 11000, 6180, 4818, 6879, 6852, 5956, 5950, 6265, 5088, 5377, 11001, 6307, 6840, 2]
+// Dependencies: [32, 19, 17, 502, 2065, 5892, 21, 5092, 587, 558, 576, 10995, 1126, 6896, 504, 5416, 5949, 7493, 5918, 5056, 7483, 10996, 10998, 1200, 11000, 6180, 4818, 6879, 6852, 5956, 5950, 6265, 5088, 5377, 11001, 6307, 6840, 2]
 
 // Module 10994 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -14,8 +14,8 @@ import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7488 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7483 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
 import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10995 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

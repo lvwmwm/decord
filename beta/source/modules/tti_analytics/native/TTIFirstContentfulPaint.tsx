@@ -1,13 +1,13 @@
 // Module ID: 11494
 // Function ID: 11495
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 4977, 9, 7356, 11495, 2]
+// Dependencies: [19, 21, 558, 576, 4977, 9, 7351, 11495, 2]
 
 // Module 11494 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import PostTTIScheduler from "PostTTIScheduler" /* 7356 */;
+import PostTTIScheduler from "PostTTIScheduler" /* 7351 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

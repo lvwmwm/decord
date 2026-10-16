@@ -1,16 +1,16 @@
 // Module ID: 13387
 // Function ID: 13388
 // Name: PendingBadgeSettings
-// Dependencies: [32, 1390, 8317, 10579, 584, 8318, 2]
+// Dependencies: [32, 1390, 8312, 10579, 584, 8313, 2]
 // Exports: applyPendingBadgeSettings, getPendingProfileBadges, hasPendingBadgeSettings, moveBadgeInDisplayOrder, resetPendingBadgeSettings, setPendingBadgeDisplayOrder, setPendingBadgeHiddenBadges, setPendingBadgeVisibility
 
 // Module 13387 (PendingBadgeSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8318 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8313 */;
 import BadgeUtils from "BadgeUtils" /* 10579 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import size from "module_2" /* 2 */;
 
 let map, owned, set;
@@ -99,7 +99,7 @@ function applyPendingBadgeSettingsToProfileBadges(items, arg1) {
     for (const item10027 of found) {
       let tmp10 = item10027;
       let tmp11 = set;
-      let obj = set(8318);
+      let obj = set(8313);
       let profileBadgeId = obj.resolveProfileBadgeId(item10027.id);
       let tmp14 = profileBadgeId;
       if (null != profileBadgeId) {

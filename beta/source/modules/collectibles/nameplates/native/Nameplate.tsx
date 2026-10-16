@@ -1,9 +1,9 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9017
+// Function ID: 9018
 // Name: Nameplate
-// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 504, 5031, 4850, 5093, 1990, 9023, 5391, 1382, 9012, 6157, 2]
+// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 504, 5031, 4850, 5093, 1990, 9018, 5391, 1382, 9007, 6157, 2]
 
-// Module 9022 (Nameplate)
+// Module 9017 (Nameplate)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
@@ -207,7 +207,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
         tmp27 = cResult[8];
       }
       if (cResult[9] !== nameplate) {
-        const tmpResult8 = tmp(9023);
+        const tmpResult8 = tmp(9018);
         const nameplateAssets = tmpResult8.getNameplateAssets(nameplate);
         cResult[9] = nameplate;
         class B {
@@ -464,7 +464,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const animatedStyle = tmpResult.useAnimatedStyle(A);
   const tmpResult4 = tmp(1990);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9023);
+  const tmpResult5 = tmp(9018);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp13 = true === flag7;
@@ -505,7 +505,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     let tmp18;
     if (tmp13) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp18 = closure_7(tmp(9012).APNGPlayer, obj4);
+      tmp18 = closure_7(tmp(9007).APNGPlayer, obj4);
     }
     items4[1] = tmp18;
     obj2.children = items4;

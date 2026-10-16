@@ -1,9 +1,9 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10042
+// Function ID: 10043
 // Name: MediaKeyboardLimitedPickerNotice
 // Dependencies: [19, 17, 21, 5092, 558, 576, 1126, 5088, 5379, 2]
 
-// Module 10047 (MediaKeyboardLimitedPickerNotice)
+// Module 10042 (MediaKeyboardLimitedPickerNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

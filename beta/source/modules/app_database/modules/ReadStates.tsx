@@ -1,9 +1,9 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7207
+// Function ID: 7208
 // Name: ReadStates
 // Dependencies: [5, 2065, 6035, 3, 2091, 12, 11, 2]
 
-// Module 7212 (ReadStates)
+// Module 7207 (ReadStates)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;

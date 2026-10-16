@@ -1,15 +1,15 @@
 // Module ID: 13452
 // Function ID: 13453
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9045, 1126, 6185, 9081, 6823, 7275, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9040, 1126, 6185, 9076, 6823, 7270, 5088, 2]
 
 // Module 13452 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Pressables from "Pressables" /* 6185 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9081 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9076 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   ({ disabled, onVariantSelect } = arg0);
   dependencyMap = tmp4;
   const tmp5 = closure_6();
-  const tmpResult = selectedVariantIndex(7275);
+  const tmpResult = selectedVariantIndex(7270);
   if (tmpResult.getIsVariantProduct(product)) {
     const _Symbol = Symbol;
     const container = tmp5.container;

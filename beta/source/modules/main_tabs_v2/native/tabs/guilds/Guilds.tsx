@@ -1,13 +1,13 @@
 // Module ID: 16449
 // Function ID: 16450
 // Name: guilds/Guilds
-// Dependencies: [19, 10637, 21, 558, 576, 16450, 4972, 9166, 15374, 16451, 16821, 15460, 4827, 2]
+// Dependencies: [19, 10637, 21, 558, 576, 16450, 4972, 9161, 15374, 16451, 16821, 15460, 4827, 2]
 
 // Module 16449 (guilds/Guilds)
 import react2 from "react" /* 576 */;
 import native from "native" /* 4827 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
-import QuestsEligibility from "QuestsEligibility" /* 9166 */;
+import QuestsEligibility from "QuestsEligibility" /* 9161 */;
 import MainTabsConstants from "MainTabsConstants" /* 10637 */;
 import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15374 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16450 */;

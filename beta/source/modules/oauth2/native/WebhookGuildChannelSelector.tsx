@@ -1,7 +1,7 @@
 // Module ID: 12901
 // Function ID: 12902
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2069, 4760, 1390, 21, 5092, 587, 5056, 8554, 2000, 1126, 5421, 9234, 5088, 1200, 8580, 2]
+// Dependencies: [5, 32, 19, 17, 2069, 4760, 1390, 21, 5092, 587, 5056, 8549, 2000, 1126, 5421, 9229, 5088, 1200, 8575, 2]
 // Exports: default
 
 // Module 12901 (WebhookGuildChannelSelector)
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8554, dependencyMap.paths);
+      const tmp8 = asyncRequire(8549, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);

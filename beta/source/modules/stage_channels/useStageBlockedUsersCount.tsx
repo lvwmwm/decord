@@ -1,10 +1,10 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7715
+// Function ID: 7716
 // Name: useStageBlockedUsersCount
 // Dependencies: [5896, 558, 576, 5950, 504, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount
 
-// Module 7720 (useStageBlockedUsersCount)
+// Module 7715 (useStageBlockedUsersCount)
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

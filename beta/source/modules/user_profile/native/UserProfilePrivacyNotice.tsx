@@ -1,7 +1,7 @@
 // Module ID: 13395
 // Function ID: 13396
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 587, 1209, 1126, 558, 576, 7738, 2041, 2049, 7100, 5088, 7094, 5046, 6208, 6185, 2]
+// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 587, 1209, 1126, 558, 576, 7733, 2041, 2049, 7100, 5088, 7094, 5046, 6208, 6185, 2]
 
 // Module 13395 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
-import useUserIsTeen from "useUserIsTeen" /* 7738 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

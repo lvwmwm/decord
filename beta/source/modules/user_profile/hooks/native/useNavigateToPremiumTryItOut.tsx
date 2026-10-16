@@ -1,15 +1,15 @@
 // Module ID: 14861
 // Function ID: 14862
 // Name: useNavigateToPremiumTryItOut
-// Dependencies: [19, 8285, 8308, 1085, 558, 576, 1503, 9634, 6671, 4985, 8316, 6680, 2]
+// Dependencies: [19, 8280, 8303, 1085, 558, 576, 1503, 9629, 6671, 4985, 8311, 6680, 2]
 
 // Module 14861 (useNavigateToPremiumTryItOut)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
-import Constants2 from "Constants" /* 8308 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
+import Constants2 from "Constants" /* 8303 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8311 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

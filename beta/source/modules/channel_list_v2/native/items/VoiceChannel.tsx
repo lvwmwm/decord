@@ -1,7 +1,7 @@
 // Module ID: 16672
 // Function ID: 16673
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7250, 4750, 6035, 5966, 5116, 11760, 1085, 21, 587, 8188, 6145, 2000, 7482, 558, 576, 8655, 16670, 16673, 10358, 504, 16665, 10239, 5079, 8651, 7896, 5414, 16564, 16555, 1265, 16666, 10283, 1126, 16565, 11737, 2]
+// Dependencies: [5, 19, 17, 7245, 4750, 6035, 5966, 5116, 11760, 1085, 21, 587, 8183, 6145, 2000, 7477, 558, 576, 8650, 16670, 16673, 10358, 504, 16665, 10239, 5079, 8646, 7891, 5414, 16564, 16555, 1265, 16666, 10283, 1126, 16565, 11737, 2]
 
 // Module 16672 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
@@ -10,12 +10,12 @@ import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5116 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8651 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11737 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7250 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7245 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

@@ -1,7 +1,7 @@
 // Module ID: 15451
 // Function ID: 15452
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4761, 1390, 1085, 21, 558, 576, 7747, 504, 5077, 9193, 1126, 15450, 9374, 2]
+// Dependencies: [19, 4761, 1390, 1085, 21, 558, 576, 7742, 504, 5077, 9188, 1126, 15450, 9369, 2]
 
 // Module 15451 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
@@ -10,8 +10,8 @@ import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import CodedLink from "CodedLink" /* 5077 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
 import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15450 */;
 import react from "react" /* 19 */;
 import MessageRecord from "MessageRecord" /* 4761 */;

@@ -1,10 +1,10 @@
-// Module ID: 8039
-// Function ID: 8040
+// Module ID: 8034
+// Function ID: 8035
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getApplicationCommand
 
-// Module 8039 (_slicedToArray)
+// Module 8034 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

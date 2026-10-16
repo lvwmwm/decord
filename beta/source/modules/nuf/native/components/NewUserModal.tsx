@@ -1,7 +1,7 @@
 // Module ID: 18201
 // Function ID: 18202
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 9345, 5092, 587, 18202, 2000, 5301, 558, 576, 6688, 18200, 5934, 18199, 6207, 1382, 16426, 18203, 12421, 12409, 18204, 18210, 2]
+// Dependencies: [19, 17, 21, 9340, 5092, 587, 18202, 2000, 5301, 558, 576, 6688, 18200, 5934, 18199, 6207, 1382, 16426, 18203, 12421, 12409, 18204, 18210, 2]
 
 // Module 18201 (NewUserModal)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import NewUserUtils from "NewUserUtils" /* 18200 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 11798
 // Function ID: 11799
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11776, 1388, 5088, 1126, 6185, 11729, 10623, 11734, 8542, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11776, 1388, 5088, 1126, 6185, 11729, 10623, 11734, 8537, 2]
 
 // Module 11798 (InThisServerSection)
 import nativeDefault from "native" /* 587 */;
@@ -317,7 +317,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
       }
       const obj3 = { accessible: true, accessibilityLabel: application.name, accessibilityRole: "button", onPress: tmp7, style: tmp4.appCardContainer, children: items };
       items = [tmp8, tmp12];
-      const tmp17 = closure_6(tmp(8542).PressableScale, obj3, application.id);
+      const tmp17 = closure_6(tmp(8537).PressableScale, obj3, application.id);
       cResult[10] = application.id;
       class C {
         constructor() {
@@ -408,7 +408,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
     style: tmp.appCardContainer,
     children: items
   };
-  const PressableScale = onAppSelected(8542).PressableScale;
+  const PressableScale = onAppSelected(8537).PressableScale;
   const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };

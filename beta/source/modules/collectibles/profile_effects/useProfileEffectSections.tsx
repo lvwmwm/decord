@@ -1,15 +1,15 @@
 // Module ID: 14888
 // Function ID: 14889
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7264, 7280, 558, 576, 573, 7276, 1126, 13469, 2]
+// Dependencies: [32, 19, 7259, 7275, 558, 576, 573, 7271, 1126, 13469, 2]
 
 // Module 14888 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7276);
+  const tmp2Result4 = stateFromStores(7271);
   const profileEffects = tmp2Result4.getProfileEffects(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;

@@ -1,83 +1,86 @@
 // Module ID: 9857
 // Function ID: 9858
-// Dependencies: [41, 42, 9824]
+// Dependencies: [41, 42, 93, 95, 98, 9834]
 
 // Module 9857
-import TIMEZONE_ABBR_MAP from "TIMEZONE_ABBR_MAP" /* 9824 */;
+import _mod9834 from "module_9834" /* 9834 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const regExp = new RegExp("^\\s*,?\\s*\\(?([A-Z]{2,4})\\)?(?=\\W|$)", "i");
-class ExtractTimezoneAbbrRefiner {
-  constructor(timezoneOverrides) {
-    _classCallCheck(this, ExtractTimezoneAbbrRefiner);
-    this.timezoneOverrides = timezoneOverrides;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(option, arr) {
-    let self = this;
-    let timezones = option.option.timezones;
-    if (null === timezones) {
-      timezones = {};
+class MergeWeekdayComponentRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, MergeWeekdayComponentRefiner);
+    const obj = _getPrototypeOf(MergeWeekdayComponentRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    const item = arr.forEach(function(item) {
-      let closure_0 = item;
-      const str = option.text;
-      const match = regExp.exec(str.substring(item.index + item.text.length));
-      const obj = option;
-      if (match) {
-        const str2 = match[1];
-        const formatted = str2.toUpperCase();
-        const start = item.start;
-        let refDate = start.date() ?? item.refDate;
-        if (null === refDate) {
-          const _Date = Date;
-          self = this;
-          const self2 = this;
-          refDate = new Date();
-        }
-        const _Object = Object;
-        const _Object2 = Object;
-        const merged = Object.assign(Object.assign({}, self.timezoneOverrides), timezones);
-        const toTimezoneOffsetResult = TIMEZONE_ABBR_MAP.toTimezoneOffset(formatted, refDate, merged);
-        if (null != toTimezoneOffsetResult) {
-          obj.debug(() => {
-            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + start.start);
-          });
-          const start6 = item.start;
-          const value = start6.get("timezoneOffset");
-          if (null !== value) {
-            if (toTimezoneOffsetResult != value) {
-              const start2 = item.start;
-            }
-          }
-          const start3 = item.start;
-          const tmp12 = start3.isOnlyDate() && formatted != match[1];
-          if (!tmp12) {
-            item.text = item.text + match[0];
-            const start4 = item.start;
-            if (!start4.isCertain("timezoneOffset")) {
-              const start5 = item.start;
-              start5.assign("timezoneOffset", toTimezoneOffsetResult);
-            }
-            let isCertainResult = null == item.end;
-            if (!isCertainResult) {
-              const end = item.end;
-              isCertainResult = end.isCertain("timezoneOffset");
-            }
-            if (!isCertainResult) {
-              const end2 = item.end;
-              end2.assign("timezoneOffset", toTimezoneOffsetResult);
-            }
-          }
-        }
-      }
-    });
-    return arr;
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(MergeWeekdayComponentRefiner, _mod9834.MergingRefiner);
+const entry = {
+  key: "mergeResults",
+  value: function mergeResults(arg0, index, clone) {
+    const cloneResult = clone.clone();
+    cloneResult.index = index.index;
+    cloneResult.text = index.text + arg0 + cloneResult.text;
+    const start = cloneResult.start;
+    const start2 = index.start;
+    start.assign("weekday", start2.get("weekday"));
+    if (cloneResult.end) {
+      const end = cloneResult.end;
+      const start3 = index.start;
+      end.assign("weekday", start3.get("weekday"));
+    }
+    return cloneResult;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, start, start2) {
+      start = start.start;
+      let result = start.isOnlyWeekdayComponent();
+      if (result) {
+        start2 = start.start;
+        result = !start2.isCertain("hour");
+      }
+      if (result) {
+        const start3 = start2.start;
+        result = start3.isCertain("day");
+      }
+      if (result) {
+        result = null != str.match(/^,?\s*$/);
+      }
+      return result;
+    }
+  }
+];
 
-export default _createClass(ExtractTimezoneAbbrRefiner, items);
+export default _createClass(MergeWeekdayComponentRefiner, items);

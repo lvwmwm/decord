@@ -1,7 +1,7 @@
 // Module ID: 13584
 // Function ID: 13585
 // Name: VoiceActionSheetManager
-// Dependencies: [2012, 5113, 2002, 584, 7482, 2]
+// Dependencies: [2012, 5113, 2002, 584, 7477, 2]
 
 // Module 13584 (VoiceActionSheetManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;

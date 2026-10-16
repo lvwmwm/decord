@@ -1,7 +1,7 @@
 // Module ID: 10638
 // Function ID: 10639
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1087, 1993, 1126, 8296, 10639, 8292, 6671, 2]
+// Dependencies: [5, 32, 19, 1087, 1993, 1126, 8291, 10639, 8287, 6671, 2]
 // Exports: useHandleUseNow
 
 // Module 10638 (hooks/useHandleUseNow)

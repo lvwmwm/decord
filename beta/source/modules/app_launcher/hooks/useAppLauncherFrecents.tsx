@@ -1,7 +1,7 @@
 // Module ID: 11806
 // Function ID: 11807
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6797, 1390, 11807, 2024, 5403, 1998, 558, 576, 9808, 504, 6860, 8458, 11808, 9810, 9247, 10859, 2]
+// Dependencies: [19, 6797, 1390, 11807, 2024, 5403, 1998, 558, 576, 9803, 504, 6860, 8453, 11808, 9805, 9242, 10859, 2]
 
 // Module 11806 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
@@ -9,9 +9,9 @@ import Server from "Server" /* 1998 */;
 import Constants from "Constants" /* 2024 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6797 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6860 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9808 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9810 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9803 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9805 */;
 import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10859 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;

@@ -1,9 +1,9 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 10014
+// Function ID: 10015
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7244, 7908, 10020, 21, 5092, 587, 558, 576, 4850, 5093, 1200, 5378, 38, 7759, 504, 10021, 1126, 11685, 8372, 5088, 8401, 6652, 11867, 6185, 6621, 1497, 9263, 10023, 7758, 2]
+// Dependencies: [19, 17, 7239, 7903, 10015, 21, 5092, 587, 558, 576, 4850, 5093, 1200, 5378, 38, 7754, 504, 10016, 1126, 11685, 8367, 5088, 8396, 6652, 11867, 6185, 6621, 1497, 9258, 10018, 7753, 2]
 
-// Module 10019 (ImageCarousel)
+// Module 10014 (ImageCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -14,16 +14,16 @@ import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
 import Pressables from "Pressables" /* 6185 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6621 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import Upload from "Upload" /* 7758 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10021 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import Upload from "Upload" /* 7753 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10016 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10018 */;
 import AttachmentPreviewDefault from "AttachmentPreview" /* 11867 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10020 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10015 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

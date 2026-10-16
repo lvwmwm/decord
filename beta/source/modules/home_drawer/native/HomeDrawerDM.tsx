@@ -1,7 +1,7 @@
 // Module ID: 16801
 // Function ID: 16802
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 2069, 4760, 5966, 1390, 1096, 21, 5092, 558, 576, 504, 5421, 16802, 15612, 12667, 10346, 5088, 12588, 9314, 16763, 4982, 4979, 2]
+// Dependencies: [19, 17, 2069, 4760, 5966, 1390, 1096, 21, 5092, 558, 576, 504, 5421, 16802, 15612, 12667, 10346, 5088, 12588, 9309, 16763, 4982, 4979, 2]
 
 // Module 16801 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1096 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
 import ChannelRowPreview2 from "ChannelRowPreview" /* 12588 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 15612 */;
 import react from "react" /* 19 */;
@@ -201,7 +201,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
                   tmp44 = tmp45;
                 }
               }
-              const obj5 = { channel, message: tmp16, variant: "text-xs/medium", color: "text-strong", layout: tmp(9314).ChannelListLayoutTypes.COZY, muted: tmp22.isMuted };
+              const obj5 = { channel, message: tmp16, variant: "text-xs/medium", color: "text-strong", layout: tmp(9309).ChannelListLayoutTypes.COZY, muted: tmp22.isMuted };
               const ChannelRowPreview = tmp(12588).ChannelRowPreview;
               const tmp47 = closure_10(ChannelRowPreview, obj5);
               cResult[28] = channel;

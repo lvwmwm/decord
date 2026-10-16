@@ -1,7 +1,7 @@
 // Module ID: 13848
 // Function ID: 13849
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8317, 7110, 1085, 1392, 21, 5092, 587, 558, 576, 6265, 7134, 1503, 1631, 504, 5633, 12, 7137, 9121, 10096, 8309, 13691, 7116, 7139, 8322, 6680, 6684, 9395, 6157, 13849, 5088, 1126, 13850, 13856, 13858, 13861, 13863, 2664, 13864, 6154, 10497, 6686, 2]
+// Dependencies: [32, 19, 17, 8312, 7110, 1085, 1392, 21, 5092, 587, 558, 576, 6265, 7134, 1503, 1631, 504, 5633, 12, 7137, 9116, 10096, 8304, 13691, 7116, 7139, 8317, 6680, 6684, 9390, 6157, 13849, 5088, 1126, 13850, 13856, 13858, 13861, 13863, 2664, 13864, 6154, 10497, 6686, 2]
 
 // Module 13848 (UserSettingsPremiumGifting)
 import react2 from "react" /* 576 */;
@@ -18,9 +18,9 @@ import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
 import EntitlementActionCreators from "EntitlementActionCreators" /* 7116 */;
 import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7134 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 7139 */;
-import BadgeId from "BadgeId" /* 8309 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
+import BadgeId from "BadgeId" /* 8304 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13849 */;
 import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13850 */;
 import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13856 */;
@@ -31,7 +31,7 @@ import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgePro
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import EntitlementStore from "EntitlementStore" /* 7110 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
@@ -186,7 +186,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   react = tmp15;
   const tmpResult7 = tmp(7137);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(9121);
+  const tmpResult8 = tmp(9116);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;

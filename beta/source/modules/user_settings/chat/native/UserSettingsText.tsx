@@ -1,7 +1,7 @@
 // Module ID: 15760
 // Function ID: 15761
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1390, 4775, 1206, 1207, 1085, 21, 5092, 587, 1265, 2041, 5260, 558, 576, 4818, 504, 4769, 1503, 6680, 6265, 1126, 6896, 1200, 9771, 5088, 6263, 6262, 8580, 5377, 2]
+// Dependencies: [19, 17, 1390, 4775, 1206, 1207, 1085, 21, 5092, 587, 1265, 2041, 5260, 558, 576, 4818, 504, 4769, 1503, 6680, 6265, 1126, 6896, 1200, 9766, 5088, 6263, 6262, 8575, 5377, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
 // Module 15760 (UserSettingsText)
@@ -19,7 +19,7 @@ import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
 import TableRowGroup7 from "TableRowGroup" /* 6265 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
 import TableSwitchRow8 from "TableSwitchRow" /* 6896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9771 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9766 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;

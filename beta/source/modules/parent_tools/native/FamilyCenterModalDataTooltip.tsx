@@ -1,7 +1,7 @@
 // Module ID: 15170
 // Function ID: 15171
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7260, 21, 8199, 11536, 4815, 13880, 8201, 7558, 5051, 11538, 5092, 587, 558, 576, 5088, 1126, 2568, 11535, 7740, 7742, 7515, 7516, 11541, 5379, 5934, 6201, 10603, 2]
+// Dependencies: [32, 19, 17, 7255, 21, 8194, 11536, 4815, 13880, 8196, 7553, 5051, 11538, 5092, 587, 558, 576, 5088, 1126, 2568, 11535, 7735, 7737, 7510, 7511, 11541, 5379, 5934, 6201, 10603, 2]
 
 // Module 15170 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
@@ -13,11 +13,11 @@ import FriendsIcon from "FriendsIcon" /* 4815 */;
 import ClockIcon from "ClockIcon" /* 5051 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
-import CreditCardIcon from "CreditCardIcon" /* 7558 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
-import ChatIcon from "ChatIcon" /* 8199 */;
-import ThreadIcon from "ThreadIcon" /* 8201 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
+import CreditCardIcon from "CreditCardIcon" /* 7553 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7735 */;
+import ChatIcon from "ChatIcon" /* 8194 */;
+import ThreadIcon from "ThreadIcon" /* 8196 */;
 import Modal2 from "Modal" /* 10603 */;
 import PhoneIcon from "PhoneIcon" /* 11536 */;
 import GiftIcon from "GiftIcon" /* 11538 */;
@@ -295,10 +295,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
     }
   }
-  const tmpResult2 = tmp(7742);
+  const tmpResult2 = tmp(7737);
   const sortedActivityTypeConfigs = tmpResult2.getSortedActivityTypeConfigs();
-  const ModalScreen = tmp(7515).ModalScreen;
-  const ModalContent = tmp(7516).ModalContent;
+  const ModalScreen = tmp(7510).ModalScreen;
+  const ModalContent = tmp(7511).ModalContent;
   const container = tmp4.container;
   if (cResult[12] === ageSpecificText) {
     let tmp20;

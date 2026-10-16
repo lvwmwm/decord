@@ -1,16 +1,20 @@
 // Module ID: 9838
 // Function ID: 9839
-// Dependencies: [41, 42, 93, 95, 98, 9822, 9839]
+// Dependencies: [41, 42, 93, 95, 98, 9839, 9821, 9822]
 
 // Module 9838
-import EmptyDuration from "EmptyDuration" /* 9822 */;
-import _mod9839 from "module_9839" /* 9839 */;
+import assignSimilarDate from "assignSimilarDate" /* 9821 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9822 */;
+import now2 from "now" /* 9839 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let hasOwnProperty;
+
+let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -26,12 +30,108 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class AbstractMergeDateRangeRefiner {
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let tmp3 = globalThis;
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
+  const _Object2 = Object;
+  tmp4 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_8 = tmp4;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function i(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_8(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+const re10 = /(now|today|tonight|tomorrow|overmorrow|tmr|tmrw|yesterday|last\s*night)(?=\W|$)/i;
+class ENCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, AbstractMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(AbstractMergeDateRangeRefiner);
+    _classCallCheck(this, ENCasualDateParser);
+    const obj = _getPrototypeOf(ENCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,135 +143,63 @@ class AbstractMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(AbstractMergeDateRangeRefiner, _mod9839.MergingRefiner);
+_inherits(ENCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "shouldMergeResults",
-  value: function shouldMergeResults(str, end, end2) {
-    let tmp = !end.end && !end2.end;
-    if (tmp) {
-      const self = this;
-      tmp = null != str.match(this.patternBetween());
-    }
-    return tmp;
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return re10;
   }
 };
 let items = [
   entry,
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, start, start2) {
-      let closure_0 = start;
-      let first = start2;
-      start = start.start;
-      let result = start.isOnlyWeekdayComponent();
-      if (!result) {
-        start2 = start2.start;
-        result = start2.isOnlyWeekdayComponent();
-      }
-      if (!result) {
-        let start3 = start2.start;
-        const certainComponents = start3.getCertainComponents();
-        const item = certainComponents.forEach((item) => {
-          const start = closure_0.start;
-          const tmp = closure_0;
-          if (!start.isCertain(item)) {
-            const start2 = tmp.start;
-            const start3 = first.start;
-            start2.imply(item, start3.get(item));
-          }
-        });
-        const start4 = start.start;
-        const certainComponents1 = start4.getCertainComponents();
-        const item1 = certainComponents1.forEach((item) => {
-          const start = first.start;
-          const tmp = first;
-          if (!start.isCertain(item)) {
-            const start2 = tmp.start;
-            const start3 = closure_0.start;
-            start2.imply(item, start3.get(item));
-          }
-        });
-      }
-      const start5 = start.start;
-      const start6 = start2.start;
-      let tmp5 = start2;
-      let obj = start;
-      const dateResult = start5.date();
-      if (dateResult > start6.date()) {
-        const start18 = start.start;
-        const dateResult1 = start18.date();
-        const start19 = start2.start;
-        const dateResult2 = start19.date();
-        const start20 = start2.start;
-        if (start20.isOnlyWeekdayComponent()) {
-          const tmp6 = require;
-          if (EmptyDuration.addDuration(dateResult2, { day: 7 }) > dateResult1) {
-            const addDurationResult = tmp6(9822).addDuration(dateResult2, { day: 7 });
-            const start15 = start2.start;
-            start15.imply("day", addDurationResult.getDate());
-            const start16 = start2.start;
-            start16.imply("month", addDurationResult.getMonth() + 1);
-            const start17 = start2.start;
-            start17.imply("year", addDurationResult.getFullYear());
-            tmp5 = start2;
-            obj = start;
-          }
-        }
-        const start7 = start.start;
-        if (start7.isOnlyWeekdayComponent()) {
-          const tmp8 = require;
-          if (EmptyDuration.addDuration(dateResult1, { day: -7 }) < dateResult2) {
-            const addDurationResult1 = tmp8(9822).addDuration(dateResult1, { day: -7 });
-            const start12 = start.start;
-            start12.imply("day", addDurationResult1.getDate());
-            const start13 = start.start;
-            start13.imply("month", addDurationResult1.getMonth() + 1);
-            const start14 = start.start;
-            start14.imply("year", addDurationResult1.getFullYear());
-            tmp5 = start2;
-            obj = start;
-          }
-        }
-        const start8 = start2.start;
-        if (start8.isDateWithUnknownYear()) {
-          const tmp10 = require;
-          if (EmptyDuration.addDuration(dateResult2, { year: 1 }) > dateResult1) {
-            const start11 = start2.start;
-            const addDurationResult2 = tmp10(9822).addDuration(dateResult2, { year: 1 });
-            start11.imply("year", addDurationResult2.getFullYear());
-            tmp5 = start2;
-            obj = start;
-          }
-        }
-        const start9 = start.start;
-        if (start9.isDateWithUnknownYear()) {
-          const tmp12 = require;
-          if (EmptyDuration.addDuration(dateResult1, { year: -1 }) < dateResult2) {
-            const start10 = start.start;
-            const addDurationResult3 = tmp12(9822).addDuration(dateResult1, { year: -1 });
-            start10.imply("year", addDurationResult3.getFullYear());
-            tmp5 = start2;
-            obj = start;
-          }
-        }
-        const items = [start, start2];
-        first = items[0];
-        closure_0 = tmp15;
-        tmp5 = first;
-        obj = tmp15;
-      }
-      const cloneResult = obj.clone();
-      cloneResult.start = obj.start;
-      cloneResult.end = tmp5.start;
-      cloneResult.index = Math.min(obj.index, tmp5.index);
-      if (obj.index < tmp5.index) {
-        cloneResult.text = obj.text + arg0 + tmp5.text;
+    key: "innerExtract",
+    value: function innerExtract(refDate, arg1) {
+      let nowResult;
+      refDate = refDate.refDate;
+      const str = arg1[0];
+      const str2 = str.toLowerCase();
+      const parsingComponents = refDate.createParsingComponents();
+      if ("now" === str2) {
+        nowResult = now.now(refDate.reference);
+      } else if ("today" === str2) {
+        nowResult = now.today(refDate.reference);
+      } else if ("yesterday" === str2) {
+        nowResult = now.yesterday(refDate.reference);
       } else {
-        cloneResult.text = tmp5.text + arg0 + obj.text;
+        if ("tomorrow" !== str2) {
+          if ("tmr" !== str2) {
+            if ("tmrw" !== str2) {
+              if ("tonight" === str2) {
+                nowResult = now.tonight(refDate.reference);
+              } else if ("overmorrow" === str2) {
+                nowResult = now.theDayAfter(refDate.reference, 2);
+              } else {
+                nowResult = parsingComponents;
+                if (str2.match(/last\s*night/)) {
+                  let tmp = refDate;
+                  if (refDate.getHours() > 6) {
+                    const _Date = Date;
+                    const self = this;
+                    self2 = this;
+                    const date = new Date(refDate.getTime());
+                    date.setDate(date.getDate() - 1);
+                    tmp = date;
+                  }
+                  assignSimilarDate.assignSimilarDate(parsingComponents, tmp);
+                  parsingComponents.imply("hour", 0);
+                  nowResult = parsingComponents;
+                }
+              }
+            }
+          }
+        }
+        nowResult = now.tomorrow(refDate.reference);
       }
-      return cloneResult;
+      nowResult.addTag("parser/ENCasualDateParser");
+      return nowResult;
     }
   }
 ];
 
-export default _createClass(AbstractMergeDateRangeRefiner, items);
+export default _createClass(ENCasualDateParser, items);

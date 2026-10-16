@@ -1,7 +1,7 @@
 // Module ID: 14874
 // Function ID: 14875
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 9036, 1200, 1126, 6189, 6185, 6287, 1382, 6897, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 9031, 1200, 1126, 6189, 6185, 6287, 1382, 6897, 2]
 
 // Module 14874 (UserProfileEditFormControls)
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1200 */;
 import Pressables from "Pressables" /* 6185 */;
 import TableRowArrow from "TableRowArrow" /* 6189 */;
 import Input2 from "Input" /* 6287 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -110,7 +110,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
     if (cResult[0] !== (undefined !== showPremiumIcon && showPremiumIcon)) {
       let tmp9 = null;
       if (undefined !== showPremiumIcon && showPremiumIcon) {
-        tmp9 = metroRequire(tmp(9036).NitroWheelIcon, { size: "xs" });
+        tmp9 = metroRequire(tmp(9031).NitroWheelIcon, { size: "xs" });
       }
       cResult[0] = undefined !== showPremiumIcon && showPremiumIcon;
       cResult[1] = tmp9;

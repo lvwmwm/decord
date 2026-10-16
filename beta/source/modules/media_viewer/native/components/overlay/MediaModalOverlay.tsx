@@ -1,7 +1,7 @@
 // Module ID: 13053
 // Function ID: 13054
 // Name: MediaModalOverlay
-// Dependencies: [109, 32, 19, 17, 21, 5092, 587, 558, 576, 1126, 13054, 11127, 6814, 8674, 13055, 13056, 13057, 8391, 12956, 1382, 5365, 13058, 8420, 13060, 13064, 8390, 13065, 13066, 4850, 13059, 8388, 8393, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5092, 587, 558, 576, 1126, 13054, 11127, 6814, 8669, 13055, 13056, 13057, 8386, 12956, 1382, 5365, 13058, 8415, 13060, 13064, 8385, 13065, 13066, 4850, 13059, 8383, 8388, 2]
 
 // Module 13053 (MediaModalOverlay)
 import react2 from "react" /* 576 */;
@@ -11,11 +11,11 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8388 */;
-import useVideoControls from "useVideoControls" /* 8390 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8391 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8420 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8383 */;
+import useVideoControls from "useVideoControls" /* 8385 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8386 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8415 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8669 */;
 import useMediaModalFooterAction from "useMediaModalFooterAction" /* 12956 */;
 import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 13057 */;
 import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13058 */;
@@ -40,7 +40,7 @@ let rect;
 let tmp;
 let tmp23;
 let unpackModuleId;
-const MediaSourceUtil = tmp(8393);
+const MediaSourceUtil = tmp(8388);
 const MediaModalOverlayAltTextDefault = tmp23(13064);
 let closure_3 = ["onIndexChange"];
 const StyleSheet = react_native.StyleSheet;
@@ -500,7 +500,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   let source;
   ({ source, index } = getVideoControls);
   const videoControls = getVideoControls.getVideoControls(index, source);
-  const tmp2 = videoControls(8390)(index, source, videoControls);
+  const tmp2 = videoControls(8385)(index, source, videoControls);
   let obj = index(13059);
   const items = [index];
   const first = _slicedToArray(obj.useMediaItemSpoilerState(index), 1)[0];

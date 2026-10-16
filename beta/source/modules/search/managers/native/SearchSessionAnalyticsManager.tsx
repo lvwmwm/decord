@@ -1,10 +1,10 @@
 // Module ID: 12058
 // Function ID: 12059
 // Name: SearchSessionAnalyticsManager
-// Dependencies: [9312, 12059, 12043, 2]
+// Dependencies: [9307, 12059, 12043, 2]
 
 // Module 12058 (SearchSessionAnalyticsManager)
-import TrackingConstants from "TrackingConstants" /* 9312 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
 import SearchUtils from "SearchUtils" /* 12043 */;
 import AbstractSearchSessionAnalyticsManager from "AbstractSearchSessionAnalyticsManager" /* 12059 */;
 import size from "module_2" /* 2 */;

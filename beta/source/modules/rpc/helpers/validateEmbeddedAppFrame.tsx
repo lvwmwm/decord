@@ -1,13 +1,13 @@
 // Module ID: 14717
 // Function ID: 14718
 // Name: validateEmbeddedAppFrame
-// Dependencies: [14718, 10807, 1085, 8611, 11423, 10945, 2029, 10936, 14719, 2]
+// Dependencies: [14718, 10807, 1085, 8606, 11423, 10945, 2029, 10936, 14719, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
 // Module 14717 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1085 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11423 */;

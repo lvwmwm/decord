@@ -1,7 +1,7 @@
 // Module ID: 17103
 // Function ID: 17104
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 5440, 13218, 17104, 10652, 13229, 10802, 21, 17106, 17108, 5056, 17116, 4809, 5092, 587, 1503, 1631, 17118, 1645, 4850, 504, 6853, 17119, 13243, 17121, 17054, 17113, 11413, 10808, 17110, 11421, 17122, 17109, 11427, 1126, 3849, 17123, 10533, 17124, 1497, 8530, 17125, 17081, 17072, 17150, 15384, 17154, 4808, 17115, 17156, 17158, 17163, 11423, 17126, 11431, 17164, 11415, 17080, 17112, 9406, 7092, 16116, 17074, 17167, 6201, 17100, 17168, 9363, 9242, 5088, 5379, 17170, 17171, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 5440, 13218, 17104, 10652, 13229, 10802, 21, 17106, 17108, 5056, 17116, 4809, 5092, 587, 1503, 1631, 17118, 1645, 4850, 504, 6853, 17119, 13243, 17121, 17054, 17113, 11413, 10808, 17110, 11421, 17122, 17109, 11427, 1126, 3849, 17123, 10533, 17124, 1497, 8525, 17125, 17081, 17072, 17150, 15384, 17154, 4808, 17115, 17156, 17158, 17163, 11423, 17126, 11431, 17164, 11415, 17080, 17112, 9401, 7092, 16116, 17074, 17167, 6201, 17100, 17168, 9358, 9237, 5088, 5379, 17170, 17171, 558, 576, 2]
 // Exports: default
 
 // Module 17103 (ConjureChatScene)
@@ -14,7 +14,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import SettingsIcon from "SettingsIcon" /* 7092 */;
-import UploadIcon from "UploadIcon" /* 9406 */;
+import UploadIcon from "UploadIcon" /* 9401 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 11423 */;

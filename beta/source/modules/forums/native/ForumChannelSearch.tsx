@@ -1,16 +1,16 @@
 // Module ID: 12847
 // Function ID: 12848
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 2065, 7905, 21, 5092, 558, 576, 1504, 12848, 9298, 9329, 1126, 5379, 504, 7904, 6739, 2]
+// Dependencies: [19, 17, 2065, 7900, 21, 5092, 558, 576, 1504, 12848, 9293, 9324, 1126, 5379, 504, 7899, 6739, 2]
 
 // Module 12847 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Tracking from "Tracking" /* 7904 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
+import Tracking from "Tracking" /* 7899 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9324 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import ForumSearchStore from "ForumSearchStore" /* 7905 */;
+import ForumSearchStore from "ForumSearchStore" /* 7900 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

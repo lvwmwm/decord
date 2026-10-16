@@ -1,12 +1,12 @@
 // Module ID: 17925
 // Function ID: 17926
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 5092, 587, 558, 576, 11971, 17917, 17860, 17904, 1126, 17926, 8199, 6162, 17918, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 11971, 17917, 17860, 17904, 1126, 17926, 8194, 6162, 17918, 2]
 
 // Module 17925 (VoicePanelChatButton)
 import nativeDefault from "native" /* 587 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
-import ChatIcon from "ChatIcon" /* 8199 */;
+import ChatIcon from "ChatIcon" /* 8194 */;
 import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17904 */;
 import CircleWithCutoutDefault from "CircleWithCutout" /* 17926 */;
 import react_mod from "react" /* 19 */;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
         }
         if (cResult[8] !== voicePanelButtonStyles.iconFill.color) {
           const obj3 = { color: voicePanelButtonStyles.iconFill.color };
-          const tmp21 = closure_4(openTab(8199).ChatIcon, obj3);
+          const tmp21 = closure_4(openTab(8194).ChatIcon, obj3);
           cResult[8] = voicePanelButtonStyles.iconFill.color;
           cResult[9] = tmp21;
           tmp19 = tmp21;

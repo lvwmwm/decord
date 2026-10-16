@@ -1,7 +1,7 @@
 // Module ID: 13813
 // Function ID: 13814
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 5963, 1392, 21, 5092, 587, 13792, 1126, 9410, 13814, 13815, 13817, 8622, 13818, 8961, 13819, 12269, 13820, 12266, 13821, 9406, 13822, 9553, 558, 576, 504, 13691, 13823, 5031, 6157, 13655, 4969, 13664, 13665, 5088, 9424, 13827, 13828, 13829, 2]
+// Dependencies: [19, 17, 5963, 1392, 21, 5092, 587, 13792, 1126, 9405, 13814, 13815, 13817, 8617, 13818, 8956, 13819, 12269, 13820, 12266, 13821, 9401, 13822, 9548, 558, 576, 504, 13691, 13823, 5031, 6157, 13655, 4969, 13664, 13665, 5088, 9419, 13827, 13828, 13829, 2]
 
 // Module 13813 (GuildBoostingUpsell)
 import get_initialized from "get initialized" /* 504 */;
@@ -13,12 +13,12 @@ import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
-import ReactionIcon from "ReactionIcon" /* 8961 */;
-import UploadIcon from "UploadIcon" /* 9406 */;
-import BoostGemIcon from "BoostGemIcon" /* 9410 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9424 */;
-import StarIcon from "StarIcon" /* 9553 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import ReactionIcon from "ReactionIcon" /* 8956 */;
+import UploadIcon from "UploadIcon" /* 9401 */;
+import BoostGemIcon from "BoostGemIcon" /* 9405 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9419 */;
+import StarIcon from "StarIcon" /* 9548 */;
 import HeadphonesIcon from "HeadphonesIcon" /* 12266 */;
 import StickerIcon from "StickerIcon" /* 12269 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13655 */;

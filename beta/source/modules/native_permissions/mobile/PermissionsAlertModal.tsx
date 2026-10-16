@@ -1,9 +1,9 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 7503
+// Function ID: 7504
 // Name: PermissionsAlertModal
 // Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 2]
 
-// Module 7508 (PermissionsAlertModal)
+// Module 7503 (PermissionsAlertModal)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import AlertModal2 from "AlertModal" /* 5305 */;

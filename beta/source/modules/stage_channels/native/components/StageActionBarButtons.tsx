@@ -1,7 +1,7 @@
 // Module ID: 10976
 // Function ID: 10977
 // Name: StageActionBarButtons
-// Dependencies: [32, 19, 17, 5081, 6035, 10977, 5892, 1085, 21, 5092, 587, 558, 576, 1126, 7488, 10841, 10978, 504, 10979, 10985, 10986, 10987, 10248, 10989, 10990, 7484, 8786, 10991, 10992, 6852, 5956, 5950, 5056, 10994, 2000, 11005, 11006, 1631, 7498, 5918, 6269, 5088, 5379, 6899, 11008, 11009, 5949, 11010, 11011, 11013, 11015, 11016, 10360, 8199, 11017, 4850, 5378, 10974, 8580, 8168, 7493, 8672, 1200, 11018, 6185, 2]
+// Dependencies: [32, 19, 17, 5081, 6035, 10977, 5892, 1085, 21, 5092, 587, 558, 576, 1126, 7483, 10841, 10978, 504, 10979, 10985, 10986, 10987, 10248, 10989, 10990, 7479, 8781, 10991, 10992, 6852, 5956, 5950, 5056, 10994, 2000, 11005, 11006, 1631, 7493, 5918, 6269, 5088, 5379, 6899, 11008, 11009, 5949, 11010, 11011, 11013, 11015, 11016, 10360, 8194, 11017, 4850, 5378, 10974, 8575, 8163, 7488, 8667, 1200, 11018, 6185, 2]
 // Exports: RequestToSpeakListButton
 
 // Module 10976 (StageActionBarButtons)
@@ -19,13 +19,13 @@ import spring from "spring" /* 5378 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import Pressables from "Pressables" /* 6185 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7484 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7488 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
-import Form from "Form" /* 8580 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8672 */;
-import CallsUtils from "CallsUtils" /* 8786 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7479 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7483 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import Form from "Form" /* 8575 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8667 */;
+import CallsUtils from "CallsUtils" /* 8781 */;
 import CallBarActionAll from "CallBarAction" /* 10841 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10978 */;
 import StageMusicActionCreators from "StageMusicActionCreators" /* 10989 */;
@@ -863,7 +863,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(
             return tmp17;
           }
         }
-        const obj3 = { imageStyle: tmp13, accessibilityLabel: tmp14, IconComponent: tmp(8199).ChatIcon, source: isVoiceChannelLocked(11017), onPress: tmp12, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+        const obj3 = { imageStyle: tmp13, accessibilityLabel: tmp14, IconComponent: tmp(8194).ChatIcon, source: isVoiceChannelLocked(11017), onPress: tmp12, appearsDisabled: isVoiceChannelLocked, isSmallSize };
         const ActionButton = openChat(10841).ActionButton;
         const tmp21 = closure_12(ActionButton, obj3);
         cResult[17] = isSmallSize;
@@ -902,7 +902,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(
         }
       }
     }
-    const obj5 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: tmp23, accessibilityLabel: tmp24, IconComponent: tmp(8199).ChatIcon, source: isVoiceChannelLocked(11017), onPress: tmp12, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+    const obj5 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: tmp23, accessibilityLabel: tmp24, IconComponent: tmp(8194).ChatIcon, source: isVoiceChannelLocked(11017), onPress: tmp12, appearsDisabled: isVoiceChannelLocked, isSmallSize };
     const NotifiedActionButton = openChat(10841).NotifiedActionButton;
     const tmp31 = closure_12(NotifiedActionButton, obj5);
     cResult[9] = isSmallSize;
@@ -962,7 +962,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(
   if (mentionCount <= 0) {
     let tmp7Result;
     if (unreadCount <= 0) {
-      const obj4 = { imageStyle: obj5, accessibilityLabel: intl2.string(tmp(1126).t.ZXxLQg), IconComponent: tmp(8199).ChatIcon, source: isVoiceChannelLocked(11017), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+      const obj4 = { imageStyle: obj5, accessibilityLabel: intl2.string(tmp(1126).t.ZXxLQg), IconComponent: tmp(8194).ChatIcon, source: isVoiceChannelLocked(11017), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
       obj5 = { tintColor: isVoiceChannelLocked(587).unsafe_rawColors.WHITE };
       const ActionButton = openChat(10841).ActionButton;
       intl2 = tmp(1126).intl;
@@ -975,7 +975,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(
   if (mentionCount > 0) {
     unreadCount = mentionCount;
   }
-  const obj6 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: { tintColor: isVoiceChannelLocked(587).unsafe_rawColors.WHITE }, accessibilityLabel: intl.string(tmp(1126).t.ZXxLQg), IconComponent: tmp(8199).ChatIcon, source: isVoiceChannelLocked(11017), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+  const obj6 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: { tintColor: isVoiceChannelLocked(587).unsafe_rawColors.WHITE }, accessibilityLabel: intl.string(tmp(1126).t.ZXxLQg), IconComponent: tmp(8194).ChatIcon, source: isVoiceChannelLocked(11017), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
   ({ tintColor: isVoiceChannelLocked(587).unsafe_rawColors.WHITE });
   intl = tmp(1126).intl;
   tmp7Result = tmp7(NotifiedActionButton, obj6);
@@ -1428,8 +1428,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStageP
         }
       }
     }
-    const obj2 = { onPress: tmp5, iconSource: isLive(8168), iconStyle: promptIconStyle, style, completed: isLive, title: tmp7, subtitle: tmp8 };
-    const FormCTA = tmp(8580).FormCTA;
+    const obj2 = { onPress: tmp5, iconSource: isLive(8163), iconStyle: promptIconStyle, style, completed: isLive, title: tmp7, subtitle: tmp8 };
+    const FormCTA = tmp(8575).FormCTA;
     const tmp14 = closure_12(FormCTA, obj2);
     cResult[5] = tmp5;
     cResult[6] = isLive;
@@ -1465,7 +1465,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStageP
         const result = obj.openStageChannelSettings(_require);
       }
     },
-    iconSource: isLive(8168),
+    iconSource: isLive(8163),
     iconStyle: tmp.promptIconStyle,
     style,
     completed: isLive,
@@ -1527,7 +1527,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinStagePr
     }
   }
   const obj2 = { onPress: tmp5, iconSource: AssetRegistryDefault, iconStyle, iconContainerStyle, style, title: tmp6, subtitle: tmp7 };
-  const FormCTA = tmp(8580).FormCTA;
+  const FormCTA = tmp(8575).FormCTA;
   const tmp11 = closure_12(FormCTA, obj2);
   cResult[4] = tmp5;
   cResult[5] = style;
@@ -1553,7 +1553,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinStagePr
     subtitle: intl2.string(channel(1126).t.lyCW4E)
   };
   const tmp = closure_15();
-  const FormCTA = channel(8580).FormCTA;
+  const FormCTA = channel(8575).FormCTA;
   ({ iconStyle: obj.iconStyle, iconContainerStyle: obj.iconContainerStyle } = tmp);
   intl = channel(1126).intl;
   intl2 = channel(1126).intl;

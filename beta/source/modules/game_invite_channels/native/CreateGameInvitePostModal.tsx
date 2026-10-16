@@ -1,7 +1,7 @@
 // Module ID: 12539
 // Function ID: 12540
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 2065, 7375, 21, 5092, 587, 558, 576, 6852, 504, 12538, 6207, 6665, 12540, 5103, 5056, 10461, 2000, 1126, 6185, 6208, 5088, 3785, 6774, 6974, 6265, 6180, 6896, 11659, 5379, 2]
+// Dependencies: [32, 19, 17, 2065, 7370, 21, 5092, 587, 558, 576, 6852, 504, 12538, 6207, 6665, 12540, 5103, 5056, 10461, 2000, 1126, 6185, 6208, 5088, 3785, 6774, 6974, 6265, 6180, 6896, 11659, 5379, 2]
 
 // Module 12539 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import intl10 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
-import SlowmodeStore from "SlowmodeStore" /* 7375 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

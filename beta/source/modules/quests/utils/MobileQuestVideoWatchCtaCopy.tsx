@@ -1,13 +1,13 @@
 // Module ID: 12967
 // Function ID: 12968
 // Name: MobileQuestVideoWatchCtaCopy
-// Dependencies: [5972, 7413, 1126, 12968, 2]
+// Dependencies: [5972, 7408, 1126, 12968, 2]
 // Exports: getBountyWatchCtaText, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
 // Module 12967 (MobileQuestVideoWatchCtaCopy)
 import intl5 from "intl" /* 1126 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
 import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 12968 */;
 import size from "module_2" /* 2 */;
 

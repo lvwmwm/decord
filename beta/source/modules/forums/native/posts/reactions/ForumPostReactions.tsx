@@ -1,12 +1,12 @@
 // Module ID: 10450
 // Function ID: 10451
 // Name: ForumPostReactions
-// Dependencies: [19, 17, 21, 5092, 558, 576, 10451, 9327, 10453, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 10451, 9322, 10453, 2]
 
 // Module 10450 (ForumPostReactions)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ForumHooks from "ForumHooks" /* 9327 */;
+import ForumHooks from "ForumHooks" /* 9322 */;
 import useReactionPermissionsDefault from "useReactionPermissions" /* 10451 */;
 import ForumPostReactionButton2 from "ForumPostReactionButton" /* 10453 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaxForumPost
       if (cResult[2] === diff) {
         tmp6 = cResult[3];
       }
-      const tmpResult = tmp(9327);
+      const tmpResult = tmp(9322);
       const maxPossibleForumPostReactions = tmpResult.useMaxPossibleForumPostReactions(tmp6);
       ({ reactions, additionalReactionCount } = maxPossibleForumPostReactions);
       if (0 === reactions.length) {
@@ -198,7 +198,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaxForumPost
   if (disableReactionCreates) {
     num = 0;
   }
-  let obj = thread(9327);
+  let obj = thread(9322);
   const obj2 = { containerWidth: containerWidth - num, reactionEmojiWidth: 46, digitWidth: 7.5, message: firstMessage, parentChannel };
   const maxPossibleForumPostReactions = obj.useMaxPossibleForumPostReactions(obj2);
   ({ reactions, additionalReactionCount } = maxPossibleForumPostReactions);
@@ -271,7 +271,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       if (cResult[2] === num) {
         tmp5 = cResult[3];
       }
-      const tmpResult = tmp(9327);
+      const tmpResult = tmp(9322);
       const someForumPostReactions = tmpResult.useSomeForumPostReactions(tmp5);
       ({ reactions, additionalNonUniqueReactionCount } = someForumPostReactions);
       if (0 === reactions.length) {
@@ -425,8 +425,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   const disableReactionCreates = reactionContainerStyle(10451)(thread).disableReactionCreates;
   let obj = { message: firstMessage, parentChannel, sorted: false, count: num };
   num = 2;
-  const useSomeForumPostReactions = thread(9327).useSomeForumPostReactions;
-  thread(9327);
+  const useSomeForumPostReactions = thread(9322).useSomeForumPostReactions;
+  thread(9322);
   if (disableReactionCreates) {
     num = 3;
   }

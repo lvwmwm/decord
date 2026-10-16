@@ -1,7 +1,7 @@
 // Module ID: 18340
 // Function ID: 18341
 // Name: AuditLogUtils
-// Dependencies: [5987, 6789, 6926, 2070, 6030, 18339, 2065, 2119, 4760, 1390, 18338, 1085, 2072, 11450, 6790, 2071, 3, 5121, 1126, 8511, 11, 18341, 1097, 1403, 5421, 1998, 4962, 14, 1103, 8685, 18303, 4793, 4702, 2]
+// Dependencies: [5987, 6789, 6926, 2070, 6030, 18339, 2065, 2119, 4760, 1390, 18338, 1085, 2072, 11450, 6790, 2071, 3, 5121, 1126, 8506, 11, 18341, 1097, 1403, 5421, 1998, 4962, 14, 1103, 8680, 18303, 4793, 4702, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
 // Module 18340 (AuditLogUtils)
@@ -18,7 +18,7 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import TimeUtils from "TimeUtils" /* 5121 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8685 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8680 */;
 import Constants2 from "Constants" /* 11450 */;
 import AutomodRuleUtils from "AutomodRuleUtils" /* 18303 */;
 import AuditLogRecord from "AuditLogRecord" /* 18339 */;
@@ -858,7 +858,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj20[TEMPORARY] = f134407;
           const FLAGS = AuditLogChangeKeys.FLAGS;
           const obj23 = {};
-          obj23[obj45(8511).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1126).t.XYZMbL;
+          obj23[obj45(8506).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1126).t.XYZMbL;
           obj20[FLAGS] = f134408;
           obj20[AuditLogChangeKeys.ROLE_IDS] = () => obj45(dependencyMap[18]).t.gb1Owj;
           const obj24 = {};

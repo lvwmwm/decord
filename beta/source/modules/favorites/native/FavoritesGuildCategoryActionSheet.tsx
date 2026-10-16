@@ -1,7 +1,7 @@
 // Module ID: 16547
 // Function ID: 16548
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 2068, 21, 558, 576, 5421, 12691, 2041, 6839, 6895, 10309, 1126, 7092, 16548, 10017, 6886, 4808, 6899, 504, 2]
+// Dependencies: [19, 2068, 21, 558, 576, 5421, 12691, 2041, 6839, 6895, 10309, 1126, 7092, 16548, 10012, 6886, 4808, 6899, 504, 2]
 
 // Module 16547 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 4808 */;
@@ -123,7 +123,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
         };
         ActionSheetRow2 = tmp(6895).ActionSheetRow;
         intl2 = tmp(1126).intl;
-        obj7 = { IconComponent: category(10017).IdIcon };
+        obj7 = { IconComponent: category(10012).IdIcon };
         Icon3 = tmp(6895).ActionSheetRow.Icon;
         tmp23 = closure_5(Group3, obj5);
       }
@@ -247,7 +247,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
     };
     ActionSheetRow3 = tmp4(6895).ActionSheetRow;
     intl2 = tmp4(1126).intl;
-    obj10 = { IconComponent: category(10017).IdIcon };
+    obj10 = { IconComponent: category(10012).IdIcon };
     Icon3 = tmp4(6895).ActionSheetRow.Icon;
     tmp7Result2 = tmp7(Group3, obj8);
   }

@@ -1,15 +1,15 @@
 // Module ID: 16729
 // Function ID: 16730
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 2064, 5757, 6054, 6034, 4752, 2069, 6807, 2065, 7250, 4750, 6035, 2116, 5966, 2068, 4749, 2078, 7257, 1096, 7251, 1209, 7014, 558, 576, 10313, 12, 1388, 2]
+// Dependencies: [32, 19, 2064, 5757, 6054, 6034, 4752, 2069, 6807, 2065, 7245, 4750, 6035, 2116, 5966, 2068, 4749, 2078, 7252, 1096, 7246, 1209, 7014, 558, 576, 10313, 12, 1388, 2]
 
 // Module 16729 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1096 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4749 */;
 import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7014 */;
-import ChannelListState from "ChannelListState" /* 7251 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
+import ChannelListState from "ChannelListState" /* 7246 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7252 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
@@ -20,7 +20,7 @@ import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 6807 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7250 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7245 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -817,7 +817,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite
       }
     }
     let flag2 = false;
-    if (tmp22 <= tmp(7251).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+    if (tmp22 <= tmp(7246).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
       class F {
         constructor() {
           const tmp = hasAccess && closure_3;
@@ -936,7 +936,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite
     hasAccess = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
   }
   let flag2 = false;
-  if (memo.getSections().length <= tmp(7251).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (memo.getSections().length <= tmp(7246).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     let c0 = false;
     memo.forEachShownChannel(f125752);
     flag2 = !c0;

@@ -1,12 +1,12 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8264
+// Function ID: 8265
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 5081, 570, 1272, 1494, 4967, 558, 576, 504, 7274, 2]
+// Dependencies: [32, 5, 19, 5081, 570, 1272, 1494, 4967, 558, 576, 504, 7269, 2]
 // Exports: maybeFetchColors
 
-// Module 8269 (useAvatarColor)
+// Module 8264 (useAvatarColor)
 import react2 from "react" /* 576 */;
-import _modDef7274 from "module_7274" /* 7274 */;
+import _modDef7269 from "module_7269" /* 7269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

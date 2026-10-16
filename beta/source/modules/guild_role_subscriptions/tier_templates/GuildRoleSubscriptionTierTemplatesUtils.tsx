@@ -1,7 +1,7 @@
 // Module ID: 15526
 // Function ID: 15527
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2065, 4743, 15521, 15527, 1085, 2072, 5645, 558, 576, 573, 1403, 584, 8602, 6963, 14120, 2]
+// Dependencies: [5, 19, 2065, 4743, 15521, 15527, 1085, 2072, 5645, 558, 576, 573, 1403, 584, 8597, 6963, 14120, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
 // Module 15526 (GuildRoleSubscriptionTierTemplatesUtils)

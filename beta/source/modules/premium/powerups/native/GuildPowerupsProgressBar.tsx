@@ -1,7 +1,7 @@
 // Module ID: 16660
 // Function ID: 16661
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 16661, 2087, 21, 587, 4850, 5391, 5092, 558, 576, 573, 16662, 16663, 5093, 12217, 6879, 1126, 2600, 5088, 6906, 8542, 2]
+// Dependencies: [19, 17, 16661, 2087, 21, 587, 4850, 5391, 5092, 558, 576, 573, 16662, 16663, 5093, 12217, 6879, 1126, 2600, 5088, 6906, 8537, 2]
 
 // Module 16660 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 587 */;

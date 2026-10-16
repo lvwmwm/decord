@@ -1,7 +1,7 @@
 // Module ID: 15399
 // Function ID: 15400
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 9171, 7413, 15366, 504, 9190, 7411, 1126, 15398, 5975, 15400, 15367, 5362, 5371, 5088, 6185, 9242, 2]
+// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 9166, 7408, 15366, 504, 9185, 7406, 1126, 15398, 5975, 15400, 15367, 5362, 5371, 5088, 6185, 9237, 2]
 
 // Module 15399 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
@@ -11,10 +11,10 @@ import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
 import react_native2 from "react-native" /* 5371 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7411 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9190 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7406 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9185 */;
 import QuestHooks from "QuestHooks" /* 15366 */;
 import QuestBottomSheet from "QuestBottomSheet" /* 15398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -260,15 +260,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHea
   let tmp2 = null != completedAt;
   dependencyMap = tmp2;
   gameTitle = quest.config.messages.gameTitle;
-  let obj = quest(9171);
+  let obj = quest(9166);
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj2 = quest(7413);
+  let obj2 = quest(7408);
   const hasWatchVideoTasksResult = obj2.hasWatchVideoTasks(quest);
   react = hasWatchVideoTasksResult;
-  let obj3 = quest(7413);
+  let obj3 = quest(7408);
   const isInGameQuestResult = obj3.isInGameQuest(quest);
   c5 = isInGameQuestResult;
-  let obj4 = quest(9171);
+  let obj4 = quest(9166);
   first = gameTitle(obj4.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
   targetMinutes = questTaskDetails.targetMinutes;
   const items = [quest];
@@ -282,9 +282,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHea
   let obj6 = quest(504);
   const items1 = [first];
   const stateFromStores = obj6.useStateFromStores(items1, () => first.getCurrentUser());
-  const obj7 = quest(9190);
+  const obj7 = quest(9185);
   defaultRewardNameWithArticle = obj7.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-  const obj8 = quest(7411);
+  const obj8 = quest(7406);
   const isSponsoredPlayQuestResult = obj8.isSponsoredPlayQuest(quest);
   c11 = isSponsoredPlayQuestResult;
   const items2 = [tmp2, hasWatchVideoTasksResult, step, first, memo, gameTitle, defaultRewardNameWithArticle, targetMinutes, hasWatchVideoOnMobileTasks, isInGameQuestResult, isSponsoredPlayQuestResult, quest.config];
@@ -447,7 +447,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
                 const PressableOpacity = tmp(6185).PressableOpacity;
                 intl = tmp(1126).intl;
                 obj4 = { color: ref(587).colors.INTERACTIVE_TEXT_DEFAULT };
-                MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
+                MoreHorizontalIcon = tmp(9237).MoreHorizontalIcon;
                 tmp23 = closure_7(PressableOpacity, obj3);
               }
               cResult[15] = actionSheetPressHandler;
@@ -552,7 +552,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
     const PressableOpacity = tmp2(6185).PressableOpacity;
     intl = tmp2(1126).intl;
     obj7 = { color: ref(587).colors.INTERACTIVE_TEXT_DEFAULT };
-    MoreHorizontalIcon = tmp2(9242).MoreHorizontalIcon;
+    MoreHorizontalIcon = tmp2(9237).MoreHorizontalIcon;
     withActionSheet = closure_7(PressableOpacity, obj6);
   }
   items3[1] = withActionSheet;

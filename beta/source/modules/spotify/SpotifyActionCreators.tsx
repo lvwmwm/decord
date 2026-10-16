@@ -1,16 +1,16 @@
 // Module ID: 10787
 // Function ID: 10788
 // Name: SpotifyActionCreators
-// Dependencies: [10786, 8459, 1085, 2060, 1295, 584, 1102, 1382, 8889, 2]
+// Dependencies: [10786, 8454, 1085, 2060, 1295, 584, 1102, 1382, 8884, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
 // Module 10787 (SpotifyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GameUtilsDefault from "GameUtils" /* 8889 */;
+import GameUtilsDefault from "GameUtils" /* 8884 */;
 import SpotifyProtocolStore from "SpotifyProtocolStore" /* 10786 */;
-import SpotifyConstants from "SpotifyConstants" /* 8459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8454 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

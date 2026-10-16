@@ -1,9 +1,9 @@
-// Module ID: 7911
-// Function ID: 7912
+// Module ID: 7906
+// Function ID: 7907
 // Name: ForumPostAnalyticsManager
 // Dependencies: [6060, 502, 2065, 6808, 11, 7007, 2]
 
-// Module 7911 (ForumPostAnalyticsManager)
+// Module 7906 (ForumPostAnalyticsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ForumUtils from "ForumUtils" /* 7007 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6060 */;

@@ -1,13 +1,13 @@
 // Module ID: 15759
 // Function ID: 15760
 // Name: ImageDescriptionsSetting
-// Dependencies: [1207, 7993, 558, 2041, 15760, 10663, 1126, 2]
+// Dependencies: [1207, 7988, 558, 2041, 15760, 10663, 1126, 2]
 // Exports: onImageDescriptionSettingValueChange
 
 // Module 15759 (ImageDescriptionsSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import UserSettingsText from "UserSettingsText" /* 15760 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

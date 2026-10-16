@@ -1,14 +1,14 @@
 // Module ID: 11560
 // Function ID: 11561
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6030, 2069, 2065, 4750, 4760, 1390, 1085, 558, 576, 11558, 1388, 504, 1106, 5749, 1998, 5924, 5909, 5921, 5920, 11561, 1126, 5747, 7376, 4962, 5421, 2]
+// Dependencies: [19, 6030, 2069, 2065, 4750, 4760, 1390, 1085, 558, 576, 11558, 1388, 504, 1106, 5749, 1998, 5924, 5909, 5921, 5920, 11561, 1126, 5747, 7371, 4962, 5421, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
 // Module 11560 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import StickersUtils from "StickersUtils" /* 5749 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7376 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7371 */;
 import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11561 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6030 */;

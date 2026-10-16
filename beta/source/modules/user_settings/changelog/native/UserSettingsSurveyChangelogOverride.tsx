@@ -1,7 +1,7 @@
 // Module ID: 16079
 // Function ID: 16080
 // Name: UserSettingsSurveyChangelogOverride
-// Dependencies: [32, 19, 17, 7016, 7472, 21, 5092, 587, 558, 576, 6839, 6899, 6895, 5042, 6886, 6286, 16080, 5056, 5379, 504, 5922, 6180, 6265, 5088, 8124, 5377, 2]
+// Dependencies: [32, 19, 17, 7016, 7467, 21, 5092, 587, 558, 576, 6839, 6899, 6895, 5042, 6886, 6286, 16080, 5056, 5379, 504, 5922, 6180, 6265, 5088, 8119, 5377, 2]
 
 // Module 16079 (UserSettingsSurveyChangelogOverride)
 import react_native from "react-native" /* 17 */;
@@ -12,12 +12,12 @@ import Text_Text from "Text/Text" /* 5088 */;
 import usePreviousDefault from "usePrevious" /* 5922 */;
 import TableRow2 from "TableRow" /* 6180 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8124 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8119 */;
 import SurveyActionCreatorsAll from "SurveyActionCreators" /* 16080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChangelogStore from "ChangelogStore" /* 7016 */;
-import SurveyStore from "SurveyStore" /* 7472 */;
+import SurveyStore from "SurveyStore" /* 7467 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

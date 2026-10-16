@@ -1,7 +1,7 @@
 // Module ID: 11730
 // Function ID: 11731
 // Name: FrecencySection
-// Dependencies: [109, 32, 19, 17, 2064, 11731, 1085, 21, 5092, 587, 558, 576, 9247, 1388, 6858, 11732, 10622, 504, 10623, 5107, 4850, 5093, 1126, 8768, 11733, 11729, 1998, 8542, 11734, 5088, 10533, 9363, 6185, 11735, 7247, 6157, 11738, 2]
+// Dependencies: [109, 32, 19, 17, 2064, 11731, 1085, 21, 5092, 587, 558, 576, 9242, 1388, 6858, 11732, 10622, 504, 10623, 5107, 4850, 5093, 1126, 8763, 11733, 11729, 1998, 8537, 11734, 5088, 10533, 9358, 6185, 11735, 7242, 6157, 11738, 2]
 
 // Module 11730 (FrecencySection)
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
 import FrecencySectionStore2 from "FrecencySectionStore" /* 11731 */;
 import usePlaceholderSize from "usePlaceholderSize" /* 11732 */;

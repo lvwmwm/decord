@@ -1,7 +1,7 @@
 // Module ID: 11152
 // Function ID: 11153
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 2065, 2087, 5110, 5135, 7429, 1390, 5117, 21, 5092, 4967, 587, 558, 576, 1200, 504, 5421, 11153, 5136, 1126, 5379, 6814, 2]
+// Dependencies: [109, 32, 19, 17, 2065, 2087, 5110, 5135, 7424, 1390, 5117, 21, 5092, 4967, 587, 558, 576, 1200, 504, 5421, 11153, 5136, 1126, 5379, 6814, 2]
 
 // Module 11152 (RTCDebugOverlay)
 import react2 from "react" /* 576 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import RTCDebugStore from "RTCDebugStore" /* 5135 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

@@ -1,7 +1,7 @@
 // Module ID: 12523
 // Function ID: 12524
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [32, 19, 17, 12010, 12003, 21, 5092, 587, 1126, 558, 576, 4818, 683, 504, 12014, 8530, 12359, 12524, 2]
+// Dependencies: [32, 19, 17, 12010, 12003, 21, 5092, 587, 1126, 558, 576, 4818, 683, 504, 12014, 8525, 12359, 12524, 2]
 
 // Module 12523 (GuildDirectoryCategorySelector)
 import react_native from "react-native" /* 17 */;

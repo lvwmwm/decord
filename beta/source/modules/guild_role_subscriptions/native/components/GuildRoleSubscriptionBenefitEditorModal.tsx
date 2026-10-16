@@ -1,7 +1,7 @@
 // Module ID: 18575
 // Function ID: 18576
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4760, 1390, 18574, 15498, 1085, 21, 5092, 587, 5906, 558, 576, 14125, 5049, 1126, 1200, 6185, 1631, 18576, 5421, 8580, 18578, 8677, 18579, 2]
+// Dependencies: [5, 32, 19, 17, 4760, 1390, 18574, 15498, 1085, 21, 5092, 587, 5906, 558, 576, 14125, 5049, 1126, 1200, 6185, 1631, 18576, 5421, 8575, 18578, 8672, 18579, 2]
 // Exports: default
 
 // Module 18575 (GuildRoleSubscriptionBenefitEditorModal)
@@ -402,7 +402,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     tmp27 = closure_13;
   } else {
     let obj2 = { style: tmp5.textInput, showTopContainer: false, multiline: false, maxLength, value, placeholder: intl9.string(tmp21(1126).t["kV54/Y"]), onChange: tmp6[1], autoFocus: true, clearButtonVisibility: tmp21(1200).ClearButtonVisibility.WITH_CONTENT };
-    const FormInput = tmp21(8580).FormInput;
+    const FormInput = tmp21(8575).FormInput;
     intl9 = tmp21(1126).intl;
     tmp26 = closure_13(FormInput, obj2);
     tmp27 = closure_13;
@@ -424,10 +424,10 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   items1[1] = obj6;
   items2 = [, , , , , , ];
   const obj7 = { style: tmp5.header, children: stringResult1 };
-  items2[0] = tmp27(tmp3(8677), obj7);
+  items2[0] = tmp27(tmp3(8672), obj7);
   items2[1] = tmp26;
   const obj8 = { style: tmp5.header, children: intl7.string(tmp21(1126).t.sMOuuS) };
-  const tmp3Result = tmp3(8677);
+  const tmp3Result = tmp3(8672);
   intl7 = tmp21(1126).intl;
   items2[2] = tmp27(tmp3Result, obj8);
   const obj9 = {
@@ -440,11 +440,11 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   };
   items2[3] = tmp27(tmp3(18579), obj9);
   const obj10 = { style: tmp5.header, children: intl8.string(tmp21(1126).t["74JctW"]) };
-  const tmp3Result2 = tmp3(8677);
+  const tmp3Result2 = tmp3(8672);
   intl8 = tmp21(1126).intl;
   items2[4] = tmp27(tmp3Result2, obj10);
   const obj11 = { style: tmp5.textInput, showTopContainer: false, multiline: true, maxLength: obj, numberOfLines: 3, value: first3, onChange: tmp12, placeholder: stringResult2 };
-  items2[5] = tmp27(tmp21(8580).FormInput, obj11);
+  items2[5] = tmp27(tmp21(8575).FormInput, obj11);
   let tmp27Result = null;
   const tmp29 = first2;
   const tmp30 = closure_6;

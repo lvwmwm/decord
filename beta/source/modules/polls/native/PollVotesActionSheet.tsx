@@ -1,7 +1,7 @@
 // Module ID: 11512
 // Function ID: 11513
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5081, 5987, 2065, 5432, 1390, 21, 5092, 587, 558, 576, 1415, 504, 6820, 1126, 5088, 6185, 7898, 6335, 11513, 6852, 11519, 9585, 7901, 5409, 4962, 6180, 1200, 8766, 8304, 4850, 5093, 8625, 5031, 4969, 11520, 11521, 6157, 6879, 5056, 6840, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 5987, 2065, 5432, 1390, 21, 5092, 587, 558, 576, 1415, 504, 6820, 1126, 5088, 6185, 7893, 6335, 11513, 6852, 11519, 9580, 7896, 5409, 4962, 6180, 1200, 8761, 8299, 4850, 5093, 8620, 5031, 4969, 11520, 11521, 6157, 6879, 5056, 6840, 2]
 // Exports: default
 
 // Module 11512 (PollVotesActionSheet)
@@ -17,8 +17,8 @@ import timing from "timing" /* 5093 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import PollsUtils from "PollsUtils" /* 7898 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import PollsUtils from "PollsUtils" /* 7893 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import formatPollMessageChatData from "formatPollMessageChatData" /* 11513 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

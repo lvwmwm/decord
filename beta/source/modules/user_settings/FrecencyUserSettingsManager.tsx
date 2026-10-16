@@ -1,7 +1,7 @@
 // Module ID: 18109
 // Function ID: 18110
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 9250, 9249, 5987, 5428, 6029, 6087, 1244, 1095, 1373, 1102, 6808, 2046, 1245, 1246, 12, 2]
+// Dependencies: [5, 9245, 9244, 5987, 5428, 6029, 6087, 1244, 1095, 1373, 1102, 6808, 2046, 1245, 1246, 12, 2]
 
 // Module 18109 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -12,8 +12,8 @@ import ApplicationConstants from "ApplicationConstants" /* 1373 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
 import FrecencyStore2 from "FrecencyStore" /* 6087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9250 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9249 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9245 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9244 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import SoundboardStore from "SoundboardStore" /* 5428 */;
 import StickersPersistedStore from "StickersPersistedStore" /* 6029 */;

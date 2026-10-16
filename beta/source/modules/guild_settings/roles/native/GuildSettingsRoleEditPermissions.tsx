@@ -1,7 +1,7 @@
 // Module ID: 18430
 // Function ID: 18431
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 2083, 4750, 1390, 1085, 21, 5092, 587, 4755, 38, 5088, 1126, 5056, 18431, 2000, 17593, 18428, 6739, 1265, 1097, 17597, 6896, 6265, 1200, 8631, 2]
+// Dependencies: [32, 19, 17, 2083, 4750, 1390, 1085, 21, 5092, 587, 4755, 38, 5088, 1126, 5056, 18431, 2000, 17593, 18428, 6739, 1265, 1097, 17597, 6896, 6265, 1200, 8626, 2]
 // Exports: default
 
 // Module 18430 (GuildSettingsRoleEditPermissions)
@@ -256,7 +256,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     tmp19Result4 = tmp19(closure_8, obj8);
   } else {
-    const obj9 = { Illustration: guild(8631).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1126).t.Psh5OO, obj11) };
+    const obj9 = { Illustration: guild(8626).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1126).t.Psh5OO, obj11) };
     const EmptyState = tmp28(1200).EmptyState;
     ({ emptyState: obj10.style, emptyStateText: obj10.bodyStyle } = tmp);
     intl2 = tmp28(1126).intl;

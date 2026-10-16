@@ -1,7 +1,7 @@
 // Module ID: 17774
 // Function ID: 17775
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 6067, 21, 5092, 558, 576, 1126, 5379, 10534, 7574, 2]
+// Dependencies: [19, 17, 6067, 21, 5092, 558, 576, 1126, 5379, 10534, 7569, 2]
 
 // Module 17774 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp6 = cResult[9];
   }
   if (cResult[10] !== tmp4) {
-    const IconButton = tmp(7574).IconButton;
+    const IconButton = tmp(7569).IconButton;
     const tmp11 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={tmp6} onPress={tmp4} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
     cResult[10] = tmp4;
     cResult[11] = tmp11;
@@ -113,7 +113,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return tmp3;
   }
-  const IconButton = setMode(7574).IconButton;
+  const IconButton = setMode(7569).IconButton;
   const intl = setMode(1126).intl;
   tmp3 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={intl.string(setMode(1126).t.brPQ5U)} onPress={callback} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
 }));

@@ -1,7 +1,7 @@
 // Module ID: 18382
 // Function ID: 18383
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8617, 2087, 8639, 1085, 7888, 21, 5092, 587, 1503, 8641, 504, 8618, 8290, 8619, 8638, 4808, 1126, 12217, 5011, 6201, 7089, 1504, 5300, 1200, 6727, 13020, 5088, 6265, 6896, 6180, 5377, 14143, 8580, 14141, 18383, 2]
+// Dependencies: [5, 32, 19, 17, 8612, 2087, 8634, 1085, 7883, 21, 5092, 587, 1503, 8636, 504, 8613, 8285, 8614, 8633, 4808, 1126, 12217, 5011, 6201, 7089, 1504, 5300, 1200, 6727, 13020, 5088, 6265, 6896, 6180, 5377, 14143, 8575, 14141, 18383, 2]
 // Exports: default
 
 // Module 18382 (GuildSettingsModalServerTag)
@@ -9,16 +9,16 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Powerups from "Powerups" /* 5011 */;
-import GuildProfileStore from "GuildProfileStore" /* 8617 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8619 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildProfileStore from "GuildProfileStore" /* 8612 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8614 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
-import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
@@ -80,14 +80,14 @@ export default function GuildSettingsModalServerTag(guildId) {
   let tmp3 = dependencyMap;
   let obj = guildId(1503);
   navigation = obj.useNavigation();
-  let obj2 = guildId(8641);
+  let obj2 = guildId(8636);
   const result = obj2.canUseMobileServerTagSettings(guildId);
   dependencyMap = result;
   const obj3 = guildId(504);
   const items = [result1];
   const items1 = [guildId];
   const stateFromStores = obj3.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
-  let obj4 = guildId(8618);
+  let obj4 = guildId(8613);
   const guildProfile1 = obj4.useGuildProfile(guildId);
   ({ guildProfile, fetchStatus } = guildProfile1);
   let obj5 = guildId(504);
@@ -101,7 +101,7 @@ export default function GuildSettingsModalServerTag(guildId) {
   let closure_6 = tmp10[1];
   let guildSupportsTagsResult = null != stateFromStores;
   if (guildSupportsTagsResult) {
-    const tmp2Result = tmp2(8290);
+    const tmp2Result = tmp2(8285);
     guildSupportsTagsResult = tmp2Result.guildSupportsTags(stateFromStores);
   }
   GuildProfileFetchStatus = guildSupportsTagsResult;
@@ -109,7 +109,7 @@ export default function GuildSettingsModalServerTag(guildId) {
   if (stateFromStores1 != null) {
     tag = stateFromStores1.tag;
   }
-  const tmp2Result3 = tmp2(8641);
+  const tmp2Result3 = tmp2(8636);
   result1 = tmp2Result3.isServerTagDraftDirty(stateFromStores1, stateFromStores2);
   let tmp16 = null != stateFromStores1;
   if (tmp16) {
@@ -438,7 +438,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         const tmp32Result2 = closure_14(TableRowGroup, obj10);
         const obj14 = { style: tmp.container, contentContainerStyle: items13, children: closure_14(Stack2, tmp41) };
         items13 = [tmp.containerContent, contentContainerStyle];
-        const Form = tmp2(8580).Form;
+        const Form = tmp2(8575).Form;
         const obj16 = { spacing: navigation(587).space.PX_16, children: null };
         Stack2 = tmp2(5377).Stack;
         if (guildSupportsTagsResult) {

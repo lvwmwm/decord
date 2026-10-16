@@ -1,13 +1,13 @@
 // Module ID: 15432
 // Function ID: 15433
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7393, 21, 5092, 587, 558, 576, 15405, 9171, 7413, 4733, 12966, 1126, 5088, 15427, 2]
+// Dependencies: [19, 17, 7388, 21, 5092, 587, 558, 576, 15405, 9166, 7408, 4733, 12966, 1126, 5088, 15427, 2]
 
 // Module 15432 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7393 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7388 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
   const tmp5 = closure_7();
   const tmpResult = tmp(15405);
   quest = tmpResult.useVideoQuestModalContext().quest;
-  const tmpResult3 = tmp(9171);
+  const tmpResult3 = tmp(9166);
   const questTaskDetails = tmpResult3.useQuestTaskDetails(quest);
   if (cResult[0] === quest.id) {
     let tmp7;
@@ -225,7 +225,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestMo
   const tmp2 = closure_7();
   let obj = quest(15405);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(9171);
+  let obj2 = quest(9166);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const tmp6 = useVideoQuestUIStore((arg0) => {
     let tmp = arg0.videoProgress[quest.id];

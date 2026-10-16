@@ -1,7 +1,7 @@
 // Module ID: 13073
 // Function ID: 13074
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 558, 576, 13074, 13075, 8426, 13076, 2]
+// Dependencies: [19, 21, 558, 576, 13074, 13075, 8421, 13076, 2]
 
 // Module 13073 (MediaModalVideo)
 import react2 from "react" /* 576 */;
@@ -16,7 +16,7 @@ import size_mod from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const common_Video = tmp(8426);
+const common_Video = tmp(8421);
 let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalVideo(arg0) {

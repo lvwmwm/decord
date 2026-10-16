@@ -1,7 +1,7 @@
 // Module ID: 18723
 // Function ID: 18724
 // Name: receiveNotification
-// Dependencies: [5, 6133, 6054, 502, 2065, 1390, 5933, 1085, 5898, 2071, 12128, 3, 4809, 1126, 5046, 4977, 1121, 7493, 5103, 7053, 8514, 4976, 16876, 6058, 8304, 6879, 7015, 7017, 1265, 5107, 1382, 11338, 11, 16874, 7197, 10, 7198, 5757, 13929, 12131, 504, 11193, 9317, 5069, 1105, 9652, 8472, 8467, 584, 5934, 1112, 7481, 14072, 2]
+// Dependencies: [5, 6133, 6054, 502, 2065, 1390, 5933, 1085, 5898, 2071, 12128, 3, 4809, 1126, 5046, 4977, 1121, 7488, 5103, 7053, 8509, 4976, 16876, 6058, 8299, 6879, 7015, 7017, 1265, 5107, 1382, 11338, 11, 16874, 7192, 10, 7193, 5757, 13929, 12131, 504, 11193, 9312, 5069, 1105, 9647, 8467, 8462, 584, 5934, 1112, 7476, 14072, 2]
 // Exports: default
 
 // Module 18723 (receiveNotification)
@@ -18,8 +18,8 @@ import parseURLDefault from "parseURL" /* 5069 */;
 import Constants2 from "Constants" /* 5898 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6133 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
-import MessageManagerDefault from "MessageManager" /* 9317 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import MessageManagerDefault from "MessageManager" /* 9312 */;
 import Constants3 from "Constants" /* 12128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
@@ -1224,7 +1224,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1398,7 +1398,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1572,7 +1572,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1746,7 +1746,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -1920,7 +1920,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2094,7 +2094,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2268,7 +2268,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2442,7 +2442,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2616,7 +2616,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;
@@ -2790,7 +2790,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
         }
         case "GUILD_STREAM_START":
         {
-          tmp19Result6 = tmp19(7481);
+          tmp19Result6 = tmp19(7476);
           obj15 = { streamType: StreamTypes.GUILD, ownerId: data.user_id, guildId: data.guild_id, channelId: data.channel_id };
           tmp19Result6(obj15);
           break;

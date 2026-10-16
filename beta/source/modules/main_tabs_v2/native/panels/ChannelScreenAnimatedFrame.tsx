@@ -1,7 +1,7 @@
 // Module ID: 16439
 // Function ID: 16440
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 5092, 587, 558, 576, 4850, 5093, 1200, 16437, 9307, 6814, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 4850, 5093, 1200, 16437, 9302, 6814, 2]
 
 // Module 16439 (ChannelScreenAnimatedFrame)
 import Fragment from "Fragment" /* 21 */;

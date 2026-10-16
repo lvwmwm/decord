@@ -1,17 +1,17 @@
 // Module ID: 16238
 // Function ID: 16239
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 7264, 1087, 1085, 21, 5092, 558, 576, 1503, 8971, 504, 16218, 1265, 7263, 6879, 16236, 6185, 1126, 587, 6157, 7276, 9034, 2]
+// Dependencies: [19, 7259, 1087, 1085, 21, 5092, 558, 576, 1503, 8966, 504, 16218, 1265, 7258, 6879, 16236, 6185, 1126, 587, 6157, 7271, 9029, 2]
 
 // Module 16238 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
 import VisibilitySensorDefault from "VisibilitySensor" /* 16236 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -140,7 +140,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
   const tmp = closure_9();
   let obj = subblock(1503);
   importDefault = obj.useNavigation();
-  let obj2 = subblock(8971);
+  let obj2 = subblock(8966);
   dependencyMap = obj2.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
   let obj3 = subblock(504);
@@ -230,11 +230,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
     tmp9Result = tmp9(FastImageDefault, obj9);
   }
   items1 = [tmp9Result, ];
-  const tmp2Result = subblock(7276);
+  const tmp2Result = subblock(7271);
   let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj11 = { style: tmp.limitedTimeBadge };
-    result = tmp9(tmp2(9034).LimitedTimeBadge, obj11);
+    result = tmp9(tmp2(9029).LimitedTimeBadge, obj11);
   }
   items1[1] = result;
   return closure_7(tmp11, obj5);

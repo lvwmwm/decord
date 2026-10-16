@@ -1,10 +1,10 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8474
+// Function ID: 8475
 // Name: ForumPostMediaUtils
 // Dependencies: [19, 7006, 2065, 5432, 1390, 1085, 5419, 2041, 1403, 1384, 1388, 558, 576, 5436, 1998, 5444, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8479 (ForumPostMediaUtils)
+// Module 8474 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;

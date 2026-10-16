@@ -1,13 +1,13 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7318
+// Function ID: 7319
 // Name: UserProfileGameWidgetTypes
-// Dependencies: [7324, 7322, 7325, 2]
+// Dependencies: [7319, 7317, 7320, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7323 (UserProfileGameWidgetTypes)
-import WidgetType from "WidgetType" /* 7322 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 7325 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7324 */;
+// Module 7318 (UserProfileGameWidgetTypes)
+import WidgetType from "WidgetType" /* 7317 */;
+import GameWidgetLimits from "GameWidgetLimits" /* 7320 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7319 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,10 +1,10 @@
-// Module ID: 8049
-// Function ID: 8050
+// Module ID: 8044
+// Function ID: 8045
 // Name: getRoleIcon
 // Dependencies: [6883, 1126, 2]
 // Exports: getRoleIcon
 
-// Module 8049 (getRoleIcon)
+// Module 8044 (getRoleIcon)
 import intl2 from "intl" /* 1126 */;
 import useRoleIconProps from "useRoleIconProps" /* 6883 */;
 import size_mod from "module_2" /* 2 */;

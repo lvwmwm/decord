@@ -1,7 +1,7 @@
 // Module ID: 15306
 // Function ID: 15307
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 5081, 5972, 21, 5092, 587, 5093, 5096, 558, 576, 4850, 5391, 15307, 15310, 15289, 504, 15290, 9449, 2]
+// Dependencies: [19, 17, 5081, 5972, 21, 5092, 587, 5093, 5096, 558, 576, 4850, 5391, 15307, 15310, 15289, 504, 15290, 9444, 2]
 
 // Module 15306 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9449 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9444 */;
 import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15289 */;
 import useVisibilityTransition from "useVisibilityTransition" /* 15290 */;
 import react from "react" /* 19 */;

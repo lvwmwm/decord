@@ -1,14 +1,14 @@
 // Module ID: 17352
 // Function ID: 17353
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5092, 558, 576, 1897, 6665, 17127, 8611, 17353, 17128, 17129, 6946, 9315, 17130, 17134, 17356, 17359, 1126, 17360, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1897, 6665, 17127, 8606, 17353, 17128, 17129, 6946, 9310, 17130, 17134, 17356, 17359, 1126, 17360, 2]
 
 // Module 17352 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
-import AppChannelChat from "AppChannelChat" /* 9315 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
+import AppChannelChat from "AppChannelChat" /* 9310 */;
 import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 17127 */;
 import FrameSurfaceState from "FrameSurfaceState" /* 17359 */;
 import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17360 */;
@@ -232,7 +232,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChan
             cResult[11] = obj10;
             tmp10 = obj10;
           }
-          const obj11 = { type: id(8611).EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
+          const obj11 = { type: id(8606).EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
           ({ id: obj2.channelId, guild_id: obj2.guildId } = channel);
           cResult[6] = channel.guild_id;
           cResult[7] = channel.id;

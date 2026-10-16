@@ -1,7 +1,7 @@
 // Module ID: 18581
 // Function ID: 18582
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5988, 21, 5092, 587, 558, 576, 18572, 504, 5299, 1126, 5398, 6157, 1415, 8580, 18567, 5088, 18578, 2]
+// Dependencies: [5, 32, 19, 17, 5988, 21, 5092, 587, 558, 576, 18572, 504, 5299, 1126, 5398, 6157, 1415, 8575, 18567, 5088, 18578, 2]
 
 // Module 18581 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 587 */;

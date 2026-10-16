@@ -1,7 +1,7 @@
 // Module ID: 13413
 // Function ID: 13414
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8308, 6905, 21, 5092, 8315, 12347, 13113, 5056, 12352, 2000, 8304, 7053, 6185, 13152, 1200, 5088, 12357, 12361, 6159, 12358, 2]
+// Dependencies: [19, 17, 8303, 6905, 21, 5092, 8310, 12347, 13113, 5056, 12352, 2000, 8299, 7053, 6185, 13152, 1200, 5088, 12357, 12361, 6159, 12358, 2]
 // Exports: default
 
 // Module 13413 (UserProfileMutuals)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Constants from "Constants" /* 6905 */;
-import Constants2 from "Constants" /* 8308 */;
+import Constants2 from "Constants" /* 8303 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -58,7 +58,7 @@ export default function UserProfileMutuals(user) {
   c3 = undefined;
   let tmp = closure_10();
   let tmp2 = user;
-  let obj = user(8315);
+  let obj = user(8310);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
   ({ mutualFriends, mutualGuilds } = guildId(12347)(user));

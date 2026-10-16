@@ -1,13 +1,13 @@
 // Module ID: 10681
 // Function ID: 10682
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 5440, 2024, 10682, 8306, 6853, 8269, 38, 8275, 1998, 8267, 558, 576, 7002, 2]
+// Dependencies: [32, 5, 19, 5440, 2024, 10682, 8301, 6853, 8264, 38, 8270, 1998, 8262, 558, 576, 7002, 2]
 
 // Module 10681 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1998 */;
 import Constants from "Constants" /* 2024 */;
-import useAvatarColor from "useAvatarColor" /* 8269 */;
+import useAvatarColor from "useAvatarColor" /* 8264 */;
 import utils_FunctionUtils from "utils/FunctionUtils" /* 10682 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -682,7 +682,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8267);
+      let tmp3Result = tmp3(8262);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
   } else {
     tmp19 = cResult[4];
   }
-  const tmpResult = tmp(8269);
+  const tmpResult = tmp(8264);
   const colorStore = tmpResult.useColorStore(tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = _asyncToGenerator(async (arg0, value) => {

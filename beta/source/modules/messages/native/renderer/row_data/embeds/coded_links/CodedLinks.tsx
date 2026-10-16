@@ -1,13 +1,13 @@
 // Module ID: 13510
 // Function ID: 13511
 // Name: CodedLinks
-// Dependencies: [32, 4751, 2087, 1390, 7378, 11608, 5077, 13511, 13512, 13523, 13525, 13517, 13527, 13520, 10672, 11361, 10685, 10683, 13528, 13530, 13531, 1388, 2]
+// Dependencies: [32, 4751, 2087, 1390, 7373, 11608, 5077, 13511, 13512, 13523, 13525, 13517, 13527, 13520, 10672, 11361, 10685, 10683, 13528, 13530, 13531, 1388, 2]
 // Exports: createCodedLinkEmbeds
 
 // Module 13510 (CodedLinks)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import CodedLink from "CodedLink" /* 5077 */;
-import ApplicationCodedLink from "ApplicationCodedLink" /* 7378 */;
+import ApplicationCodedLink from "ApplicationCodedLink" /* 7373 */;
 import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 10672 */;
 import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 10683 */;
 import storefrontCodedLink from "storefrontCodedLink" /* 10685 */;

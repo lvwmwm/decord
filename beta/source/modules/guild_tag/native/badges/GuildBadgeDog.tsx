@@ -1,11 +1,11 @@
 // Module ID: 14168
 // Function ID: 14169
 // Name: GuildBadgeDog
-// Dependencies: [109, 19, 21, 558, 576, 14145, 7577, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14145, 7572, 2]
 
 // Module 14168 (GuildBadgeDog)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import GuildBadgeUtils from "GuildBadgeUtils" /* 14145 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -273,7 +273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeDo
       }
     }
     const obj9 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7577).Svg;
+    const Svg = tmp(7572).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp24, tmp25, tmp31, tmp29, tmp30, tmp36, tmp39, tmp42, tmp45, tmp48, tmp49, tmp50, tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61];
     const tmp82 = hasOwnProperty(Svg, obj9);

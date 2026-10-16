@@ -1,15 +1,15 @@
 // Module ID: 14294
 // Function ID: 14295
 // Name: ProductCatalog
-// Dependencies: [1392, 3, 14295, 9281, 9504, 14296, 1398, 14297, 1396, 2]
+// Dependencies: [1392, 3, 14295, 9276, 9499, 14296, 1398, 14297, 1396, 2]
 // Exports: canUserUse
 
 // Module 14294 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PerksStateUtils from "PerksStateUtils" /* 1396 */;
 import user from "user" /* 1398 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9281 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9504 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9276 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9499 */;
 import SKUListingDefault from "SKUListing" /* 14296 */;
 import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 14297 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;

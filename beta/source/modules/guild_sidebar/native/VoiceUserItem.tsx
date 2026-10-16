@@ -1,7 +1,7 @@
 // Module ID: 16557
 // Function ID: 16558
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1085, 21, 1200, 10515, 5092, 587, 11761, 558, 576, 8855, 8856, 8858, 1265, 1415, 16558, 8804, 8806, 8800, 8802, 10770, 13027, 8164, 13025, 2]
+// Dependencies: [19, 17, 1085, 21, 1200, 10515, 5092, 587, 11761, 558, 576, 8850, 8851, 8853, 1265, 1415, 16558, 8799, 8801, 8795, 8797, 10770, 13027, 8159, 13025, 2]
 // Exports: getVoiceUserHeight
 
 // Module 16557 (VoiceUserItem)
@@ -11,11 +11,11 @@ import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8164 */;
-import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 8800 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8802 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 8804 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 8806 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8159 */;
+import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 8795 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8797 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 8799 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 8801 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import VideoIcon from "VideoIcon" /* 10770 */;
 import GameActivityIconDefault from "GameActivityIcon" /* 13025 */;

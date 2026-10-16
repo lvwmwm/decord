@@ -1,7 +1,7 @@
 // Module ID: 18426
 // Function ID: 18427
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 18406, 18408, 18405, 1096, 21, 5092, 587, 558, 576, 5031, 5408, 1126, 18427, 7747, 6839, 5056, 9374, 2122, 7980, 12682, 5088, 2600, 6840, 2]
+// Dependencies: [17, 18406, 18408, 18405, 1096, 21, 5092, 587, 558, 576, 5031, 5408, 1126, 18427, 7742, 6839, 5056, 9369, 2122, 7975, 12682, 5088, 2600, 6840, 2]
 
 // Module 18426 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5408 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7980 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7975 */;
 import _modDef12682 from "module_12682" /* 12682 */;
 import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18405 */;
 import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18406 */;
@@ -110,7 +110,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const self = this;
     const self2 = this;
-    const tmp11 = new tmp4(7747)();
+    const tmp11 = new tmp4(7742)();
     cResult[1] = tmp11;
     tmp10 = tmp11;
   } else {
