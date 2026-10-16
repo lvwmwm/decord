@@ -14,6 +14,54 @@ function fixHermesDecIndex(code: string) {
 	return code.replace(/r(\d+)\[(\d+)\] =/g, "r$1[r$2] =");
 }
 
+// The Rust decompiler names the module-2 default import after its original symbol
+// (`size`, …) instead of the old `set`, and emits container objects *before* the
+// objects they point at exist. Rewrite the snippet so it runs standalone in a VM.
+const importRe = /^import\s+([A-Za-z_$][\w$]*)\s+from\s+"[^"]+"[^\n]*$/gm;
+const forwardRefRe =
+	/^([ \t]*)(?:(const|let|var)\s+)?([A-Za-z_$][\w$]*)(\s*=\s*)(\{\s*[A-Za-z_$][\w$]*\s*:\s*[A-Za-z_$][\w$]*\s*(?:,\s*[A-Za-z_$][\w$]*\s*:\s*[A-Za-z_$][\w$]*\s*)*\})\s*;/gm;
+
+const themeRe = /theme/i;
+const exportPrivateRe = /export\s+const\s+_private/;
+const themesStub = "new Proxy({}, { get: (_, key) => key.toString().toLowerCase() })";
+
+function stubImport(_match: string, name: string, mod: string) {
+	// The themes provider is imported under varying names (`items`, `ThemeTypes`, …).
+	if (name === "items" || themeRe.test(name) || themeRe.test(mod))
+		return `const ${name} = { _private: { Themes: ${themesStub} } };`;
+	return `const ${name} = { fileFinishedImporting: () => {} };`;
+}
+
+// `{ A: obj1, B: obj2 }` where obj1/obj2 are assigned *after* the literal runs.
+// Make those properties getters so they resolve once the whole module has executed.
+function deferForwardRefs(
+	_match: string,
+	indent: string,
+	kind: string | undefined,
+	name: string,
+	_eq: string,
+	literal: string,
+) {
+	const pairs = literal
+		.slice(1, -1)
+		.split(",")
+		.map((pair) => pair.split(":").map((part) => part.trim()) as [key: string, value: string]);
+	const props = pairs
+		.map(
+			([key, value]) =>
+				`Object.defineProperty(${name}, ${JSON.stringify(key)}, { get: () => ${value}, enumerable: true, configurable: true });`,
+		)
+		.join(`\n${indent}`);
+	return `${indent}${kind ? `${kind} ` : ""}${name} = {};\n${indent}${props}`;
+}
+
+function prepareSnippet(snippet: string): string {
+	return snippet
+		.replace(importRe, stubImport)
+		.replace(/^import.*$/gm, "")
+		.replace(forwardRefRe, deferForwardRefs);
+}
+
 function findModuleSnippet(code: string[] | string, importPath: string): string | null {
 	const text = Array.isArray(code) ? code.join("\n") : code;
 	const parts = text.split(/(?=\/\/ === Module \d+:)/);
@@ -22,12 +70,9 @@ function findModuleSnippet(code: string[] | string, importPath: string): string 
 }
 
 function evalRawModule(snippet: string): any {
-	let code = snippet;
-	code = code.replace(/^import set from "set".*$/m, "const __importSet = { fileFinishedImporting: () => {} };");
-	code = code.replace(/^import.*$/gm, "");
-	code = code.replace(/set\.fileFinishedImporting/g, "__importSet.fileFinishedImporting");
-	code = code.replace(/export\s+const\s+_private/, "const _private");
-	code = code + "\n; _private;";
+	let code = prepareSnippet(snippet);
+	code = code.replace(exportPrivateRe, "const _private");
+	code = `${code}\n; _private;`;
 	const result = runInNewContext(code, {});
 	if (!result || typeof result !== "object" || !result.RawColors || typeof result.RawColors !== "object") {
 		throw new Error(
@@ -38,16 +83,9 @@ function evalRawModule(snippet: string): any {
 }
 
 function evalSemanticModule(snippet: string): any {
-	let code = snippet;
-	code = code.replace(/^import set from "set".*$/m, "const __importSet = { fileFinishedImporting: () => {} };");
-	code = code.replace(
-		/^import items from "items".*$/m,
-		"const items = { _private: { Themes: new Proxy({}, { get(_, k){ return k.toString().toLowerCase(); } }) } };",
-	);
-	code = code.replace(/^import.*$/gm, "");
-	code = code.replace(/set\.fileFinishedImporting/g, "__importSet.fileFinishedImporting");
-	code = code.replace(/export\s+const\s+_private/, "const _private");
-	code = code + "\n; _private;";
+	let code = prepareSnippet(snippet);
+	code = code.replace(exportPrivateRe, "const _private");
+	code = `${code}\n; _private;`;
 	code = fixHermesDecIndex(code);
 	const result = runInNewContext(code, {});
 	if (!result || typeof result !== "object" || !result.SemanticColors || typeof result.SemanticColors !== "object") {
