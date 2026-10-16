@@ -1,12 +1,12 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15567
+// Function ID: 15568
 // Name: SpinAnimation
-// Dependencies: [19, 21, 558, 576, 4909, 5154, 2]
+// Dependencies: [19, 21, 558, 576, 4909, 5155, 2]
 
-// Module 15557 (SpinAnimation)
+// Module 15567 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

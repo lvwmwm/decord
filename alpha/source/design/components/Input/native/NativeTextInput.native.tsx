@@ -1,15 +1,15 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6528
+// Function ID: 6529
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 6527, 5458, 5424, 6528, 4886, 4879, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 6529, 5459, 5425, 6530, 4886, 4879, 2]
 // Exports: NativeTextInput
 
-// Module 6526 (NativeTextInput)
+// Module 6528 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 4879 */;
 import native2 from "native" /* 4886 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6528 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6530 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5458);
+const useMountEffect = tmp(5459);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "Array", defaultValue: "test" };
+          const obj2 = { value: "Symbol", defaultValue: "current" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "Array", defaultValue: "test" };
+  return { value: "Symbol", defaultValue: "current" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

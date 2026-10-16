@@ -1,15 +1,15 @@
-// Module ID: 9463
-// Function ID: 9464
+// Module ID: 9464
+// Function ID: 9465
 // Name: Authorize
-// Dependencies: [2068, 4998, 1087, 9464, 8684, 6202, 4814, 1099, 5137, 2]
+// Dependencies: [2068, 4998, 1087, 9465, 8685, 6203, 4814, 1099, 5138, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9463 (Authorize)
+// Module 9464 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4814 */;
-import _mod6202 from "module_6202" /* 6202 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8684 */;
-import scopes from "scopes" /* 9464 */;
+import _mod6203 from "module_6203" /* 6203 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8685 */;
+import scopes from "scopes" /* 9465 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(5137);
+const QueryStringUtils = tmp(5138);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
@@ -28,7 +28,7 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8684).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8685).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -44,7 +44,7 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
       return guild_id;
     }
   }
-  const obj = _mod6202;
+  const obj = _mod6203;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {

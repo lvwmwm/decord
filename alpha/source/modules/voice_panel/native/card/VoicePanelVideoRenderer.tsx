@@ -1,26 +1,26 @@
-// Module ID: 18182
-// Function ID: 18183
+// Module ID: 18192
+// Function ID: 18193
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 12843, 12841, 18112, 12844, 21, 4909, 11214, 5153, 558, 576, 12842, 5440, 9815, 5119, 6557, 5293, 18113, 11211, 11210, 18183, 10621, 18063, 5282, 4877, 587, 5154, 6984, 11213, 2]
+// Dependencies: [32, 19, 17, 12849, 12847, 18122, 12850, 21, 4909, 11211, 5154, 558, 576, 12848, 5441, 9814, 5119, 6559, 5294, 18123, 11208, 11207, 18193, 10618, 18073, 5283, 4877, 587, 5155, 6986, 11210, 2]
 
-// Module 18182 (VoicePanelVideoRenderer)
+// Module 18192 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 5154 */;
-import spring from "spring" /* 5440 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9815 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10621 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11214 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12844 */;
-import VideoActionCreators from "VideoActionCreators" /* 18063 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18112 */;
+import timing from "timing" /* 5155 */;
+import spring from "spring" /* 5441 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9814 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10618 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11211 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12847 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12850 */;
+import VideoActionCreators from "VideoActionCreators" /* 18073 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18122 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12843 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12849 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

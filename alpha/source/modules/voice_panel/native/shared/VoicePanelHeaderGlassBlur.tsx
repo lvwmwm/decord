@@ -1,18 +1,18 @@
-// Module ID: 12852
-// Function ID: 12853
+// Module ID: 12858
+// Function ID: 12859
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 5153, 1384, 558, 576, 4909, 5440, 5090, 5028, 5426, 6384, 6984, 2]
+// Dependencies: [19, 17, 21, 5154, 1384, 558, 576, 4909, 5441, 5090, 5028, 5427, 6386, 6986, 2]
 
-// Module 12852 (VoicePanelHeaderGlassBlur)
+// Module 12858 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
 import useThemeDefault from "useTheme" /* 5090 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5426 */;
-import spring from "spring" /* 5440 */;
-import NativeViewDefault from "NativeView" /* 6384 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6984 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5427 */;
+import spring from "spring" /* 5441 */;
+import NativeViewDefault from "NativeView" /* 6386 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6986 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -67,10 +67,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj;
   };
   const obj4 = shown(4909);
-  fn2.__closure = { withSpring: shown(5440).withSpring, shown };
+  fn2.__closure = { withSpring: shown(5441).withSpring, shown };
   fn2.__workletHash = 5642055202507;
   fn2.__initData = __initData2;
-  ({ withSpring: shown(5440).withSpring, shown });
+  ({ withSpring: shown(5441).withSpring, shown });
   const animatedProps = obj4.useAnimatedProps(fn2);
   const tmp8 = useThemeDefault();
   if (cResult[0] === animatedStyle) {
@@ -224,10 +224,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj;
   };
   const obj3 = shown(4909);
-  fn2.__closure = { withSpring: shown(5440).withSpring, shown };
+  fn2.__closure = { withSpring: shown(5441).withSpring, shown };
   fn2.__workletHash = 10766437578125;
   fn2.__initData = __initData4;
-  ({ withSpring: shown(5440).withSpring, shown });
+  ({ withSpring: shown(5441).withSpring, shown });
   const animatedProps = obj3.useAnimatedProps(fn2);
   const tmp7 = useThemeDefault();
   const obj5 = { style: items, children: items2 };

@@ -1,10 +1,10 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16290
+// Function ID: 16291
 // Name: getGradientStartPont
 // Dependencies: [2]
 // Exports: default
 
-// Module 16276 (getGradientStartPont)
+// Module 16290 (getGradientStartPont)
 import size from "module_2" /* 2 */;
 
 function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {

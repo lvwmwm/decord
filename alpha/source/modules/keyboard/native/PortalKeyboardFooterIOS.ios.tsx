@@ -1,15 +1,15 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9690
+// Function ID: 9691
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 5153, 587, 558, 576, 1633, 1647, 5046, 4909, 1631, 1107, 5051, 2]
+// Dependencies: [19, 21, 5154, 587, 558, 576, 1633, 1647, 5046, 4909, 1631, 1107, 5051, 2]
 
-// Module 9691 (PortalKeyboardFooterIOS)
+// Module 9690 (PortalKeyboardFooterIOS)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

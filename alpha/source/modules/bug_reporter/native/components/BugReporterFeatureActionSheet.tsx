@@ -1,19 +1,19 @@
-// Module ID: 13502
-// Function ID: 13503
+// Module ID: 13510
+// Function ID: 13511
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 5149, 13492, 5118, 6484, 6887, 12, 6319, 6960, 10466, 7062, 1128, 6961, 6966, 7063, 2]
+// Dependencies: [32, 19, 17, 21, 5154, 587, 558, 576, 5150, 13500, 5118, 6486, 6889, 12, 6321, 6962, 10467, 7064, 1128, 6963, 6968, 7065, 2]
 
-// Module 13502 (BugReporterFeatureActionSheet)
+// Module 13510 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6319 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(5149);
+const Text_Text = tmp(5150);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -110,7 +110,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   ({ feature, setFeature } = item);
   ({ start, end } = item);
   if (cResult[0] !== item) {
-    const tmpResult = item(13492);
+    const tmpResult = item(13500);
     const featureId = tmpResult.getFeatureId(item);
     cResult[0] = item;
     cResult[1] = featureId;
@@ -120,7 +120,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   }
   const name = item.name;
   if (cResult[2] !== item) {
-    const tmpResult3 = item(13492);
+    const tmpResult3 = item(13500);
     const featureId1 = tmpResult3.getFeatureId(item);
     cResult[2] = item;
     cResult[3] = featureId1;
@@ -129,7 +129,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     tmp6 = cResult[3];
   }
   if (cResult[4] !== feature) {
-    const tmpResult4 = item(13492);
+    const tmpResult4 = item(13500);
     const featureId2 = tmpResult4.getFeatureId(feature);
     cResult[4] = feature;
     cResult[5] = featureId2;
@@ -158,7 +158,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       }
     }
     const obj2 = { start, end, value: tmp4, label: name, legacyCompat_selected: tmp6 === tmp8, legacyCompat_onPress: tmp10 };
-    const tmp14 = closure_6(item(6484).TableRadioRow, obj2);
+    const tmp14 = closure_6(item(6486).TableRadioRow, obj2);
     cResult[9] = end;
     cResult[10] = item.name;
     cResult[11] = start;
@@ -199,11 +199,11 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       obj.hideActionSheet();
     }
   };
-  const TableRadioRow = item(6484).TableRadioRow;
-  obj2 = item(13492);
-  const obj3 = item(13492);
+  const TableRadioRow = item(6486).TableRadioRow;
+  obj2 = item(13500);
+  const obj3 = item(13500);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(13492);
+  obj4 = item(13500);
   return closure_6(TableRadioRow, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;

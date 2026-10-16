@@ -1,21 +1,21 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 11294
+// Function ID: 11295
 // Name: StageMusicManager
-// Dependencies: [2068, 2014, 2119, 5174, 6114, 2073, 11295, 11298, 558, 576, 504, 6174, 6168, 7030, 2]
+// Dependencies: [2068, 2014, 2119, 5175, 6115, 2073, 11292, 11295, 558, 576, 504, 6175, 6169, 7032, 2]
 // Exports: shouldShowStageMusicMuteButton
 
-// Module 11297 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 6168 */;
+// Module 11294 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 6169 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6114 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6115 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
-import StageMusicStore from "StageMusicStore" /* 11295 */;
-import SoundUtils from "SoundUtils" /* 11298 */;
+import StageMusicStore from "StageMusicStore" /* 11292 */;
+import SoundUtils from "SoundUtils" /* 11295 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowStage
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmpResult3 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(6168).StageChannelParticipantNamedIndex.SPEAKER);
+  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(6169).StageChannelParticipantNamedIndex.SPEAKER);
   if (cResult[3] !== stageParticipants) {
     let tmp9;
     const _Symbol = Symbol;

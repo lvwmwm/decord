@@ -1,30 +1,30 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17842
+// Function ID: 17843
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2068, 14748, 5171, 1392, 10456, 1087, 21, 5153, 587, 7236, 7701, 7238, 12428, 5118, 504, 11088, 11090, 11087, 1267, 4868, 1128, 17831, 9534, 11091, 4867, 9544, 8949, 8723, 8919, 1202, 10457, 17772, 2]
+// Dependencies: [32, 5, 19, 17, 2068, 14758, 5172, 1392, 10457, 1087, 21, 5154, 587, 7238, 7702, 7240, 12434, 5118, 504, 11085, 11087, 11084, 1267, 4868, 1128, 17841, 9535, 11088, 4867, 9545, 8950, 8724, 8920, 1202, 10458, 17782, 2]
 // Exports: default
 
-// Module 17832 (NewGroupDMScreen)
+// Module 17842 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ToastUtils from "ToastUtils" /* 4867 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import HeaderShared from "HeaderShared" /* 9534 */;
-import UserRowConstants from "UserRowConstants" /* 10456 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11091 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17831 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import HeaderShared from "HeaderShared" /* 9535 */;
+import UserRowConstants from "UserRowConstants" /* 10457 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11088 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17841 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14748 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14758 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -635,7 +635,7 @@ export default function NewGroupDMScreen(navigation) {
       title: "" + stringResult + " (" + formatToPlainStringResult + ")",
       headerTitle: tmp6 ? (() => {
         obj = { title: stringResult, memberCount, recipientLimit };
-        return trackedExposureExperiments(GroupDMRecipientLimitTitleDefault, obj);
+        return memberCount(GroupDMRecipientLimitTitleDefault, obj);
       }) : ((arg0) => {
         let str;
         if (arg0 == null) {
@@ -646,7 +646,7 @@ export default function NewGroupDMScreen(navigation) {
           const GenericHeaderTitle = HeaderShared.GenericHeaderTitle;
           const merged1 = Object.assign(merged);
           str = "mobile-text-heading-primary";
-          const tmp3 = trackedExposureExperiments;
+          const tmp3 = closure_17;
           if (closure_2) {
             str = "text-feedback-critical";
           }
@@ -659,7 +659,7 @@ export default function NewGroupDMScreen(navigation) {
         const tmp = first1;
         if (tmp) {
           const obj2 = { color: button.button.color, size: "small" };
-          result = trackedExposureExperiments(metroRequire, obj2);
+          result = memberCount(metroRequire, obj2);
         } else {
           obj = stateFromStores;
           let isGroupDMResult;

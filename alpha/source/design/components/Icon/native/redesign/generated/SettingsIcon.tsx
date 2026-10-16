@@ -1,14 +1,14 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7317
+// Function ID: 7318
 // Name: SettingsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7316, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7318, 4876, 2]
 
-// Module 7315 (SettingsIcon)
+// Module 7317 (SettingsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 7316 */;
+import AssetRegistry from "AssetRegistry" /* 7318 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

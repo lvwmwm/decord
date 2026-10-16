@@ -1,26 +1,26 @@
-// Module ID: 6423
-// Function ID: 6424
+// Module ID: 6425
+// Function ID: 6426
 // Name: NavigatorHeader
-// Dependencies: [5, 109, 19, 17, 1087, 21, 5153, 587, 5149, 558, 576, 6424, 6427, 1506, 6429, 1128, 6430, 6432, 1384, 1633, 6481, 2]
+// Dependencies: [5, 109, 19, 17, 1087, 21, 5154, 587, 5150, 558, 576, 6426, 6429, 1506, 6431, 1128, 6432, 6434, 1384, 1633, 6483, 2]
 // Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 6423 (NavigatorHeader)
+// Module 6425 (NavigatorHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6424 */;
-import XSmallIcon from "XSmallIcon" /* 6430 */;
-import _mod6432 from "module_6432" /* 6432 */;
-import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6426 */;
+import XSmallIcon from "XSmallIcon" /* 6432 */;
+import _mod6434 from "module_6434" /* 6434 */;
+import NavigatorConstants from "NavigatorConstants" /* 6483 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const ArrowLargeLeftIcon = tmp(6427);
+const ArrowLargeLeftIcon = tmp(6429);
 let closure_3 = ["onPress"];
 let closure_4 = ["onPress"];
 let closure_5 = ["text", "labelStyle"];
@@ -111,7 +111,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigatorHea
       let tmp13 = null != subtitle && "" !== subtitle;
       if (tmp13) {
         const obj4 = { lineClamp: 1, style: tmp4.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-        tmp13 = authStore(tmp(5149).Text, obj4);
+        tmp13 = authStore(tmp(5150).Text, obj4);
       }
       cResult[6] = tmp4.navigatorHeaderSubtitle;
       cResult[7] = subtitle;
@@ -272,7 +272,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CloseB
       }
     }
     const obj2 = { onPress: tmp11, label: tmp16, displayMode: "minimal", backImage: tmp18, accessibilityLabel: tmp16 };
-    const HeaderBackButton = tmp(6432).HeaderBackButton;
+    const HeaderBackButton = tmp(6434).HeaderBackButton;
     const merged = Object.assign(tmp5);
     cResult[11] = tmp11;
     cResult[12] = tmp5;
@@ -362,7 +362,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   } else {
     tmp9 = cResult[4];
   }
-  const tmpResult = tmp(6429);
+  const tmpResult = tmp(6431);
   tmpResult.useNavigatorBackPressHandler(tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u() {
@@ -381,7 +381,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     return tmp12;
   }
   const obj2 = { onPress: tmp4, displayMode: "minimal", backImage: tmp11 };
-  const HeaderBackButton = tmp(6432).HeaderBackButton;
+  const HeaderBackButton = tmp(6434).HeaderBackButton;
   const merged = Object.assign(tmp5);
   const tmp14 = closure_10(HeaderBackButton, obj2);
   cResult[6] = tmp4;
@@ -391,7 +391,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
 }) : (function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(6429);
+  const obj = onPress(6431);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -405,7 +405,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
       return closure_1_10(closure_1_13, {});
     }
   };
-  const HeaderBackButton = onPress(6432).HeaderBackButton;
+  const HeaderBackButton = onPress(6434).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_10(HeaderBackButton, obj2);
 });
@@ -477,7 +477,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: tmp17 };
-    const HeaderBackButton = tmp(6432).HeaderBackButton;
+    const HeaderBackButton = tmp(6434).HeaderBackButton;
     const merged1 = Object.assign(tmp4);
     const tmp23 = authStore(HeaderBackButton, obj3);
     cResult[10] = tmp14;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod6432.HeaderBackButton;
+  const HeaderBackButton = _mod6434.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;

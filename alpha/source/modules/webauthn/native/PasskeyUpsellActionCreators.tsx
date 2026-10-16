@@ -1,9 +1,9 @@
-// Module ID: 16668
-// Function ID: 16669
+// Module ID: 16682
+// Function ID: 16683
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [4997, 2052, 2053, 5118, 16669, 2002, 2]
+// Dependencies: [4997, 2052, 2053, 5118, 16683, 2002, 2]
 
-// Module 16668 (PasskeyUpsellActionCreators)
+// Module 16682 (PasskeyUpsellActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
@@ -24,7 +24,7 @@ let obj = {
   },
   openPasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(16669, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    obj.openLazy(asyncRequire(16683, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;

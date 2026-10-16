@@ -1,7 +1,7 @@
 // Module ID: 4807
 // Function ID: 4808
 // Name: GuildChannelStore
-// Dependencies: [2120, 2071, 4808, 2072, 502, 2068, 2128, 2090, 4809, 4819, 1392, 1087, 2093, 12, 5483, 1099, 4814, 504, 584, 2]
+// Dependencies: [2120, 2071, 4808, 2072, 502, 2068, 2128, 2090, 4809, 4819, 1392, 1087, 2093, 12, 5484, 1099, 4814, 504, 584, 2]
 
 // Module 4807 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -22,7 +22,7 @@ import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let closure_28, hasOwnProperty;
+let closure_26, closure_28, hasOwnProperty;
 
 let ChannelTypes;
 let c9;
@@ -220,7 +220,7 @@ function hasElevatedPermissions(user, context) {
   return hasAny(obj.computePermissions(obj2), closure_20);
 }
 function handleFavoritesUpdate() {
-  rebuildGuildChannels(trackedExposureExperiments);
+  rebuildGuildChannels(closure_17);
 }
 let closure_6 = createFavoritesGuildChannelRecord.createFavoritesGuildChannelRecord;
 ({ isGuildSelectableChannelType: metroImportDefault, GUILD_NON_CATEGORY_CHANNEL_TYPES: metroImportAll, isGuildVocalChannelType: c9, createChannelRecord } = ChannelRecord);
@@ -231,7 +231,7 @@ const VOCAL = "VOCAL";
 let c23 = null;
 let closure_24 = {};
 let closure_25 = {};
-let closure_26 = {};
+const prioritySpeakerDucking = {};
 let channelId = null;
 const results = {};
 let obj = { comparator: -1, channel: createChannelRecord(obj2) };

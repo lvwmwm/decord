@@ -24,7 +24,7 @@ function AnimatedScrollViewWithInvertedRefreshControl(ref) {
   let tmp10;
   let tmp5;
   let tmp9;
-  const f83760 = () => {
+  const f83822 = () => {
     let inner;
     let obj2;
     const tmp = splitLayoutPropsDefault;
@@ -38,8 +38,8 @@ function AnimatedScrollViewWithInvertedRefreshControl(ref) {
   ref = ref.ref;
   let merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const items = [merged];
-  ({ intermediatePropsForRefreshControl, intermediatePropsForScrollView } = closure_4(f83760, items));
-  closure_4(f83760, items);
+  ({ intermediatePropsForRefreshControl, intermediatePropsForScrollView } = closure_4(f83822, items));
+  closure_4(f83822, items);
   const tmp3 = _slicedToArray(merged(404)(intermediatePropsForRefreshControl), 2);
   const first = tmp3[0];
   let obj = { ref: tmp5 };

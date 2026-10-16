@@ -1,17 +1,17 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9614
+// Function ID: 9615
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 4877, 9577, 9592, 1128, 5149, 5441, 9616, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 4877, 9576, 9591, 1128, 5150, 5442, 9615, 2]
 
-// Module 9615 (ConversationFocusView)
+// Module 9614 (ConversationFocusView)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9577 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9592 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9576 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9591 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   let startMessageId;
   const tmp = channelId;
   let obj = channelId(startMessageId[6]);
-  const cResult = obj.c(31);
+  const cResult = obj.c(30);
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
   const tmp2 = startMessageId;
@@ -49,99 +49,96 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
       tmp6 = cResult[2];
     }
     if (cResult[3] === channelId) {
-      if (cResult[4] === conversationId) {
-        let tmp9;
+      let tmp9;
+      class M {
+        constructor() {
+          if (null != startMessageId) {
+            const obj = ConversationNavigatorUtils;
+            const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
+          }
+        }
+      }
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const string = tmp(tmp2[10]).intl.string;
         class M {
           constructor() {
             if (null != startMessageId) {
               const obj = ConversationNavigatorUtils;
-              const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
+              const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
             }
           }
         }
-        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const string = tmp(tmp2[10]).intl.string;
-          class M {
-            constructor() {
-              if (null != startMessageId) {
-                const obj = ConversationNavigatorUtils;
-                const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
+        cResult[6] = tmp10;
+        tmp9 = tmp10;
+      } else {
+        tmp9 = cResult[6];
+      }
+      let tmp12 = jumpMessageId;
+      if (jumpMessageId == null) {
+        tmp12 = startMessageId;
+      }
+      if (cResult[7] === conversationId) {
+        if (cResult[8] === tmp6) {
+          if (!fullyHydrated) {
+            if (isFullFetchPending) {
+              let tmp16;
+              const _Symbol = Symbol;
+              class M {
+                constructor() {
+                  if (null != startMessageId) {
+                    const obj = ConversationNavigatorUtils;
+                    const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
+                  }
+                }
               }
-            }
-          }
-          cResult[7] = tmp10;
-          tmp9 = tmp10;
-        } else {
-          tmp9 = cResult[7];
-        }
-        let tmp12 = jumpMessageId;
-        if (jumpMessageId == null) {
-          tmp12 = startMessageId;
-        }
-        if (cResult[8] === conversationId) {
-          if (cResult[9] === tmp6) {
-            if (!fullyHydrated) {
-              if (isFullFetchPending) {
-                let tmp16;
-                const _Symbol = Symbol;
+              if (cResult[12] !== tmp5.pendingContent) {
                 class M {
                   constructor() {
                     if (null != startMessageId) {
                       const obj = ConversationNavigatorUtils;
-                      const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
+                      const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
                     }
                   }
                 }
-                if (cResult[13] !== tmp5.pendingContent) {
-                  class M {
-                    constructor() {
-                      if (null != startMessageId) {
-                        const obj = ConversationNavigatorUtils;
-                        const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
-                      }
-                    }
-                  }
-                  tmp19[0] = tmp5.pendingContent;
-                  tmp19[1] = tmp15;
-                  const tmp20 = closure_7(closure_6, tmp19);
-                  cResult[13] = tmp5.pendingContent;
-                  cResult[14] = tmp20;
-                  tmp16 = tmp20;
-                } else {
-                  tmp16 = cResult[14];
-                }
-                return tmp16;
+                tmp19[0] = tmp5.pendingContent;
+                tmp19[1] = tmp15;
+                const tmp20 = closure_7(closure_6, tmp19);
+                cResult[12] = tmp5.pendingContent;
+                cResult[13] = tmp20;
+                tmp16 = tmp20;
+              } else {
+                tmp16 = cResult[13];
               }
+              return tmp16;
             }
-            class M {
-              constructor() {
-                if (null != startMessageId) {
-                  const obj = ConversationNavigatorUtils;
-                  const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
-                }
+          }
+          class M {
+            constructor() {
+              if (null != startMessageId) {
+                const obj = ConversationNavigatorUtils;
+                const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
               }
             }
           }
         }
-        const obj3 = { jumpToChatText: tmp9, jumpTargetId: tmp12, onBeforeJumpToMessage: tmp6, conversationId };
-        cResult[8] = conversationId;
-        cResult[9] = tmp6;
-        cResult[10] = tmp12;
-        cResult[11] = obj3;
       }
+      const obj3 = { jumpToChatText: tmp9, jumpTargetId: tmp12, onBeforeJumpToMessage: tmp6, conversationId };
+      cResult[7] = conversationId;
+      cResult[8] = tmp6;
+      cResult[9] = tmp12;
+      cResult[10] = obj3;
     }
     class M {
       constructor() {
         if (null != startMessageId) {
           const obj = ConversationNavigatorUtils;
-          const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
+          const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
         }
       }
     }
     cResult[3] = channelId;
-    cResult[4] = conversationId;
-    cResult[5] = startMessageId;
-    cResult[6] = M;
+    cResult[4] = startMessageId;
+    cResult[5] = M;
   }
   const fn = function t(arg0) {
     if ("footer_cta" === arg0) {
@@ -181,12 +178,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
       const result = ConversationsAnalytics.trackFocusModeDismissed(obj);
     }
   }, items);
-  const items1 = [channelId, conversationId, startMessageId];
+  const items1 = [channelId, startMessageId];
   const items2 = [conversationId, jumpMessageId, startMessageId, onBeforeJumpToMessage];
   const callback1 = startMessageId.useCallback(() => {
     if (null != startMessageId) {
       const obj = ConversationNavigatorUtils;
-      const result = obj.closeConversationsAndJumpToMessage(channelId, tmp, conversationId);
+      const result = obj.closeConversationsAndJumpToMessage(channelId, tmp);
     }
   }, items1);
   const memo = startMessageId.useMemo(() => {

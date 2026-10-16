@@ -1,10 +1,10 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10602
+// Function ID: 10603
 // Name: useSelectedParticipant
-// Dependencies: [6254, 558, 576, 504, 2]
+// Dependencies: [6255, 558, 576, 504, 2]
 
-// Module 10605 (useSelectedParticipant)
-import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+// Module 10602 (useSelectedParticipant)
+import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

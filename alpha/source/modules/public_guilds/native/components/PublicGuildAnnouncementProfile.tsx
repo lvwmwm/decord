@@ -1,22 +1,22 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11108
+// Function ID: 11109
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 8286, 5091, 1202, 11112, 1128, 5149, 7063, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 8287, 5091, 1202, 11109, 1128, 5150, 7065, 2]
 
-// Module 11111 (PublicGuildAnnouncementProfile)
+// Module 11108 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7063 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8286 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11112 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7065 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8287 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
     const obj7 = { startExpanded: true, children: hasOwnProperty(View, obj8) };
     obj8 = { style: content, children: items };
     items = [tmp7, tmp20, tmp24, tmp29];
-    BottomSheet = tmp(7063).BottomSheet;
+    BottomSheet = tmp(7065).BottomSheet;
     const tmp36 = React3(BottomSheet, obj7);
     cResult[16] = tmp4.content;
     cResult[17] = tmp24;

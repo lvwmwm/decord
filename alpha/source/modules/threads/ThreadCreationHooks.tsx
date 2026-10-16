@@ -1,24 +1,24 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 9498
+// Function ID: 9499
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7227, 502, 2068, 7462, 5494, 7593, 1127, 1087, 5147, 558, 7192, 7588, 7204, 576, 1128, 9498, 11, 1297, 8139, 9499, 7590, 1405, 7979, 9501, 8124, 5168, 7397, 5361, 584, 5028, 1104, 10041, 13745, 2]
+// Dependencies: [32, 5, 19, 7229, 502, 2068, 7464, 5495, 7594, 1127, 1087, 5148, 558, 7194, 7589, 7206, 576, 1128, 9499, 11, 1297, 8140, 9500, 7591, 1405, 7980, 9502, 8125, 5169, 7399, 5362, 584, 5028, 1104, 10042, 13756, 2]
 // Exports: createThread
 
-// Module 9497 (ThreadCreationHooks)
+// Module 9498 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import MessageConstants from "MessageConstants" /* 5147 */;
-import ThreadHooks from "ThreadHooks" /* 7192 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
-import DraftStore from "DraftStore" /* 7462 */;
-import MessageParserDefault from "MessageParser" /* 7588 */;
-import SlowmodeStore from "SlowmodeStore" /* 7593 */;
+import MessageConstants from "MessageConstants" /* 5148 */;
+import ThreadHooks from "ThreadHooks" /* 7194 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
+import DraftStore from "DraftStore" /* 7464 */;
+import MessageParserDefault from "MessageParser" /* 7589 */;
+import SlowmodeStore from "SlowmodeStore" /* 7594 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7227 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7229 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7204);
+    const tmp17Result = tmp17(7206);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -1425,7 +1425,7 @@ const createThread_export = function createThread(arg0, name, type, auto_archive
   return createThread_(arg0, [], undefined, () => {
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: trackedExposureExperiments.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: closure_17.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     obj = { name, type, auto_archive_duration, location: _location };
     obj3 = HTTPUtils;

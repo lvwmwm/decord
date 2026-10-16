@@ -1,13 +1,13 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11580
+// Function ID: 11581
 // Name: conjureProjectNameError
-// Dependencies: [1128, 3865, 7168, 2]
+// Dependencies: [1128, 3865, 7170, 2]
 // Exports: conjureProjectNameError
 
-// Module 11583 (conjureProjectNameError)
+// Module 11580 (conjureProjectNameError)
 import intl3 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7168 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7170 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureProjectNameError.tsx");

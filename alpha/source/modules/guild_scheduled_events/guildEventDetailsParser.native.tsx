@@ -1,10 +1,10 @@
-// Module ID: 8875
-// Function ID: 8876
+// Module ID: 8876
+// Function ID: 8877
 // Name: guildEventDetailsParser
-// Dependencies: [5141, 2]
+// Dependencies: [5142, 2]
 
-// Module 8875 (guildEventDetailsParser)
-import MarkupUtils from "MarkupUtils" /* 5141 */;
+// Module 8876 (guildEventDetailsParser)
+import MarkupUtils from "MarkupUtils" /* 5142 */;
 import size from "module_2" /* 2 */;
 
 const reactParserForResult = MarkupUtils.reactParserFor(MarkupUtils.guildEventLocationRules);

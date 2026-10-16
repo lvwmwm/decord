@@ -1,17 +1,17 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12223
+// Function ID: 12224
 // Name: chat/ConjureAwaitingUser
-// Dependencies: [19, 5143, 21, 587, 5153, 12087, 558, 576, 504, 4909, 5154, 2]
+// Dependencies: [19, 5144, 21, 587, 5154, 12086, 558, 576, 504, 4909, 5155, 2]
 
-// Module 12219 (chat/ConjureAwaitingUser)
+// Module 12223 (chat/ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12087 */;
+import timing from "timing" /* 5155 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12086 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 6949
-// Function ID: 6950
+// Module ID: 6951
+// Function ID: 6952
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 5153, 558, 576, 6378, 6950, 2]
+// Dependencies: [19, 17, 21, 5154, 558, 576, 6380, 6952, 2]
 
-// Module 6949 (SceneLoadingIndicator)
+// Module 6951 (SceneLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6378 */;
-import NavScrim from "NavScrim" /* 6950 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6380 */;
+import NavScrim from "NavScrim" /* 6952 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

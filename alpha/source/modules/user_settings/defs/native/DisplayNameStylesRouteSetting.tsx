@@ -1,13 +1,13 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16323
+// Function ID: 16324
 // Name: DisplayNameStylesRouteSetting
-// Dependencies: [1087, 11006, 1128, 2963, 16310, 2]
+// Dependencies: [1087, 11003, 1128, 2963, 16324, 2]
 
-// Module 16309 (DisplayNameStylesRouteSetting)
+// Module 16323 (DisplayNameStylesRouteSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2963 from "module_2963" /* 2963 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14140
+// Function ID: 14141
 // Name: useTrackPdpClick
-// Dependencies: [19, 1087, 558, 576, 9201, 8529, 7494, 1267, 2]
+// Dependencies: [19, 1087, 558, 576, 9202, 8530, 7496, 1267, 2]
 
-// Module 14130 (useTrackPdpClick)
+// Module 14140 (useTrackPdpClick)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7496 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

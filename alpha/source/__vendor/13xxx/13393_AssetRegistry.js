@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 200, height: 139.5, scales: [2, 3], hash: "42c68794718ccb3cc57c33bf57ed6d23", name: "hub-header", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/images", width: 221, height: 195, scales: [1, 2, 3], hash: "3a31ec2d5aeb0eedce9411671227bdc1", name: "discoverability-header", type: "png" });

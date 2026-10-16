@@ -1,19 +1,43 @@
 // Module ID: 8663
 // Function ID: 8664
-// Dependencies: [8664, 8666, 5006, 8670, 8661]
+// Dependencies: [8664, 8665, 8672, 5006]
 
 // Module 8663
-import _mod8661 from "module_8661" /* 8661 */;
-import _mod8666 from "module_8666" /* 8666 */;
-import _mod8670 from "module_8670" /* 8670 */;
-import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 8664 */;
-import "module_5006";
+import _mod8664 from "module_8664" /* 8664 */;
+import _mod8672 from "module_8672" /* 8672 */;
+import DeprecatedStyleSheetPropType_mod from "DeprecatedStyleSheetPropType" /* 8665 */;
 import module_5006_mod from "module_5006" /* 5006 */;
+import "module_5006";
 
+let DeprecatedStyleSheetPropType;
+let items;
+let items1;
 let module_5006;
-let module_8666;
-const obj = { accessible: module_5006.bool, accessibilityLabel: module_5006.node, accessibilityHint: module_5006.string, accessibilityActions: module_5006.arrayOf(module_5006.string), accessibilityIgnoresInvertColors: module_5006.bool, accessibilityRole: module_5006.oneOf(_mod8670.DeprecatedAccessibilityRoles), accessibilityState: module_5006.object, accessibilityValue: module_5006.object, accessibilityLiveRegion: module_5006.oneOf(["none", "polite", "assertive"]), importantForAccessibility: module_5006.oneOf(["auto", "yes", "no", "no-hide-descendants"]), accessibilityViewIsModal: module_5006.bool, accessibilityElementsHidden: module_5006.bool, onAccessibilityAction: module_5006.func, onAccessibilityTap: module_5006.func, onMagicTap: module_5006.func, testID: module_5006.string, nativeID: module_5006.string, onResponderGrant: module_5006.func, onResponderMove: module_5006.func, onResponderReject: module_5006.func, onResponderRelease: module_5006.func, onResponderTerminate: module_5006.func, onResponderTerminationRequest: module_5006.func, onStartShouldSetResponder: module_5006.func, onStartShouldSetResponderCapture: module_5006.func, onMoveShouldSetResponder: module_5006.func, onMoveShouldSetResponderCapture: module_5006.func, hitSlop: _mod8661, onLayout: module_5006.func, pointerEvents: module_5006.oneOf(["box-none", "none", "box-only", "auto"]), style: module_8666, removeClippedSubviews: module_5006.bool, renderToHardwareTextureAndroid: module_5006.bool, shouldRasterizeIOS: module_5006.bool, collapsable: module_5006.bool, needsOffscreenAlphaCompositing: module_5006.bool };
-module_8666 = DeprecatedStyleSheetPropType(_mod8666);
+let oneOfType;
+let oneOfType2;
+const obj = { style: DeprecatedStyleSheetPropType(_mod8672), source: oneOfType(items), blurRadius: module_5006.number, defaultSource: module_5006.number, loadingIndicatorSource: oneOfType2(items1), progressiveRenderingEnabled: module_5006.bool, fadeDuration: module_5006.number, internal_analyticTag: module_5006.string, onLoadStart: module_5006.func, onError: module_5006.func, onLoad: module_5006.func, onLoadEnd: module_5006.func, testID: module_5006.string, resizeMethod: module_5006.oneOf(["auto", "resize", "scale"]), resizeMode: module_5006.oneOf(["cover", "contain", "stretch", "repeat", "center"]) };
+const module_8664 = Object.assign(_mod8664);
+DeprecatedStyleSheetPropType = DeprecatedStyleSheetPropType_mod;
+module_5006 = module_5006_mod;
+oneOfType = module_5006.oneOfType;
+module_5006 = module_5006_mod;
+const shape = module_5006.shape;
+const obj2 = { uri: module_5006.string, headers: module_5006.objectOf(module_5006.string) };
+module_5006 = module_5006_mod;
+items = [shape(obj2), module_5006.number, ];
+module_5006 = module_5006_mod;
+const arrayOf = module_5006.arrayOf;
+module_5006 = module_5006_mod;
+const size = { uri: module_5006.string, width: module_5006.number, height: module_5006.number, headers: module_5006.objectOf(module_5006.string) };
+const shape2 = module_5006.shape;
+items[2] = arrayOf(shape2(size));
+module_5006 = module_5006_mod;
+oneOfType2 = module_5006.oneOfType;
+module_5006 = module_5006_mod;
+items1 = [, ];
+const obj3 = { uri: module_5006.string };
+items1[0] = module_5006.shape(obj3);
+items1[1] = module_5006.number;
 module_5006 = module_5006_mod;
 
 export default obj;

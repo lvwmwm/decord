@@ -1,18 +1,18 @@
-// Module ID: 17951
-// Function ID: 17952
+// Module ID: 17961
+// Function ID: 17962
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1087, 21, 5153, 587, 1128, 558, 576, 4868, 5164, 6152, 13036, 1267, 17952, 1202, 14220, 6407, 15891, 8808, 1633, 17957, 17959, 13035, 17962, 1384, 5149, 7036, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 587, 1128, 558, 576, 4868, 5165, 6153, 13044, 1267, 17962, 1202, 14230, 6409, 15901, 8809, 1633, 17967, 17969, 13043, 17972, 1384, 5150, 7038, 2]
 
-// Module 17951 (MessageRequestList)
+// Module 17961 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import transitionToChannel from "transitionToChannel" /* 5164 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import transitionToChannel from "transitionToChannel" /* 5165 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -805,19 +805,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   const tmp3 = dependencyMap;
   let tmp2 = data;
   const bottom = data(1633)().bottom;
-  data = data(17957)();
-  let obj = goToMessageRequestPreview(17959);
+  data = data(17967)();
+  let obj = goToMessageRequestPreview(17969);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13035);
+  const obj2 = goToMessageRequestPreview(13043);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1128).t.SXrqTf) };
-    const tmp2Result = tmp2(17962);
+    const tmp2Result = tmp2(17972);
     intl2 = tmp4(1128).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {
     const items = [tmp.list, ];
-    const FlashList = tmp4(7036).FlashList;
+    const FlashList = tmp4(7038).FlashList;
     let num = 0;
     const tmp4Result = goToMessageRequestPreview(1384);
     if (tmp4Result.isAndroid()) {
@@ -860,7 +860,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
     obj8 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(1128).t.evH4Yb, obj9) };
-    Text = tmp4(5149).Text;
+    Text = tmp4(5150).Text;
     intl = tmp4(1128).intl;
     obj9 = { pendingRequestNumber: data.length };
     tmp9Result = tmp9(FlashList, obj4);

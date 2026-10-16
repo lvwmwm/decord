@@ -1,21 +1,21 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13722
+// Function ID: 13723
 // Name: useActivityStatusLabel
-// Dependencies: [6115, 2068, 4809, 5169, 4819, 5174, 1087, 558, 576, 504, 10478, 10476, 10477, 10484, 1128, 10488, 10493, 2]
+// Dependencies: [6116, 2068, 4809, 5170, 4819, 5175, 1087, 558, 576, 504, 10479, 10477, 10478, 10485, 1128, 10489, 10494, 2]
 
-// Module 13711 (useActivityStatusLabel)
+// Module 13722 (useActivityStatusLabel)
 import Constants from "Constants" /* 1087 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10476 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10477 */;
-import isGameActivityDefault from "isGameActivity" /* 10484 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10488 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10493 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10477 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10478 */;
+import isGameActivityDefault from "isGameActivity" /* 10485 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10489 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10494 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

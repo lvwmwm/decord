@@ -1,36 +1,36 @@
-// Module ID: 16678
-// Function ID: 16679
+// Module ID: 16692
+// Function ID: 16693
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8329, 7566, 1246, 2068, 2119, 1392, 5152, 1394, 21, 584, 573, 1297, 4868, 6402, 6411, 6487, 7113, 7397, 1202, 587, 10336, 5153, 7388, 5118, 16679, 2002, 558, 576, 7117, 16686, 13609, 12433, 6152, 16687, 16690, 16694, 16696, 16699, 2]
+// Dependencies: [5, 32, 19, 17, 8330, 7567, 1246, 2068, 2119, 1392, 5153, 1394, 21, 584, 573, 1297, 4868, 6404, 6413, 6489, 7115, 7399, 1202, 587, 10337, 5154, 7390, 5118, 16693, 2002, 558, 576, 7119, 16700, 13617, 12439, 6153, 16701, 16704, 16708, 16710, 16713, 2]
 
-// Module 16678 (DevToolsRevenuePlaygroundScreen)
+// Module 16692 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5152 */;
-import TableRow6 from "TableRow" /* 6402 */;
-import TableRowArrow from "TableRowArrow" /* 6411 */;
-import TableRowGroup4 from "TableRowGroup" /* 6487 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7113 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7117 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12433 */;
-import IAPUtils from "IAPUtils" /* 13609 */;
-import DevSettingsActions from "DevSettingsActions" /* 16686 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5153 */;
+import TableRow6 from "TableRow" /* 6404 */;
+import TableRowArrow from "TableRowArrow" /* 6413 */;
+import TableRowGroup4 from "TableRowGroup" /* 6489 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7115 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7119 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12439 */;
+import IAPUtils from "IAPUtils" /* 13617 */;
+import DevSettingsActions from "DevSettingsActions" /* 16700 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8329 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7566 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8330 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7567 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7388);
+  let obj = premiumTrialOffer(7390);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6487).TableRowGroup;
-  const TableRow = premiumTrialOffer(6402).TableRow;
+  const TableRowGroup = premiumTrialOffer(6489).TableRowGroup;
+  const TableRow = premiumTrialOffer(6404).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16679, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16693, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6402).TableRow;
+  const TableRow2 = tmp(6404).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16679, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16693, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -727,7 +727,7 @@ function PaymentFlowTest() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Payment Flow Test", hasIcons: false, children: trackedExposureExperiments(TableRow, obj2) };
+  let obj = { title: "Payment Flow Test", hasIcons: false, children: closure_17(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test Payment Flow",
@@ -735,16 +735,16 @@ function PaymentFlowTest() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[37], paths.paths));
     },
-    trailing: trackedExposureExperiments(TableRowArrow.TableRowArrow, {})
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return trackedExposureExperiments(TableRowGroup, obj);
+  return closure_17(TableRowGroup, obj);
 }
 function Orbs() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Orbs", hasIcons: false, children: trackedExposureExperiments(TableRow, obj2) };
+  let obj = { title: "Orbs", hasIcons: false, children: closure_17(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test Orbs Flow",
@@ -752,16 +752,16 @@ function Orbs() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
     },
-    trailing: trackedExposureExperiments(TableRowArrow.TableRowArrow, {})
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return trackedExposureExperiments(TableRowGroup, obj);
+  return closure_17(TableRowGroup, obj);
 }
 function RevenueSmokeTests() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: trackedExposureExperiments(TableRow, obj2) };
+  let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: closure_17(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Test all purchasing flows",
@@ -769,16 +769,16 @@ function RevenueSmokeTests() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
     },
-    trailing: trackedExposureExperiments(TableRowArrow.TableRowArrow, {})
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return trackedExposureExperiments(TableRowGroup, obj);
+  return closure_17(TableRowGroup, obj);
 }
 function GuildPowerups() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Guild Powerups", hasIcons: false, children: trackedExposureExperiments(TableRow, obj2) };
+  let obj = { title: "Guild Powerups", hasIcons: false, children: closure_17(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Guild Powerups",
@@ -786,16 +786,16 @@ function GuildPowerups() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[40], paths.paths));
     },
-    trailing: trackedExposureExperiments(TableRowArrow.TableRowArrow, {})
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return trackedExposureExperiments(TableRowGroup, obj);
+  return closure_17(TableRowGroup, obj);
 }
 function GuildTagBadges() {
   let TableRow;
   let obj2;
   let paths;
-  let obj = { title: "Guild Tag Badges", hasIcons: false, children: trackedExposureExperiments(TableRow, obj2) };
+  let obj = { title: "Guild Tag Badges", hasIcons: false, children: closure_17(TableRow, obj2) };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
   obj2 = {
     label: "Badge gallery",
@@ -804,10 +804,10 @@ function GuildTagBadges() {
       const obj = require("ModalActionCreators");
       obj.pushLazy(require("asyncRequire")(paths[41], paths.paths));
     },
-    trailing: trackedExposureExperiments(TableRowArrow.TableRowArrow, {})
+    trailing: closure_17(TableRowArrow.TableRowArrow, {})
   };
   TableRow = TableRow6.TableRow;
-  return trackedExposureExperiments(TableRowGroup, obj);
+  return closure_17(TableRowGroup, obj);
 }
 const ScrollView = react_native.ScrollView;
 let DevSettingsCategory = DevSettingsStore2.DevSettingsCategory;
@@ -882,7 +882,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   }
   if (cResult[6] !== tmp8) {
     const obj2 = { title: "Premium Toggles", hasIcons: false, children: tmp8 };
-    const tmp13 = trackedExposureExperiments(TableRowGroup4.TableRowGroup, obj2);
+    const tmp13 = closure_17(TableRowGroup4.TableRowGroup, obj2);
     cResult[6] = tmp8;
     cResult[7] = tmp13;
     tmp11 = tmp13;
@@ -921,7 +921,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
     })
   };
   const TableRowGroup = TableRowGroup4.TableRowGroup;
-  return trackedExposureExperiments(TableRowGroup, obj2);
+  return closure_17(TableRowGroup, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceMockIAP() {
@@ -969,15 +969,15 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceM
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6487).TableRowGroup;
+    const TableRowGroup = tmp(6489).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(7117).TableSwitchRow;
+    const TableSwitchRow = tmp(7119).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }
-    let obj2 = { title: "iOS IAP Mock", hasIcons: false, children: trackedExposureExperiments(TableSwitchRow, obj3) };
+    let obj2 = { title: "iOS IAP Mock", hasIcons: false, children: closure_17(TableSwitchRow, obj3) };
     obj3 = { label: "Force mock IAP products", subLabel: str, value: tmp8 || stateFromStores, disabled: tmp8, onValueChange: tmp11 };
-    const tmp13Result = trackedExposureExperiments(TableRowGroup, obj2);
+    const tmp13Result = closure_17(TableRowGroup, obj2);
     cResult[4] = tmp8 || stateFromStores;
     cResult[5] = tmp13Result;
     tmp12 = tmp13Result;
@@ -1012,8 +1012,8 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceM
     }
   };
   tmp4 = result || stateFromStores;
-  const obj4 = { title: "iOS IAP Mock", hasIcons: false, children: trackedExposureExperiments(TableSwitchRow, obj3) };
-  return trackedExposureExperiments(TableRowGroup, obj4);
+  const obj4 = { title: "iOS IAP Mock", hasIcons: false, children: closure_17(TableSwitchRow, obj3) };
+  return closure_17(TableRowGroup, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsRevenuePlaygroundScreen() {
@@ -1038,39 +1038,39 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsReve
   const cResult = obj.c(20);
   const tmp4 = closure_25();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp24 = trackedExposureExperiments(TrialOfferSheetExample, {});
+    const tmp24 = closure_17(TrialOfferSheetExample, {});
     const obj2 = { size: nativeDefault.space.PX_16 };
     const Spacer = tmp(1202).Spacer;
-    const tmp26 = trackedExposureExperiments(Spacer, obj2);
-    const tmp28 = trackedExposureExperiments(closure_27, {});
+    const tmp26 = closure_17(Spacer, obj2);
+    const tmp28 = closure_17(closure_27, {});
     const obj3 = { size: nativeDefault.space.PX_16 };
     const Spacer2 = tmp(1202).Spacer;
-    const tmp29 = trackedExposureExperiments(Spacer2, obj3);
-    const tmp31 = trackedExposureExperiments(closure_28, {});
+    const tmp29 = closure_17(Spacer2, obj3);
+    const tmp31 = closure_17(closure_28, {});
     const obj4 = { size: nativeDefault.space.PX_16 };
     const Spacer3 = tmp(1202).Spacer;
-    const tmp32 = trackedExposureExperiments(Spacer3, obj4);
-    const tmp34 = trackedExposureExperiments(PaymentFlowTest, {});
+    const tmp32 = closure_17(Spacer3, obj4);
+    const tmp34 = closure_17(PaymentFlowTest, {});
     const obj5 = { size: nativeDefault.space.PX_16 };
     const Spacer4 = tmp(1202).Spacer;
-    const tmp35 = trackedExposureExperiments(Spacer4, obj5);
-    const tmp37 = trackedExposureExperiments(Orbs, {});
+    const tmp35 = closure_17(Spacer4, obj5);
+    const tmp37 = closure_17(Orbs, {});
     const obj6 = { size: nativeDefault.space.PX_16 };
     const Spacer5 = tmp(1202).Spacer;
-    const tmp38 = trackedExposureExperiments(Spacer5, obj6);
-    const tmp40 = trackedExposureExperiments(RevenueSmokeTests, {});
+    const tmp38 = closure_17(Spacer5, obj6);
+    const tmp40 = closure_17(RevenueSmokeTests, {});
     const obj7 = { size: nativeDefault.space.PX_16 };
     const Spacer6 = tmp(1202).Spacer;
-    const tmp41 = trackedExposureExperiments(Spacer6, obj7);
-    const tmp43 = trackedExposureExperiments(GuildPowerups, {});
+    const tmp41 = closure_17(Spacer6, obj7);
+    const tmp43 = closure_17(GuildPowerups, {});
     const obj8 = { size: nativeDefault.space.PX_16 };
     const Spacer7 = tmp(1202).Spacer;
-    const tmp44 = trackedExposureExperiments(Spacer7, obj8);
-    const tmp46 = trackedExposureExperiments(GuildTagBadges, {});
+    const tmp44 = closure_17(Spacer7, obj8);
+    const tmp46 = closure_17(GuildTagBadges, {});
     const obj9 = { size: nativeDefault.space.PX_16 };
     const Spacer8 = tmp(1202).Spacer;
-    const tmp47 = trackedExposureExperiments(Spacer8, obj9);
-    const tmp49 = trackedExposureExperiments(FriendAnniversary, {});
+    const tmp47 = closure_17(Spacer8, obj9);
+    const tmp49 = closure_17(FriendAnniversary, {});
     cResult[0] = tmp24;
     cResult[1] = tmp26;
     cResult[2] = tmp40;
@@ -1125,39 +1125,39 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsReve
 }) : (function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
-  items = [trackedExposureExperiments(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
+  items = [closure_17(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
   const obj2 = { size: nativeDefault.space.PX_16 };
   const Spacer = native.Spacer;
-  items[1] = trackedExposureExperiments(Spacer, obj2);
-  items[2] = trackedExposureExperiments(closure_27, {});
+  items[1] = closure_17(Spacer, obj2);
+  items[2] = closure_17(closure_27, {});
   const obj3 = { size: nativeDefault.space.PX_16 };
   const Spacer2 = native.Spacer;
-  items[3] = trackedExposureExperiments(Spacer2, obj3);
-  items[4] = trackedExposureExperiments(closure_28, {});
+  items[3] = closure_17(Spacer2, obj3);
+  items[4] = closure_17(closure_28, {});
   const obj4 = { size: nativeDefault.space.PX_16 };
   const Spacer3 = native.Spacer;
-  items[5] = trackedExposureExperiments(Spacer3, obj4);
-  items[6] = trackedExposureExperiments(PaymentFlowTest, {});
+  items[5] = closure_17(Spacer3, obj4);
+  items[6] = closure_17(PaymentFlowTest, {});
   const obj5 = { size: nativeDefault.space.PX_16 };
   const Spacer4 = native.Spacer;
-  items[7] = trackedExposureExperiments(Spacer4, obj5);
-  items[8] = trackedExposureExperiments(Orbs, {});
+  items[7] = closure_17(Spacer4, obj5);
+  items[8] = closure_17(Orbs, {});
   const obj6 = { size: nativeDefault.space.PX_16 };
   const Spacer5 = native.Spacer;
-  items[9] = trackedExposureExperiments(Spacer5, obj6);
-  items[10] = trackedExposureExperiments(RevenueSmokeTests, {});
+  items[9] = closure_17(Spacer5, obj6);
+  items[10] = closure_17(RevenueSmokeTests, {});
   const obj7 = { size: nativeDefault.space.PX_16 };
   const Spacer6 = native.Spacer;
-  items[11] = trackedExposureExperiments(Spacer6, obj7);
-  items[12] = trackedExposureExperiments(GuildPowerups, {});
+  items[11] = closure_17(Spacer6, obj7);
+  items[12] = closure_17(GuildPowerups, {});
   const obj8 = { size: nativeDefault.space.PX_16 };
   const Spacer7 = native.Spacer;
-  items[13] = trackedExposureExperiments(Spacer7, obj8);
-  items[14] = trackedExposureExperiments(GuildTagBadges, {});
+  items[13] = closure_17(Spacer7, obj8);
+  items[14] = closure_17(GuildTagBadges, {});
   const obj9 = { size: nativeDefault.space.PX_16 };
   const Spacer8 = native.Spacer;
-  items[15] = trackedExposureExperiments(Spacer8, obj9);
-  items[16] = trackedExposureExperiments(FriendAnniversary, {});
+  items[15] = closure_17(Spacer8, obj9);
+  items[16] = closure_17(FriendAnniversary, {});
   return authStore5(ScrollView, obj);
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");

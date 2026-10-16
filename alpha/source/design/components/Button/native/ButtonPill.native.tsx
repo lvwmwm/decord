@@ -1,25 +1,25 @@
-// Module ID: 5451
-// Function ID: 5452
+// Module ID: 5452
+// Function ID: 5453
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5446, 5153, 587, 558, 576, 5447, 4886, 4877, 5452, 5453, 4909, 5028, 5457, 4893, 5440, 5444, 2]
+// Dependencies: [32, 19, 17, 21, 5447, 5154, 587, 558, 576, 5448, 4886, 4877, 5453, 5454, 4909, 5028, 5458, 4893, 5441, 5445, 2]
 
-// Module 5451 (ButtonPill)
+// Module 5452 (ButtonPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4877 */;
 import native from "native" /* 4886 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import shared from "shared" /* 5028 */;
-import spring from "spring" /* 5440 */;
-import springPresets from "springPresets" /* 5444 */;
-import ButtonHooks from "ButtonHooks" /* 5447 */;
-import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import spring from "spring" /* 5441 */;
+import springPresets from "springPresets" /* 5445 */;
+import ButtonHooks from "ButtonHooks" /* 5448 */;
+import LinearGradientDefault from "LinearGradient" /* 5454 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5446 */;
-import createStyles from "createStyles" /* 5153 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5447 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ButtonEllipsis = tmp(5457);
+const ButtonEllipsis = tmp(5458);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let c10 = 300;
@@ -294,7 +294,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
       let tmp16 = null;
       if (tmp4) {
         const obj10 = { variant };
-        tmp16 = metroImportDefault(tmp(5452).ButtonShine, obj10);
+        tmp16 = metroImportDefault(tmp(5453).ButtonShine, obj10);
       }
       cResult[5] = tmp4;
       cResult[6] = variant;
@@ -351,7 +351,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWr
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5452).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5453).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;

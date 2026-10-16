@@ -1,9 +1,9 @@
-// Module ID: 6378
-// Function ID: 6379
+// Module ID: 6380
+// Function ID: 6381
 // Name: ActivityIndicator/ActivityIndicator
 // Dependencies: [109, 17, 21, 558, 576, 4877, 587, 2]
 
-// Module 6378 (ActivityIndicator/ActivityIndicator)
+// Module 6380 (ActivityIndicator/ActivityIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;

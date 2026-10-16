@@ -1,14 +1,14 @@
-// Module ID: 5320
-// Function ID: 5321
+// Module ID: 5321
+// Function ID: 5322
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1209, 1246, 1392, 5321, 4828, 558, 576, 504, 2]
+// Dependencies: [19, 1209, 1246, 1392, 5322, 4828, 558, 576, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption
 
-// Module 5320 (LastUsedVideoBackgroundOption)
+// Module 5321 (LastUsedVideoBackgroundOption)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5321 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5322 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
@@ -146,7 +146,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastUsedV
           tmp8 = tmp3;
         } else {
           tmp8 = null;
-          tmp4(5321);
+          tmp4(5322);
         }
         tmp7 = tmp8;
       } else {

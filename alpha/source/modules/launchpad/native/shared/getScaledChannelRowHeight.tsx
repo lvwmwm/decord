@@ -1,11 +1,11 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17735
+// Function ID: 17736
 // Name: getScaledChannelRowHeight
-// Dependencies: [17723, 2]
+// Dependencies: [17733, 2]
 // Exports: default
 
-// Module 17725 (getScaledChannelRowHeight)
-import getLayoutStylesDefault from "getLayoutStyles" /* 17723 */;
+// Module 17735 (getScaledChannelRowHeight)
+import getLayoutStylesDefault from "getLayoutStyles" /* 17733 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/getScaledChannelRowHeight.tsx");

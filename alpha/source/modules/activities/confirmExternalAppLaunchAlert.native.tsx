@@ -1,23 +1,23 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11186
+// Function ID: 11187
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2026, 21, 5153, 558, 576, 5091, 11190, 1128, 5149, 4865, 5441, 5361, 2]
+// Dependencies: [19, 17, 2026, 21, 5154, 558, 576, 5091, 11187, 1128, 5150, 4865, 5442, 5362, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11189 (confirmExternalAppLaunchAlert)
+// Module 11186 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import Constants from "Constants" /* 2026 */;
 import LinkingDefault from "Linking" /* 4865 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11190 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5362 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBut
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5441).Button;
+    const Button = tmp(5442).Button;
     intl = tmp(1128).intl;
     const tmp8 = hasOwnProperty(Button, obj2);
     cResult[1] = tmp8;

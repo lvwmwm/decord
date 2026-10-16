@@ -1,13 +1,13 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11647
+// Function ID: 11648
 // Name: useConjureControlBar
-// Dependencies: [32, 19, 10902, 10901, 558, 576, 504, 2]
+// Dependencies: [32, 19, 10899, 10898, 558, 576, 504, 2]
 
-// Module 11650 (useConjureControlBar)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10901 */;
+// Module 11647 (useConjureControlBar)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10902 */;
+import ConjureChatStore from "ConjureChatStore" /* 10899 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

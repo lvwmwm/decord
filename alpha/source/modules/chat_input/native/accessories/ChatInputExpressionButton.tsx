@@ -1,18 +1,18 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11923
+// Function ID: 11924
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 5153, 587, 558, 576, 4877, 1128, 11927, 9192, 1202, 6407, 2]
+// Dependencies: [19, 21, 5154, 587, 558, 576, 4877, 1128, 11924, 9193, 1202, 6409, 2]
 
-// Module 11926 (ChatInputExpressionButton)
+// Module 11923 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useToken from "useToken" /* 4877 */;
-import Pressables from "Pressables" /* 6407 */;
+import Pressables from "Pressables" /* 6409 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 11927 : 9192);
+    const tmp5Result = tmp5(showKeyboardIcon ? 11924 : 9193);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         let tmp19;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = bound;
   }
   const intl = tmp(1128).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11927 : 9192) });
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11924 : 9193) });
   const Icon = tmp(1202).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 }));

@@ -1,13 +1,13 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11125
+// Function ID: 11126
 // Name: isInviteActive
-// Dependencies: [2068, 1104, 11, 11129, 2]
+// Dependencies: [2068, 1104, 11, 11126, 2]
 // Exports: default
 
-// Module 11128 (isInviteActive)
+// Module 11125 (isInviteActive)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import RequestToStreamNonGamesExperimentDefault from "RequestToStreamNonGamesExperiment" /* 11129 */;
+import RequestToStreamNonGamesExperimentDefault from "RequestToStreamNonGamesExperiment" /* 11126 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function isInviteActive(party, id, arg2) {
       if (basicChannel != null) {
         str = basicChannel.guild_id;
       }
-      const getConfig = tmp(11129).getConfig;
+      const getConfig = tmp(11126).getConfig;
       RequestToStreamNonGamesExperimentDefault;
       if (str == null) {
         str = "";

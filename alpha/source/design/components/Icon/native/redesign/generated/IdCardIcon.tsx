@@ -1,14 +1,14 @@
-// Module ID: 7771
-// Function ID: 7772
+// Module ID: 7772
+// Function ID: 7773
 // Name: IdCardIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7772, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7773, 4876, 2]
 
-// Module 7771 (IdCardIcon)
+// Module 7772 (IdCardIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 7772 */;
+import AssetRegistry from "AssetRegistry" /* 7773 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

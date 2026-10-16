@@ -1,9 +1,9 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 14309
+// Function ID: 14310
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1087, 21, 5153, 6124, 587, 558, 576, 1633, 1128, 1202, 14300, 14301, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 6125, 587, 558, 576, 1633, 1128, 1202, 14310, 14311, 2]
 
-// Module 14299 (VoiceEmptyState)
+// Module 14309 (VoiceEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14300 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14301 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14310 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14311 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
-import TextStyles_mod from "TextStyles" /* 6124 */;
+import createStyles_mod from "createStyles" /* 5154 */;
+import TextStyles_mod from "TextStyles" /* 6125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

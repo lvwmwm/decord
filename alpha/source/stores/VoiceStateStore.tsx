@@ -1,17 +1,17 @@
-// Module ID: 5174
-// Function ID: 5175
+// Module ID: 5175
+// Function ID: 5176
 // Name: VoiceStateStore
-// Dependencies: [32, 5175, 1087, 5176, 12, 504, 1630, 584, 2]
+// Dependencies: [32, 5176, 1087, 5177, 12, 504, 1630, 584, 2]
 
-// Module 5174 (VoiceStateStore)
+// Module 5175 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import CallConstants from "CallConstants" /* 5176 */;
+import CallConstants from "CallConstants" /* 5177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5175 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5176 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_15, closure_16, closure_9, sessionId, set2, set3;
@@ -182,7 +182,7 @@ const map = new Map();
 const syncedClientThemes = {};
 const authStore3 = {};
 const authStore4 = {};
-const trackedExposureExperiments = {};
+let closure_17 = {};
 const Store = get_initializedDefault.Store;
 class VoiceStateStore extends Store {
   getAllVoiceStates() {

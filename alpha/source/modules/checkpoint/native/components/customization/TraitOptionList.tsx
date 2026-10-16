@@ -1,21 +1,21 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12711
+// Function ID: 12712
 // Name: TraitOptionList
-// Dependencies: [19, 17, 5143, 5499, 21, 587, 5153, 558, 576, 7796, 12666, 504, 5424, 4909, 6392, 1499, 5154, 5119, 12705, 2]
+// Dependencies: [19, 17, 5144, 5500, 21, 587, 5154, 558, 576, 7797, 12672, 504, 5425, 4909, 6394, 1499, 5155, 5119, 12712, 2]
 
-// Module 12704 (TraitOptionList)
+// Module 12711 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import inlineStyles from "inlineStyles" /* 7796 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12666 */;
+import inlineStyles from "inlineStyles" /* 7797 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12672 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
-    const Polygon = tmp(7796).Polygon;
+    const Polygon = tmp(7797).Polygon;
     const tmp8 = React4(Polygon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

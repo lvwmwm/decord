@@ -1,25 +1,25 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5306
+// Function ID: 5307
 // Name: AudioActionCreators
-// Dependencies: [5, 5306, 5309, 2068, 2014, 5171, 2119, 1392, 1087, 5310, 5178, 3, 1267, 551, 584, 5311, 5286, 5315, 5332, 2]
+// Dependencies: [5, 5307, 5310, 2068, 2014, 5172, 2119, 1392, 1087, 5311, 5179, 3, 1267, 551, 584, 5312, 5287, 5316, 5333, 2]
 
-// Module 5305 (AudioActionCreators)
+// Module 5306 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 5178 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5286 */;
-import Constants3 from "Constants" /* 5310 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5311 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5315 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5332 */;
+import Constants2 from "Constants" /* 5179 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5287 */;
+import Constants3 from "Constants" /* 5311 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5312 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5316 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5333 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5306 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5309 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5307 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5310 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

@@ -1,20 +1,21 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 10975
+// Function ID: 10976
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1392, 10900, 10916, 1087, 10920, 1297, 10922, 584, 8532, 6286, 10979, 10982, 10983, 2]
+// Dependencies: [5, 1392, 10897, 10913, 1087, 10917, 1297, 10919, 584, 8533, 6299, 10976, 10979, 10980, 2]
 // Exports: refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10978 (ConjurePublishActionCreators)
+// Module 10975 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6286 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10920 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10982 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10983 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6299 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10917 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10976 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10979 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10916 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -379,11 +380,10 @@ obj = function _refreshPublishedApplication() {
     let c5 = 0;
     let c6 = 0;
     return (async (arg0, value, arg2) => {
-      let obj10;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -402,36 +402,23 @@ obj = function _refreshPublishedApplication() {
               c6 = 3;
               return { value, done: true };
             } else {
-              closure_4 = tmp4;
-              closure_3 = tmp;
-              const obj5 = { type: "APPLICATION_COMMAND_INDEX_APPLICATION_STALE", applicationId };
-              const obj8 = DispatcherDefault;
-              obj8.dispatch(obj5);
+              closure_4 = tmp;
+              closure_3 = tmp2;
+              const obj4 = { type: "APPLICATION_COMMAND_INDEX_APPLICATION_STALE", applicationId };
+              const obj5 = DispatcherDefault;
+              obj5.dispatch(obj4);
+              const items = [, ];
+              const obj7 = ApplicationActionCreators;
+              items[0] = obj7.fetchApplication(applicationId);
+              const obj8 = ApplicationWidgetConfigActions;
+              const widgetConfigs = obj8.fetchWidgetConfigs(applicationId, { force: true });
+              items[1] = widgetConfigs.catch(() => {
+
+              });
               c5 = 1;
               c6 = 1;
-              const obj6 = { value: obj10.fetchApplication(applicationId), done: false };
-              obj10 = ApplicationActionCreators;
+              const obj6 = { value: all(items), done: false };
               return obj6;
-            }
-          } else if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              const obj2 = closure_132_0(closure_132_2[11]);
-              const widgetConfigs = obj2.fetchWidgetConfigs(applicationId, { force: true });
-              c5 = 2;
-              c6 = 1;
-              const obj9 = {
-                value: widgetConfigs.catch(() => {
-
-                        }),
-                done: false
-              };
-              return obj9;
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -446,9 +433,9 @@ obj = function _refreshPublishedApplication() {
             c6 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp19) {
+        } catch (tmp15) {
           c6 = 3;
-          throw tmp19;
+          throw tmp15;
         }
       }
     })();

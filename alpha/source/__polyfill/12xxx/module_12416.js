@@ -1,68 +1,121 @@
 // Module ID: 12416
 // Function ID: 12417
-// Dependencies: [12304, 12301, 12414]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [12305, 12303, 12304]
+// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
 
 // Module 12416
-import _mod12301 from "module_12301" /* 12301 */;
-import _mod12304 from "module_12304" /* 12304 */;
-import _mod12414 from "module_12414" /* 12414 */;
+import _mod12303 from "module_12303" /* 12303 */;
+import _mod12305 from "module_12305" /* 12305 */;
 
-let navigation;
+function supportsFetch() {
+  if ("fetch" in _mod12305.GLOBAL_OBJ) {
+    try {
+      const _Headers = Headers;
+      const self = this;
+      const headers = new Headers();
+      const _Request = Request;
+      const self2 = this;
+      const request = new Request("http://www.example.com");
+      const _Response = Response;
+      const self3 = this;
+      const response = new Response();
+      return true;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+function isNativeFunction(arg0) {
+  let isMatch = arg0;
+  if (isMatch) {
+    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
+    isMatch = obj.test(arg0.toString());
+  }
+  return isMatch;
+}
 
-
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
+export { isNativeFunction };
+export const supportsDOMError = function supportsDOMError() {
+  try {
+    const self = this;
+    const dOMError = new globalThis.DOMError("");
+    return true;
+  } catch (err) {
+    return false;
   }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const tmp6 = _mod12304;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod12301.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod12301.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod12414;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
-  }
-  return dropUndefinedKeys(obj);
 };
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
+export const supportsDOMException = function supportsDOMException() {
+  try {
+    const self = this;
+    const dOMException = new globalThis.DOMException("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+export const supportsErrorEvent = function supportsErrorEvent() {
+  try {
+    const self = this;
+    const errorEvent = new globalThis.ErrorEvent("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
+export { supportsFetch };
+export const supportsNativeFetch = function supportsNativeFetch() {
+  if (typeof globalThis.EdgeRuntime === "string") {
+    return true;
+  } else if (supportsFetch()) {
+    const tmp = isNativeFunction;
+    if (isNativeFunction(_mod12305.GLOBAL_OBJ.fetch)) {
+      return true;
+    } else {
+      let flag2 = false;
+      const _document = tmp2(12305).GLOBAL_OBJ.document;
+      if (_document) {
+        if (typeof _document.createElement === "function") {
+          try {
+            const element = <iframe />;
+            element.hidden = true;
+            const head = _document.head;
+            head.appendChild(element);
+            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
+            if (_fetch) {
+              flag2 = tmp(tmp5.contentWindow.fetch);
+            }
+            const head2 = _document.head;
+            head2.removeChild(element);
+          } catch (tmp10) {
+            if (_mod12303.DEBUG_BUILD) {
+              const logger = tmp2(12304).logger;
+              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
+            }
+          }
+        }
       }
+      return flag2;
     }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
+  } else {
+    return false;
+  }
+};
+export const supportsReferrerPolicy = function supportsReferrerPolicy() {
+  if (supportsFetch()) {
+    try {
+      const _Request = Request;
+      const self = this;
+      const request = new Request("_", { referrerPolicy: "origin" });
+      return true;
+    } catch (err) {
+      return false;
     }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
-    }
-  };
+  } else {
+    return false;
+  }
+};
+export const supportsReportingObserver = function supportsReportingObserver() {
+  return "ReportingObserver" in _mod12305.GLOBAL_OBJ;
 };

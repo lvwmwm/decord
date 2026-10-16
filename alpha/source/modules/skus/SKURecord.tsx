@@ -1,12 +1,12 @@
-// Module ID: 6313
-// Function ID: 6314
+// Module ID: 6315
+// Function ID: 6316
 // Name: SKURecord
-// Dependencies: [1407, 2024, 6314, 1087, 4761, 6315, 6316, 1405, 2]
+// Dependencies: [1407, 2024, 6316, 1087, 4761, 6317, 6318, 1405, 2]
 
-// Module 6313 (SKURecord)
+// Module 6315 (SKURecord)
 import _modDef4761 from "module_4761" /* 4761 */;
-import SKUConstants from "SKUConstants" /* 6314 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 6315 */;
+import SKUConstants from "SKUConstants" /* 6316 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 6317 */;
 import Record from "Record" /* 1407 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(6316);
+const transformSKUTenantMetadataDefault = tmp15(6318);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {

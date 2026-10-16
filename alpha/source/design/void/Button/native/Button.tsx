@@ -1,7 +1,7 @@
 // Module ID: 1205
 // Function ID: 1206
 // Name: Button/Button
-// Dependencies: [19, 17, 1087, 1206, 21, 5153, 587, 5026, 6187, 1384, 15082, 558, 576, 8824, 5028, 6486, 5441, 2]
+// Dependencies: [19, 17, 1087, 1206, 21, 5154, 587, 5026, 6188, 1384, 15092, 558, 576, 8825, 5028, 6488, 5442, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
 // Module 1205 (Button/Button)
@@ -11,13 +11,13 @@ import Constants from "Constants" /* 1087 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import shared from "shared" /* 5028 */;
-import LegacyTokens from "LegacyTokens" /* 6187 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8824 */;
-import StylesheetUtils from "StylesheetUtils" /* 15082 */;
+import LegacyTokens from "LegacyTokens" /* 6188 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8825 */;
+import StylesheetUtils from "StylesheetUtils" /* 15092 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ColorUtils_mod from "ColorUtils" /* 5026 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

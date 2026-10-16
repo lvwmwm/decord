@@ -1,14 +1,14 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8431
+// Function ID: 8432
 // Name: TextSpoilerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8401, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8402, 4876, 2]
 
-// Module 8430 (TextSpoilerIcon)
+// Module 8431 (TextSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8401 */;
+import AssetRegistry from "AssetRegistry" /* 8402 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

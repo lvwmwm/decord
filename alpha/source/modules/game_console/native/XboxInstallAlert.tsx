@@ -1,18 +1,18 @@
-// Module ID: 11439
-// Function ID: 11440
+// Module ID: 11436
+// Function ID: 11437
 // Name: XboxInstallAlert
-// Dependencies: [19, 9459, 21, 5153, 587, 558, 576, 1128, 1202, 11440, 1384, 4865, 5460, 2]
+// Dependencies: [19, 9460, 21, 5154, 587, 558, 576, 1128, 1202, 11437, 1384, 4865, 5461, 2]
 
-// Module 11439 (XboxInstallAlert)
+// Module 11436 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import LinkingDefault from "Linking" /* 4865 */;
-import AlertDefault from "Alert" /* 5460 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11440 */;
+import AlertDefault from "Alert" /* 5461 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11437 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9459 */;
-import createStyles from "createStyles" /* 5153 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9460 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

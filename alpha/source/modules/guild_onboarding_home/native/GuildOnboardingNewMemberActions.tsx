@@ -1,26 +1,26 @@
-// Module ID: 17639
-// Function ID: 17640
+// Module ID: 17649
+// Function ID: 17650
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6205, 2068, 2128, 2090, 4809, 7147, 8136, 1087, 1395, 4795, 21, 5153, 587, 558, 576, 504, 5483, 1417, 9556, 5091, 4823, 5149, 1202, 12449, 1128, 12858, 17640, 6407, 1405, 17641, 2]
+// Dependencies: [19, 17, 6206, 2068, 2128, 2090, 4809, 7149, 8137, 1087, 1395, 4795, 21, 5154, 587, 558, 576, 504, 5484, 1417, 12861, 5091, 4823, 5150, 1202, 12455, 1128, 12866, 17650, 6409, 1405, 17651, 2]
 
-// Module 17639 (GuildOnboardingNewMemberActions)
+// Module 17649 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4795 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9556 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12861 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6205 */;
+import EmojiStore from "EmojiStore" /* 6206 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7147 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8136 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7149 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8137 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

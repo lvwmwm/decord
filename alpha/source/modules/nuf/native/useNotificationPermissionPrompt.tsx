@@ -1,15 +1,15 @@
-// Module ID: 17594
-// Function ID: 17595
+// Module ID: 17604
+// Function ID: 17605
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2061, 5975, 2062, 12994, 558, 576, 504, 2064, 13003, 17595, 17597, 2]
+// Dependencies: [19, 2061, 5976, 2062, 13002, 558, 576, 504, 2064, 13011, 17605, 17607, 2]
 
-// Module 17594 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 13003 */;
+// Module 17604 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 13011 */;
 import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2061 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12994 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       tmp14 = cResult[7];
     }
     const effect = react.useEffect(tmp13, tmp14);
-    const tmpResult4 = tmp(17595);
+    const tmpResult4 = tmp(17605);
     const guildOpenNudge = tmpResult4.useGuildOpenNudge();
     class S {
       constructor() {
@@ -120,9 +120,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       }
     }
   }, items2);
-  const obj3 = stateFromStores(17595);
+  const obj3 = stateFromStores(17605);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(17597);
+  const obj4 = stateFromStores(17607);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 });
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");

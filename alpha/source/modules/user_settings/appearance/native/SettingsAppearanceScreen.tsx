@@ -1,9 +1,9 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16252
+// Function ID: 16253
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4996, 1208, 1207, 16239, 8213, 1087, 21, 558, 576, 1505, 1384, 9534, 1128, 10764, 1274, 3447, 2131, 16240, 5458, 573, 11006, 15652, 2]
+// Dependencies: [19, 4996, 1208, 1207, 16253, 8214, 1087, 21, 558, 576, 1505, 1384, 9535, 1128, 10761, 1274, 3447, 2131, 16254, 5459, 573, 11003, 15662, 2]
 
-// Module 16238 (SettingsAppearanceScreen)
+// Module 16252 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -12,15 +12,15 @@ import intl6 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import _modDef3447 from "module_3447" /* 3447 */;
-import useMountEffectDefault from "useMountEffect" /* 5458 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import HeaderShared from "HeaderShared" /* 9534 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import useMountEffectDefault from "useMountEffect" /* 5459 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import HeaderShared from "HeaderShared" /* 9535 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import FontScaleStore from "FontScaleStore" /* 16239 */;
+import FontScaleStore from "FontScaleStore" /* 16253 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(15652);
+const SettingLayoutDefault = tmp5(15662);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(11006).createList;
+    const createList = tmp(11003).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

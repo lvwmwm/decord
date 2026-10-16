@@ -1,10 +1,10 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7152
+// Function ID: 7153
 // Name: canUseGuildSpace
-// Dependencies: [2090, 4809, 1087, 558, 576, 504, 7151, 2]
+// Dependencies: [2090, 4809, 1087, 558, 576, 504, 7153, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin
 
-// Module 7150 (canUseGuildSpace)
+// Module 7152 (canUseGuildSpace)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;

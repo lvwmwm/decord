@@ -1,21 +1,21 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 17450
+// Function ID: 17451
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6115, 2068, 4809, 5169, 4819, 5977, 5174, 1087, 558, 576, 5021, 2044, 10478, 8516, 10476, 10477, 10484, 1128, 10488, 504, 2]
+// Dependencies: [6116, 2068, 4809, 5170, 4819, 5978, 5175, 1087, 558, 576, 5021, 2044, 10479, 8517, 10477, 10478, 10485, 1128, 10489, 504, 2]
 
-// Module 17440 (useYouBarAccessibilityLabel)
+// Module 17450 (useYouBarAccessibilityLabel)
 import UserUtils from "UserUtils" /* 5021 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10476 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10477 */;
-import isGameActivityDefault from "isGameActivity" /* 10484 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10488 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10477 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10478 */;
+import isGameActivityDefault from "isGameActivity" /* 10485 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10489 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5978 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               } else {
                 found1 = undefined;
                 if (activities != null) {
-                  found1 = activities.find(() => { /* body not rendered: F150489 */ });
+                  found1 = activities.find(() => { /* body not rendered: F150591 */ });
                 }
                 if (null != found1) {
                   tmp17 = closure_1;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
         tmp22 = tag;
         items1[1] = tag;
         items1[2] = text;
-        found2 = items1.filter(() => { /* body not rendered: F150490 */ });
+        found2 = items1.filter(() => { /* body not rendered: F150592 */ });
         str2 = ", ";
         return found2.join(", ");
       } else {

@@ -1,18 +1,18 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 12892
+// Function ID: 12893
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 5153, 6481, 558, 576, 12885, 12883, 1128, 5149, 12886, 7037, 6423, 6910, 2]
+// Dependencies: [5, 19, 17, 21, 5154, 6483, 558, 576, 12893, 12891, 1128, 5150, 12894, 7039, 6425, 6912, 2]
 
-// Module 12884 (GuildDirectoryEditDescriptionModal)
-import NavigatorConstants from "NavigatorConstants" /* 6481 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12883 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12885 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12886 */;
+// Module 12892 (GuildDirectoryEditDescriptionModal)
+import NavigatorConstants from "NavigatorConstants" /* 6483 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12891 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12893 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12894 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
                 return tmp26;
               }
               let obj3 = { top: true, style: safeArea, children: tmp22 };
-              const tmp28 = closure_7(entry(7037).SafeAreaPaddingView, obj3);
+              const tmp28 = closure_7(entry(7039).SafeAreaPaddingView, obj3);
               cResult[19] = tmp4.safeArea;
               cResult[20] = tmp22;
               cResult[21] = tmp28;
@@ -136,7 +136,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
       tmp11 = tmp14;
     }
     const obj7 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp10 = closure_7(entry(5149).Text, obj7);
+    const tmp10 = closure_7(entry(5150).Text, obj7);
     cResult[5] = tmp4.title;
     cResult[6] = tmp6;
     cResult[7] = tmp10;
@@ -271,9 +271,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   obj = { top: true, style: tmp.safeArea, children: closure_8(closure_6, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items };
   let obj3 = { style: tmp.header, children: closure_7(Text, obj4) };
-  const SafeAreaPaddingView = entry(7037).SafeAreaPaddingView;
+  const SafeAreaPaddingView = entry(7039).SafeAreaPaddingView;
   obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(entry(1128).t.w9tsNk, obj5) };
-  Text = entry(5149).Text;
+  Text = entry(5150).Text;
   intl = entry(1128).intl;
   obj5 = { guildName: entry.name };
   items = [closure_7(closure_5, obj3), ];
@@ -285,7 +285,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(12886);
+  const tmp2 = obj(12894);
   intl2 = entry(1128).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

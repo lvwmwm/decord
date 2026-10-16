@@ -1,15 +1,15 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12000
+// Function ID: 12001
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 587, 5153, 558, 576, 1202, 2]
+// Dependencies: [19, 17, 21, 587, 5154, 558, 576, 1202, 2]
 
-// Module 12003 (MessageBlock)
+// Module 12000 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

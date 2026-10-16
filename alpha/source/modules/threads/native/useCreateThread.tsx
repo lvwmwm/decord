@@ -1,16 +1,16 @@
-// Module ID: 9933
-// Function ID: 9934
+// Module ID: 9934
+// Function ID: 9935
 // Name: useCreateThread
-// Dependencies: [5, 19, 7462, 5147, 558, 576, 7075, 7397, 7588, 9501, 9499, 9497, 9934, 7984, 8000, 9502, 2]
+// Dependencies: [5, 19, 7464, 5148, 558, 576, 7077, 7399, 7589, 9502, 9500, 9498, 9935, 7985, 8001, 9503, 2]
 
-// Module 9933 (useCreateThread)
-import MessageConstants from "MessageConstants" /* 5147 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
-import DraftStore from "DraftStore" /* 7462 */;
-import MessageParserDefault from "MessageParser" /* 7588 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9499 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9501 */;
+// Module 9934 (useCreateThread)
+import MessageConstants from "MessageConstants" /* 5148 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7077 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
+import DraftStore from "DraftStore" /* 7464 */;
+import MessageParserDefault from "MessageParser" /* 7589 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9500 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThr
                 if (cResult[9] === useDefaultThreadName) {
                   tmp5 = cResult[10];
                 }
-                const tmpResult = tmp(9497);
+                const tmpResult = tmp(9498);
                 return tmpResult.useCreateThreadCommon(tmp5);
               }
             }
@@ -107,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThr
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj = analyticsLocations(9497);
+  let obj = analyticsLocations(9498);
   let obj2 = {
     parentChannel,
     parentMessageId,
@@ -152,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
   const cResult = obj.c(10);
   parentChannel = parentChannel.parentChannel;
   ({ threadSettings, appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(7075)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7077)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp4;
     if (cResult[1] === parentChannel) {
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
               if (cResult[8] === tmp4) {
                 tmp6 = cResult[9];
               }
-              const tmpResult = tmp(9497);
+              const tmpResult = tmp(9498);
               return tmpResult.useCreateForumPostCommon(tmp6);
             }
           }
@@ -237,7 +237,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(7075)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7077)().analyticsLocations;
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async (arg0) => {
     let FirstThreadMessage;
@@ -274,7 +274,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateF
   const callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  const tmp2 = parentChannel(9497);
+  const tmp2 = parentChannel(9498);
   let obj = { parentChannel, name: str, appliedTags, analyticsLocations, onThreadCreated, upload: callback };
   str = undefined;
   const useCreateForumPostCommon = tmp2.useCreateForumPostCommon;

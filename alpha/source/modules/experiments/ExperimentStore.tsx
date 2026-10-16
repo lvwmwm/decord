@@ -20,7 +20,7 @@ import ExperimentConstants from "ExperimentConstants" /* 5076 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let closure_22, closure_23, positions;
+let closure_22, positions;
 
 let c10;
 let c9;
@@ -785,7 +785,7 @@ let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };
 let loadedUserExperiments = {};
 const authStore6 = {};
-const isAppBarToggleOpen = {};
+let closure_23 = {};
 let obj4 = {};
 obj = {};
 let c26 = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL || true;

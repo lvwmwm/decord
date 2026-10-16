@@ -1,16 +1,16 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17682
+// Function ID: 17683
 // Name: useChannelAppFrameTeardown
-// Dependencies: [19, 2068, 4809, 10950, 10934, 1087, 558, 576, 504, 10963, 2]
+// Dependencies: [19, 2068, 4809, 10947, 10931, 1087, 558, 576, 504, 10960, 2]
 
-// Module 17672 (useChannelAppFrameTeardown)
+// Module 17682 (useChannelAppFrameTeardown)
 import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 10934 */;
-import leaveFrame from "leaveFrame" /* 10963 */;
+import FramesConstants from "FramesConstants" /* 10931 */;
+import leaveFrame from "leaveFrame" /* 10960 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import FramesStore from "FramesStore" /* 10950 */;
+import FramesStore from "FramesStore" /* 10947 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

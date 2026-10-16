@@ -1,10 +1,10 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14087
+// Function ID: 14088
 // Name: PersonalWidgetExpandCollapseContext
 // Dependencies: [32, 19, 21, 558, 576, 2]
 // Exports: usePersonalWidgetExpandCollapse
 
-// Module 14077 (PersonalWidgetExpandCollapseContext)
+// Module 14087 (PersonalWidgetExpandCollapseContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -207,7 +207,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePersona
   const fn = function p(nativeEvent) {
     if (first !== closure_1) {
       closure_5(tmp);
-      setAnyFieldClipped(id, nativeEvent.nativeEvent.lines.length > uri);
+      setAnyFieldClipped(id, nativeEvent.nativeEvent.lines.length > closure_0);
     }
   };
   cResult[0] = id;

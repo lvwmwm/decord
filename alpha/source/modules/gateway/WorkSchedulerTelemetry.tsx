@@ -1,9 +1,9 @@
-// Module ID: 14642
-// Function ID: 14643
+// Module ID: 14652
+// Function ID: 14653
 // Name: WorkSchedulerTelemetry
 // Dependencies: [32, 12, 2]
 
-// Module 14642 (WorkSchedulerTelemetry)
+// Module 14652 (WorkSchedulerTelemetry)
 import _mod12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

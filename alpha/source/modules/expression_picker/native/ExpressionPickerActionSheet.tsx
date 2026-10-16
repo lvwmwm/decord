@@ -1,9 +1,9 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 9962
+// Function ID: 9963
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 2068, 7064, 9962, 21, 558, 576, 4909, 5046, 1631, 504, 9963, 5118, 1499, 1633, 6481, 1384, 9691, 9964, 7063, 2]
+// Dependencies: [19, 2068, 7066, 9963, 21, 558, 576, 4909, 5046, 1631, 504, 9964, 5118, 1499, 1633, 6483, 1384, 9690, 9965, 7065, 2]
 
-// Module 9961 (ExpressionPickerActionSheet)
+// Module 9962 (ExpressionPickerActionSheet)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
@@ -12,11 +12,11 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import useKeyboardType from "useKeyboardType" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import NavigatorConstants from "NavigatorConstants" /* 6481 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7064 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9962 */;
-import react_native from "react-native" /* 9963 */;
-import ExpressionPickerDefault from "ExpressionPicker" /* 9964 */;
+import NavigatorConstants from "NavigatorConstants" /* 6483 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7066 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9963 */;
+import react_native from "react-native" /* 9964 */;
+import ExpressionPickerDefault from "ExpressionPicker" /* 9965 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
@@ -209,12 +209,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expression
     const tmp15 = closure_8;
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = closure_7(tmp6(9691), obj4);
+      isIOSResult = closure_7(tmp6(9690), obj4);
     }
     const obj5 = { children: items1 };
     items1 = [isIOSResult, ];
     const obj6 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss, children: closure_7(ExpressionPickerDefault, obj7) };
-    BottomSheet = tmp2(7063).BottomSheet;
+    BottomSheet = tmp2(7065).BottomSheet;
     obj7 = {
       bottomSheetRef: ref,
       bottomSheetIndex: sharedValue,

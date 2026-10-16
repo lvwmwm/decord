@@ -1,28 +1,28 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11518
+// Function ID: 11519
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1246, 10900, 21, 5153, 587, 558, 576, 1633, 1505, 504, 7167, 11522, 11520, 5118, 11523, 11555, 11557, 10924, 11569, 11574, 7113, 6432, 10853, 1128, 5149, 3865, 5441, 10922, 11602, 6487, 10923, 6277, 11604, 11606, 11607, 9478, 6402, 2]
+// Dependencies: [19, 17, 1246, 10897, 21, 5154, 587, 558, 576, 1633, 1505, 504, 7169, 11519, 11517, 5118, 11520, 11552, 11554, 10921, 11566, 11571, 7115, 6434, 10850, 1128, 5150, 3865, 5442, 10919, 11599, 6489, 10920, 6278, 11601, 11603, 11604, 9479, 6404, 2]
 
-// Module 11521 (ConjureProjectList)
+// Module 11518 (ConjureProjectList)
 import nativeDefault from "native" /* 587 */;
 import _modDef3865 from "module_3865" /* 3865 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import ConjureUtils from "ConjureUtils" /* 7167 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11520 */;
-import ConjureActivity from "ConjureActivity" /* 11522 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11523 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11555 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11574 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11604 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 11606 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11607 */;
+import ConjureUtils from "ConjureUtils" /* 7169 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11517 */;
+import ConjureActivity from "ConjureActivity" /* 11519 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11520 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11552 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11571 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11601 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 11603 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11604 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -615,7 +615,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   project = project.project;
   ({ onPress, onMore } = project);
   const tmp4 = closure_11(0);
-  const obj2 = project(10923);
+  const obj2 = project(10920);
   const conjureProjectBadge = obj2.useConjureProjectBadge(project.id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
@@ -650,8 +650,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       const _Date = Date;
       const self = this;
       const self2 = this;
-      getRelativeTimestamp = project(6277).getRelativeTimestamp;
-      project(6277);
+      getRelativeTimestamp = project(6278).getRelativeTimestamp;
+      project(6278);
       date = new Date(project.updated_at);
       formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
     }
@@ -752,7 +752,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
               }
             }
             const obj7 = { label: project.name, subLabel: tmp17, accessibilityHint: tmp20, disabled: stateFromStores, icon: tmp23, trailing: tmp27, onPress, onLongPress: onMore };
-            const tmp41 = closure_9(project(6402).TableRow, obj7);
+            const tmp41 = closure_9(project(6404).TableRow, obj7);
             cResult[19] = stateFromStores;
             cResult[20] = onMore;
             cResult[21] = onPress;
@@ -779,7 +779,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         tmp30 = closure_9(MentionsBadgeDefault, obj9);
       }
       items3 = [tmp30, ];
-      const obj10 = { IconComponent: project(9478).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };
+      const obj10 = { IconComponent: project(9479).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };
       const tmp35 = ConjureHeaderIconButtonDefault;
       intl4 = tmp(1128).intl;
       items3[1] = closure_9(tmp35, obj10);
@@ -813,7 +813,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   const onMore = project.onMore;
   const onPress = project.onPress;
   const tmp = closure_11(0);
-  const obj = project(10923);
+  const obj = project(10920);
   const conjureProjectBadge = obj.useConjureProjectBadge(project.id);
   const items = [ConjureProjectStore];
   const items1 = [project.id];
@@ -828,13 +828,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const _Date = Date;
     const self = this;
     const self2 = this;
-    getRelativeTimestamp = project(6277).getRelativeTimestamp;
-    project(6277);
+    getRelativeTimestamp = project(6278).getRelativeTimestamp;
+    project(6278);
     date = new Date(project.updated_at);
     formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
   }
   const obj4 = { label: project.name, subLabel: formatToPlainStringResult, accessibilityHint: stringResult, disabled: stateFromStores, icon: closure_9(ConjureProjectIconDefault, { project, size: "list" }), trailing: tmp12Result, onPress, onLongPress: onMore };
-  const TableRow = tmp2(6402).TableRow;
+  const TableRow = tmp2(6404).TableRow;
   if (stateFromStores) {
     const intl2 = tmp2(1128).intl;
     formatToPlainStringResult = intl2.string(_modDef3865.Yh5pAc);
@@ -851,10 +851,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { mentionsCount: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(11606), obj6);
+      tmp14Result3 = tmp14(tmp18(11603), obj6);
     }
     items2 = [tmp14Result3, ];
-    const obj7 = { IconComponent: project(9478).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };
+    const obj7 = { IconComponent: project(9479).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };
     const tmp18Result = ConjureHeaderIconButtonDefault;
     intl4 = tmp2(1128).intl;
     items2[1] = closure_9(tmp18Result, obj7);

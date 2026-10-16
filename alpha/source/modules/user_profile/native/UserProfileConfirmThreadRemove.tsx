@@ -1,13 +1,13 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13244
+// Function ID: 13245
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 558, 576, 5021, 1128, 5367, 5367, 2]
+// Dependencies: [19, 21, 558, 576, 5021, 1128, 5368, 5368, 2]
 
-// Module 13236 (UserProfileConfirmThreadRemove)
+// Module 13244 (UserProfileConfirmThreadRemove)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import AlertModal2 from "AlertModal" /* 5367 */;
+import AlertModal2 from "AlertModal" /* 5368 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-      const AlertActionButton = tmp(5367).AlertActionButton;
+      const AlertActionButton = tmp(5368).AlertActionButton;
       intl4 = tmp(1128).intl;
       const tmp17 = _false(AlertActionButton, obj4, "cancel-remove-user-from-thread");
       cResult[8] = tmp17;
@@ -135,13 +135,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   formatToPlainString = intl2.formatToPlainString;
   t2 = tmp4(1128).t;
   obj3 = { children: items };
-  AlertActions = tmp4(5367).AlertActions;
+  AlertActions = tmp4(5368).AlertActions;
   const obj4 = { variant: "destructive", text: intl3.string(intl5.t.N86XcP), onPress: onConfirm };
-  const AlertActionButton = tmp4(5367).AlertActionButton;
+  const AlertActionButton = tmp4(5368).AlertActionButton;
   intl3 = tmp4(1128).intl;
   items = [_false(AlertActionButton, obj4, "remove-user-from-thread"), ];
   const obj5 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-  const AlertActionButton2 = tmp4(5367).AlertActionButton;
+  const AlertActionButton2 = tmp4(5368).AlertActionButton;
   intl4 = tmp4(1128).intl;
   items[1] = _false(AlertActionButton2, obj5, "cancel-remove-user-from-thread");
   return _false(AlertModal, obj2);

@@ -1,20 +1,20 @@
-// Module ID: 13184
-// Function ID: 13185
+// Module ID: 13192
+// Function ID: 13193
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5143, 8253, 21, 5153, 587, 558, 576, 504, 13185, 13186, 13176, 4977, 13181, 2]
+// Dependencies: [19, 17, 5144, 8254, 21, 5154, 587, 558, 576, 504, 13193, 13194, 13184, 4977, 13189, 2]
 
-// Module 13184 (GuildPowerupsGameServerCard)
+// Module 13192 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13176 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 13181 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 13185 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 13186 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13184 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 13189 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 13193 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 13194 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import GameServerStore from "GameServerStore" /* 8253 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import GameServerStore from "GameServerStore" /* 8254 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

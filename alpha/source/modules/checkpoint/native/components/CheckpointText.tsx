@@ -1,18 +1,18 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12682
+// Function ID: 12683
 // Name: CheckpointText
-// Dependencies: [109, 5499, 21, 558, 576, 5149, 2]
+// Dependencies: [109, 5500, 21, 558, 576, 5150, 2]
 
-// Module 12676 (CheckpointText)
+// Module 12682 (CheckpointText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5149);
+const Text_Text = tmp(5150);
 let closure_2 = ["children", "style"];
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;

@@ -1,9 +1,9 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17194
+// Function ID: 17195
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5169, 4819, 1392, 1087, 2075, 6185, 21, 5153, 587, 6187, 12958, 558, 576, 1417, 5091, 17181, 8428, 8384, 504, 1202, 5475, 1114, 17182, 5483, 2]
+// Dependencies: [109, 19, 17, 5170, 4819, 1392, 1087, 2075, 6186, 21, 5154, 587, 6188, 12966, 558, 576, 1417, 5091, 17195, 8429, 8385, 504, 1202, 5476, 1114, 17196, 5484, 2]
 
-// Module 17180 (ChannelItem)
+// Module 17194 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,20 +11,20 @@ import router_utils from "router_utils" /* 1114 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import ReadStateConstants from "ReadStateConstants" /* 6185 */;
-import LegacyTokens from "LegacyTokens" /* 6187 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8428 */;
-import BaseChannelItem from "BaseChannelItem" /* 12958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17181 */;
+import ReadStateConstants from "ReadStateConstants" /* 6186 */;
+import LegacyTokens from "LegacyTokens" /* 6188 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8385 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8429 */;
+import BaseChannelItem from "BaseChannelItem" /* 12966 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17195 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     if (tmp5) {
       tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(8428).BookCheckIcon;
+      BookCheckIcon = tmp(8429).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(12958).BaseChannelIcon;
+    const BaseChannelIcon = tmp(12966).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(12958).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(12966).BaseChannelIcon;
     const tmp17 = syncedClientThemes;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

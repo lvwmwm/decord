@@ -1,12 +1,12 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14330
+// Function ID: 14331
 // Name: isClipsEnabled
-// Dependencies: [2020, 14321, 558, 576, 504, 2]
+// Dependencies: [2020, 14331, 558, 576, 504, 2]
 // Exports: isClipsEnabled
 
-// Module 14320 (isClipsEnabled)
+// Module 14330 (isClipsEnabled)
 import react from "react" /* 576 */;
-import ClipsExperiment from "ClipsExperiment" /* 14321 */;
+import ClipsExperiment from "ClipsExperiment" /* 14331 */;
 import ClipsStore from "ClipsStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

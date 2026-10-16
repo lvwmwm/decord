@@ -1,14 +1,14 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12780
+// Function ID: 12781
 // Name: ForumPost
-// Dependencies: [19, 2068, 4819, 12775, 21, 558, 576, 12776, 12780, 12792, 504, 38, 7226, 9563, 12796, 12795, 8705, 12802, 2078, 2]
+// Dependencies: [19, 2068, 4819, 12781, 21, 558, 576, 12782, 12786, 12798, 504, 38, 7228, 9562, 12802, 12801, 8706, 12808, 2078, 2]
 
-// Module 12774 (ForumPost)
+// Module 12780 (ForumPost)
 import react2 from "react" /* 576 */;
-import ForumChannelStore from "ForumChannelStore" /* 12775 */;
-import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 12776 */;
-import ForumPostGridBodyDefault from "ForumPostGridBody" /* 12780 */;
-import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 12792 */;
+import ForumChannelStore from "ForumChannelStore" /* 12781 */;
+import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 12782 */;
+import ForumPostGridBodyDefault from "ForumPostGridBody" /* 12786 */;
+import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 12798 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   }
   const tmpResult4 = threadId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp10, tmp12);
-  const tmpResult5 = threadId(7226);
+  const tmpResult5 = threadId(7228);
   const firstForumPostMessage = tmpResult5.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
   if (cResult[6] !== firstMessage) {
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   } else {
     tmp15 = cResult[7];
   }
-  const tmpResult6 = threadId(9563);
+  const tmpResult6 = threadId(9562);
   const content = tmpResult6.useForumPostFirstMessageMarkup(tmp15).content;
   let tmp16 = null;
   if (loaded) {
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
                 tmp16 = tmp20;
               }
               const obj3 = { style, children: tmp17 };
-              const tmp22 = closure_6(threadId(12795).ForumPostDisabledContainer, obj3);
+              const tmp22 = closure_6(threadId(12801).ForumPostDisabledContainer, obj3);
               cResult[15] = style;
               cResult[16] = tmp17;
               cResult[17] = tmp22;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
       }
     }
     const obj4 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: content, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
-    const tmp19 = closure_6(tmp8(12796), obj4);
+    const tmp19 = closure_6(tmp8(12802), obj4);
     cResult[8] = content;
     cResult[9] = firstMessage;
     cResult[10] = loaded;
@@ -239,15 +239,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   const items1 = [ChannelStore];
   const obj2 = threadId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
-  const obj3 = threadId(7226);
+  const obj3 = threadId(7228);
   const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(9563);
+  threadId(9562);
   const tmp = threadId;
   const tmp4 = stateFromStores;
   if (loaded) {
-    const obj4 = { style, children: closure_6(tmp4(12796), obj5) };
-    const ForumPostDisabledContainer = tmp(12795).ForumPostDisabledContainer;
+    const obj4 = { style, children: closure_6(tmp4(12802), obj5) };
+    const ForumPostDisabledContainer = tmp(12801).ForumPostDisabledContainer;
     obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
     tmp5 = closure_6(ForumPostDisabledContainer, obj4);
   }

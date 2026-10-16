@@ -1,18 +1,18 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16485
+// Function ID: 16486
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [8213, 558, 16472, 1384, 1128, 2044, 11006, 15394, 16467, 2]
+// Dependencies: [8214, 558, 16486, 1384, 1128, 2044, 11003, 15404, 16481, 2]
 
-// Module 16471 (IOSNativePhoneIntegrationSetting)
+// Module 16485 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15394 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16467 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 16472 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15404 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16481 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 16486 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

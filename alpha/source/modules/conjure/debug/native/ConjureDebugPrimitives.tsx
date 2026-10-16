@@ -1,20 +1,20 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12281
+// Function ID: 12282
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5149, 1128, 3865, 12273, 5441, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 5150, 1128, 3865, 12279, 5442, 2]
 
-// Module 12275 (ConjureDebugPrimitives)
+// Module 12281 (ConjureDebugPrimitives)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12273 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12279 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,14 +119,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
     tmp9 = hasOwnProperty(_false, { size: "small" });
   } else if ("failed" === fetchState) {
     const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3865.ZVByPX) };
-    const Text2 = tmp(5149).Text;
+    const Text2 = tmp(5150).Text;
     intl2 = tmp(1128).intl;
     tmp9 = hasOwnProperty(Text2, obj5);
   } else {
     tmp9 = null;
     if (null != generatedAt) {
       const obj6 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj7) };
-      const Text = tmp(5149).Text;
+      const Text = tmp(5150).Text;
       const intl = tmp(1128).intl;
       formatToPlainString = intl.formatToPlainString;
       obj7 = { time: tmpResult.formatObservedAt(generatedAt) };
@@ -317,7 +317,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugStatRow
                         let tmp27 = null;
                         if (null != hint) {
                           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: hint };
-                          tmp27 = hasOwnProperty(tmp(5149).Text, obj3);
+                          tmp27 = hasOwnProperty(tmp(5150).Text, obj3);
                         }
                         cResult[24] = hint;
                         cResult[25] = tmp27;

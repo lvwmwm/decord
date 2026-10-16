@@ -1,12 +1,13 @@
-// Module ID: 5484
-// Function ID: 5485
+// Module ID: 5485
+// Function ID: 5486
 // Name: LinkUtils
-// Dependencies: [2068, 2090, 4809, 1087, 2075, 5138, 2]
+// Dependencies: [2068, 2090, 4809, 1087, 2075, 5132, 5139, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5484 (LinkUtils)
+// Module 5485 (LinkUtils)
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import RegexUtilsDefault from "RegexUtils" /* 5138 */;
+import ConversationConstants from "ConversationConstants" /* 5132 */;
+import RegexUtilsDefault from "RegexUtils" /* 5139 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
@@ -15,7 +16,9 @@ import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;
 const Permissions = Constants.Permissions;
-const arr = Array.from(ChannelConstants.StaticChannelRoutes);
+const StaticChannelRoutes = ChannelConstants.StaticChannelRoutes;
+const CONVERSATION_QUERY_PARAM = ConversationConstants.CONVERSATION_QUERY_PARAM;
+const arr = Array.from(StaticChannelRoutes);
 const mapped = arr.map((item) => {
   const obj = RegexUtilsDefault;
   return obj.escape(item);
@@ -29,11 +32,13 @@ const regExp4 = new RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?");
 const re12 = /^\/users\/(\d+)\/?$/;
 const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
-const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
+const regExp7 = new RegExp("" + regExp6.source + "(?:\\?" + CONVERSATION_QUERY_PARAM + "=(\\d+)(?![\\w=&%-]))?");
+const regExp8 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const result = size.fileFinishedImporting("modules/links/LinkUtils.tsx");
 
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
-export const MEDIA_POST_URL_RE = regExp7;
+export const CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE = regExp7;
+export const MEDIA_POST_URL_RE = regExp8;
 export const tryParseChannelPath = function tryParseChannelPath(pathname) {
   if (null == pathname) {
     return null;

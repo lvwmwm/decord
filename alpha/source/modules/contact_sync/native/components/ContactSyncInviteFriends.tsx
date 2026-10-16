@@ -1,20 +1,20 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13300
+// Function ID: 13301
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1392, 1087, 21, 5153, 587, 558, 576, 504, 1267, 1128, 5021, 8708, 5091, 13293, 5149, 5441, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 5154, 587, 558, 576, 504, 1267, 1128, 5021, 8709, 5091, 13301, 5150, 5442, 2]
 
-// Module 13292 (ContactSyncInviteFriends)
+// Module 13300 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13293 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13301 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 let tmp;
 let tmp5;
 const UserUtilsDefault = tmp(5021);
-const showShareActionSheet = tmp5(8708);
+const showShareActionSheet = tmp5(8709);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -115,7 +115,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   if (cResult[7] !== tmp4.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(tmp(5149).Text, obj3);
+    const tmp19 = closure_7(tmp(5150).Text, obj3);
     cResult[7] = tmp4.title;
     cResult[8] = tmp19;
     tmp17 = tmp19;
@@ -133,7 +133,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   if (cResult[10] !== tmp4.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-    const tmp24 = closure_7(tmp(5149).Text, obj4);
+    const tmp24 = closure_7(tmp(5150).Text, obj4);
     cResult[10] = tmp4.subtitle;
     cResult[11] = tmp24;
     tmp22 = tmp24;
@@ -161,7 +161,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
         }
         if (cResult[18] !== tmp9) {
           const obj5 = { variant: "primary", size: "lg", text: tmp27, onPress: tmp9 };
-          const tmp31 = closure_7(tmp(5441).Button, obj5);
+          const tmp31 = closure_7(tmp(5442).Button, obj5);
           cResult[18] = tmp9;
           cResult[19] = tmp31;
           tmp29 = tmp31;

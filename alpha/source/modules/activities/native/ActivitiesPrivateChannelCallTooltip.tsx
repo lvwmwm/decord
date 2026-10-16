@@ -1,17 +1,17 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13437
+// Function ID: 13438
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 5143, 2026, 21, 5153, 558, 576, 504, 4909, 5154, 1128, 5441, 1202, 2]
+// Dependencies: [19, 17, 5144, 2026, 21, 5154, 558, 576, 504, 4909, 5155, 1128, 5442, 1202, 2]
 
-// Module 13429 (ActivitiesPrivateChannelCallTooltip)
+// Module 13437 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 2026 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
       return obj;
     }
   }
-  let obj2 = { withRepeat: tmp(4909).withRepeat, withSequence: tmp(4909).withSequence, withTiming: tmp(5154).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
+  let obj2 = { withRepeat: tmp(4909).withRepeat, withSequence: tmp(4909).withSequence, withTiming: tmp(5155).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
   F.__closure = obj2;
   F.__workletHash = 4621705591670;
   F.__initData = __initData;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
       tmp15 = cResult[7];
     }
     if (cResult[8] !== onClosePress) {
-      const tmp19 = jsx(tmp(5441).Button, { text: tmp15, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
+      const tmp19 = jsx(tmp(5442).Button, { text: tmp15, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
       cResult[8] = onClosePress;
       cResult[9] = tmp19;
       tmp17 = tmp19;
@@ -257,7 +257,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
     return obj;
   };
   const tmp2Result = tmp2(4909);
-  let obj2 = { withRepeat: tmp2(4909).withRepeat, withSequence: tmp2(4909).withSequence, withTiming: tmp2(5154).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
+  let obj2 = { withRepeat: tmp2(4909).withRepeat, withSequence: tmp2(4909).withSequence, withTiming: tmp2(5155).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
   fn.__closure = obj2;
   fn.__workletHash = 10615395921877;
   fn.__initData = __initData2;
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
   obj5 = { helpdeskUrl };
   intl2 = tmp2(1128).intl;
   ({ text: intl3.string(tmp2(1128).t["NX+WJN"]), onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
-  const Button = tmp2(5441).Button;
+  const Button = tmp2(5442).Button;
   intl3 = tmp2(1128).intl;
   return <View style={items1}>{null}</View>;
 });

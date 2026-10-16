@@ -1,20 +1,20 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16340
+// Function ID: 16341
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1087, 21, 5153, 587, 16327, 558, 576, 10504, 1409, 16322, 5119, 1267, 5118, 15536, 7063, 1128, 5441, 16319, 1105, 5453, 16328, 12, 6407, 6418, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5154, 587, 16341, 558, 576, 10505, 1409, 16336, 5119, 1267, 5118, 15546, 7065, 1128, 5442, 16333, 1105, 5454, 16342, 12, 6409, 6420, 2]
 
-// Module 16326 (DisplayNameStylesGradientPickerSheet)
+// Module 16340 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16327 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 16341 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159294 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159398 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -140,7 +140,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159294 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F159398 */ }));
                         },
               actionButtonVariant: "primary"
             };

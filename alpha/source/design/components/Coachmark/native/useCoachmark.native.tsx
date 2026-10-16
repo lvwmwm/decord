@@ -1,14 +1,14 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9678
+// Function ID: 9679
 // Name: useCoachmark
-// Dependencies: [19, 21, 558, 576, 1281, 9680, 7070, 9687, 2]
+// Dependencies: [19, 21, 558, 576, 1281, 9679, 7072, 9686, 2]
 
-// Module 9679 (useCoachmark)
+// Module 9678 (useCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1281 */;
-import useTooltip from "useTooltip" /* 9680 */;
-import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9687 */;
+import useTooltip from "useTooltip" /* 9679 */;
+import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9686 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

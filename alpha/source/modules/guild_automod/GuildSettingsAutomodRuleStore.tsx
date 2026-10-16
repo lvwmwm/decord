@@ -1,10 +1,10 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 18636
+// Function ID: 18637
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1087, 1128, 1269, 12, 1388, 1274, 18624, 18629, 18625, 8102, 18622, 12515, 5853, 4792, 2]
+// Dependencies: [5, 1087, 1128, 1269, 12, 1388, 1274, 18637, 18642, 18638, 8103, 18635, 12521, 5854, 4792, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 18623 (GuildSettingsAutomodRuleStore)
+// Module 18636 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1087 */;
 import react_native from "react-native" /* 1274 */;
 import _slicedToArray from "_slicedToArray" /* 4792 */;

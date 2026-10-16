@@ -1,12 +1,12 @@
-// Module ID: 13109
-// Function ID: 13110
+// Module ID: 13117
+// Function ID: 13118
 // Name: guildTheme
-// Dependencies: [5066, 5067, 558, 576, 504, 5070, 13110, 5072, 2]
+// Dependencies: [5066, 5067, 558, 576, 504, 5070, 13118, 5072, 2]
 // Exports: shouldShowGuildThemeRollback
 
-// Module 13109 (guildTheme)
+// Module 13117 (guildTheme)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13110 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13118 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

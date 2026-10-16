@@ -1,25 +1,25 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8123
+// Function ID: 8124
 // Name: ThreadActionCreators
-// Dependencies: [5, 2072, 502, 2068, 4809, 8123, 4811, 8138, 1087, 2075, 1297, 584, 5361, 1128, 5168, 8139, 8140, 8143, 8144, 1388, 2079, 2]
+// Dependencies: [5, 2072, 502, 2068, 4809, 8124, 4811, 8139, 1087, 2075, 1297, 584, 5362, 1128, 5169, 8140, 8141, 8144, 8145, 1388, 2079, 2]
 
-// Module 8122 (ThreadActionCreators)
+// Module 8123 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl11 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
-import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8123 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8139 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5362 */;
+import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8124 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8140 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8138 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8139 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8140);
-const f98483 = (body) => {
+const ApplicationCommandActionCreators = tmp(8141);
+const f98546 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f98483);
+  return patchResult.then(f98546);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f98483);
+    return patchResult.then(f98546);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f98483);
+    return patchResult.then(f98546);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;

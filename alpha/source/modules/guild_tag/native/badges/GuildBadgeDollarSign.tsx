@@ -1,12 +1,12 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14890
+// Function ID: 14891
 // Name: GuildBadgeDollarSign
-// Dependencies: [109, 19, 21, 558, 576, 14849, 7796, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14859, 7797, 2]
 
-// Module 14880 (GuildBadgeDollarSign)
+// Module 14890 (GuildBadgeDollarSign)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7796 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14849 */;
+import inlineStyles from "inlineStyles" /* 7797 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14859 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -249,7 +249,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeDo
     }
   }
   const obj12 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(7796).Svg;
+  const Svg = tmp(7797).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp17, tmp18, tmp23, tmp30, tmp31, tmp26, tmp27, tmp28, tmp29, tmp39, tmp40, tmp41, tmp42, tmp48, tmp49, tmp50, tmp55, tmp56, tmp57, tmp58, tmp64, tmp65, tmp66];
   const tmp73 = hasOwnProperty(Svg, obj12);

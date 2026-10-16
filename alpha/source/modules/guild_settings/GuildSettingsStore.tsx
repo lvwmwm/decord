@@ -1,9 +1,9 @@
-// Module ID: 8864
-// Function ID: 8865
+// Module ID: 8865
+// Function ID: 8866
 // Name: GuildSettingsStore
-// Dependencies: [2083, 8843, 2072, 2086, 8725, 1406, 2090, 1392, 1087, 8865, 8287, 11, 8866, 1297, 584, 8868, 2082, 8869, 4761, 8870, 504, 12, 510, 2]
+// Dependencies: [2083, 8844, 2072, 2086, 8726, 1406, 2090, 1392, 1087, 8866, 8288, 11, 8867, 1297, 584, 8869, 2082, 8870, 4761, 8871, 504, 12, 510, 2]
 
-// Module 8864 (GuildSettingsStore)
+// Module 8865 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -15,18 +15,18 @@ import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
 import PlainRecord from "PlainRecord" /* 2083 */;
 import GuildRecord from "GuildRecord" /* 2086 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8865 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8866 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8868 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8869 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8870 */;
-import GuildProfileStore from "GuildProfileStore" /* 8843 */;
-import InviteRecord from "InviteRecord" /* 8725 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8866 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8867 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8869 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8870 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8871 */;
+import GuildProfileStore from "GuildProfileStore" /* 8844 */;
+import InviteRecord from "InviteRecord" /* 8726 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8287 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8288 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -70,8 +70,8 @@ function handleFormInit(type) {
     CLOSED = FormStates.OPEN;
     errors = {};
     c38 = null;
-    const obj6 = SnowflakeUtilsDefault;
-    roleId = obj6.castGuildIdAsEveryoneGuildRoleId(guildId);
+    const obj5 = SnowflakeUtilsDefault;
+    roleId = obj5.castGuildIdAsEveryoneGuildRoleId(guildId);
     NONE = guild.mfaLevel;
     obj = obj2;
     c12 = null;
@@ -83,15 +83,15 @@ function handleFormInit(type) {
       }
     }
     if (null != section) {
-      obj2 = { key: "landing", name: constants.LANDING };
-      const items = [obj2];
+      const items = [{ key: "landing", name: constants.LANDING }];
+      const obj3 = { key: "landing", name: constants.LANDING };
       if (section === constants.TAG_CUSTOMIZE) {
         const obj4 = { key: null, name: null };
-        ({ TAG: obj3.key, TAG: obj3.name } = constants);
+        ({ TAG: obj2.key, TAG: obj2.name } = constants);
         items.push(obj4);
       }
-      const obj5 = { key: section, name: section };
-      items.push(obj5);
+      const obj6 = { key: section, name: section };
+      items.push(obj6);
       c11 = { type: "stack", routes: items };
       const obj10 = { type: "stack", routes: items };
     }

@@ -1,9 +1,9 @@
-// Module ID: 17934
-// Function ID: 17935
+// Module ID: 17944
+// Function ID: 17945
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 558, 576, 1506, 5040, 17679, 2]
+// Dependencies: [19, 21, 558, 576, 1506, 5040, 17689, 2]
 
-// Module 17934 (ChannelDetailsScreen)
+// Module 17944 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1506 */;
@@ -13,7 +13,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const ChannelDetailsDefault = tmp4(17679);
+const ChannelDetailsDefault = tmp4(17689);
 const jsx = Fragment.jsx;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsScreen(navigation) {
@@ -60,18 +60,18 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   tmp8 = tmp9;
 }) : (function ChannelDetailsScreen(navigation) {
   navigation = navigation.navigation;
-  const obj = Link;
+  let obj = Link;
   const route = obj.useRoute();
   const search = route.params.search;
   const channelId = route.params.channelId;
   const expandTopic = route.params.expandTopic;
-  const items = [navigation];
+  let items = [navigation];
   const width = useBaseAppContainerDimensionsDefault().width;
   const callback = react.useCallback(() => {
     navigation.goBack();
   }, items);
   return jsx(ChannelDetailsDefault, { channelId, isSearchLocked: true === search, onBackPress: callback, componentWidth: width, onChannelDeleted: callback, expandTopic: true === expandTopic });
 }));
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsScreen.tsx");
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsScreen.tsx");
 
 export default memoResult;

@@ -1,34 +1,34 @@
-// Module ID: 17703
-// Function ID: 17704
+// Module ID: 17713
+// Function ID: 17714
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7537, 2068, 12921, 9549, 17704, 9548, 1087, 2075, 12907, 12932, 558, 576, 1386, 4867, 1128, 8717, 4865, 1505, 13019, 17705, 12910, 9574, 9592, 1123, 6162, 8613, 7236, 5164, 7701, 2002, 6142, 13880, 5475, 8413, 6369, 1114, 12928, 2]
+// Dependencies: [5, 19, 7538, 2068, 12929, 9550, 17714, 9549, 1087, 2075, 12915, 12940, 558, 576, 1386, 4867, 1128, 8718, 4865, 1505, 13027, 17715, 12918, 9573, 9591, 1123, 6163, 8614, 7238, 5165, 7702, 2002, 6143, 13891, 5476, 8414, 6371, 1114, 12936, 2]
 // Exports: useOnPressMediaItem
 
-// Module 17703 (useOnPressSearchItem)
+// Module 17713 (useOnPressSearchItem)
 import intl2 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import ToastUtils from "ToastUtils" /* 4867 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8717 */;
-import TrackingConstants from "TrackingConstants" /* 9548 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12907 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12928 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12932 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17704 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8718 */;
+import TrackingConstants from "TrackingConstants" /* 9549 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12915 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12936 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12940 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17714 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7537 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7538 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import SearchQueryStore from "SearchQueryStore" /* 12921 */;
-import SearchConstants from "SearchConstants" /* 9549 */;
+import SearchQueryStore from "SearchQueryStore" /* 12929 */;
+import SearchConstants from "SearchConstants" /* 9550 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
-let _require, c3, c4, c5, navigation;
+let _require, c3, c4, closure_3, conversationId, navigation;
 
 let c10;
 let c9;
@@ -37,7 +37,7 @@ let closure_15;
 let closure_16;
 let map1;
 let metroImportAll;
-const f150895 = async (arg0, value) => {
+const f150997 = async (arg0, value) => {
   let c2;
   closure_0 = arg0;
   if (c3 === 2) {
@@ -439,8 +439,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
     let c2;
     let obj9;
     closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -453,67 +453,60 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
       }
     } else {
       try {
-        let _var;
+        let guildId;
         let messageId;
+        let title;
         let channelId;
-        let conversationId;
-        c5 = 2;
-        if (0 === c4) {
+        c4 = 2;
+        if (0 === conversationId) {
           if (arg0 === 1) {
-            c5 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
-            _var = undefined;
+            let closure_2 = tmp;
+            navigation = tmp2;
+            guildId = undefined;
             messageId = undefined;
+            title = undefined;
             channelId = closure_0.channelId;
             ({ guildId: c1, messageId: c2 } = closure_0);
             const sourceId = closure_0.sourceId;
             const obj8 = closure_0(context[22]);
             const parseConversationIdResult = obj8.parseConversationId(sourceId);
-            conversationId = parseConversationIdResult;
             addCurrentSearchQueryToSearchHistory(closure_0);
+            conversationId = 1;
             c4 = 1;
-            c5 = 1;
             const obj4 = { value: obj9.fetchConversation(channelId, parseConversationIdResult), done: false };
             obj9 = closure_0(context[23]);
             return obj4;
           }
         } else if (arg0 === 1) {
-          c5 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c4 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const obj6 = closure_0(context[23]);
-          const conversationMessages = obj6.fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true, isStandalone: true });
-          if (null == ConversationPreviewStore.getConversation(conversationId)) {
+          title = conversation.getConversation(conversationId);
+          if (null == title) {
+            const tmp6 = globalThis;
             const _Error = Error;
             const self = this;
+            const str = "Conversation not found";
             const self2 = this;
             const error = new Error("Conversation not found");
             throw error;
           } else {
-            const obj7 = { channelId, guildId: _var, conversationId, title: _var, messageId };
-            const conversation = ConversationPreviewStore.getConversation(conversationId);
-            let title;
-            if (conversation != null) {
-              title = conversation.title;
-            }
-            _var = title;
-            if (title == null) {
-              const str = "";
-              _var = "";
-            }
-            obj = closure_0(context[10]);
-            const result = obj.performKeyboardAwareNavigation(() => {
+            const obj5 = closure_0(context[23]);
+            const result = obj5.setSelectedConversation(channelId, conversationId, { cacheType: "preview", shouldJump: false });
+            const obj6 = { channelId, guildId, conversationId, title: title.title, messageId };
+            const obj7 = closure_0(context[10]);
+            const result1 = obj7.performKeyboardAwareNavigation(() => {
               if (null != messageId) {
                 const navigate = navigation.navigate;
                 obj = { screen: closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params };
@@ -522,13 +515,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
                 navigation.navigate(closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params);
               }
             });
-            c5 = 3;
+            c4 = 3;
             return { value: "IconComponent", done: null };
           }
         }
-      } catch (tmp17) {
-        c5 = 3;
-        throw tmp17;
+      } catch (tmp9) {
+        c4 = 3;
+        throw tmp9;
       }
     }
   });
@@ -552,8 +545,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
     let c2;
     let obj9;
     closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -566,67 +559,60 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
       }
     } else {
       try {
-        let _var;
+        let guildId;
         let messageId;
+        let title;
         let channelId;
-        let conversationId;
-        c5 = 2;
-        if (0 === c4) {
+        c4 = 2;
+        if (0 === conversationId) {
           if (arg0 === 1) {
-            c5 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
-            _var = undefined;
+            let closure_2 = tmp;
+            navigation = tmp2;
+            guildId = undefined;
             messageId = undefined;
+            title = undefined;
             channelId = closure_0.channelId;
             ({ guildId: c1, messageId: c2 } = closure_0);
             const sourceId = closure_0.sourceId;
             const obj8 = closure_0(context[22]);
             const parseConversationIdResult = obj8.parseConversationId(sourceId);
-            conversationId = parseConversationIdResult;
             addCurrentSearchQueryToSearchHistory(closure_0);
+            conversationId = 1;
             c4 = 1;
-            c5 = 1;
             const obj4 = { value: obj9.fetchConversation(channelId, parseConversationIdResult), done: false };
             obj9 = closure_0(context[23]);
             return obj4;
           }
         } else if (arg0 === 1) {
-          c5 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c4 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const obj6 = closure_0(context[23]);
-          const conversationMessages = obj6.fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true, isStandalone: true });
-          if (null == ConversationPreviewStore.getConversation(conversationId)) {
+          title = conversation.getConversation(conversationId);
+          if (null == title) {
+            const tmp6 = globalThis;
             const _Error = Error;
             const self = this;
+            const str = "Conversation not found";
             const self2 = this;
             const error = new Error("Conversation not found");
             throw error;
           } else {
-            const obj7 = { channelId, guildId: _var, conversationId, title: _var, messageId };
-            const conversation = ConversationPreviewStore.getConversation(conversationId);
-            let title;
-            if (conversation != null) {
-              title = conversation.title;
-            }
-            _var = title;
-            if (title == null) {
-              const str = "";
-              _var = "";
-            }
-            obj = closure_0(context[10]);
-            const result = obj.performKeyboardAwareNavigation(() => {
+            const obj5 = closure_0(context[23]);
+            const result = obj5.setSelectedConversation(channelId, conversationId, { cacheType: "preview", shouldJump: false });
+            const obj6 = { channelId, guildId, conversationId, title: title.title, messageId };
+            const obj7 = closure_0(context[10]);
+            const result1 = obj7.performKeyboardAwareNavigation(() => {
               if (null != messageId) {
                 const navigate = navigation.navigate;
                 obj = { screen: closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params };
@@ -635,13 +621,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
                 navigation.navigate(closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params);
               }
             });
-            c5 = 3;
+            c4 = 3;
             return { value: "IconComponent", done: null };
           }
         }
-      } catch (tmp17) {
-        c5 = 3;
-        throw tmp17;
+      } catch (tmp9) {
+        c4 = 3;
+        throw tmp9;
       }
     }
   });
@@ -651,7 +637,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressGroupDMItem(searchContext) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressGroupDMItem(searchContext) {
   obj = searchContext(576);
   const cResult = obj.c(3);
   searchContext = searchContext.searchContext;
@@ -865,7 +851,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   const obj2 = searchContext(callback[19]);
   navigation = obj2.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f150895);
+  let closure_0 = _asyncToGenerator(f150997);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);
@@ -911,7 +897,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   obj = searchContext(callback[19]);
   navigation = obj.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f150895);
+  let closure_0 = _asyncToGenerator(f150997);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);

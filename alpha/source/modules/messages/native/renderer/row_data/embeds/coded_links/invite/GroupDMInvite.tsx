@@ -1,14 +1,14 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14227
+// Function ID: 14228
 // Name: GroupDMInvite
-// Dependencies: [2068, 4819, 1392, 7642, 8109, 9845, 1128, 14003, 1420, 5483, 2]
+// Dependencies: [2068, 4819, 1392, 7643, 8110, 9844, 1128, 14013, 1420, 5484, 2]
 // Exports: createGroupDMInvite
 
-// Module 14217 (GroupDMInvite)
+// Module 14227 (GroupDMInvite)
 import intl7 from "intl" /* 1128 */;
-import Constants from "Constants" /* 7642 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8109 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9845 */;
+import Constants from "Constants" /* 7643 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8110 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9844 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -72,7 +72,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   }
   let channelIconSource = null;
   if (null != channel) {
-    const tmp8Result = tmp8(14003);
+    const tmp8Result = tmp8(14013);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;
@@ -84,7 +84,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (flag) {
     channelName = null;
     if (null != channel) {
-      const tmp8Result5 = tmp8(5483);
+      const tmp8Result5 = tmp8(5484);
       channelName = tmp8Result5.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }
@@ -127,7 +127,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      const tmp8Result6 = tmp8(5483);
+      const tmp8Result6 = tmp8(5484);
       channelName1 = tmp8Result6.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }

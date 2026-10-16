@@ -1,29 +1,29 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 9185
+// Function ID: 9186
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 9144, 21, 1384, 5461, 1128, 5153, 587, 558, 576, 9176, 6849, 9178, 9185, 9186, 5149, 5091, 9189, 4852, 9191, 7075, 9193, 9103, 9109, 9196, 9157, 2]
+// Dependencies: [19, 17, 9145, 21, 1384, 5462, 1128, 5154, 587, 558, 576, 9177, 6851, 9179, 9186, 9187, 5150, 5091, 9190, 4852, 9192, 7077, 9194, 9104, 9110, 9197, 9158, 2]
 
-// Module 9184 (GameProfileAnnouncements)
+// Module 9185 (GameProfileAnnouncements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import DateUtils from "DateUtils" /* 4852 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import CustomMarkupAll from "CustomMarkup" /* 5461 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6849 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9103 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9109 */;
-import GameProfileConstants from "GameProfileConstants" /* 9144 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9176 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9186 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9189 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9196 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import CustomMarkupAll from "CustomMarkup" /* 5462 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6851 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9104 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9110 */;
+import GameProfileConstants from "GameProfileConstants" /* 9145 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9177 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9187 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9190 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9197 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let size;
 let size1;
 let size2;
 let tmp5;
-const GameProfileSkeletonCardRowDefault = tmp5(9185);
+const GameProfileSkeletonCardRowDefault = tmp5(9186);
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 const MAX_VISIBLE_ANNOUNCEMENTS = GameProfileConstants.MAX_VISIBLE_ANNOUNCEMENTS;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -105,7 +105,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     if (cResult[1] === tmp5) {
       tmp6 = cResult[2];
     }
-    const result = index * tmp(9176).SKELETON_CARD_ANIMATION_DELAY_MS;
+    const result = index * tmp(9177).SKELETON_CARD_ANIMATION_DELAY_MS;
     if (cResult[3] === tmp4.skeletonCardImage) {
       let tmp8;
       if (cResult[4] === tmp4.smallCardMedia) {
@@ -273,7 +273,7 @@ let closure_17 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     }
   }
   const obj2 = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: onPress(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) };
-  const GameProfileSectionSkeleton = tmp(9178).GameProfileSectionSkeleton;
+  const GameProfileSectionSkeleton = tmp(9179).GameProfileSectionSkeleton;
   const tmp11 = onPress(GameProfileSectionSkeleton, obj2);
   cResult[2] = tmp4.skeletonCardsContainer;
   cResult[3] = tmp4.skeletonCardsScroller;
@@ -495,10 +495,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
                 if (tmp85Result) {
                   const obj7 = { style: tmp4.reactionInfo, children: items3 };
                   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                  const ReactionIcon = tmp(9191).ReactionIcon;
+                  const ReactionIcon = tmp(9192).ReactionIcon;
                   items3 = [metroImportAll(ReactionIcon, obj8), ];
                   let tmp90 = null != obj14;
-                  const Text3 = tmp(5149).Text;
+                  const Text3 = tmp(5150).Text;
                   const reactionCount = message.reactionCount;
                   const tmp85 = React4;
                   const tmp86 = hasOwnProperty;
@@ -623,7 +623,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
         let tmp51 = null != embedSource.url;
         if (tmp51) {
           const obj16 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: embedSource.url };
-          tmp51 = metroImportAll(tmp(5149).Text, obj16);
+          tmp51 = metroImportAll(tmp(5150).Text, obj16);
         }
         cResult[28] = embedSource.url;
         cResult[29] = tmp51;
@@ -653,13 +653,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
                     let tmp64 = null != message.title;
                     if (tmp64) {
                       const obj17 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj14) };
-                      const Text = tmp(5149).Text;
+                      const Text = tmp(5150).Text;
                       tmp64 = metroImportAll(Text, obj17);
                     }
                     let tmp66 = message.body.length > 0;
                     if (tmp66) {
                       const obj18 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj14) };
-                      const Text2 = tmp(5149).Text;
+                      const Text2 = tmp(5150).Text;
                       tmp66 = metroImportAll(Text2, obj18);
                     }
                     str = "button";
@@ -906,10 +906,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
     if (tmp15Result2) {
       const obj21 = { style: tmp.reactionInfo, children: items6 };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const ReactionIcon = tmp38(9191).ReactionIcon;
+      const ReactionIcon = tmp38(9192).ReactionIcon;
       items6 = [metroImportAll(ReactionIcon, obj22), ];
       let tmp48 = null != obj14;
-      const Text4 = tmp38(5149).Text;
+      const Text4 = tmp38(5150).Text;
       const reactionCount = message.reactionCount;
       if (tmp48) {
         tmp48 = obj14.locale === tmp38(1128).intl.currentLocale;
@@ -1087,10 +1087,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                       if (tmp44Result) {
                         const obj7 = { style: tmp4.reactionInfo, children: items3 };
                         const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                        const ReactionIcon = tmp(9191).ReactionIcon;
+                        const ReactionIcon = tmp(9192).ReactionIcon;
                         items3 = [metroImportAll(ReactionIcon, obj8), ];
                         let tmp50 = null != obj14;
-                        const Text3 = tmp(5149).Text;
+                        const Text3 = tmp(5150).Text;
                         const reactionCount = message.reactionCount;
                         const tmp44 = React4;
                         const tmp45 = hasOwnProperty;
@@ -1176,13 +1176,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           let tmp29 = null != message.title;
           if (tmp29) {
             const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: parser(message.title, true, obj11) };
-            const Text = tmp(5149).Text;
+            const Text = tmp(5150).Text;
             tmp29 = metroImportAll(Text, obj12);
           }
           let tmp31 = message.body.length > 0;
           if (tmp31) {
             const obj13 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: parser(message.body, true, obj11) };
-            const Text2 = tmp(5149).Text;
+            const Text2 = tmp(5150).Text;
             tmp31 = metroImportAll(Text2, obj13);
           }
           cResult[0] = channelId;
@@ -1334,10 +1334,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
   if (tmp12Result) {
     const obj12 = { style: tmp.reactionInfo, children: items3 };
     const obj13 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const ReactionIcon = tmp29(9191).ReactionIcon;
+    const ReactionIcon = tmp29(9192).ReactionIcon;
     items3 = [metroImportAll(ReactionIcon, obj13), ];
     let tmp36 = null != obj14;
-    const Text4 = tmp29(5149).Text;
+    const Text4 = tmp29(5150).Text;
     const reactionCount = message.reactionCount;
     if (tmp36) {
       tmp36 = obj14.locale === tmp29(1128).intl.currentLocale;
@@ -1432,7 +1432,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
                             }
                             if (cResult[38] !== tmp32) {
                               const obj2 = { variant: "text-xs/medium", color: "text-muted", children: tmp32 };
-                              const tmp39 = onPress(message(5149).Text, obj2);
+                              const tmp39 = onPress(message(5150).Text, obj2);
                               cResult[38] = tmp32;
                               cResult[39] = tmp39;
                               tmp37 = tmp39;
@@ -1507,7 +1507,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
                           const obj6 = { createdAt: date, expiryLabel: tmpResult.getPollExpiryLabel(poll) };
                           const t0FTsH = tmp(1128).t.t0FTsH;
                           date = new Date(message.timestamp);
-                          tmpResult = message(9186);
+                          tmpResult = message(9187);
                           const formatResult = format(t0FTsH, obj6);
                           cResult[35] = message.timestamp;
                           cResult[36] = poll;
@@ -1529,7 +1529,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
                   let tmp26 = tmp8 > 0;
                   if (tmp26) {
                     const obj8 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.pollMoreOptions, children: intl.format(message(1128).t["mv/nIa"], obj9) };
-                    let Text = tmp(5149).Text;
+                    let Text = tmp(5150).Text;
                     intl = tmp(1128).intl;
                     obj9 = { count: tmp8 };
                     tmp26 = onPress(Text, obj8);
@@ -1560,7 +1560,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
       const cardBody = tmp4.cardBody;
       if (cResult[23] !== poll.question.text) {
         const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-        const tmp22 = onPress(message(5149).Text, obj10);
+        const tmp22 = onPress(message(5150).Text, obj10);
         cResult[23] = poll.question.text;
         cResult[24] = tmp22;
         tmp20 = tmp22;
@@ -1679,7 +1679,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
     };
     obj3 = { style: tmp.cardBody, children: items };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    items = [onPress(message(5149).Text, obj4), , ];
+    items = [onPress(message(5150).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: items1 };
     items1 = [
       substr.map((poll_media) => {
@@ -1700,7 +1700,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
     const tmp8 = closure_6;
     if (tmp7Result) {
       let obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.pollMoreOptions, children: intl.format(message(1128).t["mv/nIa"], obj6) };
-      let Text = tmp11(5149).Text;
+      let Text = tmp11(5150).Text;
       intl = tmp11(1128).intl;
       obj6 = { count: diff };
       tmp7Result = tmp7(Text, obj);
@@ -1709,7 +1709,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
     items[1] = closure_9(closure_5, obj5);
     const obj7 = { style: tmp.metadataRow, children: onPress(Text2, obj8) };
     obj8 = { variant: "text-xs/medium", color: "text-muted", children: format(t0FTsH, obj9) };
-    Text2 = tmp11(5149).Text;
+    Text2 = tmp11(5150).Text;
     const intl2 = tmp11(1128).intl;
     format = intl2.format;
     const _Date = Date;
@@ -1718,7 +1718,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
     obj9 = { createdAt: date, expiryLabel: tmp11Result.getPollExpiryLabel(poll) };
     t0FTsH = tmp11(1128).t.t0FTsH;
     date = new Date(message.timestamp);
-    tmp11Result = message(9186);
+    tmp11Result = message(9187);
     items[2] = onPress(closure_5, obj7);
     return onPress(tmp8, obj2);
   }

@@ -1,22 +1,22 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7630
+// Function ID: 7631
 // Name: utils/QuestUtils
-// Dependencies: [32, 5172, 2090, 4809, 5174, 7630, 6190, 7631, 7632, 6125, 7633, 7634, 2]
+// Dependencies: [32, 5173, 2090, 4809, 5175, 7631, 6191, 7632, 7633, 6126, 7634, 7635, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7629 (utils/QuestUtils)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6125 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7631 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7632 */;
-import QuestType2 from "QuestType" /* 7633 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7634 */;
+// Module 7630 (utils/QuestUtils)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6126 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7632 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7633 */;
+import QuestType2 from "QuestType" /* 7634 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5172 */;
+import GameConsoleStore from "GameConsoleStore" /* 5173 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
-import QuestUtmStore from "QuestUtmStore" /* 7630 */;
-import QuestConstants from "QuestConstants" /* 6190 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
+import QuestUtmStore from "QuestUtmStore" /* 7631 */;
+import QuestConstants from "QuestConstants" /* 6191 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -112,13 +112,13 @@ export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHer
   return flag;
 };
 export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFilters(filters) {
-  const f97436 = (group) => "task" === group.group;
-  const f97437 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
-  let tmp2 = !filters.some(f97436);
-  filters.some(f97436);
+  const f97499 = (group) => "task" === group.group;
+  const f97500 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
+  let tmp2 = !filters.some(f97499);
+  filters.some(f97499);
   if (tmp2) {
-    tmp2 = 0 === filters.length || filters.some(f97437);
-    0 === filters.length || filters.some(f97437);
+    tmp2 = 0 === filters.length || filters.some(f97500);
+    0 === filters.length || filters.some(f97500);
   }
   return tmp2;
 };

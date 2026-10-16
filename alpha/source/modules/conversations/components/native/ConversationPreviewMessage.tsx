@@ -1,19 +1,19 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9608
+// Function ID: 9609
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 5143, 2128, 21, 7966, 8489, 5153, 587, 558, 576, 504, 5471, 8200, 2044, 4852, 1202, 5149, 9610, 2]
+// Dependencies: [19, 17, 5144, 2128, 21, 7967, 8490, 5154, 587, 558, 576, 504, 5472, 8201, 2044, 4852, 1202, 5150, 9609, 2]
 
-// Module 9609 (ConversationPreviewMessage)
+// Module 9608 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4852 */;
-import RowGeneratorDefault from "RowGenerator" /* 7966 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8489 */;
+import RowGeneratorDefault from "RowGenerator" /* 7967 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8490 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,20 +82,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     }
     const tmpResult6 = message(504);
     const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp11, tmp12);
-    const tmpResult7 = message(5471);
+    const tmpResult7 = message(5472);
     const name = tmpResult7.useName(guildId, channelId, message.author);
     if (cResult[7] === stateFromStores1) {
       if (cResult[8] === stateFromStores) {
         tmp15 = cResult[9];
       }
       let colorStrings;
-      const useProcessColorStringsArray = message(8200).useProcessColorStringsArray;
-      message(8200);
+      const useProcessColorStringsArray = message(8201).useProcessColorStringsArray;
+      message(8201);
       if (stateFromStores1 != null) {
         colorStrings = stateFromStores1.colorStrings;
       }
       const processColorStringsArray = useProcessColorStringsArray(colorStrings);
-      const tmpResult9 = message(8200);
+      const tmpResult9 = message(8201);
       const isRoleStyleAndRoleColorsEligibleForERC = tmpResult9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, message.author.id, stateFromStores, processColorStringsArray);
       const TimestampHourCycle = tmp(2044).TimestampHourCycle;
       const setting = TimestampHourCycle.useSetting();
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                             }
                             if (cResult[35] !== message) {
                               const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };
-                              const tmp57 = closure_7(guildId(9610), obj2);
+                              const tmp57 = closure_7(guildId(9609), obj2);
                               cResult[35] = message;
                               cResult[36] = tmp57;
                               tmp52 = tmp57;
@@ -183,7 +183,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                       tmp48 = tmp51;
                     }
                     const obj5 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp4.headerTimestamp, children: tmp28 };
-                    const tmp47 = closure_7(message(5149).Text, obj5);
+                    const tmp47 = closure_7(message(5150).Text, obj5);
                     cResult[27] = tmp4.headerTimestamp;
                     cResult[28] = tmp28;
                     cResult[29] = tmp47;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
               }
             }
             const obj7 = { variant: "text-md/medium", lineClamp: 1, style: tmp15, gradientColors: tmp37, children: name };
-            const tmp40 = closure_7(message(5149).Text, obj7);
+            const tmp40 = closure_7(message(5150).Text, obj7);
             cResult[19] = tmp15;
             cResult[20] = name;
             cResult[21] = tmp37;

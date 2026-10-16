@@ -1,27 +1,25 @@
 // Module ID: 8063
 // Function ID: 8064
-// Dependencies: [8048]
+// Dependencies: [8049]
 
 // Module 8063
-import _mod8048 from "module_8048" /* 8048 */;
+import _mod8049 from "module_8049" /* 8049 */;
 
 let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod8048;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      includes = includes.includes;
+      const obj = _mod8049;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
-    return tmp;
+    return hasItem;
   },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };
-let c2 = 0;
-let c3 = "<?xpacket begin";
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
 
 export default obj;

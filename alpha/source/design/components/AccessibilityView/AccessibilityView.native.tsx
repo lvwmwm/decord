@@ -1,13 +1,13 @@
-// Module ID: 5421
-// Function ID: 5422
+// Module ID: 5422
+// Function ID: 5423
 // Name: AccessibilityView
-// Dependencies: [109, 19, 17, 21, 558, 576, 5422, 4909, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 5423, 4909, 2]
 
-// Module 5421 (AccessibilityView)
+// Module 5422 (AccessibilityView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5422 */;
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 5423 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

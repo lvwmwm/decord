@@ -1,9 +1,9 @@
-// Module ID: 17465
-// Function ID: 17466
+// Module ID: 17475
+// Function ID: 17476
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 9915, 16056, 21, 5153, 587, 558, 576, 17466, 4909, 5440, 504, 5119, 13508, 9916, 1128, 8998, 17464, 1202, 5036, 7793, 2]
+// Dependencies: [19, 17, 9916, 16070, 21, 5154, 587, 558, 576, 17476, 4909, 5441, 504, 5119, 13516, 9917, 1128, 8999, 17474, 1202, 5036, 7794, 2]
 
-// Module 17465 (YouBarNotificationsButton)
+// Module 17475 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,18 +12,18 @@ import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import RootNavigationRef from "RootNavigationRef" /* 5036 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import spring from "spring" /* 5440 */;
-import IconButton2 from "IconButton" /* 7793 */;
-import BellIcon2 from "BellIcon" /* 8998 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9916 */;
-import showForLaterModal from "showForLaterModal" /* 13508 */;
-import YouBarButton from "YouBarButton" /* 17464 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17466 */;
+import spring from "spring" /* 5441 */;
+import IconButton2 from "IconButton" /* 7794 */;
+import BellIcon2 from "BellIcon" /* 8999 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9917 */;
+import showForLaterModal from "showForLaterModal" /* 13516 */;
+import YouBarButton from "YouBarButton" /* 17474 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17476 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9915 */;
-import YouBarConstants from "YouBarConstants" /* 16056 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9916 */;
+import YouBarConstants from "YouBarConstants" /* 16070 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -245,7 +245,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     }
                   }
                   const obj7 = { children: closure_8(IconButton2.IconButton, obj9) };
-                  const YouBarButtonContainer = tmp(17464).YouBarButtonContainer;
+                  const YouBarButtonContainer = tmp(17474).YouBarButtonContainer;
                   obj9 = { accessibilityLabel: tmp19, accessibilityActions: tmp13, onAccessibilityAction: tmp14, variant: str4, size: "sm", icon: tmp30, onPress: tmp34, onLongPress: tmp12, hitSlop };
                   cResult[28] = tmp19;
                   cResult[29] = str4;
@@ -317,7 +317,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(17466)().value;
+  const value = onLongPress(17476)().value;
   _require = value;
   let obj = require("ReanimatedRexport");
   const fn = function u() {
@@ -379,7 +379,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items1);
   const obj4 = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(8998).BellIcon;
+  const BellIcon = tmp4(8999).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj5 = { count: stateFromStores };
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1128).t.yBmFPA, obj5);
   }
-  const YouBarButtonContainer = tmp4(17464).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(17474).YouBarButtonContainer;
   const obj6 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
@@ -412,7 +412,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     hitSlop
   };
   str4 = "secondary-overlay";
-  const IconButton = tmp4(7793).IconButton;
+  const IconButton = tmp4(7794).IconButton;
   if (!hasNameplate) {
     let str5 = "tertiary";
     if (value > 0) {

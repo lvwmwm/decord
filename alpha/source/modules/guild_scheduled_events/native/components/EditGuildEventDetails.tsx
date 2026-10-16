@@ -1,21 +1,21 @@
-// Module ID: 8872
-// Function ID: 8873
+// Module ID: 8873
+// Function ID: 8874
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6272, 2074, 21, 5153, 1128, 558, 576, 4761, 8747, 1505, 1896, 8746, 4887, 5149, 5441, 8861, 8769, 8767, 2]
+// Dependencies: [32, 19, 6273, 2074, 21, 5154, 1128, 558, 576, 4761, 8748, 1505, 1896, 8747, 4887, 5150, 5442, 8862, 8770, 8768, 2]
 
-// Module 8872 (EditGuildEventDetails)
+// Module 8873 (EditGuildEventDetails)
 import intl8 from "intl" /* 1128 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import _modDef4761 from "module_4761" /* 4761 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6272 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8746 */;
-import ScheduleUtils from "ScheduleUtils" /* 8747 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6273 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8747 */;
+import ScheduleUtils from "ScheduleUtils" /* 8748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -538,7 +538,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f100158 = () => {
+  const f100221 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef4761(scheduledStartTime), recurrenceRule);
   };
@@ -568,8 +568,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f100158), 2);
-  const tmp4 = recurrenceRule(memo.useState(f100158), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f100221), 2);
+  const tmp4 = recurrenceRule(memo.useState(f100221), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[9])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

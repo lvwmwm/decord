@@ -1,25 +1,25 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16184
+// Function ID: 16185
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5143, 6190, 16053, 21, 5153, 558, 16166, 16050, 576, 9242, 16171, 504, 1384, 5091, 4886, 9419, 2]
+// Dependencies: [19, 17, 5144, 6191, 16067, 21, 5154, 558, 16180, 16064, 576, 9243, 16185, 504, 1384, 5091, 4886, 9420, 2]
 
-// Module 16170 (QuestDockBountyIllustration)
+// Module 16184 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import QuestConstants from "QuestConstants" /* 6190 */;
-import APNGPlayer2 from "APNGPlayer" /* 9242 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9419 */;
-import QuestDockHooks from "QuestDockHooks" /* 16050 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16166 */;
-import _modDef16171 from "module_16171" /* 16171 */;
+import QuestConstants from "QuestConstants" /* 6191 */;
+import APNGPlayer2 from "APNGPlayer" /* 9243 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9420 */;
+import QuestDockHooks from "QuestDockHooks" /* 16064 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16180 */;
+import _modDef16185 from "module_16185" /* 16185 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import QuestDockConstants from "QuestDockConstants" /* 16053 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import QuestDockConstants from "QuestDockConstants" /* 16067 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -290,7 +290,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     const effect = obj2.useEffect(tmp7, tmp8);
     if (cResult[4] !== tmp4.fill) {
       const APNGPlayer = APNGPlayer2.APNGPlayer;
-      const tmp13 = <APNGPlayer ref={ref} url={_modDef16171} style={tmp4.fill} autoplay={false} />;
+      const tmp13 = <APNGPlayer ref={ref} url={_modDef16185} style={tmp4.fill} autoplay={false} />;
       cResult[4] = tmp4.fill;
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -328,7 +328,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef16171} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef16185} style={tmp.fill} autoplay={false} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDock3DOrbsIllustration() {
@@ -369,7 +369,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef16171 };
+      const obj3 = { uri: _modDef16185 };
       cResult[4] = obj3;
       tmp10 = obj3;
     } else {
@@ -406,7 +406,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     tmp6Result = tmp6(closure_12, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp5, accessible: false };
-    obj4 = { uri: _modDef16171 };
+    obj4 = { uri: _modDef16185 };
     const tmp8 = FastImageDefault;
     tmp6Result = tmp6(tmp8, obj3);
   }
@@ -463,7 +463,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const BountiesMobileQuestBarExperiment = tmp(9419).BountiesMobileQuestBarExperiment;
+  const BountiesMobileQuestBarExperiment = tmp(9420).BountiesMobileQuestBarExperiment;
   const illustration = BountiesMobileQuestBarExperiment.useConfig(first).illustration;
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     let tmp23;

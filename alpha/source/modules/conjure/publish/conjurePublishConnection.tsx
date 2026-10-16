@@ -1,15 +1,15 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 10986
+// Function ID: 10987
 // Name: conjurePublishConnection
-// Dependencies: [10900, 10916, 584, 10978, 10921, 2]
-// Exports: draftPatchNotes, publishProject, recordPatchNotesSent, rejectPendingPublish
+// Dependencies: [10897, 10913, 584, 10975, 10918, 2]
+// Exports: draftPatchNotes, preparePublish, publishProject, recordPatchNotesSent, rejectPendingPublish
 
-// Module 10989 (conjurePublishConnection)
+// Module 10986 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10921 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10978 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10916 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10918 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10975 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPatchNotesDraft(projectId, arg1) {
@@ -159,6 +159,13 @@ let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishC
 
 export const publishFrameHandlers = obj;
 export const publishStepHandlers = obj2;
+export const preparePublish = function preparePublish(projectId) {
+  const obj = conjureProjectSockets;
+  const conjureSocket = obj.getConjureSocket(projectId);
+  if (conjureSocket != null) {
+    conjureSocket.sendPreparePublish();
+  }
+};
 export const publishProject = function publishProject(id) {
   const projectId = id;
   let c1 = false;

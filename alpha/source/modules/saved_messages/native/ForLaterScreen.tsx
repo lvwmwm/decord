@@ -1,23 +1,23 @@
-// Module ID: 13511
-// Function ID: 13512
+// Module ID: 13519
+// Function ID: 13520
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 9915, 21, 5153, 587, 558, 576, 4909, 5440, 13512, 9916, 504, 7075, 7100, 1275, 9202, 1104, 13516, 13536, 7036, 2]
+// Dependencies: [32, 19, 17, 9916, 21, 5154, 587, 558, 576, 4909, 5441, 13520, 9917, 504, 7077, 7102, 1275, 9203, 1104, 13524, 13544, 7038, 2]
 
-// Module 13511 (ForLaterScreen)
+// Module 13519 (ForLaterScreen)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9202 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13512 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13516 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 13536 */;
+import spring from "spring" /* 5441 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7077 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9203 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13520 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13524 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 13544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9915 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9916 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -184,7 +184,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmp4 = closure_10();
   ({ savedMessages, fetchState, loadMore } = useSavedMessagesForPageDefault(type));
   useSavedMessagesForPageDefault(type);
-  const LOADING = throttledNow(9916).BookmarksFetchState.LOADING;
+  const LOADING = throttledNow(9917).BookmarksFetchState.LOADING;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SavedMessagesStore];
     const fn = function _() {
@@ -201,11 +201,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmpResult = throttledNow(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp8);
   ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
-  if (type !== throttledNow(9916).SavedMessageSortTypes.BOOKMARK) {
+  if (type !== throttledNow(9917).SavedMessageSortTypes.BOOKMARK) {
     bookmarkCount = savedMessages.length;
   }
   const tmp5Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp5Result(tmp5(7100).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp5Result(tmp5(7102).FOR_LATER_POPOUT).analyticsLocations;
   if (cResult[2] === overdueReminderCount) {
     if (cResult[3] === bookmarkCount) {
       let tmp12;
@@ -366,7 +366,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmp4 = useSavedMessagesForPageDefault(type);
   ({ savedMessages, fetchState } = tmp4);
   const loadMore = tmp4.loadMore;
-  const LOADING = throttledNow(9916).BookmarksFetchState.LOADING;
+  const LOADING = throttledNow(9917).BookmarksFetchState.LOADING;
   let obj = throttledNow(504);
   const items = [SavedMessagesStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -374,11 +374,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
     return obj;
   });
   ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
-  if (type !== throttledNow(9916).SavedMessageSortTypes.BOOKMARK) {
+  if (type !== throttledNow(9917).SavedMessageSortTypes.BOOKMARK) {
     bookmarkCount = savedMessages.length;
   }
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(7100).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp2Result(tmp2(7102).FOR_LATER_POPOUT).analyticsLocations;
   const obj2 = { type: throttledNow(1275).ImpressionTypes.MODAL, name: throttledNow(1275).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
   const items1 = [bookmarkCount, overdueReminderCount];
   const tmp2Result2 = useTrackImpressionDefault;
@@ -400,9 +400,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   if (0 === savedMessages.length) {
     if (fetchState !== LOADING) {
       let tmp20;
-      if (fetchState !== throttledNow(9916).BookmarksFetchState.LOADED_HAS_MORE) {
+      if (fetchState !== throttledNow(9917).BookmarksFetchState.LOADED_HAS_MORE) {
         const obj3 = { value: analyticsLocations, children: closure_8(ForLaterIntroDefault, obj4) };
-        const AnalyticsLocationProvider = tmp5(7075).AnalyticsLocationProvider;
+        const AnalyticsLocationProvider = tmp5(7077).AnalyticsLocationProvider;
         obj4 = { type };
         tmp20 = closure_8(AnalyticsLocationProvider, obj3);
       }
@@ -413,10 +413,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   } else {
     const obj6 = { value: analyticsLocations, children: closure_8(tmp24, obj7) };
     obj7 = { style: tmp.listContainer, children: closure_8(FlashList, obj8) };
-    const AnalyticsLocationProvider2 = tmp5(7075).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider2 = tmp5(7077).AnalyticsLocationProvider;
     obj8 = { data: savedMessages, renderItem: tmp15, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll, onEndReached: loadMore, ListFooterComponent: tmp23Result };
     tmp23Result = null;
-    FlashList = tmp5(7036).FlashList;
+    FlashList = tmp5(7038).FlashList;
     tmp24 = closure_6;
     if (fetchState === LOADING) {
       const obj9 = { style: tmp.loading };

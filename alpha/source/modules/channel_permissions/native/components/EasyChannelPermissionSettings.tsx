@@ -1,22 +1,22 @@
-// Module ID: 17896
-// Function ID: 17897
+// Module ID: 17906
+// Function ID: 17907
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17897, 2068, 2128, 2122, 2090, 4809, 4819, 1392, 7709, 1087, 21, 5153, 587, 558, 576, 1505, 11106, 504, 8830, 8831, 8832, 1128, 5483, 5361, 8847, 4814, 5439, 7117, 6487, 7787, 10858, 6402, 11104, 6429, 5168, 8758, 9004, 17898, 17900, 2]
+// Dependencies: [32, 5, 19, 17, 17907, 2068, 2128, 2122, 2090, 4809, 4819, 1392, 7710, 1087, 21, 5154, 587, 558, 576, 1505, 11103, 504, 8831, 8832, 8833, 1128, 5484, 5362, 8848, 4814, 5440, 7119, 6489, 7788, 10855, 6404, 11101, 6431, 5169, 8759, 9005, 17908, 17910, 2]
 
-// Module 17896 (EasyChannelPermissionSettings)
+// Module 17906 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7709 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8830 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8831 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8847 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11104 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5169 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5362 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7710 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8831 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8832 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8848 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11101 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17897 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17907 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
@@ -26,7 +26,7 @@ import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -508,7 +508,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: memo.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return isAppBarToggleOpen(ChannelOverwritesItemDefault, obj, item.id);
+              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup3 = tmp2(tmp3[32]).TableRowGroup;
@@ -518,7 +518,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: existingMembersRows.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return isAppBarToggleOpen(ChannelOverwritesItemDefault, obj, item.id);
+              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup4 = tmp2(tmp3[32]).TableRowGroup;

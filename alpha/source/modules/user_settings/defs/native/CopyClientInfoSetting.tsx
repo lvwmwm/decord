@@ -1,23 +1,23 @@
-// Module ID: 16538
-// Function ID: 16539
+// Module ID: 16552
+// Function ID: 16553
 // Name: CopyClientInfoSetting
-// Dependencies: [10732, 21, 1383, 5118, 12431, 7107, 4867, 558, 576, 7062, 1128, 7116, 7120, 5104, 5130, 11006, 6338, 2044, 2]
+// Dependencies: [10729, 21, 1383, 5118, 12437, 7109, 4867, 558, 576, 7064, 1128, 7118, 7122, 5104, 5130, 11003, 6340, 2044, 2]
 // Exports: getClientInfoString
 
-// Module 16538 (CopyClientInfoSetting)
+// Module 16552 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import ToastUtils from "ToastUtils" /* 4867 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import DeviceUtils from "DeviceUtils" /* 5130 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6338 */;
-import ClipboardUtils from "ClipboardUtils" /* 7107 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12431 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10732 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6340 */;
+import ClipboardUtils from "ClipboardUtils" /* 7109 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12437 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10729 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,9 +25,9 @@ let hasOwnProperty;
 let tmp;
 const intl8 = tmp(1128);
 const CopyIcon = tmp(5104);
-const BottomSheetTitleHeader2 = tmp(7062);
-const ActionSheetRow7 = tmp(7116);
-const ActionSheet2 = tmp(7120);
+const BottomSheetTitleHeader2 = tmp(7064);
+const ActionSheetRow7 = tmp(7118);
+const ActionSheet2 = tmp(7122);
 function getClientInfo() {
   let str10;
   const overrides = BuildOverrideStore.getCurrentBuildOverride().overrides;

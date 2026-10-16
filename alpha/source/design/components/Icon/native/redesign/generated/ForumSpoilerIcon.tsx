@@ -1,14 +1,14 @@
-// Module ID: 8436
-// Function ID: 8437
+// Module ID: 8437
+// Function ID: 8438
 // Name: ForumSpoilerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8407, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8408, 4876, 2]
 
-// Module 8436 (ForumSpoilerIcon)
+// Module 8437 (ForumSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8407 */;
+import AssetRegistry from "AssetRegistry" /* 8408 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

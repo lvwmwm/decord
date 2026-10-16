@@ -1,9 +1,9 @@
-// Module ID: 12254
-// Function ID: 12255
+// Module ID: 12260
+// Function ID: 12261
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4996, 21, 5153, 587, 558, 576, 1128, 5090, 5028, 5026, 1384, 12255, 12241, 2]
+// Dependencies: [19, 4996, 21, 5154, 587, 558, 576, 1128, 5090, 5028, 5026, 1384, 12261, 12247, 2]
 
-// Module 12254 (chat_input/ChatInputNativeComponent)
+// Module 12260 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,10 +12,10 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ColorUtils from "ColorUtils" /* 5026 */;
 import shared from "shared" /* 5028 */;
 import useTheme from "useTheme" /* 5090 */;
-import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12241 */;
+import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12247 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNat
     num6 = 1;
   }
   if (maxHeight == null) {
-    maxHeight = tmp10(12255)(onMaxHeightChanged);
+    maxHeight = tmp10(12261)(onMaxHeightChanged);
   }
   if (cResult[4] === tmp16) {
     if (cResult[5] === accessible) {
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNat
     num2 = 1;
   }
   const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };
-  const tmp14 = tmp10(12255)(onMaxHeightChanged);
+  const tmp14 = tmp10(12261)(onMaxHeightChanged);
   const _default = ChatInputNativeComponent2.default;
   const tmp15 = jsx;
   if (maxHeight == null) {

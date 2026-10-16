@@ -1,12 +1,12 @@
-// Module ID: 8685
-// Function ID: 8686
+// Module ID: 8686
+// Function ID: 8687
 // Name: SpotifyConstants
-// Dependencies: [1087, 5981, 1384, 2]
+// Dependencies: [1087, 5982, 1384, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8685 (SpotifyConstants)
+// Module 8686 (SpotifyConstants)
 import Constants from "Constants" /* 1087 */;
-import Platforms from "Platforms" /* 5981 */;
+import Platforms from "Platforms" /* 5982 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

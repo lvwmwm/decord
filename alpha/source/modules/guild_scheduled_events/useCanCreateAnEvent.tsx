@@ -1,12 +1,12 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8880
+// Function ID: 8881
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 4807, 2090, 4809, 1087, 558, 576, 8801, 504, 2]
+// Dependencies: [32, 4807, 2090, 4809, 1087, 558, 576, 8802, 504, 2]
 
-// Module 8879 (useCanCreateAnEvent)
+// Module 8880 (useCanCreateAnEvent)
 import Constants from "Constants" /* 1087 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4807 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8801 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8802 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;

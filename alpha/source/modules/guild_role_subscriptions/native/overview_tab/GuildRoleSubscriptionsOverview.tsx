@@ -1,19 +1,19 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17621
+// Function ID: 17622
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5975, 5002, 2090, 21, 5149, 558, 576, 1128, 17612, 9635, 17613, 16187, 573, 7174, 6245, 5362, 1114, 2]
+// Dependencies: [19, 5976, 5002, 2090, 21, 5150, 558, 576, 1128, 17622, 9634, 17623, 16201, 573, 7176, 6246, 5363, 1114, 2]
 
-// Module 17611 (GuildRoleSubscriptionsOverview)
+// Module 17621 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9635 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17612 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9634 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17622 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5002 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,8 +21,8 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(16187);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(17613);
+const GroupListingsFetchContext = tmp(16201);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(17623);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }

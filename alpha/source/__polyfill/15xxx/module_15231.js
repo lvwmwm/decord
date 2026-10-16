@@ -1,30 +1,10 @@
 // Module ID: 15231
 // Function ID: 15232
-// Dependencies: [15144, 15232]
-// Exports: getSupportedTimeZones
+// Dependencies: []
+// Exports: shouldPolyfill
 
 // Module 15231
-const require = globalThis.__r;
-let _require;
 
-
-export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
-  _require = locale;
-  const timezones = require("module_15232").timezones;
-  return timezones.filter((item) => {
-    function isSupported(timeZone, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const obj = { timeZone };
-        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
-        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
-      } catch (err) {
-        return false;
-      }
-    }
-    return isSupported(item, locale);
-  });
+export const shouldPolyfill = function shouldPolyfill() {
+  return !("supportedValuesOf" in Intl);
 };

@@ -1,10 +1,10 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13765
+// Function ID: 13766
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2072, 4819, 1392, 21, 5153, 587, 5118, 8782, 2002, 1128, 5483, 9470, 5149, 1202, 8808, 2]
+// Dependencies: [5, 32, 19, 17, 2072, 4819, 1392, 21, 5154, 587, 5118, 8783, 2002, 1128, 5484, 9471, 5150, 1202, 8809, 2]
 // Exports: default
 
-// Module 13754 (WebhookGuildChannelSelector)
+// Module 13765 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -17,7 +17,7 @@ import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, v3;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8782, dependencyMap.paths);
+      const tmp8 = asyncRequire(8783, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);

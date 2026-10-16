@@ -1,12 +1,12 @@
-// Module ID: 13035
-// Function ID: 13036
+// Module ID: 13043
+// Function ID: 13044
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [558, 6127, 6139, 7220, 2]
+// Dependencies: [558, 6128, 6140, 7222, 2]
 
-// Module 13035 (useIsMessageRequestRestrictedViewer)
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6127 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6139 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7220 */;
+// Module 13043 (useIsMessageRequestRestrictedViewer)
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6128 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6140 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7222 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

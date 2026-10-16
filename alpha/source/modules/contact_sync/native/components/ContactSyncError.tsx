@@ -1,14 +1,14 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13294
+// Function ID: 13295
 // Name: ContactSyncError
-// Dependencies: [19, 21, 5153, 558, 576, 4909, 5154, 5149, 2]
+// Dependencies: [19, 21, 5154, 558, 576, 4909, 5155, 5150, 2]
 
-// Module 13286 (ContactSyncError)
+// Module 13294 (ContactSyncError)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,10 +40,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyn
     return obj;
   };
   const tmpResult = tmp(4909);
-  fn.__closure = { withTiming: tmp(5154).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
+  fn.__closure = { withTiming: tmp(5155).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
   fn.__workletHash = 14558247431913;
   fn.__initData = __initData;
-  ({ withTiming: tmp(5154).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
+  ({ withTiming: tmp(5155).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyn
         cResult[9] = tmp14;
         tmp11 = tmp14;
       }
-      const tmp10 = jsx(tmp(5149).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
+      const tmp10 = jsx(tmp(5150).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
       let num = 4;
       cResult[4] = error;
       cResult[5] = tmp4.error;

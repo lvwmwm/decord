@@ -1,10 +1,10 @@
-// Module ID: 8548
-// Function ID: 8549
+// Module ID: 8549
+// Function ID: 8550
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1392, 1087, 584, 1297, 5947, 5952, 1257, 569, 1104, 2]
+// Dependencies: [5, 1392, 1087, 584, 1297, 5948, 5953, 1257, 569, 1104, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8548 (BadgeDirectoryActionCreators)
+// Module 8549 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;

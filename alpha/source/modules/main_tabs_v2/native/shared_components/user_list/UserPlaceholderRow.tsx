@@ -1,18 +1,18 @@
-// Module ID: 8918
-// Function ID: 8919
+// Module ID: 8919
+// Function ID: 8920
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5143, 21, 5153, 587, 558, 576, 4909, 504, 5154, 5157, 2]
+// Dependencies: [19, 17, 5144, 21, 5154, 587, 558, 576, 4909, 504, 5155, 5158, 2]
 
-// Module 8918 (UserPlaceholderRow)
+// Module 8919 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import timingPresets from "timingPresets" /* 5157 */;
+import timing from "timing" /* 5155 */;
+import timingPresets from "timingPresets" /* 5158 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

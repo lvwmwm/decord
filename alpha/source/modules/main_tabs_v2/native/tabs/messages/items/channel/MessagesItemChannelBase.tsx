@@ -1,25 +1,25 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 17097
+// Function ID: 17098
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5169, 6253, 4819, 2119, 6184, 1392, 1087, 21, 5153, 587, 558, 576, 504, 17084, 8569, 1384, 7236, 5164, 10531, 8876, 9252, 17085, 9550, 8611, 17086, 9248, 17087, 6407, 2]
+// Dependencies: [19, 17, 5170, 6254, 4819, 2119, 6185, 1392, 1087, 21, 5154, 587, 558, 576, 504, 17098, 8570, 1384, 7238, 5165, 10532, 8877, 9253, 17099, 9551, 8612, 17100, 9249, 17101, 6409, 2]
 
-// Module 17083 (MessagesItemChannelBase)
+// Module 17097 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import transitionToChannel from "transitionToChannel" /* 5164 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10531 */;
+import transitionToChannel from "transitionToChannel" /* 5165 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10532 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -215,7 +215,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -237,7 +237,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -257,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -275,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -295,7 +295,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -304,9 +304,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult9 = channel(504);
     const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(17084)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(17098)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(17084)(channel.id);
+    setIsPressed(17098)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {
@@ -319,7 +319,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -339,7 +339,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "Array", activities: "test" };
+            obj3 = { status: "Symbol", activities: "current" };
           }
           return obj3;
         }
@@ -480,7 +480,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const tmpResult13 = channel(8569);
+    const tmpResult13 = channel(8570);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {
@@ -601,7 +601,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "Array", activities: "test" };
+      obj3 = { status: "Symbol", activities: "current" };
     }
     return obj3;
   });

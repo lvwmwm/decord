@@ -1,18 +1,25 @@
 // Module ID: 15292
 // Function ID: 15293
-// Dependencies: [15290]
+// Dependencies: [15258, 15279, 15293, 15303, 15304]
 
 // Module 15292
-import _mod15290 from "module_15290" /* 15290 */;
+import _mod15258 from "module_15258" /* 15258 */;
+import _mod15279 from "module_15279" /* 15279 */;
+import f2 from "f" /* 15293 */;
+import _mod15303 from "module_15303" /* 15303 */;
+import _mod15304 from "module_15304" /* 15304 */;
 
-
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15290(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+function ownKeys(arg0) {
+  const obj = f2;
+  const fResult = obj.f(_mod15303(arg0));
+  const f = _mod15304.f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = closure_2(fResult, f(arg0));
   }
-  return tmp3;
-};
+  return tmp2;
+}
+let closure_2 = _mod15258([].concat);
+_mod15279("Reflect", "ownKeys") || ownKeys;
+
+export default _mod15279("Reflect", "ownKeys") || ownKeys;

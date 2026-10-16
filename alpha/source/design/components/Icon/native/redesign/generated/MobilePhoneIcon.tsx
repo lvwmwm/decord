@@ -1,14 +1,14 @@
-// Module ID: 6864
-// Function ID: 6865
+// Module ID: 6866
+// Function ID: 6867
 // Name: MobilePhoneIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6865, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6867, 4876, 2]
 
-// Module 6864 (MobilePhoneIcon)
+// Module 6866 (MobilePhoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 6865 */;
+import AssetRegistry from "AssetRegistry" /* 6867 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

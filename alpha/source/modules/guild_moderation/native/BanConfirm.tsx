@@ -1,20 +1,20 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12505
+// Function ID: 12506
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 2090, 1392, 21, 1128, 1104, 5153, 587, 558, 576, 6887, 10773, 504, 6322, 5091, 12500, 5149, 5021, 6485, 6484, 6996, 5441, 2]
+// Dependencies: [32, 19, 17, 2090, 1392, 21, 1128, 1104, 5154, 587, 558, 576, 6889, 10770, 504, 6324, 5091, 12506, 5150, 5021, 6487, 6486, 6998, 5442, 2]
 
-// Module 12499 (BanConfirm)
+// Module 12505 (BanConfirm)
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl7 from "intl" /* 1128 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -252,7 +252,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         banUserResult = obj.banUser(tmp.id, closure_4.id, closure_12[closure_5.current].value, closure_6.current);
         tmp13 = onBan;
         nextPromise = banUserResult.then(onBan);
-        catchPromise = nextPromise.catch(() => { /* body not rendered: F146225 */ });
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F146309 */ });
       }
       return;
     }
@@ -290,7 +290,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f113277 = () => ({ banning: false, banError: false });
+  const f113321 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -309,10 +309,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f113277), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f113321), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f113277), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f113321), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

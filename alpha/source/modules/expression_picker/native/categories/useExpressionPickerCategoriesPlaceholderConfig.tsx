@@ -1,20 +1,20 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9811
+// Function ID: 9812
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 1087, 5153, 587, 558, 576, 6973, 2]
+// Dependencies: [19, 1087, 5154, 587, 558, 576, 6975, 2]
 
-// Module 9812 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9811 (useExpressionPickerCategoriesPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const FastestListPropsPlaceholder = tmp(6973);
+const FastestListPropsPlaceholder = tmp(6975);
 const CATEGORY_ICON_SIZE = Constants.CATEGORY_ICON_SIZE;
 let obj = { placeholder: obj2 };
 obj2 = { color: nativeDefault.colors.BACKGROUND_MOD_STRONG, opacity: 0.5 };

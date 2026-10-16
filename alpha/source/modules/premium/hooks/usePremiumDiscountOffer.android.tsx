@@ -1,13 +1,13 @@
-// Module ID: 8312
-// Function ID: 8313
+// Module ID: 8313
+// Function ID: 8314
 // Name: usePremiumDiscountOffer
-// Dependencies: [7355, 1394, 558, 576, 8313, 7350, 573, 2]
+// Dependencies: [7357, 1394, 558, 576, 8314, 7352, 573, 2]
 // Exports: usePremiumGroupDiscountOffer
 
-// Module 8312 (usePremiumDiscountOffer)
+// Module 8313 (usePremiumDiscountOffer)
 import react from "react" /* 576 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8313 */;
-import IAPStore from "IAPStore" /* 7355 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8314 */;
+import IAPStore from "IAPStore" /* 7357 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let closure_4;
 let hasOwnProperty;
 let tmp;
 const useStateFromStores = tmp(573);
-const ProductIds = tmp(7350);
+const ProductIds = tmp(7352);
 ({ PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_4, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: hasOwnProperty } = PremiumConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetDiscountOffer(arg0, arg1) {

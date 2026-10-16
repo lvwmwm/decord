@@ -1,22 +1,22 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17725
+// Function ID: 17726
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2073, 9549, 21, 11822, 5021, 1128, 5153, 558, 576, 504, 17716, 6174, 6168, 17717, 12860, 17719, 2]
+// Dependencies: [19, 17, 2073, 9550, 21, 11819, 5021, 1128, 5154, 558, 576, 504, 17726, 6175, 6169, 17727, 12868, 17729, 2]
 
-// Module 17715 (GuildVoiceOrStageChannelRow)
+// Module 17725 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6168 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6174 */;
-import SearchConstants from "SearchConstants" /* 9549 */;
-import ChannelListLayout from "ChannelListLayout" /* 11822 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17716 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17719 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6169 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6175 */;
+import SearchConstants from "SearchConstants" /* 9550 */;
+import ChannelListLayout from "ChannelListLayout" /* 11819 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17726 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17729 */;
 import react from "react" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -206,7 +206,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildV
     tmp11 = getVoiceChannelSubtitle(voiceStates, layout);
   }
   const obj3 = { subtitle: tmp11, muted: false, layout, channelId: id, guildId: guild_id };
-  const tmpResult2 = channel(17716);
+  const tmpResult2 = channel(17726);
   const result = tmpResult2.renderChannelSubtitle(obj3);
   cResult[4] = id;
   cResult[5] = guild_id;

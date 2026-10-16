@@ -1,9 +1,9 @@
-// Module ID: 16330
-// Function ID: 16331
+// Module ID: 16344
+// Function ID: 16345
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1410, 1087, 21, 1105, 16327, 5153, 587, 558, 576, 8521, 10505, 1409, 5119, 5118, 15536, 1267, 1128, 2963, 16319, 5441, 6418, 12, 16328, 7063, 2]
+// Dependencies: [32, 19, 17, 1410, 1087, 21, 1105, 16341, 5154, 587, 558, 576, 8522, 10506, 1409, 5119, 5118, 15546, 1267, 1128, 2963, 16333, 5442, 6420, 12, 16342, 7065, 2]
 
-// Module 16330 (DisplayNameStylesColorPickerSheet)
+// Module 16344 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
@@ -12,13 +12,13 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15536 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16327 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15546 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 16341 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -323,7 +323,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
           if (tmp) {
             const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
             obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(6418).CheckmarkLargeIcon;
+            CheckmarkLargeIcon = tmp5(6420).CheckmarkLargeIcon;
             const tmp5Result2 = utils_ColorUtils;
             const darkness = tmp5Result2.getDarkness(item);
             str = "black";

@@ -1,15 +1,15 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 15790
+// Function ID: 15791
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7241, 21, 558, 576, 7958, 7525, 7236, 15650, 2571, 2]
+// Dependencies: [19, 7243, 21, 558, 576, 7959, 7527, 7238, 15660, 2571, 2]
 
-// Module 15780 (FamilyCenterSettingsNotice)
+// Module 15790 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2571 from "module_2571" /* 2571 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import Constants from "Constants" /* 7241 */;
-import LayerActionCreators from "LayerActionCreators" /* 7525 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15650 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import Constants from "Constants" /* 7243 */;
+import LayerActionCreators from "LayerActionCreators" /* 7527 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15660 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp3;
   let obj = activeLinkUserIds(576);
   const cResult = obj.c(5);
-  let obj2 = activeLinkUserIds(7958);
+  let obj2 = activeLinkUserIds(7959);
   activeLinkUserIds = obj2.useActiveLinkUserIds();
   if (cResult[0] !== activeLinkUserIds) {
     function handleMessageParentClick() {
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   tmp4 = tmp6;
 }) : (function FamilyCenterSettingsParentalControlsNotice() {
   let activeLinkUserIds;
-  let obj = activeLinkUserIds(7958);
+  let obj = activeLinkUserIds(7959);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   SafetySettingsNoticeDefault;
   return <tmp label={_modDef2571.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {

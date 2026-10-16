@@ -1,17 +1,17 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 10935
+// Function ID: 10936
 // Name: authorizeCallback
-// Dependencies: [10937, 6152, 9475, 2002, 1386, 10939, 5115, 1107, 4865, 2]
+// Dependencies: [10934, 6153, 9476, 2002, 1386, 10936, 5115, 1107, 4865, 2]
 // Exports: default
 
-// Module 10938 (authorizeCallback)
+// Module 10935 (authorizeCallback)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import LinkingDefault from "Linking" /* 4865 */;
 import BrowserManager from "BrowserManager" /* 5115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import Constants from "Constants" /* 10937 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import Constants from "Constants" /* 10934 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -43,13 +43,13 @@ export default function authorizeCallback(arg0) {
           if (null != pathname.match(re5)) {
             const obj3 = { application: tmp, guild: tmp2 };
             const tmp8Result4 = ModalActionCreatorsDefault;
-            tmp8Result4.pushLazy(asyncRequire(10939, dependencyMap.paths), obj3, _false);
+            tmp8Result4.pushLazy(asyncRequire(10936, dependencyMap.paths), obj3, _false);
           } else if (null != pathname.match(re6)) {
             if (!canceled) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               let str1;
               ModalActionCreatorsDefault;
-              const tmp19 = asyncRequire(9475, dependencyMap.paths);
+              const tmp19 = asyncRequire(9476, dependencyMap.paths);
               if (searchParams != null) {
                 const str2 = searchParams.get("error_description");
                 if (str2 != null) {
@@ -87,6 +87,6 @@ export default function authorizeCallback(arg0) {
     openURL(_location, SAFARI);
   } else if (!canceled) {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(9475, dependencyMap.paths), undefined, React3);
+    obj.pushLazy(asyncRequire(9476, dependencyMap.paths), undefined, React3);
   }
 };

@@ -1,21 +1,21 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8574
+// Function ID: 8575
 // Name: ProfileFrame
-// Dependencies: [19, 17, 8556, 8574, 21, 4909, 5153, 558, 576, 8575, 5091, 5154, 8577, 8578, 2]
+// Dependencies: [19, 17, 8557, 8575, 21, 4909, 5154, 558, 576, 8576, 5091, 5155, 8578, 8579, 2]
 
-// Module 8573 (ProfileFrame)
+// Module 8574 (ProfileFrame)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import timing from "timing" /* 5154 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8556 */;
-import useProfileFrameLayerAsset from "useProfileFrameLayerAsset" /* 8575 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8578 */;
+import timing from "timing" /* 5155 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8557 */;
+import useProfileFrameLayerAsset from "useProfileFrameLayerAsset" /* 8576 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8579 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8574 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8575 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -835,7 +835,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LivePr
   c9 = undefined;
   c10 = undefined;
   const tmp = c10();
-  let obj = frame(8575);
+  let obj = frame(8576);
   const settled = obj.usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
@@ -870,11 +870,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LivePr
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
-        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8577)(frame, containerWidth));
+        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8578)(frame, containerWidth));
         const items2 = [tmp.container, ];
         const obj4 = { opacity: sharedValue };
         items2[1] = obj4;
-        containerWidth(8577)(frame, containerWidth);
+        containerWidth(8578)(frame, containerWidth);
         const View = containerWidth(4909).View;
         return <View style={items2}>{memo.map((layer) => <closure_11 key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={c8} overflowBottom={c9} overflowHorizontal={c10} containerWidth={containerWidth} containerHeight={dependencyMap} />)}</View>;
       }

@@ -1,9 +1,9 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7558
+// Function ID: 7559
 // Name: Guilds
 // Dependencies: [5, 2086, 502, 2128, 2122, 2090, 3, 2094, 2126, 2124, 2082, 2]
 
-// Module 7557 (Guilds)
+// Module 7558 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
 import GuildRecordUtilsAll from "GuildRecordUtils" /* 2082 */;
 import GuildRecord from "GuildRecord" /* 2086 */;

@@ -1,27 +1,27 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9573
+// Function ID: 9574
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7532, 7537, 9575, 9576, 7534, 1087, 9572, 584, 1297, 7397, 9577, 7690, 7697, 2]
-// Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
+// Dependencies: [5, 7534, 7538, 9574, 9575, 5132, 1087, 9571, 584, 1297, 7399, 9576, 7691, 7698, 2]
+// Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9574 (ConversationsActionCreators)
+// Module 9573 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ConversationConstants from "ConversationConstants" /* 7534 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7690 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9577 */;
+import ConversationConstants from "ConversationConstants" /* 5132 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7691 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7532 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7537 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9575 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9576 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7534 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7538 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9574 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9575 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7697);
+const SurveyActionTypes = tmp(7698);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -146,6 +146,9 @@ let obj = function _fetchChannelConversations() {
   });
   return obj(...arguments);
 };
+function fetchConversation() {
+  return obj(...arguments);
+}
 obj = function _fetchConversation() {
   obj = _asyncToGenerator(async (channelId, arg1) => {
     let body = arg1;
@@ -222,24 +225,15 @@ obj = function _fetchConversation() {
   });
   return obj(...arguments);
 };
-function fetchConversationMessages() {
-  return obj(...arguments);
-}
-obj = function _fetchConversationMessages() {
-  obj = _asyncToGenerator(async (channelId, conversationId, arg2) => {
-    let closure_3;
-    let closure_2 = arg2;
-    let c7 = 0;
-    let c8 = 0;
+obj = function _hydrateSelectedConversation() {
+  obj = _asyncToGenerator(async (arg0, arg1, cacheType) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c5 = 0;
     let c6 = 0;
     return (async (arg0, value, arg2) => {
-      let includeMessageReferences;
-      let includeReactions;
-      let isStandalone;
-      let obj7;
-      let previewLimit;
-      if (c8 === 2) {
-        c8 = 3;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -251,102 +245,161 @@ obj = function _fetchConversationMessages() {
         }
       } else {
         try {
-          let fullyHydrated;
-          c8 = 2;
-          if (0 === c7) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c8 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 3;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp4;
+              closure_3 = tmp;
+              if ("preview" === cacheType) {
+                c5 = 1;
+                c6 = 1;
+                const obj4 = { value: fetchConversation(tmp17, tmp18), done: false };
+                return obj4;
+              }
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          }
+          const obj5 = { includeReactions: true, includeMessageReferences: true, cacheType };
+          closure_132_14(closure_0, closure_1, obj5);
+          c6 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp13) {
+          c6 = 3;
+          throw tmp13;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+function fetchConversationMessages() {
+  return obj(...arguments);
+}
+obj = function _fetchConversationMessages() {
+  obj = _asyncToGenerator(async (channelId, conversationId, arg2) => {
+    let closure_3;
+    let closure_4;
+    let closure_2 = arg2;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (async (arg0, value, arg2) => {
+      let cacheType;
+      let includeMessageReferences;
+      let includeReactions;
+      let obj7;
+      let previewLimit;
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let tmp;
+          let fullyHydrated;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
               return { value, done: true };
             } else {
               let result;
-              closure_5 = tmp;
-              isStandalone = undefined;
-              closure_4 = undefined;
-              fullyHydrated = closure_2;
-              if (closure_2 == null) {
-                fullyHydrated = {};
-              }
-              ({ previewLimit, isStandalone } = fullyHydrated);
-              let tmp15 = undefined !== isStandalone;
-              ({ includeMessageReferences, includeReactions } = fullyHydrated);
-              if (tmp15) {
-                tmp15 = isStandalone;
-              }
-              isStandalone = tmp15;
-              fullyHydrated = tmp16;
+              cacheType = undefined;
+              tmp = undefined;
+              ({ previewLimit, cacheType } = closure_2);
+              fullyHydrated = tmp49;
+              ({ includeMessageReferences, includeReactions } = closure_2);
               if (null == previewLimit) {
                 let isFullyHydratedResult;
-                if (tmp15) {
-                  isFullyHydratedResult = ConversationPreviewStore.isFullyHydrated(tmp50);
+                if ("preview" === cacheType) {
+                  isFullyHydratedResult = ConversationPreviewStore.isFullyHydrated(tmp47);
                 } else {
-                  isFullyHydratedResult = ChannelConversationsStore.isFullyHydrated(tmp49, tmp50);
+                  isFullyHydratedResult = ChannelConversationsStore.isFullyHydrated(tmp46, tmp47);
                 }
                 if (isFullyHydratedResult) {
-                  c8 = 3;
+                  c7 = 3;
                   return { value: "IconComponent", done: null };
                 }
               } else {
                 let hydratedMessages;
-                if (tmp15) {
-                  hydratedMessages = ConversationPreviewStore.getHydratedMessages(tmp50);
+                if ("preview" === cacheType) {
+                  hydratedMessages = ConversationPreviewStore.getHydratedMessages(tmp47);
                 } else {
-                  hydratedMessages = ChannelConversationsStore.getHydratedMessages(tmp49, tmp50);
+                  hydratedMessages = ChannelConversationsStore.getHydratedMessages(tmp46, tmp47);
                 }
                 if (null != hydratedMessages) {
-                  c8 = 3;
+                  c7 = 3;
                   return { value: "IconComponent", done: null };
                 }
               }
-              if (tmp15) {
-                result = ConversationPreviewStore.isConversationFetchPending(tmp50, tmp16);
+              if ("preview" === cacheType) {
+                result = ConversationPreviewStore.isConversationFetchPending(tmp47, tmp49);
               } else {
-                result = ChannelConversationsStore.isConversationFetchPending(tmp50, tmp16);
+                result = ChannelConversationsStore.isConversationFetchPending(tmp47, tmp49);
               }
               if (!result) {
-                const obj6 = { type: "CONVERSATION_MESSAGES_FETCH_START", channelId, conversationId, full: null == previewLimit, isStandalone: tmp15 };
+                const obj6 = { type: "CONVERSATION_MESSAGES_FETCH_START", channelId, conversationId, full: null == previewLimit, cacheType };
                 const obj4 = DispatcherDefault;
                 obj4.dispatch(obj6);
-                c6 = 1;
+                c5 = 1;
                 const HTTP = HTTPUtils.HTTP;
                 const request = { url: Endpoints.CHANNEL_CONVERSATION_MESSAGES(channelId, conversationId), query: obj7, oldFormErrors: true, rejectWithError: true };
                 const get = HTTP.get;
-                c7 = 2;
-                c8 = 1;
+                c6 = 2;
+                c7 = 1;
                 obj7 = { limit: previewLimit, include_message_references: includeMessageReferences, include_reactions: includeReactions };
                 const obj8 = { value: get(request), done: false };
                 return obj8;
               }
             }
-          } else if (1 === c7) {
-            c6 = 0;
-            const obj9 = { type: "CONVERSATION_MESSAGES_FETCH_FAILURE", channelId, conversationId, full: fullyHydrated, isStandalone };
-            const obj2 = closure_133_1(closure_133_2[8]);
+          } else if (1 === c6) {
+            c5 = 0;
+            const obj9 = { type: "CONVERSATION_MESSAGES_FETCH_FAILURE", channelId, conversationId, full: fullyHydrated, cacheType };
+            const obj2 = closure_132_1(closure_132_2[8]);
             obj2.dispatch(obj9);
           } else if (arg0 === 1) {
-            c8 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 0;
-            c8 = 3;
+            c5 = 0;
+            c7 = 3;
             return { value, done: true };
           } else {
-            closure_4 = value;
-            const obj10 = { type: "CONVERSATION_MESSAGES_FETCH_SUCCESS", channelId, conversationId, messages: closure_4.body.messages, messageReferences: closure_4.body.reference_messages, fullyHydrated, isStandalone };
-            const obj11 = closure_133_1(closure_133_2[8]);
+            tmp = value;
+            const obj10 = { type: "CONVERSATION_MESSAGES_FETCH_SUCCESS", channelId, conversationId, messages: tmp.body.messages, messageReferences: tmp.body.reference_messages, fullyHydrated, cacheType };
+            const obj11 = closure_132_1(closure_132_2[8]);
             obj11.dispatch(obj10);
-            c6 = 0;
+            c5 = 0;
           }
-          c8 = 3;
+          c7 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp32) {
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp32;
+        } catch (tmp29) {
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp29;
           } else {
-            c7 = 1;
+            c6 = 1;
           }
         }
       }
@@ -361,38 +414,37 @@ let result = size.fileFinishedImporting("modules/conversations/ConversationsActi
 export const fetchChannelConversations = function fetchChannelConversations() {
   return obj(...arguments);
 };
-export const fetchConversation = function fetchConversation() {
-  return obj(...arguments);
-};
+export { fetchConversation };
 export const toggleConversationHighlighting = function toggleConversationHighlighting() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "CONVERSATIONS_TOGGLE_HIGHLIGHTING" });
 };
-export const setSelectedConversation = function setSelectedConversation(channelId, conversationId, arg2) {
-  obj = arg2;
-  if (arg2 === undefined) {
-    obj = {};
+export const setSelectedConversation = function setSelectedConversation(channelId, id, arg2) {
+  let cacheType;
+  let shouldJump;
+  function hydrateSelectedConversation() {
+    return obj(...arguments);
   }
-  let flag = obj.shouldJump;
-  if (flag === undefined) {
-    flag = true;
+  ({ cacheType, shouldJump } = arg2);
+  if (shouldJump === undefined) {
+    shouldJump = true;
   }
-  if (null != conversationId) {
-    const obj2 = { type: "SET_SELECTED_CONVERSATION", channelId, conversationId };
-    const obj4 = DispatcherDefault;
-    obj4.dispatch(obj2);
-    fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true });
+  if (null != id) {
+    obj = { type: "SET_SELECTED_CONVERSATION", channelId, conversationId: id, cacheType };
+    const obj3 = DispatcherDefault;
+    obj3.dispatch(obj);
+    hydrateSelectedConversation(channelId, id, cacheType);
     const tmp6 = importDefault;
-    if (flag) {
-      const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
+    if (shouldJump) {
+      const conversation = SelectedConversationStore.getConversation(channelId);
       let startMessageId;
-      if (conversationMetadata != null) {
-        startMessageId = conversationMetadata.conversation.startMessageId;
+      if (conversation != null) {
+        startMessageId = conversation.startMessageId;
       }
       if (null != startMessageId) {
-        const obj3 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7397);
-        tmp6Result.jumpToMessage(obj3);
+        const obj2 = { channelId, messageId: startMessageId, flash: false };
+        const tmp6Result = tmp6(7399);
+        tmp6Result.jumpToMessage(obj2);
       }
     }
   }

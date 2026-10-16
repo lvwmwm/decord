@@ -1,27 +1,27 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 13256
+// Function ID: 13257
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9620, 21, 5153, 587, 558, 576, 1633, 6887, 1499, 13249, 13250, 13251, 4909, 2]
+// Dependencies: [19, 17, 9619, 21, 5154, 587, 558, 576, 1633, 6889, 1499, 13257, 13258, 13259, 4909, 2]
 
-// Module 13248 (ChatPlaceholder)
+// Module 13256 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9620 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13249 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13250 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13251 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9619 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13257 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13258 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13259 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp3;
-const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6887);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6889);
 const StyleSheet = react_native.StyleSheet;
 let closure_4 = useChatBottomManagerUIStore.useChatInputContainerHeight;
 const jsx = Fragment.jsx;

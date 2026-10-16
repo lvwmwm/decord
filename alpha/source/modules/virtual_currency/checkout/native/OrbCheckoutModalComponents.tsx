@@ -1,28 +1,28 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14168
+// Function ID: 14169
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 6512, 5439, 5149, 13574, 1128, 13576, 14157, 7164, 5090, 14159, 5028, 9270, 5441, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 6514, 5440, 5150, 13582, 1128, 13584, 14167, 7166, 5090, 14169, 5028, 9271, 5442, 2]
 
-// Module 14158 (OrbCheckoutModalComponents)
+// Module 14168 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import shared from "shared" /* 5028 */;
 import useThemeDefault from "useTheme" /* 5090 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import Stack_Stack from "Stack/Stack" /* 5439 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6512 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7164 */;
-import OrbsIcon2 from "OrbsIcon" /* 9270 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13574 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13576 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14157 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 14159 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import Stack_Stack from "Stack/Stack" /* 5440 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6514 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7166 */;
+import OrbsIcon2 from "OrbsIcon" /* 9271 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13582 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13584 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14167 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 14169 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutE
   if (cResult[1] !== error) {
     const obj2 = { direction: "horizontal", spacing: 8, align: "flex-start", children: items };
     items = [first, ];
-    const Stack = tmp(5439).Stack;
+    const Stack = tmp(5440).Stack;
     const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error };
     items[1] = metroRequire(Text_Text.Text, obj3);
     const tmp11 = metroImportDefault(Stack, obj2);
@@ -253,7 +253,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutP
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.y0WGqP) };
-      const Text = tmp(5149).Text;
+      const Text = tmp(5150).Text;
       intl2 = tmp(1128).intl;
       const tmp13 = metroRequire(Text, obj3);
       cResult[6] = tmp13;
@@ -363,7 +363,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutL
 }) : (function OrbCheckoutLegalFinePrint() {
   let skuId;
   const tmp = closure_8();
-  let obj = skuId(14157);
+  let obj = skuId(14167);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {
@@ -371,7 +371,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutL
     return obj.getOrbCheckoutDisclaimerMessage(skuId);
   }, items);
   const obj2 = { style: tmp.disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
-  return closure_6(skuId(5149).Text, obj2);
+  return closure_6(skuId(5150).Text, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutPurchaseButton(onPress) {
@@ -457,7 +457,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutP
   if (orbProductContext != null) {
     orbPriceAmount = orbProductContext.orbPriceAmount;
   }
-  const Button = tmp3(5441).Button;
+  const Button = tmp3(5442).Button;
   let str = "primary";
   const tmp3Result = shared;
   if (tmp3Result.isThemeDark(tmp2)) {
@@ -465,7 +465,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutP
   }
   const obj3 = { variant: str, size: "lg", text: intl.string(intl3.t["zLch/S"]), icon: metroRequire(OrbsIcon, { size: "md", color: str2 }), iconPosition: "start", loading: isRedeeming, onPress, disabled: isRedeeming };
   intl = tmp3(1128).intl;
-  OrbsIcon = tmp3(9270).OrbsIcon;
+  OrbsIcon = tmp3(9271).OrbsIcon;
   str2 = "control-primary-text-default";
   const tmp3Result2 = shared;
   if (tmp3Result2.isThemeDark(tmp2)) {

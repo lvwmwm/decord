@@ -1,11 +1,11 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11633
+// Function ID: 11634
 // Name: useDisallowSwipeExit
-// Dependencies: [19, 558, 576, 11637, 2]
+// Dependencies: [19, 558, 576, 11634, 2]
 
-// Module 11636 (useDisallowSwipeExit)
+// Module 11633 (useDisallowSwipeExit)
 import react2 from "react" /* 576 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11637 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17065
+// Function ID: 17066
 // Name: useChannelScreensFromNavigation
 // Dependencies: [32, 19, 2068, 2119, 4998, 1087, 2075, 5036, 5035, 558, 576, 5038, 2]
 // Exports: isActiveTabsGuilds
 
-// Module 17051 (useChannelScreensFromNavigation)
+// Module 17065 (useChannelScreensFromNavigation)
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;

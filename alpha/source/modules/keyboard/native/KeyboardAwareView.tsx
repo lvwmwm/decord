@@ -1,11 +1,11 @@
-// Module ID: 6951
-// Function ID: 6952
+// Module ID: 6953
+// Function ID: 6954
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1501, 21, 1899, 5046, 1631, 6890, 6888, 6889, 2]
+// Dependencies: [32, 19, 17, 1501, 21, 1899, 5046, 1631, 6892, 6890, 6891, 2]
 
-// Module 6951 (KeyboardAwareView)
+// Module 6953 (KeyboardAwareView)
 import Fragment from "Fragment" /* 21 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6888 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6890 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -87,7 +87,7 @@ const memoResult = react.memo(function KeyboardAwareView(style) {
         tmp5 = keyboardDuration > 0;
       }
       if (tmp5) {
-        const tmp2Result = tmp2(6889);
+        const tmp2Result = tmp2(6891);
         const result = tmp2Result.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
       }
     } else {

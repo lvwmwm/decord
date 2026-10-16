@@ -1,9 +1,9 @@
-// Module ID: 6191
-// Function ID: 6192
+// Module ID: 6192
+// Function ID: 6193
 // Name: QuestVariants
 // Dependencies: [2]
 
-// Module 6191 (QuestVariants)
+// Module 6192 (QuestVariants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestVariants.tsx");

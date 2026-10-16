@@ -1,32 +1,33 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17395
+// Function ID: 17396
 // Name: GuildsBarFavorites
-// Dependencies: [19, 17, 2071, 1087, 2065, 21, 5153, 587, 558, 576, 17366, 10561, 504, 17384, 17369, 10575, 17381, 17188, 1128, 17385, 9788, 17386, 2]
+// Dependencies: [19, 2071, 1087, 21, 558, 576, 17378, 10562, 504, 17396, 17381, 17393, 17202, 1128, 17397, 587, 9787, 2]
 
-// Module 17383 (GuildsBarFavorites)
-import react_native from "react-native" /* 17 */;
+// Module 17395 (GuildsBarFavorites)
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17381 */;
+import intl3 from "intl" /* 1128 */;
+import StarIcon2 from "StarIcon" /* 9787 */;
+import FavoritesHooks from "FavoritesHooks" /* 10562 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17202 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17378 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17381 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17393 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17396 */;
+import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17397 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
-import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size_mod from "module_2" /* 2 */;
+import size from "module_2" /* 2 */;
 
-let c9;
-let metroImportAll;
-let size;
-const View = react_native.View;
+const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
+
 const FAVORITES = Constants.FAVORITES;
-const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let c10 = "more-options";
-let obj = { anchor: size };
-size = { position: "absolute", top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, left: 12, width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
-let closure_11 = createStyles.createStyles(obj);
+const jsx = Fragment.jsx;
+let c7 = "more-options";
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarFavorites() {
   let accessibilityActions;
   let badge;
@@ -34,23 +35,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let cutouts;
   let favoriteChannels;
   let intl;
-  let markPopoverAsDismissed;
+  let items1;
   let onAccessibilityAction;
-  let shouldShowPopover;
   let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp19;
+  let tmp23;
   let tmp6;
   let tmp7;
   let unread;
-  let tmp = shouldShowPopover;
-  const obj = shouldShowPopover(576);
-  const cResult = obj.c(32);
-  const obj2 = shouldShowPopover(17366);
+  const obj = react2;
+  const cResult = obj.c(17);
+  const obj2 = GuildsBarAnimatedItemWrapper;
   const guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles();
-  const obj3 = shouldShowPopover(10561);
+  const obj3 = FavoritesHooks;
   const isFavoritesGuildSelected = obj3.useIsFavoritesGuildSelected();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
-    const fn = function _() {
+    const fn = function l() {
       return favoriteChannels.getFavoriteChannels();
     };
     cResult[0] = items;
@@ -60,10 +64,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     [tmp6, tmp7] = cResult;
   }
-  const tmpResult = tmp(504);
+  const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  ({ badge, unread } = markPopoverAsDismissed(17384)(stateFromStores));
-  markPopoverAsDismissed(17384)(stateFromStores);
+  ({ badge, unread } = useFavoritesGuildUnreadsDefault(stateFromStores));
+  useFavoritesGuildUnreadsDefault(stateFromStores);
   if (cResult[2] !== badge) {
     const obj4 = { mentionCount: badge };
     cResult[2] = badge;
@@ -72,221 +76,116 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp12 = cResult[3];
   }
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(17369)(tmp12));
-  markPopoverAsDismissed(17369)(tmp12);
-  react.useRef(null);
-  closure_11();
-  const tmpResult2 = tmp(10575);
-  const favoritesIntroPopover = tmpResult2.useFavoritesIntroPopover();
-  shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
-  markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
-  if (cResult[4] === markPopoverAsDismissed) {
-    let tmp17;
-    let tmp18;
-    let tmp19;
-    let tmp21;
-    let tmp24;
-    let tmp26;
-    if (cResult[5] === shouldShowPopover) {
-      tmp17 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
+  ({ badge: badge2, cutouts } = useGuildsBarBottomRightBadgeDefault(tmp12));
+  useGuildsBarBottomRightBadgeDefault(tmp12);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj5 = {
+      onPress() {
+          transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
+        },
+      onLongPress() {
+          openFavoritesGuildActionSheetDefault();
         }
-      }
-      cResult[7] = F;
-      tmp18 = F;
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    if (cResult[8] !== tmp17) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-      tmp20[0] = tmp17;
-      tmp20[1] = tmp18;
-      cResult[8] = tmp17;
-      cResult[9] = tmp20;
-      tmp19 = tmp20;
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-      const obj5 = { name, label: intl.string(tmp(1128).t.PdRCRg) };
-      intl = tmp(1128).intl;
-      const items1 = [obj5];
-      tmp22[0] = items1;
-      tmp22[1] = function onAccessibilityAction(nativeEvent) {
-        if (nativeEvent.nativeEvent.actionName === name) {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      };
-      cResult[10] = tmp22;
-      tmp21 = tmp22;
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    ({ accessibilityActions, onAccessibilityAction } = tmp21);
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-      const stringResult = obj8.string(tmp(1128).t.wMWyci);
-      cResult[11] = stringResult;
-      tmp24 = stringResult;
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-      const tmp27 = closure_8(tmp(17385).HomeDrawerFavoritesRowExpandedChildren, {});
-      cResult[12] = tmp27;
-      tmp26 = tmp27;
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    const colors = tmp10(587).colors;
-    const tmp28 = isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
-    if (cResult[13] !== tmp28) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-      const obj6 = { color: tmp28 };
-      cResult[13] = tmp28;
-      cResult[14] = closure_8(tmp(9788).StarIcon, obj6);
-      const tmp30 = closure_8(tmp(9788).StarIcon, obj6);
-    } else {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    if (cResult[15] === badge2) {
-      class F {
-        constructor() {
-          markPopoverAsDismissed(dependencyMap[17])();
-        }
-      }
-    }
-    const obj7 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: tmp19, accessibilityActions, onAccessibilityAction, label: tmp24, externalChildren: badge2, expandedChildren: tmp26, children: tmp29 };
-    cResult[15] = badge2;
-    const tmp33 = closure_8(markPopoverAsDismissed(17366), obj7);
-    class R {
-      constructor() {
-        const tmp = shouldShowPopover;
-        if (tmp) {
-          markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
-        }
-        transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
-      }
-    }
-    cResult[17] = cutouts;
-    cResult[18] = isFavoritesGuildSelected;
-    cResult[19] = guildsBarAnimatedWrapperStyles;
-    cResult[20] = tmp29;
-    cResult[21] = unread;
-    cResult[22] = tmp33;
+    };
+    cResult[4] = obj5;
+    tmp14 = obj5;
+  } else {
+    tmp14 = cResult[4];
   }
-  class R {
-    constructor() {
-      const tmp = shouldShowPopover;
-      if (tmp) {
-        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = {
+      accessibilityActions: items1,
+      onAccessibilityAction(nativeEvent) {
+          if (nativeEvent.nativeEvent.actionName === name) {
+            openFavoritesGuildActionSheetDefault();
+          }
+        }
+    };
+    const obj7 = { name, label: intl.string(intl3.t.PdRCRg) };
+    intl = tmp(1128).intl;
+    items1 = [obj7];
+    cResult[5] = obj6;
+    tmp15 = obj6;
+  } else {
+    tmp15 = cResult[5];
+  }
+  ({ accessibilityActions, onAccessibilityAction } = tmp15);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1128).intl;
+    const stringResult = intl2.string(intl3.t.wMWyci);
+    cResult[6] = stringResult;
+    tmp17 = stringResult;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp21 = jsx(HomeDrawerFavoritesRow.HomeDrawerFavoritesRowExpandedChildren, {});
+    cResult[7] = tmp21;
+    tmp19 = tmp21;
+  } else {
+    tmp19 = cResult[7];
+  }
+  const colors = tmp10(587).colors;
+  const tmp22 = isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
+  if (cResult[8] !== tmp22) {
+    const tmp25 = jsx(StarIcon2.StarIcon, { color: tmp22 });
+    cResult[8] = tmp22;
+    cResult[9] = tmp25;
+    tmp23 = tmp25;
+  } else {
+    tmp23 = cResult[9];
+  }
+  if (cResult[10] === badge2) {
+    if (cResult[11] === cutouts) {
+      if (cResult[12] === isFavoritesGuildSelected) {
+        if (cResult[13] === guildsBarAnimatedWrapperStyles) {
+          if (cResult[14] === tmp23) {
+            let tmp26;
+            if (cResult[15] === unread) {
+              tmp26 = cResult[16];
+            }
+            return tmp26;
+          }
+        }
       }
-      transitionGuildsBarToGuildOrOpenSelectedChannelDefault(FAVORITES);
     }
   }
-  cResult[4] = markPopoverAsDismissed;
-  cResult[5] = shouldShowPopover;
-  cResult[6] = R;
-  tmp17 = R;
+  const tmp27 = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: tmp14, accessibilityActions, onAccessibilityAction, label: tmp17, externalChildren: badge2, expandedChildren: tmp19, children: tmp23 });
+  cResult[10] = badge2;
+  cResult[11] = cutouts;
+  cResult[12] = isFavoritesGuildSelected;
+  cResult[13] = guildsBarAnimatedWrapperStyles;
+  cResult[14] = tmp23;
+  cResult[15] = unread;
+  cResult[16] = tmp27;
+  tmp26 = tmp27;
 }) : (function GuildsBarFavorites() {
-  let StarIcon;
   let accessibilityActions;
   let badge;
   let badge2;
   let cutouts;
   let favoriteChannels;
-  let intl;
-  let markPopoverAsDismissed;
-  let obj6;
   let onAccessibilityAction;
-  let shouldShowPopover;
   let unread;
-  let tmp = dependencyMap;
-  let obj = shouldShowPopover(17366);
+  let obj = GuildsBarAnimatedItemWrapper;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  let obj2 = shouldShowPopover(10561);
+  let obj2 = FavoritesHooks;
   const isFavoritesGuildSelected = obj2.useIsFavoritesGuildSelected();
   let items = [FavoriteStore];
-  const obj3 = shouldShowPopover(504);
+  const obj3 = get_initialized;
   const stateFromStores = obj3.useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
-  ({ badge, unread } = markPopoverAsDismissed(17384)(stateFromStores));
-  markPopoverAsDismissed(17384)(stateFromStores);
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(17369)({ mentionCount: badge }));
-  markPopoverAsDismissed(17369)({ mentionCount: badge });
-  const ref = react.useRef(null);
-  const tmp9 = closure_11();
-  const obj4 = shouldShowPopover(10575);
-  const favoritesIntroPopover = obj4.useFavoritesIntroPopover();
-  shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
-  const tmp5 = markPopoverAsDismissed;
-  markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
-  const items1 = [shouldShowPopover, markPopoverAsDismissed];
+  ({ badge, unread } = useFavoritesGuildUnreadsDefault(stateFromStores));
+  useFavoritesGuildUnreadsDefault(stateFromStores);
+  ({ badge: badge2, cutouts } = useGuildsBarBottomRightBadgeDefault({ mentionCount: badge }));
+  useGuildsBarBottomRightBadgeDefault({ mentionCount: badge });
   const memo = react.useMemo(() => ({
     onPress() {
-      const tmp = shouldShowPopover;
-      if (tmp) {
-        closure_1_1(constants.TAKE_ACTION);
-      }
-      markPopoverAsDismissed(dependencyMap[16])(FAVORITES);
+      closure_1_1(closure_1_2[11])(closure_1_5);
     },
     onLongPress() {
-      markPopoverAsDismissed(closure_1_2[17])();
+      closure_1_1(closure_1_2[12])();
     }
-  }), items1);
+  }), []);
   const memo1 = react.useMemo(() => {
     let intl;
     let items;
@@ -294,34 +193,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       accessibilityActions: items,
       onAccessibilityAction(nativeEvent) {
         if (nativeEvent.nativeEvent.actionName === name) {
-          markPopoverAsDismissed(closure_1_2[17])();
+          closure_1_1(closure_1_2[12])();
         }
       }
     };
-    const obj2 = { name, label: intl.string(shouldShowPopover(dependencyMap[18]).t.PdRCRg) };
-    intl = shouldShowPopover(dependencyMap[18]).intl;
+    const obj2 = { name, label: intl.string(intl3.t.PdRCRg) };
+    intl = intl3.intl;
     items = [obj2];
     return obj;
   }, []);
   ({ accessibilityActions, onAccessibilityAction } = memo1);
-  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: intl.string(shouldShowPopover(1128).t.wMWyci), externalChildren: badge2, expandedChildren: closure_8(shouldShowPopover(17385).HomeDrawerFavoritesRowExpandedChildren, {}), children: closure_8(StarIcon, obj6) };
-  const tmp16 = markPopoverAsDismissed(17366);
-  intl = shouldShowPopover(1128).intl;
-  StarIcon = shouldShowPopover(9788).StarIcon;
-  const colors = markPopoverAsDismissed(587).colors;
-  obj6 = { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  const children = [closure_8(tmp16, obj5), , ];
-  const obj7 = { ref, style: tmp9.anchor, pointerEvents: "none", collapsable: false };
-  children[1] = closure_8(View, obj7);
-  const tmp13 = closure_9;
-  if (shouldShowPopover) {
-    const obj8 = { targetRef: ref, markAsDismissed: markPopoverAsDismissed };
-    shouldShowPopover = tmp15(tmp5(17386), obj8);
-  }
-  children[2] = shouldShowPopover;
-  return tmp13(View, { children });
+  GuildsBarAnimatedItemWrapperDefault;
+  let intl = intl3.intl;
+  const StarIcon = StarIcon2.StarIcon;
+  const colors = nativeDefault.colors;
+  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl3.t.wMWyci)} externalChildren={badge2} expandedChildren={null}>{null}</tmp9>;
 }));
-size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 
 export default memoResult;

@@ -1,12 +1,12 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9068
+// Function ID: 9069
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 9038, 558, 576, 9039, 504, 2]
+// Dependencies: [19, 9039, 558, 576, 9040, 504, 2]
 
-// Module 9067 (useSecureFramesUserVerifiedKeysCount)
-import _mod9039 from "module_9039" /* 9039 */;
+// Module 9068 (useSecureFramesUserVerifiedKeysCount)
+import _mod9040 from "module_9040" /* 9040 */;
 import react from "react" /* 19 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9038 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9039 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureF
       const self = this;
       const self2 = this;
       const uint8Array = new Uint8Array(keyToOmit);
-      const tmpResult = userId(9039);
+      const tmpResult = userId(9040);
       const serializeKeyResult = tmpResult.serializeKey(uint8Array);
       let num = 0;
       cResult[0] = keyToOmit;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureF
       const self = this;
       const self2 = this;
       const uint8Array = new Uint8Array(tmp);
-      const obj = _mod9039;
+      const obj = _mod9040;
       return obj.serializeKey(uint8Array);
     }
   }, items);

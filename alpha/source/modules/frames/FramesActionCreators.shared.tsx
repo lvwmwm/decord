@@ -1,19 +1,19 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 10963
+// Function ID: 10964
 // Name: launchFrame
-// Dependencies: [5, 10950, 10934, 6291, 10967, 584, 10969, 10953, 10970, 10976, 10963, 2]
+// Dependencies: [5, 10947, 10931, 6287, 10964, 584, 10966, 10950, 10967, 10973, 10960, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 10966 (launchFrame)
+// Module 10963 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10953 */;
-import leaveFrame from "leaveFrame" /* 10963 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10967 */;
-import createProxyTicket from "createProxyTicket" /* 10969 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6287 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10950 */;
+import leaveFrame from "leaveFrame" /* 10960 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10964 */;
+import createProxyTicket from "createProxyTicket" /* 10966 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10950 */;
-import FramesConstants from "FramesConstants" /* 10934 */;
+import FramesStore from "FramesStore" /* 10947 */;
+import FramesConstants from "FramesConstants" /* 10931 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10963);
+        const tmp4Result = tmp4(10960);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

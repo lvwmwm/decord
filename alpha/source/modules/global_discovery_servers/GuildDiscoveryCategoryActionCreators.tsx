@@ -1,19 +1,19 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17554
+// Function ID: 17555
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2132, 17545, 1087, 1297, 584, 2]
+// Dependencies: [5, 2132, 17555, 1087, 1297, 584, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 17544 (GuildDiscoveryCategoryActionCreators)
+// Module 17554 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17545 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17555 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, emoji_discoverability_enabled, is_published, locale, partnerActionedTimestamp, partnerApplicationTimestamp, partner_actioned_timestamp, partner_application_timestamp, primary_category_id, reasons_to_join, social_links;
+let _require, emoji_discoverability_enabled, is_published, locale, partnerActionedTimestamp, partnerApplicationTimestamp, partner_actioned_timestamp, partner_application_timestamp, primary_category_id, reasons_to_join, slug, social_links;
 
 let obj = function _maybeFetchGuildDiscoveryCategories() {
   let fetchedLocale;
@@ -115,7 +115,7 @@ obj = function _fetchSlugForGuild() {
     let c4 = 0;
     let c5 = 0;
     let c3 = 0;
-    return (async (arg0, value) => {
+    return (async function(arg0, value) {
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -129,7 +129,6 @@ obj = function _fetchSlugForGuild() {
         }
       } else {
         try {
-          let slug;
           c5 = 2;
           if (0 === c4) {
             if (arg0 === 1) {
@@ -139,24 +138,23 @@ obj = function _fetchSlugForGuild() {
               c5 = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp;
-              closure_1 = tmp4;
+              body = undefined;
               slug = undefined;
               c3 = 1;
               const HTTP = require("HTTPUtils").HTTP;
               const get = HTTP.get;
               c4 = 2;
               c5 = 1;
-              const obj5 = { url: Endpoints.GUILD_DISCOVERY_SLUG(guildId), rejectWithError: true };
+              const obj5 = { url: Endpoints.GUILD_WEB_PAGE(guildId), rejectWithError: true };
               const obj6 = { value: get(obj5), done: false };
               return obj6;
             }
           } else {
             if (1 === c4) {
               c3 = 0;
-              const obj7 = { type: "GUILD_DISCOVERY_SLUG_FETCH_FAIL", guildId };
-              const obj4 = closure_130_1(closure_130_2[5]);
-              obj4.dispatch(obj7);
+              const obj8 = { type: "GUILD_DISCOVERY_SLUG_FETCH_FAIL", guildId };
+              const obj2 = closure_130_1(closure_130_2[5]);
+              obj2.dispatch(obj8);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -165,19 +163,25 @@ obj = function _fetchSlugForGuild() {
               c5 = 3;
               return { value, done: true };
             } else {
-              slug = value.body.slug;
+              body = value;
+              const _URL = URL;
+              const self = this;
+              const self2 = this;
+              const uRL = new URL(body.body.seo.canonical_url);
+              const pathname = uRL.pathname;
+              slug = pathname.slice(9);
               const obj9 = { type: "GUILD_DISCOVERY_SLUG_FETCH_SUCCESS", slug };
-              obj = closure_130_1(closure_130_2[5]);
-              obj.dispatch(obj9);
+              const obj7 = closure_130_1(closure_130_2[5]);
+              obj7.dispatch(obj9);
               c3 = 0;
             }
             c5 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp21) {
+        } catch (tmp11) {
           if (0 === c3) {
             c5 = 3;
-            throw tmp21;
+            throw tmp11;
           } else {
             c4 = 1;
           }

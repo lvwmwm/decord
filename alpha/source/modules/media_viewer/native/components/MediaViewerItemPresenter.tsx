@@ -1,10 +1,10 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 13945
+// Function ID: 13946
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 13933, 8618, 13932, 4909, 4910, 2]
+// Dependencies: [19, 17, 21, 13944, 8619, 13943, 4909, 4910, 2]
 // Exports: default
 
-// Module 13934 (MediaViewerItemPresenter)
+// Module 13945 (MediaViewerItemPresenter)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8866
+// Function ID: 8867
 // Name: GlobalDiscoveryServersConstants
 // Dependencies: [1104, 1128, 2]
 // Exports: getLanguageOptions
 
-// Module 8865 (GlobalDiscoveryServersConstants)
+// Module 8866 (GlobalDiscoveryServersConstants)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;

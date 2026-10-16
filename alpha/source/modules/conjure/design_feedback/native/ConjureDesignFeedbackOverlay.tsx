@@ -1,17 +1,17 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11644
+// Function ID: 11645
 // Name: ConjureDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 5118, 11648, 10933, 10957, 1128, 3865, 5149, 2]
+// Dependencies: [32, 19, 17, 21, 5154, 587, 558, 576, 5118, 11645, 10930, 10954, 1128, 3865, 5150, 2]
 
-// Module 11647 (ConjureDesignFeedbackOverlay)
+// Module 11644 (ConjureDesignFeedbackOverlay)
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 11648 */;
+import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 11645 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -482,7 +482,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
     tmp24Result2 = tmp24(tmp27, obj6);
   }
   items6[1] = tmp24Result2;
-  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5149).Text, obj8) };
+  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5150).Text, obj8) };
   obj8 = { variant: "text-sm/medium", color: "text-default", style: tmp.hintText, children: stringResult };
   items6[2] = closure_8(first2, obj7);
   return closure_8(tmp25, obj);

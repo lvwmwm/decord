@@ -1,25 +1,25 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12790
+// Function ID: 12791
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1207, 1206, 21, 5153, 587, 558, 576, 5091, 5427, 12785, 8468, 12786, 1384, 7217, 7717, 6136, 6407, 12787, 5028, 2044, 10702, 1498, 2]
+// Dependencies: [32, 19, 17, 1207, 1206, 21, 5154, 587, 558, 576, 5091, 5428, 12791, 8469, 12792, 1384, 7219, 7718, 6137, 6409, 12793, 5028, 2044, 10699, 1498, 2]
 
-// Module 12784 (ForumPostMedia)
+// Module 12790 (ForumPostMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1498 */;
 import shared from "shared" /* 5028 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5427 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10702 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 12785 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12787 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5428 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10699 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 12791 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -309,7 +309,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
     let tmp21;
     if (cResult[0] !== obscureReason) {
       const obj3 = {};
-      const tmp24 = ref(12786);
+      const tmp24 = ref(12792);
       const merged = Object.assign(obscureReason);
       const tmp28 = closure_9(tmp24, obj3);
       cResult[0] = obscureReason;
@@ -346,7 +346,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp(7217).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp(7219).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       let tmp30;
       if (shouldAgeVerifyForReason) {
@@ -471,7 +471,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(12786);
+    const tmp19 = ref(12792);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;
@@ -490,7 +490,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7217).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7219).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj5 = { style: items, ref, children: tmp12(require("Pressables").PressableOpacity, obj6) };

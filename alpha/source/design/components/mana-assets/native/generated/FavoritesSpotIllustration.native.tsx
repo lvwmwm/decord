@@ -1,13 +1,13 @@
 // Module ID: 10567
 // Function ID: 10568
 // Name: FavoritesSpotIllustration
-// Dependencies: [19, 21, 10568, 10569, 10570, 558, 576, 6495, 5091, 2]
+// Dependencies: [19, 21, 10568, 10569, 10570, 558, 576, 6497, 5091, 2]
 
 // Module 10567 (FavoritesSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import react_native from "react-native" /* 6495 */;
+import react_native from "react-native" /* 6497 */;
 import _modDef10568 from "module_10568" /* 10568 */;
 import _modDef10569 from "module_10569" /* 10569 */;
 import _modDef10570 from "module_10570" /* 10570 */;

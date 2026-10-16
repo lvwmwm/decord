@@ -1,18 +1,18 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12083
+// Function ID: 12084
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5143, 21, 5153, 558, 576, 504, 4909, 5154, 683, 6465, 5453, 2]
+// Dependencies: [32, 19, 17, 5144, 21, 5154, 558, 576, 504, 4909, 5155, 683, 6467, 5454, 2]
 
-// Module 12084 (ConjureShimmer)
+// Module 12083 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
                 }
                 obj6 = { style: closure_5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
                 obj7 = { children: renderFace() };
-                tmp32 = require("module_6465");
+                tmp32 = require("module_6467");
                 obj8 = { style: items1, children: closure_8(require("LinearGradient"), obj10) };
                 items1 = [tmp4.band, , ];
                 const obj9 = { width: result };
@@ -492,8 +492,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(6465);
-    obj8 = { style: items4, children: closure_8(width(5453), obj10) };
+    tmp18 = width(6467);
+    obj8 = { style: items4, children: closure_8(width(5454), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;

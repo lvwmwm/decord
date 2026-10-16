@@ -1,13 +1,13 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18400
+// Function ID: 18401
 // Name: showTakeoverModal
-// Dependencies: [10630, 10637, 6152, 16718, 2002, 2]
+// Dependencies: [10627, 10634, 6153, 16732, 2002, 2]
 // Exports: showTakeoverModal
 
-// Module 18390 (showTakeoverModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import Constants from "Constants" /* 10630 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10637 */;
+// Module 18400 (showTakeoverModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import Constants from "Constants" /* 10627 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10634 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -26,6 +26,6 @@ export const showTakeoverModal = function showTakeoverModal(arg0) {
   if (obj.isEligibleForInappropriateConversationWarning({ location: "takeover-modal" })) {
     const obj3 = { warningId, warningType, senderId, channelId };
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(16718, tmp2.paths), obj3, TAKEOVER_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(16732, tmp2.paths), obj3, TAKEOVER_MODAL_KEY);
   }
 };

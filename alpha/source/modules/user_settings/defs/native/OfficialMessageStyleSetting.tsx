@@ -1,18 +1,18 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16322
+// Function ID: 16323
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 5143, 8213, 558, 576, 504, 15383, 1128, 11006, 2]
+// Dependencies: [19, 5144, 8214, 558, 576, 504, 15393, 1128, 11003, 2]
 // Exports: onOfficialMessageStyleSettingValueChange
 
-// Module 16308 (OfficialMessageStyleSetting)
+// Module 16322 (OfficialMessageStyleSetting)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15383 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15393 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

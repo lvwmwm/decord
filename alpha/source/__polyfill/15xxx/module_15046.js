@@ -1,19 +1,9 @@
 // Module ID: 15046
 // Function ID: 15047
-// Dependencies: [15043]
+// Dependencies: [15038]
 
 // Module 15046
-import _mod15043 from "module_15043" /* 15043 */;
-
-let set;
+import _mod15038 from "module_15038" /* 15038 */;
 
 
-export default (arg0, arg1) => {
-  set = new _mod15043(arg0, arg1).set;
-  return set.map((arr) => {
-    const mapped = arr.map((value) => value.value);
-    const str = mapped.join(" ");
-    const str2 = str.trim();
-    return str2.split(" ");
-  });
-};
+export default (arg0, arg1, arg2) => 0 === _mod15038(arg0, arg1, arg2);

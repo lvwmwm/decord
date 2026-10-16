@@ -1,10 +1,10 @@
-// Module ID: 9354
-// Function ID: 9355
+// Module ID: 9355
+// Function ID: 9356
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2133, 1392, 2065, 1394, 21, 1385, 587, 5153, 558, 9355, 7390, 4997, 2052, 1128, 504, 8537, 8580, 8591, 5028, 683, 4828, 9397, 9403, 6285, 9404, 9405, 6193, 5118, 13847, 2002, 13848, 12082, 3865, 13851, 13853, 9266, 7315, 13850, 5453, 2]
+// Dependencies: [19, 17, 2133, 1392, 2065, 1394, 21, 1385, 587, 5154, 558, 9356, 7392, 4997, 2052, 1128, 504, 8538, 8581, 8592, 5028, 683, 4828, 9398, 9404, 6298, 9405, 9406, 6194, 5118, 13858, 2002, 13859, 12081, 3865, 13862, 13864, 9267, 7317, 13861, 5454, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9354 (YouBannerDecorations)
+// Module 9355 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
@@ -13,16 +13,16 @@ import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import QuestTypes from "QuestTypes" /* 6193 */;
-import useTrialOffer from "useTrialOffer" /* 7390 */;
-import PromotionsHooks from "PromotionsHooks" /* 9355 */;
-import tracking_Tracking from "tracking/Tracking" /* 9404 */;
-import QuestUtils from "QuestUtils" /* 9405 */;
+import QuestTypes from "QuestTypes" /* 6194 */;
+import useTrialOffer from "useTrialOffer" /* 7392 */;
+import PromotionsHooks from "PromotionsHooks" /* 9356 */;
+import tracking_Tracking from "tracking/Tracking" /* 9405 */;
+import QuestUtils from "QuestUtils" /* 9406 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16718
+// Function ID: 16719
 // Name: DesignTogglesActions
-// Dependencies: [6426, 584, 2]
+// Dependencies: [6428, 584, 2]
 // Exports: clearAll, toggle
 
-// Module 16704 (DesignTogglesActions)
+// Module 16718 (DesignTogglesActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DesignTogglesStore from "DesignTogglesStore" /* 6426 */;
+import DesignTogglesStore from "DesignTogglesStore" /* 6428 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesActions.tsx");

@@ -1,25 +1,49 @@
 // Module ID: 12418
 // Function ID: 12419
-// Dependencies: [12299]
-// Exports: vercelWaitUntil
+// Dependencies: [12419]
+// Exports: isNodeEnv, loadModule
 
 // Module 12418
-import _mod12299 from "module_12299" /* 12299 */;
+import _mod12419 from "module_12419" /* 12419 */;
 
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
+}
 
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
-  const obj = _mod12299.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
-  if (obj) {
-    if (obj.get) {
-      let obj1;
-      if (obj.get()) {
-        obj1 = obj.get();
-      }
-      const tmp = obj1 && obj1.waitUntil;
-      if (tmp) {
-        obj1.waitUntil(arg0);
-      }
+export { dynamicRequire };
+export const isNodeEnv = function isNodeEnv() {
+  const obj = _mod12419;
+  let tmp2 = !obj.isBrowserBundle();
+  obj.isBrowserBundle();
+  if (tmp2) {
+    const _Object = Object;
+    const _process = process;
+    let num = 0;
+    const call = toString.call;
+    if (typeof process !== "undefined") {
+      num = process;
+    }
+    tmp2 = "[object process]" === call(num);
+  }
+  return tmp2;
+};
+export const loadModule = function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  let tmp2;
+  try {
+    tmp2 = dynamicRequire(tmp, arg0);
+  } catch (err) {
+  }
+  const tmp4 = tmp2;
+  if (!tmp4) {
+    try {
+      const _HermesInternal = HermesInternal;
+      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+    } catch (err) {
     }
   }
-  obj1 = {};
+  return tmp2;
 };

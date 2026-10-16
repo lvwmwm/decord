@@ -1,10 +1,10 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16326
+// Function ID: 16327
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 19, 1087, 1411, 6893, 8518, 8515, 1267, 1412, 2]
+// Dependencies: [5, 19, 1087, 1411, 6895, 8519, 8516, 1267, 1412, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16312 (useDisplayNameStylesHandleApply)
+// Module 16326 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

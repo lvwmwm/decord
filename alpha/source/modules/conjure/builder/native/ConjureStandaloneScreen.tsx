@@ -1,21 +1,21 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11516
+// Function ID: 11517
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 2128, 2090, 4809, 7143, 1087, 21, 558, 576, 1505, 11520, 504, 6285, 10922, 6423, 1128, 3865, 11521, 11608, 12259, 6910, 11635, 2]
+// Dependencies: [32, 19, 2128, 2090, 4809, 7145, 1087, 21, 558, 576, 1505, 11517, 504, 6298, 10919, 6425, 1128, 3865, 11518, 11605, 12265, 6912, 11632, 2]
 
-// Module 11519 (ConjureStandaloneScreen)
+// Module 11516 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1087 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11520 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11521 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11608 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12259 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11517 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 11518 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11605 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12265 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7143 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7145 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -455,8 +455,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     render() {
       let items;
       const obj = { children: items };
+      items = [, ];
       const obj2 = { projectId: stateFromStores, sceneProjectId: "Array", openedProjectIdRef };
-      items = [authStore(closure_13, obj2), ];
+      items[0] = authStore(closure_13, obj2);
       const obj3 = { guildId };
       items[1] = authStore(ConjureProjectListDefault, obj3);
       return authStore2(unpackModuleId, obj);

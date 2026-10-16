@@ -1,10 +1,10 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11016
+// Function ID: 11017
 // Name: getMessageJumpData
 // Dependencies: [32, 19, 1501, 1392, 558, 576, 1384, 1899, 5086, 11, 2]
 // Exports: default
 
-// Module 11019 (getMessageJumpData)
+// Module 11016 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import flow_Client from "flow/Client" /* 5086 */;

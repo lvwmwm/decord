@@ -1,236 +1,75 @@
 // Module ID: 12343
 // Function ID: 12344
-// Dependencies: [32, 12344, 12304, 12305, 12301]
-// Exports: normalizeUrlToBase
+// Dependencies: [12336, 12331, 12344, 12332, 12304]
+// Exports: sampleSpan
 
 // Module 12343
-import _mod12301 from "module_12301" /* 12301 */;
-import _mod12304 from "module_12304" /* 12304 */;
-import _mod12305 from "module_12305" /* 12305 */;
-import memoBuilder from "memoBuilder" /* 12344 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12331 from "module_12331" /* 12331 */;
+import _mod12332 from "module_12332" /* 12332 */;
+import _mod12336 from "module_12336" /* 12336 */;
+import _mod12344 from "module_12344" /* 12344 */;
 
-let hasOwnProperty;
 
-function normalize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 100;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = Infinity;
-  }
-  try {
-    return visit("", arg0, num, num2);
-  } catch (tmp5) {
-    const _HermesInternal = HermesInternal;
-    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
-    return obj;
-  }
-}
-function visit(arg0, __sentry_skip_normalization__) {
-  function stringifyValue(arg0, _events) {
-    function getConstructorName(_events) {
-      const prototypeOf = Object.getPrototypeOf(_events);
-      let str = "null prototype";
-      if (prototypeOf) {
-        str = prototypeOf.constructor.name;
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  const obj = _mod12336;
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    let num;
+    let items3;
+    const tmpResult = _mod12331;
+    const isolationScope = tmpResult.getIsolationScope();
+    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
+    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    const merged = Object.assign(normalizedRequest);
+    if (typeof tracesSampler.tracesSampler === "function") {
+      num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
+    } else {
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
       }
-      return str;
     }
-    try {
-      let str = "domain";
-      if ("domain" === arg0) {
-        if (_events) {
-          if (typeof _events === "object") {
-            if (_events._events) {
-              return "[Domain]";
-            }
-          }
-        }
+    const tmpResult2 = _mod12344;
+    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (_mod12332.DEBUG_BUILD) {
+        const logger3 = tmp(12304).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
       }
-      if ("domainEmitter" === arg0) {
-        return "[DomainEmitter]";
+      const items = [false];
+      items3 = items;
+    } else if (parseSampleRateResult) {
+      let items2;
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        items2 = items1;
       } else {
-        if (undefined !== global) {
-          if (_events === global) {
-            return "[Global]";
-          }
+        if (_mod12332.DEBUG_BUILD) {
+          const logger2 = tmp(12304).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
         }
-        const _window = window;
-        if (typeof window !== "undefined") {
-          const _window2 = window;
-          if (_events === window) {
-            return "[Window]";
-          }
-        }
-        const _document = document;
-        if (typeof document !== "undefined") {
-          const _document2 = document;
-          if (_events === document) {
-            return "[Document]";
-          }
-        }
-        const obj = _mod12305;
-        if (obj.isVueViewModel(_events)) {
-          return "[VueViewModel]";
-        } else {
-          const tmp4Result = _mod12305;
-          if (tmp4Result.isSyntheticEvent(_events)) {
-            return "[SyntheticEvent]";
-          } else {
-            if (typeof _events === "number") {
-              const _Number = Number;
-              if (!Number.isFinite(_events)) {
-                const _HermesInternal = HermesInternal;
-                return "[" + _events + "]";
-              }
-            }
-            if (typeof _events === "function") {
-              const _HermesInternal4 = HermesInternal;
-              const tmp4Result2 = _mod12301;
-              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
-            } else if (typeof _events === "symbol") {
-              const _String2 = String;
-              const _HermesInternal3 = HermesInternal;
-              return "[" + String(_events) + "]";
-            } else if (typeof _events === "bigint") {
-              const _String = String;
-              const _HermesInternal2 = HermesInternal;
-              return "[BigInt: " + String(_events) + "]";
-            } else {
-              let combined;
-              const _HermesInternal6 = HermesInternal;
-              const obj4 = /^HTML(\w*)Element$/;
-              const tmp9 = getConstructorName(_events);
-              if (obj4.test(tmp9)) {
-                combined = concat(tmp10, "]");
-              } else {
-                combined = concat(tmp10, "]");
-              }
-              return combined;
-            }
-          }
-        }
+        items2 = [false, parseSampleRateResult];
       }
-    } catch (tmp7) {
-      const _HermesInternal5 = HermesInternal;
-      return "**non-serializable** (" + tmp7 + ")";
+      items3 = items2;
+    } else {
+      if (_mod12332.DEBUG_BUILD) {
+        const logger = tmp(12304).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = logger.log;
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
+        }
+        log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
     }
+    return items3;
+  } else {
+    const items4 = [false];
+    return items4;
   }
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = Infinity;
-  }
-  let num2 = arg3;
-  if (arg3 === undefined) {
-    num2 = Infinity;
-  }
-  let memoBuilderResult = arg4;
-  if (arg4 === undefined) {
-    let obj = memoBuilder;
-    memoBuilderResult = obj.memoBuilder();
-  }
-  _slicedToArray(memoBuilderResult, 2);
-  if (null != __sentry_skip_normalization__) {
-    const items = ["boolean", "string"];
-    if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ === "number") {
-        let _Number = Number;
-      }
-      let tmp9 = arg0;
-      let str = stringifyValue(arg0, __sentry_skip_normalization__);
-      if (str.startsWith("[object ")) {
-        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
-          return __sentry_skip_normalization__;
-        } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
-            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
-          }
-          if (0 === num) {
-            return str.replace("object ", "");
-          } else if (tmp6(__sentry_skip_normalization__)) {
-            return "[Circular ~]";
-          } else {
-            if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON === "function") {
-                try {
-                  const tmp10 = visit;
-                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
-                } catch (err) {
-                }
-              }
-            }
-            const _Array = Array;
-            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
-            const obj2 = _mod12304;
-            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              while (keys[tmp] !== undefined) {
-                let _Object = Object;
-                hasOwnProperty = Object.prototype.hasOwnProperty;
-                let tmp28 = tmp21;
-                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
-                  continue;
-                } else {
-                  if (tmp20 >= num2) {
-                    let str4 = "[MaxProperties ~]";
-                    tmp14[tmp21] = "[MaxProperties ~]";
-                    break;
-                  } else {
-                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
-                    let num6 = tmp20 + 1;
-                    continue;
-                  }
-                  break;
-                }
-                break;
-              }
-            }
-            tmp7(__sentry_skip_normalization__);
-            return tmp14;
-          }
-        }
-      } else {
-        return str;
-      }
-    }
-  }
-  return __sentry_skip_normalization__;
-}
-function normalizeToSize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 3;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = 102400;
-  }
-  let tmp = normalize(arg0, num);
-  const str = encodeURI(JSON.stringify(tmp));
-  if (~(-str.split(/%..|./).length) > num2) {
-    tmp = normalizeToSize(arg0, num - 1, num2);
-  }
-  return tmp;
-}
-
-export { normalize };
-export { normalizeToSize };
-export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
-  let str2 = arg0;
-  str = str.replace(/\\/g, "/");
-  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  try {
-    const _decodeURI = decodeURI;
-    str2 = decodeURI(arg0);
-  } catch (err) {
-  }
-  const str3 = str2.replace(/\\/g, "/");
-  const replace = str3.replace(/webpack:\/?/g, "").replace;
-  str3.replace(/webpack:\/?/g, "");
-  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
-  return replace(regExp, "app:///");
 };

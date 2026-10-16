@@ -123,10 +123,10 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
     }
   }
 };
-export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(arg0, defaultLocale) {
+export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, currentLocale) {
   const obj = _Parser;
-  const parsed = obj.parse(arg0, { ignoreTag: true });
-  const internalIntlMessage = new _mod1167.InternalIntlMessage(parsed, defaultLocale);
+  const parsed = obj.parse(acknowledgedBadgeLabel, { ignoreTag: true });
+  const internalIntlMessage = new _mod1167.InternalIntlMessage(parsed, currentLocale);
   return internalIntlMessage;
 };
 export const useSyncMessages = tmp2;

@@ -1,14 +1,14 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11796
+// Function ID: 11797
 // Name: SubmittingOverlay
-// Dependencies: [21, 5153, 587, 558, 576, 4909, 5440, 5444, 5457, 2]
+// Dependencies: [21, 5154, 587, 558, 576, 4909, 5441, 5445, 5458, 2]
 
-// Module 11799 (SubmittingOverlay)
+// Module 11796 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
-import createStyles from "createStyles" /* 5153 */;
+import spring from "spring" /* 5441 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let tmp3;
 
 let obj2;
 let tmp;
-const springPresets = tmp(5444);
+const springPresets = tmp(5445);
 const jsx = Fragment.jsx;
 let obj = { ellipsis: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
@@ -45,10 +45,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
       return obj;
     }
   }
-  S.__closure = { withSpring: submitting(5440).withSpring, submitting, SUBTLE_SPRING: submitting(5444).SUBTLE_SPRING };
+  S.__closure = { withSpring: submitting(5441).withSpring, submitting, SUBTLE_SPRING: submitting(5445).SUBTLE_SPRING };
   S.__workletHash = 17050905766844;
   S.__initData = __initData;
-  ({ withSpring: submitting(5440).withSpring, submitting, SUBTLE_SPRING: submitting(5444).SUBTLE_SPRING });
+  ({ withSpring: submitting(5441).withSpring, submitting, SUBTLE_SPRING: submitting(5445).SUBTLE_SPRING });
   const animatedStyle = obj2.useAnimatedStyle(S);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
         tmp6 = cResult[3];
       }
       if (cResult[4] !== submitting) {
-        const tmp8 = submitting && jsx(tmp(5457).Ellipsis, { variant: "active", size: "md" });
+        const tmp8 = submitting && jsx(tmp(5458).Ellipsis, { variant: "active", size: "md" });
         let num = 4;
         cResult[4] = submitting;
         cResult[5] = tmp8;
@@ -115,16 +115,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
     const obj = { opacity: withSpring(num, springPresets.SUBTLE_SPRING, "animate-always") };
     return obj;
   };
-  fn.__closure = { withSpring: submitting(5440).withSpring, submitting, SUBTLE_SPRING: submitting(5444).SUBTLE_SPRING };
+  fn.__closure = { withSpring: submitting(5441).withSpring, submitting, SUBTLE_SPRING: submitting(5445).SUBTLE_SPRING };
   fn.__workletHash = 15672049349439;
   fn.__initData = __initData2;
-  ({ withSpring: submitting(5440).withSpring, submitting, SUBTLE_SPRING: submitting(5444).SUBTLE_SPRING });
+  ({ withSpring: submitting(5441).withSpring, submitting, SUBTLE_SPRING: submitting(5445).SUBTLE_SPRING });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [style, tmp.ellipsis, animatedStyle];
   const View = ReanimatedRexportDefault.View;
   const tmp2 = submitting;
   if (submitting) {
-    submitting = tmp5(tmp2(5457).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(tmp2(5458).Ellipsis, { variant: "active", size: "md" });
   }
   return <View style={items}>{submitting}</View>;
 });

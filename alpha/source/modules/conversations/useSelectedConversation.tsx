@@ -1,10 +1,10 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9590
+// Function ID: 9591
 // Name: useSelectedConversation
-// Dependencies: [9575, 558, 576, 504, 2]
+// Dependencies: [9574, 558, 576, 504, 2]
 
-// Module 9591 (useSelectedConversation)
-import SelectedConversationStore from "SelectedConversationStore" /* 9575 */;
+// Module 9590 (useSelectedConversation)
+import SelectedConversationStore from "SelectedConversationStore" /* 9574 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelecte
   }
   if (cResult[1] !== arg0) {
     const fn = function s() {
-      const selectedConversation = SelectedConversationStore.getSelectedConversation(closure_0);
-      return selectedConversation;
+      const conversation = SelectedConversationStore.getConversation(closure_0);
+      return conversation;
     };
     const items1 = [arg0];
     cResult[1] = arg0;
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelecte
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    const selectedConversation = SelectedConversationStore.getSelectedConversation(closure_0);
-    return selectedConversation;
+    const conversation = SelectedConversationStore.getConversation(closure_0);
+    return conversation;
   }, items1);
 });
 const result = size.fileFinishedImporting("modules/conversations/useSelectedConversation.tsx");

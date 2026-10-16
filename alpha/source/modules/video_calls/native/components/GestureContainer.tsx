@@ -1,20 +1,20 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11449
+// Function ID: 11450
 // Name: GestureContainer
-// Dependencies: [19, 17, 10602, 11146, 21, 5153, 587, 558, 576, 1499, 4909, 6557, 6152, 5154, 1202, 2]
+// Dependencies: [19, 17, 10599, 11143, 21, 5154, 587, 558, 576, 1499, 4909, 6559, 6153, 5155, 1202, 2]
 
-// Module 11452 (GestureContainer)
+// Module 11449 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import ChannelCallStore from "ChannelCallStore" /* 10602 */;
+import timing from "timing" /* 5155 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import ChannelCallStore from "ChannelCallStore" /* 10599 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11146 */;
-import createStyles from "createStyles" /* 5153 */;
+import Constants from "Constants" /* 11143 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
   const tmp7 = sharedValue;
   const tmpResult = tmp(4909);
   sharedValue = tmpResult.useSharedValue(0);
-  const Gesture = tmp(6557).Gesture;
+  const Gesture = tmp(6559).Gesture;
   const PanResult = Gesture.Pan();
   const enabledResult = PanResult.enabled(tmp6);
   class L {
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(4909).runOnJS, ModalActionCreators: sharedValue(6152), withTiming: tmp(5154).withTiming, DECELERATED_EASING: tmp(1202).DECELERATED_EASING };
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(4909).runOnJS, ModalActionCreators: sharedValue(6153), withTiming: tmp(5155).withTiming, DECELERATED_EASING: tmp(1202).DECELERATED_EASING };
   O.__closure = obj3;
   O.__workletHash = 4811943867759;
   O.__initData = __initData;
@@ -156,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
     }
     cResult[4] = failOffsetXResult;
     cResult[5] = tmp11;
-    cResult[6] = jsx(tmp(6557).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
-    const tmp15 = jsx(tmp(6557).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
+    cResult[6] = jsx(tmp(6559).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
+    const tmp15 = jsx(tmp(6559).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
   }
   cResult[1] = animatedStyle;
   cResult[2] = children;
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
   const height = sharedValue(1499)().height;
   let obj = height(4909);
   sharedValue = obj.useSharedValue(0);
-  const Gesture = height(6557).Gesture;
+  const Gesture = height(6559).Gesture;
   const fn = function h(translationY) {
     const result = sharedValue.set(1 - Math.pow(1 - Math.max(Math.min(translationY.translationY, c9), 0) / c9, 3));
   };
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(4909).runOnJS, ModalActionCreators: sharedValue(6152), withTiming: height(5154).withTiming, DECELERATED_EASING: height(1202).DECELERATED_EASING };
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(4909).runOnJS, ModalActionCreators: sharedValue(6153), withTiming: height(5155).withTiming, DECELERATED_EASING: height(1202).DECELERATED_EASING };
   T.__closure = obj3;
   T.__workletHash = 6850090802761;
   T.__initData = __initData4;
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureConta
   fn2.__workletHash = 15988962645633;
   fn2.__initData = __initData6;
   const animatedStyle = obj9.useAnimatedStyle(fn2);
-  const GestureDetector = height(6557).GestureDetector;
+  const GestureDetector = height(6559).GestureDetector;
   return <View style={tmp.background}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/video_calls/native/components/GestureContainer.tsx");

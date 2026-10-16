@@ -1,11 +1,11 @@
-// Module ID: 8466
-// Function ID: 8467
+// Module ID: 8467
+// Function ID: 8468
 // Name: ChannelLinkUrls
-// Dependencies: [32, 5484, 2]
+// Dependencies: [32, 5485, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 8466 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 5484 */;
+// Module 8467 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 5485 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -16,22 +16,22 @@ export const parseChannelLinkUrl = function parseChannelLinkUrl(url) {
   const match = MEDIA_POST_URL_RE.exec(url);
   if (null != match) {
     const tmp6 = _slicedToArray(match, 5);
-    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2] };
+    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2], conversationId: "format" };
   } else {
-    const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
-    const match1 = CHANNEL_OR_MESSAGES_URL_RE.exec(url);
+    const CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE;
+    const match1 = CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE.exec(url);
     if (null == match1) {
       return null;
     } else {
-      const tmp9 = _slicedToArray(match1, 4);
+      const tmp9 = _slicedToArray(match1, 5);
       let tmp4 = null;
       if (null != tmp9[2]) {
         tmp4 = null;
         const obj = /\D/;
         if (!obj.test(tmp9[2])) {
           if (null == tmp9[3]) {
-            tmp4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array" };
-            const obj4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array" };
+            tmp4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array", conversationId: tmp13 };
+            const obj4 = { guildId: tmp10, channelId: tmp9[2], messageId: tmp9[3], parentChannelId: "Array", conversationId: tmp13 };
           } else {
             tmp4 = null;
           }

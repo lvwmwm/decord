@@ -1,9 +1,9 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16338
+// Function ID: 16339
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1410, 21, 5153, 587, 558, 576, 4909, 1409, 1105, 5119, 5118, 1128, 16319, 5441, 16325, 15542, 7063, 2]
+// Dependencies: [19, 17, 1410, 21, 5154, 587, 558, 576, 4909, 1409, 1105, 5119, 5118, 1128, 16333, 5442, 16339, 15552, 7065, 2]
 
-// Module 16324 (DisplayNameStylesGummyCustomColorSheet)
+// Module 16338 (DisplayNameStylesGummyCustomColorSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
@@ -12,7 +12,7 @@ import HapticUtils from "HapticUtils" /* 5119 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,9 +88,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       tmp12 = cResult[5];
     }
     if (cResult[6] !== tmp9) {
-      let obj3 = { title: tmp10, trailing: closure_7(onSelect(5441).Button, obj4) };
+      let obj3 = { title: tmp10, trailing: closure_7(onSelect(5442).Button, obj4) };
       obj4 = { variant: "primary", size: "sm", text: tmp12, onPress: tmp9 };
-      const tmp17 = sharedValue(16319);
+      const tmp17 = sharedValue(16333);
       const tmp18 = closure_7(tmp17, obj3);
       cResult[6] = tmp9;
       cResult[7] = tmp18;
@@ -100,7 +100,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     }
     if (cResult[8] !== sharedValue) {
       const obj5 = { hue: sharedValue };
-      const tmp22 = closure_7(sharedValue(16325), obj5);
+      const tmp22 = closure_7(sharedValue(16339), obj5);
       cResult[8] = sharedValue;
       cResult[9] = tmp22;
       tmp19 = tmp22;
@@ -120,7 +120,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
         }
         if (cResult[16] !== sharedValue) {
           const obj6 = { hue: sharedValue, onPanFinalize: first, saturation, lightness, fullWidth: true };
-          const tmp36 = closure_7(sharedValue(15542), obj6);
+          const tmp36 = closure_7(sharedValue(15552), obj6);
           cResult[16] = sharedValue;
           cResult[17] = tmp36;
           tmp31 = tmp36;
@@ -146,7 +146,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                 return tmp45;
               }
               const obj7 = { header: tmp14, children: tmp41 };
-              const tmp47 = closure_7(onSelect(7063).BottomSheet, obj7);
+              const tmp47 = closure_7(onSelect(7065).BottomSheet, obj7);
               cResult[25] = tmp41;
               cResult[26] = tmp14;
               cResult[27] = tmp47;
@@ -231,18 +231,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     obj3.hideActionSheet();
   }, items);
   let obj2 = { header: closure_7(tmp7, obj3), children: closure_8(View, obj5) };
-  BottomSheet = onSelect(7063).BottomSheet;
+  BottomSheet = onSelect(7065).BottomSheet;
   obj3 = { title: intl.string(onSelect(1128).t.WTqQ5e), trailing: closure_7(Button, obj4) };
-  tmp7 = sharedValue(16319);
+  tmp7 = sharedValue(16333);
   intl = onSelect(1128).intl;
   obj4 = { variant: "primary", size: "sm", text: intl2.string(onSelect(1128).t.XqMe3N), onPress: callback1 };
-  Button = onSelect(5441).Button;
+  Button = onSelect(5442).Button;
   intl2 = onSelect(1128).intl;
   obj5 = { style: tmp.body, children: items1 };
   const obj6 = { style: tmp.previewWrapper, children: closure_7(View, obj7) };
-  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16325), { hue: sharedValue }) };
+  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16339), { hue: sharedValue }) };
   items1 = [closure_7(View, obj6), ];
-  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(15542), obj9) };
+  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(15552), obj9) };
   obj9 = { hue: sharedValue, onPanFinalize: callback, saturation, lightness, fullWidth: true };
   items1[1] = closure_7(View, obj8);
   return closure_7(BottomSheet, obj2);

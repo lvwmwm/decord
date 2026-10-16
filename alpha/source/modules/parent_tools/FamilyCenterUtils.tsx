@@ -1,16 +1,16 @@
-// Module ID: 7961
-// Function ID: 7962
+// Module ID: 7962
+// Function ID: 7963
 // Name: FamilyCenterUtils
-// Dependencies: [7477, 7478, 1128, 2571, 4761, 7479, 2]
+// Dependencies: [7479, 7480, 1128, 2571, 4761, 7481, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 7961 (FamilyCenterUtils)
+// Module 7962 (FamilyCenterUtils)
 import intl5 from "intl" /* 1128 */;
 import _modDef2571 from "module_2571" /* 2571 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7479 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7478 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7481 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7480 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f98272 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f98335 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -181,11 +181,11 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
 };
 export const hasActiveParentLinks = function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f98272);
+  return values.some(f98335);
 };
 export const isParentallyControlled = function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f98272);
+  return values.some(f98335);
 };
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;

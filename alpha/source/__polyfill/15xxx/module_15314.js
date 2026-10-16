@@ -1,11 +1,19 @@
 // Module ID: 15314
 // Function ID: 15315
-// Dependencies: [15315, 15322]
+// Dependencies: [15266, 15273]
 
 // Module 15314
-import _mod15315 from "module_15315" /* 15315 */;
-import _mod15322 from "module_15322" /* 15322 */;
+import _mod15266 from "module_15266" /* 15266 */;
+import _mod15273 from "module_15273" /* 15273 */;
 
+let closure_2 = _mod15266("keys");
 
-export const URL = _mod15315;
-export const URLSearchParams = _mod15322;
+export default (arg0) => {
+  let tmp2 = closure_2[arg0];
+  if (!tmp2) {
+    const tmp5 = _mod15273(arg0);
+    tmp[arg0] = tmp5;
+    tmp2 = tmp5;
+  }
+  return tmp2;
+};

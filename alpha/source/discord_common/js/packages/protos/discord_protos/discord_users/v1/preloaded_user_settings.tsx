@@ -921,7 +921,7 @@ const items1 = [];
 const obj28 = { no: 1, name: "guilds", kind: "map", K: 6, V: { kind: "message", T: T2 } };
 items1[0] = obj28;
 let tmp10 = new "CUSTOM"("discord_protos.discord_users.v1.AllGuildSettings", items1, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite2 = tmp10;
+const prioritySpeakerDucking = tmp10;
 const MessageType4 = _mod1212.MessageType;
 class GuildDismissibleContentState$Type extends MessageType4 {
   constructor() {
@@ -6646,7 +6646,7 @@ class SoundboardSettings$Type extends MessageType37 {
 const prototype37 = SoundboardSettings$Type.prototype;
 const items30 = [{ no: 1, name: "volume", kind: "scalar", T: 2 }];
 const tmp44 = new "binaryReadMap12"("discord_protos.discord_users.v1.SoundboardSettings", items30, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-internalBinaryWrite2 = tmp44;
+let internalBinaryWrite2 = tmp44;
 const MessageType38 = _mod1212.MessageType;
 class CustomCallSound$Type extends MessageType38 {
   constructor() {

@@ -1,23 +1,23 @@
-// Module ID: 9536
-// Function ID: 9537
+// Module ID: 9537
+// Function ID: 9538
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2068, 6302, 2119, 21, 5153, 1202, 587, 558, 576, 504, 4877, 4995, 1128, 5091, 9537, 9538, 9540, 6407, 2]
+// Dependencies: [109, 19, 17, 2068, 6304, 2119, 21, 5154, 1202, 587, 558, 576, 504, 4877, 4995, 1128, 5091, 9538, 9539, 9541, 6409, 2]
 
-// Module 9536 (PressableNavigatorBackIcon)
+// Module 9537 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9537 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9538 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9540 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9538 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9539 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9541 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -209,7 +209,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
             const obj7 = { children: closure_10(PressableOpacity, obj8) };
             obj8 = { ref: tmp8, accessibilityRole: "button", accessibilityLabel: tmp24, onPress: tmp23, style: tmp12.actionButtonPressable, children: tmp36 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(6407).PressableOpacity;
+            PressableOpacity = tmp(6409).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_10(tmp43, obj7);
             cResult[25] = tmp23;

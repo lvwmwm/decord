@@ -1,30 +1,36 @@
 // Module ID: 15233
 // Function ID: 15234
-// Dependencies: [15144, 15234]
-// Exports: getSupportedUnits
+// Dependencies: [15154, 15234]
+// Exports: getSupportedCalendars
 
 // Module 15233
 const require = globalThis.__r;
 let _require;
 
 
-export const getSupportedUnits = function getSupportedUnits(locale) {
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
   _require = locale;
-  const units = require("module_15234").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
+  const calendars = require("module_15234").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
       let str = arg1;
       if (undefined === arg1) {
         str = "en";
       }
       try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
+        }
+        return true;
       } catch (err) {
-        return false;
       }
     }
-    return isSupported(item, locale);
+    return isSupportedCalendar(item, locale);
   });
 };

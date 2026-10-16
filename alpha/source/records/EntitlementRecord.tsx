@@ -1,14 +1,14 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7336
+// Function ID: 7337
 // Name: EntitlementRecord
-// Dependencies: [1407, 6313, 1406, 1087, 4828, 7335, 2]
+// Dependencies: [1407, 6315, 1406, 1087, 4828, 7337, 2]
 
-// Module 7334 (EntitlementRecord)
+// Module 7336 (EntitlementRecord)
 import Constants from "Constants" /* 1087 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7335 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7337 */;
 import Record from "Record" /* 1407 */;
-import SKURecord from "SKURecord" /* 6313 */;
+import SKURecord from "SKURecord" /* 6315 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 

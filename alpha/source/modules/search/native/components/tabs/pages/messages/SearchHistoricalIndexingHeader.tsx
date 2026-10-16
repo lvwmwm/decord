@@ -1,15 +1,15 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 17790
+// Function ID: 17791
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2132, 9549, 21, 5153, 558, 576, 12928, 1128, 5149, 6404, 2]
+// Dependencies: [19, 2132, 9550, 21, 5154, 558, 576, 12936, 1128, 5150, 6406, 2]
 
-// Module 17780 (SearchHistoricalIndexingHeader)
+// Module 17790 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12928 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12936 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
-import SearchConstants from "SearchConstants" /* 9549 */;
-import createStyles from "createStyles" /* 5153 */;
+import SearchConstants from "SearchConstants" /* 9550 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp14) {
-        const tmp18 = jsx(searchContext(5149).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        const tmp18 = jsx(searchContext(5150).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
         cResult[11] = tmp14;
         cResult[12] = tmp18;
         tmp16 = tmp18;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6404).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6406).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;

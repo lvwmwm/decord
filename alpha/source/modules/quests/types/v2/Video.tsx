@@ -1,10 +1,10 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7622
+// Function ID: 7623
 // Name: v2/Video
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 7621 (v2/Video)
+// Module 7622 (v2/Video)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

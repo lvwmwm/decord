@@ -1,9 +1,9 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 11916
+// Function ID: 11917
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [109, 19, 17, 1504, 21, 5153, 587, 558, 576, 7115, 5118, 1202, 7062, 7063, 2]
+// Dependencies: [109, 19, 17, 1504, 21, 5154, 587, 558, 576, 7117, 5118, 1202, 7064, 7065, 2]
 
-// Module 11919 (AppLauncherCommandOptionActionSheet)
+// Module 11916 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
                     }
                   }
                 }
-                BottomSheet = tmp(7063).BottomSheet;
+                BottomSheet = tmp(7065).BottomSheet;
                 const merged = Object.assign(tmp7);
                 const tmp36 = <BottomSheet key={tmp6.name} backgroundStyles={tmp15.actionSheetBackground} scrollable={undefined === tmp8 || tmp8} startExpanded={undefined === tmp9 || tmp9} header={tmp24}>{tmp27}</BottomSheet>;
                 cResult[24] = tmp6.name;
@@ -179,9 +179,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
   const tmp2 = closure_7();
-  BottomSheet = merged(7063).BottomSheet;
+  BottomSheet = merged(7065).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(7062).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(7064).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
   return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader titleContainerStyle={tmp2.titleContainer} titleWrapperStyle={tmp2.titleWrapper} subtitleStyle={tmp2.subtitleWrapper} leading={null} title={null} subtitle={null} trailing={null} />}><View style={items}>{children}</View></BottomSheet>;

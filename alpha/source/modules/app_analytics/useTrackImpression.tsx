@@ -1,15 +1,15 @@
-// Module ID: 9202
-// Function ID: 9203
+// Module ID: 9203
+// Function ID: 9204
 // Name: useTrackImpression
-// Dependencies: [19, 2068, 2119, 4998, 1268, 1275, 1267, 584, 5168, 558, 576, 1357, 6153, 5458, 2]
+// Dependencies: [19, 2068, 2119, 4998, 1268, 1275, 1267, 584, 5169, 558, 576, 1357, 6154, 5459, 2]
 
-// Module 9202 (useTrackImpression)
+// Module 9203 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1267 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
-import useMountEffectDefault from "useMountEffect" /* 5458 */;
-import uniqueIdDefault from "uniqueId" /* 6153 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
+import useMountEffectDefault from "useMountEffect" /* 5459 */;
+import uniqueIdDefault from "uniqueId" /* 6154 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedChannelStore_mod from "SelectedChannelStore" /* 2119 */;
@@ -195,7 +195,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackImpr
   react = undefined;
   react = react.useRef(undefined);
   const ref2 = react.useRef(undefined);
-  const tmp = obj(5458)(() => {
+  const tmp = obj(5459)(() => {
     if (obj.trackOnInitialLoad) {
       let fn;
       const tmp6 = _modDef1357(ref.current, current);
@@ -239,7 +239,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackImpr
         tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = { sequenceId: tmp2(6153)("impression_") };
+        obj = { sequenceId: tmp2(6154)("impression_") };
         const merged = Object.assign(tmp5);
         trackImpression(obj, tmp.disableTrack);
         fn = () => {

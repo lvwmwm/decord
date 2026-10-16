@@ -1,25 +1,25 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12265
+// Function ID: 12266
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10901, 10906, 21, 5153, 587, 1128, 3865, 558, 576, 1505, 1633, 12035, 8758, 504, 10928, 11631, 12260, 7107, 12269, 4868, 5104, 11607, 9004, 12270, 12276, 12278, 2]
+// Dependencies: [32, 19, 17, 10898, 10903, 21, 5154, 587, 1128, 3865, 558, 576, 1505, 1633, 12032, 8759, 504, 10925, 11628, 12266, 7109, 12275, 4868, 5104, 11604, 9005, 12276, 12282, 12284, 2]
 
-// Module 12259 (ConjureDebugScene)
+// Module 12265 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
 import CopyIcon from "CopyIcon" /* 5104 */;
-import ClipboardUtils from "ClipboardUtils" /* 7107 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10901 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10928 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11631 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12269 */;
+import ClipboardUtils from "ClipboardUtils" /* 7109 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10925 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11628 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10906 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10903 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12260);
+          const tmp2Result = tmp2(12266);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12260);
+        const tmp2Result = tmp2(12266);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

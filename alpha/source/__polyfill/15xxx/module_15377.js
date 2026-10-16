@@ -1,33 +1,20 @@
 // Module ID: 15377
 // Function ID: 15378
-// Dependencies: [15360]
+// Dependencies: []
 // Exports: default
 
 // Module 15377
-import ArgType from "ArgType" /* 15360 */;
-
 
 export default () => (arg0) => {
-  const result = ArgType.assertHasLoggerPlugin(arg0);
   let closure_0 = arg0;
-  return {
-    onConnect() {
-      console.log = () => {
-        const items = [...arguments];
-        log(...items);
-        const items1 = [...items];
-        log.log.apply(items1);
-      };
-      console.warn = () => {
-        const items = [...arguments];
-        warn(...items);
-        log.warn(items[0]);
-      };
-      console.debug = () => {
-        const items = [...arguments];
-        debug(...items);
-        log.debug(items[0]);
-      };
+  let obj = {
+    features: {
+      apiResponse(request, response, tmp4Result) {
+        const obj = { request, response, duration: tmp4Result };
+        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
+        closure_0.send("api.response", obj, !tmp);
+      }
     }
   };
+  return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 10661
-// Function ID: 10662
+// Module ID: 10658
+// Function ID: 10659
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1392, 21, 558, 576, 504, 5021, 1128, 10594, 6487, 6402, 2]
+// Dependencies: [19, 1392, 21, 558, 576, 504, 5021, 1128, 10591, 6489, 6404, 2]
 
-// Module 10661 (LikelyAtoMoreTipsModalActionItems)
+// Module 10658 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     cResult[8] = stringResult;
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(10594).BellSlashIcon, {});
+    const tmp18 = jsx(senderId(10591).BellSlashIcon, {});
     cResult[9] = tmp18;
   }
   if (cResult[10] === handleMutePressed) {
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     }
     return tmp19;
   }
-  const TableRowGroup = tmp(6487).TableRowGroup;
+  const TableRowGroup = tmp(6489).TableRowGroup;
   const tmp20 = <TableRowGroup hasIcons>{null}</TableRowGroup>;
   cResult[10] = handleMutePressed;
   cResult[11] = tmp12;
@@ -100,9 +100,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(6487).TableRowGroup;
+  const TableRowGroup = senderId(6489).TableRowGroup;
   ({ label: intl.formatToPlainString(senderId(1128).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1128).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(6402).TableRow;
+  const TableRow = senderId(6404).TableRow;
   intl = senderId(1128).intl;
   intl2 = senderId(1128).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;

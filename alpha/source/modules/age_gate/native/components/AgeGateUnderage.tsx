@@ -1,20 +1,20 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17043
+// Function ID: 17044
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 6848, 1505, 6423, 6429, 1128, 6879, 6882, 7736, 6878, 2131, 5149, 5441, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 587, 558, 576, 6850, 1505, 6425, 6431, 1128, 6881, 6884, 7737, 6880, 2131, 5150, 5442, 2]
 
-// Module 17029 (AgeGateUnderage)
+// Module 17043 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import NavigatorHeader from "NavigatorHeader" /* 6423 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6848 */;
-import AuthHeaderDefault from "AuthHeader" /* 6878 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6882 */;
+import NavigatorHeader from "NavigatorHeader" /* 6425 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6850 */;
+import AuthHeaderDefault from "AuthHeader" /* 6880 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6884 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         } else {
           tmp15 = cResult[7];
         }
-        const tmpResult2 = onClose(6429);
+        const tmpResult2 = onClose(6431);
         tmpResult2.useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== (undefined !== existingUser && existingUser)) {
           let stringResult;
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         if (cResult[10] !== tmp8) {
           let tmp20 = null;
           if (!tmp8) {
-            tmp20 = closure_6(tmp7(6879), {});
+            tmp20 = closure_6(tmp7(6881), {});
           }
           cResult[10] = tmp8;
           cResult[11] = tmp20;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(7736).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7737).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;
@@ -179,12 +179,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               if (undefined !== existingUser && existingUser) {
                 const obj3 = { children: items1 };
                 const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(1128).t["3axQdB"], { days: 30 }) };
-                const Text = tmp(5149).Text;
+                const Text = tmp(5150).Text;
                 intl4 = tmp(1128).intl;
                 items1 = [closure_6(Text, obj4), ];
                 const obj5 = { style: tmp9.buttonWrapper, children: closure_6(Button, obj6) };
                 obj6 = { onPress: onClose, text: intl5.string(onClose(1128).t.JhDw5o), grow: true };
-                Button = tmp(5441).Button;
+                Button = tmp(5442).Button;
                 intl5 = tmp(1128).intl;
                 items1[1] = closure_6(View, obj5);
                 tmp40 = closure_8(closure_7, obj3);
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               tmp39 = tmp40;
             }
             const obj7 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp31 };
-            const tmp38 = closure_6(onClose(5149).Text, obj7);
+            const tmp38 = closure_6(onClose(5150).Text, obj7);
             cResult[20] = tmp9.body;
             cResult[21] = tmp31;
             cResult[22] = tmp38;

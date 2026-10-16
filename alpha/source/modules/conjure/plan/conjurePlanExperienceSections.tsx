@@ -1,13 +1,13 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12204
+// Function ID: 12205
 // Name: conjurePlanExperienceSections
-// Dependencies: [3865, 12179, 1128, 12180, 2]
-// Exports: conjurePlanDisplayedSections, conjurePlanFrameFeatures, conjurePlanRequirementGroups
+// Dependencies: [3865, 12183, 1128, 12184, 2]
+// Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanFrameFeatures, conjurePlanRequirementGroups
 
-// Module 12200 (conjurePlanExperienceSections)
+// Module 12204 (conjurePlanExperienceSections)
 import intl3 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 12180 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 12184 */;
 import size from "module_2" /* 2 */;
 
 let changes, names;
@@ -16,6 +16,9 @@ let obj = { frame: _modDef3865.Z2bt4u, overlay_widget: _modDef3865["0mGHfU"], us
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSections.tsx");
 
 export const CONJURE_PLAN_EXPERIENCE_KIND_LABELS = obj;
+export const conjurePlanExperienceIsApp = function conjurePlanExperienceIsApp(experience) {
+  return "frame" === experience.kind && true !== experience.game;
+};
 export const conjurePlanDisplayedSections = function conjurePlanDisplayedSections(experiences, commandNames) {
   let closure_0 = commandNames;
   const found = experiences.filter((kind) => "commands" === kind.kind);

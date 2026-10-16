@@ -1,19 +1,19 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11903
+// Function ID: 11904
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1504, 21, 11883, 5153, 587, 558, 576, 11788, 4909, 4877, 8494, 5091, 5149, 1202, 2]
+// Dependencies: [19, 17, 1504, 21, 11880, 5154, 587, 558, 576, 11785, 4909, 4877, 8495, 5091, 5150, 1202, 2]
 
-// Module 11906 (AppLauncherCommandViewHeader)
+// Module 11903 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8494 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11788 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 11883 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8495 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11785 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 11880 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(11788);
+    const tmpResult = scrollOffsetY(11785);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -287,7 +287,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
                   tmp38 = items1;
                 }
                 const obj8 = { lineClamp: 1, animated: true, style: tmp29, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
-                const tmp33 = closure_6(scrollOffsetY(5149).Text, obj8);
+                const tmp33 = closure_6(scrollOffsetY(5150).Text, obj8);
                 cResult[21] = tmp29;
                 cResult[22] = displayName;
                 cResult[23] = tmp33;
@@ -438,7 +438,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let obj7 = scrollOffsetY(4877);
   let str = obj7.useToken(section(587).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(8494);
+  const tmp9 = section(8495);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {
@@ -473,11 +473,11 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(4909).View, obj11), tmp16(section(11883), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(4909).View, obj11), tmp16(section(11880), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
-  const Text = tmp3(5149).Text;
+  const Text = tmp3(5150).Text;
   if (command != null) {
     displayName = command.displayName;
   }

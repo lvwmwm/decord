@@ -1,13 +1,13 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12088
+// Function ID: 12089
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 558, 576, 4909, 5154, 2]
+// Dependencies: [19, 21, 558, 576, 4909, 5155, 2]
 
-// Module 12089 (ConjureTipSwap)
+// Module 12088 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

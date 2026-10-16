@@ -1,25 +1,26 @@
 // Module ID: 8053
 // Function ID: 8054
-// Dependencies: []
+// Dependencies: [8054, 8052]
 
 // Module 8053
-let c0 = 18761;
-let c1 = 19789;
+import _modDef8052 from "module_8052" /* 8052 */;
+import _modDef8054 from "module_8054" /* 8054 */;
+
 
 export default {
-  BIG_ENDIAN: 19789,
-  LITTLE_ENDIAN: 18761,
-  getByteOrder(getUint16, c5) {
-    if (getUint16.getUint16(c5) === c0) {
-      return c0;
-    } else if (getUint16.getUint16(c5) === c1) {
-      return c1;
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
+    if (tmp) {
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef8054.LITTLE_ENDIAN) === 42;
+    }
+    return tmp;
+  },
+  findTiffOffsets() {
+    if (_modDef8052.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
     } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Illegal byte order value. Faulty image.");
-      throw error;
+      return {};
     }
   }
 };

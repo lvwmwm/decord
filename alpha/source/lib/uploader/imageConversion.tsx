@@ -1,13 +1,13 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 8102
+// Function ID: 8103
 // Name: imageConversion
-// Dependencies: [5, 3, 5506, 8008, 4790, 2]
+// Dependencies: [5, 3, 5507, 8009, 4790, 2]
 // Exports: convertFileToJpeg
 
-// Module 8101 (imageConversion)
+// Module 8102 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 5506 */;
-import imageFilename from "imageFilename" /* 8008 */;
+import MediaTypes from "MediaTypes" /* 5507 */;
+import imageFilename from "imageFilename" /* 8009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

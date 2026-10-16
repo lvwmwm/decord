@@ -1,9 +1,9 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 8529
+// Function ID: 8530
 // Name: ProductDetailsActionSheet
-// Dependencies: [109, 32, 19, 17, 7482, 1089, 1087, 1098, 21, 3, 5153, 587, 5446, 4886, 558, 576, 5028, 1128, 6874, 1995, 8529, 8530, 8527, 7493, 9634, 7100, 7075, 14130, 14131, 9201, 1275, 9202, 1267, 504, 14132, 9264, 9267, 7494, 9269, 9270, 9272, 14133, 14143, 14154, 1202, 6529, 14155, 14166, 7063, 9319, 10329, 8585, 5441, 14169, 8525, 2]
+// Dependencies: [109, 32, 19, 17, 7484, 1089, 1087, 1098, 21, 3, 5154, 587, 5447, 4886, 558, 576, 5028, 1128, 6876, 1995, 8530, 8531, 8528, 7495, 9633, 7102, 7077, 14140, 14141, 9202, 1275, 9203, 1267, 504, 14142, 9265, 9268, 7496, 9270, 9271, 9273, 14143, 14153, 14164, 1202, 6531, 14165, 14176, 7065, 9320, 10330, 8586, 5442, 14179, 8526, 2]
 
-// Module 8528 (ProductDetailsActionSheet)
+// Module 8529 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,23 +12,23 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Constants2 from "Constants" /* 1098 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import ButtonConstants from "ButtonConstants" /* 5446 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7493 */;
-import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8525 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
-import generated_NoResults from "generated/NoResults" /* 8585 */;
-import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9319 */;
-import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10329 */;
-import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14169 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import ButtonConstants from "ButtonConstants" /* 5447 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7495 */;
+import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8526 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
+import generated_NoResults from "generated/NoResults" /* 8586 */;
+import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9320 */;
+import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10330 */;
+import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14179 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import "react";
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7484 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import native_mod from "native" /* 4886 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -51,8 +51,8 @@ let rect;
 let rect1;
 let size;
 let tmp;
-const Sheet_BottomSheet = tmp(7063);
-const CollectiblesAnalyticsContext = tmp(9201);
+const Sheet_BottomSheet = tmp(7065);
+const CollectiblesAnalyticsContext = tmp(9202);
 let closure_3 = ["shopAnalyticsContext"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -117,7 +117,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               const intl = tmp(1128).intl;
               const stringResult = intl.string(handlePreviewPress(1128).t["3Qcx6K"]);
               const obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-              const EyeIcon = tmp(6874).EyeIcon;
+              const EyeIcon = tmp(6876).EyeIcon;
               const tmp17 = closure_15(EyeIcon, obj4);
               cResult[9] = stringResult;
               cResult[10] = tmp17;
@@ -206,7 +206,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   };
   intl = tmp2(1128).intl;
   obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-  EyeIcon = tmp2(6874).EyeIcon;
+  EyeIcon = tmp2(6876).EyeIcon;
   return closure_15(closure_9, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -323,8 +323,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let items4;
   let items5;
   let items6;
+  let items7;
   let location_stack;
-  let obj22;
+  let obj24;
   let obj6;
   let ref1;
   let stageCollectibleChangeForEditProfile;
@@ -334,7 +335,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp31;
   let tmp5;
   let tmp6;
-  let tmp83;
+  let tmp82;
+  let tmp84;
+  let tmp86;
   let type;
   let obj = require("react");
   const cResult = obj.c(107);
@@ -562,309 +565,352 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
                                 } else {
                                   tmp62 = cResult[45];
                                 }
+                                let categoryWillUnpublishAt = product.categoryWillUnpublishAt;
                                 const tmp2Result16 = require("get initialized");
-                                const stateFromStores = tmp2Result16.useStateFromStores(tmp60, tmp62);
-                                let tmp64 = tmp22;
+                                if (categoryWillUnpublishAt == null) {
+                                  categoryWillUnpublishAt = tmp2Result16.useStateFromStores(tmp60, tmp62);
+                                }
+                                let tmp63 = tmp22;
                                 if (tmp48) {
-                                  tmp64 = tmp22;
+                                  tmp63 = tmp22;
                                   if (null != tmp30) {
                                     const obj4 = { skuId: null, type: null, items: items4 };
                                     ({ skuId: obj16.skuId, type: obj16.type } = tmp30);
                                     items4 = [tmp30];
-                                    tmp64 = obj4;
+                                    tmp63 = obj4;
                                   }
                                 }
-                                let tmp65 = null;
+                                let tmp64 = null;
                                 if (null == product.badgeOverride) {
                                   const tmp2Result17 = require("CollectiblesProductUtils");
-                                  if (tmp2Result17.isDynamicProduct(tmp64)) {
+                                  if (tmp2Result17.isDynamicProduct(tmp63)) {
                                     if (!hideBadge) {
-                                      let tmp66;
-                                      let tmp68;
-                                      let tmp70;
+                                      let tmp65;
+                                      let tmp67;
+                                      let tmp69;
                                       const _Symbol3 = Symbol;
                                       if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
                                         const intl = tmp2(tmp3[17]).intl;
                                         const stringResult = intl.string(require("intl").t["+drfVi"]);
                                         cResult[46] = stringResult;
-                                        tmp66 = stringResult;
+                                        tmp65 = stringResult;
                                       } else {
-                                        tmp66 = cResult[46];
+                                        tmp65 = cResult[46];
                                       }
                                       const _Symbol4 = Symbol;
                                       if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
                                         const intl2 = tmp2(tmp3[17]).intl;
                                         const stringResult1 = intl2.string(require("intl").t["+drfVi"]);
                                         cResult[47] = stringResult1;
-                                        tmp68 = stringResult1;
+                                        tmp67 = stringResult1;
                                       } else {
-                                        tmp68 = cResult[47];
+                                        tmp67 = cResult[47];
                                       }
                                       if (cResult[48] !== tmp58) {
-                                        const obj5 = { accessibilityLabel: tmp66, children: closure_15(IconTextBadge, obj6) };
+                                        const obj5 = { accessibilityLabel: tmp65, children: closure_15(IconTextBadge, obj6) };
                                         const DynamicBadgeTooltip = tmp2(tmp3[34]).DynamicBadgeTooltip;
-                                        obj6 = { icon: require("DiceIcon").DiceIcon, label: tmp68, isDark: tmp58 };
+                                        obj6 = { icon: require("DiceIcon").DiceIcon, label: tmp67, isDark: tmp58 };
                                         IconTextBadge = tmp2(tmp3[35]).IconTextBadge;
-                                        const tmp72 = closure_15(DynamicBadgeTooltip, obj5);
+                                        const tmp71 = closure_15(DynamicBadgeTooltip, obj5);
                                         cResult[48] = tmp58;
-                                        cResult[49] = tmp72;
-                                        tmp70 = tmp72;
+                                        cResult[49] = tmp71;
+                                        tmp69 = tmp71;
                                       } else {
-                                        tmp70 = cResult[49];
+                                        tmp69 = cResult[49];
                                       }
-                                      tmp65 = tmp70;
+                                      tmp64 = tmp69;
                                     }
                                   }
-                                  if (null != stateFromStores) {
+                                  if (null != categoryWillUnpublishAt) {
                                     const tmp2Result18 = require("CollectiblesUtils");
-                                    if (tmp2Result18.shouldShowLimitedTimeBadge(stateFromStores)) {
+                                    if (tmp2Result18.shouldShowLimitedTimeBadge(categoryWillUnpublishAt)) {
                                       if (!hideBadge) {
-                                        let tmp73;
-                                        if (cResult[50] !== stateFromStores) {
-                                          const obj7 = { unpublishedAt: stateFromStores };
-                                          const tmp75 = closure_15(require("LimitedTimeBadge"), obj7);
-                                          cResult[50] = stateFromStores;
-                                          cResult[51] = tmp75;
-                                          tmp73 = tmp75;
+                                        let tmp72;
+                                        if (cResult[50] !== categoryWillUnpublishAt) {
+                                          const obj7 = { unpublishedAt: categoryWillUnpublishAt };
+                                          const tmp74 = closure_15(require("LimitedTimeBadge"), obj7);
+                                          cResult[50] = categoryWillUnpublishAt;
+                                          cResult[51] = tmp74;
+                                          tmp72 = tmp74;
                                         } else {
-                                          tmp73 = cResult[51];
+                                          tmp72 = cResult[51];
                                         }
-                                        tmp65 = tmp73;
+                                        tmp64 = tmp72;
                                       }
                                     }
                                   }
-                                  tmp65 = null;
+                                  tmp64 = null;
                                   const tmp2Result19 = require("CollectiblesProductUtils");
-                                  const tmp76 = tmp2Result19.isOrbsExclusiveProduct(tmp22) && !hideBadge;
-                                  if (tmp76) {
-                                    let tmp77;
-                                    let tmp79;
+                                  const tmp75 = tmp2Result19.isOrbsExclusiveProduct(tmp22) && !hideBadge;
+                                  if (tmp75) {
+                                    let tmp76;
+                                    let tmp78;
                                     const _Symbol5 = Symbol;
                                     if (cResult[52] === Symbol.for("react.memo_cache_sentinel")) {
                                       const intl3 = tmp2(tmp3[17]).intl;
                                       const stringResult2 = intl3.string(require("intl").t["0TmQRG"]);
                                       cResult[52] = stringResult2;
-                                      tmp77 = stringResult2;
+                                      tmp76 = stringResult2;
                                     } else {
-                                      tmp77 = cResult[52];
+                                      tmp76 = cResult[52];
                                     }
                                     if (cResult[53] !== tmp58) {
-                                      const obj8 = { icon: require("OrbsIcon").OrbsIcon, label: tmp77, isDark: tmp58 };
+                                      const obj8 = { icon: require("OrbsIcon").OrbsIcon, label: tmp76, isDark: tmp58 };
                                       const IconTextBadge2 = tmp2(tmp3[35]).IconTextBadge;
-                                      const tmp81 = closure_15(IconTextBadge2, obj8);
+                                      const tmp80 = closure_15(IconTextBadge2, obj8);
                                       cResult[53] = tmp58;
-                                      cResult[54] = tmp81;
-                                      tmp79 = tmp81;
+                                      cResult[54] = tmp80;
+                                      tmp78 = tmp80;
                                     } else {
-                                      tmp79 = cResult[54];
+                                      tmp78 = cResult[54];
                                     }
-                                    tmp65 = tmp79;
+                                    tmp64 = tmp78;
                                   }
                                 }
-                                [tmp83, closure_8] = react.useState(false);
+                                [tmp82, closure_8] = react.useState(false);
                                 _slicedToArray(react.useState(false), 2);
-                                [r10394, closure_9] = react.useState(null);
+                                [tmp84, closure_9] = react.useState(null);
                                 _slicedToArray(react.useState(null), 2);
-                                [r10399, closure_10] = react.useState(0);
+                                [tmp86, closure_10] = react.useState(0);
                                 _slicedToArray(react.useState(0), 2);
                                 if (cResult[55] === tmp47) {
                                   if (cResult[56] === tmp52) {
-                                    let tmp86;
+                                    let tmp87;
                                     if (cResult[57] === trackPdpClick) {
-                                      tmp86 = cResult[58];
+                                      tmp87 = cResult[58];
                                     }
                                     if (cResult[59] === tmp22) {
-                                      let tmp89;
+                                      let tmp91;
                                       if (cResult[60] === trackPdpClick) {
-                                        tmp89 = cResult[61];
+                                        tmp91 = cResult[61];
                                       }
                                       if (cResult[62] === tmp8.actionButtons) {
-                                        if (cResult[63] === tmp86) {
-                                          let tmp92;
-                                          if (cResult[64] === tmp89) {
-                                            tmp92 = cResult[65];
+                                        if (cResult[63] === tmp87) {
+                                          let tmp94;
+                                          if (cResult[64] === tmp91) {
+                                            tmp94 = cResult[65];
                                           }
-                                          if (cResult[66] === tmp65) {
-                                            let tmp96;
+                                          if (cResult[66] === tmp64) {
+                                            let tmp98;
                                             if (cResult[67] === tmp8.badgeWrapper) {
-                                              tmp96 = cResult[68];
+                                              tmp98 = cResult[68];
                                             }
                                             if (cResult[69] === tmp47) {
                                               if (cResult[70] === tmp22) {
-                                                let tmp99;
+                                                let tmp102;
                                                 if (cResult[71] === trackPdpClick) {
-                                                  tmp99 = cResult[72];
+                                                  tmp102 = cResult[72];
                                                 }
                                                 if (cResult[73] === tmp22) {
-                                                  let tmp102;
+                                                  let tmp105;
                                                   if (cResult[74] === trackPdpClick) {
-                                                    tmp102 = cResult[75];
+                                                    tmp105 = cResult[75];
                                                   }
-                                                  if (cResult[76] === tmp83) {
+                                                  if (cResult[76] === tmp82) {
                                                     if (cResult[77] === product) {
-                                                      let tmp105;
                                                       let tmp108;
+                                                      let tmp111;
                                                       if (cResult[78] === first) {
-                                                        tmp105 = cResult[79];
+                                                        tmp108 = cResult[79];
                                                       }
                                                       const _Symbol6 = Symbol;
                                                       if (cResult[80] === Symbol.for("react.memo_cache_sentinel")) {
                                                         const obj9 = { size: require("native").space.PX_16 };
                                                         const Spacer = tmp2(tmp3[44]).Spacer;
-                                                        const tmp110 = closure_15(Spacer, obj9);
-                                                        cResult[80] = tmp110;
-                                                        tmp108 = tmp110;
+                                                        const tmp113 = closure_15(Spacer, obj9);
+                                                        cResult[80] = tmp113;
+                                                        tmp111 = tmp113;
                                                       } else {
-                                                        tmp108 = cResult[80];
+                                                        tmp111 = cResult[80];
                                                       }
                                                       if (cResult[81] === tmp8.container) {
-                                                        if (cResult[82] === tmp92) {
-                                                          if (cResult[83] === tmp96) {
-                                                            if (cResult[84] === tmp99) {
-                                                              if (cResult[85] === tmp102) {
+                                                        if (cResult[82] === tmp94) {
+                                                          if (cResult[83] === tmp98) {
+                                                            if (cResult[84] === tmp102) {
+                                                              if (cResult[85] === tmp105) {
+                                                                let tmp114;
+                                                                let tmp117;
+                                                                if (cResult[86] === tmp108) {
+                                                                  tmp114 = cResult[87];
+                                                                }
                                                                 if (cResult[88] !== tmp22) {
-                                                                  class Ye {
-                                                                    constructor() {
-                                                                      closure_9(closure_3);
-                                                                      closure_10((arg0) => arg0 + 1);
-                                                                      closure_8(true);
-                                                                    }
+                                                                  function je() {
+                                                                    closure_9(closure_3);
+                                                                    closure_10((arg0) => arg0 + 1);
+                                                                    closure_8(true);
                                                                   }
                                                                   cResult[88] = tmp22;
-                                                                  cResult[89] = Ye;
+                                                                  cResult[89] = je;
+                                                                  tmp117 = je;
                                                                 } else {
-                                                                  class Ye {
-                                                                    constructor() {
-                                                                      closure_9(closure_3);
-                                                                      closure_10((arg0) => arg0 + 1);
-                                                                      closure_8(true);
-                                                                    }
-                                                                  }
+                                                                  tmp117 = cResult[89];
                                                                 }
                                                                 if (cResult[90] === analyticsLocations2) {
-                                                                  class Ye {
-                                                                    constructor() {
-                                                                      closure_9(closure_3);
-                                                                      closure_10((arg0) => arg0 + 1);
-                                                                      closure_8(true);
+                                                                  if (cResult[91] === tmp82) {
+                                                                    if (cResult[92] === tmp22) {
+                                                                      if (cResult[93] === stageCollectibleChangeForEditProfile) {
+                                                                        if (cResult[94] === tmp117) {
+                                                                          let tmp118;
+                                                                          if (cResult[95] === trackPdpClick) {
+                                                                            tmp118 = cResult[96];
+                                                                          }
+                                                                          if (cResult[97] === analyticsLocations2) {
+                                                                            if (cResult[98] === tmp86) {
+                                                                              if (cResult[99] === tmp84) {
+                                                                                let tmp121;
+                                                                                if (cResult[100] === stageCollectibleChangeForEditProfile) {
+                                                                                  tmp121 = cResult[101];
+                                                                                }
+                                                                                if (cResult[102] === analyticsLocations2) {
+                                                                                  if (cResult[103] === tmp114) {
+                                                                                    if (cResult[104] === tmp118) {
+                                                                                      let tmp124;
+                                                                                      if (cResult[105] === tmp121) {
+                                                                                        tmp124 = cResult[106];
+                                                                                      }
+                                                                                      return tmp124;
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                                const obj10 = { value: analyticsLocations2, children: items5 };
+                                                                                items5 = [tmp114, tmp118, tmp121];
+                                                                                const tmp126 = closure_16(require("useAnalyticsLocations").AnalyticsLocationProvider, obj10);
+                                                                                cResult[102] = analyticsLocations2;
+                                                                                cResult[103] = tmp114;
+                                                                                cResult[104] = tmp118;
+                                                                                cResult[105] = tmp121;
+                                                                                cResult[106] = tmp126;
+                                                                                tmp124 = tmp126;
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                          let tmp122 = null != tmp84;
+                                                                          if (tmp122) {
+                                                                            const obj11 = {
+                                                                              product: tmp84,
+                                                                              attempt: tmp86,
+                                                                              analyticsLocations: analyticsLocations2,
+                                                                              onBuySettled() {
+                                                                                                                                                          return closure_8(false);
+                                                                                                                                                        },
+                                                                              stageCollectibleChangeForEditProfile
+                                                                            };
+                                                                            tmp122 = closure_15(tmp15(tmp3[47]), obj11);
+                                                                          }
+                                                                          cResult[97] = analyticsLocations2;
+                                                                          cResult[98] = tmp86;
+                                                                          cResult[99] = tmp84;
+                                                                          cResult[100] = stageCollectibleChangeForEditProfile;
+                                                                          cResult[101] = tmp122;
+                                                                          tmp121 = tmp122;
+                                                                        }
+                                                                      }
                                                                     }
                                                                   }
                                                                 }
-                                                                const obj10 = { product: tmp22, analyticsLocations: analyticsLocations2, onTrackPress: trackPdpClick, isBuying: tmp83, onStartPurchase: tmp114, stageCollectibleChangeForEditProfile };
+                                                                const obj12 = { product: tmp22, analyticsLocations: analyticsLocations2, onTrackPress: trackPdpClick, isBuying: tmp82, onStartPurchase: tmp117, stageCollectibleChangeForEditProfile };
+                                                                const tmp120 = closure_15(require("ProductDetailsActionSheetPurchaseSection"), obj12);
                                                                 cResult[90] = analyticsLocations2;
-                                                                cResult[91] = tmp83;
+                                                                cResult[91] = tmp82;
                                                                 cResult[92] = tmp22;
                                                                 cResult[93] = stageCollectibleChangeForEditProfile;
-                                                                cResult[94] = tmp114;
+                                                                cResult[94] = tmp117;
                                                                 cResult[95] = trackPdpClick;
-                                                                cResult[96] = closure_15(require("ProductDetailsActionSheetPurchaseSection"), obj10);
-                                                                const tmp117 = closure_15(require("ProductDetailsActionSheetPurchaseSection"), obj10);
+                                                                cResult[96] = tmp120;
+                                                                tmp118 = tmp120;
                                                               }
                                                             }
                                                           }
                                                         }
                                                       }
-                                                      const obj11 = { scrollsToTop: false, style: tmp8.container, ref: ref1, children: items5 };
-                                                      items5 = [tmp92, tmp96, tmp99, tmp102, tmp105, tmp108];
+                                                      const obj13 = { scrollsToTop: false, style: tmp8.container, ref: ref1, children: items6 };
+                                                      items6 = [tmp94, tmp98, tmp102, tmp105, tmp108, tmp111];
+                                                      const tmp116 = closure_16(require("BottomSheetModal").BottomSheetScrollView, obj13);
                                                       cResult[81] = tmp8.container;
-                                                      cResult[82] = tmp92;
-                                                      cResult[83] = tmp96;
-                                                      cResult[84] = tmp99;
-                                                      cResult[85] = tmp102;
-                                                      cResult[86] = tmp105;
-                                                      cResult[87] = closure_16(require("BottomSheetModal").BottomSheetScrollView, obj11);
-                                                      const tmp113 = closure_16(require("BottomSheetModal").BottomSheetScrollView, obj11);
+                                                      cResult[82] = tmp94;
+                                                      cResult[83] = tmp98;
+                                                      cResult[84] = tmp102;
+                                                      cResult[85] = tmp105;
+                                                      cResult[86] = tmp108;
+                                                      cResult[87] = tmp116;
+                                                      tmp114 = tmp116;
                                                     }
                                                   }
-                                                  const obj12 = { product, selectedVariantIndex: first, disabled: tmp83, onVariantSelect: tmp21 };
-                                                  const tmp107 = closure_15(require("ProductDetailsActionSheetVariants"), obj12);
-                                                  cResult[76] = tmp83;
+                                                  const obj14 = { product, selectedVariantIndex: first, disabled: tmp82, onVariantSelect: tmp21 };
+                                                  const tmp110 = closure_15(require("ProductDetailsActionSheetVariants"), obj14);
+                                                  cResult[76] = tmp82;
                                                   cResult[77] = product;
                                                   cResult[78] = first;
-                                                  cResult[79] = tmp107;
-                                                  tmp105 = tmp107;
+                                                  cResult[79] = tmp110;
+                                                  tmp108 = tmp110;
                                                 }
-                                                const obj13 = { product: tmp22, onTrackPress: trackPdpClick };
-                                                const tmp104 = closure_15(require("ProductDetailsActionSheetInfo"), obj13);
+                                                const obj15 = { product: tmp22, onTrackPress: trackPdpClick };
+                                                const tmp107 = closure_15(require("ProductDetailsActionSheetInfo"), obj15);
                                                 cResult[73] = tmp22;
                                                 cResult[74] = trackPdpClick;
-                                                cResult[75] = tmp104;
-                                                tmp102 = tmp104;
+                                                cResult[75] = tmp107;
+                                                tmp105 = tmp107;
                                               }
                                             }
-                                            const obj14 = { product: tmp22, handlePreviewPress: tmp47, onTrackPress: trackPdpClick, onBundleActiveItemChange: tmp51 };
-                                            const tmp101 = closure_15(require("ProductDetailsActionSheetPreview"), obj14);
+                                            const obj17 = { product: tmp22, handlePreviewPress: tmp47, onTrackPress: trackPdpClick, onBundleActiveItemChange: tmp51 };
+                                            const tmp104 = closure_15(require("ProductDetailsActionSheetPreview"), obj17);
                                             cResult[69] = tmp47;
                                             cResult[70] = tmp22;
                                             cResult[71] = trackPdpClick;
-                                            cResult[72] = tmp101;
-                                            tmp99 = tmp101;
+                                            cResult[72] = tmp104;
+                                            tmp102 = tmp104;
                                           }
-                                          let tmp97 = null != tmp65;
-                                          if (tmp97) {
-                                            class Ye {
-                                              constructor() {
-                                                closure_9(closure_3);
-                                                closure_10((arg0) => arg0 + 1);
-                                                closure_8(true);
-                                              }
-                                            }
-                                            const obj15 = { style: tmp8.badgeWrapper, children: tmp65 };
-                                            tmp97 = closure_15(closure_10, obj15);
+                                          let tmp99 = null != tmp64;
+                                          if (tmp99) {
+                                            const obj18 = { style: tmp8.badgeWrapper, children: tmp64 };
+                                            tmp99 = closure_15(closure_10, obj18);
                                           }
-                                          cResult[66] = tmp65;
+                                          cResult[66] = tmp64;
                                           cResult[67] = tmp8.badgeWrapper;
-                                          cResult[68] = tmp97;
-                                          tmp96 = tmp97;
+                                          cResult[68] = tmp99;
+                                          tmp98 = tmp99;
                                         }
                                       }
-                                      const obj17 = { style: tmp8.actionButtons, children: items6 };
-                                      items6 = [tmp86, tmp89];
-                                      const tmp95 = closure_16(closure_10, obj17);
+                                      const obj19 = { style: tmp8.actionButtons, children: items7 };
+                                      items7 = [tmp87, tmp91];
+                                      const tmp97 = closure_16(closure_10, obj19);
                                       cResult[62] = tmp8.actionButtons;
-                                      cResult[63] = tmp86;
-                                      cResult[64] = tmp89;
-                                      cResult[65] = tmp95;
-                                      tmp92 = tmp95;
+                                      cResult[63] = tmp87;
+                                      cResult[64] = tmp91;
+                                      cResult[65] = tmp97;
+                                      tmp94 = tmp97;
                                     }
-                                    const obj18 = { selectedProduct: tmp22, size: "md", onTrackPress: trackPdpClick };
-                                    const tmp91 = closure_15(require("WishlistButton"), obj18);
+                                    const obj20 = { selectedProduct: tmp22, size: "md", onTrackPress: trackPdpClick };
+                                    const tmp93 = closure_15(require("WishlistButton"), obj20);
                                     cResult[59] = tmp22;
                                     cResult[60] = trackPdpClick;
-                                    cResult[61] = tmp91;
-                                    tmp89 = tmp91;
+                                    cResult[61] = tmp93;
+                                    tmp91 = tmp93;
                                   }
                                 }
-                                let tmp87 = tmp52;
-                                if (tmp87) {
-                                  class Ye {
-                                    constructor() {
-                                      closure_9(closure_3);
-                                      closure_10((arg0) => arg0 + 1);
-                                      closure_8(true);
-                                    }
-                                  }
-                                  const obj19 = { handlePreviewPress: tmp47, onTrackPress: trackPdpClick };
-                                  tmp87 = closure_15(closure_20, obj19);
+                                let tmp88 = tmp52;
+                                if (tmp88) {
+                                  const obj21 = { handlePreviewPress: tmp47, onTrackPress: trackPdpClick };
+                                  tmp88 = closure_15(closure_20, obj21);
                                 }
                                 cResult[55] = tmp47;
                                 cResult[56] = tmp52;
                                 cResult[57] = trackPdpClick;
-                                cResult[58] = tmp87;
-                                tmp86 = tmp87;
+                                cResult[58] = tmp88;
+                                tmp87 = tmp88;
                               }
-                              function ge() {
+                              function fe() {
                                 const obj = AnalyticsUtilsDefault;
                                 const obj2 = { type: "Collectibles Shop Details Modal", location_stack, sku_id: require.skuId };
                                 obj.track(AnalyticEvents.OPEN_MODAL, obj2);
                               }
-                              const items7 = [tmp5, product.skuId];
+                              const items8 = [tmp5, product.skuId];
                               cResult[37] = product.skuId;
                               cResult[38] = tmp5;
-                              cResult[39] = ge;
-                              cResult[40] = items7;
-                              tmp56 = items7;
-                              tmp55 = ge;
+                              cResult[39] = fe;
+                              cResult[40] = items8;
+                              tmp56 = items8;
+                              tmp55 = fe;
                             }
                             function ae() {
                               let tmp;
@@ -887,38 +933,38 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
                       }
                     }
                   }
-                  const obj20 = { product, variantIndex: first, analyticsLocations: analyticsLocations2, collectibleProfileOverrides, shopAnalyticsContext: collectiblesAnalyticsContext, stageCollectibleChangeForEditProfile };
+                  const obj22 = { product, variantIndex: first, analyticsLocations: analyticsLocations2, collectibleProfileOverrides, shopAnalyticsContext: collectiblesAnalyticsContext, stageCollectibleChangeForEditProfile };
                   cResult[24] = analyticsLocations2;
                   cResult[25] = collectibleProfileOverrides;
                   cResult[26] = product;
                   cResult[27] = stageCollectibleChangeForEditProfile;
                   cResult[28] = collectiblesAnalyticsContext;
                   cResult[29] = first;
-                  cResult[30] = obj20;
-                  tmp45 = obj20;
+                  cResult[30] = obj22;
+                  tmp45 = obj22;
                 }
               }
             }
           }
         }
-        const obj21 = { type: require("discord_common/AnalyticsUtils").ImpressionTypes.HALFSHEET, name: require("discord_common/AnalyticsUtils").ImpressionNames.SHOP_PRODUCT_DETAIL, properties: obj22 };
-        obj22 = { sku_id: tmp22.skuId, location_stack: analyticsLocations2, card_id: cardId, position_in_section: tilePosition, shop_session_id: sessionId, product_sku_ids: tmp16 };
+        const obj23 = { type: require("discord_common/AnalyticsUtils").ImpressionTypes.HALFSHEET, name: require("discord_common/AnalyticsUtils").ImpressionNames.SHOP_PRODUCT_DETAIL, properties: obj24 };
+        obj24 = { sku_id: tmp22.skuId, location_stack: analyticsLocations2, card_id: cardId, position_in_section: tilePosition, shop_session_id: sessionId, product_sku_ids: tmp16 };
         cResult[17] = analyticsLocations2;
         cResult[18] = tmp16;
         cResult[19] = tmp22.skuId;
         cResult[20] = cardId;
         cResult[21] = tilePosition;
         cResult[22] = sessionId;
-        cResult[23] = obj21;
-        tmp42 = obj21;
+        cResult[23] = obj23;
+        tmp42 = obj23;
       }
     }
-    const obj23 = { skuId: tmp22.skuId, productSkuIds: tmp16, analyticsLocations: analyticsLocations2 };
+    const obj25 = { skuId: tmp22.skuId, productSkuIds: tmp16, analyticsLocations: analyticsLocations2 };
     cResult[10] = analyticsLocations2;
     cResult[11] = tmp16;
     cResult[12] = tmp22.skuId;
-    cResult[13] = obj23;
-    tmp24 = obj23;
+    cResult[13] = obj25;
+    tmp24 = obj25;
   }
   const tmp2Result20 = require("CollectiblesProductUtils");
   const selectedProduct = tmp2Result20.getSelectedProduct(product, first);
@@ -954,10 +1000,10 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp14;
   let tmp19;
   let tmp20;
-  let tmp49;
-  let tmp51;
+  let tmp48;
+  let tmp50;
   let type;
-  const f99079 = () => {
+  const f99142 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -1059,8 +1105,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const tmp32Result = closure_21(obj7);
   const tmp34 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   react = tmp34;
-  [type, c7] = obj.useState(f99079);
-  _slicedToArray(obj.useState(f99079), 2);
+  [type, c7] = obj.useState(f99142);
+  _slicedToArray(obj.useState(f99142), 2);
   const tmp36 = c7((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -1085,29 +1131,32 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const tmp2Result10 = require("shared");
   const isThemeDarkResult = tmp2Result10.isThemeDark(theme);
   const items4 = [CollectiblesCategoryStore];
+  let categoryWillUnpublishAt = product.categoryWillUnpublishAt;
   const tmp2Result11 = require("get initialized");
-  const stateFromStores = tmp2Result11.useStateFromStores(items4, () => {
-    const category = CollectiblesCategoryStore.getCategory(require.categorySkuId);
-    let unpublishedAt;
-    if (category != null) {
-      unpublishedAt = category.unpublishedAt;
-    }
-    return unpublishedAt;
-  });
-  let tmp42 = selectedProduct;
+  if (categoryWillUnpublishAt == null) {
+    categoryWillUnpublishAt = tmp2Result11.useStateFromStores(items4, () => {
+      const category = CollectiblesCategoryStore.getCategory(require.categorySkuId);
+      let unpublishedAt;
+      if (category != null) {
+        unpublishedAt = category.unpublishedAt;
+      }
+      return unpublishedAt;
+    });
+  }
+  let tmp41 = selectedProduct;
   if (tmp34) {
-    tmp42 = selectedProduct;
+    tmp41 = selectedProduct;
     if (null != tmp19) {
       const obj8 = { skuId: null, type: null, items: items5 };
       ({ skuId: obj13.skuId, type: obj13.type } = tmp19);
       items5 = [tmp19];
-      tmp42 = obj8;
+      tmp41 = obj8;
     }
   }
-  let tmp43 = null;
+  let tmp42 = null;
   if (null == product.badgeOverride) {
     const tmp2Result12 = require("CollectiblesProductUtils");
-    if (tmp2Result12.isDynamicProduct(tmp42)) {
+    if (tmp2Result12.isDynamicProduct(tmp41)) {
       if (!hideBadge) {
         const obj9 = { accessibilityLabel: intl.string(require("intl").t["+drfVi"]), children: closure_15(IconTextBadge, obj10) };
         const DynamicBadgeTooltip = tmp2(tmp3[34]).DynamicBadgeTooltip;
@@ -1115,31 +1164,31 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
         obj10 = { icon: require("DiceIcon").DiceIcon, label: intl2.string(require("intl").t["+drfVi"]), isDark: isThemeDarkResult };
         IconTextBadge = tmp2(tmp3[35]).IconTextBadge;
         intl2 = tmp2(tmp3[17]).intl;
-        tmp43 = closure_15(DynamicBadgeTooltip, obj9);
+        tmp42 = closure_15(DynamicBadgeTooltip, obj9);
       }
     }
-    if (null != stateFromStores) {
+    if (null != categoryWillUnpublishAt) {
       const tmp2Result13 = require("CollectiblesUtils");
-      if (tmp2Result13.shouldShowLimitedTimeBadge(stateFromStores)) {
+      if (tmp2Result13.shouldShowLimitedTimeBadge(categoryWillUnpublishAt)) {
         if (!hideBadge) {
-          const obj11 = { unpublishedAt: stateFromStores };
-          tmp43 = closure_15(tmp7(tmp3[38]), obj11);
+          const obj11 = { unpublishedAt: categoryWillUnpublishAt };
+          tmp42 = closure_15(tmp7(tmp3[38]), obj11);
         }
       }
     }
-    tmp43 = null;
+    tmp42 = null;
     const tmp2Result14 = require("CollectiblesProductUtils");
-    const tmp46 = tmp2Result14.isOrbsExclusiveProduct(selectedProduct) && !hideBadge;
-    if (tmp46) {
+    const tmp45 = tmp2Result14.isOrbsExclusiveProduct(selectedProduct) && !hideBadge;
+    if (tmp45) {
       const obj12 = { icon: require("OrbsIcon").OrbsIcon, label: intl3.string(require("intl").t["0TmQRG"]), isDark: isThemeDarkResult };
       const IconTextBadge2 = tmp2(tmp3[35]).IconTextBadge;
       intl3 = tmp2(tmp3[17]).intl;
-      tmp43 = closure_15(IconTextBadge2, obj12);
+      tmp42 = closure_15(IconTextBadge2, obj12);
     }
   }
-  [tmp49, c8] = obj.useState(false);
+  [tmp48, c8] = obj.useState(false);
   _slicedToArray(obj.useState(false), 2);
-  [tmp51, c9] = obj.useState(null);
+  [tmp50, c9] = obj.useState(null);
   _slicedToArray(obj.useState(null), 2);
   [first, closure_10] = obj.useState(0);
   const obj14 = { value: analyticsLocations, children: items8 };
@@ -1153,15 +1202,15 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   }
   items6 = [tmp37, closure_15(analyticsLocations1(tmp3[40]), { selectedProduct, size: "md", onTrackPress: trackPdpClick })];
   items7 = [closure_16(closure_10, obj16), , , , , ];
-  let tmp58Result = null != tmp43;
-  if (tmp58Result) {
-    const obj18 = { style: tmp5.badgeWrapper, children: tmp43 };
-    tmp58Result = tmp58(tmp55, obj18);
+  let tmp57Result = null != tmp42;
+  if (tmp57Result) {
+    const obj18 = { style: tmp5.badgeWrapper, children: tmp42 };
+    tmp57Result = tmp57(tmp54, obj18);
   }
-  items7[1] = tmp58Result;
+  items7[1] = tmp57Result;
   items7[2] = closure_15(analyticsLocations1(ref1[41]), { product: selectedProduct, handlePreviewPress: tmp32Result, onTrackPress: trackPdpClick, onBundleActiveItemChange: tmp36 });
   items7[3] = closure_15(analyticsLocations1(ref1[42]), { product: selectedProduct, onTrackPress: trackPdpClick });
-  items7[4] = closure_15(analyticsLocations1(ref1[43]), { product, selectedVariantIndex: tmp13, disabled: tmp49, onVariantSelect: tmp14 });
+  items7[4] = closure_15(analyticsLocations1(ref1[43]), { product, selectedVariantIndex: tmp13, disabled: tmp48, onVariantSelect: tmp14 });
   const obj19 = { size: analyticsLocations1(ref1[11]).space.PX_16 };
   const Spacer = tmp2(tmp3[44]).Spacer;
   items7[5] = closure_15(Spacer, obj19);
@@ -1170,7 +1219,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     product: selectedProduct,
     analyticsLocations,
     onTrackPress: trackPdpClick,
-    isBuying: tmp49,
+    isBuying: tmp48,
     onStartPurchase() {
       _undefined4(selectedProduct);
       closure_10((arg0) => arg0 + 1);
@@ -1179,10 +1228,10 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     stageCollectibleChangeForEditProfile
   };
   items8[1] = closure_15(analyticsLocations1(ref1[46]), obj20);
-  let tmp58Result2 = null != tmp51;
-  if (tmp58Result2) {
+  let tmp57Result2 = null != tmp50;
+  if (tmp57Result2) {
     const obj21 = {
-      product: tmp51,
+      product: tmp50,
       attempt: first,
       analyticsLocations,
       onBuySettled() {
@@ -1190,9 +1239,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
         },
       stageCollectibleChangeForEditProfile
     };
-    tmp58Result2 = tmp58(tmp7(tmp3[47]), obj21);
+    tmp57Result2 = tmp57(tmp7(tmp3[47]), obj21);
   }
-  items8[2] = tmp58Result2;
+  items8[2] = tmp57Result2;
   return closure_16(AnalyticsLocationProvider, obj14);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1460,12 +1509,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   const initialVariantIndex = skuId.initialVariantIndex;
   const tmp = skuId;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(9319);
+  let obj = skuId(9320);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(10329);
+  const obj2 = skuId(10330);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
   const ref = react.useRef(null);
@@ -1502,21 +1551,21 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         ref,
         children: tmp10
       };
-      return tmp8(tmp(7063).BottomSheet, obj4);
+      return tmp8(tmp(7065).BottomSheet, obj4);
     }
   }
   if ("error" === state) {
-    const obj5 = { Illustration: tmp(8585).NoResults, body: intl.string(tmp(1128).t.eAn6z2), children: closure_15(Button, obj6) };
+    const obj5 = { Illustration: tmp(8586).NoResults, body: intl.string(tmp(1128).t.eAn6z2), children: closure_15(Button, obj6) };
     const EmptyState = tmp(1202).EmptyState;
     intl = tmp(1128).intl;
     obj6 = { text: intl2.string(tmp(1128).t["+hivLW"]), onPress: retry };
-    Button = tmp(5441).Button;
+    Button = tmp(5442).Button;
     intl2 = tmp(1128).intl;
     tmp13 = closure_15(EmptyState, obj5);
     tmp11 = closure_15;
   } else {
     tmp11 = closure_15;
-    tmp13 = closure_15(initialVariantIndex(14169), {});
+    tmp13 = closure_15(initialVariantIndex(14179), {});
   }
   tmp8 = tmp11;
   tmp10 = tmp13;

@@ -1,14 +1,14 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14082
+// Function ID: 14083
 // Name: QuoteIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14073, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14083, 4876, 2]
 
-// Module 14072 (QuoteIcon)
+// Module 14082 (QuoteIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 14073 */;
+import AssetRegistry from "AssetRegistry" /* 14083 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

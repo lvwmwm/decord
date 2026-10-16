@@ -1,10 +1,10 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17266
+// Function ID: 17267
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2060, 1087, 2065, 570, 558, 576, 10561, 2052, 7323, 2]
+// Dependencies: [32, 19, 2060, 1087, 2065, 570, 558, 576, 2052, 7325, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 17253 (FavoritesGuildSuggestionsStore)
+// Module 17266 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
@@ -16,12 +16,12 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, setStateResult;
+let _require;
 
 const NOOP = Constants.NOOP;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let items = [];
-let closure_8 = module_570.create(() => ({ suggestions: items, dismiss: NOOP }));
+const state = module_570.create(() => ({ suggestions: items, dismiss: NOOP }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestions() {
   let first;
@@ -36,9 +36,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   } else {
     first = cResult[0];
   }
-  return closure_8(first);
+  return state(first);
 }) : (function useFavoritesGuildSuggestions() {
-  return closure_8((suggestions) => suggestions.suggestions);
+  return state((suggestions) => suggestions.suggestions);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionCount() {
@@ -54,12 +54,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   } else {
     first = cResult[0];
   }
-  return closure_8(first);
+  return state(first);
 }) : (function useFavoritesGuildSuggestionCount() {
-  return closure_8((suggestions) => suggestions.suggestions.length);
+  return state((suggestions) => suggestions.suggestions.length);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFavoritesGuildSuggestions() {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFavoritesGuildSuggestions() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -72,27 +72,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFavori
   } else {
     first = cResult[0];
   }
-  return closure_8(first);
+  return state(first);
 }) : (function useHasFavoritesGuildSuggestions() {
-  return closure_8((suggestions) => suggestions.suggestions.length > 0);
+  return state((suggestions) => suggestions.suggestions.length > 0);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionsVisibility() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionsVisibility() {
   let closure_0;
   let first;
-  let obj3;
   let suggestions;
+  let tmp10;
   let tmp11;
-  let tmp12;
+  let tmp13;
   let tmp14;
-  let tmp15;
-  let tmp7;
+  let tmp6;
   let obj = require("react");
   const cResult = obj.c(11);
-  const obj2 = require("FavoritesHooks");
-  const favoritesAccess = obj2.useFavoritesAccess();
-  let hasAccess = favoritesAccess.hasAccess;
-  const isFreemium = favoritesAccess.isFreemium;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function c(postConnectionOpen) {
       return postConnectionOpen.postConnectionOpen;
@@ -102,158 +97,116 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   } else {
     first = cResult[0];
   }
-  const tmp6 = DismissibleContentShownStateStore(first);
-  if (hasAccess) {
-    hasAccess = isFreemium;
-  }
-  if (hasAccess) {
-    hasAccess = tmp6;
-  }
-  if (cResult[1] !== hasAccess) {
+  const tmp5 = DismissibleContentShownStateStore(first);
+  if (cResult[1] !== tmp5) {
     let items1;
-    if (hasAccess) {
+    if (tmp5) {
       items = [tmp(2052).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
       items1 = items;
     } else {
       items1 = [];
     }
-    cResult[1] = hasAccess;
+    cResult[1] = tmp5;
     cResult[2] = items1;
-    tmp7 = items1;
+    tmp6 = items1;
   } else {
-    tmp7 = cResult[2];
+    tmp6 = cResult[2];
   }
   const tmpResult = require("useSelectedDismissibleContent");
-  const tmp8 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp7), 2);
-  _require = tmp10;
-  const first1 = tmp8[0];
+  const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp6), 2);
+  _require = tmp9;
+  const first1 = tmp7[0];
   const FAVORITES_GUILD_SUGGESTIONS = tmp(2052).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
-  if (cResult[3] !== tmp8[1]) {
-    class I {
-      constructor() {
-        obj = {
-          dismiss() {
-                  closure_1_0(constants.USER_DISMISS);
-                  const obj = { suggestions };
-                  closure_2_8.setState(obj);
-                }
-        };
-        setStateResult = closure_8.setState(obj);
-        return;
-      }
-    }
-    const items2 = [tmp8[1]];
-    cResult[3] = tmp8[1];
-    cResult[4] = I;
+  if (cResult[3] !== tmp7[1]) {
+    const fn2 = function _() {
+      let obj = {
+        dismiss() {
+          closure_1_0(constants.USER_DISMISS);
+          const obj = { suggestions };
+          state.setState(obj);
+        }
+      };
+      state.setState(obj);
+    };
+    const items2 = [tmp7[1]];
+    cResult[3] = tmp7[1];
+    cResult[4] = fn2;
     cResult[5] = items2;
-    tmp12 = items2;
-    tmp11 = I;
+    tmp11 = items2;
+    tmp10 = fn2;
   } else {
-    class I {
-      constructor() {
-        obj = {
-          dismiss() {
-                  closure_1_0(constants.USER_DISMISS);
-                  const obj = { suggestions };
-                  closure_2_8.setState(obj);
-                }
-        };
-        setStateResult = closure_8.setState(obj);
-        return;
-      }
-    }
-    tmp12 = cResult[5];
+    tmp10 = cResult[4];
+    tmp11 = cResult[5];
   }
-  const layoutEffect = react.useLayoutEffect(tmp11, tmp12);
-  const obj4 = react;
+  const layoutEffect = react.useLayoutEffect(tmp10, tmp11);
+  const obj3 = react;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor() {
-        return () => {
-          const obj = { dismiss };
-          return state.setState(obj);
-        };
-      }
-    }
+    const fn3 = function b() {
+      let dismiss;
+      return () => {
+        const obj = { dismiss };
+        return state.setState(obj);
+      };
+    };
     const items3 = [];
-    cResult[6] = D;
+    cResult[6] = fn3;
     cResult[7] = items3;
-    tmp15 = items3;
-    tmp14 = D;
+    tmp14 = items3;
+    tmp13 = fn3;
   } else {
-    class D {
-      constructor() {
-        return () => {
-          const obj = { dismiss };
-          return state.setState(obj);
-        };
-      }
-    }
-    tmp15 = cResult[7];
+    tmp13 = cResult[6];
+    tmp14 = cResult[7];
   }
-  const layoutEffect1 = obj4.useLayoutEffect(tmp14, tmp15);
-  if (cResult[8] === hasAccess) {
-    class D {
-      constructor() {
-        return () => {
-          const obj = { dismiss };
-          return state.setState(obj);
-        };
-      }
+  const layoutEffect1 = obj3.useLayoutEffect(tmp13, tmp14);
+  if (cResult[8] === tmp5) {
+    let tmp17;
+    if (cResult[9] === first1 === FAVORITES_GUILD_SUGGESTIONS) {
+      tmp17 = cResult[10];
     }
-    return obj3;
+    return tmp17;
   }
-  obj3 = { isEligible: hasAccess, isSelected: first1 === FAVORITES_GUILD_SUGGESTIONS };
-  cResult[8] = hasAccess;
+  const obj2 = { isEligible: tmp5, isSelected: first1 === FAVORITES_GUILD_SUGGESTIONS };
+  cResult[8] = tmp5;
   cResult[9] = first1 === FAVORITES_GUILD_SUGGESTIONS;
-  cResult[10] = obj3;
+  cResult[10] = obj2;
+  tmp17 = obj2;
 }) : (function useFavoritesGuildSuggestionsVisibility() {
   let closure_0;
   let items1;
   let suggestions;
-  let obj = require("FavoritesHooks");
-  const favoritesAccess = obj.useFavoritesAccess();
-  let hasAccess = favoritesAccess.hasAccess;
-  const isFreemium = favoritesAccess.isFreemium;
-  const tmp4 = DismissibleContentShownStateStore((postConnectionOpen) => postConnectionOpen.postConnectionOpen);
-  if (hasAccess) {
-    hasAccess = isFreemium;
-  }
-  if (hasAccess) {
-    hasAccess = tmp4;
-  }
-  const useSelectedDismissibleContent = tmp(7323).useSelectedDismissibleContent;
+  const tmp = DismissibleContentShownStateStore((postConnectionOpen) => postConnectionOpen.postConnectionOpen);
+  const useSelectedDismissibleContent = require("useSelectedDismissibleContent").useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
-  if (hasAccess) {
-    items = [tmp(2052).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+  if (tmp) {
+    items = [require("dismissible_content").DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmp6 = _slicedToArray(useSelectedDismissibleContent(items1), 2);
-  _require = tmp8;
-  const first = tmp6[0];
-  const items2 = [tmp6[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(2052).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const tmp5 = _slicedToArray(useSelectedDismissibleContent(items1), 2);
+  _require = tmp7;
+  const first = tmp5[0];
+  const items2 = [tmp5[1]];
+  const FAVORITES_GUILD_SUGGESTIONS = tmp2(2052).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {
         closure_1_0(constants.USER_DISMISS);
         const obj = { suggestions };
-        closure_2_8.setState(obj);
+        state.setState(obj);
       }
     };
-    closure_8.setState(obj);
+    state.setState(obj);
   }, items2);
   const layoutEffect1 = react.useLayoutEffect(() => {
     let dismiss;
-    let state;
     return () => {
       const obj = { dismiss };
       return state.setState(obj);
     };
   }, []);
-  return { isEligible: hasAccess, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
+  let obj = { isEligible: tmp, isSelected: first === FAVORITES_GUILD_SUGGESTIONS };
+  return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildSuggestionsDismissal() {
@@ -269,13 +222,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   } else {
     first = cResult[0];
   }
-  return closure_8(first);
+  return state(first);
 }) : (function useFavoritesGuildSuggestionsDismissal() {
-  return closure_8((dismiss) => dismiss.dismiss);
+  return state((dismiss) => dismiss.dismiss);
 });
 function setFavoritesGuildSuggestions(suggestions) {
   const obj = { suggestions };
-  closure_8.setState(obj);
+  state.setState(obj);
 }
 const result = size.fileFinishedImporting("modules/favorites/FavoritesGuildSuggestionsStore.tsx");
 

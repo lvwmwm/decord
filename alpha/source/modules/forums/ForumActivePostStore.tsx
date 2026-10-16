@@ -1,22 +1,22 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7229
+// Function ID: 7230
 // Name: ForumActivePostStore
-// Dependencies: [6278, 7228, 502, 2068, 6253, 2119, 2077, 2079, 12, 7229, 11, 504, 2085, 584, 2]
+// Dependencies: [6279, 7230, 502, 2068, 6254, 2119, 2077, 2079, 12, 7231, 11, 504, 2085, 584, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 7227 (ForumActivePostStore)
+// Module 7229 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2077 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2079 */;
 import SetUtils from "SetUtils" /* 2085 */;
-import ForumUtils from "ForumUtils" /* 7229 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6278 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7228 */;
+import ForumUtils from "ForumUtils" /* 7231 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6279 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

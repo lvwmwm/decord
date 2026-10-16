@@ -1,15 +1,15 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11800
+// Function ID: 11801
 // Name: BotsBanner
-// Dependencies: [19, 21, 558, 576, 11804, 11787, 1128, 11800, 2]
+// Dependencies: [19, 21, 558, 576, 11801, 11784, 1128, 11797, 2]
 
-// Module 11803 (BotsBanner)
+// Module 11800 (BotsBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11787 */;
-import BannerBaseDefault from "BannerBase" /* 11800 */;
-import useBannerBots from "useBannerBots" /* 11804 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11784 */;
+import BannerBaseDefault from "BannerBase" /* 11797 */;
+import useBannerBots from "useBannerBots" /* 11801 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

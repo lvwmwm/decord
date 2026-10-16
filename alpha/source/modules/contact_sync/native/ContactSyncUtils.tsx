@@ -1,10 +1,10 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 13279
+// Function ID: 13280
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5979, 13270, 13269, 1087, 1385, 6156, 1275, 584, 13272, 2044, 1257, 558, 576, 504, 1405, 2131, 4865, 6152, 2]
+// Dependencies: [5, 17, 5980, 13278, 13277, 1087, 1385, 6157, 1275, 584, 13280, 2044, 1257, 558, 576, 504, 1405, 2131, 4865, 6153, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 13271 (ContactSyncUtils)
+// Module 13279 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
@@ -14,13 +14,13 @@ import FlagUtils from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import LinkingDefault from "Linking" /* 4865 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6156 */;
-import ContactSyncManager from "ContactSyncManager" /* 13272 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6157 */;
+import ContactSyncManager from "ContactSyncManager" /* 13280 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5979 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13270 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13269 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5980 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13278 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13277 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

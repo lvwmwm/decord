@@ -1,9 +1,9 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15580
+// Function ID: 15581
 // Name: useHasFinishedPresenting
 // Dependencies: [32, 19, 558, 576, 1505, 2]
 
-// Module 15570 (useHasFinishedPresenting)
+// Module 15580 (useHasFinishedPresenting)
 import react2 from "react" /* 576 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let navigation;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinishedPresenting() {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinishedPresenting() {
   let closure_2;
   let first;
   const obj = react2;
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinish
 }) : (function useHasFinishedPresenting() {
   let closure_2;
   let first;
-  let obj = useNavigation;
+  const obj = useNavigation;
   navigation = obj.useNavigation();
   [first, closure_2] = react.useState(false);
   const items = [navigation, first];
@@ -98,6 +98,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasFinish
   }, items);
   return first;
 });
-let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useHasFinishedPresenting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/profiles/native/useHasFinishedPresenting.tsx");
 
 export default tmp2;

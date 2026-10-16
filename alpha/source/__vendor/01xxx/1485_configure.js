@@ -106,7 +106,7 @@ function addEventListener(arg0) {
   obj.add(arg0);
   return () => {
     if (closure_2_8) {
-      closure_2_8.remove(f86616);
+      closure_2_8.remove(f86678);
     }
   };
 }
@@ -150,13 +150,13 @@ function useNetInfo(arg0) {
       }
     }
     obj.add(tmp);
-    const f86616 = () => {
+    const f86678 = () => {
       if (closure_2_8) {
-        closure_2_8.remove(f86616);
+        closure_2_8.remove(f86678);
       }
     };
     return () => {
-      if (typeof f86616 === "function") {
+      if (typeof f86678 === "function") {
         if (closure_1_8) {
           closure_1_8.remove(closure_128_0);
         }

@@ -1,10 +1,15 @@
 // Module ID: 5913
 // Function ID: 5914
-// Dependencies: [1316]
+// Dependencies: []
 
 // Module 5913
-import _mod1316 from "module_1316" /* 1316 */;
+let setPrototypeOf = typeof Reflect !== "undefined";
+if (typeof Reflect !== "undefined") {
+  const _Reflect = Reflect;
+  setPrototypeOf = Reflect.setPrototypeOf;
+}
+if (!setPrototypeOf) {
+  setPrototypeOf = null;
+}
 
-_mod1316.setPrototypeOf || null;
-
-export default _mod1316.setPrototypeOf || null;
+export default setPrototypeOf;

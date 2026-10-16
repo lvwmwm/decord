@@ -1,12 +1,12 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14878
+// Function ID: 14879
 // Name: GuildBadgeSound
-// Dependencies: [109, 19, 21, 558, 576, 14849, 7796, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14859, 7797, 2]
 
-// Module 14868 (GuildBadgeSound)
+// Module 14878 (GuildBadgeSound)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7796 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14849 */;
+import inlineStyles from "inlineStyles" /* 7797 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14859 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeSo
       }
     }
     const obj16 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7796).Svg;
+    const Svg = tmp(7797).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp24, tmp27, tmp30, tmp33, tmp36, tmp39, tmp42, tmp45, tmp48, tmp51, tmp54, tmp57, tmp60, tmp63, tmp66, tmp69, tmp72, tmp75];
     const tmp83 = hasOwnProperty(Svg, obj16);

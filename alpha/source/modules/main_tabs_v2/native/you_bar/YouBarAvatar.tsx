@@ -1,27 +1,27 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17469
+// Function ID: 17470
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5143, 5977, 1392, 16056, 1087, 21, 5153, 587, 558, 576, 504, 1202, 4886, 4909, 6271, 9247, 5440, 4877, 9246, 8508, 5119, 7317, 2002, 6557, 2]
+// Dependencies: [5, 32, 19, 17, 5144, 5978, 1392, 16070, 1087, 21, 5154, 587, 558, 576, 504, 1202, 4886, 4909, 6272, 9248, 5441, 4877, 9247, 8509, 5119, 7319, 2002, 6559, 2]
 
-// Module 17459 (YouBarAvatar)
+// Module 17469 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import native2 from "native" /* 4886 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
-import ClipView from "ClipView" /* 9247 */;
+import spring from "spring" /* 5441 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
+import ClipView from "ClipView" /* 9248 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5978 */;
 import UserStore from "UserStore" /* 1392 */;
-import YouBarConstants from "YouBarConstants" /* 16056 */;
+import YouBarConstants from "YouBarConstants" /* 16070 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -238,7 +238,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
             ({ transitionState, TransitionStates: native2.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanup });
             return rect;
           }
-          let rect = { withSpring: tmp(5440).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4886).TransitionStates, runOnJS: tmp(4909).runOnJS, cleanup };
+          let rect = { withSpring: tmp(5441).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4886).TransitionStates, runOnJS: tmp(4909).runOnJS, cleanup };
           const useAnimatedStyle = tmp(4909).useAnimatedStyle;
           tmp(4909);
           et.__closure = rect;
@@ -301,14 +301,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
       if (tmp) {
         tmp8 = -result1;
       } else {
-        tmp8 = -trackedExposureExperiments;
+        tmp8 = -closure_17;
       }
       set3(tmp8);
       set4 = sharedValue4.set;
       if (tmp) {
         diff = -result1;
       } else {
-        diff = -trackedExposureExperiments - (closure_20 - authStore3) / 2;
+        diff = -closure_17 - (closure_20 - authStore3) / 2;
       }
       set4(diff);
     }
@@ -411,14 +411,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
     if (tmp) {
       tmp8 = -result1;
     } else {
-      tmp8 = -trackedExposureExperiments;
+      tmp8 = -closure_17;
     }
     set3(tmp8);
     set4 = sharedValue4.set;
     if (tmp) {
       diff = -result1;
     } else {
-      diff = -trackedExposureExperiments - (closure_20 - authStore3) / 2;
+      diff = -closure_17 - (closure_20 - authStore3) / 2;
     }
     set4(diff);
   }, items2);

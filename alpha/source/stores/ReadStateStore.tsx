@@ -1,10 +1,10 @@
-// Module ID: 6253
-// Function ID: 6254
+// Module ID: 6254
+// Function ID: 6255
 // Name: ReadStateStore
-// Dependencies: [5, 32, 2067, 6254, 2120, 5075, 6272, 6273, 6274, 6275, 6278, 4811, 1246, 2072, 502, 6279, 2068, 5969, 6183, 2090, 6106, 5494, 4809, 4819, 2119, 6184, 1392, 6289, 1087, 6291, 2075, 2074, 6185, 1127, 3, 11, 1104, 584, 5850, 6292, 1297, 2063, 6293, 6294, 6295, 6296, 6161, 4818, 6300, 6301, 6302, 6306, 2002, 1405, 4761, 12, 1388, 5973, 5036, 6307, 6308, 4817, 2080, 504, 2001, 6309, 2]
+// Dependencies: [5, 32, 2067, 6255, 2120, 5075, 6273, 6274, 6275, 6276, 6279, 4811, 1246, 2072, 502, 6280, 2068, 5970, 6184, 2090, 6107, 5495, 4809, 4819, 2119, 6185, 1392, 6285, 1087, 6287, 2075, 2074, 6186, 1127, 3, 11, 1104, 584, 5851, 6288, 1297, 2063, 6289, 6290, 6291, 6292, 6162, 4818, 6302, 6303, 6304, 6308, 2002, 1405, 4761, 12, 1388, 5974, 5036, 6309, 6310, 4817, 2080, 504, 2001, 6311, 2]
 // Exports: isNonMutedPrivateMessage
 
-// Module 6253 (ReadStateStore)
+// Module 6254 (ReadStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -19,50 +19,50 @@ import _modDef4761 from "module_4761" /* 4761 */;
 import ThreadActionUtils from "ThreadActionUtils" /* 4817 */;
 import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4818 */;
 import RootNavigationRef from "RootNavigationRef" /* 5036 */;
-import isMessageMentioned from "isMessageMentioned" /* 5850 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5973 */;
-import NSFWContentGate from "NSFWContentGate" /* 6161 */;
-import ReadStateConstants from "ReadStateConstants" /* 6185 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6272 */;
-import networkAwareRetryDefault from "networkAwareRetry" /* 6292 */;
-import OverlaySupported from "OverlaySupported" /* 6293 */;
-import OverlayVisibility from "OverlayVisibility" /* 6294 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6295 */;
-import isChannelFocused from "isChannelFocused" /* 6296 */;
-import MessageRequestUtils from "MessageRequestUtils" /* 6300 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
-import visibleInlineChannels from "visibleInlineChannels" /* 6307 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6308 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6309 */;
+import isMessageMentioned from "isMessageMentioned" /* 5851 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5974 */;
+import NSFWContentGate from "NSFWContentGate" /* 6162 */;
+import ReadStateConstants from "ReadStateConstants" /* 6186 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6273 */;
+import networkAwareRetryDefault from "networkAwareRetry" /* 6288 */;
+import OverlaySupported from "OverlaySupported" /* 6289 */;
+import OverlayVisibility from "OverlayVisibility" /* 6290 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6291 */;
+import isChannelFocused from "isChannelFocused" /* 6292 */;
+import MessageRequestUtils from "MessageRequestUtils" /* 6302 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
+import visibleInlineChannels from "visibleInlineChannels" /* 6309 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6310 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import ExperimentStore from "ExperimentStore" /* 5075 */;
-import MessageRequestStore from "MessageRequestStore" /* 6273 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6274 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6275 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6278 */;
+import MessageRequestStore from "MessageRequestStore" /* 6274 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6275 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6276 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6279 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6279 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6280 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import DimensionStore from "DimensionStore" /* 5969 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6183 */;
+import DimensionStore from "DimensionStore" /* 5970 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6184 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import IdleStore from "IdleStore" /* 6106 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import IdleStore from "IdleStore" /* 6107 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import UserStore from "UserStore" /* 1392 */;
-import WindowStore from "WindowStore" /* 6289 */;
+import WindowStore from "WindowStore" /* 6285 */;
 import Constants from "Constants" /* 1087 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6287 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -98,12 +98,12 @@ let closure_53;
 let closure_54;
 let closure_55;
 let tmp;
-const isOptInEnabled = tmp(6301);
-const f93693 = () => {
+const isOptInEnabled = tmp(6303);
+const f93756 = () => {
   obj = DispatcherDefault;
   obj.dispatch({ type: "DECAY_READ_STATES" });
 };
-const f93696 = (type) => {
+const f93759 = (type) => {
   let last_pin_timestamp;
   if (closure_1_18(type.type)) {
     const value = closure_1_83.get(type.id);
@@ -143,7 +143,7 @@ function setDecayedReadStateTimer() {
   const timestamp1 = Date.now();
   closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
   clearTimeout(timeout);
-  timeout = setTimeout(f93693, DurationsDefault.Millis.HOUR);
+  timeout = setTimeout(f93756, DurationsDefault.Millis.HOUR);
 }
 function parseTimestamp(arg0) {
   if (null == arg0) {
@@ -335,21 +335,6 @@ function shouldAutomaticallyAck(value, arg1) {
       }
       return false;
     } else if (value.canTrackUnreads()) {
-      if (null != channel) {
-        if (trackedExposureExperiments(channel.type)) {
-          if (ChannelSectionStore.getCurrentSidebarChannelId(channel.id) !== channel.id) {
-            const currentUser4 = obj.getCurrentUser();
-            let hasAnyStaffLevelResult4;
-            if (currentUser4 != null) {
-              hasAnyStaffLevelResult4 = currentUser4.hasAnyStaffLevel();
-            }
-            if (hasAnyStaffLevelResult4) {
-              logger.log("STAFF-ACK-LOG:", "Sidebar chat closed", value.channelId);
-            }
-            return false;
-          }
-        }
-      }
       let isForumLikeChannelResult;
       if (channel != null) {
         isForumLikeChannelResult = channel.isForumLikeChannel();
@@ -357,12 +342,12 @@ function shouldAutomaticallyAck(value, arg1) {
       if (true !== isForumLikeChannelResult) {
         const obj5 = DiscordAppStateDefault;
         if (obj5.getState() !== constants12.ACTIVE) {
-          const currentUser5 = obj.getCurrentUser();
-          let hasAnyStaffLevelResult5;
-          if (currentUser5 != null) {
-            hasAnyStaffLevelResult5 = currentUser5.hasAnyStaffLevel();
+          const currentUser4 = obj.getCurrentUser();
+          let hasAnyStaffLevelResult4;
+          if (currentUser4 != null) {
+            hasAnyStaffLevelResult4 = currentUser4.hasAnyStaffLevel();
           }
-          if (hasAnyStaffLevelResult5) {
+          if (hasAnyStaffLevelResult4) {
             logger.log("STAFF-ACK-LOG:", "App not active", value.channelId);
           }
           return false;
@@ -370,12 +355,12 @@ function shouldAutomaticallyAck(value, arg1) {
       }
       if (tmp4) {
         if (!value._persisted) {
-          const currentUser6 = obj.getCurrentUser();
-          let hasAnyStaffLevelResult6;
-          if (currentUser6 != null) {
-            hasAnyStaffLevelResult6 = currentUser6.hasAnyStaffLevel();
+          const currentUser5 = obj.getCurrentUser();
+          let hasAnyStaffLevelResult5;
+          if (currentUser5 != null) {
+            hasAnyStaffLevelResult5 = currentUser5.hasAnyStaffLevel();
           }
-          if (hasAnyStaffLevelResult6) {
+          if (hasAnyStaffLevelResult5) {
             logger.log("STAFF-ACK-LOG:", "unpersisted forum post", value.channelId);
           }
           return true;
@@ -387,12 +372,12 @@ function shouldAutomaticallyAck(value, arg1) {
           isForumLikeChannelResult1 = channel.isForumLikeChannel();
         }
         if (true === isForumLikeChannelResult1) {
-          const currentUser7 = obj.getCurrentUser();
-          let hasAnyStaffLevelResult7;
-          if (currentUser7 != null) {
-            hasAnyStaffLevelResult7 = currentUser7.hasAnyStaffLevel();
+          const currentUser6 = obj.getCurrentUser();
+          let hasAnyStaffLevelResult6;
+          if (currentUser6 != null) {
+            hasAnyStaffLevelResult6 = currentUser6.hasAnyStaffLevel();
           }
-          if (hasAnyStaffLevelResult7) {
+          if (hasAnyStaffLevelResult6) {
             logger.log("STAFF-ACK-LOG:", "Forum-like channel", value.channelId);
           }
           return false;
@@ -400,12 +385,12 @@ function shouldAutomaticallyAck(value, arg1) {
           let flag6;
           if (!tmp4) {
             if (!DimensionStore.isAtBottom(value.channelId)) {
-              const currentUser8 = obj.getCurrentUser();
-              let hasAnyStaffLevelResult8;
-              if (currentUser8 != null) {
-                hasAnyStaffLevelResult8 = currentUser8.hasAnyStaffLevel();
+              const currentUser7 = obj.getCurrentUser();
+              let hasAnyStaffLevelResult7;
+              if (currentUser7 != null) {
+                hasAnyStaffLevelResult7 = currentUser7.hasAnyStaffLevel();
               }
-              if (hasAnyStaffLevelResult8) {
+              if (hasAnyStaffLevelResult7) {
                 logger.log("STAFF-ACK-LOG:", "Not at bottom", value.channelId);
               }
               return false;
@@ -413,12 +398,12 @@ function shouldAutomaticallyAck(value, arg1) {
           }
           const layout = ChannelRTCStore.getLayout(value.channelId);
           if (!ChannelRTCStore.getChatOpen(value.channelId)) {
-            const currentUser9 = obj.getCurrentUser();
-            let hasAnyStaffLevelResult9;
-            if (currentUser9 != null) {
-              hasAnyStaffLevelResult9 = currentUser9.hasAnyStaffLevel();
+            const currentUser8 = obj.getCurrentUser();
+            let hasAnyStaffLevelResult8;
+            if (currentUser8 != null) {
+              hasAnyStaffLevelResult8 = currentUser8.hasAnyStaffLevel();
             }
-            if (hasAnyStaffLevelResult9) {
+            if (hasAnyStaffLevelResult8) {
               logger.log("STAFF-ACK-LOG:", "Fullscreen video", value.channelId);
             }
             return false;
@@ -429,24 +414,24 @@ function shouldAutomaticallyAck(value, arg1) {
               if (!messages.loadingMore) {
                 const obj10 = isChannelFocused;
                 const result = obj10.isChannelFocusedForReadStateAck(value.channelId, arg1);
-                const currentUser10 = obj.getCurrentUser();
+                const currentUser9 = obj.getCurrentUser();
                 if (result) {
-                  let hasAnyStaffLevelResult10;
-                  if (currentUser10 != null) {
-                    hasAnyStaffLevelResult10 = currentUser10.hasAnyStaffLevel();
+                  let hasAnyStaffLevelResult9;
+                  if (currentUser9 != null) {
+                    hasAnyStaffLevelResult9 = currentUser9.hasAnyStaffLevel();
                   }
                   flag6 = true;
-                  if (hasAnyStaffLevelResult10) {
+                  if (hasAnyStaffLevelResult9) {
                     logger.log("STAFF-ACK-LOG:", "Acked", value.channelId);
                     flag6 = true;
                   }
                 } else {
-                  let hasAnyStaffLevelResult11;
-                  if (currentUser10 != null) {
-                    hasAnyStaffLevelResult11 = currentUser10.hasAnyStaffLevel();
+                  let hasAnyStaffLevelResult10;
+                  if (currentUser9 != null) {
+                    hasAnyStaffLevelResult10 = currentUser9.hasAnyStaffLevel();
                   }
                   flag6 = false;
-                  if (hasAnyStaffLevelResult11) {
+                  if (hasAnyStaffLevelResult10) {
                     logger.log("STAFF-ACK-LOG:", "Chat not focused", value.channelId);
                     flag6 = false;
                   }
@@ -455,35 +440,35 @@ function shouldAutomaticallyAck(value, arg1) {
               return flag6;
             }
           }
-          const currentUser11 = obj.getCurrentUser();
-          let hasAnyStaffLevelResult12;
-          if (currentUser11 != null) {
-            hasAnyStaffLevelResult12 = currentUser11.hasAnyStaffLevel();
+          const currentUser10 = obj.getCurrentUser();
+          let hasAnyStaffLevelResult11;
+          if (currentUser10 != null) {
+            hasAnyStaffLevelResult11 = currentUser10.hasAnyStaffLevel();
           }
           flag6 = false;
-          if (hasAnyStaffLevelResult12) {
+          if (hasAnyStaffLevelResult11) {
             logger.log("STAFF-ACK-LOG:", "Still loading messages", value.channelId);
             flag6 = false;
           }
         }
       } else {
-        const currentUser12 = obj.getCurrentUser();
-        let hasAnyStaffLevelResult13;
-        if (currentUser12 != null) {
-          hasAnyStaffLevelResult13 = currentUser12.hasAnyStaffLevel();
+        const currentUser11 = obj.getCurrentUser();
+        let hasAnyStaffLevelResult12;
+        if (currentUser11 != null) {
+          hasAnyStaffLevelResult12 = currentUser11.hasAnyStaffLevel();
         }
-        if (hasAnyStaffLevelResult13) {
+        if (hasAnyStaffLevelResult12) {
           logger.log("STAFF-ACK-LOG:", "No unread or mentions", value.channelId);
         }
         return false;
       }
     } else {
-      const currentUser13 = obj.getCurrentUser();
-      let hasAnyStaffLevelResult14;
-      if (currentUser13 != null) {
-        hasAnyStaffLevelResult14 = currentUser13.hasAnyStaffLevel();
+      const currentUser12 = obj.getCurrentUser();
+      let hasAnyStaffLevelResult13;
+      if (currentUser12 != null) {
+        hasAnyStaffLevelResult13 = currentUser12.hasAnyStaffLevel();
       }
-      if (hasAnyStaffLevelResult14) {
+      if (hasAnyStaffLevelResult13) {
         logger.log("STAFF-ACK-LOG:", "Cannot track unreads", value.channelId);
       }
       return false;
@@ -760,7 +745,7 @@ function handleMessageDelete(channelId) {
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
-  const item = threads.forEach(f93696);
+  const item = threads.forEach(f93759);
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
@@ -771,9 +756,9 @@ function handleSearchMessagesSuccess(data) {
     item = messages.forEach((arr) => {
       const mapped = arr.map((thread) => thread.thread);
       const found = mapped.filter(closure_1_0(closure_1_2[56]).isNotNullish);
-      const item = found.forEach(f93696);
+      const item = found.forEach(f93759);
     });
-    const item1 = threads.forEach(f93696);
+    const item1 = threads.forEach(f93759);
   });
 }
 function handleChannelDelete(channel) {
@@ -971,7 +956,7 @@ class ReadState {
     if (arg1 === undefined) {
       CHANNEL = ReadStateTypes.CHANNEL;
     }
-    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
+    merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
     merged[0] = ReadStateTypes.CHANNEL;
     merged.channelId = channelId;
     merged.type = CHANNEL;
@@ -1031,7 +1016,7 @@ class ReadState {
         if (CHANNEL === undefined) {
           CHANNEL2 = ReadStateTypes.CHANNEL;
         }
-        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "Array" });
+        merged = Object.assign({ type: null, outgoingAckTimer: null, ackMessageIdAtChannelSelect: null, ackedWhileCached: "a" });
         merged[0] = ReadStateTypes.CHANNEL;
         merged.channelId = channelId;
         merged.type = CHANNEL2;
@@ -1515,7 +1500,7 @@ class ReadState {
         let tmp9 = !result;
         const tmp4 = require;
         if (tmp9) {
-          const tmp4Result = tmp4(6301);
+          const tmp4Result = tmp4(6303);
           const result1 = tmp4Result.isOptInEnabledForGuild(self._guildId) && self._lastMessageTimestamp < closure_73;
           tmp9 = !result1 && self.canTrackUnreads();
           !result1 && self.canTrackUnreads();
@@ -1844,7 +1829,7 @@ class ReadState {
           const tmp5 = dependencyMap;
           const tmp7 = closure_2;
           if (tmp7) {
-            const promise = asyncRequire(6306, tmp5.paths);
+            const promise = asyncRequire(6308, tmp5.paths);
             promise.then((result) => {
               obj = closure_1_1;
               channelId = channelId.channelId;
@@ -2912,7 +2897,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f93693, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f93756, DurationsDefault.Millis.HOUR);
     token = null;
     const tmp5 = channelId !== selectedChannelId && null != channelId;
     if (tmp5) {
@@ -2942,7 +2927,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f93693, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f93756, DurationsDefault.Millis.HOUR);
     const item = readStates.forEach(function(type) {
       let CHANNEL = type.type;
       if (CHANNEL == null) {
@@ -3048,7 +3033,7 @@ obj = {
     }
     const mapped = messages.map((thread) => thread.thread);
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const item = found.forEach(f93696);
+    const item = found.forEach(f93759);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(messages) {
     messages = messages.messages;
@@ -3326,7 +3311,7 @@ obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "test", force: "krisp", isExplicitUserAction: "r", trackAnalytics: "actionIntentType" });
+    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "test", force: "krisp", isExplicitUserAction: true, trackAnalytics: "popup" });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(timestamp) {
     timestamp = timestamp.timestamp;
@@ -3440,7 +3425,7 @@ obj = {
     }
     id = null;
     if (null != channel) {
-      if (trackedExposureExperiments(channel.type)) {
+      if (closure_17(channel.type)) {
         const value10 = ReadState.get(channel.id);
         const obj8 = ReadState;
         const tmp34 = value10.canBeUnread() && value10.hasUnreadOrMentions();
@@ -3726,7 +3711,7 @@ obj = {
     const item = found.forEach((messageId) => {
       messageId = messageId.messageId;
       const value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId, local: true, immediate: "IconComponent", force: "test", isExplicitUserAction: "AnimatedKeyboardProviderController", trackAnalytics: "new" });
+      value.ack({ messageId, local: true, immediate: "IconComponent", force: "test", isExplicitUserAction: 4, trackAnalytics: "premium_tab" });
     });
     if (context === closure_42) {
       const push = navigation.push;

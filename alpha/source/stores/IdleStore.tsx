@@ -1,9 +1,9 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6107
+// Function ID: 6108
 // Name: IdleStore
-// Dependencies: [502, 1087, 5178, 1384, 2044, 1104, 584, 4790, 6107, 551, 504, 2]
+// Dependencies: [502, 1087, 5179, 1384, 2044, 1104, 584, 4790, 6108, 551, 504, 2]
 
-// Module 6106 (IdleStore)
+// Module 6107 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
@@ -12,8 +12,8 @@ import DurationsDefault from "Durations" /* 1104 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import DiscordNativeDefault from "DiscordNative" /* 4790 */;
-import Constants2 from "Constants" /* 5178 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6107 */;
+import Constants2 from "Constants" /* 5179 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6108 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 

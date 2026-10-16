@@ -1,17 +1,17 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12808
+// Function ID: 12809
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 5143, 21, 5153, 587, 558, 576, 504, 4909, 5154, 6404, 2]
+// Dependencies: [32, 19, 5144, 21, 5154, 587, 558, 576, 504, 4909, 5155, 6406, 2]
 
-// Module 12802 (ForumPostPlaceholder)
+// Module 12808 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return tmp10;
     }
   }
-  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4909).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4909).withRepeat, withSequence: tmp(4909).withSequence, withTiming: tmp(5154).withTiming, timingConfig };
+  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4909).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4909).withRepeat, withSequence: tmp(4909).withSequence, withTiming: tmp(5155).withTiming, timingConfig };
   I.__closure = obj2;
   I.__workletHash = 9488742940898;
   I.__initData = __initData;
@@ -115,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         return obj;
       }
     }
-    const tmp12 = jsx(stateFromStores(6404).Card, { variant: "secondary", style: tmp4.postPlaceholder });
+    const tmp12 = jsx(stateFromStores(6406).Card, { variant: "secondary", style: tmp4.postPlaceholder });
     cResult[3] = tmp4.postPlaceholder;
     cResult[4] = tmp12;
   } else {
@@ -184,7 +184,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return tmp10;
   };
-  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4909).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4909).withRepeat, withSequence: stateFromStores(4909).withSequence, withTiming: stateFromStores(5154).withTiming, timingConfig };
+  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4909).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4909).withRepeat, withSequence: stateFromStores(4909).withSequence, withTiming: stateFromStores(5155).withTiming, timingConfig };
   fn.__closure = obj3;
   fn.__workletHash = 13857107900577;
   fn.__initData = __initData2;

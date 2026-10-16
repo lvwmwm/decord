@@ -1,27 +1,29 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12093
+// Function ID: 12094
 // Name: conjureMentions
-// Dependencies: [19, 1392, 5021, 558, 576, 12093, 504, 2]
-// Exports: encodeConjureMentions, filterConjureMentionCandidates, findConjureMentionQuery, insertConjureMention, withConjureMentionNames
+// Dependencies: [19, 1392, 12094, 5021, 12042, 558, 576, 12092, 504, 1128, 3865, 2]
+// Exports: filterConjureMentionCandidates, findConjureMentionQuery, withConjureMentionNames
 
-// Module 12094 (conjureMentions)
+// Module 12093 (conjureMentions)
 import UserUtils from "UserUtils" /* 5021 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12093 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12092 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12094 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, map, set;
+let _require, set;
 
 function splitConjureMentions(text) {
   const items = [];
   let num = 0;
-  const matchAllResult = text.matchAll(re4);
+  const matchAllResult = text.matchAll(re6);
   const iter = matchAllResult[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
+    let obj3;
     let tmp3 = nextResult;
     let num2 = nextResult.index;
     if (num2 == null) {
@@ -33,22 +35,28 @@ function splitConjureMentions(text) {
       let push = items.push;
       let arr = push(obj);
     }
-    let obj2 = { kind: "mention", userId: tmp3[1] };
-    let arr3 = items.push(obj2);
+    let push2 = items.push;
+    if (null != tmp3[1]) {
+      let obj2 = { kind: "mention", userId: tmp3[1] };
+      obj3 = obj2;
+    } else {
+      obj3 = { kind: "file", attachmentId: tmp3[2] };
+    }
+    let push2Result = push2(obj3);
     num = tmp4 + tmp3[0].length;
     continue;
   }
   if (num < text.length) {
-    const push2 = items.push;
-    const obj3 = { kind: "text", text: text.slice(num) };
-    push2(obj3);
+    const push3 = items.push;
+    const obj4 = { kind: "text", text: text.slice(num) };
+    push3(obj4);
   }
   return items;
 }
-const re4 = /<@!?(\d+)>/g;
-const re5 = /(^|\s)@([\w.]+)/g;
+let tmp2 = /<@!?(\d+)>|<file:(\d{16}-[a-z0-9]{6})>/g;
+const re6 = tmp2;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestConjureMentionedUsers(text) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestConjureMentionedUsers(text) {
   let closure_0;
   let tmp10;
   let tmp14;
@@ -128,18 +136,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
     tmp17 = cResult[8];
   }
   if (cResult[9] !== tmp10) {
-    const fn3 = function h() {
-      let user;
-      return closure_0.filter((item) => null != user.getUser(item)).length;
-    };
+    class C {
+      constructor() {
+        return closure_0.filter((item) => null != user.getUser(item)).length;
+      }
+    }
     const items3 = [tmp10];
     cResult[9] = tmp10;
-    cResult[10] = fn3;
+    cResult[10] = C;
     cResult[11] = items3;
     tmp20 = items3;
-    tmp19 = fn3;
+    tmp19 = C;
   } else {
-    tmp19 = cResult[10];
+    class C {
+      constructor() {
+        return closure_0.filter((item) => null != user.getUser(item)).length;
+      }
+    }
     tmp20 = cResult[11];
   }
   const tmpResult = tmp(504);
@@ -149,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
   _require = arg0;
   let items = [arg0];
   const memo = react.useMemo(() => {
-    const f145762 = (kind) => {
+    const f145844 = (kind) => {
       let items1;
       if ("mention" === kind.kind) {
         const items = [kind.userId];
@@ -160,8 +173,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
       return items1;
     };
     const obj = splitConjureMentions(closure_0);
-    let items = [...new Set(obj.flatMap(f145762))];
-    new Set(obj.flatMap(f145762));
+    let items = [...new Set(obj.flatMap(f145844))];
+    new Set(obj.flatMap(f145844));
     return items;
   }, items);
   let items1 = [memo];
@@ -181,73 +194,114 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
   }, items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMentionNames(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMentionNames(arg0) {
   let closure_0;
   let first;
-  let tmp6;
   let tmp7;
+  let tmp8;
   _require = arg0;
   const obj = require("react");
   const cResult = obj.c(4);
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
+    const items = [UserStore, ConjureStoredAttachmentStore];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const f145764 = (arg0) => user.getUser(arg0);
-      return closure_0.replace(re4, (arg0, arg1) => {
-        let combined = arg0;
-        const tmp2 = f145765(arg1);
-        if (null != tmp2) {
-          const _HermesInternal = HermesInternal;
-          const obj = closure_2_0(closure_2_1[2]);
-          combined = "@" + obj.getName(tmp2);
+    const fn = function u() {
+      const f145846 = (arg0) => user.getUser(arg0);
+      const f145847 = (arg0) => attachment.getAttachment(arg0);
+      return closure_0.replace(re6, (arg0, arg1, arg2) => {
+        if (null == arg1) {
+          let str2 = arg2;
+          const tmp7 = f145849;
+          if (arg2 == null) {
+            str2 = "";
+          }
+          const tmp7Result = tmp7(str2);
+          let name;
+          if (tmp7Result != null) {
+            name = tmp7Result.name;
+          }
+          if (name == null) {
+            const intl = closure_2_0(closure_2_2[9]).intl;
+            name = intl.string(closure_2_1(closure_2_2[10]).ff9Q4C);
+          }
+          const _HermesInternal2 = HermesInternal;
+          return "@" + name;
+        } else {
+          let combined = arg0;
+          const tmp3 = f145848(arg1);
+          if (null != tmp3) {
+            const _HermesInternal = HermesInternal;
+            const obj = closure_2_0(closure_2_2[3]);
+            combined = "@" + obj.getName(tmp3);
+          }
+          return combined;
         }
-        return combined;
       });
     };
     const items1 = [arg0];
     cResult[1] = arg0;
     cResult[2] = fn;
     cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
+    tmp8 = items1;
+    tmp7 = fn;
   } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
   }
   const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
 }) : (function useConjureMentionNames(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
-  const items = [UserStore];
+  const items = [UserStore, ConjureStoredAttachmentStore];
   const items1 = [arg0];
   return obj.useStateFromStores(items, () => {
-    const f145765 = (arg0) => user.getUser(arg0);
-    return closure_0.replace(re4, (arg0, arg1) => {
-      let combined = arg0;
-      const tmp2 = f145765(arg1);
-      if (null != tmp2) {
-        const _HermesInternal = HermesInternal;
-        const obj = closure_2_0(closure_2_1[2]);
-        combined = "@" + obj.getName(tmp2);
+    const f145848 = (arg0) => user.getUser(arg0);
+    const f145849 = (arg0) => attachment.getAttachment(arg0);
+    return closure_0.replace(re6, (arg0, arg1, arg2) => {
+      if (null == arg1) {
+        let str2 = arg2;
+        const tmp7 = f145849;
+        if (arg2 == null) {
+          str2 = "";
+        }
+        const tmp7Result = tmp7(str2);
+        let name;
+        if (tmp7Result != null) {
+          name = tmp7Result.name;
+        }
+        if (name == null) {
+          const intl = closure_2_0(closure_2_2[9]).intl;
+          name = intl.string(closure_2_1(closure_2_2[10]).ff9Q4C);
+        }
+        const _HermesInternal2 = HermesInternal;
+        return "@" + name;
+      } else {
+        let combined = arg0;
+        const tmp3 = f145848(arg1);
+        if (null != tmp3) {
+          const _HermesInternal = HermesInternal;
+          const obj = closure_2_0(closure_2_2[3]);
+          combined = "@" + obj.getName(tmp3);
+        }
+        return combined;
       }
-      return combined;
     });
   }, items1);
 });
-const result = size.fileFinishedImporting("modules/conjure/chat/conjureMentions.tsx");
+let result = size.fileFinishedImporting("modules/conjure/chat/conjureMentions.tsx");
 
 export const CONJURE_MAX_MENTION_SUGGESTIONS = 8;
+export const CONJURE_ANY_MENTION = tmp2;
 export const findConjureMentionQuery = function findConjureMentionQuery(arr, end) {
-  const obj = /(?:^|\s)@([\w.]*)$/;
+  const obj = /(?:^|\s)@([\w.-]*)$/;
   const match = obj.exec(arr.slice(0, end));
   let tmp2 = null;
   if (null != match) {
@@ -256,8 +310,9 @@ export const findConjureMentionQuery = function findConjureMentionQuery(arr, end
   }
   return tmp2;
 };
-export const filterConjureMentionCandidates = function filterConjureMentionCandidates(arr, text) {
-  let closure_0 = text.toLowerCase();
+export const filterConjureMentionCandidates = function filterConjureMentionCandidates(arr, conjureStoredAttachments, text) {
+  let closure_0;
+  _require = text.toLowerCase();
   const found = arr.filter((username) => {
     let someResult = "" === closure_0;
     if (!someResult) {
@@ -274,55 +329,49 @@ export const filterConjureMentionCandidates = function filterConjureMentionCandi
     }
     return someResult;
   });
-  return found.slice(0, 8);
-};
-export const insertConjureMention = function insertConjureMention(arr, start, username) {
-  let sum;
-  const combined = "@" + username.username + " ";
-  const obj = { value: sum + arr.slice(start.end), caret: start.start + combined.length };
-  sum = arr.slice(0, start.start) + combined;
-  return obj;
-};
-export const encodeConjureMentions = function encodeConjureMentions(chat, arr) {
-  if (0 === arr.length) {
-    return chat;
-  } else {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map(arr.map((username) => {
-      const items = [, ];
-      const str = username.username;
-      items[0] = str.toLowerCase();
-      items[1] = username.id;
-      return items;
-    }));
-    return chat.replace(re5, (arg0, arg1, str) => {
-      let combined = arg0;
-      str = str.replace(/\.+$/, "");
-      const value = map.get(str.toLowerCase());
-      if (null != value) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + arg1 + "<@" + value + ">" + str.slice(str.length);
-      }
-      return combined;
-    });
-  }
+  const substr = found.slice(0, 8);
+  const items = [...substr.map((user) => ({ kind: "user", user }))];
+  const obj = require("conjureFileMentions");
+  const result = obj.filterConjureFileCandidates(conjureStoredAttachments, text);
+  const substr1 = result.slice(0, 8);
+  HermesBuiltin.arraySpread(items, substr1.map((file) => ({ kind: "file", file })), tmp2);
+  return items;
 };
 export { splitConjureMentions };
-export const useRequestConjureMentionedUsers = tmp2;
+export const useRequestConjureMentionedUsers = tmp3;
 export const withConjureMentionNames = function withConjureMentionNames(body) {
+  let attachment;
   let user;
-  const f111828 = (arg0) => user.getUser(arg0);
-  return body.replace(closure_4, (arg0, arg1) => {
-    let combined = arg0;
-    const tmp2 = f145765(arg1);
-    if (null != tmp2) {
-      const _HermesInternal = HermesInternal;
-      const obj = closure_2_0(closure_2_1[2]);
-      combined = "@" + obj.getName(tmp2);
+  const f111873 = (arg0) => user.getUser(arg0);
+  const f111874 = (arg0) => attachment.getAttachment(arg0);
+  return body.replace(closure_6, (arg0, arg1, arg2) => {
+    if (null == arg1) {
+      let str2 = arg2;
+      const tmp7 = f145849;
+      if (arg2 == null) {
+        str2 = "";
+      }
+      const tmp7Result = tmp7(str2);
+      let name;
+      if (tmp7Result != null) {
+        name = tmp7Result.name;
+      }
+      if (name == null) {
+        const intl = closure_2_0(closure_2_2[9]).intl;
+        name = intl.string(closure_2_1(closure_2_2[10]).ff9Q4C);
+      }
+      const _HermesInternal2 = HermesInternal;
+      return "@" + name;
+    } else {
+      let combined = arg0;
+      const tmp3 = f145848(arg1);
+      if (null != tmp3) {
+        const _HermesInternal = HermesInternal;
+        const obj = closure_2_0(closure_2_2[3]);
+        combined = "@" + obj.getName(tmp3);
+      }
+      return combined;
     }
-    return combined;
   });
 };
-export const useConjureMentionNames = tmp3;
+export const useConjureMentionNames = tmp4;

@@ -1,26 +1,26 @@
-// Module ID: 10785
-// Function ID: 10786
+// Module ID: 10782
+// Function ID: 10783
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1392, 1394, 1087, 21, 5153, 587, 558, 576, 10786, 7548, 10811, 5091, 5149, 1128, 10812, 504, 1991, 1275, 9202, 1633, 7317, 5118, 8530, 9755, 10016, 6529, 7063, 2]
+// Dependencies: [19, 17, 1392, 1394, 1087, 21, 5154, 587, 558, 576, 10783, 7549, 10808, 5091, 5150, 1128, 10809, 504, 1991, 1275, 9203, 1633, 7319, 5118, 8531, 9754, 10017, 6531, 7065, 2]
 
-// Module 10785 (TieredTenureBadgeActionSheet)
+// Module 10782 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5091 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import openUserSettings from "openUserSettings" /* 7317 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7548 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8530 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10786 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10811 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import openUserSettings from "openUserSettings" /* 7319 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7549 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8531 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10783 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10808 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,7 +140,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
                     let tmp43 = isUsersBadge && null != premiumSince;
                     if (tmp43) {
                       const obj4 = { style: tmp4.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj5) };
-                      const Text = tmp(5149).Text;
+                      const Text = tmp(5150).Text;
                       const intl2 = tmp(1128).intl;
                       formatToPlainString = intl2.formatToPlainString;
                       const _Date = Date;
@@ -221,7 +221,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
       } else {
         tmp31 = cResult[18];
       }
-      Text1 = tmp(5149).Text;
+      Text1 = tmp(5150).Text;
       badgeName = tmp4.badgeName;
       const intl = tmp(1128).intl;
       stringResult = intl.string(tieredTenureBadgeData.nameUnformatted);
@@ -300,7 +300,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5149).Text;
+    const Text = tmp2(5150).Text;
     intl = tmp2(1128).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
@@ -311,7 +311,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5149).Text;
+      const Text2 = tmp2(5150).Text;
       const intl2 = tmp2(1128).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;

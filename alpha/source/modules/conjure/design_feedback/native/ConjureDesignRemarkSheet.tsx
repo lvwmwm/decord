@@ -1,18 +1,18 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11645
+// Function ID: 11646
 // Name: ConjureDesignRemarkSheet
-// Dependencies: [32, 19, 17, 10901, 21, 5153, 587, 558, 576, 5118, 11610, 7062, 1128, 3865, 6996, 5441, 7120, 2]
+// Dependencies: [32, 19, 17, 10898, 21, 5154, 587, 558, 576, 5118, 11607, 7064, 1128, 3865, 6998, 5442, 7122, 2]
 
-// Module 11648 (ConjureDesignRemarkSheet)
+// Module 11645 (ConjureDesignRemarkSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10901 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11610 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11607 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

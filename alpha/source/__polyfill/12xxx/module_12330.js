@@ -1,29 +1,24 @@
 // Module ID: 12330
 // Function ID: 12331
-// Dependencies: [12325]
-// Exports: hasTracingEnabled
+// Dependencies: [12305, 12325]
+// Exports: getDefaultCurrentScope, getDefaultIsolationScope
 
 // Module 12330
+import _mod12305 from "module_12305" /* 12305 */;
 import _mod12325 from "module_12325" /* 12325 */;
 
 
-export const hasTracingEnabled = function hasTracingEnabled(tracesSampler) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
-    }
-  }
-  let tmp = tracesSampler;
-  const obj = _mod12325;
-  const client = obj.getClient();
-  if (!tracesSampler) {
-    tmp = client && client.getOptions();
-    client && client.getOptions();
-  }
-  let tmp3 = tmp;
-  if (tmp3) {
-    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
-    tmp3 = enableTracing;
-  }
-  return tmp3;
+export const getDefaultCurrentScope = function getDefaultCurrentScope() {
+  const obj = _mod12305;
+  return obj.getGlobalSingleton("defaultCurrentScope", () => {
+    const scope = new _mod12325.Scope();
+    return scope;
+  });
+};
+export const getDefaultIsolationScope = function getDefaultIsolationScope() {
+  const obj = _mod12305;
+  return obj.getGlobalSingleton("defaultIsolationScope", () => {
+    const scope = new _mod12325.Scope();
+    return scope;
+  });
 };

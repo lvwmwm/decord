@@ -1,31 +1,31 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13459
+// Function ID: 13460
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 9928, 13445, 1087, 21, 4909, 5153, 558, 576, 13452, 13486, 13487, 13488, 13505, 13506, 13507, 13546, 13549, 13444, 504, 5154, 5458, 1267, 6557, 5440, 13461, 1202, 7037, 2]
+// Dependencies: [32, 19, 17, 9929, 13453, 1087, 21, 4909, 5154, 558, 576, 13460, 13494, 13495, 13496, 13513, 13514, 13515, 13554, 13557, 13452, 504, 5155, 5459, 1267, 6559, 5441, 13469, 1202, 7039, 2]
 
-// Module 13451 (InAppNotificationContainer)
+// Module 13459 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import spring from "spring" /* 5440 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13444 */;
-import MessageNotificationDefault from "MessageNotification" /* 13452 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 13486 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 13487 */;
-import AlertNotificationDefault from "AlertNotification" /* 13505 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 13506 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 13507 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 13546 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 13549 */;
+import timing from "timing" /* 5155 */;
+import spring from "spring" /* 5441 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13452 */;
+import MessageNotificationDefault from "MessageNotification" /* 13460 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 13494 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 13495 */;
+import AlertNotificationDefault from "AlertNotification" /* 13513 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 13514 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 13515 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 13554 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 13557 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9928 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13445 */;
+import NativeMenuStore from "NativeMenuStore" /* 9929 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13453 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const BugReporterNotification = tmp(13488);
+const BugReporterNotification = tmp(13496);
 const StyleSheet = react_native.StyleSheet;
 ({ DEFAULT_ANIMATION_TIMING: metroImportDefault, extrapolateConfig: metroImportAll, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = InAppNotificationConstants);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = Constants);

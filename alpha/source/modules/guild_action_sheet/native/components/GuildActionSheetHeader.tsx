@@ -1,23 +1,23 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14915
+// Function ID: 14916
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 14906, 2090, 7194, 1087, 21, 5153, 587, 1385, 558, 576, 1128, 9096, 9092, 9334, 9099, 4868, 1202, 5149, 6407, 6849, 504, 2082, 14907, 14908, 1499, 6381, 1417, 5091, 1452, 9543, 4877, 9094, 13716, 2]
+// Dependencies: [19, 17, 14916, 2090, 7196, 1087, 21, 5154, 587, 1385, 558, 576, 1128, 9097, 9093, 9335, 9100, 4868, 1202, 5150, 6409, 6851, 504, 2082, 14917, 14918, 1499, 6383, 1417, 5091, 1452, 9544, 4877, 9095, 13727, 2]
 // Exports: default
 
-// Module 14905 (GuildActionSheetHeader)
+// Module 14915 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9096 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14907 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9097 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14917 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 14906 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 14916 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7194 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7196 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const AssetRegistryDefault2 = tmp4(9099);
+const AssetRegistryDefault2 = tmp4(9100);
 const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -68,9 +68,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
       const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(require("intl").t.op2cJ6);
       importDefault = stringResult1;
-      const GlobeEarthIcon = tmp(9334).GlobeEarthIcon;
+      const GlobeEarthIcon = tmp(9335).GlobeEarthIcon;
       _require = GlobeEarthIcon;
-      tmp9Result = tmp9(9099);
+      tmp9Result = tmp9(9100);
       tmp11 = stringResult1;
       tmp12 = GlobeEarthIcon;
     }
@@ -162,10 +162,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
   const intl = GlobeEarthIcon(1128).intl;
   importDefault = intl.string(GlobeEarthIcon(1128).t.TME4LJ);
   let tmp4Result = AssetRegistryDefault;
-  if (guildVisibility === GlobeEarthIcon(9092).GuildVisibility.PUBLIC) {
+  if (guildVisibility === GlobeEarthIcon(9093).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1128).intl;
     importDefault = intl2.string(tmp2(1128).t.op2cJ6);
-    GlobeEarthIcon = tmp2(9334).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(9335).GlobeEarthIcon;
     tmp4Result = AssetRegistryDefault2;
   }
   let obj = {
@@ -178,11 +178,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
     },
     children: items
   };
-  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const PressableOpacity = tmp2(6409).PressableOpacity;
   let obj2 = { style: tmp.communityPillIcon, source: tmp4Result, disableColor: true };
   items = [closure_9(GlobeEarthIcon(1202).Icon, obj2), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: intl3.string(GlobeEarthIcon(1128).t.K7iRig) };
-  const Text = tmp2(5149).Text;
+  const Text = tmp2(5150).Text;
   intl3 = tmp2(1128).intl;
   items[1] = closure_9(Text, obj3);
   return closure_10(PressableOpacity, obj);

@@ -1,14 +1,14 @@
-// Module ID: 10251
-// Function ID: 10252
+// Module ID: 10252
+// Function ID: 10253
 // Name: IdIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10252, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10253, 4876, 2]
 
-// Module 10251 (IdIcon)
+// Module 10252 (IdIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 10252 */;
+import AssetRegistry from "AssetRegistry" /* 10253 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

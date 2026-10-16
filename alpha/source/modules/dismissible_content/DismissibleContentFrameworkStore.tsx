@@ -20,7 +20,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let tmp2 = new LoggerDefault("DCF");
 const React3 = tmp2;
 let c5 = false;
-let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: set, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, renderedAtTimestamps: map, lastDismissed: null, seenForGuildId: map1 };
+let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: set, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, upsellBackoffOverridden: false, renderedAtTimestamps: map, lastDismissed: null, seenForGuildId: map1 };
 set = new Set();
 map = new Map();
 map1 = new Map();
@@ -47,6 +47,12 @@ class DismissibleContentFrameworkStore extends PersistedStore {
         flag = false;
       }
       tmp4.newUserMinAgeRequiredOverridden = flag;
+      let flag2 = numberOfDCsShownToday.upsellBackoffOverridden;
+      const tmp5 = obj;
+      if (flag2 == null) {
+        flag2 = false;
+      }
+      tmp5.upsellBackoffOverridden = flag2;
     }
     obj.dismissibleContentSeenDuringSession = new Set();
     new Set();
@@ -119,6 +125,12 @@ Object.defineProperty(prototype, "newUserMinAgeRequiredOverridden", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "upsellBackoffOverridden", {
+  get: function upsellBackoffOverridden() {
+    return obj.upsellBackoffOverridden;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "lastDismissed", {
   get: function lastDismissed() {
     return obj.lastDismissed;
@@ -149,6 +161,9 @@ let obj2 = {
   },
   DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: function handleNewUserMinAgeRequiredOverride(value) {
     obj.newUserMinAgeRequiredOverridden = value.value;
+  },
+  DCF_UPSELL_BACKOFF_OVERRIDE: function handleUpsellBackoffOverride(value) {
+    obj.upsellBackoffOverridden = value.value;
   },
   DCF_HANDLE_DC_SHOWN: function handleDCShownToUser(arg0) {
     let dismissibleContent;

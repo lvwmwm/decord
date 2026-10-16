@@ -1,21 +1,21 @@
-// Module ID: 18852
-// Function ID: 18853
+// Module ID: 18865
+// Function ID: 18866
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5149, 1202, 9702, 1128, 6885, 18853, 4865, 18825, 5091, 16214, 5442, 7036, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 5150, 1202, 9701, 1128, 6887, 18866, 4865, 18838, 5091, 16228, 5443, 7038, 2]
 
-// Module 18852 (CreatorHighlightSection)
+// Module 18865 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import LinkingDefault from "Linking" /* 4865 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9702 */;
-import EmojiIconDefault from "EmojiIcon" /* 16214 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9701 */;
+import EmojiIconDefault from "EmojiIcon" /* 16228 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const defaultMVCPConfig = tmp(7036);
+const defaultMVCPConfig = tmp(7038);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -78,7 +78,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSe
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { variant: "text-sm/normal", color: "text-overlay-light", children: intl.string(intl5.t["3NNXPW"]) };
-          const Text = tmp(5149).Text;
+          const Text = tmp(5150).Text;
           intl = tmp(1128).intl;
           const tmp16 = hasOwnProperty(Text, obj3);
           cResult[9] = tmp16;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(18853)(guild_id, 3, 60);
+  const tmp7 = guild_id(18866)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -190,7 +190,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
       let tmp68;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_5(guild_id(18825), {});
+        const tmp67 = closure_5(guild_id(18838), {});
         cResult[3] = tmp67;
         tmp65 = tmp67;
       } else {
@@ -226,7 +226,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
         }
         if (cResult[11] !== guildName) {
           const obj5 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
-          const tmp17 = closure_5(tmp(5149).Text, obj5);
+          const tmp17 = closure_5(tmp(5150).Text, obj5);
           cResult[11] = guildName;
           cResult[12] = tmp17;
           tmp15 = tmp17;
@@ -334,7 +334,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
                                             tmp56 = tmp59;
                                           }
                                           const obj8 = { pillStyle: viewServerButton, text: tmp51, onPress: tmp9, shrink: true };
-                                          const tmp55 = closure_5(tmp(5442).BaseTextButton, obj8);
+                                          const tmp55 = closure_5(tmp(5443).BaseTextButton, obj8);
                                           cResult[45] = tmp9;
                                           cResult[46] = tmp4.viewServerButton;
                                           cResult[47] = tmp55;
@@ -353,7 +353,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
                           const obj9 = { style: tmp4.emojiSectionContainer, children: items2 };
                           const obj10 = { style: items1, variant: typeConsolidationEyebrow.variant, color: "text-default", children: intl3.string(tmp(1128).t.wg53L8) };
                           items1 = [tmp4.premiumEmojisTitle, typeConsolidationEyebrow.style];
-                          const Text = tmp(5149).Text;
+                          const Text = tmp(5150).Text;
                           intl3 = tmp(1128).intl;
                           items2 = [closure_5(Text, obj10), ];
                           const obj11 = { style: items3, children: items4 };
@@ -374,7 +374,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
                           if (tmp47Result) {
                             const _HermesInternal = HermesInternal;
                             const obj12 = { style: tmp4.emojiListItem, variant: "text-sm/semibold", color: "text-default", children: "+" + notShownEmojiCount };
-                            const Text2 = tmp(5149).Text;
+                            const Text2 = tmp(5150).Text;
                             tmp47Result = tmp47(Text2, obj12);
                           }
                           items4[1] = tmp47Result;
@@ -395,7 +395,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
                         tmp42 = tmp45Result;
                       }
                       const obj13 = { style: tmp34, variant: "text-sm/normal", color: "text-default", lineClamp: 1, lineBreakMode: "tail", children: tmp35 };
-                      const tmp41 = closure_5(tmp(5149).Text, obj13);
+                      const tmp41 = closure_5(tmp(5150).Text, obj13);
                       cResult[30] = tmp4.ownerUsername;
                       cResult[31] = tmp35;
                       cResult[32] = tmp41;
@@ -417,7 +417,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
                     tmp35 = formatResult;
                   }
                   const obj15 = { style: tmp4.ownerQuote, variant: "text-md/normal", color: "text-default", children: quote };
-                  const tmp33 = closure_5(tmp(5149).Text, obj15);
+                  const tmp33 = closure_5(tmp(5150).Text, obj15);
                   cResult[24] = quote;
                   cResult[25] = tmp4.ownerQuote;
                   cResult[26] = tmp33;
@@ -509,12 +509,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(18853)(guild_id, 3, 60);
+  const tmp6 = guild_id(18866)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(18825), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(18838), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;
@@ -527,7 +527,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
     items1 = [closure_5(tmp5(5091), obj5), ];
     const obj7 = { style: tmp.cardHeaderContainer, children: items2 };
     const obj8 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
-    items2 = [closure_5(tmp2(5149).Text, obj8), ];
+    items2 = [closure_5(tmp2(5150).Text, obj8), ];
     let tmp11Result = null != subscriberCount;
     if (tmp11Result) {
       const obj9 = { subscriberCount, style: tmp.serverSubscriberCount };
@@ -539,7 +539,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
     const obj10 = { style: tmp.ownerQuote, variant: "text-md/normal", color: "text-default", children: quote };
     items3[1] = closure_5(require("Text/Text").Text, obj10);
     const obj11 = { style: tmp.ownerUsername, variant: "text-sm/normal", color: "text-default", lineClamp: 1, lineBreakMode: "tail", children: format(m0b6Kj, obj12) };
-    const Text = tmp2(5149).Text;
+    const Text = tmp2(5150).Text;
     const intl = tmp2(1128).intl;
     format = intl.format;
     obj12 = { attributionName: quote_attribution, attributionTitle: quote_attribution_title };
@@ -554,7 +554,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
       const obj13 = { style: tmp.emojiSectionContainer, children: items5 };
       const obj14 = { style: items4, variant: typeConsolidationEyebrow.variant, color: "text-default", children: intl3.string(require("intl").t.wg53L8) };
       items4 = [tmp.premiumEmojisTitle, typeConsolidationEyebrow.style];
-      const Text2 = tmp2(5149).Text;
+      const Text2 = tmp2(5150).Text;
       intl3 = tmp2(1128).intl;
       items5 = [closure_5(Text2, obj14), ];
       const obj15 = { style: items6, children: items7 };
@@ -574,7 +574,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
       if (tmp11Result2) {
         const _HermesInternal = HermesInternal;
         const obj16 = { style: tmp.emojiListItem, variant: "text-sm/semibold", color: "text-default", children: "+" + notShownEmojiCount };
-        const Text3 = tmp2(5149).Text;
+        const Text3 = tmp2(5150).Text;
         tmp11Result2 = tmp11(Text3, obj16);
       }
       items7[1] = tmp11Result2;
@@ -584,7 +584,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
     items3[3] = tmp9Result;
     const obj17 = { style: tmp.viewServerButtonContainer, children: closure_5(BaseTextButton, obj18) };
     obj18 = { pillStyle: tmp.viewServerButton, text: intl4.string(require("intl").t.mQ2IGa), onPress: tmp7, shrink: true };
-    BaseTextButton = tmp2(5442).BaseTextButton;
+    BaseTextButton = tmp2(5443).BaseTextButton;
     intl4 = tmp2(1128).intl;
     items3[4] = closure_5(View, obj17);
     return closure_6(View, obj3);

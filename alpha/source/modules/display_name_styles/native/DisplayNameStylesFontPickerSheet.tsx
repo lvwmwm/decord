@@ -1,20 +1,20 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16332
+// Function ID: 16333
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1098, 21, 5153, 587, 558, 576, 8521, 16313, 16315, 1412, 1409, 5119, 5118, 1128, 2963, 16319, 5441, 15561, 9079, 5149, 5439, 5108, 7063, 2]
+// Dependencies: [32, 19, 17, 1098, 21, 5154, 587, 558, 576, 8522, 16327, 16329, 1412, 1409, 5119, 5118, 1128, 2963, 16333, 5442, 15571, 9080, 5150, 5440, 5108, 7065, 2]
 
-// Module 16318 (DisplayNameStylesFontPickerSheet)
+// Module 16332 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import _modDef2963 from "module_2963" /* 2963 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16319 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16333 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -145,11 +145,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   importDefault = tmp;
   let tmp2 = onSelectFont;
   let tmp3 = dependencyMap;
-  let obj = onSelectFont(8521);
+  let obj = onSelectFont(8522);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(16313);
+  let obj2 = onSelectFont(16327);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = onSelectFont(16315);
+  let obj3 = onSelectFont(16329);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
@@ -174,13 +174,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     obj2.hideActionSheet();
   }, items);
   const obj5 = { ref: bottomSheetRef, header: closure_8(tmp13, obj6), children: tmp11(closure_5, obj8) };
-  BottomSheet = onSelectFont(7063).BottomSheet;
+  BottomSheet = onSelectFont(7065).BottomSheet;
   const tmp12 = importDefault;
   obj6 = { title: intl.string(_modDef2963["0JCuGm"]), trailing: closure_8(Button, obj7) };
   tmp13 = DisplayNameStylesSheetHeaderDefault;
   intl = onSelectFont(1128).intl;
   obj7 = { text: intl2.string(onSelectFont(1128).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
-  Button = onSelectFont(5441).Button;
+  Button = onSelectFont(5442).Button;
   intl2 = onSelectFont(1128).intl;
   obj8 = { style: tmp.container, children: closure_9(closure_5, obj9) };
   obj9 = { style: tmp.contentContainer, children: items1 };
@@ -245,7 +245,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_8(tmp9, obj, item);
     })
   };
-  const Stack = onSelectFont(5439).Stack;
+  const Stack = onSelectFont(5440).Stack;
   items1 = [closure_8(Stack, obj10), ];
   if (tmp15Result) {
     tmp15Result = hasNonLatinLettersResult;
@@ -254,7 +254,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     const obj11 = { style: tmp.nonLatinDisclaimer, children: items2 };
     items2 = [tmp11(tmp2(5108).CircleInformationIcon, { size: "sm" }), ];
     const obj12 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl3.string(_modDef2963["+O1xL2"]) };
-    let Text = tmp2(5149).Text;
+    let Text = tmp2(5150).Text;
     intl3 = tmp2(1128).intl;
     items2[1] = tmp11(Text, obj12);
     tmp15Result = tmp15(tmp14, obj11);

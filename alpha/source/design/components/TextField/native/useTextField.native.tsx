@@ -1,11 +1,11 @@
-// Module ID: 6516
-// Function ID: 6517
+// Module ID: 6518
+// Function ID: 6519
 // Name: useTextField
-// Dependencies: [32, 19, 558, 576, 5433, 2]
+// Dependencies: [32, 19, 558, 576, 5434, 2]
 
-// Module 6516 (useTextField)
+// Module 6518 (useTextField)
 import react2 from "react" /* 576 */;
-import react_native from "react-native" /* 5433 */;
+import react_native from "react-native" /* 5434 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

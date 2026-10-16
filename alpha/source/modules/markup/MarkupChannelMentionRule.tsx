@@ -1,20 +1,20 @@
-// Module ID: 5474
-// Function ID: 5475
+// Module ID: 5475
+// Function ID: 5476
 // Name: MarkupChannelMentionRule
-// Dependencies: [2120, 2068, 2090, 4809, 4819, 1392, 1087, 2034, 1417, 1128, 5475, 5476, 5483, 5486, 5484, 5473, 1951, 2]
+// Dependencies: [2120, 2068, 2090, 4809, 4819, 1392, 1087, 2034, 1417, 1128, 5476, 5477, 5484, 5487, 5485, 5474, 1951, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5474 (MarkupChannelMentionRule)
+// Module 5475 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef1951 from "module_1951" /* 1951 */;
 import StringUtils from "StringUtils" /* 2034 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5473 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5475 */;
-import ChannelUtils from "ChannelUtils" /* 5476 */;
-import useChannelName from "useChannelName" /* 5483 */;
-import LinkUtils from "LinkUtils" /* 5484 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5486 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5474 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5476 */;
+import ChannelUtils from "ChannelUtils" /* 5477 */;
+import useChannelName from "useChannelName" /* 5484 */;
+import LinkUtils from "LinkUtils" /* 5485 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5487 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -316,8 +316,8 @@ obj3 = {
   order: _modDef1951.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
-    const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
+    const CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE;
+    const match = CHANNEL_OR_MESSAGES_URL_WITH_CONVERSATION_RE.exec(arg0);
     if (null != match) {
       if (null != match[2]) {
         const obj = /\D/;
@@ -346,26 +346,32 @@ obj3 = {
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
-      let tmp5Result;
-      const tmp23 = getChannel(tmp3, null);
-      if (null == tmp23) {
+      let tmp6Result;
+      const tmp28 = getChannel(tmp3, null);
+      if (null == tmp28) {
         const channel = ChannelStore.getChannel(channelId.channelId);
         guildId = undefined;
-        const tmp13 = handleUnknownChannel;
+        const tmp14 = handleUnknownChannel;
         if (channel != null) {
           guildId = channel.getGuildId();
         }
-        tmp5Result = tmp13(tmp2, tmp3, tmp4, guildId, tmp);
+        tmp6Result = tmp14(tmp2, tmp3, tmp4, guildId, tmp);
       } else {
         const channel1 = ChannelStore.getChannel(channelId.channelId);
         let guildId1;
-        const tmp5 = parseChannel;
+        const tmp6 = parseChannel;
         if (channel1 != null) {
           guildId1 = channel1.getGuildId();
         }
-        tmp5Result = tmp5(tmp23, tmp4, guildId1, tmp);
+        tmp6Result = tmp6(tmp28, tmp4, guildId1, tmp);
       }
-      return tmp5Result;
+      let tmp22 = tmp6Result;
+      if ("channelMention" === tmp6Result.type) {
+        const obj3 = { conversationId: tmp5 };
+        const merged = Object.assign(tmp6Result);
+        tmp22 = obj3;
+      }
+      return tmp22;
     }
   }
 };

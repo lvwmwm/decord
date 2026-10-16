@@ -1,19 +1,19 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18244
+// Function ID: 18245
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 12843, 12846, 12841, 21, 5153, 587, 558, 576, 12842, 18228, 4909, 4886, 18235, 18233, 5440, 1202, 5149, 6407, 11425, 1128, 6384, 18236, 2]
+// Dependencies: [19, 12849, 12852, 12847, 21, 5154, 587, 558, 576, 12848, 18238, 4909, 4886, 18245, 18243, 5441, 1202, 5150, 6409, 11422, 1128, 6386, 18246, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 18234 (VoicePanelConsoleStatus)
+// Module 18244 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4886 */;
-import spring from "spring" /* 5440 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12843 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12846 */;
+import spring from "spring" /* 5441 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12847 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12849 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12852 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

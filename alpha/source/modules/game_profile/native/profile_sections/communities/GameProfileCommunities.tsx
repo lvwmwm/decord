@@ -1,26 +1,26 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9349
+// Function ID: 9350
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 2090, 2119, 9144, 1087, 2075, 21, 5153, 587, 558, 576, 2082, 504, 9109, 9139, 9103, 7142, 7275, 7100, 7141, 1128, 9182, 9349, 5149, 12, 9176, 2]
+// Dependencies: [32, 5, 19, 17, 2090, 2119, 9145, 1087, 2075, 21, 5154, 587, 558, 576, 2082, 504, 9110, 9140, 9104, 7144, 7277, 7102, 7143, 1128, 9183, 9350, 5150, 12, 9177, 2]
 
-// Module 9348 (GameProfileCommunities)
+// Module 9349 (GameProfileCommunities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9103 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9109 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9139 */;
-import GameProfileConstants from "GameProfileConstants" /* 9144 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9349 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9104 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9110 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9140 */;
+import GameProfileConstants from "GameProfileConstants" /* 9145 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -571,7 +571,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileC
   let obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.header, children: closure_11(Heading, obj3) };
   obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(game(1128).t.r6bvTh) };
-  Heading = game(5149).Heading;
+  Heading = game(5150).Heading;
   intl = game(1128).intl;
   items = [closure_11(View, obj2), ];
   const obj4 = { style: tmp.list, children: mapped };

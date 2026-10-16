@@ -1,15 +1,15 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 10663
+// Function ID: 10664
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4819, 1392, 10533, 21, 558, 576, 504, 5021, 10643, 7239, 1128, 6874, 6872, 9608, 6487, 10667, 2]
+// Dependencies: [32, 19, 4819, 1392, 10534, 21, 558, 576, 504, 5021, 10640, 7241, 1128, 6876, 6874, 9607, 6489, 10664, 2]
 
-// Module 10666 (StrangerDangerMoreTipsModalActionItems)
+// Module 10663 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7239 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10533 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10643 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7241 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10534 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
@@ -509,9 +509,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StrangerDang
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(6874).EyeIcon;
+      let EyeSlashIcon = tmp11(6876).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6872).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6874).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

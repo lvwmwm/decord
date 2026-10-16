@@ -1,13 +1,13 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9359
+// Function ID: 9360
 // Name: MarketingComponentRecord
-// Dependencies: [1407, 1104, 1249, 9359, 1266, 2]
+// Dependencies: [1407, 1104, 1249, 9360, 1266, 2]
 
-// Module 9358 (MarketingComponentRecord)
+// Module 9359 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1104 */;
 import ProtoUtils from "ProtoUtils" /* 1249 */;
 import _modDef1266 from "module_1266" /* 1266 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9359 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9360 */;
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ class MarketingComponentRecord extends Record {
       throw new TypeError("Trying to call a non-function");
     }
   }
-  getFormatVariableValues(arg0) {
+  getFormatVariableValues(currentLocale) {
     let obj;
     let promotionEndDate;
     const self = this;
@@ -100,7 +100,7 @@ class MarketingComponentRecord extends Record {
         const _Math = Math;
         num = Math.ceil(diff / DurationsDefault.Millis.DAY);
       }
-      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(arg0, closure_3) };
+      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(currentLocale, closure_3) };
       promotionEndDate = self.promotionEndDate;
     }
     return obj;

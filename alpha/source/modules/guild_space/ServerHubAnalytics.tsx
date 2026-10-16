@@ -1,12 +1,13 @@
-// Module ID: 18615
-// Function ID: 18616
+// Module ID: 18625
+// Function ID: 18626
 // Name: ServerHubAnalytics
-// Dependencies: [1087, 1267, 2]
-// Exports: trackServerHubToggleSetting, trackServerHubVisit
+// Dependencies: [1087, 1267, 18626, 2]
+// Exports: trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked
 
-// Module 18615 (ServerHubAnalytics)
+// Module 18625 (ServerHubAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import editorUtils from "editorUtils" /* 18626 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -23,4 +24,19 @@ export const trackServerHubVisit = function trackServerHubVisit(guild_id, source
   const obj = AnalyticsUtilsDefault;
   const obj2 = { guild_id, source };
   obj.track(AnalyticEvents.SERVER_HUB_VISIT, obj2);
+};
+export const trackServerHubWidgetEditClicked = function trackServerHubWidgetEditClicked(guild_id, widget_type, widget_id) {
+  let obj3;
+  const track = AnalyticsUtilsDefault.track;
+  const SERVER_HUB_WIDGET_EDIT_CLICKED = AnalyticEvents.SERVER_HUB_WIDGET_EDIT_CLICKED;
+  const obj = { guild_id, widget_type };
+  AnalyticsUtilsDefault;
+  const obj2 = editorUtils;
+  if (obj2.isDraftWidgetId(widget_id)) {
+    obj3 = {};
+  } else {
+    obj3 = { widget_id };
+  }
+  const merged = Object.assign(obj3);
+  track(SERVER_HUB_WIDGET_EDIT_CLICKED, obj);
 };

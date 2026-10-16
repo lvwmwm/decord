@@ -1,12 +1,12 @@
-// Module ID: 14926
-// Function ID: 14927
+// Module ID: 14936
+// Function ID: 14937
 // Name: PassthroughTouchView
-// Dependencies: [109, 19, 21, 558, 576, 14927, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14937, 2]
 
-// Module 14926 (PassthroughTouchView)
+// Module 14936 (PassthroughTouchView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14927 */;
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14937 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

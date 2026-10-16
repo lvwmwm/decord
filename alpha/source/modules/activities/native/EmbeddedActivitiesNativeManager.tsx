@@ -1,9 +1,9 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15500
+// Function ID: 15501
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2068, 5171, 2067, 1087, 1384, 15491, 15492, 1123, 5358, 4798, 1267, 584, 15411, 11173, 5044, 5362, 1128, 4868, 1388, 11243, 2]
+// Dependencies: [17, 2068, 5172, 2067, 1087, 1384, 15501, 15502, 1123, 5359, 4798, 1267, 584, 15421, 11170, 5044, 5363, 1128, 4868, 1388, 11240, 2]
 
-// Module 15490 (EmbeddedActivitiesNativeManager)
+// Module 15500 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
@@ -12,17 +12,17 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
 import ChatInputUtils from "ChatInputUtils" /* 5044 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5358 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11173 */;
-import activityWebViewController from "activityWebViewController" /* 11243 */;
-import react_nativeDefault from "react-native" /* 15491 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5359 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11170 */;
+import activityWebViewController from "activityWebViewController" /* 11240 */;
+import react_nativeDefault from "react-native" /* 15501 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15492 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15502 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;

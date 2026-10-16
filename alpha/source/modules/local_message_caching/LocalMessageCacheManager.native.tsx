@@ -1,9 +1,9 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15521
+// Function ID: 15522
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4820, 502, 2068, 5494, 1087, 15512, 3, 1104, 510, 4761, 4852, 10046, 7397, 11121, 13679, 2002, 2004, 584, 5970, 9553, 2]
+// Dependencies: [5, 32, 4820, 502, 2068, 5495, 1087, 15522, 3, 1104, 510, 4761, 4852, 10047, 7399, 11118, 13687, 2002, 2004, 584, 5971, 9554, 2]
 
-// Module 15511 (LocalMessageCacheManager)
+// Module 15521 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,22 +11,22 @@ import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef4761 from "module_4761" /* 4761 */;
 import DateUtils from "DateUtils" /* 4852 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
-import createMessageDefault from "createMessage" /* 10046 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
+import createMessageDefault from "createMessage" /* 10047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 4820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5494 */;
-import MutexUtils from "MutexUtils" /* 15512 */;
+import MessageStore from "MessageStore" /* 5495 */;
+import MutexUtils from "MutexUtils" /* 15522 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11121);
+const UploadActionCreatorsDefault = tmp(11118);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();

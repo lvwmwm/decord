@@ -1,10 +1,10 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 17898
+// Function ID: 17899
 // Name: useVoiceChannelApp
-// Dependencies: [2090, 4809, 1087, 558, 576, 504, 6285, 2]
+// Dependencies: [2090, 4809, 1087, 558, 576, 504, 6298, 2]
 // Exports: useVoiceChannelApplicationId
 
-// Module 17888 (useVoiceChannelApp)
+// Module 17898 (useVoiceChannelApp)
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import Constants from "Constants" /* 1087 */;

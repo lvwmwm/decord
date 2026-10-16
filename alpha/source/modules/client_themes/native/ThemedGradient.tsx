@@ -1,10 +1,10 @@
-// Module ID: 10465
-// Function ID: 10466
+// Module ID: 10466
+// Function ID: 10467
 // Name: ThemedGradient
-// Dependencies: [109, 19, 17, 4996, 21, 5153, 5028, 5027, 5026, 558, 576, 1499, 5453, 5090, 587, 5032, 4995, 683, 1257, 573, 5034, 5089, 1256, 2]
+// Dependencies: [109, 19, 17, 4996, 21, 5154, 5028, 5027, 5026, 558, 576, 1499, 5454, 5090, 587, 5032, 4995, 683, 1257, 573, 5034, 5089, 1256, 2]
 // Exports: validateColors
 
-// Module 10465 (ThemedGradient)
+// Module 10466 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -22,7 +22,7 @@ import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp4;
 let tmp6;
 let unpackModuleId;
 const useRoutedActiveGuildThemeDefault = tmp6(5034);
-const LinearGradientDefault = tmp4(5453);
-const f105382 = (item) => item / 100;
+const LinearGradientDefault = tmp4(5454);
+const f105440 = (item) => item / 100;
 function getMixedGradientColor(mixColorOverride) {
   let b;
   let darkFallbackAmount;
@@ -797,7 +797,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f105382);
+    mapped1 = gradientColorStops.map(f105440);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1048,7 +1048,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f105382);
+    mapped1 = gradientColorStops.map(f105440);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1074,7 +1074,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   if (reduced.length >= 2) {
     let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: items2 };
     const tmp10 = closure_10;
-    const tmp2Result = tmp2(5453);
+    const tmp2Result = tmp2(5454);
     if (wide) {
       let obj2 = { width };
       wide = obj2;

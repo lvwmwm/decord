@@ -1,16 +1,16 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14191
+// Function ID: 14192
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5153, 14176, 558, 576, 5149, 12, 7036, 2]
+// Dependencies: [32, 19, 17, 21, 5154, 14186, 558, 576, 5150, 12, 7038, 2]
 
-// Module 14181 (EditCollectiblesPickerList)
+// Module 14191 (EditCollectiblesPickerList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14176 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14186 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5149);
+const Text_Text = tmp(5150);
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;

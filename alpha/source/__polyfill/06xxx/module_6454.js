@@ -1,19 +1,15 @@
 // Module ID: 6454
 // Function ID: 6455
 // Dependencies: []
-// Exports: getHeaderTitle
+// Exports: getDefaultSidebarWidth
 
 // Module 6454
 
-export const getHeaderTitle = function getHeaderTitle(options, name) {
-  let title;
-  if (typeof options.headerTitle === "string") {
-    title = options.headerTitle;
-  } else {
-    title = name;
-    if (undefined !== options.title) {
-      title = options.title;
-    }
+export const getDefaultSidebarWidth = (width) => {
+  width = width.width;
+  let num = 360;
+  if (width - 56 <= 360) {
+    num = width - 56;
   }
-  return title;
+  return num;
 };

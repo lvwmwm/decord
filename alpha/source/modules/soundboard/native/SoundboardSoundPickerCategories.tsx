@@ -1,32 +1,32 @@
-// Module ID: 18151
-// Function ID: 18152
+// Module ID: 18161
+// Function ID: 18162
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 18134, 1392, 1087, 21, 5153, 587, 558, 576, 7272, 6381, 1128, 9997, 5113, 18149, 9150, 1202, 8448, 6407, 6557, 5119, 5120, 4828, 504, 9518, 1633, 8598, 7036, 5051, 2]
+// Dependencies: [109, 19, 17, 18144, 1392, 1087, 21, 5154, 587, 558, 576, 7274, 6383, 1128, 9998, 5113, 18159, 9151, 1202, 8449, 6409, 6559, 5119, 5120, 4828, 504, 9519, 1633, 8599, 7038, 5051, 2]
 
-// Module 18151 (SoundboardSoundPickerCategories)
+// Module 18161 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import ClockIcon from "ClockIcon" /* 5113 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
-import GuildIconDefault from "GuildIcon" /* 6381 */;
-import Pressables from "Pressables" /* 6407 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
-import SoundboardTypes from "SoundboardTypes" /* 7272 */;
-import LockIcon from "LockIcon" /* 8448 */;
-import TrophyIcon from "TrophyIcon" /* 9150 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9518 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9997 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18134 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18149 */;
+import GuildIconDefault from "GuildIcon" /* 6383 */;
+import Pressables from "Pressables" /* 6409 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
+import SoundboardTypes from "SoundboardTypes" /* 7274 */;
+import LockIcon from "LockIcon" /* 8449 */;
+import TrophyIcon from "TrophyIcon" /* 9151 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9519 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9998 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18144 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18159 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -363,7 +363,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1128).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore2(tmp2(9150).TrophyIcon, obj4);
+      tmp7 = authStore2(tmp2(9151).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -378,7 +378,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const PressableOpacity = tmp2(6409).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;

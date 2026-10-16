@@ -1,22 +1,22 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13464
+// Function ID: 13465
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1087, 21, 5153, 558, 576, 4877, 587, 7796, 9154, 13457, 5481, 11929, 7224, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 558, 576, 4877, 587, 7797, 9155, 13465, 5482, 11926, 7226, 2]
 
-// Module 13456 (usePreviewableMedia)
+// Module 13464 (usePreviewableMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4877 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5481 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7224 */;
-import inlineStyles from "inlineStyles" /* 7796 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9154 */;
-import WaveformIcon from "WaveformIcon" /* 13457 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5482 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7226 */;
+import inlineStyles from "inlineStyles" /* 7797 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9155 */;
+import WaveformIcon from "WaveformIcon" /* 13465 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj3;
 let tmp5;
-const inlineStylesDefault = tmp5(7796);
+const inlineStylesDefault = tmp5(7797);
 function getBasePreviewableMedia(arg0) {
   let isForward;
   let message;
@@ -72,7 +72,7 @@ function getBasePreviewableMedia(arg0) {
           }
           let push3Result = push3(obj3);
         } else {
-          let tmp8Result = tmp8(5481);
+          let tmp8Result = tmp8(5482);
           if (tmp8Result.isVideoFile(tmp7)) {
             let obj4 = { id: "" + tmp6.id + "-" + obj.VIDEO, type: obj.VIDEO, media: tmp6, parentType: str6 };
             let _HermesInternal3 = HermesInternal;
@@ -83,7 +83,7 @@ function getBasePreviewableMedia(arg0) {
             }
             let push2Result = push2(obj4);
           } else {
-            let tmp8Result2 = tmp8(5481);
+            let tmp8Result2 = tmp8(5482);
             let push = items.push;
             let obj5 = { id: null, type: null, media: null, icon: null, parentType: null };
             let id = tmp6.id;
@@ -93,7 +93,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = metroImportDefault(tmp8(9154).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = metroImportDefault(tmp8(9155).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -106,7 +106,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.type = tmp13.FILE;
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: nativeDefault.colors.ICON_SUBTLE };
-              let FileIcon = tmp8(11929).FileIcon;
+              let FileIcon = tmp8(11926).FileIcon;
               obj5.icon = metroImportDefault(FileIcon, obj6);
               let str4 = null;
               if (isForward) {

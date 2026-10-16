@@ -1,10 +1,10 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8894
+// Function ID: 8895
 // Name: StartEventUtils
-// Dependencies: [5, 2072, 2068, 2090, 2074, 1087, 8829, 38, 7715, 8745, 2]
+// Dependencies: [5, 2072, 2068, 2090, 2074, 1087, 8830, 38, 7716, 8746, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8893 (StartEventUtils)
+// Module 8894 (StartEventUtils)
 import Constants from "Constants" /* 1087 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

@@ -1,9 +1,9 @@
-// Module ID: 7193
-// Function ID: 7194
+// Module ID: 7195
+// Function ID: 7196
 // Name: ThreadMemberListStore
-// Dependencies: [32, 2068, 2128, 7194, 5169, 5977, 1392, 1087, 12, 11, 4814, 5021, 1388, 504, 584, 2]
+// Dependencies: [32, 2068, 2128, 7196, 5170, 5978, 1392, 1087, 12, 11, 4814, 5021, 1388, 504, 584, 2]
 
-// Module 7193 (ThreadMemberListStore)
+// Module 7195 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,9 +13,9 @@ import UserUtilsDefault from "UserUtils" /* 5021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7194 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7196 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5978 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

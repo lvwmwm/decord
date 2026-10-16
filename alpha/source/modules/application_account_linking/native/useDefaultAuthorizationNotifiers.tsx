@@ -1,9 +1,9 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17334
+// Function ID: 17335
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2001, 1087, 558, 576, 504, 5115, 6140, 4868, 1128, 3317, 2]
+// Dependencies: [19, 2001, 1087, 558, 576, 504, 5115, 6141, 4868, 1128, 3317, 2]
 
-// Module 17322 (useDefaultAuthorizationNotifiers)
+// Module 17334 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3317 from "module_3317" /* 3317 */;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
     if (cResult[7] === value) {
       tmp13 = cResult[8];
     }
-    const tmpResult4 = tmp(6140);
+    const tmpResult4 = tmp(6141);
     const previousWhen = tmpResult4.usePreviousWhen(tmp13);
     if (cResult[9] === (stateFromStores && !isInAppBrowserOpen)) {
       if (cResult[10] === value) {

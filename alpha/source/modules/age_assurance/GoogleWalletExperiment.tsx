@@ -1,10 +1,10 @@
-// Module ID: 7930
-// Function ID: 7931
+// Module ID: 7931
+// Function ID: 7932
 // Name: GoogleWalletExperiment
 // Dependencies: [1455, 558, 576, 2]
 // Exports: isGoogleWalletEnabled
 
-// Module 7930 (GoogleWalletExperiment)
+// Module 7931 (GoogleWalletExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

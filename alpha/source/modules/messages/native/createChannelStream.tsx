@@ -1,19 +1,18 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12732
+// Function ID: 12733
 // Name: createChannelStream
-// Dependencies: [10738, 7587, 8107, 7967, 1087, 11, 12726, 9847, 12727, 1128, 4852, 8214, 11120, 7192, 2]
+// Dependencies: [10735, 7588, 8108, 7968, 1087, 11, 9846, 12733, 1128, 4852, 8215, 11117, 7194, 12736, 2]
 // Exports: default
 
-// Module 12725 (createChannelStream)
+// Module 12732 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 9847 */;
-import createConversationHeader from "createConversationHeader" /* 12726 */;
-import tryInjectMessage from "tryInjectMessage" /* 12727 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 10738 */;
-import EditMessageStore from "EditMessageStore" /* 7587 */;
-import UploadStore from "UploadStore" /* 8107 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7967 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 9846 */;
+import tryInjectMessage from "tryInjectMessage" /* 12733 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 10735 */;
+import EditMessageStore from "EditMessageStore" /* 7588 */;
+import UploadStore from "UploadStore" /* 8108 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7968 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +41,6 @@ export default function createChannelStream(forceRender) {
   let pushFeedback;
   let renderContentOnly;
   let roleStyle;
-  let tmp15;
   let updateMessageIds;
   let uploads;
   ({ channel: require, messages } = forceRender);
@@ -71,20 +69,17 @@ export default function createChannelStream(forceRender) {
     if (null != first) {
       let tmp;
       if (require.isForumPost()) {
-        let tmp2 = tmp15;
+        let tmp2 = tmp13;
         if (tmp2) {
           id = message.id;
           obj = SnowflakeUtilsDefault;
-          tmp2 = id !== obj.castChannelIdAsMessageId(tmp13.id);
+          tmp2 = id !== obj.castChannelIdAsMessageId(tmp11.id);
         }
         tmp = tmp2;
       } else {
-        tmp = tmp15;
+        tmp = tmp13;
       }
       if (!tmp) {
-        if (null != closure_7) {
-          createConversationHeader;
-        }
         if (isNewMessageGroupDefault(require, first[first.length - 1], message)) {
           items = [message];
           items1.unshift(items);
@@ -154,10 +149,10 @@ export default function createChannelStream(forceRender) {
     let intl6;
     let isForumPostResult;
     let isSystemDMResult;
-    let obj23;
+    let obj22;
     let pushType;
     let str2;
-    let tmp164;
+    let tmp162;
     let tmp8;
     let tmp85;
     let tmp96;
@@ -235,8 +230,8 @@ export default function createChannelStream(forceRender) {
     let tmp30 = items[items.length - 1];
     if (message.hasFlag(forceRender.HIDDEN_SUSPENDED_USER)) {
       if (null == tmp30) {
-        const obj10 = { rowType: closure_8.SUSPENDED_USER_GROUP, changeType: tmp164, canUncollapse: false };
-        tmp164 = determineChangeType(message);
+        const obj10 = { rowType: closure_8.SUSPENDED_USER_GROUP, changeType: tmp162, canUncollapse: false };
+        tmp162 = determineChangeType(message);
         const merged = Object.assign(obj5);
         arr.push(obj10);
         tmp30 = obj10;
@@ -246,7 +241,7 @@ export default function createChannelStream(forceRender) {
       const obj11 = { count: tmp30.content.length };
       tmp30.text = intl4.formatToPlainString(require("intl").t.rHRovo, obj11);
     } else if (message.blocked) {
-      let tmp145;
+      let tmp143;
       if (null == tmp30) {
         let INSERT2 = determineChangeType(message);
         const blocked = INSERT2 === constants.NOOP && closure_8.getBlocked(message);
@@ -256,33 +251,33 @@ export default function createChannelStream(forceRender) {
         const obj12 = { rowType: closure_8.BLOCKED_GROUP, changeType: INSERT2 };
         const merged1 = Object.assign(obj5);
         arr.push(obj12);
-        tmp145 = obj12;
+        tmp143 = obj12;
       } else {
-        tmp145 = tmp30;
+        tmp143 = tmp30;
       }
-      const result1 = processHiddenMessageRow(tmp145);
+      const result1 = processHiddenMessageRow(tmp143);
       const intl3 = require("intl").intl;
-      const obj15 = { count: tmp145.content.length };
-      tmp145.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj15);
+      const obj14 = { count: tmp143.content.length };
+      tmp143.text = intl3.formatToPlainString(require("intl").t["+FcYM/"], obj14);
     } else if (message.ignored) {
-      let tmp127;
+      let tmp125;
       if (null == tmp30) {
         let INSERT = determineChangeType(message);
         const ignored = INSERT === constants.NOOP && closure_8.getIgnored(message);
         if (ignored) {
           INSERT = constants.INSERT;
         }
-        const obj16 = { rowType: closure_8.IGNORED_GROUP, changeType: INSERT };
+        const obj15 = { rowType: closure_8.IGNORED_GROUP, changeType: INSERT };
         const merged2 = Object.assign(obj5);
-        arr.push(obj16);
-        tmp127 = obj16;
+        arr.push(obj15);
+        tmp125 = obj15;
       } else {
-        tmp127 = tmp30;
+        tmp125 = tmp30;
       }
-      const result2 = processHiddenMessageRow(tmp127);
+      const result2 = processHiddenMessageRow(tmp125);
       const intl2 = require("intl").intl;
-      const obj17 = { count: tmp127.content.length };
-      tmp127.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj17);
+      const obj16 = { count: tmp125.content.length };
+      tmp125.text = intl2.formatToPlainString(require("intl").t["VFWjc+"], obj16);
     } else {
       let iter = item[Symbol.iterator]();
       let nextResult = iter.next();
@@ -300,7 +295,7 @@ export default function createChannelStream(forceRender) {
         let obj8 = require("canReplyToMessage");
         let tmp49 = messages;
         let canReplyToMessageResult = obj8.canReplyToMessage(obj7, obj6);
-        let tmp52 = messages(id[12])(obj6, closure_4);
+        let tmp52 = messages(id[11])(obj6, closure_4);
         if (tmp52) {
           let obj9 = require("ThreadHooks");
           tmp52 = !obj9.isNonModInLockedThread(obj7);
@@ -320,12 +315,12 @@ export default function createChannelStream(forceRender) {
           tmp65 = tmp64.count > 1;
         }
         if (tmp65) {
-          let obj18 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp64, isBeforeContent: false };
+          let obj17 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle, summary: tmp64, isBeforeContent: false };
           let push2 = items.push;
-          let push2Result = push2(obj18);
+          let push2Result = push2(obj17);
         }
         let arr2 = items;
-        let obj19 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp41, separatorBefore: tmp85, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp96 && canReplyToMessageResult, canEdit: !tmp96 && tmp52, rowType: closure_8.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem };
+        let obj18 = { roleStyle, message: obj6, isSystemDM: isSystemDMResult, isFirst: obj6 === message, isEditing: tmp41, separatorBefore: tmp85, canAddNewReactions, alwaysShowAddReaction: isForumPostResult, renderContentOnly, pushFeedbackType: pushType, canReply: !tmp96 && canReplyToMessageResult, canEdit: !tmp96 && tmp52, rowType: closure_8.MESSAGE, changeType: result3, showContentInventoryEntryFallbackEmbed: hasItem };
         let tmp77 = roleStyle;
         let push3 = items.push;
         isSystemDMResult = obj7.isSystemDM();
@@ -356,43 +351,45 @@ export default function createChannelStream(forceRender) {
         if (closure_13 != null) {
           hasItem = obj13.has(obj6.id);
         }
-        let push3Result = push3(obj19);
+        let push3Result = push3(obj18);
         let tmp106 = constants2;
-        let result4 = null != constants2;
-        if (result4) {
-          let obj14 = require("createConversationHeader");
-          result4 = obj14.isConversationStartMessage(tmp106, obj6.id);
+        let tmp107 = null != constants2;
+        if (tmp107) {
+          tmp107 = obj6.id === tmp106.startMessageId;
         }
-        if (result4) {
-          let obj20 = { rowType: roleStyle.CONVERSATION, changeType: determineChangeType(obj6), roleStyle: tmp77, conversationHeader: tmp49(id[6])(tmp106) };
+        if (tmp107) {
+          tmp107 = tmp106.messageCount > 1;
+        }
+        if (tmp107) {
+          let obj19 = { rowType: roleStyle.CONVERSATION, changeType: determineChangeType(obj6), roleStyle: tmp77, conversationHeader: tmp49(id[13])(tmp106) };
           let push4 = arr2.push;
-          let push4Result = push4(obj20);
+          let push4Result = push4(obj19);
         }
-        let tmp118 = null != tmp64;
-        if (tmp118) {
-          tmp118 = tmp64.startId === obj6.id;
+        let tmp116 = null != tmp64;
+        if (tmp116) {
+          tmp116 = tmp64.startId === obj6.id;
         }
-        if (tmp118) {
-          tmp118 = tmp64.count > 1;
+        if (tmp116) {
+          tmp116 = tmp64.count > 1;
         }
-        if (tmp118) {
-          let obj21 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp77, summary: tmp64, isBeforeContent: true };
+        if (tmp116) {
+          let obj20 = { rowType: roleStyle.SUMMARY, changeType: determineChangeType(obj6), roleStyle: tmp77, summary: tmp64, isBeforeContent: true };
           let push5 = arr2.push;
-          let push5Result = push5(obj21);
+          let push5Result = push5(obj20);
         }
         continue;
       }
     }
     if (flag) {
-      const tmp177 = renderContentOnly;
-      if (!tmp177) {
+      const tmp175 = renderContentOnly;
+      if (!tmp175) {
         let NOOP = determineChangeType(message);
         if (NOOP === constants.UPDATE) {
           NOOP = constants.NOOP;
         }
-        const obj22 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj23.dateFormat(message.timestamp, "LL") };
-        obj23 = require("DateUtils");
-        items.push(obj22);
+        const obj21 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: obj22.dateFormat(message.timestamp, "LL") };
+        obj22 = require("DateUtils");
+        items.push(obj21);
       }
     }
     if (tmp20) {
@@ -400,19 +397,19 @@ export default function createChannelStream(forceRender) {
     }
     if (tmp20) {
       const push6 = items.push;
-      const obj24 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
+      const obj23 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
       const intl5 = require("intl").intl;
       str2 = intl5.string(require("intl").t.q7hm3m);
-      push6(obj24);
+      push6(obj23);
     }
     if (tmp19) {
       tmp19 = !renderContentOnly;
     }
     if (tmp19) {
       const push7 = items.push;
-      const obj25 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
+      const obj24 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: intl6.string(require("intl").t.XBlaiC) };
       intl6 = require("intl").intl;
-      push7(obj25);
+      push7(obj24);
     }
   });
   let tmp12 = 0 === items1.length && !messages.loadingMore;
@@ -423,7 +420,6 @@ export default function createChannelStream(forceRender) {
   if (tmp12) {
     let tmp14 = constants2;
     let obj2 = { rowType: messages.hasMoreBefore ? tmp14.LOAD_BEFORE : tmp14.LOAD_AFTER, changeType: forceRender ? tmp15.UPDATE : tmp15.NOOP, roleStyle, isLoading: messages.loadingMore, text: intl.string(require("intl").t.XBlaiC) };
-    tmp15 = constants;
     const tmp17 = id;
     let push = items.push;
     intl = require("intl").intl;

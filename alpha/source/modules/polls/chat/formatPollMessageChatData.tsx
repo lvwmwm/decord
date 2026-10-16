@@ -1,10 +1,10 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 11982
+// Function ID: 11983
 // Name: formatPollMessageChatData
-// Dependencies: [5143, 6205, 2068, 2128, 5494, 1392, 10737, 1087, 1098, 5963, 4823, 4827, 1417, 9188, 4815, 4796, 11986, 1128, 8118, 11988, 1384, 11989, 11990, 2]
+// Dependencies: [5144, 6206, 2068, 2128, 5495, 1392, 10734, 1087, 1098, 5964, 4823, 4827, 1417, 9189, 4815, 4796, 11983, 1128, 8119, 11985, 1384, 11986, 11987, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 11985 (formatPollMessageChatData)
+// Module 11982 (formatPollMessageChatData)
 import Constants2 from "Constants" /* 1098 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
@@ -12,15 +12,15 @@ import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4796 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4815 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
-import merged5 from "merged5" /* 5963 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9188 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10737 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 11988 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import EmojiStore from "EmojiStore" /* 6205 */;
+import merged5 from "merged5" /* 5964 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9189 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10734 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 11985 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import EmojiStore from "EmojiStore" /* 6206 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13255
+// Function ID: 13256
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 5143, 558, 576, 5046, 1899, 6527, 1631, 5047, 5044, 5458, 5050, 10623, 2]
+// Dependencies: [19, 17, 5144, 558, 576, 5046, 1899, 6529, 1631, 5047, 5044, 5459, 5050, 10620, 2]
 
-// Module 13247 (PortalKeyboardInlineComponent)
+// Module 13255 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const tmp9 = id(6527)(first);
+  const tmp9 = id(6529)(first);
   react = tmp9;
   let tmpResult = tmp(5046);
   const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(1631).KeyboardTypes.SYSTEM);
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  id(5458)(tmp11);
+  id(5459)(tmp11);
   let PortalKeyboardUIStore = tmp(5047).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
   const PortalKeyboardUIStore2 = tmp(5047).PortalKeyboardUIStore;
@@ -191,11 +191,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2 = id(5046)();
   dependencyMap = tmp2;
   const tmp3 = id(1899)();
-  let tmp4 = id(6527)({ includeCustomKeyboard: false });
+  let tmp4 = id(6529)({ includeCustomKeyboard: false });
   react = tmp4;
   let obj = messagesRef(5046);
   const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1631).KeyboardTypes.SYSTEM);
-  id(5458)(() => () => {
+  id(5459)(() => () => {
     const PortalKeyboardUIStore = messagesRef(closure_2[9]).PortalKeyboardUIStore;
     field = PortalKeyboardUIStore.getField("keyboard");
     const tmp4 = null != field && field.handlerId === id;

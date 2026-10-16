@@ -1,25 +1,25 @@
-// Module ID: 17679
-// Function ID: 17680
+// Module ID: 17689
+// Function ID: 17690
 // Name: ChannelDetails
-// Dependencies: [19, 17, 12921, 2068, 9547, 9864, 21, 587, 5153, 558, 576, 504, 12868, 17680, 7075, 7100, 1505, 13019, 5424, 6849, 1633, 1384, 5130, 7415, 12932, 12907, 4909, 5154, 5157, 5440, 12941, 5044, 17681, 17691, 17807, 17809, 17810, 17811, 5392, 6557, 2]
+// Dependencies: [19, 17, 12929, 2068, 9548, 9863, 21, 587, 5154, 558, 576, 504, 12876, 17690, 7077, 7102, 1505, 13027, 5425, 6851, 1633, 1384, 5130, 7417, 12940, 12915, 4909, 5155, 5158, 5441, 12949, 5044, 17691, 17701, 17817, 17819, 17820, 17821, 5393, 6559, 2]
 
-// Module 17679 (ChannelDetails)
+// Module 17689 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import timing from "timing" /* 5154 */;
-import timingPresets from "timingPresets" /* 5157 */;
-import spring from "spring" /* 5440 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12907 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12932 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12941 */;
+import timing from "timing" /* 5155 */;
+import timingPresets from "timingPresets" /* 5158 */;
+import spring from "spring" /* 5441 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12915 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12940 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12949 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 12921 */;
+import SearchQueryStore from "SearchQueryStore" /* 12929 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9547 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9864 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9548 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

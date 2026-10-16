@@ -1,14 +1,14 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12052
+// Function ID: 12053
 // Name: conjurePendingPlan
-// Dependencies: [10903, 2]
-// Exports: pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
+// Dependencies: [10900, 2]
+// Exports: pendingPlanRenderId, planVersions
 
-// Module 12053 (conjurePendingPlan)
-import conjureChatTurns from "conjureChatTurns" /* 10903 */;
+// Module 12052 (conjurePendingPlan)
+import conjureChatTurns from "conjureChatTurns" /* 10900 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let map;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePendingPlan.tsx");
 
@@ -70,22 +70,5 @@ export const planVersions = function planVersions(memo) {
     }
     continue;
   }
-  return map;
-};
-export const planCardExpanded = function planCardExpanded(c17, render_id, arg2) {
-  let value = c17.get(render_id);
-  if (value == null) {
-    value = !arg2;
-  }
-  return value;
-};
-export const togglePlanCard = function togglePlanCard(get, arg1, arg2) {
-  map = new Map(get);
-  set = map.set;
-  let value = get.get(arg1);
-  if (value == null) {
-    value = !arg2;
-  }
-  const result = set(arg1, !value);
   return map;
 };

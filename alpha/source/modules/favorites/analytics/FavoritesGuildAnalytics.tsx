@@ -15,10 +15,10 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let manual_browsing = "manual_browsing";
 const result = size.fileFinishedImporting("modules/favorites/analytics/FavoritesGuildAnalytics.tsx");
 
-export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(intro_dc) {
+export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(upsell_modal) {
   const obj = FavoritesUtils;
   if (!obj.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
-    manual_browsing = intro_dc;
+    manual_browsing = upsell_modal;
   }
 };
 export function consumeNextFavoritesGuildViewSource() {

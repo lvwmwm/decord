@@ -2,7 +2,7 @@
 // Function ID: 5036
 // Name: NavigationRouteUtils
 // Dependencies: [32, 19, 5036, 1506, 1281, 5037, 5042, 5043, 5044, 558, 576, 2]
-// Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, routesBelowFirstRemoved, setHomeDrawerState
+// Exports: coerceChannelSecondaryViewChatRoute, coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, routesBelowFirstRemoved, setHomeDrawerState
 
 // Module 5035 (NavigationRouteUtils)
 import v1 from "v1" /* 1281 */;
@@ -1159,6 +1159,13 @@ export const popScreens = function popScreens(arg0) {
 };
 export { coerceMainRoute };
 export { coerceChannelRoute };
+export const coerceChannelSecondaryViewChatRoute = function coerceChannelSecondaryViewChatRoute(name) {
+  if (null != name) {
+    if ("channel-secondary-view-chat" === name.name) {
+      return name;
+    }
+  }
+};
 export const coerceSidebarRoute = function coerceSidebarRoute(name) {
   if (null != name) {
     if ("sidebar" === name.name) {

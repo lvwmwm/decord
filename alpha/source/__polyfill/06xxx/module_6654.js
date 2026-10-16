@@ -1,13 +1,138 @@
 // Module ID: 6654
 // Function ID: 6655
-// Dependencies: [26, 65]
+// Dependencies: [6627, 6642, 6618]
+// Exports: usePanGesture
 
 // Module 6654
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import ComposedGestureName from "ComposedGestureName" /* 6618 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6627 */;
+import _mod6642 from "module_6642" /* 6642 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerButton", validAttributes: { exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true } };
-({ exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: _mod26.colorAttribute, rippleRadius: true, touchSoundDisabled: true, pointerEvents: true, tapAnimationInDuration: true, tapAnimationOutDuration: true, longPressDuration: true, longPressAnimationOutDuration: true, needsOffscreenAlphaCompositing: true, activeOpacity: true, activeScale: true, activeUnderlayOpacity: true, hoverOpacity: true, hoverScale: true, hoverUnderlayOpacity: true, hoverAnimationInDuration: true, hoverAnimationOutDuration: true, defaultOpacity: true, defaultScale: true, defaultUnderlayOpacity: true, underlayColor: _mod26.colorAttribute, borderWidth: true, borderColor: _mod26.colorAttribute, borderStyle: true, overflow: true, borderLeftWidth: true, borderRightWidth: true, borderTopWidth: true, borderBottomWidth: true, borderStartWidth: true, borderEndWidth: true, borderLeftColor: _mod26.colorAttribute, borderRightColor: _mod26.colorAttribute, borderTopColor: _mod26.colorAttribute, borderBottomColor: _mod26.colorAttribute, borderStartColor: _mod26.colorAttribute, borderEndColor: _mod26.colorAttribute, borderBlockColor: _mod26.colorAttribute, borderBlockEndColor: _mod26.colorAttribute, borderBlockStartColor: _mod26.colorAttribute, borderRadius: true, borderTopLeftRadius: true, borderTopRightRadius: true, borderBottomLeftRadius: true, borderBottomRightRadius: true, borderTopStartRadius: true, borderTopEndRadius: true, borderBottomStartRadius: true, borderBottomEndRadius: true, borderEndEndRadius: true, borderEndStartRadius: true, borderStartEndRadius: true, borderStartStartRadius: true });
+function transformPanProps(activeOffsetY) {
+  activeOffsetY = activeOffsetY.activeOffsetY;
+  if (undefined !== activeOffsetY) {
+    const _Array = Array;
+    if (Array.isArray(activeOffsetY)) {
+      const _HermesInternal3 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY[0];
+      const _HermesInternal4 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY[1];
+    } else {
+      const obj = maybeExtractNativeEvent;
+      if (obj.maybeUnpackValue(activeOffsetY) < 0) {
+        const _HermesInternal2 = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY;
+      } else {
+        const _HermesInternal = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY;
+      }
+    }
+    delete activeOffsetY["activeOffsetY"];
+  }
+  const failOffsetX = activeOffsetY.failOffsetX;
+  if (undefined !== failOffsetX) {
+    const _Array2 = Array;
+    if (Array.isArray(failOffsetX)) {
+      const _HermesInternal7 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX[0];
+      const _HermesInternal8 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX[1];
+    } else {
+      const obj2 = maybeExtractNativeEvent;
+      if (obj2.maybeUnpackValue(failOffsetX) < 0) {
+        const _HermesInternal6 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX;
+      } else {
+        const _HermesInternal5 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX;
+      }
+    }
+    delete activeOffsetY["failOffsetX"];
+  }
+  const failOffsetY = activeOffsetY.failOffsetY;
+  if (undefined !== failOffsetY) {
+    const _Array3 = Array;
+    if (Array.isArray(failOffsetY)) {
+      const _HermesInternal11 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY[0];
+      const _HermesInternal12 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY[1];
+    } else {
+      const obj3 = maybeExtractNativeEvent;
+      if (obj3.maybeUnpackValue(failOffsetY) < 0) {
+        const _HermesInternal10 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY;
+      } else {
+        const _HermesInternal9 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY;
+      }
+    }
+    delete activeOffsetY["failOffsetY"];
+  }
+  const activeOffsetX = activeOffsetY.activeOffsetX;
+  if (undefined !== activeOffsetX) {
+    const _Array4 = Array;
+    if (Array.isArray(activeOffsetX)) {
+      const _HermesInternal15 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX[0];
+      const _HermesInternal16 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX[1];
+    } else {
+      const obj4 = maybeExtractNativeEvent;
+      if (obj4.maybeUnpackValue(activeOffsetX) < 0) {
+        const _HermesInternal14 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX;
+      } else {
+        const _HermesInternal13 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX;
+      }
+    }
+    delete activeOffsetY["activeOffsetX"];
+  }
+  const obj5 = maybeExtractNativeEvent;
+  activeOffsetY.changeEventCalculator = obj5.getChangeEventCalculator(diffCalculator);
+  activeOffsetY.fillInDefaultValues = fillInDefaultValues;
+  return activeOffsetY;
+}
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
+  } else {
+    diff = translationX;
+  }
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 4211053881938;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 12221662243929;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+let closure_6 = {};
 
-export default module_65.get("RNGestureHandlerButton", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const usePanGesture = function usePanGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_6;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod6642;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
+};

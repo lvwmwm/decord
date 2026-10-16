@@ -1,9 +1,9 @@
-// Module ID: 9678
-// Function ID: 9679
+// Module ID: 9677
+// Function ID: 9678
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1392, 2065, 21, 2052, 5153, 587, 558, 576, 9644, 504, 4828, 7323, 1128, 9679, 2]
+// Dependencies: [32, 19, 17, 1392, 2065, 21, 2052, 5154, 587, 558, 576, 9643, 504, 4828, 7325, 1128, 9678, 2]
 
-// Module 9678 (useBurstToggleCoachmark)
+// Module 9677 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(9644);
+const SuperReactionIcon2 = tmp(9643);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
   } else {
     items2 = [];
   }
-  const tmpResult = first(7323);
+  const tmpResult = first(7325);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9679);
+  const tmpResult2 = first(9678);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

@@ -1,14 +1,14 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 8442
+// Function ID: 8443
 // Name: ForumIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8405, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8406, 4876, 2]
 
-// Module 8441 (ForumIcon)
+// Module 8442 (ForumIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8405 */;
+import AssetRegistry from "AssetRegistry" /* 8406 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

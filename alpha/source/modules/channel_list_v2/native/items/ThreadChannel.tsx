@@ -1,31 +1,31 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17179
+// Function ID: 17180
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4811, 2068, 4809, 6253, 2119, 1392, 5174, 5177, 11821, 1087, 6185, 1127, 21, 5153, 587, 558, 576, 7796, 5448, 504, 12863, 5164, 10703, 17166, 8876, 17168, 1202, 17170, 17179, 5476, 17180, 2]
+// Dependencies: [19, 17, 4811, 2068, 4809, 6254, 2119, 1392, 5175, 5178, 11818, 1087, 6186, 1127, 21, 5154, 587, 558, 576, 7797, 5449, 504, 12871, 5165, 10700, 17180, 8877, 17182, 1202, 17184, 17193, 5477, 17194, 2]
 
-// Module 17165 (ThreadChannel)
+// Module 17179 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
-import transitionToChannel from "transitionToChannel" /* 5164 */;
-import ReadStateConstants from "ReadStateConstants" /* 6185 */;
-import inlineStylesDefault from "inlineStyles" /* 7796 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10703 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17166 */;
+import transitionToChannel from "transitionToChannel" /* 5165 */;
+import ReadStateConstants from "ReadStateConstants" /* 6186 */;
+import inlineStylesDefault from "inlineStyles" /* 7797 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10700 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17180 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5177 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11821 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5178 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11818 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const inlineStyles = tmp(7796);
+const inlineStyles = tmp(7797);
 let react = react_mod;
 const View = react_native.View;
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
@@ -72,7 +72,7 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   }
   if (cResult[2] !== color) {
     const obj2 = { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" };
-    const tmp8 = trackedExposureExperiments(inlineStyles.Path, obj2);
+    const tmp8 = closure_17(inlineStyles.Path, obj2);
     cResult[2] = color;
     cResult[3] = tmp8;
     tmp6 = tmp8;
@@ -86,7 +86,7 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
     }
     return tmp9;
   }
-  const tmp10 = trackedExposureExperiments(inlineStylesDefault, { width: 12, height: 16, style: tmp5, children: tmp6 });
+  const tmp10 = closure_17(inlineStylesDefault, { width: 12, height: 16, style: tmp5, children: tmp6 });
   cResult[4] = tmp5;
   cResult[5] = tmp6;
   cResult[6] = tmp10;
@@ -96,10 +96,10 @@ let closure_21 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   let fontScale;
   let rect;
   ({ color, fontScale } = arg0);
-  size = { width: 12, height: 16, style: rect, children: trackedExposureExperiments(inlineStyles.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" }) };
+  size = { width: 12, height: 16, style: rect, children: closure_17(inlineStyles.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" }) };
   rect = { position: "absolute", left: 23, top: map1(fontScale) / 2 - 16 + 2 };
   const tmp = inlineStylesDefault;
-  return trackedExposureExperiments(tmp, size);
+  return closure_17(tmp, size);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadChannel(channel) {
@@ -582,7 +582,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
     const style = [threadLineSegment.threadLineSegment, ];
     let num = 0;
     const diff = threadCount - 1;
-    const tmp4 = trackedExposureExperiments;
+    const tmp4 = closure_17;
     const tmp5 = View;
     if (0 === threadIndex) {
       num = 2;

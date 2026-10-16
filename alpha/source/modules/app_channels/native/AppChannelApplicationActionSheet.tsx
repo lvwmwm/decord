@@ -1,12 +1,12 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8840
+// Function ID: 8841
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 558, 576, 8836, 5118, 7062, 1128, 6484, 8840, 8838, 7120, 6485, 2]
+// Dependencies: [19, 21, 558, 576, 8837, 5118, 7064, 1128, 6486, 8841, 8839, 7122, 6487, 2]
 
-// Module 8839 (AppChannelApplicationActionSheet)
+// Module 8840 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8840 */;
+import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 8841 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
   const cResult = obj.c(11);
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  const obj2 = onChange(8836);
+  const obj2 = onChange(8837);
   const options = obj2.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   if (cResult[0] !== onChange) {
     const fn = function l(arg0) {
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7064).BottomSheetTitleHeader;
     const intl = tmp(1128).intl;
     const tmp7 = <BottomSheetTitleHeader title={intl.string(onChange(1128).t.F2FMFR)} />;
     cResult[2] = tmp7;
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
       }
     }
   }
-  const ActionSheet = tmp(7120).ActionSheet;
+  const ActionSheet = tmp(7122).ActionSheet;
   cResult[7] = tmp4;
   cResult[8] = str;
   cResult[9] = tmp10;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
   let selectedApplicationId;
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(8836);
+  let obj = onChange(8837);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = react.useCallback((arg0) => {
@@ -128,9 +128,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
   }, items);
-  const ActionSheet = onChange(7120).ActionSheet;
+  const ActionSheet = onChange(7122).ActionSheet;
   ({ title: intl.string(onChange(1128).t.F2FMFR) });
-  const BottomSheetTitleHeader = onChange(7062).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onChange(7064).BottomSheetTitleHeader;
   intl = onChange(1128).intl;
   ({
     accessibilityLabel: intl2.string(onChange(1128).t.F2FMFR),
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel
       return <TableRadioRow key={application.id} value={application.id} label={application.name} subLabel={getAppChannelApplicationUnsupportedTextDefault(status)} disabled={!status.supported} icon={null} />;
     })
   });
-  const TableRadioGroup = onChange(6485).TableRadioGroup;
+  const TableRadioGroup = onChange(6487).TableRadioGroup;
   intl2 = onChange(1128).intl;
   if (selectedApplicationId == null) {
     selectedApplicationId = "";

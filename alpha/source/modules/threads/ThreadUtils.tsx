@@ -1,21 +1,21 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8144
+// Function ID: 8145
 // Name: ThreadUtils
-// Dependencies: [109, 6253, 6184, 4811, 1127, 1087, 1128, 7439, 5168, 1267, 8132, 7026, 1405, 558, 576, 504, 11, 4761, 2]
+// Dependencies: [109, 6254, 6185, 4811, 1127, 1087, 1128, 7441, 5169, 1267, 8133, 7028, 1405, 558, 576, 504, 11, 4761, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8143 (ThreadUtils)
+// Module 8144 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
-import getTimestampStringDefault from "getTimestampString" /* 7439 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8132 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
+import getTimestampStringDefault from "getTimestampString" /* 7441 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8133 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7026);
+const NotificationSettingsUtils = tmp(7028);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };

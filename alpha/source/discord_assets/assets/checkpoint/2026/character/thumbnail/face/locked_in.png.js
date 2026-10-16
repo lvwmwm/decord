@@ -1,8 +1,8 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 5735
+// Function ID: 5736
 // Dependencies: [2]
 
-// Module 5734
+// Module 5735
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/face/locked_in.png.js");

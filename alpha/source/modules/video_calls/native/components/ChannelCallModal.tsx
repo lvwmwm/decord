@@ -1,28 +1,28 @@
-// Module ID: 11145
-// Function ID: 11146
+// Module ID: 11142
+// Function ID: 11143
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6254, 2068, 10602, 10603, 11146, 1087, 21, 558, 576, 10606, 11147, 5035, 11150, 11285, 10609, 11286, 4909, 5044, 11506, 504, 1499, 11148, 11507, 7075, 7100, 12427, 7701, 6557, 10608, 2]
+// Dependencies: [32, 19, 6255, 2068, 10599, 10600, 11143, 1087, 21, 558, 576, 10603, 11144, 5035, 11147, 11282, 10606, 11283, 4909, 5044, 11503, 504, 1499, 11145, 11504, 7077, 7102, 12433, 7702, 6559, 10605, 2]
 
-// Module 11145 (ChannelCallModal)
+// Module 11142 (ChannelCallModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1087 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7701 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10603 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10606 */;
-import RevealProvider from "RevealProvider" /* 11147 */;
-import CameraPreviewDefault from "CameraPreview" /* 11150 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 11285 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 11286 */;
-import PanGestureAnimations from "PanGestureAnimations" /* 11506 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 11507 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7702 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10600 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 10603 */;
+import RevealProvider from "RevealProvider" /* 11144 */;
+import CameraPreviewDefault from "CameraPreview" /* 11147 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 11282 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 11283 */;
+import PanGestureAnimations from "PanGestureAnimations" /* 11503 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 11504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import ChannelCallStore from "ChannelCallStore" /* 10602 */;
-import Constants from "Constants" /* 11146 */;
+import ChannelCallStore from "ChannelCallStore" /* 10599 */;
+import Constants from "Constants" /* 11143 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallC
   let tmp13 = null;
   if (isConnectedToVoiceChannel) {
     const obj3 = { value: revealProviderValue, children: authStore3(CameraPreviewDefault, obj4) };
-    const Provider = tmp(11147).RevealContext.Provider;
+    const Provider = tmp(11144).RevealContext.Provider;
     obj4 = { channel, participantScreenIsFocused: !tmp4, isChannelCallModalOpen: tmp9 };
     tmp13 = authStore3(Provider, obj3);
   }

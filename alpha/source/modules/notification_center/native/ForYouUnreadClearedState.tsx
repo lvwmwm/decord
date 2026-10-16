@@ -1,19 +1,19 @@
-// Module ID: 17515
-// Function ID: 17516
+// Module ID: 17525
+// Function ID: 17526
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1202, 10276, 1128, 5149, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 1202, 10277, 1128, 5150, 2]
 
-// Module 17515 (ForYouUnreadClearedState)
+// Module 17525 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10276 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10277 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouUnread
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { color: "text-default", variant: "text-md/medium", children: intl2.string(intl3.t.jXFsai) };
-    const Text = tmp(5149).Text;
+    const Text = tmp(5150).Text;
     intl2 = tmp(1128).intl;
     const tmp20 = React3(Text, obj5);
     cResult[7] = tmp20;

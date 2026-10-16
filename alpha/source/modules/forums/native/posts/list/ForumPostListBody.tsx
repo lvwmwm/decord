@@ -1,21 +1,21 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12803
+// Function ID: 12804
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 7203, 21, 5153, 558, 576, 7202, 12790, 12779, 12789, 12791, 12798, 12784, 2]
+// Dependencies: [19, 17, 7205, 21, 5154, 558, 576, 7204, 12796, 12785, 12795, 12797, 12804, 12790, 2]
 
-// Module 12797 (ForumPostListBody)
+// Module 12803 (ForumPostListBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7202 */;
-import ForumConstants from "ForumConstants" /* 7203 */;
-import ForumPostUsername from "ForumPostUsername" /* 12779 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12789 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 12790 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 12791 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 12798 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7204 */;
+import ForumConstants from "ForumConstants" /* 7205 */;
+import ForumPostUsername from "ForumPostUsername" /* 12785 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12795 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 12796 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 12797 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 12804 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
                                   if (null != media) {
                                     const obj4 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id1, containerStyle: tmp4.thumbnailContainer };
                                     id1 = undefined;
-                                    const ForumPostMediaThumbnail = tmp(12784).ForumPostMediaThumbnail;
+                                    const ForumPostMediaThumbnail = tmp(12790).ForumPostMediaThumbnail;
                                     const tmp42 = hasOwnProperty;
                                     if (firstMessage != null) {
                                       id1 = firstMessage.id;
@@ -283,7 +283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   let tmp9Result = !isGameInvitesPost;
   if (tmp9Result) {
     const obj7 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-    tmp9Result = tmp9(tmp10(12791), obj7);
+    tmp9Result = tmp9(tmp10(12797), obj7);
   }
   items2[1] = tmp9Result;
   items2[2] = hasOwnProperty(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -298,7 +298,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
     if (null != media) {
       const obj8 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id, containerStyle: tmp.thumbnailContainer };
       id = undefined;
-      const ForumPostMediaThumbnail = tmp2(12784).ForumPostMediaThumbnail;
+      const ForumPostMediaThumbnail = tmp2(12790).ForumPostMediaThumbnail;
       if (firstMessage != null) {
         id = firstMessage.id;
       }

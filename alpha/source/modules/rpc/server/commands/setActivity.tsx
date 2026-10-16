@@ -1,18 +1,18 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15457
+// Function ID: 15458
 // Name: setActivity
-// Dependencies: [32, 109, 5, 5502, 2068, 5857, 1087, 15422, 8684, 15405, 11250, 584, 10953, 7167, 11000, 11141, 12, 1104, 8500, 1267, 2]
+// Dependencies: [32, 109, 5, 5503, 2068, 5858, 1087, 15432, 8685, 15415, 11247, 584, 10950, 7169, 10997, 11138, 12, 1104, 8501, 1267, 2]
 
-// Module 15447 (setActivity)
-import OAuth2Scopes from "OAuth2Scopes" /* 8684 */;
+// Module 15457 (setActivity)
+import OAuth2Scopes from "OAuth2Scopes" /* 8685 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5502 */;
+import ApplicationStore from "ApplicationStore" /* 5503 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import Constants_mod from "Constants" /* 5857 */;
+import Constants_mod from "Constants" /* 5858 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15422 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15432 */;
 import size from "module_2" /* 2 */;
 
 let c3, closure_11, closure_5, constants, constants2, constants3;

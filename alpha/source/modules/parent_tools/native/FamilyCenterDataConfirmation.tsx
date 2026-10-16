@@ -1,15 +1,15 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 12587
+// Function ID: 12588
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5149, 6402, 6487, 5439, 1128, 2571, 12582, 5094, 9480, 8441, 12583, 7777, 12585, 9810, 5113, 12586, 7315, 6430, 2]
+// Dependencies: [19, 21, 558, 576, 5150, 6404, 6489, 5440, 1128, 2571, 12588, 5094, 9481, 8442, 12589, 7778, 12591, 9809, 5113, 12592, 7317, 6432, 2]
 
-// Module 12581 (FamilyCenterDataConfirmation)
+// Module 12587 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
 import _modDef2571 from "module_2571" /* 2571 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import Stack_Stack from "Stack/Stack" /* 5439 */;
-import TableRow2 from "TableRow" /* 6402 */;
-import TableRowGroup2 from "TableRowGroup" /* 6487 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import Stack_Stack from "Stack/Stack" /* 5440 */;
+import TableRow2 from "TableRow" /* 6404 */;
+import TableRowGroup2 from "TableRowGroup" /* 6489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,16 +21,16 @@ let tmp;
 const intl37 = tmp(1128);
 const UserPlusIcon = tmp(5094);
 const ClockIcon = tmp(5113);
-const XSmallIcon = tmp(6430);
-const SettingsIcon = tmp(7315);
-const CreditCardIcon = tmp(7777);
-const ForumIcon = tmp(8441);
-const ServerIcon = tmp(9480);
-const FlagIcon = tmp(9810);
-const useAgeSpecificText12 = tmp(12582);
-const PhoneIcon = tmp(12583);
-const GiftIcon = tmp(12585);
-const PiggyBankIcon = tmp(12586);
+const XSmallIcon = tmp(6432);
+const SettingsIcon = tmp(7317);
+const CreditCardIcon = tmp(7778);
+const ForumIcon = tmp(8442);
+const ServerIcon = tmp(9481);
+const FlagIcon = tmp(9809);
+const useAgeSpecificText12 = tmp(12588);
+const PhoneIcon = tmp(12589);
+const GiftIcon = tmp(12591);
+const PiggyBankIcon = tmp(12592);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {

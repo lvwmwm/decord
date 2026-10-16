@@ -1,21 +1,21 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13022
+// Function ID: 13023
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 12251, 21, 5153, 587, 558, 576, 4877, 4886, 13015, 1631, 11926, 12252, 12250, 12818, 4909, 2]
+// Dependencies: [32, 19, 17, 12257, 21, 5154, 587, 558, 576, 4877, 4886, 13023, 1631, 11923, 12258, 12256, 12824, 4909, 2]
 
-// Module 13014 (ChatInputRightActions)
+// Module 13022 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4886 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import ChatInputConstants from "ChatInputConstants" /* 12251 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12252 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12818 */;
+import ChatInputConstants from "ChatInputConstants" /* 12257 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12258 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12824 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let dependencyMap;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const ChatInputActionButtonTransitionItem = tmp(12250);
+const ChatInputActionButtonTransitionItem = tmp(12256);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let View = react_native.View;
@@ -140,12 +140,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputRig
             }
             if (null != suggestedExpressions) {
               const obj7 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1631).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-              const EmojiSuggestionChatButton = tmp(13015).EmojiSuggestionChatButton;
+              const EmojiSuggestionChatButton = tmp(13023).EmojiSuggestionChatButton;
               const merged = Object.assign(suggestedExpressions);
               tmp23 = closure_7(EmojiSuggestionChatButton, obj7);
             } else {
               const obj8 = { active: keyboardType === channel(1631).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-              const tmp4Result = tmp4(11926);
+              const tmp4Result = tmp4(11923);
               tmp23 = closure_7(tmp4Result, obj8);
             }
             cResult[12] = channel;
@@ -245,12 +245,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputRig
   items1 = [tmp15Result, ];
   if (null != suggestedExpressions) {
     const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1631).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-    const EmojiSuggestionChatButton = tmp(13015).EmojiSuggestionChatButton;
+    const EmojiSuggestionChatButton = tmp(13023).EmojiSuggestionChatButton;
     const merged = Object.assign(suggestedExpressions);
     tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
   } else {
     const obj6 = { active: keyboardType === channel(1631).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-    const tmp3Result = tmp3(11926);
+    const tmp3Result = tmp3(11923);
     tmp19 = closure_7(tmp3Result, obj6);
   }
   items1[1] = tmp19;
@@ -329,7 +329,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftSl
             cResult[18] = tmp21;
             tmp16 = tmp21;
           }
-          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "test", shouldShowThread: "" };
+          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "test", shouldShowThread: "Morocco" };
           const tmp15 = metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, obj4);
           cResult[12] = channel;
           cResult[13] = onPress;
@@ -365,7 +365,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftSl
   const YEETED = native.TransitionStates.YEETED;
   const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
   ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "test", shouldShowThread: "" }) };
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "test", shouldShowThread: "Morocco" }) };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   useChatInputFloatingBounceDefault(obj);
   View = ReanimatedRexportDefault.View;

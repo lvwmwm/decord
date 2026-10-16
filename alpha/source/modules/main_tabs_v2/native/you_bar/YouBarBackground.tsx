@@ -1,22 +1,22 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17465
+// Function ID: 17466
 // Name: YouBarBackground
-// Dependencies: [19, 17, 16056, 21, 5153, 587, 558, 576, 683, 5453, 6465, 4877, 16142, 4909, 5440, 2]
+// Dependencies: [19, 17, 16070, 21, 5154, 587, 558, 576, 683, 5454, 6467, 4877, 16156, 4909, 5441, 2]
 
-// Module 17455 (YouBarBackground)
+// Module 17465 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import useToken2 from "useToken" /* 4877 */;
-import spring from "spring" /* 5440 */;
-import LinearGradientDefault from "LinearGradient" /* 5453 */;
-import _modDef6465 from "module_6465" /* 6465 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16142 */;
+import spring from "spring" /* 5441 */;
+import LinearGradientDefault from "LinearGradient" /* 5454 */;
+import _modDef6467 from "module_6467" /* 6467 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16156 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16056 */;
+import YouBarConstants from "YouBarConstants" /* 16070 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarM
             return tmp39;
           }
           const obj6 = { style: first, maskElement: tmp31, children: tmp35 };
-          const tmp42 = metroRequire(_modDef6465, obj6);
+          const tmp42 = metroRequire(_modDef6467, obj6);
           cResult[24] = tmp31;
           cResult[25] = tmp35;
           cResult[26] = tmp42;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarM
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef6465;
+  const tmp3 = _modDef6467;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);

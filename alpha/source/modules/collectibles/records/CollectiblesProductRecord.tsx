@@ -1,15 +1,15 @@
-// Module ID: 7484
-// Function ID: 7485
+// Module ID: 7486
+// Function ID: 7487
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7485, 7486, 7491, 1089, 1087, 6315, 1995, 2]
+// Dependencies: [32, 7487, 7488, 7493, 1089, 1087, 6317, 1995, 2]
 
-// Module 7484 (CollectiblesProductRecord)
+// Module 7486 (CollectiblesProductRecord)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 6315 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 6317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7485 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7486 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7491 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7487 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7488 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7493 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const metroImportDefault = CollectiblesShopConstants.REWARD_CATEGORY_AND_REWARD_
 class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
   constructor(arg0) {
     const tmp = new CollectiblesProductRecord(arg0, new.target);
-    ({ summary: tmp.summary, type: tmp.type, premiumType: tmp.premiumType, items: tmp.items, categorySkuId: tmp.categorySkuId, isCategoryReward: tmp.isCategoryReward, prices: tmp.prices, bundledProducts: tmp.bundledProducts, previewAssets: tmp.previewAssets, googleSkuIds: tmp.googleSkuIds, variants: tmp.variants, eligibleOffers: tmp.eligibleOffers, badgeOverride: tmp.badgeOverride, hideBadge: tmp.hideBadge, isFirstParty: tmp.isFirstParty, baseVariantName: tmp.baseVariantName, variantLabel: tmp.variantLabel } = arg0);
+    ({ summary: tmp.summary, type: tmp.type, premiumType: tmp.premiumType, items: tmp.items, categorySkuId: tmp.categorySkuId, isCategoryReward: tmp.isCategoryReward, prices: tmp.prices, bundledProducts: tmp.bundledProducts, previewAssets: tmp.previewAssets, googleSkuIds: tmp.googleSkuIds, variants: tmp.variants, eligibleOffers: tmp.eligibleOffers, badgeOverride: tmp.badgeOverride, hideBadge: tmp.hideBadge, isFirstParty: tmp.isFirstParty, baseVariantName: tmp.baseVariantName, variantLabel: tmp.variantLabel, categoryWillUnpublishAt: tmp.categoryWillUnpublishAt } = arg0);
     return tmp;
   }
   static fromServer(arg0) {
@@ -76,7 +76,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
     if (typeof tmp3 === "function") {
       const self = this;
       const self2 = this;
-      ({ summary: tmp15.summary, type: tmp15.type, premiumType: tmp15.premiumType, items: tmp15.items, categorySkuId: tmp15.categorySkuId, isCategoryReward: tmp15.isCategoryReward, prices: tmp15.prices, bundledProducts: tmp15.bundledProducts, previewAssets: tmp15.previewAssets, googleSkuIds: tmp15.googleSkuIds, variants: tmp15.variants, eligibleOffers: tmp15.eligibleOffers, badgeOverride: tmp15.badgeOverride, hideBadge: tmp15.hideBadge, isFirstParty: tmp15.isFirstParty, baseVariantName: tmp15.baseVariantName, variantLabel: tmp15.variantLabel } = obj);
+      ({ summary: tmp15.summary, type: tmp15.type, premiumType: tmp15.premiumType, items: tmp15.items, categorySkuId: tmp15.categorySkuId, isCategoryReward: tmp15.isCategoryReward, prices: tmp15.prices, bundledProducts: tmp15.bundledProducts, previewAssets: tmp15.previewAssets, googleSkuIds: tmp15.googleSkuIds, variants: tmp15.variants, eligibleOffers: tmp15.eligibleOffers, badgeOverride: tmp15.badgeOverride, hideBadge: tmp15.hideBadge, isFirstParty: tmp15.isFirstParty, baseVariantName: tmp15.baseVariantName, variantLabel: tmp15.variantLabel, categoryWillUnpublishAt: tmp15.categoryWillUnpublishAt } = obj);
       const tmp42 = new tmp4(obj, fromServerResult, merged, this, tmp7);
       return tmp42;
     } else {
@@ -122,7 +122,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
         if (skus.skus.length > 1) {
           let type;
           if (!tmp5) {
-            let tmp6 = _require;
+            const tmp6 = _require;
             type = require("CollectiblesItemType").CollectiblesItemType.VARIANTS_GROUP;
           }
           let obj2 = closure_6(first);
@@ -132,7 +132,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
           let items = obj2.items;
           let item = obj2.item;
           const first1 = _slicedToArray(first.selectedOptions, 1)[0];
-          const obj4 = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type, baseVariantName: name, variantLabel: tmp13, premiumType: premiumType1, items, categorySkuId: str2, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === first.id), prices: first.prices, badgeOverride: null, hideBadge: null, previewAssets: previewAssetPaths, variants: found1, googleSkuIds, eligibleOffers: first.eligibleOffers, isFirstParty: collectibles.isFirstParty, bundledProducts: found2 };
+          const obj4 = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type, baseVariantName: name, variantLabel: tmp13, premiumType: premiumType1, items, categorySkuId: str2, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === first.id), prices: first.prices, badgeOverride: null, hideBadge: null, previewAssets: previewAssetPaths, variants: found1, googleSkuIds, eligibleOffers: first.eligibleOffers, isFirstParty: collectibles.isFirstParty, bundledProducts: found2 };
           ({ id: obj3.storeListingId, id: obj3.skuId } = first);
           ({ name: obj3.name, summary: obj3.summary, primaryCollectionStyles: obj3.styles } = skus);
           name = undefined;
@@ -200,10 +200,9 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
                 }
                 ({ items, item } = obj);
                 first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: null, previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "embed", bundledProducts: false, isFirstParty: collectibles.isFirstParty };
+                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "t", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "done", bundledProducts: "e", isFirstParty: collectibles.isFirstParty };
                 str = undefined;
                 const tmp5 = CollectiblesVariantProductRecord;
-                const tmp6 = skus;
                 if (first != null) {
                   str = first.optionValue;
                 }
@@ -296,7 +295,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
             let self2 = this;
             let self3 = this;
             const tmp23 = new CollectiblesProductRecord(obj4, tmp, premiumType, items1, tmp15, type, str3);
-            ({ summary: tmp23.summary, type: tmp23.type, premiumType: tmp23.premiumType, items: tmp23.items, categorySkuId: tmp23.categorySkuId, isCategoryReward: tmp23.isCategoryReward, prices: tmp23.prices, bundledProducts: tmp23.bundledProducts, previewAssets: tmp23.previewAssets, googleSkuIds: tmp23.googleSkuIds, variants: tmp23.variants, eligibleOffers: tmp23.eligibleOffers, badgeOverride: tmp23.badgeOverride, hideBadge: tmp23.hideBadge, isFirstParty: tmp23.isFirstParty, baseVariantName: tmp23.baseVariantName, variantLabel: tmp23.variantLabel } = obj4);
+            ({ summary: tmp23.summary, type: tmp23.type, premiumType: tmp23.premiumType, items: tmp23.items, categorySkuId: tmp23.categorySkuId, isCategoryReward: tmp23.isCategoryReward, prices: tmp23.prices, bundledProducts: tmp23.bundledProducts, previewAssets: tmp23.previewAssets, googleSkuIds: tmp23.googleSkuIds, variants: tmp23.variants, eligibleOffers: tmp23.eligibleOffers, badgeOverride: tmp23.badgeOverride, hideBadge: tmp23.hideBadge, isFirstParty: tmp23.isFirstParty, baseVariantName: tmp23.baseVariantName, variantLabel: tmp23.variantLabel, categoryWillUnpublishAt: tmp23.categoryWillUnpublishAt } = obj4);
             return tmp23;
           } else {
             throw new TypeError("Trying to call a non-function");

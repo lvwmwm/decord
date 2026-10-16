@@ -1,9 +1,9 @@
-// Module ID: 18303
-// Function ID: 18304
+// Module ID: 18313
+// Function ID: 18314
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4861, 7467, 6297, 6252, 2072, 502, 2068, 7627, 6302, 2090, 14747, 6253, 6181, 6184, 5174, 1087, 21, 587, 5153, 558, 576, 6407, 5149, 504, 4909, 5044, 6961, 1128, 13984, 8998, 16560, 1384, 15522, 13552, 8937, 5035, 8938, 8925, 1499, 1633, 8926, 11514, 1267, 18304, 18311, 16741, 18324, 18325, 2]
+// Dependencies: [32, 19, 17, 4861, 7469, 6293, 6253, 2072, 502, 2068, 7628, 6304, 2090, 14757, 6254, 6182, 6185, 5175, 1087, 21, 587, 5154, 558, 576, 6409, 5150, 504, 4909, 5044, 6963, 1128, 13994, 8999, 16574, 1384, 15532, 13560, 8938, 5035, 8939, 8926, 1499, 1633, 8927, 11511, 1267, 18314, 18321, 16755, 18334, 18335, 2]
 
-// Module 18303 (LaunchPad)
+// Module 18313 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,31 +13,31 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import ChatInputUtils from "ChatInputUtils" /* 5044 */;
-import _mod8925 from "module_8925" /* 8925 */;
-import AutocompleterDefault from "Autocompleter" /* 8926 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8937 */;
-import RouteManagerDefault from "RouteManager" /* 11514 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13552 */;
+import _mod8926 from "module_8926" /* 8926 */;
+import AutocompleterDefault from "Autocompleter" /* 8927 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8938 */;
+import RouteManagerDefault from "RouteManager" /* 11511 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13560 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore_mod from "ActionSheetStore" /* 4861 */;
-import ChannelListStore_mod from "ChannelListStore" /* 7467 */;
-import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6297 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6252 */;
+import ChannelListStore_mod from "ChannelListStore" /* 7469 */;
+import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6293 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6253 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7627 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7628 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14747 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
-import SortedGuildStore from "SortedGuildStore" /* 6181 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14757 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
+import SortedGuildStore from "SortedGuildStore" /* 6182 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,9 +58,9 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Text_Text = tmp(5149);
-const Pressables = tmp(6407);
-const DevToolsNavigator = tmp(15522);
+const Text_Text = tmp(5150);
+const Pressables = tmp(6409);
+const DevToolsNavigator = tmp(15532);
 function createAndAppendChannel(item10022, set, items) {
   if (!set.has(item10022)) {
     const tmp3 = createAutocompleterResultForChannelIdDefault(item10022);
@@ -1147,7 +1147,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   return closure_28(sharedValue, obj6);
 }));
 let closure_40 = [];
-let items = [_mod8925.AutocompleterResultTypes.GUILD, _mod8925.AutocompleterResultTypes.TEXT_CHANNEL, _mod8925.AutocompleterResultTypes.GROUP_DM, _mod8925.AutocompleterResultTypes.VOICE_CHANNEL, _mod8925.AutocompleterResultTypes.USER];
+let items = [_mod8926.AutocompleterResultTypes.GUILD, _mod8926.AutocompleterResultTypes.TEXT_CHANNEL, _mod8926.AutocompleterResultTypes.GROUP_DM, _mod8926.AutocompleterResultTypes.VOICE_CHANNEL, _mod8926.AutocompleterResultTypes.USER];
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWrapperStyles() {
   let tmp4;

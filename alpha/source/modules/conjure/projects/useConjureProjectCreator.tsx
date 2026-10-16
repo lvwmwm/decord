@@ -1,19 +1,19 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12249
+// Function ID: 12250
 // Name: useConjureProjectCreator
-// Dependencies: [19, 1392, 10902, 1128, 3865, 12244, 558, 576, 504, 12093, 5021, 2]
+// Dependencies: [19, 1392, 10899, 1128, 3865, 12250, 558, 576, 504, 12092, 5021, 2]
 // Exports: getConjureProjectCreatorLabel
 
-// Module 12243 (useConjureProjectCreator)
+// Module 12249 (useConjureProjectCreator)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
 import UserUtils from "UserUtils" /* 5021 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12093 */;
-import ListUtils from "ListUtils" /* 12244 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12092 */;
+import ListUtils from "ListUtils" /* 12250 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureChatStore from "ConjureChatStore" /* 10902 */;
+import ConjureChatStore from "ConjureChatStore" /* 10899 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

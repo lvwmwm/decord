@@ -1,18 +1,18 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8830
+// Function ID: 8831
 // Name: CreateChannelActionCreators
-// Dependencies: [6184, 1087, 1097, 584, 6156, 1275, 2080, 1297, 7031, 7026, 7249, 2]
+// Dependencies: [6185, 1087, 1097, 584, 6157, 1275, 2080, 1297, 7033, 7028, 7251, 2]
 
-// Module 8829 (CreateChannelActionCreators)
+// Module 8830 (CreateChannelActionCreators)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import TypeUtils from "TypeUtils" /* 2080 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6156 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7026 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7031 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7249 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6157 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7028 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7033 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7251 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let obj = {
         obj2.application_id = applicationId;
       }
     }
-    const tmpResult = tmp(6156);
+    const tmpResult = tmp(6157);
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: obj3, rejectWithError: obj5.rejectWithMigratedError() };
     const post = tmpResult.post;
     obj3 = {

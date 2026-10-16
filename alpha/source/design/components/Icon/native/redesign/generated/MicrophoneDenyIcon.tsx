@@ -1,14 +1,14 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9030
+// Function ID: 9031
 // Name: MicrophoneDenyIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9030, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9031, 4876, 2]
 
-// Module 9029 (MicrophoneDenyIcon)
+// Module 9030 (MicrophoneDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 9030 */;
+import AssetRegistry from "AssetRegistry" /* 9031 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

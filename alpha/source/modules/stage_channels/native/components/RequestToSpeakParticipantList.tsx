@@ -1,17 +1,17 @@
-// Module ID: 11319
-// Function ID: 11320
+// Module ID: 11316
+// Function ID: 11317
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 7075, 8530, 11320, 1202, 5149, 6407, 1128, 5478, 11321, 11322, 7948, 6174, 7707, 6983, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 587, 558, 576, 7077, 8531, 11317, 1202, 5150, 6409, 1128, 5479, 11318, 11319, 7949, 6175, 7708, 6985, 2]
 
-// Module 11319 (RequestToSpeakParticipantList)
+// Module 11316 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7707 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7708 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

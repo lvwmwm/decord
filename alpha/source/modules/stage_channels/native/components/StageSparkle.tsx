@@ -1,19 +1,19 @@
-// Module ID: 8896
-// Function ID: 8897
+// Module ID: 8897
+// Function ID: 8898
 // Name: StageSparkle
-// Dependencies: [109, 19, 17, 21, 5153, 587, 558, 576, 8897, 5091, 8898, 4886, 2]
+// Dependencies: [109, 19, 17, 21, 5154, 587, 558, 576, 8898, 5091, 8899, 4886, 2]
 
-// Module 8896 (StageSparkle)
+// Module 8897 (StageSparkle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8897 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8898 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8898 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8899 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -144,7 +144,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSp
     tmp10 = importDefault;
   }
   items1 = [metroRequire(View, obj2), ];
-  const obj5 = { style: tmp3.sparkles, source: tmp10(8898) };
+  const obj5 = { style: tmp3.sparkles, source: tmp10(8899) };
   const tmp10Result = tmp10(5091);
   items1[1] = metroRequire(tmp10Result, obj5);
   return tmp4(View, obj);

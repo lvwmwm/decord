@@ -1,9 +1,9 @@
-// Module ID: 10766
-// Function ID: 10767
+// Module ID: 10763
+// Function ID: 10764
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1392, 10767, 1087, 1395, 21, 5153, 587, 558, 576, 1128, 1202, 6843, 6407, 10768, 1267, 10761, 504, 10769, 10770, 5028, 10772, 5433, 9663, 6887, 10773, 9868, 5044, 10775, 9534, 6423, 5149, 10495, 8814, 6487, 6402, 5118, 10855, 2002, 10857, 5111, 1385, 1647, 6152, 6910, 2]
+// Dependencies: [32, 19, 17, 1392, 10764, 1087, 1395, 21, 5154, 587, 558, 576, 1128, 1202, 6845, 6409, 10765, 1267, 10758, 504, 10766, 10767, 5028, 10769, 5434, 9662, 6889, 10770, 9867, 5044, 10772, 9535, 6425, 5150, 10496, 8815, 6489, 6404, 5118, 10852, 2002, 10854, 5111, 1385, 1647, 6153, 6912, 2]
 
-// Module 10766 (EditCustomStatusWithPreview)
+// Module 10763 (EditCustomStatusWithPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -14,24 +14,24 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import shared from "shared" /* 5028 */;
 import ChatInputUtils from "ChatInputUtils" /* 5044 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import react_native from "react-native" /* 5433 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import Pressables from "Pressables" /* 6407 */;
-import NavigatorHeader from "NavigatorHeader" /* 6423 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6843 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9663 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9868 */;
-import Constants2 from "Constants" /* 10767 */;
-import setCustomStatusDefault from "setCustomStatus" /* 10770 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 10772 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 10775 */;
+import react_native from "react-native" /* 5434 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import Pressables from "Pressables" /* 6409 */;
+import NavigatorHeader from "NavigatorHeader" /* 6425 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6845 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9662 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9867 */;
+import Constants2 from "Constants" /* 10764 */;
+import setCustomStatusDefault from "setCustomStatus" /* 10767 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 10769 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 10772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -313,7 +313,7 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(10855, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(10852, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
       trailing: ref1(Text, obj19)
     };
@@ -461,7 +461,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     }
     if (cResult[4] !== tmp4) {
       const obj3 = { initialRouteName: "root", screens: tmp4, headerStatusBarHeight: 12, headerStyle: tmp6 };
-      const Navigator = tmp(6910).Navigator;
+      const Navigator = tmp(6912).Navigator;
       analyticsLocations(1385);
       const tmp8Result = closure_13(Navigator, obj3);
       cResult[4] = tmp4;
@@ -482,7 +482,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
       intl = analyticsLocations(closure_1_2[12]).intl;
       return closure_1_13(GenericHeaderTitle, obj);
     },
-    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(6152).pop),
+    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(6153).pop),
     ignoreKeyboard: true,
     render(arg0, navigation) {
       const obj = { navigation, onClose: _prompt(closure_2_2[45]).pop, analyticsLocations, prompt: _prompt };
@@ -494,7 +494,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
   cResult[1] = _prompt;
   cResult[2] = obj4;
   tmp4 = obj4;
-  tmpResult4 = analyticsLocations(6423);
+  tmpResult4 = analyticsLocations(6425);
 }) : (function EditCustomStatusWithPreviewModal(analyticsLocations) {
   let obj3;
   analyticsLocations = analyticsLocations.analyticsLocations;
@@ -526,7 +526,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: obj3 };
-  const Navigator = analyticsLocations(6910).Navigator;
+  const Navigator = analyticsLocations(6912).Navigator;
   let obj2 = analyticsLocations(1385);
   obj3 = undefined;
   const tmp2 = closure_13;

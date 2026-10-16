@@ -1,22 +1,22 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7534
+// Function ID: 7535
 // Name: ChannelConversationsStore
-// Dependencies: [502, 2068, 4819, 2119, 1392, 7533, 7534, 1459, 11, 7535, 7536, 1388, 5496, 504, 584, 2]
+// Dependencies: [502, 2068, 4819, 2119, 1392, 7535, 5132, 1459, 11, 7536, 7537, 1388, 5497, 504, 584, 2]
 
-// Module 7532 (ChannelConversationsStore)
+// Module 7534 (ChannelConversationsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5496 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7535 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5497 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7536 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConversationVisibilityStore from "ConversationVisibilityStore" /* 7533 */;
-import ConversationConstants from "ConversationConstants" /* 7534 */;
+import ConversationVisibilityStore from "ConversationVisibilityStore" /* 7535 */;
+import ConversationConstants from "ConversationConstants" /* 5132 */;
 import size from "module_2" /* 2 */;
 
 let length, set;
@@ -159,7 +159,7 @@ function handleReaction(messageId) {
       if (flag2) {
         value.message = applyReactionResult;
         let tmp8 = null;
-        const replaceHydratedMessage = tmp4(7535).replaceHydratedMessage;
+        const replaceHydratedMessage = tmp4(7536).replaceHydratedMessage;
         ConversationMessageCacheUtils;
         if (null != value.conversationId) {
           const conversationMetadataById = peekResult.conversationMetadataById;
@@ -189,7 +189,7 @@ function handleRelationshipUpdate() {
           c0 = true;
           message.message = result;
           let tmp2 = null;
-          const replaceHydratedMessage = tmp6(7535).replaceHydratedMessage;
+          const replaceHydratedMessage = tmp6(7536).replaceHydratedMessage;
           ConversationMessageCacheUtils;
           if (null != message.conversationId) {
             const conversationMetadataById = messageMetadataByMessageId.conversationMetadataById;
@@ -251,8 +251,6 @@ let tmp3 = new LRUCacheDefault(obj);
 const authStore2 = tmp3;
 let map = new Map();
 let map1 = new Map();
-let closure_16 = 0;
-let closure_17 = 0;
 const Store = get_initializedDefault.Store;
 class ChannelConversationsStore extends Store {
   initialize() {
@@ -338,14 +336,6 @@ class ChannelConversationsStore extends Store {
     }
     if (flag == null) {
       flag = false;
-    }
-    return flag;
-  }
-  consumeFocusRequest() {
-    let flag = closure_16 !== closure_17;
-    if (flag) {
-      closure_17 = closure_16;
-      flag = true;
     }
     return flag;
   }
@@ -435,7 +425,7 @@ ChannelConversationsStore.displayName = "ChannelConversationsStore";
 let obj2 = {
   CONVERSATION_MESSAGES_FETCH_START: function handleConversationMessagesFetchStart(conversationId) {
     conversationId = conversationId.conversationId;
-    if (true === conversationId.isStandalone) {
+    if ("channel" !== conversationId.cacheType) {
       return false;
     } else {
       let str = "preview";
@@ -457,13 +447,13 @@ let obj2 = {
       }
     }
   },
-  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(isStandalone) {
+  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(cacheType) {
     let conversationId;
     let fullyHydrated;
     let messageReferences;
     let tmp;
-    ({ conversationId, messageReferences, fullyHydrated } = isStandalone);
-    if (true === isStandalone.isStandalone) {
+    ({ conversationId, messageReferences, fullyHydrated } = cacheType);
+    if ("channel" !== cacheType.cacheType) {
       return false;
     } else {
       let str = "preview";
@@ -515,7 +505,7 @@ let obj2 = {
   },
   CONVERSATION_MESSAGES_FETCH_FAILURE: function handleConversationMessagesFetchFailure(conversationId) {
     conversationId = conversationId.conversationId;
-    if (true === conversationId.isStandalone) {
+    if ("channel" !== conversationId.cacheType) {
       return false;
     } else {
       let str = "preview";
@@ -806,7 +796,7 @@ let obj2 = {
     set = undefined;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
       let conversations;
-      const mapped = rawConversations.map(set(7536).mapConversation);
+      const mapped = rawConversations.map(set(7537).mapConversation);
       const found = mapped.filter(set(1388).isNotNullish);
       let obj2 = navigation;
       const peekResult = navigation.peek(channelId);
@@ -1028,10 +1018,6 @@ let obj2 = {
     }
     return false;
   },
-  CONVERSATION_FOCUS_REQUEST: function handleConversationFocusRequest() {
-    closure_16 = closure_16 + 1;
-    return true;
-  },
   SET_CONVERSATION_FEEDBACK_RATING: function handleSetConversationFeedbackRating(channelId) {
     let conversationId;
     let rating;
@@ -1070,7 +1056,7 @@ let obj2 = {
           if (flag2) {
             value.message = updateMessageRecordResult;
             let tmp10 = null;
-            const replaceHydratedMessage = tmp6(7535).replaceHydratedMessage;
+            const replaceHydratedMessage = tmp6(7536).replaceHydratedMessage;
             ConversationMessageCacheUtils;
             if (null != value.conversationId) {
               const conversationMetadataById = peekResult.conversationMetadataById;

@@ -1,17 +1,17 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16160
+// Function ID: 16161
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6190, 16053, 21, 558, 576, 16081, 16050, 16054, 10619, 16057, 16140, 4909, 16058, 16055, 6557, 16052, 5119, 2]
+// Dependencies: [19, 6191, 16067, 21, 558, 576, 16095, 16064, 16068, 10616, 16071, 16154, 4909, 16072, 16069, 6559, 16066, 5119, 2]
 
-// Module 16146 (QuestDockGestureDetector)
+// Module 16160 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import QuestConstants from "QuestConstants" /* 6190 */;
-import QuestDockUtils from "QuestDockUtils" /* 16052 */;
+import QuestConstants from "QuestConstants" /* 6191 */;
+import QuestDockUtils from "QuestDockUtils" /* 16066 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16053 */;
+import QuestDockConstants from "QuestDockConstants" /* 16067 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(6557);
+const LegacyBaseButton = tmp(6559);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;

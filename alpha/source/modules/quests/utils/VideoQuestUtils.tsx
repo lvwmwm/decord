@@ -1,24 +1,24 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13830
+// Function ID: 13831
 // Name: VideoQuestUtils
-// Dependencies: [5344, 7609, 7611, 1087, 7615, 9409, 7631, 1128, 7625, 5035, 2, 13820]
+// Dependencies: [5345, 7610, 7612, 1087, 7616, 9410, 7632, 1128, 7626, 5035, 2, 13831]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
-// Module 13819 (VideoQuestUtils)
+// Module 13830 (VideoQuestUtils)
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7615 */;
-import AnalyticsActions from "AnalyticsActions" /* 7625 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7631 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13820 */;
-import NetworkStore from "NetworkStore" /* 5344 */;
-import QuestStore from "QuestStore" /* 7609 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7611 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7616 */;
+import AnalyticsActions from "AnalyticsActions" /* 7626 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7632 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13831 */;
+import NetworkStore from "NetworkStore" /* 5345 */;
+import QuestStore from "QuestStore" /* 7610 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7612 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const NavigationRouteUtils = tmp(5035);
-const QuestActionCreators = tmp(9409);
+const QuestActionCreators = tmp(9410);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -175,7 +175,7 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp6Result = tmp6(9409);
+        const tmp6Result = tmp6(9410);
         tmp6Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }

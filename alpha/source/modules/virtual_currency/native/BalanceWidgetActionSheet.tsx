@@ -1,10 +1,10 @@
-// Module ID: 13656
-// Function ID: 13657
+// Module ID: 13664
+// Function ID: 13665
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1087, 2065, 21, 13657, 13658, 13659, 1128, 4859, 2131, 4893, 4877, 587, 1267, 4997, 2052, 4886, 7063, 5091, 8652, 7067, 13660, 9270, 5149, 5441, 5153, 1384, 2]
+// Dependencies: [19, 17, 1087, 2065, 21, 13665, 13666, 13667, 1128, 4859, 2131, 4893, 4877, 587, 1267, 4997, 2052, 4886, 7065, 5091, 8653, 7069, 13668, 9271, 5150, 5442, 5154, 1384, 2]
 // Exports: default
 
-// Module 13656 (BalanceWidgetActionSheet)
+// Module 13664 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -12,14 +12,14 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import _mod13657 from "module_13657" /* 13657 */;
-import _mod13658 from "module_13658" /* 13658 */;
-import _mod13659 from "module_13659" /* 13659 */;
+import _mod13665 from "module_13665" /* 13665 */;
+import _mod13666 from "module_13666" /* 13666 */;
+import _mod13667 from "module_13667" /* 13667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod13657.default, backgroundImage: _mod13658.default, bannerImage: _mod13659.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod13665.default, backgroundImage: _mod13666.default, bannerImage: _mod13667.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }

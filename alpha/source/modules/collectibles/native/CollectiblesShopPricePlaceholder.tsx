@@ -1,15 +1,15 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9306
+// Function ID: 9307
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5153, 587, 558, 576, 4909, 5154, 2]
+// Dependencies: [19, 21, 5154, 587, 558, 576, 4909, 5155, 2]
 
-// Module 9305 (CollectiblesShopPricePlaceholder)
+// Module 9306 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

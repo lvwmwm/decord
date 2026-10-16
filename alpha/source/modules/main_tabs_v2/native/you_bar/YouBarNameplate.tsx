@@ -1,14 +1,14 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17466
+// Function ID: 17467
 // Name: YouBarNameplate
-// Dependencies: [19, 5143, 16056, 21, 558, 576, 4877, 587, 16142, 504, 4909, 5440, 9252, 2]
+// Dependencies: [19, 5144, 16070, 21, 558, 576, 4877, 587, 16156, 504, 4909, 5441, 9253, 2]
 
-// Module 17456 (YouBarNameplate)
+// Module 17466 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5440 */;
-import YouBarConstants from "YouBarConstants" /* 16056 */;
+import spring from "spring" /* 5441 */;
+import YouBarConstants from "YouBarConstants" /* 16070 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ avatarSize, barWidth } = arg0);
   const obj2 = isQuestRendered(4877);
   token = obj2.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp6 = token(16142)(token);
+  const tmp6 = token(16156)(token);
   dependencyMap = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -65,10 +65,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return obj;
     }
   }
-  N.__closure = { withSpring: tmp(5440).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp6, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  N.__closure = { withSpring: tmp(5441).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp6, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   N.__workletHash = 17156260157738;
   N.__initData = __initData;
-  ({ withSpring: tmp(5440).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp6, borderRadius: token, YOU_BAR_SPRING_CONFIG });
+  ({ withSpring: tmp(5441).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp6, borderRadius: token, YOU_BAR_SPRING_CONFIG });
   const animatedStyle = tmpResult2.useAnimatedStyle(N);
   let num3 = 0;
   if (!isQuestRendered) {
@@ -105,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             cResult[15] = tmp21;
             tmp19 = tmp21;
           }
-          const tmp18 = jsx(token(9252), { nameplate, isFocused: true, animate: stateFromStores && "always" });
+          const tmp18 = jsx(token(9253), { nameplate, isFocused: true, animate: stateFromStores && "always" });
           cResult[10] = nameplate;
           cResult[11] = stateFromStores && "always";
           cResult[12] = tmp18;
@@ -139,7 +139,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = isQuestRendered(4877);
   const tmp2 = token;
   token = obj.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(16142)(token);
+  const tmp4 = token(16156)(token);
   dependencyMap = tmp4;
   const items = [AccessibilityStore];
   const obj2 = isQuestRendered(504);
@@ -157,10 +157,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj;
   };
   const obj3 = isQuestRendered(4909);
-  fn.__closure = { withSpring: isQuestRendered(5440).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  fn.__closure = { withSpring: isQuestRendered(5441).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__workletHash = 11731298516553;
   fn.__initData = __initData2;
-  ({ withSpring: isQuestRendered(5440).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG });
+  ({ withSpring: isQuestRendered(5441).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const rect = { position: "absolute", top: 0, left: avatarSize, right: -1, bottom: 0, borderTopRightRadius: num, borderTopLeftRadius: 0, borderBottomRightRadius: token, borderBottomLeftRadius: 0, overflow: "hidden", width: barWidth - avatarSize };
   num = 0;
@@ -170,7 +170,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const items1 = [rect, animatedStyle];
   let str = stateFromStores;
-  tmp2(9252);
+  tmp2(9253);
   if (str) {
     str = "always";
   }

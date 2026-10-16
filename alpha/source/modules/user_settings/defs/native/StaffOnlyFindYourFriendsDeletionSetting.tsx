@@ -1,18 +1,18 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15817
+// Function ID: 15818
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8213, 21, 1269, 1274, 558, 576, 4792, 13271, 1351, 4868, 11006, 15808, 2]
+// Dependencies: [5, 17, 8214, 21, 1269, 1274, 558, 576, 4792, 13279, 1351, 4868, 11003, 15818, 2]
 
-// Module 15807 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15817 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15808 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15818 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

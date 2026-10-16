@@ -1,17 +1,17 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12436
+// Function ID: 12437
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2021, 6115, 502, 2068, 2090, 4809, 5169, 5171, 1087, 11361, 1384, 11129, 558, 576, 504, 2]
+// Dependencies: [2021, 6116, 502, 2068, 2090, 4809, 5170, 5172, 1087, 11358, 1384, 11126, 558, 576, 504, 2]
 
-// Module 12430 (useCanFulfillStreamRequest)
+// Module 12436 (useCanFulfillStreamRequest)
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     const application = channel_id.application;
     id = undefined;
     const tmp16 = null != obj.getCurrentUserActiveStream();
-    const obj8 = flag(11361);
+    const obj8 = flag(11358);
     const videoPermission = obj8.getVideoPermission(channel);
     const tmp17 = flag;
     if (application != null) {
@@ -65,7 +65,7 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     dependencyMap = tmp17Result.isAndroid() ? tmp3.ANDROID : tmp3.IOS;
     let tmp4 = id;
     const obj5 = { guildId: channel.guild_id, location: "canFulfillStreamRequest" };
-    const obj6 = id(11129);
+    const obj6 = id(11126);
     const tmp5 = obj6.getConfig(obj5).enabled && null == id;
     if (null == id) {
       if (!tmp5) {

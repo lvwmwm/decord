@@ -1,21 +1,21 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7419
+// Function ID: 7420
 // Name: modules/Messages
-// Dependencies: [5, 32, 5975, 2068, 7418, 3, 5974, 2094, 7424, 7427, 2095, 11, 2]
+// Dependencies: [5, 32, 5976, 2068, 7420, 3, 5975, 2094, 7426, 7429, 2095, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7417 (modules/Messages)
+// Module 7419 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
 import _mod2095 from "module_2095" /* 2095 */;
-import requireSortedDescending from "requireSortedDescending" /* 5974 */;
-import isReadableChannel from "isReadableChannel" /* 7424 */;
-import KvMessage2 from "KvMessage" /* 7427 */;
+import requireSortedDescending from "requireSortedDescending" /* 5975 */;
+import isReadableChannel from "isReadableChannel" /* 7426 */;
+import KvMessage2 from "KvMessage" /* 7429 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7418 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7420 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;

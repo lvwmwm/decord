@@ -1,8 +1,8 @@
-// Module ID: 5709
-// Function ID: 5710
+// Module ID: 5710
+// Function ID: 5711
 // Dependencies: [2]
 
-// Module 5709
+// Module 5710
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/mech_sandstorm.png.js");

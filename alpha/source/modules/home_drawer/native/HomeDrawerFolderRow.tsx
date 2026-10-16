@@ -1,22 +1,22 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17389
+// Function ID: 17390
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6302, 2090, 6181, 6184, 5174, 1087, 21, 5153, 558, 576, 504, 10594, 1128, 5149, 17378, 5041, 5038, 2]
+// Dependencies: [19, 17, 6304, 2090, 6182, 6185, 5175, 1087, 21, 5154, 558, 576, 504, 10591, 1128, 5150, 17390, 5041, 5038, 2]
 
-// Module 17377 (HomeDrawerFolderRow)
+// Module 17389 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10594 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10591 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SortedGuildStore from "SortedGuildStore" /* 6181 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import SortedGuildStore from "SortedGuildStore" /* 6182 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

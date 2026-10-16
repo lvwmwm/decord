@@ -1,15 +1,15 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13462
+// Function ID: 13463
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 5153, 558, 576, 4877, 587, 683, 2]
+// Dependencies: [19, 5154, 558, 576, 4877, 587, 683, 2]
 
-// Module 13454 (useTruncatedGradientColors)
+// Module 13462 (useTruncatedGradientColors)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import useToken from "useToken" /* 4877 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

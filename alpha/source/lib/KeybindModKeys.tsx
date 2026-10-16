@@ -1,9 +1,9 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15076
+// Function ID: 15077
 // Name: KeybindModKeys
 // Dependencies: [1384, 2]
 
-// Module 15066 (KeybindModKeys)
+// Module 15076 (KeybindModKeys)
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

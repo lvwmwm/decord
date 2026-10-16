@@ -1,10 +1,10 @@
-// Module ID: 8522
-// Function ID: 8523
+// Module ID: 8523
+// Function ID: 8524
 // Name: useShopProductItems
 // Dependencies: [19, 1995, 558, 576, 1128, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 8522 (useShopProductItems)
+// Module 8523 (useShopProductItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import react from "react" /* 19 */;

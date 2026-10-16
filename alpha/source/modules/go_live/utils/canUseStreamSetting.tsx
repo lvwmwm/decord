@@ -1,13 +1,13 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11368
+// Function ID: 11369
 // Name: canUseStreamSetting
-// Dependencies: [1394, 4828, 8247, 2]
+// Dependencies: [1394, 4828, 8248, 2]
 // Exports: default
 
-// Module 11371 (canUseStreamSetting)
+// Module 11368 (canUseStreamSetting)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8247 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8248 */;
 import size from "module_2" /* 2 */;
 
 const StreamQualities = PremiumConstants.StreamQualities;

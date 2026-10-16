@@ -1,9 +1,9 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7040
+// Function ID: 7041
 // Name: usePromptHelpText
-// Dependencies: [2068, 2122, 4809, 4819, 1392, 1087, 1128, 558, 576, 504, 5483, 2]
+// Dependencies: [2068, 2122, 4809, 4819, 1392, 1087, 1128, 558, 576, 504, 5484, 2]
 
-// Module 7038 (usePromptHelpText)
+// Module 7040 (usePromptHelpText)
 import Constants from "Constants" /* 1087 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;

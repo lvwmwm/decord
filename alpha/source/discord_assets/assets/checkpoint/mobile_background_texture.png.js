@@ -1,8 +1,8 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12678
+// Function ID: 12679
 // Dependencies: [2]
 
-// Module 12672
+// Module 12678
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/mobile_background_texture.png.js");

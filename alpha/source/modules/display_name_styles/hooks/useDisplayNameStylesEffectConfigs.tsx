@@ -1,15 +1,15 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10505
+// Function ID: 10506
 // Name: useDisplayNameStylesEffectConfigs
-// Dependencies: [19, 1411, 2963, 558, 576, 10505, 1128, 1412, 2]
+// Dependencies: [19, 1411, 2963, 558, 576, 10506, 1128, 1412, 2]
 
-// Module 10504 (useDisplayNameStylesEffectConfigs)
+// Module 10505 (useDisplayNameStylesEffectConfigs)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import DisplayNameFont from "DisplayNameFont" /* 1412 */;
 import _modDef2963 from "module_2963" /* 2963 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10505 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10506 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

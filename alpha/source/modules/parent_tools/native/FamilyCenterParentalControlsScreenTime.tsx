@@ -1,15 +1,15 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15910
+// Function ID: 15911
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1087, 21, 5153, 587, 558, 576, 13435, 1128, 2571, 5149, 6402, 15859, 1505, 6487, 2]
+// Dependencies: [17, 1087, 21, 5154, 587, 558, 576, 13443, 1128, 2571, 5150, 6404, 15869, 1505, 6489, 2]
 
-// Module 15900 (FamilyCenterParentalControlsScreenTime)
+// Module 15910 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef2571 from "module_2571" /* 2571 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,12 +146,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedul
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(13435);
+  let obj = rule(13443);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(13435);
+  let obj2 = rule(13443);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6402).TableRow;
-  Text = rule(5149).Text;
+  const TableRow = rule(6404).TableRow;
+  Text = rule(5150).Text;
   const enabled = rule.enabled;
   const intl = rule(1128).intl;
   const string = intl.string;

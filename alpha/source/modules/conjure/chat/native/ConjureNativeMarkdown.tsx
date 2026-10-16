@@ -1,33 +1,33 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12123
+// Function ID: 12124
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 587, 5153, 558, 576, 12120, 5149, 5141, 12121, 2]
+// Dependencies: [19, 17, 21, 587, 5154, 558, 576, 12124, 5150, 12125, 12126, 2]
 
-// Module 12119 (ConjureNativeMarkdown)
+// Module 12123 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5141 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12120 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12124 */;
+import conjureMarkup from "conjureMarkup" /* 12125 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, flag, obj1, tmp2, tmp3, tmp7, tmp9;
+let _require;
 
+let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj4;
 let obj5;
 let obj6;
 let tmp;
-const useConjureRevealedText = tmp(12121);
+const useConjureRevealedText = tmp(12126);
 const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const CONJURE_MARKUP_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true };
 let obj2 = { allowList: false };
 const merged = Object.assign(CONJURE_MARKUP_OPTIONS);
@@ -38,19 +38,20 @@ obj4 = { gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj5 = { gap: nativeDefault.space.PX_4 };
 obj6 = { minWidth: nativeDefault.space.PX_20, marginRight: nativeDefault.space.PX_4 };
-let closure_10 = createStyles(obj3);
+let closure_9 = createStyles(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeMarkdown(source) {
   let arr;
   let list;
+  let tmp7;
   let obj = require("react");
   const cResult = obj.c(16);
   source = source.source;
-  let tmp4 = closure_10();
+  let tmp4 = closure_9();
   const tmp = _require;
   _require = tmp4;
   if (cResult[0] !== source) {
-    const tmpResult = tmp(12120);
+    const tmpResult = tmp(12124);
     const splitMarkdownBlocksResult = tmpResult.splitMarkdownBlocks(source);
     cResult[0] = source;
     cResult[1] = splitMarkdownBlocksResult;
@@ -62,6 +63,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     if (cResult[3] === tmp4.item) {
       if (cResult[4] === tmp4.itemText) {
         if (cResult[5] === tmp4.list) {
+          if (cResult[6] === tmp4.marker) {
+            tmp7 = cResult[7];
+          }
           if (cResult[13] === tmp4.blocks) {
             let tmp10;
             if (cResult[14] === tmp7) {
@@ -70,37 +74,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             return tmp10;
           }
           obj2 = { style: tmp6, children: tmp7 };
+          const tmp13 = closure_4(View, obj2);
           cResult[13] = tmp4.blocks;
           cResult[14] = tmp7;
-          cResult[15] = closure_5(View, obj2);
-          closure_5(View, obj2);
-          class T {
-            constructor(arg0, arg1) {
-              if ("text" === source.kind) {
-                tmp5 = jsx;
-                tmp6 = closure_0;
-                tmp7 = closure_2;
-                obj1 = { variant: "text-md/normal", color: "text-default", children: null };
-                tmp8 = closure_1;
-                Text = closure_0(closure_2[8]).Text;
-                obj3 = closure_1(closure_2[9]);
-                tmp9 = closure_7;
-                flag = true;
-                obj1.children = obj3.parse(source.text, true, closure_7);
-                tmp4 = jsx(Text, obj1, arg1);
-              } else {
-                tmp = jsx;
-                tmp2 = View;
-                obj = { style: null, accessibilityRole: "list", children: null };
-                tmp3 = closure_0;
-                obj.style = closure_0.list;
-                items = source.items;
-                obj.children = items.map(() => { /* body not rendered: F145786 */ });
-                tmp4 = jsx(View, obj, arg1);
-              }
-              return tmp4;
-            }
-          }
+          cResult[15] = tmp13;
+          tmp10 = tmp13;
         }
       }
     }
@@ -119,72 +97,60 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         cResult[5] = tmp4.list;
         cResult[6] = tmp4.marker;
         cResult[7] = mapped;
-        class T {
-          constructor(arg0, arg1) {
-            if ("text" === source.kind) {
-              tmp5 = jsx;
-              tmp6 = closure_0;
-              tmp7 = closure_2;
-              obj1 = { variant: "text-md/normal", color: "text-default", children: null };
-              tmp8 = closure_1;
-              Text = closure_0(closure_2[8]).Text;
-              obj3 = closure_1(closure_2[9]);
-              tmp9 = closure_7;
-              flag = true;
-              obj1.children = obj3.parse(source.text, true, closure_7);
-              tmp4 = jsx(Text, obj1, arg1);
-            } else {
-              tmp = jsx;
-              tmp2 = View;
-              obj = { style: null, accessibilityRole: "list", children: null };
-              tmp3 = closure_0;
-              obj.style = closure_0.list;
-              items = source.items;
-              obj.children = items.map(() => { /* body not rendered: F145786 */ });
-              tmp4 = jsx(View, obj, arg1);
-            }
-            return tmp4;
-          }
-        }
+        tmp7 = mapped;
       }
     }
   }
-  class T {
-    constructor(arg0, arg1) {
-      if ("text" === source.kind) {
-        tmp5 = jsx;
-        tmp6 = closure_0;
-        tmp7 = closure_2;
-        obj1 = { variant: "text-md/normal", color: "text-default", children: null };
-        tmp8 = closure_1;
-        Text = closure_0(closure_2[8]).Text;
-        obj3 = closure_1(closure_2[9]);
-        tmp9 = closure_7;
-        flag = true;
-        obj1.children = obj3.parse(source.text, true, closure_7);
-        tmp4 = jsx(Text, obj1, arg1);
-      } else {
-        tmp = jsx;
-        tmp2 = View;
-        obj = { style: null, accessibilityRole: "list", children: null };
-        tmp3 = closure_0;
-        obj.style = closure_0.list;
-        items = source.items;
-        obj.children = items.map(() => { /* body not rendered: F145786 */ });
-        tmp4 = jsx(View, obj, arg1);
-      }
-      return tmp4;
+  const fn = function j(kind, arg1) {
+    let items;
+    let obj;
+    let obj3;
+    let tmp4;
+    if ("text" === kind.kind) {
+      obj2 = { variant: "text-md/normal", color: "text-default", children: obj3.parseConjureMarkup(kind.text, true, obj) };
+      let Text = Text_Text.Text;
+      obj3 = conjureMarkup;
+      tmp4 = React3(Text, obj2, arg1);
+    } else {
+      obj = {
+        style: list.list,
+        accessibilityRole: "list",
+        children: items.map((children, index) => {
+            let Text;
+            let items;
+            let items1;
+            let obj4;
+            let obj6;
+            let obj7;
+            const obj = { style: items, children: items1 };
+            items = [closure_1_0.item, ];
+            obj2 = { paddingLeft: children.depth * PX_16 };
+            items[1] = obj2;
+            const obj3 = { style: closure_1_0.marker, children: closure_2_4(closure_0(dependencyMap[8]).Text, obj4) };
+            obj4 = { variant: "text-md/normal", color: "text-default", children: children.marker };
+            items1 = [closure_2_4(View, obj3), ];
+            const obj5 = { style: closure_1_0.itemText, children: closure_2_4(Text, obj6) };
+            obj6 = { variant: "text-md/normal", color: "text-default", children: obj7.parseConjureMarkup(children.text, true, closure_2_7) };
+            Text = closure_0(dependencyMap[8]).Text;
+            obj7 = closure_0(dependencyMap[9]);
+            items1[1] = closure_2_4(View, obj5);
+            return closure_2_5(View, obj, index);
+          })
+      };
+      items = kind.items;
+      tmp4 = React3(View, obj, arg1);
     }
-  }
+    return tmp4;
+  };
   cResult[8] = tmp4.item;
   cResult[9] = tmp4.itemText;
   cResult[10] = tmp4.list;
   cResult[11] = tmp4.marker;
-  cResult[12] = T;
-  tmp8 = T;
+  cResult[12] = fn;
+  tmp8 = fn;
 }) : (function ConjureNativeMarkdown(source) {
   source = source.source;
-  const tmp = closure_10();
+  const tmp = closure_9();
   const list = tmp;
   let items = [source];
   const memo = react.useMemo(() => {
@@ -199,10 +165,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       let obj3;
       let tmp4;
       if ("text" === kind.kind) {
-        obj2 = { variant: "text-md/normal", color: "text-default", children: obj3.parse(kind.text, true, obj) };
+        obj2 = { variant: "text-md/normal", color: "text-default", children: obj3.parseConjureMarkup(kind.text, true, obj) };
         let Text = Text_Text.Text;
-        obj3 = MarkupUtilsDefault;
-        tmp4 = hasOwnProperty(Text, obj2, index);
+        obj3 = conjureMarkup;
+        tmp4 = React3(Text, obj2, index);
       } else {
         obj = {
           style: list.list,
@@ -218,26 +184,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               items = [closure_1_1.item, ];
               obj2 = { paddingLeft: children.depth * PX_16 };
               items[1] = obj2;
-              const obj3 = { style: closure_1_1.marker, children: closure_2_5(source(dependencyMap[8]).Text, obj4) };
+              const obj3 = { style: closure_1_1.marker, children: closure_2_4(source(closure_1[8]).Text, obj4) };
               obj4 = { variant: "text-md/normal", color: "text-default", children: children.marker };
-              items1 = [closure_2_5(View, obj3), ];
-              const obj5 = { style: closure_1_1.itemText, children: closure_2_5(Text, obj6) };
-              obj6 = { variant: "text-md/normal", color: "text-default", children: obj7.parse(children.text, true, closure_2_8) };
-              Text = source(dependencyMap[8]).Text;
-              obj7 = closure_1(dependencyMap[9]);
-              items1[1] = closure_2_5(View, obj5);
-              return closure_2_6(View, obj, index);
+              items1 = [closure_2_4(View, obj3), ];
+              const obj5 = { style: closure_1_1.itemText, children: closure_2_4(Text, obj6) };
+              obj6 = { variant: "text-md/normal", color: "text-default", children: obj7.parseConjureMarkup(children.text, true, closure_2_7) };
+              Text = source(closure_1[8]).Text;
+              obj7 = source(closure_1[9]);
+              items1[1] = closure_2_4(View, obj5);
+              return closure_2_5(View, obj, index);
             })
         };
         items = kind.items;
-        tmp4 = hasOwnProperty(View, obj, index);
+        tmp4 = React3(View, obj, index);
       }
       return tmp4;
     })
   };
-  return closure_5(View, obj);
+  return closure_4(View, obj);
 });
-let closure_11 = tmp5;
+let closure_10 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRevealedMarkdown(arg0) {
   let source;
@@ -259,7 +225,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRev
   const text = tmpResult.useConjureRevealedText(source, tmp4).text;
   if (cResult[2] !== text) {
     const obj3 = { source: text };
-    const tmp8 = hasOwnProperty(closure_11, obj3);
+    const tmp8 = React3(closure_10, obj3);
     cResult[2] = text;
     cResult[3] = tmp8;
     tmp5 = tmp8;
@@ -273,7 +239,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRev
   ({ source, streaming } = arg0);
   const obj = useConjureRevealedText;
   obj2 = { source: obj.useConjureRevealedText(source, { streaming }).text };
-  return hasOwnProperty(closure_11, obj2);
+  return React3(closure_10, obj2);
 });
 const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureNativeMarkdown.tsx");
 

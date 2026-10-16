@@ -1,10 +1,10 @@
-// Module ID: 9748
-// Function ID: 9749
+// Module ID: 9747
+// Function ID: 9748
 // Name: getEmojiPickerDataRowItemSlimEmoji
-// Dependencies: [9743, 4826, 2]
+// Dependencies: [9742, 4826, 2]
 // Exports: default
 
-// Module 9748 (getEmojiPickerDataRowItemSlimEmoji)
+// Module 9747 (getEmojiPickerDataRowItemSlimEmoji)
 import EmojiTypes from "EmojiTypes" /* 4826 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14115
+// Function ID: 14116
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7482, 13598, 9211, 9214, 9212, 1392, 6312, 7539, 8534, 1087, 1089, 1394, 21, 3, 5153, 587, 558, 576, 4886, 5028, 1128, 5149, 13953, 8541, 7075, 10338, 9635, 504, 14106, 8525, 14091, 14107, 5036, 4868, 5118, 11093, 4828, 7350, 5362, 10285, 7100, 1385, 10396, 7157, 10395, 8530, 4841, 7481, 13571, 7255, 4843, 8527, 14108, 2002, 5108, 5441, 10853, 7793, 9958, 13596, 2]
+// Dependencies: [5, 19, 17, 7484, 13606, 9212, 9215, 9213, 1392, 6314, 7540, 8535, 1087, 1089, 1394, 21, 3, 5154, 587, 558, 576, 4886, 5028, 1128, 5150, 13963, 8542, 7077, 10339, 9634, 504, 14116, 8526, 14101, 14117, 5036, 4868, 5118, 11090, 4828, 7352, 5363, 10286, 7102, 1385, 10397, 7159, 10396, 8531, 4841, 7483, 13579, 7257, 4843, 8528, 14118, 2002, 5108, 5442, 10850, 7794, 9959, 13604, 2]
 // Exports: default
 
-// Module 14105 (UserProfileWishlistGrid)
+// Module 14115 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -15,24 +15,24 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import native from "native" /* 4886 */;
 import shared from "shared" /* 5028 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7481 */;
-import WishlistRecord from "WishlistRecord" /* 9212 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9214 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7483 */;
+import WishlistRecord from "WishlistRecord" /* 9213 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9215 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
-import SentGiftsStore from "SentGiftsStore" /* 13598 */;
-import WishlistStore from "WishlistStore" /* 9211 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7484 */;
+import SentGiftsStore from "SentGiftsStore" /* 13606 */;
+import WishlistStore from "WishlistStore" /* 9212 */;
 import UserStore from "UserStore" /* 1392 */;
-import SKUStore from "SKUStore" /* 6312 */;
-import UserProfileStore from "UserProfileStore" /* 7539 */;
-import Constants_mod from "Constants" /* 8534 */;
+import SKUStore from "SKUStore" /* 6314 */;
+import UserProfileStore from "UserProfileStore" /* 7540 */;
+import Constants_mod from "Constants" /* 8535 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,7 +140,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEm
   }
   const obj6 = { style: emptyState, children: items };
   items = [tmp7, tmp12];
-  const tmp16 = isAppBarToggleOpen(View, obj6);
+  const tmp16 = closure_23(View, obj6);
   cResult[6] = tmp4.emptyState;
   cResult[7] = tmp7;
   cResult[8] = tmp12;
@@ -160,14 +160,14 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEm
   }
   const obj3 = { style: tmp.emptyState, children: items };
   const obj4 = { variant: "text-md/medium", color: str, accessibilityRole: "header", children: intl.string(intl5.t.HGnLLT) };
-  const Text = tmp2(5149).Text;
+  const Text = tmp2(5150).Text;
   intl = tmp2(1128).intl;
   items = [authStore6(Text, obj4), ];
   const obj5 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", style: tmp.emptyStateText, children: intl2.string(intl5.t["/X1ny6"]) };
-  const Text2 = tmp2(5149).Text;
+  const Text2 = tmp2(5150).Text;
   intl2 = tmp2(1128).intl;
   items[1] = authStore6(Text2, obj5);
-  return isAppBarToggleOpen(View, obj3);
+  return closure_23(View, obj3);
 });
 let closure_27 = tmp8;
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWishlistGrid.tsx");
@@ -687,7 +687,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(14108, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(14118, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

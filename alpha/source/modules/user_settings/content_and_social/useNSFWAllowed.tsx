@@ -1,9 +1,9 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 7141
+// Function ID: 7142
 // Name: useNSFWAllowed
 // Dependencies: [1392, 558, 576, 504, 2]
 
-// Module 7139 (useNSFWAllowed)
+// Module 7141 (useNSFWAllowed)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

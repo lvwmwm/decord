@@ -1,9 +1,9 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16345
+// Function ID: 16346
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5143, 8511, 21, 5153, 587, 558, 576, 8517, 1992, 8520, 504, 1128, 2963, 10760, 10876, 6271, 8510, 4852, 1202, 8600, 10501, 10502, 5149, 2]
+// Dependencies: [19, 17, 5144, 8512, 21, 5154, 587, 558, 576, 8518, 1992, 8521, 504, 1128, 2963, 10757, 10873, 6272, 8511, 4852, 1202, 8601, 10502, 10503, 5150, 2]
 
-// Module 16331 (DisplayNameStylesEditPreview)
+// Module 16345 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,18 +11,18 @@ import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import _modDef2963 from "module_2963" /* 2963 */;
 import DateUtils from "DateUtils" /* 4852 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6271 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8510 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8520 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8600 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10501 */;
-import types from "types" /* 10502 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6272 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8511 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8521 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8601 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10502 */;
+import types from "types" /* 10503 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8511 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8512 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut } = user);
   dependencyMap = tmp4;
   const tmp5 = closure_9();
-  const tmpResult = user(8517);
+  const tmpResult = user(8518);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ guildNameplate, pendingNameplate, userNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 }
                               }
                               const obj4 = { user, nameplate: pendingNameplate, nameplateData: tmp30, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp13, pendingGlobalName: displayName };
-                              const tmp33 = closure_7(user(10876).NameplatePreview, obj4);
+                              const tmp33 = closure_7(user(10873).NameplatePreview, obj4);
                               cResult[28] = stateFromStores;
                               cResult[29] = displayName;
                               cResult[30] = tmp13;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const obj7 = { user, displayName, guildId, displayNameStylesOverride: tmp13, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: tmp14 };
-          const tmp20 = closure_7(guildId(10760), obj7);
+          const tmp20 = closure_7(guildId(10757), obj7);
           cResult[12] = displayName;
           cResult[13] = tmp13;
           cResult[14] = guildId;
@@ -621,7 +621,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
   const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2963.h5Cuej) };
-  const Text = tmp2(5149).Text;
+  const Text = tmp2(5150).Text;
   intl = tmp2(1128).intl;
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);

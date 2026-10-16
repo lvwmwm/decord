@@ -1,22 +1,22 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15807
+// Function ID: 15808
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8213, 558, 576, 15791, 8468, 7222, 15792, 1128, 11006, 15794, 2]
+// Dependencies: [8214, 558, 576, 15801, 8469, 7224, 15802, 1128, 11003, 15804, 2]
 
-// Module 15797 (GoreMediaFiltersFriendsDMsSetting)
+// Module 15807 (GoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7222 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15791 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15792 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15794 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7224 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15801 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15802 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15804 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8468);
+const ExplicitMediaRedactionUtils = tmp(8469);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl4.intl;

@@ -1,12 +1,12 @@
-// Module ID: 15769
-// Function ID: 15770
+// Module ID: 15779
+// Function ID: 15780
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1392, 21, 7239, 558, 576, 7075, 1128, 8530, 1202, 15770, 5441, 6402, 504, 2]
+// Dependencies: [19, 1392, 21, 7241, 558, 576, 7077, 1128, 8531, 1202, 15780, 5442, 6404, 504, 2]
 
-// Module 15769 (BlockedUserRowV2)
+// Module 15779 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7239 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7241 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
   let obj = userRecord(576);
   const cResult = obj.c(29);
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7075)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7077)().analyticsLocations;
   if (cResult[0] === userRecord.globalName) {
     let tmp4;
     if (cResult[1] === userRecord.username) {
@@ -114,7 +114,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
                   }
                 }
               }
-              const tmp25 = jsx(userRecord(6402).TableRow, { accessible: false, icon: tmp8, label: tmp14, onPress: tmp6, trailing: tmp20 });
+              const tmp25 = jsx(userRecord(6404).TableRow, { accessible: false, icon: tmp8, label: tmp14, onPress: tmp6, trailing: tmp20 });
               cResult[24] = tmp6;
               cResult[25] = tmp20;
               cResult[26] = tmp8;
@@ -122,14 +122,14 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
               cResult[28] = tmp25;
               tmp23 = tmp25;
             }
-            const tmp22 = jsx(userRecord(5441).Button, { size: "sm", variant: "secondary", text: tmp17, accessibilityLabel: tmp4, onPress: tmp19 });
+            const tmp22 = jsx(userRecord(5442).Button, { size: "sm", variant: "secondary", text: tmp17, accessibilityLabel: tmp4, onPress: tmp19 });
             cResult[21] = tmp19;
             cResult[22] = tmp4;
             cResult[23] = tmp22;
             tmp20 = tmp22;
           }
         }
-        const tmp16 = jsx(userRecord(15770).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
+        const tmp16 = jsx(userRecord(15780).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp13, onAccessibilityAction: tmp7 });
         cResult[14] = tmp7;
         cResult[15] = tmp13;
         cResult[16] = userRecord;
@@ -176,7 +176,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7075)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7077)().analyticsLocations;
   const intl = userRecord(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -189,7 +189,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  const TableRow = tmp2(6402).TableRow;
+  const TableRow = tmp2(6404).TableRow;
   let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1202).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1202).Avatar;
   const items = [{ name: "activate" }, { name: "unblock", label: formatToPlainStringResult }];
@@ -204,7 +204,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked
       obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
     }
   });
-  const Button = tmp2(5441).Button;
+  const Button = tmp2(5442).Button;
   intl2 = tmp2(1128).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 });

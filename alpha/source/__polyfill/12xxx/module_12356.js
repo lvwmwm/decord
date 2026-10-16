@@ -1,30 +1,84 @@
 // Module ID: 12356
 // Function ID: 12357
-// Dependencies: [12312, 12342]
-// Exports: createClientReportEnvelope
+// Dependencies: [12305]
+// Exports: getDebugImagesForResources
 
 // Module 12356
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12312 */;
-import _mod12342 from "module_12342" /* 12342 */;
+const require = globalThis.__r;
+let _require, obj;
 
-
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod12342.createEnvelope;
-  _mod12342;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
+function getFilenameToDebugIdMap(arg0) {
+  let _sentryDebugIds;
+  let closure_0;
+  let length;
+  let reduced;
+  _require = arg0;
+  _sentryDebugIds = require("module_12305").GLOBAL_OBJ._sentryDebugIds;
+  if (_sentryDebugIds) {
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(_sentryDebugIds);
+    const tmp2 = reduced;
+    if (tmp2) {
+      return reduced;
+    }
+    reduced = keys.reduce((acc, item) => {
+      let tmp7;
+      let tmp9;
+      let tmp = obj;
+      if (!tmp) {
+        obj = {};
+        tmp = obj;
+      }
+      if (tmp[item]) {
+        acc[tmp[item][0]] = tmp[item][1];
+      } else {
+        const arr = closure_0(item);
+        let diff = arr.length - 1;
+        if (0 <= diff) {
+          while (true) {
+            let tmp5 = arr[diff];
+            tmp7 = tmp5 && tmp5.filename;
+            tmp9 = _sentryDebugIds[item];
+            if (tmp7) {
+              if (tmp9) {
+                break;
+              }
+            }
+            diff = diff - 1;
+          }
+          acc[tmp7] = tmp9;
+          const items = [tmp7, tmp9];
+          obj[item] = items;
+        }
+      }
+      return acc;
+    }, {});
   } else {
-    obj3 = {};
+    return {};
   }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
+}
+
+export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
+  const tmp = getFilenameToDebugIdMap(arg0);
+  const items = [];
+  if (tmp) {
+    const iter = arg1[Symbol.iterator]();
+    let nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (tmp7) {
+        nextResult = tmp[tmp7];
+      }
+      if (nextResult) {
+        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
+        let arr = items.push(obj);
+      }
+      continue;
+    }
+    return items;
+  } else {
+    return items;
+  }
 };
+export { getFilenameToDebugIdMap };

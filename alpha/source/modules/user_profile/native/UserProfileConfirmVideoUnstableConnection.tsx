@@ -1,12 +1,12 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13242
+// Function ID: 13243
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 558, 576, 1128, 5367, 5367, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5368, 5368, 2]
 
-// Module 13234 (UserProfileConfirmVideoUnstableConnection)
+// Module 13242 (UserProfileConfirmVideoUnstableConnection)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5367 */;
+import AlertModal2 from "AlertModal" /* 5368 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t.jEqEhy) };
-    const AlertActionButton = tmp(5367).AlertActionButton;
+    const AlertActionButton = tmp(5368).AlertActionButton;
     intl4 = tmp(1128).intl;
     const tmp15 = React2(AlertActionButton, obj3, "cancel");
     cResult[5] = tmp15;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5367).AlertModal;
+    const AlertModal = tmp(5368).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);

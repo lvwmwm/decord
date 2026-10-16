@@ -1,10 +1,10 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7277
+// Function ID: 7278
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4810, 5079, 2090, 1087, 1114, 7276, 7170, 6322, 1267, 1297, 1493, 2]
+// Dependencies: [5, 4810, 5079, 2090, 1087, 1114, 7278, 7172, 6324, 1267, 1297, 1493, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7275 (GuildDiscoveryUtils)
+// Module 7277 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef1493 from "module_1493" /* 1493 */;
@@ -212,35 +212,45 @@ obj = function _getDiscoverableGuild() {
   return obj(...arguments);
 };
 obj = function _fetchPublicDiscoveryGuild() {
-  obj = _asyncToGenerator(async (arg0) => {
+  obj = _asyncToGenerator(async function(arg0) {
     let c2;
-    let c3;
-    let c4;
-    let closure_1;
     let guild;
     let closure_0 = arg0;
+    let slug = tmp3;
     const HTTP = HTTPUtils.HTTP;
-    const obj4 = { url: React4.GUILD_DISCOVERY_SLUG(String(closure_0)), oldFormErrors: true, rejectWithError: true };
-    const _String = String;
+    const obj4 = { url: React4.GUILD_WEB_PAGE(closure_0), oldFormErrors: true, rejectWithError: true };
     const get = HTTP.get;
     await get(obj4);
     const body = arg1.body;
     if (body != null) {
-      guild = body.guild;
+      const data = body.data;
+      if (data != null) {
+        guild = data.guild;
+      }
     }
-    let tmp5 = null;
     if (null != guild) {
-      let slug;
+      let canonical_url;
       if (body != null) {
-        slug = body.slug;
+        const seo = body.seo;
+        if (seo != null) {
+          canonical_url = seo.canonical_url;
+        }
       }
-      tmp5 = null;
-      if (null != slug) {
-        obj = { guild: body.guild, slug: body.slug };
-        tmp5 = obj;
+      if (null != canonical_url) {
+        const _URL = URL;
+        const self = this;
+        const self2 = this;
+        const uRL = new URL(body.seo.canonical_url);
+        const pathname = uRL.pathname;
+        slug = pathname.slice(9);
+        const obj7 = { guild: body.data.guild, slug };
+        let c3 = 0;
+        let c4 = 3;
+        obj = { value: obj7, done: true };
+        return obj;
       }
     }
-    return tmp5;
+    return null;
   });
   return obj(...arguments);
 };

@@ -1,11 +1,11 @@
-// Module ID: 13113
-// Function ID: 13114
+// Module ID: 13121
+// Function ID: 13122
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2090, 4809, 5067, 1087, 558, 576, 5085, 504, 5072, 5071, 5070, 8866, 2]
+// Dependencies: [19, 2090, 4809, 5067, 1087, 558, 576, 5085, 504, 5072, 5071, 5070, 8867, 2]
 
-// Module 13113 (useGuildPowerupNewPerkMarketingVersion)
+// Module 13121 (useGuildPowerupNewPerkMarketingVersion)
 import Powerups from "Powerups" /* 5070 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8866 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8867 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;

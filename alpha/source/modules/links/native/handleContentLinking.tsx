@@ -1,159 +1,168 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 9908
+// Function ID: 9909
 // Name: handleContentLinking
-// Dependencies: [5, 6357, 1087, 6152, 7170, 1114, 9910, 2]
+// Dependencies: [5, 6359, 1087, 6153, 7172, 1114, 9909, 9910, 2]
 // Exports: default
 
-// Module 9909 (handleContentLinking)
+// Module 9908 (handleContentLinking)
 import Constants from "Constants" /* 1087 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6357 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6359 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
+let c2, channelId, conversationId, guildId, messageId, navigationReplace;
+
 let obj = function _handleContentLinking() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let c0;
-    let c1;
-    let c2;
-    let c3;
-    let c4;
-    let tmp44;
-    let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let safe;
-        let navigationReplace;
-        let waitForConnection;
-        let closure_9;
-        let skipMessageFetch;
-        let isAppStartupNavigation;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            c2 = undefined;
-            ({ guildId: c0, channelId: c1, navigationSettings: c2, messageId: c3, summaryId: c4 } = closure_0);
-            safe = undefined;
-            navigationReplace = undefined;
-            waitForConnection = undefined;
-            closure_9 = undefined;
-            skipMessageFetch = undefined;
-            isAppStartupNavigation = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "test", done: true };
-          }
+  obj = _asyncToGenerator(async (guildId) => {
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (async function(arg0, value) {
+      let c0;
+      let c1;
+      let c3;
+      let c5;
+      let tmp57;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
         } else {
-          if (1 === c3) {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let safe;
+          let waitForConnection;
+          let closure_10;
+          let skipMessageFetch;
+          let isAppStartupNavigation;
+          c4 = 2;
+          if (0 === messageId) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              return { value, done: true };
             } else {
-              const obj12 = closure_130_1(closure_130_2[3]);
-              obj12.popAll();
-              safe = c2.safe;
-              navigationReplace = c2.navigationReplace;
-              const tmp6 = undefined === navigationReplace || navigationReplace;
-              navigationReplace = tmp6;
-              waitForConnection = c2.waitForConnection;
-              const tmp10 = undefined === waitForConnection || waitForConnection;
-              closure_9 = tmp10;
-              skipMessageFetch = c2.skipMessageFetch;
-              isAppStartupNavigation = c2.isAppStartupNavigation;
-              const tmp15 = closure_9;
-              if (tmp15) {
-                if (closure_130_6 != null) {
-                  closure_130_6();
-                }
-                const self = this;
-                const self2 = this;
-                const promise = new Promise((arg0, arg1) => {
-                  closure_0 = arg0;
-                  closure_1 = arg1;
-                  function l() {
-                    const error = new Error("superseded");
-                    return closure_1(error);
-                  }
-                  closure_4(() => {
-                    c6 = null;
-                    closure_0();
-                  });
-                });
-                c3 = 2;
-                c4 = 1;
-                const obj7 = { value: promise, done: false };
-                return obj7;
-              }
+              let closure_1 = tmp;
+              guildId = undefined;
+              channelId = undefined;
+              c2 = undefined;
+              conversationId = undefined;
+              ({ guildId: c0, channelId: c1, navigationSettings: c2, messageId: c3, summaryId: c4, conversationId: c5 } = closure_0);
+              safe = undefined;
+              navigationReplace = undefined;
+              waitForConnection = undefined;
+              closure_10 = undefined;
+              skipMessageFetch = undefined;
+              isAppStartupNavigation = undefined;
+              messageId = 1;
+              c4 = 1;
+              return { value: "test", done: true };
             }
           } else {
-            if (2 === c3) {
+            if (1 === messageId) {
               if (arg0 === 1) {
                 c4 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c4 = 3;
-                const obj8 = { value, done: true };
-                return obj8;
+                return { value, done: true };
+              } else {
+                const obj13 = closure_130_1(closure_130_2[3]);
+                obj13.popAll();
+                safe = c2.safe;
+                navigationReplace = c2.navigationReplace;
+                const tmp6 = undefined === navigationReplace || navigationReplace;
+                navigationReplace = tmp6;
+                waitForConnection = c2.waitForConnection;
+                closure_10 = undefined === waitForConnection || waitForConnection;
+                skipMessageFetch = c2.skipMessageFetch;
+                isAppStartupNavigation = c2.isAppStartupNavigation;
+                const tmp10 = undefined === waitForConnection || waitForConnection;
+                const tmp15 = closure_10;
+                if (tmp15) {
+                  if (closure_130_6 != null) {
+                    closure_130_6();
+                  }
+                  const self = this;
+                  const self2 = this;
+                  messageId = 2;
+                  c4 = 1;
+                  const obj7 = {
+                    value: new Promise((arg0, arg1) => {
+                                  let closure_0 = arg0;
+                                  let closure_1 = arg1;
+                                  function o() {
+                                    const error = new Error("superseded");
+                                    return closure_1(error);
+                                  }
+                                  closure_4(() => {
+                                    c6 = null;
+                                    closure_0();
+                                  });
+                                }),
+                    done: false
+                  };
+                  return obj7;
+                }
               }
-            } else if (arg0 === 1) {
+            } else {
+              if (2 === messageId) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              }
+              if (null != channelId) {
+                if (null != c4) {
+                  const obj5 = closure_130_1(closure_130_2[6]);
+                  obj5.setSelectedSummary(channelId, c4);
+                }
+                const tmp41 = null != conversationId && null != guildId && null != messageId;
+                if (tmp41) {
+                  const obj9 = { guildId, channelId, conversationId, messageId };
+                  closure_130_1(closure_130_2[7])(obj9);
+                }
+              }
               c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
+              return { value: "IconComponent", done: null };
             }
-            const tmp32 = null != c1 && null != c4;
-            if (tmp32) {
-              const obj5 = closure_130_1(closure_130_2[6]);
-              obj5.setSelectedSummary(c1, c4);
+            if (safe) {
+              messageId = 3;
+              c4 = 1;
+              const obj10 = { navigationReplace, openChannel: true, skipMessageFetch, isAppStartupNavigation };
+              const obj11 = { value: tmp57(closure_130_5.CHANNEL(guildId, channelId, messageId), obj10), done: false };
+              tmp57 = closure_130_1(closure_130_2[4]);
+              return obj11;
+            } else {
+              const obj12 = { navigationReplace, openChannel: true, skipMessageFetch, isAppStartupNavigation };
+              const obj3 = closure_130_0(closure_130_2[5]);
+              obj3.transitionTo(closure_130_5.CHANNEL(guildId, channelId, messageId), obj12);
             }
-            c4 = 3;
-            return { value: "IconComponent", done: null };
           }
-          if (safe) {
-            const obj9 = { navigationReplace, openChannel: true, skipMessageFetch, isAppStartupNavigation };
-            c3 = 3;
-            c4 = 1;
-            const obj10 = { value: tmp44(closure_130_5.CHANNEL(c0, c1, c3), obj9), done: false };
-            tmp44 = closure_130_1(closure_130_2[4]);
-            return obj10;
-          } else {
-            const obj11 = { navigationReplace, openChannel: true, skipMessageFetch, isAppStartupNavigation };
-            const obj3 = closure_130_0(closure_130_2[5]);
-            obj3.transitionTo(closure_130_5.CHANNEL(c0, c1, c3), obj11);
-          }
+        } catch (tmp72) {
+          c4 = 3;
+          throw tmp72;
         }
-      } catch (tmp59) {
-        c4 = 3;
-        throw tmp59;
       }
-    }
+    })();
+    iter.next();
+    return iter;
   });
   return obj(...arguments);
 };

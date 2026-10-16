@@ -1,17 +1,17 @@
-// Module ID: 13476
-// Function ID: 13477
+// Module ID: 13484
+// Function ID: 13485
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 6185, 21, 5153, 587, 558, 576, 1128, 12959, 8433, 5149, 1202, 2]
+// Dependencies: [19, 17, 6186, 21, 5154, 587, 558, 576, 1128, 12967, 8434, 5150, 1202, 2]
 
-// Module 13476 (NotificationSettingsMockChannels)
+// Module 13484 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReadStateConstants from "ReadStateConstants" /* 6185 */;
-import TextIcon2 from "TextIcon" /* 8433 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12959 */;
+import ReadStateConstants from "ReadStateConstants" /* 6186 */;
+import TextIcon2 from "TextIcon" /* 8434 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12967 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     items[1] = hasOwnProperty(TextIcon, obj4);
     const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
     str2 = undefined;
-    const Text = tmp5(5149).Text;
+    const Text = tmp5(5150).Text;
     if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
       str2 = "text-muted";
     }
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       items[1] = hasOwnProperty(TextIcon, obj4);
       const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
       str2 = undefined;
-      const Text = tmp5(5149).Text;
+      const Text = tmp5(5150).Text;
       if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
         str2 = "text-muted";
       }

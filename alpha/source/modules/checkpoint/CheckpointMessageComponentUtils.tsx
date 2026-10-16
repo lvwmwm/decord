@@ -1,21 +1,22 @@
-// Module ID: 5521
-// Function ID: 5522
+// Module ID: 5522
+// Function ID: 5523
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5499, 11, 5522, 5523, 5524, 5844, 1128, 3123, 5509, 4823, 3091, 1900, 2000, 2]
-// Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
+// Dependencies: [5500, 11, 5523, 5524, 5525, 5845, 1128, 3123, 5510, 4823, 3091, 1900, 2000, 2]
+// Exports: getCharacterLayerUrls, getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5521 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5522 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl9 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import _modDef3091 from "module_3091" /* 3091 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 5522 */;
-import CheckpointTrait from "CheckpointTrait" /* 5523 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5524 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 5523 */;
+import CheckpointTrait from "CheckpointTrait" /* 5524 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5525 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _require, importDefault;
 
 let c3;
 let closure_4;
@@ -86,6 +87,28 @@ export const transformCheckpoint2026CardComponent = function transformCheckpoint
     tmp2 = tmp4;
   }
   return tmp2;
+};
+export const getCharacterLayerUrls = function getCharacterLayerUrls(wearable, arg1) {
+  let items;
+  _require = wearable;
+  let closure_1 = arg1;
+  const CHECKPOINT_WEARABLE_LAYER_BACKGROUND = require("CheckpointTraitConfig").CHECKPOINT_WEARABLE_LAYER_BACKGROUND;
+  const hasItem = CHECKPOINT_WEARABLE_LAYER_BACKGROUND.has(wearable.wearable);
+  const tmp2 = require("CheckpointTraitConfig");
+  items = [];
+  const arr = hasItem ? tmp2.CHECKPOINT_LAYER_BACKGROUND_WEARABLE_ORDERING : tmp2.CHECKPOINT_LAYER_DEFAULT_ORDERING;
+  const item = arr.forEach((item) => {
+    let layer;
+    if (obj[item][character[item]] != null) {
+      layer = tmp.layer;
+    }
+    const tmp3 = null != layer && "" !== layer;
+    if (tmp3) {
+      const _HermesInternal = HermesInternal;
+      items.push("" + layer + "?height=" + importDefault + "&width=" + importDefault);
+    }
+  });
+  return items;
 };
 export const transformCheckpoint2026CardToRowGeneratedComponent = function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData) {
   let character;

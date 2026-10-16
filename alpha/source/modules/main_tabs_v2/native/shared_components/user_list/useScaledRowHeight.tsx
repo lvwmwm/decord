@@ -1,14 +1,14 @@
-// Module ID: 6960
-// Function ID: 6961
+// Module ID: 6962
+// Function ID: 6963
 // Name: useScaledRowHeight
-// Dependencies: [558, 576, 5448, 4877, 587, 2]
+// Dependencies: [558, 576, 5449, 4877, 587, 2]
 // Exports: default
 
-// Module 6960 (useScaledRowHeight)
+// Module 6962 (useScaledRowHeight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4877 */;
-import useFontScale from "useFontScale" /* 5448 */;
+import useFontScale from "useFontScale" /* 5449 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,97 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11537
+// Function ID: 11538
 // Name: conjureAttachmentRequests
-// Dependencies: [5, 10987, 10984, 2]
-// Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, uploadAttachment
+// Dependencies: [5, 10984, 10981, 2]
+// Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 11540 (conjureAttachmentRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10987 */;
+// Module 11537 (conjureAttachmentRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
 
-let obj = function _importAttachmentFromUrl() {
+let obj = function _listStoredAttachments() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let obj5;
+    let closure_0 = arg0;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            closure_0 = undefined;
+            c2 = 1;
+            c3 = 1;
+            const obj4 = { value: obj5.fetchConjureWorker(closure_0, attachmentPath()), done: false };
+            obj5 = conjureWorkerFetch;
+            return obj4;
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_0 = value;
+            if (closure_0.ok) {
+              c2 = 2;
+              c3 = 1;
+              const obj7 = { value: closure_0.json(), done: false };
+              return obj7;
+            } else {
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const self = this;
+              const self2 = this;
+              const error = new Error("attachment list failed (" + closure_0.status + ")");
+              throw error;
+            }
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          c3 = 3;
+          obj = { value: value.attachments, done: true };
+          return obj;
+        }
+      } catch (tmp14) {
+        c3 = 3;
+        throw tmp14;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+obj = function _importAttachmentFromUrl() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_1;
     let obj5;
@@ -309,7 +389,7 @@ obj = function _getAttachmentUrl() {
           }
           const _HermesInternal = HermesInternal;
           c6 = 3;
-          obj = { value: "" + baseUrl + closure_132_10(closure_1) + "?" + uRLSearchParams, done: true };
+          obj = { value: "" + baseUrl + closure_132_11(closure_1) + "?" + uRLSearchParams, done: true };
           return obj;
         }
       } catch (tmp22) {
@@ -362,7 +442,7 @@ obj = function _isAttachmentAvailable() {
                 let c1;
                 let c2;
                 const _fetch = fetch;
-                yield closure_1_7(closure_2_0, closure_2_1);
+                yield closure_1_8(closure_2_0, closure_2_1);
                 return fetch(arg1, { method: "HEAD" });
               });
               return obj(...arguments);
@@ -440,6 +520,9 @@ let result = size.fileFinishedImporting("modules/conjure/chat/conjureAttachmentR
 
 export const uploadAttachment = function uploadAttachment(arg0, name) {
   return uploadAttachmentBytes(arg0, name, name.name, name.type);
+};
+export const listStoredAttachments = function listStoredAttachments() {
+  return obj(...arguments);
 };
 export const importAttachmentFromUrl = function importAttachmentFromUrl() {
   return obj(...arguments);

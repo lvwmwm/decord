@@ -1,13 +1,13 @@
-// Module ID: 8366
-// Function ID: 8367
+// Module ID: 8367
+// Function ID: 8368
 // Name: ExperimentEmbedUtils
-// Dependencies: [5080, 8367, 8368, 2]
+// Dependencies: [5080, 8368, 8369, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 8366 (ExperimentEmbedUtils)
+// Module 8367 (ExperimentEmbedUtils)
 import ExperimentManager from "ExperimentManager" /* 5080 */;
-import ExperimentUtilsDefault from "ExperimentUtils" /* 8367 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8368 */;
+import ExperimentUtilsDefault from "ExperimentUtils" /* 8368 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8369 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");

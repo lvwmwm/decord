@@ -1,14 +1,14 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8452
+// Function ID: 8453
 // Name: VoiceLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8396, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8397, 4876, 2]
 
-// Module 8451 (VoiceLockIcon)
+// Module 8452 (VoiceLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8396 */;
+import AssetRegistry from "AssetRegistry" /* 8397 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

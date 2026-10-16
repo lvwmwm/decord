@@ -1,18 +1,18 @@
-// Module ID: 7545
-// Function ID: 7546
+// Module ID: 7546
+// Function ID: 7547
 // Name: UserProfilePersonalWidget
-// Dependencies: [1392, 1394, 7546, 4997, 2052, 1388, 1357, 7540, 1991, 2]
+// Dependencies: [1392, 1394, 7547, 4997, 2052, 1388, 1357, 7541, 1991, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7545 (UserProfilePersonalWidget)
+// Module 7546 (UserProfilePersonalWidget)
 import _modDef1357 from "module_1357" /* 1357 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import WidgetType from "WidgetType" /* 7540 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7546 */;
+import WidgetType from "WidgetType" /* 7541 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7547 */;
 import UserStore from "UserStore" /* 1392 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ class UserProfilePersonalWidget {
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7546).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7547).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;

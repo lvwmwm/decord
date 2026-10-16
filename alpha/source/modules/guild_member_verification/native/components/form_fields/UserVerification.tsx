@@ -1,16 +1,16 @@
-// Module ID: 6416
-// Function ID: 6417
+// Module ID: 6418
+// Function ID: 6419
 // Name: UserVerification
-// Dependencies: [19, 21, 5153, 558, 576, 5001, 6417, 1128, 5149, 2]
+// Dependencies: [19, 21, 5154, 558, 576, 5001, 6419, 1128, 5150, 2]
 
-// Module 6416 (UserVerification)
+// Module 6418 (UserVerification)
 import react2 from "react" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5001 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6417 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6419 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(5149).Text;
+    const Text = tmp12(5150).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1128).intl;

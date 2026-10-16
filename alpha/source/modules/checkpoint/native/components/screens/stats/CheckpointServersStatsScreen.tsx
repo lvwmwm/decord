@@ -1,26 +1,26 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12692
+// Function ID: 12693
 // Name: CheckpointServersStatsScreen
-// Dependencies: [17, 12654, 5499, 21, 5153, 587, 558, 576, 504, 9480, 1128, 3123, 12676, 3091, 12678, 12687, 5149, 11418, 8424, 6381, 2]
+// Dependencies: [17, 12660, 5500, 21, 5154, 587, 558, 576, 504, 9481, 1128, 3123, 12682, 3091, 12684, 12693, 5150, 11415, 8425, 6383, 2]
 
-// Module 12686 (CheckpointServersStatsScreen)
+// Module 12692 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3091 from "module_3091" /* 3091 */;
 import _modDef3123 from "module_3123" /* 3123 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import GuildIcon from "GuildIcon" /* 6381 */;
-import ChatIcon from "ChatIcon" /* 8424 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11418 */;
-import CheckpointTextDefault from "CheckpointText" /* 12676 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12678 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12687 */;
-import CheckpointStore from "CheckpointStore" /* 12654 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import GuildIcon from "GuildIcon" /* 6383 */;
+import ChatIcon from "ChatIcon" /* 8425 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11415 */;
+import CheckpointTextDefault from "CheckpointText" /* 12682 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12684 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12693 */;
+import CheckpointStore from "CheckpointStore" /* 12660 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let size;
 let size1;
 let tmp;
 const intl4 = tmp(1128);
-const ServerIcon = tmp(9480);
+const ServerIcon = tmp(9481);
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const CHECKPOINT_WHITE = CheckpointConstants.CHECKPOINT_WHITE;

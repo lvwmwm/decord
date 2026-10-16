@@ -1,13 +1,13 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12066
+// Function ID: 12067
 // Name: useConjureTips
-// Dependencies: [19, 12068, 12070, 558, 576, 12072, 12075, 12076, 12069, 2]
+// Dependencies: [19, 12067, 12069, 558, 576, 12071, 12074, 12075, 12068, 2]
 
-// Module 12067 (useConjureTips)
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12068 */;
-import conjureTipImpressions from "conjureTipImpressions" /* 12069 */;
-import conjureIdeasTip from "conjureIdeasTip" /* 12070 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 12075 */;
+// Module 12066 (useConjureTips)
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12067 */;
+import conjureTipImpressions from "conjureTipImpressions" /* 12068 */;
+import conjureIdeasTip from "conjureIdeasTip" /* 12069 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 12074 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

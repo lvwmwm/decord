@@ -1,9 +1,9 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7161
+// Function ID: 7162
 // Name: StorefrontTypes
 // Dependencies: [2]
 
-// Module 7159 (StorefrontTypes)
+// Module 7161 (StorefrontTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");

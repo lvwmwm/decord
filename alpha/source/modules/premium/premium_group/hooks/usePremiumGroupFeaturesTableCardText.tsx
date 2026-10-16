@@ -1,14 +1,14 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14489
+// Function ID: 14490
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4834, 4842, 1128, 3285, 1400, 8301, 558, 576, 14480, 504, 2]
+// Dependencies: [4834, 4842, 1128, 3285, 1400, 8302, 558, 576, 14490, 504, 2]
 
-// Module 14479 (usePremiumGroupFeaturesTableCardText)
+// Module 14489 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import user from "user" /* 1400 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8301 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 14480 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8302 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 14490 */;
 import SubscriptionStore from "SubscriptionStore" /* 4834 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 4842 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

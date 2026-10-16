@@ -1,20 +1,20 @@
-// Module ID: 12113
-// Function ID: 12114
+// Module ID: 12117
+// Function ID: 12118
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4807, 2090, 4819, 1392, 5147, 21, 5153, 587, 6887, 504, 7167, 9496, 12114, 10989, 5118, 11592, 1128, 3865, 7588, 7397, 7120, 7062, 6996, 5149, 5483, 5441, 2]
+// Dependencies: [5, 32, 19, 17, 4807, 2090, 4819, 1392, 5148, 21, 5154, 587, 6889, 504, 7169, 9497, 12118, 10986, 5118, 11589, 1128, 3865, 7589, 7399, 7122, 7064, 6998, 5150, 5484, 5442, 2]
 // Exports: default
 
-// Module 12113 (ConjurePublishNotesSheet)
+// Module 12117 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4807 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import MessageConstants from "MessageConstants" /* 5147 */;
-import ConjureUtils from "ConjureUtils" /* 7167 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11592 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12114 */;
+import MessageConstants from "MessageConstants" /* 5148 */;
+import ConjureUtils from "ConjureUtils" /* 7169 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11589 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12118 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ import GuildStore from "GuildStore" /* 2090 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;

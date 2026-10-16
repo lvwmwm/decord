@@ -1,14 +1,14 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9643
+// Function ID: 9644
 // Name: SuperReactionIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9645, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9644, 4876, 2]
 
-// Module 9644 (SuperReactionIcon)
+// Module 9643 (SuperReactionIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 9645 */;
+import AssetRegistry from "AssetRegistry" /* 9644 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

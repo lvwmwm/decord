@@ -1,27 +1,27 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 15663
+// Function ID: 15664
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 15654, 15524, 11007, 21, 5153, 587, 558, 576, 6487, 5149, 15655, 1633, 15656, 15661, 7036, 15662, 15665, 15666, 1896, 2]
+// Dependencies: [19, 17, 15664, 15534, 11004, 21, 5154, 587, 558, 576, 6489, 5150, 15665, 1633, 15666, 15671, 7038, 15672, 15675, 15676, 1896, 2]
 
-// Module 15653 (SettingListRenderer)
+// Module 15663 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7036 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11007 */;
-import SettingRenderer from "SettingRenderer" /* 15655 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15656 */;
-import useAutoScrollToSetting from "useAutoScrollToSetting" /* 15661 */;
-import useSettingSearchResults from "useSettingSearchResults" /* 15662 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 15665 */;
-import SettingSearchBarDefault from "SettingSearchBar" /* 15666 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7038 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11004 */;
+import SettingRenderer from "SettingRenderer" /* 15665 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15666 */;
+import useAutoScrollToSetting from "useAutoScrollToSetting" /* 15671 */;
+import useSettingSearchResults from "useSettingSearchResults" /* 15672 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 15675 */;
+import SettingSearchBarDefault from "SettingSearchBar" /* 15676 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15654 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 15524 */;
-import createStyles from "createStyles" /* 5153 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15664 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 15534 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let importDefault, searchResultsHeader;
 
 let obj2;
 let tmp;
-const Text_Text = tmp(5149);
-const TableRowGroup = tmp(6487);
+const Text_Text = tmp(5150);
+const TableRowGroup = tmp(6489);
 function getItemType(type) {
   type = type.type;
   if (ListItemType.SECTION_HEADER !== type) {
@@ -263,10 +263,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(15661);
+  let obj = node(15671);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(587).space.PX_16 };
-  const FlashList = node(7036).FlashList;
+  const FlashList = node(7038).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 }));
@@ -347,7 +347,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                     }
                   }
                 }
-                const FlashList = tmp(7036).FlashList;
+                const FlashList = tmp(7038).FlashList;
                 const tmp28 = <FlashList keyboardShouldPersistTaps="always" contentContainerStyle={tmp19} ListHeaderComponentStyle={tmp13} ListHeaderComponent={SettingSearchBarDefault} ListEmptyComponent={tmp15} onScroll={KeyboardManagerUtils.dismissGlobalKeyboard} scrollIndicatorInsets={tmp22} keyExtractor={keyExtractor} renderItem={renderItem} data={arr} getItemType={getItemType} />;
                 cResult[19] = tmp15;
                 cResult[20] = tmp13;
@@ -370,7 +370,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
             if (!isLoading) {
               tmp16 = null;
               if (0 === arr.length) {
-                tmp16 = jsx(tmp5(15665), {});
+                tmp16 = jsx(tmp5(15675), {});
               }
             }
           }

@@ -1,21 +1,21 @@
-// Module ID: 16928
-// Function ID: 16929
+// Module ID: 16942
+// Function ID: 16943
 // Name: ParentalControlsExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [7477, 8213, 558, 576, 15783, 8468, 15787, 1128, 15792, 1211, 11006, 2]
+// Dependencies: [7479, 8214, 558, 576, 15793, 8469, 15797, 1128, 15802, 1211, 11003, 2]
 
-// Module 16928 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
+// Module 16942 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15783 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15787 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15793 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15797 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8468);
+const ExplicitMediaRedactionUtils = tmp(8469);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl3.intl;
@@ -68,7 +68,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(15787);
+      let obj = selectedTeenId(15797);
       const explicitContentFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
       const intl = selectedTeenId(1128).intl;
       const stringResult = intl.string(selectedTeenId(1128).t.GYpoAq);
@@ -83,8 +83,8 @@ let obj = {
         currentValue: explicitContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(15792).handleSensitiveMediaFilterPress;
-      selectedTeenId(15792);
+      const handleSensitiveMediaFilterPress = selectedTeenId(15802).handleSensitiveMediaFilterPress;
+      selectedTeenId(15802);
       intl2 = selectedTeenId(1128).intl;
       items = [selectedTeenId(1211).ExplicitContentRedaction.SHOW];
       const result = handleSensitiveMediaFilterPress(obj2);

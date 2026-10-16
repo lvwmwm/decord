@@ -1,13 +1,13 @@
 // Module ID: 4823
 // Function ID: 4824
 // Name: UnicodeEmojis
-// Dependencies: [4824, 4825, 4826, 4827, 12, 14987, 2]
+// Dependencies: [4824, 4825, 4826, 4827, 12, 14997, 2]
 // Exports: asUnicodeEmoji
 
 // Module 4823 (UnicodeEmojis)
 import _modDef12 from "module_12" /* 12 */;
 import EmojiTypes from "EmojiTypes" /* 4826 */;
-import _mod14987 from "module_14987" /* 14987 */;
+import _mod14997 from "module_14997" /* 14997 */;
 import module_4824 from "module_4824" /* 4824 */;
 import size from "module_2" /* 2 */;
 
@@ -482,8 +482,8 @@ let obj = {
       str = "";
     }
     hasOwnProperty = Object.prototype.hasOwnProperty;
-    if (hasOwnProperty.call(_mod14987, arg0)) {
-      str = _mod14987[arg0];
+    if (hasOwnProperty.call(_mod14997, arg0)) {
+      str = _mod14997[arg0];
     }
     let combined = str;
     if (flag) {

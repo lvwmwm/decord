@@ -1,9 +1,9 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10741
+// Function ID: 10742
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 558, 576, 7063, 10745, 2]
+// Dependencies: [19, 21, 558, 576, 7065, 10742, 2]
 
-// Module 10744 (BlockedPaymentsCountryActionSheet)
+// Module 10741 (BlockedPaymentsCountryActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet;
 
 let tmp;
-const Sheet_BottomSheet = tmp(7063);
+const Sheet_BottomSheet = tmp(7065);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPaymentsCountryActionSheet() {
   let first;

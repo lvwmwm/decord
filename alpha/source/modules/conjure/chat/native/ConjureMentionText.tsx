@@ -1,12 +1,13 @@
 // Module ID: 12104
 // Function ID: 12105
 // Name: ConjureMentionText
-// Dependencies: [19, 1392, 21, 558, 576, 5021, 504, 12100, 12094, 2]
+// Dependencies: [19, 1392, 21, 558, 576, 5021, 504, 12100, 12093, 12105, 2]
 
 // Module 12104 (ConjureMentionText)
 import UserUtils from "UserUtils" /* 5021 */;
-import conjureMentions from "conjureMentions" /* 12094 */;
+import conjureMentions from "conjureMentions" /* 12093 */;
 import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12100 */;
+import ConjureFileMentionDefault from "ConjureFileMention" /* 12105 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -94,10 +95,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
   const cResult = obj.c(9);
   const tmp = variant;
   ({ text, variant } = arg0);
-  const obj2 = variant(12094);
+  let obj2 = variant(12093);
   const requestConjureMentionedUsers = obj2.useRequestConjureMentionedUsers(text);
   if (cResult[0] !== text) {
-    const tmpResult = tmp(12094);
+    const tmpResult = tmp(12093);
     const splitConjureMentionsResult = tmpResult.splitConjureMentions(text);
     cResult[0] = text;
     cResult[1] = splitConjureMentionsResult;
@@ -123,10 +124,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     return tmp9;
   }
   if (cResult[5] !== variant) {
-    const fn = function x(kind, arg1) {
+    const fn = function j(kind, arg1) {
       let text;
       if ("text" === kind.kind) {
         text = kind.text;
+      } else if ("file" === kind.kind) {
+        const _HermesInternal2 = HermesInternal;
+        const obj2 = { attachmentId: kind.attachmentId, variant };
+        const tmp8 = ConjureFileMentionDefault;
+        text = hasOwnProperty(tmp8, obj2, "" + arg1 + "-" + kind.attachmentId);
       } else {
         const _HermesInternal = HermesInternal;
         const obj = { userId: kind.userId, variant };
@@ -156,10 +162,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     const obj = conjureMentions;
     return obj.splitConjureMentions(require);
   }, items);
-  const obj2 = {
+  let obj2 = {
     children: memo.map((kind, index) => {
       if ("text" === kind.kind) {
         text = kind.text;
+      } else if ("file" === kind.kind) {
+        const _HermesInternal2 = HermesInternal;
+        const obj2 = { attachmentId: kind.attachmentId, variant };
+        const tmp8 = ConjureFileMentionDefault;
+        text = hasOwnProperty(tmp8, obj2, "" + index + "-" + kind.attachmentId);
       } else {
         const _HermesInternal = HermesInternal;
         const obj = { userId: kind.userId, variant };

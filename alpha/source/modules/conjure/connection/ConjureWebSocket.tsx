@@ -1,9 +1,9 @@
-// Module ID: 10995
-// Function ID: 10996
+// Module ID: 10992
+// Function ID: 10993
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10995 (ConjureWebSocket)
+// Module 10992 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -15,14 +15,27 @@ class ConjureWebSocket {
     let closure_1;
     let closure_2;
     let closure_3;
+    let obj3;
+    let templateId;
     let url;
     const self = this;
-    ({ url, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    ({ url, templateId, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    let webSocket;
     ticket = ticket.ticket;
     this.close();
+    const obj = { ticket, debug: "on_demand" };
     const str = url.replace(/^https:/i, "wss:");
     const replaced = str.replace(/^http:/i, "ws:");
-    const webSocket = new WebSocket("" + replaced + "/agent/ws?ticket=" + encodeURIComponent(ticket) + "&debug=on_demand");
+    const _URLSearchParams = URLSearchParams;
+    if (null != templateId) {
+      obj3 = { template: templateId };
+      const obj2 = { template: templateId };
+    } else {
+      obj3 = {};
+    }
+    const merged = Object.assign(obj3);
+    const _URLSearchParams1 = new _URLSearchParams(obj);
+    webSocket = new WebSocket("" + replaced + "/agent/ws?" + _URLSearchParams1);
     this.socket = webSocket;
     const listener = webSocket.addEventListener("message", (event) => {
       if (self.socket === webSocket) {
@@ -130,6 +143,19 @@ class ConjureWebSocket {
     }
     const error = new Error("WebSocket not open");
     throw error;
+  }
+  sendPreparePublish() {
+    const self = this;
+    let tmp = null != this.socket;
+    if (tmp) {
+      const _WebSocket = WebSocket;
+      tmp = self.socket.readyState === WebSocket.OPEN;
+    }
+    if (tmp) {
+      const socket = self.socket;
+      const _JSON = JSON;
+      socket.send(JSON.stringify({ type: "prepare_publish" }));
+    }
   }
   sendDraftPatchNotes(combined, name) {
     const self = this;

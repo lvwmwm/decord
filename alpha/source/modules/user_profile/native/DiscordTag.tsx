@@ -1,17 +1,17 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 8992
+// Function ID: 8993
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5149, 8992, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 5150, 8993, 2]
 
-// Module 8991 (DiscordTag)
+// Module 8992 (DiscordTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import BotTagDefault from "BotTag" /* 8992 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import BotTagDefault from "BotTag" /* 8993 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,19 +95,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscordTag(a
   }
   if (null != nick) {
     const obj4 = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: nicknameStyle, lineClamp: 1, children: nick };
-    tmp7Result2 = React3(tmp(5149).Text, obj4);
+    tmp7Result2 = React3(tmp(5150).Text, obj4);
   } else {
     tmp7Result2 = null;
     if (null != user) {
       const obj5 = { variant: "text-md/semibold", style: usernameStyle, lineClamp: 1, maxFontSizeMultiplier: 2, children: items1 };
-      const Text = tmp(5149).Text;
+      const Text = tmp(5150).Text;
       items1 = [user.toString(), ];
       let tmp7Result = !user.hasUniqueUsername();
       user.hasUniqueUsername();
       if (tmp7Result) {
         const obj6 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle, children: items2 };
         items2 = ["#", user.discriminator];
-        tmp7Result = tmp7(tmp(5149).Text, obj6);
+        tmp7Result = tmp7(tmp(5150).Text, obj6);
       }
       items1[1] = tmp7Result;
       tmp7Result2 = tmp7(Text, obj5);
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiscordTag(a
       if (tmp2Result) {
         const obj4 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle, children: items1 };
         items1 = ["#", user.discriminator];
-        tmp2Result = tmp2(tmp4(5149).Text, obj4);
+        tmp2Result = tmp2(tmp4(5150).Text, obj4);
       }
       items[1] = tmp2Result;
       tmp2Result2 = tmp2(Text, obj3);

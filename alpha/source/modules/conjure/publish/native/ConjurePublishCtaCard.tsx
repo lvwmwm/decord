@@ -1,11 +1,11 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12225
+// Function ID: 12226
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 2090, 21, 558, 576, 504, 5441, 5439, 5149, 1128, 3865, 6381, 12048, 11614, 12222, 2]
+// Dependencies: [19, 2090, 21, 558, 576, 504, 5442, 5440, 5150, 1128, 3865, 6383, 12046, 11611, 12226, 2]
 
-// Module 12221 (ConjurePublishCtaCard)
+// Module 12225 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11614 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11611 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
@@ -16,8 +16,8 @@ let closure_4;
 let hasOwnProperty;
 let tmp;
 let tmp4;
-const conjurePublishCard = tmp(12048);
-const ConjureTipInlineCalloutDefault = tmp4(12222);
+const conjurePublishCard = tmp(12046);
+const ConjureTipInlineCalloutDefault = tmp4(12226);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishCta(publish) {
@@ -78,17 +78,17 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
           let tmp12 = null;
           if (null != stateFromStores) {
             const obj2 = { direction: "horizontal", spacing: 4, align: "center", children: items1 };
-            const Stack = tmp(5439).Stack;
+            const Stack = tmp(5440).Stack;
             const obj3 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(guildId(3865)["+HGTlC"]) };
-            const Text = tmp(5149).Text;
+            const Text = tmp(5150).Text;
             intl = tmp(1128).intl;
             items1 = [closure_4(Text, obj3), , ];
-            const obj4 = { guild: stateFromStores, size: tmp(6381).GuildIconSizes.XXSMALL };
-            const tmp16 = guildId(6381);
+            const obj4 = { guild: stateFromStores, size: tmp(6383).GuildIconSizes.XXSMALL };
+            const tmp16 = guildId(6383);
             items1[1] = closure_4(tmp16, obj4);
             const obj5 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult2.publishCardServerName(stateFromStores.name) };
-            const Text2 = tmp(5149).Text;
-            tmpResult2 = tmp(12048);
+            const Text2 = tmp(5150).Text;
+            tmpResult2 = tmp(12046);
             items1[2] = closure_4(Text2, obj5);
             tmp12 = closure_5(Stack, obj2);
           }
@@ -107,7 +107,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
         }
         const obj6 = { direction: "horizontal", spacing: 8, align: "center", children: items2 };
         items2 = [tmp9, tmp11];
-        const tmp19 = closure_5(tmp(5439).Stack, obj6);
+        const tmp19 = closure_5(tmp(5440).Stack, obj6);
         cResult[12] = tmp9;
         cResult[13] = tmp11;
         cResult[14] = tmp19;
@@ -116,7 +116,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
     }
   }
   const obj7 = { text: publish.label, variant: "primary", size: "sm", loading: publish.publishing, disabled: publish.disabled, onPress: tmp8 };
-  const tmp10 = closure_4(tmp(5441).Button, obj7);
+  const tmp10 = closure_4(tmp(5442).Button, obj7);
   cResult[5] = publish.disabled;
   cResult[6] = publish.label;
   cResult[7] = publish.publishing;
@@ -139,7 +139,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
     }
     return guild;
   });
-  const Stack = publish(5439).Stack;
+  const Stack = publish(5440).Stack;
   const children = [, ];
   const obj2 = {
     text: publish.label,
@@ -151,21 +151,21 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
       return publish.run("card");
     }
   };
-  children[0] = closure_4(publish(5441).Button, obj2);
+  children[0] = closure_4(publish(5442).Button, obj2);
   let tmp4Result = null;
   if (null != stateFromStores) {
     const obj3 = { direction: "horizontal", spacing: 4, align: "center", children: items2 };
-    const Stack2 = tmp(5439).Stack;
+    const Stack2 = tmp(5440).Stack;
     const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(guildId(3865)["+HGTlC"]) };
-    const Text = tmp(5149).Text;
+    const Text = tmp(5150).Text;
     intl = tmp(1128).intl;
     items2 = [closure_4(Text, obj4), , ];
-    const obj5 = { guild: stateFromStores, size: tmp(6381).GuildIconSizes.XXSMALL };
-    const tmp8 = guildId(6381);
+    const obj5 = { guild: stateFromStores, size: tmp(6383).GuildIconSizes.XXSMALL };
+    const tmp8 = guildId(6383);
     items2[1] = closure_4(tmp8, obj5);
     const obj6 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult.publishCardServerName(stateFromStores.name) };
-    const Text2 = tmp(5149).Text;
-    tmpResult = tmp(12048);
+    const Text2 = tmp(5150).Text;
+    tmpResult = tmp(12046);
     items2[2] = closure_4(Text2, obj6);
     tmp4Result = tmp4(Stack2, obj3);
   }

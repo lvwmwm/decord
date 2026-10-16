@@ -1,38 +1,20 @@
 // Module ID: 6704
 // Function ID: 6705
 // Name: react
-// Dependencies: [19]
-// Exports: useStableCallback
+// Dependencies: [19, 6543]
+// Exports: useBottomSheetGestureHandlers
 
 // Module 6704 (react)
 import react from "react" /* 19 */;
+import react2 from "react" /* 6543 */;
 
-let current;
+const useContext = react.useContext;
 
-let _window;
-let c2;
-let c3;
-let map;
-({ useCallback: _window, useEffect: map, useLayoutEffect: c2, useRef: c3 } = react);
-
-export const useStableCallback = function useStableCallback(arg0) {
-  const _window = arg0;
-  map = _false(undefined);
-  React2(() => {
-    ref.current = current;
-  });
-  const tmp2 = map(() => () => {
-    ref.current = undefined;
-  }, []);
-  return React(() => {
-    const items = [...arguments];
-    current = ref.current;
-    let applyResult;
-    if (current != null) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, items, 0);
-      applyResult = HermesBuiltin.apply(current, items1, tmp2);
-    }
-    return applyResult;
-  }, []);
+export const useBottomSheetGestureHandlers = () => {
+  const tmp = useContext(react2.BottomSheetGestureHandlersContext);
+  if (null === tmp) {
+    throw "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
+  }
 };

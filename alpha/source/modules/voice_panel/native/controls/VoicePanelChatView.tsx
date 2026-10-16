@@ -1,26 +1,26 @@
-// Module ID: 12840
-// Function ID: 12841
+// Module ID: 12846
+// Function ID: 12847
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 12841, 1087, 21, 5153, 5167, 558, 576, 1123, 12838, 1128, 10498, 12842, 4909, 10465, 6984, 9543, 1499, 1633, 12850, 7236, 5031, 12851, 10611, 5421, 4886, 11023, 2]
+// Dependencies: [19, 17, 12847, 1087, 21, 5154, 5168, 558, 576, 1123, 12844, 1128, 10499, 12848, 4909, 10466, 6986, 9544, 1499, 1633, 12856, 7238, 5031, 12857, 10608, 5422, 4886, 11020, 2]
 
-// Module 12840 (VoicePanelChatView)
+// Module 12846 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5167 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6984 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10465 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10498 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12838 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12842 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5168 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6986 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10466 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10499 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12844 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12847 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12848 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

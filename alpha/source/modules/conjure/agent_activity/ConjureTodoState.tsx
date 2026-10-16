@@ -1,17 +1,17 @@
-// Module ID: 12050
-// Function ID: 12051
+// Module ID: 12048
+// Function ID: 12049
 // Name: ConjureTodoState
-// Dependencies: [10903, 12051, 2]
-// Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress, toggleChecklist, unfinishedTodoCount
+// Dependencies: [10900, 12049, 2]
+// Exports: checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress, unfinishedTodoCount
 
-// Module 12050 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 10903 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12051 */;
+// Module 12048 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 10900 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12049 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let set;
 
-let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoState.tsx");
+const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoState.tsx");
 
 export function todoMark(status, flag2) {
   let str;
@@ -109,21 +109,4 @@ export const supersededChecklists = function supersededChecklists(memo) {
     } while (0 <= diff);
   }
   return set;
-};
-export const checklistExpanded = function checklistExpanded(c13, render_id, arg2) {
-  let value = c13.get(render_id);
-  if (value == null) {
-    value = !arg2;
-  }
-  return value;
-};
-export const toggleChecklist = function toggleChecklist(get, arg1, arg2) {
-  map = new Map(get);
-  set = map.set;
-  let value = get.get(arg1);
-  if (value == null) {
-    value = !arg2;
-  }
-  const result = set(arg1, !value);
-  return map;
 };

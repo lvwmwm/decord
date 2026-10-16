@@ -1,20 +1,20 @@
-// Module ID: 13936
-// Function ID: 13937
+// Module ID: 13947
+// Function ID: 13948
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1392, 7126, 7064, 21, 8594, 8583, 8596, 1633, 8541, 504, 5471, 5021, 7233, 8595, 10777, 8580, 8591, 7107, 4867, 8597, 4909, 13937, 8608, 10762, 5118, 10776, 2002, 10780, 1128, 13962, 13965, 11181, 13966, 5441, 8424, 587, 6152, 7236, 13967, 10861, 7103, 14021, 14024, 2]
+// Dependencies: [19, 17, 1392, 7128, 7066, 21, 8595, 8584, 8597, 1633, 8542, 504, 5472, 5021, 7235, 8596, 10774, 8581, 8592, 7109, 4867, 8598, 4909, 13948, 8609, 10759, 5118, 10773, 2002, 10777, 1128, 13972, 13975, 11178, 13976, 5442, 8425, 587, 6153, 7238, 13977, 10858, 7105, 14031, 14034, 2]
 
-// Module 13936 (BotUserProfileContent)
+// Module 13947 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ToastUtils from "ToastUtils" /* 4867 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7064 */;
-import ClipboardUtils from "ClipboardUtils" /* 7107 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7066 */;
+import ClipboardUtils from "ClipboardUtils" /* 7109 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 7126 */;
+import Constants from "Constants" /* 7128 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -166,7 +166,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               ActionSheetActionCreatorsDefault;
               const obj = { user, guildId: guild_id, channelId: id };
               id = undefined;
-              const tmp2 = asyncRequire(10776, dependencyMap.paths);
+              const tmp2 = asyncRequire(10773, dependencyMap.paths);
               if (channel != null) {
                 id = channel.id;
               }

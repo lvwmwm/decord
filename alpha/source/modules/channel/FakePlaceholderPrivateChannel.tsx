@@ -1,9 +1,9 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7147
+// Function ID: 7148
 // Name: FakePlaceholderPrivateChannel
 // Dependencies: [2072, 1087, 2]
 
-// Module 7145 (FakePlaceholderPrivateChannel)
+// Module 7147 (FakePlaceholderPrivateChannel)
 import Constants from "Constants" /* 1087 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import size from "module_2" /* 2 */;

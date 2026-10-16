@@ -1,10 +1,10 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14856
+// Function ID: 14857
 // Name: GuildTagActionCreators
 // Dependencies: [5, 1392, 1087, 1297, 584, 2]
 // Exports: adoptGuildIdentity
 
-// Module 14846 (GuildTagActionCreators)
+// Module 14856 (GuildTagActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

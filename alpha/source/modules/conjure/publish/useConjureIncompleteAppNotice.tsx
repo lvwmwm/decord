@@ -1,9 +1,9 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12044
+// Function ID: 12045
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 2090, 558, 576, 11614, 504, 1128, 3865, 2]
+// Dependencies: [32, 19, 2090, 558, 576, 11611, 504, 1128, 3865, 2]
 
-// Module 12046 (useConjureIncompleteAppNotice)
+// Module 12044 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   let tmp2 = dependencyMap;
   const obj = require("react");
   const cResult = obj.c(11);
-  const tmp4 = guildId(11614)(arg0);
+  const tmp4 = guildId(11611)(arg0);
   guildId = undefined;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(11614)(arg0);
+  const tmp3 = guildId(11611)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;

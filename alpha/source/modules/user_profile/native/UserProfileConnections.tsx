@@ -1,9 +1,9 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 14110
+// Function ID: 14111
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2132, 5022, 7126, 1087, 7098, 21, 1202, 5153, 587, 11068, 558, 576, 4877, 5028, 11073, 11074, 8541, 7097, 5981, 1417, 8717, 5168, 4865, 5119, 7107, 4867, 1128, 5149, 4876, 7925, 6402, 4886, 504, 14101, 6487, 7125, 14104, 2]
+// Dependencies: [19, 17, 2132, 5022, 7128, 1087, 7100, 21, 1202, 5154, 587, 11065, 558, 576, 4877, 5028, 11070, 11071, 8542, 7099, 5982, 1417, 8718, 5169, 4865, 5119, 7109, 4867, 1128, 5150, 4876, 7926, 6404, 4886, 504, 14111, 6489, 7127, 14114, 2]
 
-// Module 14100 (UserProfileConnections)
+// Module 14110 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,24 +14,24 @@ import ToastUtils from "ToastUtils" /* 4867 */;
 import useToken from "useToken" /* 4877 */;
 import shared from "shared" /* 5028 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import TableRow2 from "TableRow" /* 6402 */;
-import TableRowGroup from "TableRowGroup" /* 6487 */;
-import Constants2 from "Constants" /* 7098 */;
-import ClipboardUtils from "ClipboardUtils" /* 7107 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8717 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11068 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11073 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11074 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14104 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import TableRow2 from "TableRow" /* 6404 */;
+import TableRowGroup from "TableRowGroup" /* 6489 */;
+import Constants2 from "Constants" /* 7100 */;
+import ClipboardUtils from "ClipboardUtils" /* 7109 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8718 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11065 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11070 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11071 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14114 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import StreamerModeStore from "StreamerModeStore" /* 5022 */;
-import Constants_mod from "Constants" /* 7126 */;
+import Constants_mod from "Constants" /* 7128 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import native_mod from "native" /* 1202 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp5;
-const UserProfileCardDefault = tmp5(7125);
+const UserProfileCardDefault = tmp5(7127);
 function generateMetadataForPlatform(arg0) {
   let accountType;
   let metadata;
@@ -297,7 +297,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -354,7 +354,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                                 tmp6 = account;
                                 tmp7 = PlatformTypes;
                                 obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                                obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                                obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                                 handleClickResult = obj.handleClick(obj1);
                               }
                               return;
@@ -469,7 +469,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                           tmp6 = account;
                           tmp7 = PlatformTypes;
                           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                          obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                          obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                           handleClickResult = obj.handleClick(obj1);
                         }
                         return;
@@ -509,7 +509,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -558,7 +558,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                         tmp6 = account;
                         tmp7 = PlatformTypes;
                         obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                        obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                        obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                         handleClickResult = obj.handleClick(obj1);
                       }
                       return;
@@ -581,7 +581,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
                   tmp6 = account;
                   tmp7 = PlatformTypes;
                   obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                  obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+                  obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
                   handleClickResult = obj.handleClick(obj1);
                 }
                 return;
@@ -669,7 +669,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function U
           tmp6 = account;
           tmp7 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F147811 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F147911 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -902,7 +902,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   application = application.application;
   const identity = application.identity;
   const tmp4 = closure_16();
-  let obj2 = trackUserProfileAction(8541);
+  let obj2 = trackUserProfileAction(8542);
   trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] !== application) {
     const iconSource = application.getIconSource(closure_7);
@@ -966,7 +966,7 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         cResult[15] = tmp8;
         cResult[16] = str;
         cResult[17] = tmp14;
-        const tmp20 = closure_12(trackUserProfileAction(6402).TableRow, obj5);
+        const tmp20 = closure_12(trackUserProfileAction(6404).TableRow, obj5);
         class C {
           constructor() {
             tmp = trackUserProfileAction({ action: "COPY_CONNECTED_ACCOUNT" });
@@ -1204,7 +1204,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
       tmp10 = null;
       if (null != applicationRoleConnection.platform_username) {
         const obj10 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-        tmp10 = authStore2(tmp(5149).Text, obj10);
+        tmp10 = authStore2(tmp(5150).Text, obj10);
       }
     }
     cResult[5] = applicationRoleConnection.platform_name;
@@ -1240,7 +1240,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = authStore2(tmp2(5149).Text, obj4);
+      tmp7 = authStore2(tmp2(5150).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -1256,7 +1256,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: authStore2(Text, obj8) };
   obj8 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(5149).Text;
+  Text = tmp2(5150).Text;
   intl = tmp2(1128).intl;
   obj9 = {
     applicationHook() {
@@ -1266,7 +1266,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   items[2] = authStore2(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(6402).TableRow;
+  const TableRow = tmp2(6404).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -1424,8 +1424,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(14101)(userId));
-  theme(14101)(userId);
+  ({ connections, appIdentities } = theme(14111)(userId));
+  theme(14111)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
@@ -1438,9 +1438,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       const obj = { identity, application: application.application };
       return closure_1_12(closure_1_20, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { style: items3, title: intl.string(userId(1128).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(6487).TableRowGroup, obj5) };
+    const obj4 = { style: items3, title: intl.string(userId(1128).t["3fe7U5"]), titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(6489).TableRowGroup, obj5) };
     items3 = [tmp2.cardContainer, style];
-    const tmp6Result = tmp6(7125);
+    const tmp6Result = tmp6(7127);
     intl = tmp3(1128).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);

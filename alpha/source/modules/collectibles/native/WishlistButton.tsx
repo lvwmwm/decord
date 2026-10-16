@@ -1,9 +1,9 @@
-// Module ID: 9272
-// Function ID: 9273
+// Module ID: 9273
+// Function ID: 9274
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1392, 1089, 1098, 21, 4909, 5446, 5153, 587, 4886, 558, 576, 6522, 5028, 4893, 4868, 1128, 5154, 5440, 5444, 9273, 9208, 504, 9204, 9263, 9275, 9203, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1392, 1089, 1098, 21, 4909, 5447, 5154, 587, 4886, 558, 576, 6524, 5028, 4893, 4868, 1128, 5155, 5441, 5445, 9274, 9209, 504, 9205, 9264, 9276, 9204, 2]
 
-// Module 9272 (WishlistButton)
+// Module 9273 (WishlistButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -12,12 +12,12 @@ import intl3 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
 import native from "native" /* 4886 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
-import springPresets from "springPresets" /* 5444 */;
-import ButtonConstants from "ButtonConstants" /* 5446 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9203 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 9204 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9275 */;
+import spring from "spring" /* 5441 */;
+import springPresets from "springPresets" /* 5445 */;
+import ButtonConstants from "ButtonConstants" /* 5447 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9204 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 9205 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9276 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -26,7 +26,7 @@ import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -683,7 +683,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(9263);
+            const tmpResult4 = tmp(9264);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {

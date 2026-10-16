@@ -1,9 +1,12 @@
 // Module ID: 15036
 // Function ID: 15037
-// Dependencies: [15028]
+// Dependencies: [15024]
 
 // Module 15036
-import _mod15028 from "module_15028" /* 15028 */;
+import _mod15024 from "module_15024" /* 15024 */;
 
 
-export default (arg0, arg1, arg2) => 0 === _mod15028(arg0, arg1, arg2);
+export default (arg0, arg1) => {
+  const tmp = new _mod15024(arg0, arg1);
+  return tmp.patch;
+};

@@ -1,17 +1,17 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14724
+// Function ID: 14725
 // Name: message_previews/MessagePreviewStore
-// Dependencies: [32, 2068, 5494, 3, 504, 584, 14715, 5974, 2]
+// Dependencies: [32, 2068, 5495, 3, 504, 584, 14725, 5975, 2]
 
-// Module 14714 (message_previews/MessagePreviewStore)
+// Module 14724 (message_previews/MessagePreviewStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import requireSortedDescending from "requireSortedDescending" /* 5974 */;
-import PreviewData from "PreviewData" /* 14715 */;
+import requireSortedDescending from "requireSortedDescending" /* 5975 */;
+import PreviewData from "PreviewData" /* 14725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import size from "module_2" /* 2 */;
 
 let set;

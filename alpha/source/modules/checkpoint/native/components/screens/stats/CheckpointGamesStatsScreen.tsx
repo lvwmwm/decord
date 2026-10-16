@@ -1,9 +1,9 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12696
+// Function ID: 12697
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 2022, 12654, 5499, 21, 5153, 587, 558, 576, 504, 1128, 3123, 12678, 9449, 12676, 12682, 1417, 5091, 7908, 12687, 5149, 2]
+// Dependencies: [17, 2022, 12660, 5500, 21, 5154, 587, 558, 576, 504, 1128, 3123, 12684, 9450, 12682, 12688, 1417, 5091, 7909, 12693, 5150, 2]
 
-// Module 12690 (CheckpointGamesStatsScreen)
+// Module 12696 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -11,16 +11,16 @@ import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef3123 from "module_3123" /* 3123 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import GameControllerIcon from "GameControllerIcon" /* 9449 */;
-import CheckpointTextDefault from "CheckpointText" /* 12676 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12678 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12682 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12687 */;
+import GameControllerIcon from "GameControllerIcon" /* 9450 */;
+import CheckpointTextDefault from "CheckpointText" /* 12682 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12684 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12688 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12693 */;
 import GameStore from "GameStore" /* 2022 */;
-import CheckpointStore from "CheckpointStore" /* 12654 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import CheckpointStore from "CheckpointStore" /* 12660 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -551,7 +551,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
                         tmp40 = tmp43;
                       }
                       const obj5 = { variant: "text-md/semibold", style: tmp4.gameName, lineClamp: 2, children: name };
-                      const tmp39 = closure_7(id(5149).Text, obj5);
+                      const tmp39 = closure_7(id(5150).Text, obj5);
                       cResult[26] = name;
                       cResult[27] = tmp4.gameName;
                       cResult[28] = tmp39;
@@ -581,7 +581,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
               obj7 = AvatarUtilsDefault;
               tmp25 = closure_7(tmp28, obj9);
             } else {
-              const obj10 = { style: items4, children: closure_7(id(7908).UnknownGameIcon, { size: "lg" }) };
+              const obj10 = { style: items4, children: closure_7(id(7909).UnknownGameIcon, { size: "lg" }) };
               items4 = [, ];
               ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp4);
               tmp25 = closure_7(View, obj10);
@@ -671,7 +671,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     tmp11 = closure_7;
   } else {
     tmp11 = closure_7;
-    const obj6 = { style: items1, children: closure_7(id(7908).UnknownGameIcon, { size: "lg" }) };
+    const obj6 = { style: items1, children: closure_7(id(7909).UnknownGameIcon, { size: "lg" }) };
     items1 = [, ];
     ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp);
     tmp12 = closure_7(tmp9, obj6);
@@ -683,7 +683,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
   const obj8 = { style: tmp.gameText, children: items4 };
   items4 = [, ];
   const obj9 = { variant: "text-md/semibold", style: tmp.gameName, lineClamp: 2, children: name };
-  items4[0] = tmp11(id(5149).Text, obj9);
+  items4[0] = tmp11(id(5150).Text, obj9);
   const obj10 = { variant: "experimental/mono-md/bold", style: tmp.gameSessions, children: rounded };
   items4[1] = tmp11(CheckpointTextDefault, obj10);
   items3[1] = closure_8(View, obj8);

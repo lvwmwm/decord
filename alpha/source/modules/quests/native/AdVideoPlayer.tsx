@@ -1,25 +1,25 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16009
+// Function ID: 16010
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8653, 5153, 683, 558, 576, 15978, 4909, 5440, 5444, 5154, 5157, 1123, 504, 1384, 1257, 1633, 1128, 6407, 15998, 16000, 16002, 16003, 11560, 8627, 8629, 16004, 16005, 2]
+// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8654, 5154, 683, 558, 576, 15990, 4909, 5441, 5445, 5155, 5158, 1123, 504, 1384, 1257, 1633, 1128, 6409, 16010, 16012, 16014, 16016, 16017, 11557, 8628, 8630, 16018, 16019, 2]
 
-// Module 15997 (AdVideoPlayer)
+// Module 16009 (AdVideoPlayer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import timing from "timing" /* 5154 */;
-import timingPresets from "timingPresets" /* 5157 */;
-import spring from "spring" /* 5440 */;
-import TextTrackTypeDefault from "TextTrackType" /* 8653 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15978 */;
+import timing from "timing" /* 5155 */;
+import timingPresets from "timingPresets" /* 5158 */;
+import spring from "spring" /* 5441 */;
+import TextTrackTypeDefault from "TextTrackType" /* 8654 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -34,7 +34,6 @@ let closure_12;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-let obj10;
 let obj2;
 let obj3;
 let obj4;
@@ -47,7 +46,7 @@ let rect1;
 let rect2;
 let tmp2;
 let unpackModuleId;
-const springPresets = tmp2(5444);
+const springPresets = tmp2(5445);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
 ({ AppStates: c9, ComponentActions: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -75,7 +74,7 @@ canSeekForward.__closure = { hasVideoEnded };
 canSeekForward.__workletHash = 14098132092693;
 canSeekForward.__initData = { code: "function canSeekForward_AdVideoPlayerTsx2(currentTime,maxTimestamp,videoDuration,allowUnrestrictedSeeking){const{hasVideoEnded}=this.__closure;return!hasVideoEnded(currentTime,videoDuration)&&(allowUnrestrictedSeeking||currentTime<=maxTimestamp-1);}" };
 let createStyles = createStyles_mod;
-let obj = { container: obj2, loadingContainer: obj3, bufferingSpinner: { position: "absolute" }, bufferingSpinnerCentered: obj4, video: { height: "100%", width: "100%" }, videoContainer: { position: "relative", height: "100%", width: "100%" }, controls: obj5, controlsTopBottom: rect1, controlsMiddle: obj6, controlsTop: { top: 0 }, controlsBottom: { bottom: 0 }, progressContainer: rect2, progress: obj7, icon: obj8, iconDisabled: obj9, controlButton: obj10 };
+let obj = { container: obj2, loadingContainer: obj3, bufferingSpinner: { position: "absolute" }, bufferingSpinnerCentered: obj4, video: { height: "100%", width: "100%" }, videoContainer: { position: "relative", height: "100%", width: "100%" }, controls: obj5, controlsTopBottom: rect1, controlsMiddle: obj6, controlsTop: { top: 0 }, controlsBottom: { bottom: 0 }, progressContainer: rect2, progress: obj7, icon: obj8, controlButton: obj9 };
 obj2 = {};
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -92,8 +91,7 @@ obj6 = { justifyContent: "center", alignItems: "center", flexGrow: 1, flexDirect
 rect2 = { position: "absolute", bottom: 0, right: 0, left: 0, justifyContent: "flex-end", height: nativeDefault.space.PX_16, overflow: "hidden" };
 obj7 = { height: 1, backgroundColor: nativeDefault.colors.WHITE, shadowOffset: { width: 0, height: 0 }, shadowRadius: 6, shadowOpacity: 1, elevation: 5, shadowColor: nativeDefault.colors.WHITE };
 obj8 = { color: nativeDefault.colors.TEXT_DEFAULT };
-obj9 = { color: nativeDefault.colors.TEXT_SUBTLE };
-obj10 = { padding: nativeDefault.space.PX_8 };
+obj9 = { padding: nativeDefault.space.PX_8 };
 let closure_17 = createStyles(obj);
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBufferingState(onBuffer) {
   let closure_129_2;
@@ -186,9 +184,10 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let maxBitRate;
   let num5;
   let obj15;
-  let obj17;
-  let obj23;
-  let obj25;
+  let obj16;
+  let obj18;
+  let obj24;
+  let obj26;
   let onBuffer;
   let onLoadStart;
   let onOpenTranscript;
@@ -819,42 +818,41 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
     ({ controlsTopBottom: arr29[0], controlsTop: arr29[1] } = tmp);
     items28[2] = tmp61;
     if (flag3) {
-      let color;
-      const obj14 = { accessibilityRole: "button", accessibilityLabel: intl2.string(tmp8(tmp9[23]).t.bDSZO1), onPress: onToggleCaptions, style: tmp.controlButton, children: onPlayerStateChange(ClosedCaptionsOutlineIcon, obj15) };
+      const obj14 = { accessibilityRole: "togglebutton", accessibilityState: obj15, accessibilityLabel: intl2.string(tmp8(tmp9[23]).t.bDSZO1), onPress: onToggleCaptions, style: tmp.controlButton, children: onPlayerStateChange(ClosedCaptionsOutlineIcon, obj16) };
+      obj15 = { checked: captionsEnabled };
       const PressableOpacity = tmp8(tmp9[24]).PressableOpacity;
       intl2 = tmp8(tmp9[23]).intl;
-      ClosedCaptionsOutlineIcon = tmp8(tmp9[25]).ClosedCaptionsOutlineIcon;
       if (captionsEnabled) {
-        color = tmp.icon.color;
+        ClosedCaptionsOutlineIcon = tmp8(tmp9[25]).ClosedCaptionsIcon;
       } else {
-        color = tmp.iconDisabled.color;
+        ClosedCaptionsOutlineIcon = tmp8(tmp9[26]).ClosedCaptionsOutlineIcon;
       }
-      obj15 = { color };
+      obj16 = { color: tmp.icon.color };
       flag3 = tmp64(PressableOpacity, obj14);
     }
     items29 = [flag3, ];
     if (flag4) {
-      const obj16 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp8(tmp9[23]).t.KCzjTi), onPress: onOpenTranscript, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[26]).TranscriptOutlineIcon, obj17) };
+      const obj17 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp8(tmp9[23]).t.KCzjTi), onPress: onOpenTranscript, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[27]).TranscriptOutlineIcon, obj18) };
       const PressableOpacity2 = tmp8(tmp9[24]).PressableOpacity;
       intl3 = tmp8(tmp9[23]).intl;
-      obj17 = { color: tmp.iconDisabled.color };
-      flag4 = tmp64(PressableOpacity2, obj16);
+      obj18 = { color: tmp.icon.color };
+      flag4 = tmp64(PressableOpacity2, obj17);
     }
     items29[1] = flag4;
     tmp66Result = tmp66(tmp65, obj13);
   }
   const items30 = [tmp66Result, , ];
-  const obj18 = { style: tmp.controlsMiddle, children: null };
+  const obj19 = { style: tmp.controlsMiddle, children: null };
   let tmp64Result5 = flag7;
   if (tmp64Result5) {
-    const obj19 = { disabled: first2 === tmp8(tmp9[12]).PlayerState.ERRORED, accessibilityRole: "button", accessibilityLabel: intl4.string(tmp8(tmp9[23]).t.r9s3Uv), onPress: callback1Result, children: onPlayerStateChange(tmp8(tmp9[28]).SkipBackwardIcon, size) };
-    const VideoQuestPlayerControlButton = tmp8(tmp9[27]).VideoQuestPlayerControlButton;
+    const obj20 = { disabled: first2 === tmp8(tmp9[12]).PlayerState.ERRORED, accessibilityRole: "button", accessibilityLabel: intl4.string(tmp8(tmp9[23]).t.r9s3Uv), onPress: callback1Result, children: onPlayerStateChange(tmp8(tmp9[29]).SkipBackwardIcon, size) };
+    const VideoQuestPlayerControlButton = tmp8(tmp9[28]).VideoQuestPlayerControlButton;
     intl4 = tmp8(tmp9[23]).intl;
     size = { color: tmp.icon.color, width: 16, height: 16 };
-    tmp64Result5 = tmp64(VideoQuestPlayerControlButton, obj19);
+    tmp64Result5 = tmp64(VideoQuestPlayerControlButton, obj20);
   }
   const items31 = [tmp64Result5, , ];
-  const VideoQuestPlayerControlButton2 = tmp8(tmp9[27]).VideoQuestPlayerControlButton;
+  const VideoQuestPlayerControlButton2 = tmp8(tmp9[28]).VideoQuestPlayerControlButton;
   const intl5 = tmp8(tmp9[23]).intl;
   if (!tmp15) {
     let K0e7M9;
@@ -862,55 +860,55 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
       const t2 = tmp8(tmp9[23]).t;
       K0e7M9 = tmp55 ? t2.R3aFPe : t2.fTMEUi;
     }
-    const obj20 = { accessibilityRole: "button", accessibilityLabel: tmp76(K0e7M9), onPress: callback7, children: null };
+    const obj21 = { accessibilityRole: "button", accessibilityLabel: tmp76(K0e7M9), onPress: callback7, children: null };
     if (!tmp15) {
       let tmp64Result6;
       if (first2 !== tmp8(tmp9[12]).PlayerState.ERRORED) {
         let PauseIcon;
         if (tmp55) {
-          PauseIcon = tmp8(tmp9[30]).PlayIcon;
+          PauseIcon = tmp8(tmp9[31]).PlayIcon;
         } else {
-          PauseIcon = tmp8(tmp9[31]).PauseIcon;
+          PauseIcon = tmp8(tmp9[32]).PauseIcon;
         }
         tmp64Result6 = tmp64(PauseIcon, { size: "lg" });
       }
-      obj20.children = tmp64Result6;
-      items31[1] = onPlayerStateChange(VideoQuestPlayerControlButton2, obj20);
+      obj21.children = tmp64Result6;
+      items31[1] = onPlayerStateChange(VideoQuestPlayerControlButton2, obj21);
       if (flag7) {
-        const obj21 = { disabled: tmp39, accessibilityRole: "button", accessibilityLabel: intl6.string(tmp8(tmp9[23]).t.zWDcNP), onPress: callback1Result1, children: onPlayerStateChange(tmp8(tmp9[32]).SkipForwardIcon, size1) };
-        const VideoQuestPlayerControlButton3 = tmp8(tmp9[27]).VideoQuestPlayerControlButton;
+        const obj22 = { disabled: tmp39, accessibilityRole: "button", accessibilityLabel: intl6.string(tmp8(tmp9[23]).t.zWDcNP), onPress: callback1Result1, children: onPlayerStateChange(tmp8(tmp9[33]).SkipForwardIcon, size1) };
+        const VideoQuestPlayerControlButton3 = tmp8(tmp9[28]).VideoQuestPlayerControlButton;
         intl6 = tmp8(tmp9[23]).intl;
         size1 = { color: tmp.icon.color, width: 16, height: 16 };
-        flag7 = tmp64(VideoQuestPlayerControlButton3, obj21);
+        flag7 = tmp64(VideoQuestPlayerControlButton3, obj22);
       }
       items31[2] = flag7;
-      obj18.children = items31;
-      items30[1] = onPausePlayback(onReadyForDisplay, obj18);
+      obj19.children = items31;
+      items30[1] = onPausePlayback(onReadyForDisplay, obj19);
       if (flag5) {
-        const obj22 = { style: items32, children: onPlayerStateChange(PressableOpacity3, obj23) };
+        const obj23 = { style: items32, children: onPlayerStateChange(PressableOpacity3, obj24) };
         items32 = [, , ];
         ({ controlsTopBottom: arr33[0], controlsBottom: arr33[1] } = tmp);
         items32[2] = tmp61;
-        obj23 = { accessibilityRole: "button", accessibilityLabel: intl7.string(tmp8(tmp9[23]).t.vKZT5t), onPress: onToggleFullscreen, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[33]).FullscreenEnterIcon, {}) };
+        obj24 = { accessibilityRole: "button", accessibilityLabel: intl7.string(tmp8(tmp9[23]).t.vKZT5t), onPress: onToggleFullscreen, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[34]).FullscreenEnterIcon, {}) };
         PressableOpacity3 = tmp8(tmp9[24]).PressableOpacity;
         intl7 = tmp8(tmp9[23]).intl;
-        flag5 = tmp64(tmp65, obj22);
+        flag5 = tmp64(tmp65, obj23);
       }
       items30[2] = flag5;
       obj12.children = items30;
       items25[4] = onPausePlayback(View, obj12);
       if (flag6) {
-        const obj24 = { style: tmp.progressContainer, children: onPlayerStateChange(flag(tmp9[13]).View, obj25) };
-        obj25 = { style: items33 };
+        const obj25 = { style: tmp.progressContainer, children: onPlayerStateChange(flag(tmp9[13]).View, obj26) };
+        obj26 = { style: items33 };
         items33 = [tmp.progress, animatedStyle1];
-        flag6 = tmp64(tmp65, obj24);
+        flag6 = tmp64(tmp65, obj25);
       }
       items25[5] = flag6;
       obj8.children = items25;
       obj7.children = onPausePlayback(tmp67, obj8);
       return onPlayerStateChange(onReadyForDisplay, obj7);
     }
-    tmp64Result6 = tmp64(tmp8(tmp9[29]).RetryIcon, { size: "lg" });
+    tmp64Result6 = tmp64(tmp8(tmp9[30]).RetryIcon, { size: "lg" });
   }
   K0e7M9 = tmp8(tmp9[23]).t.K0e7M9;
 });

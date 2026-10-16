@@ -1,10 +1,10 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 8148
+// Function ID: 8149
 // Name: getBurstAnimation
-// Dependencies: [5, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8161, 8162, 8163, 8164, 8165, 8166, 8167, 8168, 8169, 8170, 8171, 8172, 8173, 8174, 8175, 8176, 8177, 8178, 8179, 8180, 8181, 8182, 8183, 8184, 2]
+// Dependencies: [5, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8161, 8162, 8163, 8164, 8165, 8166, 8167, 8168, 8169, 8170, 8171, 8172, 8173, 8174, 8175, 8176, 8177, 8178, 8179, 8180, 8181, 8182, 8183, 8184, 8185, 2]
 // Exports: getBurstAnimation
 
-// Module 8147 (getBurstAnimation)
+// Module 8148 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,16 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_8148");
+    return require("module_8149");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_8149");
-    }
-  },
   {
     load() {
       return require("module_8150");
@@ -102,20 +97,20 @@ const items = [
     load() {
       return require("module_8165");
     }
+  },
+  {
+    load() {
+      return require("module_8166");
+    }
   }
 ];
 const obj2 = {
   load() {
-    return require("module_8166");
+    return require("module_8167");
   }
 };
 const items1 = [
   obj2,
-  {
-    load() {
-      return require("module_8167");
-    }
-  },
   {
     load() {
       return require("module_8168");
@@ -194,6 +189,11 @@ const items1 = [
   {
     load() {
       return require("module_8183");
+    }
+  },
+  {
+    load() {
+      return require("module_8184");
     }
   }
 ];

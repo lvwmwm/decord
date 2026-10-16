@@ -1,132 +1,382 @@
 // Module ID: 12352
 // Function ID: 12353
-// Dependencies: [12345]
-// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
+// Dependencies: [5, 12331, 12353, 12332, 12304, 12315, 12318, 12311, 12341, 12305, 12327]
+// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 12352
-import _mod12345 from "module_12345" /* 12345 */;
+import _mod12305 from "module_12305" /* 12305 */;
+import _mod12311 from "module_12311" /* 12311 */;
+import _mod12315 from "module_12315" /* 12315 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12318 */;
+import _mod12327 from "module_12327" /* 12327 */;
+import _mod12331 from "module_12331" /* 12331 */;
+import _mod12332 from "module_12332" /* 12332 */;
+import _mod12353 from "module_12353" /* 12353 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
-  if (!combined1) {
-    let str2 = "";
-    if (protocol.protocol) {
-      const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
-    }
-    let str4 = "";
-    if (protocol.port) {
-      const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
-    }
-    const host = protocol.host;
-    let str6 = "";
-    if (protocol.path) {
-      const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
-    }
-    const tmp12 = name;
-    if (tmp12) {
-      const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
-    }
-    const _URLSearchParams = URLSearchParams;
-    const self = this;
-    const self2 = this;
-    const _HermesInternal7 = HermesInternal;
-    const str13 = new URLSearchParams(obj);
-    combined1 = "" + combined + "?" + str13.toString();
-  }
-  return combined1;
-};
-export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
-  const obj = _mod12345;
-  const url = obj.makeDsn(arg0);
-  if (url) {
-    let str = "";
-    if (url.protocol) {
-      const _HermesInternal = HermesInternal;
-      str = "" + url.protocol + ":";
-    }
-    let str3 = "";
-    if (url.port) {
-      const _HermesInternal2 = HermesInternal;
-      str3 = ":" + url.port;
-    }
-    const host = url.host;
-    let str5 = "";
-    if (url.path) {
-      const _HermesInternal3 = HermesInternal;
-      str5 = "/" + url.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
-    const _HermesInternal6 = HermesInternal;
-    const tmp2Result = _mod12345;
-    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
-    let tmp16 = combined1;
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      tmp16 = combined1;
-      while (keys[tmp] !== undefined) {
-        if ("dsn" === tmp19) {
-          continue;
+let obj = function _flush() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
         } else {
-          combined1 = tmp18;
-          if ("onClose" === tmp19) {
-            continue;
+          let flushResult;
+          const obj4 = require("module_12331");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            flushResult = client.flush(tmp10);
           } else {
-            if ("user" === tmp19) {
-              user = user.user;
-              combined1 = tmp18;
-              if (!user) {
-                continue;
-              } else {
-                let sum = tmp18;
-                if (user.name) {
-                  let _encodeURIComponent3 = encodeURIComponent;
-                  let _HermesInternal8 = HermesInternal;
-                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
-                }
-                combined1 = sum;
-                if (!user.email) {
-                  continue;
-                } else {
-                  let _encodeURIComponent4 = encodeURIComponent;
-                  let _HermesInternal9 = HermesInternal;
-                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
-                  continue;
-                }
-                continue;
-              }
-              continue;
-            } else {
-              let _encodeURIComponent = encodeURIComponent;
-              let _encodeURIComponent2 = encodeURIComponent;
-              let encodeURIComponentResult = encodeURIComponent(tmp19);
-              let _HermesInternal7 = HermesInternal;
-              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
-              continue;
+            if (require("module_12332").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events. No client defined.");
             }
-            continue;
+            flushResult = Promise.resolve(false);
           }
-          continue;
+          c1 = 3;
+          obj = { value: flushResult, done: true };
+          return obj;
         }
-        continue;
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
       }
     }
-    const _HermesInternal10 = HermesInternal;
-    return "" + combined + "?" + tmp16;
-  } else {
-    return "";
+  });
+  return obj(...arguments);
+};
+obj = function _close() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closeResult;
+          const obj4 = require("module_12331");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            closeResult = client.close(tmp10);
+          } else {
+            if (require("module_12332").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events and disable SDK. No client defined.");
+            }
+            closeResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: closeResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function endSession() {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  const obj3 = _mod12331;
+  const currentScope = obj3.getCurrentScope();
+  const tmp3 = currentScope.getSession() || isolationScope.getSession();
+  if (tmp3) {
+    const tmpResult = _mod12327;
+    tmpResult.closeSession(tmp3);
   }
+  const tmpResult4 = _mod12331;
+  const isolationScope1 = tmpResult4.getIsolationScope();
+  const tmpResult5 = _mod12331;
+  const currentScope1 = tmpResult5.getCurrentScope();
+  const tmpResult6 = _mod12331;
+  const client = tmpResult6.getClient();
+  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
+  const tmp6 = tmp5 && client;
+  if (tmp6) {
+    client.captureSession(tmp5);
+  }
+  isolationScope.setSession();
+  currentScope.setSession();
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+
+export const addEventProcessor = function addEventProcessor(arg0) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.addEventProcessor(arg0);
+};
+export const captureCheckIn = function captureCheckIn(arg0, arg1) {
+  obj = _mod12331;
+  const currentScope = obj.getCurrentScope();
+  const obj2 = _mod12331;
+  const client = obj2.getClient();
+  if (client) {
+    if (client.captureCheckIn) {
+      return client.captureCheckIn(arg0, arg1, currentScope);
+    } else if (_mod12332.DEBUG_BUILD) {
+      const logger2 = tmp(12304).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+  } else if (_mod12332.DEBUG_BUILD) {
+    const logger = tmp(12304).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult = _mod12315;
+  return tmpResult.uuid4();
+};
+export const captureEvent = function captureEvent(arg0, arg1) {
+  obj = _mod12331;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureEvent(arg0, arg1);
+};
+export const captureException = function captureException(arg0, arg1) {
+  obj = _mod12331;
+  const currentScope = obj.getCurrentScope();
+  const captureException = currentScope.captureException;
+  const obj2 = _mod12353;
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+};
+export const captureMessage = function captureMessage(arg0, captureContext) {
+  let tmp;
+  if (typeof captureContext === "string") {
+    tmp = captureContext;
+  }
+  let tmp2;
+  if (typeof captureContext !== "string") {
+    tmp2 = { captureContext };
+    const obj2 = { captureContext };
+  }
+  obj = _mod12331;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureMessage(arg0, tmp, tmp2);
+};
+export const captureSession = function captureSession() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  if (flag) {
+    endSession();
+  } else {
+    obj = _mod12331;
+    const isolationScope = obj.getIsolationScope();
+    const obj3 = _mod12331;
+    const currentScope = obj3.getCurrentScope();
+    const obj5 = _mod12331;
+    const client = obj5.getClient();
+    const tmp3 = currentScope.getSession() || isolationScope.getSession();
+    const tmp4 = tmp3 && client;
+    if (tmp4) {
+      client.captureSession(tmp3);
+    }
+  }
+};
+export const close = function close(arg0) {
+  return obj(...arguments);
+};
+export { endSession };
+export const flush = function flush(arg0) {
+  return obj(...arguments);
+};
+export const isEnabled = function isEnabled() {
+  obj = _mod12331;
+  const client = obj.getClient();
+  const transport = client && false !== client.getOptions().enabled && client.getTransport();
+  return transport;
+};
+export const isInitialized = function isInitialized() {
+  obj = _mod12331;
+  return obj.getClient();
+};
+export const lastEventId = function lastEventId() {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  return isolationScope.lastEventId();
+};
+export const setContext = function setContext(arg0, arg1) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setContext(arg0, arg1);
+};
+export const setExtra = function setExtra(arg0, arg1) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtra(arg0, arg1);
+};
+export const setExtras = function setExtras(arg0) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtras(arg0);
+};
+export const setTag = function setTag(arg0, arg1) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTag(arg0, arg1);
+};
+export const setTags = function setTags(arg0) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTags(arg0);
+};
+export const setUser = function setUser(arg0) {
+  obj = _mod12331;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setUser(arg0);
+};
+export const startSession = function startSession(arg0) {
+  let environment;
+  let release;
+  obj = _mod12331;
+  const client = obj.getClient();
+  const obj3 = _mod12331;
+  const isolationScope = obj3.getIsolationScope();
+  const obj5 = _mod12331;
+  const currentScope = obj5.getCurrentScope();
+  ({ environment, release } = client && client.getOptions() || {});
+  client && client.getOptions() || {};
+  if (undefined === environment) {
+    environment = tmp(12341).DEFAULT_ENVIRONMENT;
+  }
+  const userAgent = (_mod12305.GLOBAL_OBJ.navigator || {}).userAgent;
+  _mod12305.GLOBAL_OBJ.navigator || {};
+  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
+  const makeSession = _mod12327.makeSession;
+  _mod12327;
+  let tmp7 = userAgent;
+  currentScope.getUser() || isolationScope.getUser();
+  if (tmp7) {
+    tmp7 = { userAgent };
+    const obj4 = { userAgent };
+  }
+  const merged = Object.assign(tmp7);
+  const merged1 = Object.assign(arg0);
+  const session = makeSession(obj2);
+  const session1 = isolationScope.getSession();
+  const tmp12 = session1 && "ok" === session1.status;
+  if (tmp12) {
+    const tmpResult2 = _mod12327;
+    tmpResult2.updateSession(session1, { status: "exited" });
+  }
+  endSession();
+  isolationScope.setSession(session);
+  currentScope.setSession(session);
+  return session;
+};
+export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
+  let closure_1;
+  _require = monitorSlug;
+  dependencyMap = arg1;
+  function finishCheckIn(status) {
+    let obj2;
+    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
+    obj2 = _browserPerformanceTimeOriginMode;
+    const obj3 = _mod12331;
+    const currentScope = obj3.getCurrentScope();
+    const obj4 = _mod12331;
+    const client = obj4.getClient();
+    if (client) {
+      if (client.captureCheckIn) {
+        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
+      } else if (_mod12332.DEBUG_BUILD) {
+        const logger2 = tmp(12304).logger;
+        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+      }
+    } else if (_mod12332.DEBUG_BUILD) {
+      const logger = tmp(12304).logger;
+      logger.warn("Cannot capture check-in. No client defined.");
+    }
+    const tmpResult = _mod12315;
+    tmpResult.uuid4();
+  }
+  obj = { monitorSlug, status: "in_progress" };
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj2 = require("module_12331");
+  let currentScope = obj2.getCurrentScope();
+  let obj3 = require("module_12331");
+  let client = obj3.getClient();
+  if (client) {
+    let captureCheckInResult;
+    if (client.captureCheckIn) {
+      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
+    } else if (tmp(12332).DEBUG_BUILD) {
+      let logger2 = tmp(12304).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+    _asyncToGenerator = captureCheckInResult;
+    let tmpResult = tmp(12318);
+    let closure_3 = tmpResult.timestampInSeconds();
+    const tmpResult3 = tmp(12331);
+    return tmpResult3.withIsolationScope(() => {
+      try {
+        const tmp2 = closure_1();
+        obj = _mod12311;
+        if (obj.isThenable(tmp2)) {
+          const resolved = Promise.resolve(tmp2);
+          resolved.then(() => {
+            finishCheckIn("ok");
+          }, (arg0) => {
+            finishCheckIn("error");
+            throw arg0;
+          });
+        } else {
+          finishCheckIn("ok");
+        }
+        return tmp2;
+      } catch (tmp11) {
+        finishCheckIn("error");
+        throw tmp11;
+      }
+    });
+  } else if (tmp(12332).DEBUG_BUILD) {
+    let logger = tmp(12304).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult4 = tmp(12315);
+  captureCheckInResult = tmpResult4.uuid4();
 };

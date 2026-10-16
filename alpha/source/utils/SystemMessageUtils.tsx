@@ -1,25 +1,25 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8225
+// Function ID: 8226
 // Name: SystemMessageUtils
-// Dependencies: [32, 4820, 502, 2068, 2090, 4819, 1392, 1087, 1128, 11, 8225, 8229, 5471, 5483, 8230, 8232, 5845, 5496, 8233, 8234, 7456, 8235, 8236, 4797, 8237, 2]
+// Dependencies: [32, 4820, 502, 2068, 2090, 4819, 1392, 1087, 1128, 11, 8226, 8230, 5472, 5484, 8231, 8233, 5846, 5497, 8234, 8235, 7458, 8236, 8237, 4797, 8238, 2]
 
-// Module 8224 (SystemMessageUtils)
+// Module 8225 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl23 from "intl" /* 1128 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4797 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5471 */;
-import useChannelName from "useChannelName" /* 5483 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5496 */;
-import useMessageAuthor from "useMessageAuthor" /* 5845 */;
-import MarkupParser from "MarkupParser" /* 8225 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8229 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8230 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8232 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8233 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8234 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8235 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8236 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8237 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5472 */;
+import useChannelName from "useChannelName" /* 5484 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5497 */;
+import useMessageAuthor from "useMessageAuthor" /* 5846 */;
+import MarkupParser from "MarkupParser" /* 8226 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8230 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8231 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8233 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8234 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8235 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8236 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8237 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 4820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

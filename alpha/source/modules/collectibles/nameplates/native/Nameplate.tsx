@@ -1,17 +1,17 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9253
+// Function ID: 9254
 // Name: Nameplate
-// Dependencies: [109, 19, 5143, 21, 5153, 558, 576, 504, 5090, 4909, 5154, 1992, 9253, 5453, 1384, 9242, 5091, 2]
+// Dependencies: [109, 19, 5144, 21, 5154, 558, 576, 504, 5090, 4909, 5155, 1992, 9254, 5454, 1384, 9243, 5091, 2]
 
-// Module 9252 (Nameplate)
+// Module 9253 (Nameplate)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,7 +207,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
         tmp27 = cResult[8];
       }
       if (cResult[9] !== nameplate) {
-        const tmpResult8 = tmp(9253);
+        const tmpResult8 = tmp(9254);
         const nameplateAssets = tmpResult8.getNameplateAssets(nameplate);
         cResult[9] = nameplate;
         class B {
@@ -464,7 +464,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const animatedStyle = tmpResult.useAnimatedStyle(A);
   const tmpResult4 = tmp(1992);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9253);
+  const tmpResult5 = tmp(9254);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp13 = true === flag7;
@@ -490,7 +490,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items3 };
     const tmp16 = closure_7;
-    const tmp5Result = tmp5(5453);
+    const tmp5Result = tmp5(5454);
     if (flag4) {
       num2 = -2;
     }
@@ -505,7 +505,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     let tmp18;
     if (tmp13) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp18 = closure_7(tmp(9242).APNGPlayer, obj4);
+      tmp18 = closure_7(tmp(9243).APNGPlayer, obj4);
     }
     items4[1] = tmp18;
     obj2.children = items4;

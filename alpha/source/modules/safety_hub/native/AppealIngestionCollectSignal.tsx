@@ -1,22 +1,22 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12566
+// Function ID: 12567
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 7732, 21, 5153, 587, 558, 576, 4891, 7731, 8808, 12533, 584, 5118, 12561, 2002, 1128, 12539, 5149, 2]
+// Dependencies: [19, 17, 7733, 21, 5154, 587, 558, 576, 4891, 7732, 8809, 12539, 584, 5118, 12567, 2002, 1128, 12545, 5150, 2]
 // Exports: default
 
-// Module 12560 (AppealIngestionCollectSignal)
+// Module 12566 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import react_native2 from "react-native" /* 4891 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7731 */;
-import Form2 from "Form" /* 8808 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7732 */;
+import Form2 from "Form" /* 8809 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7732 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7733 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -201,23 +201,23 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(12561, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(12567, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(12533);
+  let obj = isDsaEligible(12539);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1128).intl;
   const stringResult = intl.string(isDsaEligible(1128).t["C5q+pW"]);
   const intl2 = isDsaEligible(1128).intl;
   let obj2 = { children: items };
   const stringResult1 = intl2.string(isDsaEligible(1128).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(12539).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(12539).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const AppealIngestionModalScreen = isDsaEligible(12545).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(12545).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8808).Form;
+  Form = isDsaEligible(8809).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -226,11 +226,11 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(closure_9, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8808).FormSection;
+  const FormSection = isDsaEligible(8809).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1128).t["8k9GCW"], {}) };
-  Text = isDsaEligible(5149).Text;
+  Text = isDsaEligible(5150).Text;
   intl3 = isDsaEligible(1128).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);

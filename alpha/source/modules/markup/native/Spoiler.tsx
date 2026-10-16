@@ -1,17 +1,17 @@
-// Module ID: 11828
-// Function ID: 11829
+// Module ID: 11825
+// Function ID: 11826
 // Name: Spoiler
-// Dependencies: [19, 17, 1087, 11821, 21, 5153, 1384, 587, 4886, 1202, 2]
+// Dependencies: [19, 17, 1087, 11818, 21, 5154, 1384, 587, 4886, 1202, 2]
 
-// Module 11828 (Spoiler)
+// Module 11825 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 4886 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11821 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11818 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ class Spoiler extends PureComponent {
       let tmp10 = revealed;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f110588 = (props) => {
+        const f110627 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -88,7 +88,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_4.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f110588), style: items, onPress: "r" };
+            const obj = { children: Children.map(props.props.children, f110627), style: items, onPress: "r" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -124,7 +124,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f110588);
+              mapped = Children.map(type, f110627);
             }
           }
           tmp10 = mapped;

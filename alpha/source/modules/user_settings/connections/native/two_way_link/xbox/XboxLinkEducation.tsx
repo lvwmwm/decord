@@ -1,23 +1,23 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13775
+// Function ID: 13776
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1087, 21, 5153, 558, 576, 9452, 2131, 13765, 5091, 1128, 5149, 5441, 7037, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 558, 576, 9453, 2131, 13776, 5091, 1128, 5150, 5442, 7039, 2]
 
-// Module 13764 (XboxLinkEducation)
+// Module 13775 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7037 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9452 */;
-import _modDef13765 from "module_13765" /* 13765 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7039 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9453 */;
+import _modDef13776 from "module_13776" /* 13776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef13765 };
+    const obj10 = { uri: _modDef13776 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   } else {
     tmp24 = cResult[21];
   }
-  const Text = tmp(5149).Text;
+  const Text = tmp(5150).Text;
   const body = twoWayLinkStyles.body;
   const intl2 = tmp(1128).intl;
   const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef13765 };
+    const obj = { uri: _modDef13776 };
     return obj;
   }, []);
   items = [, , ];

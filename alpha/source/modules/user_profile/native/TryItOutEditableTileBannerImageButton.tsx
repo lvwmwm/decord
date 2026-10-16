@@ -1,9 +1,9 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 15633
+// Function ID: 15634
 // Name: TryItOutEditableTileBannerImageButton
-// Dependencies: [19, 17, 5143, 8511, 7539, 21, 1105, 587, 558, 576, 504, 2044, 8537, 15624, 15625, 1128, 15622, 5091, 1417, 2]
+// Dependencies: [19, 17, 5144, 8512, 7540, 21, 1105, 587, 558, 576, 504, 2044, 8538, 15634, 15635, 1128, 15632, 5091, 1417, 2]
 
-// Module 15623 (TryItOutEditableTileBannerImageButton)
+// Module 15633 (TryItOutEditableTileBannerImageButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,14 +12,14 @@ import intl2 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8537 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15622 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15625 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8538 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15632 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15635 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8511 */;
-import UserProfileStore from "UserProfileStore" /* 7539 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8512 */;
+import UserProfileStore from "UserProfileStore" /* 7540 */;
 import ColorUtils from "utils/ColorUtils" /* 1105 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -75,7 +75,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Editab
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp9(15624)(primaryColor).hex;
+  const hex = tmp9(15634)(primaryColor).hex;
   const tmp9Result = UserProfileEditableTileBaseDefault;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -165,7 +165,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Editab
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp5(15624)(primaryColor).hex;
+  const hex = tmp5(15634)(primaryColor).hex;
   UserProfileEditableTileBaseDefault;
   const intl = tmp(1128).intl;
   const tmpResult = UserProfileEditingAccessibilityUtils;

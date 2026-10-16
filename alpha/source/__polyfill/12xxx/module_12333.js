@@ -1,42 +1,23 @@
 // Module ID: 12333
 // Function ID: 12334
-// Dependencies: [12305]
-// Exports: handleCallbackErrors
+// Dependencies: [12310]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12333
-import _mod12305 from "module_12305" /* 12305 */;
+import _mod12310 from "module_12310" /* 12310 */;
 
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    const obj = _mod12305;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      return promise;
-    }
-  }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
-  }
-  try {
-    return maybeHandlePromiseRejection(fn(), fn2, fn);
-  } catch (tmp2) {
-    fn2(tmp2);
-    fn();
-    throw tmp2;
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod12310;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod12310;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
 };

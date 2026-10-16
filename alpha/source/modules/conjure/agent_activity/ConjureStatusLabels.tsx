@@ -1,13 +1,13 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12061
+// Function ID: 12062
 // Name: ConjureStatusLabels
-// Dependencies: [3865, 1128, 10908, 2]
+// Dependencies: [3865, 1128, 10905, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 12062 (ConjureStatusLabels)
+// Module 12061 (ConjureStatusLabels)
 import intl5 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10908 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10905 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {

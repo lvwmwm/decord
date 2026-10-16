@@ -1,10 +1,10 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9417
+// Function ID: 9418
 // Name: VirtualCurrencyUtils
 // Dependencies: [1087, 1089, 2065, 1394, 4997, 2052, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9416 (VirtualCurrencyUtils)
+// Module 9417 (VirtualCurrencyUtils)
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;

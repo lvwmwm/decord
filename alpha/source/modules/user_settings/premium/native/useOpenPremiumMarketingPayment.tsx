@@ -1,12 +1,12 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14497
+// Function ID: 14498
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1087, 1394, 558, 576, 7075, 7388, 7387, 7365, 1128, 4828, 2]
+// Dependencies: [19, 1087, 1394, 558, 576, 7077, 7390, 7389, 7367, 1128, 4828, 2]
 
-// Module 14487 (useOpenPremiumMarketingPayment)
+// Module 14497 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1128 */;
 import PremiumUtils from "PremiumUtils" /* 4828 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7365 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7367 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -29,10 +29,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
   const tmp2 = dependencyMap;
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
-  analyticsLocations = premiumTrialOfferPremiumType(7075)(arg0).analyticsLocations;
-  const obj2 = analyticsLocations(7388);
+  analyticsLocations = premiumTrialOfferPremiumType(7077)(arg0).analyticsLocations;
+  const obj2 = analyticsLocations(7390);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
-  const obj3 = analyticsLocations(7387);
+  const obj3 = analyticsLocations(7389);
   premiumTrialOfferPremiumType = obj3.usePremiumTrialOfferPremiumType();
   if (cResult[0] === analyticsLocations) {
     let tmp6;

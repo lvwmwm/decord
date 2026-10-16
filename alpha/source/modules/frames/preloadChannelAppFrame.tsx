@@ -1,15 +1,15 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17292
+// Function ID: 17293
 // Name: preloadChannelAppFrame
-// Dependencies: [2068, 4809, 10950, 10934, 1087, 2063, 10963, 10951, 10966, 2]
+// Dependencies: [2068, 4809, 10947, 10931, 1087, 2063, 10960, 10948, 10963, 2]
 // Exports: claimPreloadedFrame, preloadChannelAppFrame
 
-// Module 17279 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 10951 */;
+// Module 17292 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 10948 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import FramesStore from "FramesStore" /* 10950 */;
-import FramesConstants from "FramesConstants" /* 10934 */;
+import FramesStore from "FramesStore" /* 10947 */;
+import FramesConstants from "FramesConstants" /* 10931 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
   let closure_0;
   let timeout;
   let timeout1;
-  const f128329 = () => {
+  const f128416 = () => {
     set.delete(closure_0);
     let tmp4 = null != value.launchRequestId;
     if (tmp4) {
@@ -68,7 +68,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
           }
           const result = obj6.set(tmp25, value);
           const stopTimer2 = value.stopTimer;
-          stopTimer2.start(5000, f128329);
+          stopTimer2.start(5000, f128416);
         } else {
           let obj = FramesStore;
           if (null == FramesStore.getFrame(tmp25)) {
@@ -86,7 +86,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
                 }
                 const result1 = obj6.set(tmp25, value3);
                 let stopTimer = value3.stopTimer;
-                stopTimer.start(5000, f128329);
+                stopTimer.start(5000, f128416);
                 const obj5 = { applicationId: application_id, surface: tmp3, showErrorModal: false };
                 const obj3 = require("launchFrame");
                 const launchFrameResult = obj3.launchFrame(obj5);

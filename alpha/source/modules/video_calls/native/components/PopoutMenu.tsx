@@ -1,21 +1,21 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 11279
+// Function ID: 11280
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 1202, 8808, 7051, 1499, 1633, 12, 4909, 5154, 5121, 6557, 2]
+// Dependencies: [32, 19, 17, 21, 5154, 587, 558, 576, 1202, 8809, 7053, 1499, 1633, 12, 4909, 5155, 5121, 6559, 2]
 
-// Module 11282 (PopoutMenu)
+// Module 11279 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Patterns from "Patterns" /* 5121 */;
-import timing from "timing" /* 5154 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
-import FormRowDefault from "FormRow" /* 7051 */;
+import timing from "timing" /* 5155 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
+import FormRowDefault from "FormRow" /* 7053 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj2;
 let tmp;
 const native = tmp(1202);
 const ReanimatedRexport = tmp(4909);
-const Form = tmp(8808);
+const Form = tmp(8809);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -393,7 +393,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(o
           return obj;
         }
       }
-      const obj3 = { withTiming: tmp(5154).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1202).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4909).runOnJS, handleClose, EXTRA_PADDING: 8 };
+      const obj3 = { withTiming: tmp(5155).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1202).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4909).runOnJS, handleClose, EXTRA_PADDING: 8 };
       const useAnimatedStyle = tmpResult.useAnimatedStyle;
       De.__closure = obj3;
       De.__workletHash = 4709130936628;
@@ -472,7 +472,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(o
             }
           }
         }
-        const Gesture = tmp(6557).Gesture;
+        const Gesture = tmp(6559).Gesture;
         const LongPressResult = Gesture.LongPress();
         function be() {
           const obj = ReanimatedRexport;
@@ -554,7 +554,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(o
         }
         const obj6 = { gesture: tmp39, children: closure_6(first2, obj8) };
         obj8 = { ref: ref1, children: trigger };
-        const GestureDetector = tmp(6557).GestureDetector;
+        const GestureDetector = tmp(6559).GestureDetector;
         const items2 = [closure_6(GestureDetector, obj6), ];
         const tmp47 = ref2;
         class De {

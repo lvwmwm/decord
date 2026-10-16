@@ -1,15 +1,15 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8276
+// Function ID: 8277
 // Name: PurchaseNotificationSystemMessage
-// Dependencies: [2000, 8276, 2]
+// Dependencies: [2000, 8277, 2]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 8275 (PurchaseNotificationSystemMessage)
+// Module 8276 (PurchaseNotificationSystemMessage)
 import Server from "Server" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const GuildProductPurchaseSystemMessage = tmp2(8276);
+const GuildProductPurchaseSystemMessage = tmp2(8277);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");
 
 export const createPurchaseNotificationSystemMessage = function createPurchaseNotificationSystemMessage(message) {

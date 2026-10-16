@@ -1,18 +1,18 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8311
+// Function ID: 8312
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 4834, 1394, 558, 7388, 8311, 8312, 576, 504, 4761, 8313, 8314, 2000, 8317, 2]
+// Dependencies: [32, 19, 4834, 1394, 558, 7390, 8312, 8313, 576, 504, 4761, 8314, 8315, 2000, 8318, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 8310 (PremiumSubscriptionOfferUtil)
+// Module 8311 (PremiumSubscriptionOfferUtil)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7388 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8311 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8312 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8313 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8317 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7390 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8312 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8313 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8314 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8318 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4834 */;
@@ -38,7 +38,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(8314);
+const UserOfferActionCreators = tmp(8315);
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {
@@ -64,7 +64,7 @@ function getDiscountInfo(active_discount_id) {
                 return { duration: 1, percentage: 40, discountId: active_discount_id };
               } else if (authStore5 === active_discount_id) {
                 return { duration: 3, percentage: 30, discountId: active_discount_id };
-              } else if (trackedExposureExperiments === active_discount_id) {
+              } else if (closure_17 === active_discount_id) {
                 return { duration: 1, percentage: 30, discountId: active_discount_id };
               }
             }

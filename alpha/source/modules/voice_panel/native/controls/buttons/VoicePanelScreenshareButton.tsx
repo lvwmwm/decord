@@ -1,22 +1,22 @@
-// Module ID: 18255
-// Function ID: 18256
+// Module ID: 18265
+// Function ID: 18266
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 2068, 1087, 21, 1630, 13140, 18256, 5153, 587, 558, 576, 12842, 18239, 504, 38, 11366, 13703, 5363, 13706, 1128, 1267, 18258, 6384, 18240, 2]
+// Dependencies: [19, 2068, 1087, 21, 1630, 13148, 18266, 5154, 587, 558, 576, 12848, 18249, 504, 38, 11363, 13714, 5364, 13717, 1128, 1267, 18268, 6386, 18250, 2]
 
-// Module 18255 (VoicePanelScreenshareButton)
+// Module 18265 (VoicePanelScreenshareButton)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import useAlertStore from "useAlertStore" /* 5363 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13140 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13706 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 18256 */;
+import useAlertStore from "useAlertStore" /* 5364 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13148 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13717 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 18266 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

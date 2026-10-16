@@ -1,16 +1,16 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 12736
+// Function ID: 12737
 // Name: createConversationHeader
-// Dependencies: [7967, 8111, 12208, 1128, 3767, 9833, 2]
-// Exports: default, findConversationHeaderRowIndex, isConversationStartMessage
+// Dependencies: [7968, 8112, 12212, 1128, 3767, 9832, 2]
+// Exports: default, findConversationHeaderRowIndex
 
-// Module 12726 (createConversationHeader)
+// Module 12736 (createConversationHeader)
 import intl2 from "intl" /* 1128 */;
 import _modDef3767 from "module_3767" /* 3767 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8111 */;
-import computeScrollData from "computeScrollData" /* 9833 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12208 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7967 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8112 */;
+import computeScrollData from "computeScrollData" /* 9832 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12212 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7968 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,9 +25,6 @@ export default function createConversationHeader(conversationId) {
   obj2 = renderer_EmbedUtils;
   intl = intl2.intl;
   return obj;
-};
-export const isConversationStartMessage = function isConversationStartMessage(startMessageId, id) {
-  return startMessageId.startMessageId === id && startMessageId.messageCount > 1;
 };
 export const findConversationHeaderRowIndex = function findConversationHeaderRowIndex(previousRows, startMessageId) {
   const obj = computeScrollData;

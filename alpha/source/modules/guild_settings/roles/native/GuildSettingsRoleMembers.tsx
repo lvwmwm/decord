@@ -1,10 +1,10 @@
-// Module ID: 18753
-// Function ID: 18754
+// Module ID: 18766
+// Function ID: 18767
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7041, 1087, 21, 5153, 587, 4868, 1128, 18731, 7233, 504, 5361, 8863, 1202, 1267, 5118, 18732, 2002, 10548, 7793, 6518, 6961, 5108, 5149, 6402, 10858, 2]
+// Dependencies: [32, 19, 17, 7043, 1087, 21, 5154, 587, 4868, 1128, 18744, 7235, 504, 5362, 8864, 1202, 1267, 5118, 18745, 2002, 10549, 7794, 6520, 6963, 5108, 5150, 6404, 10855, 2]
 // Exports: default
 
-// Module 18753 (GuildSettingsRoleMembers)
+// Module 18766 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,12 +13,12 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8863 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7041 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7043 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let item;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(18732, dependencyMap.paths);
+    const tmp3 = asyncRequire(18745, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

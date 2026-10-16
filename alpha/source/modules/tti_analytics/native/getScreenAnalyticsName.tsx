@@ -1,13 +1,13 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17074
+// Function ID: 17075
 // Name: getScreenAnalyticsName
-// Dependencies: [2068, 7578, 2075, 5036, 5035, 2]
+// Dependencies: [2068, 7579, 2075, 5036, 5035, 2]
 // Exports: default, getChannelScreenName
 
-// Module 17060 (getScreenAnalyticsName)
+// Module 17074 (getScreenAnalyticsName)
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import RootNavigationRef from "RootNavigationRef" /* 5036 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7578 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7579 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 

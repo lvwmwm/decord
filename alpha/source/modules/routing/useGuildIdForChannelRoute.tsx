@@ -1,10 +1,10 @@
-// Module ID: 5165
-// Function ID: 5166
+// Module ID: 5166
+// Function ID: 5167
 // Name: useGuildIdForChannelRoute
 // Dependencies: [2071, 4998, 1087, 558, 576, 504, 2093, 2]
 // Exports: getGuildIdForGenericRedirect
 
-// Module 5165 (useGuildIdForChannelRoute)
+// Module 5166 (useGuildIdForChannelRoute)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;

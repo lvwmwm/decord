@@ -1,9 +1,9 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12828
+// Function ID: 12829
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5143, 21, 5153, 558, 576, 4877, 587, 504, 2034, 1384, 9242, 5091, 2]
+// Dependencies: [19, 17, 5144, 21, 5154, 558, 576, 4877, 587, 504, 2034, 1384, 9243, 5091, 2]
 
-// Module 12822 (GiftIconTrinketsAnimation)
+// Module 12828 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,8 +13,8 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import StringUtils from "StringUtils" /* 2034 */;
 import useToken from "useToken" /* 4877 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import createStyles from "createStyles" /* 5153 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult4 = PlatformUtils;
     if (tmpResult4.isAndroid()) {
       const obj4 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp12Result = tmp12(tmp(9242).APNGPlayer, obj4);
+      tmp12Result = tmp12(tmp(9243).APNGPlayer, obj4);
     } else {
       const obj5 = { source: obj6, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj6 = { uri: trinketsAnimationUrl };
@@ -108,7 +108,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
       const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp7Result = tmp7(tmp(9242).APNGPlayer, obj5);
+      tmp7Result = tmp7(tmp(9243).APNGPlayer, obj5);
     } else {
       const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj7 = { uri: trinketsAnimationUrl };

@@ -1,9 +1,9 @@
-// Module ID: 18762
-// Function ID: 18763
+// Module ID: 18775
+// Function ID: 18776
 // Name: ChangeVanityURLModalStore
 // Dependencies: [1087, 504, 584, 2]
 
-// Module 18762 (ChangeVanityURLModalStore)
+// Module 18775 (ChangeVanityURLModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

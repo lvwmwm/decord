@@ -1,9 +1,9 @@
-// Module ID: 13767
-// Function ID: 13768
+// Module ID: 13778
+// Function ID: 13779
 // Name: useConnectRetry
 // Dependencies: [19, 558, 576, 2]
 
-// Module 13767 (useConnectRetry)
+// Module 13778 (useConnectRetry)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

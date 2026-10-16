@@ -1,9 +1,9 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 12969
+// Function ID: 12970
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5143, 6205, 1087, 1395, 21, 5153, 1384, 587, 4909, 5154, 558, 576, 5458, 504, 5440, 2044, 4823, 8207, 1417, 7043, 1267, 7100, 9676, 5118, 5149, 1128, 12860, 12962, 5441, 7120, 2]
+// Dependencies: [5, 32, 19, 17, 5144, 6206, 1087, 1395, 21, 5154, 1384, 587, 4909, 5155, 558, 576, 5459, 504, 5441, 2044, 4823, 8208, 1417, 7045, 1267, 7102, 9675, 5118, 5150, 1128, 12868, 12970, 5442, 7122, 2]
 
-// Module 12961 (DoubleTapToReactActionSheet)
+// Module 12969 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,15 +13,15 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import spring from "spring" /* 5440 */;
+import timing from "timing" /* 5155 */;
+import spring from "spring" /* 5441 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import EmojiStore from "EmojiStore" /* 6205 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import EmojiStore from "EmojiStore" /* 6206 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8207);
+const DoubleTapToReactUtils = tmp(8208);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;
@@ -235,7 +235,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiC
   const sharedValue2 = obj3.useSharedValue(0.2);
   let obj4 = top(4909);
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = top(5458);
+  const obj5 = top(5459);
   const mountLayoutEffect = obj5.useMountLayoutEffect(() => {
     const obj = { positionValue: sharedValue, rotationValue: sharedValue1, sizeValue: sharedValue2, opacityValue: sharedValue3, leading: dependencyMap };
     randomizeAnimationValues(obj);

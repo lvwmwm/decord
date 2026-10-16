@@ -1,9 +1,9 @@
-// Module ID: 17435
-// Function ID: 17436
+// Module ID: 17445
+// Function ID: 17446
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1087, 2065, 21, 5153, 558, 576, 17436, 1211, 1128, 7957, 2044, 2052, 7317, 2]
+// Dependencies: [19, 17, 1087, 2065, 21, 5154, 558, 576, 17446, 1211, 1128, 7958, 2044, 2052, 7319, 2]
 
-// Module 17435 (usePrivateProfileCoachmarkProps)
+// Module 17445 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import openUserSettings from "openUserSettings" /* 7317 */;
+import openUserSettings from "openUserSettings" /* 7319 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(17436);
+const PrivateProfileAbstractUI = tmp(17446);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(7957);
+  let obj2 = markAsDismissed(7958);
   let userIsTeen = obj2.useUserIsTeen();
   const ProfileVisibility = markAsDismissed(2044).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();

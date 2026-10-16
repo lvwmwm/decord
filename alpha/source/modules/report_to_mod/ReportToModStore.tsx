@@ -1,9 +1,9 @@
-// Module ID: 9914
-// Function ID: 9915
+// Module ID: 9915
+// Function ID: 9916
 // Name: ReportToModStore
 // Dependencies: [4998, 504, 584, 2]
 
-// Module 9914 (ReportToModStore)
+// Module 9915 (ReportToModStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;

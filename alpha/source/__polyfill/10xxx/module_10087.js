@@ -1,63 +1,108 @@
 // Module ID: 10087
 // Function ID: 10088
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10054, 10057, 10058, 10074]
 
 // Module 10087
+import _mod10054 from "module_10054" /* 10054 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10058 */;
+import _mod10074 from "module_10074" /* 10074 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class OverlapRemovalRefiner {
-  constructor() {
-    _classCallCheck(this, OverlapRemovalRefiner);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(debug, arg1) {
+class ENMergeRelativeFollowByDateRefiner {
+  constructor() {
+    let constructResult;
     const self = this;
-    if (arg1.length < 2) {
-      return arg1;
+    _classCallCheck(this, ENMergeRelativeFollowByDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeFollowByDateRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      const items = [];
-      let first = arg1[0];
-      let num = 1;
-      let num2 = 1;
-      let tmp8 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp4;
-          let tmp = arg1[num];
-          if (tmp.index >= first.index + first.text.length) {
-            let arr = items.push(first);
-            tmp4 = tmp;
-          } else {
-            first = null;
-            let closure_1 = null;
-            if (tmp.text.length > first.text.length) {
-              first = tmp;
-              closure_1 = first;
-              tmp4 = tmp;
-            } else {
-              closure_1 = tmp;
-              tmp4 = first;
-            }
-            let debugResult = debug.debug(() => {
-              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
-            });
-          }
-          num = num2 + 1;
-          first = tmp4;
-          tmp8 = tmp4;
-          num2 = num;
-        } while (num < arg1.length);
-      }
-      if (null != tmp8) {
-        items.push(tmp8);
-      }
-      return items;
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMergeRelativeFollowByDateRefiner, _mod10074.MergingRefiner);
+const entry = {
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*$/i;
   }
 };
-let items = [entry];
+const items = [
+  entry,
+  {
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, text, start) {
+      let match = str.match(this.patternBetween());
+      if (match) {
+        let tmp5 = null == str.match(/\s+(before|from)$/i);
+        null != text.text.match(/\s+(before|from)$/i);
+        if (tmp5) {
+          const str2 = text.text;
+          tmp5 = null == str2.match(/\s+(after|since)$/i);
+        }
+        let tmp6 = !tmp5;
+        if (tmp6) {
+          start = start.start;
+          let value = start.get("day");
+          if (value) {
+            const start2 = start.start;
+            value = start2.get("month");
+          }
+          if (value) {
+            const start3 = start.start;
+            value = start3.get("year");
+          }
+          tmp6 = value;
+        }
+        match = tmp6;
+      }
+      return match;
+    }
+  },
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, text, start) {
+      const parseDurationResult = _mod10054.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/\s+(before|from)$/i)) {
+        reverseDurationResult = tmp(10057).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(10058).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(10058).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      const reference = start.reference;
+      const index = text.index;
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
+      return parsingResult;
+    }
+  }
+];
 
-export default _createClass(OverlapRemovalRefiner, items);
+export default _createClass(ENMergeRelativeFollowByDateRefiner, items);

@@ -1,10 +1,10 @@
-// Module ID: 9667
-// Function ID: 9668
+// Module ID: 9666
+// Function ID: 9667
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6205, 2090, 6181, 1392, 6209, 1087, 1395, 1243, 1394, 1281, 9668, 5168, 9669, 9671, 9672, 504, 1991, 9673, 1128, 4827, 4823, 1267, 12, 1104, 558, 576, 2049, 2]
+// Dependencies: [19, 6206, 2090, 6182, 1392, 6210, 1087, 1395, 1243, 1394, 1281, 9667, 5169, 9668, 9670, 9671, 504, 1991, 9672, 1128, 4827, 4823, 1267, 12, 1104, 558, 576, 2049, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9667 (EmojiPickerUtils)
+// Module 9666 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl14 from "intl" /* 1128 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
@@ -13,14 +13,14 @@ import v1 from "v1" /* 1281 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9668 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5169 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9667 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6205 */;
+import EmojiStore from "EmojiStore" /* 6206 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SortedGuildStore from "SortedGuildStore" /* 6181 */;
+import SortedGuildStore from "SortedGuildStore" /* 6182 */;
 import UserStore from "UserStore" /* 1392 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6209 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6210 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import module_12 from "module_12" /* 12 */;
@@ -980,8 +980,8 @@ export const trackEmojiSelect = function trackEmojiSelect(arg0) {
   }
   let tmp10 = null != lockedReason;
   if (tmp10) {
-    tmp10 = { locked_reason: trackedExposureExperiments[lockedReason], visible_row_index: visibleRowIndex };
-    const obj2 = { locked_reason: trackedExposureExperiments[lockedReason], visible_row_index: visibleRowIndex };
+    tmp10 = { locked_reason: closure_17[lockedReason], visible_row_index: visibleRowIndex };
+    const obj2 = { locked_reason: closure_17[lockedReason], visible_row_index: visibleRowIndex };
   }
   const merged = Object.assign(tmp10);
   trackWithMetadata(EXPRESSION_PICKER_EXPRESSION_SELECTED, obj);

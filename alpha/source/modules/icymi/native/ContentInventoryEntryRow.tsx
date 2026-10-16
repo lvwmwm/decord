@@ -1,12 +1,12 @@
-// Module ID: 17573
-// Function ID: 17574
+// Module ID: 17583
+// Function ID: 17584
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4819, 21, 558, 576, 504, 8493, 17574, 17581, 2]
+// Dependencies: [19, 4819, 21, 558, 576, 504, 8494, 17584, 17591, 2]
 
-// Module 17573 (ContentInventoryEntryRow)
+// Module 17583 (ContentInventoryEntryRow)
 import Fragment from "Fragment" /* 21 */;
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 17574 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 17581 */;
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 17584 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 17591 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,9 +44,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(8493).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(8493).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(8493).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8494).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8494).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8494).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           if (visible == null) {
             visible = false;
           }
@@ -96,9 +96,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInv
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(8493).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(8493).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(8493).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8494).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8494).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8494).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           const obj2 = { content, renderForScreenshot: flag, visible: flag2 };
           const tmp4 = jsx;
           const tmp6 = CustomStatusEntryRowDefault;

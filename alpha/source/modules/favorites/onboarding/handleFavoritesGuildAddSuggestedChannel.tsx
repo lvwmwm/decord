@@ -1,11 +1,11 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 17268
+// Function ID: 17269
 // Name: handleFavoritesGuildAddSuggestedChannel
-// Dependencies: [5, 12605, 10560, 1128, 2]
+// Dependencies: [5, 12611, 10561, 1128, 2]
 // Exports: default
 
-// Module 17255 (handleFavoritesGuildAddSuggestedChannel)
-import formatResults from "formatResults" /* 12605 */;
+// Module 17268 (handleFavoritesGuildAddSuggestedChannel)
+import formatResults from "formatResults" /* 12611 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 8641
-// Function ID: 8642
+// Module ID: 8642
+// Function ID: 8643
 // Name: MediaModalSheetWrapper
-// Dependencies: [109, 19, 1087, 21, 558, 576, 7065, 5118, 8642, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 7067, 5118, 8643, 2]
 
-// Module 8641 (MediaModalSheetWrapper)
+// Module 8642 (MediaModalSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     tmp4 = cResult[2];
   }
   const tmp8 = context;
-  context = react.useContext(context(7065));
+  context = react.useContext(context(7067));
   const obj2 = react;
   if (cResult[3] !== context) {
     const fn = function f() {
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     }
     return tmp16;
   }
-  tmp8(8642);
+  tmp8(8643);
   const merged = Object.assign(tmp4);
   tmp16 = <tmp8Result onClose={tmp13} />;
   cResult[8] = tmp13;
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
   onCloseCallback = onCloseCallback.onCloseCallback;
   const merged = Object.assign(onCloseCallback, Object.assign({ onCloseCallback: 0 }));
   let context;
-  context = react.useContext(context(7065));
+  context = react.useContext(context(7067));
   const items = [context];
   const effect = react.useEffect(() => {
     let transitionState;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(MEDIA_MODAL_KEY);
   }, items1);
-  context(8642);
+  context(8643);
   const merged1 = Object.assign(merged);
   return <tmp5 onClose={callback} />;
 });

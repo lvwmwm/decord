@@ -1,15 +1,15 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5194
+// Function ID: 5195
 // Name: AudioRouteStore
-// Dependencies: [17, 5171, 5194, 1384, 5195, 504, 584, 2]
+// Dependencies: [17, 5172, 5195, 1384, 5196, 504, 584, 2]
 
-// Module 5193 (AudioRouteStore)
+// Module 5194 (AudioRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5194 */;
-import react_nativeDefault from "react-native" /* 5195 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 5195 */;
+import react_nativeDefault from "react-native" /* 5196 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import size from "module_2" /* 2 */;
 
 let _null;

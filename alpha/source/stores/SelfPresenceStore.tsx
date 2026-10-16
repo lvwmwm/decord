@@ -1,24 +1,24 @@
-// Module ID: 5977
-// Function ID: 5978
+// Module ID: 5978
+// Function ID: 5979
 // Name: SelfPresenceStore
-// Dependencies: [5978, 1246, 2040, 6106, 7336, 10896, 5169, 5173, 1087, 7338, 2044, 1405, 10491, 1357, 12, 504, 584, 2]
+// Dependencies: [5979, 1246, 2040, 6107, 7338, 10893, 5170, 5174, 1087, 7340, 2044, 1405, 10492, 1357, 12, 504, 584, 2]
 
-// Module 5977 (SelfPresenceStore)
+// Module 5978 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import PresenceStore2 from "PresenceStore" /* 5169 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7338 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10491 */;
-import SpotifyStore from "SpotifyStore" /* 5978 */;
+import PresenceStore2 from "PresenceStore" /* 5170 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7340 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10492 */;
+import SpotifyStore from "SpotifyStore" /* 5979 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import DetectableGameStore from "DetectableGameStore" /* 2040 */;
-import IdleStore from "IdleStore" /* 6106 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7336 */;
-import LocalActivityStore from "LocalActivityStore" /* 10896 */;
-import SessionsStore from "SessionsStore" /* 5173 */;
+import IdleStore from "IdleStore" /* 6107 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7338 */;
+import LocalActivityStore from "LocalActivityStore" /* 10893 */;
+import SessionsStore from "SessionsStore" /* 5174 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7050
-// Function ID: 7051
+// Module ID: 7052
+// Function ID: 7053
 // Name: Form/FormCheckbox
-// Dependencies: [19, 21, 5153, 558, 576, 1202, 2]
+// Dependencies: [19, 21, 5154, 558, 576, 1202, 2]
 
-// Module 7050 (Form/FormCheckbox)
+// Module 7052 (Form/FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

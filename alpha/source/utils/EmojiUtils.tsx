@@ -1,7 +1,7 @@
 // Module ID: 4827
 // Function ID: 4828
 // Name: EmojiUtils
-// Dependencies: [5, 2072, 4809, 1392, 1087, 1395, 4826, 4828, 6210, 4801, 8145, 1496, 1417, 2]
+// Dependencies: [5, 2072, 4809, 1392, 1087, 1395, 4826, 4828, 6211, 4801, 8146, 1496, 1417, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
 // Module 4827 (EmojiUtils)
@@ -11,8 +11,8 @@ import ImageUtils from "ImageUtils" /* 1496 */;
 import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4801 */;
 import EmojiTypes from "EmojiTypes" /* 4826 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 6210 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 8145 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 6211 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 8146 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import PermissionStore from "PermissionStore" /* 4809 */;

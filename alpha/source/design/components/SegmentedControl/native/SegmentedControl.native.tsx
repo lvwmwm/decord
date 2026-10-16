@@ -1,16 +1,16 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9005
+// Function ID: 9006
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 4877, 4909, 5440, 9005, 6557, 1384, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 4877, 4909, 5441, 9006, 6559, 1384, 2]
 
-// Module 9004 (SegmentedControl)
+// Module 9005 (SegmentedControl)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
+import spring from "spring" /* 5441 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,34 +1,83 @@
 // Module ID: 12368
 // Function ID: 12369
-// Dependencies: [12300]
-// Exports: applySdkMetadata
+// Dependencies: [12328, 12361]
+// Exports: makePromiseBuffer
 
 // Module 12368
-import _mod12300 from "module_12300" /* 12300 */;
+import _mod12328 from "module_12328" /* 12328 */;
+
+let diff;
 
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12300.SDK_VERSION };
-          return obj;
-        }),
-      version: str(12300).SDK_VERSION
-    };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
-  }
-  _metadata._metadata = tmp;
-};
+export function makePromiseBuffer(arg0) {
+  let closure_0 = arg0;
+  const items = [];
+  let obj = {
+    $: items,
+    add(fn) {
+      let promise;
+      const tmp2 = undefined === promise || items.length < tmp;
+      if (tmp2) {
+        promise = fn();
+        const arr = items;
+        if (-1 === items.indexOf(promise)) {
+          arr.push(promise);
+        }
+        const nextPromise = promise.then(() => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first;
+        });
+        nextPromise.then(null, () => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first.then(null, () => {
+
+          });
+        });
+        return promise;
+      } else {
+        const self = this;
+        const self2 = this;
+        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
+        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
+        return rejectedSyncPromise(sentryError);
+      }
+    },
+    drain(arg0) {
+      let length;
+      closure_0 = arg0;
+      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
+        let closure_3;
+        closure_0 = fn;
+        let closure_1 = arg1;
+        const arr = length;
+        if (length.length) {
+          const tmp = globalThis;
+          const _setTimeout = setTimeout;
+          let tmp2 = closure_0;
+          const timeout = setTimeout(() => {
+            const tmp2 = closure_0 && tmp > 0;
+            if (tmp2) {
+              closure_0(false);
+            }
+          }, closure_0);
+          const item = arr.forEach((item) => {
+            const obj = _mod12328;
+            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
+            resolvedSyncPromiseResult.then(() => {
+              diff = diff - 1;
+              if (!diff) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_1_3);
+                fn(true);
+              }
+            }, closure_1);
+          });
+        } else {
+          return fn(true);
+        }
+      });
+      return syncPromise;
+    }
+  };
+  return obj;
+}

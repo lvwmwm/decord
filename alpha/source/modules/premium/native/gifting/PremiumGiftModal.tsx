@@ -1,27 +1,27 @@
-// Module ID: 10286
-// Function ID: 10287
+// Module ID: 10287
+// Function ID: 10288
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1392, 21, 10287, 5153, 587, 558, 576, 504, 9210, 1128, 6423, 10288, 13603, 13605, 13634, 2667, 13592, 10285, 7100, 7075, 1281, 6392, 6152, 4841, 10418, 6910, 13663, 10289, 2]
+// Dependencies: [32, 19, 1392, 21, 10288, 5154, 587, 558, 576, 504, 9211, 1128, 6425, 10289, 13611, 13613, 13642, 2667, 13600, 10286, 7102, 7077, 1281, 6394, 6153, 4841, 10419, 6912, 13671, 10290, 2]
 
-// Module 10286 (PremiumGiftModal)
+// Module 10287 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import useInitialValueDefault from "useInitialValue" /* 6392 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10287 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10288 */;
-import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10418 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13592 */;
-import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 13603 */;
-import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 13605 */;
-import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 13634 */;
-import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 13663 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import useInitialValueDefault from "useInitialValue" /* 6394 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7077 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10288 */;
+import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10289 */;
+import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10419 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13600 */;
+import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 13611 */;
+import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 13613 */;
+import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 13642 */;
+import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 13671 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult4 = tmp(9210);
+  const tmpResult4 = tmp(9211);
   const fetchWishlistAndProfileInfoForUser = tmpResult4.useFetchWishlistAndProfileInfoForUser(arg2);
   ({ wishlist, userProfile, wishlistId, error } = fetchWishlistAndProfileInfoForUser);
   if (cResult[3] !== stateFromStores) {
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
       }
     }
   }
-  const tmpResult5 = tmp(9210);
+  const tmpResult5 = tmp(9211);
   const shouldShowWishlistInDMGifting = tmpResult5.useShouldShowWishlistInDMGifting(tmp10);
   let tmp13 = null != arg2 && !shouldShowWishlistInDMGifting && null == error;
   if (tmp13) {
@@ -170,7 +170,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
     const intl = tmp(1128).intl;
     tmp17[0] = intl.string(tmp(1128).t["JCFN/y"]);
-    const tmpResult6 = tmp(6423);
+    const tmpResult6 = tmp(6425);
     tmp17[1] = tmpResult6.getHeaderCloseButton(pop);
     tmp17[2] = tmp4.header;
     tmp17[3] = function render() {
@@ -236,7 +236,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     };
     intl = tmp2(1128).intl;
     obj5 = obj4;
-    tmp2Result = tmp2(6423);
+    tmp2Result = tmp2(6425);
   } else {
     obj5 = {
       title: "",
@@ -283,19 +283,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
   };
   if (arg0 === tmp7.REWARD_SELECT) {
-    const tmp2Result7 = tmp2(6423);
+    const tmp2Result7 = tmp2(6425);
     headerCloseButton = tmp2Result7.getHeaderCloseButton(pop);
   } else {
-    const tmp2Result8 = tmp2(6423);
+    const tmp2Result8 = tmp2(6425);
     headerCloseButton = tmp2Result8.getHeaderBackButton();
   }
   obj6[REWARD_SELECT] = obj7;
   const CUSTOMIZATION = tmp7.CUSTOMIZATION;
   if (arg0 === tmp7.CUSTOMIZATION) {
-    const tmp2Result9 = tmp2(6423);
+    const tmp2Result9 = tmp2(6425);
     headerCloseButton1 = tmp2Result9.getHeaderCloseButton(pop);
   } else {
-    const tmp2Result10 = tmp2(6423);
+    const tmp2Result10 = tmp2(6425);
     headerCloseButton1 = tmp2Result10.getHeaderBackButton();
   }
   obj6[CUSTOMIZATION] = {
@@ -316,7 +316,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
   };
   obj6[SUCCESS] = obj8;
-  tmp2Result11 = tmp2(6423);
+  tmp2Result11 = tmp2(6425);
   const GIFTING_BADGE = tmp7.GIFTING_BADGE;
   const obj9 = {
     title: intl2.string(_modDef2667.roVAey),
@@ -340,7 +340,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
   };
   intl2 = tmp2(1128).intl;
   obj6[GIFTING_BADGE] = obj9;
-  tmp2Result12 = tmp2(6423);
+  tmp2Result12 = tmp2(6425);
   return obj6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -488,8 +488,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
             cResult[19] = premiumType;
             cResult[20] = recipientUserId;
             cResult[21] = tmp29;
-            cResult[22] = jsx(onDismiss(10289).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
-            const tmp34 = jsx(onDismiss(10289).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            cResult[22] = jsx(onDismiss(10290).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            const tmp34 = jsx(onDismiss(10290).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
           }
           cResult[12] = tmp19;
           cResult[13] = tmp26;
@@ -498,8 +498,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
         }
         cResult[9] = initialRoute;
         cResult[10] = tmp14;
-        cResult[11] = jsx(onDismiss(6910).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
-        const tmp28 = jsx(onDismiss(6910).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
+        cResult[11] = jsx(onDismiss(6912).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
+        const tmp28 = jsx(onDismiss(6912).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
       } else {
         class A {
           constructor() {
@@ -540,7 +540,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
       return tmp21;
     }
   }
-  const tmpResult2 = onDismiss(10287);
+  const tmpResult2 = onDismiss(10288);
   const basePurchaseFlowAnalyticsFields = tmpResult2.getBasePurchaseFlowAnalyticsFields({ isGift: true, analyticsLoadId: tmp6, analyticsLocation, analyticsLocations });
   cResult[1] = tmp6;
   cResult[2] = analyticsLocation;

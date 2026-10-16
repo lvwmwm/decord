@@ -1,21 +1,21 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11839
+// Function ID: 11840
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1406, 1087, 21, 5153, 558, 576, 10870, 11833, 11280, 5091, 8537, 8599, 1417, 8494, 2]
+// Dependencies: [19, 17, 1406, 1087, 21, 5154, 558, 576, 10867, 11830, 11277, 5091, 8538, 8600, 1417, 8495, 2]
 
-// Module 11842 (RecommendationsBanner)
+// Module 11839 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8494 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8537 */;
-import AppLauncherContext from "AppLauncherContext" /* 10870 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11280 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8495 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8538 */;
+import AppLauncherContext from "AppLauncherContext" /* 10867 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11277 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,8 +26,8 @@ let metroRequire;
 let tmp;
 let tmp3;
 const FastImageDefault = tmp3(5091);
-const UserProfileBannerDefault = tmp3(8599);
-const HeroMedia = tmp(11833);
+const UserProfileBannerDefault = tmp3(8600);
+const HeroMedia = tmp(11830);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -151,9 +151,9 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(10870);
+  let obj = heroMediaDimensions(10867);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(11833);
+  let obj2 = heroMediaDimensions(11830);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

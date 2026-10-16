@@ -1,8 +1,8 @@
-// Module ID: 13344
-// Function ID: 13345
+// Module ID: 13352
+// Function ID: 13353
 // Dependencies: [2]
 
-// Module 13344
+// Module 13352
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HelloWumpusSpotIllustration-3x.png.js");

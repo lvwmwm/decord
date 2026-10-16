@@ -1,31 +1,29 @@
-// Module ID: 17278
-// Function ID: 17279
+// Module ID: 17291
+// Function ID: 17292
 // Name: TextChannel
-// Dependencies: [19, 17, 2067, 2120, 2068, 4809, 6253, 6184, 11821, 21, 5153, 587, 17181, 8428, 8384, 12958, 558, 576, 5475, 504, 7236, 17279, 5164, 1126, 10531, 17180, 8739, 5483, 5149, 12959, 8876, 17280, 17281, 8770, 17286, 6384, 2]
+// Dependencies: [19, 17, 2067, 2120, 2068, 4809, 6254, 6185, 11818, 21, 5154, 587, 17195, 8429, 8385, 12966, 558, 576, 5476, 504, 7238, 17292, 5165, 1126, 10532, 17194, 8740, 5484, 5150, 12967, 8877, 17293, 17294, 8771, 6386, 2]
 
-// Module 17278 (TextChannel)
+// Module 17291 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1126 */;
-import transitionToChannel2 from "transitionToChannel" /* 5164 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5475 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7236 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10531 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 17279 */;
+import transitionToChannel2 from "transitionToChannel" /* 5165 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5476 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10532 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 17292 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11821 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11818 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let obj1, preloadResult, str, tmp5, transitionToChannelResult;
 
 let closure_12;
 let closure_14;
@@ -67,14 +65,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let subtitle;
   const tmp2 = id;
   let obj = channel(id[17]);
-  const cResult = obj.c(71);
+  const cResult = obj.c(67);
   channel = channel.channel;
   ({ muted, selected, subtitle, isSuggestedSection } = channel);
   const isRulesChannel = channel.isRulesChannel;
   let tmp4 = closure_15(muted, selected);
   id = channel.id;
   const guild_id = channel.guild_id;
-  guild_id.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore, GatedChannelStore, PermissionStore, ReadStateStore, UserGuildSettingsStore, EmbeddedActivitiesStore];
     let num = 0;
@@ -84,173 +81,102 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     first = cResult[0];
   }
   if (cResult[1] === channel) {
+    let tmp12;
     let tmp13;
-    let tmp14;
     if (cResult[2] === id) {
-      tmp13 = cResult[3];
-      tmp14 = cResult[4];
+      tmp12 = cResult[3];
+      tmp13 = cResult[4];
     }
     const tmpResult = channel(tmp2[19]);
-    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp13, tmp14);
+    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp12, tmp13);
     ({ hasUnread, mentionCount, isSubscriptionGated, needSubscriptionToAccess, resolvedUnreadSetting } = stateFromStoresObject);
     if (cResult[5] === id) {
       if (cResult[8] === id) {
         let channelIcon;
-        let channelIconComponent;
+        let BookCheckIcon;
         if (cResult[11] !== id) {
-          class V {
-            constructor() {
-              obj = closure_0(closure_2[24]);
-              result = obj.openChannelLongPressActionSheet(id);
-              return;
-            }
-          }
           class O {
             constructor() {
-              tmp = closure_2;
-              tmp2 = closure_0(closure_2[22]);
-              tmp4 = undefined;
-              transitionToChannel = tmp2.transitionToChannel;
-              tmp3 = id;
-              if (isSuggestedSection) {
-                obj = { source: null };
-                tmp5 = closure_1;
-                obj.source = closure_1(tmp[23]).CHANNEL_LIST_SUGGESTED_SECTION;
-                tmp4 = obj;
-              }
-              transitionToChannelResult = transitionToChannel(tmp3, tmp4);
-              return;
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
             }
           }
-          cResult[12] = V;
+          cResult[11] = id;
+          cResult[12] = O;
         } else {
-          class V {
+          class O {
             constructor() {
-              obj = closure_0(closure_2[24]);
-              result = obj.openChannelLongPressActionSheet(id);
-              return;
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
             }
           }
         }
-        class O {
+        let obj2 = { muted, selected, unread: hasUnread && !muted, resolvedUnreadSetting, mentionCount: null, locked: false, channel };
+        const tmp18 = hasUnread && !muted;
+        const tmpResult6 = channel(tmp2[25]);
+        class R {
           constructor() {
-            tmp = closure_2;
-            tmp2 = closure_0(closure_2[22]);
-            tmp4 = undefined;
-            transitionToChannel = tmp2.transitionToChannel;
-            tmp3 = id;
-            if (isSuggestedSection) {
-              obj = { source: null };
-              tmp5 = closure_1;
-              obj.source = closure_1(tmp[23]).CHANNEL_LIST_SUGGESTED_SECTION;
-              tmp4 = obj;
-            }
-            transitionToChannelResult = transitionToChannel(tmp3, tmp4);
-            return;
+            const obj = ChannelActionCreatorsDefault;
+            obj.preload(guild_id, id);
+            const obj2 = preloadChannelAppFrame;
+            const result = obj2.preloadChannelAppFrame(id);
           }
         }
-        let obj2 = { muted, selected, unread: tmp19, resolvedUnreadSetting, mentionCount: null, locked: false, channel };
-        const tmpResult5 = channel(tmp2[25]);
-        class P {
-          constructor() {
-            obj = closure_1(closure_2[20]);
-            preloadResult = obj.preload(guild_id, id);
-            obj2 = closure_0(closure_2[21]);
-            result = obj2.preloadChannelAppFrame(id);
-            return;
-          }
-        }
-        const channelMode = tmpResult5.getChannelMode(obj2);
-        const tmpResult6 = channel(tmp2[26]);
-        const isActivitiesInTextEnabled = tmpResult6.useIsActivitiesInTextEnabled(id);
+        const channelMode = tmpResult6.getChannelMode(obj2);
+        const tmpResult7 = channel(tmp2[26]);
+        const isActivitiesInTextEnabled = tmpResult7.useIsActivitiesInTextEnabled(id);
         if (isRulesChannel) {
-          class V {
+          class O {
             constructor() {
-              obj = closure_0(closure_2[24]);
-              result = obj.openChannelLongPressActionSheet(id);
-              return;
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
             }
           }
           channelIcon = isSuggestedSection(tmp2[12]);
+          BookCheckIcon = tmp(tmp2[13]).BookCheckIcon;
+        } else {
           class O {
             constructor() {
-              tmp = closure_2;
-              tmp2 = closure_0(closure_2[22]);
-              tmp4 = undefined;
-              transitionToChannel = tmp2.transitionToChannel;
-              tmp3 = id;
-              if (isSuggestedSection) {
-                obj = { source: null };
-                tmp5 = closure_1;
-                obj.source = closure_1(tmp[23]).CHANNEL_LIST_SUGGESTED_SECTION;
-                tmp4 = obj;
-              }
-              transitionToChannelResult = transitionToChannel(tmp3, tmp4);
-              return;
-            }
-          }
-        } else {
-          class V {
-            constructor() {
-              obj = closure_0(closure_2[24]);
-              result = obj.openChannelLongPressActionSheet(id);
-              return;
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
             }
           }
           channelIcon = obj6.getChannelIcon(channel, { isRulesChannel: false });
+          const tmpResult8 = channel(tmp2[14]);
+          BookCheckIcon = tmpResult8.getChannelIconComponent(channel, { isRulesChannel: false });
+        }
+        const obj3 = { mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon };
+        const tmpResult9 = channel(tmp2[15]);
+        tmpResult9.BaseChannelIcon(obj3);
+        const tmp24 = isSuggestedSection(tmp2[27])(channel);
+        const channelLabelText = tmp4.channelLabelText;
+        const tmpResult10 = channel(tmp2[15]);
+        const channelNameTextProps = tmpResult10.useChannelNameTextProps(channelMode);
+        if (cResult[13] === tmp24) {
           class O {
             constructor() {
-              tmp = closure_2;
-              tmp2 = closure_0(closure_2[22]);
-              tmp4 = undefined;
-              transitionToChannel = tmp2.transitionToChannel;
-              tmp3 = id;
-              if (isSuggestedSection) {
-                obj = { source: null };
-                tmp5 = closure_1;
-                obj.source = closure_1(tmp[23]).CHANNEL_LIST_SUGGESTED_SECTION;
-                tmp4 = obj;
-              }
-              transitionToChannelResult = transitionToChannel(tmp3, tmp4);
-              return;
-            }
-          }
-          channelIconComponent = obj7.getChannelIconComponent(channel, { isRulesChannel: false });
-        }
-        const obj3 = { mode: channelMode, source: channelIcon, IconComponent: channelIconComponent };
-        const tmpResult7 = channel(tmp2[15]);
-        tmpResult7.BaseChannelIcon(obj3);
-        const tmp26 = isSuggestedSection(tmp2[27])(channel);
-        const channelLabelText = tmp4.channelLabelText;
-        const tmpResult8 = channel(tmp2[15]);
-        const channelNameTextProps = tmpResult8.useChannelNameTextProps(channelMode);
-        if (cResult[13] === tmp26) {
-          class V {
-            constructor() {
-              obj = closure_0(closure_2[24]);
-              result = obj.openChannelLongPressActionSheet(id);
-              return;
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
             }
           }
         }
-        const obj4 = { experimental_useNativeText: true, lineClamp: 1, style: channelLabelText, children: tmp26 };
-        class S {
+        class C {
           constructor() {
-            obj = closure_0(closure_2[18]);
-            channelRoleSubscriptionStatus = obj.getChannelRoleSubscriptionStatus(id, closure_7, closure_6, closure_8);
-            obj1 = { hasUnread: closure_9.hasUnread(id), mentionCount: closure_9.getMentionCount(id), resolvedUnreadSetting: closure_10.resolveUnreadSetting(channel), embeddedActivitiesCount: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
+            let isSubscriptionGated;
+            let needSubscriptionToAccess;
+            let num;
+            const obj = useChannelRoleSubscriptionStatus;
+            const channelRoleSubscriptionStatus = obj.getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, PermissionStore);
+            const obj2 = { hasUnread: ReadStateStore.hasUnread(id), mentionCount: ReadStateStore.getMentionCount(id), resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), embeddedActivitiesCount: num, isSubscriptionGated, needSubscriptionToAccess };
             ({ isSubscriptionGated, needSubscriptionToAccess } = channelRoleSubscriptionStatus);
-            tmp2 = channel;
             num = 0;
             if (null != channel) {
               num = 0;
-              if (null != tmp2.id) {
-                str = "";
+              if (null != channel.id) {
                 num = 0;
-                if ("" !== tmp2.id) {
-                  tmp3 = closure_5;
-                  embeddedActivitiesForChannel = closure_5.getEmbeddedActivitiesForChannel(tmp2.id);
-                  num2 = undefined;
+                if ("" !== channel.id) {
+                  const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp2.id);
+                  let num2;
                   if (embeddedActivitiesForChannel != null) {
                     num2 = embeddedActivitiesForChannel.length;
                   }
@@ -261,81 +187,71 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 }
               }
             }
-            obj1.embeddedActivitiesCount = num;
-            obj1.isSubscriptionGated = isSubscriptionGated;
-            obj1.needSubscriptionToAccess = needSubscriptionToAccess;
-            return obj1;
+            return obj2;
           }
         }
+        const obj4 = { experimental_useNativeText: true, lineClamp: 1, style: channelLabelText, children: tmp24 };
         const Text = tmp(tmp2[28]).Text;
         const merged = Object.assign(channelNameTextProps);
-        cResult[13] = tmp26;
+        cResult[13] = tmp24;
         cResult[14] = tmp4.channelLabelText;
         cResult[15] = channelNameTextProps;
         cResult[16] = closure_13(Text, obj4);
-        const tmp32 = closure_13(Text, obj4);
+        const tmp30 = closure_13(Text, obj4);
       }
-      class O {
-        constructor() {
-          tmp = closure_2;
-          tmp2 = closure_0(closure_2[22]);
-          tmp4 = undefined;
-          transitionToChannel = tmp2.transitionToChannel;
-          tmp3 = id;
-          if (isSuggestedSection) {
-            obj = { source: null };
-            tmp5 = closure_1;
-            obj.source = closure_1(tmp[23]).CHANNEL_LIST_SUGGESTED_SECTION;
-            tmp4 = obj;
-          }
-          transitionToChannelResult = transitionToChannel(tmp3, tmp4);
-          return;
+      const fn = function k() {
+        let tmp4;
+        const transitionToChannel = transitionToChannel2.transitionToChannel;
+        transitionToChannel2;
+        const tmp3 = id;
+        if (isSuggestedSection) {
+          tmp4 = { source: RoutingSourcesDefault.CHANNEL_LIST_SUGGESTED_SECTION };
+          const obj = { source: RoutingSourcesDefault.CHANNEL_LIST_SUGGESTED_SECTION };
         }
-      }
+        transitionToChannel(tmp3, tmp4);
+      };
       cResult[8] = id;
       cResult[9] = isSuggestedSection;
-      cResult[10] = O;
-      class P {
+      cResult[10] = fn;
+      class R {
         constructor() {
-          obj = closure_1(closure_2[20]);
-          preloadResult = obj.preload(guild_id, id);
-          obj2 = closure_0(closure_2[21]);
-          result = obj2.preloadChannelAppFrame(id);
-          return;
+          const obj = ChannelActionCreatorsDefault;
+          obj.preload(guild_id, id);
+          const obj2 = preloadChannelAppFrame;
+          const result = obj2.preloadChannelAppFrame(id);
         }
       }
     }
-    class P {
+    class R {
       constructor() {
-        obj = closure_1(closure_2[20]);
-        preloadResult = obj.preload(guild_id, id);
-        obj2 = closure_0(closure_2[21]);
-        result = obj2.preloadChannelAppFrame(id);
-        return;
+        const obj = ChannelActionCreatorsDefault;
+        obj.preload(guild_id, id);
+        const obj2 = preloadChannelAppFrame;
+        const result = obj2.preloadChannelAppFrame(id);
       }
     }
     let num2 = 5;
     cResult[5] = id;
     cResult[6] = guild_id;
-    cResult[7] = P;
+    cResult[7] = R;
   }
-  class S {
+  class C {
     constructor() {
-      obj = closure_0(closure_2[18]);
-      channelRoleSubscriptionStatus = obj.getChannelRoleSubscriptionStatus(id, closure_7, closure_6, closure_8);
-      obj1 = { hasUnread: closure_9.hasUnread(id), mentionCount: closure_9.getMentionCount(id), resolvedUnreadSetting: closure_10.resolveUnreadSetting(channel), embeddedActivitiesCount: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
+      let isSubscriptionGated;
+      let needSubscriptionToAccess;
+      let num;
+      const obj = useChannelRoleSubscriptionStatus;
+      const channelRoleSubscriptionStatus = obj.getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, PermissionStore);
+      const obj2 = { hasUnread: ReadStateStore.hasUnread(id), mentionCount: ReadStateStore.getMentionCount(id), resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), embeddedActivitiesCount: num, isSubscriptionGated, needSubscriptionToAccess };
       ({ isSubscriptionGated, needSubscriptionToAccess } = channelRoleSubscriptionStatus);
-      tmp2 = channel;
       num = 0;
       if (null != channel) {
         num = 0;
-        if (null != tmp2.id) {
-          str = "";
+        if (null != channel.id) {
           num = 0;
-          if ("" !== tmp2.id) {
-            tmp3 = closure_5;
-            embeddedActivitiesForChannel = closure_5.getEmbeddedActivitiesForChannel(tmp2.id);
-            num2 = undefined;
+          if ("" !== channel.id) {
+            const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp2.id);
+            let num2;
             if (embeddedActivitiesForChannel != null) {
               num2 = embeddedActivitiesForChannel.length;
             }
@@ -346,19 +262,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      obj1.embeddedActivitiesCount = num;
-      obj1.isSubscriptionGated = isSubscriptionGated;
-      obj1.needSubscriptionToAccess = needSubscriptionToAccess;
-      return obj1;
+      return obj2;
     }
   }
   const items1 = [channel, id];
   cResult[1] = channel;
   cResult[2] = id;
-  cResult[3] = S;
+  cResult[3] = C;
   cResult[4] = items1;
-  tmp14 = items1;
-  tmp13 = S;
+  tmp13 = items1;
+  tmp12 = C;
 }) : (function TextChannel(channel) {
   let BookCheckIcon;
   let channelIcon;
@@ -368,7 +281,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let items10;
   let items6;
   let items7;
-  let items8;
   let items9;
   let mentionCount;
   let muted;
@@ -378,18 +290,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let resolvedUnreadSetting;
   let selected;
   let subtitle;
-  let tmp15Result;
-  let tmp16;
-  let tmp3Result14;
+  let tmp14Result;
+  let tmp15;
+  let tmp2Result14;
   channel = channel.channel;
   ({ muted, selected, subtitle, isSuggestedSection } = channel);
   const isRulesChannel = channel.isRulesChannel;
   const tmp = closure_15(muted, selected);
   const id = channel.id;
   const guild_id = channel.guild_id;
-  const ref = guild_id.useRef(null);
-  let tmp3 = channel;
-  let tmp4 = id;
+  const tmp2 = channel;
+  let tmp3 = id;
   let obj = channel(id[19]);
   const items = [ChannelStore, GatedChannelStore, PermissionStore, ReadStateStore, UserGuildSettingsStore, EmbeddedActivitiesStore];
   const items1 = [channel, id];
@@ -443,80 +354,78 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     transitionToChannel(tmp3, tmp4);
   }, items3);
-  let tmp9 = hasUnread;
+  let tmp8 = hasUnread;
   const callback2 = guild_id.useCallback(() => {
     const obj = openChannelLongPressActionSheet;
     const result = obj.openChannelLongPressActionSheet(id);
   }, items4);
   if (hasUnread) {
-    tmp9 = !muted;
+    tmp8 = !muted;
   }
-  const tmp3Result = tmp3(tmp4[25]);
-  const channelMode = tmp3Result.getChannelMode({ muted, selected, unread: tmp9, resolvedUnreadSetting, mentionCount, locked: false, channel });
-  const tmp3Result8 = tmp3(tmp4[26]);
-  const isActivitiesInTextEnabled = tmp3Result8.useIsActivitiesInTextEnabled(id);
+  const tmp2Result = tmp2(tmp3[25]);
+  const channelMode = tmp2Result.getChannelMode({ muted, selected, unread: tmp8, resolvedUnreadSetting, mentionCount, locked: false, channel });
+  const tmp2Result8 = tmp2(tmp3[26]);
+  const isActivitiesInTextEnabled = tmp2Result8.useIsActivitiesInTextEnabled(id);
   if (isRulesChannel) {
-    channelIcon = isSuggestedSection(tmp4[12]);
-    BookCheckIcon = tmp3(tmp4[13]).BookCheckIcon;
+    channelIcon = isSuggestedSection(tmp3[12]);
+    BookCheckIcon = tmp2(tmp3[13]).BookCheckIcon;
   } else {
-    const tmp3Result9 = tmp3(tmp4[14]);
-    channelIcon = tmp3Result9.getChannelIcon(channel, { isRulesChannel: false });
-    const tmp3Result10 = tmp3(tmp4[14]);
-    BookCheckIcon = tmp3Result10.getChannelIconComponent(channel, { isRulesChannel: false });
+    const tmp2Result9 = tmp2(tmp3[14]);
+    channelIcon = tmp2Result9.getChannelIcon(channel, { isRulesChannel: false });
+    const tmp2Result10 = tmp2(tmp3[14]);
+    BookCheckIcon = tmp2Result10.getChannelIconComponent(channel, { isRulesChannel: false });
   }
-  const tmp3Result11 = tmp3(tmp4[15]);
-  let obj2 = { experimental_useNativeText: true, lineClamp: 1, style: tmp.channelLabelText, children: tmp16 };
-  const BaseChannelIconResult = tmp3Result11.BaseChannelIcon({ mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon });
-  tmp16 = isSuggestedSection(tmp4[27])(channel);
-  const Text = tmp3(tmp4[28]).Text;
-  const tmp3Result12 = tmp3(tmp4[15]);
-  const merged = Object.assign(tmp3Result12.useChannelNameTextProps(channelMode));
-  const tmp19 = closure_13(Text, obj2);
-  const children = [, , ];
-  const tmp21 = isSuggestedSection(tmp4[35]);
-  children[0] = closure_13(isSuggestedSection(tmp4[29]), { unread: tmp9, resolvedUnreadSetting });
-  const obj3 = { onPressIn: callback, onPress: callback1, onLongPress: callback2, style: items6, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp15Result(obj4), accessibilityState: { selected }, children: items7 };
+  const tmp2Result11 = tmp2(tmp3[15]);
+  let obj2 = { experimental_useNativeText: true, lineClamp: 1, style: tmp.channelLabelText, children: tmp15 };
+  const BaseChannelIconResult = tmp2Result11.BaseChannelIcon({ mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon });
+  tmp15 = isSuggestedSection(tmp3[27])(channel);
+  const Text = tmp2(tmp3[28]).Text;
+  const tmp2Result12 = tmp2(tmp3[15]);
+  const merged = Object.assign(tmp2Result12.useChannelNameTextProps(channelMode));
+  const tmp18 = closure_13(Text, obj2);
+  const items5 = [, ];
+  const tmp20 = isSuggestedSection(tmp3[34]);
+  items5[0] = closure_13(isSuggestedSection(tmp3[29]), { unread: tmp8, resolvedUnreadSetting });
+  const obj3 = { onPressIn: callback, onPress: callback1, onLongPress: callback2, style: items6, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp14Result(obj4), accessibilityState: { selected }, children: items7 };
   items6 = [tmp.container, ];
-  const AnimatedPressableHighlight = tmp3(tmp4[33]).AnimatedPressableHighlight;
-  items6[1] = channelMode === tmp3(tmp4[15]).ChannelModes.SELECTED && tmp.selected;
+  const AnimatedPressableHighlight = tmp2(tmp3[33]).AnimatedPressableHighlight;
+  items6[1] = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
   obj4 = { channel, unread: hasUnread, mentionCount, embeddedActivitiesCount: num, isSubscriptionGated, needSubscriptionToAccess };
   num = 0;
-  channelMode === tmp3(tmp4[15]).ChannelModes.SELECTED && tmp.selected;
-  tmp15Result = isSuggestedSection(tmp4[30]);
+  channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
+  tmp14Result = isSuggestedSection(tmp3[30]);
   if (isActivitiesInTextEnabled) {
     num = embeddedActivitiesCount;
   }
-  let tmp17Result = channelMode === tmp3(tmp4[15]).ChannelModes.SELECTED;
-  if (tmp17Result) {
+  let tmp16Result = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED;
+  if (tmp16Result) {
     const obj5 = { style: tmp.selectedBorder };
-    tmp17Result = tmp17(View, obj5);
+    tmp16Result = tmp16(View, obj5);
   }
-  items7 = [tmp17Result, ];
-  const obj6 = { ref, style: items8, children: items9 };
-  items8 = [tmp.row, null != subtitle && tmp.rowWithSubtitle];
+  items7 = [tmp16Result, ];
+  const items8 = [tmp.row, ];
+  const obj6 = { style: items8, children: items9 };
+  const tmp26 = null != subtitle && tmp.rowWithSubtitle;
+  items8[1] = tmp26;
   items9 = [BaseChannelIconResult, , ];
-  let tmp20Result = tmp19;
+  let tmp19Result = tmp18;
   if (null != subtitle) {
     const obj7 = { style: tmp.channelLabel, children: items10 };
-    items10 = [tmp19, ];
-    const obj8 = { experimental_useNativeText: true, lineClamp: 1, children: tmp3Result14.getChannelSubtitleData(subtitle).subtitle };
-    const Text2 = tmp3(tmp4[28]).Text;
-    const tmp3Result13 = tmp3(tmp4[15]);
-    const merged1 = Object.assign(tmp3Result13.getChannelSubtitleTextProps(channelMode));
-    tmp3Result14 = tmp3(tmp4[31]);
+    items10 = [tmp18, ];
+    const obj8 = { experimental_useNativeText: true, lineClamp: 1, children: tmp2Result14.getChannelSubtitleData(subtitle).subtitle };
+    const Text2 = tmp2(tmp3[28]).Text;
+    const tmp2Result13 = tmp2(tmp3[15]);
+    const merged1 = Object.assign(tmp2Result13.getChannelSubtitleTextProps(channelMode));
+    tmp2Result14 = tmp2(tmp3[31]);
     items10[1] = closure_13(Text2, obj8);
-    tmp20Result = tmp20(tmp26, obj7);
+    tmp19Result = tmp19(tmp25, obj7);
   }
-  items9[1] = tmp20Result;
-  items9[2] = closure_13(isSuggestedSection(tmp4[32]), { channel, isChannelSelected: selected, muted, isSubscriptionGated, needSubscriptionToAccess, enableActivities: isActivitiesInTextEnabled });
+  const obj9 = { children: items5 };
+  items9[1] = tmp19Result;
+  items9[2] = closure_13(isSuggestedSection(tmp3[32]), { channel, isChannelSelected: selected, muted, isSubscriptionGated, needSubscriptionToAccess, enableActivities: isActivitiesInTextEnabled });
   items7[1] = closure_14(View, obj6);
-  children[1] = closure_14(AnimatedPressableHighlight, obj3);
-  if (selected) {
-    const obj9 = { targetRef: ref, channelType: channel.type };
-    selected = tmp17(tmp15(tmp4[34]), obj9);
-  }
-  children[2] = selected;
-  return closure_14(tmp21, { children });
+  items5[1] = closure_14(AnimatedPressableHighlight, obj3);
+  return closure_14(tmp20, obj9);
 }));
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/TextChannel.tsx");
 

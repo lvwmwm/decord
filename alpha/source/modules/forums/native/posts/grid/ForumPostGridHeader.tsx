@@ -1,27 +1,27 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12782
+// Function ID: 12783
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7203, 2075, 21, 5153, 558, 576, 12777, 12779, 12789, 12790, 12791, 2]
+// Dependencies: [19, 17, 7205, 2075, 21, 5154, 558, 576, 12783, 12785, 12795, 12796, 12797, 2]
 
-// Module 12776 (ForumPostGridHeader)
+// Module 12782 (ForumPostGridHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import ForumConstants from "ForumConstants" /* 7203 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12777 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12789 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 12790 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 12791 */;
+import ForumConstants from "ForumConstants" /* 7205 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12783 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12795 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 12796 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 12797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostUsername = tmp(12779);
+const ForumPostUsername = tmp(12785);
 const View = react_native.View;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   const obj4 = { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText };
   items[2] = metroRequire(ForumPostTimestampDefault, obj4);
   if (isNew) {
-    isNew = tmp8(tmp10(12790), {});
+    isNew = tmp8(tmp10(12796), {});
   }
   items[3] = isNew;
   items1 = [metroImportDefault(View, obj2), ];

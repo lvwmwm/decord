@@ -1,9 +1,9 @@
-// Module ID: 6879
-// Function ID: 6880
+// Module ID: 6881
+// Function ID: 6882
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 5090, 5028, 6880, 6881, 5091, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5090, 5028, 6882, 6883, 5091, 2]
 
-// Module 6879 (BackgroundImage)
+// Module 6881 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useThemeDefault from "useTheme" /* 5090 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6880);
+      tmp5Result = tmp5(6882);
     } else {
-      tmp5Result = tmp5(6881);
+      tmp5Result = tmp5(6883);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6880);
+        tmp5Result = tmp5(6882);
       } else {
-        tmp5Result = tmp5(6881);
+        tmp5Result = tmp5(6883);
       }
       tmp = tmp5Result;
     }

@@ -1,9 +1,9 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12840
+// Function ID: 12841
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6248, 5494, 1392, 21, 5153, 587, 4995, 558, 576, 4877, 5026, 4868, 12835, 7397, 1128, 1103, 504, 5021, 12836, 9993, 4909, 5154, 1202, 9992, 5453, 6407, 10008, 5149, 5441, 2]
+// Dependencies: [5, 32, 19, 17, 6249, 5495, 1392, 21, 5154, 587, 4995, 558, 576, 4877, 5026, 4868, 12841, 7399, 1128, 1103, 504, 5021, 12842, 9994, 4909, 5155, 1202, 9993, 5454, 6409, 10009, 5150, 5442, 2]
 
-// Module 12834 (DMMessageStickerGreeting)
+// Module 12840 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,16 +11,16 @@ import native from "native" /* 1202 */;
 import useToken2 from "useToken" /* 4877 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4995 */;
-import timing from "timing" /* 5154 */;
-import StickersActionCreators from "StickersActionCreators" /* 9993 */;
+import timing from "timing" /* 5155 */;
+import StickersActionCreators from "StickersActionCreators" /* 9994 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6248 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import StickersStore from "StickersStore" /* 6249 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -465,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(12836);
+  const tmpResult7 = tmp(12842);
   const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [StickersStore];
@@ -568,13 +568,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
     return obj;
   };
   const tmpResult9 = tmp(4909);
-  let obj3 = { styles: tmp4, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4909).withDelay, withTiming: tmp(5154).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING };
+  let obj3 = { styles: tmp4, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4909).withDelay, withTiming: tmp(5155).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING };
   fn3.__closure = obj3;
   fn3.__workletHash = 16992012801942;
   fn3.__initData = __initData;
   const animatedStyle = tmpResult9.useAnimatedStyle(fn3);
   const tmp28 = closure_19();
-  const tmpResult10 = tmp(9992);
+  const tmpResult10 = tmp(9993);
   const shouldAnimateSticker = tmpResult10.useShouldAnimateSticker(false);
   if (showConvoStarterInDM) {
     class U {
@@ -589,8 +589,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
     let obj4 = { style: tmp4.gradient, colors: tmp28 };
     cResult[13] = tmp28;
     cResult[14] = tmp4.gradient;
-    cResult[15] = closure_10(tmp13(5453), obj4);
-    const tmp32 = closure_10(tmp13(5453), obj4);
+    cResult[15] = closure_10(tmp13(5454), obj4);
+    const tmp32 = closure_10(tmp13(5454), obj4);
   }
   return null;
 }) : (function DMMessageStickerGreeting(channel) {
@@ -626,7 +626,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult = tmp(12836);
+  const tmpResult = tmp(12842);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -684,46 +684,46 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
       return obj;
     }
   }
-  let obj5 = { styles: tmp3, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4909).withDelay, withTiming: tmp(5154).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING };
+  let obj5 = { styles: tmp3, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4909).withDelay, withTiming: tmp(5155).withTiming, STANDARD_EASING: tmp(1202).STANDARD_EASING };
   M.__closure = obj5;
   M.__workletHash = 12021273723425;
   M.__initData = __initData2;
   const animatedStyle = tmpResult5.useAnimatedStyle(M);
   const tmp15 = closure_19();
-  const tmpResult6 = tmp(9992);
+  const tmpResult6 = tmp(9993);
   const shouldAnimateSticker = tmpResult6.useShouldAnimateSticker(false);
   let tmp18Result2 = null;
   if (showConvoStarterInDM) {
     const obj6 = { style: animatedStyle, onLayout: setIsRendered, children: items5 };
     View = tmp6(4909).View;
     const obj7 = { style: tmp3.gradient, colors: tmp15 };
-    items5 = [closure_10(hasInputText(5453), obj7), ];
+    items5 = [closure_10(hasInputText(5454), obj7), ];
     const obj8 = { style: tmp3.container, children: tmp18Result };
     if (stateFromStores) {
       const obj9 = { style: tmp3.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1128).t.pJObYI), onPress: tmp12, children: items6 };
-      const PressableOpacity = tmp(6407).PressableOpacity;
+      const PressableOpacity = tmp(6409).PressableOpacity;
       intl3 = tmp(1128).intl;
       let tmp19Result = null;
       if (null != stateFromStores2) {
         const obj10 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp19Result = tmp19(tmp6(10008), obj10);
+        tmp19Result = tmp19(tmp6(10009), obj10);
       }
       items6 = [tmp19Result, ];
       const obj11 = { style: tmp3.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
-      items6[1] = closure_10(tmp(5149).Text, obj11);
+      items6[1] = closure_10(tmp(5150).Text, obj11);
       tmp18Result = tmp18(PressableOpacity, obj9);
     } else {
       let tmp19Result2 = null;
       const tmp21 = closure_12;
       if (null != stateFromStores2) {
-        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10008), obj13) };
+        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10009), obj13) };
         obj13 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp19Result2 = tmp19(tmp20, obj12);
       }
       const obj14 = { children: items7 };
       items7 = [tmp19Result2, ];
       const obj15 = { text: formatToPlainStringResult, onPress: tmp12, shrink: true };
-      items7[1] = closure_10(tmp(5441).Button, obj15);
+      items7[1] = closure_10(tmp(5442).Button, obj15);
       tmp18Result = tmp18(tmp21, obj14);
     }
     items5[1] = closure_10(View, obj8);

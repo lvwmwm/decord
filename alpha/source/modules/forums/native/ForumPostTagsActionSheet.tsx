@@ -1,18 +1,18 @@
-// Module ID: 10709
-// Function ID: 10710
+// Module ID: 10706
+// Function ID: 10707
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 7203, 21, 5153, 558, 576, 1128, 7205, 9565, 5118, 7062, 10710, 5441, 7120, 2]
+// Dependencies: [32, 19, 17, 7205, 21, 5154, 558, 576, 1128, 7207, 9564, 5118, 7064, 10707, 5442, 7122, 2]
 
-// Module 10709 (ForumPostTagsActionSheet)
+// Module 10706 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import ForumConstants from "ForumConstants" /* 7203 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9565 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 10710 */;
+import ForumConstants from "ForumConstants" /* 7205 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9564 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 10707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(7205);
+  let obj = thread(7207);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(7205);
+  const tmp4Result = tmp4(7207);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {
@@ -295,9 +295,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
     header: toggleTag(BottomSheetTitleHeader, obj3),
     children: items
   };
-  const ActionSheet = tmp4(7120).ActionSheet;
+  const ActionSheet = tmp4(7122).ActionSheet;
   obj3 = { title, subtitle: intl2.string(tmp4(1128).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
-  BottomSheetTitleHeader = tmp4(7062).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp4(7064).BottomSheetTitleHeader;
   intl2 = tmp4(1128).intl;
   items = [, ];
   const obj4 = {
@@ -333,7 +333,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
       obj2.hideActionSheet();
     }
   };
-  Button = tmp4(5441).Button;
+  Button = tmp4(5442).Button;
   intl3 = tmp4(1128).intl;
   items[1] = toggleTag(closure_5, obj5);
   return closure_8(ActionSheet, obj2);

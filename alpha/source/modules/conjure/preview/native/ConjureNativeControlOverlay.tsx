@@ -1,20 +1,20 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11646
+// Function ID: 11647
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5143, 21, 5153, 587, 558, 576, 11650, 10958, 504, 4909, 5440, 5444, 5154, 1128, 3865, 11651, 11655, 5149, 5441, 2]
+// Dependencies: [19, 17, 5144, 21, 5154, 587, 558, 576, 11647, 10955, 504, 4909, 5441, 5445, 5155, 1128, 3865, 11648, 11652, 5150, 5442, 2]
 
-// Module 11649 (ConjureNativeControlOverlay)
+// Module 11646 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import spring from "spring" /* 5440 */;
-import springPresets from "springPresets" /* 5444 */;
-import useConjureControlBar from "useConjureControlBar" /* 11650 */;
+import timing from "timing" /* 5155 */;
+import spring from "spring" /* 5441 */;
+import springPresets from "springPresets" /* 5445 */;
+import useConjureControlBar from "useConjureControlBar" /* 11647 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,12 +75,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ projectId, visible, children } = active);
   active = active.active;
   const tmp4 = closure_10();
-  let obj2 = conjureControlPhase(11650);
+  let obj2 = conjureControlPhase(11647);
   conjureControlPhase = obj2.useConjureControlPhase(active);
-  const obj3 = conjureControlPhase(11650);
+  const obj3 = conjureControlPhase(11647);
   const conjureControlStop = obj3.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj4 = conjureControlPhase(10958);
+  const obj4 = conjureControlPhase(10955);
   const conjureControlTuning = obj4.useConjureControlTuning(projectId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp10 = sharedValue2;
@@ -295,10 +295,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               items1 = [tmp4.bar, animatedStyle1];
               View2 = stateFromStores(4909).View;
               if (tmp12) {
-                tmp37Result = closure_6(tmp(11651).AILoader, { size: 12, color: "text-overlay-light" });
+                tmp37Result = closure_6(tmp(11648).AILoader, { size: 12, color: "text-overlay-light" });
               } else {
                 ({ size: "sm", color: stateFromStores(587).colors.TEXT_OVERLAY_LIGHT });
-                const SparklesIcon = tmp(11655).SparklesIcon;
+                const SparklesIcon = tmp(11652).SparklesIcon;
                 class B {
                   constructor() {
                     let bound;
@@ -311,7 +311,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               items2 = [tmp37Result, , ];
               const obj12 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp4.title, accessibilityLabel: combined, children: null };
               combined = tmp28;
-              const Text = tmp(5149).Text;
+              const Text = tmp(5150).Text;
               if (tmp12) {
                 const intl = tmp(1128).intl;
                 const string2 = intl.string;
@@ -344,7 +344,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                     return obj;
                   }
                 }
-                Button = tmp(5441).Button;
+                Button = tmp(5442).Button;
                 const intl2 = tmp(1128).intl;
                 tmp45[2] = intl2.string(stateFromStores(3865).oU59sU);
                 class P {
@@ -625,12 +625,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ active, children } = arg0);
   let tmp = closure_10();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(11650);
+  let obj = conjureControlPhase(11647);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(11650);
+  let obj2 = conjureControlPhase(11647);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(10958);
+  const obj3 = conjureControlPhase(10955);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -784,16 +784,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       items4 = [tmp.bar, animatedStyle1];
       View2 = tmp20(4909).View;
       if (tmp8) {
-        tmp36Result = tmp36(tmp2(11651).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp36Result = tmp36(tmp2(11648).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp20(587).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(11655).SparklesIcon;
+        const SparklesIcon = tmp2(11652).SparklesIcon;
         tmp36Result = tmp36(SparklesIcon, obj8);
       }
       items5 = [tmp36Result, , ];
       const obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
-      const Text = tmp2(5149).Text;
+      const Text = tmp2(5150).Text;
       if (tmp8) {
         const intl2 = tmp2(1128).intl;
         const _HermesInternal = HermesInternal;
@@ -806,7 +806,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         if (null != stop) {
           const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
           obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp20(3865).oU59sU), loading: stopping, onPress: stop };
-          Button = tmp2(5441).Button;
+          Button = tmp2(5442).Button;
           intl3 = tmp2(1128).intl;
           tmp36Result3 = tmp36(tmp25, obj10);
         }

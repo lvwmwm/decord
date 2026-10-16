@@ -1,8 +1,8 @@
-// Module ID: 5760
-// Function ID: 5761
+// Module ID: 5761
+// Function ID: 5762
 // Dependencies: [2]
 
-// Module 5760
+// Module 5761
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/elven_headpiece.png.js");

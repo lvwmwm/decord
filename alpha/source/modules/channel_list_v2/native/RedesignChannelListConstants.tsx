@@ -1,12 +1,12 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11818
+// Function ID: 11819
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1385, 10763, 2]
+// Dependencies: [17, 1385, 10760, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 11821 (RedesignChannelListConstants)
+// Module 11818 (RedesignChannelListConstants)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10763 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10760 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
 import size from "module_2" /* 2 */;
 

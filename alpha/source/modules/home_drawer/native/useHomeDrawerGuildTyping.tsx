@@ -1,15 +1,15 @@
-// Module ID: 17393
-// Function ID: 17394
+// Module ID: 17403
+// Function ID: 17404
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4811, 2072, 2068, 12740, 568, 558, 576, 17390, 17391, 11, 504, 2]
+// Dependencies: [4811, 2072, 2068, 12747, 568, 558, 576, 17400, 17401, 11, 504, 2]
 
-// Module 17393 (useHomeDrawerGuildTyping)
+// Module 17403 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import TypingStore from "TypingStore" /* 12740 */;
+import TypingStore from "TypingStore" /* 12747 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

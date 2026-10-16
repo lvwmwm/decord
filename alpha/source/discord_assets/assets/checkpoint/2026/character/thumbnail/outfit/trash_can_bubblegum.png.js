@@ -1,8 +1,8 @@
-// Module ID: 5691
-// Function ID: 5692
+// Module ID: 5692
+// Function ID: 5693
 // Dependencies: [2]
 
-// Module 5691
+// Module 5692
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/trash_can_bubblegum.png.js");

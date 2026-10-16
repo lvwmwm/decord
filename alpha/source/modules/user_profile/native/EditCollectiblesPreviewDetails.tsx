@@ -1,22 +1,22 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14190
+// Function ID: 14191
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2132, 21, 5153, 558, 576, 504, 4828, 7494, 4852, 5149, 1128, 8524, 2]
+// Dependencies: [19, 17, 2132, 21, 5154, 558, 576, 504, 4828, 7496, 4852, 5150, 1128, 8525, 2]
 
-// Module 14180 (EditCollectiblesPreviewDetails)
+// Module 14190 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
 import DateUtils from "DateUtils" /* 4852 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8524 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7496 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8525 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         let tmp18 = null != diffAsUnitsResult;
         if (tmp18) {
           const obj2 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj4) };
-          const Text = tmp(5149).Text;
+          const Text = tmp(5150).Text;
           const intl = tmp(1128).intl;
           format = intl.format;
           obj4 = { days: str.toString() };
@@ -163,7 +163,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         let tmp31 = null != expiresAt2;
         if (tmp31) {
           const obj7 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj8) };
-          const Text2 = tmp(5149).Text;
+          const Text2 = tmp(5150).Text;
           const intl3 = tmp(1128).intl;
           format3 = intl3.format;
           obj8 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
@@ -203,7 +203,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       const _Symbol2 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         const obj10 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-        const Text4 = tmp(5149).Text;
+        const Text4 = tmp(5150).Text;
         intl5 = tmp(1128).intl;
         const tmp48 = hasOwnProperty(Text4, obj10);
         cResult[16] = tmp48;
@@ -241,7 +241,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     const _Symbol = Symbol;
     if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
       const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-      const Text3 = tmp(5149).Text;
+      const Text3 = tmp(5150).Text;
       intl4 = tmp(1128).intl;
       const tmp39 = hasOwnProperty(Text3, obj13);
       cResult[21] = tmp39;
@@ -309,7 +309,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       const tmp15 = metroRequire;
       if (tmp16) {
         const obj4 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj5) };
-        const Text = tmp(5149).Text;
+        const Text = tmp(5150).Text;
         const intl = tmp(1128).intl;
         format = intl.format;
         obj5 = { days: str.toString() };
@@ -318,7 +318,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         tmp16 = hasOwnProperty(Text, obj4);
       }
       const items1 = [tmp16, , ];
-      const Text2 = tmp(5149).Text;
+      const Text2 = tmp(5150).Text;
       const intl2 = tmp(1128).intl;
       const format2 = intl2.format;
       let toLocaleDateStringResult;
@@ -337,7 +337,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       let tmp18Result = null != expiresAt2;
       if (tmp18Result) {
         const obj8 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj9) };
-        const Text3 = tmp(5149).Text;
+        const Text3 = tmp(5150).Text;
         const intl3 = tmp(1128).intl;
         format3 = intl3.format;
         obj9 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
@@ -354,13 +354,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     let tmp25Result;
     if (canUseCollectiblesResult) {
       const obj11 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-      const Text6 = tmp(5149).Text;
+      const Text6 = tmp(5150).Text;
       intl5 = tmp(1128).intl;
       tmp25Result = hasOwnProperty(Text6, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
       const isPremiumResult = tmp4Result.isPremium(user);
-      const Text5 = tmp(5149).Text;
+      const Text5 = tmp(5150).Text;
       const obj12 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
@@ -373,7 +373,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     tmp23 = tmp25Result;
   } else {
     const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-    const Text4 = tmp(5149).Text;
+    const Text4 = tmp(5150).Text;
     intl4 = tmp(1128).intl;
     tmp23 = hasOwnProperty(Text4, obj13);
   }

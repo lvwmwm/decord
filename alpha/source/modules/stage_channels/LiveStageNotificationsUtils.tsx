@@ -1,9 +1,9 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8901
+// Function ID: 8902
 // Name: LiveStageNotificationsUtils
 // Dependencies: [5079, 4809, 1098, 558, 576, 504, 2]
 
-// Module 8900 (LiveStageNotificationsUtils)
+// Module 8901 (LiveStageNotificationsUtils)
 import Constants from "Constants" /* 1098 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5079 */;
 import PermissionStore from "PermissionStore" /* 4809 */;

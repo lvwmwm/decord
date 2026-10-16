@@ -1,17 +1,17 @@
-// Module ID: 13150
-// Function ID: 13151
+// Module ID: 13158
+// Function ID: 13159
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 5153, 587, 558, 576, 13151, 13152, 13153, 6512, 1128, 2603, 5149, 5367, 5367, 2]
+// Dependencies: [17, 21, 5154, 587, 558, 576, 13159, 13160, 13161, 6514, 1128, 2603, 5150, 5368, 5368, 2]
 
-// Module 13150 (GuildPowerupsDeactivateAlert)
+// Module 13158 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2603 from "module_2603" /* 2603 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13151 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13152 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13159 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13160 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,15 +47,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   ({ guildId, powerup } = arg0);
   const tmp4 = closure_6();
   _require = tmp4;
-  const tmp6 = onDeactivate(13151)(guildId, powerup);
+  const tmp6 = onDeactivate(13159)(guildId, powerup);
   onDeactivate = tmp6.onDeactivate;
   const error = tmp6.error;
-  const arr = onDeactivate(13152)(guildId, powerup);
+  const arr = onDeactivate(13160)(guildId, powerup);
   const obj2 = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj2.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: onDeactivate(587).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
-    const CircleErrorIcon = tmp(6512).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6514).CircleErrorIcon;
     const tmp10 = closure_4(CircleErrorIcon, obj3);
     cResult[0] = tmp10;
     first = tmp10;
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     if (cResult[13] !== tmp22) {
       let str = "deactivate";
       const obj7 = { variant: "destructive", onPress: tmp22, text: tmp23 };
-      const tmp27 = closure_4(tmp(5367).AlertActionButton, obj7, "deactivate");
+      const tmp27 = closure_4(tmp(5368).AlertActionButton, obj7, "deactivate");
       cResult[13] = tmp22;
       cResult[14] = tmp27;
       tmp25 = tmp27;
@@ -144,7 +144,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     const _Symbol3 = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { onPress: tmp28, variant: "secondary", text: intl4.string(tmp(1128).t["ETE/oC"]) };
-      const AlertActionButton = tmp(5367).AlertActionButton;
+      const AlertActionButton = tmp(5368).AlertActionButton;
       intl4 = tmp(1128).intl;
       let str2 = "cancel";
       const tmp31 = closure_4(AlertActionButton, obj8, "cancel");
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
             }
           }
           const obj9 = { header: tmp11, title: tmp15, content: tmp17, actions: tmp32, extraContent: tmp39 };
-          const tmp45 = closure_4(tmp(5367).AlertModal, obj9);
+          const tmp45 = closure_4(tmp(5368).AlertModal, obj9);
           cResult[28] = tmp32;
           cResult[29] = tmp39;
           cResult[30] = tmp11;
@@ -230,7 +230,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     }
     const obj11 = { children: items };
     items = [tmp19, tmp25, tmp29];
-    const tmp34 = closure_5(tmp(5367).AlertActions, obj11);
+    const tmp34 = closure_5(tmp(5368).AlertActions, obj11);
     cResult[17] = tmp19;
     cResult[18] = tmp25;
     cResult[19] = tmp34;
@@ -239,7 +239,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   let tmp20 = null != error;
   if (tmp20) {
     const obj12 = { style: tmp4.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp20 = closure_4(tmp(5149).Text, obj12);
+    tmp20 = closure_4(tmp(5150).Text, obj12);
   }
   cResult[7] = error;
   cResult[8] = tmp4.warningText;
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   tmp9 = closure_5;
   if (tmp7Result) {
     const obj7 = { style: tmp.warningText, variant: "text-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp7Result = tmp7(tmp5(5149).Text, obj7);
+    tmp7Result = tmp7(tmp5(5150).Text, obj7);
   }
   obj8 = { children: items };
   items = [tmp7Result, , ];
@@ -303,7 +303,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     },
     text: intl3.string(_modDef2603.PYPdl4)
   };
-  const AlertActionButton = tmp5(5367).AlertActionButton;
+  const AlertActionButton = tmp5(5368).AlertActionButton;
   intl3 = tmp5(1128).intl;
   items[1] = closure_4(AlertActionButton, obj9, "deactivate");
   const obj10 = {
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     variant: "secondary",
     text: intl4.string(require("intl").t["ETE/oC"])
   };
-  const AlertActionButton2 = tmp5(5367).AlertActionButton;
+  const AlertActionButton2 = tmp5(5368).AlertActionButton;
   intl4 = tmp5(1128).intl;
   items[2] = closure_4(AlertActionButton2, obj10, "cancel");
   obj11 = {

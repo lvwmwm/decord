@@ -1,581 +1,392 @@
 // Module ID: 15329
 // Function ID: 15330
-// Dependencies: [41, 42, 15330]
+// Dependencies: []
 
 // Module 15329
-import _mod15330 from "module_15330" /* 15330 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-
-function getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self) {
-  let _undefined;
-  const substr = [...arguments].slice();
-  value = __INTERNAL_SLOT_MAP__.get(self);
-  let c0 = value;
-  if (c0) {
-    const _Object = Object;
-    return substr.reduce((acc, item) => {
-      acc[item] = c0[item];
-      return acc;
-    }, Object.create(null));
-  } else {
-    const _TypeError = TypeError;
-    const _HermesInternal = HermesInternal;
-    self = this;
-    const self2 = this;
-    const typeError = new TypeError("" + self + " InternalSlot has not been initialized");
-    throw typeError;
-  }
+function error(arg0) {
+  const rangeError = new RangeError(closure_3.overflow);
+  throw rangeError;
 }
-function GetOption(obj, arg1, arg2, join, arg4) {
-  if (typeof obj !== "object") {
-    const _TypeError2 = TypeError;
-    const self3 = this;
-    const self4 = this;
-    const typeError = new TypeError("Options must be an object");
-    throw typeError;
-  } else {
-    let require = tmp15;
-    if (undefined !== obj[arg1]) {
-      let tmp2 = tmp15;
-      if ("boolean" === "string") {
-        const _Boolean = Boolean;
-        const BooleanResult = Boolean(obj[arg1]);
-        require = BooleanResult;
-        tmp2 = BooleanResult;
-      }
-      let tmp5 = tmp2;
-      if (typeof tmp2 === "symbol") {
-        const _TypeError = TypeError;
-        throw TypeError("Cannot convert a Symbol value to a string");
-      } else {
-        const _String = String;
-        const StringResult = String(tmp2);
-        require = StringResult;
-        tmp5 = StringResult;
-      }
-      if (join.filter((item) => item == require).length) {
-        return tmp5;
-      } else {
-        const _RangeError = RangeError;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const rangeError = new RangeError("" + tmp5 + " is not within " + join.join(", "));
-        throw rangeError;
-      }
-    } else {
-      return arg4;
-    }
-  }
-}
-function memoize(arg0, cache) {
-  const obj = { cache: cache.cache || closure_10, serializer: cache.serializer || serializerDefault };
-  return cache.strategy ? cache.strategy : strategyDefault(arg0, obj);
-}
-function monadic(call, get, fn, num) {
-  let tmp2 = num;
-  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
-  if (!tmp) {
-    tmp2 = fn(num);
-  }
-  value = get.get(tmp2);
-  if (undefined === value) {
-    const callResult = call.call(this, num);
-    const result = get.set(tmp2, callResult);
-    value = callResult;
-  }
-  return value;
-}
-function variadic(apply, get, fn) {
-  const callResult = slice.call(arguments, 3);
-  const tmp2 = fn(callResult);
-  value = get.get(tmp2);
-  if (undefined === value) {
-    const self = this;
-    const applyResult = apply.apply(this, callResult);
-    const result = get.set(tmp2, applyResult);
-    value = applyResult;
-  }
-  return value;
-}
-function strategyDefault(c165, cache) {
-  cache = cache.cache;
-  const obj = 1 === c165.length ? monadic : variadic;
-  return obj.bind(this, c165, cache.create(), cache.serializer);
-}
-function isLiteralPart(type) {
-  return "literal" === type.type;
-}
-function invariant(arg0, arg1) {
-  let _Error;
-  {
-    _Error = Error;
-  }
-  const tmp2 = arg0;
-  if (!tmp2) {
-    const self = this;
-    const self2 = this;
-    const _Error1 = new _Error(arg1);
-    throw _Error1;
-  }
-}
-function validateInstance(arg0, format) {
-  if (!(arg0 instanceof obj)) {
-    const _TypeError = TypeError;
-    const _String = String;
-    const _HermesInternal = HermesInternal;
-    const self = this;
-    const self2 = this;
-    const typeError = new TypeError("Method Intl.ListFormat.prototype." + "format" + " called on incompatible receiver " + String(arg0));
-    throw typeError;
-  }
-}
-function stringListFromIterable(obj) {
-  if (typeof obj !== "object") {
-    return [];
-  } else {
-    const items = [];
-    const _Symbol = Symbol;
-    const iter = obj[Symbol.iterator]();
-    const iter2 = iter.next();
-    let iter3 = iter2;
-    if (!iter2.done) {
-      while (typeof iter3.value === "string") {
-        let arr = items.push(iter3.value);
-        let iter4 = iter.next();
-        iter3 = iter4;
-      }
-      const _TypeError = TypeError;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const typeError = new TypeError("Iterable yielded " + iter3.value + " which is not a string");
-      throw typeError;
-    }
-    return items;
-  }
-}
-function createPartsFromList(__INTERNAL_SLOT_MAP__, self, arg2) {
-  if (0 === arg2.length) {
-    return [];
-  } else if (2 === arg2.length) {
-    const obj2 = { 0: null, 1: null };
-    const obj3 = { type: "element", value: arg2[0] };
-    obj2[0] = obj3;
-    const obj4 = { type: "element", value: arg2[1] };
-    obj2[1] = obj4;
-    return deconstructPattern(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, "templatePair").templatePair, obj2);
-  } else {
-    const obj5 = { type: "element", value: arg2[arg2.length - 1] };
-    let diff = length - 2;
-    let tmpResult = obj5;
-    let tmp6 = obj5;
-    if (0 <= diff) {
-      do {
-        let str = "templateStart";
-        let tmp = deconstructPattern;
-        if (0 !== diff) {
-          let str2 = "templateEnd";
-          if (diff < length - 2) {
-            str2 = "templateMiddle";
-          }
-          str = str2;
-        }
-        let obj = { 0: null, 1: null };
-        let obj6 = { type: "element", value: arg2[diff] };
-        obj[0] = obj6;
-        obj[1] = tmpResult;
-        tmpResult = tmp(getMultiInternalSlots(__INTERNAL_SLOT_MAP__, self, str)[str], obj);
-        diff = diff - 1;
-        tmp6 = tmpResult;
-      } while (0 <= diff);
-    }
-    return tmp6;
-  }
-}
-function deconstructPattern(templatePair, arg1) {
-  function PartitionPattern(arr) {
-    const items = [];
-    let index = arr.indexOf("{");
-    let num = 0;
-    if (index < arr.length) {
-      let num4 = 0;
-      num = 0;
-      if (index > -1) {
-        const index1 = arr.indexOf("}", index);
-        const _HermesInternal = HermesInternal;
-        const tmp4 = index1 > index;
-        const combined = "Invalid pattern " + arr;
-        const _Error = Error;
-        while (tmp4) {
-          if (index > num4) {
-            let obj = { type: "literal", value: arr.substring(num4, index) };
-            let push = items.push;
-            arr = push(obj);
-          }
-          let obj2 = { type: arr.substring(index + 1, index1), value: "r" };
-          let push2 = items.push;
-          let push2Result = push2(obj2);
-          let sum = index1 + 1;
-          let index2 = arr.indexOf("{", sum);
-          num = sum;
-          if (index2 < arr.length) {
-            num4 = sum;
-            num = sum;
-            index = index2;
+function ucs2decode(str) {
+  const items = [];
+  let num = 0;
+  if (0 < str.length) {
+    while (true) {
+      let sum = num + 1;
+      let charCodeAtResult = str.charCodeAt(num);
+      if (charCodeAtResult >= 55296) {
+        if (charCodeAtResult <= 56319) {
+          if (sum < length) {
+            let diff;
+            let sum1 = sum + 1;
+            let charCodeAtResult1 = str.charCodeAt(sum);
+            if (56320 === (64512 & charCodeAtResult1)) {
+              let arr = items.push(((1023 & charCodeAtResult) << 10) + (1023 & charCodeAtResult1) + 65536);
+              diff = sum1;
+            } else {
+              let arr4 = items.push(charCodeAtResult);
+              diff = sum1 - 1;
+            }
+            num = diff;
+            if (diff >= length) {
+              break;
+            }
           }
         }
-        const self = this;
-        const self2 = this;
-        const _Error1 = new _Error(combined);
-        throw _Error1;
       }
+      let arr5 = items.push(charCodeAtResult);
+      diff = sum;
     }
-    if (num < arr.length) {
-      const push3 = items.push;
-      const obj3 = { type: "literal", value: arr.substring(num, arr.length) };
-      push3(obj3);
-    }
-    return items;
-  }
-  let items = [];
-  const tmp2 = PartitionPattern(templatePair);
-  const iter = tmp2[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let type = nextResult.type;
-    let tmp4 = isLiteralPart;
-    let iter2 = nextResult;
-    if (isLiteralPart(nextResult)) {
-      let obj = { type: "literal", value: iter2.value };
-      let arr = items.push(obj);
-    } else {
-      let _HermesInternal = HermesInternal;
-      let tmp7 = type in arg1;
-      let tmp8 = invariant(tmp7, "" + type + " is missing from placables");
-      let tmp9 = arg1[type];
-      let tmp10 = tmp9;
-      let _Array = Array;
-      let push = items.push;
-      if (Array.isArray(tmp9)) {
-        let items1 = [];
-        let num = 0;
-        let arraySpreadResult = HermesBuiltin.arraySpread(items1, tmp11, 0);
-        let applyResult = HermesBuiltin.apply(push, items1, items);
-      } else {
-        let arr2 = push(tmp10);
-      }
-    }
-    continue;
   }
   return items;
 }
-function serializerDefault() {
-  return JSON.stringify(arguments);
+const re0 = /^xn--/;
+const re1 = /[^\0-\x7F]/;
+const re2 = /[\x2E\u3002\uFF0E\uFF61]/g;
+let closure_3 = { overflow: "Overflow: input needs wider integers to process", "not-basic": "Illegal input >= 0x80 (not a basic code point)", "invalid-input": "Invalid input" };
+function digitToBasic(arg0, arg1) {
+  return arg0 + 22 + 75 * (arg0 < 26) - (false << 5);
 }
-let closure_9 = (() => {
-  class ObjectWithoutPrototypeCache {
-    constructor() {
-      _classCallCheck(this, ObjectWithoutPrototypeCache);
-      this.cache = Object.create(null);
-    }
+function adapt(arg0, arg1, arg2) {
+  let tmp2;
+  const tmp = arg2;
+  if (tmp) {
+    tmp2 = floor(arg0 / 700);
+  } else {
+    tmp2 = arg0 >> 1;
   }
-  const entry = {
-    key: "get",
-    value: function get(arg0) {
-      return this.cache[arg0];
-    }
-  };
-  const items = [
-    entry,
-    {
-      key: "set",
-      value: function set(arg0, arg1) {
-        this.cache[arg0] = arg1;
-      }
-    }
-  ];
-  return _createClass(ObjectWithoutPrototypeCache, items);
-})();
-let closure_10 = {
-  create() {
-    const tmp = new closure_9();
-    return tmp;
+  let tmp4 = floor;
+  let sum = tmp2 + floor(tmp2 / arg1);
+  let num3 = 0;
+  let num4 = 0;
+  let tmp6 = sum;
+  if (sum > 455) {
+    do {
+      sum = floor(sum / 35);
+      num3 = num3 + 36;
+      num4 = num3;
+      tmp4 = floor;
+      tmp6 = sum;
+    } while (sum > 455);
   }
-};
-function strategyVariadic(c165, cache) {
-  cache = cache.cache;
-  return variadic.bind(this, c165, cache.create(), cache.serializer);
+  return tmp4(num4 + 36 * tmp6 / (tmp6 + 38));
 }
-memoize(() => Intl.NumberFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.PluralRules(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.Locale(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-memoize(() => Intl.ListFormat(...HermesBuiltin.copyRestArgs()), { strategy: strategyVariadic });
-let value = (() => {
-  class ListFormat {
-    constructor(locale, arg1) {
-      const self = this;
-      _classCallCheck(this, ListFormat);
-      let constructor;
-      if (this) {
-        if (self instanceof ListFormat) {
-          constructor = self.constructor;
+function decode(arr) {
+  let num = arr.lastIndexOf("-");
+  if (num < 0) {
+    num = 0;
+  }
+  const items = [];
+  let num2 = 128;
+  let num3 = 0;
+  if (0 < num) {
+    while (arr.charCodeAt(num3) < num2) {
+      arr = items.push(arr.charCodeAt(num3));
+      num3 = num3 + 1;
+    }
+    const _RangeError6 = RangeError;
+    const self11 = this;
+    const self12 = this;
+    const rangeError = new RangeError(closure_3["not-basic"]);
+    throw rangeError;
+  }
+  let num4 = 0;
+  if (num > 0) {
+    num4 = num + 1;
+  }
+  let num5 = 72;
+  let num6 = 0;
+  if (num4 < arr.length) {
+    let tmp2 = num4;
+    let num7 = 36;
+    let num8 = 1;
+    let tmp6 = num6;
+    while (true) {
+      while (tmp2 < length) {
+        let num9;
+        let tmp52 = +tmp2;
+        let charCodeAtResult = arr.charCodeAt(tmp52);
+        if (charCodeAtResult >= 48) {
+          if (charCodeAtResult < 58) {
+            num9 = charCodeAtResult - 48 + 26;
+            if (36 <= num9) {
+              let tmp39 = globalThis;
+              let _RangeError4 = RangeError;
+              let self7 = this;
+              let self8 = this;
+              let rangeError1 = new RangeError(closure_3["invalid-input"]);
+              throw rangeError1;
+            } else {
+              let tmp54 = floor;
+              if (num9 > floor((2147483647 - tmp6) / num8)) {
+                let tmp35 = globalThis;
+                let _RangeError3 = RangeError;
+                let self5 = this;
+                let self6 = this;
+                let rangeError2 = new RangeError(closure_3.overflow);
+                throw rangeError2;
+              } else {
+                let num11 = 1;
+                if (num7 > num5) {
+                  let num10 = 26;
+                  if (num7 < num5 + 26) {
+                    num10 = num7 - num5;
+                  }
+                  num11 = num10;
+                }
+                let sum = tmp52 + 1;
+                let sum1 = tmp6 + num9 * num8;
+                if (num9 < num11) {
+                  let sum2 = items.length + 1;
+                  if (typeof adapt === "function") {
+                    let tmp54Result;
+                    let diff = sum1 - num6;
+                    if (0 === num6) {
+                      tmp54Result = tmp54(diff / 700);
+                    } else {
+                      tmp54Result = diff >> 1;
+                    }
+                    let sum3 = tmp54Result + tmp54(tmp54Result / sum2);
+                    let num12 = 0;
+                    let num13 = 0;
+                    let tmp23 = tmp54;
+                    let tmp24 = sum3;
+                    if (sum3 > 455) {
+                      do {
+                        sum3 = floor(sum3 / 35);
+                        num12 = num12 + 36;
+                        num13 = num12;
+                        tmp23 = floor;
+                        tmp24 = sum3;
+                      } while (sum3 > 455);
+                    }
+                    let result = sum1 / sum2;
+                    let tmp23Result = tmp23(num13 + 36 * tmp24 / (tmp24 + 38));
+                    if (tmp54(result) > 2147483647 - num2) {
+                      let tmp31 = globalThis;
+                      let _RangeError2 = RangeError;
+                      let self3 = this;
+                      let self4 = this;
+                      let rangeError3 = new RangeError(closure_3.overflow);
+                      throw rangeError3;
+                    } else {
+                      let sum4 = num2 + tmp54(result);
+                      let result1 = sum1 % sum2;
+                      num6 = result1 + 1;
+                      let spliceResult = items.splice(result1, 0, sum4);
+                      num4 = sum;
+                      num5 = tmp23Result;
+                      num2 = sum4;
+                    }
+                  } else {
+                    let str = "Trying to call a non-function";
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  let diff1 = 36 - num11;
+                  if (num8 > tmp54(2147483647 / diff1)) {
+                    let tmp14 = globalThis;
+                    let _RangeError = RangeError;
+                    let self = this;
+                    let self2 = this;
+                    let rangeError4 = new RangeError(closure_3.overflow);
+                    throw rangeError4;
+                  } else {
+                    num8 = num8 * diff1;
+                    num7 = num7 + 36;
+                    tmp2 = sum;
+                    tmp6 = sum1;
+                    continue;
+                  }
+                }
+                continue;
+              }
+            }
+          }
+        }
+        if (charCodeAtResult >= 65) {
+          if (charCodeAtResult < 91) {
+            num9 = charCodeAtResult - 65;
+          }
+        }
+        num9 = 36;
+        if (charCodeAtResult >= 97) {
+          num9 = 36;
+          if (charCodeAtResult < 123) {
+            num9 = charCodeAtResult - 97;
+          }
         }
       }
-      if (constructor) {
-        const __INTERNAL_SLOT_MAP__ = tmp.__INTERNAL_SLOT_MAP__;
-        if (!__INTERNAL_SLOT_MAP__.get(self)) {
-          const _Object = Object;
-          const result = __INTERNAL_SLOT_MAP__.set(self, Object.create(null));
-        }
-        let obj4 = arg1;
-        __INTERNAL_SLOT_MAP__.get(self).initializedListFormat = true;
-        const _Intl = Intl;
-        const canonicalLocales = Intl.getCanonicalLocales(locale);
-        const _Object2 = Object;
-        const obj3 = Object.create(null);
-        if (undefined === arg1) {
-          const _Object3 = Object;
-          obj4 = Object.create(null);
-        } else if (typeof obj4 !== "object") {
-          const _TypeError2 = TypeError;
-          const self6 = this;
-          const self7 = this;
-          const typeError = new TypeError("Options must be an object");
-          throw typeError;
-        }
-        obj3.localeMatcher = GetOption(obj4, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        const localeData = tmp.localeData;
-        const obj = _mod15330;
-        const ResolveLocaleResult = obj.ResolveLocale(ListFormat.availableLocales, canonicalLocales, obj3, ListFormat.relevantExtensionKeys, localeData, ListFormat.getDefaultLocale);
-        const __INTERNAL_SLOT_MAP__2 = tmp.__INTERNAL_SLOT_MAP__;
-        locale = ResolveLocaleResult.locale;
-        if (!__INTERNAL_SLOT_MAP__2.get(self)) {
-          const _Object4 = Object;
-          const result1 = __INTERNAL_SLOT_MAP__2.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__2.get(self).locale = locale;
-        const __INTERNAL_SLOT_MAP__3 = tmp.__INTERNAL_SLOT_MAP__;
-        const tmp16Result = GetOption(obj4, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-        if (!__INTERNAL_SLOT_MAP__3.get(self)) {
-          const _Object5 = Object;
-          const result2 = __INTERNAL_SLOT_MAP__3.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__3.get(self).type = tmp16Result;
-        const __INTERNAL_SLOT_MAP__4 = tmp.__INTERNAL_SLOT_MAP__;
-        const tmp16Result2 = GetOption(obj4, "style", "string", ["long", "short", "narrow"], "long");
-        if (!__INTERNAL_SLOT_MAP__4.get(self)) {
-          const _Object6 = Object;
-          const result3 = __INTERNAL_SLOT_MAP__4.set(self, Object.create(null));
-        }
-        __INTERNAL_SLOT_MAP__4.get(self).style = tmp16Result2;
-        const dataLocale = ResolveLocaleResult.dataLocale;
-        const _HermesInternal = HermesInternal;
-        const tmp34 = !localeData[dataLocale];
-        const combined = "Missing locale data for " + dataLocale;
-        if (!tmp34) {
-          const __INTERNAL_SLOT_MAP__5 = tmp.__INTERNAL_SLOT_MAP__;
-          const pair = tmp40.pair;
-          if (!__INTERNAL_SLOT_MAP__5.get(self)) {
-            const _Object7 = Object;
-            const result4 = __INTERNAL_SLOT_MAP__5.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__5.get(self).templatePair = pair;
-          const __INTERNAL_SLOT_MAP__6 = tmp.__INTERNAL_SLOT_MAP__;
-          const start = tmp40.start;
-          if (!__INTERNAL_SLOT_MAP__6.get(self)) {
-            const _Object8 = Object;
-            const result5 = __INTERNAL_SLOT_MAP__6.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__6.get(self).templateStart = start;
-          const __INTERNAL_SLOT_MAP__7 = tmp.__INTERNAL_SLOT_MAP__;
-          const middle = tmp40.middle;
-          if (!__INTERNAL_SLOT_MAP__7.get(self)) {
-            const _Object9 = Object;
-            const result6 = __INTERNAL_SLOT_MAP__7.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__7.get(self).templateMiddle = middle;
-          const __INTERNAL_SLOT_MAP__8 = tmp.__INTERNAL_SLOT_MAP__;
-          const end = tmp40.end;
-          if (!__INTERNAL_SLOT_MAP__8.get(self)) {
-            const _Object10 = Object;
-            const result7 = __INTERNAL_SLOT_MAP__8.set(self, Object.create(null));
-          }
-          __INTERNAL_SLOT_MAP__8.get(self).templateEnd = end;
-        } else {
-          const self4 = this;
-          const self5 = this;
-          const tmp362 = new tmp36(combined);
-          throw tmp362;
-        }
-      } else {
-        const _TypeError = TypeError;
-        const self2 = this;
-        const self3 = this;
-        const typeError1 = new TypeError("Intl.ListFormat must be called with 'new'");
-        throw typeError1;
-      }
+      let tmp43 = globalThis;
+      let _RangeError5 = RangeError;
+      let self9 = this;
+      let self10 = this;
+      let rangeError5 = new RangeError(closure_3["invalid-input"]);
+      throw rangeError5;
     }
   }
-  const entry = {
-    key: "format",
-    value: function format(arg0) {
-      validateInstance(this, "format");
-      let str = "";
-      const iter = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
-      if (Array.isArray(iter)) {
-        for (const item10023 of iter) {
-          str = `${item10023.value}`;
-          continue;
-        }
-        return str;
-      } else {
-        return iter.value;
-      }
+  const items1 = [...items];
+  return String.fromCodePoint.apply(items1);
+}
+function encode(arg0) {
+  const items = [];
+  const arr2 = ucs2decode(arg0);
+  let num = 0;
+  let num2 = 72;
+  const iter = arr2[Symbol.iterator]();
+  let num3 = 128;
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    if (nextResult < num3) {
+      let arr = items.push(fromCharCode(tmp2));
     }
-  };
-  let items = [
-    entry,
-    {
-      key: "formatToParts",
-      value: function formatToParts(arg0) {
-        validateInstance(this, "format");
-        const tmp2 = createPartsFromList(ListFormat.__INTERNAL_SLOT_MAP__, this, stringListFromIterable(arg0));
-        if (Array.isArray(tmp2)) {
-          const items = [];
-          for (const item10022 of tmp2) {
-            let obj = {};
-            let push = items.push;
-            let merged = Object.assign(item10022);
-            let arr = push(obj);
+    continue;
+  }
+  let sum2 = length2;
+  if (sum2) {
+    items.push("-");
+  }
+  if (sum2 < arr2.length) {
+    let num4 = 2147483647;
+    const iter2 = arr2[Symbol.iterator]();
+    while (true) {
+      let nextResult1 = iter2.next();
+      while (iter2 !== undefined) {
+        let tmp14 = nextResult1 >= num3;
+        if (tmp14) {
+          tmp14 = tmp13 < num4;
+        }
+        if (tmp14) {
+          num4 = nextResult1;
+        }
+        continue;
+      }
+      let sum = sum2 + 1;
+      let diff = num4 - num3;
+      if (diff > floor((2147483647 - num) / sum)) {
+        break;
+      } else {
+        let num5 = num + (num4 - num3) * sum;
+        for (const item10065 of arr2) {
+          let tmp25 = item10065 < num4;
+          let tmp24 = item10065;
+          if (tmp25) {
+            let sum1 = num5 + 1;
+            num5 = sum1;
+            tmp25 = sum1 > 2147483647;
+          }
+          if (tmp25) {
+            let str2 = "overflow";
+            let tmp55 = error("overflow");
+            let tmp56 = __exception;
+            obj.return();
+            throw tmp56;
+          } else {
+            if (tmp24 === num4) {
+              let tmp45 = num5;
+              let num8 = 36;
+              while (true) {
+                let num6 = 1;
+                if (num8 > num2) {
+                  let num7 = 26;
+                  if (num8 < num2 + 26) {
+                    num7 = num8 - num2;
+                  }
+                  num6 = num7;
+                }
+                let tmp35 = num6;
+                if (tmp45 < num6) {
+                  break;
+                } else {
+                  let diff1 = tmp45 - tmp35;
+                  let diff2 = 36 - tmp35;
+                  let arr7 = items.push(fromCharCode(digitToBasic(tmp35 + diff1 % diff2, 0)));
+                  tmp45 = floor(diff1 / diff2);
+                  num8 = num8 + 36;
+                  continue;
+                }
+              }
+              let arr8 = items.push(fromCharCode(digitToBasic(tmp45, 0)));
+              num2 = adapt(num5, sum, sum2 === length2);
+              num5 = 0;
+              sum2 = sum2 + 1;
+            }
             continue;
           }
-          return items;
-        } else {
-          const items1 = [tmp2];
-          return items1;
         }
-      }
-    },
-    {
-      key: "resolvedOptions",
-      value: function resolvedOptions() {
-        let obj;
-        let self = this;
-        if (this instanceof obj) {
-          obj = { locale: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "locale").locale, type: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "type").type, style: getMultiInternalSlots(ListFormat.__INTERNAL_SLOT_MAP__, self, "style").style };
-          return obj;
-        } else {
-          let _TypeError = TypeError;
-          const _String = String;
-          let _HermesInternal = HermesInternal;
-          let self2 = this;
-          const self3 = this;
-          let typeError = new TypeError("Method Intl.ListFormat.prototype." + "resolvedOptions" + " called on incompatible receiver " + String(self));
-          throw typeError;
-        }
+        num = num5 + 1;
+        num3 = num4 + 1;
       }
     }
-  ];
-  const entry1 = {
-    key: "supportedLocalesOf",
-    value: function supportedLocalesOf(items, arg1) {
-      const availableLocales = ListFormat.availableLocales;
-      const canonicalLocales = Intl.getCanonicalLocales(items);
-      if (undefined !== arg1) {
-        if (null == arg1) {
-          const _TypeError = TypeError;
-          const self = this;
-          const self2 = this;
-          const typeError = new TypeError("undefined/null cannot be converted to object");
-          throw typeError;
-        } else {
-          const _Object = Object;
-          tmp2(Object(arg1), "localeMatcher", "string", ["lookup", "best fit"], "best fit");
-        }
-      }
-      const obj = _mod15330;
-      return obj.LookupSupportedLocales(Array.from(availableLocales), canonicalLocales);
-    }
-  };
-  let items1 = [
-    entry1,
-    {
-      key: "__addLocaleData",
-      value: function __addLocaleData() {
-        let data;
-        let locale;
-        const items = [...arguments];
-        const iter = items[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          ({ data, locale } = nextResult);
-          let _Intl = Intl;
-          let self = this;
-          let self2 = this;
-          let locale1 = new Intl.Locale(locale);
-          let str = locale1.minimize();
-          let str1 = str.toString();
-          ListFormat.localeData[str1] = data;
-          ListFormat.localeData[locale] = data;
-          let availableLocales = ListFormat.availableLocales;
-          let tmp5 = str1;
-          let tmp6 = ListFormat;
-          let addResult = availableLocales.add(str1);
-          let availableLocales2 = ListFormat.availableLocales;
-          let addResult1 = availableLocales2.add(locale);
-          if (!ListFormat.__defaultLocale) {
-            tmp6.__defaultLocale = tmp5;
-          }
-          continue;
-        }
-      }
-    },
-    {
-      key: "getDefaultLocale",
-      value: function getDefaultLocale() {
-        return ListFormat.__defaultLocale;
-      }
-    }
-  ];
-  return _createClass(ListFormat, items, items1);
-})();
-value.localeData = {};
-value.availableLocales = new Set();
-value.__defaultLocale = "";
-value.relevantExtensionKeys = [];
-value.polyfilled = true;
-new Set();
-const weakMap = new WeakMap();
-value.__INTERNAL_SLOT_MAP__ = weakMap;
-value.__ = undefined;
-try {
-  let _Symbol = Symbol;
-  if (typeof Symbol !== "undefined") {
-    let _Object4 = Object;
-    const _Symbol2 = Symbol;
-    Object.defineProperty(value.prototype, Symbol.toStringTag, { value: "Intl.ListFormat", writable: false, enumerable: false, configurable: true });
   }
-  let _Object = Object;
-  let str = "length";
-  Object.defineProperty(value.prototype.constructor, "length", { value: 0, writable: false, enumerable: false, configurable: true });
-  let _Object2 = Object;
-  Object.defineProperty(value.supportedLocalesOf, "length", { value: 1, writable: false, enumerable: false, configurable: true });
-  let _Object3 = Object;
-  let _Intl = Intl;
-  let obj2 = { value, writable: true, enumerable: false, configurable: true };
-  let str2 = "ListFormat";
-  Object.defineProperty(Intl, "ListFormat", obj2);
-  const _globalThis = globalThis;
-  if (__FORMATJS_LISTFORMAT_DATA__) {
-    let tmp10 = __FORMATJS_LISTFORMAT_DATA__;
-    const tmp11 = __FORMATJS_LISTFORMAT_DATA__;
-    for (const item10081 of __FORMATJS_LISTFORMAT_DATA__) {
-      let __addLocaleDataResult = value.__addLocaleData(item10081);
-      continue;
-    }
-    delete globalThis["__FORMATJS_LISTFORMAT_DATA__"];
-  }
-} catch (err) {
+  return items.join("");
 }
+const obj = {
+  version: "2.3.1",
+  ucs2: {
+    decode: ucs2decode,
+    encode(arg0) {
+      const items = [...arg0];
+      return String.fromCodePoint.apply(items);
+    }
+  },
+  decode,
+  encode,
+  toASCII(str) {
+    let tmp8;
+    const parts = str.split("@");
+    str = "";
+    let str2 = str;
+    if (parts.length > 1) {
+      str = `${arr[0]}@`;
+      str2 = parts[1];
+    }
+    const str3 = str2.replace(re2, ".");
+    const parts1 = str3.split(".");
+    const items = [];
+    let diff = tmp - 1;
+    if (+parts1.length) {
+      do {
+        let tmp3 = parts1[diff];
+        let text = tmp3;
+        if (re1.test(tmp3)) {
+          text = `xn--${encode(tmp3)}`;
+        }
+        items[diff] = text;
+        tmp8 = +diff;
+        diff = tmp8 - 1;
+      } while (tmp8);
+    }
+    return str + items.join(".");
+  },
+  toUnicode(str) {
+    let tmp7;
+    const parts = str.split("@");
+    str = "";
+    let str2 = str;
+    if (parts.length > 1) {
+      str = `${arr[0]}@`;
+      str2 = parts[1];
+    }
+    const str3 = str2.replace(re2, ".");
+    const parts1 = str3.split(".");
+    const items = [];
+    let diff = tmp - 1;
+    if (+parts1.length) {
+      do {
+        let arr4 = parts1[diff];
+        let tmp5 = arr4;
+        if (re0.test(arr4)) {
+          let str4 = arr4.slice(4);
+          tmp5 = decode(str4.toLowerCase());
+        }
+        items[diff] = tmp5;
+        tmp7 = +diff;
+        diff = tmp7 - 1;
+      } while (tmp7);
+    }
+    return str + items.join(".");
+  }
+};
+
+export default obj;

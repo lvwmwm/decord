@@ -1,31 +1,31 @@
-// Module ID: 17700
-// Function ID: 17701
+// Module ID: 17710
+// Function ID: 17711
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 2068, 9549, 1087, 21, 5153, 558, 576, 504, 6162, 6142, 11504, 13260, 17701, 17766, 17768, 17774, 17775, 17783, 17785, 17786, 17792, 17794, 38, 8621, 2]
+// Dependencies: [32, 19, 17, 2068, 9550, 1087, 21, 5154, 558, 576, 504, 6163, 6143, 11501, 13268, 17711, 17776, 17778, 17784, 17785, 17793, 17795, 17796, 17802, 17804, 38, 8622, 2]
 
-// Module 17700 (SearchTabsPage)
+// Module 17710 (SearchTabsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8621 */;
-import SearchConstants from "SearchConstants" /* 9549 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11504 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 13260 */;
-import RecentScreenDefault from "RecentScreen" /* 17701 */;
-import PeopleScreenDefault from "PeopleScreen" /* 17766 */;
-import MembersScreenDefault from "MembersScreen" /* 17768 */;
-import ChannelsScreenDefault from "ChannelsScreen" /* 17774 */;
-import MediaScreenDefault from "MediaScreen" /* 17775 */;
-import FilesScreenDefault from "FilesScreen" /* 17783 */;
-import LinksScreenDefault from "LinksScreen" /* 17785 */;
-import MessagesScreenDefault from "MessagesScreen" /* 17792 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17794 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8622 */;
+import SearchConstants from "SearchConstants" /* 9550 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11501 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 13268 */;
+import RecentScreenDefault from "RecentScreen" /* 17711 */;
+import PeopleScreenDefault from "PeopleScreen" /* 17776 */;
+import MembersScreenDefault from "MembersScreen" /* 17778 */;
+import ChannelsScreenDefault from "ChannelsScreen" /* 17784 */;
+import MediaScreenDefault from "MediaScreen" /* 17785 */;
+import FilesScreenDefault from "FilesScreen" /* 17793 */;
+import LinksScreenDefault from "LinksScreen" /* 17795 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17802 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17804 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,9 +85,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     const tmpResult = searchContext(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
-    const tmpResult3 = searchContext(6162);
+    const tmpResult3 = searchContext(6163);
     const isChannelSpoilerGated = tmpResult3.useIsChannelSpoilerGated(stateFromStores);
-    searchContext(6142);
+    searchContext(6143);
     if (first) {
       if (tab !== SearchTabs.MEMBERS) {
         if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
@@ -231,7 +231,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
       } else if (SearchTabs.THREADS === tab) {
         let tmp28;
         if (cResult[37] !== searchContext) {
-          const tmp30 = jsx(searchContext(17786).SearchTabsThreadScreen, { searchContext });
+          const tmp30 = jsx(searchContext(17796).SearchTabsThreadScreen, { searchContext });
           cResult[37] = searchContext;
           cResult[38] = tmp30;
           tmp28 = tmp30;
@@ -318,9 +318,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     return getChannel(channelId);
   });
-  const obj2 = searchContext(6162);
+  const obj2 = searchContext(6163);
   const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(stateFromStores);
-  searchContext(6142);
+  searchContext(6143);
   const tmp4 = searchContext;
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
@@ -349,7 +349,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     } else if (SearchTabs.LINKS === tab) {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
     } else if (SearchTabs.THREADS === tab) {
-      return jsx(tmp4(17786).SearchTabsThreadScreen, { searchContext });
+      return jsx(tmp4(17796).SearchTabsThreadScreen, { searchContext });
     } else if (SearchTabs.MESSAGES === tab) {
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });
     } else if (SearchTabs.PINS === tab) {

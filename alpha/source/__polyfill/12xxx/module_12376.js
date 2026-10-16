@@ -1,42 +1,20 @@
 // Module ID: 12376
 // Function ID: 12377
-// Dependencies: [12354, 12342, 12377]
+// Dependencies: [12375]
+// Exports: getTraceMetaTags
 
 // Module 12376
-import _mod12377 from "module_12377" /* 12377 */;
-import module_12354 from "module_12354" /* 12354 */;
+import _mod12375 from "module_12375" /* 12375 */;
 
 
-export const moduleMetadataIntegration = module_12354.defineIntegration(() => {
-  let obj = {
-    name: "ModuleMetadata",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = _mod12377;
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    }
-  };
-  return obj;
-});
+export const getTraceMetaTags = function getTraceMetaTags() {
+  const obj = _mod12375;
+  const entries1 = entries(obj.getTraceData());
+  const mapped = entries1.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
+};

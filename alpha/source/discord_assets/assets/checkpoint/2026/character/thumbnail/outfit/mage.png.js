@@ -1,8 +1,8 @@
-// Module ID: 5607
-// Function ID: 5608
+// Module ID: 5608
+// Function ID: 5609
 // Dependencies: [2]
 
-// Module 5607
+// Module 5608
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/mage.png.js");

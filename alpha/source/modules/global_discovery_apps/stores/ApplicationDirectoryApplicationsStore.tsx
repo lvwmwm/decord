@@ -1,9 +1,9 @@
-// Module ID: 6287
-// Function ID: 6288
+// Module ID: 6300
+// Function ID: 6301
 // Name: ApplicationDirectoryApplicationsStore
 // Dependencies: [2024, 504, 584, 2]
 
-// Module 6287 (ApplicationDirectoryApplicationsStore)
+// Module 6300 (ApplicationDirectoryApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;

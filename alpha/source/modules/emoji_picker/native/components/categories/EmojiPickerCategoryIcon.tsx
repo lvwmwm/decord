@@ -1,25 +1,25 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9798
+// Function ID: 9799
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6209, 21, 558, 576, 9150, 9788, 5113, 9800, 9191, 9802, 9804, 9449, 9806, 9808, 9208, 9810, 9266, 2]
+// Dependencies: [19, 6210, 21, 558, 576, 9151, 9787, 5113, 9799, 9192, 9801, 9803, 9450, 9805, 9807, 9209, 9809, 9267, 2]
 
-// Module 9799 (EmojiPickerCategoryIcon)
+// Module 9798 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ClockIcon from "ClockIcon" /* 5113 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6209 */;
-import TrophyIcon from "TrophyIcon" /* 9150 */;
-import ReactionIcon from "ReactionIcon" /* 9191 */;
-import HeartIcon from "HeartIcon" /* 9208 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9266 */;
-import GameControllerIcon from "GameControllerIcon" /* 9449 */;
-import StarIcon from "StarIcon" /* 9788 */;
-import LightbulbIcon from "LightbulbIcon" /* 9800 */;
-import NatureIcon from "NatureIcon" /* 9802 */;
-import FoodIcon from "FoodIcon" /* 9804 */;
-import BicycleIcon from "BicycleIcon" /* 9806 */;
-import ObjectIcon from "ObjectIcon" /* 9808 */;
-import FlagIcon from "FlagIcon" /* 9810 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6210 */;
+import TrophyIcon from "TrophyIcon" /* 9151 */;
+import ReactionIcon from "ReactionIcon" /* 9192 */;
+import HeartIcon from "HeartIcon" /* 9209 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9267 */;
+import GameControllerIcon from "GameControllerIcon" /* 9450 */;
+import StarIcon from "StarIcon" /* 9787 */;
+import LightbulbIcon from "LightbulbIcon" /* 9799 */;
+import NatureIcon from "NatureIcon" /* 9801 */;
+import FoodIcon from "FoodIcon" /* 9803 */;
+import BicycleIcon from "BicycleIcon" /* 9805 */;
+import ObjectIcon from "ObjectIcon" /* 9807 */;
+import FlagIcon from "FlagIcon" /* 9809 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

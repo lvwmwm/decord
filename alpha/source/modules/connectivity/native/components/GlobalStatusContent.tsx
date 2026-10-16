@@ -1,26 +1,26 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11344
+// Function ID: 11345
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2068, 2090, 5171, 5173, 11342, 1087, 21, 5153, 587, 558, 576, 11343, 504, 11169, 11340, 5090, 5028, 8553, 5035, 11145, 1384, 1633, 10609, 11348, 2]
+// Dependencies: [19, 17, 2068, 2090, 5172, 5174, 11339, 1087, 21, 5154, 587, 558, 576, 11340, 504, 11166, 11337, 5090, 5028, 8554, 5035, 11142, 1384, 1633, 10606, 11345, 2]
 
-// Module 11347 (GlobalStatusContent)
+// Module 11344 (GlobalStatusContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import useThemeDefault from "useTheme" /* 5090 */;
-import StatusBarDefault from "StatusBar" /* 10609 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11169 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11340 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 11342 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11343 */;
-import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 11348 */;
+import StatusBarDefault from "StatusBar" /* 10606 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11166 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11337 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 11339 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11340 */;
+import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 11345 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
-import SessionsStore from "SessionsStore" /* 5173 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
+import SessionsStore from "SessionsStore" /* 5174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj3;
 let tmp2;
 let unpackModuleId;
 const useSafeAreaInsetsDefault = tmp2(1633);
-const ChannelCallModalDefault = tmp2(11145);
+const ChannelCallModalDefault = tmp2(11142);
 const View = react_native.View;
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const RTCConnectionStates = Constants.RTCConnectionStates;
@@ -180,7 +180,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connectivi
               let isModalOpenResult = isScreenLandscape;
               if (isModalOpenResult) {
                 const tmpResult7 = require("NavigationRouteUtils");
-                isModalOpenResult = tmpResult7.isModalOpen(tmp5(11145));
+                isModalOpenResult = tmpResult7.isModalOpen(tmp5(11142));
               }
               if (isModalOpenResult) {
                 const tmpResult8 = require("PlatformUtils");

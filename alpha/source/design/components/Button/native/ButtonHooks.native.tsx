@@ -1,22 +1,22 @@
-// Module ID: 5447
-// Function ID: 5448
+// Module ID: 5448
+// Function ID: 5449
 // Name: ButtonHooks
-// Dependencies: [19, 5153, 558, 576, 4886, 587, 5028, 4877, 4909, 5440, 5444, 5446, 5448, 5443, 5149, 1384, 2]
+// Dependencies: [19, 5154, 558, 576, 4886, 587, 5028, 4877, 4909, 5441, 5445, 5447, 5449, 5444, 5150, 1384, 2]
 
-// Module 5447 (ButtonHooks)
+// Module 5448 (ButtonHooks)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import native from "native" /* 4886 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import shared from "shared" /* 5028 */;
-import spring from "spring" /* 5440 */;
-import Icon from "Icon" /* 5443 */;
-import springPresets from "springPresets" /* 5444 */;
-import ButtonConstants from "ButtonConstants" /* 5446 */;
-import useFontScale from "useFontScale" /* 5448 */;
+import spring from "spring" /* 5441 */;
+import Icon from "Icon" /* 5444 */;
+import springPresets from "springPresets" /* 5445 */;
+import ButtonConstants from "ButtonConstants" /* 5447 */;
+import useFontScale from "useFontScale" /* 5449 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -886,13 +886,13 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   let BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = arg2;
   const tmp4 = undefined !== arg1 && arg1;
   if (undefined === arg2) {
-    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5446).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5447).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmpResult = useFontScale;
   const fontScale = tmpResult.useFontScale();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult6 = Icon;
-    const iconSize = tmpResult6.getIconSize(tmp(5446).MEDIUM_BUTTON_ICON_SIZE);
+    const iconSize = tmpResult6.getIconSize(tmp(5447).MEDIUM_BUTTON_ICON_SIZE);
     cResult[0] = iconSize;
     first = iconSize;
   } else {
@@ -903,7 +903,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult7 = Icon;
-      const iconSize1 = tmpResult7.getIconSize(tmp(5446).SMALL_BUTTON_ICON_SIZE);
+      const iconSize1 = tmpResult7.getIconSize(tmp(5447).SMALL_BUTTON_ICON_SIZE);
       cResult[1] = iconSize1;
       tmp10 = iconSize1;
     } else {
@@ -915,7 +915,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult8 = Icon;
-      const iconSize2 = tmpResult8.getIconSize(tmp(5446).LARGE_BUTTON_ICON_SIZE);
+      const iconSize2 = tmpResult8.getIconSize(tmp(5447).LARGE_BUTTON_ICON_SIZE);
       cResult[2] = iconSize2;
       tmp8 = iconSize2;
     } else {
@@ -927,7 +927,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   if (tmp4) {
     bound = first;
     if (fontScale > 1) {
-      const TextStyleSheet = tmp(5149).TextStyleSheet;
+      const TextStyleSheet = tmp(5150).TextStyleSheet;
       const tmpResult9 = ButtonConstants;
       const tmp16 = TextStyleSheet[tmpResult9.getButtonDefaultTextVariant(tmpResult9, size)];
       const tmpResult10 = PlatformUtils;
@@ -972,19 +972,19 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5446).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5447).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5446).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5447).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(5149).TextStyleSheet;
+        const TextStyleSheet = tmp(5150).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

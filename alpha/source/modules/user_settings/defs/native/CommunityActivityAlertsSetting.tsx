@@ -1,16 +1,16 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16514
+// Function ID: 16515
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11036, 8213, 1087, 558, 576, 504, 1128, 11006, 16501, 2]
+// Dependencies: [11033, 8214, 1087, 558, 576, 504, 1128, 11003, 16515, 2]
 
-// Module 16500 (CommunityActivityAlertsSetting)
+// Module 16514 (CommunityActivityAlertsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11036 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11033 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

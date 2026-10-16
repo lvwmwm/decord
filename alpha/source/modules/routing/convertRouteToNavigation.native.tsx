@@ -1,16 +1,17 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11513
+// Function ID: 11514
 // Name: convertRouteToNavigation
-// Dependencies: [1087, 11517, 5038, 5035, 5036, 5003, 5016, 2]
+// Dependencies: [1087, 9553, 11514, 5038, 5035, 5036, 5003, 5016, 2]
 // Exports: convertRouteToNavigation
 
-// Module 11516 (convertRouteToNavigation)
+// Module 11513 (convertRouteToNavigation)
 import Constants from "Constants" /* 1087 */;
 import matchPathCompat from "matchPathCompat" /* 5003 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
 import RootNavigationRef from "RootNavigationRef" /* 5036 */;
 import useChatLayout from "useChatLayout" /* 5038 */;
-import handleConjureRouteDefault from "handleConjureRoute" /* 11517 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9553 */;
+import handleConjureRouteDefault from "handleConjureRoute" /* 11514 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -63,65 +64,69 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
           if (null != matchPath2Result) {
             ({ channelId, guildId, messageId } = matchPath2Result.params);
             ({ navigationReplace, openChannel } = pathname);
-            if (!handleConjureRouteDefault(guildId, channelId, navigationReplace, openChannel)) {
-              const tmpResult14 = useChatLayout;
-              if (tmpResult14.getChatLayout().isChatLockedOpen) {
-                if (null != channelId) {
-                  if (false === navigationReplace) {
-                    const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
-                    NavigationRouteUtils;
-                    const tmpResult16 = RootNavigationRef;
-                    const rootNavigationRef1 = tmpResult16.getRootNavigationRef();
-                    let currentRoute;
-                    if (rootNavigationRef1 != null) {
-                      currentRoute = rootNavigationRef1.getCurrentRoute();
-                    }
-                    const coerceGuildsRouteResult = coerceGuildsRoute(currentRoute);
-                    let channelId1;
-                    if (coerceGuildsRouteResult != null) {
-                      const params = coerceGuildsRouteResult.params;
-                      if (params != null) {
-                        channelId1 = params.channelId;
+            if (null == channelId) {
+              if (!handleConjureRouteDefault(guildId, channelId, navigationReplace, openChannel)) {
+                const tmpResult15 = useChatLayout;
+                if (tmpResult15.getChatLayout().isChatLockedOpen) {
+                  if (null != channelId) {
+                    if (false === navigationReplace) {
+                      const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
+                      NavigationRouteUtils;
+                      const tmpResult17 = RootNavigationRef;
+                      const rootNavigationRef1 = tmpResult17.getRootNavigationRef();
+                      let currentRoute;
+                      if (rootNavigationRef1 != null) {
+                        currentRoute = rootNavigationRef1.getCurrentRoute();
+                      }
+                      const coerceGuildsRouteResult = coerceGuildsRoute(currentRoute);
+                      let channelId1;
+                      if (coerceGuildsRouteResult != null) {
+                        const params = coerceGuildsRouteResult.params;
+                        if (params != null) {
+                          channelId1 = params.channelId;
+                        }
+                      }
+                      if (channelId1 === channelId) {
+                        const obj4 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
+                        const tmpResult18 = NavigationRouteUtils;
+                        tmpResult18.navigateToRootTab(obj4);
+                      } else {
+                        const obj5 = { channelId, guildId, messageId, replaceChannelAndFixRoot: navigationReplace };
+                        const tmpResult19 = NavigationRouteUtils;
+                        tmpResult19.navigateToChannel(obj5);
                       }
                     }
-                    if (channelId1 === channelId) {
-                      const obj4 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
-                      const tmpResult17 = NavigationRouteUtils;
-                      tmpResult17.navigateToRootTab(obj4);
-                    } else {
-                      const obj5 = { channelId, guildId, messageId, replaceChannelAndFixRoot: navigationReplace };
-                      const tmpResult18 = NavigationRouteUtils;
-                      tmpResult18.navigateToChannel(obj5);
+                  }
+                  const obj6 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
+                  const tmpResult20 = NavigationRouteUtils;
+                  tmpResult20.navigateToRootTab(obj6);
+                } else if (null != channelId) {
+                  if (true === navigationReplace) {
+                    if (openChannel) {
+                      const obj7 = { channelId, guildId, messageId, replaceChannelAndFixRoot: navigationReplace, openChannel: true };
+                      const tmpResult21 = NavigationRouteUtils;
+                      tmpResult21.navigateToChannel(obj7);
                     }
                   }
-                }
-                const obj6 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
-                const tmpResult19 = NavigationRouteUtils;
-                tmpResult19.navigateToRootTab(obj6);
-              } else if (null != channelId) {
-                if (true === navigationReplace) {
-                  if (openChannel) {
-                    const obj7 = { channelId, guildId, messageId, replaceChannelAndFixRoot: navigationReplace, openChannel: true };
-                    const tmpResult20 = NavigationRouteUtils;
-                    tmpResult20.navigateToChannel(obj7);
+                  if (false !== navigationReplace) {
+                    const obj8 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
+                    const tmpResult22 = NavigationRouteUtils;
+                    tmpResult22.navigateToRootTab(obj8);
                   }
+                  const tmp19 = null != channelId && true !== navigationReplace;
+                  if (tmp19) {
+                    const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "a" };
+                    const tmpResult23 = NavigationRouteUtils;
+                    tmpResult23.navigateToChannel(obj9);
+                  }
+                } else {
+                  const obj10 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
+                  const tmpResult24 = NavigationRouteUtils;
+                  tmpResult24.navigateToRootTab(obj10);
                 }
-                if (false !== navigationReplace) {
-                  const obj8 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
-                  const tmpResult21 = NavigationRouteUtils;
-                  tmpResult21.navigateToRootTab(obj8);
-                }
-                const tmp19 = null != channelId && true !== navigationReplace;
-                if (tmp19) {
-                  const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "Array" };
-                  const tmpResult22 = NavigationRouteUtils;
-                  tmpResult22.navigateToChannel(obj9);
-                }
-              } else {
-                const obj10 = { screen: "guilds", guildId, channelId, resetRoot: navigationReplace };
-                const tmpResult23 = NavigationRouteUtils;
-                tmpResult23.navigateToRootTab(obj10);
               }
+            } else {
+              openChannelSecondaryViewChat;
             }
             return true;
           }
@@ -138,8 +143,8 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
         }
         return flag;
       }
-      const tmpResult24 = NavigationRouteUtils;
-      tmpResult24.resetToAuthRoute();
+      const tmpResult26 = NavigationRouteUtils;
+      tmpResult26.resetToAuthRoute();
       flag = true;
     }
   }

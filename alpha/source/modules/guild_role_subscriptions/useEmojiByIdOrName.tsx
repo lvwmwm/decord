@@ -1,10 +1,10 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16229
+// Function ID: 16230
 // Name: useEmojiByIdOrName
-// Dependencies: [6205, 558, 576, 504, 2]
+// Dependencies: [6206, 558, 576, 504, 2]
 
-// Module 16215 (useEmojiByIdOrName)
-import EmojiStore from "EmojiStore" /* 6205 */;
+// Module 16229 (useEmojiByIdOrName)
+import EmojiStore from "EmojiStore" /* 6206 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 18658
-// Function ID: 18659
+// Module ID: 18671
+// Function ID: 18672
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2068, 2090, 2119, 1392, 18659, 1087, 21, 5153, 587, 1505, 504, 18661, 5021, 1128, 7112, 18663, 18673, 7312, 18664, 6378, 6402, 5149, 6411, 1202, 18674, 7036, 6950, 2]
+// Dependencies: [32, 19, 17, 2068, 2090, 2119, 1392, 18672, 1087, 21, 5154, 587, 1505, 504, 18674, 5021, 1128, 7114, 18676, 18686, 7314, 18677, 6380, 6404, 5150, 6413, 1202, 18687, 7038, 6952, 2]
 // Exports: default
 
-// Module 18658 (GuildSettingsModalAuditLog)
+// Module 18671 (GuildSettingsModalAuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7112 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18661 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 18664 */;
-import AuditLogDefault from "AuditLog" /* 18673 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7114 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 18674 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18677 */;
+import AuditLogDefault from "AuditLog" /* 18686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18659 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18672 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

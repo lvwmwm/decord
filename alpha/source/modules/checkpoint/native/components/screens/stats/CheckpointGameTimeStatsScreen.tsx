@@ -1,25 +1,25 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12697
+// Function ID: 12698
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 12654, 5499, 21, 5153, 587, 558, 576, 504, 1128, 3123, 12678, 12680, 12692, 8905, 12676, 12682, 12683, 2]
+// Dependencies: [17, 12660, 5500, 21, 5154, 587, 558, 576, 504, 1128, 3123, 12684, 12686, 12698, 8906, 12682, 12688, 12689, 2]
 
-// Module 12691 (CheckpointGameTimeStatsScreen)
+// Module 12697 (CheckpointGameTimeStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3123 from "module_3123" /* 3123 */;
-import CheckpointConstants from "CheckpointConstants" /* 5499 */;
-import CalendarIcon from "CalendarIcon" /* 8905 */;
-import CheckpointTextDefault from "CheckpointText" /* 12676 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12678 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12680 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12682 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12683 */;
-import _modDef12692 from "module_12692" /* 12692 */;
-import CheckpointStore from "CheckpointStore" /* 12654 */;
+import CheckpointConstants from "CheckpointConstants" /* 5500 */;
+import CalendarIcon from "CalendarIcon" /* 8906 */;
+import CheckpointTextDefault from "CheckpointText" /* 12682 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12684 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12686 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12688 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12689 */;
+import _modDef12698 from "module_12698" /* 12698 */;
+import CheckpointStore from "CheckpointStore" /* 12660 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   const tmp31Result = CheckpointScreenDefault;
   const container = tmp4.container;
   if (cResult[27] !== tmp4.image) {
-    const obj13 = { uri: _modDef12692, style: tmp4.image };
+    const obj13 = { uri: _modDef12698, style: tmp4.image };
     const tmp31Result3 = CheckpointApngPlayerDefault;
     const tmp38 = metroRequire(tmp31Result3, obj13);
     cResult[27] = tmp4.image;
@@ -468,7 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   }
   const obj3 = { style: tmp.container, children: items1 };
   const obj4 = { style: tmp.imageContainer, children: metroRequire(tmp8Result4, obj5) };
-  obj5 = { uri: _modDef12692, style: tmp.image };
+  obj5 = { uri: _modDef12698, style: tmp.image };
   const tmp8Result = CheckpointScreenDefault;
   tmp8Result4 = CheckpointApngPlayerDefault;
   items1 = [metroRequire(View, obj4), ];

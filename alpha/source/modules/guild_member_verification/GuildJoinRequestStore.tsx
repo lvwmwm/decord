@@ -1,9 +1,9 @@
-// Module ID: 6342
-// Function ID: 6343
+// Module ID: 6344
+// Function ID: 6345
 // Name: GuildJoinRequestStore
 // Dependencies: [1392, 4999, 4761, 5001, 4804, 5000, 1104, 504, 584, 2]
 
-// Module 6342 (GuildJoinRequestStore)
+// Module 6344 (GuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -107,7 +107,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(guildJoinReque
 const secondaryIndexMap1 = new SecondaryIndexMap.SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
 const secondaryIndexMap2 = new SecondaryIndexMap.SecondaryIndexMap(guildJoinRequestsIndex, (actionedAt) => "" + actionedAt.actionedAt);
 const authStore4 = {};
-const trackedExposureExperiments = {};
+let closure_17 = {};
 const authStore5 = {};
 let closure_19 = {};
 let closure_20 = 10 * DurationsDefault.Seconds.MINUTE;

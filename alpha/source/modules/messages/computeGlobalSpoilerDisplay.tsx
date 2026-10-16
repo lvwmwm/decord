@@ -1,10 +1,10 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8626
+// Function ID: 8627
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [4809, 1087, 558, 576, 573, 2044, 2]
 // Exports: default
 
-// Module 8625 (computeGlobalSpoilerDisplay)
+// Module 8626 (computeGlobalSpoilerDisplay)
 import PermissionStore from "PermissionStore" /* 4809 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

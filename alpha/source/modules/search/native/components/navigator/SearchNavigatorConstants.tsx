@@ -1,9 +1,9 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17714
+// Function ID: 17715
 // Name: SearchNavigatorConstants
 // Dependencies: [2]
 
-// Module 17704 (SearchNavigatorConstants)
+// Module 17714 (SearchNavigatorConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorConstants.tsx");

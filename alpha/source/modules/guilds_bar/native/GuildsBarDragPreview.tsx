@@ -1,19 +1,19 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17440
+// Function ID: 17441
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6181, 17357, 17354, 21, 5153, 558, 576, 17074, 4909, 5440, 4886, 6984, 4877, 587, 17365, 17388, 4792, 2]
+// Dependencies: [19, 6182, 17369, 17366, 21, 5154, 558, 576, 17088, 4909, 5441, 4886, 6986, 4877, 587, 17377, 17398, 4792, 2]
 
-// Module 17430 (GuildsBarDragPreview)
+// Module 17440 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 4886 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
-import SortedGuildStore from "SortedGuildStore" /* 6181 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17354 */;
+import spring from "spring" /* 5441 */;
+import SortedGuildStore from "SortedGuildStore" /* 6182 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17366 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17357 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17369 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "test", name: "Array", color: "applicationId", expanded: "Array", children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "test", name: "Array", color: "apply", expanded: "<string:3841983154>", children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "test", name: "Array", color: "applicationId", expanded: "Array", children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "test", name: "Array", color: "apply", expanded: "<string:3841983154>", children: items };
         items = [tmp2];
         return element;
       }

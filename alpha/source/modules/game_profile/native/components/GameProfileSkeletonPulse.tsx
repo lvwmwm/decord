@@ -1,11 +1,11 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 9178
+// Function ID: 9179
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5143, 4909, 5154, 558, 576, 504, 2]
+// Dependencies: [19, 5144, 4909, 5155, 558, 576, 504, 2]
 
-// Module 9177 (GameProfileSkeletonPulse)
+// Module 9178 (GameProfileSkeletonPulse)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

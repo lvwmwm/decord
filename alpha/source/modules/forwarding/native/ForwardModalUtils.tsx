@@ -1,16 +1,16 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12606
+// Function ID: 12607
 // Name: ForwardModalUtils
-// Dependencies: [19, 21, 12601, 12602, 12603, 2002, 6152, 12639, 5363, 2]
+// Dependencies: [19, 21, 12607, 12608, 12609, 2002, 6153, 12645, 5364, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 12600 (ForwardModalUtils)
+// Module 12606 (ForwardModalUtils)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import useAlertStore from "useAlertStore" /* 5363 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12601 */;
-import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 12602 */;
+import useAlertStore from "useAlertStore" /* 5364 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12607 */;
+import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 12608 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ export const openForwardModal = function openForwardModal(arg0) {
   const obj = ForwardingAnalyticsUtils;
   obj.trackForwardStart(message.channel_id, message.id, source);
   const tmp2 = showSearchableDestinationListModalDefault;
-  tmp2(asyncRequire(12603, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
+  tmp2(asyncRequire(12609, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
 };
 export const closeForwardModal = function closeForwardModal() {
   const obj = ModalActionCreatorsDefault;

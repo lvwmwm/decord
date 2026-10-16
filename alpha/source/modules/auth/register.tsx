@@ -1,21 +1,21 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17012
+// Function ID: 17013
 // Name: register
-// Dependencies: [5, 16999, 502, 1087, 1112, 4761, 1267, 6156, 1275, 5854, 5945, 584, 17000, 17001, 17002, 2]
+// Dependencies: [5, 17013, 502, 1087, 1112, 4761, 1267, 6157, 1275, 5855, 5946, 584, 17014, 17015, 17016, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 16998 (register)
+// Module 17012 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import APIErrorDefault from "APIError" /* 5854 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5945 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6156 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17000 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17002 */;
+import APIErrorDefault from "APIError" /* 5855 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5946 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6157 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17014 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16999 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17013 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17001)(birthday);
+    tmp9 = tmp4(17015)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

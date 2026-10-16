@@ -1,32 +1,32 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10247
+// Function ID: 10248
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5143, 2122, 2090, 4819, 1392, 1087, 21, 5153, 6124, 587, 558, 576, 4909, 5154, 5458, 504, 1202, 5021, 5149, 7105, 7123, 8487, 8384, 5483, 5091, 2]
+// Dependencies: [19, 17, 5144, 2122, 2090, 4819, 1392, 1087, 21, 5154, 6125, 587, 558, 576, 4909, 5155, 5459, 504, 1202, 5021, 5150, 7107, 7125, 8488, 8385, 5484, 5091, 2]
 
-// Module 10246 (HorizontalAutocomplete)
+// Module 10247 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import timing from "timing" /* 5154 */;
-import useMountEffectDefault from "useMountEffect" /* 5458 */;
-import RoleIconUtils from "RoleIconUtils" /* 7105 */;
-import RoleIconDefault from "RoleIcon" /* 7123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8487 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import timing from "timing" /* 5155 */;
+import useMountEffectDefault from "useMountEffect" /* 5459 */;
+import RoleIconUtils from "RoleIconUtils" /* 7107 */;
+import RoleIconDefault from "RoleIcon" /* 7125 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8488 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
-import TextStyles from "TextStyles" /* 6124 */;
+import createStyles_mod from "createStyles" /* 5154 */;
+import TextStyles from "TextStyles" /* 6125 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
@@ -371,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(7105);
+          const tmpResult2 = guildId(7107);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -445,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(7123), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(7125), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -554,7 +554,7 @@ let obj5 = {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const tmpResult3 = channel(5483);
+        const tmpResult3 = channel(5484);
         const channelName = tmpResult3.computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
@@ -586,7 +586,7 @@ let obj5 = {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(channel(5149).Text, obj4);
+      const tmp22 = closure_11(channel(5150).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8384);
+      const tmpResult4 = channel(8385);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,16 +613,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8384);
+      const tmp2Result = channel(8385);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
     items = [closure_11(channel(1202).Icon, { source: channelIconWithGuild }), ];
     const tmp8 = closure_11(channel(1202).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5483);
+    const tmp2Result2 = channel(5484);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5149).Text, obj2);
+    items[1] = closure_11(channel(5150).Text, obj2);
     return closure_12(closure_16, obj);
   }),
   Emoji: ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(name) {

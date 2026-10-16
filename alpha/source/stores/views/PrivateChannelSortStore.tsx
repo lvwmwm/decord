@@ -1,22 +1,22 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7146
+// Function ID: 7147
 // Name: PrivateChannelSortStore
-// Dependencies: [6273, 6274, 2072, 2068, 2090, 6253, 6184, 1392, 11, 4804, 4761, 7145, 504, 584, 2]
+// Dependencies: [6274, 6275, 2072, 2068, 2090, 6254, 6185, 1392, 11, 4804, 4761, 7147, 504, 584, 2]
 
-// Module 7144 (PrivateChannelSortStore)
+// Module 7146 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import _modDef4761 from "module_4761" /* 4761 */;
 import SecondaryIndexMap from "SecondaryIndexMap" /* 4804 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7145 */;
-import MessageRequestStore from "MessageRequestStore" /* 6273 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6274 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7147 */;
+import MessageRequestStore from "MessageRequestStore" /* 6274 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6275 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 let values = [];
 let values2 = [];
 let closure_17 = [];
-const f40589 = () => {
+const f40608 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -93,7 +93,7 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f40589 === "function") {
+    if (typeof f40608 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;

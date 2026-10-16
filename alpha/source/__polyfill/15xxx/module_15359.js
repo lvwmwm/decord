@@ -1,142 +1,369 @@
 // Module ID: 15359
 // Function ID: 15360
-// Dependencies: [473, 15360, 190, 875]
-// Exports: default
+// Dependencies: [5, 17, 82, 15360, 15362, 15364, 15365, 15368, 15369, 15382, 15384, 15386, 15387, 15388, 15389, 15370]
 
 // Module 15359
-import ArgType from "ArgType" /* 15360 */;
-import react_mod from "react" /* 473 */;
+import ArgType2 from "ArgType" /* 15370 */;
+import _mod15389 from "module_15389" /* 15389 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import react_native_mod from "react-native" /* 17 */;
+import get_mod from "module_82" /* 82 */;
+import getReactNativeVersion from "getReactNativeVersion" /* 15360 */;
+import getReactNativeDimensions from "getReactNativeDimensions" /* 15362 */;
+import _asyncToGenerator_mod2 from "_asyncToGenerator" /* 15364 */;
+import OverlayCreator from "OverlayCreator" /* 15365 */;
+import module_15368 from "module_15368" /* 15368 */;
+import module_15369 from "module_15369" /* 15369 */;
+import module_15382 from "module_15382" /* 15382 */;
+import module_15384 from "module_15384" /* 15384 */;
+import react_native_mod2 from "react-native" /* 15386 */;
+import ArgType from "module_15387" /* 15387 */;
+import getReactNativePlatformConstants from "getReactNativePlatformConstants" /* 15388 */;
 
-let _default2, logger;
+let c1, c3, c4;
 
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
+let forceTouch;
+let interfaceIdiom;
+let obj10;
+let obj12;
+let obj14;
+let obj16;
+let obj18;
+let obj20;
+let obj22;
+let obj24;
+let obj26;
+let obj28;
+let obj30;
+let obj32;
+let osRelease;
+let serial;
+let serverHost;
+let tmp13;
+let uiMode;
+let _asyncToGenerator = _asyncToGenerator_mod2;
+let react_native = react_native_mod2;
+let get = get_mod;
+if (!get) {
+  tmp13 = { default: get };
+  const obj9 = { default: get };
 } else {
-  tmp3 = react;
+  tmp13 = get;
 }
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
+get = tmp13;
+if (!getReactNativeVersion) {
+  obj10 = { default: getReactNativeVersion };
+  const obj11 = { default: getReactNativeVersion };
+} else {
+  obj10 = getReactNativeVersion;
 }
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
-          }
-        }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
-              }
-            }
-          }
-        }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
+if (!getReactNativeDimensions) {
+  obj12 = { default: getReactNativeDimensions };
+  const obj13 = { default: getReactNativeDimensions };
+} else {
+  obj12 = getReactNativeDimensions;
+}
+_asyncToGenerator = _asyncToGenerator_mod2;
+if (!_asyncToGenerator) {
+  obj14 = { default: _asyncToGenerator };
+  const obj15 = { default: _asyncToGenerator };
+} else {
+  obj14 = _asyncToGenerator;
+}
+if (!OverlayCreator) {
+  obj16 = { default: OverlayCreator };
+  const obj17 = { default: OverlayCreator };
+} else {
+  obj16 = OverlayCreator;
+}
+if (!module_15368) {
+  obj18 = { default: module_15368 };
+  const obj19 = { default: module_15368 };
+} else {
+  obj18 = module_15368;
+}
+if (!module_15369) {
+  obj20 = { default: module_15369 };
+  const obj21 = { default: module_15369 };
+} else {
+  obj20 = module_15369;
+}
+if (!module_15382) {
+  obj22 = { default: module_15382 };
+  const obj23 = { default: module_15382 };
+} else {
+  obj22 = module_15382;
+}
+if (!module_15384) {
+  obj24 = { default: module_15384 };
+  const obj25 = { default: module_15384 };
+} else {
+  obj24 = module_15384;
+}
+react_native = react_native_mod2;
+if (!react_native) {
+  obj26 = { default: react_native };
+  const obj27 = { default: react_native };
+} else {
+  obj26 = react_native;
+}
+if (!ArgType) {
+  obj28 = { default: ArgType };
+  const obj29 = { default: ArgType };
+} else {
+  obj28 = ArgType;
+}
+if (!getReactNativePlatformConstants) {
+  obj30 = { default: getReactNativePlatformConstants };
+  const obj31 = { default: getReactNativePlatformConstants };
+} else {
+  obj30 = getReactNativePlatformConstants;
+}
+let c15 = "@REACTOTRON/clientId";
+const defaultResult = obj30.default();
+const model = defaultResult.model;
+const systemName = defaultResult.systemName;
+const url = {
+  createSocket(url) {
+    const webSocket = new WebSocket(url);
+    return webSocket;
+  },
+  host: (function() {
+    try {
+      const _default = get.default;
+      const scriptURL = _default.getConstants().scriptURL;
+      if (typeof scriptURL !== "string") {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Invalid non-string URL");
+        throw error;
+      } else {
+        return _mod15389.getHostFromUrl(scriptURL);
       }
+    } catch (tmp6) {
+      const _console = console;
+      const _HermesInternal = HermesInternal;
+      console.warn("getHost: \"" + tmp6.message + "\" for scriptURL - Falling back to " + "localhost");
+      return "localhost";
     }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
-          }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
-  };
+  })("localhost"),
+  port: 9090,
+  name: "React Native App",
+  environment: "production",
+  client: obj32,
+  getClientId() {
+    return closure_14(...arguments);
+  },
+  setClientId(payload) {
+    return closure_13(...arguments);
+  },
+  proxyHack: true
 };
+({ osRelease, serverHost, forceTouch, interfaceIdiom, uiMode, serial } = defaultResult);
+obj32 = { reactotronLibraryName: "reactotron-react-native", reactotronLibraryVersion: "REACTOTRON_REACT_NATIVE_VERSION", platform: react_native.Platform.OS, platformVersion: react_native.Platform.Version, osRelease, model, serverHost, forceTouch, interfaceIdiom, systemName, uiMode, serial, reactNativeVersion: obj10.default() };
+const merged = Object.assign(obj12.default());
+let closure_14 = _asyncToGenerator(async (arg0, value) => {
+  let asyncStorageHandler;
+  let closure_1;
+  let closure_0 = arg0;
+  if (c4 === 2) {
+    c4 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj = { value, done: true };
+      return obj;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      let str2;
+      let tmp;
+      let screenWidth;
+      let screenHeight;
+      let screenScale;
+      let closure_5;
+      let closure_6;
+      c4 = 2;
+      if (0 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          let closure_2 = tmp4;
+          str2 = closure_0;
+          if (closure_0 === undefined) {
+            str2 = "";
+          }
+          tmp = undefined;
+          screenWidth = undefined;
+          screenHeight = undefined;
+          screenScale = undefined;
+          closure_5 = undefined;
+          closure_6 = undefined;
+          c3 = 1;
+          c4 = 1;
+          return { value: "test", done: true };
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else if (closure_130_18.asyncStorageHandler) {
+        c4 = 3;
+        const obj4 = { value: asyncStorageHandler.getItem(closure_130_15), done: true };
+        asyncStorageHandler = closure_130_18.asyncStorageHandler;
+        return obj4;
+      } else {
+        tmp = closure_130_4.default();
+        screenWidth = tmp.screenWidth;
+        screenHeight = tmp.screenHeight;
+        screenScale = tmp.screenScale;
+        const items = [screenWidth, screenHeight];
+        const sorted = items.sort();
+        closure_5 = sorted.join("-");
+        const Platform = closure_130_2.Platform;
+        const obj5 = { ios: closure_130_17, android: closure_130_16, default: "" };
+        closure_6 = Platform.select(obj5);
+        const items1 = [str2, closure_130_2.Platform.OS, closure_130_2.Platform.Version, closure_6, closure_5, screenScale];
+        const _Boolean = Boolean;
+        const found = items1.filter(Boolean);
+        c4 = 3;
+        const obj6 = { value: found.join("-"), done: true };
+        return obj6;
+      }
+    } catch (tmp24) {
+      c4 = 3;
+      throw tmp24;
+    }
+  }
+});
+let closure_13 = _asyncToGenerator(async (arg0, value) => {
+  let asyncStorageHandler;
+  let closure_0;
+  if (c1 === 2) {
+    c1 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      c1 = 2;
+      if (arg0 === 1) {
+        c1 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c1 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else if (client.asyncStorageHandler) {
+        c1 = 3;
+        const obj = { value: asyncStorageHandler.setItem(c15, tmp3), done: true };
+        asyncStorageHandler = client.asyncStorageHandler;
+        return obj;
+      } else {
+        c1 = 3;
+        return { value: "IconComponent", done: null };
+      }
+    } catch (tmp5) {
+      c1 = 3;
+      throw tmp5;
+    }
+  }
+});
+let items = [obj14.default(), obj20.default(), obj28.default(), obj18.default(), obj16.default(), obj22.default(), obj24.default(), obj26.default()];
+const client = ArgType2.createClient(url);
+client.useReactNative = () => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  if (false !== obj.errors) {
+    const errors = obj.errors;
+    let tmp3 = null;
+    const use = client.use;
+    const _default = obj20.default;
+    if (typeof errors === "object") {
+      tmp3 = errors;
+    }
+    use(_default(tmp3));
+  }
+  if (false !== obj.log) {
+    client.use(obj28.default());
+  }
+  if (false !== obj.editor) {
+    const editor = obj.editor;
+    let tmp10 = null;
+    const use2 = client.use;
+    const _default2 = obj18.default;
+    if (typeof editor === "object") {
+      tmp10 = editor;
+    }
+    use2(_default2(tmp10));
+  }
+  if (false !== obj.overlay) {
+    client.use(obj16.default());
+  }
+  if (false !== obj.asyncStorage) {
+    const asyncStorage = obj.asyncStorage;
+    let tmp17 = null;
+    const use3 = client.use;
+    const _default3 = obj14.default;
+    if (typeof asyncStorage === "object") {
+      tmp17 = asyncStorage;
+    }
+    use3(_default3(tmp17));
+  }
+  if (false !== obj.networking) {
+    const networking = obj.networking;
+    let tmp21 = null;
+    const use4 = client.use;
+    const _default4 = obj22.default;
+    if (typeof networking === "object") {
+      tmp21 = networking;
+    }
+    use4(_default4(tmp21));
+  }
+  if (false !== obj.storybook) {
+    client.use(obj24.default());
+  }
+  if (false !== obj.devTools) {
+    client.use(obj26.default());
+  }
+  return client;
+};
+client.setAsyncStorageHandler = (asyncStorageHandler) => {
+  client.asyncStorageHandler = asyncStorageHandler;
+  return client;
+};
+const asyncStorage_export = obj14.default;
+const networking_export = obj22.default;
+
+export { asyncStorage_export as asyncStorage };
+export const devTools = obj26.default;
+export { networking_export as networking };
+export const openInEditor = obj18.default;
+export const overlay = obj16.default;
+export const storybook = obj24.default;
+export const trackGlobalErrors = obj20.default;
+export const trackGlobalLogs = obj28.default;
+export const reactNativeCorePlugins = items;
+export default client;

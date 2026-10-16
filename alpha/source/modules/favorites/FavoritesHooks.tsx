@@ -1,10 +1,10 @@
-// Module ID: 10561
-// Function ID: 10562
+// Module ID: 10562
+// Function ID: 10563
 // Name: FavoritesHooks
-// Dependencies: [4998, 1392, 2071, 2081, 1394, 10562, 558, 576, 10563, 504, 1991, 11, 1211, 2093, 2]
-// Exports: getFavoritesAccess, getFavoritesCategories
+// Dependencies: [4998, 1392, 2071, 2081, 1394, 10563, 558, 576, 504, 1991, 11, 1211, 2093, 2]
+// Exports: getFavoritesCategories, getFavoritesLimits
 
-// Module 10561 (FavoritesHooks)
+// Module 10562 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -13,7 +13,6 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1991 */;
 import FavoritesConstants from "FavoritesConstants" /* 2081 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10563 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
 import UserStore from "UserStore" /* 1392 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
@@ -24,128 +23,65 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10562);
+const FavoritesLimits = tmp(10563);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesAccess(arg0) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesLimits() {
   let currentUser;
-  let enabled;
-  let isFreemium;
   let tmp4;
-  let tmp6;
-  let tmp7;
+  let tmp5;
+  let tmp8;
   const obj = react;
-  const cResult = obj.c(8);
-  let str = "useFavoritesAccess";
-  if (undefined !== arg0) {
-    str = arg0;
-  }
-  if (cResult[0] !== str) {
-    const obj2 = { location: str };
-    cResult[0] = str;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = FavoritesGuildExperiment;
-  const favoritesGuildConfig = tmpResult.useFavoritesGuildConfig(tmp4);
-  ({ enabled, isFreemium } = favoritesGuildConfig);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function c() {
+    const fn = function o() {
       return currentUser.getCurrentUser();
     };
-    cResult[2] = items;
-    cResult[3] = fn;
-    tmp7 = fn;
-    tmp6 = items;
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
   } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
+    [tmp4, tmp5] = cResult;
   }
-  const tmpResult2 = get_initialized;
-  const stateFromStores = tmpResult2.useStateFromStores(tmp6, tmp7);
-  if (cResult[4] === stateFromStores) {
-    if (cResult[5] === enabled) {
-      let tmp10;
-      if (cResult[6] === isFreemium) {
-        tmp10 = cResult[7];
-      }
-      return tmp10;
-    }
-  }
-  const obj5 = PremiumTypeUtilsDefault;
-  const isPremiumExactlyResult = obj5.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
-  let tmp12 = enabled;
-  if (tmp12) {
-    tmp12 = isPremiumExactlyResult || isFreemium;
-  }
-  let num5 = 0;
-  if (tmp12) {
-    let num6;
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    let FREE_FAVORITE_LIMIT;
+    const obj3 = PremiumTypeUtilsDefault;
+    const isPremiumExactlyResult = obj3.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
     if (isPremiumExactlyResult) {
-      num6 = MAX_FAVORITE_CHANNELS;
+      FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
     } else {
-      num6 = 0;
-      if (isFreemium) {
-        num6 = tmp(10562).FREE_FAVORITE_LIMIT;
-      }
+      FREE_FAVORITE_LIMIT = tmp(10563).FREE_FAVORITE_LIMIT;
     }
-    num5 = num6;
+    const obj2 = { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
+    cResult[2] = stateFromStores;
+    cResult[3] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[3];
   }
-  const obj3 = { hasAccess: tmp12, isExperimentEnabled: enabled, isFreemium, favoriteLimit: num5, canUpsellFavoriteLimit: enabled && isFreemium && !isPremiumExactlyResult };
-  cResult[4] = stateFromStores;
-  cResult[5] = enabled;
-  cResult[6] = isFreemium;
-  cResult[7] = obj3;
-  tmp10 = obj3;
-}) : (function useFavoritesAccess() {
+  return tmp8;
+}) : (function useFavoritesLimits() {
+  let FREE_FAVORITE_LIMIT;
   let currentUser;
-  let enabled;
-  let isFreemium;
-  let str = arg0;
-  if (arg0 === undefined) {
-    str = "useFavoritesAccess";
-  }
-  const obj = FavoritesGuildExperiment;
-  const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
-  ({ enabled, isFreemium } = favoritesGuildConfig);
   const items = [UserStore];
-  const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj3 = PremiumTypeUtilsDefault;
-  const isPremiumExactlyResult = obj3.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
-  let tmp6 = enabled;
-  if (tmp6) {
-    tmp6 = isPremiumExactlyResult || isFreemium;
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = PremiumTypeUtilsDefault;
+  const isPremiumExactlyResult = obj2.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2);
+  if (isPremiumExactlyResult) {
+    FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
+  } else {
+    FREE_FAVORITE_LIMIT = FavoritesLimits.FREE_FAVORITE_LIMIT;
   }
-  let num = 0;
-  if (tmp6) {
-    let num2;
-    if (isPremiumExactlyResult) {
-      num2 = MAX_FAVORITE_CHANNELS;
-    } else {
-      num2 = 0;
-      if (isFreemium) {
-        num2 = FavoritesLimits.FREE_FAVORITE_LIMIT;
-      }
-    }
-    num = num2;
-  }
-  const obj4 = { hasAccess: tmp6, isExperimentEnabled: enabled, isFreemium, favoriteLimit: num, canUpsellFavoriteLimit: enabled };
-  if (enabled) {
-    enabled = isFreemium;
-  }
-  if (enabled) {
-    enabled = !isPremiumExactlyResult;
-  }
-  return obj4;
+  return { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
 });
-let closure_8 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesLimitUpsell() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesLimitUpsell() {
   let canUpsellFavoriteLimit;
   let favoriteLimit;
   let favoritesCountAgainstLimit;
@@ -153,11 +89,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   let tmp6;
   const obj = react;
   const cResult = obj.c(7);
-  ({ canUpsellFavoriteLimit, favoriteLimit } = closure_8("useFavoritesLimitUpsell"));
-  closure_8("useFavoritesLimitUpsell");
+  ({ canUpsellFavoriteLimit, favoriteLimit } = closure_8());
+  closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
-    const fn = function s() {
+    const fn = function a() {
       return favoritesCountAgainstLimit.getFavoritesCountAgainstLimit();
     };
     cResult[0] = items;
@@ -176,36 +112,36 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     if (cResult[3] === favoriteLimit) {
       if (cResult[4] === canUpsellFavoriteLimit) {
         let tmp10;
-        if (cResult[5] === (favoriteLimit > 0 && stateFromStores >= favoriteLimit)) {
+        if (cResult[5] === stateFromStores >= favoriteLimit) {
           tmp10 = cResult[6];
         }
         return tmp10;
       }
     }
   }
-  const obj2 = { shouldShowUpsell: canUpsellFavoriteLimit, favoriteCount: stateFromStores, favoriteLimit, isAtLimit: favoriteLimit > 0 && stateFromStores >= favoriteLimit };
+  const obj2 = { shouldShowUpsell: canUpsellFavoriteLimit, favoriteCount: stateFromStores, favoriteLimit, isAtLimit: stateFromStores >= favoriteLimit };
   cResult[2] = stateFromStores;
   cResult[3] = favoriteLimit;
   cResult[4] = canUpsellFavoriteLimit;
-  cResult[5] = favoriteLimit > 0 && stateFromStores >= favoriteLimit;
+  cResult[5] = stateFromStores >= favoriteLimit;
   cResult[6] = obj2;
   tmp10 = obj2;
 }) : (function useFavoritesLimitUpsell() {
   let canUpsellFavoriteLimit;
   let favoriteLimit;
   let favoritesCountAgainstLimit;
-  ({ canUpsellFavoriteLimit, favoriteLimit } = closure_8("useFavoritesLimitUpsell"));
-  closure_8("useFavoritesLimitUpsell");
+  ({ canUpsellFavoriteLimit, favoriteLimit } = closure_8());
+  closure_8();
   const items = [FavoriteStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => favoritesCountAgainstLimit.getFavoritesCountAgainstLimit());
   if (canUpsellFavoriteLimit) {
     canUpsellFavoriteLimit = true;
   }
-  return { shouldShowUpsell: canUpsellFavoriteLimit, favoriteCount: stateFromStores, favoriteLimit, isAtLimit: favoriteLimit > 0 && stateFromStores >= favoriteLimit };
+  return { shouldShowUpsell: canUpsellFavoriteLimit, favoriteCount: stateFromStores, favoriteLimit, isAtLimit: stateFromStores >= favoriteLimit };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites() {
   let favoriteChannels;
   let tmp4;
   let tmp5;
@@ -213,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
-    const fn = function s() {
+    const fn = function a() {
       return favoriteChannels.getFavoriteChannels();
     };
     cResult[0] = items;
@@ -231,9 +167,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   const obj = get_initialized;
   return obj.useStateFromStoresObject(items, () => favoriteChannels.getFavoriteChannels());
 });
-let closure_9 = tmp4;
+let closure_9 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -249,7 +185,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite(
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function s() {
       return FavoriteStore.getFavorite(closure_0);
     };
     cResult[1] = arg0;
@@ -268,7 +204,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite(
   return obj.useStateFromStores(items, () => FavoriteStore.getFavorite(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritedChannelIds() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritedChannelIds() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -289,7 +225,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorited
   return obj.keys(tmp);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesGuildSelected() {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesGuildSelected() {
   let guildId;
   let tmp4;
   let tmp5;
@@ -298,7 +234,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavorit
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
-    const fn = function a() {
+    const fn = function o() {
       return guildId.getGuildId();
     };
     cResult[0] = items;
@@ -328,18 +264,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavorit
   const obj2 = FavoritesUtils;
   return obj2.isFavoritesGuildId(stateFromStores);
 });
-let closure_10 = tmp7;
+let closure_10 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesAwareChannel(arg0, arg1) {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesAwareChannel(arg0) {
   let closure_0;
   let tmp13;
   let tmp = arg0;
   _require = arg0;
   const obj = require("react");
   const cResult = obj.c(4);
-  const tmp5 = closure_10();
-  const hasAccess = closure_8(arg1).hasAccess;
   const tmp2 = _require;
+  const tmp5 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
     cResult[0] = items;
@@ -348,7 +283,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     first = cResult[0];
   }
   if (cResult[1] !== tmp) {
-    const fn = function n() {
+    const fn = function s() {
       const result = null != closure_0 && FavoriteStore.isChannelOrParentFavorited(tmp);
       return result;
     };
@@ -365,24 +300,20 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     tmp13 = tmp;
   } else {
     tmp13 = null;
-    if (hasAccess) {
-      tmp13 = null;
-      if (tmp11) {
-        if (tmp != null) {
-          tmp.isCategory();
-        }
-        tmp13 = null;
+    if (tmp11) {
+      if (tmp != null) {
+        tmp.isCategory();
       }
+      tmp13 = null;
     }
   }
   return tmp13;
-}) : (function useFavoritesAwareChannel(arg0, arg1) {
+}) : (function useFavoritesAwareChannel(arg0) {
   let closure_0;
   let tmp6;
   let tmp = arg0;
   _require = arg0;
   const tmp2 = closure_10();
-  const hasAccess = closure_8(arg1).hasAccess;
   require("get initialized");
   [][0] = arg0;
   if (!tmp2) {
@@ -392,59 +323,32 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     tmp6 = tmp;
   } else {
     tmp6 = null;
-    if (hasAccess) {
-      tmp6 = null;
-      if (tmp4) {
-        if (tmp != null) {
-          tmp.isCategory();
-        }
-        tmp6 = null;
+    if (tmp4) {
+      if (tmp != null) {
+        tmp.isCategory();
       }
+      tmp6 = null;
     }
   }
   return tmp6;
 });
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
 
-export const useFavoritesAccess = tmp2;
-export const getFavoritesAccess = function getFavoritesAccess() {
-  let enabled;
-  let isFreemium;
-  const obj = FavoritesGuildExperiment;
-  const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
-  ({ enabled, isFreemium } = favoritesGuildConfig);
-  const obj2 = PremiumTypeUtilsDefault;
-  const isPremiumExactlyResult = obj2.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
-  let tmp5 = enabled;
-  if (tmp5) {
-    tmp5 = isPremiumExactlyResult || isFreemium;
+export const getFavoritesLimits = function getFavoritesLimits() {
+  let FREE_FAVORITE_LIMIT;
+  const obj = PremiumTypeUtilsDefault;
+  const isPremiumExactlyResult = obj.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
+  if (isPremiumExactlyResult) {
+    FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
+  } else {
+    FREE_FAVORITE_LIMIT = FavoritesLimits.FREE_FAVORITE_LIMIT;
   }
-  let num = 0;
-  if (tmp5) {
-    let num2;
-    if (isPremiumExactlyResult) {
-      num2 = MAX_FAVORITE_CHANNELS;
-    } else {
-      num2 = 0;
-      if (isFreemium) {
-        num2 = FavoritesLimits.FREE_FAVORITE_LIMIT;
-      }
-    }
-    num = num2;
-  }
-  const obj3 = { hasAccess: tmp5, isExperimentEnabled: enabled, isFreemium, favoriteLimit: num, canUpsellFavoriteLimit: enabled };
-  if (enabled) {
-    enabled = isFreemium;
-  }
-  if (enabled) {
-    enabled = !isPremiumExactlyResult;
-  }
-  return obj3;
+  return { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
 };
-export const useFavoritesLimitUpsell = tmp3;
-export const useFavorites = tmp4;
-export const useFavorite = tmp5;
-export const useFavoritedChannelIds = tmp6;
+export const useFavoritesLimitUpsell = tmp2;
+export const useFavorites = tmp3;
+export const useFavorite = tmp4;
+export const useFavoritedChannelIds = tmp5;
 export const getFavoritesCategories = function getFavoritesCategories(favoriteChannels) {
   let nickname;
   if (favoriteChannels === undefined) {
@@ -488,5 +392,5 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
   });
   return items;
 };
-export const useIsFavoritesGuildSelected = tmp7;
-export const useFavoritesAwareChannel = tmp8;
+export const useIsFavoritesGuildSelected = tmp6;
+export const useFavoritesAwareChannel = tmp7;

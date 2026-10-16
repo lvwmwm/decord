@@ -1,19 +1,19 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14588
+// Function ID: 14589
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1087, 21, 14579, 14580, 14581, 5153, 587, 558, 576, 5090, 4909, 5026, 5028, 5440, 13194, 5091, 11055, 8247, 5149, 2]
+// Dependencies: [19, 17, 1087, 21, 14589, 14590, 14591, 5154, 587, 558, 576, 5090, 4909, 5026, 5028, 5441, 13202, 5091, 11052, 8248, 5150, 2]
 
-// Module 14578 (GuildBoostingMarketingProgressBarMarker)
+// Module 14588 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import spring from "spring" /* 5440 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14579 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14580 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14581 */;
+import spring from "spring" /* 5441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14589 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14590 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14591 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -444,7 +444,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                                 tmp34 = cResult[27];
                               }
                               if (cResult[28] !== tier) {
-                                const tmpResult4 = tmp(8247);
+                                const tmpResult4 = tmp(8248);
                                 const tierName = tmpResult4.getTierName(tier, { useLevels: false });
                                 cResult[28] = tier;
                                 cResult[29] = tierName;
@@ -454,7 +454,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                               }
                               if (cResult[30] !== tmp39) {
                                 const obj5 = { variant: "text-xs/medium", children: tmp39 };
-                                const tmp43 = closure_6(tmp(5149).Text, obj5);
+                                const tmp43 = closure_6(tmp(5150).Text, obj5);
                                 cResult[30] = tmp39;
                                 cResult[31] = tmp43;
                                 tmp41 = tmp43;
@@ -501,7 +501,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                           }
                           let tmp35 = tmp11 && tier !== BoostedGuildTiers.NONE;
                           if (tmp35) {
-                            const obj8 = { source: sharedValue(11055), style: tmp4.progressBarMarkerUnlockedIcon };
+                            const obj8 = { source: sharedValue(11052), style: tmp4.progressBarMarkerUnlockedIcon };
                             const tmp5Result = sharedValue(5091);
                             tmp35 = closure_6(tmp5Result, obj8);
                           }
@@ -651,14 +651,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11055), style: tmp.progressBarMarkerUnlockedIcon };
+      const obj8 = { source: sharedValue(11052), style: tmp.progressBarMarkerUnlockedIcon };
       const tmp2Result = sharedValue(5091);
       tmp20Result = tmp20(tmp2Result, obj8);
     }
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5149).Text;
-    tmp5Result4 = useReducedMotion(8247);
+    const Text = tmp5(5150).Text;
+    tmp5Result4 = useReducedMotion(8248);
     items5[1] = closure_6(Text, obj9);
     items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
     return closure_7(PREMIUM_PERK_PINK, obj3);

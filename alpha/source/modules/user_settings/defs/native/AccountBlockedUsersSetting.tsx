@@ -1,18 +1,18 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15773
+// Function ID: 15774
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4819, 8213, 1087, 558, 576, 504, 1128, 11006, 9608, 15764, 2]
+// Dependencies: [4819, 8214, 1087, 558, 576, 504, 1128, 11003, 9607, 15774, 2]
 
-// Module 15763 (AccountBlockedUsersSetting)
+// Module 15773 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import DenyIcon from "DenyIcon" /* 9608 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import DenyIcon from "DenyIcon" /* 9607 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

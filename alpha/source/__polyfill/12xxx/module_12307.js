@@ -1,151 +1,148 @@
 // Module ID: 12307
 // Function ID: 12308
-// Dependencies: [12305]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12307
-import _mod12305 from "module_12305" /* 12305 */;
+let filename;
 
-
-export const isMatchingPattern = function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const obj = _mod12305;
-  let isStringResult = obj.isString(arr);
-  if (isStringResult) {
-    let isMatch;
-    const tmpResult = _mod12305;
-    if (tmpResult.isRegExp(test)) {
-      isMatch = test.test(arr);
-    } else {
-      const tmpResult2 = _mod12305;
-      isMatch = tmpResult2.isString(test);
-      if (isMatch) {
-        let hasItem;
-        if (flag) {
-          hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
+    }
+    let num2 = arg2;
+    if (arg2 === undefined) {
+      num2 = 0;
+    }
+    const items = [];
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
         }
-        isMatch = hasItem;
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
+        }
       }
     }
-    isStringResult = isMatch;
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
+    }
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
+    });
+  } else {
+    return [];
   }
-  return isStringResult;
+}
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
+
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
+    }
+  }
 };
-export const safeJoin = function safeJoin(arg0, arg1) {
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
+  }
+};
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
   if (Array.isArray(arg0)) {
     const items = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      try {
-        const push = items.push;
-        const obj = _mod12305;
-        if (obj.isVueViewModel(arg0[num])) {
-          push("[VueViewModel]");
-        } else {
-          const _String = String;
-          push(String(arg0[num]));
-        }
-      } catch (err) {
-        items.push("[value cannot be serialized]");
-      }
-      num = num + 1;
-    }
-    return items.join(arg1);
-  } else {
-    return "";
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
   }
+  return applyResult;
 };
-export const snipLine = function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > arr.length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > arr.length - 5) {
-      bound = length;
-    }
-    if (bound === arr.length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < arr.length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
-  }
-};
-export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  return items.some((test) => {
-    const obj2 = _mod12305;
-    let isStringResult = obj2.isString(obj);
-    if (isStringResult) {
-      let isMatch;
-      const tmpResult = _mod12305;
-      if (tmpResult.isRegExp(test)) {
-        isMatch = test.test(obj);
-      } else {
-        const tmpResult2 = _mod12305;
-        isMatch = tmpResult2.isString(test);
-        if (isMatch) {
-          let hasItem;
-          if (flag) {
-            hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
-          }
-          isMatch = hasItem;
-        }
-      }
-      isStringResult = isMatch;
-    }
-    return isStringResult;
-  });
-};
-export const truncate = function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
-      }
-    }
-  }
-  return combined;
-};
+export { stripSentryFramesAndReverse };

@@ -1,25 +1,25 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15407
+// Function ID: 15408
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 2067, 5502, 6115, 2068, 2014, 5171, 4819, 1392, 1087, 587, 9939, 9937, 11467, 10490, 5483, 1128, 2004, 2]
+// Dependencies: [32, 17, 2067, 5503, 6116, 2068, 2014, 5172, 4819, 1392, 1087, 587, 9940, 9938, 11464, 10491, 5484, 1128, 2004, 2]
 
-// Module 15397 (VoiceNotificationManager)
+// Module 15407 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import useChannelName from "useChannelName" /* 5483 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9937 */;
-import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 9939 */;
-import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10490 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11467 */;
+import useChannelName from "useChannelName" /* 5484 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9938 */;
+import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 9940 */;
+import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10491 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11464 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ApplicationStore from "ApplicationStore" /* 5502 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
+import ApplicationStore from "ApplicationStore" /* 5503 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import UserStore from "UserStore" /* 1392 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
@@ -68,7 +68,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "Symbol", connectionState: "cursor", selfMute: false, deafened: "animal", isPushToTalk: "baby", embeddedActivity: "bird", isStreaming: "chick" };
+    obj.state = { channelId: "Symbol", connectionState: "current", selfMute: false, deafened: "numeric", isPushToTalk: "numeric", embeddedActivity: "2-digit", isStreaming: "numeric" };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -211,7 +211,7 @@ class VoiceNotificationManager {
             string2Result = string2(t2.wjcRFX);
           }
           items[2] = createAction3(channel, "ToggleDeafen", string2Result);
-          ServiceNotificationType = tmp24(9939).ServiceNotificationType;
+          ServiceNotificationType = tmp24(9940).ServiceNotificationType;
           const tmp16Result2 = ForegroundServiceManagerDefault;
           tmp16Result2.updateServiceHandler(obj.voiceServiceHandlerId, obj5);
         } else {
@@ -241,7 +241,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "Symbol", connectionState: "cursor", selfMute: false, deafened: "animal", isPushToTalk: "baby", embeddedActivity: "bird", isStreaming: "chick" };
+obj.state = { channelId: "Symbol", connectionState: "current", selfMute: false, deafened: "numeric", isPushToTalk: "numeric", embeddedActivity: "2-digit", isStreaming: "numeric" };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -384,7 +384,7 @@ obj.handleUpdate = function handleUpdate(connectionState) {
         string2Result = string2(t2.wjcRFX);
       }
       items[2] = createAction3(channel, "ToggleDeafen", string2Result);
-      ServiceNotificationType = tmp24(9939).ServiceNotificationType;
+      ServiceNotificationType = tmp24(9940).ServiceNotificationType;
       const tmp16Result2 = ForegroundServiceManagerDefault;
       tmp16Result2.updateServiceHandler(obj.voiceServiceHandlerId, obj5);
     } else {

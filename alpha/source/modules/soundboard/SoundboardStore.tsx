@@ -1,9 +1,9 @@
-// Module ID: 5490
-// Function ID: 5491
+// Module ID: 5491
+// Function ID: 5492
 // Name: SoundboardStore
-// Dependencies: [32, 1246, 5171, 1392, 5491, 5492, 1087, 1097, 5190, 4761, 12, 2044, 1267, 5313, 11, 504, 5493, 584, 2]
+// Dependencies: [32, 1246, 5172, 1392, 5492, 5493, 1087, 1097, 5191, 4761, 12, 2044, 1267, 5314, 11, 504, 5494, 584, 2]
 
-// Module 5490 (SoundboardStore)
+// Module 5491 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,15 +12,15 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import FrecencyDefault from "Frecency" /* 5190 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5313 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5493 */;
+import FrecencyDefault from "Frecency" /* 5191 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5314 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import UserStore from "UserStore" /* 1392 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5491 */;
-import SoundboardConstants from "SoundboardConstants" /* 5492 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5492 */;
+import SoundboardConstants from "SoundboardConstants" /* 5493 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ let obj2 = {
 
   }
 };
-const isAppBarToggleOpen = new FrecencyDefault(obj2);
+let closure_23 = new FrecencyDefault(obj2);
 let closure_24 = [];
 let c25 = false;
 let closure_26 = false;

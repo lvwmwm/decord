@@ -1,20 +1,20 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12993
+// Function ID: 12994
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2128, 12980, 21, 5153, 587, 558, 576, 504, 12805, 5091, 1128, 6407, 5119, 5120, 7036, 2]
+// Dependencies: [19, 17, 2128, 12988, 21, 5154, 587, 558, 576, 504, 12811, 5091, 1128, 6409, 5119, 5120, 7038, 2]
 
-// Module 12985 (ApplicationCommandsCategories)
+// Module 12993 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5091 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12805 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12811 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12980 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12988 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -182,7 +182,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ca
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const PressableOpacity = tmp2(6409).PressableOpacity;
   const intl = tmp2(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1128).t;

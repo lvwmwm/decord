@@ -1,10 +1,10 @@
-// Module ID: 18642
-// Function ID: 18643
+// Module ID: 18655
+// Function ID: 18656
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 12510, 21, 558, 576, 1128, 18643, 6399, 6487, 18644, 2]
+// Dependencies: [19, 12516, 21, 558, 576, 1128, 18656, 6401, 6489, 18657, 2]
 
-// Module 18642 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 12510 */;
+// Module 18655 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 12516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultKeywo
     const tmp3 = arg1;
     if (tmp3) {
       const items = [];
-      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = arg0;
+      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== iter), 0)] = arg0;
       found = items;
     } else {
       found = filter((arg0) => arg0 !== closure_0);
@@ -236,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultKeywo
           const tmp4 = arg0;
           if (tmp4) {
             const items = [];
-            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = tmp2;
+            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== requiredAction), 0)] = tmp2;
             found = items;
           } else {
             found = filter((arg0) => arg0 !== closure_0);

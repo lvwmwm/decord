@@ -1,20 +1,20 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8921
+// Function ID: 8922
 // Name: HubProgressActionCreators
-// Dependencies: [2090, 8921, 1087, 2049, 1405, 2]
+// Dependencies: [2090, 8922, 1087, 2049, 1405, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 8920 (HubProgressActionCreators)
+// Module 8921 (HubProgressActionCreators)
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 8921 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8922 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f100358 = (hubProgress) => {
+const f100421 = (hubProgress) => {
   let flag = false;
   for (const item10008 of HUB_PROGRESS_STEP_ORDER) {
     let tmp = item10008;
@@ -44,12 +44,12 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
     if (hasItem) {
       const items = [INVITE_USER];
       const obj = items(2049);
-      const result = obj.updateUserGuildSettings(guildId, f100358, items(2049).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const result = obj.updateUserGuildSettings(guildId, f100421, items(2049).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   }
 };
 export const skipHubProgress = function skipHubProgress(id) {
   _require = HUB_PROGRESS_STEP_ORDER;
   let obj = require("UserSettingsProtoActionCreators");
-  const result = obj.updateUserGuildSettings(id, f100358, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
+  const result = obj.updateUserGuildSettings(id, f100421, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

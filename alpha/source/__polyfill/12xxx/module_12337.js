@@ -1,75 +1,105 @@
 // Module ID: 12337
 // Function ID: 12338
-// Dependencies: [12330, 12325, 12338, 12326, 12298]
-// Exports: sampleSpan
+// Dependencies: [41, 42, 12314, 12309]
 
 // Module 12337
-import _mod12325 from "module_12325" /* 12325 */;
-import _mod12326 from "module_12326" /* 12326 */;
-import _mod12330 from "module_12330" /* 12330 */;
-import _mod12338 from "module_12338" /* 12338 */;
+import _mod12309 from "module_12309" /* 12309 */;
+import generatePropagationContext from "generatePropagationContext" /* 12314 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-
-export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod12330;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod12325;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
-      }
+class SentryNonRecordingSpan {
+  constructor() {
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
     }
-    const tmpResult2 = _mod12338;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod12326.DEBUG_BUILD) {
-        const logger3 = tmp(12298).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
-      }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod12326.DEBUG_BUILD) {
-          const logger2 = tmp(12298).logger;
-          const _Number = Number;
-          const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
-        }
-        items2 = [false, parseSampleRateResult];
-      }
-      items3 = items2;
-    } else {
-      if (_mod12326.DEBUG_BUILD) {
-        const logger = tmp(12298).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
+    const self = this;
+    _classCallCheck(this, SentryNonRecordingSpan);
+    let traceId = obj.traceId;
+    if (!traceId) {
+      const obj2 = generatePropagationContext;
+      traceId = obj2.generateTraceId();
     }
-    return items3;
-  } else {
-    const items4 = [false];
-    return items4;
+    self._traceId = traceId;
+    let spanId = obj.spanId;
+    if (!spanId) {
+      const obj3 = generatePropagationContext;
+      spanId = obj3.generateSpanId();
+    }
+    self._spanId = spanId;
+  }
+}
+const entry = {
+  key: "spanContext",
+  value: function spanContext() {
+    const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _mod12309.TRACE_FLAG_NONE };
+    return obj;
   }
 };
+const items = [
+  entry,
+  {
+    key: "end",
+    value: function end(arg0) {
+
+    }
+  },
+  {
+    key: "setAttribute",
+    value: function setAttribute(arg0, arg1) {
+      return this;
+    }
+  },
+  {
+    key: "setAttributes",
+    value: function setAttributes(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "setStatus",
+    value: function setStatus(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "updateName",
+    value: function updateName(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "isRecording",
+    value: function isRecording() {
+      return false;
+    }
+  },
+  {
+    key: "addEvent",
+    value: function addEvent(arg0, arg1, arg2) {
+      return this;
+    }
+  },
+  {
+    key: "addLink",
+    value: function addLink(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "addLinks",
+    value: function addLinks(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "recordException",
+    value: function recordException(arg0, arg1) {
+
+    }
+  }
+];
+const SentryNonRecordingSpan_export = _createClass(SentryNonRecordingSpan, items);
+
+export { SentryNonRecordingSpan_export as SentryNonRecordingSpan };

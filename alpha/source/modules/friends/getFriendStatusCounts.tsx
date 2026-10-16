@@ -1,12 +1,12 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17837
+// Function ID: 17838
 // Name: getFriendStatusCounts
-// Dependencies: [5169, 4819, 1087, 2]
+// Dependencies: [5170, 4819, 1087, 2]
 // Exports: default
 
-// Module 17827 (getFriendStatusCounts)
+// Module 17837 (getFriendStatusCounts)
 import Constants from "Constants" /* 1087 */;
-import PresenceStore from "PresenceStore" /* 5169 */;
+import PresenceStore from "PresenceStore" /* 5170 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import size from "module_2" /* 2 */;
 

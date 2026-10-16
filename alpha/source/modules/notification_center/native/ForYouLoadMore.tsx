@@ -1,17 +1,17 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17526
+// Function ID: 17527
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 6275, 21, 5153, 558, 576, 573, 5441, 1128, 2]
+// Dependencies: [19, 17, 6276, 21, 5154, 558, 576, 573, 5442, 1128, 2]
 
-// Module 17516 (ForYouLoadMore)
+// Module 17526 (ForYouLoadMore)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6275 */;
-import createStyles from "createStyles" /* 5153 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6276 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouLoadMo
     tmp10Result = tmp10(React2, {});
   } else {
     const obj3 = { variant: "secondary", grow: true, size: "md", text: intl.string(intl2.t["Q/LSXp"]), onPress: onPressLoad };
-    const Button = tmp(5441).Button;
+    const Button = tmp(5442).Button;
     intl = tmp(1128).intl;
     tmp10Result = tmp10(Button, obj3);
   }
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouLoadMo
     tmp4Result = tmp4(React2, {});
   } else {
     const obj3 = { variant: "secondary", grow: true, size: "md", text: intl.string(intl2.t["Q/LSXp"]), onPress: onPressLoad };
-    const Button = tmp2(5441).Button;
+    const Button = tmp2(5442).Button;
     intl = tmp2(1128).intl;
     tmp4Result = tmp4(Button, obj3);
   }

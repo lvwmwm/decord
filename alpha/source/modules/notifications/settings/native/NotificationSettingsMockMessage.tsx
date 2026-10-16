@@ -1,18 +1,18 @@
-// Module ID: 13470
-// Function ID: 13471
+// Module ID: 13478
+// Function ID: 13479
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1392, 1087, 21, 5153, 587, 558, 576, 504, 5021, 4909, 5154, 5157, 5149, 1128, 1202, 13471, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 5154, 587, 558, 576, 504, 5021, 4909, 5155, 5158, 5150, 1128, 1202, 13479, 2]
 
-// Module 13470 (NotificationSettingsMockMessage)
+// Module 13478 (NotificationSettingsMockMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import timing from "timing" /* 5154 */;
-import timingPresets from "timingPresets" /* 5157 */;
+import timing from "timing" /* 5155 */;
+import timingPresets from "timingPresets" /* 5158 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,10 +105,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       return obj;
     }
   }
-  M.__closure = { withTiming: tmp(5154).withTiming, opacity: sharedValue, timingStandard: tmp(5157).timingStandard };
+  M.__closure = { withTiming: tmp(5155).withTiming, opacity: sharedValue, timingStandard: tmp(5158).timingStandard };
   M.__workletHash = 6531430956793;
   M.__initData = __initData;
-  ({ withTiming: tmp(5154).withTiming, opacity: sharedValue, timingStandard: tmp(5157).timingStandard });
+  ({ withTiming: tmp(5155).withTiming, opacity: sharedValue, timingStandard: tmp(5158).timingStandard });
   const animatedStyle = tmpResult4.useAnimatedStyle(M);
   if (notificationSetting.notificationSetting !== tmp12.ALL_MESSAGES) {
     let tmp20;
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     if (cResult[5] !== tmp9) {
       const obj4 = { variant: "text-sm/normal", color: "text-link", children: items1 };
       items1 = ["@", tmp9, " "];
-      const tmp22 = closure_8(tmp(5149).Text, obj4);
+      const tmp22 = closure_8(tmp(5150).Text, obj4);
       cResult[5] = tmp9;
       cResult[6] = tmp22;
       tmp20 = tmp22;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       tmp23 = cResult[7];
     }
     if (cResult[8] !== tmp20) {
-      const obj5 = { children: closure_8(tmp(5149).Text, obj6) };
+      const obj5 = { children: closure_8(tmp(5150).Text, obj6) };
       obj6 = { variant: "text-sm/medium", color: "text-default", children: items2 };
       items2 = [tmp20, tmp23];
       const tmp29 = closure_7(View, obj5);
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const _Symbol4 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1128).t.WYyzI5) };
-      const Text = tmp(5149).Text;
+      const Text = tmp(5150).Text;
       intl = tmp(1128).intl;
       const tmp19 = closure_7(Text, obj7);
       cResult[4] = tmp19;
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { children: closure_7(Avatar, obj9) };
-      obj9 = { source: sharedValue(13471), size: tmp(1202).AvatarSizes.LARGE_48 };
+      obj9 = { source: sharedValue(13479), size: tmp(1202).AvatarSizes.LARGE_48 };
       Avatar = tmp(1202).Avatar;
       const tmp38 = closure_7(View, obj8);
       cResult[14] = tmp38;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const _Symbol3 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
       const obj10 = { variant: "text-sm/semibold", children: intl3.string(tmp(1128).t.qSq0tD) };
-      const Text2 = tmp(5149).Text;
+      const Text2 = tmp(5150).Text;
       intl3 = tmp(1128).intl;
       const tmp41 = closure_7(Text2, obj10);
       cResult[15] = tmp41;
@@ -317,14 +317,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const animatedStyle = tmp2Result2.useAnimatedStyle(fn);
   if (notificationSetting.notificationSetting === tmp6.ALL_MESSAGES) {
     const obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(require("intl").t.WYyzI5) };
-    const Text = tmp2(5149).Text;
+    const Text = tmp2(5150).Text;
     intl = tmp2(1128).intl;
     tmp12 = closure_7(Text, obj4);
     tmp13 = closure_7;
   } else {
     const obj5 = { children: closure_8(Text3, obj6) };
     obj6 = { variant: "text-sm/medium", color: "text-default", children: items2 };
-    Text3 = tmp2(5149).Text;
+    Text3 = tmp2(5150).Text;
     const obj7 = { variant: "text-sm/normal", color: "text-link", children: items1 };
     items1 = ["@", str, " "];
     items2 = [closure_8(require("Text/Text").Text, obj7), ];
@@ -345,12 +345,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const obj8 = { style: tmp.card, children: items6 };
   const obj9 = { style: tmp.cardContent, children: items4 };
   const obj10 = { children: tmp13(Avatar, obj11) };
-  obj11 = { source: sharedValue(13471), size: require("native").AvatarSizes.LARGE_48 };
+  obj11 = { source: sharedValue(13479), size: require("native").AvatarSizes.LARGE_48 };
   Avatar = tmp2(1202).Avatar;
   items4 = [tmp13(View, obj10), ];
   const obj12 = { style: tmp.cardMessage, children: items5 };
   const obj13 = { variant: "text-sm/semibold", children: intl2.string(require("intl").t.qSq0tD) };
-  const Text2 = tmp2(5149).Text;
+  const Text2 = tmp2(5150).Text;
   intl2 = tmp2(1128).intl;
   items5 = [tmp13(Text2, obj13), tmp12];
   items4[1] = closure_8(View, obj12);

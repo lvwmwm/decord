@@ -1,17 +1,17 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12643
+// Function ID: 12644
 // Name: ModalFloatingAction
-// Dependencies: [109, 19, 17, 21, 5153, 558, 576, 4909, 4893, 1633, 5440, 5444, 683, 5453, 12638, 2]
+// Dependencies: [109, 19, 17, 21, 5154, 558, 576, 4909, 4893, 1633, 5441, 5445, 683, 5454, 12644, 2]
 
-// Module 12637 (ModalFloatingAction)
+// Module 12643 (ModalFloatingAction)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
+import spring from "spring" /* 5441 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5444);
+const springPresets = tmp2(5445);
 let closure_3 = ["isVisible", "floatingBackgroundColor"];
 ({ StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

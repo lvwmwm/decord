@@ -1,14 +1,14 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8435
+// Function ID: 8436
 // Name: ImageWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8409, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8410, 4876, 2]
 
-// Module 8434 (ImageWarningIcon)
+// Module 8435 (ImageWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8409 */;
+import AssetRegistry from "AssetRegistry" /* 8410 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

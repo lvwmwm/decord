@@ -1,19 +1,19 @@
-// Module ID: 10266
-// Function ID: 10267
+// Module ID: 10267
+// Function ID: 10268
 // Name: MediaKeyboardBottomSheetActions
-// Dependencies: [19, 17, 21, 5153, 587, 1384, 558, 576, 4995, 683, 1633, 4877, 5453, 6407, 5149, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 1384, 558, 576, 4995, 683, 1633, 4877, 5454, 6409, 5150, 2]
 
-// Module 10266 (MediaKeyboardBottomSheetActions)
+// Module 10267 (MediaKeyboardBottomSheetActions)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import LinearGradientDefault from "LinearGradient" /* 5453 */;
-import Pressables from "Pressables" /* 6407 */;
+import LinearGradientDefault from "LinearGradient" /* 5454 */;
+import Pressables from "Pressables" /* 6409 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(5149);
+const Text_Text = tmp2(5150);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

@@ -1,16 +1,10 @@
 // Module ID: 8727
 // Function ID: 8728
 // Name: head
-// Dependencies: []
+// Dependencies: [8728]
 
 // Module 8727 (head)
+import head from "head" /* 8728 */;
 
-export default function head(arg0) {
-  let first;
-  if (arg0) {
-    if (arg0.length) {
-      first = arg0[0];
-    }
-  }
-  return first;
-};
+
+export default head;

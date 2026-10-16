@@ -1,14 +1,14 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7723
+// Function ID: 7724
 // Name: NativePermissionStore
-// Dependencies: [7702, 1087, 504, 584, 1267, 2]
+// Dependencies: [7703, 1087, 504, 584, 1267, 2]
 
-// Module 7722 (NativePermissionStore)
+// Module 7723 (NativePermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7702 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7703 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, permissionStates;

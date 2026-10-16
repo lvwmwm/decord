@@ -1,14 +1,14 @@
-// Module ID: 8142
-// Function ID: 8143
+// Module ID: 8143
+// Function ID: 8144
 // Name: ApplicationCommandStore
-// Dependencies: [32, 6279, 2119, 7461, 504, 584, 2]
+// Dependencies: [32, 6280, 2119, 7463, 504, 584, 2]
 
-// Module 8142 (ApplicationCommandStore)
+// Module 8143 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7461 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7463 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6279 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6280 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 

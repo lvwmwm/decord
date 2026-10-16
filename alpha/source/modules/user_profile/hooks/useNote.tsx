@@ -1,14 +1,14 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14035
+// Function ID: 14036
 // Name: useNote
-// Dependencies: [5, 19, 14026, 1087, 558, 576, 504, 584, 1297, 2]
+// Dependencies: [5, 19, 14036, 1087, 558, 576, 504, 584, 1297, 2]
 
-// Module 14025 (useNote)
+// Module 14035 (useNote)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NoteStore from "NoteStore" /* 14026 */;
+import NoteStore from "NoteStore" /* 14036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,8 +1,8 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16044
+// Function ID: 16045
 // Dependencies: [2]
 
-// Module 16030
+// Module 16044
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BountiesPosterSpotIllustration-3x.png.js");

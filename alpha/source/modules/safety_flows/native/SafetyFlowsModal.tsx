@@ -1,12 +1,12 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19022
+// Function ID: 19023
 // Name: SafetyFlowsModal
-// Dependencies: [32, 19, 21, 558, 576, 19006, 19010, 19014, 6423, 19016, 19018, 19019, 19020, 19021, 19029, 19030, 6910, 19012, 14978, 19011, 2]
+// Dependencies: [32, 19, 21, 558, 576, 19019, 19023, 19027, 6425, 19029, 19031, 19032, 19033, 19034, 19042, 19043, 6912, 19025, 14988, 19024, 2]
 
-// Module 19009 (SafetyFlowsModal)
+// Module 19022 (SafetyFlowsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import StepModal from "StepModal" /* 14978 */;
+import StepModal from "StepModal" /* 14988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 let tmp;
-const Navigator = tmp(6910);
+const Navigator = tmp(6912);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreens() {
@@ -379,7 +379,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlow
     }
   }, items);
   const memo1 = react.useMemo(() => ({ task, setTask }), items1);
-  const Provider = task(19011).SafetyFlowTaskContext.Provider;
+  const Provider = task(19024).SafetyFlowTaskContext.Provider;
   return <Provider value={memo1}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsModal.tsx");

@@ -1,18 +1,20 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18049
+// Function ID: 18050
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 2065, 21, 5153, 587, 5118, 14433, 2002, 7063, 5091, 8306, 5149, 1128, 5441, 2]
+// Dependencies: [19, 17, 2065, 21, 5154, 587, 5118, 14443, 2002, 7065, 5091, 8307, 5150, 1128, 5442, 2]
 // Exports: default
 
-// Module 18039 (ReferralProgramEntryPointActionSheet)
+// Module 18049 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import FastImageDefault from "FastImage" /* 5091 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import _modDef8307 from "module_8307" /* 8307 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -47,40 +49,35 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   let obj4;
   let obj8;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const actionSheetKey = markAsDismissed.actionSheetKey;
   const tmp = closure_8();
-  const items = [markAsDismissed, actionSheetKey];
+  const items = [markAsDismissed];
   const items1 = [markAsDismissed];
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
-    let str = actionSheetKey;
-    if (actionSheetKey == null) {
-      str = "referral-program-share-action-sheet";
-    }
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(14433, dependencyMap.paths), str, { actionSheetKey: str });
+    obj.openLazy(asyncRequire(14443, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items1);
   let obj = { onDismiss: callback1, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = markAsDismissed(7063).BottomSheet;
+  BottomSheet = markAsDismissed(7065).BottomSheet;
   const obj3 = { source: obj4, style: tmp.image };
-  obj4 = { uri: actionSheetKey(8306) };
-  const tmp4 = actionSheetKey(5091);
+  obj4 = { uri: _modDef8307 };
+  const tmp4 = FastImageDefault;
   items2 = [closure_6(tmp4, obj3), , , ];
   const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1128).t.u1CFbS) };
-  const Text = markAsDismissed(5149).Text;
+  const Text = markAsDismissed(5150).Text;
   intl = markAsDismissed(1128).intl;
   items2[1] = closure_6(Text, obj5);
   const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1128).t.k2ibMz) };
-  const Text2 = markAsDismissed(5149).Text;
+  const Text2 = markAsDismissed(5150).Text;
   intl2 = markAsDismissed(1128).intl;
   items2[2] = closure_6(Text2, obj6);
   const obj7 = { style: tmp.buttonContainer, children: closure_6(Button, obj8) };
   obj8 = { text: intl3.string(markAsDismissed(1128).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
-  Button = markAsDismissed(5441).Button;
+  Button = markAsDismissed(5442).Button;
   intl3 = markAsDismissed(1128).intl;
   items2[3] = closure_6(View, obj7);
   return closure_6(BottomSheet, obj);

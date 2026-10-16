@@ -1,21 +1,21 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9873
+// Function ID: 9874
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1087, 21, 5153, 558, 576, 7988, 6381, 1417, 5091, 9875, 1128, 6407, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 5154, 558, 576, 7989, 6383, 1417, 5091, 9874, 1128, 6409, 2]
 
-// Module 9874 (IconUploader)
+// Module 9873 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import GuildIcon from "GuildIcon" /* 6381 */;
-import Pressables from "Pressables" /* 6407 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9875 */;
+import GuildIcon from "GuildIcon" /* 6383 */;
+import Pressables from "Pressables" /* 6409 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,8 +102,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp14 = tmp18;
           }
         }
-        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6381).GuildIconSizes.XLARGE, animate: true };
-        const tmp21 = onChangeIconPress(6381);
+        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6383).GuildIconSizes.XLARGE, animate: true };
+        const tmp21 = onChangeIconPress(6383);
         const tmp22 = closure_7(tmp21, obj3);
         cResult[8] = tmp7;
         cResult[9] = iconStyle;
@@ -187,7 +187,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp39 = tmp42;
           }
           let obj6 = { accessibilityRole: "button", accessibilityLabel: tmp34, onPress: tmp10, children: tmp28 };
-          const tmp38 = closure_7(tmp(6407).PressableOpacity, obj6);
+          const tmp38 = closure_7(tmp(6409).PressableOpacity, obj6);
           cResult[27] = tmp10;
           cResult[28] = tmp28;
           cResult[29] = tmp38;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
     }
     let tmp24 = null;
     if (!tmp4) {
-      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9875) };
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9874) };
       const tmp27 = onChangeIconPress(5091);
       tmp24 = closure_7(tmp27, obj8);
     }

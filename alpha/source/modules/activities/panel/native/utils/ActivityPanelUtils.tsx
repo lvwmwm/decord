@@ -1,14 +1,14 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18076
+// Function ID: 18077
 // Name: ActivityPanelUtils
-// Dependencies: [2068, 2119, 2067, 6291, 4798, 10729, 1108, 558, 576, 504, 2]
+// Dependencies: [2068, 2119, 2067, 6287, 4798, 10726, 1108, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 18066 (ActivityPanelUtils)
+// Module 18076 (ActivityPanelUtils)
 import react from "react" /* 576 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4798 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10729 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6287 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10726 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;

@@ -1,9 +1,9 @@
-// Module ID: 7612
-// Function ID: 7613
+// Module ID: 7613
+// Function ID: 7614
 // Name: DiscordVideoPlayerTypes
 // Dependencies: [2]
 
-// Module 7612 (DiscordVideoPlayerTypes)
+// Module 7613 (DiscordVideoPlayerTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/video-player/DiscordVideoPlayerTypes.tsx");

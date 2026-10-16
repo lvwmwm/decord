@@ -1,10 +1,10 @@
-// Module ID: 18895
-// Function ID: 18896
+// Module ID: 18908
+// Function ID: 18909
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
 // Dependencies: [1269, 1274, 558, 576, 4792, 2]
 // Exports: initializeImperatively, resetImperatively
 
-// Module 18895 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 18908 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;
 import module_1269 from "module_1269" /* 1269 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const _slicedToArray = tmp(4792);
-let closure_2 = Object.freeze({ name: "", emojiId: "unicodeVersion", emojiName: "keys", description: "transform", refId: "applicationId" });
+let closure_2 = Object.freeze({ name: "", emojiId: "unicodeVersion", emojiName: "kind", description: "transform", refId: "channel" });
 let closure_3 = module_1269.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {

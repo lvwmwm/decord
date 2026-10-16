@@ -1,14 +1,14 @@
-// Module ID: 17598
-// Function ID: 17599
+// Module ID: 17608
+// Function ID: 17609
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 5153, 587, 558, 576, 4909, 2]
+// Dependencies: [17, 21, 5154, 587, 558, 576, 4909, 2]
 
-// Module 17598 (MainTabsContentScrim)
+// Module 17608 (MainTabsContentScrim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

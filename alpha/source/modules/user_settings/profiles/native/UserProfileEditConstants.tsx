@@ -1,9 +1,9 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15540
+// Function ID: 15541
 // Name: UserProfileEditConstants
 // Dependencies: [2]
 
-// Module 15530 (UserProfileEditConstants)
+// Module 15540 (UserProfileEditConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserProfileEditConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8014
+// Function ID: 8015
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: [1087, 7979, 2]
+// Dependencies: [1087, 7980, 2]
 
-// Module 8013 (ICYMIAttachmentUploadTarget)
-import UploadUtils from "UploadUtils" /* 7979 */;
+// Module 8014 (ICYMIAttachmentUploadTarget)
+import UploadUtils from "UploadUtils" /* 7980 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

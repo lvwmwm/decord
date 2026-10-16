@@ -2,7 +2,7 @@
 // Function ID: 5045
 // Name: ChatInputUtils
 // Dependencies: [5045, 1896, 5046, 1631, 1503, 5047, 2]
-// Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
+// Exports: createInputRefTracker, dismissKeyboard, getBestActiveInput, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
 // Module 5044 (ChatInputUtils)
 import KeyboardUIStore from "KeyboardUIStore" /* 1503 */;
@@ -13,7 +13,7 @@ import useKeyboardType from "useKeyboardType" /* 5046 */;
 import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5047 */;
 import size from "module_2" /* 2 */;
 
-const f92074 = (item) => {
+const f92137 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -21,41 +21,42 @@ const f92074 = (item) => {
   }
   return tmp;
 };
-function getBestActiveInput() {
+function getHighestIndexForScreenIndexMap(map1) {
+  let obj = map1;
+  if (map1 === undefined) {
+    obj = map1;
+  }
   let str;
-  if (0 !== map1.size) {
+  if (0 !== obj.size) {
     str = "voice-panel";
-    if (!map1.has("voice-panel")) {
+    if (!obj.has("voice-panel")) {
       str = "message-request";
-      if (!map1.has("message-request")) {
+      if (!obj.has("message-request")) {
         str = "new-message";
-        if (!map1.has("new-message")) {
-          str = "conjure-preview";
-          if (!map1.has("conjure-preview")) {
-            const _Array = Array;
-            const arr = Array.from(map1.keys());
-            const found = arr.filter(f92074);
-            if (0 !== found.length) {
-              const _Math = Math;
-              const items = [];
-              HermesBuiltin.arraySpread(items, found, 0);
-              const _Math2 = Math;
-              str = HermesBuiltin.apply(max, items, Math);
+        if (!obj.has("new-message")) {
+          str = "channel-secondary-view-chat";
+          if (!obj.has("channel-secondary-view-chat")) {
+            str = "conjure-preview";
+            if (!obj.has("conjure-preview")) {
+              const _Array = Array;
+              const arr = Array.from(obj.keys());
+              const found = arr.filter(f92137);
+              if (0 !== found.length) {
+                const _Math = Math;
+                const items = [];
+                HermesBuiltin.arraySpread(items, found, 0);
+                const _Math2 = Math;
+                str = HermesBuiltin.apply(max, items, Math);
+              }
             }
           }
         }
       }
     }
   }
-  let value;
   if (null != str) {
-    value = obj.get(str);
+    return map1.get(str);
   }
-  let current;
-  if (value != null) {
-    current = value.current;
-  }
-  return current;
 }
 const map = new Map();
 const map1 = new Map();
@@ -157,12 +158,14 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
       return "message-request";
     } else if (obj.has("new-message")) {
       return "new-message";
+    } else if (obj.has("channel-secondary-view-chat")) {
+      return "channel-secondary-view-chat";
     } else if (obj.has("conjure-preview")) {
       return "conjure-preview";
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f92074);
+      const found = arr.filter(f92137);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -190,62 +193,41 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
   if (null != id) {
     const value = map.get(id);
     if (null != value) {
-      let obj2 = value;
-      if (value === undefined) {
-        obj2 = map1;
-      }
-      let str;
-      if (0 !== obj2.size) {
-        str = "voice-panel";
-        if (!obj2.has("voice-panel")) {
-          str = "message-request";
-          if (!obj2.has("message-request")) {
-            str = "new-message";
-            if (!obj2.has("new-message")) {
-              str = "conjure-preview";
-              if (!obj2.has("conjure-preview")) {
-                const _Array = Array;
-                const arr = Array.from(obj2.keys());
-                const found = arr.filter(f92074);
-                if (0 !== found.length) {
-                  const _Math = Math;
-                  const items = [];
-                  HermesBuiltin.arraySpread(items, found, 0);
-                  const _Math2 = Math;
-                  str = HermesBuiltin.apply(max, items, Math);
-                }
-              }
-            }
-          }
-        }
-      }
-      let value2;
-      if (null != str) {
-        value2 = value.get(str);
-      }
+      const tmp4 = getHighestIndexForScreenIndexMap(value);
       let current;
-      if (value2 != null) {
-        current = value2.current;
+      if (tmp4 != null) {
+        current = tmp4.current;
       }
       return current;
     }
   }
 };
-export { getBestActiveInput };
+export const getBestActiveInput = function getBestActiveInput() {
+  const tmp = getHighestIndexForScreenIndexMap(map1);
+  let current;
+  if (tmp != null) {
+    current = tmp.current;
+  }
+  return current;
+};
 export const dismissKeyboard = function dismissKeyboard() {
   const obj = KeyboardManagerUtils;
   const result = obj.dismissGlobalKeyboard();
-  const obj2 = getBestActiveInput();
-  if (null != obj2) {
-    obj2.closeCustomKeyboard();
+  const tmp4 = getHighestIndexForScreenIndexMap(map1);
+  let current;
+  if (tmp4 != null) {
+    current = tmp4.current;
+  }
+  if (null != current) {
+    current.closeCustomKeyboard();
   }
   const tmpResult = useKeyboardType;
   const keyboardType = tmpResult.getKeyboardType();
   if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
-    const obj3 = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
+    const obj2 = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
     const setKeyboardType = KeyboardUIStore.setKeyboardType;
     KeyboardUIStore;
-    setKeyboardType(obj3);
+    setKeyboardType(obj2);
   }
   const tmpResult4 = PortalKeyboardUIStore;
   const result1 = tmpResult4.closePortalKeyboardRequest();

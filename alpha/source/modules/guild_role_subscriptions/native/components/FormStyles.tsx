@@ -1,13 +1,13 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14839
+// Function ID: 14840
 // Name: FormStyles
-// Dependencies: [1087, 5153, 6124, 587, 2]
+// Dependencies: [1087, 5154, 6125, 587, 2]
 
-// Module 14829 (FormStyles)
+// Module 14839 (FormStyles)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles_mod from "createStyles" /* 5153 */;
-import TextStyles_mod from "TextStyles" /* 6124 */;
+import createStyles_mod from "createStyles" /* 5154 */;
+import TextStyles_mod from "TextStyles" /* 6125 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

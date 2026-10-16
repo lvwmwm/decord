@@ -1,25 +1,25 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 16785
+// Function ID: 16786
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 5149, 4877, 5026, 8758, 11600, 13391, 10849, 5441, 5439, 7117, 2]
+// Dependencies: [32, 19, 17, 21, 5154, 587, 558, 576, 5150, 4877, 5026, 8759, 11597, 13399, 10846, 5442, 5440, 7119, 2]
 
-// Module 16771 (UserSettingsDesignSystemTabs)
+// Module 16785 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4877 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import Stack_Stack from "Stack/Stack" /* 5439 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import TableSwitchRow from "TableSwitchRow" /* 7117 */;
-import SegmentedControlState from "SegmentedControlState" /* 8758 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 10849 */;
-import Tabs from "Tabs" /* 11600 */;
-import TabsGradientDefault from "TabsGradient" /* 13391 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import Stack_Stack from "Stack/Stack" /* 5440 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import TableSwitchRow from "TableSwitchRow" /* 7119 */;
+import SegmentedControlState from "SegmentedControlState" /* 8759 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 10846 */;
+import Tabs from "Tabs" /* 11597 */;
+import TabsGradientDefault from "TabsGradient" /* 13399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const obj4 = { children: metroImportAll(hasOwnProperty, obj2) };
   items1 = [metroImportDefault(hasOwnProperty, { children: items }), metroImportAll(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj6 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = tmp16(5439).Stack;
+  const Stack2 = tmp16(5440).Stack;
   items2 = [, ];
   const obj7 = {
     text: "Add Tab",

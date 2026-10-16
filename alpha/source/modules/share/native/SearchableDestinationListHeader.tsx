@@ -1,19 +1,19 @@
-// Module ID: 12615
-// Function ID: 12616
+// Module ID: 12621
+// Function ID: 12622
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5153, 587, 558, 576, 1633, 9534, 6423, 1384, 6849, 6432, 2]
+// Dependencies: [19, 21, 5154, 587, 558, 576, 1633, 9535, 6425, 1384, 6851, 6434, 2]
 
-// Module 12615 (SearchableDestinationListHeader)
+// Module 12621 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorHeader from "NavigatorHeader" /* 6423 */;
-import _mod6432 from "module_6432" /* 6432 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 6849 */;
-import HeaderShared from "HeaderShared" /* 9534 */;
+import NavigatorHeader from "NavigatorHeader" /* 6425 */;
+import _mod6434 from "module_6434" /* 6434 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 6851 */;
+import HeaderShared from "HeaderShared" /* 9535 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     if (cResult[3] !== onClose) {
       let headerCloseButton;
       if (null != onClose) {
-        const tmpResult = subtitle(6423);
+        const tmpResult = subtitle(6425);
         headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       }
       cResult[3] = onClose;
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
         }
       }
       ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
-      const tmp15 = jsx(subtitle(6432).Header, { headerStyle: tmp4.header, title, headerTitle: tmp6, headerTitleAlign: "center", headerLeft: tmp7, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: tmp10 });
+      const tmp15 = jsx(subtitle(6434).Header, { headerStyle: tmp4.header, title, headerTitle: tmp6, headerTitleAlign: "center", headerLeft: tmp7, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: tmp10 });
       cResult[8] = headerRight;
       cResult[9] = tmp4.header;
       cResult[10] = tmp4.headerLeftContainer;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
         num3 = top;
       } else {
         num3 = 0;
-        subtitle(6849);
+        subtitle(6851);
       }
       sum = num3 + tmp5(587).space.PX_8;
     }
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = _mod6432.Header;
+  const Header = _mod6434.Header;
   const tmp4 = jsx;
   if (null != onClose) {
     const tmp5Result = NavigatorHeader;

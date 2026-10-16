@@ -1,10 +1,10 @@
-// Module ID: 5147
-// Function ID: 5148
+// Module ID: 5148
+// Function ID: 5149
 // Name: MessageConstants
 // Dependencies: [1087, 1104, 569, 2]
 // Exports: isChannelStreamMessage
 
-// Module 5147 (MessageConstants)
+// Module 5148 (MessageConstants)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import Backoff_mod from "Backoff" /* 569 */;

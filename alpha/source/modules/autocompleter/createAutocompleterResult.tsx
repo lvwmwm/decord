@@ -1,11 +1,11 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8936
+// Function ID: 8937
 // Name: AutocompleterConstants
-// Dependencies: [6317, 2]
+// Dependencies: [6319, 2]
 // Exports: createHeaderResult
 
-// Module 8935 (AutocompleterConstants)
-import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6317 */;
+// Module 8936 (AutocompleterConstants)
+import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6319 */;
 import size from "module_2" /* 2 */;
 
 let _window;

@@ -1,25 +1,25 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18543
+// Function ID: 18544
 // Name: NotificationsManager
-// Dependencies: [5, 4811, 502, 2068, 6184, 12994, 1087, 7702, 12995, 5118, 18534, 2002, 1275, 4761, 7725, 12997, 13437, 1267, 1384, 7030, 16462, 1107, 2]
+// Dependencies: [5, 4811, 502, 2068, 6185, 13002, 1087, 7703, 13003, 5118, 18544, 2002, 1275, 4761, 7726, 13005, 13445, 1267, 1384, 7032, 16476, 1107, 2]
 
-// Module 18533 (NotificationsManager)
+// Module 18543 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef4761 from "module_4761" /* 4761 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7702 */;
-import react_nativeDefault from "react-native" /* 7725 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 12994 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12997 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7703 */;
+import react_nativeDefault from "react-native" /* 7726 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13002 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12995 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13003 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
 import size from "module_2" /* 2 */;
 
 const PushNotificationPermissionStore = PushNotificationPermissionStore2;
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(18534, dependencyMap.paths);
+    const tmp3 = asyncRequire(18544, dependencyMap.paths);
     openLazy(tmp3, syncedClientThemes, obj2);
   }, arg2);
 }

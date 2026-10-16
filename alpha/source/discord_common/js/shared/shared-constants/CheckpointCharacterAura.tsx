@@ -1,9 +1,9 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5816
+// Function ID: 5817
 // Name: CheckpointCharacterAura
 // Dependencies: [2]
 
-// Module 5815 (CheckpointCharacterAura)
+// Module 5816 (CheckpointCharacterAura)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCharacterAura.tsx");

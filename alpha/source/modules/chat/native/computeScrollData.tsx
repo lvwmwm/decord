@@ -1,14 +1,14 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9832
+// Function ID: 9833
 // Name: computeScrollData
-// Dependencies: [5143, 7967, 9834, 5086, 2]
+// Dependencies: [5144, 7968, 9833, 5086, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 9833 (computeScrollData)
+// Module 9832 (computeScrollData)
 import flow_Client from "flow/Client" /* 5086 */;
-import NativeChatUtils from "NativeChatUtils" /* 9834 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7967 */;
+import NativeChatUtils from "NativeChatUtils" /* 9833 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7968 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -36,7 +36,7 @@ export default function computeScrollData(shouldInitialScroll) {
         tmp3 = findIndexResult;
       }
       if (null != tmp3) {
-        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9834).ChatScrollPosition.TOP };
+        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9833).ChatScrollPosition.TOP };
         tmp16 = require;
         if (animated) {
           animated = !AccessibilityStore.useReducedMotion;
@@ -59,7 +59,7 @@ export default function computeScrollData(shouldInitialScroll) {
       const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: scrollToRowIndexOverride, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
       !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(9834).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(9833).ChatScrollPosition.TOP;
       }
       tmp4 = obj;
     }

@@ -1,16 +1,16 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16402
+// Function ID: 16403
 // Name: EnableSwitchIconsSetting
-// Dependencies: [5143, 8213, 558, 576, 504, 11006, 1128, 15383, 2]
+// Dependencies: [5144, 8214, 558, 576, 504, 11003, 1128, 15393, 2]
 
-// Module 16388 (EnableSwitchIconsSetting)
+// Module 16402 (EnableSwitchIconsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15383 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15393 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

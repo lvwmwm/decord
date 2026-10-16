@@ -1,20 +1,20 @@
-// Module ID: 13699
-// Function ID: 13700
+// Module ID: 13705
+// Function ID: 13706
 // Name: IconActionButton
-// Dependencies: [377, 19, 21, 5153, 587, 1384, 558, 576, 1202, 5448, 5149, 6407, 9539, 2]
+// Dependencies: [377, 19, 21, 5154, 587, 1384, 558, 576, 1202, 5449, 5150, 6409, 9540, 2]
 
-// Module 13699 (IconActionButton)
+// Module 13705 (IconActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import useFontScale from "useFontScale" /* 5448 */;
-import Pressables from "Pressables" /* 6407 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9539 */;
+import useFontScale from "useFontScale" /* 5449 */;
+import Pressables from "Pressables" /* 6409 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9540 */;
 import _readOnlyError from "_readOnlyError" /* 377 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const shared_components_Badge = tmp(9539);
+const shared_components_Badge = tmp(9540);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
   let num;
@@ -121,6 +121,7 @@ let closure_7 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ic
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionButton(noMargin) {
   let IconComponent;
+  let accessibilityActions;
   let accessibilityLabel;
   let badge;
   let badgePosition;
@@ -131,14 +132,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   let disabled;
   let hitSlop;
   let items;
+  let onAccessibilityAction;
   let onLongPress;
   let onPress;
+  let ref;
   let source;
   let style;
   let variant;
   const obj = react2;
-  const cResult = obj.c(32);
-  ({ source, IconComponent, variant, color, buttonText, buttonTextColor, accessibilityLabel, style, badge, badgePosition, count, hitSlop, disabled, onPress, onLongPress } = noMargin);
+  const cResult = obj.c(35);
+  ({ source, IconComponent, variant, color, buttonText, buttonTextColor, accessibilityLabel, style, badge, badgePosition, count, hitSlop, disabled, onPress, onLongPress, accessibilityActions, onAccessibilityAction, ref } = noMargin);
   let str = "filled";
   noMargin = noMargin.noMargin;
   if (undefined !== variant) {
@@ -194,20 +197,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
                         if (cResult[19] === str2) {
                           tmp22 = cResult[20];
                         }
-                        if (cResult[21] === accessibilityLabel) {
-                          if (cResult[22] === disabled) {
-                            if (cResult[23] === hitSlop) {
-                              if (cResult[24] === onLongPress) {
-                                if (cResult[25] === onPress) {
-                                  if (cResult[26] === tmp19) {
-                                    if (cResult[27] === tmp22) {
-                                      if (cResult[28] === tmp11) {
-                                        if (cResult[29] === tmp12) {
-                                          let tmp26;
-                                          if (cResult[30] === tmp16) {
-                                            tmp26 = cResult[31];
+                        if (cResult[21] === accessibilityActions) {
+                          if (cResult[22] === accessibilityLabel) {
+                            if (cResult[23] === disabled) {
+                              if (cResult[24] === hitSlop) {
+                                if (cResult[25] === onAccessibilityAction) {
+                                  if (cResult[26] === onLongPress) {
+                                    if (cResult[27] === onPress) {
+                                      if (cResult[28] === ref) {
+                                        if (cResult[29] === tmp19) {
+                                          if (cResult[30] === tmp22) {
+                                            if (cResult[31] === tmp11) {
+                                              if (cResult[32] === tmp12) {
+                                                let tmp26;
+                                                if (cResult[33] === tmp16) {
+                                                  tmp26 = cResult[34];
+                                                }
+                                                return tmp26;
+                                              }
+                                            }
                                           }
-                                          return tmp26;
                                         }
                                       }
                                     }
@@ -217,20 +226,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
                             }
                           }
                         }
-                        const obj2 = { hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, style: tmp11, children: items };
+                        const obj2 = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: tmp11, children: items };
                         items = [tmp12, tmp16, tmp19, tmp22];
                         const tmp28 = hasOwnProperty(Pressables.PressableOpacity, obj2);
-                        cResult[21] = accessibilityLabel;
-                        cResult[22] = disabled;
-                        cResult[23] = hitSlop;
-                        cResult[24] = onLongPress;
-                        cResult[25] = onPress;
-                        cResult[26] = tmp19;
-                        cResult[27] = tmp22;
-                        cResult[28] = tmp11;
-                        cResult[29] = tmp12;
-                        cResult[30] = tmp16;
-                        cResult[31] = tmp28;
+                        cResult[21] = accessibilityActions;
+                        cResult[22] = accessibilityLabel;
+                        cResult[23] = disabled;
+                        cResult[24] = hitSlop;
+                        cResult[25] = onAccessibilityAction;
+                        cResult[26] = onLongPress;
+                        cResult[27] = onPress;
+                        cResult[28] = ref;
+                        cResult[29] = tmp19;
+                        cResult[30] = tmp22;
+                        cResult[31] = tmp11;
+                        cResult[32] = tmp12;
+                        cResult[33] = tmp16;
+                        cResult[34] = tmp28;
                         tmp26 = tmp28;
                       }
                       let tmp23 = badge;
@@ -258,7 +270,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
               let tmp17 = tmp7;
               if (tmp17) {
                 const obj5 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp4.actionText, children: buttonText };
-                tmp17 = React3(tmp(5149).Text, obj5);
+                tmp17 = React3(tmp(5150).Text, obj5);
               }
               cResult[10] = buttonText;
               cResult[11] = buttonTextColor;
@@ -289,6 +301,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   tmp11 = items1;
 }) : (function IconActionButton(variant) {
   let IconComponent;
+  let accessibilityActions;
   let accessibilityLabel;
   let badge;
   let badgePosition;
@@ -300,8 +313,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   let items;
   let items1;
   let noMargin;
+  let onAccessibilityAction;
   let onLongPress;
   let onPress;
+  let ref;
   let source;
   let style;
   let str = variant.variant;
@@ -317,14 +332,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   if (num === undefined) {
     num = 0;
   }
-  ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
+  ({ noMargin, hitSlop, disabled, onPress, onLongPress, accessibilityActions, onAccessibilityAction, ref } = variant);
   const tmp = closure_6();
   useFontScale;
   let tmp10Result = null != buttonText && tmp5 <= 1.2;
-  const obj = { hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, style: items, children: items1 };
+  const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const PressableOpacity = tmp2(6409).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
@@ -339,7 +354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5149).Text, obj2);
+    tmp10Result = tmp10(tmp2(5150).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;

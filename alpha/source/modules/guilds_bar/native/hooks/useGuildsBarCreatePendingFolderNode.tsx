@@ -1,14 +1,14 @@
-// Module ID: 17427
-// Function ID: 17428
+// Module ID: 17437
+// Function ID: 17438
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4999, 6182, 558, 576, 504, 12435, 17428, 6341, 6186, 1128, 2]
+// Dependencies: [19, 4999, 6183, 558, 576, 504, 12441, 17438, 6343, 6187, 1128, 2]
 
-// Module 17427 (useGuildsBarCreatePendingFolderNode)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6341 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12435 */;
+// Module 17437 (useGuildsBarCreatePendingFolderNode)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6343 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12441 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4999 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6182 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6183 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsB
       }
     }
     const createFolderNode = tmp21.createFolderNode;
-    const obj3 = { folderId: stateFromStores(17428).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1128).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
+    const obj3 = { folderId: stateFromStores(17438).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1128).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
     intl = tmp2(1128).intl;
     const folderNode = createFolderNode(obj3);
     for (const item10096 of arr2) {
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsB
         }
       }
       let push = children.push;
-      let obj6 = stateFromStores(6186);
+      let obj6 = stateFromStores(6187);
       let arr = push(obj6.createGuildNode(item10096, folderNode.id));
       continue;
     }
@@ -168,15 +168,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsB
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: stateFromStores(17428).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1128).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
-    const createFolderNode = tmp2(6186).createFolderNode;
-    stateFromStores(6186);
+    const obj3 = { folderId: stateFromStores(17438).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1128).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
+    const createFolderNode = tmp2(6187).createFolderNode;
+    stateFromStores(6187);
     intl = tmp2(1128).intl;
     const folderNode = createFolderNode(obj3);
     for (const item10054 of arr2) {
       let children = folderNode.children;
       let push = children.push;
-      let obj4 = stateFromStores(6186);
+      let obj4 = stateFromStores(6187);
       let arr = push(obj4.createGuildNode(item10054, folderNode.id));
       continue;
     }

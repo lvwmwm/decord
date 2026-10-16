@@ -1,15 +1,15 @@
-// Module ID: 7394
-// Function ID: 7395
+// Module ID: 7396
+// Function ID: 7397
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7395, 1406, 2119, 1087, 1297, 569, 1104, 584, 1257, 7397, 2]
+// Dependencies: [5, 7397, 1406, 2119, 1087, 1297, 569, 1104, 584, 1257, 7399, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7394 (ReferralTrialActionCreators)
+// Module 7396 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7395 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7397 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import Constants from "Constants" /* 1087 */;
@@ -400,7 +400,7 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
         num = body.body.referrals_remaining;
       }
     }
-    obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS", referrals_remaining: num, sent_user_ids: null, refresh_at: null, recipient_status: null, has_eligible_friends: null, reminder_state_id: null };
+    obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS", referrals_remaining: num, sent_user_ids: null, refresh_at: null, recipient_status: null, has_eligible_friends: null, reminder_state_id: null, recurring_reminder_state_id: null };
     if (null != body.body) {
       if (null != body.body.sent_user_ids) {
         const sent_user_ids = body.body.sent_user_ids;
@@ -434,6 +434,15 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
         reminder_state_id = null;
       }
       obj.reminder_state_id = reminder_state_id;
+      const body4 = body.body;
+      let prop;
+      if (body4 != null) {
+        prop = body4.recurring_reminder_state_id;
+      }
+      if (prop == null) {
+        prop = null;
+      }
+      obj.recurring_reminder_state_id = prop;
       dispatch(obj);
     }
   }, (status) => {

@@ -1,22 +1,22 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7933
+// Function ID: 7934
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6135, 21, 558, 576, 7933, 5149, 7717, 2131, 1128, 3189, 5367, 5367, 2]
+// Dependencies: [19, 6136, 21, 558, 576, 7934, 5150, 7718, 2131, 1128, 3189, 5368, 5368, 2]
 
-// Module 7932 (ManualReviewDecidedTeenAlertModal)
+// Module 7933 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _modDef3189 from "module_3189" /* 3189 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6135 */;
-import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 7933 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6136 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 7934 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const intl4 = tmp(1128);
-const AlertModal2 = tmp(5367);
+const AlertModal2 = tmp(5368);
 const FALLBACK_TEEN_AGE_RANGE = AgeVerificationConstants.FALLBACK_TEEN_AGE_RANGE;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedTeenAlertModal(teenAgeRange) {

@@ -1,9 +1,9 @@
-// Module ID: 18957
-// Function ID: 18958
+// Module ID: 18970
+// Function ID: 18971
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 4861, 6254, 9547, 6298, 2072, 2068, 2119, 9862, 2001, 7609, 9414, 1087, 7616, 7030, 1459, 5139, 6193, 6197, 13837, 6296, 5035, 1107, 1108, 5363, 7634, 5036, 2]
+// Dependencies: [32, 4861, 6255, 9548, 6294, 2072, 2068, 2119, 9861, 2001, 7610, 9415, 1087, 7617, 7032, 1459, 5140, 6194, 6198, 13848, 6292, 5035, 1107, 1108, 5364, 7635, 5036, 2]
 
-// Module 18957 (QuestMobileEmbedVisibilityManager)
+// Module 18970 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
@@ -11,25 +11,25 @@ import LRUCacheDefault from "LRUCache" /* 1459 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
 import RootNavigationRef from "RootNavigationRef" /* 5036 */;
-import CodedLink from "CodedLink" /* 5139 */;
-import QuestTypes from "QuestTypes" /* 6193 */;
-import AdCreativeType from "AdCreativeType" /* 6197 */;
-import isChannelFocused from "isChannelFocused" /* 6296 */;
-import getQuestLogger from "getQuestLogger" /* 7616 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7634 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9414 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 13837 */;
+import CodedLink from "CodedLink" /* 5140 */;
+import QuestTypes from "QuestTypes" /* 6194 */;
+import AdCreativeType from "AdCreativeType" /* 6198 */;
+import isChannelFocused from "isChannelFocused" /* 6292 */;
+import getQuestLogger from "getQuestLogger" /* 7617 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7635 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9415 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 13848 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ActionSheetStore from "ActionSheetStore" /* 4861 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9547 */;
-import VoicePanelStore from "VoicePanelStore" /* 6298 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9548 */;
+import VoicePanelStore from "VoicePanelStore" /* 6294 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import AlertStore from "AlertStore" /* 9862 */;
+import AlertStore from "AlertStore" /* 9861 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import QuestStore from "QuestStore" /* 7609 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
+import QuestStore from "QuestStore" /* 7610 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
 import size from "module_2" /* 2 */;
 
 let map, questLogger, set;
@@ -37,7 +37,7 @@ let map, questLogger, set;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const useAlertStore2 = tmp(5363);
+const useAlertStore2 = tmp(5364);
 ({ useChannelDetailsStore: metroImportDefault, getIsChannelDetailsSearchActive: metroImportAll } = ChannelDetailsStore);
 const isTextChannel = ChannelRecord.isTextChannel;
 let closure_16 = ContentImpressionTrackerConstants.MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
@@ -277,7 +277,7 @@ class QuestMobileEmbedVisibilityManager extends AutomaticLifecycleManager {
             return false;
           } else {
             if (null == AlertStore.getAlert()) {
-              const useAlertStore = tmp3(5363).useAlertStore;
+              const useAlertStore = tmp3(5364).useAlertStore;
               if (useAlertStore.getState().alerts.length <= 0) {
                 const tmp14 = type === ChannelTypes.ChannelTypes.GUILD_VOICE && chatOpen;
                 let result = null != type && isTextChannel(type);

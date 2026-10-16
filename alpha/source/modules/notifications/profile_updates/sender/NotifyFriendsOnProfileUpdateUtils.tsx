@@ -1,10 +1,10 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16956
+// Function ID: 16957
 // Name: NotifyFriendsOnProfileUpdateUtils
 // Dependencies: [4822, 1087, 2044, 1267, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 16942 (NotifyFriendsOnProfileUpdateUtils)
+// Module 16956 (NotifyFriendsOnProfileUpdateUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 2044 */;

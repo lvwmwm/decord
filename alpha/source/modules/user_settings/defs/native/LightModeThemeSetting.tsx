@@ -1,18 +1,18 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16293
+// Function ID: 16294
 // Name: LightModeThemeSetting
-// Dependencies: [1207, 1210, 8213, 1087, 558, 576, 504, 11006, 1128, 16280, 16281, 2]
+// Dependencies: [1207, 1210, 8214, 1087, 558, 576, 504, 11003, 1128, 16294, 16295, 2]
 
-// Module 16279 (LightModeThemeSetting)
+// Module 16293 (LightModeThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 16280 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 16294 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

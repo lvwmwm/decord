@@ -1,22 +1,22 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15638
+// Function ID: 15639
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 7126, 21, 5153, 15627, 558, 576, 1633, 4909, 5440, 1128, 2]
+// Dependencies: [19, 7128, 21, 5154, 15637, 558, 576, 1633, 4909, 5441, 1128, 2]
 
-// Module 15628 (UserProfilePremiumTryItOutUpsell)
+// Module 15638 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import spring from "spring" /* 5440 */;
-import Constants from "Constants" /* 7126 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15627 */;
+import spring from "spring" /* 5441 */;
+import Constants from "Constants" /* 7128 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15637 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
 const ReanimatedRexportDefault = tmp4(4909);
-const UserProfileUpsellCardV2Default = tmp4(15627);
+const UserProfileUpsellCardV2Default = tmp4(15637);
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 const jsx = Fragment.jsx;
 let c5 = 0.9;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj3 = { isVisible, withSpring: isVisible(5440).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj3 = { isVisible, withSpring: isVisible(5441).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj3;
   fn.__workletHash = 7434922701119;
   fn.__initData = __initData;
@@ -184,7 +184,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj2 = { isVisible, withSpring: isVisible(5440).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj2 = { isVisible, withSpring: isVisible(5441).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 14790282051517;
   fn.__initData = __initData3;

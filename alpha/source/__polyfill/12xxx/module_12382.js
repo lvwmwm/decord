@@ -1,48 +1,42 @@
 // Module ID: 12382
 // Function ID: 12383
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [12360, 12348, 12383]
 
 // Module 12382
+import _mod12383 from "module_12383" /* 12383 */;
+import module_12360 from "module_12360" /* 12360 */;
 
-export const parseCookie = function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
-      } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
-      }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
-        }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
+
+export const moduleMetadataIntegration = module_12360.defineIntegration(() => {
+  let obj = {
+    name: "ModuleMetadata",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
+            }
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
+            }
           }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = _mod12383;
+          const result = obj.addMetadataToStackFrames(stackParser, type);
         }
-      }
-      sum = length + 1;
+      });
     }
-  }
+  };
   return obj;
-};
+});

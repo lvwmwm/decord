@@ -1,10 +1,10 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7189
+// Function ID: 7190
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2090, 4809, 1087, 558, 576, 504, 6393, 2]
+// Dependencies: [2090, 4809, 1087, 558, 576, 504, 6395, 2]
 // Exports: canReviewGuildMemberApplications
 
-// Module 7187 (canReviewGuildMemberApplications)
+// Module 7189 (canReviewGuildMemberApplications)
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import Constants from "Constants" /* 1087 */;
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRevi
     hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    const tmpResult = tmp(6393);
+    const tmpResult = tmp(6395);
     hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
   }
   return hasItem;

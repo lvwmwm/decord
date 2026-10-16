@@ -1,108 +1,209 @@
 // Module ID: 15331
 // Function ID: 15332
-// Dependencies: [41, 42]
-// Exports: memoize
+// Dependencies: [32, 1278, 15330]
 
 // Module 15331
-import _createClassDefault from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import Buffer from "Buffer" /* 1278 */;
+import _mod15330 from "module_15330" /* 15330 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function monadic(call, get, fn, num) {
-  let tmp2 = num;
-  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
-  if (!tmp) {
-    tmp2 = fn(num);
+function replaceByteInByteSequence(arr, arg1, arg2) {
+  let index = arr.indexOf(43);
+  if (index >= 0) {
+    do {
+      arr[index] = 32;
+      index = arr.indexOf(43, index + 1);
+    } while (index >= 0);
   }
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const callResult = call.call(this, num);
-    const result = get.set(tmp2, callResult);
-    value = callResult;
-  }
-  return value;
+  return arr;
 }
-function variadic(apply, get, fn) {
-  const callResult = slice.call(arguments, 3);
-  const tmp2 = fn(callResult);
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const self = this;
-    const applyResult = apply.apply(this, callResult);
-    const result = get.set(tmp2, applyResult);
-    value = applyResult;
+function percentEncode(arr) {
+  const str = arr.toString(16);
+  const formatted = str.toUpperCase();
+  let text = formatted;
+  if (1 === formatted.length) {
+    text = `0${arr}`;
   }
-  return value;
+  return "%" + text;
 }
-function strategyDefault(c165, cache) {
-  cache = cache.cache;
-  const obj = 1 === c165.length ? monadic : variadic;
-  return obj.bind(this, c165, cache.create(), cache.serializer);
-}
-function serializerDefault() {
-  return JSON.stringify(arguments);
-}
-class ObjectWithoutPrototypeCache {
-  constructor() {
-    _classCallCheck(this, ObjectWithoutPrototypeCache);
-    this.cache = Object.create(null);
-  }
-}
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    return this.cache[arg0];
-  }
-};
-const items = [
-  entry,
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      this.cache[arg0] = arg1;
-    }
-  }
-];
-let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
-let closure_6 = {
-  create() {
-    const tmp = new closure_5();
-    return tmp;
-  }
-};
-let obj = {
-  variadic: function strategyVariadic(c165, cache) {
-    cache = cache.cache;
-    return variadic.bind(this, c165, cache.create(), cache.serializer);
-  },
-  monadic: function strategyMonadic(c165, cache) {
-    cache = cache.cache;
-    return monadic.bind(this, c165, cache.create(), cache.serializer);
-  }
-};
-
-export const memoize = function memoize(arg0, cache) {
-  const tmp = cache;
-  if (tmp) {
-    if (cache.cache) {
-      cache = cache.cache;
-    }
-    if (cache) {
-      let serializer;
-      if (cache.serializer) {
-        serializer = cache.serializer;
-      }
-      if (cache) {
-        let strategy;
-        if (cache.strategy) {
-          strategy = cache.strategy;
+function percentDecode(_Buffer) {
+  _Buffer = Buffer.Buffer;
+  const allocResult = _Buffer.alloc(_Buffer.byteLength);
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < _Buffer.length) {
+    while (true) {
+      if (37 === _Buffer[num]) {
+        let tmp3 = require;
+        let obj = _mod15330;
+        let sum = num + 1;
+        if (obj.isASCIIHex(_Buffer[sum])) {
+          let tmp3Result = tmp3(15330);
+          let sum1 = num + 2;
+          if (tmp3Result.isASCIIHex(_Buffer[sum1])) {
+            let sum2 = num2 + 1;
+            let _parseInt = parseInt;
+            let str = _Buffer.slice(sum, num + 3);
+            allocResult[num2] = parseInt(str.toString(), 16);
+            let tmp8 = sum1;
+            num = tmp8 + 1;
+            num2 = sum2;
+            num3 = sum2;
+            if (num >= _Buffer.length) {
+              break;
+            }
+          }
         }
-        const obj = { cache, serializer };
-        return strategy(arg0, obj);
       }
-      strategy = strategyDefault;
+      sum2 = num2 + 1;
+      allocResult[num2] = _Buffer[num];
+      tmp8 = num;
     }
-    serializer = serializerDefault;
   }
-  cache = closure_6;
+  return allocResult.slice(0, num3);
+}
+function serializeUrlencodedByte(_Buffer) {
+  let str = "";
+  const iter = _Buffer[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let str2 = "+";
+    if (32 !== nextResult) {
+      if (42 !== tmp2) {
+        if (45 !== tmp2) {
+          if (46 !== tmp2) {
+            if (tmp2 < 48) {
+              if (tmp2 < 65) {
+                let fromCodePointResult;
+                if (95 !== tmp2) {
+                  if (tmp2 < 97) {
+                    fromCodePointResult = percentEncode(tmp2);
+                  }
+                }
+                str2 = fromCodePointResult;
+              }
+            }
+          }
+        }
+      }
+      let _String = String;
+      fromCodePointResult = String.fromCodePoint(tmp2);
+    }
+    str = str + str2;
+    continue;
+  }
+  return str;
+}
+let obj = {
+  percentEncode,
+  percentDecode,
+  parseUrlencoded(arg0) {
+    function parseUrlencoded(_Buffer) {
+      function strictlySplitByteSequence(arr, arg1) {
+        const items = [];
+        const index = arr.indexOf(38);
+        let index1 = index;
+        let num = 0;
+        let num2 = 0;
+        if (index >= 0) {
+          do {
+            arr = items.push(arr.slice(num, index1));
+            let sum = index1 + 1;
+            index1 = arr.indexOf(38, sum);
+            num = sum;
+            num2 = sum;
+          } while (index1 >= 0);
+        }
+        if (num2 !== arr.length) {
+          items.push(arr.slice(num2));
+        }
+        return items;
+      }
+      let items = [];
+      const tmp = strictlySplitByteSequence(_Buffer, 38);
+      const iter = tmp[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let arr3 = nextResult;
+        if (0 !== nextResult.length) {
+          let substr;
+          let substr1;
+          let index = arr3.indexOf(61);
+          let tmp23 = index;
+          if (index >= 0) {
+            substr = arr3.slice(0, tmp23);
+            substr1 = arr3.slice(tmp23 + 1);
+          } else {
+            substr = nextResult;
+            _Buffer = Buffer.Buffer;
+            substr1 = _Buffer.alloc(0);
+          }
+          let _Buffer2 = Buffer.Buffer;
+          let fromResult = _Buffer2.from(substr);
+          let tmp13 = replaceByteInByteSequence(fromResult, 43, 32);
+          let _Buffer3 = Buffer.Buffer;
+          let fromResult1 = _Buffer3.from(substr1);
+          let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
+          let push = items.push;
+          let str = percentDecode(fromResult);
+          let items1 = [str.toString(), ];
+          let str2 = percentDecode(fromResult1);
+          items1[1] = str2.toString();
+          let arr = push(items1);
+        }
+        continue;
+      }
+      return items;
+    }
+    let _Buffer = Buffer.Buffer;
+    return parseUrlencoded(_Buffer.from(arg0));
+  },
+  serializeUrlencoded(_list) {
+    let arr;
+    let tmp7;
+    let str = "utf-8";
+    if (undefined !== arg1) {
+      str = tmp;
+    }
+    let str2 = "";
+    const entries = _list.entries();
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, arr] = tmp6;
+      let tmp8 = arr;
+      let tmp9 = serializeUrlencodedByte;
+      let tmp10 = require;
+      let _Buffer = Buffer.Buffer;
+      let tmp12 = serializeUrlencodedByte(_Buffer.from(arr[0]));
+      let name = arr[1];
+      let tmp13 = arr.length > 2;
+      if (tmp13) {
+        tmp13 = undefined !== tmp8[2];
+      }
+      if (tmp13) {
+        if ("hidden" === tmp8[2]) {
+          if ("_charset_" === tmp12) {
+            name = str;
+          }
+        }
+        if ("file" === tmp8[2]) {
+          name = name.name;
+        }
+      }
+      if (0 !== tmp7) {
+        str2 = `${str2}&`;
+      }
+      let _Buffer2 = tmp10(1278).Buffer;
+      let tmp9Result = tmp9(_Buffer2.from(name));
+      let _HermesInternal = HermesInternal;
+      str2 = str2 + "" + tmp12 + "=" + tmp9Result;
+      continue;
+    }
+    return str2;
+  }
 };
-export const strategies = obj;
+
+export default obj;

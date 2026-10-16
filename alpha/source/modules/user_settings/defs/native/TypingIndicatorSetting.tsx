@@ -1,17 +1,17 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16346
+// Function ID: 16347
 // Name: TypingIndicatorSetting
-// Dependencies: [1087, 15688, 2052, 11006, 1128, 3867, 16333, 12742, 16335, 2]
+// Dependencies: [1087, 15698, 2052, 11003, 1128, 3867, 16347, 12749, 16349, 2]
 
-// Module 16332 (TypingIndicatorSetting)
+// Module 16346 (TypingIndicatorSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import _modDef3867 from "module_3867" /* 3867 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12742 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 16333 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 15688 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12749 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 16347 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 15698 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

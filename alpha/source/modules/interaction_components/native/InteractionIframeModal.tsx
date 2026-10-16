@@ -1,20 +1,20 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18475
+// Function ID: 18476
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1375, 21, 5153, 587, 558, 576, 18453, 11244, 6887, 8677, 18466, 5434, 4868, 1128, 10497, 6407, 5149, 8992, 10952, 11278, 18057, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 5154, 587, 558, 576, 18463, 11241, 6889, 8678, 18476, 5435, 4868, 1128, 10498, 6409, 5150, 8993, 10949, 11275, 18067, 2]
 
-// Module 18465 (InteractionIframeModal)
+// Module 18475 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
-import makeIframeIdDefault from "makeIframeId" /* 11244 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 18466 */;
+import makeIframeIdDefault from "makeIframeId" /* 11241 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F152970 */ };
+        return () => { /* body not rendered: F153074 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F152970 */ };
+        return () => { /* body not rendered: F153074 */ };
       }
     }
     tmp10 = cResult[2];

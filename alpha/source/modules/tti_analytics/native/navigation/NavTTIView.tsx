@@ -1,18 +1,18 @@
-// Module ID: 17606
-// Function ID: 17607
+// Module ID: 17616
+// Function ID: 17617
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5152, 21, 558, 576, 17607, 17609, 17610, 504, 17601, 2]
+// Dependencies: [109, 19, 17, 5153, 21, 558, 576, 17617, 17619, 17620, 504, 17611, 2]
 
-// Module 17606 (NavTTIView)
+// Module 17616 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17601 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17609 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17610 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17611 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17619 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17620 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5152 */;
+import DevSettingsStore from "DevSettingsStore" /* 5153 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3Result;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(17607);
+const useComponentRenderSpan = tmp(17617);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];
@@ -133,9 +133,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
   onLayout = onLayout.onLayout;
   ({ measurementProps, children } = onLayout);
   const merged = Object.assign(onLayout, Object.assign({ measurementProps: 0, onLayout: 0, children: 0 }));
-  const onLayout2 = measurementProps.onLayout;
+  let onLayout2 = measurementProps.onLayout;
   const items = [onLayout2, onLayout];
-  const obj = { onLayout, children };
+  let obj = { onLayout, children };
   const callback = react.useCallback((arg0) => {
     if (onLayout2 != null) {
       tmp(arg0);

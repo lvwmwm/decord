@@ -1,13 +1,13 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12706
+// Function ID: 12707
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 12666, 3123, 558, 576, 7062, 1128, 5118, 6484, 7120, 6485, 2]
+// Dependencies: [21, 12672, 3123, 558, 576, 7064, 1128, 5118, 6486, 7122, 6487, 2]
 
-// Module 12699 (FinalizeTraitActionSheet)
+// Module 12706 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3123 from "module_3123" /* 3123 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12666 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12672 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   const cResult = obj.c(8);
   ({ selectedOption, onSelectOption } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7064).BottomSheetTitleHeader;
     let intl = tmp(1128).intl;
     const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3123.Zl5vPW)} />;
     cResult[0] = tmp7;
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
     }
     return tmp15;
   }
-  const ActionSheet = tmp(7120).ActionSheet;
+  const ActionSheet = tmp(7122).ActionSheet;
   const tmp16 = <ActionSheet startExpanded header={first}>{null}</ActionSheet>;
   cResult[5] = selectedOption;
   cResult[6] = tmp11;
@@ -89,9 +89,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(7120).ActionSheet;
+  const ActionSheet = onSelectOption(7122).ActionSheet;
   let obj2 = { title: intl.string(_modDef3123.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(7062).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onSelectOption(7064).BottomSheetTitleHeader;
   intl = onSelectOption(1128).intl;
   ({
     hasIcons: false,
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
       return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(6485).TableRadioGroup;
+  const TableRadioGroup = onSelectOption(6487).TableRadioGroup;
   intl2 = onSelectOption(1128).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
 });

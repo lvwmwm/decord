@@ -1,20 +1,20 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 12861
+// Function ID: 12862
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2121, 2068, 7147, 8136, 1087, 584, 1297, 9557, 1267, 5164, 11, 2]
+// Dependencies: [5, 2121, 2068, 7149, 8137, 1087, 584, 1297, 12862, 1267, 5165, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 9556 (GuildOnboardingHomeActionCreators)
+// Module 12861 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import transitionToChannel from "transitionToChannel" /* 5164 */;
+import transitionToChannel from "transitionToChannel" /* 5165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2121 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7147 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8136 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7149 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8137 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -227,17 +227,17 @@ export const fetchNewMemberActions = function fetchNewMemberActions() {
 export const clearNewMemberActions = function clearNewMemberActions() {
   return obj(...arguments);
 };
-export const selectHomeResourceChannel = function selectHomeResourceChannel(guildId, channelId, arg2) {
+export const selectHomeResourceChannel = function selectHomeResourceChannel(guild_id, channelId) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
   if (null != channelId) {
     const channel = ChannelStore.getChannel(channelId);
-    let isFullServerPreviewResult = null == guildId;
-    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guildId, channelId);
+    let isFullServerPreviewResult = null == guild_id;
+    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guild_id, channelId);
     if (!isFullServerPreviewResult) {
-      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guildId);
+      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guild_id);
     }
     if (!isFullServerPreviewResult) {
       isFullServerPreviewResult = null == channel;
@@ -246,7 +246,7 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(guil
       isFullServerPreviewResult = null == resourceForChannel;
     }
     if (!isFullServerPreviewResult) {
-      const obj2 = { guild_id: guildId, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
+      const obj2 = { guild_id, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
       obj = AnalyticsUtilsDefault;
       obj.track(metroImportAll.SERVER_GUIDE_CHANNEL_SELECTED, obj2);
     }
@@ -295,7 +295,7 @@ export const completeNewMemberAction = function completeNewMemberAction(c0, c1) 
           channel_id: null,
           channel_action_type: actionForChannel.actionType,
           has_completed_all: newMemberActions.reduce((acc, channelId) => {
-                  const hasItem = acc && backgroundColor.includes(channelId.channelId);
+                  const hasItem = acc && closure_0.includes(channelId.channelId);
                   return hasItem;
                 }, true)
         };

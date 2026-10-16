@@ -1,9 +1,9 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17249
+// Function ID: 17250
 // Name: LiveChannelNoticesStore
 // Dependencies: [2074, 504, 584, 2]
 
-// Module 17236 (LiveChannelNoticesStore)
+// Module 17249 (LiveChannelNoticesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;

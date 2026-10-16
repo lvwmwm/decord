@@ -1,18 +1,18 @@
-// Module ID: 14127
-// Function ID: 14128
+// Module ID: 14137
+// Function ID: 14138
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2065, 21, 5153, 558, 576, 14128, 5091, 1128, 9679, 2]
+// Dependencies: [19, 17, 2065, 21, 5154, 558, 576, 14138, 5091, 1128, 9678, 2]
 
-// Module 14127 (WishlistViewerCoachmark)
+// Module 14137 (WishlistViewerCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import _modDef14128 from "module_14128" /* 14128 */;
+import _modDef14138 from "module_14138" /* 14138 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp3 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef14128 };
+    const obj2 = { uri: _modDef14138 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -56,7 +56,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   tmp10 = tmp11;
 }) : (function CoachmarkImage() {
   const tmp = closure_7();
-  const obj3 = { uri: _modDef14128 };
+  const obj3 = { uri: _modDef14138 };
   FastImageDefault;
   return <View style={tmp.imageContainer}>{null}</View>;
 });
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistVi
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9679);
+      const tmpResult = markAsDismissed(9678);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }

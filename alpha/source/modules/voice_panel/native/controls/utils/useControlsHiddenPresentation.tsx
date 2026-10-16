@@ -1,11 +1,11 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18243
+// Function ID: 18244
 // Name: useControlsHiddenPresentation
-// Dependencies: [12843, 558, 576, 4886, 4909, 5440, 2]
+// Dependencies: [12849, 558, 576, 4886, 4909, 5441, 2]
 
-// Module 18233 (useControlsHiddenPresentation)
-import spring from "spring" /* 5440 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12843 */;
+// Module 18243 (useControlsHiddenPresentation)
+import spring from "spring" /* 5441 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12849 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,10 +76,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsH
       return obj;
     }
   }
-  S.__closure = { withSpring: tmp(5440).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4909).runOnJS };
+  S.__closure = { withSpring: tmp(5441).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4909).runOnJS };
   S.__workletHash = 6139998685483;
   S.__initData = __initData2;
-  ({ withSpring: tmp(5440).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4909).runOnJS });
+  ({ withSpring: tmp(5441).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4909).runOnJS });
   const animatedStyle = tmpResult2.useAnimatedStyle(S);
   if (cResult[0] === animatedProps) {
     let tmp7;

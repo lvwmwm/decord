@@ -1,14 +1,14 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14079
+// Function ID: 14080
 // Name: RibbonIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14070, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14080, 4876, 2]
 
-// Module 14069 (RibbonIcon)
+// Module 14079 (RibbonIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 14070 */;
+import AssetRegistry from "AssetRegistry" /* 14080 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

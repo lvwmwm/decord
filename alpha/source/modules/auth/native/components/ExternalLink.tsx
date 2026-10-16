@@ -1,14 +1,14 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17036
+// Function ID: 17037
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 6848, 1505, 6878, 1128, 5149, 5441, 6176, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 6850, 1505, 6880, 1128, 5150, 5442, 6177, 2]
 
-// Module 17022 (ExternalLink)
+// Module 17036 (ExternalLink)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const obj = externalURL(576);
   const cResult = obj.c(22);
   externalURL = externalURL.externalURL;
-  const tmp5 = closure_9(navigation(6848)());
+  const tmp5 = closure_9(navigation(6850)());
   const obj2 = externalURL(1505);
   const tmp4 = navigation;
   navigation = obj2.useNavigation();
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const container = tmp5.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: intl.string(externalURL(1128).t["0Niu/F"]) };
-    const tmp4Result = tmp4(6878);
+    const tmp4Result = tmp4(6880);
     intl = tmp(1128).intl;
     const tmp14 = closure_7(tmp4Result, obj3);
     cResult[5] = tmp14;
@@ -108,7 +108,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
     const obj4 = { children: items1 };
     items1 = [tmp11, ];
     const obj5 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp15 };
-    items1[1] = closure_7(externalURL(5149).Text, obj5);
+    items1[1] = closure_7(externalURL(5150).Text, obj5);
     const tmp21 = closure_8(closure_6, obj4);
     cResult[7] = tmp5.description;
     cResult[8] = tmp21;
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   }
   if (cResult[10] !== tmp7) {
     const obj6 = { shrink: true, variant: "primary", text: tmp22, onPress: tmp7 };
-    const tmp26 = closure_7(externalURL(5441).Button, obj6);
+    const tmp26 = closure_7(externalURL(5442).Button, obj6);
     cResult[10] = tmp7;
     cResult[11] = tmp26;
     tmp24 = tmp26;
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
           return navigation.pop();
         }
     };
-    const tmp31 = closure_7(externalURL(5441).Button, obj7);
+    const tmp31 = closure_7(externalURL(5442).Button, obj7);
     cResult[13] = navigation;
     cResult[14] = tmp31;
     tmp29 = tmp31;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   }
   const obj9 = { children: items3 };
   items3 = [tmp24, tmp29];
-  const tmp33 = closure_8(externalURL(6176).ButtonGroup, obj9);
+  const tmp33 = closure_8(externalURL(6177).ButtonGroup, obj9);
   cResult[15] = tmp24;
   cResult[16] = tmp29;
   cResult[17] = tmp33;

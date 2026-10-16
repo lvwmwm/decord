@@ -1,14 +1,14 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14692
+// Function ID: 14693
 // Name: VoiceChannelAnimationStateStore
-// Dependencies: [32, 4998, 5174, 504, 584, 2]
+// Dependencies: [32, 4998, 5175, 504, 584, 2]
 
-// Module 14682 (VoiceChannelAnimationStateStore)
+// Module 14692 (VoiceChannelAnimationStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
-import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import VoiceStateStore from "VoiceStateStore" /* 5175 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,7 +29,7 @@ function resetAllState() {
 function updateChannelAnimationState(arg0, arg1) {
   let flag;
   let obj;
-  const f120309 = () => {
+  const f120395 = () => {
     if (null != closure_2_4[closure_0]) {
       const obj = { style: constants.GENTLE_AMBIENT };
       const merged = Object.assign(tmp2);
@@ -58,7 +58,7 @@ function updateChannelAnimationState(arg0, arg1) {
         delete closure_5[arg0];
       }
       const _setTimeout2 = setTimeout;
-      closure_5[arg0] = setTimeout(f120309, 2000);
+      closure_5[arg0] = setTimeout(f120395, 2000);
       flag = true;
     }
     return flag;
@@ -74,7 +74,7 @@ function updateChannelAnimationState(arg0, arg1) {
         delete closure_5[arg0];
       }
       const _setTimeout = setTimeout;
-      closure_5[arg0] = setTimeout(f120309, 2000);
+      closure_5[arg0] = setTimeout(f120395, 2000);
       flag = true;
     }
   }

@@ -1,9 +1,9 @@
-// Module ID: 13290
-// Function ID: 13291
+// Module ID: 13298
+// Function ID: 13299
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1087, 13291, 21, 5153, 587, 6481, 558, 5448, 576, 5149, 5021, 1417, 1202, 1128, 6399, 4877, 5026, 11, 1267, 8808, 7036, 5453, 1107, 5441, 2]
+// Dependencies: [32, 19, 17, 1087, 13299, 21, 5154, 587, 6483, 558, 5449, 576, 5150, 5021, 1417, 1202, 1128, 6401, 4877, 5026, 11, 1267, 8809, 7038, 5454, 1107, 5442, 2]
 
-// Module 13290 (ContactSyncSuggestions)
+// Module 13298 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -13,15 +13,15 @@ import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserUtils from "UserUtils" /* 5021 */;
-import useFontScale from "useFontScale" /* 5448 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6399 */;
-import NavigatorConstants from "NavigatorConstants" /* 6481 */;
-import Form from "Form" /* 8808 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13291 */;
+import useFontScale from "useFontScale" /* 5449 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6401 */;
+import NavigatorConstants from "NavigatorConstants" /* 6483 */;
+import Form from "Form" /* 8809 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const Text_Text = tmp(5149);
+const Text_Text = tmp(5150);
 let react = react_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -171,7 +171,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
     let tmp19 = null != suggestion.mutual_friends_count;
     if (tmp19) {
       const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-      const Text = tmp(5149).Text;
+      const Text = tmp(5150).Text;
       intl = tmp(1128).intl;
       obj6 = { count: suggestion.mutual_friends_count };
       tmp19 = metroImportAll(Text, obj5);
@@ -284,7 +284,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
       return onSelect(suggestion.suggested_user.id);
     }
   };
-  const TableCheckboxRow = tmp3(6399).TableCheckboxRow;
+  const TableCheckboxRow = tmp3(6401).TableCheckboxRow;
   obj4 = { source: userAvatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
   Avatar = tmp3(1202).Avatar;
   items = [metroImportAll(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
@@ -293,7 +293,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
   tmp9 = authStore;
   if (tmp8Result) {
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-    const Text = tmp3(5149).Text;
+    const Text = tmp3(5150).Text;
     intl = tmp3(1128).intl;
     obj6 = { count: suggestion.mutual_friends_count };
     tmp8Result = tmp8(Text, obj5);
@@ -618,10 +618,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
   }, items3);
   let obj6 = { contentContainerStyle: obj7, data: memo, renderItem: callback1 };
   obj7 = { paddingHorizontal: onSubmit(587).space.PX_16, paddingBottom: tmp6 };
-  const FlashList = friendSuggestions(7036).FlashList;
+  const FlashList = friendSuggestions(7038).FlashList;
   items5 = [closure_8(FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: friendSuggestions(1107).VerticalGradient.START, end: friendSuggestions(1107).VerticalGradient.END, pointerEvents: "none", colors: items };
-  const tmp11 = onSubmit(5453);
+  const tmp11 = onSubmit(5454);
   items5[1] = closure_8(tmp11, obj8);
   const obj9 = { style: tmp.redesignButton, children: closure_8(Button, obj10) };
   obj10 = {
@@ -642,7 +642,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
     },
     disabled: !someResult
   };
-  Button = friendSuggestions(5441).Button;
+  Button = friendSuggestions(5442).Button;
   intl = friendSuggestions(1128).intl;
   items5[2] = closure_8(onSelect, obj9);
   return closure_10(onSelect, obj5);

@@ -1,9 +1,9 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13600
+// Function ID: 13601
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8543, 13593, 2065, 21, 5153, 587, 558, 576, 1633, 6152, 5036, 12585, 1128, 2667, 5441, 13594, 5149, 10339, 5119, 5120, 10345, 13595, 4997, 2052, 8535, 504, 2]
+// Dependencies: [19, 17, 8544, 13601, 2065, 21, 5154, 587, 558, 576, 1633, 6153, 5036, 12591, 1128, 2667, 5442, 13602, 5150, 10340, 5119, 5120, 10346, 13603, 4997, 2052, 8536, 504, 2]
 
-// Module 13592 (GiftBadgePostPurchase)
+// Module 13600 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,16 +12,16 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import _modDef2667 from "module_2667" /* 2667 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10339 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10345 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13595 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10340 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10346 */;
+import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13603 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8543 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13593 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8544 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13601 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const GiftingBadgeProgressDefault = tmp4(13594);
+const GiftingBadgeProgressDefault = tmp4(13602);
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -116,7 +116,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
       }
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-    const GiftIcon = tmp(12585).GiftIcon;
+    const GiftIcon = tmp(12591).GiftIcon;
     const tmp10 = closure_10(GiftIcon, obj2);
     const intl = tmp(1128).intl;
     const stringResult = intl.string(_modDef2667.g86YiI);
@@ -152,8 +152,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
     }
     const obj3 = { grow: true, variant: "primary", icon: tmp8, text: tmp9, onPress: tmp6 };
     cResult[5] = tmp6;
-    cResult[6] = closure_10(onSendGift(5441).Button, obj3);
-    const tmp13 = closure_10(onSendGift(5441).Button, obj3);
+    cResult[6] = closure_10(onSendGift(5442).Button, obj3);
+    const tmp13 = closure_10(onSendGift(5442).Button, obj3);
   } else {
     class T {
       constructor() {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
       }
     }
     const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2667["sa/cfM"]), onPress: tmp7 };
-    const Button = tmp(5441).Button;
+    const Button = tmp(5442).Button;
     intl2 = tmp(1128).intl;
     const tmp15 = closure_10(Button, obj4);
     cResult[7] = tmp15;
@@ -243,13 +243,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
     }
   }, []);
   const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2667.g86YiI), onPress: callback };
-  const Button = onSendGift(5441).Button;
+  const Button = onSendGift(5442).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(12585).GiftIcon;
+  GiftIcon = onSendGift(12591).GiftIcon;
   intl = onSendGift(1128).intl;
   items1 = [closure_10(Button, obj2), ];
   const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2667["sa/cfM"]), onPress: callback1 };
-  const Button2 = onSendGift(5441).Button;
+  const Button2 = onSendGift(5442).Button;
   intl2 = onSendGift(1128).intl;
   items1[1] = closure_10(Button2, obj4);
   return closure_11(View, obj);
@@ -574,7 +574,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelU
   const obj4 = { style: tmp3.content, children: items };
   if (tmp10Result) {
     const obj6 = { icon: giftingBadgeTierIconUrl, size: 140 };
-    tmp10Result = tmp10(tmp(10345), obj6);
+    tmp10Result = tmp10(tmp(10346), obj6);
   }
   items = [authStore(View, obj5), ];
   const obj7 = { style: tmp3.levelUpBody, children: items1 };
@@ -583,7 +583,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelU
   items1[0] = authStore(GiftingBadgeLevelUpProgressDefault, obj8);
   const obj9 = { style: tmp3.messageSection, children: items2 };
   const obj10 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
-  const Text = tmp4(5149).Text;
+  const Text = tmp4(5150).Text;
   const intl = tmp4(1128).intl;
   format = intl.format;
   str = newTier.name;
@@ -595,7 +595,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelU
   let tmp10Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
   if (tmp10Result2) {
     const obj11 = { variant: "text-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj12) };
-    const Text2 = tmp4(5149).Text;
+    const Text2 = tmp4(5150).Text;
     const intl2 = tmp4(1128).intl;
     format2 = intl2.format;
     obj12 = { count: giftsToNextTier, nextTierName: str2 };

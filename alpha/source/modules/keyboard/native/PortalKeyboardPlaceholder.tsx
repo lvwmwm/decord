@@ -1,9 +1,9 @@
-// Module ID: 12823
-// Function ID: 12824
+// Module ID: 12829
+// Function ID: 12830
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 5153, 1384, 587, 1631, 558, 576, 1633, 6849, 1499, 6890, 9543, 5046, 1899, 2]
+// Dependencies: [19, 17, 21, 5154, 1384, 587, 1631, 558, 576, 1633, 6851, 1499, 6892, 9544, 5046, 1899, 2]
 
-// Module 12823 (PortalKeyboardPlaceholder)
+// Module 12829 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,12 +13,12 @@ import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1899 */;
 import useKeyboardTypeDefault from "useKeyboardType" /* 5046 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6849 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6890 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9543 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6851 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6892 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9544 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

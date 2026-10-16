@@ -1,14 +1,14 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 8628
+// Function ID: 8629
 // Name: PlayIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8628, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8629, 4876, 2]
 
-// Module 8627 (PlayIcon)
+// Module 8628 (PlayIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8628 */;
+import AssetRegistry from "AssetRegistry" /* 8629 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

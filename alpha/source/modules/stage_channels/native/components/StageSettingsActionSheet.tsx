@@ -1,25 +1,25 @@
-// Module ID: 7940
-// Function ID: 7941
+// Module ID: 7941
+// Function ID: 7942
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 6254, 2068, 4809, 2073, 6110, 1087, 21, 5153, 587, 5118, 558, 576, 504, 2076, 6167, 7703, 7317, 7941, 9931, 8808, 1128, 1202, 8789, 14281, 14282, 14283, 14284, 7120, 2]
+// Dependencies: [19, 17, 6255, 2068, 4809, 2073, 6111, 1087, 21, 5154, 587, 5118, 558, 576, 504, 2076, 6168, 7704, 7319, 7942, 9932, 8809, 1128, 1202, 8790, 14291, 14292, 14293, 14294, 7122, 2]
 
-// Module 7940 (StageSettingsActionSheet)
+// Module 7941 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2076 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6110 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7703 */;
-import ReportModals from "ReportModals" /* 7941 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9931 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6111 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7704 */;
+import ReportModals from "ReportModals" /* 7942 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9932 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

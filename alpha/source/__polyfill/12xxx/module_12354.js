@@ -1,142 +1,201 @@
 // Module ID: 12354
 // Function ID: 12355
-// Dependencies: [32, 12326, 12298, 12325]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: [12329, 12310, 12309, 12340]
+// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
 
 // Module 12354
-import _mod12325 from "module_12325" /* 12325 */;
-import _mod12326 from "module_12326" /* 12326 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12309 from "module_12309" /* 12309 */;
+import _mod12310 from "module_12310" /* 12310 */;
+import _mod12329 from "module_12329" /* 12329 */;
+import _mod12340 from "module_12340" /* 12340 */;
 
-let integrations;
 
-function setupIntegration(on, name, arg2) {
-  let closure_0 = on;
-  if (arg2[name.name]) {
-    const tmp10 = require;
-    if (_mod12326.DEBUG_BUILD) {
-      const logger2 = tmp10(12298).logger;
-      const _HermesInternal2 = HermesInternal;
-      logger2.log("Integration skipped because it was already installed: " + name.name);
+export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
+  let breadcrumbs;
+  let contexts;
+  let fingerprint;
+  let items1;
+  let level;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let tmpResult10;
+  let tmpResult9;
+  let transactionName;
+  let user;
+  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
+  ({ extra, tags, user, contexts } = arg1);
+  const obj = _mod12310;
+  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
+  let length = dropUndefinedKeysResult;
+  if (length) {
+    const _Object = Object;
+    length = Object.keys(dropUndefinedKeysResult).length;
+  }
+  const tmp5 = extra;
+  if (length) {
+    const obj2 = {};
+    const merged = Object.assign(dropUndefinedKeysResult);
+    const merged1 = Object.assign(extra.extra);
+    extra.extra = obj2;
+  }
+  const tmpResult = _mod12310;
+  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
+  let length2 = dropUndefinedKeysResult1;
+  if (length2) {
+    const _Object2 = Object;
+    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  }
+  if (length2) {
+    const obj3 = {};
+    const merged2 = Object.assign(dropUndefinedKeysResult1);
+    const merged3 = Object.assign(extra.tags);
+    extra.tags = obj3;
+  }
+  const tmpResult7 = _mod12310;
+  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
+  let length3 = dropUndefinedKeysResult2;
+  if (length3) {
+    const _Object3 = Object;
+    length3 = Object.keys(dropUndefinedKeysResult2).length;
+  }
+  if (length3) {
+    const obj4 = {};
+    const merged4 = Object.assign(dropUndefinedKeysResult2);
+    const merged5 = Object.assign(extra.user);
+    extra.user = obj4;
+  }
+  const tmpResult8 = _mod12310;
+  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
+  let length4 = dropUndefinedKeysResult3;
+  if (length4) {
+    const _Object4 = Object;
+    length4 = Object.keys(dropUndefinedKeysResult3).length;
+  }
+  if (length4) {
+    const obj5 = {};
+    const merged6 = Object.assign(dropUndefinedKeysResult3);
+    const merged7 = Object.assign(extra.contexts);
+    extra.contexts = obj5;
+  }
+  if (level) {
+    extra.level = level;
+  }
+  const tmp32 = transactionName && "transaction" !== extra.type;
+  if (tmp32) {
+    extra.transaction = transactionName;
+  }
+  if (span) {
+    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
+    tmpResult9 = _mod12309;
+    const merged8 = Object.assign(extra.contexts);
+    extra.contexts = obj6;
+    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
+    tmpResult10 = _mod12340;
+    const merged9 = Object.assign(extra.sdkProcessingMetadata);
+    extra.sdkProcessingMetadata = obj7;
+    const tmpResult11 = _mod12309;
+    const rootSpan = tmpResult11.getRootSpan(span);
+    const tmpResult12 = _mod12309;
+    const description = tmpResult12.spanToJSON(rootSpan).description;
+    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
+    if (tmp38) {
+      extra.transaction = description;
     }
+  }
+  if (extra.fingerprint) {
+    let items;
+    const _Array = Array;
+    const fingerprint2 = extra.fingerprint;
+    if (Array.isArray(extra.fingerprint)) {
+      items = fingerprint2;
+    } else {
+      items = [fingerprint2];
+    }
+    items1 = items;
   } else {
-    arg2[name.name] = name;
-    const arr = items;
-    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
-    if (tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    const tmp4 = name.setup && typeof name.setup === "function";
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      let closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      let closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    const tmp6 = require;
-    if (_mod12326.DEBUG_BUILD) {
-      const logger = tmp6(12298).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Integration installed: " + name.name);
-    }
+    items1 = [];
   }
-}
-let items = [];
-
-export const addIntegration = function addIntegration(name) {
-  const obj = _mod12325;
-  const client = obj.getClient();
-  if (client) {
-    client.addIntegration(name);
-  } else if (_mod12326.DEBUG_BUILD) {
-    const logger = tmp(12298).logger;
-    const _HermesInternal = HermesInternal;
-    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+  extra.fingerprint = items1;
+  if (fingerprint) {
+    const fingerprint3 = extra.fingerprint;
+    extra.fingerprint = fingerprint3.concat(fingerprint);
   }
+  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
+  if (tmp40) {
+    delete tmp5["fingerprint"];
+  }
+  const items2 = [...breadcrumbs];
+  let tmp42;
+  if (items2.length) {
+    tmp42 = items2;
+  }
+  extra.breadcrumbs = tmp42;
+  const obj8 = {};
+  const merged10 = Object.assign(extra.sdkProcessingMetadata);
+  const merged11 = Object.assign(sdkProcessingMetadata);
+  extra.sdkProcessingMetadata = obj8;
 };
-export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  let afterAllSetup = iter.next();
-  while (iter !== undefined) {
-    let obj = afterAllSetup;
-    if (obj) {
-      afterAllSetup = obj.afterAllSetup;
-    }
-    if (afterAllSetup) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
-  }
+export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+  const obj = _mod12329;
+  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
 };
-export function defineIntegration(arg0) {
-  return arg0;
-}
-export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
-  let arr2;
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
-    arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp3 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp3 = items1;
-      }
-      arr2 = tmp3;
-    }
+export const mergeScopeData = function mergeScopeData(extra, arg1) {
+  let attachments;
+  let breadcrumbs;
+  let contexts;
+  let eventProcessors;
+  let fingerprint;
+  let level;
+  let propagationContext;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let transactionName;
+  let user;
+  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
+  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
+  const obj = _mod12329;
+  extra.extra = obj.merge(extra.extra, extra, 1);
+  const obj2 = _mod12329;
+  extra.tags = obj2.merge(extra.tags, tags, 1);
+  const obj3 = _mod12329;
+  extra.user = obj3.merge(extra.user, user, 1);
+  const obj4 = _mod12329;
+  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
+  const obj5 = _mod12329;
+  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  if (level) {
+    extra.level = level;
   }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    const tmp = obj;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
-    }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      tmp[name] = name;
-    }
-  });
-  const values = Object.values(obj);
-  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
-  if (findIndexResult > -1) {
-    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
+  if (transactionName) {
+    extra.transactionName = transactionName;
   }
-  return values;
-};
-export const installedIntegrations = items;
-export { setupIntegration };
-export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    const tmp = item;
-    if (tmp) {
-      setupIntegration(closure_0, item, obj);
-    }
-  });
-  return obj;
+  if (span) {
+    extra.span = span;
+  }
+  if (breadcrumbs.length) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
+    extra.breadcrumbs = items;
+  }
+  if (fingerprint.length) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
+    extra.fingerprint = items1;
+  }
+  if (eventProcessors.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
+    extra.eventProcessors = items2;
+  }
+  if (attachments.length) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
+    extra.attachments = items3;
+  }
+  const obj6 = {};
+  const merged = Object.assign(extra.propagationContext);
+  const merged1 = Object.assign(propagationContext);
+  extra.propagationContext = obj6;
 };

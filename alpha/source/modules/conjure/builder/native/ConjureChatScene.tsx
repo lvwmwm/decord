@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 11605
+// Function ID: 11606
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 5502, 10901, 11609, 10900, 10916, 10934, 21, 11611, 11613, 4868, 5153, 587, 1505, 1633, 11621, 1647, 4909, 504, 6286, 11625, 10988, 11631, 11520, 11618, 10922, 10951, 11615, 10933, 11632, 11614, 10958, 1128, 3865, 11633, 10781, 11634, 1499, 8758, 11635, 5118, 11574, 11555, 12015, 12019, 12021, 4867, 11620, 12023, 12025, 12035, 10949, 11638, 10962, 12036, 10924, 11569, 11617, 9642, 7315, 12039, 11557, 12041, 6423, 11607, 12042, 9599, 9478, 5149, 5441, 12044, 12045, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 5503, 10898, 11606, 10897, 10913, 10931, 21, 11608, 11610, 4868, 5154, 587, 1505, 1633, 11618, 1647, 4909, 504, 6299, 11622, 10985, 11628, 11517, 11615, 10919, 10948, 11612, 10930, 11629, 11611, 10955, 1128, 3865, 11630, 10778, 11631, 1499, 8759, 11632, 5118, 11571, 11552, 12012, 12016, 12018, 4867, 11617, 12020, 12022, 12032, 10946, 11635, 10959, 12033, 10921, 11566, 11614, 9641, 7317, 12036, 11554, 12038, 6425, 11604, 12039, 9598, 9479, 5150, 5442, 12041, 12042, 12043, 558, 576, 2]
 // Exports: default
 
-// Module 11608 (ConjureChatScene)
+// Module 11605 (ConjureChatScene)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,37 +12,37 @@ import _modDef3865 from "module_3865" /* 3865 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import NavigatorHeader from "NavigatorHeader" /* 6423 */;
-import SettingsIcon from "SettingsIcon" /* 7315 */;
-import UploadIcon from "UploadIcon" /* 9642 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10901 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
-import FramesConstants from "FramesConstants" /* 10934 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10949 */;
-import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 10962 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11520 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11555 */;
-import conjureProjectActions2 from "conjureProjectActions" /* 11557 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11574 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11611 */;
-import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11613 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11614 */;
-import conjurePublishAction from "conjurePublishAction" /* 11617 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 11633 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12015 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12025 */;
-import BugIcon from "BugIcon" /* 12039 */;
-import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12041 */;
+import NavigatorHeader from "NavigatorHeader" /* 6425 */;
+import SettingsIcon from "SettingsIcon" /* 7317 */;
+import UploadIcon from "UploadIcon" /* 9641 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
+import FramesConstants from "FramesConstants" /* 10931 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10946 */;
+import restartFrames from "restartFrames" /* 10959 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11517 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11552 */;
+import conjureProjectActions2 from "conjureProjectActions" /* 11554 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11571 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11608 */;
+import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11610 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11611 */;
+import conjurePublishAction from "conjurePublishAction" /* 11614 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 11630 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12012 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12022 */;
+import BugIcon from "BugIcon" /* 12036 */;
+import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5502 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11609 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10916 */;
+import ApplicationStore from "ApplicationStore" /* 5503 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11606 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ExperimentalDirectSelectIcon2 = tmp(12042);
+const ExperimentalDirectSelectIcon2 = tmp(12039);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Keyboard: metroImportDefault, View: metroImportAll } = react_native);
@@ -104,7 +104,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
     const ExperimentalDirectSelectIcon = ExperimentalDirectSelectIcon2.ExperimentalDirectSelectIcon;
-    const tmp7 = trackedExposureExperiments(ExperimentalDirectSelectIcon, obj2);
+    const tmp7 = closure_17(ExperimentalDirectSelectIcon, obj2);
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -114,12 +114,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
 }) : (function ConjureSelectModeActiveIcon() {
   obj = { color: nativeDefault.colors.TEXT_BRAND };
   const ExperimentalDirectSelectIcon = ExperimentalDirectSelectIcon2.ExperimentalDirectSelectIcon;
-  return trackedExposureExperiments(ExperimentalDirectSelectIcon, obj);
+  return closure_17(ExperimentalDirectSelectIcon, obj);
 });
 let result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureChatScene.tsx");
 
 export default function ConjureChatScene(guildId) {
   let Provider;
+  let Provider2;
   let Sme0T0;
   let _undefined;
   let closure_4;
@@ -141,6 +142,7 @@ export default function ConjureChatScene(guildId) {
   let obj21;
   let obj24;
   let obj25;
+  let obj26;
   let previewAppId;
   let projectGuildId;
   let prop;
@@ -777,7 +779,7 @@ export default function ConjureChatScene(guildId) {
     let obj2;
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
-    obj = { content: trackedExposureExperiments(ConjureSettingsSheetDefault, obj2), key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY };
+    obj = { content: activeMode(ConjureSettingsSheetDefault, obj2), key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY };
     obj2 = { projectId, guildId: projectGuildId, isPreview: true };
     showActionSheet(obj);
   }, items22);
@@ -793,7 +795,7 @@ export default function ConjureChatScene(guildId) {
   callback4 = obj2.useCallback(() => {
     let obj2;
     if (null != stateFromStores) {
-      obj = { key: ConjureRemixSheet.CONJURE_REMIX_SHEET_KEY, content: trackedExposureExperiments(ConjureRemixSheetDefault, obj2) };
+      obj = { key: ConjureRemixSheet.CONJURE_REMIX_SHEET_KEY, content: activeMode(ConjureRemixSheetDefault, obj2) };
       const showActionSheet = ActionSheetActionCreators.showActionSheet;
       ActionSheetActionCreators;
       obj2 = { project: tmp, currentGuildId: guildId, onRemixed: memo5 };
@@ -805,7 +807,7 @@ export default function ConjureChatScene(guildId) {
     let obj2;
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
-    obj = { key: ConjureConnectToolSheet.CONJURE_CONNECT_TOOL_SHEET_KEY, content: trackedExposureExperiments(ConjureConnectToolSheetDefault, obj2) };
+    obj = { key: ConjureConnectToolSheet.CONJURE_CONNECT_TOOL_SHEET_KEY, content: activeMode(ConjureConnectToolSheetDefault, obj2) };
     obj2 = { projectId };
     showActionSheet(obj);
   }, items25);
@@ -938,7 +940,7 @@ export default function ConjureChatScene(guildId) {
     obj = { key: ConjureHistorySheet.CONJURE_HISTORY_SHEET_KEY, content: tmp2(tmp3, obj2) };
     obj2 = { projectId, installScope: install_scope, onRestoreVersion: callback6 };
     install_scope = undefined;
-    tmp2 = trackedExposureExperiments;
+    tmp2 = closure_17;
     tmp3 = ConjureHistorySheetDefault;
     if (stateFromStores != null) {
       install_scope = stateFromStores.install_scope;
@@ -965,7 +967,8 @@ export default function ConjureChatScene(guildId) {
   const items30 = [previewAppId];
   callback8 = obj2.useCallback(() => {
     if (null != previewAppId) {
-      restartConjureAppFramesDefault(tmp);
+      obj = restartFrames;
+      obj.restartAppFrames(tmp);
     }
   }, items30);
   const items31 = [navigation, projectId];
@@ -1100,12 +1103,12 @@ export default function ConjureChatScene(guildId) {
           const tmp2 = projectExists;
           if (tmp2) {
             const obj2 = { project: tmp, title, onPressIcon: callback3 };
-            tmp3 = trackedExposureExperiments(ConjureProjectHeaderTitleDefault, obj2);
+            tmp3 = closure_17(ConjureProjectHeaderTitleDefault, obj2);
           }
           return tmp3;
         }
         obj = { title };
-        tmp3 = trackedExposureExperiments(NavigatorHeader.NavigatorHeader, obj);
+        tmp3 = closure_17(NavigatorHeader.NavigatorHeader, obj);
       },
       headerRight() {
         let obj3;
@@ -1220,29 +1223,31 @@ export default function ConjureChatScene(guildId) {
     items41[1] = paneHidden;
     items41[2] = animatedStyle1;
     const obj23 = { style: items41, children: activeMode(Provider, obj24) };
-    obj24 = { value: memo4, children: activeMode(tmp4(tmp2[74]), obj25) };
+    obj24 = { value: memo4, children: activeMode(Provider2, obj25) };
     Provider = tmp(tmp2[33]).ConjurePublishActionContext.Provider;
-    obj25 = { projectId, transcriptTopInset: first, onRestoreVersion: callback6, hidden: tmp55 && !tmp41 };
+    obj25 = { value: projectId, children: activeMode(tmp4(tmp2[75]), obj26) };
+    Provider2 = tmp(tmp2[74]).ConjureFileMentionProjectContext.Provider;
+    obj26 = { projectId, transcriptTopInset: first, onRestoreVersion: callback6, hidden: tmp55 && !tmp41 };
     items40[2] = activeMode(View2, obj23);
     items39[1] = setMode(projectExists, obj17);
     tmp115Result1 = tmp121(View, obj14);
   } else {
-    const obj26 = { style: items42, children: tmp115Result };
+    const obj27 = { style: items42, children: tmp115Result };
     items42 = [, ];
     ({ content: arr40[0], centered: arr40[1] } = tmp5);
     if (stateFromStores1) {
       tmp115Result = tmp115(closure_6, {});
     } else {
-      const obj27 = { style: tmp5.listError, children: items43 };
-      const obj28 = { variant: "heading-lg/semibold", color: "text-default", children: intl3.string(tmp4(tmp2[36]).G1WwgK) };
+      const obj28 = { style: tmp5.listError, children: items43 };
+      const obj29 = { variant: "heading-lg/semibold", color: "text-default", children: intl3.string(tmp4(tmp2[36]).G1WwgK) };
       const Text = tmp(tmp2[71]).Text;
       intl3 = tmp(tmp2[35]).intl;
-      items43 = [activeMode(Text, obj28), , ];
-      const obj29 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp4(tmp2[36]).fINulo) };
+      items43 = [activeMode(Text, obj29), , ];
+      const obj30 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp4(tmp2[36]).fINulo) };
       const Text2 = tmp(tmp2[71]).Text;
       intl4 = tmp(tmp2[35]).intl;
-      items43[1] = activeMode(Text2, obj29);
-      const obj30 = {
+      items43[1] = activeMode(Text2, obj30);
+      const obj31 = {
         variant: "secondary",
         size: "sm",
         text: intl5.string(tmp4(tmp2[36])["WFJ/vb"]),
@@ -1253,10 +1258,10 @@ export default function ConjureChatScene(guildId) {
       };
       const Button = tmp(tmp2[72]).Button;
       intl5 = tmp(tmp2[35]).intl;
-      items43[2] = activeMode(Button, obj30);
-      tmp115Result = setMode(tmp116, obj27);
+      items43[2] = activeMode(Button, obj31);
+      tmp115Result = setMode(tmp116, obj28);
     }
-    tmp115Result1 = tmp115(tmp116, obj26);
+    tmp115Result1 = tmp115(tmp116, obj27);
   }
   return tmp115Result1;
 };

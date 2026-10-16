@@ -1,9 +1,9 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 15983
+// Function ID: 15984
 // Name: BountiesScrollPromptFooter
-// Dependencies: [109, 19, 17, 5143, 6190, 21, 5153, 587, 5154, 5157, 558, 576, 504, 1633, 4959, 4909, 15972, 15973, 9685, 2]
+// Dependencies: [109, 19, 17, 5144, 6191, 21, 5154, 587, 5155, 5158, 558, 576, 504, 1633, 4959, 4909, 15984, 15985, 9684, 2]
 
-// Module 15971 (BountiesScrollPromptFooter)
+// Module 15983 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,17 +11,17 @@ import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
 import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4959 */;
-import timing from "timing" /* 5154 */;
-import timingPresets from "timingPresets" /* 5157 */;
-import QuestConstants from "QuestConstants" /* 6190 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9685 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15972 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 15973 */;
+import timing from "timing" /* 5155 */;
+import timingPresets from "timingPresets" /* 5158 */;
+import QuestConstants from "QuestConstants" /* 6191 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9684 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15984 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 15985 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

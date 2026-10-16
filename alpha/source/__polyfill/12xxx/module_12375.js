@@ -1,114 +1,82 @@
 // Module ID: 12375
 // Function ID: 12376
-// Dependencies: [12305, 12307]
-// Exports: applyAggregateErrorsToEvent
+// Dependencies: [12300, 12303, 12332, 12318, 12331, 12352, 12322, 12323, 12309, 12340, 12317, 12316, 12304]
+// Exports: getTraceData
 
 // Module 12375
-import _mod12305 from "module_12305" /* 12305 */;
-import _mod12307 from "module_12307" /* 12307 */;
+import _mod12309 from "module_12309" /* 12309 */;
+import _mod12316 from "module_12316" /* 12316 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12317 */;
+import _mod12322 from "module_12322" /* 12322 */;
+import _mod12323 from "module_12323" /* 12323 */;
+import _mod12331 from "module_12331" /* 12331 */;
+import _mod12340 from "module_12340" /* 12340 */;
+import _mod12352 from "module_12352" /* 12352 */;
+import registerSpanErrorInstrumentation from "module_12300" /* 12300 */;
+import "module_12303";
+import DEBUG_BUILD from "module_12332" /* 12332 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12318 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, length;
 
-function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
-  let closure_1;
-  let closure_2;
-  _require = fn;
-  dependencyMap = arg1;
-  aggregateExceptionsFromError = arg2;
-  let closure_3 = source;
-  if (arg5.length >= arg2 + 1) {
-    return arg5;
-  } else {
-    let items = [];
-    HermesBuiltin.arraySpread(items, arg5, 0);
-    length = items;
-    let obj3 = require("module_12305");
-    const _Error = Error;
-    if (obj3.isInstanceOf(errors[source], Error)) {
-      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-      let obj = { exception_id };
-      const tmp2 = obj;
-      let merged = Object.assign(mechanism.mechanism);
-      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
-      let tmp6 = tmp4;
-      let merged1 = Object.assign(tmp4);
-      mechanism.mechanism = obj;
-      const tmp8 = fn(arg1, errors[source]);
-      length = length.length;
-      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
-      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
-      let merged2 = Object.assign(tmp8.mechanism);
-      tmp8.mechanism = obj2;
-      const tmp12 = aggregateExceptionsFromError;
-      const items1 = [tmp8];
-      let tmp13 = errors[source];
-      HermesBuiltin.arraySpread(items1, length, 1);
-      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
-    }
-    const _Array = Array;
-    if (Array.isArray(errors.errors)) {
-      errors = errors.errors;
-      const item = errors.forEach((item, index) => {
-        const obj = _mod12305;
-        if (obj.isInstanceOf(item, Error)) {
-          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-          const obj2 = { exception_id };
-          const merged = Object.assign(tmp2.mechanism);
-          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
-          const merged1 = Object.assign(tmp6);
-          mechanism.mechanism = obj2;
-          const tmp13 = fn(closure_1, item);
-          length = length.length;
-          const _HermesInternal = HermesInternal;
-          mechanism = tmp13.mechanism;
-          const combined = "errors[" + index + "]";
-          if (!mechanism) {
-            mechanism = { type: "generic", handled: true };
-          }
-          tmp13.mechanism = mechanism;
-          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
-          const merged2 = Object.assign(tmp13.mechanism);
-          tmp13.mechanism = obj3;
-          const items = [tmp13];
-          HermesBuiltin.arraySpread(items, length, 1);
-          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
-        }
-      });
-    }
-    return length;
+export const getTraceData = function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-}
-
-export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 250;
-  }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp = originalException;
-      if (tmp) {
-        let obj = num(12305);
-        const _Error = Error;
-        if (obj.isInstanceOf(originalException.originalException, Error)) {
-          let tmp5;
-          if (exception.exception.values.length > 0) {
-            tmp5 = exception.exception.values[exception.exception.values.length - 1];
-          }
-          if (tmp5) {
-            exception = exception.exception;
-            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
-            exception.values = arr.map((value) => {
-              if (value.value) {
-                const obj = _mod12307;
-                value.value = obj.truncate(value.value, num);
-              }
-              return value;
-            });
-          }
+  const obj2 = _mod12331;
+  const client = obj2.getClient();
+  const obj3 = _mod12352;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod12322;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod12323;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod12331;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod12309;
+          span = tmpResult10.getActiveSpan();
         }
+        if (span) {
+          const tmpResult11 = _mod12309;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod12316;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+        }
+        const tmpResult13 = _mod12340;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(12316).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(12304).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
     }
   }
+  return {};
 };

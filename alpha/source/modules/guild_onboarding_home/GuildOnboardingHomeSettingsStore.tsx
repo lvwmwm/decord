@@ -1,9 +1,9 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7149
+// Function ID: 7150
 // Name: GuildOnboardingHomeSettingsStore
 // Dependencies: [504, 584, 2]
 
-// Module 7147 (GuildOnboardingHomeSettingsStore)
+// Module 7149 (GuildOnboardingHomeSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -92,9 +92,9 @@ class GuildOnboardingHomeSettingsStore extends Store {
   hasMemberAction(id, id2) {
     return null != this.getActionForChannel(id, id2);
   }
-  getResourceChannels(guildId) {
+  getResourceChannels(guild_id) {
     let resourceChannels;
-    if (closure_2[guildId] != null) {
+    if (closure_2[guild_id] != null) {
       resourceChannels = tmp.resourceChannels;
     }
     if (resourceChannels == null) {
@@ -102,13 +102,13 @@ class GuildOnboardingHomeSettingsStore extends Store {
     }
     return resourceChannels;
   }
-  getResourceForChannel(guildId, channelId) {
+  getResourceForChannel(guild_id, channelId) {
     let closure_0 = channelId;
-    if (null == guildId) {
+    if (null == guild_id) {
       return null;
     } else {
       const self = this;
-      const resourceChannels = this.getResourceChannels(guildId);
+      const resourceChannels = this.getResourceChannels(guild_id);
       let found = null;
       if (resourceChannels !== closure_1) {
         found = resourceChannels.find((channelId) => channelId.channelId === closure_0);

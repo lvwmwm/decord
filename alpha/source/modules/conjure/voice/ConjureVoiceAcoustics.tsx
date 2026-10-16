@@ -1,10 +1,10 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15419
+// Function ID: 15420
 // Name: ConjureVoiceAcoustics
 // Dependencies: [2]
 // Exports: getRoomError, toSpatialAudioOverrides
 
-// Module 15409 (ConjureVoiceAcoustics)
+// Module 15419 (ConjureVoiceAcoustics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/voice/ConjureVoiceAcoustics.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9867
+// Function ID: 9868
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [5362, 1128, 2]
+// Dependencies: [5363, 1128, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 9868 (maybeShowDiscardChangesAlert)
+// Module 9867 (maybeShowDiscardChangesAlert)
 import intl5 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,8 +41,8 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
         },
       isDismissable: false
     };
-    const show = onConfirm(5362).show;
-    onConfirm(5362);
+    const show = onConfirm(5363).show;
+    onConfirm(5363);
     intl = intl5.intl;
     intl2 = intl5.intl;
     intl3 = intl5.intl;

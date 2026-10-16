@@ -1,9 +1,9 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9682
+// Function ID: 9683
 // Name: useTooltipPosition
 // Dependencies: [19, 558, 576, 2]
 
-// Module 9683 (useTooltipPosition)
+// Module 9682 (useTooltipPosition)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

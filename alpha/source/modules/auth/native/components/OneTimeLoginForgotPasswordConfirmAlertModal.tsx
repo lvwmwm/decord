@@ -1,13 +1,13 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 6853
+// Function ID: 6854
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [19, 21, 558, 576, 1128, 5367, 5367, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5368, 5368, 2]
 
-// Module 6851 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 6853 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5367 */;
+import AlertModal2 from "AlertModal" /* 5368 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,10 +33,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLog
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5367).AlertModal;
-    const AlertActions = tmp(5367).AlertActions;
+    const AlertModal = tmp(5368).AlertModal;
+    const AlertActions = tmp(5368).AlertActions;
     ({ text: intl3.string(intl4.t.BddRzS) });
-    const AlertActionButton = tmp(5367).AlertActionButton;
+    const AlertActionButton = tmp(5368).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp10 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp10;

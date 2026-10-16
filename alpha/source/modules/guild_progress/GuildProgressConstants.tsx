@@ -1,9 +1,9 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13084
+// Function ID: 13085
 // Name: GuildProgressConstants
 // Dependencies: [2]
 
-// Module 13076 (GuildProgressConstants)
+// Module 13084 (GuildProgressConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_progress/GuildProgressConstants.tsx");

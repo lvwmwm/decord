@@ -1,10 +1,10 @@
-// Module ID: 5968
-// Function ID: 5969
+// Module ID: 5969
+// Function ID: 5970
 // Name: StickersTypes
 // Dependencies: [2084, 5028, 2]
 // Exports: isAnimatedSticker, isCustomSticker
 
-// Module 5968 (StickersTypes)
+// Module 5969 (StickersTypes)
 import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2084 */;
 import shared from "shared" /* 5028 */;
 import size from "module_2" /* 2 */;

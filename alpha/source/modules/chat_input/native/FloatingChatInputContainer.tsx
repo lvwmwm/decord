@@ -1,14 +1,14 @@
-// Module ID: 12992
-// Function ID: 12993
+// Module ID: 13000
+// Function ID: 13001
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 4909, 558, 576, 4877, 587, 1647, 5046, 1631, 5154, 5157, 2]
+// Dependencies: [32, 19, 21, 4909, 558, 576, 4877, 587, 1647, 5046, 1631, 5155, 5158, 2]
 
-// Module 12992 (FloatingChatInputContainer)
+// Module 13000 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let dependencyMap, set;
 let tmp2;
 let tmp4;
 const useKeyboardTypeDefault = tmp4(5046);
-const timingPresets = tmp2(5157);
+const timingPresets = tmp2(5158);
 const jsx = Fragment.jsx;
 const Easing = ReanimatedRexport.Easing;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);

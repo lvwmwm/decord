@@ -1,9 +1,9 @@
-// Module ID: 5854
-// Function ID: 5855
+// Module ID: 5855
+// Function ID: 5856
 // Name: APIError
 // Dependencies: [1087, 1297, 1128, 2]
 
-// Module 5854 (APIError)
+// Module 5855 (APIError)
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

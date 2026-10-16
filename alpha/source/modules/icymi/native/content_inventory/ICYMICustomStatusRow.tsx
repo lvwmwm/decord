@@ -1,28 +1,28 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17592
+// Function ID: 17593
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1392, 8680, 21, 587, 5153, 17525, 558, 576, 1202, 12783, 5149, 1128, 9543, 5026, 504, 5846, 9079, 10478, 10495, 1384, 6407, 5111, 9958, 12194, 9191, 11, 1104, 5021, 6277, 17583, 9247, 17579, 2]
+// Dependencies: [32, 19, 17, 1392, 8681, 21, 587, 5154, 17535, 558, 576, 1202, 12789, 5150, 1128, 9544, 5026, 504, 5847, 9080, 10479, 10496, 1384, 6409, 5111, 9959, 12198, 9192, 11, 1104, 5021, 6278, 17593, 9248, 17589, 2]
 
-// Module 17582 (ICYMICustomStatusRow)
+// Module 17592 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import TrashIcon from "TrashIcon" /* 5111 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import Pressables from "Pressables" /* 6407 */;
-import ReactionIcon from "ReactionIcon" /* 9191 */;
-import PencilIcon from "PencilIcon" /* 9958 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12194 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12783 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import Pressables from "Pressables" /* 6409 */;
+import ReactionIcon from "ReactionIcon" /* 9192 */;
+import PencilIcon from "PencilIcon" /* 9959 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12198 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ICYMIStore from "ICYMIStore" /* 8680 */;
+import ICYMIStore from "ICYMIStore" /* 8681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
-import createICYMIStyles from "createICYMIStyles" /* 17525 */;
+import createStyles from "createStyles" /* 5154 */;
+import createICYMIStyles from "createICYMIStyles" /* 17535 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", color: "text-strong", children: intl.string(intl4.t["3UB9ad"]) };
-    const Text = tmp(5149).Text;
+    const Text = tmp(5150).Text;
     intl = tmp(1128).intl;
     const tmp11 = metroImportAll(Text, obj3);
     cResult[1] = tmp11;
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityCus
   const userId = id.userId;
   ({ customStatusExtra, renderForScreenshot, variant } = id);
   closure_14(renderForScreenshot);
-  const obj2 = id(9543);
+  const obj2 = id(9544);
   const gradientBottom = obj2.useGradientBottom();
   let backgroundColor;
   const tmp6 = closure_13;

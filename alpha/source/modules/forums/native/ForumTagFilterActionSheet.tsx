@@ -1,20 +1,20 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13408
+// Function ID: 13409
 // Name: ForumTagFilterActionSheet
-// Dependencies: [32, 19, 6205, 12775, 1087, 21, 5153, 558, 576, 8124, 5458, 1128, 8791, 7062, 6399, 6529, 6487, 7120, 504, 1417, 7043, 2]
+// Dependencies: [32, 19, 6206, 12781, 1087, 21, 5154, 558, 576, 8125, 5459, 1128, 8792, 7064, 6401, 6531, 6489, 7122, 504, 1417, 7045, 2]
 
-// Module 13400 (ForumTagFilterActionSheet)
+// Module 13408 (ForumTagFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import EmojiDefault from "Emoji" /* 7043 */;
-import Tracking from "Tracking" /* 8124 */;
+import EmojiDefault from "Emoji" /* 7045 */;
+import Tracking from "Tracking" /* 8125 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6205 */;
-import ForumChannelStore from "ForumChannelStore" /* 12775 */;
+import EmojiStore from "EmojiStore" /* 6206 */;
+import ForumChannelStore from "ForumChannelStore" /* 12781 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,9 +80,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
           let tmp15;
           let tmp17;
           let tmp19;
-          let tmp21;
-          let tmp24;
-          let tmp27;
+          let tmp22;
+          let tmp25;
+          let tmp28;
           if (cResult[9] === tmp4) {
             tmp15 = cResult[10];
           }
@@ -98,15 +98,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
             tmp17 = cResult[11];
           }
           if (cResult[12] !== first.size) {
-            let str2 = " ";
+            let formatToPlainStringResult;
             if (first.size > 0) {
-              const intl2 = tmp(tmp2[11]).intl;
+              const intl3 = tmp(tmp2[11]).intl;
               let obj2 = { count: first.size };
-              str2 = intl2.formatToPlainString(tmp(tmp2[11]).t["/FzHJK"], obj2);
+              formatToPlainStringResult = intl3.formatToPlainString(tmp(tmp2[11]).t["/FzHJK"], obj2);
+            } else {
+              const intl2 = tmp(tmp2[11]).intl;
+              formatToPlainStringResult = intl2.string(tmp(tmp2[11]).t.sAYgZc);
             }
             cResult[12] = first.size;
-            cResult[13] = str2;
-            tmp19 = str2;
+            cResult[13] = formatToPlainStringResult;
+            tmp19 = formatToPlainStringResult;
           } else {
             tmp19 = cResult[13];
           }
@@ -117,23 +120,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
               state.setTagFilter(channel.id, first);
             }
           }
-          if (tmp20 === Symbol.for("react.memo_cache_sentinel")) {
+          if (tmp21 === Symbol.for("react.memo_cache_sentinel")) {
             const ActionSheetHeaderPressableText = tmp(tmp2[12]).ActionSheetHeaderPressableText;
-            const intl3 = tmp(tmp2[11]).intl;
-            const tmp23 = <ActionSheetHeaderPressableText onPress={tmp14} label={intl3.string(channel(first[11]).t.VkKicb)} />;
+            const intl4 = tmp(tmp2[11]).intl;
+            const tmp24 = <ActionSheetHeaderPressableText onPress={tmp14} label={intl4.string(channel(first[11]).t.VkKicb)} />;
             class H {
               constructor() {
                 state = state.getState();
                 state.setTagFilter(channel.id, first);
               }
             }
-            cResult[14] = tmp23;
-            tmp21 = tmp23;
+            cResult[14] = tmp24;
+            tmp22 = tmp24;
           } else {
-            tmp21 = cResult[14];
+            tmp22 = cResult[14];
           }
           if (cResult[15] !== tmp19) {
-            const tmp26 = jsx(channel(first[13]).BottomSheetTitleHeader, { title: tmp17, subtitle: tmp19, leading: tmp21 });
+            const tmp27 = jsx(channel(first[13]).BottomSheetTitleHeader, { title: tmp17, subtitle: tmp19, leading: tmp22 });
             cResult[15] = tmp19;
             class H {
               constructor() {
@@ -141,47 +144,47 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
                 state.setTagFilter(channel.id, first);
               }
             }
-            cResult[16] = tmp26;
-            tmp24 = tmp26;
+            cResult[16] = tmp27;
+            tmp25 = tmp27;
           } else {
-            tmp24 = cResult[16];
+            tmp25 = cResult[16];
           }
           if (cResult[17] === channel.availableTags) {
             if (cResult[18] === first) {
-              let tmp30;
+              let tmp31;
               if (cResult[19] === tmp12) {
-                tmp27 = cResult[20];
+                tmp28 = cResult[20];
               }
-              if (cResult[24] !== tmp27) {
+              if (cResult[24] !== tmp28) {
                 const BottomSheetScrollView = tmp(tmp2[15]).BottomSheetScrollView;
-                const tmp32 = <BottomSheetScrollView>{null}</BottomSheetScrollView>;
+                const tmp33 = <BottomSheetScrollView>{null}</BottomSheetScrollView>;
                 class H {
                   constructor() {
                     state = state.getState();
                     state.setTagFilter(channel.id, first);
                   }
                 }
-                cResult[25] = tmp32;
-                tmp30 = tmp32;
+                cResult[25] = tmp33;
+                tmp31 = tmp33;
               } else {
-                tmp30 = cResult[25];
+                tmp31 = cResult[25];
               }
-              if (cResult[26] === tmp30) {
-                let tmp33;
-                if (cResult[27] === tmp24) {
-                  tmp33 = cResult[28];
+              if (cResult[26] === tmp31) {
+                let tmp34;
+                if (cResult[27] === tmp25) {
+                  tmp34 = cResult[28];
                 }
-                return tmp33;
+                return tmp34;
               }
-              const tmp35 = jsx(channel(first[17]).ActionSheet, { scrollable: true, header: tmp24, children: tmp30 });
+              const tmp36 = jsx(channel(first[17]).ActionSheet, { scrollable: true, header: tmp25, children: tmp31 });
               class H {
                 constructor() {
                   state = state.getState();
                   state.setTagFilter(channel.id, first);
                 }
               }
-              cResult[26] = tmp30;
-              cResult[27] = tmp24;
+              cResult[26] = tmp31;
+              cResult[27] = tmp25;
               class L {
                 constructor(arg0) {
                   closure_0 = channel;
@@ -200,16 +203,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
                   return closure_1_11(TableCheckboxRow, obj, channel.id);
                 }
               }
-              tmp33 = tmp35;
+              tmp34 = tmp36;
             }
           }
           if (cResult[21] === first) {
-            let tmp28;
+            let tmp29;
             if (cResult[22] === tmp12) {
-              tmp28 = cResult[23];
+              tmp29 = cResult[23];
             }
             const availableTags = channel.availableTags;
-            const mapped = availableTags.map(tmp28);
+            const mapped = availableTags.map(tmp29);
             cResult[17] = channel.availableTags;
             cResult[18] = first;
             class H {
@@ -219,7 +222,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
               }
             }
             cResult[20] = mapped;
-            tmp27 = mapped;
+            tmp28 = mapped;
           }
           class L {
             constructor(arg0) {
@@ -242,7 +245,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
           cResult[21] = first;
           cResult[22] = tmp12;
           cResult[23] = L;
-          tmp28 = L;
+          tmp29 = L;
         }
       }
       class H {
@@ -292,12 +295,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   let availableTags;
   let closure_3;
   let first;
+  let formatToPlainStringResult;
   let intl;
-  let intl3;
+  let intl4;
   let obj5;
   let obj6;
   let obj7;
-  let str;
   channel = channel.channel;
   first = undefined;
   _slicedToArray = undefined;
@@ -312,14 +315,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
     state.setTagFilter(channel.id, first);
   });
   const ActionSheet = channel(first[17]).ActionSheet;
-  let obj2 = { title: intl.string(channel(first[11]).t.TdqRTh), subtitle: str, leading: tmp7(ActionSheetHeaderPressableText, obj5) };
+  let obj2 = { title: intl.string(channel(first[11]).t.TdqRTh), subtitle: formatToPlainStringResult, leading: tmp7(ActionSheetHeaderPressableText, obj5) };
   const BottomSheetTitleHeader = channel(first[13]).BottomSheetTitleHeader;
   intl = channel(first[11]).intl;
-  str = " ";
   if (first.size > 0) {
-    const intl2 = tmp4(tmp5[11]).intl;
+    const intl3 = tmp4(tmp5[11]).intl;
     let obj3 = { count: first.size };
-    str = intl2.formatToPlainString(tmp4(tmp5[11]).t["/FzHJK"], obj3);
+    formatToPlainStringResult = intl3.formatToPlainString(tmp4(tmp5[11]).t["/FzHJK"], obj3);
+  } else {
+    const intl2 = tmp4(tmp5[11]).intl;
+    formatToPlainStringResult = intl2.string(tmp4(tmp5[11]).t.sAYgZc);
   }
   const obj4 = { scrollable: true, header: jsx(BottomSheetTitleHeader, obj2), children: jsx(BottomSheetScrollView, obj6) };
   obj5 = {
@@ -327,10 +332,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
       set = new Set();
       closure_3(set);
     },
-    label: intl3.string(channel(first[11]).t.VkKicb)
+    label: intl4.string(channel(first[11]).t.VkKicb)
   };
   ActionSheetHeaderPressableText = tmp4(tmp5[12]).ActionSheetHeaderPressableText;
-  intl3 = tmp4(tmp5[11]).intl;
+  intl4 = tmp4(tmp5[11]).intl;
   obj6 = { children: jsx(TableRowGroup, obj7) };
   BottomSheetScrollView = tmp4(tmp5[15]).BottomSheetScrollView;
   obj7 = {

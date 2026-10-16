@@ -1,11 +1,11 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8952
+// Function ID: 8953
 // Name: Share
-// Dependencies: [1384, 8952, 8953, 2]
+// Dependencies: [1384, 8953, 8954, 2]
 
-// Module 8951 (Share)
-import AssetRegistryDefault from "AssetRegistry" /* 8952 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8953 */;
+// Module 8952 (Share)
+import AssetRegistryDefault from "AssetRegistry" /* 8953 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8954 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

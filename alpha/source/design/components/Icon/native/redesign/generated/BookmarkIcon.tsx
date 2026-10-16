@@ -1,14 +1,14 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13527
+// Function ID: 13528
 // Name: BookmarkIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13520, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13528, 4876, 2]
 
-// Module 13519 (BookmarkIcon)
+// Module 13527 (BookmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 13520 */;
+import AssetRegistry from "AssetRegistry" /* 13528 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

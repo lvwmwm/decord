@@ -1,26 +1,34 @@
 // Module ID: 12374
 // Function ID: 12375
-// Dependencies: [12375, 12358, 12354]
+// Dependencies: [12306]
+// Exports: applySdkMetadata
 
 // Module 12374
-import eventFromMessage from "eventFromMessage" /* 12358 */;
-import _mod12375 from "module_12375" /* 12375 */;
-import module_12354 from "module_12354" /* 12354 */;
+import _mod12306 from "module_12306" /* 12306 */;
 
 
-export const linkedErrorsIntegration = module_12354.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
+  let arr = arg2;
+  if (arg2 === undefined) {
+    const items = [arg1];
+    arr = items;
   }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = _mod12375;
-      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
-    }
-  };
-});
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "npm";
+  }
+  const tmp = _metadata._metadata || {};
+  if (!tmp.sdk) {
+    let obj = {
+      name: "sentry.javascript." + arg1,
+      packages: arr.map((item) => {
+          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12306.SDK_VERSION };
+          return obj;
+        }),
+      version: str(12306).SDK_VERSION
+    };
+    const _HermesInternal = HermesInternal;
+    tmp.sdk = obj;
+  }
+  _metadata._metadata = tmp;
+};

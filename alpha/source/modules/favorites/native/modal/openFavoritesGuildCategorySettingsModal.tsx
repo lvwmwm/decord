@@ -1,12 +1,12 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17177
+// Function ID: 17178
 // Name: openFavoritesGuildCategorySettingsModal
-// Dependencies: [6152, 17164, 2002, 2]
+// Dependencies: [6153, 17178, 2002, 2]
 // Exports: default
 
-// Module 17163 (openFavoritesGuildCategorySettingsModal)
+// Module 17177 (openFavoritesGuildCategorySettingsModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/favorites/native/modal/openFavoritesGuildCategorySettingsModal.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/favorites/native/modal/openFa
 export default function openFavoritesGuildCategorySettingsModal(categoryId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { categoryId };
-  obj.pushLazy(asyncRequire(17164, dependencyMap.paths), obj2);
+  obj.pushLazy(asyncRequire(17178, dependencyMap.paths), obj2);
 };

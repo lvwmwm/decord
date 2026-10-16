@@ -1,9 +1,9 @@
-// Module ID: 6172
-// Function ID: 6173
+// Module ID: 6173
+// Function ID: 6174
 // Name: useGuildMemberDisplayRole
 // Dependencies: [2128, 2090, 4814, 558, 576, 504, 2]
 
-// Module 6172 (useGuildMemberDisplayRole)
+// Module 6173 (useGuildMemberDisplayRole)
 import PermissionUtilsAll from "PermissionUtils" /* 4814 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;

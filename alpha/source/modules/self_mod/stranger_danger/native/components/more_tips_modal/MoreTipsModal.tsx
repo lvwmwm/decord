@@ -1,23 +1,23 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10647
+// Function ID: 10648
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10533, 1087, 21, 5153, 587, 558, 576, 10651, 1128, 5149, 10656, 7312, 6152, 7948, 1202, 1633, 573, 10643, 5947, 5952, 6910, 2]
+// Dependencies: [19, 17, 10534, 1087, 21, 5154, 587, 558, 576, 10648, 1128, 5150, 10653, 7314, 6153, 7949, 1202, 1633, 573, 10640, 5948, 5953, 6912, 2]
 
-// Module 10650 (MoreTipsModal)
+// Module 10647 (MoreTipsModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5947 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10643 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10651 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10656 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5948 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10640 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10648 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10533 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10534 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const MetricEvents = tmp(5952);
+const MetricEvents = tmp(5953);
 function headerTitle() {
   return null;
 }

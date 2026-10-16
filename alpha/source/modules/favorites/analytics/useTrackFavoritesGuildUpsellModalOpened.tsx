@@ -1,65 +1,57 @@
 // Module ID: 10566
 // Function ID: 10567
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 1087, 558, 576, 7075, 7100, 1267, 2]
+// Dependencies: [19, 1087, 558, 576, 7077, 7102, 1267, 2]
 
 // Module 10566 (useTrackFavoritesGuildUpsellModalOpened)
+import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7077 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackFavoritesGuildUpsellModalOpened(source) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackFavoritesGuildUpsellModalOpened() {
   let tmp3;
   let tmp4;
   let tmp6;
-  _require = source;
-  let obj = require("react");
-  const cResult = obj.c(5);
+  let obj = react2;
+  const cResult = obj.c(4);
   const tmp2 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp2(AnalyticsLocationDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;
-  if (cResult[0] !== source) {
-    const fn = function n() {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
       const obj = AnalyticsUtilsDefault;
-      const obj2 = { source };
-      obj.track(AnalyticEvents.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj2);
+      obj.track(constants.FAVORITES_GUILD_UPSELL_MODAL_OPENED, { source: "limit_reached" });
     };
-    const items = [source];
-    cResult[0] = source;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp4 = items;
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
     tmp3 = fn;
+    tmp4 = items;
   } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
+    [tmp3, tmp4] = cResult;
   }
   const effect = react.useEffect(tmp3, tmp4);
-  if (cResult[3] !== analyticsLocations) {
-    let obj2 = { analyticsLocations };
-    cResult[3] = analyticsLocations;
-    cResult[4] = obj2;
+  if (cResult[2] !== analyticsLocations) {
+    const obj2 = { analyticsLocations };
+    cResult[2] = analyticsLocations;
+    cResult[3] = obj2;
     tmp6 = obj2;
   } else {
-    tmp6 = cResult[4];
+    tmp6 = cResult[3];
   }
   return tmp6;
-}) : (function useTrackFavoritesGuildUpsellModalOpened(source) {
-  const items = [source];
+}) : (function useTrackFavoritesGuildUpsellModalOpened() {
   const tmp = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp(AnalyticsLocationDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { source };
-    obj.track(AnalyticEvents.FAVORITES_GUILD_UPSELL_MODAL_OPENED, obj2);
-  }, items);
+    obj.track(constants.FAVORITES_GUILD_UPSELL_MODAL_OPENED, { source: "limit_reached" });
+  }, []);
   return { analyticsLocations };
 });
 const result = size.fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx");

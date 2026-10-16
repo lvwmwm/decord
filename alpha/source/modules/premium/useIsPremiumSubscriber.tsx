@@ -1,9 +1,9 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10781
+// Function ID: 10782
 // Name: useIsPremiumSubscriber
 // Dependencies: [1392, 1394, 558, 576, 1991, 504, 2]
 
-// Module 10784 (useIsPremiumSubscriber)
+// Module 10781 (useIsPremiumSubscriber)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
 import UserStore from "UserStore" /* 1392 */;

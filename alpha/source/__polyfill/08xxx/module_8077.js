@@ -1,15 +1,17 @@
 // Module ID: 8077
 // Function ID: 8078
-// Dependencies: []
+// Dependencies: [8074]
 
 // Module 8077
-const obj = { 4: null };
-const obj2 = {
-  name: "ShotInfo",
-  description(arg0) {
-    return arg0;
+import _mod8074 from "module_8074" /* 8074 */;
+
+let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    const obj = _mod8074;
+    return obj.getStringValue(value);
   }
 };
-obj[4] = obj2;
 
 export default obj;

@@ -1,10 +1,11 @@
 // Module ID: 5131
 // Function ID: 5132
 // Name: parseURL
-// Dependencies: [32, 1087, 1089, 5132, 5133, 1493, 1951, 1389, 5134, 5139, 13893, 5851, 14774, 1386, 5484, 9463, 7346, 1630, 1384, 9064, 1267, 1280, 14775, 2]
+// Dependencies: [32, 1087, 1089, 5132, 5133, 5134, 1493, 1951, 1389, 5135, 5140, 13904, 5852, 14784, 1386, 5485, 11, 9464, 7348, 1630, 1384, 9065, 1267, 1280, 14785, 2]
 // Exports: default
 
 // Module 5131 (parseURL)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
@@ -12,31 +13,32 @@ import urlParseDefault from "urlParse" /* 1389 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import _modDef1951 from "module_1951" /* 1951 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5132 */;
-import findCodedLinks from "findCodedLinks" /* 5134 */;
-import CodedLink from "CodedLink" /* 5139 */;
-import LinkUtils from "LinkUtils" /* 5484 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5851 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7346 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9064 */;
-import Authorize from "Authorize" /* 9463 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13893 */;
-import QRLoginUtils from "QRLoginUtils" /* 14774 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14775 */;
+import ConversationConstants from "ConversationConstants" /* 5132 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5133 */;
+import findCodedLinks from "findCodedLinks" /* 5135 */;
+import CodedLink from "CodedLink" /* 5140 */;
+import LinkUtils from "LinkUtils" /* 5485 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5852 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7348 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9065 */;
+import Authorize from "Authorize" /* 9464 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13904 */;
+import QRLoginUtils from "QRLoginUtils" /* 14784 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import PaymentConstants from "PaymentConstants" /* 5133 */;
+import PaymentConstants from "PaymentConstants" /* 5134 */;
 import size from "module_2" /* 2 */;
 
 let c9;
 let closure_12;
 let closure_4;
 let hasOwnProperty;
+let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let unpackModuleId;
 function parseQuery(arg0) {
   try {
     const tmp = arg0;
@@ -63,24 +65,25 @@ function parseQuery(arg0) {
 }
 ({ AnalyticEvents: closure_4, GuildSettingsSections: hasOwnProperty, GuildSettingsSubsections: metroRequire, LinkingTypes: metroImportDefault } = Constants);
 ({ CollectibleShopTab: metroImportAll, CollectiblesMobileShopScreen: c9 } = CollectiblesShopConstants);
+const CONVERSATION_QUERY_PARAM = ConversationConstants.CONVERSATION_QUERY_PARAM;
 const UPDATE_CONFIG = MobileNativeUpdateConstants.UPDATE_CONFIG;
-({ MobileWebRedirectCheckoutDeepLinkActions: unpackModuleId, MobileWebRedirectCheckoutDeepLinkQueryKeys: closure_12 } = PaymentConstants);
-const re13 = /feature\/([\w-]+)/;
-const re14 = /feature\/boost\/([0-9]+)/;
-const re15 = /users\/(\d+)/;
-const re16 = /(?:connect|oauth2)\/authorize/;
-const re17 = /login\/one-time/;
-const re18 = /mweb-handoff/;
-const re19 = /connections\/(xbox|playstation|playstation-stg|crunchyroll)\/link/;
-const re20 = /connections\/([a-z-]+)/;
-const re21 = /guilds\/(\d+)\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
-const re22 = /guilds\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
-const re23 = /activate/;
-const re24 = /^\/quests\/(\d+)/;
-const re25 = /^\/quest-preview\/(\d+)/;
-const re26 = /^\/quest-home/;
-const re27 = /^\/quest-bar-preview/;
-const re28 = /^\/subscriptions\/?$/;
+({ MobileWebRedirectCheckoutDeepLinkActions: closure_12, MobileWebRedirectCheckoutDeepLinkQueryKeys: map1 } = PaymentConstants);
+const re14 = /feature\/([\w-]+)/;
+const re15 = /feature\/boost\/([0-9]+)/;
+const re16 = /users\/(\d+)/;
+const re17 = /(?:connect|oauth2)\/authorize/;
+const re18 = /login\/one-time/;
+const re19 = /mweb-handoff/;
+const re20 = /connections\/(xbox|playstation|playstation-stg|crunchyroll)\/link/;
+const re21 = /connections\/([a-z-]+)/;
+const re22 = /guilds\/(\d+)\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
+const re23 = /guilds\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
+const re24 = /activate/;
+const re25 = /^\/quests\/(\d+)/;
+const re26 = /^\/quest-preview\/(\d+)/;
+const re27 = /^\/quest-home/;
+const re28 = /^\/quest-bar-preview/;
+const re29 = /^\/subscriptions\/?$/;
 let result = size.fileFinishedImporting("utils/native/parseURL.tsx");
 
 export default function parseURL(arg0) {
@@ -143,9 +146,9 @@ export default function parseURL(arg0) {
     if (query == null) {
       str = "";
     }
-    const tmp160Result = parseQuery(str);
-    ({ fingerprint, attemptId, installationId, referrer_id, sort, filter } = tmp160Result);
-    ({ username, didRegister, custom_id, link_id } = tmp160Result);
+    const tmp164Result = parseQuery(str);
+    ({ fingerprint, attemptId, installationId, referrer_id, sort, filter } = tmp164Result);
+    ({ username, didRegister, custom_id, link_id } = tmp164Result);
     const obj2 = findCodedLinks;
     const findCodedLinkResult = obj2.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
@@ -238,11 +241,11 @@ export default function parseURL(arg0) {
           return obj19;
         }
       }
-      const tmpResult6 = URLUtilsDefault;
-      if (!tmpResult6.isDiscordHostname(host)) {
+      const tmpResult8 = URLUtilsDefault;
+      if (!tmpResult8.isDiscordHostname(host)) {
         let obj27;
-        const tmpResult7 = URLUtilsDefault;
-        if (!tmpResult7.isDiscordProtocol(protocol)) {
+        const tmpResult9 = URLUtilsDefault;
+        if (!tmpResult9.isDiscordProtocol(protocol)) {
           URLUtilsDefault;
         }
         if ("promos.discord.gg" === hostname) {
@@ -271,7 +274,7 @@ export default function parseURL(arg0) {
         if (null != tryParseDiceRollLinkResult) {
           const obj29 = { fingerprint, attemptId, installationId, payload: obj30 };
           obj30 = { type: metroImportDefault.ROLL_DICE, guildId: null, channelId: null, diceCount: null, diceSides: null };
-          ({ guildId: obj94.guildId, channelId: obj94.channelId, diceCount: obj94.diceCount, diceSides: obj94.diceSides } = tryParseDiceRollLinkResult);
+          ({ guildId: obj96.guildId, channelId: obj96.channelId, diceCount: obj96.diceCount, diceSides: obj96.diceSides } = tryParseDiceRollLinkResult);
           return obj29;
         } else {
           const tmp5Result11 = LinkUtils;
@@ -281,32 +284,42 @@ export default function parseURL(arg0) {
             if (query == null) {
               query = "";
             }
+            const tmp164Result9 = parseQuery(query);
+            let castResult = null;
+            const summaryId = tmp164Result9.summaryId;
+            if (null != tmp164Result9[CONVERSATION_QUERY_PARAM]) {
+              castResult = null;
+              const tmpResult11 = SnowflakeUtilsDefault;
+              if (tmpResult11.isProbablyAValidSnowflake(tmp164Result9[CONVERSATION_QUERY_PARAM])) {
+                const tmpResult12 = SnowflakeUtilsDefault;
+                castResult = tmpResult12.cast(tmp152);
+              }
+            }
             const obj31 = { fingerprint, attemptId, installationId, payload: obj32 };
-            const summaryId = tmp160(query).summaryId;
             if (null != tryParseChannelPathResult.messageId) {
               CHANNEL = metroImportDefault.MESSAGE;
             } else {
               CHANNEL = metroImportDefault.CHANNEL;
             }
-            obj32 = { type: CHANNEL, guildId: null, channelId: null, messageId: null, summaryId };
-            ({ guildId: obj92.guildId, channelId: obj92.channelId, messageId: obj92.messageId } = tryParseChannelPathResult);
+            obj32 = { type: CHANNEL, guildId: null, channelId: null, messageId: null, summaryId, conversationId: castResult };
+            ({ guildId: obj94.guildId, channelId: obj94.channelId, messageId: obj94.messageId } = tryParseChannelPathResult);
             return obj31;
           } else {
-            const match = pathname.match(re24);
+            const match = pathname.match(re25);
             if (null != match) {
               if (match.length > 1) {
                 const obj33 = { fingerprint, attemptId, installationId, payload: obj34 };
                 return obj33;
               }
             }
-            const match1 = pathname.match(re25);
+            const match1 = pathname.match(re26);
             if (null != match1) {
               if (match1.length > 1) {
                 const obj36 = { fingerprint, attemptId, installationId, payload: obj37 };
                 return obj36;
               }
             }
-            if (null != pathname.match(re27)) {
+            if (null != pathname.match(re28)) {
               let str5 = query;
               const parse = _modDef1493.parse;
               _modDef1493;
@@ -324,7 +337,7 @@ export default function parseURL(arg0) {
                 return obj39;
               }
             }
-            if (null != pathname.match(re26)) {
+            if (null != pathname.match(re27)) {
               let obj43;
               let str27 = query;
               const parse2 = _modDef1493.parse;
@@ -347,18 +360,18 @@ export default function parseURL(arg0) {
                 obj44 = { type: metroImportDefault.QUESTS, referrerId: referrer_id, sort, filter };
               }
               return obj43;
-            } else if (null != pathname.match(re28)) {
+            } else if (null != pathname.match(re29)) {
               const obj46 = { fingerprint, attemptId, installationId, payload: obj47 };
               return obj46;
             } else {
-              const match2 = pathname.match(re15);
+              const match2 = pathname.match(re16);
               if (null != match2) {
                 if (match2.length > 1) {
                   const obj48 = { fingerprint, attemptId, installationId, payload: obj49 };
                   return obj48;
                 }
               }
-              if (null != pathname.match(re16)) {
+              if (null != pathname.match(re17)) {
                 let str6 = query;
                 const parseOAuth2AuthorizeProps = Authorize.parseOAuth2AuthorizeProps;
                 Authorize;
@@ -374,12 +387,12 @@ export default function parseURL(arg0) {
                   return obj50;
                 }
               }
-              if (null != pathname.match(re17)) {
+              if (null != pathname.match(re18)) {
                 let str26 = query;
                 if (query == null) {
                   str26 = "";
                 }
-                let token = tmp160(str26).token;
+                let token = tmp164(str26).token;
                 const obj52 = { fingerprint, attemptId, installationId, payload: obj53 };
                 obj53 = { type: metroImportDefault.ONE_TIME_LOGIN, token };
                 if (token == null) {
@@ -387,14 +400,14 @@ export default function parseURL(arg0) {
                 }
                 return obj52;
               } else {
-                const match3 = pathname.match(re14);
+                const match3 = pathname.match(re15);
                 if (null != match3) {
                   if (match3.length > 1) {
                     const obj54 = { fingerprint, attemptId, installationId, payload: obj55 };
                     return obj54;
                   }
                 }
-                const match4 = pathname.match(re13);
+                const match4 = pathname.match(re14);
                 if (null != match4) {
                   if (match4.length > 1) {
                     let tmp31 = null;
@@ -506,7 +519,7 @@ export default function parseURL(arg0) {
                         if (query == null) {
                           str14 = "";
                         }
-                        const promo_url = tmp160(str14).promo_url;
+                        const promo_url = tmp164(str14).promo_url;
                         tmp31 = null;
                         if (undefined !== promo_url) {
                           tmp31 = { type: metroImportDefault.FEATURE_PROMO_URL, promoUrl: promo_url };
@@ -532,13 +545,13 @@ export default function parseURL(arg0) {
                         if (query == null) {
                           str13 = "";
                         }
-                        let DEFAULT = parseQuery(str13)[constants5.DEEP_LINK_ACTION];
+                        let DEFAULT = parseQuery(str13)[map1.DEEP_LINK_ACTION];
                         tmp31 = null;
                         parseQuery(str13);
                         if (result2) {
                           const obj74 = { type: metroImportDefault.MOBILE_WEB_REDIRECT_CHECKOUT, deepLinkAction: DEFAULT, guildId: tmp67 };
                           if (DEFAULT == null) {
-                            DEFAULT = unpackModuleId.DEFAULT;
+                            DEFAULT = constants4.DEFAULT;
                           }
                           tmp31 = obj74;
                         }
@@ -574,10 +587,10 @@ export default function parseURL(arg0) {
                             const obj = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
                             return obj.test(shareId);
                           }
-                          const tmp160Result11 = parseQuery(str12);
-                          ({ shareId, attachmentManifest } = tmp160Result11);
+                          const tmp164Result13 = parseQuery(str12);
+                          ({ shareId, attachmentManifest } = tmp164Result13);
                           let tmp44;
-                          ({ text, channelId } = tmp160Result11);
+                          ({ text, channelId } = tmp164Result13);
                           if (typeof shareId === "string") {
                             if (isValidUUID(shareId)) {
                               tmp44 = shareId;
@@ -739,7 +752,7 @@ export default function parseURL(arg0) {
                   obj89 = { type: metroImportDefault.GUILD_EVENT_DETAILS, guildEventId: null, guildId: null, recurrenceId: null };
                   ({ guildEventId: obj68.guildEventId, guildId: obj68.guildId, recurrenceId: obj68.recurrenceId } = result3);
                   return obj88;
-                } else if (null != pathname.match(re18)) {
+                } else if (null != pathname.match(re19)) {
                   const _decodeURIComponent4 = decodeURIComponent;
                   ({ key, redirect, fingerprint: fingerprint3 } = parseQuery(decodeURIComponent(query)));
                   parseQuery(decodeURIComponent(query));
@@ -760,33 +773,33 @@ export default function parseURL(arg0) {
                       return obj90;
                     }
                   }
-                  const obj93 = { reason: "invalid_query_params", fingerprint: tmp86Result.maybeExtractId(fingerprint3) };
+                  const obj92 = { reason: "invalid_query_params", fingerprint: tmp86Result.maybeExtractId(fingerprint3) };
                   const track = AnalyticsUtilsDefault.track;
                   const MOBILE_WEB_HANDOFF_FAILURE = constants.MOBILE_WEB_HANDOFF_FAILURE;
                   AnalyticsUtilsDefault;
-                  const obj95 = { fingerprint: fingerprint3 };
+                  const obj93 = { fingerprint: fingerprint3 };
                   tmp86Result = tmp86(1280);
-                  track(MOBILE_WEB_HANDOFF_FAILURE, obj93, obj95);
+                  track(MOBILE_WEB_HANDOFF_FAILURE, obj92, obj93);
                   const _Error = Error;
                   const self = this;
                   const self2 = this;
                   const error = new Error("Missing nonce or redirect query params");
                   throw error;
                 } else {
-                  const match5 = pathname.match(re19);
+                  const match5 = pathname.match(re20);
                   if (null != match5) {
                     let str23 = query;
                     const _decodeURIComponent3 = decodeURIComponent;
                     if (query == null) {
                       str23 = "";
                     }
-                    const obj96 = { fingerprint, attemptId, installationId, payload: obj97 };
+                    const obj95 = { fingerprint, attemptId, installationId, payload: obj97 };
                     obj97 = { type: metroImportDefault.USER_CONNECTIONS_LINK_CALLBACK, provider: match5[1], callbackCode: null, callbackState: null };
                     ({ code: obj61.callbackCode, state: obj61.callbackState } = parseQuery(_decodeURIComponent3(str23)));
                     parseQuery(_decodeURIComponent3(str23));
-                    return obj96;
+                    return obj95;
                   } else {
-                    const match6 = pathname.match(re20);
+                    const match6 = pathname.match(re21);
                     if (null != match6) {
                       [first1, tmp115] = match6;
                       let str22 = query;
@@ -799,14 +812,14 @@ export default function parseURL(arg0) {
                       obj99 = { type: metroImportDefault.USER_CONNECTIONS_CALLBACK, provider: tmp115, searchParams: tmp116(_decodeURIComponent2(str22)) };
                       return obj98;
                     } else {
-                      const match7 = pathname.match(re21);
+                      const match7 = pathname.match(re22);
                       if (null != match7) {
                         const tmp106 = _slicedToArray(match7, 4);
                         const obj100 = { fingerprint, attemptId, installationId, payload: obj101 };
                         obj101 = { type: metroImportDefault.GUILD_SETTINGS, guildId: tmp106[1], settingsSection: urlPartToSettingsEnumDefault(hasOwnProperty, tmp106[2]), settingsSubsection: urlPartToSettingsEnumDefault(metroRequire, tmp107) };
                         return obj100;
                       } else {
-                        const match8 = pathname.match(re22);
+                        const match8 = pathname.match(re23);
                         if (null != match8) {
                           [, tmp98, tmp99] = match8;
                           let str21 = query;
@@ -818,7 +831,7 @@ export default function parseURL(arg0) {
                           obj103 = { type: metroImportDefault.GUILD_SETTINGS_PICKER, settingsSection: urlPartToSettingsEnumDefault(hasOwnProperty, tmp98), settingsSubsection: urlPartToSettingsEnumDefault(metroRequire, tmp99), feature };
                           feature = tmp100(str21).feature;
                           return obj102;
-                        } else if (null != pathname.match(re23)) {
+                        } else if (null != pathname.match(re24)) {
                           let str20 = query;
                           const _decodeURIComponent = decodeURIComponent;
                           const tmp93 = parseQuery;

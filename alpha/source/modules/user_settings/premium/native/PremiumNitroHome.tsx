@@ -1,9 +1,9 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 14399
+// Function ID: 14400
 // Name: PremiumNitroHome
-// Dependencies: [32, 19, 17, 5143, 4834, 14390, 1087, 2065, 1394, 21, 683, 587, 5153, 558, 576, 1505, 14391, 6427, 6407, 1128, 5149, 1267, 7315, 14392, 8308, 14393, 14414, 10334, 14415, 14416, 14417, 14422, 14426, 14449, 14450, 14452, 14453, 7320, 1633, 14454, 504, 7332, 8317, 14455, 8758, 4909, 5440, 5028, 14456, 4997, 2052, 8307, 2053, 5091, 14457, 14458, 10849, 9004, 5453, 1384, 5426, 2]
+// Dependencies: [32, 19, 17, 5144, 4834, 14400, 1087, 2065, 1394, 21, 683, 587, 5154, 558, 576, 1505, 14401, 6429, 6409, 1128, 5150, 1267, 7317, 14402, 8309, 14403, 14424, 10335, 14425, 14426, 14427, 14432, 14436, 14459, 14460, 14462, 14463, 7322, 1633, 14464, 504, 7334, 8318, 14465, 8759, 4909, 5441, 5028, 14466, 4997, 2052, 8308, 2053, 5091, 14467, 14468, 10846, 9005, 5454, 1384, 5427, 2]
 
-// Module 14389 (PremiumNitroHome)
+// Module 14399 (PremiumNitroHome)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -12,23 +12,23 @@ import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import spring from "spring" /* 5440 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8307 */;
-import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 14390 */;
-import PremiumPerkCardDefault from "PremiumPerkCard" /* 14393 */;
-import useScrollToSectionDefault from "useScrollToSection" /* 14415 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 14416 */;
-import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 14417 */;
-import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 14449 */;
+import spring from "spring" /* 5441 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8308 */;
+import PremiumNitroNavigationStore2 from "PremiumNitroNavigationStore" /* 14400 */;
+import PremiumPerkCardDefault from "PremiumPerkCard" /* 14403 */;
+import useScrollToSectionDefault from "useScrollToSection" /* 14425 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 14426 */;
+import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 14427 */;
+import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 14459 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import SubscriptionStore from "SubscriptionStore" /* 4834 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683 from "module_683" /* 683 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
   } else {
     first = cResult[0];
   }
-  const tmpResult = onClose(14391);
+  const tmpResult = onClose(14401);
   const mobileNitroManageSubscriptionsSettingsExperiment = tmpResult.useMobileNitroManageSubscriptionsSettingsExperiment(first);
   if (cResult[1] === navigation) {
     let tmp8;
@@ -111,7 +111,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
     const _Symbol = Symbol;
     ({ contentContainer, headerContainer } = tmp4);
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = closure_17(onClose(6427).ArrowLargeLeftIcon, { size: "md", color: "white" });
+      const tmp14 = closure_17(onClose(6429).ArrowLargeLeftIcon, { size: "md", color: "white" });
       cResult[4] = tmp14;
       tmp12 = tmp14;
     } else {
@@ -133,7 +133,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
       }
       if (cResult[9] !== tmp4.headerText) {
         const obj4 = { variant: "display-sm", color: "text-overlay-light", style: headerText, accessibilityRole: "header", children: tmp18 };
-        const tmp22 = closure_17(onClose(5149).Text, obj4);
+        const tmp22 = closure_17(onClose(5150).Text, obj4);
         cResult[9] = tmp4.headerText;
         cResult[10] = tmp22;
         tmp20 = tmp22;
@@ -178,7 +178,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
                 }
                 let tmp33 = tmp31;
                 if (tmp33) {
-                  const obj6 = { style: tmp4.pillParent, children: closure_17(onClose(14392).PremiumReferralTrialPill, { hasExtraMargin: true }) };
+                  const obj6 = { style: tmp4.pillParent, children: closure_17(onClose(14402).PremiumReferralTrialPill, { hasExtraMargin: true }) };
                   tmp33 = closure_17(closure_5, obj6);
                 }
                 cResult[20] = !(!hasActiveTrial);
@@ -211,9 +211,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
                   obj.track(unpackModuleId.NITRO_HOME_NAVIGATION, obj2);
                   navigation.push(constants.PREMIUM_MANAGE_PLAN);
                 },
-          children: closure_17(onClose(7315).SettingsIcon, { size: "md", color: "white" })
+          children: closure_17(onClose(7317).SettingsIcon, { size: "md", color: "white" })
         };
-        const PressableOpacity = tmp(6407).PressableOpacity;
+        const PressableOpacity = tmp(6409).PressableOpacity;
         tmp24Result = tmp24(PressableOpacity, obj9);
       }
       cResult[11] = navigation;
@@ -225,8 +225,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
     const obj10 = { style: tmp4.backButtonWrapper, onPress: tmp8, children: tmp12 };
     cResult[5] = tmp8;
     cResult[6] = tmp4.backButtonWrapper;
-    cResult[7] = closure_17(onClose(6407).PressableOpacity, obj10);
-    closure_17(onClose(6407).PressableOpacity, obj10);
+    cResult[7] = closure_17(onClose(6409).PressableOpacity, obj10);
+    closure_17(onClose(6409).PressableOpacity, obj10);
     class S {
       constructor() {
         if (undefined !== onClose) {
@@ -261,7 +261,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
   const tmp = closure_25();
   let obj = onClose(1505);
   navigation = obj.useNavigation();
-  let obj2 = onClose(14391);
+  let obj2 = onClose(14401);
   const items = [navigation, onClose];
   const mobileNitroManageSubscriptionsSettingsExperiment = obj2.useMobileNitroManageSubscriptionsSettingsExperiment({ location: "NitroHomeHeader" });
   let hasActiveTrial;
@@ -277,12 +277,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
   }
   const obj3 = { style: tmp.contentContainer, children: items2 };
   const obj4 = { style: tmp.headerContainer, children: items1 };
-  const obj5 = { style: tmp.backButtonWrapper, onPress: callback, children: closure_17(onClose(6427).ArrowLargeLeftIcon, { size: "md", color: "white" }) };
+  const obj5 = { style: tmp.backButtonWrapper, onPress: callback, children: closure_17(onClose(6429).ArrowLargeLeftIcon, { size: "md", color: "white" }) };
   const tmp8 = !hasActiveTrial;
-  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const PressableOpacity = tmp2(6409).PressableOpacity;
   items1 = [closure_17(PressableOpacity, obj5), , ];
   const obj6 = { variant: "display-sm", color: "text-overlay-light", style: tmp.headerText, accessibilityRole: "header", children: intl.string(onClose(1128).t["BnquQ/"]) };
-  const Text = tmp2(5149).Text;
+  const Text = tmp2(5150).Text;
   intl = tmp2(1128).intl;
   items1[1] = closure_17(Text, obj6);
   if (mobileNitroManageSubscriptionsSettingsExperiment) {
@@ -297,16 +297,16 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroH
           obj.track(unpackModuleId.NITRO_HOME_NAVIGATION, obj2);
           navigation.push(constants.PREMIUM_MANAGE_PLAN);
         },
-      children: closure_17(onClose(7315).SettingsIcon, { size: "md", color: "white" })
+      children: closure_17(onClose(7317).SettingsIcon, { size: "md", color: "white" })
     };
-    const PressableOpacity2 = tmp2(6407).PressableOpacity;
+    const PressableOpacity2 = tmp2(6409).PressableOpacity;
     tmp11Result = tmp11(PressableOpacity2, obj8);
   }
   let tmp11Result2 = !tmp8;
   items1[2] = tmp11Result;
   items2 = [closure_18(closure_5, obj4), ];
   if (tmp11Result2) {
-    const obj9 = { style: tmp.pillParent, children: closure_17(onClose(14392).PremiumReferralTrialPill, { hasExtraMargin: true }) };
+    const obj9 = { style: tmp.pillParent, children: closure_17(onClose(14402).PremiumReferralTrialPill, { hasExtraMargin: true }) };
     tmp11Result2 = tmp11(tmp10, obj9);
   }
   items2[1] = tmp11Result2;
@@ -563,7 +563,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerksT
   const cResult = obj.c(55);
   ({ extraBottomHeight, fractionalState, isInReverseTrial } = arg0);
   const tmp4 = closure_29();
-  let obj2 = first(14393);
+  let obj2 = first(14403);
   const premiumPerkCard = obj2.usePremiumPerkCard();
   const tmp = first;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -847,14 +847,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   const tmp2 = dependencyMap;
   let obj = bottom(576);
   const cResult = obj.c(95);
-  let obj2 = bottom(14452);
-  const commonTriggerPoint = obj2.useCommonTriggerPoint(bottom(14453).OpenNitroTriggerPoint);
-  let obj3 = bottom(7320);
+  let obj2 = bottom(14462);
+  const commonTriggerPoint = obj2.useCommonTriggerPoint(bottom(14463).OpenNitroTriggerPoint);
+  let obj3 = bottom(7322);
   const giftCardMobileConsumptionHalfsheet = obj3.useGiftCardMobileConsumptionHalfsheet();
   closure_24();
   let tmp7 = navigation;
   bottom = navigation(1633)().bottom;
-  let obj4 = bottom(14454);
+  let obj4 = bottom(14464);
   const youBarSettingsCustomHeaderPaddingTop = obj4.useYouBarSettingsCustomHeaderPaddingTop();
   const obj5 = bottom(1505);
   navigation = obj5.useNavigation();
@@ -982,10 +982,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
       }
     }
   }
-  const tmp28 = tmp7(7332)();
-  let tmpResult5 = tmp(8317);
+  const tmp28 = tmp7(7334)();
+  let tmpResult5 = tmp(8318);
   const isInReverseTrial = tmpResult5.useIsInReverseTrial();
-  let tmpResult6 = tmp(14455);
+  let tmpResult6 = tmp(14465);
   const maybeFetchTieredTenureBadgeData = tmpResult6.useMaybeFetchTieredTenureBadgeData();
   const field = PremiumNitroNavigationStore.useField("scrollToSectionId");
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1107,13 +1107,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   let tmp = bottom;
   const tmp2 = dependencyMap;
   onClose = onClose.onClose;
-  let obj = bottom(14452);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(14453).OpenNitroTriggerPoint);
-  let obj2 = bottom(7320);
+  let obj = bottom(14462);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(14463).OpenNitroTriggerPoint);
+  let obj2 = bottom(7322);
   const giftCardMobileConsumptionHalfsheet = obj2.useGiftCardMobileConsumptionHalfsheet();
   const tmp5 = closure_24();
   bottom = navigation(1633)().bottom;
-  let obj3 = bottom(14454);
+  let obj3 = bottom(14464);
   const youBarSettingsCustomHeaderPaddingTop = obj3.useYouBarSettingsCustomHeaderPaddingTop();
   let obj4 = bottom(1505);
   navigation = obj4.useNavigation();
@@ -1152,10 +1152,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
       _undefined3(false);
     }
   }, []);
-  const tmp21 = navigation(7332)();
-  const obj8 = bottom(8317);
+  const tmp21 = navigation(7334)();
+  const obj8 = bottom(8318);
   const isInReverseTrial = obj8.useIsInReverseTrial();
-  const obj9 = bottom(14455);
+  const obj9 = bottom(14465);
   const maybeFetchTieredTenureBadgeData = obj9.useMaybeFetchTieredTenureBadgeData();
   const field = PremiumNitroNavigationStore.useField("scrollToSectionId");
   const effect = stateFromStores.useEffect(() => () => {
@@ -1163,8 +1163,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   }, []);
   const obj10 = { items: items3, pageWidth: tmp11, onPageChange: callback2 };
   const obj11 = { label: intl.string(bottom(1128).t.tahjbP), id: intl2.string(bottom(1128).t.tahjbP), page: closure_17(closure_28, obj12) };
-  const useSegmentedControlState = bottom(8758).useSegmentedControlState;
-  bottom(8758);
+  const useSegmentedControlState = bottom(8759).useSegmentedControlState;
+  bottom(8759);
   intl = bottom(1128).intl;
   intl2 = bottom(1128).intl;
   items3 = [obj11, ];
@@ -1207,9 +1207,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   const tmpResult7 = tmp(5028);
   const isThemeDarkResult = tmpResult7.isThemeDark(theme);
   const ONYX = constants2.ONYX;
-  const tmp6Result = navigation(14456);
-  const tmp6ResultResult = tmp6Result(tmp21.endsAt, tmp(14456).CountDownMessageTypes.ENDS_IN);
-  const tmpResult8 = tmp(8308);
+  const tmp6Result = navigation(14466);
+  const tmp6ResultResult = tmp6Result(tmp21.endsAt, tmp(14466).CountDownMessageTypes.ENDS_IN);
+  const tmpResult8 = tmp(8309);
   isEligibleSenderForReferralProgram = tmpResult8.useIsEligibleSenderForReferralProgram();
   const items5 = [isEligibleSenderForReferralProgram];
   const effect2 = obj5.useEffect(() => {
@@ -1238,8 +1238,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
       const result = tmpResult.UNSAFE_markDismissibleContentAsDismissed(tmp(tmp2[50]).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD);
     }
   }, []);
-  const tmpResult9 = tmp(14414);
-  promotionMarketingComponent = tmpResult9.usePromotionMarketingComponent(tmp(10334).MarketingComponentType.PREMIUM_TAB);
+  const tmpResult9 = tmp(14424);
+  promotionMarketingComponent = tmpResult9.usePromotionMarketingComponent(tmp(10335).MarketingComponentType.PREMIUM_TAB);
   const items6 = [promotionMarketingComponent];
   const effect4 = obj5.useEffect(() => {
     let isDismissed = null == promotionMarketingComponent || "premiumTab" !== tmp.properties.properties.oneofKind;
@@ -1255,17 +1255,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   }, items6);
   const obj15 = { style: items7, children: items8 };
   items7 = [tmp5.container, { paddingTop: youBarSettingsCustomHeaderPaddingTop }];
-  const obj16 = { style: tmp5.background, source: navigation(14457) };
+  const obj16 = { style: tmp5.background, source: navigation(14467) };
   const tmp6Result3 = navigation(5091);
   items8 = [closure_17(tmp6Result3, obj16), closure_17(closure_26, { onClose, subscription: stateFromStores1 }), , , ];
   let tmp27Result = tmp21.fractionalState !== FractionalPremiumStates.NONE && !isInReverseTrial;
   if (tmp27Result) {
     const obj17 = { countdownText: tmp6ResultResult };
-    tmp27Result = tmp27(tmp6(14458), obj17);
+    tmp27Result = tmp27(tmp6(14468), obj17);
   }
   items8[2] = tmp27Result;
   const obj18 = { style: tmp5.tabContent, children: items9 };
-  items9 = [closure_17(tmp(10849).SegmentedControlPages, { state: segmentedControlState }), ];
+  items9 = [closure_17(tmp(10846).SegmentedControlPages, { state: segmentedControlState }), ];
   if (tmp27Result4) {
     const obj19 = { style: tmp5.backSwipeSensor };
     tmp27Result4 = closure_17(c5, obj19);
@@ -1273,7 +1273,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
   items9[1] = tmp27Result4;
   items8[3] = closure_18(c5, obj18);
   const obj20 = { style: animatedStyle, onLayout: callback1, children: items10 };
-  const obj21 = { style: tmp5.segmentedControlActual, onLayout: callback, children: closure_17(tmp(9004).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
+  const obj21 = { style: tmp5.segmentedControlActual, onLayout: callback, children: closure_17(tmp(9005).SegmentedControl, { state: segmentedControlState, variant: "experimental_Small" }) };
   const View = tmp6(4909).View;
   items10 = [closure_17(c5, obj21), , ];
   let tmp27Result5 = !isThemeDarkResult;
@@ -1283,7 +1283,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
     items11 = [tmp5.segmentedControlVirtual, ];
     const obj23 = { height: tmp14, zIndex: 2 };
     items11[1] = obj23;
-    tmp27Result5 = tmp27(tmp6(5453), obj22);
+    tmp27Result5 = tmp27(tmp6(5454), obj22);
   }
   items10[1] = tmp27Result5;
   const tmpResult10 = tmp(1384);
@@ -1296,7 +1296,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumNitro
     tmp27Result6 = tmp27(tmp42, obj24);
   } else {
     let num3 = 0.5;
-    const tmp6Result4 = navigation(5426);
+    const tmp6Result4 = navigation(5427);
     if (isThemeDarkResult) {
       num3 = 0.2;
     }

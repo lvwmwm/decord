@@ -1,10 +1,10 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7270
+// Function ID: 7271
 // Name: useGuildOnboardingAvailable
 // Dependencies: [2121, 1087, 558, 576, 504, 2]
 // Exports: isGuildOnboardingAvailable
 
-// Module 7268 (useGuildOnboardingAvailable)
+// Module 7270 (useGuildOnboardingAvailable)
 import Constants from "Constants" /* 1087 */;
 import ImpersonateStore from "ImpersonateStore" /* 2121 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

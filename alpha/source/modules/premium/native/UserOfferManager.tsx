@@ -1,16 +1,16 @@
-// Module ID: 18587
-// Function ID: 18588
+// Module ID: 18597
+// Function ID: 18598
 // Name: UserOfferManager
-// Dependencies: [1392, 7391, 1098, 7030, 9634, 1991, 8314, 2]
+// Dependencies: [1392, 7393, 1098, 7032, 9633, 1991, 8315, 2]
 
-// Module 18587 (UserOfferManager)
+// Module 18597 (UserOfferManager)
 import Constants from "Constants" /* 1098 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8314 */;
-import ACOMExperiments from "ACOMExperiments" /* 9634 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8315 */;
+import ACOMExperiments from "ACOMExperiments" /* 9633 */;
 import UserStore from "UserStore" /* 1392 */;
-import UserOfferStore from "UserOfferStore" /* 7391 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
+import UserOfferStore from "UserOfferStore" /* 7393 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

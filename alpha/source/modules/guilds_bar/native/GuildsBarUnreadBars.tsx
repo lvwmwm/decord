@@ -1,9 +1,9 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17434
+// Function ID: 17435
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6302, 4998, 6181, 17354, 16056, 21, 5153, 6983, 558, 576, 1633, 16049, 16058, 551, 568, 504, 4909, 17425, 2]
+// Dependencies: [32, 19, 17, 6304, 4998, 6182, 17366, 16070, 21, 5154, 6985, 558, 576, 1633, 16063, 16072, 551, 568, 504, 4909, 17435, 2]
 
-// Module 17424 (GuildsBarUnreadBars)
+// Module 17434 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,17 +11,17 @@ import debounceDefault from "debounce" /* 551 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6181 */;
-import FastList from "FastList" /* 6983 */;
-import QuestHooks from "QuestHooks" /* 16049 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16058 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6182 */;
+import FastList from "FastList" /* 6985 */;
+import QuestHooks from "QuestHooks" /* 16063 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16072 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17354 */;
-import YouBarConstants from "YouBarConstants" /* 16056 */;
-import createStyles from "createStyles" /* 5153 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17366 */;
+import YouBarConstants from "YouBarConstants" /* 16070 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(6983).FastListItemTypes.SECTION === type) {
+            if (tmp41(6985).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -173,7 +173,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(6983).FastListItemTypes.ITEM === type) {
+              if (tmp41(6985).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -252,7 +252,7 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "Array", afterItem: "test" };
+let closure_17 = { beforeItem: "Symbol", afterItem: "current" };
 let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {

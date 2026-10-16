@@ -1,9 +1,9 @@
-// Module ID: 5475
-// Function ID: 5476
+// Module ID: 5476
+// Function ID: 5477
 // Name: useChannelRoleSubscriptionStatus
 // Dependencies: [2120, 2068, 4809, 1087, 558, 576, 504, 2]
 
-// Module 5475 (useChannelRoleSubscriptionStatus)
+// Module 5476 (useChannelRoleSubscriptionStatus)
 import Constants from "Constants" /* 1087 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

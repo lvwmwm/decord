@@ -1,14 +1,14 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12288
+// Function ID: 12289
 // Name: ListNumberedIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12283, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12289, 4876, 2]
 
-// Module 12282 (ListNumberedIcon)
+// Module 12288 (ListNumberedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 12283 */;
+import AssetRegistry from "AssetRegistry" /* 12289 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

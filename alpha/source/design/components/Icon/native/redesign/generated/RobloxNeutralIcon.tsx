@@ -1,14 +1,14 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9127
+// Function ID: 9128
 // Name: RobloxNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9127, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9128, 4876, 2]
 
-// Module 9126 (RobloxNeutralIcon)
+// Module 9127 (RobloxNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 9127 */;
+import AssetRegistry from "AssetRegistry" /* 9128 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

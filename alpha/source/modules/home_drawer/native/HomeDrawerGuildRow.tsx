@@ -1,32 +1,32 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17399
+// Function ID: 17400
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4811, 2072, 2068, 4807, 6302, 2090, 6253, 4819, 6184, 1392, 1087, 6185, 21, 5153, 558, 576, 504, 5041, 5038, 13530, 10594, 5149, 17390, 17391, 5483, 11, 17392, 17393, 12743, 17394, 17395, 17396, 17398, 17399, 17378, 2]
+// Dependencies: [19, 17, 4811, 2072, 2068, 4807, 6304, 2090, 6254, 4819, 6185, 1392, 1087, 6186, 21, 5154, 558, 576, 504, 5041, 5038, 13538, 10591, 5150, 17400, 17401, 5484, 11, 17402, 17403, 12750, 17404, 17405, 17406, 17408, 17409, 17390, 2]
 
-// Module 17389 (HomeDrawerGuildRow)
+// Module 17399 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import useChannelName from "useChannelName" /* 5483 */;
-import ReadStateConstants from "ReadStateConstants" /* 6185 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 17394 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 17395 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 17396 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 17398 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 17399 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import useChannelName from "useChannelName" /* 5484 */;
+import ReadStateConstants from "ReadStateConstants" /* 6186 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17404 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17405 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17406 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17408 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17409 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildChannelStore from "GuildChannelStore" /* 4807 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6304 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import ReadStateStore from "ReadStateStore" /* 6253 */;
+import ReadStateStore from "ReadStateStore" /* 6254 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,8 +280,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
   cResult[12] = guild.name;
   cResult[13] = tmp4.guildNameText;
   cResult[14] = "text-default";
-  cResult[15] = closure_18(tmp(5149).Text, obj3);
-  closure_18(tmp(5149).Text, obj3);
+  cResult[15] = closure_18(tmp(5150).Text, obj3);
+  closure_18(tmp(5150).Text, obj3);
 }) : (function GuildRowWrapper(guild) {
   let closure_3;
   let tmp23Result;
@@ -338,9 +338,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(13530).BellZIcon;
+        BellSlashIcon = tmp3(13538).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10594).BellSlashIcon;
+        BellSlashIcon = tmp3(10591).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {
@@ -418,7 +418,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "duration", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
+      return { mentionChannel: "done", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
     } else {
       let tmp8 = disableSubtitle;
       const obj3 = disableSubtitle(onActiveHookChange[27]);

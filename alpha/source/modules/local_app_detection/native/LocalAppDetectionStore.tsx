@@ -1,16 +1,16 @@
-// Module ID: 14709
-// Function ID: 14710
+// Module ID: 14719
+// Function ID: 14720
 // Name: LocalAppDetectionStore
-// Dependencies: [32, 6150, 1087, 504, 584, 14710, 14711, 2]
+// Dependencies: [32, 6151, 1087, 504, 584, 14720, 14721, 2]
 
-// Module 14709 (LocalAppDetectionStore)
+// Module 14719 (LocalAppDetectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14710 */;
-import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 14711 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14720 */;
+import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 14721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ConsentStore from "ConsentStore" /* 6150 */;
+import ConsentStore from "ConsentStore" /* 6151 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

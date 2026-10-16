@@ -1,15 +1,15 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17193
+// Function ID: 17194
 // Name: VoiceUserSummary
-// Dependencies: [19, 17, 21, 1202, 5153, 558, 576, 9544, 9543, 8450, 8454, 2]
+// Dependencies: [19, 17, 21, 1202, 5154, 558, 576, 9545, 9544, 8451, 8455, 2]
 
-// Module 17179 (VoiceUserSummary)
+// Module 17193 (VoiceUserSummary)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1202 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9544 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9545 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp4.transparentBorder;
   }
-  const tmpResult = tmp(9543);
+  const tmpResult = tmp(9544);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   const tmp7 = noPadding ? tmp4.containerNoPadding : tmp4.container;
   if (cResult[0] === tmp7) {
@@ -128,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (renderIcon) {
       let VoiceNormalIcon;
       if (stageIcon) {
-        VoiceNormalIcon = tmp(8450).StageIcon;
+        VoiceNormalIcon = tmp(8451).StageIcon;
       }
       const obj4 = { size: "sm", color: "channel-icon", style: tmp4.redesignChannelIcon };
       const tmp10Result = tmp10(VoiceNormalIcon, obj4);
@@ -138,7 +138,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       cResult[6] = tmp10Result;
       tmp9 = tmp10Result;
     }
-    VoiceNormalIcon = tmp(8454).VoiceNormalIcon;
+    VoiceNormalIcon = tmp(8455).VoiceNormalIcon;
   }
   const items2 = [tmp7, clientThemesOverride];
   cResult[0] = tmp7;
@@ -161,13 +161,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(9543);
+  let obj = guildId(9544);
   const obj2 = { style: items, children: null };
   items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   if (renderIcon) {
     let VoiceNormalIcon;
     if (stageIcon) {
-      VoiceNormalIcon = tmp4(8450).StageIcon;
+      VoiceNormalIcon = tmp4(8451).StageIcon;
     }
     const obj3 = { size: "sm", color: "channel-icon", style: tmp.redesignChannelIcon };
     const items1 = [closure_4(VoiceNormalIcon, obj3), ];
@@ -196,7 +196,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj2.children = items1;
     return tmp5(tmp6, obj2);
   }
-  VoiceNormalIcon = tmp4(8454).VoiceNormalIcon;
+  VoiceNormalIcon = tmp4(8455).VoiceNormalIcon;
 }));
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
 

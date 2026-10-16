@@ -1,32 +1,32 @@
-// Module ID: 15527
-// Function ID: 15528
+// Module ID: 15537
+// Function ID: 15538
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10826, 8511, 1097, 1087, 21, 5153, 1128, 15528, 15631, 558, 576, 15641, 4877, 587, 1505, 6905, 8758, 9868, 6893, 5044, 15548, 15632, 573, 5168, 10891, 6423, 9534, 1506, 11600, 10849, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10823, 8512, 1097, 1087, 21, 5154, 1128, 15538, 15641, 558, 576, 15651, 4877, 587, 1505, 6907, 8759, 9867, 6895, 5044, 15558, 15642, 573, 5169, 10888, 6425, 9535, 1506, 11597, 10846, 2]
 
-// Module 15527 (ProfileCustomizationSettingScreen)
+// Module 15537 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
 import ChatInputUtils from "ChatInputUtils" /* 5044 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6893 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9868 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10891 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15528 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15548 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15631 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15632 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15641 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5169 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6895 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9867 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10888 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15538 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15558 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15641 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15642 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15651 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10826 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8511 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10823 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8512 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return trackedExposureExperiments(UserSettingsEditUserProfileDefault, { autoFocusElement: autoFocusElement.autoFocusElement });
+    return closure_17(UserSettingsEditUserProfileDefault, { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };
@@ -68,7 +68,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return trackedExposureExperiments(UserSettingsEditGuildProfileDefault, {});
+      return closure_17(UserSettingsEditGuildProfileDefault, {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   [dependencyMap, closure_3] = stateFromStores.useState(false);
   let obj3 = token(1505);
   const nativeStackNavigation = obj3.useNativeStackNavigation();
-  let obj4 = token(6905);
+  let obj4 = token(6907);
   const params = obj4.useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {
@@ -149,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  const useSegmentedControlState = tmp(8758).useSegmentedControlState;
+  const useSegmentedControlState = tmp(8759).useSegmentedControlState;
   const obj6 = {
     items: tmp14,
     pageWidth: first,
@@ -161,7 +161,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return tmp(obj);
     }
   };
-  const tmpResult = tmp(8758);
+  const tmpResult = tmp(8759);
   if (field === ProfileCustomizationSubsection.GUILD) {
     class D {
       constructor(arg0) {

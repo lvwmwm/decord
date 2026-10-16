@@ -1,18 +1,18 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14179
+// Function ID: 14180
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 5153, 587, 5446, 558, 576, 4909, 5154, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 5447, 558, 576, 4909, 5155, 2]
 
-// Module 14169 (ProductDetailsActionSheetSkeleton)
+// Module 14179 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
-import ButtonConstants from "ButtonConstants" /* 5446 */;
+import timing from "timing" /* 5155 */;
+import ButtonConstants from "ButtonConstants" /* 5447 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

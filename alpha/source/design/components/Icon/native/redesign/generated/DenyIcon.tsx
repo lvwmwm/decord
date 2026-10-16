@@ -1,14 +1,14 @@
-// Module ID: 9608
-// Function ID: 9609
+// Module ID: 9607
+// Function ID: 9608
 // Name: DenyIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8551, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8552, 4876, 2]
 
-// Module 9608 (DenyIcon)
+// Module 9607 (DenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8551 */;
+import AssetRegistry from "AssetRegistry" /* 8552 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,21 +1,21 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 16992
+// Function ID: 16993
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5143, 1207, 1098, 21, 558, 576, 504, 5031, 6886, 16979, 4886, 5158, 11503, 2]
+// Dependencies: [19, 5144, 1207, 1098, 21, 558, 576, 504, 5031, 6888, 16993, 4886, 5159, 11500, 2]
 
-// Module 16978 (RootThemeContextProvider)
+// Module 16992 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 4886 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5031 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5158 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6886 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11503 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 16979 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5159 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6888 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11500 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 16993 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -172,10 +172,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeC
   ({ saturation, contrast } = stateFromStoresObject);
   const theme = stateFromStoresObject.theme;
   const tmp4 = useColorThemeBackgroundDefault();
-  const obj2 = manaTypeConsolidationExperiment(6886);
+  const obj2 = manaTypeConsolidationExperiment(6888);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(16979);
+  const obj3 = manaTypeConsolidationExperiment(16993);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {
@@ -214,7 +214,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeC
     }
     setThemeFlagResult2 = setThemeFlag(setThemeFlagResult1, REDUCED_CONTRAST_ENABLED);
   }
-  const RootThemeContextProvider = tmp(11503).RootThemeContextProvider;
+  const RootThemeContextProvider = tmp(11500).RootThemeContextProvider;
   return <RootThemeContextProvider theme={theme} flags={setThemeFlagResult2} saturation={saturation} contrast={contrast} enabledExperiments={memo}>{null}</RootThemeContextProvider>;
 });
 const result = size.fileFinishedImporting("modules/themes/RootThemeContextProvider.native.tsx");

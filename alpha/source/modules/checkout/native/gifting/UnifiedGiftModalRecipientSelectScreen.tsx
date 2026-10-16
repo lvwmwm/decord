@@ -1,16 +1,16 @@
-// Module ID: 10455
-// Function ID: 10456
+// Module ID: 10456
+// Function ID: 10457
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10456, 21, 5153, 587, 558, 576, 1505, 10457, 10423, 2]
+// Dependencies: [19, 17, 10457, 21, 5154, 587, 558, 576, 1505, 10458, 10424, 2]
 
-// Module 10455 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10456 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10423 */;
-import UserRowConstants from "UserRowConstants" /* 10456 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10424 */;
+import UserRowConstants from "UserRowConstants" /* 10457 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGif
     cResult[5] = tmp10;
     tmp7 = tmp10;
   }
-  const tmp6 = jsx(navigation(10457), {
+  const tmp6 = jsx(navigation(10458), {
     onSelectUser(arg0) {
       setRecipientUser(arg0);
       navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });

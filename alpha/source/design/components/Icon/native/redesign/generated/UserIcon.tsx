@@ -1,14 +1,14 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11593
+// Function ID: 11594
 // Name: UserIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11597, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11594, 4876, 2]
 
-// Module 11596 (UserIcon)
+// Module 11593 (UserIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 11597 */;
+import AssetRegistry from "AssetRegistry" /* 11594 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

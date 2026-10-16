@@ -1,13 +1,13 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 8613
+// Function ID: 8614
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [5143, 1087, 8613, 2]
+// Dependencies: [5144, 1087, 8614, 2]
 // Exports: default
 
-// Module 8612 (openUserProfileAvatarMediaViewer)
+// Module 8613 (openUserProfileAvatarMediaViewer)
 import Constants from "Constants" /* 1087 */;
-import openMediaModal from "openMediaModal" /* 8613 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import openMediaModal from "openMediaModal" /* 8614 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import size_mod from "module_2" /* 2 */;
 
 const AVATAR_MAX_SIZE = Constants.AVATAR_MAX_SIZE;

@@ -1,18 +1,20 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9574
+// Function ID: 9575
 // Name: SelectedConversationStore
-// Dependencies: [7532, 7537, 504, 584, 2]
+// Dependencies: [7534, 7538, 504, 584, 2]
 
-// Module 9575 (SelectedConversationStore)
+// Module 9574 (SelectedConversationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7532 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7537 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7534 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7538 */;
 import size from "module_2" /* 2 */;
 
 let _null;
 
 const React2 = null;
+let closure_3 = 0;
+let closure_4 = 0;
 const Store = get_initializedDefault.Store;
 class SelectedConversationStore extends Store {
   initialize() {
@@ -30,28 +32,108 @@ class SelectedConversationStore extends Store {
     }
     return conversationId;
   }
-  getSelectedConversation(channelId) {
-    const selectedConversationId = this.getSelectedConversationId(channelId);
-    let tmp2 = null;
-    if (null != selectedConversationId) {
-      const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, selectedConversationId);
-      let conversation;
-      if (conversationMetadata != null) {
-        conversation = conversationMetadata.conversation;
-      }
-      if (conversation == null) {
-        conversation = ConversationPreviewStore.getConversation(selectedConversationId);
-      }
-      tmp2 = conversation;
+  getConversation(channelId) {
+    let cacheType;
+    let conversationId;
+    channelId = undefined;
+    if (_null != null) {
+      channelId = _null.channelId;
     }
-    return tmp2;
+    if (channelId !== channelId) {
+      return null;
+    } else {
+      ({ cacheType, conversationId } = _null);
+      if ("channel" === cacheType) {
+        const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
+        let conversation;
+        if (conversationMetadata != null) {
+          conversation = conversationMetadata.conversation;
+        }
+        if (conversation == null) {
+          conversation = null;
+        }
+        return conversation;
+      } else if ("preview" === cacheType) {
+        return ConversationPreviewStore.getConversation(conversationId);
+      } else {
+        return null;
+      }
+    }
+  }
+  getHydratedMessages(arg0) {
+    let cacheType;
+    let conversationId;
+    let channelId;
+    if (_null != null) {
+      channelId = _null.channelId;
+    }
+    if (channelId !== arg0) {
+      return null;
+    } else {
+      ({ cacheType, conversationId } = _null);
+      if ("channel" === cacheType) {
+        return ChannelConversationsStore.getHydratedMessages(arg0, conversationId);
+      } else if ("preview" === cacheType) {
+        return ConversationPreviewStore.getHydratedMessages(conversationId);
+      } else {
+        return null;
+      }
+    }
+  }
+  isFullyHydrated(arg0) {
+    let cacheType;
+    let conversationId;
+    let channelId;
+    if (_null != null) {
+      channelId = _null.channelId;
+    }
+    if (channelId !== arg0) {
+      return false;
+    } else {
+      ({ cacheType, conversationId } = _null);
+      if ("channel" === cacheType) {
+        return ChannelConversationsStore.isFullyHydrated(arg0, conversationId);
+      } else if ("preview" === cacheType) {
+        return ConversationPreviewStore.isFullyHydrated(conversationId);
+      } else {
+        return false;
+      }
+    }
+  }
+  isConversationFetchPending(arg0, arg1) {
+    let cacheType;
+    let conversationId;
+    let channelId;
+    if (_null != null) {
+      channelId = _null.channelId;
+    }
+    if (channelId !== arg0) {
+      return false;
+    } else {
+      ({ cacheType, conversationId } = _null);
+      if ("channel" === cacheType) {
+        return ChannelConversationsStore.isConversationFetchPending(conversationId, arg1);
+      } else if ("preview" === cacheType) {
+        return ConversationPreviewStore.isConversationFetchPending(conversationId, arg1);
+      } else {
+        return false;
+      }
+    }
+  }
+  consumeFocusRequest() {
+    let flag = closure_3 !== closure_4;
+    if (flag) {
+      closure_4 = closure_3;
+      flag = true;
+    }
+    return flag;
   }
 }
 const prototype = SelectedConversationStore.prototype;
 SelectedConversationStore.displayName = "SelectedConversationStore";
 const obj = {
   SET_SELECTED_CONVERSATION: function handleSetSelectedConversation(channelId) {
-    let c2 = { channelId: channelId.channelId, conversationId: channelId.conversationId };
+    let c2 = { channelId: channelId.channelId, conversationId: channelId.conversationId, cacheType: channelId.cacheType };
   },
   CLEAR_CONVERSATION_SELECTION: function handleClearConversationSelection(conversationId) {
     conversationId = conversationId.conversationId;
@@ -88,6 +170,9 @@ const obj = {
     } else {
       _null = null;
     }
+  },
+  CONVERSATION_FOCUS_REQUEST: function handleConversationFocusRequest() {
+    closure_3 = closure_3 + 1;
   },
   LOGOUT: function handleLogout() {
     let c2 = null;

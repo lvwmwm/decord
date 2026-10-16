@@ -1,325 +1,158 @@
 // Module ID: 12347
 // Function ID: 12348
-// Dependencies: [12309, 12312, 12325, 12348, 12349, 12335, 12307, 12350, 12343, 12319]
-// Exports: parseEventHintOrCaptureContext, prepareEvent
+// Dependencies: [12303, 12304, 12348, 12351, 12340, 12309]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12347
-import _mod12307 from "module_12307" /* 12307 */;
-import _mod12319 from "module_12319" /* 12319 */;
-import _mod12335 from "module_12335" /* 12335 */;
-import _mod12343 from "module_12343" /* 12343 */;
-import _mod12350 from "module_12350" /* 12350 */;
+import _mod12309 from "module_12309" /* 12309 */;
+import _mod12348 from "module_12348" /* 12348 */;
+import _mod12351 from "module_12351" /* 12351 */;
+import DEBUG_BUILD from "module_12303" /* 12303 */;
+import CONSOLE_LEVELS from "module_12304" /* 12304 */;
 
-let breadcrumbs, data, filename, integrations;
+const require = globalThis.__r;
+let _require, integrations;
 
-function applyClientOptions(environment, environment2) {
-  let dist;
-  let maxValueLength;
-  let release;
-  ({ release, dist, maxValueLength } = environment2);
-  let num = 250;
-  environment = environment2.environment;
-  if (undefined !== maxValueLength) {
-    num = maxValueLength;
-  }
-  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod12335.DEFAULT_ENVIRONMENT;
-  environment.environment = DEFAULT_ENVIRONMENT;
-  const tmp3 = !environment.release && release;
-  if (tmp3) {
-    environment.release = release;
-  }
-  const tmp4 = !environment.dist && dist;
-  if (tmp4) {
-    environment.dist = dist;
-  }
-  if (environment.message) {
-    const obj = _mod12307;
-    environment.message = obj.truncate(environment.message, num);
-  }
-  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
-  if (tmp7) {
-    const obj2 = _mod12307;
-    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
-  }
-  const request = environment.request;
-  const tmp10 = request && request.url;
-  if (tmp10) {
-    const obj3 = _mod12307;
-    request.url = obj3.truncate(request.url, num);
-  }
-}
-function applyDebugIds(exception, arg1) {
-  const obj = _mod12350;
-  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
-  try {
-    const values = exception.exception.values;
-    let item = values.forEach((stacktrace) => {
-      const frames = stacktrace.stacktrace.frames;
-      const item = frames.forEach((filename) => {
-        filename = closure_1_0 && filename.filename;
-        if (filename) {
-          filename.debug_id = closure_1_0[filename.filename];
-        }
-      });
-    });
-  } catch (err) {
-  }
-}
-function applyDebugMeta(exception) {
-  const obj = {};
-  try {
-    const values = exception.exception.values;
-    let item = values.forEach((stacktrace) => {
-      const frames = stacktrace.stacktrace.frames;
-      const item = frames.forEach((debug_id) => {
-        if (debug_id.debug_id) {
-          if (debug_id.abs_path) {
-            obj[debug_id.abs_path] = debug_id.debug_id;
-          } else if (debug_id.filename) {
-            obj[debug_id.filename] = debug_id.debug_id;
-          }
-          delete tmp["debug_id"];
-        }
-      });
-    });
-  } catch (err) {
-  }
-  if (0 !== Object.keys(obj).length) {
-    exception.debug_meta = exception.debug_meta || {};
-    let images = exception.debug_meta.images;
-    const debug_meta = exception.debug_meta;
-    if (!images) {
-      images = [];
+
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12348;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
-    debug_meta.images = images;
-    images = exception.debug_meta.images;
-    const _Object = Object;
-    const entries = Object.entries(obj);
-    const item1 = entries.forEach((item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
-    });
   }
-}
-let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
-
-export { applyClientOptions };
-export { applyDebugIds };
-export { applyDebugMeta };
-export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
-  if (captureContext) {
-    let tmp5;
-    const tmp3 = captureContext instanceof _mod12319.Scope || typeof captureContext === "function";
-    if (tmp3) {
-      tmp5 = { captureContext };
-      const obj = { captureContext };
-    } else {
-      const _Object = Object;
-      const keys = Object.keys(captureContext);
-      tmp5 = captureContext;
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
     }
-    return tmp5;
-  }
-};
-export const prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
-  let timestamp;
-  let uuid4Result;
-  normalizeDepth = normalizeDepth.normalizeDepth;
-  let num = 3;
-  if (undefined !== normalizeDepth) {
-    num = normalizeDepth;
-  }
-  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
-  let num2 = 1000;
-  if (undefined !== normalizeMaxBreadth) {
-    num2 = normalizeMaxBreadth;
-  }
-  let obj = { event_id: uuid4Result, timestamp };
-  let merged = Object.assign(event_id);
-  uuid4Result = event_id.event_id || event_id2.event_id;
-  if (!uuid4Result) {
-    const tmp4 = num;
-    let tmp5 = num2;
-    let obj2 = num(num2[0]);
-    uuid4Result = obj2.uuid4();
-  }
-  timestamp = event_id.timestamp;
-  if (!timestamp) {
-    let obj3 = num(num2[1]);
-    timestamp = obj3.dateTimestampInSeconds();
-  }
-  integrations = event_id2.integrations;
-  if (!integrations) {
-    const integrations1 = normalizeDepth.integrations;
-    integrations = integrations1.map((name) => name.name);
-  }
-  applyClientOptions(obj, normalizeDepth);
-  if (integrations.length > 0) {
-    obj.sdk = obj.sdk || {};
-    let integrations2 = obj.sdk.integrations;
-    const sdk = obj.sdk;
-    if (!integrations2) {
-      integrations2 = [];
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
+    }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
     }
     const items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
-    sdk.integrations = items;
-  }
-  const tmp14 = emit;
-  if (tmp14) {
-    emit.emit("applyFrameMetadata", event_id);
-  }
-  if (undefined === event_id.type) {
-    applyDebugIds(obj, normalizeDepth.stackParser);
-  }
-  const captureContext = event_id2.captureContext;
-  let obj4 = clone;
-  if (captureContext) {
-    let cloneResult;
-    if (clone) {
-      cloneResult = clone.clone();
-    } else {
-      const self = this;
-      const self2 = this;
-      cloneResult = new num(num2[9]).Scope();
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
     }
-    cloneResult.update(captureContext);
-    obj4 = cloneResult;
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
   }
-  if (event_id2.mechanism) {
-    const obj6 = num(num2[0]);
-    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  const tmp3Result = _mod12348;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12348;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+};
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12348;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
   }
-  if (emit) {
-    let eventProcessors = emit.getEventProcessors();
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12351;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
   } else {
-    eventProcessors = [];
+    items1 = [{ type: "session" }, toJSON.toJSON()];
   }
-  const obj7 = num(num2[2]);
-  const globalScope = obj7.getGlobalScope();
-  const scopeData = globalScope.getScopeData();
-  if (getScopeData) {
-    const scopeData1 = getScopeData.getScopeData();
-    const tmp24Result = num(num2[3]);
-    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  const items2 = [items1];
+  const tmpResult2 = _mod12348;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
   }
-  if (obj4) {
-    const scopeData2 = obj4.getScopeData();
-    const tmp24Result4 = num(num2[3]);
-    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12340");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
   }
-  let tmp31 = event_id2.attachments || [];
-  const items1 = [...scopeData.attachments];
-  if (items1.length) {
-    event_id2.attachments = items1;
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12351);
   }
-  const tmp24Result5 = num(num2[3]);
-  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
-  const items2 = [...scopeData.eventProcessors];
-  const tmp24Result6 = num(num2[4]);
-  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
-  return result2.then((breadcrumbs) => {
-    let breadcrumbs1;
-    let normalizer;
-    let normalizer2;
-    let normalizer3;
-    const tmp = breadcrumbs;
-    if (tmp) {
-      applyDebugMeta(breadcrumbs);
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12309;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12309;
+      tmpResult.showSpanDropWarning();
     }
-    let tmp5 = breadcrumbs;
-    if (typeof num === "number") {
-      num2 = 0;
-      tmp5 = breadcrumbs;
-      if (num > 0) {
-        let closure_0 = tmp4;
-        let closure_1 = num2;
-        let tmp31 = null;
-        if (breadcrumbs) {
-          let obj = {};
-          let merged = Object.assign(breadcrumbs);
-          breadcrumbs = breadcrumbs.breadcrumbs;
-          if (breadcrumbs) {
-            let obj2 = {
-              breadcrumbs: breadcrumbs1.map((data) => {
-                        let normalizer;
-                        const obj = {};
-                        const merged = Object.assign(data);
-                        data = data.data;
-                        if (data) {
-                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
-                          normalizer = num(num2[8]);
-                          data = obj2;
-                        }
-                        const merged1 = Object.assign(data);
-                        return obj;
-                      })
-            };
-            breadcrumbs1 = breadcrumbs.breadcrumbs;
-            breadcrumbs = obj2;
-          }
-          let merged1 = Object.assign(breadcrumbs);
-          let user = breadcrumbs.user;
-          if (user) {
-            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
-            normalizer = _mod12343;
-            user = obj3;
-          }
-          const merged2 = Object.assign(user);
-          let contexts = breadcrumbs.contexts;
-          if (contexts) {
-            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
-            normalizer2 = _mod12343;
-            contexts = obj4;
-          }
-          const merged3 = Object.assign(contexts);
-          let extra = breadcrumbs.extra;
-          if (extra) {
-            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
-            normalizer3 = _mod12343;
-            extra = obj5;
-          }
-          const merged4 = Object.assign(extra);
-          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
-          if (tmp27) {
-            obj.contexts.trace = breadcrumbs.contexts.trace;
-            if (breadcrumbs.contexts.trace.data) {
-              const trace = obj.contexts.trace;
-              const normalizer4 = _mod12343;
-              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
-            }
-          }
-          if (breadcrumbs.spans) {
-            const spans = breadcrumbs.spans;
-            obj.spans = spans.map((data) => {
-              let normalizer;
-              const obj = {};
-              const merged = Object.assign(data);
-              data = data.data;
-              if (data) {
-                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
-                normalizer = num(num2[8]);
-                data = obj2;
-              }
-              const merged1 = Object.assign(data);
-              return obj;
-            });
-          }
-          tmp31 = obj;
-          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
-          if (tmp30) {
-            const contexts2 = obj.contexts;
-            const normalizer5 = _mod12343;
-            num = 3;
-            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
-            tmp31 = obj;
-          }
-        }
-        tmp5 = tmp31;
-      }
-    }
-    return tmp5;
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
   });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12348");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12348");
+  return obj8.createEnvelope(obj2, items);
 };

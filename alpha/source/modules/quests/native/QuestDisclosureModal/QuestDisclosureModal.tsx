@@ -1,18 +1,18 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16084
+// Function ID: 16085
 // Name: QuestDisclosureModal
-// Dependencies: [21, 558, 576, 16069, 7312, 7948, 1128, 6423, 16071, 6910, 2]
+// Dependencies: [21, 558, 576, 16083, 7314, 7949, 1128, 6425, 16085, 6912, 2]
 
-// Module 16070 (QuestDisclosureModal)
+// Module 16084 (QuestDisclosureModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6423 */;
-import Navigator2 from "Navigator" /* 6910 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7312 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7948 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16069 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 16071 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6425 */;
+import Navigator2 from "Navigator" /* 6912 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7314 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7949 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16083 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 16085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (function Clos
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const HeaderActionButton = tmp(7312).HeaderActionButton;
+    const HeaderActionButton = tmp(7314).HeaderActionButton;
     const intl = tmp(1128).intl;
     const tmp8 = <HeaderActionButton source={AssetRegistryDefault} onPress={first} accessibilityLabel={intl.string(intl2.t.cpT0Cq)} />;
     cResult[1] = tmp8;

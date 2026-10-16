@@ -5985,7 +5985,7 @@ function updateSuspenseListComponent(child, pendingProps, current2) {
           if ("together" === revealOrder) {
             memoizedState = pendingProps.memoizedState;
             if (null === memoizedState) {
-              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "duration", treeForkCount: false };
+              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "done", treeForkCount: false };
             } else {
               memoizedState.isBackwards = false;
               memoizedState.rendering = null;
@@ -18276,7 +18276,7 @@ let closure_210 = {
     }
     tmp5.memoizedState = obj2;
   },
-  useLayoutEffect(fn, items) {
+  useLayoutEffect(cResult, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -18289,7 +18289,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 5, create: fn, deps: tmp4, inst: { destroy: "r" }, next: null };
+    obj2 = { tag: 5, create: cResult, deps: tmp4, inst: { destroy: "r" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };

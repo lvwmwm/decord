@@ -1,14 +1,14 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9450
+// Function ID: 9451
 // Name: GameControllerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8499, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8500, 4876, 2]
 
-// Module 9449 (GameControllerIcon)
+// Module 9450 (GameControllerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 8499 */;
+import AssetRegistry from "AssetRegistry" /* 8500 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

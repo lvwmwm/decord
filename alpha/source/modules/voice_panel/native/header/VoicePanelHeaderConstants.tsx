@@ -1,9 +1,9 @@
-// Module ID: 9019
-// Function ID: 9020
+// Module ID: 9020
+// Function ID: 9021
 // Name: VoicePanelHeaderConstants
 // Dependencies: [2]
 
-// Module 9019 (VoicePanelHeaderConstants)
+// Module 9020 (VoicePanelHeaderConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx");

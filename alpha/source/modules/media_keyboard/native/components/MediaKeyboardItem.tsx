@@ -1,29 +1,29 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10273
+// Function ID: 10274
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8128, 10273, 21, 4909, 5153, 587, 5026, 558, 576, 1202, 10004, 5149, 7986, 504, 10274, 1128, 8007, 7988, 10275, 10276, 5154, 1499, 10277, 8440, 10262, 2]
+// Dependencies: [19, 17, 8129, 10274, 21, 4909, 5154, 587, 5026, 558, 576, 1202, 10005, 5150, 7987, 504, 10275, 1128, 8008, 7989, 10276, 10277, 5155, 1499, 10278, 8441, 10263, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10272 (MediaKeyboardItem)
+// Module 10273 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4909 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import timing from "timing" /* 5154 */;
-import ImageIcon from "ImageIcon" /* 8440 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10004 */;
-import AttachmentIcon from "AttachmentIcon" /* 10262 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10274 */;
-import CameraIcon from "CameraIcon" /* 10277 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import timing from "timing" /* 5155 */;
+import ImageIcon from "ImageIcon" /* 8441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10005 */;
+import AttachmentIcon from "AttachmentIcon" /* 10263 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10275 */;
+import CameraIcon from "CameraIcon" /* 10278 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8128 */;
-import DeviceConstants from "DeviceConstants" /* 10273 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8129 */;
+import DeviceConstants from "DeviceConstants" /* 10274 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ColorUtils_mod from "ColorUtils" /* 5026 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

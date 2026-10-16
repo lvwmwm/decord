@@ -1,14 +1,14 @@
-// Module ID: 10837
-// Function ID: 10838
+// Module ID: 10834
+// Function ID: 10835
 // Name: ExperimentalCommonIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10838, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10835, 4876, 2]
 
-// Module 10837 (ExperimentalCommonIcon)
+// Module 10834 (ExperimentalCommonIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 10838 */;
+import AssetRegistry from "AssetRegistry" /* 10835 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

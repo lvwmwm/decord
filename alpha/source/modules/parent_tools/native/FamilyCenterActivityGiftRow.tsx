@@ -1,22 +1,22 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15881
+// Function ID: 15882
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 8524, 15859, 15868, 15870, 5021, 15869, 5149, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 8525, 15869, 15878, 15880, 5021, 15879, 5150, 2]
 
-// Module 15871 (FamilyCenterActivityGiftRow)
+// Module 15881 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8524 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 15859 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15868 */;
-import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 15869 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 15870 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8525 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 15869 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15878 */;
+import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 15879 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 15880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

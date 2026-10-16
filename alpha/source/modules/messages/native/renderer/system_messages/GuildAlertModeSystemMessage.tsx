@@ -1,21 +1,21 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8285
+// Function ID: 8286
 // Name: GuildAlertModeSystemMessage
-// Dependencies: [2068, 5153, 587, 8192, 8199, 8201, 1128, 8285, 8203, 1420, 1417, 2]
+// Dependencies: [2068, 5154, 587, 8193, 8200, 8202, 1128, 8286, 8204, 1420, 1417, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 8284 (GuildAlertModeSystemMessage)
+// Module 8285 (GuildAlertModeSystemMessage)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8192 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8199 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8201 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8203 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8285 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8193 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8200 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8202 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8204 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8286 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let obj = { automodUsernameColor: nativeDefault.colors.TEXT_BRAND };
@@ -50,7 +50,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   }
   const obj3 = { content: intl.formatToParts(intl3.t.ig55n6, obj2), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp5Result4.getAutomodAvatarURL())).uri };
   const tmp10 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(8203)(roleStyle));
+  const merged = Object.assign(tmp(8204)(roleStyle));
   intl = tmp5(1128).intl;
   intl2 = tmp5(1128).intl;
   if (automodUsernameColor == null) {

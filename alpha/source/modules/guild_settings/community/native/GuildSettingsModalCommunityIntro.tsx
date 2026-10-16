@@ -1,27 +1,27 @@
-// Module ID: 18778
-// Function ID: 18779
+// Module ID: 18791
+// Function ID: 18792
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2090, 4809, 8864, 1087, 21, 5153, 587, 9989, 1128, 5149, 9800, 5108, 558, 576, 1505, 504, 8863, 18779, 18783, 4867, 5091, 2131, 5441, 6950, 2]
+// Dependencies: [19, 17, 2090, 4809, 8865, 1087, 21, 5154, 587, 9990, 1128, 5150, 9799, 5108, 558, 576, 1505, 504, 8864, 18792, 18796, 4867, 5091, 2131, 5442, 6952, 2]
 
-// Module 18778 (GuildSettingsModalCommunityIntro)
+// Module 18791 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import ToastUtils from "ToastUtils" /* 4867 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5108 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8863 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9800 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 9989 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18783 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8864 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9799 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 9990 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18796 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8864 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8865 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

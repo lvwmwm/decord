@@ -1,21 +1,21 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8741
+// Function ID: 8742
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2074, 8741, 5118, 8742, 2002, 8747, 9010, 2]
+// Dependencies: [5, 2074, 8742, 5118, 8743, 2002, 8748, 9011, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8740 (GuildScheduledEventModalActionCreators)
+// Module 8741 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8741 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(8747);
+const ScheduleUtils = tmp3(8748);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(8742, dependencyMap.paths);
+  const tmp4 = asyncRequire(8743, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9010, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(9011, dependencyMap.paths), closure_4, obj2);
 };

@@ -1,31 +1,16 @@
 // Module ID: 5456
 // Function ID: 5457
-// Dependencies: [78, 80, 65]
+// Dependencies: [5457]
 
 // Module 5456
-import pointsDiffer_mod from "pointsDiffer" /* 78 */;
-import processColorArray_mod from "processColorArray" /* 80 */;
-import module_65 from "module_65" /* 65 */;
+import _mod5457 from "module_5457" /* 5457 */;
 
-let processColorArray;
-let pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-const obj = { startPoint: { diff: pointsDiffer }, endPoint: { diff: pointsDiffer }, colors: { process: processColorArray }, locations: true, useAngle: true, angleCenter: { diff: pointsDiffer }, angle: true, borderRadii: true };
-pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-processColorArray = processColorArray_mod;
-if ("default" in processColorArray) {
-  processColorArray = processColorArray.default;
-}
-pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-const obj2 = { uiViewClassName: "RNLinearGradient", validAttributes: obj };
+const _modDef5457 = _mod5457;
 
-export default module_65.get("RNLinearGradient", () => obj2);
-export const __INTERNAL_VIEW_CONFIG = obj2;
+for (const key10016 in _mod5457) {
+  exports[key10016] = _mod5457[key10016];
+  continue;
+}
+
+export default _modDef5457;
+export const LinearGradient = _modDef5457;

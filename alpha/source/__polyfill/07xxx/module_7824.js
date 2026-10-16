@@ -1,75 +1,148 @@
 // Module ID: 7824
 // Function ID: 7825
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7811, 7825, 7820]
+// Dependencies: [17]
+// Exports: default
 
 // Module 7824
-import Fragment from "Fragment" /* 21 */;
-import extractProps from "extractProps" /* 7811 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 7820 */;
-import _modDef7825 from "module_7825" /* 7825 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = Fragment.jsx;
-class Circle {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, Circle);
-    const obj = _getPrototypeOf(Circle);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let map;
+let metroImportDefault;
+let metroRequire;
+let closure_0 = { top: 20, left: 20, right: 20, bottom: 30 };
+const Mixin = react_native.Touchable.Mixin;
+({ touchableHandleStartShouldSetResponder: map, touchableHandleResponderTerminationRequest: c2, touchableHandleResponderGrant: c3, touchableHandleResponderMove: closure_4, touchableHandleResponderRelease: hasOwnProperty, touchableHandleResponderTerminate: metroRequire, touchableGetInitialState: metroImportDefault } = Mixin);
+let obj = {
+  touchableHandleStartShouldSetResponder(arg0) {
+    let result;
+    const onStartShouldSetResponder = this.props.onStartShouldSetResponder;
+    if (onStartShouldSetResponder) {
+      result = onStartShouldSetResponder(arg0);
     } else {
-      constructResult = obj(...arguments);
+      result = map.call(tmp, arg0);
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(Circle, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    let cx;
-    let cy;
-    let r;
-    const self = this;
-    const props = this.props;
-    const obj = { cx, cy, r };
-    ({ cx, cy, r } = props);
-    const obj2 = extractProps;
-    const merged = Object.assign(obj2.extract(this, props));
-    _modDef7825;
-    const merged1 = Object.assign(obj);
-    return <tmp2 ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    return result;
+  },
+  touchableHandleResponderTerminationRequest(arg0) {
+    let result;
+    const onResponderTerminationRequest = this.props.onResponderTerminationRequest;
+    if (onResponderTerminationRequest) {
+      result = onResponderTerminationRequest(arg0);
+    } else {
+      result = React2.call(tmp, arg0);
+    }
+    return result;
+  },
+  touchableHandleResponderGrant(arg0) {
+    let onResponderGrantResult;
+    const onResponderGrant = this.props.onResponderGrant;
+    if (onResponderGrant) {
+      onResponderGrantResult = onResponderGrant(arg0);
+    } else {
+      onResponderGrantResult = _false.call(tmp, arg0);
+    }
+    return onResponderGrantResult;
+  },
+  touchableHandleResponderMove(arg0) {
+    let onResponderMoveResult;
+    const onResponderMove = this.props.onResponderMove;
+    if (onResponderMove) {
+      onResponderMoveResult = onResponderMove(arg0);
+    } else {
+      onResponderMoveResult = React3.call(tmp, arg0);
+    }
+    return onResponderMoveResult;
+  },
+  touchableHandleResponderRelease(arg0) {
+    let onResponderReleaseResult;
+    const onResponderRelease = this.props.onResponderRelease;
+    if (onResponderRelease) {
+      onResponderReleaseResult = onResponderRelease(arg0);
+    } else {
+      onResponderReleaseResult = hasOwnProperty.call(tmp, arg0);
+    }
+    return onResponderReleaseResult;
+  },
+  touchableHandleResponderTerminate(arg0) {
+    let onResponderTerminateResult;
+    const onResponderTerminate = this.props.onResponderTerminate;
+    if (onResponderTerminate) {
+      onResponderTerminateResult = onResponderTerminate(arg0);
+    } else {
+      onResponderTerminateResult = metroRequire.call(tmp, arg0);
+    }
+    return onResponderTerminateResult;
+  },
+  touchableHandlePress(nativeEvent) {
+    const onPress = this.props.onPress;
+    if (onPress) {
+      onPress(nativeEvent);
+    }
+  },
+  touchableHandleActivePressIn(nativeEvent) {
+    const onPressIn = this.props.onPressIn;
+    if (onPressIn) {
+      onPressIn(nativeEvent);
+    }
+  },
+  touchableHandleActivePressOut(nativeEvent) {
+    const onPressOut = this.props.onPressOut;
+    if (onPressOut) {
+      onPressOut(nativeEvent);
+    }
+  },
+  touchableHandleLongPress(nativeEvent) {
+    const onLongPress = this.props.onLongPress;
+    if (onLongPress) {
+      onLongPress(nativeEvent);
+    }
+  },
+  touchableGetPressRectOffset() {
+    return this.props.pressRetentionOffset || closure_0;
+  },
+  touchableGetHitSlop() {
+    return this.props.hitSlop;
+  },
+  touchableGetHighlightDelayMS() {
+    return this.props.delayPressIn || 0;
+  },
+  touchableGetLongPressDelayMS() {
+    let num = this.props.delayLongPress;
+    let num2 = 0;
+    if (0 !== num) {
+      if (!num) {
+        num = 500;
+      }
+      num2 = num;
+    }
+    return num2;
+  },
+  touchableGetPressOutDelayMS() {
+    return this.props.delayPressOut || 0;
   }
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(Circle, items);
-importDefaultResultResult.displayName = "Circle";
-importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
+const merged = Object.assign(Mixin);
+const keys = Object.keys(obj);
+let closure_10 = keys.map((item) => obj[item]);
+const length = keys.length;
 
-export default importDefaultResultResult;
+export default (self) => {
+  let num = 0;
+  if (0 < length) {
+    do {
+      obj = closure_10[num];
+      let bindResult = obj;
+      let tmp2 = keys[num];
+      if (typeof obj === "function") {
+        bindResult = obj.bind(self);
+      }
+      self[tmp2] = bindResult;
+      num = num + 1;
+    } while (num < length);
+  }
+  self.state = metroImportDefault();
+};

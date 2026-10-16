@@ -1,46 +1,29 @@
 // Module ID: 12323
 // Function ID: 12324
-// Dependencies: []
+// Dependencies: [12322, 12324]
+// Exports: getAsyncContextStrategy, setAsyncContextStrategy
 
 // Module 12323
-let hasOwnProperty;
+import _mod12322 from "module_12322" /* 12322 */;
 
-function merge(arg0, obj) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 2;
-  }
-  const tmp = obj;
-  if (tmp) {
-    if (typeof obj === "object") {
-      if (num > 0) {
-        const tmp9 = arg0;
-        if (tmp9) {
-          if (obj) {
-            const _Object = Object;
-            if (0 === Object.keys(obj).length) {
-              return arg0;
-            }
-          }
-        }
-        obj = {};
-        const merged = Object.assign(arg0);
-        for (const key10016 in obj) {
-          let _Object2 = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          if (!hasOwnProperty.call(obj, key10016)) {
-            continue;
-          } else {
-            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
-            continue;
-          }
-          continue;
-        }
-        return obj;
-      }
-    }
-  }
-  return obj;
-}
+let tmp;
+const _mod12324 = tmp(12324);
 
-export { merge };
+export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
+  let acs;
+  const obj = _mod12322;
+  const sentryCarrier = obj.getSentryCarrier(arg0);
+  if (sentryCarrier.acs) {
+    acs = sentryCarrier.acs;
+  } else {
+    const tmpResult = _mod12324;
+    acs = tmpResult.getStackAsyncContextStrategy();
+  }
+  return acs;
+};
+export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
+  const obj = _mod12322;
+  const mainCarrier = obj.getMainCarrier();
+  _mod12322.getSentryCarrier(mainCarrier).acs = acs;
+  _mod12322;
+};

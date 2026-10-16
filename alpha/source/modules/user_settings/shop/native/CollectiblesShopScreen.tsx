@@ -1,22 +1,22 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16829
+// Function ID: 16830
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 1089, 21, 558, 576, 6905, 16816, 7320, 7100, 16817, 2]
+// Dependencies: [19, 1089, 21, 558, 576, 6907, 16830, 7322, 7102, 16831, 2]
 
-// Module 16815 (CollectiblesShopScreen)
+// Module 16829 (CollectiblesShopScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6905 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
-import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 7320 */;
-import useShopOrientationLock from "useShopOrientationLock" /* 16816 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6907 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
+import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 7322 */;
+import useShopOrientationLock from "useShopOrientationLock" /* 16830 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesShopV22 = tmp(16817);
+const CollectiblesShopV22 = tmp(16831);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopScreen() {

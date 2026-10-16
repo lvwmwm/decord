@@ -1,14 +1,14 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16371
+// Function ID: 16372
 // Name: EmojiMoneyMouthFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16358, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16372, 4876, 2]
 
-// Module 16357 (EmojiMoneyMouthFaceIcon)
+// Module 16371 (EmojiMoneyMouthFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 16358 */;
+import AssetRegistry from "AssetRegistry" /* 16372 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

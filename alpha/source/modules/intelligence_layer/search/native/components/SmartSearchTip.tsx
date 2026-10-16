@@ -1,16 +1,16 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 17762
+// Function ID: 17763
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 4091, 5149, 14000, 1202, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 1128, 4091, 5150, 14010, 1202, 2]
 
-// Module 17752 (SmartSearchTip)
+// Module 17762 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import _modDef4091 from "module_4091" /* 4091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (cResult[3] !== tmp4.title) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: title, accessibilityRole: "header", children: tmp7 };
-    const tmp12 = closure_5(tmp(5149).Text, obj2);
+    const tmp12 = closure_5(tmp(5150).Text, obj2);
     cResult[3] = tmp4.title;
     cResult[4] = tmp12;
     tmp10 = tmp12;
@@ -96,7 +96,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef4091.QIdSmb) };
-    const Text = tmp(5149).Text;
+    const Text = tmp(5150).Text;
     intl2 = tmp(1128).intl;
     const tmp16 = closure_5(Text, obj3);
     cResult[5] = tmp16;
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
           if (cResult[16] !== answerText) {
             const obj4 = { variant: "text-md/normal", color: "text-default", children: answerText };
-            const tmp28 = closure_5(tmp(5149).Text, obj4);
+            const tmp28 = closure_5(tmp(5150).Text, obj4);
             cResult[16] = answerText;
             cResult[17] = tmp28;
             tmp26 = tmp28;
@@ -170,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               return hasOwnProperty(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp(14000).AvatarPile;
+      const AvatarPile = tmp(14010).AvatarPile;
       substr = arr.slice(0, 3);
       tmp20 = closure_5(AvatarPile, obj7);
     }
@@ -204,11 +204,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj2 = { style: tmp.header, children: items2 };
   const obj3 = { style: tmp.titleContainer, children: items1 };
   const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4091).ydAwWi) };
-  const Text = citations(5149).Text;
+  const Text = citations(5150).Text;
   intl = citations(1128).intl;
   items1 = [closure_5(Text, obj4), ];
   const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4091).QIdSmb) };
-  const Text2 = citations(5149).Text;
+  const Text2 = citations(5150).Text;
   intl2 = citations(1128).intl;
   items1[1] = closure_5(Text2, obj5);
   items2 = [closure_6(View, obj3), ];
@@ -224,12 +224,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(14000).AvatarPile;
+    const AvatarPile = tmp5(14010).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  items3 = [tmp2(View, obj2), closure_5(citations(5149).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
+  items3 = [tmp2(View, obj2), closure_5(citations(5150).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
   return tmp2(View, obj);
 }));
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 19021
-// Function ID: 19022
+// Module ID: 19034
+// Function ID: 19035
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7477, 1392, 7478, 21, 5153, 587, 19012, 19011, 12579, 5458, 18545, 15846, 7958, 504, 15844, 19022, 19006, 4868, 1128, 2867, 5118, 15845, 2002, 19015, 12588, 5439, 19023, 12638, 19024, 5149, 2571, 15847, 2]
+// Dependencies: [5, 32, 19, 17, 7479, 1392, 7480, 21, 5154, 587, 19025, 19024, 12585, 5459, 18555, 15856, 7959, 504, 15854, 19035, 19019, 4868, 1128, 2867, 5118, 15855, 2002, 19028, 12594, 5440, 19036, 12644, 19037, 5150, 2571, 15857, 2]
 // Exports: default
 
-// Module 19021 (ParentalConsentConnectionScreen)
+// Module 19034 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef2867 from "module_2867" /* 2867 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7478 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15844 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7480 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15854 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2867.dMMSA0), body: intl2.format(_modDef2867["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(15845, dependencyMap.paths);
+    const tmp2 = asyncRequire(15855, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

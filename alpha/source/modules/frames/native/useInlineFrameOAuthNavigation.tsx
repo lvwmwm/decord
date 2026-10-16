@@ -1,18 +1,18 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 11637
+// Function ID: 11638
 // Name: useInlineFrameOAuthNavigation
-// Dependencies: [5, 19, 10950, 10934, 1087, 10937, 6152, 10941, 2002, 1123, 2]
+// Dependencies: [5, 19, 10947, 10931, 1087, 10934, 6153, 10938, 2002, 1123, 2]
 // Exports: default
 
-// Module 11640 (useInlineFrameOAuthNavigation)
+// Module 11637 (useInlineFrameOAuthNavigation)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import FramesConstants from "FramesConstants" /* 10934 */;
-import Constants2 from "Constants" /* 10937 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import FramesConstants from "FramesConstants" /* 10931 */;
+import Constants2 from "Constants" /* 10934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 10950 */;
+import FramesStore from "FramesStore" /* 10947 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_1;

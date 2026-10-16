@@ -1,9 +1,9 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17377
+// Function ID: 17378
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5143, 6302, 2090, 4998, 6181, 17357, 17362, 17354, 21, 5153, 587, 558, 576, 4877, 504, 6381, 5440, 5026, 1105, 6984, 4909, 4886, 5091, 8387, 17366, 17369, 12244, 17376, 5119, 6322, 6384, 17359, 17377, 2]
+// Dependencies: [19, 5144, 6304, 2090, 4998, 6182, 17369, 17374, 17366, 21, 5154, 587, 558, 576, 4877, 504, 6383, 5441, 5026, 1105, 6986, 4909, 4886, 5091, 8388, 17378, 17381, 12250, 17388, 5119, 6324, 6386, 17371, 17389, 2]
 
-// Module 17365 (GuildsBarGuildFolder)
+// Module 17377 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,24 +14,24 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import ColorUtils from "ColorUtils" /* 5026 */;
 import FastImageDefault from "FastImage" /* 5091 */;
 import HapticUtils from "HapticUtils" /* 5119 */;
-import spring from "spring" /* 5440 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6181 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
-import NativeViewDefault from "NativeView" /* 6384 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6984 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8387 */;
-import ListUtils from "ListUtils" /* 12244 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17359 */;
+import spring from "spring" /* 5441 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6182 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
+import NativeViewDefault from "NativeView" /* 6386 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6986 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8388 */;
+import ListUtils from "ListUtils" /* 12250 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17371 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5143 */;
-import GuildReadStateStore_mod from "GuildReadStateStore" /* 6302 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import GuildReadStateStore_mod from "GuildReadStateStore" /* 6304 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17357 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17362 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17354 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17369 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17374 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17366 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let map1;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const GuildIcon = tmp(6381);
-const GuildIconDefault = tmp4(6381);
+const GuildIcon = tmp(6383);
+const GuildIconDefault = tmp4(6383);
 function getItemKey(type) {
   return type.type;
 }
@@ -85,7 +85,7 @@ function renderGuildFolderContent(arg0, type, state, cleanUp) {
             tmp2 = null;
             if (null != tmp) {
               const obj = { guildId, selected: guildId === type.selectedGuildId, position: tmp };
-              tmp2 = trackedExposureExperiments(closure_20, obj, guildId);
+              tmp2 = closure_17(closure_20, obj, guildId);
             }
           }
           return tmp2;
@@ -183,7 +183,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
           }
         }
       }
-      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6381).GuildIconSizes.XXSMALL, selected };
+      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6383).GuildIconSizes.XXSMALL, selected };
       const tmp4Result = GuildIconDefault;
       const tmp16 = closure_17(tmp4Result, obj3, combined);
       cResult[7] = stateFromStores;
@@ -301,7 +301,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj7 = { pointerEvents: "none", collapsable: false, layout: first, style: items };
     items = [tmp7.folderBackground, tmp14, tmp20];
-    const tmp23 = trackedExposureExperiments(ReanimatedNativeViewDefault, obj7);
+    const tmp23 = closure_17(ReanimatedNativeViewDefault, obj7);
     cResult[8] = tmp14;
     cResult[9] = tmp7.folderBackground;
     cResult[10] = tmp20;
@@ -351,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj;
   };
   const tmp3 = closure_19(token, obj3.useToken(token2(587).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
-  const obj4 = { withSpring: color(5440).withSpring, TRANSITION_PHYSICS };
+  const obj4 = { withSpring: color(5441).withSpring, TRANSITION_PHYSICS };
   const tmp4 = closure_11(folderId);
   const useCallback = react.useCallback;
   fn.__closure = obj4;
@@ -377,7 +377,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1 = [tmp3.folderBackground, memo, ];
   const obj7 = { height: token + token1 + (token + 2 * token1) * totalItems + tmp4 };
   items1[2] = obj7;
-  return closure_17(token2(6984), obj6);
+  return closure_17(token2(6986), obj6);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionWrapper(state) {
@@ -466,7 +466,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
     return obj;
   };
   const tmpResult6 = tmp(4909);
-  let obj2 = { withSpring: tmp(5440).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(4886).TransitionStates, runOnJS: tmp(4909).runOnJS, cleanUp, fromTop: tmp4, guildItemSize: token };
+  let obj2 = { withSpring: tmp(5441).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(4886).TransitionStates, runOnJS: tmp(4909).runOnJS, cleanUp, fromTop: tmp4, guildItemSize: token };
   fn2.__closure = obj2;
   fn2.__workletHash = 6656244933777;
   fn2.__initData = __initData3;
@@ -494,7 +494,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
             return tmp20;
           }
           const obj3 = { style: tmp19, children };
-          const tmp22 = closure_17(tmp5(6984), obj3);
+          const tmp22 = closure_17(tmp5(6986), obj3);
           cResult[11] = children;
           cResult[12] = tmp19;
           cResult[13] = tmp22;
@@ -640,7 +640,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
     if (cResult[0] !== item.tintStyle) {
       const obj2 = { source: AssetRegistryDefault, style: item.tintStyle };
       const tmp7 = FastImageDefault;
-      const tmp8 = trackedExposureExperiments(tmp7, obj2);
+      const tmp8 = closure_17(tmp7, obj2);
       cResult[0] = item.tintStyle;
       cResult[1] = tmp8;
       tmp4 = tmp8;
@@ -656,7 +656,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
   if ("icon" === item.type) {
     const obj = { source: AssetRegistryDefault, style: item.tintStyle };
     const tmp5 = FastImageDefault;
-    tmp = trackedExposureExperiments(tmp5, obj);
+    tmp = closure_17(tmp5, obj);
   }
   return tmp;
 });
@@ -1566,7 +1566,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                       const items = [guildPreviewWrapper.guildPreviewWrapper, ];
                       let tmp4;
                       const tmp = authStore5;
-                      const tmp2 = trackedExposureExperiments;
+                      const tmp2 = closure_17;
                       const tmp3 = NativeViewDefault;
                       if (!expanded) {
                         tmp4 = folderPreviewStyle;
@@ -2201,7 +2201,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     const items = [guildPreviewWrapper.guildPreviewWrapper, ];
     let tmp4;
     const tmp = authStore5;
-    const tmp2 = trackedExposureExperiments;
+    const tmp2 = closure_17;
     const tmp3 = NativeViewDefault;
     if (!expanded) {
       tmp4 = folderPreviewStyle;

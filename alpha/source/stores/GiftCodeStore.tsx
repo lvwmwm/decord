@@ -1,15 +1,15 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10736
+// Function ID: 10737
 // Name: GiftCodeStore
-// Dependencies: [10290, 1087, 2063, 4761, 5851, 10740, 504, 584, 2]
+// Dependencies: [10291, 1087, 2063, 4761, 5852, 10737, 504, 584, 2]
 
-// Module 10739 (GiftCodeStore)
+// Module 10736 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef4761 from "module_4761" /* 4761 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5851 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10740 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10290 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5852 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10737 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10291 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f106285 = () => {
+  const f106323 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_7[code]) {
           const _Math = Math;
-          closure_7[code].start(Math.min(hasOwnProperty, diff), f106285);
+          closure_7[code].start(Math.min(hasOwnProperty, diff), f106323);
         }
       }
     }
@@ -66,7 +66,7 @@ function updateGiftCode(giftCode) {
             giftCodeStore.emitChange();
           } else if (null != tmp14[code]) {
             let _Math = Math;
-            tmp14[code].start(Math.min(closure_5, diff), f106285);
+            tmp14[code].start(Math.min(closure_5, diff), f106323);
           }
         }
       }

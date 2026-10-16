@@ -1,16 +1,16 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9133
+// Function ID: 9134
 // Name: MinecraftNeutralIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9133, 4876, 9134, 9135, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9134, 4876, 9135, 9136, 2]
 
-// Module 9132 (MinecraftNeutralIcon)
+// Module 9133 (MinecraftNeutralIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage4 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 9133 */;
-import AssetRegistry2 from "AssetRegistry" /* 9134 */;
-import AssetRegistry3 from "AssetRegistry" /* 9135 */;
+import AssetRegistry from "AssetRegistry" /* 9134 */;
+import AssetRegistry2 from "AssetRegistry" /* 9135 */;
+import AssetRegistry3 from "AssetRegistry" /* 9136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

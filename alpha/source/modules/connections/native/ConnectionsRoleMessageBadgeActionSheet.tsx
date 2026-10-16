@@ -1,9 +1,9 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12471
+// Function ID: 12472
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1406, 502, 2128, 2122, 2090, 12466, 7098, 1087, 21, 5153, 587, 558, 576, 1128, 7097, 6418, 5149, 5090, 12, 4877, 5981, 11057, 8992, 1202, 1417, 5028, 38, 7075, 7100, 504, 1267, 5168, 6322, 8530, 5118, 11061, 7121, 5441, 7063, 2]
+// Dependencies: [32, 19, 17, 1406, 502, 2128, 2122, 2090, 12472, 7100, 1087, 21, 5154, 587, 558, 576, 1128, 7099, 6420, 5150, 5090, 12, 4877, 5982, 11054, 8993, 1202, 1417, 5028, 38, 7077, 7102, 504, 1267, 5169, 6324, 8531, 5118, 11058, 7123, 5442, 7065, 2]
 
-// Module 12465 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 12471 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,15 +14,15 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import shared from "shared" /* 5028 */;
 import useThemeDefault from "useTheme" /* 5090 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
-import PlatformsDefault from "Platforms" /* 5981 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6418 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7097 */;
-import Constants2 from "Constants" /* 7098 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11061 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
+import PlatformsDefault from "Platforms" /* 5982 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6420 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7099 */;
+import Constants2 from "Constants" /* 7100 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11058 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,10 +31,10 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 2128 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12466 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12472 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Popout
     }
     const obj7 = { style: tmp4.popoutCheck, children: items };
     items = [tmp17, tmp20];
-    const tmp26 = trackedExposureExperiments(metroRequire, obj7);
+    const tmp26 = closure_17(metroRequire, obj7);
     cResult[15] = tmp4.popoutCheck;
     cResult[16] = tmp17;
     cResult[17] = tmp20;
@@ -224,7 +224,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Popout
     items = [authStore4(CheckmarkLargeIcon.CheckmarkLargeIcon, obj6), ];
     const obj7 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
     items[1] = authStore4(Text_Text.Text, obj7);
-    tmp10 = trackedExposureExperiments(metroRequire, obj5);
+    tmp10 = closure_17(metroRequire, obj5);
   }
   return tmp10;
 });
@@ -290,10 +290,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     }
     if (includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      tmp10 = authStore4(tmp2(11057), obj2);
+      tmp10 = authStore4(tmp2(11054), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
-      tmp10 = authStore4(tmp2(8992), obj3);
+      tmp10 = authStore4(tmp2(8993), obj3);
     }
     const items = [closure_1.popoutChecksGroup, ];
     let prop = null;
@@ -316,13 +316,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     items1 = [tmp22Result, , , ];
     let tmp25 = null;
     if (null != tmp7) {
-      const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+      const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
       const Avatar = tmp9(1202).Avatar;
       tmp25 = authStore4(Avatar, obj7);
     }
     items1[1] = tmp25;
     let name;
-    const Text = tmp9(5149).Text;
+    const Text = tmp9(5150).Text;
     const tmp27 = authStore4;
     if (value != null) {
       name = value.name;
@@ -337,7 +337,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     items1[2] = tmp27(Text, { variant: "text-sm/medium", color: "interactive-text-active", children: name });
     items1[3] = tmp10;
     items2 = [
-      trackedExposureExperiments(metroRequire, obj5),
+      closure_17(metroRequire, obj5),
       found.map((description) => {
         let connection_metadata_field;
         let connection_type;
@@ -351,7 +351,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
         return closure_1_16(closure_1_20, { connectionType, connectionMetadataField, operator, value, description }, "" + connectionType + ":" + connectionMetadataField + ":" + operator + ":" + value);
       })
     ];
-    return trackedExposureExperiments(metroRequire, obj4, item);
+    return closure_17(metroRequire, obj4, item);
   });
   if (cResult[0] !== mapped) {
     let obj4 = { children: mapped };
@@ -423,10 +423,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       }
       if (includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        tmp10 = authStore4(tmp2(11057), obj2);
+        tmp10 = authStore4(tmp2(11054), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
-        tmp10 = authStore4(tmp2(8992), obj3);
+        tmp10 = authStore4(tmp2(8993), obj3);
       }
       const items = [closure_1.popoutChecksGroup, ];
       let prop = null;
@@ -449,13 +449,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       items1 = [tmp22Result, , , ];
       let tmp25 = null;
       if (null != tmp7) {
-        const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
         const Avatar = tmp9(1202).Avatar;
         tmp25 = authStore4(Avatar, obj7);
       }
       items1[1] = tmp25;
       let name;
-      const Text = tmp9(5149).Text;
+      const Text = tmp9(5150).Text;
       const tmp27 = authStore4;
       if (value != null) {
         name = value.name;
@@ -470,7 +470,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       items1[2] = tmp27(Text, { variant: "text-sm/medium", color: "interactive-text-active", children: name });
       items1[3] = tmp10;
       items2 = [
-        trackedExposureExperiments(metroRequire, obj5),
+        closure_17(metroRequire, obj5),
         found.map((description) => {
           let connection_metadata_field;
           let connection_type;
@@ -484,7 +484,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
           return closure_1_16(closure_1_20, { connectionType, connectionMetadataField, operator, value, description }, "" + connectionType + ":" + connectionMetadataField + ":" + operator + ":" + value);
         })
       ];
-      return trackedExposureExperiments(metroRequire, obj4, item);
+      return closure_17(metroRequire, obj4, item);
     })
   };
   return closure_16(closure_18, obj3);

@@ -1,26 +1,26 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12201
+// Function ID: 12202
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9449, 12198, 10534, 11571, 10657, 5153, 587, 558, 576, 5149, 8459, 12187, 1128, 3865, 12200, 12196, 12180, 2]
+// Dependencies: [19, 17, 21, 9450, 12202, 10535, 11568, 10654, 5154, 587, 558, 576, 5150, 8460, 12191, 1128, 3865, 12204, 12200, 12184, 2]
 
-// Module 12197 (ConjurePlanExperiences)
+// Module 12201 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import AppsIcon2 from "AppsIcon" /* 8459 */;
-import GameControllerIcon from "GameControllerIcon" /* 9449 */;
-import UserCircleIcon from "UserCircleIcon" /* 10534 */;
-import ShieldIcon from "ShieldIcon" /* 10657 */;
-import RobotIcon from "RobotIcon" /* 11571 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12187 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12196 */;
-import WindowTopIcon from "WindowTopIcon" /* 12198 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12200 */;
+import AppsIcon2 from "AppsIcon" /* 8460 */;
+import GameControllerIcon from "GameControllerIcon" /* 9450 */;
+import UserCircleIcon from "UserCircleIcon" /* 10535 */;
+import ShieldIcon from "ShieldIcon" /* 10654 */;
+import RobotIcon from "RobotIcon" /* 11568 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12191 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12200 */;
+import WindowTopIcon from "WindowTopIcon" /* 12202 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12204 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let obj8;
 let obj9;
 let size;
 let tmp;
-const Text_Text = tmp(5149);
-const f112033 = (caption) => {
+const Text_Text = tmp(5150);
+const f112089 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -262,7 +262,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const combined = "" + name + ", " + description;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
-    const AppsIcon = tmp(8459).AppsIcon;
+    const AppsIcon = tmp(8460).AppsIcon;
     const tmp9 = hasOwnProperty(AppsIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f112033), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f112089), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f112033), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f112089), arraySpreadResult);
       items = items3;
     }
   }
@@ -641,6 +641,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bullet
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ComponentSection(arg0) {
+  let AppsIcon;
   let bullets;
   let commandNames;
   let component;
@@ -651,193 +652,230 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   let obj7;
   let preview;
   let proposal;
-  let tmp6;
+  let tmp5;
+  let tmp8;
   obj = react2;
-  const cResult = obj.c(29);
+  const cResult = obj.c(32);
   ({ experience, bullets, preview, proposal, commandNames } = arg0);
   const tmp4 = closure_8();
-  ({ component, componentHeader } = tmp4);
-  if (cResult[0] !== obj[experience.kind]) {
-    const obj2 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
-    const tmp9 = hasOwnProperty(obj[experience.kind], obj2);
-    cResult[0] = obj[experience.kind];
-    cResult[1] = tmp9;
-    tmp6 = tmp9;
+  if (cResult[0] !== experience) {
+    const tmpResult = conjurePlanExperienceSections;
+    const result = tmpResult.conjurePlanExperienceIsApp(experience);
+    cResult[0] = experience;
+    cResult[1] = result;
+    tmp5 = result;
   } else {
-    tmp6 = cResult[1];
+    tmp5 = cResult[1];
   }
-  if (cResult[2] === tmp4.iconBox) {
-    let tmp10;
+  if (tmp5) {
+    AppsIcon = tmp(8460).AppsIcon;
+  } else {
+    AppsIcon = obj[experience.kind];
+  }
+  ({ component, componentHeader } = tmp4);
+  if (cResult[2] !== AppsIcon) {
+    const obj2 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
+    const tmp11 = hasOwnProperty(AppsIcon, obj2);
+    cResult[2] = AppsIcon;
+    cResult[3] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === tmp4.iconBox) {
     let tmp12;
-    let tmp14;
-    if (cResult[3] === tmp6) {
-      tmp10 = cResult[4];
-    }
-    if (cResult[5] !== experience.kind) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(conjurePlanExperienceSections.CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind]);
-      cResult[5] = experience.kind;
-      cResult[6] = stringResult;
-      tmp12 = stringResult;
-    } else {
+    let BM4Ymz;
+    if (cResult[5] === tmp8) {
       tmp12 = cResult[6];
     }
-    if (cResult[7] !== tmp12) {
-      const obj3 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: tmp12 };
-      const tmp16 = hasOwnProperty(Text_Text.Text, obj3);
-      cResult[7] = tmp12;
-      cResult[8] = tmp16;
-      tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[8];
-    }
-    if (cResult[9] === tmp4.componentHeader) {
-      if (cResult[10] === tmp10) {
-        let tmp17;
-        if (cResult[11] === tmp14) {
-          tmp17 = cResult[12];
-        }
-        if (cResult[13] === preview) {
-          let tmp21;
-          let tmp25;
-          let tmp26;
-          if (cResult[14] === tmp4.preview) {
-            tmp21 = cResult[15];
+    if (cResult[7] === experience.kind) {
+      let tmp14;
+      let tmp17;
+      if (cResult[8] === tmp5) {
+        tmp14 = cResult[9];
+      }
+      if (cResult[10] !== tmp14) {
+        const obj3 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: tmp14 };
+        const tmp19 = hasOwnProperty(Text_Text.Text, obj3);
+        cResult[10] = tmp14;
+        cResult[11] = tmp19;
+        tmp17 = tmp19;
+      } else {
+        tmp17 = cResult[11];
+      }
+      if (cResult[12] === tmp4.componentHeader) {
+        if (cResult[13] === tmp12) {
+          let tmp20;
+          if (cResult[14] === tmp17) {
+            tmp20 = cResult[15];
           }
-          if (cResult[16] === bullets) {
-            if (cResult[17] === commandNames) {
-              if (cResult[18] === experience.kind) {
-                tmp25 = cResult[19];
-              }
-              if (cResult[20] === experience) {
-                let tmp30;
-                if (cResult[21] === proposal) {
-                  tmp30 = cResult[22];
+          if (cResult[16] === preview) {
+            let tmp24;
+            let tmp28;
+            let tmp29;
+            if (cResult[17] === tmp4.preview) {
+              tmp24 = cResult[18];
+            }
+            if (cResult[19] === bullets) {
+              if (cResult[20] === commandNames) {
+                if (cResult[21] === experience.kind) {
+                  tmp28 = cResult[22];
                 }
-                if (cResult[23] === tmp4.component) {
-                  if (cResult[24] === tmp30) {
-                    if (cResult[25] === tmp17) {
-                      if (cResult[26] === tmp21) {
-                        let tmp34;
-                        if (cResult[27] === tmp25) {
-                          tmp34 = cResult[28];
+                if (cResult[23] === experience) {
+                  let tmp33;
+                  if (cResult[24] === proposal) {
+                    tmp33 = cResult[25];
+                  }
+                  if (cResult[26] === tmp4.component) {
+                    if (cResult[27] === tmp28) {
+                      if (cResult[28] === tmp33) {
+                        if (cResult[29] === tmp20) {
+                          let tmp37;
+                          if (cResult[30] === tmp24) {
+                            tmp37 = cResult[31];
+                          }
+                          return tmp37;
                         }
-                        return tmp34;
                       }
                     }
                   }
+                  const obj4 = { style: component, children: items };
+                  items = [tmp20, tmp24, tmp28, tmp33];
+                  const tmp40 = metroRequire(View, obj4);
+                  cResult[26] = tmp4.component;
+                  cResult[27] = tmp28;
+                  cResult[28] = tmp33;
+                  cResult[29] = tmp20;
+                  cResult[30] = tmp24;
+                  cResult[31] = tmp40;
+                  tmp37 = tmp40;
                 }
-                const obj4 = { style: component, children: items };
-                items = [tmp17, tmp21, tmp25, tmp30];
-                const tmp37 = metroRequire(View, obj4);
-                cResult[23] = tmp4.component;
-                cResult[24] = tmp30;
-                cResult[25] = tmp17;
-                cResult[26] = tmp21;
-                cResult[27] = tmp25;
-                cResult[28] = tmp37;
-                tmp34 = tmp37;
+                const obj5 = { proposal, experience };
+                const tmp36 = hasOwnProperty(closure_14, obj5);
+                cResult[23] = experience;
+                cResult[24] = proposal;
+                cResult[25] = tmp36;
+                tmp33 = tmp36;
               }
-              const obj5 = { proposal, experience };
-              const tmp33 = hasOwnProperty(closure_14, obj5);
-              cResult[20] = experience;
-              cResult[21] = proposal;
-              cResult[22] = tmp33;
-              tmp30 = tmp33;
+            }
+            if ("automod" === experience.kind) {
+              if (1 === bullets.length) {
+                const obj6 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj7) };
+                const Text = tmp(5150).Text;
+                obj7 = { text: bullets[0], commandNames, size: "text-md" };
+                tmp29 = hasOwnProperty(Text, obj6);
+              }
+              cResult[19] = bullets;
+              cResult[20] = commandNames;
+              cResult[21] = experience.kind;
+              cResult[22] = tmp29;
+              tmp28 = tmp29;
+            }
+            tmp29 = null;
+            if (bullets.length > 0) {
+              const obj8 = { bullets, commandNames };
+              tmp29 = hasOwnProperty(closure_15, obj8);
             }
           }
-          if ("automod" === experience.kind) {
-            if (1 === bullets.length) {
-              const obj6 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj7) };
-              const Text = tmp(5149).Text;
-              obj7 = { text: bullets[0], commandNames, size: "text-md" };
-              tmp26 = hasOwnProperty(Text, obj6);
-            }
-            cResult[16] = bullets;
-            cResult[17] = commandNames;
-            cResult[18] = experience.kind;
-            cResult[19] = tmp26;
-            tmp25 = tmp26;
+          let tmp25 = null;
+          if (null != preview) {
+            const obj9 = { style: tmp4.preview, children: preview };
+            tmp25 = hasOwnProperty(View, obj9);
           }
-          tmp26 = null;
-          if (bullets.length > 0) {
-            const obj8 = { bullets, commandNames };
-            tmp26 = hasOwnProperty(closure_15, obj8);
-          }
+          cResult[16] = preview;
+          cResult[17] = tmp4.preview;
+          cResult[18] = tmp25;
+          tmp24 = tmp25;
         }
-        let tmp22 = null;
-        if (null != preview) {
-          const obj9 = { style: tmp4.preview, children: preview };
-          tmp22 = hasOwnProperty(View, obj9);
-        }
-        cResult[13] = preview;
-        cResult[14] = tmp4.preview;
-        cResult[15] = tmp22;
-        tmp21 = tmp22;
       }
+      const obj10 = { style: componentHeader, children: items1 };
+      items1 = [tmp12, tmp17];
+      const tmp23 = metroRequire(View, obj10);
+      cResult[12] = tmp4.componentHeader;
+      cResult[13] = tmp12;
+      cResult[14] = tmp17;
+      cResult[15] = tmp23;
+      tmp20 = tmp23;
     }
-    const obj10 = { style: componentHeader, children: items1 };
-    items1 = [tmp10, tmp14];
-    const tmp20 = metroRequire(View, obj10);
-    cResult[9] = tmp4.componentHeader;
-    cResult[10] = tmp10;
-    cResult[11] = tmp14;
-    cResult[12] = tmp20;
-    tmp17 = tmp20;
+    const intl = tmp(1128).intl;
+    const string = intl.string;
+    if (tmp5) {
+      BM4Ymz = _modDef3865.BM4Ymz;
+    } else {
+      BM4Ymz = tmp(12204).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    }
+    const stringResult = string(BM4Ymz);
+    cResult[7] = experience.kind;
+    cResult[8] = tmp5;
+    cResult[9] = stringResult;
+    tmp14 = stringResult;
   }
-  const obj11 = { style: tmp4.iconBox, children: tmp6 };
-  const tmp11 = hasOwnProperty(View, obj11);
-  cResult[2] = tmp4.iconBox;
-  cResult[3] = tmp6;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
+  const obj11 = { style: tmp4.iconBox, children: tmp8 };
+  const tmp13 = hasOwnProperty(View, obj11);
+  cResult[4] = tmp4.iconBox;
+  cResult[5] = tmp8;
+  cResult[6] = tmp13;
+  tmp12 = tmp13;
 }) : (function ComponentSection(proposal) {
+  let AppsIcon;
+  let BM4Ymz;
   let bullets;
   let commandNames;
   let experience;
-  let intl;
   let items;
-  let obj4;
-  let obj8;
+  let obj5;
+  let obj9;
   let preview;
-  let tmp4Result2;
+  let tmp8Result2;
   ({ experience, bullets, preview, commandNames } = proposal);
   proposal = proposal.proposal;
   const tmp = closure_8();
-  obj = { style: tmp.component, children: null };
-  const obj2 = { style: tmp.componentHeader, children: items };
-  const obj3 = { style: tmp.iconBox, children: hasOwnProperty(obj[experience.kind], obj4) };
-  obj4 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
-  items = [hasOwnProperty(View, obj3), ];
-  const obj5 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: intl.string(conjurePlanExperienceSections.CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind]) };
-  const Text = Text_Text.Text;
-  intl = intl3.intl;
-  items[1] = hasOwnProperty(Text, obj5);
-  const items1 = [metroRequire(View, obj2), , , ];
-  let tmp4Result = null;
-  const tmp2 = metroRequire;
-  if (null != preview) {
-    const obj6 = { style: tmp.preview, children: preview };
-    tmp4Result = tmp4(tmp3, obj6);
+  obj = conjurePlanExperienceSections;
+  const result = obj.conjurePlanExperienceIsApp(experience);
+  if (result) {
+    AppsIcon = tmp2(8460).AppsIcon;
+  } else {
+    AppsIcon = obj[experience.kind];
   }
-  items1[1] = tmp4Result;
+  const obj2 = { style: tmp.component, children: null };
+  const obj3 = { style: tmp.componentHeader, children: items };
+  const obj4 = { style: tmp.iconBox, children: hasOwnProperty(AppsIcon, obj5) };
+  obj5 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
+  items = [hasOwnProperty(View, obj4), ];
+  const Text = tmp2(5150).Text;
+  const intl = tmp2(1128).intl;
+  const string = intl.string;
+  if (result) {
+    BM4Ymz = _modDef3865.BM4Ymz;
+  } else {
+    BM4Ymz = tmp2(12204).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+  }
+  const obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
+  items[1] = hasOwnProperty(Text, obj6);
+  const items1 = [metroRequire(View, obj3), , , ];
+  let tmp8Result = null;
+  if (null != preview) {
+    const obj7 = { style: tmp.preview, children: preview };
+    tmp8Result = tmp8(tmp7, obj7);
+  }
+  items1[1] = tmp8Result;
   if ("automod" === experience.kind) {
     if (1 === bullets.length) {
-      const obj7 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj8) };
-      const Text2 = tmp6(5149).Text;
-      obj8 = { text: bullets[0], commandNames, size: "text-md" };
-      tmp4Result2 = tmp4(Text2, obj7);
+      const obj8 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
+      const Text2 = tmp2(5150).Text;
+      obj9 = { text: bullets[0], commandNames, size: "text-md" };
+      tmp8Result2 = tmp8(Text2, obj8);
     }
-    items1[2] = tmp4Result2;
-    const obj9 = { proposal, experience };
-    items1[3] = hasOwnProperty(closure_14, obj9);
-    obj.children = items1;
-    return tmp2(View, obj);
+    items1[2] = tmp8Result2;
+    const obj10 = { proposal, experience };
+    items1[3] = hasOwnProperty(closure_14, obj10);
+    obj2.children = items1;
+    return metroRequire(View, obj2);
   }
-  tmp4Result2 = null;
+  tmp8Result2 = null;
   if (bullets.length > 0) {
-    const obj10 = { bullets, commandNames };
-    tmp4Result2 = tmp4(closure_15, obj10);
+    const obj11 = { bullets, commandNames };
+    tmp8Result2 = tmp8(closure_15, obj11);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;

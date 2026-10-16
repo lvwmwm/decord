@@ -1,14 +1,14 @@
-// Module ID: 6418
-// Function ID: 6419
+// Module ID: 6420
+// Function ID: 6421
 // Name: CheckmarkLargeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6419, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6421, 4876, 2]
 
-// Module 6418 (CheckmarkLargeIcon)
+// Module 6420 (CheckmarkLargeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 6419 */;
+import AssetRegistry from "AssetRegistry" /* 6421 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

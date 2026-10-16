@@ -1,14 +1,14 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13661
+// Function ID: 13662
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 558, 576, 4909, 4893, 5440, 13654, 5149, 2]
+// Dependencies: [32, 19, 21, 558, 576, 4909, 4893, 5441, 13662, 5150, 2]
 
-// Module 13653 (BalanceCounter)
+// Module 13661 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react3 from "react" /* 4893 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5440 */;
+import spring from "spring" /* 5441 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5149);
+const Text_Text = tmp(5150);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;

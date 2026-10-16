@@ -1,11 +1,11 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12209
+// Function ID: 12210
 // Name: conjureClarificationLinks
-// Dependencies: [5, 10987, 2]
+// Dependencies: [5, 10984, 2]
 // Exports: sendAfterLinkingApps
 
-// Module 12205 (conjureClarificationLinks)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10987 */;
+// Module 12209 (conjureClarificationLinks)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11403
+// Function ID: 11404
 // Name: KrispLogo
-// Dependencies: [19, 17, 1207, 1087, 21, 2131, 1267, 1128, 4865, 558, 576, 504, 5028, 11407, 11408, 5091, 5149, 2]
+// Dependencies: [19, 17, 1207, 1087, 21, 2131, 1267, 1128, 4865, 558, 576, 504, 5028, 11404, 11405, 5091, 5150, 2]
 
-// Module 11406 (KrispLogo)
+// Module 11403 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
@@ -79,10 +79,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const tmpResult2 = shared;
   if (tmpResult2.isThemeLight(stateFromStores)) {
-    tmp8Result = tmp8(11407);
+    tmp8Result = tmp8(11404);
     tmp10 = tmp8;
   } else {
-    tmp8Result = tmp8(11408);
+    tmp8Result = tmp8(11405);
     tmp10 = tmp8;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -113,7 +113,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp17, onPress: handleKrispLinkPressed, children: authStore(Text, obj4) };
     obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-    Text = tmp(5149).Text;
+    Text = tmp(5150).Text;
     intl3 = tmp(1128).intl;
     const tmp23 = authStore(React3, obj3);
     cResult[6] = tmp23;
@@ -147,10 +147,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(11407);
+    tmp4Result = tmp4(11404);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(11408);
+    tmp4Result = tmp4(11405);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
@@ -161,7 +161,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
   intl2 = tmp(1128).intl;
   obj6 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5149).Text;
+  Text = tmp(5150).Text;
   intl3 = tmp(1128).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);

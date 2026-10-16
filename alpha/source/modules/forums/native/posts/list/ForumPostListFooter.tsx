@@ -1,21 +1,21 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12806
+// Function ID: 12807
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 12741, 7202, 12793, 12801, 12794, 10698, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 587, 558, 576, 12748, 7204, 12799, 12807, 12800, 10695, 2]
 
-// Module 12800 (ForumPostListFooter)
+// Module 12806 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7202 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12741 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12793 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12794 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12801 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7204 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12748 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12799 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12800 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12807 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const ForumPostReactions = tmp(10698);
+const ForumPostReactions = tmp(10695);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(12801), obj4);
+    isGameInvitesPost = tmp8(tmp9(12807), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

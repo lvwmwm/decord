@@ -1,15 +1,15 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7669
+// Function ID: 7670
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 5171, 2119, 7669, 504, 584, 2]
+// Dependencies: [109, 502, 5172, 2119, 7670, 504, 584, 2]
 
-// Module 7668 (GuildRoomStore)
+// Module 7669 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 7669 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 7670 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ const authStore5 = {};
 const map2 = new Map();
 let flag = false;
 let c22 = false;
-const isAppBarToggleOpen = {};
+let closure_23 = {};
 let closure_24 = {};
 let closure_25 = [];
 const PersistedStore = get_initializedDefault.PersistedStore;

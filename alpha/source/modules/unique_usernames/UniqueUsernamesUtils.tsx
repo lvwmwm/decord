@@ -1,20 +1,20 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15685
+// Function ID: 15686
 // Name: UniqueUsernamesUtils
-// Dependencies: [5963, 15670, 1128, 2]
+// Dependencies: [5964, 15680, 1128, 2]
 // Exports: formatUsernameLiveCheckValidation
 
-// Module 15675 (UniqueUsernamesUtils)
+// Module 15685 (UniqueUsernamesUtils)
 import intl2 from "intl" /* 1128 */;
-import merged5 from "merged5" /* 5963 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15670 */;
+import merged5 from "merged5" /* 5964 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15680 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesUtils.tsx");
 
 export const formatUsernameLiveCheckValidation = function formatUsernameLiveCheckValidation(arg0) {
   let P;
-  const f122439 = () => {
+  const f122525 = () => {
     let intl;
     const obj = { type: UniqueUsernamesTypes.NameValidationState.RATE_LIMIT, message: intl.string(intl2.t.T15lqn) };
     intl = intl2.intl;
@@ -23,8 +23,8 @@ export const formatUsernameLiveCheckValidation = function formatUsernameLiveChec
   const str = merged5;
   const match = str.match(arg0);
   let obj = { error: P.not(merged5.P.nullish) };
-  const _with = match.with({ rateLimited: true }, f122439).with;
-  match.with({ rateLimited: true }, f122439);
+  const _with = match.with({ rateLimited: true }, f122525).with;
+  match.with({ rateLimited: true }, f122525);
   P = merged5.P;
   const _withResult = _with(obj, (error) => {
     const obj = { type: UniqueUsernamesTypes.NameValidationState.ERROR, message: error.error };

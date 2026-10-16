@@ -1,9 +1,9 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16844
+// Function ID: 16845
 // Name: useScrollToInitialIndexOnce
 // Dependencies: [19, 558, 576, 2]
 
-// Module 16830 (useScrollToInitialIndexOnce)
+// Module 16844 (useScrollToInitialIndexOnce)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

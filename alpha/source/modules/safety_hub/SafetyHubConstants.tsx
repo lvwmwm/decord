@@ -1,9 +1,9 @@
-// Module ID: 7732
-// Function ID: 7733
+// Module ID: 7733
+// Function ID: 7734
 // Name: SafetyHubConstants
 // Dependencies: [1087, 1275, 2]
 
-// Module 7732 (SafetyHubConstants)
+// Module 7733 (SafetyHubConstants)
 import Constants from "Constants" /* 1087 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import size from "module_2" /* 2 */;

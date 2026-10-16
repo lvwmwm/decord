@@ -1,9 +1,9 @@
-// Module ID: 10505
-// Function ID: 10506
+// Module ID: 10506
+// Function ID: 10507
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [19, 1410, 558, 576, 4877, 587, 1105, 1411, 2]
 
-// Module 10505 (useDisplayNameStylesEffectDefaultColors)
+// Module 10506 (useDisplayNameStylesEffectDefaultColors)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;

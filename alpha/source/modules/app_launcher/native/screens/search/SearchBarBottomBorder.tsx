@@ -1,20 +1,20 @@
-// Module ID: 11847
-// Function ID: 11848
+// Module ID: 11844
+// Function ID: 11845
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 5153, 587, 558, 576, 4909, 5440, 5444, 2]
+// Dependencies: [19, 21, 5154, 587, 558, 576, 4909, 5441, 5445, 2]
 
-// Module 11847 (SearchBarBottomBorder)
+// Module 11844 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5440 */;
+import spring from "spring" /* 5441 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const springPresets = tmp(5444);
+const springPresets = tmp(5445);
 const jsx = Fragment.jsx;
 let obj = { border: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
       const obj = { opacity: withSpring(num, springPresets.springStandard) };
       return obj;
     };
-    const obj2 = { withSpring: tmp(5440).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5444).springStandard };
+    const obj2 = { withSpring: tmp(5441).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5445).springStandard };
     const useAnimatedStyle = tmp(4909).useAnimatedStyle;
     tmp(4909);
     fn3.__closure = obj2;
@@ -150,11 +150,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinnedS
     return obj;
   };
   const obj2 = triggerScrollHeight(4909);
-  fn.__closure = { withSpring: triggerScrollHeight(5440).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5444).springStandard };
+  fn.__closure = { withSpring: triggerScrollHeight(5441).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5445).springStandard };
   fn.__workletHash = 17305021520857;
   fn.__initData = __initData2;
   const obj4 = { scrollHandler: callback, bottomBorderComponent: null };
-  ({ withSpring: triggerScrollHeight(5440).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5444).springStandard });
+  ({ withSpring: triggerScrollHeight(5441).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5445).springStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
   return obj4;

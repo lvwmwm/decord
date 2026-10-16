@@ -1,20 +1,20 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8743
+// Function ID: 8744
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2090, 6272, 2074, 21, 5153, 587, 1128, 558, 576, 7075, 7100, 504, 8743, 8756, 8744, 8757, 1633, 8758, 8759, 9004, 6529, 9006, 9007, 7063, 2]
+// Dependencies: [32, 19, 17, 2090, 6273, 2074, 21, 5154, 587, 1128, 558, 576, 7077, 7102, 504, 8744, 8757, 8745, 8758, 1633, 8759, 8760, 9005, 6531, 9007, 9008, 7065, 2]
 
-// Module 8742 (GuildScheduledEventDetailsActionSheet)
+// Module 8743 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8744 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8745 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6272 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6273 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f99673 = () => {
+  const f99736 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -466,9 +466,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f99673), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f99736), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f99673), 2);
+  tmp5(tmp2(tmp3[18])(f99736), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

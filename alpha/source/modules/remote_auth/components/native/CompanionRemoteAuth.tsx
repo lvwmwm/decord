@@ -1,21 +1,21 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17044
+// Function ID: 17045
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1087, 21, 5153, 17031, 6378, 5149, 1128, 5441, 1202, 5021, 558, 576, 1505, 5849, 1267, 17032, 17036, 6876, 2]
+// Dependencies: [19, 17, 1087, 21, 5154, 17045, 6380, 5150, 1128, 5442, 1202, 5021, 558, 576, 1505, 5850, 1267, 17046, 17050, 6878, 2]
 
-// Module 17030 (CompanionRemoteAuth)
+// Module 17044 (CompanionRemoteAuth)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import reactDefault from "react" /* 5849 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6378 */;
-import typing from "typing" /* 17031 */;
-import react_nativeDefault from "react-native" /* 17036 */;
+import reactDefault from "react" /* 5850 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6380 */;
+import typing from "typing" /* 17045 */;
+import react_nativeDefault from "react-native" /* 17050 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,11 +51,11 @@ function renderSteps(state, style, E, context) {
         const Avatar = tmp(1202).Avatar;
         items = [metroImportDefault(Avatar, obj2), , , ];
         const obj3 = { variant: "heading-lg/bold", children: intl.string(intl6.t.apGCUT) };
-        const Text = tmp(5149).Text;
+        const Text = tmp(5150).Text;
         intl = tmp(1128).intl;
         items[1] = metroImportDefault(Text, obj3);
         const obj4 = { style: style.statusText, variant: "text-md/medium", color: "text-muted", children: format(Cbl5JK, obj5) };
-        const Text2 = tmp(5149).Text;
+        const Text2 = tmp(5150).Text;
         const intl2 = tmp(1128).intl;
         format = intl2.format;
         obj5 = { username: obj6.getUserTag(user) };
@@ -64,7 +64,7 @@ function renderSteps(state, style, E, context) {
         items[2] = metroImportDefault(Text2, obj4);
         const obj7 = { style: style.buttonContainer, children: metroImportDefault(Button, obj8) };
         obj8 = { size: "lg", variant: "tertiary", text: intl3.string(intl6.t["ETE/oC"]), onPress: E };
-        Button = tmp(5441).Button;
+        Button = tmp(5442).Button;
         intl3 = tmp(1128).intl;
         items[3] = metroImportDefault(View, obj7);
         return React4(metroImportAll, obj);
@@ -76,12 +76,12 @@ function renderSteps(state, style, E, context) {
   const obj9 = { children: items1 };
   items1 = [metroImportDefault(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}), , ];
   const obj10 = { style: style.statusText, variant: "text-md/medium", color: "text-muted", children: intl4.string(intl6.t["7LkwqE"]) };
-  const Text3 = tmp(5149).Text;
+  const Text3 = tmp(5150).Text;
   intl4 = tmp(1128).intl;
   items1[1] = metroImportDefault(Text3, obj10);
   const obj11 = { style: style.buttonContainer, children: metroImportDefault(Button2, obj12) };
   obj12 = { size: "lg", variant: "tertiary", text: intl5.string(intl6.t["ETE/oC"]), onPress: E };
-  Button2 = tmp(5441).Button;
+  Button2 = tmp(5442).Button;
   intl5 = tmp(1128).intl;
   items1[2] = metroImportDefault(View, obj11);
   return React4(metroImportAll, obj9);
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(17032);
+  const tmpResult = tmp(17046);
   const state = tmpResult.useAuthWebsocket(first, true).state;
   if (cResult[1] !== navigation) {
     class E {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
       }
     }
   }
-  if (state.step === tmp(17031).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === tmp(17045).RemoteAuthStep.PENDING_REMOTE_INIT) {
     class E {
       constructor() {
         navigation.goBack();
@@ -204,7 +204,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   const tmp2 = navigation;
   let obj = navigation(1505);
   navigation = obj.useNavigation();
-  const context = react.useContext(fingerprint(5849));
+  const context = react.useContext(fingerprint(5850));
   const callback = react.useCallback((arg0) => {
     let tmp = arg0;
     const obj = { source: constants2.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth", login_instance_id: tmp };
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
     track(LOGIN_SUCCESSFUL, obj);
   }, []);
-  const obj3 = navigation(17032);
+  const obj3 = navigation(17046);
   const state = obj3.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = react.useCallback(() => {
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   const tmp5 = fingerprint;
   fingerprint = null;
   const obj2 = react;
-  if (state.step === navigation(17031).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(17045).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
   }, items1);
   const obj4 = { headerText: intl.string(tmp2(1128).t["7fNJgA"]), children: closure_7(View, obj5) };
-  const tmp5Result = tmp5(6876);
+  const tmp5Result = tmp5(6878);
   intl = tmp2(1128).intl;
   obj5 = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
   return closure_7(tmp5Result, obj4);

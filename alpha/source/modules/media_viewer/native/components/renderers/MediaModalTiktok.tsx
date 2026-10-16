@@ -1,14 +1,14 @@
-// Module ID: 8649
-// Function ID: 8650
+// Module ID: 8650
+// Function ID: 8651
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 8650, 558, 576, 6140, 8615, 8616, 8617, 2]
+// Dependencies: [32, 19, 21, 8651, 558, 576, 6141, 8616, 8617, 8618, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8649 (MediaModalTiktok)
+// Module 8650 (MediaModalTiktok)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8615 */;
-import useVideoControls from "useVideoControls" /* 8616 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8650 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8616 */;
+import useVideoControls from "useVideoControls" /* 8617 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8651 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

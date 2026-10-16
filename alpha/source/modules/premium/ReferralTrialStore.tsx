@@ -1,14 +1,14 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7395
+// Function ID: 7396
 // Name: ReferralTrialStore
-// Dependencies: [1392, 1087, 7394, 1103, 504, 584, 2]
+// Dependencies: [1392, 1087, 7396, 1103, 504, 584, 2]
 
-// Module 7393 (ReferralTrialStore)
+// Module 7395 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7394 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7396 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -68,6 +68,7 @@ let c16 = false;
 let c17 = false;
 let refresh_at = null;
 let reminder_state_id = null;
+let recurring_reminder_state_id = null;
 const Store = get_initializedDefault.Store;
 class ReferralTrialStore extends Store {
   initialize() {
@@ -145,6 +146,9 @@ class ReferralTrialStore extends Store {
   getReminderStateId() {
     return reminder_state_id;
   }
+  getRecurringReminderStateId() {
+    return recurring_reminder_state_id;
+  }
 }
 const prototype = ReferralTrialStore.prototype;
 ReferralTrialStore.displayName = "ReferralTrialStore";
@@ -176,7 +180,7 @@ let obj = {
     has_eligible_friends = has_eligible_friends.has_eligible_friends;
     c7 = false;
     const referrals_remaining = has_eligible_friends.referrals_remaining;
-    ({ refresh_at, recipient_status, reminder_state_id } = has_eligible_friends);
+    ({ refresh_at, recipient_status, reminder_state_id, recurring_reminder_state_id } = has_eligible_friends);
     new Set(has_eligible_friends.sent_user_ids);
     if (0 === referrals_remaining) {
       const _Set = Set;
@@ -365,6 +369,7 @@ let obj = {
     refresh_at = null;
     recipient_status = new Map();
     reminder_state_id = null;
+    recurring_reminder_state_id = null;
     new Map();
   }
 };

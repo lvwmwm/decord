@@ -1,9 +1,9 @@
-// Module ID: 12944
-// Function ID: 12945
+// Module ID: 12952
+// Function ID: 12953
 // Name: SearchFetcher
 // Dependencies: [5, 2068, 1087, 1104, 3, 1297, 1493, 2]
 
-// Module 12944 (SearchFetcher)
+// Module 12952 (SearchFetcher)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

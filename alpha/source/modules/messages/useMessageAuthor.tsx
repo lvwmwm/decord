@@ -1,10 +1,10 @@
-// Module ID: 5845
-// Function ID: 5846
+// Module ID: 5846
+// Function ID: 5847
 // Name: useMessageAuthor
-// Dependencies: [2068, 2128, 2122, 2090, 4819, 1392, 558, 38, 576, 504, 5021, 5846, 2]
+// Dependencies: [2068, 2128, 2122, 2090, 4819, 1392, 558, 38, 576, 504, 5021, 5847, 2]
 // Exports: getMessageAuthor
 
-// Module 5845 (useMessageAuthor)
+// Module 5846 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -256,7 +256,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp65 = tmp47(5846)(tmp64);
+            const tmp65 = tmp47(5847)(tmp64);
             if (null != message) {
               class F {
                 constructor() {

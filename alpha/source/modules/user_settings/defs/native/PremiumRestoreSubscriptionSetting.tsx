@@ -1,20 +1,20 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16231
+// Function ID: 16232
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1392, 21, 7362, 5362, 1128, 16218, 2002, 558, 576, 504, 1384, 11006, 9266, 2]
+// Dependencies: [1392, 21, 7364, 5363, 1128, 16232, 2002, 558, 576, 504, 1384, 11003, 9267, 2]
 
-// Module 16217 (PremiumRestoreSubscriptionSetting)
+// Module 16231 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7362 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9266 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7364 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9267 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9485
+// Function ID: 9486
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 9485, 2132, 502, 2068, 2128, 2090, 1392, 9486, 5465, 1087, 3, 9487, 9488, 7461, 7464, 6322, 38, 504, 9489, 1267, 2000, 9490, 584, 558, 576, 9491, 9492, 2049, 10043, 7465, 6319, 2]
+// Dependencies: [32, 5, 19, 9486, 2132, 502, 2068, 2128, 2090, 1392, 9487, 5466, 1087, 3, 9488, 9489, 7463, 7466, 6324, 38, 504, 9490, 1267, 2000, 9491, 584, 558, 576, 9492, 9493, 2049, 10044, 7467, 6321, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale
 
-// Module 9484 (ApplicationCommandIndexStore)
+// Module 9485 (ApplicationCommandIndexStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -12,27 +12,27 @@ import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Server from "Server" /* 2000 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6319 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7461 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7465 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9488 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9489 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9490 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9492 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10043 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6321 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7463 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7467 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9489 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9490 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9491 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9493 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9485 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9486 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9486 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5465 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9487 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5466 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -321,11 +321,11 @@ function handleFetchSuccess(arg0) {
           }
           obj = { permissions: keyPermissionsResult, botId: tmp6.bot_id };
           let tmp19 = id;
-          let obj2 = id(7461);
+          let obj2 = id(7463);
           let merged = Object.assign(obj2.getApplicationCommandSection(toApplication(tmp6), false));
           keyPermissionsResult = undefined;
           if (null != tmp6.permissions) {
-            let tmp19Result = tmp19(7464);
+            let tmp19Result = tmp19(7466);
             keyPermissionsResult = tmp19Result.keyPermissions(toServerPermissions(tmp6.permissions, id));
           }
           let obj6 = { descriptor: obj, commands: {} };
@@ -348,7 +348,7 @@ function handleFetchSuccess(arg0) {
       const membersById = requestMembersById(guildId, items);
     }
     const application_commands = index.application_commands;
-    const obj5 = id(7461);
+    const obj5 = id(7463);
     const applicationCommands = obj5.buildApplicationCommands(application_commands.map((description_default) => {
       let mapped;
       let name_default;
@@ -475,7 +475,7 @@ function queryIndex(allowApplicationCommands) {
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
     let tmp = NONE;
-    builtIns = NONE(9490).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(9491).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -487,7 +487,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(9490).ScoreMethod.NONE;
+    NONE = NONE(9491).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -507,11 +507,11 @@ function queryIndex(allowApplicationCommands) {
   if (formatted != null) {
     parts = formatted.split(" ");
   }
-  const ONLY_TEXT = NONE(9490).BuiltInCommandFilter.ONLY_TEXT;
+  const ONLY_TEXT = NONE(9491).BuiltInCommandFilter.ONLY_TEXT;
   const tmp9 = NONE;
-  if (builtIns !== NONE(9490).BuiltInCommandFilter.DENY) {
+  if (builtIns !== NONE(9491).BuiltInCommandFilter.DENY) {
     const tmp12 = builtIns === ONLY_TEXT;
-    const tmp9Result = tmp9(9492);
+    const tmp9Result = tmp9(9493);
     builtInCommands = tmp9Result.getBuiltInCommands(commandTypes, true, tmp12);
   } else {
     builtInCommands = [];
@@ -680,7 +680,7 @@ function queryIndex(allowApplicationCommands) {
   });
   if (builtInCommands.length > 0) {
     let num2 = 0;
-    const tmp87 = queryIndexSection(NONE(9492).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp87 = queryIndexSection(NONE(9493).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp87) {
       items.push(tmp87);
     }
@@ -693,7 +693,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(9490).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(9491).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -1136,7 +1136,7 @@ function scoreCommand(untranslatedName, arg1, arg2, arg3) {
               if (!toLocaleLowerCaseResult1.includes(arg1)) {
                 const tmp25 = importDefault;
                 if (!fuzzysearchDefault(arg1, str)) {
-                  if (!tmp25(6319)(arg1, str2)) {
+                  if (!tmp25(6321)(arg1, str2)) {
                     let COMMAND_DESCRIPTION_FUZZY_MATCHES;
                     let options1 = untranslatedName.options;
                     if (options1 == null) {

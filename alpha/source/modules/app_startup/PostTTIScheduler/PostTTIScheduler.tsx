@@ -1,10 +1,10 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7575
+// Function ID: 7576
 // Name: PostTTIScheduler
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 7574 (PostTTIScheduler)
+// Module 7575 (PostTTIScheduler)
 import size from "module_2" /* 2 */;
 
 const obj = {

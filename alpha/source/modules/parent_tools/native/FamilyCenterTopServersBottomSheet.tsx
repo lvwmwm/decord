@@ -1,20 +1,20 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 15874
+// Function ID: 15875
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [7477, 21, 5153, 587, 558, 576, 504, 7961, 6381, 6402, 1128, 2571, 5149, 6487, 7120, 2]
+// Dependencies: [7479, 21, 5154, 587, 558, 576, 504, 7962, 6383, 6404, 1128, 2571, 5150, 6489, 7122, 2]
 
-// Module 15864 (FamilyCenterTopServersBottomSheet)
+// Module 15874 (FamilyCenterTopServersBottomSheet)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2571 from "module_2571" /* 2571 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import GuildIconDefault from "GuildIcon" /* 6381 */;
-import TableRowGroup2 from "TableRowGroup" /* 6487 */;
-import ActionSheet2 from "ActionSheet" /* 7120 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import GuildIconDefault from "GuildIcon" /* 6383 */;
+import TableRowGroup2 from "TableRowGroup" /* 6489 */;
+import ActionSheet2 from "ActionSheet" /* 7122 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
           }
         }
         const obj2 = { label: stateFromStores.name, subLabel: tmp9, icon: tmp11 };
-        const tmp17 = closure_4(guildActivity(6402).TableRow, obj2);
+        const tmp17 = closure_4(guildActivity(6404).TableRow, obj2);
         cResult[9] = tmp9;
         cResult[10] = stateFromStores.name;
         cResult[11] = tmp11;
@@ -89,7 +89,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const tmpResult2 = guildActivity(7961);
+    const tmpResult2 = guildActivity(7962);
     const topUserOrGuildDescription = tmpResult2.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     cResult[3] = guildActivity.call_count;
     cResult[4] = guildActivity.messages_sent;
@@ -106,10 +106,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(7961);
+    const tmp2Result = guildActivity(7962);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(6402).TableRow;
+    const TableRow = tmp2(6404).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }

@@ -1,17 +1,17 @@
-// Module ID: 14831
-// Function ID: 14832
+// Module ID: 14841
+// Function ID: 14842
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2072, 2068, 4809, 1087, 12604, 10456, 21, 5153, 587, 1128, 14832, 12605, 14833, 14834, 1267, 9553, 5164, 1384, 8709, 9501, 12640, 2002, 5363, 14835, 14836, 6432, 12615, 1630, 12616, 14837, 2]
+// Dependencies: [5, 32, 19, 17, 2072, 2068, 4809, 1087, 12610, 10457, 21, 5154, 587, 1128, 14842, 12611, 14843, 14844, 1267, 9554, 5165, 1384, 8710, 9502, 12646, 2002, 5364, 14845, 14846, 6434, 12621, 1630, 12622, 14847, 2]
 // Exports: default
 
-// Module 14831 (ShareScreen)
+// Module 14841 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import UserRowConstants from "UserRowConstants" /* 10456 */;
-import ForwardConstants from "ForwardConstants" /* 12604 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 14835 */;
-import ShareEmbedDefault from "ShareEmbed" /* 14836 */;
+import UserRowConstants from "UserRowConstants" /* 10457 */;
+import ForwardConstants from "ForwardConstants" /* 12610 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 14845 */;
+import ShareEmbedDefault from "ShareEmbed" /* 14846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -477,7 +477,7 @@ export default function ShareScreen(appEntryKey) {
       embed = undefined;
       const tmp10 = ShareEmbedDefault;
       const tmp4 = authStore5;
-      const tmp5 = trackedExposureExperiments;
+      const tmp5 = closure_17;
       const tmp6 = authStore4;
       if (embed != null) {
         embed = tmp.embed;

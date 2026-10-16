@@ -1,16 +1,16 @@
-// Module ID: 18435
-// Function ID: 18436
+// Module ID: 18445
+// Function ID: 18446
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 4909, 5154, 6152, 9557, 1128, 5149, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 4909, 5155, 6153, 12862, 1128, 5150, 2]
 
-// Module 18435 (NewMemberActionsCompletedModal)
+// Module 18445 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5154 */;
+import timing from "timing" /* 5155 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -76,10 +76,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
       return obj;
     }
   }
-  T.__closure = { withDelay: tmp(4909).withDelay, withTiming: tmp(5154).withTiming, barWidth: sharedValue };
+  T.__closure = { withDelay: tmp(4909).withDelay, withTiming: tmp(5155).withTiming, barWidth: sharedValue };
   T.__workletHash = 7643178959760;
   T.__initData = __initData;
-  ({ withDelay: tmp(4909).withDelay, withTiming: tmp(5154).withTiming, barWidth: sharedValue });
+  ({ withDelay: tmp(4909).withDelay, withTiming: tmp(5155).withTiming, barWidth: sharedValue });
   const animatedStyle = tmpResult.useAnimatedStyle(T);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
@@ -209,8 +209,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   }
   cResult[7] = tmp4.text;
   cResult[8] = tmp13;
-  cResult[9] = closure_5(tmp(5149).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
-  const tmp16 = closure_5(tmp(5149).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
+  cResult[9] = closure_5(tmp(5150).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
+  const tmp16 = closure_5(tmp(5150).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
 }) : (function NewMemberActionsCompleted(arg0) {
   let initialPercent;
   let intl;
@@ -237,10 +237,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
     obj2 = timing;
     return obj;
   };
-  fn.__closure = { withDelay: sharedValue(4909).withDelay, withTiming: sharedValue(5154).withTiming, barWidth: sharedValue };
+  fn.__closure = { withDelay: sharedValue(4909).withDelay, withTiming: sharedValue(5155).withTiming, barWidth: sharedValue };
   fn.__workletHash = 8771000018451;
   fn.__initData = __initData2;
-  ({ withDelay: sharedValue(4909).withDelay, withTiming: sharedValue(5154).withTiming, barWidth: sharedValue });
+  ({ withDelay: sharedValue(4909).withDelay, withTiming: sharedValue(5155).withTiming, barWidth: sharedValue });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const effect1 = react.useEffect(() => {
     const timerId = setTimeout(() => {
@@ -250,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   }, []);
   const obj4 = { style: tmp.screen, children: items1 };
   const obj5 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1128).t.pGj5u2, { count: numActions }) };
-  const Text = sharedValue(5149).Text;
+  const Text = sharedValue(5150).Text;
   intl = sharedValue(1128).intl;
   items1 = [closure_5(Text, obj5), ];
   const obj6 = { style: tmp.progressBackground, children: closure_5(ReanimatedRexportDefault.View, obj7) };

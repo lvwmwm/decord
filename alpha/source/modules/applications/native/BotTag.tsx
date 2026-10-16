@@ -1,19 +1,19 @@
-// Module ID: 8992
-// Function ID: 8993
+// Module ID: 8993
+// Function ID: 8994
 // Name: BotTag
-// Dependencies: [19, 17, 1375, 21, 5153, 587, 1128, 558, 576, 8993, 5149, 2]
+// Dependencies: [19, 17, 1375, 21, 5154, 587, 1128, 558, 576, 8994, 5150, 2]
 
-// Module 8992 (BotTag)
+// Module 8993 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8993 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8994 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(8993).CheckmarkSmallBoldIcon;
+      const CheckmarkSmallBoldIcon = tmp(8994).CheckmarkSmallBoldIcon;
       const tmp17 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   }
   const obj2 = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: items1 };
   items = [tmp2.tag, tmp11, style, prop];
-  items1 = [tmp6, hasOwnProperty(tmp17(5149).Text, { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 })];
+  items1 = [tmp6, hasOwnProperty(tmp17(5150).Text, { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 })];
   return metroRequire(View, obj2);
 });
 tmp5.Types = BotTagTypes;

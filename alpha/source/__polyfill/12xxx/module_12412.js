@@ -1,49 +1,73 @@
 // Module ID: 12412
 // Function ID: 12413
-// Dependencies: [12413]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [12331, 12352, 12377]
+// Exports: getCurrentHub, getCurrentHubShim
 
 // Module 12412
-import _mod12413 from "module_12413" /* 12413 */;
+import _mod12331 from "module_12331" /* 12331 */;
+import _mod12352 from "module_12352" /* 12352 */;
+import _mod12377 from "module_12377" /* 12377 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
+function getCurrentHubShim() {
+  let obj = {
+    bindClient(arg0) {
+      const obj = _mod12331;
+      const currentScope = obj.getCurrentScope();
+      currentScope.setClient(arg0);
+    },
+    withScope: _mod12331.withScope,
+    getClient() {
+      const obj = _mod12331;
+      return obj.getClient();
+    },
+    getScope: _mod12331.getCurrentScope,
+    getIsolationScope: _mod12331.getIsolationScope,
+    captureException(arg0, arg1) {
+      const obj = _mod12331;
+      const currentScope = obj.getCurrentScope();
+      return currentScope.captureException(arg0, arg1);
+    },
+    captureMessage(arg0, arg1, arg2) {
+      const obj = _mod12331;
+      const currentScope = obj.getCurrentScope();
+      return currentScope.captureMessage(arg0, arg1, arg2);
+    },
+    captureEvent: _mod12352.captureEvent,
+    addBreadcrumb: _mod12377.addBreadcrumb,
+    setUser: _mod12352.setUser,
+    setTags: _mod12352.setTags,
+    setTag: _mod12352.setTag,
+    setExtra: _mod12352.setExtra,
+    setExtras: _mod12352.setExtras,
+    setContext: _mod12352.setContext,
+    getIntegration(id) {
+      const obj = _mod12331;
+      const client = obj.getClient();
+      const integrationByName = client && client.getIntegrationByName(id.id) || null;
+      return integrationByName;
+    },
+    startSession: _mod12352.startSession,
+    endSession: _mod12352.endSession,
+    captureSession(arg0) {
+      const tmp3 = arg0;
+      if (tmp3) {
+        const tmpResult = _mod12352;
+        return tmpResult.endSession();
+      } else {
+        const tmpResult3 = _mod12331;
+        const currentScope = tmpResult3.getCurrentScope();
+        const tmpResult4 = _mod12331;
+        const client = tmpResult4.getClient();
+        const session = currentScope.getSession();
+        const tmp5 = client && session;
+        if (tmp5) {
+          client.captureSession(session);
+        }
+      }
+    }
+  };
+  return obj;
 }
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12413;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
-    }
-    tmp2 = "[object process]" === call(num);
-  }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
-};
+export const getCurrentHub = getCurrentHubShim;
+export { getCurrentHubShim };

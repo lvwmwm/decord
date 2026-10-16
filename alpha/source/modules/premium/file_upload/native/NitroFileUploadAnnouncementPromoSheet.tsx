@@ -1,16 +1,16 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 18043
+// Function ID: 18044
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 2065, 21, 5153, 587, 558, 576, 5458, 18034, 1128, 2673, 5441, 10572, 2]
+// Dependencies: [19, 17, 2065, 21, 5154, 587, 558, 576, 5459, 18044, 1128, 2673, 5442, 10572, 2]
 
-// Module 18033 (NitroFileUploadAnnouncementPromoSheet)
+// Module 18043 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import _modDef2673 from "module_2673" /* 2673 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult = tmp(5458);
+  const tmpResult = tmp(5459);
   const unmountEffect = tmpResult.useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class I {
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp10 = jsx(tmp(18034).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp10 = jsx(tmp(18044).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[6] = tmp10;
     tmp9 = tmp10;
   } else {
@@ -154,8 +154,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
       }
     }
     cResult[12] = tmp8;
-    cResult[13] = jsx(tmp(5441).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
-    const tmp22 = jsx(tmp(5441).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
+    cResult[13] = jsx(tmp(5442).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
+    const tmp22 = jsx(tmp(5442).Button, { grow: true, size: "lg", variant: "primary", text: tmp19, onPress: tmp8 });
   } else {
     class I {
       constructor() {

@@ -1,14 +1,14 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16468
+// Function ID: 16469
 // Name: SwipeRightToLeftScreen
-// Dependencies: [19, 8213, 21, 558, 576, 11006, 15652, 2]
+// Dependencies: [19, 8214, 21, 558, 576, 11003, 15662, 2]
 
-// Module 16454 (SwipeRightToLeftScreen)
+// Module 16468 (SwipeRightToLeftScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
-import SettingLayoutDefault from "SettingLayout" /* 15652 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingLayoutDefault from "SettingLayout" /* 15662 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const items1 = [obj3];
     const obj2 = { sections: items2 };
     items2 = [];
-    const createList = tmp2(11006).createList;
+    const createList = tmp2(11003).createList;
     SettingBuilders;
     HermesBuiltin.arraySpread(items2, items1, 0);
     const list = createList(obj2);

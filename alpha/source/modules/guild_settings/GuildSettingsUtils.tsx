@@ -1,13 +1,13 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18763
+// Function ID: 18764
 // Name: GuildSettingsUtils
-// Dependencies: [2123, 1087, 1099, 17905, 2]
+// Dependencies: [2123, 1087, 1099, 17915, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 18750 (GuildSettingsUtils)
+// Module 18763 (GuildSettingsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2123 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 17905 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 17915 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

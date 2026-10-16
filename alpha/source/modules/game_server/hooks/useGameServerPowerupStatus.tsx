@@ -1,13 +1,13 @@
-// Module ID: 13185
-// Function ID: 13186
+// Module ID: 13193
+// Function ID: 13194
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8253, 558, 576, 504, 13169, 1128, 2603, 2]
+// Dependencies: [19, 8254, 558, 576, 504, 13177, 1128, 2603, 2]
 
-// Module 13185 (useGameServerPowerupStatus)
+// Module 13193 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1128 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13169 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13177 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8253 */;
+import GameServerStore from "GameServerStore" /* 8254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(13169)(arg0);
+  const tmp2 = stateFromStores(13177)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {

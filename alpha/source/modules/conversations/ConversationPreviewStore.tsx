@@ -1,16 +1,16 @@
-// Module ID: 7537
-// Function ID: 7538
+// Module ID: 7538
+// Function ID: 7539
 // Name: ConversationPreviewStore
-// Dependencies: [32, 502, 2068, 4819, 1392, 7534, 1459, 7536, 7535, 5496, 504, 584, 2]
+// Dependencies: [32, 502, 2068, 4819, 1392, 5132, 1459, 7537, 7536, 5497, 504, 584, 2]
 
-// Module 7537 (ConversationPreviewStore)
+// Module 7538 (ConversationPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5496 */;
-import ConversationConstants from "ConversationConstants" /* 7534 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7535 */;
-import ConversationsUtils from "ConversationsUtils" /* 7536 */;
+import ConversationConstants from "ConversationConstants" /* 5132 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5497 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7536 */;
+import ConversationsUtils from "ConversationsUtils" /* 7537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -51,7 +51,7 @@ function handleReaction(messageId) {
         if (flag2) {
           const messageByMessageId2 = peekResult.messageByMessageId;
           const result = messageByMessageId2.set(messageId, applyReactionResult);
-          const tmp5Result = tmp5(7535);
+          const tmp5Result = tmp5(7536);
           const result1 = tmp5Result.replaceHydratedMessage(peekResult, messageId, applyReactionResult);
           flag2 = true;
         }
@@ -136,8 +136,8 @@ class ConversationPreviewStore extends Store {
   touchConversation(arg0) {
     return null != navigation.get(arg0);
   }
-  getConversation(c3) {
-    const peekResult = navigation.peek(c3);
+  getConversation(arg0) {
+    const peekResult = navigation.peek(arg0);
     let conversation;
     if (peekResult != null) {
       conversation = peekResult.conversation;
@@ -222,10 +222,10 @@ let obj2 = {
   },
   CONVERSATION_MESSAGES_FETCH_START: function handleConversationMessagesFetchStart(conversationId) {
     conversationId = conversationId.conversationId;
-    if (true !== conversationId.isStandalone) {
+    let str = "preview";
+    if ("preview" !== conversationId.cacheType) {
       return false;
     } else {
-      let str = "preview";
       if (tmp) {
         str = "full";
       }
@@ -244,7 +244,7 @@ let obj2 = {
       }
     }
   },
-  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(isStandalone) {
+  CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(cacheType) {
     let _undefined;
     let conversationId;
     let fullyHydrated;
@@ -258,12 +258,12 @@ let obj2 = {
         continue;
       }
     }
-    ({ conversationId, fullyHydrated } = isStandalone);
+    ({ conversationId, fullyHydrated } = cacheType);
     _require = undefined;
-    if (true !== isStandalone.isStandalone) {
+    let str = "preview";
+    if ("preview" !== cacheType.cacheType) {
       return false;
     } else {
-      let str = "preview";
       if (fullyHydrated) {
         str = "full";
       }
@@ -307,10 +307,10 @@ let obj2 = {
   },
   CONVERSATION_MESSAGES_FETCH_FAILURE: function handleConversationMessagesFetchFailure(conversationId) {
     conversationId = conversationId.conversationId;
-    if (true !== conversationId.isStandalone) {
+    let str = "preview";
+    if ("preview" !== conversationId.cacheType) {
       return false;
     } else {
-      let str = "preview";
       if (tmp) {
         str = "full";
       }
@@ -355,7 +355,7 @@ let obj2 = {
             if (flag2) {
               const messageByMessageId2 = peekResult.messageByMessageId;
               const result = messageByMessageId2.set(id, updateMessageRecordResult);
-              const tmp7Result = tmp7(7535);
+              const tmp7Result = tmp7(7536);
               const result1 = tmp7Result.replaceHydratedMessage(peekResult, id, updateMessageRecordResult);
               flag2 = true;
             }

@@ -1,15 +1,15 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6527
+// Function ID: 6528
 // Name: BaseTextField
-// Dependencies: [109, 19, 21, 1384, 558, 576, 6523, 4883, 6526, 6840, 4882, 2]
+// Dependencies: [109, 19, 21, 1384, 558, 576, 6525, 4883, 6528, 6842, 4882, 2]
 
-// Module 6525 (BaseTextField)
+// Module 6527 (BaseTextField)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import mergeProps from "mergeProps" /* 4882 */;
 import useFocus from "useFocus" /* 4883 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6523 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6840 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6525 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6842 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseTextFi
   } else {
     tmp9 = cResult[1];
   }
-  const InputFieldContainer = tmp(6523).InputFieldContainer;
+  const InputFieldContainer = tmp(6525).InputFieldContainer;
   const leading = iter.leading;
-  const NativeTextInput = tmp(6526).NativeTextInput;
+  const NativeTextInput = tmp(6528).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties2.propsForNativeTextInput;
   _objectWithoutProperties2;
   const tmpResult9 = mergeProps;
@@ -252,11 +252,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseTextFi
     }
   }, items);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp(6523).InputFieldContainer;
+  const InputFieldContainer = tmp(6525).InputFieldContainer;
   const merged = Object.assign(iter);
   items1 = [iter.leading, , ];
   const obj7 = { value: replaced, defaultValue: replaced1, onChangeText: callback, ref: tmpResult10.mergeRefs(ref1, ref), style: items2, placeholderTextColor: inputStyles.placeholderText.color };
-  const NativeTextInput = tmp(6526).NativeTextInput;
+  const NativeTextInput = tmp(6528).NativeTextInput;
   const merged1 = Object.assign(tmp6);
   const propsForNativeTextInput = _objectWithoutProperties2.propsForNativeTextInput;
   _objectWithoutProperties2;

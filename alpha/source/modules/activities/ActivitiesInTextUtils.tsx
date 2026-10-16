@@ -1,10 +1,10 @@
-// Module ID: 8739
-// Function ID: 8740
+// Module ID: 8740
+// Function ID: 8741
 // Name: ActivitiesInTextUtils
 // Dependencies: [2068, 4809, 1098, 1108, 558, 576, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled
 
-// Module 8739 (ActivitiesInTextUtils)
+// Module 8740 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1098 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

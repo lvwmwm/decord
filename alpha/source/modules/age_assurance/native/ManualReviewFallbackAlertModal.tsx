@@ -1,14 +1,14 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7936
+// Function ID: 7937
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 558, 576, 1128, 3189, 5367, 5367, 7936, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3189, 5368, 5368, 7937, 2]
 
-// Module 7935 (ManualReviewFallbackAlertModal)
+// Module 7936 (ManualReviewFallbackAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import _modDef3189 from "module_3189" /* 3189 */;
-import AlertModal2 from "AlertModal" /* 5367 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7936 */;
+import AlertModal2 from "AlertModal" /* 5368 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7937 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -43,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl3.string(intl5.t["NX+WJN"]) };
-    const AlertActionButton = tmp(5367).AlertActionButton;
+    const AlertActionButton = tmp(5368).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp11 = _false(AlertActionButton, obj2, "got-it");
     cResult[2] = tmp11;
@@ -53,10 +53,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { title: tmp4, content: tmp5, actions: React3(AlertActions, obj4) };
-    const AlertModal = tmp(5367).AlertModal;
+    const AlertModal = tmp(5368).AlertModal;
     obj4 = { children: items };
     items = [tmp9, ];
-    AlertActions = tmp(5367).AlertActions;
+    AlertActions = tmp(5368).AlertActions;
     const obj5 = {
       variant: "secondary",
       text: intl4.string(_modDef3189.Z61nkt),
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
           return obj.handleManualReviewCta();
         }
     };
-    const AlertActionButton2 = tmp(5367).AlertActionButton;
+    const AlertActionButton2 = tmp(5368).AlertActionButton;
     intl4 = tmp(1128).intl;
     items[1] = _false(AlertActionButton2, obj5, "request-manual-review");
     const tmp16 = _false(AlertModal, obj3);

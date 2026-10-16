@@ -1,10 +1,10 @@
-// Module ID: 7458
-// Function ID: 7459
+// Module ID: 7460
+// Function ID: 7461
 // Name: AutomodFeedback
 // Dependencies: [1128, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7458 (AutomodFeedback)
+// Module 7460 (AutomodFeedback)
 import intl3 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,16 @@
 // Module ID: 15030
 // Function ID: 15031
-// Dependencies: [15028]
+// Dependencies: [15023]
 
 // Module 15030
-import _mod15028 from "module_15028" /* 15028 */;
+import _mod15023 from "module_15023" /* 15023 */;
 
 
-export default (arg0, arg1) => _mod15028(arg0, arg1, true);
+export default (arg0, arg1) => {
+  const tmp = _mod15023(arg0, arg1);
+  let version = null;
+  if (tmp) {
+    version = tmp.version;
+  }
+  return version;
+};

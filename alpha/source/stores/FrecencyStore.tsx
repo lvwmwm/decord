@@ -1,15 +1,15 @@
-// Module ID: 6311
-// Function ID: 6312
+// Module ID: 6313
+// Function ID: 6314
 // Name: FrecencyStore
-// Dependencies: [1246, 2068, 2090, 2119, 4998, 1087, 1097, 5190, 12, 504, 584, 2]
+// Dependencies: [1246, 2068, 2090, 2119, 4998, 1087, 1097, 5191, 12, 504, 584, 2]
 
-// Module 6311 (FrecencyStore)
+// Module 6313 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import FrecencyDefault from "Frecency" /* 5190 */;
+import FrecencyDefault from "Frecency" /* 5191 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;

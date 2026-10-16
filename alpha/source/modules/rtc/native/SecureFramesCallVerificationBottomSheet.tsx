@@ -1,16 +1,16 @@
-// Module ID: 18158
-// Function ID: 18159
+// Module ID: 18168
+// Function ID: 18169
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 5171, 1087, 21, 558, 576, 504, 9057, 8708, 1128, 9054, 9070, 2]
+// Dependencies: [19, 5172, 1087, 21, 558, 576, 504, 9058, 8709, 1128, 9055, 9071, 2]
 
-// Module 18158 (SecureFramesCallVerificationBottomSheet)
+// Module 18168 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import showShareActionSheet from "showShareActionSheet" /* 8708 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9057 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9070 */;
+import showShareActionSheet from "showShareActionSheet" /* 8709 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9058 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9071 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     const format = intl3.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
     const wKxADe = tmp(1128).t.wKxADe;
-    tmpResult2 = channelId(9054);
+    tmpResult2 = channelId(9055);
     const formatResult = format(wKxADe, obj2);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
   const wKxADe = channelId(1128).t.wKxADe;
-  obj4 = channelId(9054);
+  obj4 = channelId(9055);
   return <tmp3 title={intl.string(channelId(1128).t.cTQI5t)} subtitle={intl2.string(channelId(1128).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");

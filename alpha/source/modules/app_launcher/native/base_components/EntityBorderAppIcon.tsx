@@ -1,15 +1,15 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11790
+// Function ID: 11791
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 587, 5153, 558, 576, 5091, 2]
+// Dependencies: [17, 21, 587, 5154, 558, 576, 5091, 2]
 
-// Module 11793 (EntityBorderAppIcon)
+// Module 11790 (EntityBorderAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,83 +1,30 @@
 // Module ID: 12362
 // Function ID: 12363
-// Dependencies: [12322, 12355]
-// Exports: makePromiseBuffer
+// Dependencies: [12318, 12348]
+// Exports: createClientReportEnvelope
 
 // Module 12362
-import _mod12322 from "module_12322" /* 12322 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12318 */;
+import _mod12348 from "module_12348" /* 12348 */;
 
-let diff;
 
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod12322;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
-    }
-  };
-  return obj;
-}
+export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    const obj = _browserPerformanceTimeOriginMode;
+    result = obj.dateTimestampInSeconds();
+  }
+  items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod12348.createEnvelope;
+  _mod12348;
+  if (dsn) {
+    obj3 = { dsn };
+    const obj2 = { dsn };
+  } else {
+    obj3 = {};
+  }
+  const items1 = [items];
+  return createEnvelope(obj3, items1);
+};

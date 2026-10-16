@@ -1,9 +1,10 @@
 // Module ID: 8035
 // Function ID: 8036
-// Dependencies: [8036]
+// Dependencies: [8036, 8038]
 
 // Module 8035
 import _mod8036 from "module_8036" /* 8036 */;
+import _mod8038 from "module_8038" /* 8038 */;
 
 let hasOwnProperty;
 
@@ -65,3 +66,4 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
   }
 });
 tmp3(_mod8036, exports);
+tmp3(_mod8038, exports);

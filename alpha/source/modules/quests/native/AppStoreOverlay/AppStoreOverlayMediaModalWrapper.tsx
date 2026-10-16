@@ -1,14 +1,14 @@
-// Module ID: 13810
-// Function ID: 13811
+// Module ID: 13821
+// Function ID: 13822
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [109, 19, 4861, 1087, 21, 558, 576, 13809, 6152, 8641, 8642, 2]
+// Dependencies: [109, 19, 4861, 1087, 21, 558, 576, 13820, 6153, 8642, 8643, 2]
 
-// Module 13810 (AppStoreOverlayMediaModalWrapper)
+// Module 13821 (AppStoreOverlayMediaModalWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
-import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8641 */;
-import MediaModalDefault from "MediaModal" /* 8642 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
+import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8642 */;
+import MediaModalDefault from "MediaModal" /* 8643 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 4861 */;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
     const items = [];
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
     tmp9 = cResult[4];
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   if (cResult[5] !== tmp3) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
     cResult[5] = tmp3;
@@ -72,14 +72,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
   }
   if (ActionSheetStore.isOpen()) {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
     MediaModalSheetWrapperDefault;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   } else {
     class M {
       constructor() {
-        return () => { /* body not rendered: F147546 */ };
+        return () => { /* body not rendered: F147648 */ };
       }
     }
     MediaModalDefault;

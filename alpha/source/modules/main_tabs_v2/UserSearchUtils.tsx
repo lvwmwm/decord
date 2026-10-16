@@ -1,14 +1,14 @@
-// Module ID: 7568
-// Function ID: 7569
+// Module ID: 7569
+// Function ID: 7570
 // Name: UserSearchUtils
-// Dependencies: [7569, 2128, 4819, 1087, 2034, 5021, 2]
+// Dependencies: [7570, 2128, 4819, 1087, 2034, 5021, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7568 (UserSearchUtils)
+// Module 7569 (UserSearchUtils)
 import Constants from "Constants" /* 1087 */;
 import StringUtils from "StringUtils" /* 2034 */;
 import UserUtilsDefault from "UserUtils" /* 5021 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7569 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7570 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import RelationshipStore from "RelationshipStore" /* 4819 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17875
+// Function ID: 17876
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1392, 2065, 21, 5153, 558, 576, 504, 4828, 1128, 2963, 9679, 17866, 2]
+// Dependencies: [19, 17, 1392, 2065, 21, 5154, 558, 576, 504, 4828, 1128, 2963, 9678, 17876, 2]
 
-// Module 17865 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 17875 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,14 +12,14 @@ import _modDef2963 from "module_2963" /* 2963 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const DisplayNameLockeAbstractUI = tmp(17866);
+const DisplayNameLockeAbstractUI = tmp(17876);
 let react = react_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(9679);
+  const tmpResult = visible(9678);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 });

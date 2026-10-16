@@ -1,15 +1,15 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 10333
+// Function ID: 10334
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 5075, 7482, 1089, 558, 576, 504, 7527, 7481, 2]
+// Dependencies: [32, 19, 5075, 7484, 1089, 558, 576, 504, 7529, 7483, 2]
 
-// Module 10332 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7481 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7527 */;
+// Module 10333 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7483 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7529 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ExperimentStore_mod from "ExperimentStore" /* 5075 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7484 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -172,7 +172,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7481);
+              const tmp12Result = tmp12(7483);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }
@@ -263,7 +263,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7481);
+              const tmp12Result = tmp12(7483);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }

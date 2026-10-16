@@ -1,21 +1,21 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10280
+// Function ID: 10281
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 10268, 1128, 5149, 5441, 5091, 10280, 2]
+// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 10269, 1128, 5150, 5442, 5091, 10281, 2]
 
-// Module 10279 (MediaKeyboardFooter)
+// Module 10280 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10268 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10280 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10269 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10281 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

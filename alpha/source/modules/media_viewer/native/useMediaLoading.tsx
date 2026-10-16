@@ -1,11 +1,11 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13935
+// Function ID: 13936
 // Name: useMediaLoading
-// Dependencies: [32, 19, 558, 576, 6869, 2]
+// Dependencies: [32, 19, 558, 576, 6871, 2]
 
-// Module 13924 (useMediaLoading)
+// Module 13935 (useMediaLoading)
 import react2 from "react" /* 576 */;
-import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6869 */;
+import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

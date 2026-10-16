@@ -1,14 +1,14 @@
-// Module ID: 15920
-// Function ID: 15921
+// Module ID: 15930
+// Function ID: 15931
 // Name: VrHeadsetIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15921, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15931, 4876, 2]
 
-// Module 15920 (VrHeadsetIcon)
+// Module 15930 (VrHeadsetIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 15921 */;
+import AssetRegistry from "AssetRegistry" /* 15931 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,15 +1,15 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8011
+// Function ID: 8012
 // Name: UploadTargets
-// Dependencies: [2068, 1087, 8000, 7984, 7979, 8011, 8013, 2]
+// Dependencies: [2068, 1087, 8001, 7985, 7980, 8012, 8014, 2]
 // Exports: getUploadTarget
 
-// Module 8010 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 7979 */;
-import FileUtilsAll from "FileUtils" /* 7984 */;
-import UploadLimits from "UploadLimits" /* 8000 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8011 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8013 */;
+// Module 8011 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 7980 */;
+import FileUtilsAll from "FileUtils" /* 7985 */;
+import UploadLimits from "UploadLimits" /* 8001 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8012 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8014 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

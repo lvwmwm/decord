@@ -1,9 +1,9 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12838
+// Function ID: 12839
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 558, 576, 4995, 4877, 587, 1105, 5453, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4995, 4877, 587, 1105, 5454, 2]
 
-// Module 12832 (ChatInputScrimGradient)
+// Module 12838 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp6;
-const LinearGradientDefault = tmp6(5453);
+const LinearGradientDefault = tmp6(5454);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;

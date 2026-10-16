@@ -1,13 +1,13 @@
-// Module ID: 13655
-// Function ID: 13656
+// Module ID: 13663
+// Function ID: 13664
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 558, 576, 1128, 5441, 9271, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5442, 9272, 2]
 
-// Module 13655 (BalanceWidgetPillButton)
+// Module 13663 (BalanceWidgetPillButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5441 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9271 */;
+import components_Button_Button from "components/Button/Button" /* 5442 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9272 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWid
         }
       }
     }
-    const Button = tmp(5441).Button;
+    const Button = tmp(5442).Button;
     const tmp14 = <Button variant={str} onPress={onPress} size="sm" text={tmp5} icon={AssetRegistryDefault} accessible={undefined === accessible || accessible} accessibilityElementsHidden={!(undefined === accessible || accessible)} importantForAccessibility={str3} accessibilityLabel={tmp9} disabled={null === balance} loading={null === balance} />;
     cResult[5] = undefined === accessible || accessible;
     cResult[6] = null === balance;

@@ -1,13 +1,13 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8193
+// Function ID: 8194
 // Name: resolveMessageContentColors
-// Dependencies: [5153, 5028, 587, 2]
+// Dependencies: [5154, 5028, 587, 2]
 // Exports: default
 
-// Module 8192 (resolveMessageContentColors)
+// Module 8193 (resolveMessageContentColors)
 import nativeDefault from "native" /* 587 */;
 import shared from "shared" /* 5028 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 let theme;

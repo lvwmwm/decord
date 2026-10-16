@@ -1,9 +1,9 @@
-// Module ID: 13633
-// Function ID: 13634
+// Module ID: 13641
+// Function ID: 13642
 // Name: billing/iapProducts
 // Dependencies: [2]
 
-// Module 13633 (billing/iapProducts)
+// Module 13641 (billing/iapProducts)
 import size from "module_2" /* 2 */;
 
 let items1;

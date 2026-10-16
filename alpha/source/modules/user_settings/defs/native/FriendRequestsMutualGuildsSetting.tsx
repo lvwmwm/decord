@@ -1,23 +1,23 @@
-// Module ID: 15946
-// Function ID: 15947
+// Module ID: 15956
+// Function ID: 15957
 // Name: FriendRequestsMutualGuildsSetting
-// Dependencies: [19, 8213, 1087, 558, 15783, 576, 2044, 6906, 1405, 11006, 1128, 2]
+// Dependencies: [19, 8214, 1087, 558, 15793, 576, 2044, 6908, 1405, 11003, 1128, 2]
 
-// Module 15946 (FriendRequestsMutualGuildsSetting)
+// Module 15956 (FriendRequestsMutualGuildsSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8213 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15783 */;
+import SettingsConstants from "SettingsConstants" /* 8214 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15793 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11006 */;
+import SettingBuilders from "SettingBuilders" /* 11003 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(6906);
+const UserSettingsUtils = tmp(6908);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
 let ReactCompilerGating = ReactCompilerGating_mod;

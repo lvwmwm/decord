@@ -1,16 +1,16 @@
-// Module ID: 18276
-// Function ID: 18277
+// Module ID: 18286
+// Function ID: 18287
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 2068, 12841, 1087, 21, 5153, 558, 576, 9543, 12842, 8621, 504, 38, 12850, 1123, 10870, 10871, 4909, 11817, 12851, 1128, 2]
+// Dependencies: [19, 2068, 12847, 1087, 21, 5154, 558, 576, 9544, 12848, 8622, 504, 38, 12856, 1123, 10867, 10868, 4909, 11814, 12857, 1128, 2]
 
-// Module 18276 (VoicePanelControlsAppLauncher)
+// Module 18286 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12847 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5153 */;
+import createStyles from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,20 +207,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   let derivedValue1;
   const tmp = closure_10();
-  let obj = gestureSpecs(9543);
+  let obj = gestureSpecs(9544);
   const gradientTop = obj.useGradientTop();
-  const context = react.useContext(setControlsMode(12842));
+  const context = react.useContext(setControlsMode(12848));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8621)(windowDimensions);
+  const tmp4 = setControlsMode(8622)(windowDimensions);
   react = tmp4;
-  const rect = setControlsMode(8621)(safeArea);
+  const rect = setControlsMode(8622)(safeArea);
   const items = [rect];
   const obj2 = gestureSpecs(504);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(12850);
+  const obj3 = gestureSpecs(12856);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -228,10 +228,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = gestureSpecs(10870);
+  const obj4 = gestureSpecs(10867);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = gestureSpecs(10871).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(gestureSpecs(10870).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = gestureSpecs(10868).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(gestureSpecs(10867).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
   const obj5 = gestureSpecs(4909);
   const sharedValue = obj5.useSharedValue(0);
@@ -277,9 +277,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   View = setControlsMode(4909).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(11817), obj12);
+  items3[0] = closure_7(setControlsMode(11814), obj12);
   const obj13 = { title: intl.string(gestureSpecs(1128).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(12851);
+  const tmp17 = setControlsMode(12857);
   intl = gestureSpecs(1128).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);

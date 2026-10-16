@@ -1,16 +1,16 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14283
+// Function ID: 14284
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5494, 1087, 21, 558, 576, 504, 5168, 7397, 1128, 5111, 14269, 2]
+// Dependencies: [32, 19, 5495, 1087, 21, 558, 576, 504, 5169, 7399, 1128, 5111, 14279, 2]
 
-// Module 14273 (InAppReportsDeleteMessageElement)
+// Module 14283 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5169 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5494 */;
+import MessageStore from "MessageStore" /* 5495 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
       }
       return tmp23;
     }
-    const tmp26 = jsx(reportId(14269), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp26 = jsx(reportId(14279), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp26;
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(14269);
+  reportId(14279);
   const intl = message(1128).intl;
   const intl2 = message(1128).intl;
   const intl3 = message(1128).intl;

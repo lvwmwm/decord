@@ -1,13 +1,13 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10625
+// Function ID: 10626
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 558, 576, 10626, 7069, 10627, 2]
+// Dependencies: [19, 21, 558, 576, 10623, 7071, 10624, 2]
 
-// Module 10628 (ChatViewWrapperBase)
+// Module 10625 (ChatViewWrapperBase)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LayerScope2 from "LayerScope" /* 7069 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10626 */;
+import LayerScope2 from "LayerScope" /* 7071 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10623 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewWr
       }
     }
   }
-  const LayerScope = tmp(7069).LayerScope;
+  const LayerScope = tmp(7071).LayerScope;
   const tmp6 = <LayerScope>{null}</LayerScope>;
   cResult[0] = children;
   cResult[1] = tmp4;

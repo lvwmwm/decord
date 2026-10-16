@@ -1,102 +1,106 @@
 // Module ID: 15051
 // Function ID: 15052
-// Dependencies: [15014, 15043, 15034, 15039, 15035, 15038, 15045, 15042]
+// Dependencies: [15024, 15028, 15023]
 
 // Module 15051
-import _mod15042 from "module_15042" /* 15042 */;
-
-const require = globalThis.__r;
-let _require, closure_1, dependencyMap;
+import _mod15023 from "module_15023" /* 15023 */;
+import _mod15024 from "module_15024" /* 15024 */;
 
 
-export default function(arg0, arg1, arg2, arg3) {
-  let closure_0;
-  let obj;
-  let str;
-  let str3;
-  let tmpResult;
-  let tmpResult4;
-  _require = arg3;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  const tmp3 = new require("module_15014")(arg0, arg3);
-  let tmp4 = new require("module_15043")(arg1, arg3);
-  if (">" === arg2) {
-    dependencyMap = tmp(15034);
-    tmpResult = tmp(15039);
-    const tmpResult3 = tmp(15035);
-    let closure_2 = tmpResult3;
-    str3 = ">=";
-    str = ">";
-    tmpResult4 = tmpResult3;
+export default (num, arg1) => {
+  if (num instanceof _mod15024) {
+    return num;
   } else {
-    str = "<";
-    if ("<" === arg2) {
-      dependencyMap = tmp(15035);
-      tmpResult = tmp(15038);
-      tmpResult4 = tmp(15034);
-      closure_2 = tmpResult4;
-      str3 = "<=";
-    } else {
-      const _TypeError = TypeError;
-      let self = this;
-      let self2 = this;
-      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
-      throw typeError;
+    let StringResult = num;
+    if (typeof num === "number") {
+      const _String = String;
+      StringResult = String(num);
     }
-  }
-  if (tmp(15045)(tmp3, tmp4, arg3)) {
-    return false;
-  } else {
-    let num = 0;
-    let num3 = 0;
-    if (0 < tmp4.set.length) {
-      while (true) {
-        let arr = tmp4.set[num3];
-        _require = null;
-        dependencyMap = null;
-        let item = arr.forEach(function(semver) {
-          let tmp = semver;
-          if (semver.semver === _mod15042.ANY) {
-            const self = this;
-            const self2 = this;
-            tmp = new _mod15042(">=0.0.0");
-          }
-          semver = semver || tmp;
-          closure_1 = closure_1 || tmp;
-          const tmp4 = semver;
-          if (closure_1(tmp.semver, semver.semver, semver)) {
-            semver = tmp;
-          } else if (closure_2(tmp.semver, closure_1.semver, tmp4)) {
-            closure_1 = tmp;
-          }
-        });
-        if (_require.operator !== str) {
-          if (_require.operator !== str3) {
-            if (!dependencyMap.operator) {
-              if (tmpResult(tmp3, dependencyMap.semver)) {
-                obj = { v: false };
-              }
+    if (typeof StringResult !== "string") {
+      return null;
+    } else {
+      let match3;
+      const tmp3 = arg1 || {};
+      if (tmp3.rtl) {
+        let obj;
+        const includePrerelease2 = tmp3.includePrerelease;
+        const safeRe2 = tmp(15028).safeRe;
+        const t2 = tmp(15028).t;
+        if (includePrerelease2) {
+          obj = safeRe2[t2.COERCERTLFULL];
+        } else {
+          obj = safeRe2[t2.COERCERTL];
+        }
+        let match1 = obj.exec(StringResult);
+        let tmp7 = null;
+        let tmp9 = null;
+        if (match1) {
+          while (true) {
+            let tmp11 = tmp7;
+            let tmp12 = tmp7 && match1.index + match1[0].length === tmp11.index + tmp11[0].length;
+            if (!tmp12) {
+              tmp11 = match1;
             }
-            let obj2;
-            if (dependencyMap.operator === str3) {
-              if (tmpResult4(tmp3, dependencyMap.semver)) {
-                obj2 = { v: false };
+            obj.lastIndex = match1.index + match1[1].length + match1[2].length;
+            let match2 = obj.exec(StringResult);
+            tmp9 = tmp11;
+            if (!match2) {
+              break;
+            } else {
+              match1 = match2;
+              tmp7 = tmp11;
+              if (!tmp7) {
+                continue;
+              } else {
+                match1 = match2;
+                tmp7 = tmp11;
+                tmp9 = tmp11;
+                if (tmp11.index + tmp11[0].length === StringResult.length) {
+                  break;
+                }
               }
+              continue;
             }
-            obj = obj2;
-          }
-          if (obj) {
-            break;
-          } else {
-            num3 = num + 1;
-            num = num3;
           }
         }
-        obj = { v: false };
+        obj.lastIndex = -1;
+        match3 = tmp9;
+      } else {
+        let tmp4;
+        const match = StringResult.match;
+        const includePrerelease = tmp3.includePrerelease;
+        const safeRe = tmp(15028).safeRe;
+        const t = tmp(15028).t;
+        if (includePrerelease) {
+          tmp4 = safeRe[t.COERCEFULL];
+        } else {
+          tmp4 = safeRe[t.COERCE];
+        }
+        match3 = match(tmp4);
       }
-      return obj.v;
+      if (null === match3) {
+        return null;
+      } else {
+        let str2 = "";
+        if (tmp3.includePrerelease) {
+          str2 = "";
+          if (match3[5]) {
+            const _HermesInternal = HermesInternal;
+            str2 = "-" + match3[5];
+          }
+        }
+        let str4 = "";
+        if (tmp3.includePrerelease) {
+          str4 = "";
+          if (match3[6]) {
+            const _HermesInternal2 = HermesInternal;
+            str4 = "+" + match3[6];
+          }
+        }
+        const _HermesInternal3 = HermesInternal;
+        const tmp21 = _mod15023;
+        return tmp21("" + match3[2] + "." + match3[3] || "0" + "." + match3[4] || "0" + str2 + str4, tmp3);
+      }
     }
-    return true;
   }
 };

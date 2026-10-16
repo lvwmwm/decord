@@ -1,15 +1,14 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17828
+// Function ID: 17829
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1392, 2071, 1087, 1394, 10561, 1991, 1267, 10571, 2]
+// Dependencies: [1392, 2071, 1087, 1394, 1991, 1267, 10571, 2]
 // Exports: default
 
-// Module 17818 (trackFavoritesGuildViewed)
+// Module 17828 (trackFavoritesGuildViewed)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1991 */;
-import FavoritesHooks from "FavoritesHooks" /* 10561 */;
 import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10571 */;
 import UserStore from "UserStore" /* 1392 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
@@ -20,15 +19,13 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/favorites/analytics/trackFavoritesGuildViewed.tsx");
 
 export default function trackFavoritesGuildViewed() {
-  let obj4;
-  const obj = FavoritesHooks;
-  const isExperimentEnabled = obj.getFavoritesAccess().isExperimentEnabled;
-  const obj2 = PremiumTypeUtilsDefault;
-  const isPremiumExactlyResult = obj2.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
-  const obj3 = { source: obj4.consumeNextFavoritesGuildViewSource(), total_favorites: FavoriteStore.getFavoritesCountAgainstLimit(), is_xp_enabled: isExperimentEnabled, is_premium_tier_2: isPremiumExactlyResult };
+  let obj3;
+  const obj = PremiumTypeUtilsDefault;
+  const isPremiumExactlyResult = obj.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
+  const obj2 = { source: obj3.consumeNextFavoritesGuildViewSource(), total_favorites: FavoriteStore.getFavoritesCountAgainstLimit(), is_xp_enabled: true, is_premium_tier_2: isPremiumExactlyResult };
   const track = AnalyticsUtilsDefault.track;
   const FAVORITES_GUILD_VIEWED = AnalyticEvents.FAVORITES_GUILD_VIEWED;
   AnalyticsUtilsDefault;
-  obj4 = FavoritesGuildAnalytics;
-  track(FAVORITES_GUILD_VIEWED, obj3);
+  obj3 = FavoritesGuildAnalytics;
+  track(FAVORITES_GUILD_VIEWED, obj2);
 };

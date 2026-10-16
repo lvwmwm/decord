@@ -1,15 +1,15 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 12989
+// Function ID: 12990
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2128, 21, 5153, 587, 558, 576, 504, 12805, 1128, 5091, 5149, 2]
+// Dependencies: [19, 17, 2128, 21, 5154, 587, 558, 576, 504, 12811, 1128, 5091, 5150, 2]
 
-// Module 12981 (ApplicationSectionHeader)
+// Module 12989 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
         }
         if (cResult[12] !== name) {
           const obj3 = { variant: "eyebrow", color: "interactive-text-default", children: name };
-          const tmp21 = closure_5(tmp(5149).Text, obj3);
+          const tmp21 = closure_5(tmp(5150).Text, obj3);
           cResult[12] = name;
           cResult[13] = tmp21;
           tmp19 = tmp21;
@@ -122,7 +122,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
       cResult[11] = tmp16;
       tmp15 = tmp16;
     }
-    const tmpResult2 = tmp(12805);
+    const tmpResult2 = tmp(12811);
     const applicationCommandsIconSource = tmpResult2.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
       }
     }
   });
-  const obj2 = section(12805);
+  const obj2 = section(12811);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
@@ -185,7 +185,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
     tmp9 = closure_5(guildId(5091), obj4);
   }
-  items1 = [tmp9, closure_5(tmp2(5149).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  items1 = [tmp9, closure_5(tmp2(5150).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   return tmp7(tmp8, obj3);
 });
 size = size_mod;

@@ -1,12 +1,12 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 7185
+// Function ID: 7186
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [2086, 4809, 1392, 1087, 558, 576, 504, 7184, 7176, 2]
+// Dependencies: [2086, 4809, 1392, 1087, 558, 576, 504, 7186, 7178, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 7183 (GuildRoleSubscriptionSettingUtils)
+// Module 7185 (GuildRoleSubscriptionSettingUtils)
 import GuildRecord from "GuildRecord" /* 2086 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7184 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7186 */;
 import PermissionStore from "PermissionStore" /* 4809 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -95,11 +95,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRole
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult3 = tmp(7184);
+  const tmpResult3 = tmp(7186);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult3.useIsUserInCreatorMonetizationEligibleCountry();
   id = undefined;
-  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(7176).useShouldRestrictUpdatingCreatorMonetizationSettings;
-  tmp(7176);
+  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(7178).useShouldRestrictUpdatingCreatorMonetizationSettings;
+  tmp(7178);
   if (id != null) {
     id = id.id;
   }

@@ -1,25 +1,25 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7144
+// Function ID: 7145
 // Name: getGuildTransitionRoute
-// Dependencies: [7143, 2071, 7007, 2068, 4807, 2090, 2119, 7144, 1087, 2075, 7146, 7150, 7152, 2093, 7167, 2]
+// Dependencies: [7145, 2071, 7009, 2068, 4807, 2090, 2119, 7146, 1087, 2075, 7148, 7152, 7154, 2093, 7169, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 7142 (getGuildTransitionRoute)
+// Module 7144 (getGuildTransitionRoute)
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7146 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 7150 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7152 */;
-import ConjureUtils from "ConjureUtils" /* 7167 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7143 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7148 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 7152 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7154 */;
+import ConjureUtils from "ConjureUtils" /* 7169 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7145 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7007 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7009 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildChannelStore from "GuildChannelStore" /* 4807 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7144 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7146 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

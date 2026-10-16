@@ -1,19 +1,19 @@
-// Module ID: 18875
-// Function ID: 18876
+// Module ID: 18888
+// Function ID: 18889
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5153, 587, 7988, 1452, 8899, 1128, 5091, 11585, 9958, 558, 576, 5149, 5441, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5154, 587, 7989, 1452, 8900, 1128, 5091, 11582, 9959, 558, 576, 5150, 5442, 2]
 
-// Module 18875 (FormImagePicker)
+// Module 18888 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7988 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8899 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7989 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8900 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(11585).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(11582).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(9958).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9959).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormImagePic
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: description };
-  items[0] = closure_8(tmp6(5149).Text, obj3);
+  items[0] = closure_8(tmp6(5150).Text, obj3);
   obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -385,7 +385,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormImagePic
     size: "md",
     disabled
   };
-  items[1] = closure_8(tmp6(5441).Button, obj4);
+  items[1] = closure_8(tmp6(5442).Button, obj4);
   items1 = [closure_9(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

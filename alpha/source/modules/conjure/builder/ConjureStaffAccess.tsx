@@ -1,9 +1,9 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11600
+// Function ID: 11601
 // Name: ConjureStaffAccess
-// Dependencies: [4807, 2090, 4819, 1392, 1087, 558, 576, 5483, 504, 2]
+// Dependencies: [4807, 2090, 4819, 1392, 1087, 558, 576, 5484, 504, 2]
 
-// Module 11603 (ConjureStaffAccess)
+// Module 11600 (ConjureStaffAccess)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GuildChannelStore from "GuildChannelStore" /* 4807 */;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
               tmp7 = closure_1_2;
               tmp8 = item10017;
               selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-              found = selectableChannels.find(() => { /* body not rendered: F145078 */ });
+              found = selectableChannels.find(() => { /* body not rendered: F145159 */ });
               tmp10 = found;
               if (null != found) {
                 obj1 = { isStaff: null, guildId: null, channelId: null };
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
                   tmp7 = closure_1_2;
                   tmp8 = item10017;
                   selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-                  found = selectableChannels.find(() => { /* body not rendered: F145078 */ });
+                  found = selectableChannels.find(() => { /* body not rendered: F145159 */ });
                   tmp10 = found;
                   if (null != found) {
                     obj1 = { isStaff: null, guildId: null, channelId: null };

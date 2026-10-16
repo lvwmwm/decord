@@ -1,9 +1,9 @@
-// Module ID: 15135
-// Function ID: 15136
+// Module ID: 15145
+// Function ID: 15146
 // Name: TrackingConsentUtils
 // Dependencies: [2]
 
-// Module 15135 (TrackingConsentUtils)
+// Module 15145 (TrackingConsentUtils)
 import size from "module_2" /* 2 */;
 
 const obj = {

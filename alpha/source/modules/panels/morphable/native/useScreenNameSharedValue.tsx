@@ -1,9 +1,9 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18080
+// Function ID: 18081
 // Name: useScreenNameSharedValue
 // Dependencies: [19, 558, 576, 5036, 4909, 2]
 
-// Module 18070 (useScreenNameSharedValue)
+// Module 18080 (useScreenNameSharedValue)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

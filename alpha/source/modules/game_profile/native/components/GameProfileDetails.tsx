@@ -1,21 +1,21 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 9326
+// Function ID: 9327
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8696, 21, 5153, 587, 558, 576, 4865, 9147, 1128, 2000, 4852, 9326, 9333, 5149, 2]
+// Dependencies: [19, 17, 8697, 21, 5154, 587, 558, 576, 4865, 9148, 1128, 2000, 4852, 9327, 9334, 5150, 2]
 
-// Module 9325 (GameProfileDetails)
+// Module 9326 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import DateUtilsAll from "DateUtils" /* 4852 */;
 import LinkingDefault from "Linking" /* 4865 */;
-import Text_Text from "Text/Text" /* 5149 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8696 */;
-import SKUUtils from "SKUUtils" /* 9147 */;
+import Text_Text from "Text/Text" /* 5150 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8697 */;
+import SKUUtils from "SKUUtils" /* 9148 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5153 */;
+import createStyles_mod from "createStyles" /* 5154 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9147).getGenreText);
+        const mapped = genres1.map(tmp(9148).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -771,8 +771,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj10 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp76 };
       cResult[57] = tmp4.headerText;
-      cResult[58] = closure_8(tmp(5149).Text, obj10);
-      const tmp79 = closure_8(tmp(5149).Text, obj10);
+      cResult[58] = closure_8(tmp(5150).Text, obj10);
+      const tmp79 = closure_8(tmp(5150).Text, obj10);
     } else {
       class Z {
         constructor(icon) {

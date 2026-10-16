@@ -1,9 +1,9 @@
-// Module ID: 6977
-// Function ID: 6978
+// Module ID: 6979
+// Function ID: 6980
 // Name: useFastestListPropsScrollReporting
 // Dependencies: [558, 576, 4909, 2]
 
-// Module 6977 (useFastestListPropsScrollReporting)
+// Module 6979 (useFastestListPropsScrollReporting)
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
