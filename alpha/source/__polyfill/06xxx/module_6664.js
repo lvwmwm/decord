@@ -1,19 +1,17 @@
 // Module ID: 6664
 // Function ID: 6665
-// Dependencies: [6663, 6614]
-// Exports: useExclusiveGestures
+// Dependencies: [6665, 6616]
+// Exports: useCompetingGestures
 
 // Module 6664
-import ComposedGestureName from "ComposedGestureName" /* 6614 */;
-import _mod6663 from "module_6663" /* 6663 */;
+import ComposedGestureName from "ComposedGestureName" /* 6616 */;
+import _mod6665 from "module_6665" /* 6665 */;
 
 
-export const useExclusiveGestures = function useExclusiveGestures() {
+export const useCompetingGestures = function useCompetingGestures() {
   const items = [...arguments];
-  const useComposedGesture = _mod6663.useComposedGesture;
-  _mod6663;
-  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
-  const applyResult = useComposedGesture.apply(items1);
-  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
-  return applyResult;
+  const useComposedGesture = _mod6665.useComposedGesture;
+  _mod6665;
+  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
+  return useComposedGesture.apply(items1);
 };

@@ -1,23 +1,23 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16508
+// Function ID: 16509
 // Name: AppIconRows
-// Dependencies: [32, 12787, 19, 17, 1390, 21, 5151, 558, 576, 9689, 6485, 1126, 16476, 14418, 504, 1989, 2]
+// Dependencies: [32, 12813, 19, 17, 1392, 21, 5153, 558, 576, 9705, 6487, 1128, 16509, 14450, 504, 1991, 2]
 
-// Module 16475 (AppIconRows)
+// Module 16508 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
-import AppIconTypes from "AppIconTypes" /* 9689 */;
-import AppIconUtils from "AppIconUtils" /* 14418 */;
-import AppIconRowDefault from "AppIconRow" /* 16476 */;
+import intl3 from "intl" /* 1128 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
+import AppIconTypes from "AppIconTypes" /* 9705 */;
+import AppIconUtils from "AppIconUtils" /* 14450 */;
+import AppIconRowDefault from "AppIconRow" /* 16509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12787 */;
-import UserStore from "UserStore" /* 1390 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12813 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,10 +61,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
     onLongPress = cResult[0];
   }
   const container = tmp6.container;
-  const TableRowGroup = tmp(6485).TableRowGroup;
+  const TableRowGroup = tmp(6487).TableRowGroup;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.N4YDao);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.N4YDao);
     cResult[1] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -137,7 +137,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
     obj2 = {
       title: merged.title,
       accessibilityRole: "radiogroup",
-      accessibilityLabel: intl.string(merged(1126).t.N4YDao),
+      accessibilityLabel: intl.string(merged(1128).t.N4YDao),
       hasIcons: true,
       children: icons.map((id) => {
           AppIconRowDefault;
@@ -146,8 +146,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(6485).TableRowGroup;
-    intl = merged(1126).intl;
+    TableRowGroup = merged(6487).TableRowGroup;
+    intl = merged(1128).intl;
     return closure_9(View, obj);
   }
 });
@@ -213,8 +213,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
           if (cResult[12] !== tmp12) {
             let stringResult;
             if (tmp12) {
-              const intl2 = tmp(1126).intl;
-              stringResult = intl2.string(tmp(1126).t.Ipxkog);
+              const intl2 = tmp(1128).intl;
+              stringResult = intl2.string(tmp(1128).t.Ipxkog);
             }
             cResult[12] = tmp12;
             cResult[13] = stringResult;
@@ -276,7 +276,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
   let tmp15 = null;
   if (tmp12) {
     const obj6 = { hasNitro: tmp10, icons: limitedTimeAppIcons, currentAppIcon, title: intl.string(intl3.t.anqaFd), onSelect };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     tmp15 = React4(closure_13, obj6);
   }
   cResult[6] = currentAppIcon;
@@ -311,7 +311,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
   const tmp9 = authStore;
   if (tmp7) {
     const obj4 = { hasNitro: isPremiumResult, icons: limitedTimeAppIcons, currentAppIcon, title: intl.string(intl3.t.anqaFd), onSelect };
-    intl = tmp2(1126).intl;
+    intl = tmp2(1128).intl;
     tmp10 = React4(closure_13, obj4);
   }
   const items1 = [tmp10, ];
@@ -325,8 +325,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
   stringResult = undefined;
   tmp15 = closure_13;
   if (tmp7) {
-    const intl2 = tmp2(1126).intl;
-    stringResult = intl2.string(tmp2(1126).t.Ipxkog);
+    const intl2 = tmp2(1128).intl;
+    stringResult = intl2.string(tmp2(1128).t.Ipxkog);
   }
   const obj7 = { children: items1 };
   items1[1] = React4(tmp14, obj5);

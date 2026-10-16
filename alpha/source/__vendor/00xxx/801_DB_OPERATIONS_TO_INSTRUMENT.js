@@ -13,7 +13,7 @@ import module_763 from "module_763" /* 763 */;
 let closure_0;
 
 let tmp;
-const SEMANTIC_ATTRIBUTE_CACHE_HIT = tmp(715);
+const GEN_AI_CONVERSATION_ID_ATTRIBUTE = tmp(715);
 function apply(arg0, arg1, arg2) {
   function instrumentPostgRESTQueryBuilder(constructor) {
     function _loop(item10007) {
@@ -370,7 +370,7 @@ function instrumentAuthOperation(arg0) {
         str2 = "(admin) ";
       }
       let obj = { name: "auth " + str2 + name.name, attributes: obj2 };
-      obj2 = { [SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.db.supabase", [SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP]: "db", "db.system": "postgresql", "db.operation": "auth." + str + name.name };
+      obj2 = { [GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.db.supabase", [GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_OP]: "db", "db.system": "postgresql", "db.operation": "auth." + str + name.name };
       if (flag) {
         str = "admin.";
       }

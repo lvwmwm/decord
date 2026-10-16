@@ -1,20 +1,20 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12715
+// Function ID: 12716
 // Name: getPlayInContext
-// Dependencies: [2064, 2116, 558, 576, 504, 11175, 2]
+// Dependencies: [2067, 2119, 558, 576, 504, 11191, 2]
 // Exports: getPlayInContext
 
-// Module 12690 (getPlayInContext)
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11175 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+// Module 12715 (getPlayInContext)
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11191 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, num;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInContext(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInContext(arg0) {
   let channelId;
   let closure_0;
   let currentEmbeddedActivity;
@@ -208,7 +208,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInCon
   }
   return obj3;
 });
-let result = size.fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
+const result = size.fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
 
 export const usePlayInContext = tmp2;
 export const getPlayInContext = function getPlayInContext(id, channel_id) {
@@ -216,7 +216,6 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
   let closure_0 = id;
   let channelId = channel_id;
   if (channel_id == null) {
-    const tmp2 = SelectedChannelStore;
     channelId = SelectedChannelStore.getChannelId();
   }
   if (null == channelId) {
@@ -225,20 +224,18 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
     let NO_CHANNEL;
     let tmp3;
     if (null != channelId) {
-      let obj = getEmbeddedActivityLaunchability;
+      const obj = getEmbeddedActivityLaunchability;
       NO_CHANNEL = obj.getEmbeddedActivityLaunchabilityForChannel(channelId);
-      let tmp4 = dependencyMap;
       tmp3 = require;
     } else {
       tmp3 = require;
-      tmp4 = dependencyMap;
       NO_CHANNEL = getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.NO_CHANNEL;
     }
-    let obj2 = EmbeddedActivitiesStore;
-    const CAN_LAUNCH = tmp3(11175).EmbeddedActivityLaunchability.CAN_LAUNCH;
+    const CAN_LAUNCH = tmp3(11191).EmbeddedActivityLaunchability.CAN_LAUNCH;
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channelId);
     const found = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_0);
     let first;
+    const obj2 = EmbeddedActivitiesStore;
     if (found.length > 0) {
       first = found[0];
     }

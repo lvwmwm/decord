@@ -1,10 +1,10 @@
 // Module ID: 5987
 // Function ID: 5988
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 5987 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ba3e8ee2991f198308400197cdb28bc", name: "img_account_sync_youtube_white", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "2eaff20be2a75be7ccdd4c6f19f0eb36", name: "img_account_sync_youtube_white", type: "png" });

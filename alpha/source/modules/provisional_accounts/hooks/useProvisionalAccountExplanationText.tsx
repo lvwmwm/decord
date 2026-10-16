@@ -1,12 +1,12 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13239
+// Function ID: 13240
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1085, 558, 576, 13214, 1126, 2128, 2]
+// Dependencies: [19, 1087, 558, 576, 13240, 1128, 2131, 2]
 
-// Module 13213 (useProvisionalAccountExplanationText)
+// Module 13239 (useProvisionalAccountExplanationText)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13214 */;
+import Constants from "Constants" /* 1087 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 13240 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,8 +15,8 @@ let importDefault;
 
 let tmp;
 let tmp4;
-const intl3 = tmp(1126);
-const HelpdeskUtilsDefault = tmp4(2128);
+const intl3 = tmp(1128);
+const HelpdeskUtilsDefault = tmp4(2131);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisionalAccountExplanationText(renderApplicationName) {
   let tmp4Result;

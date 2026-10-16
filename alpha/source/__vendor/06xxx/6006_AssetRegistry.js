@@ -1,10 +1,10 @@
 // Module ID: 6006
 // Function ID: 6007
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 6006 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "6dfdeab813b7b4024164980d2fd4bf7a", name: "img_account_sync_league_of_legends_light_and_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "964ceb6798f932043a2351717bacaa2a", name: "img_account_sync_skype_light_and_dark", type: "svg" });

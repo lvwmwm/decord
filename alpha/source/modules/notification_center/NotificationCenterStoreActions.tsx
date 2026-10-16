@@ -1,10 +1,10 @@
-// Module ID: 17453
-// Function ID: 17454
+// Module ID: 17487
+// Function ID: 17488
 // Name: NotificationCenterStoreActions
 // Dependencies: [584, 2]
 // Exports: clearNotificationGuildMentions, refreshNotifications, setTab
 
-// Module 17453 (NotificationCenterStoreActions)
+// Module 17487 (NotificationCenterStoreActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

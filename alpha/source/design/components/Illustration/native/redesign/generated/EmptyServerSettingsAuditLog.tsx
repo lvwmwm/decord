@@ -1,15 +1,15 @@
-// Module ID: 18632
-// Function ID: 18633
+// Module ID: 18674
+// Function ID: 18675
 // Name: EmptyServerSettingsAuditLog
-// Dependencies: [19, 21, 8578, 18633, 18634, 18635, 558, 576, 5025, 5088, 2]
+// Dependencies: [19, 21, 8586, 18675, 18676, 18677, 558, 576, 5028, 5091, 2]
 // Exports: getEmptyServerSettingsAuditLogSource
 
-// Module 18632 (EmptyServerSettingsAuditLog)
+// Module 18674 (EmptyServerSettingsAuditLog)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5025 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import _mod8578 from "module_8578" /* 8578 */;
+import shared from "shared" /* 5028 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import _mod8586 from "module_8586" /* 8586 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8578;
+    const tmpResult = _mod8586;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
 }) : (function useEmptyServerSettingsAuditLogSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8578;
+  const obj2 = _mod8586;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyServerS
   return <tmp2 source={tmp} />;
 });
 function getEmptyServerSettingsAuditLogSource(theme) {
-  const obj = _mod8578;
+  const obj = _mod8586;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

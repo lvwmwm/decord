@@ -1,17 +1,17 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16054
+// Function ID: 16055
 // Name: QuestDockGestureContext
-// Dependencies: [19, 16018, 6188, 16020, 21, 6983, 1497, 4906, 16022, 16019, 12235, 2]
+// Dependencies: [19, 16051, 6190, 16053, 21, 6985, 1499, 4909, 16055, 16052, 12258, 2]
 
-// Module 16021 (QuestDockGestureContext)
+// Module 16054 (QuestDockGestureContext)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6188 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12235 */;
-import QuestDockConstants from "QuestDockConstants" /* 16020 */;
+import QuestConstants from "QuestConstants" /* 6190 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12258 */;
+import QuestDockConstants from "QuestDockConstants" /* 16053 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16018 */;
+import QuestDockStore from "QuestDockStore" /* 16051 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6983 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6985 */;
 import size_mod from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;

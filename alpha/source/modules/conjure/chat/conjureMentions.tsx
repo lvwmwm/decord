@@ -1,14 +1,14 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12094
+// Function ID: 12095
 // Name: conjureMentions
-// Dependencies: [19, 1390, 5018, 558, 576, 12069, 504, 2]
+// Dependencies: [19, 1392, 5021, 558, 576, 12093, 504, 2]
 // Exports: encodeConjureMentions, filterConjureMentionCandidates, findConjureMentionQuery, insertConjureMention, withConjureMentionNames
 
-// Module 12070 (conjureMentions)
-import UserUtils from "UserUtils" /* 5018 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12069 */;
+// Module 12094 (conjureMentions)
+import UserUtils from "UserUtils" /* 5021 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12093 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
   _require = arg0;
   let items = [arg0];
   const memo = react.useMemo(() => {
-    const f145301 = (kind) => {
+    const f145762 = (kind) => {
       let items1;
       if ("mention" === kind.kind) {
         const items = [kind.userId];
@@ -160,8 +160,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
       return items1;
     };
     const obj = splitConjureMentions(closure_0);
-    let items = [...new Set(obj.flatMap(f145301))];
-    new Set(obj.flatMap(f145301));
+    let items = [...new Set(obj.flatMap(f145762))];
+    new Set(obj.flatMap(f145762));
     return items;
   }, items);
   let items1 = [memo];
@@ -199,10 +199,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
   }
   if (cResult[1] !== arg0) {
     const fn = function s() {
-      const f145303 = (arg0) => user.getUser(arg0);
+      const f145764 = (arg0) => user.getUser(arg0);
       return closure_0.replace(re4, (arg0, arg1) => {
         let combined = arg0;
-        const tmp2 = f145304(arg1);
+        const tmp2 = f145765(arg1);
         if (null != tmp2) {
           const _HermesInternal = HermesInternal;
           const obj = closure_2_0(closure_2_1[2]);
@@ -230,10 +230,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
   const items = [UserStore];
   const items1 = [arg0];
   return obj.useStateFromStores(items, () => {
-    const f145304 = (arg0) => user.getUser(arg0);
+    const f145765 = (arg0) => user.getUser(arg0);
     return closure_0.replace(re4, (arg0, arg1) => {
       let combined = arg0;
-      const tmp2 = f145304(arg1);
+      const tmp2 = f145765(arg1);
       if (null != tmp2) {
         const _HermesInternal = HermesInternal;
         const obj = closure_2_0(closure_2_1[2]);
@@ -313,10 +313,10 @@ export { splitConjureMentions };
 export const useRequestConjureMentionedUsers = tmp2;
 export const withConjureMentionNames = function withConjureMentionNames(body) {
   let user;
-  const f111496 = (arg0) => user.getUser(arg0);
+  const f111828 = (arg0) => user.getUser(arg0);
   return body.replace(closure_4, (arg0, arg1) => {
     let combined = arg0;
-    const tmp2 = f145304(arg1);
+    const tmp2 = f145765(arg1);
     if (null != tmp2) {
       const _HermesInternal = HermesInternal;
       const obj = closure_2_0(closure_2_1[2]);

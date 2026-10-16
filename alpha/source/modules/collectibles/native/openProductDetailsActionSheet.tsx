@@ -1,14 +1,14 @@
-// Module ID: 8519
-// Function ID: 8520
+// Module ID: 8527
+// Function ID: 8528
 // Name: openProductDetailsActionSheet
-// Dependencies: [7491, 7479, 5115, 8520, 2000, 2]
+// Dependencies: [7493, 7481, 5118, 8528, 2002, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 8519 (openProductDetailsActionSheet)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7479 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7491 */;
+// Module 8527 (openProductDetailsActionSheet)
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7481 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7493 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Product Preview";
@@ -45,7 +45,7 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   tmpResult.productDetailsOpened(skuId);
   const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(8520, tmp2.paths), c3, obj2, stack);
+  obj3.openLazy(asyncRequire(8528, tmp2.paths), c3, obj2, stack);
 };
 export const openProductDetailsActionSheetForSku = function openProductDetailsActionSheetForSku(skuId, stack) {
   let analyticsLocations;
@@ -58,5 +58,5 @@ export const openProductDetailsActionSheetForSku = function openProductDetailsAc
   obj.productDetailsOpened(skuId);
   const obj2 = ActionSheetActionCreatorsDefault;
   const obj3 = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile };
-  obj2.openLazy(asyncRequire(8520, dependencyMap.paths), c3, obj3, stack);
+  obj2.openLazy(asyncRequire(8528, dependencyMap.paths), c3, obj3, stack);
 };

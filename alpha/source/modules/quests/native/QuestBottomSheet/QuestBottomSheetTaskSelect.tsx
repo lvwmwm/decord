@@ -1,10 +1,10 @@
-// Module ID: 16087
-// Function ID: 16088
+// Module ID: 16120
+// Function ID: 16121
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 6188, 21, 558, 576, 9314, 1126, 6400, 9433, 6485, 2]
+// Dependencies: [19, 6190, 21, 558, 576, 9327, 1128, 6402, 9449, 6487, 2]
 
-// Module 16087 (QuestBottomSheetTaskSelect)
-import QuestConstants from "QuestConstants" /* 6188 */;
+// Module 16120 (QuestBottomSheetTaskSelect)
+import QuestConstants from "QuestConstants" /* 6190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,9 +27,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const cResult = obj.c(11);
   onTaskSelect = onTaskSelect.onTaskSelect;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_3(tmp(9314).ScreenIcon, {});
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t["QXc01+"]);
+    const tmp7 = closure_3(tmp(9327).ScreenIcon, {});
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t["QXc01+"]);
     cResult[0] = tmp7;
     cResult[1] = stringResult;
     tmp4 = tmp7;
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
           return tmpResult;
         }
     };
-    const tmp11 = closure_3(tmp(6400).TableRow, obj2);
+    const tmp11 = closure_3(tmp(6402).TableRow, obj2);
     cResult[2] = onTaskSelect;
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -58,9 +58,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = closure_3(tmp(9433).GameControllerIcon, {});
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(tmp(1126).t["8lAfuB"]);
+    const tmp15 = closure_3(tmp(9449).GameControllerIcon, {});
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(tmp(1128).t["8lAfuB"]);
     cResult[4] = tmp15;
     cResult[5] = stringResult1;
     tmp13 = stringResult1;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
           return tmpResult;
         }
     };
-    const tmp19 = closure_3(tmp(6400).TableRow, obj3);
+    const tmp19 = closure_3(tmp(6402).TableRow, obj3);
     cResult[6] = onTaskSelect;
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }
   const obj4 = { hasIcons: true, children: items };
   items = [tmp9, tmp17];
-  const tmp21 = closure_4(tmp(6485).TableRowGroup, obj4);
+  const tmp21 = closure_4(tmp(6487).TableRowGroup, obj4);
   cResult[8] = tmp9;
   cResult[9] = tmp17;
   cResult[10] = tmp21;
@@ -109,11 +109,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   let items;
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: items };
-  const TableRowGroup = onTaskSelect(6485).TableRowGroup;
+  const TableRowGroup = onTaskSelect(6487).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9314).ScreenIcon, {}),
-    label: intl.string(onTaskSelect(1126).t["QXc01+"]),
+    icon: closure_3(onTaskSelect(9327).ScreenIcon, {}),
+    label: intl.string(onTaskSelect(1128).t["QXc01+"]),
     onPress() {
       let tmpResult;
       if (onTaskSelect != null) {
@@ -122,13 +122,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
       return tmpResult;
     }
   };
-  const TableRow = onTaskSelect(6400).TableRow;
-  intl = onTaskSelect(1126).intl;
+  const TableRow = onTaskSelect(6402).TableRow;
+  intl = onTaskSelect(1128).intl;
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9433).GameControllerIcon, {}),
-    label: intl2.string(onTaskSelect(1126).t["8lAfuB"]),
+    icon: closure_3(onTaskSelect(9449).GameControllerIcon, {}),
+    label: intl2.string(onTaskSelect(1128).t["8lAfuB"]),
     onPress() {
       let tmpResult;
       if (onTaskSelect != null) {
@@ -137,8 +137,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
       return tmpResult;
     }
   };
-  const TableRow2 = onTaskSelect(6400).TableRow;
-  intl2 = onTaskSelect(1126).intl;
+  const TableRow2 = onTaskSelect(6402).TableRow;
+  intl2 = onTaskSelect(1128).intl;
   items[1] = closure_3(TableRow2, obj3);
   return closure_4(TableRowGroup, obj);
 });

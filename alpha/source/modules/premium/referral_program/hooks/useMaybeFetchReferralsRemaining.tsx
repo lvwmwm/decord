@@ -1,14 +1,14 @@
-// Module ID: 8304
-// Function ID: 8305
+// Module ID: 8309
+// Function ID: 8310
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1390, 7391, 1392, 558, 576, 504, 8305, 8306, 7330, 1989, 2]
+// Dependencies: [19, 1392, 7393, 1394, 558, 576, 504, 8310, 8311, 7332, 1991, 2]
 
-// Module 8304 (useMaybeFetchReferralsRemaining)
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7330 */;
+// Module 8309 (useMaybeFetchReferralsRemaining)
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7332 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7391 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import UserStore from "UserStore" /* 1392 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7393 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,9 +42,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = tmp(8305);
+  const tmpResult4 = tmp(8310);
   const hasDiscountApplied = tmpResult4.useHasDiscountApplied();
-  const tmpResult5 = tmp(8306);
+  const tmpResult5 = tmp(8311);
   const hasActiveTrial = tmpResult5.useHasActiveTrial();
   const tmp11 = useFractionalPremiumInfoDefault();
   if (cResult[2] === stateFromStores) {
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   let fetched = true === verified;
   if (fetched) {
-    const tmpResult6 = tmp(1989);
+    const tmpResult6 = tmp(1991);
     fetched = tmpResult6.isPremiumExactly(stateFromStores, closure_6.TIER_2);
   }
   if (fetched) {
@@ -128,18 +128,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = flag(8305);
+  const obj2 = flag(8310);
   const hasDiscountApplied = obj2.useHasDiscountApplied();
-  const obj3 = flag(8306);
+  const obj3 = flag(8311);
   const hasActiveTrial = obj3.useHasActiveTrial();
-  const tmp6 = fetched(7330)();
+  const tmp6 = fetched(7332)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    const tmpResult = tmp(1989);
+    const tmpResult = tmp(1991);
     fetched = tmpResult.isPremiumExactly(stateFromStores, closure_6.TIER_2);
   }
   if (fetched) {

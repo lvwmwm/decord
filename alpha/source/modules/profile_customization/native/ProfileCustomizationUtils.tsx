@@ -1,14 +1,14 @@
-// Module ID: 8592
-// Function ID: 8593
+// Module ID: 8600
+// Function ID: 8601
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [558, 576, 1415, 8593, 1103, 2]
+// Dependencies: [558, 576, 1417, 8601, 1105, 2]
 // Exports: getAvatarSource
 
-// Module 8592 (profile_customization/ProfileCustomizationUtils)
+// Module 8600 (profile_customization/ProfileCustomizationUtils)
 import react from "react" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import VideoBackground from "VideoBackground" /* 8593 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import VideoBackground from "VideoBackground" /* 8601 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2
       VideoBackground;
       if (userAvatarURL == null) {
         const obj = { avatar: null };
-        const getUserAvatarURL = tmp3(1415).getUserAvatarURL;
+        const getUserAvatarURL = tmp3(1417).getUserAvatarURL;
         AvatarUtils;
         const merged = Object.assign(getAvatarURL);
         userAvatarURL = getUserAvatarURL(obj);

@@ -1,73 +1,83 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 15996
+// Function ID: 15997
 // Name: pickBountyVideoRendition
-// Dependencies: [9405, 2]
-// Exports: pickBountyPlaybackHlsUri
+// Dependencies: [9421, 38, 2]
+// Exports: pickBountyVideoRenditionWithFallback
 
-// Module 15963 (pickBountyVideoRendition)
-import BountyAspectRatio from "BountyAspectRatio" /* 9405 */;
+// Module 15996 (pickBountyVideoRendition)
+import _modDef38 from "module_38" /* 38 */;
+import BountyAspectRatio from "BountyAspectRatio" /* 9421 */;
 import size from "module_2" /* 2 */;
 
 let items;
-function nonEmptyUrl(videoRenditions, preferred) {
+let items1;
+function getRendition(videoRenditions, preferred) {
   let tmp2 = null;
   if (null != videoRenditions[preferred]) {
     tmp2 = null;
     if ("" !== videoRenditions[preferred]) {
-      tmp2 = tmp;
+      tmp2 = { url: videoRenditions[preferred], aspectRatio: preferred };
+      const obj = { url: videoRenditions[preferred], aspectRatio: preferred };
     }
   }
   return tmp2;
 }
-function pickBountyVideoRendition(videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK, videoHls) {
+function pickBountyVideoRendition(videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK) {
   let preferred;
   let supported;
   ({ preferred, supported } = BOUNTY_MOBILE_MODAL_RENDITION_PICK);
-  if (null != videoRenditions) {
-    if (0 !== supported.length) {
-      let tmp2 = null;
-      if (supported.includes(preferred)) {
-        tmp2 = nonEmptyUrl(videoRenditions, preferred);
-      }
-      if (null != tmp2) {
-        return tmp2;
-      } else {
-        let tmp16 = null;
-        let num = Infinity;
-        const tmp18 = closure_0[preferred];
-        const iter = supported[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let tmp6 = nextResult;
-          if (nextResult !== preferred) {
-            let tmp9 = nonEmptyUrl(videoRenditions, tmp6);
-            if (null != tmp9) {
-              let _Math = Math;
-              let absolute = Math.abs(closure_0[tmp6] - tmp18);
-              if (absolute < num) {
-                num = absolute;
-                tmp16 = tmp9;
-              }
-            }
+  const tmp = _modDef38;
+  tmp(supported.includes(preferred), "Preferred aspect ratio must be in supported renditions list");
+  const tmp3 = getRendition(videoRenditions, preferred);
+  if (null != tmp3) {
+    return tmp3;
+  } else {
+    let tmp17 = null;
+    let num = Infinity;
+    const tmp19 = closure_3[preferred];
+    const iter = supported[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (nextResult !== preferred) {
+        let tmp10 = getRendition(videoRenditions, tmp7);
+        if (null != tmp10) {
+          let _Math = Math;
+          let absolute = Math.abs(closure_3[tmp7] - tmp19);
+          if (absolute < num) {
+            num = absolute;
+            tmp17 = tmp10;
           }
-          continue;
         }
-        if (tmp16 == null) {
-          tmp16 = videoHls;
-        }
-        return tmp16;
       }
+      continue;
     }
+    return tmp17;
   }
-  return videoHls;
 }
-const obj = { preferred: BountyAspectRatio.BountyAspectRatio.PORTRAIT, supported: items };
+let obj = { preferred: BountyAspectRatio.BountyAspectRatio.PORTRAIT, supported: items };
 items = [BountyAspectRatio.BountyAspectRatio.PORTRAIT];
-let closure_0 = { [BountyAspectRatio.BountyAspectRatio.PORTRAIT]: 0.5625, [BountyAspectRatio.BountyAspectRatio.LANDSCAPE]: 1.7777777777777777 };
+const obj2 = { preferred: BountyAspectRatio.BountyAspectRatio.LANDSCAPE, supported: items1 };
+items1 = [BountyAspectRatio.BountyAspectRatio.LANDSCAPE, BountyAspectRatio.BountyAspectRatio.PORTRAIT];
+let closure_3 = { [BountyAspectRatio.BountyAspectRatio.PORTRAIT]: 0.5625, [BountyAspectRatio.BountyAspectRatio.LANDSCAPE]: 1.7777777777777777 };
 const result = size.fileFinishedImporting("modules/ads/utils/pickBountyVideoRendition.tsx");
 
 export const BOUNTY_MOBILE_MODAL_RENDITION_PICK = obj;
+export const BOUNTY_DESKTOP_MODAL_RENDITION_PICK = obj2;
 export { pickBountyVideoRendition };
-export const pickBountyPlaybackHlsUri = function pickBountyPlaybackHlsUri(videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK) {
-  return pickBountyVideoRendition(videoRenditions.videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK, videoRenditions.videoHls);
+export const pickBountyVideoRenditionWithFallback = function pickBountyVideoRenditionWithFallback(videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK) {
+  let tmp2;
+  if (null == videoRenditions.videoRenditions) {
+    const supported = BOUNTY_MOBILE_MODAL_RENDITION_PICK.supported;
+    let tmp5 = null;
+    const tmp3 = require;
+    if (supported.includes(BountyAspectRatio.BountyAspectRatio.PORTRAIT)) {
+      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9421).BountyAspectRatio.PORTRAIT };
+      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9421).BountyAspectRatio.PORTRAIT };
+    }
+    tmp2 = tmp5;
+  } else {
+    tmp2 = pickBountyVideoRendition(videoRenditions.videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK);
+  }
+  return tmp2;
 };

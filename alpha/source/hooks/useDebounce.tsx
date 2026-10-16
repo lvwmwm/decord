@@ -1,9 +1,9 @@
-// Module ID: 14402
-// Function ID: 14403
+// Module ID: 14434
+// Function ID: 14435
 // Name: useDebounce
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 14402 (useDebounce)
+// Module 14434 (useDebounce)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,17 +1,17 @@
-// Module ID: 12648
-// Function ID: 12649
+// Module ID: 12671
+// Function ID: 12672
 // Name: CheckpointBackground
-// Dependencies: [5497, 1085, 21, 5151, 558, 576, 5451, 12649, 5088, 2]
+// Dependencies: [5499, 1087, 21, 5153, 558, 576, 5453, 12672, 5091, 2]
 
-// Module 12648 (CheckpointBackground)
+// Module 12671 (CheckpointBackground)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import CheckpointConstants from "CheckpointConstants" /* 5497 */;
-import _modDef12649 from "module_12649" /* 12649 */;
+import Constants from "Constants" /* 1087 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import _modDef12672 from "module_12672" /* 12672 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef12649 };
+    const obj4 = { uri: _modDef12672 };
     cResult[2] = obj4;
     tmp10 = obj4;
   } else {
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
   const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
   items[0] = hasOwnProperty(LinearGradientDefault, obj2);
   const obj3 = { source: obj4, style: tmp.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef12649 };
+  obj4 = { uri: _modDef12672 };
   const tmp2 = FastImageDefault;
   items[1] = hasOwnProperty(tmp2, obj3);
   return metroImportDefault(metroRequire, obj);

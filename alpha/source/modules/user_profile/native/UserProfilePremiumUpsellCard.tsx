@@ -1,22 +1,22 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15629
+// Function ID: 15630
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1085, 21, 7098, 5151, 558, 576, 5147, 15533, 1503, 6900, 1126, 7385, 7073, 9614, 9615, 9739, 15597, 1631, 2]
+// Dependencies: [19, 1087, 21, 7100, 5153, 558, 576, 5149, 15569, 1505, 6902, 1128, 7387, 7075, 9630, 9631, 9755, 15630, 1633, 2]
 
-// Module 15596 (UserProfilePremiumUpsellCard)
+// Module 15629 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6900 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9615 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9739 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15533 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6902 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9630 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9631 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9755 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15569 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5151 */;
+import Constants from "Constants" /* 1087 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5147);
+const Text_Text = tmp(5149);
 ({ AnalyticsObjects: closure_4, AnalyticsPages: hasOwnProperty, AnalyticsSections: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
 let items = [AnalyticsLocationDefault.USER_SETTINGS_TRY_OUT_PREMIUM];
@@ -93,7 +93,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   let obj = navigation(576);
   const cResult = obj.c(7);
   style = style.style;
-  const obj2 = navigation(1503);
+  const obj2 = navigation(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function n() {
@@ -108,10 +108,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(navigation(1126).t.PxUx8e);
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(navigation(1126).t.Tii53U);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(navigation(1128).t.PxUx8e);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(navigation(1128).t.Tii53U);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp7 = stringResult1;
@@ -135,7 +135,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
 }) : (function PreviewNitroCard(style) {
   navigation = undefined;
   style = style.style;
-  let obj = navigation(1503);
+  let obj = navigation(1505);
   navigation = obj.useNavigation();
   items = [navigation];
   const callback = react.useCallback(() => {
@@ -143,9 +143,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     obj.setSection(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
     navigation.push(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
   }, items);
-  const intl = navigation(1126).intl;
-  const intl2 = navigation(1126).intl;
-  return <closure_11 style={style} ctaText={intl.string(navigation(1126).t.PxUx8e)} description={intl2.string(navigation(1126).t.Tii53U)} onPress={callback} />;
+  const intl = navigation(1128).intl;
+  const intl2 = navigation(1128).intl;
+  return <closure_11 style={style} ctaText={intl.string(navigation(1128).t.PxUx8e)} description={intl2.string(navigation(1128).t.Tii53U)} onPress={callback} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNitroCard(style) {
@@ -159,7 +159,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
   style = style.style;
-  let obj2 = analyticsLocations(7385);
+  let obj2 = analyticsLocations(7387);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
@@ -178,13 +178,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items);
-  const tmpResult = tmp(15597);
+  const tmpResult = tmp(15630);
   const mobileNitroPreviewDirectCheckoutEnabled = tmpResult.useMobileNitroPreviewDirectCheckoutEnabled();
   if (cResult[2] !== nitroTrialCtaOverride) {
     let stringResult = nitroTrialCtaOverride;
     if (nitroTrialCtaOverride == null) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.pj0XBN);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.pj0XBN);
     }
     cResult[2] = nitroTrialCtaOverride;
     cResult[3] = stringResult;
@@ -193,8 +193,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
     tmp10 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(tmp(1126).t.ZFR9LF);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(tmp(1128).t.ZFR9LF);
     cResult[4] = stringResult1;
     tmp13 = stringResult1;
   } else {
@@ -228,7 +228,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(7385);
+  let obj = analyticsLocations(7387);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];
@@ -241,16 +241,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }, items);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
-  let obj2 = analyticsLocations(15597);
+  let obj2 = analyticsLocations(15630);
   const mobileNitroPreviewDirectCheckoutEnabled = obj2.useMobileNitroPreviewDirectCheckoutEnabled();
-  const obj3 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1126).t.ZFR9LF), disabled: mobileNitroPreviewDirectCheckoutEnabled && loading, onPress: callback };
+  const obj3 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1128).t.ZFR9LF), disabled: mobileNitroPreviewDirectCheckoutEnabled && loading, onPress: callback };
   const tmp7 = jsx;
   const tmp8 = closure_11;
   if (nitroTrialCtaOverride == null) {
-    const intl = tmp(1126).intl;
-    nitroTrialCtaOverride = intl.string(tmp(1126).t.pj0XBN);
+    const intl = tmp(1128).intl;
+    nitroTrialCtaOverride = intl.string(tmp(1128).t.pj0XBN);
   }
-  intl2 = tmp(1126).intl;
+  intl2 = tmp(1128).intl;
   if (mobileNitroPreviewDirectCheckoutEnabled) {
     callback = onPress;
   }

@@ -1,15 +1,15 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 9453
+// Function ID: 9454
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 558, 576, 9436, 6883, 1126, 5147, 2]
+// Dependencies: [19, 21, 558, 576, 9452, 6885, 1128, 5149, 2]
 
-// Module 9437 (TwoWayLinkStepHeader)
+// Module 9453 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6883 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9436 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6885 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9452 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
       cResult[9] = tmp12;
       tmp10 = tmp12;
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj5 = { number: idx, total };
     const formatResult = intl.format(intl2.t.fHz6eR, obj5);
     cResult[3] = idx;

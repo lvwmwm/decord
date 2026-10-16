@@ -1,21 +1,21 @@
-// Module ID: 7787
-// Function ID: 7788
+// Module ID: 7790
+// Function ID: 7791
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 6510, 587, 2142, 7788, 5105, 7087, 5148, 5151, 558, 576, 5446, 1126, 4878, 1383, 4884, 5147, 5439, 7790, 6428, 2]
+// Dependencies: [19, 17, 21, 6512, 587, 2145, 7791, 5108, 7089, 5150, 5153, 558, 576, 5448, 1128, 4881, 1385, 4887, 5149, 5441, 7793, 6430, 2]
 
-// Module 7787 (NewInlineNotice)
+// Module 7790 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import _modDef2142 from "module_2142" /* 2142 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5105 */;
-import TextVariants from "TextVariants" /* 5148 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6510 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7087 */;
-import WarningIcon from "WarningIcon" /* 7788 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import _modDef2145 from "module_2145" /* 2145 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5108 */;
+import TextVariants from "TextVariants" /* 5150 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6512 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7089 */;
+import WarningIcon from "WarningIcon" /* 7791 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,14 +26,14 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4884);
+const AccessibilityAnnouncer2 = tmp(4887);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, positive: obj5 };
-obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2142.uKMqrF };
-obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2142["7vL/d/"] };
-obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2142.BReS7U };
-obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2142["1MXXPf"] };
+obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2145.uKMqrF };
+obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2145["7vL/d/"] };
+obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2145.BReS7U };
+obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2145["1MXXPf"] };
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
 let found = TextVariantsFlat.find((name) => "experimental/body-sm/normal" === name.name);
 let lineHeight;
@@ -136,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                 obj3 = { accessibilityRole: "alert", accessibilityLiveRegion: "assertive" };
               } else if ("status" === role) {
                 obj3 = { accessibilityLiveRegion: "polite" };
-              } else if ("static" === role) {
+              } else if ("none" === role) {
                 obj3 = {};
               }
               cResult[15] = role;
@@ -145,7 +145,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                   obj = utils_PlatformUtils;
                   let isIOSResult = obj.isIOS();
                   if (isIOSResult) {
-                    isIOSResult = "static" !== role;
+                    isIOSResult = "none" !== role;
                   }
                   if (isIOSResult) {
                     isIOSResult = !hidden;
@@ -191,7 +191,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                         obj = utils_PlatformUtils;
                         let isIOSResult = obj.isIOS();
                         if (isIOSResult) {
-                          isIOSResult = "static" !== role;
+                          isIOSResult = "none" !== role;
                         }
                         if (isIOSResult) {
                           isIOSResult = !hidden;
@@ -220,7 +220,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                         obj = utils_PlatformUtils;
                         let isIOSResult = obj.isIOS();
                         if (isIOSResult) {
-                          isIOSResult = "static" !== role;
+                          isIOSResult = "none" !== role;
                         }
                         if (isIOSResult) {
                           isIOSResult = !hidden;
@@ -277,7 +277,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                         obj = utils_PlatformUtils;
                                         let isIOSResult = obj.isIOS();
                                         if (isIOSResult) {
-                                          isIOSResult = "static" !== role;
+                                          isIOSResult = "none" !== role;
                                         }
                                         if (isIOSResult) {
                                           isIOSResult = !hidden;
@@ -302,7 +302,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                       obj = utils_PlatformUtils;
                                       let isIOSResult = obj.isIOS();
                                       if (isIOSResult) {
-                                        isIOSResult = "static" !== role;
+                                        isIOSResult = "none" !== role;
                                       }
                                       if (isIOSResult) {
                                         isIOSResult = !hidden;
@@ -339,7 +339,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                     obj = utils_PlatformUtils;
                                     let isIOSResult = obj.isIOS();
                                     if (isIOSResult) {
-                                      isIOSResult = "static" !== role;
+                                      isIOSResult = "none" !== role;
                                     }
                                     if (isIOSResult) {
                                       isIOSResult = !hidden;
@@ -375,7 +375,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                 obj = utils_PlatformUtils;
                                 let isIOSResult = obj.isIOS();
                                 if (isIOSResult) {
-                                  isIOSResult = "static" !== role;
+                                  isIOSResult = "none" !== role;
                                 }
                                 if (isIOSResult) {
                                   isIOSResult = !hidden;
@@ -407,7 +407,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                             obj = utils_PlatformUtils;
                             let isIOSResult = obj.isIOS();
                             if (isIOSResult) {
-                              isIOSResult = "static" !== role;
+                              isIOSResult = "none" !== role;
                             }
                             if (isIOSResult) {
                               isIOSResult = !hidden;
@@ -435,13 +435,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                       let tmp37 = null;
                       if (null != action) {
                         const obj10 = { style: tmp4Result.cta, children: closure_5(tmp(joined[19]).Button, obj11) };
-                        obj11 = { variant: "secondary", size: "sm", text: null, onPress: action.onClick };
+                        obj11 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
                         class F {
                           constructor() {
                             obj = utils_PlatformUtils;
                             let isIOSResult = obj.isIOS();
                             if (isIOSResult) {
-                              isIOSResult = "static" !== role;
+                              isIOSResult = "none" !== role;
                             }
                             if (isIOSResult) {
                               isIOSResult = !hidden;
@@ -458,6 +458,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                             }
                           }
                         }
+                        ({ onPress: obj13.onPress, loading: obj13.loading } = action);
                         tmp37 = closure_5(View, obj10);
                       }
                       class F {
@@ -465,7 +466,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                           obj = utils_PlatformUtils;
                           let isIOSResult = obj.isIOS();
                           if (isIOSResult) {
-                            isIOSResult = "static" !== role;
+                            isIOSResult = "none" !== role;
                           }
                           if (isIOSResult) {
                             isIOSResult = !hidden;
@@ -492,7 +493,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                       obj = utils_PlatformUtils;
                       let isIOSResult = obj.isIOS();
                       if (isIOSResult) {
-                        isIOSResult = "static" !== role;
+                        isIOSResult = "none" !== role;
                       }
                       if (isIOSResult) {
                         isIOSResult = !hidden;
@@ -518,13 +519,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                   cResult[31] = tmp35;
                   tmp33 = tmp35;
                 }
-                const obj13 = { style: null, children: tmp20 };
+                const obj14 = { style: null, children: tmp20 };
                 class F {
                   constructor() {
                     obj = utils_PlatformUtils;
                     let isIOSResult = obj.isIOS();
                     if (isIOSResult) {
-                      isIOSResult = "static" !== role;
+                      isIOSResult = "none" !== role;
                     }
                     if (isIOSResult) {
                       isIOSResult = !hidden;
@@ -541,20 +542,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                     }
                   }
                 }
-                const tmp26 = closure_5(View, obj13);
+                const tmp26 = closure_5(View, obj14);
                 cResult[21] = tmp4Result.iconContainer;
                 cResult[22] = tmp20;
                 cResult[23] = tmp26;
                 tmp23 = tmp26;
               }
             }
-            const obj14 = { size: "xs", color: null, accessibilityLabel: tmp7 };
+            const obj15 = { size: "xs", color: null, accessibilityLabel: tmp7 };
             class F {
               constructor() {
                 obj = utils_PlatformUtils;
                 let isIOSResult = obj.isIOS();
                 if (isIOSResult) {
-                  isIOSResult = "static" !== role;
+                  isIOSResult = "none" !== role;
                 }
                 if (isIOSResult) {
                   isIOSResult = !hidden;
@@ -571,7 +572,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                 }
               }
             }
-            const tmp22 = closure_5(Icon, obj14);
+            const tmp22 = closure_5(Icon, obj15);
             cResult[17] = Icon;
             cResult[18] = iconColor;
             cResult[19] = tmp7;
@@ -585,7 +586,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
           obj = utils_PlatformUtils;
           let isIOSResult = obj.isIOS();
           if (isIOSResult) {
-            isIOSResult = "static" !== role;
+            isIOSResult = "none" !== role;
           }
           if (isIOSResult) {
             isIOSResult = !hidden;
@@ -662,7 +663,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
     obj = utils_PlatformUtils;
     let isIOSResult = obj.isIOS();
     if (isIOSResult) {
-      isIOSResult = "static" !== role;
+      isIOSResult = "none" !== role;
     }
     if (isIOSResult) {
       isIOSResult = !hidden;
@@ -688,7 +689,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
       let str2 = "status";
       if ("status" === role) {
         obj3 = { accessibilityLiveRegion: "polite" };
-      } else if ("static" === role) {
+      } else if ("none" === role) {
         obj3 = {};
       }
     }
@@ -711,8 +712,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
     let tmp15Result3 = null;
     if (null != action) {
       const obj11 = { style: tmp3Result.cta, children: closure_5(tmp(joined[19]).Button, obj12) };
-      obj12 = { variant: "secondary", size: "sm", text: null, onPress: null };
-      ({ text: obj15.text, onClick: obj15.onPress } = action);
+      obj12 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
+      ({ text: obj15.text, onPress: obj15.onPress, loading: obj15.loading } = action);
       tmp15Result3 = tmp15(tmp11, obj11);
     }
     items4[1] = tmp15Result3;

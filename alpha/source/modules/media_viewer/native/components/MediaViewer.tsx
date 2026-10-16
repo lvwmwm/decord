@@ -1,19 +1,19 @@
-// Module ID: 13897
-// Function ID: 13898
+// Module ID: 13929
+// Function ID: 13930
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1382, 558, 576, 4906, 13898, 13899, 8613, 6981, 6555, 7073, 7098, 8638, 13903, 5432, 5152, 8608, 8669, 10594, 4907, 11133, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 4909, 13930, 13931, 8621, 6983, 6557, 7075, 7100, 8646, 13935, 5434, 5154, 8616, 8677, 10609, 4910, 11149, 2]
 
-// Module 13897 (MediaViewer)
+// Module 13929 (MediaViewer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import timing from "timing" /* 5152 */;
-import useVideoControls from "useVideoControls" /* 8608 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 13899 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import timing from "timing" /* 5154 */;
+import useVideoControls from "useVideoControls" /* 8616 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 13931 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(8638);
+const MediaViewerDimensionsContext = tmp(8646);
 function MediaViewer(arg0) {
   let closure_2;
   let height;
@@ -61,8 +61,8 @@ function MediaViewer(arg0) {
   ({ onLongPress, originLayout, renderMedia, renderOverlay, swipeVelocityThreshold } = arg0);
   ({ useViewerProps, zoomed } = syncer);
   let tmp = height;
-  let tmp3 = height(7073);
-  let items = [height(7098).MEDIA_VIEWER];
+  let tmp3 = height(7075);
+  let items = [height(7100).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   [tmp5, tmp6] = tmp4;
@@ -70,7 +70,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(13903)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(13935)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -89,7 +89,7 @@ function MediaViewer(arg0) {
   const isInteracting = mediaViewerPanGestureConfig.isInteracting;
   const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
   const items1 = [dismiss, isClosing];
-  const tmp16 = height(5432);
+  const tmp16 = height(5434);
   tmp16(sharedValue1.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
@@ -236,23 +236,23 @@ function MediaViewer(arg0) {
   items6 = [, , , , ];
   const obj17 = { barStyle: "light-content", hidden: !tmp5 };
   const tmp30 = dismiss(callback, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  items6[0] = dismiss(height(10594), obj17);
-  items6[1] = dismiss(height(4906).View, { style: animatedStyle });
-  items6[2] = dismiss(height(4907), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
+  items6[0] = dismiss(height(10609), obj17);
+  items6[1] = dismiss(height(4909).View, { style: animatedStyle });
+  items6[2] = dismiss(height(4910), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
   const obj18 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
   items7 = [first, animatedStyle1];
   str = "none";
   const tmp31 = translatePos;
   const tmp32 = animatedRef;
-  const tmp33 = height(4907);
+  const tmp33 = height(4910);
   const tmp7 = _require;
   if (tmp5) {
     str = "box-none";
   }
   items6[3] = dismiss(tmp33, obj18);
-  items6[4] = dismiss(tmp(11133), {});
+  items6[4] = dismiss(tmp(11149), {});
   const children = tmp31(tmp32, obj16);
-  return dismiss(tmp7(7073).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return dismiss(tmp7(7075).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

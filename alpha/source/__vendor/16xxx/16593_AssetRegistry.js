@@ -1,10 +1,10 @@
 // Module ID: 16593
 // Function ID: 16594
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16593 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "880baabfc7feb98fb5f5e21e1c109092", name: "nl.messages.880baabfc7feb98fb5f5e21e1c109092.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fa8fba4f08666ddc130e1c29719257b7", name: "PawPrintIcon", type: "png" });

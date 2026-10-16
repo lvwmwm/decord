@@ -1,17 +1,17 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14899
+// Function ID: 14900
 // Name: GameOrganizationInviteRow
-// Dependencies: [19, 7640, 21, 558, 576, 1200, 5018, 8983, 8986, 6400, 2]
+// Dependencies: [19, 7642, 21, 558, 576, 1202, 5021, 8991, 8994, 6402, 2]
 
-// Module 14866 (GameOrganizationInviteRow)
+// Module 14899 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import Constants from "Constants" /* 7640 */;
-import DiscordTagDefault from "DiscordTag" /* 8983 */;
-import InviteButtonDefault from "InviteButton" /* 8986 */;
+import native from "native" /* 1202 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import Constants from "Constants" /* 7642 */;
+import DiscordTagDefault from "DiscordTag" /* 8991 */;
+import InviteButtonDefault from "InviteButton" /* 8994 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp5 = cResult[4];
     }
     if (cResult[5] !== tmp5) {
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       const tmp9 = <Avatar source={tmp5} size={native.AvatarSizes.REFRESH_MEDIUM_32} />;
       cResult[5] = tmp5;
       cResult[6] = tmp9;

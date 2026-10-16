@@ -1,8 +1,8 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5720
+// Function ID: 5721
 // Dependencies: [2]
 
-// Module 5718
+// Module 5720
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/magical_amethyst.png.js");

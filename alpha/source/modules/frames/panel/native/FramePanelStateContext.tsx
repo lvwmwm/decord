@@ -1,10 +1,10 @@
-// Module ID: 18065
-// Function ID: 18066
+// Module ID: 18100
+// Function ID: 18101
 // Name: FramePanelStateContext
-// Dependencies: [19, 18039, 2]
+// Dependencies: [19, 18074, 2]
 
-// Module 18065 (FramePanelStateContext)
-import ActivityPanelStateContext from "ActivityPanelStateContext" /* 18039 */;
+// Module 18100 (FramePanelStateContext)
+import ActivityPanelStateContext from "ActivityPanelStateContext" /* 18074 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

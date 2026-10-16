@@ -1,14 +1,14 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16836
+// Function ID: 16837
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 7480, 1085, 558, 576, 9188, 504, 8521, 4825, 7492, 1265, 2]
+// Dependencies: [19, 7482, 1087, 558, 576, 9201, 504, 8529, 4828, 7494, 1267, 2]
 
-// Module 16803 (useTrackProductCardImpression)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7492 */;
+// Module 16836 (useTrackProductCardImpression)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

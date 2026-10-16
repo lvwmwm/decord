@@ -1,20 +1,20 @@
-// Module ID: 16996
-// Function ID: 16997
+// Module ID: 17029
+// Function ID: 17030
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 6846, 1503, 6421, 6427, 1126, 6877, 6880, 7733, 6876, 2128, 5147, 5439, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 6848, 1505, 6423, 6429, 1128, 6879, 6882, 7736, 6878, 2131, 5149, 5441, 2]
 
-// Module 16996 (AgeGateUnderage)
+// Module 17029 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6846 */;
-import AuthHeaderDefault from "AuthHeader" /* 6876 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6880 */;
+import Constants from "Constants" /* 1087 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6848 */;
+import AuthHeaderDefault from "AuthHeader" /* 6878 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6882 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
   dependencyMap = tmp6;
   const tmp8 = useWideAuthViewDefault();
   const tmp9 = closure_9(tmp8);
-  const tmpResult = onClose(1503);
+  const tmpResult = onClose(1505);
   navigation = tmpResult.useNavigation();
   if (cResult[0] === (undefined !== disableSwipe && disableSwipe)) {
     if (cResult[1] === (undefined !== existingUser && existingUser)) {
@@ -85,13 +85,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         } else {
           tmp15 = cResult[7];
         }
-        const tmpResult2 = onClose(6427);
+        const tmpResult2 = onClose(6429);
         tmpResult2.useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== (undefined !== existingUser && existingUser)) {
           let stringResult;
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const string = intl.string;
-          const t = tmp(1126).t;
+          const t = tmp(1128).t;
           if (undefined !== existingUser && existingUser) {
             stringResult = string(t["NR/zrG"]);
           } else {
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         if (cResult[10] !== tmp8) {
           let tmp20 = null;
           if (!tmp8) {
-            tmp20 = closure_6(tmp7(6877), {});
+            tmp20 = closure_6(tmp7(6879), {});
           }
           cResult[10] = tmp8;
           cResult[11] = tmp20;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(7733).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7736).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;
@@ -178,14 +178,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               let tmp40 = null;
               if (undefined !== existingUser && existingUser) {
                 const obj3 = { children: items1 };
-                const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(1126).t["3axQdB"], { days: 30 }) };
-                const Text = tmp(5147).Text;
-                intl4 = tmp(1126).intl;
+                const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(1128).t["3axQdB"], { days: 30 }) };
+                const Text = tmp(5149).Text;
+                intl4 = tmp(1128).intl;
                 items1 = [closure_6(Text, obj4), ];
                 const obj5 = { style: tmp9.buttonWrapper, children: closure_6(Button, obj6) };
-                obj6 = { onPress: onClose, text: intl5.string(onClose(1126).t.JhDw5o), grow: true };
-                Button = tmp(5439).Button;
-                intl5 = tmp(1126).intl;
+                obj6 = { onPress: onClose, text: intl5.string(onClose(1128).t.JhDw5o), grow: true };
+                Button = tmp(5441).Button;
+                intl5 = tmp(1128).intl;
                 items1[1] = closure_6(View, obj5);
                 tmp40 = closure_8(closure_7, obj3);
               }
@@ -197,22 +197,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
               tmp39 = tmp40;
             }
             const obj7 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp31 };
-            const tmp38 = closure_6(onClose(5147).Text, obj7);
+            const tmp38 = closure_6(onClose(5149).Text, obj7);
             cResult[20] = tmp9.body;
             cResult[21] = tmp31;
             cResult[22] = tmp38;
             tmp36 = tmp38;
           }
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           if (undefined !== fromRegister && fromRegister) {
-            stringResult1 = intl2.string(tmp(1126).t.GDQgHL);
+            stringResult1 = intl2.string(tmp(1128).t.GDQgHL);
           } else {
             const format = intl2.format;
             let stringResult2 = underageMessage;
-            const b0QzXe = tmp(1126).t.b0QzXe;
+            const b0QzXe = tmp(1128).t.b0QzXe;
             if (underageMessage == null) {
-              const intl3 = tmp(1126).intl;
-              stringResult2 = intl3.string(tmp(1126).t.WqEH4D);
+              const intl3 = tmp(1128).intl;
+              stringResult2 = intl3.string(tmp(1128).t.WqEH4D);
             }
             const obj8 = { underageMessage: stringResult2, helpURL: tmp7Result.getArticleURL(HelpdeskArticles.AGE_GATE) };
             tmp7Result = HelpdeskUtilsDefault;

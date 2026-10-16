@@ -1,15 +1,15 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13922
+// Function ID: 13923
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 5147, 5439, 4862, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 5149, 5441, 4865, 2]
 
-// Module 13890 (MediaModalYoutubeEmbedError)
+// Module 13922 (MediaModalYoutubeEmbedError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4862 */;
+import LinkingDefault from "Linking" /* 4865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = closure_6();
   ({ container, text } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(videoId(1126).t.u7vKPs);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(videoId(1128).t.u7vKPs);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[1] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-md/semibold", color: "text-overlay-light", children: first };
-    const tmp9 = closure_4(videoId(5147).Text, obj2);
+    const tmp9 = closure_4(videoId(5149).Text, obj2);
     cResult[1] = tmp4.text;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -56,8 +56,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(videoId(1126).t.LLpxJ5);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(videoId(1128).t.LLpxJ5);
     cResult[3] = stringResult1;
     tmp10 = stringResult1;
   } else {
@@ -75,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           obj.openURL("https://youtube.com/watch?v=" + videoId);
         }
     };
-    const tmp14 = closure_4(videoId(5439).Button, obj3);
+    const tmp14 = closure_4(videoId(5441).Button, obj3);
     cResult[4] = videoId;
     cResult[5] = tmp14;
     tmp12 = tmp14;
@@ -106,12 +106,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   videoId = videoId.videoId;
   const tmp = closure_6();
   let obj = { style: tmp.container, children: items };
-  const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1126).t.u7vKPs) };
-  const Text = videoId(5147).Text;
-  intl = videoId(1126).intl;
+  const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1128).t.u7vKPs) };
+  const Text = videoId(5149).Text;
+  intl = videoId(1128).intl;
   items = [closure_4(Text, obj2), ];
   const obj3 = {
-    text: intl2.string(videoId(1126).t.LLpxJ5),
+    text: intl2.string(videoId(1128).t.LLpxJ5),
     variant: "secondary",
     size: "md",
     shrink: true,
@@ -121,8 +121,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj.openURL("https://youtube.com/watch?v=" + videoId);
     }
   };
-  const Button = videoId(5439).Button;
-  intl2 = videoId(1126).intl;
+  const Button = videoId(5441).Button;
+  intl2 = videoId(1128).intl;
   items[1] = closure_4(Button, obj3);
   return closure_5(View, obj);
 }));

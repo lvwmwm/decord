@@ -1,10 +1,10 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17348
+// Function ID: 17349
 // Name: ChannelAffinitiesV2Constants
-// Dependencies: [1102, 2]
+// Dependencies: [1104, 2]
 
-// Module 17314 (ChannelAffinitiesV2Constants)
-import DurationsDefault from "Durations" /* 1102 */;
+// Module 17348 (ChannelAffinitiesV2Constants)
+import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 const result = 12 * DurationsDefault.Millis.HOUR;

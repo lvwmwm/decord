@@ -1,21 +1,21 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 11025
+// Function ID: 11026
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 5500, 6310, 7640, 8106, 1126, 11011, 7155, 7150, 3732, 558, 576, 5136, 11012, 1386, 504, 7077, 2]
+// Dependencies: [19, 5502, 6312, 7642, 8109, 1128, 11026, 7157, 7152, 3735, 558, 576, 5139, 11027, 1388, 504, 7079, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 11010 (createSocialLayerStorefrontProductDetailsEmbed)
-import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7077 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7150 */;
-import StorefrontUtils from "StorefrontUtils" /* 7155 */;
-import Constants from "Constants" /* 7640 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8106 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11011 */;
+// Module 11025 (createSocialLayerStorefrontProductDetailsEmbed)
+import intl4 from "intl" /* 1128 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7079 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7152 */;
+import StorefrontUtils from "StorefrontUtils" /* 7157 */;
+import Constants from "Constants" /* 7642 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8109 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11026 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5500 */;
-import SKUStore from "SKUStore" /* 6310 */;
+import ApplicationStore from "ApplicationStore" /* 5502 */;
+import SKUStore from "SKUStore" /* 6312 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,11 +86,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   }
   if (cResult[4] !== tmp4) {
     const fn2 = function s() {
-      const f144012 = (applicationId) => applicationId.applicationId;
+      const f144471 = (applicationId) => applicationId.applicationId;
       const mapped = closure_0.map((item) => closure_1_5.get(item));
       const found = mapped.filter(GlobalUtils.isNotNullish);
-      const items = [...new Set(found.map(f144012))];
-      new Set(found.map(f144012));
+      const items = [...new Set(found.map(f144471))];
+      new Set(found.map(f144471));
       return items;
     };
     const items1 = [tmp4];
@@ -139,14 +139,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f144015 = (applicationId) => applicationId.applicationId;
+    const f144474 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f144015))];
-    new Set(found.map(f144015));
+    const items = [...new Set(found.map(f144474))];
+    new Set(found.map(f144474));
     return items;
   }, items2);
-  let tmp3 = memo(7077)(stateFromStoresArray);
+  let tmp3 = memo(7079)(stateFromStoresArray);
 });
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
@@ -203,13 +203,13 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             }
             const obj3 = { headerText: name, headerColor: colors.headerColor, titleText: value.name, titleColor: colors.titleColor, subtitle: intl2.string(intl4.t.V91tvy), subtitleColor: colors.subtitleColor, thumbnailUrl: str1, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, acceptLabelText: stringResult, acceptLabelColor: prop, acceptLabelBackgroundColor: result1 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
             const merged = Object.assign(baseColors);
-            intl2 = tmp12(1126).intl;
-            const intl3 = tmp12(1126).intl;
+            intl2 = tmp12(1128).intl;
+            const intl3 = tmp12(1128).intl;
             const string = intl3.string;
             if (result1) {
-              stringResult = string(tmp12(1126).t.boqtTA);
+              stringResult = string(tmp12(1128).t.boqtTA);
             } else {
-              stringResult = string(tmp(3732).BKf0MM);
+              stringResult = string(tmp(3735).BKf0MM);
             }
             prop = undefined;
             if (result1) {

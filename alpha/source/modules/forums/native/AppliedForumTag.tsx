@@ -1,22 +1,22 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10249
+// Function ID: 10250
 // Name: AppliedForumTag
-// Dependencies: [109, 19, 17, 6203, 1393, 21, 5151, 587, 558, 576, 504, 1126, 7041, 1415, 5147, 10234, 2]
+// Dependencies: [109, 19, 17, 6205, 1395, 21, 5153, 587, 558, 576, 504, 1128, 7043, 1417, 5149, 10250, 2]
 
-// Module 10233 (AppliedForumTag)
+// Module 10249 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import EmojiDefault from "Emoji" /* 7041 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10234 */;
+import intl2 from "intl" /* 1128 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import EmojiDefault from "Emoji" /* 7043 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6203 */;
+import EmojiStore from "EmojiStore" /* 6205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5147);
+const Text_Text = tmp5(5149);
 let closure_3 = ["ref"];
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -215,7 +215,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppliedForumTag(
         if (null != stateFromStores) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
           ({ id: obj5.id, animated: obj5.animated } = tmp14);
-          const tmp12Result = tmp12(1415);
+          const tmp12Result = tmp12(1417);
           emojiURL = tmp12Result.getEmojiURL(obj6);
         }
         if (str == null) {
@@ -305,7 +305,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppliedForumTag(
         if (null != closure_5) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
           ({ id: obj5.id, animated: obj5.animated } = tmp14);
-          const tmp12Result = tmp12(1415);
+          const tmp12Result = tmp12(1417);
           emojiURL = tmp12Result.getEmojiURL(obj6);
         }
         if (str == null) {

@@ -1,22 +1,22 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 10745
+// Function ID: 10746
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 5087, 1126, 1200, 2128, 5025, 10731, 10732, 5088, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 5090, 1128, 1202, 2131, 5028, 10746, 10747, 5091, 2]
 
-// Module 10730 (BlockedPaymentsCountryDisplay)
+// Module 10745 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import shared from "shared" /* 5025 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import FastImageDefault from "FastImage" /* 5088 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import shared from "shared" /* 5028 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import FastImageDefault from "FastImage" /* 5091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   ({ container, header } = tmp4);
   const tmp6 = useThemeDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.vwMEHS);
     cResult[0] = stringResult;
     first = stringResult;
@@ -65,11 +65,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: format(IHxEJU, obj4) };
-    const LegacyText = tmp(1200).LegacyText;
-    const intl2 = tmp(1126).intl;
+    const LegacyText = tmp(1202).LegacyText;
+    const intl2 = tmp(1128).intl;
     format = intl2.format;
     obj4 = { helpdeskArticle: tmp5Result.getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
-    IHxEJU = tmp(1126).t.IHxEJU;
+    IHxEJU = tmp(1128).t.IHxEJU;
     tmp5Result = HelpdeskUtilsDefault;
     const tmp15 = hasOwnProperty(LegacyText, obj3);
     cResult[3] = tmp15;
@@ -79,9 +79,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   const tmpResult = shared;
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(10731);
+    tmp5Result2 = tmp5(10746);
   } else {
-    tmp5Result2 = tmp5(10732);
+    tmp5Result2 = tmp5(10747);
   }
   if (cResult[4] === tmp4.image) {
     let tmp17;
@@ -142,9 +142,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(10731);
+    tmp2Result = tmp2(10746);
   } else {
-    tmp2Result = tmp2(10732);
+    tmp2Result = tmp2(10747);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

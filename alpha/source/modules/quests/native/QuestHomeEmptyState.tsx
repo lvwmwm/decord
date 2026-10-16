@@ -1,25 +1,25 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16022
+// Function ID: 16023
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 1126, 4874, 5035, 1382, 5147, 5088, 15990, 5451, 7035, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 1128, 4877, 5038, 1384, 5149, 5091, 16023, 5453, 7037, 2]
 
-// Module 15989 (QuestHomeEmptyState)
+// Module 16022 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useToken from "useToken" /* 4874 */;
-import useChatLayoutDefault from "useChatLayout" /* 5035 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15990 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import useToken from "useToken" /* 4877 */;
+import useChatLayoutDefault from "useChatLayout" /* 5038 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7037 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16023 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,8 +59,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   if (cResult[0] !== title) {
     let stringResult = title;
     if (undefined === title) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.SdlRnK);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.SdlRnK);
     }
     cResult[0] = title;
     cResult[1] = stringResult;
@@ -71,8 +71,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   if (cResult[2] !== subtitle) {
     let stringResult1 = subtitle;
     if (undefined === subtitle) {
-      const intl2 = tmp(1126).intl;
-      stringResult1 = intl2.string(tmp(1126).t["R7mv+G"]);
+      const intl2 = tmp(1128).intl;
+      stringResult1 = intl2.string(tmp(1128).t["R7mv+G"]);
     }
     cResult[2] = subtitle;
     cResult[3] = stringResult1;

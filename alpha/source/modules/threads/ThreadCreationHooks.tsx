@@ -1,30 +1,30 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9497
+// Function ID: 9498
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7225, 502, 2065, 7460, 5492, 7591, 1125, 1085, 5144, 558, 7190, 7586, 7202, 576, 1126, 9482, 11, 1295, 8136, 9483, 7588, 1403, 7976, 9485, 8121, 5166, 7395, 5359, 584, 5025, 1102, 10025, 13719, 2]
+// Dependencies: [32, 5, 19, 7227, 502, 2068, 7462, 5494, 7593, 1127, 1087, 5147, 558, 7192, 7588, 7204, 576, 1128, 9498, 11, 1297, 8139, 9499, 7590, 1405, 7979, 9501, 8124, 5168, 7397, 5361, 584, 5028, 1104, 10041, 13745, 2]
 // Exports: createThread
 
-// Module 9481 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import MessageConstants from "MessageConstants" /* 5144 */;
-import ThreadHooks from "ThreadHooks" /* 7190 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
-import DraftStore from "DraftStore" /* 7460 */;
-import MessageParserDefault from "MessageParser" /* 7586 */;
-import SlowmodeStore from "SlowmodeStore" /* 7591 */;
+// Module 9497 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import MessageConstants from "MessageConstants" /* 5147 */;
+import ThreadHooks from "ThreadHooks" /* 7192 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
+import DraftStore from "DraftStore" /* 7462 */;
+import MessageParserDefault from "MessageParser" /* 7588 */;
+import SlowmodeStore from "SlowmodeStore" /* 7593 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7225 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7227 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import ThreadConstants from "ThreadConstants" /* 1125 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import ThreadConstants from "ThreadConstants" /* 1127 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let andDeleteMostRecentUserCreatedThreadId, c3, c4, channel, getChannel, guildId;
+let andDeleteMostRecentUserCreatedThreadId, c3, c4, channel, getChannel;
 
 let closure_12;
 let closure_14;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7202);
+    const tmp17Result = tmp17(7204);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -145,22 +145,30 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
   }
 }
 function buildMessageActivity(activity) {
+  let activity2;
   let id;
-  let session_id = activity.activity.session_id;
+  activity = activity.activity;
+  let session_id;
+  if (activity != null) {
+    session_id = activity.session_id;
+  }
   if (null == session_id) {
     session_id = AuthenticationStore.getSessionId();
   }
-  let tmp2 = null;
+  let tmp3 = null;
   if (null != session_id) {
-    const party = activity.activity.party;
-    obj = { type: activity.type, session_id, target_user_id: activity.targetUserId, party_id: id };
+    obj = { type: activity.type, session_id, target_user_id: null, party_id: id };
+    ({ targetUserId: obj.target_user_id, activity: activity2 } = activity);
     id = undefined;
-    if (party != null) {
-      id = party.id;
+    if (activity2 != null) {
+      const party = activity2.party;
+      if (party != null) {
+        id = party.id;
+      }
     }
-    tmp2 = obj;
+    tmp3 = obj;
   }
-  return tmp2;
+  return tmp3;
 }
 function sendMessage(id, arg1, items, arg3, fn) {
   if (null != fn) {
@@ -940,7 +948,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
     let c7 = 0;
     return (function*(arg0, value, arg2) {
       let obj9;
-      let tmp84;
+      let tmp83;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -970,12 +978,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               c9 = 3;
               return { value, done: true };
             } else {
-              let tmp75 = closure_0;
+              let tmp74 = closure_0;
               let uploaderFile;
               name = undefined;
               obj8 = undefined;
               analyticsLocations = undefined;
-              guildId = undefined;
+              message = undefined;
               tmp = undefined;
               tmp91 = undefined;
               file = undefined;
@@ -990,26 +998,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               if (tmp119[0]) {
                 const obj12 = closure_0(appliedTags[24]);
                 num10 = obj12.addFlag(0, constants4.SUPPRESS_NOTIFICATIONS);
-                tmp75 = tmp120;
+                tmp74 = tmp120;
               }
               const obj13 = closure_0(appliedTags[18]);
               const autoArchiveDuration = obj13.getAutoArchiveDuration(closure_0, null);
               name = closure_2_17.CHANNEL_THREADS(closure_0.id) + "?use_nested_fields=true";
               obj8 = { name, auto_archive_duration: autoArchiveDuration, applied_tags, message: obj9 };
-              obj9 = { content: tmp75, sticker_ids: tmp115, flags: tmp84 };
-              tmp84 = undefined;
+              obj9 = { content: tmp74, sticker_ids: tmp115, flags: tmp83 };
+              tmp83 = undefined;
               if (0 !== num10) {
-                tmp84 = num10;
+                tmp83 = num10;
               }
-              let tmp86 = null;
+              let tmp85 = null;
               if (null != tmp91) {
-                tmp86 = closure_2_25(tmp85);
+                tmp85 = closure_2_25(tmp84);
               }
-              analyticsLocations = tmp86;
-              guildId = null != tmp86 && null != tmp85;
-              if (guildId) {
-                obj8.message.application_id = tmp91.activity.application_id;
-                obj8.message.activity = tmp86;
+              analyticsLocations = tmp85;
+              message = null != tmp85 && null != tmp84;
+              if (message) {
+                message = obj8.message;
+                const activity = tmp84.activity;
+                let application_id;
+                if (activity != null) {
+                  application_id = activity.application_id;
+                }
+                message.application_id = application_id;
+                obj8.message.activity = tmp85;
               }
               if (null != applied_tags) {
                 if (applied_tags.length > 0) {
@@ -1028,14 +1042,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             file = tmp91.file;
             code = tmp91.code;
             reason = tmp91.reason;
-            const obj11 = { file, guildId, analyticsLocations, code, reason };
+            const obj11 = { file, guildId: message, analyticsLocations, code, reason };
             const handleUploadMessageAttachmentsErrors = closure_0(appliedTags[26]).handleUploadMessageAttachmentsErrors;
             closure_0(appliedTags[26]);
-            guildId = closure_0.getGuildId();
+            message = closure_0.getGuildId();
             if (analyticsLocations == null) {
               analyticsLocations = [];
             }
-            guildId = reason;
+            message = reason;
             const result = handleUploadMessageAttachmentsErrors(obj11);
             throw tmp;
           } else if (2 === voiceChatEnabled) {
@@ -1068,9 +1082,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               c9 = 3;
               return { value, done: true };
             } else {
-              guildId = value;
-              uploaderFile = guildId.uploaderFile;
-              const files = guildId.files;
+              message = value;
+              uploaderFile = message.uploaderFile;
+              const files = message.files;
               obj8.message.attachments = files.map((item, index) => {
                 obj = closure_1_0(applied_tags[25]);
                 return obj.getAttachmentPayload(item, index);
@@ -1103,7 +1117,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             obj3.clearDraft(closure_0.id, closure_2_9.FirstThreadMessage);
             const obj4 = closure_2_1(appliedTags[22]);
             obj4.clearAll(closure_0.id, closure_2_9.FirstThreadMessage);
-            guildId = voiceChatEnabled;
+            message = voiceChatEnabled;
             const obj17 = { guildId: closure_0.guild_id, channelId: closure_0.id, postId: value.id, applicationId, voiceChatEnabled };
             const obj5 = closure_0(appliedTags[27]);
             const result1 = obj5.trackForumPostCreated(obj17);
@@ -1114,8 +1128,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               closure_2_1(appliedTags[28]);
               trackWithMetadata(INVITE_SENT, obj18);
             }
-            if (guildId != null) {
-              tmp30(value);
+            if (message != null) {
+              tmp29(value);
             }
             c9 = 3;
             return { value, done: true };
@@ -1184,7 +1198,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
     let c7 = 0;
     return (function*(arg0, value, arg2) {
       let obj9;
-      let tmp84;
+      let tmp83;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -1215,7 +1229,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               c9 = 3;
               return { value, done: true };
             } else {
-              let tmp75 = closure_0;
+              let tmp74 = closure_0;
               let uploaderFile;
               user = undefined;
               applied_tags = undefined;
@@ -1243,26 +1257,32 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               if (tmp119[0]) {
                 const obj12 = closure_0(appliedTags[24]);
                 num10 = obj12.addFlag(0, constants4.SUPPRESS_NOTIFICATIONS);
-                tmp75 = tmp120;
+                tmp74 = tmp120;
               }
               const obj13 = closure_0(appliedTags[18]);
               const autoArchiveDuration = obj13.getAutoArchiveDuration(closure_0, null);
               applied_tags = closure_2_17.CHANNEL_THREADS(closure_0.id) + "?use_nested_fields=true";
               obj8 = { name: user, auto_archive_duration: autoArchiveDuration, applied_tags, message: obj9 };
-              obj9 = { content: tmp75, sticker_ids: tmp115, flags: tmp84 };
-              tmp84 = undefined;
+              obj9 = { content: tmp74, sticker_ids: tmp115, flags: tmp83 };
+              tmp83 = undefined;
               if (0 !== num10) {
-                tmp84 = num10;
+                tmp83 = num10;
               }
-              let tmp86 = null;
+              let tmp85 = null;
               if (null != tmp91) {
-                tmp86 = closure_2_25(tmp85);
+                tmp85 = closure_2_25(tmp84);
               }
-              closure_4 = tmp86;
-              guildId = null != tmp86 && null != tmp85;
-              if (guildId) {
-                obj8.message.application_id = tmp91.activity.application_id;
-                obj8.message.activity = tmp86;
+              closure_4 = tmp85;
+              message = null != tmp85 && null != tmp84;
+              if (message) {
+                message = obj8.message;
+                const activity = tmp84.activity;
+                let application_id;
+                if (activity != null) {
+                  application_id = activity.application_id;
+                }
+                message.application_id = application_id;
+                obj8.message.activity = tmp85;
               }
               if (null != applied_tags) {
                 if (applied_tags.length > 0) {
@@ -1281,14 +1301,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             file = tmp91.file;
             code = tmp91.code;
             reason = tmp91.reason;
-            const obj11 = { file, guildId, analyticsLocations, code, reason };
+            const obj11 = { file, guildId: message, analyticsLocations, code, reason };
             const handleUploadMessageAttachmentsErrors = closure_0(appliedTags[26]).handleUploadMessageAttachmentsErrors;
             closure_0(appliedTags[26]);
-            guildId = closure_0.getGuildId();
+            message = closure_0.getGuildId();
             if (analyticsLocations == null) {
               analyticsLocations = [];
             }
-            guildId = reason;
+            message = reason;
             const result = handleUploadMessageAttachmentsErrors(obj11);
             throw closure_11;
           } else if (2 === voiceChatEnabled) {
@@ -1359,7 +1379,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             obj3.clearDraft(closure_0.id, closure_2_9.FirstThreadMessage);
             const obj4 = name(appliedTags[22]);
             obj4.clearAll(closure_0.id, closure_2_9.FirstThreadMessage);
-            guildId = voiceChatEnabled;
+            message = voiceChatEnabled;
             const obj17 = { guildId: closure_0.guild_id, channelId: closure_0.id, postId: user.id, applicationId, voiceChatEnabled };
             const obj5 = closure_0(appliedTags[27]);
             const result1 = obj5.trackForumPostCreated(obj17);
@@ -1370,8 +1390,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               name(appliedTags[28]);
               trackWithMetadata(INVITE_SENT, obj18);
             }
-            if (guildId != null) {
-              tmp30(user);
+            if (message != null) {
+              tmp29(user);
             }
             c9 = 3;
             return { value: user, done: true };

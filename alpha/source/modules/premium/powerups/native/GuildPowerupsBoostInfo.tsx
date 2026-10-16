@@ -1,19 +1,19 @@
-// Module ID: 13137
-// Function ID: 13138
+// Module ID: 13163
+// Function ID: 13164
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5064, 21, 5151, 587, 558, 576, 6884, 13138, 9630, 5147, 2]
+// Dependencies: [17, 5067, 21, 5153, 587, 558, 576, 6886, 13164, 9646, 5149, 2]
 
-// Module 13137 (GuildPowerupsBoostInfo)
+// Module 13163 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6884 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9630 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13138 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6886 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9646 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13164 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -167,7 +167,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(5147).Text;
+  const Text = tmp2(5149).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(5147).Text;
+  const Text2 = tmp2(5149).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }

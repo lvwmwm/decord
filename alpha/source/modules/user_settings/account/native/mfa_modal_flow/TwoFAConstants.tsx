@@ -1,10 +1,10 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15722
+// Function ID: 15723
 // Name: TwoFAConstants
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 
-// Module 15689 (TwoFAConstants)
-import Constants from "Constants" /* 1085 */;
+// Module 15722 (TwoFAConstants)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;

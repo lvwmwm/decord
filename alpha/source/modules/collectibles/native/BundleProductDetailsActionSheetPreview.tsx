@@ -1,20 +1,20 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 14134
+// Function ID: 14135
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1087, 21, 5151, 587, 558, 576, 14103, 6555, 1126, 8514, 7492, 14104, 5147, 2]
+// Dependencies: [32, 19, 17, 1089, 21, 5153, 587, 558, 576, 14135, 6557, 1128, 8522, 7494, 14136, 5149, 2]
 
-// Module 14102 (BundleProductDetailsActionSheetPreview)
+// Module 14134 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import useShopProductItems from "useShopProductItems" /* 8514 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import intl2 from "intl" /* 1128 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import useShopProductItems from "useShopProductItems" /* 8522 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,9 +35,9 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(5147);
-const CollectiblesUtils = tmp(7492);
-const IndividualProductPreview = tmp(14104);
+const Text_Text = tmp(5149);
+const CollectiblesUtils = tmp(7494);
+const IndividualProductPreview = tmp(14136);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
@@ -708,8 +708,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
   const obj5 = { variant: "heading-xl/bold", children: product.name };
   items4[0] = authStore2(Text_Text.Text, obj5);
   const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.formatToPlainString(intl2.t["/0Yndu"], obj7) };
-  const Text = tmp7(5147).Text;
-  intl = tmp7(1126).intl;
+  const Text = tmp7(5149).Text;
+  intl = tmp7(1128).intl;
   obj7 = { num: items.length };
   items4[1] = authStore2(Text, obj6);
   items5 = [map1(authStore, obj4), ];
@@ -717,12 +717,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
   items6 = [authStore2(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
   const items7 = [name, ];
   let tmp20Result = null != collectibleTypeLabel;
-  const Text2 = tmp7(5147).Text;
+  const Text2 = tmp7(5149).Text;
   const tmp20 = authStore2;
   if (tmp20Result) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: " - " + collectibleTypeLabel };
-    const Text3 = tmp7(5147).Text;
+    const Text3 = tmp7(5149).Text;
     tmp20Result = tmp20(Text3, obj9);
   }
   items7[1] = tmp20Result;

@@ -1,18 +1,18 @@
-// Module ID: 15738
-// Function ID: 15739
+// Module ID: 15771
+// Function ID: 15772
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4816, 8210, 1085, 558, 576, 504, 1126, 10991, 6870, 15739, 2]
+// Dependencies: [4819, 8213, 1087, 558, 576, 504, 1128, 11006, 6872, 15772, 2]
 
-// Module 15738 (AccountIgnoredUsersSetting)
+// Module 15771 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import EyeSlashIcon from "EyeSlashIcon" /* 6870 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 6872 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
   const tmpResult = get_initialized;
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5);
   if (cResult[2] !== stateFromStoresArray.length) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { numberOfIgnoredUsers: stateFromStoresArray.length };
     const formatResult = intl.format(intl2.t.rXUeOl, obj2);
     cResult[2] = stateFromStoresArray.length;

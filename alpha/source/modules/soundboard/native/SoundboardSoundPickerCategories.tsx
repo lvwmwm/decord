@@ -1,32 +1,32 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18151
+// Function ID: 18152
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 18099, 1390, 1085, 21, 5151, 587, 558, 576, 7270, 6379, 1126, 9981, 5110, 18115, 9142, 1200, 8440, 6405, 6555, 5116, 5117, 4825, 504, 9502, 1631, 8590, 7034, 5048, 2]
+// Dependencies: [109, 19, 17, 18134, 1392, 1087, 21, 5153, 587, 558, 576, 7272, 6381, 1128, 9997, 5113, 18149, 9150, 1202, 8448, 6407, 6557, 5119, 5120, 4828, 504, 9518, 1633, 8598, 7036, 5051, 2]
 
-// Module 18117 (SoundboardSoundPickerCategories)
+// Module 18151 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import ClockIcon from "ClockIcon" /* 5110 */;
-import HapticUtils from "HapticUtils" /* 5116 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5117 */;
-import GuildIconDefault from "GuildIcon" /* 6379 */;
-import Pressables from "Pressables" /* 6405 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import SoundboardTypes from "SoundboardTypes" /* 7270 */;
-import LockIcon from "LockIcon" /* 8440 */;
-import TrophyIcon from "TrophyIcon" /* 9142 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9502 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9981 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18099 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18115 */;
+import intl6 from "intl" /* 1128 */;
+import ClockIcon from "ClockIcon" /* 5113 */;
+import HapticUtils from "HapticUtils" /* 5119 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
+import GuildIconDefault from "GuildIcon" /* 6381 */;
+import Pressables from "Pressables" /* 6407 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import SoundboardTypes from "SoundboardTypes" /* 7272 */;
+import LockIcon from "LockIcon" /* 8448 */;
+import TrophyIcon from "TrophyIcon" /* 9150 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9518 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9997 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18134 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18149 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp30;
     const _Symbol4 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl5 = tmp(1126).intl;
+      const intl5 = tmp(1128).intl;
       const stringResult = intl5.string(intl6.t.y3LQCG);
       cResult[3] = stringResult;
       tmp30 = stringResult;
@@ -118,7 +118,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp26;
     const _Symbol3 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
+      const intl4 = tmp(1128).intl;
       const stringResult1 = intl4.string(intl6.t["+cGVV6"]);
       cResult[4] = stringResult1;
       tmp24 = stringResult1;
@@ -142,7 +142,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp20;
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult2 = intl3.string(intl6.t.Rtvk9X);
       cResult[7] = stringResult2;
       tmp20 = stringResult2;
@@ -157,7 +157,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp16;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult3 = intl2.string(intl6.t.sKt3xS);
       cResult[8] = stringResult3;
       tmp16 = stringResult3;
@@ -177,7 +177,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       let tmp6;
       let tmp8;
       if (cResult[9] !== category.categoryInfo.guild.name) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const obj4 = { guildName: category.categoryInfo.guild.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl6.t.GXs41w, obj4);
         cResult[9] = category.categoryInfo.guild.name;
@@ -278,7 +278,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       }
       if (tmp42 == null) {
         const obj10 = { style: tmp5.keyboardItem, source: tmp12 };
-        tmp42 = authStore2(tmp(1200).Icon, obj10);
+        tmp42 = authStore2(tmp(1202).Icon, obj10);
       }
       cResult[19] = tmp11;
       cResult[20] = tmp13;
@@ -329,27 +329,27 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     tmp6 = null;
     tmp7 = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl4 = tmp2(1126).intl;
-    name = intl4.string(tmp2(1126).t.y3LQCG);
+    const intl4 = tmp2(1128).intl;
+    name = intl4.string(tmp2(1128).t.y3LQCG);
     tmp6 = AssetRegistryDefault;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl3 = tmp2(1126).intl;
-    name = intl3.string(tmp2(1126).t["+cGVV6"]);
+    const intl3 = tmp2(1128).intl;
+    name = intl3.string(tmp2(1128).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore2(tmp2(5110).ClockIcon, obj);
+    tmp7 = authStore2(tmp2(5113).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl2 = tmp2(1126).intl;
-    name = intl2.string(tmp2(1126).t.Rtvk9X);
+    const intl2 = tmp2(1128).intl;
+    name = intl2.string(tmp2(1128).t.Rtvk9X);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.SEARCH === type) {
-    const intl = tmp2(1126).intl;
-    name = intl.string(tmp2(1126).t.sKt3xS);
+    const intl = tmp2(1128).intl;
+    name = intl.string(tmp2(1128).t.sKt3xS);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
@@ -359,11 +359,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     tmp14Result = null;
     name = null;
     if (SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
-      const intl5 = tmp2(1126).intl;
+      const intl5 = tmp2(1128).intl;
       const obj3 = { guildName: category.categoryInfo.guild.name };
-      name = intl5.formatToPlainString(tmp2(1126).t.GXs41w, obj3);
+      name = intl5.formatToPlainString(tmp2(1128).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore2(tmp2(9142).TrophyIcon, obj4);
+      tmp7 = authStore2(tmp2(9150).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -378,14 +378,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6405).PressableOpacity;
+  const PressableOpacity = tmp2(6407).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;
   }
   if (tmp14Result == null) {
     const obj7 = { style: tmp.keyboardItem, source: tmp6 };
-    tmp14Result = tmp14(tmp2(1200).Icon, obj7);
+    tmp14Result = tmp14(tmp2(1202).Icon, obj7);
   }
   items1 = [tmp14Result, ];
   if (locked) {

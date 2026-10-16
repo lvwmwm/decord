@@ -1,56 +1,82 @@
 // Module ID: 8094
 // Function ID: 8095
-// Dependencies: [8062]
+// Dependencies: [8065]
 
 // Module 8094
-import _modDef8062 from "module_8062" /* 8062 */;
+import _modDef8065 from "module_8065" /* 8065 */;
 
-let obj = {
-  read(getUint8, sum) {
-    let obj4;
-    let obj5;
-    let str2;
-    let sum5;
-    const obj = _modDef8062;
-    const byteAt = obj.getByteAt(getUint8, sum);
-    let num = 0;
-    if (16 & byteAt) {
-      num = 1;
+
+export default {
+  read(byteLength, sum) {
+    let str6;
+    let str7;
+    let tmp11;
+    let tmp16;
+    let tmp20;
+    let tmp24;
+    let tmp28;
+    let tmp6;
+    let tmp;
+    if (sum + 4 <= byteLength.byteLength) {
+      const obj = _modDef8065;
+      const longAt = obj.getLongAt(byteLength, sum);
+      const _HermesInternal = HermesInternal;
+      tmp = { value: longAt, description: "" + longAt + "px" };
+      const obj2 = { value: longAt, description: "" + longAt + "px" };
     }
-    let str = "No";
-    const obj2 = { value: num, description: str2 };
-    str2 = "No";
-    if (16 & byteAt) {
-      str2 = "Yes";
+    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
+    tmp6 = undefined;
+    if (sum + 4 + 4 <= byteLength.byteLength) {
+      const obj4 = _modDef8065;
+      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
+      const _HermesInternal2 = HermesInternal;
+      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
+      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
     }
-    let num2 = 0;
-    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
-    if (2 & byteAt) {
-      num2 = 1;
+    tmp11 = undefined;
+    if (sum + 8 + 1 <= byteLength.byteLength) {
+      const obj6 = _modDef8065;
+      const byteAt = obj6.getByteAt(byteLength, sum + 8);
+      const _HermesInternal3 = HermesInternal;
+      tmp11 = { value: byteAt, description: "" + byteAt };
+      const obj7 = { value: byteAt, description: "" + byteAt };
     }
-    obj4 = { value: num2, description: str };
-    if (2 & byteAt) {
-      str = "Yes";
+    tmp16 = undefined;
+    if (sum + 9 + 1 <= byteLength.byteLength) {
+      const obj8 = _modDef8065;
+      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
+      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
+      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
     }
-    sum = sum + c2;
-    const tmpResult = _modDef8062;
-    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
-    const tmpResult6 = _modDef8062;
-    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
-    const tmpResult7 = _modDef8062;
-    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
-    const sum3 = sum + c3;
-    obj5 = { value: sum2, description: `${tmp9}px` };
-    const tmpResult8 = _modDef8062;
-    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
-    const tmpResult9 = _modDef8062;
-    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
-    const tmpResult10 = _modDef8062;
-    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
+    tmp20 = undefined;
+    if (sum + 10 + 1 <= byteLength.byteLength) {
+      const obj10 = _modDef8065;
+      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
+      const obj11 = { value: byteAt2, description: str6 };
+      str6 = "Unknown";
+      if (0 === byteAt2) {
+        str6 = "Deflate/Inflate";
+      }
+      tmp20 = obj11;
+    }
+    tmp24 = undefined;
+    if (sum + 11 + 1 <= byteLength.byteLength) {
+      const obj12 = _modDef8065;
+      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
+      const obj13 = { value: byteAt3, description: str7 };
+      str7 = "Unknown";
+      if (0 === byteAt3) {
+        str7 = "Adaptive";
+      }
+      tmp24 = obj13;
+    }
+    tmp28 = undefined;
+    if (sum + 12 + 1 <= byteLength.byteLength) {
+      const obj14 = _modDef8065;
+      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
+      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
+      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
+    }
     return obj3;
   }
 };
-let c2 = 4;
-let c3 = 7;
-
-export default obj;

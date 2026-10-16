@@ -1,586 +1,158 @@
 // Module ID: 12341
 // Function ID: 12342
-// Dependencies: [5, 12303, 12275, 12319, 12340]
-// Exports: makeOfflineTransport
+// Dependencies: [12297, 12298, 12342, 12345, 12334, 12303]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12341
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _mod12303 from "module_12303" /* 12303 */;
+import _mod12342 from "module_12342" /* 12342 */;
+import _mod12345 from "module_12345" /* 12345 */;
+import DEBUG_BUILD from "module_12297" /* 12297 */;
+import CONSOLE_LEVELS from "module_12298" /* 12298 */;
 
-let c2, c6, c7;
+const require = globalThis.__r;
+let _require, integrations;
 
-let c3 = 100;
-let c4 = 5000;
 
-export const MIN_DELAY = 100;
-export const START_DELAY = 5000;
-export function makeOfflineTransport(arg0) {
-  let closure_0 = arg0;
-  function log() {
-    const items = [...arguments];
-    const tmp2 = closure_0;
-    const tmp3 = log;
-    if (closure_0(log[1]).DEBUG_BUILD) {
-      const logger = tmp2(tmp3[2]).logger;
-      const info = logger.info;
-      const items1 = ["[Offline]:"];
-      HermesBuiltin.arraySpread(items1, items, 1);
-      HermesBuiltin.apply(info, items1, logger);
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12342;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
   }
-  return function(createStore) {
-    let timerId;
-    let tmp5;
-    closure_0 = createStore;
-    function flushIn(arg0) {
-      const tmp = timerId;
-      if (tmp) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(timerId);
-      }
-      timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            obj = { value, done: true };
-            return obj;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                closure_0 = undefined;
-                c2 = 1;
-                c3 = 1;
-                const obj3 = { value: closure_2_3.shift(), done: false };
-                return obj3;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_0 = value;
-              const tmp21 = closure_0;
-              if (tmp21) {
-                tmp4("Attempting to send previously queued event");
-                const _Date = Date;
-                const self = this;
-                const self2 = this;
-                const first = closure_0[0];
-                const date = new Date();
-                first.sent_at = date.toISOString();
-                const promise = closure_129_7(closure_0, true);
-                promise.catch((error) => {
-                  closure_1_1("Failed to retry sending", error);
-                });
-              }
-              c3 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp16) {
-            c3 = 3;
-            throw tmp16;
-          }
-        }
-      }), arg0);
-      let unref = typeof timerId !== "number";
-      if (typeof timerId !== "number") {
-        unref = timerId.unref;
-      }
-      if (unref) {
-        timerId.unref();
-      }
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
     }
-    function flushWithBackOff() {
-      if (!timerId) {
-        const tmp2 = closure_4;
-        if (tmp) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(timerId);
-        }
-        const _setTimeout = setTimeout;
-        timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              obj = { value, done: true };
-              return obj;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c3 = 2;
-              if (0 === c2) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj2 = { value, done: true };
-                  return obj2;
-                } else {
-                  closure_0 = undefined;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj3 = { value: closure_2_3.shift(), done: false };
-                  return obj3;
-                }
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                closure_0 = value;
-                const tmp21 = closure_0;
-                if (tmp21) {
-                  tmp4("Attempting to send previously queued event");
-                  const _Date = Date;
-                  const self = this;
-                  const self2 = this;
-                  const first = closure_0[0];
-                  const date = new Date();
-                  first.sent_at = date.toISOString();
-                  const promise = closure_129_7(closure_0, true);
-                  promise.catch((error) => {
-                    closure_1_1("Failed to retry sending", error);
-                  });
-                }
-                c3 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp16) {
-              c3 = 3;
-              throw tmp16;
-            }
-          }
-        }), tmp2);
-        let unref = typeof timerId !== "number";
-        if (typeof timerId !== "number") {
-          unref = timerId.unref;
-        }
-        if (unref) {
-          timerId.unref();
-        }
-        const _Math = Math;
-        closure_4 = Math.min(2 * closure_4, 3600000);
-      }
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
     }
-    function send(arg0) {
-      return obj(...arguments);
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
     }
-    let obj = function _send() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let shouldStore;
-        function shouldQueue(arg0, arg1, arg2) {
-          obj = createStore(closure_3_1[3]);
-          const result = obj.envelopeContainsItemType(arg0, ["client_report"]);
-          let tmp2 = !result;
-          if (tmp2) {
-            const obj2 = shouldStore;
-            shouldStore = shouldStore.shouldStore;
-            let shouldStoreResult = !shouldStore;
-            if (shouldStore) {
-              shouldStoreResult = obj2.shouldStore(arg0, arg1, arg2);
-            }
-            tmp2 = shouldStoreResult;
-          }
-          return tmp2;
-        }
-        closure_1 = value;
-        if (c7 === 2) {
-          c7 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          let c5;
-          try {
-            let flag;
-            c7 = 2;
-            const tmp4 = c6;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_3 = tmp;
-                value = tmp4;
-                flag = closure_1;
-                if (closure_1 === undefined) {
-                  flag = false;
-                }
-                value = undefined;
-                c3 = undefined;
-                c6 = 1;
-                c7 = 1;
-                return { value: "test", done: true };
-              }
-            } else if (1 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                const tmp75 = flag;
-                if (!tmp75) {
-                  const obj14 = createStore(closure_2_1[3]);
-                  if (obj14.envelopeContainsItemType(shouldStore, ["replay_event", "replay_recording"])) {
-                    c6 = 2;
-                    c7 = 1;
-                    const obj6 = { value: closure_131_3.push(shouldStore), done: false };
-                    return obj6;
-                  }
-                }
-                c5 = 1;
-                c6 = 5;
-                c7 = 1;
-                const obj7 = { value: closure_131_1.send(shouldStore), done: false };
-                return obj7;
-              }
-            } else if (2 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj8 = { value, done: true };
-                return obj8;
-              } else {
-                closure_131_5(closure_2_3);
-                c7 = 3;
-                const obj9 = { value: {}, done: true };
-                return obj9;
-              }
-            } else if (3 === tmp4) {
-              c5 = 0;
-              c6 = 4;
-              c7 = 1;
-              const obj10 = { value: shouldQueue(shouldStore, closure_4, closure_4), done: false };
-              return obj10;
-            } else if (4 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj11 = { value, done: true };
-                return obj11;
-              } else if (value) {
-                if (flag) {
-                  c6 = 7;
-                  c7 = 1;
-                  const obj12 = { value: closure_131_3.unshift(shouldStore), done: false };
-                  return obj12;
-                } else {
-                  c6 = 6;
-                  c7 = 1;
-                  const obj13 = { value: closure_131_3.push(shouldStore), done: false };
-                  return obj13;
-                }
-              } else {
-                throw closure_4;
-              }
-            } else if (5 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                c7 = 3;
-                const obj15 = { value, done: true };
-                return obj15;
-              } else {
-                c3 = closure_2_3;
-                const tmp73 = value;
-                if (tmp73) {
-                  if (value.headers) {
-                    if (value.headers["retry-after"]) {
-                      const obj5 = createStore(closure_2_1[4]);
-                      c3 = obj5.parseRetryAfterHeader(value.headers["retry-after"]);
-                    }
-                  }
-                  if (value.headers) {
-                    if (value.headers["x-sentry-rate-limits"]) {
-                      c3 = 60000;
-                    }
-                  }
-                  const num7 = value.statusCode || 0;
-                  if (num7 >= 400) {
-                    c5 = 0;
-                    c7 = 3;
-                    const obj16 = { value, done: true };
-                    return obj16;
-                  }
-                }
-                closure_131_5(c3);
-                closure_4 = closure_2_4;
-                c5 = 0;
-                c7 = 3;
-                const obj17 = { value, done: true };
-                return obj17;
-              }
-            } else {
-              if (6 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  const obj18 = { value, done: true };
-                  return obj18;
-                }
-              } else if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                obj = { value, done: true };
-                return obj;
-              }
-              closure_131_6();
-              closure_1("Error sending. Event queued.", closure_4);
-              c7 = 3;
-              const obj19 = { value: {}, done: true };
-              return obj19;
-            }
-          } catch (tmp64) {
-            closure_4 = tmp64;
-            if (0 === c5) {
-              c7 = 3;
-              throw tmp64;
-            } else {
-              c6 = 3;
-            }
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    let closure_1 = closure_0(createStore);
-    if (createStore.createStore) {
-      let closure_3 = createStore.createStore(createStore);
-      let tmp4 = closure_1_4;
-      let closure_4 = closure_1_4;
-      if (createStore.flushAtStartup) {
-        if (!timerId) {
-          const tmp6 = closure_4;
-          if (tmp5) {
-            const tmp7 = globalThis;
-            let _clearTimeout = clearTimeout;
-            clearTimeout(timerId);
-          }
-          const tmp10 = globalThis;
-          let _setTimeout = setTimeout;
-          timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-            if (c3 === 2) {
-              c3 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                obj = { value, done: true };
-                return obj;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c3 = 2;
-                if (0 === c2) {
-                  if (arg0 === 1) {
-                    c3 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c3 = 3;
-                    const obj2 = { value, done: true };
-                    return obj2;
-                  } else {
-                    closure_0 = undefined;
-                    c2 = 1;
-                    c3 = 1;
-                    const obj3 = { value: closure_2_3.shift(), done: false };
-                    return obj3;
-                  }
-                } else if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  closure_0 = value;
-                  const tmp21 = closure_0;
-                  if (tmp21) {
-                    tmp4("Attempting to send previously queued event");
-                    const _Date = Date;
-                    const self = this;
-                    const self2 = this;
-                    const first = closure_0[0];
-                    const date = new Date();
-                    first.sent_at = date.toISOString();
-                    const promise = closure_129_7(closure_0, true);
-                    promise.catch((error) => {
-                      closure_1_1("Failed to retry sending", error);
-                    });
-                  }
-                  c3 = 3;
-                  return { value: "IconComponent", done: null };
-                }
-              } catch (tmp16) {
-                c3 = 3;
-                throw tmp16;
-              }
-            }
-          }), tmp6);
-          let unref = typeof timerId !== "number";
-          if (typeof timerId !== "number") {
-            unref = timerId.unref;
-          }
-          if (unref) {
-            timerId.unref();
-          }
-          let _Math = Math;
-          closure_4 = Math.min(2 * closure_4, 3600000);
-        }
-      }
-      obj = {
-        send,
-        flush(arg0) {
-            if (undefined === arg0) {
-              const tmp = c4;
-              closure_4 = c4;
-              const tmp3 = timerId;
-              const tmp2 = c3;
-              if (timerId) {
-                const tmp4 = globalThis;
-                const _clearTimeout = clearTimeout;
-                clearTimeout(timerId);
-              }
-              const _setTimeout = setTimeout;
-              timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-                if (c3 === 2) {
-                  c3 = 3;
-                  throw new TypeError("Generator functions may not be called on executing generators");
-                } else if (tmp3 === 3) {
-                  if (arg0 === 1) {
-                    throw value;
-                  } else if (arg0 === 2) {
-                    obj = { value, done: true };
-                    return obj;
-                  } else {
-                    return { value: "IconComponent", done: null };
-                  }
-                } else {
-                  try {
-                    c3 = 2;
-                    if (0 === c2) {
-                      if (arg0 === 1) {
-                        c3 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c3 = 3;
-                        const obj2 = { value, done: true };
-                        return obj2;
-                      } else {
-                        closure_0 = undefined;
-                        c2 = 1;
-                        c3 = 1;
-                        const obj3 = { value: closure_2_3.shift(), done: false };
-                        return obj3;
-                      }
-                    } else if (arg0 === 1) {
-                      c3 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c3 = 3;
-                      const obj4 = { value, done: true };
-                      return obj4;
-                    } else {
-                      closure_0 = value;
-                      const tmp21 = closure_0;
-                      if (tmp21) {
-                        tmp4("Attempting to send previously queued event");
-                        const _Date = Date;
-                        const self = this;
-                        const self2 = this;
-                        const first = closure_0[0];
-                        const date = new Date();
-                        first.sent_at = date.toISOString();
-                        const promise = closure_129_7(closure_0, true);
-                        promise.catch((error) => {
-                          closure_1_1("Failed to retry sending", error);
-                        });
-                      }
-                      c3 = 3;
-                      return { value: "IconComponent", done: null };
-                    }
-                  } catch (tmp16) {
-                    c3 = 3;
-                    throw tmp16;
-                  }
-                }
-              }), tmp2);
-              let unref = typeof timerId !== "number";
-              if (typeof timerId !== "number") {
-                unref = timerId.unref;
-              }
-              if (unref) {
-                timerId.unref();
-              }
-            }
-            return closure_1.flush(arg0);
-          }
-      };
-      return obj;
-    } else {
-      let tmp = globalThis;
-      const _Error = Error;
-      let self = this;
-      let self2 = this;
-      const error = new Error("No `createStore` function was provided");
-      let tmp3 = error;
-      throw error;
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
     }
-  };
-}
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
+  }
+  const tmp3Result = _mod12342;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12342;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+};
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12342;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+  }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12345;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
+  }
+  const items2 = [items1];
+  const tmpResult2 = _mod12342;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12334");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12345);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12303;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12303;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12342");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12342");
+  return obj8.createEnvelope(obj2, items);
+};

@@ -1,18 +1,19 @@
-// Module ID: 15556
-// Function ID: 15557
+// Module ID: 13865
+// Function ID: 13866
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 2087, 4806, 1390, 4827, 4831, 558, 576, 12, 8508, 13095, 504, 1989, 5940, 15557, 2]
+// Dependencies: [19, 2090, 4809, 1392, 4830, 4834, 558, 576, 13866, 12, 8516, 13121, 504, 1991, 5942, 2]
 
-// Module 15556 (useGuildTagCreationUpsell)
+// Module 13865 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
+import ServerTagUpsellOnProfileExperimentDefault from "ServerTagUpsellOnProfileExperiment" /* 13866 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import UserStore from "UserStore" /* 1390 */;
-import BillingInfoStore from "BillingInfoStore" /* 4827 */;
-import SubscriptionStore from "SubscriptionStore" /* 4831 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import UserStore from "UserStore" /* 1392 */;
+import BillingInfoStore from "BillingInfoStore" /* 4830 */;
+import SubscriptionStore from "SubscriptionStore" /* 4834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,36 +21,40 @@ let guildsArray;
 
 let tmp;
 const get_initialized = tmp(504);
-const ServerTagUpsellOnProfileExperiment = tmp(15557);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagCreationUpsell(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagCreationUpsell(arg0, arg1) {
   let combined;
   let enabled;
   let ignoreSubscriptionPlatform;
-  let tmp13;
+  let tmp10;
   let tmp14;
-  let tmp18;
-  let tmp4;
+  let tmp15;
+  let tmp19;
   let tmp5;
-  let tmp8;
+  let tmp6;
   let tmp9;
+  let obj = arg1;
   let tmp = require;
   let tmp2 = dependencyMap;
-  let obj = react2;
-  const cResult = obj.c(11);
+  let obj2 = react2;
+  const cResult = obj2.c(11);
+  if (undefined === arg1) {
+    let tmp4 = importDefault;
+    obj = ServerTagUpsellOnProfileExperimentDefault;
+  }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore, PermissionStore];
-    const fn = function h() {
+    const fn = function b() {
       let tmp = _modDef12;
       const sortBy = tmp.sortBy;
       guildsArray = guildsArray.getGuildsArray();
       return sortBy(guildsArray.filter((item) => {
-        const obj = closure_1_0(closure_1_2[9]);
+        const obj = closure_1_0(closure_1_2[10]);
         let tmp4 = !obj.guildSupportsTags(item);
         obj.guildSupportsTags(item);
         const tmp = closure_1_0;
         const tmp2 = closure_1_2;
         if (tmp4) {
-          const tmpResult = tmp(tmp2[10]);
+          const tmpResult = tmp(tmp2[11]);
           tmp4 = true === tmpResult.getHasAllocateBoostPermission(closure_1_5, item);
         }
         return tmp4;
@@ -60,16 +65,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
+    tmp6 = fn;
+    tmp5 = items;
   } else {
-    [tmp4, tmp5] = cResult;
+    [tmp5, tmp6] = cResult;
   }
   let tmpResult = get_initialized;
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserStore, SubscriptionStore];
-    const fn2 = function f() {
+    const fn2 = function y() {
       const obj = PremiumTypeUtils;
       const isPremiumResult = obj.isPremium(authStore.getCurrentUser());
       let tmp2 = !isPremiumResult;
@@ -86,16 +91,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     };
     cResult[2] = items1;
     cResult[3] = fn2;
-    tmp9 = fn2;
-    tmp8 = items1;
+    tmp10 = fn2;
+    tmp9 = items1;
   } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
   }
-  const tmpResult3 = get_initialized;
-  let stateFromStores = tmpResult3.useStateFromStores(tmp8, tmp9);
+  const tmpResult2 = get_initialized;
+  let stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function y() {
+    const fn3 = function v() {
       const obj = PremiumTypeUtils;
       const isPremiumResult = obj.isPremium(authStore.getCurrentUser());
       let isSubscriptionFetching = !isPremiumResult;
@@ -108,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
         isSubscriptionFetching = BillingInfoStore.isSubscriptionFetching;
       }
       if (!isSubscriptionFetching) {
-        const tmpResult = tmp(tmp2[13]);
+        const tmpResult = tmp(tmp2[14]);
         const subscriptions = tmpResult.fetchSubscriptions();
         subscriptions.catch(() => {
 
@@ -118,13 +123,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     const items2 = [];
     cResult[4] = fn3;
     cResult[5] = items2;
-    tmp14 = items2;
-    tmp13 = fn3;
+    tmp15 = items2;
+    tmp14 = fn3;
   } else {
-    tmp13 = cResult[4];
-    tmp14 = cResult[5];
+    tmp14 = cResult[4];
+    tmp15 = cResult[5];
   }
-  const effect = react.useEffect(tmp13, tmp14);
+  const effect = react.useEffect(tmp14, tmp15);
   if (stateFromStoresArray.length <= 0) {
     const _HermesInternal = HermesInternal;
     let str = "-Disabled";
@@ -133,18 +138,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     combined = arg0;
   }
   if (cResult[6] !== combined) {
-    let obj2 = { location: combined };
+    const obj3 = { location: combined };
     cResult[6] = combined;
-    cResult[7] = obj2;
-    tmp18 = obj2;
+    cResult[7] = obj3;
+    tmp19 = obj3;
   } else {
-    tmp18 = cResult[7];
+    tmp19 = cResult[7];
   }
-  const tmpResult4 = ServerTagUpsellOnProfileExperiment;
-  const serverTagUpsellOnProfileConfig = tmpResult4.useServerTagUpsellOnProfileConfig(tmp18);
-  ({ enabled, ignoreSubscriptionPlatform } = serverTagUpsellOnProfileConfig);
+  const config = obj.useConfig(tmp19);
+  ({ enabled, ignoreSubscriptionPlatform } = config);
   if (enabled) {
-    enabled = tmp16;
+    enabled = tmp17;
   }
   if (enabled) {
     if (!stateFromStores) {
@@ -153,19 +157,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     enabled = stateFromStores;
   }
   if (cResult[8] === stateFromStoresArray) {
-    let tmp20;
+    let tmp21;
     if (cResult[9] === enabled) {
-      tmp20 = cResult[10];
+      tmp21 = cResult[10];
     }
-    return tmp20;
+    return tmp21;
   }
-  const obj3 = { creatableGuilds: stateFromStoresArray, isUpsellVisible: enabled };
+  const obj4 = { creatableGuilds: stateFromStoresArray, isUpsellVisible: enabled };
   cResult[8] = stateFromStoresArray;
   cResult[9] = enabled;
-  cResult[10] = obj3;
-  tmp20 = obj3;
+  cResult[10] = obj4;
+  tmp21 = obj4;
 }) : (function useGuildTagCreationUpsell(arg0) {
   let combined;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    let tmp2 = importDefault;
+    tmp = ServerTagUpsellOnProfileExperimentDefault;
+  }
   let obj = get_initialized;
   const items = [GuildStore, PermissionStore];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -173,13 +182,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
     const sortBy = tmp.sortBy;
     guildsArray = guildsArray.getGuildsArray();
     return sortBy(guildsArray.filter((item) => {
-      const obj = closure_1_0(closure_1_2[9]);
+      const obj = closure_1_0(closure_1_2[10]);
       let tmp4 = !obj.guildSupportsTags(item);
       obj.guildSupportsTags(item);
       const tmp = closure_1_0;
       const tmp2 = closure_1_2;
       if (tmp4) {
-        const tmpResult = tmp(tmp2[10]);
+        const tmpResult = tmp(tmp2[11]);
         tmp4 = true === tmpResult.getHasAllocateBoostPermission(closure_1_5, item);
       }
       return tmp4;
@@ -218,29 +227,28 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagC
       isSubscriptionFetching = BillingInfoStore.isSubscriptionFetching;
     }
     if (!isSubscriptionFetching) {
-      const tmpResult = tmp(tmp2[13]);
+      const tmpResult = tmp(tmp2[14]);
       const subscriptions = tmpResult.fetchSubscriptions();
       subscriptions.catch(() => {
 
       });
     }
   }, []);
-  let tmp4 = ServerTagUpsellOnProfileExperiment;
-  const useServerTagUpsellOnProfileConfig = tmp4.useServerTagUpsellOnProfileConfig;
-  if (stateFromStoresArray.length <= 0) {
-    const tmp6 = globalThis;
+  const tmp6 = stateFromStoresArray.length > 0;
+  const useConfig = tmp.useConfig;
+  if (!tmp6) {
     const _HermesInternal = HermesInternal;
     let str = "-Disabled";
     combined = "" + arg0 + "-Disabled";
   } else {
     combined = arg0;
   }
-  const serverTagUpsellOnProfileConfig = useServerTagUpsellOnProfileConfig({ location: combined });
-  let enabled = serverTagUpsellOnProfileConfig.enabled;
-  const ignoreSubscriptionPlatform = serverTagUpsellOnProfileConfig.ignoreSubscriptionPlatform;
+  const config = useConfig({ location: combined });
+  let enabled = config.enabled;
+  const ignoreSubscriptionPlatform = config.ignoreSubscriptionPlatform;
   const obj3 = { creatableGuilds: stateFromStoresArray, isUpsellVisible: enabled };
   if (enabled) {
-    enabled = tmp3;
+    enabled = tmp6;
   }
   if (enabled) {
     if (!stateFromStores) {

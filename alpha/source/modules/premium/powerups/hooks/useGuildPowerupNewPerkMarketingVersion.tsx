@@ -1,16 +1,16 @@
-// Module ID: 13087
-// Function ID: 13088
+// Module ID: 13113
+// Function ID: 13114
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2087, 4806, 5064, 1085, 558, 576, 5082, 504, 5069, 5068, 5067, 8858, 2]
+// Dependencies: [19, 2090, 4809, 5067, 1087, 558, 576, 5085, 504, 5072, 5071, 5070, 8866, 2]
 
-// Module 13087 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 5067 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8858 */;
+// Module 13113 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 5070 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8866 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
-import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(5069);
+  const tmpResult5 = tmp(5072);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(5068);
+  const tmpResult6 = tmp(5071);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(5069);
+  const tmpResult7 = tmp(5072);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

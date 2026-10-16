@@ -1,12 +1,12 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 10715
+// Function ID: 10716
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1125, 21, 558, 576, 6306, 7060, 1126, 8119, 6482, 7118, 6483, 2]
+// Dependencies: [1127, 21, 558, 576, 6308, 7062, 1128, 8122, 6484, 7120, 6485, 2]
 
-// Module 10700 (ThreadNotificationSettingsBottomSheet)
+// Module 10715 (ThreadNotificationSettingsBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ThreadConstants from "ThreadConstants" /* 1125 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8119 */;
+import ThreadConstants from "ThreadConstants" /* 1127 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,12 +20,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
   let obj = channel(576);
   const cResult = obj.c(8);
   channel = channel.channel;
-  let obj2 = channel(6306);
+  let obj2 = channel(6308);
   const threadNotificationSetting = obj2.useThreadNotificationSetting(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-    const intl = tmp(1126).intl;
-    const tmp7 = <BottomSheetTitleHeader title={intl.string(channel(1126).t.h850Ss)} />;
+    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    const intl = tmp(1128).intl;
+    const tmp7 = <BottomSheetTitleHeader title={intl.string(channel(1128).t.h850Ss)} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -44,8 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult = intl2.string(channel(1126).t.h850Ss);
+    const intl2 = tmp(1128).intl;
+    const stringResult = intl2.string(channel(1128).t.h850Ss);
     const arr = closure_3();
     const mapped = arr.map((setting) => {
       setting = setting.setting;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
     }
     return tmp14;
   }
-  const ActionSheet = tmp(7118).ActionSheet;
+  const ActionSheet = tmp(7120).ActionSheet;
   const tmp15 = <ActionSheet header={first}>{null}</ActionSheet>;
   cResult[5] = threadNotificationSetting;
   cResult[6] = tmp8;
@@ -73,12 +73,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
   let intl;
   let intl2;
   channel = channel.channel;
-  let obj = channel(6306);
+  let obj = channel(6308);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
-  const ActionSheet = channel(7118).ActionSheet;
-  ({ title: intl.string(channel(1126).t.h850Ss) });
-  const BottomSheetTitleHeader = channel(7060).BottomSheetTitleHeader;
-  intl = channel(1126).intl;
+  const ActionSheet = channel(7120).ActionSheet;
+  ({ title: intl.string(channel(1128).t.h850Ss) });
+  const BottomSheetTitleHeader = channel(7062).BottomSheetTitleHeader;
+  intl = channel(1128).intl;
   ({
     hasIcons: false,
     value: threadNotificationSetting,
@@ -87,15 +87,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
       const obj2 = { flags };
       return obj.setNotificationSettings(channel, obj2);
     },
-    accessibilityLabel: intl2.string(channel(1126).t.h850Ss),
+    accessibilityLabel: intl2.string(channel(1128).t.h850Ss),
     children: arr.map((setting) => {
       setting = setting.setting;
       const label = setting.label;
       return jsx(channel(dependencyMap[8]).TableRadioRow, { value: setting, label }, "" + setting);
     })
   });
-  const TableRadioGroup = channel(6483).TableRadioGroup;
-  intl2 = channel(1126).intl;
+  const TableRadioGroup = channel(6485).TableRadioGroup;
+  intl2 = channel(1128).intl;
   arr = closure_3();
   return <ActionSheet header={null}>{null}</ActionSheet>;
 });

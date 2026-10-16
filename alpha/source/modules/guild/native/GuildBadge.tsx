@@ -1,18 +1,18 @@
-// Module ID: 6383
-// Function ID: 6384
+// Module ID: 6385
+// Function ID: 6386
 // Name: GuildBadge
-// Dependencies: [109, 19, 1085, 21, 6384, 6385, 6386, 6387, 2079, 558, 576, 1200, 2]
+// Dependencies: [109, 19, 1087, 21, 6386, 6387, 6388, 6389, 2082, 558, 576, 1202, 2]
 
-// Module 6383 (GuildBadge)
+// Module 6385 (GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6384 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6385 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6386 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 6387 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6386 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6387 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6388 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6389 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

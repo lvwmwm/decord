@@ -1,12 +1,12 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11880
+// Function ID: 11881
 // Name: useNavigationTransitionEnded
-// Dependencies: [32, 19, 1502, 558, 576, 1504, 2]
+// Dependencies: [32, 19, 1504, 558, 576, 1506, 2]
 
-// Module 11856 (useNavigationTransitionEnded)
+// Module 11880 (useNavigationTransitionEnded)
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import Link from "Link" /* 1504 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import Link from "Link" /* 1506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

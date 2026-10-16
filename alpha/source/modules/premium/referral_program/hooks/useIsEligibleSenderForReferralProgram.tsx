@@ -1,13 +1,13 @@
-// Module ID: 8303
-// Function ID: 8304
+// Module ID: 8308
+// Function ID: 8309
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [7391, 558, 576, 8304, 504, 2]
+// Dependencies: [7393, 558, 576, 8309, 504, 2]
 
-// Module 8303 (useIsEligibleSenderForReferralProgram)
+// Module 8308 (useIsEligibleSenderForReferralProgram)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8304 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7391 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8309 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7393 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

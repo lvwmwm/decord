@@ -1,12 +1,12 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9392
+// Function ID: 9393
 // Name: promotions/constants
 // Dependencies: [2]
 
-// Module 9376 (promotions/constants)
+// Module 9392 (promotions/constants)
 import size from "module_2" /* 2 */;
 
-const items = ["logitech", "youtube", "best_buy"];
+const items = ["logitech", "youtube", "best_buy", "call_of_duty"];
 const items1 = ["logitech", "steelseries"];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/premium/promotions/constants.tsx");
@@ -21,5 +21,6 @@ export const YOUTUBE_PARTNER_ID = "youtube";
 export const RIOT_PARTNER_ID = "riot";
 export const RUST_PARTNER_ID = "rust";
 export const BEST_BUY_PARTNER_ID = "best_buy";
+export const CALL_OF_DUTY_PARTNER_ID = "call_of_duty";
 export const DEDICATED_SURFACE_PARTNER_IDS = set;
 export const RECURRING_3P_PARTNER_ORDER = items1;

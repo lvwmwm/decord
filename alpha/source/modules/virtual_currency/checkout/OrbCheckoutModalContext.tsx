@@ -1,17 +1,17 @@
-// Module ID: 14125
-// Function ID: 14126
+// Module ID: 14157
+// Function ID: 14158
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1390, 6310, 21, 1279, 558, 576, 4825, 504, 9400, 7155, 10740, 7491, 4840, 9286, 2]
+// Dependencies: [19, 1392, 6312, 21, 1281, 558, 576, 4828, 504, 9416, 7157, 10755, 7493, 4843, 9299, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 14125 (OrbCheckoutModalContext)
+// Module 14157 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7491 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7493 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import SKUStore from "SKUStore" /* 6310 */;
-import v1_mod from "v1" /* 1279 */;
+import UserStore from "UserStore" /* 1392 */;
+import SKUStore from "SKUStore" /* 6312 */;
+import v1_mod from "v1" /* 1281 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -416,27 +416,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutM
   cResult[3] = obj4;
   tmp2 = obj4;
 }) : (function OrbCheckoutModalContextProvider(onCheckoutSuccess) {
-  let analyticsLocations;
-  let analyticsSourceLocation;
-  let children;
-  let isRedeeming;
-  let loadId;
-  let onRedeemVirtualCurrency;
-  let orbProductContext;
-  let orbRedemptionError;
-  let skuId;
-  ({ skuId, loadId, analyticsLocations } = onCheckoutSuccess);
-  const obj = { skuId, loadId, onCheckoutSuccess: onCheckoutSuccess.onCheckoutSuccess };
-  ({ analyticsSourceLocation, children } = onCheckoutSuccess);
+  const skuId = onCheckoutSuccess.skuId;
+  const loadId = onCheckoutSuccess.loadId;
+  const analyticsSourceLocation = onCheckoutSuccess.analyticsSourceLocation;
+  const analyticsLocations = onCheckoutSuccess.analyticsLocations;
+  let obj = { skuId, loadId, onCheckoutSuccess: onCheckoutSuccess.onCheckoutSuccess };
+  const children = onCheckoutSuccess.children;
   const tmp = closure_10(obj);
-  const obj2 = { skuId, skuProductLine: tmp.skuProductLine, skuApplicationId: tmp.skuApplicationId, loadId, analyticsLocations, analyticsSourceLocation, orbProductContext, onRedeemVirtualCurrency, isRedeeming, orbRedemptionError };
-  ({ orbProductContext, onRedeemVirtualCurrency, isRedeeming, orbRedemptionError } = tmp);
-  const Provider = redux.Provider;
-  const tmp2 = jsx;
-  if (analyticsLocations == null) {
-    analyticsLocations = [];
-  }
-  return tmp2(Provider, { value: obj2, children });
+  const orbProductContext = tmp.orbProductContext;
+  const onRedeemVirtualCurrency = tmp.onRedeemVirtualCurrency;
+  const isRedeeming = tmp.isRedeeming;
+  const orbRedemptionError = tmp.orbRedemptionError;
+  const skuProductLine = tmp.skuProductLine;
+  const skuApplicationId = tmp.skuApplicationId;
+  let items = [skuId, skuProductLine, skuApplicationId, loadId, analyticsLocations, analyticsSourceLocation, orbProductContext, onRedeemVirtualCurrency, isRedeeming, orbRedemptionError];
+  return <redux.Provider value={hasOwnProperty(() => {
+    let items;
+    const obj = { skuId, skuProductLine, skuApplicationId, loadId, analyticsLocations: items, analyticsSourceLocation, orbProductContext, onRedeemVirtualCurrency, isRedeeming, orbRedemptionError };
+    items = analyticsLocations;
+    if (analyticsLocations == null) {
+      items = [];
+    }
+    return obj;
+  }, items)}>{children}</redux.Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();

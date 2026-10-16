@@ -1,14 +1,14 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17553
+// Function ID: 17554
 // Name: ScienceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12432, 4873, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12455, 4876, 2]
 
-// Module 17519 (ScienceIcon)
+// Module 17553 (ScienceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4873 */;
-import AssetRegistry from "AssetRegistry" /* 12432 */;
+import BaseIconImage2 from "BaseIconImage" /* 4876 */;
+import AssetRegistry from "AssetRegistry" /* 12455 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScienceIco
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4873).BaseIconImage;
+  const BaseIconImage = tmp(4876).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

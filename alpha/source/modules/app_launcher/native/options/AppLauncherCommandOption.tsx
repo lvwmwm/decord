@@ -1,26 +1,26 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11914
+// Function ID: 11915
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1502, 21, 5151, 587, 558, 576, 1998, 11891, 11898, 11900, 11904, 11925, 11926, 6316, 11929, 11931, 11932, 11938, 6516, 6405, 2]
+// Dependencies: [19, 17, 1504, 21, 5153, 587, 558, 576, 2000, 11915, 11922, 11924, 11928, 11949, 11950, 6318, 11953, 11955, 11956, 11962, 6518, 6407, 2]
 
-// Module 11890 (AppLauncherCommandOption)
+// Module 11914 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6316 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11891 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 11898 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 11900 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11904 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11925 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11926 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11929 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11931 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11932 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11938 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6318 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11915 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 11922 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 11924 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 11928 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11949 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11950 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 11953 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11955 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11956 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11962 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1218,12 +1218,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let type = option.type;
   let tmp2 = option;
   let tmp3 = dependencyMap;
-  if (option(1998).ApplicationCommandOptionType.STRING !== type) {
-    if (tmp2(1998).ApplicationCommandOptionType.INTEGER !== type) {
+  if (option(2000).ApplicationCommandOptionType.STRING !== type) {
+    if (tmp2(2000).ApplicationCommandOptionType.INTEGER !== type) {
       let tmp28Result;
       let tmp13;
-      if (tmp2(1998).ApplicationCommandOptionType.NUMBER !== type) {
-        if (tmp2(1998).ApplicationCommandOptionType.ATTACHMENT === type) {
+      if (tmp2(2000).ApplicationCommandOptionType.NUMBER !== type) {
+        if (tmp2(2000).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj2 = {
             style: tmp.option,
             option,
@@ -1248,7 +1248,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           };
           tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, option.name);
           tmp13 = onDismiss;
-        } else if (tmp2(1998).ApplicationCommandOptionType.BOOLEAN === type) {
+        } else if (tmp2(2000).ApplicationCommandOptionType.BOOLEAN === type) {
           let obj3 = {
             style: tmp.option,
             option,
@@ -1269,7 +1269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp35(tmp37, obj3, option.name);
           tmp13 = tmp35;
-        } else if (tmp2(1998).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (tmp2(2000).ApplicationCommandOptionType.MENTIONABLE === type) {
           let obj4 = {
             option,
             initialValue: first1,
@@ -1317,7 +1317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp28(tmp30, obj4);
           tmp13 = tmp28;
-        } else if (tmp2(1998).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp2(2000).ApplicationCommandOptionType.ROLE === type) {
           const obj5 = {
             style: tmp.option,
             option,
@@ -1350,7 +1350,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp21(tmp23, obj5, option.name);
           tmp13 = tmp21;
-        } else if (tmp2(1998).ApplicationCommandOptionType.USER === type) {
+        } else if (tmp2(2000).ApplicationCommandOptionType.USER === type) {
           const obj6 = {
             style: tmp.option,
             option,
@@ -1387,7 +1387,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp14(tmp16, obj6, option.name);
           tmp13 = tmp14;
-        } else if (tmp2(1998).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp2(2000).ApplicationCommandOptionType.CHANNEL === type) {
           let obj = {
             style: tmp.option,
             option,
@@ -1435,9 +1435,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           onPress() {
                   return onDismiss(option);
                 },
-          children: tmp13(tmp2(6516).CircleXIcon, { size: "md" })
+          children: tmp13(tmp2(6518).CircleXIcon, { size: "md" })
         };
-        const PressableOpacity = tmp2(6405).PressableOpacity;
+        const PressableOpacity = tmp2(6407).PressableOpacity;
         items[1] = tmp13(PressableOpacity, obj9);
         tmp61 = closure_6(View, obj7);
       }

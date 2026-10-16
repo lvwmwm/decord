@@ -1,18 +1,18 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17434
+// Function ID: 17435
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4995, 2062, 558, 576, 1126, 2049, 4906, 15647, 1504, 14665, 5180, 504, 7321, 17401, 9663, 2]
+// Dependencies: [32, 19, 4998, 2065, 558, 576, 1128, 2052, 4909, 15680, 1506, 14697, 5182, 504, 7323, 17435, 9679, 2]
 
-// Module 17400 (useYouBarCoachmark)
+// Module 17434 (useYouBarCoachmark)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Link from "Link" /* 1504 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 15647 */;
+import intl3 from "intl" /* 1128 */;
+import Link from "Link" /* 1506 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 15680 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ let obj1;
 
 let tmp;
 const get_initialized = tmp(504);
-const dismissible_content = tmp(2049);
-const useSelectedDismissibleContent = tmp(7321);
-const useCoachmark = tmp(9663);
-const usePrivateProfileCoachmarkProps = tmp(17401);
+const dismissible_content = tmp(2052);
+const useSelectedDismissibleContent = tmp(7323);
+const useCoachmark = tmp(9679);
+const usePrivateProfileCoachmarkProps = tmp(17435);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_6 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -36,10 +36,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwip
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(markAsDismissed(1126).t.gMFchc);
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(markAsDismissed(1126).t["V3j11+"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(markAsDismissed(1128).t.gMFchc);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(markAsDismissed(1128).t["V3j11+"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -47,7 +47,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwip
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(2049).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
+  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(2052).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
   if (cResult[2] !== markAsDismissed) {
     const fn = function c() {
       return markAsDismissed(ContentDismissActionType.USER_DISMISS);

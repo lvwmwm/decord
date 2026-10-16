@@ -1,11 +1,11 @@
-// Module ID: 4810
-// Function ID: 4811
+// Module ID: 4813
+// Function ID: 4814
 // Name: MemberSafetyConstants
-// Dependencies: [1085, 1097, 2]
+// Dependencies: [1087, 1099, 2]
 
-// Module 4810 (MemberSafetyConstants)
-import Constants from "Constants" /* 1085 */;
-import BigFlagUtils from "BigFlagUtils" /* 1097 */;
+// Module 4813 (MemberSafetyConstants)
+import Constants from "Constants" /* 1087 */;
+import BigFlagUtils from "BigFlagUtils" /* 1099 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

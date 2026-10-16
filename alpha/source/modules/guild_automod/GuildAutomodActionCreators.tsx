@@ -1,22 +1,22 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12515
+// Function ID: 12516
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2119, 2087, 4806, 1085, 12493, 1386, 11, 1295, 12486, 5166, 7456, 584, 2]
+// Dependencies: [5, 2122, 2090, 4809, 1087, 12516, 1388, 11, 1297, 12509, 5168, 7458, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12492 (GuildAutomodActionCreators)
+// Module 12515 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
-import AutomodFeedback from "AutomodFeedback" /* 7456 */;
-import DataUtils from "DataUtils" /* 12493 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
+import AutomodFeedback from "AutomodFeedback" /* 7458 */;
+import DataUtils from "DataUtils" /* 12516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import Constants from "Constants" /* 1085 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function _transformClientRuleToApiRule(id) {
   }
   const actions = id.actions;
   const obj3 = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: found.map(_transformClientActionToApiAction), enabled: null, creator_id: null, position: null, exempt_channels: from(exemptChannels), exempt_roles: from2Result.filter((item) => null != GuildRoleStore.getRole(guildId.guildId, item)) };
-  found = actions.filter(tmp(1386).isNotNullish);
+  found = actions.filter(tmp(1388).isNotNullish);
   ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
   exemptChannels = id.exemptChannels;
   const _Array = Array;

@@ -1,20 +1,20 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16122
+// Function ID: 16123
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 5151, 5023, 587, 558, 576, 4874, 5087, 5026, 5451, 6463, 2]
+// Dependencies: [19, 17, 21, 5153, 5026, 587, 558, 576, 4877, 5090, 5029, 5453, 6465, 2]
 
-// Module 16089 (PremiumRewardGradient)
+// Module 16122 (PremiumRewardGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4874 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import _modDef6463 from "module_6463" /* 6463 */;
+import useToken from "useToken" /* 4877 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import _modDef6465 from "module_6465" /* 6465 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import ColorUtils_mod from "ColorUtils" /* 5023 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import ColorUtils_mod from "ColorUtils" /* 5026 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const design_shared = tmp(5026);
+const design_shared = tmp(5029);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -297,7 +297,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
         tmp29 = tmp32;
       }
       const obj5 = { style: tmp12, maskElement: tmp14, children: tmp20 };
-      const tmp28 = metroRequire(_modDef6463, obj5);
+      const tmp28 = metroRequire(_modDef6465, obj5);
       cResult[11] = tmp12;
       cResult[12] = tmp20;
       cResult[13] = tmp28;
@@ -331,7 +331,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   items = [tmp.wrapper, style];
   const items1 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
-  const tmp10 = _modDef6463;
+  const tmp10 = _modDef6465;
   const tmp7 = metroImportDefault;
   const tmp8 = hasOwnProperty;
   if (!isThemeDarkResult) {

@@ -1,12 +1,12 @@
-// Module ID: 6503
-// Function ID: 6504
+// Module ID: 6505
+// Function ID: 6506
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6420, 21, 558, 576, 1503, 1105, 6501, 1126, 6504, 2]
+// Dependencies: [5, 19, 6422, 21, 558, 576, 1505, 1107, 6503, 1128, 6506, 2]
 
-// Module 6503 (ConfirmEmailChangeCode)
+// Module 6505 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6420 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
   let obj = isChangeEmail(576);
   const cResult = obj.c(9);
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj2 = isChangeEmail(1503);
+  let obj2 = isChangeEmail(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] === isChangeEmail) {
     let tmp5;
@@ -106,10 +106,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       function t3() {
         return closure_0(...arguments);
       }
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(tmp(1126).t["2x/2Uo"]);
-      const intl2 = tmp(1126).intl;
-      const stringResult1 = intl2.string(tmp(1126).t.PDTjLN);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(tmp(1128).t["2x/2Uo"]);
+      const intl2 = tmp(1128).intl;
+      const stringResult1 = intl2.string(tmp(1128).t.PDTjLN);
       cResult[4] = t3;
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       tmp11 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(6504), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(6506), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
   tmp5 = fn;
 }) : (function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1503);
+  let obj = isChangeEmail(1505);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(6504);
+  navigation(6506);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -178,8 +178,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
     await obj3.confirmEmailChange(closure_0);
     return arg1;
   });
-  const intl = isChangeEmail(1126).intl;
-  const intl2 = isChangeEmail(1126).intl;
+  const intl = isChangeEmail(1128).intl;
+  const intl2 = isChangeEmail(1128).intl;
   return <tmp3 onFormSubmit={function() {
     return closure_0(...arguments);
   }} onSuccess={callback} onResend={_asyncToGenerator(async (arg0, value) => {
@@ -230,7 +230,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
         throw tmp6;
       }
     }
-  })} headerText={intl.string(isChangeEmail(1126).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1126).t.PDTjLN)} />;
+  })} headerText={intl.string(isChangeEmail(1128).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1128).t.PDTjLN)} />;
 });
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 

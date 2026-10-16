@@ -1,11 +1,11 @@
-// Module ID: 6366
-// Function ID: 6367
+// Module ID: 6368
+// Function ID: 6369
 // Name: FileExtensionUtils
-// Dependencies: [1384, 2]
+// Dependencies: [1386, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 6366 (FileExtensionUtils)
-import URLUtilsDefault from "URLUtils" /* 1384 */;
+// Module 6368 (FileExtensionUtils)
+import URLUtilsDefault from "URLUtils" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };

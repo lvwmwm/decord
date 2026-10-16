@@ -1,14 +1,14 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13145
+// Function ID: 13146
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2087, 7340, 5064, 558, 576, 13120, 504, 13121, 7073, 13122, 8242, 5115, 13099, 6175, 7341, 6150, 7351, 2]
+// Dependencies: [19, 2090, 7342, 5067, 558, 576, 13146, 504, 13147, 7075, 13148, 8247, 5118, 13125, 6177, 7343, 6152, 7353, 2]
 
-// Module 13119 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8242 */;
+// Module 13145 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8247 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7340 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7342 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, closure_4, importDefault;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const BoostingActionCreators = tmp(6175);
+const BoostingActionCreators = tmp(6177);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnActivate(arg0, arg1) {
   let closure_0;
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
         if (closure_4 >= diff.cost) {
           PERK(true);
         } else {
-          diff = tmp16.cost - tmp17;
+          diff = tmp15.cost - tmp16;
           const obj5 = closure_0(onToggle[11]);
           let availableGuildBoostSlots = obj5.getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
           if (diff.type === handleMobileWebRedirectCheckout.LEVEL) {
@@ -114,7 +114,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
           } else {
             PERK = shouldUseMobileWebRedirectCheckout.PERK;
           }
-          let obj = diff(tmp20[12]);
+          let obj = diff(tmp19[12]);
           obj.hideActionSheet(closure_0(onToggle[13]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
           if (availableGuildBoostSlots.length > 0) {
             let obj2 = {
@@ -136,8 +136,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
             closure_0(onToggle[14]);
             openTransferModal(obj2);
           } else {
-            const tmp6 = shouldUseMobileWebRedirectCheckout;
-            if (tmp6) {
+            const tmp22 = shouldUseMobileWebRedirectCheckout;
+            if (tmp22) {
               handleMobileWebRedirectCheckout(analyticsLocations, tmp.id);
             } else {
               const obj3 = {
@@ -178,8 +178,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
                             return obj.popWithKey(activatePowerup(PERK[17]).PREMIUM_KEY);
                           }
               };
-              const tmp19Result2 = closure_0(onToggle[15]);
-              const result = tmp19Result2.launchGuildBoostFlowOrAlert(obj3);
+              const tmp18Result2 = closure_0(onToggle[15]);
+              const result = tmp18Result2.launchGuildBoostFlowOrAlert(obj3);
             }
           }
         }
@@ -225,7 +225,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
           if (closure_4 >= PERK.cost) {
             onToggle(true);
           } else {
-            const diff = tmp16.cost - tmp17;
+            const diff = tmp15.cost - tmp16;
             const obj5 = diff(onToggle[11]);
             let availableGuildBoostSlots = obj5.getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
             if (PERK.type === handleMobileWebRedirectCheckout.LEVEL) {
@@ -233,7 +233,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
             } else {
               PERK = shouldUseMobileWebRedirectCheckout.PERK;
             }
-            let obj = PERK(tmp20[12]);
+            let obj = PERK(tmp19[12]);
             obj.hideActionSheet(diff(onToggle[13]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
             if (availableGuildBoostSlots.length > 0) {
               let obj2 = {
@@ -251,8 +251,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
               diff(onToggle[14]);
               openTransferModal(obj2);
             } else {
-              const tmp6 = shouldUseMobileWebRedirectCheckout;
-              if (tmp6) {
+              const tmp22 = shouldUseMobileWebRedirectCheckout;
+              if (tmp22) {
                 handleMobileWebRedirectCheckout(analyticsLocations, tmp.id);
               } else {
                 const obj3 = {
@@ -289,8 +289,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
                               return obj.popWithKey(diff(onToggle[17]).PREMIUM_KEY);
                             }
                 };
-                const tmp19Result2 = diff(onToggle[15]);
-                const result = tmp19Result2.launchGuildBoostFlowOrAlert(obj3);
+                const tmp18Result2 = diff(onToggle[15]);
+                const result = tmp18Result2.launchGuildBoostFlowOrAlert(obj3);
               }
             }
           }

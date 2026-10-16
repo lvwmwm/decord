@@ -1,16 +1,16 @@
-// Module ID: 4867
-// Function ID: 4868
-// Dependencies: [4868, 1272, 2]
+// Module ID: 4870
+// Function ID: 4871
+// Dependencies: [4871, 1274, 2]
 // Exports: popToast, showToast
 
-// Module 4867
-import module_4868 from "module_4868" /* 4868 */;
+// Module 4870
+import module_4871 from "module_4871" /* 4871 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, map, map1;
 
 let c2 = 1;
-const useToastStore = module_4868.create(() => {
+const useToastStore = module_4871.create(() => {
   const obj = { currentToastMap: new Map(), queuedToastsMap: new Map() };
   new Map();
   new Map();
@@ -67,7 +67,7 @@ export const popToast = function popToast(arg0) {
   if (arg0 === undefined) {
     str = "app";
   }
-  let obj = str(1272);
+  let obj = str(1274);
   obj.batchUpdates(() => {
     let obj;
     obj.setState(function(queuedToastsMap) {

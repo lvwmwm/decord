@@ -1,14 +1,14 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18668
+// Function ID: 18669
 // Name: HomeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18627, 4873, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18669, 4876, 2]
 
-// Module 18626 (HomeIcon)
+// Module 18668 (HomeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4873 */;
-import AssetRegistry from "AssetRegistry" /* 18627 */;
+import BaseIconImage2 from "BaseIconImage" /* 4876 */;
+import AssetRegistry from "AssetRegistry" /* 18669 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4873).BaseIconImage;
+  const BaseIconImage = tmp(4876).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,25 +1,25 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 11068
+// Function ID: 11069
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7096, 21, 5151, 587, 1126, 11054, 11055, 558, 576, 12, 1901, 5147, 1200, 7095, 2]
+// Dependencies: [19, 17, 7098, 21, 5153, 587, 1128, 11069, 11070, 558, 576, 12, 1903, 5149, 1202, 7097, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11053 (ConnectionMetadataVanityItems)
+// Module 11068 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import NumberUtils from "NumberUtils" /* 1901 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7095 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11054 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11055 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import NumberUtils from "NumberUtils" /* 1903 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7097 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11069 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11070 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7096 */;
+import Constants from "Constants" /* 7098 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalV
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl5.t.IhXLyx);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -119,7 +119,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
       }
       tmp7 = tmp9;
     }
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { name: label, value: sum };
     const formatResult = intl2.format(intl5.t.HLoinF, obj3);
     cResult[0] = label;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
         tmp7 = cResult[5];
       }
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj4 = { value: sum };
     const formatResult1 = intl.format(label, obj4);
     cResult[3] = label;
@@ -181,11 +181,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1126).intl;
+    const intl = tmp2(1128).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1126).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1128).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1126).intl;
+    const intl2 = tmp2(1128).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
@@ -383,10 +383,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
         tmp8 = tmp10;
       }
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const format = intl.format;
     const obj3 = { value: tmpResult.getCreatedAtDate(date, locale), name: label };
-    const HLoinF = tmp(1126).t.HLoinF;
+    const HLoinF = tmp(1128).t.HLoinF;
     tmpResult = ConnectionsUtils;
     const formatResult = format(HLoinF, obj3);
     cResult[3] = date;

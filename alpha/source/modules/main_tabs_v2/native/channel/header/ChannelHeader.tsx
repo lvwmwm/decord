@@ -1,24 +1,24 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13707
+// Function ID: 13708
 // Name: ChannelHeader
-// Dependencies: [19, 2065, 1085, 2072, 21, 1382, 5041, 10989, 1121, 5033, 558, 576, 573, 6140, 13682, 13683, 13684, 1126, 13692, 13694, 2]
+// Dependencies: [19, 2068, 1087, 2075, 21, 1384, 5044, 11004, 1123, 5036, 558, 576, 573, 6142, 13708, 13709, 13710, 1128, 13718, 13720, 2]
 // Exports: navigateToChannelDetails
 
-// Module 13681 (ChannelHeader)
+// Module 13707 (ChannelHeader)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5033 */;
-import ChatInputUtils from "ChatInputUtils" /* 5041 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 10989 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13682 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13683 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13684 */;
-import ForumChannelHeaderDefault from "ForumChannelHeader" /* 13692 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13694 */;
+import Constants from "Constants" /* 1087 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import RootNavigationRef from "RootNavigationRef" /* 5036 */;
+import ChatInputUtils from "ChatInputUtils" /* 5044 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11004 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13708 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13709 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13710 */;
+import ForumChannelHeaderDefault from "ForumChannelHeader" /* 13718 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13720 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
   }
   const tmpResult = channelId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-  const tmpResult2 = channelId(6140);
+  const tmpResult2 = channelId(6142);
   const isChannelContentGated = tmpResult2.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
     let tmp36;
@@ -115,8 +115,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
         if (cResult[9] !== stateFromStores) {
           let stringResult;
           if (!stateFromStores.isForumChannel()) {
-            const intl = tmp(1126).intl;
-            stringResult = intl.string(tmp(1126).t["L9fR+P"]);
+            const intl = tmp(1128).intl;
+            stringResult = intl.string(tmp(1128).t["L9fR+P"]);
           }
           cResult[9] = stateFromStores;
           cResult[10] = stringResult;
@@ -210,7 +210,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
   const items = [ChannelStore];
   const obj = channelId(573);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(6140);
+  const obj3 = channelId(6142);
   const isChannelContentGated = obj3.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
     tmp8Result = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});
@@ -237,8 +237,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHea
         }
         stringResult = undefined;
         if (!stateFromStores.isForumChannel()) {
-          const intl = tmp(1126).intl;
-          stringResult = intl.string(tmp(1126).t["L9fR+P"]);
+          const intl = tmp(1128).intl;
+          stringResult = intl.string(tmp(1128).t["L9fR+P"]);
         }
         tmp8Result = tmp8(tmp9Result, obj4);
       } else {
@@ -268,7 +268,7 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
   }
   const tmpResult3 = SwipeToMemberListUtils;
   if (tmpResult3.isSwipeToMemberListEnabled()) {
-    const ComponentDispatch = tmp(1121).ComponentDispatch;
+    const ComponentDispatch = tmp(1123).ComponentDispatch;
     const obj2 = { source, channelId, screenIndex };
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj2);
   } else {

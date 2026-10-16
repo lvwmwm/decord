@@ -1,25 +1,25 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 17425
+// Function ID: 17426
 // Name: UnreadBars
-// Dependencies: [19, 17, 5140, 1085, 21, 5151, 6122, 587, 5023, 4883, 5116, 5117, 1200, 1126, 558, 576, 504, 12982, 2]
+// Dependencies: [19, 17, 5143, 1087, 21, 5153, 6124, 587, 5026, 4886, 5119, 5120, 1202, 1128, 558, 576, 504, 13008, 2]
 
-// Module 17391 (UnreadBars)
+// Module 17425 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import native2 from "native" /* 4883 */;
-import HapticUtils from "HapticUtils" /* 5116 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5117 */;
-import TransitionGroup2 from "TransitionGroup" /* 12982 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import native2 from "native" /* 4886 */;
+import HapticUtils from "HapticUtils" /* 5119 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
+import TransitionGroup2 from "TransitionGroup" /* 13008 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
-import TextStyles from "TextStyles" /* 6122 */;
-import ColorUtils_mod from "ColorUtils" /* 5023 */;
+import createStyles from "createStyles" /* 5153 */;
+import TextStyles from "TextStyles" /* 6124 */;
+import ColorUtils_mod from "ColorUtils" /* 5026 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -282,7 +282,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBars
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(12982).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(13008).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;

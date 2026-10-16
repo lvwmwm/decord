@@ -1,20 +1,20 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14508
+// Function ID: 14509
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4839, 21, 5151, 587, 5115, 14477, 2000, 1126, 3282, 558, 576, 5147, 2]
+// Dependencies: [17, 4842, 21, 5153, 587, 5118, 14509, 2002, 1128, 3285, 558, 576, 5149, 2]
 
-// Module 14476 (BoostingUnavailablePill)
+// Module 14508 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef3282 from "module_3282" /* 3282 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4839 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl2 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import _modDef3285 from "module_3285" /* 3285 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4842 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,11 +28,11 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14477, dependencyMap.paths);
+  const tmp2 = asyncRequire(14509, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };
-  prop = _modDef3282["5xN/C1"];
+  prop = _modDef3285["5xN/C1"];
   openLazy(tmp2, "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostingUn
     const _Symbol = Symbol;
     ({ pgUnavailable, pgUnavailableText } = tmp4);
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t["5nrJDO"]);
       cResult[3] = stringResult;
       tmp7 = stringResult;

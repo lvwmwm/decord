@@ -1,10 +1,10 @@
 // Module ID: 8944
 // Function ID: 8945
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 8944 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "59ef37b759831ec882fc480e1d1185da", name: "ic_share_ios", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 251, height: 147, scales: [2, 3], hash: "7e87039ca280115f9b6a52cb6bc7dc5e", name: "img_app_crash_dark", type: "png" });

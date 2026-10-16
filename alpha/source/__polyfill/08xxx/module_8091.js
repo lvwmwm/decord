@@ -1,82 +1,49 @@
 // Module ID: 8091
 // Function ID: 8092
-// Dependencies: [8062]
+// Dependencies: [8068, 8069, 8048]
 
 // Module 8091
-import _modDef8062 from "module_8062" /* 8062 */;
+import _mod8048 from "module_8048" /* 8048 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 8068 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8069 */;
 
 
 export default {
-  read(byteLength, sum) {
-    let str6;
-    let str7;
-    let tmp11;
-    let tmp16;
-    let tmp20;
-    let tmp24;
-    let tmp28;
-    let tmp6;
-    let tmp;
-    if (sum + 4 <= byteLength.byteLength) {
-      const obj = _modDef8062;
-      const longAt = obj.getLongAt(byteLength, sum);
-      const _HermesInternal = HermesInternal;
-      tmp = { value: longAt, description: "" + longAt + "px" };
-      const obj2 = { value: longAt, description: "" + longAt + "px" };
-    }
-    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
-    tmp6 = undefined;
-    if (sum + 4 + 4 <= byteLength.byteLength) {
-      const obj4 = _modDef8062;
-      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
-      const _HermesInternal2 = HermesInternal;
-      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
-      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
-    }
-    tmp11 = undefined;
-    if (sum + 8 + 1 <= byteLength.byteLength) {
-      const obj6 = _modDef8062;
-      const byteAt = obj6.getByteAt(byteLength, sum + 8);
-      const _HermesInternal3 = HermesInternal;
-      tmp11 = { value: byteAt, description: "" + byteAt };
-      const obj7 = { value: byteAt, description: "" + byteAt };
-    }
-    tmp16 = undefined;
-    if (sum + 9 + 1 <= byteLength.byteLength) {
-      const obj8 = _modDef8062;
-      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
-      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
-    }
-    tmp20 = undefined;
-    if (sum + 10 + 1 <= byteLength.byteLength) {
-      const obj10 = _modDef8062;
-      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
-      const obj11 = { value: byteAt2, description: str6 };
-      str6 = "Unknown";
-      if (0 === byteAt2) {
-        str6 = "Deflate/Inflate";
+  read(byteLength, sum, arg2, byteOrder, arg4) {
+    let str;
+    const obj = get0thIfdOffset;
+    const ifd = obj.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
+    let tmp4 = ifd;
+    if (ifd.ShotInfo) {
+      const value = ifd.ShotInfo.value;
+      const obj2 = {};
+      const objectAssign = tmp(8048).objectAssign;
+      _mod8048;
+      if (undefined !== value[27]) {
+        const obj3 = { value: value[27], description: str };
+        str = "None";
+        if (0 !== value[27]) {
+          let str2 = "Rotate 90 CW";
+          if (1 !== value[27]) {
+            let str3 = "Rotate 180";
+            if (2 !== value[27]) {
+              let str4 = "Unknown";
+              if (3 === value[27]) {
+                str4 = "Rotate 270 CW";
+              }
+              str3 = str4;
+            }
+            str2 = str3;
+          }
+          str = str2;
+        }
+        obj2.AutoRotate = obj3;
       }
-      tmp20 = obj11;
+      const objectAssignResult = objectAssign({}, ifd, obj2);
+      delete tmp7["ShotInfo"];
+      tmp4 = objectAssignResult;
     }
-    tmp24 = undefined;
-    if (sum + 11 + 1 <= byteLength.byteLength) {
-      const obj12 = _modDef8062;
-      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
-      const obj13 = { value: byteAt3, description: str7 };
-      str7 = "Unknown";
-      if (0 === byteAt3) {
-        str7 = "Adaptive";
-      }
-      tmp24 = obj13;
-    }
-    tmp28 = undefined;
-    if (sum + 12 + 1 <= byteLength.byteLength) {
-      const obj14 = _modDef8062;
-      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
-      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
-    }
-    return obj3;
-  }
+    return tmp4;
+  },
+  SHOT_INFO_AUTO_ROTATE: 27
 };

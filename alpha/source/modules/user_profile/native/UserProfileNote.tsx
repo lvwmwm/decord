@@ -1,12 +1,12 @@
-// Module ID: 13992
-// Function ID: 13993
+// Module ID: 14024
+// Function ID: 14025
 // Name: UserProfileNote
-// Dependencies: [19, 21, 558, 576, 8533, 13993, 5115, 13995, 5147, 1126, 6400, 13999, 2]
+// Dependencies: [19, 21, 558, 576, 8541, 14025, 5118, 14027, 5149, 1128, 6402, 14031, 2]
 
-// Module 13992 (UserProfileNote)
+// Module 14024 (UserProfileNote)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import openEditNoteModalDefault from "openEditNoteModal" /* 13995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import openEditNoteModalDefault from "openEditNoteModal" /* 14027 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

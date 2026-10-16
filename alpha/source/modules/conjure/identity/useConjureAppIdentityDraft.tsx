@@ -1,11 +1,11 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11579
+// Function ID: 11580
 // Name: useConjureAppIdentityDraft
-// Dependencies: [32, 19, 558, 576, 11557, 2]
+// Dependencies: [32, 19, 558, 576, 11580, 2]
 
-// Module 11556 (useConjureAppIdentityDraft)
+// Module 11579 (useConjureAppIdentityDraft)
 import react2 from "react" /* 576 */;
-import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 11557 */;
+import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 11580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

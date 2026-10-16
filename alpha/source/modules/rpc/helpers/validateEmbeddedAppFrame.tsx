@@ -1,19 +1,19 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15405
+// Function ID: 15406
 // Name: validateEmbeddedAppFrame
-// Dependencies: [15371, 1085, 15372, 7259, 10934, 11243, 2029, 11234, 15373, 2]
+// Dependencies: [15406, 1087, 15407, 7261, 10949, 11259, 2032, 11250, 15408, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 15370 (validateEmbeddedAppFrame)
-import Constants from "Constants" /* 1085 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 7259 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10934 */;
-import RPCErrorDefault from "RPCError" /* 11234 */;
-import RPCHelpers from "RPCHelpers" /* 11243 */;
-import getSocketFrameDefault from "getSocketFrame" /* 15372 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 15373 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15371 */;
+// Module 15405 (validateEmbeddedAppFrame)
+import Constants from "Constants" /* 1087 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2032 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 7261 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10949 */;
+import RPCErrorDefault from "RPCError" /* 11250 */;
+import RPCHelpers from "RPCHelpers" /* 11259 */;
+import getSocketFrameDefault from "getSocketFrame" /* 15407 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 15408 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15406 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(transport) {
@@ -29,7 +29,7 @@ function validateEmbeddedAppFrame(transport) {
       if (null != tmp14) {
         tmp16 = null;
         if (tmp14.applicationId === transport.application.id) {
-          const tmp17 = tmp14.applicationId === ConjureBuilderPreviewStore.getBuilderPreviewApplicationId() || tmp14.data.prefersPictureInPictureOnNavigateAway;
+          const tmp17 = tmp14.applicationId === ConjureBuilderPreviewStore.getBuilderPreviewApplicationId() || tmp14.data.runsInBackground;
           const type = tmp14.surface.type;
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
             if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {

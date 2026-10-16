@@ -1,15 +1,15 @@
-// Module ID: 10796
-// Function ID: 10797
+// Module ID: 10811
+// Function ID: 10812
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1392, 558, 576, 10797, 7546, 1126, 2]
+// Dependencies: [1394, 558, 576, 10812, 7548, 1128, 2]
 // Exports: getTenureBadgeRequirementString
 
-// Module 10796 (useTenureBadgeRequirementString)
+// Module 10811 (useTenureBadgeRequirementString)
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7546 */;
-import useTenureBadging from "useTenureBadging" /* 10797 */;
+import intl3 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7548 */;
+import useTenureBadging from "useTenureBadging" /* 10812 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,18 +67,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTenureB
                 }
               }
             }
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const obj3 = { years: tenureReqNumMonths / 12 };
-            formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.qOdyDe, obj3);
+            formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.qOdyDe, obj3);
           }
           cResult[0] = tieredTenureBadge;
           cResult[1] = formatToPlainStringResult;
           tmp5 = formatToPlainStringResult;
         }
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj4 = { months: tenureReqNumMonths };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.erUSmA, obj4);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.erUSmA, obj4);
     } else {
       tmp5 = cResult[1];
     }
@@ -108,16 +108,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTenureB
               }
             }
           }
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const obj2 = { years: tenureReqNumMonths / 12 };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.qOdyDe, obj2);
+          formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.qOdyDe, obj2);
         }
         return formatToPlainStringResult;
       }
     }
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { months: tenureReqNumMonths };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.erUSmA, obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.erUSmA, obj3);
   }
 });
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTenureBadgeRequirementString.tsx");

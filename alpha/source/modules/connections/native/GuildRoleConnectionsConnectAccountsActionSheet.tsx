@@ -1,51 +1,51 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 11053
+// Function ID: 11054
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7017, 2129, 1404, 502, 2065, 5977, 2125, 4806, 7096, 1085, 21, 5151, 587, 558, 576, 5087, 5979, 1415, 5025, 1200, 8376, 5481, 5147, 1126, 7095, 11039, 7074, 8984, 11040, 11041, 12, 4874, 11042, 38, 4865, 5105, 11045, 5456, 7094, 8800, 504, 7097, 6320, 1265, 5166, 5115, 7315, 11046, 9426, 584, 6150, 10926, 2000, 9455, 11051, 7061, 11052, 7119, 5439, 2]
+// Dependencies: [5, 32, 19, 17, 7019, 2132, 1406, 502, 2068, 5979, 2128, 4809, 7098, 1087, 21, 5153, 587, 558, 576, 5090, 5981, 1417, 5028, 1202, 8384, 5483, 5149, 1128, 7097, 11054, 7076, 8992, 11055, 11056, 12, 4877, 11057, 38, 4868, 5108, 11060, 5458, 7096, 8808, 504, 7099, 6322, 1267, 5168, 5118, 7317, 11061, 9442, 584, 6152, 10941, 2002, 9471, 11066, 7063, 11067, 7121, 5441, 2]
 
-// Module 11038 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11053 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import intl14 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
-import shared from "shared" /* 5025 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5105 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
-import useMountEffectDefault from "useMountEffect" /* 5456 */;
-import useChannelNameDefault from "useChannelName" /* 5481 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7094 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7095 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7097 */;
-import openUserSettings from "openUserSettings" /* 7315 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11051 */;
+import intl14 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import shared from "shared" /* 5028 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5108 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
+import useMountEffectDefault from "useMountEffect" /* 5458 */;
+import useChannelNameDefault from "useChannelName" /* 5483 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7096 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7097 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7099 */;
+import openUserSettings from "openUserSettings" /* 7317 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7017 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import UserRecord from "UserRecord" /* 1404 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7019 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore_mod from "ChannelStore" /* 2065 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5977 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import Constants_mod from "Constants" /* 7096 */;
-import Constants_mod2 from "Constants" /* 1085 */;
+import ChannelStore_mod from "ChannelStore" /* 2068 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5979 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import Constants_mod from "Constants" /* 7098 */;
+import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let size;
 let size1;
 let size2;
 let tmp5;
-const PlatformsDefault = tmp5(5979);
+const PlatformsDefault = tmp5(5981);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Pressable: metroImportDefault, View: metroImportAll } = react_native);
@@ -223,7 +223,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     let tmp10 = null;
     if (null != tmp5) {
       const obj4 = { source: tmp5, style: tmp4.channelNameIcon };
-      tmp10 = set(tmp(1200).Icon, obj4);
+      tmp10 = set(tmp(1202).Icon, obj4);
     }
     cResult[5] = tmp5;
     cResult[6] = tmp4.channelNameIcon;
@@ -251,7 +251,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const tmp7 = metroImportAll;
   if (null != channelIcon) {
     const obj3 = { source: channelIcon, style: tmp.channelNameIcon };
-    tmp8 = set(tmp2(1200).Icon, obj3);
+    tmp8 = set(tmp2(1202).Icon, obj3);
   }
   items1 = [tmp8, ];
   const obj4 = { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: tmp5 };
@@ -283,12 +283,12 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           }
           tmp10 = tmp17;
         }
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const format2 = intl2.format;
         const _Math2 = Math;
         const _Number2 = Number;
         const obj2 = { description, count: Math.max(0, Number(value) - 1) };
-        const v2p7dA3 = tmp(1126).t["2p7dA3"];
+        const v2p7dA3 = tmp(1128).t["2p7dA3"];
         const format2Result = format2(v2p7dA3, obj2);
         cResult[0] = description;
         cResult[1] = value;
@@ -304,12 +304,12 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
             }
             tmp10 = tmp13;
           }
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const format = intl.format;
           const _Math = Math;
           const _Number = Number;
           const obj3 = { description, count: Math.max(0, Number(value) + 1) };
-          const v2p7dA31 = tmp(1126).t["2p7dA3"];
+          const v2p7dA31 = tmp(1128).t["2p7dA3"];
           const formatResult = format(v2p7dA31, obj3);
           cResult[3] = description;
           cResult[4] = value;
@@ -321,20 +321,20 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       let dcSDhW;
       if (constants2.EQUAL === operator) {
         let tmp8 = connectionType === constants3.PAYPAL;
-        const v0BlpbA = tmp(1126).t["0BlpbA"];
+        const v0BlpbA = tmp(1128).t["0BlpbA"];
         if (tmp8) {
           tmp8 = connectionMetadataField === constants.PAYPAL_VERIFIED;
         }
         dcSDhW = v0BlpbA;
         if (tmp8) {
-          dcSDhW = tmp(1126).t.dcSDhW;
+          dcSDhW = tmp(1128).t.dcSDhW;
         }
       } else if (constants2.NOT_EQUAL === operator) {
-        dcSDhW = tmp(1126).t.otcpTN;
+        dcSDhW = tmp(1128).t.otcpTN;
       } else if (constants2.LESS_THAN === operator) {
-        dcSDhW = tmp(1126).t.Ef35xs;
+        dcSDhW = tmp(1128).t.Ef35xs;
       } else if (constants2.GREATER_THAN === operator) {
-        dcSDhW = tmp(1126).t["8W9OXU"];
+        dcSDhW = tmp(1128).t["8W9OXU"];
       } else {
         return null;
       }
@@ -429,7 +429,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
         }
         dcSDhW = v0BlpbA;
         if (tmp13) {
-          dcSDhW = tmp9(1126).t.dcSDhW;
+          dcSDhW = tmp9(1128).t.dcSDhW;
         }
       } else if (constants2.NOT_EQUAL === operator) {
         dcSDhW = intl14.t.otcpTN;
@@ -539,7 +539,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                 if (someResult) {
                   tmp6 = closure_14;
                   accounts = closure_14.getAccounts();
-                  someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                  someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                 }
                 connection_type = null;
                 tmp7 = onAttempted;
@@ -607,7 +607,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -676,7 +676,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -843,7 +843,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                     if (someResult) {
                                                       tmp6 = closure_14;
                                                       accounts = closure_14.getAccounts();
-                                                      someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                                      someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                                     }
                                                     connection_type = null;
                                                     tmp7 = onAttempted;
@@ -913,7 +913,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                 if (someResult) {
                                                   tmp6 = closure_14;
                                                   accounts = closure_14.getAccounts();
-                                                  someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                                  someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                                 }
                                                 connection_type = null;
                                                 tmp7 = onAttempted;
@@ -990,7 +990,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                             if (someResult) {
                                               tmp6 = closure_14;
                                               accounts = closure_14.getAccounts();
-                                              someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                              someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                             }
                                             connection_type = null;
                                             tmp7 = onAttempted;
@@ -1053,7 +1053,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                         if (someResult) {
                                           tmp6 = closure_14;
                                           accounts = closure_14.getAccounts();
-                                          someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                          someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                         }
                                         connection_type = null;
                                         tmp7 = onAttempted;
@@ -1126,7 +1126,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                       if (someResult) {
                                         tmp6 = closure_14;
                                         accounts = closure_14.getAccounts();
-                                        someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                        someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                       }
                                       connection_type = null;
                                       tmp7 = onAttempted;
@@ -1187,7 +1187,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                   if (someResult) {
                                     tmp6 = closure_14;
                                     accounts = closure_14.getAccounts();
-                                    someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                                    someResult = accounts.some(() => { /* body not rendered: F144526 */ });
                                   }
                                   connection_type = null;
                                   tmp7 = onAttempted;
@@ -1258,7 +1258,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
               if (someResult) {
                 tmp6 = closure_14;
                 accounts = closure_14.getAccounts();
-                someResult = accounts.some(() => { /* body not rendered: F144067 */ });
+                someResult = accounts.some(() => { /* body not rendered: F144526 */ });
               }
               connection_type = null;
               tmp7 = onAttempted;
@@ -1775,7 +1775,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   }, items3);
-  let obj2 = eligibilityStatesGroups(4874);
+  let obj2 = eligibilityStatesGroups(4877);
   roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = {
     children: sorted.map(function(item) {
@@ -2361,7 +2361,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   let tmp13;
   if (set.has(account.type)) {
     const obj2 = {
-      label: intl.string(account(1126).t["+KCMSi"]),
+      label: intl.string(account(1128).t["+KCMSi"]),
       value: tmp3,
       onValueChange(enabled) {
           _undefined(enabled);
@@ -2369,14 +2369,14 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setFriendSync(account.type, account.id, enabled);
         }
     };
-    const FormSwitchRow = account(8800).FormSwitchRow;
-    intl = account(1126).intl;
+    const FormSwitchRow = account(8808).FormSwitchRow;
+    intl = account(1128).intl;
     tmp13 = closure_29(FormSwitchRow, obj2);
   }
   let tmp16;
   if (set2.has(account.type)) {
     const obj3 = {
-      label: intl2.formatToPlainString(account(1126).t["6u6J0q"], obj4),
+      label: intl2.formatToPlainString(account(1128).t["6u6J0q"], obj4),
       value: first,
       onValueChange(show_activity) {
           closure_4(show_activity);
@@ -2384,15 +2384,15 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setShowActivity(account.type, account.id, show_activity);
         }
     };
-    const FormSwitchRow2 = account(8800).FormSwitchRow;
-    intl2 = account(1126).intl;
+    const FormSwitchRow2 = account(8808).FormSwitchRow;
+    intl2 = account(1128).intl;
     obj4 = { platform: value.name };
     tmp16 = closure_29(FormSwitchRow2, obj3);
   }
   let tmp19;
   if (true === value.hasMetadata) {
     const obj5 = {
-      label: intl3.string(account(1126).t.FYKGsL),
+      label: intl3.string(account(1128).t.FYKGsL),
       value: first1,
       disabled: !first2,
       onValueChange(arg0) {
@@ -2410,13 +2410,13 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           const result = setMetadataVisibility(type, id, num);
         }
     };
-    const FormSwitchRow3 = account(8800).FormSwitchRow;
-    intl3 = account(1126).intl;
+    const FormSwitchRow3 = account(8808).FormSwitchRow;
+    intl3 = account(1128).intl;
     tmp19 = closure_29(FormSwitchRow3, obj5);
   }
   const obj6 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: items };
   const obj7 = {
-    label: intl4.string(account(1126).t.f7yOAX),
+    label: intl4.string(account(1128).t.f7yOAX),
     value: first2,
     onValueChange(arg0) {
       let id;
@@ -2433,8 +2433,8 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       setVisibility(type, id, num);
     }
   };
-  const FormSwitchRow4 = account(8800).FormSwitchRow;
-  intl4 = account(1126).intl;
+  const FormSwitchRow4 = account(8808).FormSwitchRow;
+  intl4 = account(1128).intl;
   items = [closure_29(FormSwitchRow4, obj7), tmp19, tmp16, tmp13];
   return closure_30(closure_8, obj6);
 });
@@ -2503,7 +2503,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f107185 = () => {
+    const f107498 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -2610,8 +2610,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f107185);
-    _slicedToArray(react.useState(f107185), 2);
+    [tmp27, c16] = react.useState(f107498);
+    _slicedToArray(react.useState(f107498), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[19])();

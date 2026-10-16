@@ -1,16 +1,16 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 13110
+// Function ID: 13111
 // Name: usePowerupActiveStatus
-// Dependencies: [2087, 5063, 5064, 1085, 5065, 558, 576, 504, 2]
+// Dependencies: [2090, 5066, 5067, 1087, 5068, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 13084 (usePowerupActiveStatus)
+// Module 13110 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import GameServerConstants from "GameServerConstants" /* 5065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5063 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
+import Constants from "Constants" /* 1087 */;
+import GameServerConstants from "GameServerConstants" /* 5068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5066 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "applicationId" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "k" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "applicationId" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "k" };
     }
     return obj3;
   });
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "applicationId" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "k" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "applicationId" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "k" };
     }
     return obj3;
   });

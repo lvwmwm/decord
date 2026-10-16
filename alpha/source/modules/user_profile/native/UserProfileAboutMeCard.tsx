@@ -1,33 +1,33 @@
-// Module ID: 10846
-// Function ID: 10847
+// Module ID: 10861
+// Function ID: 10862
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2129, 2125, 2087, 7124, 1085, 1502, 21, 5151, 558, 576, 4874, 587, 5147, 8533, 1126, 10847, 504, 7095, 11, 10395, 6379, 10849, 8709, 1200, 7073, 10850, 5115, 5033, 1112, 6946, 5041, 1629, 8522, 10851, 5439, 7123, 2]
+// Dependencies: [19, 17, 2132, 2128, 2090, 7126, 1087, 1504, 21, 5153, 558, 576, 4877, 587, 5149, 8541, 1128, 10862, 504, 7097, 11, 10411, 6381, 10864, 8717, 1202, 7075, 10865, 5118, 5036, 1114, 6948, 5044, 1631, 8530, 10866, 5441, 7125, 2]
 
-// Module 10846 (UserProfileAboutMeCard)
+// Module 10861 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import useToken from "useToken" /* 4874 */;
-import ChatInputUtils from "ChatInputUtils" /* 5041 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7123 */;
-import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8533 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8709 */;
-import BioTextDefault from "BioText" /* 10847 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 10849 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10851 */;
+import Constants2 from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import useToken from "useToken" /* 4877 */;
+import ChatInputUtils from "ChatInputUtils" /* 5044 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7125 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8541 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8717 */;
+import BioTextDefault from "BioText" /* 10862 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 10864 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10866 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import Constants from "Constants" /* 7124 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import Constants from "Constants" /* 7126 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let metroImportAll;
 let tmp;
 let tmp10;
 let unpackModuleId;
-const KeyboardTypes = tmp(1629);
-const GuildIconDefault = tmp10(6379);
+const KeyboardTypes = tmp(1631);
+const GuildIconDefault = tmp10(6381);
 const View = react_native.View;
 ({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = Constants);
 const Routes = Constants2.Routes;
@@ -266,7 +266,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
         let tmp13;
         const _Symbol = Symbol;
         if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const stringResult = intl.string(intl4.t.ZzAR2Y);
           cResult[5] = stringResult;
           tmp11 = stringResult;
@@ -362,7 +362,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
     tmp8Result = null;
     if ("" !== previewBio) {
       const obj2 = { themeType, children: intl.string(intl4.t.ZzAR2Y) };
-      intl = tmp3(1126).intl;
+      intl = tmp3(1128).intl;
       const items = [unpackModuleId(closure_17, obj2), ];
       const obj3 = { bio: previewBio, userId, guildId, textVariant, lineClamp };
       guildId = undefined;
@@ -525,12 +525,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         return closure_1_5.locale;
       }
     }
-    const getCreatedAtDate = tmp(7095).getCreatedAtDate;
-    tmp(7095);
+    const getCreatedAtDate = tmp(7097).getCreatedAtDate;
+    tmp(7097);
     const obj5 = guildId(11);
     const createdAtDate = getCreatedAtDate(obj5.extractTimestamp(userId), stateFromStores);
-    const getCreatedAtDate2 = tmp(7095).getCreatedAtDate;
-    tmp(7095);
+    const getCreatedAtDate2 = tmp(7097).getCreatedAtDate;
+    tmp(7097);
     if (stateFromStores2 != null) {
       class R {
         constructor() {
@@ -556,7 +556,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
           return guild;
         }
       }
-      const stringResult = obj6.string(tmp(1126).t.a6XYD9);
+      const stringResult = obj6.string(tmp(1128).t.a6XYD9);
       class P {
         constructor() {
           return closure_1_5.locale;
@@ -655,9 +655,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
           return closure_1_5.locale;
         }
       }
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const obj3 = { date: createdAtDate };
-      const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["9t7w53"], obj3);
+      const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["9t7w53"], obj3);
       if (cResult[34] === createdAtDate) {
         class R {
           constructor() {
@@ -742,35 +742,35 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     }
     return member;
   });
-  const getCreatedAtDate = userId(7095).getCreatedAtDate;
-  userId(7095);
+  const getCreatedAtDate = userId(7097).getCreatedAtDate;
+  userId(7097);
   const obj4 = SnowflakeUtilsDefault;
   const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
-  const getCreatedAtDate2 = userId(7095).getCreatedAtDate;
-  userId(7095);
+  const getCreatedAtDate2 = userId(7097).getCreatedAtDate;
+  userId(7097);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
   const createdAtDate2 = getCreatedAtDate2(joinedAt, stateFromStores);
-  const obj5 = { themeType, children: intl.string(userId(1126).t.a6XYD9) };
-  intl = tmp4(1126).intl;
+  const obj5 = { themeType, children: intl.string(userId(1128).t.a6XYD9) };
+  intl = tmp4(1128).intl;
   const items3 = [closure_11(closure_17, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(10395).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1126).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
-  intl2 = tmp4(1126).intl;
+  const obj7 = { themeType, icon: closure_11(userId(10411).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1128).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  intl2 = tmp4(1128).intl;
   items5 = [closure_11(closure_18, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
   const tmp18 = closure_18;
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5147).Text, obj9), ];
-    const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1126).t.FdLNDK, obj12), children: createdAtDate2 };
-    obj11 = { guild: stateFromStores1, size: userId(6379).GuildIconSizes.XXSMALL };
+    items6 = [closure_11(tmp4(5149).Text, obj9), ];
+    const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1128).t.FdLNDK, obj12), children: createdAtDate2 };
+    obj11 = { guild: stateFromStores1, size: userId(6381).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;
-    intl3 = tmp4(1126).intl;
+    intl3 = tmp4(1128).intl;
     obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };
     items6[1] = closure_11(tmp18, obj10);
     tmp15Result = tmp15(closure_13, obj8);
@@ -812,7 +812,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     let tmp13;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl4.t.wlTO8v);
       cResult[2] = stringResult;
       tmp11 = stringResult;
@@ -875,7 +875,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   if (null != friendsSinceDate) {
     const obj2 = { children: items };
     const obj3 = { themeType, children: intl.string(intl4.t.wlTO8v) };
-    intl = tmp3(1126).intl;
+    intl = tmp3(1128).intl;
     items = [unpackModuleId(closure_17, obj3), ];
     const obj4 = { variant: textVariant, color: "text-default", children: friendsSinceDate };
     items[1] = unpackModuleId(Text_Text.Text, obj4);
@@ -902,7 +902,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     let tmp9;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl4.t.l6DP2n);
       cResult[0] = stringResult;
       first = stringResult;
@@ -962,7 +962,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
       let tmp18 = null != privacyPolicyUrl;
       if (tmp18) {
         const obj5 = { url: privacyPolicyUrl, label: intl3.string(intl4.t.kH3JR5), themeType };
-        intl3 = tmp(1126).intl;
+        intl3 = tmp(1128).intl;
         tmp18 = unpackModuleId(closure_23, obj5);
       }
       cResult[6] = privacyPolicyUrl;
@@ -973,7 +973,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     let tmp14 = null != termsOfServiceUrl;
     if (tmp14) {
       const obj6 = { url: termsOfServiceUrl, label: intl2.string(intl4.t.s7STcY), themeType };
-      intl2 = tmp(1126).intl;
+      intl2 = tmp(1128).intl;
       tmp14 = unpackModuleId(closure_23, obj6);
     }
     cResult[3] = termsOfServiceUrl;
@@ -1002,14 +1002,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     const obj2 = { style: tmp.policyLinks, children: items1 };
     if (tmp5Result) {
       const obj3 = { url: termsOfServiceUrl, label: intl2.string(intl4.t.s7STcY), themeType };
-      intl2 = tmp7(1126).intl;
+      intl2 = tmp7(1128).intl;
       tmp5Result = tmp5(closure_23, obj3);
     }
     items1 = [tmp5Result, ];
     let tmp5Result2 = null != privacyPolicyUrl;
     if (tmp5Result2) {
       const obj4 = { url: privacyPolicyUrl, label: intl3.string(intl4.t.kH3JR5), themeType };
-      intl3 = tmp7(1126).intl;
+      intl3 = tmp7(1128).intl;
       tmp5Result2 = tmp5(closure_23, obj4);
     }
     const obj5 = { children: items };
@@ -1071,13 +1071,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
       return tmp11;
     }
     let obj2 = { accessibilityRole: "link", onPress: tmp8, children: tmp9 };
-    const tmp13 = closure_11(url(1200).PressableOpacity, obj2);
+    const tmp13 = closure_11(url(1202).PressableOpacity, obj2);
     cResult[7] = tmp8;
     cResult[8] = tmp9;
     cResult[9] = tmp13;
     tmp11 = tmp13;
   }
-  const tmp10 = closure_11(url(5147).Text, { variant: textVariant, color: "text-link", children: label });
+  const tmp10 = closure_11(url(5149).Text, { variant: textVariant, color: "text-link", children: label });
   cResult[4] = label;
   cResult[5] = textVariant;
   cResult[6] = tmp10;

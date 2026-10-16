@@ -1,13 +1,13 @@
-// Module ID: 2128
-// Function ID: 2129
+// Module ID: 2131
+// Function ID: 2132
 // Name: HelpdeskUtils
-// Dependencies: [2129, 1085, 4788, 1382, 2]
+// Dependencies: [2132, 1087, 4791, 1384, 2]
 
-// Module 2128 (HelpdeskUtils)
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4788 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import Constants from "Constants" /* 1085 */;
+// Module 2131 (HelpdeskUtils)
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4791 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const LocalizedLinks = Constants.LocalizedLinks;

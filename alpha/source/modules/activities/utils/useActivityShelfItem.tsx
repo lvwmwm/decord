@@ -1,33 +1,33 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11794
+// Function ID: 11795
 // Name: useActivityShelfItem
-// Dependencies: [5, 2064, 2024, 1085, 10919, 558, 576, 11753, 1382, 11260, 11771, 11772, 1998, 6286, 11218, 11217, 7077, 4795, 7073, 11125, 11158, 10949, 7234, 11773, 11126, 10953, 2]
+// Dependencies: [5, 2067, 2026, 1087, 10934, 558, 576, 11777, 1384, 11280, 11795, 11796, 2000, 6288, 11234, 11233, 7079, 4798, 7075, 11141, 11174, 10964, 7261, 7236, 11797, 11142, 10968, 2]
 // Exports: getStaffReleasePhase
 
-// Module 11770 (useActivityShelfItem)
+// Module 11794 (useActivityShelfItem)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import Constants2 from "Constants" /* 2024 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6286 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7077 */;
-import FramesConstants from "FramesConstants" /* 10919 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10953 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11125 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11217 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11218 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11260 */;
-import getPlatformDefault from "getPlatform" /* 11753 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11772 */;
+import Constants from "Constants" /* 1087 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import Constants2 from "Constants" /* 2026 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4798 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6288 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7079 */;
+import FramesConstants from "FramesConstants" /* 10934 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10968 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11141 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11233 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11234 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11280 */;
+import getPlatformDefault from "getPlatform" /* 11777 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c0, c4, c5;
 
-const f110066 = (str) => str.toUpperCase();
+const f110394 = (str) => str.toUpperCase();
 function useOnActivityItemSelected(arg0) {
   let application;
   let componentId;
@@ -54,8 +54,8 @@ function useOnActivityItemSelected(arg0) {
     str = "";
   }
   let tmp = referrerId({ context, applicationId: str, fetchesApplication });
-  analyticsLocations = context(7073)().analyticsLocations;
-  closure_13 = context(11218)();
+  analyticsLocations = context(7075)().analyticsLocations;
+  closure_13 = context(11234)();
   obj = canLaunchContextlessFrame;
   closure_14 = obj.canLaunchContextlessFrame(application);
   if (null == application) {
@@ -71,7 +71,6 @@ function useOnActivityItemSelected(arg0) {
         let closure_1;
         let closure_2;
         let id1;
-        let obj5;
         let tmp;
         if (c5 === 2) {
           c5 = 3;
@@ -101,28 +100,43 @@ function useOnActivityItemSelected(arg0) {
                 return obj3;
               } else {
                 channelId = undefined;
-                const tmp51 = closure_14;
-                if (tmp51) {
+                const tmp54 = closure_14;
+                if (tmp54) {
                   launchFrame = tmp(locationObject[20]);
                   let id;
                   if ("channel" === context.type) {
                     id = tmp33.channel.id;
                   }
                   launchFrame(id);
+                  let guildId = null;
+                  if ("channel" === context.type) {
+                    launchFrame = tmp33.channel;
+                    guildId = launchFrame.getGuildId();
+                  }
                   c3 = 1;
                   launchFrame = tmp(locationObject[21]).launchFrame;
-                  const obj4 = { applicationId: str, surface, analyticsContext: obj5 };
-                  obj5 = { isStart: true, analyticsLocations, source: MAIN_SURFACE, channelId: id1 };
-                  id1 = undefined;
-                  const tmp38 = tmp(locationObject[21]);
+                  const obj4 = { applicationId: str, surface: null, analyticsContext: null };
+                  const tmp39 = tmp(locationObject[21]);
                   if ("channel" === context.type) {
-                    id1 = tmp33.channel.id;
+                    let tmp41;
+                    if (null != guildId) {
+                      const obj5 = { type: launchFrame(locationObject[22]).EmbeddedSurfaceType.MAIN, channelId: context.channel.id, guildId };
+                      tmp41 = obj5;
+                    }
+                    obj4.surface = tmp41;
+                    const obj6 = { isStart: true, analyticsLocations, source: MAIN_SURFACE, channelId: id1 };
+                    id1 = undefined;
+                    if ("channel" === context.type) {
+                      id1 = tmp33.channel.id;
+                    }
+                    obj4.analyticsContext = obj6;
+                    launchFrame = launchFrame(obj4);
+                    c4 = 2;
+                    c5 = 1;
+                    const obj8 = { value: launchFrame, done: false };
+                    return obj8;
                   }
-                  launchFrame = launchFrame(obj4);
-                  c4 = 2;
-                  c5 = 1;
-                  const obj6 = { value: launchFrame, done: false };
-                  return obj6;
+                  tmp41 = source;
                 } else {
                   let id2;
                   if ("channel" === context.type) {
@@ -131,13 +145,13 @@ function useOnActivityItemSelected(arg0) {
                   channelId = id2;
                   if (null != require) {
                     c3 = 2;
-                    const obj8 = { recipientIds: tmp13, navigateToChannel: true };
-                    const obj7 = tmp(locationObject[22]);
-                    launchFrame = obj7.openPrivateChannel(obj8);
+                    const obj9 = { recipientIds: tmp13, navigateToChannel: true };
+                    const obj7 = tmp(locationObject[23]);
+                    launchFrame = obj7.openPrivateChannel(obj9);
                     c4 = 5;
                     c5 = 1;
-                    const obj9 = { value: launchFrame, done: false };
-                    return obj9;
+                    const obj10 = { value: launchFrame, done: false };
+                    return obj10;
                   }
                 }
               }
@@ -153,13 +167,13 @@ function useOnActivityItemSelected(arg0) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   c5 = 3;
-                  const obj10 = { value, done: true };
-                  return obj10;
+                  const obj11 = { value, done: true };
+                  return obj11;
                 } else {
                   launchFrame = closure_129_3;
                   if (closure_129_3 != null) {
-                    const obj11 = { applicationId: closure_129_11 };
-                    launchFrame(obj11);
+                    const obj12 = { applicationId: closure_129_11 };
+                    launchFrame(obj12);
                   }
                   c3 = 0;
                 }
@@ -173,8 +187,8 @@ function useOnActivityItemSelected(arg0) {
                   throw value;
                 } else if (arg0 === 2) {
                   c5 = 3;
-                  const obj12 = { value, done: true };
-                  return obj12;
+                  const obj13 = { value, done: true };
+                  return obj13;
                 }
               } else if (arg0 === 1) {
                 c5 = 3;
@@ -191,8 +205,8 @@ function useOnActivityItemSelected(arg0) {
               c5 = 3;
               return { value: "IconComponent", done: null };
             }
-            const obj13 = { targetApplicationId: closure_129_11, locationObject: closure_129_2, channelId, analyticsLocations: closure_129_12, componentId: closure_129_4, commandOrigin: closure_129_5, sectionName: closure_129_6, source: closure_129_7, customId: closure_129_8, referrerId: closure_129_9, onConfirmActivityLaunchChecksAlertOpen: closure_129_10 };
-            const promise = tmp(locationObject[23])(obj13);
+            const obj14 = { targetApplicationId: closure_129_11, locationObject: closure_129_2, channelId, analyticsLocations: closure_129_12, componentId: closure_129_4, commandOrigin: closure_129_5, sectionName: closure_129_6, source: closure_129_7, customId: closure_129_8, referrerId: closure_129_9, onConfirmActivityLaunchChecksAlertOpen: closure_129_10 };
+            const promise = tmp(locationObject[24])(obj14);
             launchFrame = promise.then((result) => {
               let tmp = result;
               if (tmp) {
@@ -207,14 +221,14 @@ function useOnActivityItemSelected(arg0) {
             });
             c4 = 4;
             c5 = 1;
-            const obj14 = { value: launchFrame, done: false };
-            return obj14;
-          } catch (tmp44) {
-            locationObject = tmp44;
+            const obj15 = { value: launchFrame, done: false };
+            return obj15;
+          } catch (tmp47) {
+            locationObject = tmp47;
             if (0 === c3) {
               c5 = 3;
-              throw tmp44;
-            } else if (1 === tmp46) {
+              throw tmp47;
+            } else if (1 === tmp49) {
               c4 = 1;
             } else {
               c4 = 3;
@@ -254,7 +268,7 @@ function useOnActivityItemSelected(arg0) {
               } else if (!launchingActivity.isLaunchingActivity()) {
                 const obj4 = { applicationId: str, activityChannelId: id, locationObject: dependencyMap, analyticsLocations, componentId: EmbeddedActivitiesStore, sectionName: ApplicationFlags, source: MAIN_SURFACE, customId, referrerId };
                 id = undefined;
-                const tmp6 = context(locationObject[24]);
+                const tmp6 = context(locationObject[25]);
                 if ("channel" === context.type) {
                   id = context.channel.id;
                 }
@@ -414,7 +428,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
                           if (tmp9) {
                             NONE = tmp7.label_type;
                           } else {
-                            NONE = tmp(1998).EmbeddedActivityLabelTypes.NONE;
+                            NONE = tmp(2000).EmbeddedActivityLabelTypes.NONE;
                           }
                           if (cResult[28] === tmp21) {
                             if (cResult[29] === tmp11) {
@@ -454,7 +468,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f110066);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f110394);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -571,7 +585,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11771)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(11795)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -594,7 +608,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f110066);
+      replaced = str4.replace(/(^\w|\s\w)/g, f110394);
     }
     tmp16 = replaced;
   } else {
@@ -604,7 +618,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   if (tmp7) {
     NONE = tmp5.label_type;
   } else {
-    NONE = tmp4(1998).EmbeddedActivityLabelTypes.NONE;
+    NONE = tmp4(2000).EmbeddedActivityLabelTypes.NONE;
   }
   return obj5;
 });
@@ -689,7 +703,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityA
     return START;
   } else {
     let JOIN;
-    const getEmbeddedActivityLocationChannelId = tmp6(4795).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp6(4798).getEmbeddedActivityLocationChannelId;
     embeddedActivityLocationUtils;
     if (tmp4 != null) {
       const _location = tmp4.location;
@@ -725,7 +739,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f110066);
+    replaced = str4.replace(/(^\w|\s\w)/g, f110394);
   }
   return replaced;
 }

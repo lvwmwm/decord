@@ -1,9 +1,9 @@
-// Module ID: 5207
-// Function ID: 5208
+// Module ID: 5209
+// Function ID: 5210
 // Name: Stats
 // Dependencies: [2]
 
-// Module 5207 (Stats)
+// Module 5209 (Stats)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/Stats.tsx");

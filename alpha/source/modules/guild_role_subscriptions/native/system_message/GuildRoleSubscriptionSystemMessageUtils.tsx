@@ -1,14 +1,14 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 12471
+// Function ID: 12472
 // Name: system_message/GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [1085, 7395, 8227, 5166, 2]
+// Dependencies: [1087, 7397, 8230, 5168, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 12448 (system_message/GuildRoleSubscriptionSystemMessageUtils)
-import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8227 */;
+// Module 12471 (system_message/GuildRoleSubscriptionSystemMessageUtils)
+import Constants from "Constants" /* 1087 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8230 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

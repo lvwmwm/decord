@@ -1,22 +1,22 @@
-// Module ID: 9589
-// Function ID: 9590
+// Module ID: 9605
+// Function ID: 9606
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7530, 7532, 1085, 21, 5151, 587, 558, 576, 1503, 504, 9558, 9576, 9561, 5147, 1126, 5451, 9590, 9591, 9593, 6463, 6402, 2]
+// Dependencies: [19, 17, 7532, 7534, 1087, 21, 5153, 587, 558, 576, 1505, 504, 9574, 9592, 9577, 5149, 1128, 5453, 9606, 9607, 9609, 6465, 6404, 2]
 
-// Module 9589 (ConversationListItem)
+// Module 9605 (ConversationListItem)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ConversationConstants from "ConversationConstants" /* 7532 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9558 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9561 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9576 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9591 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9593 */;
+import Constants from "Constants" /* 1087 */;
+import ConversationConstants from "ConversationConstants" /* 7534 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9574 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9577 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9592 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9607 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9609 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7530 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7532 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
   const cResult = obj.c(50);
   conversation = conversation.conversation;
   const tmp4 = closure_12();
-  let obj2 = conversation(1503);
+  let obj2 = conversation(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp7 = ChannelConversationsStore;
@@ -109,9 +109,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
               }
               const timestamp = tmp4.timestamp;
               if (cResult[16] !== conversation.messageCount) {
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 let obj3 = { count: conversation.messageCount };
-                const formatToPlainStringResult = intl.formatToPlainString(conversation(1126).t.poZZGL, obj3);
+                const formatToPlainStringResult = intl.formatToPlainString(conversation(1128).t.poZZGL, obj3);
                 cResult[16] = conversation.messageCount;
                 cResult[17] = formatToPlainStringResult;
                 tmp20 = formatToPlainStringResult;
@@ -133,7 +133,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                     }
                     if (cResult[25] !== tmp4.maskOpaque) {
                       const obj4 = { colors, style: tmp4.maskOpaque };
-                      const tmp33 = closure_8(navigation(5451), obj4);
+                      const tmp33 = closure_8(navigation(5453), obj4);
                       cResult[25] = tmp4.maskOpaque;
                       cResult[26] = tmp33;
                       tmp29 = tmp33;
@@ -143,7 +143,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                     if (cResult[27] !== tmp4.maskFade) {
                       const obj5 = { colors: colors2, start: null, end: null, style: tmp4.maskFade };
                       ({ START: obj9.start, END: obj9.end } = VerticalGradient);
-                      const tmp39 = closure_8(navigation(5451), obj5);
+                      const tmp39 = closure_8(navigation(5453), obj5);
                       cResult[27] = tmp4.maskFade;
                       cResult[28] = tmp39;
                       tmp34 = tmp39;
@@ -189,7 +189,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                   }
                                   const obj6 = { style: tmp14, onPress: tmp13, accessibilityLabel: tmp15, children: items1 };
                                   items1 = [tmp25, tmp53];
-                                  const tmp59 = closure_9(conversation(6402).Card, obj6);
+                                  const tmp59 = closure_9(conversation(6404).Card, obj6);
                                   cResult[44] = conversation.title;
                                   cResult[45] = tmp13;
                                   cResult[46] = tmp4.card;
@@ -200,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                 }
                               }
                               const obj7 = { style: tmp4.previewsMask, maskElement: tmp40, children: tmp49 };
-                              const tmp56 = closure_8(navigation(6463), obj7);
+                              const tmp56 = closure_8(navigation(6465), obj7);
                               cResult[40] = tmp4.previewsMask;
                               cResult[41] = tmp40;
                               cResult[42] = tmp49;
@@ -216,7 +216,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(9590), {});
+                          mapped = closure_8(navigation(9606), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {
@@ -264,14 +264,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                 tmp25 = tmp28;
               }
               const obj12 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: timestamp, children: tmp20 };
-              const tmp24 = closure_8(conversation(5147).Text, obj12);
+              const tmp24 = closure_8(conversation(5149).Text, obj12);
               cResult[18] = tmp4.timestamp;
               cResult[19] = tmp20;
               cResult[20] = tmp24;
               tmp22 = tmp24;
             }
             const obj13 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp4.title, children: conversation.title };
-            const tmp19 = closure_8(conversation(5147).Text, obj13);
+            const tmp19 = closure_8(conversation(5149).Text, obj13);
             cResult[13] = conversation.title;
             cResult[14] = tmp4.title;
             cResult[15] = tmp19;

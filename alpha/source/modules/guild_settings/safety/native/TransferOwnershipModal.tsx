@@ -1,18 +1,18 @@
-// Module ID: 12468
-// Function ID: 12469
+// Module ID: 12491
+// Function ID: 12492
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 12469, 21, 12467, 1273, 1126, 6421, 12470, 6504, 8855, 4864, 558, 576, 6908, 2]
+// Dependencies: [5, 19, 12492, 21, 12490, 1275, 1128, 6423, 12493, 6506, 8863, 4867, 558, 576, 6910, 2]
 
-// Module 12468 (TransferOwnershipModal)
+// Module 12491 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Navigator2 from "Navigator" /* 6908 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12467 */;
-import TransferOwnershipDefault from "TransferOwnership" /* 12470 */;
+import intl3 from "intl" /* 1128 */;
+import Navigator2 from "Navigator" /* 6910 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12490 */;
+import TransferOwnershipDefault from "TransferOwnership" /* 12493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12469 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12492 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferOw
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl3.t["13/7kX"]);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -177,9 +177,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferOw
   const toUser = guild.toUser;
   const items = [guild, toUser];
   const memo = react.useMemo(() => getScreens(guild, toUser), items);
-  const Navigator = guild(6908).Navigator;
-  const intl = guild(1126).intl;
-  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1126).t["13/7kX"])} />;
+  const Navigator = guild(6910).Navigator;
+  const intl = guild(1128).intl;
+  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1128).t["13/7kX"])} />;
 });
 let result = size.fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
 

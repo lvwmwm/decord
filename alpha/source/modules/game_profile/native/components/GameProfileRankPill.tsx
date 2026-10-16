@@ -1,18 +1,18 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9149
+// Function ID: 9150
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 9142, 1126, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 9150, 1128, 5149, 2]
 
-// Module 9141 (GameProfileRankPill)
+// Module 9149 (GameProfileRankPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import TrophyIcon2 from "TrophyIcon" /* 9142 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import TrophyIcon2 from "TrophyIcon" /* 9150 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   ({ container, gameRankPill } = tmp5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const TrophyIcon = tmp(9142).TrophyIcon;
+    const TrophyIcon = tmp(9150).TrophyIcon;
     const tmp9 = React3(TrophyIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -91,9 +91,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     cResult[8] = tmp18;
     tmp15 = tmp18;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = tmp(1126).t;
+  const t = tmp(1128).t;
   if (undefined !== compact && compact) {
     const obj6 = { rank };
     str = formatToPlainString(t.UA6RoE, obj6);

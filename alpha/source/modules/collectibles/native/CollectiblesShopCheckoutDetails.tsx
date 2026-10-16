@@ -1,38 +1,38 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13574
+// Function ID: 13575
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1087, 9219, 21, 5151, 587, 558, 576, 8571, 13549, 5088, 8546, 9243, 8514, 9218, 1990, 9239, 1993, 1088, 9266, 9265, 9231, 1126, 5147, 7491, 9276, 13550, 8521, 4825, 9295, 2]
+// Dependencies: [19, 17, 1089, 9232, 21, 5153, 587, 558, 576, 8579, 13575, 5091, 8554, 9256, 8522, 9231, 1992, 9252, 1995, 1090, 9279, 9278, 9244, 1128, 5149, 7493, 9289, 13576, 8529, 4828, 9308, 2]
 
-// Module 13548 (CollectiblesShopCheckoutDetails)
+// Module 13574 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
-import intl8 from "intl" /* 1126 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7491 */;
-import useShopProductItems from "useShopProductItems" /* 8514 */;
-import useCurrentUser from "useCurrentUser" /* 8521 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8546 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8571 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9218 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9231 */;
-import NameplateDefault from "Nameplate" /* 9239 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9243 */;
-import _modDef9265 from "module_9265" /* 9265 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9266 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9276 */;
-import getProductName from "getProductName" /* 9295 */;
-import _modDef13549 from "module_13549" /* 13549 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13550 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
+import intl8 from "intl" /* 1128 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7493 */;
+import useShopProductItems from "useShopProductItems" /* 8522 */;
+import useCurrentUser from "useCurrentUser" /* 8529 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8554 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8579 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9231 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9244 */;
+import NameplateDefault from "Nameplate" /* 9252 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9256 */;
+import _modDef9278 from "module_9278" /* 9278 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9279 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9289 */;
+import getProductName from "getProductName" /* 9308 */;
+import _modDef13575 from "module_13575" /* 13575 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13576 */;
 import react from "react" /* 19 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9219 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9232 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const utils = tmp(1990);
+const utils = tmp(1992);
 const View = react_native.View;
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
 ({ BUNDLE_PREVIEW_CONFIG: metroRequire, SAMPLE_PROFILE_ASPECT_RATIO } = CollectiblesPreviewConstants);
@@ -104,7 +104,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef13549 };
+      const obj2 = { uri: _modDef13575 };
       cResult[0] = obj2;
       first = obj2;
     } else {
@@ -176,7 +176,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef13549 };
+    obj3 = { uri: _modDef13575 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };
@@ -542,7 +542,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     let tmp37;
     if (cResult[0] !== product.skuId) {
       size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-      const FractionalNitroCoinIllustration = tmp(9266).FractionalNitroCoinIllustration;
+      const FractionalNitroCoinIllustration = tmp(9279).FractionalNitroCoinIllustration;
       const tmp39 = metroImportDefault(FractionalNitroCoinIllustration, size);
       cResult[0] = product.skuId;
       cResult[1] = tmp39;
@@ -556,7 +556,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     let tmp33;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef9265 };
+      const obj2 = { uri: _modDef9278 };
       cResult[2] = obj2;
       tmp31 = obj2;
     } else {
@@ -667,11 +667,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
     size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    const FractionalNitroCoinIllustration = tmp2(9266).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp2(9279).FractionalNitroCoinIllustration;
     return metroImportDefault(FractionalNitroCoinIllustration, size);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj = { source: obj2, style: tmp.externalProductImage };
-    obj2 = { uri: _modDef9265 };
+    obj2 = { uri: _modDef9278 };
     const tmp18 = FastImageDefault;
     return metroImportDefault(tmp18, obj);
   } else {
@@ -713,7 +713,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     let first;
     const _Symbol6 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl7 = tmp(1126).intl;
+      const intl7 = tmp(1128).intl;
       const stringResult = intl7.string(intl8.t.DFMPWS);
       cResult[0] = stringResult;
       first = stringResult;
@@ -727,7 +727,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       let tmp21;
       const _Symbol5 = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl6 = tmp(1126).intl;
+        const intl6 = tmp(1128).intl;
         const stringResult1 = intl6.string(intl8.t["7v0T9P"]);
         cResult[2] = stringResult1;
         tmp21 = stringResult1;
@@ -739,7 +739,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       let tmp18;
       const _Symbol4 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1126).intl;
+        const intl5 = tmp(1128).intl;
         const stringResult2 = intl5.string(intl8.t.wR5wOo);
         cResult[3] = stringResult2;
         tmp18 = stringResult2;
@@ -751,7 +751,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       let tmp15;
       const _Symbol3 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         const stringResult3 = intl4.string(intl8.t.x5CoXR);
         cResult[4] = stringResult3;
         tmp15 = stringResult3;
@@ -763,7 +763,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       let tmp12;
       const _Symbol2 = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const stringResult4 = intl3.string(intl8.t.GWrZOd);
         cResult[5] = stringResult4;
         tmp12 = stringResult4;
@@ -777,7 +777,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
         let tmp9;
         const _Symbol7 = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const stringResult5 = intl2.string(intl8.t.Zr5tjn);
           cResult[6] = stringResult5;
           tmp9 = stringResult5;
@@ -790,7 +790,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   } else {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult6 = intl.string(intl8.t["0+rBWT"]);
       cResult[1] = stringResult6;
       tmp7 = stringResult6;
@@ -902,27 +902,27 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const memo = react.useMemo(() => {
     const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
     if (ALL.has(require.skuId)) {
-      const intl7 = tmp(1126).intl;
+      const intl7 = tmp(1128).intl;
       return intl7.string(intl8.t.DFMPWS);
     } else if (require.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-      const intl6 = tmp(1126).intl;
+      const intl6 = tmp(1128).intl;
       return intl6.string(intl8.t["0+rBWT"]);
     } else {
       const type = tmp3.type;
       if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-        const intl5 = tmp(1126).intl;
+        const intl5 = tmp(1128).intl;
         return intl5.string(intl8.t["7v0T9P"]);
       } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         return intl4.string(intl8.t.wR5wOo);
       } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         return intl3.string(intl8.t.x5CoXR);
       } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         return intl2.string(intl8.t.GWrZOd);
       } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         return intl.string(intl8.t.Zr5tjn);
       } else {
         return null;
@@ -1155,8 +1155,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
                     if (tmp36) {
                       const obj4 = { style: tmp7.errorContainer, children: metroImportDefault(Text, obj5) };
                       obj5 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: intl2.string(intl8.t["3YfczA"]) };
-                      Text = tmp(5147).Text;
-                      intl2 = tmp(1126).intl;
+                      Text = tmp(5149).Text;
+                      intl2 = tmp(1128).intl;
                       tmp36 = metroImportDefault(View, obj4);
                     }
                     cResult[23] = undefined !== isGift && isGift;
@@ -1201,9 +1201,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
   }
   if (undefined !== useOrbPrice && useOrbPrice) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
-    const W4DfeF = tmp(1126).t.W4DfeF;
+    const W4DfeF = tmp(1128).t.W4DfeF;
     const obj9 = { product, hasShopDiscount: tmp10 };
     const tmpResult5 = CollectiblesProductUtils;
     const productOrbPrice = tmpResult5.getProductOrbPrice(obj9);
@@ -1255,7 +1255,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   const tmp2 = closure_10(flag);
   let obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
-  let obj2 = flag2(4825);
+  let obj2 = flag2(4828);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];
@@ -1266,9 +1266,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     const obj = getProductName;
     const productNameAndTypeLabel = obj.getProductNameAndTypeLabel(require);
     if (flag2) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const formatToPlainString = intl.formatToPlainString;
-      const W4DfeF = tmp(1126).t.W4DfeF;
+      const W4DfeF = tmp(1128).t.W4DfeF;
       const obj2 = { product: require, hasShopDiscount };
       const tmpResult = CollectiblesProductUtils;
       const productOrbPrice = tmpResult.getProductOrbPrice(obj2);

@@ -1,25 +1,26 @@
-// Module ID: 8461
-// Function ID: 8462
+// Module ID: 8469
+// Function ID: 8470
 // Name: transformEmbeds
-// Dependencies: [17, 1085, 8462, 8463, 5963, 8464, 1382, 8108, 5479, 1126, 8337, 4849, 7210, 7216, 6125, 2]
+// Dependencies: [17, 1087, 8470, 8471, 5965, 8472, 1384, 8111, 5481, 1128, 1105, 8344, 4852, 7212, 7218, 6127, 2]
 // Exports: default
 
-// Module 8461 (transformEmbeds)
+// Module 8469 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import DateUtils from "DateUtils" /* 4849 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5479 */;
-import EmbedUtils from "EmbedUtils" /* 5963 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6125 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7210 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7216 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8108 */;
-import MarkupParsers from "MarkupParsers" /* 8337 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8462 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8463 */;
-import utils from "utils" /* 8464 */;
+import Constants from "Constants" /* 1087 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import intl6 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import DateUtils from "DateUtils" /* 4852 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5481 */;
+import EmbedUtils from "EmbedUtils" /* 5965 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6127 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7212 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7218 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8111 */;
+import MarkupParsers from "MarkupParsers" /* 8344 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8470 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8471 */;
+import utils from "utils" /* 8472 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -77,19 +78,19 @@ export default function transformEmbeds(arg0) {
     let imageSrc;
     let intl;
     let intl2;
-    let obj22;
+    let obj23;
     let provider;
     let proxyURL;
     let proxyURL2;
     let proxyURL3;
     let proxyURL4;
     let referenceId;
+    let str10;
     let str11;
-    let str12;
     let stringResult;
     let tmp35;
-    let tmp3Result16;
     let tmp3Result17;
+    let tmp3Result18;
     let tmp44;
     let tmp50;
     let type2;
@@ -120,12 +121,12 @@ export default function transformEmbeds(arg0) {
                     return [];
                   }
                 }
-                const tmp3Result14 = EmbedUtils;
-                if (tmp3Result14.isSocialLayerStorefrontArticleEmbed(type)) {
+                const tmp3Result15 = EmbedUtils;
+                if (tmp3Result15.isSocialLayerStorefrontArticleEmbed(type)) {
                   return [];
                 } else {
-                  const tmp3Result15 = EmbedUtils;
-                  if (tmp3Result15.isUserProfileArticleEmbed(type)) {
+                  const tmp3Result16 = EmbedUtils;
+                  if (tmp3Result16.isUserProfileArticleEmbed(type)) {
                     return [];
                   } else {
                     let mapped;
@@ -135,12 +136,12 @@ export default function transformEmbeds(arg0) {
                       if (null != type.thumbnail) {
                         const thumbnail = type.thumbnail;
                         ({ proxyURL, width, height } = thumbnail);
-                        let obj2 = { width: tmp3Result16.sanitizeMediaDimension(width), height: tmp3Result17.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
+                        let obj2 = { width: tmp3Result17.sanitizeMediaDimension(width), height: tmp3Result18.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
                         const url = thumbnail.url;
                         let merged = Object.assign(thumbnail);
-                        tmp3Result16 = sanitizeMediaDimension;
-                        imageSrc = proxyURL;
                         tmp3Result17 = sanitizeMediaDimension;
+                        imageSrc = proxyURL;
+                        tmp3Result18 = sanitizeMediaDimension;
                         if (null != proxyURL) {
                           const obj7 = RowGeneratorUtilsDefault;
                           imageSrc = obj7.getImageSrc(proxyURL, width, height, !importDefault);
@@ -187,7 +188,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp52 = url4;
-                              const isWebPlayerVideoUrl = tmp3(5479).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(5481).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp52 = url4;
@@ -208,15 +209,15 @@ export default function transformEmbeds(arg0) {
                               if (null == type.video.proxyURL) {
                                 const provider2 = type.provider;
                                 let name;
-                                const getEffectiveVideoProvider = tmp3(5963).getEffectiveVideoProvider;
+                                const getEffectiveVideoProvider = tmp3(5965).getEffectiveVideoProvider;
                                 EmbedUtils;
                                 if (provider2 != null) {
                                   name = provider2.name;
                                 }
                                 const effectiveVideoProvider = getEffectiveVideoProvider(name, type.video.url);
                                 tmp35 = tmp8;
-                                const tmp3Result20 = renderer_EmbedUtils;
-                                if (tmp3Result20.shouldPlayVideoInline(effectiveVideoProvider)) {
+                                const tmp3Result21 = renderer_EmbedUtils;
+                                if (tmp3Result21.shouldPlayVideoInline(effectiveVideoProvider)) {
                                   const obj5 = { showPlayButton: true };
                                   const merged3 = Object.assign(tmp8);
                                   tmp35 = obj5;
@@ -242,24 +243,24 @@ export default function transformEmbeds(arg0) {
                       if (tmp56) {
                         const obj8 = { role: intl.string(intl6.t.OBp3V3), hint: intl2.string(intl6.t.IPzNKE) };
                         const merged5 = Object.assign(tmp32);
-                        intl = tmp3(1126).intl;
-                        intl2 = tmp3(1126).intl;
+                        intl = tmp3(1128).intl;
+                        intl2 = tmp3(1128).intl;
                         tmp57 = obj8;
                       }
                       const tmp61 = borderLeftColor;
                       borderLeftColor = borderLeftColor.embedBorderLeftColor;
-                      const tmp62 = null != type.color && "" !== type.color;
-                      if (tmp62) {
-                        borderLeftColor = processColor(type.color);
+                      if (null != type.color) {
+                        const tmp3Result22 = utils_ColorUtils;
+                        borderLeftColor = processColor(tmp3Result22.int2hsl(type.color));
                       }
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8337).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8344).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
-                          let tmp72;
+                          let tmp71;
                           if (null != type.rawTitle) {
                             rawTitle = parseEmbedTitleMarkup(type.rawTitle, require);
                           }
@@ -271,8 +272,8 @@ export default function transformEmbeds(arg0) {
                                 if (MessageEmbedTypes.RICH === type) {
                                   if (null != type.rawDescription) {
                                     const obj9 = { description: type.rawDescription, channelId: require, isField: false, ignoreCache: processColor, showListsAndHeaders, showMaskedLinks };
-                                    const tmp3Result21 = MarkupParsers;
-                                    result = tmp3Result21.parseEmbedDescriptionMarkup(obj9);
+                                    const tmp3Result23 = MarkupParsers;
+                                    result = tmp3Result23.parseEmbedDescriptionMarkup(obj9);
                                   }
                                 } else {
                                   result = type.rawDescription;
@@ -302,8 +303,8 @@ export default function transformEmbeds(arg0) {
                           });
                           let calendarFormatResult = null;
                           if (null != type.timestamp) {
-                            const tmp3Result22 = DateUtils;
-                            calendarFormatResult = tmp3Result22.calendarFormat(type.timestamp);
+                            const tmp3Result24 = DateUtils;
+                            calendarFormatResult = tmp3Result24.calendarFormat(type.timestamp);
                           }
                           if (null != type.footer) {
                             const text = type.footer.text;
@@ -319,19 +320,19 @@ export default function transformEmbeds(arg0) {
                               if ("" !== type.footer.iconProxyURL) {
                                 iconURL = type.footer.iconProxyURL;
                               }
-                              tmp72 = obj10;
+                              tmp71 = obj10;
                               if (null != iconURL) {
-                                const obj20 = RowGeneratorUtilsDefault;
-                                obj10.iconURL = obj20.getImageSrc(iconURL, 16, 16, !importDefault);
-                                tmp72 = obj10;
+                                const obj21 = RowGeneratorUtilsDefault;
+                                obj10.iconURL = obj21.getImageSrc(iconURL, 16, 16, !importDefault);
+                                tmp71 = obj10;
                               }
                             }
                             iconURL = type.footer.iconURL;
                           } else if (null != calendarFormatResult) {
-                            tmp72 = { content: calendarFormatResult, text: "" };
+                            tmp71 = { content: calendarFormatResult, text: "" };
                             const obj11 = { content: calendarFormatResult, text: "" };
                           }
-                          let tmp81;
+                          let tmp80;
                           if (null != type.author) {
                             if (null != type.author.iconProxyURL) {
                               let iconURL2;
@@ -340,18 +341,18 @@ export default function transformEmbeds(arg0) {
                                 iconURL2 = type.author.iconProxyURL;
                               }
                               if (null != iconURL2) {
-                                const obj12 = { iconURL: obj22.getImageSrc(iconURL2, 16, 16, !importDefault) };
+                                const obj12 = { iconURL: obj23.getImageSrc(iconURL2, 16, 16, !importDefault) };
                                 const merged7 = Object.assign(type.author);
                                 author = obj12;
-                                obj22 = RowGeneratorUtilsDefault;
+                                obj23 = RowGeneratorUtilsDefault;
                               } else {
                                 author = type.author;
                               }
-                              tmp81 = author;
+                              tmp80 = author;
                             }
                             iconURL2 = type.author.iconURL;
                           }
-                          let tmp88;
+                          let tmp87;
                           if (type.type === MessageEmbedTypes.COMPONENTS) {
                             let mapped2;
                             const components = type.components;
@@ -364,62 +365,62 @@ export default function transformEmbeds(arg0) {
                             } else {
                               mapped2 = components;
                             }
-                            tmp88 = closure_13(mapped2);
+                            tmp87 = closure_13(mapped2);
                           }
                           const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(7210).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(7212).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
-                          const tmp93 = closure_9;
+                          const tmp92 = closure_9;
                           if (!closure_10) {
                             const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(7210).isMediaScanPending;
+                            const isMediaScanPending = tmp3(7212).isMediaScanPending;
                             ObscuredMediaUtils;
-                            isMediaScanPendingResult = isMediaScanPending(obj14, tmp93);
+                            isMediaScanPendingResult = isMediaScanPending(obj14, tmp92);
                           }
-                          let isVerifiedTeenResult = tmp97;
+                          let isVerifiedTeenResult = tmp96;
                           if (isVerifiedTeenResult) {
-                            const tmp3Result25 = AgeVerificationUtils;
-                            isVerifiedTeenResult = tmp3Result25.isVerifiedTeen();
+                            const tmp3Result27 = AgeVerificationUtils;
+                            isVerifiedTeenResult = tmp3Result27.isVerifiedTeen();
                           }
-                          let str10 = type.id;
-                          if (str10 == null) {
-                            str10 = "";
+                          let str9 = type.id;
+                          if (str9 == null) {
+                            str9 = "";
                           }
-                          const obj15 = { id: str10, type: type2, spoiler: str12, obscure: stringResult, obscureAwaitingScan: str11, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp81, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp88, footer: tmp72, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
+                          const obj15 = { id: str9, type: type2, spoiler: str11, obscure: stringResult, obscureAwaitingScan: str10, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp80, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp87, footer: tmp71, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
                           type2 = type.type;
+                          str10 = "";
                           str11 = "";
-                          str12 = "";
                           if (dependencyMap) {
-                            const intl3 = tmp3(1126).intl;
-                            const str13 = intl3.string(intl6.t["F+x38C"]);
-                            str12 = str13.toUpperCase();
+                            const intl3 = tmp3(1128).intl;
+                            const str12 = intl3.string(intl6.t["F+x38C"]);
+                            str11 = str12.toUpperCase();
                           }
-                          stringResult = str11;
+                          stringResult = str10;
                           if (mediaObscuredReasonFromBitmask.length > 0) {
-                            const intl4 = tmp3(1126).intl;
-                            stringResult = intl4.string(tmp3(1126).t.SpxcUR);
+                            const intl4 = tmp3(1128).intl;
+                            stringResult = intl4.string(tmp3(1128).t.SpxcUR);
                           }
                           if (isMediaScanPendingResult) {
-                            const intl5 = tmp3(1126).intl;
-                            str11 = intl5.string(tmp3(1126).t.MRdR7z);
+                            const intl5 = tmp3(1128).intl;
+                            str10 = intl5.string(tmp3(1128).t.MRdR7z);
                           }
                           provider = type.provider;
                           url5 = type.url;
                           video = type.video;
-                          ({ embedProviderColor: obj26.providerColor, embedHeaderTextColor: obj26.headerTextColor, embedBodyTextColor: obj26.bodyTextColor } = tmp61);
+                          ({ embedProviderColor: obj27.providerColor, embedHeaderTextColor: obj27.headerTextColor, embedBodyTextColor: obj27.bodyTextColor } = tmp61);
                           referenceId = type.referenceId;
                           return obj15;
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8337).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8344).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {
-                      const tmp3Result26 = PlatformUtils;
-                      tmp28 = !tmp3Result26.isIOS();
+                      const tmp3Result28 = PlatformUtils;
+                      tmp28 = !tmp3Result28.isIOS();
                     }
                     mapped = null;
                     const tmp29 = !tmp28 && null == type.thumbnail;

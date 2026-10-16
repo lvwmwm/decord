@@ -1,21 +1,21 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11206
+// Function ID: 11207
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1085, 1392, 5176, 21, 5151, 587, 558, 576, 11131, 9758, 7073, 4906, 5152, 1200, 5330, 11191, 1265, 9614, 9615, 4825, 5088, 9724, 6405, 2]
+// Dependencies: [19, 17, 1087, 1394, 5178, 21, 5153, 587, 558, 576, 11147, 9774, 7075, 4909, 5154, 1202, 5332, 11207, 1267, 9630, 9631, 4828, 5091, 9740, 6407, 2]
 
-// Module 11190 (StreamQualityLiveIndicator)
+// Module 11206 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import timing from "timing" /* 5152 */;
-import Constants2 from "Constants" /* 5176 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9615 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import timing from "timing" /* 5154 */;
+import Constants2 from "Constants" /* 5178 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9630 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9631 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 let View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ PremiumTypes: metroRequire, PremiumUpsellTypes: metroImportDefault } = PremiumConstants);

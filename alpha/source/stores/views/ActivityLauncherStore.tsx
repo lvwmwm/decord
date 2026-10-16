@@ -1,14 +1,14 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 10895
+// Function ID: 10896
 // Name: ActivityLauncherStore
-// Dependencies: [10881, 5975, 1085, 2060, 584, 504, 2]
+// Dependencies: [10896, 5977, 1087, 2063, 584, 504, 2]
 
-// Module 10880 (ActivityLauncherStore)
+// Module 10895 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LocalActivityStore from "LocalActivityStore" /* 10881 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
-import Constants from "Constants" /* 1085 */;
+import LocalActivityStore from "LocalActivityStore" /* 10896 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f106437 = () => {
+  const f106742 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -48,8 +48,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self3 = this;
       const self4 = this;
-      const timeout = new applicationId(2060).Timeout();
-      timeout.start(tmp10, f106437);
+      const timeout = new applicationId(2063).Timeout();
+      timeout.start(tmp10, f106742);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -63,8 +63,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self = this;
       const self2 = this;
-      const timeout1 = new applicationId(2060).Timeout();
-      timeout1.start(num, f106437);
+      const timeout1 = new applicationId(2063).Timeout();
+      timeout1.start(num, f106742);
       closure_8[applicationId] = timeout1;
     }
   }

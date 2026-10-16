@@ -1,12 +1,12 @@
-// Module ID: 5268
-// Function ID: 5269
+// Module ID: 5270
+// Function ID: 5271
 // Name: Devices
-// Dependencies: [5198, 1365, 2014, 2]
+// Dependencies: [5200, 1367, 2016, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 5268 (Devices)
-import _modDef1365 from "module_1365" /* 1365 */;
-import Constants from "Constants" /* 5198 */;
+// Module 5270 (Devices)
+import _modDef1367 from "module_1367" /* 1367 */;
+import Constants from "Constants" /* 5200 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -56,7 +56,7 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
   });
   let isMatch = AUDIO_INPUT !== constants.VIDEO_INPUT && !importDefault;
   if (isMatch) {
-    const tmp5 = _modDef1365;
+    const tmp5 = _modDef1367;
     let family;
     if (tmp5 != null) {
       const os = tmp5.os;
@@ -68,7 +68,7 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
   }
   if (isMatch) {
     const obj = /^win/i;
-    isMatch = obj.test(_modDef1365.os.family);
+    isMatch = obj.test(_modDef1367.os.family);
   }
   if (isMatch) {
     const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
@@ -124,7 +124,7 @@ export const getAudioInputDevices = function getAudioInputDevices() {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = _modDef1365;
+        const tmp6 = _modDef1367;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -136,7 +136,7 @@ export const getAudioInputDevices = function getAudioInputDevices() {
       }
       if (isMatch) {
         const obj = /^win/i;
-        isMatch = obj.test(_modDef1365.os.family);
+        isMatch = obj.test(_modDef1367.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
@@ -195,7 +195,7 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = _modDef1365;
+        const tmp6 = _modDef1367;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -207,7 +207,7 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
       }
       if (isMatch) {
         const obj = /^win/i;
-        isMatch = obj.test(_modDef1365.os.family);
+        isMatch = obj.test(_modDef1367.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_OUTPUT, index: -1, name: "Default" };
@@ -269,7 +269,7 @@ export const getVideoInputDevices = function getVideoInputDevices() {
       if (isMatch) {
         const tmp4 = importDefault;
         const tmp5 = dependencyMap;
-        const tmp6 = _modDef1365;
+        const tmp6 = _modDef1367;
         const tmp7 = null;
         let family;
         if (tmp6 != null) {
@@ -284,7 +284,7 @@ export const getVideoInputDevices = function getVideoInputDevices() {
         let obj = /^win/i;
         const tmp9 = importDefault;
         const tmp10 = dependencyMap;
-        isMatch = obj.test(_modDef1365.os.family);
+        isMatch = obj.test(_modDef1367.os.family);
       }
       if (isMatch) {
         let obj2 = { id, type: VIDEO_INPUT, index: -1, name: "Default" };

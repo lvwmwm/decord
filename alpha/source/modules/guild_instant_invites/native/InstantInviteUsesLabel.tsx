@@ -1,9 +1,9 @@
-// Module ID: 10539
-// Function ID: 10540
+// Module ID: 10554
+// Function ID: 10555
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 558, 576, 5147, 2]
+// Dependencies: [19, 21, 558, 576, 5149, 2]
 
-// Module 10539 (InstantInviteUsesLabel)
+// Module 10554 (InstantInviteUsesLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5147);
+const Text_Text = tmp(5149);
 const jsxs = Fragment.jsxs;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteUsesLabel(arg0) {
   let maxUses;

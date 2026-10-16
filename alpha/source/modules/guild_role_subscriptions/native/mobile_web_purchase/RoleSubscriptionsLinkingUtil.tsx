@@ -1,12 +1,12 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7254
+// Function ID: 7255
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1085, 2072, 7253, 2000, 3, 7257, 2]
+// Dependencies: [5, 1087, 2075, 7255, 2002, 3, 7259, 2]
 
-// Module 7252 (RoleSubscriptionsLinkingUtil)
-import ChannelConstants from "ChannelConstants" /* 2072 */;
+// Module 7254 (RoleSubscriptionsLinkingUtil)
+import ChannelConstants from "ChannelConstants" /* 2075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

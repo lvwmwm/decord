@@ -1,12 +1,12 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7913
+// Function ID: 7914
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1085, 1295, 2]
+// Dependencies: [5, 1087, 1297, 2]
 // Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 7910 (AppStoreAgeSignalActionCreators)
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 7913 (AppStoreAgeSignalActionCreators)
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

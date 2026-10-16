@@ -1,32 +1,32 @@
-// Module ID: 15475
-// Function ID: 15476
+// Module ID: 15511
+// Function ID: 15512
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4817, 502, 2065, 5492, 1085, 15476, 3, 1102, 510, 4758, 4849, 10030, 7395, 11106, 13653, 2000, 2002, 584, 5968, 9537, 2]
+// Dependencies: [5, 32, 4820, 502, 2068, 5494, 1087, 15512, 3, 1104, 510, 4761, 4852, 10046, 7397, 11121, 13679, 2002, 2004, 584, 5970, 9553, 2]
 
-// Module 15475 (LocalMessageCacheManager)
+// Module 15511 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import DateUtils from "DateUtils" /* 4849 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
-import createMessageDefault from "createMessage" /* 10030 */;
+import Constants from "Constants" /* 1087 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import DateUtils from "DateUtils" /* 4852 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
+import createMessageDefault from "createMessage" /* 10046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4817 */;
+import MessageRecord from "MessageRecord" /* 4820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import MutexUtils from "MutexUtils" /* 15476 */;
-import LifecycleManager from "LifecycleManager" /* 2002 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import MutexUtils from "MutexUtils" /* 15512 */;
+import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11106);
+const UploadActionCreatorsDefault = tmp(11121);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();
@@ -53,8 +53,8 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = _modDef4758();
-    const tmp5 = _modDef4758(arg0);
+    const tmp4 = _modDef4761();
+    const tmp5 = _modDef4761(arg0);
     obj = DateUtils;
     return obj.isWithinInterval(tmp4, tmp5, arg1);
   } else {

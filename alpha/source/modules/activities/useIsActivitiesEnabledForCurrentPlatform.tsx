@@ -1,11 +1,11 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11166
+// Function ID: 11167
 // Name: useIsActivitiesEnabledForCurrentPlatform
-// Dependencies: [5354, 2]
+// Dependencies: [5356, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 11150 (useIsActivitiesEnabledForCurrentPlatform)
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5354 */;
+// Module 11166 (useIsActivitiesEnabledForCurrentPlatform)
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5356 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx");

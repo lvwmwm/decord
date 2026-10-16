@@ -1,12 +1,12 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16031
+// Function ID: 16032
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1087, 1102, 1090, 15999, 16000, 1091, 9306, 16001, 2]
+// Dependencies: [5, 32, 19, 1089, 1104, 1092, 16032, 16033, 1093, 9319, 16034, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 15998 (usePopularOrbShopProducts)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1102 */;
+// Module 16031 (usePopularOrbShopProducts)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

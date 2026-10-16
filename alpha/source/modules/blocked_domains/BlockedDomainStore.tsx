@@ -1,12 +1,12 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8718
+// Function ID: 8719
 // Name: BlockedDomainStore
-// Dependencies: [1085, 562, 1265, 2]
+// Dependencies: [1087, 562, 1267, 2]
 
-// Module 8710 (BlockedDomainStore)
+// Module 8718 (BlockedDomainStore)
 import shim from "shim" /* 562 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

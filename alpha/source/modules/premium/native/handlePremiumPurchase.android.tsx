@@ -1,19 +1,19 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10294
+// Function ID: 10295
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9621, 502, 4831, 7353, 1085, 1096, 1295, 10279, 5851, 10280, 1126, 4847, 5359, 7348, 504, 7386, 10281, 10282, 10271, 10288, 7160, 4840, 9620, 1265, 2]
+// Dependencies: [109, 5, 19, 9637, 502, 4834, 7355, 1087, 1098, 1297, 10295, 5853, 10296, 1128, 4850, 5361, 7350, 504, 7388, 10297, 10298, 10287, 10304, 7162, 4843, 9636, 1267, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10278 (handlePremiumPurchase)
-import Constants2 from "Constants" /* 1096 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9621 */;
+// Module 10294 (handlePremiumPurchase)
+import Constants2 from "Constants" /* 1098 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9637 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4831 */;
-import IAPStore from "IAPStore" /* 7353 */;
-import Constants from "Constants" /* 1085 */;
+import SubscriptionStore from "SubscriptionStore" /* 4834 */;
+import IAPStore from "IAPStore" /* 7355 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let currency, is_gift, offer_id, product_id;

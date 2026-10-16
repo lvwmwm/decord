@@ -1,11 +1,11 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15425
+// Function ID: 15426
 // Name: helpers
-// Dependencies: [1096, 2]
-// Exports: joiEnum, joiReqObj
+// Dependencies: [1098, 2]
+// Exports: joiReqObj
 
-// Module 15393 (helpers)
-import Constants from "Constants" /* 1096 */;
+// Module 15425 (helpers)
+import Constants from "Constants" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -18,7 +18,4 @@ export const RPCEvent = RPCEvents;
 export const joiReqObj = function joiReqObj(required) {
   const requiredResult = required.required();
   return requiredResult.unknown(true);
-};
-export const joiEnum = function joiEnum(ActivityPlatform) {
-  return Object.values(ActivityPlatform);
 };

@@ -1,12 +1,12 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 13996
+// Function ID: 13997
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1102, 8489, 558, 576, 2060, 2]
+// Dependencies: [32, 19, 1104, 8497, 558, 576, 2063, 2]
 // Exports: formatTime, formatTimeForA11yLabel
 
-// Module 13964 (useActivityTimer)
-import DurationsDefault from "Durations" /* 1102 */;
-import utils from "utils" /* 8489 */;
+// Module 13996 (useActivityTimer)
+import DurationsDefault from "Durations" /* 1104 */;
+import utils from "utils" /* 8497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const self = this;
     const self2 = this;
-    const interval = new tmp(2060).Interval();
+    const interval = new tmp(2063).Interval();
     cResult[0] = interval;
     first = interval;
   } else {
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   let first;
   importDefault = undefined;
   const end = start.end;
-  const interval = new first(2060).Interval();
+  const interval = new first(2063).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   [first1, importDefault] = closure_5(() => Date.now());
   const items = [first];

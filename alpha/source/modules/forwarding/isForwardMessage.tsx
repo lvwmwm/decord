@@ -1,11 +1,11 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7224
+// Function ID: 7225
 // Name: isForwardMessage
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 7222 (isForwardMessage)
-import Constants from "Constants" /* 1085 */;
+// Module 7224 (isForwardMessage)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const MessageReferenceTypes = Constants.MessageReferenceTypes;

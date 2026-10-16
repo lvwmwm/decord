@@ -1,24 +1,25 @@
-// Module ID: 2024
-// Function ID: 2025
+// Module ID: 2026
+// Function ID: 2027
 // Name: Constants
-// Dependencies: [1085, 1998, 2, 2025]
+// Dependencies: [1087, 2027, 2000, 2, 2028]
 // Exports: getAppIntentScheme
 
-// Module 2024 (Constants)
-import Constants from "Constants" /* 1085 */;
-import Server from "Server" /* 1998 */;
-import ActivityApplications from "ActivityApplications" /* 2025 */;
+// Module 2026 (Constants)
+import Constants from "Constants" /* 1087 */;
+import Server from "Server" /* 2000 */;
+import Constants2 from "Constants" /* 2027 */;
+import ActivityApplications from "ActivityApplications" /* 2028 */;
 import size from "module_2" /* 2 */;
 
 let items3;
 const ChannelTypes = Constants.ChannelTypes;
+const OrientationLockState = Constants2.OrientationLockState;
 const items = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"];
 const items1 = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
-const obj = { UNLOCKED: 1, [1]: "UNLOCKED", PORTRAIT: 2, [2]: "PORTRAIT", LANDSCAPE: 3, [3]: "LANDSCAPE" };
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
 const set = new Set(items2);
-const obj2 = { label_type: Server.EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
-const obj3 = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: obj.UNLOCKED, tablet_default_orientation_lock_state: obj.UNLOCKED, supported_platforms: items3, client_platform_config: { [Server.EmbeddedActivitySupportedPlatforms.WEB]: obj2, [Server.EmbeddedActivitySupportedPlatforms.IOS]: obj2, [Server.EmbeddedActivitySupportedPlatforms.ANDROID]: obj2 }, has_csp_exception: false, displays_advertisements: false, blocked_locales: [], supported_locales: [] };
+const obj = { label_type: Server.EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
+const obj2 = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: OrientationLockState.UNLOCKED, tablet_default_orientation_lock_state: OrientationLockState.UNLOCKED, supported_platforms: items3, client_platform_config: { [Server.EmbeddedActivitySupportedPlatforms.WEB]: obj, [Server.EmbeddedActivitySupportedPlatforms.IOS]: obj, [Server.EmbeddedActivitySupportedPlatforms.ANDROID]: obj }, has_csp_exception: false, displays_advertisements: false, blocked_locales: [], supported_locales: [] };
 items3 = [Server.EmbeddedActivitySupportedPlatforms.WEB];
 const items4 = [, , , ];
 ({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2], GUILD_SPACE: arr5[3] } = ChannelTypes);
@@ -81,11 +82,11 @@ export const SHARE_INTERACTION_APPS = items1;
 export const ActivityFeedbackReasons = { ADS: "ADS", FAILED_LOAD: "FAILED_LOAD", LAGGING: "LAGGING", CONFUSING: "CONFUSING", NOT_FUN: "NOT_FUN", OTHER: "OTHER" };
 export const ActivityIntent = { PLAY: 0, [0]: "PLAY", SPECTATE: 1, [1]: "SPECTATE" };
 export const ActivityTooltipName = { BETRAYAL_MARKETING_TOOLTIP: "BETRAYAL_MARKETING_TOOLTIP", FISHINGTON_MARKETING_TOOLTIP: "FISHINGTON_MARKETING_TOOLTIP", POKER_MARKETING_TOOLTIP: "POKER_MARKETING_TOOLTIP", YOUTUBE_MARKETING_TOOLTIP: "YOUTUBE_MARKETING_TOOLTIP" };
-export const OrientationLockState = obj;
+export { OrientationLockState };
 export const APPLICATIONS_WITH_ALLOWED_POPUPS = set;
 export const ActivityScreenOrientation = { UNHANDLED: -1, [-1]: "UNHANDLED", PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
 export const ActivityLayoutMode = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP", GRID: 2, [2]: "GRID" };
-export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj3;
+export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj2;
 export const SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = items4;
 export const SUPPORTED_ACTIVITIES_CHANNEL_TYPES = items5;
 export function getAppIntentScheme(arg0) {

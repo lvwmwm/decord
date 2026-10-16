@@ -1,14 +1,14 @@
-// Module ID: 8540
-// Function ID: 8541
+// Module ID: 8548
+// Function ID: 8549
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1390, 1085, 584, 1295, 5945, 5950, 1255, 569, 1102, 2]
+// Dependencies: [5, 1392, 1087, 584, 1297, 5947, 5952, 1257, 569, 1104, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8540 (BadgeDirectoryActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 8548 (BadgeDirectoryActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

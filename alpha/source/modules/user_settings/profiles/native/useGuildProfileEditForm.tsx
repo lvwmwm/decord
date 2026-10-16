@@ -1,22 +1,20 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15632
+// Function ID: 15633
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8503, 7537, 2087, 6179, 1390, 1085, 558, 576, 504, 12496, 2060, 10876, 15600, 10872, 6898, 15513, 8510, 5851, 1126, 2]
+// Dependencies: [109, 5, 19, 8511, 7539, 2090, 6181, 1392, 1087, 558, 576, 504, 12519, 2063, 10891, 15633, 10887, 6900, 15549, 5853, 1128, 8518, 2]
 
-// Module 15599 (useGuildProfileEditForm)
-import Constants from "Constants" /* 1085 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8503 */;
+// Module 15632 (useGuildProfileEditForm)
+import Constants from "Constants" /* 1087 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8511 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7537 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 6179 */;
-import UserStore_mod from "UserStore" /* 1390 */;
+import UserProfileStore from "UserProfileStore" /* 7539 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SortedGuildStore from "SortedGuildStore" /* 6181 */;
+import UserStore_mod from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let c0;
 
 let closure_3 = ["bannerOriginalMd5"];
 let closure_4 = ["bannerOriginalMd5"];
@@ -36,19 +34,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   let tmp8;
   let tmp9;
   const tmp = stateFromStores;
-  let tmp2 = pendingNickname;
+  const tmp2 = pendingNickname;
   let obj = stateFromStores(pendingNickname[10]);
   const cResult = obj.c(37);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    class G {
+    class F {
       constructor() {
         return UserStore.getCurrentUser();
       }
     }
     cResult[0] = items;
-    cResult[1] = G;
-    tmp5 = G;
+    cResult[1] = F;
+    tmp5 = F;
     tmp4 = items;
   } else {
     [tmp4, tmp5] = cResult;
@@ -57,23 +55,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [pendingAvatarDecoration, ];
-    class G {
+    class F {
       constructor() {
         return UserStore.getCurrentUser();
       }
     }
     items1[1] = pendingNameplate;
-    class F {
-      constructor() {
-        const selectedGuildId = pendingAvatarDecoration.selectedGuildId;
-        const obj = { errors: pendingAvatarDecoration.getErrors(selectedGuildId), selectedGuild: pendingNameplate.getGuild(selectedGuildId), formState: pendingAvatarDecoration.getFormState() };
-        const merged = Object.assign(pendingAvatarDecoration.getPendingChanges(selectedGuildId));
-        return obj;
-      }
-    }
+    const fn = function b() {
+      const selectedGuildId = pendingAvatarDecoration.selectedGuildId;
+      const obj = { errors: pendingAvatarDecoration.getErrors(selectedGuildId), selectedGuild: pendingNameplate.getGuild(selectedGuildId), formState: pendingAvatarDecoration.getFormState() };
+      const merged = Object.assign(pendingAvatarDecoration.getPendingChanges(selectedGuildId));
+      return obj;
+    };
     cResult[2] = items1;
-    cResult[3] = F;
-    tmp9 = F;
+    cResult[3] = fn;
+    tmp9 = fn;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -86,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   let pendingBanner = stateFromStoresObject.pendingBanner;
   let pendingBio = stateFromStoresObject.pendingBio;
   let pendingPronouns = stateFromStoresObject.pendingPronouns;
-  const pendingThemeColors = stateFromStoresObject.pendingThemeColors;
+  let pendingThemeColors = stateFromStoresObject.pendingThemeColors;
   const selectedGuild = stateFromStoresObject.selectedGuild;
   pendingAvatarDecoration = stateFromStoresObject.pendingAvatarDecoration;
   const pendingProfileEffect = stateFromStoresObject.pendingProfileEffect;
@@ -103,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   const guildAutomodProfileQuarantineErrors = useGuildAutomodProfileQuarantineErrors(id);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [pendingAvatarDecoration, ];
-    class G {
+    class F {
       constructor() {
         return UserStore.getCurrentUser();
       }
@@ -130,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
     let tmp24;
     let tmp30;
     const _Symbol = Symbol;
-    class G {
+    class F {
       constructor() {
         return UserStore.getCurrentUser();
       }
@@ -143,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
       }
     }
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function x() {
+      const fn2 = function x() {
         return function cleanup() {
           currentUser.cancel();
           const obj = stateFromStores(pendingNickname[14]);
@@ -151,12 +147,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         };
       };
       const items3 = [tmp23];
-      class G {
+      class F {
         constructor() {
           return UserStore.getCurrentUser();
         }
       }
-      cResult[10] = fn;
+      cResult[10] = fn2;
       class A {
         constructor() {
           const isSubmitting = pendingAvatarDecoration.getFormState() === constants.SUBMITTING || pendingProfileFrame.isSubmitting;
@@ -165,7 +161,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
       }
       cResult[11] = items3;
       tmp25 = items3;
-      tmp24 = fn;
+      tmp24 = fn2;
     } else {
       tmp24 = cResult[10];
       tmp25 = cResult[11];
@@ -176,7 +172,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const items4 = [pendingNameplate, ];
-      class G {
+      class F {
         constructor() {
           return UserStore.getCurrentUser();
         }
@@ -211,7 +207,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         }
       }
       cResult[13] = tmp29;
-      class G {
+      class F {
         constructor() {
           return UserStore.getCurrentUser();
         }
@@ -283,38 +279,38 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
       }
     }
     let closure_0 = pendingThemeColors(function*(arg0, value) {
+      let _false;
       let assetOrigin;
       let c3;
-      let closure_2;
       let guildMemberChangesForUpdateRequest;
-      let tmp2;
-      pendingBanner = tmp;
-      const tmp101 = closure_1_15;
-      if (!tmp101) {
-        if (null != c0) {
-          const obj4 = { pendingAvatar, pendingNickname: tmp2, pendingAvatarDecoration, pendingNameplate, pendingDisplayNameStyles };
-          const obj12 = _false(pendingNickname[16]);
+      pendingBio = tmp;
+      pendingBanner = tmp2;
+      const tmp113 = closure_1_15;
+      if (!tmp113) {
+        if (null != closure_0) {
+          const obj4 = { pendingAvatar, pendingNickname: _false, pendingAvatarDecoration, pendingNameplate, pendingDisplayNameStyles };
+          const obj12 = closure_0(pendingNickname[16]);
           guildMemberChangesForUpdateRequest = obj12.getGuildMemberChangesForUpdateRequest(obj4);
           const obj5 = { pendingBanner, pendingBio, pendingPronouns, pendingThemeColors, pendingProfileEffect, pendingProfileFrame };
           let id;
-          const getProfileChangesForUpdateRequest = _false(pendingNickname[16]).getProfileChangesForUpdateRequest;
-          const tmp112 = _false(pendingNickname[16]);
+          const getProfileChangesForUpdateRequest = closure_0(pendingNickname[16]).getProfileChangesForUpdateRequest;
+          const tmp124 = closure_0(pendingNickname[16]);
           if (user != null) {
             id = user.id;
           }
           pendingAvatar = getProfileChangesForUpdateRequest(obj5, id);
-          tmp2 = true;
+          _false = true;
           c3 = false;
           const _Object = Object;
           if (Object.keys(guildMemberChangesForUpdateRequest).length > 0) {
             let id1;
-            const saveGuildIdentityChanges = _false(pendingNickname[14]).saveGuildIdentityChanges;
-            const tmp84 = _false(pendingNickname[14]);
+            const saveGuildIdentityChanges = closure_0(pendingNickname[14]).saveGuildIdentityChanges;
+            const tmp92 = closure_0(pendingNickname[14]);
             if (user != null) {
               id1 = user.id;
             }
-            pendingBio = 1;
             pendingPronouns = 1;
+            pendingThemeColors = 1;
             const obj6 = { value: saveGuildIdentityChanges(id1, guildMemberChangesForUpdateRequest), done: false };
             return obj6;
           }
@@ -323,10 +319,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
       yield "IconComponent";
       if (1 === tmp5) {
         if (arg0 === 1) {
-          pendingPronouns = 3;
+          pendingThemeColors = 3;
           throw value;
         } else if (arg0 === 2) {
-          pendingPronouns = 3;
+          pendingThemeColors = 3;
           const obj7 = { value, done: true };
           return obj7;
         } else {
@@ -337,8 +333,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
             if (undefined !== pendingAvatar) {
               const obj8 = { isGuildProfile: true, avatarHash: body.avatar, avatarId: guildMemberChangesForUpdateRequest.avatarId, avatarAssetOrigin: assetOrigin };
               assetOrigin = undefined;
-              const trackUserAvatarUpdated = _false(pendingNickname[17]).trackUserAvatarUpdated;
-              const tmp33 = _false(pendingNickname[17]);
+              const trackUserAvatarUpdated = closure_0(pendingNickname[17]).trackUserAvatarUpdated;
+              const tmp41 = closure_0(pendingNickname[17]);
               if (pendingAvatar != null) {
                 assetOrigin = pendingAvatar.assetOrigin;
               }
@@ -353,30 +349,40 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
             }
             if (null != avatar) {
-              const obj11 = _false(pendingNickname[18]);
-              const result1 = obj11.showGenericGuildProfileUpdateFailureToast(pendingBio.body.avatar);
+              const showGenericGuildProfileUpdateFailureToast2 = closure_0(pendingNickname[18]).showGenericGuildProfileUpdateFailureToast;
+              const self3 = this;
+              const self4 = this;
+              const tmp107 = closure_0(pendingNickname[18]);
+              const aPIError = new closure_0(pendingNickname[19]).APIError(pendingBio);
+              const firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("avatar");
+              closure_0 = firstFieldErrorMessage;
+              if (firstFieldErrorMessage == null) {
+                const intl = closure_0(pendingNickname[20]).intl;
+                closure_0 = intl.string(closure_0(pendingNickname[20]).t.s35OuK);
+              }
+              const result1 = showGenericGuildProfileUpdateFailureToast2(closure_0);
               c3 = true;
             }
           }
-          let tmp40 = tmp2;
-          if (tmp40) {
+          let tmp48 = _false;
+          if (tmp48) {
             let ok;
             if (pendingBio != null) {
               ok = pendingBio.ok;
             }
-            c0 = ok;
+            pendingAvatar = ok;
             if (ok == null) {
-              c0 = false;
+              pendingAvatar = false;
             }
-            tmp40 = c0;
+            tmp48 = pendingAvatar;
           }
-          tmp2 = tmp40;
+          _false = tmp48;
         }
       } else if (arg0 === 1) {
-        pendingPronouns = 3;
+        pendingThemeColors = 3;
         throw value;
       } else if (arg0 === 2) {
-        pendingPronouns = 3;
+        pendingThemeColors = 3;
         const obj9 = { value, done: true };
         return obj9;
       } else {
@@ -388,40 +394,40 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         if (!ok1) {
           const self = this;
           const self2 = this;
-          const aPIError = new _false(pendingNickname[20]).APIError(pendingAvatarDecoration);
-          const firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
-          if (null != firstFieldErrorMessage) {
-            const obj2 = _false(pendingNickname[18]);
-            const result2 = obj2.showGenericGuildProfileUpdateFailureToast(firstFieldErrorMessage);
+          const aPIError1 = new closure_0(pendingNickname[19]).APIError(pendingAvatarDecoration);
+          const firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
+          if (null != firstFieldErrorMessage2) {
+            const obj2 = closure_0(pendingNickname[18]);
+            const result2 = obj2.showGenericGuildProfileUpdateFailureToast(firstFieldErrorMessage2);
             c3 = true;
           }
         }
-        let tmp21 = tmp2;
+        let tmp21 = _false;
         if (tmp21) {
           let ok2;
           if (pendingAvatarDecoration != null) {
             ok2 = pendingAvatarDecoration.ok;
           }
-          pendingAvatar = ok2;
+          _false = ok2;
           if (ok2 == null) {
-            pendingAvatar = false;
+            _false = false;
           }
-          tmp21 = pendingAvatar;
+          tmp21 = _false;
         }
-        tmp2 = tmp21;
+        _false = tmp21;
       }
-      const tmp52 = tmp2 || c3;
-      if (!tmp52) {
-        const showGenericGuildProfileUpdateFailureToast = _false(pendingNickname[18]).showGenericGuildProfileUpdateFailureToast;
-        const tmp56 = _false(pendingNickname[18]);
-        const intl = _false(pendingNickname[21]).intl;
-        const result3 = showGenericGuildProfileUpdateFailureToast(intl.string(_false(pendingNickname[21]).t.s35OuK));
+      const tmp60 = _false || c3;
+      if (!tmp60) {
+        const showGenericGuildProfileUpdateFailureToast = closure_0(pendingNickname[18]).showGenericGuildProfileUpdateFailureToast;
+        const tmp64 = closure_0(pendingNickname[18]);
+        const intl2 = closure_0(pendingNickname[20]).intl;
+        const result3 = showGenericGuildProfileUpdateFailureToast(intl2.string(closure_0(pendingNickname[20]).t.s35OuK));
       }
-      const tmp63 = tmp2;
-      if (tmp63) {
+      const tmp71 = _false;
+      if (tmp71) {
         currentUser.delay();
       }
-      return tmp2;
+      return _false;
     });
     cResult[15] = tmp34;
     cResult[16] = pendingAvatar;
@@ -472,7 +478,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   let pendingNameplate;
   let pendingNickname;
   let stateFromStores;
-  const tmp = stateFromStores;
+  let tmp = stateFromStores;
   const tmp2 = pendingNickname;
   let obj = stateFromStores(pendingNickname[11]);
   const items = [memo];
@@ -490,7 +496,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   const pendingAvatar = stateFromStoresObject.pendingAvatar;
   pendingNickname = stateFromStoresObject.pendingNickname;
   const pendingBanner = stateFromStoresObject.pendingBanner;
-  let pendingBio = stateFromStoresObject.pendingBio;
+  const pendingBio = stateFromStoresObject.pendingBio;
   const pendingPronouns = stateFromStoresObject.pendingPronouns;
   const pendingThemeColors = stateFromStoresObject.pendingThemeColors;
   let selectedGuild = stateFromStoresObject.selectedGuild;
@@ -566,38 +572,37 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
   items5[12] = pendingProfileFrame;
   let id1;
   const tmp19 = pendingThemeColors(function*(arg0, value) {
-    let _false;
     let assetOrigin;
     let c3;
+    let closure_0;
     let guildMemberChangesForUpdateRequest;
-    let v3;
-    value = tmp2;
-    const tmp101 = closure_15;
-    if (!tmp101) {
+    let v2;
+    const tmp113 = closure_15;
+    if (!tmp113) {
       if (null != stateFromStores) {
         const obj4 = { pendingAvatar, pendingNickname, pendingAvatarDecoration, pendingNameplate, pendingDisplayNameStyles };
-        const obj12 = _false(value[16]);
+        const obj12 = stateFromStores(value[16]);
         guildMemberChangesForUpdateRequest = obj12.getGuildMemberChangesForUpdateRequest(obj4);
         const obj5 = { pendingBanner, pendingBio, pendingPronouns, pendingThemeColors, pendingProfileEffect, pendingProfileFrame };
         let id;
-        const getProfileChangesForUpdateRequest = _false(value[16]).getProfileChangesForUpdateRequest;
-        const tmp112 = _false(value[16]);
+        const getProfileChangesForUpdateRequest = stateFromStores(value[16]).getProfileChangesForUpdateRequest;
+        const tmp124 = stateFromStores(value[16]);
         if (selectedGuild != null) {
           id = selectedGuild.id;
         }
-        const _false2 = getProfileChangesForUpdateRequest(obj5, id);
+        const _false = getProfileChangesForUpdateRequest(obj5, id);
         value = true;
         c3 = false;
         const _Object = Object;
         if (Object.keys(guildMemberChangesForUpdateRequest).length > 0) {
           let id1;
-          const saveGuildIdentityChanges = _false(value[14]).saveGuildIdentityChanges;
-          const tmp84 = _false(value[14]);
+          const saveGuildIdentityChanges = stateFromStores(value[14]).saveGuildIdentityChanges;
+          const tmp92 = stateFromStores(value[14]);
           if (selectedGuild != null) {
             id1 = selectedGuild.id;
           }
-          let c4 = 1;
           let c5 = 1;
+          let c6 = 1;
           const obj6 = { value: saveGuildIdentityChanges(id1, guildMemberChangesForUpdateRequest), done: false };
           return obj6;
         }
@@ -606,60 +611,70 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
     yield "IconComponent";
     if (1 === tmp5) {
       if (arg0 === 1) {
-        c5 = 3;
+        c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 3;
+        c6 = 3;
         const obj7 = { value, done: true };
         return obj7;
       } else {
         let body;
-        pendingBio = value;
-        if (pendingBio.ok) {
-          body = pendingBio.body;
-          if (undefined !== closure_131_1) {
+        const tmp = value;
+        if (tmp.ok) {
+          body = tmp.body;
+          if (undefined !== closure_132_1) {
             const obj8 = { isGuildProfile: true, avatarHash: body.avatar, avatarId: guildMemberChangesForUpdateRequest.avatarId, avatarAssetOrigin: assetOrigin };
             assetOrigin = undefined;
-            const trackUserAvatarUpdated = _false(value[17]).trackUserAvatarUpdated;
-            const tmp33 = _false(value[17]);
-            if (closure_131_1 != null) {
-              assetOrigin = closure_131_1.assetOrigin;
+            const trackUserAvatarUpdated = stateFromStores(value[17]).trackUserAvatarUpdated;
+            const tmp41 = stateFromStores(value[17]);
+            if (closure_132_1 != null) {
+              assetOrigin = closure_132_1.assetOrigin;
             }
             const result = trackUserAvatarUpdated(obj8);
           }
         } else {
           let avatar;
-          if (pendingBio != null) {
-            body = pendingBio.body;
+          if (tmp != null) {
+            body = tmp.body;
             if (body != null) {
               avatar = body.avatar;
             }
           }
           if (null != avatar) {
-            const obj11 = _false(value[18]);
-            const result1 = obj11.showGenericGuildProfileUpdateFailureToast(pendingBio.body.avatar);
+            const showGenericGuildProfileUpdateFailureToast2 = stateFromStores(value[18]).showGenericGuildProfileUpdateFailureToast;
+            const self3 = this;
+            const self4 = this;
+            const tmp107 = stateFromStores(value[18]);
+            const aPIError = new stateFromStores(value[19]).APIError(tmp);
+            const firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("avatar");
+            stateFromStores = firstFieldErrorMessage;
+            if (firstFieldErrorMessage == null) {
+              const intl = stateFromStores(value[20]).intl;
+              stateFromStores = intl.string(stateFromStores(value[20]).t.s35OuK);
+            }
+            const result1 = showGenericGuildProfileUpdateFailureToast2(stateFromStores);
             c3 = true;
           }
         }
-        let tmp40 = value;
-        if (tmp40) {
+        let tmp48 = value;
+        if (tmp48) {
           let ok;
-          if (pendingBio != null) {
-            ok = pendingBio.ok;
+          if (tmp != null) {
+            ok = tmp.ok;
           }
-          _false = ok;
+          let c1 = ok;
           if (ok == null) {
-            _false = false;
+            c1 = false;
           }
-          tmp40 = _false;
+          tmp48 = c1;
         }
-        value = tmp40;
+        value = tmp48;
       }
     } else if (arg0 === 1) {
-      c5 = 3;
+      c6 = 3;
       throw value;
     } else if (arg0 === 2) {
-      c5 = 3;
+      c6 = 3;
       const obj9 = { value, done: true };
       return obj9;
     } else {
@@ -671,11 +686,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
       if (!ok1) {
         const self = this;
         const self2 = this;
-        const aPIError = new _false(value[20]).APIError(pendingAvatarDecoration);
-        const firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
-        if (null != firstFieldErrorMessage) {
-          const obj2 = _false(value[18]);
-          const result2 = obj2.showGenericGuildProfileUpdateFailureToast(firstFieldErrorMessage);
+        const aPIError1 = new stateFromStores(value[19]).APIError(pendingAvatarDecoration);
+        const firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
+        if (null != firstFieldErrorMessage2) {
+          const obj2 = stateFromStores(value[18]);
+          const result2 = obj2.showGenericGuildProfileUpdateFailureToast(firstFieldErrorMessage2);
           c3 = true;
         }
       }
@@ -685,24 +700,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         if (pendingAvatarDecoration != null) {
           ok2 = pendingAvatarDecoration.ok;
         }
-        let c1 = ok2;
+        value = ok2;
         if (ok2 == null) {
-          c1 = false;
+          value = false;
         }
-        tmp21 = c1;
+        tmp21 = value;
       }
       value = tmp21;
     }
-    const tmp52 = value || c3;
-    if (!tmp52) {
-      const showGenericGuildProfileUpdateFailureToast = _false(value[18]).showGenericGuildProfileUpdateFailureToast;
-      const tmp56 = _false(value[18]);
-      const intl = _false(value[21]).intl;
-      const result3 = showGenericGuildProfileUpdateFailureToast(intl.string(_false(value[21]).t.s35OuK));
+    const tmp60 = value || c3;
+    if (!tmp60) {
+      const showGenericGuildProfileUpdateFailureToast = stateFromStores(value[18]).showGenericGuildProfileUpdateFailureToast;
+      const tmp64 = stateFromStores(value[18]);
+      const intl2 = stateFromStores(value[20]).intl;
+      const result3 = showGenericGuildProfileUpdateFailureToast(intl2.string(stateFromStores(value[20]).t.s35OuK));
     }
-    const tmp63 = value;
-    if (tmp63) {
-      closure_131_13.delay();
+    const tmp71 = value;
+    if (tmp71) {
+      closure_132_13.delay();
     }
     return value;
   });

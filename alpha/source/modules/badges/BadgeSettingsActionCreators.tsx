@@ -1,11 +1,11 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15550
+// Function ID: 15551
 // Name: BadgeSettingsActionCreators
-// Dependencies: [5, 1085, 1295, 1255, 2]
+// Dependencies: [5, 1087, 1297, 1257, 2]
 // Exports: updateBadgeSettings
 
-// Module 15514 (BadgeSettingsActionCreators)
-import Constants from "Constants" /* 1085 */;
+// Module 15550 (BadgeSettingsActionCreators)
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

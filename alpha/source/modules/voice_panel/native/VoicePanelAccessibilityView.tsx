@@ -1,20 +1,20 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18117
+// Function ID: 18118
 // Name: VoicePanelAccessibilityView
-// Dependencies: [109, 19, 18077, 21, 5419, 558, 576, 18078, 2]
+// Dependencies: [109, 19, 18112, 21, 5421, 558, 576, 18113, 2]
 
-// Module 18082 (VoicePanelAccessibilityView)
+// Module 18117 (VoicePanelAccessibilityView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AccessibilityView from "AccessibilityView" /* 5419 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18077 */;
+import AccessibilityView from "AccessibilityView" /* 5421 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18112 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const VoicePanelPIPStateContext = tmp(18078);
+const VoicePanelPIPStateContext = tmp(18113);
 let closure_2 = ["style", "pointerEvents", "nativeID", "accessibilityViewIsModal", "onAccessibilityEscape"];
 const VoicePanelPIPModes = VoicePanelPIPConstants.VoicePanelPIPModes;
 const jsx = Fragment.jsx;

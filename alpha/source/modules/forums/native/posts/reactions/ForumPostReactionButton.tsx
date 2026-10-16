@@ -1,28 +1,28 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10701
+// Function ID: 10702
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 10687, 1126, 5147, 6405, 8118, 9605, 10684, 2041, 9806, 1103, 1415, 4818, 7041, 10703, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 10702, 1128, 5149, 6407, 8121, 9621, 10699, 2044, 9822, 1105, 1417, 4821, 7043, 10718, 2]
 
-// Module 10686 (ForumPostReactionButton)
+// Module 10701 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import intl2 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ReactionUtils from "ReactionUtils" /* 4818 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Pressables from "Pressables" /* 6405 */;
-import EmojiDefault from "Emoji" /* 7041 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8118 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9605 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 9806 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10684 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10687 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10703 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import intl2 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import ReactionUtils from "ReactionUtils" /* 4821 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Pressables from "Pressables" /* 6407 */;
+import EmojiDefault from "Emoji" /* 7043 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8121 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9621 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 9822 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10699 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10702 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10718 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const UserSettings = tmp(2041);
+const UserSettings = tmp(2044);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;
@@ -54,7 +54,7 @@ class BurstReactionButton {
     let str = "";
     if (null != emojiColorPalette) {
       let backgroundColor;
-      const hex2rgb = tmp(1103).hex2rgb;
+      const hex2rgb = tmp(1105).hex2rgb;
       utils_ColorUtils;
       if (emojiColorPalette != null) {
         backgroundColor = emojiColorPalette.backgroundColor;
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdditionalRe
   }
   const onTapReactionCount = useNativeForumPostHandlersDefault(tmp5).onTapReactionCount;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.N8hbZB);
     cResult[2] = stringResult;
     tmp6 = stringResult;
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddReactionB
   const cResult = obj.c(13);
   ({ threadId, containerStyle, reactionType } = arg0);
   if (undefined === reactionType) {
-    reactionType = tmp(8118).ReactionTypes.NORMAL;
+    reactionType = tmp(8121).ReactionTypes.NORMAL;
   }
   const tmp4 = closure_7();
   if (cResult[0] === reactionType) {
@@ -215,7 +215,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddReactionB
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl2.t.lfIHs4);
         cResult[6] = stringResult;
         tmp10 = stringResult;

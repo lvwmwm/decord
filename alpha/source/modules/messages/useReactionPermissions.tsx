@@ -1,15 +1,15 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10699
+// Function ID: 10700
 // Name: useReactionPermissions
-// Dependencies: [32, 4807, 2125, 6107, 4806, 1085, 558, 576, 504, 4812, 8212, 7190, 10685, 2]
+// Dependencies: [32, 4810, 2128, 6109, 4809, 1087, 558, 576, 504, 4815, 8215, 7192, 10700, 2]
 
-// Module 10684 (useReactionPermissions)
-import Constants from "Constants" /* 1085 */;
+// Module 10699 (useReactionPermissions)
+import Constants from "Constants" /* 1087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4807 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6107 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
+import LurkingStore from "LurkingStore" /* 4810 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6109 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

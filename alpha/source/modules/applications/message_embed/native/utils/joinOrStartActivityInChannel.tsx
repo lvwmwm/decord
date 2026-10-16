@@ -1,14 +1,14 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12717
+// Function ID: 12718
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2064, 2065, 2116, 11128, 11157, 2]
+// Dependencies: [5, 2067, 2068, 2119, 11144, 11173, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 12692 (joinOrStartActivityInChannel)
+// Module 12717 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 let analyticsLocations, applicationId, channelId, customId, guild_id, length, referrerId;

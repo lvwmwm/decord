@@ -1,11 +1,11 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8233
+// Function ID: 8234
 // Name: ApplicationSubscriptionSystemMessageUtils
-// Dependencies: [1126, 2]
+// Dependencies: [1128, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8230 (ApplicationSubscriptionSystemMessageUtils)
-import intl3 from "intl" /* 1126 */;
+// Module 8233 (ApplicationSubscriptionSystemMessageUtils)
+import intl3 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11279
+// Function ID: 11280
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 11260, 5088, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 11280, 5091, 2]
 
-// Module 11259 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 11279 (EmbeddedActivityBackgroundImageWithOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11260 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11280 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp8;
-const FastImageDefault = tmp8(5088);
+const FastImageDefault = tmp8(5091);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { overlay: obj2 };

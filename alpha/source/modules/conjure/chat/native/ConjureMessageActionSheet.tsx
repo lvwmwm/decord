@@ -1,16 +1,16 @@
-// Module ID: 12073
-// Function ID: 12074
+// Module ID: 12097
+// Function ID: 12098
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 8522, 5115, 558, 576, 7105, 4865, 1126, 5101, 7114, 3862, 12074, 6428, 11573, 11995, 12015, 7118, 2]
+// Dependencies: [19, 21, 8530, 5118, 558, 576, 7107, 4868, 1128, 5104, 7116, 3865, 12098, 6430, 11596, 12019, 12039, 7120, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
-// Module 12073 (ConjureMessageActionSheet)
-import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
-import CopyIcon from "CopyIcon" /* 5101 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
-import ClipboardUtils from "ClipboardUtils" /* 7105 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+// Module 12097 (ConjureMessageActionSheet)
+import intl6 from "intl" /* 1128 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import CopyIcon from "CopyIcon" /* 5104 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
+import ClipboardUtils from "ClipboardUtils" /* 7107 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

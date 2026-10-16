@@ -1,10 +1,10 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7505
+// Function ID: 7506
 // Name: CollectiblesMarketingBadgeRecord
-// Dependencies: [7504, 2]
+// Dependencies: [7506, 2]
 
-// Module 7503 (CollectiblesMarketingBadgeRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7504 */;
+// Module 7505 (CollectiblesMarketingBadgeRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7506 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingBadgeRecord {

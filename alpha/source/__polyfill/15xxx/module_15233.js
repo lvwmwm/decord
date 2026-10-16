@@ -1,21 +1,30 @@
 // Module ID: 15233
 // Function ID: 15234
-// Dependencies: [15224, 15234, 15232, 15235]
+// Dependencies: [15144, 15234]
+// Exports: getSupportedUnits
 
 // Module 15233
-import _mod15224 from "module_15224" /* 15224 */;
-import _mod15232 from "module_15232" /* 15232 */;
-import _mod15234 from "module_15234" /* 15234 */;
+const require = globalThis.__r;
+let _require;
 
-let tmp;
-const _mod15235 = tmp(15235);
 
-export default _mod15224 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod15234("Symbol");
-  let tmpResultResult = _mod15232(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod15235;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
-  }
-  return tmpResultResult;
-});
+export const getSupportedUnits = function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_15234").units;
+  return units.filter((item) => {
+    function isSupported(unit, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { style: "unit", unit };
+        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+        return memoizedNumberFormat.resolvedOptions().unit === unit;
+      } catch (err) {
+        return false;
+      }
+    }
+    return isSupported(item, locale);
+  });
+};

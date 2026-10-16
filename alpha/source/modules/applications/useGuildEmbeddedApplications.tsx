@@ -1,16 +1,16 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8837
+// Function ID: 8838
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5500, 1085, 504, 1102, 1386, 6284, 558, 576, 2]
+// Dependencies: [5, 19, 5502, 1087, 504, 1104, 1388, 6286, 558, 576, 2]
 
-// Module 8829 (useGuildEmbeddedApplications)
+// Module 8837 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6284 */;
+import Constants from "Constants" /* 1087 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6286 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5500 */;
+import ApplicationStore from "ApplicationStore" /* 5502 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

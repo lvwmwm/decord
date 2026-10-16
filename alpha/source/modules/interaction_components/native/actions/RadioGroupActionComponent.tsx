@@ -1,11 +1,11 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18460
+// Function ID: 18461
 // Name: RadioGroupActionComponent
-// Dependencies: [19, 21, 558, 576, 8467, 4906, 5438, 5442, 6482, 6483, 6400, 6428, 1126, 2]
+// Dependencies: [19, 21, 558, 576, 8475, 4909, 5440, 5444, 6484, 6485, 6402, 6430, 1128, 2]
 
-// Module 18418 (RadioGroupActionComponent)
-import spring from "spring" /* 5438 */;
-import springPresets from "springPresets" /* 5442 */;
+// Module 18460 (RadioGroupActionComponent)
+import spring from "spring" /* 5440 */;
+import springPresets from "springPresets" /* 5444 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

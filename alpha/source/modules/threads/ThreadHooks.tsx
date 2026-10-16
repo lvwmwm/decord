@@ -1,31 +1,31 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7192
+// Function ID: 7193
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5071, 2069, 502, 2065, 4806, 6250, 7191, 1085, 558, 576, 1097, 504, 6302, 11, 12, 7198, 7196, 7199, 7200, 6124, 6140, 2]
+// Dependencies: [32, 19, 5074, 2072, 502, 2068, 4809, 6252, 7193, 1087, 558, 576, 1099, 504, 6304, 11, 12, 7200, 7198, 7201, 7202, 6126, 6142, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
 
-// Module 7190 (ThreadHooks)
+// Module 7192 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6124 */;
-import AgeGateUtils from "AgeGateUtils" /* 6140 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6302 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7196 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7198 */;
-import useIsRemoteDefault from "useIsRemote" /* 7199 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7200 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6126 */;
+import AgeGateUtils from "AgeGateUtils" /* 6142 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6304 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7198 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7200 */;
+import useIsRemoteDefault from "useIsRemote" /* 7201 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5071 */;
+import createExperiment from "createExperiment" /* 5074 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6250 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7191 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6252 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7193 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

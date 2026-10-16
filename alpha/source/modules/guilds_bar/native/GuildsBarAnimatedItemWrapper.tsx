@@ -1,20 +1,20 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17366
+// Function ID: 17367
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5448, 17320, 21, 5151, 587, 558, 576, 4874, 4883, 5438, 4906, 6982, 17333, 17040, 17043, 1126, 4884, 17334, 6382, 9234, 2]
+// Dependencies: [19, 5450, 17354, 21, 5153, 587, 558, 576, 4877, 4886, 5440, 4909, 6984, 17367, 17074, 17077, 1128, 4887, 17368, 6384, 9247, 2]
 
-// Module 17332 (GuildsBarAnimatedItemWrapper)
+// Module 17366 (GuildsBarAnimatedItemWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4883 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
-import spring from "spring" /* 5438 */;
-import styleConstants from "styleConstants" /* 5448 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 4886 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
+import spring from "spring" /* 5440 */;
+import styleConstants from "styleConstants" /* 5450 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17320 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17354 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const useToken = tmp(4874);
+const useToken = tmp(4877);
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   const obj = { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp };
   return metroImportAll(closure_18, obj, arg0);
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                     obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                     obj.animations = obj1;
                     obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                    obj.callback = function callback() { /* body not rendered: F149935 */ };
+                    obj.callback = function callback() { /* body not rendered: F150405 */ };
                     return obj;
                   }
                 }
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                   obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                   obj.animations = obj1;
                   obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                  obj.callback = function callback() { /* body not rendered: F149935 */ };
+                  obj.callback = function callback() { /* body not rendered: F150405 */ };
                   return obj;
                 }
               }

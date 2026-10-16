@@ -1,18 +1,18 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 8104
+// Function ID: 8105
 // Name: InteractionStore
-// Dependencies: [32, 502, 2065, 1102, 5503, 5502, 7395, 504, 584, 2]
+// Dependencies: [32, 502, 2068, 1104, 5505, 5504, 7397, 504, 584, 2]
 
-// Module 8101 (InteractionStore)
+// Module 8104 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import InteractionTypes from "InteractionTypes" /* 5502 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5503 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import InteractionTypes from "InteractionTypes" /* 5504 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5505 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_12, closure_8, closure_9;
@@ -140,7 +140,7 @@ obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(5503).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(5505).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -206,7 +206,7 @@ obj = {
           delete closure_12[nonce];
         }
       } else {
-        obj = { state: tmp7(5503).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(5505).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }
@@ -258,7 +258,7 @@ obj = {
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(applicationId) {
     const nonce = applicationId.nonce;
-    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "format" };
+    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "formatToPlainString" };
     if (null != nonce) {
       if (null != closure_8[nonce]) {
         const onSuccess = tmp10.onSuccess;

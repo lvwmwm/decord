@@ -1,19 +1,19 @@
-// Module ID: 12654
-// Function ID: 12655
+// Module ID: 12677
+// Function ID: 12678
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 5140, 5497, 21, 5151, 558, 576, 504, 1382, 4898, 2]
+// Dependencies: [19, 17, 5143, 5499, 21, 5153, 558, 576, 504, 1384, 4901, 2]
 
-// Module 12654 (CheckpointKnickKnacks)
+// Module 12677 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import _mod4898 from "module_4898" /* 4898 */;
-import CheckpointConstants from "CheckpointConstants" /* 5497 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import _mod4901 from "module_4901" /* 4901 */;
+import CheckpointConstants from "CheckpointConstants" /* 5499 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import createStyles from "createStyles" /* 5151 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
         tmp12 = cResult[6];
       }
       if (cResult[7] !== tmp9) {
-        const tmp15 = jsx(_mod4898.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
+        const tmp15 = jsx(_mod4901.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
         cResult[7] = tmp9;
         cResult[8] = tmp15;
         tmp13 = tmp15;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const tmp4 = closure_7();
   const memo = react.useMemo(() => ({ iconColor: CHECKPOINT_PRIMARY, reducedMotion: stateFromStores }), items1);
   let tmp6 = null;
-  const obj2 = stateFromStores(1382);
+  const obj2 = stateFromStores(1384);
   if (!obj2.isAndroid()) {
     const items2 = [tmp4.rive, style];
     tmp6 = <View style={items2}>{null}</View>;

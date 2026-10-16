@@ -1,19 +1,19 @@
-// Module ID: 18549
-// Function ID: 18550
+// Module ID: 18591
+// Function ID: 18592
 // Name: NotificationSettingsModalStore
-// Dependencies: [2069, 7021, 4804, 5076, 2087, 6182, 1085, 504, 7022, 584, 2]
+// Dependencies: [2072, 7023, 4807, 5079, 2090, 6184, 1087, 504, 7024, 584, 2]
 
-// Module 18549 (NotificationSettingsModalStore)
+// Module 18591 (NotificationSettingsModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7022 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7021 */;
-import GuildChannelStore from "GuildChannelStore" /* 4804 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7024 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7023 */;
+import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5079 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ChannelRecord.isGuildSelectableChannelType;

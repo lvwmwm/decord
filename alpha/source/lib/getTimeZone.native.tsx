@@ -1,11 +1,11 @@
-// Module ID: 18293
-// Function ID: 18294
+// Module ID: 18335
+// Function ID: 18336
 // Name: getTimeZone
-// Dependencies: [5127, 2]
+// Dependencies: [5130, 2]
 // Exports: default
 
-// Module 18293 (getTimeZone)
-import DeviceUtils from "DeviceUtils" /* 5127 */;
+// Module 18335 (getTimeZone)
+import DeviceUtils from "DeviceUtils" /* 5130 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/getTimeZone.native.tsx");

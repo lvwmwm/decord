@@ -1,10 +1,10 @@
 // Module ID: 2767
 // Function ID: 2768
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2767 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/activity_privacy", scales: [1], hash: "825ff48c76e3f696fe9358c6ec512858", name: "ActivityPrivacy.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hY3Rpdml0eV9wcml2YWN5", scales: [1], hash: "2491551e11890ee8fb08482ac4da6079", name: "vi.messages.2491551e11890ee8fb08482ac4da6079.compiled.messages", type: "jsona" });

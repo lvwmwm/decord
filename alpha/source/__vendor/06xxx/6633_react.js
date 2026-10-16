@@ -1,17 +1,17 @@
 // Module ID: 6633
 // Function ID: 6634
 // Name: react
-// Dependencies: [19]
-// Exports: useInterceptingDetectorContext
+// Dependencies: [19, 6562]
+// Exports: useDetectorAttachmentGuard
 
 // Module 6633 (react)
 import react from "react" /* 19 */;
 
-const use = react.use;
-const context = react.createContext(null);
+let useEffect;
+let useRef;
+({ useEffect, useRef } = react);
+new Map();
 
-export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
-export const InterceptingDetectorContext = context;
-export const useInterceptingDetectorContext = function useInterceptingDetectorContext() {
-  return use(context);
-};
+export function useDetectorAttachmentGuard(tmp8Result5) {
+
+}

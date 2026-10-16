@@ -1,27 +1,27 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13757
+// Function ID: 13758
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5151, 587, 9450, 9321, 13732, 558, 576, 11, 9448, 5097, 1126, 9452, 8440, 11528, 5110, 8676, 11548, 10642, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 9466, 9334, 13758, 558, 576, 11, 9464, 5100, 1128, 9468, 8448, 11549, 5113, 8684, 11571, 10657, 5149, 2]
 
-// Module 13731 (ApplicationDetails)
+// Module 13757 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import LinkIcon from "LinkIcon" /* 5097 */;
-import LockIcon from "LockIcon" /* 8440 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8676 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9321 */;
-import scopes from "scopes" /* 9448 */;
-import disclosures from "disclosures" /* 9450 */;
-import Utils from "Utils" /* 9452 */;
-import HammerIcon from "HammerIcon" /* 11528 */;
-import RobotIcon from "RobotIcon" /* 11548 */;
-import EmbedIcon from "EmbedIcon" /* 13732 */;
+import intl5 from "intl" /* 1128 */;
+import LinkIcon from "LinkIcon" /* 5100 */;
+import LockIcon from "LockIcon" /* 8448 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8684 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9334 */;
+import scopes from "scopes" /* 9464 */;
+import disclosures from "disclosures" /* 9466 */;
+import Utils from "Utils" /* 9468 */;
+import HammerIcon from "HammerIcon" /* 11549 */;
+import RobotIcon from "RobotIcon" /* 11571 */;
+import EmbedIcon from "EmbedIcon" /* 13758 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,9 +30,9 @@ let hasOwnProperty;
 let size;
 let tmp;
 let tmp4;
-const ClockIcon2 = tmp4(5110);
-const Text_Text = tmp(5147);
-const ShieldIcon = tmp4(10642);
+const ClockIcon2 = tmp4(5113);
+const Text_Text = tmp(5149);
+const ShieldIcon = tmp4(10657);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
@@ -97,7 +97,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
                     tmp44 = cResult[35];
                   }
                   if (cResult[36] !== tmp7) {
-                    let obj3 = { iconComponent: tmp(10642).ShieldIcon, text: tmp7 };
+                    let obj3 = { iconComponent: tmp(10657).ShieldIcon, text: tmp7 };
                     const tmp52 = React3(closure_7, obj3);
                     cResult[36] = tmp7;
                     cResult[37] = tmp52;
@@ -181,7 +181,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
                   tmp46 = null;
                   if (null != approximateGuildCount) {
                     const obj5 = { iconComponent: RobotIcon.RobotIcon, text: intl4.formatToPlainString(intl5.t.UHGHSP, obj6) };
-                    intl4 = tmp(1126).intl;
+                    intl4 = tmp(1128).intl;
                     obj6 = { guildCount: approximateGuildCount };
                     tmp46 = React3(closure_7, obj5);
                   }
@@ -250,7 +250,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
         let tmp35 = null;
         if (null != connectedAccount) {
           const obj9 = { iconComponent: HammerIcon.HammerIcon, text: intl2.string(intl5.t["8qui3M"]) };
-          intl2 = tmp(1126).intl;
+          intl2 = tmp(1128).intl;
           tmp35 = React3(closure_7, obj9);
         }
         cResult[27] = connectedAccount;
@@ -259,8 +259,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
       } else {
         tmp34 = cResult[28];
       }
-      const ClockIcon = tmp(5110).ClockIcon;
-      const intl3 = tmp(1126).intl;
+      const ClockIcon = tmp(5113).ClockIcon;
+      const intl3 = tmp(1128).intl;
       const obj10 = { date };
       const formatToPlainStringResult = intl3.formatToPlainString(intl5.t["+1bjc8"], obj10);
       cResult[0] = application;
@@ -310,7 +310,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
   let tmp25 = null;
   if (null != joined) {
     const obj11 = { iconComponent: LinkIcon.LinkIcon, text: intl.format(intl5.t["5k5OKD"], obj12) };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     obj12 = { origin: joined };
     tmp25 = React3(closure_7, obj11);
   }

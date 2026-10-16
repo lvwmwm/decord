@@ -1,19 +1,19 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8314
+// Function ID: 8315
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8310, 7393, 7389, 1392, 1085, 1382, 584, 1265, 1295, 8311, 1255, 4994, 2049, 2046, 2]
+// Dependencies: [5, 8315, 7395, 7391, 1394, 1087, 1384, 584, 1267, 1297, 8316, 1257, 4997, 2052, 2049, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8309 (UserOfferActionCreators)
+// Module 8314 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8310 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7393 */;
-import UserOfferStore from "UserOfferStore" /* 7389 */;
-import Constants from "Constants" /* 1085 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8315 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7395 */;
+import UserOfferStore from "UserOfferStore" /* 7391 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -422,7 +422,7 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1295).HTTP;
+    const HTTP = tmp7(1297).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

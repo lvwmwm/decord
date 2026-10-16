@@ -1,12 +1,12 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 7342
+// Function ID: 7343
 // Name: GuildBoostSlotStore
-// Dependencies: [4831, 504, 584, 2]
+// Dependencies: [4834, 504, 584, 2]
 
-// Module 7340 (GuildBoostSlotStore)
+// Module 7342 (GuildBoostSlotStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SubscriptionStore from "SubscriptionStore" /* 4831 */;
+import SubscriptionStore from "SubscriptionStore" /* 4834 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

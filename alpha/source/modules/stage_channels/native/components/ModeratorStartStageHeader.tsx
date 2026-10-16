@@ -1,17 +1,17 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11501
+// Function ID: 11502
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 5151, 6479, 558, 576, 11442, 11438, 2]
+// Dependencies: [19, 17, 21, 5153, 6481, 558, 576, 11462, 11458, 2]
 
-// Module 11481 (ModeratorStartStageHeader)
+// Module 11501 (ModeratorStartStageHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import NavigatorConstants from "NavigatorConstants" /* 6479 */;
-import StageActionHeader from "StageActionHeader" /* 11438 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11442 */;
+import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import StageActionHeader from "StageActionHeader" /* 11458 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11462 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp13 = speaker;
   if (tmp13) {
     const obj6 = { channelId: channel.id };
-    tmp13 = React3(tmp(11438).MusicMuteButton, obj6);
+    tmp13 = React3(tmp(11458).MusicMuteButton, obj6);
   }
   cResult[3] = channel.id;
   cResult[4] = speaker;
@@ -114,7 +114,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp6 = View;
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = tmp7(tmp8(11438).MusicMuteButton, obj2);
+    speaker = tmp7(tmp8(11458).MusicMuteButton, obj2);
   }
   items[2] = speaker;
   const obj3 = { channelId: channel.id };

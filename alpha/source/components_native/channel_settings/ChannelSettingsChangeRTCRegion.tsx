@@ -1,23 +1,23 @@
-// Module ID: 17895
-// Function ID: 17896
+// Module ID: 17929
+// Function ID: 17930
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 2065, 17845, 21, 5151, 587, 4883, 1126, 9915, 6482, 6483, 8800, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 2068, 17879, 21, 5153, 587, 4886, 1128, 9931, 6484, 6485, 8808, 558, 576, 504, 38, 2]
 
-// Module 17895 (ChannelSettingsChangeRTCRegion)
+// Module 17929 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4883 */;
-import TableRadioRow from "TableRadioRow" /* 6482 */;
-import TableRadioGroup from "TableRadioGroup" /* 6483 */;
-import Form2 from "Form" /* 8800 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9915 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 4886 */;
+import TableRadioRow from "TableRadioRow" /* 6484 */;
+import TableRadioGroup from "TableRadioGroup" /* 6485 */;
+import Form2 from "Form" /* 8808 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9931 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RegionStore from "RegionStore" /* 17845 */;
-import createStyles from "createStyles" /* 5151 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RegionStore from "RegionStore" /* 17879 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(9915);
+    let obj = self(9931);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

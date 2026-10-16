@@ -1,22 +1,22 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17014
+// Function ID: 17015
 // Name: RegisterPasswordInput
-// Dependencies: [32, 109, 19, 6844, 16954, 21, 5151, 587, 4906, 558, 576, 16978, 1126, 5147, 14944, 6859, 6129, 504, 4879, 6870, 6872, 6506, 2]
+// Dependencies: [32, 109, 19, 6846, 16987, 21, 5153, 587, 4909, 558, 576, 17011, 1128, 5149, 14977, 6861, 6131, 504, 4882, 6872, 6874, 6508, 2]
 
-// Module 16981 (RegisterPasswordInput)
+// Module 17014 (RegisterPasswordInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14944 */;
-import usePasswordScore from "usePasswordScore" /* 16978 */;
+import intl5 from "intl" /* 1128 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14977 */;
+import usePasswordScore from "usePasswordScore" /* 17011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6844 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16954 */;
+import PhoneStore from "PhoneStore" /* 6846 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16987 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let tmp12;
 let unpackModuleId;
-const getErrorDefault = tmp12(6859);
+const getErrorDefault = tmp12(6861);
 let user = ["ref"];
 let closure_4 = ["password"];
 let closure_5 = ["password"];
@@ -77,7 +77,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
             let first;
             const _Symbol2 = Symbol;
             if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1126).intl;
+              const intl3 = tmp(1128).intl;
               const stringResult = intl3.string(intl5.t["w/8TuV"]);
               cResult[0] = stringResult;
               first = stringResult;
@@ -90,7 +90,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
             let tmp8;
             const _Symbol = Symbol;
             if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl2 = tmp(1126).intl;
+              const intl2 = tmp(1128).intl;
               const stringResult1 = intl2.string(intl5.t["2fmTpT"]);
               cResult[1] = stringResult1;
               tmp8 = stringResult1;
@@ -105,7 +105,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
               let tmp5;
               const _Symbol4 = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 const stringResult2 = intl.string(intl5.t.Xraqqc);
                 cResult[2] = stringResult2;
                 tmp5 = stringResult2;
@@ -124,7 +124,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
             }
             const _Symbol3 = Symbol;
             if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1126).intl;
+              const intl4 = tmp(1128).intl;
               const stringResult3 = intl4.string(intl5.t["5gbdUX"]);
               cResult[6] = stringResult3;
               tmp15 = stringResult3;
@@ -139,7 +139,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
               return tmp17;
             }
             const obj2 = { variant: "text-xs/medium", style: tmp13, animated: true, children: items };
-            const Text = tmp(5147).Text;
+            const Text = tmp(5149).Text;
             const merged = Object.assign(obj5);
             const merged1 = Object.assign(obj6);
             items = [tmp15, ": ", str];
@@ -175,27 +175,27 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
           let str;
           let strong;
           if (passwordScore <= usePasswordScore.PasswordScore.WEAK) {
-            const intl2 = tmp9(1126).intl;
-            str = intl2.string(tmp9(1126).t["w/8TuV"]);
+            const intl2 = tmp9(1128).intl;
+            str = intl2.string(tmp9(1128).t["w/8TuV"]);
             strong = tmp.weak;
           } else if (passwordScore === usePasswordScore.PasswordScore.MEDIUM) {
-            const intl = tmp9(1126).intl;
-            str = intl.string(tmp9(1126).t["2fmTpT"]);
+            const intl = tmp9(1128).intl;
+            str = intl.string(tmp9(1128).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
             if (passwordScore === usePasswordScore.PasswordScore.STRONG) {
-              const intl4 = tmp9(1126).intl;
-              str = intl4.string(tmp9(1126).t.Xraqqc);
+              const intl4 = tmp9(1128).intl;
+              str = intl4.string(tmp9(1128).t.Xraqqc);
               strong = tmp.strong;
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5147).Text;
+          const Text = tmp9(5149).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
-          const intl3 = tmp9(1126).intl;
+          const intl3 = tmp9(1128).intl;
           items1 = [intl3.string(intl5.t["5gbdUX"]), ": ", str];
           return authStore2(Text, obj);
         }
@@ -443,7 +443,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
           return ref.errors;
         }
       }
-      const stringResult = obj6.string(tmp(1126).t["CIGa+7"]);
+      const stringResult = obj6.string(tmp(1128).t["CIGa+7"]);
       class Y {
         constructor() {
           FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
@@ -454,7 +454,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
           return num;
         }
       }
-      const stringResult1 = obj7.string(tmp(1126).t.cUVsEG);
+      const stringResult1 = obj7.string(tmp(1128).t.cUVsEG);
       cResult[20] = stringResult;
       cResult[21] = stringResult1;
       tmp36 = stringResult1;
@@ -494,7 +494,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
         }
       }
       const string = tmp42.string;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       class Y {
         constructor() {
           FRANCE_AND_FRENCH_REGION = onPasswordChange(closure_2[16]).CountryCodesSets.FRANCE_AND_FRENCH_REGION;
@@ -605,8 +605,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
     cResult[34] = tmp40;
     cResult[35] = tmp45;
     cResult[36] = undefined;
-    cResult[37] = closure_13(tmp(6506).TextInput, obj4);
-    const tmp50 = closure_13(tmp(6506).TextInput, obj4);
+    cResult[37] = closure_13(tmp(6508).TextInput, obj4);
+    const tmp50 = closure_13(tmp(6508).TextInput, obj4);
   }
   class W {
     constructor(arg0) {

@@ -1,21 +1,21 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13646
+// Function ID: 13647
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 5151, 5444, 587, 1382, 558, 576, 13621, 1126, 13622, 13627, 13628, 2]
+// Dependencies: [19, 17, 21, 5153, 5446, 587, 1384, 558, 576, 13647, 1128, 13648, 13653, 13654, 2]
 
-// Module 13620 (virtual_currency/BalanceWidgetPill)
+// Module 13646 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import ButtonConstants from "ButtonConstants" /* 5444 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 13621 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 13622 */;
-import AnimationUtils from "AnimationUtils" /* 13628 */;
+import intl2 from "intl" /* 1128 */;
+import ButtonConstants from "ButtonConstants" /* 5446 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 13647 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 13648 */;
+import AnimationUtils from "AnimationUtils" /* 13654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWid
               }
             }
             const obj5 = { value: balance, onValueChange, onValueReached, targetTotalCounterTime: AnimationUtils.EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS, style: tmp9.balanceText };
-            const BalanceCounter = tmp(13627).BalanceCounter;
+            const BalanceCounter = tmp(13653).BalanceCounter;
             const tmp23 = _false(BalanceCounter, obj5);
             cResult[17] = onValueChange;
             cResult[18] = onValueReached;
@@ -164,12 +164,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWid
         cResult[13] = tmp16;
         tmp14 = tmp16;
       }
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       if (null === tmp4 && null === balance) {
-        stringResult = intl.string(tmp(1126).t.y0WGqP);
+        stringResult = intl.string(tmp(1128).t.y0WGqP);
       } else {
         const obj8 = { balance };
-        stringResult = intl.formatToPlainString(tmp(1126).t.zPaLL9, obj8);
+        stringResult = intl.formatToPlainString(tmp(1128).t.zPaLL9, obj8);
       }
       cResult[6] = balance;
       cResult[7] = null === tmp4 && null === balance;
@@ -217,16 +217,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWid
   const intl = intl2.intl;
   const tmp7 = React3;
   if (tmp2) {
-    stringResult = intl.string(tmp3(1126).t.y0WGqP);
+    stringResult = intl.string(tmp3(1128).t.y0WGqP);
   } else {
     const obj3 = { balance };
-    stringResult = intl.formatToPlainString(tmp3(1126).t.zPaLL9, obj3);
+    stringResult = intl.formatToPlainString(tmp3(1128).t.zPaLL9, obj3);
   }
   items1 = [, ];
   const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
   items1[0] = _false(View, obj4);
   const obj5 = { style: tmp6.balanceCounterContainer, children: _false(BalanceCounter, obj6) };
-  BalanceCounter = tmp3(13627).BalanceCounter;
+  BalanceCounter = tmp3(13653).BalanceCounter;
   if (showInitialRenderedBalance) {
     balance = prop;
   }

@@ -1,15 +1,15 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7166
+// Function ID: 7167
 // Name: OrderActionCreators
-// Dependencies: [5, 1085, 3, 4847, 1295, 4840, 2]
+// Dependencies: [5, 1087, 3, 4850, 1297, 4843, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7164 (OrderActionCreators)
+// Module 7166 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4847 */;
+import BillingError_mod from "BillingError" /* 4850 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;

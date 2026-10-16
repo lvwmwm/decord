@@ -1,9 +1,9 @@
-// Module ID: 14772
-// Function ID: 14773
+// Module ID: 14805
+// Function ID: 14806
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 14771, 7310, 7945, 1126, 14773, 558, 576, 6908, 2]
+// Dependencies: [19, 21, 14804, 7312, 7948, 1128, 14806, 558, 576, 6910, 2]
 
-// Module 14772 (ActivateDeviceModal)
+// Module 14805 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,15 +54,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(userCode(1126).t["13/7kX"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(userCode(1128).t["13/7kX"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const tmp11 = jsx(userCode(6908).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
+    const tmp11 = jsx(userCode(6910).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
     cResult[3] = tmp4;
     cResult[4] = tmp11;
     tmp8 = tmp11;
@@ -96,9 +96,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(6908).Navigator;
-  let intl = userCode(1126).intl;
-  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1126).t["13/7kX"])} />;
+  const Navigator = userCode(6910).Navigator;
+  let intl = userCode(1128).intl;
+  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1128).t["13/7kX"])} />;
 });
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 

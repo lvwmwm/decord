@@ -1,21 +1,21 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8740
+// Function ID: 8741
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2071, 8733, 5115, 8734, 2000, 8739, 9002, 2]
+// Dependencies: [5, 2074, 8741, 5118, 8742, 2002, 8747, 9010, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8732 (GuildScheduledEventModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8733 */;
+// Module 8740 (GuildScheduledEventModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2002 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(8739);
+const ScheduleUtils = tmp3(8747);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(8734, dependencyMap.paths);
+  const tmp4 = asyncRequire(8742, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9002, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(9010, dependencyMap.paths), closure_4, obj2);
 };

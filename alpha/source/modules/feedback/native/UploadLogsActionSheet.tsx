@@ -1,22 +1,22 @@
-// Module ID: 18378
-// Function ID: 18379
+// Module ID: 18420
+// Function ID: 18421
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 13467, 1265, 5115, 7060, 1126, 5147, 5439, 7061, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 13493, 1267, 5118, 7062, 1128, 5149, 5441, 7063, 2]
 
-// Module 18378 (UploadLogsActionSheet)
+// Module 18420 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7060 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
-import DebugUploadManager from "DebugUploadManager" /* 13467 */;
+import intl5 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7062 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7063 */;
+import DebugUploadManager from "DebugUploadManager" /* 13493 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const ActionSheetActionCreatorsDefault = tmp3(5115);
+const ActionSheetActionCreatorsDefault = tmp3(5118);
 const View = react_native.View;
 ({ AnalyticEvents: closure_4, DebugLogCategory: hasOwnProperty } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -68,9 +68,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     let tmp6 = globalThis;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { title: intl.string(tmp(1126).t.KTjjrG) };
-      const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-      intl = tmp(1126).intl;
+      let obj2 = { title: intl.string(tmp(1128).t.KTjjrG) };
+      const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+      intl = tmp(1128).intl;
       const tmp9 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp9;
       tmp7 = tmp9;
@@ -80,8 +80,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     const _Symbol2 = Symbol;
     ({ container, body } = tmp4);
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
-      const stringResult = intl2.string(mediaSessionId(1126).t["ZvRR/t"]);
+      const intl2 = tmp(1128).intl;
+      const stringResult = intl2.string(mediaSessionId(1128).t["ZvRR/t"]);
       cResult[4] = stringResult;
       tmp10 = stringResult;
     } else {
@@ -89,7 +89,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     }
     if (cResult[5] !== tmp4.body) {
       const obj3 = { variant: "text-sm/normal", color: "text-muted", style: body, children: tmp10 };
-      const tmp14 = closure_6(mediaSessionId(5147).Text, obj3);
+      const tmp14 = closure_6(mediaSessionId(5149).Text, obj3);
       cResult[5] = tmp4.body;
       cResult[6] = tmp14;
       tmp12 = tmp14;
@@ -98,8 +98,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
-      const stringResult1 = intl3.string(mediaSessionId(1126).t.EbwFfR);
+      const intl3 = tmp(1128).intl;
+      const stringResult1 = intl3.string(mediaSessionId(1128).t.EbwFfR);
       cResult[7] = stringResult1;
       tmp15 = stringResult1;
     } else {
@@ -107,7 +107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     }
     if (cResult[8] !== tmp5) {
       const obj4 = { text: tmp15, onPress: tmp5 };
-      const tmp19 = closure_6(mediaSessionId(5439).Button, obj4);
+      const tmp19 = closure_6(mediaSessionId(5441).Button, obj4);
       cResult[8] = tmp5;
       cResult[9] = tmp19;
       tmp17 = tmp19;
@@ -125,8 +125,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     }
     const _Symbol4 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
-      const stringResult2 = intl4.string(mediaSessionId(1126).t["ETE/oC"]);
+      const intl4 = tmp(1128).intl;
+      const stringResult2 = intl4.string(mediaSessionId(1128).t["ETE/oC"]);
       cResult[12] = stringResult2;
       tmp24 = stringResult2;
     } else {
@@ -142,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
               return obj.hideActionSheet();
             }
       };
-      const tmp28 = closure_6(mediaSessionId(5439).Button, obj6);
+      const tmp28 = closure_6(mediaSessionId(5441).Button, obj6);
       cResult[13] = tmp28;
       tmp26 = tmp28;
     } else {
@@ -162,7 +162,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     const obj7 = { header: tmp7, children: closure_7(View, obj8) };
     obj8 = { style: container, children: items };
     items = [tmp12, tmp17, tmp20, tmp26];
-    BottomSheet = tmp(7061).BottomSheet;
+    BottomSheet = tmp(7063).BottomSheet;
     const tmp33 = closure_6(BottomSheet, obj7);
     cResult[14] = tmp4.container;
     cResult[15] = tmp12;

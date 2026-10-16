@@ -1,27 +1,27 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 17424
+// Function ID: 17425
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6300, 4995, 6179, 17320, 16023, 21, 5151, 6981, 558, 576, 1631, 16016, 16025, 551, 568, 504, 4906, 17391, 2]
+// Dependencies: [32, 19, 17, 6302, 4998, 6181, 17354, 16056, 21, 5153, 6983, 558, 576, 1633, 16049, 16058, 551, 568, 504, 4909, 17425, 2]
 
-// Module 17390 (GuildsBarUnreadBars)
+// Module 17424 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6179 */;
-import FastList from "FastList" /* 6981 */;
-import QuestHooks from "QuestHooks" /* 16016 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16025 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6181 */;
+import FastList from "FastList" /* 6983 */;
+import QuestHooks from "QuestHooks" /* 16049 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16058 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6300 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17320 */;
-import YouBarConstants from "YouBarConstants" /* 16023 */;
-import createStyles from "createStyles" /* 5151 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6302 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17354 */;
+import YouBarConstants from "YouBarConstants" /* 16056 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(6981).FastListItemTypes.SECTION === type) {
+            if (tmp41(6983).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -173,7 +173,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(6981).FastListItemTypes.ITEM === type) {
+              if (tmp41(6983).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -350,7 +350,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(22);
   fastList = fastList.fastList;
   let tmp4 = top;
-  top = top(1631)().top;
+  top = top(1633)().top;
   const result = closure_11() / 2;
   dependencyMap = result;
   if (cResult[0] === fastList) {
@@ -409,7 +409,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           const effect = obj2.useEffect(tmp12, tmp13);
           const scrollPosValue = fastList.scrollPosValue;
-          const tmpResult = tmp(4906);
+          const tmpResult = tmp(4909);
           class C {
             constructor() {
               return scrollPosValue.get();
@@ -426,10 +426,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           };
           const useAnimatedReaction = tmpResult.useAnimatedReaction;
-          fn2.__closure = { runOnJS: tmp(4906).runOnJS, debouncedUpdate: tmp10 };
+          fn2.__closure = { runOnJS: tmp(4909).runOnJS, debouncedUpdate: tmp10 };
           fn2.__workletHash = 13727289405147;
           fn2.__initData = __initData2;
-          const obj4 = { runOnJS: tmp(4906).runOnJS, debouncedUpdate: tmp10 };
+          const obj4 = { runOnJS: tmp(4909).runOnJS, debouncedUpdate: tmp10 };
           const animatedReaction = useAnimatedReaction(C, fn2);
           const tmp20 = closure_20();
           ({ style, paddingStart } = tmp20);
@@ -514,7 +514,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let memo;
   let paddingStart;
   let paddingEnd;
-  top = top(1631)().top;
+  top = top(1633)().top;
   const result = closure_11() / 2;
   dependencyMap = result;
   let tmp2 = _slicedToArray(memo.useState(() => {
@@ -562,7 +562,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
   }, items1);
   const scrollPosValue = fastList.scrollPosValue;
-  let obj = fastList(4906);
+  let obj = fastList(4909);
   class B {
     constructor() {
       return scrollPosValue.get();
@@ -579,10 +579,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  T.__closure = { runOnJS: fastList(4906).runOnJS, debouncedUpdate: memo };
+  T.__closure = { runOnJS: fastList(4909).runOnJS, debouncedUpdate: memo };
   T.__workletHash = 3399641848221;
   T.__initData = __initData4;
-  ({ runOnJS: fastList(4906).runOnJS, debouncedUpdate: memo });
+  ({ runOnJS: fastList(4909).runOnJS, debouncedUpdate: memo });
   const animatedReaction = obj.useAnimatedReaction(B, T);
   const tmp7 = closure_20();
   paddingStart = tmp7.paddingStart;

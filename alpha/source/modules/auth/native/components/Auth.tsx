@@ -1,28 +1,28 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16984
+// Function ID: 16985
 // Name: Auth
-// Dependencies: [32, 19, 17, 12972, 1085, 21, 16952, 16953, 6421, 16962, 6910, 6853, 5151, 587, 558, 576, 17005, 6846, 1645, 6877, 17006, 6875, 6908, 1383, 1126, 17007, 7413, 17014, 2]
+// Dependencies: [32, 19, 17, 12998, 1087, 21, 16985, 16986, 6423, 16995, 6912, 6855, 5153, 587, 558, 576, 17038, 6848, 1647, 6879, 17039, 6877, 6910, 1385, 1128, 17040, 7415, 17047, 2]
 
-// Module 16951 (Auth)
+// Module 16984 (Auth)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6846 */;
-import MFAUtils from "MFAUtils" /* 6853 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6877 */;
-import _mod6910 from "module_6910" /* 6910 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 16952 */;
-import RegistrationUtils from "RegistrationUtils" /* 16962 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17005 */;
-import AuthManagerDefault from "AuthManager" /* 17007 */;
-import useOrientationLockDefault from "useOrientationLock" /* 17014 */;
+import Constants from "Constants" /* 1087 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6848 */;
+import MFAUtils from "MFAUtils" /* 6855 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6879 */;
+import _mod6912 from "module_6912" /* 6912 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 16985 */;
+import RegistrationUtils from "RegistrationUtils" /* 16995 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17038 */;
+import AuthManagerDefault from "AuthManager" /* 17040 */;
+import useOrientationLockDefault from "useOrientationLock" /* 17047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 12972 */;
+import MultiAccountStore from "MultiAccountStore" /* 12998 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 16953 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 16986 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,12 +38,12 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1126);
-const utils_PlatformUtils = tmp(1383);
-const KeyboardChatScrollView = tmp(1645);
-const react3 = tmp(6875);
-const Navigator3 = tmp(6908);
-const AssetRegistry = tmp(17006);
+const intl2 = tmp(1128);
+const utils_PlatformUtils = tmp(1385);
+const KeyboardChatScrollView = tmp(1647);
+const react3 = tmp(6877);
+const Navigator3 = tmp(6910);
+const AssetRegistry = tmp(17039);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -110,8 +110,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod6910.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod6910.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod6912.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod6912.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;
@@ -428,10 +428,10 @@ const memoResult = react.memo(function Auth() {
   useOrientationLockDefault();
   let closure_0 = react.useRef(undefined);
   obj = {
-    value: react.useCallback(() => {
+    value: react.useMemo(() => {
       obj = RegistrationUtils;
       return obj.getTrackRegTransition(closure_0);
-    }, [])(),
+    }, []),
     children: closure_9(closure_17, {})
   };
   return closure_9(context.Provider, obj);

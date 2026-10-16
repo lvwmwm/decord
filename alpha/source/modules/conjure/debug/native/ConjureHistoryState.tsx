@@ -1,18 +1,18 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12274
+// Function ID: 12275
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 3862, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 3865, 5149, 2]
 
-// Module 12251 (ConjureHistoryState)
+// Module 12274 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl3 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
     }
     let stringResult = emptyBody;
     if ("failed" === state.status) {
-      const intl2 = tmp(1126).intl;
-      stringResult = intl2.string(_modDef3862["8SErdg"]);
+      const intl2 = tmp(1128).intl;
+      stringResult = intl2.string(_modDef3865["8SErdg"]);
     }
     cResult[5] = emptyBody;
     cResult[6] = "failed" === state.status;
@@ -97,8 +97,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
   }
   let stringResult1 = emptyTitle;
   if ("failed" === state.status) {
-    const intl = tmp(1126).intl;
-    stringResult1 = intl.string(_modDef3862.h1SE6R);
+    const intl = tmp(1128).intl;
+    stringResult1 = intl.string(_modDef3865.h1SE6R);
   }
   cResult[0] = emptyTitle;
   cResult[1] = "failed" === state.status;
@@ -119,14 +119,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
   }
   const Text = Text_Text.Text;
   if ("failed" === state.state.status) {
-    const intl = tmp5(1126).intl;
-    emptyTitle = intl.string(_modDef3862.h1SE6R);
+    const intl = tmp5(1128).intl;
+    emptyTitle = intl.string(_modDef3865.h1SE6R);
   }
   items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5147).Text;
+  const Text2 = tmp5(5149).Text;
   if ("failed" === state.state.status) {
-    const intl2 = tmp5(1126).intl;
-    emptyBody = intl2.string(_modDef3862["8SErdg"]);
+    const intl2 = tmp5(1128).intl;
+    emptyBody = intl2.string(_modDef3865["8SErdg"]);
   }
   items[1] = React3(Text2, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
@@ -145,9 +145,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
       let first;
       const _Symbol2 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3862.h1SE6R) };
-        const Text2 = tmp(5147).Text;
-        intl2 = tmp(1126).intl;
+        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3865.h1SE6R) };
+        const Text2 = tmp(5149).Text;
+        intl2 = tmp(1128).intl;
         const tmp15 = React3(Text2, obj2);
         cResult[0] = tmp15;
         first = tmp15;
@@ -161,9 +161,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
         let tmp6;
         const _Symbol = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3862.V7Ri8H) };
-          const Text = tmp(5147).Text;
-          intl = tmp(1126).intl;
+          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3865.V7Ri8H) };
+          const Text = tmp(5149).Text;
+          intl = tmp(1128).intl;
           const tmp9 = React3(Text, obj3);
           cResult[1] = tmp9;
           tmp6 = tmp9;
@@ -184,14 +184,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3862.h1SE6R) };
+      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3865.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3862.V7Ri8H) };
+        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3865.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

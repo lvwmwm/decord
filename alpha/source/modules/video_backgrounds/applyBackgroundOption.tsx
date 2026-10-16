@@ -1,22 +1,22 @@
-// Module ID: 5313
-// Function ID: 5314
+// Module ID: 5315
+// Function ID: 5316
 // Name: applyBackgroundOption
-// Dependencies: [5, 1390, 5314, 5315, 1085, 5316, 5196, 5321, 1415, 5326, 5319, 5318, 5327, 2]
+// Dependencies: [5, 1392, 5316, 5317, 1087, 5318, 5198, 5323, 1417, 5328, 5321, 5320, 5329, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5313 (applyBackgroundOption)
-import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5196 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5316 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5318 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5321 */;
-import getFilterImageDefault from "getFilterImage" /* 5326 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5327 */;
+// Module 5315 (applyBackgroundOption)
+import Constants from "Constants" /* 1087 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5198 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5318 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5320 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5323 */;
+import getFilterImageDefault from "getFilterImage" /* 5328 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1390 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5314 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5315 */;
+import UserStore from "UserStore" /* 1392 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5316 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5317 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;

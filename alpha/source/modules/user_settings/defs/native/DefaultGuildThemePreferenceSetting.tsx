@@ -1,18 +1,18 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16286
+// Function ID: 16287
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 8210, 2041, 558, 576, 1126, 1209, 10991, 5068, 2]
+// Dependencies: [19, 8213, 2044, 558, 576, 1128, 1211, 11006, 5071, 2]
 
-// Module 16253 (DefaultGuildThemePreferenceSetting)
+// Module 16286 (DefaultGuildThemePreferenceSetting)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5068 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
+import intl3 from "intl" /* 1128 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5071 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -24,10 +24,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefault
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl3.t.aN3RNQ), value: preloaded_user_settings.GuildThemeSourcePreference.GUILD };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     const items = [obj2, ];
     const obj3 = { label: intl2.string(intl3.t.js8y7t), value: preloaded_user_settings.GuildThemeSourcePreference.PERSONAL };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items[1] = obj3;
     cResult[0] = items;
     first = items;

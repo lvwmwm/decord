@@ -1,9 +1,9 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11778
+// Function ID: 11779
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 558, 576, 2046, 11753, 1382, 1998, 2]
+// Dependencies: [19, 558, 576, 2049, 11777, 1384, 2000, 2]
 
-// Module 11754 (useActivityShelfItemsSorting)
+// Module 11778 (useActivityShelfItemsSorting)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f109993 = (item) => {
+const f110321 = (item) => {
   closure_0 = item;
   const findIndexResult = items.findIndex((application) => application.application.id === closure_0);
   if (-1 !== findIndexResult) {
@@ -24,11 +24,11 @@ const f109993 = (item) => {
     closure_1 = closure_1 + 1;
   }
 };
-const f109994 = (item, index) => {
+const f110322 = (item, index) => {
   const items = [item, index];
   return items;
 };
-const f109995 = (item) => {
+const f110323 = (item) => {
   let tmp;
   [tmp] = item;
   const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
@@ -49,7 +49,7 @@ const f109995 = (item) => {
   }
   return tmp8;
 };
-const f109996 = (item) => {
+const f110324 = (item) => {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = item;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   let tmp4;
   const obj = items2(576);
   const cResult = obj.c(2);
-  const FrecencyUserSettingsActionCreators = items2(2046).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = items2(2049).FrecencyUserSettingsActionCreators;
   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   if (cResult[0] !== arr) {
     const items = [];
@@ -95,10 +95,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     items2 = [];
     HermesBuiltin.arraySpread(items2, arr, 0);
     let c1 = 0;
-    const item1 = items1.forEach(f109993);
-    const mapped = items2.map(f109994);
-    const found = mapped.filter(f109995);
-    const item2 = found.forEach(f109996);
+    const item1 = items1.forEach(f110321);
+    const mapped = items2.map(f110322);
+    const found = mapped.filter(f110323);
+    const item2 = found.forEach(f110324);
     cResult[0] = arr;
     cResult[1] = items2;
     tmp4 = items2;
@@ -128,10 +128,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     const items2 = [...closure_0];
     items = items2;
     let closure_1 = 0;
-    const item1 = items1.forEach(f109993);
-    const mapped = items.map(f109994);
-    const found = mapped.filter(f109995);
-    const item2 = found.forEach(f109996);
+    const item1 = items1.forEach(f110321);
+    const mapped = items.map(f110322);
+    const found = mapped.filter(f110323);
+    const item2 = found.forEach(f110324);
     return items;
   }, items);
 });

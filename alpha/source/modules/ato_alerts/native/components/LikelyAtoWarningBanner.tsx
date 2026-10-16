@@ -1,27 +1,27 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10641
+// Function ID: 10642
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10518, 10627, 1085, 1095, 21, 5151, 587, 10628, 10629, 6150, 10630, 7245, 4862, 10632, 1126, 10635, 2000, 5147, 10646, 2]
+// Dependencies: [19, 10533, 10642, 1087, 1097, 21, 5153, 587, 10643, 10644, 6152, 10645, 7247, 4865, 10647, 1128, 10650, 2002, 5149, 10661, 2]
 
-// Module 10626 (LikelyAtoWarningBanner)
+// Module 10641 (LikelyAtoWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import LinkingDefault from "Linking" /* 4862 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7245 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10518 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10628 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10629 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10630 */;
-import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 10646 */;
+import Constants2 from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import intl5 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import LinkingDefault from "Linking" /* 4865 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7247 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10533 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10643 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10644 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10645 */;
+import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 10661 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 10627 */;
+import Constants from "Constants" /* 10642 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -113,7 +113,7 @@ class LikelyAtoWarningBanner {
           learnMore: authStore(Text, obj3)
         };
         ModalActionCreatorsDefault;
-        const tmp2 = asyncRequire(10635, dependencyMap.paths);
+        const tmp2 = asyncRequire(10650, dependencyMap.paths);
         intl = intl5.intl;
         obj2 = {
           senderId,

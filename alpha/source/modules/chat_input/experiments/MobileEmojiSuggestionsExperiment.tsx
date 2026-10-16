@@ -1,16 +1,16 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12738
+// Function ID: 12739
 // Name: MobileEmojiSuggestionsExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 // Exports: trackMobileEmojiSuggestionsExposure
 
-// Module 12712 (MobileEmojiSuggestionsExperiment)
+// Module 12738 (MobileEmojiSuggestionsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let obj = { name: "2026-07-mobile-emoji-suggestions", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, style: "large" }, 2: { enabled: true, style: "small" }, 3: { enabled: true, style: "button" } } };
+let obj = { name: "2026-07-mobile-emoji-suggestions", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, style: "large", searchDebounceMs: 500 }, 2: { enabled: true, style: "small" }, 3: { enabled: true, style: "button" } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileEmojiSuggestionsConfig(location) {
   let tmp2;

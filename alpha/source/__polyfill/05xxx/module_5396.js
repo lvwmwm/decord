@@ -1,18 +1,47 @@
 // Module ID: 5396
 // Function ID: 5397
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [19, 5376]
+// Exports: useEdgeInsetApplication
 
 // Module 5396
-import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 5376 */;
+import react from "react" /* 19 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStackHeaderConfig", directEventTypes: { topAttached: { registrationName: "onAttached" }, topDetached: { registrationName: "onDetached" }, topPressHeaderBarButtonItem: { registrationName: "onPressHeaderBarButtonItem" }, topPressHeaderBarButtonMenuItem: { registrationName: "onPressHeaderBarButtonMenuItem" } }, validAttributes: obj2 };
-obj2 = { backgroundColor: _mod26.colorAttribute, backTitle: true, backTitleFontFamily: true, backTitleFontSize: true, backTitleVisible: true, color: _mod26.colorAttribute, direction: true, hidden: true, hideShadow: true, largeTitle: true, largeTitleFontFamily: true, largeTitleFontSize: true, largeTitleFontWeight: true, largeTitleBackgroundColor: _mod26.colorAttribute, largeTitleHideShadow: true, largeTitleColor: _mod26.colorAttribute, translucent: true, title: true, titleFontFamily: true, titleFontSize: true, titleFontWeight: true, titleColor: _mod26.colorAttribute, disableBackButtonMenu: true, backButtonDisplayMode: true, hideBackButton: true, backButtonInCustomView: true, blurEffect: true, topInsetEnabled: true, headerLeftBarButtonItems: true, headerRightBarButtonItems: true, synchronousShadowStateUpdatesEnabled: true, userInterfaceStyle: true, consumeTopInset: true, consumeLeftInset: true, consumeRightInset: true, consumeBottomInset: true, legacyTopInsetBehavior: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAttached: true, onDetached: true, onPressHeaderBarButtonItem: true, onPressHeaderBarButtonMenuItem: true }));
+let context = react.createContext({ topAlreadyApplied: false, leftDisabled: false, rightDisabled: false, bottomDisabled: false });
 
-export default module_65.get("RNSScreenStackHeaderConfig", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const EdgeInsetApplicationContext = context;
+export const useEdgeInsetApplication = function useEdgeInsetApplication(arg0, flag, flag2, flag3, flag4) {
+  let bottomDisabled;
+  let leftDisabled;
+  let rightDisabled;
+  context = react.useContext(context);
+  const topAlreadyApplied = context.topAlreadyApplied;
+  ({ leftDisabled, rightDisabled, bottomDisabled } = context);
+  const experiment = get_synchronousScreenUpdatesEnabled.featureFlags.experiment;
+  flag = undefined;
+  const obj = react;
+  if (experiment != null) {
+    flag = experiment.androidLegacyTopInsetBehavior;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  let tmp2 = flag;
+  if (!tmp2) {
+    tmp2 = !topAlreadyApplied && arg0;
+  }
+  let closure_1 = tmp2;
+  const tmp4 = tmp2 && !flag;
+  if (!leftDisabled) {
+    leftDisabled = flag2;
+  }
+  if (!rightDisabled) {
+    rightDisabled = flag3;
+  }
+  if (!bottomDisabled) {
+    bottomDisabled = flag4;
+  }
+  const items = [topAlreadyApplied, tmp2, leftDisabled, rightDisabled, bottomDisabled];
+  const obj2 = { appliesTopInset: tmp4, consumeLeftInset: !leftDisabled, consumeRightInset: !rightDisabled, consumeBottomInset: !bottomDisabled, useLegacyBehavior: flag, nextContextValue: obj.useMemo(() => ({ topAlreadyApplied: topAlreadyApplied || closure_1, leftDisabled, rightDisabled, bottomDisabled }), items) };
+  return obj2;
+};

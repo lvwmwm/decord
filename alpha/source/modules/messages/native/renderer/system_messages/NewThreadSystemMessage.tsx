@@ -1,20 +1,20 @@
-// Module ID: 8257
-// Function ID: 8258
+// Module ID: 8262
+// Function ID: 8263
 // Name: NewThreadSystemMessage
-// Dependencies: [2065, 4816, 1390, 8196, 1126, 8198, 5481, 8200, 2]
+// Dependencies: [2068, 4819, 1392, 8199, 1128, 8201, 5483, 8203, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 8257 (NewThreadSystemMessage)
-import useChannelName from "useChannelName" /* 5481 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8196 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8198 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
+// Module 8262 (NewThreadSystemMessage)
+import useChannelName from "useChannelName" /* 5483 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8199 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8201 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let tmp7;
-const createCommonMessageDefault = tmp7(8200);
+const createCommonMessageDefault = tmp7(8203);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/NewThreadSystemMessage.tsx");
 
 export const createNewThreadSystemMessage = function createNewThreadSystemMessage(message) {
@@ -31,10 +31,10 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
     channel_id = messageReference.channel_id;
   }
   const channel = getChannel(channel_id);
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const formatToParts = intl.formatToParts;
   const obj2 = { actorName: messageAuthorWithProcessedColor.nick, actorHook: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }), threadName: content, threadOnClick: { action: "bindOpenThreadChannel", threadId: channel_id1, medium: true } };
-  const veX9jq = tmp(1126).t.veX9jq;
+  const veX9jq = tmp(1128).t.veX9jq;
   if (null != channel) {
     const tmpResult = useChannelName;
     content = tmpResult.computeChannelName(channel, UserStore, RelationshipStore);

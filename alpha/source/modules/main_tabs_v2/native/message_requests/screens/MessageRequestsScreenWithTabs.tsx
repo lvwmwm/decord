@@ -1,23 +1,23 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17950
+// Function ID: 17951
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 1126, 17917, 17933, 8750, 8996, 10834, 12531, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 1128, 17951, 17967, 8758, 9004, 10849, 12554, 2]
 
-// Module 17916 (MessageRequestsScreenWithTabs)
+// Module 17950 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import SegmentedControlState from "SegmentedControlState" /* 8750 */;
-import SegmentedControl from "SegmentedControl" /* 8996 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 10834 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12531 */;
-import MessageRequestListDefault from "MessageRequestList" /* 17917 */;
-import SpamMessageListDefault from "SpamMessageList" /* 17933 */;
+import intl3 from "intl" /* 1128 */;
+import SegmentedControlState from "SegmentedControlState" /* 8758 */;
+import SegmentedControl from "SegmentedControl" /* 9004 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 10849 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12554 */;
+import MessageRequestListDefault from "MessageRequestList" /* 17951 */;
+import SpamMessageListDefault from "SpamMessageList" /* 17967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["7RFcXZ"]);
     cResult[3] = stringResult;
     tmp9 = stringResult;
@@ -91,7 +91,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp11 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.ulKXHp);
     cResult[6] = stringResult1;
     tmp15 = stringResult1;

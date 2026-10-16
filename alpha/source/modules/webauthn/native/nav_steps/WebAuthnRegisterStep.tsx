@@ -1,20 +1,20 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15750
+// Function ID: 15751
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1085, 21, 5151, 587, 6851, 558, 576, 1126, 1200, 1503, 1382, 15718, 15719, 5147, 6174, 5439, 7035, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5153, 587, 6853, 558, 576, 1128, 1202, 1505, 1384, 15751, 15752, 5149, 6176, 5441, 7037, 2]
 
-// Module 15717 (WebAuthnRegisterStep)
+// Module 15750 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6851 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6853 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Androi
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: obj3.PASSKEY_CREDENTIAL_MANAGER, name: intl.string(intl4.t.JQbo8L) };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -60,7 +60,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Androi
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     obj3 = { value: obj3.PASSKEY_DEVICE, name: intl2.string(intl4.t.GjBNMg) };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     cResult[1] = obj3;
     tmp7 = obj3;
   } else {
@@ -69,7 +69,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Androi
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp7, ];
     obj4 = { value: obj3.OTHER_AND_ANDROID_NONDISCOVERABLE, name: intl3.string(intl4.t["OhC77+"]) };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     items[2] = obj4;
     cResult[2] = items;
     tmp9 = items;
@@ -99,7 +99,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Androi
     }
   }
   const obj5 = { style: tmp4.radioItem, options: tmp9, onChange: tmp11, value: authenticatorSelection, disabled: registering, size: native.RadioGroup.Sizes.LARGE, withSpacing: true };
-  const RadioGroup = tmp(1200).RadioGroup;
+  const RadioGroup = tmp(1202).RadioGroup;
   cResult[5] = authenticatorSelection;
   cResult[6] = registering;
   cResult[7] = tmp4.radioItem;
@@ -156,13 +156,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp9;
   const obj = navigation(576);
   const cResult = obj.c(33);
-  const obj2 = navigation(1503);
+  const obj2 = navigation(1505);
   navigation = obj2.useNavigation();
   const tmp5 = closure_9();
   [first, tmp9] = react.useState(false);
   [tmp11, tmp12] = react.useState("");
   _slicedToArray(react.useState(""), 2);
-  obj4 = navigation(1382);
+  obj4 = navigation(1384);
   [tmp15, tmp16] = react.useState(obj4.isAndroid() ? react.PASSKEY_CREDENTIAL_MANAGER : react.OTHER_AND_ANDROID_NONDISCOVERABLE);
   _slicedToArray(react.useState(obj4.isAndroid() ? react.PASSKEY_CREDENTIAL_MANAGER : react.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
   if (cResult[0] !== navigation) {
@@ -185,10 +185,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp19 = cResult[3];
   }
   dependencyMap = tmp19;
-  const tmpResult = navigation(15718);
+  const tmpResult = navigation(15751);
   const announceError = tmpResult.useAnnounceError(tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(15719).KeyImage, {});
+    const tmp23 = closure_7(navigation(15752).KeyImage, {});
     cResult[4] = tmp23;
     tmp21 = tmp23;
   } else {
@@ -196,9 +196,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   }
   if (cResult[5] !== first) {
     let stringResult;
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (first) {
       stringResult = string(t.aVMiX3);
     } else {
@@ -220,7 +220,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
       let tmp29 = "" !== tmp11;
       if (tmp29) {
         const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp11 };
-        tmp29 = closure_7(tmp(5147).Text, obj6);
+        tmp29 = closure_7(tmp(5149).Text, obj6);
       }
       cResult[10] = tmp11;
       cResult[11] = tmp29;
@@ -241,8 +241,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
             tmp34 = cResult[18];
           }
           if (cResult[19] !== first) {
-            const string2 = tmp(1126).intl.string;
-            const t2 = tmp(1126).t;
+            const string2 = tmp(1128).intl.string;
+            const t2 = tmp(1128).t;
             class W {
               constructor() {
                 return closure_1(closure_2);
@@ -284,7 +284,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
                 tmp48[3] = tmp5.flexContainer;
                 const items = [tmp31, tmp34, tmp42];
                 tmp48[4] = items;
-                const tmp49 = closure_8(navigation(7035).SafeAreaPaddingView, tmp48);
+                const tmp49 = closure_8(navigation(7037).SafeAreaPaddingView, tmp48);
                 cResult[28] = tmp5.flexContainer;
                 cResult[29] = tmp42;
                 cResult[30] = tmp31;
@@ -298,9 +298,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
                 return closure_1(closure_2);
               }
             }
-            const ButtonGroup = tmp(6174).ButtonGroup;
+            const ButtonGroup = tmp(6176).ButtonGroup;
             const obj7 = { text: tmp39, disabled: first, loading: first, onPress: tmp41, size: "lg" };
-            tmp44[0] = closure_7(navigation(5439).Button, obj7);
+            tmp44[0] = closure_7(navigation(5441).Button, obj7);
             const tmp45 = closure_7(ButtonGroup, tmp44);
             cResult[24] = first;
             cResult[25] = tmp39;
@@ -343,7 +343,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp31 = tmp33;
   }
   const obj10 = { style: tmp5.margin, variant: "text-md/normal", children: tmp24 };
-  const tmp27 = closure_7(navigation(5147).Text, obj10);
+  const tmp27 = closure_7(navigation(5149).Text, obj10);
   cResult[7] = tmp5.margin;
   cResult[8] = tmp24;
   cResult[9] = tmp27;
@@ -362,7 +362,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp11;
   let tmp7;
   let tmp8;
-  const obj = navigation(1503);
+  const obj = navigation(1505);
   navigation = obj.useNavigation();
   const tmp4 = closure_9();
   [tmp7, tmp8] = authenticatorSelection(onRegisterSuccess.useState(false), 2);
@@ -371,7 +371,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   [tmp10, tmp11] = authenticatorSelection(onRegisterSuccess.useState(""), 2);
   dependencyMap = tmp11;
   authenticatorSelection(onRegisterSuccess.useState(""), 2);
-  obj3 = navigation(1382);
+  obj3 = navigation(1384);
   const tmp5Result = authenticatorSelection(onRegisterSuccess.useState(obj3.isAndroid() ? obj3.PASSKEY_CREDENTIAL_MANAGER : obj3.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
   authenticatorSelection = tmp5Result[0];
   const items = [navigation];
@@ -383,17 +383,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(15718);
+  const tmpResult = navigation(15751);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
-  const SafeAreaPaddingView = tmp(7035).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(15719).KeyImage, {}), , ];
+  const SafeAreaPaddingView = tmp(7037).SafeAreaPaddingView;
+  items3 = [closure_7(navigation(15752).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
-  const Text = tmp(5147).Text;
-  const intl = tmp(1126).intl;
+  const Text = tmp(5149).Text;
+  const intl = tmp(1128).intl;
   const string = intl.string;
-  const t = tmp(1126).t;
+  const t = tmp(1128).t;
   const tmp19 = closure_5;
   if (tmp7) {
     stringResult = string(t.aVMiX3);
@@ -404,7 +404,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp20Result = "" !== tmp10;
   if (tmp20Result) {
     const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp20Result = tmp20(tmp(5147).Text, obj6);
+    tmp20Result = tmp20(tmp(5149).Text, obj6);
   }
   items3[2] = tmp20Result;
   items4 = [closure_8(tmp19, obj4), , ];
@@ -414,11 +414,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     shouldDisplayAndroidFidoSelector = tmp20(closure_12, obj7);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6174).ButtonGroup;
-  const Button = tmp(5439).Button;
-  const intl2 = tmp(1126).intl;
+  const ButtonGroup = tmp(6176).ButtonGroup;
+  const Button = tmp(5441).Button;
+  const intl2 = tmp(1128).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1126).t;
+  const t2 = tmp(1128).t;
   if (tmp7) {
     string2Result = string2(t2.wePEBF);
   } else {

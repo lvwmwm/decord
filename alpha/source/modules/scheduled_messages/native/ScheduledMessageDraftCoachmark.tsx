@@ -1,20 +1,20 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13022
+// Function ID: 13023
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 2062, 21, 558, 576, 1126, 12997, 9663, 2]
+// Dependencies: [109, 19, 2065, 21, 558, 576, 1128, 13023, 9679, 2]
 
-// Module 12996 (ScheduledMessageDraftCoachmark)
+// Module 13022 (ScheduledMessageDraftCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import intl3 from "intl" /* 1128 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useCoachmark = tmp(9663);
+const useCoachmark = tmp(9679);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -32,10 +32,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
   const cResult = obj.c(11);
   ({ buttonRef, isVisible, onDismiss } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(onDismiss(1126).t.ZT58S4);
-    const intl2 = tmp(1126).intl;
-    const formatResult = intl2.format(onDismiss(1126).t.Juk17F, {});
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(onDismiss(1128).t.ZT58S4);
+    const intl2 = tmp(1128).intl;
+    const formatResult = intl2.format(onDismiss(1128).t.Juk17F, {});
     cResult[0] = stringResult;
     cResult[1] = formatResult;
     tmp4 = stringResult;

@@ -1,18 +1,18 @@
-// Module ID: 5318
-// Function ID: 5319
+// Module ID: 5320
+// Function ID: 5321
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1207, 1244, 1390, 5319, 4825, 558, 576, 504, 2]
+// Dependencies: [19, 1209, 1246, 1392, 5321, 4828, 558, 576, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption
 
-// Module 5318 (LastUsedVideoBackgroundOption)
+// Module 5320 (LastUsedVideoBackgroundOption)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5319 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5321 */;
 import react from "react" /* 19 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import UserStore from "UserStore" /* 1390 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastUsedV
           tmp8 = tmp3;
         } else {
           tmp8 = null;
-          tmp4(5319);
+          tmp4(5321);
         }
         tmp7 = tmp8;
       } else {

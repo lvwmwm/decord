@@ -1,38 +1,38 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15492
+// Function ID: 15493
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6252, 2069, 502, 2065, 5169, 2116, 1390, 15383, 2064, 1085, 15382, 1295, 4795, 11168, 5356, 1265, 10949, 11159, 11160, 5165, 1279, 2031, 9473, 2002, 1121, 584, 10714, 10936, 10955, 10961, 6284, 11150, 1126, 11220, 11152, 11222, 11773, 5502, 7098, 2]
+// Dependencies: [5, 6254, 2072, 502, 2068, 5171, 2119, 1392, 15418, 2067, 1087, 15417, 1297, 4798, 11184, 5358, 1267, 10964, 11175, 11176, 5167, 1281, 2034, 9489, 2004, 1123, 584, 10729, 10951, 10970, 10976, 6286, 11166, 1128, 11236, 11168, 11238, 11797, 5504, 7100, 2]
 
-// Module 15456 (EmbeddedActivitiesManager)
+// Module 15492 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import v1 from "v1" /* 1279 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5356 */;
-import InteractionTypes from "InteractionTypes" /* 5502 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9473 */;
-import getURLForApplication from "getURLForApplication" /* 10936 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10949 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11159 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 11160 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 11168 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15382 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import v1 from "v1" /* 1281 */;
+import StringUtils from "StringUtils" /* 2034 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4798 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5167 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5358 */;
+import InteractionTypes from "InteractionTypes" /* 5504 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9489 */;
+import getURLForApplication from "getURLForApplication" /* 10951 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10964 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11175 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 11176 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 11184 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15417 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import UserStore from "UserStore" /* 1390 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15383 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import Constants from "Constants" /* 1085 */;
-import LifecycleManager from "LifecycleManager" /* 2002 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import UserStore from "UserStore" /* 1392 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15418 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import Constants from "Constants" /* 1087 */;
+import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, commandOrigin, has, userIds, voiceChannelId;

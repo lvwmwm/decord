@@ -1,21 +1,21 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17854
+// Function ID: 17855
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 10870, 21, 5151, 587, 558, 576, 1631, 17033, 1497, 5035, 17821, 1383, 2]
+// Dependencies: [19, 17, 10885, 21, 5153, 587, 558, 576, 1633, 17066, 1499, 5038, 17855, 1385, 2]
 
-// Module 17820 (YouScreenContainer)
+// Module 17854 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useChatLayoutDefault from "useChatLayout" /* 5035 */;
-import MainTabsConstants from "MainTabsConstants" /* 10870 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17033 */;
-import YouScreenDefault from "YouScreen" /* 17821 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import useChatLayoutDefault from "useChatLayout" /* 5038 */;
+import MainTabsConstants from "MainTabsConstants" /* 10885 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17066 */;
+import YouScreenDefault from "YouScreen" /* 17855 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       initialTab = params.initialTab;
     }
   }
-  const width = tmp5(1497)().width;
+  const width = tmp5(1499)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
     if (cResult[2] === top) {
       let tmp10;
@@ -91,7 +91,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp16Result = tmp16(View, obj4);
         } else {
           const obj7 = { initialTab };
-          tmp16Result = tmp16(tmp5(17821), obj7);
+          tmp16Result = tmp16(tmp5(17855), obj7);
         }
         cResult[8] = initialTab;
         cResult[9] = tmp4.wrapper;
@@ -141,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       initialTab = params.initialTab;
     }
   }
-  const width = tmp2(1497)().width;
+  const width = tmp2(1499)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
     const items = [tmp.container, ];
     let tmp9;
@@ -162,12 +162,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp6Result = tmp6(tmp8, obj4);
     } else {
       const obj7 = { initialTab };
-      tmp6Result = tmp6(tmp2(17821), obj7);
+      tmp6Result = tmp6(tmp2(17855), obj7);
     }
     tmp6Result2 = tmp6(tmp8, obj3);
   } else {
     const obj8 = { initialTab };
-    tmp6Result2 = tmp6(tmp2(17821), obj8);
+    tmp6Result2 = tmp6(tmp2(17855), obj8);
   }
   return tmp6Result2;
 }));

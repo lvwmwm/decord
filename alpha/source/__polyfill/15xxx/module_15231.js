@@ -1,17 +1,30 @@
 // Module ID: 15231
 // Function ID: 15232
-// Dependencies: [15232]
+// Dependencies: [15144, 15232]
+// Exports: getSupportedTimeZones
 
 // Module 15231
-import _mod15232 from "module_15232" /* 15232 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default (obj) => {
-  let tmp2;
-  if (typeof obj === "object") {
-    tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod15232(obj);
-  }
-  return tmp2;
+export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
+  _require = locale;
+  const timezones = require("module_15232").timezones;
+  return timezones.filter((item) => {
+    function isSupported(timeZone, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { timeZone };
+        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
+        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
+      } catch (err) {
+        return false;
+      }
+    }
+    return isSupported(item, locale);
+  });
 };

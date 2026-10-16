@@ -1,23 +1,23 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18374
+// Function ID: 18375
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2064, 6164, 6113, 502, 2065, 2012, 2116, 5172, 1999, 1085, 1382, 18333, 7028, 2]
+// Dependencies: [17, 2067, 6166, 6115, 502, 2068, 2014, 2119, 5174, 2001, 1087, 1384, 18375, 7030, 2]
 
-// Module 18332 (AudioSessionModeManager)
+// Module 18374 (AudioSessionModeManager)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import VoicePermissionManager from "VoicePermissionManager" /* 18333 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6164 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
+import Constants from "Constants" /* 1087 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 18375 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6166 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import VoiceStateStore from "VoiceStateStore" /* 5172 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import AppStateStore from "AppStateStore" /* 2001 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let map;

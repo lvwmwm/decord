@@ -7,5 +7,5 @@
 import react_native from "react-native" /* 17 */;
 
 
-export const CompatScroller = react_native.ScrollView;
-export const CompatAnimatedScroller = react_native.Animated.ScrollView;
+export const CompatView = react_native.View;
+export const CompatAnimatedView = react_native.Animated.View;

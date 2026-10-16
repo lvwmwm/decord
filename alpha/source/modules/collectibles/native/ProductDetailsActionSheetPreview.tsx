@@ -1,17 +1,17 @@
-// Module ID: 14101
-// Function ID: 14102
+// Module ID: 14133
+// Function ID: 14134
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 1993, 14102, 14104, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 1995, 14134, 14136, 2]
 
-// Module 14101 (ProductDetailsActionSheetPreview)
+// Module 14133 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 14102 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 14134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CollectiblesItemType = tmp(1993);
+const CollectiblesItemType = tmp(1995);
 ({ useCallback: closure_4, useState: hasOwnProperty } = react);
 const View = react_native.View;
 const jsx = Fragment.jsx;

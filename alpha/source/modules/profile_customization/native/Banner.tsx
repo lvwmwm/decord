@@ -1,21 +1,21 @@
-// Module ID: 8599
-// Function ID: 8600
+// Module ID: 8607
+// Function ID: 8608
 // Name: Banner
-// Dependencies: [19, 17, 1085, 21, 5151, 558, 576, 1103, 5088, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 558, 576, 1105, 5091, 2]
 
-// Module 8599 (Banner)
+// Module 8607 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import FastImageDefault from "FastImage" /* 5088 */;
+import Constants from "Constants" /* 1087 */;
+import FastImageDefault from "FastImage" /* 5091 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const utils_ColorUtils = tmp(1103);
+const utils_ColorUtils = tmp(1105);
 const View = react_native.View;
 const BANNER_HEIGHT = Constants.BANNER_HEIGHT;
 const jsx = Fragment.jsx;

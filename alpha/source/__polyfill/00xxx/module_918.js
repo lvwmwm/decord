@@ -1,22 +1,22 @@
 // Module ID: 918
 // Function ID: 919
-// Dependencies: [919]
-// Exports: getActivationStart
+// Dependencies: [916]
+// Exports: addPageListener, removePageListener
 
 // Module 918
-import _mod919 from "module_919" /* 919 */;
+import _mod916 from "module_916" /* 916 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getActivationStart = () => {
-  const obj = _mod919;
-  const navigationEntry = obj.getNavigationEntry();
-  let num;
-  if (navigationEntry != null) {
-    num = navigationEntry.activationStart;
+export const addPageListener = function addPageListener(pagehide, onVisibilityUpdate, arg2) {
+  if (_mod916.WINDOW.document) {
+    const WINDOW = _mod916.WINDOW;
+    const listener = WINDOW.addEventListener(pagehide, onVisibilityUpdate, arg2);
   }
-  if (num == null) {
-    num = 0;
+};
+export const removePageListener = function removePageListener(pagehide, onVisibilityUpdate, arg2) {
+  if (_mod916.WINDOW.document) {
+    const WINDOW = _mod916.WINDOW;
+    const removed = WINDOW.removeEventListener(pagehide, onVisibilityUpdate, arg2);
   }
-  return num;
 };

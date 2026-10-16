@@ -1,27 +1,27 @@
-// Module ID: 5472
-// Function ID: 5473
+// Module ID: 5474
+// Function ID: 5475
 // Name: MarkupChannelMentionRule
-// Dependencies: [2117, 2065, 2087, 4806, 4816, 1390, 1085, 2031, 1415, 1126, 5473, 5474, 5481, 5484, 5482, 5471, 1949, 2]
+// Dependencies: [2120, 2068, 2090, 4809, 4819, 1392, 1087, 2034, 1417, 1128, 5475, 5476, 5483, 5486, 5484, 5473, 1951, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5472 (MarkupChannelMentionRule)
-import intl3 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import _modDef1949 from "module_1949" /* 1949 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5471 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5473 */;
-import ChannelUtils from "ChannelUtils" /* 5474 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import LinkUtils from "LinkUtils" /* 5482 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 5484 */;
-import GatedChannelStore from "GatedChannelStore" /* 2117 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+// Module 5474 (MarkupChannelMentionRule)
+import intl3 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import _modDef1951 from "module_1951" /* 1951 */;
+import StringUtils from "StringUtils" /* 2034 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5473 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5475 */;
+import ChannelUtils from "ChannelUtils" /* 5476 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import LinkUtils from "LinkUtils" /* 5484 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5486 */;
+import GatedChannelStore from "GatedChannelStore" /* 2120 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "ix" };
+          const obj9 = { type: "link", content: items4, target: url, title: "unicodeVersion" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef1949.defaultRules.url.order - 0.5,
+  order: _modDef1951.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_RE;
@@ -342,7 +342,7 @@ obj3 = {
     let tmp4;
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "ix" };
+      const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -370,7 +370,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef1949.defaultRules.url.order - 0.5,
+  order: _modDef1951.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -420,7 +420,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "ix" };
+    const obj = { type: "link", content: items, target: tmp, title: "unicodeVersion" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

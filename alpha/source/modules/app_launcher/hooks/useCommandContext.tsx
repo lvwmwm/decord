@@ -1,13 +1,13 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11856
+// Function ID: 11857
 // Name: useCommandContext
-// Dependencies: [19, 2087, 558, 576, 2]
+// Dependencies: [19, 2090, 558, 576, 2]
 // Exports: getCommandContext
 
-// Module 11832 (useCommandContext)
+// Module 11856 (useCommandContext)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

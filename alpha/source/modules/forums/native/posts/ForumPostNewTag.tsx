@@ -1,20 +1,20 @@
-// Module ID: 12764
-// Function ID: 12765
+// Module ID: 12790
+// Function ID: 12791
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 5151, 587, 558, 576, 1200, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 1202, 2]
 
-// Module 12764 (ForumPostNewTag)
+// Module 12790 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };

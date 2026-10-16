@@ -1,14 +1,14 @@
-// Module ID: 10463
-// Function ID: 10464
+// Module ID: 10479
+// Function ID: 10480
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 558, 576, 1126, 10464, 10465, 10467, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 10480, 10481, 10483, 2]
 
-// Module 10463 (ApplicationStreamActivityStatus)
+// Module 10479 (ApplicationStreamActivityStatus)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10464 */;
-import TvIcon from "TvIcon" /* 10465 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10467 */;
+import intl3 from "intl" /* 1128 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10480 */;
+import TvIcon from "TvIcon" /* 10481 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10483 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -50,12 +50,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
   if (cResult[0] !== tmp7) {
     let formatResult;
     if (null != tmp7) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj2 = { name: tmp7 };
-      formatResult = intl2.format(tmp(1126).t["0wJXSh"], obj2);
+      formatResult = intl2.format(tmp(1128).t["0wJXSh"], obj2);
     } else {
-      const intl = tmp(1126).intl;
-      formatResult = intl.string(tmp(1126).t.eXan7B);
+      const intl = tmp(1128).intl;
+      formatResult = intl.string(tmp(1128).t.eXan7B);
     }
     cResult[0] = tmp7;
     cResult[1] = formatResult;
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
   const tmp10 = hasOwnProperty;
   const tmp11 = React3;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(10465).TvIcon, style: iconStyle };
+    const obj2 = { icon: tmp7(10481).TvIcon, style: iconStyle };
     const tmp15 = ActivityStatusIconDefault;
     tmp12 = _false(tmp15, obj2);
   }

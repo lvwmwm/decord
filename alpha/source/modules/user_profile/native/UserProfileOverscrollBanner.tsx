@@ -1,24 +1,24 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8597
+// Function ID: 8598
 // Name: UserProfileOverscrollBanner
-// Dependencies: [109, 19, 17, 21, 4906, 8590, 558, 576, 8591, 1382, 2]
+// Dependencies: [109, 19, 17, 21, 4909, 8598, 558, 576, 8599, 1384, 2]
 
-// Module 8589 (UserProfileOverscrollBanner)
+// Module 8597 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8590 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8591 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8598 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8599 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1382);
+const PlatformUtils = tmp(1384);
 let closure_3 = ["bannerAnimatedStyle", "bannerImageAnimatedStyle", "blurAnimatedProps", "showBlur"];
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

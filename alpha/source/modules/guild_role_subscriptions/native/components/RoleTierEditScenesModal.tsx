@@ -1,18 +1,18 @@
-// Module ID: 18842
-// Function ID: 18843
+// Module ID: 18884
+// Function ID: 18885
 // Name: RoleTierEditScenesModal
-// Dependencies: [32, 19, 18832, 16146, 21, 5151, 38, 7310, 7945, 1126, 18843, 18831, 18844, 18865, 18868, 18870, 558, 576, 1631, 6150, 6390, 6908, 18872, 2]
+// Dependencies: [32, 19, 18874, 16179, 21, 5153, 38, 7312, 7948, 1128, 18885, 18873, 18886, 18907, 18910, 18912, 558, 576, 1633, 6152, 6392, 6910, 18914, 2]
 
-// Module 18842 (RoleTierEditScenesModal)
+// Module 18884 (RoleTierEditScenesModal)
 import _modDef38 from "module_38" /* 38 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16146 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18844 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16179 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18832 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18874 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,11 +25,11 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp3;
-const GuildRoleSubscriptionGroupDetailsModalDefault = tmp3(18831);
-const GuildRoleSubscriptionGroupGatingModalDefault = tmp3(18843);
-const GuildRoleSubscriptionTierConfirmationModalDefault = tmp3(18865);
-const GuildRoleSubscriptionTierDesignModalDefault = tmp3(18868);
-const GuildRoleSubscriptionTierDetailsModalDefault = tmp3(18870);
+const GuildRoleSubscriptionGroupDetailsModalDefault = tmp3(18873);
+const GuildRoleSubscriptionGroupGatingModalDefault = tmp3(18885);
+const GuildRoleSubscriptionTierConfirmationModalDefault = tmp3(18907);
+const GuildRoleSubscriptionTierDesignModalDefault = tmp3(18910);
+const GuildRoleSubscriptionTierDetailsModalDefault = tmp3(18912);
 function orderify(scene, arg1) {
   let obj2;
   const sum = arg1 + 1;
@@ -653,7 +653,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleTierEdit
   let items2;
   let items3;
   let screens;
-  const f136104 = () => {
+  const f136551 = () => {
     let tmp3;
     const obj = { screens: buildScreenMap(modalKey, handleClose), initialStack: tmp3 };
     _modDef38(memo.length > 0, "At least one step must be provided to RoleTierEditScenesModal");
@@ -716,8 +716,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleTierEdit
     return scene;
   }), items1);
   let obj = { children: items2 };
-  ({ screens, initialStack } = modalKey(steps[20])(f136104));
-  const tmp5 = modalKey(steps[20])(f136104);
+  ({ screens, initialStack } = modalKey(steps[20])(f136551));
+  const tmp5 = modalKey(steps[20])(f136551);
   let obj2 = {
     screens,
     initialRouteStack: initialStack,

@@ -1,11 +1,11 @@
-// Module ID: 1275
-// Function ID: 1276
+// Module ID: 1277
+// Function ID: 1278
 // Name: discord_common/IdGenerator
-// Dependencies: [14, 1276, 2]
+// Dependencies: [14, 1278, 2]
 
-// Module 1275 (discord_common/IdGenerator)
+// Module 1277 (discord_common/IdGenerator)
 import _modDef14 from "module_14" /* 14 */;
-import Buffer from "Buffer" /* 1276 */;
+import Buffer from "Buffer" /* 1278 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/id-generator/IdGenerator.tsx");

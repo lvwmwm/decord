@@ -1,19 +1,48 @@
 // Module ID: 12384
 // Function ID: 12385
-// Dependencies: []
-// Exports: flatten
+// Dependencies: [12296, 12299, 12298, 12304]
+// Exports: addConsoleInstrumentationHandler
 
 // Module 12384
+import _mod12296 from "module_12296" /* 12296 */;
+import _mod12299 from "module_12299" /* 12299 */;
 
-export const flatten = function flatten(arr) {
-  const f145664 = (arr) => {
-    if (Array.isArray(arr)) {
-      const item = arr.forEach(f145664);
-    } else {
-      items.push(arr);
-    }
-  };
-  const items = [];
-  let item = arr.forEach(f145664);
-  return items;
+let tmp;
+const _mod12298 = tmp(12298);
+function instrumentConsole() {
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  if ("console" in _mod12299.GLOBAL_OBJ) {
+    const CONSOLE_LEVELS = _mod12298.CONSOLE_LEVELS;
+    const item = CONSOLE_LEVELS.forEach((item) => {
+      let closure_0 = item;
+      let tmp = closure_0;
+      let tmp2 = closure_1;
+      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
+        const tmpResult = tmp(tmp2[3]);
+        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
+          _mod12298.originalConsoleMethods[level] = arg0;
+          return () => {
+            const items = [...arguments];
+            const obj = { args: items, level };
+            const obj2 = level(closure_2_1[0]);
+            obj2.triggerHandlers("console", obj);
+            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
+            const tmp = level;
+            const tmp2 = closure_2_1;
+            if (obj3) {
+              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
+            }
+          };
+        });
+      }
+    });
+  }
+}
+
+export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
+  const obj = _mod12296;
+  obj.addHandler("console", arg0);
+  const obj2 = _mod12296;
+  obj2.maybeInstrument("console", instrumentConsole);
 };

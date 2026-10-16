@@ -1,27 +1,27 @@
-// Module ID: 18831
-// Function ID: 18832
+// Module ID: 18873
+// Function ID: 18874
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18832, 16146, 1085, 21, 5151, 558, 576, 14796, 18827, 1126, 8894, 18833, 5147, 16158, 8800, 18834, 2]
+// Dependencies: [32, 19, 17, 18874, 16179, 1087, 21, 5153, 558, 576, 14829, 18869, 1128, 8902, 18875, 5149, 16191, 8808, 18876, 2]
 
-// Module 18831 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 18873 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Form from "Form" /* 8800 */;
-import FormHeaderDefault from "FormHeader" /* 8894 */;
-import FormStylesDefault from "FormStyles" /* 14796 */;
-import FormSeparatorDefault from "FormSeparator" /* 16158 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18827 */;
-import FormImagePicker from "FormImagePicker" /* 18833 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18834 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Form from "Form" /* 8808 */;
+import FormHeaderDefault from "FormHeader" /* 8902 */;
+import FormStylesDefault from "FormStyles" /* 14829 */;
+import FormSeparatorDefault from "FormSeparator" /* 16191 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18869 */;
+import FormImagePicker from "FormImagePicker" /* 18875 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18832 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16146 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18874 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16179 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
   const roleSubscriptionSettingsDisabled = obj2.useRoleSubscriptionSettingsDisabled();
   const header = tmp6.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl5.t["3S8gA7"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -82,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
         const _Symbol = Symbol;
         const coverDescription = tmp4.coverDescription;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const stringResult1 = intl2.string(intl5.t["0ng4rB"]);
           cResult[8] = stringResult1;
           tmp16 = stringResult1;
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
             const _Symbol2 = Symbol;
             const header2 = tmp6.header;
             if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1126).intl;
+              const intl3 = tmp(1128).intl;
               const stringResult2 = intl3.string(intl5.t["74JctW"]);
               cResult[17] = stringResult2;
               tmp28 = stringResult2;
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
             const _Symbol3 = Symbol;
             const textInput = tmp6.textInput;
             if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1126).intl;
+              const intl4 = tmp(1128).intl;
               const stringResult3 = intl4.string(intl5.t["3YHwoG"]);
               cResult[20] = stringResult3;
               tmp33 = stringResult3;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
     }
   }
   const obj10 = { style: tmp4.coverPhoto, image: cover, imageUploadSize: UPLOAD_BANNER_SIZE.width, previewShape: FormImagePicker.PreviewShape.SQUIRCLE, setImage: setCover, disabled: roleSubscriptionSettingsDisabled, standalone: true, size: 114 };
-  const ImagePickerIcon = tmp(18833).ImagePickerIcon;
+  const ImagePickerIcon = tmp(18875).ImagePickerIcon;
   const tmp15 = React4(ImagePickerIcon, obj10);
   cResult[3] = cover;
   cResult[4] = roleSubscriptionSettingsDisabled;
@@ -271,9 +271,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     tmp9 = null != tmp5;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl5.t.EPOLQD);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl5.t["LeAm+L"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

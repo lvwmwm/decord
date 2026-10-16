@@ -1,18 +1,18 @@
-// Module ID: 15445
-// Function ID: 15446
+// Module ID: 15481
+// Function ID: 15482
 // Name: RPCServer
-// Dependencies: [5, 5855, 1085, 12, 11244, 11234, 15388, 1265, 38, 15387, 10945, 1102, 2]
+// Dependencies: [5, 5857, 1087, 12, 11262, 11250, 15428, 1267, 38, 15427, 10960, 1104, 2]
 
-// Module 15445 (RPCServer)
+// Module 15481 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Constants2 from "Constants" /* 5855 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 10945 */;
-import RPCErrorDefault from "RPCError" /* 11234 */;
-import transformUserDefault from "transformUser" /* 11244 */;
-import validateScopeDefault from "validateScope" /* 15388 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Constants2 from "Constants" /* 5857 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 10960 */;
+import RPCErrorDefault from "RPCError" /* 11250 */;
+import transformUserDefault from "transformUser" /* 11262 */;
+import validateScopeDefault from "validateScope" /* 15428 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c5, command, dependencyMap, importDefault;
@@ -82,7 +82,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f121233 = (result) => {
+    const f121644 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -202,8 +202,8 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f121233).then;
-    promise.then(f121233);
+    const then = promise.then(f121644).then;
+    promise.then(f121644);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

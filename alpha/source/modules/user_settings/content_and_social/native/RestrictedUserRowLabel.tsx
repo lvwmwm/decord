@@ -1,15 +1,15 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15770
+// Function ID: 15771
 // Name: RestrictedUserRowLabel
-// Dependencies: [19, 17, 21, 558, 576, 4874, 587, 1126, 5147, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4877, 587, 1128, 5149, 2]
 
-// Module 15737 (RestrictedUserRowLabel)
+// Module 15770 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4874 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl2 from "intl" /* 1128 */;
+import useToken from "useToken" /* 4877 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
   const obj3 = useToken;
   const token1 = obj3.useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.cSgdvE);
     cResult[0] = stringResult;
     first = stringResult;
@@ -79,7 +79,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
       let tmp12 = tmp6;
       if (tmp12) {
         const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: userRecord.username };
-        tmp12 = React3(tmp(5147).Text, obj5);
+        tmp12 = React3(tmp(5149).Text, obj5);
       }
       cResult[5] = null != userRecord.globalName;
       cResult[6] = userRecord.username;

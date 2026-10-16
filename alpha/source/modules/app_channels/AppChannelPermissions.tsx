@@ -1,11 +1,11 @@
-// Module ID: 4813
-// Function ID: 4814
+// Module ID: 4816
+// Function ID: 4817
 // Name: AppChannelPermissions
-// Dependencies: [1085, 1097, 2]
+// Dependencies: [1087, 1099, 2]
 
-// Module 4813 (AppChannelPermissions)
-import Constants from "Constants" /* 1085 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1097 */;
+// Module 4816 (AppChannelPermissions)
+import Constants from "Constants" /* 1087 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1099 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

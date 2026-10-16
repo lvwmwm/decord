@@ -1,27 +1,27 @@
-// Module ID: 14746
-// Function ID: 14747
+// Module ID: 14779
+// Function ID: 14780
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1390, 1085, 13243, 21, 5151, 6122, 587, 558, 576, 13245, 1265, 1382, 5456, 1506, 6150, 5018, 1126, 8700, 7310, 14747, 6421, 5147, 14748, 14750, 1631, 6908, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 13269, 21, 5153, 6124, 587, 558, 576, 13271, 1267, 1384, 5458, 1508, 6152, 5021, 1128, 8708, 7312, 14780, 6423, 5149, 14781, 14783, 1633, 6910, 2]
 
-// Module 14746 (AddFriendModal)
+// Module 14779 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import Navigator from "Navigator" /* 6908 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13243 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13245 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import Navigator from "Navigator" /* 6910 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13269 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13271 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import TextStyles from "TextStyles" /* 6122 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import TextStyles from "TextStyles" /* 6124 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -678,7 +678,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendMod
   if (cResult[0] !== initialParams) {
     const obj2 = { ADD_FRIEND: obj3 };
     obj3 = { ignoreKeyboard: true, title: intl.string(intl4.t.w5uwoI), initialParams, render };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     cResult[0] = initialParams;
     cResult[1] = obj2;
     tmp4 = obj2;

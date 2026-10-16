@@ -1,33 +1,33 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17600
+// Function ID: 17601
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9519, 1085, 1096, 21, 5151, 558, 576, 4906, 17567, 17569, 5456, 5087, 5035, 17570, 4883, 17571, 5390, 4907, 1504, 5041, 17019, 11613, 6555, 5028, 17018, 584, 5042, 2]
+// Dependencies: [32, 19, 17, 9535, 1087, 1098, 21, 5153, 558, 576, 4909, 17601, 17603, 5458, 5090, 5038, 17604, 4886, 17605, 5392, 4910, 1506, 5044, 17052, 11637, 6557, 5031, 17051, 584, 5045, 2]
 
-// Module 17566 (MainTabsChannelScreenStack)
+// Module 17600 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 1096 */;
-import Link from "Link" /* 1504 */;
-import native from "native" /* 4883 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4907 */;
-import useChatLayoutDefault from "useChatLayout" /* 5035 */;
-import ChatInputUtils from "ChatInputUtils" /* 5041 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import react_native from "react-native" /* 9519 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11613 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17018 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17019 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17567 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17569 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17570 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17571 */;
+import Constants2 from "Constants" /* 1098 */;
+import Link from "Link" /* 1506 */;
+import native from "native" /* 4886 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4910 */;
+import useChatLayoutDefault from "useChatLayout" /* 5038 */;
+import ChatInputUtils from "ChatInputUtils" /* 5044 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import react_native from "react-native" /* 9535 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11637 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17051 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17052 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17601 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17603 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17604 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17605 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,9 +44,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp5;
-const ReanimatedRexport = tmp(4906);
-const react3 = tmp5(5390);
-const useMountEffect = tmp(5456);
+const ReanimatedRexport = tmp(4909);
+const react3 = tmp5(5392);
+const useMountEffect = tmp(5458);
 function getKey(index) {
   return String(index.index);
 }
@@ -1560,7 +1560,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5035);
+          const tmp7Result = tmp7(5038);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

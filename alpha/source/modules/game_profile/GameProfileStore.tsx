@@ -1,9 +1,9 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9111
+// Function ID: 9112
 // Name: GameProfileStore
 // Dependencies: [504, 584, 2]
 
-// Module 9103 (GameProfileStore)
+// Module 9111 (GameProfileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

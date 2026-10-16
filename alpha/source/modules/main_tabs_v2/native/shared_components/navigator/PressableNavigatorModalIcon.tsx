@@ -1,13 +1,13 @@
-// Module ID: 9525
-// Function ID: 9526
+// Module ID: 9541
+// Function ID: 9542
 // Name: PressableNavigatorModalIcon
-// Dependencies: [21, 9524, 9518, 9521, 9526, 1126, 2]
+// Dependencies: [21, 9540, 9534, 9537, 9542, 1128, 2]
 // Exports: default
 
-// Module 9525 (PressableNavigatorModalIcon)
+// Module 9541 (PressableNavigatorModalIcon)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9524 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9540 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -25,13 +25,13 @@ export default function PressableNavigatorModalIcon(onPress) {
   }
   PressableNavigatorButtonWrapperDefault;
   const HeaderIconButton = HeaderShared.HeaderIconButton;
-  const intl = tmp5(1126).intl;
+  const intl = tmp5(1128).intl;
   const string = intl.string;
-  const t = tmp5(1126).t;
+  const t = tmp5(1128).t;
   if ("back" === str) {
     stringResult = string(t["13/7kX"]);
   } else {
     stringResult = string(t.cpT0Cq);
   }
-  return <tmp4 isModal><HeaderIconButton source={importDefault("back" === str ? 9521 : 9526)} onPress={goBack} accessibilityLabel={stringResult} /></tmp4>;
+  return <tmp4 isModal><HeaderIconButton source={importDefault("back" === str ? 9537 : 9542)} onPress={goBack} accessibilityLabel={stringResult} /></tmp4>;
 };

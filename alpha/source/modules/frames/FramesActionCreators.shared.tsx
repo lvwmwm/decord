@@ -1,19 +1,19 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 10966
+// Function ID: 10967
 // Name: launchFrame
-// Dependencies: [5, 10935, 10919, 6289, 10952, 584, 10954, 10938, 10955, 10961, 10948, 2]
-// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
+// Dependencies: [5, 10950, 10934, 6291, 10967, 584, 10969, 10953, 10970, 10976, 10963, 2]
+// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 10951 (launchFrame)
+// Module 10966 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6289 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10938 */;
-import leaveFrame from "leaveFrame" /* 10948 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10952 */;
-import createProxyTicket from "createProxyTicket" /* 10954 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10953 */;
+import leaveFrame from "leaveFrame" /* 10963 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10967 */;
+import createProxyTicket from "createProxyTicket" /* 10969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10935 */;
-import FramesConstants from "FramesConstants" /* 10919 */;
+import FramesStore from "FramesStore" /* 10950 */;
+import FramesConstants from "FramesConstants" /* 10934 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10948);
+        const tmp4Result = tmp4(10963);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -393,9 +393,9 @@ export { clearMainFrameSlot };
 export { demoteMainFrame };
 export { promoteFrame };
 export { updateFrameLayoutMode };
-export const setFramePrefersPictureInPictureOnNavigateAway = function setFramePrefersPictureInPictureOnNavigateAway(frameId, enabled) {
+export const setFrameRunsInBackground = function setFrameRunsInBackground(frameId, enabled) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY", frameId, enabled };
+  const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId, enabled };
   obj.dispatch(obj2);
 };
 export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {

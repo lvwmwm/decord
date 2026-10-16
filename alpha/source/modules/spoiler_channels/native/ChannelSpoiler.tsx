@@ -1,25 +1,25 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13260
+// Function ID: 13261
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6252, 2065, 2087, 12815, 21, 5151, 587, 558, 576, 504, 5481, 12816, 5165, 6320, 5033, 8376, 5147, 1126, 5437, 5138, 6405, 11485, 6134, 2]
+// Dependencies: [32, 19, 17, 6254, 2068, 2090, 12841, 21, 5153, 587, 558, 576, 504, 5483, 12842, 5167, 6322, 5036, 8384, 5149, 1128, 5439, 5141, 6407, 11505, 6136, 2]
 
-// Module 13234 (ChannelSpoiler)
+// Module 13260 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import RootNavigationRef from "RootNavigationRef" /* 5033 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5138 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
-import useChannelNameDefault from "useChannelName" /* 5481 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
-import GatedContentDefault from "GatedContent" /* 11485 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
+import RootNavigationRef from "RootNavigationRef" /* 5036 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5141 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5167 */;
+import useChannelNameDefault from "useChannelName" /* 5483 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
+import GatedContentDefault from "GatedContent" /* 11505 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let c10;
 let size;
 let tmp14;
 let unpackModuleId;
-const VoicePanelStateContextDefault = tmp14(12816);
+const VoicePanelStateContextDefault = tmp14(12842);
 const View = react_native.View;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -186,7 +186,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp7(12816)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp7(12842)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -219,18 +219,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }, items3);
   if (null != stateFromStores1) {
-    const tmpResult = tmp(8376);
+    const tmpResult = tmp(8384);
     channelIconComponent = tmpResult.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {
     let obj3 = { style: { flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }, children: items4 };
     items4 = [closure_10(channelIconComponent, { size: "lg", color: "mobile-text-heading-primary" }), ];
     const obj5 = { variant: "heading-xxl/bold", color: "mobile-text-heading-primary", lineClamp: 1, style: { flexShrink: 1 }, children: tmp8 };
-    items4[1] = closure_10(tmp(5147).Text, obj5);
+    items4[1] = closure_10(tmp(5149).Text, obj5);
     stringResult = closure_11(View, obj3);
   } else {
-    const intl = tmp(1126).intl;
-    stringResult = intl.string(tmp(1126).t["q38/ae"]);
+    const intl = tmp(1128).intl;
+    stringResult = intl.string(tmp(1128).t["q38/ae"]);
   }
   let topic;
   if (stateFromStores1 != null) {
@@ -243,14 +243,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     if ("" !== str.trim()) {
       const obj6 = { spacing: 4, style: tmp4.subtitleContainer, children: items5 };
       const obj7 = { style: tmp4.subtitleMeasure, pointerEvents: "none", children: closure_10(Text2, obj8) };
-      const Stack = tmp(5437).Stack;
+      const Stack = tmp(5439).Stack;
       obj8 = { variant: "text-md/medium", maxFontSizeMultiplier: 2, onTextLayout: callback1, children: tmp7Result.parseTopic(stateFromStores1.topic, true, obj9) };
-      Text2 = tmp(5147).Text;
+      Text2 = tmp(5149).Text;
       obj9 = { channelId: stateFromStores1.id };
       tmp7Result = MarkupUtilsDefault;
       items5 = [closure_10(View, obj7), , , ];
       const obj10 = { color: "text-muted", variant: "text-md/medium", style: tmp4.subtitle, maxFontSizeMultiplier: 2, lineClamp: 3, children: tmp7Result3.parseTopic(stateFromStores1.topic, true, obj11) };
-      const Text3 = tmp(5147).Text;
+      const Text3 = tmp(5149).Text;
       obj11 = { channelId: stateFromStores1.id };
       tmp7Result3 = MarkupUtilsDefault;
       items5[1] = closure_10(Text3, obj10);
@@ -259,10 +259,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
       const tmp26 = View;
       if (first) {
         const obj12 = { onPress: callback2, accessibilityRole: "button", children: closure_10(Text, obj13) };
-        const PressableHighlight = tmp(6405).PressableHighlight;
-        obj13 = { variant: "text-sm/medium", color: "text-brand", style: { textDecorationLine: "underline" }, children: intl2.string(tmp(1126).t["/QvRak"]) };
-        Text = tmp(5147).Text;
-        intl2 = tmp(1126).intl;
+        const PressableHighlight = tmp(6407).PressableHighlight;
+        obj13 = { variant: "text-sm/medium", color: "text-brand", style: { textDecorationLine: "underline" }, children: intl2.string(tmp(1128).t["/QvRak"]) };
+        Text = tmp(5149).Text;
+        intl2 = tmp(1128).intl;
         tmp25Result = tmp25(PressableHighlight, obj12);
       }
       items5[2] = tmp25Result;
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }
   const obj15 = {
-    modalType: tmp(6134).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
+    modalType: tmp(6136).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
     onAgree: function handleAgree() {
       const obj = GuildActionCreatorsDefault;
       obj.spoilerAgree(channelId.channelId);
@@ -280,16 +280,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     onDisagree: callback,
     title: stringResult,
     subtitle: tmp24Result,
-    description: intl3.string(tmp(1126).t["08bm2Z"]),
-    agreement: intl4.string(tmp(1126).t.KmRwcW),
-    disagreement: intl5.string(tmp(1126).t["/g10LC"]),
+    description: intl3.string(tmp(1128).t["08bm2Z"]),
+    agreement: intl4.string(tmp(1128).t.KmRwcW),
+    disagreement: intl5.string(tmp(1128).t["/g10LC"]),
     guildId: id,
     channelId: channelId.channelId
   };
   const tmp7Result4 = GatedContentDefault;
-  intl3 = tmp(1126).intl;
-  intl4 = tmp(1126).intl;
-  intl5 = tmp(1126).intl;
+  intl3 = tmp(1128).intl;
+  intl4 = tmp(1128).intl;
+  intl5 = tmp(1128).intl;
   id = undefined;
   const tmp21 = closure_10;
   if (stateFromStores != null) {

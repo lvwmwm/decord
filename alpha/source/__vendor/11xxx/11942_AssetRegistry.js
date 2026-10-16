@@ -1,10 +1,10 @@
 // Module ID: 11942
 // Function ID: 11943
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 11942 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 128, height: 128, scales: [2, 3], hash: "153e24032a5a8790888aef41caaf4b2c", name: "app_dock_not_found_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "d51dcd36c49102cc28f65e2bcdf9f203", name: "ic_file_small_spreadsheet", type: "png" });

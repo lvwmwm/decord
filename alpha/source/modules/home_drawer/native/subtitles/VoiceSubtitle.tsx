@@ -1,13 +1,13 @@
-// Module ID: 17361
-// Function ID: 17362
+// Module ID: 17395
+// Function ID: 17396
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 576, 5469, 1126, 5147, 2]
+// Dependencies: [19, 21, 558, 576, 5471, 1128, 5149, 2]
 
-// Module 17361 (VoiceSubtitle)
+// Module 17395 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5471 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubti
       tmp4 = cResult[2];
     }
     if (cResult[5] !== tmp4) {
-      const tmp9 = jsx(guildId(5147).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      const tmp9 = jsx(guildId(5149).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;
@@ -47,10 +47,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubti
   } else {
     tmp5 = cResult[4];
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const format = intl.format;
   const obj3 = { users: mapped.join(", "), overflowCount: Math.max(voiceUsers.length - 2, 0) };
-  const r1Vkoc = tmp(1126).t.r1Vkoc;
+  const r1Vkoc = tmp(1128).t.r1Vkoc;
   const substr = voiceUsers.slice(0, 2);
   mapped = substr.map(tmp5);
   const formatResult = format(r1Vkoc, obj3);

@@ -1,12 +1,12 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17821
+// Function ID: 17822
 // Name: getGamePlatform
-// Dependencies: [1085, 13943, 2]
+// Dependencies: [1087, 13975, 2]
 // Exports: default
 
-// Module 17787 (getGamePlatform)
-import isOnXboxDefault from "isOnXbox" /* 13943 */;
-import Constants from "Constants" /* 1085 */;
+// Module 17821 (getGamePlatform)
+import isOnXboxDefault from "isOnXbox" /* 13975 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c2;

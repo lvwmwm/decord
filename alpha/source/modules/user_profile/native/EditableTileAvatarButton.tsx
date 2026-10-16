@@ -1,27 +1,27 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15626
+// Function ID: 15627
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 5140, 8503, 21, 558, 576, 504, 2041, 8512, 1200, 1415, 15592, 1126, 15589, 15521, 2]
+// Dependencies: [19, 5143, 8511, 21, 558, 576, 504, 2044, 8520, 1202, 1417, 15625, 1128, 15622, 15557, 2]
 
-// Module 15593 (EditableTileAvatarButton)
+// Module 15626 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8512 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15589 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15592 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8520 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15622 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15625 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8503 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8511 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp21;
-const SpinAnimationDefault = tmp21(15521);
+const SpinAnimationDefault = tmp21(15557);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTileAvatarButtonBase(arg0) {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   }
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const GifAutoPlay = tmp(2041).GifAutoPlay;
+  const GifAutoPlay = tmp(2044).GifAutoPlay;
   const tmp9 = !stateFromStores && GifAutoPlay.useSetting();
   if (cResult[2] === avatarChange) {
     if (cResult[3] === tmp9) {
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   const obj5 = { userId: user.id, image: avatarChange };
   const tmpResult5 = RecentAvatarUtils;
   const pendingAvatarSrc = tmpResult5.getPendingAvatarSrc(obj5);
-  const AVATAR_SIZE_MAP = tmp(1200).AVATAR_SIZE_MAP;
+  const AVATAR_SIZE_MAP = tmp(1202).AVATAR_SIZE_MAP;
   if (null === avatarChange) {
     const tmpResult6 = AvatarUtils;
     defaultAvatarURL = tmpResult6.getDefaultAvatarURL(user.id, user.discriminator);
@@ -140,7 +140,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   }
   const tmp22 = UserProfileEditableTileBaseDefault;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.lqaIxI);
     cResult[15] = stringResult;
     tmp23 = stringResult;
@@ -153,7 +153,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
       tmp25 = cResult[18];
     }
     const tmp21Result = SpinAnimationDefault;
-    const Avatar = tmp(1200).Avatar;
+    const Avatar = tmp(1202).Avatar;
     const tmpResult7 = AvatarUtils;
     const source = tmpResult7.makeSource(defaultAvatarURL);
     cResult[2] = avatarChange;
@@ -204,7 +204,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   const obj2 = { userId: user.id, image: avatarChange };
   const tmpResult = RecentAvatarUtils;
   const pendingAvatarSrc = tmpResult.getPendingAvatarSrc(obj2);
-  const AVATAR_SIZE_MAP = tmp(1200).AVATAR_SIZE_MAP;
+  const AVATAR_SIZE_MAP = tmp(1202).AVATAR_SIZE_MAP;
   if (null === avatarChange) {
     const tmpResult4 = AvatarUtils;
     defaultAvatarURL = tmpResult4.getDefaultAvatarURL(user.id, user.discriminator);
@@ -215,14 +215,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
     }
   }
   UserProfileEditableTileBaseDefault;
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const tmpResult5 = UserProfileEditingAccessibilityUtils;
   SpinAnimationDefault;
   if (tmp4) {
     tmp4 = enableSpinAnimation;
   }
   ({ source: tmpResult6.makeSource(defaultAvatarURL), size: native.AvatarSizes.XLARGE_72 });
-  const Avatar = tmp(1200).Avatar;
+  const Avatar = tmp(1202).Avatar;
   tmpResult6 = AvatarUtils;
   return <tmp9 accessibilityLabel={intl.string(intl2.t.lqaIxI)} accessibilityValue={tmpResult5.getAvatarAccessibleValue(avatarChange, user.avatar)} onPress={onPress}>{null}</tmp9>;
 });

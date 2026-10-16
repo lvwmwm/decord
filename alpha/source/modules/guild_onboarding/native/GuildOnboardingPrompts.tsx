@@ -1,40 +1,40 @@
-// Module ID: 7032
-// Function ID: 7033
+// Module ID: 7034
+// Function ID: 7035
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 5140, 6371, 2065, 2087, 2116, 7009, 7010, 7006, 1085, 21, 1112, 5151, 6479, 587, 1494, 5023, 558, 576, 5088, 5451, 1105, 504, 1631, 1503, 4906, 7014, 7015, 1415, 1898, 1265, 5166, 5152, 6421, 7033, 1386, 7035, 6328, 1126, 5147, 2]
+// Dependencies: [32, 5, 19, 17, 5143, 6373, 2068, 2090, 2119, 7011, 7012, 7008, 1087, 21, 1114, 5153, 6481, 587, 1496, 5026, 558, 576, 5091, 5453, 1107, 504, 1633, 1505, 4909, 7016, 7017, 1417, 1900, 1267, 5168, 5154, 6423, 7035, 1388, 7037, 6330, 1128, 5149, 2]
 
-// Module 7032 (GuildOnboardingPrompts)
+// Module 7034 (GuildOnboardingPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import ColorUtils from "ColorUtils" /* 5023 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import timing from "timing" /* 5152 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import NavigatorConstants from "NavigatorConstants" /* 6479 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7006 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7010 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7014 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7015 */;
-import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 7033 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ColorUtils from "ColorUtils" /* 5026 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import timing from "timing" /* 5154 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7008 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7012 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7016 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7017 */;
+import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 7035 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5140 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6371 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7009 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5143 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6373 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7011 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -651,7 +651,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                       withTiming2 = timing.withTiming;
                                                       timing;
-                                                      Easing2 = tmp(4906).Easing;
+                                                      Easing2 = tmp(4909).Easing;
                                                       items = [obj4];
                                                       return obj3;
                                                     }
@@ -747,7 +747,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                       withTiming2 = timing.withTiming;
                                                       timing;
-                                                      Easing2 = tmp(4906).Easing;
+                                                      Easing2 = tmp(4909).Easing;
                                                       items = [obj4];
                                                       return obj3;
                                                     }
@@ -1181,7 +1181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                                                                 obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                                                                 withTiming2 = timing.withTiming;
                                                                                                                                 timing;
-                                                                                                                                Easing2 = tmp(4906).Easing;
+                                                                                                                                Easing2 = tmp(4909).Easing;
                                                                                                                                 items = [obj4];
                                                                                                                                 return obj3;
                                                                                                                               }
@@ -2039,7 +2039,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                                     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                                     withTiming2 = timing.withTiming;
                                                                                                     timing;
-                                                                                                    Easing2 = tmp(4906).Easing;
+                                                                                                    Easing2 = tmp(4909).Easing;
                                                                                                     items = [obj4];
                                                                                                     return obj3;
                                                                                                   }
@@ -2208,7 +2208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                       withTiming2 = timing.withTiming;
                                                                                       timing;
-                                                                                      Easing2 = tmp(4906).Easing;
+                                                                                      Easing2 = tmp(4909).Easing;
                                                                                       items = [obj4];
                                                                                       return obj3;
                                                                                     }
@@ -2377,7 +2377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                         obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                         withTiming2 = timing.withTiming;
                                                                         timing;
-                                                                        Easing2 = tmp(4906).Easing;
+                                                                        Easing2 = tmp(4909).Easing;
                                                                         items = [obj4];
                                                                         return obj3;
                                                                       }
@@ -2452,7 +2452,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                     const tmp6 = guildId;
                                                     if (currentPromptIdx < prompts.length - 1) {
                                                       const obj3 = { step: currentPromptIdx + 1, required: prompts[currentPromptIdx + 1].required };
-                                                      const track2 = tmp(1265).track;
+                                                      const track2 = tmp(1267).track;
                                                       const GUILD_ONBOARDING_STEP_VIEWED = tmp4.GUILD_ONBOARDING_STEP_VIEWED;
                                                       AnalyticsUtilsDefault;
                                                       const tmp5Result = AppAnalyticsUtils;
@@ -2990,7 +2990,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4906).Easing;
+    Easing2 = tmp(4909).Easing;
     items = [obj4];
     return obj3;
   }
@@ -3033,7 +3033,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4906).Easing;
+    Easing2 = tmp(4909).Easing;
     items = [obj4];
     return obj3;
   }
@@ -3122,7 +3122,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4906).Easing;
+    Easing2 = tmp(4909).Easing;
     items = [obj4];
     return obj3;
   }
@@ -3237,7 +3237,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
             const tmp8 = guildId;
             if (currentPromptIdx < prompts.length - 1) {
               const obj3 = { step: currentPromptIdx + 1, required: prompts[currentPromptIdx + 1].required };
-              const track2 = tmp3(1265).track;
+              const track2 = tmp3(1267).track;
               const GUILD_ONBOARDING_STEP_VIEWED = tmp6.GUILD_ONBOARDING_STEP_VIEWED;
               AnalyticsUtilsDefault;
               const tmp7Result = AppAnalyticsUtils;

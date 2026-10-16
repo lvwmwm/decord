@@ -1,33 +1,51 @@
-// Module ID: 12028
-// Function ID: 12029
+// Module ID: 12052
+// Function ID: 12053
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1126, 3862, 10888, 558, 576, 2]
-// Exports: secretRequestStatuses
+// Dependencies: [32, 19, 1128, 3865, 10903, 558, 576, 2]
+// Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved
 
-// Module 12028 (ConjureSecretRequestState)
+// Module 12052 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import conjureChatTurns from "conjureChatTurns" /* 10888 */;
+import intl3 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import conjureChatTurns from "conjureChatTurns" /* 10903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let map, set, set2;
+let map, set2;
 
 function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3862.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3865.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3862.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3865.sMQt5O);
   }
   return tmp5;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
+function isSavedMcpCard(secretRequest) {
+  secretRequest = secretRequest.secretRequest;
+  let over_mcp;
+  if (secretRequest != null) {
+    over_mcp = secretRequest.over_mcp;
+  }
+  let tmp2 = true === over_mcp;
+  if (tmp2) {
+    let tmp3 = true !== secretRequest.finished;
+    if (!tmp3) {
+      const hasItem = null != secretRequest.request_id && set.has(secretRequest.request_id);
+      tmp3 = hasItem;
+    }
+    tmp2 = tmp3;
+  }
+  return tmp2;
+}
+let set = new Set();
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp6;
   let tmp7;
@@ -103,6 +121,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretReq
 });
 let result = size.fileFinishedImporting("modules/conjure/secrets/ConjureSecretRequestState.tsx");
 
+export const markMcpSecretRequestSaved = function markMcpSecretRequestSaved(request_id) {
+  if (null != request_id) {
+    set.add(request_id);
+  }
+};
+export const unmarkMcpSecretRequestSaved = function unmarkMcpSecretRequestSaved(request_id) {
+  if (null != request_id) {
+    set.delete(request_id);
+  }
+};
 export const secretRequestStatuses = function secretRequestStatuses(memo, stateFromStores11) {
   let set1 = null;
   if (null != stateFromStores11) {
@@ -139,19 +167,23 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, stateF
             flag3 = flag;
             flag4 = flag2;
             if (obj3.turnSettled(tmp4)) {
-              if (flag) {
+              let tmp10 = flag;
+              if (!tmp10) {
+                tmp10 = isSavedMcpCard(tmp4);
+              }
+              if (tmp10) {
                 if (null == set1) {
                   let result = map.set(tmp4.render_id, "pending");
-                  let tmp15 = fields[Symbol.iterator]();
+                  let tmp17 = fields[Symbol.iterator]();
                   flag3 = false;
                   flag4 = true;
-                  while (tmp15 !== undefined) {
-                    let addResult = set2.add(tmp17.name);
+                  while (tmp17 !== undefined) {
+                    let addResult = set2.add(tmp19.name);
                     continue;
                   }
                 }
               }
-              if (flag) {
+              if (tmp10) {
                 if (null != set1) {
                   if (fields.every((name) => set1.has(name.name))) {
                     let result1 = map.set(tmp4.render_id, "received");
@@ -187,4 +219,4 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, stateF
   }
   return map;
 };
-export const useSecretRequestStatusChanged = tmp2;
+export const useSecretRequestStatusChanged = tmp3;

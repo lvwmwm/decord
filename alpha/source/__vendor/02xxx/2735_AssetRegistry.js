@@ -1,10 +1,10 @@
 // Module ID: 2735
 // Function ID: 2736
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2735 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/overlay/web/v3", scales: [1], hash: "d8a1993a856b77ad8633e20ce493ef2b", name: "OverlayWidgets.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "a9416b52f2795754f85c2344f00c5d99", name: "vi.messages.a9416b52f2795754f85c2344f00c5d99.compiled.messages", type: "jsona" });

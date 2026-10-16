@@ -1,21 +1,21 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2020
+// Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2019, 502, 7979, 1085, 5271, 4787, 14960, 1403, 14961, 14963, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 7982, 1087, 5273, 4790, 14993, 1405, 14994, 14996, 504, 584, 2]
 
-// Module 2018 (ClipsStore)
+// Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 4787 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14961 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14963 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import DiscordNativeDefault from "DiscordNative" /* 4790 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14994 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
+import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7979 */;
-import Constants from "Constants" /* 1085 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5271 */;
+import ClipsConstants from "ClipsConstants" /* 7982 */;
+import Constants from "Constants" /* 1087 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5273 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -756,15 +756,13 @@ let obj2 = {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp2 = nextResult;
-      if (nextResult.isCandidate) {
-        iter.return();
-      } else {
+      if (!nextResult.isCandidate) {
         closure_18[tmp2.id] = tmp2;
         if (null != tmp2.remoteClipId) {
           closure_19[tmp2.remoteClipId] = tmp2.id;
         }
-        continue;
       }
+      continue;
     }
     obj.hasClips = Object.keys(closure_18).length > 0;
   },

@@ -1,11 +1,11 @@
-// Module ID: 8602
-// Function ID: 8603
+// Module ID: 8610
+// Function ID: 8611
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 1085, 558, 576, 1985, 2060, 2]
+// Dependencies: [32, 19, 1087, 558, 576, 1987, 2063, 2]
 
-// Module 8602 (useAvatarDecorationIfNotExpired)
-import Constants from "Constants" /* 1085 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1985 */;
+// Module 8610 (useAvatarDecorationIfNotExpired)
+import Constants from "Constants" /* 1087 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
                 if (0 < diff) {
                   const self = this;
                   const self2 = this;
-                  const timeout = new tmp3(2060).Timeout();
+                  const timeout = new tmp3(2063).Timeout();
                   const _Math = Math;
                   timeout.start(Math.min(MAX_TIMEOUT_MS, diff), () => {
                     maybeScheduleExpirationCheck();
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
               if (0 < diff) {
                 const self = this;
                 const self2 = this;
-                const timeout = new tmp3(2060).Timeout();
+                const timeout = new tmp3(2063).Timeout();
                 const _Math = Math;
                 timeout.start(Math.min(MAX_TIMEOUT_MS, diff), () => {
                   maybeScheduleExpirationCheck();

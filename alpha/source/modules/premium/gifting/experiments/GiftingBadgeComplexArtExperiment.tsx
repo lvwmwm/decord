@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10341
+// Function ID: 10342
 // Name: GiftingBadgeComplexArtExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 10325 (GiftingBadgeComplexArtExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 10341 (GiftingBadgeComplexArtExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-gifting-badge-complex-art", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

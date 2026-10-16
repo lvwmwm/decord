@@ -1,22 +1,22 @@
-// Module ID: 14114
-// Function ID: 14115
+// Module ID: 14146
+// Function ID: 14147
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1085, 21, 558, 576, 7073, 9502, 9501, 9490, 9739, 14115, 1126, 10000, 5439, 6174, 10557, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 7075, 9518, 9517, 9506, 9755, 14147, 1128, 10016, 5441, 6176, 10572, 2]
 
-// Module 14114 (ShopNitroUpsellPromoSheet)
+// Module 14146 (ShopNitroUpsellPromoSheet)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import ButtonGroup2 from "ButtonGroup" /* 6174 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9490 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9501 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9502 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9739 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10000 */;
-import PromoSheet2 from "PromoSheet" /* 10557 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 14115 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import ButtonGroup2 from "ButtonGroup" /* 6176 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9506 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9517 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9518 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9755 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10016 */;
+import PromoSheet2 from "PromoSheet" /* 10572 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 14147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopNitroUps
   const analyticsLocations2 = useAnalyticsLocationsDefault(tmp4).analyticsLocations;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = PremiumFeatureUpsellUtils;
-    const upsellType = tmpResult.getUpsellType(tmp(9501).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
+    const upsellType = tmpResult.getUpsellType(tmp(9517).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
     cResult[2] = upsellType;
     tmp7 = upsellType;
   } else {
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopNitroUps
     tmp10 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["8x0jKT"]);
     cResult[4] = stringResult;
     tmp13 = stringResult;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopNitroUps
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl3.t.PcTCB7);
       cResult[8] = stringResult1;
       tmp17 = stringResult1;

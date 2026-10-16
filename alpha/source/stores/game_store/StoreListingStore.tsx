@@ -1,14 +1,14 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15453
+// Function ID: 15454
 // Name: StoreListingStore
-// Dependencies: [2129, 15418, 504, 1386, 584, 2]
+// Dependencies: [2132, 15454, 504, 1388, 584, 2]
 
-// Module 15417 (StoreListingStore)
+// Module 15453 (StoreListingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import StoreListingRecord from "StoreListingRecord" /* 15418 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import StoreListingRecord from "StoreListingRecord" /* 15454 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, closure_6, closure_7, closure_8, locale;

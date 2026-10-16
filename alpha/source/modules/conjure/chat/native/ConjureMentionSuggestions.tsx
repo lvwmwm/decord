@@ -1,16 +1,16 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12253
+// Function ID: 12254
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 558, 576, 1126, 3862, 6400, 1200, 5018, 6485, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3865, 6402, 1202, 5021, 6487, 2]
 
-// Module 12230 (ConjureMentionSuggestions)
+// Module 12253 (ConjureMentionSuggestions)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import UserUtils from "UserUtils" /* 5018 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import TableRowGroup2 from "TableRowGroup" /* 6485 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import UserUtils from "UserUtils" /* 5021 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import TableRowGroup2 from "TableRowGroup" /* 6487 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,8 +29,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMen
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(_modDef3862.Vb3sUg);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(_modDef3865.Vb3sUg);
       cResult[0] = stringResult;
       first = stringResult;
     } else {
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMen
         tmp7 = cResult[3];
       }
       if (cResult[6] !== tmp7) {
-        const tmp12 = jsx(onSelect(6485).TableRowGroup, { title: first, hasIcons: true, children: tmp7 });
+        const tmp12 = jsx(onSelect(6487).TableRowGroup, { title: first, hasIcons: true, children: tmp7 });
         cResult[6] = tmp7;
         cResult[7] = tmp12;
         tmp10 = tmp12;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMen
       const fn = function l(user) {
         let closure_0 = user;
         const TableRow = onSelect(dependencyMap[6]).TableRow;
-        ({ user, size: onSelect(dependencyMap[7]).AvatarSizes.XSMALL, guildId: "Array" });
+        ({ user, size: onSelect(dependencyMap[7]).AvatarSizes.XSMALL, guildId: "r" });
         const Avatar = onSelect(dependencyMap[7]).Avatar;
         const obj3 = onSelect(dependencyMap[8]);
         return <TableRow key={arg0.id} icon={null} label={obj3.getName(arg0)} subLabel={arg0.username} onPress={function onPress() {
@@ -82,10 +82,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMen
   if (0 !== users.length) {
     const TableRowGroup = TableRowGroup2.TableRowGroup;
     const intl = intl2.intl;
-    tmp = <TableRowGroup title={intl.string(_modDef3862.Vb3sUg)} hasIcons>{users.map((user) => {
+    tmp = <TableRowGroup title={intl.string(_modDef3865.Vb3sUg)} hasIcons>{users.map((user) => {
       require = user;
       const TableRow = TableRow2.TableRow;
-      ({ user, size: native.AvatarSizes.XSMALL, guildId: "Array" });
+      ({ user, size: native.AvatarSizes.XSMALL, guildId: "r" });
       const Avatar = native.Avatar;
       const obj3 = UserUtils;
       return <TableRow key={arg0.id} icon={null} label={obj3.getName(arg0)} subLabel={arg0.username} onPress={function onPress() {

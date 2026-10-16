@@ -1,28 +1,28 @@
-// Module ID: 17577
-// Function ID: 17578
+// Module ID: 17611
+// Function ID: 17612
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5973, 4999, 2087, 21, 5147, 558, 576, 1126, 17578, 9619, 17579, 16154, 573, 7172, 6243, 5360, 1112, 2]
+// Dependencies: [19, 5975, 5002, 2090, 21, 5149, 558, 576, 1128, 17612, 9635, 17613, 16187, 573, 7174, 6245, 5362, 1114, 2]
 
-// Module 17577 (GuildRoleSubscriptionsOverview)
+// Module 17611 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import router_utils from "router_utils" /* 1112 */;
-import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9619 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17578 */;
+import router_utils from "router_utils" /* 1114 */;
+import intl4 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9635 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17612 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4999 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5002 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(16154);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(17579);
+const GroupListingsFetchContext = tmp(16187);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(17613);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
   const cResult = obj.c(5);
   serverName = serverName.serverName;
   if (cResult[0] !== serverName) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { serverName, serverNameHook };
     const formatResult = intl.format(intl4.t.uEqG1M, obj2);
     cResult[0] = serverName;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult = intl2.string(intl4.t["+3DKTf"]);
     cResult[2] = stringResult;
     tmp7 = stringResult;

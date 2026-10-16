@@ -1,39 +1,39 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15909
+// Function ID: 15910
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2064, 7017, 2065, 4816, 6182, 2129, 1085, 9848, 10648, 21, 5151, 587, 558, 576, 5105, 5147, 1503, 1504, 1126, 7079, 10953, 9453, 504, 13184, 1415, 5361, 13183, 5115, 10649, 2000, 1273, 7237, 7245, 6900, 6904, 8709, 5033, 7029, 7024, 11, 11769, 10848, 6485, 7115, 6400, 2]
+// Dependencies: [19, 17, 2067, 7019, 2068, 4819, 6184, 2132, 1087, 9864, 10663, 21, 5153, 587, 558, 576, 5108, 5149, 1505, 1506, 1128, 7081, 10968, 9469, 504, 13210, 1417, 5363, 13209, 5118, 10664, 2002, 1275, 7239, 7247, 6902, 6906, 8717, 5036, 7031, 7026, 11, 11793, 10863, 6487, 7117, 6402, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15876 (UserSettingsAuthedApp)
+// Module 15909 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl12 from "intl" /* 1126 */;
-import Link from "Link" /* 1504 */;
-import RootNavigationRef from "RootNavigationRef" /* 5033 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5105 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import useAlertStore from "useAlertStore" /* 5361 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6900 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6904 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7024 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7029 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7079 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8709 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9848 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10648 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10953 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13183 */;
+import intl12 from "intl" /* 1128 */;
+import Link from "Link" /* 1506 */;
+import RootNavigationRef from "RootNavigationRef" /* 5036 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5108 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import useAlertStore from "useAlertStore" /* 5363 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6902 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6906 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7026 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7031 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7081 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8717 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9864 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10663 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10968 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13209 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7017 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import Constants from "Constants" /* 1085 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7019 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warnin
   const tmp4 = closure_19();
   if (cResult[0] !== tmp4.warningIcon) {
     const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.warningIcon };
-    const CircleInformationIcon = tmp(5105).CircleInformationIcon;
+    const CircleInformationIcon = tmp(5108).CircleInformationIcon;
     const tmp8 = trackedExposureExperiments(CircleInformationIcon, obj2);
     cResult[0] = tmp4.warningIcon;
     cResult[1] = tmp8;
@@ -120,7 +120,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Author
   const obj = navigation(576);
   const cResult = obj.c(7);
   application = application.application;
-  const obj2 = navigation(1503);
+  const obj2 = navigation(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t() {
@@ -151,9 +151,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Author
     }
     return tmp8;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const obj4 = { applicationName: application.name, onConnectionPress: tmp5 };
-  const formatResult = intl.format(navigation(1126).t.jUhnwb, obj4);
+  const formatResult = intl.format(navigation(1128).t.jUhnwb, obj4);
   cResult[2] = application.name;
   cResult[3] = tmp5;
   cResult[4] = formatResult;
@@ -163,16 +163,16 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Author
   let obj3;
   navigation = undefined;
   application = application.application;
-  const obj = navigation(1503);
+  const obj = navigation(1505);
   navigation = obj.useNavigation();
   const items = [navigation];
-  const obj2 = { text: intl.format(navigation(1126).t.jUhnwb, obj3) };
+  const obj2 = { text: intl.format(navigation(1128).t.jUhnwb, obj3) };
   const callback = react.useCallback(() => {
     const dispatch = navigation.dispatch;
     const CommonActions = Link.CommonActions;
     dispatch(CommonActions.navigate(constants.CONNECTIONS));
   }, items);
-  intl = navigation(1126).intl;
+  intl = navigation(1128).intl;
   obj3 = { applicationName: application.name, onConnectionPress: callback };
   return closure_17(closure_20, obj2);
 });
@@ -184,7 +184,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Parent
   const cResult = obj.c(4);
   application = application.application;
   if (cResult[0] !== application.name) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { applicationName: application.name };
     const formatResult = intl.format(intl12.t.j4B7EW, obj2);
     cResult[0] = application.name;

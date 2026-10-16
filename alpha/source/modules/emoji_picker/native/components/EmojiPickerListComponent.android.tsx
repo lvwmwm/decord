@@ -1,23 +1,23 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 9765
+// Function ID: 9766
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6203, 6207, 9650, 1241, 21, 5151, 4906, 9750, 6527, 1628, 558, 576, 4820, 6979, 9738, 2]
+// Dependencies: [19, 6205, 6209, 9666, 1243, 21, 5153, 4909, 9766, 6529, 1630, 558, 576, 4823, 6981, 9754, 2]
 
-// Module 9749 (EmojiPickerListComponent)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4906 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6207 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 6979 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9650 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9738 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9750 */;
+// Module 9765 (EmojiPickerListComponent)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4909 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6209 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 6981 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9666 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9754 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9766 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6203 */;
+import EmojiStore from "EmojiStore" /* 6205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
-import BottomSheetModal from "BottomSheetModal" /* 6527 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import createStyles from "createStyles" /* 5153 */;
+import BottomSheetModal from "BottomSheetModal" /* 6529 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

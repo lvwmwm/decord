@@ -1,25 +1,25 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15997
+// Function ID: 15998
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 1999, 1085, 21, 587, 8645, 5151, 683, 558, 576, 15945, 4906, 5438, 5442, 5152, 5155, 1121, 504, 1382, 1255, 1631, 1126, 6405, 15965, 15967, 15969, 15970, 11537, 8619, 8621, 15971, 15972, 2]
+// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8653, 5153, 683, 558, 576, 15978, 4909, 5440, 5444, 5154, 5157, 1123, 504, 1384, 1257, 1633, 1128, 6407, 15998, 16000, 16002, 16003, 11560, 8627, 8629, 16004, 16005, 2]
 
-// Module 15964 (AdVideoPlayer)
+// Module 15997 (AdVideoPlayer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import timing from "timing" /* 5152 */;
-import timingPresets from "timingPresets" /* 5155 */;
-import spring from "spring" /* 5438 */;
-import TextTrackTypeDefault from "TextTrackType" /* 8645 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15945 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import timing from "timing" /* 5154 */;
+import timingPresets from "timingPresets" /* 5157 */;
+import spring from "spring" /* 5440 */;
+import TextTrackTypeDefault from "TextTrackType" /* 8653 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15978 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import Constants from "Constants" /* 1085 */;
+import AppStateStore from "AppStateStore" /* 2001 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let rect1;
 let rect2;
 let tmp2;
 let unpackModuleId;
-const springPresets = tmp2(5442);
+const springPresets = tmp2(5444);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
 ({ AppStates: c9, ComponentActions: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -727,7 +727,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
     } else {
       const tmp2 = require;
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        tmp2(1382);
+        tmp2(1384);
       }
       toggleBuffering(true);
     }

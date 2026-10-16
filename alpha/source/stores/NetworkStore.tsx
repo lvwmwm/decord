@@ -1,13 +1,13 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5344
+// Function ID: 5345
 // Name: NetworkStore
-// Dependencies: [1085, 504, 1481, 584, 2]
+// Dependencies: [1087, 504, 1483, 584, 2]
 
-// Module 5342 (NetworkStore)
+// Module 5344 (NetworkStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
-import Constants from "Constants" /* 1085 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1483 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionInfoChange(type) {

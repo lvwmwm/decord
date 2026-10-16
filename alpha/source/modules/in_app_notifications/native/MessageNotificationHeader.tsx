@@ -1,23 +1,23 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13483
+// Function ID: 13484
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 5140, 4816, 1390, 21, 5151, 587, 558, 576, 5147, 5481, 1106, 8416, 8418, 8376, 504, 2]
+// Dependencies: [19, 17, 5143, 4819, 1392, 21, 5153, 587, 558, 576, 5149, 5483, 1108, 8424, 8426, 8384, 504, 2]
 
-// Module 13457 (MessageNotificationHeader)
+// Module 13483 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelTypes from "ChannelTypes" /* 1106 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
+import ChannelTypes from "ChannelTypes" /* 1108 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ function getLocationLabel(arg0) {
                               if (ChannelTypes.ChannelTypes.GUILD_STORE !== type) {
                                 if (ChannelTypes.ChannelTypes.GUILD_DIRECTORY !== type) {
                                   if (ChannelTypes.ChannelTypes.GUILD_SPACE !== type) {
-                                    const UNKNOWN = tmp(1106).ChannelTypes.UNKNOWN;
+                                    const UNKNOWN = tmp(1108).ChannelTypes.UNKNOWN;
                                   }
                                 }
                               }
@@ -275,7 +275,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         let tmp12 = null != author;
         if (tmp12) {
           const obj4 = { variant: "text-md/bold", color, maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
-          tmp12 = metroImportDefault(tmp(5147).Text, obj4);
+          tmp12 = metroImportDefault(tmp(5149).Text, obj4);
         }
         cResult[7] = author;
         cResult[8] = tmp4.separator;
@@ -294,7 +294,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
     cResult[6] = element;
     tmp8 = element;
   }
-  const PRIVATE_CHANNEL = tmp(1106).ChannelTypesSets.PRIVATE_CHANNEL;
+  const PRIVATE_CHANNEL = tmp(1108).ChannelTypesSets.PRIVATE_CHANNEL;
   let tmp6;
   if (!PRIVATE_CHANNEL.has(channel.type)) {
     let simpleChannelIconComponent;
@@ -302,11 +302,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
       if (null != parentChannel) {
         let ThreadIcon;
         if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-          ThreadIcon = tmp(8416).ChatIcon;
+          ThreadIcon = tmp(8424).ChatIcon;
         }
         simpleChannelIconComponent = ThreadIcon;
       }
-      ThreadIcon = tmp(8418).ThreadIcon;
+      ThreadIcon = tmp(8426).ThreadIcon;
     } else {
       const tmpResult = utils_ChannelUtils;
       simpleChannelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
@@ -343,11 +343,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8416).ChatIcon;
+            ThreadIcon = tmp3(8424).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8418).ThreadIcon;
+        ThreadIcon = tmp3(8426).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageNotif
       if (tmp15) {
         const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items2, children: author.nick };
         items2 = [tmp4.primaryText, tmp10];
-        tmp15 = metroImportDefault(tmp(5147).Text, obj6);
+        tmp15 = metroImportDefault(tmp(5149).Text, obj6);
       }
       cResult[8] = author;
       cResult[9] = tmp10;

@@ -1,9 +1,9 @@
-// Module ID: 16696
-// Function ID: 16697
+// Module ID: 16729
+// Function ID: 16730
 // Name: types
 // Dependencies: [2]
 
-// Module 16696 (types)
+// Module 16729 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/types.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17352
+// Function ID: 17353
 // Name: NativeFreezeScreens
-// Dependencies: [32, 19, 17, 21, 558, 576, 38, 5367, 5151, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 38, 5369, 5153, 2]
 
-// Module 17318 (NativeFreezeScreens)
+// Module 17352 (NativeFreezeScreens)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import enableScreens from "enableScreens" /* 5367 */;
+import enableScreens from "enableScreens" /* 5369 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, tmp, tmp6, tmp7;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeFreeze
                   }
                 }
                 const obj2 = { enabled: undefined === detachInactiveScreens || detachInactiveScreens, hasTwoStates: true, style: screens, nativeID: "native-freeze-screens-container", children: tmp23 };
-                const tmp28 = first(tmp2(5367).ScreenContainer, obj2);
+                const tmp28 = first(tmp2(5369).ScreenContainer, obj2);
                 cResult[23] = undefined === detachInactiveScreens || detachInactiveScreens;
                 cResult[24] = tmp10.screens;
                 cResult[25] = tmp23;

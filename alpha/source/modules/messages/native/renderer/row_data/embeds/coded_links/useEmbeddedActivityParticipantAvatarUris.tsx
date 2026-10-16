@@ -1,14 +1,14 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14223
+// Function ID: 14224
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 2064, 1390, 1386, 558, 576, 573, 2]
+// Dependencies: [19, 2067, 1392, 1388, 558, 576, 573, 2]
 // Exports: getEmbeddedActivityParticipantAvatarUris
 
-// Module 14191 (useEmbeddedActivityParticipantAvatarUris)
-import GlobalUtils from "GlobalUtils" /* 1386 */;
+// Module 14223 (useEmbeddedActivityParticipantAvatarUris)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import UserStore from "UserStore" /* 1390 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
   } else {
     tmp15 = cResult[10];
   }
-  const found = stateFromStoresArray.filter(tmp(1386).isNotNullish);
+  const found = stateFromStoresArray.filter(tmp(1388).isNotNullish);
   const mapped = found.map(tmp15);
   cResult[6] = guildId;
   cResult[7] = stateFromStoresArray;

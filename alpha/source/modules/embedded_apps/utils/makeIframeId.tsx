@@ -1,11 +1,11 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11244
+// Function ID: 11245
 // Name: makeIframeId
-// Dependencies: [1279, 2]
+// Dependencies: [1281, 2]
 // Exports: default
 
-// Module 11228 (makeIframeId)
-import v1 from "v1" /* 1279 */;
+// Module 11244 (makeIframeId)
+import v1 from "v1" /* 1281 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/utils/makeIframeId.tsx");

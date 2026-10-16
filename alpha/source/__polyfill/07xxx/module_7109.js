@@ -1,41 +1,35 @@
 // Module ID: 7109
 // Function ID: 7110
-// Dependencies: [17]
-// Exports: addListener, removeAllListeners
+// Dependencies: [19, 7110]
+// Exports: useClipboard
 
 // Module 7109
-import react_native from "react-native" /* 17 */;
+import _mod7110 from "module_7110" /* 7110 */;
+import react from "react" /* 19 */;
 
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
-const enforcing = TurboModuleRegistry.getEnforcing("RNCClipboard");
-const RNCClipboard_TEXT_CHANGED = "RNCClipboard_TEXT_CHANGED";
-const nativeEventEmitter = new react_native.NativeEventEmitter(enforcing);
-const listenerCount = nativeEventEmitter.listenerCount;
-let fn = listenerCount;
-if (fn) {
-  const listenerCount2 = nativeEventEmitter.listenerCount;
-  fn = listenerCount2.bind(nativeEventEmitter);
-} else {
-  fn = (arg0) => nativeEventEmitter.listeners(arg0).length;
+function setString(arg0) {
+  let closure_0 = arg0;
+  const Clipboard = _mod7110.Clipboard;
+  Clipboard.setString(arg0);
+  const item = set.forEach((fn) => fn(closure_0));
 }
+const set = new Set();
 
-export default enforcing;
-export const addListener = (arg0) => {
-  const tmp = RNCClipboard_TEXT_CHANGED;
-  if (0 === fn(RNCClipboard_TEXT_CHANGED)) {
-    enforcing.setListener();
-  }
-  const addListenerResult = nativeEventEmitter.addListener(tmp, arg0);
-  addListenerResult._remove = addListenerResult.remove;
-  addListenerResult.remove = function() {
-    this._remove();
-    if (0 === fn(RNCClipboard_TEXT_CHANGED)) {
-      enforcing.removeListener();
-    }
-  };
-  return addListenerResult;
-};
-export const removeAllListeners = () => {
-  nativeEventEmitter.removeAllListeners(RNCClipboard_TEXT_CHANGED);
-  enforcing.removeListener();
+export const useClipboard = () => {
+  let tmp2;
+  const state = react.useState("");
+  [tmp2, require] = state;
+  const effect = react.useEffect(() => {
+    const Clipboard = _mod7110.Clipboard;
+    const string = Clipboard.getString();
+    string.then(require);
+  }, []);
+  const effect1 = react.useEffect(() => {
+    set.add(require);
+    return () => {
+      set.delete(closure_1_0);
+    };
+  }, []);
+  const items = [tmp2, setString];
+  return items;
 };

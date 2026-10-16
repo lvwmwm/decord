@@ -1,11 +1,11 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12745
+// Function ID: 12746
 // Name: CustomTypingIndicatorAnalytics
-// Dependencies: [1398, 2]
+// Dependencies: [1400, 2]
 // Exports: getTypingIndicatorStyleAnalytics
 
-// Module 12719 (CustomTypingIndicatorAnalytics)
-import user from "user" /* 1398 */;
+// Module 12745 (CustomTypingIndicatorAnalytics)
+import user from "user" /* 1400 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorAnalytics.tsx");

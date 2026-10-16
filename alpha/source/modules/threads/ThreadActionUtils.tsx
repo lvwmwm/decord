@@ -1,10 +1,10 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4817
+// Function ID: 4818
 // Name: ThreadActionUtils
 // Dependencies: [502, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 4814 (ThreadActionUtils)
+// Module 4817 (ThreadActionUtils)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7715
+// Function ID: 7716
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1085, 1295, 2]
+// Dependencies: [5, 1087, 1297, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 7712 (StageInstanceActionCreators)
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 7715 (StageInstanceActionCreators)
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

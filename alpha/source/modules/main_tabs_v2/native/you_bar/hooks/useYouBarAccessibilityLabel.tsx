@@ -1,22 +1,22 @@
-// Module ID: 17406
-// Function ID: 17407
+// Module ID: 17440
+// Function ID: 17441
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6113, 2065, 4806, 5167, 4816, 5975, 5172, 1085, 558, 576, 5018, 2041, 10462, 8508, 10460, 10461, 10468, 1126, 10473, 504, 2]
+// Dependencies: [6115, 2068, 4809, 5169, 4819, 5977, 5174, 1087, 558, 576, 5021, 2044, 10478, 8516, 10476, 10477, 10484, 1128, 10488, 504, 2]
 
-// Module 17406 (useYouBarAccessibilityLabel)
-import UserUtils from "UserUtils" /* 5018 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10460 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10461 */;
-import isGameActivityDefault from "isGameActivity" /* 10468 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10473 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import PresenceStore from "PresenceStore" /* 5167 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
-import VoiceStateStore from "VoiceStateStore" /* 5172 */;
-import Constants from "Constants" /* 1085 */;
+// Module 17440 (useYouBarAccessibilityLabel)
+import UserUtils from "UserUtils" /* 5021 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10476 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10477 */;
+import isGameActivityDefault from "isGameActivity" /* 10484 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10488 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import PresenceStore from "PresenceStore" /* 5169 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               } else {
                 found1 = undefined;
                 if (activities != null) {
-                  found1 = activities.find(() => { /* body not rendered: F150019 */ });
+                  found1 = activities.find(() => { /* body not rendered: F150489 */ });
                 }
                 if (null != found1) {
                   tmp17 = closure_1;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
         tmp22 = tag;
         items1[1] = tag;
         items1[2] = text;
-        found2 = items1.filter(() => { /* body not rendered: F150020 */ });
+        found2 = items1.filter(() => { /* body not rendered: F150490 */ });
         str2 = ", ";
         return found2.join(", ");
       } else {
@@ -207,7 +207,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
   let closure_0;
   let closure_2;
   const tmp = dependencyMap;
-  let obj = id(5018);
+  let obj = id(5021);
   _require = obj.useName(id);
   id = undefined;
   if (id != null) {
@@ -268,14 +268,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               if (null != name) {
                 let formatToPlainStringResult;
                 if ("" !== name) {
-                  const intl4 = tmp4(1126).intl;
+                  const intl4 = tmp4(1128).intl;
                   const obj5 = { name };
-                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1126).t["0wJXSh"], obj5);
+                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1128).t["0wJXSh"], obj5);
                 }
                 text = formatToPlainStringResult;
               }
-              const intl3 = tmp4(1126).intl;
-              formatToPlainStringResult = intl3.string(tmp4(1126).t.eXan7B);
+              const intl3 = tmp4(1128).intl;
+              formatToPlainStringResult = intl3.string(tmp4(1128).t.eXan7B);
             } else {
               let found1;
               if (activities != null) {
@@ -293,9 +293,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
                     let stringResult;
                     if (!voiceChannel.isGroupDM()) {
                       const isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
-                      const intl = tmp4(1126).intl;
+                      const intl = tmp4(1128).intl;
                       const string = intl.string;
-                      const t = tmp4(1126).t;
+                      const t = tmp4(1128).t;
                       if (isGuildStageVoiceResult) {
                         stringResult = string(t.QygGCN);
                       } else {
@@ -304,8 +304,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
                     }
                     text = stringResult;
                   }
-                  const intl2 = tmp4(1126).intl;
-                  stringResult = intl2.string(tmp4(1126).t["9FaEzi"]);
+                  const intl2 = tmp4(1128).intl;
+                  stringResult = intl2.string(tmp4(1128).t["9FaEzi"]);
                 }
               }
             }

@@ -1,23 +1,23 @@
-// Module ID: 13660
-// Function ID: 13661
+// Module ID: 13686
+// Function ID: 13687
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1393, 21, 5151, 587, 558, 576, 5025, 1126, 9178, 6405, 7041, 1415, 4823, 2]
+// Dependencies: [19, 17, 1395, 21, 5153, 587, 558, 576, 5028, 1128, 9191, 6407, 7043, 1417, 4826, 2]
 // Exports: getEmojiKey
 
-// Module 13660 (EmojiReactionRowButton)
+// Module 13686 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import EmojiTypes from "EmojiTypes" /* 4823 */;
-import shared from "shared" /* 5025 */;
-import Pressables from "Pressables" /* 6405 */;
-import EmojiDefault from "Emoji" /* 7041 */;
-import ReactionIcon2 from "ReactionIcon" /* 9178 */;
+import intl2 from "intl" /* 1128 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import EmojiTypes from "EmojiTypes" /* 4826 */;
+import shared from "shared" /* 5028 */;
+import Pressables from "Pressables" /* 6407 */;
+import EmojiDefault from "Emoji" /* 7043 */;
+import ReactionIcon2 from "ReactionIcon" /* 9191 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerR
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp6 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.lfIHs4);
     cResult[0] = stringResult;
     first = stringResult;
@@ -112,10 +112,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerR
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(6405).PressableOpacity;
-  const intl = tmp2(1126).intl;
+  const PressableOpacity = tmp2(6407).PressableOpacity;
+  const intl = tmp2(1128).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(9178).ReactionIcon;
+  const ReactionIcon = tmp2(9191).ReactionIcon;
   if (str == null) {
     str = "md";
   }
@@ -152,10 +152,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiReact
     name = emoji.name;
   }
   if (tmp7 !== name) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
     let name1;
-    const prop = tmp(1126).t["/iYSo6"];
+    const prop = tmp(1128).t["/iYSo6"];
     if (emoji != null) {
       name1 = emoji.name;
     }
@@ -217,7 +217,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiReact
       if (null != emoji.id) {
         const obj12 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
         ({ id: obj6.id, animated: obj6.animated } = emoji);
-        const tmp19Result = tmp19(1415);
+        const tmp19Result = tmp19(1417);
         url = tmp19Result.getEmojiURL(obj12);
       } else {
         url = emoji.url;
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiReact
     if (null != emoji.id) {
       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj4.id, animated: obj4.animated } = emoji);
-      const tmp9Result = tmp9(1415);
+      const tmp9Result = tmp9(1417);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emoji.url;

@@ -1,43 +1,113 @@
 // Module ID: 1835
 // Function ID: 1836
-// Dependencies: [1660, 1659]
-// Exports: setGestureState
+// Dependencies: [1662, 1661]
+// Exports: measure
 
 // Module 1835
-import react_native from "react-native" /* 1660 */;
-import module_1659 from "module_1659" /* 1659 */;
+import react_native from "react-native" /* 1662 */;
+import module_1661_mod from "module_1661" /* 1661 */;
 
-function setGestureStateNative(arg0, arg1) {
+function measureFabric(fn) {
   if (globalThis._WORKLET) {
-    global._setGestureState(arg0, arg1);
+    const tmp3 = fn();
+    if (-1 === tmp3) {
+      const logger4 = react_native.logger;
+      const _HermesInternal = HermesInternal;
+      logger4.warn("The view with tag " + tmp3 + " is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
+      return null;
+    } else {
+      let _measureFabricResult = global._measureFabric(tmp3);
+      if (null === _measureFabricResult) {
+        const logger3 = react_native.logger;
+        logger3.warn("The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
+        _measureFabricResult = null;
+      } else if (-1234567 === _measureFabricResult.x) {
+        const logger2 = react_native.logger;
+        logger2.warn("The view returned an invalid measurement response. Please make sure the view is currently rendered.");
+        _measureFabricResult = null;
+      } else {
+        const _isNaN = isNaN;
+        if (isNaN(_measureFabricResult.x)) {
+          const logger = react_native.logger;
+          logger.warn("The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");
+          _measureFabricResult = null;
+        }
+      }
+      return _measureFabricResult;
+    }
   } else {
-    const logger = react_native.logger;
-    logger.warn("You can not use setGestureState in non-worklet function.");
+    return null;
   }
 }
-setGestureStateNative.__closure = { logger: react_native.logger };
-setGestureStateNative.__workletHash = 13301434022691;
-setGestureStateNative.__initData = { code: "function setGestureStateNative_Pnpm_setGestureStateTs1(handlerTag,newState){const{logger}=this.__closure;if(!_WORKLET){logger.warn('You can not use setGestureState in non-worklet function.');return;}global._setGestureState(handlerTag,newState);}" };
+measureFabric.__closure = { logger: react_native.logger };
+measureFabric.__workletHash = 11588690892656;
+measureFabric.__initData = { code: "function measureFabric_Pnpm_measureTs1(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn(\"The view with tag \"+viewTag+\" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}const measured=global._measureFabric(viewTag);if(measured===null){logger.warn(\"The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}else if(measured.x===-1234567){logger.warn(\"The view returned an invalid measurement response. Please make sure the view is currently rendered.\");return null;}else if(isNaN(measured.x)){logger.warn(\"The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.\");return null;}else{return measured;}}" };
+function measurePaper(fn) {
+  if (globalThis._WORKLET) {
+    const tmp3 = fn();
+    if (-1 === tmp3) {
+      const logger4 = react_native.logger;
+      const _HermesInternal4 = HermesInternal;
+      logger4.warn("The view with tag " + tmp3 + " is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
+      return null;
+    } else {
+      let _measurePaperResult = global._measurePaper(tmp3);
+      if (null === _measurePaperResult) {
+        const logger3 = react_native.logger;
+        const _HermesInternal3 = HermesInternal;
+        logger3.warn("The view with tag " + tmp3 + " has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
+        _measurePaperResult = null;
+      } else if (-1234567 === _measurePaperResult.x) {
+        const logger2 = react_native.logger;
+        const _HermesInternal2 = HermesInternal;
+        logger2.warn("The view with tag " + tmp3 + " returned an invalid measurement response. Please make sure the view is currently rendered.");
+        _measurePaperResult = null;
+      } else {
+        const _isNaN = isNaN;
+        if (isNaN(_measurePaperResult.x)) {
+          const logger = react_native.logger;
+          const _HermesInternal = HermesInternal;
+          logger.warn("The view with tag " + tmp3 + " gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");
+          _measurePaperResult = null;
+        }
+      }
+      return _measurePaperResult;
+    }
+  } else {
+    return null;
+  }
+}
 ({ logger: react_native.logger });
-if (module_1659.shouldBeUseWeb()) {
-  let setGestureStateJest;
-  const _module1 = module_1659;
-  if (_module1.isJest()) {
-    setGestureStateJest = function setGestureStateJest() {
+measurePaper.__closure = { logger: react_native.logger };
+measurePaper.__workletHash = 12497864483036;
+measurePaper.__initData = { code: "function measurePaper_Pnpm_measureTs2(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn(\"The view with tag \"+viewTag+\" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}const measured=global._measurePaper(viewTag);if(measured===null){logger.warn(\"The view with tag \"+viewTag+\" has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}else if(measured.x===-1234567){logger.warn(\"The view with tag \"+viewTag+\" returned an invalid measurement response. Please make sure the view is currently rendered.\");return null;}else if(isNaN(measured.x)){logger.warn(\"The view with tag \"+viewTag+\" gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.\");return null;}else{return measured;}}" };
+({ logger: react_native.logger });
+let module_1661 = module_1661_mod;
+module_1661.shouldBeUseWeb();
+module_1661 = module_1661_mod;
+if (module_1661) {
+  let measureJest;
+  if (module_1661.isJest()) {
+    measureJest = function measureJest() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Jest.");
+      logger.warn("measure() cannot be used with Jest.");
+      return null;
     };
   } else {
-    const _module2 = module_1659;
-    setGestureStateJest = _module2.isChromeDebugger() ? (function setGestureStateChromeDebugger() {
+    const _module2 = module_1661;
+    measureJest = _module2.isChromeDebugger() ? (function measureChromeDebugger() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Chrome Debugger.");
-    }) : (function setGestureStateDefault() {
+      logger.warn("measure() cannot be used with Chrome Debugger.");
+      return null;
+    }) : (function measureDefault() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() is not supported on this configuration.");
+      logger.warn("measure() is not supported on this configuration.");
+      return null;
     });
   }
-  setGestureStateNative = setGestureStateJest;
+  measurePaper = measureJest;
+} else if (module_1661.isFabric()) {
+  measurePaper = measureFabric;
 }
 
-export const setGestureState = setGestureStateNative;
+export const measure = measurePaper;

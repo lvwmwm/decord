@@ -1,18 +1,18 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14182
+// Function ID: 14183
 // Name: AvatarGrid
-// Dependencies: [19, 17, 5140, 5167, 21, 5151, 587, 558, 576, 504, 8592, 1200, 2]
+// Dependencies: [19, 17, 5143, 5169, 21, 5153, 587, 558, 576, 504, 8600, 1202, 2]
 
-// Module 14150 (AvatarGrid)
+// Module 14182 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
+import native from "native" /* 1202 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import PresenceStore from "PresenceStore" /* 5167 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import PresenceStore from "PresenceStore" /* 5169 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
                   }
                 }
                 tmp29[0] = tmp21;
-                const Avatar2 = tmp(1200).Avatar;
+                const Avatar2 = tmp(1202).Avatar;
                 const merged = Object.assign(tmp14);
                 const tmp33 = closure_5(Avatar2, tmp29);
                 cResult[15] = tmp14;
@@ -122,7 +122,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
               }
             }
           }
-          const tmpResult4 = user(8592);
+          const tmpResult4 = user(8600);
           class E {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -149,7 +149,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
               return useReducedMotion.useReducedMotion;
             }
           }
-          const Avatar = tmp(1200).Avatar;
+          const Avatar = tmp(1202).Avatar;
           const merged1 = Object.assign(tmp14);
           const tmp20 = closure_5(Avatar, obj2);
           cResult[18] = guildId;
@@ -196,11 +196,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
   if (showStatus) {
     tmp6 = stateFromStores;
   }
-  const Avatar = tmp2(1200).Avatar;
+  const Avatar = tmp2(1202).Avatar;
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };
-    tmp2Result = user(8592);
+    tmp2Result = user(8600);
     const merged = Object.assign(obj3);
     obj5 = obj4;
   } else {

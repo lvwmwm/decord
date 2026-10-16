@@ -1,30 +1,42 @@
 // Module ID: 12333
 // Function ID: 12334
-// Dependencies: [12289, 12319]
-// Exports: createClientReportEnvelope
+// Dependencies: [12305]
+// Exports: handleCallbackErrors
 
 // Module 12333
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12289 */;
-import _mod12319 from "module_12319" /* 12319 */;
+import _mod12305 from "module_12305" /* 12305 */;
 
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12305;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
+    }
   }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod12319.createEnvelope;
-  _mod12319;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
-  } else {
-    obj3 = {};
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
   }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
+  }
 };

@@ -1,30 +1,28 @@
-// Module ID: 15389
-// Function ID: 15390
+// Module ID: 15429
+// Function ID: 15430
 // Name: commands/config
-// Dependencies: [5855, 1085, 11237, 11234, 584, 2]
+// Dependencies: [5857, 1087, 15422, 11250, 584, 2]
 
-// Module 15389 (commands/config)
+// Module 15429 (commands/config)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import RPCErrorDefault from "RPCError" /* 11234 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11237 */;
-import Constants_mod from "Constants" /* 5855 */;
-import Constants_mod2 from "Constants" /* 1085 */;
+import RPCErrorDefault from "RPCError" /* 11250 */;
+import Constants_mod from "Constants" /* 5857 */;
+import Constants_mod2 from "Constants" /* 1087 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15422 */;
 import size from "module_2" /* 2 */;
 
+let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let c2;
+let c3;
 let Constants = Constants_mod2;
 ({ TransportTypes: c2, RPC_AUTHENTICATED_SCOPE } = Constants);
 Constants = Constants_mod2;
-const RPCErrors = Constants.RPCErrors;
-let obj = {
+({ RPCCommands, RPCErrors: c3 } = Constants);
+let obj = {};
+const SET_CONFIG = RPCCommands.SET_CONFIG;
+let obj2 = {
   scope: RPC_AUTHENTICATED_SCOPE,
-  validation(boolean) {
-    const obj = createRpcJoiSchemaObjectDefault(boolean);
-    const requiredResult = obj.required();
-    const obj2 = { use_interactive_pip: boolean.boolean() };
-    return requiredResult.keys(obj2);
-  },
   handler(socket) {
     let obj5;
     socket = socket.socket;
@@ -33,14 +31,14 @@ let obj = {
       const _HermesInternal = HermesInternal;
       const self3 = this;
       const self4 = this;
-      const obj2 = { errorCode: RPCErrors.INVALID_COMMAND };
+      const obj2 = { errorCode: constants2.INVALID_COMMAND };
       const tmp13 = RPCErrorDefault;
       const tmp132 = new tmp13(obj2, "command not available from \"" + socket.transport + " transport");
       throw tmp132;
     } else if (null == socket.application.id) {
       const self = this;
       const self2 = this;
-      const obj3 = { errorCode: RPCErrors.INVALID_COMMAND };
+      const obj3 = { errorCode: constants2.INVALID_COMMAND };
       const tmp9 = new RPCErrorDefault(obj3, "invalid application");
       throw tmp9;
     } else {
@@ -53,6 +51,7 @@ let obj = {
     }
   }
 };
+obj[SET_CONFIG] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.SET_CONFIG, obj2);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/config.tsx");
 
-export default { [Constants.RPCCommands.SET_CONFIG]: obj };
+export default obj;

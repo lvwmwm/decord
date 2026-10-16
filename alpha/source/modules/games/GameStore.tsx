@@ -1,18 +1,18 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2022
+// Function ID: 2023
 // Name: GameStore
-// Dependencies: [2021, 504, 1384, 584, 2]
+// Dependencies: [2023, 504, 1386, 584, 2]
 
-// Module 2020 (GameStore)
+// Module 2022 (GameStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import GameRecord from "GameRecord" /* 2021 */;
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import GameRecord from "GameRecord" /* 2023 */;
 import size from "module_2" /* 2 */;
 
 let message_preview;
 
-const f87835 = function(game_flags) {
+const f88113 = function(game_flags) {
   const tmp = "game_flags" in game_flags && typeof game_flags.game_flags === "number";
   if (tmp) {
     if (!set.has(game_flags.id)) {
@@ -31,7 +31,7 @@ function createGamesFromMessage(referenced_message) {
   let closure_0 = false;
   const mention_games = referenced_message.mention_games;
   if (mention_games != null) {
-    const item = mention_games.forEach(f87835);
+    const item = mention_games.forEach(f88113);
   }
   if (null != referenced_message.referenced_message) {
     const tmp3 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -45,14 +45,14 @@ function handleLoadMessages(messages) {
     let closure_0 = false;
     mention_games = mention_games.mention_games;
     if (mention_games != null) {
-      const item = mention_games.forEach(f87835);
+      const item = mention_games.forEach(f88113);
     }
     if (null != mention_games.referenced_message) {
       const referenced_message = mention_games.referenced_message;
       closure_0 = false;
       const mention_games1 = referenced_message.mention_games;
       if (mention_games1 != null) {
-        const item1 = mention_games1.forEach(f87835);
+        const item1 = mention_games1.forEach(f88113);
       }
       if (null != referenced_message.referenced_message) {
         const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -73,14 +73,14 @@ function handleLoadSearchResults(data) {
         closure_0 = false;
         mention_games = mention_games.mention_games;
         if (mention_games != null) {
-          const item = mention_games.forEach(f87835);
+          const item = mention_games.forEach(f88113);
         }
         if (null != mention_games.referenced_message) {
           const referenced_message = mention_games.referenced_message;
           c0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f87835);
+            const item1 = mention_games1.forEach(f88113);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = closure_2_7(referenced_message.referenced_message) || c0;
@@ -99,14 +99,14 @@ function handleIncomingMessage(message) {
   let closure_0 = false;
   const mention_games = message.mention_games;
   if (mention_games != null) {
-    const item = mention_games.forEach(f87835);
+    const item = mention_games.forEach(f88113);
   }
   if (null != message.referenced_message) {
     const referenced_message = message.referenced_message;
     closure_0 = false;
     const mention_games1 = referenced_message.mention_games;
     if (mention_games1 != null) {
-      const item1 = mention_games1.forEach(f87835);
+      const item1 = mention_games1.forEach(f88113);
     }
     if (null != referenced_message.referenced_message) {
       const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -141,10 +141,10 @@ class GameStore extends Store {
     const hasItem = null != item && set2.has(item);
     return hasItem;
   }
-  getCoverImageUrl(arg0, size) {
+  getCoverImageUrl(id, arg1) {
     let tmp = null;
-    if (null != arg0) {
-      const value = map.get(arg0);
+    if (null != id) {
+      const value = map.get(id);
       let coverURL;
       if (value != null) {
         coverURL = value.getCoverURL();
@@ -153,7 +153,7 @@ class GameStore extends Store {
     }
     if (null == tmp) {
       return null;
-    } else if (null == size) {
+    } else if (null == arg1) {
       return tmp;
     } else {
       const obj2 = URLUtilsDefault;
@@ -161,7 +161,7 @@ class GameStore extends Store {
       let str1 = tmp;
       if (null != str) {
         const searchParams = str.searchParams;
-        const str2 = size.size;
+        const str2 = arg1.size;
         const result = searchParams.set("size", str2.toString());
         str1 = str.toString();
       }
@@ -224,14 +224,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f87835);
+        const item = mention_games.forEach(f88113);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f87835);
+          const item1 = mention_games1.forEach(f88113);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -253,14 +253,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f87835);
+        const item = mention_games.forEach(f88113);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f87835);
+          const item1 = mention_games1.forEach(f88113);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -281,14 +281,14 @@ const obj = {
           closure_0 = false;
           mention_games = mention_games.mention_games;
           if (mention_games != null) {
-            const item = mention_games.forEach(f87835);
+            const item = mention_games.forEach(f88113);
           }
           if (null != mention_games.referenced_message) {
             const referenced_message = mention_games.referenced_message;
             closure_0 = false;
             const mention_games1 = referenced_message.mention_games;
             if (mention_games1 != null) {
-              const item1 = mention_games1.forEach(f87835);
+              const item1 = mention_games1.forEach(f88113);
             }
             if (null != referenced_message.referenced_message) {
               const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -309,14 +309,14 @@ const obj = {
       let closure_0 = false;
       const mention_games = message.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f87835);
+        const item = mention_games.forEach(f88113);
       }
       if (null != message.referenced_message) {
         const referenced_message = message.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f87835);
+          const item1 = mention_games1.forEach(f88113);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -336,14 +336,14 @@ const obj = {
       let closure_0 = false;
       mention_games = mention_games.mention_games;
       if (mention_games != null) {
-        const item = mention_games.forEach(f87835);
+        const item = mention_games.forEach(f88113);
       }
       if (null != mention_games.referenced_message) {
         const referenced_message = mention_games.referenced_message;
         closure_0 = false;
         const mention_games1 = referenced_message.mention_games;
         if (mention_games1 != null) {
-          const item1 = mention_games1.forEach(f87835);
+          const item1 = mention_games1.forEach(f88113);
         }
         if (null != referenced_message.referenced_message) {
           const tmp4 = closure_7(referenced_message.referenced_message) || closure_0;
@@ -367,14 +367,14 @@ const obj = {
         closure_0 = false;
         const mention_games = first_message.mention_games;
         if (mention_games != null) {
-          item = mention_games.forEach(f87835);
+          item = mention_games.forEach(f88113);
         }
         if (null != first_message.referenced_message) {
           const referenced_message = first_message.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f87835);
+            const item1 = mention_games1.forEach(f88113);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -388,14 +388,14 @@ const obj = {
         closure_0 = false;
         const mention_games2 = most_recent_message.mention_games;
         if (mention_games2 != null) {
-          const item2 = mention_games2.forEach(f87835);
+          const item2 = mention_games2.forEach(f88113);
         }
         if (null != most_recent_message.referenced_message) {
           const referenced_message2 = most_recent_message.referenced_message;
           closure_0 = false;
           const mention_games3 = referenced_message2.mention_games;
           if (mention_games3 != null) {
-            const item3 = mention_games3.forEach(f87835);
+            const item3 = mention_games3.forEach(f88113);
           }
           if (null != referenced_message2.referenced_message) {
             const tmp8 = createGamesFromMessage(referenced_message2.referenced_message) || closure_0;
@@ -417,14 +417,14 @@ const obj = {
         closure_0 = false;
         const mention_games = message_preview.mention_games;
         if (mention_games != null) {
-          const item = mention_games.forEach(f87835);
+          const item = mention_games.forEach(f88113);
         }
         if (null != message_preview.referenced_message) {
           const referenced_message = message_preview.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f87835);
+            const item1 = mention_games1.forEach(f88113);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;
@@ -446,14 +446,14 @@ const obj = {
         closure_0 = false;
         const mention_games = message.mention_games;
         if (mention_games != null) {
-          const item = mention_games.forEach(f87835);
+          const item = mention_games.forEach(f88113);
         }
         if (null != message.referenced_message) {
           const referenced_message = message.referenced_message;
           closure_0 = false;
           const mention_games1 = referenced_message.mention_games;
           if (mention_games1 != null) {
-            const item1 = mention_games1.forEach(f87835);
+            const item1 = mention_games1.forEach(f88113);
           }
           if (null != referenced_message.referenced_message) {
             const tmp4 = createGamesFromMessage(referenced_message.referenced_message) || closure_0;

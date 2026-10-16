@@ -1,16 +1,16 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 14839
+// Function ID: 14840
 // Name: openGuildActionSheet
-// Dependencies: [1085, 2090, 1265, 9681, 5115, 14807, 2000, 14871, 14877, 2]
+// Dependencies: [1087, 2093, 1267, 9697, 5118, 14840, 2002, 14904, 14910, 2]
 // Exports: default
 
-// Module 14806 (openGuildActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9681 */;
-import Constants from "Constants" /* 1085 */;
+// Module 14839 (openGuildActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9697 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -32,7 +32,7 @@ export default function openGuildActionSheet(id) {
     if (tmpResult.shouldNSFWGateGuild(id.id)) {
       const obj4 = { guild: id };
       const tmp3Result = ActionSheetActionCreatorsDefault;
-      tmp3Result.openLazy(asyncRequire(14807, dependencyMap.paths), "NsfwGateGuildSettingsActionSheet", obj4);
+      tmp3Result.openLazy(asyncRequire(14840, dependencyMap.paths), "NsfwGateGuildSettingsActionSheet", obj4);
     } else {
       const features = id.features;
       const hasItem = features.has(constants2.HUB);
@@ -42,12 +42,12 @@ export default function openGuildActionSheet(id) {
       if (hasItem) {
         const _HermesInternal2 = HermesInternal;
         const obj5 = { guild: id, expanded: flag };
-        const tmpResult1Result = tmpResult2(14871, dependencyMap.paths);
+        const tmpResult1Result = tmpResult2(14904, dependencyMap.paths);
         openLazy(tmpResult1Result, "GuildActionSheet:" + id.id, obj5);
       } else {
         const _HermesInternal = HermesInternal;
         const obj6 = { guild: id, expanded: flag };
-        const tmpResult1Result1 = tmpResult2(14877, dependencyMap.paths);
+        const tmpResult1Result1 = tmpResult2(14910, dependencyMap.paths);
         openLazy(tmpResult1Result1, "GuildActionSheet:" + id.id, obj6);
       }
     }

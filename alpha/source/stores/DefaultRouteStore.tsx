@@ -1,13 +1,13 @@
-// Module ID: 4999
-// Function ID: 5000
+// Module ID: 5002
+// Function ID: 5003
 // Name: DefaultRouteStore
-// Dependencies: [1085, 504, 510, 584, 2]
+// Dependencies: [1087, 504, 510, 584, 2]
 
-// Module 4999 (DefaultRouteStore)
+// Module 5002 (DefaultRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

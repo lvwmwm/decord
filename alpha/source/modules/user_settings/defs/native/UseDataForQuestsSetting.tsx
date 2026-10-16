@@ -1,17 +1,17 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 16883
+// Function ID: 16884
 // Name: UseDataForQuestsSetting
-// Dependencies: [8210, 558, 16851, 15750, 2041, 10991, 1126, 16852, 2]
+// Dependencies: [8213, 558, 16884, 15783, 2044, 11006, 1128, 16885, 2]
 
-// Module 16850 (UseDataForQuestsSetting)
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15750 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 16851 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 16852 */;
+// Module 16883 (UseDataForQuestsSetting)
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15783 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 16884 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 16885 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10991 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

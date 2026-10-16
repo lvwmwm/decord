@@ -1,14 +1,14 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10496
+// Function ID: 10497
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 558, 576, 5445, 7790, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5447, 7793, 2]
 
-// Module 10481 (ActionButton)
+// Module 10496 (ActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ButtonHooks from "ButtonHooks" /* 5445 */;
-import IconButton2 from "IconButton" /* 7790 */;
+import ButtonHooks from "ButtonHooks" /* 5447 */;
+import IconButton2 from "IconButton" /* 7793 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

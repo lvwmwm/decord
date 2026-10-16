@@ -1,45 +1,45 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8723
+// Function ID: 8724
 // Name: InstantInviteActionCreators
-// Dependencies: [5, 6355, 6270, 2069, 502, 2065, 4804, 2125, 2087, 8716, 5132, 4806, 4816, 4995, 1390, 1085, 1110, 2072, 6114, 7640, 6108, 1403, 8729, 7144, 1124, 1112, 6105, 2000, 5303, 7709, 5196, 7660, 8730, 7463, 8405, 6367, 8731, 7004, 8732, 584, 13847, 6140, 13848, 6320, 1265, 1295, 5852, 1102, 6154, 1273, 2077, 5133, 6322, 6145, 7133, 4848, 13850, 13851, 10726, 5278, 5354, 13852, 13853, 1278, 13855, 2]
+// Dependencies: [5, 6357, 6272, 2072, 502, 2068, 4807, 2128, 2090, 8724, 5135, 4809, 4819, 4998, 1392, 1087, 1112, 2075, 6116, 7642, 6110, 1405, 8737, 7146, 1126, 1114, 6107, 2002, 5305, 7712, 5198, 7663, 8738, 7465, 8413, 6369, 8739, 7006, 8740, 584, 13879, 6142, 13880, 6322, 1267, 1297, 5854, 1104, 6156, 1275, 2080, 5136, 6324, 6147, 7135, 4851, 13882, 13883, 10741, 5280, 5356, 13884, 13885, 1280, 13887, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 8715 (InstantInviteActionCreators)
+// Module 8723 (InstantInviteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AgeGateConstants from "AgeGateConstants" /* 1110 */;
-import router_utils from "router_utils" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5133 */;
-import _modDef5278 from "module_5278" /* 5278 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6108 */;
-import Constants2 from "Constants" /* 6114 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6145 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6270 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6355 */;
-import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 7133 */;
-import Constants3 from "Constants" /* 7640 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8729 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10726 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 13853 */;
-import ProtocolUtilsDefault from "ProtocolUtils" /* 13855 */;
+import AgeGateConstants from "AgeGateConstants" /* 1112 */;
+import router_utils from "router_utils" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5136 */;
+import _modDef5280 from "module_5280" /* 5280 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6110 */;
+import Constants2 from "Constants" /* 6116 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6147 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6272 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6357 */;
+import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 7135 */;
+import Constants3 from "Constants" /* 7642 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8737 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10741 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 13885 */;
+import ProtocolUtilsDefault from "ProtocolUtils" /* 13887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4804 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import InstantInviteStore from "InstantInviteStore" /* 8716 */;
-import InviteStore from "InviteStore" /* 5132 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import InstantInviteStore from "InstantInviteStore" /* 8724 */;
+import InviteStore from "InviteStore" /* 5135 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,9 +62,9 @@ let metroImportAll;
 let tmp;
 let tmp13;
 let unpackModuleId;
-const errors_V6OrEarlierAPIErrorDefault = tmp13(4848);
-const resolveInviteDefault = tmp(13847);
-const f99346 = () => {
+const errors_V6OrEarlierAPIErrorDefault = tmp13(4851);
+const resolveInviteDefault = tmp(13879);
+const f99636 = () => {
   let c4;
   let guildScheduledEvent;
   let intent;
@@ -518,7 +518,7 @@ function generateAcceptInviteOptions(target_type) {
 function transitionToInviteChannelSync(arg0, arg1) {
   let closure_0 = arg0;
   const items = [];
-  const result = ChannelStore.addConditionalChangeListener(f99346);
+  const result = ChannelStore.addConditionalChangeListener(f99636);
 }
 let body = function _transitionToGuildFromEventInvite() {
   let obj = _asyncToGenerator(async (arg0, value) => {
@@ -605,7 +605,7 @@ body = {
   resolveInvite(code, arg1, arg2) {
     let closure_1;
     let nextPromise;
-    const f99348 = () => {
+    const f99638 = () => {
       let nextPromise;
       const tmp = code;
       let obj = DispatcherDefault;
@@ -613,7 +613,7 @@ body = {
       const tmp3 = closure_2;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f99348);
+        nextPromise = resolved.then(f99638);
       } else {
         let obj2 = { type: "INVITE_RESOLVE", code: tmp };
         const tmp4Result = DispatcherDefault;
@@ -644,7 +644,7 @@ body = {
     if (obj.isDispatching()) {
       const tmp5 = globalThis;
       let resolved = Promise.resolve();
-      nextPromise = resolved.then(f99348);
+      nextPromise = resolved.then(f99638);
     } else {
       let obj2 = { type: "INVITE_RESOLVE", code };
       const tmpResult = DispatcherDefault;
@@ -1040,11 +1040,11 @@ body = {
     let obj3;
     const code = invite.code;
     const channel = invite.channel;
-    const tmp = channel(6154);
+    const tmp = channel(6156);
     let obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: obj2, rejectWithError: obj3.rejectWithMigratedError() };
     const _delete = tmp.delete;
-    obj2 = { event: code(1273).NetworkActionNames.INVITE_REVOKE, properties: { uses: invite.uses, max_uses: invite.maxUses, max_age: invite.maxAge, invite_type: invite.type } };
-    obj3 = code(1295);
+    obj2 = { event: code(1275).NetworkActionNames.INVITE_REVOKE, properties: { uses: invite.uses, max_uses: invite.maxUses, max_age: invite.maxAge, invite_type: invite.type } };
+    obj3 = code(1297);
     const _deleteResult = _delete(obj);
     return _deleteResult.then(() => {
       const obj = DispatcherDefault;
@@ -1317,7 +1317,7 @@ body = {
           if (items === undefined) {
             items = [];
           }
-          let result = ChannelStore.addConditionalChangeListener(f99346);
+          let result = ChannelStore.addConditionalChangeListener(f99636);
         }
         if (null != importDefault) {
           tmp7(channel);
@@ -1350,7 +1350,7 @@ body = {
           }
           if (null != dMFromUserId) {
             let closure_2 = [];
-            const result = ChannelStore.addConditionalChangeListener(f99346);
+            const result = ChannelStore.addConditionalChangeListener(f99636);
           }
         }
       }
@@ -1362,7 +1362,7 @@ body = {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        const obj6 = obj(13850);
+        const obj6 = obj(13882);
         obj6.onOpenHubInvite(flags);
       }
     }
@@ -1370,18 +1370,18 @@ body = {
     if (num == null) {
       num = 0;
     }
-    const obj2 = dMFromUserId(1403);
-    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(8729).GuildInviteFlags.IS_GUEST_INVITE);
+    const obj2 = dMFromUserId(1405);
+    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(8737).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      const tmp6Result = dMFromUserId(1403);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(8729).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      const tmp6Result = dMFromUserId(1405);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(8737).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (flags.new_member) {
-          const tmp6Result3 = dMFromUserId(13851);
+          const tmp6Result3 = dMFromUserId(13883);
           if (tmp6Result3.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const tmp6Result4 = dMFromUserId(13851);
+            const tmp6Result4 = dMFromUserId(13883);
             const result1 = tmp6Result4.openVerificationModalOrTransitionToApplication(guild.id);
           }
         }
@@ -1404,7 +1404,7 @@ body = {
       const id = channel.id;
       let closure_1 = tmp18;
       closure_2 = [];
-      const result2 = ChannelStore.addConditionalChangeListener(f99346);
+      const result2 = ChannelStore.addConditionalChangeListener(f99636);
     }
   },
   openNativeAppModal(inviteKey) {
@@ -1470,8 +1470,8 @@ body = {
     let obj2 = DispatcherDefault;
     const obj3 = { type: "INVITE_APP_OPENING", code };
     obj2.dispatch(obj3);
-    if (null != _modDef5278.ua) {
-      const str = _modDef5278.ua;
+    if (null != _modDef5280.ua) {
+      const str = _modDef5280.ua;
       const formatted = str.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
         const obj6 = { type: "INVITE_APP_NOT_OPENED", code };
@@ -1479,13 +1479,13 @@ body = {
         tmp7Result.dispatch(obj6);
       }
     }
-    const os = tmp7(5278).os;
+    const os = tmp7(5280).os;
     let family;
     if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = tmp7(5278).os;
+      const os2 = tmp7(5280).os;
       let family1;
       if (os2 != null) {
         family1 = os2.family;
@@ -1532,7 +1532,7 @@ body = {
       const obj4 = require("DynamicLinkTemplates");
       inviteDynamicLinkTemplate = obj4.getDefaultDynamicLinkTemplate();
     }
-    const tmp18Result = tmp18(13853);
+    const tmp18Result = tmp18(13885);
     const attemptId = tmp18Result.generateAttemptId();
     inviteType = undefined;
     const tmp7Result5 = generateDynamicLinkDefault;
@@ -1561,7 +1561,7 @@ body = {
     const track = AnalyticsUtilsDefault.track;
     const DEEP_LINK_CLICKED = constants3.DEEP_LINK_CLICKED;
     AnalyticsUtilsDefault;
-    tmp18Result2 = tmp18(1278);
+    tmp18Result2 = tmp18(1280);
     track(DEEP_LINK_CLICKED, obj8);
   },
   setReceivedInstallationIdForInviteCode(result2, installationId) {

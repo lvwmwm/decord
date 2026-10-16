@@ -1,17 +1,17 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12724
+// Function ID: 12725
 // Name: useRowManager
-// Dependencies: [9, 12699, 5083, 9818, 12700, 1382, 9817, 2]
+// Dependencies: [9, 12725, 5086, 9834, 12726, 1384, 9833, 2]
 // Exports: default
 
-// Module 12698 (useRowManager)
+// Module 12724 (useRowManager)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import flow_Client from "flow/Client" /* 5083 */;
-import computeScrollDataDefault from "computeScrollData" /* 9817 */;
-import NativeChatUtils from "NativeChatUtils" /* 9818 */;
-import createChannelStreamDefault from "createChannelStream" /* 12699 */;
-import createConversationHeader from "createConversationHeader" /* 12700 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import flow_Client from "flow/Client" /* 5086 */;
+import computeScrollDataDefault from "computeScrollData" /* 9833 */;
+import NativeChatUtils from "NativeChatUtils" /* 9834 */;
+import createChannelStreamDefault from "createChannelStream" /* 12725 */;
+import createConversationHeader from "createConversationHeader" /* 12726 */;
 import size from "module_2" /* 2 */;
 
 const NativeChatUtilsDefault = NativeChatUtils;

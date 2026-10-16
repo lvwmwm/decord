@@ -1,27 +1,27 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18506
+// Function ID: 18507
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 18465, 18466, 18467, 18468, 18469, 18470, 18471, 18472, 1126, 5151, 587, 558, 576, 5147, 5088, 6405, 2]
+// Dependencies: [19, 17, 21, 18507, 18508, 18509, 18510, 18511, 18512, 18513, 18514, 1128, 5153, 587, 558, 576, 5149, 5091, 6407, 2]
 
-// Module 18464 (PresetAvatarSelect)
+// Module 18506 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Pressables from "Pressables" /* 6405 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 18465 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 18466 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 18467 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 18468 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 18469 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 18470 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 18471 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 18472 */;
+import intl2 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Pressables from "Pressables" /* 6407 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 18507 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 18508 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 18509 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 18510 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 18511 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 18512 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 18513 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 18514 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -109,9 +109,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresetAvat
   const tmp4 = closure_7();
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1126).t.yP28YL) };
-    const Text = tmp(5147).Text;
-    intl = tmp(1126).intl;
+    let obj2 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1128).t.yP28YL) };
+    const Text = tmp(5149).Text;
+    intl = tmp(1128).intl;
     const tmp7 = closure_4(Text, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -332,7 +332,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Default
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.vw2RsD);
       cResult[5] = stringResult;
       tmp9 = stringResult;
@@ -404,7 +404,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Default
   }
   items[1] = prop;
   const obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: intl.string(intl2.t.vw2RsD), onPress: onSelect, children: React3(FastImageDefault, obj2) };
-  intl = tmp3(1126).intl;
+  intl = tmp3(1128).intl;
   obj2 = { style: tmp.defaultAvatarButton, source: { uri: source } };
   return React3(PressableOpacity, obj);
 });

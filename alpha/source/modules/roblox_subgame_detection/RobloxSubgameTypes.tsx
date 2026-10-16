@@ -1,10 +1,10 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7655
+// Function ID: 7656
 // Name: RobloxSubgameTypes
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 7653 (RobloxSubgameTypes)
+// Module 7655 (RobloxSubgameTypes)
 import size from "module_2" /* 2 */;
 
 class ROBLOX_PROTOCOL_URL {

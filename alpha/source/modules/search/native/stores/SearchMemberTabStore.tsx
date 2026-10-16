@@ -1,15 +1,15 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12935
+// Function ID: 12936
 // Name: SearchMemberTabStore
-// Dependencies: [2065, 1085, 8917, 4811, 6319, 504, 584, 2]
+// Dependencies: [2068, 1087, 8925, 4814, 6321, 504, 584, 2]
 
-// Module 12909 (SearchMemberTabStore)
+// Module 12935 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import GuildUtilsDefault from "GuildUtils" /* 6319 */;
-import _modDef8917 from "module_8917" /* 8917 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import Constants from "Constants" /* 1087 */;
+import GuildUtilsDefault from "GuildUtils" /* 6321 */;
+import _modDef8925 from "module_8925" /* 8925 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 let results;
@@ -49,8 +49,8 @@ class GuildMemberSearchManager {
       }
     };
     const items = [];
-    const tmp2 = _modDef8917;
-    items[0] = obj(8917).AutocompleterResultTypes.USER;
+    const tmp2 = _modDef8925;
+    items[0] = obj(8925).AutocompleterResultTypes.USER;
     obj.autocompleter = new tmp2(obj.onAutocompleterResultsChange, items, 50);
     const autocompleter = obj.autocompleter;
     new tmp2(obj.onAutocompleterResultsChange, items, 50);
@@ -174,8 +174,8 @@ let obj = {
           }
         };
         let tmp2 = importDefault;
-        const tmp4 = _modDef8917;
-        let items = [obj2(8917).AutocompleterResultTypes.USER];
+        const tmp4 = _modDef8925;
+        let items = [obj2(8925).AutocompleterResultTypes.USER];
         const self = this;
         const self2 = this;
         obj2.autocompleter = new tmp4(obj2.onAutocompleterResultsChange, items, 50);

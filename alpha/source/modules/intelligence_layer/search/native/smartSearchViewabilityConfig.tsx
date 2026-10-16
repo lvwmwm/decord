@@ -1,12 +1,12 @@
-// Module ID: 17731
-// Function ID: 17732
+// Module ID: 17765
+// Function ID: 17766
 // Name: smartSearchViewabilityConfig
-// Dependencies: [9533, 12905, 12903, 2]
+// Dependencies: [9549, 12931, 12929, 2]
 
-// Module 17731 (smartSearchViewabilityConfig)
-import SearchConstants from "SearchConstants" /* 9533 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12903 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12905 */;
+// Module 17765 (smartSearchViewabilityConfig)
+import SearchConstants from "SearchConstants" /* 9549 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12929 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12931 */;
 import size from "module_2" /* 2 */;
 
 const SearchListItemTypes = SearchConstants.SearchListItemTypes;

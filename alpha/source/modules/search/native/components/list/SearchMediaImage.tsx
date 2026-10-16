@@ -1,30 +1,30 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17730
+// Function ID: 17731
 // Name: SearchMediaImage
-// Dependencies: [109, 32, 19, 17, 2065, 6278, 1085, 21, 5151, 558, 576, 5087, 5025, 7215, 13642, 8426, 5425, 504, 8617, 1496, 12761, 1382, 5088, 1126, 9176, 12504, 1403, 6160, 8611, 9146, 11907, 2]
+// Dependencies: [109, 32, 19, 17, 2068, 6280, 1087, 21, 5153, 558, 576, 5090, 5028, 7217, 13668, 8434, 5427, 504, 8625, 1498, 12787, 1384, 5091, 1128, 9189, 12527, 1405, 6162, 8619, 9154, 11931, 2]
 
-// Module 17696 (SearchMediaImage)
+// Module 17730 (SearchMediaImage)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import shared from "shared" /* 5025 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6160 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 7215 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8426 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8611 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 12504 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12761 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 13642 */;
+import Constants from "Constants" /* 1087 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import shared from "shared" /* 5028 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6162 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 7217 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8434 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8619 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 12527 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12787 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 13668 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SearchMessageStore from "SearchMessageStore" /* 6278 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SearchMessageStore from "SearchMessageStore" /* 6280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,9 +38,9 @@ let closure_15;
 let closure_16;
 let tmp;
 let tmp5;
-const VisualEffectViewDefault = tmp5(5425);
-const CirclePlayIcon = tmp(9146);
-const AttachmentPreview = tmp(11907);
+const VisualEffectViewDefault = tmp5(5427);
+const CirclePlayIcon = tmp(9154);
+const AttachmentPreview = tmp(11931);
 let closure_3 = ["attachment", "channelId", "authorId"];
 let closure_4 = ["embed", "sources", "messageId", "channelId", "authorId"];
 let closure_5 = ["unfurledMediaItem", "sources", "channelId", "authorId", "isBot"];
@@ -264,9 +264,9 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
     }
     const tmpResult = channelId(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8);
-    const tmpResult6 = channelId(8617);
+    const tmpResult6 = channelId(8625);
     const shouldDisplaySpoilerObscurity = tmpResult6.useShouldDisplaySpoilerObscurity(stateFromStores);
-    if (obscureReason !== channelId(7215).ObscureReason.SPOILER) {
+    if (obscureReason !== channelId(7217).ObscureReason.SPOILER) {
       tmp11 = obscureReason;
     } else {
       tmp11 = null;
@@ -286,7 +286,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                       tmp13 = cResult[14];
                     }
                     if (cResult[15] !== tmp11) {
-                      const tmpResult7 = channelId(12761);
+                      const tmpResult7 = channelId(12787);
                       const obscuredAlt = tmpResult7.getObscuredAlt(tmp11);
                       cResult[15] = tmp11;
                       cResult[16] = obscuredAlt;
@@ -301,7 +301,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                         if (cResult[19] === tmp11) {
                           tmp23 = cResult[20];
                         }
-                        const tmpResult8 = channelId(1382);
+                        const tmpResult8 = channelId(1384);
                         if (tmpResult8.isAndroid()) {
                           if (null != tmp11) {
                             let tmp36;
@@ -370,10 +370,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                         }
                         if (cResult[36] !== tmp21) {
                           let stringResult = tmp21;
-                          const tmpResult9 = channelId(1382);
+                          const tmpResult9 = channelId(1384);
                           if (tmpResult9.isAndroid()) {
-                            const intl = tmp(1126).intl;
-                            stringResult = intl.string(tmp(1126).t.jes7FG);
+                            const intl = tmp(1128).intl;
+                            stringResult = intl.string(tmp(1128).t.jes7FG);
                           }
                           cResult[36] = tmp21;
                           cResult[37] = stringResult;
@@ -411,7 +411,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                           }
                         }
                         const obj7 = { style: tmp4, uri: tmp13, placeholder, placeholderVersion, alt: tmp27 };
-                        const tmp31 = closure_14(channelId(9176).ImageWithPlaceholder, obj7);
+                        const tmp31 = closure_14(channelId(9189).ImageWithPlaceholder, obj7);
                         cResult[38] = tmp27;
                         cResult[39] = placeholder;
                         cResult[40] = placeholderVersion;
@@ -450,7 +450,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
           [tmp18, tmp19] = items5;
           _slicedToArray(items5, 2);
           const obj8 = { src: mediaUrl, sourceWidth: mediaWidth, sourceHeight: mediaHeight, targetWidth: tmp18, targetHeight: tmp19, format: "png" };
-          const tmpResult10 = channelId(1496);
+          const tmpResult10 = channelId(1498);
           const srcWithWidthAndHeight = tmpResult10.getSrcWithWidthAndHeight(obj8);
           cResult[8] = containerHeight;
           cResult[9] = containerWidth;
@@ -690,17 +690,17 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachment
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(12504);
+  let obj = attachment(12527);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
-  const hasFlag = attachment(1403).hasFlag;
-  attachment(1403);
+  const hasFlag = attachment(1405).hasFlag;
+  attachment(1405);
   if (num == null) {
     num = 0;
   }
   let hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_SPOILER);
   if (!hasFlagResult) {
-    const tmp2Result = attachment(6160);
+    const tmp2Result = attachment(6162);
     hasFlagResult = tmp2Result.isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   }
   dependencyMap = hasFlagResult;
@@ -710,7 +710,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachment
     return obj.getObscureReasonForAttachment(attachment, enabledHarmTypesBitmaskForChannelAndAuthorId, c2);
   }, items);
   const obj2 = { channelId, obscureReason: memo, mediaUrl: attachmentUrl };
-  const tmp2Result2 = attachment(8611);
+  const tmp2Result2 = attachment(8619);
   attachmentUrl = tmp2Result2.getAttachmentUrl(attachment);
   const merged1 = Object.assign(merged);
   ({ height: obj4.mediaHeight, width: obj4.mediaWidth } = attachment);
@@ -968,9 +968,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedM
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(12504);
+  let obj = embed(12527);
   closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = embed(6160);
+  const obj2 = embed(6162);
   closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [SearchMessageStore];
   const thumbnail = embed.thumbnail;
@@ -990,19 +990,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedM
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(12761).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(12761);
+      const getObscureReasonForEmbed = tmp2(12787).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(12787);
       if (!flag2) {
         flag2 = closure_4;
       }
       return getObscureReasonForEmbed(embed, message, flag2, closure_3);
     }
   });
-  const obj4 = embed(8611);
+  const obj4 = embed(8619);
   size = obj4.getEmbedMedia(embed);
   let embedUrl = null;
   if (null != size) {
-    let tmp2Result = tmp2(8611);
+    let tmp2Result = tmp2(8619);
     embedUrl = tmp2Result.getEmbedUrl(size);
   }
   if (null != thumbnail) {

@@ -1,11 +1,11 @@
-// Module ID: 6974
-// Function ID: 6975
+// Module ID: 6976
+// Function ID: 6977
 // Name: getFastestListSectionsWithErrorChecking
-// Dependencies: [6968, 2]
+// Dependencies: [6970, 2]
 // Exports: default
 
-// Module 6974 (getFastestListSectionsWithErrorChecking)
-import FastestListLogger from "FastestListLogger" /* 6968 */;
+// Module 6976 (getFastestListSectionsWithErrorChecking)
+import FastestListLogger from "FastestListLogger" /* 6970 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/fastest_list/utils/getFastestListSectionsWithErrorChecking.native.tsx");

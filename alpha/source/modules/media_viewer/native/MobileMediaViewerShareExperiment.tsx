@@ -1,12 +1,12 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 8712
+// Function ID: 8713
 // Name: MobileMediaViewerShareExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8704 (MobileMediaViewerShareExperiment)
+// Module 8712 (MobileMediaViewerShareExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

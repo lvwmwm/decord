@@ -1,21 +1,21 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16897
+// Function ID: 16898
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 6179, 15621, 16865, 8210, 5115, 16866, 2000, 558, 576, 16867, 1126, 10991, 2]
+// Dependencies: [19, 6181, 15654, 16898, 8213, 5118, 16899, 2002, 558, 576, 16900, 1128, 11006, 2]
 
-// Module 16864 (SafetyGuildSettingGuildSelect)
+// Module 16897 (SafetyGuildSettingGuildSelect)
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 16867 */;
+import intl2 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 16900 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6179 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15621 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16865 */;
+import SortedGuildStore from "SortedGuildStore" /* 6181 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15654 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16898 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
     if (0 !== dMPermissionsOverrideCount) {
       let tmp5;
       if (cResult[0] !== dMPermissionsOverrideCount) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const obj3 = { count: dMPermissionsOverrideCount };
         const formatResult = intl.format(intl2.t.eugFxh, obj3);
         cResult[0] = dMPermissionsOverrideCount;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
   const dMPermissionsOverrideCount = obj.useDMPermissionsOverrideCount();
   if (selectedGuildId === metroImportDefault) {
     if (0 !== dMPermissionsOverrideCount) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const obj2 = { count: dMPermissionsOverrideCount };
       return intl.format(intl2.t.eugFxh, obj2);
     }
@@ -108,7 +108,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(16866, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(16899, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

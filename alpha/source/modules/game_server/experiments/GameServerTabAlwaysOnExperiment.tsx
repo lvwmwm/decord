@@ -1,11 +1,11 @@
-// Module ID: 17285
-// Function ID: 17286
+// Module ID: 17320
+// Function ID: 17321
 // Name: GameServerTabAlwaysOnExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 
-// Module 17285 (GameServerTabAlwaysOnExperiment)
+// Module 17320 (GameServerTabAlwaysOnExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

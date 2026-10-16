@@ -1,11 +1,11 @@
-// Module ID: 8223
-// Function ID: 8224
+// Module ID: 8226
+// Function ID: 8227
 // Name: markup/MarkupParser
-// Dependencies: [8224, 1949, 2]
+// Dependencies: [8227, 1951, 2]
 
-// Module 8223 (markup/MarkupParser)
-import _modDef1949 from "module_1949" /* 1949 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 8224 */;
+// Module 8226 (markup/MarkupParser)
+import _modDef1951 from "module_1951" /* 1951 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 8227 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -45,7 +45,7 @@ function saferParse(fn, arg1, inline, arg3, arg4) {
 }
 let obj = {
   astParserFor(importDefaultResultResult) {
-    let obj = _modDef1949;
+    let obj = _modDef1951;
     let closure_0 = obj.parserFor(importDefaultResultResult);
     return (arg0, inline) => {
       let str = arg0;
@@ -77,11 +77,11 @@ let obj = {
   },
   reactParserFor(importDefaultResultResult) {
     let closure_1;
-    let obj = _modDef1949;
+    let obj = _modDef1951;
     let closure_0 = obj.parserFor(importDefaultResultResult);
-    let tmp = _modDef1949;
+    let tmp = _modDef1951;
     const reactFor = tmp.reactFor;
-    let obj2 = _modDef1949;
+    let obj2 = _modDef1951;
     importDefault = reactFor(obj2.ruleOutput(importDefaultResultResult, "react"));
     return () => {
       let str = arg0;

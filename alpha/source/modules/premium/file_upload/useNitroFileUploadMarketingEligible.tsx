@@ -1,12 +1,12 @@
-// Module ID: 18011
-// Function ID: 18012
+// Module ID: 18045
+// Function ID: 18046
 // Name: useNitroFileUploadMarketingEligible
-// Dependencies: [1392, 558, 10769, 7977, 2]
+// Dependencies: [1394, 558, 10784, 7980, 2]
 
-// Module 18011 (useNitroFileUploadMarketingEligible)
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7977 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 10769 */;
+// Module 18045 (useNitroFileUploadMarketingEligible)
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7980 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 10784 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

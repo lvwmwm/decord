@@ -1,22 +1,22 @@
-// Module ID: 17267
-// Function ID: 17268
+// Module ID: 17301
+// Function ID: 17302
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1085, 2062, 21, 5151, 558, 576, 8855, 1126, 5147, 5088, 17268, 5439, 7061, 2]
+// Dependencies: [19, 17, 1087, 2065, 21, 5153, 558, 576, 8863, 1128, 5149, 5091, 17302, 5441, 7063, 2]
 
-// Module 17267 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17301 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8855 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17268 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7063 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8863 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17302 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult = obj2.string(guildId(1126).t["v+Jm6X"]);
+      const stringResult = obj2.string(guildId(1128).t["v+Jm6X"]);
       cResult[5] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -88,8 +88,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp8 };
       cResult[6] = tmp4.title;
-      cResult[7] = closure_6(guildId(5147).Text, obj3);
-      const tmp11 = closure_6(guildId(5147).Text, obj3);
+      cResult[7] = closure_6(guildId(5149).Text, obj3);
+      const tmp11 = closure_6(guildId(5149).Text, obj3);
     } else {
       class N {
         constructor() {
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult1 = obj4.string(guildId(1126).t.kUUFbG);
+      const stringResult1 = obj4.string(guildId(1128).t.kUUFbG);
       cResult[8] = stringResult1;
       tmp12 = stringResult1;
     } else {
@@ -123,8 +123,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj5 = { style: description, accessibilityRole: "text", variant: "text-sm/medium", color: "text-default", children: tmp12 };
       cResult[9] = tmp4.description;
-      cResult[10] = closure_6(guildId(5147).Text, obj5);
-      const tmp15 = closure_6(guildId(5147).Text, obj5);
+      cResult[10] = closure_6(guildId(5149).Text, obj5);
+      const tmp15 = closure_6(guildId(5149).Text, obj5);
     } else {
       class N {
         constructor() {
@@ -138,8 +138,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17268) };
-      const tmp18 = markAsDismissed(5088);
+      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17302) };
+      const tmp18 = markAsDismissed(5091);
       cResult[11] = tmp4.image;
       cResult[12] = closure_6(tmp18, obj6);
       const tmp19 = closure_6(tmp18, obj6);
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult2 = obj7.string(guildId(1126).t.OgQQbG);
+      const stringResult2 = obj7.string(guildId(1128).t.OgQQbG);
       cResult[13] = stringResult2;
       tmp20 = stringResult2;
     } else {
@@ -175,8 +175,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj8 = { onPress: tmp5, text: tmp20 };
       cResult[14] = tmp5;
-      cResult[15] = closure_6(guildId(5439).Button, obj8);
-      const tmp23 = closure_6(guildId(5439).Button, obj8);
+      cResult[15] = closure_6(guildId(5441).Button, obj8);
+      const tmp23 = closure_6(guildId(5441).Button, obj8);
     } else {
       class N {
         constructor() {
@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult3 = obj9.string(guildId(1126).t.WAI6xu);
+      const stringResult3 = obj9.string(guildId(1128).t.WAI6xu);
       cResult[18] = stringResult3;
       tmp25 = stringResult3;
     } else {
@@ -225,8 +225,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj10 = { onPress: tmp24, text: tmp25, variant: "secondary" };
       cResult[19] = tmp24;
-      cResult[20] = closure_6(guildId(5439).Button, obj10);
-      const tmp28 = closure_6(guildId(5439).Button, obj10);
+      cResult[20] = closure_6(guildId(5441).Button, obj10);
+      const tmp28 = closure_6(guildId(5441).Button, obj10);
     } else {
       class A {
         constructor() {

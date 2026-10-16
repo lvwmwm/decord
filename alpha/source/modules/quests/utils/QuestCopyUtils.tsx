@@ -1,18 +1,18 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9430
+// Function ID: 9431
 // Name: QuestCopyUtils
-// Dependencies: [6188, 1126, 6195, 9395, 9396, 9399, 7623, 7105, 2]
+// Dependencies: [6190, 1128, 6197, 9411, 9412, 9415, 7625, 7107, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9414 (QuestCopyUtils)
-import intl7 from "intl" /* 1126 */;
-import AdCreativeType from "AdCreativeType" /* 6195 */;
-import ClipboardUtils from "ClipboardUtils" /* 7105 */;
-import AnalyticsActions from "AnalyticsActions" /* 7623 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9395 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9396 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9399 */;
-import QuestConstants from "QuestConstants" /* 6188 */;
+// Module 9430 (QuestCopyUtils)
+import intl7 from "intl" /* 1128 */;
+import AdCreativeType from "AdCreativeType" /* 6197 */;
+import ClipboardUtils from "ClipboardUtils" /* 7107 */;
+import AnalyticsActions from "AnalyticsActions" /* 7625 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9411 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9412 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9415 */;
+import QuestConstants from "QuestConstants" /* 6190 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -88,18 +88,18 @@ export const getDisclosureText = function getDisclosureText(arg0) {
   if (isTargetedDisclosure) {
     let stringResult1;
     if (isContextualDisclosure) {
-      const intl5 = tmp(1126).intl;
-      stringResult1 = intl5.string(tmp(1126).t.nPg6f1);
+      const intl5 = tmp(1128).intl;
+      stringResult1 = intl5.string(tmp(1128).t.nPg6f1);
     } else {
       let formatToPlainStringResult;
       if (null == cosponsorName) {
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         const obj2 = { gamePublisher };
-        formatToPlainStringResult = intl4.formatToPlainString(tmp(1126).t.Piihy1, obj2);
+        formatToPlainStringResult = intl4.formatToPlainString(tmp(1128).t.Piihy1, obj2);
       } else {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const obj3 = { gamePublisher, cosponsorName };
-        formatToPlainStringResult = intl3.formatToPlainString(tmp(1126).t.DV47Gy, obj3);
+        formatToPlainStringResult = intl3.formatToPlainString(tmp(1128).t.DV47Gy, obj3);
       }
       const _HermesInternal = HermesInternal;
       stringResult1 = "" + formatToPlainStringResult + " " + stringResult;
@@ -109,9 +109,9 @@ export const getDisclosureText = function getDisclosureText(arg0) {
     tmp4 = stringResult;
     if (adCreativeType === AdCreativeType.AdCreativeType.QUEST) {
       let formatToPlainStringResult1;
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       if (isVideoQuest) {
         const obj4 = { gamePublisher };
         formatToPlainStringResult1 = formatToPlainString(t.rctMRl, obj4);

@@ -1,17 +1,17 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13925
+// Function ID: 13926
 // Name: MediaModalLoadingOverlay
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 1126, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5149, 1128, 2]
 
-// Module 13893 (MediaModalLoadingOverlay)
+// Module 13925 (MediaModalLoadingOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,8 +74,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if ("error" === status) {
       const obj3 = { style: tmp4.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: intl.string(intl2.t["+ITMYX"]) };
-      const Text2 = tmp(5147).Text;
-      intl = tmp(1126).intl;
+      const Text2 = tmp(5149).Text;
+      intl = tmp(1128).intl;
       tmp17Result2 = hasOwnProperty(Text2, obj3);
     } else {
       let tmp17Result = null;
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (null != progress) {
         const _Math = Math;
         const obj4 = { style: tmp4.loaderText, variant: "heading-md/semibold", color: "text-overlay-light", children: items };
-        const Text = tmp(5147).Text;
+        const Text = tmp(5149).Text;
         items = [Math.round(progress), "%"];
         tmp17Result = tmp17(Text, obj4);
       }

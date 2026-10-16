@@ -1,13 +1,13 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13433
+// Function ID: 13434
 // Name: NotificationSettingsStore
-// Dependencies: [1085, 1382, 504, 584, 2]
+// Dependencies: [1087, 1384, 504, 584, 2]
 
-// Module 13407 (NotificationSettingsStore)
+// Module 13433 (NotificationSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let TTSNotificationTypes;

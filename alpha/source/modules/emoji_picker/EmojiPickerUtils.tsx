@@ -1,28 +1,28 @@
-// Module ID: 9651
-// Function ID: 9652
+// Module ID: 9667
+// Function ID: 9668
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6203, 2087, 6179, 1390, 6207, 1085, 1393, 1241, 1392, 1279, 9652, 5166, 9653, 9655, 9656, 504, 1989, 9657, 1126, 4824, 4820, 1265, 12, 1102, 558, 576, 2046, 2]
+// Dependencies: [19, 6205, 2090, 6181, 1392, 6209, 1087, 1395, 1243, 1394, 1281, 9668, 5168, 9669, 9671, 9672, 504, 1991, 9673, 1128, 4827, 4823, 1267, 12, 1104, 558, 576, 2049, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9651 (EmojiPickerUtils)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl14 from "intl" /* 1126 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import v1 from "v1" /* 1279 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4824 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9652 */;
+// Module 9667 (EmojiPickerUtils)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl14 from "intl" /* 1128 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import v1 from "v1" /* 1281 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9668 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6203 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 6179 */;
-import UserStore from "UserStore" /* 1390 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6207 */;
-import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
+import EmojiStore from "EmojiStore" /* 6205 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SortedGuildStore from "SortedGuildStore" /* 6181 */;
+import UserStore from "UserStore" /* 1392 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6209 */;
+import Constants from "Constants" /* 1087 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

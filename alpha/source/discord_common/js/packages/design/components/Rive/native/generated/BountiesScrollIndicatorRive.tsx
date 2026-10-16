@@ -1,12 +1,12 @@
-// Module ID: 4958
-// Function ID: 4959
+// Module ID: 4961
+// Function ID: 4962
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [109, 19, 21, 558, 4900, 576, 4959, 4953, 2]
+// Dependencies: [109, 19, 21, 558, 4903, 576, 4962, 4956, 2]
 
-// Module 4958 (BountiesScrollIndicatorRive)
+// Module 4961 (BountiesScrollIndicatorRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4900 */;
+import BaseRive2 from "BaseRive" /* 4903 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4953);
+const RiveErrorBoundary2 = tmp(4956);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -183,7 +183,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       }
       const BaseRive = tmp(tmp2[4]).BaseRive;
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_4959")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_4962")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

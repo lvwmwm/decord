@@ -1,30 +1,30 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13452
+// Function ID: 13453
 // Name: MessageNotification
-// Dependencies: [19, 5140, 13419, 21, 5151, 558, 576, 13427, 504, 1200, 1126, 5843, 13435, 7586, 4884, 6150, 5162, 13436, 2000, 13455, 13459, 2]
+// Dependencies: [19, 5143, 13445, 21, 5153, 558, 576, 13453, 504, 1202, 1128, 5845, 13461, 7588, 4887, 6152, 5164, 13462, 2002, 13481, 13485, 2]
 
-// Module 13426 (MessageNotification)
+// Module 13452 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
-import transitionToChannel from "transitionToChannel" /* 5162 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import MessageParserDefault from "MessageParser" /* 7586 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 13427 */;
+import intl2 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
+import transitionToChannel from "transitionToChannel" /* 5164 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import MessageParserDefault from "MessageParser" /* 7588 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 13453 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13419 */;
-import createStyles from "createStyles" /* 5151 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13445 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: hasOwnProperty, NOTIFICATION_PREVIEW_LINE_CLAMP: metroRequire } = InAppNotificationConstants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 } });
@@ -96,7 +96,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAcc
   if ("dot" === stateFromStores && undefined !== colorString) {
     const obj2 = { color: colorString, colors: colorStrings1, containerStyles };
     colorStrings1 = undefined;
-    const RoleDot = tmp(1200).RoleDot;
+    const RoleDot = tmp(1202).RoleDot;
     const tmp14 = jsx;
     if (author != null) {
       colorStrings1 = author.colorStrings;
@@ -207,7 +207,7 @@ const memoResult = react.memo(function MessageNotification(notification) {
   const callback1 = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: channel.id };
-    return obj.pushLazy(asyncRequire(13436, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(13462, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items2);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items3);
   const NotificationPressable = message(parentChannel[19]).NotificationPressable;

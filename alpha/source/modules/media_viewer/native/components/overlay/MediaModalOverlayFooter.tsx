@@ -1,21 +1,21 @@
-// Module ID: 13884
-// Function ID: 13885
+// Module ID: 13916
+// Function ID: 13917
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5151, 587, 4906, 11016, 5152, 1200, 13885, 6555, 4907, 7035, 7065, 13886, 13876, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 587, 4909, 11031, 5154, 1202, 13917, 6557, 4910, 7037, 7067, 13918, 13908, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13884 (MediaModalOverlayFooter)
+// Module 13916 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import timing from "timing" /* 5152 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11016 */;
+import native from "native" /* 1202 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import timing from "timing" /* 5154 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11031 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let __initData4, __initData5, set, set2, set3;

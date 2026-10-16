@@ -1,28 +1,28 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15902
+// Function ID: 15903
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5115, 8782, 2000, 5151, 587, 558, 576, 5147, 1126, 2568, 1200, 5437, 1503, 6903, 13409, 573, 15870, 15871, 5108, 6485, 7115, 6400, 7035, 5439, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5118, 8790, 2002, 5153, 587, 558, 576, 5149, 1128, 2571, 1202, 5439, 1505, 6905, 13435, 573, 15903, 15904, 5111, 6487, 7117, 6402, 7037, 5441, 2]
 // Exports: default
 
-// Module 15869 (ScheduleDowntimeScreen)
+// Module 15902 (ScheduleDowntimeScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl11 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Stack_Stack from "Stack/Stack" /* 5437 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13409 */;
+import Constants from "Constants" /* 1087 */;
+import intl11 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import _modDef2571 from "module_2571" /* 2571 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Stack_Stack from "Stack/Stack" /* 5439 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13435 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,9 +72,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overla
     let tmp11;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant: "text-sm/medium", children: intl.string(_modDef2568["26A0Df"]) };
-      let Text = tmp(5147).Text;
-      intl = tmp(1126).intl;
+      const obj2 = { variant: "text-sm/medium", children: intl.string(_modDef2571["26A0Df"]) };
+      let Text = tmp(5149).Text;
+      intl = tmp(1128).intl;
       const tmp7 = unpackModuleId(Text, obj2);
       cResult[0] = tmp7;
       first = tmp7;
@@ -106,10 +106,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overla
     }
     if (cResult[4] !== tmp8) {
       const obj3 = { messageType: native.HelpMessageTypes.WARNING, borderRadius: nativeDefault.radii.md, children: authStore2(Stack, obj4) };
-      const HelpMessage = tmp(1200).HelpMessage;
+      const HelpMessage = tmp(1202).HelpMessage;
       obj4 = { spacing: 8, children: items };
       items = [first, ];
-      Stack = tmp(5437).Stack;
+      Stack = tmp(5439).Stack;
       const obj5 = { spacing: 4, children: tmp8 };
       items[1] = unpackModuleId(Stack_Stack.Stack, obj5);
       const tmp15 = unpackModuleId(HelpMessage, obj3);
@@ -133,7 +133,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overla
     const HelpMessage = native.HelpMessage;
     obj2 = { spacing: 8, children: items };
     Stack = Stack_Stack.Stack;
-    const obj3 = { variant: "text-sm/medium", children: intl.string(_modDef2568["26A0Df"]) };
+    const obj3 = { variant: "text-sm/medium", children: intl.string(_modDef2571["26A0Df"]) };
     let Text = Text_Text.Text;
     intl = intl11.intl;
     items = [unpackModuleId(Text, obj3), ];
@@ -607,14 +607,14 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f148379 = (first1) => {
+          const f148841 = (first1) => {
             closure_1_11(first1);
             obj = closure_2_0(rule[21]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
             const time = { hours: Math.floor(result / 60), minutes: result % 60 };
             closure_1_13(time);
           };
-          const stringResult = intl.string(_modDef2568["8bLRt0"]);
+          const stringResult = intl.string(_modDef2571["8bLRt0"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -626,7 +626,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8782, dependencyMap.paths);
+          const tmp3 = asyncRequire(8790, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
@@ -644,7 +644,7 @@ export default function ScheduleDowntimeScreen() {
       onPress: function handleEndTimePress() {
           const intl = intl11.intl;
           closure_0 = closure_13;
-          const stringResult = intl.string(_modDef2568["+JkWJV"]);
+          const stringResult = intl.string(_modDef2571["+JkWJV"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -656,7 +656,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8782, dependencyMap.paths);
+          const tmp3 = asyncRequire(8790, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }

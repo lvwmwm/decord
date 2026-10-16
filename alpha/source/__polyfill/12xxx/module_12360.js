@@ -1,86 +1,39 @@
 // Module ID: 12360
 // Function ID: 12361
-// Dependencies: [12275, 12276, 12361, 12302, 12331, 12362, 12286, 12284, 12323]
+// Dependencies: [12326, 12298, 12325]
+// Exports: initAndBind, setCurrentClient
 
 // Module 12360
-import _mod12302 from "module_12302" /* 12302 */;
-import _mod12362 from "module_12362" /* 12362 */;
-import module_12331 from "module_12331" /* 12331 */;
+import _mod12298 from "module_12298" /* 12298 */;
+import _mod12325 from "module_12325" /* 12325 */;
+import _mod12326 from "module_12326" /* 12326 */;
 
 
-export const captureConsoleIntegration = module_12331.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    let tmp = CONSOLE_LEVELS;
-    let tmp2 = handled;
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
-  }
-  handled = obj.handled;
-  let obj2 = {
-    name: "CaptureConsole",
-    setup(arg0) {
-      let closure_0 = arg0;
-      const tmp2 = handled;
-      const tmp = CONSOLE_LEVELS;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let tmpResult = tmp(tmp2[2]);
-        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
-          let args;
-          let level;
-          let obj3;
-          let tmpResult;
-          ({ args, level } = arg0);
-          let obj = _mod12302;
-          let hasItem = obj.getClient() === closure_0;
-          if (hasItem) {
-            let tmp4 = CONSOLE_LEVELS;
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            let closure_2 = handled;
-            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
-            obj3 = { arguments: args };
-            tmpResult = _mod12362;
-            const tmpResult2 = _mod12302;
-            tmpResult2.withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const obj = args(level[6]);
-                obj2 = { handled, type: "console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                const tmp12 = args;
-                if (found) {
-                  const tmp14Result = closure_2_0(closure_2_1[8]);
-                  tmp14Result.captureException(found, obj2);
-                } else {
-                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
-                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
-                  const obj4 = closure_2_0(closure_2_1[8]);
-                  obj4.captureMessage(safeJoinResult, obj2);
-                }
-              } else if (!args[0]) {
-                let obj = closure_2_0(closure_2_1[7]);
-                const _HermesInternal = HermesInternal;
-                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
-                const combined = "Assertion failed: " + tmp4;
-                addEventProcessor.setExtra("arguments", args.slice(1));
-                obj2 = closure_2_0(closure_2_1[8]);
-                obj2.captureMessage(combined, obj2);
-              }
-            });
-          }
-        });
-      }
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod12326.DEBUG_BUILD;
+    const obj = _mod12298;
+    if (DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
     }
-  };
-  return obj2;
-});
+  }
+  const obj2 = _mod12325;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod12325;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
+};
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const obj = _mod12325;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
+};

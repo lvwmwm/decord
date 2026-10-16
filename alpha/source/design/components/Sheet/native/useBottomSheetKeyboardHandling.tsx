@@ -1,11 +1,11 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6528
+// Function ID: 6529
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 558, 576, 6527, 2]
+// Dependencies: [19, 558, 576, 6529, 2]
 
-// Module 6526 (useBottomSheetKeyboardHandling)
+// Module 6528 (useBottomSheetKeyboardHandling)
 import react2 from "react" /* 576 */;
-import BottomSheetModal from "BottomSheetModal" /* 6527 */;
+import BottomSheetModal from "BottomSheetModal" /* 6529 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

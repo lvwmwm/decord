@@ -1,19 +1,19 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11948
+// Function ID: 11949
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 5151, 587, 558, 576, 11896, 5147, 1200, 7054, 8800, 2]
+// Dependencies: [109, 19, 21, 5153, 587, 558, 576, 11920, 5149, 1202, 7056, 8808, 2]
 
-// Module 11924 (AppLauncherSelectOptionFormRow)
+// Module 11948 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7054 */;
-import Form from "Form" /* 8800 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11896 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7056 */;
+import Form from "Form" /* 8808 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11920 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
             }
             const _Symbol = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const Icon = tmp(1200).Icon;
+              const Icon = tmp(1202).Icon;
               const tmp25 = <Icon source={AssetRegistryDefault} size={require("native").IconSizes.SMALL_20} />;
               cResult[19] = tmp25;
               tmp22 = tmp25;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
                 }
               }
             }
-            const FormRow = tmp(8800).FormRow;
+            const FormRow = tmp(8808).FormRow;
             const merged = Object.assign(tmp6);
             const tmp31 = <FormRow start end style={tmp16} label={tmp17} subLabel={tmp20} trailing={tmp22} />;
             cResult[20] = tmp6;
@@ -193,8 +193,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  ({ source: unselectedSubLabel(7054), size: native.IconSizes.SMALL_20 });
-  const Icon = tmp3(1200).Icon;
+  ({ source: unselectedSubLabel(7056), size: native.IconSizes.SMALL_20 });
+  const Icon = tmp3(1202).Icon;
   const merged1 = Object.assign(merged);
   return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;
 });

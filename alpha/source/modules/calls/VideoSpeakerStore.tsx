@@ -1,18 +1,18 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11156
+// Function ID: 11157
 // Name: VideoSpeakerStore
-// Dependencies: [6113, 502, 2012, 6163, 6252, 5174, 6116, 12, 504, 584, 2]
+// Dependencies: [6115, 502, 2014, 6165, 6254, 5176, 6118, 12, 504, 584, 2]
 
-// Module 11140 (VideoSpeakerStore)
+// Module 11156 (VideoSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CallConstants from "CallConstants" /* 5174 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6116 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
+import CallConstants from "CallConstants" /* 5176 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6118 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import SpeakingStore from "SpeakingStore" /* 6163 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import SpeakingStore from "SpeakingStore" /* 6165 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

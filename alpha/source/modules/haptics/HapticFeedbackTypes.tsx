@@ -1,9 +1,9 @@
-// Module ID: 5117
-// Function ID: 5118
+// Module ID: 5120
+// Function ID: 5121
 // Name: haptics/HapticFeedbackTypes
 // Dependencies: [2]
 
-// Module 5117 (haptics/HapticFeedbackTypes)
+// Module 5120 (haptics/HapticFeedbackTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/haptics/HapticFeedbackTypes.tsx");

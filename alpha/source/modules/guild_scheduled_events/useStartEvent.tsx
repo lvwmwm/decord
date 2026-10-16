@@ -1,11 +1,11 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 8892
+// Function ID: 8893
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 8885, 8886, 5851, 2]
+// Dependencies: [5, 32, 19, 558, 576, 8893, 8894, 5853, 2]
 
-// Module 8884 (useStartEvent)
+// Module 8892 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 8885 */;
+import StartEventUtilsAll from "StartEventUtils" /* 8893 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,33 +1,33 @@
-// Module ID: 7033
-// Function ID: 7034
+// Module ID: 7035
+// Function ID: 7036
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6203, 6371, 2087, 7009, 7006, 1393, 21, 5151, 6479, 587, 558, 576, 1503, 504, 1631, 4874, 683, 6345, 6394, 7034, 1126, 5147, 5439, 5451, 1105, 7035, 7015, 7036, 7037, 1415, 7041, 5115, 7046, 2000, 6405, 5088, 7069, 2]
+// Dependencies: [32, 19, 17, 6205, 6373, 2090, 7011, 7008, 1395, 21, 5153, 6481, 587, 558, 576, 1505, 504, 1633, 4877, 683, 6347, 6396, 7036, 1128, 5149, 5441, 5453, 1107, 7037, 7017, 7038, 7039, 1417, 7043, 5118, 7048, 2002, 6407, 5091, 7071, 2]
 // Exports: DropdownPrompt
 
-// Module 7033 (GuildOnboardingPrompt)
+// Module 7035 (GuildOnboardingPrompt)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6345 */;
-import TermsFieldListDefault from "TermsFieldList" /* 6394 */;
-import NavigatorConstants from "NavigatorConstants" /* 6479 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7006 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7015 */;
-import EmojiDefault from "Emoji" /* 7041 */;
+import intl3 from "intl" /* 1128 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6347 */;
+import TermsFieldListDefault from "TermsFieldList" /* 6396 */;
+import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7008 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7017 */;
+import EmojiDefault from "Emoji" /* 7043 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6203 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6371 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7009 */;
+import EmojiStore from "EmojiStore" /* 6205 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6373 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -447,8 +447,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
         const obj6 = { style: tmp4.requiredSeparator };
         items2 = [map1(hasOwnProperty, obj6), ];
         const obj7 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-        const Text = tmp(5147).Text;
-        intl2 = tmp(1126).intl;
+        const Text = tmp(5149).Text;
+        intl2 = tmp(1128).intl;
         items2[1] = map1(Text, obj7);
         tmp15 = syncedClientThemes(authStore3, obj5);
       }
@@ -464,7 +464,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     cResult[5] = tmp11;
     tmp9 = tmp11;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const obj9 = { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts };
   const formatResult = intl.format(intl3.t.isV0NW, obj9);
   cResult[0] = currentPromptIndex;
@@ -499,8 +499,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     const obj5 = { style: tmp.requiredSeparator };
     items1 = [map1(hasOwnProperty, obj5), ];
     const obj6 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-    const Text2 = tmp6(5147).Text;
-    intl2 = tmp6(1126).intl;
+    const Text2 = tmp6(5149).Text;
+    intl2 = tmp6(1128).intl;
     items1[1] = map1(Text2, obj6);
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -587,7 +587,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
       if (cResult[9] !== tmp20) {
         let selectedRoleIds;
         if (null != tmp20) {
-          const tmpResult4 = guildId(7015);
+          const tmpResult4 = guildId(7017);
           selectedRoleIds = tmpResult4.getSelectedRoleIds(tmp20);
         } else {
           const _Set = Set;
@@ -604,7 +604,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
       if (cResult[11] !== tmp20) {
         let selectedChannelIds;
         if (null != tmp20) {
-          const tmpResult5 = guildId(7015);
+          const tmpResult5 = guildId(7017);
           selectedChannelIds = tmpResult5.getSelectedChannelIds(tmp20);
         } else {
           const _Set2 = Set;
@@ -627,9 +627,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
             if (cResult[16] === tmp23) {
               tmp27 = cResult[17];
             }
-            ({ helpText, helpTextAdditional } = selectedOptionIds(7036)(tmp27));
-            selectedOptionIds(7036)(tmp27);
-            const tmpResult6 = guildId(4874);
+            ({ helpText, helpTextAdditional } = selectedOptionIds(7038)(tmp27));
+            selectedOptionIds(7038)(tmp27);
+            const tmpResult6 = guildId(4877);
             const token = tmpResult6.useToken(selectedOptionIds(587).colors.BACKGROUND_BASE_LOWER);
             if (cResult[18] !== token) {
               const obj7 = selectedOptionIds(683)(token);
@@ -727,7 +727,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
                         }
                       }
                       const obj4 = { variant: str6, size: "md", grow: true, text: tmp12, onPress: handleOnPress, disabled: tmp14 };
-                      const tmp49 = closure_13(guildId(5439).Button, obj4);
+                      const tmp49 = closure_13(guildId(5441).Button, obj4);
                       cResult[35] = tmp12;
                       cResult[36] = tmp14;
                       cResult[37] = handleOnPress;
@@ -739,7 +739,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
                   if ("" !== helpText) {
                     const obj5 = { style: tmp4.helpText, variant: "text-xs/medium", color: "text-default", children: items3 };
                     items3 = [helpText, " ", helpTextAdditional];
-                    tmp45 = closure_14(tmp(5147).Text, obj5);
+                    tmp45 = closure_14(tmp(5149).Text, obj5);
                   } else {
                     tmp45 = null;
                   }
@@ -751,9 +751,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
                 }
                 let tmp42 = null;
                 if (tmp14) {
-                  const obj6 = { style: tmp4.helpText, variant: "text-xs/medium", color: "text-default", children: intl2.string(guildId(1126).t.dA1dSf) };
-                  const Text = tmp(5147).Text;
-                  intl2 = tmp(1126).intl;
+                  const obj6 = { style: tmp4.helpText, variant: "text-xs/medium", color: "text-default", children: intl2.string(guildId(1128).t.dA1dSf) };
+                  const Text = tmp(5149).Text;
+                  intl2 = tmp(1128).intl;
                   tmp42 = closure_13(Text, obj6);
                 }
                 cResult[28] = tmp14;
@@ -761,8 +761,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
                 cResult[30] = tmp42;
                 tmp41 = tmp42;
               }
-              const obj8 = { style: tmp4.scrollContainerGradient, start: guildId(1105).VerticalGradient.START, end: guildId(1105).VerticalGradient.END, colors: tmp36, pointerEvents: "none" };
-              const tmp29Result = selectedOptionIds(5451);
+              const obj8 = { style: tmp4.scrollContainerGradient, start: guildId(1107).VerticalGradient.START, end: guildId(1107).VerticalGradient.END, colors: tmp36, pointerEvents: "none" };
+              const tmp29Result = selectedOptionIds(5453);
               const tmp40 = closure_13(tmp29Result, obj8);
               cResult[25] = tmp36;
               cResult[26] = tmp4.scrollContainerGradient;
@@ -801,9 +801,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     cResult[8] = found;
     tmp20 = found;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const string = intl.string;
-  const t = tmp(1126).t;
+  const t = tmp(1128).t;
   if (lastPrompt) {
     const _HermesInternal = HermesInternal;
     combined = "" + string(t["8SuVoE"]) + " \u{1F389}";
@@ -1457,7 +1457,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
           }
           if (cResult[13] !== option.title) {
             const obj5 = { variant: "text-md/semibold", children: option.title };
-            const tmp24 = closure_13(tmp(5147).Text, obj5);
+            const tmp24 = closure_13(tmp(5149).Text, obj5);
             cResult[13] = option.title;
             cResult[14] = tmp24;
             tmp22 = tmp24;
@@ -1551,7 +1551,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dropdo
   }
   items1 = [closure_13(closure_5, obj3), ];
   const obj7 = { variant: "text-md/semibold", children: option.title };
-  items1[1] = closure_13(tmp2(5147).Text, obj7);
+  items1[1] = closure_13(tmp2(5149).Text, obj7);
   return tmp5(closure_5, obj2);
 });
 size = size_mod;
@@ -1616,7 +1616,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
         return tmp(id, id2, flag);
       }
     };
-    obj.openLazy(asyncRequire(7046, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7048, dependencyMap.paths), "DropdownOptions", obj2);
   }, items2);
   items4 = [closure_13(closure_18, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
   let tmp11Result = 0 === found.length;

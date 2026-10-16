@@ -1,24 +1,24 @@
-// Module ID: 8510
-// Function ID: 8511
+// Module ID: 8518
+// Function ID: 8519
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1390, 1085, 1392, 1121, 5025, 1126, 1265, 8511, 7586, 584, 6896, 1295, 6892, 5851, 2]
+// Dependencies: [5, 1392, 1087, 1394, 1123, 5028, 1128, 1267, 8519, 7588, 584, 6898, 1297, 6894, 5853, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8510 (UserProfileActionCreators)
+// Module 8518 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import shared from "shared" /* 5025 */;
-import InlineUploaderDefault from "InlineUploader" /* 6892 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6896 */;
-import MessageParserDefault from "MessageParser" /* 7586 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8511 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import intl3 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import shared from "shared" /* 5028 */;
+import InlineUploaderDefault from "InlineUploader" /* 6894 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6898 */;
+import MessageParserDefault from "MessageParser" /* 7588 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, errors, guildId, value2;

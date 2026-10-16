@@ -1,41 +1,41 @@
-// Module ID: 14550
-// Function ID: 14551
+// Module ID: 14582
+// Function ID: 14583
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1085, 1392, 21, 9178, 1126, 13115, 13114, 8446, 8442, 9970, 14551, 9626, 5097, 14553, 5151, 587, 14545, 6185, 558, 576, 4906, 5152, 5147, 5087, 5025, 5451, 6405, 8242, 14554, 14556, 5023, 1200, 14558, 14559, 6887, 13152, 2]
+// Dependencies: [32, 19, 17, 1087, 1394, 21, 9191, 1128, 13141, 13140, 8454, 8450, 9986, 14583, 9642, 5100, 14585, 5153, 587, 14577, 6187, 558, 576, 4909, 5154, 5149, 5090, 5028, 5453, 6407, 8247, 14586, 14588, 5026, 1202, 14590, 14591, 6889, 13178, 2]
 
-// Module 14550 (GuildBoostingMarketingTierCards)
+// Module 14582 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import ColorUtils from "ColorUtils" /* 5023 */;
-import shared from "shared" /* 5025 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import LinkIcon from "LinkIcon" /* 5097 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import timing from "timing" /* 5152 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import LegacyTokens from "LegacyTokens" /* 6185 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6887 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8242 */;
-import StageIcon from "StageIcon" /* 8442 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8446 */;
-import ReactionIcon from "ReactionIcon" /* 9178 */;
-import UploadIcon from "UploadIcon" /* 9626 */;
-import GifIcon from "GifIcon" /* 9970 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13114 */;
-import StickerIcon from "StickerIcon" /* 13115 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14545 */;
-import ServerGridIcon from "ServerGridIcon" /* 14551 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14553 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14558 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14559 */;
+import intl4 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ColorUtils from "ColorUtils" /* 5026 */;
+import shared from "shared" /* 5028 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import LinkIcon from "LinkIcon" /* 5100 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import timing from "timing" /* 5154 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import LegacyTokens from "LegacyTokens" /* 6187 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6889 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8247 */;
+import StageIcon from "StageIcon" /* 8450 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8454 */;
+import ReactionIcon from "ReactionIcon" /* 9191 */;
+import UploadIcon from "UploadIcon" /* 9642 */;
+import GifIcon from "GifIcon" /* 9986 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13140 */;
+import StickerIcon from "StickerIcon" /* 13141 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14577 */;
+import ServerGridIcon from "ServerGridIcon" /* 14583 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14585 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14590 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14591 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -191,9 +191,9 @@ function GuildBoostingMarketingTierCard(ref) {
   const isThemeDarkResult = obj.isThemeDark(tmp5);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp10 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
-  const intl = tmp8(1126).intl;
+  const intl = tmp8(1128).intl;
   const string = intl.string;
-  const t = tmp8(1126).t;
+  const t = tmp8(1128).t;
   if (isExpanded) {
     stringResult = string(t.DFwxsR);
   } else {
@@ -208,14 +208,14 @@ function GuildBoostingMarketingTierCard(ref) {
   obj4 = { style: tmp2.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp2.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp2.cardHeading, children: items2 };
-  PressableHighlight = tmp8(6405).PressableHighlight;
+  PressableHighlight = tmp8(6407).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp2.cardTierName, variant: "heading-xxl/extrabold", children: tmp8Result.getTierName(tier, { useLevels: false }) };
-  const Text = tmp8(5147).Text;
+  const Text = tmp8(5149).Text;
   tmp8Result = GuildBoostingUtils;
   items2 = [React4(Text, obj7), ];
   const obj8 = { color: "text-overlay-light", style: tmp2.cardTierBoostcount, variant: "text-md/medium", children: intl2.format(intl4.t.gDsyB9, obj9) };
-  const Text2 = tmp8(5147).Text;
-  intl2 = tmp8(1126).intl;
+  const Text2 = tmp8(5149).Text;
+  intl2 = tmp8(1128).intl;
   obj9 = { numSubscriptions: metroRequire[tier] };
   items2[1] = React4(Text2, obj8);
   items3 = [authStore(View, obj6), , ];
@@ -228,9 +228,9 @@ function GuildBoostingMarketingTierCard(ref) {
   const obj12 = { style: tmp2.cardFooter, children: items5 };
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp8(14554).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp8(14586).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp8(14556).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp8(14588).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp2.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -248,10 +248,10 @@ function GuildBoostingMarketingTierCard(ref) {
     items7[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
     items7[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
     obj15 = { color: "text-overlay-light", style: tmp2.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-    Text3 = tmp8(5147).Text;
-    const intl3 = tmp8(1126).intl;
+    Text3 = tmp8(5149).Text;
+    const intl3 = tmp8(1128).intl;
     const string2 = intl3.string;
-    const t2 = tmp8(1126).t;
+    const t2 = tmp8(1128).t;
     if (tier === sum) {
       string2Result = string2(t2["9NBo7c"]);
     } else {
@@ -289,22 +289,22 @@ function GuildBoostingMarketingTierCard(ref) {
     ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp2);
     items10[1] = React4(tmp3Result6, obj18);
     const obj19 = { source: AssetRegistryDefault, style: items13 };
-    const Icon = tmp8(1200).Icon;
+    const Icon = tmp8(1202).Icon;
     items13 = [, , ];
     ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed1: arr14[2] } = tmp2);
     items10[2] = React4(Icon, obj19);
     const obj20 = { source: AssetRegistryDefault, style: items14 };
-    const Icon2 = tmp8(1200).Icon;
+    const Icon2 = tmp8(1202).Icon;
     items14 = [, , ];
     ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed2: arr15[2] } = tmp2);
     items10[3] = React4(Icon2, obj20);
     const obj21 = { source: AssetRegistryDefault, style: items15 };
-    const Icon3 = tmp8(1200).Icon;
+    const Icon3 = tmp8(1202).Icon;
     items15 = [, , ];
     ({ sparkleStar: arr16[0], sparkleStarPointed: arr16[1], sparkleStarPointed3: arr16[2] } = tmp2);
     items10[4] = React4(Icon3, obj21);
     const obj22 = { source: AssetRegistryDefault2, style: items16 };
-    const Icon4 = tmp8(1200).Icon;
+    const Icon4 = tmp8(1202).Icon;
     items16 = [, , ];
     ({ sparkleStar: arr17[0], sparkleStarElongated: arr17[1], sparkleStarElongated1: arr17[2] } = tmp2);
     items10[5] = React4(Icon4, obj22);
@@ -618,7 +618,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierFe
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4906).Easing;
+    Easing = tmp(4909).Easing;
     return obj;
   };
   let obj3 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -760,7 +760,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierFe
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4906).Easing;
+    Easing = tmp(4909).Easing;
     return obj;
   };
   let obj2 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -968,7 +968,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       return React4(GuildBoostingMarketingTierCard, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(13152).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(13178).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
   let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
   num = 0;

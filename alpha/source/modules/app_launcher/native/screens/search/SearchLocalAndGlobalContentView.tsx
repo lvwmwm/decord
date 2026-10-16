@@ -1,31 +1,31 @@
-// Module ID: 11830
-// Function ID: 11831
+// Module ID: 11854
+// Function ID: 11855
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 9468, 11782, 1502, 21, 5151, 587, 558, 576, 11764, 11769, 10856, 11831, 1126, 9467, 6400, 11767, 1631, 6958, 8731, 11781, 7463, 7459, 11834, 11835, 4884, 11816, 11794, 11828, 5147, 11836, 8762, 11837, 2]
+// Dependencies: [32, 19, 17, 9484, 11806, 1504, 21, 5153, 587, 558, 576, 11788, 11793, 10871, 11855, 1128, 9483, 6402, 11791, 1633, 6960, 8739, 11805, 7465, 7461, 11858, 11859, 4887, 11840, 11818, 11852, 5149, 11860, 8770, 11861, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 11830 (SearchLocalAndGlobalContentView)
+// Module 11854 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7459 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7463 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9467 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9468 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10856 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11764 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11767 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11769 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11782 */;
-import CommandRowButton from "CommandRowButton" /* 11831 */;
+import intl5 from "intl" /* 1128 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7461 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7465 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9483 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9484 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10871 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11788 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11791 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11793 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11806 */;
+import CommandRowButton from "CommandRowButton" /* 11855 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           let tmp14;
           if (!hasOptions) {
             const obj3 = { name: "send", label: intl.string(intl5.t.TXNS7S) };
-            intl = tmp(1126).intl;
+            intl = tmp(1128).intl;
             const items = [obj3];
             tmp14 = items;
           }
@@ -258,15 +258,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(11764);
+  obj = hasOptions(11788);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(11769), obj2);
+    tmp4 = closure_10(onPressSend(11793), obj2);
   }
-  const tmpResult = tmp(11831);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(10856).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(11855);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(10871).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -289,9 +289,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(11831), { hasOptions, sending, onPressSend }) };
-  const TableRow = tmp(6400).TableRow;
-  tmpResult2 = tmp(9467);
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(11855), { hasOptions, sending, onPressSend }) };
+  const TableRow = tmp(6402).TableRow;
+  tmpResult2 = tmp(9483);
   return closure_10(TableRow, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

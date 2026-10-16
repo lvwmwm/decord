@@ -1,25 +1,10 @@
 // Module ID: 8059
 // Function ID: 8060
-// Dependencies: [8045]
+// Dependencies: []
+// Exports: get64BitValue
 
 // Module 8059
-import _mod8045 from "module_8045" /* 8045 */;
 
-let obj = {
-  isGifFile(dataView) {
-    let hasItem = dataView;
-    if (hasItem) {
-      includes = includes.includes;
-      const obj = _mod8045;
-      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
-    }
-    return hasItem;
-  },
-  findOffsets() {
-    return { gifHeaderOffset: 0 };
-  }
+export const get64BitValue = function get64BitValue(getUint32, sum4) {
+  return getUint32.getUint32(sum4 + 4);
 };
-let c2 = 6;
-let includes = ["GIF87a", "GIF89a"];
-
-export default obj;

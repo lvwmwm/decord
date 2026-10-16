@@ -1,114 +1,132 @@
 // Module ID: 12352
 // Function ID: 12353
-// Dependencies: [12282, 12284]
-// Exports: applyAggregateErrorsToEvent
+// Dependencies: [12345]
+// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
 
 // Module 12352
-import _mod12282 from "module_12282" /* 12282 */;
-import _mod12284 from "module_12284" /* 12284 */;
+import _mod12345 from "module_12345" /* 12345 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, length;
 
-function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
-  let closure_1;
-  let closure_2;
-  _require = fn;
-  dependencyMap = arg1;
-  aggregateExceptionsFromError = arg2;
-  let closure_3 = source;
-  if (arg5.length >= arg2 + 1) {
-    return arg5;
-  } else {
-    let items = [];
-    HermesBuiltin.arraySpread(items, arg5, 0);
-    length = items;
-    let obj3 = require("module_12282");
-    const _Error = Error;
-    if (obj3.isInstanceOf(errors[source], Error)) {
-      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-      let obj = { exception_id };
-      const tmp2 = obj;
-      let merged = Object.assign(mechanism.mechanism);
-      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
-      let tmp6 = tmp4;
-      let merged1 = Object.assign(tmp4);
-      mechanism.mechanism = obj;
-      const tmp8 = fn(arg1, errors[source]);
-      length = length.length;
-      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
-      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
-      let merged2 = Object.assign(tmp8.mechanism);
-      tmp8.mechanism = obj2;
-      const tmp12 = aggregateExceptionsFromError;
-      const items1 = [tmp8];
-      let tmp13 = errors[source];
-      HermesBuiltin.arraySpread(items1, length, 1);
-      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
+export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
+  let combined1 = arg1;
+  if (!combined1) {
+    let str2 = "";
+    if (protocol.protocol) {
+      const _HermesInternal = HermesInternal;
+      str2 = "" + protocol.protocol + ":";
     }
-    const _Array = Array;
-    if (Array.isArray(errors.errors)) {
-      errors = errors.errors;
-      const item = errors.forEach((item, index) => {
-        const obj = _mod12282;
-        if (obj.isInstanceOf(item, Error)) {
-          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-          const obj2 = { exception_id };
-          const merged = Object.assign(tmp2.mechanism);
-          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
-          const merged1 = Object.assign(tmp6);
-          mechanism.mechanism = obj2;
-          const tmp13 = fn(closure_1, item);
-          length = length.length;
-          const _HermesInternal = HermesInternal;
-          mechanism = tmp13.mechanism;
-          const combined = "errors[" + index + "]";
-          if (!mechanism) {
-            mechanism = { type: "generic", handled: true };
-          }
-          tmp13.mechanism = mechanism;
-          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
-          const merged2 = Object.assign(tmp13.mechanism);
-          tmp13.mechanism = obj3;
-          const items = [tmp13];
-          HermesBuiltin.arraySpread(items, length, 1);
-          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
-        }
-      });
+    let str4 = "";
+    if (protocol.port) {
+      const _HermesInternal2 = HermesInternal;
+      str4 = ":" + protocol.port;
     }
-    return length;
+    const host = protocol.host;
+    let str6 = "";
+    if (protocol.path) {
+      const _HermesInternal3 = HermesInternal;
+      str6 = "/" + protocol.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const obj = { sentry_version: "7" };
+    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
+    if (protocol.publicKey) {
+      obj.sentry_key = protocol.publicKey;
+    }
+    const tmp12 = name;
+    if (tmp12) {
+      const _HermesInternal6 = HermesInternal;
+      obj.sentry_client = "" + name.name + "/" + name.version;
+    }
+    const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
+    const _HermesInternal7 = HermesInternal;
+    const str13 = new URLSearchParams(obj);
+    combined1 = "" + combined + "?" + str13.toString();
   }
-}
-
-export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 250;
-  }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp = originalException;
-      if (tmp) {
-        let obj = num(12282);
-        const _Error = Error;
-        if (obj.isInstanceOf(originalException.originalException, Error)) {
-          let tmp5;
-          if (exception.exception.values.length > 0) {
-            tmp5 = exception.exception.values[exception.exception.values.length - 1];
-          }
-          if (tmp5) {
-            exception = exception.exception;
-            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
-            exception.values = arr.map((value) => {
-              if (value.value) {
-                const obj = _mod12284;
-                value.value = obj.truncate(value.value, num);
+  return combined1;
+};
+export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
+  const obj = _mod12345;
+  const url = obj.makeDsn(arg0);
+  if (url) {
+    let str = "";
+    if (url.protocol) {
+      const _HermesInternal = HermesInternal;
+      str = "" + url.protocol + ":";
+    }
+    let str3 = "";
+    if (url.port) {
+      const _HermesInternal2 = HermesInternal;
+      str3 = ":" + url.port;
+    }
+    const host = url.host;
+    let str5 = "";
+    if (url.path) {
+      const _HermesInternal3 = HermesInternal;
+      str5 = "/" + url.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
+    const _HermesInternal6 = HermesInternal;
+    const tmp2Result = _mod12345;
+    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
+    let tmp16 = combined1;
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      tmp16 = combined1;
+      while (keys[tmp] !== undefined) {
+        if ("dsn" === tmp19) {
+          continue;
+        } else {
+          combined1 = tmp18;
+          if ("onClose" === tmp19) {
+            continue;
+          } else {
+            if ("user" === tmp19) {
+              user = user.user;
+              combined1 = tmp18;
+              if (!user) {
+                continue;
+              } else {
+                let sum = tmp18;
+                if (user.name) {
+                  let _encodeURIComponent3 = encodeURIComponent;
+                  let _HermesInternal8 = HermesInternal;
+                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
+                }
+                combined1 = sum;
+                if (!user.email) {
+                  continue;
+                } else {
+                  let _encodeURIComponent4 = encodeURIComponent;
+                  let _HermesInternal9 = HermesInternal;
+                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
+                  continue;
+                }
+                continue;
               }
-              return value;
-            });
+              continue;
+            } else {
+              let _encodeURIComponent = encodeURIComponent;
+              let _encodeURIComponent2 = encodeURIComponent;
+              let encodeURIComponentResult = encodeURIComponent(tmp19);
+              let _HermesInternal7 = HermesInternal;
+              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
+              continue;
+            }
+            continue;
           }
+          continue;
         }
+        continue;
       }
     }
+    const _HermesInternal10 = HermesInternal;
+    return "" + combined + "?" + tmp16;
+  } else {
+    return "";
   }
 };

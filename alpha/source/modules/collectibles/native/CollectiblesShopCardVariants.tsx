@@ -1,17 +1,17 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9310
+// Function ID: 9311
 // Name: CollectiblesShopCardVariants
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 9262, 9298, 7044, 9299, 9186, 7491, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 9275, 9311, 7046, 9312, 9199, 7493, 2]
 
-// Module 9297 (CollectiblesShopCardVariants)
+// Module 9310 (CollectiblesShopCardVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9262 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9298 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9275 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9311 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,8 +19,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(7044);
-const PlusSmallIcon2 = tmp(9299);
+const CheckmarkSmallIcon2 = tmp(7046);
+const PlusSmallIcon2 = tmp(9312);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -273,9 +273,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(14);
   product = product.product;
   const tmp2 = closure_6();
-  const obj2 = defaultVariantIndex(9186);
+  const obj2 = defaultVariantIndex(9199);
   defaultVariantIndex = obj2.useDefaultVariantIndex(product);
-  const obj3 = defaultVariantIndex(7491);
+  const obj3 = defaultVariantIndex(7493);
   if (obj3.getIsVariantProduct(product)) {
     let tmp7;
     let num3 = 3;
@@ -359,9 +359,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  let obj = defaultVariantIndex(9186);
+  let obj = defaultVariantIndex(9199);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const obj2 = defaultVariantIndex(7491);
+  const obj2 = defaultVariantIndex(7493);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {

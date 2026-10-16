@@ -5,14 +5,14 @@
 // Module 5240
 import _mod539 from "module_539" /* 539 */;
 import baseUnary from "baseUnary" /* 540 */;
-import baseIsMap from "baseIsMap" /* 5241 */;
+import baseIsSet from "baseIsSet" /* 5241 */;
 
 let _module;
-const tmp = _mod539 && _mod539.isMap;
+const tmp = _mod539 && _mod539.isSet;
 if (tmp) {
   _module = baseUnary(tmp);
 } else {
-  _module = baseIsMap;
+  _module = baseIsSet;
 }
 
 export default _module;

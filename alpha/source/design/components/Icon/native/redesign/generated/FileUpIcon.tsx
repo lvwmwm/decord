@@ -1,14 +1,14 @@
-// Module ID: 11541
-// Function ID: 11542
+// Module ID: 11564
+// Function ID: 11565
 // Name: FileUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11542, 4873, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11565, 4876, 2]
 
-// Module 11541 (FileUpIcon)
+// Module 11564 (FileUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4873 */;
-import AssetRegistry from "AssetRegistry" /* 11542 */;
+import BaseIconImage2 from "BaseIconImage" /* 4876 */;
+import AssetRegistry from "AssetRegistry" /* 11565 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUpIcon
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4873).BaseIconImage;
+  const BaseIconImage = tmp(4876).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

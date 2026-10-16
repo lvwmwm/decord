@@ -1,22 +1,22 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 8193
+// Function ID: 8194
 // Name: formatMessageForwards
-// Dependencies: [8191, 2065, 2087, 4806, 4816, 1390, 1415, 1126, 7222, 4849, 11, 5481, 2]
+// Dependencies: [8194, 2068, 2090, 4809, 4819, 1392, 1417, 1128, 7224, 4852, 11, 5483, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8190 (formatMessageForwards)
+// Module 8193 (formatMessageForwards)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl4 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import DateUtils from "DateUtils" /* 4849 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7222 */;
-import BasicGuildStore from "BasicGuildStore" /* 8191 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
+import intl4 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import DateUtils from "DateUtils" /* 4852 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7224 */;
+import BasicGuildStore from "BasicGuildStore" /* 8194 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 class MessageForward {
@@ -119,7 +119,7 @@ class MessageForward {
             obj8 = { id: null, size: 16, icon: null, canAnimate: false };
             ({ id: obj22.id, icon: obj22.icon } = guild);
             tmp3Result3 = AvatarUtilsDefault;
-            intl3 = tmp8(1126).intl;
+            intl3 = tmp8(1128).intl;
             obj9 = { origin: guild.name, timestamp: result };
           }
           return obj6;
@@ -130,7 +130,7 @@ class MessageForward {
             const tmp8Result = useChannelName;
             const channelName = tmp8Result.computeChannelName(channel1, tmp, tmp2, true);
             obj11 = { originLabel: channelName, timestampLabel: result, accessibilityLabel: intl.formatToPlainString(intl4.t["+l04BN"], obj12) };
-            intl = tmp8(1126).intl;
+            intl = tmp8(1128).intl;
             obj13 = obj10;
             obj12 = { origin: channelName, timestamp: result };
           } else {
@@ -162,7 +162,7 @@ class MessageForward {
         obj19 = { id: null, size: 16, icon: null, canAnimate: false };
         ({ id: obj18.id, icon: obj18.icon } = guild1);
         tmp3Result4 = AvatarUtilsDefault;
-        intl2 = tmp8(1126).intl;
+        intl2 = tmp8(1128).intl;
         obj20 = { origin: guild1.name, timestamp: result };
       }
       return obj16;

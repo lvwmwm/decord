@@ -1,10 +1,10 @@
-// Module ID: 10324
-// Function ID: 10325
+// Module ID: 10340
+// Function ID: 10341
 // Name: GiftingBadgeDesktopExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 10324 (GiftingBadgeDesktopExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 10340 (GiftingBadgeDesktopExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

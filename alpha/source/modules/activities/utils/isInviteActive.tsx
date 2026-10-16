@@ -1,44 +1,60 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11128
+// Function ID: 11129
 // Name: isInviteActive
-// Dependencies: [1102, 11, 2]
+// Dependencies: [2068, 1104, 11, 11129, 2]
 // Exports: default
 
-// Module 11113 (isInviteActive)
+// Module 11128 (isInviteActive)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1102 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import RequestToStreamNonGamesExperimentDefault from "RequestToStreamNonGamesExperiment" /* 11129 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 const result = 2 * DurationsDefault.Millis.HOUR;
-let c2 = result;
+let c3 = result;
 const result1 = size.fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 
-export default function isInviteActive(party, activity, arg2) {
-  if (null == party) {
+export default function isInviteActive(party, id, arg2) {
+  const obj = SnowflakeUtilsDefault;
+  const sum = obj.extractTimestamp(id.id) + c3;
+  if (sum < Date.now()) {
     return false;
   } else {
-    let party_id = null;
-    if (null != activity.activity) {
-      party_id = activity.activity.party_id;
-    }
-    let tmp2 = null != party_id;
-    if (tmp2) {
-      party = party.party;
-      let id;
-      if (party != null) {
-        id = party.id;
+    if (null == arg2) {
+      const basicChannel = ChannelStore.getBasicChannel(id.channel_id);
+      let str;
+      if (basicChannel != null) {
+        str = basicChannel.guild_id;
       }
-      tmp2 = id !== party_id;
+      const getConfig = tmp(11129).getConfig;
+      RequestToStreamNonGamesExperimentDefault;
+      if (str == null) {
+        str = "";
+      }
+      const obj2 = { guildId: str, location: "canFulfillStreamRequest" };
+      if (getConfig(obj2).enabled) {
+        return true;
+      }
     }
-    const _Date = Date;
-    const obj = SnowflakeUtilsDefault;
-    const sum = obj.extractTimestamp(activity.id) + c2;
-    let tmp10 = null != party.application_id;
-    const tmp9 = sum < Date.now();
-    if (tmp10) {
-      tmp10 = party.application_id !== arg2;
+    if (null == party) {
+      return false;
+    } else {
+      let party_id = null;
+      if (null != id.activity) {
+        party_id = id.activity.party_id;
+      }
+      let tmp9 = null != party_id;
+      if (tmp9) {
+        party = party.party;
+        id = undefined;
+        if (party != null) {
+          id = party.id;
+        }
+        tmp9 = id !== party_id;
+      }
+      return !tmp9 && !(null != party.application_id && party.application_id !== arg2);
     }
-    return !tmp2 && !tmp9 && !tmp10;
   }
 };
 export const EMBED_LIFETIME = result;

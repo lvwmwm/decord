@@ -1,35 +1,35 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15637
+// Function ID: 15638
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2125, 7537, 1085, 1392, 21, 4825, 7073, 7098, 15509, 5115, 15497, 2000, 8509, 1126, 8507, 15508, 15508, 9490, 558, 576, 15515, 15511, 6885, 15605, 587, 5147, 15533, 8586, 8505, 6525, 10758, 15599, 504, 8529, 10746, 8587, 8512, 14860, 15606, 8572, 8583, 15607, 15522, 5018, 15523, 15535, 15539, 15540, 15544, 15548, 9614, 9615, 4883, 10764, 10747, 10765, 2]
+// Dependencies: [109, 19, 17, 2128, 7539, 1087, 1394, 21, 4828, 7075, 7100, 15545, 5118, 15533, 2002, 8517, 1128, 8515, 15544, 15544, 9506, 558, 576, 15551, 15547, 6887, 15638, 587, 5149, 15569, 8594, 8513, 6527, 10773, 15632, 504, 8537, 10761, 8595, 8520, 14893, 15639, 8580, 8591, 15640, 15558, 5021, 15559, 15571, 15575, 15576, 15580, 15584, 9630, 9631, 4886, 10779, 10762, 10780, 2]
 
-// Module 15604 (GuildProfileEditForm)
+// Module 15637 (GuildProfileEditForm)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8507 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8509 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9490 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9615 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15509 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15511 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15515 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15533 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15605 */;
+import intl7 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7075 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8515 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8517 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9506 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9630 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9631 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15545 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15547 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15551 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15569 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15638 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserProfileStore from "UserProfileStore" /* 7537 */;
-import Constants from "Constants" /* 1085 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import UserProfileStore from "UserProfileStore" /* 7539 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7073).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7075).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -107,14 +107,14 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(15497, dependencyMap.paths);
+        const tmp14 = asyncRequire(15533, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
         if (dependencyMap != null) {
           banner = dependencyMap.banner;
         }
-        intl = tmp10(1126).intl;
+        intl = tmp10(1128).intl;
         openLazy(tmp14, "Change Banner", obj);
       } else {
         let obj2 = { initialUpsellKey: constants.PREMIUM_GUILD_PROFILE, analyticsLocation: obj3, analyticsLocations, analyticsProperties: obj4 };
@@ -125,14 +125,14 @@ function EditGuildProfileBanner(user) {
         const result = tmpResult2.handleShowUpsellAlert(obj2);
       }
     },
-    editButtonAccessibilityLabel: intl.string(tmp5(1126).t["95hPAe"]),
+    editButtonAccessibilityLabel: intl.string(tmp5(1128).t["95hPAe"]),
     editDisabled: disabled
   };
   tmp6 = UserProfileEditBannerButtonDefault;
   if (result) {
     result = null != guildMember;
   }
-  intl = tmp5(1126).intl;
+  intl = tmp5(1128).intl;
   return closure_17(AnalyticsLocationProvider, obj2);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
@@ -166,9 +166,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     let tmp19;
     const _Symbol3 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult = intl3.string(intl7.t.YIZS5B);
-      const intl4 = tmp(1126).intl;
+      const intl4 = tmp(1128).intl;
       const stringResult1 = intl4.string(intl7.t.pj0XBN);
       cResult[1] = stringResult;
       cResult[2] = stringResult1;
@@ -211,7 +211,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult2 = intl.string(intl7.t.pj0XBN);
         cResult[11] = stringResult2;
         tmp11 = stringResult2;
@@ -221,8 +221,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-        const Text = tmp(5147).Text;
-        intl2 = tmp(1126).intl;
+        const Text = tmp(5149).Text;
+        intl2 = tmp(1128).intl;
         const tmp15 = trackedExposureExperiments(Text, obj6);
         cResult[12] = tmp15;
         tmp13 = tmp15;
@@ -266,8 +266,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   if (enabled) {
     const obj2 = { text: intl3.string(intl7.t.YIZS5B), buttonText: intl4.string(intl7.t.pj0XBN), buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
     const tmp3Result = UserProfileFloatingUpsellDefault;
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     tmp6Result = tmp6(tmp3Result, obj2);
   } else {
     const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: trackedExposureExperiments(Text, obj5) };
@@ -275,10 +275,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     const obj4 = { bottom: nativeDefault.space.PX_16 + tmp5.bottom };
     items[1] = obj4;
     const tmp3Result2 = UserProfileUpsellCardDefault;
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5147).Text;
-    intl2 = tmp(1126).intl;
+    Text = tmp(5149).Text;
+    intl2 = tmp(1128).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
   return tmp6Result;

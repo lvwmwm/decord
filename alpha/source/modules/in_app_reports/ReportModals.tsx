@@ -1,20 +1,20 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 7941
+// Function ID: 7942
 // Name: ReportModals
-// Dependencies: [5, 2070, 4817, 1404, 1085, 7939, 7940, 7942, 2079, 5166, 2]
+// Dependencies: [5, 2073, 4820, 1406, 1087, 7942, 7943, 7945, 2082, 5168, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 7938 (ReportModals)
-import Constants from "Constants" /* 1085 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import MenuTypes from "MenuTypes" /* 7939 */;
-import showReportModal2 from "showReportModal" /* 7940 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7942 */;
+// Module 7941 (ReportModals)
+import Constants from "Constants" /* 1087 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import MenuTypes from "MenuTypes" /* 7942 */;
+import showReportModal2 from "showReportModal" /* 7943 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7945 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 2070 */;
-import MessageRecord from "MessageRecord" /* 4817 */;
-import UserRecord from "UserRecord" /* 1404 */;
+import StageInstanceStore from "StageInstanceStore" /* 2073 */;
+import MessageRecord from "MessageRecord" /* 4820 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, record;

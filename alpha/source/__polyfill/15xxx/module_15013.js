@@ -1,19 +1,30 @@
 // Module ID: 15013
 // Function ID: 15014
-// Dependencies: [15010]
+// Dependencies: [15014]
 
 // Module 15013
-import _mod15010 from "module_15010" /* 15010 */;
-
-let set;
+import _mod15014 from "module_15014" /* 15014 */;
 
 
-export default (arg0, arg1) => {
-  set = new _mod15010(arg0, arg1).set;
-  return set.map((arr) => {
-    const mapped = arr.map((value) => value.value);
-    const str = mapped.join(" ");
-    const str2 = str.trim();
-    return str2.split(" ");
-  });
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  if (arg0 instanceof _mod15014) {
+    return arg0;
+  } else {
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod15014(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
+      }
+    }
+  }
 };

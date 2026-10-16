@@ -1,14 +1,14 @@
-// Module ID: 17444
-// Function ID: 17445
+// Module ID: 17478
+// Function ID: 17479
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 6301, 1085, 21, 558, 576, 504, 17445, 5115, 13482, 9514, 9513, 7315, 7060, 1126, 7114, 8435, 12981, 8990, 17446, 13493, 9900, 5110, 11976, 7313, 7118, 2]
+// Dependencies: [19, 6303, 1087, 21, 558, 576, 504, 17479, 5118, 13508, 9530, 9529, 7317, 7062, 1128, 7116, 8443, 13007, 8998, 17480, 13519, 9916, 5113, 12000, 7315, 7120, 2]
 
-// Module 17444 (NotificationCenterActionSheet)
-import Constants from "Constants" /* 1085 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9900 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 17445 */;
+// Module 17478 (NotificationCenterActionSheet)
+import Constants from "Constants" /* 1087 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9916 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 17479 */;
 import react_mod from "react" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 6301 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6303 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
       tmp9 = cResult[5];
     }
     let closure_3 = tmp9;
-    const tmpResult2 = tmp(9514);
+    const tmpResult2 = tmp(9530);
     const canUseScheduledMessages = tmpResult2.useCanUseScheduledMessages();
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
@@ -114,9 +114,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     }
     const _Symbol4 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { title: intl.string(tmp(1126).t.HcoRu0) };
-      const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-      intl = tmp(1126).intl;
+      let obj2 = { title: intl.string(tmp(1128).t.HcoRu0) };
+      const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+      intl = tmp(1128).intl;
       const tmp15 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[8] = tmp15;
       tmp13 = tmp15;
@@ -132,10 +132,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
       }
       const _Symbol5 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
-        const stringResult = intl2.string(tmp(1126).t.asInft);
-        let obj3 = { IconComponent: tmp(8435).AtIcon, source: everyoneFilter(12981) };
-        const Icon = tmp(7114).ActionSheetRow.Icon;
+        const intl2 = tmp(1128).intl;
+        const stringResult = intl2.string(tmp(1128).t.asInft);
+        let obj3 = { IconComponent: tmp(8443).AtIcon, source: everyoneFilter(13007) };
+        const Icon = tmp(7116).ActionSheetRow.Icon;
         const tmp23 = closure_6(Icon, obj3);
         cResult[12] = stringResult;
         cResult[13] = tmp23;
@@ -162,17 +162,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             }
           }
           if (tmp28 === Symbol.for("react.memo_cache_sentinel")) {
-            const string = tmp(1126).intl.string;
+            const string = tmp(1128).intl.string;
             class T {
               constructor() {
                 const obj = { everyoneFilter: !everyoneFilter };
                 return closure_2(obj);
               }
             }
-            const intl3 = tmp(1126).intl;
-            const stringResult1 = intl3.string(tmp(1126).t.jYgZa4);
-            const obj4 = { IconComponent: tmp(8990).BellIcon, source: everyoneFilter(17446) };
-            const Icon2 = tmp(7114).ActionSheetRow.Icon;
+            const intl3 = tmp(1128).intl;
+            const stringResult1 = intl3.string(tmp(1128).t.jYgZa4);
+            const obj4 = { IconComponent: tmp(8998).BellIcon, source: everyoneFilter(17480) };
+            const Icon2 = tmp(7116).ActionSheetRow.Icon;
             cResult[20] = tmp32;
             cResult[21] = stringResult1;
             const tmp36 = closure_6(Icon2, obj4);
@@ -223,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
               if (tmp42 === Symbol.for("react.memo_cache_sentinel")) {
                 const obj5 = {
                   icon: closure_6(Icon3, obj6),
-                  label: intl4.string(tmp(1126).t["2pAkDA"]),
+                  label: intl4.string(tmp(1128).t["2pAkDA"]),
                   onPress() {
                                   return closure_3(SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK);
                                 },
@@ -235,9 +235,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                     return closure_2(obj);
                   }
                 }
-                obj6 = { IconComponent: tmp(13493).BookmarkIcon };
-                Icon3 = tmp(7114).ActionSheetRow.Icon;
-                intl4 = tmp(1126).intl;
+                obj6 = { IconComponent: tmp(13519).BookmarkIcon };
+                Icon3 = tmp(7116).ActionSheetRow.Icon;
+                intl4 = tmp(1128).intl;
                 const tmp46 = closure_6(tmp45, obj5, "bookmarks");
                 cResult[29] = tmp46;
                 tmp43 = tmp46;
@@ -248,7 +248,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
               if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj7 = {
                   icon: closure_6(Icon4, obj8),
-                  label: intl5.string(tmp(1126).t.aUXxzT),
+                  label: intl5.string(tmp(1128).t.aUXxzT),
                   onPress() {
                                   return closure_3(SavedMessagesTypes.SavedMessageSortTypes.REMINDER);
                                 },
@@ -260,9 +260,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                     return closure_2(obj);
                   }
                 }
-                obj8 = { IconComponent: tmp(5110).ClockIcon };
-                Icon4 = tmp(7114).ActionSheetRow.Icon;
-                intl5 = tmp(1126).intl;
+                obj8 = { IconComponent: tmp(5113).ClockIcon };
+                Icon4 = tmp(7116).ActionSheetRow.Icon;
+                intl5 = tmp(1128).intl;
                 const tmp50 = closure_6(tmp49, obj7, "reminders");
                 cResult[30] = tmp50;
                 tmp47 = tmp50;
@@ -272,16 +272,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
               if (cResult[31] !== canUseScheduledMessages) {
                 let tmp52 = null;
                 if (canUseScheduledMessages) {
-                  const obj9 = { icon: closure_6(Icon5, obj10), label: intl6.string(tmp(1126).t.SZVs3K), onPress: tmp11, arrow: true };
+                  const obj9 = { icon: closure_6(Icon5, obj10), label: intl6.string(tmp(1128).t.SZVs3K), onPress: tmp11, arrow: true };
                   class T {
                     constructor() {
                       const obj = { everyoneFilter: !everyoneFilter };
                       return closure_2(obj);
                     }
                   }
-                  obj10 = { IconComponent: tmp(11976).CalendarPlusIcon };
-                  Icon5 = tmp(7114).ActionSheetRow.Icon;
-                  intl6 = tmp(1126).intl;
+                  obj10 = { IconComponent: tmp(12000).CalendarPlusIcon };
+                  Icon5 = tmp(7116).ActionSheetRow.Icon;
+                  intl6 = tmp(1128).intl;
                   tmp52 = closure_6(tmp54, obj9, "scheduled-messages");
                 }
                 class T {
@@ -298,16 +298,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
               }
               const _Symbol9 = Symbol;
               if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj11 = { icon: closure_6(Icon6, obj12), label: intl7.string(tmp(1126).t.h850Ss), onPress: tmp12, arrow: true };
+                const obj11 = { icon: closure_6(Icon6, obj12), label: intl7.string(tmp(1128).t.h850Ss), onPress: tmp12, arrow: true };
                 class T {
                   constructor() {
                     const obj = { everyoneFilter: !everyoneFilter };
                     return closure_2(obj);
                   }
                 }
-                obj12 = { IconComponent: tmp(7313).SettingsIcon };
-                Icon6 = tmp(7114).ActionSheetRow.Icon;
-                intl7 = tmp(1126).intl;
+                obj12 = { IconComponent: tmp(7315).SettingsIcon };
+                Icon6 = tmp(7116).ActionSheetRow.Icon;
+                intl7 = tmp(1128).intl;
                 const tmp58 = closure_6(tmp57, obj11, "settings");
                 cResult[33] = tmp58;
                 tmp55 = tmp58;
@@ -326,7 +326,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                 tmp61[1] = tmp47;
                 tmp61[2] = tmp51;
                 tmp61[3] = tmp55;
-                const tmp62 = closure_7(tmp(7114).ActionSheetRow.Group, obj13);
+                const tmp62 = closure_7(tmp(7116).ActionSheetRow.Group, obj13);
                 cResult[34] = tmp51;
                 cResult[35] = tmp62;
                 tmp59 = tmp62;
@@ -351,7 +351,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                   setGuildFilter(obj);
                 }
               }
-              const tmp65 = closure_7(tmp(7118).ActionSheet, obj14);
+              const tmp65 = closure_7(tmp(7120).ActionSheet, obj14);
               cResult[36] = tmp40;
               cResult[37] = tmp59;
               cResult[38] = tmp65;
@@ -365,7 +365,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             }
             const obj15 = { hasIcons: true, children: items2 };
             items2 = [tmp24, tmp37];
-            const tmp41 = closure_7(tmp(7114).ActionSheetRow.Group, obj15);
+            const tmp41 = closure_7(tmp(7116).ActionSheetRow.Group, obj15);
             cResult[26] = tmp24;
             cResult[27] = tmp37;
             cResult[28] = tmp41;
@@ -374,7 +374,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
           const obj16 = { onValueChange: tmp27, value: everyoneFilter, label: tmp29, subLabel: tmp30, icon: tmp31 };
           cResult[23] = everyoneFilter;
           cResult[24] = tmp27;
-          const tmp39 = closure_6(tmp(7114).ActionSheetSwitchRow, obj16);
+          const tmp39 = closure_6(tmp(7116).ActionSheetSwitchRow, obj16);
           class S {
             constructor(arg0) {
               const setGuildFilter = MentionActionCreatorsDefault.setGuildFilter;
@@ -400,8 +400,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
       const obj17 = { onValueChange: tmp16, value: roleFilter, label: tmp18, icon: tmp19 };
       cResult[14] = roleFilter;
       cResult[15] = tmp16;
-      cResult[16] = closure_6(tmp(7114).ActionSheetSwitchRow, obj17);
-      closure_6(tmp(7114).ActionSheetSwitchRow, obj17);
+      cResult[16] = closure_6(tmp(7116).ActionSheetSwitchRow, obj17);
+      closure_6(tmp(7116).ActionSheetSwitchRow, obj17);
       class S {
         constructor(arg0) {
           const setGuildFilter = MentionActionCreatorsDefault.setGuildFilter;
@@ -487,7 +487,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     const obj2 = roleFilter(closure_2[9]);
     obj2.showForLaterModal(BOOKMARK);
   }, []);
-  let obj2 = roleFilter(9514);
+  let obj2 = roleFilter(9530);
   const canUseScheduledMessages = obj2.useCanUseScheduledMessages();
   const callback = react.useCallback(() => {
     const obj = everyoneFilter(closure_2[8]);
@@ -503,25 +503,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     obj2.openUserSettings(obj3);
   }, []);
   let obj3 = { showGradient: true, header: closure_6(BottomSheetTitleHeader, obj4), children: items3 };
-  const ActionSheet = roleFilter(7118).ActionSheet;
-  obj4 = { title: intl.string(roleFilter(1126).t.HcoRu0) };
-  BottomSheetTitleHeader = roleFilter(7060).BottomSheetTitleHeader;
-  intl = roleFilter(1126).intl;
+  const ActionSheet = roleFilter(7120).ActionSheet;
+  obj4 = { title: intl.string(roleFilter(1128).t.HcoRu0) };
+  BottomSheetTitleHeader = roleFilter(7062).BottomSheetTitleHeader;
+  intl = roleFilter(1128).intl;
   const obj5 = { hasIcons: true, children: items2 };
-  const Group = roleFilter(7114).ActionSheetRow.Group;
+  const Group = roleFilter(7116).ActionSheetRow.Group;
   const obj6 = {
     onValueChange() {
       const obj = { roleFilter: !roleFilter };
       return closure_2(obj);
     },
     value: roleFilter,
-    label: intl2.string(roleFilter(1126).t.asInft),
+    label: intl2.string(roleFilter(1128).t.asInft),
     icon: closure_6(Icon, obj7)
   };
-  const ActionSheetSwitchRow = roleFilter(7114).ActionSheetSwitchRow;
-  intl2 = roleFilter(1126).intl;
-  obj7 = { IconComponent: roleFilter(8435).AtIcon, source: everyoneFilter(12981) };
-  Icon = roleFilter(7114).ActionSheetRow.Icon;
+  const ActionSheetSwitchRow = roleFilter(7116).ActionSheetSwitchRow;
+  intl2 = roleFilter(1128).intl;
+  obj7 = { IconComponent: roleFilter(8443).AtIcon, source: everyoneFilter(13007) };
+  Icon = roleFilter(7116).ActionSheetRow.Icon;
   items2 = [closure_6(ActionSheetSwitchRow, obj6), ];
   const obj8 = {
     onValueChange() {
@@ -529,60 +529,60 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
       return closure_2(obj);
     },
     value: everyoneFilter,
-    label: intl3.string(roleFilter(1126).t.S9GLtt),
-    subLabel: intl4.string(roleFilter(1126).t.jYgZa4),
+    label: intl3.string(roleFilter(1128).t.S9GLtt),
+    subLabel: intl4.string(roleFilter(1128).t.jYgZa4),
     icon: closure_6(Icon2, obj9)
   };
-  const ActionSheetSwitchRow2 = roleFilter(7114).ActionSheetSwitchRow;
-  intl3 = roleFilter(1126).intl;
-  intl4 = roleFilter(1126).intl;
-  obj9 = { IconComponent: roleFilter(8990).BellIcon, source: everyoneFilter(17446) };
-  Icon2 = roleFilter(7114).ActionSheetRow.Icon;
+  const ActionSheetSwitchRow2 = roleFilter(7116).ActionSheetSwitchRow;
+  intl3 = roleFilter(1128).intl;
+  intl4 = roleFilter(1128).intl;
+  obj9 = { IconComponent: roleFilter(8998).BellIcon, source: everyoneFilter(17480) };
+  Icon2 = roleFilter(7116).ActionSheetRow.Icon;
   items2[1] = closure_6(ActionSheetSwitchRow2, obj8);
   items3 = [closure_7(Group, obj5), ];
-  const Group2 = roleFilter(7114).ActionSheetRow.Group;
+  const Group2 = roleFilter(7116).ActionSheetRow.Group;
   const obj10 = {
     icon: closure_6(Icon3, obj11),
-    label: intl5.string(roleFilter(1126).t["2pAkDA"]),
+    label: intl5.string(roleFilter(1128).t["2pAkDA"]),
     onPress() {
       return closure_3(SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK);
     },
     arrow: true
   };
-  const ActionSheetRow = roleFilter(7114).ActionSheetRow;
-  obj11 = { IconComponent: roleFilter(13493).BookmarkIcon };
-  Icon3 = roleFilter(7114).ActionSheetRow.Icon;
-  intl5 = roleFilter(1126).intl;
+  const ActionSheetRow = roleFilter(7116).ActionSheetRow;
+  obj11 = { IconComponent: roleFilter(13519).BookmarkIcon };
+  Icon3 = roleFilter(7116).ActionSheetRow.Icon;
+  intl5 = roleFilter(1128).intl;
   const items4 = [closure_6(ActionSheetRow, obj10, "bookmarks"), , , ];
   const obj12 = {
     icon: closure_6(Icon4, obj13),
-    label: intl6.string(roleFilter(1126).t.aUXxzT),
+    label: intl6.string(roleFilter(1128).t.aUXxzT),
     onPress() {
       return closure_3(SavedMessagesTypes.SavedMessageSortTypes.REMINDER);
     },
     arrow: true
   };
-  const ActionSheetRow2 = roleFilter(7114).ActionSheetRow;
-  obj13 = { IconComponent: roleFilter(5110).ClockIcon };
-  Icon4 = roleFilter(7114).ActionSheetRow.Icon;
-  intl6 = roleFilter(1126).intl;
+  const ActionSheetRow2 = roleFilter(7116).ActionSheetRow;
+  obj13 = { IconComponent: roleFilter(5113).ClockIcon };
+  Icon4 = roleFilter(7116).ActionSheetRow.Icon;
+  intl6 = roleFilter(1128).intl;
   items4[1] = closure_6(ActionSheetRow2, obj12, "reminders");
   let tmp8Result = null;
   if (canUseScheduledMessages) {
-    const obj14 = { icon: closure_6(Icon5, obj15), label: intl7.string(tmp(1126).t.SZVs3K), onPress: callback, arrow: true };
-    const ActionSheetRow3 = tmp(7114).ActionSheetRow;
-    obj15 = { IconComponent: tmp(11976).CalendarPlusIcon };
-    Icon5 = tmp(7114).ActionSheetRow.Icon;
-    intl7 = tmp(1126).intl;
+    const obj14 = { icon: closure_6(Icon5, obj15), label: intl7.string(tmp(1128).t.SZVs3K), onPress: callback, arrow: true };
+    const ActionSheetRow3 = tmp(7116).ActionSheetRow;
+    obj15 = { IconComponent: tmp(12000).CalendarPlusIcon };
+    Icon5 = tmp(7116).ActionSheetRow.Icon;
+    intl7 = tmp(1128).intl;
     tmp8Result = tmp8(ActionSheetRow3, obj14, "scheduled-messages");
   }
   const obj16 = { hasIcons: true, children: items4 };
   items4[2] = tmp8Result;
-  const obj17 = { icon: closure_6(Icon6, obj18), label: intl8.string(tmp(1126).t.h850Ss), onPress: callback1, arrow: true };
-  const ActionSheetRow4 = tmp(7114).ActionSheetRow;
-  obj18 = { IconComponent: tmp(7313).SettingsIcon };
-  Icon6 = tmp(7114).ActionSheetRow.Icon;
-  intl8 = tmp(1126).intl;
+  const obj17 = { icon: closure_6(Icon6, obj18), label: intl8.string(tmp(1128).t.h850Ss), onPress: callback1, arrow: true };
+  const ActionSheetRow4 = tmp(7116).ActionSheetRow;
+  obj18 = { IconComponent: tmp(7315).SettingsIcon };
+  Icon6 = tmp(7116).ActionSheetRow.Icon;
+  intl8 = tmp(1128).intl;
   items4[3] = closure_6(ActionSheetRow4, obj17, "settings");
   items3[1] = closure_7(Group2, obj16);
   return closure_7(ActionSheet, obj3);

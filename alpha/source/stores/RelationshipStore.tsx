@@ -1,18 +1,19 @@
-// Module ID: 4816
-// Function ID: 4817
+// Module ID: 4819
+// Function ID: 4820
 // Name: RelationshipStore
-// Dependencies: [32, 4817, 1390, 1085, 584, 504, 2]
+// Dependencies: [32, 4820, 1392, 1087, 584, 504, 4797, 2]
 
-// Module 4816 (RelationshipStore)
+// Module 4819 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4817 */;
-import UserStore from "UserStore" /* 1390 */;
+import MessageRecord from "MessageRecord" /* 4820 */;
+import UserStore from "UserStore" /* 1392 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_15;
+let closure_16;
 
 function markAllUserIdListsStale() {
   set3.add("friends");
@@ -22,7 +23,7 @@ function markAllUserIdListsStale() {
 }
 function flushStaleUserIdLists() {
   for (const item10005 of set3) {
-    closure_19[item10005] = undefined;
+    closure_20[item10005] = undefined;
     continue;
   }
   set3.clear();
@@ -96,8 +97,8 @@ function recountPending() {
   if (num == null) {
     num = 0;
   }
-  closure_16 = max(num - size - size, 0);
-  closure_14 = closure_14 + 1;
+  closure_17 = max(num - size - size, 0);
+  closure_15 = closure_15 + 1;
 }
 const RelationshipTypes = Constants.RelationshipTypes;
 const map = new Map();
@@ -108,11 +109,11 @@ let set = new Set();
 let set1 = new Set();
 const set2 = new Set();
 let obj12 = {};
-let closure_14 = 0;
-const authStore3 = {};
-let closure_16 = 0;
+let closure_15 = 0;
+const authStore4 = {};
+let closure_17 = 0;
 let size = 0;
-let closure_19 = { friends: "ix", blocked: "isReactCompilerEnabled", ignored: "section", blockedOrIgnored: "Array" };
+let closure_20 = { friends: "unicodeVersion", blocked: "marginTop", ignored: "shapes", blockedOrIgnored: "Array" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;
@@ -139,13 +140,15 @@ class RelationshipStore extends Store {
     return tmp;
   }
   isBlockedForMessage(message) {
+    let leaderboard;
+    const self = this;
     if (null != message.author) {
       if (map.get(message.author.id) === RelationshipTypes.BLOCKED) {
         return true;
       }
     }
-    const self = this;
-    const isBlocked = this.isBlocked;
+    const isBlocked = self.isBlocked;
+    const tmp3 = MessageRecord;
     if (message instanceof MessageRecord) {
       const interactionMetadata = message.interactionMetadata;
       let id;
@@ -171,7 +174,26 @@ class RelationshipStore extends Store {
         return true;
       }
     }
-    return false;
+    if (message instanceof tmp3) {
+      const guildSpaceData = message.guildSpaceData;
+      let leaderboard1;
+      if (guildSpaceData != null) {
+        leaderboard1 = guildSpaceData.leaderboard;
+      }
+      leaderboard = leaderboard1;
+    } else {
+      const guild_space_data = message.guild_space_data;
+      if (guild_space_data != null) {
+        leaderboard = guild_space_data.leaderboard;
+      }
+    }
+    let someResult = null != leaderboard;
+    if (someResult) {
+      const obj = GuildLeaderboardTypes;
+      const guildSpaceLeaderboardUserIds = obj.getGuildSpaceLeaderboardUserIds(leaderboard);
+      someResult = guildSpaceLeaderboardUserIds.some((item) => self.isBlocked(item));
+    }
+    return someResult;
   }
   isIgnored(arg0) {
     let tmp = null != arg0;
@@ -182,6 +204,7 @@ class RelationshipStore extends Store {
     return tmp;
   }
   isIgnoredForMessage(message) {
+    let leaderboard;
     const self = this;
     if (null != message.author) {
       if (self.isIgnored(message.author.id)) {
@@ -189,6 +212,7 @@ class RelationshipStore extends Store {
       }
     }
     const isIgnored = self.isIgnored;
+    const tmp = MessageRecord;
     if (message instanceof MessageRecord) {
       const interactionMetadata = message.interactionMetadata;
       let id;
@@ -214,7 +238,26 @@ class RelationshipStore extends Store {
         return true;
       }
     }
-    return false;
+    if (message instanceof tmp) {
+      const guildSpaceData = message.guildSpaceData;
+      let leaderboard1;
+      if (guildSpaceData != null) {
+        leaderboard1 = guildSpaceData.leaderboard;
+      }
+      leaderboard = leaderboard1;
+    } else {
+      const guild_space_data = message.guild_space_data;
+      if (guild_space_data != null) {
+        leaderboard = guild_space_data.leaderboard;
+      }
+    }
+    let someResult = null != leaderboard;
+    if (someResult) {
+      const obj = GuildLeaderboardTypes;
+      const guildSpaceLeaderboardUserIds = obj.getGuildSpaceLeaderboardUserIds(leaderboard);
+      someResult = guildSpaceLeaderboardUserIds.some((item) => self.isIgnored(item));
+    }
+    return someResult;
   }
   isUnfilteredPendingIncoming(nextResult) {
     const self = this;
@@ -222,7 +265,7 @@ class RelationshipStore extends Store {
     return tmp;
   }
   getPendingCount() {
-    return closure_16;
+    return closure_17;
   }
   getSpamCount() {
     return size;
@@ -259,7 +302,7 @@ class RelationshipStore extends Store {
     return map;
   }
   getVersion() {
-    return closure_14;
+    return closure_15;
   }
   isSpam(arg0) {
     return set.has(arg0);
@@ -284,39 +327,39 @@ class RelationshipStore extends Store {
     return obj11[arg0];
   }
   getFriendIDs() {
-    if (null == closure_19.friends) {
+    if (null == closure_20.friends) {
       const _Array = Array;
       let items = map1.get(RelationshipTypes.FRIEND);
       if (items == null) {
         items = [];
       }
-      closure_19.friends = from(items);
+      closure_20.friends = from(items);
     }
-    return closure_19.friends;
+    return closure_20.friends;
   }
   getBlockedIDs() {
-    if (null == closure_19.blocked) {
+    if (null == closure_20.blocked) {
       const _Array = Array;
       let items = map1.get(RelationshipTypes.BLOCKED);
       if (items == null) {
         items = [];
       }
-      closure_19.blocked = from(items);
+      closure_20.blocked = from(items);
     }
-    return closure_19.blocked;
+    return closure_20.blocked;
   }
   getIgnoredIDs() {
     const self = this;
-    if (null == closure_19.ignored) {
+    if (null == closure_20.ignored) {
       const _Array = Array;
       const arr = Array.from(set1.values());
-      closure_19.ignored = arr.filter((item) => self.isIgnored(item));
+      closure_20.ignored = arr.filter((item) => self.isIgnored(item));
     }
-    return closure_19.ignored;
+    return closure_20.ignored;
   }
   getBlockedOrIgnoredIDs() {
-    let tmp = closure_19;
-    if (null == closure_19.blockedOrIgnored) {
+    let tmp = closure_20;
+    if (null == closure_20.blockedOrIgnored) {
       const _Set = Set;
       const self = this;
       const self2 = this;
@@ -328,8 +371,8 @@ class RelationshipStore extends Store {
           continue;
         }
       }
-      closure_19.blockedOrIgnored = set;
-      tmp = closure_19;
+      closure_20.blockedOrIgnored = set;
+      tmp = closure_20;
     }
     return tmp.blockedOrIgnored;
   }
@@ -337,12 +380,12 @@ class RelationshipStore extends Store {
     return obj12[id];
   }
   isStranger(userId) {
-    if (null != closure_15[userId]) {
+    if (null != closure_16[userId]) {
       const _Date = Date;
-      if (closure_15[userId].expiry < Date.now()) {
-        delete closure_15[tmp];
+      if (closure_16[userId].expiry < Date.now()) {
+        delete closure_16[tmp];
       } else {
-        return closure_15[userId].isStranger;
+        return closure_16[userId].isStranger;
       }
     }
   }
@@ -364,7 +407,7 @@ let obj = {
     set3.add("ignored");
     set3.add("blockedOrIgnored");
     obj12 = {};
-    closure_15 = {};
+    closure_16 = {};
     relationships = relationships.relationships;
     const item = relationships.forEach((id) => {
       upsertRelationship(id.id, id.type);
@@ -407,8 +450,8 @@ let obj = {
     if (num == null) {
       num = 0;
     }
-    closure_16 = max(num - size - size, 0);
-    closure_14 = closure_14 + 1;
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
     map.clear();
@@ -483,8 +526,8 @@ let obj = {
     if (num == null) {
       num = 0;
     }
-    closure_16 = max(num - size - size, 0);
-    closure_14 = closure_14 + 1;
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
     const tmp35 = relationship.relationship.type === RelationshipTypes.FRIEND && value === RelationshipTypes.PENDING_OUTGOING;
     if (tmp35) {
       const obj8 = { type: "FRIEND_REQUEST_ACCEPTED", user: relationship.relationship.user };
@@ -549,8 +592,8 @@ let obj = {
     if (num == null) {
       num = 0;
     }
-    closure_16 = max(num - size - size, 0);
-    closure_14 = closure_14 + 1;
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
   },
   RELATIONSHIP_UPDATE: function handleRelationshipUpdate(relationship) {
     relationship = relationship.relationship;
@@ -575,8 +618,8 @@ let obj = {
     } else {
       set.delete(relationship.id);
     }
-    if (null != closure_15[relationship.id]) {
-      delete closure_15[relationship.id];
+    if (null != closure_16[relationship.id]) {
+      delete closure_16[relationship.id];
     }
     if (null == relationship.originApplicationId) {
       delete obj12[relationship.id];
@@ -611,8 +654,8 @@ let obj = {
     if (num == null) {
       num = 0;
     }
-    closure_16 = max(num - size - size, 0);
-    closure_14 = closure_14 + 1;
+    closure_17 = max(num - size - size, 0);
+    closure_15 = closure_15 + 1;
   },
   RELATIONSHIP_PENDING_INCOMING_REMOVED: function handlePendingIncomingRemoved() {
     const keys = map.keys();
@@ -625,7 +668,7 @@ let obj = {
         let tmp8 = removeRelationship(tmp3);
         let deleteResult = set.delete(tmp3);
         let deleteResult1 = set2.delete(tmp3);
-        delete closure_15[tmp7];
+        delete closure_16[tmp7];
       }
       continue;
     }
@@ -633,7 +676,7 @@ let obj = {
     recountPending();
   },
   UPDATE_STRANGER_STATUS: function handleUpdateStrangerStatus(isStranger) {
-    closure_15[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };
+    closure_16[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };
     ({ expiry: Date.now() + 300000, isStranger: isStranger.isStranger });
   }
 };

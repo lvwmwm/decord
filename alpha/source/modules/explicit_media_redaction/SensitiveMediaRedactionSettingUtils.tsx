@@ -1,12 +1,12 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7221
+// Function ID: 7222
 // Name: SensitiveMediaRedactionSettingUtils
-// Dependencies: [1209, 12, 2]
+// Dependencies: [1211, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 7219 (SensitiveMediaRedactionSettingUtils)
+// Module 7221 (SensitiveMediaRedactionSettingUtils)
 import _mod12 from "module_12" /* 12 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");

@@ -1,28 +1,28 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11595
+// Function ID: 11596
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 2119, 5167, 1390, 1085, 21, 5151, 587, 5505, 1200, 7103, 7121, 8840, 558, 576, 8983, 5147, 11573, 1126, 2]
+// Dependencies: [19, 17, 2122, 5169, 1392, 1087, 21, 5153, 587, 5507, 1202, 7105, 7123, 8848, 558, 576, 8991, 5149, 11596, 1128, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 11572 (MentionableSelectOptionParts)
+// Module 11595 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5505 */;
-import RoleIconUtils from "RoleIconUtils" /* 7103 */;
-import RoleIconDefault from "RoleIcon" /* 7121 */;
-import DiscordTagDefault from "DiscordTag" /* 8983 */;
-import UserIcon from "UserIcon" /* 11573 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5507 */;
+import RoleIconUtils from "RoleIconUtils" /* 7105 */;
+import RoleIconDefault from "RoleIcon" /* 7123 */;
+import DiscordTagDefault from "DiscordTag" /* 8991 */;
+import UserIcon from "UserIcon" /* 11596 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import PresenceStore from "PresenceStore" /* 5167 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import PresenceStore from "PresenceStore" /* 5169 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ export const renderMentionableOptionIcon = function renderMentionableOptionIcon(
       const isVROnlineResult = PresenceStore.isVROnline(user.id);
       const status = PresenceStore.getStatus(user.id);
       const obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: isVROnlineResult, status, guildId, size: native.AvatarSizes.XSMALL };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       return metroImportAll(Avatar, obj);
     }
   } else if (type.type === InteractionComponentTypes.SelectOptionType.ROLE) {
@@ -155,7 +155,7 @@ export const renderMentionableOptionIcon = function renderMentionableOptionIcon(
           }
         }
         let colorString;
-        const ShieldUserIcon = tmp(8840).ShieldUserIcon;
+        const ShieldUserIcon = tmp(8848).ShieldUserIcon;
         const tmp8 = metroImportAll;
         if (role != null) {
           colorString = role.colorString;
@@ -206,9 +206,9 @@ export const mentionableOptionAccessibilityLabel = function mentionableOptionAcc
     if (user != null) {
       bot = user.bot;
     }
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (bot) {
       const obj2 = { username: type.label, discriminator };
       discriminator = undefined;
@@ -228,7 +228,7 @@ export const mentionableOptionAccessibilityLabel = function mentionableOptionAcc
     }
     return formatToPlainStringResult;
   } else if (type.type === InteractionComponentTypes.SelectOptionType.ROLE) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj = { roleName: type.label };
     return intl.formatToPlainString(intl3.t.F6ejkk, obj);
   }

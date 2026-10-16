@@ -1,26 +1,26 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10785
+// Function ID: 10786
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1390, 1392, 1085, 21, 5151, 587, 558, 576, 10771, 7546, 10796, 5088, 5147, 1126, 10797, 504, 1989, 1273, 9189, 1631, 7315, 5115, 8522, 9739, 10000, 6527, 7061, 2]
+// Dependencies: [19, 17, 1392, 1394, 1087, 21, 5153, 587, 558, 576, 10786, 7548, 10811, 5091, 5149, 1128, 10812, 504, 1991, 1275, 9202, 1633, 7317, 5118, 8530, 9755, 10016, 6529, 7063, 2]
 
-// Module 10770 (TieredTenureBadgeActionSheet)
+// Module 10785 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import openUserSettings from "openUserSettings" /* 7315 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7546 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8522 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10771 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10796 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import openUserSettings from "openUserSettings" /* 7317 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7548 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8530 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10786 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 10811 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,14 +140,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
                     let tmp43 = isUsersBadge && null != premiumSince;
                     if (tmp43) {
                       const obj4 = { style: tmp4.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj5) };
-                      const Text = tmp(5147).Text;
-                      const intl2 = tmp(1126).intl;
+                      const Text = tmp(5149).Text;
+                      const intl2 = tmp(1128).intl;
                       formatToPlainString = intl2.formatToPlainString;
                       const _Date = Date;
                       const self = this;
                       const self2 = this;
                       obj5 = { date };
-                      Hu4jfi = tmp(1126).t.Hu4jfi;
+                      Hu4jfi = tmp(1128).t.Hu4jfi;
                       date = new Date(premiumSince);
                       tmp43 = authStore(Text, obj4);
                     }
@@ -221,9 +221,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
       } else {
         tmp31 = cResult[18];
       }
-      Text1 = tmp(5147).Text;
+      Text1 = tmp(5149).Text;
       badgeName = tmp4.badgeName;
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       stringResult = intl.string(tieredTenureBadgeData.nameUnformatted);
       str = "mobile-text-heading-primary";
       str2 = "heading-md/semibold";
@@ -300,8 +300,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5147).Text;
-    intl = tmp2(1126).intl;
+    const Text = tmp2(5149).Text;
+    intl = tmp2(1128).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
     items1[2] = authStore(Text_Text.Text, obj5);
@@ -311,14 +311,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tiered
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5147).Text;
-      const intl2 = tmp2(1126).intl;
+      const Text2 = tmp2(5149).Text;
+      const intl2 = tmp2(1128).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;
       const self = this;
       const self2 = this;
       obj7 = { date };
-      Hu4jfi = tmp2(1126).t.Hu4jfi;
+      Hu4jfi = tmp2(1128).t.Hu4jfi;
       date = new Date(premiumSince);
       isUsersBadge = tmp11(Text2, obj6);
     }

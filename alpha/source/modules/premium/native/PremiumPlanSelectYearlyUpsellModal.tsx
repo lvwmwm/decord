@@ -1,24 +1,24 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14549
+// Function ID: 14550
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2129, 7353, 14504, 1392, 1096, 21, 5151, 6122, 6185, 558, 576, 7347, 504, 1901, 5088, 14518, 1200, 1126, 5439, 5458, 4825, 2]
+// Dependencies: [32, 19, 17, 2132, 7355, 14536, 1394, 1098, 21, 5153, 6124, 6187, 558, 576, 7349, 504, 1903, 5091, 14550, 1202, 1128, 5441, 5460, 4828, 2]
 
-// Module 14517 (PremiumPlanSelectYearlyUpsellModal)
+// Module 14549 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1096 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import AlertDefault from "Alert" /* 5458 */;
-import TextStylesDefault from "TextStyles" /* 6122 */;
-import LegacyTokens from "LegacyTokens" /* 6185 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14504 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14518 */;
+import Constants from "Constants" /* 1098 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import AlertDefault from "Alert" /* 5460 */;
+import TextStylesDefault from "TextStyles" /* 6124 */;
+import LegacyTokens from "LegacyTokens" /* 6187 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14536 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14550 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import IAPStore from "IAPStore" /* 7353 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import IAPStore from "IAPStore" /* 7355 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -266,7 +266,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7347);
+  const obj2 = productId(7349);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);
@@ -297,7 +297,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   if (null == premiumTier || null == orderPriceString) {
     return null;
   } else {
-    const tmp5Result = productId(1901);
+    const tmp5Result = productId(1903);
     const formatPercentResult = tmp5Result.formatPercent(stateFromStores, closure_9 / 100);
     const obj5 = { onClose, noDefaultButtons: true, children: closure_11(View, obj6) };
     obj6 = { style: tmp.container, children: items2 };
@@ -306,22 +306,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
     const tmp22 = FastImageDefault;
     items2 = [closure_10(tmp22, obj7), , , , , ];
     const obj8 = { style: tmp.header, accessibilityRole: "header", children: format(LQCVfK, obj9) };
-    const LegacyText = tmp5(1200).LegacyText;
-    const intl = tmp5(1126).intl;
+    const LegacyText = tmp5(1202).LegacyText;
+    const intl = tmp5(1128).intl;
     format = intl.format;
     obj9 = { discountPercentage: formatPercentResult, planName: tmp5Result2.getPremiumTypeDisplayName(premiumTier) };
-    LQCVfK = tmp5(1126).t.LQCVfK;
-    tmp5Result2 = productId(4825);
+    LQCVfK = tmp5(1128).t.LQCVfK;
+    tmp5Result2 = productId(4828);
     items2[1] = closure_10(LegacyText, obj8);
-    const obj10 = { style: tmp.description, children: intl2.format(productId(1126).t["7chOVL"], obj11) };
-    const LegacyText2 = tmp5(1200).LegacyText;
-    intl2 = tmp5(1126).intl;
+    const obj10 = { style: tmp.description, children: intl2.format(productId(1128).t["7chOVL"], obj11) };
+    const LegacyText2 = tmp5(1202).LegacyText;
+    intl2 = tmp5(1128).intl;
     obj11 = { discountPercentage: formatPercentResult };
     items2[2] = closure_10(LegacyText2, obj10);
     const obj12 = { style: tmp.upsellButton, children: closure_10(Button, obj13) };
     obj13 = {
       variant: "active",
-      text: intl3.formatToPlainString(productId(1126).t.Qvq6GE, obj14),
+      text: intl3.formatToPlainString(productId(1128).t.Qvq6GE, obj14),
       onPress() {
           _undefined("upsell");
           importDefault();
@@ -329,14 +329,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5439).Button;
-    intl3 = tmp5(1126).intl;
+    Button = tmp5(5441).Button;
+    intl3 = tmp5(1128).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
     const obj15 = { style: tmp.continueButton, children: closure_10(Button2, obj16) };
     obj16 = {
       variant: "secondary",
-      text: intl4.string(productId(1126).t.YwEyQM),
+      text: intl4.string(productId(1128).t.YwEyQM),
       onPress() {
           _undefined("default");
           dependencyMap();
@@ -344,13 +344,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5439).Button;
-    intl4 = tmp5(1126).intl;
+    Button2 = tmp5(5441).Button;
+    intl4 = tmp5(1128).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
-    obj18 = { variant: "tertiary", text: intl5.string(productId(1126).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5439).Button;
-    intl5 = tmp5(1126).intl;
+    obj18 = { variant: "tertiary", text: intl5.string(productId(1128).t.cpT0Cq), onPress: onClose };
+    Button3 = tmp5(5441).Button;
+    intl5 = tmp5(1128).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);
   }

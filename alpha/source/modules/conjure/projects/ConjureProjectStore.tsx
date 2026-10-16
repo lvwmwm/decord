@@ -1,15 +1,15 @@
-// Module ID: 10885
-// Function ID: 10886
+// Module ID: 10900
+// Function ID: 10901
 // Name: ConjureProjectStore
-// Dependencies: [32, 1390, 7166, 504, 584, 2]
+// Dependencies: [32, 1392, 7168, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 10885 (ConjureProjectStore)
+// Module 10900 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 function isProjectOwner(item10010) {

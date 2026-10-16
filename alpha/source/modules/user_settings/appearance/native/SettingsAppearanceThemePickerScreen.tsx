@@ -1,37 +1,37 @@
-// Module ID: 16209
-// Function ID: 16210
+// Module ID: 16242
+// Function ID: 16243
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [32, 19, 17, 4993, 1251, 1206, 1205, 1207, 1208, 1096, 21, 5151, 587, 1382, 1126, 16210, 13521, 16212, 558, 576, 1497, 573, 5084, 1209, 1254, 4881, 16102, 6390, 1504, 7073, 7098, 6430, 8750, 4906, 5023, 4992, 5152, 5155, 4883, 9525, 5147, 6405, 6427, 16103, 16214, 8996, 16220, 16232, 16241, 7035, 10594, 2]
+// Dependencies: [32, 19, 17, 4996, 1253, 1208, 1207, 1209, 1210, 1098, 21, 5153, 587, 1384, 1128, 16243, 13547, 16245, 558, 576, 1499, 573, 5087, 1211, 1256, 4884, 16135, 6392, 1506, 7075, 7100, 6432, 8758, 4909, 5026, 4995, 5154, 5157, 4886, 9541, 5149, 6407, 6429, 16136, 16247, 9004, 16253, 16265, 16274, 7037, 10609, 2]
 
-// Module 16209 (SettingsAppearanceThemePickerScreen)
+// Module 16242 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
-import themes from "themes" /* 4881 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import timing from "timing" /* 5152 */;
-import timingPresets from "timingPresets" /* 5155 */;
-import Pressables from "Pressables" /* 6405 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 13521 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16102 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16103 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 16210 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16212 */;
+import Constants from "Constants" /* 1098 */;
+import intl4 from "intl" /* 1128 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
+import themes from "themes" /* 4884 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import timing from "timing" /* 5154 */;
+import timingPresets from "timingPresets" /* 5157 */;
+import Pressables from "Pressables" /* 6407 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 13547 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16135 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16136 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 16243 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16245 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1251 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import ThemeConstants from "ThemeConstants" /* 1208 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
+import ThemeConstants from "ThemeConstants" /* 1210 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -417,7 +417,7 @@ function ThemePicker(defaultIndex) {
         }
         items[1] = obj2;
         obj3 = { animated: true, variant: "text-md/semibold", style: items, children: intl.string(intl4.t.i4jeWR) };
-        intl = tmp2(1126).intl;
+        intl = tmp2(1128).intl;
         return syncedClientThemes(PressableOpacity, obj);
       };
     }

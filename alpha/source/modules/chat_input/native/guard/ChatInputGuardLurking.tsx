@@ -1,23 +1,23 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13049
+// Function ID: 13050
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4807, 2065, 12228, 1085, 21, 558, 576, 504, 1112, 5166, 13024, 8912, 1209, 7273, 6320, 7139, 1126, 13016, 2]
+// Dependencies: [19, 4810, 2068, 12251, 1087, 21, 558, 576, 504, 1114, 5168, 13050, 8920, 1211, 7275, 6322, 7141, 1128, 13042, 2]
 
-// Module 13023 (ChatInputGuardLurking)
+// Module 13049 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7139 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7273 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8912 */;
-import ChatInputConstants from "ChatInputConstants" /* 12228 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13016 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13024 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6322 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7141 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7275 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8920 */;
+import ChatInputConstants from "ChatInputConstants" /* 12251 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13042 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13050 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4807 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import Constants from "Constants" /* 1085 */;
+import LurkingStore from "LurkingStore" /* 4810 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -279,9 +279,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
         }
-        const stringResult = obj3.string(tmp(1126).t.G42YmG);
-        const intl = tmp(1126).intl;
-        const stringResult1 = intl.string(tmp(1126).t.GlKb5i);
+        const stringResult = obj3.string(tmp(1128).t.G42YmG);
+        const intl = tmp(1128).intl;
+        const stringResult1 = intl.string(tmp(1128).t.GlKb5i);
         cResult[12] = stringResult;
         cResult[13] = stringResult1;
         tmp17 = stringResult1;
@@ -351,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
         }
-        const stringResult2 = obj4.string(tmp(1126).t.RLch70);
+        const stringResult2 = obj4.string(tmp(1128).t.RLch70);
         cResult[14] = stringResult2;
         tmp20 = stringResult2;
       } else {
@@ -574,40 +574,40 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13016);
-    const intl9 = tmp2(1126).intl;
-    const intl10 = tmp2(1126).intl;
-    const intl11 = tmp2(1126).intl;
-    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1126).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1126).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1126).t.RLch70)} buttonPrimaryOnPress={callback2} />;
+    guildId(13042);
+    const intl9 = tmp2(1128).intl;
+    const intl10 = tmp2(1128).intl;
+    const intl11 = tmp2(1128).intl;
+    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1128).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1128).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1128).t.RLch70)} buttonPrimaryOnPress={callback2} />;
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13016);
+    const tmp17 = guildId(13042);
     if (null != channel.pendingGameProfileReturn) {
-      let obj3 = { type: "button-action", message: intl6.string(tmp2(1126).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1126).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1126).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl6 = tmp2(1126).intl;
-      intl7 = tmp2(1126).intl;
+      let obj3 = { type: "button-action", message: intl6.string(tmp2(1128).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1128).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl6 = tmp2(1128).intl;
+      intl7 = tmp2(1128).intl;
       ({ onReturnToGameProfile: obj4.buttonSecondaryOnPress, isReturning: obj4.buttonSecondaryLoading } = channel.pendingGameProfileReturn);
-      intl8 = tmp2(1126).intl;
+      intl8 = tmp2(1128).intl;
       obj9 = obj3;
     } else if (isReadonlyAnnouncementsChannel) {
-      let obj5 = { type: "button-action", message: intl3.string(tmp2(1126).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1126).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
-      intl3 = tmp2(1126).intl;
+      let obj5 = { type: "button-action", message: intl3.string(tmp2(1128).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1128).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
+      intl3 = tmp2(1128).intl;
       stringResult = undefined;
       if (isLurking) {
-        const intl4 = tmp2(1126).intl;
-        stringResult = intl4.string(tmp2(1126).t.VJlc0S);
+        const intl4 = tmp2(1128).intl;
+        stringResult = intl4.string(tmp2(1128).t.VJlc0S);
       }
       tmp10 = undefined;
       if (isLurking) {
         tmp10 = callback2;
       }
-      intl5 = tmp2(1126).intl;
+      intl5 = tmp2(1128).intl;
       obj9 = obj5;
     } else {
-      obj9 = { type: "button-action", message: intl.string(tmp2(1126).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1126).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl = tmp2(1126).intl;
-      intl2 = tmp2(1126).intl;
+      obj9 = { type: "button-action", message: intl.string(tmp2(1128).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl = tmp2(1128).intl;
+      intl2 = tmp2(1128).intl;
     }
     tmp15Result = tmp15(tmp17, obj9);
   }

@@ -1,11 +1,11 @@
-// Module ID: 12974
-// Function ID: 12975
+// Module ID: 13000
+// Function ID: 13001
 // Name: isStaffFromRawUser
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 // Exports: default
 
-// Module 12974 (isStaffFromRawUser)
-import Constants from "Constants" /* 1085 */;
+// Module 13000 (isStaffFromRawUser)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const UserFlags = Constants.UserFlags;

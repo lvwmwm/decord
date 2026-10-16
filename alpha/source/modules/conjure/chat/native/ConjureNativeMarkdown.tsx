@@ -1,18 +1,18 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12119
+// Function ID: 12120
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 587, 5151, 558, 576, 12096, 5147, 5138, 12097, 2]
+// Dependencies: [19, 17, 21, 587, 5153, 558, 576, 12120, 5149, 5141, 12121, 2]
 
-// Module 12095 (ConjureNativeMarkdown)
+// Module 12119 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12096 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5141 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12120 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const useConjureRevealedText = tmp(12097);
+const useConjureRevealedText = tmp(12121);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const CONJURE_MARKUP_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true };
@@ -50,7 +50,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const tmp = _require;
   _require = tmp4;
   if (cResult[0] !== source) {
-    const tmpResult = tmp(12096);
+    const tmpResult = tmp(12120);
     const splitMarkdownBlocksResult = tmpResult.splitMarkdownBlocks(source);
     cResult[0] = source;
     cResult[1] = splitMarkdownBlocksResult;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                 tmp3 = closure_0;
                 obj.style = closure_0.list;
                 items = source.items;
-                obj.children = items.map(() => { /* body not rendered: F145325 */ });
+                obj.children = items.map(() => { /* body not rendered: F145786 */ });
                 tmp4 = jsx(View, obj, arg1);
               }
               return tmp4;
@@ -140,7 +140,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               tmp3 = closure_0;
               obj.style = closure_0.list;
               items = source.items;
-              obj.children = items.map(() => { /* body not rendered: F145325 */ });
+              obj.children = items.map(() => { /* body not rendered: F145786 */ });
               tmp4 = jsx(View, obj, arg1);
             }
             return tmp4;
@@ -170,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         tmp3 = closure_0;
         obj.style = closure_0.list;
         items = source.items;
-        obj.children = items.map(() => { /* body not rendered: F145325 */ });
+        obj.children = items.map(() => { /* body not rendered: F145786 */ });
         tmp4 = jsx(View, obj, arg1);
       }
       return tmp4;

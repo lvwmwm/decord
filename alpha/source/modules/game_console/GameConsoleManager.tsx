@@ -1,28 +1,28 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18432
+// Function ID: 18433
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2012, 5169, 5171, 5172, 5170, 9443, 5176, 3, 38, 5303, 11403, 7028, 2060, 11405, 1386, 5359, 1126, 18391, 11409, 2]
+// Dependencies: [5, 502, 2014, 5171, 5173, 5174, 5172, 9459, 5178, 3, 38, 5305, 11423, 7030, 2063, 11425, 1388, 5361, 1128, 18433, 11429, 2]
 
-// Module 18390 (GameConsoleManager)
+// Module 18432 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import intl3 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import Timers from "Timers" /* 2060 */;
-import Constants from "Constants" /* 5176 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5303 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11405 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11409 */;
-import _modDef18391 from "module_18391" /* 18391 */;
+import intl3 from "intl" /* 1128 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import Timers from "Timers" /* 2063 */;
+import Constants from "Constants" /* 5178 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5305 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11425 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11429 */;
+import _modDef18433 from "module_18433" /* 18433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
-import SessionsStore from "SessionsStore" /* 5171 */;
-import VoiceStateStore from "VoiceStateStore" /* 5172 */;
-import GameConsoleStore from "GameConsoleStore" /* 5170 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9443 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import SessionsStore from "SessionsStore" /* 5173 */;
+import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import GameConsoleStore from "GameConsoleStore" /* 5172 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9459 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, channelId, sessionById, sessionId;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef18391;
+            const tmp8 = _modDef18433;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;
@@ -282,7 +282,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               const obj4 = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: type1 };
               ({ title: obj2.title, body: obj2.body, errorCodeMessage: obj2.errorCodeMessage } = tmp8Result);
               type1 = undefined;
-              const showSelfDismissableAlert = tmp6(11409).showSelfDismissableAlert;
+              const showSelfDismissableAlert = tmp6(11429).showSelfDismissableAlert;
               GameConsoleAlertUtilsDefault;
               if (tmp8Result.isAccountLinkError) {
                 type1 = awaitingRemoteSessionInfo.type;

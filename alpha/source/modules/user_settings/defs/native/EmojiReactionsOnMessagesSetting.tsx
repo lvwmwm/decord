@@ -1,13 +1,13 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16446
+// Function ID: 16447
 // Name: EmojiReactionsOnMessagesSetting
-// Dependencies: [8210, 10991, 1126, 2041, 2]
+// Dependencies: [8213, 11006, 1128, 2044, 2]
 
-// Module 16413 (EmojiReactionsOnMessagesSetting)
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+// Module 16446 (EmojiReactionsOnMessagesSetting)
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

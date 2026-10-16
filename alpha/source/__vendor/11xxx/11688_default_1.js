@@ -1,11 +1,11 @@
 // Module ID: 11688
 // Function ID: 11689
 // Name: default_1
-// Dependencies: [11649]
+// Dependencies: [11673]
 // Exports: default
 
 // Module 11688 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11649 */;
+import captureStackTrace2 from "captureStackTrace" /* 11673 */;
 
 let hasOwnProperty;
 
@@ -95,148 +95,141 @@ function error() {
 
 export default function default_1() {
   if (typeof error === "function") {
-    let obj = {
+    const obj2 = { string: { unit: "characters", verb: "to have" }, file: { unit: "bytes", verb: "to have" }, array: { unit: "items", verb: "to have" }, set: { unit: "items", verb: "to have" }, map: { unit: "entries", verb: "to have" } };
+    closure_1 = { regex: "input", email: "email address", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datetime", date: "ISO date", time: "ISO time", duration: "ISO duration", ipv4: "IPv4 address", ipv6: "IPv6 address", mac: "MAC address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded string", base64url: "base64url-encoded string", json_string: "JSON string", e164: "E.164 number", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN" };
+    return {
       localeError: (code) => {
           switch (code.code) {
             case "invalid_type":
             {
-              let combined;
               let expected = closure_2[code.expected];
+              const tmp44 = closure_2;
               if (expected == null) {
                 expected = code.expected;
               }
               const parsedTypeResult = captureStackTrace.parsedType(code.input);
-              const obj = /^[A-Z]/;
-              if (obj.test(code.expected)) {
-                const _HermesInternal17 = HermesInternal;
-                combined = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F instanceof " + code.expected + " \u0648\u0627\u06CC, \u0645\u06AB\u0631 " + tmp48 + " \u062A\u0631\u0644\u0627\u0633\u0647 \u0634\u0648";
-              } else {
-                const _HermesInternal16 = HermesInternal;
-                combined = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F " + expected + " \u0648\u0627\u06CC, \u0645\u06AB\u0631 " + tmp48 + " \u062A\u0631\u0644\u0627\u0633\u0647 \u0634\u0648";
-              }
-              return combined;
+              const _HermesInternal16 = HermesInternal;
+              const tmp48 = tmp44[parsedTypeResult] ?? parsedTypeResult;
+              return "Invalid input: expected " + expected + ", received " + tmp48;
             }
             case "invalid_value":
             {
-              let combined1;
+              let combined;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F " + captureStackTrace.stringifyPrimitive(code.values[0]) + " \u0648\u0627\u06CC";
+                combined = "Invalid input: expected " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u0646\u0627\u0633\u0645 \u0627\u0646\u062A\u062E\u0627\u0628: \u0628\u0627\u06CC\u062F \u06CC\u0648 \u0644\u0647 " + captureStackTrace.joinValues(code.values, "|") + " \u0685\u062E\u0647 \u0648\u0627\u06CC";
+                combined = "Invalid option: expected one of " + captureStackTrace.joinValues(code.values, "|");
               }
-              return combined1;
+              return combined;
             }
             case "too_big":
             {
-              let combined2;
-              let str31 = "<";
+              let combined1;
+              let str24 = "<";
               if (code.inclusive) {
-                str31 = "<=";
+                str24 = "<=";
               }
-              let str32 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str32 == null) {
-                  str32 = "\u0627\u0631\u0632\u069A\u062A";
+                if (str25 == null) {
+                  str25 = "value";
                 }
-                const str38 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str38.toString();
-                const str39 = (obj2[code.origin] ?? null).unit ?? "\u0639\u0646\u0635\u0631\u0648\u0646\u0647";
-                combined2 = "\u0689\u06CC\u0631 \u0644\u0648\u06CC: " + str32 + " \u0628\u0627\u06CC\u062F " + str31 + str1 + " " + str39 + " \u0648\u0644\u0631\u064A";
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "elements";
+                combined1 = "Too big: expected " + str25 + " to have " + str24 + str1 + " " + str31;
               } else {
-                let str33 = str32;
-                if (str32 == null) {
-                  str33 = "\u0627\u0631\u0632\u069A\u062A";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str34 = code.maximum;
-                combined2 = "\u0689\u06CC\u0631 \u0644\u0648\u06CC: " + str33 + " \u0628\u0627\u06CC\u062F " + str31 + str34.toString() + " \u0648\u064A";
+                const str27 = code.maximum;
+                combined1 = "Too big: expected " + str26 + " to be " + str24 + str27.toString();
               }
-              return combined2;
+              return combined1;
             }
             case "too_small":
             {
-              let combined3;
+              let combined2;
               let minimum;
               let origin;
-              let str23 = ">";
+              let str18 = ">";
               if (code.inclusive) {
-                str23 = ">=";
+                str18 = ">=";
               }
               ({ origin, minimum } = code);
-              const str58 = minimum.toString();
+              const str43 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u0689\u06CC\u0631 \u06A9\u0648\u0686\u0646\u06CC: " + origin + " \u0628\u0627\u06CC\u062F " + str23 + str58 + " " + tmp15.unit + " \u0648\u0644\u0631\u064A";
+                combined2 = "Too small: expected " + origin + " to have " + str18 + str43 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u0689\u06CC\u0631 \u06A9\u0648\u0686\u0646\u06CC: " + origin + " \u0628\u0627\u06CC\u062F " + str23 + str58 + " \u0648\u064A";
+                combined2 = "Too small: expected " + origin + " to be " + str18 + str43;
               }
-              return combined3;
+              return combined2;
             }
             case "invalid_format":
             {
-              let combined4;
+              let combined3;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F \"" + code.prefix + "\" \u0633\u0631\u0647 \u067E\u06CC\u0644 \u0634\u064A";
+                combined3 = "Invalid string: must start with \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F \"" + code.suffix + "\" \u0633\u0631\u0647 \u067E\u0627\u06CC \u062A\u0647 \u0648\u0631\u0633\u064A\u0696\u064A";
+                combined3 = "Invalid string: must end with \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \"" + code.includes + "\" \u0648\u0644\u0631\u064A";
+                combined3 = "Invalid string: must include \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F " + code.pattern + " \u0633\u0631\u0647 \u0645\u0637\u0627\u0628\u0642\u062A \u0648\u0644\u0631\u064A";
+                combined3 = "Invalid string: must match pattern " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " \u0646\u0627\u0633\u0645 \u062F\u06CC";
+                combined3 = "Invalid " + format;
               }
-              return combined4;
+              return combined3;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u0639\u062F\u062F: \u0628\u0627\u06CC\u062F \u062F " + code.divisor + " \u0645\u0636\u0631\u0628 \u0648\u064A";
+              return "Invalid number: must be a multiple of " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str5 = "\u06A9\u0644\u06CC\u0689";
+              let str3 = "";
               if (code.keys.length > 1) {
-                str5 = "\u06A9\u0644\u06CC\u0689\u0648\u0646\u0647";
+                str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 " + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Unrecognized key" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u06A9\u0644\u06CC\u0689 \u067E\u0647 " + code.origin + " \u06A9\u06D0";
+              return "Invalid key in " + code.origin;
             }
             case "invalid_union":
             {
-              return "\u0646\u0627\u0633\u0645\u0647 \u0648\u0631\u0648\u062F\u064A";
+              return "Invalid input";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u0639\u0646\u0635\u0631 \u067E\u0647 " + code.origin + " \u06A9\u06D0";
+              return "Invalid value in " + code.origin;
             }
             default:
             {
-              return "\u0646\u0627\u0633\u0645\u0647 \u0648\u0631\u0648\u062F\u064A";
+              return "Invalid input";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" }, file: { unit: "\u0628\u0627\u06CC\u067C\u0633", verb: "\u0648\u0644\u0631\u064A" }, array: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" }, set: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" } };
-    closure_1 = { regex: "\u0648\u0631\u0648\u062F\u064A", email: "\u0628\u0631\u06CC\u069A\u0646\u0627\u0644\u06CC\u06A9", url: "\u06CC\u0648 \u0622\u0631 \u0627\u0644", emoji: "\u0627\u06CC\u0645\u0648\u062C\u064A", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "\u0646\u06CC\u067C\u0647 \u0627\u0648 \u0648\u062E\u062A", date: "\u0646\u06D0\u067C\u0647", time: "\u0648\u062E\u062A", duration: "\u0645\u0648\u062F\u0647", ipv4: "\u062F IPv4 \u067E\u062A\u0647", ipv6: "\u062F IPv6 \u067E\u062A\u0647", cidrv4: "\u062F IPv4 \u0633\u0627\u062D\u0647", cidrv6: "\u062F IPv6 \u0633\u0627\u062D\u0647", base64: "base64-encoded \u0645\u062A\u0646", base64url: "base64url-encoded \u0645\u062A\u0646", json_string: "JSON \u0645\u062A\u0646", e164: "\u062F E.164 \u0634\u0645\u06D0\u0631\u0647", jwt: "JWT", template_literal: "\u0648\u0631\u0648\u062F\u064A" };
-    let closure_2 = { nan: "NaN", number: "\u0639\u062F\u062F", array: "\u0627\u0631\u06D0" };
-    return obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }

@@ -1,9 +1,9 @@
-// Module ID: 6131
-// Function ID: 6132
+// Module ID: 6133
+// Function ID: 6134
 // Name: RegionalFeatureConfigModels
 // Dependencies: [2]
 
-// Module 6131 (RegionalFeatureConfigModels)
+// Module 6133 (RegionalFeatureConfigModels)
 import size from "module_2" /* 2 */;
 
 class SettingsConfig {

@@ -1,15 +1,15 @@
-// Module ID: 7346
-// Function ID: 7347
+// Module ID: 7348
+// Function ID: 7349
 // Name: LinkButton
-// Dependencies: [19, 21, 5151, 558, 576, 5147, 6405, 2]
+// Dependencies: [19, 21, 5153, 558, 576, 5149, 6407, 2]
 
-// Module 7346 (LinkButton)
+// Module 7348 (LinkButton)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Pressables from "Pressables" /* 6405 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Pressables from "Pressables" /* 6407 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

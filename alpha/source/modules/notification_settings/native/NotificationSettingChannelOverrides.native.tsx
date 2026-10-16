@@ -1,25 +1,25 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 18936
+// Function ID: 18937
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2069, 7021, 4816, 1390, 1085, 21, 5151, 587, 558, 576, 504, 6885, 7022, 5481, 6317, 1126, 4884, 6958, 6400, 6408, 8376, 10448, 6959, 1200, 8577, 6964, 2]
+// Dependencies: [32, 19, 17, 2072, 7023, 4819, 1392, 1087, 21, 5153, 587, 558, 576, 504, 6887, 7024, 5483, 6319, 1128, 4887, 6960, 6402, 6410, 8384, 10464, 6961, 1202, 8585, 6966, 2]
 
-// Module 18894 (NotificationSettingChannelOverrides)
+// Module 18936 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6317 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7022 */;
+import intl4 from "intl" /* 1128 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6319 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7021 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7023 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

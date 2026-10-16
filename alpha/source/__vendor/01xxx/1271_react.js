@@ -1,22 +1,19 @@
 // Module ID: 1271
 // Function ID: 1272
 // Name: react
-// Dependencies: [19]
+// Dependencies: [19, 1272]
+// Exports: useSyncExternalStoreWithSelector
 
 // Module 1271 (react)
 import react from "react" /* 19 */;
 
-let c2;
+const require = globalThis.__r;
+let _require, closure_0, dependencyMap, value;
+
 let c3;
 let closure_4;
-let map;
-function checkIfSnapshotChanged(arg0) {
-  try {
-    return !is(tmp2, tmp());
-  } catch (err) {
-    return true;
-  }
-}
+let hasOwnProperty;
+let metroRequire;
 if (typeof Object.is === "function") {
   const _Object = Object;
 } else {
@@ -32,41 +29,117 @@ if (typeof Object.is === "function") {
     return tmp;
   };
 }
-({ useState: map, useEffect: c2, useLayoutEffect: c3, useDebugValue: closure_4 } = react);
+({ useRef: c3, useEffect: closure_4, useMemo: hasOwnProperty, useDebugValue: metroRequire } = react);
 
-export const useSyncExternalStore = undefined !== react.useSyncExternalStore ? react.useSyncExternalStore : (function useSyncExternalStore$1(arg0, getSnapshot) {
-  let closure_0 = arg0;
-  let tmp = getSnapshot();
-  const value = tmp;
-  let obj = { inst: { value: tmp, getSnapshot } };
-  const tmp2 = getSnapshot(obj);
-  const inst = tmp2[0].inst;
-  let closure_4 = tmp2[1];
-  const items = [arg0, tmp, getSnapshot];
-  const tmp3 = inst(() => {
-    inst.value = value;
-    inst.getSnapshot = getSnapshot;
-    const tmp = inst;
-    if (checkIfSnapshotChanged(inst)) {
-      const obj = { inst: tmp };
-      closure_4(obj);
+export const useSyncExternalStoreWithSelector = (subscribe, arg1, arg2, arg3, arg4) => {
+  let closure_1;
+  let current;
+  let syncExternalStore;
+  _require = arg1;
+  dependencyMap = arg2;
+  let closure_2 = arg3;
+  let closure_3 = arg4;
+  let tmp = closure_3(null);
+  if (null === tmp.current) {
+    const obj = { hasValue: false, value: null };
+    current = obj;
+    tmp.current = obj;
+  } else {
+    current = tmp.current;
+  }
+  let items = [arg1, arg2, arg3, arg4];
+  let tmp2 = syncExternalStore(() => {
+    let _true;
+    let c2 = false;
+    let tmp = null;
+    if (undefined !== closure_1) {
+      tmp = closure_1;
     }
+    closure_3 = tmp;
+    const items = [
+      () => {
+        let tmp4;
+        const tmp = closure_0();
+        const tmp2 = c2;
+        if (tmp2) {
+          tmp4 = value;
+          if (!is(closure_0, tmp)) {
+            let tmp10 = _true(tmp);
+            if (undefined !== closure_3) {
+              if (closure_3(value, tmp10)) {
+                closure_0 = tmp;
+                tmp10 = tmp6;
+              }
+              tmp4 = tmp10;
+            }
+            closure_0 = tmp;
+            value = tmp10;
+          }
+        } else {
+          c2 = true;
+          closure_0 = tmp;
+          tmp4 = _true(tmp);
+          if (undefined !== closure_3) {
+            if (current.hasValue) {
+              value = current.value;
+              if (tmp5(value, tmp4)) {
+                tmp4 = value;
+              }
+            }
+          }
+          value = tmp4;
+        }
+        return tmp4;
+      },
+
+    ];
+    let fn;
+    if (null !== tmp) {
+      fn = () => {
+        let tmp4;
+        const tmp = closure_3();
+        const tmp2 = c2;
+        if (tmp2) {
+          tmp4 = value;
+          if (!is(closure_0, tmp)) {
+            let tmp11 = _true(tmp);
+            if (undefined !== closure_3) {
+              if (closure_3(value, tmp11)) {
+                closure_0 = tmp;
+                tmp11 = tmp7;
+              }
+              tmp4 = tmp11;
+            }
+            closure_0 = tmp;
+            value = tmp11;
+          }
+        } else {
+          c2 = true;
+          closure_0 = tmp;
+          tmp4 = _true(tmp);
+          if (undefined !== closure_3) {
+            if (current.hasValue) {
+              value = current.value;
+              if (closure_3(value, tmp4)) {
+                tmp4 = value;
+              }
+            }
+          }
+          value = tmp4;
+        }
+        return tmp4;
+      };
+    }
+    items[1] = fn;
+    return items;
   }, items);
-  const items1 = [arg0];
-  value(() => {
-    let tmp = inst;
-    if (checkIfSnapshotChanged(inst)) {
-      let obj = { inst: tmp };
-      closure_4(obj);
-    }
-    return closure_0(() => {
-      const tmp = inst;
-      if (checkIfSnapshotChanged(inst)) {
-        const obj = { inst: tmp };
-        closure_1_4(obj);
-      }
-    });
+  const obj2 = require("react");
+  syncExternalStore = obj2.useSyncExternalStore(subscribe, tmp2[0], tmp2[1]);
+  const items1 = [syncExternalStore];
+  let tmp4 = current(() => {
+    current.hasValue = true;
+    current.value = syncExternalStore;
   }, items1);
-  closure_4(tmp);
-  return tmp;
-});
+  const tmp5 = closure_6(syncExternalStore);
+  return syncExternalStore;
+};

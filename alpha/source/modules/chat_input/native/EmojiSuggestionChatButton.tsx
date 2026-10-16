@@ -1,24 +1,24 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13015
+// Function ID: 13016
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1205, 2062, 1241, 21, 5151, 587, 1382, 4874, 12985, 12990, 4906, 5438, 11613, 12993, 6555, 11902, 6405, 1126, 5088, 5025, 7042, 7043, 9735, 1200, 2]
+// Dependencies: [32, 19, 17, 1207, 2065, 1243, 21, 5153, 587, 1384, 4877, 13011, 13016, 4909, 5440, 11637, 13019, 6557, 11926, 6407, 1128, 5091, 5028, 7044, 7045, 9751, 1202, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 12989 (EmojiSuggestionChatButton)
+// Module 13015 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import spring from "spring" /* 5438 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12985 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import spring from "spring" /* 5440 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;
@@ -60,9 +60,9 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
   let active;
   let c5;
   let intl;
-  let items4;
   let items5;
   let items6;
+  let items7;
   let obj11;
   let obj13;
   let obj7;
@@ -75,8 +75,8 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
   let str2;
   let style;
   let tmp12;
-  let tmp26Result;
-  let tmp28;
+  let tmp27Result;
+  let tmp29;
   let tmp4Result3;
   let tmp4Result4;
   ({ active, onPress } = arg0);
@@ -101,7 +101,7 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
   const obj3 = onPress(lockedEmojis[10]);
   const tmp7 = closure_12(token, (token1 - token) / 2 + obj3.useToken(unlockedEmojis(lockedEmojis[8]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL));
   const obj4 = onPress(lockedEmojis[11]);
-  const emojiSuggestionBarState = obj4.useEmojiSuggestionBarState(merged, onPress(lockedEmojis[11]).MAX_SUGGESTIONS_LARGE, 1, ref);
+  const emojiSuggestionBarState = obj4.useEmojiSuggestionBarState(merged, onPress(lockedEmojis[11]).MAX_SUGGESTIONS_LARGE, 0, ref);
   unlockedEmojis = emojiSuggestionBarState.unlockedEmojis;
   lockedEmojis = emojiSuggestionBarState.lockedEmojis;
   const handlePress = emojiSuggestionBarState.handlePress;
@@ -198,6 +198,7 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
     gesture2 = context1.gesture;
   }
   const items3 = [first, callback1, gesture, gesture1, gesture2];
+  const items4 = [onPress, unlockedEmojis, lockedEmojis];
   const memo = obj6.useMemo(() => {
     const items = [gesture, gesture1, gesture2];
     const found = items.filter((item) => null != item);
@@ -219,29 +220,33 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
     fn.__initData = __initData2;
     return failOffsetYResult.onStart(fn);
   }, items3);
+  const callback2 = obj6.useCallback((arg0) => {
+    const obj = { unlocked: unlockedEmojis, locked: lockedEmojis };
+    onPress(arg0, obj);
+  }, items4);
   const obj5 = { gesture: memo, children: gesture1(dismissCoachmark, obj7) };
-  obj7 = { style: tmp7.swipeArea, children: tmp28(dismissCoachmark, obj8) };
-  obj8 = { ref: ref1, collapsable: false, style: items4, children: items5 };
-  items4 = [tmp7.wrapper, style];
+  obj7 = { style: tmp7.swipeArea, children: tmp29(dismissCoachmark, obj8) };
+  obj8 = { ref: ref1, collapsable: false, style: items5, children: items6 };
+  items5 = [tmp7.wrapper, style];
   const GestureDetector = tmp2(tmp3[17]).GestureDetector;
-  const obj9 = { style: animatedStyle1, pointerEvents: str, children: gesture1(tmp4(tmp3[18]), { active, showKeyboardIcon, onPress }) };
+  const obj9 = { style: animatedStyle1, pointerEvents: str, children: gesture1(tmp4(tmp3[18]), { active, showKeyboardIcon, onPress: callback2 }) };
   str = "auto";
   const View = tmp4(tmp3[13]).View;
-  tmp28 = gesture2;
+  tmp29 = gesture2;
   if (null != tmp12) {
     str = "none";
   }
-  items5 = [gesture1(View, obj9), ];
-  let tmp26Result2 = null != tmp12;
-  if (tmp26Result2) {
-    const obj10 = { style: items6, pointerEvents: str2, children: gesture1(PressableOpacity, obj11) };
-    items6 = [tmp7.glyphOverlay, animatedStyle];
+  items6 = [gesture1(View, obj9), ];
+  let tmp27Result2 = null != tmp12;
+  if (tmp27Result2) {
+    const obj10 = { style: items7, pointerEvents: str2, children: gesture1(PressableOpacity, obj11) };
+    items7 = [tmp7.glyphOverlay, animatedStyle];
     str2 = "none";
     const View2 = tmp4(tmp3[13]).View;
     if (null != first) {
       str2 = "auto";
     }
-    obj11 = { style: tmp7.glyphButton, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(tmp3[20]).t.iZ7Mz9), onPress: callback, children: tmp26Result };
+    obj11 = { style: tmp7.glyphButton, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(tmp3[20]).t.iZ7Mz9), onPress: callback, children: tmp27Result };
     PressableOpacity = tmp2(tmp3[19]).PressableOpacity;
     intl = tmp2(tmp3[20]).intl;
     if (null != tmp12.id) {
@@ -255,13 +260,13 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
       }
       obj13 = { uri: tmp4Result4(tmp12, false, token - tmp4(tmp3[8]).space.PX_8) };
       tmp4Result4 = tmp4(tmp3[25]);
-      tmp26Result = tmp26(tmp4Result, obj12);
+      tmp27Result = tmp27(tmp4Result, obj12);
     } else {
       const obj14 = { allowFontScaling: false, style: tmp7.surrogates, children: tmp12.surrogates };
-      tmp26Result = tmp26(tmp2(tmp3[26]).LegacyText, obj14);
+      tmp27Result = tmp27(tmp2(tmp3[26]).LegacyText, obj14);
     }
-    tmp26Result2 = tmp26(View2, obj10);
+    tmp27Result2 = tmp27(View2, obj10);
   }
-  items5[1] = tmp26Result2;
+  items6[1] = tmp27Result2;
   return gesture1(GestureDetector, obj5);
 };

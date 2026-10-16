@@ -1,16 +1,16 @@
-// Module ID: 6414
-// Function ID: 6415
+// Module ID: 6416
+// Function ID: 6417
 // Name: UserVerification
-// Dependencies: [19, 21, 5151, 558, 576, 4998, 6415, 1126, 5147, 2]
+// Dependencies: [19, 21, 5153, 558, 576, 5001, 6417, 1128, 5149, 2]
 
-// Module 6414 (UserVerification)
+// Module 6416 (UserVerification)
 import react2 from "react" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6415 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5001 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6417 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,11 +52,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
       if (cResult[5] !== platform) {
         let stringResult;
         if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
-          const intl2 = tmp(1126).intl;
-          stringResult = intl2.string(tmp(1126).t["jMh+TY"]);
+          const intl2 = tmp(1128).intl;
+          stringResult = intl2.string(tmp(1128).t["jMh+TY"]);
         } else {
-          const intl = tmp(1126).intl;
-          stringResult = intl.string(tmp(1126).t.Vgv9ip);
+          const intl = tmp(1128).intl;
+          stringResult = intl.string(tmp(1128).t.Vgv9ip);
         }
         cResult[5] = platform;
         cResult[6] = stringResult;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
       cResult[9] = tmp20;
       tmp18 = tmp20;
     }
-    let tmp6 = platform === tmp(4998).UserVerificationFieldPlatforms.PHONE;
+    let tmp6 = platform === tmp(5001).UserVerificationFieldPlatforms.PHONE;
     if (tmp6) {
       const obj5 = { passesVerification: verification[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE], platform: MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE };
       const tmp9 = IdentityVerificationFieldDefault;
@@ -127,14 +127,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(5147).Text;
+    const Text = tmp12(5149).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
-      const intl2 = tmp12(1126).intl;
-      stringResult = intl2.string(tmp12(1126).t["jMh+TY"]);
+      const intl2 = tmp12(1128).intl;
+      stringResult = intl2.string(tmp12(1128).t["jMh+TY"]);
     } else {
-      const intl = tmp12(1126).intl;
-      stringResult = intl.string(tmp12(1126).t.Vgv9ip);
+      const intl = tmp12(1128).intl;
+      stringResult = intl.string(tmp12(1128).t.Vgv9ip);
     }
     const obj4 = { children: items };
     items[2] = tmp6(Text, obj3);

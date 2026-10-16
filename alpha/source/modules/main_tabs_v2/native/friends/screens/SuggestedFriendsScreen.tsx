@@ -1,17 +1,17 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17846
+// Function ID: 17847
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 7073, 7098, 1265, 17063, 17801, 8522, 17805, 10449, 10446, 12601, 1126, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 7075, 7100, 1267, 17097, 17835, 8530, 17839, 10465, 10462, 12624, 1128, 2]
 
-// Module 17812 (SuggestedFriendsScreen)
+// Module 17846 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 17805 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 17839 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFri
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F157392 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F157868 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }

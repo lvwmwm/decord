@@ -1,12 +1,12 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11423
+// Function ID: 11424
 // Name: coercePlatformTypeToConsoleType
-// Dependencies: [9443, 1085, 2]
+// Dependencies: [9459, 1087, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 11403 (coercePlatformTypeToConsoleType)
-import Constants from "Constants" /* 1085 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9443 */;
+// Module 11423 (coercePlatformTypeToConsoleType)
+import Constants from "Constants" /* 1087 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9459 */;
 import size from "module_2" /* 2 */;
 
 const GameConsoleTypes = GameConsoleConstants.GameConsoleTypes;

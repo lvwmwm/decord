@@ -1,15 +1,15 @@
-// Module ID: 16504
-// Function ID: 16505
+// Module ID: 16537
+// Function ID: 16538
 // Name: AppVersionSetting
-// Dependencies: [1381, 1126, 16505, 10991, 10395, 2041, 2]
+// Dependencies: [1383, 1128, 16538, 11006, 10411, 2044, 2]
 
-// Module 16504 (AppVersionSetting)
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import ClydeIcon from "ClydeIcon" /* 10395 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 16505 */;
-import react_native from "react-native" /* 1381 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+// Module 16537 (AppVersionSetting)
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import ClydeIcon from "ClydeIcon" /* 10411 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 16538 */;
+import react_native from "react-native" /* 1383 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const constants = react_native.getConstants();

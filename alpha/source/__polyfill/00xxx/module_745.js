@@ -1,7 +1,7 @@
 // Module ID: 745
 // Function ID: 746
 // Dependencies: [5, 724, 746, 699, 700, 706, 714, 703, 742, 697, 721]
-// Exports: addEventProcessor, captureEvent, captureException, captureMessage, captureSession, close, endSession, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
+// Exports: addEventProcessor, captureEvent, captureException, captureMessage, captureSession, close, endSession, flush, isEnabled, isInitialized, lastEventId, setContext, setConversationId, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 745
 import _mod697 from "module_697" /* 697 */;
@@ -263,6 +263,11 @@ export const setContext = function setContext(arg0, arg1) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setContext(arg0, arg1);
+};
+export const setConversationId = function setConversationId(arg0) {
+  obj = _mod724;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setConversationId(arg0);
 };
 export const setExtra = function setExtra(arg0, arg1) {
   obj = _mod724;

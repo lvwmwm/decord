@@ -1,18 +1,18 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14844
+// Function ID: 14845
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 8835, 21, 5151, 587, 558, 576, 8836, 8837, 5115, 14812, 5147, 1126, 5439, 6947, 7060, 7118, 2]
+// Dependencies: [19, 17, 8843, 21, 5153, 587, 558, 576, 8844, 8845, 5118, 14845, 5149, 1128, 5441, 6949, 7062, 7120, 2]
 
-// Module 14811 (ServerTagPreviewActionSheet)
+// Module 14844 (ServerTagPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import GuildProfileStore from "GuildProfileStore" /* 8835 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8837 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14812 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import GuildProfileStore from "GuildProfileStore" /* 8843 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8845 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14845 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   const cResult = obj.c(21);
   guildId = guildId.guildId;
   const tmp4 = closure_8();
-  const obj2 = guildId(8836);
+  const obj2 = guildId(8844);
   const guildProfile1 = obj2.useGuildProfile(guildId);
   ({ guildProfile, fetchStatus } = guildProfile1);
   if (cResult[0] !== guildId) {
@@ -103,9 +103,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
     const _Symbol2 = Symbol;
     const error = tmp4.error;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { variant: "text-md/medium", color: "text-muted", children: intl.string(guildId(1126).t.tmGHjc) };
-      const Text = tmp(5147).Text;
-      intl = tmp(1126).intl;
+      const obj4 = { variant: "text-md/medium", color: "text-muted", children: intl.string(guildId(1128).t.tmGHjc) };
+      const Text = tmp(5149).Text;
+      intl = tmp(1128).intl;
       const tmp16 = closure_6(Text, obj4);
       cResult[10] = tmp16;
       tmp14 = tmp16;
@@ -114,8 +114,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
     }
     const _Symbol3 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
-      const stringResult = intl2.string(guildId(1126).t["5911Lb"]);
+      const intl2 = tmp(1128).intl;
+      const stringResult = intl2.string(guildId(1128).t["5911Lb"]);
       cResult[11] = stringResult;
       tmp17 = stringResult;
     } else {
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
               return obj.getGuildProfile(guildId, true);
             }
       };
-      const tmp21 = closure_6(guildId(5439).Button, obj5);
+      const tmp21 = closure_6(guildId(5441).Button, obj5);
       cResult[12] = guildId;
       cResult[13] = tmp21;
       tmp19 = tmp21;
@@ -154,7 +154,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   } else {
     const _Symbol = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = closure_6(guildId(6947).SceneLoadingIndicator, {});
+      const tmp12 = closure_6(guildId(6949).SceneLoadingIndicator, {});
       cResult[17] = tmp12;
       tmp10 = tmp12;
     } else {
@@ -162,9 +162,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
     }
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { title: intl3.string(guildId(1126).t["2QmKZ2"]) };
-    const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-    intl3 = tmp(1126).intl;
+    const obj8 = { title: intl3.string(guildId(1128).t["2QmKZ2"]) };
+    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    intl3 = tmp(1128).intl;
     const tmp34 = closure_6(BottomSheetTitleHeader, obj8);
     cResult[18] = tmp34;
     tmp32 = tmp34;
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   if (cResult[19] !== tmp10) {
     const obj14 = { children: items2 };
     items2 = [tmp32, tmp10];
-    const tmp37 = closure_7(guildId(7118).ActionSheet, obj14);
+    const tmp37 = closure_7(guildId(7120).ActionSheet, obj14);
     cResult[19] = tmp10;
     cResult[20] = tmp37;
     tmp35 = tmp37;
@@ -192,7 +192,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   let tmp8;
   guildId = guildId.guildId;
   const tmp = closure_8();
-  let obj = guildId(8836);
+  let obj = guildId(8844);
   const guildProfile1 = obj.useGuildProfile(guildId);
   let guildProfile = guildProfile1.guildProfile;
   const items = [guildId];
@@ -220,32 +220,32 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
     tmp8 = closure_6;
   } else if (fetchStatus === GuildProfileFetchStatus.FETCHED) {
     const obj3 = { style: tmp.error, children: items1 };
-    const obj4 = { variant: "text-md/medium", color: "text-muted", children: intl.string(guildId(1126).t.tmGHjc) };
-    const Text = tmp2(5147).Text;
-    intl = tmp2(1126).intl;
+    const obj4 = { variant: "text-md/medium", color: "text-muted", children: intl.string(guildId(1128).t.tmGHjc) };
+    const Text = tmp2(5149).Text;
+    intl = tmp2(1128).intl;
     items1 = [closure_6(Text, obj4), ];
     const obj6 = {
       variant: "secondary",
-      text: intl2.string(guildId(1126).t["5911Lb"]),
+      text: intl2.string(guildId(1128).t["5911Lb"]),
       onPress() {
           const obj = GuildProfileActionCreators;
           return obj.getGuildProfile(guildId, true);
         }
     };
-    const Button = tmp2(5439).Button;
-    intl2 = tmp2(1126).intl;
+    const Button = tmp2(5441).Button;
+    intl2 = tmp2(1128).intl;
     items1[1] = closure_6(Button, obj6);
     tmp7 = closure_7(View, obj3);
     tmp8 = closure_6;
   } else {
-    tmp7 = closure_6(tmp2(6947).SceneLoadingIndicator, {});
+    tmp7 = closure_6(tmp2(6949).SceneLoadingIndicator, {});
     tmp8 = closure_6;
   }
   const obj7 = { children: items2 };
-  const ActionSheet = tmp2(7118).ActionSheet;
-  const obj13 = { title: intl3.string(guildId(1126).t["2QmKZ2"]) };
-  const BottomSheetTitleHeader = tmp2(7060).BottomSheetTitleHeader;
-  intl3 = tmp2(1126).intl;
+  const ActionSheet = tmp2(7120).ActionSheet;
+  const obj13 = { title: intl3.string(guildId(1128).t["2QmKZ2"]) };
+  const BottomSheetTitleHeader = tmp2(7062).BottomSheetTitleHeader;
+  intl3 = tmp2(1128).intl;
   items2 = [tmp8(BottomSheetTitleHeader, obj13), tmp7];
   return closure_7(ActionSheet, obj7);
 });

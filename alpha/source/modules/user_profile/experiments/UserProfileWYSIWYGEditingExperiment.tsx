@@ -1,12 +1,12 @@
-// Module ID: 10875
-// Function ID: 10876
+// Module ID: 10890
+// Function ID: 10891
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 10875 (UserProfileWYSIWYGEditingExperiment)
+// Module 10890 (UserProfileWYSIWYGEditingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

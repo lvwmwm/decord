@@ -1,12 +1,12 @@
-// Module ID: 11847
-// Function ID: 11848
+// Module ID: 11871
+// Function ID: 11872
 // Name: AppLauncherLastUsedCommandStore
-// Dependencies: [1102, 504, 584, 2]
+// Dependencies: [1104, 504, 584, 2]
 
-// Module 11847 (AppLauncherLastUsedCommandStore)
+// Module 11871 (AppLauncherLastUsedCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = 10 * DurationsDefault.Millis.MINUTE;

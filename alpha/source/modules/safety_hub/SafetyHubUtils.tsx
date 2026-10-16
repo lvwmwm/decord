@@ -1,18 +1,18 @@
-// Module ID: 7728
-// Function ID: 7729
+// Module ID: 7731
+// Function ID: 7732
 // Name: SafetyHubUtils
-// Dependencies: [502, 7729, 1085, 4758, 5479, 1126, 7730, 558, 576, 504, 2]
+// Dependencies: [502, 7732, 1087, 4761, 5481, 1128, 7733, 558, 576, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7728 (SafetyHubUtils)
+// Module 7731 (SafetyHubUtils)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1126 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5479 */;
-import SafetyHubModels from "SafetyHubModels" /* 7730 */;
+import intl5 from "intl" /* 1128 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5481 */;
+import SafetyHubModels from "SafetyHubModels" /* 7733 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7729 */;
-import Constants from "Constants" /* 1085 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7732 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspend
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4758();
-  return obj.to(_modDef4758(timestamp));
+  const obj = _modDef4761();
+  return obj.to(_modDef4761(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;

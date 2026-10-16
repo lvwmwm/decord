@@ -1,11 +1,11 @@
-// Module ID: 12049
-// Function ID: 12050
+// Module ID: 12073
+// Function ID: 12074
 // Name: conjureTipTurn
-// Dependencies: [10888, 2]
+// Dependencies: [10903, 2]
 // Exports: entryActivityAt, hasOpenAsk, newestSettledTurn
 
-// Module 12049 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 10888 */;
+// Module 12073 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 10903 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
@@ -26,7 +26,7 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(10888);
+                let tmp4Result = tmp4(10903);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }

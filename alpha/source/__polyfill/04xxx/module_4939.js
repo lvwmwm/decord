@@ -1,26 +1,26 @@
 // Module ID: 4939
 // Function ID: 4940
-// Dependencies: [32, 576, 4937]
-// Exports: useRiveString
+// Dependencies: [32, 576, 4940]
+// Exports: useRiveNumber
 
 // Module 4939
 import react from "react" /* 576 */;
-import _mod4937 from "module_4937" /* 4937 */;
+import _mod4940 from "module_4940" /* 4940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getStringProperty(stringProperty, arg1) {
-  return stringProperty.stringProperty(arg1);
+function getNumberProperty(numberProperty, arg1) {
+  return numberProperty.numberProperty(arg1);
 }
 
-export const useRiveString = function useRiveString(arg0, arg1) {
+export const useRiveNumber = function useRiveNumber(arg0, arg1) {
   let tmp3;
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(4);
-  const obj2 = _mod4937;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getStringProperty);
-  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getStringProperty), 3);
+  const obj2 = _mod4940;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getNumberProperty);
+  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getNumberProperty), 3);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
       let tmp6;

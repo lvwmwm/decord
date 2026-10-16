@@ -1,21 +1,21 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17134
+// Function ID: 17135
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2129, 13970, 21, 5151, 587, 1200, 558, 576, 4906, 573, 5438, 9234, 1901, 5147, 17101, 2]
+// Dependencies: [32, 19, 17, 2132, 14002, 21, 5153, 587, 1202, 558, 576, 4909, 573, 5440, 9247, 1903, 5149, 17135, 2]
 
-// Module 17100 (HappeningNowAvatarStack)
+// Module 17134 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import spring from "spring" /* 5438 */;
-import ClipView from "ClipView" /* 9234 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 13970 */;
+import native from "native" /* 1202 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import spring from "spring" /* 5440 */;
+import ClipView from "ClipView" /* 9247 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14002 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2129 */;
+import LocaleStore_mod from "LocaleStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
     num = userLimit;
   }
   if (undefined === avatarSize) {
-    avatarSize = tmp(1200).AvatarSizes.XSMALL_20;
+    avatarSize = tmp(1202).AvatarSizes.XSMALL_20;
   }
   let num2 = 2;
   if (undefined !== avatarBorderWidth) {
@@ -104,8 +104,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   let tmp7 = avatarSize(num2.useState(tmp6), 2);
   [tmp8, CHANNEL_SPRING_CONFIG] = tmp7;
   let num6 = 0;
-  const useSharedValue = tmp(4906).useSharedValue;
-  tmp(4906);
+  const useSharedValue = tmp(4909).useSharedValue;
+  tmp(4909);
   if (tmp4) {
     num6 = 1;
   }
@@ -128,7 +128,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   }
   const tmpResult3 = tmp(573);
   const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp12);
-  const tmpResult4 = tmp(4906);
+  const tmpResult4 = tmp(4909);
   class J {
     constructor() {
       let obj2;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
       return obj;
     }
   }
-  let obj3 = { interpolate: tmp(4906).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
+  let obj3 = { interpolate: tmp(4909).interpolate, typingValue: sharedValue, ELLIPSIS_WIDTH: 28 };
   J.__closure = obj3;
   J.__workletHash = 14140918847743;
   J.__initData = __initData;

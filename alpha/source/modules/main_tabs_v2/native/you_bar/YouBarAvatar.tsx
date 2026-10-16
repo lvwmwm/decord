@@ -1,27 +1,27 @@
-// Module ID: 17425
-// Function ID: 17426
+// Module ID: 17459
+// Function ID: 17460
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5140, 5975, 1390, 16023, 1085, 21, 5151, 587, 558, 576, 504, 1200, 4883, 4906, 6269, 9234, 5438, 4874, 9233, 8500, 5116, 7315, 2000, 6555, 2]
+// Dependencies: [5, 32, 19, 17, 5143, 5977, 1392, 16056, 1087, 21, 5153, 587, 558, 576, 504, 1202, 4886, 4909, 6271, 9247, 5440, 4877, 9246, 8508, 5119, 7317, 2002, 6557, 2]
 
-// Module 17425 (YouBarAvatar)
+// Module 17459 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import native2 from "native" /* 4883 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import spring from "spring" /* 5438 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import ClipView from "ClipView" /* 9234 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import native2 from "native" /* 4886 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import spring from "spring" /* 5440 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import ClipView from "ClipView" /* 9247 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
-import UserStore from "UserStore" /* 1390 */;
-import YouBarConstants from "YouBarConstants" /* 16023 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import UserStore from "UserStore" /* 1392 */;
+import YouBarConstants from "YouBarConstants" /* 16056 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -108,34 +108,34 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
   }
   const tmpResult10 = tmp(504);
   const stateFromStores1 = tmpResult10.useStateFromStores(tmp9, tmp10);
-  const result = tmp(1200).AVATAR_SIZE_MAP[closure_13] / closure_20;
+  const result = tmp(1202).AVATAR_SIZE_MAP[closure_13] / closure_20;
   dependencyMap = result;
-  const result1 = (closure_20 - tmp(1200).AVATAR_SIZE_MAP[closure_13]) / 2;
-  const tmp16 = transitionState === tmp(4883).TransitionStates.MOUNTED;
+  const result1 = (closure_20 - tmp(1202).AVATAR_SIZE_MAP[closure_13]) / 2;
+  const tmp16 = transitionState === tmp(4886).TransitionStates.MOUNTED;
   let num5 = 0;
-  const useSharedValue = tmp(4906).useSharedValue;
-  tmp(4906);
+  const useSharedValue = tmp(4909).useSharedValue;
+  tmp(4909);
   if (tmp16) {
     num5 = 1;
   }
   const sharedValue = useSharedValue(num5);
   let num6 = 1;
-  const useSharedValue2 = tmp(4906).useSharedValue;
-  tmp(4906);
+  const useSharedValue2 = tmp(4909).useSharedValue;
+  tmp(4909);
   if (!tmp16) {
     num6 = result;
   }
   const sharedValue2 = useSharedValue2(num6);
-  const useSharedValue3 = tmp(4906).useSharedValue;
-  tmp(4906);
+  const useSharedValue3 = tmp(4909).useSharedValue;
+  tmp(4909);
   if (tmp16) {
     tmp22 = -closure_17;
   } else {
     tmp22 = -result1;
   }
   const sharedValue3 = useSharedValue3(tmp22);
-  const useSharedValue4 = tmp(4906).useSharedValue;
-  tmp(4906);
+  const useSharedValue4 = tmp(4909).useSharedValue;
+  tmp(4909);
   if (tmp16) {
     diff = -closure_17 - (tmp13 - closure_15) / 2;
   } else {
@@ -186,7 +186,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
           }
           if (null != OFFLINE) {
             const result2 = closure_16 / 2;
-            const sum = result2 + tmp(1200).STATUS_PADDING;
+            const sum = result2 + tmp(1202).STATUS_PADDING;
             class K {
               constructor() {
                 return AccessibilityStore.animateYouBarAvatarDeco;
@@ -238,16 +238,16 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouBar
             ({ transitionState, TransitionStates: native2.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanup });
             return rect;
           }
-          let rect = { withSpring: tmp(5438).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4883).TransitionStates, runOnJS: tmp(4906).runOnJS, cleanup };
-          const useAnimatedStyle = tmp(4906).useAnimatedStyle;
-          tmp(4906);
+          let rect = { withSpring: tmp(5440).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4886).TransitionStates, runOnJS: tmp(4909).runOnJS, cleanup };
+          const useAnimatedStyle = tmp(4909).useAnimatedStyle;
+          tmp(4909);
           et.__closure = rect;
           et.__workletHash = 15831722009842;
           et.__initData = __initData;
           const animatedStyle = useAnimatedStyle(et);
-          const tmpResult17 = tmp(4874);
+          const tmpResult17 = tmp(4877);
           const token = tmpResult17.useToken(cleanup(587).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-          const tmpResult18 = tmp(4874);
+          const tmpResult18 = tmp(4877);
           const token1 = tmpResult18.useToken(cleanup(587).colors.BORDER_SUBTLE);
           if (null == stateFromStores1) {
             return null;

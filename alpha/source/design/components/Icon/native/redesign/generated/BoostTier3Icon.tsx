@@ -1,14 +1,14 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14518
+// Function ID: 14519
 // Name: BoostTier3Icon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14487, 4873, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14519, 4876, 2]
 
-// Module 14486 (BoostTier3Icon)
+// Module 14518 (BoostTier3Icon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4873 */;
-import AssetRegistry from "AssetRegistry" /* 14487 */;
+import BaseIconImage2 from "BaseIconImage" /* 4876 */;
+import AssetRegistry from "AssetRegistry" /* 14519 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostTier3
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4873).BaseIconImage;
+  const BaseIconImage = tmp(4876).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

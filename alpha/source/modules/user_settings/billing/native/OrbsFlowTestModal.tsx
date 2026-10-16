@@ -1,27 +1,27 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16690
+// Function ID: 16691
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 109, 19, 17, 21, 9565, 558, 576, 6908, 9518, 9855, 5151, 587, 5147, 16658, 5437, 5115, 13630, 2000, 1126, 6506, 5439, 13620, 13629, 6885, 16660, 7067, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9581, 558, 576, 6910, 9534, 9871, 5153, 587, 5149, 16691, 5439, 5118, 13656, 2002, 1128, 6508, 5441, 13646, 13655, 6887, 16693, 7069, 2]
 
-// Module 16657 (OrbsFlowTestModal)
+// Module 16690 (OrbsFlowTestModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Stack_Stack from "Stack/Stack" /* 5437 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6885 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9855 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16658 */;
+import intl3 from "intl" /* 1128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Stack_Stack from "Stack/Stack" /* 5439 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6887 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9871 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16691 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9565 */;
+import NativeStackView from "NativeStackView" /* 9581 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,8 +36,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp6;
-const LayerScope2 = tmp(7067);
-const OrbCheckoutMenuDefault = tmp6(16660);
+const LayerScope2 = tmp(7069);
+const OrbCheckoutMenuDefault = tmp6(16693);
 function BalanceWidgetPillSection() {
   let balance;
   let closure_1;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsFlowTest
   let tmp9;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(6908);
+  let obj2 = accessibilityNativeStackOptions(6910);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n(navigation) {

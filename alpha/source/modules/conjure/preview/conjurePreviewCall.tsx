@@ -1,12 +1,13 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10955
+// Function ID: 10956
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 10940 (conjurePreviewCall)
+// Module 10955 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
+let closure_0 = ["conjure-", "vibegrations-"];
 class PreviewFrameCallTimeout extends Error {
   constructor(c0, timeoutMs) {
     const tmp2 = new tmp("preview frame did not answer " + c0 + " within " + timeoutMs + "ms", " within ");
@@ -17,14 +18,23 @@ class PreviewFrameCallTimeout extends Error {
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewCall.tsx");
 
 export const previewCallTypes = function previewCallTypes(arg0) {
-  const combined = "vibegrations-" + arg0;
-  const obj = { request: combined, result: "" + combined + "-result", ack: "" + combined + "-ack" };
+  closure_0 = arg0;
+  const mapped = closure_0.map((item) => "" + item + closure_0);
+  const obj = { requests: mapped, results: mapped.map((item) => "" + item + "-result"), acks: mapped.map((item) => "" + item + "-ack") };
   return obj;
 };
-export const isResultEnvelope = function isResultEnvelope(parsed, ack, id) {
+export const isResultEnvelope = function isResultEnvelope(parsed, acks, id) {
   if (typeof parsed === "object") {
     if (null != parsed) {
-      return parsed.type === ack && parsed.id === id;
+      const type = parsed.type;
+      let hasItem = typeof type === "string";
+      if (typeof type === "string") {
+        hasItem = acks.includes(parsed.type);
+      }
+      if (hasItem) {
+        hasItem = parsed.id === id;
+      }
+      return hasItem;
     }
   }
   return false;

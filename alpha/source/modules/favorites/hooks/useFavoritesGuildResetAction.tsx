@@ -1,19 +1,19 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17191
+// Function ID: 17192
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4995, 1085, 558, 576, 2041, 10546, 2090, 1112, 10545, 1126, 3444, 2]
+// Dependencies: [19, 4998, 1087, 558, 576, 2044, 10561, 2093, 1114, 10560, 1128, 3447, 2]
 
-// Module 17157 (useFavoritesGuildResetAction)
+// Module 17191 (useFavoritesGuildResetAction)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import router_utils from "router_utils" /* 1112 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import _modDef3444 from "module_3444" /* 3444 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10545 */;
-import FavoritesHooks from "FavoritesHooks" /* 10546 */;
+import Constants from "Constants" /* 1087 */;
+import router_utils from "router_utils" /* 1114 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import _modDef3447 from "module_3447" /* 3447 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10560 */;
+import FavoritesHooks from "FavoritesHooks" /* 10561 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,10 +49,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     setting = hasAccess;
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3444.YkET6R);
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef3444.ZzcwNk);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(_modDef3447.YkET6R);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(_modDef3447.ZzcwNk);
     cResult[1] = stringResult;
     cResult[2] = stringResult1;
     tmp7 = stringResult1;
@@ -90,9 +90,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   if (setting) {
     setting = hasAccess;
   }
-  const obj2 = { isAvailable: setting, label: intl.string(_modDef3444.YkET6R), subLabel: intl2.string(_modDef3444.ZzcwNk), perform: callback };
-  intl = tmp(1126).intl;
-  intl2 = tmp(1126).intl;
+  const obj2 = { isAvailable: setting, label: intl.string(_modDef3447.YkET6R), subLabel: intl2.string(_modDef3447.ZzcwNk), perform: callback };
+  intl = tmp(1128).intl;
+  intl2 = tmp(1128).intl;
   return obj2;
 });
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");

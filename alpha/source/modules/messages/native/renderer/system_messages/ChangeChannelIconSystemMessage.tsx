@@ -1,20 +1,20 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8221
+// Function ID: 8222
 // Name: ChangeChannelIconSystemMessage
-// Dependencies: [2065, 8189, 8196, 8198, 8200, 1126, 8203, 2]
+// Dependencies: [2068, 8192, 8199, 8201, 8203, 1128, 8206, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 8218 (ChangeChannelIconSystemMessage)
-import intl3 from "intl" /* 1126 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8189 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8196 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8198 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8203 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+// Module 8221 (ChangeChannelIconSystemMessage)
+import intl3 from "intl" /* 1128 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8192 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8199 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8201 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8206 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const createCommonMessageDefault = tmp2(8200);
+const createCommonMessageDefault = tmp2(8203);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
 
 export const createChangeChannelIconSystemMessage = function createChangeChannelIconSystemMessage(message) {
@@ -42,9 +42,9 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     flag = false;
   }
   const tmp9 = createCommonMessageDefault(message);
-  const intl = tmp5(1126).intl;
+  const intl = tmp5(1128).intl;
   const formatToParts = intl.formatToParts;
-  const t = tmp5(1126).t;
+  const t = tmp5(1128).t;
   if (flag) {
     let linkColor;
     const hfeYXC = t.hfeYXC;
@@ -70,7 +70,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     items = [];
     const obj7 = { label: intl2.string(intl3.t["5Q9+/L"]), name: MessageAccessibilityActions.MessageAccessibilityAction.EDIT_GDM };
     const arraySpreadResult = HermesBuiltin.arraySpread(items, accessibilityActions, 0);
-    intl2 = tmp5(1126).intl;
+    intl2 = tmp5(1128).intl;
     items[arraySpreadResult] = obj7;
     tmp13 = obj6;
   }

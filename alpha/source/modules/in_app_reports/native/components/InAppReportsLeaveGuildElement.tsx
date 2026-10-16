@@ -1,21 +1,21 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14274
+// Function ID: 14275
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1085, 21, 558, 576, 8855, 5166, 5360, 1126, 5458, 11290, 14237, 2]
+// Dependencies: [32, 19, 1087, 21, 558, 576, 8863, 5168, 5362, 1128, 5460, 11310, 14269, 2]
 
-// Module 14242 (InAppReportsLeaveGuildElement)
+// Module 14274 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AlertDefault = tmp(5458);
+const AlertDefault = tmp(5460);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -157,8 +157,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveGuild
         if (guild != null) {
           name = guild.name;
         }
-        intl3 = tmp4(1126).intl;
-        intl4 = tmp4(1126).intl;
+        intl3 = tmp4(1128).intl;
+        intl4 = tmp4(1128).intl;
         show(obj);
       }
       cResult[7] = name4;
@@ -245,8 +245,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveGuild
       if (guild != null) {
         name = guild.name;
       }
-      intl3 = tmp4(1126).intl;
-      intl4 = tmp4(1126).intl;
+      intl3 = tmp4(1128).intl;
+      intl4 = tmp4(1128).intl;
       show(obj);
     },
     icon: tmp5(tmp8(reportId[11]).DoorExitIcon, { color: "text-feedback-critical" })

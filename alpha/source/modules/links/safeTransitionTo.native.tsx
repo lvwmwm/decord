@@ -1,17 +1,17 @@
-// Module ID: 7168
-// Function ID: 7169
+// Module ID: 7170
+// Function ID: 7171
 // Name: safeTransitionTo
-// Dependencies: [5, 2087, 1085, 5482, 7169, 1112, 7170, 5360, 1126, 7204, 2702, 7252, 7258, 2]
+// Dependencies: [5, 2090, 1087, 5484, 7171, 1114, 7172, 5362, 1128, 7206, 2705, 7254, 7260, 2]
 // Exports: default
 
-// Module 7168 (safeTransitionTo)
-import Constants from "Constants" /* 1085 */;
-import router_utils from "router_utils" /* 1112 */;
-import LinkUtils from "LinkUtils" /* 5482 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7169 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7170 */;
+// Module 7170 (safeTransitionTo)
+import Constants from "Constants" /* 1087 */;
+import router_utils from "router_utils" /* 1114 */;
+import LinkUtils from "LinkUtils" /* 5484 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7171 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;

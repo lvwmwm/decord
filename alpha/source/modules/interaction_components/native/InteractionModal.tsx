@@ -1,29 +1,29 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18452
+// Function ID: 18453
 // Name: InteractionModal
-// Dependencies: [19, 17, 15307, 21, 5151, 587, 6150, 558, 576, 18411, 6885, 1415, 1200, 5147, 1126, 6428, 6405, 7784, 18412, 8467, 5439, 2]
+// Dependencies: [19, 17, 15342, 21, 5153, 587, 6152, 558, 576, 18453, 6887, 1417, 1202, 5149, 1128, 6430, 6407, 7787, 18454, 8475, 5441, 2]
 // Exports: openInteractionModal
 
-// Module 18410 (InteractionModal)
+// Module 18452 (InteractionModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import Pressables from "Pressables" /* 6405 */;
-import XSmallIcon from "XSmallIcon" /* 6428 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6885 */;
-import InlineNotice2 from "InlineNotice" /* 7784 */;
-import ComponentStateContext from "ComponentStateContext" /* 8467 */;
-import InteractionModalStore from "InteractionModalStore" /* 15307 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 18411 */;
-import renderComponents from "renderComponents" /* 18412 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import Pressables from "Pressables" /* 6407 */;
+import XSmallIcon from "XSmallIcon" /* 6430 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6887 */;
+import InlineNotice2 from "InlineNotice" /* 7787 */;
+import ComponentStateContext from "ComponentStateContext" /* 8475 */;
+import InteractionModalStore from "InteractionModalStore" /* 15342 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 18453 */;
+import renderComponents from "renderComponents" /* 18454 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj6;
 let obj7;
 let obj8;
 let tmp8;
-const AvatarUtilsDefault = tmp8(1415);
+const AvatarUtilsDefault = tmp8(1417);
 function onClose() {
   const obj = ModalActionCreatorsDefault;
   return obj.popWithKey(interaction_modal);
@@ -138,7 +138,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
           }
           const _Symbol = Symbol;
           if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const stringResult = intl.string(intl4.t.cpT0Cq);
             cResult[17] = stringResult;
             tmp23 = stringResult;
@@ -174,7 +174,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
                       tmp37 = cResult[30];
                     }
                     if (cResult[31] !== applicationName) {
-                      const intl2 = tmp(1126).intl;
+                      const intl2 = tmp(1128).intl;
                       const obj6 = { applicationName };
                       const formatResult = intl2.format(intl4.t["dSTy/w"], obj6);
                       cResult[31] = applicationName;
@@ -184,7 +184,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
                       tmp42 = cResult[32];
                     }
                     if (cResult[33] !== tmp42) {
-                      const obj7 = { type: "warning", message: tmp42, role: "static" };
+                      const obj7 = { type: "warning", message: tmp42, role: "none" };
                       const tmp46 = metroRequire(InlineNotice2.InlineNotice, obj7);
                       cResult[33] = tmp42;
                       cResult[34] = tmp46;
@@ -219,7 +219,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
                               const _Symbol2 = Symbol;
                               const footer = tmp4.footer;
                               if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
-                                const intl3 = tmp(1126).intl;
+                                const intl3 = tmp(1128).intl;
                                 const stringResult1 = intl3.string(intl4.t.geKm7t);
                                 cResult[46] = stringResult1;
                                 tmp56 = stringResult1;
@@ -352,7 +352,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
         tmp19 = tmp22;
       }
       const obj19 = { style: icon, source: tmp11, size: native.AvatarSizes.SMALL };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       const tmp15 = metroRequire(Avatar, obj19);
       cResult[9] = tmp4.icon;
       cResult[10] = tmp11;
@@ -428,19 +428,19 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
   }
   const obj12 = { children: items3 };
   items3 = [tmp7Result, ];
-  const obj13 = { type: "warning", message: intl2.format(intl4.t["dSTy/w"], { applicationName }), role: "static" };
-  const InlineNotice = tmp2(7784).InlineNotice;
-  intl2 = tmp2(1126).intl;
+  const obj13 = { type: "warning", message: intl2.format(intl4.t["dSTy/w"], { applicationName }), role: "none" };
+  const InlineNotice = tmp2(7787).InlineNotice;
+  intl2 = tmp2(1128).intl;
   items3[1] = metroRequire(InlineNotice, obj13);
   items4 = [metroImportDefault(_false, obj12), , ];
   const obj14 = { modal, validators, validationErrors, setValidationErrors, children: tmp2Result.renderComponents(components) };
-  const ComponentStateContextProvider = tmp2(8467).ComponentStateContextProvider;
+  const ComponentStateContextProvider = tmp2(8475).ComponentStateContextProvider;
   tmp2Result = renderComponents;
   items4[1] = metroRequire(ComponentStateContextProvider, obj14);
   const obj15 = { style: tmp.footer, children: metroRequire(Button, obj16) };
   obj16 = { text: intl3.string(intl4.t.geKm7t), loading: submissionState === InteractionModalState.IN_FLIGHT, size: "lg", onPress: onSubmit };
-  Button = tmp2(5439).Button;
-  intl3 = tmp2(1126).intl;
+  Button = tmp2(5441).Button;
+  intl3 = tmp2(1128).intl;
   items4[2] = metroRequire(_false, obj15);
   items2[1] = metroImportDefault(tmp8, obj9);
   return metroImportDefault(_false, obj2);

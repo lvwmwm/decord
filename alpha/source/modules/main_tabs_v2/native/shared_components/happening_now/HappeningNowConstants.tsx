@@ -1,10 +1,10 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16270
+// Function ID: 16271
 // Name: HappeningNowConstants
-// Dependencies: [1200, 2]
+// Dependencies: [1202, 2]
 
-// Module 16237 (HappeningNowConstants)
-import native from "native" /* 1200 */;
+// Module 16270 (HappeningNowConstants)
+import native from "native" /* 1202 */;
 import size from "module_2" /* 2 */;
 
 const obj = { padding: native.STATUS_PADDING - 1 };

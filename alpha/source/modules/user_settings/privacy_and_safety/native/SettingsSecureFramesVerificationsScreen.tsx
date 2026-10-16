@@ -1,18 +1,18 @@
-// Module ID: 16849
-// Function ID: 16850
+// Module ID: 16882
+// Function ID: 16883
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1390, 21, 5151, 558, 576, 9046, 1126, 6428, 6405, 6400, 5147, 6903, 1503, 504, 5018, 9518, 16845, 7034, 2]
+// Dependencies: [19, 17, 1392, 21, 5153, 558, 576, 9054, 1128, 6430, 6407, 6402, 5149, 6905, 1505, 504, 5021, 9534, 16878, 7036, 2]
 
-// Module 16849 (SettingsSecureFramesVerificationsScreen)
+// Module 16882 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9046 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9054 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import createStyles from "createStyles" /* 5151 */;
+import UserStore from "UserStore" /* 1392 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ function VerificationListItem(verification) {
         tmp12 = cResult[2];
       }
       if (cResult[3] !== verification2.timestamp) {
-        const tmp9Result = userId(9046);
+        const tmp9Result = userId(9054);
         const secureFramesUserVerifiedTimestamp = tmp9Result.getSecureFramesUserVerifiedTimestamp(verification2.timestamp);
         cResult[3] = verification2.timestamp;
         cResult[4] = secureFramesUserVerifiedTimestamp;
@@ -54,9 +54,9 @@ function VerificationListItem(verification) {
         tmp13 = cResult[4];
       }
       if (cResult[5] !== index2) {
-        const intl2 = tmp9(1126).intl;
+        const intl2 = tmp9(1128).intl;
         const obj2 = { index: index2 };
-        const formatToPlainStringResult = intl2.formatToPlainString(userId(1126).t.N4qBBO, obj2);
+        const formatToPlainStringResult = intl2.formatToPlainString(userId(1128).t.N4qBBO, obj2);
         cResult[5] = index2;
         cResult[6] = formatToPlainStringResult;
         tmp15 = formatToPlainStringResult;
@@ -65,14 +65,14 @@ function VerificationListItem(verification) {
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp20 = jsx(userId(6428).XSmallIcon, {});
+        const tmp20 = jsx(userId(6430).XSmallIcon, {});
         cResult[7] = tmp20;
         tmp18 = tmp20;
       } else {
         tmp18 = cResult[7];
       }
       if (cResult[8] !== tmp12) {
-        const tmp23 = jsx(userId(6405).PressableHighlight, { onPress: tmp12, children: tmp18 });
+        const tmp23 = jsx(userId(6407).PressableHighlight, { onPress: tmp12, children: tmp18 });
         cResult[8] = tmp12;
         cResult[9] = tmp23;
         tmp21 = tmp23;
@@ -92,7 +92,7 @@ function VerificationListItem(verification) {
           }
         }
       }
-      const tmp26 = jsx(userId(6400).TableRow, { label: tmp15, subLabel: tmp13, start: start2, end: end2, trailing: tmp21 });
+      const tmp26 = jsx(userId(6402).TableRow, { label: tmp15, subLabel: tmp13, start: start2, end: end2, trailing: tmp21 });
       cResult[10] = end2;
       cResult[11] = start2;
       cResult[12] = tmp13;
@@ -123,11 +123,11 @@ function VerificationListItem(verification) {
       const obj = SecureFramesUtils;
       return obj.getSecureFramesUserVerifiedTimestamp(verification.timestamp);
     }, items1);
-    const TableRow = userId(6400).TableRow;
-    const intl = userId(1126).intl;
+    const TableRow = userId(6402).TableRow;
+    const intl = userId(1128).intl;
     const obj6 = { index };
-    const PressableHighlight = userId(6405).PressableHighlight;
-    tmp8 = <TableRow label={intl.formatToPlainString(userId(1126).t.N4qBBO, obj6)} subLabel={memo} start={start} end={end} trailing={null} />;
+    const PressableHighlight = userId(6407).PressableHighlight;
+    tmp8 = <TableRow label={intl.formatToPlainString(userId(1128).t.N4qBBO, obj6)} subLabel={memo} start={start} end={end} trailing={null} />;
   }
   return tmp8;
 }
@@ -147,7 +147,7 @@ function SectionListItem(title) {
       }
       tmp7 = tmp13;
     }
-    const tmp15 = jsx(tmp8(5147).Text, { style: tmp12.section, variant: "text-sm/semibold", color: "text-default", children: title2 });
+    const tmp15 = jsx(tmp8(5149).Text, { style: tmp12.section, variant: "text-sm/semibold", color: "text-default", children: title2 });
     cResult[0] = tmp12.section;
     cResult[1] = title2;
     cResult[2] = tmp15;
@@ -210,25 +210,25 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearV
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5147).Text;
-    const intl = tmp(1126).intl;
-    const tmp7 = <Text variant="text-md/semibold" color="text-feedback-critical">{intl.string(userId(1126).t["2xL5lu"])}</Text>;
+    const Text = tmp(5149).Text;
+    const intl = tmp(1128).intl;
+    const tmp7 = <Text variant="text-md/semibold" color="text-feedback-critical">{intl.string(userId(1128).t["2xL5lu"])}</Text>;
     cResult[2] = tmp7;
     tmp5 = tmp7;
   } else {
     tmp5 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text2 = tmp(5147).Text;
-    const intl2 = tmp(1126).intl;
-    const tmp10 = <Text2 variant="text-xs/medium" color="text-subtle">{intl2.string(userId(1126).t.kgAfXN)}</Text2>;
+    const Text2 = tmp(5149).Text;
+    const intl2 = tmp(1128).intl;
+    const tmp10 = <Text2 variant="text-xs/medium" color="text-subtle">{intl2.string(userId(1128).t.kgAfXN)}</Text2>;
     cResult[3] = tmp10;
     tmp8 = tmp10;
   } else {
     tmp8 = cResult[3];
   }
   if (cResult[4] !== tmp4) {
-    const tmp13 = jsx(userId(6400).TableRow, { label: tmp5, subLabel: tmp8, onPress: tmp4, start: true, end: true });
+    const tmp13 = jsx(userId(6402).TableRow, { label: tmp5, subLabel: tmp8, onPress: tmp4, start: true, end: true });
     cResult[4] = tmp4;
     cResult[5] = tmp13;
     tmp11 = tmp13;
@@ -245,13 +245,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearV
     const obj = SecureFramesUtils;
     const result = obj.deleteUserPersistentVerifications(userId);
   }, items);
-  const TableRow = userId(6400).TableRow;
-  ({ variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1126).t["2xL5lu"]) });
-  const Text = userId(5147).Text;
-  intl = userId(1126).intl;
-  ({ variant: "text-xs/medium", color: "text-subtle", children: intl2.string(userId(1126).t.kgAfXN) });
-  const Text2 = userId(5147).Text;
-  intl2 = userId(1126).intl;
+  const TableRow = userId(6402).TableRow;
+  ({ variant: "text-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1128).t["2xL5lu"]) });
+  const Text = userId(5149).Text;
+  intl = userId(1128).intl;
+  ({ variant: "text-xs/medium", color: "text-subtle", children: intl2.string(userId(1128).t.kgAfXN) });
+  const Text2 = userId(5149).Text;
+  intl2 = userId(1128).intl;
   return <TableRow label={null} subLabel={null} onPress={callback} start end />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -267,9 +267,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
   let obj = userId(576);
   const cResult = obj.c(29);
   const tmp4 = closure_7();
-  const obj2 = userId(6903);
+  const obj2 = userId(6905);
   userId = obj2.useSettingNavigationRoute().params.userId;
-  const obj3 = userId(1503);
+  const obj3 = userId(1505);
   navigation = obj3.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -291,7 +291,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
   const tmpResult = userId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] !== stateFromStores) {
-    const obj5 = navigation(5018);
+    const obj5 = navigation(5021);
     const formattedName = obj5.getFormattedName(stateFromStores, false);
     cResult[3] = stateFromStores;
     cResult[4] = formattedName;
@@ -306,7 +306,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
       tmp13 = cResult[7];
     }
     const layoutEffect = items1.useLayoutEffect(tmp13);
-    const tmpResult2 = userId(16845);
+    const tmpResult2 = userId(16878);
     const secureFramesUserVerifiedKeys = tmpResult2.useSecureFramesUserVerifiedKeys(userId);
     const obj6 = items1;
     if (cResult[8] === userId) {
@@ -370,7 +370,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
                 }
               }
             }
-            const tmp32 = jsx(userId(7034).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
+            const tmp32 = jsx(userId(7036).FlashList, { keyExtractor, getItemType, renderItem, data: tmp15, contentContainerStyle: tmp4.listContent, ListFooterComponent: tmp24 });
             cResult[22] = tmp15;
             cResult[23] = tmp4.listContent;
             cResult[24] = tmp24;
@@ -411,8 +411,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
     }
     items1 = [];
     const push = items1.push;
-    const obj9 = { type: constants.SECTION, title: intl.formatToPlainString(userId(1126).t["/MBjYF"], obj10) };
-    intl = tmp(1126).intl;
+    const obj9 = { type: constants.SECTION, title: intl.formatToPlainString(userId(1128).t["/MBjYF"], obj10) };
+    intl = tmp(1128).intl;
     obj10 = { count: secureFramesUserVerifiedKeys.length };
     push(obj9);
     const item = secureFramesUserVerifiedKeys.forEach((verification, index) => {
@@ -461,14 +461,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
   let secureFramesUserVerifiedKeys;
   let userId;
   const tmp = closure_7();
-  let obj = userId(6903);
+  let obj = userId(6905);
   userId = obj.useSettingNavigationRoute().params.userId;
-  let obj2 = userId(1503);
+  let obj2 = userId(1505);
   navigation = obj2.useNavigation();
   let items = [UserStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
-  const obj4 = navigation(5018);
+  const obj4 = navigation(5021);
   dependencyMap = obj4.getFormattedName(stateFromStores, false);
   const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
     let intl;
@@ -484,7 +484,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(16845);
+  const obj5 = userId(16878);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
@@ -508,7 +508,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSe
       navigation.pop();
     }
   }, items2);
-  const FlashList = userId(7034).FlashList;
+  const FlashList = userId(7036).FlashList;
   return <View style={tmp.list}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");

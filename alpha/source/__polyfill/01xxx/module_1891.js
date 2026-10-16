@@ -1,50 +1,76 @@
 // Module ID: 1891
 // Function ID: 1892
-// Dependencies: [19, 17, 21, 1850, 1646]
-// Exports: default
+// Dependencies: [19, 1658, 1888]
+// Exports: useEndVisible
 
 // Module 1891
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import _mod1658 from "module_1658" /* 1658 */;
+import _mod1888 from "module_1888" /* 1888 */;
 
-let size;
+const useMemo = react.useMemo;
+let closure_3 = { code: "function pnpm_useEndVisibleTs1(){const{layout,size,isScrollAtEnd,scroll,inverted}=this.__closure;if(layout.value.height===0||size.value.height===0){return null;}return isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);}" };
+let closure_4 = { code: "function pnpm_useEndVisibleTs2(){const{isAtEnd}=this.__closure;return isAtEnd.value;}" };
+let __initData = { code: "function pnpm_useEndVisibleTs3(current,previous){const{onEndVisible,isWorklet,runOnJS}=this.__closure;if(current===null||current===previous||!onEndVisible){return;}if(isWorklet){onEndVisible(current);}else{runOnJS(onEndVisible)(current);}}" };
 
-let Platform;
-let StyleSheet;
-let c3;
-const useMemo = react2.useMemo;
-({ Platform, StyleSheet, View: c3 } = react_native);
-const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { top: 0, bottom: 0, left: 0, right: 0 } });
-
-export default function _default(visible) {
-  let height;
-  let width;
-  visible = visible.visible;
-  const children = visible.children;
-  const obj = height(width[3]);
-  size = obj.useWindowDimensions();
-  height = size.height;
-  width = size.width;
-  let items = [height, width];
-  const items1 = [
-    useMemo(() => {
-      size = { height, width };
-      return size;
-    }, items)
-  ];
-  ({
-    collapsable: false,
-    style: useMemo(() => {
-      const items = [closure_1_5.absolute, undefined, closure_1_5.stretch];
-      return items;
-    }, items1),
-    children: visible
-  });
-  const RCTOverKeyboardView = height(width[4]).RCTOverKeyboardView;
-  if (visible) {
-    visible = children;
+export const useEndVisible = (scroll) => {
+  let closure_5;
+  scroll = scroll.scroll;
+  const layout = scroll.layout;
+  size = scroll.size;
+  const inverted = scroll.inverted;
+  const onEndVisible = scroll.onEndVisible;
+  const items = [onEndVisible];
+  let tmp = size(() => {
+    let __workletHash = typeof onEndVisible === "function";
+    if (typeof onEndVisible === "function") {
+      __workletHash = onEndVisible.__workletHash;
+    }
+    return __workletHash;
+  }, items);
+  __initData = tmp;
+  let obj = scroll(layout[1]);
+  const fn = function v() {
+    let isScrollAtEndResult = null;
+    if (0 !== layout.value.height) {
+      isScrollAtEndResult = null;
+      if (0 !== size.value.height) {
+        const obj = _mod1888;
+        isScrollAtEndResult = obj.isScrollAtEnd(scroll.value, iter.value.height, iter2.value.height, inverted);
+      }
+    }
+    return isScrollAtEndResult;
+  };
+  fn.__closure = { layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted };
+  fn.__workletHash = 9190864194226;
+  fn.__initData = inverted;
+  ({ layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted });
+  const derivedValue = obj.useDerivedValue(fn);
+  const fn2 = function f() {
+    return derivedValue.value;
+  };
+  fn2.__closure = { isAtEnd: derivedValue };
+  fn2.__workletHash = 3323533137377;
+  fn2.__initData = onEndVisible;
+  const obj3 = scroll(layout[1]);
+  class E {
+    constructor(arg0, arg1) {
+      const tmp = null !== arg0 && arg0 !== arg1 && onEndVisible;
+      if (tmp) {
+        const tmp3 = closure_5;
+        if (tmp3) {
+          onEndVisible(arg0);
+        } else {
+          const obj = _mod1658;
+          obj.runOnJS(onEndVisible)(arg0);
+        }
+      }
+    }
   }
-  return <RCTOverKeyboardView visible={visible}>{null}</RCTOverKeyboardView>;
+  E.__closure = { onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS };
+  E.__workletHash = 2507987378306;
+  E.__initData = __initData;
+  const items1 = [onEndVisible, tmp, inverted];
+  ({ onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS });
+  const animatedReaction = obj3.useAnimatedReaction(fn2, E, items1);
 };

@@ -1,18 +1,18 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 17971
+// Function ID: 17972
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2065, 5492, 1390, 21, 5151, 587, 558, 576, 1631, 504, 17938, 17940, 13008, 2]
+// Dependencies: [32, 19, 17, 2068, 5494, 1392, 21, 5153, 587, 558, 576, 1633, 504, 17972, 17974, 13034, 2]
 
-// Module 17937 (RestrictedMessageRequestPreview)
+// Module 17971 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import UserStore from "UserStore" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
   const cResult = obj.c(47);
   channelId = channelId.channelId;
   let tmp4 = closure_12();
-  const bottom = ref(1631)().bottom;
+  const bottom = ref(1633)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp6 = first(react.useState(false), 2);
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
   let first;
   react = undefined;
   const tmp = closure_12();
-  const bottom = ref(1631)().bottom;
+  const bottom = ref(1633)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
@@ -294,11 +294,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(17938), obj6), ];
+      items8 = [closure_10(tmp2(17972), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(17940), obj7);
+      items8[1] = closure_10(ref(17974), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(13008), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(13034), obj10) };
       items10 = [tmp.footer, ];
       items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };

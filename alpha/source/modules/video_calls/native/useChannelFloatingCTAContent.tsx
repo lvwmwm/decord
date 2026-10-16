@@ -1,14 +1,14 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18131
+// Function ID: 18132
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 2012, 5169, 558, 576, 573, 11402, 2049, 2]
+// Dependencies: [19, 2014, 5171, 558, 576, 573, 11422, 2052, 2]
 
-// Module 18096 (useChannelFloatingCTAContent)
-import dismissible_content from "dismissible_content" /* 2049 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11402 */;
+// Module 18131 (useChannelFloatingCTAContent)
+import dismissible_content from "dismissible_content" /* 2052 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11422 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,13 +74,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelFl
   }
   const items2 = [];
   if (stateFromStores1) {
-    items2.push(tmp(2049).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
+    items2.push(tmp(2052).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
   }
   if (stateFromStores) {
-    items2.push(tmp(2049).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
+    items2.push(tmp(2052).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
   }
   if (obj3.some((twoWayLink) => twoWayLink.twoWayLink)) {
-    items2.push(tmp(2049).DismissibleContent.DONUT_MOBILE_NUX);
+    items2.push(tmp(2052).DismissibleContent.DONUT_MOBILE_NUX);
   }
   cResult[5] = obj3;
   cResult[6] = stateFromStores1;

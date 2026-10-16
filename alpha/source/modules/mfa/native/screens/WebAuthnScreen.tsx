@@ -1,21 +1,21 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16657
+// Function ID: 16658
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 5151, 587, 6158, 558, 576, 1126, 1200, 1382, 1295, 6853, 15719, 6851, 16625, 16626, 2]
+// Dependencies: [32, 19, 21, 5153, 587, 6160, 558, 576, 1128, 1202, 1384, 1297, 6855, 15752, 6853, 16658, 16659, 2]
 
-// Module 16624 (WebAuthnScreen)
+// Module 16657 (WebAuthnScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import react_nativeDefault from "react-native" /* 6158 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6851 */;
-import buttonDefault from "button" /* 16625 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 16626 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import react_nativeDefault from "react-native" /* 6160 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6853 */;
+import buttonDefault from "button" /* 16658 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 16659 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Android
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: obj3.ANDROID_PASSKEY, name: intl.string(intl4.t.PVVXRI) };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -57,7 +57,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Android
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, ];
     obj3 = { value: obj3.AUTHENTICATE, name: intl2.string(intl4.t.TKop3X) };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items[1] = obj3;
     cResult[1] = items;
     tmp7 = items;
@@ -135,7 +135,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
   [tmp8, dependencyMap] = _slicedToArray(challenge.useState(undefined), 2);
   const useState = challenge.useState;
   const tmp7 = _slicedToArray(challenge.useState(undefined), 2);
-  obj3 = finish(1382);
+  obj3 = finish(1384);
   [tmp11, tmp12] = _slicedToArray(useState(obj3.isAndroid() ? obj3.ANDROID_PASSKEY : obj3.AUTHENTICATE), 2);
   _slicedToArray(useState(obj3.isAndroid() ? obj3.ANDROID_PASSKEY : obj3.AUTHENTICATE), 2);
   [tmp14, _slicedToArray] = _slicedToArray(challenge.useState(false), 2);
@@ -173,11 +173,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
       }
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        let intl = tmp(1126).intl;
-        const stringResult = intl.string(tmp(1126).t.saHocI);
-        const intl2 = tmp(1126).intl;
-        const stringResult1 = intl2.string(tmp(1126).t.YpMrqM);
-        const tmp28 = jsx(tmp(15719).KeyImage, {});
+        let intl = tmp(1128).intl;
+        const stringResult = intl.string(tmp(1128).t.saHocI);
+        const intl2 = tmp(1128).intl;
+        const stringResult1 = intl2.string(tmp(1128).t.YpMrqM);
+        const tmp28 = jsx(tmp(15752).KeyImage, {});
         cResult[7] = stringResult;
         cResult[8] = stringResult1;
         cResult[9] = tmp28;
@@ -198,8 +198,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
           }
           const _Symbol3 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp(1126).intl;
-            const stringResult2 = intl3.string(tmp(1126).t.Xr3Eks);
+            const intl3 = tmp(1128).intl;
+            const stringResult2 = intl3.string(tmp(1128).t.Xr3Eks);
             cResult[14] = stringResult2;
             tmp34 = stringResult2;
           } else {
@@ -325,7 +325,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
   dependencyMap = tmp4[1];
   const first = tmp4[0];
   const useState = react.useState;
-  const obj2 = finish(1382);
+  const obj2 = finish(1384);
   let tmpResult = tmp(useState(obj2.isAndroid() ? tmp8.ANDROID_PASSKEY : tmp8.AUTHENTICATE), 2);
   first1 = tmpResult[0];
   const tmp11 = tmpResult[1];
@@ -357,10 +357,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
     });
     catchPromise.finally(() => _undefined(false));
   }, items1);
-  obj3 = { headerText: intl.string(finish(1126).t.saHocI), subtitle: intl2.string(finish(1126).t.YpMrqM), headerImage: challenge(finish(15719).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
+  obj3 = { headerText: intl.string(finish(1128).t.saHocI), subtitle: intl2.string(finish(1128).t.YpMrqM), headerImage: challenge(finish(15752).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
   const tmp18 = MfaOptionScreenDefault;
-  intl = tmp6(1126).intl;
-  intl2 = tmp6(1126).intl;
+  intl = tmp6(1128).intl;
+  intl2 = tmp6(1128).intl;
   shouldDisplayAndroidFidoSelector = NativeCeremoniesDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj4 = { authenticatorSelection: first1, setAuthenticator: tmp11, inProgress: tmp20 };
@@ -371,9 +371,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
     }
     shouldDisplayAndroidFidoSelector = tmp16(tmp19, obj4);
   }
-  obj5 = { variant: "primary", text: intl3.string(finish(1126).t.Xr3Eks), loading: tmp3 || tmp13, disabled: tmp3, onPress: callback };
+  obj5 = { variant: "primary", text: intl3.string(finish(1128).t.Xr3Eks), loading: tmp3 || tmp13, disabled: tmp3, onPress: callback };
   tmp17Result = buttonDefault;
-  intl3 = tmp6(1126).intl;
+  intl3 = tmp6(1128).intl;
   return challenge(tmp18, obj3);
 });
 let result = size.fileFinishedImporting("modules/mfa/native/screens/WebAuthnScreen.tsx");

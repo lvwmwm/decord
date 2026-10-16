@@ -1,23 +1,23 @@
-// Module ID: 5088
-// Function ID: 5089
+// Module ID: 5091
+// Function ID: 5092
 // Name: FastImage
-// Dependencies: [109, 19, 17, 21, 5089, 558, 576, 1382, 5090, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 1384, 5093, 2]
 
-// Module 5088 (FastImage)
+// Module 5091 (FastImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5090 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5093 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FastImageApngExperiment_mod from "FastImageApngExperiment" /* 5089 */;
+import FastImageApngExperiment_mod from "FastImageApngExperiment" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1382);
+const PlatformUtils = tmp(1384);
 let closure_3 = ["accessible", "accessibilityLabel", "autoPlay", "enableAnimation", "fadeDuration", "paused", "placeholder", "resizeMode", "source", "style", "tintColor", "usesSmallCache"];
 ({ Image: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;

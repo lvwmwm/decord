@@ -1,32 +1,33 @@
-// Module ID: 10949
-// Function ID: 10950
+// Module ID: 10964
+// Function ID: 10965
 // Name: FramesActionCreators
-// Dependencies: [5, 5172, 10950, 10951, 2]
+// Dependencies: [5, 5174, 10965, 10966, 7261, 2]
 
-// Module 10949 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 10951 */;
+// Module 10964 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 10966 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 5172 */;
+import VoiceStateStore from "VoiceStateStore" /* 5174 */;
 import size from "module_2" /* 2 */;
 
-let c1;
+let c2;
 
 let obj = function _launchFrameOnNative() {
-  obj = _asyncToGenerator(async (value) => {
-    let c2 = 0;
+  obj = _asyncToGenerator(async (arg0) => {
+    const surface = arg0;
     let c3 = 0;
+    let c4 = 0;
     return (async (arg0, value) => {
       let currentClientInVoiceChannel;
       let obj3;
       function closeVoicePanel() {
         if (currentClientInVoiceChannel.isCurrentClientInVoiceChannel()) {
-          closure_1_0(closure_1_2[2])();
+          closure_1_1(closure_1_3[2])();
         }
       }
-      if (c3 === 2) {
-        c3 = 3;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -36,37 +37,39 @@ let obj = function _launchFrameOnNative() {
         }
       } else {
         try {
-          c3 = 2;
-          if (0 === c2) {
+          c4 = 2;
+          if (0 === c3) {
             if (arg0 === 1) {
-              c3 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 3;
+              c4 = 3;
               return { value, done: true };
             } else {
-              c1 = 0;
+              c2 = 0;
               value = undefined;
-              c2 = 1;
               c3 = 1;
-              const obj5 = { value: obj3.launchFrame(value), done: false };
+              c4 = 1;
+              const obj5 = { value: obj3.launchFrame(surface), done: false };
               obj3 = launchFrameAll;
               return obj5;
             }
           } else if (arg0 === 1) {
-            c3 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 3;
+            c4 = 3;
             return { value, done: true };
           } else {
-            closeVoicePanel();
-            c3 = 3;
+            if (surface.surface.type !== closure_130_0(closure_130_3[4]).EmbeddedSurfaceType.VOICE_CHANNEL) {
+              closeVoicePanel();
+            }
+            c4 = 3;
             return { value, done: true };
           }
-        } catch (tmp9) {
-          c3 = 3;
-          throw tmp9;
+        } catch (tmp16) {
+          c4 = 3;
+          throw tmp16;
         }
       }
     })();

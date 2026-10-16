@@ -1,20 +1,20 @@
-// Module ID: 18135
-// Function ID: 18136
+// Module ID: 18169
+// Function ID: 18170
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1085, 21, 5151, 587, 13845, 1126, 558, 576, 11402, 1386, 6382, 1200, 2]
+// Dependencies: [19, 1087, 21, 5153, 587, 13877, 1128, 558, 576, 11422, 1388, 6384, 1202, 2]
 
-// Module 18135 (VoicePanelConsoleFacepile)
+// Module 18169 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import NativeViewDefault from "NativeView" /* 6382 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11402 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13845 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import NativeViewDefault from "NativeView" /* 6384 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11422 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13877 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   const arr = useGameConsoleAccountsDefault();
   if (cResult[0] !== arr) {
     const mapped = arr.map(getConsoleInfo);
-    const found = mapped.filter(tmp(1386).isNotNullish);
+    const found = mapped.filter(tmp(1388).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
     tmp5 = found;
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
       }
       return tmp9;
     }
-    const tmp11 = jsx(tmp(1200).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
+    const tmp11 = jsx(tmp(1202).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
     cResult[5] = tmp5;
     cResult[6] = tmp8;
     cResult[7] = tmp11;

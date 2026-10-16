@@ -1,18 +1,18 @@
-// Module ID: 7351
-// Function ID: 7352
+// Module ID: 7353
+// Function ID: 7354
 // Name: PremiumModal
-// Dependencies: [19, 1085, 21, 1126, 6421, 7352, 14458, 14461, 14503, 14519, 558, 576, 7073, 6908, 2]
+// Dependencies: [19, 1087, 21, 1128, 6423, 7354, 14490, 14493, 14535, 14551, 558, 576, 7075, 6910, 2]
 
-// Module 7351 (PremiumModal)
+// Module 7353 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import Navigator2 from "Navigator" /* 6908 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7073 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7352 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14503 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14519 */;
+import Constants from "Constants" /* 1087 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import Navigator2 from "Navigator" /* 6910 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7075 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7354 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14535 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14551 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -53,39 +53,39 @@ function getScreens(analyticsLocation) {
   ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = analyticsLocation);
   const PREMIUM = UserSettingsSections.PREMIUM;
   const obj2 = {
-    title: intl.string(analyticsLocation(1126).t.lpNrPu),
+    title: intl.string(analyticsLocation(1128).t.lpNrPu),
     headerLeft: obj3.getHeaderCloseButton(onClose),
     initialParams: { analyticsLocation },
     render() {
       return jsx(UserSettingsPremiumDefault, { applicationId: getScreens, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
     }
   };
-  intl = analyticsLocation(1126).intl;
+  intl = analyticsLocation(1128).intl;
   obj[PREMIUM] = obj2;
-  obj3 = analyticsLocation(6421);
+  obj3 = analyticsLocation(6423);
   const PREMIUM_MANAGE_PLAN = UserSettingsSections.PREMIUM_MANAGE_PLAN;
   const obj4 = {
-    title: intl2.string(analyticsLocation(1126).t["8jmdON"]),
+    title: intl2.string(analyticsLocation(1128).t["8jmdON"]),
     render() {
       return jsx(onClose(dependencyMap[6]), {});
     }
   };
-  intl2 = analyticsLocation(1126).intl;
+  intl2 = analyticsLocation(1128).intl;
   obj[PREMIUM_MANAGE_PLAN] = obj4;
   const GUILD_BOOSTING = UserSettingsSections.GUILD_BOOSTING;
   const obj5 = {
-    title: intl3.string(analyticsLocation(1126).t["+CbP2v"]),
+    title: intl3.string(analyticsLocation(1128).t["+CbP2v"]),
     headerLeft: obj6.getHeaderCloseButton(onClose),
     render() {
       return jsx(onClose(dependencyMap[7]), {});
     }
   };
-  intl3 = analyticsLocation(1126).intl;
+  intl3 = analyticsLocation(1128).intl;
   obj[GUILD_BOOSTING] = obj5;
-  obj6 = analyticsLocation(6421);
+  obj6 = analyticsLocation(6423);
   const PREMIUM_PLAN_SELECT = UserSettingsSections.PREMIUM_PLAN_SELECT;
   const obj7 = {
-    title: intl4.string(analyticsLocation(1126).t.u95Dt4),
+    title: intl4.string(analyticsLocation(1128).t.u95Dt4),
     headerLeft(canGoBack) {
       let tmp2;
       canGoBack = canGoBack.canGoBack;
@@ -106,19 +106,19 @@ function getScreens(analyticsLocation) {
       return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: jsx, applicationId: getScreens, guildId });
     }
   };
-  intl4 = analyticsLocation(1126).intl;
+  intl4 = analyticsLocation(1128).intl;
   obj[PREMIUM_PLAN_SELECT] = obj7;
   const PREMIUM_GIFTING = UserSettingsSections.PREMIUM_GIFTING;
   const obj8 = {
-    title: intl5.string(analyticsLocation(1126).t.Oba8Sh),
+    title: intl5.string(analyticsLocation(1128).t.Oba8Sh),
     headerLeft: obj9.getHeaderCloseButton(onClose),
     render() {
       return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: UserSettingsSections, analyticsLocation });
     }
   };
-  intl5 = analyticsLocation(1126).intl;
+  intl5 = analyticsLocation(1128).intl;
   obj[PREMIUM_GIFTING] = obj8;
-  obj9 = analyticsLocation(6421);
+  obj9 = analyticsLocation(6423);
   return obj;
 }
 const UserSettingsSections = Constants.UserSettingsSections;

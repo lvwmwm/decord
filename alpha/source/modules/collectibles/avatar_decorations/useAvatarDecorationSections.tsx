@@ -1,16 +1,16 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14170
+// Function ID: 14171
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7480, 7496, 558, 576, 573, 7492, 1126, 14139, 2]
+// Dependencies: [32, 19, 7482, 7498, 558, 576, 573, 7494, 1128, 14171, 2]
 
-// Module 14138 (useAvatarDecorationSections)
+// Module 14170 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7492 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14139 */;
+import intl4 from "intl" /* 1128 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7496 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,8 +76,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
       }
       const _Symbol = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp2(1126).intl;
-        const stringResult = intl.string(stateFromStores(1126).t.VqmVqE);
+        const intl = tmp2(1128).intl;
+        const stringResult = intl.string(stateFromStores(1128).t.VqmVqE);
         cResult[13] = stringResult;
         tmp25 = stringResult;
       } else {
@@ -95,8 +95,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
         const _Symbol2 = Symbol;
         let premium_purchase = tmp15.premium_purchase;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp2(1126).intl;
-          const stringResult1 = intl2.string(stateFromStores(1126).t.TiLCgw);
+          const intl2 = tmp2(1128).intl;
+          const stringResult1 = intl2.string(stateFromStores(1128).t.TiLCgw);
           cResult[17] = stringResult1;
           tmp28 = stringResult1;
         } else {
@@ -113,8 +113,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
         const _Symbol3 = Symbol;
         let preview = tmp15.preview;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp2(1126).intl;
-          const stringResult2 = intl3.string(stateFromStores(1126).t["1vbbee"]);
+          const intl3 = tmp2(1128).intl;
+          const stringResult2 = intl3.string(stateFromStores(1128).t["1vbbee"]);
           cResult[20] = stringResult2;
           tmp32 = stringResult2;
         } else {
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7492);
+  const tmp2Result4 = stateFromStores(7494);
   const avatarDecorations = tmp2Result4.getAvatarDecorations(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14139)(tmp5, obj.PREVIEW);
+  return first(14171)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx");
 

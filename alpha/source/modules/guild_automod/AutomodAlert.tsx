@@ -1,10 +1,10 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7457
+// Function ID: 7458
 // Name: AutomodAlert
 // Dependencies: [2]
 // Exports: parseAlertActionsExecution
 
-// Module 7455 (AutomodAlert)
+// Module 7457 (AutomodAlert)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");

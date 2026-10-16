@@ -1,12 +1,12 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9363
+// Function ID: 9364
 // Name: cta_button
-// Dependencies: [32, 1210, 9348, 1240, 2]
+// Dependencies: [32, 1212, 9361, 1242, 2]
 
-// Module 9350 (cta_button)
-import _mod1210 from "module_1210" /* 1210 */;
-import wrappers from "wrappers" /* 1240 */;
-import localized_string from "localized_string" /* 9348 */;
+// Module 9363 (cta_button)
+import _mod1212 from "module_1212" /* 1212 */;
+import wrappers from "wrappers" /* 1242 */;
+import localized_string from "localized_string" /* 9361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const T3 = function T() {
   return require("wrappers").UInt64Value;
 };
 const ButtonAction = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", OPEN_MARKETING_PAGE: 1, [1]: "OPEN_MARKETING_PAGE", OPEN_TIER_2_PAYMENT_MODAL: 2, [2]: "OPEN_TIER_2_PAYMENT_MODAL", OPEN_TIER_1_PAYMENT_MODAL: 3, [3]: "OPEN_TIER_1_PAYMENT_MODAL", OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER: 4, [4]: "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", OPEN_PLAN_SELECTION_MODAL: 5, [5]: "OPEN_PLAN_SELECTION_MODAL", OPEN_PREMIUM_GROUP_PAYMENT_MODAL: 6, [6]: "OPEN_PREMIUM_GROUP_PAYMENT_MODAL", OPEN_SOCIAL_LAYER_STOREFRONT: 7, [7]: "OPEN_SOCIAL_LAYER_STOREFRONT", OPEN_GUILD_BOOST_CHECKOUT: 8, [8]: "OPEN_GUILD_BOOST_CHECKOUT" };
-const MessageType = _mod1210.MessageType;
+const MessageType = _mod1212.MessageType;
 class CTAButton$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, , ];
@@ -41,9 +41,9 @@ class CTAButton$Type extends MessageType {
     const obj = { copy: "", buttonAction: 0, deeplinkSection: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1210;
+      const tmpResult = _mod1212;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -90,7 +90,7 @@ class CTAButton$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1210.UnknownFieldHandler.onRead;
+                onRead = _mod1212.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -102,22 +102,22 @@ class CTAButton$Type extends MessageType {
   }
   internalBinaryWrite(copy, tag, writeUnknownFields) {
     if ("" !== copy.copy) {
-      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
       tagResult.string(copy.copy);
     }
     if (0 !== copy.buttonAction) {
-      const tagResult1 = tag.tag(2, _mod1210.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1212.WireType.Varint);
       tagResult1.int32(copy.buttonAction);
     }
     if ("" !== copy.deeplinkSection) {
-      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
       tagResult2.string(copy.deeplinkSection);
     }
     if (copy.copyLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const copyLocalized = copy.copyLocalized;
-      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(copyLocalized, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -125,14 +125,14 @@ class CTAButton$Type extends MessageType {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite2 = UInt64Value.internalBinaryWrite;
       const navigableStorefrontApplicationId = copy.navigableStorefrontApplicationId;
-      const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(navigableStorefrontApplicationId, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1210.UnknownFieldHandler.onWrite;
+        onWrite = _mod1212.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, copy, tag);

@@ -1,14 +1,14 @@
-// Module ID: 18433
-// Function ID: 18434
+// Module ID: 18474
+// Function ID: 18475
 // Name: JankStatsManager
-// Dependencies: [1085, 7028, 17029, 1265, 7413, 2]
+// Dependencies: [1087, 7030, 18475, 1267, 7415, 2]
 
-// Module 18433 (JankStatsManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7413 */;
-import react_nativeDefault from "react-native" /* 17029 */;
-import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+// Module 18474 (JankStatsManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7415 */;
+import react_nativeDefault from "react-native" /* 18475 */;
+import Constants from "Constants" /* 1087 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -65,25 +65,17 @@ class JankStatsManager extends AutomaticLifecycleManager {
         self.sendReport("timer");
         self._isScheduledReportSent = true;
         const obj = react_nativeDefault;
-        if (obj != null) {
-          obj.stopTracking();
-        }
+        obj.stopTracking();
       }, 300000);
     }
   }
   sendReport(background) {
     const obj = react_nativeDefault;
-    let report;
-    if (obj != null) {
-      report = obj.requestReport();
-    }
-    let tmp4 = null == report;
-    if (!tmp4) {
-      tmp4 = 0 === report.totalFrameCount && 0 === report.frameMetricsTotalFrameCount;
-    }
+    const report = obj.requestReport();
+    const tmp4 = 0 === report.totalFrameCount && 0 === report.frameMetricsTotalFrameCount;
     if (!tmp4) {
       const obj4 = { version: 2, trigger: background };
-      const track = tmp(1265).track;
+      const track = tmp(1267).track;
       const ANDROID_JANK_STATS = constants2.ANDROID_JANK_STATS;
       AnalyticsUtilsDefault;
       const obj3 = TTIAnalyticsUtils;

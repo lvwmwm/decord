@@ -1,15 +1,15 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11757
+// Function ID: 11758
 // Name: useIsOwnedConjureApplication
-// Dependencies: [19, 2087, 10885, 569, 558, 576, 7165, 504, 10907, 2]
+// Dependencies: [19, 2090, 10900, 569, 558, 576, 7167, 504, 10922, 2]
 
-// Module 11733 (useIsOwnedConjureApplication)
+// Module 11757 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 569 */;
-import ConjureUtils from "ConjureUtils" /* 7165 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 10885 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
+import ConjureUtils from "ConjureUtils" /* 7167 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 10900 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, dependencyMap, projectsFetchState;
 
 const isProjectOwner = ConjureProjectStore2.isProjectOwner;
-const useIsOwnedVibegrationsApplication = "useIsOwnedVibegrationsApplication";
+const useIsOwnedConjureApplication_str = "useIsOwnedConjureApplication";
 let tmp2 = new BackoffDefault(30000, 300000);
 let closure_7 = tmp2;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwnedConjureApplication(arg0, arg1) {
@@ -129,39 +129,37 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwned
         const tmpResult4 = tmp(504);
         return tmpResult4.useStateFromStores(tmp17, tmp19, tmp20);
       }
-      class A {
-        constructor() {
-          const tmp = stateFromStores;
-          if (tmp) {
-            if (null != closure_0) {
-              const result = ConjureProjectStore.findProjectByApplicationId(tmp2);
-              let tmp5 = null == result;
-              const obj = ConjureProjectStore;
-              if (!tmp5) {
-                tmp5 = !isProjectOwner(result);
-              }
-              let tmp7 = !tmp5;
-              if (tmp5) {
-                projectsFetchState = obj.getProjectsFetchState();
-                let type;
-                if (projectsFetchState != null) {
-                  type = projectsFetchState.type;
-                }
-                tmp7 = "success" !== type && null;
-              }
-              return tmp7;
+      const fn3 = function b() {
+        const tmp = stateFromStores;
+        if (tmp) {
+          if (null != closure_0) {
+            const result = ConjureProjectStore.findProjectByApplicationId(tmp2);
+            let tmp5 = null == result;
+            const obj = ConjureProjectStore;
+            if (!tmp5) {
+              tmp5 = !isProjectOwner(result);
             }
+            let tmp7 = !tmp5;
+            if (tmp5) {
+              projectsFetchState = obj.getProjectsFetchState();
+              let type;
+              if (projectsFetchState != null) {
+                type = projectsFetchState.type;
+              }
+              tmp7 = "success" !== type && null;
+            }
+            return tmp7;
           }
-          return false;
         }
-      }
+        return false;
+      };
       const items3 = [stateFromStores, arg0];
       cResult[12] = arg0;
       cResult[13] = stateFromStores;
-      cResult[14] = A;
+      cResult[14] = fn3;
       cResult[15] = items3;
       tmp20 = items3;
-      tmp19 = A;
+      tmp19 = fn3;
     }
     const fn2 = function _() {
       if ("success" === stateFromStores1) {
@@ -191,11 +189,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwned
     tmp14 = items4;
     tmp13 = fn2;
   }
-  const fn = function j() {
+  const fn = function f() {
     let tmp = closure_1 && null != closure_0;
     if (tmp) {
       const obj = ConjureUtils;
-      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedVibegrationsApplication).length > 0;
+      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str).length > 0;
     }
     return tmp;
   };
@@ -219,7 +217,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwned
     let tmp = closure_1 && null != closure_0;
     if (tmp) {
       const obj = ConjureUtils;
-      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedVibegrationsApplication).length > 0;
+      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str).length > 0;
     }
     return tmp;
   }, items1);

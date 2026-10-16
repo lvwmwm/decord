@@ -1,76 +1,93 @@
 // Module ID: 1889
 // Function ID: 1890
-// Dependencies: [19, 1656, 1886]
-// Exports: useEndVisible
+// Dependencies: [19, 17, 1890, 1658, 1888]
+// Exports: useExtraContentPadding
 
 // Module 1889
+import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import _mod1656 from "module_1656" /* 1656 */;
-import _mod1886 from "module_1886" /* 1886 */;
+import _mod1658 from "module_1658" /* 1658 */;
+import _mod1888 from "module_1888" /* 1888 */;
 
-const useMemo = react.useMemo;
-let closure_3 = { code: "function pnpm_useEndVisibleTs1(){const{layout,size,isScrollAtEnd,scroll,inverted}=this.__closure;if(layout.value.height===0||size.value.height===0){return null;}return isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);}" };
-let closure_4 = { code: "function pnpm_useEndVisibleTs2(){const{isAtEnd}=this.__closure;return isAtEnd.value;}" };
-let __initData = { code: "function pnpm_useEndVisibleTs3(current,previous){const{onEndVisible,isWorklet,runOnJS}=this.__closure;if(current===null||current===previous||!onEndVisible){return;}if(isWorklet){onEndVisible(current);}else{runOnJS(onEndVisible)(current);}}" };
+react.useCallback;
+const Platform = react_native.Platform;
+let closure_4 = { code: "function pnpm_indexTs1(target){const{contentOffsetY,IS_FABRIC,Platform,scrollTo,scrollViewRef}=this.__closure;if(contentOffsetY&&IS_FABRIC){contentOffsetY.value=target;}else if(Platform.OS===\"android\"){requestAnimationFrame(function(){scrollTo(scrollViewRef,0,target,false);});}else{scrollTo(scrollViewRef,0,target,false);}}" };
+let closure_5 = { code: "function pnpm_indexTs2(){const{extraContentPadding}=this.__closure;return extraContentPadding.value;}" };
+let closure_6 = { code: "function pnpm_indexTs3(current,previous){const{freeze,blankSpace,keyboardPadding,isScrollAtEnd,scroll,layout,size,inverted,keyboardLiftBehavior,shouldShiftContent,scrollToTarget}=this.__closure;if(freeze.value||previous===null){return;}const rawDelta=current-previous;if(rawDelta===0){return;}const previousTotal=Math.max(blankSpace.value,keyboardPadding.value+previous);const currentTotal=Math.max(blankSpace.value,keyboardPadding.value+current);const effectiveDelta=currentTotal-previousTotal;if(effectiveDelta===0){return;}const atEnd=isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);if(keyboardLiftBehavior===\"persistent\"&&effectiveDelta<0&&!atEnd){return;}if(!shouldShiftContent(keyboardLiftBehavior,atEnd)){return;}if(inverted){const target=Math.max(scroll.value-effectiveDelta,-currentTotal);scrollToTarget(target);}else{const maxScroll=Math.max(size.value.height-layout.value.height+currentTotal,0);const target=Math.min(scroll.value+effectiveDelta,maxScroll);scrollToTarget(target);}}" };
 
-export const useEndVisible = (scroll) => {
-  let closure_5;
-  scroll = scroll.scroll;
-  const layout = scroll.layout;
-  size = scroll.size;
-  const inverted = scroll.inverted;
-  const onEndVisible = scroll.onEndVisible;
-  const items = [onEndVisible];
-  let tmp = size(() => {
-    let __workletHash = typeof onEndVisible === "function";
-    if (typeof onEndVisible === "function") {
-      __workletHash = onEndVisible.__workletHash;
-    }
-    return __workletHash;
-  }, items);
-  __initData = tmp;
-  let obj = scroll(layout[1]);
-  const fn = function v() {
-    let isScrollAtEndResult = null;
-    if (0 !== layout.value.height) {
-      isScrollAtEndResult = null;
-      if (0 !== size.value.height) {
-        const obj = _mod1886;
-        isScrollAtEndResult = obj.isScrollAtEnd(scroll.value, iter.value.height, iter2.value.height, inverted);
+export const useExtraContentPadding = function useExtraContentPadding(scrollViewRef) {
+  scrollViewRef = scrollViewRef.scrollViewRef;
+  const extraContentPadding = scrollViewRef.extraContentPadding;
+  const keyboardPadding = scrollViewRef.keyboardPadding;
+  const blankSpace = scrollViewRef.blankSpace;
+  const scroll = scrollViewRef.scroll;
+  const layout = scrollViewRef.layout;
+  size = scrollViewRef.size;
+  const contentOffsetY = scrollViewRef.contentOffsetY;
+  const inverted = scrollViewRef.inverted;
+  const keyboardLiftBehavior = scrollViewRef.keyboardLiftBehavior;
+  const freeze = scrollViewRef.freeze;
+  const fn = function u(value) {
+    let closure_0 = value;
+    if (contentOffsetY) {
+      if (scrollViewRef(extraContentPadding[2]).IS_FABRIC) {
+        tmp.value = value;
       }
     }
-    return isScrollAtEndResult;
+    const animationFrame = requestAnimationFrame(() => {
+      const obj = _mod1658;
+      obj.scrollTo(scrollViewRef, 0, closure_0, false);
+    });
   };
-  fn.__closure = { layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted };
-  fn.__workletHash = 9190864194226;
-  fn.__initData = inverted;
-  ({ layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted });
-  const derivedValue = obj.useDerivedValue(fn);
-  const fn2 = function f() {
-    return derivedValue.value;
+  let obj = { contentOffsetY, IS_FABRIC: scrollViewRef(extraContentPadding[2]).IS_FABRIC, Platform: blankSpace, scrollTo: scrollViewRef(extraContentPadding[3]).scrollTo, scrollViewRef };
+  fn.__closure = obj;
+  fn.__workletHash = 2925167321956;
+  fn.__initData = scroll;
+  const items = [scrollViewRef, contentOffsetY];
+  const tmp = keyboardPadding(fn, items);
+  let closure_11 = tmp;
+  let obj2 = scrollViewRef(extraContentPadding[3]);
+  const fn2 = function v() {
+    return extraContentPadding.value;
   };
-  fn2.__closure = { isAtEnd: derivedValue };
-  fn2.__workletHash = 3323533137377;
-  fn2.__initData = onEndVisible;
-  const obj3 = scroll(layout[1]);
-  class E {
-    constructor(arg0, arg1) {
-      const tmp = null !== arg0 && arg0 !== arg1 && onEndVisible;
-      if (tmp) {
-        const tmp3 = closure_5;
-        if (tmp3) {
-          onEndVisible(arg0);
-        } else {
-          const obj = _mod1656;
-          obj.runOnJS(onEndVisible)(arg0);
+  fn2.__closure = { extraContentPadding };
+  fn2.__workletHash = 6627638143453;
+  fn2.__initData = layout;
+  const fn3 = function f(arg0, arg1) {
+    if (!freeze.value) {
+      if (null !== arg1) {
+        if (0 != arg0 - arg1) {
+          const _Math3 = Math;
+          const _Math4 = Math;
+          const bound = Math.max(blankSpace.value, keyboardPadding.value + arg1);
+          const bound1 = Math.max(blankSpace.value, keyboardPadding.value + arg0);
+          const diff = bound1 - bound;
+          if (0 !== diff) {
+            const obj2 = _mod1888;
+            const isScrollAtEndResult = obj2.isScrollAtEnd(scroll.value, layout.value.height, size.value.height, inverted);
+            const iter2 = layout;
+            const iter3 = size;
+            const tmp14Result = _mod1888;
+            const tmp16 = inverted;
+            const tmp20 = keyboardLiftBehavior;
+            if (tmp14Result.shouldShiftContent(tmp20, isScrollAtEndResult)) {
+              const _Math = Math;
+              if (tmp16) {
+                closure_11(max(scroll.value - diff, -bound1));
+              } else {
+                const _Math2 = Math;
+                closure_11(Math.min(scroll.value + diff, max(iter3.value.height - iter2.value.height + bound1, 0)));
+              }
+            }
+          }
         }
       }
     }
-  }
-  E.__closure = { onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS };
-  E.__workletHash = 2507987378306;
-  E.__initData = __initData;
-  const items1 = [onEndVisible, tmp, inverted];
-  ({ onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS });
-  const animatedReaction = obj3.useAnimatedReaction(fn2, E, items1);
+  };
+  fn3.__closure = { freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp };
+  fn3.__workletHash = 14660760767987;
+  fn3.__initData = size;
+  const items1 = [inverted, keyboardLiftBehavior];
+  ({ freeze, blankSpace, keyboardPadding, isScrollAtEnd: scrollViewRef(extraContentPadding[4]).isScrollAtEnd, scroll, layout, size, inverted, keyboardLiftBehavior, shouldShiftContent: scrollViewRef(extraContentPadding[4]).shouldShiftContent, scrollToTarget: tmp });
+  const animatedReaction = obj2.useAnimatedReaction(fn2, fn3, items1);
 };

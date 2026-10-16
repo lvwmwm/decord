@@ -1,30 +1,30 @@
-// Module ID: 12953
-// Function ID: 12954
+// Module ID: 12979
+// Function ID: 12980
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5463, 12954, 9935, 1085, 21, 12955, 5151, 587, 558, 576, 5446, 12956, 1998, 9474, 10026, 4884, 1126, 5166, 12, 1200, 10013, 7463, 12957, 12958, 12959, 2]
+// Dependencies: [32, 19, 17, 5465, 12980, 9951, 1087, 21, 12981, 5153, 587, 558, 576, 5448, 12982, 2000, 9490, 10042, 4887, 1128, 5168, 12, 1202, 10029, 7465, 12983, 12984, 12985, 2]
 
-// Module 12953 (ApplicationCommandDiscovery)
+// Module 12979 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Server from "Server" /* 1998 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
-import useFontScale from "useFontScale" /* 5446 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9474 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9935 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10013 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12954 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12955 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12956 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12959 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Server from "Server" /* 2000 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
+import useFontScale from "useFontScale" /* 5448 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9490 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9951 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10029 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12980 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12981 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12982 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5463 */;
-import Constants from "Constants" /* 1085 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5465 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   const canOnlyUseTextCommands = onHeightChange.canOnlyUseTextCommands;
   let tmp4 = sum();
   dependencyMap = tmp4;
-  const obj2 = onPressSlashItem(5446);
+  const obj2 = onPressSlashItem(5448);
   const bound = Math.max(obj2.useFontScale() * commandsByActiveSection, commandsByActiveSection);
   let obj3 = ref;
   ref = ref.useRef(null);
@@ -94,7 +94,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   } else {
     first = cResult[0];
   }
-  let tmpResult = tmp(12956);
+  let tmpResult = tmp(12982);
   const commandDiscoveryManager = tmpResult.useCommandDiscoveryManager(first);
   if (cResult[1] !== channel) {
     const obj4 = { channel, type: "channel" };
@@ -106,14 +106,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
     tmp11 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp(1998).ApplicationCommandType.CHAT];
+    const items = [tmp(2000).ApplicationCommandType.CHAT];
     let num2 = 3;
     cResult[3] = items;
     tmp12 = items;
   } else {
     tmp12 = cResult[3];
   }
-  const BuiltInCommandFilter = tmp(9474).BuiltInCommandFilter;
+  const BuiltInCommandFilter = tmp(9490).BuiltInCommandFilter;
   let tmp13 = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   let tmp14 = !canOnlyUseTextCommands;
   if (cResult[4] === tmp13) {
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
         tmp18 = cResult[10];
       }
       let tmp19 = channel;
-      const obj9 = channel(10026);
+      const obj9 = channel(10042);
       const discovery = obj9.useDiscovery(tmp18);
       sectionDescriptors = discovery.sectionDescriptors;
       const activeSections = discovery.activeSections;
@@ -755,7 +755,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   ref = ref.useRef(false);
   let obj3 = ApplicationCommandDiscoveryManager;
   const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let tmp8 = channel(10026);
+  let tmp8 = channel(10042);
   const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
   obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
   const useDiscovery = tmp8.useDiscovery;

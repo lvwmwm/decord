@@ -1,22 +1,22 @@
-// Module ID: 10336
-// Function ID: 10337
+// Module ID: 10352
+// Function ID: 10353
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 5140, 21, 587, 5151, 558, 576, 5147, 504, 9229, 1383, 10337, 5088, 1993, 9193, 2]
+// Dependencies: [109, 32, 19, 17, 5143, 21, 587, 5153, 558, 576, 5149, 504, 9242, 1385, 10353, 5091, 1995, 9206, 2]
 
-// Module 10336 (PremiumGiftPromotionDetails)
+// Module 10352 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import SKUPreview from "SKUPreview" /* 9193 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import SKUPreview from "SKUPreview" /* 9206 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -555,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   if (tmp15Result) {
     const obj6 = { style: tmp9.preview, children: authStore(CollectiblesPreview, obj11) };
     obj11 = { collectiblesItemData: tmp10, size: rounded };
-    CollectiblesPreview = tmp(9193).CollectiblesPreview;
+    CollectiblesPreview = tmp(9206).CollectiblesPreview;
     const tmp16 = View;
     if ("bundle" === tmp10.type) {
       const _Math2 = Math;
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
-      if (memo.item.type === tmp8(1993).CollectiblesItemType.AVATAR_DECORATION) {
+      if (memo.item.type === tmp8(1995).CollectiblesItemType.AVATAR_DECORATION) {
         const _Math = Math;
         rounded = Math.floor(1.5 * tmp10);
       }

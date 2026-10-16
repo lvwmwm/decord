@@ -1,17 +1,17 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14454
+// Function ID: 14455
 // Name: useYouBarSettingsSafeArea
-// Dependencies: [558, 1631, 576, 6847, 1383, 2]
+// Dependencies: [558, 1633, 576, 6849, 1385, 2]
 
-// Module 14422 (useYouBarSettingsSafeArea)
+// Module 14454 (useYouBarSettingsSafeArea)
 import react from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6847 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6849 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const utils_PlatformUtils = tmp(1383);
+const utils_PlatformUtils = tmp(1385);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarSettingsCustomHeaderPaddingTop() {
   const top = useSafeAreaInsetsDefault().top;

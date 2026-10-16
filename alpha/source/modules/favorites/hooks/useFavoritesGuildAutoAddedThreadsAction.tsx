@@ -1,13 +1,13 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17192
+// Function ID: 17193
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1390, 2068, 558, 576, 10546, 504, 10545, 1126, 3444, 2]
+// Dependencies: [19, 1392, 2071, 558, 576, 10561, 504, 10560, 1128, 3447, 2]
 
-// Module 17158 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10545 */;
+// Module 17192 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10560 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import FavoriteStore from "FavoriteStore" /* 2068 */;
+import UserStore from "UserStore" /* 1392 */;
+import FavoriteStore from "FavoriteStore" /* 2071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let tmp = hasAccess;
   let obj = hasAccess(576);
   const cResult = obj.c(13);
-  const obj2 = hasAccess(10546);
+  const obj2 = hasAccess(10561);
   hasAccess = obj2.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let intl;
   let intl2;
   let tmp = hasAccess;
-  let obj = hasAccess(10546);
+  let obj = hasAccess(10561);
   hasAccess = obj.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   const items = [UserStore];
   const obj2 = hasAccess(504);
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(items1, () => autoAddJoinedThreads.autoAddJoinedThreads);
   const items2 = [hasAccess, stateFromStores];
-  const obj3 = { isAvailable: hasAccess, isEnabled: stateFromStores, label: intl.string(stateFromStores(3444).DIyQIF), subLabel: intl2.string(stateFromStores(3444).g2vHYJ), toggle: callback };
+  const obj3 = { isAvailable: hasAccess, isEnabled: stateFromStores, label: intl.string(stateFromStores(3447).DIyQIF), subLabel: intl2.string(stateFromStores(3447).g2vHYJ), toggle: callback };
   callback = react.useCallback(() => {
     const tmp = hasAccess;
     if (tmp) {
@@ -140,8 +140,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       const result = obj.setFavoritesAutoAddJoinedThreads(!stateFromStores);
     }
   }, items2);
-  intl = tmp(1126).intl;
-  intl2 = tmp(1126).intl;
+  intl = tmp(1128).intl;
+  intl2 = tmp(1128).intl;
   return obj3;
 });
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");

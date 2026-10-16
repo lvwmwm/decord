@@ -1,12 +1,12 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10821
+// Function ID: 10822
 // Name: useCanOpenBadgeDirectoryFromProfile
-// Dependencies: [558, 576, 10805, 10807, 2]
+// Dependencies: [558, 576, 10820, 10822, 2]
 
-// Module 10806 (useCanOpenBadgeDirectoryFromProfile)
+// Module 10821 (useCanOpenBadgeDirectoryFromProfile)
 import react from "react" /* 576 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10805 */;
-import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 10807 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10820 */;
+import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 10822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

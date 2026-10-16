@@ -1,22 +1,22 @@
-// Module ID: 18756
-// Function ID: 18757
+// Module ID: 18798
+// Function ID: 18799
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8856, 2065, 4804, 4816, 1390, 8282, 1085, 21, 4874, 587, 18745, 504, 5481, 1126, 18746, 5115, 8774, 2000, 8855, 18743, 5147, 5088, 5437, 6485, 6400, 2]
+// Dependencies: [19, 17, 8864, 2068, 4807, 4819, 1392, 8287, 1087, 21, 4877, 587, 18787, 504, 5483, 1128, 18788, 5118, 8782, 2002, 8863, 18785, 5149, 5091, 5439, 6487, 6402, 2]
 // Exports: default
 
-// Module 18756 (ChannelSetupScreen)
+// Module 18798 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import intl10 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4804 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8282 */;
+import Constants from "Constants" /* 1087 */;
+import intl10 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4807 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8287 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8856 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8864 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8774, dependencyMap.paths);
+    const tmp2 = asyncRequire(8782, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -174,7 +174,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8774, dependencyMap.paths);
+    const tmp2 = asyncRequire(8782, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {

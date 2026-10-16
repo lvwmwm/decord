@@ -1,26 +1,26 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13382
+// Function ID: 13383
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 13242, 1390, 1085, 21, 5151, 587, 6479, 558, 576, 1503, 504, 13249, 1105, 13270, 13357, 13263, 1273, 6908, 1126, 2]
+// Dependencies: [19, 17, 13268, 1392, 1087, 21, 5153, 587, 6481, 558, 576, 1505, 504, 13275, 1107, 13296, 13383, 13289, 1275, 6910, 1128, 2]
 
-// Module 13356 (DiscoverabilityModal)
+// Module 13382 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import intl2 from "intl" /* 1126 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import NavigatorConstants from "NavigatorConstants" /* 6479 */;
-import Navigator2 from "Navigator" /* 6908 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13242 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13249 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13263 */;
-import NUFActionCreators from "NUFActionCreators" /* 13270 */;
+import Constants from "Constants" /* 1087 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import intl2 from "intl" /* 1128 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
+import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import Navigator2 from "Navigator" /* 6910 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13268 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13275 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13289 */;
+import NUFActionCreators from "NUFActionCreators" /* 13296 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import createStyles from "createStyles" /* 5151 */;
+import UserStore from "UserStore" /* 1392 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -270,10 +270,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discoverabil
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = {};
     const obj3 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.DISCOVERABILITY, fullscreen: true, headerLeft, headerTitle, render };
-    const LANDING = tmp(1105).DiscoverabilityScenes.LANDING;
+    const LANDING = tmp(1107).DiscoverabilityScenes.LANDING;
     obj2[LANDING] = obj3;
     const obj4 = { ignoreKeyboard: true, impressionName: discord_common_AnalyticsUtils.ImpressionNames.DISCOVERABILITY, fullscreen: true, headerTitle: headerTitle2, render: render2 };
-    const NAME = tmp(1105).DiscoverabilityScenes.NAME;
+    const NAME = tmp(1107).DiscoverabilityScenes.NAME;
     obj2[NAME] = obj4;
     cResult[0] = obj2;
     first = obj2;
@@ -281,8 +281,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discoverabil
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(6908).Navigator;
-    const intl = tmp(1126).intl;
+    const Navigator = tmp(6910).Navigator;
+    const intl = tmp(1128).intl;
     const tmp7 = <Navigator screens={first} initialRouteName={ConstantsIOS.DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp7;
     tmp5 = tmp7;

@@ -1,62 +1,28 @@
 // Module ID: 10356
 // Function ID: 10357
-// Dependencies: [1656, 10342]
-// Exports: useOnProgressChange
+// Dependencies: [19, 21, 10357, 10360, 10364, 10365, 10366]
 
 // Module 10356
-import convertToSharedIndex from "convertToSharedIndex" /* 10342 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 10357 */;
+import _mod10360 from "module_10360" /* 10360 */;
+import react3 from "react" /* 10364 */;
+import _mod10365 from "module_10365" /* 10365 */;
+import react from "react" /* 19 */;
 
-let tmp;
-const _mod1656 = tmp(1656);
-let closure_2 = { code: "function pnpm_useOnProgressChangeTs1(){const{offsetX}=this.__closure;return offsetX.value;}" };
-let closure_3 = { code: "function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}" };
+const jsx = Fragment.jsx;
 
-export const useOnProgressChange = function useOnProgressChange(autoFillData) {
-  autoFillData = autoFillData.autoFillData;
-  const loop = autoFillData.loop;
-  const offsetX = autoFillData.offsetX;
-  size = autoFillData.size;
-  const rawDataLength = autoFillData.rawDataLength;
-  const onProgressChange = autoFillData.onProgressChange;
-  let tmp = typeof onProgressChange === "function";
-  let closure_6 = tmp;
-  let obj = autoFillData(loop[0]);
-  const fn = function n() {
-    return offsetX.value;
-  };
-  fn.__closure = { offsetX };
-  fn.__workletHash = 355184931449;
-  fn.__initData = offsetX;
-  const fn2 = function u(value) {
-    const obj = convertToSharedIndex;
-    const obj2 = { value, rawDataLength, size, autoFillData, loop };
-    const result = obj.computedOffsetXValueWithAutoFillData(obj2);
-    let bound = result;
-    if (!loop) {
-      const _Math = Math;
-      const _Math2 = Math;
-      const result1 = -tmp3 - 1 * tmp4;
-      bound = Math.max(result1, Math.min(result, 0));
-    }
-    const absolute = Math.abs(bound / tmp4);
-    let diff = absolute;
-    if (bound > 0) {
-      diff = tmp3 - absolute;
-    }
-    if (onProgressChange) {
-      const tmp12 = closure_6;
-      if (tmp12) {
-        const tmpResult = _mod1656;
-        tmpResult.runOnJS(onProgressChange)(bound, diff);
-      } else {
-        onProgressChange.value = diff;
-      }
-    }
-  };
-  let obj2 = { computedOffsetXValueWithAutoFillData: autoFillData(loop[1]).computedOffsetXValueWithAutoFillData, rawDataLength, size, autoFillData, loop, onProgressChange, isFunc: tmp, runOnJS: autoFillData(loop[0]).runOnJS };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 12473781608319;
-  fn2.__initData = size;
-  const items = [loop, autoFillData, rawDataLength, onProgressChange, size];
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2, items);
-};
+export default react.forwardRef((defaultIndex, ref) => {
+  const obj = react2;
+  const initProps = obj.useInitProps(defaultIndex);
+  const dataLength = initProps.dataLength;
+  const obj2 = _mod10360;
+  const commonVariables = obj2.useCommonVariables(initProps);
+  const obj3 = { dataLength };
+  const usePropsErrorBoundary = react3.usePropsErrorBoundary;
+  react3;
+  const merged = Object.assign(initProps);
+  const propsErrorBoundary = usePropsErrorBoundary(obj3);
+  const GlobalStateProvider = _mod10365.GlobalStateProvider;
+  return <GlobalStateProvider value={{ props: initProps, common: commonVariables }}>{null}</GlobalStateProvider>;
+});

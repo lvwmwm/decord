@@ -1,14 +1,14 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8835
+// Function ID: 8836
 // Name: AppChannelApplicationSelector
-// Dependencies: [19, 21, 8828, 1126, 6485, 6400, 8830, 5115, 8831, 2000, 8831, 2]
+// Dependencies: [19, 21, 8836, 1128, 6487, 6402, 8838, 5118, 8839, 2002, 8839, 2]
 // Exports: default
 
-// Module 8827 (AppChannelApplicationSelector)
+// Module 8835 (AppChannelApplicationSelector)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import AppChannelApplicationActionSheet from "AppChannelApplicationActionSheet" /* 8831 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import AppChannelApplicationActionSheet from "AppChannelApplicationActionSheet" /* 8839 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ export default function AppChannelApplicationSelector(guildId) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { guildId, channelId, selectedApplicationId, onChange: jsx };
-      const tmp2 = asyncRequire(8831, dependencyMap.paths);
+      const tmp2 = asyncRequire(8839, dependencyMap.paths);
       openLazy(tmp2, AppChannelApplicationActionSheet.APP_CHANNEL_APPLICATION_ACTION_SHEET_KEY, obj);
     };
   }

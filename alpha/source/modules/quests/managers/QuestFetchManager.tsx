@@ -1,17 +1,17 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18955
+// Function ID: 18956
 // Name: QuestFetchManager
-// Dependencies: [7607, 1102, 7028, 9387, 1255, 9393, 1382, 6293, 18914, 2]
+// Dependencies: [7609, 1104, 7030, 9403, 1257, 9409, 1384, 6295, 18956, 2]
 
-// Module 18913 (QuestFetchManager)
-import DurationsDefault from "Durations" /* 1102 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import QuestsEligibility from "QuestsEligibility" /* 9387 */;
-import QuestActionCreators from "QuestActionCreators" /* 9393 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18914 */;
-import QuestStore from "QuestStore" /* 7607 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+// Module 18955 (QuestFetchManager)
+import DurationsDefault from "Durations" /* 1104 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import QuestsEligibility from "QuestsEligibility" /* 9403 */;
+import QuestActionCreators from "QuestActionCreators" /* 9409 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18956 */;
+import QuestStore from "QuestStore" /* 7609 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18914).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18956).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -131,7 +131,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6293);
+        const tmp6Result = tmp6(6295);
         const state = tmp6Result.getState();
       }
     }

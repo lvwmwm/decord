@@ -1,11 +1,11 @@
-// Module ID: 2668
-// Function ID: 2669
-// Dependencies: [1130, 2669, 1165, 2]
+// Module ID: 2671
+// Function ID: 2672
+// Dependencies: [1132, 2672, 1167, 2]
 
-// Module 2668
-import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
-import AssetRegistry from "AssetRegistry" /* 2669 */;
-import module_1165_mod from "module_1165" /* 1165 */;
+// Module 2671
+import AssetJsonUtils from "AssetJsonUtils" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 2672 */;
+import module_1167_mod from "module_1167" /* 1167 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1165 = module_1165_mod;
-const loader = module_1165.createLoader(obj, "en-US");
-module_1165 = module_1165_mod;
-const messagesProxy = module_1165.makeMessagesProxy(loader);
+let module_1167 = module_1167_mod;
+const loader = module_1167.createLoader(obj, "en-US");
+module_1167 = module_1167_mod;
+const messagesProxy = module_1167.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/premium/gifting/GiftedSubscriptionsUntranslated.messages.js");
 
 export default messagesProxy;

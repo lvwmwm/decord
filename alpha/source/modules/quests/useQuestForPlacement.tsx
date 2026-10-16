@@ -1,17 +1,17 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16076
+// Function ID: 16077
 // Name: useQuestForPlacement
-// Dependencies: [19, 7604, 7607, 1102, 9387, 6293, 9393, 558, 576, 504, 7605, 7613, 6195, 2]
+// Dependencies: [19, 7606, 7609, 1104, 9403, 6295, 9409, 558, 576, 504, 7607, 7615, 6197, 2]
 
-// Module 16043 (useQuestForPlacement)
-import DurationsDefault from "Durations" /* 1102 */;
-import AdCreativeType from "AdCreativeType" /* 6195 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6293 */;
-import QuestsEligibility from "QuestsEligibility" /* 9387 */;
-import QuestActionCreators from "QuestActionCreators" /* 9393 */;
+// Module 16076 (useQuestForPlacement)
+import DurationsDefault from "Durations" /* 1104 */;
+import AdCreativeType from "AdCreativeType" /* 6197 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6295 */;
+import QuestsEligibility from "QuestsEligibility" /* 9403 */;
+import QuestActionCreators from "QuestActionCreators" /* 9409 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7604 */;
-import QuestStore from "QuestStore" /* 7607 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7606 */;
+import QuestStore from "QuestStore" /* 7609 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDelivered
     creative = tmp9.creative;
   }
   if (cResult[4] !== creative) {
-    const tmpResult3 = tmp(7605);
+    const tmpResult3 = tmp(7607);
     const deliveredQuestId = tmpResult3.getDeliveredQuestId(creative);
     cResult[4] = creative;
     cResult[5] = deliveredQuestId;
@@ -542,7 +542,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQues
     creative = tmp5.creative;
   }
   if (cResult[0] !== creative) {
-    const tmpResult = tmp(7605);
+    const tmpResult = tmp(7607);
     const deliveredQuestId = tmpResult.getDeliveredQuestId(creative);
     cResult[0] = creative;
     cResult[1] = deliveredQuestId;
@@ -582,7 +582,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQues
   let tmp13 = null;
   if (null != stateFromStores) {
     tmp13 = null;
-    const tmpResult4 = tmp(7613);
+    const tmpResult4 = tmp(7615);
     if (!tmpResult4.isQuestExpired(stateFromStores)) {
       tmp13 = stateFromStores;
     }

@@ -1,9 +1,9 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 10995
+// Function ID: 10996
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10980 (ConjureWebSocket)
+// Module 10995 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -200,6 +200,20 @@ class ConjureWebSocket {
         const socket = self.socket;
         const _JSON = JSON;
         const obj = { type: "set_overlay_background_blur", enabled };
+        socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendPrepareTemplate(template_id) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "prepare_template", template_id };
         socket.send(JSON.stringify(obj));
       }
     }

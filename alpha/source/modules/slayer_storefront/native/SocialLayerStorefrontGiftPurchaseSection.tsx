@@ -1,24 +1,24 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 10420
+// Function ID: 10421
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7365, 1390, 1085, 1392, 21, 5151, 587, 558, 576, 6885, 7077, 504, 1265, 10405, 1382, 584, 10379, 10391, 1126, 5147, 10397, 5439, 2]
+// Dependencies: [5, 32, 19, 17, 7367, 1392, 1087, 1394, 21, 5153, 587, 558, 576, 6887, 7079, 504, 1267, 10421, 1384, 584, 10395, 10407, 1128, 5149, 10413, 5441, 2]
 
-// Module 10404 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10420 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7365 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10379 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7367 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

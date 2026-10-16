@@ -1,26 +1,26 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12012
+// Function ID: 12013
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1627, 1085, 21, 1628, 1382, 5151, 587, 558, 576, 1126, 11945, 4883, 5028, 6527, 4907, 5116, 5117, 1265, 5422, 5041, 5431, 4906, 5456, 1631, 5419, 2]
+// Dependencies: [32, 19, 17, 1629, 1087, 21, 1630, 1384, 5153, 587, 558, 576, 1128, 11969, 4886, 5031, 6529, 4910, 5119, 5120, 1267, 5424, 5044, 5433, 4909, 5458, 1633, 5421, 2]
 
-// Module 11988 (MediaKeyboardBottomSheet)
+// Module 12012 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import ChatInputUtils from "ChatInputUtils" /* 5041 */;
-import HapticUtils from "HapticUtils" /* 5116 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5117 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ChatInputUtils from "ChatInputUtils" /* 5044 */;
+import HapticUtils from "HapticUtils" /* 5119 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import createStyles from "createStyles" /* 5151 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaK
   ({ pointerEvents, style } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.XONG6A);
     cResult[0] = stringResult;
     first = stringResult;

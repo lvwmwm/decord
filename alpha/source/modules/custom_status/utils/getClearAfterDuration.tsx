@@ -1,13 +1,13 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 10771
+// Function ID: 10772
 // Name: getClearAfterDuration
-// Dependencies: [10752, 1102, 38, 2]
+// Dependencies: [10767, 1104, 38, 2]
 // Exports: default
 
-// Module 10756 (getClearAfterDuration)
+// Module 10771 (getClearAfterDuration)
 import _modDef38 from "module_38" /* 38 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import Constants from "Constants" /* 10752 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import Constants from "Constants" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;

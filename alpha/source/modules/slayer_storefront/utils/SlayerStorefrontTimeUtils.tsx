@@ -1,15 +1,15 @@
-// Module ID: 10334
-// Function ID: 10335
+// Module ID: 10350
+// Function ID: 10351
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4758, 1102, 558, 576, 7384, 1126, 3732, 2]
+// Dependencies: [32, 19, 4761, 1104, 558, 576, 7386, 1128, 3735, 2]
 
-// Module 10334 (SlayerStorefrontTimeUtils)
+// Module 10350 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import intl4 from "intl" /* 1126 */;
-import _modDef3732 from "module_3732" /* 3732 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import useIntervalDefault from "useInterval" /* 7384 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef3735 from "module_3735" /* 3735 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import useIntervalDefault from "useInterval" /* 7386 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,18 +26,18 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const obj2 = _modDef4758(arg0);
-    const diffResult = obj2.diff(_modDef4758(), "seconds");
+    const obj2 = _modDef4761(arg0);
+    const diffResult = obj2.diff(_modDef4761(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const time = { days: Math.floor(diffResult / DurationsDefault.Seconds.DAY), hours: floor(result / DurationsDefault.Seconds.HOUR), minutes: floor2(result1 / DurationsDefault.Seconds.MINUTE), seconds: diffResult % DurationsDefault.Seconds.MINUTE };
       const _Math = Math;
       const _Math2 = Math;
       floor = Math.floor;
-      result = diffResult % tmp5(1102).Seconds.DAY;
+      result = diffResult % tmp5(1104).Seconds.DAY;
       const _Math3 = Math;
       floor2 = Math.floor;
-      result1 = diffResult % tmp5(1102).Seconds.HOUR;
+      result1 = diffResult % tmp5(1104).Seconds.HOUR;
       tmp4 = time;
     }
     return tmp4;
@@ -59,13 +59,13 @@ function formatLimitedOfferTimeLeft(arg0) {
     } else if (hours > 0) {
       const intl2 = intl4.intl;
       const obj3 = { hours };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3732.PPaJSw, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3735.PPaJSw, obj3);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj = { minutes: Math.max(tmp13, 1) };
-      const prop = _modDef3732["7Z+aIf"];
+      const prop = _modDef3735["7Z+aIf"];
       formatToPlainStringResult = formatToPlainString(prop, obj);
     }
     return formatToPlainStringResult;

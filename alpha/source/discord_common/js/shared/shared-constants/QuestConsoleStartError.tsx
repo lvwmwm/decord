@@ -1,9 +1,9 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 13823
+// Function ID: 13824
 // Name: QuestConsoleStartError
 // Dependencies: [2]
 
-// Module 13797 (QuestConsoleStartError)
+// Module 13823 (QuestConsoleStartError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestConsoleStartError.tsx");

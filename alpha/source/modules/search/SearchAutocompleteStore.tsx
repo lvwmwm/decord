@@ -1,28 +1,28 @@
-// Module ID: 17769
-// Function ID: 17770
+// Module ID: 17803
+// Function ID: 17804
 // Name: SearchAutocompleteStore
-// Dependencies: [2065, 2125, 2087, 2116, 5019, 1390, 12891, 1085, 6315, 12888, 8920, 5018, 5261, 6319, 6186, 12892, 12889, 504, 584, 2]
+// Dependencies: [2068, 2128, 2090, 2119, 5022, 1392, 12917, 1087, 6317, 12914, 8928, 5021, 5263, 6321, 6188, 12918, 12915, 504, 584, 2]
 
-// Module 17769 (SearchAutocompleteStore)
+// Module 17803 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import isEqualDefault from "isEqual" /* 5261 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6186 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6315 */;
-import GuildUtilsDefault from "GuildUtils" /* 6319 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8920 */;
-import SearchUtils from "SearchUtils" /* 12888 */;
-import SearchTokens from "SearchTokens" /* 12889 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12892 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import StreamerModeStore from "StreamerModeStore" /* 5019 */;
-import UserStore from "UserStore" /* 1390 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12891 */;
-import Constants from "Constants" /* 1085 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import isEqualDefault from "isEqual" /* 5263 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6188 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6317 */;
+import GuildUtilsDefault from "GuildUtils" /* 6321 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8928 */;
+import SearchUtils from "SearchUtils" /* 12914 */;
+import SearchTokens from "SearchTokens" /* 12915 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12918 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import StreamerModeStore from "StreamerModeStore" /* 5022 */;
+import UserStore from "UserStore" /* 1392 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12917 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const SearchTokensDefault = SearchTokens;

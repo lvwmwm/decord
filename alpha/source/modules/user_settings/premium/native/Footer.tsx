@@ -1,21 +1,21 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14486
+// Function ID: 14487
 // Name: Footer
-// Dependencies: [19, 17, 21, 5151, 558, 576, 14455, 7098, 5147, 1126, 5439, 5088, 14456, 2]
+// Dependencies: [19, 17, 21, 5153, 558, 576, 14487, 7100, 5149, 1128, 5441, 5091, 14488, 2]
 
-// Module 14454 (Footer)
+// Module 14486 (Footer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14455 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14456 */;
+import intl2 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14487 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14488 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,8 +94,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0)
     if (tmp10) {
       const obj4 = { children: items1 };
       const obj5 = { style: tmp4.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
-      const Text = tmp(5147).Text;
-      intl = tmp(1126).intl;
+      const Text = tmp(5149).Text;
+      intl = tmp(1128).intl;
       items1 = [React3(Text, obj5), ];
       const obj6 = { style: tmp4.button, children: React3(components_Button_Button.Button, obj7) };
       obj7 = { text: buttonText, variant: "primary", size: "lg", onPress: openPayment, grow: true };

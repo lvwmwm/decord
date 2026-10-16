@@ -1,16 +1,16 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11488
+// Function ID: 11489
 // Name: useFetchStreamPreview
-// Dependencies: [19, 7662, 2065, 4806, 2116, 1096, 558, 576, 504, 7660, 2]
+// Dependencies: [19, 7665, 2068, 4809, 2119, 1098, 558, 576, 504, 7663, 2]
 
-// Module 11468 (useFetchStreamPreview)
-import Constants from "Constants" /* 1096 */;
-import StreamActionCreators from "StreamActionCreators" /* 7660 */;
+// Module 11488 (useFetchStreamPreview)
+import Constants from "Constants" /* 1098 */;
+import StreamActionCreators from "StreamActionCreators" /* 7663 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7662 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7665 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

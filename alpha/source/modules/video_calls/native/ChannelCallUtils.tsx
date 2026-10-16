@@ -1,26 +1,26 @@
-// Module ID: 18228
-// Function ID: 18229
+// Module ID: 18270
+// Function ID: 18271
 // Name: ChannelCallUtils
-// Dependencies: [19, 7645, 1085, 21, 1126, 18229, 7315, 5115, 5165, 5360, 18226, 2000, 18230, 6116, 18231, 8900, 11071, 11394, 14251, 7, 4865, 8700, 2]
+// Dependencies: [19, 7647, 1087, 21, 1128, 18271, 7317, 5118, 5167, 5362, 18268, 2002, 18272, 6118, 18273, 8908, 11086, 11414, 14283, 7, 4868, 8708, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 18228 (ChannelCallUtils)
+// Module 18270 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6116 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8900 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11071 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11394 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14251 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18229 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18230 */;
+import intl2 from "intl" /* 1128 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5167 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5362 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6118 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8908 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11086 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11414 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14283 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18271 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18272 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7645 */;
-import Constants from "Constants" /* 1085 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7647 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const asyncRequire = tmp(2000);
+const asyncRequire = tmp(2002);
 ({ UserSettingsSections: closure_4, AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire, RPC_APPLICATION_LOGGING_CATEGORY: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallUtils.tsx");
@@ -77,7 +77,7 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(18226, dependencyMap.paths);
+      const promise = asyncRequire(18268, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(18231, tmp2.paths);
+      const tmp7 = asyncRequire(18273, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };

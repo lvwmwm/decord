@@ -1,14 +1,14 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13034
+// Function ID: 13035
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1390, 21, 558, 576, 1503, 13009, 504, 4865, 1126, 13010, 5162, 13016, 2]
+// Dependencies: [5, 19, 1392, 21, 558, 576, 1505, 13035, 504, 4868, 1128, 13036, 5164, 13042, 2]
 
-// Module 13008 (ChatInputGuardMessageRequest)
+// Module 13034 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13016 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13042 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -431,14 +431,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1503);
+  obj = channel(1505);
   importDefault = obj.useNavigation();
-  let obj2 = channel(13009);
+  let obj2 = channel(13035);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(13010);
+  let obj4 = channel(13036);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -457,9 +457,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1126).t["e/eQVB"]),
+    message: intl.string(tmp(1128).t["e/eQVB"]),
     subtext: string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI),
-    buttonPrimaryText: intl3.string(tmp(1126).t.Kz8Pwr),
+    buttonPrimaryText: intl3.string(tmp(1128).t.Kz8Pwr),
     buttonPrimaryOnPress: function onAcceptClick(arg0) {
       return obj(...arguments);
     },
@@ -473,11 +473,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     buttonSecondaryLoading: isRejectLoading
   };
   const tmp8 = ChatInputGuardDefault;
-  intl = tmp(1126).intl;
-  const intl2 = tmp(1126).intl;
+  intl = tmp(1128).intl;
+  const intl2 = tmp(1128).intl;
   string = intl2.string;
-  t = tmp(1126).t;
-  intl3 = tmp(1126).intl;
+  t = tmp(1128).t;
+  intl3 = tmp(1128).intl;
   const tmp7 = obj;
   if (!isAcceptLoading) {
     isAcceptLoading = isUserProfileLoading;
@@ -485,9 +485,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  const intl4 = tmp(1126).intl;
+  const intl4 = tmp(1128).intl;
   string2 = intl4.string;
-  t2 = tmp(1126).t;
+  t2 = tmp(1128).t;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }

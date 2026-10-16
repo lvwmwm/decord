@@ -1,195 +1,71 @@
 // Module ID: 4945
 // Function ID: 4946
-// Dependencies: [19, 4934, 4938, 4926]
-// Exports: useViewModelInstance
+// Dependencies: [32, 19, 576, 4940, 4935]
+// Exports: useRiveColor
 
 // Module 4945
-import ArtboardByIndex from "ArtboardByIndex" /* 4934 */;
 import react from "react" /* 19 */;
+import react2 from "react" /* 576 */;
+import _mod4940 from "module_4940" /* 4940 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require;
+let tmp;
+const RiveColor2 = tmp(4935);
+react.useCallback;
+const f32521 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
 
-let c2;
-let c3;
-({ useMemo: c2, useRef: c3 } = react);
-
-export const useViewModelInstance = function useViewModelInstance(arg0, instanceName) {
+export const useRiveColor = function useRiveColor(arg0, arg1) {
   let closure_0;
-  let name;
-  let obj3;
-  _require = arg0;
-  instanceName = undefined;
-  if (instanceName != null) {
-    instanceName = instanceName.instanceName;
-  }
-  if (instanceName != null) {
-    name = instanceName.name;
-  }
-  if (instanceName == null) {
-    instanceName = name;
-  }
-  let artboardName;
-  if (instanceName != null) {
-    artboardName = instanceName.artboardName;
-  }
-  let viewModelName;
-  if (instanceName != null) {
-    viewModelName = instanceName.viewModelName;
-  }
-  let flag;
-  if (instanceName != null) {
-    flag = instanceName.useNew;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  let flag2;
-  if (instanceName != null) {
-    flag2 = instanceName.required;
-  }
-  if (flag2 == null) {
-    flag2 = false;
-  }
-  let onInit;
-  if (instanceName != null) {
-    onInit = instanceName.onInit;
-  }
-  const tmp5 = viewModelName(onInit);
-  const ref = tmp5;
-  tmp5.current = onInit;
-  let obj = require("react");
-  const items = [arg0, instanceName, artboardName, viewModelName, flag];
-  const disposableMemo = obj.useDisposableMemo(() => {
-    let obj11;
-    if (closure_0) {
-      const tmp6 = null != obj && "getViewModelInstance" in obj;
-      if (tmp6) {
-        let viewModelInstance = obj.getViewModelInstance();
-        if (viewModelInstance == null) {
-          viewModelInstance = null;
-        }
-        obj11 = { instance: viewModelInstance, needsDispose: false };
-        const obj2 = { instance: viewModelInstance, needsDispose: false };
-      } else {
-        const tmp7 = null != obj && "defaultArtboardViewModel" in obj;
-        if (tmp7) {
-          let viewModelByNameResult;
-          let instanceByName;
-          if (viewModelName) {
-            viewModelByNameResult = obj.viewModelByName(tmp3);
-            if (!viewModelByNameResult) {
-              const _HermesInternal3 = HermesInternal;
-              obj11 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
-              const obj3 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
-            }
-          } else {
-            let ArtboardByNameResult;
-            const defaultArtboardViewModel = obj.defaultArtboardViewModel;
-            if (artboardName) {
-              const obj5 = ArtboardByIndex;
-              ArtboardByNameResult = obj5.ArtboardByName(tmp2);
-            }
-            viewModelByNameResult = defaultArtboardViewModel(ArtboardByNameResult);
-            if (!viewModelByNameResult) {
-              let obj6;
-              if (artboardName) {
-                const _HermesInternal2 = HermesInternal;
-                obj6 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
-                const obj4 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
-              } else {
-                obj6 = { instance: null, needsDispose: false };
-              }
-              obj11 = obj6;
-            }
-          }
-          if (instanceName) {
-            instanceByName = viewModelByNameResult.createInstanceByName(tmp);
-          } else {
-            instanceByName = viewModelByNameResult.createDefaultInstance();
-          }
-          if (!instanceByName) {
-            let obj7;
-            if (instanceName) {
-              obj7 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-              const _HermesInternal4 = HermesInternal;
-            }
-            obj11 = obj7;
-          }
-          if (instanceByName == null) {
-            instanceByName = null;
-          }
-          obj7 = { instance: instanceByName, needsDispose: true };
-          const obj8 = { instance: instanceByName, needsDispose: true };
-        } else {
-          let instanceByName1;
-          if (instanceName) {
-            instanceByName1 = obj.createInstanceByName(tmp);
-            if (!instanceByName1) {
-              const _HermesInternal = HermesInternal;
-              obj11 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-              const obj9 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
-            }
-          } else if (tmp4) {
-            instanceByName1 = obj.createInstance();
-          } else {
-            instanceByName1 = obj.createDefaultInstance();
-          }
-          if (instanceByName1 == null) {
-            instanceByName1 = null;
-          }
-          obj11 = { instance: instanceByName1, needsDispose: true };
-          const obj10 = { instance: instanceByName1, needsDispose: true };
-        }
-      }
-    } else {
-      obj11 = { instance: "test", needsDispose: true };
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(8);
+  const obj2 = _mod4940;
+  const tmp4 = _slicedToArray(obj2.useRiveProperty(arg1, arg0, f32521), 3);
+  [tmp5, tmp6] = tmp4;
+  require = tmp6;
+  if (cResult[0] !== tmp5) {
+    let fromIntResult;
+    if (undefined !== tmp5) {
+      let RiveColor = RiveColor2.RiveColor;
+      fromIntResult = RiveColor.fromInt(tmp5);
     }
-    const current = obj11.instance && ref.current;
-    if (current) {
-      ref.current(obj11.instance);
-    }
-    return obj11;
-  }, (needsDispose) => {
-    const tmp = needsDispose.needsDispose && needsDispose.instance;
-    if (tmp) {
-      const obj = closure_0(instanceName[3]);
-      obj.callDispose(needsDispose.instance);
-    }
-  }, items);
-  const items1 = [disposableMemo.error];
-  let tmp7 = artboardName(function() {
-    let error = null;
-    if (disposableMemo.error) {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      error = new Error(tmp.error);
-    }
-    return error;
-  }, items1);
-  if (flag2) {
-    if (null === disposableMemo.instance) {
-      let str = "useViewModelInstance: Failed to get ViewModelInstance. Ensure the source has a valid ViewModel and instance available.";
-      let _Error = Error;
-      if (disposableMemo.error) {
-        let _HermesInternal = HermesInternal;
-        str = "useViewModelInstance: " + disposableMemo.error;
-      }
-      let self = this;
-      let self2 = this;
-      const _Error1 = new _Error(str);
-      throw _Error1;
-    }
-  }
-  const instance = disposableMemo.instance;
-  if (instance) {
-    let obj2 = { instance, error: null };
-    obj3 = obj2;
-  } else if (undefined === instance) {
-    obj3 = { instance: "Array", error: 0 };
+    cResult[0] = tmp5;
+    cResult[1] = fromIntResult;
+    tmp8 = fromIntResult;
   } else {
-    obj3 = { instance: null, error: tmp7 };
+    tmp8 = cResult[1];
   }
-  return obj3;
+  if (cResult[2] !== tmp6) {
+    const fn = function p(str) {
+      let fromHexStringResult = str;
+      if (typeof str === "string") {
+        const RiveColor = RiveColor2.RiveColor;
+        fromHexStringResult = RiveColor.fromHexString(str);
+      }
+      tmp6(fromHexStringResult.toInt());
+    };
+    cResult[2] = tmp6;
+    cResult[3] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === tmp4[2]) {
+    if (cResult[5] === tmp10) {
+      let tmp11;
+      if (cResult[6] === tmp8) {
+        tmp11 = cResult[7];
+      }
+      return tmp11;
+    }
+  }
+  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
+  cResult[4] = tmp4[2];
+  cResult[5] = tmp10;
+  cResult[6] = tmp8;
+  cResult[7] = obj3;
+  tmp11 = obj3;
 };

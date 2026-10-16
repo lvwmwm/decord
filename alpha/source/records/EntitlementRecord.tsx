@@ -1,15 +1,15 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7334
+// Function ID: 7335
 // Name: EntitlementRecord
-// Dependencies: [1405, 6311, 1404, 1085, 4825, 7333, 2]
+// Dependencies: [1407, 6313, 1406, 1087, 4828, 7335, 2]
 
-// Module 7332 (EntitlementRecord)
-import Constants from "Constants" /* 1085 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7333 */;
-import Record from "Record" /* 1405 */;
-import SKURecord from "SKURecord" /* 6311 */;
-import UserRecord from "UserRecord" /* 1404 */;
+// Module 7334 (EntitlementRecord)
+import Constants from "Constants" /* 1087 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 7335 */;
+import Record from "Record" /* 1407 */;
+import SKURecord from "SKURecord" /* 6313 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 const EntitlementTypes = Constants.EntitlementTypes;

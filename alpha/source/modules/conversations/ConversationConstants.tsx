@@ -1,9 +1,9 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7534
+// Function ID: 7535
 // Name: ConversationConstants
 // Dependencies: [2]
 
-// Module 7532 (ConversationConstants)
+// Module 7534 (ConversationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");

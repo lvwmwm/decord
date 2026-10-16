@@ -1,20 +1,20 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8227
+// Function ID: 8228
 // Name: MarkupASTUtils
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 8224 (MarkupASTUtils)
+// Module 8227 (MarkupASTUtils)
 import size from "module_2" /* 2 */;
 
 let set;
 
-const f98323 = (content) => {
+const f98612 = (content) => {
   if (items === undefined) {
     items = [];
   }
   if (Array.isArray(content)) {
-    const item = content.forEach(f98323);
+    const item = content.forEach(f98612);
   } else if (typeof content.content === "string") {
     items.push(content.content);
   } else if (null != content.content) {
@@ -25,7 +25,7 @@ const f98323 = (content) => {
     }
     const _Array = Array;
     if (Array.isArray(content)) {
-      const item1 = content.forEach(f98323);
+      const item1 = content.forEach(f98612);
     } else if (typeof content.content === "string") {
       items1.push(content.content);
     } else if (null != content.content) {
@@ -40,7 +40,7 @@ function collectAst(content, items1) {
     items = [];
   }
   if (Array.isArray(content)) {
-    const item = content.forEach(f98323);
+    const item = content.forEach(f98612);
   } else if (typeof content.content === "string") {
     items.push(content.content);
   } else if (null != content.content) {
@@ -273,7 +273,7 @@ export { reinsertConsumedListSeparators };
 export const astToString = function astToString(content) {
   let items = [];
   if (Array.isArray(content)) {
-    let item = content.forEach(f98323);
+    let item = content.forEach(f98612);
   } else if (typeof content.content === "string") {
     items.push(content.content);
   } else if (null != content.content) {
@@ -281,7 +281,7 @@ export const astToString = function astToString(content) {
     items = undefined;
     let _Array = Array;
     if (Array.isArray(content)) {
-      let item1 = content.forEach(f98323);
+      let item1 = content.forEach(f98612);
     } else if (typeof content.content === "string") {
       items.push(content.content);
     } else if (null != content.content) {
@@ -293,7 +293,7 @@ export const astToString = function astToString(content) {
 export { flattenAst };
 export { constrainAst };
 export const getIndexedAST = function getIndexedAST(arr, arg1) {
-  const f98326 = (type) => {
+  const f98615 = (type) => {
     let num = 0;
     if (0 !== closure_2) {
       num = arr[tmp - 1].endIndex;
@@ -317,7 +317,7 @@ export const getIndexedAST = function getIndexedAST(arr, arg1) {
                       const content = type.content;
                       const startIndex = type.startIndex;
                       let c2 = 0;
-                      const mapped = content.map(f98326);
+                      const mapped = content.map(f98615);
                       type.endIndex = mapped[mapped.length - 1].endIndex;
                       return type;
                     }
@@ -329,7 +329,7 @@ export const getIndexedAST = function getIndexedAST(arr, arg1) {
             const content1 = type.content;
             closure_1 = type.startIndex + 1;
             c2 = 0;
-            const mapped1 = content1.map(f98326);
+            const mapped1 = content1.map(f98615);
             type.endIndex = mapped1[mapped1.length - 1].endIndex + 1;
             return type;
           }
@@ -340,13 +340,13 @@ export const getIndexedAST = function getIndexedAST(arr, arg1) {
     const content2 = type.content;
     closure_1 = type.startIndex + 2;
     c2 = 0;
-    const mapped2 = content2.map(f98326);
+    const mapped2 = content2.map(f98615);
     type.endIndex = mapped2[mapped2.length - 1].endIndex + 2;
     return type;
   };
   let closure_0 = arr;
   let closure_1 = arg1;
   let closure_2 = 0;
-  return arr.map(f98326);
+  return arr.map(f98615);
 };
 export { MarkupParserNodeTypeError };

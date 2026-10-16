@@ -1,21 +1,21 @@
-// Module ID: 17388
-// Function ID: 17389
+// Module ID: 17422
+// Function ID: 17423
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 4995, 1085, 1392, 21, 5151, 9961, 2000, 13274, 7127, 9490, 7098, 558, 576, 17332, 14680, 504, 17347, 1126, 17389, 587, 10843, 2]
+// Dependencies: [5, 19, 17, 4998, 1087, 1394, 21, 5153, 9977, 2002, 13300, 7129, 9506, 7100, 558, 576, 17366, 14712, 504, 17381, 1128, 17423, 587, 10858, 2]
 
-// Module 17388 (GuildsBarCreateJoinButton)
+// Module 17422 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7127 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17332 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17347 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7129 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17366 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5151 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import Constants from "Constants" /* 1087 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   obj = enabled(576);
   const cResult = obj.c(17);
   const tmp4 = closure_13();
-  const obj2 = enabled(17332);
+  const obj2 = enabled(17366);
   const guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { location: "GuildsBarCreateJoinButton" };
@@ -148,7 +148,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(14680).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(14712).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig(first).enabled;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
@@ -186,9 +186,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const stretch = tmp4.stretch;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.l5WIbf);
-    const tmp16 = jsx(tmp(17389).HomeDrawerAddServerRowExpandedChildren, {});
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.l5WIbf);
+    const tmp16 = jsx(tmp(17423).HomeDrawerAddServerRowExpandedChildren, {});
     cResult[5] = stringResult;
     cResult[6] = tmp16;
     tmp13 = tmp16;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp18 = tmp17;
   }
   if (cResult[7] !== MOBILE_GUILDBAR_ICON_DEFAULT) {
-    const tmp21 = jsx(tmp(10843).CirclePlusIcon, { size: "md", color: MOBILE_GUILDBAR_ICON_DEFAULT });
+    const tmp21 = jsx(tmp(10858).CirclePlusIcon, { size: "md", color: MOBILE_GUILDBAR_ICON_DEFAULT });
     cResult[7] = MOBILE_GUILDBAR_ICON_DEFAULT;
     cResult[8] = tmp21;
     tmp19 = tmp21;
@@ -235,7 +235,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  const tmp23 = jsx(tmp18(17332), { selected: tmp10, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp11, label: tmp12, expandedChildren: tmp13, children: tmp19 });
+  const tmp23 = jsx(tmp18(17366), { selected: tmp10, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp11, label: tmp12, expandedChildren: tmp13, children: tmp19 });
   cResult[9] = tmp11;
   cResult[10] = tmp10;
   cResult[11] = tmp19;
@@ -252,9 +252,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp9;
   let tmp3 = dependencyMap;
   let tmp = closure_13();
-  obj = enabled(17332);
+  obj = enabled(17366);
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  const GameCommunityAddServerEntryExperiment = enabled(14680).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = enabled(14712).GameCommunityAddServerEntryExperiment;
   enabled = GameCommunityAddServerEntryExperiment.useConfig({ location: "GuildsBarCreateJoinButton" }).enabled;
   const items = [SelectedGuildStore];
   const obj2 = enabled(504);
@@ -277,10 +277,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, items1);
-  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1126).t.l5WIbf), expandedChildren: "portal-keyboard-sheet", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: tmp5, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(enabled(1128).t.l5WIbf), expandedChildren: null, children: jsx(CirclePlusIcon, obj5) };
   tmp9 = GuildsBarAnimatedItemWrapperDefault;
-  intl = tmp2(1126).intl;
-  CirclePlusIcon = tmp2(10843).CirclePlusIcon;
+  intl = tmp2(1128).intl;
+  CirclePlusIcon = tmp2(10858).CirclePlusIcon;
   const colors = nativeDefault.colors;
   obj5 = { size: "md", color: tmp5 ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
   return jsx(View, obj3);

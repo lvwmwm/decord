@@ -1,43 +1,41 @@
 // Module ID: 6777
 // Function ID: 6778
-// Dependencies: [6757, 19, 6778, 6798]
-// Exports: useRecyclerViewManager
+// Dependencies: [6759, 19, 6778]
+// Exports: useLayoutState
 
 // Module 6777
-import RecyclerViewManager from "RecyclerViewManager" /* 6778 */;
-import _slicedToArray from "_slicedToArray" /* 6757 */;
+import react2 from "react" /* 6778 */;
+import _slicedToArray from "_slicedToArray" /* 6759 */;
 import react from "react" /* 19 */;
 
 let c3;
 let closure_4;
-let hasOwnProperty;
-({ useEffect: c3, useMemo: closure_4, useState: hasOwnProperty } = react);
+({ useState: c3, useCallback: closure_4 } = react);
 
-export const useRecyclerViewManager = (data) => {
-  let velocityTracker;
-  let recyclerViewManager = velocityTracker(closure_5(() => {
-    recyclerViewManager = new RecyclerViewManager.RecyclerViewManager(data);
-    return recyclerViewManager;
-  }), 1)[0];
-  velocityTracker = velocityTracker(closure_5(() => {
-    velocityTracker = new data(recyclerViewManager[3]).VelocityTracker();
-    return velocityTracker;
-  }), 1)[0];
-  const items = [data];
-  data = data.data;
-  closure_4(() => {
-    recyclerViewManager.updateProps(data);
-  }, items);
-  const items1 = [data];
-  closure_4(() => {
-    recyclerViewManager.processDataUpdate();
+export const useLayoutState = function useLayoutState(arg0) {
+  let closure_0;
+  let first;
+  [first, closure_0] = _false(arg0);
+  let obj = react2;
+  const recyclerViewContext = obj.useRecyclerViewContext();
+  const items = [first, ];
+  const items1 = [recyclerViewContext];
+  items[1] = React3((arg0, arg1) => {
+    closure_0 = arg0;
+    const tmp = closure_0((arg0) => {
+      let tmpResult = closure_0;
+      if (typeof closure_0 === "function") {
+        tmpResult = tmp(arg0);
+      }
+      return tmpResult;
+    });
+    const tmp2 = arg1;
+    if (!tmp2) {
+      const obj = recyclerViewContext;
+      if (recyclerViewContext != null) {
+        obj.layout();
+      }
+    }
   }, items1);
-  closure_3(() => {
-    recyclerViewManager.restoreIfNeeded();
-    return () => {
-      recyclerViewManager.dispose();
-      velocityTracker.cleanUp();
-    };
-  }, []);
-  return { recyclerViewManager, velocityTracker };
+  return items;
 };

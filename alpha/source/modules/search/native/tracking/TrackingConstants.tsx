@@ -1,10 +1,10 @@
-// Module ID: 9532
-// Function ID: 9533
+// Module ID: 9548
+// Function ID: 9549
 // Name: TrackingConstants
-// Dependencies: [9533, 2]
+// Dependencies: [9549, 2]
 
-// Module 9532 (TrackingConstants)
-import SearchConstants from "SearchConstants" /* 9533 */;
+// Module 9548 (TrackingConstants)
+import SearchConstants from "SearchConstants" /* 9549 */;
 import size from "module_2" /* 2 */;
 
 let SearchHistoryItemTypes;

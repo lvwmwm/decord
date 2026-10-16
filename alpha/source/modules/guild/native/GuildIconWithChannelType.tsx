@@ -1,21 +1,21 @@
-// Module ID: 12618
-// Function ID: 12619
+// Module ID: 12641
+// Function ID: 12642
 // Name: GuildIconWithChannelType
-// Dependencies: [109, 19, 17, 21, 6379, 5151, 587, 558, 576, 8376, 1200, 12619, 9234, 2]
+// Dependencies: [109, 19, 17, 21, 6381, 5153, 587, 558, 576, 8384, 1202, 12642, 9247, 2]
 
-// Module 12618 (GuildIconWithChannelType)
+// Module 12641 (GuildIconWithChannelType)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import GuildIcon from "GuildIcon" /* 6379 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
-import ClipView from "ClipView" /* 9234 */;
-import Pile2 from "Pile" /* 12619 */;
+import native from "native" /* 1202 */;
+import GuildIcon from "GuildIcon" /* 6381 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
+import ClipView from "ClipView" /* 9247 */;
+import Pile2 from "Pile" /* 12642 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildIconWit
                 }
               }
               obj2 = { "aria-label": tmp4, shape: ClipView.CutoutShape.Circle, size: tmp16, gap, depthX: sum1, depthY: sum1, children: items };
-              const Pile = tmp(12619).Pile;
+              const Pile = tmp(12642).Pile;
               items = [tmp21, tmp33];
               const tmp39 = metroImportAll(Pile, obj2);
               cResult[27] = tmp4;

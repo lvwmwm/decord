@@ -1,14 +1,14 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15876
+// Function ID: 15877
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 558, 576, 5147, 1126, 2568, 2]
+// Dependencies: [21, 558, 576, 5149, 1128, 2571, 2]
 
-// Module 15843 (useScheduleTimeControlsRowProps)
+// Module 15876 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef2571 from "module_2571" /* 2571 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { subLabel: null, trailing: "r" };
-      ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2568.fOBIZH) });
-      const Text = tmp(5147).Text;
-      intl3 = tmp(1126).intl;
+      ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2571.fOBIZH) });
+      const Text = tmp(5149).Text;
+      intl3 = tmp(1128).intl;
       cResult[0] = obj2;
       first = obj2;
     } else {
@@ -56,9 +56,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
       tmp4 = cResult[2];
     }
     if (cResult[4] !== arr.length) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const obj4 = { count: arr.length };
-      const formatToPlainStringResult = intl.formatToPlainString(_modDef2568.XfwcpX, obj4);
+      const formatToPlainStringResult = intl.formatToPlainString(_modDef2571.XfwcpX, obj4);
       cResult[4] = arr.length;
       cResult[5] = formatToPlainStringResult;
       tmp8 = formatToPlainStringResult;
@@ -67,9 +67,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
     }
     if (cResult[6] !== tmp4) {
       let stringResult;
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const string = intl2.string;
-      const tmp13 = _modDef2568;
+      const tmp13 = _modDef2571;
       if (tmp4) {
         stringResult = string(tmp13["8vDHRq"]);
       } else {
@@ -110,19 +110,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
   let tmp10;
   if (0 === arr.length) {
     const obj2 = { subLabel: null, trailing: "r" };
-    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2568.fOBIZH) });
+    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2571.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;
     return obj2;
   } else {
-    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2568.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
+    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2571.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
     const someResult = arr.some((enabled) => enabled.enabled);
     intl2 = intl4.intl;
     obj5 = { count: arr.length };
     Text2 = Text_Text.Text;
     const intl3 = intl4.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2568;
+    const tmp11 = _modDef2571;
     tmp10 = jsx;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);

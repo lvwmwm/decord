@@ -1,21 +1,21 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7332
+// Function ID: 7333
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1390, 4831, 7331, 1085, 1392, 4758, 38, 4840, 4825, 558, 576, 504, 7337, 5456, 12, 2]
+// Dependencies: [32, 19, 1392, 4834, 7333, 1087, 1394, 4761, 38, 4843, 4828, 558, 576, 504, 7339, 5458, 12, 2]
 
-// Module 7330 (useFractionalPremiumInfo)
+// Module 7332 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import PremiumUtils from "PremiumUtils" /* 4825 */;
-import BillingUtils from "BillingUtils" /* 4840 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7337 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import PremiumUtils from "PremiumUtils" /* 4828 */;
+import BillingUtils from "BillingUtils" /* 4843 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import SubscriptionStore from "SubscriptionStore" /* 4831 */;
-import EntitlementStore from "EntitlementStore" /* 7331 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import UserStore from "UserStore" /* 1392 */;
+import SubscriptionStore from "SubscriptionStore" /* 4834 */;
+import EntitlementStore from "EntitlementStore" /* 7333 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  const obj = { isFractionalPremiumActive: false, fractionalState: unpackModuleId.NONE, startsAt: _modDef4758(0), endsAt: _modDef4758(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4758(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  const obj = { isFractionalPremiumActive: false, fractionalState: unpackModuleId.NONE, startsAt: _modDef4761(0), endsAt: _modDef4761(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4761(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   let tmp = unpackModuleId;
   let tmp2 = importDefault;
   const currentUser = isFetching.currentUser;
@@ -109,25 +109,25 @@ function calculateFractionalPremiumInfo(isFetching) {
       }
       const obj7 = { isFractionalPremiumActive: null != first, fractionalState: NONE, startsAt: tmp10, endsAt: tmp2ResultResult, currentEntitlementId: str, currentEntitlementEndsAt: tmp17, unactivatedUnits: unactivatedFractionalPremiumUnits, fetched: fetchedAllEntitlements };
       if (null != first) {
-        tmp10 = _modDef4758(first.startsAt);
+        tmp10 = _modDef4761(first.startsAt);
       } else {
-        tmp10 = _modDef4758(0);
+        tmp10 = _modDef4761(0);
       }
       if (null != first) {
-        const tmp2Result = _modDef4758;
+        const tmp2Result = _modDef4761;
         const obj4 = PremiumUtils;
         tmp2ResultResult = tmp2Result(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
       } else {
-        tmp2ResultResult = _modDef4758(0);
+        tmp2ResultResult = _modDef4761(0);
       }
       str = "";
       if (null != first) {
         str = first.id;
       }
       if (null != first) {
-        tmp17 = _modDef4758(first.endsAt);
+        tmp17 = _modDef4761(first.endsAt);
       } else {
-        tmp17 = _modDef4758(0);
+        tmp17 = _modDef4761(0);
       }
       return obj7;
     }

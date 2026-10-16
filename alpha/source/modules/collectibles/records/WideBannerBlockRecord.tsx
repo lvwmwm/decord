@@ -1,10 +1,10 @@
-// Module ID: 7521
-// Function ID: 7522
+// Module ID: 7523
+// Function ID: 7524
 // Name: WideBannerBlockRecord
-// Dependencies: [7511, 2]
+// Dependencies: [7513, 2]
 
-// Module 7521 (WideBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 7511 */;
+// Module 7523 (WideBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7513 */;
 import size from "module_2" /* 2 */;
 
 class WideBannerBlockRecord {

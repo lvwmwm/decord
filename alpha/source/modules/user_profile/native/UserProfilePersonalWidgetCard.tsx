@@ -1,29 +1,29 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 14076
+// Function ID: 14077
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1085, 21, 5151, 587, 558, 576, 14045, 14046, 5147, 1126, 2041, 14047, 5088, 5451, 8347, 4883, 504, 9253, 14042, 7123, 2]
+// Dependencies: [32, 19, 17, 502, 1087, 21, 5153, 587, 558, 576, 14077, 14078, 5149, 1128, 2044, 14079, 5091, 5453, 8354, 4886, 504, 9266, 14074, 7125, 2]
 
-// Module 14044 (UserProfilePersonalWidgetCard)
+// Module 14076 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import native from "native" /* 4883 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7123 */;
-import GifTagDefault from "GifTag" /* 8347 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14042 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14045 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14046 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import native from "native" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7125 */;
+import GifTagDefault from "GifTag" /* 8354 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14074 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14077 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14078 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const WidgetAssetUtils = tmp(14047);
+const WidgetAssetUtils = tmp(14079);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -169,9 +169,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       tmp7 = cResult[3];
     }
     if (cResult[4] !== isExpanded) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const string = intl.string;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       const stringResult = string(isExpanded ? t["6MwJo/"] : t.lBeKY2);
       cResult[4] = isExpanded;
       cResult[5] = stringResult;
@@ -229,10 +229,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       children: authStore(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5147).Text;
-    const intl = tmp(1126).intl;
+    Text = tmp(5149).Text;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     obj4 = { variant: "text-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
     tmp5Result = tmp5(hasOwnProperty, obj2);
   } else {
@@ -289,7 +289,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F147321 */ });
+        return closure_0(() => { /* body not rendered: F147788 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +297,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F147321 */ });
+        return closure_0(() => { /* body not rendered: F147788 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F147321 */ });
+        return closure_0(() => { /* body not rendered: F147788 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F147321 */ });
+        return closure_0(() => { /* body not rendered: F147788 */ });
       }
     }
   }
@@ -471,7 +471,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
                     const obj4 = { theme: ThemeTypes.DARK, primaryColor: null, secondaryColor: null, children: unpackModuleId(metroImportDefault, obj5) };
                     obj5 = { style: tmp4.coverContainer, children: items };
                     items = [tmp21, tmp29, tmp16, tmp36];
-                    const ThemeContextProvider = tmp(4883).ThemeContextProvider;
+                    const ThemeContextProvider = tmp(4886).ThemeContextProvider;
                     const tmp45 = authStore(ThemeContextProvider, obj4);
                     cResult[22] = tmp16;
                     cResult[23] = tmp4.coverContainer;
@@ -510,7 +510,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
           }
           if (canToggleAnimation) {
             const obj8 = { style: metroRequire.absoluteFill, onPress: toggleAnimation, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.MxXgrL), children: authStore(FastImageDefault, obj9) };
-            intl = tmp(1126).intl;
+            intl = tmp(1128).intl;
             obj9 = { source, style: metroRequire.absoluteFill, resizeMode: "cover" };
             tmp22Result = tmp22(hasOwnProperty, obj8);
           } else {
@@ -587,7 +587,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     const ThemeContextProvider = native.ThemeContextProvider;
     if (canToggleAnimation) {
       const obj6 = { style: metroRequire.absoluteFill, onPress: toggleAnimation, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.MxXgrL), children: authStore(FastImageDefault, obj7) };
-      intl = tmp25(1126).intl;
+      intl = tmp25(1128).intl;
       obj7 = { source, style: metroRequire.absoluteFill, resizeMode: "cover" };
       tmp24Result = tmp24(hasOwnProperty, obj6);
       tmp15 = metroRequire;
@@ -603,7 +603,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5451), obj9);
+        tmp24Result4 = tmp24(tmp14(5453), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -613,7 +613,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8347), obj10);
+      tmp24Result5 = tmp24(tmp14(8354), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -720,7 +720,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function FieldR
       tmp13Result = tmp6;
       if (canToggleAnimation) {
         const obj6 = { onPress: toggleAnimation, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.MxXgrL), children: items2 };
-        intl = tmp(1126).intl;
+        intl = tmp(1128).intl;
         items2 = [tmp6, ];
         let tmp15 = null;
         const tmp13 = unpackModuleId;
@@ -923,7 +923,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(9253).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9266).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1044,13 +1044,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9253).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9266).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
-  const tmp6 = disableInteraction(7123);
+  const tmp6 = disableInteraction(7125);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(14042), obj3);
+    tmp4Result = tmp4(tmp5(14074), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

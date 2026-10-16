@@ -1,17 +1,17 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16267
+// Function ID: 16268
 // Name: SettingsAppearanceMessagesHeaderItem
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 5149, 2]
 
-// Module 16234 (SettingsAppearanceMessagesHeaderItem)
+// Module 16267 (SettingsAppearanceMessagesHeaderItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesHe
   const messagesHeaderContainer = tmp4.messagesHeaderContainer;
   const textNormal = animatedStyles.textNormal;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.OIgYlQ);
     cResult[0] = stringResult;
     first = stringResult;

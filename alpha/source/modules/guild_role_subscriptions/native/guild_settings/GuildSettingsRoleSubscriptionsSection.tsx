@@ -1,23 +1,23 @@
-// Module ID: 18567
-// Function ID: 18568
+// Module ID: 18609
+// Function ID: 18610
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 2083, 1390, 1085, 21, 558, 576, 504, 1126, 6400, 18568, 18569, 18570, 18571, 6485, 7181, 2]
+// Dependencies: [19, 2086, 1392, 1087, 21, 558, 576, 504, 1128, 6402, 18610, 18611, 18612, 18613, 6487, 7183, 2]
 
-// Module 18567 (GuildSettingsRoleSubscriptionsSection)
+// Module 18609 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1126 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import TableRow5 from "TableRow" /* 6400 */;
-import TableRowGroup2 from "TableRowGroup" /* 6485 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7181 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18568 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18569 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18570 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18571 */;
+import intl6 from "intl" /* 1128 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import TableRow5 from "TableRow" /* 6402 */;
+import TableRowGroup2 from "TableRowGroup" /* 6487 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7183 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18610 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18611 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18612 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18613 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -68,24 +68,24 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
   const tmpResult = guild(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(guild(1126).t["KzCF/6"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(guild(1128).t["KzCF/6"]);
     cResult[3] = stringResult;
     tmp8 = stringResult;
   } else {
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(guild(1126).t["/CfKoD"]);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(guild(1128).t["/CfKoD"]);
     cResult[4] = stringResult1;
     tmp10 = stringResult1;
   } else {
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: pushScreen(18568) };
-    const Icon = tmp(6400).TableRow.Icon;
+    const obj2 = { source: pushScreen(18610) };
+    const Icon = tmp(6402).TableRow.Icon;
     const tmp15 = closure_7(Icon, obj2);
     cResult[5] = tmp15;
     tmp12 = tmp15;
@@ -101,7 +101,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
           return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_BASIC);
         }
     };
-    const tmp18 = closure_7(guild(6400).TableRow, obj3, "guild-role-subscriptions-basic");
+    const tmp18 = closure_7(guild(6402).TableRow, obj3, "guild-role-subscriptions-basic");
     cResult[6] = pushScreen;
     cResult[7] = tmp18;
     tmp16 = tmp18;
@@ -109,16 +109,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
     tmp16 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(guild(1126).t.pXbGYc);
+    const intl3 = tmp(1128).intl;
+    const stringResult2 = intl3.string(guild(1128).t.pXbGYc);
     cResult[8] = stringResult2;
     tmp19 = stringResult2;
   } else {
     tmp19 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { source: pushScreen(18569) };
-    const Icon2 = tmp(6400).TableRow.Icon;
+    const obj4 = { source: pushScreen(18611) };
+    const Icon2 = tmp(6402).TableRow.Icon;
     const tmp24 = closure_7(Icon2, obj4);
     cResult[9] = tmp24;
     tmp21 = tmp24;
@@ -134,7 +134,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
           return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_TIERS);
         }
     };
-    const tmp27 = closure_7(guild(6400).TableRow, obj5, "guild-role-subscriptions-tiers");
+    const tmp27 = closure_7(guild(6402).TableRow, obj5, "guild-role-subscriptions-tiers");
     cResult[10] = pushScreen;
     cResult[11] = tmp27;
     tmp25 = tmp27;
@@ -152,8 +152,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
       }
       const _Symbol = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1126).intl;
-        const stringResult3 = intl5.string(guild(1126).t.C5Dbwn);
+        const intl5 = tmp(1128).intl;
+        const stringResult3 = intl5.string(guild(1128).t.C5Dbwn);
         cResult[16] = stringResult3;
         tmp32 = stringResult3;
       } else {
@@ -161,8 +161,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
       }
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj6 = { source: pushScreen(18571) };
-        const Icon4 = tmp(6400).TableRow.Icon;
+        const obj6 = { source: pushScreen(18613) };
+        const Icon4 = tmp(6402).TableRow.Icon;
         const tmp37 = closure_7(Icon4, obj6);
         cResult[17] = tmp37;
         tmp34 = tmp37;
@@ -178,7 +178,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
                   return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_EMOJIS);
                 }
         };
-        const tmp40 = closure_7(guild(6400).TableRow, obj7, "guild-role-subscriptions-emojis");
+        const tmp40 = closure_7(guild(6402).TableRow, obj7, "guild-role-subscriptions-emojis");
         cResult[18] = pushScreen;
         cResult[19] = tmp40;
         tmp38 = tmp40;
@@ -198,7 +198,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
       }
       const obj8 = { title: tmp8, hasIcons: true, children: items1 };
       items1 = [tmp16, tmp25, tmp28, tmp38];
-      const tmp43 = closure_8(guild(6485).TableRowGroup, obj8);
+      const tmp43 = closure_8(guild(6487).TableRowGroup, obj8);
       cResult[20] = tmp28;
       cResult[21] = tmp38;
       cResult[22] = tmp16;
@@ -210,7 +210,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
   let tmp29 = stateFromStores;
   if (tmp29) {
     const obj9 = {
-      label: intl4.string(guild(1126).t.p2Rsdl),
+      label: intl4.string(guild(1128).t.p2Rsdl),
       arrow: true,
       icon: closure_7(Icon3, obj10),
       onPress() {
@@ -218,10 +218,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
           return pushScreen(metroRequire.ROLE_SUBSCRIPTIONS_PAYMENTS, obj);
         }
     };
-    const TableRow = tmp(6400).TableRow;
-    intl4 = tmp(1126).intl;
-    obj10 = { source: pushScreen(18570) };
-    Icon3 = tmp(6400).TableRow.Icon;
+    const TableRow = tmp(6402).TableRow;
+    intl4 = tmp(1128).intl;
+    obj10 = { source: pushScreen(18612) };
+    Icon3 = tmp(6402).TableRow.Icon;
     tmp29 = closure_7(TableRow, obj9, "guild-role-subscriptions-payments");
   }
   cResult[12] = guild;
@@ -289,10 +289,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
           return importDefault(metroRequire.ROLE_SUBSCRIPTIONS_PAYMENTS, obj);
         }
     };
-    const TableRow3 = tmp(6400).TableRow;
-    intl4 = tmp(1126).intl;
+    const TableRow3 = tmp(6402).TableRow;
+    intl4 = tmp(1128).intl;
     obj8 = { source: AssetRegistryDefault3 };
-    Icon3 = tmp(6400).TableRow.Icon;
+    Icon3 = tmp(6402).TableRow.Icon;
     stateFromStores = tmp5(TableRow3, obj7, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
@@ -304,10 +304,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
       return importDefault(metroRequire.ROLE_SUBSCRIPTIONS_EMOJIS);
     }
   };
-  const TableRow4 = tmp(6400).TableRow;
-  intl5 = tmp(1126).intl;
+  const TableRow4 = tmp(6402).TableRow;
+  intl5 = tmp(1128).intl;
   obj10 = { source: AssetRegistryDefault4 };
-  Icon4 = tmp(6400).TableRow.Icon;
+  Icon4 = tmp(6402).TableRow.Icon;
   items1[3] = closure_7(TableRow4, obj9, "guild-role-subscriptions-emojis");
   return tmp4(TableRowGroup, obj2);
 });

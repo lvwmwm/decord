@@ -1,79 +1,79 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 17878
+// Function ID: 17879
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4808, 2069, 2083, 9916, 2065, 4804, 2087, 4806, 6251, 17845, 4816, 1390, 17846, 1085, 2072, 7201, 1125, 1096, 21, 5151, 587, 558, 576, 504, 10566, 4883, 12, 17847, 5166, 1126, 6421, 9518, 9915, 4865, 8826, 7202, 4820, 1403, 5025, 17848, 8824, 5360, 5147, 8855, 5481, 5458, 7165, 12473, 17849, 5851, 5033, 17850, 6506, 6994, 1382, 6485, 7115, 6140, 6402, 14949, 17851, 9482, 4813, 8827, 17852, 17853, 6483, 6482, 2074, 2076, 2128, 5474, 6400, 7190, 8840, 8990, 10699, 5097, 2075, 17858, 7002, 10523, 15890, 10564, 8119, 5110, 10482, 8440, 10568, 5095, 5108, 5437, 10695, 7790, 9299, 6405, 17171, 8800, 1503, 2]
+// Dependencies: [5, 19, 17, 4811, 2072, 2086, 9932, 2068, 4807, 2090, 4809, 6253, 17879, 4819, 1392, 17880, 1087, 2075, 7203, 1127, 1098, 21, 5153, 587, 558, 576, 504, 10581, 4886, 12, 17881, 5168, 1128, 6423, 9534, 9931, 4868, 8834, 7204, 4823, 1405, 5028, 17882, 8832, 5362, 5149, 8863, 5483, 5460, 7167, 12496, 17883, 5853, 5036, 17884, 6508, 6996, 1384, 6487, 7117, 6142, 6404, 14982, 17885, 9498, 4816, 8835, 17886, 17887, 6485, 6484, 2077, 2079, 2131, 5476, 6402, 7192, 8848, 8998, 10714, 5100, 2078, 17892, 7004, 10538, 15923, 10579, 8122, 5113, 10497, 8448, 10583, 5098, 5111, 5439, 10710, 7793, 9312, 6407, 17205, 8808, 1505, 2]
 
-// Module 17844 (ChannelSettingsOverview)
+// Module 17878 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1096 */;
-import ThreadConstants from "ThreadConstants" /* 1125 */;
-import intl10 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2074 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2076 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4813 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
-import native from "native" /* 4883 */;
-import shared from "shared" /* 5025 */;
-import LinkIcon from "LinkIcon" /* 5097 */;
-import ClockIcon from "ClockIcon" /* 5110 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import Stack_Stack from "Stack/Stack" /* 5437 */;
-import ChannelUtils from "ChannelUtils" /* 5474 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import AgeGateUtils from "AgeGateUtils" /* 6140 */;
-import Card_Card from "Card/Card" /* 6402 */;
-import TableRadioRow3 from "TableRadioRow" /* 6482 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6483 */;
-import TableRowGroup3 from "TableRowGroup" /* 6485 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7115 */;
-import ThreadHooks from "ThreadHooks" /* 7190 */;
-import ForumConstants from "ForumConstants" /* 7201 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7202 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8119 */;
-import LockIcon from "LockIcon" /* 8440 */;
-import Form2 from "Form" /* 8800 */;
-import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8826 */;
-import AppChannelApplicationSelectorDefault from "AppChannelApplicationSelector" /* 8827 */;
-import ThreadAutoArchive from "ThreadAutoArchive" /* 9482 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9915 */;
-import XLargeIcon from "XLargeIcon" /* 10482 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10564 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10568 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 10695 */;
-import threadActionSheets from "threadActionSheets" /* 10699 */;
-import Slider2 from "Slider" /* 14949 */;
-import ChannelSettingsConstants from "ChannelSettingsConstants" /* 17846 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 17847 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 17848 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 17850 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 17851 */;
-import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 17853 */;
+import Constants2 from "Constants" /* 1098 */;
+import ThreadConstants from "ThreadConstants" /* 1127 */;
+import intl10 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2077 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2079 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4816 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import native from "native" /* 4886 */;
+import shared from "shared" /* 5028 */;
+import LinkIcon from "LinkIcon" /* 5100 */;
+import ClockIcon from "ClockIcon" /* 5113 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import Stack_Stack from "Stack/Stack" /* 5439 */;
+import ChannelUtils from "ChannelUtils" /* 5476 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import AgeGateUtils from "AgeGateUtils" /* 6142 */;
+import Card_Card from "Card/Card" /* 6404 */;
+import TableRadioRow3 from "TableRadioRow" /* 6484 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6485 */;
+import TableRowGroup3 from "TableRowGroup" /* 6487 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7117 */;
+import ThreadHooks from "ThreadHooks" /* 7192 */;
+import ForumConstants from "ForumConstants" /* 7203 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7204 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8122 */;
+import LockIcon from "LockIcon" /* 8448 */;
+import Form2 from "Form" /* 8808 */;
+import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8834 */;
+import AppChannelApplicationSelectorDefault from "AppChannelApplicationSelector" /* 8835 */;
+import ThreadAutoArchive from "ThreadAutoArchive" /* 9498 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9931 */;
+import XLargeIcon from "XLargeIcon" /* 10497 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10579 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10583 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 10710 */;
+import threadActionSheets from "threadActionSheets" /* 10714 */;
+import Slider2 from "Slider" /* 14982 */;
+import ChannelSettingsConstants from "ChannelSettingsConstants" /* 17880 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 17881 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 17882 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 17884 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 17885 */;
+import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 17887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4808 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9916 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4804 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import ReadStateStore from "ReadStateStore" /* 6251 */;
-import RegionStore from "RegionStore" /* 17845 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9932 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import ReadStateStore from "ReadStateStore" /* 6253 */;
+import RegionStore from "RegionStore" /* 17879 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PinImage(cha
     tmp13 = tmp16;
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp19 = closure_47(channelId(10566).PinIcon, {});
+    const tmp19 = closure_47(channelId(10581).PinIcon, {});
     cResult[8] = tmp19;
     tmp17 = tmp19;
   } else {
@@ -223,7 +223,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PinImage(cha
     tmp4 = closure_47(View, obj2);
   }
   const obj4 = { style, children: items1 };
-  items1 = [closure_47(tmp2(10566).PinIcon, {}), tmp4];
+  items1 = [closure_47(tmp2(10581).PinIcon, {}), tmp4];
   return closure_48(View, obj4);
 });
 let closure_51 = tmp8;
@@ -324,7 +324,7 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp = importDefault;
         if (tmp3 !== channel.name) {
           const obj2 = { name: tmp3 };
-          const tmpResult = tmp(9915);
+          const tmpResult = tmp(9931);
           tmpResult.updateChannel(obj2);
           obj.setState({ hasChanges: true });
         }
@@ -752,9 +752,9 @@ class ChannelSettingsOverview extends PureComponent {
     if (isThread) {
       let stringResult;
       let tmp12;
-      const intl3 = hasChanges(1126).intl;
+      const intl3 = hasChanges(1128).intl;
       const string = intl3.string;
-      const t = hasChanges(1126).t;
+      const t = hasChanges(1128).t;
       if (isForumPost) {
         stringResult = string(t.BsJrhj);
         tmp12 = tmp8;
@@ -765,17 +765,17 @@ class ChannelSettingsOverview extends PureComponent {
       tmp3 = tmp12;
       stringResult1 = stringResult;
     } else if (type === constants3.GUILD_CATEGORY) {
-      const intl2 = hasChanges(1126).intl;
-      stringResult1 = intl2.string(hasChanges(1126).t["/uELTj"]);
+      const intl2 = hasChanges(1128).intl;
+      stringResult1 = intl2.string(hasChanges(1128).t["/uELTj"]);
       tmp3 = hasChanges;
     } else {
       tmp3 = hasChanges;
-      let intl = hasChanges(1126).intl;
-      stringResult1 = intl.string(hasChanges(1126).t.XPDhcc);
+      let intl = hasChanges(1128).intl;
+      stringResult1 = intl.string(hasChanges(1128).t.XPDhcc);
     }
     const setOptions = navigation.setOptions;
     if (submitting) {
-      fn = tmp3(6421).HeaderSubmittingIndicator;
+      fn = tmp3(6423).HeaderSubmittingIndicator;
     } else {
       fn = (arg0) => {
         let intl;
@@ -812,20 +812,20 @@ class ChannelSettingsOverview extends PureComponent {
     const obj = ChannelSettingsUtils;
     const isChannelNameSettingEditable = obj.getIsChannelNameSettingEditable({ canManageThread, canManageChannels, canSendMessages, isForumPost, isThread, isChannelOwner });
     if (channel.isForumPost()) {
-      const intl4 = tmp3(1126).intl;
-      stringResult = intl4.string(tmp3(1126).t.uyVrTN);
+      const intl4 = tmp3(1128).intl;
+      stringResult = intl4.string(tmp3(1128).t.uyVrTN);
     } else if (isThread) {
-      const intl3 = tmp3(1126).intl;
-      stringResult = intl3.string(tmp3(1126).t.j3XWjD);
+      const intl3 = tmp3(1128).intl;
+      stringResult = intl3.string(tmp3(1128).t.j3XWjD);
     } else if (channel.type === constants3.GUILD_CATEGORY) {
-      const intl2 = tmp3(1126).intl;
-      stringResult = intl2.string(tmp3(1126).t.OCAkGP);
+      const intl2 = tmp3(1128).intl;
+      stringResult = intl2.string(tmp3(1128).t.OCAkGP);
     } else {
-      const intl = tmp3(1126).intl;
-      stringResult = intl.string(tmp3(1126).t.PVbHDl);
+      const intl = tmp3(1128).intl;
+      stringResult = intl.string(tmp3(1128).t.PVbHDl);
     }
     const obj3 = { ref: self.props.channelNameRef, label: stringResult, value: tmp3Result.computeChannelName(channel, UserStore, RelationshipStore), onChange: null, onBlur: null, disabled: !isChannelNameSettingEditable, maxLength, errorMessage: self.getError("name"), enableAndroidSanitizedInputWorkaround: true };
-    const TextInput = tmp3(6506).TextInput;
+    const TextInput = tmp3(6508).TextInput;
     ({ handleChangeName: obj2.onChange, handleBlurName: obj2.onBlur } = self);
     let tmp8Result;
     tmp3Result = useChannelName;
@@ -834,16 +834,16 @@ class ChannelSettingsOverview extends PureComponent {
     if (hasItem) {
       let stringResult1;
       const isForumLikeChannelResult = channel.isForumLikeChannel();
-      const intl5 = tmp3(1126).intl;
+      const intl5 = tmp3(1128).intl;
       const string = intl5.string;
-      const t = tmp3(1126).t;
+      const t = tmp3(1128).t;
       if (isForumLikeChannelResult) {
         stringResult1 = string(t.yR6HwZ);
       } else {
         stringResult1 = string(t.X8jMDh);
       }
       const obj4 = { label: stringResult1, value: obj5.translateSurrogatesToInlineEmoji(channel.topic), onChange: self.handleChangeTopic, disabled: !canManageChannels, autoCorrect: true, maxLength: channel.isForumLikeChannel() ? numOpens : closure_43, errorMessage: self.getError("topic") };
-      const TextArea = tmp3(6994).TextArea;
+      const TextArea = tmp3(6996).TextArea;
       obj5 = UnicodeEmojisDefault;
       tmp8Result = tmp8(TextArea, obj4);
     }
@@ -871,16 +871,16 @@ class ChannelSettingsOverview extends PureComponent {
         const obj = PlatformUtils;
         if (!obj.isIOS()) {
           const obj2 = { helperText: intl.string(intl10.t["9eUgwR"]), hasIcons: false, children: vanityURLCode(TableSwitchRow, obj3) };
-          const TableRowGroup = tmp2(6485).TableRowGroup;
-          intl = tmp2(1126).intl;
+          const TableRowGroup = tmp2(6487).TableRowGroup;
+          intl = tmp2(1128).intl;
           obj3 = { label: intl2.string(intl10.t.Es25Yf), value: tmp2Result.isChannelOrGuildNSFW(channel), onValueChange: this.handleNsfwChange, disabled: isNSFWDisabled, subLabel: stringResult };
-          TableSwitchRow = tmp2(7115).TableSwitchRow;
-          intl2 = tmp2(1126).intl;
+          TableSwitchRow = tmp2(7117).TableSwitchRow;
+          intl2 = tmp2(1128).intl;
           stringResult = undefined;
           tmp2Result = AgeGateUtils;
           if (null != channel.linkedLobby) {
-            const intl3 = tmp2(1126).intl;
-            stringResult = intl3.string(tmp2(1126).t.l6uSVa);
+            const intl3 = tmp2(1128).intl;
+            stringResult = intl3.string(tmp2(1128).t.l6uSVa);
           }
           tmp = tmp4(TableRowGroup, obj2, "nsfw-section");
         }
@@ -936,13 +936,13 @@ class ChannelSettingsOverview extends PureComponent {
         const intl = intl10.intl;
         const secondsSliderLabel = getSecondsSliderLabel(rateLimitPerUser, false, intl.string(intl10.t.zvDu4h));
         if (channel.isForumLikeChannel()) {
-          const intl3 = tmp4(1126).intl;
-          stringResult = intl3.string(tmp4(1126).t["a+1pdO"]);
+          const intl3 = tmp4(1128).intl;
+          stringResult = intl3.string(tmp4(1128).t["a+1pdO"]);
         } else {
           const isThreadResult = channel.isThread();
-          const intl2 = tmp4(1126).intl;
+          const intl2 = tmp4(1128).intl;
           const string = intl2.string;
-          const t = tmp4(1126).t;
+          const t = tmp4(1128).t;
           if (isThreadResult) {
             stringResult = string(t.OMmNCv);
           } else {
@@ -952,21 +952,21 @@ class ChannelSettingsOverview extends PureComponent {
         const items = [];
         const push = items.push;
         const obj = { helperText: stringResult, hasIcons: false, children: closure_48(Card, obj2) };
-        const TableRowGroup = tmp4(6485).TableRowGroup;
+        const TableRowGroup = tmp4(6487).TableRowGroup;
         obj2 = { border: "none", children: items2 };
         const obj3 = { style: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" }, children: items1 };
-        Card = tmp4(6402).Card;
+        Card = tmp4(6404).Card;
         const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: { flexShrink: 1 }, children: intl4.string(intl10.t.piZgKF) };
-        const Text = tmp4(5147).Text;
-        intl4 = tmp4(1126).intl;
+        const Text = tmp4(5149).Text;
+        intl4 = tmp4(1128).intl;
         items1 = [vanityURLCode(Text, obj4), ];
         const obj5 = { variant: "text-md/medium", color: "text-muted", children: secondsSliderLabel };
         items1[1] = vanityURLCode(Text_Text.Text, obj5);
         items2 = [closure_48(View, obj3), ];
         const obj6 = { style: items3, value: self._cooldown, minimumValue: 0, maximumValue: length.length - 1, onValueChange: self.handleSlowmodeChange, accessibilityLabel: intl5.string(intl10.t.piZgKF), accessibilityValue: obj7 };
         items3 = [tmp.slider, { marginStart: -4, marginTop: 8 }];
-        const Slider = tmp4(14949).Slider;
-        intl5 = tmp4(1126).intl;
+        const Slider = tmp4(14982).Slider;
+        intl5 = tmp4(1128).intl;
         obj7 = { text: secondsSliderLabel };
         items2[1] = vanityURLCode(Slider, obj6);
         push(vanityURLCode(TableRowGroup, obj, "slowmode-section"));
@@ -1000,9 +1000,9 @@ class ChannelSettingsOverview extends PureComponent {
           stringResult = string(t.YUXr4Z);
           tmp5 = tmp;
         }
-        const obj = { title: intl2.string(tmp5(1126).t.FGjMZS), description: stringResult, selected: autoArchiveDuration, channel, onSelectDuration: this.handleAutoArchiveDurationChange };
-        const AutoArchiveDurationOptions = tmp5(17851).AutoArchiveDurationOptions;
-        intl2 = tmp5(1126).intl;
+        const obj = { title: intl2.string(tmp5(1128).t.FGjMZS), description: stringResult, selected: autoArchiveDuration, channel, onSelectDuration: this.handleAutoArchiveDurationChange };
+        const AutoArchiveDurationOptions = tmp5(17885).AutoArchiveDurationOptions;
+        intl2 = tmp5(1128).intl;
         const threadMetadata = channel.threadMetadata;
         autoArchiveDuration = undefined;
         const tmp6 = vanityURLCode;
@@ -1086,7 +1086,7 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp6 = importDefault;
         const tmp8 = AppChannelApplicationSelectorDefault;
         if (!canManageChannels) {
-          tmp9 = tmp6(17852)(channel);
+          tmp9 = tmp6(17886)(channel);
         }
         return tmp5(tmp8, obj);
       }
@@ -1287,12 +1287,12 @@ class ChannelSettingsOverview extends PureComponent {
           AUTO = constants9.AUTO;
         }
         const obj2 = { label: intl3.string(intl10.t.jjKYpu), value: constants9.AUTO };
-        const TableRadioRow = tmp2(6482).TableRadioRow;
-        intl3 = tmp2(1126).intl;
+        const TableRadioRow = tmp2(6484).TableRadioRow;
+        intl3 = tmp2(1128).intl;
         items1 = [vanityURLCode(TableRadioRow, obj2), ];
         const obj3 = { label: intl4.string(intl10.t["7jOoJE"]), value: constants9.FULL };
-        const TableRadioRow2 = tmp2(6482).TableRadioRow;
-        intl4 = tmp2(1126).intl;
+        const TableRadioRow2 = tmp2(6484).TableRadioRow;
+        intl4 = tmp2(1128).intl;
         items1[1] = vanityURLCode(TableRadioRow2, obj3);
         push(tmp(TableRadioGroup, obj, "video-quality-section"));
         return items;
@@ -1330,11 +1330,11 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp10 = channel.isGuildStageVoice() ? closure_37 : closure_36;
         const items = [];
         const push = items.push;
-        const TableRowGroup = tmp7(6485).TableRowGroup;
+        const TableRowGroup = tmp7(6487).TableRowGroup;
         const isGuildStageVoiceResult = channel.isGuildStageVoice();
-        const intl3 = tmp7(1126).intl;
+        const intl3 = tmp7(1128).intl;
         const format = intl3.format;
-        const t = tmp7(1126).t;
+        const t = tmp7(1128).t;
         if (isGuildStageVoiceResult) {
           formatResult = format(t.OqZI8D, {});
         } else {
@@ -1343,17 +1343,17 @@ class ChannelSettingsOverview extends PureComponent {
         const obj2 = { description: formatResult, hasIcons: false, children: closure_48(Card, obj3) };
         obj3 = { children: items2 };
         const obj4 = { style: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" }, children: items1 };
-        Card = tmp7(6402).Card;
-        const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: { flexShrink: 1 }, children: intl4.string(tmp7(1126).t["/AoSGN"]) };
-        const Text = tmp7(5147).Text;
-        intl4 = tmp7(1126).intl;
+        Card = tmp7(6404).Card;
+        const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: { flexShrink: 1 }, children: intl4.string(tmp7(1128).t["/AoSGN"]) };
+        const Text = tmp7(5149).Text;
+        intl4 = tmp7(1128).intl;
         items1 = [vanityURLCode(Text, obj5), ];
         const obj6 = { variant: "text-md/medium", color: "text-muted", children: stringResult };
-        items1[1] = vanityURLCode(tmp7(5147).Text, obj6);
+        items1[1] = vanityURLCode(tmp7(5149).Text, obj6);
         items2 = [closure_48(View, obj4), ];
         const _Math2 = Math;
         const obj7 = { style: tmp.slider, value: Math.min(channel.userLimit, tmp10), minimumValue: 0, maximumValue: tmp10, onValueChange: this.handleUserLimitChange };
-        const Slider = tmp7(14949).Slider;
+        const Slider = tmp7(14982).Slider;
         items2[1] = vanityURLCode(Slider, obj7);
         push(vanityURLCode(TableRowGroup, obj2, "channel-user-limit"));
         return items;
@@ -1388,26 +1388,26 @@ class ChannelSettingsOverview extends PureComponent {
             if (null != found) {
               name = found.name;
             } else {
-              const intl = channel(1126).intl;
-              name = intl.string(channel(1126).t.JEmsap);
+              const intl = channel(1128).intl;
+              name = intl.string(channel(1128).t.JEmsap);
             }
             const items = [];
             const push = items.push;
-            const obj = { title: intl2.string(channel(1126).t["Ms8bX+"]), description: intl3.string(channel(1126).t["dbTs+z"]), hasIcons: false, children: closure_47(TableRow, obj2) };
-            const TableRowGroup = channel(6485).TableRowGroup;
-            intl2 = channel(1126).intl;
-            intl3 = channel(1126).intl;
+            const obj = { title: intl2.string(channel(1128).t["Ms8bX+"]), description: intl3.string(channel(1128).t["dbTs+z"]), hasIcons: false, children: closure_47(TableRow, obj2) };
+            const TableRowGroup = channel(6487).TableRowGroup;
+            intl2 = channel(1128).intl;
+            intl3 = channel(1128).intl;
             obj2 = {
-              label: intl4.string(channel(1126).t["Ms8bX+"]),
-              trailing: closure_47(channel(6400).TableRow.TrailingText, obj3),
+              label: intl4.string(channel(1128).t["Ms8bX+"]),
+              trailing: closure_47(channel(6402).TableRow.TrailingText, obj3),
               arrow: true,
               disabled: tmp2,
               onPress() {
                         return self.pushScreen(constants.CHANGE_RTC_REGION);
                       }
             };
-            TableRow = channel(6400).TableRow;
-            intl4 = channel(1126).intl;
+            TableRow = channel(6402).TableRow;
+            intl4 = channel(1128).intl;
             obj3 = { text: name };
             push(closure_47(TableRowGroup, obj, "channel-region-override"));
             return items;
@@ -1439,21 +1439,21 @@ class ChannelSettingsOverview extends PureComponent {
     let tmp3Result = null;
     if (this.props.canManageRoles) {
       let stringResult;
-      let obj = { helperText: intl.string(self(1126).t.UAoMCL), hasIcons: true, children: closure_47(TableRow, obj2) };
-      const TableRowGroup = self(6485).TableRowGroup;
-      intl = self(1126).intl;
-      TableRow = self(6400).TableRow;
+      let obj = { helperText: intl.string(self(1128).t.UAoMCL), hasIcons: true, children: closure_47(TableRow, obj2) };
+      const TableRowGroup = self(6487).TableRowGroup;
+      intl = self(1128).intl;
+      TableRow = self(6402).TableRow;
       if (tmp.type === constants3.GUILD_CATEGORY) {
-        const intl3 = tmp4(1126).intl;
-        stringResult = intl3.string(tmp4(1126).t.PgkvDf);
+        const intl3 = tmp4(1128).intl;
+        stringResult = intl3.string(tmp4(1128).t.PgkvDf);
       } else {
-        const intl2 = tmp4(1126).intl;
-        stringResult = intl2.string(tmp4(1126).t.BAZMBn);
+        const intl2 = tmp4(1128).intl;
+        stringResult = intl2.string(tmp4(1128).t.BAZMBn);
       }
       obj2 = {
         label: stringResult,
         arrow: true,
-        icon: closure_47(self(8840).ShieldUserIcon, {}),
+        icon: closure_47(self(8848).ShieldUserIcon, {}),
         onPress() {
             const obj = { origin: constants.OVERVIEW };
             return self.pushScreen(constants.PERMISSIONS, obj);
@@ -1486,9 +1486,9 @@ class ChannelSettingsOverview extends PureComponent {
     if (tmp2) {
       const push = items.push;
       let obj = {
-        label: intl.string(channel(1126).t.h850Ss),
+        label: intl.string(channel(1128).t.h850Ss),
         arrow: true,
-        icon: closure_47(channel(8990).BellIcon, {}),
+        icon: closure_47(channel(8998).BellIcon, {}),
         onPress() {
             let result;
             const tmp = channel;
@@ -1501,14 +1501,14 @@ class ChannelSettingsOverview extends PureComponent {
             return result;
           }
       };
-      const TableRow = channel(6400).TableRow;
-      intl = channel(1126).intl;
+      const TableRow = channel(6402).TableRow;
+      intl = channel(1128).intl;
       push(closure_47(TableRow, obj, "rowNotifications"));
     }
     if (tmp(channel.type)) {
       const push2 = items.push;
       const obj2 = {
-        label: intl2.string(channel(1126).t["mp1N/2"]),
+        label: intl2.string(channel(1128).t["mp1N/2"]),
         arrow: true,
         icon: closure_47(closure_51, obj3),
         onPress() {
@@ -1516,8 +1516,8 @@ class ChannelSettingsOverview extends PureComponent {
           },
         disabled: self.props.pinDisabled
       };
-      const TableRow2 = channel(6400).TableRow;
-      intl2 = channel(1126).intl;
+      const TableRow2 = channel(6402).TableRow;
+      intl2 = channel(1128).intl;
       obj3 = { channelId: channel.id };
       push2(closure_47(TableRow2, obj2, "rowPinnedMessages"));
     }
@@ -1530,15 +1530,15 @@ class ChannelSettingsOverview extends PureComponent {
     if (canManageChannels) {
       const push3 = items.push;
       const obj4 = {
-        label: intl3.string(channel(1126).t.ngRFjZ),
+        label: intl3.string(channel(1128).t.ngRFjZ),
         arrow: true,
-        icon: closure_47(channel(5097).LinkIcon, {}),
+        icon: closure_47(channel(5100).LinkIcon, {}),
         onPress() {
             return self.pushScreen(constants.INSTANT_INVITES);
           }
       };
-      const TableRow3 = channel(6400).TableRow;
-      intl3 = channel(1126).intl;
+      const TableRow3 = channel(6402).TableRow;
+      intl3 = channel(1128).intl;
       push3(closure_47(TableRow3, obj4, "rowInstantInvites"));
     }
     return self.renderSettingsSection(items);
@@ -1556,11 +1556,11 @@ class ChannelSettingsOverview extends PureComponent {
     let tmp = null;
     if (channel.isForumChannel()) {
       let stringResult;
-      const obj = { description: intl.string(self(1126).t.mOSViT), hasIcons: true, children: closure_47(TableRow, obj2, "forumDefaultLayout") };
-      const TableRowGroup = self(6485).TableRowGroup;
-      intl = self(1126).intl;
+      const obj = { description: intl.string(self(1128).t.mOSViT), hasIcons: true, children: closure_47(TableRow, obj2, "forumDefaultLayout") };
+      const TableRowGroup = self(6487).TableRowGroup;
+      intl = self(1128).intl;
       obj2 = {
-        label: intl2.string(self(1126).t["kQvoC/"]),
+        label: intl2.string(self(1128).t["kQvoC/"]),
         trailing: closure_47(TrailingText, obj3),
         arrow: true,
         icon: tmp2Result,
@@ -1568,21 +1568,21 @@ class ChannelSettingsOverview extends PureComponent {
             return self.pushScreen(constants.DEFAULT_FORUM_LAYOUT);
           }
       };
-      TableRow = self(6400).TableRow;
-      intl2 = self(1126).intl;
-      TrailingText = self(6400).TableRow.TrailingText;
-      if (channel.defaultForumLayout === self(2075).ForumLayout.GRID) {
-        const intl4 = tmp3(1126).intl;
-        stringResult = intl4.string(tmp3(1126).t["8RswJG"]);
+      TableRow = self(6402).TableRow;
+      intl2 = self(1128).intl;
+      TrailingText = self(6402).TableRow.TrailingText;
+      if (channel.defaultForumLayout === self(2078).ForumLayout.GRID) {
+        const intl4 = tmp3(1128).intl;
+        stringResult = intl4.string(tmp3(1128).t["8RswJG"]);
       } else {
-        const intl3 = tmp3(1126).intl;
-        stringResult = intl3.string(tmp3(1126).t["4HXEZG"]);
+        const intl3 = tmp3(1128).intl;
+        stringResult = intl3.string(tmp3(1128).t["4HXEZG"]);
       }
       obj3 = { text: stringResult };
-      if (channel.defaultForumLayout === self(2075).ForumLayout.GRID) {
-        tmp2Result = tmp2(tmp3(17858).GridSquareIcon, {});
+      if (channel.defaultForumLayout === self(2078).ForumLayout.GRID) {
+        tmp2Result = tmp2(tmp3(17892).GridSquareIcon, {});
       } else {
-        tmp2Result = tmp2(tmp3(7002).ListViewIcon, {});
+        tmp2Result = tmp2(tmp3(7004).ListViewIcon, {});
       }
       tmp = tmp2(TableRowGroup, obj, "default-forum-layout");
     }
@@ -1651,10 +1651,10 @@ class ChannelSettingsOverview extends PureComponent {
             return obj.joinThread(_require, "Context Menu");
           }
       };
-      const TableRow = tmp2(6400).TableRow;
-      const intl = tmp2(1126).intl;
+      const TableRow = tmp2(6402).TableRow;
+      const intl = tmp2(1128).intl;
       const string = intl.string;
-      const t = tmp2(1126).t;
+      const t = tmp2(1128).t;
       const tmp5 = closure_47;
       if (isForumPost) {
         stringResult = string(t.ihLPiO);
@@ -1676,10 +1676,10 @@ class ChannelSettingsOverview extends PureComponent {
                 return obj.unarchiveThread(_require, false);
               }
         };
-        const TableRow2 = tmp2(6400).TableRow;
-        const intl2 = tmp2(1126).intl;
+        const TableRow2 = tmp2(6402).TableRow;
+        const intl2 = tmp2(1128).intl;
         const string2 = intl2.string;
-        const t2 = tmp2(1126).t;
+        const t2 = tmp2(1128).t;
         const tmp8 = closure_47;
         if (isForumPost) {
           string2Result = string2(t2.cnRubV);
@@ -1702,10 +1702,10 @@ class ChannelSettingsOverview extends PureComponent {
                 return obj.archiveThread(_require, false);
               }
         };
-        const TableRow3 = tmp2(6400).TableRow;
-        const intl3 = tmp2(1126).intl;
+        const TableRow3 = tmp2(6402).TableRow;
+        const intl3 = tmp2(1128).intl;
         const string3 = intl3.string;
-        const t3 = tmp2(1126).t;
+        const t3 = tmp2(1128).t;
         const tmp11 = closure_47;
         if (isForumPost) {
           string3Result = string3(t3.BTs4Kb);
@@ -1728,10 +1728,10 @@ class ChannelSettingsOverview extends PureComponent {
                 return obj.unlockThread(_require);
               }
         };
-        const TableRow4 = tmp2(6400).TableRow;
-        const intl4 = tmp2(1126).intl;
+        const TableRow4 = tmp2(6402).TableRow;
+        const intl4 = tmp2(1128).intl;
         const string4 = intl4.string;
-        const t4 = tmp2(1126).t;
+        const t4 = tmp2(1128).t;
         const tmp14 = closure_47;
         if (isForumPost) {
           string4Result = string4(t4["/OKSxp"]);
@@ -1754,10 +1754,10 @@ class ChannelSettingsOverview extends PureComponent {
                 return obj.lockThread(_require);
               }
         };
-        const TableRow5 = tmp2(6400).TableRow;
-        const intl5 = tmp2(1126).intl;
+        const TableRow5 = tmp2(6402).TableRow;
+        const intl5 = tmp2(1128).intl;
         const string5 = intl5.string;
-        const t5 = tmp2(1126).t;
+        const t5 = tmp2(1128).t;
         const tmp17 = closure_47;
         if (isForumPost) {
           string5Result = string5(t5["Ur/0Na"]);
@@ -1777,8 +1777,8 @@ class ChannelSettingsOverview extends PureComponent {
         return obj.copyGuildChannelOrThreadLink(_require.guild_id, _require.id);
       }
     };
-    const TableRow6 = tmp2(6400).TableRow;
-    intl6 = tmp2(1126).intl;
+    const TableRow6 = tmp2(6402).TableRow;
+    intl6 = tmp2(1128).intl;
     items[5] = closure_47(TableRow6, obj7);
     return tmp(TableRowGroup, obj6);
   }
@@ -1801,18 +1801,18 @@ class ChannelSettingsOverview extends PureComponent {
       let stringResult;
       let tmp8;
       if (channel.type === constants3.GUILD_CATEGORY) {
-        const intl3 = channel(1126).intl;
-        stringResult = intl3.string(channel(1126).t.ifbXnL);
+        const intl3 = channel(1128).intl;
+        stringResult = intl3.string(channel(1128).t.ifbXnL);
         tmp8 = channel;
       } else if (isForumPost) {
-        const intl2 = channel(1126).intl;
-        stringResult = intl2.string(channel(1126).t.nEOg1N);
+        const intl2 = channel(1128).intl;
+        stringResult = intl2.string(channel(1128).t.nEOg1N);
         tmp8 = channel;
       } else {
         const isThreadResult = channel.isThread();
-        const intl = channel(1126).intl;
+        const intl = channel(1128).intl;
         const string = intl.string;
-        const t = channel(1126).t;
+        const t = channel(1128).t;
         if (isThreadResult) {
           stringResult = string(t.H7vTe2);
           tmp8 = tmp4;
@@ -1822,22 +1822,22 @@ class ChannelSettingsOverview extends PureComponent {
         }
       }
       let tmp16Result = null;
-      const TableRowGroup = tmp8(6485).TableRowGroup;
+      const TableRowGroup = tmp8(6487).TableRowGroup;
       const tmp13 = closure_48;
       if (hasJoinedThread) {
         let obj = {
           variant: "danger",
-          icon: closure_47(tmp8(5095).UserMinusIcon, { color: "text-feedback-critical" }),
+          icon: closure_47(tmp8(5098).UserMinusIcon, { color: "text-feedback-critical" }),
           label: string2Result,
           onPress() {
                 const obj = ThreadActionCreatorsDefault;
                 return obj.leaveThread(channel, "Context Menu");
               }
         };
-        const TableRow = tmp8(6400).TableRow;
-        const intl4 = tmp8(1126).intl;
+        const TableRow = tmp8(6402).TableRow;
+        const intl4 = tmp8(1128).intl;
         const string2 = intl4.string;
-        const t2 = tmp8(1126).t;
+        const t2 = tmp8(1128).t;
         const tmp16 = closure_47;
         if (isForumPost) {
           string2Result = string2(t2["2LsZdT"]);
@@ -1848,8 +1848,8 @@ class ChannelSettingsOverview extends PureComponent {
       }
       const obj2 = { hasIcons: true, children: items };
       items = [tmp16Result, ];
-      const obj3 = { variant: "danger", icon: closure_47(tmp8(5108).TrashIcon, { color: "text-feedback-critical" }), label: stringResult, onPress: this.handleDeleteChannel };
-      const TableRow2 = tmp8(6400).TableRow;
+      const obj3 = { variant: "danger", icon: closure_47(tmp8(5111).TrashIcon, { color: "text-feedback-critical" }), label: stringResult, onPress: this.handleDeleteChannel };
+      const TableRow2 = tmp8(6402).TableRow;
       items[1] = closure_47(TableRow2, obj3);
       tmp = tmp13(TableRowGroup, obj2);
     }
@@ -1885,15 +1885,15 @@ class ChannelSettingsOverview extends PureComponent {
       const tmp3 = canManageChannels && channel.availableTags.length < MAX_FORUM_TAGS;
       const error = self.getError("available_tags");
       let obj = { spacing: self(587).space.PX_12, children: items1 };
-      const Stack = canManageChannels(5437).Stack;
-      const obj2 = { title: intl.string(canManageChannels(1126).t["P/y+sj"]), description: stringResult, hasIcons: false, children: closure_47(View, obj3) };
-      const TableRowGroup = canManageChannels(6485).TableRowGroup;
-      intl = canManageChannels(1126).intl;
+      const Stack = canManageChannels(5439).Stack;
+      const obj2 = { title: intl.string(canManageChannels(1128).t["P/y+sj"]), description: stringResult, hasIcons: false, children: closure_47(View, obj3) };
+      const TableRowGroup = canManageChannels(6487).TableRowGroup;
+      intl = canManageChannels(1128).intl;
       stringResult = undefined;
       const tmp9 = self;
       if (channel.availableTags.length <= 0) {
-        const intl2 = tmp7(1126).intl;
-        stringResult = intl2.string(tmp7(1126).t["3v8kZH"]);
+        const intl2 = tmp7(1128).intl;
+        stringResult = intl2.string(tmp7(1128).t["3v8kZH"]);
       }
       obj3 = { style: tmp.tagsWrapper, children: tmp6Result };
       tmp6Result = null;
@@ -1916,12 +1916,12 @@ class ChannelSettingsOverview extends PureComponent {
             onPress() {
                     return self.handlePressTag();
                   },
-            accessibilityLabel: intl3.string(canManageChannels(1126).t["/jubeD"])
+            accessibilityLabel: intl3.string(canManageChannels(1128).t["/jubeD"])
           };
-          IconButton = tmp7(7790).IconButton;
+          IconButton = tmp7(7793).IconButton;
           obj6 = { size: "sm", color: tmp9(587).colors.WHITE };
-          PlusSmallIcon = tmp7(9299).PlusSmallIcon;
-          intl3 = tmp7(1126).intl;
+          PlusSmallIcon = tmp7(9312).PlusSmallIcon;
+          intl3 = tmp7(1128).intl;
           tmp10Result = tmp10(tmp12, obj4);
         }
         const obj7 = { children: items };
@@ -1940,28 +1940,28 @@ class ChannelSettingsOverview extends PureComponent {
           accessibilityRole: "button",
           children: closure_47(Text, obj9)
         };
-        const PressableOpacity = tmp7(6405).PressableOpacity;
-        obj9 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.createTagButtonText, children: intl4.string(canManageChannels(1126).t.F4is7L) };
-        Text = tmp7(5147).Text;
-        intl4 = tmp7(1126).intl;
+        const PressableOpacity = tmp7(6407).PressableOpacity;
+        obj9 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.createTagButtonText, children: intl4.string(canManageChannels(1128).t.F4is7L) };
+        Text = tmp7(5149).Text;
+        intl4 = tmp7(1128).intl;
         tmp10Result3 = tmp10(PressableOpacity, obj8);
       }
       items1[1] = tmp10Result3;
       let tmp10Result4 = null != error && error.length > 0;
       if (tmp10Result4) {
         const obj10 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-        tmp10Result4 = tmp10(tmp7(5147).Text, obj10);
+        tmp10Result4 = tmp10(tmp7(5149).Text, obj10);
       }
       items1[2] = tmp10Result4;
-      const TableRowGroup2 = tmp7(6485).TableRowGroup;
+      const TableRowGroup2 = tmp7(6487).TableRowGroup;
       let tmp18 = !canManageChannels;
-      const TableSwitchRow = tmp7(7115).TableSwitchRow;
+      const TableSwitchRow = tmp7(7117).TableSwitchRow;
       if (canManageChannels) {
         tmp18 = everyResult;
       }
       const obj11 = { hasIcons: false, children: closure_47(TableSwitchRow, obj12) };
-      obj12 = { disabled: tmp18, label: intl5.string(canManageChannels(1126).t.yX24uI), value: channel.hasFlag(constants10.REQUIRE_TAG), onValueChange: self.handleToggleRequireTag };
-      intl5 = tmp7(1126).intl;
+      obj12 = { disabled: tmp18, label: intl5.string(canManageChannels(1128).t.yX24uI), value: channel.hasFlag(constants10.REQUIRE_TAG), onValueChange: self.handleToggleRequireTag };
+      intl5 = tmp7(1128).intl;
       items1[3] = closure_47(TableRowGroup2, obj11);
       return closure_48(Stack, obj);
     } else {
@@ -2002,18 +2002,18 @@ class ChannelSettingsOverview extends PureComponent {
         let stringResult;
         let tmp7;
         if (null == category) {
-          const intl = self(1126).intl;
-          stringResult = intl.string(self(1126).t.GSfOoo);
+          const intl = self(1128).intl;
+          stringResult = intl.string(self(1128).t.GSfOoo);
           tmp7 = self;
         } else {
-          const obj = self(5481);
+          const obj = self(5483);
           stringResult = obj.computeChannelName(category, UserStore, RelationshipStore);
           tmp7 = self;
         }
-        const TableRowGroup = tmp7(6485).TableRowGroup;
-        const obj2 = { icon: closure_47(tmp7(17171).FolderPlusIcon, {}), label: intl2.string(tmp7(1126).t.vHCZwr), trailing: closure_47(tmp7(6400).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
-        const TableRow = tmp7(6400).TableRow;
-        intl2 = tmp7(1126).intl;
+        const TableRowGroup = tmp7(6487).TableRowGroup;
+        const obj2 = { icon: closure_47(tmp7(17205).FolderPlusIcon, {}), label: intl2.string(tmp7(1128).t.vHCZwr), trailing: closure_47(tmp7(6402).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
+        const TableRow = tmp7(6402).TableRow;
+        intl2 = tmp7(1128).intl;
         fn = undefined;
         obj3 = { text: stringResult };
         if (canManageParent) {

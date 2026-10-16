@@ -1,16 +1,16 @@
-// Module ID: 10904
-// Function ID: 10905
+// Module ID: 10919
+// Function ID: 10920
 // Name: conjureChatConnection
-// Dependencies: [584, 1126, 3862, 10905, 10906, 10907, 2]
+// Dependencies: [584, 1128, 3865, 10920, 10921, 10922, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 10904 (conjureChatConnection)
+// Module 10919 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10905 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10906 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
+import intl2 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10920 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10921 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,7 +23,7 @@ function appendFailureStep(turnId, projectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_CHAT_STEP_APPEND", projectId, turnId: turnId.turn_id, step: turnId };
   obj.dispatch(obj2);
-  obj3 = { message: turnId.message, details: stderr_tail };
+  obj3 = { message: turnId.message, details: stderr_tail, turnId: turnId.turn_id };
   const trackConjureErrored = ConjureAnalytics.trackConjureErrored;
   ConjureAnalytics;
   const merged = Object.assign(obj5[turnId.kind]);
@@ -104,7 +104,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef3862["913RMa"]);
+      const stringResult = intl.string(_modDef3865["913RMa"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -115,7 +115,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10905).trackConjureErrored;
+      const trackConjureErrored = tmp11(10920).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -205,7 +205,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef3862["0+RUWx"]);
+      const stringResult = intl.string(_modDef3865["0+RUWx"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -216,7 +216,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10905).trackConjureErrored;
+      const trackConjureErrored = tmp11(10920).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -287,7 +287,8 @@ let obj2 = {
     if (fields.length > 0) {
       const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: fields.turn_id, patch: obj3 };
       obj3 = { secretRequest: obj7 };
-      obj7 = { request_id: fields.request_id, fields, note: null, copy_values: null };
+      obj7 = { request_id: null, over_mcp: null, fields, note: null, copy_values: null };
+      ({ request_id: obj4.request_id, over_mcp: obj4.over_mcp } = fields);
       ({ note: obj4.note, copy_values: obj4.copy_values } = fields);
       const obj = DispatcherDefault;
       obj.dispatch(obj2);

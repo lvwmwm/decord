@@ -1,18 +1,18 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9233
+// Function ID: 9234
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 9219, 21, 5151, 587, 558, 576, 9221, 5088, 9222, 2]
+// Dependencies: [17, 9232, 21, 5153, 587, 558, 576, 9234, 5091, 9235, 2]
 
-// Module 9220 (ProfileEffectSampleV2)
+// Module 9233 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9219 */;
-import _modDef9221 from "module_9221" /* 9221 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9222 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9232 */;
+import _modDef9234 from "module_9234" /* 9234 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9235 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffec
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef9221 };
+      const obj2 = { uri: _modDef9234 };
       cResult[3] = obj2;
       tmp8 = obj2;
     } else {
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffec
   const obj = { style: items, children: items1 };
   items[1] = profileBackground;
   const obj2 = { style: tmp.sampleProfileImage, source: obj3, accessible: false, resizeMode: "cover" };
-  obj3 = { uri: _modDef9221 };
+  obj3 = { uri: _modDef9234 };
   const tmp7 = FastImageDefault;
   items1 = [React3(tmp7, obj2), , ];
   let tmp4Result = !flag;

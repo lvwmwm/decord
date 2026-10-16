@@ -1,17 +1,17 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16018
+// Function ID: 16019
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 5151, 587, 558, 576, 1126, 6428, 6405, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 1128, 6430, 6407, 2]
 
-// Module 15985 (BountiesModalCloseButton)
+// Module 16018 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 6405 */;
-import XSmallIcon2 from "XSmallIcon" /* 6428 */;
+import intl2 from "intl" /* 1128 */;
+import Pressables from "Pressables" /* 6407 */;
+import XSmallIcon2 from "XSmallIcon" /* 6430 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
   onPress = onPress.onPress;
   const tmp4 = closure_4();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -37,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const XSmallIcon = tmp(6428).XSmallIcon;
+    const XSmallIcon = tmp(6430).XSmallIcon;
     const tmp10 = <XSmallIcon size="sm" color={nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT} />;
     cResult[1] = tmp10;
     tmp7 = tmp10;

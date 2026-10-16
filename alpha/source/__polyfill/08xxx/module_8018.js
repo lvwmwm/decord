@@ -1,25 +1,23 @@
 // Module ID: 8018
 // Function ID: 8019
-// Dependencies: [8019, 8031, 8039]
+// Dependencies: [8019, 8023]
 
 // Module 8018
-import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8019 */;
-import _mod8031 from "module_8031" /* 8031 */;
-import _mod8039 from "module_8039" /* 8039 */;
+import detectFile2 from "detectFile" /* 8019 */;
+import validateFileType2 from "validateFileType" /* 8023 */;
 
 let hasOwnProperty;
 
 const self = this;
 let tmp = this && self.__createBinding;
 if (!tmp) {
-  let tmp2 = globalThis;
   let _Object = Object;
   tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
     function get() {
       return __esModule[closure_1];
     }
     closure_0 = __esModule;
-    let closure_1 = arg2;
+    closure_1 = arg2;
     let tmp = arg3;
     if (undefined === arg3) {
       tmp = arg2;
@@ -49,23 +47,47 @@ if (!tmp) {
   });
 }
 let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_1 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
     }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
   }
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_0(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  closure_1(obj, __esModule);
+  return obj;
 });
-tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
-tmp3(_mod8031, exports);
-tmp3(_mod8039, exports);
+const detectFile = tmp5(detectFile2);
+const validateFileType = tmp5(validateFileType2);
+
+export default Object.assign(Object.assign({}, detectFile), validateFileType);

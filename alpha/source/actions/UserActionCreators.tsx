@@ -1,21 +1,21 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8532
+// Function ID: 8533
 // Name: UserActionCreators
-// Dependencies: [5, 1404, 1390, 1085, 1086, 3, 1295, 584, 6154, 1359, 38, 5851, 2]
+// Dependencies: [5, 1406, 1392, 1087, 1088, 3, 1297, 584, 6156, 1361, 38, 5853, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8524 (UserActionCreators)
+// Module 8532 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import RouteConstants from "RouteConstants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1359 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6154 */;
+import Constants from "Constants" /* 1087 */;
+import RouteConstants from "RouteConstants" /* 1088 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1361 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6156 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

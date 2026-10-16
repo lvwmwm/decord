@@ -1,24 +1,24 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18263
+// Function ID: 18264
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 14889, 12817, 12815, 21, 558, 576, 12816, 4906, 18185, 5438, 15347, 5423, 2]
+// Dependencies: [19, 14922, 12843, 12841, 21, 558, 576, 12842, 4909, 18227, 5440, 15382, 5425, 2]
 
-// Module 18221 (VoicePanelControlsDimOverlay)
+// Module 18263 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5438 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
-import BackdropConstants from "BackdropConstants" /* 14889 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15347 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 18185 */;
+import spring from "spring" /* 5440 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
+import BackdropConstants from "BackdropConstants" /* 14922 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15382 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 18227 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12817 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12843 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const ReanimatedRexport = tmp(4906);
+const ReanimatedRexport = tmp(4909);
 let closure_4 = BackdropConstants.BACKDROP_OPAQUE_MAX_OPACITY;
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;

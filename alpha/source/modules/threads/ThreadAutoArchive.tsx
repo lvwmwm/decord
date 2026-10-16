@@ -1,15 +1,15 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 9498
+// Function ID: 9499
 // Name: ThreadAutoArchive
-// Dependencies: [1125, 1102, 1126, 606, 4758, 2]
+// Dependencies: [1127, 1104, 1128, 606, 4761, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 9482 (ThreadAutoArchive)
+// Module 9498 (ThreadAutoArchive)
 import memoizeDefault from "memoize" /* 606 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import ThreadConstants from "ThreadConstants" /* 1125 */;
-import intl5 from "intl" /* 1126 */;
-import _modDef4758 from "module_4758" /* 4758 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import ThreadConstants from "ThreadConstants" /* 1127 */;
+import intl5 from "intl" /* 1128 */;
+import _modDef4761 from "module_4761" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 function getAutoArchiveOptions() {
@@ -51,7 +51,7 @@ export const getAutoArchiveDurationText = function getAutoArchiveDurationText(ar
     label = found.label;
   }
   if (label == null) {
-    const obj = _modDef4758;
+    const obj = _modDef4761;
     const durationResult = obj.duration(arg0, "minutes");
     label = durationResult.humanize();
   }

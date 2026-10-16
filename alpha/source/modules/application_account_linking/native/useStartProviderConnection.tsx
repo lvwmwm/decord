@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7094
+// Function ID: 7095
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 558, 576, 7093, 4862, 2]
+// Dependencies: [5, 19, 558, 576, 7095, 4865, 2]
 
-// Module 7092 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 4862 */;
+// Module 7094 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 4865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
   let tmp3;
   let obj = startConnection(576);
   const cResult = obj.c(8);
-  let obj2 = startConnection(7093);
+  let obj2 = startConnection(7095);
   const providerConnection = obj2.useProviderConnection(arg0);
   ({ loading, hasConnection, canConnect, startConnection } = providerConnection);
   const account = providerConnection.account;
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
   let hasConnection;
   let loading;
   let startConnection;
-  let obj = startConnection(7093);
+  let obj = startConnection(7095);
   const providerConnection = obj.useProviderConnection(arg0);
   startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);

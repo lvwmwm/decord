@@ -1,21 +1,21 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 6957
+// Function ID: 6958
 // Name: FormPhoneOrEmail
-// Dependencies: [109, 19, 17, 21, 5151, 587, 558, 576, 1126, 5147, 6405, 6865, 6839, 6840, 6842, 2]
+// Dependencies: [109, 19, 17, 21, 5153, 587, 558, 576, 1128, 5149, 6407, 6867, 6841, 6842, 6844, 2]
 
-// Module 6955 (FormPhoneOrEmail)
+// Module 6957 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Pressables from "Pressables" /* 6405 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6839 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6865 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Pressables from "Pressables" /* 6407 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 6841 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6867 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Countr
     }
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.GwAW3k);
       cResult[1] = stringResult;
       tmp7 = stringResult;
@@ -370,7 +370,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormPhoneOrE
     cResult[20] = handleChangeText;
     tmp23 = handleChangeText;
   }
-  const tmpResult = tmp(6865);
+  const tmpResult = tmp(6867);
   const result = tmpResult.shouldShowCountryCodeSelector(tmp7, tmp16);
   cResult[14] = tmp7;
   cResult[15] = tmp16;

@@ -1,21 +1,21 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11949
+// Function ID: 11950
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 5151, 587, 558, 576, 8800, 2]
+// Dependencies: [32, 19, 21, 5153, 587, 558, 576, 8808, 2]
 
-// Module 11925 (AppLauncherBooleanOption)
+// Module 11949 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Form = tmp(8800);
+const Form = tmp(8808);
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center" };

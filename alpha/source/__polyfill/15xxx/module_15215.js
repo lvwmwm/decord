@@ -1,11 +1,74 @@
 // Module ID: 15215
 // Function ID: 15216
-// Dependencies: [15213]
+// Dependencies: [15216, 15217, 1174, 15218, 15219]
+// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 15215
-import _mod15213 from "module_15213" /* 15213 */;
+import _mod1174 from "module_1174" /* 1174 */;
+import calendars2 from "calendars" /* 15216 */;
+import hourCycles from "hourCycles" /* 15217 */;
+import timezones from "timezones" /* 15218 */;
+import weekData2 from "weekData" /* 15219 */;
 
-let closure_0 = _mod15213({}.toString);
-let closure_1 = _mod15213("".slice);
 
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const calendars = calendars2.calendars;
+  if (!str) {
+    str = "";
+  }
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
+    let str = "gregory";
+    if ("gregorian" !== item) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== item) {
+        str2 = item;
+      }
+      str = str2;
+    }
+    return str;
+  });
+};
+export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = hourCycles.hourCycles[formatted] || tmp2(15217).hourCycles[str];
+  if (!v001) {
+    const concat = "".concat;
+    v001 = tmp2(15217).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = tmp2(15217).hourCycles["001"];
+  }
+  const tmp2Result = _mod1174;
+  return tmp2Result.__spreadArray([], v001, true);
+};
+export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  const items = [];
+  if (timezones.timezones[formatted]) {
+    const tmp2Result = _mod1174;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+  } else {
+    return items;
+  }
+};
+export const getWeekDataForRegion = function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const weekData = weekData2.weekData;
+  if (!str) {
+    str = "001";
+  }
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
+};

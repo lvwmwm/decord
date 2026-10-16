@@ -1,9 +1,9 @@
-// Module ID: 5502
-// Function ID: 5503
+// Module ID: 5504
+// Function ID: 5505
 // Name: InteractionTypes
 // Dependencies: [2]
 
-// Module 5502 (InteractionTypes)
+// Module 5504 (InteractionTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { USER_SENDABLE: new Set([2, 3, 4, 5]), FOLLOWUP: new Set([2, 3, 5]), SILENT: new Set([8, 9, 10, 11, 12]) };

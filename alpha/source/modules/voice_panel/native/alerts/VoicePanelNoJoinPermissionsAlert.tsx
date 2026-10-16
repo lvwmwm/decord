@@ -1,14 +1,14 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18242
+// Function ID: 18243
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5365, 18201, 1126, 5365, 2]
+// Dependencies: [19, 21, 558, 576, 5367, 18243, 1128, 5367, 2]
 
-// Module 18200 (VoicePanelNoJoinPermissionsAlert)
+// Module 18242 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5365 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 18201 */;
+import intl4 from "intl" /* 1128 */;
+import AlertModal2 from "AlertModal" /* 5367 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 18243 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,9 +25,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   const dismissModalCallback = obj2.useDismissModalCallback();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp10 = jsx(VoicePanelLockedIconDefault, {});
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["7/2/3M"]);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.xsenup);
     cResult[0] = tmp10;
     cResult[1] = stringResult;
@@ -39,12 +39,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     [tmp5, tmp6, tmp7] = cResult;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult2 = intl3.string(intl4.t["NX+WJN"]);
     cResult[3] = stringResult2;
   }
   if (cResult[4] !== dismissModalCallback) {
-    const AlertModal = tmp(5365).AlertModal;
+    const AlertModal = tmp(5367).AlertModal;
     const tmp17 = <AlertModal header={tmp5} title={tmp6} content={tmp7} actions={null} />;
     cResult[4] = dismissModalCallback;
     cResult[5] = tmp17;

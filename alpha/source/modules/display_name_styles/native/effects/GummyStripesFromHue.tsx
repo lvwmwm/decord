@@ -1,14 +1,14 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16325
+// Function ID: 16326
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5151, 558, 576, 1407, 4906, 15503, 2]
+// Dependencies: [32, 19, 21, 5153, 558, 576, 1409, 4909, 15539, 2]
 
-// Module 16292 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 15503 */;
+// Module 16325 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 15539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GummyStripes
   const tmp = hue;
   hue = hue.hue;
   if (cResult[0] !== hue) {
-    const GUMMY_STRIPES = tmp(1407).GUMMY_STRIPES;
+    const GUMMY_STRIPES = tmp(1409).GUMMY_STRIPES;
     const mapped = GUMMY_STRIPES.map((hueShift, index) => {
       const obj = { hue, shift: hueShift.hueShift, saturation: hueShift.saturation, lightness: hueShift.lightness, overlap: index > 0 };
       return React3(closure_9, obj, index);
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GummyStripes
       return React3(closure_9, obj, index);
     })
   };
-  GUMMY_STRIPES = hue(1407).GUMMY_STRIPES;
+  GUMMY_STRIPES = hue(1409).GUMMY_STRIPES;
   return closure_4(closure_5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

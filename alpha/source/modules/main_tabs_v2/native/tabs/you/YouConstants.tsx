@@ -1,11 +1,11 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17442
+// Function ID: 17443
 // Name: YouConstants
-// Dependencies: [1200, 587, 2]
+// Dependencies: [1202, 587, 2]
 
-// Module 17408 (YouConstants)
+// Module 17442 (YouConstants)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
+import native from "native" /* 1202 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = native.AVATAR_SIZE_MAP[native.AvatarSizes.XXLARGE];

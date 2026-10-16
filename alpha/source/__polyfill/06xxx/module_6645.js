@@ -1,48 +1,22 @@
 // Module ID: 6645
 // Function ID: 6646
-// Dependencies: [6623, 6638, 6614]
-// Exports: usePinchGesture
+// Dependencies: [6625, 6640, 6616]
+// Exports: useFlingGesture
 
 // Module 6645
-import ComposedGestureName from "ComposedGestureName" /* 6614 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6623 */;
-import _mod6638 from "module_6638" /* 6638 */;
+import ComposedGestureName from "ComposedGestureName" /* 6616 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6625 */;
+import _mod6640 from "module_6640" /* 6640 */;
 
-function transformPinchProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
-  } else {
-    scaleChange = scale;
-  }
-  return { scaleChange };
-}
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 7517335332069;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 10393435493424;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
-const map = new Map();
-let closure_6 = {};
+let closure_2 = {};
 
-export const usePinchGesture = function usePinchGesture(cResult) {
+export const useFlingGesture = function useFlingGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
-    tmp = closure_6;
+    tmp = closure_2;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod6638;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
+  const obj2 = _mod6640;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Fling, clonedAndRemappedConfig);
 };

@@ -1,12 +1,12 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9092
+// Function ID: 9093
 // Name: GuildTraits
-// Dependencies: [1085, 2079, 2]
+// Dependencies: [1087, 2082, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9084 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import Constants from "Constants" /* 1085 */;
+// Module 9092 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let set;

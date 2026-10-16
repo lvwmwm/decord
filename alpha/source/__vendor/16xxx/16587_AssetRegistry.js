@@ -1,10 +1,10 @@
 // Module ID: 16587
 // Function ID: 16588
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16587 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "d280460baa66780ad374e84d31fc04a4", name: "hr.messages.d280460baa66780ad374e84d31fc04a4.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ca990f51cd6cd3877a91c6ff3ddaf3f5", name: "InventoryIcon", type: "png" });

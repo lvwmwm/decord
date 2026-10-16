@@ -1,29 +1,29 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9288
+// Function ID: 9289
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 7353, 1085, 21, 5151, 587, 558, 576, 9186, 7491, 9276, 7492, 9278, 9292, 1126, 5147, 9257, 1382, 9293, 9253, 8521, 4825, 4874, 5023, 9295, 9296, 504, 9297, 5451, 2]
+// Dependencies: [19, 17, 7355, 1087, 21, 5153, 587, 558, 576, 9199, 7493, 9289, 7494, 9291, 9305, 1128, 5149, 9270, 1384, 9306, 9266, 8529, 4828, 4877, 5026, 9308, 9309, 504, 9310, 5453, 2]
 
-// Module 9275 (CollectiblesShopCardCardDetailsV2)
+// Module 9288 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7491 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7492 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9186 */;
-import OrbsIcon from "OrbsIcon" /* 9257 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9276 */;
-import _mod9278 from "module_9278" /* 9278 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9292 */;
+import intl7 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4828 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7493 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9199 */;
+import OrbsIcon from "OrbsIcon" /* 9270 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9289 */;
+import _mod9291 from "module_9291" /* 9291 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9305 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7353 */;
-import Constants from "Constants" /* 1085 */;
+import IAPStore from "IAPStore" /* 7355 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp4;
-const CollectiblesShopCardVariantsDefault = tmp4(9297);
+const CollectiblesShopCardVariantsDefault = tmp4(9310);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -97,7 +97,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const tmpResult = _mod9278;
+            const tmpResult = _mod9291;
             const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
@@ -126,7 +126,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol5 = Symbol;
               ({ priceDescription: priceDescription5, text: text5 } = styles);
               if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl6 = tmp(1126).intl;
+                const intl6 = tmp(1128).intl;
                 const stringResult = intl6.string(intl7.t.BEjTij);
                 cResult[15] = stringResult;
                 tmp101 = stringResult;
@@ -161,7 +161,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol4 = Symbol;
               ({ priceDescription: priceDescription4, text: text4 } = styles);
               if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl5 = tmp(1126).intl;
+                const intl5 = tmp(1128).intl;
                 const stringResult1 = intl5.string(intl7.t["6cfuDj"]);
                 cResult[21] = stringResult1;
                 tmp91 = stringResult1;
@@ -196,7 +196,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol3 = Symbol;
               ({ priceDescription: priceDescription3, text: text3 } = styles);
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl4 = tmp(1126).intl;
+                const intl4 = tmp(1128).intl;
                 const stringResult2 = intl4.string(intl7.t.sEAnVH);
                 cResult[27] = stringResult2;
                 tmp81 = stringResult2;
@@ -231,7 +231,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol2 = Symbol;
               ({ priceDescription: priceDescription2, text: text2 } = styles);
               if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl3 = tmp(1126).intl;
+                const intl3 = tmp(1128).intl;
                 const stringResult3 = intl3.string(intl7.t.rt69oo);
                 cResult[33] = stringResult3;
                 tmp71 = stringResult3;
@@ -266,7 +266,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const _Symbol = Symbol;
               ({ priceDescription, text } = styles);
               if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(1126).intl;
+                const intl2 = tmp(1128).intl;
                 const stringResult4 = intl2.string(intl7.t.wu4gyV);
                 cResult[39] = stringResult4;
                 tmp61 = stringResult4;
@@ -329,7 +329,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                       tmp40 = cResult[51];
                     }
                     if (cResult[52] !== tmp9.amount) {
-                      const intl = tmp(1126).intl;
+                      const intl = tmp(1128).intl;
                       const obj15 = { orbAmount: tmp9.amount };
                       const formatToPlainStringResult = intl.formatToPlainString(intl7.t.W4DfeF, obj15);
                       cResult[52] = tmp9.amount;
@@ -388,11 +388,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                               }
                             }
                           }
-                          let tmp53Result = discountPercentage2 >= tmp(7492).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp53Result = discountPercentage2 >= tmp(7494).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp53Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-                            const Text2 = tmp(5147).Text;
+                            const Text2 = tmp(5149).Text;
                             let androidTextPadding;
                             const tmp53 = metroImportAll;
                             const tmpResult11 = PlatformUtils;
@@ -489,11 +489,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                           }
                         }
                       }
-                      let tmp31Result = discountPercentage >= tmp(7492).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp31Result = discountPercentage >= tmp(7494).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp31Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
-                        const Text = tmp(5147).Text;
+                        const Text = tmp(5149).Text;
                         let androidTextPadding1;
                         const tmp31 = metroImportAll;
                         const tmpResult13 = PlatformUtils;
@@ -531,10 +531,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 let tmp21;
                 if (discountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
                   const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(9293).TagIcon, obj22);
+                  tmp21 = metroImportAll(tmp(9306).TagIcon, obj22);
                 } else {
                   const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(9253).NitroWheelIcon, obj23);
+                  tmp21 = metroImportAll(tmp(9266).NitroWheelIcon, obj23);
                 }
                 tmp19 = tmp21;
               }
@@ -794,7 +794,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   const cResult = obj.c(37);
   ({ product, collectibleProductState, preferVCPrice, isDisabled, hidePrice } = arg0);
   closure_10();
-  const obj2 = isInImprovedMobileShopLoading(8521);
+  const obj2 = isInImprovedMobileShopLoading(8529);
   const currentUser = obj2.useCurrentUser();
   if (cResult[0] !== currentUser) {
     const obj3 = PremiumUtilsDefault;
@@ -803,17 +803,17 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     const canUseShopDiscountsResult = obj3.canUseShopDiscounts(currentUser);
   }
   if (cResult[2] !== currentUser) {
-    const tmpResult = isInImprovedMobileShopLoading(7492);
+    const tmpResult = isInImprovedMobileShopLoading(7494);
     const shopDiscountSource = tmpResult.getShopDiscountSource(currentUser);
     cResult[2] = currentUser;
     cResult[3] = shopDiscountSource;
   }
-  const tmpResult9 = isInImprovedMobileShopLoading(4874);
+  const tmpResult9 = isInImprovedMobileShopLoading(4877);
   const token = tmpResult9.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   if (cResult[4] !== token) {
-    const hexToRgbaString = isInImprovedMobileShopLoading(5023).hexToRgbaString;
-    isInImprovedMobileShopLoading(5023);
-    const tmpResult11 = isInImprovedMobileShopLoading(5023);
+    const hexToRgbaString = isInImprovedMobileShopLoading(5026).hexToRgbaString;
+    isInImprovedMobileShopLoading(5026);
+    const tmpResult11 = isInImprovedMobileShopLoading(5026);
     const hexToRgbaStringResult = hexToRgbaString(tmpResult11.hexWithOpacity(token, 0.9));
     cResult[4] = token;
     cResult[5] = hexToRgbaStringResult;
@@ -822,9 +822,9 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     tmp12 = cResult[5];
   }
   if (cResult[6] !== token) {
-    const hexToRgbaString2 = isInImprovedMobileShopLoading(5023).hexToRgbaString;
-    isInImprovedMobileShopLoading(5023);
-    const tmpResult13 = isInImprovedMobileShopLoading(5023);
+    const hexToRgbaString2 = isInImprovedMobileShopLoading(5026).hexToRgbaString;
+    isInImprovedMobileShopLoading(5026);
+    const tmpResult13 = isInImprovedMobileShopLoading(5026);
     const hexToRgbaString2Result = hexToRgbaString2(tmpResult13.hexWithOpacity(token, 0));
     cResult[6] = token;
     cResult[7] = hexToRgbaString2Result;
@@ -833,12 +833,12 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     tmp15 = cResult[7];
   }
   if (cResult[8] !== product) {
-    const tmpResult14 = isInImprovedMobileShopLoading(9295);
+    const tmpResult14 = isInImprovedMobileShopLoading(9308);
     const cardProductName = tmpResult14.getCardProductName(product);
     cResult[8] = product;
     cResult[9] = cardProductName;
   }
-  const tmpResult15 = isInImprovedMobileShopLoading(9296);
+  const tmpResult15 = isInImprovedMobileShopLoading(9309);
   isInImprovedMobileShopLoading = tmpResult15.useIsInImprovedMobileShopLoading();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [IAPStore];
@@ -909,25 +909,25 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   let isInImprovedMobileShopLoading;
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = closure_10();
-  const obj = isInImprovedMobileShopLoading(8521);
+  const obj = isInImprovedMobileShopLoading(8529);
   const currentUser = obj.useCurrentUser();
   const obj2 = PremiumUtilsDefault;
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  const obj3 = isInImprovedMobileShopLoading(7492);
+  const obj3 = isInImprovedMobileShopLoading(7494);
   const shopDiscountSource = obj3.getShopDiscountSource(currentUser);
-  const obj4 = isInImprovedMobileShopLoading(4874);
+  const obj4 = isInImprovedMobileShopLoading(4877);
   const token = obj4.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  const hexToRgbaString = isInImprovedMobileShopLoading(5023).hexToRgbaString;
-  isInImprovedMobileShopLoading(5023);
-  const obj5 = isInImprovedMobileShopLoading(5023);
+  const hexToRgbaString = isInImprovedMobileShopLoading(5026).hexToRgbaString;
+  isInImprovedMobileShopLoading(5026);
+  const obj5 = isInImprovedMobileShopLoading(5026);
   const hexToRgbaStringResult = hexToRgbaString(obj5.hexWithOpacity(token, 0.9));
-  const hexToRgbaString2 = isInImprovedMobileShopLoading(5023).hexToRgbaString;
-  isInImprovedMobileShopLoading(5023);
-  const obj6 = isInImprovedMobileShopLoading(5023);
+  const hexToRgbaString2 = isInImprovedMobileShopLoading(5026).hexToRgbaString;
+  isInImprovedMobileShopLoading(5026);
+  const obj6 = isInImprovedMobileShopLoading(5026);
   const hexToRgbaString2Result = hexToRgbaString2(obj6.hexWithOpacity(token, 0));
-  const obj7 = isInImprovedMobileShopLoading(9295);
+  const obj7 = isInImprovedMobileShopLoading(9308);
   const cardProductName = obj7.getCardProductName(product);
-  const obj8 = isInImprovedMobileShopLoading(9296);
+  const obj8 = isInImprovedMobileShopLoading(9309);
   isInImprovedMobileShopLoading = obj8.useIsInImprovedMobileShopLoading();
   const items = [IAPStore];
   const items1 = [isInImprovedMobileShopLoading];
@@ -941,7 +941,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   items3 = [, ];
   const obj11 = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: cardProductName };
   const tmp16 = LinearGradientDefault;
-  items3[0] = closure_8(isInImprovedMobileShopLoading(5147).Text, obj11);
+  items3[0] = closure_8(isInImprovedMobileShopLoading(5149).Text, obj11);
   let tmp15Result = !hidePrice;
   if (tmp15Result) {
     const obj12 = { style: tmp.priceVariantsContainer, children: items4 };

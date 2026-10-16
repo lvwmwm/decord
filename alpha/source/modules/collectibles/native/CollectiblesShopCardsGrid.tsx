@@ -1,17 +1,17 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16853
+// Function ID: 16854
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7480, 21, 5151, 9185, 558, 576, 9188, 16819, 12, 2]
+// Dependencies: [19, 17, 7482, 21, 5153, 9198, 558, 576, 9201, 16852, 12, 2]
 
-// Module 16820 (CollectiblesShopCardsGrid)
+// Module 16853 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9185 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
-import createStyles from "createStyles" /* 5151 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CollectiblesAnalyticsContext = tmp(9188);
+const CollectiblesAnalyticsContext = tmp(9201);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 let obj = { rowContainer: obj2 };
@@ -258,7 +258,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(16819);
+  let obj = products(16852);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
@@ -274,7 +274,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     scrollEnabled,
     showsVerticalScrollIndicator: false,
     onScroll,
-    contentContainerStyle: { gap: products(9185).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
+    contentContainerStyle: { gap: products(9198).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
     children: memo.map((arr, index) => {
       let closure_0 = index;
       let obj = {
@@ -298,7 +298,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
       return cardWidth(muteBundleStaticBackground, obj, index);
     })
   };
-  ({ gap: products(9185).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
+  ({ gap: products(9198).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" });
   return cardWidth(rowContainer, obj2);
 });
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardsGrid.tsx");

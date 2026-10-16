@@ -1,10 +1,10 @@
-// Module ID: 9935
-// Function ID: 9936
+// Module ID: 9951
+// Function ID: 9952
 // Name: ApplicationCommandsConstants
-// Dependencies: [1382, 2]
+// Dependencies: [1384, 2]
 
-// Module 9935 (ApplicationCommandsConstants)
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+// Module 9951 (ApplicationCommandsConstants)
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let num = 56;

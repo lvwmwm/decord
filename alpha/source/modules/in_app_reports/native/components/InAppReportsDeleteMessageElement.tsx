@@ -1,16 +1,16 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14273
+// Function ID: 14274
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5492, 1085, 21, 558, 576, 504, 5166, 7395, 1126, 5108, 14237, 2]
+// Dependencies: [32, 19, 5494, 1087, 21, 558, 576, 504, 5168, 7397, 1128, 5111, 14269, 2]
 
-// Module 14241 (InAppReportsDeleteMessageElement)
+// Module 14273 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
+import Constants from "Constants" /* 1087 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5492 */;
+import MessageStore from "MessageStore" /* 5494 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,11 +95,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
           dependencyMap(stateFromStores);
         }
       }
-      const stringResult = obj4.string(message(1126).t.c9BHL9);
-      const intl = tmp(1126).intl;
-      const stringResult1 = intl.string(message(1126).t.AT2KSd);
-      const intl2 = tmp(1126).intl;
-      const stringResult2 = intl2.string(message(1126).t.dK8S0w);
+      const stringResult = obj4.string(message(1128).t.c9BHL9);
+      const intl = tmp(1128).intl;
+      const stringResult1 = intl.string(message(1128).t.AT2KSd);
+      const intl2 = tmp(1128).intl;
+      const stringResult2 = intl2.string(message(1128).t.dK8S0w);
       cResult[10] = stringResult;
       cResult[11] = stringResult1;
       cResult[12] = stringResult2;
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
           dependencyMap(stateFromStores);
         }
       }
-      const tmp22 = jsx(message(5108).TrashIcon, { color: "text-feedback-critical" });
+      const tmp22 = jsx(message(5111).TrashIcon, { color: "text-feedback-critical" });
       cResult[13] = tmp22;
       tmp21 = tmp22;
     } else {
@@ -140,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
       }
       return tmp23;
     }
-    const tmp26 = jsx(reportId(14237), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp26 = jsx(reportId(14269), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp26;
@@ -184,11 +184,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(14237);
-  const intl = message(1126).intl;
-  const intl2 = message(1126).intl;
-  const intl3 = message(1126).intl;
-  return <tmp6 title={intl.string(message(1126).t.c9BHL9)} disabledTitle={intl2.string(message(1126).t.AT2KSd)} description={intl3.string(message(1126).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
+  reportId(14269);
+  const intl = message(1128).intl;
+  const intl2 = message(1128).intl;
+  const intl3 = message(1128).intl;
+  return <tmp6 title={intl.string(message(1128).t.c9BHL9)} disabledTitle={intl2.string(message(1128).t.AT2KSd)} description={intl3.string(message(1128).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
 });
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
 

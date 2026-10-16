@@ -1,18 +1,18 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17169
+// Function ID: 17170
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1200, 14278, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1202, 14310, 5149, 2]
 
-// Module 17135 (VoiceChannelUserLimit)
+// Module 17169 (VoiceChannelUserLimit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14278 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14310 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp7 = null;
   if (videoLimit) {
     const obj8 = { source: AssetRegistryDefault, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     tmp7 = React3(Icon, obj8);
   }
   cResult[0] = rect.videoIcon;

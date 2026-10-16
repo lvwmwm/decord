@@ -1,20 +1,20 @@
-// Module ID: 13611
-// Function ID: 13612
+// Module ID: 13637
+// Function ID: 13638
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 10273, 1503, 10319, 10270, 1126, 2632, 5439, 10410, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 10289, 1505, 10335, 10286, 1128, 2635, 5441, 10426, 5149, 2]
 
-// Module 13611 (PremiumGiftDMPurchaseSuccess)
+// Module 13637 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10270 */;
-import NativeGiftContext from "NativeGiftContext" /* 10273 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10410 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10286 */;
+import NativeGiftContext from "NativeGiftContext" /* 10289 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10426 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftD
   }
   const title = tmp4.title;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.MqZXbv);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftD
   }
   const description = tmp4.description;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.Y1keV0);
     cResult[5] = stringResult1;
     tmp15 = stringResult1;

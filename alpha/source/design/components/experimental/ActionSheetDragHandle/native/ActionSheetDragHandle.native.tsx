@@ -1,18 +1,18 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8781
+// Function ID: 8782
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8763, 21, 5151, 587, 558, 576, 1126, 4906, 2]
+// Dependencies: [19, 17, 8771, 21, 5153, 587, 558, 576, 1128, 4909, 2]
 
-// Module 8773 (ActionSheetDragHandle)
+// Module 8781 (ActionSheetDragHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4906 */;
+import intl2 from "intl" /* 1128 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8763 */;
-import createStyles from "createStyles" /* 5151 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8771 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[0] !== accessibilityLabel) {
     let stringResult = accessibilityLabel;
     if (undefined === accessibilityLabel) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.WAI6xu);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.WAI6xu);
     }
     cResult[0] = accessibilityLabel;
     cResult[1] = stringResult;

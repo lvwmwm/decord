@@ -1,21 +1,21 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18178
+// Function ID: 18179
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1085, 21, 5151, 587, 558, 576, 1121, 18140, 18059, 8416, 1126, 6382, 2]
+// Dependencies: [19, 1087, 21, 5153, 587, 558, 576, 1123, 18179, 18094, 8424, 1128, 6384, 2]
 
-// Module 18139 (VoicePanelHeaderChatButton)
+// Module 18178 (VoicePanelHeaderChatButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import intl2 from "intl" /* 1126 */;
-import NativeViewDefault from "NativeView" /* 6382 */;
-import ChatIcon2 from "ChatIcon" /* 8416 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18059 */;
-import useChatBadgeDefault from "useChatBadge" /* 18140 */;
+import Constants from "Constants" /* 1087 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import intl2 from "intl" /* 1128 */;
+import NativeViewDefault from "NativeView" /* 6384 */;
+import ChatIcon2 from "ChatIcon" /* 8424 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18094 */;
+import useChatBadgeDefault from "useChatBadge" /* 18179 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,8 +59,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHe
     const obj2 = { icon: hasOwnProperty(ChatIcon, obj3), accessibilityLabel: intl.string(intl2.t["5KxXrK"]), onPress: first };
     obj3 = { color: nativeDefault.colors.ICON_STRONG, size: "sm" };
     const tmp6Result = VoicePanelIconButtonDefault;
-    ChatIcon = tmp(8416).ChatIcon;
-    intl = tmp(1126).intl;
+    ChatIcon = tmp(8424).ChatIcon;
+    intl = tmp(1128).intl;
     const tmp11 = hasOwnProperty(tmp6Result, obj2);
     cResult[1] = tmp11;
     tmp8 = tmp11;

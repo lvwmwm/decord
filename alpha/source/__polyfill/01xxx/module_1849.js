@@ -1,41 +1,85 @@
 // Module ID: 1849
 // Function ID: 1850
-// Dependencies: [19, 17]
-// Exports: useKeyboardContext
+// Dependencies: [1658]
+// Exports: useAnimatedKeyboardHandler, useFocusedInputLayoutHandler
 
 // Module 1849
-import react_native from "react-native" /* 17 */;
-import react from "react" /* 19 */;
+import _mod1658 from "module_1658" /* 1658 */;
 
-let _window;
-let createContext;
-let obj2;
-let obj4;
-let value;
-let value2;
-function get() {
-  return c0;
-}
-({ useContext: _window, createContext } = react);
-const Animated = react_native.Animated;
-class NOOP {
-  constructor() {
+const __initData = { code: "function pnpm_reanimatedNativeTs1(event){const{handlers,context}=this.__closure;const{onKeyboardMoveStart:onKeyboardMoveStart,onKeyboardMove:onKeyboardMove,onKeyboardMoveEnd:onKeyboardMoveEnd,onKeyboardMoveInteractive:onKeyboardMoveInteractive}=handlers;if(onKeyboardMoveStart&&event.eventName.endsWith(\"onKeyboardMoveStart\")){onKeyboardMoveStart(event,context);}if(onKeyboardMove&&event.eventName.endsWith(\"onKeyboardMove\")){onKeyboardMove(event,context);}if(onKeyboardMoveEnd&&event.eventName.endsWith(\"onKeyboardMoveEnd\")){onKeyboardMoveEnd(event,context);}if(onKeyboardMoveInteractive&&event.eventName.endsWith(\"onKeyboardMoveInteractive\")){onKeyboardMoveInteractive(event,context);}}" };
+const __initData2 = { code: "function pnpm_reanimatedNativeTs2(event){const{handlers,context}=this.__closure;const{onFocusedInputLayoutChanged:onFocusedInputLayoutChanged}=handlers;if(onFocusedInputLayoutChanged&&event.eventName.endsWith(\"onFocusedInputLayoutChanged\")){onFocusedInputLayoutChanged(event,context);}}" };
 
-  }
-}
-class NESTED_NOOP {
-  constructor() {
-    return NOOP;
-  }
-}
-const obj = { value: 0, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-let c0 = null;
-const obj3 = { enabled: true, animated: obj4, reanimated: { progress: obj, height: obj }, layout: obj2, update: Promise.resolve, setKeyboardHandlers: NESTED_NOOP, setInputHandlers: NESTED_NOOP, setEnabled: NOOP };
-obj2 = { value: null, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-obj4 = { progress: value, height: value2 };
-value = new Animated.Value(0);
-value2 = new Animated.Value(0);
-const context = createContext(obj3);
-
-export const KeyboardContext = context;
-export const useKeyboardContext = () => React(context);
+export const useAnimatedKeyboardHandler = (handlers, items10) => {
+  let closure_0 = handlers;
+  const obj = _mod1658;
+  const handler = obj.useHandler(handlers, items10);
+  const context = handler.context;
+  const doDependenciesDiffer = handler.doDependenciesDiffer;
+  const fn = function v(eventName) {
+    let onKeyboardMove;
+    let onKeyboardMoveEnd;
+    let onKeyboardMoveInteractive;
+    let onKeyboardMoveStart;
+    ({ onKeyboardMoveStart, onKeyboardMove, onKeyboardMoveEnd, onKeyboardMoveInteractive } = closure_0);
+    let endsWithResult = onKeyboardMoveStart;
+    if (endsWithResult) {
+      eventName = eventName.eventName;
+      endsWithResult = eventName.endsWith("onKeyboardMoveStart");
+    }
+    if (endsWithResult) {
+      onKeyboardMoveStart(eventName, context);
+    }
+    let endsWithResult1 = onKeyboardMove;
+    if (endsWithResult1) {
+      const eventName2 = eventName.eventName;
+      endsWithResult1 = eventName2.endsWith("onKeyboardMove");
+    }
+    if (endsWithResult1) {
+      onKeyboardMove(eventName, context);
+    }
+    let endsWithResult2 = onKeyboardMoveEnd;
+    if (endsWithResult2) {
+      const eventName3 = eventName.eventName;
+      endsWithResult2 = eventName3.endsWith("onKeyboardMoveEnd");
+    }
+    if (endsWithResult2) {
+      onKeyboardMoveEnd(eventName, context);
+    }
+    let endsWithResult3 = onKeyboardMoveInteractive;
+    if (endsWithResult3) {
+      const eventName4 = eventName.eventName;
+      endsWithResult3 = eventName4.endsWith("onKeyboardMoveInteractive");
+    }
+    if (endsWithResult3) {
+      const result = onKeyboardMoveInteractive(eventName, context);
+    }
+  };
+  fn.__closure = { handlers, context };
+  fn.__workletHash = 6092807753388;
+  fn.__initData = __initData;
+  const obj2 = _mod1658;
+  return obj2.useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], doDependenciesDiffer);
+};
+export const useFocusedInputLayoutHandler = (handlers, items10) => {
+  let closure_0 = handlers;
+  const obj = _mod1658;
+  const handler = obj.useHandler(handlers, items10);
+  const context = handler.context;
+  const doDependenciesDiffer = handler.doDependenciesDiffer;
+  const fn = function v(eventName) {
+    const onFocusedInputLayoutChanged = closure_0.onFocusedInputLayoutChanged;
+    let endsWithResult = onFocusedInputLayoutChanged;
+    if (endsWithResult) {
+      eventName = eventName.eventName;
+      endsWithResult = eventName.endsWith("onFocusedInputLayoutChanged");
+    }
+    if (endsWithResult) {
+      const result = onFocusedInputLayoutChanged(eventName, context);
+    }
+  };
+  fn.__closure = { handlers, context };
+  fn.__workletHash = 9976853307145;
+  fn.__initData = __initData2;
+  const obj2 = _mod1658;
+  return obj2.useEvent(fn, ["onFocusedInputLayoutChanged"], doDependenciesDiffer);
+};

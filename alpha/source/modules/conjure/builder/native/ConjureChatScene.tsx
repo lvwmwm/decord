@@ -1,48 +1,48 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11608
+// Function ID: 11609
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 5500, 10886, 11586, 10885, 10901, 10919, 21, 11588, 11590, 4865, 5151, 587, 1503, 1631, 11598, 1645, 4906, 504, 6284, 11601, 10973, 11607, 11500, 11595, 10907, 10936, 11592, 10918, 11608, 11591, 10943, 1126, 3862, 11609, 10766, 11610, 1497, 8750, 11611, 5115, 11551, 11532, 11991, 11995, 11997, 4864, 11597, 11999, 12001, 12011, 10934, 11614, 10947, 12012, 10909, 11546, 11594, 9626, 7313, 12015, 11534, 12017, 6421, 11584, 12018, 9583, 9462, 5147, 5439, 12020, 12021, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 5502, 10901, 11609, 10900, 10916, 10934, 21, 11611, 11613, 4868, 5153, 587, 1505, 1633, 11621, 1647, 4909, 504, 6286, 11625, 10988, 11631, 11520, 11618, 10922, 10951, 11615, 10933, 11632, 11614, 10958, 1128, 3865, 11633, 10781, 11634, 1499, 8758, 11635, 5118, 11574, 11555, 12015, 12019, 12021, 4867, 11620, 12023, 12025, 12035, 10949, 11638, 10962, 12036, 10924, 11569, 11617, 9642, 7315, 12039, 11557, 12041, 6423, 11607, 12042, 9599, 9478, 5149, 5441, 12044, 12045, 558, 576, 2]
 // Exports: default
 
-// Module 11585 (ConjureChatScene)
+// Module 11608 (ConjureChatScene)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import SettingsIcon from "SettingsIcon" /* 7313 */;
-import UploadIcon from "UploadIcon" /* 9626 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10886 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
-import FramesConstants from "FramesConstants" /* 10919 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10934 */;
-import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 10947 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11500 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11532 */;
-import conjureProjectActions2 from "conjureProjectActions" /* 11534 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11551 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11588 */;
-import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11590 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11591 */;
-import conjurePublishAction from "conjurePublishAction" /* 11594 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 11609 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 11991 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12001 */;
-import BugIcon from "BugIcon" /* 12015 */;
-import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12017 */;
+import intl6 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import SettingsIcon from "SettingsIcon" /* 7315 */;
+import UploadIcon from "UploadIcon" /* 9642 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10901 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
+import FramesConstants from "FramesConstants" /* 10934 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10949 */;
+import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 10962 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11520 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11555 */;
+import conjureProjectActions2 from "conjureProjectActions" /* 11557 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11574 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11611 */;
+import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11613 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11614 */;
+import conjurePublishAction from "conjurePublishAction" /* 11617 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 11633 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12015 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12025 */;
+import BugIcon from "BugIcon" /* 12039 */;
+import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5500 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11586 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10901 */;
+import ApplicationStore from "ApplicationStore" /* 5502 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11609 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10916 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ExperimentalDirectSelectIcon2 = tmp(12018);
+const ExperimentalDirectSelectIcon2 = tmp(12042);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Keyboard: metroImportDefault, View: metroImportAll } = react_native);
@@ -650,7 +650,7 @@ export default function ConjureChatScene(guildId) {
   const memo2 = obj2.useMemo(() => {
     let intl;
     let items2;
-    obj = { id: "chat", label: intl.string(_modDef3862["1HH2p9"]), page: null };
+    obj = { id: "chat", label: intl.string(_modDef3865["1HH2p9"]), page: null };
     intl = intl6.intl;
     const items = [obj];
     if (availability.modes.length > 0) {
@@ -697,7 +697,7 @@ export default function ConjureChatScene(guildId) {
       if (closure_26) {
         tmp3 = stringResult1;
       }
-      preview = { prefix: tmp3, renderTrailingIcon: fn, menuLabel: intl.string(_modDef3862.I2ucou), onShowMenu: fn2 };
+      preview = { prefix: tmp3, renderTrailingIcon: fn, menuLabel: intl.string(_modDef3865.I2ucou), onShowMenu: fn2 };
       fn = undefined;
       if (closure_26) {
         if (closure_38) {
@@ -1018,7 +1018,7 @@ export default function ConjureChatScene(guildId) {
       } else {
         const intl = intl6.intl;
         obj = { action: disabled.label, detail: result };
-        label = intl.formatToPlainString(_modDef3862["ndkR+x"], obj);
+        label = intl.formatToPlainString(_modDef3865["ndkR+x"], obj);
       }
       const obj2 = {
         label,
@@ -1033,13 +1033,13 @@ export default function ConjureChatScene(guildId) {
       push4(obj2);
     }
     const push = items.push;
-    const obj3 = { label: intl2.string(_modDef3862.I2XSKe), IconComponent: SettingsIcon.SettingsIcon, action: callback3 };
+    const obj3 = { label: intl2.string(_modDef3865.I2XSKe), IconComponent: SettingsIcon.SettingsIcon, action: callback3 };
     intl2 = intl6.intl;
     push(obj3);
     const tmp10 = conjureDebugPaneEnabled;
     if (tmp10) {
       const push2 = items.push;
-      const obj4 = { label: intl3.string(_modDef3862["Q4FN+H"]), IconComponent: BugIcon.BugIcon, action: callback7 };
+      const obj4 = { label: intl3.string(_modDef3865["Q4FN+H"]), IconComponent: BugIcon.BugIcon, action: callback7 };
       intl3 = intl6.intl;
       push2(obj4);
     }

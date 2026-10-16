@@ -1,12 +1,12 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11054
+// Function ID: 11055
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 5500, 2060, 12, 6284, 558, 576, 504, 2]
+// Dependencies: [19, 5502, 2063, 12, 6286, 558, 576, 504, 2]
 
-// Module 11039 (useGetOrFetchApplicationBatched)
-import Timers from "Timers" /* 2060 */;
+// Module 11054 (useGetOrFetchApplicationBatched)
+import Timers from "Timers" /* 2063 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5500 */;
+import ApplicationStore from "ApplicationStore" /* 5502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

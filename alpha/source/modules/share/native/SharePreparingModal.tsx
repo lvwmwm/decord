@@ -1,22 +1,22 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8714
+// Function ID: 8715
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5423, 1126, 6428, 8707, 8708, 6376, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5425, 1128, 6430, 8715, 8716, 6378, 5149, 2]
 
-// Module 8706 (SharePreparingModal)
+// Module 8714 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Backdrop from "Backdrop" /* 5423 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6376 */;
-import XSmallIcon from "XSmallIcon" /* 6428 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8707 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8708 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Backdrop from "Backdrop" /* 5425 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6378 */;
+import XSmallIcon from "XSmallIcon" /* 6430 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8715 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8716 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
   }
   ({ topBar, topBarEnd } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.cpT0Cq);
     const tmp15 = hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" });
     cResult[4] = stringResult;
@@ -118,8 +118,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
-        const Text = tmp(5147).Text;
-        intl2 = tmp(1126).intl;
+        const Text = tmp(5149).Text;
+        intl2 = tmp(1128).intl;
         const tmp31 = hasOwnProperty(Text, obj3);
         cResult[15] = tmp31;
         tmp29 = tmp31;

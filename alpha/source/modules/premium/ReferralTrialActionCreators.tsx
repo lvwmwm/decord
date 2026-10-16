@@ -1,17 +1,19 @@
-// Module ID: 7392
-// Function ID: 7393
+// Module ID: 7394
+// Function ID: 7395
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7393, 1404, 2116, 1085, 1295, 584, 1255, 7395, 2]
-// Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
+// Dependencies: [5, 7395, 1406, 2119, 1087, 1297, 569, 1104, 584, 1257, 7397, 2]
+// Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7392 (ReferralTrialActionCreators)
+// Module 7394 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7393 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import Constants from "Constants" /* 1085 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7395 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import Constants from "Constants" /* 1087 */;
+import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
 let limit, userTrialOffer, userTrialOffers;
@@ -56,6 +58,94 @@ let obj = function _fetchReferralEligibleUsers() {
       };
       const result = closure_133_10.set(json, obj9);
       return obj9;
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _maybeFetchRecipientEligibility() {
+  obj = _asyncToGenerator(async (recipientIds) => {
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      let obj6;
+      let users;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              body = undefined;
+              const _Date2 = Date;
+              if (Date.now() >= closure_2_13) {
+                const obj5 = { type: "REFERRAL_RECIPIENT_ELIGIBILITY_FETCH_START", recipientIds };
+                const obj8 = DispatcherDefault;
+                obj8.dispatch(obj5);
+                c3 = 1;
+                const HTTP = HTTPUtils.HTTP;
+                const request = { url: constants.GET_REFERRAL_ELIGIBLE_USERS, body: obj6, oldFormErrors: true, rejectWithError: false };
+                c4 = 2;
+                c5 = 1;
+                obj6 = { index: 0, user_ids: recipientIds };
+                const obj7 = { value: HTTP.post(request), done: false };
+                return obj7;
+              }
+            }
+          } else if (1 === c4) {
+            c3 = 0;
+            const _Date = Date;
+            const timestamp = Date.now();
+            c13 = timestamp + closure_130_12.fail();
+            const obj9 = { type: "REFERRAL_RECIPIENT_ELIGIBILITY_FETCH_FAILURE", recipientIds };
+            const obj3 = closure_130_1(closure_130_2[8]);
+            obj3.dispatch(obj9);
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            body = value;
+            closure_130_12.succeed();
+            c13 = 0;
+            obj = { type: "REFERRAL_RECIPIENT_ELIGIBILITY_FETCH_SUCCESS", recipientIds, eligibleRecipientIds: users.map((id) => id.id) };
+            users = body.body.users;
+            const dispatch = closure_130_1(closure_130_2[8]).dispatch;
+            closure_130_1(closure_130_2[8]);
+            dispatch(obj);
+            c3 = 0;
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp23) {
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp23;
+          } else {
+            c4 = 1;
+          }
+        }
+      }
     })();
   });
   return obj(...arguments);
@@ -114,7 +204,7 @@ obj = function _createReferralTrials() {
             if (2 === tmp5) {
               c6 = 1;
               let closure_5 = closure_1_5;
-              obj2 = closure_132_1(closure_132_2[7]);
+              obj2 = closure_132_1(closure_132_2[9]);
               let captureExceptionResult = obj2.captureException(closure_5);
               let result = map.set(c2, closure_132_9.FAIL);
             } else if (arg0 === 1) {
@@ -141,7 +231,7 @@ obj = function _createReferralTrials() {
             c6 = 0;
           }
           if (closure_1 === undefined) {
-            let obj5 = closure_132_1(closure_132_2[6]);
+            let obj5 = closure_132_1(closure_132_2[8]);
             let obj6 = { type: "CREATE_REFERRALS_SUCCESS", userTrialOffers };
             let dispatchResult = obj5.dispatch(obj6);
             c8 = 3;
@@ -178,12 +268,12 @@ obj = function _createReferralTrial() {
     const obj4 = { url: constants.CREATE_REFERRAL(closure_0), oldFormErrors: true, rejectWithError: false };
     const post = HTTP.post;
     await post(obj4);
-    const obj6 = closure_130_1(closure_130_2[6]);
+    const obj6 = closure_130_1(closure_130_2[8]);
     obj6.dispatch({ type: "BILLING_CREATE_REFERRAL_FAIL" });
     if (tmp40.body.code === closure_130_7.INVALID_MESSAGE_SEND_USER) {
       currentlySelectedChannelId = closure_130_6.getCurrentlySelectedChannelId();
       if (null != currentlySelectedChannelId) {
-        const obj7 = closure_130_1(closure_130_2[8]);
+        const obj7 = closure_130_1(closure_130_2[10]);
         obj7.sendClydeError(currentlySelectedChannelId, tmp40.body.code);
       }
     }
@@ -194,7 +284,7 @@ obj = function _createReferralTrial() {
     }
     if (null != fromServer) {
       const obj9 = { type: "BILLING_CREATE_REFERRAL_SUCCESS", userTrialOffer: fromServer };
-      obj = closure_130_1(closure_130_2[6]);
+      obj = closure_130_1(closure_130_2[8]);
       obj.dispatch(obj9);
     }
     const obj10 = { userTrialOffer: fromServer };
@@ -216,7 +306,7 @@ obj = function _resolveReferralTrialOffer() {
       const obj4 = { url: constants.REFERRAL_OFFER_ID_RESOLVE(userTrialOfferId), oldFormErrors: true, rejectWithError: false };
       await get(obj4);
       const obj7 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId };
-      const obj5 = closure_131_1(closure_131_2[6]);
+      const obj5 = closure_131_1(closure_131_2[8]);
       obj5.dispatch(obj7);
       userTrialOffer = await "IconComponent";
       let fromServer = null;
@@ -224,8 +314,8 @@ obj = function _resolveReferralTrialOffer() {
         fromServer = closure_131_4.createFromServer(userTrialOffer.body);
       }
       userTrialOffer = fromServer;
-      const dispatch = closure_131_1(closure_131_2[6]).dispatch;
-      closure_131_1(closure_131_2[6]);
+      const dispatch = closure_131_1(closure_131_2[8]).dispatch;
+      closure_131_1(closure_131_2[8]);
       if (fromServer == null) {
         userTrialOffer = undefined;
       }
@@ -272,11 +362,17 @@ let obj2 = Object.create(EligibleUserCache.prototype);
 let map = new Map();
 obj2.cache = map;
 obj2.expiration = Date.now() + 600000;
-let result = size.fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
+let result = 30 * DurationsDefault.Millis.SECOND;
+new Backoff(result, 5 * DurationsDefault.Millis.MINUTE, true);
+let c13 = 0;
+let result1 = size.fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
 
 export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED", REFERRER_REWARD_GRANTED: 4, [4]: "REFERRER_REWARD_GRANTED" };
 export const CreateReferralStatus = obj;
 export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers() {
+  return obj(...arguments);
+};
+export const maybeFetchRecipientEligibility = function maybeFetchRecipientEligibility() {
   return obj(...arguments);
 };
 export const fetchReferralsRemaining = function fetchReferralsRemaining() {

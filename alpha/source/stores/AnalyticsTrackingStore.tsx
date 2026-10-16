@@ -1,17 +1,17 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7401
+// Function ID: 7402
 // Name: stores/AnalyticsTrackingStore
-// Dependencies: [502, 1085, 1273, 584, 7400, 1265, 7411, 7412, 2]
+// Dependencies: [502, 1087, 1275, 584, 7402, 1267, 7413, 7414, 2]
 
-// Module 7399 (stores/AnalyticsTrackingStore)
+// Module 7401 (stores/AnalyticsTrackingStore)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1265 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7400 */;
-import requestSafeIdleCallback from "requestSafeIdleCallback" /* 7411 */;
-import sendUnloadRequest from "sendUnloadRequest" /* 7412 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1267 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7402 */;
+import requestSafeIdleCallback from "requestSafeIdleCallback" /* 7413 */;
+import sendUnloadRequest from "sendUnloadRequest" /* 7414 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import size from "module_2" /* 2 */;
 
 let items;

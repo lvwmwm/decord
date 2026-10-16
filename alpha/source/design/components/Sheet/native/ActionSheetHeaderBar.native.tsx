@@ -1,19 +1,19 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7067
+// Function ID: 7068
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 1497, 4874, 5422, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 1499, 4877, 5424, 2]
 
-// Module 7065 (ActionSheetHeaderBar)
+// Module 7067 (ActionSheetHeaderBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useToken from "useToken" /* 4874 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5422 */;
+import intl2 from "intl" /* 1128 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useToken from "useToken" /* 4877 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5424 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -68,8 +68,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetH
   if (cResult[0] !== accessibilityLabel) {
     let stringResult = accessibilityLabel;
     if (undefined === accessibilityLabel) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.WAI6xu);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.WAI6xu);
     }
     cResult[0] = accessibilityLabel;
     cResult[1] = stringResult;

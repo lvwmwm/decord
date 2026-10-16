@@ -1,18 +1,17 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 5965
+// Function ID: 5966
 // Name: EmbedUtils
-// Dependencies: [1085, 5964, 11, 1403, 12, 4758, 1103, 5496, 2]
+// Dependencies: [1087, 5966, 11, 1405, 12, 4761, 5498, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 5963 (EmbedUtils)
+// Module 5965 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5496 */;
-import EmbedConstants from "EmbedConstants" /* 5964 */;
-import Constants from "Constants" /* 1085 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5498 */;
+import EmbedConstants from "EmbedConstants" /* 5966 */;
+import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
 let map;
@@ -102,25 +101,24 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const tmpResult = _modDef4758;
+    const tmpResult = _modDef4761;
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
   if (null != footer.color) {
-    const obj6 = utils_ColorUtils;
-    obj.color = obj6.int2hsl(footer.color, false);
+    obj.color = footer.color;
   }
   if (null != footer.thumbnail) {
     const thumbnail2 = footer.thumbnail;
-    const tmp10 = thumbnail2.width > 0 && thumbnail2.height > 0;
-    if (tmp10) {
+    const tmp9 = thumbnail2.width > 0 && thumbnail2.height > 0;
+    if (tmp9) {
       const type = obj.type;
       if (constants2.ARTICLE !== type) {
         if (constants2.IMAGE !== type) {
           const thumbnail3 = footer.thumbnail;
           ({ flags, content_type } = thumbnail3);
           size = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag4(num, constants.IS_ANIMATED), flags, contentType: content_type };
-          ({ url: obj15.url, proxy_url: obj15.proxyURL, width: obj15.width, height: obj15.height, placeholder: obj15.placeholder, placeholder_version: obj15.placeholderVersion, description: obj15.description } = thumbnail3);
+          ({ url: obj14.url, proxy_url: obj14.proxyURL, width: obj14.width, height: obj14.height, placeholder: obj14.placeholder, placeholder_version: obj14.placeholderVersion, description: obj14.description } = thumbnail3);
           num = flags;
           hasFlag4 = FlagUtils.hasFlag;
           FlagUtils;
@@ -136,7 +134,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
       const thumbnail = footer.thumbnail;
       ({ flags: flags2, content_type: content_type2 } = thumbnail);
       const size1 = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag(num2, constants.IS_ANIMATED), flags: flags2, contentType: content_type2 };
-      ({ url: obj7.url, proxy_url: obj7.proxyURL, width: obj7.width, height: obj7.height, placeholder: obj7.placeholder, placeholder_version: obj7.placeholderVersion, description: obj7.description } = thumbnail);
+      ({ url: obj6.url, proxy_url: obj6.proxyURL, width: obj6.width, height: obj6.height, placeholder: obj6.placeholder, placeholder_version: obj6.placeholderVersion, description: obj6.description } = thumbnail);
       num2 = flags2;
       hasFlag = FlagUtils.hasFlag;
       FlagUtils;
@@ -149,16 +147,16 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
       obj.image = size1;
     }
   }
-  let tmp15 = null != footer.image;
-  if (tmp15) {
+  let tmp14 = null != footer.image;
+  if (tmp14) {
     const image = footer.image;
-    tmp15 = image.width > 0 && image.height > 0;
+    tmp14 = image.width > 0 && image.height > 0;
   }
-  if (tmp15) {
+  if (tmp14) {
     const image2 = footer.image;
     ({ flags: flags3, content_type: content_type3 } = image2);
     const size2 = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag2(num4, constants.IS_ANIMATED), flags: flags3, contentType: content_type3 };
-    ({ url: obj8.url, proxy_url: obj8.proxyURL, width: obj8.width, height: obj8.height, placeholder: obj8.placeholder, placeholder_version: obj8.placeholderVersion, description: obj8.description } = image2);
+    ({ url: obj7.url, proxy_url: obj7.proxyURL, width: obj7.width, height: obj7.height, placeholder: obj7.placeholder, placeholder_version: obj7.placeholderVersion, description: obj7.description } = image2);
     num4 = flags3;
     hasFlag2 = FlagUtils.hasFlag;
     FlagUtils;
@@ -171,64 +169,64 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.image = size2;
   }
   if (null != footer.video) {
-    let tmp20 = null == obj.thumbnail && null != footer.video.proxy_url;
-    if (tmp20) {
+    let tmp19 = null == obj.thumbnail && null != footer.video.proxy_url;
+    if (tmp19) {
       const video = footer.video;
-      tmp20 = video.width > 0 && video.height > 0;
+      tmp19 = video.width > 0 && video.height > 0;
     }
-    if (tmp20) {
+    if (tmp19) {
       const size3 = { width: footer.video.width, height: footer.video.height, url: str.toString() };
-      const obj9 = { format: "webp" };
+      const obj8 = { format: "webp" };
       const _URL = URL;
       const self3 = this;
       const self4 = this;
       str = new URL(footer.video.proxy_url);
       const _Object = Object;
-      const keys = Object.keys(obj9);
+      const keys = Object.keys(obj8);
       const item = keys.forEach((item) => {
         const searchParams = str.searchParams;
-        const result = searchParams.set(item, obj9[item]);
+        const result = searchParams.set(item, obj8[item]);
       });
       obj.thumbnail = size3;
     }
-    let tmp25 = null != obj.thumbnail;
-    if (tmp25) {
+    let tmp24 = null != obj.thumbnail;
+    if (tmp24) {
       const video2 = footer.video;
-      tmp25 = video2.width > 0 && video2.height > 0;
+      tmp24 = video2.width > 0 && video2.height > 0;
     }
-    if (tmp25) {
-      let flag2;
+    if (tmp24) {
+      let flag;
       ({ provider, video: video3 } = footer);
       if (null == provider) {
-        flag2 = false;
+        flag = false;
         if (!re8.test(video3.url)) {
           let isMatch = null != video3.proxy_url;
           if (!isMatch) {
-            const obj11 = /^https:/i;
-            isMatch = obj11.test(video3.url);
+            const obj10 = /^https:/i;
+            isMatch = obj10.test(video3.url);
           }
-          let tmp31 = null != id;
-          if (tmp31) {
+          let tmp30 = null != id;
+          if (tmp30) {
             const tmpResult2 = SnowflakeUtilsDefault;
-            tmp31 = tmpResult2.extractTimestamp(id) < 1492472454139;
+            tmp30 = tmpResult2.extractTimestamp(id) < 1492472454139;
           }
-          let tmp32 = isMatch;
-          if (tmp31) {
+          let tmp31 = isMatch;
+          if (tmp30) {
             const isMatch1 = isMatch && null != provider && re9.test(provider.name);
-            tmp32 = isMatch1;
+            tmp31 = isMatch1;
           }
-          flag2 = tmp32;
+          flag = tmp31;
         }
       } else {
-        flag2 = false;
+        flag = false;
       }
-      tmp25 = flag2;
+      tmp24 = flag;
     }
-    if (tmp25) {
+    if (tmp24) {
       const video4 = footer.video;
       ({ flags: flags4, content_type: content_type4 } = video4);
       const size4 = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag3(num8, constants.IS_ANIMATED), flags: flags4, contentType: content_type4 };
-      ({ url: obj13.url, proxy_url: obj13.proxyURL, width: obj13.width, height: obj13.height, placeholder: obj13.placeholder, placeholder_version: obj13.placeholderVersion, description: obj13.description } = video4);
+      ({ url: obj12.url, proxy_url: obj12.proxyURL, width: obj12.width, height: obj12.height, placeholder: obj12.placeholder, placeholder_version: obj12.placeholderVersion, description: obj12.description } = video4);
       num8 = flags4;
       hasFlag3 = FlagUtils.hasFlag;
       FlagUtils;
@@ -251,13 +249,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const obj14 = InteractionComponentUtils;
-    const transformComponentsResult = obj14.transformComponents(footer.components);
-    let tmp39;
+    const obj13 = InteractionComponentUtils;
+    const transformComponentsResult = obj13.transformComponents(footer.components);
+    let tmp38;
     if (transformComponentsResult.length > 0) {
-      tmp39 = transformComponentsResult;
+      tmp38 = transformComponentsResult;
     }
-    obj.components = tmp39;
+    obj.components = tmp38;
   }
   return obj;
 };

@@ -1,19 +1,19 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7029
+// Function ID: 7030
 // Name: CategoryCollapseStore
-// Dependencies: [1244, 2065, 6181, 4804, 1085, 1209, 1386, 2090, 504, 584, 2]
+// Dependencies: [1246, 2068, 6183, 4807, 1087, 1211, 1388, 2093, 504, 584, 2]
 
-// Module 7027 (CategoryCollapseStore)
+// Module 7029 (CategoryCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6181 */;
-import GuildChannelStore from "GuildChannelStore" /* 4804 */;
+import Constants from "Constants" /* 1087 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6183 */;
+import GuildChannelStore from "GuildChannelStore" /* 4807 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, set;

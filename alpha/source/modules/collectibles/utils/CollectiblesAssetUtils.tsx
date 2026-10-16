@@ -1,11 +1,11 @@
-// Module ID: 1987
-// Function ID: 1988
+// Module ID: 1989
+// Function ID: 1990
 // Name: CollectiblesAssetUtils
-// Dependencies: [2, 1986]
+// Dependencies: [2, 1988]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1987 (CollectiblesAssetUtils)
-import mappers from "mappers" /* 1986 */;
+// Module 1989 (CollectiblesAssetUtils)
+import mappers from "mappers" /* 1988 */;
 import size from "module_2" /* 2 */;
 
 let str = "https://cdn.discordapp.com";

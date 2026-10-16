@@ -1,21 +1,21 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17267
+// Function ID: 17268
 // Name: ConjureChannelRow
-// Dependencies: [19, 1085, 2072, 11797, 21, 5151, 587, 558, 576, 1112, 17234, 12932, 1126, 3862, 12058, 17235, 2]
+// Dependencies: [19, 1087, 2075, 11821, 21, 5153, 587, 558, 576, 1114, 17268, 12958, 1128, 3865, 12082, 17269, 2]
 
-// Module 17233 (ConjureChannelRow)
+// Module 17267 (ConjureChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import router_utils from "router_utils" /* 1112 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11797 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 12932 */;
-import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 17234 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 17235 */;
+import Constants from "Constants" /* 1087 */;
+import router_utils from "router_utils" /* 1114 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11821 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 12958 */;
+import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 17268 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 17269 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,15 +59,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCha
   ({ hasUnread, badgeCount } = useConjureGuildUnreadSummaryDefault(id));
   useConjureGuildUnreadSummaryDefault(id);
   if (true === selected) {
-    SELECTED = tmp(12932).ChannelModes.SELECTED;
+    SELECTED = tmp(12958).ChannelModes.SELECTED;
   } else {
-    const ChannelModes = tmp(12932).ChannelModes;
+    const ChannelModes = tmp(12958).ChannelModes;
     SELECTED = hasUnread ? ChannelModes.UNREAD_IMPORTANT : ChannelModes.DEFAULT;
   }
   const container = tmp4.container;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3862.uk6jhJ);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(_modDef3865.uk6jhJ);
     cResult[2] = stringResult;
     tmp8 = stringResult;
   } else {
@@ -82,17 +82,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCha
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef3862.uk6jhJ);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(_modDef3865.uk6jhJ);
     cResult[5] = stringResult1;
     tmp11 = stringResult1;
   } else {
     tmp11 = cResult[5];
   }
   if (cResult[6] !== SELECTED) {
-    const tmp16 = jsx(id(12932).BaseChannelName, { name: tmp11, mode: SELECTED });
-    const BaseChannelIcon = tmp(12932).BaseChannelIcon;
-    const tmp17 = <BaseChannelIcon mode={SELECTED} IconComponent={id(12058).MagicWandIcon} />;
+    const tmp16 = jsx(id(12958).BaseChannelName, { name: tmp11, mode: SELECTED });
+    const BaseChannelIcon = tmp(12958).BaseChannelIcon;
+    const tmp17 = <BaseChannelIcon mode={SELECTED} IconComponent={id(12082).MagicWandIcon} />;
     cResult[6] = SELECTED;
     cResult[7] = tmp16;
     cResult[8] = tmp17;
@@ -156,10 +156,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCha
   const hasUnread = tmp5.hasUnread;
   const badgeCount = tmp5.badgeCount;
   if (true === selected) {
-    DEFAULT = id(12932).ChannelModes.SELECTED;
+    DEFAULT = id(12958).ChannelModes.SELECTED;
     tmp7 = id;
   } else {
-    const ChannelModes = id(12932).ChannelModes;
+    const ChannelModes = id(12958).ChannelModes;
     if (hasUnread) {
       DEFAULT = ChannelModes.UNREAD_IMPORTANT;
       tmp7 = tmp6;
@@ -169,13 +169,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCha
     }
   }
   BaseChannelItemDefault;
-  const intl = tmp7(1126).intl;
-  ({ name: intl2.string(_modDef3862.uk6jhJ), mode: DEFAULT });
-  const BaseChannelName = tmp7(12932).BaseChannelName;
-  intl2 = tmp7(1126).intl;
-  ({ mode: DEFAULT, IconComponent: tmp7(12058).MagicWandIcon });
-  const BaseChannelIcon = tmp7(12932).BaseChannelIcon;
-  return <tmp3Result onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(_modDef3862.uk6jhJ)} accessibilityState={{ selected }} mode={DEFAULT} unread={hasUnread} name={null} icon={null} channelInfo={null} />;
+  const intl = tmp7(1128).intl;
+  ({ name: intl2.string(_modDef3865.uk6jhJ), mode: DEFAULT });
+  const BaseChannelName = tmp7(12958).BaseChannelName;
+  intl2 = tmp7(1128).intl;
+  ({ mode: DEFAULT, IconComponent: tmp7(12082).MagicWandIcon });
+  const BaseChannelIcon = tmp7(12958).BaseChannelIcon;
+  return <tmp3Result onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(_modDef3865.uk6jhJ)} accessibilityState={{ selected }} mode={DEFAULT} unread={hasUnread} name={null} icon={null} channelInfo={null} />;
 });
 const result = size.fileFinishedImporting("modules/conjure/app_channel/native/ConjureChannelRow.tsx");
 

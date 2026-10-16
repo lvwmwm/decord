@@ -1,14 +1,14 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16052
+// Function ID: 16053
 // Name: QuestDockUtils
-// Dependencies: [17, 16020, 1102, 5438, 2]
+// Dependencies: [17, 16053, 1104, 5440, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 16019 (QuestDockUtils)
+// Module 16052 (QuestDockUtils)
 import react_native from "react-native" /* 17 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import spring from "spring" /* 5438 */;
-import QuestDockConstants from "QuestDockConstants" /* 16020 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import spring from "spring" /* 5440 */;
+import QuestDockConstants from "QuestDockConstants" /* 16053 */;
 import size_mod from "module_2" /* 2 */;
 
 const PixelRatio = react_native.PixelRatio;

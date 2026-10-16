@@ -1,16 +1,16 @@
-// Module ID: 16360
-// Function ID: 16361
+// Module ID: 16393
+// Function ID: 16394
 // Name: EnableReducedMotionSetting
-// Dependencies: [5140, 8210, 558, 576, 504, 15348, 10991, 1126, 2]
+// Dependencies: [5143, 8213, 558, 576, 504, 15383, 11006, 1128, 2]
 
-// Module 16360 (EnableReducedMotionSetting)
+// Module 16393 (EnableReducedMotionSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15348 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import intl2 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15383 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -1,9 +1,9 @@
-// Module ID: 1242
-// Function ID: 1243
+// Module ID: 1244
+// Function ID: 1245
 // Name: StageAudienceSidebarConstants
 // Dependencies: [2]
 
-// Module 1242 (StageAudienceSidebarConstants)
+// Module 1244 (StageAudienceSidebarConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/StageAudienceSidebarConstants.tsx");

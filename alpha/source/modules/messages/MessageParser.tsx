@@ -1,38 +1,38 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7588
+// Function ID: 7589
 // Name: MessageParser
-// Dependencies: [6203, 6250, 2065, 4804, 2125, 2119, 2087, 4806, 4816, 5019, 1390, 1085, 5464, 1393, 5481, 1949, 5462, 7587, 7588, 2041, 4820, 5471, 5018, 5469, 12, 5487, 1126, 7589, 6186, 1386, 4824, 2]
+// Dependencies: [6205, 6252, 2068, 4807, 2128, 2122, 2090, 4809, 4819, 5022, 1392, 1087, 5466, 1395, 5483, 1951, 5464, 7589, 7590, 2044, 4823, 5473, 5021, 5471, 12, 5489, 1128, 7591, 6188, 1388, 4827, 2]
 // Exports: parseAndRebuild
 
-// Module 7586 (MessageParser)
+// Module 7588 (MessageParser)
 import _modDef12 from "module_12" /* 12 */;
-import intl2 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4804 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import MarkupRulesDefault from "MarkupRules" /* 5462 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5464 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
-import MarkupTextRule2 from "MarkupTextRule" /* 5471 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5487 */;
-import AutocompleteBoundaryUtils from "AutocompleteBoundaryUtils" /* 7587 */;
-import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7588 */;
-import EmojiStore from "EmojiStore" /* 6203 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6250 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import StreamerModeStore from "StreamerModeStore" /* 5019 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import module_1949_mod from "module_1949" /* 1949 */;
-import "module_1949";
+import intl2 from "intl" /* 1128 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4807 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import MarkupRulesDefault from "MarkupRules" /* 5464 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5466 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5471 */;
+import MarkupTextRule2 from "MarkupTextRule" /* 5473 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5489 */;
+import AutocompleteBoundaryUtils from "AutocompleteBoundaryUtils" /* 7589 */;
+import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7590 */;
+import EmojiStore from "EmojiStore" /* 6205 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6252 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import StreamerModeStore from "StreamerModeStore" /* 5022 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import module_1951_mod from "module_1951" /* 1951 */;
+import "module_1951";
 import size from "module_2" /* 2 */;
 
 const MarkupTextRuleDefault = MarkupTextRule2;
@@ -42,7 +42,7 @@ let dependencyMap, importDefault;
 let MARKDOWN_SPOILER_REGEXP;
 let MARKDOWN_STATIC_ROUTE_NAME_REGEXP;
 let closure_15;
-let module_1949;
+let module_1951;
 let obj10;
 let obj11;
 let obj12;
@@ -96,7 +96,7 @@ function parse(arg0, arg1, customEmoji) {
   }
   return obj;
 }
-const f97076 = (text) => -text.text.length;
+const f97363 = (text) => -text.text.length;
 const parse2 = function parse(content) {
   return { type: str7.type, content: content[0] };
 };
@@ -112,10 +112,10 @@ function rebuild(arr, arg1, arg2, arg3) {
   const items = [];
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f97096) {
-      if (null != f97096) {
+    function handleEmoji(emojiContext, type, f97383) {
+      if (null != f97383) {
         if ("customEmoticon" === type.type) {
-          f97096(type.emoji, false);
+          f97383(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -132,7 +132,7 @@ function rebuild(arr, arg1, arg2, arg3) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f97096(byId, tmp11);
+                    let tmp12 = f97383(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -147,8 +147,8 @@ function rebuild(arr, arg1, arg2, arg3) {
         }
       }
     }
-    handleEmoji(channel, content, f97096);
-    const tmp2 = f97096;
+    handleEmoji(channel, content, f97383);
+    const tmp2 = f97383;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -262,7 +262,7 @@ function createParserState(getGuildId, arr) {
   const mapped3 = tmp9ResultResult.map((id) => ({ id: id.id, text: id.name }));
   if (null != guildId) {
     const tmp9Result3 = _modDef12;
-    const tmp9Result1Result = tmp9Result3(guildId(6186).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const tmp9Result1Result = tmp9Result3(guildId(6188).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
     const found1 = tmp9Result1Result.filter((item) => item !== closure_1_7);
     const flatMapResult = found1.flatMap((item) => {
       const arr = GuildChannelStore.getChannels(guildId)[item];
@@ -280,7 +280,7 @@ function createParserState(getGuildId, arr) {
         return tmp3;
       });
     });
-    const iter = flatMapResult.filter(guildId(1386).isNotNullish);
+    const iter = flatMapResult.filter(guildId(1388).isNotNullish);
     items = iter.value();
   } else {
     items = [];
@@ -335,20 +335,20 @@ function unparseWithMeta(content1, id, isNotification) {
   if (isNotification) {
     translateSurrogatesToInlineEmoji = NOOP;
   } else {
-    translateSurrogatesToInlineEmoji = translateSurrogatesToInlineEmoji(4820).translateSurrogatesToInlineEmoji;
+    translateSurrogatesToInlineEmoji = translateSurrogatesToInlineEmoji(4823).translateSurrogatesToInlineEmoji;
   }
   const obj = { inline: true, guild, channelId: id, isNotification };
-  const obj4 = translateSurrogatesToInlineEmoji(1949);
+  const obj4 = translateSurrogatesToInlineEmoji(1951);
   dependencyMap = undefined;
   content = "";
   const items = [];
   const arr = obj4.parserFor(omitResult)(content1, obj);
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f97096) {
-      if (null != f97096) {
+    function handleEmoji(emojiContext, type, f97383) {
+      if (null != f97383) {
         if ("customEmoticon" === type.type) {
-          f97096(type.emoji, false);
+          f97383(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -365,7 +365,7 @@ function unparseWithMeta(content1, id, isNotification) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f97096(byId, tmp11);
+                    let tmp12 = f97383(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -380,8 +380,8 @@ function unparseWithMeta(content1, id, isNotification) {
         }
       }
     }
-    handleEmoji(channel, content, f97096);
-    const tmp2 = f97096;
+    handleEmoji(channel, content, f97383);
+    const tmp2 = f97383;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -470,7 +470,7 @@ let obj = {
       let firstResult;
       if (str[0] === GAME_MENTION_SENTINEL) {
         closure_3 = str.substring(arr.length);
-        const sortByResult = games.sortBy(f97076);
+        const sortByResult = games.sortBy(f97363);
         const found = sortByResult.filter((text) => {
           const str = text.text;
           const formatted = closure_1.toLowerCase();
@@ -500,7 +500,7 @@ let obj = {
         let firstResult1;
         if (str[0] === "@") {
           closure_3 = str.substring("@".length);
-          const sortByResult2 = users.sortBy(f97076);
+          const sortByResult2 = users.sortBy(f97363);
           const found1 = sortByResult2.filter((text) => {
             const str = text.text;
             const formatted = closure_1.toLowerCase();
@@ -530,7 +530,7 @@ let obj = {
           let firstResult2;
           if (str[0] === "@") {
             closure_3 = str.substring("@".length);
-            const sortByResult4 = mentionableRoles.sortBy(f97076);
+            const sortByResult4 = mentionableRoles.sortBy(f97363);
             const found2 = sortByResult4.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -565,7 +565,7 @@ let obj = {
             let firstResult3;
             if (str[0] === "@") {
               closure_3 = str.substring("@".length);
-              const sortByResult6 = mapped3.sortBy(f97076);
+              const sortByResult6 = mapped3.sortBy(f97363);
               const found3 = sortByResult6.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -643,7 +643,7 @@ let obj = {
           let firstResult;
           if (str[0] === "#") {
             let closure_3 = str.substring("#".length);
-            const sortByResult = channels.sortBy(f97076);
+            const sortByResult = channels.sortBy(f97363);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -776,19 +776,19 @@ let obj = {
   },
   text: obj7
 };
-str = module_1949.defaultRules.link;
-str2 = module_1949.defaultRules.autolink;
-str3 = module_1949.defaultRules.url;
+str = module_1951.defaultRules.link;
+str2 = module_1951.defaultRules.autolink;
+str3 = module_1951.defaultRules.url;
 str4 = MarkupRulesDefault.RULES.inlineCode;
 str5 = MarkupRulesDefault.RULES.codeBlock;
-obj2 = { match: module_1949.anyScopeRegex(tmp3), parse: parse3 };
-module_1949 = module_1949_mod;
-obj3 = { match: module_1949.anyScopeRegex(tmp4), parse: parse3 };
-module_1949 = module_1949_mod;
-obj4 = { match: module_1949.anyScopeRegex(tmp5), parse: parse3 };
-module_1949 = module_1949_mod;
-obj5 = { match: module_1949.anyScopeRegex(tmp6), parse: parse3 };
-module_1949 = module_1949_mod;
+obj2 = { match: module_1951.anyScopeRegex(tmp3), parse: parse3 };
+module_1951 = module_1951_mod;
+obj3 = { match: module_1951.anyScopeRegex(tmp4), parse: parse3 };
+module_1951 = module_1951_mod;
+obj4 = { match: module_1951.anyScopeRegex(tmp5), parse: parse3 };
+module_1951 = module_1951_mod;
+obj5 = { match: module_1951.anyScopeRegex(tmp6), parse: parse3 };
+module_1951 = module_1951_mod;
 obj7 = {
   match(arg0, textExclusions) {
     let match;
@@ -813,7 +813,7 @@ const obj8 = { inlineCode: { order: str6.order, match: str6.match, parse: parse2
 str6 = MarkupRulesDefault.RULES.inlineCode;
 str7 = MarkupRulesDefault.RULES.codeBlock;
 obj9 = {
-  match: module_1949.anyScopeRegex(tmp3),
+  match: module_1951.anyScopeRegex(tmp3),
   parse(arg0, arg1, channelId) {
     let guild;
     let isNotification;
@@ -888,9 +888,9 @@ obj9 = {
     }
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj10 = {
-  match: module_1949.anyScopeRegex(tmp4),
+  match: module_1951.anyScopeRegex(tmp4),
   parse(content, arg1, guild) {
     guild = guild.guild;
     if (null != guild) {
@@ -904,9 +904,9 @@ obj10 = {
     return { content: content[0] };
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj11 = {
-  match: module_1949.anyScopeRegex(tmp5),
+  match: module_1951.anyScopeRegex(tmp5),
   parse(arg0) {
     const channel = ChannelStore.getChannel(arg0[1]);
     if (null == channel) {
@@ -918,9 +918,9 @@ obj11 = {
     return { content };
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj12 = {
-  match: module_1949.anyScopeRegex(tmp6),
+  match: module_1951.anyScopeRegex(tmp6),
   parse(arg0, arg1, guild) {
     let name;
     let tmp;
@@ -940,9 +940,9 @@ obj12 = {
     return obj;
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj13 = {
-  match: module_1949.anyScopeRegex(getSoundmojiASTFromString.soundmojiRawFormatRegex),
+  match: module_1951.anyScopeRegex(getSoundmojiASTFromString.soundmojiRawFormatRegex),
   parse(arg0) {
     let tmp;
     let tmp2;
@@ -951,9 +951,9 @@ obj13 = {
     return obj;
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj14 = {
-  match: module_1949.anyScopeRegex(UnicodeEmojisDefault.EMOJI_NAME_RE),
+  match: module_1951.anyScopeRegex(UnicodeEmojisDefault.EMOJI_NAME_RE),
   parse(arg0) {
     let tmp;
     let tmp2;
@@ -966,9 +966,9 @@ obj14 = {
     return { content };
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj15 = {
-  match: module_1949.anyScopeRegex(MARKDOWN_SPOILER_REGEXP),
+  match: module_1951.anyScopeRegex(MARKDOWN_SPOILER_REGEXP),
   parse() {
     let str;
     const obj = { content: "<" + str.toLowerCase() + ">" };
@@ -977,9 +977,9 @@ obj15 = {
     return obj;
   }
 };
-module_1949 = module_1949_mod;
+module_1951 = module_1951_mod;
 obj16 = {
-  match: module_1949.anyScopeRegex(MARKDOWN_STATIC_ROUTE_NAME_REGEXP),
+  match: module_1951.anyScopeRegex(MARKDOWN_STATIC_ROUTE_NAME_REGEXP),
   parse(arg0) {
     const obj = { content: "<id:" + arg0[1] + ">" };
     return obj;
@@ -1011,8 +1011,8 @@ let item = items.forEach((item) => {
     item[item].order = order;
   });
 });
-module_1949 = module_1949_mod;
-let closure_21 = module_1949.parserFor(obj);
+module_1951 = module_1951_mod;
+let closure_21 = module_1951.parserFor(obj);
 const re22 = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
 const obj19 = {
   parse(getGuildId, content, arg2, arr) {
@@ -1026,8 +1026,8 @@ const obj19 = {
     obj = { content, tts: false, invalidEmojis: [], validNonShortcutEmojis: [] };
     closure_0 = tmp;
     arr = closure_21(obj.content, tmp);
-    let closure_1 = obj(4820).translateInlineEmojiToSurrogates;
-    const f97096 = (emoji, arg1) => {
+    let closure_1 = obj(4823).translateInlineEmojiToSurrogates;
+    const f97383 = (emoji, arg1) => {
       obj = obj(dependencyMap[30]);
       const obj2 = { emoji, channel, intention: constants.CHAT };
       if (obj.isEmojiPremiumLocked(obj2)) {
@@ -1045,10 +1045,10 @@ const obj19 = {
     let closure_4 = [];
     const item = arr.forEach((content) => {
       let regex;
-      function handleEmoji(emojiContext, type, f97096) {
-        if (null != f97096) {
+      function handleEmoji(emojiContext, type, f97383) {
+        if (null != f97383) {
           if ("customEmoticon" === type.type) {
-            f97096(type.emoji, false);
+            f97383(type.emoji, false);
           }
           if ("emoticon" === type.type) {
             obj = closure_1_1(closure_1_2[20]);
@@ -1065,7 +1065,7 @@ const obj19 = {
                     }
                     if (byId) {
                       let tmp11 = type.isShortcut || false;
-                      let tmp12 = f97096(byId, tmp11);
+                      let tmp12 = f97383(byId, tmp11);
                     }
                     match = regex.exec(result);
                     if (null === match) {
@@ -1080,8 +1080,8 @@ const obj19 = {
           }
         }
       }
-      handleEmoji(channel, content, f97096);
-      const tmp2 = f97096;
+      handleEmoji(channel, content, f97383);
+      const tmp2 = f97383;
       if (typeof content.content === "string") {
         const type = content.type;
         if ("emoji" === type) {
@@ -1155,10 +1155,10 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
   let closure_4 = [];
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f97096) {
-      if (null != f97096) {
+    function handleEmoji(emojiContext, type, f97383) {
+      if (null != f97383) {
         if ("customEmoticon" === type.type) {
-          f97096(type.emoji, false);
+          f97383(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -1175,7 +1175,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f97096(byId, tmp11);
+                    let tmp12 = f97383(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -1190,8 +1190,8 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
         }
       }
     }
-    handleEmoji(channel, content, f97096);
-    const tmp2 = f97096;
+    handleEmoji(channel, content, f97383);
+    const tmp2 = f97383;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {

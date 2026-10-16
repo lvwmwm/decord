@@ -1,12 +1,12 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11224
+// Function ID: 11225
 // Name: useVadColors
-// Dependencies: [2125, 1390, 558, 576, 504, 2]
+// Dependencies: [2128, 1392, 558, 576, 504, 2]
 
-// Module 11208 (useVadColors)
+// Module 11224 (useVadColors)
 import get_initialized from "get initialized" /* 504 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserStore from "UserStore" /* 1390 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

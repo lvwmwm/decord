@@ -1,28 +1,28 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8891
+// Function ID: 8892
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2065, 2087, 2071, 8733, 21, 5151, 587, 6150, 558, 576, 1126, 1200, 6998, 6405, 5147, 8877, 504, 8793, 8884, 7713, 8887, 5439, 7035, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 2090, 2074, 8741, 21, 5153, 587, 6152, 558, 576, 1128, 1202, 7000, 6407, 5149, 8885, 504, 8801, 8892, 7716, 8895, 5441, 7037, 2]
 
-// Module 8883 (StartEventModal)
+// Module 8891 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import Pressables from "Pressables" /* 6405 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6998 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8733 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8877 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import Pressables from "Pressables" /* 6407 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7000 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8741 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8885 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
   const cResult = obj.c(6);
   onClose = onClose.onClose;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -82,7 +82,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp10 = authStore2(Icon, obj2);
     cResult[3] = tmp10;
     tmp7 = tmp10;
@@ -135,7 +135,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartE
   const tmp4 = closure_14();
   ({ header, headerPrivacyLevel } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t["q+fFJv"]);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,9 +1,9 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7098
+// Function ID: 7099
 // Name: Constants
 // Dependencies: [2]
 
-// Module 7096 (Constants)
+// Module 7098 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connections/Constants.tsx");

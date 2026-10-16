@@ -1,21 +1,21 @@
-// Module ID: 9858
-// Function ID: 9859
+// Module ID: 9874
+// Function ID: 9875
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1085, 21, 5151, 558, 576, 7985, 6379, 1415, 5088, 9859, 1126, 6405, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 5153, 558, 576, 7988, 6381, 1417, 5091, 9875, 1128, 6407, 2]
 
-// Module 9858 (IconUploader)
+// Module 9874 (IconUploader)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import GuildIcon from "GuildIcon" /* 6379 */;
-import Pressables from "Pressables" /* 6405 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9859 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import GuildIcon from "GuildIcon" /* 6381 */;
+import Pressables from "Pressables" /* 6407 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,8 +102,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp14 = tmp18;
           }
         }
-        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6379).GuildIconSizes.XLARGE, animate: true };
-        const tmp21 = onChangeIconPress(6379);
+        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6381).GuildIconSizes.XLARGE, animate: true };
+        const tmp21 = onChangeIconPress(6381);
         const tmp22 = closure_7(tmp21, obj3);
         cResult[8] = tmp7;
         cResult[9] = iconStyle;
@@ -114,7 +114,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
     } else {
       let tmp11;
       if (cResult[12] !== tmp7) {
-        const tmpResult = tmp(1415);
+        const tmpResult = tmp(1417);
         const source = tmpResult.makeSource(tmp7);
         cResult[12] = tmp7;
         cResult[13] = source;
@@ -133,7 +133,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
           }
         }
         let obj4 = { style: tmp13, source: tmp11 };
-        const tmp17 = closure_7(onChangeIconPress(5088), obj4);
+        const tmp17 = closure_7(onChangeIconPress(5091), obj4);
         cResult[17] = tmp11;
         cResult[18] = tmp13;
         cResult[19] = tmp17;
@@ -160,8 +160,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
           let tmp34;
           const _Symbol = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1126).intl;
-            const stringResult = intl.string(tmp(1126).t["MsUY/S"]);
+            const intl = tmp(1128).intl;
+            const stringResult = intl.string(tmp(1128).t["MsUY/S"]);
             cResult[26] = stringResult;
             tmp34 = stringResult;
           } else {
@@ -187,7 +187,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp39 = tmp42;
           }
           let obj6 = { accessibilityRole: "button", accessibilityLabel: tmp34, onPress: tmp10, children: tmp28 };
-          const tmp38 = closure_7(tmp(6405).PressableOpacity, obj6);
+          const tmp38 = closure_7(tmp(6407).PressableOpacity, obj6);
           cResult[27] = tmp10;
           cResult[28] = tmp28;
           cResult[29] = tmp38;
@@ -205,8 +205,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
     }
     let tmp24 = null;
     if (!tmp4) {
-      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9859) };
-      const tmp27 = onChangeIconPress(5088);
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9875) };
+      const tmp27 = onChangeIconPress(5091);
       tmp24 = closure_7(tmp27, obj8);
     }
     cResult[20] = tmp4;

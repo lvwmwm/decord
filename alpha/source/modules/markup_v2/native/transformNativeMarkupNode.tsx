@@ -1,11 +1,10 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8376
+// Function ID: 8377
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5460, 5146, 8370, 8371, 8372, 8374, 8457, 2]
+// Dependencies: [32, 5462, 8377, 8378, 8379, 8380, 8382, 8465, 2]
 
-// Module 8369 (transformNativeMarkupNode)
-import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 5146 */;
-import MarkupTypes from "MarkupTypes" /* 5460 */;
+// Module 8376 (transformNativeMarkupNode)
+import MarkupTypes from "MarkupTypes" /* 5462 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +67,7 @@ function transformNode(type, channelId) {
       const replaced = str4.replace(/^\n+|\n+$/g, "");
       let replaced1 = replaced;
       if ("ansi" === (type.value.language ?? "").toLowerCase()) {
-        replaced1 = replaced.replaceAll(regExp, "");
+        replaced1 = replaced.replaceAll(require("HighlightJsAnsiLanguage").ANSI_CONTROL_SEQUENCE_RE_GLOBAL, "");
       }
       if (true === channelId.formatInline) {
         obj14 = { type: require("MarkupTypes").AST_KEY.INLINE_CODE, content: replaced1 };
@@ -103,11 +102,11 @@ function transformNode(type, channelId) {
         const obj18 = { inQuote: true };
         const merged = Object.assign(channelId);
         arr2 = transformNativeBlocks(value2, obj18, "quote");
-        const tmp51 = _require;
+        const tmp52 = _require;
         if (arr2.length <= 0) {
-          const items1 = [{ type: tmp51(5460).AST_KEY.TEXT, content: " " }];
+          const items1 = [{ type: tmp52(5462).AST_KEY.TEXT, content: " " }];
           arr2 = items1;
-          const obj19 = { type: tmp51(5460).AST_KEY.TEXT, content: " " };
+          const obj19 = { type: tmp52(5462).AST_KEY.TEXT, content: " " };
         }
       }
       return obj17;
@@ -240,7 +239,6 @@ function transformNativeBlocks(content, channelId, quote) {
   return items;
 }
 const set = new Set(["paragraph", "quote"]);
-const regExp = new RegExp(HighlightJsAnsiLanguage.ANSI_CONTROL_SEQUENCE_RE, "g");
 let result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupNode.tsx");
 
 export { transformNativeInline };

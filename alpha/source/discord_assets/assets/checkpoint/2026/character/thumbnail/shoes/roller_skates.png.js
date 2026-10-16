@@ -1,8 +1,8 @@
-// Module ID: 5572
-// Function ID: 5573
+// Module ID: 5574
+// Function ID: 5575
 // Dependencies: [2]
 
-// Module 5572
+// Module 5574
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/shoes/roller_skates.png.js");

@@ -1,16 +1,16 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12224
+// Function ID: 12225
 // Name: ConjureRestoreProposalCard
-// Dependencies: [19, 21, 558, 576, 11597, 5147, 1126, 3862, 5437, 5439, 12063, 2]
+// Dependencies: [19, 21, 558, 576, 11620, 5149, 1128, 3865, 5439, 5441, 12087, 2]
 
-// Module 12201 (ConjureRestoreProposalCard)
+// Module 12224 (ConjureRestoreProposalCard)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Stack_Stack from "Stack/Stack" /* 5437 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11597 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12063 */;
+import intl3 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Stack_Stack from "Stack/Stack" /* 5439 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11620 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12087 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -45,9 +45,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureResto
   }
   const relative = tmp4.relative;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3862["t+b0rz"]) };
-    const Text = tmp(5147).Text;
-    intl = tmp(1126).intl;
+    const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3865["t+b0rz"]) };
+    const Text = tmp(5149).Text;
+    intl = tmp(1128).intl;
     const tmp9 = _false(Text, obj2);
     cResult[2] = tmp9;
     tmp6 = tmp9;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureResto
     let tmp14 = null;
     if (null != relative) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: relative };
-      tmp14 = _false(tmp(5147).Text, obj4);
+      tmp14 = _false(tmp(5149).Text, obj4);
     }
     cResult[5] = relative;
     cResult[6] = tmp14;
@@ -84,9 +84,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureResto
     if (cResult[10] !== onRestore) {
       let tmp19 = null;
       if (null != onRestore) {
-        const obj5 = { text: intl2.string(_modDef3862.H8Jfhu), variant: "secondary", onPress: onRestore };
-        const Button = tmp(5439).Button;
-        intl2 = tmp(1126).intl;
+        const obj5 = { text: intl2.string(_modDef3865.H8Jfhu), variant: "secondary", onPress: onRestore };
+        const Button = tmp(5441).Button;
+        intl2 = tmp(1128).intl;
         tmp19 = _false(Button, obj5);
       }
       cResult[10] = onRestore;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureResto
   const relative = obj.formatAuthoredAt(proposal.authored_at).relative;
   const tmp5 = ConjureNativeCardSurfaceDefault;
   const Stack = Stack_Stack.Stack;
-  const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3862["t+b0rz"]) };
+  const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3865["t+b0rz"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   const items = [_false(Text, obj2), , ];
@@ -140,15 +140,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureResto
   let tmp3Result = null;
   if (null != relative) {
     const obj4 = { variant: "text-sm/normal", color: "text-muted", children: relative };
-    tmp3Result = tmp3(tmp(5147).Text, obj4);
+    tmp3Result = tmp3(tmp(5149).Text, obj4);
   }
   items1[1] = tmp3Result;
   items[1] = React3(Stack2, { direction: "vertical", spacing: 4, children: items1 });
   let tmp3Result2 = null;
   if (null != onRestore) {
-    const obj5 = { text: intl2.string(_modDef3862.H8Jfhu), variant: "secondary", onPress: onRestore };
-    const Button = tmp(5439).Button;
-    intl2 = tmp(1126).intl;
+    const obj5 = { text: intl2.string(_modDef3865.H8Jfhu), variant: "secondary", onPress: onRestore };
+    const Button = tmp(5441).Button;
+    intl2 = tmp(1128).intl;
     tmp3Result2 = tmp3(Button, obj5);
   }
   items[2] = tmp3Result2;

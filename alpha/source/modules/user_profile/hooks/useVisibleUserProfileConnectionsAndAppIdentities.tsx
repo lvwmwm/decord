@@ -1,12 +1,12 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14101
+// Function ID: 14102
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 14070, 14071, 7077, 1386, 5979, 2]
+// Dependencies: [19, 558, 576, 14102, 14103, 7079, 1388, 5981, 2]
 
-// Module 14069 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 5979 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14070 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14071 */;
+// Module 14101 (useVisibleUserProfileConnectionsAndAppIdentities)
+import PlatformsDefault from "Platforms" /* 5981 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14102 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14103 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const useGetOrFetchApplicationsDefault = tmp4(7077);
+const useGetOrFetchApplicationsDefault = tmp4(7079);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let tmp11;
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
   }
   const arr5 = useGetOrFetchApplicationsDefault(tmp11);
   if (cResult[4] !== arr5) {
-    const found = arr5.filter(tmp(1386).isNotNullish);
+    const found = arr5.filter(tmp(1388).isNotNullish);
     cResult[4] = arr5;
     cResult[5] = found;
     tmp15 = found;

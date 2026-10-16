@@ -1,23 +1,23 @@
-// Module ID: 11552
-// Function ID: 11553
+// Module ID: 11575
+// Function ID: 11576
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2119, 10885, 1085, 21, 5151, 587, 558, 576, 504, 7166, 5115, 1126, 3862, 5147, 7060, 8783, 6959, 6485, 6397, 7118, 11553, 11556, 11558, 7165, 11559, 11560, 10907, 11561, 6400, 2]
+// Dependencies: [5, 32, 19, 17, 2122, 10900, 1087, 21, 5153, 587, 558, 576, 504, 7168, 5118, 1128, 3865, 5149, 7062, 8791, 6961, 6487, 6399, 7120, 11576, 11579, 11581, 7167, 11582, 11583, 10922, 11584, 6402, 2]
 // Exports: default
 
-// Module 11552 (useConjureProjectSettingsForm)
+// Module 11575 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+import Constants from "Constants" /* 1087 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7168 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -548,13 +548,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let intl = guildId(onSave[15]).intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj2 = { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-  const g5I05P = require("module_3862").g5I05P;
+  const g5I05P = require("module_3865").g5I05P;
   let formatToPlainStringResult = formatToPlainString(g5I05P, obj2);
-  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3862").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3865").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[23]).ActionSheet;
   intl2 = guildId(onSave[15]).intl;
   obj4 = { style: tmp.roleListFooter, children: closure_10(guildId(onSave[17]).Text, { variant: "text-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
-  obj5 = { title: intl3.string(require("module_3862")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
+  obj5 = { title: intl3.string(require("module_3865")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[18]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[15]).intl;
   obj6 = { label: intl4.string(guildId(onSave[15]).t.i4jeWR), onPress: callback };
@@ -618,7 +618,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const intl = guildId(onSave[15]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj4 = { max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-            const prop = require("module_3862")["dH7+/Z"];
+            const prop = require("module_3865")["dH7+/Z"];
             formatToPlainStringResult = formatToPlainString(prop, obj4);
           }
           return closure_1_10(TableCheckboxRow, obj2, children.id);
@@ -1035,8 +1035,8 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
       let obj9 = { hasIcons: false, children: prop(TableCheckboxRow2, obj10) };
       const TableRowGroup2 = tmp2(tmp3[21]).TableRowGroup;
       obj10 = {
-        label: intl3.string(require("module_3862").lVvR4E),
-        subLabel: intl4.string(require("module_3862").SQZGoV),
+        label: intl3.string(require("module_3865").lVvR4E),
+        subLabel: intl4.string(require("module_3865").SQZGoV),
         checked: isGuildCollaboration,
         disabled: first2,
         onPress(arg0) {
@@ -1055,7 +1055,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
     const obj11 = { hasIcons: false, children: prop(TableCheckboxRow3, obj12) };
     const TableRowGroup3 = tmp2(tmp3[21]).TableRowGroup;
     obj12 = {
-      label: intl5.string(require("module_3862").eEo0ye),
+      label: intl5.string(require("module_3865").eEo0ye),
       subLabel: null,
       checked: null,
       disabled: first2,
@@ -1073,7 +1073,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   let tmp46Result8 = null;
   if (result1) {
     const TableRowGroup4 = tmp2(tmp3[21]).TableRowGroup;
-    const obj13 = { label: intl6.string(require("module_3862")["pO3+p5"]), subLabel: intl7.string(require("module_3862")["9MdtK9"]), arrow: true, disabled: first2 || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback2 };
+    const obj13 = { label: intl6.string(require("module_3865")["pO3+p5"]), subLabel: intl7.string(require("module_3865")["9MdtK9"]), arrow: true, disabled: first2 || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback2 };
     const TableRow = tmp2(tmp3[32]).TableRow;
     intl6 = tmp2(tmp3[15]).intl;
     intl7 = tmp2(tmp3[15]).intl;
@@ -1098,8 +1098,8 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   const obj20 = { hasIcons: false, children: prop(TableCheckboxRow4, obj21) };
   const TableRowGroup5 = tmp2(tmp3[21]).TableRowGroup;
   obj21 = {
-    label: intl9.string(require("module_3862")["4liZ45"]),
-    subLabel: intl10.string(require("module_3862").I5cl7p),
+    label: intl9.string(require("module_3865")["4liZ45"]),
+    subLabel: intl10.string(require("module_3865").I5cl7p),
     checked: conjureSmartContextSetting.checked,
     disabled: first2,
     onPress(arg0) {

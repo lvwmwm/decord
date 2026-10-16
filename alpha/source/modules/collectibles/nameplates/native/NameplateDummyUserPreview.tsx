@@ -1,20 +1,20 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9251
+// Function ID: 9252
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1205, 21, 1200, 587, 5151, 558, 576, 4881, 504, 9239, 9241, 9242, 2]
+// Dependencies: [19, 17, 1207, 21, 1202, 587, 5153, 558, 576, 4884, 504, 9252, 9254, 9255, 2]
 
-// Module 9238 (NameplateDummyUserPreview)
+// Module 9251 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import themes from "themes" /* 4881 */;
-import NameplateDefault from "Nameplate" /* 9239 */;
+import native from "native" /* 1202 */;
+import themes from "themes" /* 4884 */;
+import NameplateDefault from "Nameplate" /* 9252 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
   ({ width, hideAvatar, avatarSize, nameplate, style, animate } = arg0);
   const tmp4 = undefined !== hideAvatar && hideAvatar;
   if (undefined === avatarSize) {
-    avatarSize = tmp(1200).AvatarSizes.NORMAL;
+    avatarSize = tmp(1202).AvatarSizes.NORMAL;
   }
   const tmp6 = closure_8(avatarSize, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
         if (cResult[7] === tmp6.nameplate) {
           tmp13 = cResult[8];
         }
-        const tmp17 = importDefault(tmp11 ? 9241 : 9242);
+        const tmp17 = importDefault(tmp11 ? 9254 : 9255);
         if (cResult[9] === avatarSize) {
           if (cResult[10] === tmp6.avatar) {
             let tmp18;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDum
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   items2[0] = hasOwnProperty(NameplateDefault, obj3);
   const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
-  obj5 = { source: importDefault(stateFromStores ? 9241 : 9242), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  obj5 = { source: importDefault(stateFromStores ? 9254 : 9255), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
   Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: items3 };

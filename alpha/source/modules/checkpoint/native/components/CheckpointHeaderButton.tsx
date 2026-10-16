@@ -1,15 +1,15 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12697
+// Function ID: 12698
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 5497, 21, 5151, 558, 576, 587, 2]
+// Dependencies: [17, 5499, 21, 5153, 558, 576, 587, 2]
 
-// Module 12672 (CheckpointHeaderButton)
+// Module 12697 (CheckpointHeaderButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointConstants from "CheckpointConstants" /* 5497 */;
-import createStyles from "createStyles" /* 5151 */;
+import CheckpointConstants from "CheckpointConstants" /* 5499 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

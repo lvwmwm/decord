@@ -1,10 +1,10 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13489
+// Function ID: 13490
 // Name: BugReportStore
-// Dependencies: [5045, 2]
+// Dependencies: [5048, 2]
 
-// Module 13463 (BugReportStore)
-import ZustandStore from "ZustandStore" /* 5045 */;
+// Module 13489 (BugReportStore)
+import ZustandStore from "ZustandStore" /* 5048 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ isReportOpen: false }));

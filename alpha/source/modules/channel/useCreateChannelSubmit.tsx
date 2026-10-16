@@ -1,14 +1,14 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8828
+// Function ID: 8829
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1085, 1998, 1097, 8821, 5025, 1126, 2]
+// Dependencies: [5, 32, 19, 1087, 2000, 1099, 8829, 5028, 1128, 2]
 // Exports: default
 
-// Module 8820 (useCreateChannelSubmit)
+// Module 8828 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, name, permissionOverwrites, type, userLimit;

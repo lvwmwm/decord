@@ -1,12 +1,12 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 14883
+// Function ID: 14884
 // Name: GuildBadgePottedPlant
-// Dependencies: [109, 19, 21, 558, 576, 14816, 7793, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14849, 7796, 2]
 
-// Module 14850 (GuildBadgePottedPlant)
+// Module 14883 (GuildBadgePottedPlant)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7793 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14816 */;
+import inlineStyles from "inlineStyles" /* 7796 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14849 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgePo
       }
     }
     const obj10 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7793).Svg;
+    const Svg = tmp(7796).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp18, tmp19, tmp24, tmp28, tmp32, tmp35, tmp38, tmp41];
     const tmp49 = hasOwnProperty(Svg, obj10);
@@ -279,7 +279,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgePo
   items[5] = React3(Path, { d: "M13 11v1H3v-1h10Z", fill: str });
   items[6] = React3(inlineStyles.Path, { d: "M4 14h-1v-2h1v2ZM5 11h-2v-1h2v1ZM2 4H1V2h1v2ZM10 4h-1v-1h1v1ZM11 3h-1V2h1v1ZM5 2H2V1h3v1ZM14 2H11V1h3v1Z", fill: "white" });
   let str2;
-  const Path2 = tmp2(7793).Path;
+  const Path2 = tmp2(7796).Path;
   if (secondaryColorsTransformed != null) {
     str2 = secondaryColorsTransformed[2];
   }
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgePo
   }
   items[7] = React3(Path2, { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z", fill: str2 });
   let str3;
-  const Path3 = tmp2(7793).Path;
+  const Path3 = tmp2(7796).Path;
   if (secondaryColorsTransformed != null) {
     str3 = secondaryColorsTransformed[1];
   }

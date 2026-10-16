@@ -1,10 +1,10 @@
 // Module ID: 14279
 // Function ID: 14280
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 14279 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 16, height: 16, scales: [2, 3], hash: "e75d6cb3291053e29f69fac93519aa0b", name: "spectator", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dcf38117e5a3cdcdf164b333d0b65b5d", name: "LinkExternalMediumIcon", type: "png" });

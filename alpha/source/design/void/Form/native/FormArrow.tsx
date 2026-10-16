@@ -1,18 +1,18 @@
-// Module ID: 7053
-// Function ID: 7054
+// Module ID: 7055
+// Function ID: 7056
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 1200, 7054, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5149, 1202, 7056, 2]
 
-// Module 7053 (FormArrow)
+// Module 7055 (FormArrow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7054 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7056 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormArrow(ar
     }
     const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
     items1 = [tmp4.icon, style];
-    const Icon2 = tmp(1200).Icon;
+    const Icon2 = tmp(1202).Icon;
     const tmp15 = React3(Icon2, obj4);
     cResult[2] = style;
     cResult[3] = tmp4.icon;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormArrow(ar
     }
     const obj5 = { style: items2, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
     items2 = [tmp4.icon, style];
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp8 = React3(Icon, obj5);
     cResult[9] = style;
     cResult[10] = tmp4.icon;

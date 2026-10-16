@@ -1,19 +1,19 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 11030
+// Function ID: 11031
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5151, 587, 558, 576, 11016, 8545, 7060, 1126, 5147, 7061, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 11031, 8553, 7062, 1128, 5149, 7063, 2]
 
-// Module 11015 (MediaModalOverlayAltTextSheet)
+// Module 11030 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8545 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11016 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7063 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8553 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11031 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
     num = messagePreviewCollapsedheight + 20 + 50;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-    const intl = tmp(1126).intl;
+    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    const intl = tmp(1128).intl;
     const tmp8 = <BottomSheetTitleHeader title={intl.string(intl2.t.J3IOO1)} />;
     cResult[0] = tmp8;
     first = tmp8;
@@ -98,10 +98,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  BottomSheet = tmp2(7061).BottomSheet;
+  BottomSheet = tmp2(7063).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(7060).BottomSheetTitleHeader;
-  intl = tmp2(1126).intl;
+  const BottomSheetTitleHeader = tmp2(7062).BottomSheetTitleHeader;
+  intl = tmp2(1128).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;
 });

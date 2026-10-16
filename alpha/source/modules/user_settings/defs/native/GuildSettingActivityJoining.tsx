@@ -1,17 +1,17 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16912
+// Function ID: 16913
 // Name: GuildSettingActivityJoining
-// Dependencies: [16865, 8210, 558, 576, 2041, 6904, 10991, 1126, 2]
+// Dependencies: [16898, 8213, 558, 576, 2044, 6906, 11006, 1128, 2]
 
-// Module 16879 (GuildSettingActivityJoining)
+// Module 16912 (GuildSettingActivityJoining)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6904 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16865 */;
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6906 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16898 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let c2;

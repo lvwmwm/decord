@@ -1,19 +1,19 @@
-// Module ID: 18786
-// Function ID: 18787
+// Module ID: 18828
+// Function ID: 18829
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5088, 14572, 5147, 5439, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5091, 14604, 5149, 5441, 2]
 
-// Module 18786 (WarningNotice)
+// Module 18828 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14572 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14604 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

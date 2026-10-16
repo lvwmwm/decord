@@ -1,30 +1,30 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15441
+// Function ID: 15442
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10440, 5144, 21, 5151, 587, 558, 576, 504, 12582, 11860, 15404, 7077, 1386, 15406, 7395, 7586, 4865, 1126, 7105, 4864, 7310, 5097, 1497, 1382, 12592, 10449, 12593, 12614, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 1392, 2067, 10456, 5147, 21, 5153, 587, 558, 576, 504, 12605, 11884, 15440, 7079, 1388, 15442, 7397, 7588, 4868, 1128, 7107, 4867, 7312, 5100, 1499, 1384, 12615, 10465, 12616, 12637, 2]
 
-// Module 15405 (ActivityShareLinkModal)
+// Module 15441 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ToastUtils from "ToastUtils" /* 4864 */;
-import LinkIcon from "LinkIcon" /* 5097 */;
-import MessageConstants from "MessageConstants" /* 5144 */;
-import ClipboardUtils from "ClipboardUtils" /* 7105 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7310 */;
-import UserRowConstants from "UserRowConstants" /* 10440 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11860 */;
-import formatResults from "formatResults" /* 12582 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15404 */;
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ToastUtils from "ToastUtils" /* 4867 */;
+import LinkIcon from "LinkIcon" /* 5100 */;
+import MessageConstants from "MessageConstants" /* 5147 */;
+import ClipboardUtils from "ClipboardUtils" /* 7107 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7312 */;
+import UserRowConstants from "UserRowConstants" /* 10456 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11884 */;
+import formatResults from "formatResults" /* 12605 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore_mod from "UserStore" /* 1390 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore_mod from "UserStore" /* 1392 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

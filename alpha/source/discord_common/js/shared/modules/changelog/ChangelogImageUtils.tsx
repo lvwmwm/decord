@@ -1,10 +1,10 @@
-// Module ID: 8344
-// Function ID: 8345
+// Module ID: 8351
+// Function ID: 8352
 // Name: ChangelogImageUtils
 // Dependencies: [2]
 // Exports: fitChangelogImage, getChangelogImageStillUrl, hasImageSegment, isAnimatedChangelogImage, isChangelogImageUrl, parseChangelogImageSize, splitParagraphAtImages
 
-// Module 8344 (ChangelogImageUtils)
+// Module 8351 (ChangelogImageUtils)
 import size_mod from "module_2" /* 2 */;
 
 function toURL(target) {

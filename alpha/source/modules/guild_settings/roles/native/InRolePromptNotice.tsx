@@ -1,21 +1,21 @@
-// Module ID: 18707
-// Function ID: 18708
+// Module ID: 18749
+// Function ID: 18750
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 1403, 18708, 1200, 11209, 1126, 5147, 2]
+// Dependencies: [19, 17, 1087, 21, 5153, 587, 558, 576, 1405, 18750, 1202, 11225, 1128, 5149, 2]
 
-// Module 18707 (InRolePromptNotice)
+// Module 18749 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11209 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 18708 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11225 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 18750 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       let tmp27;
       if (cResult[0] !== tmp4.icon) {
         const obj3 = { style: tmp4.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-        const Icon2 = tmp(1200).Icon;
+        const Icon2 = tmp(1202).Icon;
         const tmp23 = hasOwnProperty(Icon2, obj3);
         cResult[0] = tmp4.icon;
         cResult[1] = tmp23;
@@ -60,7 +60,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const _Symbol2 = Symbol;
       const promptText2 = tmp4.promptText;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult = intl2.string(intl3.t.YRbgXz);
         cResult[2] = stringResult;
         tmp25 = stringResult;
@@ -99,7 +99,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       let tmp13;
       if (cResult[9] !== tmp4.icon) {
         const obj6 = { style: tmp4.icon, source: AssetRegistryDefault };
-        const Icon = tmp(1200).Icon;
+        const Icon = tmp(1202).Icon;
         const tmp9 = hasOwnProperty(Icon, obj6);
         cResult[9] = tmp4.icon;
         cResult[10] = tmp9;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const _Symbol = Symbol;
       const promptText = tmp4.promptText;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult1 = intl.string(intl3.t.mqeO2v);
         cResult[11] = stringResult1;
         tmp11 = stringResult1;
@@ -159,13 +159,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
     const obj2 = { style: tmp.promptRow, children: null };
     const tmp2Result = GuildSettingsUtils;
     const isRolePowerfulResult = tmp2Result.isRolePowerful(role);
-    const Icon = tmp2(1200).Icon;
+    const Icon = tmp2(1202).Icon;
     if (isRolePowerfulResult) {
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
       const obj4 = { style: tmp.promptText, variant: "text-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5147).Text;
-      intl2 = tmp2(1126).intl;
+      const Text2 = tmp2(5149).Text;
+      intl2 = tmp2(1128).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
       tmp6Result = tmp6(tmp7, obj2);
@@ -173,8 +173,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
       const obj6 = { style: tmp.promptText, variant: "text-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5147).Text;
-      intl = tmp2(1126).intl;
+      const Text = tmp2(5149).Text;
+      intl = tmp2(1128).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;
       tmp6Result = tmp6(tmp7, obj2);

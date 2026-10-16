@@ -1,10 +1,10 @@
 // Module ID: 16591
 // Function ID: 16592
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16591 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "bb6f6fad57d57253ba0ce7ed1f4a2209", name: "ko.messages.bb6f6fad57d57253ba0ce7ed1f4a2209.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c6597e29df99a6319981970d49c96987", name: "MagicDoorIcon", type: "png" });

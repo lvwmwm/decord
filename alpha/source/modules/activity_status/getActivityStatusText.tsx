@@ -1,18 +1,18 @@
-// Module ID: 10473
-// Function ID: 10474
+// Module ID: 10488
+// Function ID: 10489
 // Name: getActivityStatusText
-// Dependencies: [1085, 10474, 7643, 10470, 10475, 1126, 10476, 10477, 8681, 2]
+// Dependencies: [1087, 10489, 7645, 10486, 10490, 1128, 10491, 10492, 8689, 2]
 // Exports: default
 
-// Module 10473 (getActivityStatusText)
-import Constants from "Constants" /* 1085 */;
-import intl9 from "intl" /* 1126 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7643 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8681 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10470 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10474 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10476 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10477 */;
+// Module 10488 (getActivityStatusText)
+import Constants from "Constants" /* 1087 */;
+import intl9 from "intl" /* 1128 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7645 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8689 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10486 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10489 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10491 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10492 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
@@ -122,7 +122,7 @@ export default function getActivityStatusText(name) {
       if (type1 === ActivityTypes.PLAYING) {
         if (null != tmp17) {
           const obj = { text: tmp17, tooltip: intl8.formatToPlainString(intl9.t.lFApmz, obj2) };
-          intl8 = tmp15(1126).intl;
+          intl8 = tmp15(1128).intl;
           return obj;
         }
       }
@@ -135,7 +135,7 @@ export default function getActivityStatusText(name) {
               joined = parts.join(", ");
             }
             const obj3 = { text: joined, tooltip: intl7.formatToPlainString(intl9.t.Vnuxue, obj4) };
-            intl7 = tmp15(1126).intl;
+            intl7 = tmp15(1128).intl;
             return obj3;
           }
         }
@@ -144,7 +144,7 @@ export default function getActivityStatusText(name) {
       if (tmp15Result2.isStageActivity(name)) {
         if (null != tmp2) {
           const obj5 = { text: tmp2, tooltip: intl6.formatToPlainString(intl9.t.pW3Ip3, obj6) };
-          intl6 = tmp15(1126).intl;
+          intl6 = tmp15(1128).intl;
           obj17 = obj5;
           obj6 = { name: tmp2 };
         }
@@ -157,7 +157,7 @@ export default function getActivityStatusText(name) {
       if (type2 === ActivityTypes.LISTENING) {
         if (null != tmp17) {
           const obj7 = { text: tmp17, tooltip: intl5.formatToPlainString(intl9.t.Vnuxue, obj8) };
-          intl5 = tmp15(1126).intl;
+          intl5 = tmp15(1128).intl;
           obj17 = obj7;
           obj8 = { name: tmp17 };
         }
@@ -166,7 +166,7 @@ export default function getActivityStatusText(name) {
         if (flag) {
           if (null != tmp5) {
             const obj9 = { text: tmp5, tooltip: intl4.formatToPlainString(intl9.t.pW3Ip3, obj10) };
-            intl4 = tmp15(1126).intl;
+            intl4 = tmp15(1128).intl;
             obj17 = obj9;
             obj10 = { name: tmp5 };
           }
@@ -179,7 +179,7 @@ export default function getActivityStatusText(name) {
       if (type3 === ActivityTypes.WATCHING) {
         if (null != tmp17) {
           const obj11 = { text: tmp17, tooltip: intl3.formatToPlainString(intl9.t.pW3Ip3, obj12) };
-          intl3 = tmp15(1126).intl;
+          intl3 = tmp15(1128).intl;
           obj17 = obj11;
           obj12 = { name: tmp17 };
         }
@@ -191,7 +191,7 @@ export default function getActivityStatusText(name) {
       if (type4 === ActivityTypes.COMPETING) {
         if (null != tmp17) {
           const obj13 = { text: tmp17, tooltip: intl2.formatToPlainString(intl9.t.QQ2wVE, obj14) };
-          intl2 = tmp15(1126).intl;
+          intl2 = tmp15(1128).intl;
           obj17 = obj13;
           obj14 = { name: tmp17 };
         }
@@ -203,7 +203,7 @@ export default function getActivityStatusText(name) {
       if (type5 === ActivityTypes.STREAMING) {
         if (null != tmp17) {
           const obj15 = { text: tmp17, tooltip: intl.formatToPlainString(intl9.t["0wJXSh"], obj16) };
-          intl = tmp15(1126).intl;
+          intl = tmp15(1128).intl;
           obj17 = obj15;
           obj16 = { name: tmp17 };
         }
@@ -211,6 +211,6 @@ export default function getActivityStatusText(name) {
       obj17 = {};
     }
   }
-  const text = tmp21(10475)(tmp2);
+  const text = tmp21(10490)(tmp2);
   return { text, tooltip: text };
 };

@@ -1,128 +1,79 @@
 // Module ID: 1586
 // Function ID: 1587
-// Dependencies: [19, 1507, 1547, 1508]
-// Exports: useNavigationHelpers
+// Dependencies: [19, 1535, 1546]
+// Exports: useOnPreventRemove
 
 // Module 1586
-import _createClass from "_createClass" /* 1507 */;
 import react from "react" /* 19 */;
 
-let getStateForAction;
+let set;
 
-const PrivateValueStore = _createClass.PrivateValueStore;
-
-export const useNavigationHelpers = function useNavigationHelpers(id) {
-  id = id.id;
-  const onAction = id.onAction;
-  const onUnhandledAction = id.onUnhandledAction;
-  const getState = id.getState;
-  const emitter = id.emitter;
-  const router = id.router;
-  let state = id.state;
-  const context = onUnhandledAction.useContext(id(onAction[2]).NavigationContext);
-  const ref = onUnhandledAction.useRef(null);
-  let obj = { state, base: getState() };
-  ref.current = obj;
-  const insertionEffect = onUnhandledAction.useInsertionEffect(() => {
-    ref.current = null;
-  });
-  let items = [router, context, emitter.emit, getState, onAction, onUnhandledAction, id, ref];
-  return onUnhandledAction.useMemo(() => {
-    let obj = {};
-    const merged = Object.assign(router.actionCreators);
-    const merged1 = Object.assign(id(onAction[3]).CommonActions);
-    const keys = Object.keys(obj);
-    const reduced = keys.reduce((acc, item) => {
-      let closure_0 = item;
-      acc[item] = () => {
-        const items = [...HermesBuiltin.copyRestArgs()];
-        const applyResult = obj[item].apply(items);
-        let applyResultResult = applyResult;
-        if (typeof applyResult === "function") {
-          applyResultResult = applyResult(closure_1_3());
+let closure_3 = Symbol("VISITED_ROUTE_KEYS");
+function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
+  let obj3;
+  let closure_0 = routes2.map((key) => key.key);
+  const found = routes.filter((key) => !closure_0.includes(key.key));
+  const reversed = found.reverse();
+  if (closure_3 in target) {
+    const _Set = Set;
+    if (target[closure_3] instanceof Set) {
+      set = target[tmp2];
+    }
+    const obj = {};
+    const merged = Object.assign(target);
+    obj[closure_3] = set;
+    const iter = reversed[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp12 = nextResult;
+      if (!set.has(nextResult.key)) {
+        let tmp14 = beforeRemoveListeners[tmp12.key];
+        let tmp14Result;
+        if (tmp14 != null) {
+          tmp14Result = tmp14(obj);
         }
-        if (!obj2(applyResultResult)) {
-          if (closure_1_2 != null) {
-            closure_1_2(applyResultResult);
-          }
-        }
-      };
-      return acc;
-    }, {});
-    let obj2 = {
-      dispatch(fn) {
-        let tmp = fn;
-        if (typeof fn === "function") {
-          tmp = fn(getState());
-        }
-        if (!obj2(tmp)) {
-          if (onUnhandledAction != null) {
-            onUnhandledAction(tmp);
-          }
-        }
-      },
-      emit: emitter.emit,
-      isFocused: context ? context.isFocused : (() => true),
-      canGoBack() {
-        const tmp = getState();
-        getStateForAction = getStateForAction.getStateForAction;
-        const CommonActions = id(onAction[3]).CommonActions;
-        obj = { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} };
-        let flag = null !== getStateForAction(tmp, CommonActions.goBack(), obj);
-        if (!flag) {
-          let canGoBackResult;
-          obj2 = context;
-          if (context != null) {
-            canGoBackResult = obj2.canGoBack();
-          }
-          flag = canGoBackResult;
-        }
-        if (!flag) {
-          flag = false;
-        }
-        return flag;
-      },
-      getId() {
-        return obj;
-      },
-      getParent(arg0) {
-        if (undefined !== arg0) {
-          let tmp2 = obj2;
-          if (tmp2) {
-            obj2 = obj;
-            tmp2 = obj;
-            if (arg0 !== obj2.getId()) {
-              const parent = obj2.getParent();
-              tmp2 = parent;
-              while (parent) {
-                obj2 = parent;
-                tmp2 = parent;
-                if (arg0 === parent.getId()) {
-                  break;
-                }
-              }
-            }
-          }
-          return tmp2;
+        if (tmp14Result) {
+          iter.return();
+          let flag2 = true;
+          return true;
         } else {
-          return context;
-        }
-      },
-      getState() {
-        const tmp = getState();
-        const current = ref.current;
-        let state = tmp;
-        if (null != current) {
-          state = tmp;
-          if (current.base === tmp) {
-            state = current.state;
+          let addResult = set.add(tmp12.key);
+          let obj2 = { type: "beforeRemove", target: tmp12.key, data: obj3, canPreventDefault: true };
+          obj3 = { action: obj };
+          if (emitter.emit(obj2).defaultPrevented) {
+            iter.return();
+            let flag = true;
+            return true;
           }
         }
-        return state;
       }
-    };
-    const merged2 = Object.assign(context);
-    const merged3 = Object.assign(reduced);
-    return obj2;
+      continue;
+    }
+    return false;
+  }
+  set = new Set();
+}
+
+export { shouldPreventRemove };
+export const useOnPreventRemove = function useOnPreventRemove(getState) {
+  getState = getState.getState;
+  const emitter = getState.emitter;
+  const beforeRemoveListeners = getState.beforeRemoveListeners;
+  const addKeyedListener = beforeRemoveListeners.useContext(getState(emitter[1]).NavigationBuilderContext).addKeyedListener;
+  const context = beforeRemoveListeners.useContext(getState(emitter[2]).NavigationRouteContext);
+  let key;
+  const obj = beforeRemoveListeners;
+  if (context != null) {
+    key = context.key;
+  }
+  const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
+  const effect = obj.useEffect(() => {
+    if (key) {
+      let tmp2Result;
+      if (addKeyedListener != null) {
+        tmp2Result = tmp2("beforeRemove", tmp, (arg0) => key(emitter, beforeRemoveListeners, getState().routes, [], arg0));
+      }
+      return tmp2Result;
+    }
   }, items);
 };

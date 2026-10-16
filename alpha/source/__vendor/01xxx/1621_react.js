@@ -6,13 +6,5 @@
 // Module 1621 (react)
 import react from "react" /* 19 */;
 
-const obj = {
-  lastUnhandledLink: "Array",
-  setLastUnhandledLink() {
 
-  }
-};
-const context = react.createContext(obj);
-context.displayName = "UnhandledLinkingContext";
-
-export const UnhandledLinkingContext = context;
+export const ServerContext = react.createContext(undefined);

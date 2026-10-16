@@ -1,24 +1,24 @@
-// Module ID: 2063
-// Function ID: 2064
+// Module ID: 2066
+// Function ID: 2067
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2064, 7495, 2049, 13829, 14956, 1998, 14957, 2077, 2]
+// Dependencies: [2067, 7497, 2052, 13855, 14989, 2000, 14990, 2080, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
-// Module 2063 (VersionedDismissibleContentUtils)
-import Server from "Server" /* 1998 */;
-import dismissible_content from "dismissible_content" /* 2049 */;
-import TypeUtils from "TypeUtils" /* 2077 */;
-import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14956 */;
-import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14957 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7495 */;
+// Module 2066 (VersionedDismissibleContentUtils)
+import Server from "Server" /* 2000 */;
+import dismissible_content from "dismissible_content" /* 2052 */;
+import TypeUtils from "TypeUtils" /* 2080 */;
+import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14989 */;
+import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14990 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7497 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(id) {
   if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === id) {
-    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13829).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13855).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;

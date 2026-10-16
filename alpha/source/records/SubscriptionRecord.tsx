@@ -1,17 +1,17 @@
-// Module ID: 4832
-// Function ID: 4833
+// Module ID: 4835
+// Function ID: 4836
 // Name: SubscriptionRecord
-// Dependencies: [1405, 4833, 4834, 1085, 4836, 1392, 4837, 38, 1382, 4838, 1989, 2]
+// Dependencies: [1407, 4836, 4837, 1087, 4839, 1394, 4840, 38, 1384, 4841, 1991, 2]
 
-// Module 4832 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
-import PremiumSubscription from "PremiumSubscription" /* 4837 */;
-import Record from "Record" /* 1405 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4833 */;
-import InvoiceRecord from "InvoiceRecord" /* 4834 */;
-import Constants from "Constants" /* 1085 */;
-import BillingConstants from "BillingConstants" /* 4836 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+// Module 4835 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
+import PremiumSubscription from "PremiumSubscription" /* 4840 */;
+import Record from "Record" /* 1407 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4836 */;
+import InvoiceRecord from "InvoiceRecord" /* 4837 */;
+import Constants from "Constants" /* 1087 */;
+import BillingConstants from "BillingConstants" /* 4839 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ class SubscriptionRecord extends Record {
       tmp10 = basePlanIdForSubscriptionItems;
       const tmp12 = require;
       if (null != renewalMutations) {
-        const tmp12Result = tmp12(4837);
+        const tmp12Result = tmp12(4840);
         const basePlanIdForSubscriptionItems1 = tmp12Result.getBasePlanIdForSubscriptionItems(renewalMutations.items, interval, intervalCount);
         planId2 = basePlanIdForSubscriptionItems1;
         tmp9 = basePlanIdForSubscriptionItems1;

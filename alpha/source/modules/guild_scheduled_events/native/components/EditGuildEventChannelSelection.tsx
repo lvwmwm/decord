@@ -1,25 +1,25 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8803
+// Function ID: 8804
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 4806, 4816, 1390, 6270, 1085, 21, 5151, 587, 6521, 8791, 8776, 5481, 504, 8376, 8778, 8779, 1126, 5147, 6405, 1894, 8796, 8755, 5115, 8774, 2000, 1200, 8775, 2]
+// Dependencies: [19, 17, 4809, 4819, 1392, 6272, 1087, 21, 5153, 587, 6523, 8799, 8784, 5483, 504, 8384, 8786, 8787, 1128, 5149, 6407, 1896, 8804, 8763, 5118, 8782, 2002, 1202, 8783, 2]
 // Exports: default
 
-// Module 8795 (EditGuildEventChannelSelection)
+// Module 8803 (EditGuildEventChannelSelection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import StageChannelUpsellDefault from "StageChannelUpsell" /* 8796 */;
+import intl3 from "intl" /* 1128 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import StageChannelUpsellDefault from "StageChannelUpsell" /* 8804 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6270 */;
-import Constants from "Constants" /* 1085 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6272 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let constants;
@@ -59,14 +59,14 @@ export default function EditGuildEventChannelSelection(guild) {
   let tmp = closure_13();
   let tmp2 = guild;
   let tmp3 = dependencyMap;
-  let obj = guild(6521);
+  let obj = guild(6523);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   let closure_5 = tmp5;
-  let obj2 = guild(8791);
+  let obj2 = guild(8799);
   let closure_6 = obj2.useGetEventChannelsByType(guild.id, channelType);
-  let obj3 = guild(8776);
+  let obj3 = guild(8784);
   const length = obj3.useChannelsUserCanStartStageIn(guild);
-  const tmp7 = channel(5481)(channel);
+  const tmp7 = channel(5483)(channel);
   const items = [closure_5];
   const obj4 = guild(504);
   let closure_8 = obj4.useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_CHANNELS, guild));
@@ -75,20 +75,20 @@ export default function EditGuildEventChannelSelection(guild) {
   const obj5 = guild(504);
   constants = obj5.useStateFromStores(items1, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    const tmp2Result = tmp2(8376);
+    const tmp2Result = tmp2(8384);
     channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(8778);
+    channelIcon = tmp6(8786);
   }
   if (null != channel) {
-    const tmp2Result2 = tmp2(8376);
+    const tmp2Result2 = tmp2(8384);
     LocationIcon = tmp2Result2.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(8779).LocationIcon;
+    LocationIcon = tmp2(8787).LocationIcon;
   }
-  let intl = tmp2(1126).intl;
+  let intl = tmp2(1128).intl;
   let string = intl.string;
-  let t = tmp2(1126).t;
+  let t = tmp2(1128).t;
   if (channelType === constants.GUILD_STAGE_VOICE) {
     stringResult = string(t.S7GjDz);
   } else {
@@ -99,10 +99,10 @@ export default function EditGuildEventChannelSelection(guild) {
   items3 = [tmp.container, style];
   items4 = [, ];
   const obj7 = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
-  items4[0] = closure_11(tmp2(5147).Heading, obj7);
+  items4[0] = closure_11(tmp2(5149).Heading, obj7);
   const obj8 = {
     accessibilityLabel: stringResult,
-    accessibilityHint: intl2.string(tmp2(1126).t.AaXbMD),
+    accessibilityHint: intl2.string(tmp2(1128).t.AaXbMD),
     accessibilityValue: { text: tmp13 },
     accessibilityRole: "button",
     style: items5,
@@ -139,7 +139,7 @@ export default function EditGuildEventChannelSelection(guild) {
       }
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp10 = asyncRequire(8774, tmp.paths);
+      const tmp10 = asyncRequire(8782, tmp.paths);
       const intl = intl3.intl;
       const string = intl.string;
       const t = intl3.t;
@@ -172,8 +172,8 @@ export default function EditGuildEventChannelSelection(guild) {
     },
     children: items6
   };
-  const PressableOpacity = tmp2(6405).PressableOpacity;
-  intl2 = tmp2(1126).intl;
+  const PressableOpacity = tmp2(6407).PressableOpacity;
+  intl2 = tmp2(1128).intl;
   items5 = [, , ];
   ({ padding: arr6[0], radius: arr6[1] } = inputStyles);
   items5[2] = tmp.channelSelectorButton;
@@ -184,13 +184,13 @@ export default function EditGuildEventChannelSelection(guild) {
     tmp12Result = tmp12(LocationIcon, obj9);
   } else {
     const obj10 = { source: channelIcon, style: tmp.channelIcon };
-    tmp12Result = tmp12(tmp2(1200).Icon, obj10);
+    tmp12Result = tmp12(tmp2(1202).Icon, obj10);
   }
   items6 = [tmp12Result, , ];
   const obj11 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
-  items6[1] = closure_11(tmp2(5147).Text, obj11);
-  const obj12 = { source: channel(8775) };
-  const Icon = tmp2(1200).Icon;
+  items6[1] = closure_11(tmp2(5149).Text, obj11);
+  const obj12 = { source: channel(8783) };
+  const Icon = tmp2(1202).Icon;
   items6[2] = closure_11(Icon, obj12);
   items4[1] = tmp10(PressableOpacity, obj8);
   return tmp10(tmp11, obj6);

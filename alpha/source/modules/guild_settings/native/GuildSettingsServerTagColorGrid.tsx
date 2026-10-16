@@ -1,15 +1,15 @@
-// Module ID: 18669
-// Function ID: 18670
+// Module ID: 18711
+// Function ID: 18712
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 8105, 21, 587, 5151, 558, 576, 1126, 5147, 18667, 18670, 14814, 11535, 16295, 5437, 2]
+// Dependencies: [19, 17, 8108, 21, 587, 5153, 558, 576, 1128, 5149, 18709, 18712, 14847, 11558, 16328, 5439, 2]
 
-// Module 18669 (GuildSettingsServerTagColorGrid)
+// Module 18711 (GuildSettingsServerTagColorGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 8105 */;
+import GuildTagConstants from "GuildTagConstants" /* 8108 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

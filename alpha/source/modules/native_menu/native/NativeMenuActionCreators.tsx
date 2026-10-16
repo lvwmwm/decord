@@ -1,12 +1,12 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 10274
+// Function ID: 10275
 // Name: NativeMenuActionCreators
-// Dependencies: [5116, 5117, 584, 2]
+// Dependencies: [5119, 5120, 584, 2]
 
-// Module 10258 (NativeMenuActionCreators)
+// Module 10274 (NativeMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HapticUtils from "HapticUtils" /* 5116 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5117 */;
+import HapticUtils from "HapticUtils" /* 5119 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

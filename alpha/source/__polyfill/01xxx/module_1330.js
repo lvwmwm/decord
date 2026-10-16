@@ -4,4 +4,4 @@
 
 // Module 1330
 
-export default Math.abs;
+export default URIError;

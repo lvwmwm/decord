@@ -1,18 +1,18 @@
-// Module ID: 4873
-// Function ID: 4874
+// Module ID: 4876
+// Function ID: 4877
 // Name: BaseIconImage
-// Dependencies: [19, 21, 558, 576, 4874, 5088, 2]
+// Dependencies: [19, 21, 558, 576, 4877, 5091, 2]
 
-// Module 4873 (BaseIconImage)
+// Module 4876 (BaseIconImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5088 */;
+import FastImageDefault from "FastImage" /* 5091 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(4874);
+const useToken = tmp(4877);
 const jsx = Fragment.jsx;
 let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "test" }, refresh_sm: { width: 18, height: 18 } };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImage(arg0) {

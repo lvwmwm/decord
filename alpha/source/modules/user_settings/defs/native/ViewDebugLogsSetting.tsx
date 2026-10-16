@@ -1,31 +1,31 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16542
+// Function ID: 16543
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5115, 558, 576, 6150, 9854, 7114, 7060, 1126, 16510, 16512, 5110, 7118, 16515, 1382, 10581, 16516, 10991, 14735, 2041, 2]
+// Dependencies: [19, 17, 21, 5118, 558, 576, 6152, 9870, 7116, 7062, 1128, 16543, 16545, 5113, 7120, 16548, 1384, 10596, 16549, 11006, 14768, 2044, 2]
 
-// Module 16509 (ViewDebugLogsSetting)
+// Module 16542 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import ClockIcon from "ClockIcon" /* 5110 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7060 */;
-import ActionSheetRow from "ActionSheetRow" /* 7114 */;
-import ActionSheet2 from "ActionSheet" /* 7118 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9854 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10581 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14735 */;
-import WrenchIcon from "WrenchIcon" /* 16510 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16512 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16515 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16516 */;
+import intl5 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import ClockIcon from "ClockIcon" /* 5113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7062 */;
+import ActionSheetRow from "ActionSheetRow" /* 7116 */;
+import ActionSheet2 from "ActionSheet" /* 7120 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9870 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10596 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14768 */;
+import WrenchIcon from "WrenchIcon" /* 16543 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16545 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16548 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16549 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -108,7 +108,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
       obj2.pushLazy(Promise.resolve(obj3));
     }
   };
-  return closure_5(title(7114).ActionSheetRow, obj);
+  return closure_5(title(7116).ActionSheetRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDebugLogsActionSheet() {
@@ -128,8 +128,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl5.t.BUOCPi) };
-    const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-    intl = tmp(1126).intl;
+    const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+    intl = tmp(1128).intl;
     const tmp6 = hasOwnProperty(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -138,7 +138,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp10 = hasOwnProperty(WrenchIcon.WrenchIcon, {});
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult = intl2.string(intl5.t.XpPGhL);
     cResult[1] = tmp10;
     cResult[2] = stringResult;
@@ -165,7 +165,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp19 = hasOwnProperty(ClockIcon.ClockIcon, {});
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult1 = intl3.string(intl5.t.b0nJvk);
     cResult[4] = tmp19;
     cResult[5] = stringResult1;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { header: first, children: tmp23(Group, obj7) };
-    const ActionSheet = tmp(7118).ActionSheet;
+    const ActionSheet = tmp(7120).ActionSheet;
     const items = [tmp12, , ];
     const obj5 = {
       icon: tmp16,
@@ -188,7 +188,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
           return closure_1_5(Suspense, obj);
         }
     };
-    Group = tmp(7114).ActionSheetRow.Group;
+    Group = tmp(7116).ActionSheetRow.Group;
     items[1] = hasOwnProperty(closure_8, obj5);
     let tmp22Result = null;
     tmp23 = metroRequire;
@@ -203,7 +203,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
               return closure_1_5(UserSettingsPushNotificationLogsDefault, {});
             }
       };
-      intl4 = tmp(1126).intl;
+      intl4 = tmp(1128).intl;
       tmp22Result = tmp22(tmp24, obj6);
     }
     obj7 = { hasIcons: true, children: items };
@@ -265,7 +265,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
           return closure_1_5(UserSettingsPushNotificationLogsDefault, {});
         }
     };
-    intl4 = tmp2(1126).intl;
+    intl4 = tmp2(1128).intl;
     tmpResult = tmp(tmp5, obj6);
   }
   items[2] = tmpResult;

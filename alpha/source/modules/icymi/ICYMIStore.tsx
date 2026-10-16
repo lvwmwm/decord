@@ -1,31 +1,31 @@
-// Module ID: 8672
-// Function ID: 8673
+// Module ID: 8680
+// Function ID: 8681
 // Name: ICYMIStore
-// Dependencies: [32, 8673, 5072, 6270, 502, 2065, 8682, 2087, 5492, 4806, 6251, 4816, 6182, 8684, 8686, 1085, 8688, 1102, 8689, 8685, 8485, 8489, 8678, 8698, 8687, 8695, 7273, 5494, 504, 584, 2]
+// Dependencies: [32, 8681, 5075, 6272, 502, 2068, 8690, 2090, 5494, 4809, 6253, 4819, 6184, 8692, 8694, 1087, 8696, 1104, 8697, 8693, 8493, 8497, 8686, 8706, 8695, 8703, 7275, 5496, 504, 584, 2]
 
-// Module 8672 (ICYMIStore)
+// Module 8680 (ICYMIStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import ICYMITypes from "ICYMITypes" /* 8685 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8688 */;
-import ICYMIUtils from "ICYMIUtils" /* 8689 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import ICYMITypes from "ICYMITypes" /* 8693 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8696 */;
+import ICYMIUtils from "ICYMIUtils" /* 8697 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8673 */;
-import ExperimentStore from "ExperimentStore" /* 5072 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6270 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8681 */;
+import ExperimentStore from "ExperimentStore" /* 5075 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6272 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8682 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import ReadStateStore from "ReadStateStore" /* 6251 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8684 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8686 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8690 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import ReadStateStore from "ReadStateStore" /* 6253 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6184 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8692 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8694 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,13 +37,13 @@ let closure_23;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f99252 = (id) => id.id;
+const f99542 = (id) => id.id;
 function filterStaffGuild(data) {
   if (ICYMIFiltersStore.filterStaffContent()) {
     obj = ICYMIUtils;
     const tmp2 = require;
     if (obj.isGuildItem(data)) {
-      if (data.data.guild_id === tmp2(8685).GAME_CONTENT_GUILD_ID) {
+      if (data.data.guild_id === tmp2(8693).GAME_CONTENT_GUILD_ID) {
         return true;
       } else {
         const guild = GuildStore.getGuild(data.data.guild_id);
@@ -411,9 +411,9 @@ function getNewUnreadItems(arr9, channelId) {
       if (!set.has(tmp2.id)) {
         let tmp7 = null == ICYMIUnreadStateStore.getReadTimestamp(tmp2.id);
         if (tmp7) {
-          let tmp9 = tmp2.type !== tmp3(8685).ICYMIItemTypes.MESSAGE;
+          let tmp9 = tmp2.type !== tmp3(8693).ICYMIItemTypes.MESSAGE;
           if (!tmp9) {
-            let tmp3Result = tmp3(8687);
+            let tmp3Result = tmp3(8695);
             let result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
             if (result) {
               result = tmp2.data.channel_id !== channelId;
@@ -433,7 +433,7 @@ function getNewUnreadItems(arr9, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_27;
-  const f99267 = (data) => {
+  const f99557 = (data) => {
     obj = channelId(dependencyMap[18]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -446,17 +446,17 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f99267);
-    closure_45 = closure_45.filter(f99267);
-    closure_46 = closure_46.filter(f99267);
-    closure_30 = closure_30.filter(f99267);
+    dehydratedItems = dehydratedItems.filter(f99557);
+    closure_45 = closure_45.filter(f99557);
+    closure_46 = closure_46.filter(f99557);
+    closure_30 = closure_30.filter(f99557);
     _require = channelId;
-    closure_31 = closure_31.filter(f99267);
+    closure_31 = closure_31.filter(f99557);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_27;
-  const f99268 = (data) => {
+  const f99558 = (data) => {
     obj = guildId(dependencyMap[18]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -469,12 +469,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f99268);
-    closure_45 = closure_45.filter(f99268);
-    closure_46 = closure_46.filter(f99268);
-    closure_30 = closure_30.filter(f99268);
+    dehydratedItems = dehydratedItems.filter(f99558);
+    closure_45 = closure_45.filter(f99558);
+    closure_46 = closure_46.filter(f99558);
+    closure_30 = closure_30.filter(f99558);
     _require = guildId;
-    closure_31 = closure_31.filter(f99268);
+    closure_31 = closure_31.filter(f99558);
   }
 }
 function handleReaction(colors) {
@@ -574,7 +574,7 @@ function handleAck(channelId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f99252));
+        new Set(items1.map(f99542));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -954,7 +954,7 @@ obj = {
     let tmp2 = dependencyMap;
     ({ loadId, startTime, isInitialLoad, isReloading } = items);
     const self = this;
-    set = new Set(set(8685).SUPPORTED_ITEM_TYPES);
+    set = new Set(set(8693).SUPPORTED_ITEM_TYPES);
     const found = items.filter((type) => set.has(type.type));
     const found1 = found.filter(filterStaffGuild);
     closure_30 = found1.map((type) => {
@@ -1060,16 +1060,16 @@ obj = {
           if (c38 > 0) {
             let c43 = null;
           }
-          let tmp9 = arr11.length > tmp(8685).MIN_ITEMS_FOR_NEW_PILL;
+          let tmp9 = arr11.length > tmp(8693).MIN_ITEMS_FOR_NEW_PILL;
           if (!isReloading) {
             hasNewContent = tmp9;
           }
           if (tmp9) {
             const items6 = [];
-            const hydrateItems = tmp(8689).hydrateItems;
-            const tmpResult = tmp(8689);
+            const hydrateItems = tmp(8697).hydrateItems;
+            const tmpResult = tmp(8697);
             HermesBuiltin.arraySpread(items6, arr10, HermesBuiltin.arraySpread(items6, arr9, 0));
-            hydrateItems(items6, 0, tmp(8685).ICYMI_PAGE_SIZE, closure_34);
+            hydrateItems(items6, 0, tmp(8693).ICYMI_PAGE_SIZE, closure_34);
             if (arr9.length + arr10.length === 0) {
               c54 = true;
             }
@@ -1077,8 +1077,8 @@ obj = {
         }
         const obj2 = { newTrackingProps, hasNewContent, unreadFeedItems: arr9, readFeedItems: arr10, homeSessionId: str };
         str = "background_load";
-        const trackFeedLoaded = tmp(8698).trackFeedLoaded;
-        tmp(8698);
+        const trackFeedLoaded = tmp(8706).trackFeedLoaded;
+        tmp(8706);
         if (focused) {
           str = "foreground_load";
         }
@@ -1096,7 +1096,7 @@ obj = {
         const _Set = Set;
         const self2 = this;
         const self3 = this;
-        const set1 = new Set(arr9.map(f99252));
+        const set1 = new Set(arr9.map(f99542));
         const substr = arr13.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }

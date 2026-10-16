@@ -1,29 +1,29 @@
-// Module ID: 4811
-// Function ID: 4812
+// Module ID: 4814
+// Function ID: 4815
 // Name: PermissionUtils
-// Dependencies: [2118, 4807, 4808, 2069, 2083, 2120, 502, 2065, 2125, 2119, 2087, 1390, 1085, 1097, 12, 4812, 4793, 11, 1998, 4813, 2123, 2]
+// Dependencies: [2121, 4810, 4811, 2072, 2086, 2123, 502, 2068, 2128, 2122, 2090, 1392, 1087, 1099, 12, 4815, 4796, 11, 2000, 4816, 2126, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4811 (PermissionUtils)
+// Module 4814 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Server from "Server" /* 1998 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2123 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4812 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4813 */;
-import ImpersonateStore from "ImpersonateStore" /* 2118 */;
-import LurkingStore from "LurkingStore" /* 4807 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4808 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
+import Server from "Server" /* 2000 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2123 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2126 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4815 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4816 */;
+import ImpersonateStore from "ImpersonateStore" /* 2121 */;
+import LurkingStore from "LurkingStore" /* 4810 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1097 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1099 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19Result7.filter(addResult4, closure_29);
     }
     found1 = found;
-    const tmp28Result = tmp28(4793);
+    const tmp28Result = tmp28(4796);
     const tmp34 = tmp28Result.isMemberCommunicationDisabled(member) && !hasItem;
     if (tmp34) {
       const tmp19Result8 = BigFlagUtils;
@@ -385,7 +385,7 @@ function getSyncedPermissionOverwrites(guild_id, appChannelBotUserId) {
       allow = deserializeResult;
     }
     deny = undefined;
-    remove = tmp12(1097).remove;
+    remove = tmp12(1099).remove;
     BigFlagUtils;
     if (obj[appChannelBotUserId] != null) {
       deny = tmp9.deny;
@@ -518,7 +518,7 @@ export const areChannelsLocked = function areChannelsLocked(c18, c19, appChannel
           const tmp12 = getSyncedPermissionOverwrites(c19, appChannelBotUserId);
           let closure_1 = tmp12;
           if (null == obj2[guild_id]) {
-            let obj = { id: guild_id, type: obj2(1998).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
+            let obj = { id: guild_id, type: obj2(2000).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
             let tmp3 = obj2;
             obj2[guild_id] = obj;
           }

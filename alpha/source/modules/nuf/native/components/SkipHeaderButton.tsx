@@ -1,16 +1,16 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13288
+// Function ID: 13289
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 5151, 587, 558, 576, 1126, 9518, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 1128, 9534, 2]
 
-// Module 13262 (SkipHeaderButton)
+// Module 13288 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
+import intl2 from "intl" /* 1128 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,8 +27,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipHeader
   if (cResult[0] !== label.label) {
     label = label.label;
     if (label == null) {
-      const intl = tmp(1126).intl;
-      label = intl.string(tmp(1126).t["5Wxrcd"]);
+      const intl = tmp(1128).intl;
+      label = intl.string(tmp(1128).t["5Wxrcd"]);
     }
     cResult[0] = label.label;
     cResult[1] = label;
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipHeader
         return tmp9;
       }
     }
-    const HeaderTextButton = tmp(9518).HeaderTextButton;
+    const HeaderTextButton = tmp(9534).HeaderTextButton;
     const merged = Object.assign(label);
     const tmp14 = <HeaderTextButton labelStyle={tmp8} label={tmp5} accessibilityLabel={tmp5} />;
     cResult[5] = tmp5;

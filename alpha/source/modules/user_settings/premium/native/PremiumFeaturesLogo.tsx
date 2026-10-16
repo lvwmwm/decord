@@ -1,20 +1,20 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9653
+// Function ID: 9654
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1392, 21, 558, 576, 9638, 7376, 4825, 5088, 2]
+// Dependencies: [19, 1394, 21, 558, 576, 9654, 7378, 4828, 5091, 2]
 
-// Module 9637 (PremiumFeaturesLogo)
+// Module 9653 (PremiumFeaturesLogo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7376 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9638 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7378 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9654 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PremiumUtils = tmp(4825);
+const PremiumUtils = tmp(4828);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const jsx = Fragment.jsx;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesLogo(arg0) {
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       return tmp10;
     }
   }
-  const tmp11 = jsx(tmp6(5088), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
+  const tmp11 = jsx(tmp6(5091), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = style;
   cResult[4] = tmp8;
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     tmp = importDefault;
     tmp3 = AssetRegistryDefault;
   }
-  tmp(5088);
+  tmp(5091);
   const obj2 = PremiumUtils;
   return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 });

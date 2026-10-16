@@ -1,17 +1,17 @@
-// Module ID: 6362
-// Function ID: 6363
+// Module ID: 6364
+// Function ID: 6365
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1085, 38, 5083, 1382, 510, 6363, 6364, 4, 6365, 6366, 1384, 1295, 5177, 2]
+// Dependencies: [32, 5, 1087, 38, 5086, 1384, 510, 6365, 6366, 4, 6367, 6368, 1386, 1297, 5179, 2]
 
-// Module 6362 (DesktopNativeUtils)
+// Module 6364 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 5083 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5177 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6363 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6364 */;
-import IPCEvents from "IPCEvents" /* 6365 */;
+import Constants from "Constants" /* 1087 */;
+import flow_Client from "flow/Client" /* 5086 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5179 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6365 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6366 */;
+import IPCEvents from "IPCEvents" /* 6367 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6366);
+const FileExtensionUtils = tmp2(6368);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -1037,7 +1037,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6366);
+        const tmpResult = tmp(6368);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

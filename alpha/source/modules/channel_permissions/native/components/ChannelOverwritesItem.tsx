@@ -1,28 +1,28 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8847
+// Function ID: 8848
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1390, 7706, 21, 5151, 5365, 1126, 7234, 4864, 558, 576, 6516, 6405, 8840, 8822, 6400, 5147, 1200, 8841, 8842, 4888, 6398, 2]
+// Dependencies: [109, 19, 17, 1392, 7709, 21, 5153, 5367, 1128, 7236, 4867, 558, 576, 6518, 6407, 8848, 8830, 6402, 5149, 1202, 8849, 8850, 4891, 6400, 2]
 
-// Module 8839 (ChannelOverwritesItem)
+// Module 8847 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import react_native2 from "react-native" /* 4888 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AlertModal from "AlertModal" /* 5365 */;
-import FormCheckbox from "FormCheckbox" /* 6398 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7706 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8822 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8840 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8841 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8842 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import react_native2 from "react-native" /* 4891 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AlertModal from "AlertModal" /* 5367 */;
+import FormCheckbox from "FormCheckbox" /* 6400 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7709 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8830 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8849 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8850 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     const _Symbol = Symbol;
     const disabled = item.disabled;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1126).intl;
-      const stringResult = intl.string(tmp(1126).t.N86XcP);
+      let intl = tmp(1128).intl;
+      const stringResult = intl.string(tmp(1128).t.N86XcP);
       cResult[0] = stringResult;
       first = stringResult;
     } else {
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         if (cResult[5] !== prop) {
           let obj2 = { style: prop };
           cResult[5] = prop;
-          const tmp11 = closure_10(tmp(6516).CircleXIcon, obj2);
+          const tmp11 = closure_10(tmp(6518).CircleXIcon, obj2);
           class R {
             constructor() {
               if (null != onRemove) {
@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F99772 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F100062 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,13 +147,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F99772 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F100062 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
           }
         }
-        const tmp14 = closure_10(tmp(6405).PressableOpacity, obj3);
+        const tmp14 = closure_10(tmp(6407).PressableOpacity, obj3);
         cResult[7] = item.disabled;
         cResult[8] = tmp7;
         cResult[9] = tmp9;
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F99772 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F100062 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }
@@ -212,7 +212,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     let obj = {
       disabled: item.disabled,
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(item(1126).t.N86XcP),
+      accessibilityLabel: intl.string(item(1128).t.N86XcP),
       onPress() {
           let id;
           let intl;
@@ -251,10 +251,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(6405).PressableOpacity;
-    intl = item(1126).intl;
+    const PressableOpacity = item(6407).PressableOpacity;
+    intl = item(1128).intl;
     let prop;
-    CircleXIcon = item(6516).CircleXIcon;
+    CircleXIcon = item(6518).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -449,7 +449,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
               }
               if (cResult[16] !== tmp18) {
                 const obj2 = { source: tmp18, size: native.AvatarSizes.SMALL };
-                const Avatar = tmp(1200).Avatar;
+                const Avatar = tmp(1202).Avatar;
                 const tmp24 = authStore(Avatar, obj2);
                 cResult[16] = tmp18;
                 cResult[17] = tmp24;
@@ -545,7 +545,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
       let tmp11 = null;
       if (item.rowType === RowType.OWNER) {
         const obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp4.ownerIcon };
-        const Icon = tmp(1200).Icon;
+        const Icon = tmp(1202).Icon;
         tmp11 = authStore(Icon, obj6);
       }
       cResult[6] = item.rowType;
@@ -596,13 +596,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   const tmp3 = View;
   if (item.rowType === RowType.OWNER) {
     const obj3 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp.ownerIcon };
-    const Icon = tmp5(1200).Icon;
+    const Icon = tmp5(1202).Icon;
     tmp4Result = tmp4(Icon, obj3);
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(6400).TableRow;
-  const Avatar = tmp5(1200).Avatar;
+  const TableRow = tmp5(6402).TableRow;
+  const Avatar = tmp5(1202).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;
   if (user != null) {
@@ -642,7 +642,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyR
     tmp7 = tmp9;
   }
   const obj3 = { source: AssetRegistryDefault2, color: item.colorString, size: native.IconSizes.MEDIUM, style: tmp4.roleIcon };
-  const Icon = tmp(1200).Icon;
+  const Icon = tmp(1202).Icon;
   const tmp6 = authStore(Icon, obj3);
   cResult[0] = item.colorString;
   cResult[1] = tmp4.roleIcon;

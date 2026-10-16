@@ -1,20 +1,20 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13178
+// Function ID: 13179
 // Name: MarketingCardsScroller
-// Dependencies: [32, 109, 19, 17, 5140, 21, 5151, 5023, 587, 558, 576, 504, 5422, 1126, 1383, 6405, 9964, 12913, 2]
+// Dependencies: [32, 109, 19, 17, 5143, 21, 5153, 5026, 587, 558, 576, 504, 5424, 1128, 1385, 6407, 9980, 12939, 2]
 
-// Module 13152 (MarketingCardsScroller)
+// Module 13178 (MarketingCardsScroller)
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import intl3 from "intl" /* 1128 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import ColorUtils_mod from "ColorUtils" /* 5023 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import ColorUtils_mod from "ColorUtils" /* 5026 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

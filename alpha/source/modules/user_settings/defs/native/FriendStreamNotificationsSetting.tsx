@@ -1,14 +1,14 @@
-// Module ID: 16445
-// Function ID: 16446
+// Module ID: 16478
+// Function ID: 16479
 // Name: FriendStreamNotificationsSetting
-// Dependencies: [8210, 10991, 1126, 2041, 16446, 2]
+// Dependencies: [8213, 11006, 1128, 2044, 16479, 2]
 
-// Module 16445 (FriendStreamNotificationsSetting)
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 16446 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+// Module 16478 (FriendStreamNotificationsSetting)
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 16479 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

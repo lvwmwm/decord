@@ -1,9 +1,9 @@
-// Module ID: 9926
-// Function ID: 9927
+// Module ID: 9942
+// Function ID: 9943
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 9926 (UploaderQueue)
+// Module 9942 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

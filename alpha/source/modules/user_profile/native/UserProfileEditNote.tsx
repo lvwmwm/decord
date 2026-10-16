@@ -1,16 +1,16 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 14029
+// Function ID: 14030
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1085, 21, 5151, 558, 576, 1503, 13993, 6421, 9852, 5041, 9518, 1126, 13998, 5147, 6994, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5153, 558, 576, 1505, 14025, 6423, 9868, 5044, 9534, 1128, 14030, 5149, 6996, 2]
 
-// Module 13997 (UserProfileEditNote)
+// Module 14029 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
+import Constants from "Constants" /* 1087 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,13 +166,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       setOptions = closure_4.setOptions;
       obj2 = closure_0(closure_2[10]);
       obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-        const promise = new Promise(() => { /* body not rendered: F156675 */ });
+        const promise = new Promise(() => { /* body not rendered: F157150 */ });
         return promise;
       });
       obj.headerRight = function headerRight(arg0) {
         let intl;
         let str;
-        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F156676 */ } };
+        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157151 */ } };
         const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
         const merged = Object.assign(arg0);
         intl = userId(onClose[14]).intl;

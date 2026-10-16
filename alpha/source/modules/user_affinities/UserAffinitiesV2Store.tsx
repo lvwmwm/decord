@@ -1,26 +1,26 @@
-// Module ID: 7564
-// Function ID: 7565
+// Module ID: 7566
+// Function ID: 7567
 // Name: UserAffinitiesV2Store
-// Dependencies: [4816, 7565, 504, 584, 2]
+// Dependencies: [4819, 7567, 504, 584, 2]
 
-// Module 7564 (UserAffinitiesV2Store)
+// Module 7566 (UserAffinitiesV2Store)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserAffinitiesConstants from "UserAffinitiesConstants" /* 7565 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
+import UserAffinitiesConstants from "UserAffinitiesConstants" /* 7567 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
 import size from "module_2" /* 2 */;
 
 let _null;
 
-const f97058 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
-const f97059 = (otherUserId) => {
+const f97345 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
+const f97346 = (otherUserId) => {
   const items = [otherUserId.otherUserId, otherUserId];
   return items;
 };
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
-  const found = userAffinities.filter(f97058);
-  map = new Map(found.map(f97059));
+  const found = userAffinities.filter(f97345);
+  map = new Map(found.map(f97346));
   if (null != _null) {
     let value = map.get(_null.otherUserId);
     if (value == null) {
@@ -53,10 +53,10 @@ class UserAffinitiesV2Store extends PersistedStore {
       obj.lastFetched = userAffinities.lastFetched;
       const _Map = Map;
       const userAffinities1 = obj.userAffinities;
-      const found = userAffinities1.filter(f97058);
+      const found = userAffinities1.filter(f97345);
       const self2 = this;
       const self3 = this;
-      map = new Map(found.map(f97059));
+      map = new Map(found.map(f97346));
       if (null != _null) {
         let value = map.get(_null.otherUserId);
         if (value == null) {
@@ -158,8 +158,8 @@ const obj2 = {
     c3 = false;
     obj.userAffinities = affineUsers;
     const userAffinities = obj.userAffinities;
-    const found = userAffinities.filter(f97058);
-    map = new Map(found.map(f97059));
+    const found = userAffinities.filter(f97345);
+    map = new Map(found.map(f97346));
     if (null != _null) {
       let value = map.get(_null.otherUserId);
       if (value == null) {

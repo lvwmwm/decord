@@ -1,21 +1,21 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 16928
+// Function ID: 16929
 // Name: ParentalControlsExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [7475, 8210, 558, 576, 15750, 8460, 15754, 1126, 15759, 1209, 10991, 2]
+// Dependencies: [7477, 8213, 558, 576, 15783, 8468, 15787, 1128, 15792, 1211, 11006, 2]
 
-// Module 16895 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
+// Module 16928 (ParentalControlsExplicitMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15750 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15754 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7475 */;
+import intl3 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15783 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15787 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8460);
+const ExplicitMediaRedactionUtils = tmp(8468);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl3.intl;
@@ -68,13 +68,13 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(15754);
+      let obj = selectedTeenId(15787);
       const explicitContentFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
-      const intl = selectedTeenId(1126).intl;
-      const stringResult = intl.string(selectedTeenId(1126).t.GYpoAq);
+      const intl = selectedTeenId(1128).intl;
+      const stringResult = intl.string(selectedTeenId(1128).t.GYpoAq);
       let obj2 = {
         title: stringResult,
-        subtitle: intl2.string(selectedTeenId(1126).t["+uI23H"]),
+        subtitle: intl2.string(selectedTeenId(1128).t["+uI23H"]),
         handlePress(explicitContentFriendDm) {
             const obj = FamilyCenterControlledSettingsUtils;
             const obj2 = { explicitContentFriendDm };
@@ -83,10 +83,10 @@ let obj = {
         currentValue: explicitContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(15759).handleSensitiveMediaFilterPress;
-      selectedTeenId(15759);
-      intl2 = selectedTeenId(1126).intl;
-      items = [selectedTeenId(1209).ExplicitContentRedaction.SHOW];
+      const handleSensitiveMediaFilterPress = selectedTeenId(15792).handleSensitiveMediaFilterPress;
+      selectedTeenId(15792);
+      intl2 = selectedTeenId(1128).intl;
+      items = [selectedTeenId(1211).ExplicitContentRedaction.SHOW];
       const result = handleSensitiveMediaFilterPress(obj2);
     }
   },

@@ -1,16 +1,16 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17063
+// Function ID: 17064
 // Name: getJankSurfaceName
-// Dependencies: [19, 4858, 17026, 17025, 5035, 17029, 1382, 2]
+// Dependencies: [19, 4861, 17059, 17058, 5038, 17062, 1384, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 17030 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 5035 */;
-import getJankScreenName from "getJankScreenName" /* 17025 */;
-import react_nativeDefault from "react-native" /* 17029 */;
+// Module 17063 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 5038 */;
+import getJankScreenName from "getJankScreenName" /* 17058 */;
+import react_nativeDefault from "react-native" /* 17062 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4858 */;
-import JankScreenConstants from "JankScreenConstants" /* 17026 */;
+import ActionSheetStore from "ActionSheetStore" /* 4861 */;
+import JankScreenConstants from "JankScreenConstants" /* 17059 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -142,9 +142,7 @@ export const setJankChannelDetailsOpen = function setJankChannelDetailsOpen(arg0
   if (flag) {
     const tmp6 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
     const obj2 = react_nativeDefault;
-    if (obj2 != null) {
-      obj2.setScreenContext(tmp6, metroRequire);
-    }
+    obj2.setScreenContext(tmp6, metroRequire);
   }
 };
 export const setJankPanelOpen = function setJankPanelOpen(activity, arg1) {
@@ -158,10 +156,8 @@ export const setJankPanelOpen = function setJankPanelOpen(activity, arg1) {
     const tmp8 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
     const obj = react_nativeDefault;
     if (arg1) {
-      if (obj != null) {
-        obj.setScreenContext(tmp8, metroRequire);
-      }
-    } else if (obj != null) {
+      obj.setScreenContext(tmp8, metroRequire);
+    } else {
       obj.surfaceClosed(tmp8);
     }
   }
@@ -181,10 +177,8 @@ export const setJankVoicePanelTab = function setJankVoicePanelTab(channelId, arg
     const tmp8 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
     const obj2 = react_nativeDefault;
     if (tmp4) {
-      if (obj2 != null) {
-        obj2.surfaceClosed(tmp8);
-      }
-    } else if (obj2 != null) {
+      obj2.surfaceClosed(tmp8);
+    } else {
       obj2.setScreenContext(tmp8, metroRequire);
     }
   }
@@ -194,9 +188,7 @@ export const setJankVoicePanelFocus = function setJankVoicePanelFocus(arg0) {
     c14 = arg0;
     const tmp4 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
     const obj = react_nativeDefault;
-    if (obj != null) {
-      obj.setScreenContext(tmp4, metroRequire);
-    }
+    obj.setScreenContext(tmp4, metroRequire);
   }
 };
 export const attachJankActionSheetReporter = function attachJankActionSheetReporter() {
@@ -204,7 +196,7 @@ export const attachJankActionSheetReporter = function attachJankActionSheetRepor
   let tmp = c15;
   if (!tmp) {
     let tmp2 = length;
-    let obj = length(1382);
+    let obj = length(1384);
     if (obj.isAndroid()) {
       c15 = true;
       length = ActionSheetStore.getStack().length;
@@ -214,10 +206,8 @@ export const attachJankActionSheetReporter = function attachJankActionSheetRepor
         const tmp2 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
         const obj = react_nativeDefault;
         if (tmp) {
-          if (obj != null) {
-            obj.surfaceClosed(tmp2);
-          }
-        } else if (obj != null) {
+          obj.surfaceClosed(tmp2);
+        } else {
           obj.setScreenContext(tmp2, metroRequire);
         }
       });

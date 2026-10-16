@@ -1,21 +1,21 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 17837
+// Function ID: 17838
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 5140, 5500, 10440, 1085, 21, 558, 576, 4906, 573, 1126, 5018, 17061, 13212, 17477, 17804, 10451, 2]
+// Dependencies: [109, 19, 5143, 5502, 10456, 1087, 21, 558, 576, 4909, 573, 1128, 5021, 17095, 13238, 17511, 17838, 10467, 2]
 
-// Module 17803 (IncomingRequestRow)
+// Module 17837 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import UserRowConstants from "UserRowConstants" /* 10440 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13212 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17061 */;
+import Constants from "Constants" /* 1087 */;
+import intl6 from "intl" /* 1128 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import UserRowConstants from "UserRowConstants" /* 10456 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13238 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17095 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import ApplicationStore from "ApplicationStore" /* 5500 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import ApplicationStore from "ApplicationStore" /* 5502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
                           }
                         }
                       }
-                      const tmp42 = jsx(tmp33(13212), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
+                      const tmp42 = jsx(tmp33(13238), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
                       cResult[32] = stateFromStores1;
                       cResult[33] = tmp42;
                       tmp40 = tmp42;
@@ -322,7 +322,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
     let obj5 = { name: null, label: null };
     if (tmp5) {
       obj5.name = constants.WAVE;
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       class M {
         constructor(nativeEvent) {
           const actionName = nativeEvent.nativeEvent.actionName;
@@ -344,7 +344,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
         }
       }
       const obj6 = { username: obj7.getName(tmp14) };
-      const m0zYbV = tmp(1126).t.m0zYbV;
+      const m0zYbV = tmp(1128).t.m0zYbV;
       obj7 = UserUtilsDefault;
       obj5.label = tmp30(m0zYbV, obj6);
       const items2 = [obj5];
@@ -506,7 +506,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFr
   const obj2 = UserUtilsDefault;
   const userTag = obj2.useUserTag(tmp5);
   if (cResult[3] !== userTag) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj3 = { name: userTag };
     const formatToPlainStringResult = intl.formatToPlainString(intl6.t.u6lp4x, obj3);
     cResult[3] = userTag;
@@ -516,7 +516,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFr
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult = intl2.string(intl6.t["0E614Z"]);
     cResult[5] = stringResult;
     tmp12 = stringResult;
@@ -524,7 +524,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFr
     tmp12 = cResult[5];
   }
   if (cResult[6] !== userTag) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const obj4 = { name: userTag };
     const formatToPlainStringResult1 = intl3.formatToPlainString(intl6.t.cRwkp7, obj4);
     cResult[6] = userTag;
@@ -534,7 +534,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFr
     tmp14 = cResult[7];
   }
   if (cResult[8] !== userTag) {
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     const obj5 = { name: userTag };
     const formatToPlainStringResult2 = intl4.formatToPlainString(intl6.t.MUfqsS, obj5);
     cResult[8] = userTag;
@@ -544,7 +544,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFr
     tmp16 = cResult[9];
   }
   if (cResult[10] !== userTag) {
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     const obj6 = { name: userTag };
     const formatToPlainStringResult3 = intl5.formatToPlainString(intl6.t["0OF9IB"], obj6);
     cResult[10] = userTag;
@@ -619,7 +619,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
   const userTag = obj2.useUserTag(tmp6);
   const id = tmp4.id;
   if (cResult[4] !== userTag) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj3 = { name: userTag };
     const formatToPlainStringResult = intl.formatToPlainString(require("intl").t.u6lp4x, obj3);
     cResult[4] = userTag;
@@ -629,7 +629,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
     tmp11 = cResult[5];
   }
   if (cResult[6] !== tmp4) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj4 = {
       applicationNameHook() {
           return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
@@ -689,7 +689,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
         cResult[25] = tmp27;
         tmp21 = tmp27;
       }
-      const intl5 = tmp(1126).intl;
+      const intl5 = tmp(1128).intl;
       const obj6 = { name: userTag, applicationName: tmp4.name };
       const formatToPlainStringResult1 = intl5.formatToPlainString(require("intl").t.d8Cw5e, obj6);
       cResult[14] = tmp4.name;
@@ -697,7 +697,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
       cResult[16] = formatToPlainStringResult1;
       tmp19 = formatToPlainStringResult1;
     }
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     const obj7 = { name: userTag, applicationName: tmp4.name };
     const formatToPlainStringResult2 = intl4.formatToPlainString(require("intl").t.kMUpdH, obj7);
     cResult[11] = tmp4.name;
@@ -705,7 +705,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
     cResult[13] = formatToPlainStringResult2;
     tmp17 = formatToPlainStringResult2;
   }
-  const intl3 = tmp(1126).intl;
+  const intl3 = tmp(1128).intl;
   const obj8 = { name: userTag, applicationName: tmp4.name };
   const formatToPlainStringResult3 = intl3.formatToPlainString(require("intl").t.Ke6fRJ, obj8);
   cResult[8] = tmp4.name;
@@ -718,21 +718,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
   const merged = Object.assign(arg0, Object.assign({ user: 0, application: 0 }));
   const obj = UserUtilsDefault;
   const userTag = obj.useUserTag(user);
-  const intl = application(1126).intl;
-  const intl2 = application(1126).intl;
+  const intl = application(1128).intl;
+  const intl2 = application(1128).intl;
   const obj3 = {
     applicationNameHook() {
       return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
     }
   };
-  const intl3 = application(1126).intl;
+  const intl3 = application(1128).intl;
   const obj4 = { name: userTag, applicationName: application.name };
-  const intl4 = application(1126).intl;
+  const intl4 = application(1128).intl;
   const obj5 = { name: userTag, applicationName: application.name };
-  const intl5 = application(1126).intl;
+  const intl5 = application(1128).intl;
   const obj6 = { name: userTag, applicationName: application.name };
   const merged1 = Object.assign(merged);
-  return <closure_15 user={user} applicationId={application.id} accessibilityLabel={intl.formatToPlainString(application(1126).t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.format(application(1126).t.gRgJGR, obj3)} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(application(1126).t.Ke6fRJ, obj4)} acceptRequestAccessibilityLabel={intl4.formatToPlainString(application(1126).t.kMUpdH, obj5)} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(application(1126).t.d8Cw5e, obj6)} />;
+  return <closure_15 user={user} applicationId={application.id} accessibilityLabel={intl.formatToPlainString(application(1128).t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.format(application(1128).t.gRgJGR, obj3)} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(application(1128).t.Ke6fRJ, obj4)} acceptRequestAccessibilityLabel={intl4.formatToPlainString(application(1128).t.kMUpdH, obj5)} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(application(1128).t.d8Cw5e, obj6)} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedIncomingGameFriendRequestRow(arg0) {

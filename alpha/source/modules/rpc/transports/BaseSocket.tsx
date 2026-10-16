@@ -1,12 +1,12 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 11267
+// Function ID: 11268
 // Name: BaseSocket
-// Dependencies: [1085, 12, 11234, 2]
+// Dependencies: [1087, 12, 11250, 2]
 
-// Module 11248 (BaseSocket)
+// Module 11267 (BaseSocket)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 11234 */;
-import Constants from "Constants" /* 1085 */;
+import RPCErrorDefault from "RPCError" /* 11250 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c2;

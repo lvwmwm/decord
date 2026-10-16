@@ -1,12 +1,12 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17108
+// Function ID: 17109
 // Name: useMessagesFlatData
-// Dependencies: [19, 558, 576, 17062, 17075, 17112, 17113, 2]
+// Dependencies: [19, 558, 576, 17096, 17109, 17146, 17147, 2]
 
-// Module 17074 (useMessagesFlatData)
+// Module 17108 (useMessagesFlatData)
 import react2 from "react" /* 576 */;
-import useMessagesData from "useMessagesData" /* 17062 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 17075 */;
+import useMessagesData from "useMessagesData" /* 17096 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 17109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     } else {
       num = 0;
       if (renderHeader === useMessagesData.MessagesDataHeader.EmptyState) {
-        num = tmp(17112).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+        num = tmp(17146).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     cResult[6] = renderHeader;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
       tmp18 = cResult[8];
     }
     items.push(tmp18);
-    sum2 = tmp12 + tmp14(17113).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+    sum2 = tmp12 + tmp14(17147).MESSAGES_ITEM_SEPERATOR_HEIGHT;
   }
   const tmp20 = sections[useMessagesData.MessagesDataSections.SuggestedFriends];
   let tmp21;
@@ -151,7 +151,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     } else {
       listHeaderHeight = 0;
       if (tmp === useMessagesData.MessagesDataHeader.EmptyState) {
-        listHeaderHeight = tmp2(17112).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+        listHeaderHeight = tmp2(17146).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     const listData = [];
@@ -185,7 +185,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     const tmp16 = sections;
     if (sections[useMessagesData.MessagesDataSections.Separator] > 0) {
       listData.push({ kind: "separator" });
-      sum2 = tmp12 + tmp17(17113).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+      sum2 = tmp12 + tmp17(17147).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
     const tmp21 = tmp16[useMessagesData.MessagesDataSections.SuggestedFriends];
     let friendsHeaderOffset;

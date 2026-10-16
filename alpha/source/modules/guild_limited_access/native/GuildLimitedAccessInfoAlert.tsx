@@ -1,22 +1,22 @@
-// Module ID: 6120
-// Function ID: 6121
+// Module ID: 6122
+// Function ID: 6123
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2087, 6121, 1085, 21, 5151, 6122, 587, 558, 576, 1126, 1200, 5147, 5458, 2]
+// Dependencies: [19, 2090, 6123, 1087, 21, 5153, 6124, 587, 558, 576, 1128, 1202, 5149, 5460, 2]
 
-// Module 6120 (GuildLimitedAccessInfoAlert)
+// Module 6122 (GuildLimitedAccessInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AlertDefault from "Alert" /* 5458 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6121 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AlertDefault from "Alert" /* 5460 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6123 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
-import TextStyles from "TextStyles" /* 6122 */;
+import createStyles_mod from "createStyles" /* 5153 */;
+import TextStyles from "TextStyles" /* 6124 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimit
   ({ guildId, onClose } = arg0);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { helpdeskArticle };
     const formatResult = intl.format(intl4.t.ZqkXsC, obj2);
     cResult[0] = formatResult;
@@ -56,9 +56,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimit
   if (cResult[1] !== guildId) {
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj3 = { guildName: guild.name, helpdeskArticle };
-      first = intl2.format(tmp(1126).t.jn0Xyx, obj3);
+      first = intl2.format(tmp(1128).t.jn0Xyx, obj3);
     }
     cResult[1] = guildId;
     cResult[2] = first;
@@ -68,7 +68,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimit
   }
   const header = tmp4.header;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult = intl3.string(intl4.t.kJwpBW);
     cResult[3] = stringResult;
     tmp13 = stringResult;
@@ -127,15 +127,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimit
   let formatResult1 = formatResult;
   const tmp4 = helpdeskArticle;
   if (null != guild) {
-    const intl2 = tmp2(1126).intl;
+    const intl2 = tmp2(1128).intl;
     const obj2 = { guildName: guild.name, helpdeskArticle: tmp4 };
-    formatResult1 = intl2.format(tmp2(1126).t.jn0Xyx, obj2);
+    formatResult1 = intl2.format(tmp2(1128).t.jn0Xyx, obj2);
   }
   const obj3 = { onClose, children: items };
   const obj4 = { style: tmp.header, children: intl3.string(intl4.t.kJwpBW) };
   const tmp8 = AlertDefault;
-  const LegacyText = tmp2(1200).LegacyText;
-  intl3 = tmp2(1126).intl;
+  const LegacyText = tmp2(1202).LegacyText;
+  intl3 = tmp2(1128).intl;
   items = [hasOwnProperty(LegacyText, obj4), ];
   const obj5 = { style: tmp.text, variant: "text-md/medium", children: formatResult1 };
   items[1] = hasOwnProperty(Text_Text.Text, obj5);

@@ -1,22 +1,22 @@
-// Module ID: 9992
-// Function ID: 9993
+// Module ID: 10008
+// Function ID: 10009
 // Name: Sticker
-// Dependencies: [19, 17, 1205, 21, 5966, 5965, 558, 576, 1126, 8235, 9993, 5088, 5025, 7042, 7043, 2]
+// Dependencies: [19, 17, 1207, 21, 5968, 5967, 558, 576, 1128, 8240, 10009, 5091, 5028, 7044, 7045, 2]
 // Exports: getStickerAssetUrl
 
-// Module 9992 (Sticker)
+// Module 10008 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import shared from "shared" /* 5025 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import StickersUtils from "StickersUtils" /* 5965 */;
-import StickersTypes from "StickersTypes" /* 5966 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8235 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 9993 */;
+import intl2 from "intl" /* 1128 */;
+import shared from "shared" /* 5028 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import StickersUtils from "StickersUtils" /* 5967 */;
+import StickersTypes from "StickersTypes" /* 5968 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8240 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 10009 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         tmp5 = cResult[3];
       }
       if (cResult[4] !== sticker.name) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const obj2 = { stickerName: sticker.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl2.t.rk6pOw, obj2);
         cResult[4] = sticker.name;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         if (str4 == null) {
           str4 = "";
         }
-        const NativeLottieRenderMode = tmp(8235).NativeLottieRenderMode;
+        const NativeLottieRenderMode = tmp(8240).NativeLottieRenderMode;
         const tmp33 = undefined === animated || animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
         if (cResult[6] === tmp8) {
           if (cResult[7] === num) {
@@ -186,9 +186,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
           const tmp26 = jsx;
           const tmpResult7 = shared;
           if (tmpResult7.isThemeDark(ThemeStore.theme)) {
-            tmp27Result = tmp27(7042);
+            tmp27Result = tmp27(7044);
           } else {
-            tmp27Result = tmp27(7043);
+            tmp27Result = tmp27(7045);
           }
           const tmp26Result = tmp26(tmp28, obj6);
           cResult[28] = tmp8;
@@ -267,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
   if (str == null) {
     str = "";
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const obj3 = { stickerName: sticker.name };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t.rk6pOw, obj3);
   if (sticker.format_type === StickersTypes.StickerFormat.LOTTIE) {
@@ -278,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8235).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8240).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {
@@ -300,9 +300,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     const tmp13 = jsx;
     const tmpResult10 = shared;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(7042);
+      tmp14Result = tmp14(7044);
     } else {
-      tmp14Result = tmp14(7043);
+      tmp14Result = tmp14(7045);
     }
     obj7 = { uri: str };
     return tmp13(tmp15, obj6);

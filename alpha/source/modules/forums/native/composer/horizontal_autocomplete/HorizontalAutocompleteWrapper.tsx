@@ -1,12 +1,12 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10032
+// Function ID: 10033
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1085, 21, 558, 576, 10017, 10230, 4906, 5152, 7034, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 10033, 10246, 4909, 5154, 7036, 2]
 
-// Module 10016 (HorizontalAutocompleteWrapper)
+// Module 10032 (HorizontalAutocompleteWrapper)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import timing from "timing" /* 5152 */;
+import Constants from "Constants" /* 1087 */;
+import timing from "timing" /* 5154 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

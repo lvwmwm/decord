@@ -1,11 +1,11 @@
-// Module ID: 1896
-// Function ID: 1897
+// Module ID: 1898
+// Function ID: 1899
 // Name: react-native
-// Dependencies: [1362, 2]
+// Dependencies: [1364, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry
 
-// Module 1896 (react-native)
-import react_nativeDefault from "react-native" /* 1362 */;
+// Module 1898 (react-native)
+import react_nativeDefault from "react-native" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen/native/readAppEntryWindowMetrics.android.tsx");

@@ -1,41 +1,41 @@
-// Module ID: 18178
-// Function ID: 18179
+// Module ID: 18220
+// Function ID: 18221
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2064, 6252, 11135, 6113, 502, 2065, 1390, 12817, 18077, 1085, 2024, 5174, 21, 5151, 587, 4906, 5451, 558, 576, 12816, 18144, 11199, 1121, 4883, 18078, 18076, 6382, 573, 1497, 11223, 9247, 8596, 5291, 11203, 1200, 11209, 12819, 6982, 18028, 5280, 11187, 2]
+// Dependencies: [32, 19, 17, 2067, 6254, 11151, 6115, 502, 2068, 1392, 12843, 18112, 1087, 2026, 5176, 21, 5153, 587, 4909, 5453, 558, 576, 12842, 18183, 11215, 1123, 4886, 18113, 18111, 6384, 573, 1499, 11239, 9260, 8604, 5293, 11219, 1202, 11225, 12845, 6984, 18063, 5282, 11203, 2]
 
-// Module 18178 (VoicePanelPIPContent)
+// Module 18220 (VoicePanelPIPContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import useWindowDimensions from "useWindowDimensions" /* 1497 */;
-import native from "native" /* 4883 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4906 */;
-import ExternalPipDefault from "ExternalPip" /* 5280 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import NativeViewDefault from "NativeView" /* 6382 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12816 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12817 */;
-import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 12819 */;
-import VideoActionCreators from "VideoActionCreators" /* 18028 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18076 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18077 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18078 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 18144 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import useWindowDimensions from "useWindowDimensions" /* 1499 */;
+import native from "native" /* 4886 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4909 */;
+import ExternalPipDefault from "ExternalPip" /* 5282 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import NativeViewDefault from "NativeView" /* 6384 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12842 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12843 */;
+import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 12845 */;
+import VideoActionCreators from "VideoActionCreators" /* 18063 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18111 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18112 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18113 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 18183 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
-import ChannelRTCStore_mod from "ChannelRTCStore" /* 6252 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11135 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2067 */;
+import ChannelRTCStore_mod from "ChannelRTCStore" /* 6254 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11151 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 1085 */;
-import Constants_mod2 from "Constants" /* 2024 */;
-import CallConstants from "CallConstants" /* 5174 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants_mod from "Constants" /* 1087 */;
+import Constants_mod2 from "Constants" /* 2026 */;
+import CallConstants from "CallConstants" /* 5176 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -57,10 +57,10 @@ let obj2;
 let size;
 let size1;
 let tmp3;
-const ReanimatedNativeViewDefault = tmp3(6982);
-const useProfileTileGradientDefault = tmp3(8596);
-const VideoRendererNativeComponentDefault = tmp3(11199);
-const AssetRegistryDefault = tmp3(11209);
+const ReanimatedNativeViewDefault = tmp3(6984);
+const useProfileTileGradientDefault = tmp3(8604);
+const VideoRendererNativeComponentDefault = tmp3(11215);
+const AssetRegistryDefault = tmp3(11225);
 function markContentReady() {
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   ComponentDispatch.dispatch(constants2.VOICE_PANEL_PIP_CONTENT_READY);
@@ -199,7 +199,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTra
       tmp5 = cResult[3];
     }
     const effect = react.useEffect(tmp4, tmp5);
-    return arg1 === tmp(4883).TransitionStates.YEETED ? onTop.onTop : onTop.onBottom;
+    return arg1 === tmp(4886).TransitionStates.YEETED ? onTop.onTop : onTop.onBottom;
   }
   const fn = function u() {
     let timeout;
@@ -1155,8 +1155,8 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     user1 = UserStore.getCurrentUser();
   }
   let avatarURL;
-  const useDominantColorFromImage = tmp6(9247).useDominantColorFromImage;
-  participantId(9247);
+  const useDominantColorFromImage = tmp6(9260).useDominantColorFromImage;
+  participantId(9260);
   if (user1 != null) {
     avatarURL = user1.getAvatarURL(guildId, 80, false);
   }
@@ -1182,8 +1182,8 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   [tmp18, c9] = channelId(obj.useState(false), 2);
   channelId(obj.useState(false), 2);
   let id1;
-  const useSurfaceDirectRendererExperiment = tmp6(5291).useSurfaceDirectRendererExperiment;
-  participantId(5291);
+  const useSurfaceDirectRendererExperiment = tmp6(5293).useSurfaceDirectRendererExperiment;
+  participantId(5293);
   if (stateFromStores != null) {
     const user = stateFromStores.user;
     if (user != null) {
@@ -1218,7 +1218,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   fn.__closure = { focused };
   fn.__workletHash = 4704058004463;
   fn.__initData = __initData7;
-  const tmp6Result8 = participantId(4906);
+  const tmp6Result8 = participantId(4909);
   class S {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
@@ -1228,10 +1228,10 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       }
     }
   }
-  S.__closure = { runOnJS: participantId(4906).runOnJS, updateIsActivityFocused, mode };
+  S.__closure = { runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, mode };
   S.__workletHash = 10514296638459;
   S.__initData = __initData8;
-  ({ runOnJS: participantId(4906).runOnJS, updateIsActivityFocused, mode });
+  ({ runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, mode });
   const animatedReaction = tmp6Result8.useAnimatedReaction(fn, S);
   const fn2 = function y() {
     return mode.get();
@@ -1251,11 +1251,11 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       runOnJSResult(id, arg0);
     }
   };
-  const tmp6Result9 = participantId(4906);
-  fn3.__closure = { runOnJS: participantId(4906).runOnJS, updateIsActivityFocused, focused };
+  const tmp6Result9 = participantId(4909);
+  fn3.__closure = { runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, focused };
   fn3.__workletHash = 7336366136494;
   fn3.__initData = __initData10;
-  ({ runOnJS: participantId(4906).runOnJS, updateIsActivityFocused, focused });
+  ({ runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, focused });
   const animatedReaction1 = tmp6Result9.useAnimatedReaction(fn2, fn3);
   const items3 = [c9];
   const tmp6Result10 = participantId(573);
@@ -1269,7 +1269,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     nativeEvent = nativeEvent.nativeEvent;
     layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
   }, items4);
-  const tmp6Result11 = participantId(11203);
+  const tmp6Result11 = participantId(11219);
   canRenderParticipantVideo = tmp6Result11.useCanRenderParticipantVideo(stateFromStores);
   if (canRenderParticipantVideo) {
     canRenderParticipantVideo = !(tmp18 && isReactingToThermalState);
@@ -1308,9 +1308,9 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     const tmp3Result5 = NativeViewDefault;
     if (null != user1) {
       const obj10 = { source: tmp6Result12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp18 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
-      const Avatar = tmp6(1200).Avatar;
-      tmp6Result12 = participantId(9247);
-      AvatarSizes = tmp6(1200).AvatarSizes;
+      const Avatar = tmp6(1202).Avatar;
+      tmp6Result12 = participantId(9260);
+      AvatarSizes = tmp6(1202).AvatarSizes;
       userAvatarDecoration = undefined;
       if (stateFromStores != null) {
         userAvatarDecoration = stateFromStores.userAvatarDecoration;
@@ -1327,7 +1327,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
         const obj12 = { style: tmp.thermalAlertIconContainer, children: closure_22(Icon, obj13) };
         obj13 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
         const tmp3Result6 = NativeViewDefault;
-        Icon = tmp6(1200).Icon;
+        Icon = tmp6(1202).Icon;
         tmp36Result2 = tmp36(tmp3Result6, obj12);
       }
     }
@@ -1757,10 +1757,10 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   let tmp = closure_24();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(18078);
+  let obj = participantId(18113);
   const mode = obj.usePIPState().mode;
   const tmp4 = closure_28(tmp, transitionState, transitionCleanUp);
-  const context = streamId.useContext(mode(12816));
+  const context = streamId.useContext(mode(12842));
   ({ channelId: c2, layoutManager } = context);
   const items = [callback2];
   const obj2 = participantId(573);
@@ -1785,7 +1785,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   });
   streamId = stateFromStoresObject.streamId;
   const userId = stateFromStoresObject.userId;
-  const obj3 = participantId(5291);
+  const obj3 = participantId(5293);
   const surfaceDirectRendererExperiment = obj3.useSurfaceDirectRendererExperiment(userId, { location: "VoicePanelPIPContent.Stream" });
   const items1 = [ApplicationStreamingStore];
   const obj4 = participantId(573);
@@ -1866,7 +1866,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   }, items6);
   if (stateFromStores === constants.ENDED) {
     const obj5 = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp22 = closure_22(tmp2(11187).StreamEnded, obj5);
+    tmp22 = closure_22(tmp2(11203).StreamEnded, obj5);
   } else {
     tmp22 = null;
     if (stateFromStores !== tmp16.FAILED) {
@@ -1903,7 +1903,7 @@ let closure_49 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     const effect = react.useEffect(tmp4, tmp5);
     if (cResult[4] !== tmp3.emptyPip) {
       const obj2 = { style: tmp3.emptyPip };
-      const tmp11 = closure_22(transitionCleanUp(6382), obj2);
+      const tmp11 = closure_22(transitionCleanUp(6384), obj2);
       cResult[4] = tmp3.emptyPip;
       cResult[5] = tmp11;
       tmp8 = tmp11;
@@ -1935,7 +1935,7 @@ let closure_49 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     }
   }, items);
   const obj = { style: tmp.emptyPip };
-  return closure_22(transitionCleanUp(6382), obj);
+  return closure_22(transitionCleanUp(6384), obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelPIPContent(layoutTransition) {

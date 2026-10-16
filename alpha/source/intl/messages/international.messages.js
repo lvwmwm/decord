@@ -1,11 +1,11 @@
-// Module ID: 15096
-// Function ID: 15097
-// Dependencies: [1130, 15097, 1165, 2]
+// Module ID: 15131
+// Function ID: 15132
+// Dependencies: [1132, 15132, 1167, 2]
 
-// Module 15096
-import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
-import AssetRegistry from "AssetRegistry" /* 15097 */;
-import module_1165_mod from "module_1165" /* 1165 */;
+// Module 15131
+import AssetJsonUtils from "AssetJsonUtils" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 15132 */;
+import module_1167_mod from "module_1167" /* 1167 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1165 = module_1165_mod;
-const loader = module_1165.createLoader(obj, "en-US");
-module_1165 = module_1165_mod;
-const messagesProxy = module_1165.makeMessagesProxy(loader);
+let module_1167 = module_1167_mod;
+const loader = module_1167.createLoader(obj, "en-US");
+module_1167 = module_1167_mod;
+const messagesProxy = module_1167.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("intl/messages/international.messages.js");
 
 export default messagesProxy;

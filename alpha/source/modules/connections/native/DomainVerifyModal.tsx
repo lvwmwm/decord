@@ -1,23 +1,23 @@
-// Module ID: 13767
-// Function ID: 13768
+// Module ID: 13793
+// Function ID: 13794
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1085, 21, 5151, 587, 558, 576, 1503, 1295, 1126, 5147, 6505, 13768, 5439, 7035, 6150, 6421, 6908, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5153, 587, 558, 576, 1505, 1297, 1128, 5149, 6507, 13794, 5441, 7037, 6152, 6423, 6910, 2]
 
-// Module 13767 (DomainVerifyModal)
+// Module 13793 (DomainVerifyModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import useNavigation from "useNavigation" /* 1503 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 13768 */;
+import intl7 from "intl" /* 1128 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import useNavigation from "useNavigation" /* 1505 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7037 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 13794 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1096,7 +1096,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
   const tmp8 = closure_9;
   if (tmp9Result) {
     const obj10 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
-    tmp9Result = tmp9(tmp2(5147).Text, obj10);
+    tmp9Result = tmp9(tmp2(5149).Text, obj10);
   }
   items[2] = tmp9Result;
   const obj11 = { style: tmp.button, children: closure_8(Button, obj12) };
@@ -1149,8 +1149,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
       });
     }
   };
-  Button = tmp2(5439).Button;
-  intl4 = tmp2(1126).intl;
+  Button = tmp2(5441).Button;
+  intl4 = tmp2(1128).intl;
   items[3] = closure_8(View, obj11);
   const obj13 = { style: tmp.button, children: closure_8(Button2, obj14) };
   obj14 = {
@@ -1160,8 +1160,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
       closure_2.pop();
     }
   };
-  Button2 = tmp2(5439).Button;
-  intl5 = tmp2(1126).intl;
+  Button2 = tmp2(5441).Button;
+  intl5 = tmp2(1128).intl;
   items[4] = closure_8(View, obj13);
   return tmp8(SafeAreaPaddingView, obj2);
 });
@@ -1192,33 +1192,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = {
-      headerTitle: intl.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl.string(onClose(1128).t["7lo8+e"]),
       headerLeft: tmpResult.getHeaderBackButton(onClose),
       render() {
           const obj = { onClose };
           return metroImportAll(closure_12, obj);
         }
     };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     cResult[1] = obj2;
     tmp5 = obj2;
-    tmpResult = onClose(6421);
+    tmpResult = onClose(6423);
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = {
-      headerTitle: intl2.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl2.string(onClose(1128).t["7lo8+e"]),
       headerLeft: tmpResult3.getHeaderBackButton(onClose),
       render(domain) {
           const obj = { domain: domain.domain, proof: domain.proof, onClose };
           return metroImportAll(closure_13, obj);
         }
     };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     cResult[2] = obj3;
     tmp6 = obj3;
-    tmpResult3 = onClose(6421);
+    tmpResult3 = onClose(6423);
   } else {
     tmp6 = cResult[2];
   }
@@ -1228,25 +1228,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     obj4[constants2.PROOF_DNS] = tmp6;
     const PROOF_HTTP = constants2.PROOF_HTTP;
     const obj5 = {
-      headerTitle: intl3.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl3.string(onClose(1128).t["7lo8+e"]),
       headerLeft: tmpResult4.getHeaderBackButton(onClose),
       render(domain) {
           const obj = { domain: domain.domain, proof: domain.proof, onClose };
           return metroImportAll(closure_14, obj);
         }
     };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     obj4[PROOF_HTTP] = obj5;
     cResult[3] = obj4;
     tmp7 = obj4;
-    tmpResult4 = onClose(6421);
+    tmpResult4 = onClose(6423);
   } else {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { screens: tmp7, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1126).t["13/7kX"]) };
-    const Navigator = tmp(6908).Navigator;
-    intl4 = tmp(1126).intl;
+    const obj6 = { screens: tmp7, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1128).t["13/7kX"]) };
+    const Navigator = tmp(6910).Navigator;
+    intl4 = tmp(1128).intl;
     const tmp12 = closure_8(Navigator, obj6);
     cResult[4] = tmp12;
     tmp9 = tmp12;
@@ -1272,43 +1272,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     let obj = {};
     const DOMAIN = constants2.DOMAIN;
     const obj2 = {
-      headerTitle: intl.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl.string(onClose(1128).t["7lo8+e"]),
       headerLeft: obj3.getHeaderBackButton(onClose),
       render() {
           const obj = { onClose };
           return metroImportAll(closure_12, obj);
         }
     };
-    intl = onClose(1126).intl;
+    intl = onClose(1128).intl;
     obj[DOMAIN] = obj2;
-    obj3 = onClose(6421);
+    obj3 = onClose(6423);
     const PROOF_DNS = constants2.PROOF_DNS;
     const obj4 = {
-      headerTitle: intl2.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl2.string(onClose(1128).t["7lo8+e"]),
       headerLeft: obj5.getHeaderBackButton(onClose),
       render(domain) {
           const obj = { domain: domain.domain, proof: domain.proof, onClose };
           return metroImportAll(closure_13, obj);
         }
     };
-    intl2 = onClose(1126).intl;
+    intl2 = onClose(1128).intl;
     obj[PROOF_DNS] = obj4;
-    obj5 = onClose(6421);
+    obj5 = onClose(6423);
     const PROOF_HTTP = constants2.PROOF_HTTP;
     const obj6 = {
-      headerTitle: intl3.string(onClose(1126).t["7lo8+e"]),
+      headerTitle: intl3.string(onClose(1128).t["7lo8+e"]),
       headerLeft: obj7.getHeaderBackButton(onClose),
       render(domain) {
           const obj = { domain: domain.domain, proof: domain.proof, onClose };
           return metroImportAll(closure_14, obj);
         }
     };
-    intl3 = onClose(1126).intl;
+    intl3 = onClose(1128).intl;
     obj[PROOF_HTTP] = obj6;
-    obj7 = onClose(6421);
-    const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1126).t["13/7kX"]) };
-    const Navigator = onClose(6908).Navigator;
-    intl4 = onClose(1126).intl;
+    obj7 = onClose(6423);
+    const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1128).t["13/7kX"]) };
+    const Navigator = onClose(6910).Navigator;
+    intl4 = onClose(1128).intl;
     return closure_8(Navigator, obj8);
   }
 });

@@ -1,12 +1,12 @@
-// Module ID: 13474
-// Function ID: 13475
+// Module ID: 13500
+// Function ID: 13501
 // Name: getLogMetadata
-// Dependencies: [1381, 5127, 2]
+// Dependencies: [1383, 5130, 2]
 // Exports: default
 
-// Module 13474 (getLogMetadata)
-import react_nativeAll from "react-native" /* 1381 */;
-import DeviceUtils from "DeviceUtils" /* 5127 */;
+// Module 13500 (getLogMetadata)
+import react_nativeAll from "react-native" /* 1383 */;
+import DeviceUtils from "DeviceUtils" /* 5130 */;
 import size from "module_2" /* 2 */;
 
 let constants;

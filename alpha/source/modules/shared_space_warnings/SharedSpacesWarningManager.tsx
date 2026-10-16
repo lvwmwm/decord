@@ -1,18 +1,18 @@
-// Module ID: 18525
-// Function ID: 18526
+// Module ID: 18567
+// Function ID: 18568
 // Name: SharedSpacesWarningManager
-// Dependencies: [2065, 5169, 4816, 14697, 14695, 18526, 1105, 14698, 7028, 2]
+// Dependencies: [2068, 5171, 4819, 14730, 14728, 18568, 1107, 14731, 7030, 2]
 
-// Module 18525 (SharedSpacesWarningManager)
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 14698 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 18526 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14697 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14695 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+// Module 18567 (SharedSpacesWarningManager)
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 14731 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 18568 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14730 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14728 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -60,7 +60,7 @@ function handleAppStateChanged(state) {
           set = new Set(items);
           if (!metroImportAll(set)) {
             const items1 = [];
-            const showVoiceChannelBlockedUserWarning = tmp2(14698).showVoiceChannelBlockedUserWarning;
+            const showVoiceChannelBlockedUserWarning = tmp2(14731).showVoiceChannelBlockedUserWarning;
             showVoiceChannelBlockedUserWarning2;
             HermesBuiltin.arraySpread(items1, ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(items1, blockedUsersForVoiceChannel, 0));
             const result = showVoiceChannelBlockedUserWarning(channelId, items1[0]);

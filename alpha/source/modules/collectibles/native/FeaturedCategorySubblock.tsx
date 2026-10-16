@@ -1,20 +1,20 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16856
+// Function ID: 16857
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 7480, 1087, 1085, 21, 5151, 558, 576, 1503, 9188, 504, 16803, 1265, 7479, 7098, 16821, 6405, 1126, 587, 5088, 7492, 9251, 2]
+// Dependencies: [19, 7482, 1089, 1087, 21, 5153, 558, 576, 1505, 9201, 504, 16836, 1267, 7481, 7100, 16854, 6407, 1128, 587, 5091, 7494, 9264, 2]
 
-// Module 16823 (FeaturedCategorySubblock)
+// Module 16856 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 587 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7479 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 16821 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7481 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 16854 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
-import Constants from "Constants" /* 1085 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp10;
-const FastImageDefault = tmp10(5088);
+const FastImageDefault = tmp10(5091);
 let closure_4 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 ({ AnalyticEvents: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -138,16 +138,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
   dependencyMap = undefined;
   let stateFromStores;
   const tmp = closure_9();
-  let obj = subblock(1503);
+  let obj = subblock(1505);
   importDefault = obj.useNavigation();
-  let obj2 = subblock(9188);
+  let obj2 = subblock(9201);
   dependencyMap = obj2.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
   let obj3 = subblock(504);
   let items = [stateFromStores];
   stateFromStores = obj3.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj4 = subblock(16803);
+  const obj4 = subblock(16836);
   const handleCardVisibilityChange = obj4.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;
@@ -167,8 +167,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
   const tmp11 = VisibilitySensorDefault;
   obj6 = {
     accessibilityRole: "button",
-    accessibilityLabel: intl.formatToPlainString(subblock(1126).t.FNtLb3, obj7),
-    accessibilityHint: intl2.string(subblock(1126).t.F8ma9x),
+    accessibilityLabel: intl.formatToPlainString(subblock(1128).t.FNtLb3, obj7),
+    accessibilityHint: intl2.string(subblock(1128).t.F8ma9x),
     activeOpacity: 0.8,
     androidRippleConfig: { radius: nativeDefault.radii.lg },
     hitSlop: 8,
@@ -217,10 +217,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
     style: tmp.container,
     children: items1
   };
-  PressableOpacity = tmp2(6405).PressableOpacity;
-  intl = tmp2(1126).intl;
+  PressableOpacity = tmp2(6407).PressableOpacity;
+  intl = tmp2(1128).intl;
   obj7 = { category: subblock.name };
-  intl2 = tmp2(1126).intl;
+  intl2 = tmp2(1128).intl;
   let tmp9Result = null != assetUrl;
   ({ radius: nativeDefault.radii.lg });
   tmp12 = closure_8;
@@ -230,11 +230,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
     tmp9Result = tmp9(FastImageDefault, obj9);
   }
   items1 = [tmp9Result, ];
-  const tmp2Result = subblock(7492);
+  const tmp2Result = subblock(7494);
   let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj11 = { style: tmp.limitedTimeBadge };
-    result = tmp9(tmp2(9251).LimitedTimeBadge, obj11);
+    result = tmp9(tmp2(9264).LimitedTimeBadge, obj11);
   }
   items1[1] = result;
   return closure_7(tmp11, obj5);

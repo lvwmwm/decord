@@ -11,7 +11,7 @@ import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 700 */;
 import _mod701 from "module_701" /* 701 */;
 import regExp from "regExp" /* 710 */;
 import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 714 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 715 */;
+import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" /* 715 */;
 import SPAN_STATUS_ERROR from "SPAN_STATUS_ERROR" /* 716 */;
 import _mod717 from "module_717" /* 717 */;
 import _getSpanForScope2 from "_getSpanForScope" /* 720 */;
@@ -21,7 +21,7 @@ let set;
 
 let tmp3;
 const generateSpanId = tmp3(705);
-const f83907 = (attributes) => {
+const f84171 = (attributes) => {
   let spanId;
   let traceFlags;
   let traceId;
@@ -52,7 +52,7 @@ function spanToJSON(getSpanJSON) {
     const tmp = getSpanJSON.attributes && getSpanJSON.startTime && getSpanJSON.name && getSpanJSON.endTime && getSpanJSON.status;
     if (tmp) {
       ({ attributes, startTime, endTime, status, links } = getSpanJSON);
-      const obj2 = { span_id: spanId, trace_id: traceId, data: attributes, description: getSpanJSON.name, parent_span_id: parentSpanId, start_timestamp: sum, timestamp: sum1, status: tmp16, op: attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP], origin: attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], links: mapped };
+      const obj2 = { span_id: spanId, trace_id: traceId, data: attributes, description: getSpanJSON.name, parent_span_id: parentSpanId, start_timestamp: sum, timestamp: sum1, status: tmp16, op: attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_OP], origin: attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], links: mapped };
       if ("parentSpanId" in getSpanJSON) {
         parentSpanId = getSpanJSON.parentSpanId;
       } else if ("parentSpanContext" in getSpanJSON) {
@@ -127,7 +127,7 @@ function spanToJSON(getSpanJSON) {
       mapped = undefined;
       if (links) {
         if (links.length > 0) {
-          mapped = links.map(f83907);
+          mapped = links.map(f84171);
         }
       }
       return obj2;
@@ -173,7 +173,7 @@ export const convertSpanLinksForEnvelope = function convertSpanLinksForEnvelope(
   let mapped;
   if (_links) {
     if (_links.length > 0) {
-      mapped = _links.map(f83907);
+      mapped = _links.map(f84171);
     }
   }
   return mapped;

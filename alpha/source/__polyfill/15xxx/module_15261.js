@@ -1,14 +1,47 @@
 // Module ID: 15261
 // Function ID: 15262
-// Dependencies: [15209, 15210]
+// Dependencies: [15241, 15262]
 
 // Module 15261
-import _mod15209 from "module_15209" /* 15209 */;
-import _mod15210 from "module_15210" /* 15210 */;
+import _mod15241 from "module_15241" /* 15241 */;
+import _mod15262 from "module_15262" /* 15262 */;
 
-const f69465 = () => 42 !== Object.defineProperty(() => {
+let tmp4;
+let tmp = _mod15241.process && _mod15241.process.versions;
+if (!tmp) {
+  tmp = _mod15241.Deno && _mod15241.Deno.version;
+  _mod15241.Deno && _mod15241.Deno.version;
+}
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
+  }
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod15262;
+if (match1) {
+  const str3 = _mod15262;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod15262;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod15209 && _mod15210(f69465);
-
-export default _mod15209 && _mod15210(f69465);
+export default tmp3;

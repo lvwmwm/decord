@@ -1,28 +1,28 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11354
+// Function ID: 11355
 // Name: MicrophoneSpotIllustration
-// Dependencies: [19, 21, 11335, 11336, 11337, 558, 576, 6493, 5088, 2]
+// Dependencies: [19, 21, 11355, 11356, 11357, 558, 576, 6495, 5091, 2]
 
-// Module 11334 (MicrophoneSpotIllustration)
+// Module 11354 (MicrophoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import react_native from "react-native" /* 6493 */;
-import _modDef11335 from "module_11335" /* 11335 */;
-import _modDef11336 from "module_11336" /* 11336 */;
-import _modDef11337 from "module_11337" /* 11337 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import react_native from "react-native" /* 6495 */;
+import _modDef11355 from "module_11355" /* 11355 */;
+import _modDef11356 from "module_11356" /* 11356 */;
+import _modDef11357 from "module_11357" /* 11357 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef11335 };
+let obj2 = { uri: _modDef11355 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef11336 };
+let obj3 = { uri: _modDef11356 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef11337 };
-({ uri: _modDef11337 });
+obj[3] = { uri: _modDef11357 };
+({ uri: _modDef11357 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MicrophoneSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

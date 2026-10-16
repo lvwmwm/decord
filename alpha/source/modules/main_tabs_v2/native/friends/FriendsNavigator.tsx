@@ -1,23 +1,23 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17822
+// Function ID: 17823
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 9565, 5151, 587, 558, 576, 1126, 9524, 9518, 13182, 7413, 6908, 17789, 17795, 17798, 17799, 17800, 17811, 17812, 17813, 17815, 17818, 17819, 5028, 1631, 4883, 2]
+// Dependencies: [109, 19, 17, 21, 9581, 5153, 587, 558, 576, 1128, 9540, 9534, 13208, 7415, 6910, 17823, 17829, 17832, 17833, 17834, 17845, 17846, 17847, 17849, 17852, 17853, 5031, 1633, 4886, 2]
 
-// Module 17788 (FriendsNavigator)
+// Module 17822 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5028 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9524 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13182 */;
+import intl10 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5031 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9540 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13208 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9565 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import NativeStackView from "NativeStackView" /* 9581 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(4883);
+const native = tmp(4886);
 let closure_3 = ["children"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -50,7 +50,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reques
   const cResult = obj.c(3);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl10.t["3D5yo/"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -61,7 +61,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reques
     const obj2 = { isModal: true, children: metroImportDefault(HeaderIconButton, obj3) };
     obj3 = { source: AssetRegistryDefault, onPress, accessibilityLabel: first };
     const tmp9 = PressableNavigatorButtonWrapperDefault;
-    HeaderIconButton = tmp(9518).HeaderIconButton;
+    HeaderIconButton = tmp(9534).HeaderIconButton;
     const tmp10 = metroImportDefault(tmp9, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;
@@ -125,7 +125,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(6908);
+  const tmpResult = tmp(6910);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === accessibilityNativeStackOptions) {
     let tmp9;
@@ -190,8 +190,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen = closure_9.Screen;
-      obj4 = { title: intl.string(tmp(1126).t.jD1qzM) };
-      intl = tmp(1126).intl;
+      obj4 = { title: intl.string(tmp(1128).t.jD1qzM) };
+      intl = tmp(1128).intl;
       const tmp17 = closure_7(Screen, obj3);
       cResult[6] = tmp17;
       tmp14 = tmp17;
@@ -208,8 +208,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen2 = closure_9.Screen;
-      obj6 = { title: intl2.string(tmp(1126).t["3hF1W4"]) };
-      intl2 = tmp(1126).intl;
+      obj6 = { title: intl2.string(tmp(1128).t["3hF1W4"]) };
+      intl2 = tmp(1128).intl;
       const tmp21 = closure_7(Screen2, obj5);
       cResult[7] = tmp21;
       tmp18 = tmp21;
@@ -226,8 +226,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen3 = closure_9.Screen;
-      obj8 = { title: intl3.string(tmp(1126).t.w5uwoI) };
-      intl3 = tmp(1126).intl;
+      obj8 = { title: intl3.string(tmp(1128).t.w5uwoI) };
+      intl3 = tmp(1128).intl;
       const tmp25 = closure_7(Screen3, obj7);
       cResult[8] = tmp25;
       tmp22 = tmp25;
@@ -244,8 +244,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen4 = closure_9.Screen;
-      obj10 = { title: intl4.string(tmp(1126).t.zIJnA6) };
-      intl4 = tmp(1126).intl;
+      obj10 = { title: intl4.string(tmp(1128).t.zIJnA6) };
+      intl4 = tmp(1128).intl;
       const tmp29 = closure_7(Screen4, obj9);
       cResult[9] = tmp29;
       tmp26 = tmp29;
@@ -262,8 +262,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen5 = closure_9.Screen;
-      obj12 = { title: intl5.string(tmp(1126).t.QzVsOs) };
-      intl5 = tmp(1126).intl;
+      obj12 = { title: intl5.string(tmp(1128).t.QzVsOs) };
+      intl5 = tmp(1128).intl;
       const tmp33 = closure_7(Screen5, obj11);
       cResult[10] = tmp33;
       tmp30 = tmp33;
@@ -280,8 +280,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen6 = closure_9.Screen;
-      obj14 = { title: intl6.string(tmp(1126).t["1uAmCw"]) };
-      intl6 = tmp(1126).intl;
+      obj14 = { title: intl6.string(tmp(1128).t["1uAmCw"]) };
+      intl6 = tmp(1128).intl;
       const tmp37 = closure_7(Screen6, obj13);
       cResult[11] = tmp37;
       tmp34 = tmp37;
@@ -298,8 +298,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen7 = closure_9.Screen;
-      obj16 = { title: intl7.string(tmp(1126).t.XT4hVl) };
-      intl7 = tmp(1126).intl;
+      obj16 = { title: intl7.string(tmp(1128).t.XT4hVl) };
+      intl7 = tmp(1128).intl;
       const tmp41 = closure_7(Screen7, obj15);
       cResult[12] = tmp41;
       tmp38 = tmp41;
@@ -347,8 +347,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen8 = closure_9.Screen;
-      obj19 = { title: intl8.string(tmp(1126).t.oHVeHc) };
-      intl8 = tmp(1126).intl;
+      obj19 = { title: intl8.string(tmp(1128).t.oHVeHc) };
+      intl8 = tmp(1128).intl;
       const tmp49 = closure_7(Screen8, obj18);
       cResult[14] = tmp49;
       tmp46 = tmp49;
@@ -365,8 +365,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
             }
       };
       const Screen9 = closure_9.Screen;
-      obj21 = { title: intl9.string(tmp(1126).t.tFY5Zb) };
-      intl9 = tmp(1126).intl;
+      obj21 = { title: intl9.string(tmp(1128).t.tFY5Zb) };
+      intl9 = tmp(1128).intl;
       const tmp53 = closure_7(Screen9, obj20);
       cResult[15] = tmp53;
       tmp50 = tmp53;

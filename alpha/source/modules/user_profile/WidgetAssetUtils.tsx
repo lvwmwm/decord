@@ -1,12 +1,12 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14079
+// Function ID: 14080
 // Name: WidgetAssetUtils
-// Dependencies: [1085, 1415, 2]
+// Dependencies: [1087, 1417, 2]
 // Exports: getWidgetAssetURL
 
-// Module 14047 (WidgetAssetUtils)
-import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
+// Module 14079 (WidgetAssetUtils)
+import Constants from "Constants" /* 1087 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
 import size from "module_2" /* 2 */;
 
 let CDN_HOST;

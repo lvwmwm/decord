@@ -1,21 +1,21 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11961
+// Function ID: 11962
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11074, 21, 5151, 587, 558, 576, 5115, 1126, 5147, 5439, 7061, 2]
+// Dependencies: [19, 17, 11089, 21, 5153, 587, 558, 576, 5118, 1128, 5149, 5441, 7063, 2]
 
-// Module 11937 (GroupDMNitroCapInfoActionSheet)
+// Module 11961 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
-import GroupDMConstants from "GroupDMConstants" /* 11074 */;
+import intl4 from "intl" /* 1128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7063 */;
+import GroupDMConstants from "GroupDMConstants" /* 11089 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   ({ container, title } = tmp4);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.u1ilug);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -84,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   const body = tmp4.body;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { number };
     const formatToPlainStringResult = intl2.formatToPlainString(intl4.t["mr27w/"], obj3);
     cResult[4] = formatToPlainStringResult;
@@ -103,8 +103,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { text: intl3.string(intl4.t.cpT0Cq), variant: "secondary", onPress: first, grow: true };
-    const Button = tmp(5439).Button;
-    intl3 = tmp(1126).intl;
+    const Button = tmp(5441).Button;
+    intl3 = tmp(1128).intl;
     const tmp19 = metroRequire(Button, obj5);
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   const obj7 = { showGradient: true, children: metroImportDefault(View, obj8) };
   obj8 = { style: container, children: items };
   items = [tmp8, tmp14, tmp20];
-  BottomSheet = tmp(7061).BottomSheet;
+  BottomSheet = tmp(7063).BottomSheet;
   const tmp25 = metroRequire(BottomSheet, obj7);
   cResult[10] = tmp4.container;
   cResult[11] = tmp8;

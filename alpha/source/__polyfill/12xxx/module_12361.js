@@ -1,48 +1,156 @@
 // Module ID: 12361
 // Function ID: 12362
-// Dependencies: [12273, 12276, 12275, 12281]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: [12362, 12342, 12363, 12322, 12326, 12298, 12355]
+// Exports: createTransport
 
 // Module 12361
-import _mod12273 from "module_12273" /* 12273 */;
-import _mod12276 from "module_12276" /* 12276 */;
+import _mod12322 from "module_12322" /* 12322 */;
+import _mod12326 from "module_12326" /* 12326 */;
+import _mod12342 from "module_12342" /* 12342 */;
+import _mod12355 from "module_12355" /* 12355 */;
+import _slicedToArray from "_slicedToArray" /* 12363 */;
 
-let tmp;
-const _mod12275 = tmp(12275);
-function instrumentConsole() {
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  if ("console" in _mod12276.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod12275.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      let closure_0 = item;
-      let tmp = closure_0;
-      let tmp2 = closure_1;
-      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
-        const tmpResult = tmp(tmp2[3]);
-        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod12275.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            const obj = { args: items, level };
-            const obj2 = level(closure_2_1[0]);
-            obj2.triggerHandlers("console", obj);
-            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
-            const tmp = level;
-            const tmp2 = closure_2_1;
-            if (obj3) {
-              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+
+export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
+export const createTransport = function createTransport(bufferSize, arg1) {
+  _require = bufferSize;
+  dependencyMap = arg1;
+  let promiseBuffer = arg2;
+  if (arg2 === undefined) {
+    let tmp2 = _require;
+    let tmp4 = require("module_12362");
+    let num = bufferSize.bufferSize;
+    const makePromiseBuffer = tmp4.makePromiseBuffer;
+    if (!num) {
+      num = 64;
+    }
+    promiseBuffer = makePromiseBuffer(num);
+  }
+  let closure_3 = {};
+  let obj = {
+    send(arg0) {
+      const items = [];
+      let tmp = bufferSize;
+      const tmp2 = closure_1;
+      let obj = bufferSize(closure_1[1]);
+      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+        const obj = _mod12342;
+        const result = obj.envelopeItemTypeToDataCategory(arg1);
+        const obj2 = _slicedToArray;
+        if (obj2.isRateLimited(closure_3, result)) {
+          let tmp4;
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp6;
+            if (Array.isArray(arg0)) {
+              tmp6 = arg0[1];
             }
-          };
+            tmp4 = tmp6;
+          }
+          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
+        } else {
+          items.push(arg0);
+        }
+      });
+      if (0 === items.length) {
+        let tmpResult = tmp(tmp2[3]);
+        return tmpResult.resolvedSyncPromise({});
+      } else {
+        let tmpResult2 = tmp(tmp2[1]);
+        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
+        function recordEnvelopeLoss(arg0) {
+
+        }
+        let tmp4 = recordEnvelopeLoss;
+        const addResult = recordEnvelopeLoss.add(() => {
+          let obj2;
+          let obj = { body: obj2.serializeEnvelope(closure_1) };
+          obj2 = _mod12342;
+          const promise = closure_1(obj);
+          return promise.then((statusCode) => {
+            let DEBUG_BUILD = undefined !== statusCode.statusCode;
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+            }
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
+            }
+            if (DEBUG_BUILD) {
+              const logger = items(closure_1[5]).logger;
+              const _HermesInternal = HermesInternal;
+              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
+            }
+            const obj = items(closure_1[2]);
+            closure_3 = obj.updateRateLimits(closure_3, statusCode);
+            return statusCode;
+          }, (arg0) => {
+            let recordDroppedEvent;
+            if (typeof recordEnvelopeLoss === "function") {
+              let tmp = arg0;
+              const network_error = "network_error";
+              let obj = recordDroppedEvent(closure_1[1]);
+              let tmp4 = closure_1_1;
+              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              throw arg0;
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          });
+        });
+        return addResult.then((result) => result, (arg0) => {
+          if (arg0 instanceof _mod12355.SentryError) {
+            if (_mod12326.DEBUG_BUILD) {
+              const logger = tmp(12298).logger;
+              logger.error("Skipped sending event because buffer is full.");
+            }
+            if (typeof recordEnvelopeLoss === "function") {
+              const queue_overflow = "queue_overflow";
+              const tmpResult = _mod12342;
+              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              const tmpResult2 = _mod12322;
+              return tmpResult2.resolvedSyncPromise({});
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw arg0;
+          }
         });
       }
-    });
-  }
-}
-
-export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
-  const obj = _mod12273;
-  obj.addHandler("console", arg0);
-  const obj2 = _mod12273;
-  obj2.maybeInstrument("console", instrumentConsole);
+    },
+    flush(arg0) {
+      return promiseBuffer.drain(arg0);
+    }
+  };
+  return obj;
 };

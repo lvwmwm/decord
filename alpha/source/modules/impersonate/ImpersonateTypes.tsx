@@ -1,9 +1,9 @@
-// Module ID: 2124
-// Function ID: 2125
+// Module ID: 2127
+// Function ID: 2128
 // Name: ImpersonateTypes
 // Dependencies: [2]
 
-// Module 2124 (ImpersonateTypes)
+// Module 2127 (ImpersonateTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/impersonate/ImpersonateTypes.tsx");

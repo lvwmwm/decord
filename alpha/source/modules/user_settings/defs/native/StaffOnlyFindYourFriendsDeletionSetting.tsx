@@ -1,25 +1,25 @@
-// Module ID: 15774
-// Function ID: 15775
+// Module ID: 15807
+// Function ID: 15808
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8210, 21, 1267, 1272, 558, 576, 4789, 13245, 1349, 4865, 10991, 15775, 2]
+// Dependencies: [5, 17, 8213, 21, 1269, 1274, 558, 576, 4792, 13271, 1351, 4868, 11006, 15808, 2]
 
-// Module 15774 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15807 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15775 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1267 from "module_1267" /* 1267 */;
+import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4789);
+const _slicedToArray = tmp(4792);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -126,7 +126,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let closure_6 = module_1267.createWithEqualityFn(() => ({ isLoading: false }));
+let closure_6 = module_1269.createWithEqualityFn(() => ({ isLoading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFindYourFriendsDeletionIsLoading() {
   let first;

@@ -1,21 +1,21 @@
-// Module ID: 13922
-// Function ID: 13923
+// Module ID: 13954
+// Function ID: 13955
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4816, 1390, 21, 5151, 587, 9857, 504, 1126, 6150, 7237, 6949, 5458, 5147, 6513, 5018, 2]
+// Dependencies: [5, 32, 19, 17, 4819, 1392, 21, 5153, 587, 9873, 504, 1128, 6152, 7239, 6951, 5460, 5149, 6515, 5021, 2]
 // Exports: default
 
-// Module 13922 (AddFriendNicknameModal)
+// Module 13954 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap;
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(9857)();
+  _slicedToArray = showUserProfile(9873)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));
@@ -188,11 +188,11 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp5Result = get_initialized;
   const stateFromStores1 = tmp5Result.useStateFromStores(items1, () => UserStore.getUser(require));
   if (null == stateFromStores) {
-    let intl2 = tmp5(1126).intl;
-    stringResult = intl2.string(tmp5(1126).t.BGYkaH);
+    let intl2 = tmp5(1128).intl;
+    stringResult = intl2.string(tmp5(1128).t.BGYkaH);
   } else {
-    let intl = tmp5(1126).intl;
-    stringResult = intl.string(tmp5(1126).t["8pOYUE"]);
+    let intl = tmp5(1128).intl;
+    stringResult = intl.string(tmp5(1128).t["8pOYUE"]);
   }
   const items2 = [showUserProfile];
   callback1 = obj.useCallback(() => {
@@ -205,28 +205,28 @@ export default function AddFriendNicknameModal(arg0) {
   let obj3 = { style: tmp.container, children: closure_9(tmp3Result, obj4) };
   obj4 = { children: closure_10(tmp3Result3, obj5) };
   obj5 = {
-    confirmText: intl3.string(tmp5(1126).t["R3BPH+"]),
+    confirmText: intl3.string(tmp5(1128).t["R3BPH+"]),
     onConfirm: function handleSubmit() {
       return obj(...arguments);
     },
-    cancelText: intl4.string(tmp5(1126).t["ETE/oC"]),
+    cancelText: intl4.string(tmp5(1128).t["ETE/oC"]),
     onCancel: callback1,
     children: items3
   };
-  tmp3Result = tmp3(6949);
-  tmp3Result3 = tmp3(5458);
-  intl3 = tmp5(1126).intl;
-  intl4 = tmp5(1126).intl;
+  tmp3Result = tmp3(6951);
+  tmp3Result3 = tmp3(5460);
+  intl3 = tmp5(1128).intl;
+  intl4 = tmp5(1128).intl;
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items3 = [closure_9(tmp5(5147).Text, obj6), , ];
-  let obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl5.string(tmp5(1126).t["NdQ+lP"]) };
-  const Text = tmp5(5147).Text;
-  intl5 = tmp5(1126).intl;
+  items3 = [closure_9(tmp5(5149).Text, obj6), , ];
+  let obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl5.string(tmp5(1128).t["NdQ+lP"]) };
+  const Text = tmp5(5149).Text;
+  intl5 = tmp5(1128).intl;
   items3[1] = closure_9(Text, obj7);
-  let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1126).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
-  const TextField = tmp5(6513).TextField;
-  intl6 = tmp5(1126).intl;
-  tmp3Result4 = tmp3(5018);
+  let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1128).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
+  const TextField = tmp5(6515).TextField;
+  intl6 = tmp5(1128).intl;
+  tmp3Result4 = tmp3(5021);
   items3[2] = closure_9(TextField, obj8);
   return closure_9(callback1, obj3);
 };

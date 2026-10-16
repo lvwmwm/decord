@@ -1,21 +1,21 @@
-// Module ID: 13822
-// Function ID: 13823
+// Module ID: 13848
+// Function ID: 13849
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 13823, 587, 9234, 5151, 558, 576, 13824, 1126, 4879, 5147, 8762, 2]
+// Dependencies: [19, 17, 21, 13849, 587, 9247, 5153, 558, 576, 13850, 1128, 4882, 5149, 8770, 2]
 
-// Module 13822 (YouScreenNavIcon)
+// Module 13848 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import mergeProps from "mergeProps" /* 4879 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import ClipView from "ClipView" /* 9234 */;
-import getIconSize from "getIconSize" /* 13823 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13824 */;
+import intl2 from "intl" /* 1128 */;
+import mergeProps from "mergeProps" /* 4882 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import ClipView from "ClipView" /* 9247 */;
+import getIconSize from "getIconSize" /* 13849 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13850 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp19;
         if (undefined !== showRedDot && showRedDot) {
           const obj3 = { text: intl.string(intl2.t.y2b7CA) };
-          intl = tmp(1126).intl;
+          intl = tmp(1128).intl;
           tmp19 = obj3;
         }
         cResult[6] = undefined !== showRedDot && showRedDot;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, children: items };
-          const PressableScale = tmp(8762).PressableScale;
+          const PressableScale = tmp(8770).PressableScale;
           items = [tmp11, tmp23];
           const tmp30 = hasOwnProperty(PressableScale, obj4);
           cResult[14] = accessibilityLabel;
@@ -195,15 +195,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp12;
   if (showRedDot) {
     const obj6 = { text: intl.string(intl2.t.y2b7CA) };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     tmp12 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, children: items1 };
-  const PressableScale = tmp(8762).PressableScale;
+  const PressableScale = tmp(8770).PressableScale;
   items1 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5147).Text;
+  const Text = tmp(5149).Text;
   const tmp13 = hasOwnProperty;
   if (label == null) {
     label = accessibilityLabel;

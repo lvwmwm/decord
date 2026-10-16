@@ -1,14 +1,14 @@
-// Module ID: 7071
-// Function ID: 7072
+// Module ID: 7073
+// Function ID: 7074
 // Name: ConnectionCard
-// Dependencies: [19, 7010, 21, 558, 576, 7072, 7090, 2]
+// Dependencies: [19, 7012, 21, 558, 576, 7074, 7092, 2]
 
-// Module 7071 (ConnectionCard)
+// Module 7073 (ConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7010 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7072 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7090 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7012 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7074 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7092 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

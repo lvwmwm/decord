@@ -1,27 +1,26 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 12180
+// Function ID: 12181
 // Name: conjurePlanFormat
-// Dependencies: [1998, 2]
-// Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementName
+// Dependencies: [2000, 2]
+// Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementLabel
 
-// Module 12156 (conjurePlanFormat)
-import Server from "Server" /* 1998 */;
+// Module 12180 (conjurePlanFormat)
+import Server from "Server" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanFormat.tsx");
 
-export const formatConjurePlanRequirementName = function formatConjurePlanRequirementName(str) {
+export const formatConjurePlanRequirementLabel = function formatConjurePlanRequirementLabel(str) {
   const parts = str.split("_");
-  const mapped = parts.map((arr) => {
-    let sum = arr;
-    if (0 !== arr.length) {
-      const first = arr[0];
-      const str = arr.slice(1);
-      sum = first + str.toLowerCase();
-    }
-    return sum;
-  });
-  return mapped.join(" ");
+  str = parts.join(" ");
+  const formatted = str.toLowerCase();
+  let sum = formatted;
+  if (0 !== formatted.length) {
+    const str2 = formatted[0];
+    const formatted1 = str2.toUpperCase();
+    sum = formatted1 + formatted.slice(1);
+  }
+  return sum;
 };
 export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(type) {
   let str = "\u21EA /";

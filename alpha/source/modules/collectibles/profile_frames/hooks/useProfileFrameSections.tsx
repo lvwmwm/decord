@@ -1,16 +1,16 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15582
+// Function ID: 15583
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7480, 7496, 558, 576, 573, 7492, 1126, 14139, 2]
+// Dependencies: [32, 19, 7482, 7498, 558, 576, 573, 7494, 1128, 14171, 2]
 
-// Module 15546 (useProfileFrameSections)
+// Module 15582 (useProfileFrameSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7492 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14139 */;
+import intl4 from "intl" /* 1128 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7494 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7496 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7482 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,8 +80,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       }
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp2(1126).intl;
-        const stringResult = intl2.string(stateFromStores(1126).t["9eZ4aO"]);
+        const intl2 = tmp2(1128).intl;
+        const stringResult = intl2.string(stateFromStores(1128).t["9eZ4aO"]);
         cResult[15] = stringResult;
         tmp28 = stringResult;
       } else {
@@ -102,8 +102,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
           const _Symbol3 = Symbol;
           let preview = tmp15.preview;
           if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp2(1126).intl;
-            const stringResult1 = intl3.string(stateFromStores(1126).t["1vbbee"]);
+            const intl3 = tmp2(1128).intl;
+            const stringResult1 = intl3.string(stateFromStores(1128).t["1vbbee"]);
             cResult[22] = stringResult1;
             tmp33 = stringResult1;
           } else {
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       tmp30 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7492);
+  const tmp2Result4 = stateFromStores(7494);
   const profileFrames = tmp2Result4.getProfileFrames(stateFromStores, tmp13);
   if (cResult[11] === tmp14) {
     let tmp19;
@@ -159,8 +159,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     const reduced = profileFrames.reduce(tmp19, obj5);
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp2(1126).intl;
-      const stringResult2 = intl.string(stateFromStores(1126).t.TiLCgw);
+      const intl = tmp2(1128).intl;
+      const stringResult2 = intl.string(stateFromStores(1128).t.TiLCgw);
       cResult[14] = stringResult2;
       tmp21 = stringResult2;
     } else {
@@ -265,7 +265,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14139)(tmp5, obj.PREVIEW);
+  return first(14171)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrameSections.tsx");
 

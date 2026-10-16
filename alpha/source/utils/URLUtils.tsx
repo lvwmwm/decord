@@ -1,15 +1,15 @@
-// Module ID: 1384
-// Function ID: 1385
+// Module ID: 1386
+// Function ID: 1387
 // Name: URLUtils
-// Dependencies: [1085, 1385, 1386, 1387, 1384, 12, 2]
+// Dependencies: [1087, 1387, 1388, 1389, 1386, 12, 2]
 
-// Module 1384 (URLUtils)
+// Module 1386 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1085 */;
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import urlParseAll from "urlParse" /* 1387 */;
-import ip from "ip" /* 1385 */;
+import Constants from "Constants" /* 1087 */;
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import urlParseAll from "urlParse" /* 1389 */;
+import ip from "ip" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 function isDiscordDirectAssetUrl(shareURI) {
@@ -172,14 +172,14 @@ let obj = {
   isDiscordProtocol(protocol) {
     return null != protocol && "discord:" === protocol;
   },
-  isDiscordUrl(ctaLink, arg1) {
+  isDiscordUrl(customInstallUrl, arg1) {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
     }
-    if (null != ctaLink) {
+    if (null != customInstallUrl) {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(ctaLink);
+      const toURLSafeResult = obj.toURLSafe(customInstallUrl);
       let hostname;
       if (toURLSafeResult != null) {
         hostname = toURLSafeResult.hostname;

@@ -1,21 +1,21 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16295
+// Function ID: 16296
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5973, 2069, 502, 2065, 14682, 1085, 3, 7028, 12, 2091, 584, 1295, 16263, 2]
+// Dependencies: [32, 5, 5975, 2072, 502, 2068, 14714, 1087, 3, 7030, 12, 2094, 584, 1297, 16296, 2]
 
-// Module 16262 (MessagePreviewManager)
+// Module 16295 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import RemoteFetchData from "RemoteFetchData" /* 16263 */;
+import Constants from "Constants" /* 1087 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import RemoteFetchData from "RemoteFetchData" /* 16296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14682 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14714 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, c7, c8, closure_2, importDefault, set;

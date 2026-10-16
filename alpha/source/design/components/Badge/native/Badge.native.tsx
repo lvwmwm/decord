@@ -1,17 +1,17 @@
-// Module ID: 12991
-// Function ID: 12992
+// Module ID: 13017
+// Function ID: 13018
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1126, 587, 5151, 558, 576, 12992, 4886, 5147, 2]
+// Dependencies: [17, 21, 1128, 587, 5153, 558, 576, 13018, 4889, 5149, 2]
 
-// Module 12991 (Badge/Badge)
+// Module 13017 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 4886 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import BadgeShared from "BadgeShared" /* 12992 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 4889 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import BadgeShared from "BadgeShared" /* 13018 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) 
   const cResult = obj.c(13);
   ({ type, variant, icon } = arg0);
   if (undefined === variant) {
-    variant = tmp(12992).DEFAULT_BADGE_VARIANT;
+    variant = tmp(13018).DEFAULT_BADGE_VARIANT;
   }
   const tmp4 = closure_7(variant);
   const tmpResult = useBadgeTextVariant;
@@ -76,17 +76,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) 
   if (cResult[0] !== type) {
     let text;
     if ("new" === type) {
-      const intl4 = tmp(1126).intl;
-      text = intl4.string(tmp(1126).t.y2b7CA);
+      const intl4 = tmp(1128).intl;
+      text = intl4.string(tmp(1128).t.y2b7CA);
     } else if ("beta" === type) {
-      const intl3 = tmp(1126).intl;
-      text = intl3.string(tmp(1126).t.oW0eUd);
+      const intl3 = tmp(1128).intl;
+      text = intl3.string(tmp(1128).t.oW0eUd);
     } else if ("early_access" === type) {
-      const intl2 = tmp(1126).intl;
-      text = intl2.string(tmp(1126).t.EYxi0o);
+      const intl2 = tmp(1128).intl;
+      text = intl2.string(tmp(1128).t.EYxi0o);
     } else if ("free_trial" === type) {
-      const intl = tmp(1126).intl;
-      text = intl.string(tmp(1126).t.IBYG5U);
+      const intl = tmp(1128).intl;
+      text = intl.string(tmp(1128).t.IBYG5U);
     } else {
       text = type.text;
     }
@@ -157,17 +157,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) 
   const obj = useBadgeTextVariant;
   const badgeTextVariant = obj.useBadgeTextVariant();
   if ("new" === type) {
-    const intl4 = tmp4(1126).intl;
-    text = intl4.string(tmp4(1126).t.y2b7CA);
+    const intl4 = tmp4(1128).intl;
+    text = intl4.string(tmp4(1128).t.y2b7CA);
   } else if ("beta" === type) {
-    const intl3 = tmp4(1126).intl;
-    text = intl3.string(tmp4(1126).t.oW0eUd);
+    const intl3 = tmp4(1128).intl;
+    text = intl3.string(tmp4(1128).t.oW0eUd);
   } else if ("early_access" === type) {
-    const intl2 = tmp4(1126).intl;
-    text = intl2.string(tmp4(1126).t.EYxi0o);
+    const intl2 = tmp4(1128).intl;
+    text = intl2.string(tmp4(1128).t.EYxi0o);
   } else if ("free_trial" === type) {
-    const intl = tmp4(1126).intl;
-    text = intl.string(tmp4(1126).t.IBYG5U);
+    const intl = tmp4(1128).intl;
+    text = intl.string(tmp4(1128).t.IBYG5U);
   } else {
     text = type.text;
   }

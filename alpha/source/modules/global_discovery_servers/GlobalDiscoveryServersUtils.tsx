@@ -1,17 +1,17 @@
-// Module ID: 18928
-// Function ID: 18929
+// Module ID: 18970
+// Function ID: 18971
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2129, 8857, 1085, 1126, 1386, 7273, 1265, 1279, 2]
+// Dependencies: [5, 2132, 8865, 1087, 1128, 1388, 7275, 1267, 1281, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 18928 (GlobalDiscoveryServersUtils)
-import Constants from "Constants" /* 1085 */;
-import intl8 from "intl" /* 1126 */;
-import v1 from "v1" /* 1279 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
+// Module 18970 (GlobalDiscoveryServersUtils)
+import Constants from "Constants" /* 1087 */;
+import intl8 from "intl" /* 1128 */;
+import v1 from "v1" /* 1281 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8857 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8865 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -259,7 +259,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "toCharArray$esjava$1", discoverySplash: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003046024251525493, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "toCharArray$esjava$1", discoverySplash: false, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

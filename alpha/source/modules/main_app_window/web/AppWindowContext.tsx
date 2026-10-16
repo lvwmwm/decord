@@ -1,19 +1,19 @@
-// Module ID: 6352
-// Function ID: 6353
+// Module ID: 6354
+// Function ID: 6355
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1085, 21, 1121, 6288, 558, 576, 2034, 6353, 2]
+// Dependencies: [32, 19, 1087, 21, 1123, 6290, 558, 576, 2037, 6355, 2]
 // Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6352 (AppWindowContext)
+// Module 6354 (AppWindowContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import DOMUtils from "DOMUtils" /* 2034 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 6353 */;
+import Constants from "Constants" /* 1087 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import DOMUtils from "DOMUtils" /* 2037 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WindowIdUtils_mod from "WindowIdUtils" /* 6288 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 6290 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
         class E {
           constructor() {
             result = closure_1_6.set(closure_1, closure_3);
-            handleUnload = function handleUnload() { /* body not rendered: F140453 */ };
+            handleUnload = function handleUnload() { /* body not rendered: F140909 */ };
             listener = handleUnload.addEventListener("unload", handleUnload);
-            return () => { /* body not rendered: F140454 */ };
+            return () => { /* body not rendered: F140910 */ };
           }
         }
         const items = [tmp11, renderWindow, windowId];

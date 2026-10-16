@@ -1,20 +1,20 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10944
+// Function ID: 10945
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 1497, 1631, 9133, 6949, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 587, 558, 576, 1499, 1633, 9141, 6951, 2]
 
-// Module 10929 (OAuth2AuthorizeContent)
+// Module 10944 (OAuth2AuthorizeContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6949 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 9133 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6951 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 9141 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

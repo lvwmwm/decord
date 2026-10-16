@@ -1,26 +1,26 @@
-// Module ID: 5147
-// Function ID: 5148
+// Module ID: 5149
+// Function ID: 5150
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1096, 21, 4906, 587, 12, 5148, 5149, 5151, 558, 5156, 5157, 5160, 1383, 5161, 299, 576, 2]
+// Dependencies: [109, 19, 17, 1098, 21, 4909, 587, 12, 5150, 5151, 5153, 558, 5158, 5159, 5162, 1385, 5163, 299, 576, 2]
 
-// Module 5147 (Text/Text)
+// Module 5149 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import TextVariants from "TextVariants" /* 5148 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5156 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5157 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5160 */;
-import _modDef5161 from "module_5161" /* 5161 */;
+import Constants from "Constants" /* 1098 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import TextVariants from "TextVariants" /* 5150 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5158 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5159 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5162 */;
+import _modDef5163 from "module_5163" /* 5163 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5149 */;
-import createStyles from "createStyles" /* 5151 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -179,7 +179,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Text(variant
     StringResult = undefined;
     tmp2Result = tmp2(plainTextEligibility, closure_4);
     const tmp26 = jsx;
-    const tmp28 = _modDef5161;
+    const tmp28 = _modDef5163;
     if (null != fontWeight) {
       const _String = String;
       StringResult = String(fontWeight);
@@ -283,7 +283,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Text(variant
     StringResult = undefined;
     tmp21 = _objectWithoutProperties(plainTextEligibility, closure_5);
     const tmp22 = jsx;
-    const tmp24 = _modDef5161;
+    const tmp24 = _modDef5163;
     if (null != fontWeight) {
       const _String = String;
       StringResult = String(fontWeight);

@@ -1,101 +1,149 @@
 // Module ID: 6626
 // Function ID: 6627
-// Dependencies: [19, 6576, 6563]
-// Exports: runCallback, touchEventTypeToCallbackType, useMemoizedGestureCallbacks
+// Dependencies: [32, 19, 6624, 6614, 6627, 6600, 6615, 6562]
+// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 6626
 import react from "react" /* 19 */;
-import TouchEventType from "TouchEventType" /* 6563 */;
-import CALLBACK_TYPE from "CALLBACK_TYPE" /* 6576 */;
+import Reanimated2 from "Reanimated" /* 6600 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 6614 */;
+import allowedNativeProps2 from "allowedNativeProps" /* 6615 */;
+import _mod6624 from "module_6624" /* 6624 */;
+import _mod6627 from "module_6627" /* 6627 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
 const useMemo = react.useMemo;
-function getHandler(arg0, onBegin) {
-  if (CALLBACK_TYPE.CALLBACK_TYPE.BEGAN === arg0) {
-    return onBegin.onBegin;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.START === arg0) {
-    return onBegin.onActivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.UPDATE === arg0) {
-    return onBegin.onUpdate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.END === arg0) {
-    return onBegin.onDeactivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.FINALIZE === arg0) {
-    return onBegin.onFinalize;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
-    return onBegin.onTouchesDown;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
-    return onBegin.onTouchesMove;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP === arg0) {
-    return onBegin.onTouchesUp;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
-    return onBegin.onTouchesCancel;
-  }
+const map = new Map();
+function DEFAULT_PROPS_TRANSFORMER(arg0) {
+  return arg0;
 }
-let obj = { CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-getHandler.__closure = obj;
-getHandler.__workletHash = 8647314057396;
-getHandler.__initData = { code: "function getHandler_Pnpm_eventHandlersUtilsTs1(type,callbacks){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return callbacks.onBegin;case CALLBACK_TYPE.START:return callbacks.onActivate;case CALLBACK_TYPE.UPDATE:return callbacks.onUpdate;case CALLBACK_TYPE.END:return callbacks.onDeactivate;case CALLBACK_TYPE.FINALIZE:return callbacks.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return callbacks.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return callbacks.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return callbacks.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return callbacks.onTouchesCancel;}}" };
-function touchEventTypeToCallbackType(arg0) {
-  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN;
-  } else if (TouchEventType.TouchEventType.TOUCHES_MOVE === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE;
-  } else if (TouchEventType.TouchEventType.TOUCHES_UP === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP;
-  } else if (TouchEventType.TouchEventType.TOUCHES_CANCEL === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL;
+function isGestureEnabled(gestures) {
+  let someResult;
+  const obj = _mod6624;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    someResult = gestures.some(isGestureEnabled);
   } else {
-    return CALLBACK_TYPE.CALLBACK_TYPE.UNDEFINED;
+    const tmpResult = SHARED_VALUE_OFFSET;
+    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
   }
+  return someResult;
 }
-touchEventTypeToCallbackType.__closure = { TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-touchEventTypeToCallbackType.__workletHash = 2066229974382;
-touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_eventHandlersUtilsTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
-function runCallback(arg0, arg1, arg2) {
-  const tmp = getHandler(arg0, arg1);
-  if (tmp) {
-    tmp(arg2);
-  }
-}
-runCallback.__closure = { getHandler };
-runCallback.__workletHash = 9892811129293;
-runCallback.__initData = { code: "function runCallback_Pnpm_eventHandlersUtilsTs3(type,callbacks,event){const{getHandler}=this.__closure;const handler=getHandler(type,callbacks);if(!handler){return;}handler(event);}" };
-({ TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE });
 
-export const useMemoizedGestureCallbacks = function useMemoizedGestureCallbacks(disableReanimated) {
-  let closure_0 = disableReanimated;
-  const items = [, , , , , , , , ];
-  ({ onActivate: arr[0], onBegin: arr[1], onDeactivate: arr[2], onFinalize: arr[3], onTouchesCancel: arr[4], onTouchesDown: arr[5], onTouchesMove: arr[6], onTouchesUp: arr[7], onUpdate: arr[8] } = disableReanimated);
+export { isGestureEnabled };
+export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
+  useAnimated = useAnimated.useAnimated;
+  if (!useAnimated) {
+    const obj = _mod6627;
+    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
+  }
+  useAnimated.dispatchesAnimatedEvents = useAnimated;
+  if (useAnimated.dispatchesAnimatedEvents) {
+    useAnimated.disableReanimated = true;
+  }
+  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
+  if (result) {
+    const obj2 = SHARED_VALUE_OFFSET;
+    result = obj2.hasWorkletEventHandlers(useAnimated);
+  }
+  if (result) {
+    result = !useAnimated.dispatchesAnimatedEvents;
+  }
+  useAnimated.shouldUseReanimatedDetector = result;
+  const obj3 = _mod6627;
+  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
+};
+export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  let first;
+  let iter;
+  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
+  if (shouldUseReanimatedDetector) {
+    const obj = SHARED_VALUE_OFFSET;
+    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+  }
+  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
+  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
+  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
+  if (EMPTY_WHITE_LIST == null) {
+    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
+  }
+  const entries = Object.entries(shouldUseReanimatedDetector);
+  const tmp12 = entries[Symbol.iterator]();
+  while (tmp12 !== undefined) {
+    [first, iter] = tmp13;
+    let tmp17 = first;
+    let tmp19 = require;
+    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
+    if (!allowedNativeProps.has(first)) {
+      if (!EMPTY_WHITE_LIST.has(tmp17)) {
+        let PropsToFilter = tmp19(6615).PropsToFilter;
+        if (PropsToFilter.has(tmp17)) {
+          continue;
+        } else {
+          let _console = console;
+          let tmp19Result = tmp19(6562);
+          let _HermesInternal = HermesInternal;
+          let str = "";
+          let str2 = " is not a valid property for ";
+          let str3 = " and will be ignored.";
+          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
+        }
+        continue;
+      }
+      continue;
+    }
+    let Reanimated = tmp19(6600).Reanimated;
+    let isSharedValueResult;
+    if (Reanimated != null) {
+      isSharedValueResult = Reanimated.isSharedValue(iter);
+    }
+    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
+  }
+  return obj2;
+};
+export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(cResult, map, transformHoverProps) {
+  let closure_0 = cResult;
+  let tmp = map;
+  if (map === undefined) {
+    tmp = map;
+  }
+  let closure_1 = tmp;
+  let tmp2 = transformHoverProps;
+  if (transformHoverProps === undefined) {
+    tmp2 = DEFAULT_PROPS_TRANSFORMER;
+  }
+  let closure_2 = tmp2;
+  const items = [cResult, tmp, tmp2];
   return useMemo(() => {
     const obj = {};
-    if (onBegin.onBegin) {
-      obj.onBegin = onBegin.onBegin;
+    const merged = Object.assign(closure_0);
+    const item = closure_1.forEach((item, index) => {
+      if (index in obj) {
+        obj[item] = obj[index];
+        delete obj[tmp];
+      }
+    });
+    const tmp3 = closure_2(obj);
+    let useAnimated = tmp3.useAnimated;
+    if (!useAnimated) {
+      const obj2 = _mod6627;
+      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
     }
-    if (onBegin.onActivate) {
-      obj.onActivate = onBegin.onActivate;
+    tmp3.dispatchesAnimatedEvents = useAnimated;
+    if (tmp3.dispatchesAnimatedEvents) {
+      tmp3.disableReanimated = true;
     }
-    if (onBegin.onDeactivate) {
-      obj.onDeactivate = onBegin.onDeactivate;
+    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
+    if (result) {
+      const obj3 = SHARED_VALUE_OFFSET;
+      result = obj3.hasWorkletEventHandlers(tmp3);
     }
-    if (onBegin.onFinalize) {
-      obj.onFinalize = onBegin.onFinalize;
+    if (result) {
+      result = !tmp3.dispatchesAnimatedEvents;
     }
-    if (onBegin.onUpdate) {
-      obj.onUpdate = onBegin.onUpdate;
-    }
-    if (onBegin.onTouchesDown) {
-      obj.onTouchesDown = onBegin.onTouchesDown;
-    }
-    if (onBegin.onTouchesMove) {
-      obj.onTouchesMove = onBegin.onTouchesMove;
-    }
-    if (onBegin.onTouchesUp) {
-      obj.onTouchesUp = onBegin.onTouchesUp;
-    }
-    if (onBegin.onTouchesCancel) {
-      obj.onTouchesCancel = onBegin.onTouchesCancel;
-    }
-    return obj;
+    tmp3.shouldUseReanimatedDetector = result;
+    const obj4 = _mod6627;
+    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
+    return tmp3;
   }, items);
 };
-export { touchEventTypeToCallbackType };
-export { runCallback };

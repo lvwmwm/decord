@@ -1,16 +1,16 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7235
+// Function ID: 7236
 // Name: LazyLoadedThreadManager
-// Dependencies: [5973, 2069, 2065, 2116, 1085, 2072, 584, 7143, 5000, 5013, 1295, 2]
+// Dependencies: [5975, 2072, 2068, 2119, 1087, 2075, 584, 7145, 5003, 5016, 1297, 2]
 
-// Module 7233 (LazyLoadedThreadManager)
+// Module 7235 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f96019 = () => {
+const f96299 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f96019);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f96299);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f96019);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f96299);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -81,11 +81,11 @@ function loadThread(channelId) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(5013).RouteParam;
+        const RouteParam = tmp13(5016).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(5013).RouteParam;
+        RouteParam2 = tmp13(5016).RouteParam;
         importDefault = matchPath(pathname, obj2);
-        const HTTP = tmp13(1295).HTTP;
+        const HTTP = tmp13(1297).HTTP;
         const get = HTTP.get;
         const obj3 = { url: closure_8.CHANNEL(channelId), rejectWithError: tmp13Result2.rejectWithMigratedError() };
         tmp13Result2 = require("HTTPUtils");
@@ -109,7 +109,7 @@ function loadThread(channelId) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "Array" };
+          const obj = { id, guild_id: guildId, parent_id: "r" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7143).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7145).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];
@@ -180,11 +180,11 @@ let obj = {
 
         });
       } else {
-        const HTTP = items1(1295).HTTP;
+        const HTTP = items1(1297).HTTP;
         const request = { url: closure_8.THREADS_BULK, body: obj2, rejectWithError: obj4.rejectWithMigratedError() };
         const post = HTTP.post;
         obj2 = { thread_ids: items1 };
-        obj4 = items1(1295);
+        obj4 = items1(1297);
         const postResult = post(request);
         const nextPromise = postResult.then((body) => {
           body = body.body;

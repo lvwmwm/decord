@@ -1,10 +1,10 @@
 // Module ID: 6387
 // Function ID: 6388
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 6387 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "0e971a927dbdc3183654a0324b5f2831", name: "ic_partnered_guild_icon_black_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "fb8db2c451f0cd706524543233306348", name: "ic_partnered_guild_icon_blurple_24px", type: "png" });

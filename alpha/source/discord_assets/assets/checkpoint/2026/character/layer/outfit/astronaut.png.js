@@ -1,8 +1,8 @@
-// Module ID: 5598
-// Function ID: 5599
+// Module ID: 5600
+// Function ID: 5601
 // Dependencies: [2]
 
-// Module 5598
+// Module 5600
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/astronaut.png.js");

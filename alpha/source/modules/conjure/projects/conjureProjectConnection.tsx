@@ -1,12 +1,12 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 10994
+// Function ID: 10995
 // Name: conjureProjectConnection
-// Dependencies: [10885, 584, 10907, 2]
+// Dependencies: [10900, 584, 10922, 2]
 
-// Module 10979 (conjureProjectConnection)
+// Module 10994 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10922 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -51,6 +51,18 @@ let obj = {
           }
         });
       }
+    }
+  },
+  app_cover_set(cover_image, arg1) {
+    if (undefined !== cover_image.cover_image) {
+      const obj = ConjureActionCreators;
+      const setProjectCoverResult = obj.setProjectCover(tmp, cover_image.cover_image);
+      const nextPromise = setProjectCoverResult.then((result) => {
+
+      });
+      nextPromise.catch(() => {
+
+      });
     }
   }
 };

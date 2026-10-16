@@ -1,10 +1,10 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16105
+// Function ID: 16106
 // Name: useVideoQuestCaptions
-// Dependencies: [32, 19, 558, 576, 9406, 1295, 16073, 2]
+// Dependencies: [32, 19, 558, 576, 9422, 1297, 16106, 2]
 
-// Module 16072 (useVideoQuestCaptions)
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 16105 (useVideoQuestCaptions)
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,8 +19,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   let url;
   let obj = url(576);
   const cResult = obj.c(6);
-  const obj2 = url(9406);
-  const questAsset = obj2.getQuestAsset(quest, url(9406).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  const obj2 = url(9422);
+  const questAsset = obj2.getQuestAsset(quest, url(9422).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;
@@ -80,8 +80,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   let closure_2;
   let tmp4;
   let url;
-  let obj = url(9406);
-  const questAsset = obj.getQuestAsset(quest, url(9406).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  let obj = url(9422);
+  const questAsset = obj.getQuestAsset(quest, url(9422).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;

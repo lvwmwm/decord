@@ -1,11 +1,11 @@
-// Module ID: 17127
-// Function ID: 17128
+// Module ID: 17161
+// Function ID: 17162
 // Name: openFavoritesGuildCategoryActionSheet
-// Dependencies: [5115, 17128, 2000, 2]
+// Dependencies: [5118, 17162, 2002, 2]
 // Exports: default
 
-// Module 17127 (openFavoritesGuildCategoryActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+// Module 17161 (openFavoritesGuildCategoryActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/favorites/native/openFavoritesGuildCategoryActionSheet.tsx");
@@ -20,5 +20,5 @@ export default function openFavoritesGuildCategoryActionSheet(categoryId) {
       obj.hideActionSheet(combined);
     }
   };
-  obj.openLazy(combined(2000)(17128, dependencyMap.paths), combined, obj2);
+  obj.openLazy(combined(2002)(17162, dependencyMap.paths), combined, obj2);
 };

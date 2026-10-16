@@ -1,30 +1,30 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 13918
+// Function ID: 13919
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 7205, 6278, 2065, 5492, 8699, 1085, 21, 7963, 8481, 5151, 558, 576, 8638, 9594, 587, 504, 10684, 1126, 11, 9832, 5162, 13887, 9895, 9603, 8117, 9892, 6555, 12524, 2]
+// Dependencies: [32, 19, 17, 7207, 6280, 2068, 5494, 8707, 1087, 21, 7966, 8489, 5153, 558, 576, 8646, 9610, 587, 504, 10699, 1128, 11, 9848, 5164, 13919, 9911, 9619, 8120, 9908, 6557, 12547, 2]
 
-// Module 13886 (MediaMessagePreview)
+// Module 13918 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
-import RowGeneratorDefault from "RowGenerator" /* 7963 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8481 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9603 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 9832 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9895 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 13887 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6557 */;
+import RowGeneratorDefault from "RowGenerator" /* 7966 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8489 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9619 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 9848 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9911 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 13919 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7205 */;
-import SearchMessageStore from "SearchMessageStore" /* 6278 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8699 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7207 */;
+import SearchMessageStore from "SearchMessageStore" /* 6280 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -329,7 +329,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
     const tmp3 = full;
     if (!tmp3) {
       const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: " " + intl.string(intl2.t["7qbp3B"]), seeMoreLabelColor, outAnimationDuration: Math.min(0.25 * animationDriver.get(), 0.1), outAnimation: "fade" };
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       const _HermesInternal = HermesInternal;
       const _Math = Math;
       message.truncation = obj;
@@ -409,7 +409,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
     const tmp3 = full;
     if (!tmp3) {
       const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: " " + intl.string(intl2.t["7qbp3B"]), seeMoreLabelColor, outAnimationDuration: Math.min(0.25 * animationDriver.get(), 0.1), outAnimation: "fade" };
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       const _HermesInternal = HermesInternal;
       const _Math = Math;
       message.truncation = obj;
@@ -489,7 +489,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8117).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8120).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

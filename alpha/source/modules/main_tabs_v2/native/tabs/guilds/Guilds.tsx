@@ -1,35 +1,261 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17065
+// Function ID: 17066
 // Name: guilds/Guilds
-// Dependencies: [19, 10870, 21, 558, 576, 17033, 5028, 9387, 16024, 17034, 17399, 16108, 4883, 2]
+// Dependencies: [32, 19, 5975, 10885, 1087, 21, 558, 576, 5038, 9, 5041, 5035, 5036, 584, 1123, 17066, 5031, 9403, 17067, 16057, 17068, 17433, 16141, 4886, 2]
 
-// Module 17032 (guilds/Guilds)
+// Module 17065 (guilds/Guilds)
+import TTITrackerDefault from "TTITracker" /* 9 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4883 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5028 */;
-import QuestsEligibility from "QuestsEligibility" /* 9387 */;
-import MainTabsConstants from "MainTabsConstants" /* 10870 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16024 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17033 */;
-import MainChannelsDefault from "MainChannels" /* 17034 */;
-import YouBarDefault from "YouBar" /* 17399 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1087 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import native from "native" /* 4886 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5031 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
+import RootNavigationRef from "RootNavigationRef" /* 5036 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5041 */;
+import QuestsEligibility from "QuestsEligibility" /* 9403 */;
+import MainTabsConstants from "MainTabsConstants" /* 10885 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17066 */;
+import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 17067 */;
+import MainChannelsDefault from "MainChannels" /* 17068 */;
+import YouBarDefault from "YouBar" /* 17433 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-let tmp3;
-const QuestDockDefault = tmp3(16108);
+const require = globalThis.__r;
+let _require;
+
+let c9;
+let metroImportAll;
 const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const ComponentActions = Constants.ComponentActions;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = false;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRender(arg0) {
+  let closure_0;
+  let closure_2;
+  let connected;
+  let first;
+  let tmp2;
+  let tmp5;
+  let tmp6;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  const isChatBesideChannelList = first(5038)().isChatBesideChannelList;
+  if (cResult[0] !== arg0) {
+    const fn = function u() {
+      const tmp = closure_0;
+      if (tmp) {
+        TTITrackerDefault;
+        let landOnHome = c10 || "other" !== tmp5;
+        if (!landOnHome) {
+          const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
+          landOnHome = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome;
+        }
+        return landOnHome;
+      } else {
+        return true;
+      }
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  let obj2 = react;
+  [first, dependencyMap] = react.useState(tmp2);
+  if (cResult[2] !== first) {
+    const fn2 = function f() {
+      let allowRender;
+      let closure_4;
+      if (allowRender) {
+        c10 = true;
+      } else {
+        let c0 = true;
+        allowRender = function allowRender() {
+          const tmp = c0;
+          if (tmp) {
+            allowRenderAfterReady(true);
+          }
+        };
+        function allowRenderAfterReady() {
+          const timerId = setTimeout(allowRender, 0);
+        }
+        function handleNavigationChange() {
+          const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
+          NavigationRouteUtils;
+          const obj = RootNavigationRef;
+          const rootNavigationRef = obj.getRootNavigationRef();
+          let currentRoute;
+          if (rootNavigationRef != null) {
+            currentRoute = rootNavigationRef.getCurrentRoute();
+          }
+          if (null != coerceGuildsRoute(currentRoute)) {
+            if (typeof allowRender === "function") {
+              const tmp4 = c0;
+              if (tmp4) {
+                allowRenderAfterReady(true);
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+        }
+        let tmp = connected;
+        if (connected.isConnected()) {
+          const tmp2 = c0;
+          if (tmp2) {
+            let tmp4 = allowRenderAfterReady(true);
+          }
+        }
+        const _setTimeout = setTimeout;
+        const timeout = setTimeout(allowRender, 4000);
+        let obj = first(allowRenderAfterReady[13]);
+        const subscription = obj.subscribe("CONNECTION_OPEN", allowRenderAfterReady);
+        let ComponentDispatch = closure_0(allowRenderAfterReady[14]).ComponentDispatch;
+        const subscription1 = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+        let obj2 = closure_0(allowRenderAfterReady[12]);
+        let rootNavigationRef = obj2.getRootNavigationRef();
+        if (rootNavigationRef != null) {
+          rootNavigationRef.addListener("state", handleNavigationChange);
+        }
+        return () => {
+          c0 = false;
+          clearTimeout(closure_4);
+          const obj = DispatcherDefault;
+          obj.unsubscribe("CONNECTION_OPEN", allowRenderAfterReady);
+          const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+          ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+          const obj2 = RootNavigationRef;
+          const rootNavigationRef = obj2.getRootNavigationRef();
+          if (rootNavigationRef != null) {
+            rootNavigationRef.removeListener("state", handleNavigationChange);
+          }
+        };
+      }
+    };
+    const items = [first];
+    cResult[2] = first;
+    cResult[3] = fn2;
+    cResult[4] = items;
+    tmp6 = items;
+    tmp5 = fn2;
+  } else {
+    tmp5 = cResult[3];
+    tmp6 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp5, tmp6);
+  if (!first) {
+    first = isChatBesideChannelList;
+  }
+  return first;
+}) : (function useShouldRender(arg0) {
+  let closure_2;
+  let connected;
+  let first;
+  let closure_0 = arg0;
+  const isChatBesideChannelList = first(5038)().isChatBesideChannelList;
+  [first, dependencyMap] = react.useState(() => {
+    const tmp = closure_0;
+    if (tmp) {
+      TTITrackerDefault;
+      let landOnHome = c10 || "other" !== tmp5;
+      if (!landOnHome) {
+        const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
+        landOnHome = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome;
+      }
+      return landOnHome;
+    } else {
+      return true;
+    }
+  });
+  const items = [first];
+  const effect = react.useEffect(() => {
+    let closure_1;
+    let timeout;
+    function allowRender() {
+      const tmp = c0;
+      if (tmp) {
+        allowRender(true);
+      }
+    }
+    function allowRenderAfterReady() {
+      const timerId = setTimeout(allowRender, 0);
+    }
+    function handleNavigationChange() {
+      const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
+      NavigationRouteUtils;
+      const obj = RootNavigationRef;
+      const rootNavigationRef = obj.getRootNavigationRef();
+      let currentRoute;
+      if (rootNavigationRef != null) {
+        currentRoute = rootNavigationRef.getCurrentRoute();
+      }
+      if (null != coerceGuildsRoute(currentRoute)) {
+        const tmp3 = c0;
+        if (tmp3) {
+          allowRender(true);
+        }
+      }
+    }
+    if (timeout) {
+      c10 = true;
+    } else {
+      let c0 = true;
+      let tmp = connected;
+      if (connected.isConnected()) {
+        const tmp2 = c0;
+        if (tmp2) {
+          let tmp3 = allowRender;
+          allowRender(true);
+        }
+      }
+      const _setTimeout = setTimeout;
+      timeout = setTimeout(allowRender, 4000);
+      let obj = first(allowRender[13]);
+      const subscription = obj.subscribe("CONNECTION_OPEN", allowRenderAfterReady);
+      let ComponentDispatch = closure_0(allowRender[14]).ComponentDispatch;
+      const subscription1 = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+      let obj2 = closure_0(allowRender[12]);
+      let rootNavigationRef = obj2.getRootNavigationRef();
+      if (rootNavigationRef != null) {
+        rootNavigationRef.addListener("state", handleNavigationChange);
+      }
+      return () => {
+        c0 = false;
+        clearTimeout(closure_1);
+        const obj = DispatcherDefault;
+        obj.unsubscribe("CONNECTION_OPEN", allowRenderAfterReady);
+        const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+        ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+        const obj2 = RootNavigationRef;
+        const rootNavigationRef = obj2.getRootNavigationRef();
+        if (rootNavigationRef != null) {
+          rootNavigationRef.removeListener("state", handleNavigationChange);
+        }
+      };
+    }
+  }, items);
+  if (!first) {
+    first = isChatBesideChannelList;
+  }
+  return first;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsOnly() {
   let first;
-  let tmp13;
+  let tmp11;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(4);
+  const cResult = obj.c(5);
   const obj2 = TabsPerformanceTracker;
   const trackTabPerformance = obj2.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp6 = useColorThemeBackgroundDefault();
@@ -42,50 +268,74 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const QuestDockExternalCoordinationContextProvider = tmp(16024).QuestDockExternalCoordinationContextProvider;
-    const items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
-    const tmp10 = hasOwnProperty;
-    const tmp11 = React3;
-    if (first) {
-      first = tmp11(tmp5(16108), {});
-    }
-    const obj3 = { children: items };
-    items[2] = first;
-    const tmp10Result = tmp10(QuestDockExternalCoordinationContextProvider, obj3);
-    cResult[1] = tmp10Result;
-    tmp9 = tmp10Result;
+    const obj3 = { location: "GuildsOnly" };
+    cResult[1] = obj3;
+    tmp9 = obj3;
   } else {
     tmp9 = cResult[1];
   }
-  if (cResult[2] !== tmp6) {
-    const obj4 = { gradient: tmp6, children: tmp9 };
-    const tmp15 = React3(native.ThemeContextProvider, obj4);
-    cResult[2] = tmp6;
-    cResult[3] = tmp15;
-    tmp13 = tmp15;
+  const GuildsRenderExperiment = tmp(17067).GuildsRenderExperiment;
+  if (!GuildsRenderExperiment.useConfig(tmp9).enabled) {
+    let tmp12;
+    let tmp16;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const QuestDockExternalCoordinationContextProvider = tmp(16057).QuestDockExternalCoordinationContextProvider;
+      const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
+      const tmp13 = React4;
+      const tmp14 = metroImportAll;
+      if (first) {
+        first = tmp14(tmp5(16141), {});
+      }
+      const obj4 = { children: items };
+      items[2] = first;
+      const tmp13Result = tmp13(QuestDockExternalCoordinationContextProvider, obj4);
+      cResult[2] = tmp13Result;
+      tmp12 = tmp13Result;
+    } else {
+      tmp12 = cResult[2];
+    }
+    if (cResult[3] !== tmp6) {
+      const obj5 = { gradient: tmp6, children: tmp12 };
+      const tmp18 = metroImportAll(native.ThemeContextProvider, obj5);
+      cResult[3] = tmp6;
+      cResult[4] = tmp18;
+      tmp16 = tmp18;
+    } else {
+      tmp16 = cResult[4];
+    }
+    tmp11 = tmp16;
   } else {
-    tmp13 = cResult[3];
+    tmp11 = null;
   }
-  return tmp13;
+  return tmp11;
 }) : (function GuildsOnly() {
   let QuestDockExternalCoordinationContextProvider;
-  let items;
-  let tmp7;
+  let obj4;
+  let tmp10;
+  let tmp9Result;
   const obj = TabsPerformanceTracker;
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
-  const tmp4 = useColorThemeBackgroundDefault();
+  const tmp5 = useColorThemeBackgroundDefault();
   const obj2 = QuestsEligibility;
   let isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const obj3 = { gradient: tmp4, children: tmp7(QuestDockExternalCoordinationContextProvider, { children: items }) };
-  const ThemeContextProvider = native.ThemeContextProvider;
-  QuestDockExternalCoordinationContextProvider = QuestDockExternalCoordinationContext.QuestDockExternalCoordinationContextProvider;
-  items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
-  tmp7 = hasOwnProperty;
-  if (isEligibleForQuests) {
-    isEligibleForQuests = tmp6(QuestDockDefault, {});
+  const GuildsRenderExperiment = GuildsRenderExperiment2.GuildsRenderExperiment;
+  if (!GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled) {
+    const obj3 = { gradient: tmp5, children: tmp10(QuestDockExternalCoordinationContextProvider, obj4) };
+    const ThemeContextProvider = tmp(4886).ThemeContextProvider;
+    QuestDockExternalCoordinationContextProvider = tmp(16057).QuestDockExternalCoordinationContextProvider;
+    const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
+    tmp10 = React4;
+    if (isEligibleForQuests) {
+      isEligibleForQuests = tmp9(tmp4(16141), {});
+    }
+    obj4 = { children: items };
+    items[2] = isEligibleForQuests;
+    tmp9Result = tmp9(ThemeContextProvider, obj3);
+  } else {
+    tmp9Result = null;
   }
-  items[2] = isEligibleForQuests;
-  return React3(ThemeContextProvider, obj3);
+  return tmp9Result;
 }), () => true);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
 

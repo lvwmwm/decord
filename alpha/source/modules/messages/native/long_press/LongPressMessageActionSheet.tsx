@@ -1,30 +1,30 @@
-// Module ID: 9897
-// Function ID: 9898
+// Module ID: 9913
+// Function ID: 9914
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7969, 9898, 9899, 4817, 502, 2087, 4806, 5144, 1085, 21, 7073, 7098, 5166, 9896, 8211, 9901, 504, 7190, 9902, 9903, 2041, 7188, 9904, 5496, 1403, 9905, 8471, 9906, 7114, 9907, 7118, 1628, 13657, 13658, 1126, 11537, 5101, 5108, 5097, 9942, 12168, 12589, 8418, 13502, 10575, 13662, 9178, 8439, 10566, 13664, 13666, 13668, 13493, 5110, 11548, 8416, 8435, 5103, 10235, 10715, 9794, 10395, 2702, 8426, 7204, 7207, 11105, 5479, 7210, 8115, 9862, 2]
+// Dependencies: [32, 19, 7972, 9914, 9915, 4820, 502, 2090, 4809, 5147, 1087, 21, 7075, 7100, 5168, 9912, 8214, 9917, 504, 7192, 9918, 9919, 2044, 7190, 9920, 5498, 1405, 9921, 8479, 9922, 7116, 9923, 7120, 1630, 13683, 13684, 1128, 11560, 5104, 5111, 5100, 9958, 12194, 12612, 8426, 13528, 10590, 13688, 9191, 8447, 10581, 13690, 13692, 13694, 13519, 5113, 11571, 8424, 8443, 5106, 10251, 10730, 9810, 10411, 2705, 8434, 7206, 7209, 11120, 5481, 7212, 8118, 9878, 2]
 // Exports: default
 
-// Module 9897 (LongPressMessageActionSheet)
+// Module 9913 (LongPressMessageActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import MessageRecord from "MessageRecord" /* 4817 */;
-import MessageConstants from "MessageConstants" /* 5144 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7073 */;
-import ActionSheet2 from "ActionSheet" /* 7118 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9896 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 9907 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 13657 */;
-import EmojiRowDefault from "EmojiRow" /* 13658 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+import MessageRecord from "MessageRecord" /* 4820 */;
+import MessageConstants from "MessageConstants" /* 5147 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5168 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7075 */;
+import ActionSheet2 from "ActionSheet" /* 7120 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9912 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 9923 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 13683 */;
+import EmojiRowDefault from "EmojiRow" /* 13684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7969 */;
-import ReportToModStore from "ReportToModStore" /* 9898 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9899 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7972 */;
+import ReportToModStore from "ReportToModStore" /* 9914 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9915 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,11 +104,11 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp13;
   let tmp14;
   let user;
-  const f102923 = () => {
+  const f103227 = () => {
     const items = [SavedMessagesStore.isMessageReminder(channel.id, message.id), SavedMessagesStore.isMessageBookmarked(channel.id, message.id)];
     return items;
   };
-  const f102924 = (flags) => {
+  const f103228 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
       const obj = analyticsLocation(analyticsLocation[26]);
@@ -160,8 +160,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const guild = isActiveChannelOrUnarchivableThread.getGuild(channel.guild_id);
   let obj4 = require("get initialized");
   const items2 = [actionSheetSource];
-  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f102923), 2);
-  message(obj4.useStateFromStoresArray(items2, f102923), 2);
+  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f103227), 2);
+  message(obj4.useStateFromStoresArray(items2, f103227), 2);
   let obj5 = require("ThreadHooks");
   const isNonModInLockedThread = obj5.useIsNonModInLockedThread(channel);
   let id1;
@@ -242,8 +242,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp51 = message.author.id === id3;
   if (tmp51) {
-    tmp51 = attachments1.filter(f102924).length > 1 || "" !== message.content;
-    const tmp52 = attachments1.filter(f102924).length > 1 || "" !== message.content;
+    tmp51 = attachments1.filter(f103228).length > 1 || "" !== message.content;
+    const tmp52 = attachments1.filter(f103228).length > 1 || "" !== message.content;
   }
   const items3 = [selectedMedia];
   const tmp8Result23 = tmp8(tmp3[18]);

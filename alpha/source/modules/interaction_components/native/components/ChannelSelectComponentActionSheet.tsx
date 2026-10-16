@@ -1,15 +1,15 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12470
+// Function ID: 12471
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 2065, 2087, 21, 558, 576, 8475, 12446, 8477, 1200, 8868, 11575, 2]
+// Dependencies: [19, 2068, 2090, 21, 558, 576, 8483, 12469, 8485, 1202, 8876, 11598, 2]
 
-// Module 12447 (ChannelSelectComponentActionSheet)
+// Module 12470 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8475 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8477 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8483 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8485 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSelec
                   let tmp8 = null != channelIconData;
                   const tmp5 = require;
                   if (tmp8) {
-                    tmp8 = jsx(tmp5(1200).Icon, { source: channelIconData });
+                    tmp8 = jsx(tmp5(1202).Icon, { source: channelIconData });
                   }
                   return tmp8;
                 }
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSelec
         let tmp8 = null != channelIconData;
         const tmp5 = require;
         if (tmp8) {
-          tmp8 = jsx(tmp5(1200).Icon, { source: channelIconData });
+          tmp8 = jsx(tmp5(1202).Icon, { source: channelIconData });
         }
         return tmp8;
       }

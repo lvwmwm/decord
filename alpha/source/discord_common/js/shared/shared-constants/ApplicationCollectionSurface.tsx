@@ -1,9 +1,9 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11815
+// Function ID: 11816
 // Name: ApplicationCollectionSurface
 // Dependencies: [2]
 
-// Module 11791 (ApplicationCollectionSurface)
+// Module 11815 (ApplicationCollectionSurface)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");

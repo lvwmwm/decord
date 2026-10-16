@@ -1,9 +1,9 @@
-// Module ID: 7426
-// Function ID: 7427
+// Module ID: 7428
+// Function ID: 7429
 // Name: MessageCacheStats
 // Dependencies: [2]
 
-// Module 7426 (MessageCacheStats)
+// Module 7428 (MessageCacheStats)
 import size from "module_2" /* 2 */;
 
 class MessageCacheStats {

@@ -1,22 +1,22 @@
-// Module ID: 10546
-// Function ID: 10547
+// Module ID: 10561
+// Function ID: 10562
 // Name: FavoritesHooks
-// Dependencies: [4995, 1390, 2068, 2078, 1392, 10547, 558, 576, 10548, 504, 1989, 11, 1209, 2090, 2]
+// Dependencies: [4998, 1392, 2071, 2081, 1394, 10562, 558, 576, 10563, 504, 1991, 11, 1211, 2093, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories
 
-// Module 10546 (FavoritesHooks)
+// Module 10561 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1989 */;
-import FavoritesConstants from "FavoritesConstants" /* 2078 */;
-import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10548 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import UserStore from "UserStore" /* 1390 */;
-import FavoriteStore from "FavoriteStore" /* 2068 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1991 */;
+import FavoritesConstants from "FavoritesConstants" /* 2081 */;
+import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10563 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import UserStore from "UserStore" /* 1392 */;
+import FavoriteStore from "FavoriteStore" /* 2071 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10547);
+const FavoritesLimits = tmp(10562);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     } else {
       num6 = 0;
       if (isFreemium) {
-        num6 = tmp(10547).FREE_FAVORITE_LIMIT;
+        num6 = tmp(10562).FREE_FAVORITE_LIMIT;
       }
     }
     num5 = num6;

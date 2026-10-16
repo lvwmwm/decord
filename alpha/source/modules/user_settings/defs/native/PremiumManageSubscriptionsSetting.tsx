@@ -1,24 +1,24 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15954
+// Function ID: 15955
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1085, 558, 576, 7358, 10728, 4825, 14359, 10991, 1126, 15922, 15920, 2]
+// Dependencies: [19, 1087, 558, 576, 7360, 10743, 4828, 14391, 11006, 1128, 15955, 15953, 2]
 
-// Module 15921 (PremiumManageSubscriptionsSetting)
+// Module 15954 (PremiumManageSubscriptionsSetting)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4825 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7358 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 15922 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import PremiumUtils from "PremiumUtils" /* 4828 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7360 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 15955 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const MobileNitroManageSubscriptionsSettingsExperiment = tmp(14359);
+const MobileNitroManageSubscriptionsSettingsExperiment = tmp(14391);
 const UserSettingsSections = Constants.UserSettingsSections;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavigateToPaymentSetting() {

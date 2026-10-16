@@ -1,11 +1,11 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 7991
+// Function ID: 7992
 // Name: AndroidPhotoPickerExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 // Exports: getAndroidPhotoPickerExperimentConfig
 
-// Module 7988 (AndroidPhotoPickerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 7991 (AndroidPhotoPickerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-10-android-photo-picker", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

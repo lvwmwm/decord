@@ -1,12 +1,12 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11813
+// Function ID: 11814
 // Name: MyGuildApplicationsStore
-// Dependencies: [1102, 504, 584, 2]
+// Dependencies: [1104, 504, 584, 2]
 
-// Module 11789 (MyGuildApplicationsStore)
+// Module 11813 (MyGuildApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 let set;

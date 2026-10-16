@@ -1,9 +1,9 @@
-// Module ID: 18023
-// Function ID: 18024
+// Module ID: 18057
+// Function ID: 18058
 // Name: ComponentOwnedWebView
-// Dependencies: [109, 19, 21, 558, 576, 11229, 11250, 2]
+// Dependencies: [109, 19, 21, 558, 576, 11245, 11269, 2]
 
-// Module 18023 (ComponentOwnedWebView)
+// Module 18057 (ComponentOwnedWebView)
 import Fragment from "Fragment" /* 21 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ComponentO
           }
         }
       }
-      const BaseEmbeddedAppWebView = tmp(11250).BaseEmbeddedAppWebView;
+      const BaseEmbeddedAppWebView = tmp(11269).BaseEmbeddedAppWebView;
       const merged = Object.assign(tmp9);
       const tmp28 = <BaseEmbeddedAppWebView iframeId={tmp7} activityUrl={tmp4} applicationId={tmp5} />;
       cResult[16] = tmp4;

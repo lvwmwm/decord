@@ -1,10 +1,10 @@
 // Module ID: 16380
 // Function ID: 16381
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16380 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "8d1d548a64761f0c5b1d7c9e00ae66a6", name: "fr", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7902227dc6dc99bcea15f3cdebd9f65f", name: "EmojiRollingOnTheFloorLaughingIcon", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 11853
+// Function ID: 11854
 // Name: useAnimatedScrollLock
-// Dependencies: [19, 1382, 558, 576, 4906, 2]
+// Dependencies: [19, 1384, 558, 576, 4909, 2]
 
-// Module 11829 (useAnimatedScrollLock)
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+// Module 11853 (useAnimatedScrollLock)
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 18282
-// Function ID: 18283
+// Module ID: 18324
+// Function ID: 18325
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2065, 2116, 21, 5151, 558, 576, 573, 11934, 17736, 11069, 1126, 5147, 2]
+// Dependencies: [19, 17, 2068, 2119, 21, 5153, 558, 576, 573, 11958, 17770, 11084, 1128, 5149, 2]
 
-// Module 18282 (LaunchPadMembers)
+// Module 18324 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11069 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11934 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17736 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11084 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11958 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17770 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import createStyles from "createStyles" /* 5151 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      return { channelId: "ix", type: false };
+      return { channelId: "unicodeVersion", type: false };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -152,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol = Symbol;
     ({ emptyWrapper, emptyText } = tmp4);
     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t["+7wtJq"]);
       cResult[22] = stringResult;
       tmp10 = stringResult;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    return { channelId: "ix", type: false };
+    return { channelId: "unicodeVersion", type: false };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -218,8 +218,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(5147).Text;
-    intl = tmp2(1126).intl;
+    const Text = tmp2(5149).Text;
+    intl = tmp2(1128).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }
   return tmp8;

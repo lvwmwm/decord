@@ -1,15 +1,15 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17396
+// Function ID: 17397
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17363, 8376, 8425, 1126, 5147, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17397, 8384, 8433, 1128, 5149, 2]
 
-// Module 17362 (MentionSubtitle)
+// Module 17396 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 17363 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 17397 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -75,7 +75,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
         cResult[11] = tmp16;
         tmp14 = tmp16;
       }
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const obj5 = {
         channelName,
         count: count - 1,
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8425).TextIcon;
+    channelIconComponentWithGuild = tmp(8433).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -126,15 +126,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8425).TextIcon;
+    channelIconComponentWithGuild = tmp(8433).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5147).Text;
-  intl = tmp(1126).intl;
+  const Text = tmp(5149).Text;
+  intl = tmp(1128).intl;
   obj5 = {
     channelName,
     count: count - 1,

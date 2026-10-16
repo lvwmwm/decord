@@ -1,14 +1,14 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17026
+// Function ID: 17027
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6147, 21, 5151, 558, 576, 4888, 16994, 1126, 6398, 5147, 2]
+// Dependencies: [19, 17, 6149, 21, 5153, 558, 576, 4891, 17027, 1128, 6400, 5149, 2]
 
-// Module 16993 (PromotionalEmailCheckBox)
+// Module 17026 (PromotionalEmailCheckBox)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6147 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6149 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,7 +85,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromotionalE
   const checkboxA11yNative = tmpResult.useCheckboxA11yNative(tmp10);
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const tmpResult2 = require("usePromoEmailOptInLabel");
-  const promoEmailOptInLabel = tmpResult2.usePromoEmailOptInLabel(tmp(1126).t.ylFCLt, "REGISTER_PROMO_EMAIL_CHECKBOX_MOBILE");
+  const promoEmailOptInLabel = tmpResult2.usePromoEmailOptInLabel(tmp(1128).t.ylFCLt, "REGISTER_PROMO_EMAIL_CHECKBOX_MOBILE");
   if (tmp7) {
     class E {
       constructor(checked) {

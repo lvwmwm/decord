@@ -1,17 +1,17 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9470
+// Function ID: 9471
 // Name: oauth2/actions
-// Dependencies: [5, 2065, 2116, 1085, 1295, 6146, 1094, 2]
+// Dependencies: [5, 2068, 2119, 1087, 1297, 6148, 1096, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9454 (oauth2/actions)
-import utils_PathUtils from "utils/PathUtils" /* 1094 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6146 */;
+// Module 9470 (oauth2/actions)
+import utils_PathUtils from "utils/PathUtils" /* 1096 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let client_id, code_challenge, code_challenge_method, connected_account_provider, guild_id, integration_type, nonce, permissions, signal;

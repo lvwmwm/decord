@@ -1,10 +1,10 @@
 // Module ID: 16616
 // Function ID: 16617
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16616 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6f2100bc35d4631ec4aaba26d151036", name: "LettersIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "1146ad1374798af61befeddbf75c5f47", name: "es-ES.messages.1146ad1374798af61befeddbf75c5f47.compiled.messages", type: "jsona" });

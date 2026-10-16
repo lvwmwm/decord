@@ -1,21 +1,21 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13790
+// Function ID: 13791
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 5151, 558, 576, 9436, 5088, 13765, 1126, 5147, 5439, 7035, 2]
+// Dependencies: [19, 17, 21, 5153, 558, 576, 9452, 5091, 13791, 1128, 5149, 5441, 7037, 2]
 
-// Module 13764 (CrunchyrollLinkSuccess)
+// Module 13790 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13765 */;
+import intl4 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7037 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9452 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13791 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollL
   }
   const title = twoWayLinkStyles.title;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.Fnvxvk);
     cResult[2] = stringResult;
     tmp11 = stringResult;
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollL
   }
   const body = twoWayLinkStyles.body;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.YwXceg);
     cResult[5] = stringResult1;
     tmp16 = stringResult1;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollL
         const _Symbol = Symbol;
         ({ footerContainer, footerButton } = twoWayLinkStyles);
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1126).intl;
+          const intl3 = tmp(1128).intl;
           const stringResult2 = intl3.string(intl4.t.i4jeWR);
           cResult[13] = stringResult2;
           tmp23 = stringResult2;

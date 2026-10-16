@@ -1,20 +1,20 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7271
+// Function ID: 7272
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5488, 5490, 1085, 1095, 1295, 7270, 584, 7271, 5852, 7272, 1265, 2046, 12, 5359, 1126, 7273, 2]
+// Dependencies: [5, 5490, 5492, 1087, 1097, 1297, 7272, 584, 7273, 5854, 7274, 1267, 2049, 12, 5361, 1128, 7275, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7269 (SoundboardActionCreators)
+// Module 7271 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl3 from "intl" /* 1126 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
-import SoundboardConstants from "SoundboardConstants" /* 5490 */;
+import intl3 from "intl" /* 1128 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
+import SoundboardConstants from "SoundboardConstants" /* 5492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5488 */;
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import SoundboardStore from "SoundboardStore" /* 5490 */;
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7272);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7274);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();

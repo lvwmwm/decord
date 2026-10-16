@@ -1,13 +1,13 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7249
+// Function ID: 7250
 // Name: GuildTemplateTooltipActionCreators
-// Dependencies: [5, 4806, 1085, 7248, 584, 2]
+// Dependencies: [5, 4809, 1087, 7250, 584, 2]
 
-// Module 7247 (GuildTemplateTooltipActionCreators)
+// Module 7249 (GuildTemplateTooltipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
 import size from "module_2" /* 2 */;
 
 let c1;

@@ -1,30 +1,30 @@
-// Module ID: 18713
-// Function ID: 18714
+// Module ID: 18755
+// Function ID: 18756
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1085, 7096, 21, 5151, 587, 558, 576, 5087, 11039, 1200, 5025, 1415, 1126, 6428, 6405, 6400, 7115, 18714, 1382, 5147, 5979, 6485, 2]
+// Dependencies: [32, 19, 17, 1087, 7098, 21, 5153, 587, 558, 576, 5090, 11054, 1202, 5028, 1417, 1128, 6430, 6407, 6402, 7117, 18756, 1384, 5149, 5981, 6487, 2]
 
-// Module 18713 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18755 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import shared from "shared" /* 5025 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import PlatformsDefault from "Platforms" /* 5979 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import Pressables from "Pressables" /* 6405 */;
-import XSmallIcon from "XSmallIcon" /* 6428 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11039 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18714 */;
+import Constants2 from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import shared from "shared" /* 5028 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import PlatformsDefault from "Platforms" /* 5981 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import Pressables from "Pressables" /* 6407 */;
+import XSmallIcon from "XSmallIcon" /* 6430 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11054 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 7096 */;
+import Constants from "Constants" /* 7098 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const TableRowGroup3 = tmp(6485);
+const TableRowGroup3 = tmp(6487);
 function ApplicationMetadataRules(arg0) {
   let integration;
   let locked;
@@ -174,8 +174,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
-      const Avatar2 = tmp(1200).Avatar;
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+      const Avatar2 = tmp(1202).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
       cResult[1] = tmp26;
@@ -197,8 +197,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
-          const Avatar = tmp(1200).Avatar;
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+          const Avatar = tmp(1202).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
           cResult[3] = tmp21;
@@ -255,7 +255,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult = intl2.string(intl3.t.N86XcP);
       cResult[11] = stringResult;
       tmp34 = stringResult;
@@ -299,10 +299,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     cResult[15] = tmp41;
     tmp39 = tmp41;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const format = intl.format;
   let name3;
-  const Nj0a3j = tmp(1126).t.Nj0a3j;
+  const Nj0a3j = tmp(1128).t.Nj0a3j;
   if (platform != null) {
     name3 = platform.name;
   }
@@ -353,8 +353,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
-    const Avatar2 = tmp3(1200).Avatar;
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+    const Avatar2 = tmp3(1202).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
     if (integration != null) {
@@ -375,8 +375,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
-        const Avatar = tmp3(1200).Avatar;
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+        const Avatar = tmp3(1202).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
       let name1;
@@ -387,7 +387,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       tmp9Result = tmp13;
     }
   } else if (null != platform) {
-    const Icon = tmp3(1200).Icon;
+    const Icon = tmp3(1202).Icon;
     const makeSource = AvatarUtils.makeSource;
     AvatarUtils;
     const icon = platform.icon;
@@ -396,11 +396,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     tmp9Result = onChangeText(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: onChangeText(PressableOpacity, obj5) };
-  const TableRow = tmp3(6400).TableRow;
-  const intl = tmp3(1126).intl;
+  const TableRow = tmp3(6402).TableRow;
+  const intl = tmp3(1128).intl;
   format = intl.format;
   name2 = undefined;
-  Nj0a3j = tmp3(1126).t.Nj0a3j;
+  Nj0a3j = tmp3(1128).t.Nj0a3j;
   if (platform != null) {
     name2 = platform.name;
   }
@@ -408,8 +408,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: onChangeText(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(6405).PressableOpacity;
-  intl2 = tmp3(1126).intl;
+  PressableOpacity = tmp3(6407).PressableOpacity;
+  intl2 = tmp3(1128).intl;
   return onChangeText(TableRow, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -564,7 +564,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Boolea
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(7115).TableSwitchRow;
+  const TableSwitchRow = metadataField(7117).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -1401,7 +1401,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(18714);
+  let obj = metadataField(18756);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1410,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(18714);
+  const tmp2Result = tmp2(18756);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -1426,9 +1426,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   closure_11 = tmp15;
   if (undefined !== fieldTextHook) {
-    const tmp2Result2 = tmp2(1382);
+    const tmp2Result2 = tmp2(1384);
     closure_13 = tmp2Result2.isIOS() ? tmp.numericalInputContainerIOSInline : tmp.numericalInputContainerAndroidInline;
-    const intl = tmp2(1126).intl;
+    const intl = tmp2(1128).intl;
     let obj2 = {
       metadataHook() {
           let TextInput;
@@ -1467,7 +1467,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
     let items = [tmp.appNumericalInput, ];
     let numericalInputDisabled = tmp15;
     const obj4 = { style: tmp.appNumericalInputContainer, children: items1 };
-    let TextInput = tmp2(1200).TextInput;
+    let TextInput = tmp2(1202).TextInput;
     const tmp19 = closure_13;
     if (locked || null == configuration) {
       numericalInputDisabled = tmp.numericalInputDisabled;
@@ -1477,7 +1477,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "text-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5147).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5149).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {
@@ -1515,7 +1515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(7115).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(7117).TableSwitchRow, obj8, metadataField);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlueskyMetadataRules(arg0) {
@@ -1863,7 +1863,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Twitte
               }
               const _Symbol = Symbol;
               if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 const stringResult = intl.string(intl3.t.E2iT8K);
                 cResult[19] = stringResult;
                 tmp29 = stringResult;
@@ -2014,7 +2014,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reddit
           }
           const _Symbol = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const stringResult = intl.string(intl3.t["0cKdka"]);
             cResult[13] = stringResult;
             tmp21 = stringResult;
@@ -2039,7 +2039,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reddit
               }
               const _Symbol2 = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(1126).intl;
+                const intl2 = tmp(1128).intl;
                 const stringResult1 = intl2.string(intl3.t.kCAN58);
                 cResult[20] = stringResult1;
                 tmp31 = stringResult1;
@@ -2177,7 +2177,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Paypal
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl3.t["0JyE8I"]);
         cResult[7] = stringResult;
         tmp13 = stringResult;
@@ -2330,7 +2330,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMe
                   }
                   const _Symbol = Symbol;
                   if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl = tmp(1126).intl;
+                    const intl = tmp(1128).intl;
                     const stringResult = intl.string(intl3.t["39wASN"]);
                     cResult[25] = stringResult;
                     tmp38 = stringResult;
@@ -2464,7 +2464,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTok
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.E2iT8K);
     cResult[1] = stringResult;
     tmp8 = stringResult;

@@ -1,13 +1,13 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10759
+// Function ID: 10760
 // Name: ProfileEffectUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1126, 10745, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1128, 10760, 2]
 
-// Module 10744 (ProfileEffectUserPreview)
+// Module 10759 (ProfileEffectUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10745 */;
+import intl3 from "intl" /* 1128 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10760 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,12 +47,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEff
   if (cResult[5] !== tmp5) {
     let formatToPlainStringResult;
     if (null != tmp5) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj2 = { a11y_text: tmp5.accessibilityLabel };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.mbHmX2, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.mbHmX2, obj2);
     } else {
-      const intl = tmp(1126).intl;
-      formatToPlainStringResult = intl.string(tmp(1126).t.XYdHeC);
+      const intl = tmp(1128).intl;
+      formatToPlainStringResult = intl.string(tmp(1128).t.XYdHeC);
     }
     cResult[5] = tmp5;
     cResult[6] = formatToPlainStringResult;

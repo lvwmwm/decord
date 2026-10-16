@@ -1,22 +1,22 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17567
+// Function ID: 17568
 // Name: ICYMIMessageRowPreview
-// Dependencies: [109, 19, 1085, 21, 558, 576, 8697, 9534, 7965, 7222, 5087, 5151, 587, 8481, 1126, 2041, 7963, 9594, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 8705, 9550, 7968, 7224, 5090, 5153, 587, 8489, 1128, 2044, 7966, 9610, 2]
 
-// Module 17533 (ICYMIMessageRowPreview)
+// Module 17567 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import useThemeDefault from "useTheme" /* 5087 */;
-import createStyles from "createStyles" /* 5151 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7222 */;
-import RowGeneratorDefault from "RowGenerator" /* 7963 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8481 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9534 */;
-import ChatItemDefault from "ChatItem" /* 9594 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import useThemeDefault from "useTheme" /* 5090 */;
+import createStyles from "createStyles" /* 5153 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7224 */;
+import RowGeneratorDefault from "RowGenerator" /* 7966 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8489 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9550 */;
+import ChatItemDefault from "ChatItem" /* 9610 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -382,7 +382,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
           tmp20 = tmp26;
         }
         const obj3 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp11, renderEmbeds: tmp11, inlineEmbedMedia: tmp11 };
-        const merged1 = Object.assign(tmp(7965).DEFAULT_OPTIONS);
+        const merged1 = Object.assign(tmp(7968).DEFAULT_OPTIONS);
         const merged2 = Object.assign(tmp5);
         cResult[11] = tmp11;
         cResult[12] = tmp5;
@@ -415,10 +415,10 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     }
     return obj;
   }, items);
-  const tmp3 = merged(7222)(message);
+  const tmp3 = merged(7224)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(7965).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7968).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <closure_10 messageOptions={obj2} seeMoreLabel="..." />;
 }));
@@ -444,8 +444,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
   const tmp5 = useThemeDefault();
   if (cResult[0] !== tmp5) {
     const obj2 = { seeMoreLabelColor: nativeDefault.colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(5151).createNativeStyleProperties;
-    tmp(5151);
+    const createNativeStyleProperties = tmp(5153).createNativeStyleProperties;
+    tmp(5153);
     const tmp8 = createNativeStyleProperties(obj2)(tmp5);
     cResult[0] = tmp5;
     cResult[1] = tmp8;
@@ -465,7 +465,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const RenderEmbeds = tmp(2041).RenderEmbeds;
+      const RenderEmbeds = tmp(2044).RenderEmbeds;
       const setting = RenderEmbeds.getSetting();
       cResult[5] = setting;
       tmp11 = setting;
@@ -474,7 +474,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineEmbedMedia = tmp(2041).InlineEmbedMedia;
+      const InlineEmbedMedia = tmp(2044).InlineEmbedMedia;
       const setting1 = InlineEmbedMedia.getSetting();
       cResult[6] = setting1;
       tmp13 = setting1;
@@ -483,7 +483,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const InlineAttachmentMedia = tmp(2041).InlineAttachmentMedia;
+      const InlineAttachmentMedia = tmp(2044).InlineAttachmentMedia;
       const setting2 = InlineAttachmentMedia.getSetting();
       cResult[7] = setting2;
       tmp15 = setting2;
@@ -534,7 +534,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     arg0.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
     if (null != lineClamp) {
       const obj = { numberOfLines: tmp3, expandable: false, seeMoreLabel: intl.string(intl2.t.qCozu3), seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       arg0.truncation = obj;
     }
   }
@@ -555,7 +555,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
   if (str === undefined) {
     str = "none";
   }
-  let tmp = messageOptions(5087)();
+  let tmp = messageOptions(5090)();
   let obj = createStyles;
   const obj2 = { seeMoreLabelColor: messageOptions(587).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -574,7 +574,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     setOptions(obj);
     return tmp;
   }, items);
-  return jsx(messageOptions(9594), {
+  return jsx(messageOptions(9610), {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {
@@ -582,7 +582,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
       arg0.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
       if (null != _require) {
         const obj = { numberOfLines: tmp3, expandable: false, seeMoreLabel: intl.string(intl2.t.qCozu3), seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
-        intl = tmp(1126).intl;
+        intl = tmp(1128).intl;
         arg0.truncation = obj;
       }
     },

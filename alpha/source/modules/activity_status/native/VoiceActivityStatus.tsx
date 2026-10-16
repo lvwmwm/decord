@@ -1,17 +1,17 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10493
+// Function ID: 10494
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 5151, 1126, 558, 576, 10479, 10467, 2]
+// Dependencies: [19, 21, 5153, 1128, 558, 576, 10494, 10483, 2]
 // Exports: getVoiceActivityStatusText
 
-// Module 10478 (VoiceActivityStatus)
+// Module 10493 (VoiceActivityStatus)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10467 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10479 */;
+import intl3 from "intl" /* 1128 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10483 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10494 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,9 +75,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActivit
               let stringResult;
               if (!channel.isGroupDM()) {
                 const isGuildStageVoiceResult = channel.isGuildStageVoice();
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 const string = intl.string;
-                const t = tmp(1126).t;
+                const t = tmp(1128).t;
                 if (isGuildStageVoiceResult) {
                   stringResult = string(t.QygGCN);
                 } else {
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActivit
               obj3.children = stringResult;
               tmp14Result = tmp14(tmp16, obj3);
             }
-            const intl2 = tmp(1126).intl;
-            stringResult = intl2.string(tmp(1126).t["9FaEzi"]);
+            const intl2 = tmp(1128).intl;
+            stringResult = intl2.string(tmp(1128).t["9FaEzi"]);
           }
           cResult[5] = channel;
           cResult[6] = undefined !== hideText && hideText;

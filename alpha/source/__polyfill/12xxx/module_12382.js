@@ -1,43 +1,48 @@
 // Module ID: 12382
 // Function ID: 12383
-// Dependencies: [12302, 12281]
-// Exports: captureFeedback
+// Dependencies: []
+// Exports: parseCookie
 
 // Module 12382
-import _mod12281 from "module_12281" /* 12281 */;
-import _mod12302 from "module_12302" /* 12302 */;
 
-
-export const captureFeedback = function captureFeedback(arg0) {
-  let associatedEventId;
-  let email;
-  let message;
-  let name;
-  let obj4;
-  let obj6;
-  let source;
-  let tags;
-  let url;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+export const parseCookie = function parseCookie(arr) {
+  const obj = {};
+  let num = 0;
+  if (0 < arr.length) {
+    const index = arr.indexOf("=", num);
+    if (-1 !== index) {
+      let length = arr.indexOf(";", num);
+      if (-1 === length) {
+        length = arr.length;
+      } else {
+        let sum;
+        if (length < index) {
+          sum = arr.lastIndexOf(";", index - 1) + 1;
+        }
+        num = sum;
+      }
+      const str = arr.slice(num, index);
+      const trimmed = str.trim();
+      if (undefined === obj[trimmed]) {
+        const str2 = arr.slice(index + 1, length);
+        const trimmed1 = str2.trim();
+        let substr = trimmed1;
+        if (34 === trimmed1.charCodeAt(0)) {
+          substr = trimmed1.slice(1, -1);
+        }
+        try {
+          let decodeURIComponentResult = substr;
+          if (-1 !== substr.indexOf("%")) {
+            const _decodeURIComponent = decodeURIComponent;
+            decodeURIComponentResult = decodeURIComponent(substr);
+          }
+          obj[trimmed] = decodeURIComponentResult;
+        } catch (err) {
+          obj[trimmed] = substr;
+        }
+      }
+      sum = length + 1;
+    }
   }
-  let currentScope = arg2;
-  if (arg2 === undefined) {
-    const obj3 = _mod12302;
-    currentScope = obj3.getCurrentScope();
-  }
-  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
-  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
-  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
-  obj6 = _mod12281;
-  let client = currentScope && currentScope.getClient();
-  if (!client) {
-    const tmp3Result = _mod12302;
-    client = tmp3Result.getClient();
-  }
-  if (client) {
-    client.emit("beforeSendFeedback", obj2, obj);
-  }
-  return currentScope.captureEvent(obj2, obj);
+  return obj;
 };

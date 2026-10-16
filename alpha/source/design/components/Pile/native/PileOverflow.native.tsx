@@ -1,19 +1,19 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12643
+// Function ID: 12644
 // Name: PileOverflow
-// Dependencies: [19, 17, 2129, 21, 5151, 587, 558, 576, 573, 1901, 5147, 2]
+// Dependencies: [19, 17, 2132, 21, 5153, 587, 558, 576, 573, 1903, 5149, 2]
 
-// Module 12620 (PileOverflow)
+// Module 12643 (PileOverflow)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NumberUtils from "NumberUtils" /* 1901 */;
-import Text_Text from "Text/Text" /* 5147 */;
+import NumberUtils from "NumberUtils" /* 1903 */;
+import Text_Text from "Text/Text" /* 5149 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PileOverflow
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(5147).Text;
+  Text = tmp(5149).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {

@@ -1,23 +1,23 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 11189
+// Function ID: 11190
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2024, 21, 5151, 558, 576, 5088, 11174, 1126, 5147, 4862, 5439, 5359, 2]
+// Dependencies: [19, 17, 2026, 21, 5153, 558, 576, 5091, 11190, 1128, 5149, 4865, 5441, 5361, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11173 (confirmExternalAppLaunchAlert)
+// Module 11189 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import Constants from "Constants" /* 2024 */;
-import LinkingDefault from "Linking" /* 4862 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11174 */;
+import intl4 from "intl" /* 1128 */;
+import Constants from "Constants" /* 2026 */;
+import LinkingDefault from "Linking" /* 4865 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   }
   const alertEyebrowText = tmp4.alertEyebrowText;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["06YebE"]);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -69,7 +69,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   }
   const alertTitleText = tmp4.alertTitleText;
   if (cResult[5] !== application.name) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj4 = { activityName: application.name };
     const formatResult = intl2.format(intl4.t["Z/eMDT"], obj4);
     cResult[5] = application.name;
@@ -88,7 +88,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
     const _Symbol = Symbol;
     const alertSubtitleText = tmp4.alertSubtitleText;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult1 = intl3.string(intl4.t.z81WwD);
       cResult[10] = stringResult1;
       tmp19 = stringResult1;
@@ -181,8 +181,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBut
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5439).Button;
-    intl = tmp(1126).intl;
+    const Button = tmp(5441).Button;
+    intl = tmp(1128).intl;
     const tmp8 = hasOwnProperty(Button, obj2);
     cResult[1] = tmp8;
     tmp6 = tmp8;

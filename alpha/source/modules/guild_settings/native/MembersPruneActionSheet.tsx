@@ -1,19 +1,19 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17653
+// Function ID: 17654
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 17620, 2087, 4806, 1390, 21, 558, 576, 584, 17621, 5115, 7060, 1126, 6482, 6483, 5147, 5439, 7118, 7186, 504, 2]
+// Dependencies: [32, 19, 17654, 2090, 4809, 1392, 21, 558, 576, 584, 17655, 5118, 7062, 1128, 6484, 6485, 5149, 5441, 7120, 7188, 504, 2]
 
-// Module 17619 (MembersPruneActionSheet)
+// Module 17653 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7186 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 17621 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7188 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 17655 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 17620 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
-import UserStore from "UserStore" /* 1390 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 17654 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -54,10 +54,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   if (cResult[1] !== guild.id) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150299 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150769 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F150300 */ };
+        return () => { /* body not rendered: F150770 */ };
       }
     }
     cResult[1] = guild.id;
@@ -66,30 +66,30 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   } else {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150299 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150769 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F150300 */ };
+        return () => { /* body not rendered: F150770 */ };
       }
     }
   }
   if (cResult[3] === first) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150299 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150769 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F150300 */ };
+        return () => { /* body not rendered: F150770 */ };
       }
     }
     const effect = obj2.useEffect(tmp6, items2);
     if (cResult[6] === first) {
       class T {
         constructor() {
-          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150299 */ };
+          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F150769 */ };
           obj = id(closure_2[9]);
           subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-          return () => { /* body not rendered: F150300 */ };
+          return () => { /* body not rendered: F150770 */ };
         }
       }
     }

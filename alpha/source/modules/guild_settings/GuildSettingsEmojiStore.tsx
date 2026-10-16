@@ -1,15 +1,15 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18680
+// Function ID: 18681
 // Name: GuildSettingsEmojiStore
-// Dependencies: [18639, 4995, 1457, 1102, 504, 584, 2]
+// Dependencies: [18681, 4998, 1459, 1104, 504, 584, 2]
 
-// Module 18638 (GuildSettingsEmojiStore)
+// Module 18680 (GuildSettingsEmojiStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import EmojiRecord from "EmojiRecord" /* 18639 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import LRUCache from "LRUCache" /* 1457 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import EmojiRecord from "EmojiRecord" /* 18681 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import LRUCache from "LRUCache" /* 1459 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

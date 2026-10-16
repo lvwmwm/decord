@@ -1,11 +1,11 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9555
+// Function ID: 9556
 // Name: getAdaptiveMessageLimit
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 // Exports: getMessageLimit, useMessageLimit
 
-// Module 9539 (getAdaptiveMessageLimit)
-import Constants from "Constants" /* 1085 */;
+// Module 9555 (getAdaptiveMessageLimit)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const MAX_MESSAGES_PER_CHANNEL = Constants.MAX_MESSAGES_PER_CHANNEL;

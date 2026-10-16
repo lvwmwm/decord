@@ -1,26 +1,26 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12437
+// Function ID: 12438
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 7396, 1085, 21, 5151, 6479, 558, 576, 504, 6319, 12415, 12416, 12413, 7985, 12417, 7035, 6421, 6908, 2]
+// Dependencies: [5, 32, 19, 7398, 1087, 21, 5153, 6481, 558, 576, 504, 6321, 12438, 12439, 12436, 7988, 12440, 7037, 6423, 6910, 2]
 
-// Module 12414 (AcceptGuildTemplateModal)
+// Module 12437 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import NavigatorConstants from "NavigatorConstants" /* 6479 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12416 */;
+import Constants from "Constants" /* 1087 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import NavigatorConstants from "NavigatorConstants" /* 6481 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12439 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7396 */;
-import createStyles from "createStyles" /* 5151 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7398 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap;
 
 let obj2;
-const f112612 = () => {
+const f112950 = () => {
   const obj = closure_1_1(closure_1_3[14]);
   return obj.hideModal();
 };
@@ -71,7 +71,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = first1(6319);
+    let obj3 = first1(6321);
     const guildNameSuggestion = obj3.getGuildNameSuggestion();
     cResult[3] = guildNameSuggestion;
     tmp9 = guildNameSuggestion;
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   [first2, _slicedToArray] = react.useState(null);
   const tmp16 = _slicedToArray(react.useState(null), 2);
   [tmp17, react] = tmp16;
-  stateFromStores(12415)(stateFromStores);
+  stateFromStores(12438)(stateFromStores);
   const tmp18 = stateFromStores;
   if (cResult[4] === stateFromStores) {
     if (cResult[5] === first2) {
@@ -198,8 +198,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       cResult[13] = tmp20;
       cResult[14] = first2;
       cResult[15] = first1;
-      cResult[16] = jsx(tmp18(12417), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
-      const tmp25 = jsx(tmp18(12417), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      cResult[16] = jsx(tmp18(12440), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      const tmp25 = jsx(tmp18(12440), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
     }
   }
   function handleCreateServer() {
@@ -235,12 +235,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   const items = [GuildTemplateStore];
   const stateFromStores = obj.useStateFromStores(items, () => GuildTemplateStore.getGuildTemplate(code));
   const useState = react.useState;
-  let obj2 = name(6319);
+  let obj2 = name(6321);
   [name, dependencyMap] = useState(obj2.getGuildNameSuggestion());
   [first1, _slicedToArray] = react.useState(null);
   [first2, react] = react.useState(null);
-  stateFromStores(12415)(stateFromStores);
-  const SafeAreaPaddingView = code(7035).SafeAreaPaddingView;
+  stateFromStores(12438)(stateFromStores);
+  const SafeAreaPaddingView = code(7037).SafeAreaPaddingView;
   let obj4 = {
     code,
     guildTemplate: stateFromStores,
@@ -318,7 +318,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   };
-  stateFromStores(12417);
+  stateFromStores(12440);
   return <SafeAreaPaddingView top style={tmp.container}>{null}</SafeAreaPaddingView>;
 });
 const ACCEPT_GUILD_TEMPLATE = "ACCEPT_GUILD_TEMPLATE";
@@ -334,17 +334,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
   if (cResult[0] !== code) {
     obj2 = { code };
     const obj3 = {};
-    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f112612), render };
+    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f112950), render };
     obj3[ACCEPT_GUILD_TEMPLATE] = obj4;
     cResult[0] = code;
     cResult[1] = obj3;
     tmp4 = obj3;
-    tmpResult = obj2(6421);
+    tmpResult = obj2(6423);
   } else {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp9 = jsx(obj2(6908).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: tmp4 });
+    const tmp9 = jsx(obj2(6910).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -359,12 +359,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
     let obj4;
     let obj = { code };
     const obj2 = {};
-    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f112612), render };
+    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f112950), render };
     obj2[ACCEPT_GUILD_TEMPLATE] = obj3;
     obj4 = NavigatorHeader;
     return obj2;
   }, items);
-  return jsx(code(6908).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
+  return jsx(code(6910).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
 });
 const result = size.fileFinishedImporting("modules/guild_templates/native/AcceptGuildTemplateModal.tsx");
 

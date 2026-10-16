@@ -1,16 +1,16 @@
-// Module ID: 18060
-// Function ID: 18061
+// Module ID: 18095
+// Function ID: 18096
 // Name: LeaveActivityButton
-// Dependencies: [19, 6289, 21, 558, 576, 1126, 5439, 11291, 10953, 2]
+// Dependencies: [19, 6291, 21, 558, 576, 1128, 5441, 11311, 10968, 2]
 
-// Module 18060 (LeaveActivityButton)
+// Module 18095 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6289 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10953 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11291 */;
+import intl3 from "intl" /* 1128 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10968 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11311 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,9 +26,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseLeaveA
   const cResult = obj.c(4);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["Hi1/aQ"]);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.k0Aph0);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseLeaveA
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const Button = tmp(5439).Button;
+    const Button = tmp(5441).Button;
     const tmp11 = <Button onPress={onPress} icon={AssetRegistryDefault} text={tmp4} accessibilityLabel={tmp5} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
     cResult[2] = onPress;
     cResult[3] = tmp11;

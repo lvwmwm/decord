@@ -1,21 +1,21 @@
-// Module ID: 5477
-// Function ID: 5478
+// Module ID: 5479
+// Function ID: 5480
 // Name: MediaPostEmbedUtils
-// Dependencies: [2087, 4816, 1390, 1085, 5478, 1126, 5469, 1415, 1403, 5481, 5131, 5482, 2]
+// Dependencies: [2090, 4819, 1392, 1087, 5480, 1128, 5471, 1417, 1405, 5483, 5134, 5484, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 5477 (MediaPostEmbedUtils)
-import FlagUtils from "FlagUtils" /* 1403 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import findCodedLinks from "findCodedLinks" /* 5131 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5478 */;
-import useChannelName from "useChannelName" /* 5481 */;
-import LinkUtils from "LinkUtils" /* 5482 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+// Module 5479 (MediaPostEmbedUtils)
+import FlagUtils from "FlagUtils" /* 1405 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import findCodedLinks from "findCodedLinks" /* 5134 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5471 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5480 */;
+import useChannelName from "useChannelName" /* 5483 */;
+import LinkUtils from "LinkUtils" /* 5484 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -52,9 +52,9 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (!canAccess) {
       has_media_attachment = mediaPostEmbedData.has_media_attachment;
     }
-    const intl = tmp18(1126).intl;
+    const intl = tmp18(1128).intl;
     const string = intl.string;
-    const t = tmp18(1126).t;
+    const t = tmp18(1128).t;
     if (canAccess) {
       stringResult = string(t.UsZEBI);
     } else {
@@ -108,8 +108,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     const obj8 = { title: str, subtitle: mediaPostEmbedData.description, ctaText: stringResult, coverImage: thumbnailImage, coverImageOverlayText: stringResult1, parentChannelId: null, threadId: null, postThread, messageId: mediaPostEmbedData.message_id, canAccess, guildId: mediaPostEmbedData.guild_id, guildName: name1, authorId: author_id, authorName: name, channelName, avatarUrl: avatarURL, shouldShowBlurredThumbnailImage: has_media_attachment, shouldContainMediaWithBackground: flag, shouldSpoiler: hasFlagResult, obscureAwaitingScan: false, flags: null, contentScanVersion: null };
     stringResult1 = undefined;
     if (has_media_attachment) {
-      const intl2 = tmp18(1126).intl;
-      stringResult1 = intl2.string(tmp18(1126).t.Yonlia);
+      const intl2 = tmp18(1128).intl;
+      stringResult1 = intl2.string(tmp18(1128).t.Yonlia);
     }
     ({ parent_channel_id: obj4.parentChannelId, channel_id: obj4.threadId } = mediaPostEmbedData);
     name1 = undefined;

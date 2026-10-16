@@ -1,30 +1,30 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12179
+// Function ID: 12180
 // Name: conjurePlanCommandText
-// Dependencies: [19, 12156, 558, 576, 5015, 2]
-// Exports: conjurePlanCommandPattern, conjurePlanSlashCommandNames, splitConjurePlanCommandText
+// Dependencies: [19, 12180, 558, 576, 5018, 2]
+// Exports: conjurePlanCommandPattern, conjurePlanSlashCommandNames, conjurePlanTextMentionsCommand, splitConjurePlanCommandText
 
-// Module 12155 (conjurePlanCommandText)
+// Module 12179 (conjurePlanCommandText)
 import react2 from "react" /* 576 */;
-import escapeRegExpDefault from "escapeRegExp" /* 5015 */;
+import escapeRegExpDefault from "escapeRegExp" /* 5018 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f111639 = (item) => {
+const f111969 = (item) => {
   const obj = closure_1_0(closure_1_2[1]);
   return "/" === obj.conjurePlanCommandPrefix(item);
 };
-const f111640 = (name) => name.name;
-const f111641 = (arg0, arg1) => arg1.length - arg0.length;
+const f111970 = (name) => name.name;
+const f111971 = (arg0, arg1) => arg1.length - arg0.length;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanSlashCommandNames(arr) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] !== arr) {
-    const found = arr.filter(f111639);
-    const mapped = found.map(f111640);
+    const found = arr.filter(f111969);
+    const mapped = found.map(f111970);
     cResult[0] = arr;
     cResult[1] = mapped;
     tmp2 = mapped;
@@ -36,14 +36,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {
-    const found = closure_0.filter(f111639);
-    return found.map(f111640);
+    const found = closure_0.filter(f111969);
+    return found.map(f111970);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-function conjurePlanSlashCommandNames(dependencyMap) {
-  const found = dependencyMap.filter(f111639);
-  return found.map(f111640);
+function conjurePlanSlashCommandNames(arr) {
+  const found = arr.filter(f111969);
+  return found.map(f111970);
 }
 function conjurePlanCommandPattern(size) {
   if (0 === size.length) {
@@ -51,7 +51,7 @@ function conjurePlanCommandPattern(size) {
   } else {
     const items = [];
     HermesBuiltin.arraySpread(items, size, 0);
-    const sorted = items.sort(f111641);
+    const sorted = items.sort(f111971);
     const mapped = sorted.map(escapeRegExpDefault);
     const _RegExp = RegExp;
     const _HermesInternal = HermesInternal;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (0 !== arg0.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, arg0, 0);
-      const sorted = items.sort(f111641);
+      const sorted = items.sort(f111971);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (0 !== length.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, length, 0);
-      const sorted = items.sort(f111641);
+      const sorted = items.sort(f111971);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;
@@ -109,6 +109,19 @@ const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanComma
 export { conjurePlanSlashCommandNames };
 export const useConjurePlanSlashCommandNames = tmp2;
 export { conjurePlanCommandPattern };
+export const conjurePlanTextMentionsCommand = function conjurePlanTextMentionsCommand(item, arr) {
+  if (0 === arr.length) {
+    return false;
+  } else {
+    const mapped = arr.map(escapeRegExpDefault);
+    const _RegExp = RegExp;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const regExp = new RegExp("(?<![\\p{L}\\p{N}/.:])/(?:" + mapped.join("|") + ")(?![\\p{L}\\p{N}_-])", "iu");
+    return regExp.test(item);
+  }
+};
 export const useConjurePlanCommandPattern = tmp3;
 export const splitConjurePlanCommandText = function splitConjurePlanCommandText(text, conjurePlanCommandPattern) {
   if (null == conjurePlanCommandPattern) {

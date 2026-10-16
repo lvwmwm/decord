@@ -1,20 +1,20 @@
-// Module ID: 14615
-// Function ID: 14616
+// Module ID: 14647
+// Function ID: 14648
 // Name: GatewayCompressionHandler
-// Dependencies: [17, 14616, 14618, 3, 1382, 14617, 7130, 2]
+// Dependencies: [17, 14648, 14650, 3, 1384, 14649, 7132, 2]
 // Exports: getCompressionHandler
 
-// Module 14615 (GatewayCompressionHandler)
+// Module 14647 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ProcessArgs2 from "ProcessArgs" /* 7130 */;
-import GatewayZstdUtils from "GatewayZstdUtils" /* 14616 */;
-import _mod14618 from "module_14618" /* 14618 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ProcessArgs2 from "ProcessArgs" /* 7132 */;
+import GatewayZstdUtils from "GatewayZstdUtils" /* 14648 */;
+import _mod14650 from "module_14650" /* 14650 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const react_native2 = tmp(14617);
+const react_native2 = tmp(14649);
 const NativeModules = react_native.NativeModules;
 const items = [];
 class BaseGatewayCompressionHandler {
@@ -107,7 +107,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod14618;
+    tmp2._pako = _mod14650;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -251,7 +251,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod14618;
+    applyArgumentsResult._pako = _mod14650;
     return applyArgumentsResult;
   }
   static canUse() {
@@ -365,7 +365,7 @@ class tmp8 extends BaseGatewayCompressionHandler {
       obj = PlatformUtils;
       const tmp = require;
       if (obj.isAndroid()) {
-        const _default = tmp(14617).default;
+        const _default = tmp(14649).default;
         if (_default != null) {
           const result = _default.disableZlibStreamSupport(_socketId);
         }

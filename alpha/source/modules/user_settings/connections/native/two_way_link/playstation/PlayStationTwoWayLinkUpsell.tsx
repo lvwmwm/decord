@@ -1,21 +1,21 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 15937
+// Function ID: 15938
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1085, 21, 5151, 558, 576, 2128, 15902, 1126, 5088, 15905, 13745, 2049, 2]
+// Dependencies: [19, 1087, 21, 5153, 558, 576, 2131, 15935, 1128, 5091, 15938, 13771, 2052, 2]
 
-// Module 15904 (PlayStationTwoWayLinkUpsell)
+// Module 15937 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2049 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13745 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15902 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15905 */;
+import intl3 from "intl" /* 1128 */;
+import dismissible_content from "dismissible_content" /* 2052 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13771 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15935 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15938 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5151 */;
+import Constants from "Constants" /* 1087 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,10 +38,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationT
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.PS_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(15902).OneWayToTwoWayLinkUpsell;
-    const intl = tmp(1126).intl;
+    const OneWayToTwoWayLinkUpsell = tmp(15935).OneWayToTwoWayLinkUpsell;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.v20wwm);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { help_article: articleURL };
     const formatResult = intl2.format(intl3.t.lTZBit, obj3);
     cResult[0] = OneWayToTwoWayLinkUpsell;

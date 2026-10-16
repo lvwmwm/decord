@@ -1,10 +1,10 @@
-// Module ID: 10619
-// Function ID: 10620
+// Module ID: 10634
+// Function ID: 10635
 // Name: useChannelSafetyWarning
-// Dependencies: [10518, 558, 576, 504, 2]
+// Dependencies: [10533, 558, 576, 504, 2]
 
-// Module 10619 (useChannelSafetyWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10518 */;
+// Module 10634 (useChannelSafetyWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10533 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

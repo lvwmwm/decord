@@ -1,10 +1,10 @@
-// Module ID: 18291
-// Function ID: 18292
+// Module ID: 18333
+// Function ID: 18334
 // Name: IdGenerator
-// Dependencies: [2, 1275]
+// Dependencies: [2, 1277]
 
-// Module 18291 (IdGenerator)
-import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1275 */;
+// Module 18333 (IdGenerator)
+import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1277 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/IdGenerator.tsx");

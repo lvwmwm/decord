@@ -1,16 +1,16 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13854
+// Function ID: 13855
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 2062, 21, 5151, 587, 558, 576, 5088, 1126, 9663, 2]
+// Dependencies: [19, 2065, 21, 5153, 587, 558, 576, 5091, 1128, 9679, 2]
 
-// Module 13828 (MobileShopButtonCoachmark)
+// Module 13854 (MobileShopButtonCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import FastImageDefault from "FastImage" /* 5088 */;
+import intl2 from "intl" /* 1128 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import FastImageDefault from "FastImage" /* 5091 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileShop
               closure_5.current = onDismiss;
             }
           }
-          stringResult = obj3.string(tmp(1126).t.fYfGgK);
+          stringResult = obj3.string(tmp(1128).t.fYfGgK);
         }
         cResult[12] = marketing.buttonLabel;
         cResult[13] = stringResult;

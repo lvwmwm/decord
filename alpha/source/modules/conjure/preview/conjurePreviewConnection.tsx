@@ -1,25 +1,26 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10932
+// Function ID: 10933
 // Name: conjurePreviewConnection
-// Dependencies: [5, 10918, 10962, 10943, 584, 10904, 10963, 10906, 10969, 10972, 10973, 2]
+// Dependencies: [5, 10933, 10977, 10958, 584, 10919, 10978, 10921, 10984, 10987, 10988, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 10917 (conjurePreviewConnection)
+// Module 10932 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10904 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10906 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10918 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10943 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10962 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10963 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10969 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10972 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10973 */;
+import conjureChatConnection from "conjureChatConnection" /* 10919 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10921 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10933 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10958 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10977 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10984 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10987 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_3;
 
+let tmp;
+const ConjurePublishActionCreators = tmp(10978);
 let obj = function _getPreviewScreenshotUrl() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj3;
@@ -634,12 +635,20 @@ obj = {
   }
 };
 let obj2 = {
-  preview_ready(turnId, projectId) {
+  preview_ready(integration_installed, projectId) {
     projectId = projectId.projectId;
     obj = conjureChatConnection;
-    obj.appendTurnStep(projectId, turnId);
-    const obj2 = ConjurePublishActionCreators;
-    const result = obj2.refreshPublishedProject(projectId, { isPreview: true });
+    obj.appendTurnStep(projectId, integration_installed);
+    let tmp4;
+    if (null != integration_installed.integration_installed) {
+      if (null != integration_installed.bot_permissions_changed) {
+        const obj3 = { integrationInstalled: null, botPermissionsChanged: null };
+        ({ integration_installed: obj2.integrationInstalled, bot_permissions_changed: obj2.botPermissionsChanged } = integration_installed);
+        tmp4 = obj3;
+      }
+    }
+    const tmpResult = ConjurePublishActionCreators;
+    const result = tmpResult.refreshPublishedProject(projectId, { isPreview: true, install: tmp4 });
     result.catch(() => {
 
     });

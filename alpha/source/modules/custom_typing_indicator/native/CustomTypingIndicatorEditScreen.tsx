@@ -1,28 +1,28 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16335
+// Function ID: 16336
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5151, 587, 1398, 1126, 3864, 558, 576, 1504, 7073, 1503, 504, 4825, 7098, 1265, 12718, 1411, 5261, 5115, 16303, 2000, 16304, 8510, 8507, 6891, 5851, 15513, 12719, 9614, 12730, 5469, 5147, 16305, 6485, 6400, 2128, 5437, 5439, 9254, 9592, 16350, 10000, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5153, 587, 1400, 1128, 3867, 558, 576, 1506, 7075, 1505, 504, 4828, 7100, 1267, 12744, 1413, 5263, 5118, 16336, 2002, 16337, 8518, 8515, 6893, 5853, 15549, 12745, 9630, 12756, 5471, 5149, 16338, 6487, 6402, 2131, 5439, 5441, 9267, 9608, 16383, 10016, 2]
 
-// Module 16302 (CustomTypingIndicatorEditScreen)
+// Module 16335 (CustomTypingIndicatorEditScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import user from "user" /* 1398 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
-import Link from "Link" /* 1504 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7073 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12718 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import user from "user" /* 1400 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1413 */;
+import Link from "Link" /* 1506 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7075 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9630 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,12 +146,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(16303, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16336, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(16304, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16337, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];
@@ -484,7 +484,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7073).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7075).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

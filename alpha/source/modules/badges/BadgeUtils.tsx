@@ -1,14 +1,14 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10827
+// Function ID: 10828
 // Name: BadgeUtils
-// Dependencies: [8526, 8527, 1126, 8536, 2031, 2]
+// Dependencies: [8534, 8535, 1128, 8544, 2034, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 10812 (BadgeUtils)
-import intl2 from "intl" /* 1126 */;
-import Constants from "Constants" /* 8526 */;
-import BadgeId from "BadgeId" /* 8527 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8536 */;
+// Module 10827 (BadgeUtils)
+import intl2 from "intl" /* 1128 */;
+import Constants from "Constants" /* 8534 */;
+import BadgeId from "BadgeId" /* 8535 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8544 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -59,9 +59,9 @@ export const getDisplayTier = function getDisplayTier(badge) {
 export const getAlwaysVisibleCopy = function getAlwaysVisibleCopy(badge_id) {
   let nPQVxb;
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    nPQVxb = tmp(1126).t.t3udZb;
+    nPQVxb = tmp(1128).t.t3udZb;
   } else {
-    nPQVxb = tmp(1126).t.nPQVxb;
+    nPQVxb = tmp(1128).t.nPQVxb;
   }
   return nPQVxb;
 };
@@ -129,7 +129,7 @@ export const getProfileBadgeLabel = function getProfileBadgeLabel(description, i
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2031);
+      tmp(2034);
     }
     return info_label;
   }

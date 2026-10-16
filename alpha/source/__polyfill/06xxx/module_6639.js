@@ -1,32 +1,24 @@
 // Module ID: 6639
 // Function ID: 6640
-// Dependencies: [6623, 6640, 6598, 6642]
-// Exports: useGestureCallbacks
+// Dependencies: [6625, 6640, 6616]
+// Exports: useTapGesture
 
 // Module 6639
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6623 */;
-import react from "react" /* 6640 */;
-import _mod6642 from "module_6642" /* 6642 */;
+import ComposedGestureName from "ComposedGestureName" /* 6616 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6625 */;
+import _mod6640 from "module_6640" /* 6640 */;
 
+const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
+const map = new Map(items);
+let closure_3 = {};
 
-export const useGestureCallbacks = function useGestureCallbacks(handlerTag, disableReanimated) {
+export const useTapGesture = function useTapGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_3;
+  }
   const obj = maybeExtractNativeEvent;
-  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
-  let reanimatedEventHandler;
-  const obj2 = react;
-  const jsEventHandler = obj2.useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated);
-  if (!disableReanimated.disableReanimated) {
-    const Reanimated = tmp(6598).Reanimated;
-    let handler;
-    if (Reanimated != null) {
-      handler = Reanimated.useHandler(memoizedGestureCallbacks);
-    }
-    const tmpResult = _mod6642;
-    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
-  }
-  let animatedEventHandler;
-  if (disableReanimated.dispatchesAnimatedEvents) {
-    animatedEventHandler = disableReanimated.onUpdate;
-  }
-  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map);
+  const obj2 = _mod6640;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
 };

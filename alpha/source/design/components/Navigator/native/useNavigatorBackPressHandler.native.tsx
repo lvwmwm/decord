@@ -1,10 +1,10 @@
-// Module ID: 6427
-// Function ID: 6428
+// Module ID: 6429
+// Function ID: 6430
 // Name: useNavigatorBackPressHandler
-// Dependencies: [19, 558, 576, 5432, 1504, 2]
+// Dependencies: [19, 558, 576, 5434, 1506, 2]
 
-// Module 6427 (useNavigatorBackPressHandler)
-import useBackPressHandler from "useBackPressHandler" /* 5432 */;
+// Module 6429 (useNavigatorBackPressHandler)
+import useBackPressHandler from "useBackPressHandler" /* 5434 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(1504);
+  const tmpResult = tmp(1506);
   const focusEffect = tmpResult.useFocusEffect(tmp6);
 }) : (function useNavigatorBackPressHandler(cResult) {
   let closure_1;

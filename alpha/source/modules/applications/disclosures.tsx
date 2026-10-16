@@ -1,14 +1,14 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9466
+// Function ID: 9467
 // Name: disclosures
-// Dependencies: [5, 1085, 1295, 9451, 1126, 2]
+// Dependencies: [5, 1087, 1297, 9467, 1128, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9450 (disclosures)
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import applications from "applications" /* 9451 */;
+// Module 9466 (disclosures)
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import applications from "applications" /* 9467 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -102,10 +102,10 @@ export const ackDisclosures = function ackDisclosures() {
 };
 export const getTextForDisclosure = function getTextForDisclosure(disclosure) {
   if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     return intl2.string(intl3.t["6wPmjo"]);
   } else if (applications.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     return intl.string(intl3.t["/uOMKZ"]);
   } else {
     return null;

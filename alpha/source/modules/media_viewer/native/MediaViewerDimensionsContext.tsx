@@ -1,13 +1,13 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8646
+// Function ID: 8647
 // Name: MediaViewerDimensionsContext
-// Dependencies: [19, 21, 558, 576, 1497, 38, 2]
+// Dependencies: [19, 21, 558, 576, 1499, 38, 2]
 
-// Module 8638 (MediaViewerDimensionsContext)
+// Module 8646 (MediaViewerDimensionsContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 14672
-// Function ID: 14673
+// Module ID: 14704
+// Function ID: 14705
 // Name: ActiveChannelsStore
-// Dependencies: [2065, 4995, 2072, 11, 12, 504, 584, 2]
+// Dependencies: [2068, 4998, 2075, 11, 12, 504, 584, 2]
 
-// Module 14672 (ActiveChannelsStore)
+// Module 14704 (ActiveChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, closure_9, importDefault, set;

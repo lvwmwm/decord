@@ -1,20 +1,20 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9094
+// Function ID: 9095
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 5151, 558, 576, 1200, 5025, 9087, 9084, 9085, 2]
+// Dependencies: [109, 19, 21, 5153, 558, 576, 1202, 5028, 9095, 9092, 9093, 2]
 // Exports: hasGuildBadge
 
-// Module 9086 (GuildBadgeV2)
+// Module 9094 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1200 */;
-import shared from "shared" /* 5025 */;
-import GuildTraits from "GuildTraits" /* 9084 */;
-import BadgeCategory from "BadgeCategory" /* 9085 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9087 */;
+import native from "native" /* 1202 */;
+import shared from "shared" /* 5028 */;
+import GuildTraits from "GuildTraits" /* 9092 */;
+import BadgeCategory from "BadgeCategory" /* 9093 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9095 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
     MEDIUM = cResult[3];
   }
   if (undefined === MEDIUM) {
-    MEDIUM = tmp(1200).Icon.Sizes.MEDIUM;
+    MEDIUM = tmp(1202).Icon.Sizes.MEDIUM;
   }
   const tmp9 = closure_5();
   const tmpResult = shared;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
             }
           }
         }
-        const Icon = tmp(1200).Icon;
+        const Icon = tmp(1202).Icon;
         const merged = Object.assign(tmp5);
         const tmp18 = <Icon size={MEDIUM} source={tmp10} style={tmp9.icon} disableColor />;
         cResult[7] = tmp10;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadge
     const guildBadgeImageSource = tmp5Result.getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
-      const Icon = tmp5(1200).Icon;
+      const Icon = tmp5(1202).Icon;
       const merged1 = Object.assign(merged);
       tmp10 = <Icon size={size} source={guildBadgeImageSource} style={tmp4.icon} disableColor />;
     }

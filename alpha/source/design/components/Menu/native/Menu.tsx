@@ -1,24 +1,24 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14923
+// Function ID: 14924
 // Name: Menu
-// Dependencies: [32, 19, 17, 1085, 21, 14891, 5151, 587, 4906, 4890, 1631, 1497, 1382, 4884, 1126, 5431, 5152, 5432, 14892, 14893, 5438, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 14924, 5153, 587, 4909, 4893, 1633, 1499, 1384, 4887, 1128, 5433, 5154, 5434, 14925, 14926, 5440, 2]
 // Exports: Menu
 
-// Module 14890 (Menu)
+// Module 14923 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import timing from "timing" /* 5152 */;
-import react_native from "react-native" /* 5431 */;
-import spring from "spring" /* 5438 */;
-import Easing from "Easing" /* 14891 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import timing from "timing" /* 5154 */;
+import react_native from "react-native" /* 5433 */;
+import spring from "spring" /* 5440 */;
+import Easing from "Easing" /* 14924 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -67,7 +67,7 @@ export const Menu = function Menu(toggleButtonRef) {
   let View;
   let children;
   let closure_5;
-  let items5;
+  let items6;
   let obj7;
   let obj8;
   let obj9;
@@ -108,9 +108,9 @@ export const Menu = function Menu(toggleButtonRef) {
   function openMenuCallback() {
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4884).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4887).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       announce(intl.string(intl2.t.ZqK0uI));
     }
     const obj2 = { ref };
@@ -175,6 +175,8 @@ export const Menu = function Menu(toggleButtonRef) {
     return true;
   }, items3);
   tmp4(tmp3[17])(callback2);
+  const items4 = [menuClose, callback1];
+  const memo = obj.useMemo(() => ({ menuClose, menuDismiss: callback1 }), items4);
   const tmp2Result = tmp2(tmp3[18]);
   const boxShadowStyle = tmp2Result.generateBoxShadowStyle(tmp2(tmp3[18]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
   if ("left" === position) {
@@ -197,7 +199,7 @@ export const Menu = function Menu(toggleButtonRef) {
     }
     const sum1 = pageY + num2;
     let sum3 = sum1;
-    let tmp19 = sum;
+    let tmp20 = sum;
     if ("end" === str) {
       let num3 = 0;
       if ("row" === str2) {
@@ -209,9 +211,9 @@ export const Menu = function Menu(toggleButtonRef) {
         num4 = size2.height;
       }
       sum3 = sum1 + num4;
-      tmp19 = sum2;
+      tmp20 = sum2;
     }
-    point = { x: tmp19, y: sum3 };
+    point = { x: tmp20, y: sum3 };
   }
   const height = size.height;
   if ("left" === position) {
@@ -236,10 +238,10 @@ export const Menu = function Menu(toggleButtonRef) {
     x = size.width - point.x;
   }
   let y = point.y;
-  const tmp22 = "top" === str12 ? y : height - y;
+  const tmp23 = "top" === str12 ? y : height - y;
   if (null != offset) {
     sum4 = x + offset.x;
-    sum5 = tmp22 + offset.y;
+    sum5 = tmp23 + offset.y;
   } else {
     let num5 = 0;
     if ("column" === str2) {
@@ -250,15 +252,15 @@ export const Menu = function Menu(toggleButtonRef) {
     if ("row" === str2) {
       num6 = 10;
     }
-    sum5 = tmp22 + num6;
+    sum5 = tmp23 + num6;
   }
   const obj4 = { maxHeight: height - sum5 - ("top" === str12 ? rect.bottom : rect.top) - 12 };
   obj4[str9] = sum4;
   obj4[str12] = sum5;
-  const items4 = [obj4, str9, str12];
-  closure_12 = tmp27;
-  __initData = tmp28;
-  const first = tmp5(items4, 3)[0];
+  const items5 = [obj4, str9, str12];
+  closure_12 = tmp28;
+  __initData = tmp29;
+  const first = tmp5(items5, 3)[0];
   let fn = function z() {
     let items;
     const obj = { opacity: sharedValue.get(), transform: items };
@@ -295,7 +297,7 @@ export const Menu = function Menu(toggleButtonRef) {
       items1[1] = num4;
       items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
       const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-      const interpolate2 = tmp2(4906).interpolate;
+      const interpolate2 = tmp2(4909).interpolate;
       ReanimatedRexport;
       const value8 = obj2.get();
       if ("top" === __initData) {
@@ -326,9 +328,9 @@ export const Menu = function Menu(toggleButtonRef) {
     }
     return obj;
   };
-  const tmp5Result = tmp5(items4, 3);
+  const tmp5Result = tmp5(items5, 3);
   const tmp2Result2 = tmp2(tmp3[8]);
-  let obj5 = { visible: sharedValue, useReducedMotion: enabled, interpolate: tmp2(tmp3[8]).interpolate, dirX: tmp27, size: sharedValue1, offsetAnimated, dirY: tmp28 };
+  let obj5 = { visible: sharedValue, useReducedMotion: enabled, interpolate: tmp2(tmp3[8]).interpolate, dirX: tmp28, size: sharedValue1, offsetAnimated, dirY: tmp29 };
   fn.__closure = obj5;
   fn.__workletHash = 7884133597410;
   fn.__initData = __initData;
@@ -336,7 +338,7 @@ export const Menu = function Menu(toggleButtonRef) {
   let obj6 = { style: tmp.backdrop, accessibilityViewIsModal: true, importantForAccessibility: "yes", onTouchDown: callback1, onAccessibilityEscape: callback1, children: sharedValue1(View, obj7) };
   obj7 = {
     accessibilityRole: "list",
-    style: items5,
+    style: items6,
     onLayout: function handleOpen(nativeEvent) {
       size = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
       const result = sharedValue1.set(size);
@@ -354,10 +356,10 @@ export const Menu = function Menu(toggleButtonRef) {
     },
     children: sharedValue1(closure_5, obj8)
   };
-  items5 = [tmp.menu, boxShadowStyle, first, animatedStyle, style];
+  items6 = [tmp.menu, boxShadowStyle, first, animatedStyle, style];
   obj8 = { children: sharedValue1(Provider, obj9) };
   obj9 = {
-    value: { menuClose, menuDismiss: callback1 },
+    value: memo,
     children: Children.map(children, (label, arg1) => {
       let cloneElementResult = label;
       if (0 === arg1) {

@@ -1,23 +1,24 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8705
+// Function ID: 8706
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7226, 2065, 5492, 1390, 1085, 5479, 2041, 1403, 1384, 1386, 558, 576, 5496, 1998, 5504, 11, 2]
+// Dependencies: [19, 7228, 2068, 5494, 1392, 1087, 1105, 5481, 2044, 1405, 1386, 1388, 558, 576, 5498, 2000, 5506, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8697 (ForumPostMediaUtils)
+// Module 8705 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5479 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5481 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7226 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5492 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7228 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageStore from "MessageStore" /* 5494 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +28,7 @@ let _require, type;
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(5496);
+const InteractionComponentUtils = tmp(5498);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -279,7 +280,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
             tmp10 = cResult[6];
           }
           const mapped = embeds1.map(tmp10);
-          const found = mapped.filter(tmp(1386).isNotNullish);
+          const found = mapped.filter(tmp(1388).isNotNullish);
           cResult[2] = embeds1;
           cResult[3] = spoiler;
           cResult[4] = found;
@@ -370,7 +371,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
               }
             }
           });
-          found = mapped.filter(tmp(1386).isNotNullish);
+          found = mapped.filter(tmp(1388).isNotNullish);
         }
         return found;
       }
@@ -422,11 +423,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
               if (spoiler == null) {
                 spoiler = false;
               }
-              let tmpResult = tmp(tmp2[15]);
+              let tmpResult = tmp(tmp2[16]);
               let unfurledMediaItemType = tmpResult.getUnfurledMediaItemType(media);
               let tmp6 = null;
               if ("INVALID" !== unfurledMediaItemType) {
-                size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult2.hasFlag(media.flags, tmp(tmp2[15]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
+                size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult2.hasFlag(media.flags, tmp(tmp2[16]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
                 ({ proxyUrl: obj3.src, height } = media);
                 if (height == null) {
                   height = 0;
@@ -457,11 +458,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
                 if (spoiler == null) {
                   spoiler = false;
                 }
-                const obj = closure_1_0(closure_1_2[15]);
+                const obj = closure_1_0(closure_1_2[16]);
                 const unfurledMediaItemType = obj.getUnfurledMediaItemType(media);
                 let tmp4 = null;
                 if ("INVALID" !== unfurledMediaItemType) {
-                  size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult.hasFlag(media.flags, closure_1_0(closure_1_2[15]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
+                  size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult.hasFlag(media.flags, closure_1_0(closure_1_2[16]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
                   ({ proxyUrl: obj3.src, height } = media);
                   if (height == null) {
                     height = 0;
@@ -476,7 +477,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
                     version = contentScanMetadata.version;
                   }
                   tmp4 = size;
-                  tmpResult = closure_1_0(closure_1_2[8]);
+                  tmpResult = closure_1_0(closure_1_2[9]);
                 }
                 return tmp4;
               });
@@ -536,11 +537,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
             if (spoiler == null) {
               spoiler = false;
             }
-            let tmpResult = tmp(tmp2[15]);
+            let tmpResult = tmp(tmp2[16]);
             let unfurledMediaItemType = tmpResult.getUnfurledMediaItemType(media);
             let tmp6 = null;
             if ("INVALID" !== unfurledMediaItemType) {
-              size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult2.hasFlag(media.flags, tmp(tmp2[15]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
+              size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult2.hasFlag(media.flags, tmp(tmp2[16]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
               ({ proxyUrl: obj3.src, height } = media);
               if (height == null) {
                 height = 0;
@@ -571,11 +572,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
               if (spoiler == null) {
                 spoiler = false;
               }
-              const obj = closure_1_0(closure_1_2[15]);
+              const obj = closure_1_0(closure_1_2[16]);
               const unfurledMediaItemType = obj.getUnfurledMediaItemType(media);
               let tmp4 = null;
               if ("INVALID" !== unfurledMediaItemType) {
-                size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult.hasFlag(media.flags, closure_1_0(closure_1_2[15]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
+                size = { type: constants.COMPONENT, src: null, height, width: num, spoiler, contentScanVersion: version, flags: 0, srcIsAnimated: tmpResult.hasFlag(media.flags, closure_1_0(closure_1_2[16]).UnfurledMediaItemFlags.IS_ANIMATED), isVideo: "VIDEO" === unfurledMediaItemType, mediaIndex: 0, srcUnfurledMediaItem: media };
                 ({ proxyUrl: obj3.src, height } = media);
                 if (height == null) {
                   height = 0;
@@ -590,7 +591,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
                   version = contentScanMetadata.version;
                 }
                 tmp4 = size;
-                tmpResult = closure_1_0(closure_1_2[8]);
+                tmpResult = closure_1_0(closure_1_2[9]);
               }
               return tmp4;
             });
@@ -625,7 +626,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
         let tmp8;
         const _Symbol2 = Symbol;
         if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-          const fn = function h(isThumbnail) {
+          const fn = function f(isThumbnail) {
             return isThumbnail.isThumbnail;
           };
           cResult[3] = fn;
@@ -801,13 +802,17 @@ const result = size.fileFinishedImporting("modules/forums/ForumPostMediaUtils.ts
 export const getEmbedColor = function getEmbedColor(firstResult, flag) {
   if (null != firstResult) {
     if (null != firstResult.embeds[0]) {
-      let tmp;
-      if (null == firstResult.embeds[0].color) {
-        if (!flag) {
-          tmp = firstResult.embeds[0].color;
+      const color = firstResult.embeds[0].color;
+      let int2hslResult;
+      if (null != color) {
+        if (16777215 !== color) {
+          if (!flag) {
+            const obj = utils_ColorUtils;
+            int2hslResult = obj.int2hsl(color, false);
+          }
         }
       }
-      return tmp;
+      return int2hslResult;
     }
   }
 };

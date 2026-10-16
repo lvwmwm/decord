@@ -1,14 +1,14 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 6981
+// Function ID: 6982
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 5151, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5153, 558, 576, 2]
 
-// Module 6979 (PortalToNativeView)
+// Module 6981 (PortalToNativeView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

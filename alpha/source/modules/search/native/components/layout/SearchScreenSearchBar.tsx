@@ -1,18 +1,18 @@
-// Module ID: 17648
-// Function ID: 17649
+// Module ID: 17682
+// Function ID: 17683
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 5151, 558, 576, 4879, 6525, 1894, 17649, 17651, 17656, 2]
+// Dependencies: [19, 17, 21, 5153, 558, 576, 4882, 6527, 1896, 17683, 17685, 17690, 2]
 
-// Module 17648 (SearchScreenSearchBar)
+// Module 17682 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import mergeProps from "mergeProps" /* 4879 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6525 */;
-import SearchBarDefault from "SearchBar" /* 17649 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17651 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
+import mergeProps from "mergeProps" /* 4882 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6527 */;
+import SearchBarDefault from "SearchBar" /* 17683 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17685 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let dependencyMap, importDefault, tmp2;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(17656);
+const SearchFilterButtonDefault = tmp8(17690);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = ref1;
   ref1 = react.useRef(null);
   if (cResult[0] !== ref) {
-    const tmpResult = tmp(4879);
+    const tmpResult = tmp(4882);
     const mergeRefsResult = tmpResult.mergeRefs(ref, ref1);
     cResult[0] = ref;
     cResult[1] = mergeRefsResult;

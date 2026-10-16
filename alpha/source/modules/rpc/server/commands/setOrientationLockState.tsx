@@ -1,39 +1,23 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15448
+// Function ID: 15449
 // Name: setOrientationLockState
-// Dependencies: [2024, 1096, 11237, 15373, 11234, 15372, 584, 2]
+// Dependencies: [1098, 15422, 15408, 11250, 15407, 584, 2]
 
-// Module 15412 (setOrientationLockState)
+// Module 15448 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 2024 */;
-import RPCErrorDefault from "RPCError" /* 11234 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11237 */;
-import getSocketFrameDefault from "getSocketFrame" /* 15372 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 15373 */;
-import Constants from "Constants" /* 1096 */;
+import RPCErrorDefault from "RPCError" /* 11250 */;
+import getSocketFrameDefault from "getSocketFrame" /* 15407 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 15408 */;
+import Constants from "Constants" /* 1098 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15422 */;
 import size from "module_2" /* 2 */;
 
-const OrientationLockState = Constants2.OrientationLockState;
-const RPCErrors = Constants.RPCErrors;
-let obj = {
-  validation(number) {
-    let allowResult;
-    let allowResult1;
-    let validResult;
-    const obj = createRpcJoiSchemaObjectDefault(number);
-    const obj2 = { lock_state: validResult.required(), picture_in_picture_lock_state: allowResult.optional(), grid_lock_state: allowResult1.optional() };
-    const keys = obj.required().keys;
-    obj.required();
-    const numberResult = number.number();
-    validResult = numberResult.valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
-    const numberResult1 = number.number();
-    const validResult3 = numberResult1.valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
-    allowResult = validResult3.allow(null);
-    const numberResult2 = number.number();
-    const validResult4 = numberResult2.valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
-    allowResult1 = validResult4.allow(null);
-    return keys(obj2);
-  },
+let RPCCommands;
+let c2;
+({ RPCCommands, RPCErrors: c2 } = Constants);
+let obj = {};
+const SET_ORIENTATION_LOCK_STATE = RPCCommands.SET_ORIENTATION_LOCK_STATE;
+let obj2 = {
   handler(arg0) {
     let args;
     let lock_state;
@@ -47,7 +31,7 @@ let obj = {
       if (null == id) {
         const self3 = this;
         const self4 = this;
-        const obj2 = { errorCode: RPCErrors.INVALID_COMMAND };
+        const obj2 = { errorCode: constants.INVALID_COMMAND };
         const tmp15 = new RPCErrorDefault(obj2, "No application.");
         throw tmp15;
       } else {
@@ -65,13 +49,14 @@ let obj = {
       const _HermesInternal = HermesInternal;
       const self = this;
       const self2 = this;
-      const obj = { errorCode: RPCErrors.INVALID_COMMAND };
+      const obj = { errorCode: constants.INVALID_COMMAND };
       const tmpResult4 = RPCErrorDefault;
       const tmpResult21 = new tmpResult4(obj, "command not available from \"" + socket.source.type + "\" transport");
       throw tmpResult21;
     }
   }
 };
+obj[SET_ORIENTATION_LOCK_STATE] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.SET_ORIENTATION_LOCK_STATE, obj2);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/setOrientationLockState.tsx");
 
-export default { [Constants.RPCCommands.SET_ORIENTATION_LOCK_STATE]: obj };
+export default obj;

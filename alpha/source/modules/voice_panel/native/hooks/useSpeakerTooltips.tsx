@@ -1,20 +1,20 @@
-// Module ID: 18132
-// Function ID: 18133
+// Module ID: 18166
+// Function ID: 18167
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 18130, 12815, 2062, 21, 18133, 18096, 11324, 12816, 4906, 7321, 18074, 1126, 2049, 18135, 558, 576, 9663, 2]
+// Dependencies: [32, 19, 18164, 12841, 2065, 21, 18167, 18131, 11344, 12842, 4909, 7323, 18109, 1128, 2052, 18169, 558, 576, 9679, 2]
 // Exports: default
 
-// Module 18132 (useSpeakerTooltips)
+// Module 18166 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18135 */;
+import intl3 from "intl" /* 1128 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12841 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18169 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18130 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18164 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(2049);
-const useCoachmark = tmp(9663);
+const dismissible_content = tmp(2052);
+const useCoachmark = tmp(9679);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;

@@ -1,10 +1,10 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15074
+// Function ID: 15075
 // Name: VideoCaptureDeviceNoReuse
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 15041 (VideoCaptureDeviceNoReuse)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 15074 (VideoCaptureDeviceNoReuse)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

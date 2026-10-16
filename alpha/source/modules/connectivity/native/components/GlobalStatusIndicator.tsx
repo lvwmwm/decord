@@ -1,21 +1,21 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11346
+// Function ID: 11347
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4858, 6252, 9912, 2065, 5169, 21, 558, 576, 11323, 504, 10593, 7698, 1126, 11327, 4906, 11321, 2]
+// Dependencies: [19, 17, 4861, 6254, 9928, 2068, 5171, 21, 558, 576, 11343, 504, 10608, 7701, 1128, 11347, 4909, 11341, 2]
 
-// Module 11326 (GlobalStatusIndicator)
+// Module 11346 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7698 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11321 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7701 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11341 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 4858 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
-import NativeMenuStore from "NativeMenuStore" /* 9912 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import ActionSheetStore from "ActionSheetStore" /* 4861 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6254 */;
+import NativeMenuStore from "NativeMenuStore" /* 9928 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

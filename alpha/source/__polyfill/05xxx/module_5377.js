@@ -1,18 +1,47 @@
 // Module ID: 5377
 // Function ID: 5378
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [19, 17, 5375]
+// Exports: useRenderDebugInfo
 
 // Module 5377
 import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod5375 from "module_5375" /* 5375 */;
+import react from "react" /* 19 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsHostAndroid", directEventTypes: { topTabSelected: { registrationName: "onTabSelected" }, topTabSelectionRejected: { registrationName: "onTabSelectionRejected" }, topTabSelectionPrevented: { registrationName: "onTabSelectionPrevented" } }, validAttributes: obj2 };
-obj2 = { navStateRequest: true, rejectStaleNavStateUpdates: true, tabBarHidden: true, nativeContainerBackgroundColor: _mod26.colorAttribute, colorScheme: true, tabBarRespectsIMEInsets: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onTabSelected: true, onTabSelectionRejected: true, onTabSelectionPrevented: true }));
+const require = globalThis.__r;
+let _require;
 
-export default module_65.get("RNSTabsHostAndroid", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+const findNodeHandle = react_native.findNodeHandle;
+
+export const useRenderDebugInfo = function useRenderDebugInfo(arg0) {
+  let closure_0;
+  let ref1;
+  _require = arg0;
+  const ref = ref1.useRef(null);
+  ref1 = ref1.useRef(-1);
+  let closure_3 = ref1.useEffectEvent((arg0) => {
+    const current = ref1.current;
+    const RNSLog = _mod5375.RNSLog;
+    RNSLog.log("" + closure_0 + " [" + current + "] " + arg0);
+  });
+  const effect = ref1.useEffect(() => {
+    if (null != ref.current) {
+      let num = findNodeHandle(tmp.current);
+      if (num == null) {
+        num = -1;
+      }
+      ref1.current = num;
+      if (-1 === ref1.current) {
+        closure_3("failed to find node handle");
+      }
+    }
+    closure_3("mounted");
+    return () => {
+      closure_1_3("unmounted");
+    };
+  }, []);
+  let current = ref1.current;
+  let RNSLog = require("module_5375").RNSLog;
+  RNSLog.log("" + arg0 + " [" + current + "] " + "rendered");
+  return ref;
+};

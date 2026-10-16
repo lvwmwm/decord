@@ -1,15 +1,15 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 12923
+// Function ID: 12924
 // Name: SearchPlatformConstants
-// Dependencies: [4863, 12898, 12900, 8354, 8352, 9323, 2]
+// Dependencies: [4866, 12924, 12926, 8361, 8359, 9336, 2]
 
-// Module 12897 (SearchPlatformConstants)
-import LinkingWhitelist from "LinkingWhitelist" /* 4863 */;
-import FacebookNeutralIcon from "FacebookNeutralIcon" /* 8352 */;
-import InstagramNeutralIcon from "InstagramNeutralIcon" /* 8354 */;
-import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 9323 */;
-import TiktokNeutralIcon from "TiktokNeutralIcon" /* 12898 */;
-import TwitterNeutralIcon from "TwitterNeutralIcon" /* 12900 */;
+// Module 12923 (SearchPlatformConstants)
+import LinkingWhitelist from "LinkingWhitelist" /* 4866 */;
+import FacebookNeutralIcon from "FacebookNeutralIcon" /* 8359 */;
+import InstagramNeutralIcon from "InstagramNeutralIcon" /* 8361 */;
+import YoutubeNeutralIcon from "YoutubeNeutralIcon" /* 9336 */;
+import TiktokNeutralIcon from "TiktokNeutralIcon" /* 12924 */;
+import TwitterNeutralIcon from "TwitterNeutralIcon" /* 12926 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ REGEX: LinkingWhitelist.LINKING_WHITELIST.tiktok.regex, Icon: TiktokNeutralIcon.TiktokNeutralIcon }, , , , ];

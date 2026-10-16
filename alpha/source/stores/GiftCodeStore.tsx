@@ -1,16 +1,16 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 10739
+// Function ID: 10740
 // Name: GiftCodeStore
-// Dependencies: [10274, 1085, 2060, 4758, 5849, 10725, 504, 584, 2]
+// Dependencies: [10290, 1087, 2063, 4761, 5851, 10740, 504, 584, 2]
 
-// Module 10724 (GiftCodeStore)
+// Module 10739 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5849 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10725 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10274 */;
-import Constants from "Constants" /* 1085 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5851 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10740 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10290 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_9, first_message;
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f105980 = () => {
+  const f106285 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -27,7 +27,7 @@ function updateGiftCode(giftCode) {
       if (null != value.expiresAt) {
         const expiresAt = value.expiresAt;
         const valueOfResult = expiresAt.valueOf();
-        const obj3 = _modDef4758();
+        const obj3 = _modDef4761();
         const diff = valueOfResult - obj3.valueOf();
         if (diff <= 0) {
           obj.delete(code);
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_7[code]) {
           const _Math = Math;
-          closure_7[code].start(Math.min(hasOwnProperty, diff), f105980);
+          closure_7[code].start(Math.min(hasOwnProperty, diff), f106285);
         }
       }
     }
@@ -51,14 +51,14 @@ function updateGiftCode(giftCode) {
     if (null != fromServer.expiresAt) {
       const self = this;
       const self2 = this;
-      const timeout = new code(2060).Timeout();
+      const timeout = new code(2063).Timeout();
       closure_7[code] = timeout;
       const value2 = obj.get(code);
       if (null != value2) {
         if (null != value2.expiresAt) {
           let expiresAt = value2.expiresAt;
           let valueOfResult = expiresAt.valueOf();
-          const obj4 = _modDef4758();
+          const obj4 = _modDef4761();
           let diff = valueOfResult - obj4.valueOf();
           if (diff <= 0) {
             obj.delete(code);
@@ -66,7 +66,7 @@ function updateGiftCode(giftCode) {
             giftCodeStore.emitChange();
           } else if (null != tmp14[code]) {
             let _Math = Math;
-            tmp14[code].start(Math.min(closure_5, diff), f105980);
+            tmp14[code].start(Math.min(closure_5, diff), f106285);
           }
         }
       }

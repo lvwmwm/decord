@@ -1,13 +1,13 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14080
+// Function ID: 14081
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7542, 7543, 7539, 558, 576, 14049, 2]
+// Dependencies: [19, 7544, 7545, 7541, 558, 576, 14081, 2]
 
-// Module 14048 (useDisplayableBoardWidgets)
+// Module 14080 (useDisplayableBoardWidgets)
 import react2 from "react" /* 576 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7539 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7542 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14049 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7541 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7544 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14081 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7543).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7545).UserProfilePersonalWidget;
     if (!tmp4) {
       const tmpResult = UserProfileGameWidgetTypes;
       tmp4 = tmpResult.isGameWidget(games) && games.games.length > 0;

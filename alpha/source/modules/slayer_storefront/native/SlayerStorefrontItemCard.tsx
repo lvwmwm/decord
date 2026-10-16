@@ -1,20 +1,20 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9259
+// Function ID: 9260
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 7150, 9247, 7490, 5088, 5451, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 7152, 9260, 7492, 5091, 5453, 2]
 
-// Module 9246 (SlayerStorefrontItemCard)
+// Module 9259 (SlayerStorefrontItemCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5451 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7150 */;
-import _modDef7490 from "module_7490" /* 7490 */;
-import DominantColorUtils from "DominantColorUtils" /* 9247 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import LinearGradientDefault from "LinearGradient" /* 5453 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7152 */;
+import _modDef7492 from "module_7492" /* 7492 */;
+import DominantColorUtils from "DominantColorUtils" /* 9260 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
         let tmp16;
         let tmp19;
         if (cResult[11] !== dominantColorFromImage) {
-          const obj6 = _modDef7490(dominantColorFromImage);
+          const obj6 = _modDef7492(dominantColorFromImage);
           const brightenResult = obj6.brighten(20);
           const saturateResult = brightenResult.saturate(30);
           const setAlphaResult = saturateResult.setAlpha(0.8);
@@ -105,7 +105,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
           tmp16 = cResult[12];
         }
         if (cResult[13] !== dominantColorFromImage) {
-          const obj10 = _modDef7490(dominantColorFromImage);
+          const obj10 = _modDef7492(dominantColorFromImage);
           const saturateResult1 = obj10.saturate(50);
           const setAlphaResult1 = saturateResult1.setAlpha(0.9);
           const toRgbStringResult1 = setAlphaResult1.toRgbString();

@@ -1,14 +1,14 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14125
+// Function ID: 14126
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2065, 558, 576, 1126, 10452, 504, 7234, 2]
+// Dependencies: [5, 19, 2068, 558, 576, 1128, 10468, 504, 7236, 2]
 
-// Module 14093 (usePrivateChannelCall)
-import intl3 from "intl" /* 1126 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10452 */;
+// Module 14125 (usePrivateChannelCall)
+import intl3 from "intl" /* 1128 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10468 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,9 +177,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
       tmp10 = tmp6;
     }
     const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
-    const intl2 = tmp10(1126).intl;
+    const intl2 = tmp10(1128).intl;
     const string2 = intl2.string;
-    const t2 = tmp10(1126).t;
+    const t2 = tmp10(1128).t;
     if (closure_1) {
       string2Result = string2(t2.oCqlGG);
     } else {
@@ -228,9 +228,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
       tmp10 = tmp6;
     }
     const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
-    const intl2 = tmp10(1126).intl;
+    const intl2 = tmp10(1128).intl;
     const string2 = intl2.string;
-    const t2 = tmp10(1126).t;
+    const t2 = tmp10(1128).t;
     if (closure_1) {
       string2Result = string2(t2.oCqlGG);
     } else {

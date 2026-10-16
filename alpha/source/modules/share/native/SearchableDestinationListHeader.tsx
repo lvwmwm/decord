@@ -1,19 +1,19 @@
-// Module ID: 12592
-// Function ID: 12593
+// Module ID: 12615
+// Function ID: 12616
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5151, 587, 558, 576, 1631, 9518, 6421, 1382, 6847, 6430, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 1633, 9534, 6423, 1384, 6849, 6432, 2]
 
-// Module 12592 (SearchableDestinationListHeader)
+// Module 12615 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import NavigatorHeader from "NavigatorHeader" /* 6421 */;
-import _mod6430 from "module_6430" /* 6430 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 6847 */;
-import HeaderShared from "HeaderShared" /* 9518 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import NavigatorHeader from "NavigatorHeader" /* 6423 */;
+import _mod6432 from "module_6432" /* 6432 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 6849 */;
+import HeaderShared from "HeaderShared" /* 9534 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
   subtitleColor = subtitleColor.subtitleColor;
   ({ headerRight, headerStatusBarHeight, onClose } = subtitleColor);
   const tmp4 = closure_4();
-  const top = subtitleColor(1631)().top;
+  const top = subtitleColor(1633)().top;
   const tmp5 = subtitleColor;
   if (cResult[0] === subtitle) {
     let tmp6;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     if (cResult[3] !== onClose) {
       let headerCloseButton;
       if (null != onClose) {
-        const tmpResult = subtitle(6421);
+        const tmpResult = subtitle(6423);
         headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       }
       cResult[3] = onClose;
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
         }
       }
       ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
-      const tmp15 = jsx(subtitle(6430).Header, { headerStyle: tmp4.header, title, headerTitle: tmp6, headerTitleAlign: "center", headerLeft: tmp7, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: tmp10 });
+      const tmp15 = jsx(subtitle(6432).Header, { headerStyle: tmp4.header, title, headerTitle: tmp6, headerTitleAlign: "center", headerLeft: tmp7, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: tmp10 });
       cResult[8] = headerRight;
       cResult[9] = tmp4.header;
       cResult[10] = tmp4.headerLeftContainer;
@@ -98,12 +98,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     let sum = headerStatusBarHeight;
     if (headerStatusBarHeight == null) {
       let num3;
-      const tmpResult3 = subtitle(1382);
+      const tmpResult3 = subtitle(1384);
       if (!tmpResult3.isIOS()) {
         num3 = top;
       } else {
         num3 = 0;
-        subtitle(6847);
+        subtitle(6849);
       }
       sum = num3 + tmp5(587).space.PX_8;
     }
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = _mod6430.Header;
+  const Header = _mod6432.Header;
   const tmp4 = jsx;
   if (null != onClose) {
     const tmp5Result = NavigatorHeader;

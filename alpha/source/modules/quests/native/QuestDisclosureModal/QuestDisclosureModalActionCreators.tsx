@@ -1,18 +1,18 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16069
+// Function ID: 16070
 // Name: QuestDisclosureModalActionCreators
-// Dependencies: [6195, 7629, 16027, 9395, 9396, 9399, 7623, 6150, 16037, 2000, 2]
+// Dependencies: [6197, 7631, 16060, 9411, 9412, 9415, 7625, 6152, 16070, 2002, 2]
 
-// Module 16036 (QuestDisclosureModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
-import AdCreativeType from "AdCreativeType" /* 6195 */;
-import AnalyticsActions from "AnalyticsActions" /* 7623 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7629 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9395 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9396 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9399 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 16027 */;
+// Module 16069 (QuestDisclosureModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6152 */;
+import AdCreativeType from "AdCreativeType" /* 6197 */;
+import AnalyticsActions from "AnalyticsActions" /* 7625 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7631 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9411 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9412 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9415 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 16060 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
@@ -53,7 +53,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
     ModalActionCreatorsDefault;
-    const tmp12 = asyncRequire(16037, tmp2.paths);
+    const tmp12 = asyncRequire(16070, tmp2.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       const obj9 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult6.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);

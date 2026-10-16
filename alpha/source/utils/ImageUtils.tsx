@@ -1,13 +1,13 @@
-// Module ID: 1494
-// Function ID: 1495
+// Module ID: 1496
+// Function ID: 1497
 // Name: ImageUtils
-// Dependencies: [5, 1495, 1496, 12, 38, 2]
+// Dependencies: [5, 1497, 1498, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1494 (ImageUtils)
+// Module 1496 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import quantizeDefault from "quantize" /* 1495 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1496 */;
+import quantizeDefault from "quantize" /* 1497 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1498 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;

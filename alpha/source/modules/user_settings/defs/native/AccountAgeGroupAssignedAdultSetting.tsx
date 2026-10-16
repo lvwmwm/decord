@@ -1,15 +1,15 @@
-// Module ID: 15660
-// Function ID: 15661
+// Module ID: 15693
+// Function ID: 15694
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [8210, 1085, 10991, 1126, 3122, 15661, 15656, 2]
+// Dependencies: [8213, 1087, 11006, 1128, 3125, 15694, 15689, 2]
 
-// Module 15660 (AccountAgeGroupAssignedAdultSetting)
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import _modDef3122 from "module_3122" /* 3122 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15661 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+// Module 15693 (AccountAgeGroupAssignedAdultSetting)
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import _modDef3125 from "module_3125" /* 3125 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15694 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ const obj = {
     const intl = intl3.intl;
     const stringResult = intl.string(intl3.t.XxRj7f);
     const intl2 = intl3.intl;
-    return "" + stringResult + " \u2022 " + intl2.string(_modDef3122.FTawSP);
+    return "" + stringResult + " \u2022 " + intl2.string(_modDef3125.FTawSP);
   },
   usePredicate: AgeGroupScreenRowProps.useShowAssignedAdultAgeGroupRow,
   screen: {

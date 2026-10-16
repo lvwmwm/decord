@@ -1,14 +1,14 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16306
+// Function ID: 16307
 // Name: getSettingsOverrideReason
-// Dependencies: [2042, 1095, 1126, 4026, 558, 576, 504, 2]
+// Dependencies: [2045, 1097, 1128, 4029, 558, 576, 504, 2]
 // Exports: default
 
-// Module 16273 (getSettingsOverrideReason)
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import intl4 from "intl" /* 1126 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2042 */;
+// Module 16306 (getSettingsOverrideReason)
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef4029 from "module_4029" /* 4029 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2045 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
         formatResult = intl.string(intl4.t["2ExvRu"]);
       } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
         const intl3 = intl4.intl;
-        formatResult = intl3.string(_modDef4026.VGcdxP);
+        formatResult = intl3.string(_modDef4029.VGcdxP);
       }
       return formatResult;
     };
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
       formatResult = intl.string(intl4.t["2ExvRu"]);
     } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
       const intl3 = intl4.intl;
-      formatResult = intl3.string(_modDef4026.VGcdxP);
+      formatResult = intl3.string(_modDef4029.VGcdxP);
     }
     return formatResult;
   });
@@ -87,7 +87,7 @@ function getSettingsOverrideReason(arg0) {
     return intl2.string(intl4.t["2ExvRu"]);
   } else if (constants.GAME_MODE === arg0) {
     const intl = intl4.intl;
-    return intl.string(_modDef4026.VGcdxP);
+    return intl.string(_modDef4029.VGcdxP);
   }
 }
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSettingLockedByOverride(arg0) {

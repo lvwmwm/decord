@@ -1,43 +1,113 @@
 // Module ID: 6709
 // Function ID: 6710
-// Dependencies: [19, 21, 6532, 1656, 6528, 6538]
-// Exports: default
+// Dependencies: [32, 19, 17, 6537, 1658]
+// Exports: useBottomSheetContentContainerStyle
 
 // Module 6709
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import _mod1656 from "module_1656" /* 1656 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6528 */;
-import _mod6532 from "module_6532" /* 6532 */;
-import BottomSheetContext from "BottomSheetContext" /* 6538 */;
+import _mod1658 from "module_1658" /* 1658 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const useMemo = react2.useMemo;
-const jsx = Fragment.jsx;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export default function _default(gestureEventsHandlersHook) {
-  let animatedContentGestureState;
-  let animatedHandleGestureState;
-  let handleOnChange;
-  let handleOnEnd;
-  let handleOnFinalize;
-  let handleOnStart;
-  let useGestureEventsHandlersDefault = gestureEventsHandlersHook.gestureEventsHandlersHook;
-  if (useGestureEventsHandlersDefault === undefined) {
-    useGestureEventsHandlersDefault = _mod6532.useGestureEventsHandlersDefault;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ useMemo: c3, useState: closure_4 } = react);
+({ Platform: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
+const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
+
+export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
+  let animatedFooterHeight;
+  let closure_5;
+  let first;
+  _require = flag;
+  dependencyMap = contentContainerStyle;
+  let tmp = first(animatedFooterHeight(0), 2);
+  first = tmp[0];
+  let closure_3 = tmp3;
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
+  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  let items = [contentContainerStyle];
+  const tmp5 = closure_3(() => {
+    let obj;
+    if (contentContainerStyle) {
+      const _Array = Array;
+      let applyResult = tmp2;
+      if (Array.isArray(contentContainerStyle)) {
+        metroRequire = metroRequire.compose;
+        const items = [];
+        HermesBuiltin.arraySpread(items, contentContainerStyle, 0);
+        applyResult = HermesBuiltin.apply(metroRequire, items, metroRequire);
+      }
+      obj = applyResult;
+    } else {
+      obj = {};
+    }
+    return obj;
+  }, items);
+  Platform = tmp5;
+  const items1 = [first, flag, tmp5];
+  const tmp6 = closure_3(() => {
+    let padding;
+    let paddingBottom;
+    let paddingVertical;
+    if (flag) {
+      let num = 0;
+      if (closure_5) {
+        num = 0;
+        if (typeof closure_5 === "object") {
+          ({ paddingBottom, padding, paddingVertical } = closure_5);
+          if (undefined === paddingBottom) {
+            if (undefined === paddingVertical) {
+              num = 0;
+              const tmp2 = undefined !== padding && typeof padding === "number";
+              if (tmp2) {
+                num = padding;
+              }
+            } else {
+              num = paddingVertical;
+            }
+          } else {
+            num = paddingBottom;
+          }
+        }
+      }
+      const items = [closure_5, ];
+      const obj = { paddingBottom: num + first, overflow: "visible" };
+      items[1] = obj;
+      return items;
+    } else {
+      return closure_5;
+    }
+  }, items1);
+  const obj2 = require("module_1658");
+  class H {
+    constructor() {
+      return animatedFooterHeight.get();
+    }
   }
-  const children = gestureEventsHandlersHook.children;
-  const obj = _mod1656;
-  const sharedValue = obj.useSharedValue(GESTURE_SOURCE.GESTURE_SOURCE.UNDETERMINED);
-  const obj2 = _mod6532;
-  const bottomSheetInternal = obj2.useBottomSheetInternal();
-  ({ animatedHandleGestureState, animatedContentGestureState } = bottomSheetInternal);
-  ({ handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize } = useGestureEventsHandlersDefault());
-  useGestureEventsHandlersDefault();
-  const obj3 = _mod6532;
-  const gestureHandler = obj3.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.CONTENT, animatedContentGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
-  const obj4 = _mod6532;
-  const gestureHandler1 = obj4.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.HANDLE, animatedHandleGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
-  const items = [gestureHandler, gestureHandler1, sharedValue];
-  const value = useMemo(() => ({ contentPanGestureHandler: gestureHandler, handlePanGestureHandler: gestureHandler1, animatedGestureSource: sharedValue }), items);
-  return jsx(BottomSheetContext.BottomSheetGestureHandlersContext.Provider, { value, children });
+  H.__closure = { animatedFooterHeight };
+  H.__workletHash = 10172145694310;
+  H.__initData = __initData;
+  const fn = function f(arg0, arg1) {
+    const tmp = flag;
+    if (tmp) {
+      const obj = _mod1658;
+      obj.runOnJS(closure_3)(arg0);
+    }
+  };
+  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("module_1658").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
+  fn.__workletHash = 1149497927090;
+  fn.__initData = __initData2;
+  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
+  ({ enableFooterMarginAdjustment: flag, runOnJS: require("module_1658").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight });
+  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
+  return tmp6;
 };

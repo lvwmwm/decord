@@ -1,20 +1,20 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18221
+// Function ID: 18222
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 2064, 10935, 2065, 2024, 6289, 10919, 21, 5151, 558, 576, 12816, 18078, 4795, 504, 4906, 11808, 10714, 18044, 11617, 11622, 11223, 6982, 2]
+// Dependencies: [19, 2067, 10950, 2068, 2026, 6291, 10934, 21, 5153, 558, 576, 12842, 18113, 4798, 504, 4909, 11832, 10729, 18079, 11641, 11646, 11239, 6984, 2]
 
-// Module 18179 (VoicePanelSecondaryPIPContent)
+// Module 18221 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2024 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6289 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11808 */;
-import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 18044 */;
+import Constants from "Constants" /* 2026 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6291 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11832 */;
+import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 18079 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import FramesStore from "FramesStore" /* 10935 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import FramesConstants from "FramesConstants" /* 10919 */;
-import createStyles from "createStyles" /* 5151 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import FramesStore from "FramesStore" /* 10950 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import FramesConstants from "FramesConstants" /* 10934 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 10437
-// Function ID: 10438
+// Module ID: 10453
+// Function ID: 10454
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 5018, 6960, 1200, 5147, 6516, 6521, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 5021, 6962, 1202, 5149, 6518, 6523, 2]
 
-// Module 10437 (SelectedUserField)
+// Module 10453 (SelectedUserField)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import CircleXIcon from "CircleXIcon" /* 6516 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6521 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6960 */;
+import intl6 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import CircleXIcon from "CircleXIcon" /* 6518 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6523 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6962 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,17 +68,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
     if (cResult[3] !== selectedUser) {
       let combined;
       if (null != selectedUser) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const _HermesInternal2 = HermesInternal;
         const stringResult = intl3.string(intl6.t.xFn72s);
         const obj2 = UserUtilsDefault;
         combined = "" + stringResult + ", " + obj2.getName(selectedUser);
       } else {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult1 = intl.string(intl6.t.xFn72s);
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const _HermesInternal = HermesInternal;
-        combined = "" + stringResult1 + ", " + intl2.string(tmp(1126).t.R0vK0N);
+        combined = "" + stringResult1 + ", " + intl2.string(tmp(1128).t.R0vK0N);
       }
       cResult[3] = selectedUser;
       cResult[4] = combined;
@@ -139,7 +139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
                     const obj5 = { children: metroRequire(React3, obj6) };
                     obj6 = { style: tmp4.content, children: items };
                     items = [tmp24, tmp28];
-                    const InputFieldContainer = tmp(6521).InputFieldContainer;
+                    const InputFieldContainer = tmp(6523).InputFieldContainer;
                     const tmp38 = hasOwnProperty(InputFieldContainer, obj5);
                     cResult[21] = tmp4.content;
                     cResult[22] = tmp24;
@@ -159,10 +159,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
                     accessibilityLabel: formatToPlainString(v0Vb9FQ, obj9),
                     children: hasOwnProperty(CircleXIcon.CircleXIcon, { size: "xs" })
                   };
-                  const intl5 = tmp(1126).intl;
+                  const intl5 = tmp(1128).intl;
                   formatToPlainString = intl5.formatToPlainString;
                   obj9 = { text: obj12.getName(selectedUser) };
-                  v0Vb9FQ = tmp(1126).t["0Vb9FQ"];
+                  v0Vb9FQ = tmp(1128).t["0Vb9FQ"];
                   obj12 = UserUtilsDefault;
                   tmp29 = hasOwnProperty(_false, obj7);
                 }
@@ -190,17 +190,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
     if (null != selectedUser) {
       const obj11 = { style: tmp4.userPill, children: items2 };
       const obj13 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       items2 = [hasOwnProperty(Avatar, obj13), ];
       const obj14 = { variant: "text-md/medium", style: tmp4.userPillText, children: obj8.getName(selectedUser) };
-      const Text2 = tmp(5147).Text;
+      const Text2 = tmp(5149).Text;
       obj8 = UserUtilsDefault;
       items2[1] = hasOwnProperty(Text2, obj14);
       tmp19 = metroRequire(React3, obj11);
     } else {
       const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-      const Text = tmp(5147).Text;
-      intl4 = tmp(1126).intl;
+      const Text = tmp(5149).Text;
+      intl4 = tmp(1128).intl;
       tmp19 = hasOwnProperty(Text, obj15);
     }
     cResult[7] = selectedUser;
@@ -244,17 +244,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
   const obj3 = { style: items, onPress, accessibilityRole: "button", accessibilityLabel: combined, children: items1 };
   items[1] = openerWithClearButton;
   if (null != selectedUser) {
-    const intl3 = tmp4(1126).intl;
+    const intl3 = tmp4(1128).intl;
     const _HermesInternal2 = HermesInternal;
     const stringResult = intl3.string(intl6.t.xFn72s);
     const obj4 = UserUtilsDefault;
     combined = "" + stringResult + ", " + obj4.getName(selectedUser);
   } else {
-    const intl = tmp4(1126).intl;
+    const intl = tmp4(1128).intl;
     const stringResult1 = intl.string(intl6.t.xFn72s);
-    const intl2 = tmp4(1126).intl;
+    const intl2 = tmp4(1128).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1126).t.R0vK0N);
+    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1128).t.R0vK0N);
   }
   items1 = [, ];
   const obj5 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
@@ -262,17 +262,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
   if (null != selectedUser) {
     const obj6 = { style: tmp.userPill, children: items2 };
     const obj7 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
-    const Avatar = tmp4(1200).Avatar;
+    const Avatar = tmp4(1202).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5147).Text;
+    const Text2 = tmp4(5149).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5147).Text;
-    intl4 = tmp4(1126).intl;
+    const Text = tmp4(5149).Text;
+    intl4 = tmp4(1128).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }
   items1[1] = tmp2Result1;
@@ -288,10 +288,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
       accessibilityLabel: formatToPlainString(v0Vb9FQ, obj12),
       children: hasOwnProperty(CircleXIcon.CircleXIcon, { size: "xs" })
     };
-    const intl5 = tmp4(1126).intl;
+    const intl5 = tmp4(1128).intl;
     formatToPlainString = intl5.formatToPlainString;
     obj12 = { text: obj13.getName(selectedUser) };
-    v0Vb9FQ = tmp4(1126).t["0Vb9FQ"];
+    v0Vb9FQ = tmp4(1128).t["0Vb9FQ"];
     obj13 = UserUtilsDefault;
     tmp2Result = tmp2(tmp7, obj11);
   }

@@ -1,15 +1,15 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17796
+// Function ID: 17797
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 558, 576, 2041, 11577, 4906, 4883, 5438, 5442, 12993, 2]
+// Dependencies: [19, 21, 558, 576, 2044, 11600, 4909, 4886, 5440, 5444, 13019, 2]
 
-// Module 17762 (SearchTabsTransitionGroup)
+// Module 17796 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import spring from "spring" /* 5438 */;
-import springPresets from "springPresets" /* 5442 */;
-import Tabs2 from "Tabs" /* 11577 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import spring from "spring" /* 5440 */;
+import springPresets from "springPresets" /* 5444 */;
+import Tabs2 from "Tabs" /* 11600 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let set;
 
 let tmp;
-const native = tmp(4883);
+const native = tmp(4886);
 function getItemKey(items) {
   items = items.items;
   const mapped = items.map((id) => id.id);
@@ -33,7 +33,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoun
   let tmp3;
   let obj = setting(576);
   const cResult = obj.c(2);
-  const SearchResultExactCountEnabled = setting(2041).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = setting(2044).SearchResultExactCountEnabled;
   setting = SearchResultExactCountEnabled.useSetting();
   if (cResult[0] !== setting) {
     const fn = function t(toLocaleString) {
@@ -59,7 +59,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoun
   return tmp3;
 }) : (function useCountFormatter() {
   let setting;
-  const SearchResultExactCountEnabled = setting(2041).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = setting(2044).SearchResultExactCountEnabled;
   setting = SearchResultExactCountEnabled.useSetting();
   const items = [setting];
   return react.useCallback((toLocaleString) => {

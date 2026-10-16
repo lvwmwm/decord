@@ -1,22 +1,22 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 13016
+// Function ID: 13017
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 2062, 21, 558, 576, 1645, 6888, 5043, 1631, 4874, 587, 1382, 1629, 2049, 7321, 12712, 1126, 12991, 9663, 2]
+// Dependencies: [32, 19, 2065, 21, 558, 576, 1647, 6890, 5046, 1633, 4877, 587, 1384, 1631, 2052, 7323, 12738, 1128, 13017, 9679, 2]
 
-// Module 12990 (useEmojiSuggestionNuxCoachmark)
+// Module 13016 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1645 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import useToken from "useToken" /* 4874 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5043 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6888 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12712 */;
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import KeyboardTypes from "KeyboardTypes" /* 1631 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1647 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import useToken from "useToken" /* 4877 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5046 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6890 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   if (cResult[0] !== tmp7) {
     let items1;
     if (tmp7) {
-      const items = [tmp2(2049).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
+      const items = [tmp2(2052).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
       items1 = items;
     } else {
       items1 = [];
@@ -148,9 +148,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
     let tmp27;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp2(1126).intl;
+      const intl = tmp2(1128).intl;
       const stringResult = intl.string(require("intl").t.l8nVB9);
-      const intl2 = tmp2(1126).intl;
+      const intl2 = tmp2(1128).intl;
       const stringResult1 = intl2.string(require("intl").t.ujfS5V);
       cResult[8] = stringResult;
       cResult[9] = stringResult1;

@@ -1,19 +1,75 @@
 // Module ID: 6545
 // Function ID: 6546
-// Dependencies: []
-// Exports: normalizeSnapPoint
+// Dependencies: [19, 1658, 6530, 6546]
+// Exports: useScrollable
 
 // Module 6545
-const fn = function n(str, arg1) {
-  let result = str;
-  if (typeof str === "string") {
-    const _Number = Number;
-    result = Number(str.split("%")[0]) * arg1 / 100;
-  }
-  return Math.max(0, arg1 - result);
-};
-fn.__closure = {};
-fn.__workletHash = 14612470006791;
-fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6546 */;
+import react from "react" /* 19 */;
 
-export const normalizeSnapPoint = fn;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+let c2;
+let c3;
+({ useCallback: c2, useRef: c3 } = react);
+
+export const useScrollable = () => {
+  let ref;
+  let ref2;
+  const tmp = closure_3(null);
+  _require = tmp;
+  dependencyMap = closure_3(null);
+  let obj = require("module_1658");
+  const sharedValue = obj.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_TYPE.UNDETERMINED);
+  const obj2 = require("module_1658");
+  const sharedValue1 = obj2.useSharedValue(0);
+  const obj3 = require("module_1658");
+  const sharedValue2 = obj3.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_STATE.UNDETERMINED);
+  const obj4 = require("module_1658");
+  const sharedValue3 = obj4.useSharedValue(false);
+  let tmp6 = closure_2((id) => {
+    const current = ref.current;
+    id = undefined;
+    if (current != null) {
+      id = current.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    if (id !== id.id) {
+      if (ref.current) {
+        ref2.current = ref.current;
+      }
+      ref.current = id;
+    }
+  }, []);
+  const obj5 = {
+    scrollableRef: tmp,
+    animatedScrollableType: sharedValue,
+    animatedScrollableContentOffsetY: sharedValue1,
+    animatedScrollableOverrideState: sharedValue2,
+    isScrollableRefreshable: sharedValue3,
+    setScrollableRef: tmp6,
+    removeScrollableRef: closure_2((current) => {
+      try {
+        const obj = normalizeSnapPoint;
+        current = ref.current;
+        let id;
+        const findNodeHandleResult = obj.findNodeHandle(current.current);
+        const tmp6 = ref;
+        if (current != null) {
+          id = current.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        if (findNodeHandleResult === id) {
+          tmp6.current = ref2.current;
+        }
+      } catch (err) {
+      }
+    }, [])
+  };
+  return obj5;
+};

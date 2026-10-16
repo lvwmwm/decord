@@ -1,18 +1,19 @@
-// Module ID: 5020
-// Function ID: 5021
+// Module ID: 5023
+// Function ID: 5024
 // Name: OverlayV3Experiment
-// Dependencies: [1453, 558, 576, 2]
-// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
+// Dependencies: [1455, 558, 576, 2]
+// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayNativeWindowRenderingConfig, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
 
-// Module 5020 (OverlayV3Experiment)
+// Module 5023 (OverlayV3Experiment)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj4;
 let obj6;
+let obj8;
 let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj2 };
 obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
@@ -72,6 +73,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlay
   const obj = { location };
   return apexExperiment2.useConfig(obj).enabled;
 });
+ApexExperiment = ApexExperiment_mod;
+const obj7 = { name: "2026-10-overlay-native-window-rendering", kind: "user", defaultConfig: { enabled: false, enableNVOverlay: false }, variations: obj8 };
+obj8 = { 1: null, 2: { enabled: true, enableNVOverlay: false } };
+obj8[2] = { enabled: true, enableNVOverlay: true };
+const apexExperiment3 = ApexExperiment.createApexExperiment(obj7);
 const result = size.fileFinishedImporting("modules/overlay/OverlayV3Experiment.tsx");
 
 export const OverlayDefaultKeybindOverrideExperiment = apexExperiment;
@@ -88,4 +94,9 @@ export const useOverlayStreamerMode = tmp6;
 export const trackOverlayInitializedExperiments = function trackOverlayInitializedExperiments() {
   const config = apexExperiment1.getConfig({ location: "OVERLAY_INITIALIZED" });
   const config1 = apexExperiment2.getConfig({ location: "OVERLAY_INITIALIZED" });
+};
+export const OverlayNativeWindowRenderingExperiment = apexExperiment3;
+export const getOverlayNativeWindowRenderingConfig = function getOverlayNativeWindowRenderingConfig(location) {
+  const obj = { location };
+  return apexExperiment3.getConfig(obj);
 };

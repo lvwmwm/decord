@@ -1,24 +1,24 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12674
+// Function ID: 12675
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1390, 21, 5151, 587, 558, 576, 1497, 504, 5018, 1126, 3088, 12652, 3120, 12654, 12655, 2]
+// Dependencies: [17, 1392, 21, 5153, 587, 558, 576, 1499, 504, 5021, 1128, 3091, 12675, 3123, 12677, 12678, 2]
 
-// Module 12651 (CheckpointWelcomeScreen)
+// Module 12674 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import _modDef3088 from "module_3088" /* 3088 */;
-import _modDef3120 from "module_3120" /* 3120 */;
-import UserUtils from "UserUtils" /* 5018 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 12652 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12654 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12655 */;
-import UserStore from "UserStore" /* 1390 */;
+import intl3 from "intl" /* 1128 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import _modDef3091 from "module_3091" /* 3091 */;
+import _modDef3123 from "module_3123" /* 3123 */;
+import UserUtils from "UserUtils" /* 5021 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 12675 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12677 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12678 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
     const _Symbol = Symbol;
     const titleText = tmp4.titleText;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(_modDef3088["CdU/PF"]);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(_modDef3091["CdU/PF"]);
       cResult[7] = stringResult;
       tmp14 = stringResult;
     } else {
@@ -102,9 +102,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
       }
       const subtitle = tmp4.subtitle;
       if (cResult[11] !== name) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const obj4 = { username: name };
-        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3120.xhZ23b, obj4);
+        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3123.xhZ23b, obj4);
         cResult[11] = name;
         cResult[12] = formatToPlainStringResult;
         tmp20 = formatToPlainStringResult;
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const obj3 = { children: hasOwnProperty(View, obj4) };
   obj4 = { style: tmp.container, children: metroRequire(View, obj5) };
   obj5 = { style: tmp.content, children: items3 };
-  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3088["CdU/PF"]), delay, variant: "display-lg" };
+  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3091["CdU/PF"]), delay, variant: "display-lg" };
   items1 = [tmp.title, ];
   const obj7 = { transform: items2 };
   items2 = [{ scale: bound }];
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const tmp6 = TextWritingAnimationDefault;
   intl = intl3.intl;
   items3 = [hasOwnProperty(tmp6, obj6), , ];
-  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3120.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3123.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
   const tmp7 = TextWritingAnimationDefault;
   intl2 = intl3.intl;
   items3[1] = hasOwnProperty(tmp7, obj8);

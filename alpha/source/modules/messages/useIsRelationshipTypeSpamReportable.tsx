@@ -1,11 +1,11 @@
-// Module ID: 13178
-// Function ID: 13179
+// Module ID: 13204
+// Function ID: 13205
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4816, 1085, 558, 576, 504, 2]
+// Dependencies: [4819, 1087, 558, 576, 504, 2]
 
-// Module 13178 (useIsRelationshipTypeSpamReportable)
-import Constants from "Constants" /* 1085 */;
-import RelationshipStore from "RelationshipStore" /* 4816 */;
+// Module 13204 (useIsRelationshipTypeSpamReportable)
+import Constants from "Constants" /* 1087 */;
+import RelationshipStore from "RelationshipStore" /* 4819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

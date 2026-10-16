@@ -1,17 +1,17 @@
-// Module ID: 12681
-// Function ID: 12682
+// Module ID: 12706
+// Function ID: 12707
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5498, 1126, 3120, 5147, 9614, 7098, 12643, 12682, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5500, 1128, 3123, 5149, 9630, 7100, 12666, 12707, 2]
 
-// Module 12681 (TraitOptionDetails)
+// Module 12706 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3120 from "module_3120" /* 3120 */;
-import RarityBadgeDefault from "RarityBadge" /* 12682 */;
+import _modDef3123 from "module_3123" /* 3123 */;
+import RarityBadgeDefault from "RarityBadge" /* 12707 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5147);
+const Text_Text = tmp(5149);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
@@ -42,11 +42,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   let tmp5 = null;
   if (!hidden) {
     let tmp6;
-    if (asset.rarity === tmp(5498).CheckpointTraitRarity.NITRO) {
+    if (asset.rarity === tmp(5500).CheckpointTraitRarity.NITRO) {
       if (true === asset.locked) {
         let tmp8;
         if (cResult[0] !== tmp4) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const obj2 = {
             subscribeHook(children, arg1) {
                       let obj = {
@@ -67,7 +67,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
                       return React3(Text_Text.Text, obj, arg1);
                     }
           };
-          const formatResult = intl.format(_modDef3120["3Wq/bk"], obj2);
+          const formatResult = intl.format(_modDef3123["3Wq/bk"], obj2);
           cResult[0] = tmp4;
           cResult[1] = formatResult;
           tmp8 = formatResult;
@@ -78,7 +78,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
       }
     }
     if (cResult[2] !== asset) {
-      const tmpResult = tmp(12643);
+      const tmpResult = tmp(12666);
       const assetDescription = tmpResult.getAssetDescription(asset);
       cResult[2] = asset;
       cResult[3] = assetDescription;
@@ -95,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
     }
     return tmp12;
   }
-  const tmp13 = closure_4(tmp(5147).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
+  const tmp13 = closure_4(tmp(5149).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
   cResult[4] = tmp5;
   cResult[5] = null == tmp5;
   cResult[6] = tmp13;
@@ -110,7 +110,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
     if (asset.rarity === require("CheckpointTraitRarity").CheckpointTraitRarity.NITRO) {
       let formatResult;
       if (true === asset.locked) {
-        const intl = tmp2(1126).intl;
+        const intl = tmp2(1128).intl;
         let obj = {
           subscribeHook(children, arg1) {
                   let obj = {
@@ -131,7 +131,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
                   return React3(Text_Text.Text, obj, arg1);
                 }
         };
-        formatResult = intl.format(_modDef3120["3Wq/bk"], obj);
+        formatResult = intl.format(_modDef3123["3Wq/bk"], obj);
       }
       tmp = formatResult;
     }

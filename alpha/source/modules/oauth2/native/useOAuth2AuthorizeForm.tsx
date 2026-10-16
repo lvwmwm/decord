@@ -1,33 +1,33 @@
-// Module ID: 9445
-// Function ID: 9446
+// Module ID: 9461
+// Function ID: 9462
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4821, 5140, 2022, 5977, 1390, 9446, 1085, 21, 5151, 4811, 504, 5422, 4906, 5152, 6284, 9447, 9448, 1097, 9449, 1295, 1279, 9450, 9452, 9454, 9455, 7079, 1255, 9456, 9457, 5166, 9458, 5432, 9459, 5439, 1126, 6376, 5979, 9461, 9463, 8676, 9453, 13722, 13726, 13725, 13727, 13728, 13729, 13731, 13734, 7041, 2]
+// Dependencies: [5, 32, 19, 17, 4824, 5143, 2024, 5979, 1392, 9462, 1087, 21, 5153, 4814, 504, 5424, 4909, 5154, 6286, 9463, 9464, 1099, 9465, 1297, 1281, 9466, 9468, 9470, 9471, 7081, 1257, 9472, 9473, 5168, 9474, 5434, 9475, 5441, 1128, 6378, 5981, 9477, 9479, 8684, 9469, 13748, 13752, 13751, 13753, 13754, 13755, 13757, 13760, 7043, 2]
 // Exports: default
 
-// Module 9445 (useOAuth2AuthorizeForm)
+// Module 9461 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4811 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import timing from "timing" /* 5152 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6284 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6376 */;
-import Authorize from "Authorize" /* 9447 */;
-import react_nativeDefault from "react-native" /* 9449 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9455 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4814 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import timing from "timing" /* 5154 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5168 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6286 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6378 */;
+import Authorize from "Authorize" /* 9463 */;
+import react_nativeDefault from "react-native" /* 9465 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9471 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4821 from "module_4821" /* 4821 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5977 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 9446 */;
-import Constants_mod2 from "Constants" /* 1085 */;
+import module_4824 from "module_4824" /* 4824 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
+import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5979 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants_mod from "Constants" /* 9462 */;
+import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9448);
+const scopes2 = tmp4(9464);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9458);
+            const tmp27Result = tmp27(9474);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

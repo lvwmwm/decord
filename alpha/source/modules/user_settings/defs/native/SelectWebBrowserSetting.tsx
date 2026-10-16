@@ -1,17 +1,17 @@
-// Module ID: 16423
-// Function ID: 16424
+// Module ID: 16456
+// Function ID: 16457
 // Name: SelectWebBrowserSetting
-// Dependencies: [8210, 558, 5112, 576, 1126, 1105, 1382, 10991, 2]
+// Dependencies: [8213, 558, 5115, 576, 1128, 1107, 1384, 11006, 2]
 
-// Module 16423 (SelectWebBrowserSetting)
+// Module 16456 (SelectWebBrowserSetting)
 import react from "react" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import BrowserManager from "BrowserManager" /* 5112 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import BrowserManager from "BrowserManager" /* 5115 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrow
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { label: intl.string(intl4.t.YayR6P), value: ConstantsIOS.WebBrowserType.IN_APP };
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       cResult[3] = obj4;
       tmp8 = obj4;
     } else {
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrow
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { label: intl2.string(intl4.t.kEfv89), value: ConstantsIOS.WebBrowserType.SAFARI };
-      intl2 = tmp(1126).intl;
+      intl2 = tmp(1128).intl;
       cResult[4] = obj5;
       tmp11 = obj5;
     } else {
@@ -69,9 +69,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrow
       let stringResult;
       const tmpResult2 = PlatformUtils;
       const isAndroidResult = tmpResult2.isAndroid();
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const string = intl3.string;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       if (isAndroidResult) {
         stringResult = string(t.kEfv89);
       } else {
@@ -99,14 +99,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrow
   if (obj2.useBrowserManagerSupportsInAppBrowser()) {
     const push = items.push;
     const obj3 = { label: intl.string(intl4.t.YayR6P), value: ConstantsIOS.WebBrowserType.IN_APP };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     push(obj3);
   }
   const tmpResult = PlatformUtils;
   if (!tmpResult.isAndroid()) {
     const push2 = items.push;
     const obj4 = { label: intl2.string(intl4.t.kEfv89), value: ConstantsIOS.WebBrowserType.SAFARI };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     push2(obj4);
   }
   if (browserManagerIsChromeInstalled) {
@@ -114,9 +114,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebBrow
     const push3 = items.push;
     const tmpResult2 = PlatformUtils;
     const isAndroidResult = tmpResult2.isAndroid();
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const string = intl3.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (isAndroidResult) {
       stringResult = string(t.kEfv89);
     } else {

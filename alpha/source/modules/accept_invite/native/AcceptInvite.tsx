@@ -1,26 +1,26 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 13347
+// Function ID: 13348
 // Name: AcceptInvite
-// Dependencies: [109, 32, 19, 17, 1085, 21, 5151, 587, 1386, 558, 576, 4874, 6887, 13322, 13326, 1415, 1450, 13331, 1497, 5088, 6402, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 5153, 587, 1388, 558, 576, 4877, 6889, 13348, 13352, 1417, 1452, 13357, 1499, 5091, 6404, 2]
 
-// Module 13321 (AcceptInvite)
+// Module 13347 (AcceptInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useToken from "useToken" /* 4874 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import Card_Card from "Card/Card" /* 6402 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6887 */;
+import Constants from "Constants" /* 1087 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useToken from "useToken" /* 4877 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import Card_Card from "Card/Card" /* 6404 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6889 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp25;
       }
       const obj3 = { invite };
-      const tmp28 = first(13322);
+      const tmp28 = first(13348);
       const merged = Object.assign(invite);
       const tmp32 = closure_10(tmp28, obj3);
       cResult[7] = invite;
@@ -193,7 +193,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp17;
       }
       const obj4 = { invite };
-      const tmp20 = first(13326);
+      const tmp20 = first(13352);
       const merged1 = Object.assign(invite);
       const tmp24 = closure_10(tmp20, obj4);
       cResult[10] = invite;
@@ -246,12 +246,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
     return closure_10(closure_15, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(13322);
+    const tmp16 = first(13348);
     const merged = Object.assign(invite);
     return closure_10(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(13326);
+    const tmp9 = first(13352);
     const merged1 = Object.assign(invite);
     return closure_10(tmp9, obj);
   } else {
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp10(13331);
+    guildSplashSource = tmp10(13357);
   } else {
     ({ id: obj3.id, splash: obj3.splash } = guild);
     const obj10 = { id: null, splash: null, size: width * tmpResult.getDevicePixelRatio() };
@@ -480,7 +480,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13331);
+    guildSplashSource = tmp3(13357);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

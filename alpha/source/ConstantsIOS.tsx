@@ -1,9 +1,9 @@
-// Module ID: 1105
-// Function ID: 1106
+// Module ID: 1107
+// Function ID: 1108
 // Name: ConstantsIOS
 // Dependencies: [2]
 
-// Module 1105 (ConstantsIOS)
+// Module 1107 (ConstantsIOS)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["token", "fingerprint"]);

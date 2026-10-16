@@ -1,14 +1,14 @@
-// Module ID: 13695
-// Function ID: 13696
+// Module ID: 13721
+// Function ID: 13722
 // Name: ChannelMemberCountStore
-// Dependencies: [5973, 2065, 11, 504, 584, 2]
+// Dependencies: [5975, 2068, 11, 504, 584, 2]
 
-// Module 13695 (ChannelMemberCountStore)
+// Module 13721 (ChannelMemberCountStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5975 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;

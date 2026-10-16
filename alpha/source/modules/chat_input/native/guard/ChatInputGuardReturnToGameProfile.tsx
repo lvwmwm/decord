@@ -1,19 +1,19 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13048
+// Function ID: 13049
 // Name: ChatInputGuardReturnToGameProfile
-// Dependencies: [19, 21, 5151, 587, 558, 576, 5088, 1415, 1126, 10927, 13016, 2]
+// Dependencies: [19, 21, 5153, 587, 558, 576, 5091, 1417, 1128, 10942, 13042, 2]
 
-// Module 13022 (ChatInputGuardReturnToGameProfile)
+// Module 13048 (ChatInputGuardReturnToGameProfile)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import FastImageDefault from "FastImage" /* 5088 */;
-import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 10927 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13016 */;
+import intl3 from "intl" /* 1128 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import FastImageDefault from "FastImage" /* 5091 */;
+import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 10942 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13042 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp5 = cResult[2];
     }
     if (cResult[3] !== pendingGameProfileReturn.pendingGameProfileReturn.gameName) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const obj2 = { gameName: pendingGameProfileReturn.pendingGameProfileReturn.gameName };
       const formatResult = intl.format(intl3.t.HRHaSF, obj2);
       cResult[3] = pendingGameProfileReturn.pendingGameProfileReturn.gameName;
@@ -46,9 +46,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult = intl2.string(intl3.t.DjifDP);
-      const ArrowSmallLeftIcon = tmp(10927).ArrowSmallLeftIcon;
+      const ArrowSmallLeftIcon = tmp(10942).ArrowSmallLeftIcon;
       const tmp18 = <ArrowSmallLeftIcon color={nativeDefault.colors.WHITE} />;
       cResult[5] = stringResult;
       cResult[6] = tmp18;

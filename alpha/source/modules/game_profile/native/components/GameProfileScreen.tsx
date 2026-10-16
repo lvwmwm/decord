@@ -1,31 +1,31 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9110
+// Function ID: 9111
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9103, 21, 5151, 587, 558, 576, 1126, 5439, 8513, 9104, 4862, 9095, 7229, 8455, 4906, 9101, 9107, 5152, 9108, 9113, 9130, 5115, 9132, 6527, 9133, 9131, 9135, 9335, 9339, 9340, 7065, 7061, 2]
+// Dependencies: [32, 19, 17, 9111, 21, 5153, 587, 558, 576, 1128, 5441, 8521, 9112, 4865, 9103, 7231, 8463, 4909, 9109, 9115, 5154, 9116, 9121, 9138, 5118, 9140, 6529, 9141, 9139, 9143, 9348, 9352, 9353, 7067, 7063, 2]
 
-// Module 9102 (GameProfileScreen)
+// Module 9110 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
-import timing from "timing" /* 5152 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9095 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9101 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9113 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9132 */;
+import intl3 from "intl" /* 1128 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
+import timing from "timing" /* 5154 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9103 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9109 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9121 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 9103 */;
+import GameProfileStore from "GameProfileStore" /* 9111 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
-let ref, set;
+let ref, set, viewId;
 
 let c9;
 let hasOwnProperty;
@@ -52,7 +52,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetBut
   const cResult = obj.c(4);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.l8JeHg);
     cResult[0] = stringResult;
     first = stringResult;
@@ -60,7 +60,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetBut
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.Vsxqmz);
     cResult[1] = stringResult1;
     tmp6 = stringResult1;
@@ -92,7 +92,7 @@ let closure_14 = { code: "function GameProfileScreenTsx2(isVisible,wasVisible){c
 let __initData = { code: "function GameProfileScreenTsx3(){const{interpolate,stickyHeaderVisible,STICKY_HEADER_HEIGHT}=this.__closure;return{transform:[{translateY:interpolate(stickyHeaderVisible.get(),[0,1],[-1*STICKY_HEADER_HEIGHT,0])}]};}" };
 let closure_16 = { code: "function GameProfileScreenTsx4(){const{scrollY,storeLinksSectionBottomY,STICKY_HEADER_HEIGHT}=this.__closure;return scrollY.get()>storeLinksSectionBottomY.get()-STICKY_HEADER_HEIGHT;}" };
 let __initData2 = { code: "function GameProfileScreenTsx5(shouldShow,prevShouldShow){const{runOnJS,setShowGetButton}=this.__closure;if(shouldShow!==prevShouldShow){runOnJS(setShowGetButton)(shouldShow);}}" };
-let closure_18 = { code: "function GameProfileScreenTsx6(){const{heroHeaderHeight,scrollY,STICKY_HEADER_HEIGHT}=this.__closure;return heroHeaderHeight.get()>0&&scrollY.get()>=heroHeaderHeight.get()-STICKY_HEADER_HEIGHT;}" };
+let ref2 = { code: "function GameProfileScreenTsx6(){const{heroHeaderHeight,scrollY,STICKY_HEADER_HEIGHT}=this.__closure;return heroHeaderHeight.get()>0&&scrollY.get()>=heroHeaderHeight.get()-STICKY_HEADER_HEIGHT;}" };
 let __initData3 = { code: "function GameProfileScreenTsx7(isVisible,wasVisible){const{stickyHeaderVisible,withTiming}=this.__closure;if(isVisible!==wasVisible){stickyHeaderVisible.set(withTiming(isVisible?1:0,{duration:150}));}}" };
 let __initData4 = { code: "function GameProfileScreenTsx8(){const{interpolate,stickyHeaderVisible,STICKY_HEADER_HEIGHT}=this.__closure;return{transform:[{translateY:interpolate(stickyHeaderVisible.get(),[0,1],[-1*STICKY_HEADER_HEIGHT,0])}]};}" };
 let closure_21 = { code: "function GameProfileScreenTsx9(){const{scrollY,storeLinksSectionBottomY,STICKY_HEADER_HEIGHT}=this.__closure;return scrollY.get()>storeLinksSectionBottomY.get()-STICKY_HEADER_HEIGHT;}" };
@@ -107,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   let first;
   let isLoading;
   let onPress;
-  let ref2;
+  let ref3;
   let sharedValue3;
   let sourceUserId;
   let tmp24;
@@ -362,7 +362,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       found = tmp43;
       __initData2 = obj3.useRef(undefined);
-      const ref3 = obj3.useRef(null);
+      ref2 = obj3.useRef(null);
       if (cResult[13] !== name) {
         class Ee {
           constructor() {
@@ -412,27 +412,35 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           }
         }
       }
-      function be(action, similarGameId, arg2) {
-        let guildId;
-        const obj = GameProfileAnalyticUtils;
-        const guildIdAndVerifiedFromInvite = obj.getGuildIdAndVerifiedFromInvite(ref3.current);
-        let str = ref2.current;
-        const trackGameProfileAction = GameProfileAnalyticUtils.trackGameProfileAction;
-        GameProfileAnalyticUtils;
-        if (str == null) {
-          str = "";
+      class Ge {
+        constructor(action, arg1) {
+          let guildId;
+          let obj = arg1;
+          if (undefined === arg1) {
+            obj = {};
+          }
+          const communityGuildId = obj.communityGuildId;
+          const similarGameId = obj.similarGameId;
+          const obj2 = GameProfileAnalyticUtils;
+          const guildIdAndVerifiedFromInvite = obj2.getGuildIdAndVerifiedFromInvite(ref3.current);
+          let str = ref2.current;
+          const trackGameProfileAction = GameProfileAnalyticUtils.trackGameProfileAction;
+          GameProfileAnalyticUtils;
+          if (str == null) {
+            str = "";
+          }
+          const obj3 = { gameName: str, gameId, action, similarGameId, viewId: first1, guildId, isVerified: null == communityGuildId && guildIdAndVerifiedFromInvite.isVerified, source };
+          guildId = communityGuildId;
+          if (communityGuildId == null) {
+            guildId = guildIdAndVerifiedFromInvite.guildId;
+          }
+          const result = trackGameProfileAction(obj3);
         }
-        const obj2 = { gameName: str, gameId, action, similarGameId, viewId: first1, guildId, isVerified: null == arg2 && guildIdAndVerifiedFromInvite.isVerified, source };
-        guildId = arg2;
-        if (arg2 == null) {
-          guildId = guildIdAndVerifiedFromInvite.guildId;
-        }
-        const result = trackGameProfileAction(obj2);
       }
       cResult[19] = gameId;
       cResult[20] = source;
       cResult[21] = first1;
-      cResult[22] = be;
+      cResult[22] = Ge;
     }
     const obj8 = { gameId: undefined, scrollY: sharedValue };
     cResult[7] = sharedValue;
@@ -473,7 +481,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   let items16;
   let obj10;
   let obj14;
-  let ref2;
   let ref3;
   let selectionVersion;
   let tmp5Result4;
@@ -512,7 +519,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const tmp6Result = tmp6(source(sourceUserId[13]).openURL);
   react = tmp6Result;
   let obj2 = react;
-  const viewId = num(react.useState(() => {
+  viewId = num(react.useState(() => {
     const obj = gameId(sourceUserId[14]);
     return obj.generateViewId();
   }), 1)[0];
@@ -658,22 +665,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     ref3.current = first1;
   }, items4);
   const items5 = [gameId, viewId, source];
-  callback1 = obj2.useCallback((action, similarGameId, arg2) => {
+  callback1 = obj2.useCallback((action) => {
     let guildId;
-    const obj = GameProfileAnalyticUtils;
-    const guildIdAndVerifiedFromInvite = obj.getGuildIdAndVerifiedFromInvite(ref3.current);
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    const communityGuildId = obj.communityGuildId;
+    const similarGameId = obj.similarGameId;
+    const obj2 = GameProfileAnalyticUtils;
+    const guildIdAndVerifiedFromInvite = obj2.getGuildIdAndVerifiedFromInvite(ref3.current);
     let str = ref2.current;
     const trackGameProfileAction = GameProfileAnalyticUtils.trackGameProfileAction;
     GameProfileAnalyticUtils;
     if (str == null) {
       str = "";
     }
-    const obj2 = { gameName: str, gameId, action, similarGameId, viewId, guildId, isVerified: null == arg2 && guildIdAndVerifiedFromInvite.isVerified, source };
-    guildId = arg2;
-    if (arg2 == null) {
+    const obj3 = { gameName: str, gameId, action, similarGameId, viewId, guildId, isVerified: null == communityGuildId && guildIdAndVerifiedFromInvite.isVerified, source };
+    guildId = communityGuildId;
+    if (communityGuildId == null) {
       guildId = guildIdAndVerifiedFromInvite.guildId;
     }
-    const result = trackGameProfileAction(obj2);
+    const result = trackGameProfileAction(obj3);
   }, items5);
   ({ navigation, selectionVersion } = source(tmp3[23])(callback1, initialTab));
   const selectedTab = navigation.selectedTab;

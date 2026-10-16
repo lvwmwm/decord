@@ -1,13 +1,13 @@
-// Module ID: 11560
-// Function ID: 11561
+// Module ID: 11583
+// Function ID: 11584
 // Name: conjureProjectNameError
-// Dependencies: [1126, 3862, 7166, 2]
+// Dependencies: [1128, 3865, 7168, 2]
 // Exports: conjureProjectNameError
 
-// Module 11560 (conjureProjectNameError)
-import intl3 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+// Module 11583 (conjureProjectNameError)
+import intl3 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7168 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureProjectNameError.tsx");
@@ -16,14 +16,14 @@ export const conjureProjectNameError = function conjureProjectNameError(trimmed)
   let stringResult;
   if ("" === trimmed) {
     const intl2 = intl3.intl;
-    stringResult = intl2.string(_modDef3862.l669D8);
+    stringResult = intl2.string(_modDef3865.l669D8);
   } else {
     stringResult = null;
     if (trimmed.length < ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH) {
-      const intl = tmp5(1126).intl;
+      const intl = tmp5(1128).intl;
       const formatToPlainString = intl.formatToPlainString;
       const range = { min: ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH, max: ConjureProjectTypes.MAX_PROJECT_NAME_LENGTH };
-      const ONSqYd = tmp5(1126).t.ONSqYd;
+      const ONSqYd = tmp5(1128).t.ONSqYd;
       stringResult = formatToPlainString(ONSqYd, range);
     }
   }

@@ -1,8 +1,8 @@
-// Module ID: 18001
-// Function ID: 18002
+// Module ID: 18035
+// Function ID: 18036
 // Dependencies: [2]
 
-// Module 18001
+// Module 18035
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FileUploadSpotIllustration-1x.png.js");

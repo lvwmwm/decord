@@ -1,17 +1,17 @@
-// Module ID: 11843
-// Function ID: 11844
+// Module ID: 11867
+// Function ID: 11868
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1502, 2062, 21, 5151, 587, 558, 576, 8451, 1126, 9672, 2]
+// Dependencies: [19, 17, 1504, 2065, 21, 5153, 587, 558, 576, 8459, 1128, 9688, 2]
 
-// Module 11843 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 11867 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import AppsIcon2 from "AppsIcon" /* 8451 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import AppsIcon2 from "AppsIcon" /* 8459 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -61,10 +61,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearch
         let tmp18;
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1126).intl;
-          const stringResult = intl.string(tmp(1126).t.bCPN5y);
-          const intl2 = tmp(1126).intl;
-          const stringResult1 = intl2.string(tmp(1126).t["0TBExc"]);
+          const intl = tmp(1128).intl;
+          const stringResult = intl.string(tmp(1128).t.bCPN5y);
+          const intl2 = tmp(1128).intl;
+          const stringResult1 = intl2.string(tmp(1128).t["0TBExc"]);
           cResult[7] = stringResult;
           cResult[8] = stringResult1;
           tmp14 = stringResult1;
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearch
               }
             }
           }
-          const tmp22 = jsx(tmp(9672).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
+          const tmp22 = jsx(tmp(9688).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
           cResult[16] = tmp10;
           cResult[17] = tmp17;
           cResult[18] = tmp18;
@@ -167,16 +167,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearch
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9672).Coachmark;
-    const intl = markAsDismissed(1126).intl;
-    const intl2 = markAsDismissed(1126).intl;
+    const Coachmark = markAsDismissed(9688).Coachmark;
+    const intl = markAsDismissed(1128).intl;
+    const intl2 = markAsDismissed(1128).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     tmp3 = <Coachmark renderImgComponent={function appsIcon() {
       ({ style: appsIconImage.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
       const AppsIcon = AppsIcon2.AppsIcon;
       return <View style={closure_2.appsIcon}>{null}</View>;
-    }} title={intl.string(markAsDismissed(1126).t.bCPN5y)} description={intl2.string(markAsDismissed(1126).t["0TBExc"])} onDismiss={function onDismiss() {
+    }} title={intl.string(markAsDismissed(1128).t.bCPN5y)} description={intl2.string(markAsDismissed(1128).t["0TBExc"])} onDismiss={function onDismiss() {
       const obj = { actionType: ContentDismissActionType.TAKE_ACTION };
       markAsDismissed(obj);
     }} targetMeasurements={size} surfaceMeasurements={size1} position="bottom" />;

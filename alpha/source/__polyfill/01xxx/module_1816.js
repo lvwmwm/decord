@@ -1,84 +1,72 @@
 // Module ID: 1816
 // Function ID: 1817
-// Dependencies: [41, 42, 1817, 1700]
+// Dependencies: [19, 1661, 1702, 1730]
+// Exports: useDerivedValue
 
 // Module 1816
-import _createClassDefault from "_createClass" /* 42 */;
-import startMapper from "startMapper" /* 1700 */;
-import prepareUIRegistry from "prepareUIRegistry" /* 1817 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import startMapper from "startMapper" /* 1702 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
 let _require;
 
-const __initData = { code: "function pnpm_FrameCallbackRegistryJSTs1(){const{callback,callbackId}=this.__closure;global._frameCallbackRegistry.registerFrameCallback(callback,callbackId);}" };
-const __initData2 = { code: "function pnpm_FrameCallbackRegistryJSTs2(){const{callbackId}=this.__closure;global._frameCallbackRegistry.unregisterFrameCallback(callbackId);}" };
-const __initData3 = { code: "function pnpm_FrameCallbackRegistryJSTs3(){const{callbackId,state}=this.__closure;global._frameCallbackRegistry.manageStateFrameCallback(callbackId,state);}" };
-class FrameCallbackRegistryJS {
-  constructor() {
-    _classCallCheck(this, FrameCallbackRegistryJS);
-    this.nextCallbackId = 0;
-    const obj = prepareUIRegistry;
-    obj.prepareUIRegistry();
-  }
-}
-const entry = {
-  key: "registerFrameCallback",
-  value: function registerFrameCallback(callback) {
-    let closure_0 = callback;
-    if (closure_0) {
-      const self = this;
-      const nextCallbackId = this.nextCallbackId;
-      this.nextCallbackId = this.nextCallbackId + 1;
-      const fn = function c() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.registerFrameCallback(callback, nextCallbackId);
-      };
-      const obj2 = { callback, callbackId: nextCallbackId };
-      fn.__closure = obj2;
-      fn.__workletHash = 11361563554462;
-      fn.__initData = __initData;
-      const obj = nextCallbackId(1700);
-      obj.runOnUI(fn)();
-      return nextCallbackId;
-    } else {
-      return -1;
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "unregisterFrameCallback",
-    value: function unregisterFrameCallback(callbackId) {
-      let closure_0 = callbackId;
-      const fn = function c() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.unregisterFrameCallback(callbackId);
-      };
-      fn.__closure = { callbackId };
-      fn.__workletHash = 9182274559334;
-      fn.__initData = __initData2;
-      const obj = startMapper;
-      obj.runOnUI(fn)();
-    }
-  },
-  {
-    key: "manageStateFrameCallback",
-    value: function manageStateFrameCallback(callbackId, state) {
-      let closure_0 = callbackId;
-      _require = state;
-      const fn = function t() {
-        const _frameCallbackRegistry = global._frameCallbackRegistry;
-        const result = _frameCallbackRegistry.manageStateFrameCallback(callbackId, state);
-      };
-      fn.__closure = { callbackId, state };
-      fn.__workletHash = 5244475777443;
-      fn.__initData = __initData3;
-      const obj = require("startMapper");
-      obj.runOnUI(fn)();
-    }
-  }
-];
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}" };
 
-export default _createClassDefault(FrameCallbackRegistryJS, items);
+export const useDerivedValue = function useDerivedValue(fn, items) {
+  _require = fn;
+  const tmp2 = closure_3(null);
+  let __closure = fn.__closure;
+  const _Object = Object;
+  if (__closure == null) {
+    __closure = {};
+  }
+  let values2 = values(__closure);
+  let obj2 = require("module_1661");
+  let tmp5 = obj2.shouldBeUseWeb() && !values2.length;
+  let arr2 = items;
+  if (tmp5) {
+    let length;
+    if (arr2 != null) {
+      length = arr2.length;
+    }
+    tmp5 = length;
+  }
+  if (tmp5) {
+    values2 = arr2;
+  }
+  if (undefined === arr2) {
+    items = [];
+    items[HermesBuiltin.arraySpread(items, values2, 0)] = fn.__workletHash;
+    arr2 = items;
+  } else {
+    arr2.push(fn.__workletHash);
+  }
+  if (null === tmp2.current) {
+    const makeMutable = require("startMapper").makeMutable;
+    require("startMapper");
+    const tmp3Result2 = require("module_1730");
+    tmp2.current = makeMutable(tmp3Result2.initialUpdaterRun(fn));
+  }
+  const current = tmp2.current;
+  current(() => {
+    let closure_0;
+    const fn = function t() {
+      current.value = closure_0();
+    };
+    let obj = { sharedValue: current, updater };
+    fn.__closure = obj;
+    fn.__workletHash = 1316501239615;
+    fn.__initData = __initData;
+    const items = [current];
+    const obj2 = updater(values2[2]);
+    updater = obj2.startMapper(fn, values2, items);
+    return () => {
+      const obj = startMapper;
+      obj.stopMapper(closure_0);
+    };
+  }, arr2);
+  return current;
+};

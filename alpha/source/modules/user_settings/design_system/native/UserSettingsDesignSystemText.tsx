@@ -1,23 +1,23 @@
-// Module ID: 16715
-// Function ID: 16716
+// Module ID: 16748
+// Function ID: 16749
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 558, 576, 4874, 587, 6485, 5148, 6400, 5147, 5437, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4877, 587, 6487, 5150, 6402, 5149, 5439, 2]
 
-// Module 16715 (UserSettingsDesignSystemText)
+// Module 16748 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4874 */;
-import TableRow2 from "TableRow" /* 6400 */;
+import useToken from "useToken" /* 4877 */;
+import TableRow2 from "TableRow" /* 6402 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TextVariants = tmp(5148);
-const Stack_Stack = tmp(5437);
-const TableRowGroup2 = tmp(6485);
+const TextVariants = tmp(5150);
+const Stack_Stack = tmp(5439);
+const TableRowGroup2 = tmp(6487);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemText() {

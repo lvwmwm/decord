@@ -1,15 +1,15 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 17848
+// Function ID: 17849
 // Name: UserSettingsFriendRequests
-// Dependencies: [19, 17, 1085, 21, 558, 576, 2041, 6904, 1126, 7115, 1403, 6485, 2]
+// Dependencies: [19, 17, 1087, 21, 558, 576, 2044, 6906, 1128, 7117, 1405, 6487, 2]
 
-// Module 17814 (UserSettingsFriendRequests)
+// Module 17848 (UserSettingsFriendRequests)
 import react_native from "react-native" /* 17 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6904 */;
+import FlagUtilsAll from "FlagUtils" /* 1405 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6906 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,10 +34,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   let tmp = setting;
   let obj = setting(576);
   const cResult = obj.c(23);
-  let FriendSourceFlagsSetting = setting(2041).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(2044).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   if (cResult[0] !== setting) {
-    const tmpResult = tmp(6904);
+    const tmpResult = tmp(6906);
     const flags = tmpResult.computeFlags(setting);
     cResult[0] = setting;
     cResult[1] = flags;
@@ -46,16 +46,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.vyodkM);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.vyodkM);
     cResult[2] = stringResult;
     tmp7 = stringResult;
   } else {
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(tmp(1126).t.mGr3CX);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(tmp(1128).t.mGr3CX);
     cResult[3] = stringResult1;
     tmp9 = stringResult1;
   } else {
@@ -80,7 +80,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[5] !== tmp5.all) {
     const obj2 = { label: tmp9, value: tmp5.all, onValueChange: tmp11 };
-    const tmp14 = closure_7(tmp(7115).TableSwitchRow, obj2);
+    const tmp14 = closure_7(tmp(7117).TableSwitchRow, obj2);
     cResult[5] = tmp5.all;
     cResult[6] = tmp14;
     tmp12 = tmp14;
@@ -88,8 +88,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp12 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(tmp(1126).t.IqlCSq);
+    const intl3 = tmp(1128).intl;
+    const stringResult2 = intl3.string(tmp(1128).t.IqlCSq);
     cResult[7] = stringResult2;
     tmp15 = stringResult2;
   } else {
@@ -164,7 +164,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
           return updateSetting(addFlagResult);
         }
       }
-      const stringResult3 = obj5.string(tmp(1126).t.mozb8f);
+      const stringResult3 = obj5.string(tmp(1128).t.mozb8f);
       cResult[13] = stringResult3;
       tmp20 = stringResult3;
     } else {
@@ -252,7 +252,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
           }
         }
       }
-      const obj3 = { children: closure_8(tmp(6485).TableRowGroup, obj4) };
+      const obj3 = { children: closure_8(tmp(6487).TableRowGroup, obj4) };
       obj4 = { title: tmp7, hasIcons: false, children: items };
       items = [tmp12, tmp18, tmp24];
       cResult[19] = tmp24;
@@ -264,14 +264,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const obj6 = { label: tmp20, value: tmp5.mutualGuilds, onValueChange: tmp22 };
     cResult[16] = tmp5.mutualGuilds;
     cResult[17] = tmp22;
-    cResult[18] = closure_7(tmp(7115).TableSwitchRow, obj6);
-    const tmp26 = closure_7(tmp(7115).TableSwitchRow, obj6);
+    cResult[18] = closure_7(tmp(7117).TableSwitchRow, obj6);
+    const tmp26 = closure_7(tmp(7117).TableSwitchRow, obj6);
   }
   const obj7 = { label: tmp15, value: tmp5.mutualFriends, onValueChange: tmp17 };
   cResult[10] = tmp5.mutualFriends;
   cResult[11] = tmp17;
-  cResult[12] = closure_7(tmp(7115).TableSwitchRow, obj7);
-  const tmp19 = closure_7(tmp(7115).TableSwitchRow, obj7);
+  cResult[12] = closure_7(tmp(7117).TableSwitchRow, obj7);
+  const tmp19 = closure_7(tmp(7117).TableSwitchRow, obj7);
 }) : (function UserSettingsFriendRequests() {
   let TableRowGroup;
   let intl;
@@ -281,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   let items1;
   let obj2;
   let setting;
-  let FriendSourceFlagsSetting = setting(2041).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(2044).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {
@@ -289,11 +289,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     return obj.computeFlags(setting);
   }, items);
   let obj = { children: closure_8(TableRowGroup, obj2) };
-  obj2 = { title: intl.string(setting(1126).t.vyodkM), hasIcons: false, children: items1 };
-  TableRowGroup = setting(6485).TableRowGroup;
-  intl = setting(1126).intl;
+  obj2 = { title: intl.string(setting(1128).t.vyodkM), hasIcons: false, children: items1 };
+  TableRowGroup = setting(6487).TableRowGroup;
+  intl = setting(1128).intl;
   const obj3 = {
-    label: intl2.string(setting(1126).t.mGr3CX),
+    label: intl2.string(setting(1128).t.mGr3CX),
     value: memo.all,
     onValueChange(arg0) {
       let tmp3;
@@ -307,11 +307,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       return updateSetting(tmp3);
     }
   };
-  const TableSwitchRow = setting(7115).TableSwitchRow;
-  intl2 = setting(1126).intl;
+  const TableSwitchRow = setting(7117).TableSwitchRow;
+  intl2 = setting(1128).intl;
   items1 = [closure_7(TableSwitchRow, obj3), , ];
   const obj4 = {
-    label: intl3.string(setting(1126).t.IqlCSq),
+    label: intl3.string(setting(1128).t.IqlCSq),
     value: memo.mutualFriends,
     onValueChange(arg0) {
       let addFlagResult;
@@ -327,11 +327,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       return updateSetting(addFlagResult);
     }
   };
-  const TableSwitchRow2 = setting(7115).TableSwitchRow;
-  intl3 = setting(1126).intl;
+  const TableSwitchRow2 = setting(7117).TableSwitchRow;
+  intl3 = setting(1128).intl;
   items1[1] = closure_7(TableSwitchRow2, obj4);
   const obj5 = {
-    label: intl4.string(setting(1126).t.mozb8f),
+    label: intl4.string(setting(1128).t.mozb8f),
     value: memo.mutualGuilds,
     onValueChange(arg0) {
       let addFlagResult;
@@ -347,8 +347,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       return updateSetting(addFlagResult);
     }
   };
-  const TableSwitchRow3 = setting(7115).TableSwitchRow;
-  intl4 = setting(1126).intl;
+  const TableSwitchRow3 = setting(7117).TableSwitchRow;
+  intl4 = setting(1128).intl;
   items1[2] = closure_7(TableSwitchRow3, obj5);
   return closure_7(View, obj);
 });

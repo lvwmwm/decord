@@ -1,13 +1,13 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16205
+// Function ID: 16206
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [16146, 1392, 1126, 2]
+// Dependencies: [16179, 1394, 1128, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 16172 (GuildRoleSubscriptionTypeUtils)
-import intl5 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16146 */;
+// Module 16205 (GuildRoleSubscriptionTypeUtils)
+import intl5 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16179 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
@@ -32,11 +32,11 @@ export const formatPlanInterval = function formatPlanInterval(merged) {
   const intl = intl5.intl;
   const format = intl.format;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    cuSp8Q = tmp(1126).t["3rUmPQ"];
+    cuSp8Q = tmp(1128).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = tmp(1126).t.zuN545;
+    cuSp8Q = tmp(1128).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = tmp(1126).t.cuSp8Q;
+    cuSp8Q = tmp(1128).t.cuSp8Q;
   }
   return format(cuSp8Q, { count });
 };

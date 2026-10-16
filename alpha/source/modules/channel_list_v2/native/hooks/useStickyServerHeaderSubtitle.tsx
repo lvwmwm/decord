@@ -1,11 +1,11 @@
-// Module ID: 17152
-// Function ID: 17153
+// Module ID: 17186
+// Function ID: 17187
 // Name: useStickyServerHeaderSubtitle
-// Dependencies: [5076, 1085, 558, 576, 504, 2]
+// Dependencies: [5079, 1087, 558, 576, 504, 2]
 
-// Module 17152 (useStickyServerHeaderSubtitle)
-import Constants from "Constants" /* 1085 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5076 */;
+// Module 17186 (useStickyServerHeaderSubtitle)
+import Constants from "Constants" /* 1087 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5079 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17415
-// Function ID: 17416
+// Module ID: 17449
+// Function ID: 17450
 // Name: FadeInOut
-// Dependencies: [19, 21, 558, 576, 4906, 5152, 2]
+// Dependencies: [19, 21, 558, 576, 4909, 5154, 2]
 
-// Module 17415 (FadeInOut)
+// Module 17449 (FadeInOut)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,9 +28,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeInOut(
   const cResult = obj.c(10);
   ({ children, duration } = arg0);
   ({ style, ref } = arg0);
-  let obj2 = duration(4906);
+  let obj2 = duration(4909);
   const sharedValue = obj2.useSharedValue(0);
-  const obj3 = duration(4906);
+  const obj3 = duration(4909);
   let fn = function c() {
     const obj = { opacity: sharedValue.get() };
     return obj;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeInOut(
         }
         return tmp9;
       }
-      const tmp12 = jsx(sharedValue(4906).View, { style: tmp8, children });
+      const tmp12 = jsx(sharedValue(4909).View, { style: tmp8, children });
       cResult[7] = children;
       cResult[8] = tmp8;
       cResult[9] = tmp12;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeInOut(
               closure_1_2.current = current;
               set = sharedValue.set;
               let obj = duration(closure_2[5]);
-              const fn = function t() { /* body not rendered: F157268 */ };
+              const fn = function t() { /* body not rendered: F157744 */ };
               const obj2 = { duration };
               fn.__closure = { runOnJS: duration(closure_2[4]).runOnJS, handleTransitionFinished };
               fn.__workletHash = 7644958904451;

@@ -1,25 +1,25 @@
-// Module ID: 18354
-// Function ID: 18355
+// Module ID: 18396
+// Function ID: 18397
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7475, 1244, 13407, 2116, 4995, 5975, 10885, 1085, 2072, 7028, 10918, 2041, 10909, 11278, 7165, 12070, 2]
+// Dependencies: [7477, 1246, 13433, 2119, 4998, 5977, 10900, 1087, 2075, 7030, 10933, 2044, 10924, 11298, 7167, 12094, 2]
 
-// Module 18354 (ConjureTurnNotificationManager)
-import UserSettings from "UserSettings" /* 2041 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import ConjureUtils from "ConjureUtils" /* 7165 */;
-import conjureProjectMute from "conjureProjectMute" /* 10909 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10918 */;
-import SoundUtils from "SoundUtils" /* 11278 */;
-import conjureMentions from "conjureMentions" /* 12070 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7475 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13407 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
-import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
+// Module 18396 (ConjureTurnNotificationManager)
+import UserSettings from "UserSettings" /* 2044 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ConjureUtils from "ConjureUtils" /* 7167 */;
+import conjureProjectMute from "conjureProjectMute" /* 10924 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10933 */;
+import SoundUtils from "SoundUtils" /* 11298 */;
+import conjureMentions from "conjureMentions" /* 12094 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7477 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13433 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5977 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
+import Constants from "Constants" /* 1087 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -92,7 +92,7 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
       let conjureWorkspaceGuildId = guildId;
       if (guildId == null) {
         const tmp8Result3 = ConjureUtils;
-        conjureWorkspaceGuildId = tmp8Result3.resolveConjureWorkspaceGuildId(VibegrationsChatStore);
+        conjureWorkspaceGuildId = tmp8Result3.resolveConjureWorkspaceGuildId(ConjureChatStore);
       }
       const obj4 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result4.withConjureMentionNames(body), route: CHANNELResult, sound: tmp27, volume };
       const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
@@ -122,7 +122,7 @@ class ConjureTurnNotificationManager extends AutomaticLifecycleManager {
 }
 const bit_message1 = "bit_message1";
 const message1 = "message1";
-const VibegrationsChatStore = "VibegrationsChatStore";
+const ConjureChatStore = "ConjureChatStore";
 let c20 = 0.4;
 const conjureTurnNotificationManager = new ConjureTurnNotificationManager();
 const map = new Map();

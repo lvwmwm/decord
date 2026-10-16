@@ -1,14 +1,14 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12104
+// Function ID: 12105
 // Name: ConjureMentionText
-// Dependencies: [19, 1390, 21, 558, 576, 5018, 504, 12076, 12070, 2]
+// Dependencies: [19, 1392, 21, 558, 576, 5021, 504, 12100, 12094, 2]
 
-// Module 12080 (ConjureMentionText)
-import UserUtils from "UserUtils" /* 5018 */;
-import conjureMentions from "conjureMentions" /* 12070 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12076 */;
+// Module 12104 (ConjureMentionText)
+import UserUtils from "UserUtils" /* 5021 */;
+import conjureMentions from "conjureMentions" /* 12094 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12100 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -94,10 +94,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
   const cResult = obj.c(9);
   const tmp = variant;
   ({ text, variant } = arg0);
-  const obj2 = variant(12070);
+  const obj2 = variant(12094);
   const requestConjureMentionedUsers = obj2.useRequestConjureMentionedUsers(text);
   if (cResult[0] !== text) {
-    const tmpResult = tmp(12070);
+    const tmpResult = tmp(12094);
     const splitConjureMentionsResult = tmpResult.splitConjureMentions(text);
     cResult[0] = text;
     cResult[1] = splitConjureMentionsResult;

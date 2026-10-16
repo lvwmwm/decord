@@ -1,22 +1,22 @@
-// Module ID: 17698
-// Function ID: 17699
+// Module ID: 17732
+// Function ID: 17733
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1200, 5018, 5147, 5481, 10513, 8433, 1126, 8376, 6402, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1202, 5021, 5149, 5483, 10528, 8441, 1128, 8384, 6404, 2]
 
-// Module 17698 (SearchListCard)
+// Module 17732 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import useChannelNameDefault from "useChannelName" /* 5481 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
-import ForumIcon from "ForumIcon" /* 8433 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import useChannelNameDefault from "useChannelName" /* 5483 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8384 */;
+import ForumIcon from "ForumIcon" /* 8441 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,8 +27,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp5;
-const Card_Card = tmp(6402);
-const GroupDMAvatarDefault = tmp5(10513);
+const Card_Card = tmp(6404);
+const GroupDMAvatarDefault = tmp5(10528);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -96,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListCo
     }
   }
   const obj5 = { source: avatarSource, size: native.AvatarSizes.SIZE_16, style: tmp4.avatar, avatarDecoration: author.avatarDecoration };
-  const Avatar = tmp(1200).Avatar;
+  const Avatar = tmp(1202).Avatar;
   const tmp7 = hasOwnProperty(Avatar, obj5);
   cResult[0] = author.avatarDecoration;
   cResult[1] = avatarSource;
@@ -199,8 +199,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchL
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: intl.string(intl2.t.ACgJhM) };
-      const Text = tmp(5147).Text;
-      intl = tmp(1126).intl;
+      const Text = tmp(5149).Text;
+      intl = tmp(1128).intl;
       const tmp13 = hasOwnProperty(Text, obj7);
       cResult[14] = tmp13;
       tmp11 = tmp13;
@@ -307,7 +307,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListGuildC
     tmp10 = tmp12;
   }
   const obj4 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: tmp6, color: tmp4.channelIcon.color };
-  const Icon = tmp(1200).Icon;
+  const Icon = tmp(1202).Icon;
   const tmp9 = hasOwnProperty(Icon, obj4);
   cResult[2] = tmp6;
   cResult[3] = tmp4.channelIcon.color;
@@ -414,7 +414,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListCa
     let tmp6 = label;
     if (typeof label === "string") {
       const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
-      tmp6 = hasOwnProperty(tmp(5147).Text, obj2);
+      tmp6 = hasOwnProperty(tmp(5149).Text, obj2);
     }
     cResult[0] = label;
     cResult[1] = tmp6;
@@ -426,7 +426,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListCa
     let tmp8 = subLabel;
     if (typeof subLabel === "string") {
       const obj3 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
-      tmp8 = hasOwnProperty(tmp(5147).Text, obj3);
+      tmp8 = hasOwnProperty(tmp(5149).Text, obj3);
     }
     cResult[2] = subLabel;
     cResult[3] = tmp8;

@@ -1,17 +1,15 @@
 // Module ID: 15262
 // Function ID: 15263
-// Dependencies: [15209, 15260, 15243]
+// Dependencies: [15241]
 
 // Module 15262
-import _mod15209 from "module_15209" /* 15209 */;
-import _mod15243 from "module_15243" /* 15243 */;
-import defineProperty2 from "defineProperty2" /* 15260 */;
+import _mod15241 from "module_15241" /* 15241 */;
 
+const tmp = _mod15241.navigator && _mod15241.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default _mod15209 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod15243(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default str;

@@ -1,12 +1,12 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15547
+// Function ID: 15548
 // Name: UserProfileEditFormSharedStyles
-// Dependencies: [7124, 5151, 587, 2]
+// Dependencies: [7126, 5153, 587, 2]
 
-// Module 15511 (UserProfileEditFormSharedStyles)
+// Module 15547 (UserProfileEditFormSharedStyles)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7124 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import Constants from "Constants" /* 7126 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import size from "module_2" /* 2 */;
 
 let ARBITRARY_LARGE_OFFSET;

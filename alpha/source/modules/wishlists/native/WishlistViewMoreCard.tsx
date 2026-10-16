@@ -1,18 +1,18 @@
-// Module ID: 13575
-// Function ID: 13576
+// Module ID: 13601
+// Function ID: 13602
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 13570, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1128, 13596, 5149, 2]
 
-// Module 13575 (WishlistViewMoreCard)
+// Module 13601 (WishlistViewMoreCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 13570 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 13596 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistView
   ({ sku, size, recipientName, overflowCount, onPress } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] !== recipientName) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { username: recipientName };
     const formatToPlainStringResult = intl.formatToPlainString(intl3.t["8uYD+I"], obj2);
     cResult[0] = recipientName;
@@ -61,7 +61,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistView
       }
       const moreOverlay = tmp4.moreOverlay;
       if (cResult[6] !== overflowCount) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const obj3 = { count: overflowCount };
         const formatResult = intl2.format(intl3.t.F6iMs4, obj3);
         cResult[6] = overflowCount;

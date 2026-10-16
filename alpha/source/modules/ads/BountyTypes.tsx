@@ -1,12 +1,12 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 9420
+// Function ID: 9421
 // Name: BountyTypes
-// Dependencies: [32, 9405, 9406, 2]
+// Dependencies: [32, 9421, 9422, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 9404 (BountyTypes)
-import BountyAspectRatio from "BountyAspectRatio" /* 9405 */;
-import AssetUtils from "AssetUtils" /* 9406 */;
+// Module 9420 (BountyTypes)
+import BountyAspectRatio from "BountyAspectRatio" /* 9421 */;
+import AssetUtils from "AssetUtils" /* 9422 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ function videoRenditionsFromServer(video_renditions) {
         hasItem = "" !== tmp12;
       }
       if (hasItem) {
-        let tmp13Result = tmp13(9406);
+        let tmp13Result = tmp13(9422);
         obj[tmp11] = tmp13Result.resolveAdCreativeCdnUrl(tmp12);
       }
       continue;

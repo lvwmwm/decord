@@ -1,19 +1,19 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17515
+// Function ID: 17516
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1200, 10260, 1126, 5147, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 1202, 10276, 1128, 5149, 2]
 
-// Module 17481 (ForYouUnreadClearedState)
+// Module 17515 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10260 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10276 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouUnread
   }
   if (cResult[2] !== tmp4.icon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.icon, color: tmp4.icon.color };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp12 = React3(Icon, obj3);
     cResult[2] = tmp4.icon;
     cResult[3] = tmp12;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouUnread
   }
   const headerText = tmp4.headerText;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.DonStq);
     cResult[4] = stringResult;
     tmp13 = stringResult;
@@ -82,8 +82,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouUnread
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { color: "text-default", variant: "text-md/medium", children: intl2.string(intl3.t.jXFsai) };
-    const Text = tmp(5147).Text;
-    intl2 = tmp(1126).intl;
+    const Text = tmp(5149).Text;
+    intl2 = tmp(1128).intl;
     const tmp20 = React3(Text, obj5);
     cResult[7] = tmp20;
     tmp18 = tmp20;

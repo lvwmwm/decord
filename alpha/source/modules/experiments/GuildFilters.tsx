@@ -1,17 +1,17 @@
-// Module ID: 5074
-// Function ID: 5075
+// Module ID: 5077
+// Function ID: 5078
 // Name: GuildFilters
-// Dependencies: [32, 5075, 5076, 2087, 14, 1264, 11, 1102, 2]
+// Dependencies: [32, 5078, 5079, 2090, 14, 1266, 11, 1104, 2]
 
-// Module 5074 (GuildFilters)
+// Module 5077 (GuildFilters)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import DurationsDefault from "Durations" /* 1102 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AuthInviteStore from "AuthInviteStore" /* 5075 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import module_1264_mod from "module_1264" /* 1264 */;
+import AuthInviteStore from "AuthInviteStore" /* 5078 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5079 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import module_1266_mod from "module_1266" /* 1266 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,11 +53,11 @@ function getRangeData(arg0) {
     let tmp6 = _slicedToArray(tmp4, 2);
     [tmp7, tmp8] = tmp6;
     let tmp9 = importDefault;
-    let obj = module_1264;
+    let obj = module_1266;
     if (obj.v3("min_id") === tmp7) {
       min = tmp8;
     } else {
-      let tmp9Result = tmp9(1264);
+      let tmp9Result = tmp9(1266);
       if (tmp9Result.v3("max_id") === tmp7) {
         max = tmp8;
       }
@@ -67,15 +67,15 @@ function getRangeData(arg0) {
   return { min, max };
 }
 let obj = {};
-let module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_ids")] = (arg0) => {
+let module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_ids")] = (arg0) => {
   let first;
   let tmp6;
   let closure_0 = [];
   const tmp = arg0[Symbol.iterator]();
   while (tmp !== undefined) {
     [first, tmp6] = tmp2;
-    let obj = module_1264;
+    let obj = module_1266;
     if (first === obj.v3("guild_ids")) {
       closure_0 = tmp6;
     }
@@ -83,14 +83,14 @@ obj[module_1264.v3("guild_ids")] = (arg0) => {
   }
   return (arg0) => closure_0.includes(arg0);
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_id_range")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_id_range")] = (arg0) => {
   ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
   getRangeData(arg0);
   return (memberCount) => isInRange(memberCount, importDefault, dependencyMap);
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_age_range_days")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_age_range_days")] = (arg0) => {
   ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
   getRangeData(arg0);
   return (arg0) => {
@@ -99,8 +99,8 @@ obj[module_1264.v3("guild_age_range_days")] = (arg0) => {
     return isInRange(floor(ageResult / DurationsDefault.Millis.DAY), importDefault, dependencyMap);
   };
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_member_count_range")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_member_count_range")] = (arg0) => {
   ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
   getRangeData(arg0);
   return (arg0) => {
@@ -109,8 +109,8 @@ obj[module_1264.v3("guild_member_count_range")] = (arg0) => {
     return tmp2;
   };
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_has_feature")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_has_feature")] = (arg0) => {
   let closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
     let guild = GuildStore.getGuild(arg0);
@@ -124,8 +124,8 @@ obj[module_1264.v3("guild_has_feature")] = (arg0) => {
     return someResult;
   };
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_hub_types")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_hub_types")] = (arg0) => {
   let closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
     let guild = GuildStore.getGuild(arg0);
@@ -136,8 +136,8 @@ obj[module_1264.v3("guild_hub_types")] = (arg0) => {
     return someResult;
   };
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_has_vanity_url")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_has_vanity_url")] = (arg0) => {
   let closure_0 = _slicedToArray(_slicedToArray(arg0, 1)[0], 2)[1];
   return (arg0) => {
     let guild = GuildStore.getGuild(arg0);
@@ -151,8 +151,8 @@ obj[module_1264.v3("guild_has_vanity_url")] = (arg0) => {
     }
   };
 };
-module_1264 = module_1264_mod;
-obj[module_1264.v3("guild_in_range_by_hash")] = (arg0) => {
+module_1266 = module_1266_mod;
+obj[module_1266.v3("guild_in_range_by_hash")] = (arg0) => {
   let closure_0;
   let num;
   let tmp5;
@@ -163,7 +163,7 @@ obj[module_1264.v3("guild_in_range_by_hash")] = (arg0) => {
     [tmp5, tmp6] = tmp4;
     let tmp7 = importDefault;
     let tmp8 = num;
-    let obj = require("module_1264");
+    let obj = require("module_1266");
     if (obj.v3("hash_key") === tmp5) {
       importDefault = tmp6;
     } else {
@@ -179,7 +179,7 @@ obj[module_1264.v3("guild_in_range_by_hash")] = (arg0) => {
     continue;
   }
   return (arg0) => {
-    const obj = module_1264;
+    const obj = module_1266;
     const v3Result = obj.v3("" + importDefault + ":" + arg0);
     return (v3Result > 0 ? v3Result + v3Result : v3Result >>> 0) % 10000 < num;
   };

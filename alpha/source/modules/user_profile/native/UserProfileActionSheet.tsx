@@ -1,34 +1,34 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8552
+// Function ID: 8553
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 2065, 2125, 1390, 8503, 7124, 1085, 7062, 21, 5151, 558, 6527, 4906, 576, 1631, 504, 8529, 7098, 7073, 8513, 2041, 8533, 8545, 8546, 8558, 8559, 8560, 8565, 8552, 8571, 8572, 8575, 1497, 6479, 8569, 5087, 4874, 587, 8542, 8576, 8524, 2114, 8530, 1265, 5033, 5115, 1503, 8522, 7061, 1200, 8577, 1126, 4883, 8582, 1382, 7315, 8585, 13904, 14001, 9222, 7065, 14097, 1209, 2]
+// Dependencies: [32, 19, 17, 2068, 2128, 1392, 8511, 7126, 1087, 7064, 21, 5153, 558, 6529, 4909, 576, 1633, 504, 8537, 7100, 7075, 8521, 2044, 8541, 8553, 8554, 8566, 8567, 8568, 8573, 8560, 8579, 8580, 8583, 1499, 6481, 8577, 5090, 4877, 587, 8550, 8584, 8532, 2117, 8538, 1267, 5036, 5118, 1505, 8530, 7063, 1202, 8585, 1128, 4886, 8590, 1384, 7317, 8593, 13936, 14033, 9235, 7067, 14129, 1211, 2]
 
-// Module 8544 (UserProfileActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import isChangelogUserDefault from "isChangelogUser" /* 2114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import BottomSheetModal from "BottomSheetModal" /* 6527 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7062 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
-import Constants2 from "Constants" /* 7124 */;
-import openUserSettings from "openUserSettings" /* 7315 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
-import UserActionCreators from "UserActionCreators" /* 8524 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8530 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8552 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8565 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8569 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8576 */;
+// Module 8552 (UserProfileActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import isChangelogUserDefault from "isChangelogUser" /* 2117 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import BottomSheetModal from "BottomSheetModal" /* 6529 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7064 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7100 */;
+import Constants2 from "Constants" /* 7126 */;
+import openUserSettings from "openUserSettings" /* 7317 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8530 */;
+import UserActionCreators from "UserActionCreators" /* 8532 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8538 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8560 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8573 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8577 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserStore_mod from "UserStore" /* 1390 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8503 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import UserStore_mod from "UserStore" /* 1392 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8511 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1016,7 +1016,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (atResult === AnalyticsLocationDefault.COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
           const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: tmp, sku_id: skuId };
           skuId = undefined;
-          const track = tmp3(1265).track;
+          const track = tmp3(1267).track;
           const OPEN_MODAL = stateFromStores2.OPEN_MODAL;
           AnalyticsUtilsDefault;
           if (avatarDecoration != null) {

@@ -1,12 +1,12 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9670
+// Function ID: 9671
 // Name: TopEmojisActionCreators
-// Dependencies: [1085, 5013, 584, 1295, 2]
+// Dependencies: [1087, 5016, 584, 1297, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9654 (TopEmojisActionCreators)
+// Module 9670 (TopEmojisActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ export const fetchTopEmojis = function fetchTopEmojis(guildId) {
     let obj2 = DispatcherDefault;
     const obj3 = { type: "TOP_EMOJIS_FETCH", guildId };
     obj2.dispatch(obj3);
-    const HTTP = tmp(1295).HTTP;
+    const HTTP = tmp(1297).HTTP;
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_EMOJIS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);

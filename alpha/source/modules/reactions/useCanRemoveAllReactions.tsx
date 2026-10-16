@@ -1,11 +1,11 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 9823
+// Function ID: 9824
 // Name: useCanRemoveAllReactions
-// Dependencies: [4806, 1085, 558, 576, 7190, 504, 2]
+// Dependencies: [4809, 1087, 558, 576, 7192, 504, 2]
 
-// Module 9807 (useCanRemoveAllReactions)
-import Constants from "Constants" /* 1085 */;
-import PermissionStore from "PermissionStore" /* 4806 */;
+// Module 9823 (useCanRemoveAllReactions)
+import Constants from "Constants" /* 1087 */;
+import PermissionStore from "PermissionStore" /* 4809 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 10907
-// Function ID: 10908
+// Module ID: 10922
+// Function ID: 10923
 // Name: ConjureActionCreators
-// Dependencies: [5, 6251, 1390, 10885, 1085, 6183, 584, 1295, 10908, 5180, 10910, 569, 7166, 6284, 8524, 10911, 2]
-// Exports: createProject, deleteProjectInBackground, fetchProjectLimit, loadMissingConjureProjects, refreshConjureInstallState, setGuildHints, setProjectIcon, setSelectedProjectForGuild
+// Dependencies: [5, 6253, 1392, 10900, 1087, 6185, 584, 1297, 10923, 5182, 10925, 569, 7168, 6286, 8532, 10926, 2]
+// Exports: createProject, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, loadMissingConjureProjects, refreshConjureInstallState, setGuildHints, setProjectCover, setProjectIcon, setSelectedProjectForGuild
 
-// Module 10907 (ConjureActionCreators)
+// Module 10922 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ReadStateConstants from "ReadStateConstants" /* 6183 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
-import UserActionCreators from "UserActionCreators" /* 8524 */;
-import conjureAppInServer from "conjureAppInServer" /* 10911 */;
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import ReadStateConstants from "ReadStateConstants" /* 6185 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7168 */;
+import UserActionCreators from "UserActionCreators" /* 8532 */;
+import conjureAppInServer from "conjureAppInServer" /* 10926 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6251 */;
-import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
+import ReadStateStore from "ReadStateStore" /* 6253 */;
+import UserStore from "UserStore" /* 1392 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10900 */;
 import size from "module_2" /* 2 */;
 
-let GUILD_COLLABORATION, closure_10, closure_24, closure_9, projectsFetchState, resourceIds;
+let GUILD_COLLABORATION, c2, closure_10, closure_24, closure_9, projectsFetchState, resourceIds;
 
 function listProjects() {
   return obj(...arguments);
@@ -647,13 +647,13 @@ obj = function _updateProjectSettings() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
     let closure_3;
-    let icon = arg0;
+    let closure_0 = arg0;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
       let obj3;
-      icon = value;
+      closure_0 = value;
       await patchProject(closure_0, value);
       if (1 === c5) {
         if (arg0 === 1) {
@@ -663,16 +663,14 @@ obj = function _updateProjectSettings() {
           c6 = 3;
           return { value, done: true };
         } else if (value.ok) {
-          if (null != icon.icon) {
-            const preview_application_id = value.body.preview_application_id;
-            if (null != preview_application_id) {
-              c4 = 1;
-              c5 = 3;
-              c6 = 1;
-              const obj7 = { value: obj3.fetchApplication(preview_application_id), done: false };
-              obj3 = closure_131_0(closure_131_2[13]);
-              return obj7;
-            }
+          const preview_application_id = value.body.preview_application_id;
+          if (null != preview_application_id) {
+            c4 = 1;
+            c5 = 3;
+            c6 = 1;
+            const obj7 = { value: obj3.fetchApplication(preview_application_id), done: false };
+            obj3 = closure_131_0(closure_131_2[13]);
+            return obj7;
           }
         }
       } else if (2 === c5) {
@@ -689,6 +687,74 @@ obj = function _updateProjectSettings() {
       }
       return value;
     })();
+  });
+  return obj(...arguments);
+};
+obj = function _fetchApplicationChannels() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        c1 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c1 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c1 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            c3 = 1;
+            const HTTP = HTTPUtils.HTTP;
+            const obj4 = { url: Endpoints.CONJURE_APPLICATION_CHANNELS(closure_0), rejectWithError: true };
+            const get = HTTP.get;
+            c2 = 2;
+            c1 = 1;
+            const obj5 = { value: get(obj4), done: false };
+            return obj5;
+          }
+        } else if (1 === tmp3) {
+          c3 = 0;
+          c1 = 3;
+          const obj6 = { value: [], done: true };
+          return obj6;
+        } else if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c1 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          c3 = 0;
+          c1 = 3;
+          obj = { value: value.body, done: true };
+          return obj;
+        }
+      } catch (tmp8) {
+        if (0 === c3) {
+          c1 = 3;
+          throw tmp8;
+        } else {
+          c2 = 1;
+        }
+      }
+    }
   });
   return obj(...arguments);
 };
@@ -834,8 +900,15 @@ export const setProjectIcon = function setProjectIcon(arg0, icon) {
   obj = { icon };
   return updateProjectSettings(arg0, obj);
 };
+export const setProjectCover = function setProjectCover(arg0, cover_image) {
+  obj = { cover_image };
+  return updateProjectSettings(arg0, obj);
+};
 export const setGuildHints = function setGuildHints(first2, arg1) {
   return patchProject(first2, arg1);
+};
+export const fetchApplicationChannels = function fetchApplicationChannels() {
+  return obj(...arguments);
 };
 export { deleteProject };
 export const deleteProjectInBackground = function deleteProjectInBackground(id, arg1) {

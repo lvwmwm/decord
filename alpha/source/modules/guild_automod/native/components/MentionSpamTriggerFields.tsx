@@ -1,16 +1,16 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18641
+// Function ID: 18642
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 12487, 21, 5151, 558, 576, 17874, 1126, 18582, 5147, 6513, 6400, 6397, 6485, 2]
+// Dependencies: [32, 19, 17, 12510, 21, 5153, 558, 576, 17908, 1128, 18624, 5149, 6515, 6402, 6399, 6487, 2]
 
-// Module 18599 (MentionSpamTriggerFields)
+// Module 18641 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18582 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18624 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 12487 */;
+import Constants from "Constants" /* 12510 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -239,27 +239,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSpamT
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(17874);
+  let obj = rule(17908);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
-  const intl = rule(1126).intl;
-  const stringResult = intl.string(rule(1126).t["s/26oQ"]);
+  const intl = rule(1128).intl;
+  const stringResult = intl.string(rule(1128).t["s/26oQ"]);
   [tmp7, c3] = _slicedToArray(react.useState(true), 2);
   const tmp6 = _slicedToArray(react.useState(true), 2);
-  let obj2 = { title: intl2.string(rule(1126).t.IGfuTa), hasIcons: false, helperText: tmp9, children: items };
-  const TableRowGroup = rule(6485).TableRowGroup;
-  intl2 = rule(1126).intl;
+  let obj2 = { title: intl2.string(rule(1128).t.IGfuTa), hasIcons: false, helperText: tmp9, children: items };
+  const TableRowGroup = rule(6487).TableRowGroup;
+  intl2 = rule(1128).intl;
   tmp9 = undefined;
   const tmp8 = closure_8;
   if (!tmp7) {
-    let obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl3.formatToPlainString(rule(1126).t["8Y5zsp"], obj4) };
-    const Text = tmp2(5147).Text;
-    intl3 = tmp2(1126).intl;
+    let obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl3.formatToPlainString(rule(1128).t["8Y5zsp"], obj4) };
+    const Text = tmp2(5149).Text;
+    intl3 = tmp2(1128).intl;
     obj4 = { minimum, maximum };
     tmp9 = closure_7(Text, obj3);
   }
-  const obj5 = { label: stringResult, subLabel: intl4.string(rule(1126).t["8uW4/N"]), trailing: closure_7(tmp14, obj6) };
-  const TableRow = tmp2(6400).TableRow;
-  intl4 = tmp2(1126).intl;
+  const obj5 = { label: stringResult, subLabel: intl4.string(rule(1128).t["8uW4/N"]), trailing: closure_7(tmp14, obj6) };
+  const TableRow = tmp2(6402).TableRow;
+  intl4 = tmp2(1128).intl;
   obj6 = { style: tmp.limitField, children: closure_7(TextField, obj7) };
   obj7 = {
     keyboardType: "number-pad",
@@ -294,13 +294,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSpamT
     status: "error",
     accessibilityLabel: stringResult
   };
-  TextField = tmp2(6513).TextField;
+  TextField = tmp2(6515).TextField;
   items = [tmp13(TableRow, obj5), ];
   tmp14 = View;
   if (hasMentionRaidLimitAccess) {
     const obj8 = {
-      label: intl5.string(rule(1126).t.XnuC9g),
-      subLabel: intl6.string(rule(1126).t.EDBe5m),
+      label: intl5.string(rule(1128).t.XnuC9g),
+      subLabel: intl6.string(rule(1128).t.EDBe5m),
       checked: mentionRaidProtectionEnabled,
       onPress(mentionRaidProtectionEnabled) {
           let obj2;
@@ -311,9 +311,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSpamT
           return dependencyMap(obj);
         }
     };
-    const TableCheckboxRow = tmp2(6397).TableCheckboxRow;
-    intl5 = tmp2(1126).intl;
-    intl6 = tmp2(1126).intl;
+    const TableCheckboxRow = tmp2(6399).TableCheckboxRow;
+    intl5 = tmp2(1128).intl;
+    intl6 = tmp2(1128).intl;
     hasMentionRaidLimitAccess = tmp13(TableCheckboxRow, obj8);
   }
   items[1] = hasMentionRaidLimitAccess;

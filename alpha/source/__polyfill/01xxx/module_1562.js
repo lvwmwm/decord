@@ -4,25 +4,11 @@
 
 // Module 1562
 
-export default (str, str2) => {
-  if (typeof str === "string") {
-    if (typeof str2 === "string") {
-      if ("" === str2) {
-        const items = [str];
-        return items;
-      } else {
-        let items2;
-        const index = str.indexOf(str2);
-        if (-1 === index) {
-          const items1 = [str];
-          items2 = items1;
-        } else {
-          items2 = [str.slice(0, index), str.slice(index + str2.length)];
-        }
-        return items2;
-      }
-    }
-  }
-  const typeError = new TypeError("Expected the arguments to be of type `string`");
-  throw typeError;
+export default (arg0) => {
+  let str = encodeURIComponent(arg0);
+  return str.replace(/[!'()*]/g, (str) => {
+    str = str.charCodeAt(0);
+    const str2 = str.toString(16);
+    return "%" + str2.toUpperCase();
+  });
 };

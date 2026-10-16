@@ -1,27 +1,27 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13248
+// Function ID: 13249
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9604, 21, 5151, 587, 558, 576, 1631, 6885, 1497, 13223, 13224, 13225, 4906, 2]
+// Dependencies: [19, 17, 9620, 21, 5153, 587, 558, 576, 1633, 6887, 1499, 13249, 13250, 13251, 4909, 2]
 
-// Module 13222 (ChatPlaceholder)
+// Module 13248 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9604 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13223 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13224 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13225 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9620 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13249 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13250 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13251 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp3;
-const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6885);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6887);
 const StyleSheet = react_native.StyleSheet;
 let closure_4 = useChatBottomManagerUIStore.useChatInputContainerHeight;
 const jsx = Fragment.jsx;
@@ -168,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                   return tmp24;
                 }
-                const tmp26 = jsx(tmp14(4906).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
+                const tmp26 = jsx(tmp14(4909).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
                 cResult[15] = tmp12;
                 cResult[16] = tmp23;
                 cResult[17] = tmp26;

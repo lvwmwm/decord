@@ -1,10 +1,10 @@
 // Module ID: 8112
 // Function ID: 8113
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 8112 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_channel/native/images", width: 49, height: 50, scales: [2, 3], hash: "83d9ad6473cb40e1d6825c7dbdb7f70f", name: "ic_media_post_share_prompt", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "a340f3b58cfcad04aa087b4d005eb5bd", name: "ic_archived_thread_embed_16px", type: "png" });

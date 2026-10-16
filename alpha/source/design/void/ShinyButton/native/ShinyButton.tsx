@@ -1,19 +1,19 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15083
+// Function ID: 15084
 // Name: ShinyButton/ShinyButton
-// Dependencies: [32, 109, 19, 17, 5140, 21, 5151, 558, 576, 504, 4906, 5152, 1203, 2]
+// Dependencies: [32, 109, 19, 17, 5143, 21, 5153, 558, 576, 504, 4909, 5154, 1205, 2]
 
-// Module 15050 (ShinyButton/ShinyButton)
+// Module 15083 (ShinyButton/ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Button_ButtonDefault from "Button/Button" /* 1203 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
-import timing from "timing" /* 5152 */;
+import Button_ButtonDefault from "Button/Button" /* 1205 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import timing from "timing" /* 5154 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5140 */;
-import createStyles from "createStyles" /* 5151 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5143 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
     tmp28 = cResult[12];
   }
   const effect = obj2.useEffect(tmp27, tmp28);
-  const tmpResult2 = tmp(4906);
+  const tmpResult2 = tmp(4909);
   class H {
     constructor() {
       let items;
@@ -199,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
       return obj2;
     }
   }
-  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4906).withRepeat, withSequence: tmp(4906).withSequence, withTiming: tmp(5152).withTiming, withDelay: tmp(4906).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
+  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4909).withRepeat, withSequence: tmp(4909).withSequence, withTiming: tmp(5154).withTiming, withDelay: tmp(4909).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
   H.__closure = obj3;
   H.__workletHash = 3002595774498;
   H.__initData = __initData;

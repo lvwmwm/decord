@@ -1,13 +1,13 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6250
+// Function ID: 6251
 // Name: StickersPackStore
-// Dependencies: [32, 2081, 2088, 1102, 5966, 2]
+// Dependencies: [32, 2084, 2091, 1104, 5968, 2]
 
-// Module 6248 (StickersPackStore)
-import DurationsDefault from "Durations" /* 1102 */;
-import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2081 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 2088 */;
-import StickersTypes from "StickersTypes" /* 5966 */;
+// Module 6250 (StickersPackStore)
+import DurationsDefault from "Durations" /* 1104 */;
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2084 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 2091 */;
+import StickersTypes from "StickersTypes" /* 5968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

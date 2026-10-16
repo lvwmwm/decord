@@ -1,33 +1,33 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9054
+// Function ID: 9055
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2012, 5169, 7645, 1390, 5190, 9047, 1085, 2128, 9048, 9049, 9031, 9050, 1126, 5018, 4758, 1102, 38, 206, 1295, 1255, 5359, 5469, 2]
+// Dependencies: [32, 5, 502, 2014, 5171, 7647, 1392, 5192, 9055, 1087, 2131, 9056, 9057, 9039, 9058, 1128, 5021, 4761, 1104, 38, 206, 1297, 1257, 5361, 5471, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9046 (SecureFramesUtils)
+// Module 9054 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import intl15 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import _modDef4758 from "module_4758" /* 4758 */;
-import UserUtilsDefault from "UserUtils" /* 5018 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
-import _mod9031 from "module_9031" /* 9031 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9048 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9049 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9050 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import intl15 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import _modDef4761 from "module_4761" /* 4761 */;
+import UserUtilsDefault from "UserUtils" /* 5021 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5361 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5471 */;
+import _mod9039 from "module_9039" /* 9039 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9056 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9057 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9058 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7645 */;
-import UserStore from "UserStore" /* 1390 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5190 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9047 */;
-import Constants from "Constants" /* 1085 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5171 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7647 */;
+import UserStore from "UserStore" /* 1392 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5192 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9055 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -478,8 +478,8 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9031.serializeKey;
-    _mod9031;
+    const serializeKey = _mod9039.serializeKey;
+    _mod9039;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,42 +534,42 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
   let result = openSecureFramesUpdateConfirmation(obj2);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef4758(timestamp);
-  obj = _modDef4758();
+  const tmp3 = _modDef4761(timestamp);
+  obj = _modDef4761();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1102).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1104).Seconds.DAYS_30));
     const intl7 = intl15.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl15.t.F1wqkD, obj2);
   } else if (diffResult > DurationsDefault.Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1102).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1104).Seconds.DAYS_30);
     const intl6 = intl15.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(intl15.t["iT+b+2"], obj3);
   } else if (diffResult > 7 * DurationsDefault.Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1102).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1104).Seconds.DAY));
     const intl5 = intl15.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(intl15.t.dLurKZ, obj4);
   } else if (diffResult > DurationsDefault.Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1102).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1104).Seconds.DAY);
     const intl4 = intl15.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(intl15.t.LE8a2H, obj5);
   } else if (diffResult > DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1102).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1104).Seconds.HOUR);
     const intl3 = intl15.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(intl15.t.KULxVS, obj6);
   } else if (diffResult > DurationsDefault.Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1102).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1104).Seconds.MINUTE);
     const intl2 = intl15.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(intl15.t.ws6rWq, obj7);

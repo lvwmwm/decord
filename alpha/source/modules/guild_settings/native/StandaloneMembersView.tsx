@@ -1,15 +1,15 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17646
+// Function ID: 17647
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 558, 576, 1503, 1631, 8855, 6421, 1126, 17613, 12458, 12472, 12476, 6908, 2]
+// Dependencies: [19, 21, 558, 576, 1505, 1633, 8863, 6423, 1128, 17647, 12481, 12495, 12499, 6910, 2]
 
-// Module 17612 (StandaloneMembersView)
+// Module 17646 (StandaloneMembersView)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8855 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12458 */;
-import KickConfirmDefault from "KickConfirm" /* 12472 */;
-import BanConfirmDefault from "BanConfirm" /* 12476 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17613 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8863 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12481 */;
+import KickConfirmDefault from "KickConfirm" /* 12495 */;
+import BanConfirmDefault from "BanConfirm" /* 12499 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17647 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,9 +27,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Standalone
   let obj = guildId(576);
   const cResult = obj.c(30);
   guildId = guildId.guildId;
-  const obj2 = guildId(1503);
+  const obj2 = guildId(1505);
   navigation = obj2.useNavigation();
-  const bottom = navigation(1631)().bottom;
+  const bottom = navigation(1633)().bottom;
   if (cResult[0] !== guildId) {
     class M {
       constructor() {

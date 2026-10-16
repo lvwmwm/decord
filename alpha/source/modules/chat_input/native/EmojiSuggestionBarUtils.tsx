@@ -1,19 +1,19 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13011
+// Function ID: 13012
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5140, 1085, 21, 1200, 558, 576, 4906, 5438, 4883, 5152, 504, 7073, 7098, 12950, 12986, 11990, 9726, 9490, 2]
+// Dependencies: [32, 19, 5143, 1087, 21, 1202, 558, 576, 4909, 5440, 4886, 5154, 504, 7075, 7100, 12976, 13012, 12014, 9742, 9506, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 12985 (EmojiSuggestionBarUtils)
+// Module 13011 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import native2 from "native" /* 4883 */;
-import spring from "spring" /* 5438 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9490 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import native2 from "native" /* 4886 */;
+import spring from "spring" /* 5440 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import AccessibilityStore from "AccessibilityStore" /* 5143 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ const require = globalThis.__r;
 let dependencyMap, obj, obj1, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(4906);
-const timing = tmp(5152);
+const ReanimatedRexport = tmp(4909);
+const timing = tmp(5154);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };

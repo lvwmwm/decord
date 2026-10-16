@@ -1,25 +1,25 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16473
+// Function ID: 16474
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [16428, 8210, 558, 576, 1382, 10991, 1126, 15359, 2896, 16434, 2]
+// Dependencies: [16461, 8213, 558, 576, 1384, 11006, 1128, 15394, 2899, 16467, 2]
 // Exports: useAndroidMessageNotificationsSettingValue
 
-// Module 16440 (AndroidMessageNotificationsSetting)
+// Module 16473 (AndroidMessageNotificationsSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import _modDef2896 from "module_2896" /* 2896 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15359 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16434 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16428 */;
+import intl2 from "intl" /* 1128 */;
+import _modDef2899 from "module_2899" /* 2899 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15394 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16467 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16461 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10991 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp;
-const PlatformUtils = tmp(1382);
+const PlatformUtils = tmp(1384);
 ({ useAndroidMessageNotificationsEnabled: c3, setAndroidMessageNotificationsEnabled } = AndroidNotificationSettingsStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -79,11 +79,11 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2896.odJXYJ);
+    return intl.string(_modDef2899.odJXYJ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2896["+jwUmI"]);
+    return intl.string(_modDef2899["+jwUmI"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

@@ -1,15 +1,15 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12204
+// Function ID: 12205
 // Name: ConjureClarification
-// Dependencies: [2065, 1390, 1085, 3862, 1126, 2]
+// Dependencies: [2068, 1392, 1087, 3865, 1128, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12180 (ConjureClarification)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore from "UserStore" /* 1390 */;
+// Module 12204 (ConjureClarification)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -20,10 +20,10 @@ const ChannelTypes = Constants.ChannelTypes;
 let closure_4 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
 let closure_5 = { channel: "#", role: "@", user: "@", project: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3 };
-items = [_modDef3862["9+dfPT"], _modDef3862.pGSJqE];
-items1 = [_modDef3862["2VkCoD"], _modDef3862.c8YlX8];
-items2 = [_modDef3862.GZIAxl, _modDef3862["4bptbQ"]];
-items3 = [_modDef3862.twlOb6, _modDef3862.twlOb6];
+items = [_modDef3865["9+dfPT"], _modDef3865.pGSJqE];
+items1 = [_modDef3865["2VkCoD"], _modDef3865.c8YlX8];
+items2 = [_modDef3865.GZIAxl, _modDef3865["4bptbQ"]];
+items3 = [_modDef3865.twlOb6, _modDef3865.twlOb6];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export const isClarificationComplete = function isClarificationComplete(questions, arg1) {

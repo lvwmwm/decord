@@ -1,16 +1,16 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18744
+// Function ID: 18745
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 18685, 1085, 1393, 21, 558, 576, 504, 5115, 7985, 1494, 18703, 4864, 1126, 18699, 9647, 7060, 5147, 6400, 7118, 6485, 2]
+// Dependencies: [5, 19, 18727, 1087, 1395, 21, 558, 576, 504, 5118, 7988, 1496, 18745, 4867, 1128, 18741, 9663, 7062, 5149, 6402, 7120, 6487, 2]
 
-// Module 18702 (RoleIconActionSheet)
-import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18699 */;
+// Module 18744 (RoleIconActionSheet)
+import Constants from "Constants" /* 1087 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18685 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18727 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -307,9 +307,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           return tmp3;
         }
       }
-      let obj2 = { title: intl.string(tmp(1126).t.B9grJw) };
-      const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
-      intl = tmp(1126).intl;
+      let obj2 = { title: intl.string(tmp(1128).t.B9grJw) };
+      const BottomSheetTitleHeader = tmp(7062).BottomSheetTitleHeader;
+      intl = tmp(1128).intl;
       const tmp14 = closure_7(BottomSheetTitleHeader, obj2);
       cResult[11] = tmp14;
       tmp13 = tmp14;
@@ -353,9 +353,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           return tmp3;
         }
       }
-      let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(tmp(1126).t.I3YQeV) };
-      const Text = tmp(5147).Text;
-      intl2 = tmp(1126).intl;
+      let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(tmp(1128).t.I3YQeV) };
+      const Text = tmp(5149).Text;
+      intl2 = tmp(1128).intl;
       const tmp16 = closure_7(Text, obj3);
       cResult[12] = tmp16;
       tmp15 = tmp16;
@@ -399,9 +399,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           return tmp3;
         }
       }
-      const stringResult = obj5.string(tmp(1126).t.royWSB);
-      const intl3 = tmp(1126).intl;
-      const stringResult1 = intl3.string(tmp(1126).t["mz++Qq"]);
+      const stringResult = obj5.string(tmp(1128).t.royWSB);
+      const intl3 = tmp(1128).intl;
+      const stringResult1 = intl3.string(tmp(1128).t["mz++Qq"]);
       cResult[13] = stringResult1;
       cResult[14] = stringResult;
       tmp18 = stringResult;
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       let obj4 = { label: tmp18, subLabel: tmp17, onPress: tmp9 };
-      const tmp22 = closure_7(tmp(6400).TableRow, obj4);
+      const tmp22 = closure_7(tmp(6402).TableRow, obj4);
       cResult[15] = tmp9;
       cResult[16] = tmp22;
     } else {
@@ -490,7 +490,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           return tmp3;
         }
       }
-      const stringResult2 = obj7.string(tmp(1126).t["/Ny2wZ"]);
+      const stringResult2 = obj7.string(tmp(1128).t["/Ny2wZ"]);
       cResult[17] = stringResult2;
       tmp23 = stringResult2;
     } else {
@@ -533,7 +533,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
         }
       }
       let obj6 = { label: tmp23, onPress: tmp10 };
-      const tmp26 = closure_7(tmp(6400).TableRow, obj6);
+      const tmp26 = closure_7(tmp(6402).TableRow, obj6);
       cResult[18] = tmp10;
       cResult[19] = tmp26;
     } else {
@@ -598,10 +598,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
       const tmp30 = closure_8;
       let obj8 = { children: items2 };
       items2 = [tmp13, tmp15, ];
-      const ActionSheet = tmp(7118).ActionSheet;
+      const ActionSheet = tmp(7120).ActionSheet;
       let obj9 = { hasIcons: false, children: items3 };
       items3 = [tmp21, tmp25, tmp27];
-      items2[2] = closure_8(tmp(6485).TableRowGroup, obj9);
+      items2[2] = closure_8(tmp(6487).TableRowGroup, obj9);
       const tmp31 = closure_8(ActionSheet, obj8);
       cResult[23] = tmp21;
       cResult[24] = tmp25;
@@ -629,9 +629,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           return tmp3;
         }
       }
-      const obj10 = { variant: "danger", label: intl4.string(tmp(1126).t["uY+Nk/"]), onPress: tmp11 };
-      const TableRow = tmp(6400).TableRow;
-      intl4 = tmp(1126).intl;
+      const obj10 = { variant: "danger", label: intl4.string(tmp(1128).t["uY+Nk/"]), onPress: tmp11 };
+      const TableRow = tmp(6402).TableRow;
+      intl4 = tmp(1128).intl;
       tmp28 = closure_7(TableRow, obj10);
     }
     cResult[20] = tmp11;

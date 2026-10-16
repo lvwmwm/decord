@@ -1,73 +1,86 @@
 // Module ID: 12383
 // Function ID: 12384
-// Dependencies: [12302, 12323, 12348]
-// Exports: getCurrentHub, getCurrentHubShim
+// Dependencies: [12298, 12299, 12384, 12325, 12354, 12385, 12309, 12307, 12346]
 
 // Module 12383
-import _mod12302 from "module_12302" /* 12302 */;
-import _mod12323 from "module_12323" /* 12323 */;
-import _mod12348 from "module_12348" /* 12348 */;
+import _mod12325 from "module_12325" /* 12325 */;
+import _mod12385 from "module_12385" /* 12385 */;
+import module_12354 from "module_12354" /* 12354 */;
 
-function getCurrentHubShim() {
-  let obj = {
-    bindClient(arg0) {
-      const obj = _mod12302;
-      const currentScope = obj.getCurrentScope();
-      currentScope.setClient(arg0);
-    },
-    withScope: _mod12302.withScope,
-    getClient() {
-      const obj = _mod12302;
-      return obj.getClient();
-    },
-    getScope: _mod12302.getCurrentScope,
-    getIsolationScope: _mod12302.getIsolationScope,
-    captureException(arg0, arg1) {
-      const obj = _mod12302;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureException(arg0, arg1);
-    },
-    captureMessage(arg0, arg1, arg2) {
-      const obj = _mod12302;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureMessage(arg0, arg1, arg2);
-    },
-    captureEvent: _mod12323.captureEvent,
-    addBreadcrumb: _mod12348.addBreadcrumb,
-    setUser: _mod12323.setUser,
-    setTags: _mod12323.setTags,
-    setTag: _mod12323.setTag,
-    setExtra: _mod12323.setExtra,
-    setExtras: _mod12323.setExtras,
-    setContext: _mod12323.setContext,
-    getIntegration(id) {
-      const obj = _mod12302;
-      const client = obj.getClient();
-      const integrationByName = client && client.getIntegrationByName(id.id) || null;
-      return integrationByName;
-    },
-    startSession: _mod12323.startSession,
-    endSession: _mod12323.endSession,
-    captureSession(arg0) {
-      const tmp3 = arg0;
-      if (tmp3) {
-        const tmpResult = _mod12323;
-        return tmpResult.endSession();
-      } else {
-        const tmpResult3 = _mod12302;
-        const currentScope = tmpResult3.getCurrentScope();
-        const tmpResult4 = _mod12302;
-        const client = tmpResult4.getClient();
-        const session = currentScope.getSession();
-        const tmp5 = client && session;
-        if (tmp5) {
-          client.captureSession(session);
-        }
+
+export const captureConsoleIntegration = module_12354.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let handled;
+  let CONSOLE_LEVELS = obj.levels;
+  if (!CONSOLE_LEVELS) {
+    let tmp = CONSOLE_LEVELS;
+    let tmp2 = handled;
+    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
+  }
+  handled = obj.handled;
+  let obj2 = {
+    name: "CaptureConsole",
+    setup(arg0) {
+      let closure_0 = arg0;
+      const tmp2 = handled;
+      const tmp = CONSOLE_LEVELS;
+      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
+        let tmpResult = tmp(tmp2[2]);
+        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
+          let args;
+          let level;
+          let obj3;
+          let tmpResult;
+          ({ args, level } = arg0);
+          let obj = _mod12325;
+          let hasItem = obj.getClient() === closure_0;
+          if (hasItem) {
+            let tmp4 = CONSOLE_LEVELS;
+            hasItem = CONSOLE_LEVELS.includes(level);
+          }
+          if (hasItem) {
+            let closure_2 = handled;
+            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
+            obj3 = { arguments: args };
+            tmpResult = _mod12385;
+            const tmpResult2 = _mod12325;
+            tmpResult2.withScope((addEventProcessor) => {
+              addEventProcessor.addEventProcessor((arg0) => {
+                arg0.logger = "console";
+                const obj = args(level[6]);
+                obj2 = { handled, type: "console" };
+                const result = obj.addExceptionMechanism(arg0, obj2);
+                return arg0;
+              });
+              if ("assert" !== level) {
+                const found = args.find((item) => item instanceof Error);
+                const tmp12 = args;
+                if (found) {
+                  const tmp14Result = closure_2_0(closure_2_1[8]);
+                  tmp14Result.captureException(found, obj2);
+                } else {
+                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
+                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
+                  const obj4 = closure_2_0(closure_2_1[8]);
+                  obj4.captureMessage(safeJoinResult, obj2);
+                }
+              } else if (!args[0]) {
+                let obj = closure_2_0(closure_2_1[7]);
+                const _HermesInternal = HermesInternal;
+                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
+                const combined = "Assertion failed: " + tmp4;
+                addEventProcessor.setExtra("arguments", args.slice(1));
+                obj2 = closure_2_0(closure_2_1[8]);
+                obj2.captureMessage(combined, obj2);
+              }
+            });
+          }
+        });
       }
     }
   };
-  return obj;
-}
-
-export const getCurrentHub = getCurrentHubShim;
-export { getCurrentHubShim };
+  return obj2;
+});

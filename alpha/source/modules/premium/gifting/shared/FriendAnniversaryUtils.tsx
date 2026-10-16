@@ -1,11 +1,11 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8330
+// Function ID: 8331
 // Name: FriendAnniversaryUtils
-// Dependencies: [4401, 2]
+// Dependencies: [4404, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8325 (FriendAnniversaryUtils)
-import _mod4401 from "module_4401" /* 4401 */;
+// Module 8330 (FriendAnniversaryUtils)
+import _mod4404 from "module_4404" /* 4404 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
@@ -18,13 +18,13 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   const obj2 = items[Symbol.iterator]();
   while (obj2 !== undefined) {
     let tmp3 = require;
-    let obj3 = _mod4401;
+    let obj3 = _mod4404;
     let setYearResult = obj3.setYear(date, fullYear + tmp2);
     let tmp6 = setYearResult;
-    let obj4 = _mod4401;
+    let obj4 = _mod4404;
     if (!obj4.isSameDay(setYearResult, date)) {
       let _Math = Math;
-      let tmp3Result = tmp3(4401);
+      let tmp3Result = tmp3(4404);
       if (abs(tmp3Result.differenceInDays(date, tmp6)) <= 7) {
         obj2.return();
         let flag = true;
@@ -36,8 +36,8 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   return false;
 };
 export const yearsSince = function yearsSince(friendsSince) {
-  const differenceInMonths = _mod4401.differenceInMonths;
-  _mod4401;
+  const differenceInMonths = _mod4404.differenceInMonths;
+  _mod4404;
   const date = new Date();
   return round(differenceInMonths(date, friendsSince) / 12);
 };

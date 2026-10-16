@@ -1,30 +1,30 @@
-// Module ID: 6252
-// Function ID: 6253
+// Module ID: 6254
+// Function ID: 6255
 // Name: ChannelRTCStore
-// Dependencies: [32, 2064, 5170, 6164, 6113, 502, 5974, 2065, 5167, 2116, 6163, 1390, 6253, 5172, 5174, 1085, 3, 6254, 12, 38, 6116, 504, 584, 2]
+// Dependencies: [32, 2067, 5172, 6166, 6115, 502, 5976, 2068, 5169, 2119, 6165, 1392, 6255, 5174, 5176, 1087, 3, 6256, 12, 38, 6118, 504, 584, 2]
 
-// Module 6252 (ChannelRTCStore)
+// Module 6254 (ChannelRTCStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6254 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import GameConsoleStore from "GameConsoleStore" /* 5170 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6164 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import GameConsoleStore from "GameConsoleStore" /* 5172 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6166 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6115 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5974 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PresenceStore from "PresenceStore" /* 5167 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SpeakingStore from "SpeakingStore" /* 6163 */;
-import UserStore from "UserStore" /* 1390 */;
-import VideoStreamStore from "VideoStreamStore" /* 6253 */;
-import VoiceStateStore from "VoiceStateStore" /* 5172 */;
-import CallConstants from "CallConstants" /* 5174 */;
-import Constants from "Constants" /* 1085 */;
+import CallStore from "CallStore" /* 5976 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PresenceStore from "PresenceStore" /* 5169 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import SpeakingStore from "SpeakingStore" /* 6165 */;
+import UserStore from "UserStore" /* 1392 */;
+import VideoStreamStore from "VideoStreamStore" /* 6255 */;
+import VoiceStateStore from "VoiceStateStore" /* 5174 */;
+import CallConstants from "CallConstants" /* 5176 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const ChannelRTCParticipantsDefault = ChannelRTCParticipants;
@@ -49,7 +49,7 @@ function getParticipants(arg0) {
 }
 function updateParticipant(arg0, arr) {
   let closure_0 = arg0;
-  const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+  const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
   return arr.reduce(function(acc, item) {
     let tmp = item;
     let tmp3 = closure_2_28[item];
@@ -61,7 +61,7 @@ function updateParticipant(arg0, arr) {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -285,7 +285,7 @@ function handleRebuildActiveChannels() {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -408,7 +408,7 @@ function handleRebuildActiveChannels() {
   }, false);
 }
 function handleEmbeddedActivityChange() {
-  const f93462 = (updateEmbeddedActivities) => updateEmbeddedActivities.updateEmbeddedActivities();
+  const f93742 = (updateEmbeddedActivities) => updateEmbeddedActivities.updateEmbeddedActivities();
   return closure_26.reduce(function(acc, item) {
     let tmp = item;
     let tmp3 = closure_2_28[item];
@@ -420,7 +420,7 @@ function handleEmbeddedActivityChange() {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -544,7 +544,7 @@ function handleEmbeddedActivityChange() {
 }
 function handleSpeaking(userId) {
   userId = userId.userId;
-  const f93463 = (updateParticipantSpeaking) => updateParticipantSpeaking.updateParticipantSpeaking(userId);
+  const f93743 = (updateParticipantSpeaking) => updateParticipantSpeaking.updateParticipantSpeaking(userId);
   return closure_26.reduce(function(acc, item) {
     let tmp = item;
     let tmp3 = closure_2_28[item];
@@ -556,7 +556,7 @@ function handleSpeaking(userId) {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -680,7 +680,7 @@ function handleSpeaking(userId) {
 }
 function handleUserUpdate(user) {
   const id = user.user.id;
-  const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+  const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
   const arr = closure_26;
   if (closure_26 !== undefined) {
     return arr.reduce(function(acc, item) {
@@ -694,7 +694,7 @@ function handleUserUpdate(user) {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -819,7 +819,7 @@ function handleUserUpdate(user) {
 }
 function handleCallUpdate(channelId) {
   const items = [channelId.channelId];
-  const f93464 = (rebuild) => rebuild.rebuild();
+  const f93744 = (rebuild) => rebuild.rebuild();
   return items.reduce(function(acc, item) {
     let tmp = item;
     let tmp3 = closure_2_28[item];
@@ -831,7 +831,7 @@ function handleCallUpdate(channelId) {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -965,12 +965,12 @@ function handleChannelDelete(channel) {
 }
 function handleStreamClose(streamKey) {
   let closure_129_0;
-  let f93460;
+  let f93740;
   streamKey = streamKey.streamKey;
-  obj = f93460(6116);
+  obj = f93740(6118);
   const items = [];
   ({ channelId: arr[0], ownerId: closure_129_0 } = obj.decodeStreamKey(streamKey));
-  f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+  f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
   obj.decodeStreamKey(streamKey);
   return items.reduce(function(acc, item) {
     let tmp = item;
@@ -983,7 +983,7 @@ function handleStreamClose(streamKey) {
       tmp3 = tmp7;
     }
     let flag = acc;
-    if (f93460(tmp3)) {
+    if (f93740(tmp3)) {
       obj = tmp2[item];
       if (null == obj) {
         const self3 = this;
@@ -1445,7 +1445,7 @@ let obj2 = {
     const tmp9 = channelId !== currentVoiceChannelId && null != currentVoiceChannelId;
     if (tmp9) {
       const items = [currentVoiceChannelId];
-      const f93466 = (rebuild) => rebuild.rebuild();
+      const f93746 = (rebuild) => rebuild.rebuild();
       flag = items.reduce(function(acc, item) {
         let tmp = item;
         let tmp3 = closure_2_28[item];
@@ -1457,7 +1457,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -1631,7 +1631,7 @@ let obj2 = {
         return tmp3;
       }
       let arr = closure_26;
-      const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+      const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
       if (closure_26 === undefined) {
         arr = closure_26;
       }
@@ -1646,7 +1646,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -1778,7 +1778,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -1942,7 +1942,7 @@ let obj2 = {
     ({ channelId, id } = arg0);
     obj = getParticipants(channelId);
     if (null == id) {
-      const toArrayResult = obj.toArray(obj(6254).ChannelRTCParticipantsIndexes.STREAM);
+      const toArrayResult = obj.toArray(obj(6256).ChannelRTCParticipantsIndexes.STREAM);
       const item = toArrayResult.forEach((user) => {
         if (closure_19(user)) {
           obj.updateParticipant(user.user.id);
@@ -1957,11 +1957,11 @@ let obj2 = {
     }
     const items = [NONE, tmp4];
     tmp5(channelId, items);
-    const obj2 = obj(6116);
+    const obj2 = obj(6118);
     const tmp8 = obj;
     if (obj2.isStreamKey(id)) {
       try {
-        const tmp8Result = tmp8(6116);
+        const tmp8Result = tmp8(6118);
         const ownerId = tmp8Result.decodeStreamKey(id).ownerId;
         const tmp10 = ownerId;
         if (ownerId === AuthenticationStore.getId()) {
@@ -2007,7 +2007,7 @@ let obj2 = {
       const result = obj2.updateParticipantPoppedOut(participantId, true);
       const items1 = [channelId];
       const id = participant.user.id;
-      const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+      const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
       const reduced = items1.reduce(function(acc, item) {
         let tmp = item;
         let tmp3 = closure_2_28[item];
@@ -2019,7 +2019,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -2160,7 +2160,7 @@ let obj2 = {
     if (tmp9) {
       const items = [channelId];
       const id = participant.user.id;
-      const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+      const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
       const reduced = items.reduce(function(acc, item) {
         let tmp = item;
         let tmp3 = closure_2_28[item];
@@ -2172,7 +2172,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -2318,7 +2318,7 @@ let obj2 = {
     closure_37[channelId.channelId] = channelId.dismissed;
   },
   STREAM_UPDATE_SELF_HIDDEN: function handleUpdateSelfStreamHidden(channelId) {
-    let f93460;
+    let f93740;
     channelId = channelId.channelId;
     const selfStreamHidden = channelId.selfStreamHidden;
     const id = AuthenticationStore.getId();
@@ -2333,14 +2333,14 @@ let obj2 = {
         tmp8 = items;
       }
       const first = _slicedToArray(tmp8, 1)[0];
-      const obj3 = f93460(6116);
+      const obj3 = f93740(6118);
       const tmp12 = obj3.isStreamKey(first) && first.includes(id);
       if (tmp12) {
         setSelectedParticipantId(channelId, null);
       }
     }
     const items1 = [channelId];
-    f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+    f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
     const reduced = items1.reduce(function(acc, item) {
       let tmp = item;
       let tmp3 = closure_2_28[item];
@@ -2352,7 +2352,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -2496,7 +2496,7 @@ let obj2 = {
     let closure_129_0;
     const items = [];
     ({ channelId: arr[0], userId: closure_129_0 } = arg0);
-    const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+    const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
     return items.reduce(function(acc, item) {
       let tmp = item;
       let tmp3 = closure_2_28[item];
@@ -2508,7 +2508,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -2634,7 +2634,7 @@ let obj2 = {
     let closure_129_0;
     const items = [];
     ({ channelId: arr[0], userId: closure_129_0 } = arg0);
-    const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+    const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
     return items.reduce(function(acc, item) {
       let tmp = item;
       let tmp3 = closure_2_28[item];
@@ -2646,7 +2646,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -2770,7 +2770,7 @@ let obj2 = {
   },
   AUDIO_SET_LOCAL_VIDEO_DISABLED: function handleMediaEngineSetLocalVideoDisabled(userId) {
     userId = userId.userId;
-    const f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+    const f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
     const arr = closure_26;
     if (closure_26 !== undefined) {
       return arr.reduce(function(acc, item) {
@@ -2784,7 +2784,7 @@ let obj2 = {
           tmp3 = tmp7;
         }
         let flag = acc;
-        if (f93460(tmp3)) {
+        if (f93740(tmp3)) {
           obj = tmp2[item];
           if (null == obj) {
             const self3 = this;
@@ -2913,7 +2913,7 @@ let obj2 = {
     let closure_129_2;
     ({ senderUserId: closure_129_0, maxResolution: closure_129_1, maxFrameRate: closure_129_2 } = channelId);
     const items = [channelId.channelId];
-    const f93469 = (updateParticipantQuality) => updateParticipantQuality.updateParticipantQuality(closure_1_0, closure_1_1, closure_1_2);
+    const f93749 = (updateParticipantQuality) => updateParticipantQuality.updateParticipantQuality(closure_1_0, closure_1_1, closure_1_2);
     return items.reduce(function(acc, item) {
       let tmp = item;
       let tmp3 = closure_2_28[item];
@@ -2925,7 +2925,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -3051,12 +3051,12 @@ let obj2 = {
   STREAM_DELETE: handleStreamClose,
   STREAM_WATCH: function handleStreamWatch(streamKey) {
     let closure_129_0;
-    let f93460;
+    let f93740;
     streamKey = streamKey.streamKey;
-    obj = f93460(6116);
+    obj = f93740(6118);
     const items = [];
     ({ channelId: arr[0], ownerId: closure_129_0 } = obj.decodeStreamKey(streamKey));
-    f93460 = (dependencyMap) => dependencyMap.updateParticipant(f93460);
+    f93740 = (dependencyMap) => dependencyMap.updateParticipant(f93740);
     obj.decodeStreamKey(streamKey);
     return items.reduce(function(acc, item) {
       let tmp = item;
@@ -3069,7 +3069,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;
@@ -3196,7 +3196,7 @@ let obj2 = {
   GUILD_SOUNDBOARD_SOUND_PLAY_END: handleSpeaking,
   PUSH_TO_TALK_STATE_CHANGE: function handlePushToTalkStateChange() {
     let id;
-    const f93470 = (updateParticipantSpeaking) => updateParticipantSpeaking.updateParticipantSpeaking(id.getId());
+    const f93750 = (updateParticipantSpeaking) => updateParticipantSpeaking.updateParticipantSpeaking(id.getId());
     return closure_26.reduce(function(acc, item) {
       let tmp = item;
       let tmp3 = closure_2_28[item];
@@ -3208,7 +3208,7 @@ let obj2 = {
         tmp3 = tmp7;
       }
       let flag = acc;
-      if (f93460(tmp3)) {
+      if (f93740(tmp3)) {
         obj = tmp2[item];
         if (null == obj) {
           const self3 = this;

@@ -1,24 +1,24 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9641
+// Function ID: 9642
 // Name: usePremiumFeatures
-// Dependencies: [19, 1392, 4839, 558, 576, 1398, 4871, 1126, 3282, 9626, 4825, 9178, 9628, 9253, 9431, 9630, 9632, 587, 2]
+// Dependencies: [19, 1394, 4842, 558, 576, 1400, 4874, 1128, 3285, 9642, 4828, 9191, 9644, 9266, 9447, 9646, 9648, 587, 2]
 
-// Module 9625 (usePremiumFeatures)
-import intl11 from "intl" /* 1126 */;
-import user from "user" /* 1398 */;
-import _modDef3282 from "module_3282" /* 3282 */;
-import PremiumUtils from "PremiumUtils" /* 4825 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4839 */;
-import FriendsIcon from "FriendsIcon" /* 4871 */;
-import ReactionIcon from "ReactionIcon" /* 9178 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9253 */;
-import ScreenStreamIcon from "ScreenStreamIcon" /* 9431 */;
-import UploadIcon from "UploadIcon" /* 9626 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9628 */;
-import BoostGemIcon from "BoostGemIcon" /* 9630 */;
-import UserSquareIcon from "UserSquareIcon" /* 9632 */;
+// Module 9641 (usePremiumFeatures)
+import intl11 from "intl" /* 1128 */;
+import user from "user" /* 1400 */;
+import _modDef3285 from "module_3285" /* 3285 */;
+import PremiumUtils from "PremiumUtils" /* 4828 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4842 */;
+import FriendsIcon from "FriendsIcon" /* 4874 */;
+import ReactionIcon from "ReactionIcon" /* 9191 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9266 */;
+import ScreenStreamIcon from "ScreenStreamIcon" /* 9447 */;
+import UploadIcon from "UploadIcon" /* 9642 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9644 */;
+import BoostGemIcon from "BoostGemIcon" /* 9646 */;
+import UserSquareIcon from "UserSquareIcon" /* 9648 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
       return tmp5;
     }
   }
-  const obj2 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl.formatToPlainString(require("module_3282").gsE005, obj3), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
+  const obj2 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl.formatToPlainString(require("module_3285").gsE005, obj3), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
   intl = tmp(tmp2[7]).intl;
   items = [closure_5.TIER_2];
   items1 = [];
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   new Set(items);
   items1[0] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
   const items2 = [obj2, , , , , , , , , ];
-  const obj4 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl2.string(require("module_3282")["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
+  const obj4 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl2.string(require("module_3285")["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
   intl2 = tmp(tmp2[7]).intl;
   items3 = [closure_5.TIER_2];
   items4 = [];
@@ -149,7 +149,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   items14[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
   items14[2] = require("user").PremiumSubscriptionGroupRole.MEMBER;
   items2[6] = obj10;
-  const obj11 = { IconComponent: require("BoostGemIcon").BoostGemIcon, label: intl8.formatToPlainString(require("module_3282").HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
+  const obj11 = { IconComponent: require("BoostGemIcon").BoostGemIcon, label: intl8.formatToPlainString(require("module_3285").HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
   intl8 = tmp(tmp2[7]).intl;
   items15 = [closure_5.TIER_2];
   items16 = [];
@@ -249,7 +249,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     let obj2;
     let obj5;
     let obj6;
-    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3282.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
+    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3285.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
     intl = intl11.intl;
     items = [hasOwnProperty.TIER_2];
     items1 = [];
@@ -257,7 +257,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     new Set(items);
     items1[0] = user.PremiumSubscriptionGroupRole.PRIMARY;
     const items2 = [obj, , , , , , , , , ];
-    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3282["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
+    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3285["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
     intl2 = intl11.intl;
     items3 = [hasOwnProperty.TIER_2];
     items4 = [];
@@ -312,7 +312,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     items14[1] = user.PremiumSubscriptionGroupRole.PRIMARY;
     items14[2] = user.PremiumSubscriptionGroupRole.MEMBER;
     items2[6] = obj10;
-    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3282.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
+    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3285.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
     intl8 = intl11.intl;
     items15 = [hasOwnProperty.TIER_2];
     items16 = [];

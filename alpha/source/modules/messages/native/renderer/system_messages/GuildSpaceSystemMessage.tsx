@@ -1,29 +1,30 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8338
+// Function ID: 8339
 // Name: GuildSpaceSystemMessage
-// Dependencies: [32, 2065, 1390, 1386, 1126, 2472, 8196, 8198, 8200, 8334, 2]
+// Dependencies: [32, 2068, 1392, 1388, 1128, 2475, 8199, 8201, 8203, 8339, 8341, 2]
 // Exports: createGuildSpaceSystemMessage
 
-// Module 8333 (GuildSpaceSystemMessage)
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import _modDef2472 from "module_2472" /* 2472 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8196 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8198 */;
-import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8334 */;
+// Module 8338 (GuildSpaceSystemMessage)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import _modDef2475 from "module_2475" /* 2475 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8199 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8201 */;
+import GuildSpaceLeaderboardSystemMessage from "GuildSpaceLeaderboardSystemMessage" /* 8339 */;
+import GuildSpaceMusicSystemMessage from "GuildSpaceMusicSystemMessage" /* 8341 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore from "UserStore" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceSystemMessage.tsx");
 
 export const createGuildSpaceSystemMessage = function createGuildSpaceSystemMessage(message) {
   let guildSpaceLeaderboardSystemMessage;
-  let obj3;
+  let obj4;
   let roleStyle;
-  let tmp19;
-  let tmp20;
-  let tmp9;
+  let tmp12;
+  let tmp22;
+  let tmp23;
   let user;
   const guildSpaceData = message.message.guildSpaceData;
   let whiteboard_busy;
@@ -38,46 +39,56 @@ export const createGuildSpaceSystemMessage = function createGuildSpaceSystemMess
     const substr = found.slice(0, 2);
     const diff = whiteboard_busy.connected_user_count - substr.length;
     if (0 !== substr.length) {
-      let tmp12;
+      let tmp15;
       let formatToPartsResult;
       if (diff > 0) {
         const channel = ChannelStore.getChannel(message.channel_id);
-        [tmp19, tmp20] = substr;
+        [tmp22, tmp23] = substr;
         _slicedToArray(substr, 2);
-        const tmp6Result = useAuthorWithProcessedColor;
-        const userAuthorWithProcessedColor = tmp6Result.getUserAuthorWithProcessedColor(tmp19, channel);
-        const tmp6Result2 = useAuthorWithProcessedColor;
-        const userAuthorWithProcessedColor1 = tmp6Result2.getUserAuthorWithProcessedColor(tmp20, channel);
-        const intl2 = tmp6(1126).intl;
-        tmp12 = importDefault;
+        const tmp9Result = useAuthorWithProcessedColor;
+        const userAuthorWithProcessedColor = tmp9Result.getUserAuthorWithProcessedColor(tmp22, channel);
+        const tmp9Result2 = useAuthorWithProcessedColor;
+        const userAuthorWithProcessedColor1 = tmp9Result2.getUserAuthorWithProcessedColor(tmp23, channel);
+        const intl2 = tmp9(1128).intl;
+        tmp15 = importDefault;
         const formatToParts = intl2.formatToParts;
-        const obj2 = { displayCount: substr.length, username: userAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj3), username2: userAuthorWithProcessedColor1.nick, username2OnClick: tmp9, additionalCount: diff };
-        const zUiZPF = _modDef2472.zUiZPF;
-        tmp9 = undefined;
-        obj3 = { userId: tmp19.id, message, author: userAuthorWithProcessedColor, roleStyle };
-        if (null != tmp20) {
-          const obj4 = { userId: tmp20.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-          tmp9 = tmp12(8198)(obj4);
+        const obj3 = { displayCount: substr.length, username: userAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj4), username2: userAuthorWithProcessedColor1.nick, username2OnClick: tmp12, additionalCount: diff };
+        const zUiZPF = _modDef2475.zUiZPF;
+        tmp12 = undefined;
+        obj4 = { userId: tmp22.id, message, author: userAuthorWithProcessedColor, roleStyle };
+        if (null != tmp23) {
+          const obj5 = { userId: tmp23.id, message, author: userAuthorWithProcessedColor1, roleStyle };
+          tmp12 = tmp15(8201)(obj5);
         }
-        formatToPartsResult = formatToParts(zUiZPF, obj2);
+        formatToPartsResult = formatToParts(zUiZPF, obj3);
       }
-      const obj5 = { content: formatToPartsResult };
-      const merged = Object.assign(tmp12(8200)(message));
-      guildSpaceLeaderboardSystemMessage = obj5;
+      const obj6 = { content: formatToPartsResult };
+      const merged = Object.assign(tmp15(8203)(message));
+      guildSpaceLeaderboardSystemMessage = obj6;
     }
-    const intl = tmp6(1126).intl;
-    formatToPartsResult = intl.string(_modDef2472.Sxxqdx);
-    tmp12 = importDefault;
+    const intl = tmp9(1128).intl;
+    formatToPartsResult = intl.string(_modDef2475.Sxxqdx);
+    tmp15 = importDefault;
   } else {
-    const guildSpaceData2 = message.message.guildSpaceData;
+    const guildSpaceData3 = message.message.guildSpaceData;
     let leaderboard;
-    if (guildSpaceData2 != null) {
-      leaderboard = guildSpaceData2.leaderboard;
+    if (guildSpaceData3 != null) {
+      leaderboard = guildSpaceData3.leaderboard;
     }
-    guildSpaceLeaderboardSystemMessage = null;
     if (null != leaderboard) {
-      const obj = GuildSpaceLeaderboardSystemMessage;
-      guildSpaceLeaderboardSystemMessage = obj.createGuildSpaceLeaderboardSystemMessage(message);
+      const obj2 = GuildSpaceLeaderboardSystemMessage;
+      guildSpaceLeaderboardSystemMessage = obj2.createGuildSpaceLeaderboardSystemMessage(message);
+    } else {
+      const guildSpaceData2 = message.message.guildSpaceData;
+      let music;
+      if (guildSpaceData2 != null) {
+        music = guildSpaceData2.music;
+      }
+      guildSpaceLeaderboardSystemMessage = null;
+      if (null != music) {
+        const obj = GuildSpaceMusicSystemMessage;
+        guildSpaceLeaderboardSystemMessage = obj.createGuildSpaceMusicSystemMessage(message);
+      }
     }
   }
   return guildSpaceLeaderboardSystemMessage;

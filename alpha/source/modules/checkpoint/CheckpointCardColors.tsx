@@ -1,11 +1,11 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8504
+// Function ID: 8505
 // Name: CheckpointCardColors
-// Dependencies: [5523, 2]
+// Dependencies: [5525, 2]
 // Exports: getCardColors
 
-// Module 8496 (CheckpointCardColors)
-import CheckpointCharacterBase from "CheckpointCharacterBase" /* 5523 */;
+// Module 8504 (CheckpointCardColors)
+import CheckpointCharacterBase from "CheckpointCharacterBase" /* 5525 */;
 import size from "module_2" /* 2 */;
 
 const obj = { primaryBackgroundColor: "#7D53DE", secondaryBackgroundColor: "#BCB1D5", tertiaryBackgroundColor: "#CFC3EB" };

@@ -11,7 +11,7 @@ import _mod699 from "module_699" /* 699 */;
 import _mod701 from "module_701" /* 701 */;
 import regExp from "regExp" /* 710 */;
 import _mod712 from "module_712" /* 712 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 715 */;
+import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" /* 715 */;
 import _mod717 from "module_717" /* 717 */;
 import _getSpanForScope from "_getSpanForScope" /* 720 */;
 import _mod724 from "module_724" /* 724 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 const require = globalThis.__r;
 let _require, dependencyMap, setPropagationContext;
 
-const f84047 = (fn) => fn();
+const f84312 = (fn) => fn();
 function createChildOrRootSpan(arg0) {
   let forceTransaction;
   let parentSpan;
@@ -178,7 +178,7 @@ function _startRootSpan(name, getPropagationContext, parentSampled) {
   _slicedToArray(sampleSpanResult, 3);
   const SentrySpan = tmp(736).SentrySpan;
   const merged1 = Object.assign(name);
-  obj6 = { [SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "custom" };
+  obj6 = { [GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "custom" };
   let tmp15;
   const SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = tmp(715).SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE;
   if (undefined !== tmp12) {
@@ -479,7 +479,7 @@ export const startSpan = function startSpan(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f84047(function() {
+      }) : f84312(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;
@@ -605,7 +605,7 @@ export const startSpanManual = function startSpanManual(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f84047(function() {
+      }) : f84312(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;

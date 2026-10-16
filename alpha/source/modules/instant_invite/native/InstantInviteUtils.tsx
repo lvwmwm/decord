@@ -1,34 +1,34 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8908
+// Function ID: 8909
 // Name: instant_invite/InstantInviteUtils
-// Dependencies: [7396, 2069, 2065, 8901, 4804, 5132, 5167, 1390, 8905, 7640, 8906, 1085, 1265, 7642, 8907, 8908, 5133, 5115, 8700, 4864, 8911, 7105, 7655, 38, 8903, 2]
+// Dependencies: [7398, 2072, 2068, 8909, 4807, 5135, 5169, 1392, 8913, 7642, 8914, 1087, 1267, 7644, 8915, 8916, 5136, 5118, 8708, 4867, 8919, 7107, 7657, 38, 8911, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
-// Module 8900 (instant_invite/InstantInviteUtils)
+// Module 8908 (instant_invite/InstantInviteUtils)
 import _modDef38 from "module_38" /* 38 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ToastUtils from "ToastUtils" /* 4864 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5133 */;
-import ClipboardUtils from "ClipboardUtils" /* 7105 */;
-import Constants2 from "Constants" /* 7640 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7642 */;
-import DCDSendUtils from "DCDSendUtils" /* 7655 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8903 */;
-import InstantInviteConstants from "InstantInviteConstants" /* 8906 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8907 */;
-import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 8908 */;
-import getInviteURLDefault from "getInviteURL" /* 8911 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7396 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8901 */;
-import GuildChannelStore from "GuildChannelStore" /* 4804 */;
-import InviteStore from "InviteStore" /* 5132 */;
-import PresenceStore from "PresenceStore" /* 5167 */;
-import UserStore from "UserStore" /* 1390 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8905 */;
-import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ToastUtils from "ToastUtils" /* 4867 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5136 */;
+import ClipboardUtils from "ClipboardUtils" /* 7107 */;
+import Constants2 from "Constants" /* 7642 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7644 */;
+import DCDSendUtils from "DCDSendUtils" /* 7657 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8911 */;
+import InstantInviteConstants from "InstantInviteConstants" /* 8914 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8915 */;
+import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 8916 */;
+import getInviteURLDefault from "getInviteURL" /* 8919 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7398 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8909 */;
+import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import InviteStore from "InviteStore" /* 5135 */;
+import PresenceStore from "PresenceStore" /* 5169 */;
+import UserStore from "UserStore" /* 1392 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8913 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -276,7 +276,7 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
     if (flag) {
       trackOptionClicked(code, channel, constants2.SHARE, source);
     }
-    const tmp26Result = tmp26(5115);
+    const tmp26Result = tmp26(5118);
     tmp26Result.hideAllActionSheets();
     const obj2 = {
       message: shareMessage,
@@ -288,7 +288,7 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
           }
         }
     };
-    const tmp21Result = tmp21(8700);
+    const tmp21Result = tmp21(8708);
     tmp21Result.showShareActionSheet(obj2, source);
   }
 };
@@ -346,7 +346,7 @@ export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
     if (flag) {
       trackOptionClicked(code, channel, constants2.COPY);
     }
-    const tmp13Result = tmp13(4864);
+    const tmp13Result = tmp13(4867);
     tmp13Result.presentLinkCopied();
   }
 };

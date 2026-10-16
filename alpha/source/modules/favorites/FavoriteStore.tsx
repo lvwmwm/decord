@@ -1,17 +1,17 @@
-// Module ID: 2068
-// Function ID: 2069
+// Module ID: 2071
+// Function ID: 2072
 // Name: FavoriteStore
-// Dependencies: [1244, 2069, 2078, 1085, 1209, 12, 504, 584, 2]
+// Dependencies: [1246, 2072, 2081, 1087, 1211, 12, 504, 584, 2]
 
-// Module 2068 (FavoriteStore)
+// Module 2071 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import FavoritesConstants from "FavoritesConstants" /* 2078 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import Constants from "Constants" /* 1085 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import FavoritesConstants from "FavoritesConstants" /* 2081 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let value2;

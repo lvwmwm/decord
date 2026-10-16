@@ -1,17 +1,17 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16220
+// Function ID: 16221
 // Name: VoiceSetting
-// Dependencies: [2012, 1085, 558, 576, 504, 1126, 10991, 11398, 16188, 2]
+// Dependencies: [2014, 1087, 558, 576, 504, 1128, 11006, 11418, 16221, 2]
 
-// Module 16187 (VoiceSetting)
+// Module 16220 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11398 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1128 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11418 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,11 +43,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSe
   if (cResult[2] !== stateFromStores) {
     let stringResult;
     if (stateFromStores === constants.PUSH_TO_TALK) {
-      const intl2 = tmp(1126).intl;
-      stringResult = intl2.string(tmp(1126).t.Q8gkVL);
+      const intl2 = tmp(1128).intl;
+      stringResult = intl2.string(tmp(1128).t.Q8gkVL);
     } else {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.cHCEOJ);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.cHCEOJ);
     }
     cResult[2] = stateFromStores;
     cResult[3] = stringResult;
@@ -62,11 +62,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSe
   const items = [MediaEngineStore];
   const obj = get_initialized;
   if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
-    const intl2 = tmp(1126).intl;
-    stringResult = intl2.string(tmp(1126).t.Q8gkVL);
+    const intl2 = tmp(1128).intl;
+    stringResult = intl2.string(tmp(1128).t.Q8gkVL);
   } else {
-    const intl = tmp(1126).intl;
-    stringResult = intl.string(tmp(1126).t.cHCEOJ);
+    const intl = tmp(1128).intl;
+    stringResult = intl.string(tmp(1128).t.cHCEOJ);
   }
   return stringResult;
 });

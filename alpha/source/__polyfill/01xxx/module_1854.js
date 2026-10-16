@@ -1,31 +1,38 @@
 // Module ID: 1854
 // Function ID: 1855
-// Dependencies: [1855, 1856, 1857, 1858, 1859]
+// Dependencies: [32, 19, 17, 1648]
+// Exports: useWindowDimensions
 
 // Module 1854
-import _mod1855 from "module_1855" /* 1855 */;
-import _mod1856 from "module_1856" /* 1856 */;
-import _mod1857 from "module_1857" /* 1857 */;
-import _mod1858 from "module_1858" /* 1858 */;
-import _mod1859 from "module_1859" /* 1859 */;
+import react_native from "react-native" /* 17 */;
+import KeyboardControllerNative from "KeyboardControllerNative" /* 1648 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-for (const key10013 in _mod1855) {
-  exports[key10013] = _mod1855[key10013];
-  continue;
-}
-for (const key10017 in _mod1856) {
-  exports[key10017] = _mod1856[key10017];
-  continue;
-}
-for (const key10021 in _mod1857) {
-  exports[key10021] = _mod1857[key10021];
-  continue;
-}
-for (const key10025 in _mod1858) {
-  exports[key10025] = _mod1858[key10025];
-  continue;
-}
-for (const key10029 in _mod1859) {
-  exports[key10029] = _mod1859[key10029];
-  continue;
-}
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+const Dimensions = react_native.Dimensions;
+const size = Dimensions.get("window");
+let closure_5 = { width: size.width, height: size.height };
+let WindowDimensionsEvents = KeyboardControllerNative.WindowDimensionsEvents;
+WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+  closure_5 = arg0;
+});
+
+export const useWindowDimensions = () => {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_4(closure_5);
+  closure_3(() => {
+    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
+    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+      closure_0(arg0);
+    });
+    closure_0(closure_1_5);
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
+};

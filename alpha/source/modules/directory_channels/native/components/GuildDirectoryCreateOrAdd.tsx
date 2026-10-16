@@ -1,26 +1,26 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 12880
+// Function ID: 12881
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 12855, 12853, 21, 5151, 587, 558, 576, 504, 6379, 12856, 6400, 1126, 8750, 5147, 8996, 1631, 5439, 1503, 6381, 12861, 7034, 12852, 2]
+// Dependencies: [32, 19, 17, 12881, 12879, 21, 5153, 587, 558, 576, 504, 6381, 12882, 6402, 1128, 8758, 5149, 9004, 1633, 5441, 1505, 6383, 12887, 7036, 12878, 2]
 
-// Module 12854 (GuildDirectoryCreateOrAdd)
+// Module 12880 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
-import GuildIconDefault from "GuildIcon" /* 6379 */;
-import TableRow2 from "TableRow" /* 6400 */;
-import SegmentedControlState from "SegmentedControlState" /* 8750 */;
-import SegmentedControl from "SegmentedControl" /* 8996 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12853 */;
+import intl5 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
+import GuildIconDefault from "GuildIcon" /* 6381 */;
+import TableRow2 from "TableRow" /* 6402 */;
+import SegmentedControlState from "SegmentedControlState" /* 8758 */;
+import SegmentedControl from "SegmentedControl" /* 9004 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12855 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12881 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_9(directoryChannelId(12856), obj2);
+        const tmp16 = closure_9(directoryChannelId(12882), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         tmp13 = tmp16;
@@ -100,7 +100,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
         }
       }
       const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_9(guild(6400).TableRow, obj3);
+      const tmp19 = closure_9(guild(6402).TableRow, obj3);
       cResult[9] = end;
       cResult[10] = guild.name;
       cResult[11] = start;
@@ -110,7 +110,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       tmp17 = tmp19;
     }
     const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_9(directoryChannelId(6379), obj4);
+    const tmp12 = closure_9(directoryChannelId(6381), obj4);
     cResult[4] = guild;
     cResult[5] = tmp4.guildIcon;
     cResult[6] = tmp12;
@@ -134,8 +134,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6379), obj3), trailing: closure_9(directoryChannelId(12856), { entry: stateFromStores }), start, end };
-  const TableRow = guild(6400).TableRow;
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6381), obj3), trailing: closure_9(directoryChannelId(12882), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6402).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);
 }));
@@ -242,9 +242,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const items = [intl.string(intl5.t.FTe8HS), ];
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     items[1] = intl2.string(intl5.t.epOumr);
     const mapped = items.map((id) => ({ id, label: id, page: null }));
     cResult[0] = mapped;
@@ -262,7 +262,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     const segmentedControlState = tmpResult.useSegmentedControlState(tmp7);
     ({ header, title } = tmp4);
     if (cResult[4] !== directoryGuildName) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const obj2 = { guildName: directoryGuildName };
       const formatResult = intl3.format(intl5.t["9SKJdF"], obj2);
       cResult[4] = directoryGuildName;
@@ -282,7 +282,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
       const _Symbol = Symbol;
       const description = tmp4.description;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         const stringResult = intl4.string(intl5.t.pYFZ9p);
         cResult[9] = stringResult;
         tmp14 = stringResult;
@@ -414,7 +414,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     const _Symbol = Symbol;
     ({ footerContainer, footerTitle } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl5.t.pgCZRP);
       cResult[5] = stringResult;
       tmp8 = stringResult;
@@ -432,7 +432,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl5.t.WqJbLi);
       cResult[8] = stringResult1;
       tmp13 = stringResult1;

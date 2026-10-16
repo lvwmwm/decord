@@ -1,19 +1,19 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13262
+// Function ID: 13263
 // Name: HubProgressBarUtils
-// Dependencies: [19, 1244, 5977, 8913, 1085, 558, 576, 504, 1209, 1126, 1386, 1403, 2]
+// Dependencies: [19, 1246, 5979, 8921, 1087, 558, 576, 504, 1211, 1128, 1388, 1405, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep
 
-// Module 13236 (HubProgressBarUtils)
+// Module 13262 (HubProgressBarUtils)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1386 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 8913 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8921 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5977 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5979 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, set;
 
 let tmp;
 const get_initialized = tmp(504);
-const preloaded_user_settings = tmp(1209);
+const preloaded_user_settings = tmp(1211);
 function convertHubProgressFlagSetToSet(stateFromStores) {
   set = new Set();
   for (const item10013 of HUB_PROGRESS_STEP_ORDER) {
@@ -201,13 +201,13 @@ const result = size.fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx")
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
   if (preloaded_user_settings.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     return intl3.string(intl4.t.iNR25n);
   } else if (preloaded_user_settings.HubProgressStep.INVITE_USER === nextHubProgressStep) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     return intl2.string(intl4.t["3NlTYU"]);
   } else if (preloaded_user_settings.HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     return intl.string(intl4.t.HFvFte);
   } else if (preloaded_user_settings.HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;

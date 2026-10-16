@@ -1,18 +1,18 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 16783
+// Function ID: 16784
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 5151, 558, 576, 16748, 16751, 9663, 5439, 5451, 7115, 6485, 6482, 6483, 7067, 7035, 2]
+// Dependencies: [32, 19, 17, 21, 5153, 558, 576, 16781, 16784, 9679, 5441, 5453, 7117, 6487, 6484, 6485, 7069, 7037, 2]
 
-// Module 16750 (UserSettingsDesignSystemCoachmark)
+// Module 16783 (UserSettingsDesignSystemCoachmark)
 import react2 from "react" /* 576 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
-import LayerScope2 from "LayerScope" /* 7067 */;
-import _modDef16751 from "module_16751" /* 16751 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7037 */;
+import LayerScope2 from "LayerScope" /* 7069 */;
+import _modDef16784 from "module_16784" /* 16784 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5151 */;
+import createStyles from "createStyles" /* 5153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   _slicedToArray(react.useState(false), 2);
   [tmp9, r10029] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj3 = visible(16748);
+  const obj3 = visible(16781);
   [r10035, r10036] = obj3.useCanRotate();
   _slicedToArray(obj3.useCanRotate(), 2);
   const first1 = _slicedToArray(react.useState(false), 2)[0];
@@ -88,7 +88,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         return closure_1(false);
       }
     }
-    tmp23[0] = _modDef16751;
+    tmp23[0] = _modDef16784;
     cResult[2] = tmp23;
     tmp22 = tmp23;
   } else {
@@ -237,8 +237,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef16751 }, aspectRatio: first5 };
-    ({ uri: _modDef16751 });
+    obj2 = { type: "image", src: { uri: _modDef16784 }, aspectRatio: first5 };
+    ({ uri: _modDef16784 });
     if (first3) {
       str2 = "Button";
     }
@@ -338,7 +338,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: metroImportDefault(LayerScope, obj3) };
     obj3 = { children: metroImportDefault(closure_11, {}) };
-    LayerScope = tmp(7067).LayerScope;
+    LayerScope = tmp(7069).LayerScope;
     const tmp9 = metroImportDefault(metroRequire, obj2);
     cResult[0] = tmp9;
     first = tmp9;

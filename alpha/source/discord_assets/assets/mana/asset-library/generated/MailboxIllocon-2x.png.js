@@ -1,8 +1,8 @@
-// Module ID: 13059
-// Function ID: 13060
+// Module ID: 13085
+// Function ID: 13086
 // Dependencies: [2]
 
-// Module 13059
+// Module 13085
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxIllocon-2x.png.js");

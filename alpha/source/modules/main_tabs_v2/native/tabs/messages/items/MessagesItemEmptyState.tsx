@@ -1,19 +1,19 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17146
+// Function ID: 17147
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5033, 1126, 5147, 5439, 2]
+// Dependencies: [19, 17, 21, 5153, 587, 558, 576, 5036, 1128, 5149, 5441, 2]
 
-// Module 17112 (MessagesItemEmptyState)
+// Module 17146 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 5033 */;
-import Text_Text from "Text/Text" /* 5147 */;
-import components_Button_Button from "components/Button/Button" /* 5439 */;
+import intl4 from "intl" /* 1128 */;
+import RootNavigationRef from "RootNavigationRef" /* 5036 */;
+import Text_Text from "Text/Text" /* 5149 */;
+import components_Button_Button from "components/Button/Button" /* 5441 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5151 */;
+import createStyles_mod from "createStyles" /* 5153 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   ({ container, title } = tmp4);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["8JZof8"]);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -80,7 +80,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const body = tmp4.body;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t["qm+H7x"]);
     cResult[4] = stringResult1;
     tmp11 = stringResult1;
@@ -98,8 +98,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-    const Button = tmp(5439).Button;
-    intl3 = tmp(1126).intl;
+    const Button = tmp(5441).Button;
+    intl3 = tmp(1128).intl;
     const tmp18 = React3(Button, obj4);
     cResult[7] = tmp18;
     tmp16 = tmp18;

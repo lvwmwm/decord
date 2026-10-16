@@ -1,21 +1,21 @@
-// Module ID: 15773
-// Function ID: 15774
+// Module ID: 15806
+// Function ID: 15807
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8210, 558, 7136, 576, 6140, 7137, 6125, 1382, 7714, 6134, 2041, 10991, 1126, 2]
+// Dependencies: [8213, 558, 7138, 576, 6142, 7139, 6127, 1384, 7717, 6136, 2044, 11006, 1128, 2]
 
-// Module 15773 (AndroidViewNsfwDmCommandsSetting)
+// Module 15806 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6125 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6134 */;
-import AgeGateUtils from "AgeGateUtils" /* 6140 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7136 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7137 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7714 */;
-import SettingsConstants from "SettingsConstants" /* 8210 */;
+import intl2 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6127 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6136 */;
+import AgeGateUtils from "AgeGateUtils" /* 6142 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7138 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7139 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7717 */;
+import SettingsConstants from "SettingsConstants" /* 8213 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingBuilders from "SettingBuilders" /* 11006 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -108,7 +108,7 @@ let obj = {
         const result = showAgeVerificationGetStartedModal(obj2);
       }
     }
-    const ViewNsfwCommands = tmp(2041).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(2044).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate: tmp3
