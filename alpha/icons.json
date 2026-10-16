@@ -13,13 +13,6 @@
         "width": 24,
         "height": 24
     },
-    "ActivitiesIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/ActivitiesIcon.png",
-        "hash": "04284dcfb33cab4ac93ceefb6696c6d5",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "add": {
         "file": "app/modules/video_calls/native/images/add.png",
         "hash": "db76c9ef21a10a502ae95ae16e345521",
@@ -2697,6 +2690,13 @@
     "GoogleNeutralIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/GoogleNeutralIcon.png",
         "hash": "f6beefc7c46ba35914164c9b6ddbe0f6",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "GooglePlayNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/GooglePlayNeutralIcon.png",
+        "hash": "ee2c0e9df1cdb55262b28d0f27383b12",
         "scales": [],
         "width": 24,
         "height": 24
@@ -9200,6 +9200,13 @@
     "WindowLaunchIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
         "hash": "6fc18e0c40f0ce37259a8a45cc634c66",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "WindowTopIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WindowTopIcon.png",
+        "hash": "0cbf6a63eb42fee45267174e07a266f8",
         "scales": [],
         "width": 24,
         "height": 24
