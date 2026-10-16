@@ -1,10 +1,10 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9754
+// Function ID: 9755
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 2087, 4939, 5963, 1390, 6029, 6030, 1085, 558, 576, 504, 9754, 2041, 5749, 8568, 5750, 8020, 1126, 4755, 9736, 7047, 2]
+// Dependencies: [5, 32, 19, 2087, 4939, 5963, 1390, 6029, 6030, 1085, 558, 576, 504, 9755, 2041, 5749, 8568, 5750, 8020, 1126, 4755, 9737, 7047, 2]
 // Exports: useHasSendableSticker, useStickersGrid
 
-// Module 9753 (StickersHooks)
+// Module 9754 (StickersHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
@@ -13,8 +13,8 @@ import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
 import StickerSendability from "StickerSendability" /* 7047 */;
 import useManageResourcePermissions from "useManageResourcePermissions" /* 8568 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9736 */;
-import StickersActionCreators from "StickersActionCreators" /* 9754 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9737 */;
+import StickersActionCreators from "StickersActionCreators" /* 9755 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

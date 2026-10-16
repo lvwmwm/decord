@@ -1,16 +1,16 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 17012
+// Function ID: 17013
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4774, 21, 5092, 587, 558, 576, 5088, 1126, 1200, 17009, 6185, 9394, 15520, 573, 9397, 6940, 2]
+// Dependencies: [32, 109, 19, 17, 4774, 21, 5092, 587, 558, 576, 5088, 1126, 1200, 17013, 6185, 9394, 15525, 573, 9397, 6940, 2]
 
-// Module 17008 (Elements)
+// Module 17012 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import Pressables from "Pressables" /* 6185 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 9394 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17009 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15525 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

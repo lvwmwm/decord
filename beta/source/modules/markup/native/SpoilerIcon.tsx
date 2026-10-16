@@ -1,9 +1,9 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11689
+// Function ID: 11690
 // Name: SpoilerIcon
 // Dependencies: [109, 19, 21, 558, 576, 7572, 2]
 
-// Module 11687 (SpoilerIcon)
+// Module 11689 (SpoilerIcon)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7572 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

@@ -1,19 +1,19 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17085
+// Function ID: 17086
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 13218, 13227, 10652, 21, 3849, 5092, 587, 558, 576, 6665, 504, 17082, 17094, 5056, 1126, 6839, 17099, 5088, 6154, 5379, 6899, 8525, 12359, 8774, 2]
+// Dependencies: [5, 32, 19, 17, 13223, 13232, 10653, 21, 3849, 5092, 587, 558, 576, 6665, 504, 17086, 17098, 5056, 1126, 6839, 17103, 5088, 6154, 5379, 6899, 8525, 12364, 8774, 2]
 
-// Module 17081 (ConjureSettingsSheet)
+// Module 17085 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 10653 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 13227 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13223 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 13232 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -25,7 +25,7 @@ let c3, closure_2, closure_3, dependencyMap, importDefault;
 let closure_12;
 let tmp5;
 let unpackModuleId;
-const useConjureProjectSettingsFormDefault = tmp5(17082);
+const useConjureProjectSettingsFormDefault = tmp5(17086);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
@@ -294,7 +294,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   }
   dependencyMap = tmp8;
   let guild_id;
-  const tmpResult = tmp(17082);
+  const tmpResult = tmp(17086);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
@@ -303,7 +303,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   }
   const tmpResultResult = tmpResult(projectId, guild_id);
   _asyncToGenerator = tmpResultResult;
-  const tmp13 = tmp(17094)({ projectId, scopeKeys, note, notifyAgent, isPreview });
+  const tmp13 = tmp(17098)({ projectId, scopeKeys, note, notifyAgent, isPreview });
   _slicedToArray = tmp13;
   isScoped = tmp13.isScoped;
   loaded = tmp13.loaded;
@@ -499,7 +499,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
     tmp22Result3 = null;
     if ("model" === found) {
       const obj9 = { projectId };
-      tmp22Result3 = tmp22(tmp4(17099).ConjureModelSettingsContent, obj9);
+      tmp22Result3 = tmp22(tmp4(17103).ConjureModelSettingsContent, obj9);
     }
   }
   items9[5] = tmp22Result3;
@@ -687,7 +687,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp10 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp9Result = tmp9(tmp5(12359).Tabs, obj3);
+    tmp9Result = tmp9(tmp5(12364).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
     tmp9Result = tmp9(tmp5(8774).SegmentedControl, obj4);

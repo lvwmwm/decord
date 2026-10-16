@@ -1,9 +1,9 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11791
+// Function ID: 11792
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 558, 576, 10622, 1504, 8967, 1273, 2]
+// Dependencies: [19, 558, 576, 10623, 1504, 8967, 1273, 2]
 
-// Module 11789 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 11791 (useTrackAppLauncherItemImpressionOnFirstView)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import useTrackImpression from "useTrackImpression" /* 8967 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAp
   let tmp = entrypoint;
   let obj = entrypoint(576);
   const cResult = obj.c(6);
-  let obj2 = entrypoint(10622);
+  let obj2 = entrypoint(10623);
   entrypoint = obj2.useAppLauncherContext().entrypoint;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAp
   let entrypoint;
   let items;
   let ref;
-  let obj = entrypoint(10622);
+  let obj = entrypoint(10623);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const useRef = react.useRef;
   set = new Set();

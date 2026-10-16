@@ -1,20 +1,20 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13459
+// Function ID: 13460
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 13455, 10507, 13456, 5377, 13457, 9174, 10164, 1265, 5934, 7510, 7511, 11541, 38, 1279, 1126, 6201, 10603, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 13460, 10508, 13461, 5377, 13462, 9174, 10165, 1265, 5934, 7510, 7511, 11543, 38, 1279, 1126, 6201, 10604, 2]
 // Exports: default
 
-// Module 13454 (OrbCheckoutModal)
+// Module 13459 (OrbCheckoutModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9174 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10164 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13455 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 13456 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10165 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10508 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13460 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 13461 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -58,7 +58,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
     let tmp8 = null != orbRedemptionError;
     if (tmp8) {
       const obj4 = { error: orbRedemptionError.message };
-      tmp8 = unpackModuleId(tmp(13456).OrbCheckoutErrorCard, obj4);
+      tmp8 = unpackModuleId(tmp(13461).OrbCheckoutErrorCard, obj4);
     }
     cResult[0] = orbRedemptionError;
     cResult[1] = tmp8;
@@ -118,10 +118,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
   const tmp5 = authStore2;
   if (tmp6) {
     const obj3 = { error: orbRedemptionError.message };
-    tmp6 = unpackModuleId(tmp(13456).OrbCheckoutErrorCard, obj3);
+    tmp6 = unpackModuleId(tmp(13461).OrbCheckoutErrorCard, obj3);
   }
   const items = [tmp6, , ];
-  const OrbCheckoutOrderSummary = tmp(13456).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(13461).OrbCheckoutOrderSummary;
   if (product == null) {
     product = null;
   }

@@ -1,9 +1,9 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11694
+// Function ID: 11695
 // Name: ForumPostNewTag
 // Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 2]
 
-// Module 11692 (ForumPostNewTag)
+// Module 11694 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

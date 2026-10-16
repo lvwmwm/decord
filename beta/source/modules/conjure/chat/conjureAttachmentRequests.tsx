@@ -1,11 +1,11 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17065
+// Function ID: 17066
 // Name: conjureAttachmentRequests
-// Dependencies: [5, 13241, 13240, 2]
+// Dependencies: [5, 13246, 13245, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, uploadAttachment
 
-// Module 17061 (conjureAttachmentRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+// Module 17065 (conjureAttachmentRequests)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

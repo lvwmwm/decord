@@ -1,9 +1,9 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15562
+// Function ID: 15563
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1206, 1205, 15558, 7988, 1085, 21, 558, 576, 1503, 1382, 9293, 1126, 10516, 1272, 3442, 2128, 15559, 5396, 573, 10663, 14965, 2]
+// Dependencies: [19, 4937, 1206, 1205, 15563, 7988, 1085, 21, 558, 576, 1503, 1382, 9293, 1126, 10517, 1272, 3442, 2128, 15564, 5396, 573, 10664, 14970, 2]
 
-// Module 15557 (SettingsAppearanceScreen)
+// Module 15562 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -15,12 +15,12 @@ import _modDef3442 from "module_3442" /* 3442 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
 import HeaderShared from "HeaderShared" /* 9293 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import FontScaleStore from "FontScaleStore" /* 15558 */;
+import FontScaleStore from "FontScaleStore" /* 15563 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14965);
+const SettingLayoutDefault = tmp5(14970);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(10663).createList;
+    const createList = tmp(10664).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

@@ -1,12 +1,12 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16035
+// Function ID: 16036
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [21, 558, 576, 16028, 2]
+// Dependencies: [21, 558, 576, 16033, 2]
 
-// Module 16030 (CheckpointEmojiStatsScreen)
+// Module 16035 (CheckpointEmojiStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16028 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16033 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

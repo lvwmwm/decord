@@ -1,15 +1,15 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16905
+// Function ID: 16906
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4850, 5092, 587, 558, 576, 16479, 5093, 5378, 1200, 16902, 1126, 5379, 2]
+// Dependencies: [19, 17, 21, 4850, 5092, 587, 558, 576, 16484, 5093, 5378, 1200, 16906, 1126, 5379, 2]
 
-// Module 16901 (ContactSuggestionActions)
+// Module 16905 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16479 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

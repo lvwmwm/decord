@@ -1,9 +1,9 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13469
+// Function ID: 13470
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 9393, 9040, 12706, 1382, 4782, 5056, 8296, 13465, 10176, 10163, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 9393, 9040, 12711, 1382, 4782, 5056, 8296, 13470, 10177, 10164, 2]
 
-// Module 13464 (HeadlessCollectiblesPurchaseFlow)
+// Module 13469 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,14 +13,14 @@ import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
 import ACOMExperiments from "ACOMExperiments" /* 9393 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 12706 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13465 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 12711 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13470 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const NativeCheckoutStoreProviderDefault = tmp3(10163);
+const NativeCheckoutStoreProviderDefault = tmp3(10164);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
@@ -175,7 +175,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeadlessCollecti
     }
     tmp7 = tmp8;
   }
-  const NativePaymentContextProvider = tmp(10176).NativePaymentContextProvider;
+  const NativePaymentContextProvider = tmp(10177).NativePaymentContextProvider;
   const items = [product.skuId];
   const obj5 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
   NativeCheckoutStoreProviderDefault;

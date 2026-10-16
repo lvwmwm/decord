@@ -1,13 +1,13 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10280
+// Function ID: 10281
 // Name: GroupDMRow
-// Dependencies: [109, 19, 10217, 21, 558, 576, 5421, 10280, 1200, 10281, 5088, 6177, 6180, 2]
+// Dependencies: [109, 19, 10218, 21, 558, 576, 5421, 10281, 1200, 10282, 5088, 6177, 6180, 2]
 
-// Module 10279 (GroupDMRow)
+// Module 10280 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,8 +19,8 @@ const native = tmp(1200);
 const Text_Text = tmp(5088);
 const TableCheckboxRow2 = tmp(6177);
 const TableRow2 = tmp(6180);
-const GroupDMAvatarDefault = tmp15(10280);
-const useRecipientsLabel = tmp(10281);
+const GroupDMAvatarDefault = tmp15(10281);
+const useRecipientsLabel = tmp(10282);
 let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
 const UserRowModes = UserRowConstants.UserRowModes;
 const jsx = Fragment.jsx;

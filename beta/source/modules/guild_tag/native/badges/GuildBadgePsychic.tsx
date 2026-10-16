@@ -1,12 +1,12 @@
-// Module ID: 14161
-// Function ID: 14162
+// Module ID: 14166
+// Function ID: 14167
 // Name: GuildBadgePsychic
-// Dependencies: [109, 19, 21, 558, 576, 14145, 7572, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14150, 7572, 2]
 
-// Module 14161 (GuildBadgePsychic)
+// Module 14166 (GuildBadgePsychic)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7572 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14145 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14150 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

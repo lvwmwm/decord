@@ -1,16 +1,16 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17764
+// Function ID: 17765
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 6067, 21, 17761, 17767, 558, 576, 17781, 4827, 6846, 17782, 17759, 2]
+// Dependencies: [19, 17, 6067, 21, 17765, 17771, 558, 576, 17785, 4827, 6846, 17786, 17763, 2]
 
-// Module 17760 (ActivityPanelUI)
+// Module 17764 (ActivityPanelUI)
 import react2 from "react" /* 576 */;
 import native from "native" /* 4827 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
 import LayerScope2 from "LayerScope" /* 6846 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17759 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17781 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17782 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17763 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17785 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17786 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,9 +28,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 17761;
+    tmp4 = 17765;
   } else {
-    tmp4 = 17767;
+    tmp4 = 17771;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);

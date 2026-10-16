@@ -1,13 +1,13 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16579
+// Function ID: 16580
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 2068, 21, 558, 576, 16575, 16576, 16577, 10313, 504, 6839, 1126, 6895, 8196, 11839, 16578, 6208, 6650, 5049, 6899, 2]
+// Dependencies: [19, 2068, 21, 558, 576, 16580, 16581, 16582, 10314, 504, 6839, 1126, 6895, 8196, 11841, 16583, 6208, 6650, 5049, 6899, 2]
 
-// Module 16574 (FavoritesGuildActionSheet)
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16575 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 16576 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 16577 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 16578 */;
+// Module 16579 (FavoritesGuildActionSheet)
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16580 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 16581 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 16582 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 16583 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   const tmp5 = useFavoritesGuildResetActionDefault();
   dependencyMap = tmp5;
   const tmp6 = useFavoritesGuildAutoAddedThreadsActionDefault();
-  const obj2 = onClose(10313);
+  const obj2 = onClose(10314);
   const hasAccess = obj2.useFavoritesAccess("FavoritesGuildActionSheet").hasAccess;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
@@ -261,7 +261,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
                   closure_1.perform();
                 }
               }
-              obj15 = { IconComponent: onClose(11839).ArrowsUpDownIcon };
+              obj15 = { IconComponent: onClose(11841).ArrowsUpDownIcon };
               Icon2 = tmp(6895).ActionSheetRow.Icon;
               tmp19 = closure_4(Group2, obj11);
             }
@@ -326,7 +326,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   const tmp3 = useFavoritesGuildResetActionDefault();
   dependencyMap = tmp3;
   const tmp4 = useFavoritesGuildAutoAddedThreadsActionDefault();
-  const obj = onClose(10313);
+  const obj = onClose(10314);
   const hasAccess = obj.useFavoritesAccess("FavoritesGuildActionSheet").hasAccess;
   const items = [FavoriteStore];
   const obj2 = onClose(504);
@@ -365,7 +365,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       };
       ActionSheetRow = tmp5(6895).ActionSheetRow;
       intl2 = tmp5(1126).intl;
-      obj11 = { IconComponent: onClose(11839).ArrowsUpDownIcon };
+      obj11 = { IconComponent: onClose(11841).ArrowsUpDownIcon };
       Icon2 = tmp5(6895).ActionSheetRow.Icon;
       tmp8Result3 = tmp8(Group2, obj9);
     }

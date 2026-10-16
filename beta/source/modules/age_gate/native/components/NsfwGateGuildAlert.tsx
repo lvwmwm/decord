@@ -1,10 +1,10 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9618
+// Function ID: 9619
 // Name: NsfwGateGuildAlert
 // Dependencies: [19, 2125, 1390, 6916, 1085, 21, 558, 576, 1265, 6917, 1126, 5305, 4806, 2128, 5301, 2]
 // Exports: showNsfwGateGuildAlert
 
-// Module 9617 (NsfwGateGuildAlert)
+// Module 9618 (NsfwGateGuildAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useAlertStore from "useAlertStore" /* 5301 */;

@@ -1,10 +1,10 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9777
+// Function ID: 9778
 // Name: getStickerDiscoverableGuild
 // Dependencies: [1085, 1295, 7052, 2]
 // Exports: default
 
-// Module 9776 (getStickerDiscoverableGuild)
+// Module 9777 (getStickerDiscoverableGuild)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7052 */;

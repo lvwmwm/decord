@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10821
+// Function ID: 10822
 // Name: showActivityLaunchErrorModal
 // Dependencies: [5300, 1126, 2]
 // Exports: default
 
-// Module 10820 (showActivityLaunchErrorModal)
+// Module 10821 (showActivityLaunchErrorModal)
 import intl2 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import size from "module_2" /* 2 */;

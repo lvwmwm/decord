@@ -1,17 +1,17 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15711
+// Function ID: 15712
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [5081, 7988, 558, 576, 504, 14693, 10663, 1126, 2]
+// Dependencies: [5081, 7988, 558, 576, 504, 14698, 10664, 1126, 2]
 // Exports: onShowLinkDecorationsValueChange
 
-// Module 15706 (ShowLinkDecorationsSetting)
+// Module 15711 (ShowLinkDecorationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14693 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

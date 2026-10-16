@@ -1,9 +1,9 @@
-// Module ID: 18084
-// Function ID: 18085
+// Module ID: 18088
+// Function ID: 18089
 // Name: EntityVersionsManager
 // Dependencies: [5987, 6030, 2065, 2119, 2087, 5757, 3, 6808, 584, 504, 7335, 1264, 11, 2]
 
-// Module 18084 (EntityVersionsManager)
+// Module 18088 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;

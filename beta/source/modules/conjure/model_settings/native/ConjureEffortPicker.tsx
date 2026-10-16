@@ -1,9 +1,9 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17066
+// Function ID: 17067
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 558, 576, 1126, 3849, 17063, 17065, 6262, 6263, 6265, 6180, 17064, 6896, 5377, 587, 6839, 6899, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 1126, 3849, 17067, 17069, 6262, 6263, 6265, 6180, 17068, 6896, 5377, 587, 6839, 6899, 2]
 
-// Module 17062 (ConjureEffortPicker)
+// Module 17066 (ConjureEffortPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import _modDef3849 from "module_3849" /* 3849 */;
 import TableRadioRow2 from "TableRadioRow" /* 6262 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import ConjureEffortTiers from "ConjureEffortTiers" /* 17063 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 17064 */;
+import ConjureEffortTiers from "ConjureEffortTiers" /* 17067 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 17068 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -371,7 +371,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
   const stringResult1 = intl2.string(disabled(3849)["59TDiR"]);
   const intl3 = settings(1126).intl;
   const stringResult2 = intl3.string(disabled(3849).fpdVCO);
-  let obj = settings(17063);
+  let obj = settings(17067);
   const conjureTierModelResult = obj.conjureTierModel(settings, tiers, settings.tier);
   let obj2 = { direction: "vertical", spacing: disabled(587).space.PX_16, children: items };
   const Stack = settings(5377).Stack;
@@ -403,7 +403,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
   if (!hideTitle) {
     tmp13 = stringResult;
   }
-  CONJURE_MODEL_TIERS = tmp4(17065).CONJURE_MODEL_TIERS;
+  CONJURE_MODEL_TIERS = tmp4(17069).CONJURE_MODEL_TIERS;
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = { hasIcons: false, children: closure_6(TableRow, obj5) };
   const TableRowGroup = tmp4(6265).TableRowGroup;
@@ -477,7 +477,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
     thinking1 = choices.thinking;
     items1[1] = closure_6(TableRadioGroup3, obj7);
     let tmp12Result2 = null;
-    const tmp4Result = settings(17063);
+    const tmp4Result = settings(17067);
     if (tmp4Result.conjureCeilingSupportsFast(settings, tiers, choices.main)) {
       const obj8 = { hasIcons: false, children: closure_6(TableSwitchRow, obj9) };
       const TableRowGroup2 = tmp4(6265).TableRowGroup;

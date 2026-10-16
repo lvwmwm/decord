@@ -1,11 +1,11 @@
-// Module ID: 10852
-// Function ID: 10853
+// Module ID: 10853
+// Function ID: 10854
 // Name: IgnoreThermalStateAlert
-// Dependencies: [109, 19, 21, 5092, 558, 576, 1126, 10853, 5088, 5398, 2]
+// Dependencies: [109, 19, 21, 5092, 558, 576, 1126, 10854, 5088, 5398, 2]
 
-// Module 10852 (IgnoreThermalStateAlert)
+// Module 10853 (IgnoreThermalStateAlert)
 import AlertDefault from "Alert" /* 5398 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10853 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10854 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

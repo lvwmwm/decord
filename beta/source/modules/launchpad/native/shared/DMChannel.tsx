@@ -1,9 +1,9 @@
-// Module ID: 17998
-// Function ID: 17999
+// Module ID: 18002
+// Function ID: 18003
 // Name: shared/DMChannel
-// Dependencies: [19, 5967, 21, 558, 576, 5103, 10283, 5092, 587, 17411, 16802, 15612, 11, 5386, 17992, 6185, 17990, 12588, 9309, 17410, 5421, 2]
+// Dependencies: [19, 5967, 21, 558, 576, 5103, 10284, 5092, 587, 17415, 16807, 15617, 11, 5386, 17996, 6185, 17994, 12593, 9309, 17414, 5421, 2]
 
-// Module 17998 (shared/DMChannel)
+// Module 18002 (shared/DMChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,13 +13,13 @@ import useFontScale from "useFontScale" /* 5386 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15612 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16802 */;
-import renderChannelItemDefault from "renderChannelItem" /* 17410 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17990 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17992 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 15617 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16807 */;
+import renderChannelItemDefault from "renderChannelItem" /* 17414 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17415 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17994 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17996 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     let tmp23 = null != tmp13;
     if (tmp23) {
-      const ChannelRowPreview = tmp(12588).ChannelRowPreview;
+      const ChannelRowPreview = tmp(12593).ChannelRowPreview;
       tmp23 = <ChannelRowPreview channel={channel} message={tmp13} color={str} muted={undefined !== muted && muted} layout={ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT} />;
     }
     cResult[9] = channel;
@@ -277,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2Result4 = renderChannelItemDefault;
   if (tmp11Result) {
     const obj5 = { channel, message: tmp7, color: str, muted, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT };
-    const ChannelRowPreview = tmp5(12588).ChannelRowPreview;
+    const ChannelRowPreview = tmp5(12593).ChannelRowPreview;
     tmp11Result = tmp11(ChannelRowPreview, obj5);
   }
   return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj3)}</PressableHighlight>);

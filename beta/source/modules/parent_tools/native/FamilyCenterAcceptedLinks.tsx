@@ -1,9 +1,9 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15202
+// Function ID: 15203
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7255, 21, 5092, 587, 558, 576, 7735, 7734, 11535, 1126, 2568, 5088, 15198, 15199, 6185, 5934, 15202, 2000, 1200, 15204, 2]
+// Dependencies: [19, 17, 7255, 21, 5092, 587, 558, 576, 7735, 7734, 11537, 1126, 2568, 5088, 15203, 15204, 6185, 5934, 15207, 2000, 1200, 15209, 2]
 
-// Module 15197 (FamilyCenterAcceptedLinks)
+// Module 15202 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import useUserLinks from "useUserLinks" /* 7734 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7735 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 11535 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 15198 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15199 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 11537 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 15203 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15204 */;
 import react from "react" /* 19 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,13 +55,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(15202, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(15207, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
       children: closure_6(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1200).Icon.Sizes.SMALL, disableColor: true, source: tmp5(15204) };
+    obj4 = { size: str(1200).Icon.Sizes.SMALL, disableColor: true, source: tmp5(15209) };
     Icon = tmp8(1200).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }
@@ -162,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     tmp14 = tmp16;
   }
   const obj8 = { count: activeLinkUsers.length, max: tmp7 };
-  const useAgeSpecificText = tmp(11535).useAgeSpecificText;
+  const useAgeSpecificText = tmp(11537).useAgeSpecificText;
   const intl = tmp(1126).intl;
   const formatToPlainStringResult = intl.formatToPlainString(_modDef2568["+tnO34"], obj8);
   const intl2 = tmp(1126).intl;

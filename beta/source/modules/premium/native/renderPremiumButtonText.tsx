@@ -1,10 +1,10 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13867
+// Function ID: 13868
 // Name: renderPremiumButtonText
 // Dependencies: [19, 17, 1392, 21, 5092, 4967, 587, 558, 576, 4769, 1126, 1200, 2]
 // Exports: default
 
-// Module 13862 (renderPremiumButtonText)
+// Module 13867 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

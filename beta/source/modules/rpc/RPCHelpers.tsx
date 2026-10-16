@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 10946
+// Function ID: 10947
 // Name: RPCHelpers
-// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7174, 5079, 5627, 10946, 5409, 1386, 8453, 1295, 10936, 10808, 10947, 2]
+// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7174, 5079, 5627, 10947, 5409, 1386, 8453, 1295, 10937, 10809, 10948, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10945 (RPCHelpers)
+// Module 10946 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -15,9 +15,9 @@ import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import LeakyBucketDefault from "LeakyBucket" /* 10947 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10809 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import LeakyBucketDefault from "LeakyBucket" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
@@ -48,7 +48,7 @@ let closure_21;
 let closure_22;
 let closure_23;
 let tmp;
-const transformUserDefault = tmp(10946);
+const transformUserDefault = tmp(10947);
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
     type.type = "emoji";
@@ -621,18 +621,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f143421 = (index, index2) => index.index - index2.index;
-  const f143422 = (id) => ({ id: id.id, name: id.name });
+  const f143449 = (index, index2) => index.index - index2.index;
+  const f143450 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f143422), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f143450), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f143421);
+  sorted = values.sort(f143449);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f143422), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f143450), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f143421);
+  sorted1 = values2.sort(f143449);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

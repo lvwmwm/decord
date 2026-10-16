@@ -1,25 +1,25 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17524
+// Function ID: 17525
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2065, 14044, 5110, 1390, 10217, 1085, 21, 5092, 587, 7015, 7477, 7017, 11338, 5056, 504, 10750, 10752, 10749, 1265, 4809, 1126, 17519, 9293, 10753, 4808, 9303, 8719, 8492, 8689, 1200, 10218, 17460, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 14049, 5110, 1390, 10218, 1085, 21, 5092, 587, 7015, 7477, 7017, 11340, 5056, 504, 10751, 10753, 10750, 1265, 4809, 1126, 17523, 9293, 10754, 4808, 9303, 8719, 8492, 8689, 1200, 10219, 17464, 2]
 // Exports: default
 
-// Module 17520 (NewGroupDMScreen)
+// Module 17524 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import HeaderShared from "HeaderShared" /* 9293 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10753 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17519 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10754 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17523 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14044 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14049 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

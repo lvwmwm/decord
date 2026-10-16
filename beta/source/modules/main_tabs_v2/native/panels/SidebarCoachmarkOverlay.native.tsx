@@ -1,9 +1,9 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16662
+// Function ID: 16663
 // Name: SidebarCoachmarkOverlay
 // Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6847, 6170, 2]
 
-// Module 16657 (SidebarCoachmarkOverlay)
+// Module 16662 (SidebarCoachmarkOverlay)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import useInitialValueDefault from "useInitialValue" /* 6170 */;

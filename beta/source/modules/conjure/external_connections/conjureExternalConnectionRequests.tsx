@@ -1,11 +1,11 @@
-// Module ID: 17152
-// Function ID: 17153
+// Module ID: 17156
+// Function ID: 17157
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 13241, 17153, 2]
+// Dependencies: [5, 13246, 17157, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 17152 (conjureExternalConnectionRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+// Module 17156 (conjureExternalConnectionRequests)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

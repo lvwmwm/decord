@@ -1,9 +1,9 @@
-// Module ID: 10237
-// Function ID: 10238
+// Module ID: 10238
+// Function ID: 10239
 // Name: useDiscoverableApplicationStream
 // Dependencies: [5897, 4760, 1085, 558, 576, 504, 2]
 
-// Module 10237 (useDiscoverableApplicationStream)
+// Module 10238 (useDiscoverableApplicationStream)
 import Constants from "Constants" /* 1085 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;

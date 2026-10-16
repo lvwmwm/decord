@@ -1,9 +1,9 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15109
+// Function ID: 15110
 // Name: useExplicitContentSettingsOrDefault
 // Dependencies: [1244, 558, 576, 6997, 573, 7000, 2]
 
-// Module 15104 (useExplicitContentSettingsOrDefault)
+// Module 15109 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6997 */;

@@ -1,9 +1,9 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16695
+// Function ID: 16696
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
 // Dependencies: [2083, 2087, 1390, 1085, 558, 576, 504, 6964, 2]
 
-// Module 16690 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 16695 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import Constants from "Constants" /* 1085 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import GuildStore from "GuildStore" /* 2087 */;

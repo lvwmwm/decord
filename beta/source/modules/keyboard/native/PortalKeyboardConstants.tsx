@@ -1,9 +1,9 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11715
+// Function ID: 11716
 // Name: PortalKeyboardConstants
 // Dependencies: [6307, 2]
 
-// Module 11713 (PortalKeyboardConstants)
+// Module 11715 (PortalKeyboardConstants)
 import BottomSheetModal from "BottomSheetModal" /* 6307 */;
 import size from "module_2" /* 2 */;
 

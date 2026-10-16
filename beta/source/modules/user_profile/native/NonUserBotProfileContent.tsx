@@ -1,7 +1,7 @@
 // Module ID: 8362
 // Function ID: 8363
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 6905, 6841, 21, 558, 576, 8363, 8310, 5409, 4962, 8364, 8352, 8365, 1631, 8349, 8360, 6886, 4808, 8366, 8377, 1126, 10532, 10613, 4850, 2]
+// Dependencies: [19, 17, 6905, 6841, 21, 558, 576, 8363, 8310, 5409, 4962, 8364, 8352, 8365, 1631, 8349, 8360, 6886, 4808, 8366, 8377, 1126, 10533, 10614, 4850, 2]
 
 // Module 8362 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
@@ -15,8 +15,8 @@ import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 83
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
 import useBadgesDefault from "useBadges" /* 8364 */;
 import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8365 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10532 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10613 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10533 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10614 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 6905 */;
 import Fragment from "Fragment" /* 21 */;
@@ -273,7 +273,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                       }
                                                     }
                                                     const obj9 = { userId: user.id, displayProfile, channel, style: tmp47 };
-                                                    const tmp50 = closure_7(userTag(10613), obj9);
+                                                    const tmp50 = closure_7(userTag(10614), obj9);
                                                     cResult[51] = channel;
                                                     cResult[52] = displayProfile;
                                                     cResult[53] = tmp47;
@@ -301,7 +301,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                     }
                                   }
                                   const obj11 = { user, guildId: guild_id1, displayName: name, pronouns, badges: tmp11, badgeContainerBackground: containerBackground, displayNameAccessibilityHint: tmp37, onPressDisplayName: tmp20, onPressUserTag: tmp20, onPressPronouns: tmp21, showBadgeToastOnPress: true };
-                                  const tmp41 = closure_7(userTag(10532), obj11);
+                                  const tmp41 = closure_7(userTag(10533), obj11);
                                   cResult[34] = tmp11;
                                   cResult[35] = containerBackground;
                                   cResult[36] = name;

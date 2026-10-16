@@ -1,9 +1,9 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11130
+// Function ID: 11131
 // Name: LabeledActionBarButton
 // Dependencies: [109, 19, 17, 1096, 21, 5092, 5969, 587, 558, 576, 6157, 1200, 6185, 2]
 
-// Module 11128 (LabeledActionBarButton)
+// Module 11130 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

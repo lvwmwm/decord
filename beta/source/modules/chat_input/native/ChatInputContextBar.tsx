@@ -1,9 +1,9 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12137
+// Function ID: 12138
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5081, 7239, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 4818, 1126, 5088, 6621, 6185, 504, 4832, 5628, 8849, 7975, 12136, 4936, 4850, 5093, 9686, 1265, 9684, 1112, 5627, 7914, 9288, 9290, 12137, 2]
+// Dependencies: [19, 17, 5081, 7239, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 4818, 1126, 5088, 6621, 6185, 504, 4832, 5628, 8849, 7975, 12138, 4936, 4850, 5093, 9687, 1265, 9685, 1112, 5627, 7914, 9288, 9290, 12139, 2]
 
-// Module 12135 (ChatInputContextBar)
+// Module 12137 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -17,7 +17,7 @@ import DraftStore2 from "DraftStore" /* 7239 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9288 */;
 import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9290 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9686 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9687 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -1229,7 +1229,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F155394 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1261,7 +1261,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F155394 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1292,7 +1292,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F155394 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1321,7 +1321,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F155394 */ };
+                      const fn = function n() { /* body not rendered: F155428 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
@@ -1572,7 +1572,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(9684);
+      tmp8Result = tmp8(9685);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {

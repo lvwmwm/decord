@@ -1,9 +1,9 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15896
+// Function ID: 15897
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: [17, 1370, 21, 5092, 587, 558, 576, 504, 1371, 6896, 6265, 2]
 
-// Module 15891 (DevToolsLoggingFlagsScreen)
+// Module 15896 (DevToolsLoggingFlagsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;

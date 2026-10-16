@@ -1,9 +1,9 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12712
+// Function ID: 12713
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1087, 8997, 21, 5092, 587, 558, 576, 8348, 12708, 6157, 8323, 9021, 8291, 8996, 1990, 9017, 1993, 1088, 9044, 9043, 9009, 1126, 5088, 7270, 9054, 12709, 8298, 4769, 9073, 2]
+// Dependencies: [19, 17, 1087, 8997, 21, 5092, 587, 558, 576, 8348, 12713, 6157, 8323, 9021, 8291, 8996, 1990, 9017, 1993, 1088, 9044, 9043, 9009, 1126, 5088, 7270, 9054, 12714, 8298, 4769, 9073, 2]
 
-// Module 12707 (CollectiblesShopCheckoutDetails)
+// Module 12712 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -27,8 +27,8 @@ import _modDef9043 from "module_9043" /* 9043 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9044 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9054 */;
 import getProductName from "getProductName" /* 9073 */;
-import _modDef12708 from "module_12708" /* 12708 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 12709 */;
+import _modDef12713 from "module_12713" /* 12713 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 12714 */;
 import react from "react" /* 19 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8997 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef12708 };
+      const obj2 = { uri: _modDef12713 };
       cResult[0] = obj2;
       first = obj2;
     } else {
@@ -176,7 +176,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef12708 };
+    obj3 = { uri: _modDef12713 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };

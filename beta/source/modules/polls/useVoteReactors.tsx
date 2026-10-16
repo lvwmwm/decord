@@ -1,9 +1,9 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11521
+// Function ID: 11522
 // Name: useVoteReactors
 // Dependencies: [7894, 1085, 558, 576, 7896, 504, 1355, 2]
 
-// Module 11519 (useVoteReactors)
+// Module 11521 (useVoteReactors)
 import Constants from "Constants" /* 1085 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
 import MessageReactionsStore from "MessageReactionsStore" /* 7894 */;

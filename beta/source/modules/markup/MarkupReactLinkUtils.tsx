@@ -1,10 +1,10 @@
-// Module ID: 9614
-// Function ID: 9615
+// Module ID: 9615
+// Function ID: 9616
 // Name: MarkupReactLinkUtils
 // Dependencies: [8486, 8000, 2]
 // Exports: isLinkTrusted
 
-// Module 9614 (MarkupReactLinkUtils)
+// Module 9615 (MarkupReactLinkUtils)
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18204
+// Function ID: 18205
 // Name: NewUserUtils
-// Dependencies: [5, 16383, 5761, 1390, 1085, 12402, 7478, 12404, 1382, 7501, 8678, 584, 1504, 12407, 5934, 18199, 1112, 12514, 2]
+// Dependencies: [5, 16388, 5761, 1390, 1085, 12407, 7478, 12409, 1382, 7501, 8678, 584, 1504, 12412, 5934, 18203, 1112, 12519, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18200 (NewUserUtils)
+// Module 18204 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -13,12 +13,12 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import react_nativeDefault from "react-native" /* 7501 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12407 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12514 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18199 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12407 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12412 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12519 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 18203 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16383 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16388 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

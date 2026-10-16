@@ -1,10 +1,10 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10598
+// Function ID: 10599
 // Name: badgeDetailsCtas
-// Dependencies: [1085, 1087, 8304, 1126, 4800, 7094, 7258, 6879, 9163, 5977, 9161, 10046, 2]
+// Dependencies: [1085, 1087, 8304, 1126, 4800, 7094, 7258, 6879, 9163, 5977, 9161, 10047, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 10597 (badgeDetailsCtas)
+// Module 10598 (badgeDetailsCtas)
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl2 from "intl" /* 1126 */;
@@ -16,7 +16,7 @@ import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
 import BadgeId from "BadgeId" /* 8304 */;
 import QuestsEligibility from "QuestsEligibility" /* 9161 */;
 import QuestUtils from "QuestUtils" /* 9163 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10046 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10047 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

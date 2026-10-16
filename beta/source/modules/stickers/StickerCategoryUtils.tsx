@@ -1,10 +1,10 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9758
+// Function ID: 9759
 // Name: StickerCategoryUtils
 // Dependencies: [7047, 5750, 2]
 // Exports: getStickerCategoriesWithNitroLockState, isStickerCategoryNitroLocked
 
-// Module 9757 (StickerCategoryUtils)
+// Module 9758 (StickerCategoryUtils)
 import StickersTypes from "StickersTypes" /* 5750 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export const getStickerCategoriesWithNitroLockState = function getStickerCategor
   let closure_0 = arg1;
   let closure_1 = arg2;
   return arr.flatMap((type) => {
-    const f102608 = (item) => {
+    const f102620 = (item) => {
       const obj = closure_2_0(closure_2_1[0]);
       const stickerSendability = obj.getStickerSendability(item, closure_0, closure_1);
       return stickerSendability !== closure_2_0(closure_2_1[0]).StickerSendability.SENDABLE_WITH_BOOSTED_GUILD;
@@ -46,7 +46,7 @@ export const getStickerCategoriesWithNitroLockState = function getStickerCategor
           closure_0 = tmp;
           closure_1 = tmp2;
           const stickers1 = type.stickers;
-          const found = stickers1.filter(f102608);
+          const found = stickers1.filter(f102620);
           if (found.length > 0) {
             let obj4;
             const obj2 = { stickers: found };
@@ -87,7 +87,7 @@ export const getStickerCategoriesWithNitroLockState = function getStickerCategor
     closure_0 = tmp;
     closure_1 = tmp2;
     const stickers2 = type.stickers;
-    const found1 = stickers2.filter(f102608);
+    const found1 = stickers2.filter(f102620);
     let tmp18 = null;
     if (0 !== found1.length) {
       const obj5 = { stickers: found1, isNitroLocked: false };

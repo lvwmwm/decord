@@ -1,12 +1,12 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13124
+// Function ID: 13125
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 2064, 13120, 558, 576, 504, 6858, 2]
+// Dependencies: [32, 2064, 13125, 558, 576, 504, 6858, 2]
 
-// Module 13119 (useEntryActivityAndApplication)
+// Module 13124 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 13120 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 13125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

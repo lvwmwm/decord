@@ -1,12 +1,12 @@
-// Module ID: 16078
-// Function ID: 16079
+// Module ID: 16083
+// Function ID: 16084
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 7883, 21, 5092, 587, 558, 576, 5088, 5379, 14143, 5377, 2]
+// Dependencies: [32, 19, 17, 7883, 21, 5092, 587, 558, 576, 5088, 5379, 14148, 5377, 2]
 
-// Module 16078 (DevToolsGuildTagBadgesScreen)
+// Module 16083 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 14143 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 14148 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -48,7 +48,7 @@ let closure_9 = found.map((item) => {
   return { name, value };
 });
 let items = [
-  { label: "Untinted", primary: "end", secondary: "PX_16" },
+  { label: "Untinted", primary: "end", secondary: "toCharArray$esjava$1" },
   ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary, index) => {
     const obj = { label: "P" + index + 1, primary: primary.primary, secondary: primary.secondary };
     return obj;

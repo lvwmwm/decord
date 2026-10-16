@@ -1,9 +1,9 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 14947
+// Function ID: 14948
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1085, 21, 6879, 5092, 558, 576, 5088, 14879, 1503, 6680, 1126, 7164, 6852, 9389, 9390, 9514, 14943, 1631, 2]
+// Dependencies: [19, 1085, 21, 6879, 5092, 558, 576, 5088, 14884, 1503, 6680, 1126, 7164, 6852, 9389, 9390, 9515, 14948, 1631, 2]
 
-// Module 14942 (UserProfilePremiumUpsellCard)
+// Module 14947 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
@@ -12,8 +12,8 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14879 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9515 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14884 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -178,7 +178,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items);
-  const tmpResult = tmp(14943);
+  const tmpResult = tmp(14948);
   const mobileNitroPreviewDirectCheckoutEnabled = tmpResult.useMobileNitroPreviewDirectCheckoutEnabled();
   if (cResult[2] !== nitroTrialCtaOverride) {
     let stringResult = nitroTrialCtaOverride;
@@ -241,7 +241,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }, items);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
-  let obj2 = analyticsLocations(14943);
+  let obj2 = analyticsLocations(14948);
   const mobileNitroPreviewDirectCheckoutEnabled = obj2.useMobileNitroPreviewDirectCheckoutEnabled();
   const obj3 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1126).t.ZFR9LF), disabled: mobileNitroPreviewDirectCheckoutEnabled && loading, onPress: callback };
   const tmp7 = jsx;

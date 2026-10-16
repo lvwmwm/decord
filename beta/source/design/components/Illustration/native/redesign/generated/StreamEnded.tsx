@@ -1,10 +1,10 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 10889
+// Function ID: 10890
 // Name: StreamEnded
-// Dependencies: [19, 17, 21, 8355, 10889, 10890, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8355, 10890, 10891, 558, 576, 4969, 2]
 // Exports: getStreamEndedSource
 
-// Module 10888 (StreamEnded)
+// Module 10889 (StreamEnded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

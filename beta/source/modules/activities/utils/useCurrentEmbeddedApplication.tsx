@@ -1,11 +1,11 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 10919
+// Function ID: 10920
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 558, 576, 10919, 6858, 2]
+// Dependencies: [32, 558, 576, 10920, 6858, 2]
 
-// Module 10918 (useCurrentEmbeddedApplication)
+// Module 10919 (useCurrentEmbeddedApplication)
 import react from "react" /* 576 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10919 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10920 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

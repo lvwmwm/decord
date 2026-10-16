@@ -1,9 +1,9 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11141
+// Function ID: 11142
 // Name: ChannelCallSingleController
-// Dependencies: [19, 5897, 502, 1085, 5115, 21, 558, 576, 1265, 5107, 504, 11140, 11142, 11143, 2]
+// Dependencies: [19, 5897, 502, 1085, 5115, 21, 558, 576, 1265, 5107, 504, 11142, 11144, 11145, 2]
 
-// Module 11139 (ChannelCallSingleController)
+// Module 11141 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -105,8 +105,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
       cResult[7] = channel;
       cResult[8] = tmp15;
       cResult[9] = selectedParticipant;
-      cResult[10] = jsx(channel(tmp15 ? 11140 : 11142), { participant: selectedParticipant, channel });
-      const tmp17Result = jsx(channel(tmp15 ? 11140 : 11142), { participant: selectedParticipant, channel });
+      cResult[10] = jsx(channel(tmp15 ? 11142 : 11144), { participant: selectedParticipant, channel });
+      const tmp17Result = jsx(channel(tmp15 ? 11142 : 11144), { participant: selectedParticipant, channel });
     }
     return null;
   } else {
@@ -136,11 +136,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
     const id = selectedParticipant.user.id;
     let tmp15Result = null;
     if (null != tmp4) {
-      tmp15Result = jsx(channel(id === tmp13 ? 11140 : 11142), { participant: selectedParticipant, channel });
+      tmp15Result = jsx(channel(id === tmp13 ? 11142 : 11144), { participant: selectedParticipant, channel });
     }
     return tmp15Result;
   } else if (ParticipantTypes.USER === type) {
-    return jsx(channel(11143), { participant: selectedParticipant, channel });
+    return jsx(channel(11145), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

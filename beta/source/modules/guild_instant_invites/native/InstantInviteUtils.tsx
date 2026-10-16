@@ -1,16 +1,16 @@
-// Module ID: 10301
-// Function ID: 10302
+// Module ID: 10302
+// Function ID: 10303
 // Name: guild_instant_invites/InstantInviteUtils
-// Dependencies: [5, 2065, 1390, 1085, 1126, 10294, 10302, 8477, 8689, 6886, 4808, 8678, 8492, 4809, 2]
+// Dependencies: [5, 2065, 1390, 1085, 1126, 10295, 10303, 8477, 8689, 6886, 4808, 8678, 8492, 4809, 2]
 // Exports: useInviteActions
 
-// Module 10301 (guild_instant_invites/InstantInviteUtils)
+// Module 10302 (guild_instant_invites/InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
 import getInviteURLDefault from "getInviteURL" /* 8689 */;
-import baseRestDefault from "baseRest" /* 10302 */;
+import baseRestDefault from "baseRest" /* 10303 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -38,7 +38,7 @@ export const useInviteActions = function useInviteActions(invite) {
   _asyncToGenerator = isPrivateResult;
   let obj = {
     label: intl.string(invite(1126).t.RDE0Sc),
-    iconSource: onInviteRevoked(10294).share,
+    iconSource: onInviteRevoked(10295).share,
     action() {
       const tmp = baseRestDefault(() => {
         let formatToPlainStringResult;
@@ -77,7 +77,7 @@ export const useInviteActions = function useInviteActions(invite) {
   const items = [obj, , ];
   let obj2 = {
     label: intl2.string(invite(1126).t.OpuAlK),
-    iconSource: onInviteRevoked(10294).copy,
+    iconSource: onInviteRevoked(10295).copy,
     action() {
       if (c3) {
         const tmpResult = instant_invite_InstantInviteUtils;
@@ -94,7 +94,7 @@ export const useInviteActions = function useInviteActions(invite) {
   items[1] = obj2;
   let obj3 = {
     label: intl3.string(invite(1126).t.v6Yazx),
-    iconSource: onInviteRevoked(10294).revoke,
+    iconSource: onInviteRevoked(10295).revoke,
     variant: "destructive",
     action() {
       return closure_2(...arguments);

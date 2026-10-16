@@ -1,16 +1,16 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17187
+// Function ID: 17188
 // Name: conjureReminderSlot
-// Dependencies: [32, 19, 5081, 17173, 17184, 12999, 558, 576, 17109, 11416, 504, 2]
+// Dependencies: [32, 19, 5081, 17177, 17188, 13004, 558, 576, 17113, 11418, 504, 2]
 // Exports: clampToObserved, hasOpenAsk, markConjureReminderActivity, nextReminderLayers, reminderActivityAt, reminderSlotTurn
 
-// Module 17183 (conjureReminderSlot)
+// Module 17187 (conjureReminderSlot)
 import react2 from "react" /* 576 */;
-import useConjureWindowFocusedDefault from "useConjureWindowFocused" /* 11416 */;
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 17109 */;
-import conjurePublishCard from "conjurePublishCard" /* 17173 */;
-import conjureIdeasOffer from "conjureIdeasOffer" /* 17184 */;
+import useConjureWindowFocusedDefault from "useConjureWindowFocused" /* 11418 */;
+import conjureChatTurns from "conjureChatTurns" /* 13004 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 17113 */;
+import conjurePublishCard from "conjurePublishCard" /* 17177 */;
+import conjureIdeasOffer from "conjureIdeasOffer" /* 17188 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, importDefault, set;
 
-const f128418 = (item) => {
+const f128444 = (item) => {
   const obj = { leaving: true };
   const merged = Object.assign(item);
   return obj;
@@ -286,7 +286,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   let tmp41;
   let tmp45;
   let tmp46;
-  const f128420 = (key) => {
+  const f128446 = (key) => {
     let num;
     const obj = { idleDelayMs: num, eligible: null != react && key.eligible(tmp6) };
     const merged = Object.assign(key);
@@ -329,7 +329,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
               if (obj2.turnSettled(tmp6)) {
                 break;
               } else {
-                let tmp8Result = tmp8(12999);
+                let tmp8Result = tmp8(13004);
                 tmp5 = null;
                 if (!tmp8Result.isStrandedSegment(arr, diff)) {
                   break;
@@ -546,8 +546,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
                       }
                     }
                     react = tmp33;
-                    ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128420), tmp32));
-                    selectConjureReminder(items1.map(f128420), tmp32);
+                    ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128446), tmp32));
+                    selectConjureReminder(items1.map(f128446), tmp32);
                     if ("outdated" === shown) {
                       class T {
                         constructor() {
@@ -999,7 +999,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   let shown;
   let tmp15;
   let tmp16;
-  const f128423 = () => {
+  const f128449 = () => {
     let bound;
     let tmp5;
     const timestamp = Date.now();
@@ -1016,7 +1016,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     return obj;
   };
-  const f128424 = (key) => {
+  const f128450 = (key) => {
     let num;
     const obj = { idleDelayMs: num, eligible: null != obj3 && key.eligible(tmp6) };
     const merged = Object.assign(key);
@@ -1037,10 +1037,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     return obj;
   };
   _require = projectId;
-  let tmp = obj2(17109)(projectId);
+  let tmp = obj2(17113)(projectId);
   let diff = arr.length - 1;
   let tmp4 = null;
-  const tmp2 = obj2(11416)();
+  const tmp2 = obj2(11418)();
   if (0 <= diff) {
     while (true) {
       let tmp5 = arr[diff];
@@ -1058,7 +1058,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
               if (obj.turnSettled(tmp5)) {
                 break;
               } else {
-                let tmp7Result = tmp7(12999);
+                let tmp7Result = tmp7(13004);
                 tmp4 = null;
                 if (!tmp7Result.isStrandedSegment(arr, diff)) {
                   break;
@@ -1100,9 +1100,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     maxResult = max(created_at, num, num2);
   }
-  [tmp15, tmp16] = obj3.useState(f128423);
+  [tmp15, tmp16] = obj3.useState(f128449);
   dependencyMap = tmp16;
-  _slicedToArray(obj3.useState(f128423), 2);
+  _slicedToArray(obj3.useState(f128449), 2);
   const tmp17 = nextReminderClockState(tmp15, obj2, Date.now);
   _slicedToArray = tmp17;
   let tmp18 = null;
@@ -1126,8 +1126,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
   }
   obj3 = tmp18;
-  ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128424), tmp17));
-  selectConjureReminder(items1.map(f128424), tmp17);
+  ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128450), tmp17));
+  selectConjureReminder(items1.map(f128450), tmp17);
   if ("outdated" === shown) {
     if (!tmp17.outdatedShown) {
       const obj5 = { outdatedShown: true };
@@ -1213,7 +1213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   if (key !== key) {
     closure_0 = key;
     const found1 = arr2.filter((key) => key.key !== closure_0);
-    const mapped = found1.map(f128418);
+    const mapped = found1.map(f128444);
     let tmp9 = mapped;
     if (null != key) {
       items1 = [];
@@ -1273,7 +1273,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
 }) : (function useConjureReminderLayers(key) {
   let arr;
   let tmp3;
-  const f128431 = (leaving) => leaving.leaving;
+  const f128457 = (leaving) => leaving.leaving;
   let obj = react;
   [arr, tmp3] = react.useState([]);
   let closure_0 = tmp3;
@@ -1289,7 +1289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   if (key !== key) {
     closure_0 = key;
     const found1 = arr.filter((key) => key.key !== closure_0);
-    const mapped = found1.map(f128418);
+    const mapped = found1.map(f128444);
     let tmp7 = mapped;
     if (null != key) {
       items = [];
@@ -1299,8 +1299,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     tmp3(tmp7);
   }
-  items1 = [arr.some(f128431), arr];
-  const someResult = arr.some(f128431);
+  items1 = [arr.some(f128457), arr];
+  const someResult = arr.some(f128457);
   const effect = obj.useEffect(() => {
     if (closure_1) {
       const _setTimeout = setTimeout;
@@ -1434,7 +1434,7 @@ function reminderSlotTurn(message) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(12999);
+                let tmp4Result = tmp4(13004);
                 if (!tmp4Result.isStrandedSegment(message, diff)) {
                   return null;
                 }
@@ -1483,7 +1483,7 @@ function clampToObserved(arg0, arg1) {
 function nextReminderLayers(arr, key) {
   let closure_0 = key;
   const found = arr.filter((key) => key.key !== closure_0);
-  const mapped = found.map(f128418);
+  const mapped = found.map(f128444);
   let tmp3 = mapped;
   if (null != key) {
     items = [];

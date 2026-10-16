@@ -1,9 +1,9 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17399
+// Function ID: 17400
 // Name: usePlaceholderStyles
 // Dependencies: [5081, 9308, 558, 576, 1497, 504, 4850, 5093, 1200, 2]
 
-// Module 17395 (usePlaceholderStyles)
+// Module 17399 (usePlaceholderStyles)
 import react from "react" /* 576 */;
 import native from "native" /* 1200 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;

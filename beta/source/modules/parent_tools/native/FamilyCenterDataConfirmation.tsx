@@ -1,9 +1,9 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11536
+// Function ID: 11537
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5088, 6180, 6265, 5377, 1126, 2568, 11535, 5032, 9239, 8211, 11536, 7553, 11538, 9570, 5051, 11539, 7092, 6208, 2]
+// Dependencies: [19, 21, 558, 576, 5088, 6180, 6265, 5377, 1126, 2568, 11537, 5032, 9239, 8211, 11538, 7553, 11540, 9571, 5051, 11541, 7092, 6208, 2]
 
-// Module 11534 (FamilyCenterDataConfirmation)
+// Module 11536 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -26,11 +26,11 @@ const SettingsIcon = tmp(7092);
 const CreditCardIcon = tmp(7553);
 const ForumIcon = tmp(8211);
 const ServerIcon = tmp(9239);
-const FlagIcon = tmp(9570);
-const useAgeSpecificText12 = tmp(11535);
-const PhoneIcon = tmp(11536);
-const GiftIcon = tmp(11538);
-const PiggyBankIcon = tmp(11539);
+const FlagIcon = tmp(9571);
+const useAgeSpecificText12 = tmp(11537);
+const PhoneIcon = tmp(11538);
+const GiftIcon = tmp(11540);
+const PiggyBankIcon = tmp(11541);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {

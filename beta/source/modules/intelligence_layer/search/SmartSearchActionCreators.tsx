@@ -1,17 +1,17 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12077
+// Function ID: 12078
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4760, 12040, 12037, 1085, 12039, 12076, 12077, 12060, 584, 1295, 12041, 5434, 2]
+// Dependencies: [5, 4760, 12042, 12039, 1085, 12041, 12078, 12079, 12062, 584, 1295, 12043, 5434, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 12075 (SmartSearchActionCreators)
+// Module 12077 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12040 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12060 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12042 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12062 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12037 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12039 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {

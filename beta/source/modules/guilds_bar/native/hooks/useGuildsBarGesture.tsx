@@ -1,10 +1,10 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16746
+// Function ID: 16747
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2087, 5963, 16742, 16739, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16457, 4818, 587, 4733, 11577, 1272, 6098, 5260, 9359, 1382, 1631, 5362, 16743, 16744, 9359, 15374, 6335, 2]
+// Dependencies: [5, 19, 17, 2087, 5963, 16747, 16744, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16462, 4818, 587, 4733, 11579, 1272, 6098, 5260, 9359, 1382, 1631, 5362, 16748, 16749, 9359, 15379, 6335, 2]
 // Exports: default
 
-// Module 16741 (useGuildsBarGesture)
+// Module 16746 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1126 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
@@ -16,12 +16,12 @@ import SortedGuildStore2 from "SortedGuildStore" /* 5963 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import FastList from "FastList" /* 6761 */;
 import ContextMenuState from "ContextMenuState" /* 9359 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16742 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16747 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16744 */;
 import "ReanimatedRexport";
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4850 */;
 import debounce from "debounce" /* 551 */;
@@ -687,7 +687,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "pos", overSpecs: "sk" });
+    setStateShallow({ dragSpecs: "top", overSpecs: "code" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

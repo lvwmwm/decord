@@ -1,16 +1,16 @@
-// Module ID: 12206
-// Function ID: 12207
+// Module ID: 12211
+// Function ID: 12212
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 2083, 2125, 2119, 21, 5092, 587, 558, 576, 1126, 8598, 504, 10766, 1388, 5088, 6185, 1200, 12205, 8212, 8619, 8617, 11018, 2]
+// Dependencies: [19, 17, 2083, 2125, 2119, 21, 5092, 587, 558, 576, 1126, 8598, 504, 10767, 1388, 5088, 6185, 1200, 12210, 8212, 8619, 8617, 11020, 2]
 
-// Module 12206 (ChannelAccessInfo)
+// Module 12211 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8598 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10767 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
                       }
                       const _Symbol2 = Symbol;
                       if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                        let obj2 = { source: channel(11018), size: tmp(1200).Icon.Sizes.SMALL };
+                        let obj2 = { source: channel(11020), size: tmp(1200).Icon.Sizes.SMALL };
                         const Icon = tmp(1200).Icon;
                         const tmp47 = closure_8(Icon, obj2);
                         cResult[34] = tmp47;
@@ -241,7 +241,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
           const MEMBERS = constants.MEMBERS;
           items5 = [, ];
           const length = existingMembers.length;
-          const tmp57 = channel(12205);
+          const tmp57 = channel(12210);
           items5[0] = tmp32(MEMBERS, length, tmp57, guild(8212).GroupIcon);
           const ROLES = constants.ROLES;
           const length2 = stateFromStoresArray.length;
@@ -485,7 +485,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(12205);
+    channel(12210);
     items5 = [renderCounts(MEMBERS, length, 0, tmp2(8212).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
@@ -494,7 +494,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(11018), size: guild(1200).Icon.Sizes.SMALL };
+  const obj11 = { source: channel(11020), size: guild(1200).Icon.Sizes.SMALL };
   const Icon = tmp2(1200).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);

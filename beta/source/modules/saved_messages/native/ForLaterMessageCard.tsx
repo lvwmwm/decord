@@ -1,13 +1,13 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12658
+// Function ID: 12659
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4750, 1085, 21, 5092, 587, 558, 576, 6290, 1126, 5088, 7569, 5050, 12654, 6182, 12658, 5934, 1265, 9677, 4702, 12659, 504, 12660, 12669, 12671, 12672, 2]
+// Dependencies: [5, 19, 17, 4750, 1085, 21, 5092, 587, 558, 576, 6290, 1126, 5088, 7569, 5050, 12659, 6182, 12663, 5934, 1265, 9678, 4702, 12664, 504, 12665, 12674, 12676, 12677, 2]
 
-// Module 12653 (ForLaterMessageCard)
+// Module 12658 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AssetRegistryDefault from "AssetRegistry" /* 5050 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 12654 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 12659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
@@ -201,7 +201,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(31);
   savedMessage = savedMessage.savedMessage;
   let tmp4 = closure_12();
-  let obj2 = savedMessage(12658);
+  let obj2 = savedMessage(12663);
   const savedMessageChannel = obj2.useSavedMessageChannel(savedMessage);
   if (cResult[0] === savedMessageChannel) {
     let tmp13;
@@ -476,7 +476,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_12();
   let tmp2 = savedMessage;
   let tmp3 = dependencyMap;
-  let obj = savedMessage(12658);
+  let obj = savedMessage(12663);
   let savedMessageChannel = obj.useSavedMessageChannel(savedMessage);
   const items = [savedMessage, savedMessageChannel];
   const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
@@ -635,7 +635,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp6 = closure_10;
         const tmp7 = savedMessageChannel;
         let obj3 = { savedMessage, jumpToMessage: callback, throttledNow };
-        let tmp8 = closure_10(savedMessageChannel(12660), obj3);
+        let tmp8 = closure_10(savedMessageChannel(12665), obj3);
         let tmp9 = null != savedMessage.saveData.dueAt;
         let tmp10 = closure_11;
         let obj4 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: callback, children: items2 };
@@ -643,12 +643,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const Card = tmp2(6182).Card;
         if (tmp9) {
           let obj5 = { savedMessage, throttledNow, actions: tmp8 };
-          tmp6Result = tmp6(tmp2(12669).ForLaterCardReminderHeader, obj5);
+          tmp6Result = tmp6(tmp2(12674).ForLaterCardReminderHeader, obj5);
         }
         items2 = [tmp6Result, , , ];
         let obj6 = { channel: savedMessageChannel, actions: tmp12 };
         tmp12 = null;
-        const ForLaterCardHeader = tmp2(12671).ForLaterCardHeader;
+        const ForLaterCardHeader = tmp2(12676).ForLaterCardHeader;
         if (!tmp9) {
           tmp12 = tmp8;
         }
@@ -656,7 +656,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let obj7 = { style: tmp.cardDivider };
         items2[2] = tmp6(View, obj7);
         const obj8 = { message: savedMessage.message, lineClamp: 2, maxHeight: 250 };
-        items2[3] = tmp6(tmp2(12672).ForLaterMessageRow, obj8);
+        items2[3] = tmp6(tmp2(12677).ForLaterMessageRow, obj8);
         return tmp10(Card, obj4);
       }
     }

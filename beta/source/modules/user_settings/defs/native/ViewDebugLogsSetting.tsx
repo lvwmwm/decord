@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15868
+// Function ID: 15869
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9631, 6895, 6839, 1126, 15864, 15866, 5051, 6899, 15869, 1382, 10348, 15870, 10663, 14064, 2041, 2]
+// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9632, 6895, 6839, 1126, 15869, 15871, 5051, 6899, 15874, 1382, 10349, 15875, 10664, 14069, 2041, 2]
 
-// Module 15863 (ViewDebugLogsSetting)
+// Module 15868 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
@@ -16,16 +16,16 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheetRow from "ActionSheetRow" /* 6895 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9631 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10348 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14064 */;
-import WrenchIcon from "WrenchIcon" /* 15864 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15866 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15869 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15870 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9632 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10349 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14069 */;
+import WrenchIcon from "WrenchIcon" /* 15869 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15871 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15874 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15875 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

@@ -1,10 +1,10 @@
-// Module ID: 11338
-// Function ID: 11339
+// Module ID: 11340
+// Function ID: 11341
 // Name: openChannelCallModalForChannelId
 // Dependencies: [2065, 7488, 7477, 2]
 // Exports: default
 
-// Module 11338 (openChannelCallModalForChannelId)
+// Module 11340 (openChannelCallModalForChannelId)
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

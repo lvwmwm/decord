@@ -1,11 +1,11 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17317
+// Function ID: 17318
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 2087, 21, 558, 576, 504, 5379, 5377, 5088, 1126, 3849, 6159, 17173, 17109, 2]
+// Dependencies: [19, 2087, 21, 558, 576, 504, 5379, 5377, 5088, 1126, 3849, 6159, 17177, 17113, 2]
 
-// Module 17313 (ConjurePublishCtaCard)
+// Module 17317 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 17109 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 17113 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const conjurePublishCard = tmp(17173);
+const conjurePublishCard = tmp(17177);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishCta(publish) {
@@ -86,7 +86,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
             items1[1] = closure_4(tmp16, obj4);
             const obj5 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult2.publishCardServerName(stateFromStores.name) };
             const Text2 = tmp(5088).Text;
-            tmpResult2 = tmp(17173);
+            tmpResult2 = tmp(17177);
             items1[2] = closure_4(Text2, obj5);
             tmp12 = closure_5(Stack, obj2);
           }
@@ -163,7 +163,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
     items2[1] = closure_4(tmp8, obj5);
     const obj6 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: tmpResult.publishCardServerName(stateFromStores.name) };
     const Text2 = tmp(5088).Text;
-    tmpResult = tmp(17173);
+    tmpResult = tmp(17177);
     items2[2] = closure_4(Text2, obj6);
     tmp4Result = tmp4(Stack2, obj3);
   }

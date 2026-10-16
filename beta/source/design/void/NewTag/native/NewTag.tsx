@@ -1,9 +1,9 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14408
+// Function ID: 14409
 // Name: NewTag
 // Dependencies: [109, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 5088, 5391, 2]
 
-// Module 14403 (NewTag)
+// Module 14408 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

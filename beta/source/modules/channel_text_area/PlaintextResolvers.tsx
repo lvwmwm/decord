@@ -1,10 +1,10 @@
-// Module ID: 9801
-// Function ID: 9802
+// Module ID: 9802
+// Function ID: 9803
 // Name: PlaintextResolvers
 // Dependencies: [32, 5987, 6034, 2065, 4748, 2125, 2119, 2087, 4750, 4760, 1390, 1085, 1393, 7369, 5421, 11, 5970, 4764, 4768, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9801 (PlaintextResolvers)
+// Module 9802 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;

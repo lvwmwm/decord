@@ -1,13 +1,13 @@
-// Module ID: 10365
-// Function ID: 10366
+// Module ID: 10366
+// Function ID: 10367
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6061, 2065, 2116, 1085, 2072, 558, 576, 1403, 10366, 573, 6925, 2]
+// Dependencies: [6061, 2065, 2116, 1085, 2072, 558, 576, 1403, 10367, 573, 6925, 2]
 
-// Module 10365 (useIsSelectedResourceChannel)
+// Module 10366 (useIsSelectedResourceChannel)
 import Constants from "Constants" /* 1085 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10366 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10367 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6061 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;

@@ -1,10 +1,10 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9770
+// Function ID: 9771
 // Name: Sticker
-// Dependencies: [19, 17, 1205, 21, 5750, 5749, 558, 576, 1126, 8013, 9770, 6157, 4969, 6821, 6822, 2]
+// Dependencies: [19, 17, 1205, 21, 5750, 5749, 558, 576, 1126, 8013, 9771, 6157, 4969, 6821, 6822, 2]
 // Exports: getStickerAssetUrl
 
-// Module 9769 (Sticker)
+// Module 9770 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import StickersUtils from "StickersUtils" /* 5749 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import NativeLottieViewDefault from "NativeLottieView" /* 8013 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 9770 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 9771 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

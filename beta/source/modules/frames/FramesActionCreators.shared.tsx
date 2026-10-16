@@ -1,19 +1,19 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10807
+// Function ID: 10808
 // Name: launchFrame
-// Dependencies: [5, 10807, 10802, 6067, 10811, 584, 10813, 10810, 10814, 10820, 10821, 2]
+// Dependencies: [5, 10808, 10803, 6067, 10812, 584, 10814, 10811, 10815, 10821, 10822, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 10806 (launchFrame)
+// Module 10807 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10811 */;
-import createProxyTicket from "createProxyTicket" /* 10813 */;
-import leaveFrame from "leaveFrame" /* 10821 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10811 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10812 */;
+import createProxyTicket from "createProxyTicket" /* 10814 */;
+import leaveFrame from "leaveFrame" /* 10822 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10807 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
+import FramesStore from "FramesStore" /* 10808 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10821);
+        const tmp4Result = tmp4(10822);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

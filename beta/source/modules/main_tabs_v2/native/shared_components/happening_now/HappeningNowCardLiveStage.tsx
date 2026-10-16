@@ -1,9 +1,9 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16511
+// Function ID: 16512
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15589, 1085, 21, 5092, 587, 1265, 11338, 2000, 16507, 16508, 16509, 15590, 8220, 1200, 16518, 558, 576, 5421, 1126, 5409, 2]
+// Dependencies: [19, 17, 15594, 1085, 21, 5092, 587, 1265, 11340, 2000, 16512, 16513, 16514, 15595, 8220, 1200, 16523, 558, 576, 5421, 1126, 5409, 2]
 
-// Module 16506 (HappeningNowCardLiveStage)
+// Module 16511 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,10 +13,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import HappeningNowCard from "HappeningNowCard" /* 15590 */;
-import useLiveStageData from "useLiveStageData" /* 16507 */;
+import HappeningNowCard from "HappeningNowCard" /* 15595 */;
+import useLiveStageData from "useLiveStageData" /* 16512 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15594 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -181,7 +181,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(11338, dependencyMap.paths);
+    const promise = asyncRequire(11340, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });

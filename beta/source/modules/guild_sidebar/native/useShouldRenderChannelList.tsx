@@ -1,9 +1,9 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16714
+// Function ID: 16715
 // Name: useShouldRenderChannelList
 // Dependencies: [32, 19, 7193, 5757, 1085, 558, 576, 4976, 4977, 1121, 2]
 
-// Module 16709 (useShouldRenderChannelList)
+// Module 16714 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;

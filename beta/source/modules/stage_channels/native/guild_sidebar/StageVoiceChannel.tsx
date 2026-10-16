@@ -1,9 +1,9 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16680
+// Function ID: 16681
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 7245, 4750, 6035, 5966, 5116, 2070, 1085, 11760, 21, 1126, 5092, 587, 558, 576, 5895, 504, 16676, 5956, 5950, 8183, 6145, 1894, 7477, 10283, 5421, 10358, 16666, 16555, 16565, 2]
+// Dependencies: [19, 17, 7245, 4750, 6035, 5966, 5116, 2070, 1085, 11762, 21, 1126, 5092, 587, 558, 576, 5895, 504, 16681, 5956, 5950, 8183, 6145, 1894, 7477, 10284, 5421, 10359, 16671, 16560, 16570, 2]
 
-// Module 16675 (StageVoiceChannel)
+// Module 16680 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,11 +14,11 @@ import StageMediaHooks from "StageMediaHooks" /* 5895 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6145 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8183 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
-import ChannelItemDefault from "ChannelItem" /* 16565 */;
-import ChannelInfoDefault from "ChannelInfo" /* 16666 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 16676 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
+import ChannelItemDefault from "ChannelItem" /* 16570 */;
+import ChannelInfoDefault from "ChannelInfo" /* 16671 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 16681 */;
 import react from "react" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7245 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
@@ -206,7 +206,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   }
   const tmp21 = useChannelNameDefault(channel, false);
-  const tmpResult4 = tmp(10358);
+  const tmpResult4 = tmp(10359);
   const isConnectedToVoiceChannel = tmpResult4.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     class N {
@@ -303,7 +303,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items3);
   let topic;
   const tmp10 = useChannelNameDefault(channel, false);
-  const tmp2Result2 = channel(10358);
+  const tmp2Result2 = channel(10359);
   const isConnectedToVoiceChannel = tmp2Result2.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     topic = stageInstance.topic;

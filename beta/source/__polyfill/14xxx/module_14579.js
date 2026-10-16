@@ -1,27 +1,14 @@
 // Module ID: 14579
 // Function ID: 14580
-// Dependencies: [14577, 14551]
+// Dependencies: [14563, 14580]
 
 // Module 14579
-import _mod14551 from "module_14551" /* 14551 */;
-import _mod14577 from "module_14577" /* 14577 */;
+import _mod14563 from "module_14563" /* 14563 */;
+import _mod14580 from "module_14580" /* 14580 */;
 
+let closure_2 = _mod14563({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod14580(arg0), arg1);
+});
 
-export default function(arg0, arg1) {
-  let tmp3;
-  if (arguments.length < 2) {
-    const tmp7 = _mod14551[arg0];
-    let tmp8;
-    if (_mod14577(tmp7)) {
-      tmp8 = tmp7;
-    }
-    tmp3 = tmp8;
-  } else {
-    tmp3 = _mod14551[arg0];
-    const tmp = require;
-    if (tmp3) {
-      tmp3 = tmp(14551)[arg0][arg1];
-    }
-  }
-  return tmp3;
-};
+export default tmp;

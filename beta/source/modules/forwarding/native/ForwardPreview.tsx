@@ -1,9 +1,9 @@
-// Module ID: 11581
-// Function ID: 11582
+// Module ID: 11583
+// Function ID: 11584
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 8259, 7742, 9369, 11582, 5459, 11583, 12, 1126, 11585, 8925, 8210, 10023, 1496, 6157, 9012, 5088, 11587, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 8259, 7742, 9369, 11584, 5459, 11585, 12, 1126, 11587, 8925, 8210, 10024, 1496, 6157, 9012, 5088, 11589, 2]
 
-// Module 11581 (ForwardPreview)
+// Module 11583 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -19,8 +19,8 @@ import RowGeneratorTypes from "RowGeneratorTypes" /* 8259 */;
 import CirclePlayIcon2 from "CirclePlayIcon" /* 8925 */;
 import ClipView from "ClipView" /* 9012 */;
 import ChatItemDefault from "ChatItem" /* 9369 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11582 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11587 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11584 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11589 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -901,7 +901,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
         const intl4 = tmp2(1126).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1126).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(11585).ImagesIcon;
+        AttachmentIcon = tmp2(11587).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -966,7 +966,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       if (1 === num) {
         ImagesIcon = tmp2(8210).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11585).ImagesIcon;
+        ImagesIcon = tmp2(11587).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -974,7 +974,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl = tmp2(1126).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10023).AttachmentIcon;
+      AttachmentIcon = tmp2(10024).AttachmentIcon;
     }
   } else {
     tmp6 = null;

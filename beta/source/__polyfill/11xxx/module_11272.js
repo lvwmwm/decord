@@ -1,83 +1,39 @@
 // Module ID: 11272
 // Function ID: 11273
-// Dependencies: [11232, 11265]
-// Exports: makePromiseBuffer
+// Dependencies: [11238, 11210, 11237]
+// Exports: initAndBind, setCurrentClient
 
 // Module 11272
-import _mod11232 from "module_11232" /* 11232 */;
+import _mod11210 from "module_11210" /* 11210 */;
+import _mod11237 from "module_11237" /* 11237 */;
+import _mod11238 from "module_11238" /* 11238 */;
 
-let diff;
 
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod11232;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod11238.DEBUG_BUILD;
+    const obj = _mod11210;
+    if (DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
       });
-      return syncPromise;
     }
-  };
-  return obj;
-}
+  }
+  const obj2 = _mod11237;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod11237;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
+};
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const obj = _mod11237;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
+};

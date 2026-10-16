@@ -1,15 +1,15 @@
-// Module ID: 13714
-// Function ID: 13715
+// Module ID: 13719
+// Function ID: 13720
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 13715, 1273, 10095, 8967, 13718, 6157, 5088, 4806, 9777, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 13720, 1273, 10096, 8967, 13723, 6157, 5088, 4806, 9778, 2]
 
-// Module 13714 (MarketingPageBannerTile)
+// Module 13719 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9777 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9778 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -282,7 +282,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(13715).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(13720).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -294,14 +294,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
       value = iter.value;
     }
   }
-  const obj2 = { type: helpArticleLinkProps(1273).ImpressionTypes.VIEW, name: helpArticleLinkProps(1273).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10095).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
+  const obj2 = { type: helpArticleLinkProps(1273).ImpressionTypes.VIEW, name: helpArticleLinkProps(1273).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10096).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
-  ({ component_type: helpArticleLinkProps(10095).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
+  ({ component_type: helpArticleLinkProps(10096).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13718);
+  const tmp4Result = helpArticleLinkProps(13723);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13718);
+  const tmp4Result2 = helpArticleLinkProps(13723);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_5(View, obj5) };
   items = [tmp.container, style];

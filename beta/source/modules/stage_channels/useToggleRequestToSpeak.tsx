@@ -1,9 +1,9 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11010
+// Function ID: 11011
 // Name: useToggleRequestToSpeak
 // Dependencies: [32, 19, 502, 558, 576, 504, 5416, 5949, 7493, 5918, 7483, 2]
 
-// Module 11008 (useToggleRequestToSpeak)
+// Module 11010 (useToggleRequestToSpeak)
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;

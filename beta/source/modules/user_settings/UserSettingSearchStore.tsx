@@ -1,9 +1,9 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 14972
+// Function ID: 14973
 // Name: UserSettingSearchStore
 // Dependencies: [4989, 2]
 
-// Module 14967 (UserSettingSearchStore)
+// Module 14972 (UserSettingSearchStore)
 import ZustandStore from "ZustandStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 

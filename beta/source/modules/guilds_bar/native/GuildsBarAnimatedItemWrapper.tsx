@@ -1,9 +1,9 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 16756
+// Function ID: 16757
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5388, 16739, 21, 5092, 587, 558, 576, 4818, 4827, 5378, 4850, 6762, 16752, 16457, 16460, 1126, 4828, 16753, 6162, 9012, 2]
+// Dependencies: [19, 5388, 16744, 21, 5092, 587, 558, 576, 4818, 4827, 5378, 4850, 6762, 16757, 16462, 16465, 1126, 4828, 16758, 6162, 9012, 2]
 
-// Module 16751 (GuildsBarAnimatedItemWrapper)
+// Module 16756 (GuildsBarAnimatedItemWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import spring from "spring" /* 5378 */;
 import styleConstants from "styleConstants" /* 5388 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16744 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                     obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                     obj.animations = obj1;
                     obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                    obj.callback = function callback() { /* body not rendered: F148497 */ };
+                    obj.callback = function callback() { /* body not rendered: F148531 */ };
                     return obj;
                   }
                 }
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                   obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                   obj.animations = obj1;
                   obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                  obj.callback = function callback() { /* body not rendered: F148497 */ };
+                  obj.callback = function callback() { /* body not rendered: F148531 */ };
                   return obj;
                 }
               }

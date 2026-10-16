@@ -1,7 +1,16 @@
 // Module ID: 13952
 // Function ID: 13953
-// Dependencies: []
+// Dependencies: [13953, 13954, 13962, 13966]
 
 // Module 13952
+import _mod13966 from "module_13966" /* 13966 */;
+import assign_mod from "module_13953" /* 13953 */;
+import Deflate from "Deflate" /* 13954 */;
+import Inflate from "Inflate" /* 13962 */;
 
-export default { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };
+const obj = {};
+let assign = assign_mod;
+assign = assign.assign;
+assign(obj, Deflate, Inflate, _mod13966);
+
+export default obj;

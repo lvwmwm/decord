@@ -1,7 +1,7 @@
 // Module ID: 9380
 // Function ID: 9381
 // Name: reactions/ReactionUtils
-// Dependencies: [2065, 5432, 4939, 1390, 1085, 1393, 21, 4762, 5057, 5058, 7895, 4769, 5056, 9381, 2000, 4985, 9422, 7896, 5107, 9579, 9591, 9592, 9593, 8956, 9403, 5299, 1126, 5088, 2]
+// Dependencies: [2065, 5432, 4939, 1390, 1085, 1393, 21, 4762, 5057, 5058, 7895, 4769, 5056, 9381, 2000, 4985, 9422, 7896, 5107, 9580, 9592, 9593, 9594, 8956, 9403, 5299, 1126, 5088, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
 // Module 9380 (reactions/ReactionUtils)
@@ -19,8 +19,8 @@ import ReactionActionCreators from "ReactionActionCreators" /* 7895 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
 import ReactionIcon from "ReactionIcon" /* 8956 */;
 import SuperReactionIcon from "SuperReactionIcon" /* 9403 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9592 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9593 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9593 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9594 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
@@ -174,7 +174,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj3 = { messageId, channelId, emoji };
     ActionSheetActionCreatorsDefault;
-    const tmp21 = asyncRequire(9579, dependencyMap.paths);
+    const tmp21 = asyncRequire(9580, dependencyMap.paths);
     const merged2 = Object.assign(merged);
     openLazy(tmp21, "MessageReactions", obj3);
   }
@@ -183,7 +183,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(asyncRequire(9591, dependencyMap.paths), "MessagePreviewReactions", obj2);
+  obj.openLazy(asyncRequire(9592, dependencyMap.paths), "MessagePreviewReactions", obj2);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj2;

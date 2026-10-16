@@ -1,9 +1,9 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10768
+// Function ID: 10769
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10768, 8598, 5056, 9692, 10769, 5088, 1126, 8616, 6185, 7092, 6839, 8577, 10766, 10331, 7563, 6307, 6840, 2]
+// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10769, 8598, 5056, 9693, 10770, 5088, 1126, 8616, 6185, 7092, 6839, 8577, 10767, 10332, 7563, 6307, 6840, 2]
 
-// Module 10767 (ChannelMembersActionSheet)
+// Module 10768 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,11 +16,11 @@ import useChannelNameDefault from "useChannelName" /* 5421 */;
 import SettingsIcon from "SettingsIcon" /* 7092 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8598 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8616 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10331 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10768 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10769 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9693 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10332 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10767 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10769 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10770 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -167,7 +167,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
   const tmpResult7 = channelId(1503);
   navigation = tmpResult7.useNavigation();
   tmp5(5421)(stateFromStores);
-  const tmpResult8 = channelId(10768);
+  const tmpResult8 = channelId(10769);
   const appChannelBotUserId = tmpResult8.useAppChannelBotUserId(stateFromStores);
   if (null != stateFromStores) {
     class B {

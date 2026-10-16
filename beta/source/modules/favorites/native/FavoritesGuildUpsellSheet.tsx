@@ -1,17 +1,17 @@
-// Module ID: 10317
-// Function ID: 10318
+// Module ID: 10318
+// Function ID: 10319
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 2078, 1085, 21, 558, 576, 10314, 10318, 5056, 10316, 1126, 3442, 10319, 5379, 9389, 9390, 10323, 1112, 5958, 10324, 2]
+// Dependencies: [19, 2078, 1085, 21, 558, 576, 10315, 10319, 5056, 10317, 1126, 3442, 10320, 5379, 9389, 9390, 10324, 1112, 5958, 10325, 2]
 
-// Module 10317 (FavoritesGuildUpsellSheet)
+// Module 10318 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import FavoritesConstants from "FavoritesConstants" /* 2078 */;
 import _modDef3442 from "module_3442" /* 3442 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10318 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10323 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10319 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10324 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   const cResult = obj.c(22);
   ({ limit, source, variant } = arg0);
   if (undefined === limit) {
-    limit = tmp(10314).FREE_FAVORITE_LIMIT;
+    limit = tmp(10315).FREE_FAVORITE_LIMIT;
   }
   let str = "channel_context_menu";
   if (undefined !== source) {
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   if (undefined !== variant) {
     str2 = variant;
   }
-  analyticsLocations = first(10318)(str).analyticsLocations;
+  analyticsLocations = first(10319)(str).analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
       const obj = first(dependencyMap[8]);
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = closure_6(analyticsLocations(10319).FavoritesSpotIllustration, {});
+      const tmp15 = closure_6(analyticsLocations(10320).FavoritesSpotIllustration, {});
       cResult[6] = tmp15;
       tmp13 = tmp15;
     } else {
@@ -166,7 +166,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
         }
       }
       const obj4 = { title: tmp7, description: tmp10, illustration: tmp13, actions: tmp28 };
-      const tmp33 = closure_6(analyticsLocations(10324).PromoSheet, obj4);
+      const tmp33 = closure_6(analyticsLocations(10325).PromoSheet, obj4);
       cResult[18] = tmp28;
       cResult[19] = tmp7;
       cResult[20] = tmp10;
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10314).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10315).FREE_FAVORITE_LIMIT;
   }
   let str = limit.source;
   if (str === undefined) {
@@ -217,11 +217,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     const obj = closure_1(dependencyMap[8]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[9]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  const PromoSheet = analyticsLocations(10324).PromoSheet;
+  const PromoSheet = analyticsLocations(10325).PromoSheet;
   const intl = analyticsLocations(1126).intl;
   const string = intl.string;
   const tmp8 = _modDef3442;
-  let obj = { title: string(tmp5 ? tmp8.hINqUs : tmp8.aA0vO8), description: formatToPlainStringResult, illustration: closure_6(analyticsLocations(10319).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj4) };
+  let obj = { title: string(tmp5 ? tmp8.hINqUs : tmp8.aA0vO8), description: formatToPlainStringResult, illustration: closure_6(analyticsLocations(10320).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj4) };
   const intl2 = tmp7(1126).intl;
   if ("limit_reached" === str2) {
     let obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };

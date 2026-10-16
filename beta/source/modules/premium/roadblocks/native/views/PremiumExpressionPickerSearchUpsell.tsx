@@ -1,9 +1,9 @@
-// Module ID: 9516
-// Function ID: 9517
+// Module ID: 9517
+// Function ID: 9518
 // Name: PremiumExpressionPickerSearchUpsell
 // Dependencies: [19, 17, 21, 587, 5092, 558, 576, 5088, 6185, 2]
 
-// Module 9516 (PremiumExpressionPickerSearchUpsell)
+// Module 9517 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

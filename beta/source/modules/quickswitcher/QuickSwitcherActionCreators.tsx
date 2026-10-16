@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11573
+// Function ID: 11574
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 5971, 2069, 2065, 7113, 2116, 4939, 8694, 1085, 2072, 1087, 8695, 1265, 7024, 584, 7053, 5103, 5106, 5889, 7015, 10677, 8880, 8874, 6950, 11572, 7258, 6879, 11573, 8492, 2]
+// Dependencies: [5, 32, 5971, 2069, 2065, 7113, 2116, 4939, 8694, 1085, 2072, 1087, 8695, 1265, 7024, 584, 7053, 5103, 5106, 5889, 7015, 10678, 8880, 8874, 6950, 11574, 7258, 6879, 11575, 8492, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 11571 (QuickSwitcherActionCreators)
+// Module 11573 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -24,8 +24,8 @@ import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 
 import _mod8695 from "module_8695" /* 8695 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8880 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10677 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 11572 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10678 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 11574 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -536,7 +536,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
     let obj6 = DispatcherDefault;
     let obj4 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
     obj6.dispatch(obj4);
-    const tmpResult = tmp(11573);
+    const tmpResult = tmp(11575);
     tmpResult.openChannelTabActive(id, guildId);
   }
 };

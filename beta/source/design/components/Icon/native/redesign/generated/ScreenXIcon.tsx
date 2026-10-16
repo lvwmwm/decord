@@ -1,14 +1,14 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 17932
+// Function ID: 17933
 // Name: ScreenXIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11063, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11065, 4817, 2]
 
-// Module 17928 (ScreenXIcon)
+// Module 17932 (ScreenXIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 11063 */;
+import AssetRegistry from "AssetRegistry" /* 11065 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 18218
-// Function ID: 18219
+// Module ID: 18222
+// Function ID: 18223
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7254, 7255, 1085, 2062, 21, 2049, 7256, 4977, 7094, 5937, 5092, 587, 1631, 1126, 2568, 1265, 584, 2050, 5056, 5934, 18219, 2000, 6840, 5377, 18220, 5088, 5379, 2]
+// Dependencies: [19, 17, 7254, 7255, 1085, 2062, 21, 2049, 7256, 4977, 7094, 5937, 5092, 587, 1631, 1126, 2568, 1265, 584, 2050, 5056, 5934, 18223, 2000, 6840, 5377, 18224, 5088, 5379, 2]
 // Exports: default
 
-// Module 18218 (ParentalConsentWarningModal)
+// Module 18222 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(18219, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(18223, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;

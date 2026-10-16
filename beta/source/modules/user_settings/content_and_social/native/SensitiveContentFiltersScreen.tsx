@@ -1,22 +1,22 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15096
+// Function ID: 15097
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 7988, 21, 1126, 558, 576, 15092, 10663, 14965, 2]
+// Dependencies: [19, 7988, 21, 1126, 558, 576, 15097, 10664, 14970, 2]
 
-// Module 15091 (SensitiveContentFiltersScreen)
+// Module 15096 (SensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14965 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15092 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15097 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingsScreenNotices = tmp(15092);
+const SettingsScreenNotices = tmp(15097);
 function getContentCategory() {
   let intl;
   let intl2;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: items, ListHeaderComponent };
-    const createList = tmp2(10663).createList;
+    const createList = tmp2(10664).createList;
     items = [];
     SettingBuilders;
     HermesBuiltin.arraySpread(items, getContentCategory(), 0);

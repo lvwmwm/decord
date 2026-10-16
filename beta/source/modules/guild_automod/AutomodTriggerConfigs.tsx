@@ -1,14 +1,14 @@
-// Module ID: 18304
-// Function ID: 18305
+// Module ID: 18308
+// Function ID: 18309
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11450, 1126, 558, 576, 17596, 18305, 2]
+// Dependencies: [19, 11452, 1126, 558, 576, 17600, 18309, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, validateRuleByTriggerConfigOrThrow
 
-// Module 18304 (AutomodTriggerConfigs)
+// Module 18308 (AutomodTriggerConfigs)
 import intl2 from "intl" /* 1126 */;
-import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 17596 */;
+import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 17600 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11450 */;
+import Constants from "Constants" /* 11452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

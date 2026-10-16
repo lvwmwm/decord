@@ -1,9 +1,9 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15496
+// Function ID: 15497
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5972, 21, 558, 576, 15459, 15400, 15367, 15374, 9197, 1126, 12967, 7408, 9170, 9173, 5979, 7411, 5975, 15283, 15285, 9199, 15477, 9190, 15492, 7569, 13576, 2]
+// Dependencies: [19, 5972, 21, 558, 576, 15464, 15405, 15372, 15379, 9197, 1126, 12972, 7408, 9170, 9173, 5979, 7411, 5975, 15288, 15290, 9199, 15482, 9190, 15497, 7569, 13581, 2]
 
-// Module 15491 (QuestDockBountyBody)
+// Module 15496 (QuestDockBountyBody)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
@@ -14,9 +14,9 @@ import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import captureAdUserAction from "captureAdUserAction" /* 9170 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15283 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15285 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12972 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15288 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15290 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

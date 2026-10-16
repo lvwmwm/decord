@@ -1,9 +1,9 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 15924
+// Function ID: 15925
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 5092, 587, 558, 576, 6180, 2091, 4809, 2108, 504, 1504, 6665, 6738, 10227, 10225, 6739, 5056, 5088, 6744, 6839, 6895, 6899, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 5092, 587, 558, 576, 6180, 2091, 4809, 2108, 504, 1504, 6665, 6738, 10228, 10226, 6739, 5056, 5088, 6744, 6839, 6895, 6899, 2]
 
-// Module 15919 (DevToolsDataStorageScreen)
+// Module 15924 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -19,8 +19,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import useScaledRowHeightDefault from "useScaledRowHeight" /* 6738 */;
 import FastestListDefault from "FastestList" /* 6744 */;
-import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10225 */;
-import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10227 */;
+import useFastestListTableRowPlaceholderConfigDefault from "useFastestListTableRowPlaceholderConfig" /* 10226 */;
+import useScaledSectionHeightDefault from "useScaledSectionHeight" /* 10228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

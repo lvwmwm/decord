@@ -1,10 +1,10 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10697
+// Function ID: 10698
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2069, 2083, 2065, 2087, 4750, 1085, 7052, 6920, 8490, 8123, 10697, 6950, 5422, 7477, 5889, 2]
+// Dependencies: [5, 2069, 2083, 2065, 2087, 4750, 1085, 7052, 6920, 8490, 8123, 10698, 6950, 5422, 7477, 5889, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 10696 (handleMessagesTapChannel)
+// Module 10697 (handleMessagesTapChannel)
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7052 */;

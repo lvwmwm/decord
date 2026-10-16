@@ -1,9 +1,9 @@
-// Module ID: 16216
-// Function ID: 16217
+// Module ID: 16221
+// Function ID: 16222
 // Name: HeroBlock
-// Dependencies: [19, 17, 7259, 1087, 1085, 21, 8963, 5092, 587, 558, 576, 9082, 16217, 1503, 8966, 504, 9161, 5031, 16218, 4818, 4967, 16219, 15351, 6852, 6879, 16229, 1265, 9163, 5977, 4969, 16231, 16232, 5391, 6157, 5088, 5379, 1126, 6185, 6906, 6846, 16233, 8620, 16236, 2]
+// Dependencies: [19, 17, 7259, 1087, 1085, 21, 8963, 5092, 587, 558, 576, 9082, 16222, 1503, 8966, 504, 9161, 5031, 16223, 4818, 4967, 16224, 15356, 6852, 6879, 16234, 1265, 9163, 5977, 4969, 16236, 16237, 5391, 6157, 5088, 5379, 1126, 6185, 6906, 6846, 16238, 8620, 16241, 2]
 
-// Module 16216 (HeroBlock)
+// Module 16221 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -35,7 +35,7 @@ let rect;
 let size;
 let tmp2;
 let unpackModuleId;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(16229);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(16234);
 let react = react_mod;
 const View = react_native.View;
 let CollectiblesCategoryStore = CollectiblesCategoryStore_mod;
@@ -326,7 +326,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   let tmp = heroBlock;
   let tmp2 = dependencyMap;
   const screen = heroBlock.screen;
-  let obj = heroBlock(16217);
+  let obj = heroBlock(16222);
   const handleDismissCoachmarkOnScroll = obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
   let obj2 = heroBlock(1503);
   dependencyMap = obj2.useNavigation();
@@ -344,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const tmpResult9 = tmp(9161);
   let isEligibleForQuests = tmpResult9.getIsEligibleForQuests();
   const tmp7 = preferVCPrice(5031)();
-  const tmpResult10 = tmp(16218);
+  const tmpResult10 = tmp(16223);
   const handleCardVisibilityChange = tmpResult10.useTrackProductCardImpression(heroBlock.categoryStoreListingId, "mobile_home", "hero_block").handleCardVisibilityChange;
   const tmp8 = closure_13();
   const tmpResult11 = tmp(4818);
@@ -355,11 +355,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const hexToRgbaStringResult = hexToRgbaString(tmpResult13.hexWithOpacity(token, 0));
   const tmpResult14 = tmp(4818);
   const token1 = tmpResult14.useToken(preferVCPrice(587).colors.BACKGROUND_BASE_LOWEST);
-  const tmp13 = preferVCPrice(16219)();
+  const tmp13 = preferVCPrice(16224)();
   closure_5 = tmp13;
   const items1 = [heroBlock.rankedSkuIds, tmp13];
   const memo = react.useMemo(() => closure_5(heroBlock.rankedSkuIds), items1);
-  const tmpResult15 = tmp(15351);
+  const tmpResult15 = tmp(15356);
   const filteredAndSortedProducts = tmpResult15.useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
   constants = tmp15;
   let unpublishedAt;
@@ -379,9 +379,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
       let tmp6Result;
       const tmpResult16 = tmp(4969);
       if (tmpResult16.isThemeDark(tmp7)) {
-        tmp6Result = tmp6(16231);
+        tmp6Result = tmp6(16236);
       } else {
-        tmp6Result = tmp6(16232);
+        tmp6Result = tmp6(16237);
       }
       heroBannerUrl = tmp6Result;
     }
@@ -391,7 +391,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
     const obj7 = { style: tmp8.heroBannerContainer, children: tmp24Result };
     tmp24Result = null != heroBannerUrl;
     obj6 = { style: tmp8.heroContainer, children: items5 };
-    tmp6Result3 = preferVCPrice(16236);
+    tmp6Result3 = preferVCPrice(16241);
     if (tmp24Result) {
       let tmp22Result = tmp4;
       const tmp27 = closure_11;
@@ -512,7 +512,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
     if (tmp4) {
       const obj30 = { products: filteredAndSortedProducts, loadingCardsNum: num, preferVCPrice, accessibilityLabel: intl5.formatToPlainString(tmp(1126).t.FNtLb3, obj31) };
       num = 4;
-      const tmp6Result4 = preferVCPrice(16233);
+      const tmp6Result4 = preferVCPrice(16238);
       if (0 !== filteredAndSortedProducts.length) {
         num = filteredAndSortedProducts.length;
       }

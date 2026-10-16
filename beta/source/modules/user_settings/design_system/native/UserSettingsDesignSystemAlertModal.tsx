@@ -1,9 +1,9 @@
-// Module ID: 16149
-// Function ID: 16150
+// Module ID: 16154
+// Function ID: 16155
 // Name: UserSettingsDesignSystemAlertModal
 // Dependencies: [5, 19, 17, 21, 558, 576, 5305, 5301, 5092, 5379, 2]
 
-// Module 16149 (UserSettingsDesignSystemAlertModal)
+// Module 16154 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useAlertStore from "useAlertStore" /* 5301 */;

@@ -1,17 +1,17 @@
 // Module ID: 14581
 // Function ID: 14582
-// Dependencies: [14562, 14582]
+// Dependencies: [14582]
 
 // Module 14581
-import _mod14562 from "module_14562" /* 14562 */;
+import _mod14582 from "module_14582" /* 14582 */;
 
-let tmp2;
-const _mod14582 = tmp2(14582);
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod14562(arg0[arg1])) {
-    tmp4 = _mod14582(tmp);
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod14582(obj);
   }
-  return tmp4;
+  return tmp2;
 };

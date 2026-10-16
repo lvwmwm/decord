@@ -1,9 +1,9 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10724
+// Function ID: 10725
 // Name: UserSummaryItem
 // Dependencies: [19, 17, 2125, 21, 5092, 587, 1200, 558, 576, 504, 1415, 5409, 1126, 5088, 2]
 
-// Module 10723 (UserSummaryItem)
+// Module 10724 (UserSummaryItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

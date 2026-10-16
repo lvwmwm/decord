@@ -1,10 +1,10 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10809
+// Function ID: 10810
 // Name: getURLForApplication
 // Dependencies: [9062, 9061, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 10808 (getURLForApplication)
+// Module 10809 (getURLForApplication)
 import TestModeStore from "TestModeStore" /* 9062 */;
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9061 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 18119
-// Function ID: 18120
+// Module ID: 18123
+// Function ID: 18124
 // Name: MessageSessionMetadataManager
 // Dependencies: [1085, 6808, 1265, 2]
 
-// Module 18119 (MessageSessionMetadataManager)
+// Module 18123 (MessageSessionMetadataManager)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

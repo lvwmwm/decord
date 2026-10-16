@@ -1,55 +1,25 @@
 // Module ID: 14597
 // Function ID: 14598
-// Dependencies: [14556, 14598, 14602]
+// Dependencies: [14563, 14584, 14598, 14608, 14609]
 
 // Module 14597
-import _mod14556 from "module_14556" /* 14556 */;
-import _mod14598 from "module_14598" /* 14598 */;
+import _mod14563 from "module_14563" /* 14563 */;
+import _mod14584 from "module_14584" /* 14584 */;
+import f2 from "f" /* 14598 */;
+import _mod14608 from "module_14608" /* 14608 */;
+import _mod14609 from "module_14609" /* 14609 */;
 
-let tmp;
-const _mod14602 = tmp(14602);
-const f118171 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod14556(arg0);
-  const tmp4 = _mod14598(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod14602(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
-      }
-      return !c0 && -1;
-    }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
-      }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
-    }
+function ownKeys(arg0) {
+  const obj = f2;
+  const fResult = obj.f(_mod14608(arg0));
+  const f = _mod14609.f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = closure_2(fResult, f(arg0));
   }
-};
-let c0 = false;
-const obj = { includes: f118171, indexOf: f118171 };
+  return tmp2;
+}
+let closure_2 = _mod14563([].concat);
+_mod14584("Reflect", "ownKeys") || ownKeys;
 
-export default obj;
+export default _mod14584("Reflect", "ownKeys") || ownKeys;

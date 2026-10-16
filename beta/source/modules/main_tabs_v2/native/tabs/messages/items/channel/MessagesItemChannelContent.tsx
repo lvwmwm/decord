@@ -1,9 +1,9 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16475
+// Function ID: 16476
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6035, 5967, 21, 5092, 587, 558, 576, 1200, 8320, 6651, 10464, 10334, 5031, 4825, 504, 15612, 4702, 6085, 11, 16471, 5421, 16472, 4818, 10263, 10264, 5088, 8854, 8762, 12588, 9309, 10235, 1126, 16474, 2]
+// Dependencies: [19, 17, 6035, 5967, 21, 5092, 587, 558, 576, 1200, 8320, 6651, 10465, 10335, 5031, 4825, 504, 15617, 4702, 6085, 11, 16476, 5421, 16477, 4818, 10264, 10265, 5088, 8854, 8762, 12593, 9309, 10236, 1126, 16479, 2]
 
-// Module 16470 (MessagesItemChannelContent)
+// Module 16475 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -17,11 +17,11 @@ import isChangelogChannelDefault from "isChangelogChannel" /* 6085 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6651 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8320 */;
 import BotTagDefault from "BotTag" /* 8762 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10334 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10464 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 16472 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10236 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10335 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10465 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 16477 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp4;
-const useMessagePreviewsDefault = tmp4(15612);
+const useMessagePreviewsDefault = tmp4(15617);
 const View = react_native.View;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -363,8 +363,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (tmp12) {
     tmp12 = !tmp3(6085)(channel.id);
   }
-  const useRelativeTimestamp = channel(16471).useRelativeTimestamp;
-  channel(16471);
+  const useRelativeTimestamp = channel(16476).useRelativeTimestamp;
+  channel(16476);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -392,7 +392,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (channel.recipients.length > 0) {
         const obj8 = { userId: channel.recipients[0], userName: tmp18, effectDisplayType: channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN };
         const tmp3Result4 = UsernameWithEffectsDefault;
-        EffectDisplayType = tmp(10264).EffectDisplayType;
+        EffectDisplayType = tmp(10265).EffectDisplayType;
         const merged = Object.assign(obj4);
         tmp25Result = tmp25(tmp3Result4, obj8);
         tmp22 = tmp25;
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let str6 = "text-muted";
         const obj20 = { message: tmp11, channel, color: str7, layout: channel(9309).ChannelListLayoutTypes.COZY_DRAWER_SMOL, muted };
         str7 = "text-muted";
-        const ChannelRowPreview = tmp(12588).ChannelRowPreview;
+        const ChannelRowPreview = tmp(12593).ChannelRowPreview;
         if (!((muted || ignored || blocked) && !channelSelected)) {
           if (channelSelected) {
             str6 = "mobile-text-heading-primary";
@@ -510,7 +510,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(16474), obj23);
+        tmp22Result8 = tmp22(tmp3(16479), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;

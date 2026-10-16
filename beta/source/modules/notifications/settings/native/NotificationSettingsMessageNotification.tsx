@@ -1,10 +1,10 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12608
+// Function ID: 12609
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12604, 1126, 5088, 12605, 6185, 12602, 5056, 12607, 2000, 10447, 12609, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12609, 1126, 5088, 12610, 6185, 12607, 5056, 12612, 2000, 10448, 12614, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 12603 (NotificationSettingsMessageNotification)
+// Module 12608 (NotificationSettingsMessageNotification)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12604 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 12605 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12609 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 12610 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -300,7 +300,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(12607, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
+      obj.openLazy(asyncRequire(12612, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");
@@ -316,7 +316,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel: style.channel };
-      obj.openLazy(asyncRequire(12609, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
+      obj.openLazy(asyncRequire(12614, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
     }
   };
   obj2 = require("notficationSettingsChannelFlagUtils");

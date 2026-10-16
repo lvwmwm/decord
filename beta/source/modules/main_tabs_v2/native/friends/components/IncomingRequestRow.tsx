@@ -1,17 +1,17 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17529
+// Function ID: 17530
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 5081, 5440, 10217, 1085, 21, 558, 576, 4850, 573, 1126, 4962, 16479, 12371, 16900, 17526, 10228, 2]
+// Dependencies: [109, 19, 5081, 5440, 10218, 1085, 21, 558, 576, 4850, 573, 1126, 4962, 16484, 12376, 16904, 17530, 10229, 2]
 
-// Module 17525 (IncomingRequestRow)
+// Module 17529 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12371 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16479 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12376 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16484 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -227,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
                           }
                         }
                       }
-                      const tmp42 = jsx(tmp33(12371), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
+                      const tmp42 = jsx(tmp33(12376), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
                       cResult[32] = stateFromStores1;
                       cResult[33] = tmp42;
                       tmp40 = tmp42;

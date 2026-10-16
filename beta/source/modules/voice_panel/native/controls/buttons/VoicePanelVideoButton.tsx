@@ -1,9 +1,9 @@
-// Module ID: 17929
-// Function ID: 17930
+// Module ID: 17933
+// Function ID: 17934
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 10831, 2065, 2087, 2012, 4750, 5117, 21, 558, 576, 11971, 17917, 5907, 504, 12850, 5301, 12853, 1126, 17930, 8781, 10851, 12873, 17918, 10770, 13171, 4904, 2]
+// Dependencies: [19, 17, 10832, 2065, 2087, 2012, 4750, 5117, 21, 558, 576, 11973, 17921, 5907, 504, 12855, 5301, 12858, 1126, 17934, 8781, 10852, 12878, 17922, 10771, 13176, 4904, 2]
 
-// Module 17929 (VoicePanelVideoButton)
+// Module 17933 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,11 +13,11 @@ import Constants from "Constants" /* 5117 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 5907 */;
 import CallsUtils from "CallsUtils" /* 8781 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10851 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12853 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17930 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10852 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12858 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17934 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10831 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10832 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
@@ -481,9 +481,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoB
     }
     const tmp7 = jsx;
     if (isVideoEnabled) {
-      VideoSlashIcon = tmp(10770).VideoIcon;
+      VideoSlashIcon = tmp(10771).VideoIcon;
     } else {
-      VideoSlashIcon = tmp(13171).VideoSlashIcon;
+      VideoSlashIcon = tmp(13176).VideoSlashIcon;
     }
     const obj4 = { color };
     const tmp7Result = tmp7(VideoSlashIcon, obj4);
@@ -507,9 +507,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoB
     str = "CamOn";
   }
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(10770).VideoIcon;
+    let VideoSlashIcon = tmp3(10771).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(13171).VideoSlashIcon;
+    VideoSlashIcon = tmp3(13176).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 });

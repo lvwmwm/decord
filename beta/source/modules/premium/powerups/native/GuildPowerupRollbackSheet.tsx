@@ -1,12 +1,12 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12256
+// Function ID: 12257
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 558, 576, 5379, 10324, 2]
+// Dependencies: [21, 558, 576, 5379, 10325, 2]
 
-// Module 12251 (GuildPowerupRollbackSheet)
+// Module 12256 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import PromoSheet2 from "PromoSheet" /* 10324 */;
+import PromoSheet2 from "PromoSheet" /* 10325 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

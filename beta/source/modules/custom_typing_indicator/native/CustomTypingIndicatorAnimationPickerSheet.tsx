@@ -1,9 +1,9 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 15661
+// Function ID: 15662
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 6182, 1398, 1126, 3851, 6899, 11656, 5377, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 6182, 1398, 1126, 3851, 6899, 11658, 5377, 2]
 
-// Module 15656 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15661 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -282,7 +282,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   }
   const obj9 = { config: obj10, size: 54 };
   obj10 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
-  const tmp13Result = animation(11656);
+  const tmp13Result = animation(11658);
   const tmp18 = closure_6(tmp13Result, obj9);
   cResult[13] = emojis;
   cResult[14] = animation;
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
   obj8 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(11656);
+  tmp4 = animation(11658);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,

@@ -1,9 +1,9 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 15998
+// Function ID: 15999
 // Name: UserSettingsJSError
 // Dependencies: [19, 21, 558, 576, 5088, 2]
 
-// Module 15993 (UserSettingsJSError)
+// Module 15998 (UserSettingsJSError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

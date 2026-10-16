@@ -1,16 +1,50 @@
 // Module ID: 14613
 // Function ID: 14614
-// Dependencies: [14577, 14551]
+// Dependencies: [14582, 14614, 14557, 14610]
 
 // Module 14613
-import _mod14551 from "module_14551" /* 14551 */;
-import module_14577 from "module_14577" /* 14577 */;
+import _mod14557 from "module_14557" /* 14557 */;
+import _mod14582 from "module_14582" /* 14582 */;
+import defineProperty2 from "defineProperty2" /* 14610 */;
+import _mod14614 from "module_14614" /* 14614 */;
 
-let _moduleResult = module_14577(_mod14551.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod14551.WeakMap));
-}
 
-export default _moduleResult;
+export default (arg0, arg1, value, arg3) => {
+  const obj = arg3 || {};
+  let flag = obj.enumerable;
+  let name = arg1;
+  const tmp = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (_mod14582(value)) {
+    _mod14614(value, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = value;
+    } else {
+      _mod14557(arg1, value);
+    }
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp5[tmp];
+      }
+    } catch (err) {
+    }
+    const tmp6 = flag;
+    if (tmp6) {
+      arg0[arg1] = value;
+    } else {
+      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+      const tmp2Result = defineProperty2;
+      tmp2Result.f(arg0, arg1, obj2);
+    }
+  }
+  return arg0;
+};

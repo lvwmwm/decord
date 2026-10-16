@@ -1,9 +1,9 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10820
+// Function ID: 10821
 // Name: migration
 // Dependencies: [19, 21, 5092, 587, 558, 576, 4834, 4806, 1949, 1200, 2]
 
-// Module 10819 (migration)
+// Module 10820 (migration)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef1949 from "module_1949" /* 1949 */;

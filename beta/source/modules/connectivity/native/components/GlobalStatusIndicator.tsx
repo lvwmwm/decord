@@ -1,19 +1,19 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11030
+// Function ID: 11031
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4802, 6036, 9689, 2065, 5110, 21, 558, 576, 11025, 504, 10360, 7477, 1126, 11029, 4850, 11023, 2]
+// Dependencies: [19, 17, 4802, 6036, 9690, 2065, 5110, 21, 558, 576, 11027, 504, 10361, 7477, 1126, 11031, 4850, 11025, 2]
 
-// Module 11028 (GlobalStatusIndicator)
+// Module 11030 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11023 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11025 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import NativeMenuStore from "NativeMenuStore" /* 9689 */;
+import NativeMenuStore from "NativeMenuStore" /* 9690 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import Fragment from "Fragment" /* 21 */;

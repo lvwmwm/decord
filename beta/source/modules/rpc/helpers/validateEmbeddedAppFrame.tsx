@@ -1,19 +1,19 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14722
+// Function ID: 14723
 // Name: validateEmbeddedAppFrame
-// Dependencies: [14718, 10807, 1085, 8606, 11423, 10945, 2029, 10936, 14719, 2]
+// Dependencies: [14723, 10808, 1085, 8606, 11425, 10946, 2029, 10937, 14724, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14717 (validateEmbeddedAppFrame)
+// Module 14722 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1085 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import RPCHelpers from "RPCHelpers" /* 10945 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11423 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14718 */;
-import FramesStore from "FramesStore" /* 10807 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import RPCHelpers from "RPCHelpers" /* 10946 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11425 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14724 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14723 */;
+import FramesStore from "FramesStore" /* 10808 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(transport) {

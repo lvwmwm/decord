@@ -1,10 +1,10 @@
-// Module ID: 10848
-// Function ID: 10849
+// Module ID: 10849
+// Function ID: 10850
 // Name: fetchShelf
 // Dependencies: [5, 5440, 2022, 2064, 1085, 1388, 584, 5938, 1273, 2]
 // Exports: fetchShelf
 
-// Module 10848 (fetchShelf)
+// Module 10849 (fetchShelf)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

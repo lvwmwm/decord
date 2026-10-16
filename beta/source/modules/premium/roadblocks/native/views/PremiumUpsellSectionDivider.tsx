@@ -1,15 +1,15 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9506
+// Function ID: 9507
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 9506, 5391, 1105, 8218, 2]
+// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 9507, 5391, 1105, 8218, 2]
 
-// Module 9505 (PremiumUpsellSectionDivider)
+// Module 9506 (PremiumUpsellSectionDivider)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import ColorConstants from "ColorConstants" /* 7152 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9506 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9507 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

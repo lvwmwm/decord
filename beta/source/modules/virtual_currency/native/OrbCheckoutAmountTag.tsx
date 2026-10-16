@@ -1,9 +1,9 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12714
+// Function ID: 12715
 // Name: OrbCheckoutAmountTag
 // Dependencies: [17, 21, 5092, 587, 558, 576, 9035, 1126, 5088, 2]
 
-// Module 12709 (OrbCheckoutAmountTag)
+// Module 12714 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

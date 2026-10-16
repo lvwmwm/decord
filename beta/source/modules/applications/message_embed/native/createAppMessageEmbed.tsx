@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 11610
+// Function ID: 11611
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1390, 8271, 5440, 1502, 10802, 9605, 6853, 11609, 7884, 1126, 11610, 9242, 8270, 10803, 11611, 11612, 1415, 1384, 11613, 6879, 11614, 7242, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
+// Dependencies: [32, 1390, 8271, 5440, 1502, 10803, 9606, 6853, 11611, 7884, 1126, 11612, 9242, 8270, 10804, 11613, 11614, 1415, 1384, 11615, 6879, 11616, 7242, 10805, 4985, 1629, 10863, 6886, 4808, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11608 (createAppMessageEmbed)
+// Module 11610 (createAppMessageEmbed)
 import intl7 from "intl" /* 1126 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -20,17 +20,17 @@ import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8271 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9605 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import ApplicationUtils from "ApplicationUtils" /* 10862 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11609 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 11610 */;
-import getPlayInContext from "getPlayInContext" /* 11611 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 11612 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 11613 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 11614 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9606 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10804 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10805 */;
+import ApplicationUtils from "ApplicationUtils" /* 10863 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11611 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 11612 */;
+import getPlayInContext from "getPlayInContext" /* 11613 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 11614 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 11615 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 11616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

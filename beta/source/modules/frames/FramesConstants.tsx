@@ -1,10 +1,10 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10803
+// Function ID: 10804
 // Name: FramesConstants
 // Dependencies: [1085, 8606, 38, 2]
 // Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 10802 (FramesConstants)
+// Module 10803 (FramesConstants)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;

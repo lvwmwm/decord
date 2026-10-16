@@ -1,10 +1,10 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14325
+// Function ID: 14326
 // Name: GlobalFramePoolLockExperiment
 // Dependencies: [1454, 2]
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 14320 (GlobalFramePoolLockExperiment)
+// Module 14325 (GlobalFramePoolLockExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 

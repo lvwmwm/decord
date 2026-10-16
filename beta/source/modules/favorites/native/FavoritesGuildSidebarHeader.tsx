@@ -1,9 +1,9 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16740
+// Function ID: 16741
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16638, 21, 5092, 587, 10313, 12692, 5056, 10317, 2000, 10316, 5088, 1126, 3442, 558, 576, 8203, 8224, 8194, 5377, 2]
+// Dependencies: [19, 17, 16643, 21, 5092, 587, 10314, 12697, 5056, 10318, 2000, 10317, 5088, 1126, 3442, 558, 576, 8203, 8224, 8194, 5377, 2]
 
-// Module 16735 (FavoritesGuildSidebarHeader)
+// Module 16740 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,10 +16,10 @@ import Stack_Stack from "Stack/Stack" /* 5377 */;
 import ChatIcon2 from "ChatIcon" /* 8194 */;
 import TextIcon2 from "TextIcon" /* 8203 */;
 import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8224 */;
-import FavoritesHooks from "FavoritesHooks" /* 10313 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10316 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12692 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16638 */;
+import FavoritesHooks from "FavoritesHooks" /* 10314 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10317 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12697 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16643 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

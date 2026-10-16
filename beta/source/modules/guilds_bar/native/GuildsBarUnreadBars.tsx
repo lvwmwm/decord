@@ -1,9 +1,9 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 16817
+// Function ID: 16818
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6078, 4939, 5963, 16739, 15373, 21, 5092, 6761, 558, 576, 1631, 15366, 15375, 551, 568, 504, 4850, 16813, 2]
+// Dependencies: [32, 19, 17, 6078, 4939, 5963, 16744, 15378, 21, 5092, 6761, 558, 576, 1631, 15371, 15380, 551, 568, 504, 4850, 16818, 2]
 
-// Module 16812 (GuildsBarUnreadBars)
+// Module 16817 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,14 +13,14 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 5963 */;
 import FastList from "FastList" /* 6761 */;
-import QuestHooks from "QuestHooks" /* 15366 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 15375 */;
+import QuestHooks from "QuestHooks" /* 15371 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 15380 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
-import YouBarConstants from "YouBarConstants" /* 15373 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16744 */;
+import YouBarConstants from "YouBarConstants" /* 15378 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -252,7 +252,7 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "pos", afterItem: "sk" };
+let closure_17 = { beforeItem: "top", afterItem: "code" };
 let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {

@@ -1,9 +1,9 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 11774
+// Function ID: 11775
 // Name: BrokenImage
 // Dependencies: [19, 21, 558, 576, 7572, 2]
 
-// Module 11772 (BrokenImage)
+// Module 11774 (BrokenImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import inlineStylesDefault from "inlineStyles" /* 7572 */;

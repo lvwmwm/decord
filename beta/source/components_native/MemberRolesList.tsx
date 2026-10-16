@@ -1,12 +1,12 @@
-// Module ID: 11447
-// Function ID: 11448
+// Module ID: 11449
+// Function ID: 11450
 // Name: MemberRolesList
-// Dependencies: [19, 17, 2119, 21, 5092, 558, 576, 504, 10305, 2]
+// Dependencies: [19, 17, 2119, 21, 5092, 558, 576, 504, 10306, 2]
 
-// Module 11447 (MemberRolesList)
+// Module 11449 (MemberRolesList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import RolePillDefault from "RolePill" /* 10305 */;
+import RolePillDefault from "RolePill" /* 10306 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import createStyles from "createStyles" /* 5092 */;

@@ -1,10 +1,10 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10684
+// Function ID: 10685
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 5440, 6088, 7419, 7884, 1126, 10684, 6936, 6931, 3719, 558, 576, 5077, 10685, 1388, 504, 6858, 2]
+// Dependencies: [19, 5440, 6088, 7419, 7884, 1126, 10685, 6936, 6931, 3719, 558, 576, 5077, 10686, 1388, 504, 6858, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 10683 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 10684 (createSocialLayerStorefrontProductDetailsEmbed)
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
@@ -12,7 +12,7 @@ import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
 import StorefrontUtils from "StorefrontUtils" /* 6936 */;
 import Constants from "Constants" /* 7419 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 10684 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 10685 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import SKUStore from "SKUStore" /* 6088 */;
@@ -86,11 +86,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   }
   if (cResult[4] !== tmp4) {
     const fn2 = function s() {
-      const f143080 = (applicationId) => applicationId.applicationId;
+      const f143108 = (applicationId) => applicationId.applicationId;
       const mapped = closure_0.map((item) => closure_1_5.get(item));
       const found = mapped.filter(GlobalUtils.isNotNullish);
-      const items = [...new Set(found.map(f143080))];
-      new Set(found.map(f143080));
+      const items = [...new Set(found.map(f143108))];
+      new Set(found.map(f143108));
       return items;
     };
     const items1 = [tmp4];
@@ -139,11 +139,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f143083 = (applicationId) => applicationId.applicationId;
+    const f143111 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f143083))];
-    new Set(found.map(f143083));
+    const items = [...new Set(found.map(f143111))];
+    new Set(found.map(f143111));
     return items;
   }, items2);
   let tmp3 = memo(6858)(stateFromStoresArray);

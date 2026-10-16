@@ -1,9 +1,9 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 10572
+// Function ID: 10573
 // Name: BadgeArtImage
 // Dependencies: [19, 17, 21, 558, 576, 1382, 9007, 6157, 7572, 2]
 
-// Module 10571 (BadgeArtImage)
+// Module 10572 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;

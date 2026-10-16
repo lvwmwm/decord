@@ -1,16 +1,16 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12614
+// Function ID: 12615
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10447, 1126, 10448, 6809, 6804, 12608, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10448, 1126, 10449, 6809, 6804, 12613, 2]
 
-// Module 12609 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 12614 (NotificationSettingsMessageNotificationChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10448 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10449 */;
 import react from "react" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             return tmp9;
           }
         }
-        const tmp12 = jsx(unread(12608), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+        const tmp12 = jsx(unread(12613), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
         cResult[7] = notification;
         cResult[8] = tmp5;
         cResult[9] = tmp8;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12608);
+  const tmp5 = unread(12613);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

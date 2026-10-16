@@ -1,14 +1,14 @@
-// Module ID: 18347
-// Function ID: 18348
+// Module ID: 18351
+// Function ID: 18352
 // Name: HomeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18348, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18352, 4817, 2]
 
-// Module 18347 (HomeIcon)
+// Module 18351 (HomeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 18348 */;
+import AssetRegistry from "AssetRegistry" /* 18352 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

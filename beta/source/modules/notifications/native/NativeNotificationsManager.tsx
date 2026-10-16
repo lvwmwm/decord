@@ -1,9 +1,9 @@
-// Module ID: 18628
-// Function ID: 18629
+// Module ID: 18632
+// Function ID: 18633
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 6078, 1085, 3, 6808, 1382, 11031, 8327, 1265, 2]
+// Dependencies: [5, 17, 6078, 1085, 3, 6808, 1382, 11033, 8327, 1265, 2]
 
-// Module 18628 (NativeNotificationsManager)
+// Module 18632 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;

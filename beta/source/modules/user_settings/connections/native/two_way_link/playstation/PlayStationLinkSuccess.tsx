@@ -1,9 +1,9 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12932
+// Function ID: 12933
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5092, 558, 576, 9210, 12912, 6157, 1126, 5088, 5379, 6814, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 9210, 12917, 6157, 1126, 5088, 5379, 6814, 2]
 
-// Module 12927 (PlayStationLinkSuccess)
+// Module 12932 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
-import _modDef12912 from "module_12912" /* 12912 */;
+import _modDef12917 from "module_12917" /* 12917 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef12912 };
+    const obj3 = { uri: _modDef12917 };
     cResult[0] = obj3;
     first = obj3;
   } else {
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef12912 };
+    const obj = { uri: _modDef12917 };
     return obj;
   }, []);
   items = [, , ];

@@ -1,10 +1,10 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9700
+// Function ID: 9701
 // Name: RequestGatewaySocket
 // Dependencies: [5, 1085, 7190, 1265, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 9699 (RequestGatewaySocket)
+// Module 9700 (RequestGatewaySocket)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

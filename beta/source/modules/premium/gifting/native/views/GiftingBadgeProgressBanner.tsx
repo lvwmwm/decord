@@ -1,9 +1,9 @@
-// Module ID: 10115
-// Function ID: 10116
+// Module ID: 10116
+// Function ID: 10117
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 1273, 8967, 10106, 1126, 2664, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 1273, 8967, 10107, 1126, 2664, 5088, 2]
 
-// Module 10115 (GiftingBadgeProgressBanner)
+// Module 10116 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -80,7 +80,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
         let tmp15 = null != nextTierIcon;
         if (tmp15) {
           const obj3 = { icon: nextTierIcon, size: 24 };
-          tmp15 = React3(tmp7(10106), obj3);
+          tmp15 = React3(tmp7(10107), obj3);
         }
         cResult[7] = nextTierIcon;
         cResult[8] = tmp15;
@@ -176,7 +176,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10106), obj4);
+    tmp10Result = tmp10(tmp2(10107), obj4);
   }
   items2 = [React3(View, obj3), ];
   const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2664["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };

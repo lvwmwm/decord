@@ -1,16 +1,16 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11165
+// Function ID: 11166
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2012, 5113, 5948, 21, 5092, 587, 558, 576, 504, 11106, 10912, 10913, 1200, 11164, 11165, 6651, 2]
+// Dependencies: [19, 17, 2012, 5113, 5948, 21, 5092, 587, 558, 576, 504, 11108, 10913, 10914, 1200, 11166, 11167, 6651, 2]
 
-// Module 11163 (SpeakerTileStatuses)
+// Module 11165 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6651 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11165 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11167 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
@@ -135,7 +135,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return MediaEngineStore.isLocalMute(userId);
         }
       }
-      tmp15 = channelId(11106);
+      tmp15 = channelId(11108);
     } else {
       class S {
         constructor() {
@@ -194,15 +194,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp5 = channelId(11106);
+    tmp5 = channelId(11108);
     flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(10912);
+    tmp5 = channelId(10913);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(10913);
+      tmp5 = channelId(10914);
       flag3 = false;
     }
   }
@@ -241,7 +241,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     let tmp9;
     const tmpResult = userId(504);
     if (tmpResult.useStateFromStores(first, tmp7, tmp8)) {
-      tmp9 = channelId(11164);
+      tmp9 = channelId(11166);
     }
     let tmp11 = null;
     if (null != tmp9) {
@@ -301,7 +301,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(11164);
+    tmp4 = channelId(11166);
   }
   let tmp6 = null;
   if (null != tmp4) {

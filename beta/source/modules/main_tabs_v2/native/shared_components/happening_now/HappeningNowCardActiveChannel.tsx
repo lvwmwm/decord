@@ -1,20 +1,20 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 16529
+// Function ID: 16530
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 14001, 2065, 11639, 1390, 15589, 1085, 21, 5092, 558, 576, 504, 11, 1388, 12, 7011, 1265, 1112, 5421, 1126, 8154, 16518, 15590, 2]
+// Dependencies: [19, 17, 14006, 2065, 11641, 1390, 15594, 1085, 21, 5092, 558, 576, 504, 11, 1388, 12, 7011, 1265, 1112, 5421, 1126, 8154, 16523, 15595, 2]
 
-// Module 16524 (HappeningNowCardActiveChannel)
+// Module 16529 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import router_utils from "router_utils" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ActiveChannelsStore2 from "ActiveChannelsStore" /* 14001 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
+import ActiveChannelsStore2 from "ActiveChannelsStore" /* 14006 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15594 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import TypingStore from "TypingStore" /* 11639 */;
+import TypingStore from "TypingStore" /* 11641 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;

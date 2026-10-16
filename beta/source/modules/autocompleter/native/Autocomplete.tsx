@@ -1,9 +1,9 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12097
+// Function ID: 12098
 // Name: Autocomplete
-// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9712, 21, 5092, 587, 558, 576, 8575, 504, 4962, 1200, 8761, 6191, 6180, 1126, 8257, 8154, 5421, 5088, 6157, 12096, 9753, 9769, 6185, 12, 8151, 12097, 2030, 2031, 7684, 12098, 2]
+// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9713, 21, 5092, 587, 558, 576, 8575, 504, 4962, 1200, 8761, 6191, 6180, 1126, 8257, 8154, 5421, 5088, 6157, 12098, 9754, 9770, 6185, 12, 8151, 12099, 2030, 2031, 7684, 12100, 2]
 
-// Module 12095 (Autocomplete)
+// Module 12097 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -19,11 +19,11 @@ import TableRowTrailingText2 from "TableRowTrailingText" /* 6191 */;
 import TimestampUtils from "TimestampUtils" /* 8151 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8257 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
-import StickersHooks from "StickersHooks" /* 9753 */;
-import StickerDefault from "Sticker" /* 9769 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12096 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12097 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9713 */;
+import StickersHooks from "StickersHooks" /* 9754 */;
+import StickerDefault from "Sticker" /* 9770 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12098 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12099 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -1017,7 +1017,7 @@ let obj9 = {
         let tmp16;
         if (extraChromeEnabled) {
           const obj6 = { platforms: game.platformAvailability };
-          tmp16 = React4(tmp6(12098), obj6);
+          tmp16 = React4(tmp6(12100), obj6);
         }
         cResult[7] = extraChromeEnabled;
         cResult[8] = game.platformAvailability;
@@ -1069,7 +1069,7 @@ let obj9 = {
     tmp8Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp8Result = tmp8(tmp2(12098), obj8);
+      tmp8Result = tmp8(tmp2(12100), obj8);
     }
     return tmp8(FormRow, obj6);
   }),

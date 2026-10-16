@@ -1,13 +1,13 @@
-// Module ID: 13468
-// Function ID: 13469
+// Module ID: 13473
+// Function ID: 13474
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7259, 7275, 558, 576, 573, 7271, 1126, 13469, 2]
+// Dependencies: [32, 19, 7259, 7275, 558, 576, 573, 7271, 1126, 13474, 2]
 
-// Module 13468 (useAvatarDecorationSections)
+// Module 13473 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13469 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13474 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13469)(tmp5, obj.PREVIEW);
+  return first(13474)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx");
 

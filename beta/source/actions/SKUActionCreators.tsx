@@ -1,10 +1,10 @@
-// Module ID: 10170
-// Function ID: 10171
+// Module ID: 10171
+// Function ID: 10172
 // Name: SKUActionCreators
 // Dependencies: [5, 8986, 6088, 1085, 584, 5644, 1295, 4792, 9060, 7304, 5635, 4791, 4784, 5724, 5742, 1388, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10170 (SKUActionCreators)
+// Module 10171 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import BillingUtils from "BillingUtils" /* 4784 */;

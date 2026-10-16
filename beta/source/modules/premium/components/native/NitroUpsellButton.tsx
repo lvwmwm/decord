@@ -1,9 +1,9 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9778
+// Function ID: 9779
 // Name: NitroUpsellButton
 // Dependencies: [19, 5081, 21, 558, 576, 504, 9031, 587, 5379, 2]
 
-// Module 9777 (NitroUpsellButton)
+// Module 9778 (NitroUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

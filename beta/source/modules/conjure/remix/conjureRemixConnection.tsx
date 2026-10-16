@@ -1,11 +1,11 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13250
+// Function ID: 13251
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 13241, 2]
+// Dependencies: [32, 5, 13246, 2]
 // Exports: remixProjectWorkspace
 
-// Module 13245 (conjureRemixConnection)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+// Module 13250 (conjureRemixConnection)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

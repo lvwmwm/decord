@@ -1,19 +1,19 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15797
+// Function ID: 15798
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [15780, 7988, 558, 576, 1382, 10663, 1126, 14705, 2894, 15786, 2]
+// Dependencies: [15785, 7988, 558, 576, 1382, 10664, 1126, 14710, 2894, 15791, 2]
 // Exports: useAndroidMessageNotificationsSettingValue
 
-// Module 15792 (AndroidMessageNotificationsSetting)
+// Module 15797 (AndroidMessageNotificationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2894 from "module_2894" /* 2894 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14705 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15786 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15780 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14710 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15791 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15785 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10663 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c3;

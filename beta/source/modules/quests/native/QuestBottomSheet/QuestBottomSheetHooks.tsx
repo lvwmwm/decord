@@ -1,9 +1,9 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 15407
+// Function ID: 15408
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 5972, 558, 576, 15374, 15398, 5056, 9197, 15403, 9169, 9170, 9173, 5979, 7411, 5975, 7402, 2]
+// Dependencies: [5, 19, 5972, 558, 576, 15379, 15403, 5056, 9197, 15408, 9169, 9170, 9173, 5979, 7411, 5975, 7402, 2]
 
-// Module 15402 (QuestBottomSheetHooks)
+// Module 15407 (QuestBottomSheetHooks)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
@@ -13,7 +13,7 @@ import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 15403 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 15408 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,8 +28,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15374).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15398).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15379).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15403).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -52,8 +52,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   tmp2 = fn;
 }) : (function useDismissSheetOrCollapseDock() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15374).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15398).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15379).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15403).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;

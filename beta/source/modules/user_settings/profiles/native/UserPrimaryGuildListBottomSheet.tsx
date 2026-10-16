@@ -1,10 +1,10 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 14909
+// Function ID: 14910
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 7883, 21, 5092, 1382, 587, 558, 576, 8285, 4832, 5056, 1126, 6159, 8854, 6266, 6180, 14902, 12, 4828, 12217, 5011, 6879, 14905, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 6307, 8575, 2]
+// Dependencies: [32, 19, 17, 7883, 21, 5092, 1382, 587, 558, 576, 8285, 4832, 5056, 1126, 6159, 8854, 6266, 6180, 14907, 12, 4828, 12222, 5011, 6879, 14910, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 6307, 8575, 2]
 // Exports: default
 
-// Module 14904 (UserPrimaryGuildListBottomSheet)
+// Module 14909 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import GuildIconDefault from "GuildIcon" /* 6159 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import Form from "Form" /* 8575 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12222 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -390,7 +390,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     } else {
       const obj3 = { guilds };
       const tmpResult2 = ActionSheetActionCreatorsDefault;
-      tmpResult2.openLazy(asyncRequire(14905, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
+      tmpResult2.openLazy(asyncRequire(14910, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
     }
   }
   let tmp = closure_10();

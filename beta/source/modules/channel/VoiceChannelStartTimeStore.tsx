@@ -1,9 +1,9 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9605
+// Function ID: 9606
 // Name: VoiceChannelStartTimeStore
 // Dependencies: [5757, 1102, 504, 1106, 584, 2]
 
-// Module 9604 (VoiceChannelStartTimeStore)
+// Module 9605 (VoiceChannelStartTimeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;

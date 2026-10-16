@@ -1,9 +1,9 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11170
+// Function ID: 11171
 // Name: MediaTile
-// Dependencies: [19, 17, 6036, 5115, 21, 5092, 587, 558, 576, 11159, 1497, 8322, 504, 11169, 1200, 2]
+// Dependencies: [19, 17, 6036, 5115, 21, 5092, 587, 558, 576, 11161, 1497, 8322, 504, 11171, 1200, 2]
 
-// Module 11168 (MediaTile)
+// Module 11170 (MediaTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -30,7 +30,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const participant = channel.participant;
   size = channel.size;
   const tmp4 = closure_7();
-  const obj2 = channel(11159);
+  const obj2 = channel(11161);
   const speakerTileStyles = obj2.useSpeakerTileStyles();
   const width = participant(1497)().width;
   const obj3 = channel(8322);
@@ -91,7 +91,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       tmp23 = tmp26;
                     }
                   }
-                  tmp6(11169);
+                  tmp6(11171);
                   const tmp22 = <tmp6Result hasBottomSafeArea={false} hasLeftSafeArea={false} hasRightSafeArea={false} hasTopSafeArea={false} participant={stateFromStores} avatarSize={channel(1200).AvatarSizes.XLARGE} channel={channel} shrinkStreamEmptyState={false} contentStyle={tmp4.media} />;
                   cResult[16] = channel;
                   cResult[17] = stateFromStores;
@@ -108,7 +108,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               tmp18 = items1;
             }
           }
-          const tmpResult3 = channel(11159);
+          const tmpResult3 = channel(11161);
           const tileWidthStyle = tmpResult3.getTileWidthStyle(size, width, isScreenLandscape);
           cResult[8] = isScreenLandscape;
           cResult[9] = size;
@@ -116,7 +116,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           cResult[11] = tileWidthStyle;
           tmp16 = tileWidthStyle;
         }
-        const tmpResult4 = channel(11159);
+        const tmpResult4 = channel(11161);
         const sizeStyle = tmpResult4.getSizeStyle(size, speakerTileStyles);
         cResult[5] = size;
         cResult[6] = speakerTileStyles;
@@ -141,7 +141,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const participant = channel.participant;
   size = channel.size;
   const tmp = closure_7();
-  const obj = channel(11159);
+  const obj = channel(11161);
   const speakerTileStyles = obj.useSpeakerTileStyles();
   const width = participant(1497)().width;
   const obj2 = channel(8322);
@@ -156,12 +156,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       const items2 = [tmp.container, , ];
-      const tmp2Result = channel(11159);
+      const tmp2Result = channel(11161);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      const tmp2Result2 = channel(11159);
+      const tmp2Result2 = channel(11161);
       items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
       ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1200).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
-      tmp5(11169);
+      tmp5(11171);
       tmp8 = <View style={items2}>{null}</View>;
     }
   }

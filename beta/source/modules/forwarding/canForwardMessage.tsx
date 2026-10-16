@@ -1,9 +1,9 @@
-// Module ID: 9678
-// Function ID: 9679
+// Module ID: 9679
+// Function ID: 9680
 // Name: canForwardMessage
 // Dependencies: [2117, 2065, 2087, 4750, 1085, 1403, 558, 576, 504, 2]
 
-// Module 9678 (canForwardMessage)
+// Module 9679 (canForwardMessage)
 import FlagUtils from "FlagUtils" /* 1403 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

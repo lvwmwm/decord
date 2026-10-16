@@ -1,9 +1,9 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10052
+// Function ID: 10053
 // Name: GiftCodeRecord
 // Dependencies: [1405, 7173, 9118, 4770, 1392, 4702, 1403, 2]
 
-// Module 10051 (GiftCodeRecord)
+// Module 10052 (GiftCodeRecord)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import Record from "Record" /* 1405 */;

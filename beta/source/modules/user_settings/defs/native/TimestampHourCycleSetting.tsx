@@ -1,9 +1,9 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15776
+// Function ID: 15777
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 7988, 2041, 558, 576, 1126, 1209, 10663, 4796, 2]
+// Dependencies: [19, 7988, 2041, 558, 576, 1126, 1209, 10664, 4796, 2]
 
-// Module 15771 (TimestampHourCycleSetting)
+// Module 15776 (TimestampHourCycleSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
@@ -12,7 +12,7 @@ import SystemDateFormatter from "SystemDateFormatter" /* 4796 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

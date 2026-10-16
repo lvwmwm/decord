@@ -1,10 +1,10 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10360
+// Function ID: 10361
 // Name: isOrientationLockSupported
 // Dependencies: [5068, 1628, 2]
 // Exports: default
 
-// Module 10359 (isOrientationLockSupported)
+// Module 10360 (isOrientationLockSupported)
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import DeviceUtils from "DeviceUtils" /* 5068 */;
 import size from "module_2" /* 2 */;

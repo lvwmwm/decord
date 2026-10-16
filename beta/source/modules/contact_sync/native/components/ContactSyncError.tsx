@@ -1,9 +1,9 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12424
+// Function ID: 12425
 // Name: ContactSyncError
 // Dependencies: [19, 21, 5092, 558, 576, 4850, 5093, 5088, 2]
 
-// Module 12419 (ContactSyncError)
+// Module 12424 (ContactSyncError)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;

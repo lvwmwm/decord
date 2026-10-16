@@ -1,15 +1,15 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17124
+// Function ID: 17125
 // Name: useUserApplicationWidgetData
-// Dependencies: [32, 19, 5440, 13365, 7316, 11419, 558, 576, 13367, 504, 6858, 13366, 8307, 7321, 2]
+// Dependencies: [32, 19, 5440, 13370, 7316, 11421, 558, 576, 13372, 504, 6858, 13371, 8307, 7321, 2]
 
-// Module 17120 (useUserApplicationWidgetData)
+// Module 17124 (useUserApplicationWidgetData)
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11419 */;
-import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 13365 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 13366 */;
-import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 13367 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11421 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 13370 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 13371 */;
+import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 13372 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

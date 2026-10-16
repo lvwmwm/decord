@@ -1,28 +1,28 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13515
+// Function ID: 13516
 // Name: CodedLinks
-// Dependencies: [32, 4751, 2087, 1390, 7373, 11608, 5077, 13511, 13512, 13523, 13525, 13517, 13527, 13520, 10672, 11361, 10685, 10683, 13528, 13530, 13531, 1388, 2]
+// Dependencies: [32, 4751, 2087, 1390, 7373, 11610, 5077, 13516, 13517, 13528, 13530, 13522, 13532, 13525, 10673, 11363, 10686, 10684, 13533, 13535, 13536, 1388, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 13510 (CodedLinks)
+// Module 13515 (CodedLinks)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import CodedLink from "CodedLink" /* 5077 */;
 import ApplicationCodedLink from "ApplicationCodedLink" /* 7373 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 10672 */;
-import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 10683 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 10685 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 11361 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 11608 */;
-import createActivityMessageEmbed from "createActivityMessageEmbed" /* 13511 */;
-import InviteEmbed from "InviteEmbed" /* 13512 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13517 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13520 */;
-import GuildTemplateEmbed from "GuildTemplateEmbed" /* 13523 */;
-import BuildOverrideEmbed from "BuildOverrideEmbed" /* 13525 */;
-import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 13527 */;
-import QuestEmbed from "QuestEmbed" /* 13528 */;
-import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 13530 */;
-import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 13531 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 10673 */;
+import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 10684 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 10686 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 11363 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 11610 */;
+import createActivityMessageEmbed from "createActivityMessageEmbed" /* 13516 */;
+import InviteEmbed from "InviteEmbed" /* 13517 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13522 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13525 */;
+import GuildTemplateEmbed from "GuildTemplateEmbed" /* 13528 */;
+import BuildOverrideEmbed from "BuildOverrideEmbed" /* 13530 */;
+import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 13532 */;
+import QuestEmbed from "QuestEmbed" /* 13533 */;
+import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 13535 */;
+import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 13536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import GuildStore from "GuildStore" /* 2087 */;

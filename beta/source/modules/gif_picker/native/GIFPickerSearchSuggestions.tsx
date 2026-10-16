@@ -1,13 +1,13 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 9740
+// Function ID: 9741
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 9730, 21, 5092, 587, 558, 576, 504, 1126, 5088, 5379, 2]
+// Dependencies: [19, 17, 9731, 21, 5092, 587, 558, 576, 504, 1126, 5088, 5379, 2]
 
-// Module 9739 (GIFPickerSearchSuggestions)
+// Module 9740 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9730 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9731 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -143,7 +143,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F142410 */ };
+          obj.onPress = function onPress() { /* body not rendered: F142438 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F142410 */ };
+          obj.onPress = function onPress() { /* body not rendered: F142438 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }

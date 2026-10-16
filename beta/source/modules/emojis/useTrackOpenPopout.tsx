@@ -1,10 +1,10 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9540
+// Function ID: 9541
 // Name: useTrackOpenPopout
 // Dependencies: [19, 2065, 2116, 1393, 1085, 5107, 5396, 9423, 1265, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9539 (useTrackOpenPopout)
+// Module 9540 (useTrackOpenPopout)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;

@@ -1,111 +1,40 @@
 // Module ID: 9894
 // Function ID: 9895
-// Dependencies: [9811, 9818, 9820, 9844, 9895, 9897, 9898, 9899, 9900, 9901, 9902, 9851]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 9886, 9843]
 
 // Module 9894
-import _mod9844 from "module_9844" /* 9844 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9851 */;
-import _mod9895 from "module_9895" /* 9895 */;
-import _mod9897 from "module_9897" /* 9897 */;
-import _mod9898 from "module_9898" /* 9898 */;
-import _mod9899 from "module_9899" /* 9899 */;
-import _mod9900 from "module_9900" /* 9900 */;
-import _mod9901 from "module_9901" /* 9901 */;
-import _mod9902 from "module_9902" /* 9902 */;
-import { Chrono } from "module_9811" /* 9811 */;
+import NUMBER from "NUMBER" /* 9886 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-const require = globalThis.__r;
-
-function createConfiguration(flag, arg1) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+let tmp;
+const _mod9843 = tmp(9843);
+const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?:\\(|\\\uFF08)(?<weekday>" + keys.join("|") + ")(?:\\)|\\\uFF09)", "i");
+class JPWeekdayWithParenthesesParser {
+  constructor() {
+    _classCallCheck(this, JPWeekdayWithParenthesesParser);
   }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_9844.default(flag2), , , ];
-  new module_9844.default(flag2);
-  items[1] = new module_9895.default();
-  new module_9895.default();
-  items[2] = new module_9897.default();
-  new module_9897.default();
-  items[3] = new module_9900.default();
-  new module_9900.default();
-  items1 = [new module_9898.default(), ];
-  new module_9898.default();
-  items1[1] = new module_9899.default();
-  new module_9899.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(reference, arg1) {
+      const tmp3 = NUMBER.WEEKDAY_OFFSET[arg1.groups.weekday];
+      let parsingComponentsAtWeekday = null;
+      if (undefined !== tmp3) {
+        parsingComponentsAtWeekday = _mod9843.createParsingComponentsAtWeekday(reference.reference, tmp3);
+      }
+      return parsingComponentsAtWeekday;
+    }
   }
-  const tmp = createConfiguration(false, flag);
-  const parsers = tmp.parsers;
-  const push = parsers.push;
-  const _default = new module_9901.default();
-  push(_default);
-  const parsers1 = tmp.parsers;
-  const push2 = parsers1.push;
-  const _default1 = new module_9902.default();
-  push2(_default1);
-  return tmp;
-}
-const module_9844 = fn(_mod9844);
-const module_9895 = fn(_mod9895);
-const module_9897 = fn(_mod9897);
-const module_9898 = fn(_mod9898);
-const module_9899 = fn(_mod9899);
-const module_9900 = fn(_mod9900);
-const module_9901 = fn(_mod9901);
-const module_9902 = fn(_mod9902);
-const configuration = createConfiguration(false, true);
-let parsers = configuration.parsers;
-let push = parsers.push;
-let _default = new module_9901.default();
-push(_default);
-let parsers1 = configuration.parsers;
-let push2 = parsers1.push;
-let _default1 = new module_9902.default();
-push2(_default1);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_9811").Chrono(createConfiguration(true));
-const Chrono_export = require("module_9811").Chrono;
+];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(JPWeekdayWithParenthesesParser, items);

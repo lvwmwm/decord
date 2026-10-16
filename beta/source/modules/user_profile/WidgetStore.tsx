@@ -1,9 +1,9 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13265
+// Function ID: 13266
 // Name: WidgetStore
 // Dependencies: [32, 1390, 7316, 504, 1388, 12, 584, 2]
 
-// Module 13260 (WidgetStore)
+// Module 13265 (WidgetStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

@@ -1,17 +1,17 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17308
+// Function ID: 17309
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17276, 8204, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 17301, 6182, 7569, 5049, 17305, 17061, 8382, 17306, 5379, 17092, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17280, 8204, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 17305, 6182, 7569, 5049, 17309, 17065, 8382, 17310, 5379, 17096, 2]
 
-// Module 17304 (clarification/ConjureImageOptions)
+// Module 17308 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import react_native from "react-native" /* 4832 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import openMediaModal from "openMediaModal" /* 8382 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 17301 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17280 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 17305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -760,7 +760,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       if (null != onRemove) {
         MaximizeIcon = tmp2(5049).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(17305).MaximizeIcon;
+        MaximizeIcon = tmp2(17309).MaximizeIcon;
       }
       obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
       if (null == onRemove) {

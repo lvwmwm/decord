@@ -1,9 +1,9 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9626
+// Function ID: 9627
 // Name: ChannelDetailsConstants
 // Dependencies: [9308, 2]
 
-// Module 9625 (ChannelDetailsConstants)
+// Module 9626 (ChannelDetailsConstants)
 import SearchConstants from "SearchConstants" /* 9308 */;
 import size from "module_2" /* 2 */;
 

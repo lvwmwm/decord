@@ -1,9 +1,9 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10654
+// Function ID: 10655
 // Name: StageChannelSelfRichPresenceStore
-// Dependencies: [2065, 2087, 5110, 4760, 2116, 1390, 5896, 2070, 5892, 1085, 4755, 10254, 5950, 5421, 5895, 1355, 504, 584, 2]
+// Dependencies: [2065, 2087, 5110, 4760, 2116, 1390, 5896, 2070, 5892, 1085, 4755, 10255, 5950, 5421, 5895, 1355, 504, 584, 2]
 
-// Module 10653 (StageChannelSelfRichPresenceStore)
+// Module 10654 (StageChannelSelfRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 5421 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import StageMediaHooks from "StageMediaHooks" /* 5895 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10254 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10255 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;

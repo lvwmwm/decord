@@ -1,9 +1,9 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10319
+// Function ID: 10320
 // Name: useTrackFavoritesGuildUpsellModalOpened
 // Dependencies: [19, 1085, 558, 576, 6852, 6879, 1265, 2]
 
-// Module 10318 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 10319 (useTrackFavoritesGuildUpsellModalOpened)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;

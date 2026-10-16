@@ -1,16 +1,16 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12069
+// Function ID: 12070
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 1382, 558, 576, 1388, 10220, 6185, 1126, 12068, 10610, 5088, 4828, 8621, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 1382, 558, 576, 1388, 10221, 6185, 1126, 12070, 10611, 5088, 4828, 8621, 2]
 
-// Module 12067 (NewMessagesTagListInput)
+// Module 12069 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10220 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10221 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -61,7 +61,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const mapped = items.map(UserStore.getUser);
     const found = mapped.filter(tmp(1388).isNotNullish);
-    const mapped1 = found.map(tags(10220));
+    const mapped1 = found.map(tags(10221));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -188,9 +188,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(12068).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(12070).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(10610).CirclePlusIcon;
+        CirclePlusIcon = tmp(10611).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

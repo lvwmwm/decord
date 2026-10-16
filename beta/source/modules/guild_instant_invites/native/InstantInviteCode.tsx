@@ -1,9 +1,9 @@
-// Module ID: 10298
-// Function ID: 10299
+// Module ID: 10299
+// Function ID: 10300
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 2069, 4760, 1390, 21, 5092, 587, 558, 576, 8154, 8203, 5421, 5088, 5377, 5051, 1126, 9637, 2]
+// Dependencies: [19, 17, 2069, 4760, 1390, 21, 5092, 587, 558, 576, 8154, 8203, 5421, 5088, 5377, 5051, 1126, 9638, 2]
 
-// Module 10298 (InstantInviteCode)
+// Module 10299 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
-import CountDownDefault from "CountDown" /* 9637 */;
+import CountDownDefault from "CountDown" /* 9638 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

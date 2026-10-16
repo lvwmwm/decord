@@ -1,17 +1,17 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15553
+// Function ID: 15554
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [2012, 7988, 11088, 558, 576, 11089, 1126, 504, 10663, 2]
+// Dependencies: [2012, 7988, 11090, 558, 576, 11091, 1126, 504, 10664, 2]
 
-// Module 15548 (NoiseSuppressionKrispSetting)
+// Module 15553 (NoiseSuppressionKrispSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11088 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11089 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11090 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11091 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

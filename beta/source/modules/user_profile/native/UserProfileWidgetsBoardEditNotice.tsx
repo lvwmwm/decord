@@ -1,9 +1,9 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13219
+// Function ID: 13220
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8363, 2049, 10008, 5046, 5088, 1126, 6185, 6208, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8363, 2049, 10009, 5046, 5088, 1126, 6185, 6208, 2]
 
-// Module 13214 (UserProfileWidgetsBoardEditNotice)
+// Module 13219 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp5;
-const SelectedDismissibleContentDefault = tmp5(10008);
+const SelectedDismissibleContentDefault = tmp5(10009);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

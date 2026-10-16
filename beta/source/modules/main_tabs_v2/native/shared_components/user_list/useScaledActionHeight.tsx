@@ -1,9 +1,9 @@
-// Module ID: 10222
-// Function ID: 10223
+// Module ID: 10223
+// Function ID: 10224
 // Name: useScaledActionHeight
 // Dependencies: [558, 5386, 4818, 587, 2]
 
-// Module 10222 (useScaledActionHeight)
+// Module 10223 (useScaledActionHeight)
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import useFontScale from "useFontScale" /* 5386 */;

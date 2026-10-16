@@ -1,10 +1,10 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18011
+// Function ID: 18012
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18008, 18010, 17, 18033, 2130, 2116, 1999, 7178, 18034, 1085, 9, 3, 18717, 7209, 18718, 11343, 504, 1272, 1257, 18720, 2003, 1382, 10, 18721, 14800, 584, 18722, 7192, 1255, 18723, 18724, 11031, 510, 1265, 14447, 2108, 9246, 2141, 1165, 18725, 2000, 8446, 18727, 14644, 7357, 18745, 18746, 18747, 9312, 7205, 7193, 4978, 1205, 5081, 14694, 17734, 17735, 1111, 14444, 7177, 14698, 14712, 6078, 18748, 6335, 7179, 7193, 2]
+// Dependencies: [32, 5, 18012, 18014, 17, 18037, 2130, 2116, 1999, 7178, 18038, 1085, 9, 3, 18721, 7209, 18722, 11345, 504, 1272, 1257, 18724, 2003, 1382, 10, 18725, 14805, 584, 18726, 7192, 1255, 18727, 18728, 11033, 510, 1265, 14452, 2108, 9246, 2141, 1165, 18729, 2000, 8446, 18731, 14649, 7357, 18749, 18750, 18751, 9312, 7205, 7193, 4978, 1205, 5081, 14699, 17738, 17739, 1111, 14449, 7177, 14703, 14717, 6078, 18752, 6335, 7179, 7193, 2]
 // Exports: init, initHeadlessTask
 
-// Module 18007 (NativeAppStartup)
+// Module 18011 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
@@ -15,17 +15,17 @@ import DatabaseManagerDefault from "DatabaseManager" /* 2108 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
 import timeRequireDefault from "timeRequire" /* 7209 */;
 import Future from "Future" /* 9246 */;
-import react_nativeDefault from "react-native" /* 14447 */;
+import react_nativeDefault from "react-native" /* 14452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_18008 from "module_18008" /* 18008 */;
-import superagentPatch from "superagentPatch" /* 18010 */;
+import module_18012 from "module_18012" /* 18012 */;
+import superagentPatch from "superagentPatch" /* 18014 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18033 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18037 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7178 */;
-import ManagerRegistry from "ManagerRegistry" /* 18034 */;
+import ManagerRegistry from "ManagerRegistry" /* 18038 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -123,11 +123,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f151439 = () => _true(handleNotification[31]);
+  const f151473 = () => _true(handleNotification[31]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f151439).default(arg0, false);
+      timeRequireDefault("receiveNotification", f151473).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -269,7 +269,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f151439).default(arg0, false);
+        timeRequireDefault("receiveNotification", f151473).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);

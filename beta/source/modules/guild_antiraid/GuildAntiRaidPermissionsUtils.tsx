@@ -1,13 +1,13 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 12586
+// Function ID: 12587
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4750, 10694, 1085, 558, 576, 504, 8039, 2]
+// Dependencies: [4750, 10695, 1085, 558, 576, 504, 8039, 2]
 // Exports: canEnableRaidAlerts, canReportRaid
 
-// Module 12581 (GuildAntiRaidPermissionsUtils)
+// Module 12586 (GuildAntiRaidPermissionsUtils)
 import Constants from "Constants" /* 1085 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10695 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

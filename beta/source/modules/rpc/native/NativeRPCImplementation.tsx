@@ -1,22 +1,22 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 14728
+// Function ID: 14729
 // Name: NativeRPCImplementation
-// Dependencies: [5081, 1205, 1244, 14724, 14777, 14778, 14780, 14781, 14783, 14786, 14787, 14789, 10932, 2]
+// Dependencies: [5081, 1205, 1244, 14729, 14782, 14783, 14785, 14786, 14788, 14791, 14792, 14794, 10933, 2]
 
-// Module 14723 (NativeRPCImplementation)
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10932 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14724 */;
-import commands_activitiesDefault from "commands/activities" /* 14777 */;
-import authDefault from "auth" /* 14778 */;
-import voiceSettingsDefault from "voiceSettings" /* 14780 */;
-import unsupportedDefault from "unsupported" /* 14781 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14783 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14787 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 14789 */;
+// Module 14728 (NativeRPCImplementation)
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10933 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14729 */;
+import commands_activitiesDefault from "commands/activities" /* 14782 */;
+import authDefault from "auth" /* 14783 */;
+import voiceSettingsDefault from "voiceSettings" /* 14785 */;
+import unsupportedDefault from "unsupported" /* 14786 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14788 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14792 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 14794 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14786 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14791 */;
 import size from "module_2" /* 2 */;
 
 let items;

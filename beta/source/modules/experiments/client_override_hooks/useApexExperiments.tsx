@@ -1,10 +1,10 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 10675
+// Function ID: 10676
 // Name: useApexExperiments
-// Dependencies: [32, 19, 1259, 8140, 5021, 1456, 558, 576, 10675, 504, 2]
+// Dependencies: [32, 19, 1259, 8140, 5021, 1456, 558, 576, 10676, 504, 2]
 // Exports: getApexExperiments
 
-// Module 10674 (useApexExperiments)
+// Module 10675 (useApexExperiments)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import apex_ApexTypes from "apex/ApexTypes" /* 1456 */;

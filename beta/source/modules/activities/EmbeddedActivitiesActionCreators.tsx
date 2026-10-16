@@ -1,10 +1,10 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10854
+// Function ID: 10855
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [5, 9243, 5440, 6036, 7440, 502, 2065, 2087, 4750, 1390, 5113, 2064, 2024, 6067, 1085, 1373, 2062, 7419, 10803, 9802, 10804, 10854, 10855, 10856, 10857, 584, 10813, 10858, 10816, 5636, 5441, 2029, 8606, 8508, 10859, 1998, 10860, 10867, 9797, 1265, 10868, 10876, 5924, 10877, 5299, 1126, 10481, 10878, 1273, 5938, 4739, 6038, 5106, 1295, 8492, 7174, 7015, 7365, 2050, 2049, 2]
+// Dependencies: [5, 9243, 5440, 6036, 7440, 502, 2065, 2087, 4750, 1390, 5113, 2064, 2024, 6067, 1085, 1373, 2062, 7419, 10804, 9803, 10805, 10855, 10856, 10857, 10858, 584, 10814, 10859, 10817, 5636, 5441, 2029, 8606, 8508, 10860, 1998, 10861, 10868, 9798, 1265, 10869, 10877, 5924, 10878, 5299, 1126, 10482, 10879, 1273, 5938, 4739, 6038, 5106, 1295, 8492, 7174, 7015, 7365, 2050, 2049, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 10853 (EmbeddedActivitiesActionCreators)
+// Module 10854 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
@@ -17,7 +17,7 @@ import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
 import Constants3 from "Constants" /* 7419 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
-import createProxyTicket2 from "createProxyTicket" /* 10813 */;
+import createProxyTicket2 from "createProxyTicket" /* 10814 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;

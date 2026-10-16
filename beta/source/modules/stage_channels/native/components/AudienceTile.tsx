@@ -1,10 +1,10 @@
-// Module ID: 11183
-// Function ID: 11184
+// Module ID: 11185
+// Function ID: 11186
 // Name: AudienceTile
-// Dependencies: [19, 17, 2125, 21, 5092, 587, 558, 576, 5416, 1200, 11015, 1497, 504, 5950, 7488, 5409, 6335, 1126, 11163, 4969, 11184, 2]
+// Dependencies: [19, 17, 2125, 21, 5092, 587, 558, 576, 5416, 1200, 11017, 1497, 504, 5950, 7488, 5409, 6335, 1126, 11165, 4969, 11186, 2]
 // Exports: getTileWidthStyle
 
-// Module 11183 (AudienceTile)
+// Module 11185 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -79,7 +79,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const obj3 = { style: tmp4.raisedHand, source: tmp6(11015), color: PRIMARY_800 };
+    const obj3 = { style: tmp4.raisedHand, source: tmp6(11017), color: PRIMARY_800 };
     const Icon = native.Icon;
     const tmp10 = hasOwnProperty(Icon, obj3);
     cResult[3] = PRIMARY_800;
@@ -115,7 +115,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
   }
   items[1] = activeBackground;
   const obj = { style: items, children: hasOwnProperty(Icon, obj2) };
-  obj2 = { style: tmp.raisedHand, source: tmp5(11015), color: PRIMARY_800 };
+  obj2 = { style: tmp.raisedHand, source: tmp5(11017), color: PRIMARY_800 };
   Icon = native.Icon;
   return hasOwnProperty(tmp7, obj);
 });
@@ -234,7 +234,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp37 = cResult[37];
                             }
                             if (cResult[38] !== blocked) {
-                              const tmp42 = blocked && closure_5(tmp(11163).BlockedStatus, {});
+                              const tmp42 = blocked && closure_5(tmp(11165).BlockedStatus, {});
                               cResult[38] = blocked;
                               cResult[39] = tmp42;
                               tmp41 = tmp42;
@@ -242,7 +242,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp41 = cResult[39];
                             }
                             if (cResult[40] !== ignored) {
-                              const tmp45 = ignored && closure_5(tmp(11163).IgnoredStatus, {});
+                              const tmp45 = ignored && closure_5(tmp(11165).IgnoredStatus, {});
                               cResult[40] = ignored;
                               cResult[41] = tmp45;
                               tmp44 = tmp45;
@@ -286,7 +286,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       if (cResult[55] !== stateFromStores) {
                                         let tmp57 = stateFromStores;
                                         if (tmp57) {
-                                          const obj4 = { source: user(11184), size: tmp(1200).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
+                                          const obj4 = { source: user(11186), size: tmp(1200).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
                                           const Icon = tmp(1200).Icon;
                                           tmp57 = closure_5(Icon, obj4);
                                         }

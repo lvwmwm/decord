@@ -1,9 +1,9 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16844
+// Function ID: 16845
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1102, 1126, 558, 576, 12573, 6180, 6899, 6265, 2]
+// Dependencies: [19, 21, 1102, 1126, 558, 576, 12578, 6180, 6899, 6265, 2]
 
-// Module 16839 (FocusModeOptionsActionSheet)
+// Module 16844 (FocusModeOptionsActionSheet)
 import DurationsDefault from "Durations" /* 1102 */;
 import intl5 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let obj = onSelect(576);
   const cResult = obj.c(9);
   onSelect = onSelect.onSelect;
-  const obj2 = onSelect(12573);
+  const obj2 = onSelect(12578);
   const focusModeEnabled = obj2.useFocusModeEnabled();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -155,7 +155,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(12573);
+  let obj = onSelect(12578);
   const focusModeEnabled = obj.useFocusModeEnabled();
   const ActionSheet = onSelect(6899).ActionSheet;
   const obj2 = { title: intl.string(onSelect(1126).t["sNX1E+"]), hasIcons: false, children: items };

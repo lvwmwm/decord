@@ -1,13 +1,13 @@
-// Module ID: 17496
-// Function ID: 17497
+// Module ID: 17500
+// Function ID: 17501
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10283, 1126, 9299, 9293, 8660, 2]
+// Dependencies: [19, 21, 558, 576, 10284, 1126, 9299, 9293, 8660, 2]
 
-// Module 17496 (ChannelDetailsMoreButton)
+// Module 17500 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8660 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9299 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

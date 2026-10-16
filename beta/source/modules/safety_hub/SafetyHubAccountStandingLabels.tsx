@@ -1,9 +1,9 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15021
+// Function ID: 15022
 // Name: SafetyHubAccountStandingLabels
 // Dependencies: [7509, 1126, 2]
 
-// Module 15016 (SafetyHubAccountStandingLabels)
+// Module 15021 (SafetyHubAccountStandingLabels)
 import intl from "intl" /* 1126 */;
 import SafetyHubModels from "SafetyHubModels" /* 7509 */;
 import size from "module_2" /* 2 */;

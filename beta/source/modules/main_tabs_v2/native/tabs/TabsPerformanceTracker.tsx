@@ -1,10 +1,10 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16455
+// Function ID: 16456
 // Name: TabsPerformanceTracker
 // Dependencies: [19, 1085, 3, 1265, 558, 576, 4850, 2]
 // Exports: trackTabPressed
 
-// Module 16450 (TabsPerformanceTracker)
+// Module 16455 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;

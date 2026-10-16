@@ -1,9 +1,9 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14435
+// Function ID: 14436
 // Name: NitroWheel
 // Dependencies: [19, 21, 558, 576, 6157, 9500, 2]
 
-// Module 14430 (NitroWheel)
+// Module 14435 (NitroWheel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;

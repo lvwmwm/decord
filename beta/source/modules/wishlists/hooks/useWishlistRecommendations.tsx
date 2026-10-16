@@ -1,9 +1,9 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10152
+// Function ID: 10153
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 7316, 502, 10152, 6932, 1102, 558, 576, 504, 8975, 1388, 8983, 8982, 12, 8984, 8307, 10153, 10154, 2]
+// Dependencies: [32, 19, 7316, 502, 10153, 6932, 1102, 558, 576, 504, 8975, 1388, 8983, 8982, 12, 8984, 8307, 10154, 10155, 2]
 
-// Module 10151 (useWishlistRecommendations)
+// Module 10152 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
@@ -12,13 +12,13 @@ import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 6932
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8983 */;
 import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 8984 */;
-import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10153 */;
-import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10154 */;
+import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10154 */;
+import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 7316 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10152 */;
+import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10153 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

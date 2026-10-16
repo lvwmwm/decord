@@ -1,14 +1,14 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14742
+// Function ID: 14743
 // Name: definitions
-// Dependencies: [14738, 8453, 10941, 14739, 8606, 2]
+// Dependencies: [14743, 8453, 10942, 14744, 8606, 2]
 
-// Module 14737 (definitions)
+// Module 14742 (definitions)
 import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
-import ActivityPlatform from "ActivityPlatform" /* 10941 */;
-import helpers from "helpers" /* 14738 */;
-import contextMenuIcons from "contextMenuIcons" /* 14739 */;
+import ActivityPlatform from "ActivityPlatform" /* 10942 */;
+import helpers from "helpers" /* 14743 */;
+import contextMenuIcons from "contextMenuIcons" /* 14744 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {

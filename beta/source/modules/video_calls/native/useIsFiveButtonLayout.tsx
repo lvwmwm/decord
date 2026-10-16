@@ -1,9 +1,9 @@
-// Module ID: 10844
-// Function ID: 10845
+// Module ID: 10845
+// Function ID: 10846
 // Name: useIsFiveButtonLayout
-// Dependencies: [2065, 2087, 558, 576, 504, 10358, 10845, 10847, 6973, 2]
+// Dependencies: [2065, 2087, 558, 576, 504, 10359, 10846, 10848, 6973, 2]
 
-// Module 10844 (useIsFiveButtonLayout)
+// Module 10845 (useIsFiveButtonLayout)
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     guild_id = null;
   }
   let guild_id1;
-  const tmp10 = guild_id(10845);
+  const tmp10 = guild_id(10846);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     tmp19 = cResult[8];
   }
   let id1;
-  const tmp9Result = guild_id(10847);
+  const tmp9Result = guild_id(10848);
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
@@ -146,7 +146,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     guild_id = null;
   }
   let guild_id1;
-  const tmp6 = guild_id(10845);
+  const tmp6 = guild_id(10846);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -173,7 +173,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     flag = false;
   }
   let id1;
-  const tmp5Result = guild_id(10847);
+  const tmp5Result = guild_id(10848);
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }

@@ -1,9 +1,9 @@
-// Module ID: 15489
-// Function ID: 15490
+// Module ID: 15494
+// Function ID: 15495
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5081, 5972, 15370, 21, 5092, 558, 15485, 15367, 576, 9007, 15490, 504, 1382, 6157, 4827, 9177, 2]
+// Dependencies: [19, 17, 5081, 5972, 15375, 21, 5092, 558, 15490, 15372, 576, 9007, 15495, 504, 1382, 6157, 4827, 9177, 2]
 
-// Module 15489 (QuestDockBountyIllustration)
+// Module 15494 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,12 +13,12 @@ import QuestConstants from "QuestConstants" /* 5972 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import APNGPlayer2 from "APNGPlayer" /* 9007 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9177 */;
-import QuestDockHooks from "QuestDockHooks" /* 15367 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15485 */;
-import _modDef15490 from "module_15490" /* 15490 */;
+import QuestDockHooks from "QuestDockHooks" /* 15372 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15490 */;
+import _modDef15495 from "module_15495" /* 15495 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockConstants from "QuestDockConstants" /* 15375 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -290,7 +290,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     const effect = obj2.useEffect(tmp7, tmp8);
     if (cResult[4] !== tmp4.fill) {
       const APNGPlayer = APNGPlayer2.APNGPlayer;
-      const tmp13 = <APNGPlayer ref={ref} url={_modDef15490} style={tmp4.fill} autoplay={false} />;
+      const tmp13 = <APNGPlayer ref={ref} url={_modDef15495} style={tmp4.fill} autoplay={false} />;
       cResult[4] = tmp4.fill;
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -328,7 +328,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef15490} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef15495} style={tmp.fill} autoplay={false} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDock3DOrbsIllustration() {
@@ -369,7 +369,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef15490 };
+      const obj3 = { uri: _modDef15495 };
       cResult[4] = obj3;
       tmp10 = obj3;
     } else {
@@ -406,7 +406,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     tmp6Result = tmp6(closure_12, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp5, accessible: false };
-    obj4 = { uri: _modDef15490 };
+    obj4 = { uri: _modDef15495 };
     const tmp8 = FastImageDefault;
     tmp6Result = tmp6(tmp8, obj3);
   }

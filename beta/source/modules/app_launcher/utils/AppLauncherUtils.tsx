@@ -1,7 +1,7 @@
 // Module ID: 9242
 // Function ID: 9243
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9243, 2022, 11775, 1085, 5403, 5085, 1126, 2029, 8606, 9228, 11718, 1382, 1998, 7242, 9797, 7365, 7174, 5299, 1415, 10623, 11810, 7238, 10861, 2]
+// Dependencies: [109, 5, 9243, 2022, 11777, 1085, 5403, 5085, 1126, 2029, 8606, 9228, 11720, 1382, 1998, 7242, 9798, 7365, 7174, 5299, 1415, 10624, 11812, 7238, 10862, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9242 (AppLauncherUtils)
@@ -16,15 +16,15 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10861 */;
-import getPlatformDefault from "getPlatform" /* 11718 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 11810 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10624 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10862 */;
+import getPlatformDefault from "getPlatform" /* 11720 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 11812 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import AppLauncherStore from "AppLauncherStore" /* 11775 */;
+import AppLauncherStore from "AppLauncherStore" /* 11777 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

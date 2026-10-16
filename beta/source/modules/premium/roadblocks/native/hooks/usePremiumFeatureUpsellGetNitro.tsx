@@ -1,10 +1,10 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 9515
+// Function ID: 9516
 // Name: usePremiumFeatureUpsellGetNitro
 // Dependencies: [32, 19, 4775, 7168, 1392, 1085, 6852, 7142, 5724, 8087, 4808, 1126, 4985, 2]
 // Exports: default
 
-// Module 9514 (usePremiumFeatureUpsellGetNitro)
+// Module 9515 (usePremiumFeatureUpsellGetNitro)
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;

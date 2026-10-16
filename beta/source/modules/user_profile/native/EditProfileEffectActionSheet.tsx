@@ -1,9 +1,9 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14892
+// Function ID: 14893
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7275, 7265, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8291, 8287, 8284, 1126, 5088, 8292, 6840, 10090, 504, 14888, 8286, 8307, 14889, 13478, 13479, 8293, 10511, 5391, 2]
+// Dependencies: [32, 19, 17, 7275, 7265, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8291, 8287, 8284, 1126, 5088, 8292, 6840, 10091, 504, 14893, 8286, 8307, 14894, 13483, 13484, 8293, 10512, 5391, 2]
 
-// Module 14887 (EditProfileEffectActionSheet)
+// Module 14892 (EditProfileEffectActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,8 +16,8 @@ import UserProfileActionCreators from "UserProfileActionCreators" /* 8287 */;
 import useShopProductItems from "useShopProductItems" /* 8291 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 14889 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10512 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 14894 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -760,7 +760,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(10511), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(10512), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5391);

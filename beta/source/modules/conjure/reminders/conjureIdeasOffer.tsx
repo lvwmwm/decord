@@ -1,11 +1,11 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17188
+// Function ID: 17189
 // Name: conjureIdeasOffer
-// Dependencies: [12999, 2]
+// Dependencies: [13004, 2]
 // Exports: isIdeasOfferTurn
 
-// Module 17184 (conjureIdeasOffer)
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
+// Module 17188 (conjureIdeasOffer)
+import conjureChatTurns from "conjureChatTurns" /* 13004 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/reminders/conjureIdeasOffer.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 10737
-// Function ID: 10738
+// Module ID: 10738
+// Function ID: 10739
 // Name: UserProfileSection
 // Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 4827, 6881, 4967, 8579, 5088, 2]
 
-// Module 10737 (UserProfileSection)
+// Module 10738 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

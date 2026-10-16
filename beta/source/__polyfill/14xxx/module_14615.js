@@ -1,48 +1,15 @@
 // Module ID: 14615
 // Function ID: 14616
-// Dependencies: [14558, 14555, 14554, 14616, 14575, 14604, 14589, 14557, 14584]
+// Dependencies: [14563, 14582, 14572]
 
 // Module 14615
-import _mod14554 from "module_14554" /* 14554 */;
-import _mod14555 from "module_14555" /* 14555 */;
-import _mod14557 from "module_14557" /* 14557 */;
-import _mod14558 from "module_14558" /* 14558 */;
-import _mod14575 from "module_14575" /* 14575 */;
-import _mod14604 from "module_14604" /* 14604 */;
+import _mod14563 from "module_14563" /* 14563 */;
+import _mod14572 from "module_14572" /* 14572 */;
+import module_14582 from "module_14582" /* 14582 */;
 
-let closure_4 = _mod14558([].concat);
-if (!assign) {
-  assign = function assign(arg0, arg1) {
-    let num;
-    const tmp = _mod14575(arg0);
-    const length = arguments.length;
-    const f = _mod14604.f;
-    for (let num = 1; length > num; num = num + 1) {
-      let arr;
-      let num2;
-      let tmp3 = require;
-      let tmp5 = _mod14557(arguments[num]);
-      if (f) {
-        let tmp8 = tmp3(14616)(tmp5);
-        arr = closure_4(tmp8, f(tmp5));
-      } else {
-        arr = tmp3(14616)(tmp5);
-      }
-      let length2 = arr.length;
-      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
-        let tmp9 = arr[num2];
-        let tmp10 = require;
-        let tmp12 = _mod14554;
-        if (tmp12) {
-          tmp12 = !tmp10(14584)(tmp2, tmp5, tmp9);
-        }
-        if (!tmp12) {
-          tmp[tmp9] = tmp5[tmp9];
-        }
-      }
-    }
-    return tmp;
-  };
+let closure_0 = _mod14563(Function.toString);
+if (!module_14582(_mod14572.inspectSource)) {
+  _mod14572.inspectSource = (arg0) => closure_0(arg0);
 }
 
-export default assign;
+export default _mod14572.inspectSource;

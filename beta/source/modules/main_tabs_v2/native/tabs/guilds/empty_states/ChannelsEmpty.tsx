@@ -1,9 +1,9 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16697
+// Function ID: 16698
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4750, 1085, 21, 5092, 5088, 587, 558, 576, 573, 8633, 8601, 15375, 8577, 1200, 16693, 1126, 6157, 16694, 5380, 2]
+// Dependencies: [19, 17, 4750, 1085, 21, 5092, 5088, 587, 558, 576, 573, 8633, 8601, 15380, 8577, 1200, 16698, 1126, 6157, 16699, 5380, 2]
 
-// Module 16692 (ChannelsEmpty)
+// Module 16697 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,8 +11,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8601 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16693 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16694 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16698 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16699 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[7];
   }
-  const tmpResult2 = guild(15375);
+  const tmpResult2 = guild(15380);
   const youBarTotalHeight = tmpResult2.useYouBarTotalHeight(16);
   if (cResult[8] !== youBarTotalHeight) {
     const obj2 = { paddingBottom: youBarTotalHeight };
@@ -312,7 +312,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(15375);
+  const obj2 = guild(15380);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {

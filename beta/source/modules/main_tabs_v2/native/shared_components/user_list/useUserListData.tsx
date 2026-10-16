@@ -1,9 +1,9 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10220
+// Function ID: 10221
 // Name: useUserListData
 // Dependencies: [109, 32, 19, 7346, 7342, 7343, 1404, 4760, 1390, 1085, 4745, 7341, 8699, 584, 7345, 6097, 12, 1126, 558, 576, 8712, 2]
 
-// Module 10219 (useUserListData)
+// Module 10220 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f104354 = (items) => items.items;
+  const f104366 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f104354) }];
-  const obj = { title: null, items: items11.flatMap(f104354) };
+  let items9 = [{ title: null, items: items11.flatMap(f104366) }];
+  const obj = { title: null, items: items11.flatMap(f104366) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {

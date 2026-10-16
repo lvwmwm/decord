@@ -1,14 +1,13 @@
 // Module ID: 9978
 // Function ID: 9979
-// Dependencies: [41, 42, 93, 95, 98, 9839, 9821, 9971]
+// Dependencies: [41, 42, 93, 95, 98, 9840, 9972]
 
 // Module 9978
-import assignSimilarDate from "assignSimilarDate" /* 9821 */;
-import now2 from "now" /* 9839 */;
-import _mod9971 from "module_9971" /* 9971 */;
+import now2 from "now" /* 9840 */;
+import _mod9972 from "module_9972" /* 9972 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -82,10 +81,10 @@ if (!tmp4) {
     arg0.default = arg1;
   });
 }
-let closure_8 = tmp4;
+let closure_6 = tmp4;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function c(arg0) {
+  fn = function o(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -120,19 +119,19 @@ if (!fn) {
         }
       }
     }
-    closure_8(obj, __esModule);
+    closure_6(obj, __esModule);
     return obj;
   };
 }
 const now = fn(now2);
-class UKCasualTimeParser {
+class UKCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKCasualTimeParser);
-    const obj = _getPrototypeOf(UKCasualTimeParser);
+    _classCallCheck(this, UKCasualDateParser);
+    const obj = _getPrototypeOf(UKCasualDateParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -142,65 +141,39 @@ class UKCasualTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKCasualTimeParser, _mod9971.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(UKCasualDateParser, _mod9972.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
   key: "innerPatternString",
   value: function innerPatternString(arg0) {
-    return "(\u0437\u0430\u0440\u0430\u0437|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E\\s*\u0432\u0435\u0447\u043E\u0440\u0430|\u043C\u0438\u043D\u0443\u043B\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0457\\s*\u043D\u043E\u0447\u0456|\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456\\s*\u0432\u043D\u043E\u0447\u0456|\u0446\u0456\u0454\u0457\\s*\u043D\u043E\u0447\u0456|\u0446\u044C\u043E\u0433\u043E \u0440\u0430\u043D\u043A\u0443|\u0432\u0440\u0430\u043D\u0446\u0456|\u0440\u0430\u043D\u043A\u0443|\u0437\u0440\u0430\u043D\u043A\u0443|\u043E\u043F\u0456\u0432\u0434\u043D\u0456|\u0432\u0432\u0435\u0447\u0435\u0440\u0456|\u0432\u0435\u0447\u043E\u0440\u0430|\u043E\u043F\u0456\u0432\u043D\u043E\u0447\u0456|\u0432\u043D\u043E\u0447\u0456)";
+    return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
   }
 };
 let items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const str = arg1[0];
-      const str2 = str.toLowerCase();
-      let parsingComponents = refDate.createParsingComponents();
-      if ("\u0437\u0430\u0440\u0430\u0437" === str2) {
-        return now.now(refDate.reference);
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+        return now.today(reference.reference);
+      } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.yesterday(reference.reference);
+      } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.tomorrow(reference.reference);
+      } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.theDayAfter(reference.reference, 2);
+      } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+        return now.theDayAfter(reference.reference, 3);
+      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.theDayBefore(reference.reference, 2);
+      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+        return now.theDayBefore(reference.reference, 3);
       } else {
-        if ("\u0432\u0432\u0435\u0447\u0435\u0440\u0456" !== str2) {
-          if ("\u0432\u0435\u0447\u043E\u0440\u0430" !== str2) {
-            if (!str2.endsWith("\u0432\u0440\u0430\u043D\u0446\u0456")) {
-              if (!str2.endsWith("\u0440\u0430\u043D\u043A\u0443")) {
-                if (!str2.endsWith("\u0437\u0440\u0430\u043D\u043A\u0443")) {
-                  if (str2.endsWith("\u043E\u043F\u0456\u0432\u0434\u043D\u0456")) {
-                    return now.noon(refDate.reference);
-                  } else if (str2.match(/минулої\s*ночі/)) {
-                    return now.lastNight(refDate.reference);
-                  } else if (str2.match(/минулого\s*вечора/)) {
-                    return now.yesterdayEvening(refDate.reference);
-                  } else {
-                    if (str2.match(/наступної\s*ночі/)) {
-                      let num2 = 2;
-                      if (refDate.getHours() < 22) {
-                        num2 = 1;
-                      }
-                      const _Date = Date;
-                      const self = this;
-                      self2 = this;
-                      const date = new Date(refDate.getTime());
-                      date.setDate(date.getDate() + num2);
-                      assignSimilarDate.assignSimilarDate(parsingComponents, date);
-                      parsingComponents.imply("hour", 1);
-                    }
-                    if (!str2.match(/цієї\s*ночі/)) {
-                      return parsingComponents;
-                    }
-                    parsingComponents = now.midnight(refDate.reference);
-                  }
-                }
-              }
-            }
-            return now.morning(refDate.reference);
-          }
-        }
-        return now.evening(refDate.reference);
+        return tmp2;
       }
     }
   }
 ];
 
-export default _createClass(UKCasualTimeParser, items);
+export default _createClass(UKCasualDateParser, items);

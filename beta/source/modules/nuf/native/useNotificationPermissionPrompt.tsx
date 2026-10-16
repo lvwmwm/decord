@@ -1,15 +1,15 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16987
+// Function ID: 16988
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2058, 5757, 2059, 12123, 558, 576, 504, 2061, 12132, 16984, 16986, 2]
+// Dependencies: [19, 2058, 5757, 2059, 12125, 558, 576, 504, 2061, 12134, 16988, 16990, 2]
 
-// Module 16983 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 12132 */;
+// Module 16987 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 12134 */;
 import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2058 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12123 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       tmp14 = cResult[7];
     }
     const effect = react.useEffect(tmp13, tmp14);
-    const tmpResult4 = tmp(16984);
+    const tmpResult4 = tmp(16988);
     const guildOpenNudge = tmpResult4.useGuildOpenNudge();
     class S {
       constructor() {
@@ -120,9 +120,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       }
     }
   }, items2);
-  const obj3 = stateFromStores(16984);
+  const obj3 = stateFromStores(16988);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(16986);
+  const obj4 = stateFromStores(16990);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 });
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");

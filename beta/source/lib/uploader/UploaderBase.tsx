@@ -1,9 +1,9 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9697
+// Function ID: 9698
 // Name: UploaderBase
 // Dependencies: [5, 1085, 5085, 3, 580, 12, 7785, 7762, 7763, 2]
 
-// Module 9696 (UploaderBase)
+// Module 9697 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod580 from "module_580" /* 580 */;

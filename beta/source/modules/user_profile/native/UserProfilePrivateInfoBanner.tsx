@@ -1,9 +1,9 @@
-// Module ID: 13393
-// Function ID: 13394
+// Module ID: 13398
+// Function ID: 13399
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: [17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
 
-// Module 13393 (UserProfilePrivateInfoBanner)
+// Module 13398 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;

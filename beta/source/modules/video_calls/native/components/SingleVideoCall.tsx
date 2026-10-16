@@ -1,14 +1,14 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 11145
+// Function ID: 11146
 // Name: SingleVideoCall
-// Dependencies: [19, 10354, 21, 558, 576, 1631, 6852, 5106, 8299, 10905, 1200, 10894, 2]
+// Dependencies: [19, 10355, 21, 558, 576, 1631, 6852, 5106, 8299, 10906, 1200, 10895, 2]
 
-// Module 11143 (SingleVideoCall)
+// Module 11145 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import ChannelCallStore from "ChannelCallStore" /* 10355 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
           }
         }
       }
-      tmp4(10905);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1200).AvatarSizes.PROFILE} resizeMode={channel(10894).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(10906);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1200).AvatarSizes.PROFILE} resizeMode={channel(10895).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

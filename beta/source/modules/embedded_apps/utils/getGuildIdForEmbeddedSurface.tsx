@@ -1,10 +1,10 @@
-// Module ID: 10943
-// Function ID: 10944
+// Module ID: 10944
+// Function ID: 10945
 // Name: getGuildIdForEmbeddedSurface
 // Dependencies: [8606, 2]
 // Exports: default
 
-// Module 10943 (getGuildIdForEmbeddedSurface)
+// Module 10944 (getGuildIdForEmbeddedSurface)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import size from "module_2" /* 2 */;
 

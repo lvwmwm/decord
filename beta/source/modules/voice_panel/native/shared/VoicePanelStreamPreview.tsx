@@ -1,9 +1,9 @@
-// Module ID: 13163
-// Function ID: 13164
+// Module ID: 13168
+// Function ID: 13169
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 5897, 502, 21, 4850, 5379, 5092, 587, 558, 576, 11174, 5900, 504, 5093, 6762, 6157, 5088, 1126, 2]
+// Dependencies: [19, 17, 5897, 502, 21, 4850, 5379, 5092, 587, 558, 576, 11176, 5900, 504, 5093, 6762, 6157, 5088, 1126, 2]
 
-// Module 13163 (VoicePanelStreamPreview)
+// Module 13168 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
@@ -65,7 +65,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSt
   ({ disabled, onPress, layout } = mode);
   const tmp4 = closure_12();
   let guildId;
-  const tmp6 = stream(11174);
+  const tmp6 = stream(11176);
   if (stream != null) {
     guildId = stream.guildId;
   }
@@ -247,7 +247,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSt
   const tmp = closure_12();
   let tmp2 = stream;
   let guildId;
-  const tmp4 = stream(11174);
+  const tmp4 = stream(11176);
   if (stream != null) {
     guildId = stream.guildId;
   }

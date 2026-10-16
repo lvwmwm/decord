@@ -1,12 +1,12 @@
-// Module ID: 12697
-// Function ID: 12698
+// Module ID: 12702
+// Function ID: 12703
 // Name: useChannelMoveAction
-// Dependencies: [6801, 2087, 4750, 4760, 4939, 5966, 1390, 12698, 1085, 558, 576, 504, 2090, 12699, 12701, 12700, 5421, 1126, 2]
+// Dependencies: [6801, 2087, 4750, 4760, 4939, 5966, 1390, 12703, 1085, 558, 576, 504, 2090, 12704, 12706, 12705, 5421, 1126, 2]
 
-// Module 12697 (useChannelMoveAction)
+// Module 12702 (useChannelMoveAction)
 import Constants from "Constants" /* 1085 */;
-import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 12699 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 12701 */;
+import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 12704 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 12706 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildStore_mod from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
@@ -14,14 +14,14 @@ import RelationshipStore from "RelationshipStore" /* 4760 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
-import getChannelListRecord from "getChannelListRecord" /* 12698 */;
+import getChannelListRecord from "getChannelListRecord" /* 12703 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let importDefault;
 
-const f113273 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
+const f113299 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
 function areDestinationsEqual(arr, arg1) {
   let closure_0 = arg1;
   const tmp = arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.label === closure_0[index].label && id.disabled === closure_0[index].disabled);
@@ -457,7 +457,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelMo
     }
     if (listChannel.isCategory()) {
       let _categories = categories._categories;
-      found = _categories.filter(f113273);
+      found = _categories.filter(f113299);
     } else {
       const tmpResult3 = tmp(tmp2[14]);
       found = tmpResult3.getSectionSiblings(listChannel, categories);
@@ -495,7 +495,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelMo
   const categoryKey = obj.getCategoryKey(listChannel.parent_id, categories);
   if (listChannel.isCategory()) {
     let _categories = categories._categories;
-    found = _categories.filter(f113273);
+    found = _categories.filter(f113299);
   } else {
     const tmp3Result = tmp3(tmp4[14]);
     found = tmp3Result.getSectionSiblings(listChannel, categories);

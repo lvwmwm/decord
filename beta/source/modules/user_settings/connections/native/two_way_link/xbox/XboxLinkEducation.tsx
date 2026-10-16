@@ -1,9 +1,9 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 12916
+// Function ID: 12917
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 9210, 2128, 12912, 6157, 1126, 5088, 5379, 6814, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 9210, 2128, 12917, 6157, 1126, 5088, 5379, 6814, 2]
 
-// Module 12911 (XboxLinkEducation)
+// Module 12916 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -14,7 +14,7 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
-import _modDef12912 from "module_12912" /* 12912 */;
+import _modDef12917 from "module_12917" /* 12917 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef12912 };
+    const obj10 = { uri: _modDef12917 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef12912 };
+    const obj = { uri: _modDef12917 };
     return obj;
   }, []);
   items = [, , ];

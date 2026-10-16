@@ -1,14 +1,14 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 15900
+// Function ID: 15901
 // Name: AchievementsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15896, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15901, 4817, 2]
 
-// Module 15895 (AchievementsIcon)
+// Module 15900 (AchievementsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 15896 */;
+import AssetRegistry from "AssetRegistry" /* 15901 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

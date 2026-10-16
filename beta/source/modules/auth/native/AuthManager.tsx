@@ -1,20 +1,20 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16429
+// Function ID: 16430
 // Name: AuthManager
-// Dependencies: [5, 17, 12123, 1085, 7478, 12430, 2002, 584, 2061, 7501, 16425, 1382, 12126, 8678, 12514, 12429, 7053, 13620, 2]
+// Dependencies: [5, 17, 12125, 1085, 7478, 12435, 2002, 584, 2061, 7501, 16430, 1382, 12128, 8678, 12519, 12434, 7053, 13625, 2]
 
-// Module 16424 (AuthManager)
+// Module 16429 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import transitionToGuild from "transitionToGuild" /* 7053 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12123 */;
-import NUFActionCreators from "NUFActionCreators" /* 12429 */;
-import NUFConstants from "NUFConstants" /* 12430 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12514 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13620 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12125 */;
+import NUFActionCreators from "NUFActionCreators" /* 12434 */;
+import NUFConstants from "NUFConstants" /* 12435 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12519 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
@@ -25,7 +25,7 @@ let DCDShortcutManager, LOGIN, c2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PushNotificationActionCreators = tmp(12126);
+const PushNotificationActionCreators = tmp(12128);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = react_native);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const ME = Constants.ME;

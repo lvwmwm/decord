@@ -1,9 +1,9 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15091
+// Function ID: 15092
 // Name: IgnoredUserRow
-// Dependencies: [19, 1390, 21, 7018, 558, 576, 6852, 1126, 8299, 1200, 15083, 5379, 6180, 504, 2]
+// Dependencies: [19, 1390, 21, 7018, 558, 576, 6852, 1126, 8299, 1200, 15088, 5379, 6180, 504, 2]
 
-// Module 15086 (IgnoredUserRow)
+// Module 15091 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
@@ -143,7 +143,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
             const tmp24 = jsx(userRecord(5379).Button, { size: "sm", variant: "secondary", text: tmp19, accessibilityLabel: tmp4, onPress: tmp21 });
           }
         }
-        const tmp18 = jsx(userRecord(15083).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp15, onAccessibilityAction: tmp7 });
+        const tmp18 = jsx(userRecord(15088).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp15, onAccessibilityAction: tmp7 });
         cResult[16] = tmp7;
         cResult[17] = tmp15;
         cResult[18] = userRecord;

@@ -1,9 +1,9 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 10920
+// Function ID: 10921
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [2064, 558, 576, 504, 2]
 
-// Module 10919 (useCurrentEmbeddedActivity)
+// Module 10920 (useCurrentEmbeddedActivity)
 import react from "react" /* 576 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

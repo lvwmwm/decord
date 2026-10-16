@@ -1,16 +1,16 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16805
+// Function ID: 16806
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 5758, 2065, 6078, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 16751, 504, 8646, 1126, 16754, 5103, 10283, 16801, 10280, 1200, 6157, 2]
+// Dependencies: [19, 502, 5758, 2065, 6078, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 16756, 504, 8646, 1126, 16759, 5103, 10284, 16806, 10281, 1200, 6157, 2]
 
-// Module 16800 (GuildsBarDirectMessage)
+// Module 16805 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import CallStore from "CallStore" /* 5758 */;

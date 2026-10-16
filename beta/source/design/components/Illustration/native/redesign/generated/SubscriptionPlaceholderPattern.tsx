@@ -1,10 +1,10 @@
-// Module ID: 13793
-// Function ID: 13794
+// Module ID: 13798
+// Function ID: 13799
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 17, 21, 8355, 13794, 13795, 13796, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8355, 13799, 13800, 13801, 558, 576, 4969, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 13793 (SubscriptionPlaceholderPattern)
+// Module 13798 (SubscriptionPlaceholderPattern)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

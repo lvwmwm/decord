@@ -1,17 +1,17 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10925
+// Function ID: 10926
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2064, 2024, 1373, 21, 5092, 558, 576, 10922, 1497, 584, 10925, 10926, 10928, 10952, 10918, 504, 10957, 10812, 10958, 5106, 10960, 2]
+// Dependencies: [109, 32, 19, 17, 2064, 2024, 1373, 21, 5092, 558, 576, 10923, 1497, 584, 10926, 10927, 10929, 10953, 10919, 504, 10959, 10813, 10960, 5106, 10962, 2]
 
-// Module 10924 (EmbeddedActivityView)
+// Module 10925 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10812 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10925 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 10926 */;
-import activityWebViewController from "activityWebViewController" /* 10928 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10813 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10926 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 10927 */;
+import activityWebViewController from "activityWebViewController" /* 10929 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -463,7 +463,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     }
   }
   const obj2 = { iframeId: first, deepLinkQueryParams: tmp5, applicationId: tmp4 };
-  const BaseEmbeddedAppWebView = tmp(10952).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = tmp(10953).BaseEmbeddedAppWebView;
   const merged = Object.assign(tmp6);
   const tmp14 = closure_14(BaseEmbeddedAppWebView, obj2);
   cResult[6] = tmp4;
@@ -484,7 +484,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     deepLinkQueryParams,
     applicationId
   };
-  const BaseEmbeddedAppWebView = applicationId(10952).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(10953).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_14(BaseEmbeddedAppWebView, obj);
 });

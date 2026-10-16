@@ -1,9 +1,9 @@
-// Module ID: 13752
-// Function ID: 13753
+// Module ID: 13757
+// Function ID: 13758
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1390, 1392, 558, 576, 504, 10536, 8307, 5396, 2]
+// Dependencies: [1390, 1392, 558, 576, 504, 10537, 8307, 5396, 2]
 
-// Module 13752 (useMaybeFetchTieredTenureBadgeData)
+// Module 13757 (useMaybeFetchTieredTenureBadgeData)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = tmp(10536);
+  const tmpResult2 = tmp(10537);
   const isPremiumSubscriber = tmpResult2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   if (cResult[2] === stateFromStores) {
     let tmp9;

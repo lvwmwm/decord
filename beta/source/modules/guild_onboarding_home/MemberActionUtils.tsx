@@ -1,9 +1,9 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 11988
+// Function ID: 11989
 // Name: MemberActionUtils
 // Dependencies: [2125, 6926, 7911, 4736, 558, 576, 6927, 573, 1403, 2]
 
-// Module 11986 (MemberActionUtils)
+// Module 11988 (MemberActionUtils)
 import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 6927 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;

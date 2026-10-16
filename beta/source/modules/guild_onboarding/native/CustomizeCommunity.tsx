@@ -1,9 +1,9 @@
-// Module ID: 10699
-// Function ID: 10700
+// Module ID: 10700
+// Function ID: 10701
 // Name: CustomizeCommunity
-// Dependencies: [19, 17, 5987, 2087, 6035, 4939, 6789, 6790, 1085, 1393, 5967, 21, 5092, 587, 5906, 558, 576, 4825, 5031, 504, 10700, 10701, 6157, 1126, 1200, 5088, 6795, 6815, 6850, 6879, 1631, 10702, 6788, 6800, 6794, 6820, 1415, 1388, 4818, 4850, 5093, 10703, 5056, 6825, 2000, 6185, 6848, 6816, 2]
+// Dependencies: [19, 17, 5987, 2087, 6035, 4939, 6789, 6790, 1085, 1393, 5967, 21, 5092, 587, 5906, 558, 576, 4825, 5031, 504, 10701, 10702, 6157, 1126, 1200, 5088, 6795, 6815, 6850, 6879, 1631, 10703, 6788, 6800, 6794, 6820, 1415, 1388, 4818, 4850, 5093, 10704, 5056, 6825, 2000, 6185, 6848, 6816, 2]
 
-// Module 10699 (CustomizeCommunity)
+// Module 10700 (CustomizeCommunity)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -248,7 +248,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyC
       tmp11 = cResult[4];
     }
     const emptyContainer = tmp4.emptyContainer;
-    const tmp5Result = stateFromStores(isThemeDarkResult ? 10700 : 10701);
+    const tmp5Result = stateFromStores(isThemeDarkResult ? 10701 : 10702);
     if (cResult[5] === tmp4.emptyContainerImage) {
       let tmp13;
       let tmp16;
@@ -350,7 +350,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyC
   const tmp4 = importDefault;
   importDefault = obj2.useStateFromStores(items, () => guildId.getGuildId());
   const obj3 = { style: tmp.emptyContainer, children: items1 };
-  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 10700 : 10701) };
+  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 10701 : 10702) };
   const tmp9 = FastImageDefault;
   items1 = [closure_15(tmp9, obj4), , ];
   const obj5 = { style: tmp.emptyContainerHeader, children: intl.string(setTab(1126).t.leKHQz) };
@@ -886,8 +886,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomizeCom
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp12);
-  ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, newAnswersCount, onboardingPrompts } = stateFromStores(10702)(guildId));
-  stateFromStores(10702)(guildId);
+  ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, newAnswersCount, onboardingPrompts } = stateFromStores(10703)(guildId));
+  stateFromStores(10703)(guildId);
   if (cResult[6] === guildId) {
     class N {
       constructor() {
@@ -970,7 +970,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomizeCom
     }
     return prop;
   });
-  const tmp7 = stateFromStores(10702)(guildId);
+  const tmp7 = stateFromStores(10703)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

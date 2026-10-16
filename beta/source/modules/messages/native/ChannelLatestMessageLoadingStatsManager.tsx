@@ -1,9 +1,9 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 10692
+// Function ID: 10693
 // Name: ChannelLatestMessageLoadingStatsManager
 // Dependencies: [1085, 7183, 2]
 
-// Module 10691 (ChannelLatestMessageLoadingStatsManager)
+// Module 10692 (ChannelLatestMessageLoadingStatsManager)
 import Constants from "Constants" /* 1085 */;
 import Clickstream from "Clickstream" /* 7183 */;
 import size from "module_2" /* 2 */;

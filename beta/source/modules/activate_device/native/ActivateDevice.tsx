@@ -1,14 +1,14 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 14107
+// Function ID: 14108
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14103, 14105, 10862, 12340, 14106, 9222, 14107, 1899, 14108, 14112, 14113, 1415, 14114, 6157, 6814, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14108, 14110, 10863, 12345, 14111, 9222, 14112, 1899, 14113, 14117, 14118, 1415, 14119, 6157, 6814, 2]
 
-// Module 14102 (ActivateDevice)
+// Module 14107 (ActivateDevice)
 import nativeDefault from "native" /* 587 */;
 import react_nativeDefault from "react-native" /* 1899 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 12340 */;
-import _modDef14106 from "module_14106" /* 14106 */;
-import _modDef14107 from "module_14107" /* 14107 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 12345 */;
+import _modDef14111 from "module_14111" /* 14111 */;
+import _modDef14112 from "module_14112" /* 14112 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -411,7 +411,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    const source = obj9.makeSource(require("module_14114"));
+    const source = obj9.makeSource(require("module_14119"));
     cResult[22] = source;
     tmp36 = source;
   } else {
@@ -531,14 +531,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef14106);
+        closure_3(_modDef14111);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[13]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef14107);
+          closure_3(_modDef14112);
         }
       }
     }
@@ -574,7 +574,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     }
   }
   const obj6 = { style: tmp.background, children: items6 };
-  const obj7 = { source: tmp7Result.makeSource(require("module_14114")), style: tmp.imageStyle };
+  const obj7 = { source: tmp7Result.makeSource(require("module_14119")), style: tmp.imageStyle };
   const tmp23 = require("FastImage");
   tmp7Result = first(first1[19]);
   items6 = [closure_8(tmp23, obj7), ];

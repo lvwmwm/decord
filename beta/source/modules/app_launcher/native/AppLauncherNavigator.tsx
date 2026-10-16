@@ -1,19 +1,19 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11758
+// Function ID: 11759
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1502, 1085, 21, 9340, 5092, 587, 558, 576, 6852, 6879, 1504, 5375, 4987, 1629, 6688, 5107, 11757, 11815, 11841, 11903, 10622, 2]
+// Dependencies: [109, 19, 1502, 1085, 21, 9340, 5092, 587, 558, 576, 6852, 6879, 1504, 5375, 4987, 1629, 6688, 5107, 11759, 11817, 11843, 11905, 10623, 2]
 
-// Module 11756 (AppLauncherNavigator)
+// Module 11758 (AppLauncherNavigator)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11757 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11815 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11841 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11903 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11759 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11817 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11843 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 11905 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -211,7 +211,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                         return tmp69;
                                                       }
                                                       const obj5 = { value: tmp68, children: tmp62 };
-                                                      const tmp71 = closure_9(entrypoint(10622).AppLauncherContext.Provider, obj5);
+                                                      const tmp71 = closure_9(entrypoint(10623).AppLauncherContext.Provider, obj5);
                                                       cResult[61] = tmp62;
                                                       cResult[62] = tmp68;
                                                       cResult[63] = tmp71;
@@ -464,7 +464,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp23 = obj19;
   }
   const obj21 = { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp23, keyboardCloseReasonRef, onActivityItemSelected, width }, children: tmp11Result };
-  return closure_9(entrypoint(10622).AppLauncherContext.Provider, obj21);
+  return closure_9(entrypoint(10623).AppLauncherContext.Provider, obj21);
 }));
 const result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNavigator.tsx");
 

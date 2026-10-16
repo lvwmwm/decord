@@ -1,10 +1,10 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13162
+// Function ID: 13163
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8454, 21, 5092, 587, 558, 576, 6852, 4739, 13158, 573, 5924, 13159, 7422, 1126, 8229, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8273, 10784, 4806, 13161, 8380, 4977, 7488, 7477, 5763, 1415, 9200, 7094, 8458, 10788, 1384, 8486, 2]
+// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10649, 4750, 4760, 2116, 5759, 5113, 1085, 8454, 21, 5092, 587, 558, 576, 6852, 4739, 13163, 573, 5924, 13164, 7422, 1126, 8229, 5056, 5934, 10823, 5379, 10802, 10254, 1200, 8273, 10785, 4806, 13166, 8380, 4977, 7488, 7477, 5763, 1415, 9200, 7094, 8458, 10789, 1384, 8486, 2]
 // Exports: CustomActivityButton
 
-// Module 13157 (UserProfileActivityButtons)
+// Module 13162 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,11 +20,11 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
 import isStreamingDefault from "isStreaming" /* 8380 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 10801 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10822 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 13158 */;
-import getActivityJoinability from "getActivityJoinability" /* 13159 */;
-import getStreamURLDefault from "getStreamURL" /* 13161 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 10802 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10823 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 13163 */;
+import getActivityJoinability from "getActivityJoinability" /* 13164 */;
+import getStreamURLDefault from "getStreamURL" /* 13166 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import ConnectedAccountsStore_mod from "ConnectedAccountsStore" /* 5761 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import LocalActivityStore from "LocalActivityStore" /* 10648 */;
+import LocalActivityStore from "LocalActivityStore" /* 10649 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -541,7 +541,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const sync_id = activity.sync_id;
   let tmp6 = null;
   const tmp5 = sync_id;
-  if (sync_id(10253)(activity)) {
+  if (sync_id(10254)(activity)) {
     tmp6 = null;
     if (null != sync_id) {
       let tmp7;
@@ -682,7 +682,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10253)(activity)) {
+  if (sync_id(10254)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;

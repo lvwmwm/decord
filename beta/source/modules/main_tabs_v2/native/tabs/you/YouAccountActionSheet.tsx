@@ -1,9 +1,9 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 16836
+// Function ID: 16837
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 12127, 1205, 1404, 7404, 4963, 1390, 1085, 12128, 21, 5092, 587, 558, 576, 5088, 6188, 14421, 14418, 14419, 14420, 2041, 6664, 12574, 5056, 1126, 6262, 8646, 6263, 504, 15455, 11619, 5260, 15562, 1252, 16832, 12684, 15564, 4962, 1200, 16376, 16834, 1265, 6879, 12131, 6185, 12573, 6265, 6896, 10346, 16839, 2000, 16829, 10513, 4818, 10239, 10517, 10257, 8956, 10524, 6157, 6778, 6182, 6203, 6839, 16840, 16121, 5377, 6899, 2]
+// Dependencies: [19, 17, 12129, 1205, 1404, 7404, 4963, 1390, 1085, 12130, 21, 5092, 587, 558, 576, 5088, 6188, 14426, 14423, 14424, 14425, 2041, 6664, 12579, 5056, 1126, 6262, 8646, 6263, 504, 15460, 11621, 5260, 15567, 1252, 16837, 12689, 15569, 4962, 1200, 16381, 16839, 1265, 6879, 12133, 6185, 12578, 6265, 6896, 10347, 16844, 2000, 16834, 10514, 4818, 10240, 10518, 10258, 8956, 10525, 6157, 6778, 6182, 6203, 6839, 16845, 16126, 5377, 6899, 2]
 
-// Module 16831 (YouAccountActionSheet)
+// Module 16836 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -30,25 +30,25 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
 import getChannelA11yLabel from "getChannelA11yLabel" /* 8646 */;
-import useGameMentionsAsPlainText2 from "useGameMentionsAsPlainText" /* 10239 */;
-import userSettingToActivity from "userSettingToActivity" /* 10513 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 10524 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 12127 */;
-import Constants2 from "Constants" /* 12128 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12131 */;
-import FocusModeUtils from "FocusModeUtils" /* 12573 */;
-import setUserStatusDefault from "setUserStatus" /* 12574 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 12684 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14418 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14419 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14420 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14421 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 15562 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15564 */;
-import DevToolsContentDefault from "DevToolsContent" /* 16121 */;
-import ThemeGrayIcon from "ThemeGrayIcon" /* 16832 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 16834 */;
-import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 16840 */;
+import useGameMentionsAsPlainText2 from "useGameMentionsAsPlainText" /* 10240 */;
+import userSettingToActivity from "userSettingToActivity" /* 10514 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 10525 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 12129 */;
+import Constants2 from "Constants" /* 12130 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12133 */;
+import FocusModeUtils from "FocusModeUtils" /* 12578 */;
+import setUserStatusDefault from "setUserStatus" /* 12579 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 12689 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14423 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14424 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14425 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14426 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 15567 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15569 */;
+import DevToolsContentDefault from "DevToolsContent" /* 16126 */;
+import ThemeGrayIcon from "ThemeGrayIcon" /* 16837 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 16839 */;
+import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 16845 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -99,7 +99,7 @@ function FocusModeSetting() {
     let obj2 = {
       accessibilityLabel: intl.string(tmp2(1126).t.wCxBOc),
       accessibilityHint: intl2.string(tmp2(1126).t.wCxBOc),
-      icon: authStore5(tmp2(10346).BellSlashIcon, obj3),
+      icon: authStore5(tmp2(10347).BellSlashIcon, obj3),
       onValueChange(arg0) {
           const tmp = arg0;
           if (tmp) {
@@ -788,7 +788,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouAcc
   }
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = stateFromStores(16376);
+  const tmpResult3 = stateFromStores(16381);
   const multiAccountUsers = tmpResult3.useMultiAccountUsers().multiAccountUsers;
   const arr2 = closure_25(multiAccountUsers);
   const tmpResult4 = stateFromStores(6664);
@@ -978,7 +978,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouAcc
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(16376);
+  let obj2 = stateFromStores(16381);
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   const arr2 = closure_25(multiAccountUsers);
   let obj3 = stateFromStores(6664);
@@ -1241,7 +1241,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
       }
       if (null != emoji2) {
         const obj10 = { emoji: customStatusActivity.emoji, size: token };
-        tmp25 = authStore5(tmp6(10257), obj10);
+        tmp25 = authStore5(tmp6(10258), obj10);
       } else {
         const obj11 = { size: "md", style: tmp4.leadingIcon };
         tmp25 = authStore5(tmp(8956).ReactionIcon, obj11);
@@ -1363,7 +1363,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   }
   if (null != emoji2) {
     const obj6 = { emoji: customStatusActivity.emoji, size: token };
-    tmp15Result = tmp15(tmp5(10257), obj6);
+    tmp15Result = tmp15(tmp5(10258), obj6);
   } else {
     const obj7 = { size: "md", style: tmp.leadingIcon };
     tmp15Result = tmp15(ReactionIcon.ReactionIcon, obj7);
@@ -1550,7 +1550,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             items3 = [authStore5(closure_21, { children: "Developer Tools" }), authStore5(DevToolsContentDefault, { embedded: true })];
             tmp45 = closure_19(View, obj5);
           } else {
-            tmp45 = authStore5(tmp9(16121), { title: "Developer Tools", embedded: true });
+            tmp45 = authStore5(tmp9(16126), { title: "Developer Tools", embedded: true });
           }
           tmp43 = tmp45;
         }
@@ -1560,7 +1560,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         cResult[23] = tmp43;
         tmp42 = tmp43;
       }
-      const tmp40 = !tmp4 && stateFromStores1 && authStore5(tmp9(16840), {});
+      const tmp40 = !tmp4 && stateFromStores1 && authStore5(tmp9(16845), {});
       cResult[17] = stateFromStores1;
       cResult[18] = undefined !== statusOnly && statusOnly;
       cResult[19] = tmp40;
@@ -1638,7 +1638,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       items3 = [authStore5(closure_21, { children: "Developer Tools" }), authStore5(DevToolsContentDefault, { embedded: true })];
       tmp8Result3 = tmp10(View, obj5);
     } else {
-      tmp8Result3 = tmp8(tmp4(16121), { title: "Developer Tools", embedded: true });
+      tmp8Result3 = tmp8(tmp4(16126), { title: "Developer Tools", embedded: true });
     }
     tmp16 = tmp8Result3;
   }

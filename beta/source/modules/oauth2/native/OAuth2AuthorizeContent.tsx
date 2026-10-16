@@ -1,9 +1,9 @@
-// Module ID: 10727
-// Function ID: 10728
+// Module ID: 10728
+// Function ID: 10729
 // Name: OAuth2AuthorizeContent
 // Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1497, 1631, 8912, 6729, 2]
 
-// Module 10727 (OAuth2AuthorizeContent)
+// Module 10728 (OAuth2AuthorizeContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;

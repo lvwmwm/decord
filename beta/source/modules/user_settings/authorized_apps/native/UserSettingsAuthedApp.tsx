@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15227
+// Function ID: 15228
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2064, 6797, 2065, 4760, 5966, 2129, 1085, 9625, 10415, 21, 5092, 587, 558, 576, 5046, 5088, 1503, 1504, 1126, 6860, 10812, 9227, 504, 12339, 1415, 5301, 12338, 5056, 10416, 2000, 1273, 7018, 7026, 6680, 6684, 8486, 4977, 6809, 6804, 11, 11734, 10615, 6265, 6896, 6180, 2]
+// Dependencies: [19, 17, 2064, 6797, 2065, 4760, 5966, 2129, 1085, 9626, 10416, 21, 5092, 587, 558, 576, 5046, 5088, 1503, 1504, 1126, 6860, 10813, 9227, 504, 12344, 1415, 5301, 12343, 5056, 10417, 2000, 1273, 7018, 7026, 6680, 6684, 8486, 4977, 6809, 6804, 11, 11736, 10616, 6265, 6896, 6180, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15222 (UserSettingsAuthedApp)
+// Module 15227 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;
@@ -19,10 +19,10 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6860 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9625 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10415 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10812 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12338 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9626 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10416 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10813 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12343 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;

@@ -1,9 +1,9 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12249
+// Function ID: 12250
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 8026, 5007, 558, 576, 504, 12245, 7271, 2]
+// Dependencies: [19, 8026, 5007, 558, 576, 504, 12250, 7271, 2]
 
-// Module 12244 (useFeaturedExpiringPowerup)
+// Module 12249 (useFeaturedExpiringPowerup)
 import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
 import react from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 8026 */;

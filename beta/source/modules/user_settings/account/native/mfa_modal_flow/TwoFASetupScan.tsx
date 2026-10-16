@@ -1,9 +1,9 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15045
+// Function ID: 15046
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 6886, 15038, 1126, 1200, 5088, 6185, 15034, 6814, 2]
+// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 6886, 15043, 1126, 1200, 5088, 6185, 15039, 6814, 2]
 
-// Module 15040 (TwoFASetupScan)
+// Module 15045 (TwoFASetupScan)
 import nativeDefault from "native" /* 587 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = totpSecret(15038);
+  const tmpResult = totpSecret(15043);
   const twoFASetupStyles = tmpResult.useTwoFASetupStyles();
   if (cResult[2] === twoFASetupStyles.modalHeader) {
     let tmp10;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
             }
           }
           const obj6 = { children: closure_5(totpSecret(6814).SafeAreaPaddingView, obj7) };
-          const TwoFASetupModalScreen = tmp(15034).TwoFASetupModalScreen;
+          const TwoFASetupModalScreen = tmp(15039).TwoFASetupModalScreen;
           obj7 = { bottom: true, style: tmp9, children: items };
           items = [tmp14, tmp20, tmp24, tmp32];
           const tmp38 = closure_4(TwoFASetupModalScreen, obj6);
@@ -216,9 +216,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
     const obj = ClipboardUtils;
     obj.copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(15038);
+  let obj = totpSecret(15043);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  const TwoFASetupModalScreen = totpSecret(15034).TwoFASetupModalScreen;
+  const TwoFASetupModalScreen = totpSecret(15039).TwoFASetupModalScreen;
   const obj2 = { bottom: true, style: tmp.container, children: items2 };
   const SafeAreaPaddingView = totpSecret(6814).SafeAreaPaddingView;
   const obj3 = { style: items1, children: intl.string(totpSecret(1126).t["hg/+aT"]) };

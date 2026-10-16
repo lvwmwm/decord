@@ -1,9 +1,9 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 10108
+// Function ID: 10109
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [109, 19, 17, 9117, 1392, 1096, 21, 587, 5092, 5906, 558, 576, 10095, 504, 9400, 10108, 10109, 9414, 9412, 1126, 5088, 9419, 5379, 9030, 10110, 10094, 10111, 10112, 5051, 2031, 10113, 4827, 5391, 2]
+// Dependencies: [109, 19, 17, 9117, 1392, 1096, 21, 587, 5092, 5906, 558, 576, 10096, 504, 9400, 10109, 10110, 9414, 9412, 1126, 5088, 9419, 5379, 9030, 10111, 10095, 10112, 10113, 5051, 2031, 10114, 4827, 5391, 2]
 
-// Module 10107 (PremiumGiftFeaturesCard)
+// Module 10108 (PremiumGiftFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,13 +16,13 @@ import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9030
 import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9400 */;
 import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9414 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 9419 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10094 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10108 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10109 */;
-import MarketingComponentHooks from "MarketingComponentHooks" /* 10110 */;
-import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10111 */;
-import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10112 */;
-import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10113 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10095 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10109 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10110 */;
+import MarketingComponentHooks from "MarketingComponentHooks" /* 10111 */;
+import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10112 */;
+import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10113 */;
+import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10114 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PromotionsStore from "PromotionsStore" /* 9117 */;
@@ -369,7 +369,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   } else {
     first = cResult[0];
   }
-  const GiftPromotionReminderExperiment = tmp(10094).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10095).GiftPromotionReminderExperiment;
   const enabled = GiftPromotionReminderExperiment.useConfig(first).enabled;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PromotionsStore];

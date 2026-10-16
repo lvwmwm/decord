@@ -1,10 +1,10 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14125
+// Function ID: 14126
 // Name: GuildRoleSubscriptionsExperimentUtils
 // Dependencies: [2087, 1085, 558, 576, 573, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates
 
-// Module 14120 (GuildRoleSubscriptionsExperimentUtils)
+// Module 14125 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

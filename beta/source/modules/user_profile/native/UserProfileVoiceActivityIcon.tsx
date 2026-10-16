@@ -1,9 +1,9 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10257
+// Function ID: 10258
 // Name: UserProfileVoiceActivityIcon
 // Dependencies: [109, 19, 4750, 1096, 21, 558, 576, 504, 9317, 6796, 8219, 8220, 8222, 8221, 8224, 2]
 
-// Module 10256 (UserProfileVoiceActivityIcon)
+// Module 10257 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1096 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 6796 */;

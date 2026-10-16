@@ -1,13 +1,13 @@
-// Module ID: 10380
-// Function ID: 10381
+// Module ID: 10381
+// Function ID: 10382
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 558, 576, 10378, 6846, 10379, 2]
+// Dependencies: [19, 21, 558, 576, 10379, 6846, 10380, 2]
 
-// Module 10380 (ChatViewWrapperBase)
+// Module 10381 (ChatViewWrapperBase)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import LayerScope2 from "LayerScope" /* 6846 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10378 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10379 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

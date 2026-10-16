@@ -1,13 +1,13 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16044
+// Function ID: 16045
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 16009, 3118, 558, 576, 6839, 1126, 5056, 6262, 6899, 6263, 2]
+// Dependencies: [21, 16014, 3118, 558, 576, 6839, 1126, 5056, 6262, 6899, 6263, 2]
 
-// Module 16039 (FinalizeTraitActionSheet)
+// Module 16044 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3118 from "module_3118" /* 3118 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

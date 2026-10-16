@@ -1,7 +1,7 @@
 // Module ID: 9243
 // Function ID: 9244
 // Name: ApplicationCommandIndexStore
-// Dependencies: [32, 5, 19, 9244, 2129, 502, 2065, 2125, 2087, 1390, 9245, 5403, 1085, 3, 9246, 9247, 7238, 7241, 6098, 38, 504, 9248, 1265, 1998, 9249, 584, 558, 576, 9250, 9251, 2046, 9804, 7242, 6095, 2]
+// Dependencies: [32, 5, 19, 9244, 2129, 502, 2065, 2125, 2087, 1390, 9245, 5403, 1085, 3, 9246, 9247, 7238, 7241, 6098, 38, 504, 9248, 1265, 1998, 9249, 584, 558, 576, 9250, 9251, 2046, 9805, 7242, 6095, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale
 
 // Module 9243 (ApplicationCommandIndexStore)
@@ -20,7 +20,7 @@ import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexAction
 import CommandPermissionContext from "CommandPermissionContext" /* 9248 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9249 */;
 import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9251 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9804 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 9805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;

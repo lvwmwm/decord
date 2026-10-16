@@ -1,9 +1,9 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13026
+// Function ID: 13027
 // Name: GuildProfileCTA
-// Dependencies: [19, 5073, 1085, 1095, 21, 558, 576, 11344, 10641, 5056, 7053, 8492, 9616, 13022, 4942, 6103, 6126, 6145, 7052, 6920, 1126, 5379, 2]
+// Dependencies: [19, 5073, 1085, 1095, 21, 558, 576, 11346, 10642, 5056, 7053, 8492, 9617, 13027, 4942, 6103, 6126, 6145, 7052, 6920, 1126, 5379, 2]
 
-// Module 13021 (GuildProfileCTA)
+// Module 13026 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -14,7 +14,7 @@ import GuildProfileTypes from "GuildProfileTypes" /* 6126 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6920 */;
 import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7052 */;
 import transitionToGuild from "transitionToGuild" /* 7053 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9616 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9617 */;
 import react_mod from "react" /* 19 */;
 import InviteStore_mod from "InviteStore" /* 5073 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17632
+// Function ID: 17633
 // Name: SearchNavigator
-// Dependencies: [19, 17, 9307, 17392, 1085, 21, 5092, 587, 9340, 558, 576, 6688, 12057, 1631, 17629, 9293, 17623, 17624, 9352, 1383, 17625, 9351, 2]
+// Dependencies: [19, 17, 9307, 17396, 1085, 21, 5092, 587, 9340, 558, 576, 6688, 12059, 1631, 17633, 9293, 17627, 17628, 9352, 1383, 17629, 9351, 2]
 
-// Module 17628 (SearchNavigator)
+// Module 17632 (SearchNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,9 +11,9 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import TrackingConstants from "TrackingConstants" /* 9307 */;
 import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9352 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17392 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 17623 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17396 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 17627 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

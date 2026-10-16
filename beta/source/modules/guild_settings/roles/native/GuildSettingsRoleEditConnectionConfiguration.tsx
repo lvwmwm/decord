@@ -1,9 +1,9 @@
-// Module ID: 18434
-// Function ID: 18435
+// Module ID: 18438
+// Function ID: 18439
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1085, 6877, 21, 5092, 587, 558, 576, 5031, 10712, 1200, 4969, 1415, 1126, 6208, 6185, 6180, 6896, 18435, 1382, 5088, 5763, 6265, 2]
+// Dependencies: [32, 19, 17, 1085, 6877, 21, 5092, 587, 558, 576, 5031, 10713, 1200, 4969, 1415, 1126, 6208, 6185, 6180, 6896, 18439, 1382, 5088, 5763, 6265, 2]
 
-// Module 18434 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18438 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,8 +18,8 @@ import PlatformsDefault from "Platforms" /* 5763 */;
 import TableRow2 from "TableRow" /* 6180 */;
 import Pressables from "Pressables" /* 6185 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 10712 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18435 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 10713 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 6877 */;
@@ -1401,7 +1401,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(18435);
+  let obj = metadataField(18439);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1410,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(18435);
+  const tmp2Result = tmp2(18439);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);

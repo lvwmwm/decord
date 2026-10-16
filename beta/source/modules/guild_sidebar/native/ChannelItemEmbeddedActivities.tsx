@@ -1,9 +1,9 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16674
+// Function ID: 16675
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6862, 5088, 2]
 
-// Module 16669 (ChannelItemEmbeddedActivities)
+// Module 16674 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

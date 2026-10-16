@@ -1,9 +1,9 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17147
+// Function ID: 17148
 // Name: MediaKeyboard
-// Dependencies: [19, 7239, 7903, 1627, 1085, 1502, 11713, 21, 558, 576, 1265, 4850, 4987, 1629, 17144, 4818, 587, 8508, 17145, 11846, 10018, 7764, 4985, 7753, 1382, 7752, 10016, 11908, 1126, 8229, 8196, 10021, 10023, 8210, 10025, 17146, 17147, 10027, 10028, 17148, 2]
+// Dependencies: [19, 7239, 7903, 1627, 1085, 1502, 11715, 21, 558, 576, 1265, 4850, 4987, 1629, 17148, 4818, 587, 8508, 17149, 11848, 10019, 7764, 4985, 7753, 1382, 7752, 10017, 11910, 1126, 8229, 8196, 10022, 10024, 8210, 10026, 17150, 17151, 10028, 10029, 17152, 2]
 
-// Module 17143 (MediaKeyboard)
+// Module 17147 (MediaKeyboard)
 import intl6 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -16,15 +16,15 @@ import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
 import ThreadIcon from "ThreadIcon" /* 8196 */;
 import ImageIcon from "ImageIcon" /* 8210 */;
 import AppsIcon from "AppsIcon" /* 8229 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10018 */;
-import PollsIcon from "PollsIcon" /* 10021 */;
-import AttachmentIcon from "AttachmentIcon" /* 10023 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10025 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10027 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11713 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11908 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 17146 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 17147 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10019 */;
+import PollsIcon from "PollsIcon" /* 10022 */;
+import AttachmentIcon from "AttachmentIcon" /* 10024 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10026 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10028 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11715 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11910 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 17150 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 17151 */;
 import react from "react" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;

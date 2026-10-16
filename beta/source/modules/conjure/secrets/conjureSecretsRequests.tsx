@@ -1,11 +1,11 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17314
+// Function ID: 17315
 // Name: conjureSecretsRequests
-// Dependencies: [5, 13241, 2]
+// Dependencies: [5, 13246, 2]
 // Exports: submitProjectSecrets
 
-// Module 17310 (conjureSecretsRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+// Module 17314 (conjureSecretsRequests)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

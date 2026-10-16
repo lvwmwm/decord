@@ -1,98 +1,123 @@
 // Module ID: 11246
 // Function ID: 11247
-// Dependencies: [11236, 11213, 11208]
-// Exports: logSpanEnd, logSpanStart
+// Dependencies: [11216, 11247, 11237, 11215, 11223, 11225, 11242]
+// Exports: freezeDscOnSpan, getDynamicSamplingContextFromClient, getDynamicSamplingContextFromScope, spanToBaggageHeader
 
 // Module 11246
-import _mod11213 from "module_11213" /* 11213 */;
-import _mod11236 from "module_11236" /* 11236 */;
+import _mod11215 from "module_11215" /* 11215 */;
+import _mod11216 from "module_11216" /* 11216 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 11223 */;
+import _mod11225 from "module_11225" /* 11225 */;
+import _mod11237 from "module_11237" /* 11237 */;
+import _mod11242 from "module_11242" /* 11242 */;
 
-
-export const logSpanEnd = function logSpanEnd(spanContext) {
-  if (_mod11236.DEBUG_BUILD) {
-    const tmpResult = _mod11213;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
+let tmp3;
+const _mod11247 = tmp3(11247);
+function getDynamicSamplingContextFromSpan(spanContext) {
+  const obj = _mod11237;
+  const client = obj.getClient();
+  if (client) {
+    const tmpResult = _mod11215;
+    const rootSpan = tmpResult.getRootSpan(spanContext);
+    if (rootSpan[_frozenDsc]) {
+      return rootSpan[_frozenDsc];
+    } else {
+      const traceState = rootSpan.spanContext().traceState;
+      const value = traceState && traceState.get("sentry.dsc");
+      let result = value;
+      if (result) {
+        const tmpResult6 = BAGGAGE_HEADER_NAME;
+        result = tmpResult6.baggageHeaderToDynamicSamplingContext(value);
+      }
+      if (result) {
+        return result;
+      } else {
+        const traceId = spanContext.spanContext().traceId;
+        const options = client.getOptions();
+        const publicKey = (client.getDsn() || {}).publicKey;
+        client.getDsn() || {};
+        let DEFAULT_ENVIRONMENT = options.environment;
+        const dropUndefinedKeys = _mod11216.dropUndefinedKeys;
+        _mod11216;
+        if (!DEFAULT_ENVIRONMENT) {
+          DEFAULT_ENVIRONMENT = tmp(11247).DEFAULT_ENVIRONMENT;
+        }
+        const obj2 = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+        const dropUndefinedKeysResult = dropUndefinedKeys(obj2);
+        client.emit("createDsc", dropUndefinedKeysResult);
+        const tmpResult8 = _mod11215;
+        const spanToJSONResult = tmpResult8.spanToJSON(rootSpan);
+        const tmp14 = spanToJSONResult.data || {};
+        const tmp15 = tmp14[_mod11225.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE];
+        if (null != tmp15) {
+          const _HermesInternal = HermesInternal;
+          dropUndefinedKeysResult.sample_rate = "" + tmp15;
+        }
+        const description = spanToJSONResult.description;
+        const tmp18 = "url" !== tmp14[_mod11225.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] && description;
+        if (tmp18) {
+          dropUndefinedKeysResult.transaction = description;
+        }
+        const tmpResult9 = _mod11242;
+        if (tmpResult9.hasTracingEnabled()) {
+          const _String = String;
+          const tmpResult10 = _mod11215;
+          dropUndefinedKeysResult.sampled = String(tmpResult10.spanIsSampled(rootSpan));
+        }
+        client.emit("createDsc", dropUndefinedKeysResult, rootSpan);
+        return dropUndefinedKeysResult;
+      }
     }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const spanId = spanContext.spanContext().spanId;
-    let str3 = "";
-    const tmpResult2 = _mod11213;
-    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
-      str3 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
-    const logger = tmp(11208).logger;
-    logger.log(combined);
+  } else {
+    return {};
   }
+}
+const _frozenDsc = "_frozenDsc";
+
+export const freezeDscOnSpan = function freezeDscOnSpan(arg0, arg1) {
+  const obj = _mod11216;
+  const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
 };
-export const logSpanStart = function logSpanStart(spanContext) {
-  let description2;
-  let op2;
-  if (_mod11236.DEBUG_BUILD) {
-    const tmpResult = _mod11213;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const parent_span_id = spanToJSONResult.parent_span_id;
-    const spanId = spanContext.spanContext().spanId;
-    const tmpResult4 = _mod11213;
-    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
-    const tmpResult5 = _mod11213;
-    const rootSpan = tmpResult5.getRootSpan(spanContext);
-    let str3 = "unsampled";
-    if (spanIsSampledResult) {
-      str3 = "sampled";
-    }
-    let str5 = "";
-    if (rootSpan === spanContext) {
-      str5 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const _HermesInternal2 = HermesInternal;
-    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
-    const items = ["op: " + str2, , ];
-    const _HermesInternal3 = HermesInternal;
-    items[1] = "name: " + str;
-    const _HermesInternal4 = HermesInternal;
-    items[2] = "ID: " + spanId;
-    if (parent_span_id) {
-      const _HermesInternal5 = HermesInternal;
-      items.push("parent ID: " + parent_span_id);
-    }
-    if (rootSpan !== spanContext) {
-      const tmpResult6 = _mod11213;
-      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
-      const _HermesInternal6 = HermesInternal;
-      tmpResult6.spanToJSON(rootSpan);
-      items.push("root ID: " + rootSpan.spanContext().spanId);
-      if (op2) {
-        const _HermesInternal7 = HermesInternal;
-        items.push("root op: " + op2);
-      }
-      if (description2) {
-        const _HermesInternal8 = HermesInternal;
-        items.push("root description: " + description2);
-      }
-    }
-    const logger = tmp(11208).logger;
-    const _HermesInternal9 = HermesInternal;
-    logger.log("" + combined + "\n  " + items.join("\n  "));
+export const getDynamicSamplingContextFromClient = function getDynamicSamplingContextFromClient(trace_id, getOptions) {
+  const options = getOptions.getOptions();
+  const publicKey = (getOptions.getDsn() || {}).publicKey;
+  getOptions.getDsn() || {};
+  let DEFAULT_ENVIRONMENT = options.environment;
+  const dropUndefinedKeys = _mod11216.dropUndefinedKeys;
+  _mod11216;
+  if (!DEFAULT_ENVIRONMENT) {
+    DEFAULT_ENVIRONMENT = _mod11247.DEFAULT_ENVIRONMENT;
   }
+  const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id };
+  const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+  getOptions.emit("createDsc", dropUndefinedKeysResult);
+  return dropUndefinedKeysResult;
+};
+export const getDynamicSamplingContextFromScope = function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
+  const propagationContext = getPropagationContext.getPropagationContext();
+  let dsc = propagationContext.dsc;
+  if (!dsc) {
+    const traceId = propagationContext.traceId;
+    const options = getOptions.getOptions();
+    const publicKey = (getOptions.getDsn() || {}).publicKey;
+    getOptions.getDsn() || {};
+    let DEFAULT_ENVIRONMENT = options.environment;
+    const dropUndefinedKeys = _mod11216.dropUndefinedKeys;
+    _mod11216;
+    const tmp5 = require;
+    if (!DEFAULT_ENVIRONMENT) {
+      DEFAULT_ENVIRONMENT = tmp5(11247).DEFAULT_ENVIRONMENT;
+    }
+    const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+    const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+    getOptions.emit("createDsc", dropUndefinedKeysResult);
+    dsc = dropUndefinedKeysResult;
+  }
+  return dsc;
+};
+export { getDynamicSamplingContextFromSpan };
+export const spanToBaggageHeader = function spanToBaggageHeader(arg0) {
+  const tmp = getDynamicSamplingContextFromSpan(arg0);
+  const obj = BAGGAGE_HEADER_NAME;
+  return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
 };

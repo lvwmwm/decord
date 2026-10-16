@@ -1,9 +1,9 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14851
+// Function ID: 14852
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14847, 1103, 4850, 14848, 4967, 683, 5056, 6840, 1126, 6839, 5379, 6286, 12, 14849, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14852, 1103, 4850, 14853, 4967, 683, 5056, 6840, 1126, 6839, 5379, 6286, 12, 14854, 2]
 
-// Module 14846 (CustomColorPickerActionSheet)
+// Module 14851 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -11,7 +11,7 @@ import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14848 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14853 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
                                     }
                                   }
                                   const obj4 = { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, onPanFinalize: tmp24 };
-                                  const tmp65 = sharedValue2(value(14849), obj4);
+                                  const tmp65 = sharedValue2(value(14854), obj4);
                                   cResult[69] = sharedValue;
                                   cResult[70] = tmp24;
                                   cResult[71] = sharedValue1;
@@ -780,7 +780,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
       runOnJSResult(obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(14849), obj13);
+  items3[2] = sharedValue2(tmp16(14854), obj13);
   return sharedValue2(BottomSheet, obj5);
 });
 let result = size.fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");

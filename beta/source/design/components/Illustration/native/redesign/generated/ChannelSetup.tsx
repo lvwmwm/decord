@@ -1,10 +1,10 @@
-// Module ID: 18470
-// Function ID: 18471
+// Module ID: 18474
+// Function ID: 18475
 // Name: ChannelSetup
-// Dependencies: [19, 17, 21, 8355, 18471, 18472, 18473, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8355, 18475, 18476, 18477, 558, 576, 4969, 2]
 // Exports: getChannelSetupSource
 
-// Module 18470 (ChannelSetup)
+// Module 18474 (ChannelSetup)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

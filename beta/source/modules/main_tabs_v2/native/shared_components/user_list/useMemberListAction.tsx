@@ -1,19 +1,19 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 10748
+// Function ID: 10749
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2065, 4750, 4760, 1390, 10224, 1085, 21, 5092, 558, 576, 573, 8598, 6738, 10748, 10757, 10758, 1126, 10332, 10331, 4938, 2049, 10760, 10765, 7092, 10766, 1894, 8678, 8577, 2]
+// Dependencies: [32, 19, 17, 2065, 4750, 4760, 1390, 10225, 1085, 21, 5092, 558, 576, 573, 8598, 6738, 10749, 10758, 10759, 1126, 10333, 10332, 4938, 2049, 10761, 10766, 7092, 10767, 1894, 8678, 8577, 2]
 
-// Module 10747 (useMemberListAction)
+// Module 10748 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10224 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 10748 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 10760 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10225 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 10749 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 10761 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10767 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -39,7 +39,7 @@ let RelationshipStore = RelationshipStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = Constants);
 const jsx = Fragment.jsx;
-let closure_14 = { listActionRenderer: "pos", listActionHeight: "sk" };
+let closure_14 = { listActionRenderer: "top", listActionHeight: "code" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_15 = createStyles.createStyles(obj);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemberListAction(channel) {

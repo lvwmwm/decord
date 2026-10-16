@@ -1,7 +1,7 @@
 // Module ID: 7168
 // Function ID: 7169
 // Name: UserOfferStore
-// Dependencies: [7169, 7170, 8088, 7172, 1390, 7110, 4775, 1392, 1096, 12, 504, 13626, 4769, 584, 2]
+// Dependencies: [7169, 7170, 8088, 7172, 1390, 7110, 4775, 1392, 1096, 12, 504, 13631, 4769, 584, 2]
 
 // Module 7168 (UserOfferStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -9,7 +9,7 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1096 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
-import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13626 */;
+import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13631 */;
 import DiscountRecord from "DiscountRecord" /* 7169 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 7170 */;
 import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8088 */;
@@ -103,7 +103,7 @@ function handleReferralTrialStoreUpdate() {
 ({ ANNUAL_DISCOUNT_IDS: c10, CHURN_DISCOUNT_IDS: unpackModuleId, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_12, SubscriptionPlanInfo: map1, SubscriptionTrials: closure_14, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_15 } = PremiumConstants);
 const OfferTriggerTypes = Constants.OfferTriggerTypes;
 let closure_17 = performance.now();
-let cooldownExpirationTimestamps = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1FAF8}\u{1F3FF}", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 15, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
+let cooldownExpirationTimestamps = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1F91F}\u{1F3FD}", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 10, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
 let closure_19 = cooldownExpirationTimestamps;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class UserOfferStore extends PersistedStore {

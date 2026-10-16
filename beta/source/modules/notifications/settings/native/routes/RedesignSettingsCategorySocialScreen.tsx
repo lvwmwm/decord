@@ -1,14 +1,14 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16343
+// Function ID: 16344
 // Name: RedesignSettingsCategorySocialScreen
-// Dependencies: [19, 21, 558, 576, 10663, 16332, 14965, 2]
+// Dependencies: [19, 21, 558, 576, 10664, 16337, 14970, 2]
 
-// Module 16338 (RedesignSettingsCategorySocialScreen)
+// Module 16343 (RedesignSettingsCategorySocialScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14965 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16332 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16337 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

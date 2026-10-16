@@ -1,19 +1,19 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17202
+// Function ID: 17203
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 17194, 558, 576, 17199, 504, 17200, 5088, 6185, 1126, 4962, 17201, 3849, 1200, 8229, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 17198, 558, 576, 17203, 504, 17204, 5088, 6185, 1126, 4962, 17205, 3849, 1200, 8229, 2]
 
-// Module 17198 (ConjureMessageAuthor)
+// Module 17202 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17194 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 17199 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 17200 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 17201 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17198 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 17203 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 17204 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 17205 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;

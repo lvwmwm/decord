@@ -1,9 +1,9 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10463
+// Function ID: 10464
 // Name: AvailableForumTag
-// Dependencies: [109, 19, 5987, 1393, 21, 5092, 587, 558, 576, 504, 8537, 6820, 1415, 5088, 10011, 2]
+// Dependencies: [109, 19, 5987, 1393, 21, 5092, 587, 558, 576, 504, 8537, 6820, 1415, 5088, 10012, 2]
 
-// Module 10462 (AvailableForumTag)
+// Module 10463 (AvailableForumTag)
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import EmojiDefault from "Emoji" /* 6820 */;

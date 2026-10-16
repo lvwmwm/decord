@@ -1,7 +1,7 @@
 // Module ID: 5398
 // Function ID: 5399
 // Name: Alert
-// Dependencies: [19, 17, 21, 5092, 587, 1200, 4827, 5399, 2060, 5371, 5088, 1126, 5379, 6185, 10226, 558, 576, 1497, 8322, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1200, 4827, 5399, 2060, 5371, 5088, 1126, 5379, 6185, 10227, 558, 576, 1497, 8322, 2]
 // Exports: getAlertButtonVariant
 
 // Module 5398 (Alert)
@@ -17,7 +17,7 @@ import components_Button_Button from "components/Button/Button" /* 5379 */;
 import CustomMarkupAll from "CustomMarkup" /* 5399 */;
 import Pressables from "Pressables" /* 6185 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8322 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10227 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

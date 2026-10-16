@@ -1,9 +1,9 @@
-// Module ID: 13624
-// Function ID: 13625
+// Module ID: 13629
+// Function ID: 13630
 // Name: trackPoggermodeSettingsUpdated
 // Dependencies: [7362, 1085, 12, 1265, 2]
 
-// Module 13624 (trackPoggermodeSettingsUpdated)
+// Module 13629 (trackPoggermodeSettingsUpdated)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PoggermodeConstants from "PoggermodeConstants" /* 7362 */;
@@ -47,12 +47,12 @@ const throttleResult = module_12.throttle((arg0) => {
   let screenshakeEnabled;
   let screenshakeEnabledLocations;
   let shakeIntensity;
-  const f116431 = (item) => {
+  const f116457 = (item) => {
     let tmp;
     [, tmp] = item;
     return tmp;
   };
-  const f116432 = (item) => {
+  const f116458 = (item) => {
     let tmp;
     [tmp] = item;
     return closure_0(Number.parseInt(tmp));
@@ -61,12 +61,12 @@ const throttleResult = module_12.throttle((arg0) => {
   const tmp = AnalyticsUtilsDefault;
   const track = tmp.track;
   const POGGERMODE_SETTINGS_UPDATED = AnalyticEvents.POGGERMODE_SETTINGS_UPDATED;
-  const obj = { enabled, combos_enabled: combosEnabled, combos_required_count: combosRequiredCount, screenshake_enabled: screenshakeEnabled, shake_intensity: shakeIntensity, screenshake_enabled_locations: found.map(f116432), confetti_enabled: confettiEnabled, confetti_size: confettiSize, confetti_count: confettiCount, confetti_enabled_locations: found1.map(f116432) };
+  const obj = { enabled, combos_enabled: combosEnabled, combos_required_count: combosRequiredCount, screenshake_enabled: screenshakeEnabled, shake_intensity: shakeIntensity, screenshake_enabled_locations: found.map(f116458), confetti_enabled: confettiEnabled, confetti_size: confettiSize, confetti_count: confettiCount, confetti_enabled_locations: found1.map(f116458) };
   const entries = Object.entries(screenshakeEnabledLocations);
-  found = entries.filter(f116431);
+  found = entries.filter(f116457);
   let closure_0 = getConfettiLocationName;
   const entries1 = Object.entries(confettiEnabledLocations);
-  found1 = entries1.filter(f116431);
+  found1 = entries1.filter(f116457);
   track(POGGERMODE_SETTINGS_UPDATED, obj);
 }, 5000);
 const result = size.fileFinishedImporting("modules/poggermode/trackPoggermodeSettingsUpdated.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 16916
+// Function ID: 16917
 // Name: ICYMI
-// Dependencies: [32, 19, 17, 5081, 502, 2087, 8461, 8449, 16913, 2062, 21, 5092, 587, 16914, 7569, 15280, 8467, 5056, 16916, 2000, 558, 576, 5046, 16929, 5088, 1126, 6627, 10226, 4936, 6185, 16862, 16864, 6208, 6814, 16917, 1497, 1631, 1504, 7192, 504, 16852, 16947, 16950, 7101, 2049, 16939, 1503, 8462, 12645, 9677, 15366, 1106, 16951, 16955, 16962, 16973, 16974, 16975, 16976, 16977, 16978, 16979, 16980, 9302, 16981, 8620, 8466, 1382, 11494, 4972, 4827, 16982, 16915, 2]
+// Dependencies: [32, 19, 17, 5081, 502, 2087, 8461, 8449, 16917, 2062, 21, 5092, 587, 16918, 7569, 15285, 8467, 5056, 16920, 2000, 558, 576, 5046, 16933, 5088, 1126, 6627, 10227, 4936, 6185, 16866, 16868, 6208, 6814, 16921, 1497, 1631, 1504, 7192, 504, 16856, 16951, 16954, 7101, 2049, 16943, 1503, 8462, 12650, 9678, 15371, 1106, 16955, 16959, 16966, 16977, 16978, 16979, 16980, 16981, 16982, 16983, 16984, 9302, 16985, 8620, 8466, 1382, 11496, 4972, 4827, 16986, 16919, 2]
 
-// Module 16912 (ICYMI)
+// Module 16916 (ICYMI)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,23 +22,23 @@ import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import IconButton2 from "IconButton" /* 7569 */;
 import ICYMITypes from "ICYMITypes" /* 8462 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15280 */;
-import notifications_Notifications from "notifications/Notifications" /* 16862 */;
-import ICYMIConstants from "ICYMIConstants" /* 16913 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16917 */;
-import NativeICYMIUtils from "NativeICYMIUtils" /* 16929 */;
-import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 16951 */;
-import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 16955 */;
-import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 16962 */;
-import ICYMILoading from "ICYMILoading" /* 16973 */;
-import ICYMIBottomLoading from "ICYMIBottomLoading" /* 16974 */;
-import CaughtUpRowDefault from "CaughtUpRow" /* 16975 */;
-import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 16976 */;
-import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 16977 */;
-import ICYMIHeaderDefault from "ICYMIHeader" /* 16978 */;
-import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 16979 */;
-import CardHeightMeasurer from "CardHeightMeasurer" /* 16980 */;
-import AppFreezerDefault from "AppFreezer" /* 16982 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15285 */;
+import notifications_Notifications from "notifications/Notifications" /* 16866 */;
+import ICYMIConstants from "ICYMIConstants" /* 16917 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16921 */;
+import NativeICYMIUtils from "NativeICYMIUtils" /* 16933 */;
+import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 16955 */;
+import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 16959 */;
+import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 16966 */;
+import ICYMILoading from "ICYMILoading" /* 16977 */;
+import ICYMIBottomLoading from "ICYMIBottomLoading" /* 16978 */;
+import CaughtUpRowDefault from "CaughtUpRow" /* 16979 */;
+import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 16980 */;
+import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 16981 */;
+import ICYMIHeaderDefault from "ICYMIHeader" /* 16982 */;
+import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 16983 */;
+import CardHeightMeasurer from "CardHeightMeasurer" /* 16984 */;
+import AppFreezerDefault from "AppFreezer" /* 16986 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,7 +49,7 @@ import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8461 */;
 import ICYMIStore from "ICYMIStore" /* 8449 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
-import createICYMIStyles from "createICYMIStyles" /* 16914 */;
+import createICYMIStyles from "createICYMIStyles" /* 16918 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let closure_16;
 let hasOwnProperty;
 let metroRequire;
 let tmp5;
-const ThemedGradientDefault = tmp5(10226);
+const ThemedGradientDefault = tmp5(10227);
 function SettingsButton() {
   let paths;
   let obj = {
@@ -167,7 +167,7 @@ function ICYMI(inNestedNavigator) {
     const hasOpenedEnoughTimesResult = endVisible && ICYMIStore.hasOpenedEnoughTimes();
     if (hasOpenedEnoughTimesResult) {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(16939, dependencyMap.paths), "ICYMIFeedbackSheet", {});
+      obj.openLazy(asyncRequire(16943, dependencyMap.paths), "ICYMIFeedbackSheet", {});
     }
   }, items6);
   const ref = handleOnRefresh.useRef(null);
@@ -592,7 +592,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function H
     const PressableOpacity = tmp(6185).PressableOpacity;
     intl = tmp(1126).intl;
     if (inNestedNavigator) {
-      tmp14Result = tmp14(tmp(16864).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp14Result = tmp14(tmp(16868).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
       tmp14Result = tmp14(tmp(6208).XSmallIcon, { color: "interactive-text-default" });
     }
@@ -630,7 +630,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function H
     const PressableOpacity = tmp5(6185).PressableOpacity;
     intl = tmp5(1126).intl;
     if (inNestedNavigator) {
-      tmp6Result = tmp6(tmp5(16864).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp6Result = tmp6(tmp5(16868).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
       tmp6Result = tmp6(tmp5(6208).XSmallIcon, { color: "interactive-text-default" });
     }
@@ -734,7 +734,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMITab(route) 
         obj3 = { children: authStore4(Fragment, obj4) };
         obj4 = { children: items1 };
         const tmp4Result = AppFreezerDefault;
-        ICYMIContextProvider = tmp(16915).ICYMIContextProvider;
+        ICYMIContextProvider = tmp(16919).ICYMIContextProvider;
         const merged = Object.assign(tmp13);
         items1 = [tmp14, tmp22];
         const tmp32 = syncedClientThemes(tmp4Result, obj2);
@@ -804,7 +804,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMITab(route) 
   }, items1);
   const tmp11 = tmp6 ? closure_5 : react.Fragment;
   const tmpResult = AppFreezerDefault;
-  const ICYMIContextProvider = tmp4(16915).ICYMIContextProvider;
+  const ICYMIContextProvider = tmp4(16919).ICYMIContextProvider;
   const tmp14 = closure_16;
   if (tmp6) {
     obj3 = { style: memo };

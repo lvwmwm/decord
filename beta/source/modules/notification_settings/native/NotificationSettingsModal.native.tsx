@@ -1,9 +1,9 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18618
+// Function ID: 18619
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 2069, 2065, 6801, 5020, 2087, 18270, 4760, 5966, 1390, 1085, 21, 5092, 587, 4827, 5107, 5056, 10463, 2000, 6809, 6804, 12599, 12603, 12610, 6263, 1126, 6262, 6265, 6896, 5088, 1200, 4806, 2128, 12598, 6180, 10465, 6188, 10605, 4753, 7909, 8154, 5421, 8575, 5377, 10445, 558, 576, 1503, 504, 6802, 6728, 6201, 18615, 12596, 6688, 2]
+// Dependencies: [109, 19, 17, 2069, 2065, 6801, 5020, 2087, 18274, 4760, 5966, 1390, 1085, 21, 5092, 587, 4827, 5107, 5056, 10464, 2000, 6809, 6804, 12604, 12608, 12615, 6263, 1126, 6262, 6265, 6896, 5088, 1200, 4806, 2128, 12603, 6180, 10466, 6188, 10606, 4753, 7909, 8154, 5421, 8575, 5377, 10446, 558, 576, 1503, 504, 6802, 6728, 6201, 18619, 12601, 6688, 2]
 
-// Module 18614 (NotificationSettingsModal)
+// Module 18618 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -30,22 +30,22 @@ import TableSwitchRow6 from "TableSwitchRow" /* 6896 */;
 import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7909 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import Form2 from "Form" /* 8575 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10445 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 10465 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 10605 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12596 */;
-import NotificationSettingsMuteBanner2 from "NotificationSettingsMuteBanner" /* 12598 */;
-import NotificationSettingsPresets from "NotificationSettingsPresets" /* 12599 */;
-import NotificationSettingsMessageNotification from "NotificationSettingsMessageNotification" /* 12603 */;
-import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread" /* 12610 */;
-import NotificationSettingChannelOverridesDefault from "NotificationSettingChannelOverrides" /* 18615 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10446 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 10466 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 10606 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12601 */;
+import NotificationSettingsMuteBanner2 from "NotificationSettingsMuteBanner" /* 12603 */;
+import NotificationSettingsPresets from "NotificationSettingsPresets" /* 12604 */;
+import NotificationSettingsMessageNotification from "NotificationSettingsMessageNotification" /* 12608 */;
+import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread" /* 12615 */;
+import NotificationSettingChannelOverridesDefault from "NotificationSettingChannelOverrides" /* 18619 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 18270 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 18274 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -150,7 +150,7 @@ class NotificationSettings extends PureComponent {
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp8 = asyncRequire(10463, dependencyMap.paths);
+        const tmp8 = asyncRequire(10464, dependencyMap.paths);
         openLazy(tmp8, "muteSettings" + guildId, obj);
       }
     };
@@ -432,7 +432,7 @@ class NotificationSettings extends PureComponent {
       let tmp11Result = null;
       const tmp11 = closure_27;
       if (muted) {
-        const obj6 = { muteConfig, type: tmp8(10465).MuteSettingType.SERVER };
+        const obj6 = { muteConfig, type: tmp8(10466).MuteSettingType.SERVER };
         const tmp15 = MutedUntilTextDefault;
         tmp11Result = tmp11(tmp15, obj6, "muted-until");
       }
@@ -665,7 +665,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   }
-  const tmpResult2 = tmp(10445);
+  const tmpResult2 = tmp(10446);
   const shouldUseNewNotificationSystem = tmpResult2.useShouldUseNewNotificationSystem("NotificationSettingsModalNative");
   if (cResult[9] === tmp18) {
     class E {
@@ -705,7 +705,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     return tmp;
   }), items1);
   const obj4 = { children: items2 };
-  const obj3 = guildId(10445);
+  const obj3 = guildId(10446);
   const obj5 = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: obj3.useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
   const merged = Object.assign(tmp3);
   items2 = [closure_27(NotificationSettings, obj5), closure_27(guildId(6728).NavScrim, {})];

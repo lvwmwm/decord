@@ -1,9 +1,9 @@
-// Module ID: 14842
-// Function ID: 14843
+// Module ID: 14847
+// Function ID: 14848
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8280, 1085, 21, 5092, 587, 558, 576, 6852, 4769, 5056, 7764, 14843, 6679, 1126, 9031, 6839, 8575, 14844, 6180, 6265, 6899, 504, 8289, 8306, 8370, 1103, 8284, 14845, 14847, 5088, 1200, 14852, 2]
+// Dependencies: [5, 19, 17, 8280, 1085, 21, 5092, 587, 558, 576, 6852, 4769, 5056, 7764, 14848, 6679, 1126, 9031, 6839, 8575, 14849, 6180, 6265, 6899, 504, 8289, 8306, 8370, 1103, 8284, 14850, 14852, 5088, 1200, 14857, 2]
 
-// Module 14842 (ChangeBannerActionSheet)
+// Module 14847 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
@@ -15,8 +15,8 @@ import ActionSheet2 from "ActionSheet" /* 6899 */;
 import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7764 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14844 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14845 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14849 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
@@ -629,7 +629,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeBanner
   items3 = [tmp4(FormSubLabel, obj8), ];
   let tmp4Result4 = !flag;
   if (tmp4Result4) {
-    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(14844), obj10) };
+    const obj9 = { style: tmp.upsellButton, children: tmp4(obj(14849), obj10) };
     obj10 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
     tmp4Result4 = tmp4(tmp10, obj9);
   }
@@ -807,7 +807,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
           tmp30 = cResult[19];
         }
         if (cResult[20] !== tmp4.rowArrow) {
-          const obj4 = { style: tmp4.rowArrow, size: tmp(1200).Icon.Sizes.CUSTOM, source: pendingAccentColor(14852) };
+          const obj4 = { style: tmp4.rowArrow, size: tmp(1200).Icon.Sizes.CUSTOM, source: pendingAccentColor(14857) };
           const Icon = tmp(1200).Icon;
           const tmp35 = closure_9(Icon, obj4);
           cResult[20] = tmp4.rowArrow;
@@ -860,7 +860,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
       tmp30 = tmp32;
     }
     const obj8 = { style: tmp4.bannerColor, color: pendingAccentColor };
-    const tmp27 = closure_9(pendingAccentColor(14847), obj8);
+    const tmp27 = closure_9(pendingAccentColor(14852), obj8);
     cResult[12] = pendingAccentColor;
     cResult[13] = tmp4.bannerColor;
     cResult[14] = tmp27;
@@ -946,12 +946,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   obj6 = { style: tmp.selectedColor, children: items2 };
   items2 = [, , ];
   const obj7 = { style: tmp.bannerColor, color: pendingAccentColor };
-  items2[0] = closure_9(pendingAccentColor(14847), obj7);
+  items2[0] = closure_9(pendingAccentColor(14852), obj7);
   const obj8 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default", children: tmp2Result6.int2hex(pendingAccentColor) };
   const Text = tmp2(5088).Text;
   tmp2Result6 = require("utils/ColorUtils");
   items2[1] = closure_9(Text, obj8);
-  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(14852) };
+  const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(14857) };
   const Icon = tmp2(1200).Icon;
   items2[2] = closure_9(Icon, obj9);
   return closure_9(TableRow, obj4);

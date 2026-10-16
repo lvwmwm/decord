@@ -1,9 +1,9 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10614
+// Function ID: 10615
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2129, 2125, 2087, 6905, 1085, 1502, 21, 5092, 558, 576, 4818, 587, 5088, 8310, 1126, 10614, 504, 6876, 11, 10172, 6159, 10616, 8486, 1200, 6852, 10617, 5056, 4977, 1112, 6726, 4985, 1629, 8299, 10618, 5379, 6904, 2]
+// Dependencies: [19, 17, 2129, 2125, 2087, 6905, 1085, 1502, 21, 5092, 558, 576, 4818, 587, 5088, 8310, 1126, 10615, 504, 6876, 11, 10173, 6159, 10617, 8486, 1200, 6852, 10618, 5056, 4977, 1112, 6726, 4985, 1629, 8299, 10619, 5379, 6904, 2]
 
-// Module 10613 (UserProfileAboutMeCard)
+// Module 10614 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -18,9 +18,9 @@ import Text_Text from "Text/Text" /* 5088 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
 import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8310 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
-import BioTextDefault from "BioText" /* 10614 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 10616 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10618 */;
+import BioTextDefault from "BioText" /* 10615 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 10617 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10619 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -758,7 +758,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   const items3 = [closure_11(closure_17, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(10172).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1126).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  const obj7 = { themeType, icon: closure_11(userId(10173).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1126).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
   intl2 = tmp4(1126).intl;
   items5 = [closure_11(closure_18, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;

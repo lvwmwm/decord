@@ -1,9 +1,9 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11348
+// Function ID: 11349
 // Name: guild_templates/GuildTemplateActionCreators
-// Dependencies: [7029, 5934, 11347, 2000, 584, 2]
+// Dependencies: [7029, 5934, 11349, 2000, 584, 2]
 
-// Module 11346 (guild_templates/GuildTemplateActionCreators)
+// Module 11348 (guild_templates/GuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
@@ -19,7 +19,7 @@ let obj = {
     }
     const obj = ModalActionCreatorsDefault;
     const obj2 = { code };
-    obj.pushLazy(asyncRequire(11347, dependencyMap.paths), obj2, GUILD_TEMPLATE_MODAL_KEY);
+    obj.pushLazy(asyncRequire(11349, dependencyMap.paths), obj2, GUILD_TEMPLATE_MODAL_KEY);
     const obj3 = DispatcherDefault;
     const obj4 = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
     obj3.dispatch(obj4);

@@ -1,14 +1,14 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17079
+// Function ID: 17080
 // Name: RemixIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17076, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17080, 4817, 2]
 
-// Module 17075 (RemixIcon)
+// Module 17079 (RemixIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 17076 */;
+import AssetRegistry from "AssetRegistry" /* 17080 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

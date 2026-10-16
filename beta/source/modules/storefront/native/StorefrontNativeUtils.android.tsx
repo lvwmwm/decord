@@ -1,9 +1,9 @@
-// Module ID: 10161
-// Function ID: 10162
+// Module ID: 10162
+// Function ID: 10163
 // Name: StorefrontNativeUtils
 // Dependencies: [19, 558, 576, 9395, 7132, 504, 2]
 
-// Module 10161 (StorefrontNativeUtils)
+// Module 10162 (StorefrontNativeUtils)
 import IAPStoreDefault from "IAPStore" /* 7132 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 9395 */;
 import react from "react" /* 19 */;

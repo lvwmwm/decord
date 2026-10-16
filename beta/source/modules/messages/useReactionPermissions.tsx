@@ -1,9 +1,9 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10452
+// Function ID: 10453
 // Name: useReactionPermissions
-// Dependencies: [32, 4751, 2125, 5891, 4750, 1085, 558, 576, 504, 4756, 7990, 6972, 10452, 2]
+// Dependencies: [32, 4751, 2125, 5891, 4750, 1085, 558, 576, 504, 4756, 7990, 6972, 10453, 2]
 
-// Module 10451 (useReactionPermissions)
+// Module 10452 (useReactionPermissions)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LurkingStore from "LurkingStore" /* 4751 */;

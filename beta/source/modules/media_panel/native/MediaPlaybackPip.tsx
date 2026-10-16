@@ -1,17 +1,17 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 17972
+// Function ID: 17973
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 2065, 5432, 4760, 1390, 1085, 17797, 21, 5092, 587, 558, 576, 4818, 5421, 504, 8389, 5088, 17969, 5391, 7174, 6950, 4850, 5093, 1126, 8537, 6205, 10259, 1265, 14805, 4735, 17966, 8398, 8396, 17970, 2]
+// Dependencies: [32, 19, 17, 2065, 5432, 4760, 1390, 1085, 17801, 21, 5092, 587, 558, 576, 4818, 5421, 504, 8389, 5088, 17973, 5391, 7174, 6950, 4850, 5093, 1126, 8537, 6205, 10260, 1265, 14810, 4735, 17970, 8398, 8396, 17974, 2]
 
-// Module 17968 (MediaPlaybackPip)
+// Module 17972 (MediaPlaybackPip)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import timing from "timing" /* 5093 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14805 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17797 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14810 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -211,7 +211,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
           }
           const obj4 = { style: { flex: 1 }, children: items2 };
           const obj5 = { spacing: 20, speed: 0.2, children: tmp27 };
-          items2 = [closure_15(tmp(17969).Marquee, obj5), ];
+          items2 = [closure_15(tmp(17973).Marquee, obj5), ];
           const obj6 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items3, style: tmp4.infoContainerGradient };
           items3 = [token, `${tmp6}CC`, `${tmp6}00`, `${tmp6}00`, `${tmp6}CC`, token];
           items2[1] = closure_15(LinearGradientDefault, obj6);
@@ -346,7 +346,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaI
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(17969).Marquee, obj7), ];
+          items3 = [closure_15(message(17973).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           items3[1] = closure_15(first(5391), obj8);
@@ -499,7 +499,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
               }
               const _Symbol3 = Symbol;
               if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp29 = closure_15(tmp(10259).XLargeIcon, { size: "sm" });
+                const tmp29 = closure_15(tmp(10260).XLargeIcon, { size: "sm" });
                 cResult[22] = tmp29;
                 tmp27 = tmp29;
               } else {
@@ -642,7 +642,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function PiPCon
   items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   items2[1] = closure_15(closure_6, obj4);
-  const obj5 = { disabled: !visible, style: items4, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10259).XLargeIcon, { size: "sm" }) };
+  const obj5 = { disabled: !visible, style: items4, onPress: handleClosePip, accessible: true, accessibilityRole: "button", accessibilityLabel: string2Result, children: closure_15(message(10260).XLargeIcon, { size: "sm" }) };
   items4 = [, ];
   ({ pipButton: arr5[0], dismissButton: arr5[1] } = tmp);
   items2[2] = closure_15(closure_6, obj5);

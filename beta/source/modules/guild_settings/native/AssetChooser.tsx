@@ -1,16 +1,16 @@
-// Module ID: 18295
-// Function ID: 18296
+// Module ID: 18299
+// Function ID: 18300
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7764, 6185, 1126, 6157, 18296, 18297, 1200, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7764, 6185, 1126, 6157, 18300, 18301, 1200, 2]
 
-// Module 18295 (AssetChooser)
+// Module 18299 (AssetChooser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 4827 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18297 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(18296);
+      tmp9Result = tmp9(18300);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

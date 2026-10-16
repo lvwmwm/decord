@@ -1,10 +1,10 @@
-// Module ID: 17664
-// Function ID: 17665
+// Module ID: 17668
+// Function ID: 17669
 // Name: getRestrictedHiddenMediaCount
 // Dependencies: [7968, 5749, 2]
 // Exports: default
 
-// Module 17664 (getRestrictedHiddenMediaCount)
+// Module 17668 (getRestrictedHiddenMediaCount)
 import formatMessageForwards from "formatMessageForwards" /* 7968 */;
 import size from "module_2" /* 2 */;
 

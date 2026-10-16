@@ -1,9 +1,9 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12295
+// Function ID: 12296
 // Name: GuildPowerupsSectionHeader
 // Dependencies: [17, 21, 5092, 587, 558, 576, 6664, 5088, 2]
 
-// Module 12290 (GuildPowerupsSectionHeader)
+// Module 12295 (GuildPowerupsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

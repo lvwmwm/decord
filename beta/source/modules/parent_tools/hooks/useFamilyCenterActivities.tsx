@@ -1,9 +1,9 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15178
+// Function ID: 15179
 // Name: useFamilyCenterActivities
 // Dependencies: [7254, 7255, 558, 576, 573, 7737, 6940, 2]
 
-// Module 15173 (useFamilyCenterActivities)
+// Module 15178 (useFamilyCenterActivities)
 import react from "react" /* 576 */;
 import PriceUtils from "PriceUtils" /* 6940 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;

@@ -1,14 +1,14 @@
-// Module ID: 15535
-// Function ID: 15536
+// Module ID: 15540
+// Function ID: 15541
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 2065, 21, 5092, 4764, 558, 576, 15533, 1200, 5088, 504, 5421, 1126, 8154, 2]
+// Dependencies: [19, 17, 2065, 21, 5092, 4764, 558, 576, 15538, 1200, 5088, 504, 5421, 1126, 8154, 2]
 
-// Module 15535 (GuildRoleSubscriptionBenefitRow)
+// Module 15540 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import EmojiIconDefault from "EmojiIcon" /* 15533 */;
+import EmojiIconDefault from "EmojiIcon" /* 15538 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;

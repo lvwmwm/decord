@@ -1,9 +1,9 @@
-// Module ID: 13105
-// Function ID: 13106
+// Module ID: 13110
+// Function ID: 13111
 // Name: BotReportChooser
 // Dependencies: [19, 5440, 21, 558, 576, 5088, 1126, 6899, 6895, 5056, 7717, 504, 6853, 2]
 
-// Module 13105 (BotReportChooser)
+// Module 13110 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

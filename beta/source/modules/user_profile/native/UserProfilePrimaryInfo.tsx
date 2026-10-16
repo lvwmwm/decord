@@ -1,9 +1,9 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10533
+// Function ID: 10534
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1390, 8303, 6905, 1085, 7883, 8314, 21, 5092, 587, 558, 576, 10263, 10264, 8762, 10533, 6185, 5088, 10535, 7412, 4977, 10567, 8304, 7094, 4809, 8364, 9169, 9170, 9173, 5975, 1265, 7411, 1382, 1126, 10569, 6157, 10570, 10572, 10573, 10575, 10579, 10604, 1497, 10605, 8285, 8854, 4962, 2]
+// Dependencies: [19, 17, 1390, 8303, 6905, 1085, 7883, 8314, 21, 5092, 587, 558, 576, 10264, 10265, 8762, 10534, 6185, 5088, 10536, 7412, 4977, 10568, 8304, 7094, 4809, 8364, 9169, 9170, 9173, 5975, 1265, 7411, 1382, 1126, 10570, 6157, 10571, 10573, 10574, 10576, 10580, 10605, 1497, 10606, 8285, 8854, 4962, 2]
 
-// Module 10532 (UserProfilePrimaryInfo)
+// Module 10533 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -25,10 +25,10 @@ import GuildTagDefault from "GuildTag" /* 8854 */;
 import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
-import types from "types" /* 10264 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10575 */;
-import BadgeUtils from "BadgeUtils" /* 10579 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
+import types from "types" /* 10265 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10576 */;
+import BadgeUtils from "BadgeUtils" /* 10580 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -308,7 +308,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
   if (null == onPress) {
     let tmp5 = closure_15;
     const obj = { children: items };
-    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10264).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10265).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj2.style, displayNameText: obj2.containerStyle } = tmp);
     const tmp10 = UsernameWithEffectsDefault;
     items = [closure_14(tmp10, obj3), renderBotTag()];
@@ -317,14 +317,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
     let tmp12 = closure_15;
     const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
     const PressableOpacity = user(6185).PressableOpacity;
-    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10264).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10265).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
     const tmp17 = UsernameWithEffectsDefault;
     items1 = [closure_14(tmp17, obj8), renderBotTag(), ];
     const tmp13 = user;
     const tmp15 = closure_14;
     if (showChevron) {
-      showChevron = tmp15(tmp13(10533).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(10534).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);

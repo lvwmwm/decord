@@ -1,9 +1,9 @@
-// Module ID: 12930
-// Function ID: 12931
+// Module ID: 12935
+// Function ID: 12936
 // Name: CrunchyrollLinkModal
-// Dependencies: [19, 12931, 1085, 21, 558, 576, 12929, 7089, 7724, 1126, 12932, 9211, 12934, 12936, 12937, 12939, 9210, 12917, 6688, 2]
+// Dependencies: [19, 12936, 1085, 21, 558, 576, 12934, 7089, 7724, 1126, 12937, 9211, 12939, 12941, 12942, 12944, 9210, 12922, 6688, 2]
 
-// Module 12930 (CrunchyrollLinkModal)
+// Module 12935 (CrunchyrollLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,14 +12,14 @@ import Navigator2 from "Navigator" /* 6688 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
-import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 12917 */;
-import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 12929 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12931 */;
-import CrunchyrollLinkLandingDefault from "CrunchyrollLinkLanding" /* 12932 */;
-import CrunchyrollLinkPreConnectDefault from "CrunchyrollLinkPreConnect" /* 12934 */;
-import CrunchyrollLinkDiscordConsentDefault from "CrunchyrollLinkDiscordConsent" /* 12936 */;
-import CrunchyrollLinkSuccessDefault from "CrunchyrollLinkSuccess" /* 12937 */;
-import CrunchyrollLinkErrorDefault from "CrunchyrollLinkError" /* 12939 */;
+import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 12922 */;
+import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 12934 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12936 */;
+import CrunchyrollLinkLandingDefault from "CrunchyrollLinkLanding" /* 12937 */;
+import CrunchyrollLinkPreConnectDefault from "CrunchyrollLinkPreConnect" /* 12939 */;
+import CrunchyrollLinkDiscordConsentDefault from "CrunchyrollLinkDiscordConsent" /* 12941 */;
+import CrunchyrollLinkSuccessDefault from "CrunchyrollLinkSuccess" /* 12942 */;
+import CrunchyrollLinkErrorDefault from "CrunchyrollLinkError" /* 12944 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -171,7 +171,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(twoWayLinkStyles), items);
-  const obj2 = twoWayLinkStyles(12917);
+  const obj2 = twoWayLinkStyles(12922);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack);
   const Navigator = twoWayLinkStyles(6688).Navigator;
   const intl = twoWayLinkStyles(1126).intl;

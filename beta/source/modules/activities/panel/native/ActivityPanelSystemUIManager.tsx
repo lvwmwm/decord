@@ -1,14 +1,14 @@
-// Module ID: 17782
-// Function ID: 17783
+// Module ID: 17786
+// Function ID: 17787
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 6067, 21, 558, 576, 17759, 1382, 10361, 10829, 2]
+// Dependencies: [19, 6067, 21, 558, 576, 17763, 1382, 10362, 10830, 2]
 
-// Module 17782 (ActivityPanelSystemUIManager)
+// Module 17786 (ActivityPanelSystemUIManager)
 import react2 from "react" /* 576 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import StatusBarDefault from "StatusBar" /* 10361 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 10829 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17759 */;
+import StatusBarDefault from "StatusBar" /* 10362 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 10830 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

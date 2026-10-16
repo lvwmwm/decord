@@ -1,10 +1,10 @@
-// Module ID: 18683
-// Function ID: 18684
+// Module ID: 18687
+// Function ID: 18688
 // Name: SafetyFlowsManager
-// Dependencies: [18684, 6808, 2]
+// Dependencies: [18688, 6808, 2]
 
-// Module 18683 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 18684 */;
+// Module 18687 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 18688 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

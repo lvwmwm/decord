@@ -1,10 +1,10 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11616
+// Function ID: 11617
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 10855, 7015, 11615, 2]
+// Dependencies: [5, 10856, 7015, 11617, 2]
 // Exports: launchActivityInBotDM
 
-// Module 11614 (AppLauncherPlayUtils)
+// Module 11616 (AppLauncherPlayUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

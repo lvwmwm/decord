@@ -1,9 +1,9 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 10938
+// Function ID: 10939
 // Name: shared/RPCError
 // Dependencies: [2]
 
-// Module 10937 (shared/RPCError)
+// Module 10938 (shared/RPCError)
 import size from "module_2" /* 2 */;
 
 class RPCError extends Error {

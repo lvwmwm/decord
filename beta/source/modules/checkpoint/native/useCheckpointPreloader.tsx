@@ -1,19 +1,19 @@
-// Module ID: 16050
-// Function ID: 16051
+// Module ID: 16055
+// Function ID: 16056
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 16000, 4913, 4915, 16015, 16036, 16024, 16008, 16006, 558, 576, 16051, 1295, 2]
+// Dependencies: [32, 19, 16005, 4913, 4915, 16020, 16041, 16029, 16013, 16011, 558, 576, 16056, 1295, 2]
 
-// Module 16050 (useCheckpointPreloader)
+// Module 16055 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _modDef4913 from "module_4913" /* 4913 */;
 import _modDef4915 from "module_4915" /* 4915 */;
-import CheckpointStore from "CheckpointStore" /* 16000 */;
-import _modDef16006 from "module_16006" /* 16006 */;
-import _modDef16008 from "module_16008" /* 16008 */;
-import _modDef16015 from "module_16015" /* 16015 */;
-import _modDef16024 from "module_16024" /* 16024 */;
-import _modDef16036 from "module_16036" /* 16036 */;
+import CheckpointStore from "CheckpointStore" /* 16005 */;
+import _modDef16011 from "module_16011" /* 16011 */;
+import _modDef16013 from "module_16013" /* 16013 */;
+import _modDef16020 from "module_16020" /* 16020 */;
+import _modDef16029 from "module_16029" /* 16029 */;
+import _modDef16041 from "module_16041" /* 16041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef4913, _modDef4915, _modDef16015, _modDef16036, _modDef16024, _modDef16008, _modDef16006];
+let items = [_modDef4913, _modDef4915, _modDef16020, _modDef16041, _modDef16029, _modDef16013, _modDef16011];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;

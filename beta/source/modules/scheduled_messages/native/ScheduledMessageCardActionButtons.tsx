@@ -1,9 +1,9 @@
-// Module ID: 12877
-// Function ID: 12878
+// Module ID: 12882
+// Function ID: 12883
 // Name: ScheduledMessageCardActionButtons
-// Dependencies: [109, 21, 558, 576, 1126, 5040, 9288, 9719, 5051, 6296, 7569, 8767, 9358, 2]
+// Dependencies: [109, 21, 558, 576, 1126, 5040, 9288, 9720, 5051, 6296, 7569, 8767, 9358, 2]
 
-// Module 12877 (ScheduledMessageCardActionButtons)
+// Module 12882 (ScheduledMessageCardActionButtons)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1126 */;
 import SendMessageIcon from "SendMessageIcon" /* 5040 */;
@@ -13,7 +13,7 @@ import IconButton2 from "IconButton" /* 7569 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8767 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9288 */;
 import ContextMenu from "ContextMenu" /* 9358 */;
-import PencilIcon from "PencilIcon" /* 9719 */;
+import PencilIcon from "PencilIcon" /* 9720 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
   if (cResult[4] !== scheduledMessage) {
     const obj3 = {
       label: tmp7,
-      IconComponent: tmp(9719).PencilIcon,
+      IconComponent: tmp(9720).PencilIcon,
       action() {
           const obj = ScheduledMessagesUtils;
           return obj.openScheduledMessageEditContentModal(scheduledMessage);

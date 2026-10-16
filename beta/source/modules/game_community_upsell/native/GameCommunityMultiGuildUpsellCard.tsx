@@ -1,10 +1,10 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16727
+// Function ID: 16728
 // Name: GameCommunityMultiGuildUpsellCard
 // Dependencies: [5, 32, 19, 17, 5081, 4751, 2087, 1085, 21, 5092, 587, 504, 1415, 1450, 1497, 1265, 6098, 6920, 7053, 7052, 1126, 9012, 6157, 8865, 1200, 5088, 5379, 9358, 7569, 9237, 2]
 // Exports: default
 
-// Module 16722 (GameCommunityMultiGuildUpsellCard)
+// Module 16727 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;

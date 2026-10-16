@@ -1,9 +1,9 @@
-// Module ID: 18352
-// Function ID: 18353
+// Module ID: 18356
+// Function ID: 18357
 // Name: AuditLog
-// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6858, 5088, 1382, 4827, 18340, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10010, 6820, 6182, 18344, 6185, 5056, 8299, 14852, 504, 2]
+// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6858, 5088, 1382, 4827, 18344, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10011, 6820, 6182, 18348, 6185, 5056, 8299, 14857, 504, 2]
 
-// Module 18352 (AuditLog)
+// Module 18356 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,8 +18,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import PlatformsDefault from "Platforms" /* 5763 */;
 import EmojiDefault from "Emoji" /* 6820 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import AppliedForumTag from "AppliedForumTag" /* 10010 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18340 */;
+import AppliedForumTag from "AppliedForumTag" /* 10011 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 18344 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -728,7 +728,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(18344), obj6);
+    items2[0] = closure_14(user(18348), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1126).t.iXAna6),
@@ -787,7 +787,7 @@ class AuditLog extends PureComponent {
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1200).Icon.Sizes.CUSTOM, source: user(14852) };
+            const obj11 = { style: items4, size: tmp10(1200).Icon.Sizes.CUSTOM, source: user(14857) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1200).Icon;
             tmp17Result = tmp17(Icon, obj11);

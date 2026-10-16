@@ -1,9 +1,9 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16575
+// Function ID: 16576
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5081, 4802, 11760, 1085, 21, 558, 576, 9303, 5031, 4969, 5386, 16571, 2090, 16541, 10515, 4818, 587, 5384, 11577, 5092, 4850, 10226, 4851, 16572, 1497, 504, 1504, 5378, 5382, 14135, 1415, 6157, 16613, 2]
+// Dependencies: [19, 17, 5081, 4802, 11762, 1085, 21, 558, 576, 9303, 5031, 4969, 5386, 16576, 2090, 16546, 10516, 4818, 587, 5384, 11579, 5092, 4850, 10227, 4851, 16577, 1497, 504, 1504, 5378, 5382, 14140, 1415, 6157, 16618, 2]
 
-// Module 16570 (RedesignGuildHeader)
+// Module 16575 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -17,18 +17,18 @@ import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9303 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14135 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16541 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16571 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 16572 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10227 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11579 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14140 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16546 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16576 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 16577 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 5092 */;

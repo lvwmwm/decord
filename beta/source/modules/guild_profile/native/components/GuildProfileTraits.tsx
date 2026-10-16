@@ -1,9 +1,9 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13024
+// Function ID: 13025
 // Name: GuildProfileTraits
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1415, 4768, 6820, 5088, 2]
 
-// Module 13019 (GuildProfileTraits)
+// Module 13024 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

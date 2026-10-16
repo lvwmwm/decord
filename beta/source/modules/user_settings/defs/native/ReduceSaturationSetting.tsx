@@ -1,21 +1,21 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15714
+// Function ID: 15715
 // Name: ReduceSaturationSetting
-// Dependencies: [19, 5081, 7988, 21, 558, 576, 14693, 15607, 10610, 10663, 1126, 1200, 2]
+// Dependencies: [19, 5081, 7988, 21, 558, 576, 14698, 15612, 10611, 10664, 1126, 1200, 2]
 
-// Module 15709 (ReduceSaturationSetting)
+// Module 15714 (ReduceSaturationSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10610 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14693 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15607 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10611 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15612 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,16 +1,16 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10050
+// Function ID: 10051
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8312, 9117, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10050, 5362, 6207, 504, 10098, 10096, 8304, 10100, 10047, 10104, 10107, 9328, 4850, 1200, 5093, 10115, 6879, 10116, 10150, 10361, 1126, 6208, 6157, 12735, 5391, 5088, 2]
+// Dependencies: [32, 19, 17, 8312, 9117, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10051, 5362, 6207, 504, 10099, 10097, 8304, 10101, 10048, 10105, 10108, 9328, 4850, 1200, 5093, 10116, 6879, 10117, 10151, 10362, 1126, 6208, 6157, 12740, 5391, 5088, 2]
 
-// Module 10049 (PremiumGiftPlanSelect)
+// Module 10050 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import timing from "timing" /* 5093 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10107 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -430,9 +430,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
           }
           fn = undefined;
           if (tmp2) {
-            fn = () => { /* body not rendered: F154650 */ };
+            fn = () => { /* body not rendered: F154684 */ };
           }
-          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F154651 */ }, style: size, onLayout() { /* body not rendered: F154652 */ }, claimableRewards, isSelected: first === index };
+          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F154685 */ }, style: size, onLayout() { /* body not rendered: F154686 */ }, claimableRewards, isSelected: first === index };
           ({ paddingVertical: nativeDefault.space.PX_8 });
           size = { height: first1, width: VerticalGradient, alignSelf: str2 };
           str2 = undefined;

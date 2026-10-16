@@ -1,9 +1,9 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13464
+// Function ID: 13465
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9044, 558, 576, 6157, 13460, 5031, 7303, 4969, 10080, 10081, 5088, 1126, 2128, 4806, 7151, 12793, 6185, 5379, 5056, 6844, 6840, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9044, 558, 576, 6157, 13465, 5031, 7303, 4969, 10081, 10082, 5088, 1126, 2128, 4806, 7151, 12798, 6185, 5379, 5056, 6844, 6840, 2]
 
-// Module 13459 (FractionalNitroCollectedActionSheet)
+// Module 13464 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,7 +20,7 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
 import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7303 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9044 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13460 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13465 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
@@ -163,9 +163,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
     let tmp13;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(10080);
-    } else {
       tmp5Result = tmp5(10081);
+    } else {
+      tmp5Result = tmp5(10082);
     }
     if (cResult[0] !== tmp5Result) {
       const obj3 = { source: tmp5Result };
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
             }
             if (cResult[16] !== tmp4.questionIcon) {
               const obj5 = { style: tmp4.questionIcon, color: nativeDefault.colors.WHITE };
-              const CircleQuestionIcon = tmp(12793).CircleQuestionIcon;
+              const CircleQuestionIcon = tmp(12798).CircleQuestionIcon;
               const tmp33 = React4(CircleQuestionIcon, obj5);
               cResult[16] = tmp4.questionIcon;
               cResult[17] = tmp33;
@@ -452,9 +452,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
       const tmp11 = FastImageDefault;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_3)) {
-        tmp9Result = tmp9(10080);
-      } else {
         tmp9Result = tmp9(10081);
+      } else {
+        tmp9Result = tmp9(10082);
       }
       const obj3 = { source: tmp9Result };
       tmpResult = tmp(tmp11, obj3);
@@ -521,7 +521,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
   const PressableOpacity = tmp5(6185).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(587).colors.WHITE };
-  CircleQuestionIcon = tmp5(12793).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(12798).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };

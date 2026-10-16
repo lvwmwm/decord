@@ -1,9 +1,9 @@
-// Module ID: 15202
-// Function ID: 15203
+// Module ID: 15207
+// Function ID: 15208
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5934, 4962, 7734, 4808, 1126, 11532, 2568, 11535, 15203, 7724, 5088, 15153, 12903, 5377, 7511, 5379, 11541, 5958, 7510, 6201, 10603, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5934, 4962, 7734, 4808, 1126, 11534, 2568, 11537, 15208, 7724, 5088, 15158, 12908, 5377, 7511, 5379, 11543, 5958, 7510, 6201, 10604, 2]
 
-// Module 15202 (FamilyCenterModalDisconnect)
+// Module 15207 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1126 */;
@@ -13,7 +13,7 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 15203 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 15208 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -106,7 +106,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp12 = cResult[2];
   }
-  const tmpResult7 = tmp(11532);
+  const tmpResult7 = tmp(11534);
   const familyCenterActions = tmpResult7.useFamilyCenterActions(tmp12);
   disconnectLinkRequest = familyCenterActions.disconnectLinkRequest;
   isDisconnectLoading = familyCenterActions.isDisconnectLoading;
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp16 = cResult[5];
   }
-  const tmpResult8 = tmp(11535);
+  const tmpResult8 = tmp(11537);
   const ageSpecificText = tmpResult8.useAgeSpecificText(tmp14, tmp16);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
@@ -148,7 +148,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp21 = cResult[8];
   }
-  const tmpResult9 = tmp(11535);
+  const tmpResult9 = tmp(11537);
   const ageSpecificText1 = tmpResult9.useAgeSpecificText(tmp19, tmp21);
   if (cResult[9] !== name) {
     const intl5 = tmp(1126).intl;
@@ -170,7 +170,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp26 = cResult[12];
   }
-  const tmpResult10 = tmp(11535);
+  const tmpResult10 = tmp(11537);
   const ageSpecificText2 = tmpResult10.useAgeSpecificText(tmp24, tmp26);
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const intl7 = tmp(1126).intl;
@@ -185,7 +185,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     tmp29 = cResult[13];
     tmp30 = cResult[14];
   }
-  const tmpResult11 = tmp(11535);
+  const tmpResult11 = tmp(11537);
   const ageSpecificText3 = tmpResult11.useAgeSpecificText(tmp29, tmp30);
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const intl9 = tmp(1126).intl;
@@ -200,7 +200,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     tmp34 = cResult[15];
     tmp35 = cResult[16];
   }
-  const tmpResult12 = tmp(11535);
+  const tmpResult12 = tmp(11537);
   const ageSpecificText4 = tmpResult12.useAgeSpecificText(tmp34, tmp35);
   if (cResult[17] === disconnectLinkRequest) {
     if (cResult[20] !== isDisconnectLoading) {
@@ -391,36 +391,36 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     _undefined(false);
     c2(false);
   }, []);
-  const obj3 = otherUser(11532);
+  const obj3 = otherUser(11534);
   const familyCenterActions = obj3.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   disconnectLinkRequest = familyCenterActions.disconnectLinkRequest;
   isDisconnectLoading = familyCenterActions.isDisconnectLoading;
-  const useAgeSpecificText = otherUser(11535).useAgeSpecificText;
-  otherUser(11535);
+  const useAgeSpecificText = otherUser(11537).useAgeSpecificText;
+  otherUser(11537);
   let intl = otherUser(1126).intl;
   const formatResult = intl.format(_modDef2568.F2lccv, { username: name });
   const intl2 = otherUser(1126).intl;
   const ageSpecificText = useAgeSpecificText(formatResult, intl2.string(_modDef2568["WH+Gba"]));
-  const useAgeSpecificText2 = otherUser(11535).useAgeSpecificText;
-  otherUser(11535);
+  const useAgeSpecificText2 = otherUser(11537).useAgeSpecificText;
+  otherUser(11537);
   const intl3 = otherUser(1126).intl;
   const stringResult = intl3.string(_modDef2568.hOEHFn);
   const intl4 = otherUser(1126).intl;
   const ageSpecificText2 = useAgeSpecificText2(stringResult, intl4.format(_modDef2568.Or6hgl, { username: name }));
-  const useAgeSpecificText3 = otherUser(11535).useAgeSpecificText;
-  otherUser(11535);
+  const useAgeSpecificText3 = otherUser(11537).useAgeSpecificText;
+  otherUser(11537);
   const intl5 = otherUser(1126).intl;
   const formatResult1 = intl5.format(_modDef2568.XyRW4c, { username: name });
   const intl6 = otherUser(1126).intl;
   const ageSpecificText3 = useAgeSpecificText3(formatResult1, intl6.format(_modDef2568.PlrZal, { username: name }));
-  const useAgeSpecificText4 = otherUser(11535).useAgeSpecificText;
-  otherUser(11535);
+  const useAgeSpecificText4 = otherUser(11537).useAgeSpecificText;
+  otherUser(11537);
   const intl7 = otherUser(1126).intl;
   const stringResult1 = intl7.string(_modDef2568.eiABQz);
   const intl8 = otherUser(1126).intl;
   const ageSpecificText4 = useAgeSpecificText4(stringResult1, intl8.string(_modDef2568.PGQBnk));
-  const useAgeSpecificText5 = otherUser(11535).useAgeSpecificText;
-  otherUser(11535);
+  const useAgeSpecificText5 = otherUser(11537).useAgeSpecificText;
+  otherUser(11537);
   const intl9 = otherUser(1126).intl;
   const stringResult2 = intl9.string(_modDef2568.sCbKs4);
   const intl10 = otherUser(1126).intl;
@@ -459,7 +459,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   let tmp33Result = requiresParentalConsent;
   if (tmp33Result) {
     const obj8 = { style: tmp.warning, text: ageSpecificText2 };
-    tmp33Result = tmp33(tmp3(15153), obj8);
+    tmp33Result = tmp33(tmp3(15158), obj8);
   }
   const obj9 = { children: items4 };
   items4[1] = tmp33Result;
@@ -467,10 +467,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   items4[2] = closure_6(otherUser(5088).Text, obj10);
   const obj11 = { spacing: nativeDefault.space.PX_12, children: items5 };
   const Stack = tmp6(5377).Stack;
-  items5 = [closure_6(otherUser(12903).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(12903).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
+  items5 = [closure_6(otherUser(12908).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(12908).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
   items4[3] = closure_7(Stack, obj11);
   const items6 = [closure_7(ModalContent, obj9), ];
-  const ModalFooter = tmp6(11541).ModalFooter;
+  const ModalFooter = tmp6(11543).ModalFooter;
   const ButtonGroup = tmp6(5958).ButtonGroup;
   let tmp36 = !tmp9;
   const Button = tmp6(5379).Button;
@@ -531,7 +531,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   if (cResult[3] !== tmp4) {
     const obj4 = { initialRouteName: "DISCONNECT", screens: tmp4, headerBackTitle: tmp6 };
-    const tmp10 = closure_6(otherUser(10603).Modal, obj4);
+    const tmp10 = closure_6(otherUser(10604).Modal, obj4);
     cResult[3] = tmp4;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -561,7 +561,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     return obj;
   }, items);
   let obj = { initialRouteName: "DISCONNECT", screens: memo, headerBackTitle: intl.string(otherUser(1126).t["13/7kX"]) };
-  const Modal = otherUser(10603).Modal;
+  const Modal = otherUser(10604).Modal;
   intl = otherUser(1126).intl;
   return closure_6(Modal, obj);
 });

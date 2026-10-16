@@ -1,9 +1,9 @@
-// Module ID: 16000
-// Function ID: 16001
+// Module ID: 16005
+// Function ID: 16006
 // Name: CheckpointStore
 // Dependencies: [504, 584, 2]
 
-// Module 16000 (CheckpointStore)
+// Module 16005 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14896
+// Function ID: 14897
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7275, 7266, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8284, 8291, 1126, 5088, 8292, 6840, 10090, 504, 14892, 8286, 8307, 14893, 13478, 13479, 8293, 10627, 5391, 2]
+// Dependencies: [32, 19, 17, 7275, 7266, 1085, 21, 5092, 587, 558, 576, 8306, 8290, 6852, 6879, 1265, 8284, 8291, 1126, 5088, 8292, 6840, 10091, 504, 14897, 8286, 8307, 14898, 13483, 13484, 8293, 10628, 5391, 2]
 
-// Module 14891 (EditProfileFrameActionSheet)
+// Module 14896 (EditProfileFrameActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -15,8 +15,8 @@ import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators
 import useShopProductItems from "useShopProductItems" /* 8291 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 14893 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10628 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 14898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -905,7 +905,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(10627), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(10628), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5391);

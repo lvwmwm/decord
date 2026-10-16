@@ -1,22 +1,22 @@
-// Module ID: 18632
-// Function ID: 18633
+// Module ID: 18636
+// Function ID: 18637
 // Name: ContentInventoryManager
-// Dependencies: [5, 5757, 5761, 5888, 6065, 11605, 8450, 8465, 1085, 1102, 12, 13382, 584, 13986, 18633, 6808, 2]
+// Dependencies: [5, 5757, 5761, 5888, 6065, 11607, 8450, 8465, 1085, 1102, 12, 13387, 584, 13991, 18637, 6808, 2]
 
-// Module 18632 (ContentInventoryManager)
+// Module 18636 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 8465 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13382 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13986 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 18633 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13387 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13991 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 18637 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import IdleStore from "IdleStore" /* 5888 */;
 import WindowStore from "WindowStore" /* 6065 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11605 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11607 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 8450 */;
 import module_12 from "module_12" /* 12 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

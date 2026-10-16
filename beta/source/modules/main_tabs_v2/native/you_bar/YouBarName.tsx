@@ -1,18 +1,18 @@
-// Module ID: 16849
-// Function ID: 16850
+// Module ID: 16853
+// Function ID: 16854
 // Name: YouBarName
-// Dependencies: [19, 17, 5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 21, 5092, 587, 558, 576, 10263, 8854, 10533, 504, 10513, 10239, 10237, 10238, 16850, 10235, 10257, 5088, 4962, 2]
+// Dependencies: [19, 17, 5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 21, 5092, 587, 558, 576, 10264, 8854, 10534, 504, 10514, 10240, 10238, 10239, 16854, 10236, 10258, 5088, 4962, 2]
 
-// Module 16849 (YouBarName)
+// Module 16853 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildTagDefault from "GuildTag" /* 8854 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10237 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10238 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16850 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10238 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10239 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16854 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -33,7 +33,7 @@ let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChevronSmallDownIcon = tmp(10533);
+const ChevronSmallDownIcon = tmp(10534);
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
@@ -143,11 +143,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = userId(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = userId(10513);
+  const tmpResult4 = userId(10514);
   const customStatusActivity = tmpResult4.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10239).useGameMentionsAsPlainText;
-  userId(10239);
+  const useGameMentionsAsPlainText = userId(10240).useGameMentionsAsPlainText;
+  userId(10240);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class M {
     constructor() {
       activities = closure_7.getActivities(userId);
-      found = activities.filter(() => { /* body not rendered: F148645 */ });
+      found = activities.filter(() => { /* body not rendered: F148679 */ });
       obj = closure_0(closure_2[21]);
       items = [, ];
       items[0] = closure_4;
@@ -218,11 +218,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = userId(504);
   let items = [SelfPresenceStore];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj2 = userId(10513);
+  let obj2 = userId(10514);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10239).useGameMentionsAsPlainText;
-  userId(10239);
+  const useGameMentionsAsPlainText = userId(10240).useGameMentionsAsPlainText;
+  userId(10240);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj4 = { style: tmp.statusRow, children: tmp10Result };
   if (stateFromStores1) {
     let obj5 = { userId, emojiSize: 16, maxFontSizeMultiplier: 1.75 };
-    tmp10Result = tmp12(stateFromStores(10235), obj5);
+    tmp10Result = tmp12(stateFromStores(10236), obj5);
   } else {
     let emoji;
     const tmp13 = closure_14;
@@ -256,7 +256,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp12Result2 = null;
     if (null != emoji) {
       const obj6 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-      tmp12Result2 = tmp12(stateFromStores(10257), obj6);
+      tmp12Result2 = tmp12(stateFromStores(10258), obj6);
     }
     const items3 = [tmp12Result2, ];
     const obj7 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };

@@ -1,10 +1,10 @@
-// Module ID: 9803
-// Function ID: 9804
+// Module ID: 9804
+// Function ID: 9805
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 2087, 9243, 5403, 1085, 7238, 9249, 558, 576, 504, 9251, 1388, 1998, 9248, 9804, 7242, 2]
+// Dependencies: [32, 19, 2087, 9243, 5403, 1085, 7238, 9249, 558, 576, 504, 9251, 1388, 1998, 9248, 9805, 7242, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useCommand
 
-// Module 9803 (ApplicationCommandQueryApi)
+// Module 9804 (ApplicationCommandQueryApi)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -12,7 +12,7 @@ import Server from "Server" /* 1998 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9804 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 9805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "top", command: "k", section: "toCharArray$esjava$1" };
+    return { application: "Array", command: "code", section: "useRef" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "top", command: "k", section: "toCharArray$esjava$1" };
+    return { application: "Array", command: "code", section: "useRef" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "pos", application: "sk" };
+    return { command: "top", application: "code" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

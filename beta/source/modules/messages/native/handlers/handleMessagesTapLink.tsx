@@ -1,10 +1,10 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9610
+// Function ID: 9611
 // Name: handleMessagesTapLink
-// Dependencies: [9243, 5440, 7748, 9610, 1404, 2065, 5073, 5432, 1390, 1085, 1502, 2072, 5933, 1125, 9614, 5069, 7418, 9615, 8874, 8880, 8486, 9622, 8299, 5056, 8855, 2000, 5889, 7439, 9624, 9626, 9638, 7174, 6879, 9639, 1629, 9640, 5627, 1112, 8005, 9643, 9666, 2]
+// Dependencies: [9243, 5440, 7748, 9611, 1404, 2065, 5073, 5432, 1390, 1085, 1502, 2072, 5933, 1125, 9615, 5069, 7418, 9616, 8874, 8880, 8486, 9623, 8299, 5056, 8855, 2000, 5889, 7439, 9625, 9627, 9639, 7174, 6879, 9640, 1629, 9641, 5627, 1112, 8005, 9644, 9667, 2]
 // Exports: handleMessagesTapLink
 
-// Module 9609 (handleMessagesTapLink)
+// Module 9610 (handleMessagesTapLink)
 import router_utils from "router_utils" /* 1112 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
@@ -25,17 +25,17 @@ import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
 import GameProfileActionCreators from "GameProfileActionCreators" /* 8880 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 9614 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 9622 */;
-import openPinnedMessagesDefault from "openPinnedMessages" /* 9624 */;
-import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9626 */;
-import GuildAutomodMessageActionCreators from "GuildAutomodMessageActionCreators" /* 9638 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9639 */;
-import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 9640 */;
-import GuildHighlightsNotificationsActionCreators from "GuildHighlightsNotificationsActionCreators" /* 9643 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 9615 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 9623 */;
+import openPinnedMessagesDefault from "openPinnedMessages" /* 9625 */;
+import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9627 */;
+import GuildAutomodMessageActionCreators from "GuildAutomodMessageActionCreators" /* 9639 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9640 */;
+import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 9641 */;
+import GuildHighlightsNotificationsActionCreators from "GuildHighlightsNotificationsActionCreators" /* 9644 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7748 */;
-import SummaryStore from "SummaryStore" /* 9610 */;
+import SummaryStore from "SummaryStore" /* 9611 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import InviteStore from "InviteStore" /* 5073 */;
@@ -72,7 +72,7 @@ function handleMessagesTapURLLink(data, channelId) {
               num = !tmp2Result.isGuildScheduledEventInviteEmbed(invite);
             }
             if (!num) {
-              tmp4(9615)(invite);
+              tmp4(9616)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -113,7 +113,7 @@ function handleMessagesTapURLLink(data, channelId) {
       MaskedLinkUtils;
       const tmp19 = require;
       if (isLinkTrustedResult) {
-        const tmp19Result = tmp19(9614);
+        const tmp19Result = tmp19(9615);
         isLinkTrustedResult = tmp19Result.isLinkTrusted(data.node);
       }
       handleClick(obj4);
@@ -389,7 +389,7 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
               } else {
                 const obj45 = { location: constants.MESSAGE_EMBED, messageId: data.message.id, notificationType: TOP_MESSAGE_PUSH };
                 TOP_MESSAGE_PUSH = data.notificationType;
-                const tmp107 = asyncRequire(9666, dependencyMap.paths);
+                const tmp107 = asyncRequire(9667, dependencyMap.paths);
                 const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
                 ActionSheetActionCreatorsDefault;
                 if (TOP_MESSAGE_PUSH == null) {

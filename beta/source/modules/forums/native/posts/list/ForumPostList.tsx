@@ -1,16 +1,16 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11700
+// Function ID: 11701
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 2072, 21, 5092, 558, 576, 6977, 11679, 11690, 11699, 11702, 2]
+// Dependencies: [32, 19, 17, 2072, 21, 5092, 558, 576, 6977, 11681, 11692, 11701, 11704, 2]
 
-// Module 11698 (ForumPostList)
+// Module 11700 (ForumPostList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ForumTagHooks from "ForumTagHooks" /* 6977 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11679 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11699 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11702 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11681 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 11701 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 11704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostAppliedTags = tmp(11690);
+const ForumPostAppliedTags = tmp(11692);
 const View = react_native.View;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);

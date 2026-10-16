@@ -1,10 +1,10 @@
-// Module ID: 16351
-// Function ID: 16352
+// Module ID: 16356
+// Function ID: 16357
 // Name: AnimatedKeyboardProvider
-// Dependencies: [1643, 2, 16352]
+// Dependencies: [1643, 2, 16357]
 
-// Module 16351 (AnimatedKeyboardProvider)
-import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 16352 */;
+// Module 16356 (AnimatedKeyboardProvider)
+import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 16357 */;
 import react_native from "react-native" /* 1643 */;
 import size from "module_2" /* 2 */;
 

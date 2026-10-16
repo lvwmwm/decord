@@ -1,9 +1,9 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10181
+// Function ID: 10182
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6858, 10161, 1415, 9024, 6157, 5088, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6858, 10162, 1415, 9024, 6157, 5088, 2]
 
-// Module 10180 (SocialLayerStorefrontGiftProductDetails)
+// Module 10181 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9024 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10161 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -185,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
   let tmp = closure_8();
   let obj = getOrFetchApplication(6858);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  const obj2 = getOrFetchApplication(10161);
+  const obj2 = getOrFetchApplication(10162);
   let obj3 = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj2.useFormattedSKUPrice(obj3).userPrice;
   const items = [getOrFetchApplication];

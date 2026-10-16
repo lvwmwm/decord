@@ -1,9 +1,9 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16524
+// Function ID: 16525
 // Name: typing_indicators/TypingIndicator
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 4969, 1200, 2]
 
-// Module 16519 (typing_indicators/TypingIndicator)
+// Module 16524 (typing_indicators/TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

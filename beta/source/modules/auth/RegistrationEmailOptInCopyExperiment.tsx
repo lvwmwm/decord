@@ -1,9 +1,9 @@
-// Module ID: 16412
-// Function ID: 16413
+// Module ID: 16417
+// Function ID: 16418
 // Name: RegistrationEmailOptInCopyExperiment
 // Dependencies: [1453, 2]
 
-// Module 16412 (RegistrationEmailOptInCopyExperiment)
+// Module 16417 (RegistrationEmailOptInCopyExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

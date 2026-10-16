@@ -1,9 +1,9 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 12988
+// Function ID: 12989
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 1999, 9172, 1085, 21, 558, 576, 8620, 5922, 504, 9197, 12984, 5979, 2]
+// Dependencies: [32, 19, 1999, 9172, 1085, 21, 558, 576, 8620, 5922, 504, 9197, 12989, 5979, 2]
 
-// Module 12983 (QuestContentImpressionTracker)
+// Module 12988 (QuestContentImpressionTracker)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -297,7 +297,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
                 return tmp31;
               }
             }
-            const QuestContentImpressionTracker2 = tmp(12984).QuestContentImpressionTracker;
+            const QuestContentImpressionTracker2 = tmp(12989).QuestContentImpressionTracker;
             const merged = Object.assign(tmp17);
             const tmp36 = <QuestContentImpressionTracker2 key={tmp24} adContentIds={adContentIds} adCreativeType={AdCreativeType.AdCreativeType.QUEST} />;
             cResult[10] = tmp17;
@@ -317,7 +317,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
                 }
               }
             }
-            const QuestContentImpressionTracker = tmp(12984).QuestContentImpressionTracker;
+            const QuestContentImpressionTracker = tmp(12989).QuestContentImpressionTracker;
             const merged1 = Object.assign(tmp17);
             const tmp30 = <QuestContentImpressionTracker key={tmp24} adContentIds={adContentIds} adCreativeType={arg0.adCreativeType} />;
             cResult[14] = tmp17;
@@ -369,7 +369,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
     tmp11 = key;
   }
   const obj5 = { key: tmp11, adContentIds };
-  const QuestContentImpressionTracker = tmp(12984).QuestContentImpressionTracker;
+  const QuestContentImpressionTracker = tmp(12989).QuestContentImpressionTracker;
   const tmp13 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj4);
   const tmp12 = createElement;

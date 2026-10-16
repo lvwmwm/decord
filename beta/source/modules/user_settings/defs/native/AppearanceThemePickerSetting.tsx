@@ -1,17 +1,17 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15565
+// Function ID: 15566
 // Name: AppearanceThemePickerSetting
-// Dependencies: [1205, 7988, 1085, 558, 576, 504, 10663, 1126, 15554, 15561, 2]
+// Dependencies: [1205, 7988, 1085, 558, 576, 504, 10664, 1126, 15559, 15566, 2]
 
-// Module 15560 (AppearanceThemePickerSetting)
+// Module 15565 (AppearanceThemePickerSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
-import AppearanceSetting from "AppearanceSetting" /* 15554 */;
+import AppearanceSetting from "AppearanceSetting" /* 15559 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

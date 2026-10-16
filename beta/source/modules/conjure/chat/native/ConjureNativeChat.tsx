@@ -1,9 +1,9 @@
-// Module ID: 17171
-// Function ID: 17172
+// Module ID: 17175
+// Function ID: 17176
 // Name: ConjureNativeChat
-// Dependencies: [32, 19, 17, 1999, 13218, 13229, 13230, 12998, 21, 587, 683, 5092, 558, 576, 504, 17172, 1631, 11414, 17173, 17174, 12999, 17175, 17177, 17178, 17179, 17180, 1126, 3849, 17181, 17183, 17176, 1382, 17185, 17186, 17187, 17188, 17189, 11427, 17190, 5088, 17193, 8620, 17316, 17317, 17318, 7566, 17322, 5391, 6243, 2]
+// Dependencies: [32, 19, 17, 1999, 13223, 13234, 13235, 13003, 21, 587, 683, 5092, 558, 576, 504, 17176, 1631, 11416, 17177, 17178, 13004, 17179, 17181, 17182, 17183, 17184, 1126, 3849, 17185, 17187, 17180, 1382, 17189, 17190, 17191, 17192, 17193, 11429, 17194, 5088, 17197, 8620, 17320, 17321, 17322, 7566, 17326, 5391, 6243, 2]
 
-// Module 17171 (ConjureNativeChat)
+// Module 17175 (ConjureNativeChat)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,24 +13,24 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import _modDef6243 from "module_6243" /* 6243 */;
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
-import conjurePublishCard from "conjurePublishCard" /* 17173 */;
-import ConjureTodoState from "ConjureTodoState" /* 17175 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17176 */;
-import ConjureSecretRequestState from "ConjureSecretRequestState" /* 17177 */;
-import conjurePendingPlan from "conjurePendingPlan" /* 17178 */;
-import ConjureChatGrouping from "ConjureChatGrouping" /* 17179 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 17180 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 17187 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 17188 */;
-import ConjureMessageRowDefault from "ConjureMessageRow" /* 17193 */;
+import conjureChatTurns from "conjureChatTurns" /* 13004 */;
+import conjurePublishCard from "conjurePublishCard" /* 17177 */;
+import ConjureTodoState from "ConjureTodoState" /* 17179 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 17180 */;
+import ConjureSecretRequestState from "ConjureSecretRequestState" /* 17181 */;
+import conjurePendingPlan from "conjurePendingPlan" /* 17182 */;
+import ConjureChatGrouping from "ConjureChatGrouping" /* 17183 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 17184 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 17191 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 17192 */;
+import ConjureMessageRowDefault from "ConjureMessageRow" /* 17197 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 13218 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 13229 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 13230 */;
-import ConjureChatStore from "ConjureChatStore" /* 12998 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 13223 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 13234 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 13235 */;
+import ConjureChatStore from "ConjureChatStore" /* 13003 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -707,11 +707,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let tmp92Result;
   let tmp92Result5;
   let tmp95;
-  const f128342 = () => {
+  const f128368 = () => {
     map = new Map();
     return map;
   };
-  const f128345 = () => {
+  const f128371 = () => {
     map = new Map();
     return map;
   };
@@ -912,8 +912,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores12);
   }, items29);
-  [c14, c15] = tmp17(obj2.useState(f128342), 2);
-  tmp17(obj2.useState(f128342), 2);
+  [c14, c15] = tmp17(obj2.useState(f128368), 2);
+  tmp17(obj2.useState(f128368), 2);
   onToggleChecklist = obj2.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -927,8 +927,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items30);
-  [c18, c19] = tmp17(obj2.useState(f128345), 2);
-  tmp17(obj2.useState(f128345), 2);
+  [c18, c19] = tmp17(obj2.useState(f128371), 2);
+  tmp17(obj2.useState(f128371), 2);
   onTogglePlan = obj2.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1430,7 +1430,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       if (value3 != null) {
         superseded = value3.superseded;
       }
-      planCardExpanded = tmp5(17178).planCardExpanded;
+      planCardExpanded = tmp5(17182).planCardExpanded;
       render_id = item.render_id;
       conjurePendingPlan;
       const value4 = obj4.get(item.render_id);

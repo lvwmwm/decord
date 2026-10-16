@@ -1,9 +1,9 @@
-// Module ID: 10113
-// Function ID: 10114
+// Module ID: 10114
+// Function ID: 10115
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 5081, 21, 587, 5092, 558, 576, 5088, 504, 9007, 1383, 10114, 6157, 1993, 8971, 2]
+// Dependencies: [109, 32, 19, 17, 5081, 21, 587, 5092, 558, 576, 5088, 504, 9007, 1383, 10115, 6157, 1993, 8971, 2]
 
-// Module 10113 (PremiumGiftPromotionDetails)
+// Module 10114 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

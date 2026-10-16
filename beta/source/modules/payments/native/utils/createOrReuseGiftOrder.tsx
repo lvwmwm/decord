@@ -1,10 +1,10 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10100
+// Function ID: 10101
 // Name: createOrReuseGiftOrder
 // Dependencies: [5, 19, 5071, 1392, 1096, 3, 7149, 1382, 4702, 4784, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10099 (createOrReuseGiftOrder)
+// Module 10100 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1096 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;

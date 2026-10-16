@@ -1,16 +1,16 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10247
+// Function ID: 10248
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1085, 21, 7422, 10247, 9207, 8229, 10248, 10242, 558, 576, 10250, 10241, 10244, 2]
+// Dependencies: [19, 1085, 21, 7422, 10248, 9207, 8229, 10249, 10243, 558, 576, 10251, 10242, 10245, 2]
 
-// Module 10246 (PresenceActivityStatus)
+// Module 10247 (PresenceActivityStatus)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7422 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10241 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10244 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10247 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10250 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10242 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10245 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10248 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10251 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ function getActivityStatusIcon(activity) {
       if (activity.type === ActivityTypes.PLAYING) {
         GameControllerIcon = tmp2(9207).GameControllerIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
-        GameControllerIcon = tmp2(10248).MusicIcon;
+        GameControllerIcon = tmp2(10249).MusicIcon;
       } else {
         if (activity.type !== ActivityTypes.WATCHING) {
           if (activity.type !== ActivityTypes.STREAMING) {
@@ -39,7 +39,7 @@ function getActivityStatusIcon(activity) {
             }
           }
         }
-        GameControllerIcon = tmp2(10242).TvIcon;
+        GameControllerIcon = tmp2(10243).TvIcon;
       }
     }
     return GameControllerIcon;
@@ -171,13 +171,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresenceActi
   }
   if (tmp6) {
     const obj = { icon: tmp3, style: iconStyle };
-    tmp6 = React3(tmp(10241), obj);
+    tmp6 = React3(tmp(10242), obj);
   }
   const children = [tmp6, ];
   let tmp9 = !flag;
   if (tmp9) {
     const obj2 = { style: textStyle, maxFontSizeMultiplier, children: text };
-    tmp9 = React3(tmp(10244), obj2);
+    tmp9 = React3(tmp(10245), obj2);
   }
   children[1] = tmp9;
   return tmp4(tmp5, { children });

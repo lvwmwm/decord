@@ -1,9 +1,9 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11459
+// Function ID: 11460
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11450, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11458, 5088, 5398, 11459, 7094, 573, 4756, 1265, 5396, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11452, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11460, 5088, 5398, 11461, 7094, 573, 4756, 1265, 5396, 2]
 
-// Module 11457 (AutomodUserProfileQuarantineAlert)
+// Module 11459 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AlertDefault from "Alert" /* 5398 */;
-import Constants2 from "Constants" /* 11450 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11458 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11459 */;
+import Constants2 from "Constants" /* 11452 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11460 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11461 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -214,10 +214,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBl
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerServerProfileAlert(arg0) {
   let automodReason;
+  let first;
   let guildId;
   let guildName;
   let tmp11;
   let tmp14;
+  let tmp17;
   let tmp21;
   let tmp23;
   let tmp24;
@@ -225,10 +227,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   let tmp5;
   let tmp6;
   let tmp7;
-  const obj = react2;
+  const tmp2 = dependencyMap;
+  let obj = react2;
   const cResult = obj.c(22);
   if (cResult[0] !== arg0) {
     ({ guildId, guildName, automodReason } = arg0);
+    const tmp8 = _objectWithoutProperties;
     const tmp10 = _objectWithoutProperties(arg0, closure_5);
     cResult[0] = arg0;
     cResult[1] = tmp10;
@@ -251,7 +255,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
       const intl2 = tmp(1126).intl;
       stringResult = intl2.string(tmp(1126).t.SpDXI7);
     } else {
-      const intl = tmp(1126).intl;
+      let intl = tmp(1126).intl;
       stringResult = intl.string(tmp(1126).t.TBeZmG);
     }
     cResult[5] = tmp5;
@@ -261,7 +265,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     tmp11 = cResult[6];
   }
   if (cResult[7] !== tmp6) {
-    const obj2 = { guildId: tmp6 };
+    let obj2 = { guildId: tmp6 };
     cResult[7] = tmp6;
     cResult[8] = obj2;
     tmp14 = obj2;
@@ -269,9 +273,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     tmp14 = cResult[8];
   }
   const tmpResult = AutomodQuarantineUtils;
-  const tmp15 = _slicedToArray(tmpResult.useOpenFixQuarantinedProfileModal(tmp14), 2);
-  const first = tmp15[0];
-  if (!tmp15[1]) {
+  [first, tmp17] = tmpResult.useOpenFixQuarantinedProfileModal(tmp14);
+  if (!tmp17) {
     let tmp19;
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
@@ -284,17 +287,17 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     }
     tmp11 = tmp19;
   }
-  if (cResult[10] !== tmp15[1]) {
+  if (cResult[10] !== tmp17) {
     let stringResult2;
     const intl4 = tmp(1126).intl;
     const string = intl4.string;
     const t = tmp(1126).t;
-    if (tmp15[1]) {
+    if (tmp17) {
       stringResult2 = string(t["/PGQf0"]);
     } else {
       stringResult2 = string(t.WikgZ1);
     }
-    cResult[10] = tmp15[1];
+    cResult[10] = tmp17;
     cResult[11] = stringResult2;
     tmp21 = stringResult2;
   } else {
@@ -312,7 +315,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   }
   if (cResult[14] !== tmp7) {
     const intl5 = tmp(1126).intl;
-    const obj3 = { guildName: tmp7 };
+    let obj3 = { guildName: tmp7 };
     const formatResult = intl5.format(intl6.t.kcYdTq, obj3);
     cResult[14] = tmp7;
     cResult[15] = formatResult;
@@ -333,7 +336,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
       }
     }
   }
-  const obj4 = { title: tmp24, description: tmp11, buttonCta: tmp21, onConfirm: tmp23 };
+  let obj4 = { title: tmp24, description: tmp11, buttonCta: tmp21, onConfirm: tmp23 };
   const merged = Object.assign(tmp4);
   const tmp28 = closure_19(closure_22, obj4);
   cResult[16] = tmp4;
@@ -358,17 +361,15 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
     const intl2 = intl6.intl;
     stringResult = intl2.string(intl6.t.SpDXI7);
-    let tmp3 = dependencyMap;
     tmp2 = require;
   } else {
     tmp2 = require;
-    tmp3 = dependencyMap;
-    let intl = intl6.intl;
+    const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(11459);
-  [closure_129_0, tmp8] = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
-  const tmp7 = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
+  const tmp2Result = tmp2(11461);
+  [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
+  _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
     const intl3 = tmp2(1126).intl;
     stringResult = intl3.string(tmp2(1126).t.FFj5Dt);
@@ -381,7 +382,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   } else {
     stringResult1 = string(t.WikgZ1);
   }
-  let obj = {
+  const obj = {
     title: intl5.format(tmp2(1126).t.kcYdTq, { guildName }),
     description: stringResult,
     buttonCta: stringResult1,

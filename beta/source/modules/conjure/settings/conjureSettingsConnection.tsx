@@ -1,12 +1,12 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13251
+// Function ID: 13252
 // Name: conjureSettingsConnection
-// Dependencies: [5, 584, 13241, 2]
+// Dependencies: [5, 584, 13246, 2]
 // Exports: requestProjectRebuild, submitProjectSettings
 
-// Module 13246 (conjureSettingsConnection)
+// Module 13251 (conjureSettingsConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

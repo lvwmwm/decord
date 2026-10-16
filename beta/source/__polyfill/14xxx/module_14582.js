@@ -1,20 +1,18 @@
 // Module ID: 14582
 // Function ID: 14583
-// Dependencies: [14577, 14583]
+// Dependencies: []
 
 // Module 14582
-import _mod14577 from "module_14577" /* 14577 */;
-
-let tmp;
-const _mod14583 = tmp(14583);
-
-export default function(arg0) {
-  if (_mod14577(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp4 = new TypeError(_mod14583(arg0) + " is not a function");
-    throw tmp4;
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
   }
-};
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

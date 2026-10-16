@@ -1,19 +1,19 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17100
+// Function ID: 17101
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4748, 4760, 4963, 1390, 10652, 558, 576, 6946, 504, 17097, 5421, 5409, 2]
+// Dependencies: [19, 4748, 4760, 4963, 1390, 10653, 558, 576, 6946, 504, 17101, 5421, 5409, 2]
 // Exports: conjureSettingPickedIds, withSavedPicks
 
-// Module 17096 (useConjureSettingPickerOptions)
+// Module 17100 (useConjureSettingPickerOptions)
 import NicknameUtils from "NicknameUtils" /* 5409 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
-import conjureGuildPickerSources from "conjureGuildPickerSources" /* 17097 */;
+import conjureGuildPickerSources from "conjureGuildPickerSources" /* 17101 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import StreamerModeStore from "StreamerModeStore" /* 4963 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,15 +115,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp11 = null;
-    const useConjureGuildRoles = tmp(17097).useConjureGuildRoles;
-    tmp(17097);
+    const useConjureGuildRoles = tmp(17101).useConjureGuildRoles;
+    tmp(17101);
     if ("role" === type.type) {
       tmp11 = arg0;
     }
     const conjureGuildRoles = useConjureGuildRoles(tmp11);
     let tmp13 = null;
-    const useConjureGuildMemberUsers = tmp(17097).useConjureGuildMemberUsers;
-    tmp(17097);
+    const useConjureGuildMemberUsers = tmp(17101).useConjureGuildMemberUsers;
+    tmp(17101);
     if ("user" === type.type) {
       tmp13 = arg0;
     }
@@ -267,8 +267,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(17097).useConjureGuildMemberUsers;
-  tmp(17097);
+  const useConjureGuildMemberUsers = tmp(17101).useConjureGuildMemberUsers;
+  tmp(17101);
   if ("user" === type.type) {
     tmp8 = arg0;
   }

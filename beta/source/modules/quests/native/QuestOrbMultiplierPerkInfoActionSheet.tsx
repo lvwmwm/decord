@@ -1,9 +1,9 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15449
+// Function ID: 15450
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5056, 7094, 9514, 4806, 2128, 5379, 1126, 6663, 1631, 6844, 4922, 5088, 9159, 3655, 6840, 15441, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5056, 7094, 9515, 4806, 2128, 5379, 1126, 6663, 1631, 6844, 4922, 5088, 9159, 3655, 6840, 15446, 2]
 
-// Module 15444 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 15449 (QuestOrbMultiplierPerkInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,8 +20,8 @@ import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
 import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9159 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15441 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9515 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15446 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -681,7 +681,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMu
   let obj2 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: closure_8(tmp7, obj3) };
   BottomSheet = tmp(6840).BottomSheet;
   obj3 = { visible: tmp4, children: closure_8(closure_14, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  tmp7 = orbMultiplierEligibility(15441);
+  tmp7 = orbMultiplierEligibility(15446);
   return closure_8(BottomSheet, obj2);
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");

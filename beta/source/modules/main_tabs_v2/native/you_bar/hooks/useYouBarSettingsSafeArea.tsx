@@ -1,9 +1,9 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 13756
+// Function ID: 13757
 // Name: useYouBarSettingsSafeArea
 // Dependencies: [558, 1631, 576, 6627, 1383, 2]
 
-// Module 13751 (useYouBarSettingsSafeArea)
+// Module 13756 (useYouBarSettingsSafeArea)
 import react from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;

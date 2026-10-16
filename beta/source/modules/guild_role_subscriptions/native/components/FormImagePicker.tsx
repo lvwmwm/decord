@@ -1,9 +1,9 @@
-// Module ID: 18554
-// Function ID: 18555
+// Module ID: 18558
+// Function ID: 18559
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7764, 1450, 8669, 1126, 6157, 17092, 9719, 558, 576, 5088, 5379, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7764, 1450, 8669, 1126, 6157, 17096, 9720, 558, 576, 5088, 5379, 2]
 
-// Module 18554 (FormImagePicker)
+// Module 18558 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(17092).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(17096).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(9719).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9720).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }

@@ -1,13 +1,13 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17300
+// Function ID: 17301
 // Name: conjurePlanDesign
-// Dependencies: [6947, 3849, 17283, 2]
+// Dependencies: [6947, 3849, 17287, 2]
 // Exports: conjurePlanDesignAlt
 
-// Module 17296 (conjurePlanDesign)
+// Module 17300 (conjurePlanDesign)
 import _modDef3849 from "module_3849" /* 3849 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 17283 */;
+import conjurePlanTags from "conjurePlanTags" /* 17287 */;
 import size from "module_2" /* 2 */;
 
 const CONJURE_PLAN_DESIGN_ALTS = {};

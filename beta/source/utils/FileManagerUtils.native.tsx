@@ -169,9 +169,9 @@ export const removeFile = function removeFile(cache, combined) {
   obj = react_nativeDefault;
   return obj.removeFile(cache, combined);
 };
-export const clearFolder = function clearFolder(cache, c4) {
+export const clearFolder = function clearFolder(cache, c3) {
   obj = react_nativeDefault;
-  return obj.clearFolder(cache, c4);
+  return obj.clearFolder(cache, c3);
 };
 export const readFile = function readFile() {
   return obj(...arguments);

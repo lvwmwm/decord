@@ -10,15 +10,15 @@ import UserAffinitiesConstants from "UserAffinitiesConstants" /* 7344 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import size from "module_2" /* 2 */;
 
-const f96399 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
-const f96400 = (otherUserId) => {
+const f96411 = (otherUserId) => !blockedOrIgnored.isBlockedOrIgnored(otherUserId.otherUserId);
+const f96412 = (otherUserId) => {
   const items = [otherUserId.otherUserId, otherUserId];
   return items;
 };
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
-  const found = userAffinities.filter(f96399);
-  map = new Map(found.map(f96400));
+  const found = userAffinities.filter(f96411);
+  map = new Map(found.map(f96412));
 }
 const USER_AFFINITY_TTL = UserAffinitiesConstants.USER_AFFINITY_TTL;
 let map = new Map();
@@ -41,10 +41,10 @@ class UserAffinitiesV2Store extends PersistedStore {
       obj.lastFetched = userAffinities.lastFetched;
       const _Map = Map;
       const userAffinities1 = obj.userAffinities;
-      const found = userAffinities1.filter(f96399);
+      const found = userAffinities1.filter(f96411);
       const self2 = this;
       const self3 = this;
-      new Map(found.map(f96400));
+      new Map(found.map(f96412));
     }
     const items = [tmp];
     self.syncWith(items, recomputeAffinities);
@@ -135,8 +135,8 @@ const obj2 = {
     c3 = false;
     obj.userAffinities = affineUsers;
     const userAffinities = obj.userAffinities;
-    const found = userAffinities.filter(f96399);
-    map = new Map(found.map(f96400));
+    const found = userAffinities.filter(f96411);
+    map = new Map(found.map(f96412));
   },
   LOAD_USER_AFFINITIES_V2_FAILURE: function handleLoadUserAffinitiesFailure() {
     c3 = false;

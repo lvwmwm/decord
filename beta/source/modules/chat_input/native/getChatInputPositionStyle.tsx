@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11962
+// Function ID: 11963
 // Name: getChatInputPositionStyle
 // Dependencies: [17, 1382, 2]
 // Exports: default
 
-// Module 11960 (getChatInputPositionStyle)
+// Module 11962 (getChatInputPositionStyle)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;

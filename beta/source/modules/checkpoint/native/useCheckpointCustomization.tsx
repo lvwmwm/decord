@@ -1,15 +1,15 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16017
+// Function ID: 16018
 // Name: useCheckpointCustomization
-// Dependencies: [19, 1390, 16000, 558, 576, 504, 1989, 5461, 16010, 5438, 5463, 5565, 2]
+// Dependencies: [19, 1390, 16005, 558, 576, 504, 1989, 5461, 16015, 5438, 5463, 5565, 2]
 
-// Module 16012 (useCheckpointCustomization)
+// Module 16017 (useCheckpointCustomization)
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
 import CheckpointTrait from "CheckpointTrait" /* 5461 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16010 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16015 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import CheckpointStore from "CheckpointStore" /* 16000 */;
+import CheckpointStore from "CheckpointStore" /* 16005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

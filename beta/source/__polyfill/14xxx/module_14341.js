@@ -1,9 +1,12 @@
 // Module ID: 14341
 // Function ID: 14342
-// Dependencies: [14340]
+// Dependencies: [14331]
 
 // Module 14341
-import _mod14340 from "module_14340" /* 14340 */;
+import _mod14331 from "module_14331" /* 14331 */;
 
 
-export default (arg0, arg1, arg2) => _mod14340(arg1, arg0, arg2);
+export default (arg0, arg1) => {
+  const tmp = new _mod14331(arg0, arg1);
+  return tmp.major;
+};

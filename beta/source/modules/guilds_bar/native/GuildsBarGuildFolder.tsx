@@ -1,9 +1,9 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 16755
+// Function ID: 16756
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5081, 6078, 2087, 4939, 5963, 16742, 16747, 16739, 21, 5092, 587, 558, 576, 4818, 504, 6159, 5378, 4967, 1103, 6762, 4850, 4827, 6157, 8157, 16751, 16754, 12362, 16761, 5057, 6098, 6162, 16744, 16762, 2]
+// Dependencies: [19, 5081, 6078, 2087, 4939, 5963, 16747, 16752, 16744, 21, 5092, 587, 558, 576, 4818, 504, 6159, 5378, 4967, 1103, 6762, 4850, 4827, 6157, 8157, 16756, 16759, 12367, 16766, 5057, 6098, 6162, 16749, 16767, 2]
 
-// Module 16750 (GuildsBarGuildFolder)
+// Module 16755 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,16 +20,16 @@ import FastImageDefault from "FastImage" /* 6157 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8157 */;
-import ListUtils from "ListUtils" /* 12362 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16744 */;
+import ListUtils from "ListUtils" /* 12367 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16749 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import GuildReadStateStore_mod from "GuildReadStateStore" /* 6078 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16742 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16747 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16739 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16747 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16752 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16744 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

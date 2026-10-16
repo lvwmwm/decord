@@ -1,11 +1,11 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17136
+// Function ID: 17137
 // Name: FramePoolManager
-// Dependencies: [17133, 10821, 2]
+// Dependencies: [17137, 10822, 2]
 
-// Module 17132 (FramePoolManager)
-import leaveFrame from "leaveFrame" /* 10821 */;
-import AbstractFramePoolManager from "AbstractFramePoolManager" /* 17133 */;
+// Module 17136 (FramePoolManager)
+import leaveFrame from "leaveFrame" /* 10822 */;
+import AbstractFramePoolManager from "AbstractFramePoolManager" /* 17137 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,9 +1,9 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9592
+// Function ID: 9593
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7309, 7314, 8476, 21, 558, 576, 504, 6852, 6879, 9580, 2]
+// Dependencies: [19, 7309, 7314, 8476, 21, 558, 576, 504, 6852, 6879, 9581, 2]
 
-// Module 9591 (MessagePreviewReactions)
+// Module 9592 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
@@ -123,9 +123,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePre
     }
   }
   if (arr.length > 0) {
-    tmp7 = jsx(tmp(9580).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
+    tmp7 = jsx(tmp(9581).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
   } else {
-    tmp7 = jsx(tmp(9580).MessageReactionsEmpty, {});
+    tmp7 = jsx(tmp(9581).MessageReactionsEmpty, {});
   }
   cResult[0] = channelId;
   cResult[1] = emoji;
@@ -144,9 +144,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePre
   const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
   if (arr.length > 0) {
     const obj2 = { channelId, messageId, emoji, reactions: arr };
-    tmp3Result = tmp3(tmp4(9580).MessageReactionsContent, obj2);
+    tmp3Result = tmp3(tmp4(9581).MessageReactionsContent, obj2);
   } else {
-    tmp3Result = tmp3(tmp4(9580).MessageReactionsEmpty, {});
+    tmp3Result = tmp3(tmp4(9581).MessageReactionsEmpty, {});
   }
   return <AnalyticsLocationProvider value={tmp2(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations}>{tmp3Result}</AnalyticsLocationProvider>;
 });

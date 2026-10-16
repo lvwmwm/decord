@@ -1,7 +1,7 @@
 // Module ID: 8873
 // Function ID: 8874
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8874, 8875, 13013, 5088, 13017, 4809, 5056, 13018, 2000, 6185, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8874, 8875, 13018, 5088, 13022, 4809, 5056, 13023, 2000, 6185, 2]
 // Exports: default
 
 // Module 8873 (GuildProfileGames)
@@ -24,7 +24,7 @@ let tmp;
 let tmp5;
 const Text_Text = tmp(5088);
 const GameProfileAnalyticUtils = tmp(8874);
-const components_GameIconDefault = tmp5(13013);
+const components_GameIconDefault = tmp5(13018);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

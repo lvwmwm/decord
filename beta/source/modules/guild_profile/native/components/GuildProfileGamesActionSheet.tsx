@@ -1,10 +1,10 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13023
+// Function ID: 13024
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 558, 576, 8874, 8875, 13013, 6180, 5092, 13017, 8290, 1126, 5056, 8855, 2000, 6840, 6307, 6265, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8874, 8875, 13018, 6180, 5092, 13022, 8290, 1126, 5056, 8855, 2000, 6840, 6307, 6265, 2]
 // Exports: default
 
-// Module 13018 (GuildProfileGamesActionSheet)
+// Module 13023 (GuildProfileGamesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet;
 
 let tmp5;
-const components_GameIconDefault = tmp5(13013);
+const components_GameIconDefault = tmp5(13018);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileGameRow(arg0) {
@@ -109,7 +109,7 @@ export default function GuildProfileGamesActionSheet(profile) {
   const id = profile.id;
   const gameActivity = profile.gameActivity;
   const tmp = closure_7();
-  let obj = id(13017);
+  let obj = id(13022);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
   const obj2 = id(8290);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;

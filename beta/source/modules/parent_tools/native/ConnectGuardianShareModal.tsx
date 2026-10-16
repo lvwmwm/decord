@@ -1,9 +1,9 @@
-// Module ID: 18219
-// Function ID: 18220
+// Module ID: 18223
+// Function ID: 18224
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7254, 21, 5092, 587, 1126, 2568, 4808, 5934, 11532, 573, 15159, 7510, 7511, 5377, 5088, 15160, 6154, 6201, 558, 576, 10603, 2]
+// Dependencies: [19, 17, 7254, 21, 5092, 587, 1126, 2568, 4808, 5934, 11534, 573, 15164, 7510, 7511, 5377, 5088, 15165, 6154, 6201, 558, 576, 10604, 2]
 
-// Module 18219 (ConnectGuardianShareModal)
+// Module 18223 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import intl4 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import Modal2 from "Modal" /* 10603 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15159 */;
+import Modal2 from "Modal" /* 10604 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15164 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(11532);
+  const obj2 = getLinkCode(11534);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(573);
@@ -85,7 +85,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(15160).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(15165).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;
@@ -122,7 +122,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGua
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
-    const Modal = tmp(10603).Modal;
+    const Modal = tmp(10604).Modal;
     intl = tmp(1126).intl;
     const tmp8 = metroRequire(Modal, obj4);
     cResult[1] = tmp8;

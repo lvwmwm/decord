@@ -1,9 +1,9 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 11930
+// Function ID: 11931
 // Name: PollCreationInputError
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4828, 1200, 5088, 2]
 
-// Module 11928 (PollCreationInputError)
+// Module 11930 (PollCreationInputError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;

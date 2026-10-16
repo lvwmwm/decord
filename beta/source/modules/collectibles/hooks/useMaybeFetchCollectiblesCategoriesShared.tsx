@@ -1,9 +1,9 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10094
+// Function ID: 10095
 // Name: useMaybeFetchCollectiblesCategoriesShared
 // Dependencies: [32, 19, 5016, 7259, 1087, 558, 576, 504, 7304, 7258, 2]
 
-// Module 10093 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 10094 (useMaybeFetchCollectiblesCategoriesShared)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7304 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

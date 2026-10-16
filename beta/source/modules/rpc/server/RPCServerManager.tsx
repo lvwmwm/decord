@@ -1,9 +1,9 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14718
+// Function ID: 14719
 // Name: RPCServerManager
-// Dependencies: [32, 10807, 7386, 2065, 2125, 2087, 2012, 5108, 5110, 4760, 2116, 1390, 5113, 5639, 1085, 2024, 10802, 5117, 1382, 584, 1265, 14714, 504, 1388, 10945, 14719, 14721, 14722, 10946, 7408, 2]
+// Dependencies: [32, 10808, 7386, 2065, 2125, 2087, 2012, 5108, 5110, 4760, 2116, 1390, 5113, 5639, 1085, 2024, 10803, 5117, 1382, 584, 1265, 14719, 504, 1388, 10946, 14724, 14726, 14727, 10947, 7408, 2]
 
-// Module 14713 (RPCServerManager)
+// Module 14718 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -12,14 +12,14 @@ import Constants2 from "Constants" /* 2024 */;
 import Constants3 from "Constants" /* 5117 */;
 import Constants4 from "Constants" /* 5639 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import RPCHelpers from "RPCHelpers" /* 10945 */;
-import transformUserDefault from "transformUser" /* 10946 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14714 */;
-import useThermalState from "useThermalState" /* 14721 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14722 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
+import RPCHelpers from "RPCHelpers" /* 10946 */;
+import transformUserDefault from "transformUser" /* 10947 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14719 */;
+import useThermalState from "useThermalState" /* 14726 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14727 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 10807 */;
+import FramesStore from "FramesStore" /* 10808 */;
 import QuestStore from "QuestStore" /* 7386 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -163,7 +163,7 @@ class RPCServerManager {
         obj3 = RPCHelpers;
         const tmp8 = require;
         if (null != icon) {
-          const tmp8Result = tmp8(10945);
+          const tmp8Result = tmp8(10946);
           remoteIconURL = tmp8Result.getRemoteIconURL(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);

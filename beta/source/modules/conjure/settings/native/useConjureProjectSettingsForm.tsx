@@ -1,10 +1,10 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17086
+// Function ID: 17087
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2119, 10652, 1085, 21, 5092, 587, 558, 576, 504, 6947, 5056, 1126, 3849, 5088, 6839, 8558, 6739, 6265, 6177, 6899, 17083, 17086, 17088, 6946, 17089, 17090, 11413, 17091, 6180, 2]
+// Dependencies: [5, 32, 19, 17, 2119, 10653, 1085, 21, 5092, 587, 558, 576, 504, 6947, 5056, 1126, 3849, 5088, 6839, 8558, 6739, 6265, 6177, 6899, 17087, 17090, 17092, 6946, 17093, 17094, 11415, 17095, 6180, 2]
 // Exports: default
 
-// Module 17082 (useConjureProjectSettingsForm)
+// Module 17086 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 2119 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

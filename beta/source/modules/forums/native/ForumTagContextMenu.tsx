@@ -1,9 +1,9 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10012
+// Function ID: 10013
 // Name: ForumTagContextMenu
-// Dependencies: [21, 558, 576, 2041, 1126, 10012, 6886, 4808, 9358, 2]
+// Dependencies: [21, 558, 576, 2041, 1126, 10013, 6886, 4808, 9358, 2]
 
-// Module 10011 (ForumTagContextMenu)
+// Module 10012 (ForumTagContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
   if (cResult[1] !== tagId) {
     let obj2 = {
       label: first,
-      IconComponent: tagId(10012).IdIcon,
+      IconComponent: tagId(10013).IdIcon,
       action() {
           const obj = ClipboardUtils;
           obj.copy(tagId);
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumTagCo
   const DeveloperMode = tagId(2041).DeveloperMode;
   let obj = {
     label: intl.string(tagId(1126).t["8VG6IY"]),
-    IconComponent: tagId(10012).IdIcon,
+    IconComponent: tagId(10013).IdIcon,
     action() {
       const obj = ClipboardUtils;
       obj.copy(tagId);

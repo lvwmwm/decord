@@ -1,7 +1,7 @@
 // Module ID: 8491
 // Function ID: 8492
 // Name: getOnClick
-// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8492, 8514, 2000, 6098, 6950, 8509, 5072, 5077, 7374, 4800, 1265, 11611, 13038, 10853, 7015, 11615, 13042, 10685, 10156, 9161, 1384, 9163, 5977, 13043, 7258, 5107, 5422, 8260, 10742, 2]
+// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8492, 8514, 2000, 6098, 6950, 8509, 5072, 5077, 7374, 4800, 1265, 11613, 13043, 10854, 7015, 11617, 13047, 10686, 10157, 9161, 1384, 9163, 5977, 13048, 7258, 5107, 5422, 8260, 10743, 2]
 // Exports: default
 
 // Module 8491 (getOnClick)
@@ -17,8 +17,8 @@ import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
 import _slicedToArray2 from "_slicedToArray" /* 7374 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
 import QuestUtils from "QuestUtils" /* 9163 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 10685 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10742 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 10686 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
@@ -50,7 +50,7 @@ let map1;
 let tmp;
 let tmp11;
 const QuestContent = tmp11(5977);
-const SocialLayerStorefrontNativeActionCreators = tmp(10156);
+const SocialLayerStorefrontNativeActionCreators = tmp(10157);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -320,7 +320,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "pos", skuId: "sk" };
+            result = { applicationId: "top", skuId: "code" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -544,7 +544,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(13042, dependencyMap.paths);
+        const promise = asyncRequire(13047, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

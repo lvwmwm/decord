@@ -1,18 +1,18 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9611
+// Function ID: 9612
 // Name: SummaryStore
-// Dependencies: [32, 5016, 8694, 2065, 2087, 6035, 2116, 5966, 1390, 9611, 8695, 504, 11, 1102, 9612, 584, 9613, 12, 2]
+// Dependencies: [32, 5016, 8694, 2065, 2087, 6035, 2116, 5966, 1390, 9612, 8695, 504, 11, 1102, 9613, 584, 9614, 12, 2]
 
-// Module 9610 (SummaryStore)
+// Module 9611 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _mod8695 from "module_8695" /* 8695 */;
-import SummaryConstants from "SummaryConstants" /* 9611 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9612 */;
-import Summary from "Summary" /* 9613 */;
+import SummaryConstants from "SummaryConstants" /* 9612 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9613 */;
+import Summary from "Summary" /* 9614 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 5016 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 8694 */;

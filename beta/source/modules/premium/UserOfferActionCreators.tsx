@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "pos", paymentGatewayOverride: "sk" };
+                obj6 = { offerId: "top", paymentGatewayOverride: "code" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

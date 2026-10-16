@@ -1,9 +1,9 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10629
+// Function ID: 10630
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5081, 2125, 21, 5092, 587, 558, 576, 1990, 6053, 8279, 504, 4962, 5628, 1200, 8369, 9017, 10263, 10264, 5088, 2]
+// Dependencies: [19, 17, 5081, 2125, 21, 5092, 587, 558, 576, 1990, 6053, 8279, 504, 4962, 5628, 1200, 8369, 9017, 10264, 10265, 5088, 2]
 
-// Module 10628 (NameplatePreview)
+// Module 10629 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
@@ -328,8 +328,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
                   }
                   let tmp60 = null != tmp30;
                   if (tmp60) {
-                    const obj8 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp(10264).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-                    const tmp13Result2 = guildId(10263);
+                    const obj8 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp(10265).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+                    const tmp13Result2 = guildId(10264);
                     tmp60 = closure_7(tmp13Result2, obj8);
                   }
                   cResult[38] = tmp30;

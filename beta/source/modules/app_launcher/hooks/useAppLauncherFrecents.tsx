@@ -1,21 +1,21 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11808
+// Function ID: 11809
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6797, 1390, 11807, 2024, 5403, 1998, 558, 576, 9803, 504, 6860, 8453, 11808, 9805, 9242, 10859, 2]
+// Dependencies: [19, 6797, 1390, 11809, 2024, 5403, 1998, 558, 576, 9804, 504, 6860, 8453, 11810, 9806, 9242, 10860, 2]
 
-// Module 11806 (useAppLauncherFrecents)
+// Module 11808 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 1998 */;
 import Constants from "Constants" /* 2024 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6797 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6860 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9803 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9805 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10859 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9804 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9806 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10860 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11807 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11809 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -423,7 +423,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144224 */ });
           } else {
             found = [];
           }
@@ -445,7 +445,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144224 */ });
           } else {
             found = [];
           }
@@ -462,7 +462,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144224 */ });
           } else {
             found = [];
           }

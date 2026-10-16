@@ -1,12 +1,12 @@
-// Module ID: 10834
-// Function ID: 10835
+// Module ID: 10835
+// Function ID: 10836
 // Name: useShouldForcePipOrientation
-// Dependencies: [2064, 6036, 502, 2024, 5115, 558, 576, 10835, 504, 6038, 8446, 2]
+// Dependencies: [2064, 6036, 502, 2024, 5115, 558, 576, 10836, 504, 6038, 8446, 2]
 
-// Module 10834 (useShouldForcePipOrientation)
+// Module 10835 (useShouldForcePipOrientation)
 import Constants from "Constants" /* 2024 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10835 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10836 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

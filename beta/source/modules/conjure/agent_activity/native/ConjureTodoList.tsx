@@ -1,20 +1,20 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17283
+// Function ID: 17284
 // Name: ConjureTodoList
-// Dependencies: [19, 17, 21, 5092, 587, 1126, 3849, 558, 576, 17187, 17194, 5088, 6178, 17280, 17175, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1126, 3849, 558, 576, 17191, 17198, 5088, 6178, 17284, 17179, 2]
 // Exports: todoProgress
 
-// Module 17279 (ConjureTodoList)
+// Module 17283 (ConjureTodoList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FormCheckbox from "FormCheckbox" /* 6178 */;
-import ConjureTodoState from "ConjureTodoState" /* 17175 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 17187 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17194 */;
-import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 17280 */;
+import ConjureTodoState from "ConjureTodoState" /* 17179 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 17191 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17198 */;
+import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 17284 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ let obj7;
 let size;
 let size1;
 let size2;
-const f128654 = (status) => "completed" === status.status;
+const f128680 = (status) => "completed" === status.status;
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -917,7 +917,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
           }
         }
         const obj5 = { accessibilityLiveRegion: str4, accessibilityLabel: tmp11, children: tmp10 };
-        const tmp30 = closure_6(tmp(17280).ConjureNativeCollapsibleMeta, obj5);
+        const tmp30 = closure_6(tmp(17284).ConjureNativeCollapsibleMeta, obj5);
         cResult[13] = tmp10;
         cResult[14] = tmp11;
         cResult[15] = str4;
@@ -927,7 +927,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const length = todos.filter(f128654).length;
+  const length = todos.filter(f128680).length;
   if (cResult[8] !== agents) {
     let items2 = agents;
     if (agents == null) {
@@ -940,7 +940,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
     tmp15 = cResult[9];
   }
   if (cResult[10] !== tmp15) {
-    let tmpResult = tmp(17187);
+    let tmpResult = tmp(17191);
     const groupAgentsByTodoResult = tmpResult.groupAgentsByTodo(tmp15);
     cResult[10] = tmp15;
     cResult[11] = groupAgentsByTodoResult;
@@ -1058,7 +1058,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
   const onToggleExpanded = announceProgress.onToggleExpanded;
   let tmp = closure_8();
   dependencyMap = tmp;
-  const length = todos.filter(f128654).length;
+  const length = todos.filter(f128680).length;
   let items = [agents];
   react = react.useMemo(() => {
     let items = agents;
@@ -1079,10 +1079,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
   const intl2 = agents(1126).intl;
   let obj = { title: intl3.string(flag2(3849).RtzECX), meta: closure_6(ConjureNativeCollapsibleMeta, { accessibilityLiveRegion: str, accessibilityLabel: formatToPlainStringResult1, children: formatToPlainStringResult }), showHeader: todos.length > 0, superseded: flag3, expanded: flag4, onToggleExpanded, showLabel: intl4.string(tmp5(3849).RKyN9q), hideLabel: intl5.string(tmp5(3849).xydHoj), children: tmp10(closure_5, obj2) };
   formatToPlainStringResult1 = intl2.formatToPlainString(flag2(3849)["7tzwKB"], { completed: length, total: todos.length });
-  let tmp9 = flag2(17280);
+  let tmp9 = flag2(17284);
   intl3 = agents(1126).intl;
   str = "none";
-  ConjureNativeCollapsibleMeta = agents(17280).ConjureNativeCollapsibleMeta;
+  ConjureNativeCollapsibleMeta = agents(17284).ConjureNativeCollapsibleMeta;
   if (flag) {
     str = "none";
     if (!flag3) {
@@ -1144,7 +1144,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTodoL
   return closure_6(tmp9, obj);
 });
 function todoProgress(arr) {
-  const obj = { completed: arr.filter(f128654).length, total: arr.length };
+  const obj = { completed: arr.filter(f128680).length, total: arr.length };
   return obj;
 }
 size = size_mod;

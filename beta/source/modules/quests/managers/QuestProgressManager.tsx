@@ -1,9 +1,9 @@
-// Module ID: 18714
-// Function ID: 18715
+// Module ID: 18718
+// Function ID: 18719
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 2064, 10807, 2019, 5897, 2037, 5116, 7386, 17776, 5972, 10802, 1102, 7393, 7392, 12969, 5973, 9167, 5975, 7411, 7432, 7431, 6808, 5980, 7408, 5900, 1388, 7430, 7406, 2]
+// Dependencies: [5, 32, 2064, 10808, 2019, 5897, 2037, 5116, 7386, 17780, 5972, 10803, 1102, 7393, 7392, 12974, 5973, 9167, 5975, 7411, 7432, 7431, 6808, 5980, 7408, 5900, 1388, 7430, 7406, 2]
 
-// Module 18714 (QuestProgressManager)
+// Module 18718 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1102 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
@@ -16,18 +16,18 @@ import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7430 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7431 */;
 import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7432 */;
 import QuestActionCreators from "QuestActionCreators" /* 9167 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 12969 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 12974 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import FramesStore from "FramesStore" /* 10807 */;
+import FramesStore from "FramesStore" /* 10808 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import QuestStore from "QuestStore" /* 7386 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17776 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17780 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import getQuestLogger from "getQuestLogger" /* 7393 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

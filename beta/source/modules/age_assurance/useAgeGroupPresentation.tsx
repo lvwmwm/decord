@@ -1,10 +1,10 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9621
+// Function ID: 9622
 // Name: useAgeGroupPresentation
 // Dependencies: [1085, 558, 5909, 7493, 2128, 5918, 576, 1126, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification
 
-// Module 9620 (useAgeGroupPresentation)
+// Module 9621 (useAgeGroupPresentation)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;

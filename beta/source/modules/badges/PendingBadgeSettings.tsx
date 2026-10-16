@@ -1,13 +1,13 @@
-// Module ID: 13387
-// Function ID: 13388
+// Module ID: 13392
+// Function ID: 13393
 // Name: PendingBadgeSettings
-// Dependencies: [32, 1390, 8312, 10579, 584, 8313, 2]
+// Dependencies: [32, 1390, 8312, 10580, 584, 8313, 2]
 // Exports: applyPendingBadgeSettings, getPendingProfileBadges, hasPendingBadgeSettings, moveBadgeInDisplayOrder, resetPendingBadgeSettings, setPendingBadgeDisplayOrder, setPendingBadgeHiddenBadges, setPendingBadgeVisibility
 
-// Module 13387 (PendingBadgeSettings)
+// Module 13392 (PendingBadgeSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BadgeIdResolution from "BadgeIdResolution" /* 8313 */;
-import BadgeUtils from "BadgeUtils" /* 10579 */;
+import BadgeUtils from "BadgeUtils" /* 10580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
@@ -103,7 +103,7 @@ function applyPendingBadgeSettingsToProfileBadges(items, arg1) {
       let profileBadgeId = obj.resolveProfileBadgeId(item10027.id);
       let tmp14 = profileBadgeId;
       if (null != profileBadgeId) {
-        let tmp11Result = tmp11(10579);
+        let tmp11Result = tmp11(10580);
         if (!tmp11Result.isPinnedBadge(tmp14)) {
           if (!map.has(tmp14)) {
             let result = map.set(tmp14, tmp10);
@@ -245,7 +245,7 @@ export const setPendingBadgeVisibility = function setPendingBadgeVisibility(badg
 };
 export const resetPendingBadgeSettings = function resetPendingBadgeSettings() {
   const obj = DispatcherDefault;
-  obj.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "code", pendingBadgeHiddenBadges: "withSpring" });
+  obj.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "IconComponent", pendingBadgeHiddenBadges: "Array" });
 };
 export const hasPendingBadgeSettings = function hasPendingBadgeSettings(pendingBadgeDisplayOrder) {
   return undefined !== pendingBadgeDisplayOrder.pendingBadgeDisplayOrder || undefined !== pendingBadgeDisplayOrder.pendingBadgeHiddenBadges;
@@ -288,7 +288,7 @@ export const applyPendingBadgeSettings = function applyPendingBadgeSettings(stat
     map = new Map();
     for (const item10026 of mapped) {
       let tmp9 = item10026;
-      let obj = set(10579);
+      let obj = set(10580);
       if (obj.isPinnedBadge(item10026.badge_id)) {
         let arr = items1.push(tmp9);
       } else {

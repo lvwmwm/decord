@@ -1,9 +1,9 @@
-// Module ID: 10106
-// Function ID: 10107
+// Module ID: 10107
+// Function ID: 10108
 // Name: GiftingBadgeIcon
 // Dependencies: [19, 21, 558, 576, 6157, 2]
 
-// Module 10106 (GiftingBadgeIcon)
+// Module 10107 (GiftingBadgeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;

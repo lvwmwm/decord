@@ -1,11 +1,11 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12277
+// Function ID: 12278
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 5007, 5008, 558, 576, 504, 12238, 1126, 2600, 2]
+// Dependencies: [19, 5007, 5008, 558, 576, 504, 12243, 1126, 2600, 2]
 
-// Module 12272 (useCanGuildPowerupBeToggled)
+// Module 12277 (useCanGuildPowerupBeToggled)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12238 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12243 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -133,7 +133,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { disabled: true, reason: "a" };
+      const obj4 = { disabled: true, reason: "Array" };
       cResult[4] = obj4;
       tmp12 = obj4;
     } else {
@@ -143,7 +143,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { disabled: true, reason: "a" };
+      const obj5 = { disabled: true, reason: "Array" };
       cResult[3] = obj5;
       tmp10 = obj5;
     } else {
@@ -173,7 +173,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     let unlockedPowerups;
     const tmp = stateFromStores;
     if (null == stateFromStores) {
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     } else {
       if (closure_4.type !== constants.LEVEL_ACTIVATED) {
         if (closure_4.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
@@ -218,7 +218,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
           return obj;
         }
       }
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     }
   }, items1);
 });

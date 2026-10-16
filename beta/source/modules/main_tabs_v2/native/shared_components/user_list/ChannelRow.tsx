@@ -1,18 +1,18 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10283
+// Function ID: 10284
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10217, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10283, 11597, 8211, 8203, 5088, 4793, 4702, 6177, 6180, 2]
+// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10218, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10284, 11599, 8211, 8203, 5088, 4793, 4702, 6177, 6180, 2]
 
-// Module 10282 (ChannelRow)
+// Module 10283 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11597 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11599 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(11597).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(11599).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(11597).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(11599).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;

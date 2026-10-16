@@ -1,9 +1,9 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12719
+// Function ID: 12720
 // Name: PremiumGiftingConstants
 // Dependencies: [1392, 2632, 2]
 
-// Module 12714 (PremiumGiftingConstants)
+// Module 12719 (PremiumGiftingConstants)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2632 from "module_2632" /* 2632 */;
 import size from "module_2" /* 2 */;

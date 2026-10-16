@@ -1,9 +1,9 @@
-// Module ID: 10050
-// Function ID: 10051
+// Module ID: 10051
+// Function ID: 10052
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8312, 9117, 10051, 1390, 1085, 7133, 1392, 1096, 21, 3, 7148, 558, 576, 10052, 7149, 4784, 10053, 1126, 10054, 4769, 7127, 10055, 504, 10089, 10096, 8317, 8304, 5300, 1265, 6879, 10097, 584, 1382, 10048, 2]
+// Dependencies: [5, 32, 19, 8312, 9117, 10052, 1390, 1085, 7133, 1392, 1096, 21, 3, 7148, 558, 576, 10053, 7149, 4784, 10054, 1126, 10055, 4769, 7127, 10056, 504, 10090, 10097, 8317, 8304, 5300, 1265, 6879, 10098, 584, 1382, 10049, 2]
 
-// Module 10050 (NativeGiftContext)
+// Module 10051 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -19,14 +19,14 @@ import Constants3 from "Constants" /* 7133 */;
 import ContextUtilsDefault from "ContextUtils" /* 7148 */;
 import BadgeId from "BadgeId" /* 8304 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10048 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10097 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10049 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import PromotionsStore_mod from "PromotionsStore" /* 9117 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10051 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10052 */;
 import UserStore from "UserStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: 122814465, planSelection: { premiumType, planInterval }, giftInfo: -497967649 };
+  let obj4 = { orderId: "a", planId: false, planSelection: { premiumType, planInterval }, giftInfo: false };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: 122814465, planSelection: { premiumType, planInterval }, giftInfo: -497967649 };
+  let obj = { orderId: "a", planId: false, planSelection: { premiumType, planInterval }, giftInfo: false };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);

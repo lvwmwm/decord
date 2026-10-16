@@ -1,9 +1,9 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17700
+// Function ID: 17701
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 5761, 1390, 14006, 1085, 2062, 21, 5092, 587, 558, 576, 4827, 1631, 5056, 9200, 7094, 6839, 6894, 5377, 1126, 5088, 12871, 5379, 6840, 4825, 5763, 1415, 1200, 7572, 504, 14007, 6875, 4938, 2049, 2]
+// Dependencies: [32, 19, 17, 5761, 1390, 14011, 1085, 2062, 21, 5092, 587, 558, 576, 4827, 1631, 5056, 9200, 7094, 6839, 6894, 5377, 1126, 5088, 12876, 5379, 6840, 4825, 5763, 1415, 1200, 7572, 504, 14012, 6875, 4938, 2049, 2]
 
-// Module 17696 (RobloxConnectionCoachmark)
+// Module 17700 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14006 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14011 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -225,7 +225,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RobloxConnec
         const intl3 = tmp(1126).intl;
         const stringResult2 = intl3.string(tmp(1126).t.ItuabN);
         const obj10 = { size: "sm", color: nativeDefault.colors.WHITE };
-        const WindowLaunchIcon = tmp(12871).WindowLaunchIcon;
+        const WindowLaunchIcon = tmp(12876).WindowLaunchIcon;
         const tmp43 = closure_13(WindowLaunchIcon, obj10);
         cResult[26] = stringResult2;
         cResult[27] = tmp43;
@@ -408,7 +408,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RobloxConnec
   const Button = markAsDismissed(5379).Button;
   intl3 = markAsDismissed(1126).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  WindowLaunchIcon = markAsDismissed(12871).WindowLaunchIcon;
+  WindowLaunchIcon = markAsDismissed(12876).WindowLaunchIcon;
   items3 = [closure_13(Button, obj10), ];
   const obj12 = { text: intl4.string(markAsDismissed(1126).t.DiGJy3), variant: "secondary", size: "lg", onPress: handleCancel };
   const Button2 = markAsDismissed(5379).Button;

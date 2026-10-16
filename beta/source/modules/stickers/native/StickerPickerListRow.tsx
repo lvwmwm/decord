@@ -1,9 +1,9 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9769
+// Function ID: 9770
 // Name: StickerPickerListRow
-// Dependencies: [19, 17, 1390, 2044, 9723, 1241, 21, 5092, 587, 683, 558, 576, 8218, 1382, 2041, 9531, 5057, 5058, 5749, 7047, 5750, 9769, 9772, 1255, 6185, 2]
+// Dependencies: [19, 17, 1390, 2044, 9724, 1241, 21, 5092, 587, 683, 558, 576, 8218, 1382, 2041, 9532, 5057, 5058, 5749, 7047, 5750, 9770, 9773, 1255, 6185, 2]
 
-// Module 9768 (StickerPickerListRow)
+// Module 9769 (StickerPickerListRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -16,7 +16,7 @@ import StickersUtils from "StickersUtils" /* 5749 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9723 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9724 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -598,7 +598,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPicke
   let tmp4 = dependencyMap;
   let AnimateStickers = stickers(2041).AnimateStickers;
   let closure_8 = AnimateStickers.useSetting();
-  let obj2 = stickers(9531);
+  let obj2 = stickers(9532);
   let closure_9 = obj2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPickerListRow");
   let items = [];
   if (nativeRow) {
@@ -615,7 +615,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPicke
           ({ id: obj5.stickerId, name: obj5.stickerName, format_type: obj5.stickerType } = tmp9);
           ({ isOpaque, isDisabled, isLocked } = rowTraitsResult);
           let push2 = items.push;
-          obj6 = stickers(9769);
+          obj6 = stickers(9770);
           let tmp17 = STICKER_SIZE;
           let push2Result = push2(obj3);
           tmp12 = dependencyMap;
@@ -654,7 +654,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPicke
             }
       };
       obj8 = { rowContentWidth: containerWidth, rowContentPaddingVertical, itemSize: STICKER_SIZE, items };
-      return closure_8(isSectionNitroLocked(9772), obj7);
+      return closure_8(isSectionNitroLocked(9773), obj7);
     } catch (tmp23) {
       const obj9 = { message: "Error in StickerPickerListRowNativeComponent", category: "sticker", data: obj10 };
       obj10 = { itemLength: items.length, items: found.map((stickerId) => ({ stickerId: stickerId.stickerId, stickerName: stickerId.stickerName, stickerUrl: stickerId.stickerUrl })) };

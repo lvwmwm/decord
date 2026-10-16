@@ -1,16 +1,16 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11021
+// Function ID: 11022
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11020, 5092, 587, 558, 576, 1631, 11021, 11040, 5088, 2]
+// Dependencies: [19, 17, 21, 11022, 5092, 587, 558, 576, 1631, 11023, 11042, 5088, 2]
 
-// Module 11019 (StageViewWithPrompts)
+// Module 11021 (StageViewWithPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11020 */;
-import FocusedControls from "FocusedControls" /* 11021 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11040 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11022 */;
+import FocusedControls from "FocusedControls" /* 11023 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11042 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

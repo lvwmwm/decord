@@ -1,9 +1,9 @@
 // Module ID: 9961
 // Function ID: 9962
-// Dependencies: [41, 42, 93, 95, 98, 9836]
+// Dependencies: [41, 42, 93, 95, 98, 9830]
 
 // Module 9961
-import _mod9836 from "module_9836" /* 9836 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9830 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,29 +25,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class ESMergeDateTimeRefiner {
+class ESTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(ESMergeDateTimeRefiner);
+    _classCallCheck(this, ESTimeExpressionParser);
+    const obj = _getPrototypeOf(ESTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,14 +42,21 @@ class ESMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESMergeDateTimeRefiner, fn(_mod9836).default);
+_inherits(ESTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(?:,|de|aslas|a)?\\s*$");
-    return regExp;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:aslas|deslas|las?|al?|de|del)\\s*)?";
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:l)?|\\?)\\s*";
+    }
+  }
+];
 
-export default _createClass(ESMergeDateTimeRefiner, items);
+export default _createClass(ESTimeExpressionParser, items);

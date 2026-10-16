@@ -1,10 +1,10 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11966
+// Function ID: 11967
 // Name: trackWaveCtaClicked
 // Dependencies: [2065, 1085, 1265, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 11964 (trackWaveCtaClicked)
+// Module 11966 (trackWaveCtaClicked)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

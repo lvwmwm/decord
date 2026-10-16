@@ -1,9 +1,9 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16784
+// Function ID: 16785
 // Name: StreamingSubtitle
 // Dependencies: [19, 21, 558, 576, 1126, 5409, 5088, 2]
 
-// Module 16779 (StreamingSubtitle)
+// Module 16784 (StreamingSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;

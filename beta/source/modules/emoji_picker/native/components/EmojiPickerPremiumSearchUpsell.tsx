@@ -1,9 +1,9 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9514
+// Function ID: 9515
 // Name: EmojiPickerPremiumSearchUpsell
-// Dependencies: [19, 1390, 1085, 1392, 21, 5092, 558, 576, 1265, 9277, 9457, 9276, 9265, 9514, 4769, 5056, 9389, 9390, 1126, 9031, 587, 1200, 9515, 9516, 2]
+// Dependencies: [19, 1390, 1085, 1392, 21, 5092, 558, 576, 1265, 9277, 9457, 9276, 9265, 9515, 4769, 5056, 9389, 9390, 1126, 9031, 587, 1200, 9516, 9517, 2]
 
-// Module 9513 (EmojiPickerPremiumSearchUpsell)
+// Module 9514 (EmojiPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,8 +15,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import MobileEmojiPickerUpsellRestyleExperiment from "MobileEmojiPickerUpsellRestyleExperiment" /* 9277 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9515 */;
-import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9516 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9516 */;
+import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9517 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

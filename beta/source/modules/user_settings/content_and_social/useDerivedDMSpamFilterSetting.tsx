@@ -1,9 +1,9 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15123
+// Function ID: 15124
 // Name: useDerivedDMSpamFilterSetting
 // Dependencies: [1390, 2043, 558, 576, 2041, 504, 5921, 6998, 1209, 2]
 
-// Module 15118 (useDerivedDMSpamFilterSetting)
+// Module 15123 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;

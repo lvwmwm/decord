@@ -1,9 +1,9 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12826
+// Function ID: 12827
 // Name: LongPressMessageChatItemPreview
 // Dependencies: [21, 5092, 587, 7742, 558, 576, 9369, 2]
 
-// Module 12821 (LongPressMessageChatItemPreview)
+// Module 12826 (LongPressMessageChatItemPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

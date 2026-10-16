@@ -1,15 +1,15 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11005
+// Function ID: 11006
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10354, 1085, 21, 5092, 587, 558, 576, 4969, 5365, 1200, 6185, 2]
+// Dependencies: [19, 17, 10355, 1085, 21, 5092, 587, 558, 576, 4969, 5365, 1200, 6185, 2]
 
-// Module 11003 (ChannelCallNavigatorIcon)
+// Module 11005 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import shared from "shared" /* 4969 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
 import Pressables from "Pressables" /* 6185 */;
-import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import ChannelCallStore from "ChannelCallStore" /* 10355 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;

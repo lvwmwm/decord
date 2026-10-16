@@ -1,10 +1,10 @@
-// Module ID: 13552
-// Function ID: 13553
+// Module ID: 13557
+// Function ID: 13558
 // Name: SafetyPolicyNoticeEmbed
 // Dependencies: [17, 1085, 7508, 4702, 1126, 7886, 7568, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 13552 (SafetyPolicyNoticeEmbed)
+// Module 13557 (SafetyPolicyNoticeEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;

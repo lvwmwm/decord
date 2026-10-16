@@ -34,7 +34,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
   let str2;
   let uri;
   let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "IconComponent", isLoading: null, error: "primary" }), 2);
+  let tmp = _slicedToArray(str2({ riveFile: "IconComponent", isLoading: null, error: "header" }), 2);
   [tmp2, c1] = tmp;
   const items = [obj.referencedAssets];
   let tmp3 = riveFile(() => {

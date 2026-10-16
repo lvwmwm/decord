@@ -1,9 +1,9 @@
-// Module ID: 10634
-// Function ID: 10635
+// Module ID: 10635
+// Function ID: 10636
 // Name: GiftModalEmojis
 // Dependencies: [32, 19, 17, 21, 5092, 558, 576, 4768, 6820, 2]
 
-// Module 10634 (GiftModalEmojis)
+// Module 10635 (GiftModalEmojis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;

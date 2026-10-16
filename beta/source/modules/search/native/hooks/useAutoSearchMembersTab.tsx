@@ -1,15 +1,15 @@
-// Module ID: 17487
-// Function ID: 17488
+// Module ID: 17491
+// Function ID: 17492
 // Name: useAutoSearchMembersTab
-// Dependencies: [19, 12050, 12052, 1085, 558, 576, 12, 12043, 12061, 12036, 2]
+// Dependencies: [19, 12052, 12054, 1085, 558, 576, 12, 12045, 12063, 12038, 2]
 
-// Module 17487 (useAutoSearchMembersTab)
+// Module 17491 (useAutoSearchMembersTab)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 12052 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12038 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12054 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12050 */;
+import SearchQueryStore from "SearchQueryStore" /* 12052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

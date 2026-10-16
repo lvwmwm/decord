@@ -1,9 +1,9 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17032
+// Function ID: 17033
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5987, 2065, 2125, 2087, 4750, 6926, 7911, 1085, 1393, 4736, 21, 5092, 587, 558, 576, 504, 5421, 1415, 9315, 6157, 4764, 5088, 1200, 11359, 1126, 11987, 17029, 6185, 1403, 17030, 2]
+// Dependencies: [19, 17, 5987, 2065, 2125, 2087, 4750, 6926, 7911, 1085, 1393, 4736, 21, 5092, 587, 558, 576, 504, 5421, 1415, 9315, 6157, 4764, 5088, 1200, 11361, 1126, 11989, 17033, 6185, 1403, 17034, 2]
 
-// Module 17028 (GuildOnboardingNewMemberActions)
+// Module 17032 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

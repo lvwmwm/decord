@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11615
+// Function ID: 11616
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2064, 2065, 2116, 10824, 10853, 2]
+// Dependencies: [5, 2064, 2065, 2116, 10825, 10854, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11613 (joinOrStartActivityInChannel)
+// Module 11615 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

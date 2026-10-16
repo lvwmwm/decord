@@ -1,9 +1,9 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12677
+// Function ID: 12678
 // Name: ForLaterMessageRow
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 1382, 2041, 7742, 9369, 2]
 
-// Module 12672 (ForLaterMessageRow)
+// Module 12677 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;

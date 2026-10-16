@@ -1,9 +1,9 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 11969
+// Function ID: 11970
 // Name: ChatFloatingNavButton
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 4818, 5378, 5382, 6157, 2]
 
-// Module 11967 (ChatFloatingNavButton)
+// Module 11969 (ChatFloatingNavButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

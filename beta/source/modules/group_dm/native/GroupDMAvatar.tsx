@@ -1,9 +1,9 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10281
+// Function ID: 10282
 // Name: GroupDMAvatar
 // Dependencies: [19, 17, 1390, 21, 1200, 5092, 558, 576, 9012, 1388, 504, 2]
 
-// Module 10280 (GroupDMAvatar)
+// Module 10281 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;

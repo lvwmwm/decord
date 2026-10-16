@@ -1,16 +1,16 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11716
+// Function ID: 11717
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9244, 2065, 2062, 558, 576, 4938, 2049, 504, 11715, 11721, 7100, 2]
+// Dependencies: [32, 9244, 2065, 2062, 558, 576, 4938, 2049, 504, 11717, 11723, 7100, 2]
 
-// Module 11714 (useAppLauncherOnboardingContent)
+// Module 11716 (useAppLauncherOnboardingContent)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import useActivityApplications2 from "useActivityApplications" /* 11715 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11721 */;
+import useActivityApplications2 from "useActivityApplications" /* 11717 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 11723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -113,7 +113,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasU
     guild_id = channel.guild_id;
   }
   const obj4 = { guildId: guild_id, fetchesShelf: !result };
-  const useActivityApplications = tmp(11715).useActivityApplications;
+  const useActivityApplications = tmp(11717).useActivityApplications;
   useActivityApplications2;
   if (result) {
     result = result1;

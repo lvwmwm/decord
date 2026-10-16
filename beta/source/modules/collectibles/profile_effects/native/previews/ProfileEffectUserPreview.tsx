@@ -1,13 +1,13 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10512
+// Function ID: 10513
 // Name: ProfileEffectUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1126, 10512, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1126, 10513, 2]
 
-// Module 10511 (ProfileEffectUserPreview)
+// Module 10512 (ProfileEffectUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10512 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10513 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

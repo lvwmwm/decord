@@ -1,12 +1,19 @@
 // Module ID: 14344
 // Function ID: 14345
-// Dependencies: [14343]
+// Dependencies: [14330]
 
 // Module 14344
-import _mod14343 from "module_14343" /* 14343 */;
+import _mod14330 from "module_14330" /* 14330 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod14343(arg0, arg1, closure_0));
+export default (arg0, arg1) => {
+  const tmp = _mod14330(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
+  }
+  return prerelease;
 };

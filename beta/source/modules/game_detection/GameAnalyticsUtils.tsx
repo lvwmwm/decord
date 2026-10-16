@@ -32,7 +32,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "r", gameId: "apply", exe: "forEach", distributor: "Map", sku: "a", gameMetadata: "toCharArray$esjava$1", rawExePath: "TypeError" };
+    return { gameName: "code", gameId: "Text", exe: "sk", distributor: "apply", sku: "c", gameMetadata: "Array", rawExePath: "r" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

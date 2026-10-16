@@ -1,16 +1,16 @@
-// Module ID: 17747
-// Function ID: 17748
+// Module ID: 17751
+// Function ID: 17752
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2065, 1390, 5115, 21, 5092, 587, 558, 576, 10888, 5046, 1126, 5088, 504, 10907, 1200, 5231, 4818, 17748, 10899, 17749, 5221, 2]
+// Dependencies: [32, 19, 17, 2065, 1390, 5115, 21, 5092, 587, 558, 576, 10889, 5046, 1126, 5088, 504, 10908, 1200, 5231, 4818, 17752, 10900, 17753, 5221, 2]
 
-// Module 17747 (ExternalPipViewVideo)
+// Module 17751 (ExternalPipViewVideo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import CallConstants from "CallConstants" /* 5115 */;
 import ExternalPipDefault from "ExternalPip" /* 5221 */;
-import VideoActionCreators from "VideoActionCreators" /* 17748 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17749 */;
+import VideoActionCreators from "VideoActionCreators" /* 17752 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17753 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -221,7 +221,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
   }
   if (wasStream) {
     const obj4 = { style: tmp4.unavaiableImage };
-    tmp6Result = tmp6(tmp(10888).StreamEnded, obj4);
+    tmp6Result = tmp6(tmp(10889).StreamEnded, obj4);
   } else {
     tmp6Result = tmp6(tmp(5046).CircleInformationIcon, {});
   }
@@ -242,7 +242,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
   const tmp3 = metroRequire;
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    tmp4Result = tmp4(tmp5(10888).StreamEnded, obj2);
+    tmp4Result = tmp4(tmp5(10889).StreamEnded, obj2);
     tmp8 = tmp4;
     tmp10 = tmp5;
   } else {
@@ -340,7 +340,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
         return guild_id;
       }
     }
-    const tmpResult4 = userId(10907);
+    const tmpResult4 = userId(10908);
     const avatarSpeakingColor = tmpResult4.useAvatarSpeakingColor(obj3);
     if (cResult[9] === stateFromStores1) {
       class I {
@@ -399,7 +399,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
     }
     return guild_id;
   });
-  userId(10907);
+  userId(10908);
   const obj3 = { style: tmp.user, children: tmp8Result };
   tmp8Result = null;
   const tmp9 = closure_6;
@@ -531,7 +531,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
       }
     }
     const obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: tmp9, streamId, onReady: streamReadyCallback, onLayout: tmp13 };
-    const tmp16 = closure_11(tmp10(10899), obj7);
+    const tmp16 = closure_11(tmp10(10900), obj7);
     cResult[8] = tmp13;
     cResult[9] = streamId;
     cResult[10] = streamReadyCallback;
@@ -584,7 +584,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items1);
-  const children = [closure_11(streamReady(10899), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
+  const children = [closure_11(streamReady(10900), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
   let tmp10Result = null;
   const tmp8 = closure_12;
   const tmp9 = closure_13;

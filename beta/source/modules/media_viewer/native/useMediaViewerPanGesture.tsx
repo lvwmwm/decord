@@ -1,9 +1,9 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13085
+// Function ID: 13086
 // Name: useMediaViewerPanGesture
 // Dependencies: [19, 558, 576, 4850, 8385, 8384, 5378, 6646, 6335, 2]
 
-// Module 13080 (useMediaViewerPanGesture)
+// Module 13085 (useMediaViewerPanGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;

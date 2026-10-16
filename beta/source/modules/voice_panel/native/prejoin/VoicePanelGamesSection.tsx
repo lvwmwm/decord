@@ -1,9 +1,9 @@
-// Module ID: 17893
-// Function ID: 17894
+// Module ID: 17897
+// Function ID: 17898
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7009, 8874, 8875, 1126, 13025, 6180, 8850, 17894, 8792, 2]
+// Dependencies: [19, 21, 558, 576, 7009, 8874, 8875, 1126, 13030, 6180, 8850, 17898, 8792, 2]
 
-// Module 17893 (VoicePanelGamesSection)
+// Module 17897 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import FormComponents from "FormComponents" /* 8792 */;
 import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 8850 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17894 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17898 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let _require;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(13025);
+const GameActivityIconDefault = tmp5(13030);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {

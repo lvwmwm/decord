@@ -1,12 +1,12 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12425
+// Function ID: 12426
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 12402, 558, 576, 6207, 2]
+// Dependencies: [17, 12407, 558, 576, 6207, 2]
 
-// Module 12420 (useBackHandlerSkipPhoneScreens)
+// Module 12425 (useBackHandlerSkipPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12407 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

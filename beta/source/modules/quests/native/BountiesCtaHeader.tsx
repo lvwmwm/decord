@@ -1,9 +1,9 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15360
+// Function ID: 15361
 // Name: BountiesCtaHeader
-// Dependencies: [19, 17, 5081, 9156, 5972, 21, 587, 5384, 5092, 558, 576, 504, 15333, 8421, 1126, 5379, 5088, 15342, 15356, 5979, 7402, 5975, 7411, 15283, 15285, 1200, 15357, 15358, 15359, 12979, 4827, 15336, 12983, 2]
+// Dependencies: [19, 17, 5081, 9156, 5972, 21, 587, 5384, 5092, 558, 576, 504, 15338, 8421, 1126, 5379, 5088, 15347, 15361, 5979, 7402, 5975, 7411, 15288, 15290, 1200, 15362, 15363, 15364, 12984, 4827, 15341, 12988, 2]
 
-// Module 15355 (BountiesCtaHeader)
+// Module 15360 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,12 +16,12 @@ import AdCreativeType from "AdCreativeType" /* 5979 */;
 import AnalyticsActions from "AnalyticsActions" /* 7402 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import common_Video from "common/Video" /* 8421 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15283 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15285 */;
-import _modDef15333 from "module_15333" /* 15333 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15342 */;
-import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 15357 */;
-import _modDef15358 from "module_15358" /* 15358 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15288 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15290 */;
+import _modDef15338 from "module_15338" /* 15338 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15347 */;
+import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 15362 */;
+import _modDef15363 from "module_15363" /* 15363 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -95,7 +95,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Starfi
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef15333 };
+    const obj2 = { uri: _modDef15338 };
     cResult[2] = obj2;
     tmp8 = obj2;
   } else {
@@ -118,7 +118,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Starfi
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { source: obj3, style: React3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  obj3 = { uri: _modDef15333 };
+  obj3 = { uri: _modDef15338 };
   const VideoComponent = common_Video.VideoComponent;
   return authStore(VideoComponent, obj2);
 });
@@ -328,7 +328,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   }
   const tmp5 = closure_16();
   if (cResult[0] !== str) {
-    const tmpResult = bounties(15356);
+    const tmpResult = bounties(15361);
     const bountiesEntryPointButtonVariant = tmpResult.getBountiesEntryPointButtonVariant(str);
     cResult[0] = str;
     cResult[1] = bountiesEntryPointButtonVariant;
@@ -346,7 +346,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   if (cResult[3] !== bounties) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     const items1 = [bounties];
@@ -358,7 +358,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     tmp13 = cResult[5];
@@ -368,7 +368,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   if (cResult[6] !== bounties[0]) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     cResult[6] = bounties[0];
@@ -376,14 +376,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
   }
   if (null == footer) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
   }
@@ -391,27 +391,27 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     let tmp39Result;
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F146986 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     if (cResult[11] === tmp8) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F146986 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
     }
     if (null != replaceHeaderMediaWith) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F146986 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
       const items2 = [tmp5.headerReplaceMedia, ];
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -424,7 +424,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (tmp31Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         ({ newPillInline: tmp34[1], newPillText: tmp34[2] } = tmp5);
@@ -440,14 +440,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
       if (tmp31Result2) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         tmp37[0] = tmp5.headerReplaceMediaCta;
@@ -460,16 +460,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     } else {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F146986 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
-      const obj9 = { uri: _modDef15358, style: items5, children: items6 };
+      const obj9 = { uri: _modDef15363, style: items5, children: items6 };
       items5 = [tmp5.header, null != footer && tmp5.headerWithFooter, ];
       const tmp41 = BountiesBannerBackgroundDefault;
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -478,7 +478,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (tmp21) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         const obj10 = { variant: "text-xs/bold", containerStyle: null, textStyle: null };
@@ -491,7 +491,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (null != footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -504,14 +504,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
       if (tmp24Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F146986 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         const obj13 = { variant: tmp8, onPress: tmp15 };
@@ -576,7 +576,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const tmp = closure_16();
   let tmp9Result2 = null != footer;
   let tmp11Result6 = !flag;
-  let obj = bounties(15356);
+  let obj = bounties(15361);
   const bountiesEntryPointButtonVariant = obj.getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
   let obj2 = bounties(504);
   const items = [AdContentSeenStore];
@@ -634,7 +634,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     items5[3] = tmp11Result;
     tmp9Result = tmp9(tmp10, obj6);
   } else {
-    const obj15 = { uri: _modDef15358, style: items7, children: items8 };
+    const obj15 = { uri: _modDef15363, style: items7, children: items8 };
     items7 = [tmp.header, tmp9Result2 && tmp.headerWithFooter, ];
     let headerRoundedBottom2 = tmp12;
     const tmp26 = BountiesBannerBackgroundDefault;
@@ -689,7 +689,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   _require = isEmptyOrCompleted;
   let obj = require("react");
   const cResult = obj.c(5);
-  const tmp4 = containerRef(15359)();
+  const tmp4 = containerRef(15364)();
   containerRef = tmp4.containerRef;
   const isInView = tmp4.isInView;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
@@ -741,7 +741,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp(12983).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp(12988).QuestContentImpressionTrackerNative;
     tmp11Result = tmp11(QuestContentImpressionTrackerNative, obj4);
   }
   const tmp11Result2 = closure_10(ThemeContextProvider, obj2);
@@ -755,7 +755,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let containerRef;
   let tmp9Result;
   _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(15359)();
+  const tmp2 = containerRef(15364)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -796,7 +796,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp7(12983).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp7(12988).QuestContentImpressionTrackerNative;
     tmp9Result = tmp9(QuestContentImpressionTrackerNative, obj4);
   }
   return closure_10(ThemeContextProvider, obj2);

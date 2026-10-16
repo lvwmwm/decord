@@ -1,28 +1,28 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12461
+// Function ID: 12462
 // Name: PaintIllocon
-// Dependencies: [19, 21, 12457, 12458, 12459, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 12462, 12463, 12464, 558, 576, 6273, 6157, 2]
 
-// Module 12456 (PaintIllocon)
+// Module 12461 (PaintIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef12457 from "module_12457" /* 12457 */;
-import _modDef12458 from "module_12458" /* 12458 */;
-import _modDef12459 from "module_12459" /* 12459 */;
+import _modDef12462 from "module_12462" /* 12462 */;
+import _modDef12463 from "module_12463" /* 12463 */;
+import _modDef12464 from "module_12464" /* 12464 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12457 };
+let obj2 = { uri: _modDef12462 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12458 };
-({ uri: _modDef12458 });
-obj[3] = { uri: _modDef12459 };
-({ uri: _modDef12459 });
+obj[2] = { uri: _modDef12463 };
+({ uri: _modDef12463 });
+obj[3] = { uri: _modDef12464 };
+({ uri: _modDef12464 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaintIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

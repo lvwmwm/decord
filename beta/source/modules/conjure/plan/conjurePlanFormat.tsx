@@ -1,10 +1,10 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17286
+// Function ID: 17287
 // Name: conjurePlanFormat
 // Dependencies: [2]
 // Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementName
 
-// Module 17282 (conjurePlanFormat)
+// Module 17286 (conjurePlanFormat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanFormat.tsx");

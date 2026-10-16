@@ -1,10 +1,10 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15864
+// Function ID: 15865
 // Name: CopyClientInfoSetting
-// Dependencies: [10484, 21, 1381, 5056, 11341, 6886, 4808, 558, 576, 6839, 1126, 6895, 6899, 5042, 5068, 10663, 6114, 2041, 2]
+// Dependencies: [10485, 21, 1381, 5056, 11343, 6886, 4808, 558, 576, 6839, 1126, 6895, 6899, 5042, 5068, 10664, 6114, 2041, 2]
 // Exports: getClientInfoString
 
-// Module 15859 (CopyClientInfoSetting)
+// Module 15864 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
@@ -12,12 +12,12 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import DeviceUtils from "DeviceUtils" /* 5068 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6114 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11343 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10485 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

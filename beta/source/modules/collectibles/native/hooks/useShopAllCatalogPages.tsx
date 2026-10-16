@@ -1,9 +1,9 @@
-// Module ID: 16203
-// Function ID: 16204
+// Module ID: 16208
+// Function ID: 16209
 // Name: useShopAllCatalogPages
 // Dependencies: [32, 19, 9085, 7260, 1085, 558, 576, 9087, 504, 569, 7258, 2]
 
-// Module 16203 (useShopAllCatalogPages)
+// Module 16208 (useShopAllCatalogPages)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1085 */;
 import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9087 */;

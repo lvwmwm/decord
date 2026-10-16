@@ -1,9 +1,9 @@
-// Module ID: 12260
-// Function ID: 12261
+// Module ID: 12265
+// Function ID: 12266
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5092, 558, 576, 6868, 587, 5088, 6290, 1126, 2600, 12261, 12236, 6664, 9405, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 6868, 587, 5088, 6290, 1126, 2600, 12266, 12241, 6664, 9405, 2]
 
-// Module 12260 (GuildPowerupsCardFooter)
+// Module 12265 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import CircleErrorIcon2 from "CircleErrorIcon" /* 6290 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 6868 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12236 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12261 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12241 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12266 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

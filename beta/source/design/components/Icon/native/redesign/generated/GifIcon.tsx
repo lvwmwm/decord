@@ -1,9 +1,9 @@
-// Module ID: 9747
-// Function ID: 9748
+// Module ID: 9748
+// Function ID: 9749
 // Name: GifIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 8107, 4817, 2]
 
-// Module 9747 (GifIcon)
+// Module 9748 (GifIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

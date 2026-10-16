@@ -1,12 +1,12 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9575
+// Function ID: 9576
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 4850, 9575, 1126, 9559, 6185, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 4850, 9576, 1126, 9560, 6185, 2]
 
-// Module 9574 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9575 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9575 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;

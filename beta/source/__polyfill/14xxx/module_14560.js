@@ -1,11 +1,13 @@
 // Module ID: 14560
 // Function ID: 14561
-// Dependencies: [14558]
+// Dependencies: []
 
 // Module 14560
-import _mod14558 from "module_14558" /* 14558 */;
 
-let closure_0 = _mod14558({}.toString);
-let closure_1 = _mod14558("".slice);
-
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export default (fn) => {
+  try {
+    return fn();
+  } catch (err) {
+    return true;
+  }
+};

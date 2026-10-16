@@ -1,21 +1,20 @@
 // Module ID: 14578
 // Function ID: 14579
-// Dependencies: [14569, 14579, 14577, 14580]
+// Dependencies: [14563]
 
 // Module 14578
-import _mod14569 from "module_14569" /* 14569 */;
-import _mod14577 from "module_14577" /* 14577 */;
-import _mod14579 from "module_14579" /* 14579 */;
+import _mod14563 from "module_14563" /* 14563 */;
 
-let tmp;
-const _mod14580 = tmp(14580);
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod14563((1).toString);
 
-export default _mod14569 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod14579("Symbol");
-  let tmpResultResult = _mod14577(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod14580;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
   }
-  return tmpResultResult;
-});
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

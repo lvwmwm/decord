@@ -1,9 +1,9 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 10414
+// Function ID: 10415
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1390, 21, 558, 576, 504, 4962, 1126, 10346, 6265, 6180, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 504, 4962, 1126, 10347, 6265, 6180, 2]
 
-// Module 10413 (LikelyAtoMoreTipsModalActionItems)
+// Module 10414 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     cResult[8] = stringResult;
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(10346).BellSlashIcon, {});
+    const tmp18 = jsx(senderId(10347).BellSlashIcon, {});
     cResult[9] = tmp18;
   }
   if (cResult[10] === handleMutePressed) {

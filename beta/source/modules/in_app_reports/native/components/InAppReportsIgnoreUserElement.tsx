@@ -1,9 +1,9 @@
-// Module ID: 13565
-// Function ID: 13566
+// Module ID: 13570
+// Function ID: 13571
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 2065, 4760, 1085, 21, 558, 576, 504, 5409, 5107, 7018, 1126, 6650, 13566, 2]
+// Dependencies: [19, 2065, 4760, 1085, 21, 558, 576, 504, 5409, 5107, 7018, 1126, 6650, 13571, 2]
 
-// Module 13565 (InAppReportsIgnoreUserElement)
+// Module 13570 (InAppReportsIgnoreUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;

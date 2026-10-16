@@ -1,17 +1,23 @@
 // Module ID: 14563
 // Function ID: 14564
-// Dependencies: [14564, 14578]
+// Dependencies: [14564]
 
 // Module 14563
-import _mod14564 from "module_14564" /* 14564 */;
-import _mod14578 from "module_14578" /* 14578 */;
+import module_14564_mod from "module_14564" /* 14564 */;
 
+const call = prototype.call;
+let module_14564 = module_14564_mod;
+if (module_14564) {
+  const bind = prototype.bind;
+  module_14564 = bind.bind(call, call);
+}
+if (!module_14564) {
+  module_14564 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default (arg0) => {
-  const tmp = _mod14564(arg0, "string");
-  let text = tmp;
-  if (!_mod14578(tmp)) {
-    text = `${tmp}`;
-  }
-  return text;
-};
+export default module_14564;

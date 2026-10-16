@@ -1,17 +1,17 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 17212
+// Function ID: 17213
 // Name: ConjurePublishNoticeLine
-// Dependencies: [32, 19, 21, 558, 576, 17209, 17210, 1126, 17173, 5088, 17109, 3849, 17183, 2]
+// Dependencies: [32, 19, 21, 558, 576, 17213, 17214, 1126, 17177, 5088, 17113, 3849, 17187, 2]
 
-// Module 17208 (ConjurePublishNoticeLine)
+// Module 17212 (ConjurePublishNoticeLine)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 17109 */;
-import conjurePublishCard from "conjurePublishCard" /* 17173 */;
-import conjureReminderSlot from "conjureReminderSlot" /* 17183 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 17209 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 17210 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 17113 */;
+import conjurePublishCard from "conjurePublishCard" /* 17177 */;
+import conjureReminderSlot from "conjureReminderSlot" /* 17187 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 17213 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 17214 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

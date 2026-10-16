@@ -1,9 +1,9 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15573
+// Function ID: 15574
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1205, 15567, 1096, 21, 5092, 587, 4968, 558, 576, 4825, 10226, 1200, 15569, 573, 4818, 15570, 1254, 4832, 1126, 6185, 2]
+// Dependencies: [19, 17, 1205, 15572, 1096, 21, 5092, 587, 4968, 558, 576, 4825, 10227, 1200, 15574, 573, 4818, 15575, 1254, 4832, 1126, 6185, 2]
 
-// Module 15568 (SettingsAppearanceThemeSelectorItem)
+// Module 15573 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -15,12 +15,12 @@ import themes from "themes" /* 4825 */;
 import react_native2 from "react-native" /* 4832 */;
 import utils_ColorDefault from "utils/Color" /* 4968 */;
 import Pressables from "Pressables" /* 6185 */;
-import ThemedGradient from "ThemedGradient" /* 10226 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15569 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15570 */;
+import ThemedGradient from "ThemedGradient" /* 10227 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15574 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15575 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15567 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15572 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -416,7 +416,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(10226).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10227).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };

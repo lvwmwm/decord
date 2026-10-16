@@ -1,15 +1,15 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10328
+// Function ID: 10329
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2057, 2068, 1085, 570, 558, 576, 2049, 10313, 504, 10328, 7100, 2]
+// Dependencies: [32, 19, 2057, 2068, 1085, 570, 558, 576, 2049, 10314, 504, 10329, 7100, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10327 (FavoritesGuildIntroPopover)
+// Module 10328 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import FavoritesHooks from "FavoritesHooks" /* 10313 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10328 */;
+import FavoritesHooks from "FavoritesHooks" /* 10314 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10329 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2057 */;

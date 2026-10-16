@@ -1,10 +1,10 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11795
+// Function ID: 11796
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11705, 9242, 11669, 7242, 558, 576, 6189, 5379, 1126, 5040, 2]
+// Dependencies: [5, 32, 19, 21, 11707, 9242, 11671, 7242, 558, 576, 6189, 5379, 1126, 5040, 2]
 // Exports: useCommandRowSend
 
-// Module 11793 (CommandRowButton)
+// Module 11795 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;

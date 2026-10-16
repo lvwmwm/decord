@@ -1,9 +1,9 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16622
+// Function ID: 16623
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 5081, 4752, 2065, 6078, 6035, 5966, 11760, 5967, 21, 5092, 7246, 5386, 6761, 15375, 551, 568, 504, 4850, 16569, 6627, 5057, 5058, 16618, 2]
+// Dependencies: [32, 19, 17, 5081, 4752, 2065, 6078, 6035, 5966, 11762, 5967, 21, 5092, 7246, 5386, 6761, 15380, 551, 568, 504, 4850, 16574, 6627, 5057, 5058, 16623, 2]
 
-// Module 16617 (ChannelsUnreadBars)
+// Module 16622 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
@@ -12,7 +12,7 @@ import useFontScale from "useFontScale" /* 5386 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
 import FastList from "FastList" /* 6761 */;
 import ChannelListState from "ChannelListState" /* 7246 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

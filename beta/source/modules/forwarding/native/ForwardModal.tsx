@@ -1,9 +1,9 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11558
+// Function ID: 11559
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7309, 7314, 8449, 2065, 5432, 8476, 11557, 10217, 21, 5092, 587, 558, 576, 1497, 11558, 504, 11554, 11553, 6207, 11560, 4809, 1126, 1388, 11562, 5301, 11563, 9312, 5103, 11564, 11565, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11568, 10226, 11569, 11579, 11593, 2]
+// Dependencies: [5, 32, 19, 17, 7309, 7314, 8449, 2065, 5432, 8476, 11559, 10218, 21, 5092, 587, 558, 576, 1497, 11560, 504, 11556, 11555, 6207, 11562, 4809, 1126, 1388, 11564, 5301, 11565, 9312, 5103, 11566, 11567, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11570, 10227, 11571, 11581, 11595, 2]
 
-// Module 11556 (ForwardModal)
+// Module 11558 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -15,12 +15,12 @@ import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11554 */;
-import ForwardConstants from "ForwardConstants" /* 11557 */;
-import formatResults from "formatResults" /* 11558 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11560 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11555 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11556 */;
+import ForwardConstants from "ForwardConstants" /* 11559 */;
+import formatResults from "formatResults" /* 11560 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11562 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

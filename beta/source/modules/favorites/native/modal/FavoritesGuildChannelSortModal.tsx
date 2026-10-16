@@ -1,19 +1,19 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16584
+// Function ID: 16585
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 16580, 2069, 1085, 21, 558, 576, 16581, 1631, 1126, 16582, 16578, 6688, 2]
+// Dependencies: [19, 16585, 2069, 1085, 21, 558, 576, 16586, 1631, 1126, 16587, 16583, 6688, 2]
 
-// Module 16579 (FavoritesGuildChannelSortModal)
+// Module 16584 (FavoritesGuildChannelSortModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import openFavoritesGuildChannelSortModal from "openFavoritesGuildChannelSortModal" /* 16578 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16581 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16582 */;
+import openFavoritesGuildChannelSortModal from "openFavoritesGuildChannelSortModal" /* 16583 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16586 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16587 */;
 import react from "react" /* 19 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16580 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16585 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

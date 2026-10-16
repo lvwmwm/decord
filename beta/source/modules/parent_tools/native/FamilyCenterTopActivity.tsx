@@ -1,10 +1,10 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15180
+// Function ID: 15181
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1390, 7254, 21, 5092, 587, 573, 5056, 15176, 2000, 15177, 8669, 1126, 2568, 5088, 1200, 6159, 2]
+// Dependencies: [19, 17, 1390, 7254, 21, 5092, 587, 573, 5056, 15181, 2000, 15182, 8669, 1126, 2568, 5088, 1200, 6159, 2]
 // Exports: default
 
-// Module 15175 (FamilyCenterTopActivity)
+// Module 15180 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(15176, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(15181, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;

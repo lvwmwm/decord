@@ -1,10 +1,10 @@
-// Module ID: 18366
-// Function ID: 18367
+// Module ID: 18370
+// Function ID: 18371
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 17, 21, 8355, 18367, 18368, 18369, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8355, 18371, 18372, 18373, 558, 576, 4969, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 18366 (EmptyServerSettingsEmoji)
+// Module 18370 (EmptyServerSettingsEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

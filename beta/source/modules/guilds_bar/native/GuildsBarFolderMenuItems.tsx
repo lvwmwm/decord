@@ -1,10 +1,10 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16749
+// Function ID: 16750
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5963, 1085, 6770, 1126, 14188, 2000, 7092, 16745, 2]
+// Dependencies: [5, 5963, 1085, 6770, 1126, 14193, 2000, 7092, 16750, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 16744 (GuildsBarFolderMenuItems)
+// Module 16749 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;

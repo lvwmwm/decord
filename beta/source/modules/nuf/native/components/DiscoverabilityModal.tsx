@@ -1,9 +1,9 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12520
+// Function ID: 12521
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 12401, 1390, 1085, 21, 5092, 587, 6259, 558, 576, 1503, 504, 12408, 1105, 12429, 12516, 12422, 1273, 6688, 1126, 2]
+// Dependencies: [19, 17, 12406, 1390, 1085, 21, 5092, 587, 6259, 558, 576, 1503, 504, 12413, 1105, 12434, 12521, 12427, 1273, 6688, 1126, 2]
 
-// Module 12515 (DiscoverabilityModal)
+// Module 12520 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,10 +14,10 @@ import intl2 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import Navigator2 from "Navigator" /* 6688 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12401 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12408 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12422 */;
-import NUFActionCreators from "NUFActionCreators" /* 12429 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12406 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12413 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12427 */;
+import NUFActionCreators from "NUFActionCreators" /* 12434 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import createStyles from "createStyles" /* 5092 */;

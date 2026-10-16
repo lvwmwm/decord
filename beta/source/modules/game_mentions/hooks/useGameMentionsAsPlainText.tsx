@@ -1,9 +1,9 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10240
+// Function ID: 10241
 // Name: useGameMentionsAsPlainText
 // Dependencies: [19, 2020, 1390, 5404, 558, 576, 7009, 2031, 8233, 1126, 504, 2]
 
-// Module 10239 (useGameMentionsAsPlainText)
+// Module 10240 (useGameMentionsAsPlainText)
 import StringUtils from "StringUtils" /* 2031 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;

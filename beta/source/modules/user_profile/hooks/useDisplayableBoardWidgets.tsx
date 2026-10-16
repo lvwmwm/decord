@@ -1,13 +1,13 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13382
+// Function ID: 13383
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7321, 7322, 7318, 558, 576, 13378, 2]
+// Dependencies: [19, 7321, 7322, 7318, 558, 576, 13383, 2]
 
-// Module 13377 (useDisplayableBoardWidgets)
+// Module 13382 (useDisplayableBoardWidgets)
 import react2 from "react" /* 576 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7318 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13378 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13383 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

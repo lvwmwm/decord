@@ -1,9 +1,9 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14965
+// Function ID: 14966
 // Name: SettingsAccountUtils
 // Dependencies: [502, 1390, 558, 576, 573, 2]
 
-// Module 14960 (SettingsAccountUtils)
+// Module 14965 (SettingsAccountUtils)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1390 */;

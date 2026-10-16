@@ -1,16 +1,16 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15106
+// Function ID: 15107
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7020, 21, 558, 576, 7000, 14964, 4806, 2128, 7493, 5918, 587, 1126, 5088, 7563, 2]
+// Dependencies: [19, 17, 7020, 21, 558, 576, 7000, 14969, 4806, 2128, 7493, 5918, 587, 1126, 5088, 7563, 2]
 
-// Module 15101 (AgeConfirmationNotice)
+// Module 15106 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14964 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14969 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

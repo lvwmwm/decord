@@ -1,10 +1,10 @@
-// Module ID: 14301
-// Function ID: 14302
+// Module ID: 14306
+// Function ID: 14307
 // Name: WideBannerDismissibleContentVersion
 // Dependencies: [7301, 1087, 7290, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 14301 (WideBannerDismissibleContentVersion)
+// Module 14306 (WideBannerDismissibleContentVersion)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ShopBlockType from "ShopBlockType" /* 7290 */;
 import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7301 */;

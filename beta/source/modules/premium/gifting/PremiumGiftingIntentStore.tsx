@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 
 let _null, closure_10, closure_14, set2;
 
-const f97765 = (userId) => {
+const f97777 = (userId) => {
   const userAffinity = UserAffinitiesV2Store.getUserAffinity(userId);
   let dmProbability;
   if (userAffinity != null) {
@@ -40,7 +40,7 @@ function getCurrentTime() {
 function categorizeTopAffinityFriendAnniversaries() {
   const flag = false;
   const obj = FriendAnniversaryUtils;
-  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f97765, flag);
+  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f97777, flag);
   ({ highestAffinity: set, highAffinity: set1 } = result);
 }
 function updateFriendAnniversaries() {
@@ -137,7 +137,7 @@ function generateFriendAnniversaries(c15) {
           });
           const sorted = obj.sort((arg0, arg1) => UserAffinitiesV2Store.compareByDmProbability(arg0, arg1));
           const tmp3Result = set2(8103);
-          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f97765, true);
+          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f97777, true);
           ({ highestAffinity: set, highAffinity: set1 } = result);
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 11426
+// Function ID: 11427
 // Name: conjurePreviewFrameSurfaces
 // Dependencies: [8606, 6947, 2]
 // Exports: declaresPreviewFrame, isConjurePreviewFrameSurfaceType, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 11424 (conjurePreviewFrameSurfaces)
+// Module 11426 (conjurePreviewFrameSurfaces)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import size from "module_2" /* 2 */;

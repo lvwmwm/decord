@@ -1,13 +1,13 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14241
+// Function ID: 14242
 // Name: MessagesTabLottie
-// Dependencies: [109, 19, 21, 558, 576, 14237, 11050, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14242, 11052, 2]
 
-// Module 14236 (MessagesTabLottie)
+// Module 14241 (MessagesTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11050 */;
-import AssetRegistry from "AssetRegistry" /* 14237 */;
+import LottieIcon2 from "LottieIcon" /* 11052 */;
+import AssetRegistry from "AssetRegistry" /* 14242 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesTa
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11050).LottieIcon;
+  const LottieIcon = tmp(11052).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

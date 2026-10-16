@@ -1,9 +1,9 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10011
+// Function ID: 10012
 // Name: AppliedForumTag
-// Dependencies: [109, 19, 17, 5987, 1393, 21, 5092, 587, 558, 576, 504, 1126, 6820, 1415, 5088, 10011, 2]
+// Dependencies: [109, 19, 17, 5987, 1393, 21, 5092, 587, 558, 576, 504, 1126, 6820, 1415, 5088, 10012, 2]
 
-// Module 10010 (AppliedForumTag)
+// Module 10011 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import EmojiDefault from "Emoji" /* 6820 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10011 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10012 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5987 */;

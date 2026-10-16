@@ -1,17 +1,17 @@
-// Module ID: 17941
-// Function ID: 17942
+// Module ID: 17945
+// Function ID: 17946
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 14217, 11972, 11970, 21, 558, 576, 11971, 4850, 17905, 5378, 14692, 5363, 2]
+// Dependencies: [19, 14222, 11974, 11972, 21, 558, 576, 11973, 4850, 17909, 5378, 14697, 5363, 2]
 
-// Module 17941 (VoicePanelControlsDimOverlay)
+// Module 17945 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5378 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
-import BackdropConstants from "BackdropConstants" /* 14217 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14692 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17905 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
+import BackdropConstants from "BackdropConstants" /* 14222 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14697 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17909 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

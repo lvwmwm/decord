@@ -1,10 +1,10 @@
-// Module ID: 12852
-// Function ID: 12853
+// Module ID: 12857
+// Function ID: 12858
 // Name: ConfirmStartCall
 // Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 5301, 2]
 // Exports: confirmStartCall
 
-// Module 12852 (ConfirmStartCall)
+// Module 12857 (ConfirmStartCall)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import useAlertStore from "useAlertStore" /* 5301 */;

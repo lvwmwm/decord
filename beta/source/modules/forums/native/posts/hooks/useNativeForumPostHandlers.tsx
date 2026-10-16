@@ -1,9 +1,9 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 10455
+// Function ID: 10456
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4802, 2065, 4760, 1390, 6979, 7008, 1085, 1125, 558, 576, 7896, 38, 5421, 8154, 1384, 8474, 9313, 8382, 1382, 5057, 5058, 7899, 5103, 4985, 10455, 9380, 9378, 2]
+// Dependencies: [19, 4802, 2065, 4760, 1390, 6979, 7008, 1085, 1125, 558, 576, 7896, 38, 5421, 8154, 1384, 8474, 9313, 8382, 1382, 5057, 5058, 7899, 5103, 4985, 10456, 9380, 9378, 2]
 
-// Module 10454 (useNativeForumPostHandlers)
+// Module 10455 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(10455);
+const showLongPressForumPostActionSheetDefault = tmp2(10456);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 const constants4 = ThreadConstants.OpenThreadAnalyticsLocations;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostHandlers(threadId) {

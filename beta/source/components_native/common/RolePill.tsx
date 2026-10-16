@@ -1,9 +1,9 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10306
+// Function ID: 10307
 // Name: RolePill
 // Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 2041, 6883, 6886, 4808, 6900, 6902, 5088, 6185, 2]
 
-// Module 10305 (RolePill)
+// Module 10306 (RolePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 4808 */;

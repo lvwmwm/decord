@@ -1,14 +1,14 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13084
+// Function ID: 13085
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1382, 558, 576, 4850, 13080, 13081, 8390, 6761, 6335, 6852, 6879, 8415, 13085, 5372, 5093, 8385, 8446, 10361, 4851, 10829, 2]
+// Dependencies: [32, 19, 17, 21, 1382, 558, 576, 4850, 13085, 13086, 8390, 6761, 6335, 6852, 6879, 8415, 13090, 5372, 5093, 8385, 8446, 10362, 4851, 10830, 2]
 
-// Module 13079 (MediaViewer)
+// Module 13084 (MediaViewer)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import useVideoControls from "useVideoControls" /* 8385 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 13081 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 13086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -70,7 +70,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(13085)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(13090)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -236,7 +236,7 @@ function MediaViewer(arg0) {
   items6 = [, , , , ];
   const obj17 = { barStyle: "light-content", hidden: !tmp5 };
   const tmp30 = dismiss(callback, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  items6[0] = dismiss(height(10361), obj17);
+  items6[0] = dismiss(height(10362), obj17);
   items6[1] = dismiss(height(4850).View, { style: animatedStyle });
   items6[2] = dismiss(height(4851), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
   const obj18 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
@@ -250,7 +250,7 @@ function MediaViewer(arg0) {
     str = "box-none";
   }
   items6[3] = dismiss(tmp33, obj18);
-  items6[4] = dismiss(tmp(10829), {});
+  items6[4] = dismiss(tmp(10830), {});
   const children = tmp31(tmp32, obj16);
   return dismiss(tmp7(6852).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }

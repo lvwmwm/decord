@@ -1,10 +1,10 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17199
+// Function ID: 17200
 // Name: ConjureShimmer
 // Dependencies: [32, 19, 17, 5081, 21, 5092, 558, 576, 504, 4850, 5093, 683, 6243, 5391, 2]
 // Exports: shouldSweep
 
-// Module 17195 (ConjureShimmer)
+// Module 17199 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                     flag = false;
                     num4 = -1;
                     result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                    fn = () => { /* body not rendered: F149254 */ };
+                    fn = () => { /* body not rendered: F149288 */ };
                   } else {
                     tmp2 = closure_0;
                     tmp3 = closure_2;
@@ -174,7 +174,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                     flag = false;
                     num4 = -1;
                     result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                    fn = () => { /* body not rendered: F149254 */ };
+                    fn = () => { /* body not rendered: F149288 */ };
                   } else {
                     tmp2 = closure_0;
                     tmp3 = closure_2;
@@ -212,7 +212,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                   flag = false;
                   num4 = -1;
                   result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                  fn = () => { /* body not rendered: F149254 */ };
+                  fn = () => { /* body not rendered: F149288 */ };
                 } else {
                   tmp2 = closure_0;
                   tmp3 = closure_2;
@@ -258,7 +258,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
               flag = false;
               num4 = -1;
               result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-              fn = () => { /* body not rendered: F149254 */ };
+              fn = () => { /* body not rendered: F149288 */ };
             } else {
               tmp2 = closure_0;
               tmp3 = closure_2;
@@ -303,7 +303,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
             flag = false;
             num4 = -1;
             result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-            fn = () => { /* body not rendered: F149254 */ };
+            fn = () => { /* body not rendered: F149288 */ };
           } else {
             tmp2 = closure_0;
             tmp3 = closure_2;

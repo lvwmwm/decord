@@ -1,9 +1,9 @@
-// Module ID: 16218
-// Function ID: 16219
+// Module ID: 16223
+// Function ID: 16224
 // Name: useTrackProductCardImpression
 // Dependencies: [19, 7259, 1085, 558, 576, 8966, 504, 8298, 4769, 7271, 1265, 2]
 
-// Module 16218 (useTrackProductCardImpression)
+// Module 16223 (useTrackProductCardImpression)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;

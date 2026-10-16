@@ -1,15 +1,15 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16786
+// Function ID: 16787
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16782, 8154, 8203, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16787, 8154, 8203, 1126, 5088, 2]
 
-// Module 16781 (MentionSubtitle)
+// Module 16786 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16782 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16787 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

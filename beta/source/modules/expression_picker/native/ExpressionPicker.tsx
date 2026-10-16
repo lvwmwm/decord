@@ -1,9 +1,9 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9726
+// Function ID: 9727
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5092, 587, 558, 576, 9726, 9428, 1501, 1629, 8525, 5107, 9454, 9727, 5362, 8774, 9728, 9729, 9752, 2]
+// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5092, 587, 558, 576, 9727, 9428, 1501, 1629, 8525, 5107, 9454, 9728, 5362, 8774, 9729, 9730, 9753, 2]
 
-// Module 9725 (ExpressionPicker)
+// Module 9726 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(9726)(tmp6);
+    const tmp8 = expressionPickerViewType(9727)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -357,7 +357,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const tmp28 = expressionPickerViewType(9727)(tmp26);
+      const tmp28 = expressionPickerViewType(9728)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
       if (cResult[20] === tmp28) {
@@ -805,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                 }
                 let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
-                tmp46 = closure_9(expressionPickerViewType(9728), obj4);
+                tmp46 = closure_9(expressionPickerViewType(9729), obj4);
               } else {
                 class Z {
                   constructor() {

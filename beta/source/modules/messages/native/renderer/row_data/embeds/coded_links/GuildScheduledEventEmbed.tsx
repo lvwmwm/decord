@@ -1,10 +1,10 @@
-// Module ID: 13517
-// Function ID: 13518
+// Module ID: 13522
+// Function ID: 13523
 // Name: GuildScheduledEventEmbed
-// Dependencies: [32, 17, 6054, 2083, 2065, 2087, 4760, 1390, 9605, 2071, 7419, 5079, 7884, 7886, 8527, 8522, 8516, 8771, 1126, 7889, 8721, 7746, 587, 13518, 8519, 5421, 8644, 8513, 13519, 8514, 2079, 2]
+// Dependencies: [32, 17, 6054, 2083, 2065, 2087, 4760, 1390, 9606, 2071, 7419, 5079, 7884, 7886, 8527, 8522, 8516, 8771, 1126, 7889, 8721, 7746, 587, 13523, 8519, 5421, 8644, 8513, 13524, 8514, 2079, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 13517 (GuildScheduledEventEmbed)
+// Module 13522 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1126 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
@@ -23,8 +23,8 @@ import useEventSchedule from "useEventSchedule" /* 8522 */;
 import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8527 */;
 import GuildEventUtils from "GuildEventUtils" /* 8644 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8771 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9605 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13519 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9606 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13524 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6054 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -132,7 +132,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(13518));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(13523));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;

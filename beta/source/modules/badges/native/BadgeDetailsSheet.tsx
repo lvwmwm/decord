@@ -1,9 +1,9 @@
-// Module ID: 10583
-// Function ID: 10584
+// Module ID: 10584
+// Function ID: 10585
 // Name: BadgeDetailsSheet
-// Dependencies: [32, 19, 17, 5081, 1390, 8312, 1085, 6841, 21, 5092, 587, 558, 576, 5046, 5088, 504, 10584, 10585, 10586, 10579, 10587, 2031, 1394, 10588, 10597, 10598, 5056, 10582, 10575, 7094, 1126, 10571, 10599, 5379, 10600, 1631, 1497, 10574, 8525, 8317, 10580, 10601, 6307, 6840, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 8312, 1085, 6841, 21, 5092, 587, 558, 576, 5046, 5088, 504, 10585, 10586, 10587, 10580, 10588, 2031, 1394, 10589, 10598, 10599, 5056, 10583, 10576, 7094, 1126, 10572, 10600, 5379, 10601, 1631, 1497, 10575, 8525, 8317, 10581, 10602, 6307, 6840, 2]
 
-// Module 10583 (BadgeDetailsSheet)
+// Module 10584 (BadgeDetailsSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,9 +11,9 @@ import CircleInformationIcon2 from "CircleInformationIcon" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
-import BadgeUtils from "BadgeUtils" /* 10579 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10582 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 10598 */;
+import BadgeUtils from "BadgeUtils" /* 10580 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10583 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 10599 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,8 +49,8 @@ let obj8;
 let obj9;
 let size;
 let unpackModuleId;
-const f105562 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
-const f105563 = (badge_id) => badge_id.badge_id;
+const f105574 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
+const f105575 = (badge_id) => badge_id.badge_id;
 let react = react_mod;
 ({ Platform, View: hasOwnProperty } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -1706,9 +1706,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDetails
         } else {
           items1 = [owned, tmp8];
         }
-        const found = items1.find(f105562);
+        const found = items1.find(f105574);
         if (null != found) {
-          mapped = found.map(f105563);
+          mapped = found.map(f105575);
         } else {
           mapped = [badgeId];
         }
@@ -1808,9 +1808,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDetails
       } else {
         items1 = [owned, tmp8];
       }
-      const found = items1.find(f105562);
+      const found = items1.find(f105574);
       if (null != found) {
-        mapped = found.map(f105563);
+        mapped = found.map(f105575);
       } else {
         mapped = [badgeId];
       }

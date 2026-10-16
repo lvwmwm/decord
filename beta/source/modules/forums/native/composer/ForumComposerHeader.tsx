@@ -1,9 +1,9 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9716
+// Function ID: 9717
 // Name: ForumComposerHeader
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5421, 1126, 6208, 6185, 8211, 5088, 8198, 2]
 
-// Module 9715 (ForumComposerHeader)
+// Module 9716 (ForumComposerHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

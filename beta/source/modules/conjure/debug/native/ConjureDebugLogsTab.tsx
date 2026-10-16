@@ -1,20 +1,20 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17339
+// Function ID: 17340
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 13224, 21, 5092, 587, 558, 576, 17336, 10533, 6906, 17337, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17338, 8525, 8774, 6739, 17339, 17340, 8620, 2]
+// Dependencies: [32, 19, 17, 13229, 21, 5092, 587, 558, 576, 17340, 10534, 6906, 17341, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17342, 8525, 8774, 6739, 17343, 17344, 8620, 2]
 
-// Module 17335 (ConjureDebugLogsTab)
+// Module 17339 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 17336 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17337 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 17338 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 17340 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17341 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 17342 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 13224 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 13229 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -86,7 +86,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp(10533).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(10534).ChevronSmallDownIcon;
   } else {
     ChevronSmallRightIcon = tmp(6906).ChevronSmallRightIcon;
   }
@@ -325,7 +325,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(10533).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(10534).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
     ChevronSmallRightIcon = tmp3(6906).ChevronSmallRightIcon;
@@ -335,7 +335,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   const obj2 = { style: tmp.rowHead, children: items1 };
   const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6Result.formatClockTime(entry.ts) };
   const Text = tmp6(5088).Text;
-  tmp6Result = tmp6(17337);
+  tmp6Result = tmp6(17341);
   items1 = [closure_7(Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
-    const DEBUG_LOG_FILTERS = tmp(17338).DEBUG_LOG_FILTERS;
+    const DEBUG_LOG_FILTERS = tmp(17342).DEBUG_LOG_FILTERS;
     tmp18[1] = DEBUG_LOG_FILTERS.map((id) => {
       let obj2;
       const obj = { id, label: obj2.debugLogFilterLabel(id), page: null };

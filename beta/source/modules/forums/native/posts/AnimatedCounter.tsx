@@ -1,9 +1,9 @@
-// Module ID: 10470
-// Function ID: 10471
+// Module ID: 10471
+// Function ID: 10472
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 38, 4850, 4827, 5378, 5088, 5382, 10471, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 38, 4850, 4827, 5378, 5088, 5382, 10472, 2]
 
-// Module 10470 (AnimatedCounter)
+// Module 10471 (AnimatedCounter)
 import react2 from "react" /* 576 */;
 import native from "native" /* 4827 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const Text_Text = tmp(5088);
-const AnimatedCounterUtils = tmp(10471);
+const AnimatedCounterUtils = tmp(10472);
 function getItemKey(arg0) {
   return "" + arg0;
 }

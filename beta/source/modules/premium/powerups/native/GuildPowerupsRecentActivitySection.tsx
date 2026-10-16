@@ -1,9 +1,9 @@
-// Module ID: 12317
-// Function ID: 12318
+// Module ID: 12322
+// Function ID: 12323
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5081, 21, 5092, 587, 558, 576, 6664, 12318, 4793, 504, 7975, 9405, 12320, 12322, 1200, 5088, 12324, 1126, 2]
+// Dependencies: [17, 5081, 21, 5092, 587, 558, 576, 6664, 12323, 4793, 504, 7975, 9405, 12325, 12327, 1200, 5088, 12329, 1126, 2]
 
-// Module 12317 (GuildPowerupsRecentActivitySection)
+// Module 12322 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -13,8 +13,8 @@ import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7975 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12318 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12324 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12323 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12329 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -103,9 +103,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     if ("gave" === phase) {
       BoostGemSlashIcon = tmp(9405).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12320).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12325).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12322).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12327).BoostGemSlashIcon;
     }
     if (cResult[7] === BoostGemSlashIcon) {
       if (cResult[10] === roleColor) {
@@ -236,9 +236,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     if ("gave" === phase) {
       BoostGemSlashIcon = tmp(9405).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12320).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12325).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12322).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12327).BoostGemSlashIcon;
     }
     const obj5 = { style: tmp4.boostRowContainer, children: items1 };
     if ("gave" === phase) {

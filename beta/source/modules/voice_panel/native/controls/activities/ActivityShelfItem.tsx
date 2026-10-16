@@ -1,9 +1,9 @@
-// Module ID: 17881
-// Function ID: 17882
+// Module ID: 17885
+// Function ID: 17886
 // Name: ActivityShelfItem
-// Dependencies: [19, 1085, 1204, 21, 5092, 587, 4967, 558, 576, 11829, 11735, 6162, 17879, 1898, 7242, 10962, 9060, 17878, 11773, 1200, 17882, 4827, 6185, 17880, 5409, 11834, 1126, 12560, 5088, 2]
+// Dependencies: [19, 1085, 1204, 21, 5092, 587, 4967, 558, 576, 11831, 11737, 6162, 17883, 1898, 7242, 10964, 9060, 17882, 11775, 1200, 17886, 4827, 6185, 17884, 5409, 11836, 1126, 12565, 5088, 2]
 
-// Module 17881 (ActivityShelfItem)
+// Module 17885 (ActivityShelfItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -17,15 +17,15 @@ import NativeViewDefault from "NativeView" /* 6162 */;
 import Pressables from "Pressables" /* 6185 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
 import TestModeUtils from "TestModeUtils" /* 9060 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11735 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11829 */;
-import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 11834 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12560 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17878 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17879 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17880 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17882 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10964 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11737 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 11831 */;
+import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 11836 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12565 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17882 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17883 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17884 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -123,7 +123,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         cResult[11] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp11 = action === tmp(11735).ActivityAction.LEAVE;
+      let tmp11 = action === tmp(11737).ActivityAction.LEAVE;
       if (tmp11) {
         const obj4 = { style: tmp8.ongoingActivityJoinedContainer };
         tmp11 = metroRequire(tmp6(6162), obj4);
@@ -159,7 +159,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
       return null;
     }
   }
-  let tmp8 = action === tmp4(11735).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(11737).ActivityAction.LEAVE;
   const tmp6 = metroImportAll;
   const tmp7 = metroImportDefault;
   if (tmp8) {
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                 if (cResult[11] === result) {
                   tmp14 = cResult[12];
                 }
-                let tmp15 = tmp7(10962)(tmp14);
+                let tmp15 = tmp7(10964)(tmp14);
                 if (cResult[13] === activityAction) {
                   let tmp16;
                   if (cResult[14] === (undefined !== disableBadges && disableBadges)) {
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                                                   tmp51 = tmp54;
                                                 }
                                               }
-                                              let tmp46Result = activityAction === tmp(11735).ActivityAction.START;
+                                              let tmp46Result = activityAction === tmp(11737).ActivityAction.START;
                                               if (tmp46Result) {
                                                 const obj3 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
                                                 id1 = undefined;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
                                     let tmp34 = null;
                                     if (tmp16) {
                                       const obj7 = { labelType };
-                                      tmp34 = metroRequire(tmp7(11773), obj7);
+                                      tmp34 = metroRequire(tmp7(11775), obj7);
                                     }
                                     cResult[35] = tmp16;
                                     cResult[36] = labelType;
@@ -529,7 +529,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(11773), obj8);
+    tmp15Result = tmp15(tmp3(11775), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -545,7 +545,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
   }
   items3[2] = tmp15Result3;
   items4 = [metroImportAll(ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(11735).ActivityAction.START;
+  let tmp15Result4 = activityAction === tmp8(11737).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
     id1 = undefined;

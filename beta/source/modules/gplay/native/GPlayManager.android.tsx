@@ -1,9 +1,9 @@
-// Module ID: 10065
-// Function ID: 10066
+// Module ID: 10066
+// Function ID: 10067
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7140, 7141, 502, 4775, 7132, 9396, 7133, 1085, 5071, 1392, 21, 3, 7127, 584, 9395, 1264, 4702, 7149, 4784, 5724, 1265, 5300, 1126, 10066, 2000, 5934, 7130, 2]
+// Dependencies: [109, 5, 19, 17, 7140, 7141, 502, 4775, 7132, 9396, 7133, 1085, 5071, 1392, 21, 3, 7127, 584, 9395, 1264, 4702, 7149, 4784, 5724, 1265, 5300, 1126, 10067, 2000, 5934, 7130, 2]
 
-// Module 10065 (GPlayManager)
+// Module 10066 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

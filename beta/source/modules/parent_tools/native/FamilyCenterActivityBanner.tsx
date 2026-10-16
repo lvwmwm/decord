@@ -1,9 +1,9 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15159
+// Function ID: 15160
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5092, 558, 576, 7734, 7735, 15155, 587, 1126, 2568, 11535, 15162, 15163, 6157, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 7734, 7735, 15160, 587, 1126, 2568, 11537, 15167, 15168, 6157, 5088, 2]
 
-// Module 15154 (FamilyCenterActivityBanner)
+// Module 15159 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import useUserLinks from "useUserLinks" /* 7734 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7735 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 11535 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 11537 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const FamilyCenterBannerButton = tmp(15155);
+const FamilyCenterBannerButton = tmp(15160);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   const tmpResult2 = useAgeSpecificText3;
   const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 15162 : 15163);
+  const tmp4Result = importDefault(tmp5 ? 15167 : 15168);
   if (cResult[4] === tmp6.art) {
     let tmp19;
     if (cResult[5] === tmp4Result) {
@@ -230,7 +230,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2568.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 15162 : 15163), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 15167 : 15168), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

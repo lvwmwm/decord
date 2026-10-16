@@ -1,9 +1,9 @@
-// Module ID: 10111
-// Function ID: 10112
+// Module ID: 10112
+// Function ID: 10113
 // Name: SlayerStorefrontTimeUtils
 // Dependencies: [32, 19, 4702, 1102, 558, 576, 7163, 1126, 3719, 2]
 
-// Module 10111 (SlayerStorefrontTimeUtils)
+// Module 10112 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;

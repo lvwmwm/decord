@@ -1,9 +1,9 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16468
+// Function ID: 16469
 // Name: MessageRequestsButton
-// Dependencies: [109, 19, 17, 6055, 6056, 21, 5092, 558, 576, 504, 16464, 5379, 1126, 7569, 12846, 8748, 2]
+// Dependencies: [109, 19, 17, 6055, 6056, 21, 5092, 558, 576, 504, 16469, 5379, 1126, 7569, 12851, 8748, 2]
 
-// Module 16463 (MessageRequestsButton)
+// Module 16468 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1126 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import IconButton2 from "IconButton" /* 7569 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8748 */;
-import IconActionButtonDefault from "IconActionButton" /* 12846 */;
+import IconActionButtonDefault from "IconActionButton" /* 12851 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import MessageRequestStore from "MessageRequestStore" /* 6055 */;
@@ -24,7 +24,7 @@ import size from "module_2" /* 2 */;
 let c10;
 let c9;
 let tmp;
-const _mod16464 = tmp(16464);
+const _mod16469 = tmp(16469);
 let closure_3 = ["alternateVariant"];
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -129,7 +129,7 @@ const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function M
   const effect = obj2.useEffect(tmp5, tmp6);
   if (cResult[3] !== color) {
     const obj3 = { ref, color, size: "sm", autoPlay: true };
-    const tmp10 = React4(_mod16464.MessageRequestLottie, obj3);
+    const tmp10 = React4(_mod16469.MessageRequestLottie, obj3);
     cResult[3] = color;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -152,7 +152,7 @@ const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function M
       }
     }
   }, items);
-  return React4(_mod16464.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+  return React4(_mod16469.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestsButton(alternateVariant) {
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
         tmp29 = cResult[7];
       }
       if (cResult[8] !== tmp11.requestCount) {
-        const tmp43 = str > 0 && React4(tmp(12846).ButtonBadge, { badgePosition: "right" });
+        const tmp43 = str > 0 && React4(tmp(12851).ButtonBadge, { badgePosition: "right" });
         cResult[8] = tmp11.requestCount;
         cResult[9] = tmp43;
         tmp42 = tmp43;
@@ -334,8 +334,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
       const merged2 = Object.assign(merged);
       tmp24 = React4(IconButton, obj4);
     }
-    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(12846).ButtonBadge, { badgePosition: "right" })];
-    tmp3.requestCount > 0 && tmp27(tmp26(12846).ButtonBadge, { badgePosition: "right" });
+    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(12851).ButtonBadge, { badgePosition: "right" })];
+    tmp3.requestCount > 0 && tmp27(tmp26(12851).ButtonBadge, { badgePosition: "right" });
     return tmp15(tmp16, obj2);
   } else {
     const obj = { source: AssetRegistryDefault, IconComponent, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: tmp3.requestCount > 0, badgePosition: "right" };

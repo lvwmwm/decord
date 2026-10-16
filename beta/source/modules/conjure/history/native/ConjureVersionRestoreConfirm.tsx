@@ -1,10 +1,10 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 17163
+// Function ID: 17164
 // Name: ConjureVersionRestoreConfirm
 // Dependencies: [32, 19, 21, 558, 576, 1126, 3849, 6265, 6177, 5305, 5301, 2]
 // Exports: confirmRestoreVersion
 
-// Module 17159 (ConjureVersionRestoreConfirm)
+// Module 17163 (ConjureVersionRestoreConfirm)
 import react2 from "react" /* 576 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import useAlertStore from "useAlertStore" /* 5301 */;

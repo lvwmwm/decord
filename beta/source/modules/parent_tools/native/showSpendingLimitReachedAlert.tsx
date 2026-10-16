@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10058
+// Function ID: 10059
 // Name: showSpendingLimitReachedAlert
 // Dependencies: [5635, 4791, 7734, 5300, 1126, 7302, 7015, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10057 (showSpendingLimitReachedAlert)
+// Module 10058 (showSpendingLimitReachedAlert)
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5635 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;

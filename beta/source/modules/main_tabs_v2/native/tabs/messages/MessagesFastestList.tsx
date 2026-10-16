@@ -1,21 +1,21 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16542
+// Function ID: 16543
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 5092, 587, 558, 576, 16480, 16465, 16531, 16477, 16475, 16532, 16493, 16530, 16533, 6753, 6751, 6744, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 16485, 16470, 16536, 16482, 16480, 16537, 16498, 16535, 16538, 6753, 6751, 6744, 2]
 
-// Module 16537 (MessagesFastestList)
+// Module 16542 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6751 */;
 import FastestListItemTypeDefault from "FastestListItemType" /* 6753 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 16465 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16475 */;
-import useMessagesData from "useMessagesData" /* 16480 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 16493 */;
-import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16530 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 16531 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16532 */;
-import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16533 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16470 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16480 */;
+import useMessagesData from "useMessagesData" /* 16485 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 16498 */;
+import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16535 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16536 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16537 */;
+import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16538 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -314,7 +314,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return jsx(MessagesItemSeparatorDefault, {});
       } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
         const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-        const MessagesItemSuggestedFriendFast = tmp(16477).MessagesItemSuggestedFriendFast;
+        const MessagesItemSuggestedFriendFast = tmp(16482).MessagesItemSuggestedFriendFast;
         const merged = Object.assign(obj4);
         return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
       } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -390,7 +390,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(16477).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(16482).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -507,7 +507,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(16480).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(16485).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }

@@ -1,15 +1,15 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 12980
+// Function ID: 12981
 // Name: QuestRewardTile
-// Dependencies: [109, 19, 21, 558, 576, 9185, 9180, 12976, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9185, 9180, 12981, 2]
 
-// Module 12975 (QuestRewardTile)
+// Module 12980 (QuestRewardTile)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import react3 from "react" /* 576 */;
 import AssetUtils from "AssetUtils" /* 9180 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9185 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12976 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12981 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 10027
+// Function ID: 10028
 // Name: MediaKeyboardBottomSheetHandle
 // Dependencies: [19, 21, 558, 576, 8390, 1126, 8537, 2]
 
-// Module 10026 (MediaKeyboardBottomSheetHandle)
+// Module 10027 (MediaKeyboardBottomSheetHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;

@@ -1,9 +1,9 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 17985
+// Function ID: 17986
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4802, 7244, 6073, 6034, 2069, 502, 2065, 7404, 6078, 2087, 14043, 6035, 5963, 5966, 5113, 1085, 21, 587, 5092, 558, 576, 6185, 5088, 504, 4850, 4985, 6739, 1126, 13136, 8768, 15881, 1382, 14831, 12689, 8708, 4976, 8709, 8695, 1497, 1631, 8696, 11200, 1265, 17982, 17989, 16121, 18002, 18003, 2]
+// Dependencies: [32, 19, 17, 4802, 7244, 6073, 6034, 2069, 502, 2065, 7404, 6078, 2087, 14048, 6035, 5963, 5966, 5113, 1085, 21, 587, 5092, 558, 576, 6185, 5088, 504, 4850, 4985, 6739, 1126, 13141, 8768, 15886, 1382, 14836, 12694, 8708, 4976, 8709, 8695, 1497, 1631, 8696, 11202, 1265, 17986, 17993, 16126, 18006, 18007, 2]
 
-// Module 17981 (LaunchPad)
+// Module 17985 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,8 +16,8 @@ import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import _mod8695 from "module_8695" /* 8695 */;
 import AutocompleterDefault from "Autocompleter" /* 8696 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8708 */;
-import RouteManagerDefault from "RouteManager" /* 11200 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 12689 */;
+import RouteManagerDefault from "RouteManager" /* 11202 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 12694 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore_mod from "ActionSheetStore" /* 4802 */;
@@ -30,7 +30,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7404 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14043 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14048 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
@@ -60,7 +60,7 @@ let size;
 let tmp;
 const Text_Text = tmp(5088);
 const Pressables = tmp(6185);
-const DevToolsNavigator = tmp(14831);
+const DevToolsNavigator = tmp(14836);
 function createAndAppendChannel(item10022, set, items) {
   if (!set.has(item10022)) {
     const tmp3 = createAutocompleterResultForChannelIdDefault(item10022);

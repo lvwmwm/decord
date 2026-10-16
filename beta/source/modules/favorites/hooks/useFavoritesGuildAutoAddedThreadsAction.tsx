@@ -1,10 +1,10 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16582
+// Function ID: 16583
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1390, 2068, 558, 576, 10313, 504, 10312, 1126, 3442, 2]
+// Dependencies: [19, 1390, 2068, 558, 576, 10314, 504, 10313, 1126, 3442, 2]
 
-// Module 16577 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10312 */;
+// Module 16582 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10313 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let tmp = hasAccess;
   let obj = hasAccess(576);
   const cResult = obj.c(13);
-  const obj2 = hasAccess(10313);
+  const obj2 = hasAccess(10314);
   hasAccess = obj2.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let intl;
   let intl2;
   let tmp = hasAccess;
-  let obj = hasAccess(10313);
+  let obj = hasAccess(10314);
   hasAccess = obj.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   const items = [UserStore];
   const obj2 = hasAccess(504);

@@ -1,15 +1,15 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10565
+// Function ID: 10566
 // Name: useTenureBadging
-// Dependencies: [7316, 1390, 4775, 1392, 558, 576, 504, 10565, 1989, 7325, 10566, 2]
+// Dependencies: [7316, 1390, 4775, 1392, 558, 576, 504, 10566, 1989, 7325, 10567, 2]
 
-// Module 10564 (useTenureBadging)
+// Module 10565 (useTenureBadging)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
 import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7325 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10565 */;
-import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10566 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10566 */;
+import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10567 */;
 import UserProfileStore from "UserProfileStore" /* 7316 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;

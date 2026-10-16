@@ -1,13 +1,13 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17292
+// Function ID: 17293
 // Name: conjurePlanBot
-// Dependencies: [1998, 17283, 6947, 2]
+// Dependencies: [1998, 17287, 6947, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 17288 (conjurePlanBot)
+// Module 17292 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 17283 */;
+import conjurePlanTags from "conjurePlanTags" /* 17287 */;
 import size from "module_2" /* 2 */;
 
 function isAppCommand(kind) {

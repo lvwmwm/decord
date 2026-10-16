@@ -1,27 +1,27 @@
-// Module ID: 16540
-// Function ID: 16541
+// Module ID: 16545
+// Function ID: 16546
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 5081, 7244, 16452, 2087, 2116, 5116, 1085, 21, 558, 576, 1506, 4976, 10626, 16541, 16542, 16569, 16615, 16616, 15374, 16457, 16617, 16570, 16619, 7253, 504, 6077, 16620, 16624, 7246, 16625, 11577, 16438, 15375, 16680, 16692, 16695, 16697, 11631, 6846, 16538, 16699, 16705, 16709, 16710, 16723, 2090, 16728, 9456, 16736, 11494, 2]
+// Dependencies: [109, 32, 19, 17, 5081, 7244, 16457, 2087, 2116, 5116, 1085, 21, 558, 576, 1506, 4976, 10627, 16546, 16547, 16574, 16620, 16621, 15379, 16462, 16622, 16575, 16624, 7253, 504, 6077, 16625, 16629, 7246, 16630, 11579, 16443, 15380, 16685, 16697, 16700, 16702, 11633, 6846, 16543, 16704, 16710, 16714, 16715, 16728, 2090, 16733, 9456, 16741, 11496, 2]
 
-// Module 16540 (RedesignChannelList)
+// Module 16545 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelListState from "ChannelListState" /* 7246 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16457 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 16570 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16616 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 16617 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 16625 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 16710 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 16723 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16736 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11579 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16462 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 16575 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16621 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 16622 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 16630 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 16715 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 16728 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16741 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ChannelListStore from "ChannelListStore" /* 7244 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16452 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16457 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
@@ -39,7 +39,7 @@ let closure_16;
 let closure_17;
 let closure_18;
 let tmp;
-const TTIFirstContentfulPaint = tmp(11494);
+const TTIFirstContentfulPaint = tmp(11496);
 let closure_3 = ["selectedGuildId", "selectedChannelId"];
 let react = react_mod;
 const View = react_native.View;
@@ -853,7 +853,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         const tmp2Result = selectedGuildId(2090);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           const obj4 = { guild: stateFromStores, selectedChannelId, selectedVoiceChannelId: stateFromStores1 };
-          const _default = selectedGuildId(16728).default;
+          const _default = selectedGuildId(16733).default;
           const merged1 = Object.assign(merged);
           return closure_16(_default, obj4);
         } else {

@@ -1,9 +1,9 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16022
+// Function ID: 16023
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1390, 21, 5092, 587, 558, 576, 1497, 504, 4962, 1126, 3086, 16018, 3118, 16020, 16021, 2]
+// Dependencies: [17, 1390, 21, 5092, 587, 558, 576, 1497, 504, 4962, 1126, 3086, 16023, 3118, 16025, 16026, 2]
 
-// Module 16017 (CheckpointWelcomeScreen)
+// Module 16022 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -13,9 +13,9 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import _modDef3086 from "module_3086" /* 3086 */;
 import _modDef3118 from "module_3118" /* 3118 */;
 import UserUtils from "UserUtils" /* 4962 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 16018 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 16020 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 16021 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 16023 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 16025 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 16026 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

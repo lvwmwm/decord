@@ -1,15 +1,15 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12665
+// Function ID: 12666
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 5092, 5056, 12661, 2000, 12654, 12664, 1126, 12665, 6208, 12667, 9719, 9358, 7569, 8767, 2]
+// Dependencies: [19, 17, 21, 5092, 5056, 12666, 2000, 12659, 12669, 1126, 12670, 6208, 12672, 9720, 9358, 7569, 8767, 2]
 // Exports: default
 
-// Module 12660 (ForLaterCardActionButtons)
+// Module 12665 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 12654 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 12659 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   const tmp = closure_6();
   let obj = {
     label: intl.string(savedMessage(1126).t["+TSRGD"]),
-    IconComponent: savedMessage(12665).ChatArrowRightIcon,
+    IconComponent: savedMessage(12670).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -53,7 +53,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(12661, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(12666, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1126).intl;
   const items1 = [obj, ];
@@ -81,9 +81,9 @@ export default function ForLaterCardActionButtons(savedMessage) {
     const t = tmp3(1126).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp3(12667).BellZIcon;
+      PencilIcon = tmp3(12672).BellZIcon;
     } else {
-      PencilIcon = tmp3(9719).PencilIcon;
+      PencilIcon = tmp3(9720).PencilIcon;
     }
     unshift(obj3);
   }

@@ -1,9 +1,9 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12096
+// Function ID: 12097
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 7917, 5987, 5757, 6030, 1085, 5403, 9712, 5404, 9796, 1393, 21, 8232, 6726, 9808, 5092, 1382, 587, 12095, 558, 576, 1497, 6665, 6259, 504, 4818, 10515, 12102, 12103, 2041, 6264, 9795, 12104, 7044, 9711, 6094, 9423, 12105, 7238, 11667, 1998, 7366, 1629, 5107, 8704, 9112, 8705, 12106, 12107, 9265, 8151, 11929, 4850, 12108, 7242, 12115, 5088, 1126, 8579, 12116, 12117, 2]
+// Dependencies: [32, 19, 17, 7917, 5987, 5757, 6030, 1085, 5403, 9713, 5404, 9797, 1393, 21, 8232, 6726, 9809, 5092, 1382, 587, 12097, 558, 576, 1497, 6665, 6259, 504, 4818, 10516, 12104, 12105, 2041, 6264, 9796, 12106, 7044, 9712, 6094, 9423, 12107, 7238, 11669, 1998, 7366, 1629, 5107, 8704, 9112, 8705, 12108, 12109, 9265, 8151, 11931, 4850, 12110, 7242, 12117, 5088, 1126, 8579, 12118, 12119, 2]
 
-// Module 12094 (AutocompleteWrapper)
+// Module 12096 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -19,12 +19,12 @@ import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8232 */;
 import GameSearchSession from "GameSearchSession" /* 8704 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9711 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 9795 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9796 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9808 */;
-import Autocomplete from "Autocomplete" /* 12095 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12106 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9712 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 9796 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9797 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9809 */;
+import Autocomplete from "Autocomplete" /* 12097 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -33,7 +33,7 @@ import EmojiStore from "EmojiStore" /* 5987 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import StickersStore from "StickersStore" /* 6030 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9713 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -62,7 +62,7 @@ let tmp5;
 let unpackModuleId;
 const NavigatorConstants = tmp(6259);
 const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6665);
-const application_commands_ApplicationCommandUtils = tmp(11929);
+const application_commands_ApplicationCommandUtils = tmp(11931);
 function getStickersItemLayout(arg0, index) {
   let diff;
   let result;

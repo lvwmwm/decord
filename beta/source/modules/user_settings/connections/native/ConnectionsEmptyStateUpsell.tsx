@@ -1,9 +1,9 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15246
+// Function ID: 15247
 // Name: ConnectionsEmptyStateUpsell
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 9200, 15242, 15243, 4969, 1415, 1200, 6182, 5056, 15239, 2000, 5088, 7220, 1631, 5377, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 9200, 15247, 15248, 4969, 1415, 1200, 6182, 5056, 15244, 2000, 5088, 7220, 1631, 5377, 1126, 2]
 
-// Module 15241 (ConnectionsEmptyStateUpsell)
+// Module 15246 (ConnectionsEmptyStateUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import Stack_Stack from "Stack/Stack" /* 5377 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import ConnectionsHooks from "ConnectionsHooks" /* 7220 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
-import ConnectionsTracking from "ConnectionsTracking" /* 15242 */;
+import ConnectionsTracking from "ConnectionsTracking" /* 15247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
     tmp6 = cResult[1];
   }
   if (cResult[2] !== platform.type) {
-    const tmpResult = platform(15243);
+    const tmpResult = platform(15248);
     const connectionBackgroundColor = tmpResult.getConnectionBackgroundColor(platform.type);
     cResult[2] = platform.type;
     cResult[3] = connectionBackgroundColor;

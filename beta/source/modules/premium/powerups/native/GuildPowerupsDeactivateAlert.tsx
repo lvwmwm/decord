@@ -1,15 +1,15 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12283
+// Function ID: 12284
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 5092, 587, 558, 576, 12279, 12280, 12281, 6290, 1126, 2600, 5088, 5305, 5305, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 12284, 12285, 12286, 6290, 1126, 2600, 5088, 5305, 5305, 2]
 
-// Module 12278 (GuildPowerupsDeactivateAlert)
+// Module 12283 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2600 from "module_2600" /* 2600 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12279 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12280 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12284 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12285 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,10 +47,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   ({ guildId, powerup } = arg0);
   const tmp4 = closure_6();
   _require = tmp4;
-  const tmp6 = onDeactivate(12279)(guildId, powerup);
+  const tmp6 = onDeactivate(12284)(guildId, powerup);
   onDeactivate = tmp6.onDeactivate;
   const error = tmp6.error;
-  const arr = onDeactivate(12280)(guildId, powerup);
+  const arr = onDeactivate(12285)(guildId, powerup);
   const obj2 = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj2.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

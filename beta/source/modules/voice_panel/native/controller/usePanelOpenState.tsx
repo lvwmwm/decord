@@ -1,12 +1,12 @@
-// Module ID: 17963
-// Function ID: 17964
+// Module ID: 17967
+// Function ID: 17968
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 6074, 11972, 1085, 558, 576, 4850, 1121, 11200, 4944, 4957, 11193, 10805, 2]
+// Dependencies: [32, 19, 6074, 11974, 1085, 558, 576, 4850, 1121, 11202, 4944, 4957, 11195, 10806, 2]
 
-// Module 17963 (usePanelOpenState)
+// Module 17967 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoicePanelStore from "VoicePanelStore" /* 6074 */;

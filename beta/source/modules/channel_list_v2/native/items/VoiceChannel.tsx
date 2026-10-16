@@ -1,9 +1,9 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16677
+// Function ID: 16678
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7245, 4750, 6035, 5966, 5116, 11760, 1085, 21, 587, 8183, 6145, 2000, 7477, 558, 576, 8650, 16670, 16673, 10358, 504, 16665, 10239, 5079, 8646, 7891, 5414, 16564, 16555, 1265, 16666, 10283, 1126, 16565, 11737, 2]
+// Dependencies: [5, 19, 17, 7245, 4750, 6035, 5966, 5116, 11762, 1085, 21, 587, 8183, 6145, 2000, 7477, 558, 576, 8650, 16675, 16678, 10359, 504, 16670, 10240, 5079, 8646, 7891, 5414, 16569, 16560, 1265, 16671, 10284, 1126, 16570, 11739, 2]
 
-// Module 16672 (VoiceChannel)
+// Module 16677 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,15 +11,15 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5116 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11737 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7245 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

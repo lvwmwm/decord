@@ -1,14 +1,14 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11025
+// Function ID: 11026
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [2065, 5110, 11024, 1085, 558, 576, 10835, 11025, 504, 11022, 11020, 4976, 7477, 11026, 11027, 2]
+// Dependencies: [2065, 5110, 11026, 1085, 558, 576, 10836, 11027, 504, 11024, 11022, 4976, 7477, 11028, 11029, 2]
 
-// Module 11023 (useGlobalStatusIndicatorState)
+// Module 11025 (useGlobalStatusIndicatorState)
 import Constants from "Constants" /* 1085 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11022 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 11024 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11025 */;
-import useMyCurrentStageChannelDefault from "useMyCurrentStageChannel" /* 11027 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11024 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 11026 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11027 */;
+import useMyCurrentStageChannelDefault from "useMyCurrentStageChannel" /* 11029 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
   } else {
     first = cResult[0];
   }
-  const tmpResult = stateFromStores(10835);
+  const tmpResult = stateFromStores(10836);
   const hasPipParticipant = tmpResult.useHasPipParticipant(first);
   const tmp8 = useVoiceStateForRemoteSessionDefault();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
     }
     const tmpResult8 = stateFromStores(504);
     const stateFromStores1 = tmpResult8.useStateFromStores(tmp14, tmp16, tmp17);
-    const tmpResult9 = stateFromStores(11020);
+    const tmpResult9 = stateFromStores(11022);
     let num5 = tmpResult9.useGetStageRTCPanelHeight(stateFromStores);
     const tmpResult10 = stateFromStores(4976);
     const openModalKey = tmpResult10.useOpenModalKey();
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
       if (cResult[9] === tmp8) {
         tmp22 = cResult[10];
       }
-      const tmpResult11 = stateFromStores(11026);
+      const tmpResult11 = stateFromStores(11028);
       const isVoicePanelShowing = tmpResult11.useIsVoicePanelShowing();
       const tmp26 = null != useMyCurrentStageChannelDefault();
       if (cResult[11] === hasPipParticipant) {
@@ -190,7 +190,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
   }
   let stateFromStores;
   importDefault = undefined;
-  const obj = stateFromStores(10835);
+  const obj = stateFromStores(10836);
   let hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
   const tmp5 = useVoiceStateForRemoteSessionDefault();
   const items = [RTCConnectionStore];
@@ -212,7 +212,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
     }
     return isGuildStageVoiceResult;
   }, items2);
-  const obj4 = stateFromStores(11020);
+  const obj4 = stateFromStores(11022);
   let num = obj4.useGetStageRTCPanelHeight(stateFromStores);
   stateFromStores(4976);
   let tmp12 = null != tmp5;
@@ -225,7 +225,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGlobalS
     }
     tmp12 = getVoiceChannelKey(channelId) !== tmp11;
   }
-  const tmpResult2 = stateFromStores(11026);
+  const tmpResult2 = stateFromStores(11028);
   const isVoicePanelShowing = tmpResult2.useIsVoicePanelShowing();
   const tmp15 = null != useMyCurrentStageChannelDefault();
   let tmp16 = !isVoicePanelShowing;

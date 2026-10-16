@@ -1,14 +1,14 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10039
+// Function ID: 10040
 // Name: CameraIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10039, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10040, 4817, 2]
 
-// Module 10038 (CameraIcon)
+// Module 10039 (CameraIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10039 */;
+import AssetRegistry from "AssetRegistry" /* 10040 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

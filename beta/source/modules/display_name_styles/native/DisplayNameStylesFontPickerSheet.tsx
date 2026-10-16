@@ -1,15 +1,15 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15642
+// Function ID: 15643
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1096, 21, 5092, 587, 558, 576, 8290, 15632, 15634, 1410, 1407, 5057, 5056, 1126, 2958, 15638, 5379, 14871, 8849, 5088, 5377, 5046, 6840, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 5092, 587, 558, 576, 8290, 15637, 15639, 1410, 1407, 5057, 5056, 1126, 2958, 15643, 5379, 14876, 8849, 5088, 5377, 5046, 6840, 2]
 
-// Module 15637 (DisplayNameStylesFontPickerSheet)
+// Module 15642 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import _modDef2958 from "module_2958" /* 2958 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15638 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15643 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -157,9 +157,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let tmp3 = dependencyMap;
   let obj = onSelectFont(8290);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(15632);
+  let obj2 = onSelectFont(15637);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = onSelectFont(15634);
+  let obj3 = onSelectFont(15639);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);

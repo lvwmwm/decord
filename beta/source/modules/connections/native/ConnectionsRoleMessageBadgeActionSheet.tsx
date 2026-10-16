@@ -1,9 +1,9 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11375
+// Function ID: 11376
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1404, 502, 2125, 2119, 2087, 11374, 6877, 1085, 21, 5092, 587, 558, 576, 1126, 6876, 6196, 5088, 5031, 12, 4818, 5763, 10715, 8762, 1200, 1415, 4969, 38, 6852, 6879, 504, 1265, 5107, 6098, 8299, 5056, 10719, 6900, 5379, 6840, 2]
+// Dependencies: [32, 19, 17, 1404, 502, 2125, 2119, 2087, 11376, 6877, 1085, 21, 5092, 587, 558, 576, 1126, 6876, 6196, 5088, 5031, 12, 4818, 5763, 10716, 8762, 1200, 1415, 4969, 38, 6852, 6879, 504, 1265, 5107, 6098, 8299, 5056, 10720, 6900, 5379, 6840, 2]
 
-// Module 11373 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 11375 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,7 +22,7 @@ import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6196 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 6876 */;
 import Constants2 from "Constants" /* 6877 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 10719 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 10720 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 11374 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 11376 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -290,7 +290,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     }
     if (includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      tmp10 = authStore4(tmp2(10715), obj2);
+      tmp10 = authStore4(tmp2(10716), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
       tmp10 = authStore4(tmp2(8762), obj3);
@@ -316,7 +316,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     items1 = [tmp22Result, , , ];
     let tmp25 = null;
     if (null != tmp7) {
-      const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+      const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
       const Avatar = tmp9(1200).Avatar;
       tmp25 = authStore4(Avatar, obj7);
     }
@@ -423,7 +423,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       }
       if (includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        tmp10 = authStore4(tmp2(10715), obj2);
+        tmp10 = authStore4(tmp2(10716), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
         tmp10 = authStore4(tmp2(8762), obj3);
@@ -449,7 +449,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       items1 = [tmp22Result, , , ];
       let tmp25 = null;
       if (null != tmp7) {
-        const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
         const Avatar = tmp9(1200).Avatar;
         tmp25 = authStore4(Avatar, obj7);
       }

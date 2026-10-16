@@ -1,9 +1,9 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 16926
+// Function ID: 16927
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 2065, 2087, 8449, 21, 5092, 587, 558, 576, 504, 5421, 6203, 6159, 1200, 8466, 10469, 16923, 6265, 6180, 6899, 2]
+// Dependencies: [19, 17, 2065, 2087, 8449, 21, 5092, 587, 558, 576, 504, 5421, 6203, 6159, 1200, 8466, 10470, 16927, 6265, 6180, 6899, 2]
 
-// Module 16922 (ItemDetailsActionSheet)
+// Module 16926 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -31,8 +31,8 @@ const TableRow2 = tmp(6180);
 const TableRowGroup2 = tmp(6265);
 const ActionSheet2 = tmp(6899);
 const ICYMIUtils = tmp(8466);
-const ActionSheetIconHeader2 = tmp(10469);
-const ICYMIContentSettingControl = tmp(16923);
+const ActionSheetIconHeader2 = tmp(10470);
+const ICYMIContentSettingControl = tmp(16927);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };

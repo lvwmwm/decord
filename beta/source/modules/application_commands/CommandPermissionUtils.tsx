@@ -1,10 +1,10 @@
-// Module ID: 9804
-// Function ID: 9805
+// Module ID: 9805
+// Function ID: 9806
 // Name: CommandPermissionUtils
-// Dependencies: [2069, 2087, 5403, 1085, 9805, 9248, 7242, 1998, 1097, 9230, 38, 7238, 7241, 2]
+// Dependencies: [2069, 2087, 5403, 1085, 9806, 9248, 7242, 1998, 1097, 9230, 38, 7238, 7241, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 9804 (CommandPermissionUtils)
+// Module 9805 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;

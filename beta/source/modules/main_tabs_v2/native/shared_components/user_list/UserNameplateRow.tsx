@@ -1,9 +1,9 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10279
+// Function ID: 10280
 // Name: UserNameplateRow
 // Dependencies: [32, 109, 19, 21, 5092, 587, 558, 576, 6181, 4818, 9017, 6180, 6182, 6175, 2]
 
-// Module 10278 (UserNameplateRow)
+// Module 10279 (UserNameplateRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;

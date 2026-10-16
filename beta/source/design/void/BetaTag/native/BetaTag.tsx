@@ -1,9 +1,9 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12895
+// Function ID: 12896
 // Name: BetaTag
 // Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 1126, 5088, 5391, 1105, 2]
 
-// Module 12890 (BetaTag)
+// Module 12895 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

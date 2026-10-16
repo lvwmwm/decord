@@ -1,9 +1,9 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17647
+// Function ID: 17648
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5092, 558, 576, 6159, 17644, 1126, 12361, 5088, 6185, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6159, 17648, 1126, 12366, 5088, 6185, 2]
 
-// Module 17643 (MessageRequestMutualServers)
+// Module 17647 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
 import GuildIconDefault from "GuildIcon" /* 6159 */;
 import react from "react" /* 19 */;
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
     str = textVariant;
   }
   const tmp4 = closure_6();
-  const tmpResult = iconSize(17644);
+  const tmpResult = iconSize(17648);
   const mutualGuildsForMessageRequests = tmpResult.useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
               return React3(GuildIconDefault, obj, guild.id);
             })
       };
-      const GuildIconPile = tmp(12361).GuildIconPile;
+      const GuildIconPile = tmp(12366).GuildIconPile;
       tmp13 = closure_4(GuildIconPile, obj6);
     }
     cResult[0] = mutualGuildsForMessageRequests.length;
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(17644);
+  let obj = iconSize(17648);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(12361).GuildIconPile;
+    const GuildIconPile = tmp4(12366).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];

@@ -1,10 +1,10 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10804
+// Function ID: 10805
 // Name: canLaunchContextlessFrame
 // Dependencies: [1085, 9242, 2029, 8606, 9228, 2]
 // Exports: canLaunchContextlessFrame
 
-// Module 10803 (canLaunchContextlessFrame)
+// Module 10804 (canLaunchContextlessFrame)
 import Constants from "Constants" /* 1085 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;

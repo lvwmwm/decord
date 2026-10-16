@@ -1,12 +1,12 @@
-// Module ID: 18363
-// Function ID: 18364
+// Module ID: 18367
+// Function ID: 18368
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 5092, 558, 576, 1415, 6157, 5088, 5049, 1126, 6180, 9542, 9719, 5635, 4808, 6208, 6265, 6899, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 558, 576, 1415, 6157, 5088, 5049, 1126, 6180, 9543, 9720, 5635, 4808, 6208, 6265, 6899, 2]
 
-// Module 18363 (EmojiOverflowActionSheet)
+// Module 18367 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9542 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -430,7 +430,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   intl = emoji(1126).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(9719).PencilIcon, {}),
+    icon: closure_6(emoji(9720).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
@@ -445,7 +445,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOverflo
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(9719).PencilIcon, {}),
+      icon: closure_6(tmp3(9720).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;

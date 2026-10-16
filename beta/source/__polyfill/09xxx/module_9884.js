@@ -1,68 +1,106 @@
 // Module ID: 9884
 // Function ID: 9885
-// Dependencies: [41, 42, 9885, 9816]
+// Dependencies: [9885, 9887, 9888, 9889, 9890, 9891, 9892, 9812, 9819, 9821, 9893, 9894, 9858, 9852]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 9884
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9816 */;
-import NUMBER from "NUMBER" /* 9885 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9852 */;
+import _mod9858 from "module_9858" /* 9858 */;
+import _mod9885 from "module_9885" /* 9885 */;
+import _mod9887 from "module_9887" /* 9887 */;
+import _mod9888 from "module_9888" /* 9888 */;
+import _mod9889 from "module_9889" /* 9889 */;
+import _mod9890 from "module_9890" /* 9890 */;
+import _mod9891 from "module_9891" /* 9891 */;
+import _mod9892 from "module_9892" /* 9892 */;
+import _mod9893 from "module_9893" /* 9893 */;
+import _mod9894 from "module_9894" /* 9894 */;
+import { Chrono } from "module_9812" /* 9812 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+const require = globalThis.__r;
+
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_9885.default(), , , , ];
+  new module_9885.default();
+  items[1] = new module_9889.default();
+  new module_9889.default();
+  items[2] = new module_9894.default();
+  new module_9894.default();
+  items[3] = new module_9890.default();
+  new module_9890.default();
+  items[4] = new module_9891.default();
+  new module_9891.default();
+  items1 = [new module_9893.default(), , ];
+  new module_9893.default();
+  items1[1] = new module_9892.default();
+  new module_9892.default();
+  items1[2] = new module_9887.default();
+  new module_9887.default();
+  const result = includeCommonConfiguration(obj, flag);
+  const refiners = result.refiners;
+  result.refiners = refiners.filter((item) => !(item instanceof module_9858.default));
+  return result;
 }
-const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
-};
-const items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
-      if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
-      }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(9885).toHankaku(tmp8));
-        }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
-          }
-        }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
-      }
-      return parsingComponents;
-    }
-  }
-];
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_9888.default();
+  unshift(_default);
+  return tmp;
+}
+const module_9885 = fn(_mod9885);
+const module_9887 = fn(_mod9887);
+const module_9888 = fn(_mod9888);
+const module_9889 = fn(_mod9889);
+const module_9890 = fn(_mod9890);
+const module_9891 = fn(_mod9891);
+const module_9892 = fn(_mod9892);
+const module_9893 = fn(_mod9893);
+const module_9894 = fn(_mod9894);
+const module_9858 = fn(_mod9858);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_9888.default();
+unshift(_default);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_9812").Chrono(createConfiguration(true));
+const Chrono_export = require("module_9812").Chrono;
 
-export default _createClass(JPStandardParser, items);
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+};
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

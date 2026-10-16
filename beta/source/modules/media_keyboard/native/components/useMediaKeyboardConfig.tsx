@@ -1,17 +1,17 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17149
+// Function ID: 17150
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1627, 1085, 558, 576, 7893, 11934, 6972, 8508, 10018, 1998, 2]
+// Dependencies: [19, 1627, 1085, 558, 576, 7893, 11936, 6972, 8508, 10019, 1998, 2]
 
-// Module 17145 (useMediaKeyboardConfig)
+// Module 17149 (useMediaKeyboardConfig)
 import react2 from "react" /* 576 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Server from "Server" /* 1998 */;
 import ThreadHooks from "ThreadHooks" /* 6972 */;
 import PollsUtils from "PollsUtils" /* 7893 */;
 import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8508 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10018 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 11934 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10019 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 11936 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaKe
   const tmp2Result3 = context(8508);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(10018);
+  const tmp2Result4 = context(10019);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

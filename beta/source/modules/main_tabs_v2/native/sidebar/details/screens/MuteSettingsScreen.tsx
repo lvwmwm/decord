@@ -1,9 +1,9 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17631
+// Function ID: 17632
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 2065, 2087, 4760, 1390, 9294, 1085, 21, 5092, 587, 7897, 6809, 6804, 558, 576, 10397, 1200, 10464, 1126, 5421, 5088, 6180, 10465, 1503, 10466, 10463, 1504, 573, 1382, 9293, 1631, 2]
+// Dependencies: [19, 17, 2065, 2087, 4760, 1390, 9294, 1085, 21, 5092, 587, 7897, 6809, 6804, 558, 576, 10398, 1200, 10465, 1126, 5421, 5088, 6180, 10466, 1503, 10467, 10464, 1504, 573, 1382, 9293, 1631, 2]
 
-// Module 17627 (MuteSettingsScreen)
+// Module 17631 (MuteSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,8 +11,8 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
 import react_native2 from "react-native" /* 9294 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10397 */;
-import threadActionSheets from "threadActionSheets" /* 10466 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10398 */;
+import threadActionSheets from "threadActionSheets" /* 10467 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -105,7 +105,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unmute
       const _Symbol = Symbol;
       const options = tmp4.options;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { disableColor: true, source: navigation(10464) };
+        const obj2 = { disableColor: true, source: navigation(10465) };
         const Icon = tmp(1200).Icon;
         const tmp10 = closure_10(Icon, obj2);
         cResult[4] = tmp10;
@@ -141,7 +141,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unmute
           tmp21 = cResult[11];
         }
         const isPrivateResult = channel.isPrivate();
-        const MuteSettingType = tmp(10465).MuteSettingType;
+        const MuteSettingType = tmp(10466).MuteSettingType;
         const tmp25 = isPrivateResult ? MuteSettingType.DM : MuteSettingType.CHANNEL;
         if (cResult[12] === muteConfig) {
           let tmp26;
@@ -167,7 +167,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unmute
           tmp30 = tmp33;
         }
         const obj6 = { muteConfig, type: tmp25 };
-        const tmp29 = closure_10(navigation(10465), obj6);
+        const tmp29 = closure_10(navigation(10466), obj6);
         cResult[12] = muteConfig;
         cResult[13] = tmp25;
         cResult[14] = tmp29;
@@ -218,7 +218,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unmute
   }, items);
   const obj2 = { icon: closure_10(Icon, obj3), label: closure_10(Text, obj4), onPress: callback, start: true, end: true };
   const TableRow = channel(6180).TableRow;
-  obj3 = { disableColor: true, source: navigation(10464) };
+  obj3 = { disableColor: true, source: navigation(10465) };
   Icon = channel(1200).Icon;
   obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: format(prop, obj5) };
   Text = channel(5088).Text;
@@ -229,9 +229,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unmute
   obj6 = channel(5421);
   items1 = [closure_10(TableRow, obj2), ];
   const obj7 = { muteConfig, type: isPrivateResult ? MuteSettingType.DM : MuteSettingType.CHANNEL };
-  const tmp7 = navigation(10465);
+  const tmp7 = navigation(10466);
   isPrivateResult = channel.isPrivate();
-  MuteSettingType = channel(10465).MuteSettingType;
+  MuteSettingType = channel(10466).MuteSettingType;
   items1[1] = closure_10(tmp7, obj7);
   return closure_11(View, obj);
 });
@@ -384,7 +384,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
       tmp6 = cResult[2];
     }
     if (cResult[3] !== messageNotifications) {
-      const tmpResult = tmp(10397);
+      const tmpResult = tmp(10398);
       const messageNotificationsText = tmpResult.getMessageNotificationsText(messageNotifications);
       cResult[3] = messageNotifications;
       cResult[4] = messageNotificationsText;
@@ -464,7 +464,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
             }
           }
           const obj6 = { isMuted, isGuildMuted, guildMessageNotifications };
-          const tmp28 = closure_10(tmp(10463).MuteSettingsHint, obj6);
+          const tmp28 = closure_10(tmp(10464).MuteSettingsHint, obj6);
           cResult[16] = guildMessageNotifications;
           cResult[17] = isGuildMuted;
           cResult[18] = isMuted;

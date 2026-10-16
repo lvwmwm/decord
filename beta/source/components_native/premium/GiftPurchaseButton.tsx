@@ -1,9 +1,9 @@
-// Module ID: 13861
-// Function ID: 13862
+// Module ID: 13866
+// Function ID: 13867
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4775, 7132, 21, 558, 576, 5385, 5088, 504, 7127, 12742, 6852, 10099, 5300, 1126, 4769, 10046, 5380, 13862, 2]
+// Dependencies: [5, 19, 17, 4775, 7132, 21, 558, 576, 5385, 5088, 504, 7127, 12747, 6852, 10100, 5300, 1126, 4769, 10047, 5380, 13867, 2]
 
-// Module 13861 (GiftPurchaseButton)
+// Module 13866 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp12 = cResult[5];
   }
   _asyncToGenerator = tmp12;
-  const tmpResult9 = tmp(12742);
+  const tmpResult9 = tmp(12747);
   const canPurchaseIAP = tmpResult9.useCanPurchaseIAP(tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [IAPStore];
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp23 = stateFromStores.planId === planId;
   }
   const analyticsLocations = recipientUserId(6852)().analyticsLocations;
-  const tmpResult12 = tmp(10099);
+  const tmpResult12 = tmp(10100);
   const createOrReuseGiftOrder = tmpResult12.useCreateOrReuseGiftOrder("GiftPurchaseButton");
   const tmp24 = recipientUserId;
   if (cResult[12] === tmp4) {
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
             }
             const BaseTextButton = tmp(5380).BaseTextButton;
             let obj4 = { style: obj3, basePlanId: planId, isCurrentPlan: tmp23, isGift: true, product: stateFromStores2 };
-            const tmp28 = tmp24(13862)(obj4);
+            const tmp28 = tmp24(13867)(obj4);
             if (cResult[19] === BaseTextButton) {
               if (cResult[20] === tmp26) {
                 if (cResult[21] === stateFromStores1) {

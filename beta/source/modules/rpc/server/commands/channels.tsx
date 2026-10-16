@@ -1,20 +1,20 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14736
+// Function ID: 14737
 // Name: channels
-// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 14716, 8606, 10936, 8453, 14732, 10945, 12, 14719, 10810, 10939, 5889, 5414, 1112, 8492, 2]
+// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 14721, 8606, 10937, 8453, 14737, 10946, 12, 14724, 10811, 10940, 5889, 5414, 1112, 8492, 2]
 
-// Module 14731 (channels)
+// Module 14736 (channels)
 import router_utils from "router_utils" /* 1112 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
-import RPCHelpers from "RPCHelpers" /* 10945 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
-import botScopedAccess from "botScopedAccess" /* 14732 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10811 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10940 */;
+import RPCHelpers from "RPCHelpers" /* 10946 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14724 */;
+import botScopedAccess from "botScopedAccess" /* 14737 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -222,7 +222,7 @@ let obj4 = {
         const self = this;
         const self2 = this;
         const obj2 = { errorCode: constants2.INVALID_GUILD };
-        const tmpResult = tmp(10936);
+        const tmpResult = tmp(10937);
         const tmpResult1 = new tmpResult(obj2, "Invalid guild id: " + guild_id);
         throw tmpResult1;
       } else {
@@ -280,7 +280,7 @@ let obj6 = {
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(10810)(socket.context.surface);
+      tmp3 = tmp(10811)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {

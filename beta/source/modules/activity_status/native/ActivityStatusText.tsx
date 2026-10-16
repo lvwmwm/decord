@@ -1,9 +1,9 @@
-// Module ID: 10244
-// Function ID: 10245
+// Module ID: 10245
+// Function ID: 10246
 // Name: ActivityStatusText
 // Dependencies: [109, 19, 21, 5092, 558, 576, 5088, 2]
 
-// Module 10244 (ActivityStatusText)
+// Module 10245 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

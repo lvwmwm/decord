@@ -1,9 +1,9 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10918
+// Function ID: 10919
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6858, 5409, 4962, 10918, 6852, 6879, 9534, 1126, 10920, 10822, 10922, 10923, 10924, 6185, 10961, 5088, 5380, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6858, 5409, 4962, 10919, 6852, 6879, 9535, 1126, 10921, 10823, 10923, 10924, 10925, 6185, 10963, 5088, 5380, 4827, 2]
 
-// Module 10917 (ActivityTile)
+// Module 10918 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1200 */;
 import FormConstants from "FormConstants" /* 1204 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Constants2 from "Constants" /* 2024 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10923 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10924 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

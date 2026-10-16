@@ -1,9 +1,9 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13739
+// Function ID: 13740
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7171, 5056, 7015, 1200, 5088, 1126, 8194, 5379, 2128, 6839, 13735, 5377, 6840, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7171, 5056, 7015, 1200, 5088, 1126, 8194, 5379, 2128, 6839, 13740, 5377, 6840, 2]
 
-// Module 13734 (ReferralProgramShareConfirmationActionSheet)
+// Module 13739 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7171 */;
-import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13735 */;
+import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13740 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -173,7 +173,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
       cResult[13] = tmp16;
       tmp14 = tmp16;
     }
-    const obj11 = { style: tmp10, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+    const obj11 = { style: tmp10, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
     const Avatar = tmp(1200).Avatar;
     const tmp13 = closure_5(Avatar, obj11);
     cResult[7] = tmp10;
@@ -209,7 +209,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+  let obj3 = { style: items, size: tmp5(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {
@@ -435,7 +435,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProg
   const formatResult = format(AwGSWl, obj);
   BottomSheet = tmp5(6840).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13735).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13740).FistBumpSpotIllustration, {}) };
   Stack = tmp5(5377).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

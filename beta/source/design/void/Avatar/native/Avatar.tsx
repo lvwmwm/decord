@@ -1,9 +1,9 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14428
+// Function ID: 14429
 // Name: Avatar
-// Dependencies: [19, 17, 1085, 1201, 21, 5092, 587, 13153, 14412, 14413, 9012, 8277, 558, 576, 9011, 14414, 5381, 10912, 10913, 14424, 2]
+// Dependencies: [19, 17, 1085, 1201, 21, 5092, 587, 13158, 14417, 14418, 9012, 8277, 558, 576, 9011, 14419, 5381, 10913, 10914, 14429, 2]
 
-// Module 14423 (Avatar)
+// Module 14428 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,13 +11,13 @@ import IconDefault from "Icon" /* 5381 */;
 import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8277 */;
 import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9011 */;
 import ClipView from "ClipView" /* 9012 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10912 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10913 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13153 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 14412 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14413 */;
-import Status from "Status" /* 14414 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 14424 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10913 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10914 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13158 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 14417 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14418 */;
+import Status from "Status" /* 14419 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 14429 */;
 import react from "react" /* 19 */;
 import StatusConstants from "StatusConstants" /* 1201 */;
 import Fragment from "Fragment" /* 21 */;

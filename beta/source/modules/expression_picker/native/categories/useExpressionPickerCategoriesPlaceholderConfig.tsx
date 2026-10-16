@@ -1,9 +1,9 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9573
+// Function ID: 9574
 // Name: useExpressionPickerCategoriesPlaceholderConfig
 // Dependencies: [19, 1085, 5092, 587, 558, 576, 6751, 2]
 
-// Module 9572 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9573 (useExpressionPickerCategoriesPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

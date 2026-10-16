@@ -1,16 +1,16 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 10699
+// Function ID: 10700
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2087, 6790, 21, 5092, 587, 558, 576, 573, 7045, 1126, 8525, 8774, 10699, 10705, 9631, 2]
+// Dependencies: [32, 19, 17, 2087, 6790, 21, 5092, 587, 558, 576, 573, 7045, 1126, 8525, 8774, 10700, 10706, 9632, 2]
 
-// Module 10698 (ChannelsAndRolesModal)
+// Module 10699 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
 import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7045 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9631 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9632 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(9631), obj2);
+    const tmp15 = closure_8(tmp8(9632), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

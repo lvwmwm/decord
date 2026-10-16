@@ -1,9 +1,9 @@
-// Module ID: 10058
-// Function ID: 10059
+// Module ID: 10059
+// Function ID: 10060
 // Name: hooks/usePremiumDiscountOffer
 // Dependencies: [2, 8085]
 
-// Module 10058 (hooks/usePremiumDiscountOffer)
+// Module 10059 (hooks/usePremiumDiscountOffer)
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8085 */;
 import size from "module_2" /* 2 */;
 

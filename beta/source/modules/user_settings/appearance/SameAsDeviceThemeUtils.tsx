@@ -1,10 +1,10 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15461
+// Function ID: 15462
 // Name: SameAsDeviceThemeUtils
 // Dependencies: [4937, 1205, 1208, 5260, 1252, 4969, 4966, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 15456 (SameAsDeviceThemeUtils)
+// Module 15461 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 4966 */;
 import shared from "shared" /* 4969 */;

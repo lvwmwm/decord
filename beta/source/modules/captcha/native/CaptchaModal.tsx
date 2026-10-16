@@ -1,22 +1,22 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18022
+// Function ID: 18023
 // Name: CaptchaModal
-// Dependencies: [19, 17, 16371, 16372, 21, 5092, 558, 576, 6626, 1504, 18019, 5727, 18020, 16379, 18023, 1126, 5088, 5379, 6840, 5377, 2]
+// Dependencies: [19, 17, 16376, 16377, 21, 5092, 558, 576, 6626, 1504, 18023, 5727, 18024, 16384, 18027, 1126, 5088, 5379, 6840, 5377, 2]
 
-// Module 18018 (CaptchaModal)
+// Module 18022 (CaptchaModal)
 import intl4 from "intl" /* 1126 */;
 import Link from "Link" /* 1504 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
-import RegistrationUtils from "RegistrationUtils" /* 16379 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 18020 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18023 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16376 */;
+import RegistrationUtils from "RegistrationUtils" /* 16384 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 18024 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18027 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 16372 */;
+import RegistrationConstants from "RegistrationConstants" /* 16377 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     }
     return str;
   }, items);
-  let closure_9 = onReject(18019)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(18023)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);

@@ -1,9 +1,9 @@
-// Module ID: 18404
-// Function ID: 18405
+// Module ID: 18408
+// Function ID: 18409
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 2083, 2119, 1390, 8634, 18405, 1085, 21, 5092, 6259, 587, 1265, 5107, 558, 576, 1126, 5088, 18403, 504, 38, 4755, 1503, 6305, 6201, 6098, 4808, 18402, 5056, 16748, 2000, 5377, 6286, 6265, 6180, 14847, 1103, 5379, 18409, 18410, 8633, 18411, 6665, 5362, 5371, 6727, 5396, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 2083, 2119, 1390, 8634, 18409, 1085, 21, 5092, 6259, 587, 1265, 5107, 558, 576, 1126, 5088, 18407, 504, 38, 4755, 1503, 6305, 6201, 6098, 4808, 18406, 5056, 16753, 2000, 5377, 6286, 6265, 6180, 14852, 1103, 5379, 18413, 18414, 8633, 18415, 6665, 5362, 5371, 6727, 5396, 6688, 2]
 
-// Module 18404 (GuildSettingsRoleCreateModal)
+// Module 18408 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,7 +21,7 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 18403 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 18407 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ import react_native2 from "react-native" /* 17 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import UserStore from "UserStore" /* 1390 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18405 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18409 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -256,7 +256,7 @@ function RoleCreateScene() {
     metroImportAll.dismiss();
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect };
-    obj.openLazy(asyncRequire(16748, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(16753, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items2);
   let tmp16 = closure_22;
   let tmp17 = closure_33;
@@ -634,8 +634,8 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePe
         const obj8 = { onSelect: tmp11, location: constants2.GUILD_ROLE_CREATION_MODAL, guildId: guild.id };
         cResult[12] = guild.id;
         cResult[13] = tmp11;
-        cResult[14] = closure_21(role(18409), obj8);
-        const tmp22 = closure_21(role(18409), obj8);
+        cResult[14] = closure_21(role(18413), obj8);
+        const tmp22 = closure_21(role(18413), obj8);
       }
     }
     const fn2 = function o(arg0) {

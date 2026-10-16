@@ -1,9 +1,9 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 10060
+// Function ID: 10061
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 4775, 9117, 1392, 558, 576, 504, 7165, 10058, 7137, 10060, 2]
+// Dependencies: [19, 4775, 9117, 1392, 558, 576, 504, 7165, 10059, 7137, 10061, 2]
 
-// Module 10059 (useIsEligibleForBogoOffer)
+// Module 10060 (useIsEligibleForBogoOffer)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
@@ -58,11 +58,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp8, tmp9);
   const tmpResult7 = tmp(7165);
   const premiumTrialOffer = tmpResult7.usePremiumTrialOffer();
-  const tmpResult8 = tmp(10058);
+  const tmpResult8 = tmp(10059);
   const premiumDiscountOffer = tmpResult8.usePremiumDiscountOffer();
   const tmpResult9 = tmp(7137);
   const isPaymentsBlocked = tmpResult9.useIsPaymentsBlocked();
-  const tmpResult10 = tmp(10060);
+  const tmpResult10 = tmp(10061);
   forceUpdate = tmpResult10.useForceUpdate();
   if (cResult[4] !== stateFromStores) {
     let valueOfResult = null;
@@ -137,11 +137,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
   const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj4 = forceUpdate(7165);
   const premiumTrialOffer = obj4.usePremiumTrialOffer();
-  const obj5 = forceUpdate(10058);
+  const obj5 = forceUpdate(10059);
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
   const obj6 = forceUpdate(7137);
   const isPaymentsBlocked = obj6.useIsPaymentsBlocked();
-  const obj7 = forceUpdate(10060);
+  const obj7 = forceUpdate(10061);
   forceUpdate = obj7.useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {

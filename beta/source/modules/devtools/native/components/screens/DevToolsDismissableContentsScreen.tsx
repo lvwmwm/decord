@@ -1,9 +1,9 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15926
+// Function ID: 15927
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 2052, 21, 5092, 587, 558, 576, 2049, 15922, 6896, 10326, 6265, 6180, 2046, 5049, 6189, 15923, 6739, 5088, 9519, 6095, 1631, 11009, 504, 8620, 2]
+// Dependencies: [32, 19, 17, 2052, 21, 5092, 587, 558, 576, 2049, 15927, 6896, 10327, 6265, 6180, 2046, 5049, 6189, 15928, 6739, 5088, 9520, 6095, 1631, 11011, 504, 8620, 2]
 
-// Module 15921 (DevToolsDismissableContentsScreen)
+// Module 15926 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,10 +17,10 @@ import TableRow4 from "TableRow" /* 6180 */;
 import TableRowArrow from "TableRowArrow" /* 6189 */;
 import TableRowGroup3 from "TableRowGroup" /* 6265 */;
 import SearchField from "SearchField" /* 6739 */;
-import SearchEmpty from "SearchEmpty" /* 9519 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10326 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15922 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 15923 */;
+import SearchEmpty from "SearchEmpty" /* 9520 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10327 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15927 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 15928 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentFrameworkStore_mod from "DismissibleContentFrameworkStore" /* 2052 */;
@@ -43,7 +43,7 @@ let obj6;
 let obj7;
 let tmp;
 const TableSwitchRow3 = tmp(6896);
-const f122468 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+const f122494 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 let DismissibleContentFrameworkStore = DismissibleContentFrameworkStore_mod;
@@ -433,7 +433,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -545,7 +545,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -583,7 +583,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -618,7 +618,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         return items;
       }
     }
@@ -651,7 +651,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         tmp2(items);
         tmp19();
       }
@@ -685,7 +685,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f122468);
+        const sorted = items.sort(f122494);
         tmp2(items);
         tmp19();
       }
@@ -732,7 +732,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
   importDefault = initialSearchQuery.useRef(0);
-  let obj = ref(11009);
+  let obj = ref(11011);
   let tmp4 = _slicedToArray(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   [dependencyMap, tmp5] = tmp4;
   _slicedToArray = tmp5;
@@ -770,7 +770,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
       }
       continue;
     }
-    const sorted = items.sort(f122468);
+    const sorted = items.sort(f122494);
     return items;
   });
   let items = [closure_6];
@@ -816,7 +816,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
       }
       continue;
     }
-    const sorted = items.sort(f122468);
+    const sorted = items.sort(f122494);
     tmp2(items);
     callback();
   }, items1);

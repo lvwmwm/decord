@@ -1,9 +1,9 @@
-// Module ID: 18035
-// Function ID: 18036
+// Module ID: 18039
+// Function ID: 18040
 // Name: AcceptInviteManager
-// Dependencies: [502, 2065, 2125, 2087, 5073, 4750, 7355, 1085, 7418, 1112, 5056, 5934, 18036, 2000, 6808, 18037, 8948, 2]
+// Dependencies: [502, 2065, 2125, 2087, 5073, 4750, 7355, 1085, 7418, 1112, 5056, 5934, 18040, 2000, 6808, 18041, 8948, 2]
 
-// Module 18035 (AcceptInviteManager)
+// Module 18039 (AcceptInviteManager)
 import router_utils from "router_utils" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -11,7 +11,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import AcceptInviteConstants from "AcceptInviteConstants" /* 7355 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 7418 */;
 import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8948 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 18037 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 18041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -158,7 +158,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
             obj.hideActionSheet();
             const obj5 = { code: tmp, isRegistration: _isRegistration, deeplinkAttemptId, inviteInstanceId };
             const obj2 = ModalActionCreatorsDefault;
-            obj2.pushLazy(asyncRequire(18036, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
+            obj2.pushLazy(asyncRequire(18040, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
             flag = false;
           }
         }

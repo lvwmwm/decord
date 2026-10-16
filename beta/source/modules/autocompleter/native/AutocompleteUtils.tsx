@@ -1,10 +1,10 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9712
+// Function ID: 9713
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 2069, 4748, 4760, 1390, 1085, 9712, 5404, 21, 5092, 587, 5421, 8151, 5970, 4962, 558, 576, 8579, 2]
+// Dependencies: [19, 17, 2069, 4748, 4760, 1390, 1085, 9713, 5404, 21, 5092, 587, 5421, 8151, 5970, 4962, 558, 576, 8579, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9711 (autocompleter/AutocompleteUtils)
+// Module 9712 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -19,7 +19,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9712 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9713 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

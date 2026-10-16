@@ -1,9 +1,9 @@
-// Module ID: 15649
-// Function ID: 15650
+// Module ID: 15654
+// Function ID: 15655
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1408, 1085, 21, 1103, 15646, 5092, 587, 558, 576, 8290, 10267, 1407, 5057, 5056, 14845, 1265, 1126, 2958, 15638, 5379, 6196, 12, 15647, 6840, 2]
+// Dependencies: [32, 19, 17, 1408, 1085, 21, 1103, 15651, 5092, 587, 558, 576, 8290, 10268, 1407, 5057, 5056, 14850, 1265, 1126, 2958, 15643, 5379, 6196, 12, 15652, 6840, 2]
 
-// Module 15649 (DisplayNameStylesColorPickerSheet)
+// Module 15654 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
@@ -12,8 +12,8 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14845 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 15646 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14850 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15651 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

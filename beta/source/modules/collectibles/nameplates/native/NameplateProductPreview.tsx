@@ -1,9 +1,9 @@
-// Module ID: 13436
-// Function ID: 13437
+// Module ID: 13441
+// Function ID: 13442
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 8291, 1990, 1126, 5088, 5391, 8298, 8286, 8379, 504, 4962, 5628, 10263, 10264, 1200, 10278, 6180, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 8291, 1990, 1126, 5088, 5391, 8298, 8286, 8379, 504, 4962, 5628, 10264, 10265, 1200, 10279, 6180, 2]
 
-// Module 13436 (NameplateProductPreview)
+// Module 13441 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -20,9 +20,9 @@ import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8286 */;
 import useShopProductItems from "useShopProductItems" /* 8291 */;
 import useCurrentUser from "useCurrentUser" /* 8298 */;
 import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8379 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
-import types from "types" /* 10264 */;
-import UserNameplateRow from "UserNameplateRow" /* 10278 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
+import types from "types" /* 10265 */;
+import UserNameplateRow from "UserNameplateRow" /* 10279 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
@@ -521,7 +521,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepla
         tmp27 = tmp29;
       }
     }
-    const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "function MemberVerificationModalTsx1(t1){const{scrollTop}=this.__closure;const{contentOffset:t2}=t1;const{y:y}=t2;return scrollTop.set(y);}" };
+    const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
     const Avatar = tmp(1200).Avatar;
     const tmp26 = metroRequire(Avatar, obj6);
     cResult[12] = tmp9;
@@ -571,7 +571,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepla
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "function MemberVerificationModalTsx1(t1){const{scrollTop}=this.__closure;const{contentOffset:t2}=t1;const{y:y}=t2;return scrollTop.set(y);}" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10653
+// Function ID: 10654
 // Name: ConjureProjectStore
 // Dependencies: [32, 1390, 6947, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 10652 (ConjureProjectStore)
+// Module 10653 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;

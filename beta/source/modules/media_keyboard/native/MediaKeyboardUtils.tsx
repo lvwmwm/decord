@@ -1,10 +1,10 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 10019
+// Function ID: 10020
 // Name: MediaKeyboardUtils
-// Dependencies: [5, 1207, 2065, 7239, 2116, 7903, 1627, 1085, 7478, 7753, 9258, 7762, 7764, 7495, 1265, 7765, 7754, 1382, 5068, 10019, 1121, 10046, 5371, 12159, 12797, 12, 2]
+// Dependencies: [5, 1207, 2065, 7239, 2116, 7903, 1627, 1085, 7478, 7753, 9258, 7762, 7764, 7495, 1265, 7765, 7754, 1382, 5068, 10020, 1121, 10047, 5371, 12164, 12802, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
-// Module 10018 (MediaKeyboardUtils)
+// Module 10019 (MediaKeyboardUtils)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -17,7 +17,7 @@ import UploadPlatform from "UploadPlatform" /* 7754 */;
 import uploader_UploadUtils from "uploader/UploadUtils" /* 7762 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10019 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10020 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -42,7 +42,7 @@ let map1;
 let tmp;
 let unpackModuleId;
 const DeviceUtils = tmp(5068);
-const f103736 = (item) => {
+const f103748 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -399,7 +399,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103736);
+            const mapped = found.map(f103748);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -456,7 +456,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103736);
+            const mapped = found.map(f103748);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -610,7 +610,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103736);
+            const mapped = found.map(f103748);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -767,7 +767,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
       }
       return tmp2;
     });
-    const mapped = found.map(f103736);
+    const mapped = found.map(f103748);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);
@@ -1031,7 +1031,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
   }
   track(CHAT_INPUT_COMPONENT_VIEWED, obj2);
   let recipientId;
-  const openGiftModal = tmp3(10046).openGiftModal;
+  const openGiftModal = tmp3(10047).openGiftModal;
   require("utils/openGiftModal");
   if (null != channel) {
     if (channel.isDM()) {
@@ -1073,7 +1073,7 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
       const current2 = chatInput.current;
       current2.blur();
     }
-    const tmp7Result = tmp7(12159);
+    const tmp7Result = tmp7(12164);
     const result = tmp7Result.navigateToThreadCreation(channel, "Plus Button");
   }
 };

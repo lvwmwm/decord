@@ -1,10 +1,10 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 14009
+// Function ID: 14010
 // Name: BlockedUserUtils
 // Dependencies: [4760, 1388, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 14004 (BlockedUserUtils)
+// Module 14009 (BlockedUserUtils)
 import _modDef12 from "module_12" /* 12 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import size from "module_2" /* 2 */;

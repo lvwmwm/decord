@@ -1,9 +1,9 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11663
+// Function ID: 11664
 // Name: RefreshChatInputCoachmark
 // Dependencies: [109, 32, 19, 2062, 558, 576, 2049, 7100, 1126, 4924, 9438, 2]
 
-// Module 11661 (RefreshChatInputCoachmark)
+// Module 11663 (RefreshChatInputCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;

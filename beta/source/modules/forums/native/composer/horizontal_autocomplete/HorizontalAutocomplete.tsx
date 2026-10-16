@@ -1,9 +1,9 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10008
+// Function ID: 10009
 // Name: HorizontalAutocomplete
 // Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6884, 6902, 8257, 8154, 5421, 6157, 2]
 
-// Module 10007 (HorizontalAutocomplete)
+// Module 10008 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

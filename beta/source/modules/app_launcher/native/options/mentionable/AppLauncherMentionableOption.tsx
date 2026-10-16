@@ -1,10 +1,10 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 11891
+// Function ID: 11892
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 5081, 2119, 1390, 1096, 21, 5092, 587, 558, 576, 504, 10286, 11888, 11886, 1200, 11887, 11890, 11884, 5056, 11886, 2000, 2]
+// Dependencies: [32, 19, 5081, 2119, 1390, 1096, 21, 5092, 587, 558, 576, 504, 10287, 11890, 11888, 1200, 11889, 11892, 11886, 5056, 11888, 2000, 2]
 // Exports: default
 
-// Module 11889 (AppLauncherMentionableOption)
+// Module 11891 (AppLauncherMentionableOption)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,11 +13,11 @@ import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import UserCircleIcon from "UserCircleIcon" /* 10286 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11886 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11887 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11888 */;
-import UsernameTextDefault from "UsernameText" /* 11890 */;
+import UserCircleIcon from "UserCircleIcon" /* 10287 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11888 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11889 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11890 */;
+import UsernameTextDefault from "UsernameText" /* 11892 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -109,7 +109,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
       }
       return tmp16;
     } else {
-      const GLOBAL = tmp(11886).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp(11888).MentionableItemTypes.GLOBAL;
       return tmp12;
     }
   }
@@ -133,7 +133,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
     } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
       return jsx(AppLauncherRoleListActionSheet.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = tmp2(11886).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11888).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -227,7 +227,7 @@ export default function AppLauncherMentionableOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(11886, dependencyMap.paths);
+      const tmp4 = asyncRequire(11888, dependencyMap.paths);
       openLazy(tmp4, AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

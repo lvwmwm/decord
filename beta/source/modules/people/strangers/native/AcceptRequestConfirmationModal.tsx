@@ -1,9 +1,9 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10235
+// Function ID: 10236
 // Name: AcceptRequestConfirmationModal
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5299, 5088, 5398, 2]
 
-// Module 10234 (AcceptRequestConfirmationModal)
+// Module 10235 (AcceptRequestConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;

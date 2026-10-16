@@ -1,18 +1,18 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15644
+// Function ID: 15645
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8290, 15633, 15634, 5057, 5056, 1126, 2958, 15638, 5379, 5377, 6840, 10266, 10263, 10264, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8290, 15638, 15639, 5057, 5056, 1126, 2958, 15643, 5379, 5377, 6840, 10267, 10264, 10265, 2]
 
-// Module 15639 (DisplayNameStylesEffectPickerSheet)
+// Module 15644 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef2958 from "module_2958" /* 2958 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
-import types from "types" /* 10264 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10266 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
+import types from "types" /* 10265 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10267 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -380,9 +380,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let tmp3 = dependencyMap;
   let obj = userId(8290);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(15633);
+  let obj2 = userId(15638);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(15634);
+  const obj3 = userId(15639);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
     BottomSheet = tmp2(6840).BottomSheet;
     obj5 = { title: intl.string(onSelectEffect(2958).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(15638);
+    tmp12 = onSelectEffect(15643);
     intl = tmp2(1126).intl;
     obj6 = { text: intl2.string(userId(1126).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
     Button = tmp2(5379).Button;
@@ -446,7 +446,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   if (cResult[0] !== effectId) {
     const intl = tmp(1126).intl;
     const string = intl.string;
-    let OpWJ3f = tmp(10266).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+    let OpWJ3f = tmp(10267).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
     if (OpWJ3f == null) {
       OpWJ3f = _modDef2958.OpWJ3f;
     }

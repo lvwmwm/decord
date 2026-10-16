@@ -1,13 +1,13 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17544
+// Function ID: 17545
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4760, 1390, 10217, 1085, 21, 558, 576, 6852, 6879, 17539, 504, 1273, 8967, 8299, 10223, 2]
+// Dependencies: [19, 4760, 1390, 10218, 1085, 21, 558, 576, 6852, 6879, 17543, 504, 1273, 8967, 8299, 10224, 2]
 
-// Module 17540 (SpamRequestsScreen)
+// Module 17544 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -82,8 +82,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   if (cResult[4] !== stateFromStoresArray) {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F150604 */ });
-        return mapped.filter(() => { /* body not rendered: F150605 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F150638 */ });
+        return mapped.filter(() => { /* body not rendered: F150639 */ });
       }
     }
     const items2 = [stateFromStoresArray];
@@ -101,8 +101,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   } else {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F150604 */ });
-        return mapped.filter(() => { /* body not rendered: F150605 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F150638 */ });
+        return mapped.filter(() => { /* body not rendered: F150639 */ });
       }
     }
     tmp15 = cResult[6];

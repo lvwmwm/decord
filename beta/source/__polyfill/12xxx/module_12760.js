@@ -1,270 +1,400 @@
 // Module ID: 12760
 // Function ID: 12761
-// Dependencies: [5, 32, 19, 21, 12745, 12757]
-// Exports: useIAPContext, withIAPContext
+// Dependencies: [5, 17, 12752]
+// Exports: buyPromotedProductIOS, clearProductsIOS, clearTransactionIOS, deepLinkToSubscriptionsIos, getPendingPurchasesIOS, getPromotedProductIOS, getReceiptIOS, presentCodeRedemptionSheetIOS, validateReceiptIos
 
 // Module 12760
-import Fragment from "Fragment" /* 21 */;
+import _mod12752 from "module_12752" /* 12752 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-let c1, c2, c3, redux, setConnected;
+let c3, c4, c5;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-let react = react_mod;
-({ useContext: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-const context = react.createContext(null);
-
-export const useIAPContext = function useIAPContext() {
-  const tmp = React3(closure_9);
-  if (tmp) {
-    return tmp;
+const Linking = react_native.Linking;
+const RNIapIos = react_native.NativeModules.RNIapIos;
+_asyncToGenerator(async (arg0, value) => {
+  let v3;
+  if (c0 === 2) {
+    c0 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
   } else {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("You need wrap your app with withIAPContext HOC");
-    throw error;
-  }
-};
-export function withIAPContext(arg0) {
-  let closure_0 = arg0;
-  return function WrapperComponent(arg0) {
-    let closure_15;
-    let closure_19;
-    let first;
-    let first1;
-    let first2;
-    let first3;
-    let first4;
-    let first7;
-    let first9;
-    let tmp11;
-    let tmp14;
-    let tmp3;
-    let tmp6;
-    [first, tmp3] = metroImportDefault(false);
-    let closure_1 = tmp3;
-    [first1, tmp6] = metroImportDefault([]);
-    let closure_3 = tmp6;
-    [first2, hasOwnProperty] = metroImportDefault([]);
-    [first3, tmp11] = metroImportDefault([]);
-    metroImportDefault = tmp11;
-    [first4, tmp14] = metroImportDefault([]);
-    redux = tmp14;
-    const tmp15 = _slicedToArray(metroImportDefault([]), 2);
-    const first5 = tmp15[0];
-    let closure_11 = tmp17;
-    const tmp18 = _slicedToArray(metroImportDefault(), 2);
-    const first6 = tmp18[0];
-    let closure_13 = tmp20;
-    [first7, closure_15] = metroImportDefault();
-    const tmp23 = _slicedToArray(metroImportDefault(), 2);
-    const first8 = tmp23[0];
-    let closure_17 = tmp25;
-    [first9, closure_19] = metroImportDefault();
-    let items = [first, first1, first3, first2, first4, first5, first6, first7, first8, first9, tmp3, tmp6, tmp11, tmp14, tmp15[1], tmp18[1], tmp23[1]];
-    const tmp28 = metroRequire(() => ({ connected, products: first1, subscriptions: first3, promotedProductsIOS: first2, purchaseHistory: first4, availablePurchases: first5, currentPurchase: first6, currentTransaction: first7, currentPurchaseError: first8, initConnectionError: first9, setConnected, setProducts, setSubscriptions, setPurchaseHistory, setAvailablePurchases, setCurrentPurchase, setCurrentPurchaseError }), items);
-    hasOwnProperty(() => {
-      const obj = closure_2_0(closure_2_1[4]);
-      const connection = obj.initConnection();
-      const nextPromise = connection.then((result) => {
-        closure_1_19(undefined);
-        setConnected(result);
-      });
-      nextPromise.catch(closure_19);
-    }, []);
-    let items1 = [first];
-    hasOwnProperty(() => {
-      if (closure_0) {
-        let tmp = first;
-        const tmp2 = setConnected;
-        const tmp3 = first(setConnected[5]);
-        let tmp4 = first1;
-        const purchaseUpdatedListener = tmp3.purchaseUpdatedListener;
-        first1(function*(arg0, value) {
-          closure_0 = arg0;
-          if (c1 === 2) {
-            c1 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp2 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c1 = 2;
-              if (arg0 === 1) {
-                c1 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else {
-                closure_1_17(undefined);
-                closure_1_13(closure_0);
-                c1 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp8) {
-              c1 = 3;
-              throw tmp8;
-            }
-          }
-        });
-        purchaseUpdatedListener(function(arg0) {
-          return closure_0(...arguments);
-        });
-        const transactionListener = first(setConnected[5]).transactionListener;
-        const tmp5 = first(setConnected[5]);
-        closure_0 = first1(function*(arg0, value) {
-          closure_0 = arg0;
-          if (c1 === 2) {
-            c1 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp2 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c1 = 2;
-              if (arg0 === 1) {
-                c1 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else {
-                let error;
-                const tmp4 = closure_1_17;
-                if (closure_0 != null) {
-                  error = tmp3.error;
-                }
-                tmp4(error);
-                let transaction;
-                const tmp8 = closure_1_15;
-                if (closure_0 != null) {
-                  transaction = tmp3.transaction;
-                }
-                tmp8(transaction);
-                c1 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp11) {
-              c1 = 3;
-              throw tmp11;
-            }
-          }
-        });
-        setConnected = transactionListener(function(arg0) {
-          return closure_0(...arguments);
-        });
-        let obj = first(setConnected[5]);
-        let closure_2 = obj.purchaseErrorListener((arg0) => {
-          setCurrentPurchase(undefined);
-          setCurrentPurchaseError(arg0);
-        });
-        let obj2 = first(setConnected[5]);
-        let closure_3 = obj2.promotedProductListener(first1(function*(arg0, value) {
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              let tmp;
-              c3 = 2;
-              if (0 === c2) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  closure_1 = tmp4;
-                  tmp = undefined;
-                  const IapIos = tmp(closure_1[4]).IapIos;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj4 = { value: IapIos.getPromotedProductIOS(), done: false };
-                  return obj4;
-                }
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else {
-                tmp = value;
-                closure_1_5((arg0) => {
-                  let items2;
-                  const items = [...arg0];
-                  if (closure_1_0) {
-                    const items1 = [tmp3];
-                    items2 = items1;
-                  } else {
-                    items2 = [];
-                  }
-                  HermesBuiltin.arraySpread(items, items2, tmp2);
-                  return items;
-                });
-                c3 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp11) {
-              c3 = 3;
-              throw tmp11;
-            }
-          }
-        }));
-        return () => {
-          closure_0.remove();
-          closure_2.remove();
-          const obj = closure_3;
-          if (closure_3 != null) {
-            obj.remove();
-          }
-          const obj2 = closure_1;
-          if (closure_1 != null) {
-            obj2.remove();
-          }
-        };
+    try {
+      c0 = 2;
+      if (arg0 === 1) {
+        c0 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c0 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        const obj = c0(dependencyMap[2]);
+        const iosModule = obj.getIosModule();
+        c0 = 3;
+        const obj4 = { value: iosModule.getPendingTransactions(), done: true };
+        return obj4;
       }
-    }, items1);
-    let obj2 = {};
-    const Provider = redux.Provider;
-    const merged = Object.assign(arg0);
-    return <Provider value={tmp28}>{null}</Provider>;
-  };
+    } catch (tmp5) {
+      c0 = 3;
+      throw tmp5;
+    }
+  }
+});
+_asyncToGenerator(async (arg0, value) => {
+  let _false;
+  closure_0 = arg0;
+  if (c5 === 2) {
+    c5 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      let requestReceipt;
+      let forceRefresh;
+      c5 = 2;
+      if (0 === c4) {
+        if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          requestReceipt = tmp4;
+          let closure_2 = tmp;
+          forceRefresh = closure_0.forceRefresh;
+          c4 = 1;
+          c5 = 1;
+          return { value: "Set", done: true };
+        }
+      } else if (arg0 === 1) {
+        c5 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 3;
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        let rejectResult;
+        const obj5 = closure_0(_false[2]);
+        if (obj5.isIosStorekit2()) {
+          rejectResult = Promise.reject("Only available on Sk1");
+        } else {
+          _false = forceRefresh;
+          requestReceipt = requestReceipt.requestReceipt;
+          if (forceRefresh == null) {
+            _false = false;
+          }
+          rejectResult = requestReceipt(_false);
+        }
+        c5 = 3;
+        const obj = { value: rejectResult, done: true };
+        return obj;
+      }
+    } catch (tmp14) {
+      c5 = 3;
+      throw tmp14;
+    }
+  }
+});
+_asyncToGenerator(async (arg0, value) => {
+  let v3;
+  if (c0 === 2) {
+    c0 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      c0 = 2;
+      if (arg0 === 1) {
+        c0 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c0 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        const obj = c0(dependencyMap[2]);
+        const iosModule = obj.getIosModule();
+        c0 = 3;
+        const obj4 = { value: iosModule.presentCodeRedemptionSheet(), done: true };
+        return obj4;
+      }
+    } catch (tmp5) {
+      c0 = 3;
+      throw tmp5;
+    }
+  }
+});
+_asyncToGenerator(async function(arg0, value) {
+  closure_0 = arg0;
+  let closure_1 = value;
+  if (c4 === 2) {
+    c4 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      c4 = 2;
+      if (0 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closure_2 = tmp3;
+          closure_0 = undefined;
+          const _fetch = fetch;
+          const request = { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify(closure_1) };
+          const _JSON = JSON;
+          c3 = 1;
+          c4 = 1;
+          const obj4 = { value: fetch(closure_0, request), done: false };
+          return obj4;
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
+      } else {
+        closure_0 = value;
+        if (closure_0.ok) {
+          c4 = 3;
+          const obj6 = { value: closure_0.json(), done: true };
+          return obj6;
+        } else {
+          const _Object = Object;
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error(closure_0.statusText);
+          const obj = { statusCode: closure_0.status };
+          throw assign(error, obj);
+        }
+      }
+    } catch (tmp13) {
+      c4 = 3;
+      throw tmp13;
+    }
+  }
+});
+function fetchJsonOrThrow(arg0, arg1) {
+  return closure_0(...arguments);
 }
+_asyncToGenerator(async (arg0, value) => {
+  let closure_2;
+  let tmp5;
+  let v3;
+  closure_0 = arg0;
+  let status = tmp;
+  await c4("https://buy.itunes.apple.com/verifyReceipt", closure_0);
+  if (1 === c3) {
+    if (arg0 === 1) {
+      c4 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 3;
+      const obj5 = { value, done: true };
+      return obj5;
+    } else {
+      status = value;
+      const tmp19 = status;
+      if (tmp19) {
+        if (21007 === status.status) {
+          c3 = 2;
+          c4 = 1;
+          const obj6 = { value: c4("https://sandbox.itunes.apple.com/verifyReceipt", closure_0), done: false };
+          return obj6;
+        }
+      }
+      tmp5 = status;
+    }
+  } else if (arg0 === 1) {
+    c4 = 3;
+    throw value;
+  } else {
+    tmp5 = value;
+    if (arg0 === 2) {
+      c4 = 3;
+      const obj = { value, done: true };
+      return obj;
+    }
+  }
+  return tmp5;
+});
+function requestAgnosticReceiptValidationIos(arg0) {
+  return closure_0(...arguments);
+}
+let closure_0 = _asyncToGenerator(async (arg0, value) => {
+  let c0;
+  let c1;
+  let v3;
+  closure_0 = arg0;
+  if (c4 === 2) {
+    c4 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      let str;
+      c4 = 2;
+      if (0 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closure_2 = tmp4;
+          let closure_1 = tmp;
+          c0 = undefined;
+          c1 = undefined;
+          ({ receiptBody: c0, isTest: c1 } = closure_0);
+          str = undefined;
+          c3 = 1;
+          c4 = 1;
+          return { value: "Set", done: true };
+        }
+      } else if (1 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj4 = { value, done: true };
+          return obj4;
+        } else if (null == c1) {
+          c3 = 2;
+          c4 = 1;
+          const obj5 = { value: requestAgnosticReceiptValidationIos(c0), done: false };
+          return obj5;
+        } else {
+          str = "https://buy.itunes.apple.com/verifyReceipt";
+          if (c1) {
+            str = "https://sandbox.itunes.apple.com/verifyReceipt";
+          }
+          c3 = 3;
+          c4 = 1;
+          const obj6 = { value: c4(str, c0), done: false };
+          return obj6;
+        }
+      } else if (2 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          c4 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj9 = { value, done: true };
+        return obj9;
+      } else {
+        c4 = 3;
+        const obj = { value, done: true };
+        return obj;
+      }
+    } catch (tmp16) {
+      c4 = 3;
+      throw tmp16;
+    }
+  }
+});
+
+export const getPendingPurchasesIOS = function getPendingPurchasesIOS() {
+  return closure_0(...arguments);
+};
+export const getReceiptIOS = function getReceiptIOS(arg0) {
+  return closure_0(...arguments);
+};
+export const presentCodeRedemptionSheetIOS = function presentCodeRedemptionSheetIOS() {
+  return closure_0(...arguments);
+};
+export const getPromotedProductIOS = () => {
+  let rejectResult;
+  const obj = _mod12752;
+  if (obj.isIosStorekit2()) {
+    rejectResult = Promise.reject("Only available on Sk1");
+  } else {
+    rejectResult = RNIapIos.promotedProduct();
+  }
+  return rejectResult;
+};
+export const buyPromotedProductIOS = () => {
+  const obj = _mod12752;
+  const iosModule = obj.getIosModule();
+  return iosModule.buyPromotedProduct();
+};
+export const validateReceiptIos = function validateReceiptIos(arg0) {
+  return closure_0(...arguments);
+};
+export const clearTransactionIOS = () => {
+  const obj = _mod12752;
+  const iosModule = obj.getIosModule();
+  return iosModule.clearTransaction();
+};
+export const clearProductsIOS = () => {
+  const obj = _mod12752;
+  const iosModule = obj.getIosModule();
+  return iosModule.clearProducts();
+};
+export const deepLinkToSubscriptionsIos = () => Linking.openURL("https://apps.apple.com/account/subscriptions");

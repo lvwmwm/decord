@@ -1,13 +1,13 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18205
+// Function ID: 18206
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 9340, 5092, 587, 18202, 2000, 5301, 558, 576, 6688, 18200, 5934, 18199, 6207, 1382, 16426, 18203, 12421, 12409, 18204, 18210, 2]
+// Dependencies: [19, 17, 21, 9340, 5092, 587, 18206, 2000, 5301, 558, 576, 6688, 18204, 5934, 18203, 6207, 1382, 16431, 18207, 12426, 12414, 18208, 18214, 2]
 
-// Module 18201 (NewUserModal)
+// Module 18205 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import NewUserUtils from "NewUserUtils" /* 18200 */;
+import NewUserUtils from "NewUserUtils" /* 18204 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9340 */;
@@ -21,7 +21,7 @@ let _require, closure_0, dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f133806 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f133832 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -146,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f133806);
+                      const lazyResult = React.lazy(f133832);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -365,7 +365,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f133806);
+              const lazyResult = React.lazy(f133832);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {

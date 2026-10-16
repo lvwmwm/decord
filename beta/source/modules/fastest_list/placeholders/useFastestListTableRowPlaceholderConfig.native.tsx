@@ -1,9 +1,9 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10226
+// Function ID: 10227
 // Name: useFastestListTableRowPlaceholderConfig
 // Dependencies: [19, 5092, 587, 1200, 5969, 558, 576, 6751, 2]
 
-// Module 10225 (useFastestListTableRowPlaceholderConfig)
+// Module 10226 (useFastestListTableRowPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;

@@ -1,10 +1,10 @@
-// Module ID: 10517
-// Function ID: 10518
+// Module ID: 10518
+// Function ID: 10519
 // Name: CustomStatusUtils
-// Dependencies: [5934, 10518, 2000, 2]
+// Dependencies: [5934, 10519, 2000, 2]
 // Exports: openEditCustomStatusModal
 
-// Module 10517 (CustomStatusUtils)
+// Module 10518 (CustomStatusUtils)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import size from "module_2" /* 2 */;
@@ -17,5 +17,5 @@ export const openEditCustomStatusModal = function openEditCustomStatusModal(arg0
   ({ analyticsLocations, prompt: _prompt } = arg0);
   const obj = ModalActionCreatorsDefault;
   const obj2 = { analyticsLocations, prompt: _prompt };
-  obj.pushLazy(asyncRequire(10518, dependencyMap.paths), obj2, undefined, { presentation: "modal" });
+  obj.pushLazy(asyncRequire(10519, dependencyMap.paths), obj2, undefined, { presentation: "modal" });
 };

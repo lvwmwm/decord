@@ -1,22 +1,22 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16370
+// Function ID: 16371
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 16366, 1085, 21, 5092, 1382, 5068, 14287, 16367, 16368, 16432, 558, 576, 17503, 17510, 17542, 17564, 9339, 17628, 17631, 17635, 17637, 17666, 17672, 4985, 1501, 1629, 5107, 9293, 17673, 17733, 573, 10829, 4979, 6688, 17736, 9632, 11631, 17973, 18004, 11028, 17550, 2]
+// Dependencies: [32, 19, 17, 502, 16371, 1085, 21, 5092, 1382, 5068, 14292, 16372, 16373, 16437, 558, 576, 17507, 17514, 17546, 17568, 9339, 17632, 17635, 17639, 17641, 17670, 17676, 4985, 1501, 1629, 5107, 9293, 17677, 17737, 573, 10830, 4979, 6688, 17740, 9633, 11633, 17977, 18008, 11030, 17554, 2]
 // Exports: getChannelScreen
 
-// Module 16365 (MainNavigator)
+// Module 16370 (MainNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import DeviceUtils from "DeviceUtils" /* 5068 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11028 */;
-import StartupProfiler from "StartupProfiler" /* 11631 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14287 */;
-import NavigationConstants from "NavigationConstants" /* 16366 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 16367 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17550 */;
-import AppComponents from "AppComponents" /* 17736 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 17973 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 18004 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11030 */;
+import StartupProfiler from "StartupProfiler" /* 11633 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14292 */;
+import NavigationConstants from "NavigationConstants" /* 16371 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 16372 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17554 */;
+import AppComponents from "AppComponents" /* 17740 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 17977 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 18008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -38,8 +38,8 @@ let metroImportAll;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(9632);
-const AutoAnalytics = tmp(17503);
+const getNavigationModalPresentationDefault = tmp2(9633);
+const AutoAnalytics = tmp(17507);
 function getId(params) {
   return params.params.screenKey;
 }

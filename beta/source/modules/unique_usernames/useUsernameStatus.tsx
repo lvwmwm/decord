@@ -1,9 +1,9 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 14989
+// Function ID: 14990
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 558, 576, 14985, 2]
+// Dependencies: [32, 19, 558, 576, 14990, 2]
 
-// Module 14984 (useUsernameStatus)
+// Module 14989 (useUsernameStatus)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useUsernameLiveCheck = tmp(14985);
+const useUsernameLiveCheck = tmp(14990);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
   let closure_0 = arg0;
   const tmp = require;

@@ -1,19 +1,19 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 17285
+// Function ID: 17286
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17282, 17283, 6947, 17284, 17287, 17278, 17280, 1126, 3849, 5377, 17289, 5088, 5079, 17212, 17294, 17296, 17297, 17299, 5379, 17276, 6157, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17286, 17287, 6947, 17288, 17291, 17282, 17284, 1126, 3849, 5377, 17293, 5088, 5079, 17216, 17298, 17300, 17301, 17303, 5379, 17280, 6157, 2]
 
-// Module 17281 (ConjurePlanProposalCard)
+// Module 17285 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 17278 */;
-import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 17280 */;
-import ConjurePlanTypeTagsDefault from "ConjurePlanTypeTags" /* 17289 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 17299 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17280 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 17282 */;
+import ConjureNativeCollapsibleSectionDefault from "ConjureNativeCollapsibleSection" /* 17284 */;
+import ConjurePlanTypeTagsDefault from "ConjurePlanTypeTags" /* 17293 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 17303 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,13 +34,13 @@ const Text_Text = tmp(5088);
 const Stack_Stack = tmp(5377);
 const components_Button_Button = tmp(5379);
 const ConjureProjectTypes = tmp(6947);
-const ConjureNativeMarkdown = tmp(17212);
-const ConjureNativeCollapsibleSection = tmp(17280);
-const conjurePlanFormat = tmp(17282);
-const conjurePlanTags = tmp(17283);
-const conjurePlanWidget2 = tmp(17284);
-const useConjurePlanBotPreviewItems = tmp(17287);
-const conjurePlanDesign = tmp(17296);
+const ConjureNativeMarkdown = tmp(17216);
+const ConjureNativeCollapsibleSection = tmp(17284);
+const conjurePlanFormat = tmp(17286);
+const conjurePlanTags = tmp(17287);
+const conjurePlanWidget2 = tmp(17288);
+const useConjurePlanBotPreviewItems = tmp(17291);
+const conjurePlanDesign = tmp(17300);
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -214,7 +214,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
             tmp38 = null;
             if (automod.examples.length > 0) {
               const obj7 = { automod };
-              tmp38 = hasOwnProperty(tmp14(17294), obj7);
+              tmp38 = hasOwnProperty(tmp14(17298), obj7);
             }
           }
           cResult[19] = automod;
@@ -464,7 +464,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
           let tmp45 = null;
           if (botExchanges.length > 0) {
             const obj25 = { projectId, exchanges: botExchanges };
-            tmp45 = hasOwnProperty(tmp14(17297), obj25);
+            tmp45 = hasOwnProperty(tmp14(17301), obj25);
           }
           cResult[24] = botExchanges;
           cResult[25] = projectId;
@@ -655,7 +655,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       tmp8Result7 = null;
       if (automod.examples.length > 0) {
         const obj9 = { automod };
-        tmp8Result7 = tmp8(tmp9(17294), obj9);
+        tmp8Result7 = tmp8(tmp9(17298), obj9);
       }
     }
     items[3] = tmp8Result7;
@@ -671,7 +671,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     let tmp8Result9 = null;
     if (botExchanges.length > 0) {
       const obj11 = { projectId, exchanges: botExchanges };
-      tmp8Result9 = tmp8(tmp9(17297), obj11);
+      tmp8Result9 = tmp8(tmp9(17301), obj11);
     }
     items[5] = tmp8Result9;
     let tmp8Result10 = null;

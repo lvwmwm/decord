@@ -1,16 +1,16 @@
-// Module ID: 9787
-// Function ID: 9788
+// Module ID: 9788
+// Function ID: 9789
 // Name: useStickerPickerListData
-// Dependencies: [19, 9756, 9723, 1241, 9505, 558, 576, 9755, 9531, 12, 1126, 5750, 9456, 2]
+// Dependencies: [19, 9757, 9724, 1241, 9506, 558, 576, 9756, 9532, 12, 1126, 5750, 9456, 2]
 
-// Module 9787 (useStickerPickerListData)
+// Module 9788 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9505 */;
-import StickerPickerStore from "StickerPickerStore" /* 9756 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9506 */;
+import StickerPickerStore from "StickerPickerStore" /* 9757 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9723 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9724 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

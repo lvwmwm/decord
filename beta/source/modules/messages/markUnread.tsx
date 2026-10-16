@@ -1,10 +1,10 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10346
+// Function ID: 10347
 // Name: markUnread
 // Dependencies: [5, 4752, 2065, 5432, 6035, 1390, 1085, 3, 11, 7897, 1295, 2]
 // Exports: default
 
-// Module 10345 (markUnread)
+// Module 10346 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;

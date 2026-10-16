@@ -1,10 +1,10 @@
-// Module ID: 16941
-// Function ID: 16942
+// Module ID: 16945
+// Function ID: 16946
 // Name: GuildSettingsDiscoveryConstants
 // Dependencies: [1126, 2]
 // Exports: calculateLocaleOptions
 
-// Module 16941 (GuildSettingsDiscoveryConstants)
+// Module 16945 (GuildSettingsDiscoveryConstants)
 import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
@@ -628,11 +628,11 @@ export const calculateLocaleOptions = function calculateLocaleOptions() {
     let obj;
     value = value.value;
     if ("en-US" === value) {
-      const obj2 = { id: value, value, label: intl.string(intl2.t.WKEPHR), image: "Array" };
+      const obj2 = { id: value, value, label: intl.string(intl2.t.WKEPHR), image: "a" };
       intl = intl2.intl;
       obj = obj2;
     } else {
-      obj = { id: value, value, label: tmp, image: "Array" };
+      obj = { id: value, value, label: tmp, image: "a" };
     }
     return obj;
   });

@@ -1,14 +1,14 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10462
+// Function ID: 10463
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 6975, 21, 5092, 558, 576, 1126, 6977, 9324, 5056, 6839, 10462, 5379, 6899, 2]
+// Dependencies: [32, 19, 17, 6975, 21, 5092, 558, 576, 1126, 6977, 9324, 5056, 6839, 10463, 5379, 6899, 2]
 
-// Module 10461 (ForumPostTagsActionSheet)
+// Module 10462 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ForumConstants from "ForumConstants" /* 6975 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9324 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 10462 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 10463 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

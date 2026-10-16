@@ -1,9 +1,9 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16080
+// Function ID: 16081
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1244, 12300, 2087, 4939, 16076, 1085, 21, 5092, 587, 1295, 4702, 8022, 12226, 558, 576, 15922, 6896, 12232, 2046, 2049, 1631, 504, 5088, 6180, 6265, 2]
+// Dependencies: [5, 19, 17, 1244, 12305, 2087, 4939, 16081, 1085, 21, 5092, 587, 1295, 4702, 8022, 12231, 558, 576, 15927, 6896, 12237, 2046, 2049, 1631, 504, 5088, 6180, 6265, 2]
 
-// Module 16075 (DevToolsGuildPowerupsScreen)
+// Module 16080 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,16 +12,16 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12232 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15922 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12237 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15927 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12300 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12305 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 16076 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 16081 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

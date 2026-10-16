@@ -1,7 +1,7 @@
 // Module ID: 7425
 // Function ID: 7426
 // Name: StreamRTCConnection
-// Dependencies: [2018, 7426, 5271, 502, 2065, 7427, 2012, 5282, 5110, 5211, 1085, 5117, 1102, 5119, 7428, 2060, 5900, 7429, 12, 584, 5226, 5137, 7430, 1265, 5086, 7436, 5121, 5272, 7437, 7438, 13617, 5233, 2]
+// Dependencies: [2018, 7426, 5271, 502, 2065, 7427, 2012, 5282, 5110, 5211, 1085, 5117, 1102, 5119, 7428, 2060, 5900, 7429, 12, 584, 5226, 5137, 7430, 1265, 5086, 7436, 5121, 5272, 7437, 7438, 13622, 5233, 2]
 
 // Module 7425 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
@@ -746,7 +746,7 @@ class StreamRTCConnection extends RTCConnection {
       if (self.isOwner) {
         let obj2 = { clips_enabled: tmp5Result.isClipsEnabled(), clips_buffer_length: tmp8.clipsLength };
         obj3 = obj2;
-        tmp5Result = tmp5(13617);
+        tmp5Result = tmp5(13622);
       } else {
         obj3 = {};
       }

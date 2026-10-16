@@ -1,16 +1,16 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16281
+// Function ID: 16282
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 5932, 7988, 1085, 21, 558, 576, 16269, 1126, 2128, 8824, 1503, 15134, 15137, 10663, 15092, 14965, 2]
+// Dependencies: [19, 5932, 7988, 1085, 21, 558, 576, 16274, 1126, 2128, 8824, 1503, 15139, 15142, 10664, 15097, 14970, 2]
 
-// Module 16276 (DataAndPrivacyScreen)
+// Module 16281 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import SettingsConstants from "SettingsConstants" /* 7988 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 8824 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14965 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15092 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15097 */;
 import react from "react" /* 19 */;
 import ConsentStore from "ConsentStore" /* 5932 */;
 import Constants from "Constants" /* 1085 */;
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { screen: stackNavigation(15092).SettingsScreen.DATA_AND_PRIVACY };
+      const obj3 = { screen: stackNavigation(15097).SettingsScreen.DATA_AND_PRIVACY };
       const tmp20 = SettingsScreenNoticesDefault;
       const tmp21 = closure_8(tmp20, obj3);
       cResult[5] = tmp21;
@@ -347,9 +347,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   }
   const obj6 = { sections: items2 };
   items2 = [...tmp6];
-  const createList = tmp2(10663).createList;
+  const createList = tmp2(10664).createList;
   const obj7 = { label: intl.string(stackNavigation(1126).t.Me5lVK), settings: items3, subLabel: format(prop, obj8) };
-  stackNavigation(10663);
+  stackNavigation(10664);
   intl = tmp2(1126).intl;
   items3 = [, ];
   ({ DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES: arr3[0], ENCRYPTION_VERIFIED_DEVICES: arr3[1] } = MobileUserSettings);
@@ -430,7 +430,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     HermesBuiltin.arraySpread(items, items4, arraySpreadResult);
     return createList(obj);
   }, items);
-  let obj3 = { screen: stackNavigation(15092).SettingsScreen.DATA_AND_PRIVACY };
+  let obj3 = { screen: stackNavigation(15097).SettingsScreen.DATA_AND_PRIVACY };
   const tmp5 = SettingsScreenNoticesDefault;
   items1 = [closure_8(tmp5, obj3), closure_8(SettingLayoutDefault, { node: memo })];
   return closure_10(closure_9, obj2);

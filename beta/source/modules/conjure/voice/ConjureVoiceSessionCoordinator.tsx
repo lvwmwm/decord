@@ -1,19 +1,19 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14719
+// Function ID: 14720
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [14715, 502, 2012, 5110, 1390, 5113, 1085, 5117, 5246, 10936, 14716, 1279, 5243, 14720, 14717, 10810, 2]
+// Dependencies: [14720, 502, 2012, 5110, 1390, 5113, 1085, 5117, 5246, 10937, 14721, 1279, 5243, 14725, 14722, 10811, 2]
 
-// Module 14714 (ConjureVoiceSessionCoordinator)
+// Module 14719 (ConjureVoiceSessionCoordinator)
 import Constants2 from "Constants" /* 1085 */;
 import v1 from "v1" /* 1279 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5246 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 14716 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14717 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 14720 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14715 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10811 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 14721 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14722 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 14725 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14720 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;

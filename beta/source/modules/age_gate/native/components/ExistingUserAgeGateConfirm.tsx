@@ -1,9 +1,9 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18047
+// Function ID: 18048
 // Name: ExistingUserAgeGateConfirm
 // Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 558, 576, 1503, 1126, 5088, 2128, 5379, 6814, 2]
 
-// Module 18043 (ExistingUserAgeGateConfirm)
+// Module 18047 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

@@ -1,9 +1,9 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9741
+// Function ID: 9742
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 9734, 6302, 558, 576, 4850, 5093, 5096, 7569, 6741, 1126, 6739, 9732, 6185, 9741, 5088, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 9735, 6302, 558, 576, 4850, 5093, 5096, 7569, 6741, 1126, 6739, 9733, 6185, 9742, 5088, 2]
 
-// Module 9740 (GIFPickerHeader)
+// Module 9741 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import timing from "timing" /* 5093 */;
 import InputTypes from "InputTypes" /* 6302 */;
-import GifProvider from "GifProvider" /* 9732 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9734 */;
+import GifProvider from "GifProvider" /* 9733 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -435,7 +435,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     UTypEu = tmp(1126).t.UTypEu;
     intl5 = tmp(1126).intl;
     const obj7 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp(9741).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp(9742).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj7), ];
     const Text = tmp(5088).Text;
     const tmp19 = View;
@@ -503,7 +503,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     UTypEu = tmp2(1126).t.UTypEu;
     intl5 = tmp2(1126).intl;
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp2(9741).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp2(9742).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
     const Text = tmp2(5088).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {

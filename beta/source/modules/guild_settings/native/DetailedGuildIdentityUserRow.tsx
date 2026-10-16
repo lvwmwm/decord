@@ -1,9 +1,9 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10301
+// Function ID: 10302
 // Name: DetailedGuildIdentityUserRow
 // Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 5409, 4962, 8761, 1200, 504, 8575, 6180, 2]
 
-// Module 10300 (DetailedGuildIdentityUserRow)
+// Module 10301 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -102,7 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const tmp17 = metroRequire;
           const tmp18 = View;
           if (tmp8) {
-            const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "Array" };
+            const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "a" };
             const Avatar = tmp(1200).Avatar;
             tmp19 = hasOwnProperty(Avatar, obj6);
           }
@@ -165,7 +165,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }

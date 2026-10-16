@@ -1,10 +1,10 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 10331
+// Function ID: 10332
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10312, 2000, 5056, 10317, 10316, 1126, 3442, 9031, 9548, 9546, 1200, 2]
+// Dependencies: [5, 21, 10313, 2000, 5056, 10318, 10317, 1126, 3442, 9031, 9549, 9547, 1200, 2]
 // Exports: default
 
-// Module 10330 (buildFavoritesSectionButtons)
+// Module 10331 (buildFavoritesSectionButtons)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
@@ -12,9 +12,9 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef3442 from "module_3442" /* 3442 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9546 */;
-import StarIcon from "StarIcon" /* 9548 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10316 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9547 */;
+import StarIcon from "StarIcon" /* 9549 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10317 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ obj = function _removeChannelFromFavorites() {
 function openNoAccessUpsell() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10317, dependencyMap.paths);
+  const tmp2 = asyncRequire(10318, dependencyMap.paths);
   openLazy(tmp2, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 const jsx = Fragment.jsx;

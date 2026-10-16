@@ -226,7 +226,7 @@ const items = [
       };
       let obj3 = self(27);
       if (obj3.shouldPressibilityUseW3CPointerEventsForHover()) {
-        const obj4 = { onPointerEnter: "pos", onPointerLeave: "sk" };
+        const obj4 = { onPointerEnter: "top", onPointerLeave: "code" };
         const _config = this._config;
         const onHoverIn = _config.onHoverIn;
         const onHoverOut = _config.onHoverOut;

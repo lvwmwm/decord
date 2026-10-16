@@ -1,9 +1,9 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11721
+// Function ID: 11722
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 558, 576, 2046, 11718, 1382, 1998, 2]
+// Dependencies: [19, 558, 576, 2046, 11720, 1382, 1998, 2]
 
-// Module 11719 (useActivityShelfItemsSorting)
+// Module 11721 (useActivityShelfItemsSorting)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f109540 = (item) => {
+const f109554 = (item) => {
   closure_0 = item;
   const findIndexResult = items.findIndex((application) => application.application.id === closure_0);
   if (-1 !== findIndexResult) {
@@ -24,11 +24,11 @@ const f109540 = (item) => {
     closure_1 = closure_1 + 1;
   }
 };
-const f109541 = (item, index) => {
+const f109555 = (item, index) => {
   const items = [item, index];
   return items;
 };
-const f109542 = (item) => {
+const f109556 = (item) => {
   let tmp;
   [tmp] = item;
   const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
@@ -49,7 +49,7 @@ const f109542 = (item) => {
   }
   return tmp8;
 };
-const f109543 = (item) => {
+const f109557 = (item) => {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = item;
@@ -95,10 +95,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     items2 = [];
     HermesBuiltin.arraySpread(items2, arr, 0);
     let c1 = 0;
-    const item1 = items1.forEach(f109540);
-    const mapped = items2.map(f109541);
-    const found = mapped.filter(f109542);
-    const item2 = found.forEach(f109543);
+    const item1 = items1.forEach(f109554);
+    const mapped = items2.map(f109555);
+    const found = mapped.filter(f109556);
+    const item2 = found.forEach(f109557);
     cResult[0] = arr;
     cResult[1] = items2;
     tmp4 = items2;
@@ -128,10 +128,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     const items2 = [...closure_0];
     items = items2;
     let closure_1 = 0;
-    const item1 = items1.forEach(f109540);
-    const mapped = items.map(f109541);
-    const found = mapped.filter(f109542);
-    const item2 = found.forEach(f109543);
+    const item1 = items1.forEach(f109554);
+    const mapped = items.map(f109555);
+    const found = mapped.filter(f109556);
+    const item2 = found.forEach(f109557);
     return items;
   }, items);
 });

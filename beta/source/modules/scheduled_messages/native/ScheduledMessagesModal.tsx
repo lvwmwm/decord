@@ -1,7 +1,7 @@
 // Module ID: 9291
 // Function ID: 9292
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 9292, 1085, 1392, 9275, 21, 6879, 5092, 587, 558, 576, 1631, 1126, 4850, 5378, 9293, 1382, 6201, 5934, 6210, 12875, 504, 12876, 9289, 6154, 12878, 8620, 6852, 9265, 1105, 9514, 4769, 12879, 2]
+// Dependencies: [32, 19, 17, 9292, 1085, 1392, 9275, 21, 6879, 5092, 587, 558, 576, 1631, 1126, 4850, 5378, 9293, 1382, 6201, 5934, 6210, 12880, 504, 12881, 9289, 6154, 12883, 8620, 6852, 9265, 1105, 9515, 4769, 12884, 2]
 
 // Module 9291 (ScheduledMessagesModal)
 import react_native from "react-native" /* 17 */;
@@ -21,9 +21,9 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9265 */;
 import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9275 */;
 import HeaderShared from "HeaderShared" /* 9293 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9514 */;
-import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 12875 */;
-import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 12876 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9515 */;
+import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 12880 */;
+import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 12881 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ScheduledMessageStore from "ScheduledMessageStore" /* 9292 */;
@@ -43,7 +43,7 @@ let size;
 let tmp4;
 let unpackModuleId;
 const NavigatorHeader = tmp4(6201);
-const NitroLimitUpsellBarDefault = tmp4(12879);
+const NitroLimitUpsellBarDefault = tmp4(12884);
 function keyExtractor(scheduledMessageId) {
   return scheduledMessageId.scheduledMessageId;
 }
@@ -466,7 +466,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedu
           return valueOfResult - date1.valueOf();
         }
       }
-      const tmp34 = closure_10(stateFromStores2(12878), {});
+      const tmp34 = closure_10(stateFromStores2(12883), {});
       class O {
         constructor() {
           return ScheduledMessageStore.getMessagesPendingRemoval();

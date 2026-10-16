@@ -1,9 +1,9 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 15979
+// Function ID: 15980
 // Name: MFAConstants
 // Dependencies: [1126, 2]
 
-// Module 15974 (MFAConstants)
+// Module 15979 (MFAConstants)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

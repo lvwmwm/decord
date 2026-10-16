@@ -1,18 +1,18 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12422
+// Function ID: 12423
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7478, 21, 5092, 587, 6259, 558, 576, 7495, 6157, 12418, 1126, 5088, 5379, 12419, 12410, 2]
+// Dependencies: [5, 19, 17, 7478, 21, 5092, 587, 6259, 558, 576, 7495, 6157, 12423, 1126, 5088, 5379, 12424, 12415, 2]
 
-// Module 12417 (ContactSyncLandingOnboardingRedesign)
+// Module 12422 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7495 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12410 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12418 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12419 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12415 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12423 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12424 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

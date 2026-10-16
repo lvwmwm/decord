@@ -1,9 +1,9 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11596
+// Function ID: 11597
 // Name: ModalActionButton
 // Dependencies: [109, 19, 17, 21, 5092, 558, 576, 5379, 2]
 
-// Module 11594 (ModalActionButton)
+// Module 11596 (ModalActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

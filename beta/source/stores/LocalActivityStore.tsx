@@ -1,26 +1,26 @@
-// Module ID: 10648
-// Function ID: 10649
+// Module ID: 10649
+// Function ID: 10650
 // Name: LocalActivityStore
-// Dependencies: [32, 2064, 5440, 2019, 10649, 10650, 5760, 1244, 5897, 2065, 2037, 10654, 2116, 5112, 1085, 2041, 10513, 12, 10655, 10656, 7431, 1355, 10657, 1403, 504, 584, 2]
+// Dependencies: [32, 2064, 5440, 2019, 10650, 10651, 5760, 1244, 5897, 2065, 2037, 10655, 2116, 5112, 1085, 2041, 10514, 12, 10656, 10657, 7431, 1355, 10658, 1403, 504, 584, 2]
 
-// Module 10648 (LocalActivityStore)
+// Module 10649 (LocalActivityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 10657 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 10658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10649 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 10650 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10650 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 10651 */;
 import SpotifyStore from "SpotifyStore" /* 5760 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 10654 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 10655 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SessionsStore from "SessionsStore" /* 5112 */;
 import Constants from "Constants" /* 1085 */;

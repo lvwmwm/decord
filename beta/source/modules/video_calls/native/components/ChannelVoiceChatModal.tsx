@@ -1,9 +1,9 @@
-// Module ID: 10352
-// Function ID: 10353
+// Module ID: 10353
+// Function ID: 10354
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 576, 4972, 10353, 4827, 5421, 5106, 8220, 5002, 9631, 2]
+// Dependencies: [19, 21, 558, 576, 4972, 10354, 4827, 5421, 5106, 8220, 5002, 9632, 2]
 
-// Module 10352 (ChannelVoiceChatModal)
+// Module 10353 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
@@ -17,8 +17,8 @@ import size from "module_2" /* 2 */;
 let tmp;
 let tmp4;
 const native = tmp(4827);
-const ModalStackNavigatorDefault = tmp4(9631);
-const ChannelVoiceChatDefault = tmp4(10353);
+const ModalStackNavigatorDefault = tmp4(9632);
+const ChannelVoiceChatDefault = tmp4(10354);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedChannelVoiceChat(channel) {

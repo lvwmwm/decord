@@ -1,29 +1,14 @@
 // Module ID: 14611
 // Function ID: 14612
-// Dependencies: [14554, 14574]
+// Dependencies: [14559, 14560]
 
 // Module 14611
-import _mod14574 from "module_14574" /* 14574 */;
-import getOwnPropertyDescriptor_mod from "module_14554" /* 14554 */;
+import _mod14559 from "module_14559" /* 14559 */;
+import _mod14560 from "module_14560" /* 14560 */;
 
-let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = _mod14574(prototype, "name");
-let tmp3 = tmp;
-const tmp2 = tmp && "something" === (function something() {
+const f67592 = () => 42 !== Object.defineProperty(() => {
 
-}).name;
-if (tmp3) {
-  const _module = getOwnPropertyDescriptor;
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-  }
-  tmp3 = tmp5;
-}
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod14559 && _mod14560(f67592);
 
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+export default _mod14559 && _mod14560(f67592);

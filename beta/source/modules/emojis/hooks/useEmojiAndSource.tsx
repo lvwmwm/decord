@@ -1,9 +1,9 @@
-// Module ID: 9543
-// Function ID: 9544
+// Module ID: 9544
+// Function ID: 9545
 // Name: useEmojiAndSource
 // Dependencies: [5, 32, 19, 2087, 5987, 6160, 1085, 4767, 558, 576, 573, 2]
 
-// Module 9543 (useEmojiAndSource)
+// Module 9544 (useEmojiAndSource)
 import Constants from "Constants" /* 1085 */;
 import EmojiTypes from "EmojiTypes" /* 4767 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -516,10 +516,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F154552 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F154586 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F154553 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F154587 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {

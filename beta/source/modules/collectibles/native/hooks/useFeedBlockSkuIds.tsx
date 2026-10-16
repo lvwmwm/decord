@@ -1,13 +1,13 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16209
+// Function ID: 16210
 // Name: useFeedBlockSkuIds
-// Dependencies: [19, 5932, 1085, 558, 576, 504, 16205, 2]
+// Dependencies: [19, 5932, 1085, 558, 576, 504, 16210, 2]
 
-// Module 16204 (useFeedBlockSkuIds)
+// Module 16209 (useFeedBlockSkuIds)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ShopHomeSortType from "ShopHomeSortType" /* 16205 */;
+import ShopHomeSortType from "ShopHomeSortType" /* 16210 */;
 import react from "react" /* 19 */;
 import ConsentStore from "ConsentStore" /* 5932 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFeedBlo
     if (sortedSkuIds != null) {
       sortedSkuIds = sortedSkuIds.sortedSkuIds;
       if (sortedSkuIds != null) {
-        items1 = sortedSkuIds[tmp(undefined, 16205).ShopHomeSortType.RECOMMENDED];
+        items1 = sortedSkuIds[tmp(undefined, 16210).ShopHomeSortType.RECOMMENDED];
       }
     }
     if (items1 == null) {
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFeedBlo
     if (sortedSkuIds != null) {
       const sortedSkuIds3 = sortedSkuIds.sortedSkuIds;
       if (sortedSkuIds3 != null) {
-        items2 = sortedSkuIds3[tmp(undefined, 16205).ShopHomeSortType.POPULAR];
+        items2 = sortedSkuIds3[tmp(undefined, 16210).ShopHomeSortType.POPULAR];
       }
     }
     if (items2 == null) {

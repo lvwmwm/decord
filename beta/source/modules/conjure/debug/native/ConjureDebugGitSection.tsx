@@ -1,9 +1,9 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17348
+// Function ID: 17349
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5092, 587, 8197, 9719, 12994, 17345, 8675, 17347, 9239, 17349, 11059, 11865, 6868, 7567, 6296, 16123, 16125, 558, 576, 17351, 5088, 17340, 4832, 5305, 6178, 5377, 12622, 5379, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 8197, 9720, 12999, 17349, 8675, 17351, 9239, 17353, 11061, 11867, 6868, 7567, 6296, 16128, 16130, 558, 576, 17355, 5088, 17344, 4832, 5305, 6178, 5377, 12627, 5379, 2]
 
-// Module 17344 (ConjureDebugGitSection)
+// Module 17348 (ConjureDebugGitSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AlertModal from "AlertModal" /* 5305 */;
@@ -13,16 +13,16 @@ import WarningIcon from "WarningIcon" /* 7567 */;
 import FolderIcon from "FolderIcon" /* 8197 */;
 import CalendarIcon from "CalendarIcon" /* 8675 */;
 import ServerIcon from "ServerIcon" /* 9239 */;
-import PencilIcon from "PencilIcon" /* 9719 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11059 */;
-import FileIcon from "FileIcon" /* 11865 */;
-import CloudIcon from "CloudIcon" /* 12994 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16123 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16125 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 17345 */;
-import SaveIcon from "SaveIcon" /* 17347 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 17349 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 17351 */;
+import PencilIcon from "PencilIcon" /* 9720 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11061 */;
+import FileIcon from "FileIcon" /* 11867 */;
+import CloudIcon from "CloudIcon" /* 12999 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16128 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16130 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 17349 */;
+import SaveIcon from "SaveIcon" /* 17351 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 17353 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 17355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ let obj2;
 let obj3;
 let tmp;
 const Text_Text = tmp(5088);
-const ConjureDebugPrimitives = tmp(17340);
+const ConjureDebugPrimitives = tmp(17344);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

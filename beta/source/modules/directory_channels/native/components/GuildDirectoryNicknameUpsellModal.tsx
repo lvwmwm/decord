@@ -1,9 +1,9 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12560
+// Function ID: 12561
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 2087, 12546, 21, 5092, 6259, 587, 558, 576, 504, 6665, 6810, 5635, 6159, 1126, 5088, 6285, 1200, 5379, 12547, 12554, 6201, 6170, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 12551, 21, 5092, 6259, 587, 558, 576, 504, 6665, 6810, 5635, 6159, 1126, 5088, 6285, 1200, 5379, 12552, 12559, 6201, 6170, 6688, 2]
 
-// Module 12555 (GuildDirectoryNicknameUpsellModal)
+// Module 12560 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
@@ -14,7 +14,7 @@ import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
-import Constants from "Constants" /* 12546 */;
+import Constants from "Constants" /* 12551 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12705
+// Function ID: 12706
 // Name: canManageChannelList
 // Dependencies: [2065, 4750, 1085, 2]
 // Exports: canViewChannelList, default, getContainingCategory
 
-// Module 12700 (canManageChannelList)
+// Module 12705 (canManageChannelList)
 import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

@@ -1,9 +1,9 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18640
+// Function ID: 18641
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 4802, 6036, 9306, 6074, 2069, 2065, 2116, 9623, 1999, 7386, 9172, 1085, 7393, 6808, 1457, 5077, 5975, 5979, 12984, 6072, 4976, 1105, 1106, 5301, 7411, 4977, 2]
+// Dependencies: [32, 4802, 6036, 9306, 6074, 2069, 2065, 2116, 9624, 1999, 7386, 9172, 1085, 7393, 6808, 1457, 5077, 5975, 5979, 12989, 6072, 4976, 1105, 1106, 5301, 7411, 4977, 2]
 
-// Module 18636 (QuestMobileEmbedVisibilityManager)
+// Module 18640 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
@@ -18,7 +18,7 @@ import isChannelFocused from "isChannelFocused" /* 6072 */;
 import getQuestLogger from "getQuestLogger" /* 7393 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
 import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9172 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 12984 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 12989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
@@ -26,7 +26,7 @@ import ChannelDetailsStore from "ChannelDetailsStore" /* 9306 */;
 import VoicePanelStore from "VoicePanelStore" /* 6074 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import AlertStore from "AlertStore" /* 9623 */;
+import AlertStore from "AlertStore" /* 9624 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import QuestStore from "QuestStore" /* 7386 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

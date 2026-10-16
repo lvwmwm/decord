@@ -1,13 +1,13 @@
-// Module ID: 14375
-// Function ID: 14376
+// Module ID: 14380
+// Function ID: 14381
 // Name: KeyboardUtils
-// Dependencies: [32, 7221, 1382, 12, 14376, 14377, 14378, 1388, 2]
+// Dependencies: [32, 7221, 1382, 12, 14381, 14382, 14383, 1388, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
-// Module 14375 (KeyboardUtils)
+// Module 14380 (KeyboardUtils)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import keyCodeDefault from "keyCode" /* 14376 */;
-import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 14377 */;
+import keyCodeDefault from "keyCode" /* 14381 */;
+import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 14382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import KeyboardConstants from "KeyboardConstants" /* 7221 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
@@ -43,7 +43,7 @@ function _codeToKey(items1) {
   }
   return tmp14;
 }
-const f117879 = (item) => {
+const f117905 = (item) => {
   let combined;
   let items1;
   let tmp;
@@ -353,7 +353,7 @@ function codeToKey(items1) {
   }
 }
 function toKeyNames(arr) {
-  const mapped = arr.map(f117879);
+  const mapped = arr.map(f117905);
   return mapped.filter(GlobalUtils.isNotNullish);
 }
 const frozen2 = Object.freeze(invertResult2);
@@ -478,7 +478,7 @@ export const toCombo = function toCombo(shortcut) {
   }
   let str = shortcut.replace(/numpad plus/i, "");
   const str2 = str.replace(/NUMPAD \+/i, "numpad plus");
-  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(14378).modKey);
+  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(14383).modKey);
   const parts = str3.split("+");
   const mapped = parts.map((item) => {
     const str = item.trim();
@@ -518,7 +518,7 @@ export const toString = function toString(arr) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const mapped = arr.map(f117879);
+  const mapped = arr.map(f117905);
   const found = mapped.filter(GlobalUtils.isNotNullish);
   if (flag) {
     const tmp2 = global;

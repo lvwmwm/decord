@@ -1,9 +1,9 @@
-// Module ID: 18476
-// Function ID: 18477
+// Module ID: 18480
+// Function ID: 18481
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4808, 558, 576, 18466, 6185, 2]
+// Dependencies: [19, 17, 21, 4808, 558, 576, 18470, 6185, 2]
 
-// Module 18476 (CommunityRequirementSatisfiedForm)
+// Module 18480 (CommunityRequirementSatisfiedForm)
 import react_native from "react-native" /* 17 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   const cResult = obj.c(7);
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
-  const obj2 = formSwitchDisabled(18466);
+  const obj2 = formSwitchDisabled(18470);
   const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
   if (cResult[0] === enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable) {
     let tmp5;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
   let tmp = formSwitchDisabled;
-  let obj = formSwitchDisabled(18466);
+  let obj = formSwitchDisabled(18470);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: items };
   items = [children, ];

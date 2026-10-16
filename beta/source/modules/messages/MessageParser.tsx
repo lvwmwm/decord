@@ -96,7 +96,7 @@ function parse(arg0, arg1, customEmoji) {
   }
   return obj;
 }
-const f96417 = (text) => -text.text.length;
+const f96429 = (text) => -text.text.length;
 const parse2 = function parse(content) {
   return { type: str7.type, content: content[0] };
 };
@@ -112,10 +112,10 @@ function rebuild(arr, arg1, arg2, arg3) {
   const items = [];
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f96437) {
-      if (null != f96437) {
+    function handleEmoji(emojiContext, type, f96449) {
+      if (null != f96449) {
         if ("customEmoticon" === type.type) {
-          f96437(type.emoji, false);
+          f96449(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -132,7 +132,7 @@ function rebuild(arr, arg1, arg2, arg3) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f96437(byId, tmp11);
+                    let tmp12 = f96449(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -147,8 +147,8 @@ function rebuild(arr, arg1, arg2, arg3) {
         }
       }
     }
-    handleEmoji(channel, content, f96437);
-    const tmp2 = f96437;
+    handleEmoji(channel, content, f96449);
+    const tmp2 = f96449;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -345,10 +345,10 @@ function unparseWithMeta(content1, id, isNotification) {
   const arr = obj4.parserFor(omitResult)(content1, obj);
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f96437) {
-      if (null != f96437) {
+    function handleEmoji(emojiContext, type, f96449) {
+      if (null != f96449) {
         if ("customEmoticon" === type.type) {
-          f96437(type.emoji, false);
+          f96449(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -365,7 +365,7 @@ function unparseWithMeta(content1, id, isNotification) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f96437(byId, tmp11);
+                    let tmp12 = f96449(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -380,8 +380,8 @@ function unparseWithMeta(content1, id, isNotification) {
         }
       }
     }
-    handleEmoji(channel, content, f96437);
-    const tmp2 = f96437;
+    handleEmoji(channel, content, f96449);
+    const tmp2 = f96449;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -470,7 +470,7 @@ let obj = {
       let firstResult;
       if (str[0] === GAME_MENTION_SENTINEL) {
         closure_3 = str.substring(arr.length);
-        const sortByResult = games.sortBy(f96417);
+        const sortByResult = games.sortBy(f96429);
         const found = sortByResult.filter((text) => {
           const str = text.text;
           const formatted = closure_1.toLowerCase();
@@ -500,7 +500,7 @@ let obj = {
         let firstResult1;
         if (str[0] === "@") {
           closure_3 = str.substring("@".length);
-          const sortByResult2 = users.sortBy(f96417);
+          const sortByResult2 = users.sortBy(f96429);
           const found1 = sortByResult2.filter((text) => {
             const str = text.text;
             const formatted = closure_1.toLowerCase();
@@ -530,7 +530,7 @@ let obj = {
           let firstResult2;
           if (str[0] === "@") {
             closure_3 = str.substring("@".length);
-            const sortByResult4 = mentionableRoles.sortBy(f96417);
+            const sortByResult4 = mentionableRoles.sortBy(f96429);
             const found2 = sortByResult4.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -565,7 +565,7 @@ let obj = {
             let firstResult3;
             if (str[0] === "@") {
               closure_3 = str.substring("@".length);
-              const sortByResult6 = mapped3.sortBy(f96417);
+              const sortByResult6 = mapped3.sortBy(f96429);
               const found3 = sortByResult6.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -643,7 +643,7 @@ let obj = {
           let firstResult;
           if (str[0] === "#") {
             let closure_3 = str.substring("#".length);
-            const sortByResult = channels.sortBy(f96417);
+            const sortByResult = channels.sortBy(f96429);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -1027,7 +1027,7 @@ const obj19 = {
     closure_0 = tmp;
     arr = closure_21(obj.content, tmp);
     let closure_1 = obj(4764).translateInlineEmojiToSurrogates;
-    const f96437 = (emoji, arg1) => {
+    const f96449 = (emoji, arg1) => {
       obj = obj(dependencyMap[30]);
       const obj2 = { emoji, channel, intention: constants.CHAT };
       if (obj.isEmojiPremiumLocked(obj2)) {
@@ -1045,10 +1045,10 @@ const obj19 = {
     let closure_4 = [];
     const item = arr.forEach((content) => {
       let regex;
-      function handleEmoji(emojiContext, type, f96437) {
-        if (null != f96437) {
+      function handleEmoji(emojiContext, type, f96449) {
+        if (null != f96449) {
           if ("customEmoticon" === type.type) {
-            f96437(type.emoji, false);
+            f96449(type.emoji, false);
           }
           if ("emoticon" === type.type) {
             obj = closure_1_1(closure_1_2[20]);
@@ -1065,7 +1065,7 @@ const obj19 = {
                     }
                     if (byId) {
                       let tmp11 = type.isShortcut || false;
-                      let tmp12 = f96437(byId, tmp11);
+                      let tmp12 = f96449(byId, tmp11);
                     }
                     match = regex.exec(result);
                     if (null === match) {
@@ -1080,8 +1080,8 @@ const obj19 = {
           }
         }
       }
-      handleEmoji(channel, content, f96437);
-      const tmp2 = f96437;
+      handleEmoji(channel, content, f96449);
+      const tmp2 = f96449;
       if (typeof content.content === "string") {
         const type = content.type;
         if ("emoji" === type) {
@@ -1155,10 +1155,10 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
   let closure_4 = [];
   const item = arr.forEach((content) => {
     let regex;
-    function handleEmoji(emojiContext, type, f96437) {
-      if (null != f96437) {
+    function handleEmoji(emojiContext, type, f96449) {
+      if (null != f96449) {
         if ("customEmoticon" === type.type) {
-          f96437(type.emoji, false);
+          f96449(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           obj = closure_1_1(closure_1_2[20]);
@@ -1175,7 +1175,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f96437(byId, tmp11);
+                    let tmp12 = f96449(byId, tmp11);
                   }
                   match = regex.exec(result);
                   if (null === match) {
@@ -1190,8 +1190,8 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
         }
       }
     }
-    handleEmoji(channel, content, f96437);
-    const tmp2 = f96437;
+    handleEmoji(channel, content, f96449);
+    const tmp2 = f96449;
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {

@@ -1,7 +1,7 @@
 // Module ID: 9166
 // Function ID: 9167
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7383, 2129, 2065, 5761, 1390, 7385, 7387, 7386, 5972, 1085, 1392, 558, 576, 504, 9161, 9167, 1382, 6071, 7392, 1102, 7406, 7408, 7410, 9185, 12, 1264, 9196, 9157, 7382, 9159, 9197, 2128, 9199, 5980, 12966, 7411, 6858, 12969, 9188, 10507, 5979, 12970, 1126, 1901, 5745, 5975, 7402, 5031, 4969, 9180, 4769, 12971, 1265, 1388, 12972, 12973, 2041, 7473, 7466, 2]
+// Dependencies: [5, 32, 19, 7383, 2129, 2065, 5761, 1390, 7385, 7387, 7386, 5972, 1085, 1392, 558, 576, 504, 9161, 9167, 1382, 6071, 7392, 1102, 7406, 7408, 7410, 9185, 12, 1264, 9196, 9157, 7382, 9159, 9197, 2128, 9199, 5980, 12971, 7411, 6858, 12974, 9188, 10508, 5979, 12975, 1126, 1901, 5745, 5975, 7402, 5031, 4969, 9180, 4769, 12976, 1265, 1388, 12977, 12978, 2041, 7473, 7466, 2]
 // Exports: useFetchQuestHomeBounties, useManuallyStartConsoleQuest, useQuestForMemberListSocialEntryPoint, useShouldShowPreviewToolTab
 
 // Module 9166 (hooks/QuestHooks)
@@ -40,11 +40,11 @@ import QuestRewardUtils from "QuestRewardUtils" /* 9185 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
 import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 9196 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 12969 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 12970 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 12971 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10508 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12971 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 12974 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 12975 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 12976 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

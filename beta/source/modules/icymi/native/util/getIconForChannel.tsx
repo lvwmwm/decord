@@ -1,10 +1,10 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16965
+// Function ID: 16966
 // Name: getIconForChannel
 // Dependencies: [1085, 8217, 8224, 8220, 8203, 8211, 8210, 2]
 // Exports: getIconForChannel
 
-// Module 16961 (getIconForChannel)
+// Module 16965 (getIconForChannel)
 import Constants from "Constants" /* 1085 */;
 import TextIcon from "TextIcon" /* 8203 */;
 import ImageIcon from "ImageIcon" /* 8210 */;

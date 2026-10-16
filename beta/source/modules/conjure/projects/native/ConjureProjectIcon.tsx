@@ -1,15 +1,15 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13007
+// Function ID: 13008
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 13003, 6157, 1415, 8229, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 13008, 6157, 1415, 8229, 2]
 
-// Module 13002 (ConjureProjectIcon)
+// Module 13007 (ConjureProjectIcon)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import AppsIcon2 from "AppsIcon" /* 8229 */;
-import useConjureProjectIconDefault from "useConjureProjectIcon" /* 13003 */;
+import useConjureProjectIconDefault from "useConjureProjectIcon" /* 13008 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

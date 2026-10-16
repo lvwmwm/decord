@@ -1,9 +1,9 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12594
+// Function ID: 12595
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 4818, 587, 7572, 8925, 12590, 5419, 11865, 7002, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 4818, 587, 7572, 8925, 12595, 5419, 11867, 7002, 2]
 
-// Module 12589 (usePreviewableMedia)
+// Module 12594 (usePreviewableMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
@@ -11,7 +11,7 @@ import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
 import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
 import inlineStyles from "inlineStyles" /* 7572 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 8925 */;
-import WaveformIcon from "WaveformIcon" /* 12590 */;
+import WaveformIcon from "WaveformIcon" /* 12595 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
@@ -106,7 +106,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.type = tmp13.FILE;
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: nativeDefault.colors.ICON_SUBTLE };
-              let FileIcon = tmp8(11865).FileIcon;
+              let FileIcon = tmp8(11867).FileIcon;
               obj5.icon = metroImportDefault(FileIcon, obj6);
               let str4 = null;
               if (isForward) {

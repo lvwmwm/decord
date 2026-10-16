@@ -1,10 +1,10 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13723
+// Function ID: 13724
 // Name: PromotionStringUtils
 // Dependencies: [4774, 1392, 558, 576, 504, 4769, 6940, 1126, 2128, 2]
 // Exports: getHelpArticleLinkProps
 
-// Module 13718 (PromotionStringUtils)
+// Module 13723 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;

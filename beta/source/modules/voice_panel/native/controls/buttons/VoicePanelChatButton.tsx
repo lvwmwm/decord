@@ -1,14 +1,14 @@
-// Module ID: 17925
-// Function ID: 17926
+// Module ID: 17929
+// Function ID: 17930
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 5092, 587, 558, 576, 11971, 17917, 17860, 17904, 1126, 17926, 8194, 6162, 17918, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 11973, 17921, 17864, 17908, 1126, 17930, 8194, 6162, 17922, 2]
 
-// Module 17925 (VoicePanelChatButton)
+// Module 17929 (VoicePanelChatButton)
 import nativeDefault from "native" /* 587 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import ChatIcon from "ChatIcon" /* 8194 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17904 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 17926 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17908 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 17930 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -38,13 +38,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
   const cResult = obj.c(25);
   ({ props, openTab } = wrapperSpecs);
   wrapperSpecs = wrapperSpecs.wrapperSpecs;
-  const context = react.useContext(connected(11971));
+  const context = react.useContext(connected(11973));
   connected = context.connected;
   const channelId = context.channelId;
   const tmp6 = closure_7();
-  const obj2 = openTab(17917);
+  const obj2 = openTab(17921);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp8 = connected(17860)(channelId);
+  const tmp8 = connected(17864)(channelId);
   const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
   if (cResult[0] === connected) {
     let tmp9;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
                     }
                   }
                   const element = { onPress: tmp9, props, accessibilityLabel: tmp11, children: tmp28 };
-                  const tmp34 = closure_4(connected(17918), element);
+                  const tmp34 = closure_4(connected(17922), element);
                   cResult[21] = tmp9;
                   cResult[22] = props;
                   cResult[23] = tmp28;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
       }
     }
     const obj7 = { fill: backgroundColor, circleRadius: result, cutoutRadius: 8, enableCutout: null != tmp8, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius: 5, scaleToPixelDensity: true };
-    const tmp18 = closure_4(connected(17926), obj7);
+    const tmp18 = closure_4(connected(17930), obj7);
     cResult[4] = backgroundColor;
     cResult[5] = result;
     cResult[6] = null != tmp8;

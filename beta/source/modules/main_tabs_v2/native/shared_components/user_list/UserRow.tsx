@@ -1,9 +1,9 @@
-// Module ID: 10228
-// Function ID: 10229
+// Module ID: 10229
+// Function ID: 10230
 // Name: UserRow
-// Dependencies: [19, 17, 5081, 5440, 7346, 2065, 5108, 4760, 10217, 1085, 21, 5092, 587, 7015, 38, 10229, 10230, 4808, 10231, 7018, 7347, 558, 576, 504, 1200, 5088, 4962, 10235, 6852, 6053, 1126, 10258, 10259, 6196, 5379, 2032, 9317, 8194, 8299, 2000, 8338, 10261, 9405, 5408, 7975, 5628, 8849, 10263, 8762, 10271, 8854, 10272, 6177, 10278, 6180, 2]
+// Dependencies: [19, 17, 5081, 5440, 7346, 2065, 5108, 4760, 10218, 1085, 21, 5092, 587, 7015, 38, 10230, 10231, 4808, 10232, 7018, 7347, 558, 576, 504, 1200, 5088, 4962, 10236, 6852, 6053, 1126, 10259, 10260, 6196, 5379, 2032, 9317, 8194, 8299, 2000, 8338, 10262, 9405, 5408, 7975, 5628, 8849, 10264, 8762, 10272, 8854, 10273, 6177, 10279, 6180, 2]
 
-// Module 10228 (UserRow)
+// Module 10229 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,13 +21,13 @@ import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreator
 import ChatIcon from "ChatIcon" /* 8194 */;
 import PhoneCallIcon from "PhoneCallIcon" /* 9317 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9405 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10230 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10231 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
-import ActionButtonDefault from "ActionButton" /* 10258 */;
-import XLargeIcon from "XLargeIcon" /* 10259 */;
-import CrownIcon2 from "CrownIcon" /* 10261 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10231 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10232 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10236 */;
+import ActionButtonDefault from "ActionButton" /* 10259 */;
+import XLargeIcon from "XLargeIcon" /* 10260 */;
+import CrownIcon2 from "CrownIcon" /* 10262 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

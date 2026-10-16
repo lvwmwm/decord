@@ -1,9 +1,9 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14082
+// Function ID: 14083
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 5088, 6293, 14078, 7023, 7018, 4808, 1265, 4828, 6774, 5379, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 5088, 6293, 14083, 7023, 7018, 4808, 1265, 4828, 6774, 5379, 2]
 
-// Module 14077 (AddFriendById)
+// Module 14082 (AddFriendById)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import ToastUtils from "ToastUtils" /* 4808 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import TextField2 from "TextField" /* 6293 */;
 import FriendsUtils from "FriendsUtils" /* 7023 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 14078 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 14083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

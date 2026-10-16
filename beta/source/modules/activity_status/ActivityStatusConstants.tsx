@@ -1,9 +1,9 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10237
+// Function ID: 10238
 // Name: ActivityStatusConstants
 // Dependencies: [2]
 
-// Module 10236 (ActivityStatusConstants)
+// Module 10237 (ActivityStatusConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activity_status/ActivityStatusConstants.tsx");

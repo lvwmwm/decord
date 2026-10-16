@@ -1,14 +1,14 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16788
+// Function ID: 16789
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 16782, 8154, 8203, 5088, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16787, 8154, 8203, 5088, 2]
 
-// Module 16783 (TypingSubtitle)
+// Module 16788 (TypingSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16782 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16787 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

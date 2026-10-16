@@ -1,14 +1,14 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16460
+// Function ID: 16461
 // Name: useChannelListWidth
-// Dependencies: [558, 10679, 4979, 4818, 587, 1105, 2]
+// Dependencies: [558, 10680, 4979, 4818, 587, 1105, 2]
 
-// Module 16455 (useChannelListWidth)
+// Module 16460 (useChannelListWidth)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import useToken from "useToken" /* 4818 */;
 import useChatLayoutDefault from "useChatLayout" /* 4979 */;
-import useDrawerWidth from "useDrawerWidth" /* 10679 */;
+import useDrawerWidth from "useDrawerWidth" /* 10680 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

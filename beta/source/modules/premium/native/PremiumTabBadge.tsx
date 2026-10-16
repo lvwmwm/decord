@@ -1,9 +1,9 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15269
+// Function ID: 15270
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4775, 1392, 7152, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10095, 8967, 1200, 15265, 7165, 8085, 4769, 4938, 2049, 504, 7100, 8081, 8080, 13711, 1126, 1382, 5391, 1105, 2]
+// Dependencies: [32, 19, 17, 4775, 1392, 7152, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10096, 8967, 1200, 15270, 7165, 8085, 4769, 4938, 2049, 504, 7100, 8081, 8080, 13716, 1126, 1382, 5391, 1105, 2]
 
-// Module 15264 (PremiumTabBadge)
+// Module 15269 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -28,8 +28,8 @@ import ReferralProgramUtils from "ReferralProgramUtils" /* 8080 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8081 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8085 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8967 */;
-import MarketingComponentType from "MarketingComponentType" /* 10095 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13711 */;
+import MarketingComponentType from "MarketingComponentType" /* 10096 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
@@ -51,7 +51,7 @@ let obj9;
 let tmp;
 let tmp5;
 const Text_Text = tmp(5088);
-const AssetRegistryDefault = tmp5(15265);
+const AssetRegistryDefault = tmp5(15270);
 const View = react_native.View;
 let closure_6 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 const Gradients = ColorConstants.Gradients;
@@ -196,7 +196,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfferB
     if (acked) {
       let tmp16;
       if (cResult[5] !== tmp5.icon) {
-        const obj4 = { source: tmp10(15265), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
+        const obj4 = { source: tmp10(15270), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
         const Icon = tmp(1200).Icon;
         const tmp18 = metroImportAll(Icon, obj4);
         cResult[5] = tmp5.icon;
@@ -368,7 +368,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumTabBadge(
       const tmpResult12 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmpResult12.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmpResult13 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10095).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10096).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmpResult14 = useSelectedDismissibleContent;
@@ -832,7 +832,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumTabBadge(
       const tmpResult12 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmpResult12.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmpResult13 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10095).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10096).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmpResult14 = useSelectedDismissibleContent;

@@ -1,10 +1,10 @@
-// Module ID: 10871
-// Function ID: 10872
+// Module ID: 10872
+// Function ID: 10873
 // Name: confirmActivityChangeAlert
 // Dependencies: [4760, 1390, 5421, 5299, 1126, 2031, 2]
 // Exports: default
 
-// Module 10871 (confirmActivityChangeAlert)
+// Module 10872 (confirmActivityChangeAlert)
 import intl7 from "intl" /* 1126 */;
 import StringUtils from "StringUtils" /* 2031 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;

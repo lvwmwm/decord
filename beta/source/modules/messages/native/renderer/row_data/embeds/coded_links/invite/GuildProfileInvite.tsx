@@ -1,10 +1,10 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13527
+// Function ID: 13528
 // Name: GuildProfileInvite
-// Dependencies: [32, 2129, 9605, 1085, 7419, 7884, 6124, 4969, 587, 2079, 8860, 8858, 1415, 2032, 1898, 1126, 11344, 8866, 7420, 11, 2123, 6884, 1103, 7746, 7886, 2]
+// Dependencies: [32, 2129, 9606, 1085, 7419, 7884, 6124, 4969, 587, 2079, 8860, 8858, 1415, 2032, 1898, 1126, 11346, 8866, 7420, 11, 2123, 6884, 1103, 7746, 7886, 2]
 // Exports: createGuildProfileInvite
 
-// Module 13522 (GuildProfileInvite)
+// Module 13527 (GuildProfileInvite)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,7 +16,7 @@ import RoleIconUtils from "RoleIconUtils" /* 6884 */;
 import Constants2 from "Constants" /* 7419 */;
 import react_native from "react-native" /* 7746 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9605 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9606 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import size from "module_2" /* 2 */;
@@ -147,24 +147,24 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   let guildProfileCTAType = null;
   if (null != guildProfileFromInvite) {
-    const tmp5Result13 = tmp5(11344);
+    const tmp5Result13 = tmp5(11346);
     guildProfileCTAType = tmp5Result13.getGuildProfileCTAType(guildProfileFromInvite, invite.code);
   }
-  if (tmp5(11344).CTATypes.IS_MEMBER === guildProfileCTAType) {
+  if (tmp5(11346).CTATypes.IS_MEMBER === guildProfileCTAType) {
     const intl7 = tmp5(1126).intl;
     stringResult = intl7.string(tmp5(1126).t.IRoQXr);
-  } else if (tmp5(11344).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
+  } else if (tmp5(11346).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
     const intl6 = tmp5(1126).intl;
     stringResult = intl6.string(tmp5(1126).t["4yfIDk"]);
-  } else if (tmp5(11344).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
+  } else if (tmp5(11346).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
     const intl5 = tmp5(1126).intl;
     stringResult = intl5.string(tmp5(1126).t["7XdMW2"]);
-  } else if (tmp5(11344).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
+  } else if (tmp5(11346).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
     const intl4 = tmp5(1126).intl;
     stringResult = intl4.string(tmp5(1126).t.MMlhsr);
   } else {
-    if (tmp5(11344).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
-      const JOIN_VIA_INVITE = tmp5(11344).CTATypes.JOIN_VIA_INVITE;
+    if (tmp5(11346).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
+      const JOIN_VIA_INVITE = tmp5(11346).CTATypes.JOIN_VIA_INVITE;
     }
     const intl3 = tmp5(1126).intl;
     stringResult = intl3.string(tmp5(1126).t.XpeFYr);

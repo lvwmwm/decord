@@ -1,9 +1,9 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10457
+// Function ID: 10458
 // Name: LongPressForumPostActionSheet
-// Dependencies: [19, 4751, 4752, 7006, 502, 2087, 6035, 1085, 2072, 21, 10330, 10341, 1126, 10342, 10344, 6652, 6800, 5036, 7897, 8768, 5051, 10259, 10457, 8218, 9719, 9687, 11, 6879, 7092, 9692, 10459, 5056, 10461, 2000, 5038, 9378, 10346, 10463, 10348, 10466, 10333, 5299, 5049, 7174, 1200, 10012, 6886, 4808, 558, 576, 504, 7004, 6972, 9322, 2041, 5421, 10468, 6159, 1628, 10469, 6895, 6899, 2]
+// Dependencies: [19, 4751, 4752, 7006, 502, 2087, 6035, 1085, 2072, 21, 10331, 10342, 1126, 10343, 10345, 6652, 6800, 5036, 7897, 8768, 5051, 10260, 10458, 8218, 9720, 9688, 11, 6879, 7092, 9693, 10460, 5056, 10462, 2000, 5038, 9378, 10347, 10464, 10349, 10467, 10334, 5299, 5049, 7174, 1200, 10013, 6886, 4808, 558, 576, 504, 7004, 6972, 9322, 2041, 5421, 10469, 6159, 1628, 10470, 6895, 6899, 2]
 
-// Module 10456 (LongPressForumPostActionSheet)
+// Module 10457 (LongPressForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import intl16 from "intl" /* 1126 */;
@@ -20,11 +20,11 @@ import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7897 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9687 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9692 */;
-import markChannelUnreadDefault from "markChannelUnread" /* 10344 */;
-import threadActionSheets from "threadActionSheets" /* 10466 */;
-import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 10468 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9688 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9693 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 10345 */;
+import threadActionSheets from "threadActionSheets" /* 10467 */;
+import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 10469 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
@@ -238,7 +238,7 @@ function getActionSheetButtons(thread) {
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
                       const obj2 = { thread, parentChannel, canManageThread };
-                      obj.openLazy(asyncRequire(10461, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
+                      obj.openLazy(asyncRequire(10462, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
                     }
           };
           intl9 = tmp5(tmp2[12]).intl;
@@ -283,7 +283,7 @@ function getActionSheetButtons(thread) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { guildId: thread.getGuildId(), channelId: thread.id };
-            const tmp2 = asyncRequire(10463, dependencyMap.paths);
+            const tmp2 = asyncRequire(10464, dependencyMap.paths);
             const combined = "muteSettings" + thread.id;
             openLazy(tmp2, combined, obj);
           };
@@ -626,7 +626,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   }
   const tmpResult15 = tmp(504);
   const stateFromStores3 = tmpResult15.useStateFromStores(tmp18, tmp19);
-  const tmpResult16 = tmp(10344);
+  const tmpResult16 = tmp(10345);
   const canMarkChannelUnread = tmpResult16.useCanMarkChannelUnread(thread);
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -762,7 +762,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     }
   }
   const tmp37 = onClose(5421)(thread);
-  const tmp38 = onClose(10468)(thread, "ForumPostLongPressActionSheet");
+  const tmp38 = onClose(10469)(thread, "ForumPostLongPressActionSheet");
   if (null != stateFromStores) {
     class O {
       constructor() {
@@ -894,7 +894,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     cResult[43] = thread;
     cResult[44] = tmp50;
   }
-  tmp45 = jsx(tmp(10469).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
+  tmp45 = jsx(tmp(10470).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
   cResult[46] = tmp37;
   cResult[47] = tmp39;
   cResult[48] = tmp45;
@@ -922,7 +922,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const items3 = [ReadStateStore];
   const obj4 = thread(504);
   const stateFromStores3 = obj4.useStateFromStores(items3, () => ReadStateStore.hasUnreadOrMentions(thread.id));
-  const obj5 = thread(10344);
+  const obj5 = thread(10345);
   const canMarkChannelUnread = obj5.useCanMarkChannelUnread(thread);
   const items4 = [LurkingStore];
   const obj6 = thread(504);
@@ -973,7 +973,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const obj17 = {
     showGradient: true,
     startExpanded: tmpResult.isMetaQuest(),
-    header: tmp20(tmp(10469).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
+    header: tmp20(tmp(10470).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
     children: arr8.map((buttons) => {
       buttons = buttons.buttons;
       const sectionKey = buttons.sectionKey;

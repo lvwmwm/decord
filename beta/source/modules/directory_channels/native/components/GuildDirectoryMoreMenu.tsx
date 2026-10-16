@@ -1,18 +1,18 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12013
+// Function ID: 12014
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [109, 19, 21, 558, 576, 12005, 12012, 5300, 1126, 12014, 1200, 7717, 9719, 5049, 9570, 7569, 9237, 587, 9358, 2]
+// Dependencies: [109, 19, 21, 558, 576, 12007, 12014, 5300, 1126, 12016, 1200, 7717, 9720, 5049, 9571, 7569, 9237, 587, 9358, 2]
 
-// Module 12011 (GuildDirectoryMoreMenu)
+// Module 12013 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import ReportModals from "ReportModals" /* 7717 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12005 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12012 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12014 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12007 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12014 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -230,7 +230,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp11[0] = tmp8;
-      tmp11[1] = tmp(9719).PencilIcon;
+      tmp11[1] = tmp(9720).PencilIcon;
       tmp11[2] = tmp5;
       cResult[14] = tmp5;
       cResult[15] = tmp11;
@@ -382,7 +382,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp21[0] = tmp18;
-      tmp21[1] = tmp(9570).FlagIcon;
+      tmp21[1] = tmp(9571).FlagIcon;
       tmp21[3] = tmp7;
       cResult[20] = tmp7;
       cResult[21] = tmp21;
@@ -423,7 +423,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   if (tmp2.canEdit) {
     let obj = {
       label: intl.string(entry(1126).t.XnuOvN),
-      IconComponent: entry(9719).PencilIcon,
+      IconComponent: entry(9720).PencilIcon,
       action: function handleEdit() {
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           const obj2 = { entry };
@@ -479,7 +479,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
     const push3 = items.push;
     const obj3 = {
       label: intl3.string(entry(1126).t.Aen9eh),
-      IconComponent: entry(9570).FlagIcon,
+      IconComponent: entry(9571).FlagIcon,
       variant: "destructive",
       action: function handleReport() {
           const obj = ReportModals;

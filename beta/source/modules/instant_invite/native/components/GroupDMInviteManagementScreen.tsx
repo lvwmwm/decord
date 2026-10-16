@@ -1,9 +1,9 @@
-// Module ID: 10288
-// Function ID: 10289
+// Module ID: 10289
+// Function ID: 10290
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8494, 9693, 1085, 21, 5092, 558, 576, 1295, 5396, 12, 587, 10289, 6727, 1200, 10307, 10308, 1126, 6201, 1273, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 8494, 9694, 1085, 21, 5092, 558, 576, 1295, 5396, 12, 587, 10290, 6727, 1200, 10308, 10309, 1126, 6201, 1273, 6688, 2]
 
-// Module 10288 (GroupDMInviteManagementScreen)
+// Module 10289 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import InviteRecord from "InviteRecord" /* 8494 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9693 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9694 */;
 import Constants from "Constants" /* 1085 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -65,9 +65,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   if (cResult[1] !== channelId) {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154733 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154734 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142833 */ });
         return;
       }
     }
@@ -77,9 +77,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154733 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154734 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142833 */ });
         return;
       }
     }
@@ -91,9 +91,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
     let tmp16;
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154733 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154734 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142833 */ });
         return;
       }
     }
@@ -237,7 +237,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       const EmptyState = tmp(1200).EmptyState;
       const intl = tmp(1126).intl;
       const intl2 = tmp(1126).intl;
-      tmp25 = <EmptyState lightSource={tmp11(10307)} darkSource={tmp11(10308)} title={intl.string(tmp(1126).t["+nLJkZ"])} body={intl2.string(tmp(1126).t.F53CAc)} />;
+      tmp25 = <EmptyState lightSource={tmp11(10308)} darkSource={tmp11(10309)} title={intl.string(tmp(1126).t["+nLJkZ"])} body={intl2.string(tmp(1126).t.F53CAc)} />;
     } else {
       class P {
         constructor(arg0) {
@@ -376,7 +376,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
     const EmptyState = channelId(1200).EmptyState;
     const intl = channelId(1126).intl;
     const intl2 = channelId(1126).intl;
-    tmp16 = <EmptyState lightSource={tmp5(10307)} darkSource={tmp5(10308)} title={intl.string(channelId(1126).t["+nLJkZ"])} body={intl2.string(channelId(1126).t.F53CAc)} />;
+    tmp16 = <EmptyState lightSource={tmp5(10308)} darkSource={tmp5(10309)} title={intl.string(channelId(1126).t["+nLJkZ"])} body={intl2.string(channelId(1126).t.F53CAc)} />;
   } else {
     tmp16 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp13} initialNumToRender={10} windowSize={first2} />;
   }

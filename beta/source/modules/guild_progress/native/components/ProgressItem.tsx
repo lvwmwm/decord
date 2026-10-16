@@ -1,9 +1,9 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12219
+// Function ID: 12220
 // Name: ProgressItem
 // Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5107, 8575, 2]
 
-// Module 12214 (ProgressItem)
+// Module 12219 (ProgressItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

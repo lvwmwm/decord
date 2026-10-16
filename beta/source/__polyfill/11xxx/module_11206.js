@@ -1,58 +1,44 @@
 // Module ID: 11206
 // Function ID: 11207
-// Dependencies: [11207, 11208, 11211]
-// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
+// Dependencies: [11207, 11214, 11215, 11238, 11210, 11227]
+// Exports: registerSpanErrorInstrumentation
 
 // Module 11206
 import _mod11207 from "module_11207" /* 11207 */;
-import _mod11211 from "module_11211" /* 11211 */;
+import _mod11214 from "module_11214" /* 11214 */;
+import _mod11215 from "module_11215" /* 11215 */;
+import _mod11227 from "module_11227" /* 11227 */;
+import _mod11238 from "module_11238" /* 11238 */;
 
-let closure_2 = {};
-let closure_3 = {};
-
-export const addHandler = function addHandler(arg0, arg1) {
-  const tmp2 = closure_2[arg0] || [];
-  closure_2[arg0] = tmp2;
-  const arr = closure_2[arg0];
-  arr.push(arg1);
-};
-export const maybeInstrument = function maybeInstrument(arg0, fn) {
-  if (!closure_3[arg0]) {
-    tmp[arg0] = true;
-    try {
-      fn();
-    } catch (tmp4) {
-      const tmp5 = require;
-      if (_mod11207.DEBUG_BUILD) {
-        const logger = tmp5(11208).logger;
-        const _HermesInternal = HermesInternal;
-        logger.error("Error while instrumenting " + arg0, tmp4);
-      }
-    }
+function errorCallback() {
+  const obj = _mod11215;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const tmpResult = _mod11215;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
   }
-};
-export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
-  const keys = Object.keys(closure_2);
-  const item = keys.forEach((item) => {
-    closure_1_2[item] = undefined;
-  });
-};
-export const triggerHandlers = function triggerHandlers(arg0, arg1) {
-  if (arg0 && closure_2[arg0]) {
-    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
-    const nextResult = iter.next();
-    if (iter !== undefined) {
-      try {
-        nextResult(arg1);
-      } catch (tmp11) {
-        if (_mod11207.DEBUG_BUILD) {
-          const logger = tmp12(11208).logger;
-          const error = logger.error;
-          const _HermesInternal = HermesInternal;
-          const tmp12Result = _mod11211;
-          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
-        }
-      }
+  if (rootSpan) {
+    if (_mod11238.DEBUG_BUILD) {
+      const logger = tmp(11210).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");
     }
+    const setStatus = rootSpan.setStatus;
+    const obj2 = { code: _mod11227.SPAN_STATUS_ERROR, message: "internal_error" };
+    setStatus(obj2);
+  }
+}
+let c2 = false;
+errorCallback.tag = "sentry_tracingErrorCallback";
+
+export const registerSpanErrorInstrumentation = function registerSpanErrorInstrumentation() {
+  const tmp = c2;
+  if (!tmp) {
+    c2 = true;
+    const obj = _mod11207;
+    const result = obj.addGlobalErrorInstrumentationHandler(errorCallback);
+    const obj2 = _mod11214;
+    const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
   }
 };
