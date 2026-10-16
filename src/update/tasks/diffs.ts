@@ -18,8 +18,15 @@ interface DiffOpts<TOld, TNew> {
 	getLabel?: (key: string, val: TNew) => string;
 	getOldSource?: (key: string, val: TOld) => string;
 	getOldLabel?: (key: string, val: TOld) => string;
-	isRename: (newKey: string, oldVal: TOld, newVal: TNew) => boolean;
+	isRename: (newKey: string, oldKey: string, oldVal: TOld, newVal: TNew) => boolean;
 	isChanged?: (oldVal: TOld, newVal: TNew) => boolean;
+}
+
+function tokenSimilarity(a: string, b: string) {
+	const left = new Set(a.split("_"));
+	const right = new Set(b.split("_"));
+	const shared = [...left].filter((token) => right.has(token)).length;
+	return shared / new Set([...left, ...right]).size;
 }
 
 function diffEntries<TOld, TNew>(
@@ -34,7 +41,7 @@ function diffEntries<TOld, TNew>(
 		const oldVal = oldEntries[name];
 		if (oldVal === undefined) {
 			const oldName = Object.entries(oldEntries).find(
-				([key, val]) => !(key in newEntries) && opts.isRename(name, val, newVal),
+				([key, val]) => !((key in newEntries) || renamed.has(key)) && opts.isRename(name, key, val, newVal),
 			)?.[0];
 
 			if (!oldName) {
@@ -109,7 +116,7 @@ async function diffRaw(channel: ChannelContext) {
 
 	return diffEntries(oldRaw, newRaw, {
 		getSource: (_, val) => val,
-		isRename: (newKey, oldVal, newVal) => !(newKey in newRaw) && oldVal === newVal,
+		isRename: (_newKey, _oldKey, oldVal, newVal) => oldVal === newVal,
 		isChanged: (oldVal, newVal) => oldVal.toLowerCase() !== newVal.toLowerCase(),
 	});
 }
@@ -135,13 +142,12 @@ async function diffSemantic(channel: ChannelContext) {
 				.map(([color]) => color)
 				.join(","),
 		getLabel: (_, val) => getSemanticLabel(val),
-		isRename: (newKey, oldVal, newVal) => {
+		isRename: (newKey, oldKey, oldVal, newVal) => {
 			const themes = Object.keys(newVal).length;
-			return (
-				!(newKey in newSemantic) &&
+			const sameColors =
 				Object.keys(oldVal).length === themes &&
-				Object.entries(oldVal).every(([skey, sval]) => sval[0] === newVal[skey]?.[0])
-			);
+				Object.entries(oldVal).every(([theme, [color]]) => color === newVal[theme]?.[0]);
+			return sameColors || tokenSimilarity(oldKey, newKey) >= 0.5;
 		},
 	});
 
@@ -190,7 +196,7 @@ async function diffIcons(channel: ChannelContext) {
 		getLabel: (_, val) => val.hash.slice(0, 8),
 		getOldSource: (_, val) => join(iconDir.old, val.file),
 		getOldLabel: (_, val) => val.hash.slice(0, 8),
-		isRename: (newKey, oldVal, newVal) => !(newKey in newIcons) && oldVal.hash === newVal.hash,
+		isRename: (_newKey, _oldKey, oldVal, newVal) => oldVal.hash === newVal.hash,
 		isChanged: (oldVal, newVal) => oldVal.hash !== newVal.hash,
 	});
 }
