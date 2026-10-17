@@ -1,19 +1,19 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16018
+// Function ID: 16019
 // Name: SettingsClipsScreen
-// Dependencies: [19, 8214, 21, 558, 576, 11003, 15662, 2]
+// Dependencies: [19, 8260, 21, 558, 576, 11065, 15728, 2]
 
-// Module 15952 (SettingsClipsScreen)
+// Module 16018 (SettingsClipsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import SettingLayoutDefault from "SettingLayout" /* 15662 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingLayoutDefault from "SettingLayout" /* 15728 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingBuilders = tmp(11003);
+const SettingBuilders = tmp(11065);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipsSettingsScreen() {

@@ -1,10 +1,10 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15918
+// Function ID: 15919
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1392, 7479, 7480, 1087, 7703, 21, 5154, 587, 558, 576, 7959, 4867, 1128, 12585, 573, 15853, 1267, 15854, 5118, 15855, 2002, 5440, 5442, 13913, 2571, 15858, 6153, 1386, 12582, 1630, 7720, 14809, 2]
+// Dependencies: [19, 17, 1392, 7525, 7526, 1087, 7749, 21, 5191, 587, 558, 576, 8005, 4903, 1128, 12650, 573, 15919, 1267, 15920, 5155, 15921, 2002, 5477, 5479, 13981, 2589, 15924, 6190, 1386, 12647, 1630, 7766, 14878, 2]
 // Exports: FamilyCenterParentQRCodeButton
 
-// Module 15852 (FamilyCenterBannerButton)
+// Module 15918 (FamilyCenterBannerButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,19 +12,19 @@ import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import _modDef2571 from "module_2571" /* 2571 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import components_Button_Button from "components/Button/Button" /* 5442 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7703 */;
-import useUserLinks from "useUserLinks" /* 7959 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15854 */;
-import QrCodeIcon from "QrCodeIcon" /* 15858 */;
+import _modDef2589 from "module_2589" /* 2589 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
+import useUserLinks from "useUserLinks" /* 8005 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15920 */;
+import QrCodeIcon from "QrCodeIcon" /* 15924 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7480 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const NativePermissionUtilsDefault = tmp(7720);
+const NativePermissionUtilsDefault = tmp(7766);
 function FamilyCenterTeenQRCodeButtonInner() {
   let currentUser;
   let getLinkCode;
@@ -101,7 +101,7 @@ function FamilyCenterTeenQRCodeButtonInner() {
       obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
       const obj4 = { linkCode: tmp, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(15855, dependencyMap.paths), metroImportDefault, obj4);
+      obj3.openLazy(asyncRequire(15921, dependencyMap.paths), metroImportDefault, obj4);
     }
   }, items4);
   const obj8 = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container, children: items5 };
@@ -256,14 +256,14 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     return tmp4;
   }
   let tmp = handleQrCodeScanSucess;
-  let obj = handleQrCodeScanSucess(7959);
+  let obj = handleQrCodeScanSucess(8005);
   if (obj.useHasMaxConnections()) {
     const tmp6 = null;
     return null;
   } else {
     let tmp4 = closure_17;
     let obj2 = {
-      text: intl.string(_modDef2571.z4a9HP),
+      text: intl.string(_modDef2589.z4a9HP),
       onPress() {
           let onScanSuccess;
           let tmp = importDefault;

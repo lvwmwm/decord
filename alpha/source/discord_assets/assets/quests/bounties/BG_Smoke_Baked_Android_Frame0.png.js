@@ -1,8 +1,8 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16245
+// Function ID: 16246
 // Dependencies: [2]
 
-// Module 16179
+// Module 16245
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/BG_Smoke_Baked_Android_Frame0.png.js");

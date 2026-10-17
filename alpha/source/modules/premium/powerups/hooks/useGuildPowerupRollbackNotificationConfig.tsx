@@ -1,15 +1,15 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13180
+// Function ID: 13181
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5066, 13116, 2052, 1128, 2603, 558, 576, 504, 5070, 13117, 2]
+// Dependencies: [5103, 13181, 2052, 1128, 2621, 558, 576, 504, 5107, 13182, 2]
 // Exports: getGuildThemeRollbackNotificationConfig
 
-// Module 13115 (useGuildPowerupRollbackNotificationConfig)
+// Module 13180 (useGuildPowerupRollbackNotificationConfig)
 import intl3 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
-import _modDef2603 from "module_2603" /* 2603 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13116 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5066 */;
+import _modDef2621 from "module_2621" /* 2621 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13181 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   if (null != storeRemovalDate) {
     if (null != storeRemovalDate) {
       const tmp3 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2603["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2603.jd8fki, obj5) };
+      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2621["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2621.jd8fki, obj5) };
       intl = intl3.intl;
       obj2 = { dateString: tmp3 };
       intl2 = intl3.intl;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   let tmp8;
   if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 5070).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp8 = stateFromStores.allPowerups[tmp(undefined, 5107).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmpResult2 = require("guildTheme");
   const shouldShowGuildThemeRollback = tmpResult2.useShouldShowGuildThemeRollback(arg0, arg1);
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
       tmp12 = null;
       if (null != storeRemovalDate) {
         const tmp14 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2603["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2603.jd8fki, obj4) };
+        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2621["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2621.jd8fki, obj4) };
         intl = tmp(1128).intl;
         obj3 = { dateString: tmp14 };
         intl2 = tmp(1128).intl;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
       tmp6 = null;
       if (null != storeRemovalDate) {
         const tmp8 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2603["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2603.jd8fki, obj4) };
+        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2621["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2621.jd8fki, obj4) };
         intl = tmp(1128).intl;
         obj3 = { dateString: tmp8 };
         intl2 = tmp(1128).intl;

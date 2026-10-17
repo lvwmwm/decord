@@ -1,22 +1,22 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 17036
+// Function ID: 17037
 // Name: DevWidget
-// Dependencies: [19, 7627, 585, 21, 5154, 587, 558, 576, 4909, 10616, 12263, 6559, 5441, 5445, 15532, 16574, 6409, 16977, 16573, 2]
+// Dependencies: [19, 7673, 585, 21, 5191, 587, 558, 576, 4945, 10679, 12328, 6612, 5478, 5482, 15595, 16638, 6462, 17037, 16637, 2]
 
-// Module 16976 (DevWidget)
+// Module 17036 (DevWidget)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 585 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import spring from "spring" /* 5441 */;
-import springPresets from "springPresets" /* 5445 */;
-import Pressables from "Pressables" /* 6409 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 16574 */;
-import VEVOODefault from "VEVOO" /* 16977 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
+import Pressables from "Pressables" /* 6462 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 16638 */;
+import VEVOODefault from "VEVOO" /* 17037 */;
 import react from "react" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7627 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7673 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

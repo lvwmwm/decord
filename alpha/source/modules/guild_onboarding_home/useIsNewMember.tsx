@@ -1,13 +1,13 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7203
+// Function ID: 7204
 // Name: useIsNewMember
-// Dependencies: [2121, 2128, 4795, 1405, 1104, 558, 576, 504, 2]
+// Dependencies: [2121, 2128, 4831, 1405, 1104, 558, 576, 504, 2]
 // Exports: getIsNewMember
 
-// Module 7150 (useIsNewMember)
+// Module 7203 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1104 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4795 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
 import ImpersonateStore from "ImpersonateStore" /* 2121 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

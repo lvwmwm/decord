@@ -1,20 +1,20 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8938
+// Function ID: 8939
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2068, 2090, 2074, 8742, 21, 5154, 587, 6153, 558, 576, 1128, 1202, 7002, 6409, 5150, 8886, 504, 8802, 8893, 7717, 8896, 5442, 7039, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 2090, 2074, 8788, 21, 5191, 587, 6190, 558, 576, 1128, 1202, 7055, 6462, 5187, 8932, 504, 8848, 8939, 7763, 8942, 5479, 7092, 2]
 
-// Module 8892 (StartEventModal)
+// Module 8938 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
-import Pressables from "Pressables" /* 6409 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7002 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8742 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8886 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import Pressables from "Pressables" /* 6462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7055 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8788 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8932 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

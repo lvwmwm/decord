@@ -1,17 +1,17 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16679
+// Function ID: 16680
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 4998, 10574, 2066, 2053, 2049, 11, 558, 576, 504, 1104, 4997, 2059, 2]
+// Dependencies: [19, 5034, 10637, 2066, 2053, 2049, 11, 558, 576, 504, 1104, 5033, 2059, 2]
 
-// Module 16615 (toggleDismissibleContentDismissState)
+// Module 16679 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 2059 */;
 import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 2066 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10574 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10637 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = tmp(4997);
+  const tmpResult2 = tmp(5033);
   const result = tmpResult2.useIsDismissibleContentDismissed_UNSAFE(arg0, tmp8);
   dependencyMap = result;
   if (cResult[4] === arg0) {

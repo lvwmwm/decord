@@ -1,24 +1,24 @@
-// Module ID: 6408
-// Function ID: 6409
+// Module ID: 6461
+// Function ID: 6462
 // Name: AnimatedPressableHighlight
-// Dependencies: [109, 19, 17, 21, 4909, 6409, 558, 576, 6411, 4877, 587, 1384, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 6462, 558, 576, 6464, 4913, 587, 1384, 2]
 
-// Module 6408 (AnimatedPressableHighlight)
+// Module 6461 (AnimatedPressableHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6409 */;
+import Pressables from "Pressables" /* 6462 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(4877);
-const useIOSPressEffects = tmp(6411);
+const useToken = tmp(4913);
+const useIOSPressEffects = tmp(6464);
 let closure_3 = ["children"];
 let closure_4 = ["children"];
 const Pressable = react_native.Pressable;

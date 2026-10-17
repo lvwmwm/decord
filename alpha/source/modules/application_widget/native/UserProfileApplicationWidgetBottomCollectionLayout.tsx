@@ -1,17 +1,17 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11812
+// Function ID: 11813
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 11657, 5091, 11744, 5150, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11719, 5128, 11806, 5187, 2]
 
-// Module 11750 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 11812 (UserProfileApplicationWidgetBottomCollectionLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import _mod11657 from "module_11657" /* 11657 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import _mod11719 from "module_11719" /* 11719 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,9 +115,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
             }
             if ("value" === tmp10.status) {
               const obj4 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
-              tmp23 = React3(tmp(5150).Text, obj4);
+              tmp23 = React3(tmp(5187).Text, obj4);
             } else {
-              tmp23 = React3(tmp(11744).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+              tmp23 = React3(tmp(11806).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
             }
             cResult[15] = tmp10.status;
             cResult[16] = tmp10.text;
@@ -126,9 +126,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
           }
           if ("value" === tmp8.status) {
             const obj5 = { variant: "text-xs/medium", lineClamp: 2, children: tmp8.text };
-            tmp19 = React3(tmp(5150).Text, obj5);
+            tmp19 = React3(tmp(5187).Text, obj5);
           } else {
-            tmp19 = React3(tmp(11744).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+            tmp19 = React3(tmp(11806).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
           }
           cResult[12] = tmp8.status;
           cResult[13] = tmp8.text;
@@ -141,28 +141,28 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
           tmp14 = React3(FastImageDefault, obj6);
         } else {
           const obj8 = { style: tmp4.itemImage };
-          tmp14 = React3(tmp(11744).ImageSkeleton, obj8);
+          tmp14 = React3(tmp(11806).ImageSkeleton, obj8);
         }
         cResult[9] = tmp6;
         cResult[10] = tmp4.itemImage;
         cResult[11] = tmp14;
         tmp12 = tmp14;
       }
-      const tmpResult = _mod11657;
+      const tmpResult = _mod11719;
       const singleStringOrSkeleton = tmpResult.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
       cResult[6] = componentConfig;
       cResult[7] = resolveFieldValue;
       cResult[8] = singleStringOrSkeleton;
       tmp10 = singleStringOrSkeleton;
     }
-    const tmpResult2 = _mod11657;
+    const tmpResult2 = _mod11719;
     const singleStringOrSkeleton1 = tmpResult2.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
     cResult[3] = componentConfig;
     cResult[4] = resolveFieldValue;
     cResult[5] = singleStringOrSkeleton1;
     tmp8 = singleStringOrSkeleton1;
   }
-  const items2 = [_mod11657.ResolvedValueType.MEDIA];
+  const items2 = [_mod11719.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items2);
   cResult[0] = resolveFieldValue;
   cResult[1] = image;
@@ -184,11 +184,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [_mod11657.ResolvedValueType.MEDIA];
+  const items = [_mod11719.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod11657;
+  const obj = _mod11719;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  const obj2 = _mod11657;
+  const obj2 = _mod11719;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   const obj3 = { style: tmp.item, children: items1 };
   if (null != fieldValue) {
@@ -198,23 +198,23 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
     tmp12 = React3;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React3(tmp3(11744).ImageSkeleton, obj6);
+    tmp11 = React3(tmp3(11806).ImageSkeleton, obj6);
     tmp12 = React3;
   }
   items1 = [tmp11, ];
   const obj7 = { style: tmp.itemContent, children: items2 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    tmp12Result = tmp12(tmp3(5150).Text, obj8);
+    tmp12Result = tmp12(tmp3(5187).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(11744).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(11806).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    tmp12Result2 = tmp12(tmp3(5150).Text, obj9);
+    tmp12Result2 = tmp12(tmp3(5187).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(11744).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(11806).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   items1[1] = hasOwnProperty(View, obj7);

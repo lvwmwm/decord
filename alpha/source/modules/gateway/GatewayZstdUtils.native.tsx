@@ -1,11 +1,11 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14726
+// Function ID: 14727
 // Name: react-native
-// Dependencies: [14659, 2]
+// Dependencies: [14727, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 14658 (react-native)
-import react_nativeDefault from "react-native" /* 14659 */;
+// Module 14726 (react-native)
+import react_nativeDefault from "react-native" /* 14727 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gateway/GatewayZstdUtils.native.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9429
+// Function ID: 9430
 // Name: premium_tab
-// Dependencies: [32, 1212, 9362, 2]
+// Dependencies: [32, 1212, 9426, 2]
 
-// Module 9365 (premium_tab)
+// Module 9429 (premium_tab)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9362 */;
+import localized_string from "localized_string" /* 9426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -31,14 +31,14 @@ class PremiumTab$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumTab", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { badgeLabel: "", acknowledgedBadgeLabel: "", showHoverGradient: false, deeplinkSection: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

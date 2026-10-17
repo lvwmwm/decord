@@ -1,13 +1,13 @@
-// Module ID: 5168
-// Function ID: 5169
+// Module ID: 5205
+// Function ID: 5206
 // Name: ChannelRTCActionCreators
-// Dependencies: [1087, 584, 1267, 5169, 1123, 2]
+// Dependencies: [1087, 584, 1267, 5206, 1123, 2]
 
-// Module 5168 (ChannelRTCActionCreators)
+// Module 5205 (ChannelRTCActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -38,20 +38,20 @@ let obj = {
     const obj2 = { type: "CHANNEL_RTC_RETURN_PARTICIPANT", channelId, participantId };
     obj.dispatch(obj2);
   },
-  updateLayout(channelId, video_layout) {
+  updateLayout(channelId, NO_CHAT) {
     let APP = arg2;
     if (arg2 === undefined) {
       APP = constants.APP;
     }
     const track = AnalyticsUtilsDefault.track;
     const VIDEO_LAYOUT_TOGGLED = constants2.VIDEO_LAYOUT_TOGGLED;
-    const obj = { video_layout };
+    const obj = { video_layout: NO_CHAT };
     AnalyticsUtilsDefault;
     const obj2 = AppAnalyticsUtils;
     const merged = Object.assign(obj2.collectVoiceAnalyticsMetadata(channelId));
     track(VIDEO_LAYOUT_TOGGLED, obj);
     const obj3 = DispatcherDefault;
-    const obj4 = { type: "CHANNEL_RTC_UPDATE_LAYOUT", channelId, layout: video_layout, appContext: APP };
+    const obj4 = { type: "CHANNEL_RTC_UPDATE_LAYOUT", channelId, layout: NO_CHAT, appContext: APP };
     obj3.dispatch(obj4);
   },
   toggleParticipants(channelId, participantsOpen) {

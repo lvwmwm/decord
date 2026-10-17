@@ -1,14 +1,14 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10880
+// Function ID: 10881
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 558, 576, 5091, 10816, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 5128, 10881, 2]
 
-// Module 10815 (BadgeCatalogIcon)
+// Module 10880 (BadgeCatalogIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10816 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10881 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let _require, tmp;
 
-const f106530 = (item) => null != item;
+const f106865 = (item) => null != item;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -35,7 +35,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   if (cResult[0] !== badge) {
     const items = [, , ];
     ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
-    const found = items.filter(f106530);
+    const found = items.filter(f106865);
     const joined = found.join("|");
     cResult[0] = badge;
     cResult[1] = joined;
@@ -65,7 +65,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F144361 */ });
+        tmp = closure_0(() => { /* body not rendered: F144768 */ });
         return;
       }
     }
@@ -74,7 +74,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   } else {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F144361 */ });
+        tmp = closure_0(() => { /* body not rendered: F144768 */ });
         return;
       }
     }
@@ -82,7 +82,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   if (cResult[6] !== size) {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F144361 */ });
+        tmp = closure_0(() => { /* body not rendered: F144768 */ });
         return;
       }
     }
@@ -93,7 +93,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   } else {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F144361 */ });
+        tmp = closure_0(() => { /* body not rendered: F144768 */ });
         return;
       }
     }
@@ -102,14 +102,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
     let tmp24;
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F144361 */ });
+        tmp = closure_0(() => { /* body not rendered: F144768 */ });
         return;
       }
     }
     if (null == tmp11) {
       class B {
         constructor() {
-          tmp = closure_0(() => { /* body not rendered: F144361 */ });
+          tmp = closure_0(() => { /* body not rendered: F144768 */ });
           return;
         }
       }
@@ -117,14 +117,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
     } else {
       class B {
         constructor() {
-          tmp = closure_0(() => { /* body not rendered: F144361 */ });
+          tmp = closure_0(() => { /* body not rendered: F144768 */ });
           return;
         }
       }
       if (cResult[15] !== size) {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F144361 */ });
+            tmp = closure_0(() => { /* body not rendered: F144768 */ });
             return;
           }
         }
@@ -135,7 +135,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
       } else {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F144361 */ });
+            tmp = closure_0(() => { /* body not rendered: F144768 */ });
             return;
           }
         }
@@ -143,14 +143,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
       if (cResult[17] === tmp17) {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F144361 */ });
+            tmp = closure_0(() => { /* body not rendered: F144768 */ });
             return;
           }
         }
         if (cResult[20] === tmp15) {
           class B {
             constructor() {
-              tmp = closure_0(() => { /* body not rendered: F144361 */ });
+              tmp = closure_0(() => { /* body not rendered: F144768 */ });
               return;
             }
           }
@@ -181,7 +181,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   const items = [, , ];
   ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
   style = style.style;
-  const found = items.filter(f106530);
+  const found = items.filter(f106865);
   const joined = found.join("|");
   [tmp3, tmp4] = react.useState({ urlsKey: joined, candidateIndex: 0 });
   let c0 = tmp4;

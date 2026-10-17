@@ -1,18 +1,18 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15662
+// Function ID: 15663
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2090, 8109, 21, 5154, 587, 504, 15601, 13876, 8517, 8516, 1128, 1384, 5150, 15574, 5118, 15602, 2002, 6383, 9084, 2]
+// Dependencies: [19, 2090, 8155, 21, 5191, 587, 504, 15663, 13944, 8563, 8562, 1128, 1384, 5187, 15636, 5155, 15664, 2002, 6436, 9130, 2]
 // Exports: default
 
-// Module 15600 (UserProfilePrimaryGuildEditButton)
+// Module 15662 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import GuildTagConstants from "GuildTagConstants" /* 8109 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(15602, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(15664, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

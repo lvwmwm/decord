@@ -1,19 +1,19 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12308
+// Function ID: 12309
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1392, 12094, 11927, 5021, 12093, 1128, 3865, 12244, 2]
+// Dependencies: [32, 17, 1392, 12157, 11990, 5057, 12156, 1128, 3883, 12309, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 12243 (conjureComposerPills)
+// Module 12308 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import UserUtils from "UserUtils" /* 5021 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11927 */;
-import ChatInputParser from "ChatInputParser" /* 12244 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11990 */;
+import ChatInputParser from "ChatInputParser" /* 12309 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12094 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12157 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -67,7 +67,7 @@ export const conjureUserPillLabel = function conjureUserPillLabel(id) {
 export const decodeConjurePills = function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(12093).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(12156).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {
@@ -87,7 +87,7 @@ export const decodeConjurePills = function decodeConjurePills(draft) {
         }
         if (combined == null) {
           const intl = intl2.intl;
-          combined = intl.string(_modDef3865.ff9Q4C);
+          combined = intl.string(_modDef3883.ff9Q4C);
         }
       }
       const combined1 = "\u2060" + combined;

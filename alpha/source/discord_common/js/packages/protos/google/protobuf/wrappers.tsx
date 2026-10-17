@@ -28,14 +28,14 @@ class DoubleValue$Type extends MessageType {
     tmp.value = refJsonReader.scalar(arg0, 1, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -118,14 +118,14 @@ class FloatValue$Type extends MessageType2 {
     tmp.value = refJsonReader.scalar(arg0, 1, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -209,14 +209,14 @@ class Int64Value$Type extends MessageType3 {
     tmp.value = scalar(arg0, _mod1212.ScalarType.INT64, _mod1212.LongType.STRING, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -301,14 +301,14 @@ class UInt64Value$Type extends MessageType4 {
     tmp.value = scalar(arg0, _mod1212.ScalarType.UINT64, _mod1212.LongType.STRING, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -392,14 +392,14 @@ class Int32Value$Type extends MessageType5 {
     tmp.value = refJsonReader.scalar(arg0, 5, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -482,14 +482,14 @@ class UInt32Value$Type extends MessageType6 {
     tmp.value = refJsonReader.scalar(arg0, 13, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -571,14 +571,14 @@ class BoolValue$Type extends MessageType7 {
     tmp.value = refJsonReader.scalar(arg0, 8, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -660,14 +660,14 @@ class StringValue$Type extends MessageType8 {
     tmp.value = refJsonReader.scalar(arg0, 9, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { value: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -750,16 +750,16 @@ class BytesValue$Type extends MessageType9 {
     tmp.value = refJsonReader.scalar(arg0, 12, undefined, "value");
     return tmp;
   }
-  create(arr) {
+  create(partialSettings) {
     let uint8Array;
     const obj = { value: uint8Array };
     uint8Array = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmp2Result = _mod1212;
-      const result = tmp2Result.reflectionMergePartial(this, obj, arr);
+      const result = tmp2Result.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

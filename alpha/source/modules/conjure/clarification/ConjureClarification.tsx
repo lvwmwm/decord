@@ -1,13 +1,13 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12271
+// Function ID: 12272
 // Name: ConjureClarification
-// Dependencies: [2068, 1392, 1087, 3865, 1128, 2]
+// Dependencies: [2068, 1392, 1087, 3883, 1128, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12208 (ConjureClarification)
+// Module 12271 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
@@ -20,10 +20,10 @@ const ChannelTypes = Constants.ChannelTypes;
 let closure_4 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
 let closure_5 = { channel: "#", role: "@", user: "@", project: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3 };
-items = [_modDef3865["9+dfPT"], _modDef3865.pGSJqE];
-items1 = [_modDef3865["2VkCoD"], _modDef3865.c8YlX8];
-items2 = [_modDef3865.GZIAxl, _modDef3865["4bptbQ"]];
-items3 = [_modDef3865.twlOb6, _modDef3865.twlOb6];
+items = [_modDef3883["9+dfPT"], _modDef3883.pGSJqE];
+items1 = [_modDef3883["2VkCoD"], _modDef3883.c8YlX8];
+items2 = [_modDef3883.GZIAxl, _modDef3883["4bptbQ"]];
+items3 = [_modDef3883.twlOb6, _modDef3883.twlOb6];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export const isClarificationComplete = function isClarificationComplete(questions, arg1) {

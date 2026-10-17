@@ -1,9 +1,9 @@
-// Module ID: 4810
-// Function ID: 4811
+// Module ID: 4846
+// Function ID: 4847
 // Name: LurkingStore
 // Dependencies: [2086, 2128, 2090, 1392, 1087, 504, 584, 2]
 
-// Module 4810 (LurkingStore)
+// Module 4846 (LurkingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildRecord from "GuildRecord" /* 2086 */;

@@ -1,9 +1,9 @@
-// Module ID: 9468
-// Function ID: 9469
+// Module ID: 9532
+// Function ID: 9533
 // Name: applications
 // Dependencies: [32, 1212, 1241, 2]
 
-// Module 9468 (applications)
+// Module 9532 (applications)
 import _mod1212 from "module_1212" /* 1212 */;
 import timestamp from "timestamp" /* 1241 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -33,14 +33,14 @@ class ApplicationUserRoleConnection$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.discord_kkv_store_value_models.v1.ApplicationUserRoleConnection", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { metadata: {}, platformName: "", platformUsername: "", version: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -183,14 +183,14 @@ class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.discord_kkv_store_value_models.v1.AcknowledgedApplicationDisclosure", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { disclosureType: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -277,14 +277,14 @@ class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.discord_kkv_store_value_models.v1.AcknowledgedApplicationDisclosures", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { ackedDisclosures: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

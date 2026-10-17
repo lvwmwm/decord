@@ -1,20 +1,20 @@
-// Module ID: 17954
-// Function ID: 17955
+// Module ID: 18014
+// Function ID: 18015
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2090, 5466, 21, 5154, 587, 558, 576, 504, 9491, 10043, 10037, 6889, 6962, 10760, 1128, 5150, 17955, 6963, 6968, 2]
+// Dependencies: [32, 19, 17, 2090, 5503, 21, 5191, 587, 558, 576, 504, 9555, 10107, 10101, 6942, 7015, 10823, 1128, 5187, 18015, 7016, 7021, 2]
 
-// Module 17954 (ContextMenuCommandRootScreen)
+// Module 18014 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import executeCommandDefault from "executeCommand" /* 10037 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import executeCommandDefault from "executeCommand" /* 10101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5466 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,91 +1,93 @@
 // Module ID: 8065
 // Function ID: 8066
-// Dependencies: [8066]
+// Dependencies: [8066, 8070]
 
 // Module 8065
-import _modDef8066 from "module_8066" /* 8066 */;
+import detectFile2 from "detectFile" /* 8066 */;
+import validateFileType2 from "validateFileType" /* 8070 */;
 
+let hasOwnProperty;
 
-export default {
-  read(dataView, sum) {
-    let str6;
-    let tmp11;
-    let tmp14;
-    let tmp8;
-    const obj = _modDef8066;
-    const shortAt = obj.getShortAt(dataView, sum);
-    let tmp4;
-    if (8 <= shortAt) {
-      const tmpResult = _modDef8066;
-      const byteAt = tmpResult.getByteAt(dataView, sum + 7);
-      tmp4 = { value: byteAt, description: "" + byteAt };
-      const obj2 = { value: byteAt, description: "" + byteAt };
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    let tmp6;
-    if (3 <= shortAt) {
-      const tmpResult4 = _modDef8066;
-      const byteAt1 = tmpResult4.getByteAt(dataView, sum + 2);
-      tmp6 = { value: byteAt1, description: "" + byteAt1 };
-      const obj3 = { value: byteAt1, description: "" + byteAt1 };
+    closure_0 = __esModule;
+    closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    const obj4 = { "Bits Per Sample": tmp6, "Image Height": tmp8, "Image Width": tmp11, "Color Components": tmp4, Subsampling: tmp14 };
-    tmp8 = undefined;
-    if (5 <= shortAt) {
-      const tmpResult5 = _modDef8066;
-      const shortAt1 = tmpResult5.getShortAt(dataView, sum + 3);
-      const _HermesInternal = HermesInternal;
-      tmp8 = { value: shortAt1, description: "" + shortAt1 + "px" };
-      const obj5 = { value: shortAt1, description: "" + shortAt1 + "px" };
-    }
-    tmp11 = undefined;
-    if (7 <= shortAt) {
-      const tmpResult6 = _modDef8066;
-      const shortAt2 = tmpResult6.getShortAt(dataView, sum + 5);
-      const _HermesInternal2 = HermesInternal;
-      tmp11 = { value: shortAt2, description: "" + shortAt2 + "px" };
-      const obj6 = { value: shortAt2, description: "" + shortAt2 + "px" };
-    }
-    tmp14 = tmp4;
-    if (tmp14) {
-      const value = tmp4.value;
-      let tmp15;
-      if (8 + 3 * value <= shortAt) {
-        let num6;
-        const items = [];
-        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
-          sum = sum + 8 + 3 * num6;
-          let push = items.push;
-          let obj11 = _modDef8066;
-          let items1 = [obj11.getByteAt(dataView, sum), , ];
-          let obj12 = _modDef8066;
-          items1[1] = obj12.getByteAt(dataView, sum + 1);
-          let obj13 = _modDef8066;
-          items1[2] = obj13.getByteAt(dataView, sum + 2);
-          let arr = push(items1);
-        }
-        const obj7 = { value: items, description: str6 };
-        str6 = "";
-        if (items.length > 1) {
-          let closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
-          const mapped = items.map((item) => closure_0[item[0]]);
-          let str7 = "";
-          const joined = mapped.join("");
-          if (0 !== items.length) {
-            str7 = "";
-            if (undefined !== items[0][1]) {
-              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
-              str7 = "";
-              if (undefined !== obj8[items[0][1]]) {
-                str7 = obj8[items[0][1]];
-              }
-            }
-          }
-          str6 = joined + str7;
-        }
-        tmp15 = obj7;
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
-      tmp14 = tmp15;
+      tmp3 = !tmp4;
     }
-    return obj4;
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_1 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
+    }
   }
-};
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_0(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  closure_1(obj, __esModule);
+  return obj;
+});
+const detectFile = tmp5(detectFile2);
+const validateFileType = tmp5(validateFileType2);
+
+export default Object.assign(Object.assign({}, detectFile), validateFileType);

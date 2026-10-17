@@ -1,20 +1,20 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15708
+// Function ID: 15709
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8512, 1392, 21, 5154, 587, 7077, 7102, 504, 15642, 10888, 8539, 15644, 6404, 6383, 9867, 5118, 15646, 2002, 15647, 2]
+// Dependencies: [19, 17, 8558, 1392, 21, 5191, 587, 7130, 7155, 504, 15709, 10953, 8585, 15711, 6457, 6436, 10835, 5155, 15713, 2002, 15714, 2]
 // Exports: default
 
-// Module 15641 (UserSettingsEditGuildProfile)
+// Module 15708 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8539 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9867 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10888 */;
-import react_mod from "react" /* 19 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8585 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 10835 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10953 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8512 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -22,7 +22,6 @@ let closure_4;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
-let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { guildSelector: obj2 };
@@ -34,31 +33,31 @@ export default function UserSettingsEditGuildProfile() {
   let TableRow;
   let currentUser;
   let guild;
-  let hasEdits;
   let items3;
   let obj5;
   let obj6;
-  let resetPending;
+  let onReset;
+  let onSave;
   let stateFromStores;
   let tmp2Result;
   function onSelectGuild(dependencyMap) {
-    resetPending();
+    dependencyMap();
     const obj = GuildIdentityActionCreators;
     obj.setCurrentGuild(dependencyMap.id);
   }
   let tmp2 = guild;
   let tmp = closure_9();
-  const tmp4 = guild(resetPending[7]);
-  const analyticsLocations = tmp4(guild(resetPending[8]).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
-  let obj = stateFromStores(resetPending[9]);
+  const tmp4 = guild(7130);
+  const analyticsLocations = tmp4(guild(7155).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
+  let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(resetPending[10])();
+  const tmp7 = guild(15709)();
   guild = tmp7.guild;
-  resetPending = tmp7.resetPending;
-  let obj2 = stateFromStores(resetPending[9]);
-  const items1 = [UserProfileSettingsStore];
-  react = obj2.useStateFromStores(items1, () => UserProfileSettingsStore.showNotice());
+  ({ resetPending: dependencyMap, handleSubmit: react } = tmp7);
+  let obj2 = stateFromStores(504);
+  const items1 = [onSelectGuild];
+  const hasUnsavedChanges = obj2.useStateFromStores(items1, () => onSelectGuild.showNotice());
   const items2 = [stateFromStores, guild];
   const effect = react.useEffect(() => {
     const tmp = null != stateFromStores && null != guild;
@@ -74,7 +73,7 @@ export default function UserSettingsEditGuildProfile() {
     if (null != guild) {
       let obj3 = { value: analyticsLocations, children: items3 };
       const obj4 = { style: tmp.guildSelector, children: closure_7(TableRow, obj5) };
-      const AnalyticsLocationProvider = tmp5(tmp3[7]).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp5(7130).AnalyticsLocationProvider;
       obj5 = {
         icon: closure_7(tmp2Result, obj6),
         label: guild.name,
@@ -82,7 +81,10 @@ export default function UserSettingsEditGuildProfile() {
         onPress() {
               let selectedGuild;
               let obj = {
-                onConfirm: function openGuildSelectActionSheet() {
+                location: "UserSettingsEditGuildProfile",
+                hasUnsavedChanges,
+                onReset: dependencyMap,
+                onContinue: function openGuildSelectActionSheet() {
                   let tmp2 = null != closure_1_0;
                   const tmp = closure_1_0;
                   if (tmp2) {
@@ -90,26 +92,25 @@ export default function UserSettingsEditGuildProfile() {
                   }
                   if (tmp2) {
                     const obj2 = { user: tmp, selectedGuild, onSelectGuild };
-                    const obj = guild(resetPending[17]);
-                    obj.openLazy(stateFromStores(resetPending[19])(resetPending[18], resetPending.paths), "GuildSelectComponentActionSheet", obj2);
+                    const obj = guild(dependencyMap[17]);
+                    obj.openLazy(stateFromStores(dependencyMap[19])(dependencyMap[18], dependencyMap.paths), "GuildSelectComponentActionSheet", obj2);
                   }
                 },
-                hasEdits,
-                resetPending
+                onSave: react
               };
-              let tmp = maybeShowDiscardChangesAlertDefault(obj);
+              let tmp = maybeShowUnsavedChangesAlertDefault(obj);
             }
       };
-      TableRow = tmp5(tmp3[14]).TableRow;
-      obj6 = { guild, size: stateFromStores(resetPending[15]).GuildIconSizes.XSMALL };
-      tmp2Result = tmp2(resetPending[15]);
-      items3 = [closure_7(onSelectGuild, obj4), ];
+      TableRow = tmp5(6457).TableRow;
+      obj6 = { guild, size: stateFromStores(6436).GuildIconSizes.XSMALL };
+      tmp2Result = tmp2(6436);
+      items3 = [closure_7(hasUnsavedChanges, obj4), ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores };
-      const tmp2Result2 = tmp2(resetPending[20]);
+      const tmp2Result2 = tmp2(15714);
       items3[1] = closure_7(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return closure_8(AnalyticsLocationProvider, obj3);
     }
   }
-  return closure_7(tmp2(resetPending[13]), {});
+  return closure_7(tmp2(15711), {});
 };

@@ -1,20 +1,20 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18688
+// Function ID: 18689
 // Name: editorUtils
-// Dependencies: [32, 18627, 18628, 1297, 5854, 2]
+// Dependencies: [32, 18689, 18690, 1297, 5891, 2]
 // Exports: createDraftWidget, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 18626 (editorUtils)
+// Module 18688 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 18627 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 18628 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 18689 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 18690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let tmp;
-const V6OrEarlierAPIError = tmp(5854);
+const V6OrEarlierAPIError = tmp(5891);
 let c3 = "draft:";
 let closure_4 = 0;
 let result = size.fileFinishedImporting("modules/guild_space/editorUtils.tsx");

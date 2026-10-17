@@ -42,12 +42,12 @@ class MessageType {
 }
 const entry = {
   key: "create",
-  value: function create(arr) {
+  value: function create(partialSettings) {
     const obj = reflectionCreate;
     const reflectionCreateResult = obj.reflectionCreate(this);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = reflectionMergePartial;
-      const result = tmpResult.reflectionMergePartial(this, reflectionCreateResult, arr);
+      const result = tmpResult.reflectionMergePartial(this, reflectionCreateResult, partialSettings);
     }
     return reflectionCreateResult;
   }
@@ -56,10 +56,10 @@ const items = [
   entry,
   {
     key: "clone",
-    value: function clone(arr) {
+    value: function clone(partialSettings) {
       const obj2 = this.create();
       const obj = reflectionMergePartial;
-      const result = obj.reflectionMergePartial(this, obj2, arr);
+      const result = obj.reflectionMergePartial(this, obj2, partialSettings);
       return obj2;
     }
   },
@@ -96,9 +96,9 @@ const items = [
   },
   {
     key: "mergePartial",
-    value: function mergePartial(EmojiFrecency, arr) {
+    value: function mergePartial(EmojiFrecency, partialSettings) {
       const obj = reflectionMergePartial;
-      const result = obj.reflectionMergePartial(this, EmojiFrecency, arr);
+      const result = obj.reflectionMergePartial(this, EmojiFrecency, partialSettings);
     }
   },
   {

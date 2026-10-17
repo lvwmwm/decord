@@ -1,13 +1,13 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 13877
+// Function ID: 13878
 // Name: AppStoreOverlayContent
-// Dependencies: [5, 4865, 4859, 1128, 13810, 2]
+// Dependencies: [5, 4901, 4895, 1128, 13878, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 13809 (AppStoreOverlayContent)
-import openURL from "openURL" /* 4859 */;
-import LinkingDefault from "Linking" /* 4865 */;
-import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 13810 */;
+// Module 13877 (AppStoreOverlayContent)
+import openURL from "openURL" /* 4895 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 13878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

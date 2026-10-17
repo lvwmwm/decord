@@ -1,62 +1,55 @@
 // Module ID: 15366
 // Function ID: 15367
-// Dependencies: []
+// Dependencies: [15325, 15367, 15371]
 
 // Module 15366
-let map;
+import _mod15325 from "module_15325" /* 15325 */;
+import _mod15367 from "module_15367" /* 15367 */;
 
-
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-  }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
+let tmp;
+const _mod15371 = tmp(15371);
+const f121655 = (arg0, arg1, arg2) => {
+  const tmp3 = _mod15325(arg0);
+  const tmp4 = _mod15367(tmp3);
+  if (0 === tmp4) {
+    return !c0 && -1;
+  } else {
+    let sum = _mod15371(arg2, tmp4);
+    const tmp16 = c0;
+    if (tmp16) {
+      if (arg1 != arg1) {
+        if (tmp4 > sum) {
+          while (tmp3[+sum] == tmp3[+sum]) {
+            sum = tmp7 + 1;
+          }
+          return true;
         }
       }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
+      return !c0 && -1;
     }
-  };
-  return obj;
+    let sum1 = sum;
+    if (tmp4 > sum) {
+      let num;
+      while (true) {
+        num = c0;
+        if (c0) {
+          if (tmp3[sum1] === arg1) {
+            break;
+          }
+        }
+        sum1 = sum1 + 1;
+      }
+      if (!num) {
+        num = sum1;
+      }
+      if (!num) {
+        num = 0;
+      }
+      return num;
+    }
+  }
 };
+let c0 = false;
+const obj = { includes: f121655, indexOf: f121655 };
+
+export default obj;

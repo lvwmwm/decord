@@ -1,10 +1,10 @@
-// Module ID: 9600
-// Function ID: 9601
+// Module ID: 9664
+// Function ID: 9665
 // Name: ContextMenuConstants
-// Dependencies: [1384, 5119, 2]
+// Dependencies: [1384, 5156, 2]
 
-// Module 9600 (ContextMenuConstants)
-import HapticUtils from "HapticUtils" /* 5119 */;
+// Module 9664 (ContextMenuConstants)
+import HapticUtils from "HapticUtils" /* 5156 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

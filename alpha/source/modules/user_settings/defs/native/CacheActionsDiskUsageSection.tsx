@@ -1,24 +1,24 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 16629
+// Function ID: 16630
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5154, 587, 16566, 2094, 4887, 1128, 558, 576, 5150, 5859, 5440, 1384, 6406, 16568, 2]
+// Dependencies: [5, 32, 19, 21, 5191, 587, 16630, 2094, 4923, 1128, 558, 576, 5187, 5896, 5477, 1384, 6459, 16632, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 16565 (CacheActionsDiskUsageSection)
+// Module 16629 (CacheActionsDiskUsageSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl24 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import Stack_Stack from "Stack/Stack" /* 5440 */;
-import FileSizeUtils from "FileSizeUtils" /* 5859 */;
-import Card_Card from "Card/Card" /* 6406 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16568 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import FileSizeUtils from "FileSizeUtils" /* 5896 */;
+import Card_Card from "Card/Card" /* 6459 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16632 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRo
         return tmp14;
       }
       const obj2 = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: items };
-      const Stack = tmp(5440).Stack;
+      const Stack = tmp(5477).Stack;
       items = [tmp6, tmp11];
       const tmp17 = metroImportDefault(Stack, obj2);
       cResult[8] = tmp6;
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRo
   const obj2 = { variant: "text-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
   items[0] = metroRequire(Text_Text.Text, obj2);
   const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
-  const Text = tmp2(5150).Text;
+  const Text = tmp2(5187).Text;
   const tmp = metroImportDefault;
   if (null != bytes) {
     const tmp2Result = FileSizeUtils;
@@ -550,7 +550,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   ({ state, onDiagnosticsBusyChange } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-md/semibold", children: intl.string(intl24.t.m8BOpo) };
-    const Heading = tmp(5150).Heading;
+    const Heading = tmp(5187).Heading;
     intl = tmp(1128).intl;
     const tmp6 = metroRequire(Heading, obj2);
     cResult[0] = tmp6;
@@ -562,7 +562,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
     let tmp8 = "loading" === state.status;
     if (tmp8) {
       const obj3 = { variant: "text-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-      const Text = tmp(5150).Text;
+      const Text = tmp(5187).Text;
       intl2 = tmp(1128).intl;
       tmp8 = metroRequire(Text, obj3);
     }
@@ -576,7 +576,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
     let tmp11 = "error" === state.status;
     if (tmp11) {
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-      const Text2 = tmp(5150).Text;
+      const Text2 = tmp(5187).Text;
       intl3 = tmp(1128).intl;
       tmp11 = metroRequire(Text2, obj4);
     }
@@ -672,7 +672,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   const Card = Card_Card.Card;
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-    const Text = tmp2(5150).Text;
+    const Text = tmp2(5187).Text;
     intl2 = tmp2(1128).intl;
     tmp4Result = tmp4(Text, obj2);
   }
@@ -680,7 +680,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   let tmp4Result3 = "error" === state.status;
   if (tmp4Result3) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-    const Text2 = tmp2(5150).Text;
+    const Text2 = tmp2(5187).Text;
     intl3 = tmp2(1128).intl;
     tmp4Result3 = tmp4(Text2, obj3);
   }

@@ -1,13 +1,13 @@
-// Module ID: 12206
-// Function ID: 12207
+// Module ID: 12269
+// Function ID: 12270
 // Name: ConjureImageOptions
-// Dependencies: [32, 1128, 3865, 8721, 2]
+// Dependencies: [32, 1128, 3883, 8767, 2]
 // Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
 
-// Module 12206 (ConjureImageOptions)
+// Module 12269 (ConjureImageOptions)
 import intl2 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8721 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8767 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export const imageOptionViewerSize = function imageOptionViewerSize(value) {
 };
 export const ownImageOption = function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3865.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3883.SUdqCQ), image: { attachment_id: image.attachment.id } };
   intl = intl2.intl;
   return obj;
 };
@@ -153,6 +153,6 @@ export const ownImageUploadText = function ownImageUploadText(question) {
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef3865;
+  const tmp2 = _modDef3883;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
 };

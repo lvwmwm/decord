@@ -1,16 +1,16 @@
-// Module ID: 8517
-// Function ID: 8518
+// Module ID: 8563
+// Function ID: 8564
 // Name: GuildTagUtils
-// Dependencies: [2128, 2090, 1392, 8109, 1087, 558, 576, 504, 4815, 2]
+// Dependencies: [2128, 2090, 1392, 8155, 1087, 558, 576, 504, 4851, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag
 
-// Module 8517 (GuildTagUtils)
+// Module 8563 (GuildTagUtils)
 import Constants from "Constants" /* 1087 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4815 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildTagConstants from "GuildTagConstants" /* 8109 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

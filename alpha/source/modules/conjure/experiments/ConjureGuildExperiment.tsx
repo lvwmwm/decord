@@ -1,9 +1,9 @@
-// Module ID: 6298
-// Function ID: 6299
+// Module ID: 6356
+// Function ID: 6357
 // Name: ConjureGuildExperiment
 // Dependencies: [2090, 1087, 1455, 558, 576, 504, 2]
 
-// Module 6298 (ConjureGuildExperiment)
+// Module 6356 (ConjureGuildExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 2090 */;

@@ -1,25 +1,25 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11405
+// Function ID: 11406
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10599, 10600, 1087, 21, 1384, 5154, 587, 6125, 1202, 558, 576, 1633, 4909, 11347, 1107, 1128, 7069, 5155, 6559, 9978, 1499, 11159, 1123, 4886, 5028, 5428, 11349, 2]
+// Dependencies: [32, 19, 17, 10662, 10663, 1087, 21, 1384, 5191, 587, 6162, 1202, 558, 576, 1633, 4945, 11406, 1107, 1128, 7122, 5192, 6612, 10042, 1499, 11224, 1123, 4922, 5065, 5465, 11408, 2]
 
-// Module 11346 (FocusedControlsBottomControls)
+// Module 11405 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 11349 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 11408 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10599 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10600 */;
+import ChannelCallStore from "ChannelCallStore" /* 10662 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10663 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
-import TextStyles from "TextStyles" /* 6125 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import TextStyles from "TextStyles" /* 6162 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(11349);
+const CallPTTButton = tmp(11408);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -236,7 +236,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(11347);
+  const obj2 = positionY(11406);
   const canShowTooltip = obj2.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
@@ -246,7 +246,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__closure = obj4;
   fn.__workletHash = 15386908151356;
   fn.__initData = __initData3;
-  const obj3 = positionY(4909);
+  const obj3 = positionY(4945);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   if (canShowTooltip) {
     let first;
@@ -298,9 +298,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(11347);
+  let obj = positionY(11406);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(4909);
+  positionY(4945);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
     return obj;
@@ -348,7 +348,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__closure = obj3;
   fn.__workletHash = 16821998405506;
   fn.__initData = __initData5;
-  const obj2 = positionY(4909);
+  const obj2 = positionY(4945);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] !== isExpanded) {
     obj4 = { expanded: isExpanded };
@@ -368,7 +368,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(7069).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(7122).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -418,7 +418,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   if (tmp15) {
     const obj8 = { style: items1, children: aboveActionBar };
     items1 = [tmp4.aboveActionBarChildrenContainer, animatedStyle];
-    tmp15 = closure_13(offsetY(4909).View, obj8);
+    tmp15 = closure_13(offsetY(4945).View, obj8);
   }
   cResult[5] = aboveActionBar;
   cResult[6] = animatedStyle;
@@ -437,7 +437,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = closure_19();
-  let obj = positionY(4909);
+  let obj = positionY(4945);
   const fn = function h() {
     const obj = { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - c16), 0) };
     return obj;
@@ -449,7 +449,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(closure_27, { positionY }), closure_13(positionY(7069).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(closure_27, { positionY }), closure_13(positionY(7122).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;
@@ -457,7 +457,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   if (tmp4Result) {
     obj5 = { style: items1, children: aboveActionBar };
     items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp4Result = tmp4(offsetY(4909).View, obj5);
+    tmp4Result = tmp4(offsetY(4945).View, obj5);
   }
   items[2] = tmp4Result;
   return closure_13(tmp5, obj3);

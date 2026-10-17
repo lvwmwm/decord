@@ -1,11 +1,11 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 9177
+// Function ID: 9178
 // Name: useGameProfileStoreWebsites
-// Dependencies: [19, 9118, 558, 576, 9119, 9121, 9120, 2]
+// Dependencies: [19, 9178, 558, 576, 9179, 9181, 9180, 2]
 
-// Module 9117 (useGameProfileStoreWebsites)
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9118 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9120 */;
+// Module 9177 (useGameProfileStoreWebsites)
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9178 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9180 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,13 +24,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   const obj = id1(576);
   const cResult = obj.c(8);
   id = undefined;
-  const useSteamWebsiteUrl = id1(9119).useSteamWebsiteUrl;
-  const tmp4 = id1(9119);
+  const useSteamWebsiteUrl = id1(9179).useSteamWebsiteUrl;
+  const tmp4 = id1(9179);
   if (id != null) {
     id = id.id;
   }
   const steamWebsiteUrl = useSteamWebsiteUrl(id);
-  const tmp7 = steamReleaseStatus(9121)(id);
+  const tmp7 = steamReleaseStatus(9181)(id);
   id1 = undefined;
   if (id != null) {
     id1 = id.id;
@@ -64,7 +64,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
           let tmp6 = !(category.category === ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.EPICGAMES && !set.has(id1));
           const tmp3 = category.category === ThirdPartyGameApplicationWebsiteCategory.ThirdPartyGameApplicationWebsiteCategory.EPICGAMES && !set.has(id1);
           if (tmp6) {
-            const hasItem = (category.category !== tmp(9118).ThirdPartyGameApplicationWebsiteCategory.STEAM || steamReleaseStatus !== tmp(9120).SteamReleaseStatus.RETIRED_ABANDONED) && items.includes(category.category);
+            const hasItem = (category.category !== tmp(9178).ThirdPartyGameApplicationWebsiteCategory.STEAM || steamReleaseStatus !== tmp(9180).SteamReleaseStatus.RETIRED_ABANDONED) && items.includes(category.category);
             tmp6 = hasItem;
           }
           return tmp6;
@@ -73,10 +73,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
       if (found == null) {
         found = [];
       }
-      const tmp12 = null == steamWebsiteUrl || steamReleaseStatus === tmp(9120).SteamReleaseStatus.RETIRED_ABANDONED || found.some((category) => category.category === id1(dependencyMap[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+      const tmp12 = null == steamWebsiteUrl || steamReleaseStatus === tmp(9180).SteamReleaseStatus.RETIRED_ABANDONED || found.some((category) => category.category === id1(dependencyMap[1]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
       if (!tmp12) {
         const push = found.push;
-        const obj2 = { category: tmp(9118).ThirdPartyGameApplicationWebsiteCategory.STEAM, url: steamWebsiteUrl };
+        const obj2 = { category: tmp(9178).ThirdPartyGameApplicationWebsiteCategory.STEAM, url: steamWebsiteUrl };
         push(obj2);
       }
       const _Symbol = Symbol;

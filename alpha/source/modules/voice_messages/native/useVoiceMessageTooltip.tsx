@@ -1,14 +1,14 @@
-// Module ID: 12835
-// Function ID: 12836
+// Module ID: 12900
+// Function ID: 12901
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1501, 12743, 558, 576, 1128, 6529, 9679, 2]
+// Dependencies: [19, 1501, 12808, 558, 576, 1128, 6582, 9743, 2]
 
-// Module 12835 (useVoiceMessageTooltip)
+// Module 12900 (useVoiceMessageTooltip)
 import intl2 from "intl" /* 1128 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6529 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6582 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12743 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceMe
     tmp11 = cResult[6];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  const tmpResult = tmp(9679);
+  const tmpResult = tmp(9743);
   const tooltip = tmpResult.useTooltip(ref, tmp9);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { tooltipTargetRef: ref, showVoiceMessagesTooltip };

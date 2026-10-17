@@ -1,19 +1,19 @@
-// Module ID: 13056
-// Function ID: 13057
+// Module ID: 13121
+// Function ID: 13122
 // Name: ChatInputGuardReturnToGameProfile
-// Dependencies: [19, 21, 5154, 587, 558, 576, 5091, 1417, 1128, 10939, 13050, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 5128, 1417, 1128, 11004, 13115, 2]
 
-// Module 13056 (ChatInputGuardReturnToGameProfile)
+// Module 13121 (ChatInputGuardReturnToGameProfile)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 10939 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13050 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 11004 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13115 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(1128).intl;
       const stringResult = intl2.string(intl3.t.DjifDP);
-      const ArrowSmallLeftIcon = tmp(10939).ArrowSmallLeftIcon;
+      const ArrowSmallLeftIcon = tmp(11004).ArrowSmallLeftIcon;
       const tmp18 = <ArrowSmallLeftIcon color={nativeDefault.colors.WHITE} />;
       cResult[5] = stringResult;
       cResult[6] = tmp18;

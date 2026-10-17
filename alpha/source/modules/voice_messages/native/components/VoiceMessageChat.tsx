@@ -1,23 +1,23 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 13331
+// Function ID: 13332
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5144, 12743, 12744, 21, 4909, 5154, 587, 1384, 558, 576, 5441, 5155, 4877, 8008, 5150, 2]
+// Dependencies: [32, 19, 17, 5181, 12808, 12809, 21, 4945, 5191, 587, 1384, 558, 576, 5478, 5192, 4913, 8054, 5187, 2]
 
-// Module 13265 (VoiceMessageChat)
+// Module 13331 (VoiceMessageChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
-import spring from "spring" /* 5441 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8008 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12743 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
+import spring from "spring" /* 5478 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8054 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12744 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12809 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -410,7 +410,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
   }
   const tmp6Result = tmp6(tmp14);
   let closure_5 = tmp6Result;
-  const tmpResult = tmp(4877);
+  const tmpResult = tmp(4913);
   const token = tmpResult.useToken(nativeDefault.modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
   if (cResult[4] === tmp6Result) {
     let tmp24;
@@ -457,7 +457,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f157087);
+                AccessibilityStore(f157418);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -504,7 +504,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f157087);
+                AccessibilityStore(f157418);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -531,7 +531,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
       tmp24 = cResult[12];
     }
     const effect1 = obj2.useEffect(tmp23, tmp24);
-    const tmpResult2 = tmp(4909);
+    const tmpResult2 = tmp(4945);
     class Z {
       constructor() {
         const obj = { opacity: animationValue.get() };
@@ -560,7 +560,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f157087);
+                AccessibilityStore(f157418);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -601,7 +601,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                 }
                 c1 = num;
                 flash = function flash() {
-                  AccessibilityStore(f157087);
+                  AccessibilityStore(f157418);
                   const timeout = setTimeout(flash, num);
                 };
                 tmp8 = closure_6;
@@ -642,7 +642,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f157087);
+                    AccessibilityStore(f157418);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -684,7 +684,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f157087);
+                    AccessibilityStore(f157418);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -710,7 +710,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
           }
         }
         const obj5 = { style: tmp4.duration, variant: token, color: "text-default", tabularNumbers: true, children: tmp19 };
-        const tmp38 = closure_13(tmp(5150).Text, obj5);
+        const tmp38 = closure_13(tmp(5187).Text, obj5);
         class Z {
           constructor() {
             const obj = { opacity: animationValue.get() };
@@ -848,7 +848,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
   const first2 = tmp13[0];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f157088 = (arg0) => !arg0;
+    const f157419 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -860,10 +860,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
           num = num2;
         }
         function flash() {
-          closure_7(f157088);
+          closure_7(f157419);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f157088);
+        closure_7(f157419);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

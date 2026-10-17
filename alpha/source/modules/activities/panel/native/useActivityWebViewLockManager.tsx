@@ -1,11 +1,11 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18143
+// Function ID: 18144
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4909, 4886, 2]
+// Dependencies: [32, 19, 4945, 4922, 2]
 // Exports: default, useLockedWebView
 
-// Module 18082 (useActivityWebViewLockManager)
-import native from "native" /* 4886 */;
+// Module 18143 (useActivityWebViewLockManager)
+import native from "native" /* 4922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ export default function useActivityWebViewLockManager() {
       }, items);
       const items1 = [id, tmp4];
       const layoutEffect = getCanRender.useLayoutEffect(() => {
-        const f158015 = () => {
+        const f158344 = () => {
           let tmp6;
           let tmp8;
           const tmp2 = closure_1_2[Symbol.iterator]();
@@ -100,12 +100,12 @@ export default function useActivityWebViewLockManager() {
         if (null == id) {
           const tmp = globalThis;
           let resolved = Promise.resolve();
-          id = resolved.then(f158015);
+          id = resolved.then(f158344);
         }
         return () => {
           if (null == closure_0) {
             const resolved = Promise.resolve();
-            closure_0 = resolved.then(f158015);
+            closure_0 = resolved.then(f158344);
           }
         };
       }, items1);

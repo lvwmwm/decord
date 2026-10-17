@@ -5,33 +5,77 @@
 // Exports: default
 
 // Module 4335 (formatDistance)
-let closure_0 = { lessThanXSeconds: { one: "1\uCD08 \uBBF8\uB9CC", other: "{{count}}\uCD08 \uBBF8\uB9CC" }, xSeconds: { one: "1\uCD08", other: "{{count}}\uCD08" }, halfAMinute: "30\uCD08", lessThanXMinutes: { one: "1\uBD84 \uBBF8\uB9CC", other: "{{count}}\uBD84 \uBBF8\uB9CC" }, xMinutes: { one: "1\uBD84", other: "{{count}}\uBD84" }, aboutXHours: { one: "\uC57D 1\uC2DC\uAC04", other: "\uC57D {{count}}\uC2DC\uAC04" }, xHours: { one: "1\uC2DC\uAC04", other: "{{count}}\uC2DC\uAC04" }, xDays: { one: "1\uC77C", other: "{{count}}\uC77C" }, aboutXWeeks: { one: "\uC57D 1\uC8FC", other: "\uC57D {{count}}\uC8FC" }, xWeeks: { one: "1\uC8FC", other: "{{count}}\uC8FC" }, aboutXMonths: { one: "\uC57D 1\uAC1C\uC6D4", other: "\uC57D {{count}}\uAC1C\uC6D4" }, xMonths: { one: "1\uAC1C\uC6D4", other: "{{count}}\uAC1C\uC6D4" }, aboutXYears: { one: "\uC57D 1\uB144", other: "\uC57D {{count}}\uB144" }, xYears: { one: "1\uB144", other: "{{count}}\uB144" }, overXYears: { one: "1\uB144 \uC774\uC0C1", other: "{{count}}\uB144 \uC774\uC0C1" }, almostXYears: { one: "\uAC70\uC758 1\uB144", other: "\uAC70\uC758 {{count}}\uB144" } };
+function futureSeconds(str) {
+  return str.replace(/sekuntia?/, "sekunnin");
+}
+function futureMinutes(str) {
+  return str.replace(/minuuttia?/, "minuutin");
+}
+function futureHours(str) {
+  return str.replace(/tuntia?/, "tunnin");
+}
+function futureWeeks(str) {
+  return str.replace(/(viikko|viikkoa)/, "viikon");
+}
+function futureMonths(str) {
+  return str.replace(/(kuukausi|kuukautta)/, "kuukauden");
+}
+function futureYears(str) {
+  return str.replace(/(vuosi|vuotta)/, "vuoden");
+}
+const obj = {
+  lessThanXSeconds: { one: "alle sekunti", other: "alle {{count}} sekuntia", futureTense: futureSeconds },
+  xSeconds: { one: "sekunti", other: "{{count}} sekuntia", futureTense: futureSeconds },
+  halfAMinute: {
+    one: "puoli minuuttia",
+    other: "puoli minuuttia",
+    futureTense(one) {
+      return "puolen minuutin";
+    }
+  },
+  lessThanXMinutes: { one: "alle minuutti", other: "alle {{count}} minuuttia", futureTense: futureMinutes },
+  xMinutes: { one: "minuutti", other: "{{count}} minuuttia", futureTense: futureMinutes },
+  aboutXHours: { one: "noin tunti", other: "noin {{count}} tuntia", futureTense: futureHours },
+  xHours: { one: "tunti", other: "{{count}} tuntia", futureTense: futureHours },
+  xDays: {
+    one: "p\u00E4iv\u00E4",
+    other: "{{count}} p\u00E4iv\u00E4\u00E4",
+    futureTense: function futureDays(str) {
+      return str.replace(/päivää?/, "p\u00E4iv\u00E4n");
+    }
+  },
+  aboutXWeeks: { one: "noin viikko", other: "noin {{count}} viikkoa", futureTense: futureWeeks },
+  xWeeks: { one: "viikko", other: "{{count}} viikkoa", futureTense: futureWeeks },
+  aboutXMonths: { one: "noin kuukausi", other: "noin {{count}} kuukautta", futureTense: futureMonths },
+  xMonths: { one: "kuukausi", other: "{{count}} kuukautta", futureTense: futureMonths },
+  aboutXYears: { one: "noin vuosi", other: "noin {{count}} vuotta", futureTense: futureYears },
+  xYears: { one: "vuosi", other: "{{count}} vuotta", futureTense: futureYears },
+  overXYears: { one: "yli vuosi", other: "yli {{count}} vuotta", futureTense: futureYears },
+  almostXYears: { one: "l\u00E4hes vuosi", other: "l\u00E4hes {{count}} vuotta", futureTense: futureYears }
+};
 
 export default function formatDistance(arg0, arg1, addSuffix) {
-  let tmp2 = tmp;
-  if (typeof closure_0[arg0] !== "string") {
-    let one;
-    if (1 === arg1) {
-      one = tmp.one;
-    } else {
-      const str = closure_0[arg0].other;
-      one = str.replace("{{count}}", arg1.toString());
-    }
-    tmp2 = one;
+  let one;
+  if (1 === arg1) {
+    one = obj.one;
+  } else {
+    const _String = String;
+    const str = obj[arg0].other;
+    one = str.replace("{{count}}", String(arg1));
   }
-  let tmp3 = tmp2;
+  let tmp2 = one;
   if (null != addSuffix) {
-    tmp3 = tmp2;
+    tmp2 = one;
     if (addSuffix.addSuffix) {
       if (addSuffix.comparison) {
         let text;
         if (addSuffix.comparison > 0) {
-          text = `${tmp2} 후`;
+          text = `${obj.futureTense(one)} kuluttua`;
         }
-        tmp3 = text;
+        tmp2 = text;
       }
-      text = `${tmp2} 전`;
+      text = `${one} sitten`;
     }
   }
-  return tmp3;
+  return tmp2;
 };

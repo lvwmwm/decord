@@ -35,7 +35,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f88325 = (item) => isChangelogUserDefault(item);
+const f88528 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -193,7 +193,7 @@ function setChannel(isPrivate) {
   if (isPrivate.isPrivate()) {
     delete closure_32[isPrivate.id];
     const recipients = isPrivate.recipients;
-    if (null == recipients.find(f88325)) {
+    if (null == recipients.find(f88528)) {
       closure_21[isPrivate.id] = isPrivate;
       if (isPrivate.type === ChannelTypes.DM) {
         closure_25[isPrivate.getRecipientId()] = isPrivate.id;
@@ -249,7 +249,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f88325)) {
+  if (null != recipients.find(f88528)) {
     return false;
   } else {
     closure_21[recipients.id] = recipients;
@@ -729,7 +729,7 @@ class ChannelLoader {
     }
   }
 }
-const __initData3 = { Basic: 0, [0]: "Basic", Full: 1, [1]: "Full" };
+const __initData4 = { Basic: 0, [0]: "Basic", Full: 1, [1]: "Full" };
 const Store = get_initializedDefault.Store;
 class ChannelStore extends Store {
   initialize() {

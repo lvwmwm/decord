@@ -1,16 +1,16 @@
-// Module ID: 11381
-// Function ID: 11382
+// Module ID: 11440
+// Function ID: 11441
 // Name: useIsVideoMode
-// Dependencies: [6116, 2068, 2014, 2119, 5175, 558, 576, 504, 2]
+// Dependencies: [6153, 2068, 2014, 2119, 5212, 558, 576, 504, 2]
 // Exports: isVideoMode
 
-// Module 11381 (useIsVideoMode)
+// Module 11440 (useIsVideoMode)
 import react from "react" /* 576 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import VoiceStateStore from "VoiceStateStore" /* 5175 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

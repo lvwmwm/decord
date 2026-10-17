@@ -1,12 +1,12 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14237
+// Function ID: 14238
 // Name: useVirtualCurrencyBalance
-// Dependencies: [9294, 558, 576, 504, 2]
+// Dependencies: [9354, 558, 576, 504, 2]
 // Exports: getVirtualCurrencyBalance
 
-// Module 14169 (useVirtualCurrencyBalance)
+// Module 14237 (useVirtualCurrencyBalance)
 import react from "react" /* 576 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9294 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9354 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

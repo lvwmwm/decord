@@ -1,14 +1,14 @@
-// Module ID: 17397
-// Function ID: 17398
+// Module ID: 17456
+// Function ID: 17457
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 558, 576, 17390, 5150, 1128, 2]
+// Dependencies: [19, 21, 558, 576, 17449, 5187, 1128, 2]
 
-// Module 17397 (HomeDrawerFavoritesRow)
+// Module 17456 (HomeDrawerFavoritesRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17390 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17449 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,9 +20,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawer
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const HomeDrawerSharedItem = tmp(17390).HomeDrawerSharedItem;
+    const HomeDrawerSharedItem = tmp(17449).HomeDrawerSharedItem;
     ({ variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl.string(intl2.t.wMWyci) });
-    const Text = tmp(5150).Text;
+    const Text = tmp(5187).Text;
     intl = tmp(1128).intl;
     const tmp6 = <HomeDrawerSharedItem title={null} subtitle={null} />;
     cResult[0] = tmp6;

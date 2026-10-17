@@ -1,15 +1,15 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8429
+// Function ID: 8430
 // Name: transformNativeMarkupMention
-// Dependencies: [8384, 5465, 5463, 5475, 8465, 2]
+// Dependencies: [8430, 5502, 5500, 5512, 8511, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8383 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5463 */;
-import MarkupRules from "MarkupRules" /* 5465 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5475 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8384 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8465 */;
+// Module 8429 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5500 */;
+import MarkupRules from "MarkupRules" /* 5502 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5512 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8430 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8511 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export const transformNativeMention = function transformNativeMention(value, all
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: false }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: "Array" }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: false }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: null }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

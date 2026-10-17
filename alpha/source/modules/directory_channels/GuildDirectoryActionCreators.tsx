@@ -1,18 +1,18 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12958
+// Function ID: 12959
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 12880, 12882, 1087, 551, 584, 1297, 6157, 1275, 2]
+// Dependencies: [5, 12945, 12947, 1087, 551, 584, 1297, 6194, 1275, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 12893 (GuildDirectoryActionCreators)
+// Module 12958 (GuildDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6157 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12882 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12880 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12945 */;
 import debounce_mod from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _addDirectoryGuildEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -81,7 +81,7 @@ obj = function _updateDirectoryEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

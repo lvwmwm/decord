@@ -1,14 +1,14 @@
-// Module ID: 16195
-// Function ID: 16196
+// Module ID: 16261
+// Function ID: 16262
 // Name: TicketIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16196, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16262, 4912, 2]
 
-// Module 16195 (TicketIcon)
+// Module 16261 (TicketIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 16196 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 16262 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TicketIcon
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4876).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,13 +1,13 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11478
+// Function ID: 11479
 // Name: useGameConsoleAccounts
-// Dependencies: [5980, 1087, 558, 576, 1388, 504, 2]
+// Dependencies: [6017, 1087, 558, 576, 1388, 504, 2]
 
-// Module 11419 (useGameConsoleAccounts)
+// Module 11478 (useGameConsoleAccounts)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5980 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

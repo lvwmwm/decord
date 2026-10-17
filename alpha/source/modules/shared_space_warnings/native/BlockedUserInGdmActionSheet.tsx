@@ -1,29 +1,29 @@
-// Module ID: 18579
-// Function ID: 18580
+// Module ID: 18641
+// Function ID: 18642
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2068, 1392, 14742, 1087, 21, 5154, 587, 5150, 5472, 1128, 558, 576, 504, 1388, 1202, 11593, 10529, 7091, 5108, 1267, 5118, 18580, 7238, 7122, 5091, 10646, 6489, 6404, 5442, 2]
+// Dependencies: [19, 17, 2068, 1392, 14810, 1087, 21, 5191, 587, 5187, 5509, 1128, 558, 576, 504, 1388, 1202, 11652, 10592, 7144, 5145, 1267, 5155, 18642, 7290, 7175, 5128, 10709, 6542, 6457, 5479, 2]
 
-// Module 18579 (BlockedUserInGdmActionSheet)
+// Module 18641 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5108 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5472 */;
-import TableRow2 from "TableRow" /* 6404 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7091 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18580 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
+import TableRow2 from "TableRow" /* 6457 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7144 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18642 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14742 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14810 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1202).Avatar;
       tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_10(tmp(11593).UserIcon, {});
+      tmp19 = closure_10(tmp(11652).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -291,7 +291,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let tmp10;
     if (cResult[12] !== tmp8) {
       const obj3 = { users: tmp8, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10529).FacepileGroupDMAvatar;
+      const FacepileGroupDMAvatar = tmp(10592).FacepileGroupDMAvatar;
       const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -321,12 +321,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1202).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(11593).UserIcon, {});
+      tmp8 = closure_10(tmp(11652).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10529).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10592).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

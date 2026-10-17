@@ -1,8 +1,8 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16934
+// Function ID: 16935
 // Dependencies: [2]
 
-// Module 16874
+// Module 16934
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/orb_coachmark_asset_2x_animated.png.js");

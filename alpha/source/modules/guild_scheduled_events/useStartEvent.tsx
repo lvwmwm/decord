@@ -1,11 +1,11 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8939
+// Function ID: 8940
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 8894, 8895, 5854, 2]
+// Dependencies: [5, 32, 19, 558, 576, 8940, 8941, 5891, 2]
 
-// Module 8893 (useStartEvent)
+// Module 8939 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 8894 */;
+import StartEventUtilsAll from "StartEventUtils" /* 8940 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -249,7 +249,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
               aPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

@@ -1,15 +1,15 @@
-// Module ID: 14734
-// Function ID: 14735
+// Module ID: 14802
+// Function ID: 14803
 // Name: useHasXboxMonthlyOrbsPerk
-// Dependencies: [1392, 1394, 4828, 1398, 1400, 558, 576, 504, 2]
+// Dependencies: [1392, 1394, 4864, 1398, 1400, 558, 576, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk
 
-// Module 14734 (useHasXboxMonthlyOrbsPerk)
+// Module 14802 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PerksStateUtils from "PerksStateUtils" /* 1398 */;
-import PremiumUtils from "PremiumUtils" /* 4828 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

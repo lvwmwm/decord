@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, obj;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, obj;
 
 let obj40;
 let tmp;
@@ -224,14 +224,14 @@ class TimeOfDay$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.users.v1.TimeOfDay", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const time = { hours: 0, minutes: 0, seconds: 0, nanos: 0 };
     const _Object = Object;
     obj = { enumerable: false, value: this };
     _Object.defineProperty(time, _mod1212.MESSAGE_TYPE, obj);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, time, arr);
+      const result = tmpResult.reflectionMergePartial(this, time, partialSettings);
     }
     return time;
   }
@@ -330,14 +330,14 @@ class User$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.users.v1.User", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { id: "0", username: "", discriminator: "", bot: false, publicFlags: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -483,14 +483,14 @@ class MediumUser$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.users.v1.MediumUser", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { id: "0", username: "", discriminator: 0, bot: false, flags: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -645,14 +645,14 @@ class UserAvatarDecoration$Type extends MessageType4 {
     const tmp2 = new tmp("discord_protos.users.v1.UserAvatarDecoration", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { asset: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -766,14 +766,14 @@ class UserNameplate$Type extends MessageType5 {
     const tmp2 = new tmp("discord_protos.users.v1.UserNameplate", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { asset: "", palette: "", label: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -912,14 +912,14 @@ class DisplayNameStyles$Type extends MessageType6 {
     const tmp2 = new tmp("discord_protos.users.v1.DisplayNameStyles", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { fontId: 0, effectId: 0, colors: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1070,14 +1070,14 @@ class UserTypingIndicatorStyle$Type extends MessageType7 {
     const tmp2 = new tmp("discord_protos.users.v1.UserTypingIndicatorStyle", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { emojis: [], animation: 0, typingSuggestion: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1183,14 +1183,14 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     const tmp2 = new tmp("discord_protos.users.v1.TypingIndicatorEmoji", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { emoji: { oneofKind: "r" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1280,14 +1280,14 @@ class UserCollectibles$Type extends MessageType9 {
     const tmp2 = new tmp("discord_protos.users.v1.UserCollectibles", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1375,14 +1375,14 @@ class UserPrimaryGuild$Type extends MessageType10 {
     const tmp2 = new tmp("discord_protos.users.v1.UserPrimaryGuild", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1522,14 +1522,14 @@ class ScheduleRule$Type extends MessageType11 {
     const tmp2 = new tmp("discord_protos.users.v1.ScheduleRule", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { ruleId: "", label: "", days: [], enabled: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1684,14 +1684,14 @@ class RestrictedSchedule$Type extends MessageType12 {
     const tmp2 = new tmp("discord_protos.users.v1.RestrictedSchedule", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { rules: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1778,14 +1778,14 @@ class CrossPlatformRestriction$Type extends MessageType13 {
     const tmp2 = new tmp("discord_protos.users.v1.CrossPlatformRestriction", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { applicationId: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1874,14 +1874,14 @@ class BadgeCommon$Type extends MessageType14 {
     const tmp2 = new tmp("discord_protos.users.v1.BadgeCommon", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1964,14 +1964,14 @@ class AprilFools2026Badge$Type extends MessageType15 {
     const tmp2 = new tmp("discord_protos.users.v1.AprilFools2026Badge", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { level: 0, combatClass: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2064,14 +2064,14 @@ class Badge$Type extends MessageType16 {
     const tmp2 = new tmp("discord_protos.users.v1.Badge", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { badge: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2151,14 +2151,14 @@ class UserBadges$Type extends MessageType17 {
     const tmp2 = new tmp("discord_protos.users.v1.UserBadges", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { badges: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2252,14 +2252,14 @@ class AnonymizationInfo$Type extends MessageType18 {
     const tmp2 = new tmp("discord_protos.users.v1.AnonymizationInfo", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { status: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2529,14 +2529,14 @@ class UserData$Type extends MessageType19 {
     const tmp2 = new tmp("discord_protos.users.v1.UserData", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { linkedUsers: {}, safetyFeatureLimits: {}, safetyFlags: {}, isPendingRequiredAction: false, disableStaffDiscount: false, hiddenFlags: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2880,14 +2880,14 @@ class AgeAssuranceData$Type extends MessageType20 {
     const tmp2 = new tmp("discord_protos.users.v1.AgeAssuranceData", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { method: 0, methodVersion: 0, vendor: 0, estimatedAgeGroup: 0, isRegionalAdult: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3037,7 +3037,7 @@ items18[7] = {
 };
 items18[8] = { no: 9, name: "excluded_from_prediction_since", kind: "message", T: T34 };
 let tmp27 = new "binaryReadMap3"("discord_protos.users.v1.AgeAssuranceData", items18, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
-let internalBinaryWrite = tmp27;
+const __initData3 = tmp27;
 const MessageType21 = _mod1212.MessageType;
 class LinkedUser$Type extends MessageType21 {
   constructor() {
@@ -3053,14 +3053,14 @@ class LinkedUser$Type extends MessageType21 {
     const tmp2 = new tmp("discord_protos.users.v1.LinkedUser", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { userId: "0", linkType: 0, linkStatus: 0, requestorId: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3181,7 +3181,7 @@ const items19 = [
   { no: 6, name: "updated_at", kind: "message", T: T37 }
 ];
 let tmp28 = new "binaryReadMap3"("discord_protos.users.v1.LinkedUser", items19, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
-const __initData3 = tmp28;
+const __initData4 = tmp28;
 const MessageType22 = _mod1212.MessageType;
 class RateLimitData$Type extends MessageType22 {
   constructor() {
@@ -3191,14 +3191,14 @@ class RateLimitData$Type extends MessageType22 {
     const tmp2 = new tmp("discord_protos.users.v1.RateLimitData", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3280,14 +3280,14 @@ class FeatureLimits$Type extends MessageType23 {
     const tmp2 = new tmp("discord_protos.users.v1.FeatureLimits", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { map: {} };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3415,14 +3415,14 @@ class SafetyFlag$Type extends MessageType24 {
     const tmp2 = new tmp("discord_protos.users.v1.SafetyFlag", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3501,14 +3501,14 @@ class GuildShardingConfig$Type extends MessageType25 {
     const tmp2 = new tmp("discord_protos.users.v1.GuildShardingConfig", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { shards: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3602,14 +3602,14 @@ class QuestMetadata$Type extends MessageType26 {
     const tmp2 = new tmp("discord_protos.users.v1.QuestMetadata", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { questsCompleted: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3694,14 +3694,14 @@ class PremiumState$Type extends MessageType27 {
     const tmp2 = new tmp("discord_protos.users.v1.PremiumState", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { premiumSource: 0, premiumSubscriptionType: 0, premiumSubscriptionGroupRole: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3797,14 +3797,14 @@ class StoreCountry$Type extends MessageType28 {
     const tmp2 = new tmp("discord_protos.users.v1.StoreCountry", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { country: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3900,14 +3900,14 @@ class PerkConfig$Type extends MessageType29 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfig", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { source: [], kind: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4066,14 +4066,14 @@ class PerkConfigIncreasedFileUploadSize$Type extends MessageType30 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigIncreasedFileUploadSize", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { maxSize: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4146,14 +4146,14 @@ class PerkConfigIncreasedGuildLimit$Type extends MessageType31 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigIncreasedGuildLimit", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { maxGuilds: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4225,14 +4225,14 @@ class PerkConfigDisplayNameStyles$Type extends MessageType32 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigDisplayNameStyles", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { isRestrictedToAllowedOptions: false, allowedStyles: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4320,14 +4320,14 @@ class PerkConfigClientThemes$Type extends MessageType33 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigClientThemes", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { isRestrictedToAllowedOptions: false, allowedPresetIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4427,14 +4427,14 @@ class PerkConfigAppIcons$Type extends MessageType34 {
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigAppIcons", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { isRestrictedToAllowedOptions: false, allowedIconIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4529,14 +4529,14 @@ class Perks$Type extends MessageType35 {
     const tmp2 = new tmp("discord_protos.users.v1.Perks", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { activePerksBitmask: [], configByPerk: {}, rulesVersion: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4728,14 +4728,14 @@ class UserCountryData$Type extends MessageType36 {
     const tmp2 = new tmp("discord_protos.users.v1.UserCountryData", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { calculatedCountry: "", countryScores: {} };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4910,14 +4910,14 @@ class VadColors$Type extends MessageType37 {
     const tmp2 = new tmp("discord_protos.users.v1.VadColors", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { colors: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5016,14 +5016,14 @@ class AgreementAcceptance$Type extends MessageType38 {
     const tmp2 = new tmp("discord_protos.users.v1.AgreementAcceptance", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5118,14 +5118,14 @@ class AgreementsHistory$Type extends MessageType39 {
     const tmp2 = new tmp("discord_protos.users.v1.AgreementsHistory", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { terms: [], privacy: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

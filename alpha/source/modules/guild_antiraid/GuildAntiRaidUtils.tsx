@@ -1,14 +1,14 @@
-// Module ID: 8267
-// Function ID: 8268
+// Module ID: 8313
+// Function ID: 8314
 // Name: GuildAntiRaidUtils
-// Dependencies: [8268, 4761, 8269, 1128, 2]
+// Dependencies: [8314, 4797, 8315, 1128, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 8267 (GuildAntiRaidUtils)
+// Module 8313 (GuildAntiRaidUtils)
 import intl4 from "intl" /* 1128 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8269 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8268 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8315 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8314 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -22,16 +22,16 @@ export const DATE_CONFIG = date;
 export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
   let tmp = null != incidentsData.dmSpamDetectedAt;
   if (tmp) {
-    const obj = _modDef4761(incidentsData.dmSpamDetectedAt);
+    const obj = _modDef4797(incidentsData.dmSpamDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef4761();
+    tmp = addResult > _modDef4797();
   }
   if (!tmp) {
     let tmp6 = null != incidentsData.raidDetectedAt;
     if (tmp6) {
-      const obj2 = _modDef4761(incidentsData.raidDetectedAt);
+      const obj2 = _modDef4797(incidentsData.raidDetectedAt);
       const addResult1 = obj2.add(_false, "hours");
-      tmp6 = addResult1 > _modDef4761();
+      tmp6 = addResult1 > _modDef4797();
     }
     tmp = tmp6;
   }
@@ -40,18 +40,18 @@ export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
 export const hasDetectedRaid = function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {
-    const obj = _modDef4761(raidDetectedAt.raidDetectedAt);
+    const obj = _modDef4797(raidDetectedAt.raidDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef4761();
+    tmp = addResult > _modDef4797();
   }
   return tmp;
 };
 export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
   let tmp = null != dmSpamDetectedAt.dmSpamDetectedAt;
   if (tmp) {
-    const obj = _modDef4761(dmSpamDetectedAt.dmSpamDetectedAt);
+    const obj = _modDef4797(dmSpamDetectedAt.dmSpamDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef4761();
+    tmp = addResult > _modDef4797();
   }
   return tmp;
 };
@@ -60,9 +60,9 @@ export const getIncidentAlertType = function getIncidentAlertType(guildIncident)
   if (null != guildIncident) {
     let tmp2 = null != guildIncident.raidDetectedAt;
     if (tmp2) {
-      const obj = _modDef4761(guildIncident.raidDetectedAt);
+      const obj = _modDef4797(guildIncident.raidDetectedAt);
       const addResult = obj.add(_false, "hours");
-      tmp2 = addResult > _modDef4761();
+      tmp2 = addResult > _modDef4797();
     }
     const GuildIncidentAlertTypes = GuildAntiRaidTypes.GuildIncidentAlertTypes;
     tmp = tmp2 ? GuildIncidentAlertTypes.JOIN_RAID : GuildIncidentAlertTypes.DM_RAID;

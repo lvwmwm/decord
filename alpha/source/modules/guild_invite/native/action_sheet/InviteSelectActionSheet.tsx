@@ -1,17 +1,17 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 19018
+// Function ID: 19019
 // Name: InviteSelectActionSheet
-// Dependencies: [19, 21, 5154, 587, 558, 576, 5118, 7064, 6486, 6487, 7065, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 5155, 7117, 6539, 6540, 7118, 2]
 
-// Module 18956 (InviteSelectActionSheet)
+// Module 19018 (InviteSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import TableRadioRow from "TableRadioRow" /* 6486 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6487 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7065 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import TableRadioRow from "TableRadioRow" /* 6539 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6540 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSele
   }
   const content = tmp4.content;
   if (cResult[2] !== title) {
-    const tmp8 = jsx(onChange(7064).BottomSheetTitleHeader, { title });
+    const tmp8 = jsx(onChange(7117).BottomSheetTitleHeader, { title });
     cResult[2] = title;
     cResult[3] = tmp8;
     tmp6 = tmp8;
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSele
           return tmp15;
         }
       }
-      const tmp17 = jsx(onChange(7065).BottomSheet, { contentStyles: content, header: tmp6, children: tmp13 });
+      const tmp17 = jsx(onChange(7118).BottomSheet, { contentStyles: content, header: tmp6, children: tmp13 });
       cResult[11] = tmp4.content;
       cResult[12] = tmp6;
       cResult[13] = tmp13;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSele
       tmp15 = tmp17;
     }
   }
-  const tmp14 = jsx(onChange(6487).TableRadioGroup, { value, onChange: tmp5, hasIcons: false, children: tmp9 });
+  const tmp14 = jsx(onChange(6540).TableRadioGroup, { value, onChange: tmp5, hasIcons: false, children: tmp9 });
   cResult[7] = tmp5;
   cResult[8] = tmp9;
   cResult[9] = value;

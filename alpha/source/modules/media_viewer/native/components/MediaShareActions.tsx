@@ -1,39 +1,39 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8726
+// Function ID: 8727
 // Name: MediaShareActions
-// Dependencies: [19, 8681, 2068, 5495, 8708, 1087, 7217, 21, 573, 8469, 8489, 5118, 8620, 5482, 8709, 8616, 7109, 4867, 8718, 4865, 12606, 5165, 5038, 12531, 2002, 9918, 8713, 5106, 1128, 12618, 13913, 5100, 13735, 13536, 8435, 558, 576, 7118, 7122, 2]
+// Dependencies: [19, 8727, 2068, 5532, 8754, 1087, 7269, 21, 573, 8515, 8535, 5155, 8666, 5519, 8755, 8662, 7162, 4903, 8764, 4901, 12671, 5202, 5075, 12596, 2002, 9982, 8759, 5143, 1128, 12683, 13981, 5137, 13803, 13602, 8481, 558, 576, 7171, 7175, 2]
 
-// Module 8680 (MediaShareActions)
+// Module 8726 (MediaShareActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl8 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ToastUtils from "ToastUtils" /* 4867 */;
-import useChatLayout from "useChatLayout" /* 5038 */;
-import LinkIcon from "LinkIcon" /* 5100 */;
-import DownloadIcon from "DownloadIcon" /* 5106 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import transitionToChannel from "transitionToChannel" /* 5165 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5482 */;
-import ClipboardUtils from "ClipboardUtils" /* 7109 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7118 */;
-import ActionSheet2 from "ActionSheet" /* 7122 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7217 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8435 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8616 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8620 */;
-import showShareActionSheet from "showShareActionSheet" /* 8709 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8718 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12606 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12618 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 13536 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 13735 */;
-import ShareIcon from "ShareIcon" /* 13913 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import useChatLayout from "useChatLayout" /* 5075 */;
+import LinkIcon from "LinkIcon" /* 5137 */;
+import DownloadIcon from "DownloadIcon" /* 5143 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import transitionToChannel from "transitionToChannel" /* 5202 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5519 */;
+import ClipboardUtils from "ClipboardUtils" /* 7162 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7171 */;
+import ActionSheet2 from "ActionSheet" /* 7175 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7269 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8481 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8662 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8666 */;
+import showShareActionSheet from "showShareActionSheet" /* 8755 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12671 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12683 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 13602 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 13803 */;
+import ShareIcon from "ShareIcon" /* 13981 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8681 */;
+import ICYMIStore from "ICYMIStore" /* 8727 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5495 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8708 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8754 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -200,7 +200,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = source);
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(12531, tmp2.paths), closure_11, obj2);
+      tmpResult.openLazy(asyncRequire(12596, tmp2.paths), closure_11, obj2);
     }
   }, items8);
   let tmpResult = tmp(tmp2[25]);
@@ -320,7 +320,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaShare
         tmp6 = cResult[5];
       }
       if (cResult[7] !== tmp6) {
-        const ActionSheet = tmp(7122).ActionSheet;
+        const ActionSheet = tmp(7175).ActionSheet;
         const tmp12 = <ActionSheet>{null}</ActionSheet>;
         cResult[7] = tmp6;
         cResult[8] = tmp12;

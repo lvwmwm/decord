@@ -1,12 +1,12 @@
-// Module ID: 11776
-// Function ID: 11777
+// Module ID: 11838
+// Function ID: 11839
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 9297, 2026, 558, 576, 504, 2]
+// Dependencies: [19, 6311, 2026, 558, 576, 504, 2]
 
-// Module 11776 (useDeveloperActivityShelfItems)
+// Module 11838 (useDeveloperActivityShelfItems)
 import Constants from "Constants" /* 2026 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9297 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 6311 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

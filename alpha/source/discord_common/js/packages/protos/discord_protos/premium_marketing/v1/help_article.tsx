@@ -1,11 +1,11 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9427
+// Function ID: 9428
 // Name: help_article
-// Dependencies: [32, 1212, 9362, 2]
+// Dependencies: [32, 1212, 9426, 2]
 
-// Module 9363 (help_article)
+// Module 9427 (help_article)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9362 */;
+import localized_string from "localized_string" /* 9426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -22,14 +22,14 @@ class HelpArticle$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.HelpArticle", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { id: "", linkText: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

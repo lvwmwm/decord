@@ -1,23 +1,23 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8925
+// Function ID: 8926
 // Name: GuildEventsListActionSheet
-// Dependencies: [19, 17, 6254, 2074, 1087, 6186, 21, 5154, 558, 576, 8880, 8764, 1128, 8792, 7064, 8881, 8745, 8741, 1267, 5459, 7024, 6385, 8884, 7065, 2]
+// Dependencies: [19, 17, 6291, 2074, 1087, 6223, 21, 5191, 558, 576, 8926, 8810, 1128, 8838, 7117, 8927, 8791, 8787, 1267, 5496, 7077, 6438, 8930, 7118, 2]
 
-// Module 8879 (GuildEventsListActionSheet)
+// Module 8925 (GuildEventsListActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
-import ReadStateConstants from "ReadStateConstants" /* 6186 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7024 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8741 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8745 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8764 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8880 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7077 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8787 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8791 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8810 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8926 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6254 */;
-import createStyles from "createStyles" /* 5154 */;
+import ReadStateStore from "ReadStateStore" /* 6291 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
         }
         return tmp11;
       }
-      const tmp13 = jsx(tmp(7064).BottomSheetTitleHeader, { title: tmp6, trailing: tmp8 });
+      const tmp13 = jsx(tmp(7117).BottomSheetTitleHeader, { title: tmp6, trailing: tmp8 });
       cResult[8] = tmp6;
       cResult[9] = tmp8;
       cResult[10] = tmp13;
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
     }
     let tmp9 = tmp4;
     if (tmp9) {
-      const ActionSheetHeaderPressableText = tmp(8792).ActionSheetHeaderPressableText;
+      const ActionSheetHeaderPressableText = tmp(8838).ActionSheetHeaderPressableText;
       const intl3 = tmp(1128).intl;
       const intl4 = tmp(1128).intl;
       tmp9 = <ActionSheetHeaderPressableText accessibilityLabel={intl3.string(tmp(1128).t["60lJ0C"])} label={intl4.string(tmp(1128).t.NzROFF)} onPress={tmp5} />;
@@ -122,7 +122,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   let tmp = dependencyMap;
   let tmp3Result = useCanCreateAnEventDefault(guild.id);
   importDefault = tmp3Result;
-  const BottomSheetTitleHeader = guild(7064).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = guild(7117).BottomSheetTitleHeader;
   if (eventCount > 0) {
     const intl2 = tmp4(1128).intl;
     let obj = { count: eventCount };
@@ -152,7 +152,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
           }
         }
     };
-    const ActionSheetHeaderPressableText = tmp4(8792).ActionSheetHeaderPressableText;
+    const ActionSheetHeaderPressableText = tmp4(8838).ActionSheetHeaderPressableText;
     intl3 = tmp4(1128).intl;
     intl4 = tmp4(1128).intl;
     tmp3Result = tmp3(ActionSheetHeaderPressableText, obj3);
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
   const cResult = obj.c(31);
   guild = guild.guild;
   const tmp4 = arr;
-  arr = arr(8881)(guild.id);
+  arr = arr(8927)(guild.id);
   closure_10();
   if (cResult[0] !== guild.id) {
     cResult[0] = guild.id;
@@ -215,7 +215,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
       if (cResult[10] === guild.id) {
         tmp16 = cResult[11];
       }
-      tmp4(5459)(tmp16);
+      tmp4(5496)(tmp16);
       if (cResult[12] !== guild.id) {
         class M {
           constructor() {
@@ -314,7 +314,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
 }) : (function GuildEventsListActionSheet(guild) {
   guild = guild.guild;
   let events;
-  events = events(8881)(guild.id);
+  events = events(8927)(guild.id);
   const tmp = closure_10();
   const items = [events, guild.id];
   const ref = react.useRef(ReadStateStore.ackMessageId(guild.id, ReadStateTypes.GUILD_EVENT));
@@ -345,7 +345,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
     };
     let result = obj.openGuildEventDetails(obj2);
   }, items1);
-  events(5459)(() => {
+  events(5496)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guild.id, guild_events_count: arr.length };
     obj.track(AnalyticEvents.OPEN_MODAL, obj2);
@@ -357,11 +357,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
       obj.ackGuildFeature(tmp.id, ReadStateTypes.GUILD_EVENT);
     }
   }, items2);
-  BottomSheet = guild(7065).BottomSheet;
+  BottomSheet = guild(7118).BottomSheet;
   const intl = guild(1128).intl;
   let obj2 = { eventCount: events.length, guild };
-  ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(6385)(ref) });
-  events(8884);
+  ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(6438)(ref) });
+  events(8930);
   return <BottomSheet showGradient scrollable={events.length > 0} startExpanded dismissAccessibilityLabel={intl.string(guild(1128).t.VSlyAn)} header={null}>{null}</BottomSheet>;
 });
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsListActionSheet.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7608
-// Function ID: 7609
+// Module ID: 7654
+// Function ID: 7655
 // Name: AdDecisionUtils
-// Dependencies: [1104, 6198, 2]
+// Dependencies: [1104, 6235, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7608 (AdDecisionUtils)
+// Module 7654 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1104 */;
-import AdCreativeType from "AdCreativeType" /* 6198 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
 import size from "module_2" /* 2 */;
 
 const result = 6 * DurationsDefault.Millis.HOUR;

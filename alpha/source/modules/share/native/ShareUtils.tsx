@@ -1,14 +1,14 @@
-// Module ID: 14844
-// Function ID: 14845
+// Module ID: 14913
+// Function ID: 14914
 // Name: ShareUtils
-// Dependencies: [5, 7464, 5148, 4868, 5108, 9500, 8140, 7979, 7977, 7589, 9488, 7399, 2]
+// Dependencies: [5, 7510, 5185, 4904, 5145, 9564, 8186, 8025, 8023, 7635, 9552, 7445, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 14844 (ShareUtils)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5108 */;
-import MessageConstants from "MessageConstants" /* 5148 */;
-import DraftStore from "DraftStore" /* 7464 */;
+// Module 14913 (ShareUtils)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
+import MessageConstants from "MessageConstants" /* 5185 */;
+import DraftStore from "DraftStore" /* 7510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let obj = function _sendShareMessage() {
             future = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

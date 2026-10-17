@@ -1,10 +1,10 @@
-// Module ID: 9088
-// Function ID: 9089
+// Module ID: 9134
+// Function ID: 9135
 // Name: GuildProfileView
-// Dependencies: [19, 17, 2090, 1087, 21, 4884, 4886, 5154, 587, 558, 576, 2082, 504, 1499, 1417, 9089, 5091, 5090, 4877, 9090, 5454, 9091, 5150, 9103, 13874, 2]
+// Dependencies: [19, 17, 2090, 1087, 21, 4920, 4922, 5191, 587, 558, 576, 2082, 504, 1499, 1417, 9135, 5128, 5127, 4913, 9136, 5491, 9137, 5187, 9149, 13942, 2]
 // Exports: getBackgroundForProfile
 
-// Module 9088 (GuildProfileView)
+// Module 9134 (GuildProfileView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,20 +12,20 @@ import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
-import useToken from "useToken" /* 4877 */;
-import themes from "themes" /* 4884 */;
-import native from "native" /* 4886 */;
-import useThemeDefault from "useTheme" /* 5090 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9089 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9090 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9091 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 9103 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 13874 */;
+import useToken from "useToken" /* 4913 */;
+import themes from "themes" /* 4920 */;
+import native from "native" /* 4922 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9135 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9136 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9137 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 9149 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 13942 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let obj2;
 let size;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5150);
-const LinearGradientDefault = tmp5(5454);
+const Text_Text = tmp(5187);
+const LinearGradientDefault = tmp5(5491);
 const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -376,7 +376,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
   let tmp5Result = null != guildProfile.description && guildProfile.description.length > 0;
   if (tmp5Result) {
     let obj3 = { variant: "text-md/medium", color: "text-subtle", children: guildProfile.description };
-    tmp5Result = tmp5(guildProfile(5150).Text, obj3);
+    tmp5Result = tmp5(guildProfile(5187).Text, obj3);
   }
   items2 = [tmp5Result, closure_7(GuildProfileGamesDefault, { profile: guildProfile }), closure_7(GuildProfileTraitsDefault, { profile: guildProfile })];
   items1[2] = closure_8(View, obj2);

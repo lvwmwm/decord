@@ -1,28 +1,28 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9833
+// Function ID: 9834
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 5172, 1394, 1087, 7377, 21, 9518, 4828, 1128, 5154, 587, 558, 576, 9519, 9507, 9770, 1267, 9515, 9754, 1202, 9771, 9772, 5150, 9267, 5454, 1107, 5441, 5445, 7077, 9773, 8622, 4909, 9684, 2]
+// Dependencies: [109, 19, 17, 5209, 1394, 1087, 7423, 21, 9582, 4864, 1128, 5191, 587, 558, 576, 9583, 9571, 9834, 1267, 9579, 9818, 1202, 9835, 9836, 5187, 9327, 5491, 1107, 5478, 5482, 7130, 9837, 8668, 4945, 9748, 2]
 
-// Module 9769 (PremiumFeatureUpsell)
+// Module 9833 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl7 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PremiumUtils from "PremiumUtils" /* 4828 */;
-import spring from "spring" /* 5441 */;
-import springPresets from "springPresets" /* 5445 */;
-import LinearGradientDefault from "LinearGradient" /* 5454 */;
-import ColorConstants from "ColorConstants" /* 7377 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9515 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9518 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9579 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9582 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -298,7 +298,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(9267).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9327).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
@@ -473,7 +473,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       let tmpResult;
       if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9267).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9327).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {

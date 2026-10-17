@@ -1,13 +1,13 @@
-// Module ID: 8596
-// Function ID: 8597
+// Module ID: 8642
+// Function ID: 8643
 // Name: useBadges
-// Dependencies: [5022, 1392, 558, 576, 2044, 573, 1128, 2]
+// Dependencies: [5058, 1392, 558, 576, 2044, 573, 1128, 2]
 
-// Module 8596 (useBadges)
+// Module 8642 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import StreamerModeStore from "StreamerModeStore" /* 5022 */;
+import StreamerModeStore from "StreamerModeStore" /* 5058 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

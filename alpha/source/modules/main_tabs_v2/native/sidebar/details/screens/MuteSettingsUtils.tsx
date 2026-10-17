@@ -1,22 +1,22 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 10705
+// Function ID: 10706
 // Name: MuteSettingsUtils
-// Dependencies: [4811, 2068, 2090, 4819, 6185, 1392, 1087, 1097, 1128, 5484, 8123, 7033, 7028, 10643, 2]
+// Dependencies: [4847, 2068, 2090, 4855, 6222, 1392, 1087, 1097, 1128, 5521, 8169, 7086, 7081, 10706, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10642 (MuteSettingsUtils)
+// Module 10705 (MuteSettingsUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl7 from "intl" /* 1128 */;
-import useChannelName from "useChannelName" /* 5484 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7028 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7033 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8123 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10643 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4811 */;
+import useChannelName from "useChannelName" /* 5521 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8169 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10706 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4819 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6185 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

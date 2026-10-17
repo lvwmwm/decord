@@ -1,15 +1,21 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9160
+// Function ID: 9161
 // Name: GameUtils
-// Dependencies: [2]
+// Dependencies: [9161, 9164, 2]
 
-// Module 9114 (GameUtils)
+// Module 9160 (GameUtils)
+import waitForFrameSubscriptionDefault from "waitForFrameSubscription" /* 9161 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 9164 */;
 import size from "module_2" /* 2 */;
 
-let c0 = "not supported";
+let c2 = "not supported";
 const obj = {
   waitSubscribed() {
     return Promise.resolve();
+  },
+  waitFrameSubscribed(frameId, ACTIVITY_JOIN) {
+    const tmp = waitForFrameSubscriptionDefault;
+    return tmp(NativeRPCServerDefault, frameId, ACTIVITY_JOIN);
   },
   waitParentSubscribed() {
     return Promise.resolve();
@@ -27,11 +33,11 @@ const obj = {
     return Promise.resolve(false);
   },
   launch() {
-    const error = new Error(c0);
+    const error = new Error(c2);
     return reject(error);
   },
   launchDispatchApplication() {
-    const error = new Error(c0);
+    const error = new Error(c2);
     return reject(error);
   },
   removeShortcuts() {
@@ -41,7 +47,7 @@ const obj = {
     return Promise.resolve(false);
   },
   launchGame() {
-    const error = new Error(c0);
+    const error = new Error(c2);
     return reject(error);
   },
   isProtocolRegistered() {

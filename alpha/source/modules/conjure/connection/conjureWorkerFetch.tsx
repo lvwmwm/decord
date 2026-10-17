@@ -1,10 +1,10 @@
-// Module ID: 10984
-// Function ID: 10985
+// Module ID: 11044
+// Function ID: 11045
 // Name: conjureWorkerFetch
-// Dependencies: [5, 10982, 2]
+// Dependencies: [5, 11042, 2]
 // Exports: fetchConjureWorker
 
-// Module 10984 (conjureWorkerFetch)
+// Module 11044 (conjureWorkerFetch)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let obj = function _fetchConjureWorker() {
             closure_8 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

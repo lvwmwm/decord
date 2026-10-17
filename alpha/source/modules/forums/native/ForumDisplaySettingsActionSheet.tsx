@@ -1,14 +1,14 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13473
+// Function ID: 13474
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 2068, 12781, 21, 1128, 2077, 2078, 2079, 558, 576, 504, 8125, 5459, 7064, 8792, 6486, 6487, 6531, 5440, 587, 7122, 2]
+// Dependencies: [32, 19, 2068, 12846, 21, 1128, 2077, 2078, 2079, 558, 576, 504, 8171, 5496, 7117, 8838, 6539, 6540, 6584, 5477, 587, 7175, 2]
 
-// Module 13407 (ForumDisplaySettingsActionSheet)
-import Tracking from "Tracking" /* 8125 */;
+// Module 13473 (ForumDisplaySettingsActionSheet)
+import Tracking from "Tracking" /* 8171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import ForumChannelStore from "ForumChannelStore" /* 12781 */;
+import ForumChannelStore from "ForumChannelStore" /* 12846 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

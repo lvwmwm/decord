@@ -1,9 +1,9 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5213
+// Function ID: 5214
 // Name: VoiceStateRecord
 // Dependencies: [1407, 2]
 
-// Module 5176 (VoiceStateRecord)
+// Module 5213 (VoiceStateRecord)
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

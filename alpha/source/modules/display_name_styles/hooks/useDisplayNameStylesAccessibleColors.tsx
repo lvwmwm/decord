@@ -1,14 +1,14 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10567
+// Function ID: 10568
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 5144, 558, 576, 504, 1411, 10505, 5026, 683, 2]
+// Dependencies: [19, 5181, 558, 576, 504, 1411, 10568, 5063, 683, 2]
 
-// Module 10504 (useDisplayNameStylesAccessibleColors)
+// Module 10567 (useDisplayNameStylesAccessibleColors)
 import _modDef683 from "module_683" /* 683 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
-import ColorUtils from "ColorUtils" /* 5026 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

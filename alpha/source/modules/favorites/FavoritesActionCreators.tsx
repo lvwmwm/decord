@@ -1,10 +1,10 @@
-// Module ID: 10561
-// Function ID: 10562
+// Module ID: 10624
+// Function ID: 10625
 // Name: FavoritesActionCreators
-// Dependencies: [5, 2060, 2072, 2068, 4809, 2119, 4998, 2071, 2081, 1087, 1098, 1211, 1242, 12, 10562, 10564, 5362, 1128, 2049, 11, 10571, 10573, 2093, 1114, 10574, 2052, 2]
+// Dependencies: [5, 2060, 2072, 2068, 4845, 2119, 5034, 2071, 2081, 1087, 1098, 1211, 1242, 12, 10625, 10627, 5399, 1128, 2049, 11, 10634, 10636, 2093, 1114, 10637, 2052, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10561 (FavoritesActionCreators)
+// Module 10624 (FavoritesActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1098 */;
@@ -14,16 +14,16 @@ import wrappers from "wrappers" /* 1242 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2060 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5362 */;
-import FavoritesHooks from "FavoritesHooks" /* 10562 */;
-import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10564 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10571 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10574 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import FavoritesHooks from "FavoritesHooks" /* 10625 */;
+import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10627 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10634 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10637 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
 import FavoritesConstants from "FavoritesConstants" /* 2081 */;
 import Constants from "Constants" /* 1087 */;
@@ -37,7 +37,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f105681 = (type) => type.type !== closure_1_0(closure_1_2[11]).FavoriteChannelType.CATEGORY;
+const f106010 = (type) => type.type !== closure_1_0(closure_1_2[11]).FavoriteChannelType.CATEGORY;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
   let num2 = 0;
@@ -124,7 +124,7 @@ function cleanupChannelParentId(favoriteChannels, id) {
 }
 function countFavoritesAgainstLimit(arg0) {
   const arr = _modDef12;
-  return arr.filter(arg0, f105681).length;
+  return arr.filter(arg0, f106010).length;
 }
 function getReachedLimit(favoriteChannels, arg1) {
   let canUpsellFavoriteLimit;
@@ -141,7 +141,7 @@ function getReachedLimit(favoriteChannels, arg1) {
     if (arg1 !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
       tmp5 = null;
       const tmp2Result = _modDef12;
-      if (tmp2Result.filter(favoriteChannels, f105681).length >= favoriteLimit) {
+      if (tmp2Result.filter(favoriteChannels, f106010).length >= favoriteLimit) {
         tmp5 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
         const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
       }
@@ -413,7 +413,7 @@ let obj = function _addFavoriteChannelsToParent() {
         obj4 = {};
       }
       flag = obj4.silent ?? false;
-      return "test";
+      return "Reflect";
     })();
     let nextResult = iter.next();
     return iter;
@@ -439,7 +439,7 @@ obj = function _addFavoriteChannels() {
     await tmp7(tmp8, obj5, c2);
     await "IconComponent";
     ({ channelIds: c0, parentId: c1, source: c2 } = closure_0);
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -500,7 +500,7 @@ function removeFavoriteChannel(id, arg1) {
             }
             favoriteChannels = favoriteChannels.favoriteChannels;
             const arr = _modDef12;
-            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f105681).length);
+            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f106010).length);
           }
         }
     };
@@ -557,7 +557,7 @@ obj = function _addFavoriteCategory() {
           if (CATEGORY !== closure_2_0(closure_2_2[11]).FavoriteChannelType.CATEGORY) {
             tmp6 = null;
             const tmp4Result = closure_2_1(closure_2_2[13]);
-            if (tmp4Result.filter(favoriteChannels, f105681).length >= favoriteLimit) {
+            if (tmp4Result.filter(favoriteChannels, f106010).length >= favoriteLimit) {
               tmp6 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
               const obj3 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
             }
@@ -604,7 +604,7 @@ obj = function _addFavoriteChannelsToCategory() {
     await closure_130_27(c0, obj5, c2);
     await "IconComponent";
     ({ channelIds: c0, categoryName: c1, source: c2 } = closure_0);
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -779,7 +779,7 @@ export const setFavoritesAutoAddJoinedThreads = function setFavoritesAutoAddJoin
               if (CATEGORY !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
                 tmp12 = null;
                 const tmp26Result = _modDef12;
-                if (tmp26Result.filter(favoriteChannels, f105681).length >= favoriteLimit) {
+                if (tmp26Result.filter(favoriteChannels, f106010).length >= favoriteLimit) {
                   tmp12 = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                   obj = { limit: favoriteLimit, canUpsell: canUpsellFavoriteLimit };
                 }

@@ -1,11 +1,11 @@
-// Module ID: 17115
-// Function ID: 17116
+// Module ID: 17175
+// Function ID: 17176
 // Name: DmGdmListRenderTriggerPoint
-// Dependencies: [5076, 10405, 2]
+// Dependencies: [5113, 10468, 2]
 
-// Module 17115 (DmGdmListRenderTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5076 */;
-import Helpers from "Helpers" /* 10405 */;
+// Module 17175 (DmGdmListRenderTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5113 */;
+import Helpers from "Helpers" /* 10468 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.DM_GDM_LIST_RENDER, { location: "dm/gdm list rendered" });

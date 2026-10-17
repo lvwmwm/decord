@@ -1,14 +1,14 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10650
+// Function ID: 10651
 // Name: ChatMarkUnreadIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10588, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10651, 4912, 2]
 
-// Module 10587 (ChatMarkUnreadIcon)
+// Module 10650 (ChatMarkUnreadIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 10588 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 10651 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatMarkUn
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4876).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

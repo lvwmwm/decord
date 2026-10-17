@@ -1,35 +1,35 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17435
+// Function ID: 17436
 // Name: useGuildsBarProps
-// Dependencies: [19, 5976, 4810, 6274, 6275, 14749, 6184, 2128, 2090, 14757, 4998, 6182, 17369, 17366, 21, 17377, 17391, 17392, 17395, 17398, 17422, 17425, 17426, 17427, 17429, 17430, 17431, 17432, 17434, 558, 576, 4877, 587, 1633, 16063, 16072, 16315, 6302, 504, 17436, 17437, 5425, 1499, 17439, 6985, 2]
+// Dependencies: [19, 6013, 4846, 6333, 6334, 14818, 6221, 2128, 2090, 14826, 5034, 6219, 17428, 17425, 21, 17436, 17450, 17451, 17454, 17457, 17481, 17484, 17485, 17486, 17488, 17489, 17490, 17491, 17493, 558, 576, 4913, 587, 1633, 16129, 16138, 16381, 6360, 504, 17495, 17496, 5462, 1499, 17498, 7038, 2]
 
-// Module 17376 (useGuildsBarProps)
+// Module 17435 (useGuildsBarProps)
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensions from "useWindowDimensions" /* 1499 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6182 */;
-import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 17377 */;
-import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 17391 */;
-import GuildsBarMessagesDefault from "GuildsBarMessages" /* 17392 */;
-import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 17395 */;
-import GuildsBarGuildDefault from "GuildsBarGuild" /* 17398 */;
-import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 17422 */;
-import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 17425 */;
-import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 17426 */;
-import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 17427 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 17429 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6219 */;
+import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 17436 */;
+import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 17450 */;
+import GuildsBarMessagesDefault from "GuildsBarMessages" /* 17451 */;
+import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 17454 */;
+import GuildsBarGuildDefault from "GuildsBarGuild" /* 17457 */;
+import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 17481 */;
+import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 17484 */;
+import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 17485 */;
+import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 17486 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 17488 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
-import LurkingStore from "LurkingStore" /* 4810 */;
-import MessageRequestStore from "MessageRequestStore" /* 6274 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6275 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14749 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6184 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import MessageRequestStore from "MessageRequestStore" /* 6333 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6334 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14818 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6221 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PrivateChannelReadStateStore_mod from "PrivateChannelReadStateStore" /* 14757 */;
-import SelectedGuildStore_mod from "SelectedGuildStore" /* 4998 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17369 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17366 */;
+import PrivateChannelReadStateStore_mod from "PrivateChannelReadStateStore" /* 14826 */;
+import SelectedGuildStore_mod from "SelectedGuildStore" /* 5034 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17428 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17425 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let _require, importDefault;
 
 let closure_17;
 let closure_18;
-const f128751 = (item) => {
+const f129049 = (item) => {
   if ("unavailable-guilds" === item) {
     return closure_1_19(itemSize(itemMargin[25]), {}, item);
   } else if ("empty-nux" === item) {
@@ -958,7 +958,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
                                                                     },
                                     renderFooter() {
                                                                       GuildsBarFooterWrapperDefault;
-                                                                      return <tmp>{closure_13.map(f128751)}</tmp>;
+                                                                      return <tmp>{closure_13.map(f129049)}</tmp>;
                                                                     },
                                     getRecyclerKey(arg0, arg1, arg2) {
                                                                       if (arg1 >= constants.GUILDS) {
@@ -1425,7 +1425,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
         },
         renderFooter() {
           GuildsBarFooterWrapperDefault;
-          return <tmp>{items1.map(f128751)}</tmp>;
+          return <tmp>{items1.map(f129049)}</tmp>;
         },
         getRecyclerKey(arg0, arg1, arg2) {
           if (arg1 >= stateFromStores3.GUILDS) {

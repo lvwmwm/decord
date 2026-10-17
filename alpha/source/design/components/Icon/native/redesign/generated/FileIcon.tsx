@@ -1,14 +1,14 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11989
+// Function ID: 11990
 // Name: FileIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11927, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11990, 4912, 2]
 
-// Module 11926 (FileIcon)
+// Module 11989 (FileIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 11927 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 11990 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4876).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

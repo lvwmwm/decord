@@ -1,31 +1,31 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18110
+// Function ID: 18111
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1261, 7395, 18020, 9357, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18051, 1630, 8313, 18052, 8309, 7390, 18053, 14424, 10335, 10334, 10340, 4997, 2052, 18054, 18055, 18018, 18032, 15570, 12749, 2]
+// Dependencies: [32, 1261, 7441, 18080, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18111, 1630, 8359, 18112, 8355, 7436, 18113, 14492, 10399, 10398, 10406, 5033, 2052, 18114, 18115, 18078, 18092, 15632, 12814, 2]
 
-// Module 18050 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 18110 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7390 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8309 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8313 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10340 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12749 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14424 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15570 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18018 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 18032 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18051 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18055 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8355 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10406 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12814 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14492 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15632 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18078 */;
+import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 18092 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18111 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7395 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18020 */;
-import PromotionsStore from "PromotionsStore" /* 9357 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18080 */;
+import PromotionsStore from "PromotionsStore" /* 9421 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import UserRequiredActionStore_mod from "UserRequiredActionStore" /* 2062 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -40,7 +40,7 @@ let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_REACTIVATION_TRIAL_ID;
 let tmp4;
-const useGiftingPromotionAssetsReadyDefault = tmp4(18054);
+const useGiftingPromotionAssetsReadyDefault = tmp4(18114);
 let UserRequiredActionStore = UserRequiredActionStore_mod;
 const PlatformTypes = Constants.PlatformTypes;
 ({ PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID } = PremiumConstants);
@@ -884,12 +884,12 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp38;
   let tmp8;
   let tmp9;
-  const f132636 = () => {
+  const f132938 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f132638 = () => {
+  const f132940 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -914,8 +914,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult21 = get_initialized;
-  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f132636);
-  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f132636), 2);
+  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f132938);
+  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f132938), 2);
   const tmpResult22 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult22.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -929,14 +929,14 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   const isEligibleSenderForReferralProgram = tmpResult24.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult25 = get_initialized;
-  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f132638);
-  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f132638), 2);
+  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f132940);
+  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f132940), 2);
   const tmpResult26 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult26.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18053).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18113).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult27 = usePromotionMarketingComponent;
-  const promotionMarketingComponent = tmpResult27.usePromotionMarketingComponent(tmp(10335).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const promotionMarketingComponent = tmpResult27.usePromotionMarketingComponent(tmp(10399).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -981,7 +981,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10334).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10398).GiftPromotionReminderExperiment;
   let enabled2 = GiftPromotionReminderExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult31 = GiftingBadgesUtils;
   const giftingBadgeCoachmarkVariant = tmpResult31.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });

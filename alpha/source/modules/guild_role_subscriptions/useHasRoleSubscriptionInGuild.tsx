@@ -1,9 +1,9 @@
-// Module ID: 7177
-// Function ID: 7178
+// Module ID: 7229
+// Function ID: 7230
 // Name: useHasRoleSubscriptionInGuild
 // Dependencies: [502, 2128, 2122, 2090, 1087, 558, 576, 504, 2]
 
-// Module 7177 (useHasRoleSubscriptionInGuild)
+// Module 7229 (useHasRoleSubscriptionInGuild)
 import Constants from "Constants" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;

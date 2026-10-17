@@ -1,27 +1,27 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17409
+// Function ID: 17410
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2090, 4998, 1087, 21, 5154, 587, 5150, 13308, 558, 576, 17351, 1128, 5442, 5440, 1506, 573, 1275, 9203, 2093, 5037, 8554, 16072, 2]
+// Dependencies: [32, 19, 17, 502, 2090, 5034, 1087, 21, 5191, 587, 5187, 13374, 558, 576, 17410, 1128, 5479, 5477, 1506, 573, 1275, 9263, 2093, 5074, 8600, 16138, 2]
 
-// Module 17350 (GuildsEmpty)
+// Module 17409 (GuildsEmpty)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import Stack_Stack from "Stack/Stack" /* 5440 */;
-import components_Button_Button from "components/Button/Button" /* 5442 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13308 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 17351 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13374 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 17410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,7 +166,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsEmptyC
               const _Symbol4 = Symbol;
               if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj5 = { size: "lg", text: intl3.string(intl5.t.riOUtB), onPress: handleJoinGuild };
-                const Button = tmp(5442).Button;
+                const Button = tmp(5479).Button;
                 intl3 = tmp(1128).intl;
                 const tmp38 = authStore2(Button, obj5);
                 cResult[23] = tmp38;
@@ -177,7 +177,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsEmptyC
               const _Symbol5 = Symbol;
               if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { size: "lg", variant: "secondary", text: intl4.string(intl5.t["BetvT+"]), onPress: handleCreateGuild };
-                const Button2 = tmp(5442).Button;
+                const Button2 = tmp(5479).Button;
                 intl4 = tmp(1128).intl;
                 const tmp42 = authStore2(Button2, obj6);
                 cResult[24] = tmp42;
@@ -347,7 +347,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[2];
   }
-  selectedGuildId(9203)(tmp11);
+  selectedGuildId(9263)(tmp11);
   if (cResult[3] === tmp10) {
     let tmp13;
     let tmp14;
@@ -356,9 +356,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp14 = cResult[6];
     }
     const effect = react.useEffect(tmp13, tmp14);
-    const tmpResult3 = tmp(8554);
+    const tmpResult3 = tmp(8600);
     const isScreenLandscape = tmpResult3.useIsScreenLandscape();
-    const tmpResult4 = tmp(16072);
+    const tmpResult4 = tmp(16138);
     const youBarTotalHeight = tmpResult4.useYouBarTotalHeight();
     let tmp19 = null;
     if (stateFromStores) {
@@ -372,7 +372,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(tmp(1128).t["7hB4kg"]) };
-          const Text = tmp(5150).Text;
+          const Text = tmp(5187).Text;
           intl = tmp(1128).intl;
           const tmp23 = closure_12(Text, obj4);
           cResult[10] = tmp23;
@@ -473,7 +473,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                const tmp10Result = tmp10(5037);
+                const tmp10Result = tmp10(5074);
                 let closure_0 = _slicedToArray(tmp10Result.getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[18]).CommonActions;
@@ -518,7 +518,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   selectedGuildId = tmp6;
   let obj3 = { type: tmp2(1275).ImpressionTypes.VIEW, name: tmp2(1275).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(9203);
+  const tmp7 = selectedGuildId(9263);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -542,7 +542,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                const tmp10Result = tmp10(5037);
+                const tmp10Result = tmp10(5074);
                 let closure_0 = _slicedToArray(tmp10Result.getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[18]).CommonActions;
@@ -555,9 +555,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }, items1);
-  const tmp2Result = navigation(8554);
+  const tmp2Result = navigation(8600);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(16072);
+  navigation(16138);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };
@@ -565,7 +565,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj5 = { style: tmp.headerTitle, children: closure_12(closure_5, obj6) };
     obj6 = { style: tmp.headerInner, children: closure_12(Text, obj7) };
     obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1128).t["7hB4kg"]) };
-    Text = tmp2(5150).Text;
+    Text = tmp2(5187).Text;
     intl = tmp2(1128).intl;
     items3 = [closure_12(closure_5, obj5), ];
     let tmp18;

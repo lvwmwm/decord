@@ -1,14 +1,14 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 12874
+// Function ID: 12875
 // Name: openCustomKeyboard
-// Dependencies: [1503, 6950, 5047, 12246, 2]
+// Dependencies: [1503, 7003, 5084, 12311, 2]
 // Exports: default
 
-// Module 12809 (openCustomKeyboard)
+// Module 12874 (openCustomKeyboard)
 import KeyboardUIStore from "KeyboardUIStore" /* 1503 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5047 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6950 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12246 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5084 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7003 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12311 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");

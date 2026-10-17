@@ -1,16 +1,10 @@
 // Module ID: 15299
 // Function ID: 15300
-// Dependencies: [15300]
+// Dependencies: [15300, 15301]
 
 // Module 15299
-import _mod15300 from "module_15300" /* 15300 */;
+const require = globalThis.__r;
 
 
-export default (arg0) => {
-  const tmp = _mod15300(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
-  }
-  return num;
-};
+export const shouldPolyfill = require("module_15300").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

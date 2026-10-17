@@ -1,14 +1,14 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11303
+// Function ID: 11304
 // Name: DiscordEnvironment
-// Dependencies: [5144, 1207, 11239, 2044, 2]
+// Dependencies: [5181, 1207, 11304, 2044, 2]
 // Exports: getDiscordBaseTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
-// Module 11238 (DiscordEnvironment)
+// Module 11303 (DiscordEnvironment)
 import UserSettings from "UserSettings" /* 2044 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import UIDensityConstants from "UIDensityConstants" /* 11239 */;
+import UIDensityConstants from "UIDensityConstants" /* 11304 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -49,7 +49,7 @@ function getDiscordCustomTheme() {
   return null;
 }
 ({ RESPONSIVE_DENSITY_FALLBACK: closure_4, RESPONSIVE_DENSITY_MEDIA_QUERY: hasOwnProperty, resolveUIDensity: metroRequire } = UIDensityConstants);
-const frozen = Object.freeze({ baseTheme: "dark", customTheme: null, uiDensity: "default", messageDisplayCompact: false, fontScale: 100, reducedMotion: false, highContrast: false, forcedColors: false, underlineLinks: false });
+const frozen = Object.freeze({ baseTheme: "dark", customTheme: null, uiDensity: "default", messageDisplayCompact: false, fontScale: 100, reducedMotion: false, highContrast: false, forcedColors: false, underlineLinks: false, formFactor: "desktop" });
 let closure_8 = ["custom-theme-background", "custom-client-theme"];
 const result = size.fileFinishedImporting("modules/activities/DiscordEnvironment.tsx");
 
@@ -105,7 +105,7 @@ export const getDiscordEnvironment = function getDiscordEnvironment(useReducedMo
       }
     }
   }
-  const obj = { baseTheme: str, customTheme: getDiscordCustomTheme(), uiDensity: null, messageDisplayCompact: null, fontScale: null, reducedMotion: null, highContrast: null, forcedColors: null, underlineLinks: null };
+  const obj = { baseTheme: str, customTheme: getDiscordCustomTheme(), uiDensity: null, messageDisplayCompact: null, fontScale: null, reducedMotion: null, highContrast: null, forcedColors: null, underlineLinks: null, formFactor: "mobile" };
   if (typeof window !== "undefined") {
     let tmp;
     let fontScale2;

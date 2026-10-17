@@ -1,11 +1,11 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11973
+// Function ID: 11974
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 5155, 558, 576, 4909, 2]
+// Dependencies: [32, 19, 5192, 558, 576, 4945, 2]
 
-// Module 11910 (useOptionAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
+// Module 11973 (useOptionAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
   let tmp6;
   let obj = sharedValue(576);
   const cResult = obj.c(10);
-  let obj2 = sharedValue(4909);
+  let obj2 = sharedValue(4945);
   sharedValue = obj2.useSharedValue(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [];
@@ -123,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F156791 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F157123 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F156791 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F157123 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
           let obj = { duration: 250, easing: Easing.bezier(0.25, 1.75, 0.25, 1.25) };
           const withTiming = tmp.withTiming;
           Easing = sharedValue(closure_1[5]).Easing;
-          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F156791 */ } };
+          const obj3 = { animations: obj4, initialValues: obj8, callback() { /* body not rendered: F157123 */ } };
           const withTimingResult = withTiming(1, obj);
           obj4 = { opacity: obj5.withDelay(200, withTimingResult1), transform: items };
           const obj2 = sharedValue(closure_1[2]);
@@ -229,7 +229,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptionE
 }) : (function useOptionEnteringAnimation() {
   let closure_1;
   let sharedValue;
-  let obj = sharedValue(4909);
+  let obj = sharedValue(4945);
   sharedValue = obj.useSharedValue(false);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];

@@ -1,9 +1,9 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15146
+// Function ID: 15147
 // Name: AudioEffectsExperiment
 // Dependencies: [1455, 2]
 
-// Module 15077 (AudioEffectsExperiment)
+// Module 15146 (AudioEffectsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

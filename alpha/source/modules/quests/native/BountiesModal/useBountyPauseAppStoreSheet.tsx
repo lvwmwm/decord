@@ -1,17 +1,17 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16061
+// Function ID: 16062
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6191, 1087, 9420, 558, 576, 9440, 15993, 1123, 6196, 7635, 9442, 7626, 6198, 13825, 15990, 2]
+// Dependencies: [19, 6228, 1087, 9484, 558, 576, 9504, 16059, 1123, 6233, 7681, 9506, 7672, 6235, 13893, 16056, 2]
 
-// Module 15995 (useBountyPauseAppStoreSheet)
+// Module 16061 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import QuestConstants from "QuestConstants" /* 6191 */;
-import AdCreativeType from "AdCreativeType" /* 6198 */;
-import AnalyticsActions from "AnalyticsActions" /* 7626 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 13825 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15990 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15993 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import AnalyticsActions from "AnalyticsActions" /* 7672 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 13893 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16056 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16059 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -150,7 +150,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149050 */ };
+            return () => { /* body not rendered: F149376 */ };
           }
         }
         const items = [tmp15];
@@ -179,7 +179,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       } else {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149050 */ };
+            return () => { /* body not rendered: F149376 */ };
           }
         }
         tmp18 = cResult[11];
@@ -188,7 +188,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       if (cResult[12] === bounty.cta) {
         class T {
           constructor() {
-            return () => { /* body not rendered: F149050 */ };
+            return () => { /* body not rendered: F149376 */ };
           }
         }
       }
@@ -210,11 +210,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
           obj1 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null, appStoreOverlayCarouselScrollContext: null };
           tmpResult = tmp(tmp2[11]);
           obj1.inlineStoreParams = tmpResult.getInlineStoreParamsFromCta(tmp3.cta);
-          obj1.trackOverlayEvent = function trackOverlayEvent() { /* body not rendered: F149051 */ };
-          obj1.trackOverlaySurfaceClick = function trackOverlaySurfaceClick() { /* body not rendered: F149052 */ };
+          obj1.trackOverlayEvent = function trackOverlayEvent() { /* body not rendered: F149377 */ };
+          obj1.trackOverlaySurfaceClick = function trackOverlaySurfaceClick() { /* body not rendered: F149378 */ };
           obj1.appStoreOverlayCarouselScrollContext = { adContentId: tmp3.id };
           openAppStoreOrUrlResult = openAppStoreOrUrl(obj1);
-          return openAppStoreOrUrlResult.then(() => { /* body not rendered: F149053 */ });
+          return openAppStoreOrUrlResult.then(() => { /* body not rendered: F149379 */ });
         }
       }
       cResult[12] = bounty.cta;
@@ -370,7 +370,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9420).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9484).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

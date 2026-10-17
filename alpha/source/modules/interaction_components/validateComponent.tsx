@@ -1,13 +1,13 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8525
+// Function ID: 8526
 // Name: validateComponent
-// Dependencies: [2000, 5499, 1128, 38, 2]
+// Dependencies: [2000, 5536, 1128, 38, 2]
 // Exports: default
 
-// Module 8479 (validateComponent)
+// Module 8525 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2000 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5499 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5536 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/validateComponent.tsx");

@@ -1,53 +1,39 @@
 // Module ID: 6604
 // Function ID: 6605
-// Dependencies: [19, 6583, 6594, 6605, 6606, 6607, 6608]
-// Exports: useDetectorUpdater
+// Dependencies: [1658]
+// Exports: getKeyboardAnimationConfigs
 
 // Module 6604
-import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 6594 */;
-import needsToReattach from "needsToReattach" /* 6605 */;
-import dropHandlers from "dropHandlers" /* 6606 */;
-import attachHandlers from "attachHandlers" /* 6607 */;
+import _mod1658 from "module_1658" /* 1658 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
 
-react.useCallback;
-
-export const useDetectorUpdater = function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
-  let gestureConfig;
-  _require = current;
-  const preparedGesture = current2;
-  dependencyMap = gesturesToAttach;
-  const webEventHandlersRef = webEventHandlers;
-  let obj = require("ALLOWED_PROPS");
-  const forceRender = obj.useForceRender();
-  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
-  return gesture((arg0) => {
-    const tmp3 = react_nativeDefault(current.viewRef);
-    if (tmp3 === current.previousViewTag) {
-      const obj = needsToReattach;
-      const tmp5 = require;
-      const tmp6 = preparedGesture;
-      const tmp7 = gesturesToAttach;
-      if (!obj.needsToReattach(preparedGesture, gesturesToAttach)) {
-        const tmp8 = arg0;
-        if (!tmp8) {
-          const tmp5Result = tmp5(6608);
-          tmp5Result.updateHandlers(tmp6, gestureConfig, tmp7);
-        }
-      }
-    }
-    const obj3 = dropHandlers;
-    obj3.dropHandlers(preparedGesture);
-    const obj2 = { preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp3 };
-    const obj4 = attachHandlers;
-    obj4.attachHandlers(obj2);
-    if (tmp3 !== current.previousViewTag) {
-      current.previousViewTag = tmp3;
-      current.forceRebuildReanimatedEvent = true;
-      forceRender();
-    }
-  }, items);
+const fn = function n(arg0, duration) {
+  let Easing;
+  let Easing2;
+  let Easing3;
+  if ("easeIn" === arg0) {
+    const obj2 = { easing: Easing3.in(_mod1658.Easing.ease), duration };
+    Easing3 = _mod1658.Easing;
+    return obj2;
+  } else if ("easeOut" === arg0) {
+    const obj3 = { easing: Easing2.out(_mod1658.Easing.ease), duration };
+    Easing2 = _mod1658.Easing;
+    return obj3;
+  } else if ("easeInEaseOut" === arg0) {
+    const obj4 = { easing: Easing.inOut(_mod1658.Easing.ease), duration };
+    Easing = _mod1658.Easing;
+    return obj4;
+  } else if ("linear" === arg0) {
+    const obj = { easing: _mod1658.Easing.linear, duration };
+    return obj;
+  } else if ("keyboard" === arg0) {
+    return { damping: 500, stiffness: 1000, mass: 3, overshootClamping: true, restDisplacementThreshold: 10, restSpeedThreshold: 10 };
+  }
 };
+let obj = { Easing: require("module_1658").Easing };
+fn.__closure = obj;
+fn.__workletHash = 10639588577824;
+fn.__initData = { code: "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}" };
+
+export const getKeyboardAnimationConfigs = fn;

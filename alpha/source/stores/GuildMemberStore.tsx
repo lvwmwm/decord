@@ -1,7 +1,7 @@
 // Module ID: 2128
 // Function ID: 2129
 // Name: GuildMemberStore
-// Dependencies: [2129, 2121, 502, 2068, 2122, 2090, 4795, 3, 4796, 2126, 1405, 11, 1987, 1988, 1409, 4797, 1388, 1999, 12, 4798, 504, 584, 2]
+// Dependencies: [2129, 2121, 502, 2068, 2122, 2090, 4831, 3, 4832, 2126, 1405, 11, 1987, 1988, 1409, 4833, 1388, 1999, 12, 4834, 504, 584, 2]
 // Exports: getCommunicationDisabledUserKey, getGuildIdFromCommunicationDisabledUserKey, getUserCommunicationDisabledVersion, getUserIdFromCommunicationDisabledUserKey
 
 // Module 2128 (GuildMemberStore)
@@ -17,10 +17,10 @@ import mappers from "mappers" /* 1988 */;
 import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1999 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2126 */;
 import useCommunicationDisabledNoticeStore from "useCommunicationDisabledNoticeStore" /* 2129 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4795 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4796 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4797 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4798 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import ImpersonateStore from "ImpersonateStore" /* 2121 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -30,9 +30,9 @@ import size from "module_2" /* 2 */;
 
 let closure_12, closure_14, hasOwnProperty;
 
-const f88481 = (member) => member.member;
-const f88484 = (item) => null != item;
-const f88486 = (item) => {
+const f88684 = (member) => member.member;
+const f88687 = (item) => null != item;
+const f88689 = (item) => {
   mergeMessageResolvedMembers(item);
 };
 function trackCommunicationDisabled(guildId, tmp10Result) {
@@ -46,7 +46,7 @@ function trackCommunicationDisabled(guildId, tmp10Result) {
       const joined = items.join("-");
       let result = closure_15[joined] !== tmp10Result.communicationDisabledUntil;
       if (result) {
-        tmp10Result = tmp10(4796);
+        tmp10Result = tmp10(4832);
         result = tmp10Result.isMemberCommunicationDisabled(tmp10Result);
       }
       if (result) {
@@ -108,7 +108,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "header", hoistRoleId: "analyticsLocations", iconRoleId: "keys", highestRoleId: "" };
+    return { colorString: null, colorStrings: null, colorRoleId: "ix", hoistRoleId: "kind", iconRoleId: "right", highestRoleId: "application" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {
@@ -566,7 +566,7 @@ function handleIncomingMessage(arg0) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f88484) };
+        obj = { id: guild_id, members: mapped.filter(f88687) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -601,7 +601,7 @@ function handleIncomingMessage(arg0) {
   let tmp3 = null != members && null != guildId;
   if (tmp3) {
     const _Object = Object;
-    obj = { id: guildId, members: mapped.filter(f88484) };
+    obj = { id: guildId, members: mapped.filter(f88687) };
     const entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
       let tmp;
@@ -655,7 +655,7 @@ function mergeMessageResolvedMembers(channel_id) {
       }
       let tmp4 = null != members && null != guild_id;
       if (tmp4) {
-        obj = { id: guild_id, members: mapped.filter(f88484) };
+        obj = { id: guild_id, members: mapped.filter(f88687) };
         const _Object = Object;
         const entries = Object.entries(resolved.members);
         mapped = entries.map((item) => {
@@ -689,7 +689,7 @@ function mergeMessageResolvedMembers(channel_id) {
   }
   const tmp5 = null != members && null != guild_id;
   if (tmp5) {
-    obj = { id: guild_id, members: mapped.filter(f88484) };
+    obj = { id: guild_id, members: mapped.filter(f88687) };
     let _Object = Object;
     let entries = Object.entries(resolved.members);
     mapped = entries.map((item) => {
@@ -714,7 +714,7 @@ function mergeMessageResolvedMembers(channel_id) {
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
-  const item = messages.forEach(f88486);
+  const item = messages.forEach(f88689);
 }
 function handleLoadSearchResults(data) {
   data = data.data;
@@ -727,7 +727,7 @@ function handleLoadSearchResults(data) {
       });
     });
   });
-  const item1 = items.forEach(f88486);
+  const item1 = items.forEach(f88689);
 }
 let closure_3 = useCommunicationDisabledNoticeStore.clearCommunicationDisabledNotice;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
@@ -997,7 +997,7 @@ obj = {
         const item = activity_instances.forEach((participants) => {
           let found;
           participants = participants.participants;
-          obj = { id, members: found.map(f88481) };
+          obj = { id, members: found.map(f88684) };
           found = participants.filter(isActivityParticipantValidGuildMemberDefault);
           buildMembers(obj);
         });
@@ -1829,7 +1829,7 @@ obj = {
     let tmp3 = null != embeddedActivityLocationGuildId;
     if (tmp3) {
       const participants = instance.participants;
-      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f88481) };
+      const obj2 = { id: embeddedActivityLocationGuildId, members: found.map(f88684) };
       found = participants.filter(isActivityParticipantValidGuildMemberDefault);
       tmp3 = buildMembers(obj2);
     }
@@ -1850,7 +1850,7 @@ obj = {
     let tmp4 = null != members && null != guild_id;
     if (tmp4) {
       const _Object = Object;
-      obj = { id: guild_id, members: mapped.filter(f88484) };
+      obj = { id: guild_id, members: mapped.filter(f88687) };
       const entries = Object.entries(resolved.members);
       mapped = entries.map((item) => {
         let tmp;

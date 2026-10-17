@@ -1,31 +1,31 @@
-// Module ID: 18389
-// Function ID: 18390
+// Module ID: 18450
+// Function ID: 18451
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2072, 2068, 6254, 2001, 7421, 1087, 6249, 6206, 2090, 3, 1104, 510, 9937, 1384, 584, 1257, 1267, 2094, 1297, 11, 12, 7561, 7564, 7562, 14678, 16569, 7419, 1388, 7429, 2]
+// Dependencies: [32, 5, 2072, 2068, 6291, 2001, 7467, 1087, 6286, 6243, 2090, 3, 1104, 510, 10001, 1384, 584, 1257, 1267, 2094, 1297, 11, 12, 7607, 7610, 7608, 14746, 16633, 7465, 1388, 7475, 2]
 // Exports: backgroundSync
 
-// Module 18389 (background_sync/BackgroundSync)
+// Module 18450 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import modules_Messages from "modules/Messages" /* 7419 */;
-import GuildVersionsDefault from "GuildVersions" /* 7561 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7562 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7564 */;
+import modules_Messages from "modules/Messages" /* 7465 */;
+import GuildVersionsDefault from "GuildVersions" /* 7607 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7608 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7610 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6254 */;
+import ReadStateStore from "ReadStateStore" /* 6291 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import FileSystemStore from "FileSystemStore" /* 7421 */;
+import FileSystemStore from "FileSystemStore" /* 7467 */;
 import Constants from "Constants" /* 1087 */;
-import StickersStore from "StickersStore" /* 6249 */;
+import StickersStore from "StickersStore" /* 6286 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import EmojiStore from "EmojiStore" /* 6206 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ let obj = function _backgroundSync() {
       }
       await "IconComponent";
       closure_3 = tmp;
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

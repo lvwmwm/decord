@@ -1,24 +1,24 @@
-// Module ID: 7154
-// Function ID: 7155
+// Module ID: 7207
+// Function ID: 7208
 // Name: SlayerStorefrontUtils
-// Dependencies: [5503, 7155, 2024, 2090, 4998, 7156, 7157, 1087, 1089, 5863, 7158, 12, 7159, 1386, 6203, 558, 576, 504, 7081, 2]
+// Dependencies: [5540, 7208, 2024, 2090, 5034, 7209, 7210, 1087, 1089, 5900, 7211, 12, 7212, 1386, 6240, 558, 576, 504, 7134, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer
 
-// Module 7154 (SlayerStorefrontUtils)
+// Module 7207 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import StoreUtils from "StoreUtils" /* 5863 */;
-import _mod6203 from "module_6203" /* 6203 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7155 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7158 */;
-import StorefrontUtils from "StorefrontUtils" /* 7159 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
+import StoreUtils from "StoreUtils" /* 5900 */;
+import _mod6240 from "module_6240" /* 6240 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7208 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7211 */;
+import StorefrontUtils from "StorefrontUtils" /* 7212 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7156 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7157 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7209 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7210 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -142,7 +142,7 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6203;
+    const obj = _mod6240;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
@@ -356,7 +356,7 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6203;
+  const obj = _mod6240;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
@@ -602,7 +602,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
         let obj3;
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj3 = { primaryIconAsset: "Symbol", primaryIconLabel: "current" };
+          obj3 = { primaryIconAsset: "Array", primaryIconLabel: "Reflect" };
         } else {
           const toURLSafe = URLUtilsDefault.toURLSafe;
           URLUtilsDefault;
@@ -614,7 +614,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "Symbol", primaryIconLabel: "current" };
+  return { primaryIconAsset: "Array", primaryIconLabel: "Reflect" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(value2) {
   let obj = arg1;
@@ -786,7 +786,7 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
 export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6203;
+  const obj = _mod6240;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
@@ -815,7 +815,7 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6203;
+  const obj = _mod6240;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(map1.COLLECTIBLES_SHOP) >= 0;

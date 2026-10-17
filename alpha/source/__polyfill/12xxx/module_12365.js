@@ -1,35 +1,44 @@
 // Module ID: 12365
 // Function ID: 12366
-// Dependencies: [12351, 12310, 12348]
-// Exports: createCheckInEnvelope
+// Dependencies: [12366, 12373, 12374, 12397, 12369, 12386]
+// Exports: registerSpanErrorInstrumentation
 
 // Module 12365
-import _mod12310 from "module_12310" /* 12310 */;
-import _mod12348 from "module_12348" /* 12348 */;
-import _mod12351 from "module_12351" /* 12351 */;
+import _mod12366 from "module_12366" /* 12366 */;
+import _mod12373 from "module_12373" /* 12373 */;
+import _mod12374 from "module_12374" /* 12374 */;
+import _mod12386 from "module_12386" /* 12386 */;
+import _mod12397 from "module_12397" /* 12397 */;
 
+function errorCallback() {
+  const obj = _mod12374;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const tmpResult = _mod12374;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod12397.DEBUG_BUILD) {
+      const logger = tmp(12369).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");
+    }
+    const setStatus = rootSpan.setStatus;
+    const obj2 = { code: _mod12386.SPAN_STATUS_ERROR, message: "internal_error" };
+    setStatus(obj2);
+  }
+}
+let c2 = false;
+errorCallback.tag = "sentry_tracingErrorCallback";
 
-export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  let date;
-  const obj = { sent_at: date.toISOString() };
-  date = new Date();
-  const tmp = sdk && sdk.sdk;
-  if (tmp) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
+export const registerSpanErrorInstrumentation = function registerSpanErrorInstrumentation() {
+  const tmp = c2;
+  if (!tmp) {
+    c2 = true;
+    const obj = _mod12366;
+    const result = obj.addGlobalErrorInstrumentationHandler(errorCallback);
+    const obj2 = _mod12373;
+    const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
   }
-  const tmp2 = arg3 && arg4;
-  if (tmp2) {
-    const obj4 = _mod12351;
-    obj.dsn = obj4.dsnToString(arg4);
-  }
-  const tmp5 = arg1;
-  if (tmp5) {
-    const obj5 = _mod12310;
-    obj.trace = obj5.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const items1 = [items];
-  const obj6 = _mod12348;
-  return obj6.createEnvelope(obj, items1);
 };

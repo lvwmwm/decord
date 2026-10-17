@@ -1,23 +1,23 @@
-// Module ID: 5943
-// Function ID: 5944
+// Module ID: 5980
+// Function ID: 5981
 // Name: actions/BillingActionCreators
-// Dependencies: [109, 5, 4832, 4830, 4834, 1087, 4839, 1098, 584, 1297, 5854, 4850, 4761, 4828, 5944, 5955, 4843, 5961, 5962, 1267, 2]
+// Dependencies: [109, 5, 4868, 4866, 4870, 1087, 4875, 1098, 584, 1297, 5891, 4886, 4797, 4864, 5981, 5992, 4879, 5998, 5999, 1267, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchPayments, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 5943 (actions/BillingActionCreators)
+// Module 5980 (actions/BillingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import PremiumUtils from "PremiumUtils" /* 4828 */;
-import BillingConstants from "BillingConstants" /* 4839 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5944 */;
-import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5955 */;
-import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5962 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import BillingConstants from "BillingConstants" /* 4875 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5981 */;
+import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5992 */;
+import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5999 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4832 */;
-import BillingInfoStore from "BillingInfoStore" /* 4830 */;
-import SubscriptionStore from "SubscriptionStore" /* 4834 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4868 */;
+import BillingInfoStore from "BillingInfoStore" /* 4866 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
 import Constants_mod from "Constants" /* 1087 */;
 import Constants_mod2 from "Constants" /* 1098 */;
 import size from "module_2" /* 2 */;
@@ -515,7 +515,7 @@ obj = function _fetchPayments() {
               value = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -613,12 +613,12 @@ obj = function _fetchSubscriptions() {
             let tmp30 = null == lastLazyPerkSync;
             const tmp49 = constants2;
             if (!tmp30) {
-              const obj6 = _modDef4761();
+              const obj6 = _modDef4797();
               tmp30 = obj6.diff(lastLazyPerkSync, "hours") >= 1;
             }
             if (tmp30) {
               FULL_RESYNC = tmp49.FULL_RESYNC;
-              lastLazyPerkSync = _modDef4761();
+              lastLazyPerkSync = _modDef4797();
             }
             HTTP = HTTPUtils.HTTP;
             const request = { url: constants.BILLING_SUBSCRIPTIONS, oldFormErrors: true, rejectWithError: false, query: obj4 };
@@ -861,7 +861,7 @@ obj = function _createSubscription() {
             billingError = undefined;
             c10 = 1;
             c11 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c10) {
@@ -1662,7 +1662,7 @@ obj = function _fetchIpCountryCode() {
             country_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1775,7 +1775,7 @@ obj = function _fetchIpLocation() {
             subdivision_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

@@ -1,25 +1,25 @@
-// Module ID: 19088
-// Function ID: 19089
+// Module ID: 19150
+// Function ID: 19151
 // Name: TTITestAction
-// Dependencies: [5, 18339, 5075, 6359, 502, 2068, 5002, 2090, 1087, 3, 584, 5042, 13507, 18485, 1378, 1383, 1267, 5035, 7399, 12558, 9554, 5165, 6149, 8724, 5166, 11510, 16569, 1212, 2]
+// Dependencies: [5, 18400, 5112, 6412, 502, 2068, 5038, 2090, 1087, 3, 584, 5079, 13573, 18546, 1378, 1383, 1267, 5072, 7445, 12623, 9618, 5202, 6186, 8770, 5203, 11569, 16633, 1212, 2]
 
-// Module 19088 (TTITestAction)
+// Module 19150 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtils from "AnalyticsUtils" /* 1267 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
 import react_native from "react-native" /* 1383 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
-import react_nativeDefault from "react-native" /* 5042 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6149 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6359 */;
-import ComponentProfiler from "ComponentProfiler" /* 13507 */;
-import NativeAppStartup from "NativeAppStartup" /* 18339 */;
-import react_nativeDefault2 from "react-native" /* 18485 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import react_nativeDefault from "react-native" /* 5079 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6186 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
+import ComponentProfiler from "ComponentProfiler" /* 13573 */;
+import NativeAppStartup from "NativeAppStartup" /* 18400 */;
+import react_nativeDefault2 from "react-native" /* 18546 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5075 */;
+import ExperimentStore from "ExperimentStore" /* 5112 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5002 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Constants from "Constants" /* 1087 */;
 import Dispatcher from "Dispatcher" /* 584 */;
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
             break;
           }
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f159978 = () => {
+            const f160306 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f159978(arg0);
+              return f160306(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f159978(arg0);
+    return f160306(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }

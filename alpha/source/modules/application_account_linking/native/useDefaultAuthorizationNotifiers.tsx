@@ -1,13 +1,13 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17393
+// Function ID: 17394
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2001, 1087, 558, 576, 504, 5115, 6141, 4868, 1128, 3317, 2]
+// Dependencies: [19, 2001, 1087, 558, 576, 504, 5152, 6178, 4904, 1128, 3335, 2]
 
-// Module 17334 (useDefaultAuthorizationNotifiers)
+// Module 17393 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
+import _modDef3335 from "module_3335" /* 3335 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import react_mod from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmpResult3 = tmp(5115);
+  const tmpResult3 = tmp(5152);
   const isInAppBrowserOpen = tmpResult3.useIsInAppBrowserOpen();
   if (cResult[4] !== arg0) {
     const fn2 = function _(arg0) {
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
     if (cResult[7] === value) {
       tmp13 = cResult[8];
     }
-    const tmpResult4 = tmp(6141);
+    const tmpResult4 = tmp(6178);
     const previousWhen = tmpResult4.usePreviousWhen(tmp13);
     if (cResult[9] === (stateFromStores && !isInAppBrowserOpen)) {
       if (cResult[10] === value) {
@@ -106,7 +106,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
             if (tmp3) {
               tmp.current = false;
               if (closure_2) {
-                const obj = { text: intl.string(_modDef3317.uG6teD) };
+                const obj = { text: intl.string(_modDef3335.uG6teD) };
                 const open = ToastActionCreatorsDefault.open;
                 ToastActionCreatorsDefault;
                 intl = intl2.intl;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultAu
           if (tmp3) {
             tmp.current = false;
             if (false) {
-              const obj = { text: intl.string(_modDef3317.uG6teD) };
+              const obj = { text: intl.string(_modDef3335.uG6teD) };
               const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
               intl = intl2.intl;

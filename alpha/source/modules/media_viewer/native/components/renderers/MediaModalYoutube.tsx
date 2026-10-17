@@ -1,13 +1,13 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 14000
+// Function ID: 14001
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 1087, 21, 558, 576, 8651, 6141, 8616, 8620, 13933, 1384, 2]
+// Dependencies: [32, 19, 1087, 21, 558, 576, 8697, 6178, 8662, 8666, 14001, 1384, 2]
 
-// Module 13932 (MediaModalYoutube)
+// Module 14000 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8616 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8651 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8662 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8697 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,12 +44,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   visible = visible.visible;
   ({ style, source, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
   let obj2 = react;
-  [playerState, dependencyMap] = react.useState(visible(8651).PlayerState.UNREADY);
+  [playerState, dependencyMap] = react.useState(visible(8697).PlayerState.UNREADY);
   const tmp6 = _slicedToArray(react.useState(undefined), 2);
   [tmp7, _slicedToArray] = tmp6;
-  const tmp9 = playerState(6141)(playerState);
+  const tmp9 = playerState(6178)(playerState);
   react = tmp9;
-  const tmp10 = playerState(6141)(visible);
+  const tmp10 = playerState(6178)(visible);
   let closure_5 = tmp10;
   const ref = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -238,10 +238,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         const _Symbol = Symbol;
         const forResult = Symbol.for("react.early_return_sentinel");
-        const tmpResult = tmp(8620);
+        const tmpResult = tmp(8666);
         let youtubeVideoIdFromURI = tmpResult.getYoutubeVideoIdFromURI(source.uri);
         if (youtubeVideoIdFromURI == null) {
-          const tmpResult3 = tmp(8620);
+          const tmpResult3 = tmp(8666);
           youtubeVideoIdFromURI = tmpResult3.getYoutubeClipVideoIdFromURI(source.uri);
         }
         let tmp28;
@@ -252,11 +252,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         let tmp33;
         let tmp34;
         if (null != youtubeVideoIdFromURI) {
-          if (playerState === tmp(8651).PlayerState.ERRORED) {
+          if (playerState === tmp(8697).PlayerState.ERRORED) {
             if ("embed_not_allowed" === tmp7) {
               const tmp35 = ref;
               const obj5 = { videoId: youtubeVideoIdFromURI.videoId };
-              tmp32 = ref(tmp8(13933), obj5);
+              tmp32 = ref(tmp8(14001), obj5);
             }
           }
           let str3 = "";
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const tmpResult4 = tmp(1384);
           const videoId = youtubeVideoIdFromURI.videoId;
           const isAndroidResult = tmpResult4.isAndroid();
-          const tmp8Result = playerState(8651);
+          const tmp8Result = playerState(8697);
           if (null != youtubeVideoIdFromURI.start) {
             const _HermesInternal = HermesInternal;
             let str6 = "'start': ";
@@ -385,12 +385,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp = visible;
   let tmp2 = dependencyMap;
   ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
-  [playerState, dependencyMap] = react.useState(visible(8651).PlayerState.UNREADY);
+  [playerState, dependencyMap] = react.useState(visible(8697).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
-  const tmp8 = playerState(6141)(playerState);
+  const tmp8 = playerState(6178)(playerState);
   react = tmp8;
-  const tmp9 = playerState(6141)(visible);
+  const tmp9 = playerState(6178)(visible);
   let closure_5 = tmp9;
   const ref = react.useRef(null);
   const effect = react.useEffect(() => {
@@ -472,19 +472,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }, items);
-  let obj = visible(8620);
+  let obj = visible(8666);
   let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
   if (youtubeVideoIdFromURI == null) {
-    const tmpResult = tmp(8620);
+    const tmpResult = tmp(8666);
     youtubeVideoIdFromURI = tmpResult.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp(8651).PlayerState.ERRORED) {
+    if (playerState === tmp(8697).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
         let obj2 = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(tmp7(13933), obj2);
+        return ref(tmp7(14001), obj2);
       }
     }
     const tmpResult2 = tmp(1384);
@@ -493,7 +493,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let str3 = "";
     const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: isAndroidResult || undefined, mixedContentMode: str19, nestedScrollEnabled: isAndroidResult || undefined, onError, onLoad, onLoadStart, overScrollMode: str20 };
     const tmp16 = ref;
-    const tmp7Result = tmp7(8651);
+    const tmp7Result = tmp7(8697);
     if (null != youtubeVideoIdFromURI.start) {
       let tmp18 = globalThis;
       const _HermesInternal = HermesInternal;

@@ -1,16 +1,16 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17356
+// Function ID: 17357
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 7085, 5150, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 7138, 5187, 2]
 
-// Module 17297 (ChannelItemEmbeddedActivities)
+// Module 17356 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GameIcon from "GameIcon" /* 7085 */;
+import GameIcon from "GameIcon" /* 7138 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
   const cResult = obj.c(20);
   ({ embeddedApps, size, muted } = arg0);
   if (undefined === size) {
-    size = tmp(7085).GameIconSizes.SIZE_24;
+    size = tmp(7138).GameIconSizes.SIZE_24;
   }
   const tmp4 = closure_6();
   if (embeddedApps.length <= 0) {
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
         items1[1] = obj7;
         const _HermesInternal = HermesInternal;
         obj8 = { style: tmp4.overflow, variant: "text-xs/bold", children: "+" + diff };
-        Text = tmp(5150).Text;
+        Text = tmp(5187).Text;
         tmp13 = React3(View, obj6);
       }
       cResult[8] = embeddedApps.length;
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
     const tmp17 = importDefault;
     if (2 === embeddedApps.length) {
       const obj = { game: application2, size };
-      tmp16Result = tmp16(tmp17(7085), obj);
+      tmp16Result = tmp16(tmp17(7138), obj);
     } else {
       const obj5 = { style: items1, children: React3(Text, obj7) };
       items1 = [tmp3.overflowContainer, ];
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
       items1[1] = obj6;
       const _HermesInternal = HermesInternal;
       obj7 = { style: tmp3.overflow, variant: "text-xs/bold", children: "+" + diff };
-      Text = tmp11(5150).Text;
+      Text = tmp11(5187).Text;
       tmp16Result = tmp16(tmp15, obj5);
     }
     items[1] = tmp16Result;

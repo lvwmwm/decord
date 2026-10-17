@@ -1,16 +1,16 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12801
+// Function ID: 12802
 // Name: createConversationHeader
-// Dependencies: [7968, 8112, 12212, 1128, 3767, 9832, 2]
+// Dependencies: [8014, 8158, 12275, 1128, 3785, 9896, 2]
 // Exports: default, findConversationHeaderRowIndex
 
-// Module 12736 (createConversationHeader)
+// Module 12801 (createConversationHeader)
 import intl2 from "intl" /* 1128 */;
-import _modDef3767 from "module_3767" /* 3767 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8112 */;
-import computeScrollData from "computeScrollData" /* 9832 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12212 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7968 */;
+import _modDef3785 from "module_3785" /* 3785 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8158 */;
+import computeScrollData from "computeScrollData" /* 9896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12275 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -21,7 +21,7 @@ const result = size.fileFinishedImporting("modules/conversations/native/createCo
 export default function createConversationHeader(conversationId) {
   let intl;
   let obj2;
-  const obj = { conversationId: conversationId.id, channelId: conversationId.channelId, startMessageId: conversationId.startMessageId, title: conversationId.title, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3767.pU5Dut) };
+  const obj = { conversationId: conversationId.id, channelId: conversationId.channelId, startMessageId: conversationId.startMessageId, title: conversationId.title, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3785.pU5Dut) };
   obj2 = renderer_EmbedUtils;
   intl = intl2.intl;
   return obj;

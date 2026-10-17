@@ -1,9 +1,9 @@
-// Module ID: 6132
-// Function ID: 6133
+// Module ID: 6169
+// Function ID: 6170
 // Name: CountryCodes
 // Dependencies: [2]
 
-// Module 6132 (CountryCodes)
+// Module 6169 (CountryCodes)
 import size from "module_2" /* 2 */;
 
 let obj2;

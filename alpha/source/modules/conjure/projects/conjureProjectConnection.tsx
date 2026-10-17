@@ -1,12 +1,12 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11053
+// Function ID: 11054
 // Name: conjureProjectConnection
-// Dependencies: [10897, 584, 10919, 2]
+// Dependencies: [6293, 584, 10983, 2]
 
-// Module 10991 (conjureProjectConnection)
+// Module 11053 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -28,20 +28,15 @@ let obj = {
     let attachment_id;
     icon = icon.icon;
     if (null != icon) {
-      let str = "";
       if ("" !== icon) {
         attachment_id = icon.attachment_id;
         let tmp2 = require;
         const obj = ConjureActionCreators;
         const setProjectIconResult = obj.setProjectIcon(tmp, icon);
-        const nextPromise = setProjectIconResult.then((ok) => {
-          let str = "failed";
-          if (ok.ok) {
-            str = "applied";
-          }
+        const nextPromise = setProjectIconResult.then(() => {
           const tmp2 = null != attachment_id && "" !== tmp;
           if (tmp2) {
-            ws.sendAppIconAck(attachment_id, str);
+            ws.sendAppIconAck(attachment_id, "applied");
           }
         });
         nextPromise.catch(() => {
@@ -57,10 +52,7 @@ let obj = {
     if (undefined !== cover_image.cover_image) {
       const obj = ConjureActionCreators;
       const setProjectCoverResult = obj.setProjectCover(tmp, cover_image.cover_image);
-      const nextPromise = setProjectCoverResult.then((result) => {
-
-      });
-      nextPromise.catch(() => {
+      setProjectCoverResult.catch(() => {
 
       });
     }

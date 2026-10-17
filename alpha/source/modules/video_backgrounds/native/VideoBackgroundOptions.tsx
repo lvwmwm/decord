@@ -1,16 +1,16 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11466
+// Function ID: 11467
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 5318, 21, 5154, 587, 558, 576, 5324, 1128, 6412, 9607, 11408, 5091, 2]
+// Dependencies: [19, 5355, 21, 5191, 587, 558, 576, 5361, 1128, 6465, 9671, 11467, 5128, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 11407 (VideoBackgroundOptions)
+// Module 11466 (VideoBackgroundOptions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5318 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5324 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5355 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5361 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
     intl = tmp2(1128).intl;
     ({ IconComponent: require("DenyIcon").DenyIcon });
-    const TableRowIcon = tmp2(6412).TableRowIcon;
+    const TableRowIcon = tmp2(6465).TableRowIcon;
     cResult[1] = obj2;
     tmp8 = obj2;
   } else {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
     intl2 = tmp2(1128).intl;
     ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-    const TableRowIcon2 = tmp2(6412).TableRowIcon;
+    const TableRowIcon2 = tmp2(6465).TableRowIcon;
     cResult[2] = obj4;
     tmp11 = obj4;
   } else {

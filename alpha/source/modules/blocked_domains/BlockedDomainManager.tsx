@@ -1,11 +1,11 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18451
+// Function ID: 18452
 // Name: BlockedDomainManager
-// Dependencies: [7032, 562, 2]
+// Dependencies: [7085, 562, 2]
 
-// Module 18390 (BlockedDomainManager)
+// Module 18451 (BlockedDomainManager)
 import shim from "shim" /* 562 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 class BlockedDomainManager extends AutomaticLifecycleManager {

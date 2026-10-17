@@ -1,21 +1,21 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14143
+// Function ID: 14144
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10898, 1087, 2075, 21, 5154, 587, 7169, 1128, 3865, 1114, 5118, 10919, 14074, 10922, 7122, 7064, 6998, 5442, 2]
+// Dependencies: [5, 32, 19, 17, 10962, 1087, 2075, 21, 5191, 587, 7222, 1128, 3883, 1114, 5155, 10983, 14142, 10986, 7175, 7117, 7051, 5479, 2]
 // Exports: default
 
-// Module 14075 (ConjureCustomWidgetSheet)
+// Module 14143 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import _modDef3865 from "module_3865" /* 3865 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap;
@@ -194,21 +194,21 @@ export default function ConjureCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_11(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(7122).ActionSheet;
-  obj2 = { title: intl.string(_modDef3865.yI85oV) };
-  BottomSheetTitleHeader = value(7064).BottomSheetTitleHeader;
+  const ActionSheet = value(7175).ActionSheet;
+  obj2 = { title: intl.string(_modDef3883.yI85oV) };
+  BottomSheetTitleHeader = value(7117).BottomSheetTitleHeader;
   intl = value(1128).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3865["09BSx3"]), placeholder: intl3.string(_modDef3865.K7zdCZ), description: intl4.string(_modDef3865.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14074).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(6998).TextArea;
+  let obj4 = { label: intl2.string(_modDef3883["09BSx3"]), placeholder: intl3.string(_modDef3883.K7zdCZ), description: intl4.string(_modDef3883.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14142).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(7051).TextArea;
   intl2 = value(1128).intl;
   intl3 = value(1128).intl;
   intl4 = value(1128).intl;
   tmp15 = closure_12;
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
-  let obj5 = { variant: "primary", text: intl5.string(_modDef3865.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5442).Button;
+  let obj5 = { variant: "primary", text: intl5.string(_modDef3883.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
+  const Button = tmp12(5479).Button;
   intl5 = tmp12(1128).intl;
   items1[1] = closure_11(Button, obj5);
   return closure_11(ActionSheet, obj);

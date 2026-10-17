@@ -1,11 +1,11 @@
-// Module ID: 6295
-// Function ID: 6296
+// Module ID: 6353
+// Function ID: 6354
 // Name: getChannelDetailsFromRoute
-// Dependencies: [5035, 2]
+// Dependencies: [5072, 2]
 // Exports: default
 
-// Module 6295 (getChannelDetailsFromRoute)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
+// Module 6353 (getChannelDetailsFromRoute)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/navigation/native/getChannelDetailsFromRoute.tsx");

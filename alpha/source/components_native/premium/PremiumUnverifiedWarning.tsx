@@ -1,17 +1,17 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14644
+// Function ID: 14645
 // Name: PremiumUnverifiedWarning
-// Dependencies: [19, 1392, 21, 5154, 587, 4886, 1202, 1128, 504, 2]
+// Dependencies: [19, 1392, 21, 5191, 587, 4922, 1202, 1128, 504, 2]
 
-// Module 14576 (PremiumUnverifiedWarning)
+// Module 14644 (PremiumUnverifiedWarning)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import native2 from "native" /* 4886 */;
+import native2 from "native" /* 4922 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

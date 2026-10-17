@@ -1,15 +1,15 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 9233
+// Function ID: 9234
 // Name: useGameProfileMobileStoreReviews
-// Dependencies: [558, 576, 9174, 2]
+// Dependencies: [558, 576, 9234, 2]
 
-// Module 9173 (useGameProfileMobileStoreReviews)
+// Module 9233 (useGameProfileMobileStoreReviews)
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GameProfileMobileReviewsExperiment = tmp(9174);
+const GameProfileMobileReviewsExperiment = tmp(9234);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileMobileStoreReviews(arg0) {
   let first;
   const obj = react;

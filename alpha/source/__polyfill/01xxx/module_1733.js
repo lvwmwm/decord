@@ -94,9 +94,9 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "duration",
+      current: "enabled",
       lastTimestamp: null,
-      startTimestamp: "CONJURE_DEBUG_COMPACTION_REPORT",
+      startTimestamp: "frame",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

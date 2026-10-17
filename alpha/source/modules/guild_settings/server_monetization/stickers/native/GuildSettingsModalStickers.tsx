@@ -1,27 +1,27 @@
-// Module ID: 18704
-// Function ID: 18705
+// Module ID: 18766
+// Function ID: 18767
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 2090, 4809, 1392, 1087, 2047, 21, 1128, 18705, 9645, 14528, 5154, 587, 1633, 504, 8802, 18707, 6951, 8248, 5150, 5859, 5442, 18708, 8809, 5440, 6489, 6404, 8449, 10009, 1202, 5472, 6413, 18714, 2]
+// Dependencies: [19, 17, 2090, 4845, 1392, 1087, 2047, 21, 1128, 18767, 9709, 14596, 5191, 587, 1633, 504, 8848, 18769, 7004, 8294, 5187, 5896, 5479, 18770, 8855, 5477, 6542, 6457, 8495, 10073, 1202, 5509, 6466, 18776, 2]
 
-// Module 18704 (GuildSettingsModalStickers)
+// Module 18766 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import StickersConstants from "StickersConstants" /* 2047 */;
-import TableRow2 from "TableRow" /* 6404 */;
-import TableRowGroup2 from "TableRowGroup" /* 6489 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8248 */;
-import BoostGemIcon from "BoostGemIcon" /* 9645 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 14528 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18705 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18708 */;
+import TableRow2 from "TableRow" /* 6457 */;
+import TableRowGroup2 from "TableRowGroup" /* 6542 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
+import BoostGemIcon from "BoostGemIcon" /* 9709 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14596 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18767 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18770 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let intl4;
 let map1;
 let metroImportAll;
 let tmp2;
-const LockIcon = tmp2(8449);
+const LockIcon = tmp2(8495);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroImportAll, BoostedGuildTiers } = Constants);
 const GuildFeatures = Constants.GuildFeatures;

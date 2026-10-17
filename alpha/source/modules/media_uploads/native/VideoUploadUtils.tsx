@@ -1,10 +1,10 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8046
+// Function ID: 8047
 // Name: VideoUploadUtils
 // Dependencies: [1209, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata
 
-// Module 8000 (VideoUploadUtils)
+// Module 8046 (VideoUploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import size_mod from "module_2" /* 2 */;

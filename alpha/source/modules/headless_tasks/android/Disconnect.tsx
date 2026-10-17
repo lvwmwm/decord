@@ -1,11 +1,11 @@
-// Module ID: 19089
-// Function ID: 19090
+// Module ID: 19151
+// Function ID: 19152
 // Name: Disconnect
-// Dependencies: [2068, 19090, 9012, 2]
+// Dependencies: [2068, 19152, 9058, 2]
 
-// Module 19089 (Disconnect)
-import CallsUtils from "CallsUtils" /* 9012 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19090 */;
+// Module 19151 (Disconnect)
+import CallsUtils from "CallsUtils" /* 9058 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19152 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 

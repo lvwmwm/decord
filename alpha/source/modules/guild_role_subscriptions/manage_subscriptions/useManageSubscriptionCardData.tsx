@@ -1,17 +1,17 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16277
+// Function ID: 16278
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2090, 4802, 1087, 4761, 7163, 1128, 558, 576, 16202, 504, 16200, 2]
+// Dependencies: [32, 19, 2090, 4838, 1087, 4797, 7216, 1128, 558, 576, 16268, 504, 16266, 2]
 
-// Module 16211 (useManageSubscriptionCardData)
+// Module 16277 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import PriceUtils from "PriceUtils" /* 7163 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import PriceUtils from "PriceUtils" /* 7216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore_mod from "GuildStore" /* 2090 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4802 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ function computeSubscriptionInfo(subscription) {
   let stringResult;
   subscription = subscription.subscription;
   let str = "";
-  const obj = _modDef4761(subscription.currentPeriodEnd);
+  const obj = _modDef4797(subscription.currentPeriodEnd);
   const formatResult = obj.format("M/D/YY");
   if (null != subscription.price) {
     const obj2 = PriceUtils;
     str = obj2.formatPrice(subscription.price, subscription.currency);
   }
-  const obj3 = _modDef4761(subscription.createdAt);
+  const obj3 = _modDef4797(subscription.createdAt);
   const obj4 = { memberSince: obj3.format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: stringResult, subscriptionPrice: str, isCancelled: subscription.status === SubscriptionStatusTypes.CANCELED, isPastDue: status === PAST_DUE, isTrial: hasActiveTrial };
   status = subscription.status;
   PAST_DUE = SubscriptionStatusTypes.PAST_DUE;

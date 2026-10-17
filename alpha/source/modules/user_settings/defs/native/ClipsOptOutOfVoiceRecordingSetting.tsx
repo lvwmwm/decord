@@ -1,14 +1,14 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16019
+// Function ID: 16020
 // Name: ClipsOptOutOfVoiceRecordingSetting
-// Dependencies: [5, 8214, 2044, 584, 11003, 1128, 2]
+// Dependencies: [5, 8260, 2044, 584, 11065, 1128, 2]
 
-// Module 15953 (ClipsOptOutOfVoiceRecordingSetting)
+// Module 16019 (ClipsOptOutOfVoiceRecordingSetting)
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

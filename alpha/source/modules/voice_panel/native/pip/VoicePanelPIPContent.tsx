@@ -1,41 +1,41 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 18291
+// Function ID: 18292
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2067, 6255, 11148, 6116, 502, 2068, 1392, 12849, 18122, 1087, 2026, 5177, 21, 5154, 587, 4909, 5454, 558, 576, 12848, 18193, 11212, 1123, 4886, 18123, 18121, 6386, 573, 1499, 11236, 9261, 8605, 5294, 11216, 1202, 11222, 12851, 6986, 18073, 5283, 11200, 2]
+// Dependencies: [32, 19, 17, 2067, 6292, 11213, 6153, 502, 2068, 1392, 12914, 18183, 1087, 2026, 5214, 21, 5191, 587, 4945, 5491, 558, 576, 12913, 18254, 11277, 1123, 4922, 18184, 18182, 6439, 573, 1499, 11301, 18133, 5331, 11281, 1202, 9321, 11287, 12916, 7039, 18134, 5320, 11265, 2]
 
-// Module 18230 (VoicePanelPIPContent)
+// Module 18291 (VoicePanelPIPContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import useWindowDimensions from "useWindowDimensions" /* 1499 */;
-import native from "native" /* 4886 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4909 */;
-import ExternalPipDefault from "ExternalPip" /* 5283 */;
-import LinearGradientDefault from "LinearGradient" /* 5454 */;
-import NativeViewDefault from "NativeView" /* 6386 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12848 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12849 */;
-import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 12851 */;
-import VideoActionCreators from "VideoActionCreators" /* 18073 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18121 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18122 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18123 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 18193 */;
+import native from "native" /* 4922 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import ExternalPipDefault from "ExternalPip" /* 5320 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import NativeViewDefault from "NativeView" /* 6439 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12913 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12914 */;
+import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 12916 */;
+import VideoActionCreators from "VideoActionCreators" /* 18134 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18182 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18183 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18184 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 18254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2067 */;
-import ChannelRTCStore_mod from "ChannelRTCStore" /* 6255 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11148 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
+import ChannelRTCStore_mod from "ChannelRTCStore" /* 6292 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11213 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants_mod from "Constants" /* 1087 */;
 import Constants_mod2 from "Constants" /* 2026 */;
-import CallConstants from "CallConstants" /* 5177 */;
+import CallConstants from "CallConstants" /* 5214 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -57,10 +57,10 @@ let obj2;
 let size;
 let size1;
 let tmp3;
-const ReanimatedNativeViewDefault = tmp3(6986);
-const useProfileTileGradientDefault = tmp3(8605);
-const VideoRendererNativeComponentDefault = tmp3(11212);
-const AssetRegistryDefault = tmp3(11222);
+const ReanimatedNativeViewDefault = tmp3(7039);
+const VideoRendererNativeComponentDefault = tmp3(11277);
+const AssetRegistryDefault = tmp3(11287);
+const useUserTileBackgroundDefault = tmp3(18133);
 function markContentReady() {
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   ComponentDispatch.dispatch(constants2.VOICE_PANEL_PIP_CONTENT_READY);
@@ -199,9 +199,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTra
       tmp5 = cResult[3];
     }
     const effect = react.useEffect(tmp4, tmp5);
-    return arg1 === tmp(4886).TransitionStates.YEETED ? onTop.onTop : onTop.onBottom;
+    return arg1 === tmp(4922).TransitionStates.YEETED ? onTop.onTop : onTop.onBottom;
   }
-  const fn = function u() {
+  const fn = function c() {
     let timeout;
     let tmp = timeout;
     const tmp2 = dependencyMap;
@@ -388,7 +388,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function u() {
+    const fn = function c() {
       return ChannelStore.getChannel(channelId);
     };
     let num2 = 1;
@@ -581,7 +581,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   fn.__closure = { windowDimensions };
   fn.__workletHash = 10821342487514;
   fn.__initData = __initData;
-  const fn2 = function p(arg0, arg1) {
+  const fn2 = function h(arg0, arg1) {
     if (arg0 !== arg1) {
       const obj = ReanimatedRexport2;
       obj.runOnJS(callback)(arg0);
@@ -648,23 +648,26 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(participantId) {
   let AvatarSizes;
   let Icon;
+  let avatarURL;
+  let backgroundColor;
   let channelId;
   let closure_5;
   let first;
   let focused;
+  let gradientStops;
   let guildId;
   let items4;
   let items6;
   let layoutManager;
-  let obj16;
-  let tmp26;
-  let tmpResult14;
+  let obj17;
+  let tmp23;
+  let tmpResult12;
   let transitionCleanUp;
   let transitionState;
   let userAvatarDecoration;
   let tmp = participantId;
   let obj = participantId(focused[21]);
-  const cResult = obj.c(59);
+  const cResult = obj.c(58);
   participantId = participantId.participantId;
   const layoutTransition = participantId.layoutTransition;
   ({ transitionState, transitionCleanUp } = participantId);
@@ -684,6 +687,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   }
   if (cResult[1] === channelId) {
     let tmp10;
+    let tmp19;
     if (cResult[2] === participantId) {
       tmp10 = cResult[3];
     }
@@ -696,387 +700,378 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     if (user1 == null) {
       user1 = UserStore.getCurrentUser();
     }
-    let avatarURL;
-    const useDominantColorFromImage = tmp(tmp2[33]).useDominantColorFromImage;
-    tmp(focused[33]);
-    if (user1 != null) {
-      avatarURL = user1.getAvatarURL(guildId, 80, false);
-    }
-    const dominantColorFromImage = useDominantColorFromImage(avatarURL);
     let id;
-    const tmp6Result = channelId(focused[34]);
+    const tmp6Result = channelId(focused[33]);
     if (user1 != null) {
       id = user1.id;
     }
-    const obj3 = { userId: id, guildId, location: "VoicePanelPIPContent-native" };
-    const tmp6ResultResult = tmp6Result(obj3);
-    if (cResult[4] === dominantColorFromImage) {
-      let tmp21;
-      if (cResult[5] === tmp6ResultResult) {
-        tmp21 = cResult[6];
-      }
-      if (cResult[7] === tmp4.user) {
-        if (cResult[8] === tmp21) {
-          let tmp23;
-          let tmp27;
-          let tmp40;
-          let tmp39;
-          if (cResult[9] === tmp5) {
-            tmp23 = cResult[10];
+    const obj3 = { userId: id, guildId, avatarURI: avatarURL, location: "VoicePanelPIPContent-native" };
+    avatarURL = undefined;
+    if (user1 != null) {
+      avatarURL = user1.getAvatarURL(guildId, 80, false);
+    }
+    ({ gradientStops, backgroundColor } = tmp6Result(obj3));
+    tmp6Result(obj3);
+    if (cResult[4] !== backgroundColor) {
+      const obj4 = { backgroundColor };
+      cResult[4] = backgroundColor;
+      cResult[5] = obj4;
+      tmp19 = obj4;
+    } else {
+      tmp19 = cResult[5];
+    }
+    if (cResult[6] === tmp4.user) {
+      if (cResult[7] === tmp19) {
+        let tmp20;
+        let tmp24;
+        let tmp37;
+        let tmp36;
+        if (cResult[8] === tmp5) {
+          tmp20 = cResult[9];
+        }
+        [tmp23, closure_5] = mode(layoutManager.useState(false), 2);
+        const _Symbol = Symbol;
+        mode(layoutManager.useState(false), 2);
+        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+          const obj5 = { location: "VoicePanelPIPContent" };
+          cResult[10] = obj5;
+          tmp24 = obj5;
+        } else {
+          tmp24 = cResult[10];
+        }
+        let id1;
+        const useSurfaceDirectRendererExperiment = tmp(tmp2[34]).useSurfaceDirectRendererExperiment;
+        tmp(focused[34]);
+        if (stateFromStores != null) {
+          const user = stateFromStores.user;
+          if (user != null) {
+            id1 = user.id;
           }
-          [tmp26, closure_5] = mode(layoutManager.useState(false), 2);
-          const _Symbol = Symbol;
-          mode(layoutManager.useState(false), 2);
-          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj4 = { location: "VoicePanelPIPContent" };
-            cResult[11] = obj4;
-            tmp27 = obj4;
-          } else {
-            tmp27 = cResult[11];
+        }
+        const surfaceDirectRendererExperiment = useSurfaceDirectRendererExperiment(id1, tmp24);
+        function updateIsActivityFocused(arg0, arg1) {
+          let participant;
+          if (null != arg0) {
+            participant = ChannelRTCStore.getParticipant(channelId, arg0);
           }
-          let id1;
-          const useSurfaceDirectRendererExperiment = tmp(tmp2[35]).useSurfaceDirectRendererExperiment;
-          tmp(focused[35]);
-          if (stateFromStores != null) {
-            const user = stateFromStores.user;
-            if (user != null) {
-              id1 = user.id;
-            }
+          let tmp5 = null != participant;
+          const tmp4 = closure_5;
+          if (tmp5) {
+            tmp5 = closure_21(participant);
           }
-          const surfaceDirectRendererExperiment = useSurfaceDirectRendererExperiment(id1, tmp27);
-          function updateIsActivityFocused(arg0, arg1) {
-            let participant;
-            if (null != arg0) {
-              participant = ChannelRTCStore.getParticipant(channelId, arg0);
-            }
-            let tmp5 = null != participant;
-            const tmp4 = closure_5;
-            if (tmp5) {
-              tmp5 = closure_21(participant);
-            }
-            if (tmp5) {
-              tmp5 = arg1 === VoicePanelModes.PANEL;
-            }
-            tmp4(tmp5);
+          if (tmp5) {
+            tmp5 = arg1 === VoicePanelModes.PANEL;
           }
-          function ae() {
+          tmp4(tmp5);
+        }
+        function ie() {
+          const value = focused.get();
+          let id;
+          if (value != null) {
+            id = value.id;
+          }
+          return id;
+        }
+        const obj6 = { focused };
+        ie.__closure = obj6;
+        ie.__workletHash = 7289784389347;
+        ie.__initData = __initData3;
+        function ae(arg0, arg1) {
+          if (arg0 !== arg1) {
+            const obj = ReanimatedRexport2;
+            const runOnJSResult = obj.runOnJS(updateIsActivityFocused);
+            runOnJSResult(arg0, mode.get());
+          }
+        }
+        const obj7 = { runOnJS: tmp(focused[18]).runOnJS, updateIsActivityFocused, mode };
+        const useAnimatedReaction = tmp(tmp2[18]).useAnimatedReaction;
+        tmp(focused[18]);
+        ae.__closure = obj7;
+        ae.__workletHash = 14994700175532;
+        ae.__initData = __initData4;
+        const animatedReaction = useAnimatedReaction(ie, ae);
+        function oe() {
+          return mode.get();
+        }
+        const obj8 = { mode };
+        oe.__closure = obj8;
+        oe.__workletHash = 1496434071774;
+        oe.__initData = __initData5;
+        function re(arg0, arg1) {
+          if (arg0 !== arg1) {
+            const obj = ReanimatedRexport2;
+            const runOnJSResult = obj.runOnJS(updateIsActivityFocused);
             const value = focused.get();
             let id;
             if (value != null) {
               id = value.id;
             }
-            return id;
+            runOnJSResult(id, arg0);
           }
-          const obj5 = { focused };
-          ae.__closure = obj5;
-          ae.__workletHash = 7289784389347;
-          ae.__initData = __initData3;
-          function ne(arg0, arg1) {
-            if (arg0 !== arg1) {
-              const obj = ReanimatedRexport2;
-              const runOnJSResult = obj.runOnJS(updateIsActivityFocused);
-              runOnJSResult(arg0, mode.get());
-            }
+        }
+        const obj9 = { runOnJS: tmp(focused[18]).runOnJS, updateIsActivityFocused, focused };
+        const useAnimatedReaction2 = tmp(tmp2[18]).useAnimatedReaction;
+        tmp(focused[18]);
+        re.__closure = obj9;
+        re.__workletHash = 16735078785493;
+        re.__initData = __initData6;
+        const animatedReaction2 = useAnimatedReaction2(oe, re);
+        const _Symbol2 = Symbol;
+        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          const items1 = [ChannelCallLifecycleStore];
+          function ce() {
+            const obj = { isReactingToThermalState: ChannelCallLifecycleStore.isReactingToThermalState(), consumedRequestToRespondToSeriousThermalState: ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState() };
+            return obj;
           }
-          const obj6 = { runOnJS: tmp(focused[18]).runOnJS, updateIsActivityFocused, mode };
-          const useAnimatedReaction = tmp(tmp2[18]).useAnimatedReaction;
-          tmp(focused[18]);
-          ne.__closure = obj6;
-          ne.__workletHash = 14994700175532;
-          ne.__initData = __initData4;
-          const animatedReaction = useAnimatedReaction(ae, ne);
-          function re() {
-            return mode.get();
+          cResult[11] = items1;
+          cResult[12] = ce;
+          tmp37 = ce;
+          tmp36 = items1;
+        } else {
+          tmp36 = cResult[11];
+          tmp37 = cResult[12];
+        }
+        const tmpResult10 = tmp(focused[30]);
+        const stateFromStoresObject = tmpResult10.useStateFromStoresObject(tmp36, tmp37);
+        const consumedRequestToRespondToSeriousThermalState = stateFromStoresObject.consumedRequestToRespondToSeriousThermalState;
+        if (cResult[13] === layoutManager) {
+          let tmp41;
+          let tmp45;
+          let tmp44;
+          if (cResult[14] === participantId) {
+            tmp41 = cResult[15];
           }
-          const obj7 = { mode };
-          re.__closure = obj7;
-          re.__workletHash = 1496434071774;
-          re.__initData = __initData5;
-          function ie(arg0, arg1) {
-            if (arg0 !== arg1) {
-              const obj = ReanimatedRexport2;
-              const runOnJSResult = obj.runOnJS(updateIsActivityFocused);
-              const value = focused.get();
-              let id;
-              if (value != null) {
-                id = value.id;
+          const tmpResult11 = tmp(focused[35]);
+          let canRenderParticipantVideo = tmpResult11.useCanRenderParticipantVideo(stateFromStores);
+          if (canRenderParticipantVideo) {
+            canRenderParticipantVideo = !(tmp23 && tmp40);
+          }
+          if (cResult[16] !== canRenderParticipantVideo) {
+            function ge() {
+              const tmp = canRenderParticipantVideo;
+              if (!tmp) {
+                const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+                ComponentDispatch.dispatch(constants.VOICE_PANEL_PIP_CONTENT_READY);
               }
-              runOnJSResult(id, arg0);
             }
-          }
-          const obj8 = { runOnJS: tmp(focused[18]).runOnJS, updateIsActivityFocused, focused };
-          const useAnimatedReaction2 = tmp(tmp2[18]).useAnimatedReaction;
-          tmp(focused[18]);
-          ie.__closure = obj8;
-          ie.__workletHash = 16735078785493;
-          ie.__initData = __initData6;
-          const animatedReaction2 = useAnimatedReaction2(re, ie);
-          const _Symbol2 = Symbol;
-          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const items1 = [ChannelCallLifecycleStore];
-            function se() {
-              const obj = { isReactingToThermalState: ChannelCallLifecycleStore.isReactingToThermalState(), consumedRequestToRespondToSeriousThermalState: ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState() };
-              return obj;
-            }
-            cResult[12] = items1;
-            cResult[13] = se;
-            tmp40 = se;
-            tmp39 = items1;
+            const items2 = [canRenderParticipantVideo];
+            cResult[16] = canRenderParticipantVideo;
+            cResult[17] = items2;
+            cResult[18] = ge;
+            tmp45 = ge;
+            tmp44 = items2;
           } else {
-            tmp39 = cResult[12];
-            tmp40 = cResult[13];
+            tmp44 = cResult[17];
+            tmp45 = cResult[18];
           }
-          const tmpResult12 = tmp(focused[30]);
-          const stateFromStoresObject = tmpResult12.useStateFromStoresObject(tmp39, tmp40);
-          const consumedRequestToRespondToSeriousThermalState = stateFromStoresObject.consumedRequestToRespondToSeriousThermalState;
-          if (cResult[14] === layoutManager) {
-            let tmp44;
-            let tmp48;
-            let tmp47;
-            if (cResult[15] === participantId) {
-              tmp44 = cResult[16];
-            }
-            const tmpResult13 = tmp(focused[36]);
-            let canRenderParticipantVideo = tmpResult13.useCanRenderParticipantVideo(stateFromStores);
-            if (canRenderParticipantVideo) {
-              canRenderParticipantVideo = !(tmp26 && tmp43);
-            }
-            if (cResult[17] !== canRenderParticipantVideo) {
-              function pe() {
-                const tmp = canRenderParticipantVideo;
-                if (!tmp) {
-                  const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-                  ComponentDispatch.dispatch(constants.VOICE_PANEL_PIP_CONTENT_READY);
-                }
+          const effect = obj2.useEffect(tmp45, tmp44);
+          if (canRenderParticipantVideo) {
+            if (cResult[19] === tmp4.blackBackground) {
+              let tmp71;
+              let tmp72;
+              if (cResult[20] === tmp4.user) {
+                tmp71 = cResult[21];
               }
-              const items2 = [canRenderParticipantVideo];
-              cResult[17] = canRenderParticipantVideo;
-              cResult[18] = items2;
-              cResult[19] = pe;
-              tmp48 = pe;
-              tmp47 = items2;
-            } else {
-              tmp47 = cResult[18];
-              tmp48 = cResult[19];
-            }
-            const effect = obj2.useEffect(tmp48, tmp47);
-            if (canRenderParticipantVideo) {
-              if (cResult[20] === tmp4.blackBackground) {
-                let tmp74;
-                let tmp75;
-                if (cResult[21] === tmp4.user) {
-                  tmp74 = cResult[22];
-                }
-                if (cResult[23] !== tmp4.video) {
-                  const items3 = [tmp4.video, undefined];
-                  cResult[23] = tmp4.video;
-                  cResult[24] = items3;
-                  tmp75 = items3;
-                } else {
-                  tmp75 = cResult[24];
-                }
-                if (cResult[25] === tmp44) {
-                  if (cResult[26] === stateFromStores.streamId) {
-                    if (cResult[27] === tmp75) {
-                      let tmp76;
-                      if (cResult[28] === surfaceDirectRendererExperiment) {
-                        tmp76 = cResult[29];
-                      }
-                      if (cResult[30] === participantId) {
-                        if (cResult[31] === tmp76) {
-                          let tmp81;
-                          let tmp85;
-                          if (cResult[32] === tmp5) {
-                            tmp81 = cResult[33];
-                          }
-                          const _Symbol3 = Symbol;
-                          if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                            const tmp88 = closure_22(closure_29, {});
-                            cResult[34] = tmp88;
-                            tmp85 = tmp88;
-                          } else {
-                            tmp85 = cResult[34];
-                          }
-                          if (cResult[35] === tmp74) {
-                            let tmp89;
-                            if (cResult[36] === tmp81) {
-                              tmp89 = cResult[37];
-                            }
-                            return tmp89;
-                          }
-                          const obj9 = { style: tmp74, children: items4 };
-                          items4 = [tmp81, tmp85];
-                          const tmp91 = closure_23(channelId(focused[29]), obj9);
-                          cResult[35] = tmp74;
-                          cResult[36] = tmp81;
-                          cResult[37] = tmp91;
-                          tmp89 = tmp91;
+              if (cResult[22] !== tmp4.video) {
+                const items3 = [tmp4.video, undefined];
+                cResult[22] = tmp4.video;
+                cResult[23] = items3;
+                tmp72 = items3;
+              } else {
+                tmp72 = cResult[23];
+              }
+              if (cResult[24] === tmp41) {
+                if (cResult[25] === stateFromStores.streamId) {
+                  if (cResult[26] === tmp72) {
+                    let tmp73;
+                    if (cResult[27] === surfaceDirectRendererExperiment) {
+                      tmp73 = cResult[28];
+                    }
+                    if (cResult[29] === participantId) {
+                      if (cResult[30] === tmp73) {
+                        let tmp78;
+                        let tmp82;
+                        if (cResult[31] === tmp5) {
+                          tmp78 = cResult[32];
                         }
-                      }
-                      const obj10 = { style: tmp5, participantId, children: tmp76 };
-                      const tmp84 = closure_22(closure_46, obj10);
-                      cResult[30] = participantId;
-                      cResult[31] = tmp76;
-                      cResult[32] = tmp5;
-                      cResult[33] = tmp84;
-                      tmp81 = tmp84;
-                    }
-                  }
-                }
-                const obj11 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: stateFromStores.streamId, style: tmp75, onSize: tmp44, onReady: markContentReady };
-                const tmp80 = closure_22(closure_26, obj11);
-                cResult[25] = tmp44;
-                cResult[26] = stateFromStores.streamId;
-                cResult[27] = tmp75;
-                cResult[28] = surfaceDirectRendererExperiment;
-                cResult[29] = tmp80;
-                tmp76 = tmp80;
-              }
-              const items5 = [, ];
-              ({ blackBackground: arr6[0], user: arr6[1] } = tmp4);
-              cResult[20] = tmp4.blackBackground;
-              cResult[21] = tmp4.user;
-              cResult[22] = items5;
-              tmp74 = items5;
-            } else {
-              const tmp6Result4 = channelId(focused[29]);
-              if (cResult[38] === tmp6ResultResult) {
-                let tmp51;
-                if (cResult[39] === layoutTransition) {
-                  tmp51 = cResult[40];
-                }
-                const tmp6Result5 = channelId(focused[29]);
-                let tmp58Result = null;
-                if (null != user1) {
-                  const obj12 = { source: tmpResult14.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp26 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
-                  const Avatar = tmp(tmp2[37]).Avatar;
-                  tmpResult14 = tmp(focused[33]);
-                  AvatarSizes = tmp(tmp2[37]).AvatarSizes;
-                  userAvatarDecoration = undefined;
-                  const tmp58 = closure_22;
-                  if (stateFromStores != null) {
-                    userAvatarDecoration = stateFromStores.userAvatarDecoration;
-                  }
-                  tmp58Result = tmp58(Avatar, obj12);
-                }
-                if (cResult[41] === tmp6Result5) {
-                  if (cResult[42] === tmp4.avatarWrapper) {
-                    let tmp60;
-                    let tmp63;
-                    if (cResult[43] === tmp58Result) {
-                      tmp60 = cResult[44];
-                    }
-                    if (cResult[45] !== tmp4.userOpacity) {
-                      const obj13 = { style: tmp4.userOpacity };
-                      const tmp66 = closure_22(closure_29, obj13);
-                      cResult[45] = tmp4.userOpacity;
-                      cResult[46] = tmp66;
-                      tmp63 = tmp66;
-                    } else {
-                      tmp63 = cResult[46];
-                    }
-                    if (cResult[47] === consumedRequestToRespondToSeriousThermalState) {
-                      if (cResult[48] === tmp26) {
-                        if (cResult[49] === tmp4.thermalAlertIcon) {
-                          let tmp67;
-                          if (cResult[50] === tmp4.thermalAlertIconContainer) {
-                            tmp67 = cResult[51];
+                        const _Symbol3 = Symbol;
+                        if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+                          const tmp85 = closure_22(closure_29, {});
+                          cResult[33] = tmp85;
+                          tmp82 = tmp85;
+                        } else {
+                          tmp82 = cResult[33];
+                        }
+                        if (cResult[34] === tmp71) {
+                          let tmp86;
+                          if (cResult[35] === tmp78) {
+                            tmp86 = cResult[36];
                           }
-                          if (cResult[52] === tmp6Result4) {
-                            if (cResult[53] === tmp51) {
+                          return tmp86;
+                        }
+                        const obj10 = { style: tmp71, children: items4 };
+                        items4 = [tmp78, tmp82];
+                        const tmp88 = closure_23(channelId(focused[29]), obj10);
+                        cResult[34] = tmp71;
+                        cResult[35] = tmp78;
+                        cResult[36] = tmp88;
+                        tmp86 = tmp88;
+                      }
+                    }
+                    const obj11 = { style: tmp5, participantId, children: tmp73 };
+                    const tmp81 = closure_22(closure_46, obj11);
+                    cResult[29] = participantId;
+                    cResult[30] = tmp73;
+                    cResult[31] = tmp5;
+                    cResult[32] = tmp81;
+                    tmp78 = tmp81;
+                  }
+                }
+              }
+              const obj12 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: stateFromStores.streamId, style: tmp72, onSize: tmp41, onReady: markContentReady };
+              const tmp77 = closure_22(closure_26, obj12);
+              cResult[24] = tmp41;
+              cResult[25] = stateFromStores.streamId;
+              cResult[26] = tmp72;
+              cResult[27] = surfaceDirectRendererExperiment;
+              cResult[28] = tmp77;
+              tmp73 = tmp77;
+            }
+            const items5 = [, ];
+            ({ blackBackground: arr6[0], user: arr6[1] } = tmp4);
+            cResult[19] = tmp4.blackBackground;
+            cResult[20] = tmp4.user;
+            cResult[21] = items5;
+            tmp71 = items5;
+          } else {
+            const tmp6Result4 = channelId(focused[29]);
+            if (cResult[37] === gradientStops) {
+              let tmp48;
+              if (cResult[38] === layoutTransition) {
+                tmp48 = cResult[39];
+              }
+              const tmp6Result5 = channelId(focused[29]);
+              let tmp55Result = null;
+              if (null != user1) {
+                const obj13 = { source: tmpResult12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp23 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
+                const Avatar = tmp(tmp2[36]).Avatar;
+                tmpResult12 = tmp(focused[37]);
+                AvatarSizes = tmp(tmp2[36]).AvatarSizes;
+                userAvatarDecoration = undefined;
+                const tmp55 = closure_22;
+                if (stateFromStores != null) {
+                  userAvatarDecoration = stateFromStores.userAvatarDecoration;
+                }
+                tmp55Result = tmp55(Avatar, obj13);
+              }
+              if (cResult[40] === tmp6Result5) {
+                if (cResult[41] === tmp4.avatarWrapper) {
+                  let tmp57;
+                  let tmp60;
+                  if (cResult[42] === tmp55Result) {
+                    tmp57 = cResult[43];
+                  }
+                  if (cResult[44] !== tmp4.userOpacity) {
+                    const obj14 = { style: tmp4.userOpacity };
+                    const tmp63 = closure_22(closure_29, obj14);
+                    cResult[44] = tmp4.userOpacity;
+                    cResult[45] = tmp63;
+                    tmp60 = tmp63;
+                  } else {
+                    tmp60 = cResult[45];
+                  }
+                  if (cResult[46] === consumedRequestToRespondToSeriousThermalState) {
+                    if (cResult[47] === tmp23) {
+                      if (cResult[48] === tmp4.thermalAlertIcon) {
+                        let tmp64;
+                        if (cResult[49] === tmp4.thermalAlertIconContainer) {
+                          tmp64 = cResult[50];
+                        }
+                        if (cResult[51] === tmp6Result4) {
+                          if (cResult[52] === tmp48) {
+                            if (cResult[53] === tmp57) {
                               if (cResult[54] === tmp60) {
-                                if (cResult[55] === tmp63) {
-                                  if (cResult[56] === tmp67) {
-                                    let tmp71;
-                                    if (cResult[57] === tmp23) {
-                                      tmp71 = cResult[58];
-                                    }
-                                    return tmp71;
+                                if (cResult[55] === tmp64) {
+                                  let tmp68;
+                                  if (cResult[56] === tmp20) {
+                                    tmp68 = cResult[57];
                                   }
+                                  return tmp68;
                                 }
                               }
                             }
                           }
-                          const obj14 = { style: tmp23, children: items6 };
-                          items6 = [tmp51, tmp60, tmp63, tmp67];
-                          const tmp73 = closure_23(tmp6Result4, obj14);
-                          cResult[52] = tmp6Result4;
-                          cResult[53] = tmp51;
-                          cResult[54] = tmp60;
-                          cResult[55] = tmp63;
-                          cResult[56] = tmp67;
-                          cResult[57] = tmp23;
-                          cResult[58] = tmp73;
-                          tmp71 = tmp73;
                         }
+                        const obj15 = { style: tmp20, children: items6 };
+                        items6 = [tmp48, tmp57, tmp60, tmp64];
+                        const tmp70 = closure_23(tmp6Result4, obj15);
+                        cResult[51] = tmp6Result4;
+                        cResult[52] = tmp48;
+                        cResult[53] = tmp57;
+                        cResult[54] = tmp60;
+                        cResult[55] = tmp64;
+                        cResult[56] = tmp20;
+                        cResult[57] = tmp70;
+                        tmp68 = tmp70;
                       }
                     }
-                    let tmp68 = null;
-                    if (tmp26) {
-                      tmp68 = null;
-                      if (consumedRequestToRespondToSeriousThermalState) {
-                        const obj15 = { style: tmp4.thermalAlertIconContainer, children: closure_22(Icon, obj16) };
-                        obj16 = { style: tmp4.thermalAlertIcon, source: channelId(focused[38]), color: tmp4.thermalAlertIcon.color };
-                        const tmp6Result6 = channelId(focused[29]);
-                        Icon = tmp(tmp2[37]).Icon;
-                        tmp68 = closure_22(tmp6Result6, obj15);
-                      }
-                    }
-                    cResult[47] = consumedRequestToRespondToSeriousThermalState;
-                    cResult[48] = tmp26;
-                    cResult[49] = tmp4.thermalAlertIcon;
-                    cResult[50] = tmp4.thermalAlertIconContainer;
-                    cResult[51] = tmp68;
-                    tmp67 = tmp68;
                   }
+                  let tmp65 = null;
+                  if (tmp23) {
+                    tmp65 = null;
+                    if (consumedRequestToRespondToSeriousThermalState) {
+                      const obj16 = { style: tmp4.thermalAlertIconContainer, children: closure_22(Icon, obj17) };
+                      obj17 = { style: tmp4.thermalAlertIcon, source: channelId(focused[38]), color: tmp4.thermalAlertIcon.color };
+                      const tmp6Result6 = channelId(focused[29]);
+                      Icon = tmp(tmp2[36]).Icon;
+                      tmp65 = closure_22(tmp6Result6, obj16);
+                    }
+                  }
+                  cResult[46] = consumedRequestToRespondToSeriousThermalState;
+                  cResult[47] = tmp23;
+                  cResult[48] = tmp4.thermalAlertIcon;
+                  cResult[49] = tmp4.thermalAlertIconContainer;
+                  cResult[50] = tmp65;
+                  tmp64 = tmp65;
                 }
-                const obj17 = { style: tmp4.avatarWrapper, children: tmp58Result };
-                const tmp62 = closure_22(tmp6Result5, obj17);
-                cResult[41] = tmp6Result5;
-                cResult[42] = tmp4.avatarWrapper;
-                cResult[43] = tmp58Result;
-                cResult[44] = tmp62;
-                tmp60 = tmp62;
               }
-              let tmp52 = null;
-              if (null != tmp6ResultResult) {
-                const obj18 = { colors: tmp6ResultResult, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: updateIsActivityFocused.absoluteFill, layout: layoutTransition, pointerEvents: "none" };
-                tmp52 = closure_22(LinearGradient, obj18);
-              }
-              cResult[38] = tmp6ResultResult;
-              cResult[39] = layoutTransition;
-              cResult[40] = tmp52;
-              tmp51 = tmp52;
+              const obj18 = { style: tmp4.avatarWrapper, children: tmp55Result };
+              const tmp59 = closure_22(tmp6Result5, obj18);
+              cResult[40] = tmp6Result5;
+              cResult[41] = tmp4.avatarWrapper;
+              cResult[42] = tmp55Result;
+              cResult[43] = tmp59;
+              tmp57 = tmp59;
             }
+            let tmp49 = null;
+            if (null != gradientStops) {
+              const obj19 = { colors: gradientStops, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: updateIsActivityFocused.absoluteFill, layout: layoutTransition, pointerEvents: "none" };
+              tmp49 = closure_22(LinearGradient, obj19);
+            }
+            cResult[37] = gradientStops;
+            cResult[38] = layoutTransition;
+            cResult[39] = tmp49;
+            tmp48 = tmp49;
           }
-          function ce(nativeEvent) {
-            nativeEvent = nativeEvent.nativeEvent;
-            layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
-          }
-          cResult[14] = layoutManager;
-          cResult[15] = participantId;
-          cResult[16] = ce;
-          tmp44 = ce;
         }
+        function de(nativeEvent) {
+          nativeEvent = nativeEvent.nativeEvent;
+          layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
+        }
+        cResult[13] = layoutManager;
+        cResult[14] = participantId;
+        cResult[15] = de;
+        tmp41 = de;
       }
-      const items7 = [tmp4.user, tmp5, tmp21];
-      cResult[7] = tmp4.user;
-      cResult[8] = tmp21;
-      cResult[9] = tmp5;
-      cResult[10] = items7;
-      tmp23 = items7;
     }
-    let tmp22 = null;
-    if (null == tmp6ResultResult) {
-      tmp22 = { backgroundColor: dominantColorFromImage };
-      const obj19 = { backgroundColor: dominantColorFromImage };
-    }
-    cResult[4] = dominantColorFromImage;
-    cResult[5] = tmp6ResultResult;
-    cResult[6] = tmp22;
-    tmp21 = tmp22;
+    const items7 = [tmp4.user, tmp5, tmp19];
+    cResult[6] = tmp4.user;
+    cResult[7] = tmp19;
+    cResult[8] = tmp5;
+    cResult[9] = items7;
+    tmp20 = items7;
   }
-  const fn = function c() {
+  const fn = function u() {
     const participant = ChannelRTCStore.getParticipant(channelId, participantId);
     let type;
     if (participant != null) {
@@ -1095,29 +1090,30 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
 }) : (function User(participantId) {
   let AvatarSizes;
   let Icon;
-  let _undefined;
-  let c9;
+  let avatarURL;
+  let backgroundColor;
+  let c8;
   let closure_2;
   let consumedRequestToRespondToSeriousThermalState;
   let focused;
+  let gradientStops;
   let guildId;
   let isReactingToThermalState;
   let items7;
   let layoutTransition;
-  let obj13;
-  let obj7;
-  let tmp18;
-  let tmp36Result;
-  let tmp43;
-  let tmp6Result12;
+  let obj14;
+  let obj8;
+  let tmp16;
+  let tmp34Result;
+  let tmp41;
+  let tmp6Result10;
   let transitionCleanUp;
   let transitionState;
   let userAvatarDecoration;
   participantId = participantId.participantId;
   focused = undefined;
-  let dominantColorFromImage;
-  let closure_8;
-  c9 = undefined;
+  backgroundColor = undefined;
+  c8 = undefined;
   let updateIsActivityFocused;
   let canRenderParticipantVideo;
   ({ transitionState, transitionCleanUp, layoutTransition } = participantId);
@@ -1133,7 +1129,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   ({ guildId, focused } = context);
   const mode = context.mode;
   const layoutManager = context.layoutManager;
-  let items = [closure_8];
+  let items = [c8];
   const obj2 = participantId(573);
   const stateFromStores = obj2.useStateFromStores(items, () => {
     const participant = ChannelRTCStore.getParticipant(channelId, participantId);
@@ -1154,36 +1150,30 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   if (user1 == null) {
     user1 = UserStore.getCurrentUser();
   }
-  let avatarURL;
-  const useDominantColorFromImage = tmp6(9261).useDominantColorFromImage;
-  participantId(9261);
-  if (user1 != null) {
-    avatarURL = user1.getAvatarURL(guildId, 80, false);
-  }
-  dominantColorFromImage = useDominantColorFromImage(avatarURL);
   let id;
-  const tmp3Result = useProfileTileGradientDefault;
+  const tmp3Result = useUserTileBackgroundDefault;
   if (user1 != null) {
     id = user1.id;
   }
-  const tmp3ResultResult = tmp3Result({ userId: id, guildId, location: "VoicePanelPIPContent-native" });
-  closure_8 = tmp3ResultResult;
-  const items1 = [tmp, tmp2, dominantColorFromImage, tmp3ResultResult];
+  const obj3 = { userId: id, guildId, avatarURI: avatarURL, location: "VoicePanelPIPContent-native" };
+  avatarURL = undefined;
+  if (user1 != null) {
+    avatarURL = user1.getAvatarURL(guildId, 80, false);
+  }
+  ({ gradientStops, backgroundColor } = tmp3Result(obj3));
+  const items1 = [tmp, tmp2, backgroundColor];
+  tmp3Result(obj3);
   const memo = obj.useMemo(() => {
     const items = [user.user, closure_2, ];
-    let tmp = null;
-    if (null == closure_8) {
-      tmp = { backgroundColor: dominantColorFromImage };
-      const obj = { backgroundColor: dominantColorFromImage };
-    }
-    items[2] = tmp;
+    const obj = { backgroundColor };
+    items[2] = obj;
     return items;
   }, items1);
-  [tmp18, c9] = channelId(obj.useState(false), 2);
+  [tmp16, c8] = channelId(obj.useState(false), 2);
   channelId(obj.useState(false), 2);
   let id1;
-  const useSurfaceDirectRendererExperiment = tmp6(5294).useSurfaceDirectRendererExperiment;
-  participantId(5294);
+  const useSurfaceDirectRendererExperiment = tmp6(5331).useSurfaceDirectRendererExperiment;
+  participantId(5331);
   if (stateFromStores != null) {
     const user = stateFromStores.user;
     if (user != null) {
@@ -1198,7 +1188,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       participant = ChannelRTCStore.getParticipant(channelId, arg0);
     }
     let tmp5 = null != participant;
-    const tmp4 = c9;
+    const tmp4 = c8;
     if (tmp5) {
       tmp5 = closure_21(participant);
     }
@@ -1218,7 +1208,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
   fn.__closure = { focused };
   fn.__workletHash = 4704058004463;
   fn.__initData = __initData7;
-  const tmp6Result8 = participantId(4909);
+  const tmp6Result6 = participantId(4945);
   class S {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
@@ -1228,11 +1218,11 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       }
     }
   }
-  S.__closure = { runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, mode };
+  S.__closure = { runOnJS: participantId(4945).runOnJS, updateIsActivityFocused, mode };
   S.__workletHash = 10514296638459;
   S.__initData = __initData8;
-  ({ runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, mode });
-  const animatedReaction = tmp6Result8.useAnimatedReaction(fn, S);
+  ({ runOnJS: participantId(4945).runOnJS, updateIsActivityFocused, mode });
+  const animatedReaction = tmp6Result6.useAnimatedReaction(fn, S);
   const fn2 = function y() {
     return mode.get();
   };
@@ -1251,16 +1241,16 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       runOnJSResult(id, arg0);
     }
   };
-  const tmp6Result9 = participantId(4909);
-  fn3.__closure = { runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, focused };
+  const tmp6Result7 = participantId(4945);
+  fn3.__closure = { runOnJS: participantId(4945).runOnJS, updateIsActivityFocused, focused };
   fn3.__workletHash = 7336366136494;
   fn3.__initData = __initData10;
-  ({ runOnJS: participantId(4909).runOnJS, updateIsActivityFocused, focused });
-  const animatedReaction1 = tmp6Result9.useAnimatedReaction(fn2, fn3);
-  const items3 = [c9];
-  const tmp6Result10 = participantId(573);
-  const stateFromStoresObject = tmp6Result10.useStateFromStoresObject(items3, () => {
-    const obj = { isReactingToThermalState: _undefined.isReactingToThermalState(), consumedRequestToRespondToSeriousThermalState: _undefined.consumedRequestToRespondToSeriousThermalState() };
+  ({ runOnJS: participantId(4945).runOnJS, updateIsActivityFocused, focused });
+  const animatedReaction1 = tmp6Result7.useAnimatedReaction(fn2, fn3);
+  const items3 = [updateIsActivityFocused];
+  const tmp6Result8 = participantId(573);
+  const stateFromStoresObject = tmp6Result8.useStateFromStoresObject(items3, () => {
+    const obj = { isReactingToThermalState: callback.isReactingToThermalState(), consumedRequestToRespondToSeriousThermalState: callback.consumedRequestToRespondToSeriousThermalState() };
     return obj;
   });
   const items4 = [layoutManager, participantId];
@@ -1269,10 +1259,10 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
     nativeEvent = nativeEvent.nativeEvent;
     layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
   }, items4);
-  const tmp6Result11 = participantId(11216);
-  canRenderParticipantVideo = tmp6Result11.useCanRenderParticipantVideo(stateFromStores);
+  const tmp6Result9 = participantId(11281);
+  canRenderParticipantVideo = tmp6Result9.useCanRenderParticipantVideo(stateFromStores);
   if (canRenderParticipantVideo) {
-    canRenderParticipantVideo = !(tmp18 && isReactingToThermalState);
+    canRenderParticipantVideo = !(tmp16 && isReactingToThermalState);
   }
   const items5 = [canRenderParticipantVideo];
   const effect = obj.useEffect(() => {
@@ -1282,60 +1272,60 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function User(p
       ComponentDispatch.dispatch(constants.VOICE_PANEL_PIP_CONTENT_READY);
     }
   }, items5);
-  const obj5 = { style: null, children: null };
-  const tmp30 = closure_23;
+  const obj6 = { style: null, children: null };
+  const tmp28 = closure_23;
   const tmp3Result4 = NativeViewDefault;
   if (canRenderParticipantVideo) {
     const items6 = [, ];
     ({ blackBackground: arr8[0], user: arr8[1] } = tmp);
-    obj5.style = items6;
-    const obj6 = { style: tmp2, participantId, children: closure_22(closure_26, obj7) };
-    obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: stateFromStores.streamId, style: items7, onSize: callback1, onReady: markContentReady };
+    obj6.style = items6;
+    const obj7 = { style: tmp2, participantId, children: closure_22(closure_26, obj8) };
+    obj8 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId: stateFromStores.streamId, style: items7, onSize: callback1, onReady: markContentReady };
     items7 = [tmp.video, undefined];
-    const items8 = [closure_22(closure_46, obj6), closure_22(closure_29, {})];
-    obj5.children = items8;
-    tmp43 = obj5;
+    const items8 = [closure_22(closure_46, obj7), closure_22(closure_29, {})];
+    obj6.children = items8;
+    tmp41 = obj6;
   } else {
-    obj5.style = memo;
-    let tmp32 = null;
-    if (null != tmp3ResultResult) {
-      const obj8 = { colors: tmp3ResultResult, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: layoutManager.absoluteFill, layout: layoutTransition, pointerEvents: "none" };
-      tmp32 = closure_22(LinearGradient, obj8);
+    obj6.style = memo;
+    let tmp30 = null;
+    if (null != gradientStops) {
+      const obj9 = { colors: gradientStops, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: layoutManager.absoluteFill, layout: layoutTransition, pointerEvents: "none" };
+      tmp30 = closure_22(LinearGradient, obj9);
     }
-    const items9 = [tmp32, , , ];
-    const obj9 = { style: tmp.avatarWrapper, children: tmp36Result };
-    tmp36Result = null;
+    const items9 = [tmp30, , , ];
+    const obj10 = { style: tmp.avatarWrapper, children: tmp34Result };
+    tmp34Result = null;
     const tmp3Result5 = NativeViewDefault;
     if (null != user1) {
-      const obj10 = { source: tmp6Result12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp18 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
+      const obj11 = { source: tmp6Result10.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp16 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
       const Avatar = tmp6(1202).Avatar;
-      tmp6Result12 = participantId(9261);
+      tmp6Result10 = participantId(9321);
       AvatarSizes = tmp6(1202).AvatarSizes;
       userAvatarDecoration = undefined;
       if (stateFromStores != null) {
         userAvatarDecoration = stateFromStores.userAvatarDecoration;
       }
-      tmp36Result = tmp36(Avatar, obj10);
+      tmp34Result = tmp34(Avatar, obj11);
     }
-    items9[1] = closure_22(tmp3Result5, obj9);
-    const obj11 = { style: tmp.userOpacity };
-    items9[2] = closure_22(closure_29, obj11);
-    let tmp36Result2 = null;
-    if (tmp18) {
-      tmp36Result2 = null;
+    items9[1] = closure_22(tmp3Result5, obj10);
+    const obj12 = { style: tmp.userOpacity };
+    items9[2] = closure_22(closure_29, obj12);
+    let tmp34Result2 = null;
+    if (tmp16) {
+      tmp34Result2 = null;
       if (consumedRequestToRespondToSeriousThermalState) {
-        const obj12 = { style: tmp.thermalAlertIconContainer, children: closure_22(Icon, obj13) };
-        obj13 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
+        const obj13 = { style: tmp.thermalAlertIconContainer, children: closure_22(Icon, obj14) };
+        obj14 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
         const tmp3Result6 = NativeViewDefault;
         Icon = tmp6(1202).Icon;
-        tmp36Result2 = tmp36(tmp3Result6, obj12);
+        tmp34Result2 = tmp34(tmp3Result6, obj13);
       }
     }
-    items9[3] = tmp36Result2;
-    obj5.children = items9;
-    tmp43 = obj5;
+    items9[3] = tmp34Result2;
+    obj6.children = items9;
+    tmp41 = obj6;
   }
-  return tmp30(tmp3Result4, tmp43);
+  return tmp28(tmp3Result4, tmp41);
 });
 const __initData11 = { code: "function VoicePanelPIPContentTsx13(){const{targetDimensions}=this.__closure;const{width:targetWidth,height:targetHeight}=targetDimensions.get();let height=\"100%\";let width=\"100%\";if(targetHeight<targetWidth){width=\"auto\";}else{height=\"auto\";}return{position:\"absolute\",aspectRatio:targetWidth/targetHeight,width:width,height:height};}" };
 const __initData12 = { code: "function VoicePanelPIPContentTsx14(){const{targetDimensions}=this.__closure;const{width:targetWidth,height:targetHeight}=targetDimensions.get();let height='100%';let width='100%';if(targetHeight<targetWidth){width='auto';}else{height='auto';}return{position:'absolute',aspectRatio:targetWidth/targetHeight,width:width,height:height};}" };
@@ -1402,7 +1392,7 @@ let closure_46 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   const layoutManager = react.useContext(VoicePanelStateContextDefault).layoutManager;
   const obj = VoicePanelCardLayoutManager;
   const targetDimensionsSubscription = obj.useTargetDimensionsSubscription(participantId, layoutManager);
-  const fn = function u() {
+  const fn = function c() {
     let height;
     let width;
     const value = targetDimensionsSubscription.get();
@@ -1476,7 +1466,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     } else {
       tmp11 = cResult[4];
     }
-    const tmpResult3 = tmp(tmp2[35]);
+    const tmpResult3 = tmp(tmp2[34]);
     const surfaceDirectRendererExperiment = tmpResult3.useSurfaceDirectRendererExperiment(userId, tmp11);
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1716,7 +1706,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     cResult[9] = participantId;
     cResult[10] = N;
   }
-  const fn = function u() {
+  const fn = function c() {
     let tmp5;
     const participant = ChannelRTCStore.getParticipant(channelId, participantId);
     streamId = undefined;
@@ -1757,10 +1747,10 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   let tmp = closure_24();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(18123);
+  let obj = participantId(18184);
   const mode = obj.usePIPState().mode;
   const tmp4 = closure_28(tmp, transitionState, transitionCleanUp);
-  const context = streamId.useContext(mode(12848));
+  const context = streamId.useContext(mode(12913));
   ({ channelId: c2, layoutManager } = context);
   const items = [callback2];
   const obj2 = participantId(573);
@@ -1785,7 +1775,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   });
   streamId = stateFromStoresObject.streamId;
   const userId = stateFromStoresObject.userId;
-  const obj3 = participantId(5294);
+  const obj3 = participantId(5331);
   const surfaceDirectRendererExperiment = obj3.useSurfaceDirectRendererExperiment(userId, { location: "VoicePanelPIPContent.Stream" });
   const items1 = [ApplicationStreamingStore];
   const obj4 = participantId(573);
@@ -1866,7 +1856,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   }, items6);
   if (stateFromStores === constants.ENDED) {
     const obj5 = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp22 = closure_22(tmp2(11200).StreamEnded, obj5);
+    tmp22 = closure_22(tmp2(11265).StreamEnded, obj5);
   } else {
     tmp22 = null;
     if (stateFromStores !== tmp16.FAILED) {
@@ -1903,7 +1893,7 @@ let closure_49 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     const effect = react.useEffect(tmp4, tmp5);
     if (cResult[4] !== tmp3.emptyPip) {
       const obj2 = { style: tmp3.emptyPip };
-      const tmp11 = closure_22(transitionCleanUp(6386), obj2);
+      const tmp11 = closure_22(transitionCleanUp(6439), obj2);
       cResult[4] = tmp3.emptyPip;
       cResult[5] = tmp11;
       tmp8 = tmp11;
@@ -1935,7 +1925,7 @@ let closure_49 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     }
   }, items);
   const obj = { style: tmp.emptyPip };
-  return closure_22(transitionCleanUp(6386), obj);
+  return closure_22(transitionCleanUp(6439), obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelPIPContent(layoutTransition) {

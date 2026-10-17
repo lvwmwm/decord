@@ -1,97 +1,25 @@
 // Module ID: 6693
 // Function ID: 6694
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6692]
+// Dependencies: [6694, 6700, 6701, 6702, 6703, 6704, 6705, 6706, 6707]
 
 // Module 6693
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 6692 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod6694 from "module_6694" /* 6694 */;
+import _mod6700 from "module_6700" /* 6700 */;
+import _mod6701 from "module_6701" /* 6701 */;
+import _mod6702 from "module_6702" /* 6702 */;
+import _mod6703 from "module_6703" /* 6703 */;
+import _mod6704 from "module_6704" /* 6704 */;
+import _mod6705 from "module_6705" /* 6705 */;
+import _mod6706 from "module_6706" /* 6706 */;
+import _mod6707 from "module_6707" /* 6707 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_2 = ["style"];
-const Component = react2.Component;
-const Platform = react_native.Platform;
-const jsx = Fragment.jsx;
-class TouchableNativeFeedback {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TouchableNativeFeedback);
-    const obj = _getPrototypeOf(TouchableNativeFeedback);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = hasOwnProperty;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(TouchableNativeFeedback, Component);
-const entry = {
-  key: "getExtraButtonProps",
-  value: function getExtraButtonProps() {
-    const obj = { foreground: this.props.useForeground };
-    const background = this.props.background;
-    if (background) {
-      if ("RippleAndroid" === background.type) {
-        ({ borderless: obj.borderless, color: obj.rippleColor } = background);
-      } else if ("ThemeAttrAndroid" === background.type) {
-        obj.borderless = "selectableItemBackgroundBorderless" === background.attribute;
-      }
-      obj.rippleRadius = background.rippleRadius;
-    }
-    return obj;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const tmp = _objectWithoutProperties(props, closure_2);
-      TOUCHABLE_STATEDefault;
-      const merged = Object.assign(tmp);
-      return <tmp2 style={style} extraButtonProps={self.getExtraButtonProps()} />;
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableNativeFeedback, items);
-let obj = { useForeground: true, extraButtonProps: { rippleColor: null } };
-let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
-importDefaultResultResult.defaultProps = obj;
-importDefaultResultResult.SelectableBackground = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackground", rippleRadius });
-importDefaultResultResult.SelectableBackgroundBorderless = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackgroundBorderless", rippleRadius });
-importDefaultResultResult.Ripple = (color, borderless, rippleRadius) => ({ type: "RippleAndroid", color, borderless, rippleRadius });
-importDefaultResultResult.canUseNativeForeground = () => Platform.Version >= 23;
-
-export default importDefaultResultResult;
+export const useTapGesture = _mod6694.useTapGesture;
+export const useFlingGesture = _mod6700.useFlingGesture;
+export const useLongPressGesture = _mod6701.useLongPressGesture;
+export const usePinchGesture = _mod6702.usePinchGesture;
+export const useRotationGesture = _mod6703.useRotationGesture;
+export const useHoverGesture = _mod6704.useHoverGesture;
+export const useManualGesture = _mod6705.useManualGesture;
+export const useNativeGesture = _mod6706.useNativeGesture;
+export const usePanGesture = _mod6707.usePanGesture;

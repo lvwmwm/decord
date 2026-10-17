@@ -1,19 +1,19 @@
-// Module ID: 8259
-// Function ID: 8260
+// Module ID: 8305
+// Function ID: 8306
 // Name: GuildStreamSystemMessage
-// Dependencies: [6117, 8219, 8200, 8202, 1128, 8204, 2]
+// Dependencies: [6154, 8265, 8246, 8248, 1128, 8250, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 8259 (GuildStreamSystemMessage)
+// Module 8305 (GuildStreamSystemMessage)
 import intl2 from "intl" /* 1128 */;
-import Constants from "Constants" /* 6117 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8200 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8202 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8219 */;
+import Constants from "Constants" /* 6154 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8246 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8248 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8265 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8204);
+const createCommonMessageDefault = tmp(8250);
 const StreamTypes = Constants.StreamTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");
 

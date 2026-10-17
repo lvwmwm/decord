@@ -1,9 +1,9 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5345
+// Function ID: 5346
 // Name: SpatialAudioConstants
 // Dependencies: [2]
 
-// Module 5308 (SpatialAudioConstants)
+// Module 5345 (SpatialAudioConstants)
 import size from "module_2" /* 2 */;
 
 let obj2;

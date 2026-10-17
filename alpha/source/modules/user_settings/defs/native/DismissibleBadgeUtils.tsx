@@ -1,14 +1,14 @@
-// Module ID: 15698
-// Function ID: 15699
+// Module ID: 15764
+// Function ID: 15765
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 2065, 21, 7325, 558, 576, 15697, 2]
+// Dependencies: [32, 19, 2065, 21, 7376, 558, 576, 15763, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 15698 (DismissibleBadgeUtils)
+// Module 15764 (DismissibleBadgeUtils)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15697 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

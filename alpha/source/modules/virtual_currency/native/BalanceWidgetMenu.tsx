@@ -1,26 +1,26 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16769
+// Function ID: 16770
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1087, 1089, 2065, 6191, 21, 558, 576, 5150, 1128, 6404, 2052, 10248, 1267, 9406, 6194, 16706, 9292, 5118, 13664, 2002, 7102, 7483, 13663, 4997, 5458, 2]
+// Dependencies: [19, 1087, 1089, 2065, 6228, 21, 558, 576, 5187, 1128, 6457, 2052, 10312, 1267, 9470, 6231, 16770, 9352, 5155, 13732, 2002, 7155, 7529, 13731, 5033, 5495, 2]
 
-// Module 16705 (BalanceWidgetMenu)
+// Module 16769 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4997 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import QuestConstants from "QuestConstants" /* 6191 */;
-import QuestTypes from "QuestTypes" /* 6194 */;
-import TableRow2 from "TableRow" /* 6404 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
-import _mod9292 from "module_9292" /* 9292 */;
-import QuestUtils from "QuestUtils" /* 9406 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10248 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 13663 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
+import QuestTypes from "QuestTypes" /* 6231 */;
+import TableRow2 from "TableRow" /* 6457 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
+import _mod9352 from "module_9352" /* 9352 */;
+import QuestUtils from "QuestUtils" /* 9470 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10312 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 13731 */;
 import react from "react" /* 19 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ function BalanceWidgetMenu() {
   let constants2;
   let constants3;
   let str;
-  let obj = str(9292);
+  let obj = str(9352);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = react.useCallback(() => {
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBa
   const cResult = obj.c(8);
   ({ onPress, accessibilityLabel, trailing, isBusy } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5150).Text;
+    const Text = tmp(5187).Text;
     const intl = tmp(1128).intl;
     const tmp7 = <Text variant="text-sm/semibold" color="text-default">{intl.string(intl3.t.gGtZpz)}</Text>;
     cResult[0] = tmp7;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   let tmp7;
   const obj = react2;
   const cResult = obj.c(3);
-  const obj2 = _mod9292;
+  const obj2 = _mod9352;
   const balance = obj2.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {
@@ -304,7 +304,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   return tmp7;
 }) : (function BalanceWidgetMenuWrapper() {
   let tmp5Result;
-  const obj = _mod9292;
+  const obj = _mod9352;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {

@@ -1,11 +1,11 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 9454
+// Function ID: 9455
 // Name: premium_home_perk_card
-// Dependencies: [32, 1212, 9372, 2]
+// Dependencies: [32, 1212, 9436, 2]
 
-// Module 9390 (premium_home_perk_card)
+// Module 9454 (premium_home_perk_card)
 import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9372 */;
+import theme_aware_asset from "theme_aware_asset" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,14 +24,14 @@ class PremiumHomePerkCard$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumHomePerkCard", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

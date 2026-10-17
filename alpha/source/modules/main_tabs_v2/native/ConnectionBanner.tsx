@@ -1,28 +1,28 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17537
+// Function ID: 17538
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 14693, 16070, 1087, 21, 5154, 587, 1128, 558, 576, 4877, 17479, 17481, 5150, 683, 5454, 6467, 4909, 504, 1267, 16069, 5441, 14694, 2]
+// Dependencies: [32, 19, 17, 14761, 16136, 1087, 21, 5191, 587, 1128, 558, 576, 4913, 17538, 17540, 5187, 683, 5491, 6520, 4945, 504, 1267, 16135, 5478, 14762, 2]
 
-// Module 17478 (ConnectionBanner)
+// Module 17537 (ConnectionBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import useToken from "useToken" /* 4877 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import spring from "spring" /* 5441 */;
-import LinearGradientDefault from "LinearGradient" /* 5454 */;
-import _modDef6467 from "module_6467" /* 6467 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14693 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 14694 */;
+import useToken from "useToken" /* 4913 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import spring from "spring" /* 5478 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import _modDef6520 from "module_6520" /* 6520 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14761 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 14762 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 16070 */;
+import YouBarConstants from "YouBarConstants" /* 16136 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const ReanimatedRexport = tmp2(4909);
+const ReanimatedRexport = tmp2(4945);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
@@ -98,7 +98,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const ConnectionUnknownIcon = tmp(17479).ConnectionUnknownIcon;
+      const ConnectionUnknownIcon = tmp(17538).ConnectionUnknownIcon;
       const tmp19 = authStore2(ConnectionUnknownIcon, obj5);
       cResult[6] = tmp19;
       tmp17 = tmp19;
@@ -121,7 +121,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-      const ConnectionFineIcon = tmp(17481).ConnectionFineIcon;
+      const ConnectionFineIcon = tmp(17540).ConnectionFineIcon;
       const tmp11 = authStore2(ConnectionFineIcon, obj7);
       cResult[9] = tmp11;
       tmp9 = tmp11;
@@ -155,12 +155,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(17479).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(17538).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(17481).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(17540).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 });
@@ -356,7 +356,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
               }
             }
             const obj7 = { style: tmp3.glow, maskElement: tmp17, children: tmp24 };
-            const tmp32 = authStore2(_modDef6467, obj7);
+            const tmp32 = authStore2(_modDef6520, obj7);
             cResult[20] = tmp3.glow;
             cResult[21] = tmp17;
             cResult[22] = tmp24;
@@ -394,7 +394,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(4877);
+  let obj = token(4913);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -416,7 +416,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef6467;
+  tmp4 = _modDef6520;
   return closure_12(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

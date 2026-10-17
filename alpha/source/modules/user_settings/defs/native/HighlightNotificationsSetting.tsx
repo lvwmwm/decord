@@ -1,16 +1,16 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16580
+// Function ID: 16581
 // Name: HighlightNotificationsSetting
-// Dependencies: [2090, 8214, 1087, 558, 576, 504, 11003, 1128, 16517, 2]
+// Dependencies: [2090, 8260, 1087, 558, 576, 504, 11065, 1128, 16581, 2]
 
-// Module 16516 (HighlightNotificationsSetting)
+// Module 16580 (HighlightNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

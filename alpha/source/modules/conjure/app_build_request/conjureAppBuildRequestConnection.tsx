@@ -1,9 +1,9 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11052
+// Function ID: 11053
 // Name: conjureAppBuildRequestConnection
 // Dependencies: [584, 2]
 
-// Module 10990 (conjureAppBuildRequestConnection)
+// Module 11052 (conjureAppBuildRequestConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

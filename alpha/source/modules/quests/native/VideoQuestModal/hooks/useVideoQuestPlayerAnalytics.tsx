@@ -1,27 +1,27 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16174
+// Function ID: 16175
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 5345, 1087, 9440, 7636, 7635, 6196, 15999, 7626, 7584, 1384, 7606, 7617, 13830, 16109, 15990, 7613, 6194, 16000, 5948, 5953, 6198, 2]
+// Dependencies: [5, 19, 17, 5382, 1087, 9504, 7682, 7681, 6233, 16065, 7672, 7630, 1384, 7652, 7663, 13898, 16175, 16056, 7659, 6231, 16066, 5985, 5990, 6235, 2]
 // Exports: default
 
-// Module 16108 (useVideoQuestPlayerAnalytics)
+// Module 16174 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5948 */;
-import MetricEvents from "MetricEvents" /* 5953 */;
-import QuestTypes from "QuestTypes" /* 6194 */;
-import QuestContent from "QuestContent" /* 6196 */;
-import AdCreativeType from "AdCreativeType" /* 6198 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7613 */;
-import AnalyticsActions from "AnalyticsActions" /* 7626 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7635 */;
-import AdDataUtils from "AdDataUtils" /* 7636 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13830 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15990 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16000 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5985 */;
+import MetricEvents from "MetricEvents" /* 5990 */;
+import QuestTypes from "QuestTypes" /* 6231 */;
+import QuestContent from "QuestContent" /* 6233 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7659 */;
+import AnalyticsActions from "AnalyticsActions" /* 7672 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
+import AdDataUtils from "AdDataUtils" /* 7682 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 13898 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16056 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 5345 */;
+import NetworkStore from "NetworkStore" /* 5382 */;
 import size from "module_2" /* 2 */;
 
 let c7, c8, closure_5;

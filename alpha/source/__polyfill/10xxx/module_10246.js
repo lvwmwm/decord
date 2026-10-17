@@ -1,326 +1,141 @@
 // Module ID: 10246
 // Function ID: 10247
-// Dependencies: [41, 42, 93, 95, 98, 10079, 10061, 10062]
+// Dependencies: [10247, 10249, 10251, 10252, 10253, 10254, 10255, 10256, 10257, 10258, 10259, 10115, 10122, 10124, 10148, 10260, 10155]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10246
-import assignSimilarDate from "assignSimilarDate" /* 10061 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10062 */;
-import now2 from "now" /* 10079 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10148 from "module_10148" /* 10148 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10155 */;
+import _mod10247 from "module_10247" /* 10247 */;
+import _mod10249 from "module_10249" /* 10249 */;
+import _mod10251 from "module_10251" /* 10251 */;
+import _mod10252 from "module_10252" /* 10252 */;
+import _mod10253 from "module_10253" /* 10253 */;
+import _mod10254 from "module_10254" /* 10254 */;
+import _mod10255 from "module_10255" /* 10255 */;
+import _mod10256 from "module_10256" /* 10256 */;
+import _mod10257 from "module_10257" /* 10257 */;
+import _mod10258 from "module_10258" /* 10258 */;
+import _mod10259 from "module_10259" /* 10259 */;
+import _mod10260 from "module_10260" /* 10260 */;
+import { Chrono } from "module_10115" /* 10115 */;
 
-let hasOwnProperty;
+const require = globalThis.__r;
 
-let self = this;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10148.default(true), , , , , ];
+  new module_10148.default(true);
+  items[1] = new module_10247.default();
+  new module_10247.default();
+  items[2] = new module_10249.default();
+  new module_10249.default();
+  items[3] = new module_10258.default();
+  new module_10258.default();
+  items[4] = new module_10252.default(flag);
+  new module_10252.default(flag);
+  items[5] = new module_10253.default();
+  new module_10253.default();
+  items1 = [new module_10255.default(), ];
+  new module_10255.default();
+  items1[1] = new module_10254.default();
+  new module_10254.default();
+  return includeCommonConfiguration(obj, flag);
+}
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10256.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10257.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10251.default();
+  unshift3(_default2);
+  const parsers3 = tmp.parsers;
+  const unshift4 = parsers3.unshift;
+  const _default3 = new module_10259.default();
+  unshift4(_default3);
+  const parsers4 = tmp.parsers;
+  const unshift5 = parsers4.unshift;
+  const _default4 = new module_10260.default();
+  unshift5(_default4);
+  return tmp;
+}
+const module_10247 = fn(_mod10247);
+const module_10249 = fn(_mod10249);
+const module_10251 = fn(_mod10251);
+const module_10252 = fn(_mod10252);
+const module_10253 = fn(_mod10253);
+const module_10254 = fn(_mod10254);
+const module_10255 = fn(_mod10255);
+const module_10256 = fn(_mod10256);
+const module_10257 = fn(_mod10257);
+const module_10258 = fn(_mod10258);
+const module_10259 = fn(_mod10259);
+const module_10148 = fn(_mod10148);
+const module_10260 = fn(_mod10260);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10256.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10257.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10251.default();
+unshift3(_default2);
+let parsers3 = configuration.parsers;
+let unshift4 = parsers3.unshift;
+let _default3 = new module_10259.default();
+unshift4(_default3);
+let parsers4 = configuration.parsers;
+let unshift5 = parsers4.unshift;
+let _default4 = new module_10260.default();
+unshift5(_default4);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10115").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10115").Chrono;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_8 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function c(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_8(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-const regExp = new RegExp("(nu|idag|imorgon|\u00F6vermorgon|ig\u00E5r|f\u00F6rrg\u00E5r|i\\s*f\u00F6rrg\u00E5r)(?:\\s*(?:p\u00E5\\s*)?(morgonen?|f\u00F6rmiddagen?|middagen?|eftermiddagen?|kv\u00E4llen?|natten?|midnatt))?(?=\\W|$)", "i");
-class SVCasualDateParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, SVCasualDateParser);
-    const obj = _getPrototypeOf(SVCasualDateParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(SVCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return regExp;
-  }
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-let items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      let nowResult;
-      refDate = refDate.refDate;
-      const str = arg1[1] || "";
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2] || "";
-      const formatted1 = str2.toLowerCase();
-      const parsingComponents = refDate.createParsingComponents();
-      if ("nu" === formatted) {
-        nowResult = now.now(refDate.reference);
-      } else if ("idag" === formatted) {
-        nowResult = now.today(refDate.reference);
-      } else {
-        if ("imorgon" !== formatted) {
-          if ("imorn" !== formatted) {
-            if ("ig\u00E5r" === formatted) {
-              const _Date2 = Date;
-              const self3 = this;
-              const self4 = this;
-              const date = new Date(refDate.getTime());
-              date.setDate(date.getDate() - 1);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date);
-              assignSimilarDate.implySimilarTime(parsingComponents, date);
-              nowResult = parsingComponents;
-            } else if ("f\u00F6rrg\u00E5r" === formatted) {
-              const _Date = Date;
-              const self = this;
-              self2 = this;
-              const date1 = new Date(refDate.getTime());
-              date1.setDate(date1.getDate() - 2);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date1);
-              assignSimilarDate.implySimilarTime(parsingComponents, date1);
-              nowResult = parsingComponents;
-            } else {
-              nowResult = parsingComponents;
-            }
-          }
-        }
-        const _Date3 = Date;
-        const self5 = this;
-        const self6 = this;
-        const date2 = new Date(refDate.getTime());
-        date2.setDate(date2.getDate() + 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date2);
-        assignSimilarDate.implySimilarTime(parsingComponents, date2);
-        nowResult = parsingComponents;
-      }
-      switch (formatted1) {
-        case "morgon":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "morgonen":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "f\u00F6rmiddag":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "f\u00F6rmiddagen":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middag":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middagen":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddag":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddagen":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4ll":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4llen":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natten":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "midnatt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-      }
-    }
-  }
-];
-
-export default _createClass(SVCasualDateParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

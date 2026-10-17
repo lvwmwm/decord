@@ -1,7 +1,7 @@
 // Module ID: 1207
 // Function ID: 1208
 // Name: ThemeStore
-// Dependencies: [1208, 1209, 1246, 1210, 1097, 1087, 1245, 1252, 15091, 504, 2049, 584, 2]
+// Dependencies: [1208, 1209, 1246, 1210, 1097, 1087, 1245, 1252, 15160, 504, 2049, 584, 2]
 
 // Module 1207 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -23,7 +23,7 @@ let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(15091);
+const updateBackgroundColorDefault = tmp(15160);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -162,7 +162,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(15091)(closure_13);
+        tmp2(15160)(closure_13);
         flag = true;
       }
       tmp = flag;

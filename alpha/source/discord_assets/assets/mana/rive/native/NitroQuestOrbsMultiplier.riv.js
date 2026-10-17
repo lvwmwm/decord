@@ -1,8 +1,8 @@
-// Module ID: 4982
-// Function ID: 4983
+// Module ID: 5018
+// Function ID: 5019
 // Dependencies: [2]
 
-// Module 4982
+// Module 5018
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/NitroQuestOrbsMultiplier.riv.js");

@@ -1,14 +1,14 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7674
+// Function ID: 7675
 // Name: DeveloperExperimentStore
-// Dependencies: [2090, 1392, 5076, 1404, 1403, 504, 584, 2]
+// Dependencies: [2090, 1392, 5113, 1404, 1403, 504, 584, 2]
 
-// Module 7628 (DeveloperExperimentStore)
+// Module 7674 (DeveloperExperimentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserStoreUtils from "UserStoreUtils" /* 1403 */;
 import UserStoreConstants from "UserStoreConstants" /* 1404 */;
-import ExperimentConstants from "ExperimentConstants" /* 5076 */;
+import ExperimentConstants from "ExperimentConstants" /* 5113 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;

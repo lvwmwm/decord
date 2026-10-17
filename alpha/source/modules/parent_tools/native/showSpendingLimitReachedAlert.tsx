@@ -1,14 +1,14 @@
-// Module ID: 10297
-// Function ID: 10298
+// Module ID: 10361
+// Function ID: 10362
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [5854, 4850, 7959, 5363, 1128, 7527, 7238, 2]
+// Dependencies: [5891, 4886, 8005, 5400, 1128, 7573, 7290, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10297 (showSpendingLimitReachedAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5854 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
-import LayerActionCreators from "LayerActionCreators" /* 7527 */;
+// Module 10361 (showSpendingLimitReachedAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5891 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import LayerActionCreators from "LayerActionCreators" /* 7573 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -16,8 +16,8 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/showSpend
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
   let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    tmp3 = billingError.code === tmp(4850).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4850).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
-    const tmp4 = billingError.code === tmp(4850).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4850).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    tmp3 = billingError.code === tmp(4886).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4886).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    const tmp4 = billingError.code === tmp(4886).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4886).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
   }
   return tmp3;
 };
@@ -28,7 +28,7 @@ export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAl
   let intl3;
   let intl4;
   let obj4;
-  let obj = activeLinkUserIds(7959);
+  let obj = activeLinkUserIds(8005);
   activeLinkUserIds = obj.getActiveLinkUserIds();
   let obj2 = { title: intl.string(activeLinkUserIds(1128).t.QJKKrT), body: intl2.string(activeLinkUserIds(1128).t["73Islf"]), isDismissable: true };
   const show = actions_AlertActionCreatorsDefault.show;

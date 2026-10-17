@@ -1,90 +1,138 @@
 // Module ID: 6707
 // Function ID: 6708
-// Dependencies: [19, 38, 6535]
-// Exports: usePropsValidator
+// Dependencies: [6680, 6695, 6671]
+// Exports: usePanGesture
 
 // Module 6707
-import react from "react" /* 19 */;
-import _modDef38 from "module_38" /* 38 */;
+import ComposedGestureName from "ComposedGestureName" /* 6671 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6680 */;
+import _mod6695 from "module_6695" /* 6695 */;
 
-const useMemo = react.useMemo;
-
-export const usePropsValidator = (index) => {
-  index = index.index;
-  const snapPoints = index.snapPoints;
-  const enableDynamicSizing = index.enableDynamicSizing;
-  const topInset = index.topInset;
-  const bottomInset = index.bottomInset;
-  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
-  topInset(() => {
-    let items;
-    if (snapPoints) {
-      let value = obj;
-      if ("get" in snapPoints) {
-        value = obj.get();
-      }
-      items = value;
+function transformPanProps(activeOffsetY) {
+  activeOffsetY = activeOffsetY.activeOffsetY;
+  if (undefined !== activeOffsetY) {
+    const _Array = Array;
+    if (Array.isArray(activeOffsetY)) {
+      const _HermesInternal3 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY[0];
+      const _HermesInternal4 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY[1];
     } else {
-      items = [];
-    }
-    let tmp2 = importDefault;
-    let tmp3 = dependencyMap;
-    let tmp5 = items;
-    let tmp4 = _modDef38;
-    if (!items) {
-      tmp5 = enableDynamicSizing;
-    }
-    tmp4(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
-    const mapped = items.map((item) => {
-      let parsed = item;
-      if (typeof item !== "number") {
-        const _Number = Number;
-        parsed = Number.parseInt(item.replace("%", ""), 10);
+      const obj = maybeExtractNativeEvent;
+      if (obj.maybeUnpackValue(activeOffsetY) < 0) {
+        const _HermesInternal2 = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY;
+      } else {
+        const _HermesInternal = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY;
       }
-      let tmp4 = parsed > 0;
-      const tmp2 = enableDynamicSizing;
-      const tmp3 = snapPoints(enableDynamicSizing[1]);
-      if (!tmp4) {
-        tmp4 = parsed === index(tmp2[2]).INITIAL_SNAP_POINT;
+    }
+    delete activeOffsetY["activeOffsetY"];
+  }
+  const failOffsetX = activeOffsetY.failOffsetX;
+  if (undefined !== failOffsetX) {
+    const _Array2 = Array;
+    if (Array.isArray(failOffsetX)) {
+      const _HermesInternal7 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX[0];
+      const _HermesInternal8 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX[1];
+    } else {
+      const obj2 = maybeExtractNativeEvent;
+      if (obj2.maybeUnpackValue(failOffsetX) < 0) {
+        const _HermesInternal6 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX;
+      } else {
+        const _HermesInternal5 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX;
       }
-      tmp3(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
-    });
-    let tmp9 = "value" in items;
-    const tmp2Result = _modDef38;
-    if (!tmp9) {
-      tmp9 = items.length > 0;
     }
-    if (!tmp9) {
-      tmp9 = enableDynamicSizing;
+    delete activeOffsetY["failOffsetX"];
+  }
+  const failOffsetY = activeOffsetY.failOffsetY;
+  if (undefined !== failOffsetY) {
+    const _Array3 = Array;
+    if (Array.isArray(failOffsetY)) {
+      const _HermesInternal11 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY[0];
+      const _HermesInternal12 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY[1];
+    } else {
+      const obj3 = maybeExtractNativeEvent;
+      if (obj3.maybeUnpackValue(failOffsetY) < 0) {
+        const _HermesInternal10 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY;
+      } else {
+        const _HermesInternal9 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY;
+      }
     }
-    tmp2Result(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
-    let tmp13 = typeof index === "number";
-    const tmp2Result5 = _modDef38;
-    if (typeof index !== "number") {
-      tmp13 = undefined === tmp12;
+    delete activeOffsetY["failOffsetY"];
+  }
+  const activeOffsetX = activeOffsetY.activeOffsetX;
+  if (undefined !== activeOffsetX) {
+    const _Array4 = Array;
+    if (Array.isArray(activeOffsetX)) {
+      const _HermesInternal15 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX[0];
+      const _HermesInternal16 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX[1];
+    } else {
+      const obj4 = maybeExtractNativeEvent;
+      if (obj4.maybeUnpackValue(activeOffsetX) < 0) {
+        const _HermesInternal14 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX;
+      } else {
+        const _HermesInternal13 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX;
+      }
     }
-    tmp2Result5(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
-    let tmp16 = enableDynamicSizing;
-    const tmp2Result6 = _modDef38;
-    if (!enableDynamicSizing) {
-      tmp16 = typeof tmp12 !== "number";
-    }
-    if (!tmp16) {
-      tmp16 = tmp12 >= -1 && tmp12 <= items.length - 1;
-      const tmp17 = tmp12 >= -1 && tmp12 <= items.length - 1;
-    }
-    tmp2Result6(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
-    let tmp20 = typeof topInset === "number";
-    const tmp2Result7 = _modDef38;
-    if (typeof topInset !== "number") {
-      tmp20 = undefined === topInset;
-    }
-    tmp2Result7(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
-    let tmp23 = typeof bottomInset === "number";
-    const tmp2Result8 = _modDef38;
-    if (typeof bottomInset !== "number") {
-      tmp23 = undefined === bottomInset;
-    }
-    tmp2Result8(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
-  }, items);
+    delete activeOffsetY["activeOffsetX"];
+  }
+  const obj5 = maybeExtractNativeEvent;
+  activeOffsetY.changeEventCalculator = obj5.getChangeEventCalculator(diffCalculator);
+  activeOffsetY.fillInDefaultValues = fillInDefaultValues;
+  return activeOffsetY;
+}
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
+  } else {
+    diff = translationX;
+  }
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 4211053881938;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 12221662243929;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+let closure_6 = {};
+
+export const usePanGesture = function usePanGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_6;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod6695;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
 };

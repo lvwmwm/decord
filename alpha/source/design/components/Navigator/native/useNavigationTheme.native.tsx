@@ -1,14 +1,14 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 7007
+// Function ID: 7008
 // Name: useNavigationTheme
-// Dependencies: [19, 558, 576, 4877, 587, 5028, 1506, 2]
+// Dependencies: [19, 558, 576, 4913, 587, 5065, 1506, 2]
 
-// Module 6954 (useNavigationTheme)
+// Module 7007 (useNavigationTheme)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Link from "Link" /* 1506 */;
-import useToken from "useToken" /* 4877 */;
-import shared from "shared" /* 5028 */;
+import useToken from "useToken" /* 4913 */;
+import shared from "shared" /* 5065 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

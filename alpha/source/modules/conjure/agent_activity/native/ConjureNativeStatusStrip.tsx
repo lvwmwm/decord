@@ -1,22 +1,22 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12298
+// Function ID: 12299
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 10913, 11649, 21, 5154, 587, 558, 576, 12061, 11648, 12234, 504, 1128, 5118, 12239, 6409, 3865, 12240, 5150, 5108, 2]
+// Dependencies: [32, 19, 17, 10977, 11711, 21, 5191, 587, 558, 576, 12124, 11710, 12299, 504, 1128, 5155, 12304, 6462, 3883, 12305, 5187, 5145, 2]
 
-// Module 12233 (ConjureNativeStatusStrip)
+// Module 12298 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import AILoaderConstants from "AILoaderConstants" /* 11649 */;
-import ConjureStatusLabels from "ConjureStatusLabels" /* 12061 */;
-import ConjureUsageSheet from "ConjureUsageSheet" /* 12239 */;
-import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 12240 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
+import AILoaderConstants from "AILoaderConstants" /* 11711 */;
+import ConjureStatusLabels from "ConjureStatusLabels" /* 12124 */;
+import ConjureUsageSheet from "ConjureUsageSheet" /* 12304 */;
+import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 12305 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10977 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -419,11 +419,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                   tmp15 = cResult[12];
                   tmp16 = cResult[13];
                 }
-                const first1 = tmp(12061).RECALLING_LINES[0];
+                const first1 = tmp(12124).RECALLING_LINES[0];
                 if (cResult[14] !== projectUsage) {
                   let runesUsedLabelsResult = null;
                   if (null != projectUsage) {
-                    const tmpResult3 = tmp(12061);
+                    const tmpResult3 = tmp(12124);
                     runesUsedLabelsResult = tmpResult3.runesUsedLabels(projectUsage);
                   }
                   cResult[14] = projectUsage;
@@ -495,7 +495,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                   cResult[26] = thinkingOpen;
                   cResult[27] = tmp28Result;
                 }
-                const PressableOpacity = tmp(6409).PressableOpacity;
+                const PressableOpacity = tmp(6462).PressableOpacity;
                 if (!thinking) {
                   class K {
                     constructor() {
@@ -571,7 +571,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                       showActionSheet(obj);
                     }
                   }
-                  stringResult = obj6.string(_modDef3865["0Kemnh"]);
+                  stringResult = obj6.string(_modDef3883["0Kemnh"]);
                 }
                 obj3 = { line: tmp16, rotating: tmp15 === first1, immediate: tmp4 };
                 tmp28Result = closure_8(PressableOpacity, obj2);
@@ -583,8 +583,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     }
   }
   const obj4 = { activity, compacting, saving: tmp4, remixing: null != remixStartedAt, recalling: undefined !== recalling && recalling, controlling, publishPending: stateFromStores, publishing: stateFromStores };
-  const thinkingLabel = tmp(12061).thinkingLabel;
-  tmp(12061);
+  const thinkingLabel = tmp(12124).thinkingLabel;
+  tmp(12124);
   if (stateFromStores) {
     class K {
       constructor() {
@@ -664,8 +664,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   }
   let obj2 = { activity, compacting, saving, remixing: tmp5, recalling: flag, controlling, publishPending: tmp9, publishing: stateFromStores };
   tmp9 = stateFromStores;
-  const thinkingLabel = projectId(12061).thinkingLabel;
-  projectId(12061);
+  const thinkingLabel = projectId(12124).thinkingLabel;
+  projectId(12124);
   if (stateFromStores) {
     tmp9 = tmp7;
   }
@@ -673,9 +673,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const intl = tmp2(1128).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = tmp2(12061).RECALLING_LINES[0];
+  const first = tmp2(12124).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result2 = projectId(12061);
+    const tmp2Result2 = projectId(12124);
     runesUsedLabelsResult = tmp2Result2.runesUsedLabels(projectUsage);
   }
   let tmp14 = null != activity && "" !== activity.text;
@@ -707,7 +707,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp18Result3 = null;
     if (null != connLabel) {
       let str3 = "text-muted";
-      const Text = tmp2(5150).Text;
+      const Text = tmp2(5187).Text;
       if (connFailed) {
         str3 = "text-feedback-critical";
       }
@@ -718,11 +718,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp16Result = null;
     if (null != runesUsedLabelsResult) {
       const obj8 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: tmp15, children: items4 };
-      const PressableOpacity2 = tmp2(6409).PressableOpacity;
+      const PressableOpacity2 = tmp2(6462).PressableOpacity;
       const obj9 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-      items4 = [closure_8(projectId(5150).Text, obj9), ];
+      items4 = [closure_8(projectId(5187).Text, obj9), ];
       const obj10 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp2(5108).CircleInformationIcon;
+      const CircleInformationIcon = tmp2(5145).CircleInformationIcon;
       items4[1] = closure_8(CircleInformationIcon, obj10);
       tmp16Result = tmp16(PressableOpacity2, obj8);
     }
@@ -731,7 +731,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     return closure_9(View, obj3);
   }
   let tmp21 = thinking;
-  const PressableOpacity = tmp2(6409).PressableOpacity;
+  const PressableOpacity = tmp2(6462).PressableOpacity;
   if (!thinking) {
     tmp21 = tmp20;
   }
@@ -751,7 +751,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   stringResult1 = undefined;
   if (thinking) {
     const intl2 = tmp2(1128).intl;
-    stringResult1 = intl2.string(_modDef3865["0Kemnh"]);
+    stringResult1 = intl2.string(_modDef3883["0Kemnh"]);
   }
   tmp18Result4 = tmp18(PressableOpacity, obj11);
 });

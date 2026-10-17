@@ -1,21 +1,21 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12765
+// Function ID: 12766
 // Name: CheckpointStatNumber
-// Dependencies: [19, 17, 5500, 21, 5154, 558, 576, 12682, 4973, 2]
+// Dependencies: [19, 17, 5537, 21, 5191, 558, 576, 12747, 5009, 2]
 
-// Module 12700 (CheckpointStatNumber)
+// Module 12765 (CheckpointStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5500 */;
-import CheckpointTextDefault from "CheckpointText" /* 12682 */;
+import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointTextDefault from "CheckpointText" /* 12747 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const CheckpointNumbersRive2 = tmp(4973);
+const CheckpointNumbersRive2 = tmp(5009);
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;

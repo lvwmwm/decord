@@ -1,41 +1,41 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11673
+// Function ID: 11674
 // Name: useConjurePublishAction
-// Dependencies: [5, 19, 5503, 7540, 2068, 4807, 2090, 4809, 10897, 10913, 1087, 7170, 7169, 10923, 11612, 6299, 10930, 10919, 10986, 11613, 1128, 3865, 10975, 584, 8533, 11614, 10917, 11609, 11615, 504, 2]
+// Dependencies: [5, 19, 5540, 7586, 2068, 4843, 2090, 4845, 6293, 10977, 1087, 6294, 7222, 10987, 11674, 6357, 10996, 10983, 11046, 11675, 1128, 3883, 11036, 584, 8579, 11676, 10981, 11671, 11677, 504, 2]
 // Exports: default, isConjureLiveNameOutdated, publishGuildId, saveConjureFirstPublishDetails
 
-// Module 11611 (useConjurePublishAction)
+// Module 11673 (useConjurePublishAction)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6299 */;
-import ConjureUtils from "ConjureUtils" /* 7169 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7170 */;
-import UserActionCreators from "UserActionCreators" /* 8533 */;
-import conjureAppInServer from "conjureAppInServer" /* 10923 */;
-import conjurePublishFailureMessage from "conjurePublishFailureMessage" /* 11613 */;
-import conjurePublishAction2 from "conjurePublishAction" /* 11614 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6357 */;
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import UserActionCreators from "UserActionCreators" /* 8579 */;
+import conjureAppInServer from "conjureAppInServer" /* 10987 */;
+import conjurePublishFailureMessage from "conjurePublishFailureMessage" /* 11675 */;
+import conjurePublishAction2 from "conjurePublishAction" /* 11676 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
-import UserProfileStore from "UserProfileStore" /* 7540 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import UserProfileStore from "UserProfileStore" /* 7586 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 10897 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6293 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10977 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const conjurePublishFailureMessageDefault = conjurePublishFailureMessage;
-let _null, _require, c4, closure_10, closure_11, closure_13, f156722, integrationInstalled, promptFirstPublish;
+let _null, _require, c4, closure_10, closure_11, closure_13, f157054, integrationInstalled, promptFirstPublish;
 
 let closure_12;
 let tmp;
 let unpackModuleId;
-const _modDef3865 = tmp(3865);
-const f109460 = () => {
+const _modDef3883 = tmp(3883);
+const f109771 = () => {
 
 };
 function readPublishSubject(projectId, arg1) {
@@ -276,7 +276,7 @@ obj = function _saveConjureFirstPublishDetails() {
       let c1;
       let c2;
       let c3;
-      let obj3;
+      let obj2;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -310,7 +310,7 @@ obj = function _saveConjureFirstPublishDetails() {
               closure_5 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -340,8 +340,8 @@ obj = function _saveConjureFirstPublishDetails() {
                 c5 = 1;
                 c6 = 3;
                 c7 = 1;
-                const obj6 = { value: obj3.updateProjectSettings(closure_0, closure_5), done: false };
-                obj3 = closure_132_0(closure_132_2[17]);
+                const obj6 = { value: obj2.updateProjectSettings(closure_0, closure_5), done: false };
+                obj2 = closure_132_0(closure_132_2[17]);
                 return obj6;
               }
             }
@@ -359,7 +359,7 @@ obj = function _saveConjureFirstPublishDetails() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: value.ok, done: true };
+            return { value: true, done: true };
           }
         } catch (tmp31) {
           if (0 === c5) {
@@ -498,7 +498,7 @@ function startPublish(project, isUpdate, arg2) {
     } else {
       const tmp7 = require;
       if (ok.code === conjurePublishFailureMessage.PREVIEW_BOT_NOT_INSTALLED_CODE) {
-        const tmp7Result = tmp7(10919);
+        const tmp7Result = tmp7(10983);
         project = tmp7Result.getProject(id);
         project.catch(() => {
 
@@ -524,7 +524,7 @@ function startPublish(project, isUpdate, arg2) {
       tmp(dependencyMap[24]);
       const tmpResult3 = tmp(dependencyMap[13]);
       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(project), { withMutualGuilds: true });
-      profile.catch(f109460);
+      profile.catch(f109771);
     }
     const tmpResult4 = tmp(dependencyMap[22]);
     result = tmpResult4.refreshPublishedProject(id, { isPreview: false });
@@ -560,7 +560,7 @@ function startPublish(project, isUpdate, arg2) {
       message = message.message;
     } else {
       const intl = intl2.intl;
-      message = intl.string(_modDef3865.gMWZeG);
+      message = intl.string(_modDef3883.gMWZeG);
     }
     showError(message);
   });
@@ -938,13 +938,13 @@ obj = function _continuePublish() {
             closure_139_25.add(projectId);
             c12 = 2;
             const requestConsent = platform.requestConsent;
-            f156722 = requestConsent;
+            f157054 = requestConsent;
             if (requestConsent == null) {
-              f156722 = (arg0) => closure_2_18(arg0, closure_1_3);
+              f157054 = (arg0) => closure_2_18(arg0, closure_1_3);
             }
             c14 = 5;
             c15 = 1;
-            const obj10 = { value: f156722(projectId), done: false };
+            const obj10 = { value: f157054(projectId), done: false };
             return obj10;
           }
         } catch (tmp101) {
@@ -1207,7 +1207,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       obj = conjureAppInServer;
       const profile = fetchProfile(obj.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f109460);
+      profile.catch(f109771);
     }
   }, items3);
   let application_id;

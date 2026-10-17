@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8371
+// Function ID: 8372
 // Name: VoiceUserAffinityExperiment
 // Dependencies: [1455, 558, 576, 2]
 // Exports: getVoiceUserAffinitySortType
 
-// Module 8325 (VoiceUserAffinityExperiment)
+// Module 8371 (VoiceUserAffinityExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

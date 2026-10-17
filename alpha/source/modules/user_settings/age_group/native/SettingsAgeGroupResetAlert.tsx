@@ -1,10 +1,10 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15774
+// Function ID: 15775
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 558, 576, 1505, 6142, 5364, 4867, 1128, 3125, 5368, 5368, 2]
+// Dependencies: [5, 21, 558, 576, 1505, 6179, 5401, 4903, 1128, 3143, 5405, 5405, 2]
 
-// Module 15708 (SettingsAgeGroupResetAlert)
-import _modDef3125 from "module_3125" /* 3125 */;
+// Module 15774 (SettingsAgeGroupResetAlert)
+import _modDef3143 from "module_3143" /* 3143 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -117,9 +117,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3125["bD//cU"]);
+    const stringResult = intl.string(_modDef3143["bD//cU"]);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef3125.FbTAmI);
+    const stringResult1 = intl2.string(_modDef3143.FbTAmI);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp8 = stringResult1;
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(_modDef3125.V822Mp);
+    const stringResult2 = intl3.string(_modDef3143.V822Mp);
     cResult[4] = stringResult2;
     tmp12 = stringResult2;
   } else {
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[5] !== tmp5) {
     let obj3 = { variant: "destructive", onPress: tmp5, text: tmp12 };
-    const tmp17 = closure_4(tmp(5368).AlertActionButton, obj3, "confirm");
+    const tmp17 = closure_4(tmp(5405).AlertActionButton, obj3, "confirm");
     cResult[5] = tmp5;
     cResult[6] = tmp17;
     tmp15 = tmp17;
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { variant: "secondary", text: intl4.string(tmp(1128).t["ETE/oC"]) };
-    const AlertActionButton = tmp(5368).AlertActionButton;
+    const AlertActionButton = tmp(5405).AlertActionButton;
     intl4 = tmp(1128).intl;
     const tmp20 = closure_4(AlertActionButton, obj4, "cancel");
     cResult[7] = tmp20;
@@ -156,8 +156,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     tmp18 = cResult[7];
   }
   if (cResult[8] !== tmp15) {
-    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5368).AlertActions, obj6) };
-    const AlertModal = tmp(5368).AlertModal;
+    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5405).AlertActions, obj6) };
+    const AlertModal = tmp(5405).AlertModal;
     obj6 = { children: items };
     items = [tmp15, tmp18];
     const tmp24 = closure_4(AlertModal, obj5);
@@ -253,7 +253,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   };
   obj = require("useNavigation");
   _require = obj.useNavigation();
-  let obj2 = { title: intl.string(obj(3125)["bD//cU"]), content: intl2.string(obj(3125).FbTAmI), actions: closure_5(AlertActions, obj3) };
+  let obj2 = { title: intl.string(obj(3143)["bD//cU"]), content: intl2.string(obj(3143).FbTAmI), actions: closure_5(AlertActions, obj3) };
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -264,7 +264,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     onPress: function handleConfirm() {
       return obj(...arguments);
     },
-    text: intl3.string(obj(3125).V822Mp)
+    text: intl3.string(obj(3143).V822Mp)
   };
   const AlertActionButton = require("AlertModal").AlertActionButton;
   intl3 = require("intl").intl;

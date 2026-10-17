@@ -1,12 +1,12 @@
-// Module ID: 18883
-// Function ID: 18884
+// Module ID: 18945
+// Function ID: 18946
 // Name: CreatorMonetizationSettingsDisabledContext
-// Dependencies: [19, 21, 558, 576, 7178, 2]
+// Dependencies: [19, 21, 558, 576, 7230, 2]
 
-// Module 18883 (CreatorMonetizationSettingsDisabledContext)
+// Module 18945 (CreatorMonetizationSettingsDisabledContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7178 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7230 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

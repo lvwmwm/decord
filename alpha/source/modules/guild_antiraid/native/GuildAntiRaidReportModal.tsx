@@ -1,23 +1,23 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14981
+// Function ID: 14982
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 14913, 21, 5154, 587, 558, 576, 1633, 5150, 4865, 1128, 6401, 6489, 5442, 6425, 9872, 12480, 6870, 6912, 2]
+// Dependencies: [5, 32, 19, 17, 14982, 21, 5191, 587, 558, 576, 1633, 5187, 4901, 1128, 6454, 6542, 5479, 6478, 9936, 12545, 6923, 6965, 2]
 
-// Module 14912 (GuildAntiRaidReportModal)
+// Module 14981 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import components_Button_Button from "components/Button/Button" /* 5442 */;
-import NavigatorHeader from "NavigatorHeader" /* 6425 */;
-import TableRowGroup2 from "TableRowGroup" /* 6489 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 14913 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 14982 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   }
   if (cResult[4] !== tmp4.headerSubtitle) {
     const obj3 = { style: headerSubtitle, variant: "text-sm/medium", color: "text-default", children: tmp7 };
-    const tmp11 = closure_10(raidTypes(5150).Text, obj3);
+    const tmp11 = closure_10(raidTypes(5187).Text, obj3);
     cResult[4] = tmp4.headerSubtitle;
     cResult[5] = tmp11;
     tmp9 = tmp11;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
       }
       if (cResult[10] !== tmp13) {
         const obj4 = { hasIcons: false, children: tmp13 };
-        const tmp17 = closure_10(raidTypes(6489).TableRowGroup, obj4);
+        const tmp17 = closure_10(raidTypes(6542).TableRowGroup, obj4);
         cResult[10] = tmp13;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -152,7 +152,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           }
           if (cResult[21] !== onSubmit) {
             const obj6 = { size: "md", text: tmp25, onPress: onSubmit };
-            const tmp29 = closure_10(raidTypes(5442).Button, obj6);
+            const tmp29 = closure_10(raidTypes(5479).Button, obj6);
             cResult[21] = onSubmit;
             cResult[22] = tmp29;
             tmp27 = tmp29;

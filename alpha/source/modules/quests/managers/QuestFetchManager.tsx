@@ -1,17 +1,17 @@
-// Module ID: 18968
-// Function ID: 18969
+// Module ID: 19030
+// Function ID: 19031
 // Name: QuestFetchManager
-// Dependencies: [7610, 1104, 7032, 9404, 1257, 9410, 1384, 6291, 18969, 2]
+// Dependencies: [7656, 1104, 7085, 9468, 1257, 9474, 1384, 6349, 19031, 2]
 
-// Module 18968 (QuestFetchManager)
+// Module 19030 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1104 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import QuestsEligibility from "QuestsEligibility" /* 9404 */;
-import QuestActionCreators from "QuestActionCreators" /* 9410 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18969 */;
-import QuestStore from "QuestStore" /* 7610 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import QuestsEligibility from "QuestsEligibility" /* 9468 */;
+import QuestActionCreators from "QuestActionCreators" /* 9474 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 19031 */;
+import QuestStore from "QuestStore" /* 7656 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18969).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(19031).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 
@@ -131,7 +131,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6291);
+        const tmp6Result = tmp6(6349);
         const state = tmp6Result.getState();
       }
     }

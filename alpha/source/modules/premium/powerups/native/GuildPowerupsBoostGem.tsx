@@ -1,15 +1,15 @@
-// Module ID: 13137
-// Function ID: 13138
+// Module ID: 13202
+// Function ID: 13203
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 5154, 587, 558, 576, 13138, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 13203, 2]
 
-// Module 13137 (GuildPowerupsBoostGem)
+// Module 13202 (GuildPowerupsBoostGem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BoostGemDefault from "BoostGem" /* 13138 */;
-import createStyles from "createStyles" /* 5154 */;
+import BoostGemDefault from "BoostGem" /* 13203 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

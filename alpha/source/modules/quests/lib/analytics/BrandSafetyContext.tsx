@@ -1,17 +1,17 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9478
+// Function ID: 9479
 // Name: BrandSafetyContext
-// Dependencies: [9411, 2068, 2090, 4819, 4998, 1392, 9415, 7606, 1417, 5484, 2]
+// Dependencies: [9475, 2068, 2090, 4855, 5034, 1392, 9479, 7652, 1417, 5521, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9414 (BrandSafetyContext)
+// Module 9478 (BrandSafetyContext)
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9415 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9411 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9479 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9475 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4819 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

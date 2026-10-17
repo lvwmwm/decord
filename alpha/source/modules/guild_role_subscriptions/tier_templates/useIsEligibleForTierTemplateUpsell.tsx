@@ -1,9 +1,9 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17377
+// Function ID: 17378
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [2090, 1087, 558, 576, 504, 14834, 7185, 2]
+// Dependencies: [2090, 1087, 558, 576, 504, 14903, 7237, 2]
 
-// Module 17318 (useIsEligibleForTierTemplateUpsell)
+// Module 17377 (useIsEligibleForTierTemplateUpsell)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
     }
     result = false === hasItem1;
   }
-  const tmpResult = tmp(7185);
+  const tmpResult = tmp(7237);
   if (result) {
     result = tmpResult.canManageGuildRoleSubscriptions(stateFromStores);
   }

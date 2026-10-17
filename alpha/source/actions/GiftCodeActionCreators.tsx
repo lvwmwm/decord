@@ -1,20 +1,20 @@
-// Module ID: 10737
-// Function ID: 10738
+// Module ID: 10800
+// Function ID: 10801
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5503, 7484, 7492, 1087, 1394, 584, 5852, 6299, 7483, 5854, 4851, 1257, 1297, 10738, 10739, 2]
+// Dependencies: [5, 5540, 7530, 7538, 1087, 1394, 584, 5889, 6357, 7529, 5891, 4887, 1257, 1297, 10801, 10802, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 10737 (GiftCodeActionCreators)
+// Module 10800 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4851 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7492 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10738 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10739 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4887 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7538 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10801 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7484 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

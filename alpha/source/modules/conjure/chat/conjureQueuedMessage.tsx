@@ -1,11 +1,11 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12166
+// Function ID: 12167
 // Name: conjureQueuedMessage
-// Dependencies: [10916, 2]
+// Dependencies: [10980, 2]
 // Exports: queuedMessageActionHandler
 
-// Module 12103 (conjureQueuedMessage)
-import conjureChatConnection from "conjureChatConnection" /* 10916 */;
+// Module 12166 (conjureQueuedMessage)
+import conjureChatConnection from "conjureChatConnection" /* 10980 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureQueuedMessage.tsx");

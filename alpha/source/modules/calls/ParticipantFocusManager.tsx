@@ -1,12 +1,12 @@
-// Module ID: 18557
-// Function ID: 18558
+// Module ID: 18619
+// Function ID: 18620
 // Name: ParticipantFocusManager
-// Dependencies: [5172, 6255, 7032, 2]
+// Dependencies: [5209, 6292, 7085, 2]
 
-// Module 18557 (ParticipantFocusManager)
-import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+// Module 18619 (ParticipantFocusManager)
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let map;

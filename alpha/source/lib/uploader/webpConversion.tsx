@@ -1,10 +1,10 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8063
+// Function ID: 8064
 // Name: webpConversion
-// Dependencies: [5, 3, 8018, 1266, 2]
+// Dependencies: [5, 3, 8064, 1266, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8017 (webpConversion)
+// Module 8063 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef1266 from "module_1266" /* 1266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

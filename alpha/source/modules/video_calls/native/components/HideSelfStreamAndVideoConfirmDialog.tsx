@@ -1,17 +1,17 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18339
+// Function ID: 18340
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 18277, 21, 5154, 558, 576, 5323, 1128, 5150, 5461, 2]
+// Dependencies: [109, 19, 17, 18338, 21, 5191, 558, 576, 5360, 1128, 5187, 5498, 2]
 
-// Module 18278 (HideSelfStreamAndVideoConfirmDialog)
+// Module 18339 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5323 */;
-import AlertDefault from "Alert" /* 5461 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18277 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
+import AlertDefault from "Alert" /* 5498 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18338 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfStre
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
   const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_7(tmp6(5150).Text, obj3);
+  items[0] = closure_7(tmp6(5187).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfStre
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(5150).Text;
+  const Text = tmp6(5187).Text;
   intl7 = tmp6(1128).intl;
   items[1] = closure_7(Text, obj4);
   return closure_7(tmp12, obj);

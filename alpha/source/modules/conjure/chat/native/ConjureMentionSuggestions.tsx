@@ -1,16 +1,16 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12324
+// Function ID: 12325
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5154, 587, 558, 576, 6489, 1128, 3865, 6404, 1202, 5021, 12107, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 6542, 1128, 3883, 6457, 1202, 5057, 12170, 2]
 
-// Module 12259 (ConjureMentionSuggestions)
+// Module 12324 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import TableRowGroup3 from "TableRowGroup" /* 6489 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import TableRowGroup3 from "TableRowGroup" /* 6542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
         }
       }
       let obj3 = {
-        title: intl.string(onSelect(3865).Vb3sUg),
+        title: intl.string(onSelect(3883).Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, user.user.id);
             })
       };
-      const TableRowGroup = tmp(6489).TableRowGroup;
+      const TableRowGroup = tmp(6542).TableRowGroup;
       intl = tmp(1128).intl;
       tmp15 = closure_3(TableRowGroup, obj3);
     }
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
         }
       }
       const obj4 = {
-        title: intl2.string(onSelect(3865).zA5KLM),
+        title: intl2.string(onSelect(3883).zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, file.file.id);
             })
       };
-      const TableRowGroup2 = tmp(6489).TableRowGroup;
+      const TableRowGroup2 = tmp(6542).TableRowGroup;
       intl2 = tmp(1128).intl;
       tmp16 = closure_3(TableRowGroup2, obj4);
     }
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     const tmp13 = closure_4;
     if (found.length > 0) {
       let obj = {
-        title: intl.string(_modDef3865.Vb3sUg),
+        title: intl.string(_modDef3883.Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -231,7 +231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     let tmp7 = null;
     if (found1.length > 0) {
       let obj2 = {
-        title: intl2.string(_modDef3865.zA5KLM),
+        title: intl2.string(_modDef3883.zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;

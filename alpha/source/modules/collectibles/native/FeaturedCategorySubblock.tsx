@@ -1,20 +1,20 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 16930
+// Function ID: 16931
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 7484, 1089, 1087, 21, 5154, 558, 576, 1505, 9202, 504, 16850, 1267, 7483, 7102, 16868, 6409, 1128, 587, 5091, 7496, 9265, 2]
+// Dependencies: [19, 7530, 1089, 1087, 21, 5191, 558, 576, 1505, 9262, 504, 16910, 1267, 7529, 7155, 16928, 6462, 1128, 587, 5128, 7542, 9325, 2]
 
-// Module 16870 (FeaturedCategorySubblock)
+// Module 16930 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7483 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 16868 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 16928 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7484 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp10;
-const FastImageDefault = tmp10(5091);
+const FastImageDefault = tmp10(5128);
 let closure_4 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 ({ AnalyticEvents: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -140,14 +140,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
   const tmp = closure_9();
   let obj = subblock(1505);
   importDefault = obj.useNavigation();
-  let obj2 = subblock(9202);
+  let obj2 = subblock(9262);
   dependencyMap = obj2.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
   let obj3 = subblock(504);
   let items = [stateFromStores];
   stateFromStores = obj3.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj4 = subblock(16850);
+  const obj4 = subblock(16910);
   const handleCardVisibilityChange = obj4.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;
@@ -217,7 +217,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
     style: tmp.container,
     children: items1
   };
-  PressableOpacity = tmp2(6409).PressableOpacity;
+  PressableOpacity = tmp2(6462).PressableOpacity;
   intl = tmp2(1128).intl;
   obj7 = { category: subblock.name };
   intl2 = tmp2(1128).intl;
@@ -230,11 +230,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((subblock) => {
     tmp9Result = tmp9(FastImageDefault, obj9);
   }
   items1 = [tmp9Result, ];
-  const tmp2Result = subblock(7496);
+  const tmp2Result = subblock(7542);
   let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj11 = { style: tmp.limitedTimeBadge };
-    result = tmp9(tmp2(9265).LimitedTimeBadge, obj11);
+    result = tmp9(tmp2(9325).LimitedTimeBadge, obj11);
   }
   items1[1] = result;
   return closure_7(tmp11, obj5);

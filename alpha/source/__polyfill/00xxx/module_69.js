@@ -15,7 +15,7 @@ let metroImportDefault;
 const RN$LegacyInterop_UIManager_getConstants = global.RN$LegacyInterop_UIManager_getConstants;
 let c3 = false;
 let closure_4 = {};
-const f19513 = () => {
+const f19575 = () => {
 
 };
 ({ RN$LegacyInterop_UIManager_getConstantsForViewManager: metroImportDefault, RN$LegacyInterop_UIManager_getDefaultEventTypes: metroImportAll, RN$discordUiManagerOptimization } = global);
@@ -26,7 +26,7 @@ let tmp2 = 2 === RN$discordUiManagerOptimization;
 let closure_9 = tmp2;
 let c0 = false;
 let c1 = null;
-const f82488 = () => {
+const f82690 = () => {
 
 };
 let closure_11 = {};
@@ -40,7 +40,7 @@ let obj = {
           closure_11[arg0] = obj.getConstantsForViewManager(arg0);
         }
         return closure_11[arg0];
-      } else if (typeof f19513 === "function") {
+      } else if (typeof f19575 === "function") {
         const tmp12 = c3;
         if (!tmp12) {
           closure_4 = require("nullthrows")(tmp)();
@@ -78,7 +78,7 @@ let obj = {
   getConstants() {
     let tmp4;
     if (RN$LegacyInterop_UIManager_getConstants) {
-      if (typeof f19513 === "function") {
+      if (typeof f19575 === "function") {
         const tmp6 = c3;
         if (!tmp6) {
           closure_4 = require("nullthrows")(tmp)();
@@ -189,7 +189,7 @@ const obj3 = {
     let items;
     const tmp = metroImportAll;
     if (tmp) {
-      if (typeof f82488 === "function") {
+      if (typeof f82690 === "function") {
         let closure_1;
         const tmp5 = c0;
         if (!tmp5) {
@@ -271,7 +271,7 @@ if (tmp6) {
   }
   const keys1 = keys(closure_4);
   const item = keys1.forEach((item) => {
-    if (typeof f19513 === "function") {
+    if (typeof f19575 === "function") {
       const tmp2 = c3;
       if (!tmp2) {
         closure_4 = require("nullthrows")(RN$LegacyInterop_UIManager_getConstants)();

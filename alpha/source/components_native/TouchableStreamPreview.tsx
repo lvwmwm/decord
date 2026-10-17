@@ -1,27 +1,27 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11540
+// Function ID: 11541
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 5173, 6116, 502, 2068, 2090, 4809, 5175, 1087, 21, 5154, 5026, 587, 558, 576, 5477, 504, 1128, 6108, 7664, 7701, 5168, 6119, 5459, 5150, 11482, 2]
+// Dependencies: [19, 17, 5210, 6153, 502, 2068, 2090, 4845, 5212, 1087, 21, 5191, 5063, 587, 558, 576, 5514, 504, 1128, 6145, 7710, 7747, 5205, 6156, 5496, 5187, 11541, 2]
 
-// Module 11481 (TouchableStreamPreview)
+// Module 11540 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5168 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6108 */;
-import StreamActionCreators from "StreamActionCreators" /* 7664 */;
-import transitionToStreamDefault from "transitionToStream" /* 7701 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
+import StreamActionCreators from "StreamActionCreators" /* 7710 */;
+import transitionToStreamDefault from "transitionToStream" /* 7747 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 5173 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6116 */;
+import GameConsoleStore from "GameConsoleStore" /* 5210 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import VoiceStateStore from "VoiceStateStore" /* 5175 */;
-import createStyles_mod from "createStyles" /* 5154 */;
-import ColorUtils_mod from "ColorUtils" /* 5026 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import ColorUtils_mod from "ColorUtils" /* 5063 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp5;
-const StreamKeyUtils = tmp5(6119);
+const StreamKeyUtils = tmp5(6156);
 ({ View: closure_4, StyleSheet } = react_native);
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;

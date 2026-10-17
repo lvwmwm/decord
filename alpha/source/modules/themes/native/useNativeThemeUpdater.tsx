@@ -1,9 +1,9 @@
-// Module ID: 18057
-// Function ID: 18058
+// Module ID: 18117
+// Function ID: 18118
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1207, 558, 576, 18058, 18059, 2]
+// Dependencies: [19, 1207, 558, 576, 18118, 18119, 2]
 
-// Module 18057 (useNativeThemeUpdater)
+// Module 18117 (useNativeThemeUpdater)
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

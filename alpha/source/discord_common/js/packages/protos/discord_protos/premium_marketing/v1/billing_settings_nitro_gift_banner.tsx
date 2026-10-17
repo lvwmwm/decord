@@ -1,13 +1,13 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9439
+// Function ID: 9440
 // Name: billing_settings_nitro_gift_banner
-// Dependencies: [32, 1212, 9370, 9372, 9362, 2]
+// Dependencies: [32, 1212, 9434, 9436, 9426, 2]
 
-// Module 9375 (billing_settings_nitro_gift_banner)
+// Module 9439 (billing_settings_nitro_gift_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9362 */;
-import gradient2 from "gradient" /* 9370 */;
-import theme_aware_asset from "theme_aware_asset" /* 9372 */;
+import localized_string from "localized_string" /* 9426 */;
+import gradient2 from "gradient" /* 9434 */;
+import theme_aware_asset from "theme_aware_asset" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -45,14 +45,14 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { assetUrl: "", header: "", body: "", backgroundAssetUrl: "", textColor: "", additionalTerms: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

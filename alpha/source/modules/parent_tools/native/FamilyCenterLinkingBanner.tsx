@@ -1,22 +1,22 @@
-// Module ID: 15889
-// Function ID: 15890
+// Module ID: 15955
+// Function ID: 15956
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 7960, 1128, 2571, 12588, 15890, 5150, 15852, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 8006, 1128, 2589, 12653, 15956, 5187, 15918, 2]
 
-// Module 15889 (FamilyCenterLinkingBanner)
+// Module 15955 (FamilyCenterLinkingBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import _modDef2571 from "module_2571" /* 2571 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7960 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12588 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 15852 */;
-import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 15890 */;
+import _modDef2589 from "module_2589" /* 2589 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12653 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 15918 */;
+import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 15956 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,9 +54,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const tmp6 = useIsInAdultAgeGroupDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef2571.zUCWEL);
+    const stringResult = intl.string(_modDef2589.zUCWEL);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef2571.B0NPbp);
+    const stringResult1 = intl2.string(_modDef2589.B0NPbp);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp7 = stringResult;
@@ -68,9 +68,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp7, tmp8);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1128).intl;
-    const formatResult = intl3.format(_modDef2571.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+    const formatResult = intl3.format(_modDef2589.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
     const intl4 = tmp(1128).intl;
-    const stringResult2 = intl4.string(_modDef2571.JsAEDi);
+    const stringResult2 = intl4.string(_modDef2589.JsAEDi);
     cResult[2] = formatResult;
     cResult[3] = stringResult2;
     tmp13 = stringResult2;
@@ -172,17 +172,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl = intl7.intl;
-  const stringResult = intl.string(_modDef2571.zUCWEL);
+  const stringResult = intl.string(_modDef2589.zUCWEL);
   const intl2 = intl7.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2571.B0NPbp));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2589.B0NPbp));
   const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl3 = intl7.intl;
-  const formatResult = intl3.format(_modDef2571.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+  const formatResult = intl3.format(_modDef2589.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl7.intl;
   const obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.art, children: React3(WizardHatAndBookSpotIllustration.WizardHatAndBookSpotIllustration, { accessible: false }) };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2571.JsAEDi));
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2589.JsAEDi));
   items = [React3(View, obj2), , ];
   const obj3 = { style: tmp.content, children: items1 };
   items1 = [, ];
@@ -215,7 +215,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   const cResult = obj.c(6);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { index: 1, header: intl.string(_modDef2571["7xxAni"]), description: intl2.string(_modDef2571["1M9So2"]) };
+    const obj2 = { index: 1, header: intl.string(_modDef2589["7xxAni"]), description: intl2.string(_modDef2589["1M9So2"]) };
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     const tmp9 = React3(closure_12, obj2);
@@ -225,7 +225,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { index: 2, header: intl3.string(_modDef2571["AXgx+a"]), description: intl4.string(_modDef2571.GzMFnb) };
+    const obj3 = { index: 2, header: intl3.string(_modDef2589["AXgx+a"]), description: intl4.string(_modDef2589.GzMFnb) };
     intl3 = tmp(1128).intl;
     intl4 = tmp(1128).intl;
     const tmp14 = React3(closure_12, obj3);
@@ -235,7 +235,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     tmp10 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { index: 3, header: intl5.string(_modDef2571.MZn1tG), description: intl6.string(_modDef2571["8rLBxD"]), isLast: true };
+    const obj4 = { index: 3, header: intl5.string(_modDef2589.MZn1tG), description: intl6.string(_modDef2589["8rLBxD"]), isLast: true };
     intl5 = tmp(1128).intl;
     intl6 = tmp(1128).intl;
     const tmp20 = React3(closure_12, obj4);
@@ -268,15 +268,15 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   let intl6;
   let items;
   const obj = { style: closure_7().container, children: items };
-  const obj2 = { index: 1, header: intl.string(_modDef2571["7xxAni"]), description: intl2.string(_modDef2571["1M9So2"]) };
+  const obj2 = { index: 1, header: intl.string(_modDef2589["7xxAni"]), description: intl2.string(_modDef2589["1M9So2"]) };
   intl = intl7.intl;
   intl2 = intl7.intl;
   items = [React3(closure_12, obj2), , , ];
-  const obj3 = { index: 2, header: intl3.string(_modDef2571["AXgx+a"]), description: intl4.string(_modDef2571.GzMFnb) };
+  const obj3 = { index: 2, header: intl3.string(_modDef2589["AXgx+a"]), description: intl4.string(_modDef2589.GzMFnb) };
   intl3 = intl7.intl;
   intl4 = intl7.intl;
   items[1] = React3(closure_12, obj3);
-  const obj4 = { index: 3, header: intl5.string(_modDef2571.MZn1tG), description: intl6.string(_modDef2571["8rLBxD"]), isLast: true };
+  const obj4 = { index: 3, header: intl5.string(_modDef2589.MZn1tG), description: intl6.string(_modDef2589["8rLBxD"]), isLast: true };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
   items[2] = React3(closure_12, obj4);

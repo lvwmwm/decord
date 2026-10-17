@@ -1,15 +1,13 @@
 // Module ID: 5164
 // Function ID: 5165
-// Dependencies: [17, 26, 65]
+// Dependencies: [5165]
 
 // Module 5164
-import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import "PATTERN_CHARS";
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 5165 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNPlainText", validAttributes: { text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true } };
-({ text: true, color: _mod26.colorAttribute, fontSize: true, fontFamily: true, fontWeight: true, fontStyle: true, fontVariant: true, fontVariationSettings: true, lineHeight: true, letterSpacing: true, hasLetterSpacing: true, textAlign: true, textAlignVertical: true, textDecorationLine: true, textTransform: true, numberOfLines: true, ellipsizeMode: true, allowFontScaling: true, maxFontSizeMultiplier: true, experiment: true, lineHeightClippingIos: true, includeFontPadding: true });
+let PATTERN_CHARS;
+const obj = { success: PATTERN_CHARS.pattern("oO.O"), error: PATTERN_CHARS.pattern("OO.OO"), warning: PATTERN_CHARS.pattern("O.O"), heartbeat: PATTERN_CHARS.pattern("oO--oO"), tripleClick: PATTERN_CHARS.pattern("o.o.o"), notification: PATTERN_CHARS.pattern("o-O=o") };
+PATTERN_CHARS = PATTERN_CHARS_mod;
 
-export default module_65.get("RNPlainText", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const Patterns = obj;

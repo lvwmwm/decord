@@ -1,47 +1,71 @@
 // Module ID: 8068
 // Function ID: 8069
-// Dependencies: [8054, 8069, 8070, 8049]
+// Dependencies: [8069, 8081, 8089]
 
 // Module 8068
-import _mod8049 from "module_8049" /* 8049 */;
-import _modDef8054 from "module_8054" /* 8054 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 8069 */;
-import IFD_TYPE_0TH2 from "IFD_TYPE_0TH" /* 8070 */;
+import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8069 */;
+import _mod8081 from "module_8081" /* 8081 */;
+import _mod8089 from "module_8089" /* 8089 */;
 
-let c3 = "Exif IFD Pointer";
-let c4 = "GPS Info IFD Pointer";
-let c5 = "Interoperability IFD Pointer";
+let hasOwnProperty;
 
-export default {
-  read(getUint16, c5, arg2) {
-    const obj = _modDef8054;
-    const byteOrder = obj.getByteOrder(getUint16, c5);
-    const readIfd = get0thIfdOffset.readIfd;
-    get0thIfdOffset;
-    const IFD_TYPE_0TH = IFD_TYPE_0TH2.IFD_TYPE_0TH;
-    const obj2 = get0thIfdOffset;
-    const ifd = readIfd(getUint16, IFD_TYPE_0TH, c5, obj2.get0thIfdOffset(getUint16, c5, byteOrder), byteOrder, arg2);
-    let objectAssignResult = ifd;
-    if (undefined !== ifd[c3]) {
-      const objectAssign = _mod8049.objectAssign;
-      _mod8049;
-      const tmp3Result6 = get0thIfdOffset;
-      objectAssignResult = objectAssign(ifd, tmp3Result6.readIfd(getUint16, tmp3(8070).IFD_TYPE_EXIF, c5, c5 + ifd[tmp6].value, byteOrder, arg2));
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    let objectAssign1Result = objectAssignResult;
-    if (undefined !== objectAssignResult[c4]) {
-      const objectAssign2 = _mod8049.objectAssign;
-      _mod8049;
-      const tmp3Result8 = get0thIfdOffset;
-      objectAssign1Result = objectAssign2(objectAssignResult, tmp3Result8.readIfd(getUint16, tmp3(8070).IFD_TYPE_GPS, c5, c5 + objectAssignResult[tmp14].value, byteOrder, arg2));
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    let objectAssign4Result = objectAssign1Result;
-    if (undefined !== objectAssign1Result[c5]) {
-      const objectAssign3 = _mod8049.objectAssign;
-      _mod8049;
-      const tmp3Result10 = get0thIfdOffset;
-      objectAssign4Result = objectAssign3(objectAssign1Result, tmp3Result10.readIfd(getUint16, tmp3(8070).IFD_TYPE_INTEROPERABILITY, c5, c5 + objectAssign1Result[tmp22].value, byteOrder, arg2));
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
     }
-    return { tags: objectAssign4Result, byteOrder };
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
+});
+tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
+tmp3(_mod8081, exports);
+tmp3(_mod8089, exports);

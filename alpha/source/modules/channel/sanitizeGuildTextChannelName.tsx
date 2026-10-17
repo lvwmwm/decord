@@ -1,10 +1,10 @@
-// Module ID: 5486
-// Function ID: 5487
+// Module ID: 5523
+// Function ID: 5524
 // Name: sanitizeGuildTextChannelName
 // Dependencies: [2]
 // Exports: default
 
-// Module 5486 (sanitizeGuildTextChannelName)
+// Module 5523 (sanitizeGuildTextChannelName)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/sanitizeGuildTextChannelName.tsx");

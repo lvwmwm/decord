@@ -1,12 +1,12 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16884
+// Function ID: 16885
 // Name: DesignSystemAIShimmerSetting
-// Dependencies: [8214, 1087, 11003, 16821, 2]
+// Dependencies: [8260, 1087, 11065, 16885, 2]
 
-// Module 16820 (DesignSystemAIShimmerSetting)
+// Module 16884 (DesignSystemAIShimmerSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

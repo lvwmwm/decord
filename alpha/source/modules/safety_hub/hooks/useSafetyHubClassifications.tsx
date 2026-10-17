@@ -1,15 +1,15 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12604
+// Function ID: 12605
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 7757, 7733, 558, 576, 504, 11, 7732, 7734, 12540, 2]
+// Dependencies: [19, 7803, 7779, 558, 576, 504, 11, 7778, 7780, 12605, 2]
 
-// Module 12539 (useSafetyHubClassifications)
+// Module 12604 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7733 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12540 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12605 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7757 */;
+import SafetyHubStore from "SafetyHubStore" /* 7803 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
   }
   const tmpResult7 = tmp(504);
   const stateFromStores3 = tmpResult7.useStateFromStores(tmp16, tmp17);
-  const tmpResult8 = tmp(7732);
+  const tmpResult8 = tmp(7778);
   if (tmpResult8.isGuildClassification(stateFromStores)) {
     let GUILD_MEMBER;
     const guild_metadata = stateFromStores.guild_metadata;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
         return SafetyHubStore.getIsAppealEligible();
       }
     }
-    if (undefined === tmp(7734).MemberType.OWNER) {
+    if (undefined === tmp(7780).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -267,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(7734).MemberType.OWNER) {
+    if (member_type === tmp(7780).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;

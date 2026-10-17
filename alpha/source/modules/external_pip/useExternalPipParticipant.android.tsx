@@ -1,18 +1,18 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18135
+// Function ID: 18136
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 6255, 502, 2014, 5172, 5177, 558, 576, 504, 2]
+// Dependencies: [32, 19, 6292, 502, 2014, 5209, 5214, 558, 576, 504, 2]
 
-// Module 18074 (useExternalPipParticipant)
+// Module 18135 (useExternalPipParticipant)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5172 */;
-import CallConstants from "CallConstants" /* 5177 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import CallConstants from "CallConstants" /* 5214 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158013 */ });
+                      closure_1_3(() => { /* body not rendered: F158342 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158013 */ });
+                      closure_1_3(() => { /* body not rendered: F158342 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -550,8 +550,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFoc
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "test", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "test", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {
@@ -639,8 +639,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFoc
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "test", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "test", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {

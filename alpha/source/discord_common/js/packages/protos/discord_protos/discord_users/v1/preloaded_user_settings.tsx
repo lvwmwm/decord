@@ -467,14 +467,14 @@ class PreloadedUserSettings$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.discord_users.v1.PreloadedUserSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -704,14 +704,14 @@ class InboxSettings$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.InboxSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { currentTab: 0, viewedTutorial: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -795,14 +795,14 @@ class AllGuildSettings$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AllGuildSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { guilds: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -929,14 +929,14 @@ class GuildDismissibleContentState$Type extends MessageType4 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GuildDismissibleContentState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { dismissed: false, lastDismissedVersion: 0, lastDismissedAtMs: "0", lastDismissedObjectId: "0", numTimesDismissed: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1104,16 +1104,16 @@ class GuildSettings$Type extends MessageType5 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GuildSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     let uint8Array;
     const obj = { channels: {}, hubProgress: 0, guildOnboardingProgress: 0, dismissedGuildContent: uint8Array, disableRaidAlertPush: false, disableRaidAlertNag: false, leaderboardsDisabled: false, guildDismissibleContentStates: {}, guildThemeSourcePreference: 0 };
     uint8Array = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmp2Result = _mod1212;
-      const result = tmp2Result.reflectionMergePartial(this, obj, arr);
+      const result = tmp2Result.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1329,14 +1329,14 @@ class ChannelIconEmoji$Type extends MessageType6 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ChannelIconEmoji", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1454,14 +1454,14 @@ class ChannelSettings$Type extends MessageType7 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ChannelSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { collapsedInInbox: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1565,14 +1565,14 @@ class CustomNotificationSoundConfig$Type extends MessageType8 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.CustomNotificationSoundConfig", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1652,14 +1652,14 @@ class RecurringDismissibleContentState$Type extends MessageType9 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.RecurringDismissibleContentState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { lastDismissedVersion: 0, lastDismissedAtMs: "0", lastDismissedObjectId: "0", numTimesDismissed: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1763,16 +1763,16 @@ class UserContentSettings$Type extends MessageType10 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.UserContentSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     let uint8Array;
     const obj = { dismissedContents: uint8Array, lastReceivedChangelogId: "0", recurringDismissibleContentStates: {}, lastGiftIntentDismissedAtMs: "0", contextualReferralUpsellDismissalsVersion: "0" };
     uint8Array = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmp2Result = _mod1212;
-      const result = tmp2Result.reflectionMergePartial(this, obj, arr);
+      const result = tmp2Result.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -1983,14 +1983,14 @@ class VideoFilterAsset$Type extends MessageType11 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.VideoFilterAsset", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { id: "0", assetHash: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2062,7 +2062,7 @@ class VideoFilterAsset$Type extends MessageType11 {
 const prototype11 = VideoFilterAsset$Type.prototype;
 const items8 = [{ no: 1, name: "id", kind: "scalar", T: 6 }, { no: 2, name: "asset_hash", kind: "scalar", T: 9 }];
 const tmp18 = new "binaryReadMap12"("discord_protos.discord_users.v1.VideoFilterAsset", items8, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite4 = tmp18;
+const __initData3 = tmp18;
 const MessageType12 = _mod1212.MessageType;
 class VideoFilterBackgroundBlur$Type extends MessageType12 {
   constructor() {
@@ -2070,14 +2070,14 @@ class VideoFilterBackgroundBlur$Type extends MessageType12 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.VideoFilterBackgroundBlur", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { useBlur: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2142,7 +2142,7 @@ class VideoFilterBackgroundBlur$Type extends MessageType12 {
 const prototype12 = VideoFilterBackgroundBlur$Type.prototype;
 const items9 = [{ no: 1, name: "use_blur", kind: "scalar", T: 8 }];
 let tmp19 = new "binaryReadMap12"("discord_protos.discord_users.v1.VideoFilterBackgroundBlur", items9, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData3 = tmp19;
+const __initData4 = tmp19;
 const MessageType13 = _mod1212.MessageType;
 class VoiceAndVideoSettings$Type extends MessageType13 {
   constructor() {
@@ -2167,14 +2167,14 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.VoiceAndVideoSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2316,14 +2316,14 @@ class ExplicitContentSettings$Type extends MessageType14 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ExplicitContentSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { explicitContentGuilds: 0, explicitContentFriendDm: 0, explicitContentNonFriendDm: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2432,14 +2432,14 @@ class GoreContentSettings$Type extends MessageType15 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GoreContentSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { goreContentGuilds: 0, goreContentFriendDm: 0, goreContentNonFriendDm: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2528,7 +2528,7 @@ items12[1] = {
 };
 items12[2] = { no: 3, name: "gore_content_non_friend_dm", kind: "enum", T: T22 };
 let tmp22 = new "binaryReadMap12"("discord_protos.discord_users.v1.GoreContentSettings", items12, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData4 = tmp22;
+const __initData5 = tmp22;
 const MessageType16 = _mod1212.MessageType;
 class SelfHarmContentSettings$Type extends MessageType16 {
   constructor() {
@@ -2548,14 +2548,14 @@ class SelfHarmContentSettings$Type extends MessageType16 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.SelfHarmContentSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { selfHarmContentGuilds: 0, selfHarmContentFriendDm: 0, selfHarmContentNonFriendDm: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -2662,14 +2662,14 @@ class KeywordFilterSettings$Type extends MessageType17 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.KeywordFilterSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3081,14 +3081,14 @@ class TextAndImagesSettings$Type extends MessageType18 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.TextAndImagesSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { emojiPickerCollapsedSections: [], stickerPickerCollapsedSections: [], soundboardPickerCollapsedSections: [], dmSpamFilterV2: 0, searchProvider: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -3635,14 +3635,14 @@ class NotificationSettings$Type extends MessageType19 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.NotificationSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { notificationCenterAckedBeforeId: "0", focusModeExpiresAtMs: "0", reactionNotifications: 0, gameActivityNotifications: 0, customStatusPushNotifications: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4096,14 +4096,14 @@ class PrivacySettings$Type extends MessageType20 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.PrivacySettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { restrictedGuildIds: [], defaultGuildsRestricted: false, allowAccessibilityDetection: false, activityRestrictedGuildIds: [], defaultGuildsActivityRestricted: 0, activityJoiningRestrictedGuildIds: [], messageRequestRestrictedGuildIds: [], guildsLeaderboardOptOutDefault: 0, slayerSdkReceiveDmsInGame: 0, defaultGuildsActivityRestrictedV2: 0, profileVisibility: 0, adTopicOptOuts: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4408,14 +4408,14 @@ class DebugSettings$Type extends MessageType21 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.DebugSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4505,14 +4505,14 @@ class GameLibrarySettings$Type extends MessageType22 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GameLibrarySettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4635,14 +4635,14 @@ class StatusSettings$Type extends MessageType23 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.StatusSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { statusExpiresAtMs: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4771,14 +4771,14 @@ class CustomStatus$Type extends MessageType24 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.CustomStatus", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { text: "", emojiId: "0", emojiName: "", expiresAtMs: "0", createdAtMs: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -4899,14 +4899,14 @@ class LocalizationSettings$Type extends MessageType25 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.LocalizationSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5020,14 +5020,14 @@ class ChannelListSettings$Type extends MessageType26 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ChannelListSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5216,14 +5216,14 @@ class AppearanceSettings$Type extends MessageType27 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AppearanceSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { theme: 0, developerMode: false, mobileRedesignDisabled: false, timestampHourCycle: 0, launchPadMode: 0, uiDensity: 0, swipeRightToLeftMode: 0, defaultGuildThemePreference: 0, darkSidebar: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5335,14 +5335,14 @@ class CustomUserThemeSettings$Type extends MessageType28 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.CustomUserThemeSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { colors: [], gradientColorStops: [], gradientAngle: 0, baseMix: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5465,14 +5465,14 @@ class ClientThemeSettings$Type extends MessageType29 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ClientThemeSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5565,14 +5565,14 @@ class GuildFolders$Type extends MessageType30 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GuildFolders", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { folders: [], guildPositions: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5698,14 +5698,14 @@ class GuildFolder$Type extends MessageType31 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.GuildFolder", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { guildIds: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -5857,14 +5857,14 @@ class Favorites$Type extends MessageType32 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.Favorites", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { favoriteChannels: {}, muted: false, autoAddJoinedThreads: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6041,14 +6041,14 @@ class FavoriteChannel$Type extends MessageType33 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.FavoriteChannel", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { nickname: "", type: 0, position: 0, parentId: "0", collapsed: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6172,14 +6172,14 @@ class AudioContextSetting$Type extends MessageType34 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AudioContextSetting", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { muted: false, volume: 0, modifiedAt: "0", soundboardMuted: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6282,14 +6282,14 @@ class AudioSettings$Type extends MessageType35 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AudioSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { user: {}, stream: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6487,14 +6487,14 @@ class CommunitiesSettings$Type extends MessageType36 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.CommunitiesSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6574,14 +6574,14 @@ class SoundboardSettings$Type extends MessageType37 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.SoundboardSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { volume: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6654,14 +6654,14 @@ class CustomCallSound$Type extends MessageType38 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.CustomCallSound", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { soundId: "0", guildId: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6746,14 +6746,14 @@ class BroadcastSettings$Type extends MessageType39 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.BroadcastSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { allowedGuildIds: [], allowedUserIds: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6914,14 +6914,14 @@ class ClipsSettings$Type extends MessageType40 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ClipsSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -6993,7 +6993,7 @@ const items33 = [];
 const obj49 = { no: 1, name: "allow_voice_recording", kind: "message", T: T49 };
 items33[0] = obj49;
 const tmp47 = new "binaryReadMap12"("discord_protos.discord_users.v1.ClipsSettings", items33, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-internalBinaryWrite4 = tmp47;
+let internalBinaryWrite4 = tmp47;
 const MessageType41 = _mod1212.MessageType;
 class SpendingLimit$Type extends MessageType41 {
   constructor() {
@@ -7001,14 +7001,14 @@ class SpendingLimit$Type extends MessageType41 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.SpendingLimit", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { amount: "0", currency: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7090,14 +7090,14 @@ class SpendingLimitSettings$Type extends MessageType42 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.SpendingLimitSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7178,14 +7178,14 @@ class SafetySettings$Type extends MessageType43 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.SafetySettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { safetySettingsPreset: 0, ignoreProfileSpeedbumpDisabled: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7279,14 +7279,14 @@ class ForLaterSettings$Type extends MessageType44 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ForLaterSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { currentTab: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7361,14 +7361,14 @@ class ICYMISettings$Type extends MessageType45 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ICYMISettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { feedGeneratedAt: "0" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7444,14 +7444,14 @@ class AllApplicationSettings$Type extends MessageType46 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AllApplicationSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { appSettings: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7581,14 +7581,14 @@ class ApplicationSettings$Type extends MessageType47 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ApplicationSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7676,14 +7676,14 @@ class ApplicationDMSettings$Type extends MessageType48 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ApplicationDMSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { allowMobilePush: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7756,14 +7756,14 @@ class ApplicationSharingSettings$Type extends MessageType49 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ApplicationSharingSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { disableApplicationActivitySharing: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7836,14 +7836,14 @@ class AdsSettings$Type extends MessageType50 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AdsSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { alwaysDeliver: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -7919,14 +7919,14 @@ class InAppFeedbackState$Type extends MessageType51 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.InAppFeedbackState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -8029,14 +8029,14 @@ class DefaultReactionEmoji$Type extends MessageType52 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.DefaultReactionEmoji", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -8161,14 +8161,14 @@ class InAppFeedbackSettings$Type extends MessageType53 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.InAppFeedbackSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { inAppFeedbackStates: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -8294,14 +8294,14 @@ class AppVersionSettings$Type extends MessageType54 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.AppVersionSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { isUsingOutdatedMobileVersion: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -8377,14 +8377,14 @@ class ConjureSettings$Type extends MessageType55 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ConjureSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { projects: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -8509,14 +8509,14 @@ class ConjureProjectSettings$Type extends MessageType56 {
     const tmp2 = new tmp("discord_protos.discord_users.v1.ConjureProjectSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { muted: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

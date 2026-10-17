@@ -1,19 +1,19 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 12975
+// Function ID: 12976
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4807, 1392, 1087, 21, 5154, 6483, 6323, 7989, 12897, 6324, 2082, 8941, 7039, 12911, 2]
+// Dependencies: [5, 32, 19, 4843, 1392, 1087, 21, 5191, 6536, 6376, 8035, 12962, 6377, 2082, 8987, 7092, 12976, 2]
 // Exports: default
 
-// Module 12910 (CreateGuildContainer)
+// Module 12975 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import NavigatorConstants from "NavigatorConstants" /* 6483 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, currentUser, set;

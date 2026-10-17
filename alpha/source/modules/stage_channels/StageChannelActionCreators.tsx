@@ -1,27 +1,27 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7754
+// Function ID: 7755
 // Name: StageChannelActionCreators
-// Dependencies: [5, 2119, 5175, 1087, 7243, 38, 5169, 7709, 1297, 7249, 5479, 6168, 6324, 2000, 4814, 1099, 7238, 7713, 7716, 2]
+// Dependencies: [5, 2119, 5212, 1087, 7295, 38, 5206, 7755, 1297, 7301, 5516, 6205, 6377, 2000, 4850, 1099, 7290, 7759, 7762, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7708 (StageChannelActionCreators)
+// Module 7754 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import Server from "Server" /* 2000 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4814 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5479 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6168 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
-import Constants2 from "Constants" /* 7243 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7249 */;
-import StageChannelUtils from "StageChannelUtils" /* 7709 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7713 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7716 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5516 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6205 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
+import Constants2 from "Constants" /* 7295 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7301 */;
+import StageChannelUtils from "StageChannelUtils" /* 7755 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7759 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7762 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import VoiceStateStore from "VoiceStateStore" /* 5175 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7238);
-const f97628 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7290);
+const f97879 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -346,7 +346,7 @@ export const setUserSuppress = function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f97628);
+  return patchResult.catch(f97879);
 };
 export const moveUserToAudience = function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export const moveUserToAudience = function moveUserToAudience(user, voiceChannel
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f97628);
+      patchResult.catch(f97879);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

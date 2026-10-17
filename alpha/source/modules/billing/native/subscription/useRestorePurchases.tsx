@@ -1,10 +1,10 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16264
+// Function ID: 16265
 // Name: useRestorePurchases
-// Dependencies: [5, 32, 19, 3, 7364, 2]
+// Dependencies: [5, 32, 19, 3, 7410, 2]
 // Exports: default
 
-// Module 16198 (useRestorePurchases)
+// Module 16264 (useRestorePurchases)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

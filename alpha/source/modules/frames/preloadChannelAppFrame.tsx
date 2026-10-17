@@ -1,20 +1,18 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 13628
+// Function ID: 13629
 // Name: preloadChannelAppFrame
-// Dependencies: [2068, 4809, 10947, 10931, 1087, 2063, 10960, 10948, 10963, 2]
-// Exports: claimPreloadedFrame, preloadChannelAppFrame
+// Dependencies: [2068, 4845, 6295, 6296, 1087, 2063, 11020, 6299, 11023, 2]
+// Exports: cancelChannelAppFramePreload, claimPreloadedFrame, preloadChannelAppFrame
 
-// Module 17292 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 10948 */;
+// Module 13628 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
+import leaveFrame from "leaveFrame" /* 11020 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import FramesStore from "FramesStore" /* 10947 */;
-import FramesConstants from "FramesConstants" /* 10931 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import FramesStore from "FramesStore" /* 6295 */;
+import FramesConstants from "FramesConstants" /* 6296 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let c9;
 let metroImportAll;
@@ -26,90 +24,110 @@ const map = new Map();
 let result = size.fileFinishedImporting("modules/frames/preloadChannelAppFrame.tsx");
 
 export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
-  let closure_0;
+  let applicationId;
+  let application_id;
+  let channel;
+  let frameId;
+  let surface;
   let timeout;
   let timeout1;
-  const f128416 = () => {
-    set.delete(closure_0);
-    let tmp4 = null != value.launchRequestId;
-    if (tmp4) {
-      frame = frame.getFrame(tmp);
-      let launchRequestId;
-      if (frame != null) {
-        launchRequestId = frame.launchRequestId;
+  const f117451 = () => {
+    const value = map.get(frameId);
+    const obj = map;
+    if (null != value) {
+      const stopTimer = value.stopTimer;
+      stopTimer.stop();
+      obj.delete(frameId);
+      let tmp5 = null != value.launchRequestId;
+      if (tmp5) {
+        frame = frame.getFrame(tmp);
+        let launchRequestId;
+        if (frame != null) {
+          launchRequestId = frame.launchRequestId;
+        }
+        tmp5 = launchRequestId === value.launchRequestId;
       }
-      tmp4 = launchRequestId === tmp3.launchRequestId;
-    }
-    if (tmp4) {
-      const obj = closure_0(dependencyMap[6]);
-      obj.leaveFrame(closure_0);
+      if (tmp5) {
+        const obj2 = frameId(dependencyMap[6]);
+        obj2.leaveFrame(frameId);
+      }
     }
   };
-  const channel = ChannelStore.getChannel(id);
-  if (null != channel) {
-    const application_id = channel.application_id;
-    let tmp3 = null;
-    if (channel.type === constants.GUILD_APP) {
-      tmp3 = closure_6(channel);
-    }
+  const channel1 = ChannelStore.getChannel(id);
+  if (channel1 != null) {
+    application_id = channel1.application_id;
+  }
+  let type;
+  if (channel1 != null) {
+    type = channel1.type;
+  }
+  let tmp3 = null;
+  if (type === constants.GUILD_APP) {
+    tmp3 = closure_6(channel1);
+  }
+  let tmp5 = null;
+  if (null != channel1) {
+    tmp5 = null;
     if (null != application_id) {
+      tmp5 = null;
       if (null != tmp3) {
-        const tmp25 = closure_7(application_id, tmp3);
-        _require = tmp25;
-        if (map.has(tmp25)) {
-          _require = tmp25;
-          let value = obj6.get(tmp25);
-          if (value == null) {
-            const self3 = this;
-            const self4 = this;
-            const obj2 = { stopTimer: timeout, launchRequestId: "r" };
-            timeout = new require("Timers").Timeout();
-            value = obj2;
-          }
-          const result = obj6.set(tmp25, value);
-          const stopTimer2 = value.stopTimer;
-          stopTimer2.start(5000, f128416);
-        } else {
-          let obj = FramesStore;
-          if (null == FramesStore.getFrame(tmp25)) {
-            if (PermissionStore.can(constants2.VIEW_CHANNEL, channel)) {
-              let tmp4 = importDefault;
-              if (null != getURLForApplicationDefault(application_id)) {
-                _require = tmp25;
-                let value3 = obj6.get(tmp25);
-                if (value3 == null) {
-                  const self = this;
-                  const self2 = this;
-                  const obj4 = { stopTimer: timeout1, launchRequestId: "r" };
-                  timeout1 = new require("Timers").Timeout();
-                  value3 = obj4;
-                }
-                const result1 = obj6.set(tmp25, value3);
-                let stopTimer = value3.stopTimer;
-                stopTimer.start(5000, f128416);
-                const obj5 = { applicationId: application_id, surface: tmp3, showErrorModal: false };
-                const obj3 = require("launchFrame");
-                const launchFrameResult = obj3.launchFrame(obj5);
-                launchFrameResult.catch(() => {
-                  const value = map.get(closure_0);
-                  const obj = map;
-                  const tmp = closure_0;
-                  if (value != null) {
-                    const stopTimer = value.stopTimer;
-                    stopTimer.stop();
-                  }
-                  obj.delete(tmp);
-                });
-                const value4 = obj6.get(tmp25);
-                if (null != value4) {
-                  let frame = obj.getFrame(tmp25);
-                  let launchRequestId;
-                  if (frame != null) {
-                    launchRequestId = frame.launchRequestId;
-                  }
-                  value4.launchRequestId = launchRequestId;
-                }
+        let obj = { channel: channel1, applicationId: application_id, surface: tmp3, frameId: closure_7(application_id, tmp3) };
+        tmp5 = obj;
+      }
+    }
+  }
+  if (null != tmp5) {
+    ({ applicationId, frameId } = tmp5);
+    ({ channel, surface } = tmp5);
+    if (map.has(frameId)) {
+      let value = obj7.get(frameId);
+      if (value == null) {
+        const self3 = this;
+        const self4 = this;
+        const obj3 = { stopTimer: timeout, launchRequestId: "a" };
+        timeout = new frameId(2063).Timeout();
+        value = obj3;
+      }
+      const result = obj7.set(frameId, value);
+      const stopTimer2 = value.stopTimer;
+      stopTimer2.start(5000, f117451);
+    } else {
+      let obj2 = FramesStore;
+      if (null == FramesStore.getFrame(frameId)) {
+        if (PermissionStore.can(constants2.VIEW_CHANNEL, channel)) {
+          if (null != getURLForApplicationDefault(applicationId)) {
+            let value3 = obj7.get(frameId);
+            if (value3 == null) {
+              const self = this;
+              const self2 = this;
+              const obj5 = { stopTimer: timeout1, launchRequestId: "a" };
+              timeout1 = new frameId(2063).Timeout();
+              value3 = obj5;
+            }
+            const result1 = obj7.set(frameId, value3);
+            let stopTimer = value3.stopTimer;
+            stopTimer.start(5000, f117451);
+            const obj6 = { applicationId, surface, showErrorModal: false };
+            const obj4 = frameId(11023);
+            const launchFrameResult = obj4.launchFrame(obj6);
+            launchFrameResult.catch(() => {
+              const value = map.get(frameId);
+              const obj = map;
+              const tmp = frameId;
+              if (value != null) {
+                const stopTimer = value.stopTimer;
+                stopTimer.stop();
               }
+              obj.delete(tmp);
+            });
+            const value4 = obj7.get(frameId);
+            if (null != value4) {
+              let frame = obj2.getFrame(frameId);
+              let launchRequestId;
+              if (frame != null) {
+                launchRequestId = frame.launchRequestId;
+              }
+              value4.launchRequestId = launchRequestId;
             }
           }
         }
@@ -129,4 +147,53 @@ export const claimPreloadedFrame = function claimPreloadedFrame(frameId) {
     flag = true;
   }
   return flag;
+};
+export const cancelChannelAppFramePreload = function cancelChannelAppFramePreload(id) {
+  let application_id;
+  const channel = ChannelStore.getChannel(id);
+  if (channel != null) {
+    application_id = channel.application_id;
+  }
+  let type;
+  if (channel != null) {
+    type = channel.type;
+  }
+  let tmp3 = null;
+  if (type === metroImportAll.GUILD_APP) {
+    tmp3 = metroRequire(channel);
+  }
+  let tmp5 = null;
+  if (null != channel) {
+    tmp5 = null;
+    if (null != application_id) {
+      tmp5 = null;
+      if (null != tmp3) {
+        tmp5 = { channel, applicationId: application_id, surface: tmp3, frameId: metroImportDefault(application_id, tmp3) };
+        const obj = { channel, applicationId: application_id, surface: tmp3, frameId: metroImportDefault(application_id, tmp3) };
+      }
+    }
+  }
+  if (null != tmp5) {
+    const frameId = tmp5.frameId;
+    const value = map.get(frameId);
+    const obj3 = map;
+    if (null != value) {
+      const stopTimer = value.stopTimer;
+      stopTimer.stop();
+      obj3.delete(frameId);
+      let tmp9 = null != value.launchRequestId;
+      if (tmp9) {
+        const frame = FramesStore.getFrame(frameId);
+        let launchRequestId;
+        if (frame != null) {
+          launchRequestId = frame.launchRequestId;
+        }
+        tmp9 = launchRequestId === value.launchRequestId;
+      }
+      if (tmp9) {
+        const obj2 = leaveFrame;
+        obj2.leaveFrame(frameId);
+      }
+    }
+  }
 };

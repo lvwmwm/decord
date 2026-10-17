@@ -1,14 +1,14 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11513
+// Function ID: 11514
 // Name: SingleVideoCall
-// Dependencies: [19, 10599, 21, 558, 576, 1633, 7077, 5168, 8531, 11217, 1202, 11206, 2]
+// Dependencies: [19, 10662, 21, 558, 576, 1633, 7130, 5205, 8577, 11282, 1202, 11271, 2]
 
-// Module 11454 (SingleVideoCall)
+// Module 11513 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5168 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10599 */;
+import ChannelCallStore from "ChannelCallStore" /* 10662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
   ({ bottom, right } = analyticsLocations(1633)());
   analyticsLocations(1633)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(7077)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7130)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     function handleDoubleTap() {
       React3();
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
           }
         }
       }
-      tmp4(11217);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1202).AvatarSizes.PROFILE} resizeMode={channel(11206).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(11282);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1202).AvatarSizes.PROFILE} resizeMode={channel(11271).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

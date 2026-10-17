@@ -1,25 +1,25 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 12838
+// Function ID: 12839
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 5144, 6206, 2122, 4809, 1087, 5467, 1395, 12244, 4827, 11854, 2033, 2034, 7910, 8382, 7269, 9951, 2044, 587, 5484, 2]
+// Dependencies: [32, 17, 5181, 6243, 2122, 4845, 1087, 5504, 1395, 12309, 4863, 11917, 2033, 2034, 7956, 8428, 7320, 10015, 2044, 587, 5521, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
-// Module 12773 (ChatInputCommandOptionParser)
+// Module 12838 (ChatInputCommandOptionParser)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2033 */;
 import StringUtils from "StringUtils" /* 2034 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
-import useChannelName from "useChannelName" /* 5484 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11854 */;
-import ChatInputParser from "ChatInputParser" /* 12244 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import useChannelName from "useChannelName" /* 5521 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11917 */;
+import ChatInputParser from "ChatInputParser" /* 12309 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import EmojiStore from "EmojiStore" /* 6206 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5467 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault = tmp(7910);
+const AssetRegistryDefault = tmp(7956);
 function findTokenLocations(arr, arg1, fn) {
   const items = [];
   let index = arr.indexOf(arg1);
@@ -351,32 +351,32 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
   }
 };
 export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
-  const f157009 = (text) => _require(text.text) === closure_0;
+  const f157340 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f114258 = (arg0) => arg0;
+  const f114575 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f157009)) {
+      if (null != users.find(f157340)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f114259 = (arg0) => arg0.split("#")[0];
+  const f114576 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f157009)) {
+      if (null != users.find(f157340)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }

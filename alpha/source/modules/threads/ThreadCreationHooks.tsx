@@ -1,24 +1,24 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9562
+// Function ID: 9563
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7229, 502, 2068, 7464, 5495, 7594, 1127, 1087, 5148, 558, 7194, 7589, 7206, 576, 1128, 9499, 11, 1297, 8140, 9500, 7591, 1405, 7980, 9502, 8125, 5169, 7399, 5362, 584, 5028, 1104, 10042, 13756, 2]
+// Dependencies: [32, 5, 19, 7281, 502, 2068, 7510, 5532, 7640, 1127, 1087, 5185, 558, 7246, 7635, 7258, 576, 1128, 9563, 11, 1297, 8186, 9564, 7637, 1405, 8026, 9566, 8171, 5206, 7445, 5399, 584, 5065, 1104, 10106, 13824, 2]
 // Exports: createThread
 
-// Module 9498 (ThreadCreationHooks)
+// Module 9562 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import MessageConstants from "MessageConstants" /* 5148 */;
-import ThreadHooks from "ThreadHooks" /* 7194 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
-import DraftStore from "DraftStore" /* 7464 */;
-import MessageParserDefault from "MessageParser" /* 7589 */;
-import SlowmodeStore from "SlowmodeStore" /* 7594 */;
+import MessageConstants from "MessageConstants" /* 5185 */;
+import ThreadHooks from "ThreadHooks" /* 7246 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
+import DraftStore from "DraftStore" /* 7510 */;
+import MessageParserDefault from "MessageParser" /* 7635 */;
+import SlowmodeStore from "SlowmodeStore" /* 7640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7229 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7281 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5495 */;
+import MessageStore from "MessageStore" /* 5532 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7206);
+    const tmp17Result = tmp17(7258);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];

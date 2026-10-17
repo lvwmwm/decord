@@ -1,116 +1,103 @@
 // Module ID: 8097
 // Function ID: 8098
-// Dependencies: [8066, 8056, 8049]
+// Dependencies: [8098, 8099, 8101, 8102, 8103, 8107, 8108, 8109, 8110, 8095]
 
 // Module 8097
-import _mod8049 from "module_8049" /* 8049 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8056 */;
-import _modDef8066 from "module_8066" /* 8066 */;
+import _mod8095 from "module_8095" /* 8095 */;
+import _modDef8098 from "module_8098" /* 8098 */;
+import _modDef8099 from "module_8099" /* 8099 */;
+import _modDef8101 from "module_8101" /* 8101 */;
+import PNG_CHUNK_TYPE_SIZEDefault from "PNG_CHUNK_TYPE_SIZE" /* 8102 */;
+import ITEM_INFO_TYPE_EXIFDefault from "ITEM_INFO_TYPE_EXIF" /* 8103 */;
+import _modDef8107 from "module_8107" /* 8107 */;
+import _modDef8108 from "module_8108" /* 8108 */;
+import _modDef8109 from "module_8109" /* 8109 */;
+import _modDef8110 from "module_8110" /* 8110 */;
 
 
 export default {
-  read(byteLength, arg1) {
-    let combined;
-    let combined1;
-    let combined2;
-    let combined3;
-    let combined4;
-    let items;
-    let num;
-    let str7;
-    const obj = {};
-    for (let num = 0; num < arg1.length; num = num + 1) {
-      let tmp = importDefault;
-      let obj2 = _modDef8066;
-      let tmp3 = require;
-      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
-      let tmp5 = _mod8049;
-      let getStringFromDataView = tmp5.getStringFromDataView;
-      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
-      let stringFromDataView = getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
-      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
-        let tmp23 = arg1[num];
-        let tmp24 = 4 <= longAt && tmp23 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
-        let tmp25;
-        if (tmp24) {
-          let tmpResult = tmp(8066);
-          let longAt1 = tmpResult.getLongAt(byteLength, tmp23 + tmp3(8056).PNG_CHUNK_DATA_OFFSET);
-          let obj3 = { value: longAt1, description: "" + longAt1 };
-          tmp25 = obj3;
-        }
-        obj["Pixels Per Unit X"] = tmp25;
-        let tmp27 = arg1[num];
-        let tmp28 = 8 <= longAt && tmp27 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
-        let tmp29;
-        if (tmp28) {
-          let tmpResult9 = tmp(8066);
-          let longAt2 = tmpResult9.getLongAt(byteLength, tmp27 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 4);
-          let obj4 = { value: longAt2, description: "" + longAt2 };
-          tmp29 = obj4;
-        }
-        obj["Pixels Per Unit Y"] = tmp29;
-        let tmp31 = arg1[num];
-        let tmp32 = 9 <= longAt && tmp31 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
-        let tmp33;
-        if (tmp32) {
-          let tmpResult10 = tmp(8066);
-          let byteAt = tmpResult10.getByteAt(byteLength, tmp31 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 8);
-          let obj5 = { value: byteAt, description: str7 };
-          str7 = "Unknown";
-          if (1 === byteAt) {
-            str7 = "meters";
-          }
-          tmp33 = obj5;
-        }
-        obj["Pixel Units"] = tmp33;
-      } else if (stringFromDataView === tmp3(8056).TYPE_TIME) {
-        let tmp35 = arg1[num];
-        let tmp9 = 7 <= longAt && tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
-        let tmp10;
-        if (tmp9) {
-          let tmpResult11 = tmp(8066);
-          let shortAt = tmpResult11.getShortAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET);
-          let tmpResult12 = tmp(8066);
-          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 2);
-          let tmpResult13 = tmp(8066);
-          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 3);
-          let tmpResult14 = tmp(8066);
-          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 4);
-          let tmpResult15 = tmp(8066);
-          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 5);
-          let tmpResult16 = tmp(8066);
-          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp35 + tmp3(8056).PNG_CHUNK_DATA_OFFSET + 6);
-          let obj6 = { value: items, description: "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - ("" + byteAt5).length) + byteAt5 };
-          items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
-          let repeat = "0".repeat;
-          let _HermesInternal = HermesInternal;
-          combined = "" + "0".repeat(4 - ("" + shortAt).length) + shortAt;
-          let repeat2 = "0".repeat;
-          let _HermesInternal2 = HermesInternal;
-          let repeat3 = "0".repeat;
-          combined1 = "" + "0".repeat(2 - ("" + byteAt1).length) + byteAt1;
-          let _HermesInternal3 = HermesInternal;
-          let repeat4 = "0".repeat;
-          combined2 = "" + "0".repeat(2 - ("" + byteAt2).length) + byteAt2;
-          let _HermesInternal4 = HermesInternal;
-          let repeat5 = "0".repeat;
-          combined3 = "" + "0".repeat(2 - ("" + byteAt3).length) + byteAt3;
-          let _HermesInternal5 = HermesInternal;
-          let repeat6 = "0".repeat;
-          combined4 = "" + "0".repeat(2 - ("" + byteAt4).length) + byteAt4;
-          let _HermesInternal6 = HermesInternal;
-          let _HermesInternal7 = HermesInternal;
-          let str = "";
-          let str2 = "-";
-          let str3 = "-";
-          let str4 = " ";
-          let str5 = ":";
-          let str6 = ":";
-          tmp10 = obj6;
-        }
-        obj["Modify Date"] = tmp10;
+  parseAppMarkers(byteLength, flag2) {
+    if (_modDef8098.USE_TIFF) {
+      const tmpResult = _modDef8099;
+      if (tmpResult.isTiffFile(byteLength)) {
+        const tmpResult16 = _modDef8099;
+        const findTiffOffsetsResult = tmpResult16.findTiffOffsets();
+        const obj = { fileType: { value: "tiff", description: "TIFF" } };
+        const obj31 = _mod8095;
+        return obj31.objectAssign({}, findTiffOffsetsResult, obj);
       }
     }
-    return obj;
+    if (_modDef8098.USE_JPEG) {
+      const tmpResult17 = _modDef8101;
+      if (tmpResult17.isJpegFile(byteLength)) {
+        const tmpResult18 = _modDef8101;
+        const findJpegOffsetsResult = tmpResult18.findJpegOffsets(byteLength);
+        const obj2 = { fileType: { value: "jpeg", description: "JPEG" } };
+        const obj28 = _mod8095;
+        return obj28.objectAssign({}, findJpegOffsetsResult, obj2);
+      }
+    }
+    if (_modDef8098.USE_PNG) {
+      const tmpResult19 = PNG_CHUNK_TYPE_SIZEDefault;
+      if (tmpResult19.isPngFile(byteLength)) {
+        const tmpResult20 = PNG_CHUNK_TYPE_SIZEDefault;
+        const findPngOffsetsResult = tmpResult20.findPngOffsets(byteLength, flag2);
+        const obj3 = { fileType: { value: "png", description: "PNG" } };
+        const obj25 = _mod8095;
+        return obj25.objectAssign({}, findPngOffsetsResult, obj3);
+      }
+    }
+    if (_modDef8098.USE_HEIC) {
+      const tmpResult21 = ITEM_INFO_TYPE_EXIFDefault;
+      if (tmpResult21.isHeicFile(byteLength)) {
+        const tmpResult22 = ITEM_INFO_TYPE_EXIFDefault;
+        const findHeicOffsetsResult = tmpResult22.findHeicOffsets(byteLength);
+        const obj4 = { fileType: { value: "heic", description: "HEIC" } };
+        const obj22 = _mod8095;
+        return obj22.objectAssign({}, findHeicOffsetsResult, obj4);
+      }
+    }
+    if (_modDef8098.USE_AVIF) {
+      const tmpResult23 = _modDef8107;
+      if (tmpResult23.isAvifFile(byteLength)) {
+        const tmpResult24 = _modDef8107;
+        const findAvifOffsetsResult = tmpResult24.findAvifOffsets(byteLength);
+        const obj5 = { fileType: { value: "avif", description: "AVIF" } };
+        const obj19 = _mod8095;
+        return obj19.objectAssign({}, findAvifOffsetsResult, obj5);
+      }
+    }
+    if (_modDef8098.USE_WEBP) {
+      const tmpResult25 = _modDef8108;
+      if (tmpResult25.isWebpFile(byteLength)) {
+        const tmpResult26 = _modDef8108;
+        const findOffsetsResult = tmpResult26.findOffsets(byteLength);
+        const obj6 = { fileType: { value: "webp", description: "WebP" } };
+        const obj16 = _mod8095;
+        return obj16.objectAssign({}, findOffsetsResult, obj6);
+      }
+    }
+    if (_modDef8098.USE_GIF) {
+      const tmpResult27 = _modDef8109;
+      if (tmpResult27.isGifFile(byteLength)) {
+        const tmpResult28 = _modDef8109;
+        const findOffsetsResult1 = tmpResult28.findOffsets(byteLength);
+        const obj7 = { fileType: { value: "gif", description: "GIF" } };
+        const obj13 = _mod8095;
+        return obj13.objectAssign({}, findOffsetsResult1, obj7);
+      }
+    }
+    if (_modDef8098.USE_XMP) {
+      const tmpResult29 = _modDef8110;
+      if (tmpResult29.isXMLFile(byteLength)) {
+        const tmpResult30 = _modDef8110;
+        const findOffsetsResult2 = tmpResult30.findOffsets(byteLength);
+        const obj8 = { fileType: { value: "xml", description: "XML" } };
+        const obj10 = _mod8095;
+        return obj10.objectAssign({}, findOffsetsResult2, obj8);
+      }
+    }
+    const error = new Error("Invalid image format");
+    throw error;
   }
 };

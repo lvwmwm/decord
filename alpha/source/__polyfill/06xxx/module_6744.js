@@ -1,135 +1,136 @@
 // Module ID: 6744
 // Function ID: 6745
-// Dependencies: [109, 19, 21, 6543, 6536, 6745, 1658, 6532, 6559, 6746]
-// Exports: createBottomSheetScrollableComponent
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6745]
 
 // Module 6744
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1658 from "module_1658" /* 1658 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6532 */;
-import _mod6536 from "module_6536" /* 6536 */;
-import react2 from "react" /* 6543 */;
-import react3 from "react" /* 6745 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 6745 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react_mod from "react" /* 19 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import metroRequire from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react_native from "react-native" /* 17 */;
 
-let overScrollMode;
+const react = react2;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-let closure_2 = ["focusHook", "scrollEventsHandlersHook", "enableFooterMarginAdjustment", "overScrollMode", "keyboardDismissMode", "showsVerticalScrollIndicator", "contentContainerStyle", "refreshing", "onRefresh", "progressViewOffset", "refreshControl", "preserveScrollMomentum", "onScroll", "onScrollBeginDrag", "onScrollEndDrag", "lockableScrollableContentOffsetY", "onContentSizeChange"];
-let react = react_mod;
-({ forwardRef: closure_4, useContext: hasOwnProperty, useImperativeHandle: metroRequire, useMemo: metroImportDefault } = react);
-react = react_mod;
+let c10;
+let c9;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_3 = ["style"];
+const Component = react2.Component;
+({ StyleSheet: c9, View: c10 } = react_native);
 const jsx = Fragment.jsx;
-let closure_9 = { code: "function pnpm_createBottomSheetScrollableComponentTsx1(){const{preserveScrollMomentum,SCROLLABLE_DECELERATION_RATE_MAPPER,animatedScrollableState,showsVerticalScrollIndicator,SCROLLABLE_STATE}=this.__closure;return{...(preserveScrollMomentum?{}:{decelerationRate:SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value]}),showsVerticalScrollIndicator:showsVerticalScrollIndicator?animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED:showsVerticalScrollIndicator};}" };
-
-export const createBottomSheetScrollableComponent = function createBottomSheetScrollableComponent(SCROLLVIEW, animatedComponent) {
-  let closure_0 = SCROLLVIEW;
-  const ScrollableComponent = animatedComponent;
-  return closure_4((overScrollMode, arg1) => {
-    let closure_129_2;
-    let contentContainerStyle;
-    let enableFooterMarginAdjustment;
-    let focusHook;
-    let lockableScrollableContentOffsetY;
-    let onRefresh;
-    let onScroll;
-    let onScrollBeginDrag;
-    let onScrollEndDrag;
-    let preserveScrollMomentum;
-    let progressViewOffset;
-    let refreshControl;
-    let refreshing;
-    let scrollEventsHandlersHook;
-    let scrollHandler;
-    let scrollableContentOffsetY;
-    ({ focusHook, scrollEventsHandlersHook, enableFooterMarginAdjustment } = overScrollMode);
-    let tmp = undefined !== enableFooterMarginAdjustment && enableFooterMarginAdjustment;
-    overScrollMode = overScrollMode.overScrollMode;
-    let str = "never";
-    if (undefined !== overScrollMode) {
-      str = overScrollMode;
+class TouchableHighlight {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TouchableHighlight);
+    const items = [arg0];
+    const obj = _getPrototypeOf(TouchableHighlight);
+    let tmp3 = metroRequire;
+    const tmp2 = _getPrototypeOf;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
     }
-    const keyboardDismissMode = overScrollMode.keyboardDismissMode;
-    let str2 = "interactive";
-    if (undefined !== keyboardDismissMode) {
-      str2 = keyboardDismissMode;
-    }
-    const showsVerticalScrollIndicator = overScrollMode.showsVerticalScrollIndicator;
-    const tmp2 = undefined === showsVerticalScrollIndicator || showsVerticalScrollIndicator;
-    let closure_0 = tmp2;
-    ({ onRefresh, preserveScrollMomentum } = overScrollMode);
-    ({ onScroll, onContentSizeChange: closure_129_2 } = overScrollMode);
-    ({ contentContainerStyle, refreshing, progressViewOffset, refreshControl, onScrollBeginDrag, onScrollEndDrag, lockableScrollableContentOffsetY } = overScrollMode);
-    const tmp3 = _objectWithoutProperties(overScrollMode, closure_2);
-    let tmp6 = hasOwnProperty(react2.BottomSheetDraggableContext);
-    let closure_3 = tmp6;
-    let obj = _mod6536;
-    const scrollHandler1 = obj.useScrollHandler(scrollEventsHandlersHook, onScroll, onScrollBeginDrag, onScrollEndDrag, lockableScrollableContentOffsetY);
-    const scrollableRef = scrollHandler1.scrollableRef;
-    ({ scrollableContentOffsetY, scrollHandler } = scrollHandler1);
-    let obj2 = _mod6536;
-    const bottomSheetInternal = obj2.useBottomSheetInternal();
-    const animatedScrollableState = bottomSheetInternal.animatedScrollableState;
-    const enableContentPanningGesture = bottomSheetInternal.enableContentPanningGesture;
-    const obj3 = react3;
-    const setContentSize = obj3.useBottomSheetContentSizeSetter().setContentSize;
-    if (!tmp6) {
-      if (enableContentPanningGesture) {
-        throw "'Scrollable' cannot be used out of the BottomSheet!";
-      }
-    }
-    const tmp4Result = _mod1658;
-    class J {
-      constructor() {
-        let obj;
-        let tmp6;
-        const tmp = preserveScrollMomentum;
-        if (tmp) {
-          obj = {};
-        } else {
-          obj = { decelerationRate: SCROLLVIEW(ScrollableComponent[7]).SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value] };
+    const tmp3Result = tmp3(self, constructResult);
+    let closure_0 = tmp3Result;
+    tmp3Result.showUnderlay = () => {
+      let obj3;
+      let obj4;
+      if (closure_0.hasPressHandler()) {
+        const obj2 = { extraChildStyle: obj3, extraUnderlayStyle: obj4 };
+        obj3 = { opacity: closure_0.props.activeOpacity };
+        obj4 = { backgroundColor: closure_0.props.underlayColor };
+        closure_0.setState(obj2);
+        const props = obj.props;
+        const onShowUnderlay = props.onShowUnderlay;
+        if (onShowUnderlay != null) {
+          onShowUnderlay();
         }
-        const obj2 = { showsVerticalScrollIndicator: tmp6 };
-        const merged = Object.assign(obj);
-        tmp6 = closure_0 && animatedScrollableState.value === SCROLLVIEW(ScrollableComponent[7]).SCROLLABLE_STATE.UNLOCKED;
-        return obj2;
       }
+    };
+    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
+    tmp3Result.hideUnderlay = () => {
+      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
+      const props = closure_0.props;
+      const onHideUnderlay = props.onHideUnderlay;
+      if (onHideUnderlay != null) {
+        onHideUnderlay();
+      }
+    };
+    tmp3Result.onStateChange = (arg0, arg1) => {
+      if (arg1 === TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.BEGAN) {
+        closure_0.showUnderlay();
+      } else {
+        const tmp3 = arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.UNDETERMINED && arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
+        if (!tmp3) {
+          closure_0.hideUnderlay();
+        }
+      }
+    };
+    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
+    return tmp3Result;
+  }
+}
+_inherits(TouchableHighlight, Component);
+const entry = {
+  key: "renderChildren",
+  value: function renderChildren() {
+    const self = this;
+    if (this.props.children) {
+      const Children = react.Children;
+      const onlyResult = Children.only(self.props.children);
+      const cloneElement = react.cloneElement;
+      const obj = { style: React4.compose(onlyResult.props.style, self.state.extraChildStyle) };
+      return cloneElement(onlyResult, obj);
+    } else {
+      return <authStore />;
     }
-    J.__closure = { preserveScrollMomentum, SCROLLABLE_DECELERATION_RATE_MAPPER: GESTURE_SOURCE.SCROLLABLE_DECELERATION_RATE_MAPPER, animatedScrollableState, showsVerticalScrollIndicator: tmp2, SCROLLABLE_STATE: GESTURE_SOURCE.SCROLLABLE_STATE };
-    J.__workletHash = 1780437272380;
-    J.__initData = __initData;
-    const items = [animatedScrollableState, tmp2, preserveScrollMomentum];
-    const items1 = [tmp6];
-    ({ preserveScrollMomentum, SCROLLABLE_DECELERATION_RATE_MAPPER: GESTURE_SOURCE.SCROLLABLE_DECELERATION_RATE_MAPPER, animatedScrollableState, showsVerticalScrollIndicator: tmp2, SCROLLABLE_STATE: GESTURE_SOURCE.SCROLLABLE_STATE });
-    const animatedProps = tmp4Result.useAnimatedProps(J, items);
-    const tmp10 = metroImportDefault(() => {
-      let result1;
-      if (closure_3) {
-        const Gesture = SCROLLVIEW(ScrollableComponent[8]).Gesture;
-        const NativeResult = Gesture.Native();
-        const result = NativeResult.simultaneousWithExternalGesture(tmp);
-        result1 = result.shouldCancelWhenOutside(false);
-      }
-      return result1;
-    }, items1);
-    const tmp4Result4 = _mod6536;
-    const stableCallback = tmp4Result4.useStableCallback((arg0, arg1) => {
-      setContentSize(arg1);
-      if (closure_1_2) {
-        tmp2(arg0, arg1);
-      }
-    });
-    const tmp4Result5 = _mod6536;
-    const bottomSheetContentContainerStyle = tmp4Result5.useBottomSheetContentContainerStyle(tmp, contentContainerStyle);
-    metroRequire(arg1, () => scrollableRef.current);
-    const tmp4Result6 = _mod6536;
-    const scrollableSetter = tmp4Result6.useScrollableSetter(scrollableRef, closure_0, scrollableContentOffsetY, undefined !== onRefresh, focusHook);
-    const ScrollableContainer = tmp4(6746).ScrollableContainer;
-    let merged = Object.assign(tmp3);
-    return <ScrollableContainer ref={scrollableRef} nativeGesture={tmp10} animatedProps={animatedProps} overScrollMode={str} keyboardDismissMode={str2} refreshing={refreshing} scrollEventThrottle={16} progressViewOffset={progressViewOffset} contentContainerStyle={bottomSheetContentContainerStyle} onRefresh={onRefresh} onScroll={scrollHandler} onContentSizeChange={stableCallback} setContentSize={setContentSize} ScrollableComponent={ScrollableComponent} refreshControl={refreshControl} />;
-  });
+  }
 };
+let items = [
+  entry,
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
+      }
+      const extraUnderlayStyle = self.state.extraUnderlayStyle;
+      const tmp = _objectWithoutProperties(props, closure_3);
+      TOUCHABLE_STATEDefault;
+      const merged = Object.assign(tmp);
+      const items = [style, extraUnderlayStyle];
+      return <tmp2 style={items} onStateChange={self.onStateChange}>{self.renderChildren()}</tmp2>;
+    }
+  }
+];
+const importDefaultResultResult = _createClass(TouchableHighlight, items);
+let obj = { activeOpacity: 0.85, delayPressOut: 100, underlayColor: "black" };
+let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
+importDefaultResultResult.defaultProps = obj;
+
+export default importDefaultResultResult;

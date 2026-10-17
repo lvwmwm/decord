@@ -1,19 +1,19 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13787
+// Function ID: 13788
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 1202, 13436, 5150, 1128, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 13502, 5187, 1128, 2]
 
-// Module 13719 (GuildRoleSubscriptionsChannelHeader)
+// Module 13787 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13436 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13502 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t["KzCF/6"]) };
-    const Text = tmp(5150).Text;
+    const Text = tmp(5187).Text;
     intl = tmp(1128).intl;
     const tmp11 = React3(Text, obj3);
     cResult[1] = tmp11;

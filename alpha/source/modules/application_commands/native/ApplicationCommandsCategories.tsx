@@ -1,20 +1,20 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 13058
+// Function ID: 13059
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2128, 12988, 21, 5154, 587, 558, 576, 504, 12811, 5091, 1128, 6409, 5119, 5120, 7038, 2]
+// Dependencies: [19, 17, 2128, 13053, 21, 5191, 587, 558, 576, 504, 12876, 5128, 1128, 6462, 5156, 5157, 7091, 2]
 
-// Module 12993 (ApplicationCommandsCategories)
+// Module 13058 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import HapticUtils from "HapticUtils" /* 5119 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12811 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12876 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12988 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13053 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -182,7 +182,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ca
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6409).PressableOpacity;
+  const PressableOpacity = tmp2(6462).PressableOpacity;
   const intl = tmp2(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1128).t;

@@ -1,15 +1,15 @@
-// Module ID: 9784
-// Function ID: 9785
+// Module ID: 9848
+// Function ID: 9849
 // Name: getEmojiPopoutMessage
-// Dependencies: [6384, 1087, 1128, 4123, 2131, 2]
+// Dependencies: [6437, 1087, 1128, 4159, 2131, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9784 (getEmojiPopoutMessage)
+// Module 9848 (getEmojiPopoutMessage)
 import Constants from "Constants" /* 1087 */;
 import intl12 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import _modDef4123 from "module_4123" /* 4123 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6384 */;
+import _modDef4159 from "module_4159" /* 4159 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6437 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -49,7 +49,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     const intl11 = intl12.intl;
     format = intl11.format;
     obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = _modDef4123["/jdd/7"];
+    prop = _modDef4159["/jdd/7"];
     obj9 = HelpdeskUtilsDefault;
     return obj2;
   } else {

@@ -1,22 +1,22 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18286
+// Function ID: 18287
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 2068, 6294, 12847, 21, 5154, 587, 558, 576, 12848, 4877, 1899, 18119, 4909, 18226, 18227, 6986, 18106, 18183, 504, 2]
+// Dependencies: [19, 17, 2068, 6352, 12912, 21, 5191, 587, 558, 576, 12913, 4913, 1899, 18180, 4945, 18287, 18288, 7039, 18167, 18244, 504, 2]
 
-// Module 18225 (VoicePanelVoiceChannelApp)
+// Module 18286 (VoicePanelVoiceChannelApp)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12847 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12848 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18106 */;
-import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 18183 */;
-import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 18226 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12912 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12913 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18167 */;
+import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 18244 */;
+import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 18287 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import VoicePanelStore from "VoicePanelStore" /* 6294 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import VoicePanelStore from "VoicePanelStore" /* 6352 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let voicePanelsOpened;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(4909);
+const ReanimatedRexport = tmp(4945);
 const StyleSheet = react_native.StyleSheet;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const jsx = Fragment.jsx;

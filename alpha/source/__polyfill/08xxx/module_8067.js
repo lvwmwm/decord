@@ -1,106 +1,126 @@
 // Module ID: 8067
 // Function ID: 8068
-// Dependencies: [8066]
+// Dependencies: []
+// Exports: findMatroskaDocTypeElements, getFileChunk, isAvifStringIncluded, isFileContaineJfiforExifHeader, isFlvStringIncluded, isHeicSignatureIncluded, isftypStringIncluded
 
 // Module 8067
-import _modDef8066 from "module_8066" /* 8066 */;
-
-
-export default {
-  read(buffer, sum) {
-    let str6;
-    let tmp13;
-    let tmp15;
-    let tmp17;
-    const obj = _modDef8066;
-    const shortAt = obj.getShortAt(buffer, sum);
-    let tmp4;
-    if (15 <= shortAt) {
-      const tmpResult = _modDef8066;
-      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
-      const _HermesInternal = HermesInternal;
-      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
-      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
-    }
-    let tmp7;
-    if (16 <= shortAt) {
-      const tmpResult7 = _modDef8066;
-      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
-      const _HermesInternal2 = HermesInternal;
-      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
-      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
-    }
-    let tmp10;
-    if (9 <= shortAt) {
-      const tmpResult8 = _modDef8066;
-      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
-      const tmpResult9 = _modDef8066;
-      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
-      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
-      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
-    }
-    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
-    tmp13 = undefined;
-    if (10 <= shortAt) {
-      const tmpResult10 = _modDef8066;
-      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
-      const obj6 = { value: byteAt4, description: str6 };
-      str6 = "None";
-      if (0 !== byteAt4) {
-        let str7 = "inches";
-        if (1 !== byteAt4) {
-          let str8 = "Unknown";
-          if (2 === byteAt4) {
-            str8 = "cm";
-          }
-          str7 = str8;
-        }
-        str6 = str7;
-      }
-      tmp13 = obj6;
-    }
-    tmp15 = undefined;
-    if (12 <= shortAt) {
-      const tmpResult11 = _modDef8066;
-      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
-      tmp15 = { value: shortAt1, description: "" + shortAt1 };
-      const obj7 = { value: shortAt1, description: "" + shortAt1 };
-    }
-    tmp17 = undefined;
-    if (14 <= shortAt) {
-      const tmpResult12 = _modDef8066;
-      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
-      tmp17 = { value: shortAt2, description: "" + shortAt2 };
-      const obj8 = { value: shortAt2, description: "" + shortAt2 };
-    }
-    if (undefined !== tmp4) {
-      if (undefined !== tmp7) {
-        const result = 3 * tmp4.value * tmp7.value;
-        let tmp20;
-        if (0 !== result) {
-          if (16 + result <= shortAt) {
-            buffer = buffer.buffer;
-            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
-            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
-          }
-        }
-        if (tmp20) {
-          obj5["JFIF Thumbnail"] = tmp20;
-        }
-      }
-    }
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      while (keys[16] !== undefined) {
-        if (undefined !== obj5[tmp22]) {
-          continue;
-        } else {
-          delete obj9[tmp23];
-          continue;
-        }
-        continue;
-      }
-    }
-    return obj5;
+function fetchFromObject(FileTypes, arr) {
+  let tmp2;
+  const index = arr.indexOf(".");
+  if (index > -1) {
+    tmp2 = fetchFromObject(FileTypes[arr.slice(arr, 0, index)], arr.slice(index + 1));
+  } else {
+    tmp2 = FileTypes[arr];
   }
+  return tmp2;
+}
+
+export const getFileChunk = function getFileChunk(fileChunk, chunkSize) {
+  let num = chunkSize;
+  if (chunkSize === undefined) {
+    num = 32;
+  }
+  let uint8Array = fileChunk;
+  if (fileChunk instanceof ArrayBuffer) {
+    const _Uint8Array = Uint8Array;
+    const self = this;
+    const self2 = this;
+    let tmp = fileChunk;
+    uint8Array = new Uint8Array(fileChunk);
+  }
+  if (!Array.isArray(fileChunk)) {
+    const _ArrayBuffer = ArrayBuffer;
+    if (!(fileChunk instanceof ArrayBuffer)) {
+      const _Uint8Array2 = Uint8Array;
+      if (!(fileChunk instanceof Uint8Array)) {
+        const _TypeError = TypeError;
+        const _HermesInternal = HermesInternal;
+        const self3 = this;
+        const self4 = this;
+        const typeError = new TypeError("Expected the `file` argument to be of type `Array<number>`, `Uint8Array`, or `ArrayBuffer`, got `" + typeof fileChunk + "`");
+        throw typeError;
+      }
+    }
+  }
+  const arr = Array.from(uint8Array.slice(0, num));
+  if (arr.every((item) => {
+    let tmp = typeof item === "number";
+    if (typeof item === "number") {
+      const _isNaN = isNaN;
+      tmp = !isNaN(item);
+    }
+    return tmp;
+  })) {
+    return arr;
+  } else {
+    const _TypeError2 = TypeError;
+    const self5 = this;
+    const self6 = this;
+    const typeError1 = new TypeError("File content contains illegal values");
+    throw typeError1;
+  }
+};
+export { fetchFromObject };
+export const findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  const joined = mapped.join("");
+  let str = "webm";
+  if (!joined.includes("webm")) {
+    let str3;
+    if (joined.includes("matroska")) {
+      str3 = "mkv";
+    }
+    str = str3;
+  }
+  return str;
+};
+export const isftypStringIncluded = function isftypStringIncluded(fileChunk) {
+  const items = [102, 116, 121, 112];
+  let num = 0;
+  if (0 < fileChunk.length - items.length) {
+    while (true) {
+      let num2 = 0;
+      let flag = true;
+      if (0 < items.length) {
+        flag = false;
+        while (fileChunk[num + num2] === items[num2]) {
+          let sum = num2 + 1;
+          num2 = sum;
+          flag = true;
+          if (sum >= items.length) {
+            break;
+          }
+        }
+      }
+      if (flag) {
+        break;
+      } else {
+        num = num + 1;
+      }
+    }
+    return true;
+  }
+  return false;
+};
+export const isFlvStringIncluded = function isFlvStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(0, 3);
+  const textDecoder = new TextDecoder();
+  const decode = textDecoder.decode;
+  const uint8Array = new Uint8Array(substr);
+  const decodeResult = decode(uint8Array);
+  return decodeResult.includes("FLV");
+};
+export const isFileContaineJfiforExifHeader = function isFileContaineJfiforExifHeader(arg0) {
+  return 224 === tmp || 225 === tmp;
+};
+export const isAvifStringIncluded = function isAvifStringIncluded(fileChunk) {
+  const substr = fileChunk.slice(4, 12);
+  const mapped = substr.map((item) => String.fromCharCode(item));
+  return "ftypavif" === mapped.join("");
+};
+export const isHeicSignatureIncluded = function isHeicSignatureIncluded(fileChunk) {
+  const mapped = fileChunk.map((item) => String.fromCharCode(item));
+  let closure_0 = mapped.join("");
+  const items = ["ftypheic", "ftyphevc", "ftypmif1", "ftypmsf1"];
+  return items.some((item) => closure_0.includes(item));
 };

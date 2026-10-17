@@ -1,9 +1,9 @@
-// Module ID: 15434
-// Function ID: 15435
+// Module ID: 15501
+// Function ID: 15502
 // Name: SKUTypes
 // Dependencies: [2]
 
-// Module 15434 (SKUTypes)
+// Module 15501 (SKUTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { SKU_CREATE_CHOICES: new Set([2, 3, 5]), GIFTABLE: new Set([1, 2, 3, 4, 5]), BUNDLES: new Set([4, 6]), SUBSCRIPTIONS: new Set([5, 6]) };

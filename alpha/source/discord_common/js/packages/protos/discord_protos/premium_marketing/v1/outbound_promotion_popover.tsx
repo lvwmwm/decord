@@ -1,11 +1,11 @@
-// Module ID: 9392
-// Function ID: 9393
+// Module ID: 9456
+// Function ID: 9457
 // Name: outbound_promotion_popover
-// Dependencies: [32, 1212, 9372, 2]
+// Dependencies: [32, 1212, 9436, 2]
 
-// Module 9392 (outbound_promotion_popover)
+// Module 9456 (outbound_promotion_popover)
 import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9372 */;
+import theme_aware_asset from "theme_aware_asset" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,14 +24,14 @@ class OutboundPromotionPopover$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.OutboundPromotionPopover", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

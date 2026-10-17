@@ -5,33 +5,91 @@
 // Exports: default
 
 // Module 4395 (formatDistance)
-let closure_0 = { lessThanXSeconds: { one: "bir saniyeden az", other: "{{count}} saniyeden az" }, xSeconds: { one: "1 saniye", other: "{{count}} saniye" }, halfAMinute: "yar\u0131m dakika", lessThanXMinutes: { one: "bir dakikadan az", other: "{{count}} dakikadan az" }, xMinutes: { one: "1 dakika", other: "{{count}} dakika" }, aboutXHours: { one: "yakla\u015F\u0131k 1 saat", other: "yakla\u015F\u0131k {{count}} saat" }, xHours: { one: "1 saat", other: "{{count}} saat" }, xDays: { one: "1 g\u00FCn", other: "{{count}} g\u00FCn" }, aboutXWeeks: { one: "yakla\u015F\u0131k 1 hafta", other: "yakla\u015F\u0131k {{count}} hafta" }, xWeeks: { one: "1 hafta", other: "{{count}} hafta" }, aboutXMonths: { one: "yakla\u015F\u0131k 1 ay", other: "yakla\u015F\u0131k {{count}} ay" }, xMonths: { one: "1 ay", other: "{{count}} ay" }, aboutXYears: { one: "yakla\u015F\u0131k 1 y\u0131l", other: "yakla\u015F\u0131k {{count}} y\u0131l" }, xYears: { one: "1 y\u0131l", other: "{{count}} y\u0131l" }, overXYears: { one: "1 y\u0131ldan fazla", other: "{{count}} y\u0131ldan fazla" }, almostXYears: { one: "neredeyse 1 y\u0131l", other: "neredeyse {{count}} y\u0131l" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
-  let tmp2 = tmp;
-  if (typeof closure_0[arg0] !== "string") {
-    let one;
-    if (1 === arg1) {
-      one = tmp.one;
-    } else {
-      const str = closure_0[arg0].other;
-      one = str.replace("{{count}}", arg1.toString());
-    }
-    tmp2 = one;
-  }
-  let tmp3 = tmp2;
+  let other;
   if (null != addSuffix) {
-    tmp3 = tmp2;
+    let replaced;
     if (addSuffix.addSuffix) {
+      let other2;
       if (addSuffix.comparison) {
         let text;
         if (addSuffix.comparison > 0) {
-          text = `${tmp2} sonra`;
+          let other3;
+          if (1 === arg1) {
+            other3 = tmp.one;
+          } else {
+            const result = arg1 % 100;
+            if (result <= 20) {
+              if (10 < result) {
+                other3 = tmp.other;
+              }
+            }
+            const result1 = result % 10;
+            if (2 <= result1) {
+              if (result1 <= 4) {
+                other3 = tmp.twoFour;
+              }
+            }
+            other3 = tmp.other;
+          }
+          let str5 = other3;
+          if (typeof other3 !== "string") {
+            str5 = other3.future;
+          }
+          const _String2 = String;
+          const replace2 = str5.replace;
+          text = `za ${replace2("{{count}}", String(arg1))}`;
         }
-        tmp3 = text;
+        replaced = text;
       }
-      text = `${tmp2} önce`;
+      if (1 === arg1) {
+        other2 = tmp.one;
+      } else {
+        const result2 = arg1 % 100;
+        if (result2 <= 20) {
+          if (10 < result2) {
+            other2 = tmp.other;
+          }
+        }
+        const result3 = result2 % 10;
+        if (2 <= result3) {
+          if (result3 <= 4) {
+            other2 = tmp.twoFour;
+          }
+        }
+        other2 = tmp.other;
+      }
+      let str2 = other2;
+      if (typeof other2 !== "string") {
+        str2 = other2.past;
+      }
+      const _String = String;
+      const replace = str2.replace;
+      text = `${replace("{{count}}", String(arg1))} temu`;
     }
+    return replaced;
   }
-  return tmp3;
+  if (1 === arg1) {
+    other = tmp.one;
+  } else {
+    const result4 = arg1 % 100;
+    if (result4 <= 20) {
+      if (10 < result4) {
+        other = tmp.other;
+      }
+    }
+    const result5 = result4 % 10;
+    if (2 <= result5) {
+      if (result5 <= 4) {
+        other = tmp.twoFour;
+      }
+    }
+    other = tmp.other;
+  }
+  let str = other;
+  if (typeof other !== "string") {
+    str = other.regular;
+  }
+  replaced = str.replace("{{count}}", String(arg1));
 };

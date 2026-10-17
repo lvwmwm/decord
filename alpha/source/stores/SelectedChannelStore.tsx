@@ -1,7 +1,7 @@
 // Module ID: 2119
 // Function ID: 2120
 // Name: SelectedChannelStore
-// Dependencies: [2120, 2072, 502, 2068, 4807, 2090, 2014, 4809, 4998, 1087, 2075, 510, 12, 1388, 1099, 5035, 1114, 7255, 504, 584, 2]
+// Dependencies: [2120, 2072, 502, 2068, 4843, 2090, 2014, 4845, 5034, 1087, 2075, 510, 12, 1388, 1099, 5072, 1114, 7307, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2119 (SelectedChannelStore)
@@ -13,17 +13,17 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import router_utils from "router_utils" /* 1114 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7255 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7307 */;
 import GatedChannelStore from "GatedChannelStore" /* 2120 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildChannelStore from "GuildChannelStore" /* 4807 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

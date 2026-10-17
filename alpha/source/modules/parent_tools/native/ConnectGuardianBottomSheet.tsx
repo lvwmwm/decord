@@ -1,23 +1,23 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15921
+// Function ID: 15922
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7479, 7480, 21, 5154, 587, 558, 576, 573, 5118, 15856, 1128, 2571, 5150, 15857, 5442, 7065, 2]
+// Dependencies: [19, 17, 7525, 7526, 21, 5191, 587, 558, 576, 573, 5155, 15922, 1128, 2589, 5187, 15923, 5479, 7118, 2]
 
-// Module 15855 (ConnectGuardianBottomSheet)
+// Module 15921 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2571 from "module_2571" /* 2571 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7065 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7480 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15856 */;
+import _modDef2589 from "module_2589" /* 2589 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15922 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
           return;
         }
       }
-      stringResult = obj4.string(_modDef2571.aCUVfL);
+      stringResult = obj4.string(_modDef2589.aCUVfL);
     }
     class A {
       constructor() {
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             return closure_1_5.getLinkCodeExpiresAt();
           }
         }
-        formatResult = format(_modDef2571["2O6ltn"], obj2);
+        formatResult = format(_modDef2589["2O6ltn"], obj2);
       }
       class A {
         constructor() {
@@ -274,20 +274,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const Text = Text_Text.Text;
   if (title == null) {
     const intl = tmp2(1128).intl;
-    title = intl.string(tmp7(2571).aCUVfL);
+    title = intl.string(tmp7(2589).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5150).Text;
+  const Text2 = tmp2(5187).Text;
   if (body == null) {
     const intl2 = tmp2(1128).intl;
     const obj7 = { link };
-    body = intl2.format(tmp7(2571)["2O6ltn"], obj7);
+    body = intl2.format(tmp7(2589)["2O6ltn"], obj7);
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(15857).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(15923).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -297,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   }
   const obj10 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj8);
-  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2571.Hsm5IF), onPress: callback };
-  const Button = tmp2(5442).Button;
+  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2589.Hsm5IF), onPress: callback };
+  const Button = tmp2(5479).Button;
   intl3 = tmp2(1128).intl;
   items3[2] = metroImportDefault(Button, obj11);
   return metroImportDefault(BottomSheet, obj10);

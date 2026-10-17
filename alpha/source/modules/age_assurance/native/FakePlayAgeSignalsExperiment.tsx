@@ -1,10 +1,10 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7966
+// Function ID: 7967
 // Name: FakePlayAgeSignalsExperiment
 // Dependencies: [1455, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 7920 (FakePlayAgeSignalsExperiment)
+// Module 7966 (FakePlayAgeSignalsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

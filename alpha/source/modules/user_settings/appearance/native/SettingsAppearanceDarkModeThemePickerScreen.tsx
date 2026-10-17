@@ -1,14 +1,14 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16363
+// Function ID: 16364
 // Name: SettingsAppearanceDarkModeThemePickerScreen
-// Dependencies: [19, 1210, 21, 558, 576, 16256, 1128, 2]
+// Dependencies: [19, 1210, 21, 558, 576, 16322, 1128, 2]
 
-// Module 16297 (SettingsAppearanceDarkModeThemePickerScreen)
+// Module 16363 (SettingsAppearanceDarkModeThemePickerScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
-import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 16256 */;
+import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 16322 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

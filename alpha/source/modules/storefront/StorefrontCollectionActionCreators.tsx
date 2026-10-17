@@ -1,18 +1,18 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 9381
+// Function ID: 9382
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2132, 9321, 7503, 1087, 8573, 584, 5863, 5855, 2]
+// Dependencies: [5, 2132, 9379, 7549, 1087, 8619, 584, 5900, 5892, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9323 (StorefrontCollectionActionCreators)
+// Module 9381 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import StoreUtils from "StoreUtils" /* 5863 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8573 */;
+import StoreUtils from "StoreUtils" /* 5900 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8619 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9321 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7503 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9379 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7549 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;
@@ -100,7 +100,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -249,7 +249,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       obj6 = {};
     }
     flag = obj6.retryAfterError ?? false;
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -515,7 +515,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };

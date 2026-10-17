@@ -1,8 +1,8 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15680
+// Function ID: 15681
 // Dependencies: [2]
 
-// Module 15618
+// Module 15680
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/banners/fantasy_land_banner.gif.js");

@@ -1,9 +1,9 @@
-// Module ID: 9422
-// Function ID: 9423
+// Module ID: 9486
+// Function ID: 9487
 // Name: BountyAspectRatio
 // Dependencies: [2]
 
-// Module 9422 (BountyAspectRatio)
+// Module 9486 (BountyAspectRatio)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/BountyAspectRatio.tsx");

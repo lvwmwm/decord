@@ -1,13 +1,13 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17197
+// Function ID: 17198
 // Name: useLiveStageData
-// Dependencies: [19, 6115, 2068, 558, 576, 6169, 573, 12, 2]
+// Dependencies: [19, 6152, 2068, 558, 576, 6206, 573, 12, 2]
 
-// Module 17137 (useLiveStageData)
+// Module 17197 (useLiveStageData)
 import _modDef12 from "module_12" /* 12 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6169 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6115 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6152 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 8037
+// Function ID: 8038
 // Name: ImagePickerUtils
 // Dependencies: [1630, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 7991 (ImagePickerUtils)
+// Module 8037 (ImagePickerUtils)
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import size from "module_2" /* 2 */;
 

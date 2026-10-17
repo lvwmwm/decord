@@ -1,15 +1,15 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15879
+// Function ID: 15880
 // Name: ModerationUtils
-// Dependencies: [1087, 2046, 586, 15814, 1128, 1211, 2]
+// Dependencies: [1087, 2046, 586, 15880, 1128, 1211, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 15813 (ModerationUtils)
+// Module 15879 (ModerationUtils)
 import shims from "shims" /* 586 */;
 import intl11 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 2046 */;
-import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 15814 */;
+import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 15880 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17230
+// Function ID: 17231
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4810, 1087, 558, 576, 504, 2]
+// Dependencies: [4846, 1087, 558, 576, 504, 2]
 // Exports: isGameCommunityServerPreview
 
-// Module 17170 (useIsGameCommunityServerPreview)
+// Module 17230 (useIsGameCommunityServerPreview)
 import Constants from "Constants" /* 1087 */;
-import LurkingStore from "LurkingStore" /* 4810 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

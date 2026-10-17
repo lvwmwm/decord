@@ -1,9 +1,9 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15503
+// Function ID: 15504
 // Name: contextMenuIcons
 // Dependencies: [2]
 
-// Module 15436 (contextMenuIcons)
+// Module 15503 (contextMenuIcons)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/contextMenuIcons.tsx");

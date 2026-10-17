@@ -1,20 +1,20 @@
-// Module ID: 13742
-// Function ID: 13743
+// Module ID: 13810
+// Function ID: 13811
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 5154, 587, 558, 576, 13031, 1128, 5150, 10263, 11997, 10558, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 13096, 1128, 5187, 10327, 12060, 10621, 2]
 
-// Module 13742 (ScheduledMessagesIntro)
+// Module 13810 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import AttachmentIcon from "AttachmentIcon" /* 10263 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10558 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11997 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13031 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AttachmentIcon from "AttachmentIcon" /* 10327 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10621 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12060 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13096 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -174,7 +174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         const _Symbol3 = Symbol;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10558).PlusLargeIcon;
+          const PlusLargeIcon = tmp(10621).PlusLargeIcon;
           const tmp43 = hasOwnProperty(PlusLargeIcon, obj8);
           cResult[20] = tmp43;
           tmp40 = tmp43;
@@ -193,7 +193,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         const _Symbol4 = Symbol;
         if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
-          const Text = tmp(5150).Text;
+          const Text = tmp(5187).Text;
           intl5 = tmp(1128).intl;
           const tmp50 = hasOwnProperty(Text, obj10);
           cResult[23] = tmp50;

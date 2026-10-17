@@ -1,10 +1,10 @@
-// Module ID: 11978
-// Function ID: 11979
+// Module ID: 12041
+// Function ID: 12042
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1128, 5855, 2]
+// Dependencies: [5, 32, 19, 1128, 5892, 2]
 // Exports: default
 
-// Module 11978 (useRequest)
+// Module 12041 (useRequest)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ export default function useRequest(arg0) {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

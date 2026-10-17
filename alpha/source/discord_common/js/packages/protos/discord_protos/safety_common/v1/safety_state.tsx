@@ -62,14 +62,14 @@ class NormalState$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.safety_common.v1.NormalState", [], new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -104,14 +104,14 @@ class RestrictedState$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.safety_common.v1.RestrictedState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -191,14 +191,14 @@ class DeferredActionState$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.safety_common.v1.DeferredActionState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -288,14 +288,14 @@ class TempBannedState$Type extends MessageType4 {
     const tmp2 = new tmp("discord_protos.safety_common.v1.TempBannedState", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { classificationTypes: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -430,14 +430,14 @@ class BannedState$Type extends MessageType5 {
     const tmp2 = new tmp("discord_protos.safety_common.v1.BannedState", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { classificationTypes: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -573,14 +573,14 @@ class SafetyState$Type extends MessageType6 {
     const tmp2 = new tmp("discord_protos.safety_common.v1.SafetyState", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     obj = { state: { oneofKind: "r" }, reason: 0, annotations: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

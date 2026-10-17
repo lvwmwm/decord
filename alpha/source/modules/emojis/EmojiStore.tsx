@@ -1,9 +1,9 @@
-// Module ID: 6206
-// Function ID: 6207
+// Module ID: 6243
+// Function ID: 6244
 // Name: EmojiStore
-// Dependencies: [32, 5, 5075, 6207, 2132, 1246, 2128, 2070, 2122, 2090, 6182, 1392, 6208, 6209, 1395, 1087, 6210, 1097, 4823, 6211, 11, 12, 1104, 2094, 2114, 10, 6212, 584, 5191, 38, 5139, 1388, 6213, 6214, 6246, 4799, 4761, 504, 4827, 4826, 2]
+// Dependencies: [32, 5, 5112, 6244, 2132, 1246, 2128, 2070, 2122, 2090, 6219, 1392, 6245, 6246, 1395, 1087, 6247, 1097, 4859, 6248, 11, 12, 1104, 2094, 2114, 10, 6249, 584, 5228, 38, 5176, 1388, 6250, 6251, 6283, 4835, 4797, 504, 4863, 4862, 2]
 
-// Module 6206 (EmojiStore)
+// Module 6243 (EmojiStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,34 +12,34 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
 import TryLoad from "TryLoad" /* 2114 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4799 */;
-import EmojiTypes from "EmojiTypes" /* 4826 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
-import RegexUtilsDefault from "RegexUtils" /* 5139 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6210 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 6211 */;
-import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6213 */;
-import EmojiTermsDefault from "EmojiTerms" /* 6214 */;
-import IAPEligibility from "IAPEligibility" /* 6246 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4835 */;
+import EmojiTypes from "EmojiTypes" /* 4862 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import RegexUtilsDefault from "RegexUtils" /* 5176 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6247 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 6248 */;
+import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6250 */;
+import EmojiTermsDefault from "EmojiTerms" /* 6251 */;
+import IAPEligibility from "IAPEligibility" /* 6283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5075 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 6207 */;
+import ExperimentStore from "ExperimentStore" /* 5112 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 6244 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 2070 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SortedGuildStore from "SortedGuildStore" /* 6182 */;
+import SortedGuildStore from "SortedGuildStore" /* 6219 */;
 import UserStore from "UserStore" /* 1392 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6208 */;
-import TopEmojiStore from "TopEmojiStore" /* 6209 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6245 */;
+import TopEmojiStore from "TopEmojiStore" /* 6246 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import UnicodeEmojis from "UnicodeEmojis" /* 4823 */;
+import UnicodeEmojis from "UnicodeEmojis" /* 4859 */;
 import SnowflakeUtils from "SnowflakeUtils" /* 11 */;
-import Frecency_mod from "Frecency" /* 5191 */;
+import Frecency_mod from "Frecency" /* 5228 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -1094,7 +1094,7 @@ class EmojiStore extends PersistedStore {
     let closure_2;
     let closure_0 = intention;
     let formatted = query.toLowerCase();
-    obj = formatted(5139);
+    obj = formatted(5176);
     const escapeResult = obj.escape(formatted);
     let orderByResult = locked;
     const tmp2 = formatted;
@@ -1560,8 +1560,8 @@ let obj7 = {
     const guildId = topEmojisMetadata.guildId;
     obj = { emojiIds: topEmojisMetadata.map((emojiId) => emojiId.emojiId), topEmojisTTL: addResult.valueOf() };
     set = map.set;
-    const tmp = _modDef4761;
-    const tmpResult = tmp(_modDef4761());
+    const tmp = _modDef4797;
+    const tmpResult = tmp(_modDef4797());
     addResult = tmpResult.add(1, "days");
     const result = set(guildId, obj);
   },

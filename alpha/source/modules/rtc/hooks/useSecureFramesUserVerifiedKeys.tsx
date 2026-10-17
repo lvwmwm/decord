@@ -1,12 +1,12 @@
-// Module ID: 16892
-// Function ID: 16893
+// Module ID: 16952
+// Function ID: 16953
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [32, 9039, 558, 576, 12, 504, 2]
+// Dependencies: [32, 9085, 558, 576, 12, 504, 2]
 
-// Module 16892 (useSecureFramesUserVerifiedKeys)
+// Module 16952 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9039 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

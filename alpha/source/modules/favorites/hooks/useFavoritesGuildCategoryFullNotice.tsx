@@ -1,16 +1,16 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17233
+// Function ID: 17234
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [2071, 2081, 1087, 558, 576, 504, 10562, 2093, 1128, 3447, 2]
+// Dependencies: [2071, 2081, 1087, 558, 576, 504, 10625, 2093, 1128, 3465, 2]
 
-// Module 17173 (useFavoritesGuildCategoryFullNotice)
+// Module 17233 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import FavoritesConstants from "FavoritesConstants" /* 2081 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import _modDef3447 from "module_3447" /* 3447 */;
-import FavoritesHooks from "FavoritesHooks" /* 10562 */;
+import _modDef3465 from "module_3465" /* 3465 */;
+import FavoritesHooks from "FavoritesHooks" /* 10625 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
               let tmp14;
               const _Symbol = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { label: intl.string(_modDef3447.WsUrMD), tooltip: intl2.string(_modDef3447.dW9Kov) };
+                const obj2 = { label: intl.string(_modDef3465.WsUrMD), tooltip: intl2.string(_modDef3465.dW9Kov) };
                 intl = tmp(1128).intl;
                 intl2 = tmp(1128).intl;
                 cResult[2] = obj2;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3447.WsUrMD), tooltip: intl2.string(_modDef3447.dW9Kov) };
+              const obj2 = { label: intl.string(_modDef3465.WsUrMD), tooltip: intl2.string(_modDef3465.dW9Kov) };
               intl = tmp(1128).intl;
               intl2 = tmp(1128).intl;
               tmp6 = obj2;

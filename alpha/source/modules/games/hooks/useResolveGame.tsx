@@ -1,17 +1,17 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9155
+// Function ID: 9156
 // Name: useResolveGame
-// Dependencies: [19, 558, 576, 7081, 7233, 2]
+// Dependencies: [19, 558, 576, 7134, 7285, 2]
 
-// Module 9109 (useResolveGame)
+// Module 9155 (useResolveGame)
 import react2 from "react" /* 576 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7081 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7134 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useGame = tmp(7233);
+const useGame = tmp(7285);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolveGame(arg0) {
   let applicationId;
   let data;

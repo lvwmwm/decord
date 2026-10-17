@@ -1,9 +1,9 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9426
+// Function ID: 9427
 // Name: localized_string
 // Dependencies: [32, 1212, 2]
 
-// Module 9362 (localized_string)
+// Module 9426 (localized_string)
 import _mod1212 from "module_1212" /* 1212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -17,14 +17,14 @@ class LocalizedString$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.common.v1.LocalizedString", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { default: "", localizations: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -151,14 +151,14 @@ class LocalizedSnowflake$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.common.v1.LocalizedSnowflake", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { default: "0", localizations: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

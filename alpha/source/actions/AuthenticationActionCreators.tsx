@@ -1,25 +1,25 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 6186
+// Function ID: 6187
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 6150, 502, 6151, 1087, 6152, 3, 5149, 584, 5036, 1114, 6153, 6157, 1275, 1297, 5854, 6158, 6159, 510, 1113, 2]
+// Dependencies: [5, 6187, 502, 6188, 1087, 6189, 3, 5186, 584, 5073, 1114, 6190, 6194, 1275, 1297, 5891, 6195, 6196, 510, 1113, 2]
 
-// Module 6149 (AuthenticationActionCreators)
+// Module 6186 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import RootNavigationRef from "RootNavigationRef" /* 5036 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5149 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5854 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6150 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6153 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6157 */;
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5186 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5891 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6187 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6151 */;
+import ConsentStore from "ConsentStore" /* 6188 */;
 import Constants from "Constants" /* 1087 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6152 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6189 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f93482 = (error) => {
+const f93721 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
@@ -52,7 +52,7 @@ function handleLogout(source, Routes) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f93482);
+  dispatchResult.catch(f93721);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -168,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f93482);
+            dispatchResult.catch(f93721);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -234,7 +234,7 @@ let obj2 = {
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let tmp = dependencyMap;
-    const tmp2 = self(6157);
+    const tmp2 = self(6194);
     const request = { url: closure_9.LOGIN_MFA(mfaType), body, retries: 2, oldFormErrors: true, trackedActionData: obj2, rejectWithError: true };
     const post = tmp2.post;
     body = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: loginInstanceId };
@@ -431,7 +431,7 @@ let obj2 = {
     let self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    obj = self(6157);
+    obj = self(6194);
     const request = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: obj2, rejectWithError: true };
     obj2 = { event: isMultiAccount(1275).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     const postResult = obj.post(request);
@@ -623,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f93482);
+    dispatchResult.catch(f93721);
   },
   logout(TTI_test, LOGIN) {
     let Storage;
@@ -640,7 +640,7 @@ let obj2 = {
     }
     importAll = arg2;
     let tmp2 = dependencyMap;
-    const tmp3 = DEFAULT_LOGGED_OUT(6157);
+    const tmp3 = DEFAULT_LOGGED_OUT(6194);
     const request = { url: closure_9.LOGOUT, body, oldFormErrors: true, trackedActionData: { event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_LOGOUT, properties: { logout_source: TTI_test } }, rejectWithError: tmp4Result.rejectWithMigratedError() };
     body = { provider: closure_15(), token: Storage.get(closure_10), voip_provider, voip_token: Storage2.get(closure_11) };
     const post = tmp3.post;
@@ -686,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f93482);
+    dispatchResult.catch(f93721);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -1054,6 +1054,7 @@ let obj2 = {
       obj = { url: React4.AUTH_LOCATION_METADATA, retries: 2, oldFormErrors: true, rejectWithError: true };
       const value = HTTP.get(obj);
       nextPromise = value.then((body) => {
+        let minimum_age;
         clearTimeout(closure_1_4);
         if (null == authenticationConsentRequired.getAuthenticationConsentRequired()) {
           let flag;
@@ -1079,19 +1080,27 @@ let obj2 = {
             country_code = body2.country_code;
           }
         }
-        dispatch({ type: "SET_LOCATION_METADATA", countryCode: country_code });
-        c17 = null;
-        let prop;
+        const obj3 = { type: "SET_LOCATION_METADATA", countryCode: country_code, minimumAge: minimum_age };
+        minimum_age = undefined;
         if (body != null) {
           const body3 = body.body;
           if (body3 != null) {
-            prop = body3.promotional_email_opt_in;
+            minimum_age = body3.minimum_age;
+          }
+        }
+        dispatch(obj3);
+        c17 = null;
+        let prop;
+        if (body != null) {
+          const body4 = body.body;
+          if (body4 != null) {
+            prop = body4.promotional_email_opt_in;
           }
         }
         if (null != prop) {
-          const obj5 = { required: null, checked: null, preChecked: null };
-          ({ required: obj3.required, pre_checked: obj3.checked, pre_checked: obj3.preChecked } = body.body.promotional_email_opt_in);
-          setPromoEmailConsentState(obj5);
+          const obj7 = { required: null, checked: null, preChecked: null };
+          ({ required: obj4.required, pre_checked: obj4.checked, pre_checked: obj4.preChecked } = body.body.promotional_email_opt_in);
+          setPromoEmailConsentState(obj7);
         }
       }, () => {
         clearTimeout(closure_1_4);

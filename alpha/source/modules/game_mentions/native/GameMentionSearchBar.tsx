@@ -1,20 +1,20 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13060
+// Function ID: 13061
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 5154, 587, 12981, 558, 576, 9450, 5150, 1128, 8809, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 13046, 558, 576, 9514, 5187, 1128, 8855, 2]
 
-// Module 12995 (GameMentionSearchBar)
+// Module 13060 (GameMentionSearchBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import Form from "Form" /* 8809 */;
-import GameControllerIcon from "GameControllerIcon" /* 9450 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 12981 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Form from "Form" /* 8855 */;
+import GameControllerIcon from "GameControllerIcon" /* 9514 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 13046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
-    const Text = tmp(5150).Text;
+    const Text = tmp(5187).Text;
     const tmp10 = _false(Text, obj3);
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[7] !== tmp4.description) {
       const obj4 = { style: description, variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted", children: tmp13 };
-      const Text2 = tmp(5150).Text;
+      const Text2 = tmp(5187).Text;
       const tmp17 = _false(Text2, obj4);
       cResult[7] = tmp4.description;
       cResult[8] = tmp17;

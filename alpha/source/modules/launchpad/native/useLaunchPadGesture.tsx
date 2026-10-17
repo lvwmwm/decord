@@ -1,15 +1,15 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18369
+// Function ID: 18370
 // Name: useLaunchPadGesture
-// Dependencies: [19, 10999, 5035, 1633, 6559, 1384, 12263, 10618, 4909, 5119, 2]
+// Dependencies: [19, 11061, 5072, 1633, 6612, 1384, 12328, 10681, 4945, 5156, 2]
 // Exports: default
 
-// Module 18308 (useLaunchPadGesture)
+// Module 18369 (useLaunchPadGesture)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10618 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10681 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 10999 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11061 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -32,7 +32,6 @@ let closure_17 = { code: "function useLaunchPadGestureTsx6(event){const{gestureS
 let result = size.fileFinishedImporting("modules/launchpad/native/useLaunchPadGesture.tsx");
 
 export default function useLaunchPadGesture(launchPadType) {
-  let __initData6;
   let items;
   launchPadType = launchPadType.launchPadType;
   const launchPadSharedState = launchPadType.launchPadSharedState;
@@ -161,7 +160,7 @@ export default function useLaunchPadGesture(launchPadType) {
           }
         }
       }
-      let obj2 = { gestureState, State: tmp4(6559).State, getWindowDimensionsWorklet: tmp4(12263).getWindowDimensionsWorklet, launchPadType: tmp, LaunchPadTypes: tmp2, LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE, LAUNCH_PAD_PULL_TAB_WIDTH, LAUNCH_PAD_PULL_TAB_HIT_SLOP: metroImportAll, launchPadPullTabState, LAUNCH_PAD_PULL_TAB_HEIGHT: metroImportDefault, updaters, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR, launchPadSharedState, MANUAL_ACTIVATION_THRESHOLD: 3 };
+      let obj2 = { gestureState, State: tmp4(6612).State, getWindowDimensionsWorklet: tmp4(12328).getWindowDimensionsWorklet, launchPadType: tmp, LaunchPadTypes: tmp2, LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE, LAUNCH_PAD_PULL_TAB_WIDTH, LAUNCH_PAD_PULL_TAB_HIT_SLOP: metroImportAll, launchPadPullTabState, LAUNCH_PAD_PULL_TAB_HEIGHT: metroImportDefault, updaters, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR, launchPadSharedState, MANUAL_ACTIVATION_THRESHOLD: 3 };
       X.__closure = obj2;
       X.__workletHash = 6468417986054;
       X.__initData = __initData5;
@@ -215,7 +214,7 @@ export default function useLaunchPadGesture(launchPadType) {
           }
         }
       }
-      let obj3 = { gestureState, getWindowDimensionsWorklet: tmp4(12263).getWindowDimensionsWorklet, POP_RESISTANCE: 0.5, launchPadType: tmp, LaunchPadTypes: tmp2, PIP_POP_DISTANCE: 70, updaters, updateSharedValueIfChanged: updateSharedValueIfChangedDefault, runOnJS: tmp4(4909).runOnJS, triggerHapticFeedback: tmp4(5119).triggerHapticFeedback, HapticFeedbackTypes: tmp4(5119).HapticFeedbackTypes };
+      let obj3 = { gestureState, getWindowDimensionsWorklet: tmp4(12328).getWindowDimensionsWorklet, POP_RESISTANCE: 0.5, launchPadType: tmp, LaunchPadTypes: tmp2, PIP_POP_DISTANCE: 70, updaters, updateSharedValueIfChanged: updateSharedValueIfChangedDefault, runOnJS: tmp4(4945).runOnJS, triggerHapticFeedback: tmp4(5156).triggerHapticFeedback, HapticFeedbackTypes: tmp4(5156).HapticFeedbackTypes };
       I.__closure = obj3;
       I.__workletHash = 3899618169934;
       I.__initData = __initData4;

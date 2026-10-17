@@ -73,7 +73,7 @@ function JsPerformance(smoothingFrames) {
     dependencyMap = tmp6(obj2);
     const items = [sharedValue, tmp5];
     closure_2(() => {
-      const f158578 = (arg0) => {
+      const f158905 = (arg0) => {
         if (closure_1_0 > 0) {
           const _Math2 = Math;
           const current = loop.current;
@@ -99,9 +99,9 @@ function JsPerformance(smoothingFrames) {
       };
       let c0 = 0;
       function loop() {
-        let animationFrame = requestAnimationFrame(f158578);
+        let animationFrame = requestAnimationFrame(f158905);
       }
-      let animationFrame = requestAnimationFrame(f158578);
+      let animationFrame = requestAnimationFrame(f158905);
     }, items);
     const fn = function f() {
       let str = sharedValue.value;

@@ -1,23 +1,23 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11631
+// Function ID: 11632
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2122, 10897, 1087, 21, 5154, 587, 558, 576, 504, 7170, 5118, 1128, 3865, 5150, 7064, 8792, 6963, 6489, 6401, 7122, 11573, 11576, 11578, 7169, 11579, 11580, 10919, 11581, 6404, 2]
+// Dependencies: [5, 32, 19, 17, 2122, 6293, 1087, 21, 5191, 587, 558, 576, 504, 6294, 5155, 1128, 3883, 5187, 7117, 8838, 7016, 6542, 6454, 7175, 11632, 11635, 11637, 7222, 11638, 11639, 10983, 11640, 6457, 2]
 // Exports: default
 
-// Module 11572 (useConjureProjectSettingsForm)
+// Module 11631 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5118 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7170 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -548,13 +548,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let intl = guildId(onSave[15]).intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj2 = { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-  const g5I05P = require("module_3865").g5I05P;
+  const g5I05P = require("module_3883").g5I05P;
   let formatToPlainStringResult = formatToPlainString(g5I05P, obj2);
-  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3865").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3883").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[23]).ActionSheet;
   intl2 = guildId(onSave[15]).intl;
   obj4 = { style: tmp.roleListFooter, children: closure_10(guildId(onSave[17]).Text, { variant: "text-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
-  obj5 = { title: intl3.string(require("module_3865")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
+  obj5 = { title: intl3.string(require("module_3883")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[18]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[15]).intl;
   obj6 = { label: intl4.string(guildId(onSave[15]).t.i4jeWR), onPress: callback };
@@ -618,7 +618,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const intl = guildId(onSave[15]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj4 = { max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-            const prop = require("module_3865")["dH7+/Z"];
+            const prop = require("module_3883")["dH7+/Z"];
             formatToPlainStringResult = formatToPlainString(prop, obj4);
           }
           return closure_1_10(TableCheckboxRow, obj2, children.id);
@@ -711,7 +711,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   [str2, closure_13] = save(obj4.useState(tmp11), 2);
   let num;
   const useState2 = obj4.useState;
-  const tmp14 = save(obj4.useState(tmp11), 2);
+  save(obj4.useState(tmp11), 2);
   if (stateFromStores != null) {
     num = stateFromStores.flags;
   }
@@ -831,8 +831,8 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
       showActionSheet(obj);
     }
   }, items2);
-  const items3 = [flags, tmp33, guild_id, commit, changes, tmp39, save, save2, tmp38, isGuildCollaboration, tmp32, stateFromStores, arg0, tmp35, first2, first1, trimmed];
-  let tmp44 = closure_11;
+  const items3 = [flags, tmp33, guild_id, commit, changes, tmp39, save, save2, tmp32 || tmp33 || tmp35 || tmp7.changed, isGuildCollaboration, tmp32, stateFromStores, arg0, tmp35, first2, first1, trimmed];
+  let tmp45 = changes;
   let obj5 = { style: tmp.content, children: items4 };
   const callback3 = obj4.useCallback(conjureLiveReloadSetting(function*(arg0, value) {
     let closure_2;
@@ -865,10 +865,10 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
             return obj4;
           } else {
             if (null != stateFromStores) {
-              const tmp100 = closure_29;
-              if (tmp100) {
-                const tmp44 = first2;
-                if (!tmp44) {
+              const tmp91 = closure_29;
+              if (tmp91) {
+                const tmp36 = first2;
+                if (!tmp36) {
                   let result = null;
                   if (closure_25) {
                     const obj3 = tmp(stateFromStores[29]);
@@ -884,35 +884,35 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
                     if (closure_25) {
                       obj5.name = trimmed;
                     }
-                    let tmp51 = closure_26;
-                    if (tmp51) {
+                    let tmp43 = closure_26;
+                    if (tmp43) {
                       obj5.flags = flags;
                     }
-                    let tmp53 = closure_27;
-                    if (tmp53) {
+                    let tmp45 = closure_27;
+                    if (tmp45) {
                       const _Array = Array;
                       const arr = Array.from(first1);
                       obj5.collaborator_role_ids = arr.sort();
                     }
-                    let tmp55 = null == tmp99.guild_id && null != guild_id;
-                    if (tmp55) {
-                      if (!tmp53) {
-                        if (tmp51) {
-                          tmp51 = isGuildCollaboration;
+                    let tmp47 = null == tmp90.guild_id && null != guild_id;
+                    if (tmp47) {
+                      if (!tmp45) {
+                        if (tmp43) {
+                          tmp43 = isGuildCollaboration;
                         }
-                        tmp53 = tmp51;
+                        tmp45 = tmp43;
                       }
-                      tmp55 = tmp53;
+                      tmp47 = tmp45;
                     }
-                    if (tmp55) {
+                    if (tmp47) {
                       obj5.guild_id = guild_id;
                     }
                     closure_19(true);
                     closure_21(null);
                     closure_22(null);
                     c3 = 2;
-                    const tmp64 = closure_28;
-                    if (tmp64) {
+                    const tmp56 = closure_28;
+                    if (tmp56) {
                       guild_id = 3;
                       c4 = 1;
                       const obj7 = { value: obj6.updateProjectSettings(tmp, obj5), done: false };
@@ -931,8 +931,8 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
           closure_128_19(false);
           throw stateFromStores;
         } else if (2 === guild_id) {
-          const intl2 = tmp(stateFromStores[15]).intl;
-          closure_128_21(intl2.string(guild_id(stateFromStores[16])["9JPr8h"]));
+          const intl = tmp(stateFromStores[15]).intl;
+          closure_128_21(intl.string(guild_id(stateFromStores[16])["9JPr8h"]));
           c3 = 0;
           closure_128_19(false);
           c4 = 3;
@@ -946,32 +946,25 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
           c4 = 3;
           const obj8 = { value, done: true };
           return obj8;
-        } else if (value.ok) {
+        } else {
           closure_128_11(closure_128_23);
           const obj = { flags: closure_128_14, roleIds: items };
           items = [];
           HermesBuiltin.arraySpread(items, closure_128_16, 0);
           closure_128_12(obj);
           closure_128_7();
-        } else {
-          const intl = tmp(stateFromStores[15]).intl;
-          closure_128_21(intl.string(guild_id(stateFromStores[16])["9JPr8h"]));
-          c3 = 0;
-          closure_128_19(false);
-          c4 = 3;
-          return { value: "project", done: true };
         }
         if (closure_128_4()) {
           let str2 = null;
           if (!closure_128_9()) {
-            const intl4 = tmp(stateFromStores[15]).intl;
-            closure_128_22(intl4.string(guild_id(stateFromStores[16])["9JPr8h"]));
+            const intl3 = tmp(stateFromStores[15]).intl;
+            closure_128_22(intl3.string(guild_id(stateFromStores[16])["9JPr8h"]));
             str2 = "experimental";
           }
           str = str2;
         } else {
-          const intl3 = tmp(stateFromStores[15]).intl;
-          closure_128_21(intl3.string(guild_id(stateFromStores[16]).XzkNBw));
+          const intl2 = tmp(stateFromStores[15]).intl;
+          closure_128_21(intl2.string(guild_id(stateFromStores[16]).XzkNBw));
           str = "project";
         }
         c3 = 0;
@@ -979,12 +972,12 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
         c4 = 3;
         const obj9 = { value: str, done: true };
         return obj9;
-      } catch (tmp90) {
-        stateFromStores = tmp90;
+      } catch (tmp82) {
+        stateFromStores = tmp82;
         if (0 === c3) {
           c4 = 3;
-          throw tmp90;
-        } else if (1 === tmp92) {
+          throw tmp82;
+        } else if (1 === tmp84) {
           guild_id = 1;
         } else {
           guild_id = 2;
@@ -1011,7 +1004,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   items4 = [prop(tmp2(tmp3[31]).ConjureAppIdentitySection, obj6), , , , , ];
   let tmp46Result = null;
   if (result) {
-    let obj7 = { hasIcons: false, children: prop(TableCheckboxRow, obj8) };
+    let obj7 = { hasIcons: false, children: tmp46(TableCheckboxRow, obj8) };
     const TableRowGroup = tmp2(tmp3[21]).TableRowGroup;
     obj8 = {
       label: intl.string(tmp6(tmp3[16]).ujIxRm),
@@ -1032,11 +1025,11 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   if (result) {
     tmp46Result6 = null;
     if (tmp29) {
-      let obj9 = { hasIcons: false, children: prop(TableCheckboxRow2, obj10) };
+      let obj9 = { hasIcons: false, children: tmp46(TableCheckboxRow2, obj10) };
       const TableRowGroup2 = tmp2(tmp3[21]).TableRowGroup;
       obj10 = {
-        label: intl3.string(require("module_3865").lVvR4E),
-        subLabel: intl4.string(require("module_3865").SQZGoV),
+        label: intl3.string(require("module_3883").lVvR4E),
+        subLabel: intl4.string(require("module_3883").SQZGoV),
         checked: isGuildCollaboration,
         disabled: first2,
         onPress(arg0) {
@@ -1055,7 +1048,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
     const obj11 = { hasIcons: false, children: prop(TableCheckboxRow3, obj12) };
     const TableRowGroup3 = tmp2(tmp3[21]).TableRowGroup;
     obj12 = {
-      label: intl5.string(require("module_3865").eEo0ye),
+      label: intl5.string(require("module_3883").eEo0ye),
       subLabel: null,
       checked: null,
       disabled: first2,
@@ -1073,7 +1066,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   let tmp46Result8 = null;
   if (result1) {
     const TableRowGroup4 = tmp2(tmp3[21]).TableRowGroup;
-    const obj13 = { label: intl6.string(require("module_3865")["pO3+p5"]), subLabel: intl7.string(require("module_3865")["9MdtK9"]), arrow: true, disabled: first2 || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback2 };
+    const obj13 = { label: intl6.string(require("module_3883")["pO3+p5"]), subLabel: intl7.string(require("module_3883")["9MdtK9"]), arrow: true, disabled: first2 || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback2 };
     const TableRow = tmp2(tmp3[32]).TableRow;
     intl6 = tmp2(tmp3[15]).intl;
     intl7 = tmp2(tmp3[15]).intl;
@@ -1093,13 +1086,13 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
     tmp46Result9 = tmp46(tmp45, obj16);
   }
   items4[5] = tmp46Result9;
-  const obj18 = { fields: tmp44(changes, obj5), experimentalFields: tmp44(changes, obj19), canSave: tmp39, saving: first2, submit: callback3 };
+  const obj18 = { fields: closure_11(tmp45, obj5), experimentalFields: closure_11(tmp45, obj19), canSave: tmp39, saving: first2, submit: callback3 };
   obj19 = { style: tmp.content, children: items5 };
   const obj20 = { hasIcons: false, children: prop(TableCheckboxRow4, obj21) };
   const TableRowGroup5 = tmp2(tmp3[21]).TableRowGroup;
   obj21 = {
-    label: intl9.string(require("module_3865")["4liZ45"]),
-    subLabel: intl10.string(require("module_3865").I5cl7p),
+    label: intl9.string(require("module_3883")["4liZ45"]),
+    subLabel: intl10.string(require("module_3883").I5cl7p),
     checked: conjureSmartContextSetting.checked,
     disabled: first2,
     onPress(arg0) {
@@ -1110,7 +1103,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   TableCheckboxRow4 = tmp2(tmp3[22]).TableCheckboxRow;
   intl9 = tmp2(tmp3[15]).intl;
   intl10 = tmp2(tmp3[15]).intl;
-  items5 = [prop(TableRowGroup5, obj20), ];
+  items5 = [tmp46(TableRowGroup5, obj20), ];
   let tmp46Result10 = null;
   if (null != tmp26) {
     const obj22 = { accessibilityRole: "alert", children: prop(tmp2(stateFromStores[17]).Text, obj23) };

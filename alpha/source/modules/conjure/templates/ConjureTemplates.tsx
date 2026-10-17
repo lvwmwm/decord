@@ -1,13 +1,13 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11601
+// Function ID: 11602
 // Name: ConjureTemplates
-// Dependencies: [10898, 1128, 3865, 2]
+// Dependencies: [10962, 1128, 3883, 2]
 // Exports: conjureTemplates, startConjureTemplateProject, templateImportMessage
 
-// Module 11542 (ConjureTemplates)
+// Module 11601 (ConjureTemplates)
 import intl7 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10898 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
 import size from "module_2" /* 2 */;
 
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;
@@ -21,15 +21,15 @@ export const conjureTemplates = function conjureTemplates() {
   let intl4;
   let intl5;
   let intl6;
-  const obj = { id: "moderation-bot", name: intl.string(_modDef3865.lGLnE8), description: intl2.string(_modDef3865["pAC6k/"]), wizard: true };
+  const obj = { id: "moderation-bot", name: intl.string(_modDef3883.lGLnE8), description: intl2.string(_modDef3883["pAC6k/"]), wizard: true };
   intl = intl7.intl;
   intl2 = intl7.intl;
   const items = [obj, , ];
-  const obj2 = { id: "feature-showcase", name: intl3.string(_modDef3865.uJKQTs), description: intl4.string(_modDef3865["+dKy/B"]) };
+  const obj2 = { id: "feature-showcase", name: intl3.string(_modDef3883.uJKQTs), description: intl4.string(_modDef3883["+dKy/B"]) };
   intl3 = intl7.intl;
   intl4 = intl7.intl;
   items[1] = obj2;
-  const obj3 = { id: "rust-sphere", name: intl5.string(_modDef3865.iF5Oru), description: intl6.string(_modDef3865.NbDDO6) };
+  const obj3 = { id: "rust-sphere", name: intl5.string(_modDef3883.iF5Oru), description: intl6.string(_modDef3883.NbDDO6) };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
   items[2] = obj3;
@@ -38,11 +38,11 @@ export const conjureTemplates = function conjureTemplates() {
 export const templateImportMessage = function templateImportMessage(templateName) {
   const intl = intl7.intl;
   const obj = { templateName };
-  return intl.formatToPlainString(_modDef3865["0PQip6"], obj);
+  return intl.formatToPlainString(_modDef3883["0PQip6"], obj);
 };
 export const startConjureTemplateProject = function startConjureTemplateProject(arg0, name) {
   name = name.name;
   const intl = intl7.intl;
   const obj = { templateId: name.id };
-  sendUserMessage(arg0, intl.formatToPlainString(_modDef3865["0PQip6"], { templateName: name }), undefined, obj);
+  sendUserMessage(arg0, intl.formatToPlainString(_modDef3883["0PQip6"], { templateName: name }), undefined, obj);
 };

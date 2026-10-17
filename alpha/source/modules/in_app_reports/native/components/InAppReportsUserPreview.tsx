@@ -1,20 +1,20 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14338
+// Function ID: 14339
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 6887, 5026, 1128, 5150, 1202, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6940, 5063, 1128, 5187, 1202, 2]
 
-// Module 14270 (InAppReportsUserPreview)
+// Module 14338 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import ColorUtils from "ColorUtils" /* 5026 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6887 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             let tmp22 = null != user.globalName;
             if (tmp22) {
               const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-              tmp22 = _false(tmp(5150).Text, obj5);
+              tmp22 = _false(tmp(5187).Text, obj5);
             }
             cResult[18] = user.globalName;
             cResult[19] = tmp22;
@@ -242,7 +242,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   const obj7 = { style: tmp.userProfileInfo, children: items4 };
   if (tmp8Result) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp8Result = tmp8(tmp2(5150).Text, obj8);
+    tmp8Result = tmp8(tmp2(5187).Text, obj8);
   }
   items4 = [tmp8Result, ];
   const obj9 = { color: "text-default", variant: "text-sm/normal", children: user.username };

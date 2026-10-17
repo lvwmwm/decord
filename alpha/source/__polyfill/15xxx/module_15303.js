@@ -1,18 +1,7 @@
 // Module ID: 15303
 // Function ID: 15304
-// Dependencies: [15276]
+// Dependencies: []
 
 // Module 15303
-import _mod15276 from "module_15276" /* 15276 */;
 
-
-export default function(arg0) {
-  if (_mod15276(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

@@ -1,21 +1,21 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14895
+// Function ID: 14896
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 5154, 558, 576, 1128, 9465, 5091, 1417, 5150, 14825, 5442, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 1128, 9529, 5128, 1417, 5187, 14894, 5479, 2]
 
-// Module 14826 (ActivateDeviceSuccess)
+// Module 14895 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import components_Button_Button from "components/Button/Button" /* 5442 */;
-import scopes2 from "scopes" /* 9465 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14825 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import scopes2 from "scopes" /* 9529 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14894 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
     const _Symbol3 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl3.string(intl5.t.qDtJmD) };
-      const Text = tmp(5150).Text;
+      const Text = tmp(5187).Text;
       intl3 = tmp(1128).intl;
       const tmp21 = React3(Text, obj2);
       cResult[5] = tmp21;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
       let tmp23 = null;
       if (null != tmp8) {
         const obj3 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: tmp8 };
-        const Text2 = tmp(5150).Text;
+        const Text2 = tmp(5187).Text;
         tmp23 = React3(Text2, obj3);
       }
       cResult[6] = tmp8;
@@ -204,14 +204,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   const tmp15 = View;
   if (null != stringResult) {
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    const Text2 = tmp19(5150).Text;
+    const Text2 = tmp19(5187).Text;
     tmp18Result = tmp18(Text2, obj5);
   }
   const obj6 = { children: items };
   items1[1] = tmp18Result;
   items[1] = hasOwnProperty(tmp15, obj3);
   const obj7 = { size: "lg", text: intl4.string(intl5.t.cpT0Cq), onPress: onComplete, grow: true };
-  const Button = tmp19(5442).Button;
+  const Button = tmp19(5479).Button;
   intl4 = tmp19(1128).intl;
   items[2] = React3(Button, obj7);
   return hasOwnProperty(tmp8, obj6);

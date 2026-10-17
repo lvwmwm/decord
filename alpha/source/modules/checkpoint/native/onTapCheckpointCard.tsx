@@ -1,14 +1,14 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12722
+// Function ID: 12723
 // Name: onTapCheckpointCard
-// Dependencies: [2068, 1087, 5523, 1267, 5169, 12658, 2]
+// Dependencies: [2068, 1087, 5560, 1267, 5206, 12723, 2]
 // Exports: onTapCheckpointCard
 
-// Module 12657 (onTapCheckpointCard)
+// Module 12722 (onTapCheckpointCard)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 5523 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 5560 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
@@ -37,6 +37,6 @@ export const onTapCheckpointCard = function onTapCheckpointCard(arg0) {
     }
     const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
     track(CHECKPOINT_CARD_CLICKED, obj2);
-    tmp5(12658)("message_component");
+    tmp5(12723)("message_component");
   }
 };

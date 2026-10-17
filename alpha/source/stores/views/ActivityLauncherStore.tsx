@@ -1,13 +1,13 @@
-// Module ID: 10892
-// Function ID: 10893
+// Module ID: 10957
+// Function ID: 10958
 // Name: ActivityLauncherStore
-// Dependencies: [10893, 5978, 1087, 2063, 584, 504, 2]
+// Dependencies: [10958, 6015, 1087, 2063, 584, 504, 2]
 
-// Module 10892 (ActivityLauncherStore)
+// Module 10957 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LocalActivityStore from "LocalActivityStore" /* 10893 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5978 */;
+import LocalActivityStore from "LocalActivityStore" /* 10958 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f106780 = () => {
+  const f107115 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -49,7 +49,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       const self3 = this;
       const self4 = this;
       const timeout = new applicationId(2063).Timeout();
-      timeout.start(tmp10, f106780);
+      timeout.start(tmp10, f107115);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -64,7 +64,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       const self = this;
       const self2 = this;
       const timeout1 = new applicationId(2063).Timeout();
-      timeout1.start(num, f106780);
+      timeout1.start(num, f107115);
       closure_8[applicationId] = timeout1;
     }
   }
@@ -153,6 +153,9 @@ obj = {
   },
   ACTIVITY_JOIN_LOADING(type) {
     return handleActivityStateChanged(hasOwnProperty.LOADING, metroRequire.JOIN, type);
+  },
+  ACTIVITY_JOIN_NAVIGATION_COMPLETE(type) {
+    return handleActivityStateChanged(hasOwnProperty.COMPLETE, metroRequire.JOIN, type);
   },
   ACTIVITY_JOIN_FAILED(type) {
     return handleActivityStateChanged(hasOwnProperty.FAILED, metroRequire.JOIN, type);

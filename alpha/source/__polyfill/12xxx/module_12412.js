@@ -1,73 +1,158 @@
 // Module ID: 12412
 // Function ID: 12413
-// Dependencies: [12331, 12352, 12377]
-// Exports: getCurrentHub, getCurrentHubShim
+// Dependencies: [12368, 12369, 12413, 12416, 12405, 12374]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12412
-import _mod12331 from "module_12331" /* 12331 */;
-import _mod12352 from "module_12352" /* 12352 */;
-import _mod12377 from "module_12377" /* 12377 */;
+import _mod12374 from "module_12374" /* 12374 */;
+import _mod12413 from "module_12413" /* 12413 */;
+import _mod12416 from "module_12416" /* 12416 */;
+import DEBUG_BUILD from "module_12368" /* 12368 */;
+import CONSOLE_LEVELS from "module_12369" /* 12369 */;
 
-function getCurrentHubShim() {
-  let obj = {
-    bindClient(arg0) {
-      const obj = _mod12331;
-      const currentScope = obj.getCurrentScope();
-      currentScope.setClient(arg0);
-    },
-    withScope: _mod12331.withScope,
-    getClient() {
-      const obj = _mod12331;
-      return obj.getClient();
-    },
-    getScope: _mod12331.getCurrentScope,
-    getIsolationScope: _mod12331.getIsolationScope,
-    captureException(arg0, arg1) {
-      const obj = _mod12331;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureException(arg0, arg1);
-    },
-    captureMessage(arg0, arg1, arg2) {
-      const obj = _mod12331;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureMessage(arg0, arg1, arg2);
-    },
-    captureEvent: _mod12352.captureEvent,
-    addBreadcrumb: _mod12377.addBreadcrumb,
-    setUser: _mod12352.setUser,
-    setTags: _mod12352.setTags,
-    setTag: _mod12352.setTag,
-    setExtra: _mod12352.setExtra,
-    setExtras: _mod12352.setExtras,
-    setContext: _mod12352.setContext,
-    getIntegration(id) {
-      const obj = _mod12331;
-      const client = obj.getClient();
-      const integrationByName = client && client.getIntegrationByName(id.id) || null;
-      return integrationByName;
-    },
-    startSession: _mod12352.startSession,
-    endSession: _mod12352.endSession,
-    captureSession(arg0) {
-      const tmp3 = arg0;
-      if (tmp3) {
-        const tmpResult = _mod12352;
-        return tmpResult.endSession();
-      } else {
-        const tmpResult3 = _mod12331;
-        const currentScope = tmpResult3.getCurrentScope();
-        const tmpResult4 = _mod12331;
-        const client = tmpResult4.getClient();
-        const session = currentScope.getSession();
-        const tmp5 = client && session;
-        if (tmp5) {
-          client.captureSession(session);
-        }
-      }
+const require = globalThis.__r;
+let _require, integrations;
+
+
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12413;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
-  };
-  return obj;
-}
-
-export const getCurrentHub = getCurrentHubShim;
-export { getCurrentHubShim };
+  }
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
+    }
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
+    }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
+    }
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
+  }
+  const tmp3Result = _mod12413;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12413;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+};
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12413;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+  }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12416;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
+  }
+  const items2 = [items1];
+  const tmpResult2 = _mod12413;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12405");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12416);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12374;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12374;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12413");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12413");
+  return obj8.createEnvelope(obj2, items);
+};

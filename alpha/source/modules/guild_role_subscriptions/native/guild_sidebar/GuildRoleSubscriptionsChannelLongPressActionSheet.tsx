@@ -1,23 +1,23 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17330
+// Function ID: 17331
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2075, 21, 5154, 587, 558, 576, 1202, 13436, 1128, 7064, 17164, 8809, 10580, 7122, 2]
+// Dependencies: [19, 17, 2075, 21, 5191, 587, 558, 576, 1202, 13502, 1128, 7117, 17224, 8855, 10643, 7175, 2]
 
-// Module 17270 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 17330 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7064 */;
-import ActionSheet2 from "ActionSheet" /* 7122 */;
-import Form from "Form" /* 8809 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10580 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13436 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17164 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
+import ActionSheet2 from "ActionSheet" /* 7175 */;
+import Form from "Form" /* 8855 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10643 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13502 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17224 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(13436) };
+    const obj2 = { disableColor: true, source: onClose(13502) };
     const Icon = tmp(1202).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[4] !== tmp9) {
     const obj4 = { leading: tmp9, title: tmp13 };
-    const tmp17 = closure_5(guildId(7064).BottomSheetTitleHeader, obj4);
+    const tmp17 = closure_5(guildId(7117).BottomSheetTitleHeader, obj4);
     cResult[4] = tmp9;
     cResult[5] = tmp17;
     tmp15 = tmp17;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(17164) };
+    const obj5 = { source: onClose(17224) };
     const Icon2 = tmp(1202).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { text: intl2.string(guildId(1128).t.WqhZss) };
-    const FormLabel = tmp(8809).FormLabel;
+    const FormLabel = tmp(8855).FormLabel;
     intl2 = tmp(1128).intl;
     const tmp24 = closure_5(FormLabel, obj6);
     cResult[7] = tmp24;
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const obj7 = { children: items };
     items = [tmp15, tmp25];
-    const tmp29 = closure_6(guildId(7122).ActionSheet, obj7);
+    const tmp29 = closure_6(guildId(7175).ActionSheet, obj7);
     cResult[11] = tmp15;
     cResult[12] = tmp25;
     cResult[13] = tmp29;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const tmp26 = closure_5(guildId(8809).FormRow, obj8);
+  const tmp26 = closure_5(guildId(8855).FormRow, obj8);
   cResult[8] = guildId;
   cResult[9] = onClose;
   cResult[10] = tmp26;

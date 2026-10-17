@@ -1,27 +1,27 @@
-// Module ID: 18791
-// Function ID: 18792
+// Module ID: 18853
+// Function ID: 18854
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2090, 4809, 8865, 1087, 21, 5154, 587, 9990, 1128, 5150, 9799, 5108, 558, 576, 1505, 504, 8864, 18792, 18796, 4867, 5091, 2131, 5442, 6952, 2]
+// Dependencies: [19, 17, 2090, 4845, 8911, 1087, 21, 5191, 587, 10054, 1128, 5187, 9863, 5145, 558, 576, 1505, 504, 8910, 18854, 18858, 4903, 5128, 2131, 5479, 7005, 2]
 
-// Module 18791 (GuildSettingsModalCommunityIntro)
+// Module 18853 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import ToastUtils from "ToastUtils" /* 4867 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5108 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8864 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9799 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 9990 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18796 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5145 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9863 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 10054 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18858 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8865 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,43 +1,56 @@
 // Module ID: 12411
 // Function ID: 12412
-// Dependencies: [12331, 12310]
-// Exports: captureFeedback
+// Dependencies: [12374, 12397, 12369, 12384]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12411
-import _mod12310 from "module_12310" /* 12310 */;
-import _mod12331 from "module_12331" /* 12331 */;
+import _mod12374 from "module_12374" /* 12374 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12384 */;
+import _mod12397 from "module_12397" /* 12397 */;
 
 
-export const captureFeedback = function captureFeedback(arg0) {
-  let associatedEventId;
-  let email;
-  let message;
-  let name;
-  let obj4;
-  let obj6;
-  let source;
-  let tags;
-  let url;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
+  if (arg3 === undefined) {
+    const obj = _mod12374;
+    activeSpan = obj.getActiveSpan();
   }
-  let currentScope = arg2;
-  if (arg2 === undefined) {
-    const obj3 = _mod12331;
-    currentScope = obj3.getCurrentScope();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod12374;
+    rootSpan = obj3.getRootSpan(activeSpan);
   }
-  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
-  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
-  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
-  obj6 = _mod12310;
-  let client = currentScope && currentScope.getClient();
-  if (!client) {
-    const tmp3Result = _mod12331;
-    client = tmp3Result.getClient();
+  if (rootSpan) {
+    if (_mod12397.DEBUG_BUILD) {
+      const logger = tmp9(12369).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+    }
+    const obj2 = {};
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
   }
-  if (client) {
-    client.emit("beforeSendFeedback", obj2, obj);
+};
+export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
+        }
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
+      });
+      return obj;
+    }
   }
-  return currentScope.captureEvent(obj2, obj);
 };

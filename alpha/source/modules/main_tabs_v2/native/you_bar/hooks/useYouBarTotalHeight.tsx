@@ -1,12 +1,12 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16138
+// Function ID: 16139
 // Name: useYouBarTotalHeight
-// Dependencies: [16070, 558, 16069, 16073, 2]
+// Dependencies: [16136, 558, 16135, 16139, 2]
 
-// Module 16072 (useYouBarTotalHeight)
-import useYouBarMargins from "useYouBarMargins" /* 16069 */;
-import YouBarConstants from "YouBarConstants" /* 16070 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 16073 */;
+// Module 16138 (useYouBarTotalHeight)
+import useYouBarMargins from "useYouBarMargins" /* 16135 */;
+import YouBarConstants from "YouBarConstants" /* 16136 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 16139 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17310
+// Function ID: 17311
 // Name: useLiveStageChannels
-// Dependencies: [2068, 4809, 2073, 2076, 558, 576, 1388, 504, 11, 2]
+// Dependencies: [2068, 4845, 2073, 2076, 558, 576, 1388, 504, 11, 2]
 // Exports: getAllLiveStageChannels
 
-// Module 17250 (useLiveStageChannels)
+// Module 17310 (useLiveStageChannels)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

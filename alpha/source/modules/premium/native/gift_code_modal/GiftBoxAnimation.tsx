@@ -1,17 +1,17 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 10939
+// Function ID: 10940
 // Name: GiftBoxAnimation
-// Dependencies: [19, 5144, 1394, 21, 558, 576, 504, 10875, 10876, 10877, 10431, 10440, 10437, 10434, 10443, 10446, 10449, 10452, 5964, 6332, 2]
+// Dependencies: [19, 5181, 1394, 21, 558, 576, 504, 10940, 10941, 10942, 10494, 10503, 10500, 10497, 10506, 10509, 10512, 10515, 6001, 6385, 2]
 
-// Module 10874 (GiftBoxAnimation)
+// Module 10939 (GiftBoxAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import merged5 from "merged5" /* 5964 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 6332 */;
+import merged5 from "merged5" /* 6001 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 6385 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
         cResult[4] = A;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
       }
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
         cResult[5] = tmp12;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
       }
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
         cResult[6] = tmp14;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class A {
           constructor() {
-            return require("module_10875");
+            return require("module_10940");
           }
         }
       }
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         class E {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
         cResult[7] = E;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class E {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
       }
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
         class E {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
         cResult[8] = tmp17;
@@ -131,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class E {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
       }
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
         cResult[9] = O;
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
       }
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
         cResult[10] = tmp20;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
       }
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
         cResult[11] = tmp22;
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class O {
           constructor() {
-            return require("module_10437");
+            return require("module_10500");
           }
         }
       }
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         class C {
           constructor() {
-            return require("module_10446");
+            return require("module_10509");
           }
         }
         cResult[12] = C;
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class C {
           constructor() {
-            return require("module_10446");
+            return require("module_10509");
           }
         }
       }
@@ -203,7 +203,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         class N {
           constructor() {
-            return require("module_10449");
+            return require("module_10512");
           }
         }
         cResult[13] = N;
@@ -211,7 +211,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class N {
           constructor() {
-            return require("module_10449");
+            return require("module_10512");
           }
         }
       }
@@ -219,7 +219,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
         class B {
           constructor() {
-            return require("module_10452");
+            return require("module_10515");
           }
         }
         cResult[14] = B;
@@ -227,7 +227,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class B {
           constructor() {
-            return require("module_10452");
+            return require("module_10515");
           }
         }
       }
@@ -235,7 +235,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         class F {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
         cResult[15] = F;
@@ -243,7 +243,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
       } else {
         class F {
           constructor() {
-            return require("module_10431");
+            return require("module_10494");
           }
         }
       }
@@ -266,7 +266,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
     } else {
       class F {
         constructor() {
-          return require("module_10431");
+          return require("module_10494");
         }
       }
     }
@@ -274,7 +274,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
       class F {
         constructor() {
-          return require("module_10431");
+          return require("module_10494");
         }
       }
       cResult[16] = tmp31;
@@ -282,14 +282,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
     } else {
       class F {
         constructor() {
-          return require("module_10431");
+          return require("module_10494");
         }
       }
     }
     if (cResult[17] === tmp9) {
       class F {
         constructor() {
-          return require("module_10431");
+          return require("module_10494");
         }
       }
       return tmp32;
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
   }
 }) : (function GiftBoxAnimation(giftStyle) {
   let useReducedMotion;
-  const f106754 = () => require("module_10431");
+  const f107089 = () => require("module_10494");
   giftStyle = giftStyle.giftStyle;
   get_initialized;
   [][0] = AccessibilityStore;
@@ -311,19 +311,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBoxAni
   } else {
     const str = merged5;
     const match = str.match(giftStyle);
-    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => require("module_10875"));
-    const withResult1 = withResult.with(PremiumGiftStyles.BOX, () => require("module_10876"));
-    const withResult2 = withResult1.with(PremiumGiftStyles.CUP, () => require("module_10877"));
-    const withResult3 = withResult2.with(PremiumGiftStyles.STANDARD_BOX, () => require("module_10431"));
-    const withResult4 = withResult3.with(PremiumGiftStyles.COFFEE, () => require("module_10440"));
-    const withResult5 = withResult4.with(PremiumGiftStyles.CHEST, () => require("module_10437"));
-    const withResult6 = withResult5.with(PremiumGiftStyles.CAKE, () => require("module_10434"));
-    const withResult7 = withResult6.with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => require("module_10443"));
-    const withResult8 = withResult7.with(PremiumGiftStyles.SEASONAL_CAKE, () => require("module_10446"));
-    const withResult9 = withResult8.with(PremiumGiftStyles.SEASONAL_CHEST, () => require("module_10449"));
-    const withResult10 = withResult9.with(PremiumGiftStyles.SEASONAL_COFFEE, () => require("module_10452"));
-    withResult10.otherwise(f106754);
-    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f106754), autoPlay: !tmp4, style: { width: 320, height: 212 } });
+    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => require("module_10940"));
+    const withResult1 = withResult.with(PremiumGiftStyles.BOX, () => require("module_10941"));
+    const withResult2 = withResult1.with(PremiumGiftStyles.CUP, () => require("module_10942"));
+    const withResult3 = withResult2.with(PremiumGiftStyles.STANDARD_BOX, () => require("module_10494"));
+    const withResult4 = withResult3.with(PremiumGiftStyles.COFFEE, () => require("module_10503"));
+    const withResult5 = withResult4.with(PremiumGiftStyles.CHEST, () => require("module_10500"));
+    const withResult6 = withResult5.with(PremiumGiftStyles.CAKE, () => require("module_10497"));
+    const withResult7 = withResult6.with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => require("module_10506"));
+    const withResult8 = withResult7.with(PremiumGiftStyles.SEASONAL_CAKE, () => require("module_10509"));
+    const withResult9 = withResult8.with(PremiumGiftStyles.SEASONAL_CHEST, () => require("module_10512"));
+    const withResult10 = withResult9.with(PremiumGiftStyles.SEASONAL_COFFEE, () => require("module_10515"));
+    withResult10.otherwise(f107089);
+    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f107089), autoPlay: !tmp4, style: { width: 320, height: 212 } });
   }
 });
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftBoxAnimation.tsx");

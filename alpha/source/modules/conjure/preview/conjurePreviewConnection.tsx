@@ -1,21 +1,22 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10993
+// Function ID: 10994
 // Name: conjurePreviewConnection
-// Dependencies: [5, 10930, 10974, 10955, 584, 10916, 10919, 10975, 10918, 10981, 10984, 10985, 2]
+// Dependencies: [5, 10994, 10996, 11035, 11016, 584, 10980, 10983, 11036, 10982, 11041, 11044, 11045, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 10929 (conjurePreviewConnection)
+// Module 10993 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10916 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10918 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10930 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10955 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10974 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10975 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10981 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10984 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10985 */;
+import conjureChatConnection from "conjureChatConnection" /* 10980 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10982 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10994 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10996 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11016 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 11035 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11036 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 11041 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11044 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -366,7 +367,7 @@ obj = function _relayCaptureRequest() {
                 let c1;
                 let v3;
                 closure_2_1.sendCaptureAck(user.id, "accepted");
-                const obj3 = c0(closure_1_2[2]);
+                const obj3 = c0(closure_1_2[3]);
                 await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                 return arg1;
               });
@@ -464,7 +465,7 @@ obj = function _relayControlRequest() {
                           let c1;
                           let v3;
                           closure_2_1.sendControlAck(user.id, "accepted");
-                          const obj3 = c0(closure_1_2[2]);
+                          const obj3 = c0(closure_1_2[3]);
                           await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                           return null != arg1;
                         })),
@@ -580,11 +581,26 @@ obj = function _getClientCaptureUploadUrl() {
   return obj(...arguments);
 };
 obj = {
-  capture_preview(arg0, projectId) {
+  capture_preview(probe, projectId) {
     function relayCaptureRequest() {
       return obj(...arguments);
     }
-    const promise = relayCaptureRequest(projectId.projectId, projectId.ws, arg0);
+    projectId = projectId.projectId;
+    let tmp = true !== probe.probe;
+    const ws = projectId.ws;
+    if (tmp) {
+      const spec = probe.spec;
+      let mode;
+      if (spec != null) {
+        mode = spec.mode;
+      }
+      tmp = "widget" !== mode;
+    }
+    if (tmp) {
+      obj = ConjurePreviewActionCreators;
+      obj.wakeConjurePreview(projectId);
+    }
+    const promise = relayCaptureRequest(projectId, ws, probe);
     promise.catch(() => {
 
     });
@@ -593,7 +609,11 @@ obj = {
     function relayControlRequest() {
       return obj(...arguments);
     }
-    const promise = relayControlRequest(projectId.projectId, projectId.ws, arg0);
+    projectId = projectId.projectId;
+    const ws = projectId.ws;
+    obj = ConjurePreviewActionCreators;
+    obj.wakeConjurePreview(projectId);
+    const promise = relayControlRequest(projectId, ws, arg0);
     promise.catch(() => {
 
     });
@@ -616,10 +636,12 @@ obj = {
   preview_operation(phase, projectId) {
     projectId = projectId.projectId;
     if ("begin" === phase.phase) {
-      const obj3 = conjurePreviewControlLease;
-      const result = obj3.setConjureControlTuning(projectId, "tuning" === phase.mode);
-      const obj4 = ConjurePlatformUtilsDefault;
-      const result1 = obj4.beginPreviewOperation(projectId);
+      const obj3 = ConjurePreviewActionCreators;
+      obj3.wakeConjurePreview(projectId);
+      const obj4 = conjurePreviewControlLease;
+      const result = obj4.setConjureControlTuning(projectId, "tuning" === phase.mode);
+      const obj5 = ConjurePlatformUtilsDefault;
+      const result1 = obj5.beginPreviewOperation(projectId);
     } else {
       obj = conjurePreviewControlLease;
       const result2 = obj.setConjureControlTuning(projectId, false);

@@ -1,16 +1,16 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13040
+// Function ID: 13041
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1395, 21, 5154, 587, 558, 576, 5091, 1417, 1128, 5150, 2]
+// Dependencies: [19, 17, 1395, 21, 5191, 587, 558, 576, 5128, 1417, 1128, 5187, 2]
 
-// Module 12975 (ChannelAutocompleteEmojiUpsell)
+// Module 13040 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import FastImageDefault from "FastImage" /* 5091 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

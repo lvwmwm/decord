@@ -1,13 +1,13 @@
-// Module ID: 6323
-// Function ID: 6324
+// Module ID: 6376
+// Function ID: 6377
 // Name: GuildUtils
-// Dependencies: [2090, 1392, 1459, 1104, 6324, 5021, 1128, 2]
+// Dependencies: [2090, 1392, 1459, 1104, 6377, 5057, 1128, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6323 (GuildUtils)
+// Module 6376 (GuildUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl2 from "intl" /* 1128 */;
-import UserUtilsAll from "UserUtils" /* 5021 */;
+import UserUtilsAll from "UserUtils" /* 5057 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
 import LRUCache from "LRUCache" /* 1459 */;
@@ -46,7 +46,7 @@ let obj2 = {
     let closure_4;
     let flag2;
     let timeout;
-    const f93976 = () => {
+    const f94233 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -124,7 +124,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f93976, 200);
+        timeout = setTimeout(f94233, 200);
       }
     }
     if (flag2) {
@@ -135,7 +135,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f93976, 200);
+      timeout = setTimeout(f94233, 200);
     }
   }
 };

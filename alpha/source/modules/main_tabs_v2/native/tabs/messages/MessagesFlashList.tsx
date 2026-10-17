@@ -1,19 +1,19 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17225
+// Function ID: 17226
 // Name: MessagesFlashList
-// Dependencies: [32, 19, 21, 558, 576, 17122, 17096, 17161, 17162, 17107, 17106, 17110, 17123, 17160, 17163, 7038, 2]
+// Dependencies: [32, 19, 21, 558, 576, 17182, 17156, 17221, 17222, 17167, 17166, 17170, 17183, 17220, 17223, 7091, 2]
 
-// Module 17165 (MessagesFlashList)
+// Module 17225 (MessagesFlashList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 17096 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17106 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17107 */;
-import useMessagesData from "useMessagesData" /* 17110 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 17123 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 17160 */;
-import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 17161 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 17162 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 17163 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 17156 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17166 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17167 */;
+import useMessagesData from "useMessagesData" /* 17170 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 17183 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 17220 */;
+import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 17221 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 17222 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 17223 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -70,7 +70,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[2] !== listHeaderHeight) {
     class A {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F150268 */ } };
+        obj = { scrollToTop() { /* body not rendered: F150592 */ } };
         return obj;
       }
     }
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     class A {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F150268 */ } };
+        obj = { scrollToTop() { /* body not rendered: F150592 */ } };
         return obj;
       }
     }
@@ -93,7 +93,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[5] === friendSuggestions) {
     class A {
       constructor() {
-        obj = { scrollToTop() { /* body not rendered: F150268 */ } };
+        obj = { scrollToTop() { /* body not rendered: F150592 */ } };
         return obj;
       }
     }

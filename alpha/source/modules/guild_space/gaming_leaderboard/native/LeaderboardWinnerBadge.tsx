@@ -1,17 +1,17 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10574
+// Function ID: 10575
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 5154, 558, 576, 10512, 10513, 10515, 10519, 10523, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 10575, 10576, 10578, 10582, 10586, 2]
 
-// Module 10511 (LeaderboardWinnerBadge)
+// Module 10574 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10512 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10513 */;
-import MedalFirstBadge from "MedalFirstBadge" /* 10515 */;
+import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10575 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10576 */;
+import MedalFirstBadge from "MedalFirstBadge" /* 10578 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -77,9 +77,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardW
       num = 0;
     }
     if (num > 1) {
-      WinnerTrophyBadge = tmp(10519).StreakTrophyBadge;
+      WinnerTrophyBadge = tmp(10582).StreakTrophyBadge;
     } else {
-      WinnerTrophyBadge = tmp(10523).WinnerTrophyBadge;
+      WinnerTrophyBadge = tmp(10586).WinnerTrophyBadge;
     }
     const container = tmp4.container;
     if (cResult[6] !== tmp5) {
@@ -137,9 +137,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardW
       num = 0;
     }
     if (num > 1) {
-      let WinnerTrophyBadge = tmp4(10519).StreakTrophyBadge;
+      let WinnerTrophyBadge = tmp4(10582).StreakTrophyBadge;
     } else {
-      WinnerTrophyBadge = tmp4(10523).WinnerTrophyBadge;
+      WinnerTrophyBadge = tmp4(10586).WinnerTrophyBadge;
     }
     const size1 = { width: v16, height: v16 };
     const tmp4Result2 = GuildLeaderboardUtils;

@@ -1,10 +1,10 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9612
+// Function ID: 9613
 // Name: ChannelDetailsStore
 // Dependencies: [570, 1274, 558, 576, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive
 
-// Module 9548 (ChannelDetailsStore)
+// Module 9612 (ChannelDetailsStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;
 import module_570 from "module_570" /* 570 */;

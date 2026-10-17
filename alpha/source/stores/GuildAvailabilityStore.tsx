@@ -1,9 +1,9 @@
-// Module ID: 6184
-// Function ID: 6185
+// Module ID: 6221
+// Function ID: 6222
 // Name: GuildAvailabilityStore
 // Dependencies: [2090, 3, 504, 584, 2]
 
-// Module 6184 (GuildAvailabilityStore)
+// Module 6221 (GuildAvailabilityStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

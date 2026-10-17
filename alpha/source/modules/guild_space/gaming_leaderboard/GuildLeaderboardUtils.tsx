@@ -1,15 +1,15 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 10576
+// Function ID: 10577
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 10514, 1128, 2475, 4797, 1104, 2]
+// Dependencies: [32, 10577, 1128, 2493, 4833, 1104, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardLeaderBadgeText, getLeaderboardLeaderDetailText, getLeaderboardWinnerBadgeText, getLeaderboardWinnerDetailText
 
-// Module 10513 (GuildLeaderboardUtils)
+// Module 10576 (GuildLeaderboardUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl6 from "intl" /* 1128 */;
-import _modDef2475 from "module_2475" /* 2475 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4797 */;
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10514 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export const getLeaderboardLeaderBadgeText = function getLeaderboardLeaderBadgeT
   const obj = GuildLeaderboardStatCopy;
   const statName = obj.getStatName(activeLeaderboardLeaderData.currentLeaderStat).name;
   const intl = intl6.intl;
-  return intl.formatToPlainString(_modDef2475.ZaOAtm, { statName });
+  return intl.formatToPlainString(_modDef2493.ZaOAtm, { statName });
 };
 export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetailText(decodeWinnerDataResult) {
   let num = decodeWinnerDataResult.winningStreak;
@@ -48,7 +48,7 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
   if (num > 1) {
     const intl5 = intl6.intl;
     const obj2 = { streakCount: num };
-    return intl5.formatToPlainString(_modDef2475["ZCFDN+"], obj2);
+    return intl5.formatToPlainString(_modDef2493["ZCFDN+"], obj2);
   } else {
     const winningValue = decodeWinnerDataResult.winningValue;
     if (null != winningValue) {
@@ -66,21 +66,21 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
             if (0 === rounded1) {
               const intl4 = tmp12(1128).intl;
               const obj3 = { minutes: result };
-              formatToPlainStringResult = intl4.formatToPlainString(tmp3(2475)["/272et"], obj3);
+              formatToPlainStringResult = intl4.formatToPlainString(tmp3(2493)["/272et"], obj3);
             } else {
               const intl3 = tmp12(1128).intl;
               const time = { hours: rounded1, minutes: result };
-              formatToPlainStringResult = intl3.formatToPlainString(tmp3(2475).GC7N5H, time);
+              formatToPlainStringResult = intl3.formatToPlainString(tmp3(2493).GC7N5H, time);
             }
             return formatToPlainStringResult;
           } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_DAYS_PLAYED === winningStat) {
             const intl2 = tmp12(1128).intl;
             const obj4 = { days: winningValue };
-            return intl2.formatToPlainString(_modDef2475.IXdbVJ, obj4);
+            return intl2.formatToPlainString(_modDef2493.IXdbVJ, obj4);
           } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED === winningStat) {
             const intl = tmp12(1128).intl;
             const obj = { count: winningValue };
-            return intl.formatToPlainString(_modDef2475["/VAMco"], obj);
+            return intl.formatToPlainString(_modDef2493["/VAMco"], obj);
           } else {
             return null;
           }
@@ -92,7 +92,7 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
 };
 export const getLeaderboardLeaderDetailText = function getLeaderboardLeaderDetailText() {
   const intl = intl6.intl;
-  return intl.string(_modDef2475.jCZgxQ);
+  return intl.string(_modDef2493.jCZgxQ);
 };
 export const encodeWinnerData = function encodeWinnerData(activeLeaderboardWinnerData) {
   let num = activeLeaderboardWinnerData.winningStat;

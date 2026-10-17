@@ -1,21 +1,21 @@
-// Module ID: 12260
-// Function ID: 12261
+// Module ID: 12325
+// Function ID: 12326
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4996, 21, 5154, 587, 558, 576, 1128, 5090, 5028, 5026, 1384, 12261, 12247, 2]
+// Dependencies: [19, 5032, 21, 5191, 587, 558, 576, 1128, 5127, 5065, 5063, 1384, 12326, 12312, 2]
 
-// Module 12260 (chat_input/ChatInputNativeComponent)
+// Module 12325 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ColorUtils from "ColorUtils" /* 5026 */;
-import shared from "shared" /* 5028 */;
-import useTheme from "useTheme" /* 5090 */;
-import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12247 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import shared from "shared" /* 5065 */;
+import useTheme from "useTheme" /* 5127 */;
+import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12312 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNat
     num6 = 1;
   }
   if (maxHeight == null) {
-    maxHeight = tmp10(12261)(onMaxHeightChanged);
+    maxHeight = tmp10(12326)(onMaxHeightChanged);
   }
   if (cResult[4] === tmp16) {
     if (cResult[5] === accessible) {
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputNat
     num2 = 1;
   }
   const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };
-  const tmp14 = tmp10(12261)(onMaxHeightChanged);
+  const tmp14 = tmp10(12326)(onMaxHeightChanged);
   const _default = ChatInputNativeComponent2.default;
   const tmp15 = jsx;
   if (maxHeight == null) {

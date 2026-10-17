@@ -1,50 +1,37 @@
 // Module ID: 15308
 // Function ID: 15309
-// Dependencies: [15277, 15309, 15252, 15305]
+// Dependencies: [15223, 15309]
+// Exports: getSupportedNumberingSystems
 
 // Module 15308
-import _mod15252 from "module_15252" /* 15252 */;
-import _mod15277 from "module_15277" /* 15277 */;
-import defineProperty2 from "defineProperty2" /* 15305 */;
-import _mod15309 from "module_15309" /* 15309 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default (arg0, arg1, value, arg3) => {
-  const obj = arg3 || {};
-  let flag = obj.enumerable;
-  let name = arg1;
-  const tmp = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod15277(value)) {
-    _mod15309(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      _mod15252(arg1, value);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp5[tmp];
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
       }
-    } catch (err) {
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
     }
-    const tmp6 = flag;
-    if (tmp6) {
-      arg0[arg1] = value;
-    } else {
-      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-      const tmp2Result = defineProperty2;
-      tmp2Result.f(arg0, arg1, obj2);
-    }
-  }
-  return arg0;
+    return isSupportedNumberingSystem(item, locale);
+  });
 };

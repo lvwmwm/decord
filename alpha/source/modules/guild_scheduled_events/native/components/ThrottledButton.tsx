@@ -1,9 +1,9 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9046
+// Function ID: 9047
 // Name: ThrottledButton
-// Dependencies: [109, 19, 21, 558, 576, 5442, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5479, 2]
 
-// Module 9000 (ThrottledButton)
+// Module 9046 (ThrottledButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const components_Button_Button = tmp(5442);
+const components_Button_Button = tmp(5479);
 let closure_2 = ["onPress", "onPressIn", "onPressOut", "throttleMs"];
 const jsx = Fragment.jsx;
 let c6 = 500;

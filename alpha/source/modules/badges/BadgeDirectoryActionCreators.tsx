@@ -1,10 +1,10 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 8595
+// Function ID: 8596
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1392, 1087, 584, 1297, 5948, 5953, 1257, 569, 1104, 2]
+// Dependencies: [5, 1392, 1087, 584, 1297, 5985, 5990, 1257, 569, 1104, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8549 (BadgeDirectoryActionCreators)
+// Module 8595 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -138,7 +138,7 @@ let obj = function _fetchBadgeDirectory() {
     if (closure_1 === undefined) {
       obj5 = {};
     }
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };

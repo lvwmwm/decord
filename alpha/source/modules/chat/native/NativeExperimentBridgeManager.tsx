@@ -1,23 +1,24 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 19034
+// Function ID: 19035
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2132, 502, 1384, 18973, 5974, 18974, 1267, 18975, 1297, 7032, 2]
+// Dependencies: [17, 2132, 502, 1384, 19035, 6011, 11094, 19036, 1267, 19037, 1297, 7085, 2]
 
-// Module 18972 (NativeExperimentBridgeManager)
+// Module 19034 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5974 */;
-import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 18974 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 18975 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6011 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11094 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19036 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19037 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(18973);
+const YYTextReplacementExperiment = tmp(19035);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {
@@ -47,19 +48,27 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      const tmpResult2 = IOSPushNotificationRawPayloadFixExperiment;
-      const result1 = setShouldFixPushNotificationRawPayload(tmpResult2.isIOSPushNotificationRawPayloadFixExperimentEnabled());
+      const tmpResult3 = IOSPushNotificationRawPayloadFixExperiment;
+      const result1 = setShouldFixPushNotificationRawPayload(tmpResult3.isIOSPushNotificationRawPayloadFixExperimentEnabled());
     }
   }
-  const obj4 = VideoStutterMitigationExperimentDefault;
-  if (obj4.getConfig({ location: "NativeExperimentBridgeManager" }).enabled) {
+  const NSUserDefaultsBridge3 = tmp6.NSUserDefaultsBridge;
+  if (NSUserDefaultsBridge3 != null) {
+    const setShouldUseAnchoredChatScroller = NSUserDefaultsBridge3.setShouldUseAnchoredChatScroller;
+    if (setShouldUseAnchoredChatScroller != null) {
+      const tmpResult4 = IOSAnchoredChatScrollerExperiment;
+      const result2 = setShouldUseAnchoredChatScroller(tmpResult4.shouldUseIOSAnchoredChatScroller({ location: "NativeExperimentBridgeManager" }));
+    }
+  }
+  const obj5 = VideoStutterMitigationExperimentDefault;
+  if (obj5.getConfig({ location: "NativeExperimentBridgeManager" }).enabled) {
     const RNVVideo = tmp6.RNVVideo;
     if (RNVVideo != null) {
-      const result2 = RNVVideo.setOptimizeConfigureAudio(true);
+      const result3 = RNVVideo.setOptimizeConfigureAudio(true);
     }
     const RNVVideo2 = tmp6.RNVVideo;
     if (RNVVideo2 != null) {
-      const result3 = RNVVideo2.setUseBackgroundProgressQueue(true);
+      const result4 = RNVVideo2.setUseBackgroundProgressQueue(true);
     }
   }
 }

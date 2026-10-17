@@ -1,10 +1,10 @@
-// Module ID: 4908
-// Function ID: 4909
+// Module ID: 4944
+// Function ID: 4945
 // Name: reactNativeWorkletsCompat
-// Dependencies: [4909, 2]
+// Dependencies: [4945, 2]
 
-// Module 4908 (reactNativeWorkletsCompat)
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+// Module 4944 (reactNativeWorkletsCompat)
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

@@ -1,14 +1,14 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8189
+// Function ID: 8190
 // Name: ApplicationCommandStore
-// Dependencies: [32, 6280, 2119, 7463, 504, 584, 2]
+// Dependencies: [32, 6339, 2119, 7509, 504, 584, 2]
 
-// Module 8143 (ApplicationCommandStore)
+// Module 8189 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7463 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6280 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6339 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ function handleUpdateOptionStates(changedOptionStates) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "IconComponent" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "application", length: "hideActionSheet" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

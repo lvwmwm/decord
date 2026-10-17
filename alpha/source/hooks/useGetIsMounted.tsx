@@ -1,9 +1,9 @@
-// Module ID: 8603
-// Function ID: 8604
+// Module ID: 8649
+// Function ID: 8650
 // Name: useGetIsMounted
 // Dependencies: [19, 558, 576, 2]
 
-// Module 8603 (useGetIsMounted)
+// Module 8649 (useGetIsMounted)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

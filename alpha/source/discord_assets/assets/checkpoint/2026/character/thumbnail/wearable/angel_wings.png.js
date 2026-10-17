@@ -1,8 +1,8 @@
-// Module ID: 5789
-// Function ID: 5790
+// Module ID: 5826
+// Function ID: 5827
 // Dependencies: [2]
 
-// Module 5789
+// Module 5826
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/angel_wings.png.js");

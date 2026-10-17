@@ -1,55 +1,84 @@
 // Module ID: 12421
 // Function ID: 12422
-// Dependencies: []
-// Exports: makeFifoCache
+// Dependencies: [12370]
+// Exports: getDebugImagesForResources
 
 // Module 12421
+const require = globalThis.__r;
+let _require, obj;
 
-export function makeFifoCache(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = [];
-  let closure_2 = {};
-  return {
-    add(arg0, arg1) {
-      if (closure_1.length >= closure_0) {
-        do {
-          let arr = closure_1.shift();
-          if (undefined !== arr) {
-            delete closure_2[tmp2];
-          }
-        } while (closure_1.length >= closure_0);
-      }
-      if (closure_2[arg0]) {
-        const self = this;
-        this.delete(arg0);
-      }
-      closure_1.push(arg0);
-      closure_2[arg0] = arg1;
-    },
-    clear() {
-      closure_2 = {};
-      closure_1 = [];
-    },
-    get(arg0) {
-      return closure_2[arg0];
-    },
-    size() {
-      return closure_1.length;
-    },
-    delete: (arg0) => {
-      if (closure_2[arg0]) {
-        delete closure_2[tmp];
-        let num = 0;
-        if (0 < closure_1.length) {
-          while (closure_1[num] !== arg0) {
-            num = num + 1;
-          }
-          closure_1.splice(num, 1);
-        }
-        return true;
-      } else {
-        return false;
-      }
+function getFilenameToDebugIdMap(arg0) {
+  let _sentryDebugIds;
+  let closure_0;
+  let length;
+  let reduced;
+  _require = arg0;
+  _sentryDebugIds = require("module_12370").GLOBAL_OBJ._sentryDebugIds;
+  if (_sentryDebugIds) {
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(_sentryDebugIds);
+    const tmp2 = reduced;
+    if (tmp2) {
+      return reduced;
     }
-  };
+    reduced = keys.reduce((acc, item) => {
+      let tmp7;
+      let tmp9;
+      let tmp = obj;
+      if (!tmp) {
+        obj = {};
+        tmp = obj;
+      }
+      if (tmp[item]) {
+        acc[tmp[item][0]] = tmp[item][1];
+      } else {
+        const arr = closure_0(item);
+        let diff = arr.length - 1;
+        if (0 <= diff) {
+          while (true) {
+            let tmp5 = arr[diff];
+            tmp7 = tmp5 && tmp5.filename;
+            tmp9 = _sentryDebugIds[item];
+            if (tmp7) {
+              if (tmp9) {
+                break;
+              }
+            }
+            diff = diff - 1;
+          }
+          acc[tmp7] = tmp9;
+          const items = [tmp7, tmp9];
+          obj[item] = items;
+        }
+      }
+      return acc;
+    }, {});
+  } else {
+    return {};
+  }
 }
+
+export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
+  const tmp = getFilenameToDebugIdMap(arg0);
+  const items = [];
+  if (tmp) {
+    const iter = arg1[Symbol.iterator]();
+    let nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp7 = nextResult;
+      if (tmp7) {
+        nextResult = tmp[tmp7];
+      }
+      if (nextResult) {
+        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
+        let arr = items.push(obj);
+      }
+      continue;
+    }
+    return items;
+  } else {
+    return items;
+  }
+};
+export { getFilenameToDebugIdMap };

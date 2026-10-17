@@ -1,17 +1,17 @@
-// Module ID: 13126
-// Function ID: 13127
+// Module ID: 13191
+// Function ID: 13192
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 5066, 5067, 2065, 2052, 558, 576, 504, 13121, 7325, 2053, 2]
+// Dependencies: [32, 19, 5103, 5104, 2065, 2052, 558, 576, 504, 13186, 7376, 2053, 2]
 
-// Module 13126 (useGuildPowerupsNewBadge)
+// Module 13191 (useGuildPowerupsNewBadge)
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 13121 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 13186 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5066 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   const tmp4 = undefined !== arg1 && arg1;
   const tmp5 = closure_9(arg0);
   let tmp7 = null;
-  const useSelectedVersionedDismissibleContent = tmp(7325).useSelectedVersionedDismissibleContent;
+  const useSelectedVersionedDismissibleContent = tmp(7376).useSelectedVersionedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (tmp5 > 0) {
     tmp7 = null;

@@ -1,10 +1,10 @@
-// Module ID: 5348
-// Function ID: 5349
+// Module ID: 5385
+// Function ID: 5386
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1447, 5349, 2]
+// Dependencies: [5, 3, 1447, 5386, 2]
 // Exports: getDeviceState
 
-// Module 5348 (device/DeviceState)
+// Module 5385 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ let obj = function _getDeviceState() {
             fallback = obj5.fallback;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           let DEFAULT_DEVICE_STATE;

@@ -1,39 +1,39 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12106
+// Function ID: 12107
 // Name: ConjureNativeChat
-// Dependencies: [32, 19, 17, 2001, 10898, 10913, 10915, 10899, 21, 587, 683, 5154, 558, 576, 504, 12044, 12045, 1633, 10920, 12046, 12047, 12048, 12050, 12051, 12052, 12053, 12054, 1128, 3865, 12055, 10900, 12049, 1384, 12057, 12058, 12059, 12060, 12061, 10955, 12062, 12065, 5150, 12089, 7038, 12229, 12230, 12233, 7791, 12242, 5454, 6467, 2]
+// Dependencies: [32, 19, 17, 2001, 10962, 10977, 10979, 10963, 21, 587, 683, 5191, 558, 576, 504, 12107, 12108, 1633, 10984, 12109, 12110, 12111, 12113, 12114, 12115, 12116, 12117, 1128, 3883, 12118, 10964, 12112, 1384, 12120, 12121, 12122, 12123, 12124, 11016, 12125, 12128, 5187, 12152, 7091, 12294, 12295, 12298, 7837, 12307, 5491, 6520, 2]
 
-// Module 12043 (ConjureNativeChat)
+// Module 12106 (ConjureNativeChat)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl5 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import LinearGradientDefault from "LinearGradient" /* 5454 */;
-import _modDef6467 from "module_6467" /* 6467 */;
-import conjureChatTurns from "conjureChatTurns" /* 10900 */;
-import conjurePublishCard from "conjurePublishCard" /* 12046 */;
-import ConjureTodoState from "ConjureTodoState" /* 12048 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12049 */;
-import ConjureSecretRequestState from "ConjureSecretRequestState" /* 12050 */;
-import conjureCardOverrides from "conjureCardOverrides" /* 12051 */;
-import conjurePendingPlan from "conjurePendingPlan" /* 12052 */;
-import ConjureChatGrouping from "ConjureChatGrouping" /* 12053 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12054 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12059 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12060 */;
-import ConjureMessageRowDefault from "ConjureMessageRow" /* 12089 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import _modDef6520 from "module_6520" /* 6520 */;
+import conjureChatTurns from "conjureChatTurns" /* 10964 */;
+import conjurePublishCard from "conjurePublishCard" /* 12109 */;
+import ConjureTodoState from "ConjureTodoState" /* 12111 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12112 */;
+import ConjureSecretRequestState from "ConjureSecretRequestState" /* 12113 */;
+import conjureCardOverrides from "conjureCardOverrides" /* 12114 */;
+import conjurePendingPlan from "conjurePendingPlan" /* 12115 */;
+import ConjureChatGrouping from "ConjureChatGrouping" /* 12116 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12117 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12122 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12123 */;
+import ConjureMessageRowDefault from "ConjureMessageRow" /* 12152 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10898 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10913 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10915 */;
-import ConjureChatStore from "ConjureChatStore" /* 10899 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10962 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10977 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10979 */;
+import ConjureChatStore from "ConjureChatStore" /* 10963 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1104,11 +1104,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let tmp94Result;
   let tmp94Result6;
   let tmp97;
-  const f111651 = () => {
+  const f111962 = () => {
     map = new Map();
     return map;
   };
-  const f111654 = () => {
+  const f111965 = () => {
     map = new Map();
     return map;
   };
@@ -1292,8 +1292,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores11);
   }, items27);
-  [c13, c14] = tmp19(obj3.useState(f111651), 2);
-  tmp19(obj3.useState(f111651), 2);
+  [c13, c14] = tmp19(obj3.useState(f111962), 2);
+  tmp19(obj3.useState(f111962), 2);
   onToggleChecklist = obj3.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1307,8 +1307,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items28);
-  [c17, c18] = tmp19(obj3.useState(f111654), 2);
-  tmp19(obj3.useState(f111654), 2);
+  [c17, c18] = tmp19(obj3.useState(f111965), 2);
+  tmp19(obj3.useState(f111965), 2);
   onTogglePlan = obj3.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1354,7 +1354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const sendConjureCardReply = conjureAttachmentDrafts.sendConjureCardReply;
     conjureAttachmentDrafts;
     const intl = intl5.intl;
-    sendConjureCardReply(projectId, intl.string(_modDef3865.EMgIuY));
+    sendConjureCardReply(projectId, intl.string(_modDef3883.EMgIuY));
   }, items30);
   const items31 = [projectId];
   onPickIdea = obj3.useCallback((implementation_prompt) => {
@@ -1367,7 +1367,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   tmp19(tmp5(tmp3[29])(projectId), 2);
   const callback1 = obj3.useCallback(() => {
     const intl = intl5.intl;
-    authStore(projectId, intl.string(_modDef3865["t5CN3+"]));
+    authStore(projectId, intl.string(_modDef3883["t5CN3+"]));
   }, items32);
   closure_23 = obj3.useCallback((implementation_prompt, clarificationAnswers, attachments) => {
     const obj = conjureAttachmentDrafts;
@@ -1817,7 +1817,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       if (value3 != null) {
         superseded = value3.superseded;
       }
-      conjureCardExpanded = tmp4(12051).conjureCardExpanded;
+      conjureCardExpanded = tmp4(12114).conjureCardExpanded;
       render_id = item.render_id;
       conjureCardOverrides;
       const value4 = obj4.get(item.render_id);
@@ -2009,7 +2009,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transc
             }
           }
           const obj7 = { style: transcript, maskElement: tmp23, children };
-          const tmp30 = authStore3(_modDef6467, obj7);
+          const tmp30 = authStore3(_modDef6520, obj7);
           cResult[11] = children;
           cResult[12] = tmp3.transcript;
           cResult[13] = tmp23;
@@ -2043,7 +2043,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transc
     obj3 = { style: tmp.transcript, children: items };
     items = [, , ];
     const obj4 = { style: tmp.maskSolid };
-    const tmp6 = _modDef6467;
+    const tmp6 = _modDef6520;
     items[0] = authStore3(View, obj4);
     const obj5 = { style: tmp.maskFade, colors: items, locations, start, end };
     items[1] = authStore3(LinearGradientDefault, obj5);

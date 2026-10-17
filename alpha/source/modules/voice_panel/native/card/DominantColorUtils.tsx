@@ -1,10 +1,10 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9321
+// Function ID: 9322
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1459, 558, 576, 5026, 587, 568, 1901, 2]
+// Dependencies: [32, 19, 17, 1459, 558, 576, 5063, 587, 568, 1901, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 9261 (DominantColorUtils)
+// Module 9321 (DominantColorUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantR
       hexToRgbResult = closure_6.get(uri);
     }
     if (hexToRgbResult == null) {
-      const tmpResult = tmp(5026);
+      const tmpResult = tmp(5063);
       hexToRgbResult = tmpResult.hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
     }
     cResult[2] = uri;

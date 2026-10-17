@@ -1,18 +1,18 @@
-// Module ID: 13542
-// Function ID: 13543
+// Module ID: 13608
+// Function ID: 13609
 // Name: ForLaterCardHeader
-// Dependencies: [17, 2090, 21, 5154, 587, 558, 576, 7129, 504, 6383, 10529, 1202, 8425, 5484, 8385, 1128, 5150, 2]
+// Dependencies: [17, 2090, 21, 5191, 587, 558, 576, 7182, 504, 6436, 10592, 1202, 8471, 5521, 8431, 1128, 5187, 2]
 
-// Module 13542 (ForLaterCardHeader)
+// Module 13608 (ForLaterCardHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5484 */;
-import GuildIconDefault from "GuildIcon" /* 6383 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10529 */;
+import useChannelNameDefault from "useChannelName" /* 5521 */;
+import GuildIconDefault from "GuildIcon" /* 6436 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10592 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const ChevronSmallRightIcon = tmp(7129);
+const ChevronSmallRightIcon = tmp(7182);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { cardHeader: { flexDirection: "row", alignItems: "center", gap: 8 }, dmIcon: obj2, channelNameContainer: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, channelName: { flexShrink: 1 }, channelTypeIcon: { marginRight: 4 }, actionsContainer: { marginVertical: -4, marginLeft: "auto" } };
@@ -148,7 +148,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderI
   if (null != stateFromStores) {
     let tmp22;
     if (cResult[3] !== stateFromStores) {
-      const obj2 = { guild: stateFromStores, size: channel(6383).GuildIconSizes.XSMALL };
+      const obj2 = { guild: stateFromStores, size: channel(6436).GuildIconSizes.XSMALL };
       const tmp25 = GuildIconDefault;
       const tmp26 = closure_5(tmp25, obj2);
       cResult[3] = stateFromStores;
@@ -180,7 +180,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderI
       let tmp10;
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp12 = closure_5(channel(8425).ChatIcon, { size: "xxs" });
+        const tmp12 = closure_5(channel(8471).ChatIcon, { size: "xxs" });
         cResult[7] = tmp12;
         tmp10 = tmp12;
       } else {
@@ -206,7 +206,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderI
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   if (null != stateFromStores) {
-    const obj2 = { guild: stateFromStores, size: channel(6383).GuildIconSizes.XSMALL };
+    const obj2 = { guild: stateFromStores, size: channel(6436).GuildIconSizes.XSMALL };
     const tmp13 = GuildIconDefault;
     tmp6Result = closure_5(tmp13, obj2);
   } else {
@@ -219,7 +219,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderI
       const tmp10 = GroupDMAvatarDefault;
       tmp6Result = tmp6(tmp10, obj3);
     } else {
-      const obj4 = { style: tmp.dmIcon, children: closure_5(channel(8425).ChatIcon, { size: "xxs" }) };
+      const obj4 = { style: tmp.dmIcon, children: closure_5(channel(8471).ChatIcon, { size: "xxs" }) };
       tmp6Result = tmp6(View, obj4);
     }
   }
@@ -299,7 +299,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
               tmp23 = tmp26;
             }
             const obj3 = { style: tmp4.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: tmp15 };
-            const tmp22 = closure_5(channel(5150).Text, obj3);
+            const tmp22 = closure_5(channel(5187).Text, obj3);
             cResult[16] = tmp15;
             cResult[17] = tmp4.channelName;
             cResult[18] = tmp22;
@@ -334,7 +334,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     cResult[8] = isPrivateResult;
     tmp12 = isPrivateResult;
   }
-  const tmpResult2 = channel(8385);
+  const tmpResult2 = channel(8431);
   const channelIconComponentWithGuild = tmpResult2.getChannelIconComponentWithGuild(channel, stateFromStores);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -348,7 +348,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   const tmp5 = useChannelNameDefault(channel, false);
-  const obj2 = channel(8385);
+  const obj2 = channel(8431);
   const channelIconComponentWithGuild = obj2.getChannelIconComponentWithGuild(channel, stateFromStores);
   let formatToPlainStringResult = tmp5;
   const isPrivateResult = channel.isPrivate() || null == channelIconComponentWithGuild;
@@ -367,7 +367,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
   }
   items1 = [tmp12, ];
   const obj6 = { style: tmp.channelName, variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult };
-  items1[1] = closure_5(channel(5150).Text, obj6);
+  items1[1] = closure_5(channel(5187).Text, obj6);
   return tmp10(tmp11, obj4);
 });
 const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardHeader.tsx");

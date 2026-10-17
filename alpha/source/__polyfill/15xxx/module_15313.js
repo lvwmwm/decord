@@ -1,16 +1,7 @@
 // Module ID: 15313
 // Function ID: 15314
-// Dependencies: [15277, 15251]
+// Dependencies: []
 
 // Module 15313
-import _mod15251 from "module_15251" /* 15251 */;
-import module_15277 from "module_15277" /* 15277 */;
 
-let _moduleResult = module_15277(_mod15251.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod15251.WeakMap));
-}
-
-export default _moduleResult;
+export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

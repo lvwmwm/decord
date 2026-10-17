@@ -1,9 +1,9 @@
-// Module ID: 13502
-// Function ID: 13503
+// Module ID: 13568
+// Function ID: 13569
 // Name: CompressLogsExperiment
 // Dependencies: [1455, 2]
 
-// Module 13502 (CompressLogsExperiment)
+// Module 13568 (CompressLogsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

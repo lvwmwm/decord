@@ -1,21 +1,21 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11847
+// Function ID: 11848
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2068, 1392, 1504, 1087, 5466, 5169, 7467, 11786, 7463, 2000, 8141, 1990, 9484, 1417, 558, 576, 10867, 9773, 11791, 7081, 5119, 2]
+// Dependencies: [19, 2068, 1392, 1504, 1087, 5503, 5206, 7513, 11848, 7509, 2000, 8187, 1990, 9548, 1417, 558, 576, 10932, 9837, 11853, 7134, 5156, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
-// Module 11785 (AppLauncherNativeUtils)
+// Module 11847 (AppLauncherNativeUtils)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import AssetRegistryDefault from "AssetRegistry" /* 1990 */;
 import Server from "Server" /* 2000 */;
-import HapticUtils from "HapticUtils" /* 5119 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5466 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7463 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8141 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9484 */;
-import FrecencySection from "FrecencySection" /* 11786 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8187 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
+import FrecencySection from "FrecencySection" /* 11848 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -302,9 +302,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   const APPLICATION_COMMAND_SECTION_SELECTED = AnalyticEvents.APPLICATION_COMMAND_SECTION_SELECTED;
   AppAnalyticsUtils;
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    APP = tmp(7467).ApplicationCommandTriggerSections.BUILT_IN;
+    APP = tmp(7513).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7467).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7513).ApplicationCommandTriggerSections.APP;
   }
   id = application.id;
   if (id == null) {

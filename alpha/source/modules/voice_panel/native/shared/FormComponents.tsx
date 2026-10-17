@@ -1,28 +1,28 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9069
+// Function ID: 9070
 // Name: FormComponents
-// Dependencies: [109, 19, 5170, 21, 5154, 587, 558, 576, 6489, 6386, 9024, 1202, 7077, 9025, 9036, 7250, 5847, 9080, 8531, 7645, 504, 9081, 9083, 5150, 1128, 5021, 9084, 13884, 5442, 7240, 13886, 6404, 2]
+// Dependencies: [109, 19, 5207, 21, 5191, 587, 558, 576, 6542, 6439, 9070, 1202, 7130, 9071, 9082, 7302, 5884, 9126, 8577, 7691, 504, 9127, 9129, 5187, 1128, 5057, 9130, 13952, 5479, 7292, 13954, 6457, 2]
 // Exports: VoicePanelFormSection
 
-// Module 9023 (FormComponents)
+// Module 9069 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import UserUtils from "UserUtils" /* 5021 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import NativeViewDefault from "NativeView" /* 6386 */;
-import TableRowGroup3 from "TableRowGroup" /* 6489 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7240 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7645 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8531 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9024 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 13884 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NativeViewDefault from "NativeView" /* 6439 */;
+import TableRowGroup3 from "TableRowGroup" /* 6542 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7292 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9070 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 13952 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5170 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(9084);
+const GuildTagDefault = tmp6(9130);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(9024).VideoIcon;
+        VideoIcon = tmp(9070).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(9024).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(9070).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -541,7 +541,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       }
       if (cResult[6] !== tmp18) {
         const obj2 = {};
-        const TableRowGroup2 = tmp15(6489).TableRowGroup;
+        const TableRowGroup2 = tmp15(6542).TableRowGroup;
         const merged = Object.assign(tmp18);
         const tmp31 = metroImportDefault(TableRowGroup2, obj2);
         cResult[6] = tmp18;

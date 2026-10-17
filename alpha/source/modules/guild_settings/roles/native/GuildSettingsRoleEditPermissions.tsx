@@ -1,25 +1,25 @@
-// Module ID: 18764
-// Function ID: 18765
+// Module ID: 18826
+// Function ID: 18827
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 2086, 4809, 1392, 1087, 21, 5154, 587, 4814, 38, 5150, 1128, 5118, 18765, 2002, 17915, 18762, 6963, 1267, 1099, 17919, 7119, 6489, 1202, 8857, 2]
+// Dependencies: [32, 19, 17, 2086, 4845, 1392, 1087, 21, 5191, 587, 4850, 38, 5187, 1128, 5155, 18827, 2002, 17975, 18824, 7016, 1267, 1099, 17979, 7172, 6542, 1202, 8903, 2]
 // Exports: default
 
-// Module 18764 (GuildSettingsRoleEditPermissions)
+// Module 18826 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildRecord from "GuildRecord" /* 2086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4814 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let permissions;
@@ -109,7 +109,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   }
   if (tmp19Result) {
     let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl.format(guild(1128).t.ZhSOBy, obj4) };
-    let Text = guild(5150).Text;
+    let Text = guild(5187).Text;
     intl = guild(1128).intl;
     obj4 = { onTemplateOpen: obj5 };
     obj5 = {
@@ -118,7 +118,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { permissionsEdited, onPermissionsChanged: dependencyMap, guildId: guild.id };
-          const tmp3 = asyncRequire(18765, dependencyMap.paths);
+          const tmp3 = asyncRequire(18827, dependencyMap.paths);
           openLazy(tmp3, "role-permission-templates-" + guild.id + "-" + role.id, obj);
         },
       accessibilityRole: "button"
@@ -126,7 +126,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp19Result = tmp19(Text, obj3);
   }
   const tmp19Result3 = closure_14(closure_6, { children: tmp19Result });
-  const tmp15Result = role(17915);
+  const tmp15Result = role(17975);
   const guildPermissionSpec = tmp15Result.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {
@@ -146,8 +146,8 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   const children = [, , , ];
   const tmp25 = mapped1.length > 0;
-  children[0] = closure_14(role(18762), { role });
-  let obj6 = { children: tmp19(guild(6963).SearchField, obj7) };
+  children[0] = closure_14(role(18824), { role });
+  let obj6 = { children: tmp19(guild(7016).SearchField, obj7) };
   obj7 = {
     size: "md",
     onChange: function handleSearchQuery(str) {
@@ -256,7 +256,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     tmp19Result4 = tmp19(closure_8, obj8);
   } else {
-    const obj9 = { Illustration: guild(8857).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1128).t.Psh5OO, obj11) };
+    const obj9 = { Illustration: guild(8903).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1128).t.Psh5OO, obj11) };
     const EmptyState = tmp28(1202).EmptyState;
     ({ emptyState: obj10.style, emptyStateText: obj10.bodyStyle } = tmp);
     intl2 = tmp28(1128).intl;

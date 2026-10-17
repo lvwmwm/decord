@@ -1,14 +1,14 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17540
+// Function ID: 17541
 // Name: ConnectionFineIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17482, 4876, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17541, 4912, 2]
 
-// Module 17481 (ConnectionFineIcon)
+// Module 17540 (ConnectionFineIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4876 */;
-import AssetRegistry from "AssetRegistry" /* 17482 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 17541 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connection
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4876).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={ICON_FEEDBACK_POSITIVE} style={tmp5} />;
   cResult[5] = ICON_FEEDBACK_POSITIVE;

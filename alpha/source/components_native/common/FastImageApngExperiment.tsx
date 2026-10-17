@@ -1,10 +1,10 @@
-// Module ID: 5092
-// Function ID: 5093
+// Module ID: 5129
+// Function ID: 5130
 // Name: FastImageApngExperiment
 // Dependencies: [1455, 1384, 504, 1901, 2]
 // Exports: initializeFastImageApngExperiment
 
-// Module 5092 (FastImageApngExperiment)
+// Module 5129 (FastImageApngExperiment)
 import get_initializedDefault from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import react_nativeDefault from "react-native" /* 1901 */;

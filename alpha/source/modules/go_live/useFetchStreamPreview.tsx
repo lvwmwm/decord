@@ -1,15 +1,15 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11544
+// Function ID: 11545
 // Name: useFetchStreamPreview
-// Dependencies: [19, 7666, 2068, 4809, 2119, 1098, 558, 576, 504, 7664, 2]
+// Dependencies: [19, 7712, 2068, 4845, 2119, 1098, 558, 576, 504, 7710, 2]
 
-// Module 11485 (useFetchStreamPreview)
+// Module 11544 (useFetchStreamPreview)
 import Constants from "Constants" /* 1098 */;
-import StreamActionCreators from "StreamActionCreators" /* 7664 */;
+import StreamActionCreators from "StreamActionCreators" /* 7710 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7666 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7712 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -207,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSt
     }
     return obj5;
   }
-  obj5 = { previewUrl: "test", isLoading: true };
+  obj5 = { previewUrl: "Reflect", isLoading: true };
 });
 const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 

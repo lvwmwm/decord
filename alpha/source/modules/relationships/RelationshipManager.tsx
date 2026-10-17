@@ -1,14 +1,14 @@
-// Module ID: 18564
-// Function ID: 18565
+// Module ID: 18626
+// Function ID: 18627
 // Name: RelationshipManager
-// Dependencies: [1087, 5028, 1128, 18565, 7032, 2]
+// Dependencies: [1087, 5065, 1128, 18627, 7085, 2]
 
-// Module 18564 (RelationshipManager)
+// Module 18626 (RelationshipManager)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import shared from "shared" /* 5028 */;
-import RelationshipUtilsAll from "RelationshipUtils" /* 18565 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import shared from "shared" /* 5065 */;
+import RelationshipUtilsAll from "RelationshipUtils" /* 18627 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 function handleRelationshipAdd(relationship) {

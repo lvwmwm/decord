@@ -1,26 +1,26 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12072
+// Function ID: 12073
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1629, 1087, 21, 1630, 1384, 5154, 587, 558, 576, 1128, 11966, 4886, 5031, 6531, 4910, 5119, 5120, 1267, 5425, 5044, 5434, 4909, 5459, 1633, 5422, 2]
+// Dependencies: [32, 19, 17, 1629, 1087, 21, 1630, 1384, 5191, 587, 558, 576, 1128, 12029, 4922, 5068, 6584, 4946, 5156, 5157, 1267, 5462, 5081, 5471, 4945, 5496, 1633, 5459, 2]
 
-// Module 12009 (MediaKeyboardBottomSheet)
+// Module 12072 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import ChatInputUtils from "ChatInputUtils" /* 5044 */;
-import HapticUtils from "HapticUtils" /* 5119 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ChatInputUtils from "ChatInputUtils" /* 5081 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import Fragment from "Fragment" /* 21 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

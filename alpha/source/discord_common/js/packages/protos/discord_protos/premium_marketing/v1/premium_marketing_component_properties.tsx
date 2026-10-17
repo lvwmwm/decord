@@ -1,37 +1,37 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9424
+// Function ID: 9425
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1212, 9361, 9365, 9366, 9367, 9368, 9369, 9371, 9373, 9374, 9375, 9376, 9377, 9378, 9379, 9380, 9381, 9382, 9383, 9384, 9385, 9386, 9387, 9388, 9389, 9390, 9391, 9392, 2]
+// Dependencies: [32, 1212, 9425, 9429, 9430, 9431, 9432, 9433, 9435, 9437, 9438, 9439, 9440, 9441, 9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 2]
 
-// Module 9360 (premium_marketing_component_properties)
+// Module 9424 (premium_marketing_component_properties)
 import _mod1212 from "module_1212" /* 1212 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9361 */;
-import premium_tab from "premium_tab" /* 9365 */;
-import marketing_page_banner from "marketing_page_banner" /* 9366 */;
-import payment_modal_banner from "payment_modal_banner" /* 9367 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9368 */;
-import gift_icon from "gift_icon" /* 9369 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 9371 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9373 */;
-import gift_customization_banner from "gift_customization_banner" /* 9374 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9375 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9376 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9377 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 9378 */;
-import premium_tab_popover from "premium_tab_popover" /* 9379 */;
-import nagbar2 from "nagbar" /* 9380 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 9381 */;
-import billing_settings_banner from "billing_settings_banner" /* 9382 */;
-import shop_nagbar from "shop_nagbar" /* 9383 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 9384 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 9385 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9386 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9387 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9388 */;
-import shop_tab_tooltip from "shop_tab_tooltip" /* 9389 */;
-import premium_home_perk_card from "premium_home_perk_card" /* 9390 */;
-import marketing_page_bento_box from "marketing_page_bento_box" /* 9391 */;
-import outbound_promotion_popover from "outbound_promotion_popover" /* 9392 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9425 */;
+import premium_tab from "premium_tab" /* 9429 */;
+import marketing_page_banner from "marketing_page_banner" /* 9430 */;
+import payment_modal_banner from "payment_modal_banner" /* 9431 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9432 */;
+import gift_icon from "gift_icon" /* 9433 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 9435 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9437 */;
+import gift_customization_banner from "gift_customization_banner" /* 9438 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9439 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9440 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9441 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 9442 */;
+import premium_tab_popover from "premium_tab_popover" /* 9443 */;
+import nagbar2 from "nagbar" /* 9444 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 9445 */;
+import billing_settings_banner from "billing_settings_banner" /* 9446 */;
+import shop_nagbar from "shop_nagbar" /* 9447 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 9448 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 9449 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9450 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9451 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9452 */;
+import shop_tab_tooltip from "shop_tab_tooltip" /* 9453 */;
+import premium_home_perk_card from "premium_home_perk_card" /* 9454 */;
+import marketing_page_bento_box from "marketing_page_bento_box" /* 9455 */;
+import outbound_promotion_popover from "outbound_promotion_popover" /* 9456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -294,14 +294,14 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumMarketingComponentProperties", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

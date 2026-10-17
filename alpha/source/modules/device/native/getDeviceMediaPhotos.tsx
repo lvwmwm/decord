@@ -1,15 +1,15 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10334
+// Function ID: 10335
 // Name: getDeviceMediaPhotos
-// Dependencies: [17, 3, 1257, 1384, 10271, 2]
+// Dependencies: [17, 3, 1257, 1384, 10335, 2]
 // Exports: default
 
-// Module 10270 (getDeviceMediaPhotos)
+// Module 10334 (getDeviceMediaPhotos)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 10271 */;
+import react_nativeDefault from "react-native" /* 10335 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

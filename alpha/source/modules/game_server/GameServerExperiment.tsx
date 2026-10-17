@@ -1,12 +1,12 @@
-// Module ID: 5085
-// Function ID: 5086
+// Module ID: 5122
+// Function ID: 5123
 // Name: GameServerExperiment
-// Dependencies: [5073, 558, 576, 2]
+// Dependencies: [5110, 558, 576, 2]
 // Exports: getGameServerEnabled
 
-// Module 5085 (GameServerExperiment)
+// Module 5122 (GameServerExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5073" /* 5073 */;
+import createExperiment from "module_5110" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

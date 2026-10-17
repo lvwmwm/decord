@@ -1,25 +1,25 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13042
+// Function ID: 13043
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 12978, 9328, 6866, 9450, 9127, 5154, 558, 576, 12979, 5440, 587, 2]
+// Dependencies: [19, 21, 13043, 9386, 6919, 9514, 9187, 5191, 558, 576, 13044, 5477, 587, 2]
 
-// Module 12977 (GamePlatformBadgeRow)
+// Module 13042 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6866 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9127 */;
-import ScreenIcon from "ScreenIcon" /* 9328 */;
-import GameControllerIcon from "GameControllerIcon" /* 9450 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12978 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6919 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9187 */;
+import ScreenIcon from "ScreenIcon" /* 9386 */;
+import GameControllerIcon from "GameControllerIcon" /* 9514 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13043 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Stack_Stack = tmp(5440);
-const GamePlatformBadges = tmp(12979);
+const Stack_Stack = tmp(5477);
+const GamePlatformBadges = tmp(13044);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5440).Stack;
+  const Stack = platforms(5477).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[10]);
     return <tmp key={arg0} size="xs" color="icon-muted" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

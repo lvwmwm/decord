@@ -1,0 +1,14 @@
+// Module ID: 15110
+// Function ID: 15111
+// Dependencies: [15093]
+
+// Module 15110
+import _mod15093 from "module_15093" /* 15093 */;
+
+
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod15093(arg0, arg2);
+  const tmp = new _mod15093(arg1, arg2);
+  const tmp2 = obj.compare(tmp) || obj.compareBuild(tmp);
+  return tmp2;
+};

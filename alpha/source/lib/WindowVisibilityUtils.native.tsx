@@ -1,12 +1,12 @@
-// Module ID: 5284
-// Function ID: 5285
+// Module ID: 5321
+// Function ID: 5322
 // Name: WindowVisibilityUtils
-// Dependencies: [2001, 1087, 5283, 2]
+// Dependencies: [2001, 1087, 5320, 2]
 // Exports: default
 
-// Module 5284 (WindowVisibilityUtils)
+// Module 5321 (WindowVisibilityUtils)
 import Constants from "Constants" /* 1087 */;
-import ExternalPipDefault from "ExternalPip" /* 5283 */;
+import ExternalPipDefault from "ExternalPip" /* 5320 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import size from "module_2" /* 2 */;
 

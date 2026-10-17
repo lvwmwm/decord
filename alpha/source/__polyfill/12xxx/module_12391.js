@@ -1,20 +1,22 @@
 // Module ID: 12391
 // Function ID: 12392
-// Dependencies: []
-// Exports: severityLevelFromString
+// Dependencies: [12375]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 12391
+import _mod12375 from "module_12375" /* 12375 */;
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
-  }
-  return str;
+const _sentrySpan = "_sentrySpan";
+
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
 };
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod12375;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
+  }
+};

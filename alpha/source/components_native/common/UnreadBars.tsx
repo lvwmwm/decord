@@ -1,25 +1,25 @@
-// Module ID: 17435
-// Function ID: 17436
+// Module ID: 17494
+// Function ID: 17495
 // Name: UnreadBars
-// Dependencies: [19, 17, 5144, 1087, 21, 5154, 6125, 587, 5026, 4886, 5119, 5120, 1202, 1128, 558, 576, 504, 13016, 2]
+// Dependencies: [19, 17, 5181, 1087, 21, 5191, 6162, 587, 5063, 4922, 5156, 5157, 1202, 1128, 558, 576, 504, 13081, 2]
 
-// Module 17435 (UnreadBars)
+// Module 17494 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import native2 from "native" /* 4886 */;
-import HapticUtils from "HapticUtils" /* 5119 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5120 */;
-import TransitionGroup2 from "TransitionGroup" /* 13016 */;
+import native2 from "native" /* 4922 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
+import TransitionGroup2 from "TransitionGroup" /* 13081 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
-import TextStyles from "TextStyles" /* 6125 */;
-import ColorUtils_mod from "ColorUtils" /* 5026 */;
+import createStyles from "createStyles" /* 5191 */;
+import TextStyles from "TextStyles" /* 6162 */;
+import ColorUtils_mod from "ColorUtils" /* 5063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -282,7 +282,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBars
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(13016).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(13081).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;

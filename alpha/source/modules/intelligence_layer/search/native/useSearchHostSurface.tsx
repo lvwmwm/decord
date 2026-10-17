@@ -1,13 +1,13 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17832
+// Function ID: 17833
 // Name: useSearchHostSurface
-// Dependencies: [17714, 558, 1506, 4877, 587, 2]
+// Dependencies: [17774, 558, 1506, 4913, 587, 2]
 
-// Module 17772 (useSearchHostSurface)
+// Module 17832 (useSearchHostSurface)
 import nativeDefault from "native" /* 587 */;
 import Link from "Link" /* 1506 */;
-import useToken2 from "useToken" /* 4877 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17714 */;
+import useToken2 from "useToken" /* 4913 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10963
+// Function ID: 10964
 // Name: ConjureChatStore
-// Dependencies: [109, 10897, 10900, 10902, 10901, 504, 1128, 3865, 584, 2]
+// Dependencies: [109, 6293, 10964, 10966, 10965, 504, 1128, 3883, 584, 2]
 // Exports: getOlderHistoryCursor
 
-// Module 10899 (ConjureChatStore)
+// Module 10963 (ConjureChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import conjureChatTurns from "conjureChatTurns" /* 10900 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 10901 */;
-import conjureChatHistory from "conjureChatHistory" /* 10902 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import conjureChatTurns from "conjureChatTurns" /* 10964 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 10965 */;
+import conjureChatHistory from "conjureChatHistory" /* 10966 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import size from "module_2" /* 2 */;
 
 let set3;
@@ -390,7 +390,7 @@ let obj = {
     }
     let tmp21 = messagesFromHistoryResult;
     set3 = map.set;
-    const foldDividers = tmp16(10902).foldDividers;
+    const foldDividers = tmp16(10966).foldDividers;
     conjureChatHistory;
     if (-1 !== num2) {
       const items1 = [];
@@ -689,7 +689,7 @@ let obj = {
       return false;
     } else {
       const obj3 = { ts: timestamp, id };
-      const obj2 = id(10902);
+      const obj2 = id(10966);
       const newMessageResult = obj2.newMessage("assistant", content, obj3);
       newMessageResult.kind = "publish_notice";
       newMessageResult.publishNotice = publishNotice;
@@ -705,7 +705,7 @@ let obj = {
       let tmp6 = null;
       if (-1 !== findLastIndexResult) {
         tmp6 = null;
-        const tmp2Result = id(10900);
+        const tmp2Result = id(10964);
         if (!tmp2Result.turnSettled(value[findLastIndexResult])) {
           tmp6 = value[findLastIndexResult];
         }
@@ -726,8 +726,8 @@ let obj = {
           items[arraySpreadResult] = obj4;
           const arraySpreadResult4 = HermesBuiltin.arraySpread(items, value.slice(findLastIndexResult + 1), arraySpreadResult + 1);
           items[arraySpreadResult4] = newMessageResult;
-          const newMessage = tmp2(10902).newMessage;
-          id(10902);
+          const newMessage = tmp2(10966).newMessage;
+          id(10966);
           if (null != tmp6.turn_id) {
             obj6 = { turnId: tmp6.turn_id };
             const obj5 = { turnId: tmp6.turn_id };
@@ -848,7 +848,7 @@ let obj = {
     if ("preview_ready" === step.kind) {
       if (null == turnId) {
         let tmp2 = step;
-        let obj = step(10900);
+        let obj = step(10964);
         if (!obj.hasOpenTurn(map.get(projectId))) {
           return false;
         }
@@ -967,7 +967,7 @@ let obj = {
       if (flag2) {
         const obj2 = { provisionalTodo: text };
         set = tmp.set;
-        const replaceAt = tmp3(10900).replaceAt;
+        const replaceAt = tmp3(10964).replaceAt;
         conjureChatTurns;
         const merged = Object.assign(value[findTurnSegmentResult]);
         const result = set(projectId, replaceAt(value, findTurnSegmentResult, obj2));
@@ -1118,7 +1118,7 @@ let obj = {
                 const obj = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
                 items = [];
-                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3865.lmiuFX) };
+                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3883.lmiuFX) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
                 intl = tmp11(tmp12[6]).intl;
                 items[arraySpreadResult] = obj2;

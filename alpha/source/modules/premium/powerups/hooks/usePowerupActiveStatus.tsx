@@ -1,16 +1,16 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 13183
+// Function ID: 13184
 // Name: usePowerupActiveStatus
-// Dependencies: [2090, 5066, 5067, 1087, 5068, 558, 576, 504, 2]
+// Dependencies: [2090, 5103, 5104, 1087, 5105, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 13118 (usePowerupActiveStatus)
+// Module 13183 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import GameServerConstants from "GameServerConstants" /* 5068 */;
+import GameServerConstants from "GameServerConstants" /* 5105 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5066 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
+      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
       cResult[2] = obj2;
       tmp6 = obj2;
     } else {
@@ -334,8 +334,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
   }
   const tmpResult = tmp(arg0, items);
   if (tmpResult.length <= 0) {
-    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
-    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
+    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
   } else {
     first = tmpResult[0];
   }

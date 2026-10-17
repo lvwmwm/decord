@@ -1,17 +1,17 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9032
+// Function ID: 9033
 // Name: ImageButton
-// Dependencies: [109, 19, 17, 21, 5154, 5447, 587, 558, 576, 5448, 4909, 5441, 5445, 5091, 7795, 5150, 5450, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 5484, 587, 558, 576, 5485, 4945, 5478, 5482, 5128, 7841, 5187, 5487, 2]
 
-// Module 8986 (ImageButton)
+// Module 9032 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5441 */;
-import ButtonConstants from "ButtonConstants" /* 5447 */;
+import spring from "spring" /* 5478 */;
+import ButtonConstants from "ButtonConstants" /* 5484 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, importDefault;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const springPresets = tmp(5445);
+const springPresets = tmp(5482);
 let closure_3 = ["size", "label", "grow", "image", "accessibilityLabel", "maxFontSizeMultiplier", "onPressIn", "onPressOut", "ref"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -30,9 +30,9 @@ let closure_9 = createStyles.createStyles((arg0, arg1, arg2) => {
   let rect;
   let MEDIUM_BUTTON_PADDING = ButtonConstants.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5447).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5484).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5447).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5484).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const tmpResult = ButtonConstants;

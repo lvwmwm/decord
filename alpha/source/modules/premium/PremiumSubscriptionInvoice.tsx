@@ -1,16 +1,16 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14460
+// Function ID: 14461
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4837, 1087, 4828, 1297, 584, 5854, 38, 5863, 558, 576, 2]
+// Dependencies: [109, 32, 5, 19, 4873, 1087, 4864, 1297, 584, 5891, 38, 5900, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 14392 (PremiumSubscriptionInvoice)
+// Module 14460 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1087 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 4837 */;
+import InvoiceRecord from "InvoiceRecord" /* 4873 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f119701 = (enabled) => enabled.enabled;
+const f120023 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -94,7 +94,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -248,7 +248,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -385,7 +385,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               body = undefined;
               quantity = 1;
               apply_wallet_balance = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
@@ -494,7 +494,7 @@ obj = function _getSubscriptionInvoice() {
             body = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -914,7 +914,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f119701);
+          const found = payment_sources.find(f120023);
           let id;
           if (found != null) {
             id = found.id;
@@ -968,7 +968,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f119701);
+          const found = payment_sources.find(f120023);
           let id;
           if (found != null) {
             id = found.id;

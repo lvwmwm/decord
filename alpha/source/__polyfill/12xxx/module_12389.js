@@ -1,86 +1,271 @@
 // Module ID: 12389
 // Function ID: 12390
-// Dependencies: [12304, 12305, 12390, 12331, 12360, 12391, 12315, 12313, 12352]
+// Dependencies: [41, 42, 12390, 12376, 12387, 12395]
+// Exports: getStackAsyncContextStrategy
 
 // Module 12389
-import _mod12331 from "module_12331" /* 12331 */;
-import _mod12391 from "module_12391" /* 12391 */;
-import module_12360 from "module_12360" /* 12360 */;
+import _mod12376 from "module_12376" /* 12376 */;
+import _mod12387 from "module_12387" /* 12387 */;
+import _mod12390 from "module_12390" /* 12390 */;
+import _mod12395 from "module_12395" /* 12395 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
+const require = globalThis.__r;
+let _require;
 
-export const captureConsoleIntegration = module_12360.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+function withScope(arg0) {
+  const obj = _mod12387;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12387;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod12395;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod12395;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
   }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    let tmp = CONSOLE_LEVELS;
-    let tmp2 = handled;
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
+  sentryCarrier.stack = stack;
+  return stack.withScope(arg0);
+}
+function withSetScope(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const obj = _mod12387;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12387;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod12395;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod12395;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
   }
-  handled = obj.handled;
-  let obj2 = {
-    name: "CaptureConsole",
-    setup(arg0) {
-      let closure_0 = arg0;
-      const tmp2 = handled;
-      const tmp = CONSOLE_LEVELS;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let tmpResult = tmp(tmp2[2]);
-        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
-          let args;
-          let level;
-          let obj3;
-          let tmpResult;
-          ({ args, level } = arg0);
-          let obj = _mod12331;
-          let hasItem = obj.getClient() === closure_0;
-          if (hasItem) {
-            let tmp4 = CONSOLE_LEVELS;
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            let closure_2 = handled;
-            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
-            obj3 = { arguments: args };
-            tmpResult = _mod12391;
-            const tmpResult2 = _mod12331;
-            tmpResult2.withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const obj = args(level[6]);
-                obj2 = { handled, type: "console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                const tmp12 = args;
-                if (found) {
-                  const tmp14Result = closure_2_0(closure_2_1[8]);
-                  tmp14Result.captureException(found, obj2);
-                } else {
-                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
-                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
-                  const obj4 = closure_2_0(closure_2_1[8]);
-                  obj4.captureMessage(safeJoinResult, obj2);
-                }
-              } else if (!args[0]) {
-                let obj = closure_2_0(closure_2_1[7]);
-                const _HermesInternal = HermesInternal;
-                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
-                const combined = "Assertion failed: " + tmp4;
-                addEventProcessor.setExtra("arguments", args.slice(1));
-                obj2 = closure_2_0(closure_2_1[8]);
-                obj2.captureMessage(combined, obj2);
-              }
-            });
-          }
+  sentryCarrier.stack = stack;
+  return stack.withScope(() => {
+    stack.getStackTop().scope = scope;
+    return closure_1(scope);
+  });
+}
+function withIsolationScope(arg0) {
+  let closure_0;
+  _require = arg0;
+  const obj = require("module_12387");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_12387");
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = require("module_12395");
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = require("module_12395");
+    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(function() {
+    const obj = require("module_12387");
+    const mainCarrier = obj.getMainCarrier();
+    const obj2 = require("module_12387");
+    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+    let stack = sentryCarrier.stack;
+    const tmp = closure_0;
+    if (!stack) {
+      const tmp2Result = require("module_12395");
+      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+      const self = this;
+      const self2 = this;
+      const tmp2Result2 = require("module_12395");
+      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+    }
+    sentryCarrier.stack = stack;
+    return tmp(stack.getIsolationScope());
+  });
+}
+class AsyncContextStack {
+  constructor(arg0, arg1) {
+    const self = this;
+    let scope = arg0;
+    _classCallCheck(this, AsyncContextStack);
+    if (!arg0) {
+      const self2 = this;
+      const self3 = this;
+      scope = new _mod12390.Scope();
+    }
+    let scope1 = arg1;
+    if (!scope1) {
+      const self4 = this;
+      const self5 = this;
+      scope1 = new _mod12390.Scope();
+    }
+    const items = [{ scope }];
+    self._stack = items;
+    self._isolationScope = scope1;
+  }
+}
+const entry = {
+  key: "withScope",
+  value: function withScope(fn) {
+    const self = this;
+    try {
+      let nextPromise;
+      const promise = fn(tmp);
+      const obj = _mod12376;
+      if (obj.isThenable(promise)) {
+        nextPromise = promise.then((result) => {
+          self._popScope();
+          return result;
+        }, (arg0) => {
+          self._popScope();
+          throw arg0;
         });
+      } else {
+        self._popScope();
+        nextPromise = promise;
       }
+      return nextPromise;
+    } catch (tmp9) {
+      self._popScope();
+      throw tmp9;
+    }
+  }
+};
+let items = [
+  entry,
+  {
+    key: "getClient",
+    value: function getClient() {
+      return this.getStackTop().client;
+    }
+  },
+  {
+    key: "getScope",
+    value: function getScope() {
+      return this.getStackTop().scope;
+    }
+  },
+  {
+    key: "getIsolationScope",
+    value: function getIsolationScope() {
+      return this._isolationScope;
+    }
+  },
+  {
+    key: "getStackTop",
+    value: function getStackTop() {
+      return this._stack[this._stack.length - 1];
+    }
+  },
+  {
+    key: "_pushScope",
+    value: function _pushScope() {
+      const scope = this.getScope();
+      const cloneResult = scope.clone();
+      const _stack = this._stack;
+      const obj = { client: this.getClient(), scope: cloneResult };
+      _stack.push(obj);
+      return cloneResult;
+    }
+  },
+  {
+    key: "_popScope",
+    value: function _popScope() {
+      let arr = this._stack.length > 1;
+      if (arr) {
+        const _stack = this._stack;
+        arr = _stack.pop();
+      }
+      return arr;
+    }
+  }
+];
+const _moduleResult = _createClass(AsyncContextStack, items);
+let c3 = _moduleResult;
+const AsyncContextStack_export = _moduleResult;
+
+export { AsyncContextStack_export as AsyncContextStack };
+export function getStackAsyncContextStrategy() {
+  let obj = {
+    withIsolationScope,
+    withScope,
+    withSetScope,
+    withSetIsolationScope(arg0, arg1) {
+      let closure_0 = arg1;
+      let tmp = closure_0;
+      let obj = closure_0(closure_1[4]);
+      let mainCarrier = obj.getMainCarrier();
+      let obj2 = closure_0(closure_1[4]);
+      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = tmp(closure_1[5]);
+        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        let self = this;
+        let self2 = this;
+        const tmpResult2 = tmp(closure_1[5]);
+        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.withScope(function() {
+        const obj = require("module_12387");
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = require("module_12387");
+        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+        let stack = sentryCarrier.stack;
+        const tmp = closure_0;
+        if (!stack) {
+          const tmp2Result = require("module_12395");
+          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+          const self = this;
+          const self2 = this;
+          const tmp2Result2 = require("module_12395");
+          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+        }
+        sentryCarrier.stack = stack;
+        return tmp(stack.getIsolationScope());
+      });
+    },
+    getCurrentScope() {
+      const obj = require("module_12387");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_12387");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_12395");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_12395");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getScope();
+    },
+    getIsolationScope() {
+      const obj = require("module_12387");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_12387");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_12395");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_12395");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getIsolationScope();
     }
   };
-  return obj2;
-});
+  return obj;
+}

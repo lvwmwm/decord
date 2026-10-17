@@ -1,9 +1,9 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9467
+// Function ID: 9468
 // Name: QuestOrbsMultiplier
 // Dependencies: [2]
 
-// Module 9403 (QuestOrbsMultiplier)
+// Module 9467 (QuestOrbsMultiplier)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestOrbsMultiplier.tsx");

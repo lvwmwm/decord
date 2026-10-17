@@ -1,9 +1,9 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8662
+// Function ID: 8663
 // Name: MediaViewerAnalyticsManager
 // Dependencies: [2068, 1087, 570, 1267, 2]
 
-// Module 8616 (MediaViewerAnalyticsManager)
+// Module 8662 (MediaViewerAnalyticsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import Constants from "Constants" /* 1087 */;
@@ -17,12 +17,12 @@ let values;
 ({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
 let obj = { VIEWER_SWIPE: "number_viewer_swipes", THUMBNAIL_SWIPE: "number_thumbnail_swipes", SELECTED_ITEM_CHANGE: "number_selected_item_changes", ZOOM_IN_BUTTON_PRESSED: "number_zoom_in_button_pressed", ZOOM_IN_IMAGE_PRESSED: "number_zoom_in_image_pressed", ZOOM_OUT_BUTTON_PRESSED: "number_zoom_out_button_pressed", ZOOM_OUT_IMAGE_PRESSED: "number_zoom_out_image_pressed", FORWARD_PRESSED: "number_forward_button_pressed", SAVE_MEDIA_PRESSED: "number_save_media_button_pressed", OPEN_LINK_PRESSED: "number_open_link_button_pressed", MORE_BUTTON_PRESSED: "number_more_button_pressed", COPY_IMAGE_PRESSED: "number_copy_image_more_menu_pressed", COPY_LINK_PRESSED: "number_copy_link_more_menu_pressed", CONTEXT_MENU_OPENED: "number_context_menu_opened" };
 let obj2 = {
-  guildId: "done",
+  guildId: "emoji",
   channelId: "toCharArray$esjava$1",
   channelType: "toCharArray$esjava$1",
   numMediaItems: "Array",
-  hasMediaOptions: "applicationId",
-  source: 285214014,
+  hasMediaOptions: "application",
+  source: 285214015,
   incrementableActions: fromEntries(values.map((item) => {
     const items = [item, 0];
     return items;

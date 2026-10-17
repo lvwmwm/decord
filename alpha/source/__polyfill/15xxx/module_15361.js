@@ -1,39 +1,25 @@
 // Module ID: 15361
 // Function ID: 15362
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [15327, 15348, 15362, 15372, 15373]
 
 // Module 15361
+import _mod15327 from "module_15327" /* 15327 */;
+import _mod15348 from "module_15348" /* 15348 */;
+import f2 from "f" /* 15362 */;
+import _mod15372 from "module_15372" /* 15372 */;
+import _mod15373 from "module_15373" /* 15373 */;
 
-export const getReactNativeVersionWithModules = function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
+function ownKeys(arg0) {
+  const obj = f2;
+  const fResult = obj.f(_mod15372(arg0));
+  const f = _mod15373.f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = closure_2(fResult, f(arg0));
   }
-};
+  return tmp2;
+}
+let closure_2 = _mod15327([].concat);
+_mod15348("Reflect", "ownKeys") || ownKeys;
+
+export default _mod15348("Reflect", "ownKeys") || ownKeys;

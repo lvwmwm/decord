@@ -1,16 +1,16 @@
-// Module ID: 18004
-// Function ID: 18005
+// Module ID: 18064
+// Function ID: 18065
 // Name: Suppressed
-// Dependencies: [19, 14755, 21, 18005, 1128, 18006, 18007, 5461, 2]
+// Dependencies: [19, 14824, 21, 18065, 1128, 18066, 18067, 5498, 2]
 
-// Module 18004 (Suppressed)
+// Module 18064 (Suppressed)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1128 */;
-import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 18005 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18006 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18007 */;
+import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 18065 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18066 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18067 */;
 import react from "react" /* 19 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14755 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 14824 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -46,7 +46,7 @@ class Suppressed extends Component {
       tmp6 = importDefault;
       tmp7 = AssetRegistryDefault2;
     }
-    return jsx(tmp6(5461), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+    return jsx(tmp6(5498), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
   }
 }
 const prototype = Suppressed.prototype;

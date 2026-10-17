@@ -1,13 +1,13 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 10986
+// Function ID: 10987
 // Name: ConjureCreateErrors
-// Dependencies: [1087, 1128, 3865, 2]
+// Dependencies: [1087, 1128, 3883, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 10922 (ConjureCreateErrors)
+// Module 10986 (ConjureCreateErrors)
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -23,12 +23,12 @@ class ConjureCreateError extends Error {
 const result = size.fileFinishedImporting("modules/conjure/create/ConjureCreateErrors.tsx");
 
 export { ConjureCreateError };
-export const classifyCreateFailure = function classifyCreateFailure(value) {
+export const classifyCreateFailure = function classifyCreateFailure(error) {
   let body;
   let status;
-  if (typeof value === "object") {
-    if (null !== value) {
-      ({ status, body } = value);
+  if (typeof error === "object") {
+    if (null !== error) {
+      ({ status, body } = error);
       if (typeof status !== "number") {
         return "unknown";
       } else if (429 === status) {
@@ -69,12 +69,12 @@ export const getConjureCreateErrorMessage = function getConjureCreateErrorMessag
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3865["lh+h/p"]);
+    return intl3.string(_modDef3883["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3865.zBENJU);
+    return intl2.string(_modDef3883.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3865["9m86fn"]);
+    return intl.string(_modDef3883["9m86fn"]);
   }
 };

@@ -1,17 +1,17 @@
-// Module ID: 12713
-// Function ID: 12714
+// Module ID: 12778
+// Function ID: 12779
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 5501, 1128, 3123, 5150, 9629, 7102, 12672, 12714, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5538, 1128, 3141, 5187, 9693, 7155, 12737, 12779, 2]
 
-// Module 12713 (TraitOptionDetails)
+// Module 12778 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3123 from "module_3123" /* 3123 */;
-import RarityBadgeDefault from "RarityBadge" /* 12714 */;
+import _modDef3141 from "module_3141" /* 3141 */;
+import RarityBadgeDefault from "RarityBadge" /* 12779 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5150);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
@@ -42,7 +42,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   let tmp5 = null;
   if (!hidden) {
     let tmp6;
-    if (asset.rarity === tmp(5501).CheckpointTraitRarity.NITRO) {
+    if (asset.rarity === tmp(5538).CheckpointTraitRarity.NITRO) {
       if (true === asset.locked) {
         let tmp8;
         if (cResult[0] !== tmp4) {
@@ -67,7 +67,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
                       return React3(Text_Text.Text, obj, arg1);
                     }
           };
-          const formatResult = intl.format(_modDef3123["3Wq/bk"], obj2);
+          const formatResult = intl.format(_modDef3141["3Wq/bk"], obj2);
           cResult[0] = tmp4;
           cResult[1] = formatResult;
           tmp8 = formatResult;
@@ -78,7 +78,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
       }
     }
     if (cResult[2] !== asset) {
-      const tmpResult = tmp(12672);
+      const tmpResult = tmp(12737);
       const assetDescription = tmpResult.getAssetDescription(asset);
       cResult[2] = asset;
       cResult[3] = assetDescription;
@@ -95,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
     }
     return tmp12;
   }
-  const tmp13 = closure_4(tmp(5150).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
+  const tmp13 = closure_4(tmp(5187).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
   cResult[4] = tmp5;
   cResult[5] = null == tmp5;
   cResult[6] = tmp13;
@@ -131,7 +131,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
                   return React3(Text_Text.Text, obj, arg1);
                 }
         };
-        formatResult = intl.format(_modDef3123["3Wq/bk"], obj);
+        formatResult = intl.format(_modDef3141["3Wq/bk"], obj);
       }
       tmp = formatResult;
     }

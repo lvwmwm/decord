@@ -1,9 +1,9 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 9256
+// Function ID: 9257
 // Name: SimilarGamesConstants
 // Dependencies: [2]
 
-// Module 9196 (SimilarGamesConstants)
+// Module 9256 (SimilarGamesConstants)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["700136079562375258", "1402418693958275202", "1402418696126992445", "1417993715611467826"]);

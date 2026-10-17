@@ -1,18 +1,18 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 13677
+// Function ID: 13678
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 1128, 13604, 5150, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 13672, 5187, 2]
 
-// Module 13609 (WishlistViewMoreCard)
+// Module 13677 (WishlistViewMoreCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 13604 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 13672 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

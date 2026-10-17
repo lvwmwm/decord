@@ -1,8 +1,8 @@
-// Module ID: 5565
-// Function ID: 5566
+// Module ID: 5602
+// Function ID: 5603
 // Dependencies: [2]
 
-// Module 5565
+// Module 5602
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/shoes/wumpus_slippers.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 11149
-// Function ID: 11150
+// Module ID: 11214
+// Function ID: 11215
 // Name: usePipPosition
-// Dependencies: [32, 19, 558, 576, 510, 11150, 2]
+// Dependencies: [32, 19, 558, 576, 510, 11215, 2]
 
-// Module 11149 (usePipPosition)
+// Module 11214 (usePipPosition)
 import Storage2 from "Storage" /* 510 */;
 import react2 from "react" /* 576 */;
-import PictureInPicture from "PictureInPicture" /* 11150 */;
+import PictureInPicture from "PictureInPicture" /* 11215 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

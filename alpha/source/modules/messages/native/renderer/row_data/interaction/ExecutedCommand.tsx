@@ -1,22 +1,22 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14272
+// Function ID: 14273
 // Name: ExecutedCommand
-// Dependencies: [17, 1406, 2068, 1392, 1087, 1420, 1417, 5846, 9877, 587, 7463, 5505, 8201, 8203, 8740, 1128, 9484, 2]
+// Dependencies: [17, 1406, 2068, 1392, 1087, 1420, 1417, 5883, 9941, 587, 7509, 5542, 8247, 8249, 8786, 1128, 9548, 2]
 // Exports: createExecutedCommand
 
-// Module 14204 (ExecutedCommand)
+// Module 14272 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import InteractionTypes from "InteractionTypes" /* 5505 */;
-import useMessageAuthor from "useMessageAuthor" /* 5846 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7463 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8201 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8203 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8740 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9484 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9877 */;
+import InteractionTypes from "InteractionTypes" /* 5542 */;
+import useMessageAuthor from "useMessageAuthor" /* 5883 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8247 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8249 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8786 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 9941 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;

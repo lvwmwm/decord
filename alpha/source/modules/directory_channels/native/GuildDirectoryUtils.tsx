@@ -1,10 +1,10 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12963
+// Function ID: 12964
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 12893, 5363, 12899, 2002, 2]
+// Dependencies: [5, 19, 21, 12958, 5400, 12964, 2002, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 12898 (directory_channels/GuildDirectoryUtils)
+// Module 12963 (directory_channels/GuildDirectoryUtils)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ let obj = function _onAddDirectoryGuildEntry() {
     obj.openLazy(obj8);
     await "IconComponent";
     ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = closure_0);
-    return "test";
+    return "Reflect";
   });
   return obj(...arguments);
 };

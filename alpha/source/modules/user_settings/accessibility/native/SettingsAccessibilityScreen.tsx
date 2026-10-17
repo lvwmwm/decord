@@ -1,23 +1,23 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16385
+// Function ID: 16386
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5144, 2045, 8214, 1087, 21, 1128, 2131, 2963, 7319, 6950, 16320, 558, 576, 1505, 573, 11003, 15662, 2]
+// Dependencies: [19, 5181, 2045, 8260, 1087, 21, 1128, 2131, 2981, 7370, 7003, 16386, 558, 576, 1505, 573, 11065, 15728, 2]
 
-// Module 16319 (SettingsAccessibilityScreen)
+// Module 16385 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl15 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import _modDef2963 from "module_2963" /* 2963 */;
-import openUserSettings from "openUserSettings" /* 7319 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
-import SettingLayoutDefault from "SettingLayout" /* 15662 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16320 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import openUserSettings from "openUserSettings" /* 7370 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingLayoutDefault from "SettingLayout" /* 15728 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16386 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2045 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -80,7 +80,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
   intl2 = intl15.intl;
   items1[1] = obj4;
-  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2963.L8U56h, obj6) };
+  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2981.L8U56h, obj6) };
   items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
   intl3 = intl15.intl;
   obj6 = {

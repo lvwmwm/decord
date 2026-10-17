@@ -1,33 +1,32 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12152
+// Function ID: 12153
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1392, 21, 5154, 12080, 12090, 12091, 587, 558, 576, 10900, 12049, 12059, 11607, 12093, 12042, 504, 12101, 12102, 12097, 12103, 12028, 11628, 12095, 5150, 1128, 12100, 12104, 12109, 12110, 12111, 12114, 3865, 12119, 12121, 12122, 12123, 12129, 12179, 12086, 12180, 12048, 12182, 12205, 12218, 12220, 12224, 12225, 12227, 12228, 2]
+// Dependencies: [19, 17, 1392, 21, 5191, 12143, 12153, 12154, 587, 558, 576, 10964, 12112, 12122, 11669, 12156, 12105, 504, 12164, 12165, 12160, 12166, 12091, 11690, 12158, 5187, 1128, 12163, 12167, 12172, 12173, 12174, 12177, 3883, 12182, 12184, 12185, 12186, 12192, 12242, 12149, 12243, 12111, 12245, 12268, 12281, 12283, 12287, 12288, 12290, 12291, 12292, 2]
 
-// Module 12089 (ConjureMessageRow)
+// Module 12152 (ConjureMessageRow)
 import nativeDefault from "native" /* 587 */;
-import conjureChatTurns from "conjureChatTurns" /* 10900 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11607 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12028 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12049 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12059 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12080 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12090 */;
-import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12091 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12097 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 12101 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12103 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12123 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 12129 */;
+import conjureChatTurns from "conjureChatTurns" /* 10964 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11669 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12091 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12112 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12122 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12143 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12153 */;
+import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12154 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12160 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 12164 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12166 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12186 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 12192 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ConjureActivityBoxDefault = ConjureActivityBox;
-let content;
 
 let c9;
 let closure_4;
@@ -85,7 +84,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp = projectId;
   const tmp2 = groupStart;
   let obj = projectId(groupStart[10]);
-  const cResult = obj.c(230);
+  const cResult = obj.c(232);
   projectId = projectId.projectId;
   const message = projectId.message;
   groupStart = projectId.groupStart;
@@ -121,8 +120,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let closure_13 = tmp8;
     const steps2 = message.steps;
     if (cResult[5] !== message) {
-      const tmpResult10 = tmp(tmp2[11]);
-      const turnSettledResult1 = tmpResult10.turnSettled(message);
+      const tmpResult11 = tmp(tmp2[11]);
+      const turnSettledResult1 = tmpResult11.turnSettled(message);
       cResult[5] = message;
       cResult[6] = turnSettledResult1;
       tmp10 = turnSettledResult1;
@@ -136,14 +135,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
       const length = tmp13;
       if (cResult[10] !== message.steps) {
-        const tmpResult11 = tmp(tmp2[12]);
-        const latestTodosResult = tmpResult11.latestTodos(message.steps);
+        const tmpResult12 = tmp(tmp2[12]);
+        const latestTodosResult = tmpResult12.latestTodos(message.steps);
         cResult[10] = message.steps;
         cResult[11] = latestTodosResult;
       }
       if (cResult[12] !== tmp8.tasks) {
-        const tmpResult12 = tmp(tmp2[13]);
-        const runningTodoAgentsResult = tmpResult12.runningTodoAgents(tmp8.tasks);
+        const tmpResult13 = tmp(tmp2[13]);
+        const runningTodoAgentsResult = tmpResult13.runningTodoAgents(tmp8.tasks);
         cResult[12] = tmp8.tasks;
         cResult[13] = runningTodoAgentsResult;
         let tmp17 = runningTodoAgentsResult;
@@ -165,8 +164,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 let tmp26;
                 let attachments;
                 if (cResult[25] !== message.content) {
-                  const tmpResult13 = tmp(tmp2[14]);
-                  const result = tmpResult13.parseConjureDesignRemark(message.content);
+                  const tmpResult14 = tmp(tmp2[14]);
+                  const result = tmpResult14.parseConjureDesignRemark(message.content);
                   cResult[25] = message.content;
                   cResult[26] = result;
                   tmp22 = result;
@@ -188,9 +187,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 } else {
                   tmp26 = cResult[28];
                 }
-                content = tmp26;
-                const tmpResult14 = tmp(tmp2[15]);
-                const conjureMentionNames = tmpResult14.useConjureMentionNames(tmp26);
+                const content = tmp26;
+                const tmpResult15 = tmp(tmp2[15]);
+                const conjureMentionNames = tmpResult15.useConjureMentionNames(tmp26);
                 if (cResult[29] === message.attachments) {
                   if (cResult[30] === message.content) {
                     if (cResult[33] === tmp4.row) {
@@ -221,8 +220,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         tmp35 = cResult[36];
                         tmp36 = cResult[37];
                       }
-                      const tmpResult15 = tmp(tmp2[17]);
-                      const stateFromStores = tmpResult15.useStateFromStores(tmp35, tmp36);
+                      const tmpResult16 = tmp(tmp2[17]);
+                      const stateFromStores = tmpResult16.useStateFromStores(tmp35, tmp36);
                       if (cResult[38] === message) {
                         let tmp39;
                         if (cResult[39] === onRestoreVersion) {
@@ -264,35 +263,36 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                             }
                           }
                         }
-                        class Ee {
-                          constructor() {
-                            tmp = closure_0(closure_2[20]);
-                            obj = { content: closure_15, userId: user_id, onQueuedAction: null, onRestoreVersion: null, onViewTrace: null };
-                            showConjureMessageActions = tmp.showConjureMessageActions;
-                            obj2 = closure_0(closure_2[21]);
-                            obj.onQueuedAction = obj2.queuedMessageActionHandler(projectId, message, closure_17);
-                            fn = undefined;
-                            if (null != closure_18) {
-                              tmp2 = onRestoreVersion;
-                              if (null != onRestoreVersion) {
-                                fn = () => {
-                                  const obj = projectId(groupStart[22]);
-                                  const obj2 = { onConfirm() { /* body not rendered: F156829 */ } };
-                                  return obj.confirmRestoreVersion(obj2);
+                        function be() {
+                          let fn;
+                          let fn2;
+                          let obj2;
+                          let obj = { content, userId: user_id, onQueuedAction: obj2.queuedMessageActionHandler(projectId, message, stateFromStores), onRestoreVersion: fn, onViewTrace: fn2 };
+                          const showConjureMessageActions = ConjureMessageActionSheet.showConjureMessageActions;
+                          ConjureMessageActionSheet;
+                          obj2 = conjureQueuedMessage;
+                          fn = undefined;
+                          if (null != closure_18) {
+                            if (null != onRestoreVersion) {
+                              fn = () => {
+                                const obj = projectId(groupStart[22]);
+                                const obj2 = {
+                                  onConfirm() {
+                                    return closure_1_11(closure_1_18);
+                                  }
                                 };
-                              }
-                            }
-                            obj.onRestoreVersion = fn;
-                            fn2 = undefined;
-                            if (null != closure_19) {
-                              fn2 = () => {
-                                const obj = projectId(groupStart[23]);
-                                return obj.requestConjureTrace(closure_1_0, closure_1_19);
+                                return obj.confirmRestoreVersion(obj2);
                               };
                             }
-                            obj.onViewTrace = fn2;
-                            return showConjureMessageActions(obj);
                           }
+                          fn2 = undefined;
+                          if (null != closure_19) {
+                            fn2 = () => {
+                              const obj = projectId(groupStart[23]);
+                              return obj.requestConjureTrace(closure_1_0, closure_1_19);
+                            };
+                          }
+                          return showConjureMessageActions(obj);
                         }
                         cResult[41] = user_id;
                         cResult[42] = tmp26;
@@ -302,27 +302,27 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         cResult[46] = projectId;
                         cResult[47] = tmp42;
                         cResult[48] = tmp39;
-                        cResult[49] = Ee;
+                        cResult[49] = be;
                       }
                       let turnRestoreEntryResult = null;
                       if (null != onRestoreVersion) {
-                        const tmpResult16 = tmp(tmp2[18]);
-                        turnRestoreEntryResult = tmpResult16.turnRestoreEntry(message);
+                        const tmpResult17 = tmp(tmp2[18]);
+                        turnRestoreEntryResult = tmpResult17.turnRestoreEntry(message);
                       }
                       cResult[38] = message;
                       cResult[39] = onRestoreVersion;
                       cResult[40] = turnRestoreEntryResult;
                       tmp39 = turnRestoreEntryResult;
                     }
-                    const items1 = [, groupStart && !first && tmp4.rowGroupStart];
+                    const items1 = [tmp4.row, groupStart && !first && tmp4.rowGroupStart];
                     cResult[33] = tmp4.row;
                     cResult[34] = groupStart && !first && tmp4.rowGroupStart;
                     cResult[35] = items1;
                   }
                 }
                 if ("user" === message.role) {
-                  const tmpResult17 = tmp(tmp2[16]);
-                  attachments = tmpResult17.withoutInlineFileMentions(message.attachments, message.content);
+                  const tmpResult18 = tmp(tmp2[16]);
+                  attachments = tmpResult18.withoutInlineFileMentions(message.attachments, message.content);
                 } else {
                   attachments = message.attachments;
                 }
@@ -339,6 +339,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 }
               }
               cResult[22] = onJumpToReplied;
+              cResult[23] = replied;
               cResult[24] = oe;
             }
           }
@@ -346,29 +347,31 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             return onTogglePlan(message.render_id, planSuperseded);
           }
           cResult[18] = message.render_id;
+          cResult[19] = onTogglePlan;
           cResult[20] = planSuperseded;
           cResult[21] = te;
           tmp20 = te;
         }
       }
-      function ne() {
+      function le() {
         return onToggleChecklist(message.render_id, checklistSuperseded);
       }
       cResult[14] = checklistSuperseded;
       cResult[15] = message.render_id;
       cResult[16] = onToggleChecklist;
-      cResult[17] = ne;
-      tmp19 = ne;
+      cResult[17] = le;
+      tmp19 = le;
     }
     let obj2 = { turnActive: tmp12 };
-    const turnSegmentsResult = obj5.turnSegments(steps2, obj2);
+    const tmpResult19 = tmp(tmp2[12]);
+    const turnSegmentsResult = tmpResult19.turnSegments(steps2, obj2);
     cResult[7] = message.steps;
     cResult[8] = !tmp10;
     cResult[9] = turnSegmentsResult;
     tmp13 = turnSegmentsResult;
   }
-  const tmpResult18 = tmp(tmp2[12]);
-  const timelineTree = tmpResult18.buildTimelineTree(steps, { turnActive: tmp7 });
+  const tmpResult20 = tmp(tmp2[12]);
+  const timelineTree = tmpResult20.buildTimelineTree(steps, { turnActive: tmp7 });
   cResult[2] = message.steps;
   cResult[3] = tmp7;
   cResult[4] = timelineTree;
@@ -415,7 +418,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp11Result17;
   let tmp11Result18;
   let tmp18Result;
-  let tmp50;
+  let tmp51;
   projectId = projectId.projectId;
   const message = projectId.message;
   const groupStart = projectId.groupStart;
@@ -574,31 +577,31 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if ("" === trimmed) {
     if (null == user_id) {
       if ("user" === message.role) {
-        let tmp86Result;
+        let tmp88Result;
         if ("" === trimmed) {
-          let tmp86Result2;
+          let tmp88Result2;
           if (null == memo4) {
-            tmp86Result2 = null;
+            tmp88Result2 = null;
           }
-          return tmp86Result2;
+          return tmp88Result2;
         }
         let obj3 = { style: items8, onLongPress: tmp22, accessible: false, children: items12 };
-        let tmp88 = null;
-        const tmp87 = onToggleChecklist;
+        let tmp90 = null;
+        const tmp89 = onToggleChecklist;
         if (groupStart) {
           let obj4 = { style: tmp.avatar, children: replied(tmp11(tmp12[24]).ConjureUserAvatar, obj5) };
           obj5 = { userId: message.user_id };
-          tmp88 = replied(planSuperseded, obj4);
+          tmp90 = replied(planSuperseded, obj4);
         }
-        items12 = [tmp88, , , ];
-        let tmp91 = null;
+        items12 = [tmp90, , , ];
+        let tmp93 = null;
         if (groupStart) {
           const obj6 = { style: tmp.header, children: replied(projectId(groupStart[24]).ConjureUserHeader, obj7) };
           obj7 = { userId: null, at: null };
-          ({ user_id: obj54.userId, created_at: obj54.at } = message);
-          tmp91 = replied(planSuperseded, obj6);
+          ({ user_id: obj55.userId, created_at: obj55.at } = message);
+          tmp93 = replied(planSuperseded, obj6);
         }
-        items12[1] = tmp91;
+        items12[1] = tmp93;
         if ("" !== trimmed) {
           let combined;
           const Text3 = tmp11(tmp12[25]).Text;
@@ -607,13 +610,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             const _HermesInternal = HermesInternal;
             combined = "" + intl3.string(tmp11(tmp12[26]).t.KD6OJJ) + ": " + conjureMentionNames;
           }
-          let tmp97 = null;
+          let tmp99 = null;
           const obj8 = { variant: "text-md/normal", color: "text-default", accessibilityLabel: combined, children: items13 };
           if (null != memo4) {
             const obj9 = { label: memo4.label, variant: "text-md/medium" };
-            tmp97 = replied(tmp18(tmp12[27]), obj9);
+            tmp99 = replied(tmp18(tmp12[27]), obj9);
           }
-          items13 = [tmp97, , ];
+          items13 = [tmp99, , ];
           let str6 = null;
           if (null != memo4) {
             str6 = null;
@@ -624,26 +627,26 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           items13[1] = str6;
           const obj10 = { text: trimmed, variant: "text-md/normal" };
           items13[2] = replied(message(groupStart[28]), obj10);
-          tmp86Result = tmp86(Text3, obj8);
+          tmp88Result = tmp88(Text3, obj8);
         } else {
-          tmp86Result = null;
+          tmp88Result = null;
         }
-        items12[2] = tmp86Result;
-        let tmp100 = null;
+        items12[2] = tmp88Result;
+        let tmp102 = null;
         if (null != tmp14) {
           const obj11 = { projectId, attachments: tmp14 };
-          tmp100 = replied(tmp18(tmp12[29]), obj11);
+          tmp102 = replied(tmp18(tmp12[29]), obj11);
         }
-        items12[3] = tmp100;
-        tmp86Result2 = tmp86(tmp87, obj3);
+        items12[3] = tmp102;
+        tmp88Result2 = tmp88(tmp89, obj3);
       } else if ("context_boundary" === message.kind) {
-        let tmp82 = null;
+        let tmp84 = null;
         if (null != message.contextSwitch) {
           const obj12 = { style: tmp.boundaryRow, children: replied(message(groupStart[30]), obj13) };
           obj13 = { projectId, contextSwitch: message.contextSwitch };
-          tmp82 = replied(planSuperseded, obj12);
+          tmp84 = replied(planSuperseded, obj12);
         }
-        return tmp82;
+        return tmp84;
       } else {
         if ("project_event" === message.kind) {
           if (null != message.projectEvent) {
@@ -670,7 +673,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return replied(planSuperseded, obj18);
         } else {
           let provisionalTodo;
-          let tmp51Result19;
+          let tmp52Result20;
           let steps = message.steps;
           const found = steps.find((kind) => "error" === kind.kind || "terminal_error" === kind.kind);
           let proposal;
@@ -721,6 +724,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if (restoreProposal == null) {
             restoreProposal = null;
           }
+          let prop = message.publishScheduleProposal;
+          if (prop == null) {
+            prop = null;
+          }
           clarification = null;
           if (isNewest) {
             clarification = null;
@@ -734,21 +741,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
             }
           }
-          let tmp36 = null;
+          let tmp37 = null;
           if (isNewest) {
-            tmp36 = null;
+            tmp37 = null;
             if (turnSettledResult) {
-              tmp36 = null;
+              tmp37 = null;
               if (!appBuildRequestDismissed) {
                 appBuildRequest = message.appBuildRequest;
                 if (appBuildRequest == null) {
                   appBuildRequest = null;
                 }
-                tmp36 = appBuildRequest;
+                tmp37 = appBuildRequest;
               }
             }
           }
-          appBuildRequest = tmp36;
+          appBuildRequest = tmp37;
           let items18 = memo2;
           if (memo2 == null) {
             let todos = null;
@@ -771,12 +778,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const tmp11Result13 = projectId(groupStart[36]);
           const turnPresentation = tmp11Result13.resolveTurnPresentation(obj22);
           ({ showsClosingMessage, replyKey: c23 } = turnPresentation);
-          let tmp40 = memo.steps.length > 0;
+          let tmp41 = memo.steps.length > 0;
           const closingContent = turnPresentation.closingContent;
-          if (!tmp40) {
-            tmp40 = memo.tasks.length > 0;
+          if (!tmp41) {
+            tmp41 = memo.tasks.length > 0;
           }
-          if (!tmp40) {
+          if (!tmp41) {
             if (0 === turnPresentation.streamed.length) {
               if ("" === trimmed) {
                 if (null == proposal) {
@@ -789,9 +796,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               if (null == tmp14) {
                                 if (null == clarification) {
                                   if (null == restoreProposal) {
-                                    if (null == tmp36) {
-                                      if (null == tmp26) {
-                                        return null;
+                                    if (null == prop) {
+                                      if (null == tmp37) {
+                                        if (null == tmp26) {
+                                          return null;
+                                        }
                                       }
                                     }
                                   }
@@ -808,7 +817,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
           const tmp11Result14 = projectId(groupStart[36]);
-          const turnLeadsWithStretchResult = tmp11Result14.turnLeadsWithStretch(tmp40, turnPresentation);
+          const turnLeadsWithStretchResult = tmp11Result14.turnLeadsWithStretch(tmp41, turnPresentation);
           c24 = turnLeadsWithStretchResult;
           const found1 = memo1.filter((hasWork) => hasWork.hasWork);
           const atResult = found1.at(-1);
@@ -817,25 +826,25 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             index = atResult.index;
           }
           const tmp11Result15 = projectId(groupStart[11]);
-          const tmp44 = !tmp11Result15.turnSettled(message);
-          closure_26 = tmp44;
-          const obj23 = { turnActive: tmp44 };
+          const tmp45 = !tmp11Result15.turnSettled(message);
+          closure_26 = tmp45;
+          const obj23 = { turnActive: tmp45 };
           const tmp11Result16 = projectId(groupStart[12]);
           open = tmp11Result16.turnLifecycle(memo1, obj23).open;
           let avatarSpokenReplying = groupStart && null != replied;
-          let tmp48Result = null;
-          const tmp46 = closure_9;
+          let tmp49Result = null;
+          const tmp47 = closure_9;
           if (avatarSpokenReplying) {
-            const obj24 = { replied, onJump: tmp50 };
-            tmp50 = undefined;
+            const obj24 = { replied, onJump: tmp51 };
+            tmp51 = undefined;
             const tmp18Result5 = message(groupStart[7]);
-            const tmp48 = replied;
+            const tmp49 = replied;
             if (null != onJumpToReplied) {
-              tmp50 = callback2;
+              tmp51 = callback2;
             }
-            tmp48Result = tmp48(tmp18Result5, obj24);
+            tmp49Result = tmp49(tmp18Result5, obj24);
           }
-          const items14 = [tmp48Result, , ];
+          const items14 = [tmp49Result, , ];
           const items15 = [, , ];
           ({ avatar: arr17[0], avatarSpoken: arr17[1] } = tmp);
           if (avatarSpokenReplying) {
@@ -848,19 +857,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const obj27 = { style: tmp.header, children: replied(projectId(groupStart[24]).ConjureHeader, obj28) };
           obj28 = { at: message.created_at };
           items14[2] = replied(planSuperseded, obj27);
-          const tmp45Result = onJumpToReplied(tmp46, obj25);
+          const tmp46Result = onJumpToReplied(tmp47, obj25);
           const obj29 = { style: items8, onLongPress: tmp22, accessible: false, children: null };
-          let tmp51Result = null;
-          const tmp54 = onToggleChecklist;
+          let tmp52Result = null;
+          const tmp55 = onToggleChecklist;
           if (turnLeadsWithStretchResult) {
-            tmp51Result = null;
+            tmp52Result = null;
             if (groupStart) {
-              const obj30 = { style: tmp.spoken, children: tmp45Result };
-              tmp51Result = tmp51(tmp52, obj30);
+              const obj30 = { style: tmp.spoken, children: tmp46Result };
+              tmp52Result = tmp52(tmp53, obj30);
             }
           }
           const items16 = [
-            tmp51Result,
+            tmp52Result,
             memo1.map((prose, index) => {
                       let ConjureRevealedMarkdown;
                       let obj2;
@@ -914,29 +923,31 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             if (null == proposal) {
               if (null == clarification) {
                 if (null == restoreProposal) {
-                  if (null == tmp36) {
-                    if (null == ideas) {
-                      if (null == tmp28) {
-                        if (null == tmp32) {
-                          if (null == tmp14) {
-                            if (null == found) {
-                              if (null == items18) {
-                                let tmp45Result2;
-                                if (null == provisionalTodo) {
-                                  tmp45Result2 = null;
+                  if (null == prop) {
+                    if (null == tmp37) {
+                      if (null == ideas) {
+                        if (null == tmp28) {
+                          if (null == tmp32) {
+                            if (null == tmp14) {
+                              if (null == found) {
+                                if (null == items18) {
+                                  let tmp46Result2;
+                                  if (null == provisionalTodo) {
+                                    tmp46Result2 = null;
+                                  }
+                                  items16[2] = tmp46Result2;
+                                  let tmp52Result16 = null;
+                                  if (null != tmp30) {
+                                    const obj31 = { style: tmp.spoken, children: replied(Text2, obj32) };
+                                    obj32 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(message(groupStart[33]).YR8A2v) };
+                                    Text2 = tmp11(tmp12[25]).Text;
+                                    intl = tmp11(tmp12[26]).intl;
+                                    tmp52Result16 = tmp52(tmp53, obj31);
+                                  }
+                                  items16[3] = tmp52Result16;
+                                  obj29.children = items16;
+                                  return onJumpToReplied(tmp55, obj29);
                                 }
-                                items16[2] = tmp45Result2;
-                                let tmp51Result15 = null;
-                                if (null != tmp30) {
-                                  const obj31 = { style: tmp.spoken, children: replied(Text2, obj32) };
-                                  obj32 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(message(groupStart[33]).YR8A2v) };
-                                  Text2 = tmp11(tmp12[25]).Text;
-                                  intl = tmp11(tmp12[26]).intl;
-                                  tmp51Result15 = tmp51(tmp52, obj31);
-                                }
-                                items16[3] = tmp51Result15;
-                                obj29.children = items16;
-                                return onJumpToReplied(tmp54, obj29);
                               }
                             }
                           }
@@ -948,35 +959,35 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
             }
           }
-          let tmp57 = null;
+          let tmp58 = null;
           const obj33 = { style: tmp.spoken, children: items17 };
           if (groupStart) {
-            tmp57 = null;
+            tmp58 = null;
             if (!turnLeadsWithStretchResult) {
-              tmp57 = tmp45Result;
+              tmp58 = tmp46Result;
             }
           }
-          items17 = [tmp57, , , , , , , , , , , , , ];
-          let tmp51Result16 = null;
+          items17 = [tmp58, , , , , , , , , , , , , , ];
+          let tmp52Result17 = null;
           if (showsClosingMessage) {
             const obj34 = { source: closingContent };
-            tmp51Result16 = tmp51(tmp18(tmp12[37]), obj34);
+            tmp52Result17 = tmp52(tmp18(tmp12[37]), obj34);
           }
-          items17[1] = tmp51Result16;
-          let tmp51Result17 = null;
+          items17[1] = tmp52Result17;
+          let tmp52Result18 = null;
           if ("side_reply" === message.kind) {
             const obj35 = { variant: "text-xs/normal", color: "text-muted", children: tmp11Result17.midTurnCaption(message.acknowledges) };
             const Text = tmp11(tmp12[25]).Text;
             tmp11Result17 = projectId(groupStart[39]);
-            tmp51Result17 = tmp51(Text, obj35);
+            tmp52Result18 = tmp52(Text, obj35);
           }
-          items17[2] = tmp51Result17;
-          let tmp51Result18 = null;
+          items17[2] = tmp52Result18;
+          let tmp52Result19 = null;
           if (null != tmp14) {
             const obj36 = { projectId, attachments: tmp14 };
-            tmp51Result18 = tmp51(tmp18(tmp12[29]), obj36);
+            tmp52Result19 = tmp52(tmp18(tmp12[29]), obj36);
           }
-          items17[3] = tmp51Result18;
+          items17[3] = tmp52Result19;
           if (null != items18) {
             const tmp18Result6 = message(groupStart[40]);
             const tmp18Result7 = message(groupStart[41]);
@@ -986,18 +997,18 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             const obj37 = { children: replied(tmp18Result7, obj38) };
             obj38 = { todos: items18, provisional: provisionalTodo, agents: memo3, live: tmp11Result18.checklistLive(message), superseded: checklistSuperseded, expanded: checklistExpanded, onToggleExpanded: callback };
             tmp11Result18 = projectId(groupStart[42]);
-            tmp51Result19 = tmp51(tmp18Result6, obj37);
+            tmp52Result20 = tmp52(tmp18Result6, obj37);
           } else {
-            tmp51Result19 = null;
+            tmp52Result20 = null;
           }
-          items17[4] = tmp51Result19;
-          let tmp51Result20 = null;
+          items17[4] = tmp52Result20;
+          let tmp52Result21 = null;
           if (null != proposal) {
             const obj39 = { projectId, proposal, version: planVersion, superseded: planSuperseded, expanded: planExpanded, onToggleExpanded: callback1, onApprove: onApprovePlan };
-            tmp51Result20 = tmp51(tmp18(tmp12[43]), obj39);
+            tmp52Result21 = tmp52(tmp18(tmp12[43]), obj39);
           }
-          items17[5] = tmp51Result20;
-          let tmp51Result21 = null;
+          items17[5] = tmp52Result21;
+          let tmp52Result22 = null;
           if (null != clarification) {
             const obj40 = {
               projectId,
@@ -1007,47 +1018,47 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                           return closure_9(clarification.id);
                         }
             };
-            tmp51Result21 = tmp51(tmp18(tmp12[44]), obj40);
+            tmp52Result22 = tmp52(tmp18(tmp12[44]), obj40);
           }
-          items17[6] = tmp51Result21;
-          let tmp51Result22 = null;
-          if (null != tmp36) {
+          items17[6] = tmp52Result22;
+          let tmp52Result23 = null;
+          if (null != tmp37) {
             const obj41 = {
               projectId,
-              request: tmp36,
+              request: tmp37,
               canSend,
               onDismiss() {
                           return closure_10(appBuildRequest.id);
                         }
             };
-            tmp51Result22 = tmp51(tmp18(tmp12[45]), obj41);
+            tmp52Result23 = tmp52(tmp18(tmp12[45]), obj41);
           }
-          items17[7] = tmp51Result22;
-          let tmp51Result23 = null;
+          items17[7] = tmp52Result23;
+          let tmp52Result24 = null;
           if (null != tmp28) {
             const obj42 = { projectId, cardId: message.render_id, request: tmp28, status: secretRequestStatus, awaiting: tmp30 };
-            tmp51Result23 = tmp51(tmp18(tmp12[46]), obj42);
+            tmp52Result24 = tmp52(tmp18(tmp12[46]), obj42);
           }
-          items17[8] = tmp51Result23;
-          let tmp51Result24 = null;
+          items17[8] = tmp52Result24;
+          let tmp52Result25 = null;
           if (null != tmp32) {
             const obj43 = { projectId, request: tmp32 };
-            tmp51Result24 = tmp51(tmp18(tmp12[47]), obj43);
+            tmp52Result25 = tmp52(tmp18(tmp12[47]), obj43);
           }
-          items17[9] = tmp51Result24;
-          let tmp51Result25 = null;
+          items17[9] = tmp52Result25;
+          let tmp52Result26 = null;
           if (null != tmp26) {
             const obj44 = { projectId };
-            tmp51Result25 = tmp51(tmp18(tmp12[48]), obj44);
+            tmp52Result26 = tmp52(tmp18(tmp12[48]), obj44);
           }
-          items17[10] = tmp51Result25;
-          let tmp51Result26 = null;
+          items17[10] = tmp52Result26;
+          let tmp52Result27 = null;
           if (null != ideas) {
             const obj45 = { ideas, onPick: onPickIdea };
-            tmp51Result26 = tmp51(tmp18(tmp12[49]), obj45);
+            tmp52Result27 = tmp52(tmp18(tmp12[49]), obj45);
           }
-          items17[11] = tmp51Result26;
-          let tmp51Result27 = null;
+          items17[11] = tmp52Result27;
+          let tmp52Result28 = null;
           if (null != restoreProposal) {
             const obj46 = { proposal: restoreProposal, onRestore: fn };
             fn = undefined;
@@ -1066,19 +1077,25 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 };
               }
             }
-            tmp51Result27 = tmp51(tmp18Result8, obj46);
+            tmp52Result28 = tmp52(tmp18Result8, obj46);
           }
-          items17[12] = tmp51Result27;
-          let tmp51Result28 = null;
+          items17[12] = tmp52Result28;
+          let tmp52Result29 = null;
+          if (null != prop) {
+            const obj47 = { projectId, proposal: prop, current: isNewest };
+            tmp52Result29 = tmp52(tmp18(tmp12[51]), obj47);
+          }
+          items17[13] = tmp52Result29;
+          let tmp52Result30 = null;
           if (null != found) {
-            tmp51Result28 = null;
+            tmp52Result30 = null;
             if ("message" in found) {
-              const obj47 = { variant: "text-sm/normal", color: "text-feedback-critical", children: found.message };
-              tmp51Result28 = tmp51(tmp11(tmp12[25]).Text, obj47);
+              const obj48 = { variant: "text-sm/normal", color: "text-feedback-critical", children: found.message };
+              tmp52Result30 = tmp52(tmp11(tmp12[25]).Text, obj48);
             }
           }
-          items17[13] = tmp51Result28;
-          tmp45Result2 = tmp45(tmp52, obj33);
+          items17[14] = tmp52Result30;
+          tmp46Result2 = tmp46(tmp53, obj33);
         }
       }
     }

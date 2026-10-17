@@ -1,12 +1,12 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12340
+// Function ID: 12341
 // Name: ConjureDebugSnapshot
-// Dependencies: [10908, 10903, 2]
+// Dependencies: [10972, 10967, 2]
 // Exports: conjureDebugSnapshot
 
-// Module 12275 (ConjureDebugSnapshot)
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10908 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10903 */;
+// Module 12340 (ConjureDebugSnapshot)
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10972 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10967 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugSnapshot.tsx");

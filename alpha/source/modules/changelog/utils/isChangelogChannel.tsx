@@ -1,10 +1,10 @@
-// Module ID: 6311
-// Function ID: 6312
+// Module ID: 6369
+// Function ID: 6370
 // Name: isChangelogChannel
 // Dependencies: [2068, 2118, 2]
 // Exports: default
 
-// Module 6311 (isChangelogChannel)
+// Module 6369 (isChangelogChannel)
 import ChangelogConstants from "ChangelogConstants" /* 2118 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;

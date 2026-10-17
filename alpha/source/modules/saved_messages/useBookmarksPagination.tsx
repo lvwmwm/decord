@@ -1,14 +1,14 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13589
+// Function ID: 13590
 // Name: useBookmarksPagination
-// Dependencies: [19, 9916, 1087, 13522, 558, 576, 504, 13521, 9917, 2]
+// Dependencies: [19, 9980, 1087, 13588, 558, 576, 504, 13587, 9981, 2]
 
-// Module 13523 (useBookmarksPagination)
+// Module 13589 (useBookmarksPagination)
 import Constants from "Constants" /* 1087 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9917 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 13522 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9981 */;
+import SavedMessagesActions from "SavedMessagesActions" /* 13588 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9916 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 12042
+// Function ID: 12043
 // Name: PollsActionCreators
-// Dependencies: [5, 4810, 7533, 502, 2068, 7464, 6110, 5495, 8129, 10734, 1087, 38, 5362, 1128, 6324, 7143, 11980, 11982, 5169, 12, 504, 584, 8122, 11991, 5028, 11985, 7399, 9502, 5854, 2]
+// Dependencies: [5, 4846, 7579, 502, 2068, 7510, 6147, 5532, 8175, 10797, 1087, 38, 5399, 1128, 6377, 7196, 12043, 12045, 5206, 12, 504, 584, 8168, 12054, 5065, 12048, 7445, 9566, 5891, 2]
 
-// Module 11979 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5169 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5362 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6324 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7143 */;
-import DraftStore from "DraftStore" /* 7464 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 11980 */;
+// Module 12042 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7196 */;
+import DraftStore from "DraftStore" /* 7510 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4810 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7533 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7579 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6110 */;
-import MessageStore from "MessageStore" /* 5495 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8129 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10734 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6147 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10797 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ let obj = function _optimisticallySetAnswers() {
       await "IconComponent";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -400,7 +400,7 @@ obj = function _handlePollSubmitVote() {
       await "IconComponent";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -446,7 +446,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _handlePollActionTapped() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -681,7 +681,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -847,7 +847,7 @@ obj = function _endPollEarly() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;

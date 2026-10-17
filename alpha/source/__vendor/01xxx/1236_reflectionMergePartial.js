@@ -6,7 +6,7 @@
 
 // Module 1236 (reflectionMergePartial)
 
-export const reflectionMergePartial = function reflectionMergePartial(arg0, reflectionCreateResult, arr) {
+export const reflectionMergePartial = function reflectionMergePartial(arg0, reflectionCreateResult, partialSettings) {
   let length;
   let length2;
   let sum;
@@ -14,11 +14,12 @@ export const reflectionMergePartial = function reflectionMergePartial(arg0, refl
   const iter = arg0.fields[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
+    let arr;
     let tmp2;
     let obj = nextResult;
     let localName = nextResult.localName;
     if (nextResult.oneof) {
-      let tmp6 = arr[obj.oneof];
+      let tmp6 = partialSettings[obj.oneof];
       let tmp7 = tmp6;
       let oneofKind;
       if (null != tmp6) {
@@ -39,7 +40,7 @@ export const reflectionMergePartial = function reflectionMergePartial(arg0, refl
       }
     } else {
       tmp2 = reflectionCreateResult;
-      let tmp4 = arr[localName];
+      let tmp4 = partialSettings[localName];
       arr = tmp4;
       continue;
     }

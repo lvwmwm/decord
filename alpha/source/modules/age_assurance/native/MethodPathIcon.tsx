@@ -1,15 +1,15 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7842
+// Function ID: 7843
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 4877, 7797, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4913, 7843, 2]
 
-// Module 7796 (MethodPathIcon)
+// Module 7842 (MethodPathIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import inlineStyles from "inlineStyles" /* 7797 */;
+import inlineStyles from "inlineStyles" /* 7843 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require;
 
 let size;
 let tmp4;
-const inlineStylesDefault = tmp4(7797);
+const inlineStylesDefault = tmp4(7843);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: size };
@@ -31,7 +31,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MethodPathIc
   const cResult = obj.c(10);
   icon = icon.icon;
   const tmp3 = closure_5();
-  const obj2 = token(4877);
+  const obj2 = token(4913);
   token = obj2.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT);
   if (cResult[0] === icon.paths) {
     let tmp7;

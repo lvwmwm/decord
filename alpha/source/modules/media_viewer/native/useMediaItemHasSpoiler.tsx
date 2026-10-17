@@ -1,10 +1,10 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8665
+// Function ID: 8666
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 2068, 558, 576, 8615, 8620, 573, 8626, 2]
+// Dependencies: [19, 2068, 558, 576, 8661, 8666, 573, 8672, 2]
 
-// Module 8619 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 8620 */;
+// Module 8665 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8666 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   } else {
     tmp4 = cResult[1];
   }
-  const MediaViewerSourcesStore = tmp(8615).MediaViewerSourcesStore;
+  const MediaViewerSourcesStore = tmp(8661).MediaViewerSourcesStore;
   const state = MediaViewerSourcesStore.useState(tmp4);
   if (cResult[2] !== arg0) {
     const fn2 = function o(userRevealedIndexes) {
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   } else {
     tmp6 = cResult[3];
   }
-  const MediaViewerSourcesStore2 = tmp(8615).MediaViewerSourcesStore;
+  const MediaViewerSourcesStore2 = tmp(8661).MediaViewerSourcesStore;
   const state1 = MediaViewerSourcesStore2.useState(tmp6);
   if (cResult[4] !== state) {
     let flattenSourceResult;

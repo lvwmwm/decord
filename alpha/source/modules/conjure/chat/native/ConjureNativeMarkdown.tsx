@@ -1,18 +1,18 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 12186
+// Function ID: 12187
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 587, 5154, 558, 576, 12124, 5150, 12125, 12126, 2]
+// Dependencies: [19, 17, 21, 587, 5191, 558, 576, 12187, 5187, 12188, 12189, 2]
 
-// Module 12123 (ConjureNativeMarkdown)
+// Module 12186 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12124 */;
-import conjureMarkup from "conjureMarkup" /* 12125 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12187 */;
+import conjureMarkup from "conjureMarkup" /* 12188 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const useConjureRevealedText = tmp(12126);
+const useConjureRevealedText = tmp(12189);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const CONJURE_MARKUP_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true };
@@ -51,7 +51,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const tmp = _require;
   _require = tmp4;
   if (cResult[0] !== source) {
-    const tmpResult = tmp(12124);
+    const tmpResult = tmp(12187);
     const splitMarkdownBlocksResult = tmpResult.splitMarkdownBlocks(source);
     cResult[0] = source;
     cResult[1] = splitMarkdownBlocksResult;

@@ -1,17 +1,17 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16534
+// Function ID: 16535
 // Name: SelectWebBrowserSetting
-// Dependencies: [8214, 558, 5115, 576, 1128, 1107, 1384, 11003, 2]
+// Dependencies: [8260, 558, 5152, 576, 1128, 1107, 1384, 11065, 2]
 
-// Module 16470 (SelectWebBrowserSetting)
+// Module 16534 (SelectWebBrowserSetting)
 import react from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import BrowserManager from "BrowserManager" /* 5115 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
+import BrowserManager from "BrowserManager" /* 5152 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

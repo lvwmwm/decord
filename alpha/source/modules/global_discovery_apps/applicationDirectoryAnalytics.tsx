@@ -1,14 +1,14 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7646
+// Function ID: 7647
 // Name: applicationDirectoryAnalytics
-// Dependencies: [2119, 4998, 1087, 1267, 2]
+// Dependencies: [2119, 5034, 1087, 1267, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7600 (applicationDirectoryAnalytics)
+// Module 7646 (applicationDirectoryAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

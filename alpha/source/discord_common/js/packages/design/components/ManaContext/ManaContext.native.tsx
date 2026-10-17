@@ -1,9 +1,9 @@
-// Module ID: 4952
-// Function ID: 4953
+// Module ID: 4988
+// Function ID: 4989
 // Name: ManaContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 4952 (ManaContext)
+// Module 4988 (ManaContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

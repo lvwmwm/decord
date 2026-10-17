@@ -1,12 +1,12 @@
-// Module ID: 6315
-// Function ID: 6316
+// Module ID: 6304
+// Function ID: 6305
 // Name: SKURecord
-// Dependencies: [1407, 2024, 6316, 1087, 4761, 6317, 6318, 1405, 2]
+// Dependencies: [1407, 2024, 6305, 1087, 4797, 6306, 6307, 1405, 2]
 
-// Module 6315 (SKURecord)
-import _modDef4761 from "module_4761" /* 4761 */;
-import SKUConstants from "SKUConstants" /* 6316 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 6317 */;
+// Module 6304 (SKURecord)
+import _modDef4797 from "module_4797" /* 4797 */;
+import SKUConstants from "SKUConstants" /* 6305 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 6306 */;
 import Record from "Record" /* 1407 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(6318);
+const transformSKUTenantMetadataDefault = tmp15(6307);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {
@@ -68,11 +68,11 @@ class SKURecord extends Record {
     }
     tmp6 = null;
     if (null != id.release_date) {
-      tmp6 = _modDef4761(id.release_date);
+      tmp6 = _modDef4797(id.release_date);
     }
     tmp9 = null;
     if (null != id.preorder_release_at) {
-      tmp9 = _modDef4761(id.preorder_release_at);
+      tmp9 = _modDef4797(id.preorder_release_at);
     }
     ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
     new Set(id.features);

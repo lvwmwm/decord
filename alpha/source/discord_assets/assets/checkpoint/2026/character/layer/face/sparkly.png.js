@@ -1,8 +1,8 @@
-// Module ID: 5742
-// Function ID: 5743
+// Module ID: 5779
+// Function ID: 5780
 // Dependencies: [2]
 
-// Module 5742
+// Module 5779
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/sparkly.png.js");

@@ -55,16 +55,16 @@ class PerformanceResourceTiming {
       constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_8, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_9, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_10, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_11, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_12, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_13, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_14, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_15, { writable: true, value: "a" });
+    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_8, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_9, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_10, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_11, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_12, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_13, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_14, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_15, { writable: true, value: "Array" });
     ({ fetchStart: _classPrivateFieldBase(undefined, tmp6, closure_6)[closure_6], requestStart: _classPrivateFieldBase(undefined, tmp6, closure_7)[closure_7], connectStart: _classPrivateFieldBase(undefined, tmp6, closure_8)[closure_8], connectEnd: _classPrivateFieldBase(undefined, tmp6, closure_9)[closure_9], responseStart: _classPrivateFieldBase(undefined, tmp6, closure_10)[closure_10], responseEnd: _classPrivateFieldBase(undefined, tmp6, closure_11)[closure_11], responseStatus: _classPrivateFieldBase(undefined, tmp6, closure_12)[closure_12], contentType: _classPrivateFieldBase(undefined, tmp6, closure_13)[closure_13], encodedBodySize: _classPrivateFieldBase(undefined, tmp6, closure_14)[closure_14], decodedBodySize: _classPrivateFieldBase(undefined, tmp6, closure_15)[closure_15] } = arg0);
     return tmp3Result;
   }

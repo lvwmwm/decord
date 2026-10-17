@@ -1,11 +1,11 @@
-// Module ID: 10619
-// Function ID: 10620
+// Module ID: 10682
+// Function ID: 10683
 // Name: useSafeAreaBottomKeyboardInfoController
-// Dependencies: [19, 1630, 1384, 1645, 1646, 558, 576, 1502, 1647, 4909, 1895, 2]
+// Dependencies: [19, 1630, 1384, 1645, 1646, 558, 576, 1502, 1647, 4945, 1895, 2]
 
-// Module 10619 (useSafeAreaBottomKeyboardInfoController)
+// Module 10682 (useSafeAreaBottomKeyboardInfoController)
 import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1895 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import react from "react" /* 19 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

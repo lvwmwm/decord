@@ -1,15 +1,15 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13184
+// Function ID: 13185
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [558, 576, 2052, 7325, 13113, 13120, 2]
+// Dependencies: [558, 576, 2052, 7376, 13178, 13185, 2]
 // Exports: useExpiringPowerupCoachmarkDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF
 
-// Module 13119 (GuildPowerupsNotificationsDCF)
+// Module 13184 (GuildPowerupsNotificationsDCF)
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7325 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13113 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 13120 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7376 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13178 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 13185 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

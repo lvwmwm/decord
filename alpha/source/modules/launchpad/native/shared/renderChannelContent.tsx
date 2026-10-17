@@ -1,24 +1,24 @@
-// Module ID: 17736
-// Function ID: 17737
+// Module ID: 17796
+// Function ID: 17797
 // Name: renderChannelContent
-// Dependencies: [19, 17, 11818, 6186, 21, 5154, 1384, 558, 576, 17733, 7020, 17737, 5150, 8449, 7792, 17196, 2]
+// Dependencies: [19, 17, 11881, 6223, 21, 5191, 1384, 558, 576, 17793, 7073, 17797, 5187, 8495, 7838, 17256, 2]
 // Exports: default
 
-// Module 17736 (renderChannelContent)
+// Module 17796 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import ReadStateConstants from "ReadStateConstants" /* 6186 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7020 */;
-import WarningIcon from "WarningIcon" /* 7792 */;
-import LockIcon from "LockIcon" /* 8449 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11818 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17196 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17733 */;
-import ChannelTitleDefault from "ChannelTitle" /* 17737 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7073 */;
+import WarningIcon from "WarningIcon" /* 7838 */;
+import LockIcon from "LockIcon" /* 8495 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11881 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17256 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17793 */;
+import ChannelTitleDefault from "ChannelTitle" /* 17797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -153,7 +153,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                 let tmp31 = null;
                 if (null != channelCategoryName) {
                   const obj4 = { variant: "text-xs/bold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
-                  tmp31 = metroImportDefault(tmp(5150).Text, obj4);
+                  tmp31 = metroImportDefault(tmp(5187).Text, obj4);
                 }
                 cResult[21] = channelCategoryName;
                 cResult[22] = tmp31;
@@ -302,7 +302,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                                         let tmp59Result = tmp20;
                                         if (tmp59Result) {
                                           let num49 = 1;
-                                          const Text = tmp(5150).Text;
+                                          const Text = tmp(5187).Text;
                                           const tmp59 = metroImportDefault;
                                           if (!muted) {
                                             num49 = SUBTITLE_OPACITY_NORMAL;
@@ -388,13 +388,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                 let tmp37 = tmp8;
                 if (tmp37) {
                   const obj20 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp37 = metroImportDefault(tmp(8449).LockIcon, obj20);
+                  tmp37 = metroImportDefault(tmp(8495).LockIcon, obj20);
                 }
                 items7 = [tmp37, , ];
                 let tmp39 = tmp12;
                 if (tmp39) {
                   const obj21 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp39 = metroImportDefault(tmp(7792).WarningIcon, obj21);
+                  tmp39 = metroImportDefault(tmp(7838).WarningIcon, obj21);
                 }
                 items7[1] = tmp39;
                 let tmp41 = isSubscriptionGated;
@@ -473,7 +473,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(7020)(channel);
+      locked = tmp2(7073)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -535,7 +535,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(17196), obj12);
+      isSubscriptionGated = tmp9(tmp2(17256), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

@@ -1,16 +1,16 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13556
+// Function ID: 13557
 // Name: NotificationContent
-// Dependencies: [19, 17, 21, 5154, 587, 558, 576, 13491, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 13557, 2]
 
-// Module 13490 (NotificationContent)
+// Module 13556 (NotificationContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 13491 */;
+import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 13557 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp;
-const MessageNotificationHeader = tmp(13491);
+const MessageNotificationHeader = tmp(13557);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

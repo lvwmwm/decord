@@ -1,16 +1,16 @@
-// Module ID: 8600
-// Function ID: 8601
+// Module ID: 8646
+// Function ID: 8647
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1087, 21, 5154, 558, 576, 2044, 8601, 1417, 8608, 6409, 1128, 8355, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 2044, 8647, 1417, 8654, 6462, 1128, 8401, 2]
 
-// Module 8600 (UserProfileBanner)
+// Module 8646 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import BannerDefault from "Banner" /* 8608 */;
+import BannerDefault from "Banner" /* 8654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

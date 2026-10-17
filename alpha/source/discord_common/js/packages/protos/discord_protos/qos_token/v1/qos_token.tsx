@@ -1,9 +1,9 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15218
+// Function ID: 15219
 // Name: qos_token
 // Dependencies: [32, 1212, 2]
 
-// Module 15149 (qos_token)
+// Module 15218 (qos_token)
 import _mod1212 from "module_1212" /* 1212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -29,14 +29,14 @@ class QosToken$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.qos_token.v1.QosToken", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -121,14 +121,14 @@ class ClientProvidedQosData$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.qos_token.v1.ClientProvidedQosData", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { isActive: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -201,7 +201,7 @@ class DerivedQosData$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.qos_token.v1.DerivedQosData", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     let uint8Array;
     let uint8Array1;
     const obj = { claims: uint8Array, signature: uint8Array1, keyId: 0 };
@@ -210,9 +210,9 @@ class DerivedQosData$Type extends MessageType3 {
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmp3Result = _mod1212;
-      const result = tmp3Result.reflectionMergePartial(this, obj, arr);
+      const result = tmp3Result.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -296,16 +296,16 @@ class Claims$Type extends MessageType4 {
     const tmp2 = new tmp("discord_protos.qos_token.v1.Claims", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     let uint8Array;
     const obj = { userId: "0", issuedAt: "0", isStaff: false, authTokenHash: uint8Array, expiresAt: "0" };
     uint8Array = new Uint8Array(0);
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmp2Result = _mod1212;
-      const result = tmp2Result.reflectionMergePartial(this, obj, arr);
+      const result = tmp2Result.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

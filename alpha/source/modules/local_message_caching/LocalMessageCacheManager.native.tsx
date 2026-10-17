@@ -1,32 +1,32 @@
-// Module ID: 15521
-// Function ID: 15522
+// Module ID: 15584
+// Function ID: 15585
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4820, 502, 2068, 5495, 1087, 15522, 3, 1104, 510, 4761, 4852, 10047, 7399, 11118, 13687, 2002, 2004, 584, 5971, 9554, 2]
+// Dependencies: [5, 32, 4856, 502, 2068, 5532, 1087, 15585, 3, 1104, 510, 4797, 4888, 10111, 7445, 11181, 13755, 2002, 2004, 584, 6008, 9618, 2]
 
-// Module 15521 (LocalMessageCacheManager)
+// Module 15584 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import DateUtils from "DateUtils" /* 4852 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7399 */;
-import createMessageDefault from "createMessage" /* 10047 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import DateUtils from "DateUtils" /* 4888 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
+import createMessageDefault from "createMessage" /* 10111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4820 */;
+import MessageRecord from "MessageRecord" /* 4856 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5495 */;
-import MutexUtils from "MutexUtils" /* 15522 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import MutexUtils from "MutexUtils" /* 15585 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11118);
+const UploadActionCreatorsDefault = tmp(11181);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();
@@ -53,8 +53,8 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = _modDef4761();
-    const tmp5 = _modDef4761(arg0);
+    const tmp4 = _modDef4797();
+    const tmp5 = _modDef4797(arg0);
     obj = DateUtils;
     return obj.isWithinInterval(tmp4, tmp5, arg1);
   } else {

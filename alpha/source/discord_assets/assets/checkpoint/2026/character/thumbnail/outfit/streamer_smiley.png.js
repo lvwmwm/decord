@@ -1,8 +1,8 @@
-// Module ID: 5636
-// Function ID: 5637
+// Module ID: 5673
+// Function ID: 5674
 // Dependencies: [2]
 
-// Module 5636
+// Module 5673
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/streamer_smiley.png.js");

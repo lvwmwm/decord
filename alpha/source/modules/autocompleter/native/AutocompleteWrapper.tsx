@@ -1,9 +1,9 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 13038
+// Function ID: 13039
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8143, 6206, 5976, 6249, 1087, 5466, 9952, 5467, 10036, 1395, 21, 8463, 6950, 10048, 5154, 1384, 587, 12974, 558, 576, 1499, 6889, 6483, 504, 4877, 10760, 12981, 12982, 2044, 6488, 10035, 12983, 7269, 9951, 6320, 9663, 12984, 7463, 12773, 2000, 7590, 1631, 5169, 8934, 9348, 8935, 12985, 12986, 9507, 8382, 12811, 4909, 12987, 7467, 12994, 5150, 1128, 7038, 8813, 12995, 12996, 2]
+// Dependencies: [32, 19, 17, 8189, 6243, 6013, 6286, 1087, 5503, 10016, 5504, 10100, 1395, 21, 8509, 7003, 10112, 5191, 1384, 587, 13039, 558, 576, 1499, 6942, 6536, 504, 4913, 10823, 13046, 13047, 2044, 6541, 10099, 13048, 7320, 10015, 6373, 9727, 13049, 7509, 12838, 2000, 7636, 1631, 5206, 8980, 9406, 8981, 13050, 13051, 9571, 8428, 12876, 4945, 13052, 7513, 13059, 5187, 1128, 7091, 8859, 13060, 13061, 2]
 
-// Module 12973 (AutocompleteWrapper)
+// Module 13038 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -11,32 +11,32 @@ import EmojiConstants from "EmojiConstants" /* 1395 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import Server from "Server" /* 2000 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5169 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5466 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6320 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6950 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7467 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8463 */;
-import GameSearchSession from "GameSearchSession" /* 8934 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9507 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9951 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 10035 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10036 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10048 */;
-import Autocomplete from "Autocomplete" /* 12974 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12985 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6373 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7003 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
+import GameSearchSession from "GameSearchSession" /* 8980 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10015 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10099 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10100 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10112 */;
+import Autocomplete from "Autocomplete" /* 13039 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 13050 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8143 */;
-import EmojiStore from "EmojiStore" /* 6206 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
-import StickersStore from "StickersStore" /* 6249 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8189 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import StickersStore from "StickersStore" /* 6286 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9952 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5467 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10016 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,9 +59,9 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const NavigatorConstants = tmp(6483);
-const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6889);
-const application_commands_ApplicationCommandUtils = tmp(12811);
+const NavigatorConstants = tmp(6536);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6942);
+const application_commands_ApplicationCommandUtils = tmp(12876);
 function getItemKey(type, arg1) {
   type = type.type;
   if (constants.USER === type) {
@@ -1034,7 +1034,7 @@ class ACWrapper {
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != applicationCommandManager) {
-            const tmp8Result = tmp8(8382);
+            const tmp8Result = tmp8(8428);
             const result = tmp8Result.formatTimestampMention(type.mention);
             tmp18 = autocompleteResultText;
             tmp19 = tmp13;
@@ -1116,7 +1116,7 @@ class ACWrapper {
         if (type.type === token.GAME_MENTION) {
           const getGameSearchSession = GameSearchSession.getGameSearchSession;
           GameSearchSession;
-          const gameSearchSession = getGameSearchSession(tmp2(9348).GameSearchSurface.CHAT_MENTION, tmp2(8935).GameSearchFilterGroup.DEFAULT);
+          const gameSearchSession = getGameSearchSession(tmp2(9406).GameSearchSurface.CHAT_MENTION, tmp2(8981).GameSearchFilterGroup.DEFAULT);
           gameSearchSession.select(type.game.id);
         }
         let num = autocompleteSelectionStart;

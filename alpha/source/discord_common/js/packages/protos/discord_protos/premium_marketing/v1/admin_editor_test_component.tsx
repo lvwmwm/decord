@@ -1,15 +1,15 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9448
+// Function ID: 9449
 // Name: admin_editor_test_component
-// Dependencies: [32, 1212, 9362, 9372, 9363, 9364, 9370, 2]
+// Dependencies: [32, 1212, 9426, 9436, 9427, 9428, 9434, 2]
 
-// Module 9384 (admin_editor_test_component)
+// Module 9448 (admin_editor_test_component)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9362 */;
-import help_article from "help_article" /* 9363 */;
-import cta_button from "cta_button" /* 9364 */;
-import gradient from "gradient" /* 9370 */;
-import theme_aware_asset from "theme_aware_asset" /* 9372 */;
+import localized_string from "localized_string" /* 9426 */;
+import help_article from "help_article" /* 9427 */;
+import cta_button from "cta_button" /* 9428 */;
+import gradient from "gradient" /* 9434 */;
+import theme_aware_asset from "theme_aware_asset" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -52,14 +52,14 @@ class AdminEditorTestComponent$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

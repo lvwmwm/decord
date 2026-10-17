@@ -1,23 +1,23 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7094
+// Function ID: 7095
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5144, 6206, 1395, 21, 4909, 5154, 587, 558, 576, 504, 5155, 5441, 7042, 4887, 1128, 4877, 4891, 7045, 1417, 5150, 6409, 7048, 1202, 2]
+// Dependencies: [32, 19, 17, 5181, 6243, 1395, 21, 4945, 5191, 587, 558, 576, 504, 5192, 5478, 7095, 4923, 1128, 4913, 4927, 7098, 1417, 5187, 6462, 7101, 1202, 2]
 
-// Module 7041 (GuildOnboardingPromptOptionButton)
+// Module 7094 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
-import spring from "spring" /* 5441 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
+import spring from "spring" /* 5478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import EmojiStore from "EmojiStore" /* 6206 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1260,7 +1260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(4909);
+  let obj3 = option(4945);
   class S {
     constructor() {
       let Easing;
@@ -1292,12 +1292,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(5155).withTiming, Easing: option(4909).Easing, useReducedMotion: stateFromStores1, withSequence: option(4909).withSequence, withSpring: option(5441).withSpring };
+  let obj4 = { selected, withTiming: option(5192).withTiming, Easing: option(4945).Easing, useReducedMotion: stateFromStores1, withSequence: option(4945).withSequence, withSpring: option(5478).withSpring };
   S.__closure = obj4;
   S.__workletHash = 8205438722579;
   S.__initData = derivedValue1;
   const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(7042)(guildId);
+  const tmp9 = selected(7095)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1351,7 +1351,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(4909);
+  const tmp3Result = tmp3(4945);
   class V {
     constructor() {
       let Easing;
@@ -1370,7 +1370,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(4909).Easing;
+      Easing = tmp2(4945).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -1388,19 +1388,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(4909).Easing;
+        Easing2 = tmp2(4945).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(4909).withDelay, withTiming: tmp3(5155).withTiming, Easing: tmp3(4909).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(4945).withDelay, withTiming: tmp3(5192).withTiming, Easing: tmp3(4945).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
   V.__workletHash = 10755800239871;
   V.__initData = __initData3;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(4909);
+  const tmp3Result11 = tmp3(4945);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -1469,13 +1469,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(4877);
+  const tmp3Result12 = tmp3(4913);
   token = tmp3Result12.useToken(tmp8(587).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(4877);
+  const tmp3Result13 = tmp3(4913);
   token1 = tmp3Result13.useToken(tmp8(587).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(4877);
+  const tmp3Result14 = tmp3(4913);
   token2 = tmp3Result14.useToken(tmp8(587).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(4877);
+  const tmp3Result15 = tmp3(4913);
   token3 = tmp3Result15.useToken(tmp8(587).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
@@ -1486,13 +1486,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(4909);
-  fn.__closure = { withTiming: tmp3(5155).withTiming, selected, SELECTION_TIMING: sharedValue };
+  const tmp3Result16 = tmp3(4945);
+  fn.__closure = { withTiming: tmp3(5192).withTiming, selected, SELECTION_TIMING: sharedValue };
   fn.__workletHash = 12520862943769;
   fn.__initData = __initData4;
-  ({ withTiming: tmp3(5155).withTiming, selected, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5192).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
-  const tmp3Result17 = tmp3(4909);
+  const tmp3Result17 = tmp3(4945);
   class W {
     constructor() {
       num = 0;
@@ -1504,12 +1504,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return withTiming(num, obj);
     }
   }
-  W.__closure = { withTiming: tmp3(5155).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  W.__closure = { withTiming: tmp3(5192).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
   W.__workletHash = 6695066984001;
   W.__initData = __initData5;
-  ({ withTiming: tmp3(5155).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5192).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
   derivedValue1 = tmp3Result17.useDerivedValue(W);
-  const tmp3Result18 = tmp3(4909);
+  const tmp3Result18 = tmp3(4945);
   class X {
     constructor() {
       let items1;
@@ -1527,10 +1527,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  X.__closure = { interpolateColor: tmp3(4909).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  X.__closure = { interpolateColor: tmp3(4945).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
   X.__workletHash = 11103701630825;
   X.__initData = __initData6;
-  ({ interpolateColor: tmp3(4909).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  ({ interpolateColor: tmp3(4945).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
   const animatedStyle2 = tmp3Result18.useAnimatedStyle(X);
   const fn2 = function z() {
     let items;
@@ -1547,14 +1547,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   fn2.__closure = { useReducedMotion: stateFromStores1, scale_0: sharedValue };
   fn2.__workletHash = 15537308682382;
   fn2.__initData = __initData7;
-  const tmp3Result19 = tmp3(4909);
+  const tmp3Result19 = tmp3(4945);
   const animatedStyle3 = tmp3Result19.useAnimatedStyle(fn2);
-  const tmp3Result20 = tmp3(4891);
+  const tmp3Result20 = tmp3(4927);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = { style: items6, children: items9 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(4909).View;
+  View = tmp8(4945).View;
   let id1;
   const obj10 = {
     activeOpacity: 0.6,
@@ -1594,7 +1594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6409).PressableOpacity;
+  const PressableOpacity = tmp3(6462).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1618,7 +1618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(7045);
+    tmp8Result = selected(7098);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
@@ -1641,12 +1641,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   const obj14 = { style: tmp2.optionText, children: items8 };
   items8 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items8[0] = closure_9(tmp3(5150).Text, obj15);
+  items8[0] = closure_9(tmp3(5187).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(5150).Text, obj16);
+    tmp47Result = tmp47(tmp3(5187).Text, obj16);
   }
   items8[1] = tmp47Result;
   items7[1] = ref(tmp46, obj14);
@@ -1655,9 +1655,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   if (num > 0) {
     const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
     items10 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(4909).View;
+    const View2 = tmp8(4945).View;
     obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1128).t.EgKsZA, obj19) };
-    Text = tmp3(5150).Text;
+    Text = tmp3(5187).Text;
     intl = tmp3(1128).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
@@ -1665,9 +1665,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   items9[1] = tmp47Result2;
   const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
   items11 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(4909).View;
+  const View3 = tmp8(4945).View;
   obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7048).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(7101).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;

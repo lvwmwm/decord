@@ -1,36 +1,16 @@
 // Module ID: 15368
 // Function ID: 15369
-// Dependencies: []
-// Exports: default
+// Dependencies: [15369]
 
 // Module 15368
-let closure_0 = { url: "http://localhost:8081" };
+import _mod15369 from "module_15369" /* 15369 */;
 
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+
+export default (arg0) => {
+  const tmp = _mod15369(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
-  return () => {
-    closure_0 = Object.assign({}, closure_0, obj);
-    obj = {
-      onCommand(type) {
-        if ("editor.open" === type.type) {
-          const payload = type.payload;
-          let num = payload.lineNumber;
-          const _HermesInternal = HermesInternal;
-          obj = { file: payload.file, lineNumber: num };
-          const combined = "" + url.url + "/open-stack-frame";
-          if (!num) {
-            num = 1;
-          }
-          const _fetch = fetch;
-          const request = { method: "POST", body: JSON.stringify(obj) };
-          const _JSON = JSON;
-          const response = fetch(combined, request);
-        }
-      }
-    };
-    return obj;
-  };
+  return num;
 };

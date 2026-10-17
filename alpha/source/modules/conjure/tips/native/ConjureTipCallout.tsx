@@ -1,20 +1,20 @@
-// Module ID: 12085
-// Function ID: 12086
+// Module ID: 12148
+// Function ID: 12149
 // Name: ConjureTipCallout
-// Dependencies: [19, 17, 21, 587, 5154, 558, 576, 7794, 6432, 1128, 12086, 12079, 5150, 2]
+// Dependencies: [19, 17, 21, 587, 5191, 558, 576, 7840, 6485, 1128, 12149, 12142, 5187, 2]
 
-// Module 12085 (ConjureTipCallout)
+// Module 12148 (ConjureTipCallout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import XSmallIcon from "XSmallIcon" /* 6432 */;
-import IconButton2 from "IconButton" /* 7794 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12079 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12086 */;
+import XSmallIcon from "XSmallIcon" /* 6485 */;
+import IconButton2 from "IconButton" /* 7840 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12142 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12149 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj3;
 let obj4;
 let rect;
 let tmp;
-const Text_Text = tmp(5150);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const firstLineInset = nativeDefault.space.PX_12 + 1;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipCa
   if (null != onDismiss) {
     const obj4 = { style: tmp4.dismiss, children: React3(IconButton, obj5) };
     obj5 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp(7794).IconButton;
+    IconButton = tmp(7840).IconButton;
     intl = tmp(1128).intl;
     tmp6 = React3(View, obj4);
   }

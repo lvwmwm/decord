@@ -1,44 +1,44 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9679
+// Function ID: 9680
 // Name: ChatPreview
-// Dependencies: [19, 17, 5144, 4861, 2068, 1392, 7968, 21, 5154, 587, 4886, 9616, 7967, 9618, 9833, 9846, 4852, 1128, 9832, 12, 9573, 5165, 9847, 9907, 9912, 5508, 1896, 9913, 8211, 9620, 8121, 11034, 11035, 11073, 11074, 11501, 13268, 12553, 1384, 7039, 6409, 5150, 558, 576, 2044, 504, 1499, 6163, 6143, 2]
+// Dependencies: [19, 17, 5181, 4897, 2068, 1392, 8014, 21, 5191, 587, 4922, 9680, 8013, 9682, 9897, 9910, 4888, 1128, 9896, 12, 9637, 5202, 9911, 9971, 9976, 5545, 1896, 9977, 8257, 9684, 8167, 11097, 11098, 11136, 11137, 11560, 13334, 12618, 1384, 7092, 6462, 5187, 558, 576, 2044, 504, 1499, 6200, 6180, 2]
 
-// Module 9615 (ChatPreview)
+// Module 9679 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import native from "native" /* 4886 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import transitionToChannel from "transitionToChannel" /* 5165 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5508 */;
-import RowGeneratorDefault from "RowGenerator" /* 7967 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8211 */;
-import ChatManagerDefault from "ChatManager" /* 9616 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9618 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9620 */;
-import computeScrollDataDefault from "computeScrollData" /* 9832 */;
-import NativeChatUtils from "NativeChatUtils" /* 9833 */;
-import handleMessagesTapLink2 from "handleMessagesTapLink" /* 9847 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9907 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9912 */;
-import showLongPressMessageActionSheet2 from "showLongPressMessageActionSheet" /* 9913 */;
-import handleMessagesTapImage from "handleMessagesTapImage" /* 11034 */;
-import handleMessagesTapChannel from "handleMessagesTapChannel" /* 11035 */;
-import contentHandlers2 from "contentHandlers" /* 11074 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11501 */;
-import ChatDefault from "Chat" /* 12553 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 13268 */;
+import native from "native" /* 4922 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import transitionToChannel from "transitionToChannel" /* 5202 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5545 */;
+import RowGeneratorDefault from "RowGenerator" /* 8013 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8257 */;
+import ChatManagerDefault from "ChatManager" /* 9680 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9682 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9684 */;
+import computeScrollDataDefault from "computeScrollData" /* 9896 */;
+import NativeChatUtils from "NativeChatUtils" /* 9897 */;
+import handleMessagesTapLink2 from "handleMessagesTapLink" /* 9911 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9971 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9976 */;
+import showLongPressMessageActionSheet2 from "showLongPressMessageActionSheet" /* 9977 */;
+import handleMessagesTapImage from "handleMessagesTapImage" /* 11097 */;
+import handleMessagesTapChannel from "handleMessagesTapChannel" /* 11098 */;
+import contentHandlers2 from "contentHandlers" /* 11137 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11560 */;
+import ChatDefault from "Chat" /* 12618 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 13334 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import ActionSheetStore from "ActionSheetStore" /* 4861 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import ActionSheetStore from "ActionSheetStore" /* 4897 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7968 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8014 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const handleMessagesLongPressChannel = tmp(11073);
+const handleMessagesLongPressChannel = tmp(11136);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ Changeset: c10, RowType: unpackModuleId, SeparatorType: closure_12 } = RowGeneratorConstants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f158953 = (message) => {
+          const f159369 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f158953);
+            const item = arr.forEach(f159369);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f158953);
+            const item1 = arr.forEach(f159369);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -256,7 +256,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = require.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "Set", shouldInitialScroll: "Array", animated: 0, scrollPosition: 0, focusTargetId: 14 };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "test", shouldInitialScroll: "Array", animated: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}", scrollPosition: "toCharArray$esjava$1", focusTargetId: "toCharArray$esjava$1" };
         require.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {
@@ -335,7 +335,7 @@ class ChatPreviewBase extends PureComponent {
         },
         message: require.getMessage(data.messageId),
         messageChannel: channel,
-        selectedChannelId: "asc",
+        selectedChannelId: null,
         tapLinkData: nativeEvent
       };
       const handleMessagesTapLink = handleMessagesTapLink2.handleMessagesTapLink;
@@ -393,7 +393,7 @@ class ChatPreviewBase extends PureComponent {
       const reaction = nativeSyntheticEventData.reaction;
       if (!require.props.hasActionSheetOpen) {
         let emoji;
-        const handleViewPreviewReactions = tmp(9620).handleViewPreviewReactions;
+        const handleViewPreviewReactions = tmp(9684).handleViewPreviewReactions;
         reactions_ReactionUtils;
         if (null != reaction) {
           emoji = reaction.emoji;
@@ -423,7 +423,7 @@ class ChatPreviewBase extends PureComponent {
             }
             let MESSAGE = nativeEvent.nativeEvent.location;
             if (MESSAGE == null) {
-              MESSAGE = tmp15(8121).ReactionLocations.MESSAGE;
+              MESSAGE = tmp15(8167).ReactionLocations.MESSAGE;
             }
             const result = handleAddOrRemoveReaction(messageId, channel, tmp5, isBurst, MESSAGE);
           }
@@ -565,9 +565,9 @@ class ChatPreviewBase extends PureComponent {
     }
     const obj9 = { bottom: true, style: tmp.jumpToChatButtonContainer, children: map1(PressableOpacity, obj10) };
     const tmp6Result = map1(tmp8, obj);
-    const SafeAreaPaddingView = tmp9(7039).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp9(7092).SafeAreaPaddingView;
     obj10 = { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat, children: map1(Text_Text.Text, obj17) };
-    PressableOpacity = tmp9(6409).PressableOpacity;
+    PressableOpacity = tmp9(6462).PressableOpacity;
     tmp14 = tmp6Result;
     obj17 = { style: tmp.jumpToChatText, variant: "text-md/medium", color: "interactive-text-default", children: self.props.jumpToChatProps.jumpToChatText };
     tmp6Result2 = map1(SafeAreaPaddingView, obj9);
@@ -634,9 +634,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPreview(
   const tmpResult5 = channelId(504);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp11, tmp13);
   const width = useWindowDimensionsDefault().width;
-  const tmpResult6 = channelId(6163);
+  const tmpResult6 = channelId(6200);
   const isChannelSpoilerGated = tmpResult6.useIsChannelSpoilerGated(stateFromStores1);
-  const tmpResult7 = channelId(6143);
+  const tmpResult7 = channelId(6180);
   const isChannelContentGated = tmpResult7.useIsChannelContentGated(stateFromStores1);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class C {
@@ -702,9 +702,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPreview(
   const obj2 = channelId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   const width = useWindowDimensionsDefault().width;
-  const obj3 = channelId(6163);
+  const obj3 = channelId(6200);
   const isChannelSpoilerGated = obj3.useIsChannelSpoilerGated(stateFromStores1);
-  const obj4 = channelId(6143);
+  const obj4 = channelId(6180);
   const isChannelContentGated = obj4.useIsChannelContentGated(stateFromStores1);
   const items2 = [ActionSheetStore];
   const obj6 = { inlineAttachmentMedia: setting, inlineEmbedMedia: setting1, renderEmbeds: setting2, roleStyle: stateFromStores, channel: stateFromStores1, width, isSpoilerHidden: isChannelSpoilerGated, isNSFWHidden: isChannelContentGated, canAccessChannel: !isChannelSpoilerGated && !isChannelContentGated, hasActionSheetOpen: stateFromStores2 };

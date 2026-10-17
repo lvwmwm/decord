@@ -1,13 +1,13 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14055
+// Function ID: 14056
 // Name: UserProfileActivityCardBadges
-// Dependencies: [19, 17, 1087, 21, 13988, 558, 576, 2]
+// Dependencies: [19, 17, 1087, 21, 14056, 558, 576, 2]
 
-// Module 13987 (UserProfileActivityCardBadges)
+// Module 14055 (UserProfileActivityCardBadges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import UserProfileActivityBadges from "UserProfileActivityBadges" /* 13988 */;
+import UserProfileActivityBadges from "UserProfileActivityBadges" /* 14056 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

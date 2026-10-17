@@ -1,12 +1,12 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7095
+// Function ID: 7096
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 7043, 558, 576, 504, 7044, 2]
+// Dependencies: [19, 7096, 558, 576, 504, 7097, 2]
 
-// Module 7042 (useGuildRoleMemberCounts)
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7044 */;
+// Module 7095 (useGuildRoleMemberCounts)
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7097 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7043 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

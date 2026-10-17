@@ -1,26 +1,26 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 12045
+// Function ID: 12046
 // Name: formatPollMessageChatData
-// Dependencies: [5144, 6206, 2068, 2128, 5495, 1392, 10734, 1087, 1098, 5964, 4823, 4827, 1417, 9189, 4815, 4796, 11983, 1128, 8119, 11985, 1384, 11986, 11987, 2]
+// Dependencies: [5181, 6243, 2068, 2128, 5532, 1392, 10797, 1087, 1098, 6001, 4859, 4863, 1417, 9249, 4851, 4832, 12046, 1128, 8165, 12048, 1384, 12049, 12050, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 11982 (formatPollMessageChatData)
+// Module 12045 (formatPollMessageChatData)
 import Constants2 from "Constants" /* 1098 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4796 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4815 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4823 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4827 */;
-import merged5 from "merged5" /* 5964 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9189 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10734 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 11985 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import EmojiStore from "EmojiStore" /* 6206 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import merged5 from "merged5" /* 6001 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9249 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10797 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12048 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import MessageStore from "MessageStore" /* 5495 */;
+import MessageStore from "MessageStore" /* 5532 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14213
+// Function ID: 14214
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 7489, 1993, 7490, 7491, 8575, 9233, 21, 587, 5154, 558, 576, 9245, 9257, 9258, 5091, 9236, 1992, 9253, 2]
+// Dependencies: [19, 17, 7535, 1993, 7536, 7537, 8621, 9293, 21, 587, 5191, 558, 576, 9305, 9317, 9318, 5128, 9296, 1992, 9313, 2]
 
-// Module 14145 (CollectiblesItemMiniPreview)
+// Module 14213 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import NameplateRecord from "NameplateRecord" /* 1993 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7489 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7490 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7491 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8575 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9233 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9236 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9245 */;
-import NameplateDefault from "Nameplate" /* 9253 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9257 */;
-import _modDef9258 from "module_9258" /* 9258 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7535 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7536 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7537 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8621 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9293 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9296 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9305 */;
+import NameplateDefault from "Nameplate" /* 9313 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9317 */;
+import _modDef9318 from "module_9318" /* 9318 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       let tmp34;
       const _Symbol = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { uri: _modDef9258 };
+        const obj7 = { uri: _modDef9318 };
         cResult[21] = obj7;
         tmp28 = obj7;
       } else {
@@ -294,7 +294,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj7 = { style: items, children: authStore(View, obj8) };
     obj8 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no", children: items1 };
     const obj9 = { source: obj10, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj10 = { uri: _modDef9258 };
+    obj10 = { uri: _modDef9318 };
     const tmp17 = FastImageDefault;
     items1 = [React4(tmp17, obj9), ];
     const obj11 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };

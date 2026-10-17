@@ -1,19 +1,19 @@
-// Module ID: 8987
-// Function ID: 8988
+// Module ID: 9033
+// Function ID: 9034
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8910, 21, 5154, 558, 576, 6888, 504, 8911, 5150, 6409, 8909, 1128, 2]
+// Dependencies: [19, 17, 8956, 21, 5191, 558, 576, 6941, 504, 8957, 5187, 6462, 8955, 1128, 2]
 
-// Module 8987 (InstantInviteAgeText)
+// Module 9033 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1128 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6888 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8909 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8911 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8957 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8910 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8956 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
     items1 = [tmp.inviteAgeContainer, style];
     let str = "text-xs/normal";
     let str2 = "text-xs/normal";
-    const Text = tmp2(5150).Text;
+    const Text = tmp2(5187).Text;
     const tmp8 = View;
     if (manaTypeConsolidationExperiment) {
       str2 = "experimental/body-md/normal";
@@ -220,9 +220,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
         hitSlop: { top: 8, left: 8, bottom: 8, right: 8 },
         children: closure_5(Text2, obj6)
       };
-      const PressableOpacity = tmp2(6409).PressableOpacity;
+      const PressableOpacity = tmp2(6462).PressableOpacity;
       intl = tmp2(1128).intl;
-      Text2 = tmp2(5150).Text;
+      Text2 = tmp2(5187).Text;
       if (manaTypeConsolidationExperiment) {
         str = "experimental/body-md/medium";
       }

@@ -1,16 +1,16 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12066
+// Function ID: 12067
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 8192, 21, 5154, 587, 558, 576, 12002, 5044, 5118, 5150, 1202, 1128, 7118, 12004, 7122, 2]
+// Dependencies: [19, 17, 8238, 21, 5191, 587, 558, 576, 12065, 5081, 5155, 5187, 1202, 1128, 7171, 12067, 7175, 2]
 
-// Module 12003 (ImageInputActionSheet)
+// Module 12066 (ImageInputActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PollsConstants from "PollsConstants" /* 8192 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12004 */;
+import PollsConstants from "PollsConstants" /* 8238 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12067 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

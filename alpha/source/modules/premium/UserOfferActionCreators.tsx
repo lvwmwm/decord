@@ -1,18 +1,18 @@
-// Module ID: 8315
-// Function ID: 8316
+// Module ID: 8361
+// Function ID: 8362
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8316, 7397, 7393, 1394, 1087, 1384, 584, 1267, 1297, 8317, 1257, 4997, 2052, 2049, 2]
+// Dependencies: [5, 8362, 7443, 7439, 1394, 1087, 1384, 584, 1267, 1297, 8363, 1257, 5033, 2052, 2049, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8315 (UserOfferActionCreators)
+// Module 8361 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8316 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7397 */;
-import UserOfferStore from "UserOfferStore" /* 7393 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8362 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7443 */;
+import UserOfferStore from "UserOfferStore" /* 7439 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Symbol", paymentGatewayOverride: "current" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -103,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {

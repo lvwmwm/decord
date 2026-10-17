@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11227
+// Function ID: 11228
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 558, 576, 11163, 11164, 11165, 2]
+// Dependencies: [19, 558, 576, 11228, 11229, 11230, 2]
 
-// Module 11162 (useIsActivitiesAvailableInShelf)
-import fetchShelf from "fetchShelf" /* 11165 */;
+// Module 11227 (useIsActivitiesAvailableInShelf)
+import fetchShelf from "fetchShelf" /* 11230 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivit
   const cResult = obj.c(8);
   let obj2 = require("useIsActivitiesEnabledForCurrentPlatform");
   const isActivitiesEnabledForCurrentPlatform = obj2.useIsActivitiesEnabledForCurrentPlatform();
-  const tmp3 = isActivitiesEnabledForCurrentPlatform(11164)(arg1);
+  const tmp3 = isActivitiesEnabledForCurrentPlatform(11229)(arg1);
   if (cResult[0] === guildId) {
     let tmp4;
     if (cResult[1] === tmp3) {
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivit
   let obj = require("useIsActivitiesEnabledForCurrentPlatform");
   const isActivitiesEnabledForCurrentPlatform = obj.useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != guildId;
-  const tmp2 = isActivitiesEnabledForCurrentPlatform(11164)(arg1);
+  const tmp2 = isActivitiesEnabledForCurrentPlatform(11229)(arg1);
   if (tmp3) {
     tmp3 = "" !== guildId;
   }

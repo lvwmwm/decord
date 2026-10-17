@@ -1,13 +1,13 @@
-// Module ID: 7391
-// Function ID: 7392
+// Module ID: 7437
+// Function ID: 7438
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [7357, 1394, 558, 7392, 7352, 576, 573, 2]
+// Dependencies: [7403, 1394, 558, 7438, 7398, 576, 573, 2]
 
-// Module 7391 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+// Module 7437 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
 import react from "react" /* 576 */;
-import ProductIds from "ProductIds" /* 7352 */;
-import useTrialOffer from "useTrialOffer" /* 7392 */;
-import IAPStore from "IAPStore" /* 7357 */;
+import ProductIds from "ProductIds" /* 7398 */;
+import useTrialOffer from "useTrialOffer" /* 7438 */;
+import IAPStore from "IAPStore" /* 7403 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

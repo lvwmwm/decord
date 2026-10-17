@@ -1,23 +1,23 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 14811
+// Function ID: 14812
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2068, 4819, 1392, 14740, 14742, 1087, 21, 5154, 587, 558, 576, 504, 5118, 1267, 6108, 1128, 7122, 5091, 10646, 5150, 6489, 6404, 1202, 11593, 11415, 5442, 2]
+// Dependencies: [19, 17, 2068, 4855, 1392, 14808, 14810, 1087, 21, 5191, 587, 558, 576, 504, 5155, 1267, 6145, 1128, 7175, 5128, 10709, 5187, 6542, 6457, 1202, 11652, 11474, 5479, 2]
 
-// Module 14743 (BlockedUserInVoiceChannelActionSheet)
+// Module 14811 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6108 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14740 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14808 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import RelationshipStore from "RelationshipStore" /* 4819 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14742 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14810 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

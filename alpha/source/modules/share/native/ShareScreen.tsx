@@ -1,26 +1,26 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 14910
+// Function ID: 14911
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2072, 2068, 4809, 1087, 12610, 10457, 21, 5154, 587, 1128, 14842, 12611, 14843, 14844, 1267, 9554, 5165, 1384, 8710, 9502, 12646, 2002, 5364, 14845, 14846, 6434, 12621, 1630, 12622, 14847, 2]
+// Dependencies: [5, 32, 19, 17, 2072, 2068, 4845, 1087, 12675, 10520, 21, 5191, 587, 1128, 14911, 12676, 14912, 14913, 1267, 9618, 5202, 1384, 8756, 9566, 12711, 2002, 5401, 14914, 14915, 6487, 12686, 1630, 12687, 14916, 2]
 // Exports: default
 
-// Module 14841 (ShareScreen)
+// Module 14910 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import UserRowConstants from "UserRowConstants" /* 10457 */;
-import ForwardConstants from "ForwardConstants" /* 12610 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 14845 */;
-import ShareEmbedDefault from "ShareEmbed" /* 14846 */;
+import UserRowConstants from "UserRowConstants" /* 10520 */;
+import ForwardConstants from "ForwardConstants" /* 12675 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 14914 */;
+import ShareEmbedDefault from "ShareEmbed" /* 14915 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -301,7 +301,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "test", done: true };
+                                        return { value: "Reflect", done: true };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16222
+// Function ID: 16223
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 558, 16071, 4909, 2]
+// Dependencies: [19, 558, 16137, 4945, 2]
 
-// Module 16156 (useQuestDockAnimatedBorderRadius)
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+// Module 16222 (useQuestDockAnimatedBorderRadius)
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

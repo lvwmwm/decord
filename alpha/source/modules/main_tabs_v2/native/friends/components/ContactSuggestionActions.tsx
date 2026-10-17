@@ -1,18 +1,18 @@
-// Module ID: 17522
-// Function ID: 17523
+// Module ID: 17581
+// Function ID: 17582
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4909, 5154, 587, 558, 576, 17109, 5155, 5441, 1202, 17523, 1128, 5442, 2]
+// Dependencies: [19, 17, 21, 4945, 5191, 587, 558, 576, 17169, 5192, 5478, 1202, 17582, 1128, 5479, 2]
 
-// Module 17522 (ContactSuggestionActions)
+// Module 17581 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
-import spring from "spring" /* 5441 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17109 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
+import spring from "spring" /* 5478 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

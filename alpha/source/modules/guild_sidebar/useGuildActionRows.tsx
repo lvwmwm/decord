@@ -1,18 +1,18 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17386
+// Function ID: 17387
 // Name: useGuildActionRows
-// Dependencies: [32, 7149, 7477, 1087, 558, 576, 12959, 7189, 7175, 7187, 7154, 7148, 573, 7169, 7150, 12865, 17328, 17331, 7190, 7152, 13129, 17289, 7192, 5085, 17332, 2052, 7325, 2]
+// Dependencies: [32, 7202, 7523, 1087, 558, 576, 13024, 7241, 7227, 7239, 7207, 7201, 573, 7222, 7203, 12930, 17387, 17390, 7242, 7205, 13194, 17349, 7244, 5122, 17391, 2052, 7376, 2]
 
-// Module 17327 (useGuildActionRows)
+// Module 17386 (useGuildActionRows)
 import Constants from "Constants" /* 1087 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7150 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7477 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12959 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13129 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17289 */;
-import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17328 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7203 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7523 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13024 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13194 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17349 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7149 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7202 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

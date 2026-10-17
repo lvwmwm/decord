@@ -1,29 +1,33 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9407
+// Function ID: 9408
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 2090, 2119, 9145, 1087, 2075, 21, 5154, 587, 558, 576, 2082, 504, 9110, 9140, 9104, 7144, 7277, 7102, 7143, 1128, 9183, 9350, 5150, 12, 9177, 2]
+// Dependencies: [32, 5, 19, 17, 2090, 2119, 9205, 1087, 2075, 21, 5191, 587, 558, 576, 2082, 504, 9156, 9200, 9150, 7197, 7328, 7155, 7196, 1128, 9243, 9408, 9411, 5155, 9413, 5187, 7840, 9415, 12, 9237, 2]
 
-// Module 9349 (GameProfileCommunities)
+// Module 9407 (GameProfileCommunities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9104 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9110 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9140 */;
-import GameProfileConstants from "GameProfileConstants" /* 9145 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9350 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9156 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9200 */;
+import GameProfileConstants from "GameProfileConstants" /* 9205 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9408 */;
+import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9411 */;
+import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const GameProfileCommunitiesLocaleFilterActionSheetDefault = GameProfileCommunitiesLocaleFilterActionSheet;
 let _require, c5, c6;
 
 let closure_12;
@@ -39,10 +43,10 @@ const JoinGuildSources = Constants.JoinGuildSources;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, header: obj3, list: obj4 };
+let obj = { container: obj2, header: obj3, heading: { flexShrink: 1 }, list: obj4 };
 obj2 = { marginTop: nativeDefault.modules.mobile.SHEET_HANDLE_HEIGHT, padding: nativeDefault.space.PX_16, maxWidth: MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%", gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { justifyContent: "center", minHeight: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_8 };
+obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_8 };
 obj4 = { gap: nativeDefault.space.PX_12 };
 let closure_13 = createStyles(obj);
 let memo = react.memo;
@@ -71,35 +75,46 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [A];
+    let items = [P];
     cResult[2] = items;
     tmp6 = items;
   } else {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== guild.id) {
-    const fn = function p() {
-      guild = GuildStore.getGuild(guild.id);
-      let joinedAt;
-      if (guild != null) {
-        joinedAt = guild.joinedAt;
+    class G {
+      constructor() {
+        guild = GuildStore.getGuild(guild.id);
+        let joinedAt;
+        if (guild != null) {
+          joinedAt = guild.joinedAt;
+        }
+        return null != joinedAt;
       }
-      return null != joinedAt;
-    };
+    }
     let items1 = [guild.id];
     cResult[3] = guild.id;
-    cResult[4] = fn;
+    cResult[4] = G;
     cResult[5] = items1;
     tmp9 = items1;
-    tmp8 = fn;
+    tmp8 = G;
   } else {
-    tmp8 = cResult[4];
+    class G {
+      constructor() {
+        guild = GuildStore.getGuild(guild.id);
+        let joinedAt;
+        if (guild != null) {
+          joinedAt = guild.joinedAt;
+        }
+        return null != joinedAt;
+      }
+    }
     tmp9 = cResult[5];
   }
   const tmpResult2 = tmp(viewId[15]);
   const stateFromStores = tmpResult2.useStateFromStores(tmp6, tmp8, tmp9);
   if (cResult[6] !== gameId) {
-    class A {
+    class P {
       constructor(channelId, initialScrollOffset) {
         const obj = GameProfileActionCreatorsDefault;
         const obj2 = { gameId, channelId, initialScrollOffset, tab: GameProfileNavTypes.GameProfileNavTab.COMMUNITIES, source: GameProfileAnalyticUtils.GameProfileSources.CommunityPreviewReturn };
@@ -107,9 +122,9 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
     }
     cResult[6] = gameId;
-    cResult[7] = A;
+    cResult[7] = P;
   } else {
-    class A {
+    class P {
       constructor(channelId, initialScrollOffset) {
         const obj = GameProfileActionCreatorsDefault;
         const obj2 = { gameId, channelId, initialScrollOffset, tab: GameProfileNavTypes.GameProfileNavTab.COMMUNITIES, source: GameProfileAnalyticUtils.GameProfileSources.CommunityPreviewReturn };
@@ -117,9 +132,9 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
     }
   }
-  A = tmp11;
+  P = tmp11;
   if (cResult[8] === closeModal) {
-    class A {
+    class P {
       constructor(channelId, initialScrollOffset) {
         const obj = GameProfileActionCreatorsDefault;
         const obj2 = { gameId, channelId, initialScrollOffset, tab: GameProfileNavTypes.GameProfileNavTab.COMMUNITIES, source: GameProfileAnalyticUtils.GameProfileSources.CommunityPreviewReturn };
@@ -433,16 +448,20 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileCommunities(game) {
+  let container;
   let data;
-  let first;
-  let intl;
+  let filteredGuilds;
+  let header;
+  let heading;
+  let intl2;
   let isLoading;
   let items;
-  let mapped;
+  let items1;
   let scrollY;
-  let tmp12;
+  let showLocaleFilter;
+  let tmp = game;
   let obj = game(scrollY[13]);
-  const cResult = obj.c(18);
+  const cResult = obj.c(28);
   game = game.game;
   const viewId = game.viewId;
   scrollY = game.scrollY;
@@ -451,151 +470,221 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileC
   const tmp4 = closure_13();
   ({ data, isLoading } = viewId(scrollY[25])(game.id));
   viewId(scrollY[25])(game.id);
+  const tmp7 = viewId(scrollY[26])(game.id, data);
+  const locales = tmp7.locales;
+  ({ filteredGuilds, showLocaleFilter } = tmp7);
   const tmp5 = viewId;
-  if (isLoading) {
-    isLoading = null == data || 0 === data.length;
-    const tmp8 = null == data || 0 === data.length;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(game(scrollY[23]).t.r6bvTh) };
-    const Heading = tmp(tmp2[26]).Heading;
-    intl = tmp(tmp2[23]).intl;
-    const tmp11 = closure_11(Heading, obj2);
-    cResult[0] = tmp11;
-    first = tmp11;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.header) {
-    const obj3 = { style: tmp4.header, children: first };
-    const tmp15 = closure_11(View, obj3);
-    cResult[1] = tmp4.header;
-    cResult[2] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[2];
-  }
-  if (cResult[3] === closeModal) {
-    if (cResult[4] === game.id) {
-      if (cResult[5] === data) {
-        if (cResult[6] === scrollY) {
-          if (cResult[7] === isLoading) {
-            if (cResult[8] === trackAction) {
-              let tmp16;
-              if (cResult[9] === viewId) {
-                tmp16 = cResult[10];
-              }
-              if (cResult[11] === tmp4.list) {
-                let tmp19;
-                if (cResult[12] === tmp16) {
-                  tmp19 = cResult[13];
-                }
-                if (cResult[14] === tmp4.container) {
-                  if (cResult[15] === tmp12) {
-                    let tmp23;
-                    if (cResult[16] === tmp19) {
-                      tmp23 = cResult[17];
+  if (cResult[0] === game.id) {
+    let tmp8;
+    let tmp12;
+    let tmp14;
+    if (cResult[1] === locales) {
+      tmp8 = cResult[2];
+    }
+    if (isLoading) {
+      isLoading = null == data || 0 === data.length;
+      const tmp10 = null == data || 0 === data.length;
+    }
+    const _Symbol = Symbol;
+    ({ container, header, heading } = tmp4);
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(tmp2[23]).intl;
+      const stringResult = intl.string(tmp(scrollY[23]).t.r6bvTh);
+      cResult[3] = stringResult;
+      tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[3];
+    }
+    if (cResult[4] !== tmp4.heading) {
+      let obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: heading, children: tmp12 };
+      const tmp16 = closure_11(tmp(scrollY[29]).Heading, obj2);
+      cResult[4] = tmp4.heading;
+      cResult[5] = tmp16;
+      tmp14 = tmp16;
+    } else {
+      tmp14 = cResult[5];
+    }
+    if (cResult[6] === tmp8) {
+      let tmp17;
+      if (cResult[7] === showLocaleFilter) {
+        tmp17 = cResult[8];
+      }
+      if (cResult[9] === tmp4.header) {
+        if (cResult[10] === tmp14) {
+          let tmp20;
+          let mapped;
+          if (cResult[11] === tmp17) {
+            tmp20 = cResult[12];
+          }
+          if (cResult[13] === closeModal) {
+            if (cResult[14] === filteredGuilds) {
+              if (cResult[15] === game.id) {
+                if (cResult[16] === scrollY) {
+                  if (cResult[17] === isLoading) {
+                    if (cResult[18] === trackAction) {
+                      let tmp24;
+                      if (cResult[19] === viewId) {
+                        tmp24 = cResult[20];
+                      }
+                      if (cResult[21] === tmp4.list) {
+                        let tmp26;
+                        if (cResult[22] === tmp24) {
+                          tmp26 = cResult[23];
+                        }
+                        if (cResult[24] === tmp4.container) {
+                          if (cResult[25] === tmp26) {
+                            let tmp30;
+                            if (cResult[26] === tmp20) {
+                              tmp30 = cResult[27];
+                            }
+                            return tmp30;
+                          }
+                        }
+                        const obj3 = { style: container, children: items };
+                        items = [tmp20, tmp26];
+                        const tmp33 = closure_12(View, obj3);
+                        cResult[24] = tmp4.container;
+                        cResult[25] = tmp26;
+                        cResult[26] = tmp20;
+                        cResult[27] = tmp33;
+                        tmp30 = tmp33;
+                      }
+                      const obj4 = { style: tmp4.list, children: tmp24 };
+                      const tmp29 = closure_11(View, obj4);
+                      cResult[21] = tmp4.list;
+                      cResult[22] = tmp24;
+                      cResult[23] = tmp29;
+                      tmp26 = tmp29;
                     }
-                    return tmp23;
                   }
                 }
-                const obj4 = { style: tmp4.container, children: items };
-                items = [tmp12, tmp19];
-                const tmp26 = closure_12(View, obj4);
-                cResult[14] = tmp4.container;
-                cResult[15] = tmp12;
-                cResult[16] = tmp19;
-                cResult[17] = tmp26;
-                tmp23 = tmp26;
               }
-              const obj5 = { style: tmp4.list, children: tmp16 };
-              const tmp22 = closure_11(View, obj5);
-              cResult[11] = tmp4.list;
-              cResult[12] = tmp16;
-              cResult[13] = tmp22;
-              tmp19 = tmp22;
             }
           }
+          if (isLoading) {
+            const tmp5Result = tmp5(scrollY[32]);
+            const rangeResult = tmp5Result.range(8);
+            mapped = rangeResult.map((item) => {
+              const obj = { animationDelayMs: item * game(scrollY[33]).SKELETON_CARD_ANIMATION_DELAY_MS };
+              const GameProfileGuildCardSkeleton = game(scrollY[24]).GameProfileGuildCardSkeleton;
+              return closure_1_11(GameProfileGuildCardSkeleton, obj, item);
+            });
+          } else {
+            mapped = filteredGuilds.map((guild) => {
+              const obj = { gameId: game.id, guild, viewId, scrollY, trackAction, closeModal };
+              return unpackModuleId(closure_14, obj, guild.id);
+            });
+          }
+          cResult[13] = closeModal;
+          cResult[14] = filteredGuilds;
+          cResult[15] = game.id;
+          cResult[16] = scrollY;
+          cResult[17] = isLoading;
+          cResult[18] = trackAction;
+          cResult[19] = viewId;
+          cResult[20] = mapped;
+          tmp24 = mapped;
         }
       }
+      const obj5 = { style: header, children: items1 };
+      items1 = [tmp14, tmp17];
+      const tmp23 = closure_12(View, obj5);
+      cResult[9] = tmp4.header;
+      cResult[10] = tmp14;
+      cResult[11] = tmp17;
+      cResult[12] = tmp23;
+      tmp20 = tmp23;
     }
-  }
-  if (isLoading) {
-    const tmp5Result = tmp5(scrollY[27]);
-    const rangeResult = tmp5Result.range(8);
-    mapped = rangeResult.map((item) => {
-      const obj = { animationDelayMs: item * game(scrollY[28]).SKELETON_CARD_ANIMATION_DELAY_MS };
-      const GameProfileGuildCardSkeleton = game(scrollY[24]).GameProfileGuildCardSkeleton;
-      return closure_1_11(GameProfileGuildCardSkeleton, obj, item);
-    });
-  } else {
-    let items1 = data;
-    if (data == null) {
-      items1 = [];
+    let tmp18 = showLocaleFilter;
+    if (tmp18) {
+      const obj6 = { size: "sm", variant: "secondary", icon: closure_11(tmp(scrollY[31]).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(tmp(scrollY[23]).t.OlOHDH), onPress: tmp8 };
+      const IconButton = tmp(tmp2[30]).IconButton;
+      intl2 = tmp(tmp2[23]).intl;
+      tmp18 = closure_11(IconButton, obj6);
     }
-    mapped = items1.map((guild) => {
-      const obj = { gameId: game.id, guild, viewId, scrollY, trackAction, closeModal };
-      return unpackModuleId(closure_14, obj, guild.id);
-    });
+    cResult[6] = tmp8;
+    cResult[7] = showLocaleFilter;
+    cResult[8] = tmp18;
+    tmp17 = tmp18;
   }
-  cResult[3] = closeModal;
-  cResult[4] = game.id;
-  cResult[5] = data;
-  cResult[6] = scrollY;
-  cResult[7] = isLoading;
-  cResult[8] = trackAction;
-  cResult[9] = viewId;
-  cResult[10] = mapped;
-  tmp16 = mapped;
+  const fn = function t() {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { key: GameProfileCommunitiesLocaleFilterActionSheet.ACTION_SHEET_KEY, content: unpackModuleId(GameProfileCommunitiesLocaleFilterActionSheetDefault, obj2), stackingBehavior: "stack" };
+    obj2 = { gameId: game.id, locales };
+    showActionSheet(obj);
+  };
+  cResult[0] = game.id;
+  cResult[1] = locales;
+  cResult[2] = fn;
+  tmp8 = fn;
 }) : (function GameProfileCommunities(game) {
-  let Heading;
   let closeModal;
   let data;
+  let filteredGuilds;
   let intl;
+  let intl2;
   let isLoading;
-  let items;
+  let items1;
+  let items2;
   let mapped;
-  let obj3;
   let scrollY;
+  let showLocaleFilter;
   let trackAction;
   let viewId;
   game = game.game;
   ({ viewId: importDefault, scrollY: dependencyMap, trackAction: _slicedToArray, closeModal: _asyncToGenerator } = game);
-  const tmp = closure_13();
+  let tmp = closure_13();
   ({ data, isLoading } = useGameProfileCommunitiesDefault(game.id));
   useGameProfileCommunitiesDefault(game.id);
+  const tmp5 = useGameProfileCommunitiesLocaleFilterDefault(game.id, data);
+  const locales = tmp5.locales;
+  ({ filteredGuilds, showLocaleFilter } = tmp5);
+  const items = [game.id, locales];
+  const callback = locales.useCallback(() => {
+    let obj2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { key: GameProfileCommunitiesLocaleFilterActionSheet.ACTION_SHEET_KEY, content: unpackModuleId(GameProfileCommunitiesLocaleFilterActionSheetDefault, obj2), stackingBehavior: "stack" };
+    obj2 = { gameId: game.id, locales };
+    showActionSheet(obj);
+  }, items);
   if (isLoading) {
     isLoading = null == data || 0 === data.length;
-    const tmp6 = null == data || 0 === data.length;
+    const tmp8 = null == data || 0 === data.length;
   }
-  let obj = { style: tmp.container, children: items };
-  const obj2 = { style: tmp.header, children: closure_11(Heading, obj3) };
-  obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(game(1128).t.r6bvTh) };
-  Heading = game(5150).Heading;
+  let obj = { style: tmp.container, children: items2 };
+  let obj2 = { style: tmp.header, children: items1 };
+  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.heading, children: intl.string(game(1128).t.r6bvTh) };
+  const Heading = game(5187).Heading;
   intl = game(1128).intl;
-  items = [closure_11(View, obj2), ];
-  const obj4 = { style: tmp.list, children: mapped };
-  const tmp7 = closure_12;
-  const tmp9 = closure_11;
+  items1 = [closure_11(Heading, obj3), ];
+  if (showLocaleFilter) {
+    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9415).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1128).t.OlOHDH), onPress: callback };
+    const IconButton = tmp12(7840).IconButton;
+    intl2 = tmp12(1128).intl;
+    showLocaleFilter = tmp11(IconButton, obj4);
+  }
+  items1[1] = showLocaleFilter;
+  items2 = [closure_12(View, obj2), ];
+  const obj5 = { style: tmp.list, children: mapped };
   if (isLoading) {
     const tmp2Result = _modDef12;
     const rangeResult = tmp2Result.range(8);
     mapped = rangeResult.map((item) => {
-      const obj = { animationDelayMs: item * game(dependencyMap[28]).SKELETON_CARD_ANIMATION_DELAY_MS };
+      const obj = { animationDelayMs: item * game(dependencyMap[33]).SKELETON_CARD_ANIMATION_DELAY_MS };
       const GameProfileGuildCardSkeleton = game(dependencyMap[24]).GameProfileGuildCardSkeleton;
       return closure_1_11(GameProfileGuildCardSkeleton, obj, item);
     });
   } else {
-    if (data == null) {
-      data = [];
-    }
-    mapped = data.map((guild) => {
+    mapped = filteredGuilds.map((guild) => {
       const obj = { gameId: game.id, guild, viewId: importDefault, scrollY: dependencyMap, trackAction: _slicedToArray, closeModal: _asyncToGenerator };
       return unpackModuleId(closure_14, obj, guild.id);
     });
   }
-  items[1] = tmp9(View, obj4);
-  return tmp7(View, obj);
+  items2[1] = closure_11(View, obj5);
+  return closure_12(View, obj);
 });
 let result = size.fileFinishedImporting("modules/game_profile/native/profile_sections/communities/GameProfileCommunities.tsx");
 

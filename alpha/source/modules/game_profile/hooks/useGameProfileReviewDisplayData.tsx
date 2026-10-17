@@ -1,14 +1,14 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9232
+// Function ID: 9233
 // Name: useGameProfileReviewDisplayData
-// Dependencies: [19, 558, 576, 9120, 9163, 2043, 1128, 9164, 2]
+// Dependencies: [19, 558, 576, 9180, 9223, 2043, 1128, 9224, 2]
 
-// Module 9172 (useGameProfileReviewDisplayData)
+// Module 9232 (useGameProfileReviewDisplayData)
 import react2 from "react" /* 576 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2043 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9120 */;
-import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9163 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9164 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9180 */;
+import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9223 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9224 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (reviews != null) {
     steam = reviews.steam;
   }
-  const tmp5 = reviews.steamReleaseStatus !== tmp(9120).SteamReleaseStatus.RETIRED_ABANDONED && null != arg1;
+  const tmp5 = reviews.steamReleaseStatus !== tmp(9180).SteamReleaseStatus.RETIRED_ABANDONED && null != arg1;
   let recentRating;
   if (steam != null) {
     recentRating = steam.recentRating;

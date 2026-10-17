@@ -1,9 +1,9 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12807
+// Function ID: 12808
 // Name: DiceRollStore
 // Dependencies: [570, 558, 576, 2]
 
-// Module 12742 (DiceRollStore)
+// Module 12807 (DiceRollStore)
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

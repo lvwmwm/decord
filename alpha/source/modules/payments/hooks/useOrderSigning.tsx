@@ -1,13 +1,13 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9360
+// Function ID: 9361
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5134, 4850, 4843, 7168, 9303, 1128, 9305, 2]
+// Dependencies: [5, 32, 19, 5171, 4886, 4879, 7221, 9361, 1128, 9363, 2]
 // Exports: useOrderSigning
 
-// Module 9302 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4843 */;
-import BillingErrorDefault from "BillingError" /* 4850 */;
-import PaymentConstants from "PaymentConstants" /* 5134 */;
+// Module 9360 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4879 */;
+import BillingErrorDefault from "BillingError" /* 4886 */;
+import PaymentConstants from "PaymentConstants" /* 5171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4850)(error);
+      tmp3 = new tmp(4886)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4843).captureBillingException;
+      const captureBillingException = tmp5(4879).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4850)(arg2);
+      tmp3 = new tmp(4886)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -124,7 +124,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "test", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

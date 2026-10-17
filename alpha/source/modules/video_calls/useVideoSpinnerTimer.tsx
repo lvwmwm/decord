@@ -1,10 +1,10 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11272
+// Function ID: 11273
 // Name: useVideoSpinnerTimer
-// Dependencies: [32, 19, 558, 576, 11205, 2]
+// Dependencies: [32, 19, 558, 576, 11270, 2]
 
-// Module 11207 (useVideoSpinnerTimer)
-import VideoSpinnerTimer from "VideoSpinnerTimer" /* 11205 */;
+// Module 11272 (useVideoSpinnerTimer)
+import VideoSpinnerTimer from "VideoSpinnerTimer" /* 11270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

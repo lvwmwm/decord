@@ -1,19 +1,19 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15062
+// Function ID: 15063
 // Name: ProductCatalog
-// Dependencies: [1394, 3, 14994, 9518, 9738, 14995, 1400, 14996, 1398, 2]
+// Dependencies: [1394, 3, 15063, 9582, 9802, 15064, 1400, 15065, 1398, 2]
 // Exports: canUserUse
 
-// Module 14993 (ProductCatalog)
+// Module 15062 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PerksStateUtils from "PerksStateUtils" /* 1398 */;
 import user from "user" /* 1400 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9518 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9738 */;
-import SKUListingDefault from "SKUListing" /* 14995 */;
-import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 14996 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9582 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9802 */;
+import SKUListingDefault from "SKUListing" /* 15064 */;
+import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 15065 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 14994 */;
+import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 15063 */;
 import size from "module_2" /* 2 */;
 
 const DenormalizedPerksReadExperimentDefault = DenormalizedPerksReadExperiment;

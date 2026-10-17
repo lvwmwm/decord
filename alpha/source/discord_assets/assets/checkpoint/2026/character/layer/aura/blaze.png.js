@@ -1,8 +1,8 @@
-// Module ID: 5817
-// Function ID: 5818
+// Module ID: 5854
+// Function ID: 5855
 // Dependencies: [2]
 
-// Module 5817
+// Module 5854
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/blaze.png.js");

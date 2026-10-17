@@ -1,9 +1,9 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11358
+// Function ID: 11359
 // Name: sound_playback/SoundUtils
 // Dependencies: [17, 1630, 1384, 2]
 
-// Module 11299 (sound_playback/SoundUtils)
+// Module 11358 (sound_playback/SoundUtils)
 import react_native from "react-native" /* 17 */;
 import "MetaQuestUtils";
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1630 */;

@@ -1,10 +1,10 @@
-// Module ID: 6246
-// Function ID: 6247
+// Module ID: 6283
+// Function ID: 6284
 // Name: IAPEligibility
-// Dependencies: [19, 2090, 1087, 1384, 6247, 558, 576, 573, 2]
+// Dependencies: [19, 2090, 1087, 1384, 6284, 558, 576, 573, 2]
 // Exports: canUseRoleSubscriptionIAP
 
-// Module 6246 (IAPEligibility)
+// Module 6283 (IAPEligibility)
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const getSystemVersion = tmp(6247);
+const getSystemVersion = tmp(6284);
 let c4 = "13.2";
 let items = [Constants.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseRoleSubscriptionIAP(arg0) {

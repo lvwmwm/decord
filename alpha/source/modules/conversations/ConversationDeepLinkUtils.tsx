@@ -1,14 +1,14 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9975
+// Function ID: 9976
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6359, 7538, 5132, 9573, 5485, 11, 2]
+// Dependencies: [5, 6412, 7584, 5169, 9637, 5522, 11, 2]
 // Exports: consumeConversationFocusParam
 
-// Module 9911 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5132 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6359 */;
+// Module 9975 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5169 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7538 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, conversationId, dependencyMap;
@@ -57,7 +57,7 @@ let obj = function _resolveConversationFocusLink() {
             conversation = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -128,7 +128,7 @@ export const consumeConversationFocusParam = function consumeConversationFocusPa
   } else {
     let sum;
     str.delete(tmp);
-    let obj4 = channelId(5485);
+    let obj4 = channelId(5522);
     const tryParseChannelPathResult = obj4.tryParseChannelPath(pathname);
     channelId = undefined;
     if (tryParseChannelPathResult != null) {

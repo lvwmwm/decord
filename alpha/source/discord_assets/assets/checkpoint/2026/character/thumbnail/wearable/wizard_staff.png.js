@@ -1,8 +1,8 @@
-// Module ID: 5795
-// Function ID: 5796
+// Module ID: 5832
+// Function ID: 5833
 // Dependencies: [2]
 
-// Module 5795
+// Module 5832
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/wizard_staff.png.js");

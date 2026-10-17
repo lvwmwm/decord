@@ -5,48 +5,34 @@
 // Exports: default
 
 // Module 4383 (formatDistance)
-let closure_0 = { lessThanXSeconds: { one: "mindre \u00E4n en sekund", other: "mindre \u00E4n {{count}} sekunder" }, xSeconds: { one: "en sekund", other: "{{count}} sekunder" }, halfAMinute: "en halv minut", lessThanXMinutes: { one: "mindre \u00E4n en minut", other: "mindre \u00E4n {{count}} minuter" }, xMinutes: { one: "en minut", other: "{{count}} minuter" }, aboutXHours: { one: "ungef\u00E4r en timme", other: "ungef\u00E4r {{count}} timmar" }, xHours: { one: "en timme", other: "{{count}} timmar" }, xDays: { one: "en dag", other: "{{count}} dagar" }, aboutXWeeks: { one: "ungef\u00E4r en vecka", other: "ungef\u00E4r {{count}} vecka" }, xWeeks: { one: "en vecka", other: "{{count}} vecka" }, aboutXMonths: { one: "ungef\u00E4r en m\u00E5nad", other: "ungef\u00E4r {{count}} m\u00E5nader" }, xMonths: { one: "en m\u00E5nad", other: "{{count}} m\u00E5nader" }, aboutXYears: { one: "ungef\u00E4r ett \u00E5r", other: "ungef\u00E4r {{count}} \u00E5r" }, xYears: { one: "ett \u00E5r", other: "{{count}} \u00E5r" }, overXYears: { one: "\u00F6ver ett \u00E5r", other: "\u00F6ver {{count}} \u00E5r" }, almostXYears: { one: "n\u00E4stan ett \u00E5r", other: "n\u00E4stan {{count}} \u00E5r" } };
-let closure_1 = ["noll", "en", "tv\u00E5", "tre", "fyra", "fem", "sex", "sju", "\u00E5tta", "nio", "tio", "elva", "tolv"];
+let closure_0 = { lessThanXSeconds: { one: "minder dan een seconde", other: "minder dan {{count}} seconden" }, xSeconds: { one: "1 seconde", other: "{{count}} seconden" }, halfAMinute: "een halve minuut", lessThanXMinutes: { one: "minder dan een minuut", other: "minder dan {{count}} minuten" }, xMinutes: { one: "een minuut", other: "{{count}} minuten" }, aboutXHours: { one: "ongeveer 1 uur", other: "ongeveer {{count}} uur" }, xHours: { one: "1 uur", other: "{{count}} uur" }, xDays: { one: "1 dag", other: "{{count}} dagen" }, aboutXWeeks: { one: "ongeveer 1 week", other: "ongeveer {{count}} weken" }, xWeeks: { one: "1 week", other: "{{count}} weken" }, aboutXMonths: { one: "ongeveer 1 maand", other: "ongeveer {{count}} maanden" }, xMonths: { one: "1 maand", other: "{{count}} maanden" }, aboutXYears: { one: "ongeveer 1 jaar", other: "ongeveer {{count}} jaar" }, xYears: { one: "1 jaar", other: "{{count}} jaar" }, overXYears: { one: "meer dan 1 jaar", other: "meer dan {{count}} jaar" }, almostXYears: { one: "bijna 1 jaar", other: "bijna {{count}} jaar" } };
 
-export default function formatDistance(arg0, arg1, onlyNumeric) {
+export default function formatDistance(arg0, arg1, addSuffix) {
   let tmp2 = tmp;
   if (typeof closure_0[arg0] !== "string") {
     let one;
     if (1 === arg1) {
       one = tmp.one;
     } else {
-      let StringResult;
-      if (onlyNumeric) {
-        if (onlyNumeric.onlyNumeric) {
-          const _String2 = String;
-          const str3 = closure_0[arg0].other;
-          one = str3.replace("{{count}}", String(arg1));
-        }
-      }
-      const replace = closure_0[arg0].other.replace;
-      if (arg1 < 13) {
-        StringResult = closure_1[arg1];
-      } else {
-        const _String = String;
-        StringResult = String(arg1);
-      }
-      one = replace("{{count}}", StringResult);
+      const _String = String;
+      const str = closure_0[arg0].other;
+      one = str.replace("{{count}}", String(arg1));
     }
     tmp2 = one;
   }
-  let tmp7 = tmp2;
-  if (null != onlyNumeric) {
-    tmp7 = tmp2;
-    if (onlyNumeric.addSuffix) {
-      if (onlyNumeric.comparison) {
+  let tmp4 = tmp2;
+  if (null != addSuffix) {
+    tmp4 = tmp2;
+    if (addSuffix.addSuffix) {
+      if (addSuffix.comparison) {
         let text;
-        if (onlyNumeric.comparison > 0) {
-          text = `om ${tmp2}`;
+        if (addSuffix.comparison > 0) {
+          text = `over ${tmp2}`;
         }
-        tmp7 = text;
+        tmp4 = text;
       }
-      text = `${tmp2} sedan`;
+      text = `${tmp2} geleden`;
     }
   }
-  return tmp7;
+  return tmp4;
 };

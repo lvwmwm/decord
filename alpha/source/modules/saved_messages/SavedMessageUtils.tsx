@@ -1,14 +1,14 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13595
+// Function ID: 13596
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2072, 2068, 1087, 1128, 4761, 558, 576, 504, 7238, 7172, 2]
+// Dependencies: [5, 19, 2072, 2068, 1087, 1128, 4797, 558, 576, 504, 7290, 7224, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 13529 (SavedMessageUtils)
+// Module 13595 (SavedMessageUtils)
 import intl2 from "intl" /* 1128 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -243,8 +243,8 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = tmp(1128).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4761.duration;
-    _modDef4761;
+    const duration = _modDef4797.duration;
+    _modDef4797;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

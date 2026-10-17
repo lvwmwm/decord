@@ -1,17 +1,17 @@
-// Module ID: 18541
-// Function ID: 18542
+// Module ID: 18602
+// Function ID: 18603
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1087, 7480, 21, 5154, 587, 558, 576, 1633, 18542, 1267, 6380, 1128, 2571, 5150, 15857, 5442, 2]
+// Dependencies: [19, 17, 1087, 7526, 21, 5191, 587, 558, 576, 1633, 18603, 1267, 6433, 1128, 2589, 5187, 15923, 5479, 2]
 
-// Module 18541 (ConnectGuardianModal)
+// Module 18602 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7480 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   onComplete = route.route.params.onComplete;
   const tmp4 = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj2 = onComplete(18542);
+  let obj2 = onComplete(18603);
   connectGuardianGate = obj2.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const obj3 = react;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
         }
         const _Symbol4 = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp60 = closure_7(tmp(6380).ActivityIndicator, {});
+          const tmp60 = closure_7(tmp(6433).ActivityIndicator, {});
           cResult[7] = tmp60;
           tmp58 = tmp60;
         } else {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
       ({ container, header, title } = tmp4);
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1128).intl;
-        const stringResult = intl.string(connectGuardianGate(2571).ITlV6p);
+        const stringResult = intl.string(connectGuardianGate(2589).ITlV6p);
         cResult[10] = stringResult;
         tmp10 = stringResult;
       } else {
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
       }
       if (cResult[11] !== tmp4.title) {
         const obj5 = { style: title, variant: "heading-xl/bold", color: "text-default", children: tmp10 };
-        const tmp14 = closure_7(tmp(5150).Text, obj5);
+        const tmp14 = closure_7(tmp(5187).Text, obj5);
         cResult[11] = tmp4.title;
         cResult[12] = tmp14;
         tmp12 = tmp14;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
       const description = tmp4.description;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1128).intl;
-        const formatResult = intl2.format(connectGuardianGate(2571).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
+        const formatResult = intl2.format(connectGuardianGate(2589).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
         cResult[13] = formatResult;
         tmp15 = formatResult;
       } else {
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             ({ cardSection, scanPrompt } = tmp4);
             if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
               const intl3 = tmp(1128).intl;
-              const stringResult1 = intl3.string(connectGuardianGate(2571).Mi60fm);
+              const stringResult1 = intl3.string(connectGuardianGate(2589).Mi60fm);
               cResult[21] = stringResult1;
               tmp24 = stringResult1;
             } else {
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             if (cResult[22] !== tmp4.scanPrompt) {
               const obj6 = { style: scanPrompt, variant: "text-md/semibold", color: "text-default", children: tmp24 };
-              const tmp28 = closure_7(tmp(5150).Text, obj6);
+              const tmp28 = closure_7(tmp(5187).Text, obj6);
               cResult[22] = tmp4.scanPrompt;
               cResult[23] = tmp28;
               tmp26 = tmp28;
@@ -230,7 +230,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
                                                   return tmpResult;
                                                 }
                         };
-                        const tmp47 = closure_7(tmp(5442).Button, obj10);
+                        const tmp47 = closure_7(tmp(5479).Button, obj10);
                         cResult[40] = onComplete;
                         cResult[41] = tmp47;
                         tmp45 = tmp47;
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             const obj14 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
             ({ linkCode: obj8.linkCode, expiresAt: obj8.expiresAt, refresh: obj8.onRefresh } = connectGuardianGate);
-            const tmp31 = closure_7(tmp(15857).ConnectGuardianCard, obj14);
+            const tmp31 = closure_7(tmp(15923).ConnectGuardianCard, obj14);
             cResult[24] = connectGuardianGate.expiresAt;
             cResult[25] = connectGuardianGate.linkCode;
             cResult[26] = connectGuardianGate.refresh;
@@ -310,7 +310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
         tmp20 = tmp23;
       }
       const obj27 = { style: description, variant: "text-sm/medium", color: "text-muted", children: tmp15 };
-      const tmp19 = closure_7(tmp(5150).Text, obj27);
+      const tmp19 = closure_7(tmp(5187).Text, obj27);
       cResult[14] = tmp4.description;
       cResult[15] = tmp15;
       cResult[16] = tmp19;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj = onComplete(18542);
+  let obj = onComplete(18603);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -371,30 +371,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     }
   }, items);
   if ("gate" !== connectGuardianGate.state) {
-    let obj2 = { style: items1, children: closure_7(tmp4(6380).ActivityIndicator, {}) };
+    let obj2 = { style: items1, children: closure_7(tmp4(6433).ActivityIndicator, {}) };
     items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     tmp9 = closure_7(View, obj2);
   } else {
     const obj3 = { style: tmp.container, children: items3 };
     const obj4 = { style: tmp.header, children: items2 };
-    const obj5 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default", children: intl.string(connectGuardianGate(2571).ITlV6p) };
-    const Text = tmp4(5150).Text;
+    const obj5 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default", children: intl.string(connectGuardianGate(2589).ITlV6p) };
+    const Text = tmp4(5187).Text;
     intl = tmp4(1128).intl;
     items2 = [closure_7(Text, obj5), ];
-    const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl2.format(connectGuardianGate(2571).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-    const Text2 = tmp4(5150).Text;
+    const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl2.format(connectGuardianGate(2589).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
+    const Text2 = tmp4(5187).Text;
     intl2 = tmp4(1128).intl;
     items2[1] = closure_7(Text2, obj6);
     items3 = [closure_8(View, obj4), , , ];
     const obj7 = { style: tmp.cardSection, children: items4 };
-    const obj8 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default", children: intl3.string(connectGuardianGate(2571).Mi60fm) };
-    const Text3 = tmp4(5150).Text;
+    const obj8 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default", children: intl3.string(connectGuardianGate(2589).Mi60fm) };
+    const Text3 = tmp4(5187).Text;
     intl3 = tmp4(1128).intl;
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(15857).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(15923).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);
@@ -414,7 +414,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
           return tmpResult;
         }
     };
-    Button = tmp4(5442).Button;
+    Button = tmp4(5479).Button;
     intl4 = tmp4(1128).intl;
     items3[3] = closure_7(View, obj12);
     tmp9 = closure_8(View, obj3);

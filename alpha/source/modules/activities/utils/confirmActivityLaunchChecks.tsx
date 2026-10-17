@@ -1,10 +1,10 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11244
+// Function ID: 11245
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2068, 2067, 1087, 11180, 11174, 584, 5854, 4798, 11183, 10965, 11184, 6301, 11186, 2]
+// Dependencies: [5, 2068, 2067, 1087, 11245, 11239, 584, 5891, 4834, 11248, 11025, 11249, 6359, 11251, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 11179 (confirmActivityLaunchChecks)
+// Module 11244 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -58,7 +58,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -163,7 +163,7 @@ obj = function _confirmActivityChange() {
             ({ currentEmbeddedApplication: c0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: c1, onConfirmActivityLaunchChecksAlertOpen: c2 } = closure_0);
             c2 = 1;
             c3 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === tmp4) {
@@ -281,7 +281,7 @@ obj = function _confirmActivityAgeGate() {
             application = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           let closure_1;
@@ -439,7 +439,7 @@ obj = function _confirmExternalAppLaunch() {
             isVerified = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           let closure_1;

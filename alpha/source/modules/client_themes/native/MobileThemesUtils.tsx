@@ -1,17 +1,17 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5124
+// Function ID: 5125
 // Name: MobileThemesUtils
-// Dependencies: [1207, 5088, 1253, 1255, 1128, 2803, 1256, 558, 576, 5089, 504, 2]
+// Dependencies: [1207, 5125, 1253, 1255, 1128, 2821, 1256, 558, 576, 5126, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient
 
-// Module 5087 (MobileThemesUtils)
+// Module 5124 (MobileThemesUtils)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import _modDef2803 from "module_2803" /* 2803 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5089 */;
+import _modDef2821 from "module_2821" /* 2821 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5126 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5088 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5125 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ let tmp;
 const get_initialized = tmp(504);
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2803.yl1iMm);
+  return intl.string(_modDef2821.yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportDefault } = ClientThemesConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;

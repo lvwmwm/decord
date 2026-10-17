@@ -1,12 +1,12 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10652
+// Function ID: 10653
 // Name: markChannelUnread
-// Dependencies: [6254, 10590, 558, 576, 504, 2]
+// Dependencies: [6291, 10653, 558, 576, 504, 2]
 // Exports: default
 
-// Module 10589 (markChannelUnread)
-import ReadStateStore2 from "ReadStateStore" /* 6254 */;
-import markUnreadDefault from "markUnread" /* 10590 */;
+// Module 10652 (markChannelUnread)
+import ReadStateStore2 from "ReadStateStore" /* 6291 */;
+import markUnreadDefault from "markUnread" /* 10653 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

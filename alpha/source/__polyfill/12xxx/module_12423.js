@@ -1,94 +1,132 @@
 // Module ID: 12423
 // Function ID: 12424
-// Dependencies: [377, 41, 42]
+// Dependencies: [12416]
+// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
 
 // Module 12423
-import _readOnlyError from "_readOnlyError" /* 377 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod12416 from "module_12416" /* 12416 */;
 
-class LRUMap {
-  constructor(_maxSize) {
-    _classCallCheck(this, LRUMap);
-    this._maxSize = _maxSize;
-    this._cache = new Map();
-    new Map();
-  }
-}
-let items = [, , , , , , ];
-const obj = {
-  key: "size",
-  get() {
-    return this._cache.size;
-  }
-};
-items[0] = obj;
-items[1] = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (undefined !== value) {
-      const _cache2 = self._cache;
-      _cache2.delete(arg0);
-      const _cache3 = self._cache;
-      const result = _cache3.set(arg0, value);
-      return value;
-    }
-  }
-};
-items[2] = {
-  key: "set",
-  value: function set(arg0, arg1) {
-    let _cache;
-    let _cache2;
-    const self = this;
-    if (this._cache.size >= this._maxSize) {
-      ({ _cache, _cache: _cache2 } = self);
-      const _delete = _cache.delete;
-      const iter = _cache2.keys();
-      _delete(iter.next().value);
-    }
-    const _cache3 = self._cache;
-    const result = _cache3.set(arg0, arg1);
-  }
-};
-items[3] = {
-  key: "remove",
-  value: function remove(arg0) {
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (value) {
-      const _cache2 = this._cache;
-      _cache2.delete(arg0);
-    }
-    return value;
-  }
-};
-items[4] = {
-  key: "clear",
-  value: function clear() {
-    const _cache = this._cache;
-    _cache.clear();
-  }
-};
-items[5] = {
-  key: "keys",
-  value: function keys() {
-    const _cache = this._cache;
-    return Array.from(_cache.keys());
-  }
-};
-items[6] = {
-  key: "values",
-  value: function values() {
-    const items = [];
-    const _cache = this._cache;
-    const item = _cache.forEach((item) => items.push(item));
-    return items;
-  }
-};
-const LRUMap_export = _createClass(LRUMap, items);
 
-export { LRUMap_export as LRUMap };
+export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
+  let combined1 = arg1;
+  if (!combined1) {
+    let str2 = "";
+    if (protocol.protocol) {
+      const _HermesInternal = HermesInternal;
+      str2 = "" + protocol.protocol + ":";
+    }
+    let str4 = "";
+    if (protocol.port) {
+      const _HermesInternal2 = HermesInternal;
+      str4 = ":" + protocol.port;
+    }
+    const host = protocol.host;
+    let str6 = "";
+    if (protocol.path) {
+      const _HermesInternal3 = HermesInternal;
+      str6 = "/" + protocol.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const obj = { sentry_version: "7" };
+    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
+    if (protocol.publicKey) {
+      obj.sentry_key = protocol.publicKey;
+    }
+    const tmp12 = name;
+    if (tmp12) {
+      const _HermesInternal6 = HermesInternal;
+      obj.sentry_client = "" + name.name + "/" + name.version;
+    }
+    const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
+    const _HermesInternal7 = HermesInternal;
+    const str13 = new URLSearchParams(obj);
+    combined1 = "" + combined + "?" + str13.toString();
+  }
+  return combined1;
+};
+export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
+  const obj = _mod12416;
+  const url = obj.makeDsn(arg0);
+  if (url) {
+    let str = "";
+    if (url.protocol) {
+      const _HermesInternal = HermesInternal;
+      str = "" + url.protocol + ":";
+    }
+    let str3 = "";
+    if (url.port) {
+      const _HermesInternal2 = HermesInternal;
+      str3 = ":" + url.port;
+    }
+    const host = url.host;
+    let str5 = "";
+    if (url.path) {
+      const _HermesInternal3 = HermesInternal;
+      str5 = "/" + url.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
+    const _HermesInternal6 = HermesInternal;
+    const tmp2Result = _mod12416;
+    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
+    let tmp16 = combined1;
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      tmp16 = combined1;
+      while (keys[tmp] !== undefined) {
+        if ("dsn" === tmp19) {
+          continue;
+        } else {
+          combined1 = tmp18;
+          if ("onClose" === tmp19) {
+            continue;
+          } else {
+            if ("user" === tmp19) {
+              user = user.user;
+              combined1 = tmp18;
+              if (!user) {
+                continue;
+              } else {
+                let sum = tmp18;
+                if (user.name) {
+                  let _encodeURIComponent3 = encodeURIComponent;
+                  let _HermesInternal8 = HermesInternal;
+                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
+                }
+                combined1 = sum;
+                if (!user.email) {
+                  continue;
+                } else {
+                  let _encodeURIComponent4 = encodeURIComponent;
+                  let _HermesInternal9 = HermesInternal;
+                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
+                  continue;
+                }
+                continue;
+              }
+              continue;
+            } else {
+              let _encodeURIComponent = encodeURIComponent;
+              let _encodeURIComponent2 = encodeURIComponent;
+              let encodeURIComponentResult = encodeURIComponent(tmp19);
+              let _HermesInternal7 = HermesInternal;
+              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
+              continue;
+            }
+            continue;
+          }
+          continue;
+        }
+        continue;
+      }
+    }
+    const _HermesInternal10 = HermesInternal;
+    return "" + combined + "?" + tmp16;
+  } else {
+    return "";
+  }
+};

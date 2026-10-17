@@ -1,26 +1,26 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18092
+// Function ID: 18093
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5503, 5980, 2065, 21, 5154, 587, 4886, 1633, 504, 5982, 7078, 7077, 7102, 18033, 5118, 18035, 2002, 7064, 7065, 5440, 18018, 5150, 1128, 3221, 9271, 5442, 13735, 558, 576, 4884, 1417, 5444, 7085, 7081, 2]
+// Dependencies: [19, 17, 5540, 6017, 2065, 21, 5191, 587, 4922, 1633, 504, 6019, 7131, 7130, 7155, 18093, 5155, 18095, 2002, 7117, 7118, 5477, 18078, 5187, 1128, 3239, 9331, 5479, 13803, 558, 576, 4920, 1417, 5481, 7138, 7134, 2]
 // Exports: default
 
-// Module 18032 (ConnectionDeprecationBottomSheet)
+// Module 18092 (ConnectionDeprecationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import themes from "themes" /* 4884 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Icon from "Icon" /* 5444 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7078 */;
-import GameIconDefault from "GameIcon" /* 7085 */;
-import AccountLinkManager from "AccountLinkManager" /* 18033 */;
+import themes from "themes" /* 4920 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Icon from "Icon" /* 5481 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7131 */;
+import GameIconDefault from "GameIcon" /* 7138 */;
+import AccountLinkManager from "AccountLinkManager" /* 18093 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5980 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp;
-const GameIcon = tmp(7085);
+const GameIcon = tmp(7138);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -201,8 +201,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(7081).useGetOrFetchApplication;
-  deprecatedPlatformTypes(7081);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(7134).useGetOrFetchApplication;
+  deprecatedPlatformTypes(7134);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {
@@ -255,8 +255,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
   });
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(7081).useGetOrFetchApplication;
-  deprecatedPlatformTypes(7081);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(7134).useGetOrFetchApplication;
+  deprecatedPlatformTypes(7134);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {

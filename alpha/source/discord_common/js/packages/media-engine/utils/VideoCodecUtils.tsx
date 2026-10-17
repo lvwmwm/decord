@@ -1,17 +1,17 @@
-// Module ID: 5260
-// Function ID: 5261
+// Module ID: 5297
+// Function ID: 5298
 // Name: VideoCodecUtils
-// Dependencies: [5179, 2]
+// Dependencies: [5216, 2]
 // Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 5260 (VideoCodecUtils)
-import Constants from "Constants" /* 5179 */;
+// Module 5297 (VideoCodecUtils)
+import Constants from "Constants" /* 5216 */;
 import size from "module_2" /* 2 */;
 
 let encode, set;
 
-const f92689 = (name) => name.name;
-const f92691 = (codec) => {
+const f92928 = (name) => name.name;
+const f92930 = (codec) => {
   codec = codec.codec;
   let str = "AV1";
   if ("AV1X" !== codec) {
@@ -49,7 +49,7 @@ export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNat
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f92689));
+    new Set(items.map(f92928));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -80,7 +80,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     flag = false;
   }
   const parsed = JSON.parse(arg0);
-  const mapped = parsed.map(f92691);
+  const mapped = parsed.map(f92930);
   if (flag === undefined) {
     flag = false;
   }
@@ -105,7 +105,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(items.map(f92689));
+    set = new Set(items.map(f92928));
     const item1 = mapped.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -118,7 +118,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
 };
 export const parseNativeCodecs = function parseNativeCodecs(arg0) {
   const parsed = JSON.parse(arg0);
-  return parsed.map(f92691);
+  return parsed.map(f92930);
 };
 export function codecNameToPayloadName(name) {
   let str = "AV1X";

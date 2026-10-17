@@ -1,11 +1,11 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7458
+// Function ID: 7459
 // Name: SkippedClientHeartbeatUtil
-// Dependencies: [1392, 7413, 2]
+// Dependencies: [1392, 7459, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 7412 (SkippedClientHeartbeatUtil)
-import sampleWithUserId from "sampleWithUserId" /* 7413 */;
+// Module 7458 (SkippedClientHeartbeatUtil)
+import sampleWithUserId from "sampleWithUserId" /* 7459 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

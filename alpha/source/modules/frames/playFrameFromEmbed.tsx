@@ -1,18 +1,13 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 12791
+// Function ID: 12792
 // Name: playFrameFromEmbed
-// Dependencies: [5, 10947, 10931, 1087, 10919, 10961, 7263, 1114, 2]
+// Dependencies: [5, 11203, 10983, 2]
 // Exports: default
 
-// Module 12726 (playFrameFromEmbed)
-import Constants from "Constants" /* 1087 */;
+// Module 12791 (playFrameFromEmbed)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10947 */;
-import FramesConstants from "FramesConstants" /* 10931 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroRequire;
 let obj = function _playFrameFromEmbed() {
   obj = _asyncToGenerator(async (arg0) => {
     let analyticsContext;
@@ -24,26 +19,24 @@ let obj = function _playFrameFromEmbed() {
       let c0;
       let c1;
       let first;
-      let frame;
-      let obj10;
-      let obj7;
-      function shouldOpenAppChannel(c0) {
-        const tmp = null != c0.conjureProjectId && null == frame.getFrame(closure_1_6(c0.id, closure_1_5));
-        return tmp;
-      }
-      if (1 === tmp4) {
+      let obj5;
+      let tmp18;
+      if (1 === c3) {
         if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 3;
           return { value, done: true };
-        } else if (shouldOpenAppChannel(user)) {
-          c3 = 2;
-          c4 = 1;
-          const obj8 = { value: obj7.fetchApplicationChannels(user.id), done: false };
-          obj7 = closure_130_0(closure_130_2[4]);
-          return obj8;
+        } else if (null != user.conjureProjectId) {
+          const obj2 = closure_130_0(closure_130_2[1]);
+          if (obj2.shouldOpenAppChannel(user.id)) {
+            c3 = 2;
+            c4 = 1;
+            const obj7 = { value: obj5.fetchApplicationChannels(user.id), done: false };
+            obj5 = closure_130_0(closure_130_2[2]);
+            return obj7;
+          }
         }
       } else if (arg0 === 1) {
         c4 = 3;
@@ -54,33 +47,22 @@ let obj = function _playFrameFromEmbed() {
       } else {
         first = value[0];
       }
+      const obj8 = { applicationId: user.id, channel: tmp18, analyticsContext };
+      tmp18 = null;
+      const tmp15 = closure_130_1(closure_130_2[1]);
       if (null != first) {
-        const obj9 = { applicationId: user.id, surface: obj10, analyticsContext, showErrorModal: false };
-        obj10 = { type: closure_130_0(closure_130_2[6]).EmbeddedSurfaceType.APP_CHANNEL, channelId: first.channel_id, guildId: first.guild_id };
-        const launchFrame = closure_130_1(closure_130_2[5]).launchFrame;
-        closure_130_1(closure_130_2[5]);
-        const launchFrameResult = launchFrame(obj9);
-        launchFrameResult.catch(() => {
-
-        });
-        const obj6 = closure_130_0(closure_130_2[7]);
-        obj6.transitionTo(closure_130_7.CHANNEL(first.guild_id, first.channel_id));
-      } else {
-        const obj11 = { applicationId: user.id, surface: closure_130_5, analyticsContext };
-        const obj2 = closure_130_1(closure_130_2[5]);
-        obj2.launchFrame(obj11);
+        tmp18 = { guildId: first.guild_id, channelId: first.channel_id };
       }
+      tmp15(obj8);
       await "IconComponent";
       ({ application: c0, analyticsContext: c1 } = closure_0);
-      return "test";
+      return "Reflect";
     })();
     iter.next();
     return iter;
   });
   return obj(...arguments);
 };
-({ MAIN_SURFACE: hasOwnProperty, makeFrameId: metroRequire } = FramesConstants);
-const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/frames/playFrameFromEmbed.tsx");
 
 export default function playFrameFromEmbed() {

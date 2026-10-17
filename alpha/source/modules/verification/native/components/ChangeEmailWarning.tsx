@@ -1,19 +1,19 @@
-// Module ID: 6492
-// Function ID: 6493
+// Module ID: 6545
+// Function ID: 6546
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1392, 6485, 1087, 21, 5154, 587, 558, 576, 1505, 504, 1267, 1107, 6493, 1128, 5150, 5442, 6422, 2]
+// Dependencies: [19, 17, 1392, 6538, 1087, 21, 5191, 587, 558, 576, 1505, 504, 1267, 1107, 6546, 1128, 5187, 5479, 6475, 2]
 
-// Module 6492 (ChangeEmailWarning)
+// Module 6545 (ChangeEmailWarning)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import VerificationConstants from "VerificationConstants" /* 6485 */;
+import VerificationConstants from "VerificationConstants" /* 6538 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       const _Symbol6 = Symbol;
       const container = tmp4.container;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp15 = closure_9(changeEmailReason(6493).TrafficConeSpotIllustration, {});
+        const tmp15 = closure_9(changeEmailReason(6546).TrafficConeSpotIllustration, {});
         cResult[5] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -99,7 +99,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       }
       if (cResult[7] !== tmp4.title) {
         const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
-        const tmp20 = closure_9(changeEmailReason(5150).Text, obj3);
+        const tmp20 = closure_9(changeEmailReason(5187).Text, obj3);
         cResult[7] = tmp4.title;
         cResult[8] = tmp20;
         tmp18 = tmp20;
@@ -146,7 +146,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         }
         if (cResult[15] !== tmp11) {
           const obj5 = { size: "md", variant: "tertiary", text: tmp29, onPress: tmp11, shrink: true };
-          const tmp33 = closure_9(changeEmailReason(5442).Button, obj5);
+          const tmp33 = closure_9(changeEmailReason(5479).Button, obj5);
           cResult[15] = tmp11;
           cResult[16] = tmp33;
           tmp31 = tmp33;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
                     },
             shrink: true
           };
-          const Button = tmp(5442).Button;
+          const Button = tmp(5479).Button;
           intl5 = tmp(1128).intl;
           const tmp36 = closure_9(Button, obj6);
           cResult[17] = tmp36;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       }
       const obj10 = { style: body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
       items3 = [tmp21, "\n\n", tmp24];
-      const tmp28 = closure_10(changeEmailReason(5150).Text, obj10);
+      const tmp28 = closure_10(changeEmailReason(5187).Text, obj10);
       cResult[11] = tmp4.body;
       cResult[12] = tmp21;
       cResult[13] = tmp28;
@@ -248,13 +248,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   if (null != stateFromStores) {
     const obj3 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_4, obj4) };
     obj4 = { style: tmp.container, children: items2 };
-    items2 = [closure_9(changeEmailReason(6493).TrafficConeSpotIllustration, {}), , , ];
+    items2 = [closure_9(changeEmailReason(6546).TrafficConeSpotIllustration, {}), , , ];
     const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1128).t.hhR7gX) };
-    const Text = tmp2(5150).Text;
+    const Text = tmp2(5187).Text;
     intl = tmp2(1128).intl;
     items2[1] = closure_9(Text, obj5);
     const obj6 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
-    const Text2 = tmp2(5150).Text;
+    const Text2 = tmp2(5187).Text;
     const intl2 = tmp2(1128).intl;
     const obj7 = { hcArticle };
     items3 = [intl2.format(changeEmailReason(1128).t.rqWXUf, obj7), "\n\n", ];
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
     items2[2] = closure_10(Text2, obj6);
     const obj8 = { style: tmp.buttonContainer, children: items4 };
     const obj9 = { size: "md", variant: "tertiary", text: intl4.string(changeEmailReason(1128).t.rwTBFs), onPress: tmp6, shrink: true };
-    const Button = tmp2(5442).Button;
+    const Button = tmp2(5479).Button;
     intl4 = tmp2(1128).intl;
     items4 = [closure_9(Button, obj9), ];
     const obj10 = {
@@ -276,7 +276,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         },
       shrink: true
     };
-    const Button2 = tmp2(5442).Button;
+    const Button2 = tmp2(5479).Button;
     intl5 = tmp2(1128).intl;
     items4[1] = closure_9(Button2, obj10);
     items2[3] = closure_10(closure_4, obj8);

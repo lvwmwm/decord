@@ -1,9 +1,9 @@
-// Module ID: 13872
-// Function ID: 13873
+// Module ID: 13940
+// Function ID: 13941
 // Name: useGuildProfileGames
-// Dependencies: [19, 2023, 2022, 502, 558, 576, 504, 7233, 1388, 2]
+// Dependencies: [19, 2023, 2022, 502, 558, 576, 504, 7285, 1388, 2]
 
-// Module 13872 (useGuildProfileGames)
+// Module 13940 (useGuildProfileGames)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import react from "react" /* 19 */;

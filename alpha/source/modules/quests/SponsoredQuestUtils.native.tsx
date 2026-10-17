@@ -1,10 +1,10 @@
-// Module ID: 13845
-// Function ID: 13846
+// Module ID: 13913
+// Function ID: 13914
 // Name: SponsoredQuestUtils
 // Dependencies: [2]
 // Exports: createGameSheetHook
 
-// Module 13845 (SponsoredQuestUtils)
+// Module 13913 (SponsoredQuestUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");

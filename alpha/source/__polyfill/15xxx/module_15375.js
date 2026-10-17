@@ -1,47 +1,14 @@
 // Module ID: 15375
 // Function ID: 15376
-// Dependencies: []
-// Exports: default
+// Dependencies: [15323, 15324]
 
 // Module 15375
+import _mod15323 from "module_15323" /* 15323 */;
+import _mod15324 from "module_15324" /* 15324 */;
 
-export default () => (startTimer) => {
-  let closure_0 = startTimer;
-  startTimer = startTimer.startTimer;
-  let obj = {
-    features: {
-      benchmark(title) {
-        const items = [];
-        let closure_2 = items();
-        function step(title) {
-          let num = 0;
-          if (0 !== items.length) {
-            num = arr[arr.length - 1].time;
-          }
-          const tmp = closure_2();
-          const obj = { title, time: tmp, delta: tmp - num };
-          items.push(obj);
-        }
-        let obj = { title, time: 0, delta: 0 };
-        const arr = items.push(obj);
-        function stop(title) {
-          if (typeof step === "function") {
-            let num = 0;
-            if (0 !== items.length) {
-              num = arr[arr.length - 1].time;
-            }
-            const tmp3 = closure_2();
-            const obj = { title, time: tmp3, delta: tmp3 - num };
-            items.push(obj);
-            const obj2 = { title, steps: items };
-            title.send("benchmark.report", obj2);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return { step, stop, last: stop };
-      }
-    }
-  };
-  return obj;
-};
+const f69930 = () => 42 !== Object.defineProperty(() => {
+
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod15323 && _mod15324(f69930);
+
+export default _mod15323 && _mod15324(f69930);

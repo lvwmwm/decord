@@ -1,9 +1,9 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14572
+// Function ID: 14573
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1207, 2090, 7344, 4834, 1087, 21, 5154, 587, 6125, 558, 576, 7387, 1128, 5150, 11, 6409, 6178, 6383, 5091, 14505, 504, 1417, 14506, 14510, 5943, 8250, 12, 2]
+// Dependencies: [19, 17, 1207, 2090, 7390, 4870, 1087, 21, 5191, 587, 6162, 558, 576, 7433, 1128, 5187, 11, 6462, 6215, 6436, 5128, 14573, 504, 1417, 14574, 14578, 5980, 8296, 12, 2]
 
-// Module 14504 (GuildBoostSlotsInventory)
+// Module 14572 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -12,22 +12,22 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5943 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6178 */;
-import GuildIcon from "GuildIcon" /* 6383 */;
-import useCountdownDefault from "useCountdown" /* 7387 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8250 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14505 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5980 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6215 */;
+import GuildIcon from "GuildIcon" /* 6436 */;
+import useCountdownDefault from "useCountdown" /* 7433 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8296 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14573 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7344 */;
-import SubscriptionStore from "SubscriptionStore" /* 4834 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7390 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
-import TextStyles from "TextStyles" /* 6125 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import TextStyles from "TextStyles" /* 6162 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const SubscriptionPlaceholderPattern = tmp2(14506);
+const SubscriptionPlaceholderPattern = tmp2(14574);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -336,9 +336,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
                 },
           children: closure_10(Text, obj6)
         };
-        const PressableOpacity = tmp(6409).PressableOpacity;
+        const PressableOpacity = tmp(6462).PressableOpacity;
         obj6 = { variant: "text-md/medium", color: "control-brand-foreground", children: intl2.string(guildBoostSlot(1128).t.jqqLb6) };
-        Text = tmp(5150).Text;
+        Text = tmp(5187).Text;
         intl2 = tmp(1128).intl;
         tmp21 = closure_10(PressableOpacity, obj5);
       }
@@ -423,9 +423,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildB
             },
         children: closure_10(Text, obj6)
       };
-      const PressableOpacity = guildBoostSlot(6409).PressableOpacity;
+      const PressableOpacity = guildBoostSlot(6462).PressableOpacity;
       obj6 = { variant: "text-md/medium", color: "control-brand-foreground", children: intl2.string(guildBoostSlot(1128).t.jqqLb6) };
-      Text = guildBoostSlot(5150).Text;
+      Text = guildBoostSlot(5187).Text;
       intl2 = guildBoostSlot(1128).intl;
       tmp6Result2 = tmp6(PressableOpacity, obj5);
     }
@@ -539,9 +539,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unused
         },
       children: closure_10(Text, obj6)
     };
-    PressableOpacity = tmp(6409).PressableOpacity;
+    PressableOpacity = tmp(6462).PressableOpacity;
     obj6 = { variant: "text-md/medium", color: "text-link", children: intl2.string(tmp(1128).t["7KyPor"]) };
-    Text = tmp(5150).Text;
+    Text = tmp(5187).Text;
     intl2 = tmp(1128).intl;
     tmp12 = closure_10(closure_16, obj3);
   }
@@ -623,9 +623,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unused
         },
       children: closure_10(Text, obj5)
     };
-    PressableOpacity = found(6409).PressableOpacity;
+    PressableOpacity = found(6462).PressableOpacity;
     obj5 = { variant: "text-md/medium", color: "text-link", children: intl2.string(found(1128).t["7KyPor"]) };
-    Text = found(5150).Text;
+    Text = found(5187).Text;
     intl2 = found(1128).intl;
     tmp4 = closure_10(closure_16, obj2);
   }
@@ -881,7 +881,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
   } else {
     tmp13 = cResult[6];
   }
-  const tmpResult4 = guildId(14506);
+  const tmpResult4 = guildId(14574);
   let subscriptionPlaceholderPatternSource = tmpResult4.useSubscriptionPlaceholderPatternSource();
   if (null != tmp13) {
     subscriptionPlaceholderPatternSource = tmp13;
@@ -1031,7 +1031,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
           tmp28 = tmp30;
         }
         const obj8 = { guild: stateFromStores, theme: stateFromStores1 };
-        const tmp27 = closure_10(guildBoostSlots(14510), obj8);
+        const tmp27 = closure_10(guildBoostSlots(14578), obj8);
         cResult[16] = stateFromStores;
         cResult[17] = stateFromStores1;
         cResult[18] = tmp27;
@@ -1043,7 +1043,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
       tmp23 = tmp24;
     }
     const obj9 = { source: subscriptionPlaceholderPatternSource, style: tmp19 };
-    const tmp22 = closure_10(guildBoostSlots(5091), obj9);
+    const tmp22 = closure_10(guildBoostSlots(5128), obj9);
     cResult[10] = subscriptionPlaceholderPatternSource;
     cResult[11] = tmp19;
     cResult[12] = tmp22;
@@ -1089,7 +1089,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
   const obj5 = { style: tmp.subscriptionBody, children: items4 };
   const obj6 = { style: tmp.subscriptionImageView, children: items3 };
   const tmp12 = guildBoostSlots;
-  const tmp13 = guildBoostSlots(5091);
+  const tmp13 = guildBoostSlots(5128);
   if (null == guildBannerSource) {
     prop = tmp.subscriptionImageFallback;
   }
@@ -1101,7 +1101,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_10(tmp12(14510), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_10(tmp12(14578), { guild: stateFromStores, theme: stateFromStores1 });
   items4 = [closure_11(View, obj6), ];
   const obj9 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   items4[1] = closure_10(closure_19, obj9);
@@ -1330,7 +1330,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostSl
       if (found.length > 0) {
         const obj6 = { children: items3 };
         const obj7 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: intl.string(intl3.t.gB9oQ7) };
-        const Text = tmp3(5150).Text;
+        const Text = tmp3(5187).Text;
         intl = tmp3(1128).intl;
         items3 = [
           closure_10(Text, obj7),

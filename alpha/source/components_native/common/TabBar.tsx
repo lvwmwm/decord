@@ -1,19 +1,19 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9888
+// Function ID: 9889
 // Name: TabBar
-// Dependencies: [109, 32, 19, 17, 21, 5154, 587, 558, 576, 7038, 6559, 1128, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5191, 587, 558, 576, 7091, 6612, 1128, 2]
 // Exports: default
 
-// Module 9824 (TabBar)
+// Module 9888 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6559 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const defaultMVCPConfig = tmp(7038);
+const defaultMVCPConfig = tmp(7091);
 let closure_2 = ["ref"];
 ({ View: metroRequire, TouchableWithoutFeedback: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const jsx = Fragment.jsx;

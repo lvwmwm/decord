@@ -1,13 +1,13 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 18032
+// Function ID: 18033
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 558, 576, 1202, 17973, 2]
+// Dependencies: [19, 21, 558, 576, 1202, 18033, 2]
 
-// Module 17972 (MessageRequestEmpty)
+// Module 18032 (MessageRequestEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
-import Pending from "Pending" /* 17973 */;
+import Pending from "Pending" /* 18033 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

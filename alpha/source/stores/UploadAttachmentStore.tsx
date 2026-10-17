@@ -1,15 +1,15 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8175
+// Function ID: 8176
 // Name: UploadAttachmentStore
-// Dependencies: [7464, 1087, 5362, 1128, 12, 7977, 7987, 1267, 504, 584, 2]
+// Dependencies: [7510, 1087, 5399, 1128, 12, 8023, 8033, 1267, 504, 584, 2]
 
-// Module 8129 (UploadAttachmentStore)
+// Module 8175 (UploadAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DraftStore from "DraftStore" /* 7464 */;
-import CloudUpload from "CloudUpload" /* 7977 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 7987 */;
+import DraftStore from "DraftStore" /* 7510 */;
+import CloudUpload from "CloudUpload" /* 8023 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8033 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

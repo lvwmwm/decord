@@ -1,12 +1,12 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 10977
+// Function ID: 10978
 // Name: ConjurePublishStatusStore
-// Dependencies: [10897, 504, 584, 2]
+// Dependencies: [6293, 504, 584, 2]
 
-// Module 10913 (ConjurePublishStatusStore)
+// Module 10977 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -172,7 +172,7 @@ let obj = {
         patchNotesSent = closure_4;
       }
       items = [];
-      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== closure_0.publishedRevision), 0)] = sent;
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== publishedRevision.publishedRevision), 0)] = sent;
       const result = set(projectId, obj);
     }
   },

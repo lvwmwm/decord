@@ -1,25 +1,25 @@
-// Module ID: 7941
-// Function ID: 7942
+// Module ID: 7987
+// Function ID: 7988
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 6255, 2068, 4809, 2073, 6111, 1087, 21, 5154, 587, 5118, 558, 576, 504, 2076, 6168, 7704, 7319, 7942, 9932, 8809, 1128, 1202, 8790, 14291, 14292, 14293, 14294, 7122, 2]
+// Dependencies: [19, 17, 6292, 2068, 4845, 2073, 6148, 1087, 21, 5191, 587, 5155, 558, 576, 504, 2076, 6205, 7750, 7370, 7988, 9996, 8855, 1128, 1202, 8836, 14359, 14360, 14361, 14362, 7175, 2]
 
-// Module 7941 (StageSettingsActionSheet)
+// Module 7987 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2076 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6111 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7704 */;
-import ReportModals from "ReportModals" /* 7942 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9932 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6148 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7750 */;
+import ReportModals from "ReportModals" /* 7988 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6255 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

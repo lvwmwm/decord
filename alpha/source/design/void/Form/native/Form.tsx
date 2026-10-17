@@ -1,20 +1,20 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7107
+// Function ID: 7108
 // Name: Form/Form
-// Dependencies: [19, 17, 21, 5154, 558, 576, 6889, 6488, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 6942, 6541, 2]
 
-// Module 7054 (Form/Form)
+// Module 7107 (Form/Form)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6889 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RedesignCompat = tmp(6488);
+const RedesignCompat = tmp(6541);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });

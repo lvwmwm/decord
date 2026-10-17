@@ -1,27 +1,27 @@
-// Module ID: 18774
-// Function ID: 18775
+// Module ID: 18836
+// Function ID: 18837
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 18775, 2090, 8865, 1087, 21, 5154, 587, 6425, 7314, 1128, 18776, 8920, 5150, 18615, 6510, 5091, 18777, 558, 576, 1505, 504, 6952, 2]
+// Dependencies: [19, 17, 18837, 2090, 8911, 1087, 21, 5191, 587, 6478, 7365, 1128, 18838, 8966, 5187, 18677, 6563, 5128, 18839, 558, 576, 1505, 504, 7005, 2]
 
-// Module 18774 (GuildSettingsModalVanityURL)
+// Module 18836 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6510 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7314 */;
-import getInviteURLDefault from "getInviteURL" /* 8920 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18615 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 18776 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18777 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6563 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
+import getInviteURLDefault from "getInviteURL" /* 8966 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 18677 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 18838 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18839 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 18775 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 18837 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8865 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
       if (submitting) {
         fn = () => null;
       } else if (isEditing) {
-        let obj = self(6425);
+        let obj = self(6478);
         fn = obj.getHeaderConditionalBackButton(this.handleCancel);
       }
       const obj2 = { headerLeft: fn, headerRight: fn2 };
@@ -218,7 +218,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
     items2[2] = metroImportAll(Text3, obj10);
     if (tmp17Result) {
       const obj11 = { variant: "text-sm/medium", color: "text-muted", children: intl5.string(intl7.t.o3kmm3) };
-      const Text4 = tmp18(5150).Text;
+      const Text4 = tmp18(5187).Text;
       intl5 = tmp18(1128).intl;
       tmp17Result = tmp17(Text4, obj11);
     }
@@ -324,7 +324,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedG
   if (null != stateFromStores) {
     const obj3 = { children: items3 };
     const obj4 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting, errorDetails, navigation, styles: tmp4, contentContainerStyle };
-    items3 = [closure_8(GuildSettingsModalVanityURL, obj4), closure_8(guildId(6952).NavScrim, {})];
+    items3 = [closure_8(GuildSettingsModalVanityURL, obj4), closure_8(guildId(7005).NavScrim, {})];
     tmp19 = closure_9(closure_10, obj3);
   }
   cResult[7] = contentContainerStyle;
@@ -361,7 +361,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedG
   if (null != stateFromStores) {
     const obj5 = { children: items3 };
     const obj6 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp8, errorDetails: tmp9, navigation, styles: tmp, contentContainerStyle };
-    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(6952).NavScrim, {})];
+    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(7005).NavScrim, {})];
     tmp10 = closure_9(closure_10, obj5);
   }
   return tmp10;

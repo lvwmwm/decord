@@ -1,21 +1,21 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16821
+// Function ID: 16822
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 10729, 21, 15532, 558, 576, 12437, 504, 15818, 5440, 16755, 1128, 2209, 5442, 11003, 11555, 2]
+// Dependencies: [19, 10792, 21, 15595, 558, 576, 12502, 504, 15884, 5477, 16819, 1128, 2209, 5479, 11065, 11614, 2]
 
-// Module 16757 (BuildOverrideActiveSetting)
+// Module 16821 (BuildOverrideActiveSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2209 from "module_2209" /* 2209 */;
-import RefreshIcon from "RefreshIcon" /* 11555 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12437 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15532 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15818 */;
+import RefreshIcon from "RefreshIcon" /* 11614 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12502 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15595 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15884 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10729 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10792 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -88,14 +88,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   }
   let tmp8Result;
   if (null != tmp4) {
-    const Stack = tmp(5440).Stack;
+    const Stack = tmp(5477).Stack;
     const obj3 = { label: "" + intl.string(_modDef2209.d11XdP) + " ", value: tmp4.id };
-    const DevToolsContentSubLabel = tmp(16755).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp(16819).DevToolsContentSubLabel;
     intl = tmp(1128).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj3), , ];
     const obj4 = { text: intl2.string(intl4.t.tX4xrt), variant: "secondary", onPress: build_overrides_BuildOverrideUtils.clearBuildOverride };
-    const Button = tmp(5442).Button;
+    const Button = tmp(5479).Button;
     intl2 = tmp(1128).intl;
     items[1] = React3(Button, obj4);
     let tmp9Result = staffOrDeveloperSettingPredicate;
@@ -104,7 +104,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
     const tmp9 = React3;
     if (tmp9Result) {
       const obj5 = { text: intl3.string(tmp10(2209).VBPcR9), variant: "secondary", onPress: handleBuildOverrideActivePress };
-      const Button2 = tmp(5442).Button;
+      const Button2 = tmp(5479).Button;
       intl3 = tmp(1128).intl;
       tmp9Result = tmp9(Button2, obj5);
     }
@@ -125,14 +125,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   let tmp6Result;
   if (null != tmp) {
-    const Stack = tmp2(5440).Stack;
+    const Stack = tmp2(5477).Stack;
     const obj2 = { label: "" + intl.string(_modDef2209.d11XdP) + " ", value: tmp.id };
-    const DevToolsContentSubLabel = tmp2(16755).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp2(16819).DevToolsContentSubLabel;
     intl = tmp2(1128).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj2), , ];
     const obj3 = { text: intl2.string(intl4.t.tX4xrt), variant: "secondary", onPress: build_overrides_BuildOverrideUtils.clearBuildOverride };
-    const Button = tmp2(5442).Button;
+    const Button = tmp2(5479).Button;
     intl2 = tmp2(1128).intl;
     items[1] = React3(Button, obj3);
     let tmp7Result = staffOrDeveloperSettingPredicate;
@@ -141,7 +141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
     const tmp8 = importDefault;
     if (tmp7Result) {
       const obj4 = { text: intl3.string(tmp8(2209).VBPcR9), variant: "secondary", onPress: handleBuildOverrideActivePress };
-      const Button2 = tmp2(5442).Button;
+      const Button2 = tmp2(5479).Button;
       intl3 = tmp2(1128).intl;
       tmp7Result = tmp7(Button2, obj4);
     }

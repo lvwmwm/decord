@@ -1,48 +1,29 @@
 // Module ID: 12388
 // Function ID: 12389
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [12387, 12389]
+// Exports: getAsyncContextStrategy, setAsyncContextStrategy
 
 // Module 12388
+import _mod12387 from "module_12387" /* 12387 */;
 
-export const parseCookie = function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
-      } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
-      }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
-        }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
-          }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
-        }
-      }
-      sum = length + 1;
-    }
+let tmp;
+const _mod12389 = tmp(12389);
+
+export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
+  let acs;
+  const obj = _mod12387;
+  const sentryCarrier = obj.getSentryCarrier(arg0);
+  if (sentryCarrier.acs) {
+    acs = sentryCarrier.acs;
+  } else {
+    const tmpResult = _mod12389;
+    acs = tmpResult.getStackAsyncContextStrategy();
   }
-  return obj;
+  return acs;
+};
+export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
+  const obj = _mod12387;
+  const mainCarrier = obj.getMainCarrier();
+  _mod12387.getSentryCarrier(mainCarrier).acs = acs;
+  _mod12387;
 };

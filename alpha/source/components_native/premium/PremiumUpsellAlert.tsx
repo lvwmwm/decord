@@ -1,32 +1,32 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 9766
+// Function ID: 9767
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1209, 1392, 1087, 9703, 1394, 21, 5154, 587, 4886, 5091, 5150, 558, 576, 7390, 1128, 4828, 9508, 9509, 5090, 5028, 9730, 9731, 9732, 9733, 9497, 9734, 9735, 9736, 9737, 504, 5323, 7119, 9507, 1499, 7077, 7102, 1267, 5459, 9738, 5859, 9739, 5461, 1202, 9740, 9511, 2]
+// Dependencies: [32, 19, 17, 1209, 1392, 1087, 9767, 1394, 21, 5191, 587, 4922, 5128, 5187, 558, 576, 7436, 1128, 4864, 9572, 9573, 5127, 5065, 9794, 9795, 9796, 9797, 9561, 9798, 9799, 9800, 9801, 504, 5360, 7172, 9571, 1499, 7130, 7155, 1267, 5496, 9802, 5896, 9803, 5498, 1202, 9804, 9575, 2]
 
-// Module 9702 (PremiumUpsellAlert)
+// Module 9766 (PremiumUpsellAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PremiumUtils from "PremiumUtils" /* 4828 */;
-import native from "native" /* 4886 */;
-import shared from "shared" /* 5028 */;
-import useThemeDefault from "useTheme" /* 5090 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5323 */;
-import FileSizeUtils from "FileSizeUtils" /* 5859 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7390 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9497 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9508 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9509 */;
-import AppIconConstants from "AppIconConstants" /* 9703 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9732 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9733 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9738 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9739 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import native from "native" /* 4922 */;
+import shared from "shared" /* 5065 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
+import FileSizeUtils from "FileSizeUtils" /* 5896 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9561 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9572 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9573 */;
+import AppIconConstants from "AppIconConstants" /* 9767 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9796 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9797 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9802 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9803 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
@@ -34,7 +34,7 @@ import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -497,9 +497,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9730);
+    tmp5Result = tmp5(9794);
   } else {
-    tmp5Result = tmp5(9731);
+    tmp5Result = tmp5(9795);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -550,9 +550,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const tmp6 = map1;
   const tmp7 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9730);
+    tmp4Result = tmp4(9794);
   } else {
-    tmp4Result = tmp4(9731);
+    tmp4Result = tmp4(9795);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
   intl = tmp(1128).intl;
@@ -810,9 +810,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Longer
   const largerUpsellImage = legacyClassComponentStyles.largerUpsellImage;
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9734);
+    tmp5Result = tmp5(9798);
   } else {
-    tmp5Result = tmp5(9735);
+    tmp5Result = tmp5(9799);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -874,9 +874,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Longer
   const tmp7 = map1;
   const tmp8 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9734);
+    tmp4Result = tmp4(9798);
   } else {
-    tmp4Result = tmp4(9735);
+    tmp4Result = tmp4(9799);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
   intl = tmp(1128).intl;
@@ -898,9 +898,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9736);
+    tmp5Result = tmp5(9800);
   } else {
-    tmp5Result = tmp5(9737);
+    tmp5Result = tmp5(9801);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
@@ -951,9 +951,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   const tmp6 = map1;
   const tmp7 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9736);
+    tmp4Result = tmp4(9800);
   } else {
-    tmp4Result = tmp4(9737);
+    tmp4Result = tmp4(9801);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
   intl = tmp(1128).intl;
@@ -1028,7 +1028,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
     let tmp13 = null;
     if (first) {
       const obj3 = { start: true, end: true, label: intl.string(intl6.t.ix8XIj), subLabel: intl2.string(intl6.t["wC0+Ph"]), value: stateFromStores, onValueChange: tmp8 };
-      const TableSwitchRow = tmp(7119).TableSwitchRow;
+      const TableSwitchRow = tmp(7172).TableSwitchRow;
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       tmp13 = map1(TableSwitchRow, obj3);
@@ -1072,7 +1072,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(7119).TableSwitchRow;
+    const TableSwitchRow = tmp(7172).TableSwitchRow;
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);

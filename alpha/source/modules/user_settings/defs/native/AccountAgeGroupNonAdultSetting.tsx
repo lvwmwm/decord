@@ -1,19 +1,19 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15771
+// Function ID: 15772
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8214, 7718, 6137, 558, 576, 6128, 1128, 6140, 15658, 11003, 2]
+// Dependencies: [8260, 7764, 6174, 558, 576, 6165, 1128, 6177, 15724, 11065, 2]
 
-// Module 15705 (AccountAgeGroupNonAdultSetting)
+// Module 15771 (AccountAgeGroupNonAdultSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6128 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6137 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6140 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7718 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15658 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6165 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15724 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

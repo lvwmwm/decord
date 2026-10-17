@@ -1,9 +1,9 @@
-// Module ID: 9780
-// Function ID: 9781
+// Module ID: 9844
+// Function ID: 9845
 // Name: useMaybeAddPollsMarketingEasterEggNote
 // Dependencies: [2132, 558, 576, 504, 1128, 2]
 
-// Module 9780 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 9844 (useMaybeAddPollsMarketingEasterEggNote)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import LocaleStore from "LocaleStore" /* 2132 */;

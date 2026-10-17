@@ -1,15 +1,15 @@
-// Module ID: 18595
-// Function ID: 18596
+// Module ID: 18657
+// Function ID: 18658
 // Name: FavoriteManager
-// Dependencies: [502, 17266, 1087, 10561, 2093, 7032, 2]
+// Dependencies: [502, 17326, 1087, 10624, 2093, 7085, 2]
 
-// Module 18595 (FavoriteManager)
+// Module 18657 (FavoriteManager)
 import Constants from "Constants" /* 1087 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10561 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10624 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17266 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17326 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let c3;

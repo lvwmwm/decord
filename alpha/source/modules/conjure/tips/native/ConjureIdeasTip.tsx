@@ -1,15 +1,15 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12150
+// Function ID: 12151
 // Name: ConjureIdeasTip
-// Dependencies: [19, 21, 12069, 12078, 9799, 1128, 3865, 2]
+// Dependencies: [19, 21, 12132, 12141, 9863, 1128, 3883, 2]
 
-// Module 12087 (ConjureIdeasTip)
+// Module 12150 (ConjureIdeasTip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import LightbulbIcon from "LightbulbIcon" /* 9799 */;
-import conjureIdeasTip from "conjureIdeasTip" /* 12069 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12078 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import LightbulbIcon from "LightbulbIcon" /* 9863 */;
+import conjureIdeasTip from "conjureIdeasTip" /* 12132 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12141 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const obj = {
         return onAskForIdeasResult;
       }
     };
-    return <tmp icon={LightbulbIcon.LightbulbIcon} onDismiss={dismiss}>{intl.format(_modDef3865.cjZvW9, obj2)}</tmp>;
+    return <tmp icon={LightbulbIcon.LightbulbIcon} onDismiss={dismiss}>{intl.format(_modDef3883.cjZvW9, obj2)}</tmp>;
   }
 };
 const merged = Object.assign(conjureIdeasTip.CONJURE_IDEAS_TIP_BASE);

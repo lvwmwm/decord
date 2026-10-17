@@ -1,13 +1,13 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14756
+// Function ID: 14757
 // Name: notification_settings
-// Dependencies: [32, 1212, 1242, 1240, 14689, 2]
+// Dependencies: [32, 1212, 1242, 1240, 14757, 2]
 
-// Module 14688 (notification_settings)
+// Module 14756 (notification_settings)
 import _mod1212 from "module_1212" /* 1212 */;
 import user_settings_shared from "user_settings_shared" /* 1240 */;
 import wrappers from "wrappers" /* 1242 */;
-import mute2 from "mute" /* 14689 */;
+import mute2 from "mute" /* 14757 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -62,14 +62,14 @@ class UserNotificationSettings$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.UserNotificationSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { userId: "0", guilds: {}, version: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -256,14 +256,14 @@ class EmailNotificationSettings$Type extends MessageType2 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.EmailNotificationSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { categories: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -385,14 +385,14 @@ class UserNotificationSettingsData$Type extends MessageType3 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.UserNotificationSettingsData", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { mutedGames: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -534,14 +534,14 @@ class DeclarativeSettings$Type extends MessageType4 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.DeclarativeSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { values: {} };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -679,14 +679,14 @@ class DeclarativeNotifSetting$Type extends MessageType5 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.DeclarativeNotifSetting", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { toggle: false, radio: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -777,14 +777,14 @@ class GuildNotificationSettings$Type extends MessageType6 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.GuildNotificationSettings", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { suppressEveryone: false, messageNotifications: 0, mobilePush: false, channelOverrides: [], suppressRoles: false, version: 0, hideMutedChannels: false, muteScheduledEvents: false, notifyHighlights: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -893,14 +893,14 @@ class ChannelNotificationSettings$Type extends MessageType7 {
     const tmp2 = new tmp("discord_protos.discord_notifications.v1.ChannelNotificationSettings", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { channelId: "0", messageNotifications: 0, collapsed: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

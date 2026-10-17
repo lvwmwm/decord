@@ -1,25 +1,25 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18467
+// Function ID: 18468
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7479, 1246, 13441, 2119, 4998, 5978, 10897, 1087, 2075, 7032, 10930, 2044, 10921, 11295, 7169, 12093, 2]
+// Dependencies: [7525, 1246, 13507, 2119, 5034, 6015, 6293, 1087, 2075, 7085, 10996, 2044, 10985, 11354, 7222, 12156, 2]
 
-// Module 18406 (ConjureTurnNotificationManager)
+// Module 18467 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 2044 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import ConjureUtils from "ConjureUtils" /* 7169 */;
-import conjureProjectMute from "conjureProjectMute" /* 10921 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10930 */;
-import SoundUtils from "SoundUtils" /* 11295 */;
-import conjureMentions from "conjureMentions" /* 12093 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import conjureProjectMute from "conjureProjectMute" /* 10985 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10996 */;
+import SoundUtils from "SoundUtils" /* 11354 */;
+import conjureMentions from "conjureMentions" /* 12156 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13441 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13507 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5978 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let c10;

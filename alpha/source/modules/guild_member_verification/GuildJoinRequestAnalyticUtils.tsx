@@ -1,10 +1,10 @@
-// Module ID: 6345
-// Function ID: 6346
+// Module ID: 6398
+// Function ID: 6399
 // Name: GuildJoinRequestAnalyticUtils
 // Dependencies: [502, 2128, 1087, 1267, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 6345 (GuildJoinRequestAnalyticUtils)
+// Module 6398 (GuildJoinRequestAnalyticUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

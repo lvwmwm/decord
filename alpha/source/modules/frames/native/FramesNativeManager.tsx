@@ -1,17 +1,17 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15566
+// Function ID: 15567
 // Name: FramesNativeManager
-// Dependencies: [17, 10947, 1385, 15501, 15504, 10960, 5363, 1128, 2]
+// Dependencies: [17, 6295, 1385, 15564, 15567, 11020, 5400, 1128, 2]
 
-// Module 15503 (FramesNativeManager)
+// Module 15566 (FramesNativeManager)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
-import leaveFrame from "leaveFrame" /* 10960 */;
-import react_nativeDefault from "react-native" /* 15501 */;
-import FramesStore from "FramesStore" /* 10947 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import leaveFrame from "leaveFrame" /* 11020 */;
+import react_nativeDefault from "react-native" /* 15564 */;
+import FramesStore from "FramesStore" /* 6295 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import FramesManager from "FramesManager" /* 15504 */;
+import FramesManager from "FramesManager" /* 15567 */;
 import size from "module_2" /* 2 */;
 
 let allFrames;

@@ -1,527 +1,492 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15689
+// Function ID: 15690
 // Name: UserProfileTryItOutFields
-// Dependencies: [19, 17, 1087, 21, 5154, 587, 558, 576, 1505, 15628, 15562, 8519, 15582, 15542, 15629, 1128, 2963, 15630, 15631, 15584, 15633, 15636, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 15690, 7370, 8565, 15644, 15605, 15691, 1128, 2981, 15692, 15699, 15700, 15646, 15702, 15705, 2]
 
-// Module 15627 (UserProfileTryItOutFields)
+// Module 15689 (UserProfileTryItOutFields)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let navigation;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let react = react_mod;
-let View = react_native.View;
-const UserSettingsSections = Constants.UserSettingsSections;
+const View = react_native.View;
+let UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: obj2 };
 obj2 = { gap: nativeDefault.space.PX_24 };
 let closure_8 = createStyles.createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileTryItOutFields(initialTarget) {
   let avatarColors;
-  let closure_3;
-  let closure_4;
+  let closure_5;
   let currentUser;
+  let fn;
   let items;
   let mode;
-  let obj10;
-  let obj12;
-  let obj14;
-  let obj8;
+  let obj11;
+  let obj13;
+  let obj7;
+  let obj9;
   let primaryColor;
   let secondaryColor;
-  let tmp9;
-  const obj = mode(navigation[7]);
-  const cResult = obj.c(63);
+  let obj = mode(fn[7]);
+  const cResult = obj.c(55);
   ({ currentUser, mode } = initialTarget);
   initialTarget = initialTarget.initialTarget;
   const tmp4 = closure_8();
-  const obj2 = mode(navigation[8]);
-  navigation = obj2.useNavigation();
-  ({ primaryColor, secondaryColor, avatarColors } = initialTarget(navigation[9])(currentUser));
-  const tmp7 = initialTarget(navigation[9])(currentUser);
-  const tmp8 = initialTarget(navigation[10])(currentUser.id);
-  react = tmp8;
-  if (cResult[0] !== navigation) {
-    const fn = function y() {
-      navigation.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, { isTryItOut: true });
+  ({ primaryColor, secondaryColor, avatarColors } = initialTarget(fn[8])(currentUser));
+  const tmp6 = initialTarget(fn[8])(currentUser);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function y() {
+      const obj = mode(fn[9]);
+      const obj2 = { screen: closure_5.DISPLAY_NAME_STYLES, params: { isTryItOut: true } };
+      obj.openUserSettings(obj2, undefined, { pop: false });
     };
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    tmp9 = fn;
+    cResult[0] = fn2;
+    fn = fn2;
   } else {
-    tmp9 = cResult[1];
+    fn = cResult[0];
   }
-  View = tmp9;
-  if (cResult[2] === avatarColors) {
-    if (cResult[3] === primaryColor) {
-      let tmp10;
-      let tmp12;
-      let tmp14;
-      if (cResult[4] === secondaryColor) {
-        tmp10 = cResult[5];
+  if (cResult[1] === avatarColors) {
+    if (cResult[2] === primaryColor) {
+      let tmp7;
+      let tmp9;
+      let tmp11;
+      if (cResult[3] === secondaryColor) {
+        tmp7 = cResult[4];
       }
-      const tmp11 = initialTarget(navigation[12])(tmp10);
-      const openPrimaryColorPicker = tmp11.openPrimaryColorPicker;
-      const openSecondaryColorPicker = tmp11.openSecondaryColorPicker;
-      if (cResult[6] !== currentUser) {
+      const tmp8 = initialTarget(fn[11])(tmp7);
+      const openPrimaryColorPicker = tmp8.openPrimaryColorPicker;
+      const openSecondaryColorPicker = tmp8.openSecondaryColorPicker;
+      if (cResult[5] !== currentUser) {
+        let obj2 = { user: currentUser, isTryItOut: true };
+        cResult[5] = currentUser;
+        cResult[6] = obj2;
+        tmp9 = obj2;
+      } else {
+        tmp9 = cResult[6];
+      }
+      const tmp10 = initialTarget(fn[12])(tmp9);
+      UserSettingsSections = tmp10;
+      if (cResult[7] !== currentUser) {
         const obj3 = { user: currentUser, isTryItOut: true };
-        cResult[6] = currentUser;
-        cResult[7] = obj3;
-        tmp12 = obj3;
+        cResult[7] = currentUser;
+        cResult[8] = obj3;
+        tmp11 = obj3;
       } else {
-        tmp12 = cResult[7];
+        tmp11 = cResult[8];
       }
-      const tmp13 = initialTarget(navigation[13])(tmp12);
-      let closure_7 = tmp13;
-      if (cResult[8] !== currentUser) {
-        const obj4 = { user: currentUser, isTryItOut: true };
-        cResult[8] = currentUser;
-        cResult[9] = obj4;
-        tmp14 = obj4;
-      } else {
-        tmp14 = cResult[9];
-      }
-      const tmp15 = initialTarget(navigation[14])(tmp14);
-      closure_8 = tmp15;
-      const ref = react.useRef(false);
-      const obj6 = react;
-      if (cResult[10] === initialTarget) {
-        if (cResult[11] === mode) {
-          if (cResult[12] === tmp15) {
-            if (cResult[13] === tmp13) {
-              if (cResult[14] === tmp9) {
-                if (cResult[15] === openPrimaryColorPicker) {
-                  let tmp16;
-                  let tmp17;
+      const tmp12 = tmp5(tmp2[13])(tmp11);
+      let closure_6 = tmp12;
+      const ref = openPrimaryColorPicker.useRef(false);
+      const obj5 = openPrimaryColorPicker;
+      if (cResult[9] === initialTarget) {
+        if (cResult[10] === mode) {
+          if (cResult[11] === tmp12) {
+            if (cResult[12] === tmp10) {
+              if (cResult[13] === openPrimaryColorPicker) {
+                let tmp13;
+                let tmp14;
+                let tmp16;
+                let tmp19;
+                if (cResult[14] === openSecondaryColorPicker) {
+                  tmp13 = cResult[15];
+                  tmp14 = cResult[16];
+                }
+                const effect = obj5.useEffect(tmp13, tmp14);
+                const _Symbol = Symbol;
+                const container = tmp4.container;
+                if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                  const intl = tmp(tmp2[14]).intl;
+                  const stringResult = intl.string(initialTarget(fn[15])["86GtGH"]);
+                  cResult[17] = stringResult;
+                  tmp16 = stringResult;
+                } else {
+                  tmp16 = cResult[17];
+                }
+                if (cResult[18] !== ("edit" === mode)) {
+                  if ("edit" !== mode) {
+                    fn = () => {
+                      const obj = mode(fn[16]);
+                      return obj.openPremiumTryItOutModal("display-name-styles");
+                    };
+                  }
+                  cResult[18] = "edit" === mode;
+                  cResult[19] = fn;
+                  tmp19 = fn;
+                } else {
+                  tmp19 = cResult[19];
+                }
+                if (cResult[20] === currentUser) {
                   let tmp20;
-                  if (cResult[16] === openSecondaryColorPicker) {
-                    tmp16 = cResult[17];
-                    tmp17 = cResult[18];
+                  let tmp23;
+                  if (cResult[21] === tmp19) {
+                    tmp20 = cResult[22];
                   }
-                  const effect = obj6.useEffect(tmp16, tmp17);
-                  const _Symbol = Symbol;
-                  const container = tmp4.container;
-                  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl = tmp(tmp2[15]).intl;
-                    const stringResult = intl.string(initialTarget(navigation[16])["86GtGH"]);
-                    cResult[19] = stringResult;
-                    tmp20 = stringResult;
+                  const _Symbol2 = Symbol;
+                  if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+                    const intl2 = tmp(tmp2[14]).intl;
+                    const stringResult1 = intl2.string(mode(fn[14]).t.DMeO2X);
+                    cResult[23] = stringResult1;
+                    tmp23 = stringResult1;
                   } else {
-                    tmp20 = cResult[19];
+                    tmp23 = cResult[23];
                   }
-                  if (cResult[20] === "edit" === mode) {
-                    if (cResult[21] === tmp8) {
-                      let tmp23;
-                      if (cResult[22] === tmp9) {
-                        tmp23 = cResult[23];
+                  if (cResult[24] === "edit" === mode) {
+                    let tmp25;
+                    if (cResult[25] === openPrimaryColorPicker) {
+                      tmp25 = cResult[26];
+                    }
+                    if (cResult[27] === "edit" === mode) {
+                      let tmp26;
+                      if (cResult[28] === openSecondaryColorPicker) {
+                        tmp26 = cResult[29];
                       }
-                      if (cResult[24] === currentUser) {
-                        let tmp24;
-                        let tmp27;
-                        if (cResult[25] === tmp23) {
-                          tmp24 = cResult[26];
-                        }
-                        const _Symbol2 = Symbol;
-                        if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                          const intl2 = tmp(tmp2[15]).intl;
-                          const stringResult1 = intl2.string(mode(navigation[15]).t.DMeO2X);
-                          cResult[27] = stringResult1;
-                          tmp27 = stringResult1;
-                        } else {
-                          tmp27 = cResult[27];
-                        }
-                        if (cResult[28] === "edit" === mode) {
-                          if (cResult[29] === tmp8) {
-                            let tmp29;
-                            if (cResult[30] === openPrimaryColorPicker) {
-                              tmp29 = cResult[31];
+                      if (cResult[30] === primaryColor) {
+                        if (cResult[31] === secondaryColor) {
+                          if (cResult[32] === tmp25) {
+                            let tmp27;
+                            let tmp30;
+                            if (cResult[33] === tmp26) {
+                              tmp27 = cResult[34];
                             }
-                            if (cResult[32] === "edit" === mode) {
-                              if (cResult[33] === tmp8) {
-                                let tmp30;
-                                if (cResult[34] === openSecondaryColorPicker) {
-                                  tmp30 = cResult[35];
-                                }
-                                if (cResult[36] === primaryColor) {
-                                  if (cResult[37] === secondaryColor) {
-                                    if (cResult[38] === tmp29) {
-                                      let tmp31;
-                                      let tmp34;
-                                      if (cResult[39] === tmp30) {
-                                        tmp31 = cResult[40];
-                                      }
-                                      const _Symbol3 = Symbol;
-                                      if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
-                                        const intl3 = tmp(tmp2[15]).intl;
-                                        const stringResult2 = intl3.string(mode(navigation[15]).t.Vgdusv);
-                                        cResult[41] = stringResult2;
-                                        tmp34 = stringResult2;
-                                      } else {
-                                        tmp34 = cResult[41];
-                                      }
-                                      if (cResult[42] === "edit" === mode) {
-                                        if (cResult[43] === tmp8) {
-                                          let tmp36;
-                                          if (cResult[44] === tmp13) {
-                                            tmp36 = cResult[45];
-                                          }
-                                          if (cResult[46] === currentUser) {
-                                            let tmp37;
-                                            let tmp40;
-                                            if (cResult[47] === tmp36) {
-                                              tmp37 = cResult[48];
-                                            }
-                                            const _Symbol4 = Symbol;
-                                            if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
-                                              const intl4 = tmp(tmp2[15]).intl;
-                                              const stringResult3 = intl4.string(mode(navigation[15]).t.Dt3ZUr);
-                                              cResult[49] = stringResult3;
-                                              tmp40 = stringResult3;
-                                            } else {
-                                              tmp40 = cResult[49];
-                                            }
-                                            if (cResult[50] === "edit" === mode) {
-                                              if (cResult[51] === tmp8) {
-                                                let tmp42;
-                                                if (cResult[52] === tmp15) {
-                                                  tmp42 = cResult[53];
-                                                }
-                                                if (cResult[54] === currentUser) {
-                                                  let tmp43;
-                                                  if (cResult[55] === tmp42) {
-                                                    tmp43 = cResult[56];
-                                                  }
-                                                  if (cResult[57] === tmp4.container) {
-                                                    if (cResult[58] === tmp24) {
-                                                      if (cResult[59] === tmp31) {
-                                                        if (cResult[60] === tmp37) {
-                                                          let tmp46;
-                                                          if (cResult[61] === tmp43) {
-                                                            tmp46 = cResult[62];
-                                                          }
-                                                          return tmp46;
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                  const obj5 = { style: container, children: items };
-                                                  items = [tmp24, tmp31, tmp37, tmp43];
-                                                  const tmp49 = closure_7(View, obj5);
-                                                  cResult[57] = tmp4.container;
-                                                  class D {
-                                                    constructor() {
-                                                      if ("edit" === mode) {
-                                                        if (!ref.current) {
-                                                          if ("display-name-styles" === initialTarget) {
-                                                            closure_4();
-                                                          } else if ("theme-primary" === initialTarget) {
-                                                            openPrimaryColorPicker();
-                                                          } else if ("theme-secondary" === initialTarget) {
-                                                            openSecondaryColorPicker();
-                                                          } else if ("banner" === initialTarget) {
-                                                            closure_7();
-                                                          } else if ("avatar" === initialTarget) {
-                                                            closure_8();
-                                                          }
-                                                          tmp12.current = true;
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                  cResult[59] = tmp31;
-                                                  cResult[60] = tmp37;
-                                                  cResult[61] = tmp43;
-                                                  cResult[62] = tmp49;
-                                                  tmp46 = tmp49;
-                                                }
-                                                const obj7 = { heading: tmp40, showNitroIcon: true, children: openSecondaryColorPicker(mode(navigation[21]).TryItOutEditableTileAvatarButton, obj8) };
-                                                const EditableTileGroup4 = tmp(tmp2[17]).EditableTileGroup;
-                                                obj8 = { user: currentUser, onPress: tmp42 };
-                                                cResult[54] = currentUser;
-                                                cResult[55] = tmp42;
-                                                const tmp45 = openSecondaryColorPicker(EditableTileGroup4, obj7);
-                                                class D {
-                                                  constructor() {
-                                                    if ("edit" === mode) {
-                                                      if (!ref.current) {
-                                                        if ("display-name-styles" === initialTarget) {
-                                                          closure_4();
-                                                        } else if ("theme-primary" === initialTarget) {
-                                                          openPrimaryColorPicker();
-                                                        } else if ("theme-secondary" === initialTarget) {
-                                                          openSecondaryColorPicker();
-                                                        } else if ("banner" === initialTarget) {
-                                                          closure_7();
-                                                        } else if ("avatar" === initialTarget) {
-                                                          closure_8();
-                                                        }
-                                                        tmp12.current = true;
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                                tmp43 = tmp45;
-                                              }
-                                            }
-                                            let fn6 = tmp15;
-                                            if ("edit" !== mode) {
-                                              fn6 = () => closure_3("avatar");
-                                            }
-                                            cResult[50] = "edit" === mode;
-                                            cResult[51] = tmp8;
-                                            cResult[52] = tmp15;
-                                            cResult[53] = fn6;
-                                            tmp42 = fn6;
-                                          }
-                                          const obj9 = { heading: tmp34, showNitroIcon: true, children: openSecondaryColorPicker(initialTarget(navigation[20]), obj10) };
-                                          const EditableTileGroup3 = tmp(tmp2[17]).EditableTileGroup;
-                                          obj10 = { user: currentUser, onPress: tmp36 };
-                                          cResult[46] = currentUser;
-                                          cResult[47] = tmp36;
-                                          const tmp39 = openSecondaryColorPicker(EditableTileGroup3, obj9);
-                                          class D {
-                                            constructor() {
-                                              if ("edit" === mode) {
-                                                if (!ref.current) {
-                                                  if ("display-name-styles" === initialTarget) {
-                                                    closure_4();
-                                                  } else if ("theme-primary" === initialTarget) {
-                                                    openPrimaryColorPicker();
-                                                  } else if ("theme-secondary" === initialTarget) {
-                                                    openSecondaryColorPicker();
-                                                  } else if ("banner" === initialTarget) {
-                                                    closure_7();
-                                                  } else if ("avatar" === initialTarget) {
-                                                    closure_8();
-                                                  }
-                                                  tmp12.current = true;
-                                                }
-                                              }
-                                            }
-                                          }
-                                          tmp37 = tmp39;
-                                        }
-                                      }
-                                      let fn5 = tmp13;
-                                      if ("edit" !== mode) {
-                                        fn5 = () => closure_3("banner");
-                                      }
-                                      cResult[42] = "edit" === mode;
-                                      cResult[43] = tmp8;
-                                      cResult[44] = tmp13;
-                                      cResult[45] = fn5;
-                                      tmp36 = fn5;
-                                    }
-                                  }
-                                }
-                                const obj11 = { heading: tmp27, showNitroIcon: true, children: openSecondaryColorPicker(initialTarget(navigation[19]), obj12) };
-                                const EditableTileGroup2 = tmp(tmp2[17]).EditableTileGroup;
-                                obj12 = { primaryColor, secondaryColor, onPressPrimary: tmp29, onPressSecondary: tmp30 };
-                                const tmp33 = openSecondaryColorPicker(EditableTileGroup2, obj11);
-                                cResult[36] = primaryColor;
-                                class D {
-                                  constructor() {
-                                    if ("edit" === mode) {
-                                      if (!ref.current) {
-                                        if ("display-name-styles" === initialTarget) {
-                                          closure_4();
-                                        } else if ("theme-primary" === initialTarget) {
-                                          openPrimaryColorPicker();
-                                        } else if ("theme-secondary" === initialTarget) {
-                                          openSecondaryColorPicker();
-                                        } else if ("banner" === initialTarget) {
-                                          closure_7();
-                                        } else if ("avatar" === initialTarget) {
-                                          closure_8();
-                                        }
-                                        tmp12.current = true;
-                                      }
-                                    }
-                                  }
-                                }
-                                cResult[38] = tmp29;
-                                cResult[39] = tmp30;
-                                cResult[40] = tmp33;
-                                tmp31 = tmp33;
+                            const _Symbol3 = Symbol;
+                            if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
+                              const intl3 = tmp(tmp2[14]).intl;
+                              const stringResult2 = intl3.string(mode(fn[14]).t.Vgdusv);
+                              cResult[35] = stringResult2;
+                              tmp30 = stringResult2;
+                            } else {
+                              tmp30 = cResult[35];
+                            }
+                            if (cResult[36] === "edit" === mode) {
+                              let tmp32;
+                              if (cResult[37] === tmp10) {
+                                tmp32 = cResult[38];
                               }
+                              if (cResult[39] === currentUser) {
+                                let tmp33;
+                                let tmp36;
+                                if (cResult[40] === tmp32) {
+                                  tmp33 = cResult[41];
+                                }
+                                const _Symbol4 = Symbol;
+                                if (cResult[42] === Symbol.for("react.memo_cache_sentinel")) {
+                                  const intl4 = tmp(tmp2[14]).intl;
+                                  const stringResult3 = intl4.string(mode(fn[14]).t.Dt3ZUr);
+                                  cResult[42] = stringResult3;
+                                  tmp36 = stringResult3;
+                                } else {
+                                  tmp36 = cResult[42];
+                                }
+                                if (cResult[43] === "edit" === mode) {
+                                  let tmp38;
+                                  if (cResult[44] === tmp12) {
+                                    tmp38 = cResult[45];
+                                  }
+                                  if (cResult[46] === currentUser) {
+                                    let tmp39;
+                                    if (cResult[47] === tmp38) {
+                                      tmp39 = cResult[48];
+                                    }
+                                    if (cResult[49] === tmp4.container) {
+                                      if (cResult[50] === tmp20) {
+                                        if (cResult[51] === tmp27) {
+                                          if (cResult[52] === tmp33) {
+                                            let tmp42;
+                                            if (cResult[53] === tmp39) {
+                                              tmp42 = cResult[54];
+                                            }
+                                            return tmp42;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    const obj4 = { style: container, children: items };
+                                    items = [tmp20, tmp27, tmp33, tmp39];
+                                    const tmp45 = ref(openSecondaryColorPicker, obj4);
+                                    cResult[49] = tmp4.container;
+                                    class N {
+                                      constructor() {
+                                        if ("edit" === mode) {
+                                          if (!ref.current) {
+                                            if ("display-name-styles" === initialTarget) {
+                                              fn();
+                                            } else if ("theme-primary" === initialTarget) {
+                                              openPrimaryColorPicker();
+                                            } else if ("theme-secondary" === initialTarget) {
+                                              openSecondaryColorPicker();
+                                            } else if ("banner" === initialTarget) {
+                                              closure_5();
+                                            } else if ("avatar" === initialTarget) {
+                                              closure_6();
+                                            }
+                                            tmp12.current = true;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    cResult[51] = tmp27;
+                                    cResult[52] = tmp33;
+                                    cResult[53] = tmp39;
+                                    cResult[54] = tmp45;
+                                    tmp42 = tmp45;
+                                  }
+                                  const obj6 = { heading: tmp36, showNitroIcon: true, children: closure_6(mode(fn[21]).TryItOutEditableTileAvatarButton, obj7) };
+                                  const EditableTileGroup4 = tmp(tmp2[17]).EditableTileGroup;
+                                  obj7 = { user: currentUser, onPress: tmp38 };
+                                  cResult[46] = currentUser;
+                                  cResult[47] = tmp38;
+                                  const tmp41 = closure_6(EditableTileGroup4, obj6);
+                                  class N {
+                                    constructor() {
+                                      if ("edit" === mode) {
+                                        if (!ref.current) {
+                                          if ("display-name-styles" === initialTarget) {
+                                            fn();
+                                          } else if ("theme-primary" === initialTarget) {
+                                            openPrimaryColorPicker();
+                                          } else if ("theme-secondary" === initialTarget) {
+                                            openSecondaryColorPicker();
+                                          } else if ("banner" === initialTarget) {
+                                            closure_5();
+                                          } else if ("avatar" === initialTarget) {
+                                            closure_6();
+                                          }
+                                          tmp12.current = true;
+                                        }
+                                      }
+                                    }
+                                  }
+                                  tmp39 = tmp41;
+                                }
+                                let fn6 = tmp12;
+                                if ("edit" !== mode) {
+                                  fn6 = () => {
+                                    const obj = mode(fn[16]);
+                                    return obj.openPremiumTryItOutModal("avatar");
+                                  };
+                                }
+                                cResult[43] = "edit" === mode;
+                                cResult[44] = tmp12;
+                                cResult[45] = fn6;
+                                tmp38 = fn6;
+                              }
+                              const obj8 = { heading: tmp30, showNitroIcon: true, children: closure_6(initialTarget(fn[20]), obj9) };
+                              const EditableTileGroup3 = tmp(tmp2[17]).EditableTileGroup;
+                              obj9 = { user: currentUser, onPress: tmp32 };
+                              cResult[39] = currentUser;
+                              cResult[40] = tmp32;
+                              const tmp35 = closure_6(EditableTileGroup3, obj8);
+                              class N {
+                                constructor() {
+                                  if ("edit" === mode) {
+                                    if (!ref.current) {
+                                      if ("display-name-styles" === initialTarget) {
+                                        fn();
+                                      } else if ("theme-primary" === initialTarget) {
+                                        openPrimaryColorPicker();
+                                      } else if ("theme-secondary" === initialTarget) {
+                                        openSecondaryColorPicker();
+                                      } else if ("banner" === initialTarget) {
+                                        closure_5();
+                                      } else if ("avatar" === initialTarget) {
+                                        closure_6();
+                                      }
+                                      tmp12.current = true;
+                                    }
+                                  }
+                                }
+                              }
+                              tmp33 = tmp35;
                             }
-                            let fn4 = openSecondaryColorPicker;
+                            let fn5 = tmp10;
                             if ("edit" !== mode) {
-                              fn4 = () => closure_3("theme-secondary");
+                              fn5 = () => {
+                                const obj = mode(fn[16]);
+                                return obj.openPremiumTryItOutModal("banner");
+                              };
                             }
-                            cResult[32] = "edit" === mode;
-                            cResult[33] = tmp8;
-                            cResult[34] = openSecondaryColorPicker;
-                            cResult[35] = fn4;
-                            tmp30 = fn4;
+                            cResult[36] = "edit" === mode;
+                            cResult[37] = tmp10;
+                            cResult[38] = fn5;
+                            tmp32 = fn5;
                           }
                         }
-                        let fn3 = openPrimaryColorPicker;
-                        if ("edit" !== mode) {
-                          fn3 = () => closure_3("theme-primary");
-                        }
-                        cResult[28] = "edit" === mode;
-                        cResult[29] = tmp8;
-                        cResult[30] = openPrimaryColorPicker;
-                        cResult[31] = fn3;
-                        tmp29 = fn3;
                       }
-                      const obj13 = { heading: tmp20, showNitroIcon: true, children: openSecondaryColorPicker(initialTarget(navigation[18]), obj14) };
-                      const EditableTileGroup = tmp(tmp2[17]).EditableTileGroup;
-                      obj14 = { user: currentUser, onPress: tmp23 };
-                      cResult[24] = currentUser;
-                      cResult[25] = tmp23;
-                      const tmp26 = openSecondaryColorPicker(EditableTileGroup, obj13);
-                      class D {
+                      const obj10 = { heading: tmp23, showNitroIcon: true, children: closure_6(initialTarget(fn[19]), obj11) };
+                      const EditableTileGroup2 = tmp(tmp2[17]).EditableTileGroup;
+                      obj11 = { primaryColor, secondaryColor, onPressPrimary: tmp25, onPressSecondary: tmp26 };
+                      const tmp29 = closure_6(EditableTileGroup2, obj10);
+                      cResult[30] = primaryColor;
+                      class N {
                         constructor() {
                           if ("edit" === mode) {
                             if (!ref.current) {
                               if ("display-name-styles" === initialTarget) {
-                                closure_4();
+                                fn();
                               } else if ("theme-primary" === initialTarget) {
                                 openPrimaryColorPicker();
                               } else if ("theme-secondary" === initialTarget) {
                                 openSecondaryColorPicker();
                               } else if ("banner" === initialTarget) {
-                                closure_7();
+                                closure_5();
                               } else if ("avatar" === initialTarget) {
-                                closure_8();
+                                closure_6();
                               }
                               tmp12.current = true;
                             }
                           }
                         }
                       }
-                      tmp24 = tmp26;
+                      cResult[32] = tmp25;
+                      cResult[33] = tmp26;
+                      cResult[34] = tmp29;
+                      tmp27 = tmp29;
                     }
+                    let fn4 = openSecondaryColorPicker;
+                    if ("edit" !== mode) {
+                      fn4 = () => {
+                        const obj = mode(fn[16]);
+                        return obj.openPremiumTryItOutModal("theme-secondary");
+                      };
+                    }
+                    cResult[27] = "edit" === mode;
+                    cResult[28] = openSecondaryColorPicker;
+                    cResult[29] = fn4;
+                    tmp26 = fn4;
                   }
-                  let fn2 = tmp9;
+                  let fn3 = openPrimaryColorPicker;
                   if ("edit" !== mode) {
-                    fn2 = () => closure_3("display-name-styles");
+                    fn3 = () => {
+                      const obj = mode(fn[16]);
+                      return obj.openPremiumTryItOutModal("theme-primary");
+                    };
                   }
-                  cResult[20] = "edit" === mode;
-                  class D {
-                    constructor() {
-                      if ("edit" === mode) {
-                        if (!ref.current) {
-                          if ("display-name-styles" === initialTarget) {
-                            closure_4();
-                          } else if ("theme-primary" === initialTarget) {
-                            openPrimaryColorPicker();
-                          } else if ("theme-secondary" === initialTarget) {
-                            openSecondaryColorPicker();
-                          } else if ("banner" === initialTarget) {
-                            closure_7();
-                          } else if ("avatar" === initialTarget) {
-                            closure_8();
-                          }
-                          tmp12.current = true;
+                  cResult[24] = "edit" === mode;
+                  cResult[25] = openPrimaryColorPicker;
+                  cResult[26] = fn3;
+                  tmp25 = fn3;
+                }
+                const obj12 = { heading: tmp16, showNitroIcon: true, children: closure_6(initialTarget(fn[18]), obj13) };
+                const EditableTileGroup = tmp(tmp2[17]).EditableTileGroup;
+                obj13 = { user: currentUser, onPress: null };
+                class N {
+                  constructor() {
+                    if ("edit" === mode) {
+                      if (!ref.current) {
+                        if ("display-name-styles" === initialTarget) {
+                          fn();
+                        } else if ("theme-primary" === initialTarget) {
+                          openPrimaryColorPicker();
+                        } else if ("theme-secondary" === initialTarget) {
+                          openSecondaryColorPicker();
+                        } else if ("banner" === initialTarget) {
+                          closure_5();
+                        } else if ("avatar" === initialTarget) {
+                          closure_6();
                         }
+                        tmp12.current = true;
                       }
                     }
                   }
-                  cResult[22] = tmp9;
-                  cResult[23] = fn2;
-                  tmp23 = fn2;
                 }
+                const tmp22 = closure_6(EditableTileGroup, obj12);
+                cResult[20] = currentUser;
+                cResult[21] = tmp19;
+                cResult[22] = tmp22;
+                tmp20 = tmp22;
               }
             }
           }
         }
       }
-      class D {
+      class N {
         constructor() {
           if ("edit" === mode) {
             if (!ref.current) {
               if ("display-name-styles" === initialTarget) {
-                closure_4();
+                fn();
               } else if ("theme-primary" === initialTarget) {
                 openPrimaryColorPicker();
               } else if ("theme-secondary" === initialTarget) {
                 openSecondaryColorPicker();
               } else if ("banner" === initialTarget) {
-                closure_7();
+                closure_5();
               } else if ("avatar" === initialTarget) {
-                closure_8();
+                closure_6();
               }
               tmp12.current = true;
             }
           }
         }
       }
-      const items1 = [mode, initialTarget, tmp9, openPrimaryColorPicker, openSecondaryColorPicker, tmp13, tmp15];
-      cResult[10] = initialTarget;
-      cResult[11] = mode;
-      cResult[12] = tmp15;
-      cResult[13] = tmp13;
-      cResult[14] = tmp9;
-      cResult[15] = openPrimaryColorPicker;
-      cResult[16] = openSecondaryColorPicker;
-      cResult[17] = D;
-      cResult[18] = items1;
-      tmp17 = items1;
-      tmp16 = D;
+      const items1 = [mode, initialTarget, fn, openPrimaryColorPicker, openSecondaryColorPicker, tmp10, tmp12];
+      cResult[9] = initialTarget;
+      cResult[10] = mode;
+      cResult[11] = tmp12;
+      cResult[12] = tmp10;
+      cResult[13] = openPrimaryColorPicker;
+      cResult[14] = openSecondaryColorPicker;
+      cResult[15] = N;
+      cResult[16] = items1;
+      tmp14 = items1;
+      tmp13 = N;
     }
   }
-  const obj15 = { primaryColor, secondaryColor, avatarColors, onChangeColors: mode(navigation[11]).setTryItOutThemeColors };
-  cResult[2] = avatarColors;
-  cResult[3] = primaryColor;
-  cResult[4] = secondaryColor;
-  cResult[5] = obj15;
-  tmp10 = obj15;
+  const obj14 = { primaryColor, secondaryColor, avatarColors, onChangeColors: mode(fn[10]).setTryItOutThemeColors };
+  cResult[1] = avatarColors;
+  cResult[2] = primaryColor;
+  cResult[3] = secondaryColor;
+  cResult[4] = obj14;
+  tmp7 = obj14;
 }) : (function UserProfileTryItOutFields(initialTarget) {
   let TryItOutEditableTileAvatarButton;
-  let avatarColors;
-  let closure_3;
   let currentUser;
   let intl;
   let intl2;
   let intl3;
   let intl4;
-  let items2;
+  let items1;
   let mode;
-  let obj11;
-  let obj5;
-  let obj7;
-  let obj9;
+  let obj10;
+  let obj4;
+  let obj6;
+  let obj8;
   let primaryColor;
   let secondaryColor;
-  let tmp14;
-  let tmp5Result;
-  let tmp5Result2;
+  let tmp13;
+  let tmp2Result;
+  let tmp2Result2;
   ({ currentUser, mode } = initialTarget);
   initialTarget = initialTarget.initialTarget;
-  navigation = undefined;
-  let fn5;
-  const tmp = fn5();
-  const obj = mode(navigation[8]);
-  navigation = obj.useNavigation();
-  ({ primaryColor, secondaryColor, avatarColors } = initialTarget(navigation[9])(currentUser));
-  const tmp6 = initialTarget(navigation[9])(currentUser);
-  react = initialTarget(navigation[10])(currentUser.id);
-  const items = [navigation];
-  let onPress = react.useCallback(() => {
-    navigation.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, { isTryItOut: true });
-  }, items);
-  const obj2 = { primaryColor, secondaryColor, avatarColors, onChangeColors: mode(navigation[11]).setTryItOutThemeColors };
-  const tmp7 = initialTarget(navigation[12]);
-  const tmp7Result = tmp7(obj2);
-  let fn2 = tmp7Result.openPrimaryColorPicker;
-  let fn3 = tmp7Result.openSecondaryColorPicker;
-  let fn4 = initialTarget(navigation[13])({ user: currentUser, isTryItOut: true });
-  fn5 = initialTarget(navigation[14])({ user: currentUser, isTryItOut: true });
-  const ref = react.useRef(false);
-  const items1 = [mode, initialTarget, onPress, fn2, fn3, fn4, fn5];
-  const effect = react.useEffect(() => {
+  let onPress;
+  let fn2;
+  const tmp = closure_8();
+  const tmp4 = initialTarget(onPress[8])(currentUser);
+  ({ primaryColor, secondaryColor } = tmp4);
+  const avatarColors = tmp4.avatarColors;
+  onPress = fn2.useCallback(() => {
+    const obj = mode(fn[9]);
+    const obj2 = { screen: fn4.DISPLAY_NAME_STYLES, params: { isTryItOut: true } };
+    obj.openUserSettings(obj2, undefined, { pop: false });
+  }, []);
+  let obj = { primaryColor, secondaryColor, avatarColors, onChangeColors: mode(onPress[10]).setTryItOutThemeColors };
+  const tmp5 = initialTarget(onPress[11]);
+  const tmp5Result = tmp5(obj);
+  fn2 = tmp5Result.openPrimaryColorPicker;
+  let fn3 = tmp5Result.openSecondaryColorPicker;
+  let fn4 = initialTarget(onPress[12])({ user: currentUser, isTryItOut: true });
+  let fn5 = initialTarget(onPress[13])({ user: currentUser, isTryItOut: true });
+  const ref = fn2.useRef(false);
+  const items = [mode, initialTarget, onPress, fn2, fn3, fn4, fn5];
+  const effect = fn2.useEffect(() => {
     if ("edit" === mode) {
       if (!ref.current) {
         if ("display-name-styles" === initialTarget) {
@@ -538,50 +503,66 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         tmp12.current = true;
       }
     }
-  }, items1);
-  const tmp12 = onPress;
-  const obj3 = { style: tmp.container, children: items2 };
-  const obj4 = { heading: intl.string(initialTarget(navigation[16])["86GtGH"]), showNitroIcon: true, children: fn3(tmp14, obj5) };
-  const EditableTileGroup = mode(navigation[17]).EditableTileGroup;
-  intl = mode(navigation[15]).intl;
-  obj5 = { user: currentUser, onPress };
-  const tmp11 = fn4;
-  tmp14 = initialTarget(navigation[18]);
+  }, items);
+  let obj2 = { style: tmp.container, children: items1 };
+  const tmp12 = fn5;
+  const obj3 = { heading: intl.string(initialTarget(onPress[15])["86GtGH"]), showNitroIcon: true, children: tmp12(tmp13, obj4) };
+  const EditableTileGroup = mode(onPress[17]).EditableTileGroup;
+  intl = mode(onPress[14]).intl;
+  obj4 = { user: currentUser, onPress };
+  const tmp10 = ref;
+  const tmp11 = fn3;
+  tmp13 = initialTarget(onPress[18]);
   if ("edit" !== mode) {
-    onPress = () => closure_3("display-name-styles");
+    onPress = () => {
+      const obj = mode(fn[16]);
+      return obj.openPremiumTryItOutModal("display-name-styles");
+    };
   }
-  items2 = [fn3(EditableTileGroup, obj4), , , ];
-  const obj6 = { heading: intl2.string(mode(navigation[15]).t.DMeO2X), showNitroIcon: true, children: fn3(tmp5Result, obj7) };
-  const EditableTileGroup2 = tmp2(tmp3[17]).EditableTileGroup;
-  intl2 = tmp2(tmp3[15]).intl;
-  obj7 = { primaryColor, secondaryColor, onPressPrimary: fn2, onPressSecondary: fn3 };
-  tmp5Result = initialTarget(navigation[19]);
+  items1 = [tmp12(EditableTileGroup, obj3), , , ];
+  const obj5 = { heading: intl2.string(mode(onPress[14]).t.DMeO2X), showNitroIcon: true, children: tmp12(tmp2Result, obj6) };
+  const EditableTileGroup2 = tmp6(tmp3[17]).EditableTileGroup;
+  intl2 = tmp6(tmp3[14]).intl;
+  obj6 = { primaryColor, secondaryColor, onPressPrimary: fn2, onPressSecondary: fn3 };
+  tmp2Result = initialTarget(onPress[19]);
   if ("edit" !== mode) {
-    fn2 = () => closure_3("theme-primary");
+    fn2 = () => {
+      const obj = mode(fn[16]);
+      return obj.openPremiumTryItOutModal("theme-primary");
+    };
   }
   if ("edit" !== mode) {
-    fn3 = () => closure_3("theme-secondary");
+    fn3 = () => {
+      const obj = mode(fn[16]);
+      return obj.openPremiumTryItOutModal("theme-secondary");
+    };
   }
-  items2[1] = fn3(EditableTileGroup2, obj6);
-  const obj8 = { heading: intl3.string(mode(navigation[15]).t.Vgdusv), showNitroIcon: true, children: fn3(tmp5Result2, obj9) };
-  const EditableTileGroup3 = tmp2(tmp3[17]).EditableTileGroup;
-  intl3 = tmp2(tmp3[15]).intl;
-  obj9 = { user: currentUser, onPress: fn4 };
-  tmp5Result2 = initialTarget(navigation[20]);
+  items1[1] = tmp12(EditableTileGroup2, obj5);
+  const obj7 = { heading: intl3.string(mode(onPress[14]).t.Vgdusv), showNitroIcon: true, children: tmp12(tmp2Result2, obj8) };
+  const EditableTileGroup3 = tmp6(tmp3[17]).EditableTileGroup;
+  intl3 = tmp6(tmp3[14]).intl;
+  obj8 = { user: currentUser, onPress: fn4 };
+  tmp2Result2 = initialTarget(onPress[20]);
   if ("edit" !== mode) {
-    fn4 = () => closure_3("banner");
+    fn4 = () => {
+      const obj = mode(fn[16]);
+      return obj.openPremiumTryItOutModal("banner");
+    };
   }
-  items2[2] = fn3(EditableTileGroup3, obj8);
-  const obj10 = { heading: intl4.string(mode(navigation[15]).t.Dt3ZUr), showNitroIcon: true, children: fn3(TryItOutEditableTileAvatarButton, obj11) };
-  const EditableTileGroup4 = tmp2(tmp3[17]).EditableTileGroup;
-  intl4 = tmp2(tmp3[15]).intl;
-  obj11 = { user: currentUser, onPress: fn5 };
-  TryItOutEditableTileAvatarButton = tmp2(tmp3[21]).TryItOutEditableTileAvatarButton;
+  items1[2] = tmp12(EditableTileGroup3, obj7);
+  const obj9 = { heading: intl4.string(mode(onPress[14]).t.Dt3ZUr), showNitroIcon: true, children: tmp12(TryItOutEditableTileAvatarButton, obj10) };
+  const EditableTileGroup4 = tmp6(tmp3[17]).EditableTileGroup;
+  intl4 = tmp6(tmp3[14]).intl;
+  obj10 = { user: currentUser, onPress: fn5 };
+  TryItOutEditableTileAvatarButton = tmp6(tmp3[21]).TryItOutEditableTileAvatarButton;
   if ("edit" !== mode) {
-    fn5 = () => closure_3("avatar");
+    fn5 = () => {
+      const obj = mode(fn[16]);
+      return obj.openPremiumTryItOutModal("avatar");
+    };
   }
-  items2[3] = fn3(EditableTileGroup4, obj10);
-  return tmp11(tmp12, obj3);
+  items1[3] = tmp12(EditableTileGroup4, obj9);
+  return tmp10(tmp11, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileTryItOutFields.tsx");
 

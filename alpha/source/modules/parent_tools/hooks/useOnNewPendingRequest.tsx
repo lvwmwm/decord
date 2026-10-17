@@ -1,11 +1,11 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 15922
+// Function ID: 15923
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7479, 558, 576, 7959, 504, 7481, 5459, 2]
+// Dependencies: [19, 7525, 558, 576, 8005, 504, 7527, 5496, 2]
 
-// Module 15856 (useOnNewPendingRequest)
+// Module 15922 (useOnNewPendingRequest)
 import react_mod from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7479 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

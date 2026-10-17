@@ -1,20 +1,20 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6537
+// Function ID: 6538
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1392, 6485, 1087, 21, 5154, 587, 558, 576, 504, 1505, 1267, 1107, 6486, 6491, 6487, 1128, 5150, 5442, 2]
+// Dependencies: [19, 17, 1392, 6538, 1087, 21, 5191, 587, 558, 576, 504, 1505, 1267, 1107, 6539, 6544, 6540, 1128, 5187, 5479, 2]
 
-// Module 6484 (ChangeEmailCollectReasons)
+// Module 6537 (ChangeEmailCollectReasons)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6487 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6540 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import VerificationConstants from "VerificationConstants" /* 6485 */;
+import VerificationConstants from "VerificationConstants" /* 6538 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

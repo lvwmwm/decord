@@ -1,18 +1,18 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11083
+// Function ID: 11084
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 5503, 2026, 10978, 8533, 6299, 8495, 38, 8501, 2000, 8493, 558, 576, 7226, 2]
+// Dependencies: [32, 5, 19, 5540, 2026, 11039, 8579, 6357, 8541, 38, 8547, 2000, 8539, 558, 576, 7278, 2]
 
-// Module 11021 (useLoadMessageContentEntries)
+// Module 11083 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2000 */;
 import Constants from "Constants" /* 2026 */;
-import useAvatarColor from "useAvatarColor" /* 8495 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 10978 */;
+import useAvatarColor from "useAvatarColor" /* 8541 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 11039 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -682,7 +682,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8493);
+      let tmp3Result = tmp3(8539);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
   } else {
     tmp19 = cResult[4];
   }
-  const tmpResult = tmp(8495);
+  const tmpResult = tmp(8541);
   const colorStore = tmpResult.useColorStore(tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = _asyncToGenerator(async (arg0, value) => {

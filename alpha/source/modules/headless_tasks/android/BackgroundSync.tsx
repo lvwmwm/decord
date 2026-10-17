@@ -1,13 +1,13 @@
-// Module ID: 19087
-// Function ID: 19088
+// Module ID: 19149
+// Function ID: 19150
 // Name: BackgroundSync
-// Dependencies: [5976, 502, 2001, 3, 2111, 18389, 2]
+// Dependencies: [6013, 502, 2001, 3, 2111, 18450, 2]
 
-// Module 19087 (BackgroundSync)
+// Module 19149 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2111 */;
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 18389 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5976 */;
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 18450 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import size from "module_2" /* 2 */;

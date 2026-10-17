@@ -1,9 +1,9 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13934
+// Function ID: 13935
 // Name: CollectiblesMarketingSurface
 // Dependencies: [2]
 
-// Module 13866 (CollectiblesMarketingSurface)
+// Module 13934 (CollectiblesMarketingSurface)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingSurface.tsx");

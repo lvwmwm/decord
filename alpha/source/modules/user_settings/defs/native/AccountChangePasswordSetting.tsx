@@ -1,13 +1,13 @@
-// Module ID: 15724
-// Function ID: 15725
+// Module ID: 15790
+// Function ID: 15791
 // Name: AccountChangePasswordSetting
-// Dependencies: [8214, 1087, 11003, 1128, 15725, 2]
+// Dependencies: [8260, 1087, 11065, 1128, 15791, 2]
 
-// Module 15724 (AccountChangePasswordSetting)
+// Module 15790 (AccountChangePasswordSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12982
+// Function ID: 12983
 // Name: SmartSearchConstants
 // Dependencies: [1104, 2]
 
-// Module 12917 (SmartSearchConstants)
+// Module 12982 (SmartSearchConstants)
 import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 

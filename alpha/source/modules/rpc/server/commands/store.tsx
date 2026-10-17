@@ -1,16 +1,16 @@
-// Module ID: 15459
-// Function ID: 15460
+// Module ID: 15524
+// Function ID: 15525
 // Name: merged15
-// Dependencies: [5, 5858, 1087, 15460, 15461, 11247, 9296, 10410, 15462, 7341, 15432, 2]
+// Dependencies: [5, 5895, 1087, 15525, 15526, 9169, 9356, 10473, 15527, 7387, 15499, 2]
 
-// Module 15459 (merged15)
-import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7341 */;
-import RPCErrorDefault from "RPCError" /* 11247 */;
-import validateTransportType from "validateTransportType" /* 15461 */;
+// Module 15524 (merged15)
+import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7387 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import validateTransportType from "validateTransportType" /* 15526 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5858 */;
+import Constants_mod from "Constants" /* 5895 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15432 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15499 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, subscription_plans;
@@ -208,7 +208,7 @@ obj = function _getSkusHandler() {
               closure_6 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

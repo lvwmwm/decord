@@ -1,10 +1,10 @@
-// Module ID: 9407
-// Function ID: 9408
+// Module ID: 9471
+// Function ID: 9472
 // Name: QuestHomeNavigationStore
-// Dependencies: [5048, 2]
+// Dependencies: [5085, 2]
 
-// Module 9407 (QuestHomeNavigationStore)
-import ZustandStore from "ZustandStore" /* 5048 */;
+// Module 9471 (QuestHomeNavigationStore)
+import ZustandStore from "ZustandStore" /* 5085 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ sort: null, filter: null, scrollToQuestId: null }));

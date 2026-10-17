@@ -1,24 +1,24 @@
-// Module ID: 13182
-// Function ID: 13183
+// Module ID: 13247
+// Function ID: 13248
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5067, 1087, 13183, 21, 5154, 587, 558, 576, 5454, 9645, 6888, 13166, 13143, 5150, 1128, 2603, 13118, 13135, 13184, 13140, 13185, 2]
+// Dependencies: [19, 17, 5104, 1087, 13248, 21, 5191, 587, 558, 576, 5491, 9709, 6941, 13231, 13208, 5187, 1128, 2621, 13183, 13200, 13249, 13205, 13250, 2]
 
-// Module 13182 (GuildPowerupsLevelCard)
+// Module 13247 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LinearGradientDefault from "LinearGradient" /* 5454 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6888 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13118 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13135 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13143 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13183 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13184 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13183 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13200 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13208 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13248 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13249 */;
 import react from "react" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5067 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,10 +45,10 @@ let size1;
 let tmp;
 let tmp6;
 let unpackModuleId;
-const Text_Text = tmp(5150);
-const BoostGemIcon2 = tmp(9645);
-const GuildPowerupsCardFooter = tmp(13140);
-const GuildPowerupsCardDefault = tmp6(13185);
+const Text_Text = tmp(5187);
+const BoostGemIcon2 = tmp(9709);
+const GuildPowerupsCardFooter = tmp(13205);
+const GuildPowerupsCardDefault = tmp6(13250);
 const View = react_native.View;
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 ({ BoostedGuildTiers: metroImportDefault, HorizontalGradient: metroImportAll } = Constants);
@@ -724,7 +724,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   items1 = [authStore(tmp19, obj4), ];
   let str;
   const obj5 = { style: tmp.contentContainer, children: items2 };
-  const Text = tmp2(5150).Text;
+  const Text = tmp2(5187).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }

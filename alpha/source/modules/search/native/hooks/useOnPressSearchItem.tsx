@@ -1,27 +1,27 @@
-// Module ID: 17713
-// Function ID: 17714
+// Module ID: 17773
+// Function ID: 17774
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7538, 2068, 12929, 9550, 17714, 9549, 1087, 2075, 12915, 12940, 558, 576, 1386, 4867, 1128, 8718, 4865, 1505, 13027, 17715, 12918, 9573, 9591, 1123, 6163, 8614, 7238, 5165, 7702, 2002, 6143, 13891, 5476, 8414, 6371, 1114, 12936, 2]
+// Dependencies: [5, 19, 7584, 2068, 12994, 9614, 17774, 9613, 1087, 2075, 12980, 13005, 558, 576, 1386, 4903, 1128, 8764, 4901, 1505, 13092, 17775, 12983, 9637, 9655, 1123, 6200, 8660, 7290, 5202, 7748, 2002, 6180, 13959, 5513, 8460, 6424, 1114, 13001, 2]
 // Exports: useOnPressMediaItem
 
-// Module 17713 (useOnPressSearchItem)
+// Module 17773 (useOnPressSearchItem)
 import intl2 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import ToastUtils from "ToastUtils" /* 4867 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8718 */;
-import TrackingConstants from "TrackingConstants" /* 9549 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12915 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12936 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12940 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17714 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
+import TrackingConstants from "TrackingConstants" /* 9613 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12980 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13001 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13005 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7538 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import SearchQueryStore from "SearchQueryStore" /* 12929 */;
-import SearchConstants from "SearchConstants" /* 9550 */;
+import SearchQueryStore from "SearchQueryStore" /* 12994 */;
+import SearchConstants from "SearchConstants" /* 9614 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let closure_15;
 let closure_16;
 let map1;
 let metroImportAll;
-const f150997 = async (arg0, value) => {
+const f151323 = async (arg0, value) => {
   let c2;
   closure_0 = arg0;
   if (c3 === 2) {
@@ -851,7 +851,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   const obj2 = searchContext(callback[19]);
   navigation = obj2.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f150997);
+  let closure_0 = _asyncToGenerator(f151323);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);
@@ -897,7 +897,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   obj = searchContext(callback[19]);
   navigation = obj.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f150997);
+  let closure_0 = _asyncToGenerator(f151323);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);

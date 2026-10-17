@@ -1,11 +1,11 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 18031
+// Function ID: 18032
 // Name: useSpamMessageRequestsCount
-// Dependencies: [6275, 558, 576, 504, 2]
+// Dependencies: [6334, 558, 576, 504, 2]
 
-// Module 17971 (useSpamMessageRequestsCount)
+// Module 18031 (useSpamMessageRequestsCount)
 import react from "react" /* 576 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6275 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6334 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

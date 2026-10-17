@@ -1,14 +1,14 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 13015
+// Function ID: 13016
 // Name: SearchTabsFetchManager
-// Dependencies: [109, 9550, 1087, 12951, 12952, 2]
+// Dependencies: [109, 9614, 1087, 13016, 13017, 2]
 
-// Module 12950 (SearchTabsFetchManager)
+// Module 13015 (SearchTabsFetchManager)
 import Constants from "Constants" /* 1087 */;
-import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 12951 */;
-import SearchFetcher from "SearchFetcher" /* 12952 */;
+import AbstractSearchFetchManager2 from "AbstractSearchFetchManager" /* 13016 */;
+import SearchFetcher from "SearchFetcher" /* 13017 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import SearchConstants from "SearchConstants" /* 9550 */;
+import SearchConstants from "SearchConstants" /* 9614 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

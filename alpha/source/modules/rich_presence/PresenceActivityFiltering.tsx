@@ -1,12 +1,12 @@
-// Module ID: 10996
-// Function ID: 10997
+// Module ID: 11058
+// Function ID: 11059
 // Name: PresenceActivityFiltering
-// Dependencies: [5503, 2000, 2]
+// Dependencies: [5540, 2000, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 10996 (PresenceActivityFiltering)
+// Module 11058 (PresenceActivityFiltering)
 import Server from "Server" /* 2000 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");

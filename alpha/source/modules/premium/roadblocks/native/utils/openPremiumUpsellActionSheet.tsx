@@ -1,12 +1,12 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9579
+// Function ID: 9580
 // Name: openPremiumUpsellActionSheet
-// Dependencies: [5118, 9516, 2002, 2]
+// Dependencies: [5155, 9580, 2002, 2]
 // Exports: default
 
-// Module 9515 (openPremiumUpsellActionSheet)
+// Module 9579 (openPremiumUpsellActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUpsellActionSheetKey = "PremiumUpsellActionSheetKey";
@@ -15,6 +15,6 @@ const result = size.fileFinishedImporting("modules/premium/roadblocks/native/uti
 export default function openPremiumUpsellActionSheet(featureName, analyticsLocations, onDismiss, appEntryKey) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { featureName, analyticsLocations, onDismiss, appEntryKey };
-  obj.openLazy(asyncRequire(9516, dependencyMap.paths), PremiumUpsellActionSheetKey, obj2);
+  obj.openLazy(asyncRequire(9580, dependencyMap.paths), PremiumUpsellActionSheetKey, obj2);
 };
 export const PREMIUM_UPSELL_ACTION_SHEET_KEY = "PremiumUpsellActionSheetKey";

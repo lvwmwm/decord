@@ -1,10 +1,10 @@
-// Module ID: 18435
-// Function ID: 18436
+// Module ID: 18496
+// Function ID: 18497
 // Name: trackVoiceFeedback
-// Dependencies: [109, 5, 2014, 5297, 1267, 2]
+// Dependencies: [109, 5, 2014, 5334, 1267, 2]
 // Exports: default
 
-// Module 18435 (trackVoiceFeedback)
+// Module 18496 (trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -90,7 +90,7 @@ let obj = function _trackVoiceFeedback() {
             closure_21 = undefined;
             feedback = 1;
             c7 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === feedback) {
           if (arg0 === 1) {

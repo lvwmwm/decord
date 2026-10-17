@@ -1,15 +1,15 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11550
+// Function ID: 11551
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 5154, 587, 558, 576, 11472, 1202, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 11531, 1202, 2]
 
-// Module 11491 (ParticipantTitle)
+// Module 11550 (ParticipantTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 11472 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 11531 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

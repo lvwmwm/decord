@@ -1,10 +1,10 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17151
+// Function ID: 17152
 // Name: useDrawerState
-// Dependencies: [32, 19, 558, 576, 1506, 5035, 2]
+// Dependencies: [32, 19, 558, 576, 1506, 5072, 2]
 
-// Module 17091 (useDrawerState)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5035 */;
+// Module 17151 (useDrawerState)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

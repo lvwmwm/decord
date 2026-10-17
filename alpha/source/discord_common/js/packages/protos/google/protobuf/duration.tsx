@@ -1,9 +1,9 @@
-// Module ID: 8372
-// Function ID: 8373
+// Module ID: 8418
+// Function ID: 8419
 // Name: duration
 // Dependencies: [32, 1212, 2]
 
-// Module 8372 (duration)
+// Module 8418 (duration)
 import _mod1212 from "module_1212" /* 1212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -92,14 +92,14 @@ class Duration$Type extends MessageType {
       }
     }
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { seconds: "0", nanos: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

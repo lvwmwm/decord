@@ -1,14 +1,14 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7441
+// Function ID: 7442
 // Name: ReferralTrialStore
-// Dependencies: [1392, 1087, 7396, 1103, 504, 584, 2]
+// Dependencies: [1392, 1087, 7442, 1103, 504, 584, 2]
 
-// Module 7395 (ReferralTrialStore)
+// Module 7441 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7396 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7442 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -144,7 +144,11 @@ class ReferralTrialStore extends Store {
     return recipient_status;
   }
   getReminderStateId() {
-    return reminder_state_id;
+    let tmp = recurring_reminder_state_id;
+    if (recurring_reminder_state_id == null) {
+      tmp = reminder_state_id;
+    }
+    return tmp;
   }
   getRecurringReminderStateId() {
     return recurring_reminder_state_id;

@@ -1,9 +1,9 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9436
+// Function ID: 9437
 // Name: theme_aware_asset
 // Dependencies: [32, 1212, 2]
 
-// Module 9372 (theme_aware_asset)
+// Module 9436 (theme_aware_asset)
 import _mod1212 from "module_1212" /* 1212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -16,14 +16,14 @@ class ThemeAwareAsset$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.ThemeAwareAsset", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { lightUrl: "", darkUrl: "", lightStaticUrl: "", darkStaticUrl: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
+    if (undefined !== partialSettings) {
       const tmpResult = _mod1212;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }

@@ -1,9 +1,9 @@
-// Module ID: 5134
-// Function ID: 5135
+// Module ID: 5171
+// Function ID: 5172
 // Name: PaymentConstants
 // Dependencies: [2]
 
-// Module 5134 (PaymentConstants)
+// Module 5171 (PaymentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/payments/PaymentConstants.tsx");

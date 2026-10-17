@@ -1,17 +1,17 @@
-// Module ID: 11012
-// Function ID: 11013
+// Module ID: 11074
+// Function ID: 11075
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1392, 5075, 1261, 558, 576, 504, 11013, 11014, 2]
+// Dependencies: [32, 19, 1392, 5112, 1261, 558, 576, 504, 11075, 11076, 2]
 // Exports: canSeeExperimentEmbeds
 
-// Module 11012 (useCodedLinksExperimentEmbeds)
+// Module 11074 (useCodedLinksExperimentEmbeds)
 import react2 from "react" /* 576 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11013 */;
-import useApexExperiments from "useApexExperiments" /* 11014 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11075 */;
+import useApexExperiments from "useApexExperiments" /* 11076 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ExperimentStore from "ExperimentStore" /* 5075 */;
+import ExperimentStore from "ExperimentStore" /* 5112 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -404,13 +404,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCodedLi
         return clientOverrides;
       }
     }
-    const tmpResult13 = tmp(11013);
+    const tmpResult13 = tmp(11075);
     tmp24[0] = tmpResult13.parseRegisteredExperiments(stateFromStoresObject);
-    const tmpResult14 = tmp(11013);
+    const tmpResult14 = tmp(11075);
     tmp24[1] = tmpResult14.getLegacyOverridesInfo(stateFromStoresObject1);
-    const tmpResult15 = tmp(11014);
+    const tmpResult15 = tmp(11076);
     tmp24[2] = tmpResult15.mergeApexExperiments(stateFromStores, stateFromStores1);
-    const tmpResult16 = tmp(11014);
+    const tmpResult16 = tmp(11076);
     tmp24[3] = tmpResult16.getApexExperimentOverridesInfo(stateFromStores2);
     tmp23 = tmp24;
   } else {

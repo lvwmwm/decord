@@ -1,10 +1,10 @@
-// Module ID: 11769
-// Function ID: 11770
+// Module ID: 11831
+// Function ID: 11832
 // Name: PortalKeyboardConstants
-// Dependencies: [6531, 2]
+// Dependencies: [6584, 2]
 
-// Module 11769 (PortalKeyboardConstants)
-import BottomSheetModal from "BottomSheetModal" /* 6531 */;
+// Module 11831 (PortalKeyboardConstants)
+import BottomSheetModal from "BottomSheetModal" /* 6584 */;
 import size from "module_2" /* 2 */;
 
 const keyboardAnimationConfigs = BottomSheetModal.getKeyboardAnimationConfigs("keyboard", 250);

@@ -1,13 +1,13 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16389
+// Function ID: 16390
 // Name: DisplayNameStylesRouteSetting
-// Dependencies: [1087, 11003, 1128, 2963, 16324, 2]
+// Dependencies: [1087, 11065, 1128, 2981, 16390, 2]
 
-// Module 16323 (DisplayNameStylesRouteSetting)
+// Module 16389 (DisplayNameStylesRouteSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef2963 from "module_2963" /* 2963 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2963.ZPMAlX);
+    return intl.string(_modDef2981.ZPMAlX);
   },
   parent: null,
   unsearchable: true,

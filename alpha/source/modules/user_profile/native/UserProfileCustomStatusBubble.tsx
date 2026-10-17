@@ -1,30 +1,30 @@
-// Module ID: 10759
-// Function ID: 10760
+// Module ID: 10822
+// Function ID: 10823
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 109, 19, 17, 7128, 1395, 1098, 21, 5154, 587, 558, 576, 7797, 2044, 1417, 5091, 1384, 5150, 7045, 4877, 8542, 10479, 10760, 5118, 10762, 7102, 1128, 6409, 10855, 2]
+// Dependencies: [32, 109, 19, 17, 7181, 1395, 1098, 21, 1384, 5191, 587, 558, 576, 7843, 2044, 1417, 5128, 5187, 7098, 4913, 8588, 10542, 10823, 5155, 10825, 7155, 1128, 6462, 10920, 2]
 
-// Module 10759 (UserProfileCustomStatusBubble)
+// Module 10822 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserSettings from "UserSettings" /* 2044 */;
-import FastImageDefault from "FastImage" /* 5091 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import Text_Text from "Text/Text" /* 5150 */;
-import EmojiDefault from "Emoji" /* 7045 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7102 */;
-import Constants2 from "Constants" /* 7128 */;
-import inlineStyles from "inlineStyles" /* 7797 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10762 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import EmojiDefault from "Emoji" /* 7098 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
+import Constants2 from "Constants" /* 7181 */;
+import inlineStyles from "inlineStyles" /* 7843 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,8 +44,12 @@ const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 let Fonts = Constants.Fonts;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
+let str = "";
+if (PlatformUtils.isAndroid()) {
+  str = "\u00A0";
+}
 let createStyles = createStyles_mod;
-let closure_14 = createStyles.createStyles((arg0) => {
+let closure_15 = createStyles.createStyles((arg0) => {
   let BACKGROUND_SURFACE_HIGH;
   let colors2;
   let obj2;
@@ -69,7 +73,7 @@ let closure_14 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function StatusBubbleConnector(arg0) {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StatusBubbleConnector(arg0) {
   let backgroundColor;
   let borderColor;
   let items;
@@ -127,10 +131,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   items[1] = unpackModuleId(inlineStyles.Path, { d: "M0.5 10 A9.5 9.5 0 0 1 19.5 10", fill: "none", stroke: borderColor, strokeWidth: 1 });
   return authStore2(tmp, size);
 });
-let closure_16 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_17 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_17 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
+let closure_18 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiImage(arg0) {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiImage(arg0) {
   let animated;
   let emojiId;
   let style;
@@ -225,7 +229,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiI
   return unpackModuleId(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextStatusContent(isPlaceholderText) {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextStatusContent(isPlaceholderText) {
   let emoji;
   let items;
   let lineClamp;
@@ -236,7 +240,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
   let tmp6;
   const tmp = emoji;
   let obj = emoji(576);
-  const cResult = obj.c(17);
+  const cResult = obj.c(18);
   ({ text, emoji } = isPlaceholderText);
   ({ textVariant, lineClamp, onTextLayout, lineHeight } = isPlaceholderText);
   isPlaceholderText = isPlaceholderText.isPlaceholderText;
@@ -280,32 +284,39 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
       } else {
         tmp12 = cResult[9];
       }
+      let tmp14 = null;
+      if (tmp4) {
+        tmp14 = str;
+      }
       if (cResult[10] === lineClamp) {
         if (cResult[11] === onTextLayout) {
           if (cResult[12] === tmp12) {
-            if (cResult[13] === text) {
-              if (cResult[14] === tmp9) {
-                let tmp14;
-                if (cResult[15] === textVariant) {
-                  tmp14 = cResult[16];
+            if (cResult[13] === tmp14) {
+              if (cResult[14] === text) {
+                if (cResult[15] === tmp9) {
+                  let tmp15;
+                  if (cResult[16] === textVariant) {
+                    tmp15 = cResult[17];
+                  }
+                  return tmp15;
                 }
-                return tmp14;
               }
             }
           }
         }
       }
       let obj4 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: tmp9, children: items };
-      items = [tmp12, text];
-      const tmp16 = closure_12(tmp(5150).Text, obj4);
+      items = [tmp12, text, tmp14];
+      const tmp17 = closure_12(tmp(5187).Text, obj4);
       cResult[10] = lineClamp;
       cResult[11] = onTextLayout;
       cResult[12] = tmp12;
-      cResult[13] = text;
-      cResult[14] = tmp9;
-      cResult[15] = textVariant;
-      cResult[16] = tmp16;
-      tmp14 = tmp16;
+      cResult[13] = tmp14;
+      cResult[14] = text;
+      cResult[15] = tmp9;
+      cResult[16] = textVariant;
+      cResult[17] = tmp17;
+      tmp15 = tmp17;
     }
     function renderInlineEmojiWithSpacer() {
       let items;
@@ -321,7 +332,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
       }
       if (null != id) {
         const obj2 = { children: items };
-        const obj3 = { children: unpackModuleId(closure_18, obj4) };
+        const obj3 = { children: unpackModuleId(closure_19, obj4) };
         obj4 = { emojiId: emoji.id, size: 0.9 * lineHeight, animated: emoji.animated, style: obj5 };
         obj5 = { marginBottom: 0.1 * -lineHeight };
         items = [unpackModuleId(metroImportAll, obj3), ];
@@ -372,14 +383,15 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
   let onTextLayout;
   let text;
   let textVariant;
-  let tmp5Result;
+  let tmp6Result;
   ({ emoji, lineHeight, isPlaceholderText } = arg0);
   ({ text, textVariant, lineClamp, onTextLayout } = arg0);
   if (isPlaceholderText === undefined) {
     isPlaceholderText = false;
   }
+  let tmp = isPlaceholderText;
   const obj = { paddingVertical: lineHeight / 10 };
-  if (isPlaceholderText) {
+  if (tmp) {
     let obj4;
     const obj2 = PlatformUtils;
     if (obj2.isAndroid()) {
@@ -388,9 +400,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
     } else {
       obj4 = { fontStyle: "italic" };
     }
-    isPlaceholderText = obj4;
+    tmp = obj4;
   }
-  const merged = Object.assign(isPlaceholderText);
+  const merged = Object.assign(tmp);
   let id;
   const obj5 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: obj, children: items2 };
   const Text = Text_Text.Text;
@@ -399,43 +411,48 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
   }
   if (null != id) {
     const obj6 = { children: items };
-    const obj7 = { children: unpackModuleId(closure_18, obj8) };
+    const obj7 = { children: unpackModuleId(closure_19, obj8) };
     obj8 = { emojiId: emoji.id, size: 0.9 * lineHeight, animated: emoji.animated, style: obj9 };
     obj9 = { marginBottom: 0.1 * -lineHeight };
     items = [unpackModuleId(metroImportAll, obj7), ];
     const obj10 = { style: obj11 };
     obj11 = { width: 0.5 * lineHeight };
     items[1] = unpackModuleId(metroImportAll, obj10);
-    tmp5Result = tmp5(map1, obj6);
+    tmp6Result = tmp6(map1, obj6);
   } else {
     let name;
     if (emoji != null) {
       name = emoji.name;
     }
-    tmp5Result = null;
+    tmp6Result = null;
     if (null != name) {
       const obj12 = { children: items1 };
       items1 = [emoji.name, ];
       const obj13 = { style: obj14 };
       obj14 = { width: 0.4 * lineHeight };
       items1[1] = unpackModuleId(metroImportAll, obj13);
-      tmp5Result = tmp5(map1, obj12);
+      tmp6Result = tmp6(map1, obj12);
     }
   }
-  items2 = [tmp5Result, text];
+  items2 = [tmp6Result, text, ];
+  let tmp17 = null;
+  if (isPlaceholderText) {
+    tmp17 = str;
+  }
+  items2[2] = tmp17;
   return authStore2(Text, obj5);
 });
 createStyles = createStyles_mod;
-let closure_20 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
+let closure_21 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOnlyStatusContent(arg0) {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOnlyStatusContent(arg0) {
   let _Boolean;
   let animated;
   let emoji;
   const obj = react2;
   const cResult = obj.c(14);
   ({ emoji, size } = arg0);
-  const tmp3 = closure_20();
+  const tmp3 = closure_21();
   const AnimateEmoji = UserSettings.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   if (cResult[0] === setting) {
@@ -457,7 +474,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiO
       tmp14 = cResult[4];
       tmp15 = cResult[5];
     }
-    let str;
+    str = undefined;
     if (emoji != null) {
       str = emoji.name;
     }
@@ -522,10 +539,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiO
   let animated;
   let emoji;
   let obj3;
-  let str;
   let tmp14;
   ({ emoji, size } = arg0);
-  const tmp = closure_20();
+  const tmp = closure_21();
   const AnimateEmoji = UserSettings.AnimateEmoji;
   let id;
   const setting = AnimateEmoji.useSetting();
@@ -600,7 +616,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   let tmp10;
   let tmp11;
   let tmp36;
-  let tmp61;
+  let tmp62;
   let tmp = require;
   let obj = require("react");
   const cResult = obj.c(10);
@@ -613,7 +629,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     tmp5 = editEnabled;
   }
   importDefault = tmp6;
-  const tmp7 = closure_14(hasCustomProfileTheme);
+  const tmp7 = closure_15(hasCustomProfileTheme);
   let tmp9 = importDefault;
   const useToken = tmp(tmp2[19]).useToken;
   tmp(textVariant[19]);
@@ -630,14 +646,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   const token = useToken(BACKGROUND_SURFACE_HIGH);
   const useToken2 = tmp(tmp2[19]).useToken;
   tmp(textVariant[19]);
-  const colors2 = tmp11(tmp2[9]).colors;
+  const colors2 = tmp11(tmp2[10]).colors;
   const token2 = useToken2(hasCustomProfileTheme ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE);
   let tmp15;
   if (null != themeType) {
-    tmp15 = closure_17[themeType];
+    tmp15 = closure_18[themeType];
   }
   if (tmp15 == null) {
-    tmp15 = closure_16;
+    tmp15 = closure_17;
   }
   textVariant = tmp15.textVariant;
   emojiOnlyEmojiSize = tmp15.emojiOnlyEmojiSize;
@@ -663,10 +679,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     previewEmoji = emoji;
   }
   react = tmp23;
-  let tmp24 = !tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText;
   const isPlaceholderText = tmp24;
   let str4 = gameMentionsAsPlainText;
-  if (tmp24) {
+  if (!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText) {
     str4 = placeholderText;
   }
   let closure_9 = tmp25;
@@ -751,14 +766,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
         if (null != onPressTruncatedStatus) {
           if (!(undefined !== showFullStatus && showFullStatus)) {
             if (null != str4 && "" !== str4) {
-              const obj6 = { style: items3, children: ref1(closure_19, obj7) };
+              const obj6 = { style: items3, children: ref1(closure_20, obj7) };
               items3 = [, , , ];
               ({ bubble: arr5[0], statusBubble: arr5[1] } = tmp7);
               items3[2] = obj2;
               items3[3] = tmp7.statusBubbleMeasureable;
               obj7 = {
                 text: str4,
-                isPlaceholderText: tmp24,
+                isPlaceholderText: !tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText,
                 emoji: previewEmoji,
                 textVariant,
                 onTextLayout(nativeEvent) {
@@ -792,7 +807,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
         items5 = [tmp39, ];
         if (!tmp20 && tmp5) {
           let stringResult = placeholderText;
-          if (!tmp24) {
+          if (!(!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText)) {
             const intl3 = tmp(tmp2[26]).intl;
             stringResult = intl3.string(tmp(tmp2[26]).t.Vq4UmS);
           }
@@ -800,44 +815,50 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
           const PressableOpacity3 = tmp(tmp2[27]).PressableOpacity;
           intl4 = tmp(tmp2[26]).intl;
           formatToPlainStringResult = undefined;
-          if (tmp24) {
+          if (!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText) {
             const intl5 = tmp(tmp2[26]).intl;
             const obj10 = { prompt: placeholderText };
             formatToPlainStringResult = intl5.formatToPlainString(tmp(tmp2[26]).t.ioWOMP, obj10);
           }
           let str7 = "text-md/medium";
           Text = tmp(tmp2[17]).Text;
-          if (tmp24) {
+          if (!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText) {
             str7 = "text-md/normal";
           }
           let _Math = Math;
           obj11 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * isPlaceholderText.getFontScale()), style: obj12, children: items6 };
+          let tmp57 = tmp24;
           obj12 = { paddingVertical: scaledTextLineHeight / 10 };
-          if (tmp24) {
+          if (tmp57) {
             let obj14;
-            const tmpResult11 = tmp(textVariant[16]);
+            const tmpResult11 = tmp(textVariant[8]);
             if (tmpResult11.isAndroid()) {
               obj14 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
               const obj13 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
             } else {
               obj14 = { fontStyle: "italic" };
             }
-            tmp24 = obj14;
+            tmp57 = obj14;
           }
-          const merged = Object.assign(tmp24);
-          const obj15 = { color: tmp10(textVariant[9]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp61 };
+          const merged = Object.assign(tmp57);
+          const obj15 = { color: tmp10(textVariant[10]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp62 };
           const CirclePlusIcon = tmp(tmp2[28]).CirclePlusIcon;
-          tmp61 = undefined;
-          const tmpResult12 = tmp(textVariant[16]);
+          tmp62 = undefined;
+          const tmpResult12 = tmp(textVariant[8]);
           if (tmpResult12.isAndroid()) {
-            tmp61 = { marginBottom: 0.1 * -scaledTextLineHeight };
+            tmp62 = { marginBottom: 0.1 * -scaledTextLineHeight };
             const obj16 = { marginBottom: 0.1 * -scaledTextLineHeight };
           }
           const obj17 = { children: ref1(CirclePlusIcon, obj15) };
-          items6 = [ref1(str4, obj17), , ];
+          items6 = [ref1(str4, obj17), , , ];
           const obj18 = { style: tmp7.addStatusIconSpacer };
           items6[1] = ref1(str4, obj18);
           items6[2] = stringResult;
+          let tmp63 = null;
+          if (!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText) {
+            tmp63 = str;
+          }
+          items6[3] = tmp63;
           tmp50Result = tmp54(PressableOpacity3, obj9);
         } else {
           function renderStatusContent() {
@@ -848,7 +869,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
               const obj2 = { text: str4, isPlaceholderText, emoji: previewEmoji, textVariant, lineClamp: rounded, lineHeight: scaledTextLineHeight };
               rounded = undefined;
               const tmp8 = unpackModuleId;
-              const tmp9 = closure_19;
+              const tmp9 = closure_20;
               if (!closure_1) {
                 const _Math = Math;
                 rounded = Math.ceil(2 * metroImportDefault.getFontScale());
@@ -856,7 +877,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
               tmp8Result = tmp8(tmp9, obj2);
             } else if (closure_6) {
               const obj = { emoji: previewEmoji, size: emojiOnlyEmojiSize };
-              tmp8Result = unpackModuleId(closure_21, obj);
+              tmp8Result = unpackModuleId(closure_22, obj);
             }
             return tmp8Result;
           }
@@ -868,7 +889,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
           } else {
             if (null != onPressTruncatedStatus) {
               if (first) {
-                if (!tmp24) {
+                if (!(!tmp20 && !tmp22 && undefined !== placeholderText && "" !== placeholderText)) {
                   const PressableOpacity = tmp(tmp2[27]).PressableOpacity;
                   const intl = tmp(tmp2[26]).intl;
                   const formatToPlainString = intl.formatToPlainString;
@@ -899,7 +920,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
       }
     }
     const obj22 = { style: tmp7.largeCircle, backgroundColor: token, borderColor: token2 };
-    const tmp42 = ref1(closure_15, obj22);
+    const tmp42 = ref1(closure_16, obj22);
     cResult[6] = token;
     cResult[7] = token2;
     cResult[8] = tmp7.largeCircle;
@@ -951,7 +972,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   let themeType;
   let tmp10;
   let tmp36Result2;
-  let tmp49;
+  let tmp50;
   let tmp9;
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
@@ -973,7 +994,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   _require = tmp3;
   ({ onPressTruncatedStatus, previewEmoji, previewText, placeholderText, prompt: c1 } = merged);
   ({ style, emojiOnlyStyle } = merged);
-  const tmp4 = closure_14(hasCustomProfileTheme);
+  const tmp4 = closure_15(hasCustomProfileTheme);
   let tmp8 = importDefault;
   const useToken = require("useToken").useToken;
   const tmp7 = require("useToken");
@@ -990,14 +1011,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   const token = useToken(BACKGROUND_SURFACE_HIGH);
   const useToken2 = tmp5(tmp6[19]).useToken;
   require("useToken");
-  const colors2 = tmp10(tmp6[9]).colors;
+  const colors2 = tmp10(tmp6[10]).colors;
   let tmp14;
   const token2 = useToken2(hasCustomProfileTheme ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE);
   if (null != themeType) {
-    tmp14 = closure_17[themeType];
+    tmp14 = closure_18[themeType];
   }
   if (tmp14 == null) {
-    tmp14 = closure_16;
+    tmp14 = closure_17;
   }
   textVariant = tmp14.textVariant;
   emojiOnlyEmojiSize = tmp14.emojiOnlyEmojiSize;
@@ -1023,10 +1044,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     previewEmoji = emoji;
   }
   react = tmp22;
-  let tmp23 = !tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText;
   isPlaceholderText = tmp23;
   str4 = gameMentionsAsPlainText;
-  if (tmp23) {
+  if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
     str4 = placeholderText;
   }
   closure_9 = tmp24;
@@ -1086,14 +1106,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   if (null != onPressTruncatedStatus) {
     if (!tmp3) {
       if (null != str4 && "" !== str4) {
-        const obj6 = { style: items4, children: ref1(closure_19, obj7) };
+        const obj6 = { style: items4, children: ref1(closure_20, obj7) };
         items4 = [, , , ];
         ({ bubble: arr5[0], statusBubble: arr5[1] } = tmp4);
         items4[2] = obj;
         items4[3] = tmp4.statusBubbleMeasureable;
         obj7 = {
           text: str4,
-          isPlaceholderText: tmp23,
+          isPlaceholderText: !tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText,
           emoji: previewEmoji,
           textVariant,
           onTextLayout(nativeEvent) {
@@ -1126,10 +1146,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   items5[3] = tmp39;
   items6 = [, ];
   const obj9 = { style: tmp4.largeCircle, backgroundColor: token, borderColor: token2 };
-  items6[0] = ref1(closure_15, obj9);
+  items6[0] = ref1(closure_16, obj9);
   if (!tmp19 && (undefined !== editEnabled && editEnabled)) {
     let stringResult = placeholderText;
-    if (!tmp23) {
+    if (!(!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText)) {
       const intl3 = tmp5(tmp6[26]).intl;
       stringResult = intl3.string(tmp5(tmp6[26]).t.Vq4UmS);
     }
@@ -1137,20 +1157,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     const PressableOpacity3 = tmp5(tmp6[27]).PressableOpacity;
     intl4 = tmp5(tmp6[26]).intl;
     formatToPlainStringResult = undefined;
-    if (tmp23) {
+    if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
       const intl5 = tmp5(tmp6[26]).intl;
       const obj11 = { prompt: placeholderText };
       formatToPlainStringResult = intl5.formatToPlainString(tmp5(tmp6[26]).t.ioWOMP, obj11);
     }
     let str7 = "text-md/medium";
     Text = tmp5(tmp6[17]).Text;
-    if (tmp23) {
+    if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
       str7 = "text-md/normal";
     }
     let _Math = Math;
     obj12 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * isPlaceholderText.getFontScale()), style: obj13, children: items7 };
+    let tmp45 = tmp23;
     obj13 = { paddingVertical: scaledTextLineHeight / 10 };
-    if (tmp23) {
+    if (tmp45) {
       let obj15;
       const tmp5Result9 = require("PlatformUtils");
       if (tmp5Result9.isAndroid()) {
@@ -1159,22 +1180,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
       } else {
         obj15 = { fontStyle: "italic" };
       }
-      tmp23 = obj15;
+      tmp45 = obj15;
     }
-    const merged1 = Object.assign(tmp23);
-    const obj16 = { color: tmp9(textVariant[9]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp49 };
+    const merged1 = Object.assign(tmp45);
+    const obj16 = { color: tmp9(textVariant[10]).colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "xs", style: tmp50 };
     const CirclePlusIcon = tmp5(tmp6[28]).CirclePlusIcon;
-    tmp49 = undefined;
+    tmp50 = undefined;
     const tmp5Result10 = require("PlatformUtils");
     if (tmp5Result10.isAndroid()) {
-      tmp49 = { marginBottom: 0.1 * -scaledTextLineHeight };
+      tmp50 = { marginBottom: 0.1 * -scaledTextLineHeight };
       const obj17 = { marginBottom: 0.1 * -scaledTextLineHeight };
     }
     const obj18 = { children: ref1(CirclePlusIcon, obj16) };
-    items7 = [ref1(str4, obj18), , ];
+    items7 = [ref1(str4, obj18), , , ];
     const obj19 = { style: tmp4.addStatusIconSpacer };
     items7[1] = ref1(str4, obj19);
     items7[2] = stringResult;
+    let tmp51 = null;
+    if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
+      tmp51 = str;
+    }
+    items7[3] = tmp51;
     tmp36Result2 = tmp36(PressableOpacity3, obj10);
   } else {
     function renderStatusContent() {
@@ -1185,7 +1211,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
         const obj2 = { text: str4, isPlaceholderText, emoji: previewEmoji, textVariant, lineClamp: rounded, lineHeight: scaledTextLineHeight };
         rounded = undefined;
         const tmp8 = unpackModuleId;
-        const tmp9 = closure_19;
+        const tmp9 = closure_20;
         if (!closure_0) {
           const _Math = Math;
           rounded = Math.ceil(2 * metroImportDefault.getFontScale());
@@ -1193,7 +1219,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
         tmp8Result = tmp8(tmp9, obj2);
       } else if (closure_6) {
         const obj = { emoji: previewEmoji, size: emojiOnlyEmojiSize };
-        tmp8Result = unpackModuleId(closure_21, obj);
+        tmp8Result = unpackModuleId(closure_22, obj);
       }
       return tmp8Result;
     }
@@ -1205,7 +1231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     } else {
       if (null != onPressTruncatedStatus) {
         if (first) {
-          if (!tmp23) {
+          if (!(!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText)) {
             const PressableOpacity = tmp5(tmp6[27]).PressableOpacity;
             const intl = tmp5(tmp6[26]).intl;
             const formatToPlainString = intl.formatToPlainString;

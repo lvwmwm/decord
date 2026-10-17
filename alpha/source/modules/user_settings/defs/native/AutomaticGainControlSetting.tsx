@@ -1,16 +1,16 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16313
+// Function ID: 16314
 // Name: AutomaticGainControlSetting
-// Dependencies: [2014, 8214, 558, 576, 504, 1128, 11003, 11399, 2]
+// Dependencies: [2014, 8260, 558, 576, 504, 1128, 11065, 11458, 2]
 
-// Module 16247 (AutomaticGainControlSetting)
+// Module 16313 (AutomaticGainControlSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8214 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11399 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11458 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11003 */;
+import SettingBuilders from "SettingBuilders" /* 11065 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

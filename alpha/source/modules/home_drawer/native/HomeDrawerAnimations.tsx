@@ -1,10 +1,10 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17144
+// Function ID: 17145
 // Name: HomeDrawerAnimations
-// Dependencies: [4909, 2]
+// Dependencies: [4945, 2]
 
-// Module 17084 (HomeDrawerAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
+// Module 17144 (HomeDrawerAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import size from "module_2" /* 2 */;
 
 let Easing;

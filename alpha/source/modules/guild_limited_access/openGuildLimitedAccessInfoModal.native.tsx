@@ -1,14 +1,14 @@
-// Module ID: 6122
-// Function ID: 6123
+// Module ID: 6159
+// Function ID: 6160
 // Name: openGuildLimitedAccessInfoModal
-// Dependencies: [19, 17, 21, 5044, 5363, 6123, 2002, 2]
+// Dependencies: [19, 17, 21, 5081, 5400, 6160, 2002, 2]
 // Exports: default
 
-// Module 6122 (openGuildLimitedAccessInfoModal)
+// Module 6159 (openGuildLimitedAccessInfoModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5363 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export default function openGuildLimitedAccessInfoModal(arg0) {
   const obj2 = {
     importer() {
       let guildId;
-      const promise = asyncRequire(6123, dependencyMap.paths);
+      const promise = asyncRequire(6160, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {

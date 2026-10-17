@@ -1,17 +1,19 @@
-// Module ID: 7732
-// Function ID: 7733
+// Module ID: 7778
+// Function ID: 7779
 // Name: SafetyHubUtils
-// Dependencies: [502, 7733, 1087, 4761, 5482, 1128, 7734, 558, 576, 504, 2]
-// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
+// Dependencies: [502, 7779, 1087, 4797, 5519, 1128, 7780, 1104, 11, 558, 576, 504, 2]
+// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7732 (SafetyHubUtils)
+// Module 7778 (SafetyHubUtils)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import intl5 from "intl" /* 1128 */;
-import _modDef4761 from "module_4761" /* 4761 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5482 */;
-import SafetyHubModels from "SafetyHubModels" /* 7734 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5519 */;
+import SafetyHubModels from "SafetyHubModels" /* 7780 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7733 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +60,9 @@ function parseMessageEmbedForProps(fields) {
 }
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
 ({ AbortCodes: metroImportDefault, MessageAttachmentFlags: metroImportAll } = Constants);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspendedUser() {
+const result = 182 * DurationsDefault.Millis.DAY;
+let c10 = result;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspendedUser() {
   let suspendedUserToken;
   let tmp4;
   let tmp5;
@@ -84,11 +88,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspend
   const obj = get_initialized;
   return null != obj.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
 });
-const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
+const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4761();
-  return obj.to(_modDef4761(timestamp));
+  const obj = _modDef4797();
+  return obj.to(_modDef4797(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;
@@ -183,6 +187,11 @@ export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromC
   }
   return stringResult;
 };
+export const APPEAL_WINDOW_DURATION_MS = result;
+export const isAppealWindowExpired = function isAppealWindowExpired(classificationId) {
+  const obj = SnowflakeUtilsDefault;
+  return obj.age(classificationId) > c10;
+};
 export const getClassificationAccountStatusExpiration = function getClassificationAccountStatusExpiration(classification) {
   const actions = classification.actions;
   if (actions.some((action_type) => action_type.action_type === SafetyHubModels.ActionType.BAN)) {
@@ -205,7 +214,7 @@ export const getClassificationAccountStatusExpiration = function getClassificati
     return null;
   }
 };
-export const useIsSuspendedUser = tmp4;
+export const useIsSuspendedUser = tmp5;
 export const isCurrentUserSuspended = function isCurrentUserSuspended() {
   return null != AuthenticationStore.getSuspendedUserToken();
 };

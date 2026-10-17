@@ -1,13 +1,13 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11204
+// Function ID: 11205
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5503, 2068, 2119, 1392, 2067, 2026, 11140, 4798, 11141, 11180, 11179, 10726, 11190, 8740, 12435, 11170, 2]
+// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11205, 4834, 11206, 11245, 11244, 10789, 11255, 8786, 12500, 11235, 2]
 // Exports: default
 
-// Module 11139 (handleJoinEmbeddedActivity)
+// Module 11204 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5503 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "test", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

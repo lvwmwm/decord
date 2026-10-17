@@ -1,31 +1,48 @@
 // Module ID: 4758
 // Function ID: 4759
-// Dependencies: []
+// Dependencies: [4759, 4761, 4762, 4760, 4763]
 
 // Module 4758
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: obj3, locale: "hi" };
-    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
-    obj4 = { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" } };
-    obj5 = { long: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, short: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" } };
-    obj6 = { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0}, {1}", pair: "{0} {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
-    ListFormat.__addLocaleData(obj2);
-  }
+import formatDistance from "formatDistance" /* 4759 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4761 */;
+import formatRelative from "formatRelative" /* 4762 */;
+import localeToNumber from "localeToNumber" /* 4760 */;
+import date from "module_4763" /* 4763 */;
+
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
+} else {
+  tmp3 = formatDistance;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-const _globalThis = globalThis;
-if (!prop) {
-  prop = [];
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
 }
-_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: obj7, locale: "hi" };
-obj7 = { conjunction: { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" }, short: { end: "{0} \u092F\u093E {1}", middle: "{0}, {1}", pair: "{0} \u092F\u093E {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, \u0914\u0930 {1}", middle: "{0}, {1}", pair: "{0} \u0914\u0930 {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0}, {1}", pair: "{0} {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } };
-prop.push(obj);
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
+if (!localeToNumber) {
+  tmp9 = { default: localeToNumber };
+  const obj4 = { default: localeToNumber };
+} else {
+  tmp9 = localeToNumber;
+}
+if (!date) {
+  tmp11 = { default: date };
+  const obj5 = { default: date };
+} else {
+  tmp11 = date;
+}
+
+export default { code: "hi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 4 } };

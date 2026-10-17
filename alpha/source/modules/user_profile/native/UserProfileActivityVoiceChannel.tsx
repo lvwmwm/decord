@@ -1,21 +1,21 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14075
+// Function ID: 14076
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 2086, 4809, 1098, 21, 5154, 1384, 7077, 8542, 5425, 14008, 5484, 504, 8451, 8455, 1128, 6383, 6409, 4868, 7129, 5150, 8877, 7702, 5118, 14009, 2002, 8531, 14010, 1202, 2]
+// Dependencies: [17, 2086, 4845, 1098, 21, 5191, 1384, 7130, 8588, 5462, 14076, 5521, 504, 8497, 8501, 1128, 6436, 6462, 4904, 7182, 5187, 8923, 7748, 5155, 14077, 2002, 8577, 14078, 1202, 2]
 // Exports: default
 
-// Module 14007 (UserProfileActivityVoiceChannel)
+// Module 14075 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildRecord from "GuildRecord" /* 2086 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4868 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5118 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7702 */;
-import PermissionStore from "PermissionStore" /* 4809 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(14009, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(14077, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

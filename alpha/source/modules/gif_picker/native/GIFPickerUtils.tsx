@@ -1,15 +1,15 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10038
+// Function ID: 10039
 // Name: gif_picker/GIFPickerUtils
-// Dependencies: [19, 1087, 1386, 9555, 558, 576, 9975, 1128, 2]
+// Dependencies: [19, 1087, 1386, 9619, 558, 576, 10039, 1128, 2]
 
-// Module 9974 (gif_picker/GIFPickerUtils)
+// Module 10038 (gif_picker/GIFPickerUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9555 */;
-import FavoriteGIFHooks from "FavoriteGIFHooks" /* 9975 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9619 */;
+import FavoriteGIFHooks from "FavoriteGIFHooks" /* 10039 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ function transformFavoriteGifUrl(url, arg1) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      tmp14(9555);
+      tmp14(9619);
     }
   }
   if (re6.test(arg1)) {
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoriteG
   tmp4 = tmp5;
 }) : (function useFavoriteGIFsMobile() {
   let sortedFavoriteGIFs;
-  let obj = sortedFavoriteGIFs(9975);
+  let obj = sortedFavoriteGIFs(10039);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   const obj2 = {

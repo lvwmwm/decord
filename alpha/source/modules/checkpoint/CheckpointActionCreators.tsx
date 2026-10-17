@@ -1,13 +1,13 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12726
+// Function ID: 12727
 // Name: CheckpointActionCreators
-// Dependencies: [5, 2068, 1087, 584, 12662, 1297, 12663, 7238, 1267, 7589, 7399, 2]
+// Dependencies: [5, 2068, 1087, 584, 12727, 1297, 12728, 7290, 1267, 7635, 7445, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendSidekickMessage, toggleMute
 
-// Module 12661 (CheckpointActionCreators)
+// Module 12726 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7238 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import Constants from "Constants" /* 1087 */;
@@ -56,7 +56,7 @@ let obj = function _fetchCheckpointData() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

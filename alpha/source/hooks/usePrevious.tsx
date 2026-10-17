@@ -1,10 +1,10 @@
-// Module ID: 6141
-// Function ID: 6142
+// Module ID: 6178
+// Function ID: 6179
 // Name: usePrevious
 // Dependencies: [19, 2]
 // Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 6141 (usePrevious)
+// Module 6178 (usePrevious)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17801
+// Function ID: 17802
 // Name: FileOrLinkGridPlaceholder
-// Dependencies: [19, 21, 558, 576, 17717, 5449, 17742, 4909, 2]
+// Dependencies: [19, 21, 558, 576, 17777, 5486, 17802, 4945, 2]
 
-// Module 17741 (FileOrLinkGridPlaceholder)
+// Module 17801 (FileOrLinkGridPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4909 */;
-import useFontScale from "useFontScale" /* 5449 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17717 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
+import useFontScale from "useFontScale" /* 5486 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17777 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const SearchListCard = tmp(17742);
+const SearchListCard = tmp(17802);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileOrLinkGridPlaceholderItem(arg0) {
   let containerStyle;

@@ -1,14 +1,14 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14977
+// Function ID: 14978
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 5154, 587, 558, 576, 6889, 14909, 1128, 1202, 7038, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 6942, 14978, 1128, 1202, 7091, 2]
 
-// Module 14908 (GameOrganizationInviteList)
+// Module 14977 (GameOrganizationInviteList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 14909 */;
+import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 14978 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

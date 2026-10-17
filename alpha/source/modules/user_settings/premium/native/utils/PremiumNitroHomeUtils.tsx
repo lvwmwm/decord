@@ -1,10 +1,10 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14494
+// Function ID: 14495
 // Name: PremiumNitroHomeUtils
 // Dependencies: [1087, 1267, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 14426 (PremiumNitroHomeUtils)
+// Module 14494 (PremiumNitroHomeUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import size from "module_2" /* 2 */;

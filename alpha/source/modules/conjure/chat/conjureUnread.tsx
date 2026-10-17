@@ -1,19 +1,19 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10984
+// Function ID: 10985
 // Name: conjureUnread
-// Dependencies: [19, 1246, 6254, 10897, 6186, 584, 11, 558, 576, 10921, 504, 2]
+// Dependencies: [19, 1246, 6291, 6293, 6223, 584, 11, 558, 576, 10985, 504, 2]
 // Exports: ackConjureProject, isConjureProjectUnread
 
-// Module 10920 (conjureUnread)
+// Module 10984 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 6186 */;
-import conjureProjectMute from "conjureProjectMute" /* 10921 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import conjureProjectMute from "conjureProjectMute" /* 10985 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ReadStateStore from "ReadStateStore" /* 6254 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10897 */;
+import ReadStateStore from "ReadStateStore" /* 6291 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

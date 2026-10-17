@@ -1,10 +1,10 @@
-// Module ID: 11265
-// Function ID: 11266
+// Module ID: 11324
+// Function ID: 11325
 // Name: createWebViewHtmlFile
 // Dependencies: [5, 1164, 1257, 2]
 // Exports: createActivityFrameInjectedJavaScript, default, deleteWebViewHtmlFile
 
-// Module 11265 (createWebViewHtmlFile)
+// Module 11324 (createWebViewHtmlFile)
 import react_nativeDefault from "react-native" /* 1164 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -140,7 +140,7 @@ let obj = function _createWebViewHtmlFile() {
             closure_4 = undefined;
             closure_5 = 1;
             c6 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

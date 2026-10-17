@@ -1,60 +1,48 @@
 // Module ID: 15384
 // Function ID: 15385
-// Dependencies: [19, 15366, 15385, 21]
-// Exports: default
+// Dependencies: [15327, 15324, 15323, 15385, 15344, 15373, 15358, 15326, 15353]
 
 // Module 15384
-import react from "react" /* 19 */;
-import module_15366_mod from "module_15366" /* 15366 */;
-import module_15385_mod from "module_15385" /* 15385 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod15323 from "module_15323" /* 15323 */;
+import _mod15324 from "module_15324" /* 15324 */;
+import _mod15326 from "module_15326" /* 15326 */;
+import _mod15327 from "module_15327" /* 15327 */;
+import _mod15344 from "module_15344" /* 15344 */;
+import _mod15373 from "module_15373" /* 15373 */;
 
-let closure_0;
-
-let tmp4;
-let tmp6;
-if (react) {
-  const __esModule = react.__esModule;
-}
-let module_15366 = module_15366_mod;
-if (!module_15366) {
-  const obj = { default: module_15366 };
-  tmp4 = obj;
-} else {
-  tmp4 = module_15366;
-}
-module_15366 = tmp4;
-let module_15385 = module_15385_mod;
-if (!module_15385) {
-  let obj2 = { default: module_15385 };
-  tmp6 = obj2;
-} else {
-  tmp6 = module_15385;
-}
-module_15385 = tmp6;
-
-export default () => () => {
-  closure_0 = closure_0.default();
-  return {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
+let closure_4 = _mod15327([].concat);
+if (!assign) {
+  assign = function assign(arg0, arg1) {
+    let num;
+    const tmp = _mod15344(arg0);
+    const length = arguments.length;
+    const f = _mod15373.f;
+    for (let num = 1; length > num; num = num + 1) {
+      let arr;
+      let num2;
+      let tmp3 = require;
+      let tmp5 = _mod15326(arguments[num]);
+      if (f) {
+        let tmp8 = tmp3(15385)(tmp5);
+        arr = closure_4(tmp8, f(tmp5));
+      } else {
+        arr = tmp3(15385)(tmp5);
       }
-    },
-    features: {
-      storybookSwitcher(arg0) {
-        closure_0 = arg0;
-        return (arg0) => {
-          closure_0 = arg0;
-          return function StorybookSwitcherContainer(arg0) {
-            const jsx = React.jsx;
-            const jsx2 = React.jsx;
-            const obj2 = {};
-            const merged = Object.assign(arg0);
-            return <_default storybookUi={emitter} emitter={emitter}>{jsx2(emitter, obj2)}</_default>;
-          };
-        };
+      let length2 = arr.length;
+      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
+        let tmp9 = arr[num2];
+        let tmp10 = require;
+        let tmp12 = _mod15323;
+        if (tmp12) {
+          tmp12 = !tmp10(15353)(tmp2, tmp5, tmp9);
+        }
+        if (!tmp12) {
+          tmp[tmp9] = tmp5[tmp9];
+        }
       }
     }
+    return tmp;
   };
-};
+}
+
+export default assign;

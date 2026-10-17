@@ -1,14 +1,14 @@
-// Module ID: 13078
-// Function ID: 13079
+// Module ID: 13143
+// Function ID: 13144
 // Name: CommunicationDisabledManager
-// Dependencies: [2128, 1392, 4796, 584, 7032, 2]
+// Dependencies: [2128, 1392, 4832, 584, 7085, 2]
 
-// Module 13078 (CommunicationDisabledManager)
+// Module 13143 (CommunicationDisabledManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4796 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 2128 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7032 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let communicationDisabledUserMap;

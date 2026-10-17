@@ -1,19 +1,19 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9884
+// Function ID: 9885
 // Name: SlideoutButton
-// Dependencies: [19, 17, 1087, 21, 5154, 5026, 587, 558, 576, 1202, 6409, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 5063, 587, 558, 576, 1202, 6462, 2]
 
-// Module 9820 (SlideoutButton)
+// Module 9884 (SlideoutButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import Pressables from "Pressables" /* 6409 */;
+import Pressables from "Pressables" /* 6462 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
-import ColorUtils_mod from "ColorUtils" /* 5026 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import ColorUtils_mod from "ColorUtils" /* 5063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

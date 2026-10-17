@@ -1,20 +1,20 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10473
+// Function ID: 10474
 // Name: SKUActionCreators
-// Dependencies: [5, 9222, 6314, 1087, 584, 5863, 1297, 4851, 9296, 7529, 5854, 4850, 4843, 5943, 5961, 1388, 2]
+// Dependencies: [5, 9282, 6310, 1087, 584, 5900, 1297, 4887, 9356, 7575, 5891, 4886, 4879, 5980, 5998, 1388, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10410 (SKUActionCreators)
+// Module 10473 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BillingUtils from "BillingUtils" /* 4843 */;
-import StoreUtils from "StoreUtils" /* 5863 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5961 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7529 */;
-import TestModeUtils from "TestModeUtils" /* 9296 */;
+import BillingUtils from "BillingUtils" /* 4879 */;
+import StoreUtils from "StoreUtils" /* 5900 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5998 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7575 */;
+import TestModeUtils from "TestModeUtils" /* 9356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9222 */;
-import SKUStore from "SKUStore" /* 6314 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9282 */;
+import SKUStore from "SKUStore" /* 6310 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -276,7 +276,7 @@ obj = function _fetchTestSKUsForApplication() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             previous_total = 1;
-            return { value: "test", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {

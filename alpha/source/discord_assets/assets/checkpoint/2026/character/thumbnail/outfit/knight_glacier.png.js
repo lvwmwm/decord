@@ -1,8 +1,8 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5755
+// Function ID: 5756
 // Dependencies: [2]
 
-// Module 5718
+// Module 5755
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/knight_glacier.png.js");

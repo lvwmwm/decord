@@ -1,10 +1,10 @@
-// Module ID: 18869
-// Function ID: 18870
+// Module ID: 18931
+// Function ID: 18932
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: [5, 32, 19, 18843, 5855, 2]
+// Dependencies: [5, 32, 19, 18905, 5892, 2]
 // Exports: default
 
-// Module 18869 (useCreateCreatorMonetizationEnableRequest)
+// Module 18931 (useCreateCreatorMonetizationEnableRequest)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

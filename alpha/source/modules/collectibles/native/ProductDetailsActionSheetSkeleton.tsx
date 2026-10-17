@@ -1,18 +1,18 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14247
+// Function ID: 14248
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 5154, 587, 5447, 558, 576, 4909, 5155, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 5484, 558, 576, 4945, 5192, 2]
 
-// Module 14179 (ProductDetailsActionSheetSkeleton)
+// Module 14247 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4909 */;
-import timing from "timing" /* 5155 */;
-import ButtonConstants from "ButtonConstants" /* 5447 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
+import ButtonConstants from "ButtonConstants" /* 5484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5154 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePul
   const tmp = sharedValue;
   let obj = sharedValue(576);
   const cResult = obj.c(3);
-  const obj2 = sharedValue(4909);
+  const obj2 = sharedValue(4945);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
@@ -81,11 +81,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePul
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 4141895524740;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4909);
+  const tmpResult = tmp(4945);
   return tmpResult.useAnimatedStyle(fn2);
 }) : (function usePulseStyle() {
   let sharedValue;
-  let obj = sharedValue(4909);
+  let obj = sharedValue(4945);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -102,7 +102,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePul
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5056040834599;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4909);
+  const obj2 = sharedValue(4945);
   return obj2.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

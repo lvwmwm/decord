@@ -1,18 +1,18 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 17959
+// Function ID: 17960
 // Name: useVoiceChannelAppOptions
-// Dependencies: [32, 19, 10897, 1417, 7169, 2032, 7263, 558, 576, 10919, 504, 7081, 6299, 17900, 2]
+// Dependencies: [32, 19, 6293, 1417, 7222, 2032, 6297, 558, 576, 10983, 504, 7134, 6357, 17960, 2]
 // Exports: voiceChannelAppIdsToFetch, voiceChannelAppRows
 
-// Module 17899 (useVoiceChannelAppOptions)
+// Module 17959 (useVoiceChannelAppOptions)
 import react2 from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7081 */;
-import ConjureUtils from "ConjureUtils" /* 7169 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10919 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7134 */;
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 10897 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, cleanupPromise, flag, importDefault, map, name, set;
 
 let tmp2;
-const useGetOrFetchApplications = tmp2(7081);
-const f131788 = (application_id) => application_id.application_id;
+const useGetOrFetchApplications = tmp2(7134);
+const f132090 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, guildId) {
   map = new Map();
   const items = [...stateFromStoresArray1];
@@ -202,7 +202,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                 catchPromise = applications.catch(() => closure_1_4(true));
                 cleanupPromise = catchPromise.finally(() => {
                   let args;
-                  return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                  return _slicedToArray(() => { /* body not rendered: F158315 */ });
                 });
               }
               return;
@@ -239,7 +239,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                 catchPromise = applications.catch(() => closure_1_4(true));
                 cleanupPromise = catchPromise.finally(() => {
                   let args;
-                  return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                  return _slicedToArray(() => { /* body not rendered: F158315 */ });
                 });
               }
               return;
@@ -276,7 +276,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                 catchPromise = applications.catch(() => closure_1_4(true));
                 cleanupPromise = catchPromise.finally(() => {
                   let args;
-                  return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                  return _slicedToArray(() => { /* body not rendered: F158315 */ });
                 });
               }
               return;
@@ -308,7 +308,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -342,7 +342,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -374,7 +374,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -411,7 +411,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -447,7 +447,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -478,7 +478,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                     catchPromise = applications.catch(() => closure_1_4(true));
                     cleanupPromise = catchPromise.finally(() => {
                       let args;
-                      return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                      return _slicedToArray(() => { /* body not rendered: F158315 */ });
                     });
                   }
                   return;
@@ -509,7 +509,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                     catchPromise = applications.catch(() => closure_1_4(true));
                     cleanupPromise = catchPromise.finally(() => {
                       let args;
-                      return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                      return _slicedToArray(() => { /* body not rendered: F158315 */ });
                     });
                   }
                   return;
@@ -543,7 +543,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
                   catchPromise = applications.catch(() => closure_1_4(true));
                   cleanupPromise = catchPromise.finally(() => {
                     let args;
-                    return _slicedToArray(() => { /* body not rendered: F157986 */ });
+                    return _slicedToArray(() => { /* body not rendered: F158315 */ });
                   });
                 }
                 return;
@@ -551,7 +551,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
             }
           }
           let obj3 = { hasRows: arr8.length > 0, loadFailed: "error" === stateFromStores || tmp31, fetchPhase: str };
-          const tmpResult6 = tmp(17900);
+          const tmpResult6 = tmp(17960);
           const result = tmpResult6.voiceChannelAppListState(obj3);
           cResult[31] = str;
           cResult[32] = "error" === stateFromStores || tmp31;
@@ -574,7 +574,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
         const obj = closure_2_0(stateFromStoresArray1[5]);
         return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
       });
-      const mapped1 = found1.map(f131788);
+      const mapped1 = found1.map(f132090);
       cResult[18] = arr5;
       cResult[19] = tmp21;
       cResult[20] = mapped1;
@@ -633,7 +633,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
     });
-    return found.map(f131788);
+    return found.map(f132090);
   }, items6);
   const items7 = [memo2];
   const effect1 = react.useEffect(() => {
@@ -893,7 +893,7 @@ function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
   });
-  return found.map(f131788);
+  return found.map(f132090);
 }
 let result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppOptions.tsx");
 

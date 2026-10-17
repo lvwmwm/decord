@@ -1,13 +1,13 @@
-// Module ID: 13114
-// Function ID: 13115
+// Module ID: 13179
+// Function ID: 13180
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [5070, 558, 576, 5072, 2]
+// Dependencies: [5107, 558, 576, 5109, 2]
 // Exports: isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 13114 (useGuildPowerupRollbackEnabled)
+// Module 13179 (useGuildPowerupRollbackEnabled)
 import react from "react" /* 576 */;
-import Powerups from "Powerups" /* 5070 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 5072 */;
+import Powerups from "Powerups" /* 5107 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 5109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12692
+// Function ID: 12693
 // Name: ChannelTabsStore
-// Dependencies: [32, 2119, 4998, 2075, 12628, 1385, 504, 584, 2]
+// Dependencies: [32, 2119, 5034, 2075, 12693, 1385, 504, 584, 2]
 
-// Module 12627 (ChannelTabsStore)
+// Module 12692 (ChannelTabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
-import TabsExperimentDefault from "TabsExperiment" /* 12628 */;
+import TabsExperimentDefault from "TabsExperiment" /* 12693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4998 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import size from "module_2" /* 2 */;
 
-const f113796 = (id) => id.id === activeTabId;
+const f114113 = (id) => id.id === activeTabId;
 function handleChannelDelete(channel) {
   let found;
   channel = channel.channel;
@@ -345,7 +345,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_7;
-    const found = tabs.find(f113796);
+    const found = tabs.find(f114113);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -371,7 +371,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_7;
-    const found = tabs.find(f113796);
+    const found = tabs.find(f114113);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;

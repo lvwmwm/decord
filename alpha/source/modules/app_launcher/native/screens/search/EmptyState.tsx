@@ -1,15 +1,15 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 11921
+// Function ID: 11922
 // Name: search/EmptyState
-// Dependencies: [19, 17, 21, 5154, 558, 576, 11785, 10868, 1128, 4887, 5150, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 11847, 10933, 1128, 4923, 5187, 2]
 
-// Module 11858 (search/EmptyState)
+// Module 11921 (search/EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4887 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5154 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   }
   showsGenericMessage = tmp4;
   const tmp5 = closure_5();
-  const tmpResult = showsGenericMessage(11785);
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10868).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const tmpResult = showsGenericMessage(11847);
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10933).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   if (cResult[0] !== tmp4) {
     const fn = function o() {
       let stringResult;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     cResult[10] = tmp17;
     tmp14 = tmp17;
   }
-  const tmp13 = jsx(showsGenericMessage(5150).Text, { style: tmp5.text, variant: "text-sm/medium", color: "text-default", children: tmp10 });
+  const tmp13 = jsx(showsGenericMessage(5187).Text, { style: tmp5.text, variant: "text-sm/medium", color: "text-default", children: tmp10 });
   cResult[5] = tmp5.text;
   cResult[6] = tmp10;
   cResult[7] = tmp13;
@@ -114,8 +114,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     flag = false;
   }
   const tmp = closure_5();
-  const obj = flag(11785);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(10868).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const obj = flag(11847);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(10933).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   const items = [flag];
   const effect = react.useEffect(() => {
     let stringResult;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult, "polite");
   }, items);
-  const Text = flag(5150).Text;
+  const Text = flag(5187).Text;
   let intl = flag(1128).intl;
   let string = intl.string;
   let t = flag(1128).t;
