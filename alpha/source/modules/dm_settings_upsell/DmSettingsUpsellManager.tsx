@@ -1,13 +1,13 @@
-// Module ID: 18471
-// Function ID: 18472
+// Module ID: 18475
+// Function ID: 18476
 // Name: DmSettingsUpsellManager
-// Dependencies: [1087, 7085, 18472, 1297, 2]
+// Dependencies: [1087, 7085, 18476, 1297, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 18471 (DmSettingsUpsellManager)
+// Module 18475 (DmSettingsUpsellManager)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 18472 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 18476 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 

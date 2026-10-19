@@ -1,9 +1,9 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16108
+// Function ID: 16109
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7655, 2065, 21, 587, 5191, 558, 576, 2052, 7376, 16105, 584, 16111, 9473, 504, 16118, 16123, 2]
+// Dependencies: [32, 19, 17, 7655, 2065, 21, 587, 5191, 558, 576, 2052, 7376, 16109, 584, 16115, 9473, 504, 16122, 16127, 2]
 
-// Module 16104 (QuestHomeBounties)
+// Module 16108 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,10 +12,10 @@ import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9473 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16105 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16111 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16118 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16123 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16109 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16115 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16122 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import BountyStore from "BountyStore" /* 7655 */;
@@ -351,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (!stateFromStores) {
       let tmp7 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp7) {
-        tmp7 = orbShopProducts.length >= tmp(16111).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp7 = orbShopProducts.length >= tmp(16115).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
         orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp10Result = null;

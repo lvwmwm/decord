@@ -1,16 +1,16 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12136
+// Function ID: 12137
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5085, 10962, 11596, 1128, 3883, 11595, 558, 576, 584, 2]
+// Dependencies: [109, 5085, 10978, 11612, 1128, 3883, 11611, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 12117 (conjureAttachmentDrafts)
+// Module 12136 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ZustandStore from "ZustandStore" /* 5085 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11595 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11596 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11611 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, closure_8;
 
-const f112031 = () => {
+const f112161 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f112031);
+    result.catch(f112161);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -294,7 +294,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f112031);
+      result.catch(f112161);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

@@ -1,11 +1,11 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15954
+// Function ID: 15955
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7525, 15860, 504, 7217, 15862, 2]
+// Dependencies: [5, 32, 19, 7525, 15864, 504, 7217, 15866, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 15950 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15862 */;
+// Module 15954 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

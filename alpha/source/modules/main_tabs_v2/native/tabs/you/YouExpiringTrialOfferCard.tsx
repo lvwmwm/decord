@@ -1,9 +1,9 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17947
+// Function ID: 17948
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 14796, 1087, 7423, 1394, 21, 1104, 5191, 587, 17944, 1267, 1128, 558, 576, 4797, 573, 7436, 7433, 17942, 2131, 5187, 4864, 1202, 6462, 9327, 5491, 7180, 2]
+// Dependencies: [19, 17, 14800, 1087, 7423, 1394, 21, 1104, 5191, 587, 17948, 1267, 1128, 558, 576, 4797, 573, 7436, 7433, 17946, 2131, 5187, 4864, 1202, 6462, 9327, 5491, 7180, 2]
 
-// Module 17943 (YouExpiringTrialOfferCard)
+// Module 17947 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -14,9 +14,9 @@ import _modDef4797 from "module_4797" /* 4797 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import ColorConstants from "ColorConstants" /* 7423 */;
 import useCountdownDefault from "useCountdown" /* 7433 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17944 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17948 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 14796 */;
+import NoticeStore from "NoticeStore" /* 14800 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -133,7 +133,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
     tmp13 = cResult[4];
   }
   const tmp16 = untilAtLeast(7433)(tmp13, closure_15);
-  const tmpResult5 = tmp(17942);
+  const tmpResult5 = tmp(17946);
   shouldShowExpiringTrialOfferCard = tmpResult5.useShouldShowExpiringTrialOfferCard();
   if (cResult[5] === stateFromStores) {
     if (cResult[6] === shouldShowExpiringTrialOfferCard) {
@@ -644,7 +644,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
     }
   }
   const tmp7Result = tmp7(num, closure_15);
-  const tmp4Result = tmp4(17942);
+  const tmp4Result = tmp4(17946);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {

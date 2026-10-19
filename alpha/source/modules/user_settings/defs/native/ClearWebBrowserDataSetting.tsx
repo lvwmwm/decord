@@ -1,16 +1,16 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16540
+// Function ID: 16541
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8260, 5405, 1128, 5152, 4904, 11065, 1384, 1107, 2]
+// Dependencies: [5, 8260, 5405, 1128, 5152, 4904, 11084, 1384, 1107, 2]
 
-// Module 16536 (ClearWebBrowserDataSetting)
+// Module 16540 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import BrowserManager from "BrowserManager" /* 5152 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

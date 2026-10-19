@@ -1,13 +1,13 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 17028
+// Function ID: 17029
 // Name: MobileNotifSettingsRouteBuilders
-// Dependencies: [1128, 2917, 16545, 2]
+// Dependencies: [1128, 2917, 16549, 2]
 // Exports: buildCategoryOtherSettingsSection, buildCategoryServerSettingsSection, buildCategorySocialSettingsSection, buildOverviewCategoriesSection, buildRealtimeSettingsSection
 
-// Module 17024 (MobileNotifSettingsRouteBuilders)
+// Module 17028 (MobileNotifSettingsRouteBuilders)
 import intl2 from "intl" /* 1128 */;
 import _modDef2917 from "module_2917" /* 2917 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16545 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16549 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRouteBuilders.tsx");

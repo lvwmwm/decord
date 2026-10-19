@@ -1,20 +1,20 @@
 // Module ID: 15355
 // Function ID: 15356
-// Dependencies: [15323, 15324, 15356]
+// Dependencies: [15350, 15356]
 
 // Module 15355
-import _mod15324 from "module_15324" /* 15324 */;
-import _mod15356 from "module_15356" /* 15356 */;
-import getOwnPropertyDescriptor from "module_15323" /* 15323 */;
+import _mod15350 from "module_15350" /* 15350 */;
 
-const f69912 = () => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty(_mod15356("div"), "a", obj).a;
+let tmp;
+const _mod15356 = tmp(15356);
+
+export default function(arg0) {
+  if (_mod15350(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp4 = new TypeError(_mod15356(arg0) + " is not a function");
+    throw tmp4;
+  }
 };
-!getOwnPropertyDescriptor && !_mod15324(f69912);
-
-export default !getOwnPropertyDescriptor && !_mod15324(f69912);

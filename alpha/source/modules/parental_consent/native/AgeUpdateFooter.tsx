@@ -1,9 +1,9 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19102
+// Function ID: 19103
 // Name: AgeUpdateFooter
 // Dependencies: [19, 21, 5191, 558, 576, 1128, 2885, 7764, 6174, 5187, 2]
 
-// Module 19098 (AgeUpdateFooter)
+// Module 19102 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;

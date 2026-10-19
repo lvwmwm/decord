@@ -1,9 +1,9 @@
-// Module ID: 14572
-// Function ID: 14573
+// Module ID: 14576
+// Function ID: 14577
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1207, 2090, 7390, 4870, 1087, 21, 5191, 587, 6162, 558, 576, 7433, 1128, 5187, 11, 6462, 6215, 6436, 5128, 14573, 504, 1417, 14574, 14578, 5980, 8296, 12, 2]
+// Dependencies: [19, 17, 1207, 2090, 7390, 4870, 1087, 21, 5191, 587, 6162, 558, 576, 7433, 1128, 5187, 11, 6462, 6215, 6436, 5128, 14577, 504, 1417, 14578, 14582, 5980, 8296, 12, 2]
 
-// Module 14572 (GuildBoostSlotsInventory)
+// Module 14576 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -19,7 +19,7 @@ import BoostingActionCreators from "BoostingActionCreators" /* 6215 */;
 import GuildIcon from "GuildIcon" /* 6436 */;
 import useCountdownDefault from "useCountdown" /* 7433 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8296 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14573 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14577 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -44,7 +44,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const SubscriptionPlaceholderPattern = tmp2(14574);
+const SubscriptionPlaceholderPattern = tmp2(14578);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -881,7 +881,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
   } else {
     tmp13 = cResult[6];
   }
-  const tmpResult4 = guildId(14574);
+  const tmpResult4 = guildId(14578);
   let subscriptionPlaceholderPatternSource = tmpResult4.useSubscriptionPlaceholderPatternSource();
   if (null != tmp13) {
     subscriptionPlaceholderPatternSource = tmp13;
@@ -1031,7 +1031,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
           tmp28 = tmp30;
         }
         const obj8 = { guild: stateFromStores, theme: stateFromStores1 };
-        const tmp27 = closure_10(guildBoostSlots(14578), obj8);
+        const tmp27 = closure_10(guildBoostSlots(14582), obj8);
         cResult[16] = stateFromStores;
         cResult[17] = stateFromStores1;
         cResult[18] = tmp27;
@@ -1101,7 +1101,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Booste
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_10(tmp12(14578), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_10(tmp12(14582), { guild: stateFromStores, theme: stateFromStores1 });
   items4 = [closure_11(View, obj6), ];
   const obj9 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   items4[1] = closure_10(closure_19, obj9);

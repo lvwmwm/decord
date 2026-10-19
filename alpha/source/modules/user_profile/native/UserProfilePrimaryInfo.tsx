@@ -1,9 +1,9 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10858
+// Function ID: 10859
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1392, 8581, 7181, 1087, 8155, 8592, 21, 5191, 587, 1384, 558, 576, 10565, 10566, 9039, 10843, 6462, 5187, 10845, 7682, 5073, 10877, 8582, 7370, 4904, 8642, 9476, 9477, 9480, 6231, 1267, 7681, 1128, 10879, 5128, 10880, 10882, 10883, 10885, 10889, 10914, 1499, 10915, 8563, 9130, 5057, 2]
+// Dependencies: [19, 17, 1392, 8581, 7181, 1087, 8155, 8592, 21, 5191, 587, 1384, 558, 576, 10565, 10566, 9039, 10859, 6462, 5187, 10861, 7682, 5073, 10893, 8582, 7370, 4904, 8642, 9476, 9477, 9480, 6231, 1267, 7681, 1128, 10895, 5128, 10896, 10898, 10899, 10901, 10905, 10930, 1499, 10931, 8563, 9130, 5057, 2]
 
-// Module 10842 (UserProfilePrimaryInfo)
+// Module 10858 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -27,8 +27,8 @@ import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
 import types from "types" /* 10566 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10885 */;
-import BadgeUtils from "BadgeUtils" /* 10889 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10901 */;
+import BadgeUtils from "BadgeUtils" /* 10905 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -333,7 +333,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
     const tmp13 = user;
     const tmp15 = closure_14;
     if (showChevron) {
-      showChevron = tmp15(tmp13(10843).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(10859).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);

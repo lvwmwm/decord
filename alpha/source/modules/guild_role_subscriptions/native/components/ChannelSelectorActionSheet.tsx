@@ -1,10 +1,10 @@
-// Module ID: 18973
-// Function ID: 18974
+// Module ID: 18977
+// Function ID: 18978
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 2068, 7078, 4845, 1087, 6223, 21, 5191, 587, 6162, 558, 576, 5521, 5155, 17254, 5128, 18912, 504, 7175, 5187, 1128, 7016, 6462, 6190, 8854, 2002, 8875, 8880, 1202, 14680, 7091, 2]
+// Dependencies: [32, 19, 17, 2068, 7078, 4845, 1087, 6223, 21, 5191, 587, 6162, 558, 576, 5521, 5155, 17258, 5128, 18916, 504, 7175, 5187, 1128, 7016, 6462, 6190, 8854, 2002, 8875, 8880, 1202, 14684, 7091, 2]
 // Exports: default
 
-// Module 18973 (ChannelSelectorActionSheet)
+// Module 18977 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -13,7 +13,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8875 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8880 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14680 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             }
             let tmp14 = selected;
             if (tmp14) {
-              const obj3 = { style: tmp3.selectedIcon, source: onChannelSelected(18912) };
+              const obj3 = { style: tmp3.selectedIcon, source: onChannelSelected(18916) };
               const tmp4Result = onChannelSelected(5128);
               tmp14 = closure_11(tmp4Result, obj3);
             }
@@ -107,7 +107,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj4 = { style: tmp3.channelRow, onPress: tmp6, accessible: true, accessibilityLabel: tmp5, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-    const tmp12 = closure_11(onChannelSelected(17254), obj4);
+    const tmp12 = closure_11(onChannelSelected(17258), obj4);
     cResult[3] = channel;
     cResult[4] = tmp6;
     cResult[5] = selected;
@@ -138,12 +138,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     onChannelSelected(channel);
   }, items);
   let obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-  const tmp9 = onChannelSelected(17254);
+  const tmp9 = onChannelSelected(17258);
   const children = [closure_11(tmp9, obj), ];
   const tmp6 = closure_13;
   const tmp7 = closure_12;
   if (selected) {
-    const obj2 = { style: tmp.selectedIcon, source: onChannelSelected(18912) };
+    const obj2 = { style: tmp.selectedIcon, source: onChannelSelected(18916) };
     const tmp2Result = onChannelSelected(5128);
     selected = tmp8(tmp2Result, obj2);
   }

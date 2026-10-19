@@ -1,9 +1,9 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12629
+// Function ID: 12630
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [19, 7803, 7779, 1087, 558, 576, 504, 12604, 12606, 1267, 2]
+// Dependencies: [19, 7803, 7779, 1087, 558, 576, 504, 12621, 12623, 1267, 2]
 
-// Module 12612 (useEmitAppealIngestionEvent)
+// Module 12629 (useEmitAppealIngestionEvent)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import react from "react" /* 19 */;

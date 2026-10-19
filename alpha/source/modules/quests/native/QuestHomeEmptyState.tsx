@@ -1,9 +1,9 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16106
+// Function ID: 16107
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 1128, 4913, 5075, 1384, 5187, 5128, 16103, 5491, 7092, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 1128, 4913, 5075, 1384, 5187, 5128, 16107, 5491, 7092, 2]
 
-// Module 16102 (QuestHomeEmptyState)
+// Module 16106 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,7 +15,7 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16103 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16107 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

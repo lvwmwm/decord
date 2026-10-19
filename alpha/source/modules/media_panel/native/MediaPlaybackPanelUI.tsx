@@ -1,9 +1,9 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 18364
+// Function ID: 18365
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 11343, 15570, 12915, 12914, 21, 5191, 587, 558, 576, 1633, 1499, 18359, 4945, 9878, 10681, 18149, 5192, 5195, 5478, 18151, 18361, 6612, 7124, 2]
+// Dependencies: [32, 19, 11361, 15574, 10681, 10680, 21, 5191, 587, 558, 576, 1633, 1499, 18363, 4945, 9878, 10684, 18153, 5192, 5195, 5478, 18155, 18365, 6612, 7124, 2]
 
-// Module 18360 (MediaPlaybackPanelUI)
+// Module 18364 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import react3 from "react" /* 576 */;
@@ -17,15 +17,15 @@ import spring from "spring" /* 5478 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import LayerScope2 from "LayerScope" /* 7124 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10681 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12914 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12915 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 18149 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18359 */;
-import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 18361 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 18153 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18363 */;
+import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 18365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11343 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15570 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11361 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15574 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,8 +42,8 @@ let obj3;
 let rect;
 let tmp;
 let tmp4;
-const useMorphablePanelGesture = tmp(18151);
-const useMorphablePanelGestureDefault = tmp4(18151);
+const useMorphablePanelGesture = tmp(18155);
+const useMorphablePanelGestureDefault = tmp4(18155);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;
@@ -160,7 +160,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           size = { pipX: x, pipY: y, width: 120, height: 120, windowDimensions: tmp6, safeArea, bottomAvoidanceRegion: null, topAvoidanceRegion: null, positionOffset: tmp11, disableHorizontalSafeAreas };
           ({ bottom: obj.bottomAvoidanceRegion, top: obj.topAvoidanceRegion } = pipAvoidanceSpecs);
           tmp11 = undefined;
-          const getClampedPIPPosition = tmp(18149).getClampedPIPPosition;
+          const getClampedPIPPosition = tmp(18153).getClampedPIPPosition;
           MorphablePanelUtils;
           if (tmp7) {
             tmp11 = wrapperOffset;
@@ -474,7 +474,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           size = { pipX: x, pipY: y, width: 120, height: 120, windowDimensions: tmp6, safeArea, bottomAvoidanceRegion: null, topAvoidanceRegion: null, positionOffset: tmp11, disableHorizontalSafeAreas };
           ({ bottom: obj.bottomAvoidanceRegion, top: obj.topAvoidanceRegion } = pipAvoidanceSpecs);
           tmp11 = undefined;
-          const getClampedPIPPosition = tmp(18149).getClampedPIPPosition;
+          const getClampedPIPPosition = tmp(18153).getClampedPIPPosition;
           MorphablePanelUtils;
           if (tmp7) {
             tmp11 = wrapperOffset;

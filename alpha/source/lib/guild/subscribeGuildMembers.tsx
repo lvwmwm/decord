@@ -138,7 +138,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnsureHyd
   }
   class M {
     constructor() {
-      item = closure_1.forEach(() => { /* body not rendered: F142034 */ });
+      item = closure_1.forEach(() => { /* body not rendered: F142131 */ });
       return;
     }
   }

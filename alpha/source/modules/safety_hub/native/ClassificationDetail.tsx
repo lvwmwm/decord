@@ -1,9 +1,9 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12620
+// Function ID: 12621
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2132, 7803, 7779, 1087, 21, 5191, 587, 558, 576, 5187, 7780, 1128, 504, 3207, 4901, 10717, 8946, 6457, 5479, 12604, 12606, 7802, 6174, 1267, 12607, 5985, 5990, 12609, 12614, 7778, 7092, 2]
+// Dependencies: [19, 17, 2132, 7803, 7779, 1087, 21, 5191, 587, 558, 576, 5187, 7780, 1128, 504, 3207, 4901, 10733, 8946, 6457, 5479, 12621, 12623, 7802, 6174, 1267, 12624, 5985, 5990, 12626, 12631, 7778, 7092, 2]
 
-// Module 12603 (ClassificationDetail)
+// Module 12620 (ClassificationDetail)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -18,8 +18,8 @@ import MetricEvents from "MetricEvents" /* 5990 */;
 import TableRow2 from "TableRow" /* 6457 */;
 import SafetyHubModels from "SafetyHubModels" /* 7780 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12607 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12609 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12624 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12626 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
@@ -95,7 +95,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const classificationPolicyCard = tmp16.classificationPolicyCard;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(10717).ShieldIcon;
+      const ShieldIcon2 = tmp12(10733).ShieldIcon;
       const tmp22 = closure_13(ShieldIcon2, obj2);
       cResult[2] = tmp22;
       tmp19 = tmp22;
@@ -180,7 +180,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(10717).ShieldIcon;
+    ShieldIcon = policyExplainerLink(10733).ShieldIcon;
     items1 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
     obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1128).t.zxUdpj, obj15) };

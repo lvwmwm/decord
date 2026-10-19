@@ -1,17 +1,17 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16522
+// Function ID: 16523
 // Name: ImageDescriptionsSetting
-// Dependencies: [1209, 8260, 558, 2044, 16519, 11065, 1128, 2]
+// Dependencies: [1209, 8260, 558, 2044, 16523, 11084, 1128, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 16518 (ImageDescriptionsSetting)
+// Module 16522 (ImageDescriptionsSetting)
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import UserSettingsText from "UserSettingsText" /* 16519 */;
+import UserSettingsText from "UserSettingsText" /* 16523 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {

@@ -1,10 +1,10 @@
-// Module ID: 17874
-// Function ID: 17875
+// Module ID: 17878
+// Function ID: 17879
 // Name: AutocompleteScreenUtils
-// Dependencies: [2128, 4855, 1392, 12994, 9614, 1087, 1128, 12683, 5137, 13837, 10325, 10327, 11168, 8487, 13209, 13214, 11652, 11627, 17875, 12987, 5057, 2]
+// Dependencies: [2128, 4855, 1392, 13002, 9614, 1087, 1128, 12700, 5137, 13841, 10325, 10327, 11187, 8487, 13217, 13222, 11671, 11643, 17879, 12995, 5057, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 17874 (AutocompleteScreenUtils)
+// Module 17878 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
@@ -13,19 +13,19 @@ import ImageIcon from "ImageIcon" /* 8487 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
 import PollsIcon from "PollsIcon" /* 10325 */;
 import AttachmentIcon from "AttachmentIcon" /* 10327 */;
-import VideoIcon from "VideoIcon" /* 11168 */;
-import RobotIcon from "RobotIcon" /* 11627 */;
-import UserIcon from "UserIcon" /* 11652 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12683 */;
-import SearchUtils from "SearchUtils" /* 12987 */;
-import SoundboardIcon from "SoundboardIcon" /* 13209 */;
-import StickerIcon from "StickerIcon" /* 13214 */;
-import EmbedIcon from "EmbedIcon" /* 13837 */;
-import WebhookIcon from "WebhookIcon" /* 17875 */;
+import VideoIcon from "VideoIcon" /* 11187 */;
+import RobotIcon from "RobotIcon" /* 11643 */;
+import UserIcon from "UserIcon" /* 11671 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12700 */;
+import SearchUtils from "SearchUtils" /* 12995 */;
+import SoundboardIcon from "SoundboardIcon" /* 13217 */;
+import StickerIcon from "StickerIcon" /* 13222 */;
+import EmbedIcon from "EmbedIcon" /* 13841 */;
+import WebhookIcon from "WebhookIcon" /* 17879 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import SearchQueryStore from "SearchQueryStore" /* 12994 */;
+import SearchQueryStore from "SearchQueryStore" /* 13002 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,9 +1,9 @@
-// Module ID: 15712
-// Function ID: 15713
+// Module ID: 15716
+// Function ID: 15717
 // Name: GuildProfileEmptyStateSvg
 // Dependencies: [19, 21, 558, 576, 7843, 2]
 
-// Module 15712 (GuildProfileEmptyStateSvg)
+// Module 15716 (GuildProfileEmptyStateSvg)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
 import react from "react" /* 19 */;

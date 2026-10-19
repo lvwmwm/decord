@@ -1,9 +1,9 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17440
+// Function ID: 17441
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5181, 6362, 2090, 5034, 6219, 17428, 17433, 17425, 21, 5191, 587, 558, 576, 4913, 504, 6436, 5478, 5063, 1105, 7039, 4945, 4922, 5128, 8434, 17437, 17440, 12315, 17447, 5156, 6377, 6439, 17430, 17448, 2]
+// Dependencies: [19, 5181, 6362, 2090, 5034, 6219, 17432, 17437, 17429, 21, 5191, 587, 558, 576, 4913, 504, 6436, 5478, 5063, 1105, 7039, 4945, 4922, 5128, 8434, 17441, 17444, 12332, 17451, 5156, 6377, 6439, 17434, 17452, 2]
 
-// Module 17436 (GuildsBarGuildFolder)
+// Module 17440 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,16 +20,16 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
 import NativeViewDefault from "NativeView" /* 6439 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7039 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8434 */;
-import ListUtils from "ListUtils" /* 12315 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17430 */;
+import ListUtils from "ListUtils" /* 12332 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17434 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import GuildReadStateStore_mod from "GuildReadStateStore" /* 6362 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17428 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17433 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17425 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17432 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17437 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17429 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

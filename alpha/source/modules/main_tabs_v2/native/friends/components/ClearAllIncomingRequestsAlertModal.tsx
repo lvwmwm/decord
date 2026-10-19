@@ -1,9 +1,9 @@
-// Module ID: 17920
-// Function ID: 17921
+// Module ID: 17924
+// Function ID: 17925
 // Name: ClearAllIncomingRequestsAlertModal
 // Dependencies: [5, 19, 21, 7293, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 17920 (ClearAllIncomingRequestsAlertModal)
+// Module 17924 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5405 */;

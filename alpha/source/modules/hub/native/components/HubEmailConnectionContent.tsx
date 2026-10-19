@@ -1,10 +1,10 @@
-// Module ID: 13436
-// Function ID: 13437
+// Module ID: 13441
+// Function ID: 13442
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 2068, 13423, 1087, 21, 5191, 587, 1505, 6942, 13437, 5891, 1128, 13432, 13438, 5187, 5155, 13442, 2002, 6562, 1202, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 13428, 1087, 21, 5191, 587, 1505, 6942, 13442, 5891, 1128, 13437, 13443, 5187, 5155, 13447, 2002, 6562, 1202, 5479, 2]
 // Exports: default
 
-// Module 13436 (HubEmailConnectionContent)
+// Module 13441 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import HubConstants from "HubConstants" /* 13423 */;
+import HubConstants from "HubConstants" /* 13428 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
@@ -269,10 +269,10 @@ export default function HubEmailConnectionContent(arg0) {
   let obj4 = { ref, contentContainerStyle: items, children: items2 };
   items = [tmp.scrollViewContainer, ];
   let obj5 = { paddingBottom: insets.bottom + tmp10(587).space.PX_16 };
-  const HubEmailConnectionScreen = tmp2(13432).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = tmp2(13437).HubEmailConnectionScreen;
   items[1] = obj5;
   let obj6 = { style: tmp.container, children: items1 };
-  let obj7 = { style: tmp.header, children: closure_12(tmp2(13438).InkQuillSpotIllustration, { scale: 0.75 }) };
+  let obj7 = { style: tmp.header, children: closure_12(tmp2(13443).InkQuillSpotIllustration, { scale: 0.75 }) };
   items1 = [closure_12(ref, obj7), , , ];
   let obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items1[1] = closure_12(Text_Text.Text, obj8);

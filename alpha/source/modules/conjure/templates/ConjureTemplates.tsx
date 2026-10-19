@@ -1,13 +1,13 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11617
+// Function ID: 11618
 // Name: ConjureTemplates
-// Dependencies: [10962, 1128, 3883, 2]
+// Dependencies: [10978, 1128, 3883, 2]
 // Exports: conjureTemplates, startConjureTemplateProject, templateImportMessage
 
-// Module 11601 (ConjureTemplates)
+// Module 11617 (ConjureTemplates)
 import intl7 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
 import size from "module_2" /* 2 */;
 
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;

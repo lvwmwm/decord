@@ -1,14 +1,14 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16237
+// Function ID: 16238
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6228, 16133, 21, 5191, 558, 576, 16134, 16234, 4945, 5128, 7039, 2]
+// Dependencies: [19, 17, 6228, 16137, 21, 5191, 558, 576, 16138, 16238, 4945, 5128, 7039, 2]
 
-// Module 16233 (QuestDockBlurredHeaderPlaceholder)
+// Module 16237 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
-import _slicedToArray from "_slicedToArray" /* 16234 */;
+import _slicedToArray from "_slicedToArray" /* 16238 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16133 */;
+import QuestDockConstants from "QuestDockConstants" /* 16137 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = questDockWrapperSpecs(576);
   const cResult = obj.c(22);
   ({ layoutAnimation, layoutAnimatedStyle, opacityAnimatedStyle, placeholder } = arg0);
-  const context = react.useContext(questDockWrapperSpecs(16134).QuestDockGestureContext);
+  const context = react.useContext(questDockWrapperSpecs(16138).QuestDockGestureContext);
   questDockWrapperSpecs = context.questDockWrapperSpecs;
   const activeQuestDockMode = context.activeQuestDockMode;
   if (cResult[0] !== placeholder) {
@@ -66,7 +66,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Uint8Array = Uint8Array;
     const _atob = atob;
-    const tmpResult = questDockWrapperSpecs(16234);
+    const tmpResult = questDockWrapperSpecs(16238);
     const thumbHashToDataURLResult = tmpResult.thumbHashToDataURL(Uint8Array.from(atob(placeholder), tmp7));
     cResult[0] = placeholder;
     cResult[1] = thumbHashToDataURLResult;

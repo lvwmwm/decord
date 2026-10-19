@@ -1,14 +1,14 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16227
+// Function ID: 16228
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 6228, 16133, 21, 5191, 558, 576, 16134, 4945, 5478, 7039, 2]
+// Dependencies: [19, 17, 6228, 16137, 21, 5191, 558, 576, 16138, 4945, 5478, 7039, 2]
 
-// Module 16223 (QuestDockContentCollapsed)
+// Module 16227 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5478 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
-import QuestDockConstants from "QuestDockConstants" /* 16133 */;
+import QuestDockConstants from "QuestDockConstants" /* 16137 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ children, hideOnExpand } = arg0);
   _require = tmp4;
   const tmp5 = closure_7();
-  const activeQuestDockMode = react.useContext(tmp(16134).QuestDockGestureContext).activeQuestDockMode;
+  const activeQuestDockMode = react.useContext(tmp(16138).QuestDockGestureContext).activeQuestDockMode;
   const tmpResult = tmp(4945);
   class C {
     constructor() {
@@ -115,7 +115,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   hideOnExpand = tmp;
   const tmp2 = closure_7();
-  const activeQuestDockMode = react.useContext(hideOnExpand(16134).QuestDockGestureContext).activeQuestDockMode;
+  const activeQuestDockMode = react.useContext(hideOnExpand(16138).QuestDockGestureContext).activeQuestDockMode;
   let obj = hideOnExpand(4945);
   class D {
     constructor() {

@@ -1,8 +1,8 @@
-// Module ID: 12763
-// Function ID: 12764
+// Module ID: 12780
+// Function ID: 12781
 // Dependencies: [2]
 
-// Module 12763
+// Module 12780
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/game-time.png.js");

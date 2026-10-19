@@ -1,10 +1,10 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14453
+// Function ID: 14454
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 21, 8633, 14450, 14451, 14452, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8633, 14454, 14455, 14456, 558, 576, 5065, 5128, 2]
 // Exports: getWhatYouLoseProfileTier1Source
 
-// Module 14449 (WhatYouLoseProfileTier1)
+// Module 14453 (WhatYouLoseProfileTier1)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 5065 */;

@@ -1,10 +1,10 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12640
+// Function ID: 12641
 // Name: NavigationTTIDebugFreeze
 // Dependencies: [5079, 2]
 // Exports: armNavigationTTIDebugFreeze, disarmNavigationTTIDebugFreeze, emitNavigationTTIDebugCheckpoint, getNavigationTTIDebugFreezeTarget, subscribeNavigationTTIDebugFreezeTarget
 
-// Module 12623 (NavigationTTIDebugFreeze)
+// Module 12640 (NavigationTTIDebugFreeze)
 import react_native from "react-native" /* 5079 */;
 import size from "module_2" /* 2 */;
 

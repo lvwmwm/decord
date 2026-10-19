@@ -1,20 +1,20 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14218
+// Function ID: 14219
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1089, 21, 5191, 587, 558, 576, 5491, 8576, 10819, 10937, 14215, 14216, 1995, 1090, 14217, 14220, 2]
+// Dependencies: [19, 17, 1089, 21, 5191, 587, 558, 576, 5491, 8576, 10835, 10953, 14219, 14220, 1995, 1090, 14221, 14224, 2]
 
-// Module 14214 (IndividualProductPreview)
+// Module 14218 (IndividualProductPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import useCurrentUser from "useCurrentUser" /* 8576 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10819 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10937 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14215 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14216 */;
-import FractionalNitroPreview from "FractionalNitroPreview" /* 14217 */;
-import OrbBadgePreview from "OrbBadgePreview" /* 14220 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10835 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10953 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14219 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14220 */;
+import FractionalNitroPreview from "FractionalNitroPreview" /* 14221 */;
+import OrbBadgePreview from "OrbBadgePreview" /* 14224 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -326,7 +326,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     }
     if (cResult[3] !== product) {
       const obj2 = { product };
-      const tmp8 = closure_7(onTrackPress(14215), obj2);
+      const tmp8 = closure_7(onTrackPress(14219), obj2);
       cResult[3] = product;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -576,11 +576,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IndividualPr
     let tmp5;
     const ALL = tmp(1090).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(14217).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(14221).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(14220).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(14224).OrbBadgePreview, {});
       }
     }
     return tmp5;

@@ -590,12 +590,12 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
     max = max.max;
     return max.unit === obj.NONE && rounded === max || rounded < max;
   });
-  const tmp2 = createFindDefault(items, (unit) => f92748(unit.unit), findIndexResult);
+  const tmp2 = createFindDefault(items, (unit) => f92797(unit.unit), findIndexResult);
   const arr = items;
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f92748(unit.unit));
+    const found = arr.find((unit) => f92797(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -611,17 +611,17 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
   } else {
     let unit;
     closure_0 = rounded;
-    const f92748 = (dependencyMap) => closure_0.includes(dependencyMap);
+    const f92797 = (dependencyMap) => closure_0.includes(dependencyMap);
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
       return max.unit === obj.NONE && rounded === max || rounded < max;
     });
-    const tmp11 = f92748(5222)(items, (unit) => f92748(unit.unit), findIndexResult);
+    const tmp11 = f92797(5222)(items, (unit) => f92797(unit.unit), findIndexResult);
     const arr = items;
     if (null != tmp11) {
       unit = tmp11.unit;
     } else {
-      const found = arr.find((unit) => f92748(unit.unit));
+      const found = arr.find((unit) => f92797(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

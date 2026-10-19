@@ -1,22 +1,22 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17400
+// Function ID: 17401
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14787, 6188, 17397, 1087, 21, 5191, 587, 1128, 14036, 17398, 17402, 558, 576, 14790, 504, 17406, 1267, 13374, 5187, 6459, 5479, 16138, 17407, 2]
+// Dependencies: [19, 17, 14791, 6188, 17401, 1087, 21, 5191, 587, 1128, 14040, 17402, 17406, 558, 576, 14794, 504, 17410, 1267, 13379, 5187, 6459, 5479, 16142, 17411, 2]
 
-// Module 17396 (GuildUpsellChannelList)
+// Module 17400 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import Card_Card from "Card/Card" /* 6459 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14036 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17397 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17398 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17402 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17406 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14040 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17401 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17402 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17406 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17410 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14787 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14791 */;
 import ConsentStore from "ConsentStore" /* 6188 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(14790).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(14794).GameCommunityAddServerEntryExperiment;
   const cardAction = GameCommunityAddServerEntryExperiment.useConfig(first).cardAction;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [ConsentStore, LocalAppDetectionStore];

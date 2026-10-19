@@ -1,9 +1,9 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17472
+// Function ID: 17473
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17466, 8431, 8480, 1128, 5187, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17470, 8431, 8480, 1128, 5187, 2]
 
-// Module 17468 (UnreadSubtitle)
+// Module 17472 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5187 */;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
   const obj = subtitleStyles(576);
   const cResult = obj.c(16);
   ({ guild, channel, channelName, count } = arg0);
-  const obj2 = subtitleStyles(17466);
+  const obj2 = subtitleStyles(17470);
   subtitleStyles = obj2.useSubtitleStyles();
   if (cResult[0] === channel) {
     let tmp5;

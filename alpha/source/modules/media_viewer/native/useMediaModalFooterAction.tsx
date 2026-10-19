@@ -1,10 +1,10 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13892
+// Function ID: 13893
 // Name: useMediaModalFooterAction
 // Dependencies: [570, 1274, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 13888 (useMediaModalFooterAction)
+// Module 13892 (useMediaModalFooterAction)
 import react_native from "react-native" /* 1274 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;

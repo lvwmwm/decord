@@ -1,13 +1,13 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12788
+// Function ID: 12789
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 12737, 3141, 558, 576, 7117, 1128, 5155, 6539, 7175, 6540, 2]
+// Dependencies: [21, 12754, 3141, 558, 576, 7117, 1128, 5155, 6539, 7175, 6540, 2]
 
-// Module 12771 (FinalizeTraitActionSheet)
+// Module 12788 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3141 from "module_3141" /* 3141 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12737 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12754 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

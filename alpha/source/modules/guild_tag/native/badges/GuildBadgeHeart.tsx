@@ -1,12 +1,12 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 14940
+// Function ID: 14941
 // Name: GuildBadgeHeart
-// Dependencies: [109, 19, 21, 558, 576, 14928, 7843, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14932, 7843, 2]
 
-// Module 14936 (GuildBadgeHeart)
+// Module 14940 (GuildBadgeHeart)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14928 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14932 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

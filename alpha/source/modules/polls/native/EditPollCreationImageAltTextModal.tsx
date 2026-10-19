@@ -1,12 +1,12 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12087
+// Function ID: 12088
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 8238, 21, 5191, 587, 558, 576, 12065, 12067, 1128, 1202, 7995, 5187, 8949, 8855, 7006, 7092, 2]
+// Dependencies: [32, 19, 17, 8238, 21, 5191, 587, 558, 576, 12084, 12086, 1128, 1202, 7995, 5187, 8949, 8855, 7006, 7092, 2]
 
-// Module 12068 (EditPollCreationImageAltTextModal)
+// Module 12087 (EditPollCreationImageAltTextModal)
 import nativeDefault from "native" /* 587 */;
 import PollsConstants from "PollsConstants" /* 8238 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12067 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,10 +59,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
   ({ channelId, answer, onSave } = imageSize);
   imageSize = imageSize.imageSize;
   const tmp4 = closure_10();
-  ({ renderImage, upload } = value(12065)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize));
+  ({ renderImage, upload } = value(12084)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize));
   let str;
   const useState = react.useState;
-  value(12065)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  value(12084)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   if (upload != null) {
     str = upload.description;
   }
@@ -83,7 +83,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
     const _Symbol = Symbol;
     const container = tmp4.container;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { onPress: tmp(12067).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(1128).t.cpT0Cq), children: closure_8(Icon, obj3) };
+      const obj2 = { onPress: tmp(12086).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(1128).t.cpT0Cq), children: closure_8(Icon, obj3) };
       intl = tmp(1128).intl;
       obj3 = { source: value(7995) };
       Icon = tmp(1202).Icon;
@@ -302,7 +302,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
   imageSize = imageSize.imageSize;
   value = undefined;
   const tmp = closure_10();
-  const tmp4 = value(12065)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const tmp4 = value(12084)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp4.upload;
   let obj = react;
   let str;
@@ -325,7 +325,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPollCr
   }, items);
   const obj2 = { top: true, style: tmp.container, children: items2 };
   const obj3 = { style: tmp.header, children: items1 };
-  const obj4 = { onPress: onSave(12067).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1128).t.cpT0Cq), children: closure_8(Icon, obj5) };
+  const obj4 = { onPress: onSave(12086).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1128).t.cpT0Cq), children: closure_8(Icon, obj5) };
   const SafeAreaPaddingView = onSave(7092).SafeAreaPaddingView;
   intl = onSave(1128).intl;
   obj5 = { source: value(7995) };

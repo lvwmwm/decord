@@ -1,7 +1,7 @@
 // Module ID: 9418
 // Function ID: 9419
 // Name: GameProfileFloatingNav
-// Dependencies: [109, 32, 19, 17, 21, 587, 4945, 5191, 9419, 558, 576, 13929, 5187, 8817, 1633, 13935, 4913, 683, 5192, 9200, 9514, 1128, 8489, 5491, 2]
+// Dependencies: [109, 32, 19, 17, 21, 587, 4945, 5191, 9419, 558, 576, 13933, 5187, 8817, 1633, 13939, 4913, 683, 5192, 9200, 9514, 1128, 8489, 5491, 2]
 
 // Module 9418 (GameProfileFloatingNav)
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import timing from "timing" /* 5192 */;
 import native from "native" /* 8817 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 9419 */;
-import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 13929 */;
+import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 13933 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -241,7 +241,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(13935);
+  const tmpResult = tmp(13939);
   const isGameProfileCommunitiesMobileEnabled = tmpResult.useIsGameProfileCommunitiesMobileEnabled(first);
   const tmpResult3 = tmp(4913);
   const token = tmpResult3.useToken(tmp4(587).colors.BACKGROUND_BASE_LOWEST);
@@ -746,7 +746,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                       return closure_1_9(closure_1_18, obj, tab);
                     })
           };
-          const YouScreenNavIconMeasurer = tmp(13929).YouScreenNavIconMeasurer;
+          const YouScreenNavIconMeasurer = tmp(13933).YouScreenNavIconMeasurer;
           cResult[19] = selectTab;
           cResult[20] = selectedTab;
           cResult[21] = tmp5.item;
@@ -892,7 +892,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
   const onLayout = navigation.onLayout;
   const tmp3 = closure_17(selectTab(1633)().bottom);
   dependencyMap = tmp3;
-  let obj = selectedTab(13935);
+  let obj = selectedTab(13939);
   const isGameProfileCommunitiesMobileEnabled = obj.useIsGameProfileCommunitiesMobileEnabled({ location: "GameProfileFloatingNav" });
   let obj2 = selectedTab(4913);
   const token = obj2.useToken(selectTab(587).colors.BACKGROUND_BASE_LOWEST);
@@ -994,7 +994,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
           return closure_1_9(closure_1_18, obj, tab);
         })
     };
-    const YouScreenNavIconMeasurer = tmp4(13929).YouScreenNavIconMeasurer;
+    const YouScreenNavIconMeasurer = tmp4(13933).YouScreenNavIconMeasurer;
     items5[1] = closure_9(YouScreenNavIconMeasurer, obj12);
     items3[1] = closure_10(closure_7, obj10);
     items2[1] = closure_10(closure_7, obj8);

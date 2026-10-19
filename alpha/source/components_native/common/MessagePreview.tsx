@@ -1,9 +1,9 @@
-// Module ID: 17963
-// Function ID: 17964
+// Module ID: 17967
+// Function ID: 17968
 // Name: MessagePreview
-// Dependencies: [19, 8754, 1087, 21, 558, 576, 504, 1128, 17775, 9679, 2]
+// Dependencies: [19, 8754, 1087, 21, 558, 576, 504, 1128, 17779, 9679, 2]
 
-// Module 17963 (MessagePreview)
+// Module 17967 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

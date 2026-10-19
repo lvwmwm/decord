@@ -1,9 +1,9 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12872
+// Function ID: 12873
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1207, 1206, 21, 5191, 587, 558, 576, 5128, 5465, 12856, 8515, 12857, 1384, 7271, 7764, 6174, 6462, 12858, 5065, 2044, 10762, 1498, 2]
+// Dependencies: [32, 19, 17, 1207, 1206, 21, 5191, 587, 558, 576, 5128, 5465, 12873, 8515, 12874, 1384, 7271, 7764, 6174, 6462, 12875, 5065, 2044, 10778, 1498, 2]
 
-// Module 12855 (ForumPostMedia)
+// Module 12872 (ForumPostMedia)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
@@ -11,9 +11,9 @@ import utils_ImageUtils from "utils/ImageUtils" /* 1498 */;
 import shared from "shared" /* 5065 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5465 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10762 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 12856 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12858 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10778 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 12873 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -309,7 +309,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
     let tmp21;
     if (cResult[0] !== obscureReason) {
       const obj3 = {};
-      const tmp24 = ref(12857);
+      const tmp24 = ref(12874);
       const merged = Object.assign(obscureReason);
       const tmp28 = closure_9(tmp24, obj3);
       cResult[0] = obscureReason;
@@ -471,7 +471,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(12857);
+    const tmp19 = ref(12874);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;

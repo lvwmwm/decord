@@ -1,14 +1,14 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13221
+// Function ID: 13222
 // Name: ScreenArrowIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11434, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11452, 4912, 2]
 
-// Module 13213 (ScreenArrowIcon)
+// Module 13221 (ScreenArrowIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 11434 */;
+import AssetRegistry from "AssetRegistry" /* 11452 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

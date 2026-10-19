@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 40, height: 40.5, scales: [2, 3], hash: "e3602af71cc76e8c04bf027b54c9843f", name: "role_subscription_benefit_nelly_avatar", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 54, height: 54.5, scales: [2, 3], hash: "bae4699ad33ec116553db1943dc80292", name: "role_subscription_earning_metric_avatar", type: "png" });

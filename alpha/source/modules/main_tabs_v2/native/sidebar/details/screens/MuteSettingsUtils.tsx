@@ -1,17 +1,17 @@
-// Module ID: 10705
-// Function ID: 10706
+// Module ID: 10721
+// Function ID: 10722
 // Name: MuteSettingsUtils
-// Dependencies: [4847, 2068, 2090, 4855, 6222, 1392, 1087, 1097, 1128, 5521, 8169, 7086, 7081, 10706, 2]
+// Dependencies: [4847, 2068, 2090, 4855, 6222, 1392, 1087, 1097, 1128, 5521, 8169, 7086, 7081, 10722, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10705 (MuteSettingsUtils)
+// Module 10721 (MuteSettingsUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl7 from "intl" /* 1128 */;
 import useChannelName from "useChannelName" /* 5521 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8169 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10706 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10722 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;

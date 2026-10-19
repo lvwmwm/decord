@@ -1,9 +1,9 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 10977
+// Function ID: 10978
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 6144, 2119, 5034, 6293, 1087, 2075, 10550, 6356, 1297, 10962, 2002, 504, 584, 2]
+// Dependencies: [32, 5, 6144, 2119, 5034, 6293, 1087, 2075, 10550, 6356, 1297, 10978, 2002, 504, 584, 2]
 
-// Module 10961 (ConjureRichPresenceStore)
+// Module 10977 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -28,7 +28,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f107129 = () => {
+  const f107227 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -46,7 +46,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f107129, closure_1_11);
+      timeout = setTimeout(f107227, closure_1_11);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -178,7 +178,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f107129, c11);
+        timeout2 = setTimeout(f107227, c11);
         flag = true;
       }
     }

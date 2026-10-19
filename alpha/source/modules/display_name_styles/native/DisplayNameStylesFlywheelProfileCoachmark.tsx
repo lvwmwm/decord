@@ -1,9 +1,9 @@
-// Module ID: 17935
-// Function ID: 17936
+// Module ID: 17939
+// Function ID: 17940
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1392, 2065, 21, 5191, 558, 576, 504, 4864, 1128, 2981, 9742, 17936, 2]
+// Dependencies: [19, 17, 1392, 2065, 21, 5191, 558, 576, 504, 4864, 1128, 2981, 9742, 17940, 2]
 
-// Module 17935 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 17939 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap;
 
 let tmp;
-const DisplayNameLockeAbstractUI = tmp(17936);
+const DisplayNameLockeAbstractUI = tmp(17940);
 let react = react_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

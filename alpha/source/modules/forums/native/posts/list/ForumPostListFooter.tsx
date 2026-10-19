@@ -1,18 +1,18 @@
-// Module ID: 12871
-// Function ID: 12872
+// Module ID: 12888
+// Function ID: 12889
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 12813, 7256, 12864, 12872, 12865, 10758, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 12830, 7256, 12881, 12889, 12882, 10774, 2]
 
-// Module 12871 (ForumPostListFooter)
+// Module 12888 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7256 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12813 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12864 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12865 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12872 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12830 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12881 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12882 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12889 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const ForumPostReactions = tmp(10758);
+const ForumPostReactions = tmp(10774);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLis
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(12872), obj4);
+    isGameInvitesPost = tmp8(tmp9(12889), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

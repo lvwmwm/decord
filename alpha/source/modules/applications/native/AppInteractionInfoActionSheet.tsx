@@ -1,15 +1,15 @@
-// Module ID: 13757
-// Function ID: 13758
+// Module ID: 13761
+// Function ID: 13762
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1406, 2090, 1392, 21, 5191, 558, 576, 1633, 13758, 9536, 504, 8579, 6436, 5187, 1128, 8577, 1202, 6462, 7118, 2]
+// Dependencies: [19, 17, 1406, 2090, 1392, 21, 5191, 558, 576, 1633, 13762, 9536, 504, 8579, 6436, 5187, 1128, 8577, 1202, 6462, 7118, 2]
 
-// Module 13757 (AppInteractionInfoActionSheet)
+// Module 13761 (AppInteractionInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import GuildIconDefault from "GuildIcon" /* 6436 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
 import UserActionCreators from "UserActionCreators" /* 8579 */;
-import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13758 */;
+import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13762 */;
 import react_mod from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import GuildStore from "GuildStore" /* 2090 */;

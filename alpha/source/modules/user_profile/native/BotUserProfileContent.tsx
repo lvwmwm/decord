@@ -1,9 +1,9 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14019
+// Function ID: 14020
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1392, 7181, 7119, 21, 8641, 8630, 8643, 1633, 8588, 504, 5509, 5057, 7287, 8642, 10839, 8627, 8638, 7162, 4903, 8644, 4945, 14016, 8655, 10822, 5155, 10838, 2002, 10842, 1128, 14040, 14043, 11243, 14044, 5479, 8471, 587, 6190, 7290, 14045, 10923, 7158, 14099, 14102, 2]
+// Dependencies: [19, 17, 1392, 7181, 7119, 21, 8641, 8630, 8643, 1633, 8588, 504, 5509, 5057, 7287, 8642, 10855, 8627, 8638, 7162, 4903, 8644, 4945, 14020, 8655, 10838, 5155, 10854, 2002, 10858, 1128, 14044, 14047, 11262, 14048, 5479, 8471, 587, 6190, 7290, 14049, 10939, 7158, 14103, 14106, 2]
 
-// Module 14015 (BotUserProfileContent)
+// Module 14019 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ToastUtils from "ToastUtils" /* 4903 */;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               ActionSheetActionCreatorsDefault;
               const obj = { user, guildId: guild_id, channelId: id };
               id = undefined;
-              const tmp2 = asyncRequire(10838, dependencyMap.paths);
+              const tmp2 = asyncRequire(10854, dependencyMap.paths);
               if (channel != null) {
                 id = channel.id;
               }

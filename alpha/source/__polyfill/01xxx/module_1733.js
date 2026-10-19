@@ -96,7 +96,7 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "enabled",
       lastTimestamp: null,
-      startTimestamp: "frame",
+      startTimestamp: "premiumTabPopover",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

@@ -1,22 +1,22 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17647
+// Function ID: 17648
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1392, 21, 14059, 8544, 14064, 17594, 587, 504, 5884, 9126, 7134, 8542, 9151, 9150, 8540, 17644, 2002, 8745, 12673, 17646, 1128, 17648, 5187, 5057, 6337, 11, 683, 6462, 5128, 17649, 2]
+// Dependencies: [19, 17, 1392, 21, 14063, 8544, 14068, 17598, 587, 504, 5884, 9126, 7134, 8542, 9151, 9150, 8540, 17648, 2002, 8745, 12690, 17650, 1128, 17652, 5187, 5057, 6337, 11, 683, 6462, 5128, 17653, 2]
 // Exports: default
 
-// Module 17643 (GamingLikeEntryRow)
+// Module 17647 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8540 */;
 import utils from "utils" /* 8544 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
-import BadgesAll from "Badges" /* 14059 */;
-import TrendingType from "TrendingType" /* 14064 */;
+import BadgesAll from "Badges" /* 14063 */;
+import TrendingType from "TrendingType" /* 14068 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17594 */;
+import createICYMIStyles from "createICYMIStyles" /* 17598 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(17644, dependencyMap.paths);
+    const promise = asyncRequire(17648, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {

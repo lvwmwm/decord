@@ -1,9 +1,9 @@
-// Module ID: 14215
-// Function ID: 14216
+// Module ID: 14219
+// Function ID: 14220
 // Name: AvatarDecorationProductPreview
 // Dependencies: [19, 17, 21, 5191, 558, 576, 8576, 8569, 1128, 1202, 2]
 
-// Module 14215 (AvatarDecorationProductPreview)
+// Module 14219 (AvatarDecorationProductPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

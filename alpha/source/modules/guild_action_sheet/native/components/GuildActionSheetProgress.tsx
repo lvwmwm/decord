@@ -1,14 +1,14 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 14995
+// Function ID: 14996
 // Name: GuildActionSheetProgress
-// Dependencies: [19, 21, 5191, 587, 558, 576, 13154, 14992, 6459, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 13162, 14996, 6459, 2]
 
-// Module 14991 (GuildActionSheetProgress)
+// Module 14995 (GuildActionSheetProgress)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13154 */;
-import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14992 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13162 */;
+import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14996 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

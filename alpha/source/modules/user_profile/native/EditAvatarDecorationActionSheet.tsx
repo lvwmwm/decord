@@ -1,7 +1,7 @@
 // Module ID: 8556
 // Function ID: 8557
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7546, 7535, 2128, 1087, 21, 5191, 587, 558, 576, 8557, 8567, 8568, 7130, 7155, 1267, 8569, 1128, 5187, 8570, 7118, 4922, 10394, 504, 14248, 8564, 14253, 14258, 14259, 8571, 8656, 1202, 14260, 2]
+// Dependencies: [32, 19, 17, 7546, 7535, 2128, 1087, 21, 5191, 587, 558, 576, 8557, 8567, 8568, 7130, 7155, 1267, 8569, 1128, 5187, 8570, 7118, 4922, 10394, 504, 14252, 8564, 14257, 14262, 14263, 8571, 8656, 1202, 14264, 2]
 
 // Module 8556 (EditAvatarDecorationActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,8 +13,8 @@ import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7535 */;
 import useShopProductItems from "useShopProductItems" /* 8569 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
 import HeaderAvatarDefault from "HeaderAvatar" /* 8656 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14253 */;
-import AvatarGridDefault from "AvatarGrid" /* 14260 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14257 */;
+import AvatarGridDefault from "AvatarGrid" /* 14264 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
@@ -792,7 +792,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   }
   const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1202).AvatarSizes.EDIT_AVATAR_DECORATION };
   const tmp2Result = purchase(8656);
-  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14260), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14264), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/EditAvatarDecorationActionSheet.tsx");

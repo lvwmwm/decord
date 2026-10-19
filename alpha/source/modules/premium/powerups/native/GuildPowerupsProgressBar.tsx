@@ -1,18 +1,18 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17351
+// Function ID: 17352
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 17348, 2090, 21, 587, 4945, 5491, 5191, 558, 576, 573, 17349, 17350, 5192, 13162, 7155, 1128, 2621, 5187, 7182, 8817, 2]
+// Dependencies: [19, 17, 17352, 2090, 21, 587, 4945, 5491, 5191, 558, 576, 573, 17353, 17354, 5192, 13170, 7155, 1128, 2621, 5187, 7182, 8817, 2]
 
-// Module 17347 (GuildPowerupsProgressBar)
+// Module 17351 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5192 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13162 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17350 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13170 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17354 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17348 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17352 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  stateFromStores1(17349)(stateFromStores);
+  stateFromStores1(17353)(stateFromStores);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [GuildBoostingProgressBarPersistedStore];
     cResult[4] = items2;

@@ -1,9 +1,9 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17094
+// Function ID: 17095
 // Name: RegistrationBailoutButton
 // Dependencies: [19, 21, 5191, 558, 576, 1128, 1202, 2]
 
-// Module 17090 (RegistrationBailoutButton)
+// Module 17094 (RegistrationBailoutButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;

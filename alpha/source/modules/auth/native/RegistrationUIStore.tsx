@@ -1,10 +1,10 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17065
+// Function ID: 17066
 // Name: RegistrationUIStore
 // Dependencies: [570, 1274, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 17061 (RegistrationUIStore)
+// Module 17065 (RegistrationUIStore)
 import react_native from "react-native" /* 1274 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;

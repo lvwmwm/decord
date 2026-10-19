@@ -1,10 +1,10 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18130
+// Function ID: 18131
 // Name: getFrameSurfaceQueryParams
 // Dependencies: [6297, 38, 2]
 // Exports: default
 
-// Module 18126 (getFrameSurfaceQueryParams)
+// Module 18130 (getFrameSurfaceQueryParams)
 import _modDef38 from "module_38" /* 38 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
 import size from "module_2" /* 2 */;

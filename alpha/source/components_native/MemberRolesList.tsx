@@ -1,9 +1,9 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12595
+// Function ID: 12596
 // Name: MemberRolesList
 // Dependencies: [19, 17, 2122, 21, 5191, 558, 576, 504, 10617, 2]
 
-// Module 12578 (MemberRolesList)
+// Module 12595 (MemberRolesList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import RolePillDefault from "RolePill" /* 10617 */;

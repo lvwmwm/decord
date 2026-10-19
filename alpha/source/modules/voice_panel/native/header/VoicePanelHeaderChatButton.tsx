@@ -1,9 +1,9 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18253
+// Function ID: 18254
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1087, 21, 5191, 587, 558, 576, 1123, 18250, 18165, 8471, 1128, 6439, 2]
+// Dependencies: [19, 1087, 21, 5191, 587, 558, 576, 1123, 18254, 18169, 8471, 1128, 6439, 2]
 
-// Module 18249 (VoicePanelHeaderChatButton)
+// Module 18253 (VoicePanelHeaderChatButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,8 +11,8 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
 import NativeViewDefault from "NativeView" /* 6439 */;
 import ChatIcon2 from "ChatIcon" /* 8471 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18165 */;
-import useChatBadgeDefault from "useChatBadge" /* 18250 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18169 */;
+import useChatBadgeDefault from "useChatBadge" /* 18254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;

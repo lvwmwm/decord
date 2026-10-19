@@ -1,9 +1,9 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17296
+// Function ID: 17297
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 5181, 5103, 5104, 2065, 21, 5191, 587, 558, 576, 5107, 504, 13201, 17293, 8299, 6215, 1128, 2621, 13204, 9742, 2]
+// Dependencies: [19, 5181, 5103, 5104, 2065, 21, 5191, 587, 558, 576, 5107, 504, 13209, 17297, 8299, 6215, 1128, 2621, 13212, 9742, 2]
 
-// Module 17292 (GuildThemeMemberCoachmark)
+// Module 17296 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,7 +12,7 @@ import _modDef2621 from "module_2621" /* 2621 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
 import Powerups from "Powerups" /* 5107 */;
 import BoostingActionCreators from "BoostingActionCreators" /* 6215 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13204 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13212 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5181 */;
 import GuildPowerupsStore_mod from "GuildPowerupsStore" /* 5103 */;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
     cResult[13] = markAsDismissed;
     cResult[14] = U;
   }
-  const tmpResult4 = guildId(13201);
+  const tmpResult4 = guildId(13209);
   guildPowerupBannerImage = tmpResult4.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
     class D {
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    guildPowerupBannerImage = markAsDismissed(17293);
+    guildPowerupBannerImage = markAsDismissed(17297);
   }
   cResult[6] = stateFromStores;
   cResult[7] = stateFromStores1;
@@ -209,10 +209,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
   const items2 = [guildPowerupBannerImage];
   const obj2 = guildId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
-  const obj3 = guildId(13201);
+  const obj3 = guildId(13209);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(17293);
+    guildPowerupBannerImage = markAsDismissed(17297);
   }
   const diff = onDismiss - markAsDismissed(8299)(guildId).available;
   c5 = diff;

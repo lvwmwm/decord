@@ -1,9 +1,9 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14158
+// Function ID: 14159
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1087, 21, 5191, 587, 558, 576, 14155, 14156, 5187, 1128, 2044, 14157, 5128, 5491, 8401, 4922, 504, 9327, 14152, 7180, 2]
+// Dependencies: [32, 19, 17, 502, 1087, 21, 5191, 587, 558, 576, 14159, 14160, 5187, 1128, 2044, 14161, 5128, 5491, 8401, 4922, 504, 9327, 14156, 7180, 2]
 
-// Module 14154 (UserProfilePersonalWidgetCard)
+// Module 14158 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5187 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import UserProfileCardDefault from "UserProfileCard" /* 7180 */;
 import GifTagDefault from "GifTag" /* 8401 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14152 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14155 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14156 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14156 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14159 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14160 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ let size;
 let tmp;
 let unpackModuleId;
 const intl2 = tmp(1128);
-const WidgetAssetUtils = tmp(14157);
+const WidgetAssetUtils = tmp(14161);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -289,7 +289,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148219 */ });
+        return closure_0(() => { /* body not rendered: F148324 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +297,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148219 */ });
+        return closure_0(() => { /* body not rendered: F148324 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148219 */ });
+        return closure_0(() => { /* body not rendered: F148324 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148219 */ });
+        return closure_0(() => { /* body not rendered: F148324 */ });
       }
     }
   }
@@ -1050,7 +1050,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   const tmp6 = disableInteraction(7180);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(14152), obj3);
+    tmp4Result = tmp4(tmp5(14156), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

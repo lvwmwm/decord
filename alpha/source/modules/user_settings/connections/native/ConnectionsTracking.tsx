@@ -1,10 +1,10 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16009
+// Function ID: 16010
 // Name: ConnectionsTracking
 // Dependencies: [1087, 1267, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 16005 (ConnectionsTracking)
+// Module 16009 (ConnectionsTracking)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import size from "module_2" /* 2 */;

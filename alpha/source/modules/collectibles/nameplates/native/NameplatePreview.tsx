@@ -1,9 +1,9 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 10954
+// Function ID: 10955
 // Name: NameplatePreview
 // Dependencies: [19, 17, 5181, 2128, 21, 5191, 587, 558, 576, 1992, 6330, 8557, 504, 5057, 5884, 1202, 8647, 9313, 10565, 10566, 5187, 2]
 
-// Module 10938 (NameplatePreview)
+// Module 10954 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

@@ -1,9 +1,9 @@
-// Module ID: 11420
-// Function ID: 11421
+// Module ID: 11438
+// Function ID: 11439
 // Name: LottieIcon
 // Dependencies: [19, 17, 21, 558, 576, 587, 6577, 4929, 4913, 6386, 2]
 
-// Module 11420 (LottieIcon)
+// Module 11438 (LottieIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

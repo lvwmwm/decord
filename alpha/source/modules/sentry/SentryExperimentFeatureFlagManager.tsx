@@ -1,9 +1,9 @@
-// Module ID: 19109
-// Function ID: 19110
+// Module ID: 19113
+// Function ID: 19114
 // Name: SentryExperimentFeatureFlagManager
 // Dependencies: [5112, 1261, 5034, 1257, 7085, 2]
 
-// Module 19109 (SentryExperimentFeatureFlagManager)
+// Module 19113 (SentryExperimentFeatureFlagManager)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import ExperimentStore from "ExperimentStore" /* 5112 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;

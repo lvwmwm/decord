@@ -1,12 +1,12 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17814
+// Function ID: 17815
 // Name: SearchResultLinkPreviewMarkup
-// Dependencies: [5501, 5502, 17811, 8272, 2]
+// Dependencies: [5501, 5502, 17815, 8272, 2]
 
-// Module 17810 (SearchResultLinkPreviewMarkup)
+// Module 17814 (SearchResultLinkPreviewMarkup)
 import MarkupRulesDefault from "MarkupRules" /* 5502 */;
 import combineMarkupRules from "combineMarkupRules" /* 5501 */;
-import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 17811 */;
+import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 17815 */;
 import MarkupParser from "MarkupParser" /* 8272 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 12739
-// Function ID: 12740
+// Module ID: 12756
+// Function ID: 12757
 // Name: CheckpointTraitOptionNames
 // Dependencies: [5623, 3141, 5561, 5764, 5795, 5594, 5824, 5853, 5563, 2]
 
-// Module 12739 (CheckpointTraitOptionNames)
+// Module 12756 (CheckpointTraitOptionNames)
 import _modDef3141 from "module_3141" /* 3141 */;
 import CheckpointTrait from "CheckpointTrait" /* 5561 */;
 import CheckpointCharacterBase from "CheckpointCharacterBase" /* 5563 */;

@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11252
+// Function ID: 11253
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 5400, 11234, 2002, 2]
+// Dependencies: [19, 21, 5400, 11253, 2002, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 11233 (openIgnoreThermalStateAlert)
+// Module 11252 (openIgnoreThermalStateAlert)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
@@ -22,7 +22,7 @@ export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(
   const obj2 = {
     importer() {
       let onConfirm;
-      const promise = asyncRequire(11234, dependencyMap.paths);
+      const promise = asyncRequire(11253, dependencyMap.paths);
       return promise.then((IgnoreThermalStateAlert) => {
         IgnoreThermalStateAlert = IgnoreThermalStateAlert.IgnoreThermalStateAlert;
         return (arg0) => {

@@ -1,9 +1,9 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16904
+// Function ID: 16905
 // Name: useCollectiblesShopDeepLinkProps
 // Dependencies: [19, 7530, 7547, 558, 576, 7541, 504, 2]
 
-// Module 16900 (useCollectiblesShopDeepLinkProps)
+// Module 16904 (useCollectiblesShopDeepLinkProps)
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
 import CollectiblesShopStore from "CollectiblesShopStore" /* 7547 */;

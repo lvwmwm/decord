@@ -1,18 +1,18 @@
-// Module ID: 12114
-// Function ID: 12115
+// Module ID: 12133
+// Function ID: 12134
 // Name: conjureCardOverrides
 // Dependencies: [2]
 // Exports: conjureCardExpanded, toggleConjureCard
 
-// Module 12114 (conjureCardOverrides)
+// Module 12133 (conjureCardOverrides)
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureCardOverrides.tsx");
 
-export const conjureCardExpanded = function conjureCardExpanded(c13, render_id, arg2) {
-  let value = c13.get(render_id);
+export const conjureCardExpanded = function conjureCardExpanded(c14, render_id, arg2) {
+  let value = c14.get(render_id);
   if (value == null) {
     value = !arg2;
   }

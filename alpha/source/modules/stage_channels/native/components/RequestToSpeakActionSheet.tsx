@@ -1,9 +1,9 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11386
+// Function ID: 11387
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2068, 6148, 21, 5191, 587, 558, 576, 11369, 1128, 7172, 504, 5516, 6205, 7764, 6174, 5155, 7754, 11370, 11372, 1202, 11374, 6457, 4913, 7155, 7130, 6212, 6206, 6542, 5187, 5477, 11375, 6584, 7118, 2]
+// Dependencies: [32, 19, 17, 502, 2068, 6148, 21, 5191, 587, 558, 576, 11387, 1128, 7172, 504, 5516, 6205, 7764, 6174, 5155, 7754, 11388, 11390, 1202, 11392, 6457, 4913, 7155, 7130, 6212, 6206, 6542, 5187, 5477, 11393, 6584, 7118, 2]
 
-// Module 11368 (RequestToSpeakActionSheet)
+// Module 11386 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6
 import TableSwitchRow2 from "TableSwitchRow" /* 7172 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7754 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 11369 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 11387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -32,7 +32,7 @@ let c10;
 let c9;
 let obj2;
 let tmp8;
-const AssetRegistryDefault = tmp8(11374);
+const AssetRegistryDefault = tmp8(11392);
 let react = react_mod;
 const View = react_native.View;
 let closure_8 = StageChannelsConstants.REQUEST_TO_SPEAK_SHEET_KEY;
@@ -191,9 +191,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
       tmp14 = cResult[6];
     }
     if (tmp12) {
-      MicrophoneArrowRightIcon = tmp(11370).GroupArrowDownIcon;
+      MicrophoneArrowRightIcon = tmp(11388).GroupArrowDownIcon;
     } else {
-      MicrophoneArrowRightIcon = tmp(11372).MicrophoneArrowRightIcon;
+      MicrophoneArrowRightIcon = tmp(11390).MicrophoneArrowRightIcon;
     }
     if (cResult[7] !== MicrophoneArrowRightIcon) {
       const tmp18 = closure_9(MicrophoneArrowRightIcon, {});
@@ -280,9 +280,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(11370).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(11388).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(11372).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(11390).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress: function handleSetSelfSpeaker() {
@@ -523,7 +523,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpe
             tmp48 = tmp50;
           }
           const obj13 = { channel: stateFromStores, height: bound };
-          const tmp47 = closure_9(first(11375), obj13);
+          const tmp47 = closure_9(first(11393), obj13);
           cResult[24] = stateFromStores;
           cResult[25] = bound;
           cResult[26] = tmp47;
@@ -640,7 +640,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpe
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(11375);
+    const tmp4Result = tmp4(11393);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

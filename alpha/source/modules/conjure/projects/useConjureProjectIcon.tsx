@@ -1,9 +1,9 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11683
+// Function ID: 11684
 // Name: useConjureProjectIcon
 // Dependencies: [558, 576, 6357, 1417, 2]
 
-// Module 11664 (useConjureProjectIcon)
+// Module 11683 (useConjureProjectIcon)
 import react from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

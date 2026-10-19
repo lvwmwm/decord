@@ -1,9 +1,9 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 17884
+// Function ID: 17885
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7134, 1128, 2131, 5187, 2]
 
-// Module 17880 (ChannelDetailsLinkedLobby)
+// Module 17884 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

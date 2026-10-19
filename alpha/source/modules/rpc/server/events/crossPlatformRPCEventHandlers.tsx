@@ -1,9 +1,9 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 15553
+// Function ID: 15554
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [5540, 2021, 2086, 6153, 2068, 2128, 2090, 2014, 5209, 1392, 5212, 5895, 1087, 11312, 11317, 9169, 6180, 15482, 8731, 12, 15483, 7314, 9162, 15489, 1099, 568, 9167, 15550, 15551, 2]
+// Dependencies: [5540, 2021, 2086, 6153, 2068, 2128, 2090, 2014, 5209, 1392, 5212, 5895, 1087, 11330, 11335, 9169, 6180, 15486, 8731, 12, 15487, 7314, 9162, 15493, 1099, 568, 9167, 15554, 15555, 2]
 
-// Module 15549 (crossPlatformRPCEventHandlers)
+// Module 15553 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
@@ -13,13 +13,13 @@ import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
 import getSocketFrameDefault from "getSocketFrame" /* 9162 */;
 import transformUserDefault from "transformUser" /* 9167 */;
 import RPCErrorDefault from "RPCError" /* 9169 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11312 */;
-import RPCHelpers from "RPCHelpers" /* 11317 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15482 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15483 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15489 */;
-import transformGuildMemberDefault from "transformGuildMember" /* 15550 */;
-import transformApplicationDefault from "transformApplication" /* 15551 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11330 */;
+import RPCHelpers from "RPCHelpers" /* 11335 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15486 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15487 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15493 */;
+import transformGuildMemberDefault from "transformGuildMember" /* 15554 */;
+import transformApplicationDefault from "transformApplication" /* 15555 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
@@ -426,7 +426,7 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(15482);
+    let obj = socket(15486);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;

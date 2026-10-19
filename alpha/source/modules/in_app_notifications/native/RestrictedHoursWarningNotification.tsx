@@ -1,16 +1,16 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13624
+// Function ID: 13625
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 13519, 1087, 21, 5191, 587, 558, 576, 13621, 6190, 13520, 7370, 5187, 13555, 2]
+// Dependencies: [19, 17, 13524, 1087, 21, 5191, 587, 558, 576, 13625, 6190, 13525, 7370, 5187, 13560, 2]
 
-// Module 13620 (RestrictedHoursWarningNotification)
+// Module 13624 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import openUserSettings from "openUserSettings" /* 7370 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13519 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13520 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13524 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13525 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = closure_9();
   type = notification.type;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const ThemeDarkIcon = tmp(13621).ThemeDarkIcon;
+    const ThemeDarkIcon = tmp(13625).ThemeDarkIcon;
     const tmp8 = <ThemeDarkIcon size="sm" color={nativeDefault.colors.WHITE} />;
     cResult[0] = tmp8;
     first = tmp8;
@@ -161,13 +161,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[11] = notification;
   cResult[12] = tmp14;
   cResult[13] = tmp15;
-  cResult[14] = jsx(type(13555).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
-  jsx(type(13555).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
+  cResult[14] = jsx(type(13560).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
+  jsx(type(13560).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
 }) : (function RestrictedHoursWarningNotification(notification) {
   notification = notification.notification;
   const type = notification.type;
   let obj2 = { size: "sm", color: type(587).colors.WHITE };
-  const ThemeDarkIcon = notification(13621).ThemeDarkIcon;
+  const ThemeDarkIcon = notification(13625).ThemeDarkIcon;
   const items = [notification.title];
   const items1 = [type];
   const tmp = <View style={closure_9().iconContainer}>{null}</View>;
@@ -183,7 +183,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj4 = { screen: metroImportDefault.FAMILY_CENTER };
     obj3.openUserSettings(obj4);
   }, items1);
-  const NotificationPressable = notification(13555).NotificationPressable;
+  const NotificationPressable = notification(13560).NotificationPressable;
   let obj4 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle };
   return <NotificationPressable icon={tmp} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 }));

@@ -1,9 +1,9 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10700
+// Function ID: 10701
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 6013, 4846, 2068, 2014, 5209, 1087, 2075, 5191, 587, 558, 576, 10685, 5513, 5083, 1631, 1384, 573, 4913, 9608, 2]
+// Dependencies: [19, 6013, 4846, 2068, 2014, 5209, 1087, 2075, 5191, 587, 558, 576, 10701, 5513, 5083, 1631, 1384, 573, 4913, 9608, 2]
 
-// Module 10684 (useChannelSafeAreaBottomStyles)
+// Module 10700 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

@@ -1,9 +1,9 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15886
+// Function ID: 15887
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8260, 558, 7193, 576, 6180, 7194, 6165, 1384, 7764, 6174, 2044, 11065, 1128, 2]
+// Dependencies: [8260, 558, 7193, 576, 6180, 7194, 6165, 1384, 7764, 6174, 2044, 11084, 1128, 2]
 
-// Module 15882 (AndroidViewNsfwDmCommandsSetting)
+// Module 15886 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -15,7 +15,7 @@ import useNSFWAllowed from "useNSFWAllowed" /* 7194 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

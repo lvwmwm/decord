@@ -1,10 +1,10 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14087
+// Function ID: 14088
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 2067, 2068, 6017, 5116, 2090, 10958, 4845, 4855, 2119, 6015, 5212, 1087, 8732, 21, 5191, 587, 558, 576, 7130, 4834, 14084, 573, 6180, 14085, 7692, 1128, 8506, 5155, 6190, 11201, 11202, 11204, 5479, 11200, 10555, 1202, 8550, 11182, 4901, 14087, 8658, 5073, 7759, 7748, 6019, 1417, 9507, 7370, 8736, 11186, 1386, 8764, 2]
+// Dependencies: [5, 19, 2067, 2068, 6017, 5116, 2090, 10974, 4845, 4855, 2119, 6015, 5212, 1087, 8732, 21, 5191, 587, 558, 576, 7130, 4834, 14088, 573, 6180, 14089, 7692, 1128, 8506, 5155, 6190, 11220, 11221, 11223, 5479, 11219, 10555, 1202, 8550, 11201, 4901, 14091, 8658, 5073, 7759, 7748, 6019, 1417, 9507, 7370, 8736, 11205, 1386, 8764, 2]
 // Exports: CustomActivityButton
 
-// Module 14083 (UserProfileActivityButtons)
+// Module 14087 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,13 +21,13 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7759 */;
 import isStreamingDefault from "isStreaming" /* 8658 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9507 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11200 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11201 */;
-import joinFrameActivityDefault from "joinFrameActivity" /* 11202 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11204 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14084 */;
-import getActivityJoinability from "getActivityJoinability" /* 14085 */;
-import getStreamURLDefault from "getStreamURL" /* 14087 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11219 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11220 */;
+import joinFrameActivityDefault from "joinFrameActivity" /* 11221 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11223 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14088 */;
+import getActivityJoinability from "getActivityJoinability" /* 14089 */;
+import getStreamURLDefault from "getStreamURL" /* 14091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
@@ -35,7 +35,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import ConnectedAccountsStore_mod from "ConnectedAccountsStore" /* 6017 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import LocalActivityStore from "LocalActivityStore" /* 10958 */;
+import LocalActivityStore from "LocalActivityStore" /* 10974 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;

@@ -1,9 +1,9 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15910
+// Function ID: 15911
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1087, 21, 558, 576, 15907, 15908, 7838, 587, 1128, 2589, 11065, 8489, 15911, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 15911, 15912, 7838, 587, 1128, 2589, 11084, 8489, 15915, 2]
 
-// Module 15906 (FamilyCenterSetting)
+// Module 15910 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,11 +11,11 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2589 from "module_2589" /* 2589 */;
 import GroupIcon from "GroupIcon" /* 8489 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15907 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15908 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15911 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15912 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

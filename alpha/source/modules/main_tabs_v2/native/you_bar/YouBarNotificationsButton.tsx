@@ -1,9 +1,9 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 17538
+// Function ID: 17539
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 9980, 16136, 21, 5191, 587, 558, 576, 17535, 4945, 5478, 504, 5156, 13582, 9981, 1128, 9045, 17533, 1202, 5073, 7840, 2]
+// Dependencies: [19, 17, 9980, 16140, 21, 5191, 587, 558, 576, 17539, 4945, 5478, 504, 5156, 13586, 9981, 1128, 9045, 17537, 1202, 5073, 7840, 2]
 
-// Module 17534 (YouBarNotificationsButton)
+// Module 17538 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,12 +16,12 @@ import spring from "spring" /* 5478 */;
 import IconButton2 from "IconButton" /* 7840 */;
 import BellIcon2 from "BellIcon" /* 9045 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 9981 */;
-import showForLaterModal from "showForLaterModal" /* 13582 */;
-import YouBarButton from "YouBarButton" /* 17533 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17535 */;
+import showForLaterModal from "showForLaterModal" /* 13586 */;
+import YouBarButton from "YouBarButton" /* 17537 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17539 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
-import YouBarConstants from "YouBarConstants" /* 16136 */;
+import YouBarConstants from "YouBarConstants" /* 16140 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -245,7 +245,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     }
                   }
                   const obj7 = { children: closure_8(IconButton2.IconButton, obj9) };
-                  const YouBarButtonContainer = tmp(17533).YouBarButtonContainer;
+                  const YouBarButtonContainer = tmp(17537).YouBarButtonContainer;
                   obj9 = { accessibilityLabel: tmp19, accessibilityActions: tmp13, onAccessibilityAction: tmp14, variant: str4, size: "sm", icon: tmp30, onPress: tmp34, onLongPress: tmp12, hitSlop };
                   cResult[28] = tmp19;
                   cResult[29] = str4;
@@ -317,7 +317,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(17535)().value;
+  const value = onLongPress(17539)().value;
   _require = value;
   let obj = require("ReanimatedRexport");
   const fn = function u() {
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj5 = { count: stateFromStores };
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1128).t.yBmFPA, obj5);
   }
-  const YouBarButtonContainer = tmp4(17533).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(17537).YouBarButtonContainer;
   const obj6 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,

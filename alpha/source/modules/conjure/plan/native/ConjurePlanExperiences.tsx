@@ -1,9 +1,9 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12282
+// Function ID: 12283
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9514, 12265, 10598, 11627, 10717, 5191, 587, 558, 576, 5187, 8506, 12254, 1128, 3883, 12267, 12263, 12247, 2]
+// Dependencies: [19, 17, 21, 9514, 12283, 10598, 11643, 10733, 5191, 587, 558, 576, 5187, 8506, 12272, 1128, 3883, 12285, 12281, 12265, 2]
 
-// Module 12264 (ConjurePlanExperiences)
+// Module 12282 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,12 +12,12 @@ import _modDef3883 from "module_3883" /* 3883 */;
 import AppsIcon2 from "AppsIcon" /* 8506 */;
 import GameControllerIcon from "GameControllerIcon" /* 9514 */;
 import UserCircleIcon from "UserCircleIcon" /* 10598 */;
-import ShieldIcon from "ShieldIcon" /* 10717 */;
-import RobotIcon from "RobotIcon" /* 11627 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12254 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12263 */;
-import WindowTopIcon from "WindowTopIcon" /* 12265 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12267 */;
+import ShieldIcon from "ShieldIcon" /* 10733 */;
+import RobotIcon from "RobotIcon" /* 11643 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12272 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12281 */;
+import WindowTopIcon from "WindowTopIcon" /* 12283 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12285 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -41,7 +41,7 @@ let obj9;
 let size;
 let tmp;
 const Text_Text = tmp(5187);
-const f112400 = (caption) => {
+const f112530 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f112400), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f112530), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f112400), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f112530), arraySpreadResult);
       items = items3;
     }
   }
@@ -802,7 +802,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
     if (tmp5) {
       BM4Ymz = _modDef3883.BM4Ymz;
     } else {
-      BM4Ymz = tmp(12267).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+      BM4Ymz = tmp(12285).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
     }
     const stringResult = string(BM4Ymz);
     cResult[7] = experience.kind;
@@ -848,7 +848,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   if (result) {
     BM4Ymz = _modDef3883.BM4Ymz;
   } else {
-    BM4Ymz = tmp2(12267).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    BM4Ymz = tmp2(12285).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
   }
   const obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
   items[1] = hasOwnProperty(Text, obj6);

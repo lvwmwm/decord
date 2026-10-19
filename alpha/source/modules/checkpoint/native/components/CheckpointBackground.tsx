@@ -1,15 +1,15 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12759
+// Function ID: 12760
 // Name: CheckpointBackground
-// Dependencies: [19, 5537, 1087, 21, 5191, 558, 576, 5491, 12743, 5128, 2]
+// Dependencies: [19, 5537, 1087, 21, 5191, 558, 576, 5491, 12760, 5128, 2]
 
-// Module 12742 (CheckpointBackground)
+// Module 12759 (CheckpointBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
-import _modDef12743 from "module_12743" /* 12743 */;
+import _modDef12760 from "module_12760" /* 12760 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef12743 };
+      const obj2 = { uri: _modDef12760 };
       cResult[5] = obj2;
       tmp10 = obj2;
     } else {
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const obj2 = { colors: memo, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp2.background };
   items1[0] = closure_6(LinearGradientDefault, obj2);
   const obj3 = { source: obj4, style: tmp2.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef12743 };
+  obj4 = { uri: _modDef12760 };
   const tmp4 = FastImageDefault;
   items1[1] = closure_6(tmp4, obj3);
   return closure_8(closure_7, obj);

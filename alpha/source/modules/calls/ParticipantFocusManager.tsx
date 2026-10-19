@@ -1,9 +1,9 @@
-// Module ID: 18619
-// Function ID: 18620
+// Module ID: 18623
+// Function ID: 18624
 // Name: ParticipantFocusManager
 // Dependencies: [5209, 6292, 7085, 2]
 
-// Module 18619 (ParticipantFocusManager)
+// Module 18623 (ParticipantFocusManager)
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;

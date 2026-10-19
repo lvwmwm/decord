@@ -1,15 +1,15 @@
 // Module ID: 5527
 // Function ID: 5528
 // Name: getSoundmojiASTFromString
-// Dependencies: [5528, 5532, 1087, 12716, 7330, 14838, 14839, 1417, 2]
+// Dependencies: [5528, 5532, 1087, 12733, 7330, 14842, 14843, 1417, 2]
 // Exports: default, getSoundmojiFromMessage
 
 // Module 5527 (getSoundmojiASTFromString)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import isSoundValidDefault from "isSoundValid" /* 7330 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12716 */;
-import getSoundStringDefault from "getSoundString" /* 14839 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12733 */;
+import getSoundStringDefault from "getSoundString" /* 14843 */;
 import SoundboardStore from "SoundboardStore" /* 5528 */;
 import MessageStore from "MessageStore" /* 5532 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(14838)(channelId, messageId, soundId[2], soundboardSounds);
+        const tmp16 = tmp8(14842)(channelId, messageId, soundId[2], soundboardSounds);
         tmp5 = tmp16;
         if (tmp9) {
           tmp5 = tmp16;
@@ -108,7 +108,7 @@ export const getSoundmojiFromMessage = function getSoundmojiFromMessage(guildId,
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(14838)(channelId, messageId, soundId, arg4);
+        const tmp16 = tmp8(14842)(channelId, messageId, soundId, arg4);
         if (tmp9) {
           if (null == tmp16) {
             const message = MessageStore.getMessage(channelId, messageId);

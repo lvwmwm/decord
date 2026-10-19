@@ -1,10 +1,10 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 12743
+// Function ID: 12744
 // Name: CheckpointActionCreators
-// Dependencies: [5, 2068, 1087, 584, 12727, 1297, 12728, 7290, 1267, 7635, 7445, 2]
+// Dependencies: [5, 2068, 1087, 584, 12744, 1297, 12745, 7290, 1267, 7635, 7445, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendSidekickMessage, toggleMute
 
-// Module 12726 (CheckpointActionCreators)
+// Module 12743 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;

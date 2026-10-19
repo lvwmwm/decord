@@ -1,9 +1,9 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 10677
+// Function ID: 10678
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6292, 2068, 2090, 12912, 21, 5191, 587, 558, 576, 504, 5521, 12913, 5205, 6377, 5073, 8431, 5187, 1128, 5477, 5179, 6462, 11561, 6174, 2]
+// Dependencies: [32, 19, 17, 6292, 2068, 2090, 10678, 21, 5191, 587, 558, 576, 504, 5521, 10679, 5205, 6377, 5073, 8431, 5187, 1128, 5477, 5179, 6462, 10676, 6174, 2]
 
-// Module 13334 (ChannelSpoiler)
+// Module 10677 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RootNavigationRef from "RootNavigationRef" /* 5073 */;
@@ -11,8 +11,8 @@ import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import GatedContentDefault from "GatedContent" /* 11561 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12912 */;
+import GatedContentDefault from "GatedContent" /* 10676 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
@@ -30,7 +30,7 @@ let c10;
 let size;
 let tmp14;
 let unpackModuleId;
-const VoicePanelStateContextDefault = tmp14(12913);
+const VoicePanelStateContextDefault = tmp14(10679);
 const View = react_native.View;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -186,7 +186,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp7(12913)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp7(10679)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;

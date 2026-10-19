@@ -1,9 +1,9 @@
-// Module ID: 11513
-// Function ID: 11514
+// Module ID: 11531
+// Function ID: 11532
 // Name: SingleVideoCall
-// Dependencies: [19, 10662, 21, 558, 576, 1633, 7130, 5205, 8577, 11282, 1202, 11271, 2]
+// Dependencies: [19, 10662, 21, 558, 576, 1633, 7130, 5205, 8577, 11300, 1202, 11290, 2]
 
-// Module 11513 (SingleVideoCall)
+// Module 11531 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
           }
         }
       }
-      tmp4(11282);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1202).AvatarSizes.PROFILE} resizeMode={channel(11271).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(11300);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1202).AvatarSizes.PROFILE} resizeMode={channel(11290).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

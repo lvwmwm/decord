@@ -1,9 +1,9 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10792
+// Function ID: 10793
 // Name: useFavoritesGuildChannelActions
 // Dependencies: [502, 2128, 2071, 558, 576, 2093, 504, 10625, 2]
 
-// Module 10776 (useFavoritesGuildChannelActions)
+// Module 10792 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;

@@ -1,15 +1,15 @@
-// Module ID: 16885
-// Function ID: 16886
+// Module ID: 16889
+// Function ID: 16890
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 5191, 558, 576, 5479, 5187, 12299, 6459, 5477, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 558, 576, 5479, 5187, 12316, 6459, 5477, 2]
 
-// Module 16885 (UserSettingsDesignSystemAIShimmer)
+// Module 16889 (UserSettingsDesignSystemAIShimmer)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import Stack_Stack from "Stack/Stack" /* 5477 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import Card_Card from "Card/Card" /* 6459 */;
-import AIShimmer from "AIShimmer" /* 12299 */;
+import AIShimmer from "AIShimmer" /* 12316 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

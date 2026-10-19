@@ -1,9 +1,9 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16415
+// Function ID: 16416
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5181, 8558, 21, 5191, 587, 558, 576, 8564, 1992, 8567, 504, 1128, 2981, 10820, 10938, 6330, 8557, 4888, 1202, 8647, 10565, 10566, 5187, 2]
+// Dependencies: [19, 17, 5181, 8558, 21, 5191, 587, 558, 576, 8564, 1992, 8567, 504, 1128, 2981, 10836, 10954, 6330, 8557, 4888, 1202, 8647, 10565, 10566, 5187, 2]
 
-// Module 16411 (DisplayNameStylesEditPreview)
+// Module 16415 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 }
                               }
                               const obj4 = { user, nameplate: pendingNameplate, nameplateData: tmp30, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp13, pendingGlobalName: displayName };
-                              const tmp33 = closure_7(user(10938).NameplatePreview, obj4);
+                              const tmp33 = closure_7(user(10954).NameplatePreview, obj4);
                               cResult[28] = stateFromStores;
                               cResult[29] = displayName;
                               cResult[30] = tmp13;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const obj7 = { user, displayName, guildId, displayNameStylesOverride: tmp13, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: tmp14 };
-          const tmp20 = closure_7(guildId(10820), obj7);
+          const tmp20 = closure_7(guildId(10836), obj7);
           cResult[12] = displayName;
           cResult[13] = tmp13;
           cResult[14] = guildId;

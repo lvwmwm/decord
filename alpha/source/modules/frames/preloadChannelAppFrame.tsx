@@ -1,12 +1,12 @@
-// Module ID: 13628
-// Function ID: 13629
+// Module ID: 13632
+// Function ID: 13633
 // Name: preloadChannelAppFrame
-// Dependencies: [2068, 4845, 6295, 6296, 1087, 2063, 11020, 6299, 11023, 2]
+// Dependencies: [2068, 4845, 6295, 6296, 1087, 2063, 11041, 6180, 6200, 6299, 11044, 2]
 // Exports: cancelChannelAppFramePreload, claimPreloadedFrame, preloadChannelAppFrame
 
-// Module 13628 (preloadChannelAppFrame)
+// Module 13632 (preloadChannelAppFrame)
 import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
-import leaveFrame from "leaveFrame" /* 11020 */;
+import leaveFrame from "leaveFrame" /* 11041 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import FramesStore from "FramesStore" /* 6295 */;
@@ -28,10 +28,9 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
   let application_id;
   let channel;
   let frameId;
-  let surface;
   let timeout;
   let timeout1;
-  const f117451 = () => {
+  const f117546 = () => {
     const value = map.get(frameId);
     const obj = map;
     if (null != value) {
@@ -77,57 +76,63 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
     }
   }
   if (null != tmp5) {
-    ({ applicationId, frameId } = tmp5);
-    ({ channel, surface } = tmp5);
+    ({ channel, applicationId, frameId } = tmp5);
+    const surface = tmp5.surface;
     if (map.has(frameId)) {
-      let value = obj7.get(frameId);
+      let value = obj9.get(frameId);
       if (value == null) {
         const self3 = this;
         const self4 = this;
-        const obj3 = { stopTimer: timeout, launchRequestId: "a" };
+        const obj4 = { stopTimer: timeout, launchRequestId: "r" };
         timeout = new frameId(2063).Timeout();
-        value = obj3;
+        value = obj4;
       }
-      const result = obj7.set(frameId, value);
+      const result = obj9.set(frameId, value);
       const stopTimer2 = value.stopTimer;
-      stopTimer2.start(5000, f117451);
+      stopTimer2.start(5000, f117546);
     } else {
       let obj2 = FramesStore;
       if (null == FramesStore.getFrame(frameId)) {
         if (PermissionStore.can(constants2.VIEW_CHANNEL, channel)) {
-          if (null != getURLForApplicationDefault(applicationId)) {
-            let value3 = obj7.get(frameId);
-            if (value3 == null) {
-              const self = this;
-              const self2 = this;
-              const obj5 = { stopTimer: timeout1, launchRequestId: "a" };
-              timeout1 = new frameId(2063).Timeout();
-              value3 = obj5;
-            }
-            const result1 = obj7.set(frameId, value3);
-            let stopTimer = value3.stopTimer;
-            stopTimer.start(5000, f117451);
-            const obj6 = { applicationId, surface, showErrorModal: false };
-            const obj4 = frameId(11023);
-            const launchFrameResult = obj4.launchFrame(obj6);
-            launchFrameResult.catch(() => {
-              const value = map.get(frameId);
-              const obj = map;
-              const tmp = frameId;
-              if (value != null) {
-                const stopTimer = value.stopTimer;
-                stopTimer.stop();
+          const obj3 = frameId(6180);
+          if (!obj3.isChannelContentGated(channel)) {
+            const tmp7Result = frameId(6200);
+            if (!tmp7Result.isChannelSpoilerGated(channel)) {
+              if (null != getURLForApplicationDefault(applicationId)) {
+                let value3 = obj9.get(frameId);
+                if (value3 == null) {
+                  const self = this;
+                  const self2 = this;
+                  const obj5 = { stopTimer: timeout1, launchRequestId: "r" };
+                  timeout1 = new tmp7(2063).Timeout();
+                  value3 = obj5;
+                }
+                const result1 = obj9.set(frameId, value3);
+                let stopTimer = value3.stopTimer;
+                stopTimer.start(5000, f117546);
+                const obj6 = { applicationId, surface, showErrorModal: false };
+                const tmp7Result2 = frameId(11044);
+                const launchFrameResult = tmp7Result2.launchFrame(obj6);
+                launchFrameResult.catch(() => {
+                  const value = map.get(frameId);
+                  const obj = map;
+                  const tmp = frameId;
+                  if (value != null) {
+                    const stopTimer = value.stopTimer;
+                    stopTimer.stop();
+                  }
+                  obj.delete(tmp);
+                });
+                const value4 = obj9.get(frameId);
+                if (null != value4) {
+                  let frame = obj2.getFrame(frameId);
+                  let launchRequestId;
+                  if (frame != null) {
+                    launchRequestId = frame.launchRequestId;
+                  }
+                  value4.launchRequestId = launchRequestId;
+                }
               }
-              obj.delete(tmp);
-            });
-            const value4 = obj7.get(frameId);
-            if (null != value4) {
-              let frame = obj2.getFrame(frameId);
-              let launchRequestId;
-              if (frame != null) {
-                launchRequestId = frame.launchRequestId;
-              }
-              value4.launchRequestId = launchRequestId;
             }
           }
         }

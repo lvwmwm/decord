@@ -1,10 +1,10 @@
-// Module ID: 12791
-// Function ID: 12792
+// Module ID: 12808
+// Function ID: 12809
 // Name: playFrameFromEmbed
-// Dependencies: [5, 11203, 10983, 2]
+// Dependencies: [5, 11222, 10999, 2]
 // Exports: default
 
-// Module 12791 (playFrameFromEmbed)
+// Module 12808 (playFrameFromEmbed)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

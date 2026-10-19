@@ -1,20 +1,20 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14368
+// Function ID: 14369
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 5215, 21, 5191, 558, 576, 7130, 7155, 504, 5072, 7748, 14365, 14366, 7175, 14373, 14376, 14377, 5465, 14380, 2]
+// Dependencies: [19, 17, 5215, 21, 5191, 558, 576, 7130, 7155, 504, 5072, 7748, 14369, 14370, 7175, 14377, 14380, 14381, 5465, 14384, 2]
 
-// Module 14364 (VoiceActionSheet)
+// Module 14368 (VoiceActionSheet)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5465 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14365 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14366 */;
-import NUFVoiceChannelsTemplateDefault from "NUFVoiceChannelsTemplate" /* 14373 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14376 */;
-import VoiceEmptyStateDefault from "VoiceEmptyState" /* 14377 */;
-import VoiceMemberListDefault from "VoiceMemberList" /* 14380 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14369 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14370 */;
+import NUFVoiceChannelsTemplateDefault from "NUFVoiceChannelsTemplate" /* 14377 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14380 */;
+import VoiceEmptyStateDefault from "VoiceEmptyState" /* 14381 */;
+import VoiceMemberListDefault from "VoiceMemberList" /* 14384 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;

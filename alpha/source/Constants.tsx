@@ -2081,11 +2081,11 @@ const obj2 = {
     return "/conjure/projects/" + arg0 + "/unpublish";
   },
   CONJURE_PROJECT_LIMIT: "/conjure/project-limit",
-  CONJURE_PROJECT_WS_TICKET(arg0) {
-    return "/conjure/projects/" + arg0 + "/ws-ticket";
+  CONJURE_PROJECT_WS_TICKET(projectId) {
+    return "/conjure/projects/" + projectId + "/ws-ticket";
   },
-  CONJURE_PROJECT_REMIX_TICKET(arg0) {
-    return "/conjure/projects/" + arg0 + "/remix-ticket";
+  CONJURE_PROJECT_REMIX_TICKET(id) {
+    return "/conjure/projects/" + id + "/remix-ticket";
   },
   CONJURE_PROJECT_PUBLISH(arg0) {
     return "/conjure/projects/" + arg0 + "/publish";

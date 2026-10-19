@@ -1,15 +1,15 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13275
+// Function ID: 13276
 // Name: BoostGemSlashIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 13268, 4912, 13269, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 13276, 4912, 13277, 2]
 
-// Module 13267 (BoostGemSlashIcon)
+// Module 13275 (BoostGemSlashIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage3 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 13268 */;
-import AssetRegistry2 from "AssetRegistry" /* 13269 */;
+import AssetRegistry from "AssetRegistry" /* 13276 */;
+import AssetRegistry2 from "AssetRegistry" /* 13277 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

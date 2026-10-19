@@ -1,9 +1,9 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 17877
+// Function ID: 17878
 // Name: SearchAutocompleteStore
-// Dependencies: [2068, 2128, 2090, 2119, 5058, 1392, 12990, 1087, 6372, 12987, 8975, 5057, 5301, 6376, 6226, 12991, 12988, 504, 584, 2]
+// Dependencies: [2068, 2128, 2090, 2119, 5058, 1392, 12998, 1087, 6372, 12995, 8975, 5057, 5301, 6376, 6226, 12999, 12996, 504, 584, 2]
 
-// Module 17873 (SearchAutocompleteStore)
+// Module 17877 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
@@ -12,16 +12,16 @@ import AutocompleteUtils from "AutocompleteUtils" /* 6226 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6372 */;
 import GuildUtilsDefault from "GuildUtils" /* 6376 */;
 import UserSearchManagerDefault from "UserSearchManager" /* 8975 */;
-import SearchUtils from "SearchUtils" /* 12987 */;
-import SearchTokens from "SearchTokens" /* 12988 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12991 */;
+import SearchUtils from "SearchUtils" /* 12995 */;
+import SearchTokens from "SearchTokens" /* 12996 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12999 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import StreamerModeStore from "StreamerModeStore" /* 5058 */;
 import UserStore from "UserStore" /* 1392 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12990 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12998 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

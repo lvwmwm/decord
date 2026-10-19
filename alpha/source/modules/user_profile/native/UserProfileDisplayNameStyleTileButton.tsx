@@ -1,9 +1,9 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15704
+// Function ID: 15705
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5181, 8558, 21, 5191, 587, 558, 576, 8564, 504, 2044, 1128, 15701, 10566, 10565, 6466, 6462, 2]
+// Dependencies: [19, 17, 5181, 8558, 21, 5191, 587, 558, 576, 8564, 504, 2044, 1128, 15705, 10566, 10565, 6466, 6462, 2]
 
-// Module 15700 (UserProfileDisplayNameStyleTileButton)
+// Module 15704 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8564 */;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
       tmp14 = cResult[6];
     }
     if (cResult[7] !== displayNameStyles) {
-      const tmpResult4 = tmp(15701);
+      const tmpResult4 = tmp(15705);
       const displayNameStyleAccessibleValue = tmpResult4.getDisplayNameStyleAccessibleValue(displayNameStyles);
       cResult[7] = displayNameStyles;
       cResult[8] = displayNameStyleAccessibleValue;
@@ -228,7 +228,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   const PressableHighlight = user(6462).PressableHighlight;
   intl = user(1128).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(15701);
+  obj5 = user(15705);
   intl2 = user(1128).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };

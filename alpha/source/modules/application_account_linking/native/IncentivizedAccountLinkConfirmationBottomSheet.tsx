@@ -1,9 +1,9 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18099
+// Function ID: 18100
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 5181, 1087, 21, 558, 576, 504, 5155, 4901, 2131, 5128, 16933, 1384, 9304, 16934, 5479, 1128, 13803, 587, 3367, 10635, 2]
+// Dependencies: [19, 5181, 1087, 21, 558, 576, 504, 5155, 4901, 2131, 5128, 16937, 1384, 9304, 16938, 5479, 1128, 13807, 587, 3367, 10635, 2]
 
-// Module 18095 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 18099 (IncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -18,8 +18,8 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9304 */;
 import PromoSheet2 from "PromoSheet" /* 10635 */;
-import _modDef16933 from "module_16933" /* 16933 */;
-import _modDef16934 from "module_16934" /* 16934 */;
+import _modDef16937 from "module_16937" /* 16937 */;
+import _modDef16938 from "module_16938" /* 16938 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -85,20 +85,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   if (cResult[4] !== stateFromStores) {
     let tmp11Result;
     if (stateFromStores) {
-      const obj3 = { uri: _modDef16933 };
+      const obj3 = { uri: _modDef16937 };
       FastImageDefault;
       size = { width: v150, height: v150 };
       tmp11Result = <tmp20 source={obj3} style={size} />;
     } else {
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isAndroid()) {
-        const obj4 = { url: _modDef16934, style: size1 };
+        const obj4 = { url: _modDef16938, style: size1 };
         size1 = { width: v150, height: v150 };
         const tmp12Result = APNGDecorationNativeComponentDefault;
         tmp11Result = tmp11(tmp12Result, obj4);
       } else {
         const obj5 = { source: obj6, resizeMode: "contain", style: size2 };
-        obj6 = { uri: _modDef16934 };
+        obj6 = { uri: _modDef16938 };
         size2 = { width: v150, height: v150 };
         const tmp12Result2 = FastImageDefault;
         tmp11Result = tmp11(tmp12Result2, obj5);
@@ -114,7 +114,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
     const Button = tmp(5479).Button;
     const intl = tmp(1128).intl;
     ({ size: "sm", color: nativeDefault.colors.WHITE });
-    const WindowLaunchIcon = tmp(13803).WindowLaunchIcon;
+    const WindowLaunchIcon = tmp(13807).WindowLaunchIcon;
     const tmp25 = <Button text={intl.string(intl4.t.aRIFWD)} icon={null} iconPosition="end" size="lg" onPress={tmp8} />;
     cResult[6] = tmp25;
     tmp22 = tmp25;
@@ -160,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   let obj = get_initialized;
   const items = [AccessibilityStore];
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
-    const obj3 = { uri: _modDef16933 };
+    const obj3 = { uri: _modDef16937 };
     FastImageDefault;
     size = { width: v150, height: v150 };
     tmp3Result = <tmp14 source={obj3} style={size} />;
@@ -169,7 +169,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   } else {
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
-      const obj4 = { url: _modDef16934, style: size1 };
+      const obj4 = { url: _modDef16938, style: size1 };
       size1 = { width: v150, height: v150 };
       const tmp4Result = APNGDecorationNativeComponentDefault;
       tmp3Result = tmp3(tmp4Result, obj4);
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
       tmp9 = tmp3;
     } else {
       const obj5 = { source: obj6, resizeMode: "contain", style: size2 };
-      obj6 = { uri: _modDef16934 };
+      obj6 = { uri: _modDef16938 };
       size2 = { width: v150, height: v150 };
       const tmp4Result2 = FastImageDefault;
       tmp3Result = tmp3(tmp4Result2, obj5);
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   const Button = tmp(5479).Button;
   intl = tmp(1128).intl;
   obj8 = { size: "sm", color: tmp8(587).colors.WHITE };
-  WindowLaunchIcon = tmp(13803).WindowLaunchIcon;
+  WindowLaunchIcon = tmp(13807).WindowLaunchIcon;
   const obj9 = {
     title: intl2.string(tmp8(3367).ublzTG),
     description: intl3.string(tmp8(3367).JgM2xu),

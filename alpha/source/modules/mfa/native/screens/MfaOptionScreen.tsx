@@ -1,9 +1,9 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16741
+// Function ID: 16742
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 558, 576, 6903, 16738, 5187, 5477, 16739, 7092, 6934, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6903, 16742, 5187, 5477, 16743, 7092, 6934, 2]
 
-// Module 16737 (MfaOptionScreen)
+// Module 16741 (MfaOptionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5187 */;
@@ -11,7 +11,7 @@ import Stack_Stack from "Stack/Stack" /* 5477 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 6903 */;
 import BackgroundImageDefault from "BackgroundImage" /* 6934 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 16738 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 16742 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -172,7 +172,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
               let tmp27 = tmp25;
               if (tmp27) {
                 const obj8 = { props: screenProps };
-                tmp27 = React3(tmp4(16739), obj8);
+                tmp27 = React3(tmp4(16743), obj8);
               }
               cResult[16] = screenProps;
               cResult[17] = type === mfaMethod;
@@ -264,7 +264,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAOptionS
   const Stack3 = tmp8(5477).Stack;
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(16739), obj8);
+    tmp10Result5 = tmp10(tmp(16743), obj8);
   }
   items3[1] = tmp10Result5;
   items2[2] = hasOwnProperty(Stack3, obj7);

@@ -1,13 +1,13 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 10951
+// Function ID: 10952
 // Name: navigateToLastChannel
-// Dependencies: [5072, 10936, 5202, 2]
+// Dependencies: [5072, 10952, 5202, 2]
 // Exports: default
 
-// Module 10935 (navigateToLastChannel)
+// Module 10951 (navigateToLastChannel)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import transitionToChannel2 from "transitionToChannel" /* 5202 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 10936 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 10952 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");

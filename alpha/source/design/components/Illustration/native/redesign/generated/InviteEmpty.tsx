@@ -1,10 +1,10 @@
-// Module ID: 18841
-// Function ID: 18842
+// Module ID: 18845
+// Function ID: 18846
 // Name: InviteEmpty
-// Dependencies: [19, 21, 8633, 10620, 18842, 10619, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8633, 10620, 18846, 10619, 558, 576, 5065, 5128, 2]
 // Exports: getInviteEmptySource
 
-// Module 18841 (InviteEmpty)
+// Module 18845 (InviteEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 5065 */;

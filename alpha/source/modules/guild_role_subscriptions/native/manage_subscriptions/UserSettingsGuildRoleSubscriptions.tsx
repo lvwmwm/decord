@@ -1,16 +1,16 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16267
+// Function ID: 16268
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 5191, 558, 576, 5187, 1128, 1202, 16264, 16265, 16266, 16269, 16270, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 5187, 1128, 1202, 16268, 16269, 16270, 16273, 16274, 2]
 
-// Module 16263 (UserSettingsGuildRoleSubscriptions)
+// Module 16267 (UserSettingsGuildRoleSubscriptions)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 16264 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 16265 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 16269 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 16270 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 16268 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 16269 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 16273 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 16274 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const native = tmp(1202);
-const GuildRoleSubscriptionsHooks = tmp(16266);
+const GuildRoleSubscriptionsHooks = tmp(16270);
 function renderSectionHeader(section) {
   let tmp = null;
   if (section.section.key === c7) {

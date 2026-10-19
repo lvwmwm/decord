@@ -247,10 +247,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConvers
   }
   return enabled;
 });
-function isConversationDebugUXEnabled(arg0, location) {
-  let tmp2 = null != arg0;
+function isConversationDebugUXEnabled(guildId, location) {
+  let tmp2 = null != guildId;
   if (tmp2) {
-    const guild = GuildStore.getGuild(arg0);
+    const guild = GuildStore.getGuild(guildId);
     let flag;
     if (guild != null) {
       const features = guild.features;

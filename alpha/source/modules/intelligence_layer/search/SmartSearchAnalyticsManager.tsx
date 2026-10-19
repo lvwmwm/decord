@@ -1,14 +1,14 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13012
+// Function ID: 13013
 // Name: SmartSearchAnalyticsManager
-// Dependencies: [12981, 1087, 568, 12987, 5206, 2]
+// Dependencies: [12989, 1087, 568, 12995, 5206, 2]
 
-// Module 13004 (SmartSearchAnalyticsManager)
+// Module 13012 (SmartSearchAnalyticsManager)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import SearchUtils from "SearchUtils" /* 12987 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12981 */;
+import SearchUtils from "SearchUtils" /* 12995 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12989 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -45,8 +45,17 @@ class SmartSearchAnalyticsManager {
     merged[0] = { isRowViewable: false, isTabActive: false, isAppActive: true, currentAnswer: null };
     return merged;
   }
-  getParentSuggestedSearch() {
-    return this.parentSuggestedSearch;
+  getParentSuggestedSearch(queryText) {
+    const parentSuggestedSearch = this.parentSuggestedSearch;
+    let suggestedSearchText;
+    if (parentSuggestedSearch != null) {
+      suggestedSearchText = parentSuggestedSearch.suggestedSearchText;
+    }
+    let prop = null;
+    if (suggestedSearchText === queryText) {
+      prop = this.parentSuggestedSearch;
+    }
+    return prop;
   }
   setIsRowViewable(isViewable, getQueryId) {
     const obj = { isRowViewable: isViewable };
@@ -113,27 +122,18 @@ class SmartSearchAnalyticsManager {
       }
     }
   }
-  getParentSuggestedSearchId(queryText) {
-    const self = this;
-    let tmp = null;
-    if (null != this.parentSuggestedSearch) {
-      let suggestionId;
-      if (queryText === self.parentSuggestedSearch.suggestedSearchText) {
-        suggestionId = self.parentSuggestedSearch.suggestionId;
-      } else {
-        self.parentSuggestedSearch = null;
-        suggestionId = null;
-      }
-      tmp = suggestionId;
-    }
-    return tmp;
-  }
   getContextualProperties(smartSearchQuery, getQueryId) {
     let obj2;
-    let parentSuggestedSearchId;
     const queryId = getQueryId.getQueryId(smartSearchQuery.searchContext);
-    const obj = { search_session_id: getQueryId.getSessionId(smartSearchQuery.searchContext), search_query_id: queryId, search_location: getQueryId.getLocation(smartSearchQuery.searchContext), guild_id: smartSearchQuery.guildId, channel_id: obj2.getChannelIdFromSearchContext(smartSearchQuery.searchContext), filter_channel_ids: smartSearchQuery.channelIds, num_filter_channels: smartSearchQuery.channelIds.length, parent_suggested_search_id: parentSuggestedSearchId };
-    parentSuggestedSearchId = this.getParentSuggestedSearchId(smartSearchQuery.queryText);
+    const parentSuggestedSearch = this.getParentSuggestedSearch(smartSearchQuery.queryText);
+    let suggestionId;
+    if (parentSuggestedSearch != null) {
+      suggestionId = parentSuggestedSearch.suggestionId;
+    }
+    if (suggestionId == null) {
+      suggestionId = null;
+    }
+    const obj = { search_session_id: getQueryId.getSessionId(smartSearchQuery.searchContext), search_query_id: queryId, search_location: getQueryId.getLocation(smartSearchQuery.searchContext), guild_id: smartSearchQuery.guildId, channel_id: obj2.getChannelIdFromSearchContext(smartSearchQuery.searchContext), filter_channel_ids: smartSearchQuery.channelIds, num_filter_channels: smartSearchQuery.channelIds.length, parent_suggested_search_id: suggestionId };
     obj2 = SearchUtils;
     return obj;
   }

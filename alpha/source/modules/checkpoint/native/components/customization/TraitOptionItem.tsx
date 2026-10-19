@@ -1,9 +1,9 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 12794
+// Function ID: 12795
 // Name: TraitOptionItem
-// Dependencies: [17, 5537, 21, 587, 5191, 558, 576, 5538, 9327, 5491, 6520, 12737, 7843, 5128, 4927, 2]
+// Dependencies: [17, 5537, 21, 587, 5191, 558, 576, 5538, 9327, 5491, 6520, 12754, 7843, 5128, 4927, 2]
 
-// Module 12777 (TraitOptionItem)
+// Module 12794 (TraitOptionItem)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react_native from "react-native" /* 4927 */;
@@ -12,7 +12,7 @@ import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
 import _modDef6520 from "module_6520" /* 6520 */;
 import inlineStylesDefault from "inlineStyles" /* 7843 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12737 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12754 */;
 import react_native2 from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import Fragment from "Fragment" /* 21 */;
@@ -285,7 +285,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const tmp13 = isSelected ? hasOwnProperty : hasOwnProperty;
   let num3 = 1;
   if (isSelected) {
-    num3 = tmp(12737).TRAIT_OPTION_STROKE_WIDTH;
+    num3 = tmp(12754).TRAIT_OPTION_STROKE_WIDTH;
   }
   if (cResult[2] === tmp13) {
     let tmp14;
@@ -364,7 +364,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const Polygon = inlineStyles.Polygon;
   num = 1;
   if (isSelected) {
-    num = tmp13(12737).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp13(12754).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = unpackModuleId(Polygon, obj5);
   let tmp12Result = !isNoneOption;

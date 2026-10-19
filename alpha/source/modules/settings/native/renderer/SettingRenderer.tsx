@@ -1,10 +1,10 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15735
+// Function ID: 15736
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2132, 15730, 2090, 11066, 21, 5191, 587, 1202, 6457, 504, 1505, 15732, 558, 576, 1128, 10475, 6436, 15734, 15735, 5187, 7173, 7172, 4929, 6540, 6539, 7162, 4903, 11451, 5156, 5157, 6459, 5477, 1903, 1384, 15061, 6462, 5479, 4913, 15736, 1896, 2]
+// Dependencies: [32, 109, 19, 17, 2132, 15734, 2090, 11085, 21, 5191, 587, 1202, 6457, 504, 1505, 15736, 558, 576, 1128, 10475, 6436, 15738, 15739, 5187, 7173, 7172, 4929, 6540, 6539, 7162, 4903, 11469, 5156, 5157, 6459, 5477, 1903, 1384, 15065, 6462, 5479, 4913, 15740, 1896, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 15731 (SettingRenderer)
+// Module 15735 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -20,18 +20,18 @@ import Text_Text from "Text/Text" /* 5187 */;
 import GuildIcon from "GuildIcon" /* 6436 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
 import FormSwitch from "FormSwitch" /* 7173 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11451 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15732 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 15734 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 15735 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15736 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11469 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15736 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 15738 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 15739 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15740 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15730 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15734 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11066 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -55,7 +55,7 @@ let tmp2;
 const TableRow2 = tmp(6457);
 const TableRadioGroup2 = tmp2(6540);
 const ClydeIcon = tmp(10475);
-const f122730 = () => _undefined.locale;
+const f122825 = () => _undefined.locale;
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -170,7 +170,7 @@ let closure_18 = react.memo(function RouteSetting(arg0) {
   const stackNavigation = obj.useStackNavigation();
   let obj2 = screen(preNavigationAction[13]);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   preNavigationAction = undefined;
   const title = useTitle();
   if (usePreNavigationAction != null) {
@@ -444,7 +444,7 @@ let closure_22 = react.memo(function PressableSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   let description;
   const title = useTitle();
   if (useDescription != null) {
@@ -603,7 +603,7 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   const title = useTitle();
   const value = useValue();
   let description;
@@ -703,7 +703,7 @@ let closure_26 = react.memo(function RadioSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   const title = useTitle();
   const value = useValue();
   const options = useOptions();
@@ -758,11 +758,11 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(15734);
+  let obj = trailing(15738);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {
@@ -827,7 +827,7 @@ let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
   const items = [LocaleStore];
   const tmp4 = closure_17();
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122730);
+  const stateFromStores = obj2.useStateFromStores(items, f122825);
   const title = useTitle();
   let value;
   if (useValue != null) {
@@ -882,7 +882,7 @@ let closure_29 = react.memo(function SliderSetting(useTrailing) {
   ({ useTitle, start, end, useProps } = useTrailing);
   let obj = onSlidingComplete(num2[13]);
   const items = [c9];
-  const stateFromStores = obj.useStateFromStores(items, f122730);
+  const stateFromStores = obj.useStateFromStores(items, f122825);
   const title = useTitle();
   const props = useProps();
   onSlidingComplete = props.onSlidingComplete;

@@ -36,7 +36,7 @@ let tmp6;
 let unpackModuleId;
 const useRoutedActiveGuildThemeDefault = tmp6(5071);
 const LinearGradientDefault = tmp4(5491);
-const f105768 = (item) => item / 100;
+const f105817 = (item) => item / 100;
 function getMixedGradientColor(mixColorOverride) {
   let b;
   let darkFallbackAmount;
@@ -797,7 +797,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f105768);
+    mapped1 = gradientColorStops.map(f105817);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1048,7 +1048,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f105768);
+    mapped1 = gradientColorStops.map(f105817);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {

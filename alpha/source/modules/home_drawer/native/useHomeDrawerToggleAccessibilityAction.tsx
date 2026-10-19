@@ -1,9 +1,9 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 17443
+// Function ID: 17444
 // Name: useHomeDrawerToggleAccessibilityAction
 // Dependencies: [19, 558, 576, 1128, 5072, 4923, 2]
 
-// Module 17439 (useHomeDrawerToggleAccessibilityAction)
+// Module 17443 (useHomeDrawerToggleAccessibilityAction)
 import intl2 from "intl" /* 1128 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import react from "react" /* 19 */;

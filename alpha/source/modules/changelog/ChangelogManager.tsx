@@ -1,9 +1,9 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18458
+// Function ID: 18459
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2132, 7291, 7085, 8395, 18455, 584, 11, 18457, 2]
+// Dependencies: [5, 32, 2132, 7291, 7085, 8395, 18459, 584, 11, 18461, 2]
 
-// Module 18454 (ChangelogManager)
+// Module 18458 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2132 */;

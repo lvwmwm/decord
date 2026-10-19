@@ -1,9 +1,9 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 10929
+// Function ID: 10930
 // Name: Modal
 // Dependencies: [19, 21, 558, 576, 1633, 6536, 6965, 2]
 
-// Module 10913 (Modal)
+// Module 10929 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

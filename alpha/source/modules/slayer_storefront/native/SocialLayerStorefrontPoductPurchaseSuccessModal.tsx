@@ -1,9 +1,9 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13650
+// Function ID: 13651
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5181, 6310, 7210, 1087, 21, 5191, 587, 558, 576, 4945, 5478, 5192, 5156, 1499, 504, 8600, 7207, 5187, 1128, 5479, 5128, 5491, 6485, 6487, 9320, 7092, 7134, 7131, 10816, 7155, 1267, 10459, 5496, 3753, 9240, 5057, 2]
+// Dependencies: [32, 729, 19, 17, 5181, 6310, 7210, 1087, 21, 5191, 587, 558, 576, 4945, 5478, 5192, 5156, 1499, 504, 8600, 7207, 5187, 1128, 5479, 5128, 5491, 6485, 6487, 9320, 7092, 7134, 7131, 10832, 7155, 1267, 10459, 5496, 3753, 9240, 5057, 2]
 
-// Module 13646 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 13650 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -510,7 +510,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   let title;
   let tmp18Result4;
   let useReducedMotion;
-  const f117679 = () => useReducedMotion.useReducedMotion;
+  const f117774 = () => useReducedMotion.useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
   let width;
@@ -522,8 +522,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   width = require("useWindowDimensions")().width;
   let obj = sku(width[18]);
   const items = [AccessibilityStore];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f117679)));
-  const tmp5 = closure_26(obj.useStateFromStores(items, f117679));
+  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f117774)));
+  const tmp5 = closure_26(obj.useStateFromStores(items, f117774));
   let obj2 = sku(width[19]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let obj3 = react;

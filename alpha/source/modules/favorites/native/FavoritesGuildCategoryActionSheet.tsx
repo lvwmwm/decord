@@ -1,12 +1,12 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17240
+// Function ID: 17241
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 2071, 21, 558, 576, 5521, 13630, 2044, 7117, 7171, 10621, 1128, 7368, 17237, 10316, 7162, 4903, 7175, 504, 2]
+// Dependencies: [19, 2071, 21, 558, 576, 5521, 13634, 2044, 7117, 7171, 10621, 1128, 7368, 17241, 10316, 7162, 4903, 7175, 504, 2]
 
-// Module 17236 (FavoritesGuildCategoryActionSheet)
+// Module 17240 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 4903 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 17237 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 17241 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   category = category.category;
   const onClose = category.onClose;
   const tmp4 = onClose(5521)(category, true);
-  const tmp5 = onClose(13630)(category);
+  const tmp5 = onClose(13634)(category);
   dependencyMap = tmp5;
   const DeveloperMode = category(2044).DeveloperMode;
   const setting = DeveloperMode.useSetting();
@@ -190,7 +190,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   category = category.category;
   const onClose = category.onClose;
   const tmp2 = onClose(5521)(category, true);
-  const tmp3 = onClose(13630)(category);
+  const tmp3 = onClose(13634)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(2044).DeveloperMode;
   const setting = DeveloperMode.useSetting();

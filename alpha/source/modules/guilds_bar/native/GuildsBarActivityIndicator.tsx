@@ -1,9 +1,9 @@
-// Module ID: 17472
-// Function ID: 17473
+// Module ID: 17476
+// Function ID: 17477
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 5191, 587, 558, 576, 4913, 1202, 6439, 8952, 9049, 8497, 8836, 9386, 17473, 11168, 17474, 8501, 17475, 8506, 8436, 17471, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 4913, 1202, 6439, 8952, 9049, 8497, 8836, 9386, 17477, 11187, 17478, 8501, 17479, 8506, 8436, 17475, 2]
 
-// Module 17472 (GuildsBarActivityIndicator)
+// Module 17476 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,11 +17,11 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 8836 */;
 import CalendarIcon from "CalendarIcon" /* 8952 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9049 */;
 import ScreenIcon from "ScreenIcon" /* 9386 */;
-import VideoIcon from "VideoIcon" /* 11168 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 17471 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17473 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17474 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 17475 */;
+import VideoIcon from "VideoIcon" /* 11187 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 17475 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17477 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17478 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 17479 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,18 +1,18 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16253
+// Function ID: 16254
 // Name: QuestDockBountyHeader
-// Dependencies: [19, 17, 6228, 16133, 21, 587, 5191, 558, 576, 16161, 16134, 4945, 5478, 8668, 16243, 1384, 16242, 16130, 16149, 6231, 7681, 16250, 7039, 5128, 5187, 1128, 6462, 16232, 2]
+// Dependencies: [19, 17, 6228, 16137, 21, 587, 5191, 558, 576, 16165, 16138, 4945, 5478, 8668, 16247, 1384, 16246, 16134, 16153, 6231, 7681, 16254, 7039, 5128, 5187, 1128, 6462, 16236, 2]
 
-// Module 16249 (QuestDockBountyHeader)
+// Module 16253 (QuestDockBountyHeader)
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5478 */;
 import QuestTypes from "QuestTypes" /* 6231 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16149 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
-import QuestDockConstants from "QuestDockConstants" /* 16133 */;
+import QuestDockConstants from "QuestDockConstants" /* 16137 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,14 +62,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = activeQuestDockMode;
   let obj = activeQuestDockMode(576);
   const cResult = obj.c(67);
-  let obj2 = activeQuestDockMode(16161);
+  let obj2 = activeQuestDockMode(16165);
   const questDockBounty = obj2.useQuestDockBounty();
   const tmp5 = closure_11();
   let str = questDockBounty.productName;
   if (str == null) {
     str = "";
   }
-  activeQuestDockMode = react.useContext(tmp(16134).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(tmp(16138).QuestDockGestureContext).activeQuestDockMode;
   const fn = function o() {
     const withSpring = spring.withSpring;
     let num = 1;
@@ -104,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const animatedStyle1 = tmpResult7.useAnimatedStyle(fn2);
   const EXPANDED = QuestDockMode.EXPANDED;
   const tmp9 = bountyCreative(8668)(activeQuestDockMode);
-  const tmpResult8 = tmp(16243);
+  const tmpResult8 = tmp(16247);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = tmpResult8.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   if (cResult[0] !== isBountiesAndroidQuestBarSmokeAnimationEnabled) {
     const tmpResult9 = tmp(1384);
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[1];
   }
-  const tmpResult10 = tmp(16242);
+  const tmpResult10 = tmp(16246);
   const smokeArtSize = tmpResult10.useSmokeArtSize();
   ({ width, height } = smokeArtSize);
   if (cResult[2] === height) {
@@ -126,9 +126,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[3] === width) {
       tmp14 = cResult[4];
     }
-    const tmpResult11 = tmp(16161);
+    const tmpResult11 = tmp(16165);
     bountyCreative = tmpResult11.useBountyCreative(questDockBounty);
-    const tmpResult12 = tmp(16130);
+    const tmpResult12 = tmp(16134);
     const actionSheetPressHandler = tmpResult12.useActionSheetPressHandler(bountyCreative);
     if (cResult[5] !== bountyCreative) {
       const fn3 = function v() {
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_8(bountyCreative(16250), {});
+      const tmp21 = closure_8(bountyCreative(16254), {});
       cResult[7] = tmp21;
       tmp19 = tmp21;
     } else {
@@ -167,8 +167,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp23 = cResult[13];
         }
         if (cResult[14] !== (tmp9 === EXPANDED)) {
-          const obj5 = { surface: tmp(16242).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
-          const tmp8Result = bountyCreative(16242);
+          const obj5 = { surface: tmp(16246).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
+          const tmp8Result = bountyCreative(16246);
           const tmp28 = closure_8(tmp8Result, obj5);
           cResult[14] = tmp9 === EXPANDED;
           cResult[15] = tmp28;
@@ -287,9 +287,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                     return tmp73;
                                                   }
                                                 }
-                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(16250).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
+                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(16254).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
                                                 items = [tmp32, tmp69];
-                                                const tmp8Result2 = bountyCreative(16232);
+                                                const tmp8Result2 = bountyCreative(16236);
                                                 const tmp76 = closure_9(tmp8Result2, obj8);
                                                 cResult[63] = actionSheetPressHandler;
                                                 cResult[64] = tmp69;

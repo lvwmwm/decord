@@ -1,17 +1,17 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17108
+// Function ID: 17109
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1087, 21, 5191, 17105, 6433, 5187, 1128, 5479, 1202, 5057, 558, 576, 1505, 5887, 1267, 17106, 17110, 6931, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 17109, 6433, 5187, 1128, 5479, 1202, 5057, 558, 576, 1505, 5887, 1267, 17110, 17114, 6931, 2]
 
-// Module 17104 (CompanionRemoteAuth)
+// Module 17108 (CompanionRemoteAuth)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
 import reactDefault from "react" /* 5887 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6433 */;
-import typing from "typing" /* 17105 */;
-import react_nativeDefault from "react-native" /* 17110 */;
+import typing from "typing" /* 17109 */;
+import react_nativeDefault from "react-native" /* 17114 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(17106);
+  const tmpResult = tmp(17110);
   const state = tmpResult.useAuthWebsocket(first, true).state;
   if (cResult[1] !== navigation) {
     class E {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
       }
     }
   }
-  if (state.step === tmp(17105).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === tmp(17109).RemoteAuthStep.PENDING_REMOTE_INIT) {
     class E {
       constructor() {
         navigation.goBack();
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
     track(LOGIN_SUCCESSFUL, obj);
   }, []);
-  const obj3 = navigation(17106);
+  const obj3 = navigation(17110);
   const state = obj3.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = react.useCallback(() => {
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   const tmp5 = fingerprint;
   fingerprint = null;
   const obj2 = react;
-  if (state.step === navigation(17105).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(17109).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];

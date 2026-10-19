@@ -1,9 +1,9 @@
-// Module ID: 11145
-// Function ID: 11146
+// Module ID: 11164
+// Function ID: 11165
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2068, 4845, 4855, 1392, 10527, 1087, 21, 5191, 558, 576, 573, 8877, 7015, 11146, 11155, 11156, 1128, 10640, 10639, 5033, 2052, 11158, 11163, 7368, 11164, 1896, 8955, 8857, 2]
+// Dependencies: [32, 19, 17, 2068, 4845, 4855, 1392, 10527, 1087, 21, 5191, 558, 576, 573, 8877, 7015, 11165, 11174, 11175, 1128, 10640, 10639, 5033, 2052, 11177, 11182, 7368, 11183, 1896, 8955, 8857, 2]
 
-// Module 11145 (useMemberListAction)
+// Module 11164 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
@@ -11,9 +11,9 @@ import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10527 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11146 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11158 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11164 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11165 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11177 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11183 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

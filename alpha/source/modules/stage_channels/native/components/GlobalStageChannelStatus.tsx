@@ -1,9 +1,9 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11422
+// Function ID: 11423
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 4897, 2073, 1087, 21, 1128, 5191, 587, 558, 576, 5521, 504, 11007, 5496, 7986, 11394, 6205, 7764, 6174, 7754, 7750, 1202, 5187, 5480, 5479, 11396, 11231, 5127, 4920, 10669, 8431, 2]
+// Dependencies: [5, 32, 19, 17, 4897, 2073, 1087, 21, 1128, 5191, 587, 558, 576, 5521, 504, 11028, 5496, 7986, 11412, 6205, 7764, 6174, 7754, 7750, 1202, 5187, 5480, 5479, 11414, 11250, 5127, 4920, 10669, 8431, 2]
 
-// Module 11404 (GlobalStageChannelStatus)
+// Module 11422 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,9 +11,9 @@ import intl8 from "intl" /* 1128 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7754 */;
 import StatusBarDefault from "StatusBar" /* 10669 */;
-import PushNotificationDefault from "PushNotification" /* 11007 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11231 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11396 */;
+import PushNotificationDefault from "PushNotification" /* 11028 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11250 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11414 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -156,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(tmp22);
     let tmp25;
-    const useGetStageRTCPanelHeight = tmp(11394).useGetStageRTCPanelHeight;
-    tmp(11394);
+    const useGetStageRTCPanelHeight = tmp(11412).useGetStageRTCPanelHeight;
+    tmp(11412);
     if (channel != null) {
       class S {
         constructor() {
@@ -580,7 +580,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     id2 = channel.id;
   }
   const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-  channel(11394);
+  channel(11412);
   if (channel != null) {
     let id = channel.id;
   }
@@ -911,7 +911,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     stringResult = intl.string(id(1128).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11231)(id);
+  let invitedHeaderText = tmp3(11250)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);

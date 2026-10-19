@@ -1,10 +1,10 @@
-// Module ID: 17902
-// Function ID: 17903
+// Module ID: 17906
+// Function ID: 17907
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2068, 14827, 5209, 1392, 10520, 1087, 21, 5191, 587, 7290, 7748, 7292, 12499, 5155, 504, 11148, 11150, 11147, 1267, 4904, 1128, 17901, 9599, 11151, 4903, 9609, 8996, 8770, 8966, 1202, 10521, 17842, 2]
+// Dependencies: [32, 5, 19, 17, 2068, 14831, 5209, 1392, 10520, 1087, 21, 5191, 587, 7290, 7748, 7292, 12516, 5155, 504, 11167, 11169, 11166, 1267, 4904, 1128, 17905, 9599, 11170, 4903, 9609, 8996, 8770, 8966, 1202, 10521, 17846, 2]
 // Exports: default
 
-// Module 17902 (NewGroupDMScreen)
+// Module 17906 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -12,14 +12,14 @@ import ToastUtils from "ToastUtils" /* 4903 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
 import UserRowConstants from "UserRowConstants" /* 10520 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11151 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17901 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11170 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17905 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14827 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14831 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

@@ -1,10 +1,10 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11855
+// Function ID: 11856
 // Name: getPlatform
 // Dependencies: [2000, 2]
 // Exports: default
 
-// Module 11836 (getPlatform)
+// Module 11855 (getPlatform)
 import Server from "Server" /* 2000 */;
 import size from "module_2" /* 2 */;
 

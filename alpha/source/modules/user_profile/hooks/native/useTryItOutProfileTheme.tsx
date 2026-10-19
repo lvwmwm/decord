@@ -1,9 +1,9 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15694
+// Function ID: 15695
 // Name: useTryItOutProfileTheme
 // Dependencies: [8558, 558, 576, 8584, 504, 8627, 8567, 8541, 587, 2]
 
-// Module 15690 (useTryItOutProfileTheme)
+// Module 15694 (useTryItOutProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import useAvatarColor from "useAvatarColor" /* 8541 */;

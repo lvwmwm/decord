@@ -1,9 +1,9 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 16863
+// Function ID: 16864
 // Name: UserSettingsDesignSystemTooltip
 // Dependencies: [32, 19, 17, 21, 5191, 558, 576, 8724, 9743, 5479, 7172, 6539, 6540, 5187, 7124, 7092, 2]
 
-// Module 16859 (UserSettingsDesignSystemTooltip)
+// Module 16863 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5187 */;

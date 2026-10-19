@@ -1,9 +1,9 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11024
+// Function ID: 11025
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 9526, 1633, 4945, 5478, 1128, 11004, 6485, 6462, 5187, 11006, 7092, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 9526, 1633, 4945, 5478, 1128, 11025, 6485, 6462, 5187, 11027, 7092, 2]
 
-// Module 11003 (OAuth2AuthorizeModal)
+// Module 11024 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5478 */;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
           }
         }
         const obj5 = { color: sharedValue(587).colors.INTERACTIVE_TEXT_DEFAULT };
-        const ArrowSmallLeftIcon = tmp(11004).ArrowSmallLeftIcon;
+        const ArrowSmallLeftIcon = tmp(11025).ArrowSmallLeftIcon;
         tmp18 = closure_5(ArrowSmallLeftIcon, obj5);
       } else {
         class S {
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(11004).ArrowSmallLeftIcon;
+    const ArrowSmallLeftIcon = tmp5(11025).ArrowSmallLeftIcon;
     tmp11Result = tmp11(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
   const SafeAreaPaddingView = tmp5(7092).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(11006);
+  tmp2Result = tmp2(11027);
   const merged = Object.assign(tmp4);
   items4[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

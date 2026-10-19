@@ -1,12 +1,12 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 11007
+// Function ID: 11008
 // Name: conjureBrowserSessionsConnection
-// Dependencies: [584, 10982, 2]
+// Dependencies: [584, 10998, 2]
 // Exports: refreshBrowserSessions
 
-// Module 10988 (conjureBrowserSessionsConnection)
+// Module 11007 (conjureBrowserSessionsConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10982 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

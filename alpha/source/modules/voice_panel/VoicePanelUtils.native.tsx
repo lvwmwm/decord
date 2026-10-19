@@ -1,9 +1,9 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11418
+// Function ID: 11419
 // Name: VoicePanelUtils
 // Dependencies: [2068, 5209, 6352, 558, 576, 573, 2]
 
-// Module 11400 (VoicePanelUtils)
+// Module 11418 (VoicePanelUtils)
 import react from "react" /* 576 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;

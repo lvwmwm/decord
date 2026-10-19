@@ -1,15 +1,15 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11065
+// Function ID: 11066
 // Name: conjurePublishConnection
-// Dependencies: [6293, 10977, 584, 11036, 10982, 2]
+// Dependencies: [6293, 10993, 584, 11057, 10998, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, recordPatchNotesSent, rejectPendingPublish
 
-// Module 11046 (conjurePublishConnection)
+// Module 11065 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10982 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11036 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11057 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10977 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10993 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPatchNotesDraft(projectId, arg1) {
@@ -37,12 +37,12 @@ let obj = {
 };
 let obj2 = {
   publish_cta(publish_cta, arg1) {
-    let obj;
     let obj3;
+    let str;
     if (null != publish_cta.publish_cta) {
       const surface = publish_cta.publish_cta.surface;
       let tmp3 = null;
-      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId: tmp, turnId: publish_cta.turn_id, patch: obj };
+      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId: tmp, turnId: publish_cta.turn_id, patch: obj3 };
       const dispatch = DispatcherDefault.dispatch;
       DispatcherDefault;
       if (null != surface) {
@@ -51,8 +51,12 @@ let obj2 = {
           tmp3 = surface;
         }
       }
-      obj = { publishCta: obj3 };
-      obj3 = { surface: tmp3 };
+      const obj = { surface: tmp3, reason: str };
+      str = "first_publish";
+      if ("new_ui" === publish_cta.publish_cta.reason) {
+        str = "new_ui";
+      }
+      obj3 = { publishCta: obj };
       dispatch(obj2);
     }
   },
@@ -63,7 +67,7 @@ let obj2 = {
     let published_revision;
     let tmp2;
     projectId = projectId.projectId;
-    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: true === published.published, hasUnpublishedChanges: true === published.has_unpublished_changes, surface: tmp2, previewAppChannels: found, publishedRevision: published_revision, publishedAt: published_at, publishing: true === published.publishing, patchNotesSent: flatMapResult };
+    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: true === published.published, hasUnpublishedChanges: true === published.has_unpublished_changes, surface: tmp2, previewAppChannels: found, publishedRevision: published_revision, publishedAt: published_at, publishing: true === published.publishing, patchNotesSent: flatMapResult, newUiUnpublished: true === published.new_ui_unpublished };
     const surface = published.surface;
     tmp2 = null;
     const dispatch = DispatcherDefault.dispatch;

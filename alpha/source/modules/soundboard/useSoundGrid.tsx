@@ -1,16 +1,16 @@
-// Module ID: 18207
-// Function ID: 18208
+// Module ID: 18211
+// Function ID: 18212
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2068, 2090, 4845, 2119, 1392, 5528, 5530, 1394, 7325, 8294, 18208, 558, 576, 504, 4864, 5531, 18209, 8848, 18210, 5496, 2]
+// Dependencies: [32, 19, 2068, 2090, 4845, 2119, 1392, 5528, 5530, 1394, 7325, 8294, 18212, 558, 576, 504, 4864, 5531, 18213, 8848, 18214, 5496, 2]
 
-// Module 18207 (useSoundGrid)
+// Module 18211 (useSoundGrid)
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import SoundboardTypes from "SoundboardTypes" /* 7325 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
 import useManageResourcePermissions from "useManageResourcePermissions" /* 8848 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 18208 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 18210 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 18212 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 18214 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -1181,7 +1181,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
               })
         };
         obj9 = { type: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate2 = tmp9(18208).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate2 = tmp9(18212).sortSoundsOldestToNewestCreationDate;
         result1 = value5;
         if (null != sortSoundsOldestToNewestCreationDate2) {
           result1 = sortSoundsOldestToNewestCreationDate2(value5);
@@ -1210,7 +1210,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
               })
         };
         obj12 = { type: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate3 = tmp9(18208).sortSoundsOldestToNewestCreationDate;
+        const sortSoundsOldestToNewestCreationDate3 = tmp9(18212).sortSoundsOldestToNewestCreationDate;
         result2 = value6;
         if (null != sortSoundsOldestToNewestCreationDate3) {
           result2 = sortSoundsOldestToNewestCreationDate3(value6);

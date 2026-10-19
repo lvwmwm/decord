@@ -1,9 +1,9 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13437
+// Function ID: 13438
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 13423, 21, 5191, 6536, 6478, 13433, 1275, 13436, 13443, 13445, 13446, 13447, 13450, 558, 576, 7092, 1505, 13452, 6447, 1128, 6965, 2]
+// Dependencies: [19, 13428, 21, 5191, 6536, 6478, 13438, 1275, 13441, 13448, 13450, 13451, 13452, 13455, 558, 576, 7092, 1505, 13457, 6447, 1128, 6965, 2]
 
-// Module 13432 (HubEmailConnectionModal)
+// Module 13437 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -12,15 +12,15 @@ import useInitialValueDefault from "useInitialValue" /* 6447 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;
 import Navigator2 from "Navigator" /* 6965 */;
-import HubConstants from "HubConstants" /* 13423 */;
-import HubEmailConnectionStudentPromptDefault from "HubEmailConnectionStudentPrompt" /* 13433 */;
-import HubEmailConnectionContentDefault from "HubEmailConnectionContent" /* 13436 */;
-import HubEmailConnectionWaitlistDefault from "HubEmailConnectionWaitlist" /* 13443 */;
-import HubEmailConnectionSubmitSchoolDefault from "HubEmailConnectionSubmitSchool" /* 13445 */;
-import HubEmailConnectionGuildSelectDefault from "HubEmailConnectionGuildSelect" /* 13446 */;
-import HubEmailConnectionPinVerifyDefault from "HubEmailConnectionPinVerify" /* 13447 */;
-import HubEmailConnectionGuildSelectSearchDefault from "HubEmailConnectionGuildSelectSearch" /* 13450 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13452 */;
+import HubConstants from "HubConstants" /* 13428 */;
+import HubEmailConnectionStudentPromptDefault from "HubEmailConnectionStudentPrompt" /* 13438 */;
+import HubEmailConnectionContentDefault from "HubEmailConnectionContent" /* 13441 */;
+import HubEmailConnectionWaitlistDefault from "HubEmailConnectionWaitlist" /* 13448 */;
+import HubEmailConnectionSubmitSchoolDefault from "HubEmailConnectionSubmitSchool" /* 13450 */;
+import HubEmailConnectionGuildSelectDefault from "HubEmailConnectionGuildSelect" /* 13451 */;
+import HubEmailConnectionPinVerifyDefault from "HubEmailConnectionPinVerify" /* 13452 */;
+import HubEmailConnectionGuildSelectSearchDefault from "HubEmailConnectionGuildSelectSearch" /* 13455 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13457 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

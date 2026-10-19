@@ -1,9 +1,9 @@
-// Module ID: 17955
-// Function ID: 17956
+// Module ID: 17959
+// Function ID: 17960
 // Name: ThreadAutoArchiveBottomSheet
 // Dependencies: [19, 2075, 21, 558, 576, 9563, 6540, 1128, 6539, 2]
 
-// Module 17955 (ThreadAutoArchiveBottomSheet)
+// Module 17959 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import TableRadioRow from "TableRadioRow" /* 6539 */;

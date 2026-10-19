@@ -1,9 +1,9 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12274
+// Function ID: 12275
 // Name: ConjurePlanWidget
-// Dependencies: [19, 502, 21, 5191, 587, 558, 576, 8641, 504, 7591, 11716, 2]
+// Dependencies: [19, 502, 21, 5191, 587, 558, 576, 8641, 504, 7591, 11735, 2]
 
-// Module 12256 (ConjurePlanWidget)
+// Module 12274 (ConjurePlanWidget)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const UserProfileApplicationWidgetCardDefault = tmp5(11716);
+const UserProfileApplicationWidgetCardDefault = tmp5(11735);
 const jsx = Fragment.jsx;
 let obj = { card: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };

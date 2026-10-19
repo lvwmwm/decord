@@ -1,7 +1,7 @@
 // Module ID: 10671
 // Function ID: 10672
 // Name: ChatView
-// Dependencies: [19, 17, 6013, 2072, 2068, 5532, 1087, 21, 5191, 587, 558, 576, 5081, 504, 1128, 6180, 6200, 10672, 6447, 10673, 7463, 7289, 9973, 7077, 10675, 10689, 10791, 12806, 13148, 1384, 13321, 13322, 12908, 13326, 13329, 9, 9760, 13332, 1202, 11560, 13334, 13335, 13470, 13484, 10529, 12805, 2]
+// Dependencies: [19, 17, 6013, 2072, 2068, 5532, 1087, 21, 5191, 587, 558, 576, 5081, 504, 1128, 10672, 10689, 6447, 10690, 7463, 7289, 9973, 7077, 10692, 10705, 10807, 12823, 13156, 1384, 13329, 13330, 12925, 13334, 13337, 9, 1202, 13340, 13475, 13489, 10529, 12822, 2]
 
 // Module 10671 (ChatView)
 import react_native from "react-native" /* 17 */;
@@ -13,17 +13,17 @@ import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChatInputUtils from "ChatInputUtils" /* 5081 */;
 import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7289 */;
 import SummaryActionCreators from "SummaryActionCreators" /* 9973 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 10675 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10689 */;
-import MessagesDefault from "Messages" /* 10791 */;
-import ChatInputDefault from "ChatInput" /* 12806 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 13148 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 13326 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 13329 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10692 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10705 */;
+import MessagesDefault from "Messages" /* 10807 */;
+import ChatInputDefault from "ChatInput" /* 12823 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 13156 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 13334 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 13337 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import MessageStore_mod from "MessageStore" /* 5532 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -36,6 +36,7 @@ let obj3;
 let unpackModuleId;
 const StyleSheet = react_native.StyleSheet;
 const createChannelRecord = ChannelRecord.createChannelRecord;
+let MessageStore = MessageStore_mod;
 let ChannelTypes = Constants.ChannelTypes;
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
@@ -57,17 +58,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let intl;
   let intl2;
   let intl3;
-  let items6;
+  let items5;
   let ref2;
-  let tmp21;
-  let tmp31;
-  let tmp32;
-  let tmp58;
+  let tmp29;
+  let tmp30;
+  let tmp56;
   let tmp7;
   let tmp = channelId;
   let tmp2 = chatInputRef;
   let obj = channelId(chatInputRef[11]);
-  const cResult = obj.c(64);
+  const cResult = obj.c(62);
   ({ alwaysRespectKeyboard, channelId } = isActive);
   isActive = isActive.isActive;
   chatInputRef = isActive.chatInputRef;
@@ -75,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const screenIndex = isActive.screenIndex;
   const secondaryTextFieldRef = isActive.secondaryTextFieldRef;
   const setNoExtractUI = isActive.setNoExtractUI;
-  alwaysRespectKeyboard = tmp4;
+  MessageStore = tmp4;
   let tmp5 = undefined !== disableGradient && disableGradient;
   const tmp6 = ref2();
   ChannelTypes = tmp6;
@@ -112,51 +112,36 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp11 = cResult[5];
     }
     if (cResult[6] !== channelId) {
-      class C {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
+      const fn2 = function p() {
+        return ChannelStore.getChannel(channelId);
+      };
       cResult[6] = channelId;
-      cResult[7] = C;
-      tmp13 = C;
+      cResult[7] = fn2;
+      tmp13 = fn2;
     } else {
-      class C {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
+      tmp13 = cResult[7];
     }
     const tmpResult = tmp(tmp2[13]);
-    const stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13);
+    let stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13);
     if (cResult[8] === channelId) {
-      class C {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
+      let tmp15;
+      if (cResult[9] === stateFromStores) {
+        tmp15 = cResult[10];
       }
       if (cResult[11] === tmp15) {
-        let tmp26;
-        let tmp30;
-        class C {
-          constructor() {
-            return ChannelStore.getChannel(channelId);
-          }
+        let tmp21;
+        let tmp24;
+        let tmp28;
+        if (cResult[12] === null == stateFromStores) {
+          tmp21 = cResult[13];
         }
         ({ channelIsLoading, channel } = tmp21);
-        const tmpResult5 = tmp(tmp2[15]);
-        const isChannelContentGated = tmpResult5.useIsChannelContentGated(channel);
-        const useGetSpoilerGatingChannelId = tmp(tmp2[16]).useGetSpoilerGatingChannelId;
-        tmp(tmp2[16]);
+        const useChannelContentGate = tmp(tmp2[15]).useChannelContentGate;
+        tmp(tmp2[15]);
         if (stateFromStores == null) {
-          class C {
-            constructor() {
-              return ChannelStore.getChannel(channelId);
-            }
-          }
+          stateFromStores = null;
         }
-        const getSpoilerGatingChannelId = useGetSpoilerGatingChannelId(stateFromStores);
-        const tmp25 = null != getSpoilerGatingChannelId;
+        const channelContentGate = useChannelContentGate(guildId, stateFromStores);
         let closure_10 = obj2.useRef(channelId);
         const ref = obj2.useRef(null);
         ref2 = obj2.useRef(null);
@@ -164,376 +149,440 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           class U {
             constructor() {
-              const tmp = new isActive(chatInputRef[17])();
+              const tmp = new isActive(chatInputRef[16])();
               return tmp;
             }
           }
           cResult[14] = U;
-          tmp26 = U;
+          tmp24 = U;
         } else {
           class U {
             constructor() {
-              const tmp = new isActive(chatInputRef[17])();
+              const tmp = new isActive(chatInputRef[16])();
               return tmp;
             }
           }
         }
-        const tmp28 = isActive(tmp2[18])(tmp26);
-        const visibleMessagesWindowHandler = tmp28;
-        const tmp29 = isActive(tmp2[19])(channelId);
-        const isResourceChannel = tmp29;
+        const tmp26 = isActive(tmp2[17])(tmp24);
+        const visibleMessagesWindowHandler = tmp26;
+        const tmp27 = isActive(tmp2[18])(channelId);
+        const isResourceChannel = tmp27;
         const _Symbol3 = Symbol;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
           class U {
             constructor() {
-              const tmp = new isActive(chatInputRef[17])();
+              const tmp = new isActive(chatInputRef[16])();
               return tmp;
             }
           }
-          let items1 = [alwaysRespectKeyboard];
+          let items1 = [MessageStore];
           cResult[15] = items1;
-          tmp30 = items1;
+          tmp28 = items1;
         } else {
           class U {
             constructor() {
-              const tmp = new isActive(chatInputRef[17])();
+              const tmp = new isActive(chatInputRef[16])();
               return tmp;
             }
           }
         }
         if (cResult[16] === channelId) {
-          let tmp34;
-          let tmp38;
-          let tmp40;
+          let tmp32;
+          let tmp35;
+          let tmp37;
+          let tmp44;
           let tmp43;
-          let tmp42;
+          let tmp48;
           let tmp47;
-          let tmp46;
+          let tmp52;
           let tmp51;
-          let tmp50;
-          let tmp54;
-          let tmp53;
           class U {
             constructor() {
-              const tmp = new isActive(chatInputRef[17])();
+              const tmp = new isActive(chatInputRef[16])();
               return tmp;
             }
           }
-          const tmpResult7 = tmp(tmp2[13]);
-          const stateFromStoresObject = tmpResult7.useStateFromStoresObject(tmp30, tmp31, tmp32);
+          const tmpResult4 = tmp(tmp2[13]);
+          const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp28, tmp29, tmp30);
           const shouldRenderPlaceholder = stateFromStoresObject.shouldRenderPlaceholder;
           const shouldRenderBegginingRow = stateFromStoresObject.shouldRenderBegginingRow;
           const _Symbol4 = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            cResult[20] = tmp35;
-            tmp34 = tmp35;
+            cResult[20] = Y;
+            tmp32 = Y;
           } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
           }
-          const onScroll = tmp34;
+          Y = tmp32;
           if (cResult[21] !== chatInputRef) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
             cResult[21] = chatInputRef;
-            cResult[22] = tmp37;
+            cResult[22] = tmp34;
           } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
           }
-          const onPressKey = tmp36;
+          const onPressKey = tmp33;
           const _Symbol5 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            cResult[23] = tmp39;
-            tmp38 = tmp39;
+            cResult[23] = tmp36;
+            tmp35 = tmp36;
           } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
           }
-          const scrollToNewMessages = tmp38;
+          const scrollToNewMessages = tmp35;
           const _Symbol6 = Symbol;
           if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            cResult[24] = tmp41;
-            tmp40 = tmp41;
+            cResult[24] = tmp38;
+            tmp37 = tmp38;
           } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
           }
-          const onJumpToPresent = tmp40;
+          const onJumpToPresent = tmp37;
           const _Symbol7 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+          class Z {
+            constructor() {
+              const messages = MessageStore.getMessages(channelId);
+              let tmp = 0 === messages.length;
+              if (tmp) {
+                tmp = messages.loadingMore || !messages.ready;
               }
+              const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
+              return obj;
             }
-            let items2 = [];
-            cResult[25] = tmp44;
-            cResult[26] = items2;
-            tmp43 = items2;
-            tmp42 = tmp44;
-          } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
-              }
-            }
-            tmp43 = cResult[26];
           }
-          const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
+          const layoutEffect = obj2.useLayoutEffect(tmp40, tmp41);
           if (cResult[27] !== channelId) {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            const items3 = [channelId];
+            let items2 = [channelId];
             cResult[27] = channelId;
-            cResult[28] = tmp48;
-            cResult[29] = items3;
-            tmp47 = items3;
-            tmp46 = tmp48;
+            cResult[28] = tmp45;
+            cResult[29] = items2;
+            tmp44 = items2;
+            tmp43 = tmp45;
           } else {
-            class U {
-              constructor() {
-                const tmp = new isActive(chatInputRef[17])();
-                return tmp;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            tmp47 = cResult[29];
+            tmp44 = cResult[29];
           }
-          const effect1 = obj2.useEffect(tmp46, tmp47);
+          const effect1 = obj2.useEffect(tmp43, tmp44);
           if (cResult[30] !== channel.id) {
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            const items4 = [channel.id];
+            const items3 = [channel.id];
             cResult[30] = channel.id;
-            cResult[31] = Ie;
-            cResult[32] = items4;
-            tmp51 = items4;
-            tmp50 = Ie;
+            cResult[31] = tmp49;
+            cResult[32] = items3;
+            tmp48 = items3;
+            tmp47 = tmp49;
           } else {
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            tmp51 = cResult[32];
+            tmp48 = cResult[32];
           }
-          const effect2 = obj2.useEffect(tmp50, tmp51);
+          const effect2 = obj2.useEffect(tmp47, tmp48);
           const _Symbol8 = Symbol;
           if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            const items5 = [];
-            cResult[33] = tmp55;
-            cResult[34] = items5;
-            tmp54 = items5;
-            tmp53 = tmp55;
+            const items4 = [];
+            cResult[33] = tmp53;
+            cResult[34] = items4;
+            tmp52 = items4;
+            tmp51 = tmp53;
           } else {
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            tmp54 = cResult[34];
+            tmp52 = cResult[34];
           }
-          const effect3 = obj2.useEffect(tmp53, tmp54);
+          const effect3 = obj2.useEffect(tmp51, tmp52);
           if (cResult[35] === HACK_fixModalInteraction) {
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
           }
-          if (cResult[59] === channelId) {
-            let tmp61;
-            let tmp65Result;
-            class Ie {
-              constructor() {
-                closure_10.current = channel.id;
+          if (cResult[57] === channelId) {
+            let tmp59;
+            let result;
+            class Y {
+              constructor(arg0) {
+                const current = ref2.current;
+                if (current != null) {
+                  current.onChatViewScrolled(arg0);
+                }
               }
             }
-            if (cResult[62] !== tmp5) {
-              let tmp62;
-              class Ie {
-                constructor() {
-                  closure_10.current = channel.id;
+            if (cResult[60] !== tmp5) {
+              let tmp60;
+              class Y {
+                constructor(arg0) {
+                  const current = ref2.current;
+                  if (current != null) {
+                    current.onChatViewScrolled(arg0);
+                  }
                 }
               }
               if (!tmp5) {
-                class Ie {
-                  constructor() {
-                    closure_10.current = channel.id;
+                class Y {
+                  constructor(arg0) {
+                    const current = ref2.current;
+                    if (current != null) {
+                      current.onChatViewScrolled(arg0);
+                    }
                   }
                 }
-                tmp62 = channel(isActive(tmp2[44]), { absolute: true });
+                tmp60 = channel(isActive(tmp2[39]), { absolute: true });
               }
-              cResult[62] = tmp5;
-              cResult[63] = tmp62;
-              tmp61 = tmp62;
+              cResult[60] = tmp5;
+              cResult[61] = tmp60;
+              tmp59 = tmp60;
             } else {
-              class Ie {
-                constructor() {
-                  closure_10.current = channel.id;
+              class Y {
+                constructor(arg0) {
+                  const current = ref2.current;
+                  if (current != null) {
+                    current.onChatViewScrolled(arg0);
+                  }
                 }
               }
             }
-            let obj3 = { profile: tmp(tmp2[45]).Profiles.ChatView, children: items6 };
-            items6 = [tmp58, tmp61, ];
-            const tmp27Result = isActive(tmp2[45]);
-            const tmp63 = closure_10;
-            const tmpResult8 = tmp(tmp2[36]);
-            if (tmpResult8.shouldNSFWGateGuild(guildId)) {
-              class Ie {
-                constructor() {
-                  closure_10.current = channel.id;
+            let obj3 = { profile: tmp(tmp2[40]).Profiles.ChatView, children: items5 };
+            items5 = [tmp56, tmp59, ];
+            const tmp25Result = isActive(tmp2[40]);
+            const tmp61 = closure_10;
+            if (null != channelContentGate) {
+              class Y {
+                constructor(arg0) {
+                  const current = ref2.current;
+                  if (current != null) {
+                    current.onChatViewScrolled(arg0);
+                  }
                 }
               }
-              tmp65Result = channel(tmp27(tmp2[37]), {});
-              const tmp27Result3 = isActive(tmp2[35]);
-              tmp27Result3.setInterstitial("NsfwGateChat");
+              result = obj11.renderChannelContentGate(channelContentGate);
+              const kind = channelContentGate.kind;
+              const tmp25Result3 = isActive(tmp2[34]);
+              tmp25Result3.setInterstitial(kind);
             } else {
-              let tmp67;
-              class Ie {
-                constructor() {
-                  closure_10.current = channel.id;
+              let tmp64;
+              class Y {
+                constructor(arg0) {
+                  const current = ref2.current;
+                  if (current != null) {
+                    current.onChatViewScrolled(arg0);
+                  }
                 }
               }
               if (channelIsLoading) {
-                class Ie {
-                  constructor() {
-                    closure_10.current = channel.id;
+                class Y {
+                  constructor(arg0) {
+                    const current = ref2.current;
+                    if (current != null) {
+                      current.onChatViewScrolled(arg0);
+                    }
                   }
                 }
                 if (!screenIndex.isConnected()) {
-                  class Ie {
-                    constructor() {
-                      closure_10.current = channel.id;
+                  class Y {
+                    constructor(arg0) {
+                      const current = ref2.current;
+                      if (current != null) {
+                        current.onChatViewScrolled(arg0);
+                      }
                     }
                   }
-                  tmp65Result = tmp65();
+                  result = tmp68();
                 }
               }
               if (channelIsLoading) {
-                class Ie {
-                  constructor() {
-                    closure_10.current = channel.id;
+                class Y {
+                  constructor(arg0) {
+                    const current = ref2.current;
+                    if (current != null) {
+                      current.onChatViewScrolled(arg0);
+                    }
                   }
                 }
                 let obj4 = { style: tmp6.empty, title: intl2.string(tmp(tmp2[14]).t.ai6Lbr), body: intl3.string(tmp(tmp2[14]).t["LTr+x9"]) };
-                const EmptyState = tmp(tmp2[38]).EmptyState;
+                const EmptyState = tmp(tmp2[35]).EmptyState;
                 intl2 = tmp(tmp2[14]).intl;
                 intl3 = tmp(tmp2[14]).intl;
-                tmp67 = channel(EmptyState, obj4);
-                const tmp27Result4 = isActive(tmp2[35]);
-                tmp27Result4.setInterstitial("EmptyState");
+                tmp64 = channel(EmptyState, obj4);
+                const tmp25Result4 = isActive(tmp2[34]);
+                tmp25Result4.setInterstitial("EmptyState");
               } else {
-                class Ie {
-                  constructor() {
-                    closure_10.current = channel.id;
+                class Y {
+                  constructor(arg0) {
+                    const current = ref2.current;
+                    if (current != null) {
+                      current.onChatViewScrolled(arg0);
+                    }
                   }
                 }
               }
-              tmp65Result = tmp67;
+              result = tmp64;
             }
-            items6[2] = tmp65Result;
+            items5[2] = result;
             cResult[35] = HACK_fixModalInteraction;
             cResult[36] = undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard;
             cResult[37] = channel;
             cResult[38] = channelId;
             cResult[39] = channelIsLoading;
+            const tmp61Result = tmp61(tmp25Result, obj3);
+            class Z {
+              constructor() {
+                const messages = MessageStore.getMessages(channelId);
+                let tmp = 0 === messages.length;
+                if (tmp) {
+                  tmp = messages.loadingMore || !messages.ready;
+                }
+                const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
+                return obj;
+              }
+            }
             cResult[40] = chatInputRef;
-            cResult[41] = tmp5;
-            cResult[42] = guildId;
-            cResult[43] = tmp36;
-            cResult[44] = isActive;
-            cResult[45] = tmp29;
-            cResult[46] = isChannelContentGated;
+            cResult[41] = channelContentGate;
+            cResult[42] = tmp5;
+            cResult[43] = guildId;
+            cResult[44] = tmp33;
+            cResult[45] = isActive;
+            cResult[46] = tmp27;
             cResult[47] = screenIndex;
             cResult[48] = secondaryTextFieldRef;
             cResult[49] = setNoExtractUI;
             cResult[50] = shouldRenderBegginingRow;
             cResult[51] = shouldRenderPlaceholder;
-            cResult[52] = getSpoilerGatingChannelId;
-            cResult[53] = tmp25;
-            cResult[54] = tmp6.chat;
-            cResult[55] = tmp6.empty;
-            cResult[56] = tmp6.messages;
-            cResult[57] = tmp28;
-            cResult[58] = tmp63(tmp27Result, obj3);
-            const tmp63Result = tmp63(tmp27Result, obj3);
+            cResult[52] = tmp6.chat;
+            cResult[53] = tmp6.empty;
+            cResult[54] = tmp6.messages;
+            cResult[55] = tmp26;
+            cResult[56] = tmp61Result;
           }
           let obj5 = { channelId, guildId };
-          const tmp60 = channel(isActive(tmp2[43]), obj5);
-          cResult[59] = channelId;
-          cResult[60] = guildId;
-          cResult[61] = tmp60;
-          tmp58 = tmp60;
+          const tmp58 = channel(isActive(tmp2[38]), obj5);
+          cResult[57] = channelId;
+          cResult[58] = guildId;
+          cResult[59] = tmp58;
+          tmp56 = tmp58;
         }
-        const fn2 = function z() {
-          const messages = MessageStore.getMessages(channelId);
-          let tmp = 0 === messages.length;
-          if (tmp) {
-            tmp = messages.loadingMore || !messages.ready;
+        class Z {
+          constructor() {
+            const messages = MessageStore.getMessages(channelId);
+            let tmp = 0 === messages.length;
+            if (tmp) {
+              tmp = messages.loadingMore || !messages.ready;
+            }
+            const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
+            return obj;
           }
-          const obj = { shouldRenderPlaceholder: tmp, shouldRenderBegginingRow: tmp3 };
-          return obj;
-        };
-        const items7 = [channelId, tmp29];
+        }
+        const items6 = [channelId, tmp27];
         cResult[16] = channelId;
-        cResult[17] = tmp29;
-        cResult[18] = fn2;
-        cResult[19] = items7;
-        tmp31 = fn2;
-        tmp32 = items7;
+        cResult[17] = tmp27;
+        cResult[18] = Z;
+        cResult[19] = items6;
+        tmp29 = Z;
+        tmp30 = items6;
       }
       let obj6 = { channel: tmp15, channelIsLoading: null == stateFromStores };
       cResult[11] = tmp15;
@@ -543,9 +592,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     let tmp17 = stateFromStores;
     if (null == stateFromStores) {
-      class Ie {
-        constructor() {
-          closure_10.current = channel.id;
+      class Y {
+        constructor(arg0) {
+          const current = ref2.current;
+          if (current != null) {
+            current.onChatViewScrolled(arg0);
+          }
         }
       }
       let obj7 = { id: channelId, type: ChannelTypes.GUILD_TEXT, name: intl.string(tmp(tmp2[14]).t.ZTNur7) };
@@ -555,12 +607,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[8] = channelId;
     cResult[9] = stateFromStores;
     cResult[10] = tmp17;
+    tmp15 = tmp17;
   }
-  const items8 = [channelId, tmp4];
+  const items7 = [channelId, tmp4];
   cResult[2] = undefined !== alwaysRespectKeyboard && alwaysRespectKeyboard;
   cResult[3] = channelId;
-  cResult[4] = items8;
-  tmp8 = items8;
+  cResult[4] = items7;
+  tmp8 = items7;
 }) : (function ChatView(alwaysRespectKeyboard) {
   let HACK_fixModalInteraction;
   let c16;
@@ -573,11 +626,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let intl2;
   let isActive;
   let items10;
+  let result;
   let screenIndex;
   let secondaryTextFieldRef;
   let setNoExtractUI;
   let shouldRender;
-  let tmp20Result3;
   let flag = alwaysRespectKeyboard.alwaysRespectKeyboard;
   if (flag === undefined) {
     flag = false;
@@ -628,26 +681,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return { channel: tmp2, channelIsLoading: null == tmp };
   }, items2);
   ({ channelIsLoading, channel } = memo);
-  let obj3 = flag(6180);
-  const isChannelContentGated = obj3.useIsChannelContentGated(channel);
-  let tmp8 = flag(6200);
-  const useGetSpoilerGatingChannelId = tmp8.useGetSpoilerGatingChannelId;
+  const tmp7 = flag(10672);
+  const useChannelContentGate = tmp7.useChannelContentGate;
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  const getSpoilerGatingChannelId = useGetSpoilerGatingChannelId(stateFromStores);
+  const channelContentGate = useChannelContentGate(guildId, stateFromStores);
   closure_11 = obj.useRef(channelId);
   obj.useRef(null);
   ref = obj.useRef(null);
-  let tmp11 = channelId;
   visibleMessagesWindowHandler = channelId(6447)(() => {
-    const tmp = new channelId(dependencyMap[17])();
+    const tmp = new channelId(dependencyMap[16])();
     return tmp;
   });
-  let tmp12 = channelId(10673)(channelId);
-  isResourceChannel = tmp12;
+  let tmp11 = channelId(10690)(channelId);
+  isResourceChannel = tmp11;
   const items3 = [MessageStore];
-  const items4 = [channelId, tmp12];
+  const items4 = [channelId, tmp11];
   const tmp3Result = tmp3(504);
   const stateFromStoresObject = tmp3Result.useStateFromStoresObject(items3, () => {
     const messages = MessageStore.getMessages(channelId);
@@ -687,7 +737,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, items7);
   const layoutEffect = obj.useLayoutEffect(() => {
-    const obj = flag(dependencyMap[20]);
+    const obj = flag(dependencyMap[19]);
     return obj.trackAppUIViewed();
   }, []);
   const items8 = [channelId];
@@ -702,25 +752,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     closure_11.current = channel.id;
   }, items9);
   const effect3 = obj.useEffect(() => () => {
-    const obj = flag(dependencyMap[23]);
+    const obj = flag(dependencyMap[22]);
     const result = obj.clearOldestUnreadMessageId(ref.current);
   }, []);
-  let obj4 = { profile: tmp3(12805).Profiles.ChatView, children: items10 };
-  const tmp19 = channelId(12805);
-  items10 = [stateFromStores(channelId(13484), { channelId, guildId }), , ];
-  let tmp20Result = null;
-  const tmp18 = channel;
+  let obj3 = { profile: tmp3(12822).Profiles.ChatView, children: items10 };
+  const tmp18 = channelId(12822);
+  items10 = [stateFromStores(channelId(13489), { channelId, guildId }), , ];
+  let tmp19Result = null;
+  const tmp17 = channel;
   if (!flag2) {
-    tmp20Result = tmp20(tmp11(10529), { absolute: true });
+    tmp19Result = tmp19(tmp10(10529), { absolute: true });
   }
-  items10[1] = tmp20Result;
-  const tmp3Result2 = tmp3(9760);
-  if (tmp3Result2.shouldNSFWGateGuild(guildId)) {
-    tmp20Result3 = tmp20(tmp11(13332), {});
-    const tmp11Result = tmp11(9);
-    tmp11Result.setInterstitial("NsfwGateChat");
+  items10[1] = tmp19Result;
+  if (null != channelContentGate) {
+    const tmp3Result2 = tmp3(10672);
+    result = tmp3Result2.renderChannelContentGate(channelContentGate);
+    const kind = channelContentGate.kind;
+    const tmp10Result = channelId(9);
+    tmp10Result.setInterstitial(kind);
   } else {
-    let tmp20Result4;
+    let tmp19Result2;
     function renderMessagesWrapper() {
       let items;
       let items1;
@@ -746,20 +797,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(13321), obj7);
+        tmp7Result = tmp7(tmp3(13329), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c16) {
         const obj8 = { screenIndex: createChannelRecord };
-        tmp7Result3 = tmp7(tmp3(13322), obj8);
+        tmp7Result3 = tmp7(tmp3(13330), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: createChannelRecord, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(12908), obj9);
+        tmp7Result4 = tmp7(tmp3(12925), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;
@@ -768,49 +819,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (channelIsLoading) {
       if (!GatewayConnectionStore.isConnected()) {
-        tmp20Result3 = renderMessagesWrapper();
+        result = renderMessagesWrapper();
       }
     }
     if (channelIsLoading) {
-      let obj5 = { style: tmp.empty, title: intl.string(tmp3(1128).t.ai6Lbr), body: intl2.string(tmp3(1128).t["LTr+x9"]) };
+      let obj4 = { style: tmp.empty, title: intl.string(tmp3(1128).t.ai6Lbr), body: intl2.string(tmp3(1128).t["LTr+x9"]) };
       const EmptyState = tmp3(1202).EmptyState;
       intl = tmp3(1128).intl;
       intl2 = tmp3(1128).intl;
-      tmp20Result4 = tmp20(EmptyState, obj5);
-      const tmp11Result6 = tmp11(9);
-      tmp11Result6.setInterstitial("EmptyState");
-    } else if (isChannelContentGated) {
-      let obj6 = { guildId, channelId };
-      tmp20Result4 = tmp20(tmp11(11560), obj6);
-      const tmp11Result7 = tmp11(9);
-      tmp11Result7.setInterstitial("GuildNSFW");
+      tmp19Result2 = tmp19(EmptyState, obj4);
+      const tmp10Result4 = channelId(9);
+      tmp10Result4.setInterstitial("EmptyState");
+    } else if (channel.isDirectory()) {
+      let obj5 = { channel, guildId };
+      tmp19Result2 = tmp19(tmp10(13340), obj5);
+      const tmp10Result5 = channelId(9);
+      tmp10Result5.setInterstitial("GuildDirectory");
+    } else if (channel.isForumLikeChannel()) {
+      let obj6 = { channel };
+      tmp19Result2 = tmp19(tmp10(13475), obj6);
+      const tmp10Result6 = channelId(9);
+      tmp10Result6.setInterstitial("ForumChannel");
     } else {
-      if (null != getSpoilerGatingChannelId) {
-        if (null != getSpoilerGatingChannelId) {
-          let obj7 = { guildId, channelId: getSpoilerGatingChannelId };
-          tmp20Result4 = tmp20(tmp11(13334), obj7, channelId);
-          const tmp11Result8 = tmp11(9);
-          tmp11Result8.setInterstitial("ChannelSpoiler");
-        }
-      }
-      if (channel.isDirectory()) {
-        let obj8 = { channel, guildId };
-        tmp20Result4 = tmp20(tmp11(13335), obj8);
-        const tmp11Result9 = tmp11(9);
-        tmp11Result9.setInterstitial("GuildDirectory");
-      } else if (channel.isForumLikeChannel()) {
-        let obj9 = { channel };
-        tmp20Result4 = tmp20(tmp11(13470), obj9);
-        const tmp11Result10 = tmp11(9);
-        tmp11Result10.setInterstitial("ForumChannel");
-      } else {
-        tmp20Result4 = renderMessagesWrapper();
-      }
+      tmp19Result2 = renderMessagesWrapper();
     }
-    tmp20Result3 = tmp20Result4;
+    result = tmp19Result2;
   }
-  items10[2] = tmp20Result3;
-  return tmp18(tmp19, obj4);
+  items10[2] = result;
+  return tmp17(tmp18, obj3);
 }));
 let result = size.fileFinishedImporting("modules/chat/native/ChatView.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16668
+// Function ID: 16669
 // Name: InventoryIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16665, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16669, 4912, 2]
 
-// Module 16664 (InventoryIcon)
+// Module 16668 (InventoryIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 16665 */;
+import AssetRegistry from "AssetRegistry" /* 16669 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,19 +1,19 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12650
+// Function ID: 12651
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 7803, 1087, 21, 5191, 504, 12604, 1128, 12610, 12634, 7778, 5187, 5155, 12632, 2002, 584, 12613, 12629, 2]
+// Dependencies: [19, 17, 7803, 1087, 21, 5191, 504, 12621, 1128, 12627, 12651, 7778, 5187, 5155, 12649, 2002, 584, 12630, 12646, 2]
 // Exports: default
 
-// Module 12633 (AppealIngestionConfirmSubmission)
+// Module 12650 (AppealIngestionConfirmSubmission)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12604 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12610 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12629 */;
-import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 12634 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12621 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12627 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12646 */;
+import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 12651 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7803 */;
 import Fragment from "Fragment" /* 21 */;
@@ -64,7 +64,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   const stringResult = intl.string(intl5.t["C5q+pW"]);
   const intl2 = tmp2(1128).intl;
   const stringResult1 = intl2.string(intl5.t["G2g/g5"]);
-  const AppealIngestionModalScreen = tmp2(12610).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(12627).AppealIngestionModalScreen;
   const items3 = [metroRequire(AppealIngestionModal.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj2 = { style: tmp.container, children: items5 };
   let obj3 = { reasons: items4.filter((item) => item.length > 0) };
@@ -113,7 +113,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   let tmp12Result = flagged_content.length > 0;
   if (tmp12Result) {
     const obj5 = { flaggedContent: flagged_content };
-    tmp12Result = tmp12(tmp14(12613), obj5);
+    tmp12Result = tmp12(tmp14(12630), obj5);
   }
   const obj6 = { children: items3 };
   items5[2] = tmp12Result;

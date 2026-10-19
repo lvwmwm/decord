@@ -1,9 +1,9 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 17903
+// Function ID: 17904
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 2072, 2068, 4855, 7199, 10520, 1087, 21, 4945, 5187, 5191, 587, 1384, 7290, 558, 576, 7200, 584, 504, 1267, 17900, 5192, 17901, 9599, 1128, 10671, 11828, 7130, 7155, 6942, 5496, 11150, 11148, 11147, 9611, 1114, 11151, 4903, 10640, 10639, 5132, 5131, 5479, 12695, 17842, 13010, 2]
+// Dependencies: [5, 32, 19, 17, 2072, 2068, 4855, 7199, 10520, 1087, 21, 4945, 5187, 5191, 587, 1384, 7290, 558, 576, 7200, 584, 504, 1267, 17904, 5192, 17905, 9599, 1128, 10671, 11847, 7130, 7155, 6942, 5496, 11169, 11167, 11166, 9611, 1114, 11170, 4903, 10640, 10639, 5132, 5131, 5479, 12712, 17846, 13018, 2]
 
-// Module 17899 (NewMessageScreen)
+// Module 17903 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -26,9 +26,9 @@ import UserRowConstants from "UserRowConstants" /* 10520 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10639 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10640 */;
 import ChatViewDefault from "ChatView" /* 10671 */;
-import NoResultsDefault from "NoResults" /* 12695 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 17900 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17901 */;
+import NoResultsDefault from "NoResults" /* 12712 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 17904 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -57,10 +57,10 @@ let obj2;
 let obj3;
 let str;
 let tmp2;
-const getGroupDMRecipientLimitDefault = tmp2(11148);
-const GroupDMNitroCapExperimentDefault = tmp2(11150);
-const NewMessageUserListDefault = tmp2(13010);
-const GroupDMNitroUpsellBannerDefault = tmp2(17842);
+const getGroupDMRecipientLimitDefault = tmp2(11167);
+const GroupDMNitroCapExperimentDefault = tmp2(11169);
+const NewMessageUserListDefault = tmp2(13018);
+const GroupDMNitroUpsellBannerDefault = tmp2(17846);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -343,9 +343,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                 tmp82 = new tmp8(obj);
                 dispatch(obj2);
                 return () => {
-                  const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" } };
+                  const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" } };
                   const obj = first(closure_1_2[20]);
-                  ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" });
+                  ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" });
                   obj.dispatch(obj2);
                 };
               }
@@ -388,9 +388,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
               tmp82 = new tmp8(obj);
               dispatch(obj2);
               return () => {
-                const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" } };
+                const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" } };
                 const obj = first(closure_1_2[20]);
-                ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" });
+                ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" });
                 obj.dispatch(obj2);
               };
             }
@@ -420,9 +420,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
             tmp82 = new tmp8(obj);
             dispatch(obj2);
             return () => {
-              const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" } };
+              const obj2 = { type: "CHANNEL_DELETE", channel: { id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" } };
               const obj = first(closure_1_2[20]);
-              ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" });
+              ({ id: length(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" });
               obj.dispatch(obj2);
             };
           }
@@ -676,9 +676,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: recipients(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: recipients(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" } };
           const obj = first(closure_1_2[20]);
-          ({ id: recipients(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "r", parent_id: "toCharArray$esjava$1" });
+          ({ id: recipients(closure_1_2[19]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "toCharArray$esjava$1" });
           obj.dispatch(obj2);
         };
       }
@@ -898,7 +898,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   if (usePersonLimitCopy) {
     let num2 = 1;
     const obj2 = { title, memberCount: numInGroup + 1, recipientLimit };
-    return closure_17(recipientLimit(17901), obj2);
+    return closure_17(recipientLimit(17905), obj2);
   } else {
     let num = 0;
     const obj3 = { style: tmp.header, children: items1 };
@@ -970,7 +970,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { portal: tmpResult.isAndroid() };
-      const PortalKeyboardRenderer = tmp(11828).PortalKeyboardRenderer;
+      const PortalKeyboardRenderer = tmp(11847).PortalKeyboardRenderer;
       tmpResult = tmp(1384);
       const tmp15 = closure_17(PortalKeyboardRenderer, obj3);
       cResult[6] = tmp15;
@@ -1035,7 +1035,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items1[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(11828).PortalKeyboardRenderer;
+  const PortalKeyboardRenderer = channelId(11847).PortalKeyboardRenderer;
   obj5 = channelId(1384);
   items1[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
@@ -1626,13 +1626,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessageSc
   const config = tmp2Result.useConfig({ location: "NewMessageScreen" });
   const tmp14 = getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true });
   relationshipCount = tmp14;
-  let obj3 = navigation(11147);
+  let obj3 = navigation(11166);
   const result = obj3.shouldUseGroupDMParticipantLimitUI(config.enabled, tmp14);
   c10 = result;
-  navigation(11147);
+  navigation(11166);
   enabled = config.enabled;
   if (enabled) {
-    const tmp15Result = navigation(11147);
+    const tmp15Result = navigation(11166);
     enabled = tmp15Result.isGroupDMNitroUpsellAudience(tmp18);
   }
   const items2 = [navigation, selectedUserIds.length, tmp11, tmp14, result];

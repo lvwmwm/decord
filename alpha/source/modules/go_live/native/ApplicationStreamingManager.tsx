@@ -1,18 +1,18 @@
-// Module ID: 19070
-// Function ID: 19071
+// Module ID: 19074
+// Function ID: 19075
 // Name: ApplicationStreamingManager
-// Dependencies: [19, 5371, 5311, 5216, 21, 3, 19071, 5400, 19072, 2002, 11428, 5343, 2]
+// Dependencies: [19, 5371, 5311, 5216, 21, 3, 19075, 5400, 19076, 2002, 11446, 5343, 2]
 
-// Module 19070 (ApplicationStreamingManager)
+// Module 19074 (ApplicationStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 5216 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11428 */;
+import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11446 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5371 */;
-import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19071 */;
+import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

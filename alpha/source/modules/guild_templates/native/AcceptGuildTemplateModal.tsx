@@ -1,14 +1,14 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12525
+// Function ID: 12526
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 7446, 1087, 21, 5191, 6536, 558, 576, 504, 6376, 12509, 12510, 12507, 8035, 12511, 7092, 6478, 6965, 2]
+// Dependencies: [5, 32, 19, 7446, 1087, 21, 5191, 6536, 558, 576, 504, 6376, 12526, 12527, 12524, 8035, 12528, 7092, 6478, 6965, 2]
 
-// Module 12508 (AcceptGuildTemplateModal)
+// Module 12525 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12510 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12527 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let c2, c3, dependencyMap;
 
 let obj2;
-const f113310 = () => {
+const f113438 = () => {
   const obj = closure_1_1(closure_1_3[14]);
   return obj.hideModal();
 };
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   [first2, _slicedToArray] = react.useState(null);
   const tmp16 = _slicedToArray(react.useState(null), 2);
   [tmp17, react] = tmp16;
-  stateFromStores(12509)(stateFromStores);
+  stateFromStores(12526)(stateFromStores);
   const tmp18 = stateFromStores;
   if (cResult[4] === stateFromStores) {
     if (cResult[5] === first2) {
@@ -198,8 +198,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       cResult[13] = tmp20;
       cResult[14] = first2;
       cResult[15] = first1;
-      cResult[16] = jsx(tmp18(12511), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
-      const tmp25 = jsx(tmp18(12511), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      cResult[16] = jsx(tmp18(12528), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      const tmp25 = jsx(tmp18(12528), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
     }
   }
   function handleCreateServer() {
@@ -239,7 +239,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   [name, dependencyMap] = useState(obj2.getGuildNameSuggestion());
   [first1, _slicedToArray] = react.useState(null);
   [first2, react] = react.useState(null);
-  stateFromStores(12509)(stateFromStores);
+  stateFromStores(12526)(stateFromStores);
   const SafeAreaPaddingView = code(7092).SafeAreaPaddingView;
   let obj4 = {
     code,
@@ -318,7 +318,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   };
-  stateFromStores(12511);
+  stateFromStores(12528);
   return <SafeAreaPaddingView top style={tmp.container}>{null}</SafeAreaPaddingView>;
 });
 const ACCEPT_GUILD_TEMPLATE = "ACCEPT_GUILD_TEMPLATE";
@@ -334,7 +334,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
   if (cResult[0] !== code) {
     obj2 = { code };
     const obj3 = {};
-    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f113310), render };
+    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f113438), render };
     obj3[ACCEPT_GUILD_TEMPLATE] = obj4;
     cResult[0] = code;
     cResult[1] = obj3;
@@ -359,7 +359,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
     let obj4;
     let obj = { code };
     const obj2 = {};
-    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f113310), render };
+    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f113438), render };
     obj2[ACCEPT_GUILD_TEMPLATE] = obj3;
     obj4 = NavigatorHeader;
     return obj2;

@@ -1,17 +1,17 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16757
+// Function ID: 16758
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 16754, 16755, 4904, 5187, 1202, 7092, 5479, 6190, 6478, 558, 576, 1128, 6965, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 16758, 16759, 4904, 5187, 1202, 7092, 5479, 6190, 6478, 558, 576, 1128, 6965, 2]
 
-// Module 16753 (CaptchaTestModal)
+// Module 16757 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import Navigator2 from "Navigator" /* 6965 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 16754 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 16755 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 16758 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 16759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

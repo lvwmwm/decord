@@ -17,7 +17,7 @@ let obj2;
 let tmp;
 const native = tmp(1202);
 const jsx = Fragment.jsx;
-let obj = { maskStyle: { position: "relative", right: "IconComponent" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
+let obj = { maskStyle: { position: "relative", right: "ix" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_5 = createStyles.createStyles(obj);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaskedBadge(arg0) {

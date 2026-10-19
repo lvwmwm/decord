@@ -1,17 +1,17 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17265
+// Function ID: 17266
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1087, 21, 4945, 5191, 587, 558, 576, 17230, 2093, 1128, 17262, 14918, 17260, 6464, 4913, 9851, 5187, 9141, 1202, 7182, 17275, 12939, 17279, 17280, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 5191, 587, 558, 576, 17234, 2093, 1128, 17266, 14922, 17264, 6464, 4913, 9851, 5187, 9141, 1202, 7182, 17279, 12947, 17283, 17284, 2]
 
-// Module 17261 (ChannelListStickyHeader)
+// Module 17265 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 9141 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14918 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17230 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17260 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17262 */;
-import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 17279 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14922 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17234 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17264 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17266 */;
+import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 17283 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -191,7 +191,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
                                                 if (cResult[51] !== tmp11) {
                                                   let tmp60 = null;
                                                   if (tmp11) {
-                                                    tmp60 = closure_6(tmp(17275).FavoritesGuildHeaderActionButton, {});
+                                                    tmp60 = closure_6(tmp(17279).FavoritesGuildHeaderActionButton, {});
                                                   }
                                                   cResult[51] = tmp11;
                                                   cResult[52] = tmp60;
@@ -261,7 +261,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
                                                           let tmp79 = null;
                                                           if (undefined !== showCoachmarks && showCoachmarks) {
                                                             const obj4 = { targetRef: ref, guild };
-                                                            tmp79 = closure_6(tmp8(17280), obj4);
+                                                            tmp79 = closure_6(tmp8(17284), obj4);
                                                           }
                                                           cResult[66] = guild;
                                                           cResult[67] = undefined !== showCoachmarks && showCoachmarks;
@@ -284,7 +284,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
                                                     let tmp67 = null;
                                                     if (undefined === showExtraButtons || showExtraButtons) {
                                                       const obj7 = { guild, useButtonComponent: true, useEventsButton: true };
-                                                      tmp67 = closure_6(tmp8(12939), obj7);
+                                                      tmp67 = closure_6(tmp8(12947), obj7);
                                                     }
                                                     cResult[57] = guild;
                                                     cResult[58] = undefined === showExtraButtons || showExtraButtons;
@@ -579,14 +579,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
   items6 = [tmp15Result2, ];
   let tmp24Result5 = null;
   if (isFavoritesGuildIdResult) {
-    tmp24Result5 = tmp24(tmp6(17275).FavoritesGuildHeaderActionButton, {});
+    tmp24Result5 = tmp24(tmp6(17279).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp24Result5;
   items7 = [closure_7(closure_4, obj15), , , , ];
   let tmp24Result6 = null;
   if (flag) {
     const obj16 = { guild, useButtonComponent: true, useEventsButton: true };
-    tmp24Result6 = tmp24(tmp2(12939), obj16);
+    tmp24Result6 = tmp24(tmp2(12947), obj16);
   }
   items7[1] = tmp24Result6;
   if (tmp24Result7) {
@@ -600,7 +600,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
   let tmp24Result8 = null;
   if (flag3) {
     const obj20 = { targetRef: ref, guild };
-    tmp24Result8 = tmp24(tmp2(17280), obj20);
+    tmp24Result8 = tmp24(tmp2(17284), obj20);
   }
   items7[4] = tmp24Result8;
   return closure_7(closure_4, obj14);

@@ -1,10 +1,10 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14697
+// Function ID: 14698
 // Name: GuildSubscriptionRemoval
-// Dependencies: [19, 21, 8633, 14694, 14695, 14696, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8633, 14698, 14699, 14700, 558, 576, 5065, 5128, 2]
 // Exports: getGuildSubscriptionRemovalSource
 
-// Module 14693 (GuildSubscriptionRemoval)
+// Module 14697 (GuildSubscriptionRemoval)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 5065 */;

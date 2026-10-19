@@ -1,9 +1,9 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 16986
+// Function ID: 16987
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2090, 16972, 8260, 11066, 558, 576, 16983, 15859, 2044, 5399, 1128, 5498, 16984, 7764, 6174, 6961, 16975, 11065, 2]
+// Dependencies: [2090, 16976, 8260, 11085, 558, 576, 16987, 15863, 2044, 5399, 1128, 5498, 16988, 7764, 6174, 6961, 16979, 11084, 2]
 
-// Module 16982 (SafetyGuildSettingMessageRequests)
+// Module 16986 (SafetyGuildSettingMessageRequests)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 2044 */;
@@ -12,15 +12,15 @@ import AlertDefault from "Alert" /* 5498 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6961 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11066 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15859 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16975 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16983 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 16984 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11085 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16979 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16987 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 16988 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16972 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16976 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

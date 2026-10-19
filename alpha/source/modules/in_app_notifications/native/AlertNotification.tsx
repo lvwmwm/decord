@@ -1,9 +1,9 @@
-// Module ID: 13579
-// Function ID: 13580
+// Module ID: 13583
+// Function ID: 13584
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 6436, 9308, 587, 5191, 558, 576, 13521, 1128, 5202, 7838, 13527, 13555, 2]
+// Dependencies: [19, 17, 21, 6436, 9308, 587, 5191, 558, 576, 13526, 1128, 5202, 7838, 13532, 13560, 2]
 
-// Module 13579 (AlertNotification)
+// Module 13583 (AlertNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
   const guild = notification.guild;
   const key = notification.key;
   const tmp4 = closure_9();
-  const obj2 = channel(13521);
+  const obj2 = channel(13526);
   const incidentData = obj2.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   const first = cResult[0];
@@ -204,8 +204,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
         }
         const obj7 = { text: tmp7 };
         cResult[18] = tmp7;
-        cResult[19] = closure_5(channel(13527).SystemMessageText, obj7);
-        const tmp31 = closure_5(channel(13527).SystemMessageText, obj7);
+        cResult[19] = closure_5(channel(13532).SystemMessageText, obj7);
+        const tmp31 = closure_5(channel(13532).SystemMessageText, obj7);
       } else {
         class C {
           constructor() {
@@ -230,8 +230,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
       cResult[22] = tmp15;
       cResult[23] = tmp26;
       cResult[24] = tmp30;
-      cResult[25] = closure_5(channel(13555).NotificationPressable, obj8);
-      const tmp34 = closure_5(channel(13555).NotificationPressable, obj8);
+      cResult[25] = closure_5(channel(13560).NotificationPressable, obj8);
+      const tmp34 = closure_5(channel(13560).NotificationPressable, obj8);
     }
     const obj9 = { children: items1 };
     items1 = [tmp17, tmp24];
@@ -257,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
   const guild = notification.guild;
   const key = notification.key;
   const tmp = closure_9();
-  let obj = channel(13521);
+  let obj = channel(13526);
   const incidentData = obj.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -287,9 +287,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
     const obj = transitionToChannel;
     obj.transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
-  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(13527).SystemMessageText, { text: stringResult }), onPress: callback, notification };
+  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(13532).SystemMessageText, { text: stringResult }), onPress: callback, notification };
   obj3 = { children: items3 };
-  const NotificationPressable = tmp2(13555).NotificationPressable;
+  const NotificationPressable = tmp2(13560).NotificationPressable;
   const obj4 = { cutouts: items2, children: closure_5(guild(6436), { guild, selected: false }) };
   items2 = [size];
   const tmp8 = guild(9308);

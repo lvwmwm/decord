@@ -56,7 +56,7 @@ export const autoScroll = function autoScroll(scrollNow, c4, diff1, diff, diff12
     let max2;
     let num2;
     let sum;
-    const f155659 = () => {
+    const f155764 = () => {
       if (timestamp.isCancelled()) {
         closure_0(false);
       } else {
@@ -75,7 +75,7 @@ export const autoScroll = function autoScroll(scrollNow, c4, diff1, diff, diff12
         }
         if (typeof animationLoop === "function") {
           const _requestAnimationFrame = requestAnimationFrame;
-          const animationFrame = requestAnimationFrame(f155659);
+          const animationFrame = requestAnimationFrame(f155764);
         } else {
           throw new TypeError("Trying to call a non-function");
         }
@@ -114,7 +114,7 @@ export const autoScroll = function autoScroll(scrollNow, c4, diff1, diff, diff12
     function animationLoop() {
 
     }
-    let animationFrame = requestAnimationFrame(f155659);
+    let animationFrame = requestAnimationFrame(f155764);
   });
   return promise;
 };

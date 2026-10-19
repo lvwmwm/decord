@@ -1,9 +1,9 @@
-// Module ID: 17241
-// Function ID: 17242
+// Module ID: 17245
+// Function ID: 17246
 // Name: ThreadLongPressActionSheet
-// Dependencies: [19, 2068, 2090, 6291, 5212, 4847, 1087, 21, 10649, 1128, 10650, 10652, 6929, 7077, 10638, 5135, 8169, 10639, 9621, 5150, 10561, 10765, 8495, 10023, 9996, 5137, 10643, 10654, 5155, 10771, 2002, 9045, 10656, 10774, 558, 576, 504, 7246, 12, 9633, 5521, 2044, 10776, 6436, 1202, 7175, 10777, 7171, 10316, 7162, 4903, 2]
+// Dependencies: [19, 2068, 2090, 6291, 5212, 4847, 1087, 21, 10649, 1128, 10650, 10652, 6929, 7077, 10638, 5135, 8169, 10639, 9621, 5150, 10561, 10781, 8495, 10023, 9996, 5137, 10643, 10654, 5155, 10787, 2002, 9045, 10656, 10790, 558, 576, 504, 7246, 12, 9633, 5521, 2044, 10792, 6436, 1202, 7175, 10793, 7171, 10316, 7162, 4903, 2]
 
-// Module 17241 (ThreadLongPressActionSheet)
+// Module 17245 (ThreadLongPressActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ToastUtils from "ToastUtils" /* 4903 */;
@@ -15,7 +15,7 @@ import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8169 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10643 */;
 import markChannelUnreadDefault from "markChannelUnread" /* 10652 */;
-import threadActionSheets from "threadActionSheets" /* 10774 */;
+import threadActionSheets from "threadActionSheets" /* 10790 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -208,7 +208,7 @@ function getActionSheetButtons(channel) {
             string6Result = string6(t6["jeyb/W"]);
           }
           obj10.label = string6Result;
-          obj10.IconComponent = tmp(10765).LockUnlockedIcon;
+          obj10.IconComponent = tmp(10781).LockUnlockedIcon;
           obj10.onPress = function onPress() {
             const obj = ThreadActionCreatorsDefault;
             obj.unlockThread(channel);
@@ -303,7 +303,7 @@ function getActionSheetButtons(channel) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { guildId: channel.getGuildId(), channelId: channel.id };
-          const tmp2 = asyncRequire(10771, dependencyMap.paths);
+          const tmp2 = asyncRequire(10787, dependencyMap.paths);
           const combined = "muteSettings" + channel.id;
           openLazy(tmp2, combined, obj);
         };
@@ -563,7 +563,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   const tmp29 = onClose(5521)(channel);
   const DeveloperMode = tmp(2044).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  const tmp31 = onClose(10776)(channel);
+  const tmp31 = onClose(10792)(channel);
   if (null != stateFromStores) {
     class D {
       constructor() {
@@ -631,7 +631,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158138 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158246 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -662,7 +662,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158138 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158246 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -692,7 +692,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158138 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158246 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -722,7 +722,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158138 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F158246 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -761,8 +761,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   }
   cResult[21] = tmp29;
   cResult[22] = tmp32;
-  cResult[23] = closure_13(tmp(10777).ActionSheetIconHeader, { title: tmp29, icon: tmp32 });
-  closure_13(tmp(10777).ActionSheetIconHeader, { title: tmp29, icon: tmp32 });
+  cResult[23] = closure_13(tmp(10793).ActionSheetIconHeader, { title: tmp29, icon: tmp32 });
+  closure_13(tmp(10793).ActionSheetIconHeader, { title: tmp29, icon: tmp32 });
 }) : (function ThreadLongPressActionSheetConnected(channel) {
   let ActionSheetRow;
   let Icon;
@@ -818,7 +818,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   const DeveloperMode = channel(2044).DeveloperMode;
   let setting = DeveloperMode.useSetting();
   const tmp13 = onClose;
-  const tmp17 = onClose(10776)(channel);
+  const tmp17 = onClose(10792)(channel);
   if (null != stateFromStores) {
     const obj11 = { guild: stateFromStores, size: tmp(6436).GuildIconSizes.LARGE };
     const tmp13Result = tmp13(6436);
@@ -848,7 +848,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
       onClose();
     }
   }, items5);
-  const obj14 = { header: tmp20(tmp(10777).ActionSheetIconHeader, { title: tmp15, icon: tmp19 }), children: items6 };
+  const obj14 = { header: tmp20(tmp(10793).ActionSheetIconHeader, { title: tmp15, icon: tmp19 }), children: items6 };
   const ActionSheet = tmp(7175).ActionSheet;
   items6 = [
     tmp23Result.map((buttons) => {

@@ -1,9 +1,9 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11678
+// Function ID: 11679
 // Name: Tabs
-// Dependencies: [19, 17, 2132, 21, 4945, 5191, 587, 558, 576, 5478, 9878, 11660, 6612, 1384, 2]
+// Dependencies: [19, 17, 2132, 21, 4945, 5191, 587, 558, 576, 5478, 9878, 11679, 6612, 1384, 2]
 
-// Module 11659 (Tabs)
+// Module 11678 (Tabs)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
 import spring from "spring" /* 5478 */;

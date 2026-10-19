@@ -1,12 +1,12 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12304
+// Function ID: 12305
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 5191, 587, 558, 576, 5155, 11630, 5187, 1128, 3883, 5479, 12149, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 5155, 11646, 5187, 1128, 3883, 5479, 11662, 2]
 
-// Module 12287 (ConjureSettingsRequestCard)
+// Module 12304 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11630 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11646 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
       const obj5 = { style: card, children: items };
       items = [tmp7, tmp14, tmp20];
-      const tmp26 = closure_5(request(12149), obj5);
+      const tmp26 = closure_5(request(11662), obj5);
       cResult[12] = tmp4.card;
       cResult[13] = tmp14;
       cResult[14] = tmp20;
@@ -145,7 +145,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   }, items);
   let obj = { style: tmp.card, children: null };
   let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3883)["jZjP+I"]) };
-  const tmp6 = request(12149);
+  const tmp6 = request(11662);
   const Text = projectId(5187).Text;
   intl = projectId(1128).intl;
   const items1 = [closure_4(Text, obj2), , ];

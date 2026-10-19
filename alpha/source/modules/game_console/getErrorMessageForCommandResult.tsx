@@ -1,9 +1,9 @@
-// Module ID: 18504
-// Function ID: 18505
+// Module ID: 18508
+// Function ID: 18509
 // Dependencies: [9524, 1128, 2131, 2]
 // Exports: default
 
-// Module 18504
+// Module 18508
 import intl14 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 9524 */;

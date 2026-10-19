@@ -1,9 +1,9 @@
-// Module ID: 10711
-// Function ID: 10712
+// Module ID: 10727
+// Function ID: 10728
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10712, 5187, 1128, 5477, 7970, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10728, 5187, 1128, 5477, 7970, 2]
 
-// Module 10711 (SafetyTipsSection)
+// Module 10727 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import SafetyTipsRowDefault from "SafetyTipsRow" /* 7970 */;
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
   showHeader = showHeader.showHeader;
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_4(safetyTips(10712).SafetyBookletSpotIllustration, {});
+    const tmp7 = closure_4(safetyTips(10728).SafetyBookletSpotIllustration, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTipsCo
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(10712).SafetyBookletSpotIllustration, {}) };
+  let obj = { style: tmp.image, children: closure_4(safetyTips(10728).SafetyBookletSpotIllustration, {}) };
   const Stack = safetyTips(5477).Stack;
   const items = [closure_4(View, obj), , ];
   const Stack2 = safetyTips(5477).Stack;

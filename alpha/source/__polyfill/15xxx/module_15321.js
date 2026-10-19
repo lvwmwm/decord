@@ -1,17 +1,10 @@
 // Module ID: 15321
 // Function ID: 15322
-// Dependencies: [15320]
+// Dependencies: [15322, 15390]
 
 // Module 15321
-import _mod15320 from "module_15320" /* 15320 */;
+import _mod15390 from "module_15390" /* 15390 */;
+import module_15322 from "module_15322" /* 15322 */;
 
 
-export default (arg0, value) => {
-  try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod15320, arg0, obj);
-  } catch (err) {
-    _mod15320[arg0] = value;
-  }
-  return value;
-};
+export default _mod15390.Object.assign;

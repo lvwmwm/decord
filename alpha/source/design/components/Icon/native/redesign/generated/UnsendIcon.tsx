@@ -1,14 +1,14 @@
-// Module ID: 16147
-// Function ID: 16148
+// Module ID: 16151
+// Function ID: 16152
 // Name: UnsendIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16148, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16152, 4912, 2]
 
-// Module 16147 (UnsendIcon)
+// Module 16151 (UnsendIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 16148 */;
+import AssetRegistry from "AssetRegistry" /* 16152 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

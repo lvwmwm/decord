@@ -1,9 +1,9 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17056
+// Function ID: 17057
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5181, 1207, 1098, 21, 558, 576, 504, 5068, 6941, 17053, 4922, 5196, 11559, 2]
+// Dependencies: [19, 5181, 1207, 1098, 21, 558, 576, 504, 5068, 6941, 17057, 4922, 5196, 11577, 2]
 
-// Module 17052 (RootThemeContextProvider)
+// Module 17056 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import native from "native" /* 4922 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5068 */;
 import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5196 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11559 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 17053 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11577 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 17057 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -175,7 +175,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeC
   const obj2 = manaTypeConsolidationExperiment(6941);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(17053);
+  const obj3 = manaTypeConsolidationExperiment(17057);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {
@@ -214,7 +214,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeC
     }
     setThemeFlagResult2 = setThemeFlag(setThemeFlagResult1, REDUCED_CONTRAST_ENABLED);
   }
-  const RootThemeContextProvider = tmp(11559).RootThemeContextProvider;
+  const RootThemeContextProvider = tmp(11577).RootThemeContextProvider;
   return <RootThemeContextProvider theme={theme} flags={setThemeFlagResult2} saturation={saturation} contrast={contrast} enabledExperiments={memo}>{null}</RootThemeContextProvider>;
 });
 const result = size.fileFinishedImporting("modules/themes/RootThemeContextProvider.native.tsx");

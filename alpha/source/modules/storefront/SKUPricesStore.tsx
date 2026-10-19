@@ -10,7 +10,7 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import size from "module_2" /* 2 */;
 
-const f96306 = (skuId) => {
+const f96355 = (skuId) => {
   let combined;
   obj = { type: "sku", skuId };
   if ("application" === obj.type) {
@@ -136,7 +136,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96306)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96355)));
     }
   },
   SKUS_PRICING_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
@@ -164,7 +164,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96306)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96355)));
     }
     if ("application" === priceId.type) {
       let obj9;
@@ -190,7 +190,7 @@ let obj = {
         const merged4 = Object.assign(obj4);
         const _Object2 = Object;
         const skuIds1 = obj5.skuIds;
-        const merged5 = Object.assign(Object.fromEntries(skuIds1.map(f96306)));
+        const merged5 = Object.assign(Object.fromEntries(skuIds1.map(f96355)));
       }
       obj4 = obj9;
     }
@@ -229,7 +229,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96306)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f96355)));
     }
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: resetStoreState

@@ -1,9 +1,9 @@
-// Module ID: 13190
-// Function ID: 13191
+// Module ID: 13198
+// Function ID: 13199
 // Name: ExpiringPowerupCoachmarkExperiment
 // Dependencies: [1456, 558, 576, 2]
 
-// Module 13190 (ExpiringPowerupCoachmarkExperiment)
+// Module 13198 (ExpiringPowerupCoachmarkExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

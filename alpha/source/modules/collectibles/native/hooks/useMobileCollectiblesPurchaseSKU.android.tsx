@@ -1,9 +1,9 @@
-// Module ID: 13654
-// Function ID: 13655
+// Module ID: 13658
+// Function ID: 13659
 // Name: useMobileCollectiblesPurchaseSKU
 // Dependencies: [109, 1392, 558, 576, 504, 9350, 10472, 2]
 
-// Module 13654 (useMobileCollectiblesPurchaseSKU)
+// Module 13658 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9350 */;

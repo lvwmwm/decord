@@ -1,14 +1,14 @@
-// Module ID: 18716
-// Function ID: 18717
+// Module ID: 18720
+// Function ID: 18721
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 12581, 21, 5191, 558, 576, 17978, 1128, 18699, 5187, 6570, 6457, 6454, 6542, 2]
+// Dependencies: [32, 19, 17, 12598, 21, 5191, 558, 576, 17982, 1128, 18703, 5187, 6570, 6457, 6454, 6542, 2]
 
-// Module 18716 (MentionSpamTriggerFields)
+// Module 18720 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18699 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18703 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 12581 */;
+import Constants from "Constants" /* 12598 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -239,7 +239,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSpamT
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(17978);
+  let obj = rule(17982);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
   const intl = rule(1128).intl;
   const stringResult = intl.string(rule(1128).t["s/26oQ"]);

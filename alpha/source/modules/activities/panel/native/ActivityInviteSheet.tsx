@@ -1,9 +1,9 @@
-// Module ID: 18157
-// Function ID: 18158
+// Module ID: 18161
+// Function ID: 18162
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 9036, 8970, 1087, 7689, 1098, 21, 5191, 587, 558, 576, 8965, 7130, 7155, 5155, 8577, 8957, 11069, 504, 8987, 7117, 1128, 1202, 8990, 7016, 18158, 7118, 2]
+// Dependencies: [32, 19, 17, 9036, 8970, 1087, 7689, 1098, 21, 5191, 587, 558, 576, 8965, 7130, 7155, 5155, 8577, 8957, 11088, 504, 8987, 7117, 1128, 1202, 8990, 7016, 18162, 7118, 2]
 
-// Module 18157 (ActivityInviteSheet)
+// Module 18161 (ActivityInviteSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -875,7 +875,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInvi
       tmp17Result2 = tmp17(EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(18158), obj10);
+      tmp17Result2 = tmp17(tmp2(18162), obj10);
     }
     const obj11 = { children: items4 };
     items4[1] = tmp17Result2;

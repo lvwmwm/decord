@@ -1,9 +1,9 @@
-// Module ID: 18950
-// Function ID: 18951
+// Module ID: 18954
+// Function ID: 18955
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5191, 587, 8035, 1452, 8946, 1128, 5128, 11641, 10023, 558, 576, 5187, 5479, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5191, 587, 8035, 1452, 8946, 1128, 5128, 11657, 10023, 558, 576, 5187, 5479, 2]
 
-// Module 18950 (FormImagePicker)
+// Module 18954 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(11641).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(11657).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;

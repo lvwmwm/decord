@@ -1,25 +1,26 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 10999
+// Function ID: 11000
 // Name: ConjureActionCreators
-// Dependencies: [5, 6291, 1392, 6293, 1087, 6223, 584, 1297, 10984, 5220, 10986, 569, 6294, 6357, 8579, 10987, 2]
-// Exports: applyPublishedPreview, createProject, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, loadMissingConjureProjects, refreshConjureInstallState, setGuildHints, setProjectCover, setProjectIcon, setSelectedProjectForGuild
+// Dependencies: [109, 5, 6291, 1392, 11000, 6293, 1087, 6223, 584, 1297, 11001, 5220, 11003, 569, 10998, 11004, 6294, 6357, 8579, 11006, 2]
+// Exports: applyPublishedPreview, createProject, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, loadMissingConjureProjects, prefetchProject, previewApplicationReread, refreshConjureInstallState, setGuildHints, setProjectCover, setProjectIcon, setSelectedProjectForGuild
 
-// Module 10983 (ConjureActionCreators)
+// Module 10999 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
 import UserActionCreators from "UserActionCreators" /* 8579 */;
-import conjureAppInServer from "conjureAppInServer" /* 10987 */;
+import conjureAppInServer from "conjureAppInServer" /* 11006 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReadStateStore from "ReadStateStore" /* 6291 */;
 import UserStore from "UserStore" /* 1392 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11000 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import size from "module_2" /* 2 */;
 
-let GUILD_COLLABORATION, closure_10, closure_11, closure_25, closure_4, projectsFetchState, resourceIds;
+const require = globalThis.__r;
+let GUILD_COLLABORATION, _require, closure_13, closure_14, closure_28, projectsFetchState, resourceIds;
 
 function updateIntegrationStatus(projectId, integrationStatus) {
   obj = DispatcherDefault;
@@ -37,7 +38,7 @@ let obj = function _listProjects() {
     return (async (arg0, value) => {
       let tmp47;
       function forgetMissingProjects() {
-        return closure_1_16(...arguments);
+        return closure_1_19(...arguments);
       }
       if (c6 === 2) {
         c6 = 3;
@@ -75,12 +76,12 @@ let obj = function _listProjects() {
                 type = projectsFetchState.type;
               }
               if ("loading" !== type) {
-                closure_10 = tmp34;
+                closure_13 = tmp34;
                 const obj5 = { type: "CONJURE_PROJECTS_FETCH_START", guildId };
                 const obj6 = DispatcherDefault;
                 obj6.dispatch(obj5);
                 c4 = 1;
-                const HTTP = HTTPUtils.HTTP;
+                const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: constants.CONJURE_PROJECTS, query: tmp47, rejectWithError: true };
                 tmp47 = undefined;
                 const get = HTTP.get;
@@ -94,13 +95,13 @@ let obj = function _listProjects() {
                 return obj8;
               } else {
                 if (null != guildId) {
-                  if (guildId !== closure_10) {
-                    closure_11 = tmp34;
+                  if (guildId !== closure_13) {
+                    closure_14 = tmp34;
                   }
                 }
-                const tmp39 = null == tmp34 && null != closure_10;
+                const tmp39 = null == tmp34 && null != closure_13;
                 if (tmp39) {
-                  c12 = true;
+                  c15 = true;
                 }
               }
             }
@@ -108,7 +109,7 @@ let obj = function _listProjects() {
             if (1 === c5) {
               c4 = 0;
               const obj9 = { type: "CONJURE_PROJECTS_FETCH_FAIL", guildId };
-              const obj4 = closure_131_1(closure_131_2[6]);
+              const obj4 = closure_131_1(closure_131_2[8]);
               obj4.dispatch(obj9);
             } else if (arg0 === 1) {
               c6 = 3;
@@ -120,23 +121,23 @@ let obj = function _listProjects() {
             } else {
               body = value.body;
               const obj11 = { type: "CONJURE_PROJECTS_FETCH_SUCCESS", projects: body, guildId };
-              obj = closure_131_1(closure_131_2[6]);
+              obj = closure_131_1(closure_131_2[8]);
               obj.dispatch(obj11);
-              c12 = false;
+              c15 = false;
               forgetMissingProjects();
               c4 = 0;
             }
-            closure_2 = c11;
-            c11 = null;
+            closure_2 = c14;
+            c14 = null;
             if (null != closure_2) {
               if (closure_2 !== guildId) {
-                closure_131_13(closure_2);
+                closure_131_16(closure_2);
               }
             }
-            const tmp27 = c12;
+            const tmp27 = c15;
             if (tmp27) {
-              c12 = false;
-              closure_131_13();
+              c15 = false;
+              closure_131_16();
             }
           }
           c6 = 3;
@@ -185,29 +186,29 @@ obj = function _forgetMissingProjects() {
             let obj4 = { value, done: true };
             return obj4;
           } else {
-            let closure_3 = tmp;
+            closure_3 = tmp;
             closure_2 = tmp4;
             c0 = undefined;
             closure_1 = undefined;
-            let tmp59 = c15;
+            let tmp59 = c18;
             if (!tmp59) {
-              c15 = true;
+              c18 = true;
               resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
               closure_0 = resourceIds[Symbol.iterator]();
               if (closure_0 !== undefined) {
                 let c5 = 1;
                 c0 = tmp36;
-                if (null == closure_131_6.getProject(c0)) {
-                  let obj5 = closure_131_0(closure_131_2[8]);
+                if (null == closure_131_9.getProject(c0)) {
+                  let obj5 = closure_131_0(closure_131_2[10]);
                   if (obj5.isConjureProjectUnread(c0)) {
-                    let obj6 = closure_131_0(closure_131_2[9]);
+                    let obj6 = closure_131_0(closure_131_2[11]);
                     let _Math = Math;
                     c6 = 2;
                     c7 = 1;
                     let obj7 = { value: obj6.sleep(5000 * Math.random()), done: false };
                     return obj7;
                   } else {
-                    let tmp46 = closure_131_17(c0);
+                    let tmp46 = closure_131_20(c0);
                   }
                 }
               }
@@ -218,7 +219,7 @@ obj = function _forgetMissingProjects() {
         } else if (1 === tmp4) {
           c5 = 0;
           closure_0.return();
-          throw closure_1_4;
+          throw _objectWithoutProperties;
         } else if (2 === tmp4) {
           if (arg0 === 1) {
             c7 = 3;
@@ -229,24 +230,24 @@ obj = function _forgetMissingProjects() {
             c7 = 3;
             let obj8 = { value, done: true };
             return obj8;
-          } else if (null == closure_131_6.getProject(c0)) {
+          } else if (null == closure_131_9.getProject(c0)) {
             c5 = 2;
             c6 = 4;
             c7 = 1;
-            let obj9 = { value: closure_131_27(c0), done: false };
+            let obj9 = { value: closure_131_32(c0), done: false };
             return obj9;
           }
         } else if (3 === tmp4) {
           c5 = 1;
-          closure_2 = closure_1_4;
-          let obj2 = closure_131_0(closure_131_2[10]);
+          closure_2 = _objectWithoutProperties;
+          let obj2 = closure_131_0(closure_131_2[12]);
           closure_1 = obj2.createFailureStatus(closure_2);
           let tmp14 = 403 !== closure_1;
           if (tmp14) {
             tmp14 = 404 !== closure_1;
           }
           if (!tmp14) {
-            let tmp21 = closure_131_17(c0);
+            let tmp21 = closure_131_20(c0);
           }
         } else if (arg0 === 1) {
           c7 = 3;
@@ -291,7 +292,6 @@ obj = function _drainMissingProjects() {
       }
     } else {
       while (true) {
-        let closure_3;
         let c1;
         let c2;
         let closure_0;
@@ -310,25 +310,25 @@ obj = function _drainMissingProjects() {
             let closure_2 = tmp2;
             c1 = undefined;
             c2 = undefined;
-            c22 = true;
+            c25 = true;
             closure_0 = [];
             let closure_1 = set1;
             closure_0 = set1[Symbol.iterator]();
             if (closure_0 === undefined) {
-              c22 = false;
+              c25 = false;
               if (0 !== closure_0.length) {
-                let failResult = closure_131_18.fail(() => {
+                let failResult = closure_131_21.fail(() => {
                   for (const item10005 of closure_1_0) {
                     let addResult = set.add(item10005);
                     continue;
                   }
-                  const tmp3 = closure_2_22;
+                  const tmp3 = closure_2_25;
                   if (!tmp3) {
-                    closure_2_23();
+                    closure_2_26();
                   }
                 });
               } else {
-                let succeedResult = closure_131_18.succeed();
+                let succeedResult = closure_131_21.succeed();
               }
               c7 = 3;
               return { value: "IconComponent", done: null };
@@ -343,7 +343,7 @@ obj = function _drainMissingProjects() {
                   c5 = 2;
                   c6 = 3;
                   c7 = 1;
-                  let obj5 = { value: closure_131_27(c1), done: false };
+                  let obj5 = { value: closure_131_32(c1), done: false };
                   return obj5;
                 }
               }
@@ -352,12 +352,12 @@ obj = function _drainMissingProjects() {
         } else if (1 === tmp5) {
           c5 = 0;
           closure_0.return();
-          throw ReadStateStore;
+          throw _objectWithoutProperties;
         } else {
           if (2 === tmp5) {
             c5 = 1;
-            closure_3 = ReadStateStore;
-            let obj2 = closure_131_0(closure_131_2[10]);
+            closure_3 = _objectWithoutProperties;
+            let obj2 = closure_131_0(closure_131_2[12]);
             c2 = obj2.createFailureStatus(closure_3);
           } else if (arg0 === 1) {
             c7 = 3;
@@ -379,7 +379,7 @@ obj = function _drainMissingProjects() {
                 let arr = closure_0.push(c1);
               }
             }
-            let tmp28 = closure_131_17(c1);
+            let tmp28 = closure_131_20(c1);
           }
         }
         c5 = 0;
@@ -432,12 +432,12 @@ obj = function _fetchProjectLimit() {
             }
             closure_0 = c0;
             if (null != c0) {
-              if (closure_25 !== c0) {
+              if (closure_28 !== c0) {
                 if (!ConjureProjectStore.hasFetchedProjectLimit()) {
-                  closure_25 = tmp16;
+                  closure_28 = tmp16;
                   max_projects = null;
                   c3 = 1;
-                  const HTTP = HTTPUtils.HTTP;
+                  const HTTP = require("HTTPUtils").HTTP;
                   const obj4 = { url: constants.CONJURE_PROJECT_LIMIT, rejectWithError: true };
                   c4 = 2;
                   c5 = 1;
@@ -462,8 +462,8 @@ obj = function _fetchProjectLimit() {
             max_projects = value.body.max_projects;
             c3 = 0;
           }
-          if (c25 === closure_0) {
-            c25 = null;
+          if (c28 === closure_0) {
+            c28 = null;
           }
           const currentUser1 = currentUser.getCurrentUser();
           let id1;
@@ -472,7 +472,7 @@ obj = function _fetchProjectLimit() {
           }
           if (id1 === closure_0) {
             const obj7 = { type: "CONJURE_PROJECT_LIMIT_FETCH_SETTLE", maxProjects: max_projects };
-            const obj6 = closure_130_1(closure_130_2[6]);
+            const obj6 = closure_130_1(closure_130_2[8]);
             obj6.dispatch(obj7);
           }
         }
@@ -494,26 +494,38 @@ function getProject() {
   return obj(...arguments);
 }
 obj = function _getProject() {
-  obj = _asyncToGenerator(async (arg0, signal) => {
-    let closure_3;
+  obj = _asyncToGenerator(async (arg0, signal, arg2) => {
+    let closure_4;
     let closure_0 = arg0;
-    let c4 = 0;
+    let closure_2 = arg2;
     let c5 = 0;
-    return (async (arg0, value) => {
-      let aborted;
-      const HTTP = HTTPUtils.HTTP;
+    let c6 = 0;
+    return (async (arg0, value, arg2) => {
+      const HTTP = require("HTTPUtils").HTTP;
       const get = HTTP.get;
       const obj4 = { url: Endpoints.CONJURE_PROJECT(closure_0), rejectWithError: false, signal };
       value = await get(obj4);
-      if (signal != null) {
-        aborted = signal.aborted;
+      let tmp13 = undefined !== closure_2;
+      if (tmp13) {
+        const currentUser = closure_132_7.getCurrentUser();
+        id = undefined;
+        if (currentUser != null) {
+          id = currentUser.id;
+        }
+        tmp13 = id !== closure_2;
       }
-      if (true !== aborted) {
-        const obj8 = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: value.body.project };
-        const obj6 = closure_131_1(closure_131_2[6]);
-        obj6.dispatch(obj8);
-        const obj9 = { bot_permissions_changed: value.body.bot_permissions_changed, integration_installed: value.body.integration_installed, preview_ready: value.body.preview_ready, has_activity: value.body.has_activity, owner_authorization_revoked: value.body.owner_authorization_revoked };
-        closure_131_9(closure_0, obj9);
+      if (!tmp13) {
+        let aborted;
+        if (signal != null) {
+          aborted = signal.aborted;
+        }
+        if (true !== aborted) {
+          const obj8 = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: value.body.project };
+          const obj6 = closure_132_1(closure_132_2[8]);
+          obj6.dispatch(obj8);
+          const obj9 = { bot_permissions_changed: value.body.bot_permissions_changed, integration_installed: value.body.integration_installed, preview_ready: value.body.preview_ready, has_activity: value.body.has_activity, owner_authorization_revoked: value.body.owner_authorization_revoked, preview_app_channels: value.body.preview_app_channels };
+          closure_132_12(closure_0, obj9);
+        }
       }
       return value;
     })();
@@ -521,13 +533,12 @@ obj = function _getProject() {
   return obj(...arguments);
 };
 obj = function _createProject() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let flags = arg0;
+  obj = _asyncToGenerator(async (project) => {
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     return (async function(arg0, value) {
-      let obj4;
+      let obj5;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -542,6 +553,7 @@ obj = function _createProject() {
       } else {
         try {
           let body;
+          let ws_ticket;
           c7 = 2;
           if (0 === c6) {
             if (arg0 === 1) {
@@ -553,33 +565,35 @@ obj = function _createProject() {
             } else {
               closure_3 = tmp;
               closure_2 = tmp4;
+              project = undefined;
               body = undefined;
-              flags = flags.flags;
+              ws_ticket = undefined;
+              const flags = project.flags;
               GUILD_COLLABORATION = flags;
               if (flags == null) {
-                GUILD_COLLABORATION = ConjureProjectTypes.ConjureProjectFlags.GUILD_COLLABORATION;
+                GUILD_COLLABORATION = require("ConjureProjectTypes").ConjureProjectFlags.GUILD_COLLABORATION;
               }
               c5 = 1;
-              const HTTP = HTTPUtils.HTTP;
-              const request = { url: constants.CONJURE_PROJECTS, body: obj4, rejectWithError: false };
+              const HTTP = require("HTTPUtils").HTTP;
+              const request = { url: constants.CONJURE_PROJECTS, body: obj5, rejectWithError: false };
               const post = HTTP.post;
-              obj4 = { flags: GUILD_COLLABORATION };
-              const merged = Object.assign(tmp45);
+              obj5 = { flags: GUILD_COLLABORATION };
+              const merged = Object.assign(tmp58);
               c6 = 2;
               c7 = 1;
-              const obj7 = { value: post(request), done: false };
-              return obj7;
+              const obj8 = { value: post(request), done: false };
+              return obj8;
             }
           } else if (1 === c6) {
             c5 = 0;
-            let closure_1 = closure_4;
-            const ConjureCreateError = closure_131_0(closure_131_2[10]).ConjureCreateError;
-            const obj5 = closure_131_0(closure_131_2[10]);
-            const result = obj5.classifyCreateFailure(closure_1);
+            closure_3 = closure_4;
+            const ConjureCreateError = closure_131_0(closure_131_2[12]).ConjureCreateError;
+            const obj6 = closure_131_0(closure_131_2[12]);
+            const result = obj6.classifyCreateFailure(closure_3);
             const self = this;
             const self2 = this;
-            const obj6 = closure_131_0(closure_131_2[10]);
-            const conjureCreateError = new ConjureCreateError(result, obj6.createFailureStatus(closure_1));
+            const obj7 = closure_131_0(closure_131_2[12]);
+            const conjureCreateError = new ConjureCreateError(result, obj7.createFailureStatus(closure_3));
             throw conjureCreateError;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -590,18 +604,24 @@ obj = function _createProject() {
             return { value, done: true };
           } else {
             body = value.body;
+            ws_ticket = body.ws_ticket;
+            project = closure_131_4(body, closure_131_3);
+            if (null != ws_ticket) {
+              obj = closure_131_0(closure_131_2[15]);
+              const result1 = obj.rememberCreatedProjectTicket(project.id, ws_ticket);
+            }
             c5 = 0;
-            const obj9 = { type: "CONJURE_PROJECT_CREATE_SUCCESS", project: body };
-            obj = closure_131_1(closure_131_2[6]);
-            obj.dispatch(obj9);
+            const obj10 = { type: "CONJURE_PROJECT_CREATE_SUCCESS", project };
+            const obj2 = closure_131_1(closure_131_2[8]);
+            obj2.dispatch(obj10);
             c7 = 3;
-            return { value: body.id, done: true };
+            return { value: project.id, done: true };
           }
-        } catch (tmp38) {
-          closure_4 = tmp38;
+        } catch (tmp44) {
+          closure_4 = tmp44;
           if (0 === c5) {
             c7 = 3;
-            throw tmp38;
+            throw tmp44;
           } else {
             c6 = 1;
           }
@@ -617,16 +637,15 @@ function patchProject() {
 obj = function _patchProject() {
   obj = _asyncToGenerator(async (value, body) => {
     let closure_2;
-    let closure_3;
     let c4 = 0;
     let c5 = 0;
     return (async (arg0, value) => {
-      const HTTP = HTTPUtils.HTTP;
+      const HTTP = require("HTTPUtils").HTTP;
       const request = { url: Endpoints.CONJURE_PROJECT(value), body, rejectWithError: false };
       const patch = HTTP.patch;
       value = await patch(request);
       const obj6 = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: value.body };
-      obj = closure_131_1(closure_131_2[6]);
+      obj = closure_131_1(closure_131_2[8]);
       obj.dispatch(obj6);
       return value;
     })();
@@ -639,44 +658,27 @@ function updateProjectSettings() {
 obj = function _updateProjectSettings() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
-    let closure_3;
     let closure_0 = arg0;
-    let c5 = 0;
-    let c6 = 0;
     let c4 = 0;
+    let c5 = 0;
     return (async (arg0, value) => {
-      let obj3;
+      closure_3 = tmp4;
       closure_0 = value;
-      await patchProject(closure_0, value);
-      if (1 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          return { value, done: true };
-        } else {
-          const preview_application_id = value.body.preview_application_id;
-          if (null != preview_application_id) {
-            c4 = 1;
-            c5 = 3;
-            c6 = 1;
-            const obj7 = { value: obj3.fetchApplication(preview_application_id), done: false };
-            obj3 = closure_131_0(closure_131_2[13]);
-            return obj7;
+      value = await patchProject(closure_0, value);
+      const preview_application_id = value.body.preview_application_id;
+      if (null != preview_application_id) {
+        obj = closure_131_0(closure_131_2[17]);
+        const application = obj.fetchApplication(preview_application_id);
+        const catchPromise = application.catch(() => {
+
+        });
+        closure_3 = catchPromise.then(() => {
+          obj = closure_2_37;
+          if (closure_2_37.get(closure_1_2) === closure_1_3) {
+            obj.delete(closure_1_2);
           }
-        }
-      } else if (2 === c5) {
-        c4 = 0;
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
-      } else {
-        c4 = 0;
+        });
+        const result = closure_131_37.set(preview_application_id, closure_3);
       }
       return value;
     })();
@@ -712,7 +714,7 @@ obj = function _fetchApplicationChannels() {
             return obj3;
           } else {
             c3 = 1;
-            const HTTP = HTTPUtils.HTTP;
+            const HTTP = require("HTTPUtils").HTTP;
             const obj4 = { url: Endpoints.CONJURE_APPLICATION_CHANNELS(closure_0), rejectWithError: true };
             const get = HTTP.get;
             c2 = 2;
@@ -788,7 +790,7 @@ obj = function _deleteProject() {
               const obj10 = DispatcherDefault;
               obj10.dispatch(obj4);
               c4 = 1;
-              const HTTP = HTTPUtils.HTTP;
+              const HTTP = require("HTTPUtils").HTTP;
               const del = HTTP.del;
               c5 = 2;
               c6 = 1;
@@ -800,7 +802,7 @@ obj = function _deleteProject() {
             c4 = 0;
             closure_2 = closure_3;
             const obj8 = { type: "CONJURE_PROJECT_DELETE_FAIL", projectId };
-            const obj5 = closure_130_1(closure_130_2[6]);
+            const obj5 = closure_130_1(closure_130_2[8]);
             obj5.dispatch(obj8);
             throw closure_2;
           } else if (arg0 === 1) {
@@ -813,7 +815,7 @@ obj = function _deleteProject() {
           } else {
             c4 = 0;
             const obj11 = { type: "CONJURE_PROJECT_DELETE_SUCCESS", projectId };
-            obj = closure_130_1(closure_130_2[6]);
+            obj = closure_130_1(closure_130_2[8]);
             obj.dispatch(obj11);
             c6 = 3;
             return { value, done: true };
@@ -832,30 +834,38 @@ obj = function _deleteProject() {
   });
   return obj(...arguments);
 };
+let closure_3 = ["ws_ticket"];
 const Endpoints = Constants.Endpoints;
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
-let c10 = null;
-let c11 = null;
-let c12 = false;
+let c13 = null;
+let c14 = null;
 let c15 = false;
+let c18 = false;
 const tmp2 = new BackoffDefault(30000, 300000);
-let closure_18 = tmp2;
+let closure_21 = tmp2;
 let id = null;
 const set = new Set();
 const set1 = new Set();
-let c22 = false;
-let c25 = null;
+let c25 = false;
+let c28 = null;
+const set2 = new Set();
+let c31 = null;
+const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/projects/ConjureActionCreators.tsx");
 
 export const applyPublishedPreview = function applyPublishedPreview(projectId, arg1) {
   let botPermissionsChanged;
   let hasActivity;
   let integrationInstalled;
+  let obj4;
   let project;
   ({ project, hasActivity, integrationInstalled, botPermissionsChanged } = arg1);
   obj = DispatcherDefault;
   obj.dispatch({ type: "CONJURE_PROJECT_UPDATE_SUCCESS", project });
-  const integrationStatus = ConjureProjectStore.getIntegrationStatus(projectId);
+  let integrationStatus = ConjureProjectStore.getIntegrationStatus(projectId);
+  if (integrationStatus == null) {
+    integrationStatus = ConjureLastIntegrationStatusStore.getIntegrationStatus(projectId);
+  }
   let flag;
   if (integrationStatus != null) {
     flag = integrationStatus.owner_authorization_revoked;
@@ -863,9 +873,21 @@ export const applyPublishedPreview = function applyPublishedPreview(projectId, a
   if (flag == null) {
     flag = false;
   }
-  const obj2 = { type: "CONJURE_PROJECT_INTEGRATION_STATUS_UPDATE", projectId, integrationStatus: { owner_authorization_revoked: flag, preview_ready: true, has_activity: hasActivity, integration_installed: integrationInstalled, bot_permissions_changed: botPermissionsChanged } };
+  let preview_app_channels;
+  const obj2 = { owner_authorization_revoked: flag, preview_ready: true, has_activity: hasActivity, integration_installed: integrationInstalled, bot_permissions_changed: botPermissionsChanged };
+  if (integrationStatus != null) {
+    preview_app_channels = integrationStatus.preview_app_channels;
+  }
+  if (null != preview_app_channels) {
+    obj4 = { preview_app_channels: integrationStatus.preview_app_channels };
+    const obj3 = { preview_app_channels: integrationStatus.preview_app_channels };
+  } else {
+    obj4 = {};
+  }
+  const merged = Object.assign(obj4);
+  const obj5 = { type: "CONJURE_PROJECT_INTEGRATION_STATUS_UPDATE", projectId, integrationStatus: obj2 };
   const tmpResult = DispatcherDefault;
-  tmpResult.dispatch(obj2);
+  tmpResult.dispatch(obj5);
 };
 export { listProjects };
 export const loadMissingConjureProjects = function loadMissingConjureProjects(arg0) {
@@ -880,7 +902,7 @@ export const loadMissingConjureProjects = function loadMissingConjureProjects(ar
   if (id !== id) {
     set.clear();
     set1.clear();
-    closure_18.cancel();
+    closure_21.cancel();
   }
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
@@ -891,7 +913,7 @@ export const loadMissingConjureProjects = function loadMissingConjureProjects(ar
     }
     continue;
   }
-  const pending = c22 || closure_18.pending;
+  const pending = c25 || closure_21.pending;
   if (!pending) {
     drainMissingProjects();
   }
@@ -899,9 +921,46 @@ export const loadMissingConjureProjects = function loadMissingConjureProjects(ar
 export const fetchProjectLimit = function fetchProjectLimit() {
   return obj(...arguments);
 };
+export const prefetchProject = function prefetchProject(projectId) {
+  _require = projectId;
+  const currentUser = UserStore.getCurrentUser();
+  id = undefined;
+  if (currentUser != null) {
+    id = currentUser.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  if (id !== id) {
+    set2.clear();
+  }
+  obj = require("conjureProjectSockets");
+  const tmp5 = _require;
+  if (null == obj.getConjureSocket(projectId)) {
+    const tmp5Result = tmp5(11004);
+    tmp5Result.prefetchWorkerTicket(projectId);
+  }
+  let hasItem = set2.has(projectId);
+  const obj3 = set2;
+  if (!hasItem) {
+    hasItem = null != ConjureProjectStore.getIntegrationStatus(projectId);
+  }
+  if (!hasItem) {
+    obj3.add(projectId);
+    const promise = getProject(projectId, undefined, id);
+    promise.catch(() => set2.delete(projectId));
+  }
+};
 export { getProject };
 export const createProject = function createProject() {
   return obj(...arguments);
+};
+export const previewApplicationReread = function previewApplicationReread(prop) {
+  let resolved = map.get(prop);
+  if (resolved == null) {
+    resolved = Promise.resolve();
+  }
+  return resolved;
 };
 export { updateProjectSettings };
 export const setProjectIcon = function setProjectIcon(arg0, icon) {

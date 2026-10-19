@@ -1,16 +1,16 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17001
+// Function ID: 17002
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7525, 8260, 558, 15859, 15860, 11065, 1128, 2]
+// Dependencies: [7525, 8260, 558, 15863, 15864, 11084, 1128, 2]
 
-// Module 16997 (ParentalControlsDirectMessages)
+// Module 17001 (ParentalControlsDirectMessages)
 import intl2 from "intl" /* 1128 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15859 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15860 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15864 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

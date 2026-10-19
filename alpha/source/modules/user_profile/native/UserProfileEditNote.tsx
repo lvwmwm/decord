@@ -1,13 +1,13 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14111
+// Function ID: 14112
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 1505, 14103, 14108, 6478, 10835, 9599, 1128, 5187, 7051, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 1505, 14107, 14112, 6478, 10851, 9599, 1128, 5187, 7051, 2]
 
-// Module 14107 (UserProfileEditNote)
+// Module 14111 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 14108 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 14112 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -81,13 +81,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             setOptions = closure_4.setOptions;
             obj2 = closure_0(closure_2[11]);
             obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-              const promise = new Promise(() => { /* body not rendered: F157586 */ });
+              const promise = new Promise(() => { /* body not rendered: F157694 */ });
               return promise;
             });
             obj.headerRight = function headerRight(arg0) {
               let intl;
               let str;
-              const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157587 */ } };
+              const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157695 */ } };
               const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
               const merged = Object.assign(arg0);
               intl = userId(onClose[14]).intl;
@@ -139,13 +139,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           setOptions = closure_4.setOptions;
           obj2 = closure_0(closure_2[11]);
           obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-            const promise = new Promise(() => { /* body not rendered: F157586 */ });
+            const promise = new Promise(() => { /* body not rendered: F157694 */ });
             return promise;
           });
           obj.headerRight = function headerRight(arg0) {
             let intl;
             let str;
-            const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157587 */ } };
+            const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157695 */ } };
             const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
             const merged = Object.assign(arg0);
             intl = userId(onClose[14]).intl;

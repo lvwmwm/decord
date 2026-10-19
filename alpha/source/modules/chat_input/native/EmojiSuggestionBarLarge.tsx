@@ -1,9 +1,9 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 13091
+// Function ID: 13092
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [109, 32, 19, 17, 9729, 21, 5191, 587, 558, 576, 13084, 4945, 9813, 9838, 4922, 2]
+// Dependencies: [109, 32, 19, 17, 9729, 21, 5191, 587, 558, 576, 13092, 4945, 9813, 9838, 4922, 2]
 
-// Module 13083 (EmojiSuggestionBarLarge)
+// Module 13091 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -22,7 +22,7 @@ let tmp;
 let tmp4;
 const ReanimatedRexport = tmp(4945);
 const ReanimatedRexportDefault = tmp4(4945);
-const EmojiSuggestionBarUtils = tmp(13084);
+const EmojiSuggestionBarUtils = tmp(13092);
 function renderEmojiSuggestionBarLargeItem(arg0, arg1, transitionState, cleanUp) {
   const merged = Object.assign(arg1);
   return <closure_13 key={arg0} transitionState={arg2} cleanUp={arg3} />;
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiSuggest
     tmp5 = cResult[2];
   }
   const tmpResult = EmojiSuggestionBarUtils;
-  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp4, tmp(13084).MAX_SUGGESTIONS_LARGE, 3, tmp5);
+  const emojiSuggestionBarState = tmpResult.useEmojiSuggestionBarState(tmp4, tmp(13092).MAX_SUGGESTIONS_LARGE, 3, tmp5);
   ({ unlockedEmojis, lockedEmojis, reducedMotion, handlePress, handlePressEmojiUnavailable } = emojiSuggestionBarState);
   if (0 !== unlockedEmojis.length) {
     const obj2 = { unlockedEmojis, lockedEmojis, reducedMotion, handlePress, handlePressEmojiUnavailable };

@@ -1,11 +1,11 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11239
+// Function ID: 11240
 // Name: useIsViewingActivity
-// Dependencies: [6292, 558, 576, 11210, 5072, 11207, 504, 2]
+// Dependencies: [6292, 558, 576, 11229, 5072, 11226, 504, 2]
 
-// Module 11220 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 11207 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11210 */;
+// Module 11239 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 11226 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11229 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

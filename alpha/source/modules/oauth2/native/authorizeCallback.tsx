@@ -1,17 +1,17 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 11021
+// Function ID: 11022
 // Name: authorizeCallback
-// Dependencies: [10999, 6190, 9540, 2002, 1386, 11001, 5152, 1107, 4901, 2]
+// Dependencies: [11020, 6190, 9540, 2002, 1386, 11022, 5152, 1107, 4901, 2]
 // Exports: default
 
-// Module 11000 (authorizeCallback)
+// Module 11021 (authorizeCallback)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import LinkingDefault from "Linking" /* 4901 */;
 import BrowserManager from "BrowserManager" /* 5152 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import Constants from "Constants" /* 10999 */;
+import Constants from "Constants" /* 11020 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -43,7 +43,7 @@ export default function authorizeCallback(arg0) {
           if (null != pathname.match(re5)) {
             const obj3 = { application: tmp, guild: tmp2 };
             const tmp8Result4 = ModalActionCreatorsDefault;
-            tmp8Result4.pushLazy(asyncRequire(11001, dependencyMap.paths), obj3, _false);
+            tmp8Result4.pushLazy(asyncRequire(11022, dependencyMap.paths), obj3, _false);
           } else if (null != pathname.match(re6)) {
             if (!canceled) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;

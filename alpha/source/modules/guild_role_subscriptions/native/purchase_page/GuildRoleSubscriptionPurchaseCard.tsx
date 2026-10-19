@@ -1,9 +1,9 @@
-// Module ID: 17693
-// Function ID: 17694
+// Module ID: 17697
+// Function ID: 17698
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 6940, 1633, 16281, 17688, 5187, 1202, 17694, 1128, 16291, 6584, 7118, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 6940, 1633, 16285, 17692, 5187, 1202, 17698, 1128, 16295, 6584, 7118, 2]
 
-// Module 17693 (GuildRoleSubscriptionPurchaseCard)
+// Module 17697 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5187 */;
 import BottomSheetModal from "BottomSheetModal" /* 6584 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16281 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16291 */;
-import Elements from "Elements" /* 17688 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16295 */;
+import Elements from "Elements" /* 17692 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let size;
 let tmp6;
-const SubscribeButtonDefault = tmp6(17694);
+const SubscribeButtonDefault = tmp6(17698);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

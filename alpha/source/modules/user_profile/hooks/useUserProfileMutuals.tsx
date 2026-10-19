@@ -1,9 +1,9 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13299
+// Function ID: 13300
 // Name: useUserProfileMutuals
 // Dependencies: [32, 19, 7613, 6219, 7586, 558, 576, 504, 12, 8935, 2]
 
-// Module 13291 (useUserProfileMutuals)
+// Module 13299 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
 import reactDefault from "react" /* 8935 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
   let tmp9;
   let user;
   let userAffinitiesMap;
-  const f116268 = (arg0) => {
+  const f116375 = (arg0) => {
     let length = closure_3[arg0.guild.id];
     if (length == null) {
       length = stateFromStores1.length;
@@ -212,8 +212,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
       const tmpResult8 = require("module_12");
       cResult[12] = arr3;
       cResult[13] = stateFromStores1;
-      cResult[14] = tmpResult8.sortBy(arr3, f116268);
-      const sortByResult = tmpResult8.sortBy(arr3, f116268);
+      cResult[14] = tmpResult8.sortBy(arr3, f116375);
+      const sortByResult = tmpResult8.sortBy(arr3, f116375);
     }
   }
   stateFromStores(stateFromStores1[9])(tmp8);

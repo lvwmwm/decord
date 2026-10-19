@@ -1,9 +1,9 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 14546
+// Function ID: 14547
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1087, 7423, 1394, 21, 587, 5191, 558, 576, 5491, 1107, 5187, 5128, 1128, 14543, 14544, 14545, 14546, 5462, 1630, 10419, 1202, 7130, 1499, 1267, 2]
+// Dependencies: [32, 19, 17, 1087, 7423, 1394, 21, 587, 5191, 558, 576, 5491, 1107, 5187, 5128, 1128, 14547, 14548, 14549, 14550, 5462, 1630, 10419, 1202, 7130, 1499, 1267, 2]
 
-// Module 14542 (PremiumFeaturesCarouselSection)
+// Module 14546 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,10 +16,10 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import ColorConstants from "ColorConstants" /* 7423 */;
 import PaginationDefault from "Pagination" /* 10419 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14543 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14544 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14545 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14546 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14547 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14548 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14549 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14550 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

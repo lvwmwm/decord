@@ -1,9 +1,9 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13534
+// Function ID: 13535
 // Name: ChannelRowPreview
-// Dependencies: [109, 19, 17, 4855, 21, 558, 576, 8487, 11168, 10551, 10327, 5137, 13214, 9621, 9623, 5486, 11879, 13517, 11882, 10823, 5187, 5127, 5191, 587, 4913, 8536, 8017, 2044, 8013, 9673, 504, 2]
+// Dependencies: [109, 19, 17, 4855, 21, 558, 576, 8487, 11187, 10551, 10327, 5137, 13222, 9621, 9623, 5486, 11898, 13522, 11901, 10839, 5187, 5127, 5191, 587, 4913, 8536, 8017, 2044, 8013, 9673, 504, 2]
 
-// Module 13529 (ChannelRowPreview)
+// Module 13534 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2044 */;
@@ -19,11 +19,11 @@ import PhoneCallIcon2 from "PhoneCallIcon" /* 9621 */;
 import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9623 */;
 import AttachmentIcon2 from "AttachmentIcon" /* 10327 */;
 import MusicIcon2 from "MusicIcon" /* 10551 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10823 */;
-import VideoIcon2 from "VideoIcon" /* 11168 */;
-import ChannelListLayout from "ChannelListLayout" /* 11882 */;
-import StickerIcon2 from "StickerIcon" /* 13214 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 13517 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
+import VideoIcon2 from "VideoIcon" /* 11187 */;
+import ChannelListLayout from "ChannelListLayout" /* 11901 */;
+import StickerIcon2 from "StickerIcon" /* 13222 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 13522 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -39,7 +39,7 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const react_native2 = tmp2(8017);
-const MessagePreviewMarkup = tmp(11879);
+const MessagePreviewMarkup = tmp(11898);
 let closure_3 = ["icon"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp45;
     if (cResult[5] !== tmp5) {
       const obj3 = {};
-      const VideoIcon = tmp(11168).VideoIcon;
+      const VideoIcon = tmp(11187).VideoIcon;
       const merged1 = Object.assign(tmp5);
       const tmp50 = metroImportAll(VideoIcon, obj3);
       cResult[5] = tmp5;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp21;
     if (cResult[13] !== tmp5) {
       const obj7 = {};
-      const StickerIcon = tmp(13214).StickerIcon;
+      const StickerIcon = tmp(13222).StickerIcon;
       const merged5 = Object.assign(tmp5);
       const tmp26 = metroImportAll(StickerIcon, obj7);
       cResult[13] = tmp5;

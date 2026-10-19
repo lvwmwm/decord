@@ -1,9 +1,9 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16930
+// Function ID: 16931
 // Name: useCardLayout
 // Dependencies: [9259, 558, 576, 1499, 2]
 
-// Module 16926 (useCardLayout)
+// Module 16930 (useCardLayout)
 import react from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9259 */;
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
   if (num < 2) {
     let tmp31;
     if (cResult[0] !== num) {
-      const obj2 = { columns: num, cardWidth: "r", rowWidth: "toCharArray$esjava$1" };
+      const obj2 = { columns: num, cardWidth: "Array", rowWidth: "toCharArray$esjava$1" };
       cResult[0] = num;
       cResult[1] = obj2;
       tmp31 = obj2;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "r", rowWidth: "toCharArray$esjava$1" };
+    return { columns: num, cardWidth: "Array", rowWidth: "toCharArray$esjava$1" };
   } else {
     let bound;
     let num2 = 2;

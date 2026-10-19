@@ -1,14 +1,14 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18394
+// Function ID: 18395
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 2068, 558, 576, 7290, 5202, 10763, 17240, 10595, 2]
+// Dependencies: [19, 2068, 558, 576, 7290, 5202, 10779, 17244, 10595, 2]
 
-// Module 18390 (useTextChannelPressEvents)
+// Module 18394 (useTextChannelPressEvents)
 import transitionToChannel from "transitionToChannel" /* 5202 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10763 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17240 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10779 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17244 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

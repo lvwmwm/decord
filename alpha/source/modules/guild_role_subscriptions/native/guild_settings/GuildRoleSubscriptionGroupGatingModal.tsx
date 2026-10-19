@@ -1,18 +1,18 @@
-// Module ID: 18960
-// Function ID: 18961
+// Module ID: 18964
+// Function ID: 18965
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 18949, 16259, 21, 558, 576, 1128, 18943, 18951, 2]
+// Dependencies: [32, 19, 18953, 16263, 21, 558, 576, 1128, 18947, 18955, 2]
 
-// Module 18960 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18964 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16259 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18943 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18951 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18947 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18955 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18949 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18953 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

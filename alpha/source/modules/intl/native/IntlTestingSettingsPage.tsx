@@ -1,9 +1,9 @@
-// Module ID: 16685
-// Function ID: 16686
+// Module ID: 16689
+// Function ID: 16690
 // Name: IntlTestingSettingsPage
-// Dependencies: [32, 5, 19, 17, 2133, 2132, 21, 5191, 587, 558, 576, 6540, 1128, 5360, 6539, 504, 4797, 6457, 6542, 1167, 5187, 16686, 16718, 5477, 2]
+// Dependencies: [32, 5, 19, 17, 2133, 2132, 21, 5191, 587, 558, 576, 6540, 1128, 5360, 6539, 504, 4797, 6457, 6542, 1167, 5187, 16690, 16722, 5477, 2]
 
-// Module 16685 (IntlTestingSettingsPage)
+// Module 16689 (IntlTestingSettingsPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
 import _modDef4797 from "module_4797" /* 4797 */;
 import TableRow6 from "TableRow" /* 6457 */;
 import TableRowGroup2 from "TableRowGroup" /* 6542 */;
-import _modDef16686 from "module_16686" /* 16686 */;
-import _modDef16718 from "module_16718" /* 16718 */;
+import _modDef16690 from "module_16690" /* 16690 */;
+import _modDef16722 from "module_16722" /* 16722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -526,7 +526,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj4 = { variant: "text-md/normal", children: intl.format(_modDef16686.HMvEC5, {}) };
+    const obj4 = { variant: "text-md/normal", children: intl.format(_modDef16690.HMvEC5, {}) };
     const Text = tmp(5187).Text;
     intl = tmp(1128).intl;
     const tmp21 = closure_10(Text, obj4);
@@ -555,7 +555,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj5 = { variant: "text-md/normal", children: intl2.format(_modDef16718.swfLzV, {}) };
+    const obj5 = { variant: "text-md/normal", children: intl2.format(_modDef16722.swfLzV, {}) };
     const Text2 = tmp(5187).Text;
     intl2 = tmp(1128).intl;
     const tmp24 = closure_10(Text2, obj5);
@@ -584,7 +584,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj6 = { variant: "text-md/normal", children: intl3.format(_modDef16686.rmps8y, {}) };
+    const obj6 = { variant: "text-md/normal", children: intl3.format(_modDef16690.rmps8y, {}) };
     const Text3 = tmp(5187).Text;
     intl3 = tmp(1128).intl;
     const tmp27 = closure_10(Text3, obj6);
@@ -613,7 +613,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj7 = { variant: "text-md/normal", children: intl4.format(_modDef16686.uczI4g, obj8) };
+    const obj7 = { variant: "text-md/normal", children: intl4.format(_modDef16690.uczI4g, obj8) };
     const Text4 = tmp(5187).Text;
     intl4 = tmp(1128).intl;
     obj8 = {
@@ -647,7 +647,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj9 = { variant: "text-md/normal", children: intl5.format(_modDef16686.rdfRyh, {}) };
+    const obj9 = { variant: "text-md/normal", children: intl5.format(_modDef16690.rdfRyh, {}) };
     const Text5 = tmp(5187).Text;
     intl5 = tmp(1128).intl;
     const tmp33 = closure_10(Text5, obj9);
@@ -676,7 +676,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
         return;
       }
     }
-    const obj10 = { variant: "text-md/normal", children: intl6.format(_modDef16686.XOdbAy, obj11) };
+    const obj10 = { variant: "text-md/normal", children: intl6.format(_modDef16690.XOdbAy, obj11) };
     const Text6 = tmp(5187).Text;
     intl6 = tmp(1128).intl;
     obj11 = {
@@ -776,19 +776,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
   obj2 = { spacing: 24, style: tmp.container, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [closure_10(closure_14, {}), closure_10(closure_13, {}), , , , , , ];
-  const obj3 = { variant: "text-md/normal", children: intl.format(_modDef16686.HMvEC5, {}) };
+  const obj3 = { variant: "text-md/normal", children: intl.format(_modDef16690.HMvEC5, {}) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[2] = closure_10(Text, obj3);
-  const obj4 = { variant: "text-md/normal", children: intl2.format(_modDef16718.swfLzV, {}) };
+  const obj4 = { variant: "text-md/normal", children: intl2.format(_modDef16722.swfLzV, {}) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[3] = closure_10(Text2, obj4);
-  const obj5 = { variant: "text-md/normal", children: intl3.format(_modDef16686.rmps8y, {}) };
+  const obj5 = { variant: "text-md/normal", children: intl3.format(_modDef16690.rmps8y, {}) };
   const Text3 = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[4] = closure_10(Text3, obj5);
-  const obj6 = { variant: "text-md/normal", children: intl4.format(_modDef16686.uczI4g, obj7) };
+  const obj6 = { variant: "text-md/normal", children: intl4.format(_modDef16690.uczI4g, obj7) };
   const Text4 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   obj7 = {
@@ -797,11 +797,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlTestingS
     }
   };
   items[5] = closure_10(Text4, obj6);
-  const obj8 = { variant: "text-md/normal", children: intl5.format(_modDef16686.rdfRyh, {}) };
+  const obj8 = { variant: "text-md/normal", children: intl5.format(_modDef16690.rdfRyh, {}) };
   const Text5 = require("Text/Text").Text;
   intl5 = require("intl").intl;
   items[6] = closure_10(Text5, obj8);
-  const obj9 = { variant: "text-md/normal", children: intl6.format(_modDef16686.XOdbAy, obj10) };
+  const obj9 = { variant: "text-md/normal", children: intl6.format(_modDef16690.XOdbAy, obj10) };
   const Text6 = require("Text/Text").Text;
   intl6 = require("intl").intl;
   obj10 = {

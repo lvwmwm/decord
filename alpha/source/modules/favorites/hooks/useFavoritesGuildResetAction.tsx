@@ -1,9 +1,9 @@
-// Module ID: 17265
-// Function ID: 17266
+// Module ID: 17269
+// Function ID: 17270
 // Name: useFavoritesGuildResetAction
 // Dependencies: [19, 5034, 1087, 558, 576, 2044, 2093, 1114, 10624, 1128, 3465, 2]
 
-// Module 17265 (useFavoritesGuildResetAction)
+// Module 17269 (useFavoritesGuildResetAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;

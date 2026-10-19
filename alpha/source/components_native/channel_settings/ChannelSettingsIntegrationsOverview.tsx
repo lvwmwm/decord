@@ -1,9 +1,9 @@
-// Module ID: 17983
-// Function ID: 17984
+// Module ID: 17987
+// Function ID: 17988
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 2072, 2068, 1087, 21, 558, 576, 1505, 7134, 1128, 8885, 6542, 6457, 5191, 587, 504, 17875, 17984, 5477, 8855, 2]
+// Dependencies: [19, 2072, 2068, 1087, 21, 558, 576, 1505, 7134, 1128, 8885, 6542, 6457, 5191, 587, 504, 17879, 17988, 5477, 8855, 2]
 
-// Module 17983 (ChannelSettingsIntegrationsOverview)
+// Module 17987 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,8 +11,8 @@ import intl5 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8885 */;
-import WebhookIcon from "WebhookIcon" /* 17875 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 17984 */;
+import WebhookIcon from "WebhookIcon" /* 17879 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 17988 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
@@ -244,7 +244,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedC
       const obj7 = {
         label: intl.string(channelId(1128).t.jp25Id),
         subLabel: intl2.string(channelId(1128).t.mKIOkI),
-        icon: closure_6(channelId(17875).WebhookIcon, {}),
+        icon: closure_6(channelId(17879).WebhookIcon, {}),
         arrow: true,
         onPress() {
               return navigation.push(ChannelSettingsSections.WEBHOOKS);
@@ -260,7 +260,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedC
         const obj8 = {
           label: intl3.string(channelId(1128).t.OrV60r),
           subLabel: intl4.string(channelId(1128).t.rQREJl),
-          icon: closure_6(channelId(17984).ChannelsFollowedIcon, {}),
+          icon: closure_6(channelId(17988).ChannelsFollowedIcon, {}),
           arrow: true,
           onPress() {
                   return navigation.push(ChannelSettingsSections.CHANNELS_FOLLOWED);

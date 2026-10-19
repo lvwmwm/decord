@@ -1,10 +1,10 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12935
+// Function ID: 12936
 // Name: GuildOnboardingHomeTypes
 // Dependencies: [2068, 1087, 1388, 4850, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 12927 (GuildOnboardingHomeTypes)
+// Module 12935 (GuildOnboardingHomeTypes)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

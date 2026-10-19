@@ -1,10 +1,10 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11260
+// Function ID: 11261
 // Name: getPrimaryAppCommand
 // Dependencies: [5, 19, 2068, 9549, 2000, 9555, 558, 576, 9553, 9536, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 11241 (getPrimaryAppCommand)
+// Module 11260 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9536 */;

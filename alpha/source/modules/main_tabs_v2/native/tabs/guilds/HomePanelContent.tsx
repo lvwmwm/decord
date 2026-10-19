@@ -1,20 +1,20 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17428
+// Function ID: 17429
 // Name: HomePanelContent
-// Dependencies: [19, 17, 17143, 1087, 17425, 21, 5191, 558, 576, 17148, 17426, 1499, 4945, 11892, 10529, 17151, 9610, 4913, 587, 1385, 5471, 17500, 2]
+// Dependencies: [19, 17, 17147, 1087, 17429, 21, 5191, 558, 576, 17152, 17430, 1499, 4945, 11911, 10529, 17155, 9610, 4913, 587, 1385, 5471, 17504, 2]
 
-// Module 17424 (HomePanelContent)
+// Module 17428 (HomePanelContent)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11892 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17148 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17425 */;
-import GuildsBarDefault from "GuildsBar" /* 17426 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17429 */;
+import GuildsBarDefault from "GuildsBar" /* 17430 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import HomeDrawerStore_mod from "HomeDrawerStore" /* 17143 */;
+import HomeDrawerStore_mod from "HomeDrawerStore" /* 17147 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -116,7 +116,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   let obj = offsetX(576);
   const cResult = obj.c(8);
   offsetX = offsetX.offsetX;
-  let obj2 = offsetX(17148);
+  let obj2 = offsetX(17152);
   const guildsBarPullX = obj2.useHomeDrawerState().guildsBarPullX;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { ignoreKeyboard: true };
@@ -136,10 +136,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     return obj;
   };
   const tmpResult = tmp(4945);
-  fn.__closure = { roundToNearestPixel: guildsBarPullX(11892), offsetX, guildsBarPullX };
+  fn.__closure = { roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX };
   fn.__workletHash = 7539125302557;
   fn.__initData = __initData;
-  ({ roundToNearestPixel: guildsBarPullX(11892), offsetX, guildsBarPullX });
+  ({ roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX });
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   if (cResult[1] !== animatedStyle) {
     let items = [closure_4.absoluteFill, animatedStyle];
@@ -175,7 +175,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   let items;
   let obj5;
   offsetX = offsetX.offsetX;
-  let obj = offsetX(17148);
+  let obj = offsetX(17152);
   const guildsBarPullX = obj.useHomeDrawerState().guildsBarPullX;
   const height = guildsBarPullX(1499)({ ignoreKeyboard: true }).height;
   let obj2 = offsetX(4945);
@@ -188,10 +188,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     tmp = roundToNearestPixelDefault;
     return obj;
   };
-  fn.__closure = { roundToNearestPixel: guildsBarPullX(11892), offsetX, guildsBarPullX };
+  fn.__closure = { roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX };
   fn.__workletHash = 6557055008030;
   fn.__initData = __initData2;
-  ({ roundToNearestPixel: guildsBarPullX(11892), offsetX, guildsBarPullX });
+  ({ roundToNearestPixel: guildsBarPullX(11911), offsetX, guildsBarPullX });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { pointerEvents: "none", style: items, children: closure_9(guildsBarPullX(10529), obj5) };
   items = [closure_4.absoluteFill, animatedStyle];
@@ -216,12 +216,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   let obj = ref(576);
   const cResult = obj.c(28);
   const tmp4 = closure_11();
-  let obj2 = ref(17151);
+  let obj2 = ref(17155);
   const drawerOpen = obj2.useDrawerOpen();
-  let obj3 = ref(17148);
+  let obj3 = ref(17152);
   const doesLandOnHomeDrawer = obj3.useDoesLandOnHomeDrawer();
   ref = isClientThemeOrCustomThemeActive.useRef(null);
-  const obj5 = ref(17148);
+  const obj5 = ref(17152);
   const homeDrawerState = obj5.useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
   const guildsBarDrawerStyle = homeDrawerState.guildsBarDrawerStyle;
@@ -311,10 +311,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
       return obj3;
     }
   }
-  N.__closure = { interpolate: tmp(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: tmp(17148).INITIAL_OPEN_WIDTH, Extrapolation: tmp(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: tmp(4945).interpolateColor, maxX: tmp9, baseLowest: token, panelBg: token1 };
+  N.__closure = { interpolate: tmp(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: tmp(17152).INITIAL_OPEN_WIDTH, Extrapolation: tmp(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: tmp(4945).interpolateColor, maxX: tmp9, baseLowest: token, panelBg: token1 };
   N.__workletHash = 8745496017321;
   N.__initData = __initData4;
-  ({ interpolate: tmp(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: tmp(17148).INITIAL_OPEN_WIDTH, Extrapolation: tmp(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: tmp(4945).interpolateColor, maxX: tmp9, baseLowest: token, panelBg: token1 });
+  ({ interpolate: tmp(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: tmp(17152).INITIAL_OPEN_WIDTH, Extrapolation: tmp(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: tmp(4945).interpolateColor, maxX: tmp9, baseLowest: token, panelBg: token1 });
   const animatedStyle1 = tmpResult.useAnimatedStyle(N);
   if (cResult[3] === animatedStyle) {
     let tmp19;
@@ -331,7 +331,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp24 = closure_9(panelTranslateX(17426), { enableHome: true });
+        const tmp24 = closure_9(panelTranslateX(17430), { enableHome: true });
         cResult[9] = tmp24;
         tmp22 = tmp24;
       } else {
@@ -372,7 +372,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
           if (cResult[19] !== doesLandOnHomeDrawer) {
             let tmp37 = null;
             if (doesLandOnHomeDrawer) {
-              tmp37 = closure_9(tmp11(17500), {});
+              tmp37 = closure_9(tmp11(17504), {});
             }
             cResult[19] = doesLandOnHomeDrawer;
             cResult[20] = tmp37;
@@ -449,12 +449,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   let tmp = GUILD_LIST_WIDTH;
   const tmp2 = closure_11();
   const tmp3 = dependencyMap;
-  let obj = ref(17151);
+  let obj = ref(17155);
   const drawerOpen = obj.useDrawerOpen();
-  let obj2 = ref(17148);
+  let obj2 = ref(17152);
   const doesLandOnHomeDrawer = obj2.useDoesLandOnHomeDrawer();
   ref = isClientThemeOrCustomThemeActive.useRef(null);
-  let obj3 = ref(17148);
+  let obj3 = ref(17152);
   const homeDrawerState = obj3.useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
   const guildsBarDrawerStyle = homeDrawerState.guildsBarDrawerStyle;
@@ -527,10 +527,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
     return obj3;
   };
   const obj9 = ref(4945);
-  fn2.__closure = { interpolate: ref(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(17148).INITIAL_OPEN_WIDTH, Extrapolation: ref(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4945).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 };
+  fn2.__closure = { interpolate: ref(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(17152).INITIAL_OPEN_WIDTH, Extrapolation: ref(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4945).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 };
   fn2.__workletHash = 16771946319915;
   fn2.__initData = __initData6;
-  ({ interpolate: ref(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(17148).INITIAL_OPEN_WIDTH, Extrapolation: ref(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4945).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 });
+  ({ interpolate: ref(4945).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(17152).INITIAL_OPEN_WIDTH, Extrapolation: ref(4945).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4945).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 });
   const animatedStyle1 = obj9.useAnimatedStyle(fn2);
   const obj11 = { style: items1, children: tmp17(View2, obj12) };
   items1 = [tmp2.container, animatedStyle];
@@ -538,7 +538,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   obj12 = { ref, style: items2, children: items3 };
   items2 = [drawerOpen ? tmp2.guildsListContainerGestured : tmp2.guildLisetContainerDefault, guildsBarDrawerStyle];
   View2 = panelTranslateX(4945).View;
-  items3 = [closure_9(panelTranslateX(17426), { enableHome: true }), , ];
+  items3 = [closure_9(panelTranslateX(17430), { enableHome: true }), , ];
   const obj13 = { style: items4, pointerEvents: "none", collapsable: false, children: tmp16Result };
   items4 = [tmp2.contentMask, { left: tmp }, animatedStyle1];
   tmp16Result = null;
@@ -551,7 +551,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDr
   items3[1] = closure_9(View3, obj13);
   let tmp16Result2 = null;
   if (doesLandOnHomeDrawer) {
-    tmp16Result2 = tmp16(tmp10(17500), {});
+    tmp16Result2 = tmp16(tmp10(17504), {});
   }
   items3[2] = tmp16Result2;
   return closure_9(View, obj11);

@@ -1,9 +1,9 @@
-// Module ID: 13316
-// Function ID: 13317
+// Module ID: 13324
+// Function ID: 13325
 // Name: useGetJoinRequestAndGuildForInterviewChannel
 // Dependencies: [32, 19, 2090, 4845, 6397, 5035, 1087, 558, 576, 11, 504, 6396, 2]
 
-// Module 13316 (useGetJoinRequestAndGuildForInterviewChannel)
+// Module 13324 (useGetJoinRequestAndGuildForInterviewChannel)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6396 */;

@@ -1,22 +1,22 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15494
+// Function ID: 15495
 // Name: NativeRPCImplementation
-// Dependencies: [5181, 1207, 1246, 15491, 15543, 15544, 15546, 15547, 15549, 15552, 15553, 9164, 11308, 2]
+// Dependencies: [5181, 1207, 1246, 15495, 15547, 15548, 15550, 15551, 15553, 15556, 15557, 9164, 11326, 2]
 
-// Module 15490 (NativeRPCImplementation)
+// Module 15494 (NativeRPCImplementation)
 import NativeRPCServerDefault from "NativeRPCServer" /* 9164 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11308 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15491 */;
-import commands_activitiesDefault from "commands/activities" /* 15543 */;
-import authDefault from "auth" /* 15544 */;
-import voiceSettingsDefault from "voiceSettings" /* 15546 */;
-import unsupportedDefault from "unsupported" /* 15547 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15549 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15553 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11326 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15495 */;
+import commands_activitiesDefault from "commands/activities" /* 15547 */;
+import authDefault from "auth" /* 15548 */;
+import voiceSettingsDefault from "voiceSettings" /* 15550 */;
+import unsupportedDefault from "unsupported" /* 15551 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15553 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15557 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15552 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15556 */;
 import size from "module_2" /* 2 */;
 
 let items;

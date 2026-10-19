@@ -1,121 +1,89 @@
 // Module ID: 12481
 // Function ID: 12482
-// Dependencies: [12370, 12368, 12369]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [12442, 12430, 12465, 12389]
 
 // Module 12481
-import _mod12368 from "module_12368" /* 12368 */;
-import _mod12370 from "module_12370" /* 12370 */;
+import _mod12389 from "module_12389" /* 12389 */;
+import module_12442 from "module_12442" /* 12442 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod12370.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
-}
+let filterKeys;
 
-export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export const supportsDOMException = function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export const supportsErrorEvent = function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export { supportsFetch };
-export const supportsNativeFetch = function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod12370.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(12370).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
+let c2 = "_sentryBundlerPluginAppKey:";
+
+export const thirdPartyErrorFilterIntegration = module_12442.defineIntegration((arg0) => {
+  const behaviour = arg0;
+  let obj = {
+    name: "ThirdPartyErrorsFilter",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
             }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod12368.DEBUG_BUILD) {
-              const logger = tmp2(12369).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
             }
           }
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = options(dependencyMap[2]);
+          const result = obj.addMetadataToStackFrames(stackParser, type);
+        }
+      });
+    },
+    processEvent(tags) {
+      const obj = _mod12389;
+      const framesFromEvent = obj.getFramesFromEvent(tags);
+      let mapped;
+      if (framesFromEvent) {
+        let found = framesFromEvent.filter((filename) => filename.filename);
+        mapped = found.map((module_metadata) => {
+          let length;
+          let mapped;
+          if (module_metadata.module_metadata) {
+            const _Object = Object;
+            const keys = Object.keys(module_metadata.module_metadata);
+            const found = keys.filter((item) => item.startsWith(length));
+            mapped = found.map((arr) => arr.slice(length.length));
+          } else {
+            mapped = [];
+          }
+          return mapped;
+        });
+      }
+      if (mapped) {
+        let str2;
+        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
+          str2 = "some";
+        } else {
+          str2 = "every";
+        }
+        if (mapped[str2]((arr) => !arr.some((item) => {
+          filterKeys = filterKeys.filterKeys;
+          return filterKeys.includes(item);
+        }))) {
+          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
+            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
+              const obj2 = { third_party_code: true };
+              const merged = Object.assign(tags.tags);
+              tags.tags = obj2;
+            }
+          }
+          return null;
         }
       }
-      return flag2;
+      return tags;
     }
-  } else {
-    return false;
-  }
-};
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
-  if (supportsFetch()) {
-    try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-};
-export const supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in _mod12370.GLOBAL_OBJ;
-};
+  };
+  return obj;
+});

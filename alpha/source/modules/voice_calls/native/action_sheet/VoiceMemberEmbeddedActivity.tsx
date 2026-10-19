@@ -1,16 +1,16 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14386
+// Function ID: 14387
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 2067, 2068, 1392, 1206, 7119, 21, 1202, 5191, 587, 558, 576, 7134, 1388, 504, 4834, 11297, 1499, 8436, 11300, 1128, 5128, 5187, 11335, 5480, 6462, 2]
+// Dependencies: [32, 19, 17, 2067, 2068, 1392, 1206, 7119, 21, 1202, 5191, 587, 558, 576, 7134, 1388, 504, 4834, 11315, 1499, 8436, 11318, 1128, 5128, 5187, 11353, 5480, 6462, 2]
 // Exports: calculateActivityRowHeight
 
-// Module 14382 (VoiceMemberEmbeddedActivity)
+// Module 14386 (VoiceMemberEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11300 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11318 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;

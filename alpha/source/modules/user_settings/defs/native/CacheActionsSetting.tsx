@@ -1,9 +1,9 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16632
+// Function ID: 16633
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6013, 21, 5155, 4904, 5145, 1128, 558, 576, 504, 2044, 16629, 7117, 11620, 16633, 6457, 16630, 11989, 6433, 16634, 5152, 6542, 7175, 11065, 2]
+// Dependencies: [5, 32, 19, 6013, 21, 5155, 4904, 5145, 1128, 558, 576, 504, 2044, 16633, 7117, 11636, 16637, 6457, 16634, 12008, 6433, 16638, 5152, 6542, 7175, 11084, 2]
 
-// Module 16628 (CacheActionsSetting)
+// Module 16632 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,15 +11,15 @@ import UserSettings from "UserSettings" /* 2044 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 16629 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 16630 */;
-import FileWarningIcon from "FileWarningIcon" /* 16634 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 16633 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 16634 */;
+import FileWarningIcon from "FileWarningIcon" /* 16638 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,8 +35,8 @@ const TableRow4 = tmp(6457);
 const TableRowGroup2 = tmp(6542);
 const BottomSheetTitleHeader2 = tmp(7117);
 const ActionSheet2 = tmp(7175);
-const FileUpIcon = tmp(11620);
-const FileIcon = tmp(11989);
+const FileUpIcon = tmp(11636);
+const FileIcon = tmp(12008);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
@@ -126,7 +126,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
     [tmp8, tmp9] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp16 = closure_7(tmp(11620).FileUpIcon, {});
+    const tmp16 = closure_7(tmp(11636).FileUpIcon, {});
     const intl3 = tmp(1128).intl;
     const stringResult1 = intl3.string(tmp(1128).t["/GUaXh"]);
     cResult[2] = tmp16;
@@ -217,7 +217,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp30 = closure_7(tmp(16634).FileWarningIcon, { color: "text-feedback-critical" });
+        const tmp30 = closure_7(tmp(16638).FileWarningIcon, { color: "text-feedback-critical" });
         const intl5 = tmp(1128).intl;
         const stringResult2 = intl5.string(tmp(1128).t.tgwiMO);
         cResult[11] = tmp30;
@@ -349,7 +349,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
   }
   let tmp25Result2 = null != DiskUsageManagerDefault.calculateSize;
   if (tmp25Result2) {
-    const obj9 = { icon: closure_7(tmp(11989).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
+    const obj9 = { icon: closure_7(tmp(12008).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
     const TableRow = tmp(6457).TableRow;
     const intl4 = tmp(1128).intl;
     string = intl4.string;

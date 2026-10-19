@@ -1,16 +1,16 @@
-// Module ID: 13673
-// Function ID: 13674
+// Module ID: 13677
+// Function ID: 13678
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [109, 19, 7534, 13674, 21, 558, 576, 504, 9264, 9267, 9268, 2]
+// Dependencies: [109, 19, 7534, 13678, 21, 558, 576, 504, 9264, 9267, 9268, 2]
 
-// Module 13673 (CollectiblesWishlistItemCard)
+// Module 13677 (CollectiblesWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7534 */;
 import SKUPreview from "SKUPreview" /* 9267 */;
 import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9268 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import SentGiftsStore from "SentGiftsStore" /* 13674 */;
+import SentGiftsStore from "SentGiftsStore" /* 13678 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

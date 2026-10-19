@@ -1,19 +1,19 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14653
+// Function ID: 14654
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5103, 21, 5191, 587, 683, 558, 576, 5187, 14650, 13171, 13194, 14651, 1128, 2621, 2]
+// Dependencies: [19, 17, 5103, 21, 5191, 587, 683, 558, 576, 5187, 14654, 13179, 13202, 14655, 1128, 2621, 2]
 
-// Module 14649 (GuildPowerupsMarketingHeader)
+// Module 14653 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1128 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13171 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13194 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14650 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14651 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13179 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13202 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14654 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14655 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   const cResult = obj.c(13);
   guild = guild.guild;
   const tmp4 = closure_7();
-  arr = arr(14650)(guild.id);
+  arr = arr(14654)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(13194)(guild.id)) {
+  if (arr(13202)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;

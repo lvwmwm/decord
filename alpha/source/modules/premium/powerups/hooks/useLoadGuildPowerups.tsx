@@ -1,11 +1,11 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13172
+// Function ID: 13173
 // Name: useLoadGuildPowerups
-// Dependencies: [19, 558, 576, 5122, 13165, 13171, 2]
+// Dependencies: [19, 558, 576, 5122, 13173, 13179, 2]
 
-// Module 13164 (useLoadGuildPowerups)
-import GameServerActionCreators from "GameServerActionCreators" /* 13165 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13171 */;
+// Module 13172 (useLoadGuildPowerups)
+import GameServerActionCreators from "GameServerActionCreators" /* 13173 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13179 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

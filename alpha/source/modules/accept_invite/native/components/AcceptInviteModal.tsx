@@ -1,9 +1,9 @@
-// Module ID: 18429
-// Function ID: 18430
+// Module ID: 18433
+// Function ID: 18434
 // Name: AcceptInviteModal
-// Dependencies: [19, 6939, 21, 1275, 5174, 13420, 9244, 558, 576, 6965, 2]
+// Dependencies: [19, 6939, 21, 1275, 5174, 13425, 9244, 558, 576, 6965, 2]
 
-// Module 18429 (AcceptInviteModal)
+// Module 18433 (AcceptInviteModal)
 import Fragment from "Fragment" /* 21 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 5174 */;

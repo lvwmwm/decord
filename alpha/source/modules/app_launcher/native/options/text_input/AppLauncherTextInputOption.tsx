@@ -1,9 +1,9 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 12003
+// Function ID: 12004
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1395, 21, 5191, 587, 558, 576, 10932, 2000, 9732, 11980, 10933, 1202, 11985, 1384, 11986, 1896, 9726, 2]
+// Dependencies: [32, 19, 17, 1395, 21, 5191, 587, 558, 576, 10948, 2000, 9732, 11999, 10949, 1202, 12004, 1384, 12005, 1896, 9726, 2]
 
-// Module 11984 (AppLauncherTextInputOption)
+// Module 12003 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
   }), 2);
   value = tmp2[0];
   react = tmp2[1];
-  let obj = onChangeText(10932);
+  let obj = onChangeText(10948);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   react.useRef({ start: 0, end: 0 });
   const ref = react.useRef(null);
@@ -345,17 +345,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
       const result = obj.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj2 = onChangeText(11980);
+  let obj2 = onChangeText(11999);
   const animationDelayedAutoFocus = obj2.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (entrypoint === onChangeText(10933).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === onChangeText(10949).AppLauncherEntrypoint.VOICE) {
     TextInput = tmp4(1202).TextInput;
   } else {
-    TextInput = guildId(11985);
+    TextInput = guildId(12004);
   }
   const items3 = [tmp.container, , ];
   const tmp12 = onChangeText;
@@ -411,7 +411,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
           const result1 = obj2.openEmojiPickerActionSheet(obj3);
         }
     };
-    tmp14Result = tmp14(guildId(11986), obj5);
+    tmp14Result = tmp14(guildId(12005), obj5);
   }
   items4[1] = tmp14Result;
   return tmp12(tmp13, obj3);

@@ -1,9 +1,9 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12295
+// Function ID: 12296
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4843, 2090, 4855, 1392, 21, 558, 576, 12278, 5155, 12280, 12271, 6542, 6457, 11646, 504, 7222, 11648, 1128, 3883, 5521, 11650, 2]
+// Dependencies: [19, 4843, 2090, 4855, 1392, 21, 558, 576, 12296, 5155, 12298, 12289, 6542, 6457, 11665, 504, 7222, 11667, 1128, 3883, 5521, 11669, 2]
 
-// Module 12277 (ConjureClarificationEntityPicker)
+// Module 12295 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
 import TableRow2 from "TableRow" /* 6457 */;
 import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import ConjureUtils from "ConjureUtils" /* 7222 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11648 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11650 */;
-import ConjureClarification from "ConjureClarification" /* 12271 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12278 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11667 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11669 */;
+import ConjureClarification from "ConjureClarification" /* 12289 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12296 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -166,7 +166,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Project
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(12271);
+      const tmp4Result = tmp4(12289);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };

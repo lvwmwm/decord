@@ -1,10 +1,10 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17209
+// Function ID: 17210
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 2068, 1087, 21, 5191, 558, 576, 504, 5521, 8923, 16351, 1128, 8658, 10555, 2]
+// Dependencies: [19, 17, 2068, 1087, 21, 5191, 558, 576, 504, 5521, 8923, 16355, 1128, 8658, 10555, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 17205 (HappeningNowCardActivitySubtitle)
+// Module 17209 (HappeningNowCardActivitySubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import isStreamingDefault from "isStreaming" /* 8658 */;
-import HappeningNowCard from "HappeningNowCard" /* 16351 */;
+import HappeningNowCard from "HappeningNowCard" /* 16355 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -150,7 +150,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
       cResult[10] = tmp36;
       tmp33 = tmp36;
     }
-    const tmp32 = jsx(voiceState2(16351).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp27, children: tmp26 });
+    const tmp32 = jsx(voiceState2(16355).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp27, children: tmp26 });
     cResult[5] = tmp26;
     cResult[6] = tmp27;
     cResult[7] = tmp32;
@@ -163,7 +163,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     const stateFromStores1 = obj.useStateFromStores(items1, () => ChannelStore.getChannel(voiceState2.channelId));
     const obj6 = { style: tmp3.cardDetails, children: null };
     const tmp9 = useChannelNameDefault(stateFromStores1);
-    const HappeningNowCardSubtitle = voiceState2(16351).HappeningNowCardSubtitle;
+    const HappeningNowCardSubtitle = voiceState2(16355).HappeningNowCardSubtitle;
     const tmp11 = View;
     const tmp8 = importDefault;
     if (null != stateFromStores1) {
@@ -190,7 +190,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
         tmp11 = cResult[2];
       }
       if (cResult[3] !== tmp11) {
-        const tmp16 = jsx(tmp8(16351).HappeningNowCardSubtitle, { lineClamp: 1, children: tmp11 });
+        const tmp16 = jsx(tmp8(16355).HappeningNowCardSubtitle, { lineClamp: 1, children: tmp11 });
         cResult[3] = tmp11;
         cResult[4] = tmp16;
         tmp14 = tmp16;

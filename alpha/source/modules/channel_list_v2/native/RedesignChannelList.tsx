@@ -1,28 +1,28 @@
-// Module ID: 17229
-// Function ID: 17230
+// Module ID: 17233
+// Function ID: 17234
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 5181, 7515, 17143, 2090, 2119, 5215, 1087, 21, 558, 576, 1508, 5072, 10936, 17230, 17231, 17258, 17303, 17304, 16137, 17148, 17305, 17259, 17307, 7524, 504, 6361, 17308, 17312, 7517, 17313, 11892, 17128, 16138, 17366, 17378, 17381, 17383, 12805, 7124, 17227, 17385, 17141, 17386, 17392, 17396, 17409, 2093, 17414, 9760, 17422, 12625, 2]
+// Dependencies: [109, 32, 19, 17, 5181, 7515, 17147, 2090, 2119, 5215, 1087, 21, 558, 576, 1508, 5072, 10952, 17234, 17235, 17262, 17307, 17308, 16141, 17152, 17309, 17263, 17311, 7524, 504, 6361, 17312, 17316, 7517, 17317, 11911, 17132, 16142, 17370, 17382, 17385, 17387, 12822, 7124, 17231, 17389, 17145, 17390, 17396, 17400, 17413, 2093, 17418, 9760, 17426, 12642, 2]
 
-// Module 17229 (RedesignChannelList)
+// Module 17233 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelListState from "ChannelListState" /* 7517 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11892 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17148 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 17259 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17304 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 17305 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 17313 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17385 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 17396 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 17409 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 17422 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 17263 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17308 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 17309 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 17317 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17389 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 17400 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 17413 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 17426 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ChannelListStore from "ChannelListStore" /* 7515 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 17143 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 17147 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
@@ -40,8 +40,8 @@ let closure_17;
 let closure_18;
 let closure_19;
 let tmp;
-const TTIFirstContentfulPaint = tmp(12625);
-const GuildsRenderExperiment2 = tmp(17141);
+const TTIFirstContentfulPaint = tmp(12642);
+const GuildsRenderExperiment2 = tmp(17145);
 let closure_3 = ["shouldRender"];
 let closure_4 = ["selectedGuildId", "selectedChannelId"];
 const View = react_native.View;
@@ -947,7 +947,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         const tmp2Result = selectedGuildId(2093);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           const obj4 = { guild: stateFromStores, selectedChannelId, selectedVoiceChannelId: stateFromStores1 };
-          const _default = selectedGuildId(17414).default;
+          const _default = selectedGuildId(17418).default;
           const merged1 = Object.assign(merged);
           return closure_17(_default, obj4);
         } else {

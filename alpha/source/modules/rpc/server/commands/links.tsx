@@ -1,28 +1,28 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15514
+// Function ID: 15515
 // Name: links
-// Dependencies: [5, 2067, 5540, 5895, 1087, 2026, 4834, 1384, 15511, 15484, 15512, 5186, 1267, 15513, 4895, 8764, 15514, 9169, 15499, 11317, 11312, 7370, 2032, 15515, 2]
+// Dependencies: [5, 2067, 5540, 5895, 1087, 2026, 4834, 1384, 15515, 15488, 15516, 5186, 1267, 15517, 4895, 8764, 15518, 9169, 15503, 11335, 11330, 7370, 2032, 15519, 2]
 
-// Module 15510 (links)
+// Module 15514 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5186 */;
 import RPCErrorDefault from "RPCError" /* 9169 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11312 */;
-import RPCHelpers from "RPCHelpers" /* 11317 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15484 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15511 */;
-import internalDeepLinks from "internalDeepLinks" /* 15512 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15513 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15515 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11330 */;
+import RPCHelpers from "RPCHelpers" /* 11335 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15488 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15515 */;
+import internalDeepLinks from "internalDeepLinks" /* 15516 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15517 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import Constants_mod from "Constants" /* 5895 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Constants_mod3 from "Constants" /* 2026 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15499 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
 import size from "module_2" /* 2 */;
 
 let c2, c6, c7, currentEmbeddedActivity, getApplication;

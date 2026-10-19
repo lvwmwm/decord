@@ -164,7 +164,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   tmp6 = getStyles;
 }) : (function LHeading(className) {
   let items;
-  const f142803 = (item) => {
+  const f142900 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -189,7 +189,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f142803);
+    const mapped = parts.map(f142900);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -197,7 +197,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f142803);
+    const mapped1 = parts1.map(f142900);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });

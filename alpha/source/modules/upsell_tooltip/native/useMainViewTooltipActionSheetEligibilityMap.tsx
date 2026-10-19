@@ -1,9 +1,9 @@
-// Module ID: 18110
-// Function ID: 18111
+// Module ID: 18114
+// Function ID: 18115
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1261, 7441, 18080, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18111, 1630, 8359, 18112, 8355, 7436, 18113, 14492, 10399, 10398, 10406, 5033, 2052, 18114, 18115, 18078, 18092, 15632, 12814, 2]
+// Dependencies: [32, 1261, 7441, 18084, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18115, 1630, 8359, 18116, 8355, 7436, 18117, 14496, 10399, 10398, 10406, 5033, 2052, 18118, 18119, 18082, 18096, 15636, 12831, 2]
 
-// Module 18110 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 18114 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
@@ -14,17 +14,17 @@ import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8355 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10406 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12814 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14492 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15632 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18078 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 18092 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18111 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18115 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12831 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14496 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15636 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18082 */;
+import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 18096 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18115 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18080 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18084 */;
 import PromotionsStore from "PromotionsStore" /* 9421 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import UserRequiredActionStore_mod from "UserRequiredActionStore" /* 2062 */;
@@ -40,7 +40,7 @@ let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_REACTIVATION_TRIAL_ID;
 let tmp4;
-const useGiftingPromotionAssetsReadyDefault = tmp4(18114);
+const useGiftingPromotionAssetsReadyDefault = tmp4(18118);
 let UserRequiredActionStore = UserRequiredActionStore_mod;
 const PlatformTypes = Constants.PlatformTypes;
 ({ PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID } = PremiumConstants);
@@ -884,12 +884,12 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp38;
   let tmp8;
   let tmp9;
-  const f132938 = () => {
+  const f133035 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f132940 = () => {
+  const f133037 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -914,8 +914,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult21 = get_initialized;
-  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f132938);
-  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f132938), 2);
+  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133035);
+  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133035), 2);
   const tmpResult22 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult22.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -929,11 +929,11 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   const isEligibleSenderForReferralProgram = tmpResult24.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult25 = get_initialized;
-  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f132940);
-  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f132940), 2);
+  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133037);
+  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133037), 2);
   const tmpResult26 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult26.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18113).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18117).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult27 = usePromotionMarketingComponent;
   const promotionMarketingComponent = tmpResult27.usePromotionMarketingComponent(tmp(10399).MarketingComponentType.MOBILE_BOTTOM_SHEET);

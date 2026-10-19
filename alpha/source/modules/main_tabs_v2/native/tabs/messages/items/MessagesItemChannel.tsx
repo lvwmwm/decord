@@ -1,18 +1,18 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17160
+// Function ID: 17161
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2068, 21, 10823, 587, 17157, 558, 576, 504, 17166, 7091, 13645, 2]
+// Dependencies: [32, 19, 2068, 21, 10839, 587, 17161, 558, 576, 504, 17170, 7091, 13649, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 17156 (MessagesItemChannel)
+// Module 17160 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10823 */;
-import LegendList from "LegendList" /* 13645 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 17157 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17166 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
+import LegendList from "LegendList" /* 13649 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 17161 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;

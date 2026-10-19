@@ -1,9 +1,9 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14598
+// Function ID: 14599
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 6219, 1394, 21, 5191, 587, 14573, 1128, 9709, 14595, 14596, 14598, 8895, 14599, 9252, 14600, 13214, 14601, 13211, 14602, 9705, 14603, 9851, 558, 576, 504, 14472, 14604, 5127, 5128, 14436, 5065, 14445, 14446, 5187, 9723, 14608, 14609, 14610, 2]
+// Dependencies: [19, 17, 6219, 1394, 21, 5191, 587, 14577, 1128, 9709, 14599, 14600, 14602, 8895, 14603, 9252, 14604, 13222, 14605, 13219, 14606, 9705, 14607, 9851, 558, 576, 504, 14476, 14608, 5127, 5128, 14440, 5065, 14449, 14450, 5187, 9723, 14612, 14613, 14614, 2]
 
-// Module 14594 (GuildBoostingUpsell)
+// Module 14598 (GuildBoostingUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,21 +19,21 @@ import UploadIcon from "UploadIcon" /* 9705 */;
 import BoostGemIcon from "BoostGemIcon" /* 9709 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 9723 */;
 import StarIcon from "StarIcon" /* 9851 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13211 */;
-import StickerIcon from "StickerIcon" /* 13214 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14436 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14472 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14573 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14595 */;
-import BoostTier3Icon2 from "BoostTier3Icon" /* 14596 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14598 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14599 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14600 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14601 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14602 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14603 */;
-import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 14604 */;
-import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 14609 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13219 */;
+import StickerIcon from "StickerIcon" /* 13222 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14440 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14476 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14577 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14599 */;
+import BoostTier3Icon2 from "BoostTier3Icon" /* 14600 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14602 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14603 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14604 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14605 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14606 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14607 */;
+import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 14608 */;
+import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 14613 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SortedGuildStore from "SortedGuildStore" /* 6219 */;
@@ -165,9 +165,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   const tmpResult6 = shared;
   if (tmpResult6.isThemeDark(tmp12)) {
-    tmp11Result2 = tmp11(14445);
+    tmp11Result2 = tmp11(14449);
   } else {
-    tmp11Result2 = tmp11(14446);
+    tmp11Result2 = tmp11(14450);
   }
   if (cResult[4] === tmp4.logoPremiumGuild) {
     let tmp20;
@@ -379,7 +379,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
                         let tmp68 = null;
                         if (subscriptionPlansLoaded) {
                           const obj11 = { onLearnMorePremium, style: tmp4.subscriptionUpsell };
-                          tmp68 = metroRequire(tmp11(14610), obj11);
+                          tmp68 = metroRequire(tmp11(14614), obj11);
                         }
                         cResult[41] = subscriptionPlansLoaded;
                         cResult[42] = onLearnMorePremium;
@@ -439,7 +439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
             if (subscriptionPlansLoaded) {
               tmp59 = null;
               if (fractionalState === tmp13.NONE) {
-                tmp59 = metroRequire(tmp11(14608), {});
+                tmp59 = metroRequire(tmp11(14612), {});
               }
             }
             cResult[31] = fractionalState;
@@ -513,9 +513,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   const tmp7Result5 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeDark(tmp8)) {
-    tmp7Result6 = tmp7(14445);
+    tmp7Result6 = tmp7(14449);
   } else {
-    tmp7Result6 = tmp7(14446);
+    tmp7Result6 = tmp7(14450);
   }
   items1[1] = metroRequire(tmp7Result5, obj7);
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl9.t.hw6WTd) };
@@ -546,7 +546,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(14608), {});
+      tmp13Result = tmp13(tmp7(14612), {});
     }
   }
   items3 = [tmp13Result, , ];
@@ -587,7 +587,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   let tmp13Result2 = null;
   if (subscriptionPlansLoaded) {
     const obj22 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-    tmp13Result2 = tmp13(tmp7(14610), obj22);
+    tmp13Result2 = tmp13(tmp7(14614), obj22);
   }
   items3[2] = tmp13Result2;
   items2[5] = metroImportDefault(_false, obj14);

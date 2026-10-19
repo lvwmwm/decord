@@ -1,10 +1,10 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 16963
+// Function ID: 16964
 // Name: AdTopicOptOutClientExperiment
 // Dependencies: [1455, 558, 576, 2]
 // Exports: isAdTopicOptOutClientEnabled
 
-// Module 16959 (AdTopicOptOutClientExperiment)
+// Module 16963 (AdTopicOptOutClientExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

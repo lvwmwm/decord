@@ -1,9 +1,9 @@
-// Module ID: 18664
-// Function ID: 18665
+// Module ID: 18668
+// Function ID: 18669
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 18665, 2062, 1392, 1087, 21, 5191, 558, 576, 1128, 5479, 1506, 1202, 18666, 1275, 6478, 7365, 8937, 7167, 6186, 18670, 6551, 6560, 6557, 6946, 7010, 7011, 6552, 18671, 7044, 6959, 504, 5155, 5081, 6965, 2]
+// Dependencies: [5, 19, 17, 18669, 2062, 1392, 1087, 21, 5191, 558, 576, 1128, 5479, 1506, 1202, 18670, 1275, 6478, 7365, 8937, 7167, 6186, 18674, 6551, 6560, 6557, 6946, 7010, 7011, 6552, 18675, 7044, 6959, 504, 5155, 5081, 6965, 2]
 
-// Module 18664 (VerificationModal)
+// Module 18668 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -23,10 +23,10 @@ import Navigator2 from "Navigator" /* 6965 */;
 import VerifyPhoneDefault from "VerifyPhone" /* 7044 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8937 */;
-import OverviewDefault from "Overview" /* 18670 */;
+import OverviewDefault from "Overview" /* 18674 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 18665 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 18669 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -469,7 +469,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneT
     return tmp14;
   }
   const EmptyState = tmp(1202).EmptyState;
-  const tmp15 = <EmptyState Illustration={navigation(18666).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
+  const tmp15 = <EmptyState Illustration={navigation(18670).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
   cResult[5] = tmp4.button;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
@@ -502,7 +502,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneT
   });
   const Button = navigation(5479).Button;
   intl3 = navigation(1128).intl;
-  return <EmptyState Illustration={navigation(18666).VerifyPhone} title={intl.string(navigation(1128).t.KLnLIP)} body={intl2.string(navigation(1128).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(18670).VerifyPhone} title={intl.string(navigation(1128).t.KLnLIP)} body={intl2.string(navigation(1128).t.XGbCq3)}>{null}</EmptyState>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerificationModal() {

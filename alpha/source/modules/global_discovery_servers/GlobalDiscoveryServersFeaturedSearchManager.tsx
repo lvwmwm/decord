@@ -1,12 +1,12 @@
-// Module ID: 19044
-// Function ID: 19045
+// Module ID: 19048
+// Function ID: 19049
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 14781, 8912, 1087, 7085, 19045, 584, 1297, 1493, 19046, 7328, 2]
+// Dependencies: [5, 14785, 8912, 1087, 7085, 19049, 584, 1297, 1493, 19050, 7328, 2]
 
-// Module 19044 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 19048 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1087 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8912 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14781 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 14785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;

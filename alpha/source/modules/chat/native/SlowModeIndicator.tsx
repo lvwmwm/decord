@@ -1,13 +1,13 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12849
+// Function ID: 12850
 // Name: SlowModeIndicator
-// Dependencies: [19, 7640, 21, 5191, 587, 558, 576, 504, 7641, 4904, 11161, 5187, 6462, 2]
+// Dependencies: [19, 7640, 21, 5191, 587, 558, 576, 504, 7641, 4904, 11180, 5187, 6462, 2]
 
-// Module 12832 (SlowModeIndicator)
+// Module 12849 (SlowModeIndicator)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 7641 */;
-import TimerIcon from "TimerIcon" /* 11161 */;
+import TimerIcon from "TimerIcon" /* 11180 */;
 import react from "react" /* 19 */;
 import SlowmodeStore from "SlowmodeStore" /* 7640 */;
 import Fragment from "Fragment" /* 21 */;
@@ -82,7 +82,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (cResult[11] !== tmp4.icon) {
         const obj3 = { style: tmp4.icon, size: "xxs" };
-        const tmp19 = closure_5(tmp(11161).TimerIcon, obj3);
+        const tmp19 = closure_5(tmp(11180).TimerIcon, obj3);
         cResult[11] = tmp4.icon;
         cResult[12] = tmp19;
         tmp17 = tmp19;

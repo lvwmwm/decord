@@ -1,12 +1,12 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11235
+// Function ID: 11236
 // Name: useShouldForcePipOrientation
-// Dependencies: [2067, 6292, 502, 2026, 5214, 558, 576, 11217, 504, 6315, 8724, 2]
+// Dependencies: [2067, 6292, 502, 2026, 5214, 558, 576, 11236, 504, 6315, 8724, 2]
 
-// Module 11216 (useShouldForcePipOrientation)
+// Module 11235 (useShouldForcePipOrientation)
 import Constants from "Constants" /* 2026 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6315 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11217 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11236 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,9 +1,9 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12905
+// Function ID: 12906
 // Name: AppLauncherButtonIcon
 // Dependencies: [109, 19, 17, 21, 558, 576, 5083, 1631, 10621, 8506, 2]
 
-// Module 12888 (AppLauncherButtonIcon)
+// Module 12905 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

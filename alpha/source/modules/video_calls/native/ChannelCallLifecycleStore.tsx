@@ -1,9 +1,9 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11232
+// Function ID: 11233
 // Name: ChannelCallLifecycleStore
 // Dependencies: [2119, 10663, 8724, 1357, 504, 584, 2]
 
-// Module 11213 (ChannelCallLifecycleStore)
+// Module 11232 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;

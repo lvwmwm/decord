@@ -1,10 +1,10 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11265
+// Function ID: 11266
 // Name: getShelfItemData
 // Dependencies: [5540, 2]
 // Exports: default
 
-// Module 11246 (getShelfItemData)
+// Module 11265 (getShelfItemData)
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import size from "module_2" /* 2 */;
 

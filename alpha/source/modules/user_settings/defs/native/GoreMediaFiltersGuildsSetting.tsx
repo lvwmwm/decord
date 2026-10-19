@@ -1,20 +1,20 @@
-// Module ID: 15875
-// Function ID: 15876
+// Module ID: 15879
+// Function ID: 15880
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [8260, 558, 8004, 15859, 576, 15867, 8515, 7276, 15868, 1128, 1211, 11065, 2]
+// Dependencies: [8260, 558, 8004, 15863, 576, 15871, 8515, 7276, 15872, 1128, 1211, 11084, 2]
 
-// Module 15875 (GoreMediaFiltersGuildsSetting)
+// Module 15879 (GoreMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7276 */;
 import useUserIsTeen from "useUserIsTeen" /* 8004 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15859 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15867 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15868 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15871 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15872 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

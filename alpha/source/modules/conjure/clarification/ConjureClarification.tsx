@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12289
+// Function ID: 12290
 // Name: ConjureClarification
-// Dependencies: [2068, 1392, 1087, 3883, 1128, 2]
-// Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
+// Dependencies: [2068, 1392, 1087, 1128, 3883, 2]
+// Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, toggleClarificationOption
 
-// Module 12271 (ConjureClarification)
+// Module 12289 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
@@ -17,8 +17,8 @@ let items1;
 let items2;
 let items3;
 const ChannelTypes = Constants.ChannelTypes;
-let closure_4 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
-let closure_5 = { channel: "#", role: "@", user: "@", project: "" };
+let closure_5 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
+let closure_6 = { channel: "#", role: "@", user: "@", project: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3 };
 items = [_modDef3883["9+dfPT"], _modDef3883.pGSJqE];
 items1 = [_modDef3883["2VkCoD"], _modDef3883.c8YlX8];
@@ -26,6 +26,19 @@ items2 = [_modDef3883.GZIAxl, _modDef3883["4bptbQ"]];
 items3 = [_modDef3883.twlOb6, _modDef3883.twlOb6];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
+export const isTypedClarificationQuestion = function isTypedClarificationQuestion(options) {
+  return 0 === options.options.length && null == options.input;
+};
+export const clarificationDraftPlaceholder = function clarificationDraftPlaceholder(options) {
+  const intl = intl2.intl;
+  let tmp2 = 0 === options.options.length;
+  const string = intl.string;
+  if (tmp2) {
+    tmp2 = null == options.input;
+  }
+  const tmp4 = _modDef3883;
+  return string(tmp2 ? tmp4.yLN1x6 : tmp4["tOC+tn"]);
+};
 export const isClarificationComplete = function isClarificationComplete(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
@@ -157,7 +170,7 @@ export const multiSelectAnswer = function multiSelectAnswer(options, answeredOpt
 export const clarificationChannelType = function clarificationChannelType(arg0) {
   let tmp;
   if (null != arg0) {
-    tmp = closure_4[arg0];
+    tmp = closure_5[arg0];
   }
   return tmp;
 };
@@ -193,7 +206,7 @@ export const clarificationEntities = function clarificationEntities(project, ite
       }
       let tmp15;
       if (null != type) {
-        tmp15 = closure_4[type];
+        tmp15 = closure_5[type];
       }
       const obj2 = { kind };
       if (null == tmp15) {
@@ -225,14 +238,14 @@ export const clarificationEntities = function clarificationEntities(project, ite
     return obj;
   });
 };
-export const entityAnswer = function entityAnswer(input, tmp6Result8, str, first1) {
+export const entityAnswer = function entityAnswer(input, entities, str, first1) {
   let items;
   let items1;
   let obj2;
   let obj3;
   let closure_0 = input;
   const trimmed = str.trim();
-  obj = { kind: "entities", entities: tmp6Result8, text: items.join(", ") };
+  obj = { kind: "entities", entities, text: items.join(", ") };
   if (null == first1) {
     obj2 = {};
   } else {
@@ -246,12 +259,12 @@ export const entityAnswer = function entityAnswer(input, tmp6Result8, str, first
   }
   const merged1 = Object.assign(obj3);
   items = [
-    ...tmp6Result8.map((name) => {
+    ...entities.map((name) => {
       let name2;
       name = name.name;
-      const tmp = closure_5;
+      const tmp = closure_6;
       const tmp2 = input;
-      if (name.startsWith(closure_5[input])) {
+      if (name.startsWith(closure_6[input])) {
         name2 = name.name;
       } else {
         const _HermesInternal = HermesInternal;

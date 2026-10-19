@@ -1,9 +1,9 @@
-// Module ID: 18013
-// Function ID: 18014
+// Module ID: 18017
+// Function ID: 18018
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 9644, 5191, 587, 558, 576, 7463, 6965, 1633, 9599, 1128, 18014, 18016, 2]
+// Dependencies: [109, 19, 17, 21, 9644, 5191, 587, 558, 576, 7463, 6965, 1633, 9599, 1128, 18018, 18020, 2]
 
-// Module 18013 (ContextMenuCommandNavigator)
+// Module 18017 (ContextMenuCommandNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

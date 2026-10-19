@@ -1,9 +1,9 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14785
+// Function ID: 14786
 // Name: GlobalDiscoveryServersSearchResultsStore
 // Dependencies: [8912, 5891, 504, 584, 2]
 
-// Module 14781 (GlobalDiscoveryServersSearchResultsStore)
+// Module 14785 (GlobalDiscoveryServersSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5891 */;

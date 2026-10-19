@@ -1,23 +1,23 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12347
+// Function ID: 12348
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10962, 10967, 21, 5191, 587, 1128, 3883, 558, 576, 1505, 1633, 12095, 8805, 504, 10989, 11690, 12331, 7162, 12340, 4904, 5141, 11666, 9051, 12341, 12347, 12349, 2]
+// Dependencies: [32, 19, 17, 10978, 10983, 21, 5191, 587, 1128, 3883, 558, 576, 1505, 1633, 12114, 8805, 504, 11008, 11709, 12348, 7162, 12357, 4904, 5141, 11685, 9051, 12358, 12364, 12366, 2]
 
-// Module 12330 (ConjureDebugScene)
+// Module 12347 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import CopyIcon from "CopyIcon" /* 5141 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10989 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11690 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12340 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 11008 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11709 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10967 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10983 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12331);
+          const tmp2Result = tmp2(12348);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12331);
+        const tmp2Result = tmp2(12348);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

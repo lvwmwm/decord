@@ -1,9 +1,9 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10940
+// Function ID: 10941
 // Name: BioText
-// Dependencies: [19, 17, 1087, 2118, 21, 5191, 558, 576, 4901, 1267, 5187, 10925, 1384, 2117, 1128, 2]
+// Dependencies: [19, 17, 1087, 2118, 21, 5191, 558, 576, 4901, 1267, 5187, 10941, 1384, 2117, 1128, 2]
 
-// Module 10924 (BioText)
+// Module 10940 (BioText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,7 +12,7 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import isChangelogUserDefault from "isChangelogUser" /* 2117 */;
 import ChangelogConstants from "ChangelogConstants" /* 2118 */;
 import LinkingDefault from "Linking" /* 4901 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 10925 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 10941 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -262,8 +262,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BioText(arg0
     }
   }
   const obj7 = { guildId, linkVariant: str, textVariant: str, customEmojiOffsetY: num };
-  const parseBioReact = lineClamp(10925).parseBioReact;
-  lineClamp(10925);
+  const parseBioReact = lineClamp(10941).parseBioReact;
+  lineClamp(10941);
   num = undefined;
   const tmpResult2 = lineClamp(1384);
   if (tmpResult2.isAndroid()) {

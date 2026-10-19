@@ -1,23 +1,23 @@
-// Module ID: 12944
-// Function ID: 12945
+// Module ID: 12952
+// Function ID: 12953
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 2090, 12945, 1087, 21, 5191, 587, 558, 576, 6940, 5128, 12948, 1128, 1202, 5187, 504, 12949, 12950, 12958, 1267, 1633, 12977, 12978, 7091, 12942, 7364, 6478, 2]
+// Dependencies: [32, 19, 17, 2090, 12953, 1087, 21, 5191, 587, 558, 576, 6940, 5128, 12956, 1128, 1202, 5187, 504, 12957, 12958, 12966, 1267, 1633, 12985, 12986, 7091, 12950, 7364, 6478, 2]
 
-// Module 12944 (GuildDirectorySearch)
+// Module 12952 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import FastImageDefault from "FastImage" /* 5128 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12942 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12948 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12950 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12958 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12950 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12956 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12958 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12945 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12953 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -55,7 +55,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Defaul
   const typeConsolidationTextTransform = obj2.useTypeConsolidationTextTransform("GuildDirectorySearch");
   const emptyWrapper = tmp4.emptyWrapper;
   if (cResult[0] !== tmp4.emptyStateImage) {
-    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(12948) };
+    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(12956) };
     const tmp9 = typeConsolidationTextTransform(5128);
     const tmp10 = closure_10(tmp9, obj3);
     cResult[0] = tmp4.emptyStateImage;
@@ -170,7 +170,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = channel(12949);
+  const tmpResult2 = channel(12957);
   const canCreateOrAddGuildInDirectory = tmpResult2.useCanCreateOrAddGuildInDirectory(channel);
   if (cResult[3] === canCreateOrAddGuildInDirectory) {
     if (cResult[4] === channel.id) {
@@ -183,7 +183,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
       }
       const emptyWrapper = tmp4.emptyWrapper;
       if (cResult[7] !== tmp4.emptyStateImage) {
-        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(12948) };
+        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(12956) };
         const tmp15 = stateFromStores(5128);
         const tmp16 = closure_10(tmp15, obj2);
         cResult[7] = tmp4.emptyStateImage;
@@ -273,7 +273,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(12949);
+  let obj2 = channel(12957);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1128).intl;
   if (canCreateOrAddGuildInDirectory) {

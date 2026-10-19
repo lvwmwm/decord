@@ -1,18 +1,18 @@
-// Module ID: 12562
-// Function ID: 12563
+// Module ID: 12579
+// Function ID: 12580
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 12563, 21, 12561, 1275, 1128, 6478, 12564, 6561, 8910, 4903, 558, 576, 6965, 2]
+// Dependencies: [5, 19, 12580, 21, 12578, 1275, 1128, 6478, 12581, 6561, 8910, 4903, 558, 576, 6965, 2]
 
-// Module 12562 (TransferOwnershipModal)
+// Module 12579 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Navigator2 from "Navigator" /* 6965 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12561 */;
-import TransferOwnershipDefault from "TransferOwnership" /* 12564 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12578 */;
+import TransferOwnershipDefault from "TransferOwnership" /* 12581 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12563 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12580 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

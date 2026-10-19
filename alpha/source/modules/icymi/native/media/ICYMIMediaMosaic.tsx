@@ -1,9 +1,9 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17641
+// Function ID: 17642
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5181, 2068, 4855, 1392, 8727, 1087, 21, 5191, 587, 5519, 1107, 558, 576, 504, 8699, 4945, 5192, 17638, 5128, 5187, 1128, 8674, 8035, 6462, 8745, 11452, 8501, 17595, 8666, 8740, 1388, 12, 7077, 8660, 5521, 2]
+// Dependencies: [32, 19, 17, 5181, 2068, 4855, 1392, 8727, 1087, 21, 5191, 587, 5519, 1107, 558, 576, 504, 8699, 4945, 5192, 17642, 5128, 5187, 1128, 8674, 8035, 6462, 8745, 11470, 8501, 17599, 8666, 8740, 1388, 12, 7077, 8660, 5521, 2]
 
-// Module 17637 (ICYMIMediaMosaic)
+// Module 17641 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,8 +15,8 @@ import MediaSourceUtil from "MediaSourceUtil" /* 8666 */;
 import common_VideoDefault from "common/Video" /* 8699 */;
 import ICYMITypes from "ICYMITypes" /* 8740 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
-import ICYMIContext from "ICYMIContext" /* 17595 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 17638 */;
+import ICYMIContext from "ICYMIContext" /* 17599 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 17642 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -212,7 +212,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   if (null != source.placeholder) {
     let tmp9;
     if (cResult[0] !== source.placeholder) {
-      const tmpResult = tmp(17638);
+      const tmpResult = tmp(17642);
       const thumbhashImageFromPlaceholder = tmpResult.createThumbhashImageFromPlaceholder(source.placeholder);
       let num = 0;
       cResult[0] = source.placeholder;

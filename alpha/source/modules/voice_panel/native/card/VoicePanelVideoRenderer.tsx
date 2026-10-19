@@ -1,23 +1,23 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18257
+// Function ID: 18258
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 12914, 12912, 18183, 12915, 21, 4945, 11276, 5191, 558, 576, 12913, 5478, 9878, 5156, 6612, 5331, 18184, 11273, 11272, 18254, 10681, 18134, 5320, 4913, 587, 5192, 7039, 11275, 2]
+// Dependencies: [32, 19, 17, 10680, 10678, 18187, 10681, 21, 4945, 11295, 5191, 558, 576, 10679, 5478, 9878, 5156, 6612, 5331, 18188, 11292, 11291, 18258, 10684, 18138, 5320, 4913, 587, 5192, 7039, 11294, 2]
 
-// Module 18253 (VoicePanelVideoRenderer)
+// Module 18257 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5192 */;
 import spring from "spring" /* 5478 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10681 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11276 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12912 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12915 */;
-import VideoActionCreators from "VideoActionCreators" /* 18134 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18183 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11295 */;
+import VideoActionCreators from "VideoActionCreators" /* 18138 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12914 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import createStyles from "createStyles" /* 5191 */;

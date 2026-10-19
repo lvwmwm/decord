@@ -1,9 +1,9 @@
-// Module ID: 13053
-// Function ID: 13054
+// Module ID: 13061
+// Function ID: 13062
 // Name: ApplicationCommandsCategoriesConstants
 // Dependencies: [2]
 
-// Module 13053 (ApplicationCommandsCategoriesConstants)
+// Module 13061 (ApplicationCommandsCategoriesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategoriesConstants.tsx");

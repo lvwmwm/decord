@@ -1,9 +1,9 @@
-// Module ID: 10910
-// Function ID: 10911
+// Module ID: 10926
+// Function ID: 10927
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 10889, 10881, 8495, 9857, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 10905, 10897, 8495, 9857, 2]
 
-// Module 10910 (BadgeTierGrid)
+// Module 10926 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;

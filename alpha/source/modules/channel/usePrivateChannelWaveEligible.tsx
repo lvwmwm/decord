@@ -1,9 +1,9 @@
-// Module ID: 17164
-// Function ID: 17165
+// Module ID: 17168
+// Function ID: 17169
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [5532, 4855, 2075, 1087, 558, 576, 504, 11, 4888, 4797, 10691, 2]
+// Dependencies: [5532, 4855, 2075, 1087, 558, 576, 504, 11, 4888, 4797, 10707, 2]
 
-// Module 17164 (usePrivateChannelWaveEligible)
+// Module 17168 (usePrivateChannelWaveEligible)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
@@ -234,7 +234,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         }
       }
     }
-    const tmpResult10 = tmp(10691);
+    const tmpResult10 = tmp(10707);
     const strangerDangerWarning = tmpResult10.useStrangerDangerWarning(isDM.id);
     if (tmp4) {
       class T {

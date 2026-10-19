@@ -1,9 +1,9 @@
-// Module ID: 10725
-// Function ID: 10726
+// Module ID: 10741
+// Function ID: 10742
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 2068, 1392, 7294, 10723, 1087, 21, 5191, 587, 8583, 1128, 5147, 558, 576, 6542, 6457, 1202, 1633, 7130, 7155, 504, 1267, 8579, 7118, 6584, 6928, 5187, 5509, 8598, 5155, 10724, 2002, 1275, 5479, 7293, 2131, 4901, 2]
+// Dependencies: [32, 19, 17, 2068, 1392, 7294, 10739, 1087, 21, 5191, 587, 8583, 1128, 5147, 558, 576, 6542, 6457, 1202, 1633, 7130, 7155, 504, 1267, 8579, 7118, 6584, 6928, 5187, 5509, 8598, 5155, 10740, 2002, 1275, 5479, 7293, 2131, 4901, 2]
 
-// Module 10725 (IgnoreConfirmationActionSheet)
+// Module 10741 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10723 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10739 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -290,7 +290,7 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
           obj.track(unpackModuleId.USER_REMEDIATION_ACTION, obj2);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(10724, dependencyMap.paths);
+          const tmp3 = asyncRequire(10740, dependencyMap.paths);
           const obj3 = { userId, channelId, onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: react, impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION };
           openLazy(tmp3, React4, obj3, "replaceTopSheet");
         },

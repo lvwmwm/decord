@@ -1,9 +1,9 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16281
+// Function ID: 16282
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2090, 4838, 1087, 4797, 7216, 1128, 558, 576, 16268, 504, 16266, 2]
+// Dependencies: [32, 19, 2090, 4838, 1087, 4797, 7216, 1128, 558, 576, 16272, 504, 16270, 2]
 
-// Module 16277 (useManageSubscriptionCardData)
+// Module 16281 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef4797 from "module_4797" /* 4797 */;

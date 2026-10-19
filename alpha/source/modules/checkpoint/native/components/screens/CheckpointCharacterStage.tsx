@@ -1,15 +1,15 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 12758
+// Function ID: 12759
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 12725, 21, 5191, 587, 5561, 1128, 12739, 12738, 558, 576, 504, 5187, 12737, 2]
+// Dependencies: [17, 12742, 21, 5191, 587, 5561, 1128, 12756, 12755, 558, 576, 504, 5187, 12754, 2]
 
-// Module 12741 (CheckpointCharacterStage)
+// Module 12758 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CheckpointTrait from "CheckpointTrait" /* 5561 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 12738 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 12739 */;
-import CheckpointStore from "CheckpointStore" /* 12725 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 12755 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 12756 */;
+import CheckpointStore from "CheckpointStore" /* 12742 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     tmp12 = cResult[4];
   }
   if (cResult[5] !== activeCustomizationOption) {
-    const tmpResult2 = stateFromStores(12737);
+    const tmpResult2 = stateFromStores(12754);
     const customizationOptionName = tmpResult2.getCustomizationOptionName(activeCustomizationOption);
     cResult[5] = activeCustomizationOption;
     cResult[6] = customizationOptionName;
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const obj3 = { color: "text-muted", variant: "text-md/medium", children: items2 };
   const Heading = stateFromStores(5187).Heading;
   items2 = ["Trait: "];
-  const obj4 = stateFromStores(12737);
+  const obj4 = stateFromStores(12754);
   items2[1] = obj4.getCustomizationOptionName(activeCustomizationOption);
   items1[2] = closure_5(Heading, obj3);
   const values = Object.values(stateFromStores(5561).CheckpointTrait);

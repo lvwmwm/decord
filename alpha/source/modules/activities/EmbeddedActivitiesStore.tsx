@@ -1,7 +1,7 @@
 // Module ID: 2067
 // Function ID: 2068
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 2068, 2119, 1392, 2026, 6298, 1087, 6317, 6318, 4834, 6299, 15067, 1123, 11205, 584, 10789, 11836, 1384, 2000, 7513, 504, 2]
+// Dependencies: [32, 502, 2068, 2119, 1392, 2026, 6298, 1087, 6317, 6318, 4834, 6299, 15071, 1123, 11224, 584, 10805, 11855, 1384, 2000, 7513, 504, 2]
 
 // Module 2067 (EmbeddedActivitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -13,8 +13,8 @@ import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
 import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6317 */;
 import ContentClassificationReference from "ContentClassificationReference" /* 6318 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10789 */;
-import getPlatformDefault from "getPlatform" /* 11836 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10805 */;
+import getPlatformDefault from "getPlatform" /* 11855 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -29,7 +29,7 @@ let embeddedActivitiesForLocationIncludingHidden, importDefault, set3;
 let c10;
 let set1;
 let unpackModuleId;
-const f88505 = (item) => {
+const f88554 = (item) => {
   closure_1_34(item);
 };
 function participantFromServer(userId) {
@@ -257,7 +257,7 @@ function updateEmbeddedActivities(content_classification) {
                   const ComponentDispatch2 = tmp70(1123).ComponentDispatch;
                   const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: tmp39, isStart: tmp72, participants: mapped, embeddedActivity: obj7, inviterUserId };
                   ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                  application_id(11205);
+                  application_id(11224);
                   if (true === renderInFramePool) {
                     let PIP = ActivityPanelModes.DISCONNECTED;
                   } else if (tmp46) {
@@ -750,7 +750,7 @@ const obj2 = {
     let item = guilds.forEach((activity_instances) => {
       activity_instances = activity_instances.activity_instances;
       if (activity_instances != null) {
-        const item = activity_instances.forEach(f88505);
+        const item = activity_instances.forEach(f88554);
       }
     });
     id = AuthenticationStore.getId();
@@ -780,7 +780,7 @@ const obj2 = {
   GUILD_CREATE: function handleGuildCreate(guild) {
     const activity_instances = guild.guild.activity_instances;
     if (activity_instances != null) {
-      const item = activity_instances.forEach(f88505);
+      const item = activity_instances.forEach(f88554);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {

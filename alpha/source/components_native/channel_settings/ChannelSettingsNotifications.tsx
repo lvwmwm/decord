@@ -1,9 +1,9 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13542
+// Function ID: 13543
 // Name: ChannelSettingsNotifications
-// Dependencies: [19, 2072, 2068, 5116, 4855, 6222, 1392, 1087, 21, 1128, 5191, 587, 4922, 5206, 7086, 5155, 10771, 2002, 7081, 5521, 6542, 6457, 10773, 7172, 6540, 6539, 5187, 8855, 5477, 558, 576, 504, 10753, 13538, 2]
+// Dependencies: [19, 2072, 2068, 5116, 4855, 6222, 1392, 1087, 21, 1128, 5191, 587, 4922, 5206, 7086, 5155, 10787, 2002, 7081, 5521, 6542, 6457, 10789, 7172, 6540, 6539, 5187, 8855, 5477, 558, 576, 504, 10769, 13543, 2]
 
-// Module 13537 (ChannelSettingsNotifications)
+// Module 13542 (ChannelSettingsNotifications)
 import nativeDefault from "native" /* 587 */;
 import intl16 from "intl" /* 1128 */;
 import native from "native" /* 4922 */;
@@ -17,8 +17,8 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7172 */;
 import Form2 from "Form" /* 8855 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 10773 */;
-import NotificationSettingsChannelDefault from "NotificationSettingsChannel" /* 13538 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 10789 */;
+import NotificationSettingsChannelDefault from "NotificationSettingsChannel" /* 13543 */;
 import react_mod from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -185,9 +185,9 @@ class ChannelSettingsNotifications extends PureComponent {
       const obj6 = { muteConfig, type: CHANNEL };
       const tmp10 = MutedUntilTextDefault;
       if (channel.type === map1.GUILD_CATEGORY) {
-        CHANNEL = tmp(10773).MuteSettingType.CATEGORY;
+        CHANNEL = tmp(10789).MuteSettingType.CATEGORY;
       } else {
-        CHANNEL = tmp(10773).MuteSettingType.CHANNEL;
+        CHANNEL = tmp(10789).MuteSettingType.CHANNEL;
       }
       tmp6Result = tmp6(tmp10, obj6);
     }

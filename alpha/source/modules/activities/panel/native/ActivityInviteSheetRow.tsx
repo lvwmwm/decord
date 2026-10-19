@@ -1,9 +1,9 @@
-// Module ID: 18159
-// Function ID: 18160
+// Module ID: 18163
+// Function ID: 18164
 // Name: ActivityInviteSheetRow
 // Dependencies: [19, 17, 2068, 2090, 1392, 7689, 21, 5191, 587, 558, 576, 504, 5521, 8957, 6462, 1202, 9038, 5057, 1128, 1417, 2034, 5187, 9041, 6457, 2]
 
-// Module 18159 (ActivityInviteSheetRow)
+// Module 18163 (ActivityInviteSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,17 +1,17 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15599
+// Function ID: 15600
 // Name: DevToolsNavigator
-// Dependencies: [32, 109, 19, 17, 21, 9644, 558, 576, 6965, 15596, 9599, 16819, 11605, 5187, 587, 16641, 15732, 5155, 6190, 5080, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9644, 558, 576, 6965, 15600, 9599, 16823, 11621, 5187, 587, 16645, 15736, 5155, 6190, 5080, 2]
 // Exports: navigateToDevTools
 
-// Module 15595 (DevToolsNavigator)
+// Module 15599 (DevToolsNavigator)
 import react_native from "react-native" /* 17 */;
 import Types from "Types" /* 5080 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
-import SettingHookHarnessDefault from "SettingHookHarness" /* 15596 */;
-import DevToolsContentDefault from "DevToolsContent" /* 16819 */;
+import SettingHookHarnessDefault from "SettingHookHarness" /* 15600 */;
+import DevToolsContentDefault from "DevToolsContent" /* 16823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -109,8 +109,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
     const tmp16 = closure_7(Screen, obj3);
     const _Object = Object;
     const obj4 = {};
-    let merged = Object.assign(tmp(16641).DevToolsScreens);
-    const merged1 = Object.assign(tmp(16641).PerformanceTestingScreens);
+    let merged = Object.assign(tmp(16645).DevToolsScreens);
+    const merged1 = Object.assign(tmp(16645).PerformanceTestingScreens);
     const entries1 = entries(obj4);
     const mapped = entries1.map((item) => {
       let tmp2;
@@ -127,7 +127,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
       _slicedToArray(item, 2);
       return closure_1_7(closure_1_10.Screen, obj, tmp2);
     });
-    let tmpResult = tmp(15732);
+    let tmpResult = tmp(15736);
     const designSystemScreens = tmpResult.getDesignSystemScreens();
     const mapped1 = designSystemScreens.map((item) => {
       let tmp2;
@@ -246,8 +246,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   };
   items1[0] = tmp5(tmp7.Screen, obj4);
   const obj5 = {};
-  let merged = Object.assign(tmp(16641).DevToolsScreens);
-  let merged1 = Object.assign(tmp(16641).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(16645).DevToolsScreens);
+  let merged1 = Object.assign(tmp(16645).PerformanceTestingScreens);
   const entries1 = entries(obj5);
   items1[1] = entries1.map((item) => {
     let tmp;
@@ -261,7 +261,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
     };
     return closure_1_7(closure_1_10.Screen, obj, tmp);
   });
-  let tmpResult = tmp(15732);
+  let tmpResult = tmp(15736);
   const designSystemScreens = tmpResult.getDesignSystemScreens();
   items1[2] = designSystemScreens.map((item) => {
     let tmp;

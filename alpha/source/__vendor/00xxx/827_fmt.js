@@ -68,6 +68,6 @@ export const warn = function warn(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "warn", message, attributes, severityNumber: "colors" };
+  const obj3 = { level: "warn", message, attributes, severityNumber: "emoji" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };

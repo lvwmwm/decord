@@ -1,9 +1,9 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17789
+// Function ID: 17790
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2073, 9614, 21, 11882, 5057, 1128, 5191, 558, 576, 504, 17786, 6212, 6206, 17787, 12933, 17789, 2]
+// Dependencies: [19, 17, 2073, 9614, 21, 11901, 5057, 1128, 5191, 558, 576, 504, 17790, 6212, 6206, 17791, 12941, 17793, 2]
 
-// Module 17785 (GuildVoiceOrStageChannelRow)
+// Module 17789 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import UserUtilsDefault from "UserUtils" /* 5057 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
 import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6212 */;
 import SearchConstants from "SearchConstants" /* 9614 */;
-import ChannelListLayout from "ChannelListLayout" /* 11882 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17786 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17789 */;
+import ChannelListLayout from "ChannelListLayout" /* 11901 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17790 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17793 */;
 import react from "react" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -206,7 +206,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildV
     tmp11 = getVoiceChannelSubtitle(voiceStates, layout);
   }
   const obj3 = { subtitle: tmp11, muted: false, layout, channelId: id, guildId: guild_id };
-  const tmpResult2 = channel(17786);
+  const tmpResult2 = channel(17790);
   const result = tmpResult2.renderChannelSubtitle(obj3);
   cResult[4] = id;
   cResult[5] = guild_id;

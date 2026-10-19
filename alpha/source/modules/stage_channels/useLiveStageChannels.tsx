@@ -1,10 +1,10 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17314
+// Function ID: 17315
 // Name: useLiveStageChannels
 // Dependencies: [2068, 4845, 2073, 2076, 558, 576, 1388, 504, 11, 2]
 // Exports: getAllLiveStageChannels
 
-// Module 17310 (useLiveStageChannels)
+// Module 17314 (useLiveStageChannels)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;

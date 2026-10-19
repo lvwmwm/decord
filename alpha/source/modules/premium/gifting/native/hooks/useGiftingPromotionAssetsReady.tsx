@@ -1,9 +1,9 @@
-// Module ID: 18114
-// Function ID: 18115
+// Module ID: 18118
+// Function ID: 18119
 // Name: useGiftingPromotionAssetsReady
 // Dependencies: [32, 19, 558, 576, 10413, 1901, 2]
 
-// Module 18114 (useGiftingPromotionAssetsReady)
+// Module 18118 (useGiftingPromotionAssetsReady)
 import react2 from "react" /* 576 */;
 import react_nativeDefault from "react-native" /* 1901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,14 +1,14 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16020
+// Function ID: 16021
 // Name: ClipsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16017, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16021, 4912, 2]
 
-// Module 16016 (ClipsIcon)
+// Module 16020 (ClipsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 16017 */;
+import AssetRegistry from "AssetRegistry" /* 16021 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

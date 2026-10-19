@@ -1,9 +1,9 @@
-// Module ID: 18740
-// Function ID: 18741
+// Module ID: 18744
+// Function ID: 18745
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 18735, 1087, 21, 5191, 587, 18741, 18675, 9252, 5145, 15999, 5137, 9873, 8489, 17875, 8497, 8952, 8473, 13214, 10930, 13209, 18743, 13736, 8471, 11627, 18745, 18746, 18747, 558, 576, 1202, 2]
+// Dependencies: [19, 17, 18739, 1087, 21, 5191, 587, 18745, 18679, 9252, 5145, 16003, 5137, 9873, 8489, 17879, 8497, 8952, 8473, 13222, 10946, 13217, 18747, 13740, 8471, 11643, 18749, 18750, 18751, 558, 576, 1202, 2]
 
-// Module 18740 (AuditLogActionIcon)
+// Module 18744 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,21 +17,21 @@ import StageIcon from "StageIcon" /* 8497 */;
 import CalendarIcon from "CalendarIcon" /* 8952 */;
 import ReactionIcon from "ReactionIcon" /* 9252 */;
 import FlagIcon from "FlagIcon" /* 9873 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 10930 */;
-import RobotIcon2 from "RobotIcon" /* 11627 */;
-import SoundboardIcon from "SoundboardIcon" /* 13209 */;
-import StickerIcon from "StickerIcon" /* 13214 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13736 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15999 */;
-import WebhookIcon from "WebhookIcon" /* 17875 */;
-import ChannelListIcon from "ChannelListIcon" /* 18675 */;
-import ListBulletsIcon from "ListBulletsIcon" /* 18741 */;
-import HomeIcon from "HomeIcon" /* 18743 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18745 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18746 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18747 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 10946 */;
+import RobotIcon2 from "RobotIcon" /* 11643 */;
+import SoundboardIcon from "SoundboardIcon" /* 13217 */;
+import StickerIcon from "StickerIcon" /* 13222 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 13740 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16003 */;
+import WebhookIcon from "WebhookIcon" /* 17879 */;
+import ChannelListIcon from "ChannelListIcon" /* 18679 */;
+import ListBulletsIcon from "ListBulletsIcon" /* 18745 */;
+import HomeIcon from "HomeIcon" /* 18747 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18749 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18750 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18751 */;
 import react from "react" /* 19 */;
-import AuditLogRecord from "AuditLogRecord" /* 18735 */;
+import AuditLogRecord from "AuditLogRecord" /* 18739 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
           }
         }
       }
-      RobotIcon = tmp(11627).RobotIcon;
+      RobotIcon = tmp(11643).RobotIcon;
     }
     cResult[2] = action;
     cResult[3] = RobotIcon;

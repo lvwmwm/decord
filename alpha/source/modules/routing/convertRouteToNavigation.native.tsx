@@ -1,17 +1,17 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11588
+// Function ID: 11589
 // Name: convertRouteToNavigation
-// Dependencies: [1087, 9617, 11573, 5075, 5072, 5073, 5039, 5052, 2]
+// Dependencies: [1087, 9617, 11589, 5075, 5072, 5073, 5039, 5052, 2]
 // Exports: convertRouteToNavigation
 
-// Module 11572 (convertRouteToNavigation)
+// Module 11588 (convertRouteToNavigation)
 import Constants from "Constants" /* 1087 */;
 import matchPathCompat from "matchPathCompat" /* 5039 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
 import RootNavigationRef from "RootNavigationRef" /* 5073 */;
 import useChatLayout from "useChatLayout" /* 5075 */;
 import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9617 */;
-import handleConjureRouteDefault from "handleConjureRoute" /* 11573 */;
+import handleConjureRouteDefault from "handleConjureRoute" /* 11589 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -115,7 +115,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
                   }
                   const tmp19 = null != channelId && true !== navigationReplace;
                   if (tmp19) {
-                    const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "Reflect" };
+                    const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "a" };
                     const tmpResult23 = NavigationRouteUtils;
                     tmpResult23.navigateToChannel(obj9);
                   }

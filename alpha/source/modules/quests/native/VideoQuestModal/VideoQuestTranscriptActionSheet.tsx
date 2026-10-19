@@ -1,10 +1,10 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 16198
+// Function ID: 16199
 // Name: VideoQuestTranscriptActionSheet
 // Dependencies: [19, 17, 7658, 21, 5191, 587, 1633, 9487, 9474, 7175, 7117, 1128, 6584, 5477, 5187, 2]
 // Exports: default
 
-// Module 16194 (VideoQuestTranscriptActionSheet)
+// Module 16198 (VideoQuestTranscriptActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -42,7 +42,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   let obj3;
   let obj4;
   let tmp8;
-  const f124696 = (children, index) => {
+  const f124791 = (children, index) => {
     const obj = { variant: "heading-md/normal", color: "text-muted", children };
     return closure_1_7(quest(dependencyMap[14]).Text, obj, index);
   };
@@ -117,7 +117,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     const obj5 = { style: tmp.loadingSpinner, size: "large" };
     tmp7Result = tmp7(ActivityIndicator, obj5);
   }
-  items2 = [tmp7Result, memo.length > 0 && memo.map(f124696)];
-  memo.length > 0 && memo.map(f124696);
+  items2 = [tmp7Result, memo.length > 0 && memo.map(f124791)];
+  memo.length > 0 && memo.map(f124791);
   return closure_7(ActionSheet, obj);
 };

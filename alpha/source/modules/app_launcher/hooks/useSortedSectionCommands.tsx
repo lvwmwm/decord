@@ -1,12 +1,12 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 11965
+// Function ID: 11966
 // Name: useSortedSectionCommands
-// Dependencies: [32, 19, 11947, 558, 576, 11869, 1104, 2]
+// Dependencies: [32, 19, 11966, 558, 576, 11888, 1104, 2]
 
-// Module 11946 (useSortedSectionCommands)
+// Module 11965 (useSortedSectionCommands)
 import DurationsDefault from "Durations" /* 1104 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 11869 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 11947 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 11888 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 11966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedSec
     const alphabeticalSortedCommands = tmp9.alphabeticalSortedCommands;
     const items = [alphabeticalSortedCommands];
     const memo = obj2.useMemo(() => {
-      const f145862 = (command) => command.command;
+      const f145973 = (command) => command.command;
       if (memo.length <= 1) {
         return { popularSortedCommands: memo, canSort: false };
       } else {
@@ -81,8 +81,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedSec
               return 1;
             }
           });
-          obj = { popularSortedCommands: mapped.map(f145862), canSort: true };
-          const obj3 = { popularSortedCommands: mapped.map(f145862), canSort: true };
+          obj = { popularSortedCommands: mapped.map(f145973), canSort: true };
+          const obj3 = { popularSortedCommands: mapped.map(f145973), canSort: true };
         } else {
           obj = { popularSortedCommands: memo, canSort: false };
         }
@@ -215,7 +215,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedSec
   }, items);
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
-    const f145862 = (command) => command.command;
+    const f145973 = (command) => command.command;
     if (memo.length <= 1) {
       return { popularSortedCommands: memo, canSort: false };
     } else {
@@ -245,8 +245,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortedSec
             return 1;
           }
         });
-        obj = { popularSortedCommands: mapped.map(f145862), canSort: true };
-        const obj3 = { popularSortedCommands: mapped.map(f145862), canSort: true };
+        obj = { popularSortedCommands: mapped.map(f145973), canSort: true };
+        const obj3 = { popularSortedCommands: mapped.map(f145973), canSort: true };
       } else {
         obj = { popularSortedCommands: memo, canSort: false };
       }

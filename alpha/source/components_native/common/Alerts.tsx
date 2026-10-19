@@ -1,9 +1,9 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18066
+// Function ID: 18067
 // Name: Alerts
-// Dependencies: [19, 17, 5181, 14824, 15420, 7738, 9925, 21, 18063, 18064, 18068, 18069, 5191, 587, 558, 576, 504, 4945, 4922, 5192, 5478, 5482, 5400, 5472, 7006, 5458, 5406, 568, 2]
+// Dependencies: [19, 17, 5181, 14828, 15424, 7738, 9925, 21, 18067, 18068, 18072, 18073, 5191, 587, 558, 576, 504, 4945, 4922, 5192, 5478, 5482, 5400, 5472, 7006, 5458, 5406, 568, 2]
 
-// Module 18062 (Alerts)
+// Module 18066 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4922 */;
@@ -13,12 +13,12 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import OverlayViewDefault from "OverlayView" /* 5406 */;
 import spring from "spring" /* 5478 */;
 import springPresets from "springPresets" /* 5482 */;
-import ModalRegistryDefault from "ModalRegistry" /* 18063 */;
+import ModalRegistryDefault from "ModalRegistry" /* 18067 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14824 */;
-import PermissionVADStore from "PermissionVADStore" /* 15420 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 14828 */;
+import PermissionVADStore from "PermissionVADStore" /* 15424 */;
 import SurveyStore from "SurveyStore" /* 7738 */;
 import AlertStore from "AlertStore" /* 9925 */;
 import Fragment from "Fragment" /* 21 */;
@@ -710,7 +710,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(closure_22, obj, arg0);
 }
-let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "ix", props: "min" });
+let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "ix", props: "duration" });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Alerts() {
   let alertDismissable;
@@ -758,7 +758,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return <component />;
           };
         } else {
-          return { renderAlert: "Array", renderKey: "ix", props: "min" };
+          return { renderAlert: "Array", renderKey: "ix", props: "duration" };
         }
       }
     };
@@ -876,7 +876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "ix", props: "min" };
+        return { renderAlert: "Array", renderKey: "ix", props: "duration" };
       }
     }
   });

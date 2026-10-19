@@ -1,15 +1,15 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15945
+// Function ID: 15946
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8008, 15936, 5187, 12650, 1128, 2589, 15942, 6462, 2]
+// Dependencies: [32, 19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8008, 15940, 5187, 12667, 1128, 2589, 15946, 6462, 2]
 
-// Module 15941 (FamilyCenterActivitySection)
+// Module 15945 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15936 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(15936);
+  const obj2 = displayType(15940);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(15936);
+  const obj3 = displayType(15940);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(12650);
+  const tmpResult = displayType(12667);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -397,11 +397,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(15936);
+  let obj = displayType(15940);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(15936);
+  const obj2 = displayType(15940);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(12650);
+  const obj3 = displayType(12667);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;

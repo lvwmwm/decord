@@ -1,24 +1,24 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11460
+// Function ID: 11461
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 11443, 11444, 21, 5191, 558, 576, 6542, 11445, 11446, 11448, 11450, 1128, 5187, 11454, 11455, 11457, 11465, 7092, 5477, 2]
+// Dependencies: [19, 17, 11461, 11462, 21, 5191, 558, 576, 6542, 11463, 11464, 11466, 11468, 1128, 5187, 11472, 11473, 11475, 11483, 7092, 5477, 2]
 
-// Module 11442 (UserSettingsVoice)
+// Module 11460 (UserSettingsVoice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import Stack_Stack from "Stack/Stack" /* 5477 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11443 */;
-import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 11444 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11445 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11446 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 11448 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 11454 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 11455 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 11457 */;
-import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 11465 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11461 */;
+import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 11462 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11463 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11464 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 11466 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 11472 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 11473 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 11475 */;
+import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 11483 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -93,7 +93,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp8 = cResult[1];
   }
   if (cResult[2] !== nonContextualStreamOutputPresent) {
-    const tmp12 = nonContextualStreamOutputPresent && metroRequire(tmp6(11450), {});
+    const tmp12 = nonContextualStreamOutputPresent && metroRequire(tmp6(11468), {});
     cResult[2] = nonContextualStreamOutputPresent;
     cResult[3] = tmp12;
     tmp11 = tmp12;
@@ -201,7 +201,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const tmp6 = View;
   tmp7 = metroImportDefault;
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp5(tmp2(11450), {});
+    nonContextualStreamOutputPresent = tmp5(tmp2(11468), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: intl.format(intl3.t["V+B3FH"], obj4) };

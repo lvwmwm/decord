@@ -1,28 +1,28 @@
-// Module ID: 18104
-// Function ID: 18105
+// Module ID: 18108
+// Function ID: 18109
 // Name: FileUploadSpotIllustration
-// Dependencies: [19, 21, 18105, 18106, 18107, 558, 576, 6550, 5128, 2]
+// Dependencies: [19, 21, 18109, 18110, 18111, 558, 576, 6550, 5128, 2]
 
-// Module 18104 (FileUploadSpotIllustration)
+// Module 18108 (FileUploadSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import react_native from "react-native" /* 6550 */;
-import _modDef18105 from "module_18105" /* 18105 */;
-import _modDef18106 from "module_18106" /* 18106 */;
-import _modDef18107 from "module_18107" /* 18107 */;
+import _modDef18109 from "module_18109" /* 18109 */;
+import _modDef18110 from "module_18110" /* 18110 */;
+import _modDef18111 from "module_18111" /* 18111 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18105 };
+let obj2 = { uri: _modDef18109 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18106 };
+let obj3 = { uri: _modDef18110 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18107 };
-({ uri: _modDef18107 });
+obj[3] = { uri: _modDef18111 };
+({ uri: _modDef18111 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

@@ -1,9 +1,9 @@
-// Module ID: 18503
-// Function ID: 18504
+// Module ID: 18507
+// Function ID: 18508
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2014, 5209, 5211, 5212, 5210, 9524, 5216, 3, 38, 5343, 11479, 7085, 2063, 11481, 1388, 5399, 1128, 18504, 11485, 2]
+// Dependencies: [5, 502, 2014, 5209, 5211, 5212, 5210, 9524, 5216, 3, 38, 5343, 11497, 7085, 2063, 11499, 1388, 5399, 1128, 18508, 11503, 2]
 
-// Module 18503 (GameConsoleManager)
+// Module 18507 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,9 +11,9 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Timers from "Timers" /* 2063 */;
 import Constants from "Constants" /* 5216 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5343 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11481 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11485 */;
-import _modDef18504 from "module_18504" /* 18504 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11499 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11503 */;
+import _modDef18508 from "module_18508" /* 18508 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef18504;
+            const tmp8 = _modDef18508;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;
@@ -282,7 +282,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               const obj4 = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: type1 };
               ({ title: obj2.title, body: obj2.body, errorCodeMessage: obj2.errorCodeMessage } = tmp8Result);
               type1 = undefined;
-              const showSelfDismissableAlert = tmp6(11485).showSelfDismissableAlert;
+              const showSelfDismissableAlert = tmp6(11503).showSelfDismissableAlert;
               GameConsoleAlertUtilsDefault;
               if (tmp8Result.isAccountLinkError) {
                 type1 = awaitingRemoteSessionInfo.type;

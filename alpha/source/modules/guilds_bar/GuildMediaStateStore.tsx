@@ -1,9 +1,9 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14788
+// Function ID: 14789
 // Name: GuildMediaStateStore
-// Dependencies: [2067, 6332, 2073, 2072, 6153, 502, 2068, 2090, 4845, 4855, 2119, 6222, 5212, 1087, 1108, 4834, 14785, 8927, 11, 6150, 8786, 504, 568, 584, 2]
+// Dependencies: [2067, 6332, 2073, 2072, 6153, 502, 2068, 2090, 4845, 4855, 2119, 6222, 5212, 1087, 1108, 4834, 14789, 8927, 11, 6150, 8786, 504, 568, 584, 2]
 
-// Module 14784 (GuildMediaStateStore)
+// Module 14788 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
@@ -11,7 +11,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14785 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14789 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
 import StageInstanceStore from "StageInstanceStore" /* 2073 */;

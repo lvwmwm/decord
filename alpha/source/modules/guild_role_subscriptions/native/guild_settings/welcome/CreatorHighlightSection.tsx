@@ -1,9 +1,9 @@
-// Module ID: 18927
-// Function ID: 18928
+// Module ID: 18931
+// Function ID: 18932
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1202, 9765, 1128, 6940, 18928, 4901, 18900, 5128, 16294, 5480, 7091, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1202, 9765, 1128, 6940, 18932, 4901, 18904, 5128, 16298, 5480, 7091, 2]
 
-// Module 18927 (CreatorHighlightSection)
+// Module 18931 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1202 */;
 import LinkingDefault from "Linking" /* 4901 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9765 */;
-import EmojiIconDefault from "EmojiIcon" /* 16294 */;
+import EmojiIconDefault from "EmojiIcon" /* 16298 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(18928)(guild_id, 3, 60);
+  const tmp7 = guild_id(18932)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -190,7 +190,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
       let tmp68;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_5(guild_id(18900), {});
+        const tmp67 = closure_5(guild_id(18904), {});
         cResult[3] = tmp67;
         tmp65 = tmp67;
       } else {
@@ -509,12 +509,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creator
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(18928)(guild_id, 3, 60);
+  const tmp6 = guild_id(18932)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(18900), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(18904), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;

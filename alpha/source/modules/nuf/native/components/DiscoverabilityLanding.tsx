@@ -1,16 +1,16 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13462
+// Function ID: 13463
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 13342, 1087, 21, 5191, 587, 6162, 1633, 5155, 13458, 2002, 6536, 5128, 13459, 5187, 1128, 8855, 13370, 5479, 2]
+// Dependencies: [19, 17, 13347, 1087, 21, 5191, 587, 6162, 1633, 5155, 13463, 2002, 6536, 5128, 13464, 5187, 1128, 8855, 13375, 5479, 2]
 // Exports: default
 
-// Module 13457 (DiscoverabilityLanding)
+// Module 13462 (DiscoverabilityLanding)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13342 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13347 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(13458, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(13463, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };

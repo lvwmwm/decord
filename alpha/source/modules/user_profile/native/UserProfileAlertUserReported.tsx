@@ -1,9 +1,9 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13317
+// Function ID: 13318
 // Name: UserProfileAlertUserReported
 // Dependencies: [19, 21, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 13309 (UserProfileAlertUserReported)
+// Module 13317 (UserProfileAlertUserReported)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;

@@ -1,12 +1,12 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 11710
+// Function ID: 11711
 // Name: conjureAgentNeedsPreview
-// Dependencies: [10963, 11016, 558, 576, 504, 2]
+// Dependencies: [10979, 11037, 558, 576, 504, 2]
 // Exports: conjureAgentNeedsPreview
 
-// Module 11691 (conjureAgentNeedsPreview)
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11016 */;
-import ConjureChatStore from "ConjureChatStore" /* 10963 */;
+// Module 11710 (conjureAgentNeedsPreview)
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11037 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

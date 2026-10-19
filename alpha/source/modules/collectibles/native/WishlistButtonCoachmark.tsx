@@ -1,9 +1,9 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 16926
+// Function ID: 16927
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 2065, 558, 576, 9265, 2052, 7376, 16909, 1128, 9742, 2]
+// Dependencies: [32, 19, 2065, 558, 576, 9265, 2052, 7376, 16913, 1128, 9742, 2]
 
-// Module 16922 (WishlistButtonCoachmark)
+// Module 16926 (WishlistButtonCoachmark)
 import intl3 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
   dependencyMap = tmp4;
   const tmp5 = tmp3[0] === hasNeverWishlisted(2052).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   _slicedToArray = tmp5;
-  const obj3 = hasNeverWishlisted(16909);
+  const obj3 = hasNeverWishlisted(16913);
   registerDismiss = obj3.useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {

@@ -1,16 +1,16 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11423
+// Function ID: 11424
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10662, 10663, 1087, 21, 1384, 5191, 587, 6162, 1202, 558, 576, 1633, 4945, 11406, 1107, 1128, 7122, 5192, 6612, 10042, 1499, 11224, 1123, 4922, 5065, 5465, 11408, 2]
+// Dependencies: [32, 19, 17, 10662, 10663, 1087, 21, 1384, 5191, 587, 6162, 1202, 558, 576, 1633, 4945, 11424, 1107, 1128, 7122, 5192, 6612, 10042, 1499, 11243, 1123, 4922, 5065, 5465, 11426, 2]
 
-// Module 11405 (FocusedControlsBottomControls)
+// Module 11423 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import timing from "timing" /* 5192 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 11408 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 11426 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(11408);
+const CallPTTButton = tmp(11426);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -236,7 +236,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(11406);
+  const obj2 = positionY(11424);
   const canShowTooltip = obj2.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
@@ -298,7 +298,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(11406);
+  let obj = positionY(11424);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(4945);
   const fn = function o() {

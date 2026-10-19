@@ -1,11 +1,11 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18490
+// Function ID: 18491
 // Name: FeedbackConfig
-// Dependencies: [5209, 9948, 7185, 18487, 2]
+// Dependencies: [5209, 9948, 7185, 18491, 2]
 
-// Module 18486 (FeedbackConfig)
+// Module 18490 (FeedbackConfig)
 import HotspotStore from "HotspotStore" /* 7185 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 18487 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 18491 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import Constants from "Constants" /* 9948 */;
 import size from "module_2" /* 2 */;

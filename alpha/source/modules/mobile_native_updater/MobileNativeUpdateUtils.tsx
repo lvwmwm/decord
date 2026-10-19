@@ -1,10 +1,10 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14921
+// Function ID: 14922
 // Name: MobileNativeUpdateUtils
 // Dependencies: [5, 5170, 3, 1297, 4901, 1384, 1107, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 14917 (MobileNativeUpdateUtils)
+// Module 14921 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

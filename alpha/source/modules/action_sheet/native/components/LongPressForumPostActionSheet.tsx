@@ -1,9 +1,9 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10780
+// Function ID: 10781
 // Name: LongPressForumPostActionSheet
-// Dependencies: [19, 4846, 4847, 7282, 502, 2090, 6291, 1087, 2075, 21, 10638, 10649, 1128, 10650, 10652, 6929, 7077, 5135, 8169, 9045, 5150, 10561, 10765, 8495, 10023, 9991, 11, 7155, 7368, 9996, 10767, 5155, 10769, 2002, 5137, 9682, 10654, 10771, 10656, 10774, 10641, 5399, 5148, 7445, 1202, 10316, 7162, 4903, 558, 576, 504, 7280, 7246, 9626, 2044, 5521, 10776, 6436, 1630, 10777, 7171, 7175, 2]
+// Dependencies: [19, 4846, 4847, 7282, 502, 2090, 6291, 1087, 2075, 21, 10638, 10649, 1128, 10650, 10652, 6929, 7077, 5135, 8169, 9045, 5150, 10561, 10781, 8495, 10023, 9991, 11, 7155, 7368, 9996, 10783, 5155, 10785, 2002, 5137, 9682, 10654, 10787, 10656, 10790, 10641, 5399, 5148, 7445, 1202, 10316, 7162, 4903, 558, 576, 504, 7280, 7246, 9626, 2044, 5521, 10792, 6436, 1630, 10793, 7171, 7175, 2]
 
-// Module 10764 (LongPressForumPostActionSheet)
+// Module 10780 (LongPressForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import intl16 from "intl" /* 1128 */;
@@ -23,8 +23,8 @@ import messages_MessagesUtils from "messages/MessagesUtils" /* 9682 */;
 import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9991 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
 import markChannelUnreadDefault from "markChannelUnread" /* 10652 */;
-import threadActionSheets from "threadActionSheets" /* 10774 */;
-import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 10776 */;
+import threadActionSheets from "threadActionSheets" /* 10790 */;
+import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 10792 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4846 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
@@ -238,7 +238,7 @@ function getActionSheetButtons(thread) {
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
                       const obj2 = { thread, parentChannel, canManageThread };
-                      obj.openLazy(asyncRequire(10769, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
+                      obj.openLazy(asyncRequire(10785, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
                     }
           };
           intl9 = tmp5(tmp2[12]).intl;
@@ -283,7 +283,7 @@ function getActionSheetButtons(thread) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { guildId: thread.getGuildId(), channelId: thread.id };
-            const tmp2 = asyncRequire(10771, dependencyMap.paths);
+            const tmp2 = asyncRequire(10787, dependencyMap.paths);
             const combined = "muteSettings" + thread.id;
             openLazy(tmp2, combined, obj);
           };
@@ -762,7 +762,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     }
   }
   const tmp37 = onClose(5521)(thread);
-  const tmp38 = onClose(10776)(thread);
+  const tmp38 = onClose(10792)(thread);
   if (null != stateFromStores) {
     class O {
       constructor() {
@@ -894,7 +894,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     cResult[43] = thread;
     cResult[44] = tmp50;
   }
-  tmp45 = jsx(tmp(10777).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
+  tmp45 = jsx(tmp(10793).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
   cResult[46] = tmp37;
   cResult[47] = tmp39;
   cResult[48] = tmp45;
@@ -973,7 +973,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const obj17 = {
     showGradient: true,
     startExpanded: tmpResult.isMetaQuest(),
-    header: tmp20(tmp(10777).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
+    header: tmp20(tmp(10793).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
     children: arr8.map((buttons) => {
       buttons = buttons.buttons;
       const sectionKey = buttons.sectionKey;

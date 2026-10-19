@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 12010
+// Function ID: 12011
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 5191, 587, 11992, 11993, 11994, 11995, 11996, 11997, 11998, 11999, 12000, 12001, 12002, 12003, 12004, 12005, 558, 576, 8031, 5128, 5187, 1384, 1202, 9215, 8699, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 12011, 12012, 12013, 12014, 12015, 12016, 12017, 12018, 12019, 12020, 12021, 12022, 12023, 12024, 558, 576, 8031, 5128, 5187, 1384, 1202, 9215, 8699, 2]
 // Exports: default
 
-// Module 11991 (AttachmentPreview)
+// Module 12010 (AttachmentPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,20 +14,20 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import FileUtils from "FileUtils" /* 8031 */;
 import common_Video from "common/Video" /* 8699 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11992 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11993 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11994 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11995 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11996 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 11997 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 11998 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 11999 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 12000 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 12001 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 12002 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 12003 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 12004 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 12005 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12011 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12012 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12013 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12014 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12015 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12016 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 12017 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 12018 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 12019 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 12020 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 12021 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 12022 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 12023 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 12024 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;

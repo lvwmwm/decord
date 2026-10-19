@@ -1,15 +1,15 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11555
+// Function ID: 11556
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 5191, 11530, 6206, 558, 576, 8600, 11538, 11529, 2]
+// Dependencies: [19, 17, 21, 5191, 11548, 6206, 558, 576, 8600, 11556, 11547, 2]
 
-// Module 11537 (StageGridRow)
+// Module 11555 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8600 */;
-import SpeakerTileDefault from "SpeakerTile" /* 11529 */;
-import MediaTileDefault from "MediaTile" /* 11538 */;
+import SpeakerTileDefault from "SpeakerTile" /* 11547 */;
+import MediaTileDefault from "MediaTile" /* 11556 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,11 +37,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[0] !== num) {
     let THIRD;
     if (1 === num) {
-      THIRD = tmp(11530).StageTileSize.FULL;
+      THIRD = tmp(11548).StageTileSize.FULL;
     } else if (2 === num) {
-      THIRD = tmp(11530).StageTileSize.HALF;
+      THIRD = tmp(11548).StageTileSize.HALF;
     } else {
-      THIRD = tmp(11530).StageTileSize.THIRD;
+      THIRD = tmp(11548).StageTileSize.THIRD;
     }
     cResult[0] = num;
     cResult[1] = THIRD;
@@ -139,11 +139,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(11530).StageTileSize.FULL;
+    THIRD = tmp2(11548).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(11530).StageTileSize.HALF;
+    THIRD = tmp2(11548).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(11530).StageTileSize.THIRD;
+    THIRD = tmp2(11548).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

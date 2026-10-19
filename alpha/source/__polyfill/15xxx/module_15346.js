@@ -1,18 +1,20 @@
 // Module ID: 15346
 // Function ID: 15347
-// Dependencies: []
+// Dependencies: [15331]
 
 // Module 15346
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
+import _mod15331 from "module_15331" /* 15331 */;
+
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod15331((1).toString);
+
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
   }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

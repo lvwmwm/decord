@@ -1,16 +1,16 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 14209
+// Function ID: 14210
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2065, 21, 5191, 558, 576, 14206, 5128, 1128, 9742, 2]
+// Dependencies: [19, 17, 2065, 21, 5191, 558, 576, 14210, 5128, 1128, 9742, 2]
 
-// Module 14205 (WishlistViewerCoachmark)
+// Module 14209 (WishlistViewerCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import FastImageDefault from "FastImage" /* 5128 */;
-import _modDef14206 from "module_14206" /* 14206 */;
+import _modDef14210 from "module_14210" /* 14210 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp3 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef14206 };
+    const obj2 = { uri: _modDef14210 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -56,7 +56,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   tmp10 = tmp11;
 }) : (function CoachmarkImage() {
   const tmp = closure_7();
-  const obj3 = { uri: _modDef14206 };
+  const obj3 = { uri: _modDef14210 };
   FastImageDefault;
   return <View style={tmp.imageContainer}>{null}</View>;
 });

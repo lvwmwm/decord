@@ -1,17 +1,17 @@
-// Module ID: 18508
-// Function ID: 18509
+// Module ID: 18512
+// Function ID: 18513
 // Name: GuildPowerupsManager
-// Dependencies: [2090, 4845, 5034, 5103, 7085, 2093, 5122, 5109, 5121, 13194, 17290, 5394, 5108, 13171, 8296, 2]
+// Dependencies: [2090, 4845, 5034, 5103, 7085, 2093, 5122, 5109, 5121, 13202, 17294, 5394, 5108, 13179, 8296, 2]
 
-// Module 18508 (GuildPowerupsManager)
+// Module 18512 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5108 */;
 import ServerThemeExperiment2 from "ServerThemeExperiment" /* 5109 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5394 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8296 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13171 */;
-import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13194 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17290 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13179 */;
+import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13202 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17294 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;

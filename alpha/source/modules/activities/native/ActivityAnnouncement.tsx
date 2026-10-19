@@ -1,9 +1,9 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 11269
+// Function ID: 11270
 // Name: ActivityAnnouncement
 // Dependencies: [19, 21, 558, 576, 7843, 2]
 
-// Module 11250 (ActivityAnnouncement)
+// Module 11269 (ActivityAnnouncement)
 import react2 from "react" /* 576 */;
 import inlineStylesDefault from "inlineStyles" /* 7843 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18844
+// Function ID: 18845
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11096, 8772, 2068, 2090, 8911, 1087, 21, 5191, 587, 558, 576, 1128, 2131, 5187, 6465, 14682, 6454, 13023, 504, 12, 8315, 8313, 5155, 12543, 2002, 4904, 10601, 7004, 1202, 18841, 7091, 7005, 2]
+// Dependencies: [32, 19, 17, 11115, 8772, 2068, 2090, 8911, 1087, 21, 5191, 587, 558, 576, 1128, 2131, 5187, 6465, 14686, 6454, 13031, 504, 12, 8315, 8313, 5155, 12560, 2002, 4904, 10601, 7004, 1202, 18845, 7091, 7005, 2]
 
-// Module 18840 (GuildSettingsModalInstantInvites)
+// Module 18844 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,11 +16,11 @@ import TableCheckboxRow2 from "TableCheckboxRow" /* 6454 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8313 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8315 */;
 import InstantInvite from "InstantInvite" /* 10601 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14682 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11096 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11115 */;
 import InviteRecord from "InviteRecord" /* 8772 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -154,7 +154,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(12543, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(12560, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);

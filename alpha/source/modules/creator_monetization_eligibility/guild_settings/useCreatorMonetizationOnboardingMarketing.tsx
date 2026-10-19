@@ -1,11 +1,11 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 18940
+// Function ID: 18941
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 18905, 5891, 2]
+// Dependencies: [5, 32, 19, 18909, 5891, 2]
 // Exports: default
 
-// Module 18936 (useCreatorMonetizationOnboardingMarketing)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18905 */;
+// Module 18940 (useCreatorMonetizationOnboardingMarketing)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 18909 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

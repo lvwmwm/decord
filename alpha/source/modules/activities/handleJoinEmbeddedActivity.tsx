@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11223
+// Function ID: 11224
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11205, 4834, 11206, 11245, 11244, 10789, 11255, 8786, 12500, 11235, 2]
+// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11224, 4834, 11225, 11264, 11263, 10805, 11274, 8786, 12517, 11254, 2]
 // Exports: default
 
-// Module 11204 (handleJoinEmbeddedActivity)
+// Module 11223 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;

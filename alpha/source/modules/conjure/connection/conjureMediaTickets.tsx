@@ -1,10 +1,11 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11062
+// Function ID: 11063
 // Name: conjureMediaTickets
-// Dependencies: [11042, 2]
+// Dependencies: [11004, 2]
 // Exports: clearMediaTickets, getMediaTicket, retireMediaTicket
 
-// Module 11041 (conjureMediaTickets)
+// Module 11062 (conjureMediaTickets)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,10 +15,9 @@ const map = new Map();
 const map1 = new Map();
 let result = size.fileFinishedImporting("modules/conjure/connection/conjureMediaTickets.tsx");
 
-export const getMediaTicket = function getMediaTicket(arg0) {
-  let closure_0;
-  _require = arg0;
-  const value = map.get(arg0);
+export const getMediaTicket = function getMediaTicket(projectId) {
+  _require = projectId;
+  const value = map.get(projectId);
   if (null != value) {
     const tmp2 = globalThis;
     const _Date = Date;
@@ -26,12 +26,12 @@ export const getMediaTicket = function getMediaTicket(arg0) {
     }
   }
   let obj = map1;
-  const value2 = map1.get(arg0);
+  const value2 = map1.get(projectId);
   if (null != value2) {
     return value2;
   } else {
     const obj2 = require("ConjureWorkerTickets");
-    const mintWorkerTicketResult = obj2.mintWorkerTicket(arg0);
+    const mintWorkerTicketResult = obj2.mintWorkerTicket(projectId);
     const nextPromise = mintWorkerTicketResult.then((ticket) => {
       function ticketExpiryMs(ticket) {
         try {
@@ -55,22 +55,26 @@ export const getMediaTicket = function getMediaTicket(arg0) {
       }
       const tmp = ticketExpiryMs(ticket.ticket);
       if (null != tmp) {
-        const tmp3 = closure_0;
+        const tmp3 = projectId;
         const obj = { ticket, expiresAt: tmp - 30000 };
-        let result = map.set(closure_0, obj);
+        let result = map.set(projectId, obj);
       }
       return ticket;
     });
     const cleanupPromise = nextPromise.finally(() => {
-      map1.delete(closure_0);
+      map1.delete(projectId);
     });
-    let result = obj.set(arg0, cleanupPromise);
+    let result = obj.set(projectId, cleanupPromise);
     return cleanupPromise;
   }
 };
 export const retireMediaTicket = function retireMediaTicket(arg0) {
   map.delete(arg0);
+  const obj = ConjureWorkerTickets;
+  obj.forgetEarlyTicket(arg0);
 };
 export const clearMediaTickets = function clearMediaTickets() {
   map.clear();
+  const obj = ConjureWorkerTickets;
+  obj.forgetEarlyTickets();
 };

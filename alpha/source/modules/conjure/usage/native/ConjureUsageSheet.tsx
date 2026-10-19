@@ -1,17 +1,17 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12321
+// Function ID: 12322
 // Name: ConjureUsageSheet
-// Dependencies: [19, 17, 10963, 21, 5191, 587, 558, 576, 5187, 10969, 504, 7175, 7117, 1128, 3883, 5477, 2]
+// Dependencies: [19, 17, 10979, 21, 5191, 587, 558, 576, 5187, 10985, 504, 7175, 7117, 1128, 3883, 5477, 2]
 
-// Module 12304 (ConjureUsageSheet)
+// Module 12321 (ConjureUsageSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10969 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10985 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10963 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -303,11 +303,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
         }
       }
     }
-    const sumTokenUsage = projectId(10969).sumTokenUsage;
-    projectId(10969);
-    const tmpResult9 = projectId(10969);
+    const sumTokenUsage = projectId(10985).sumTokenUsage;
+    projectId(10985);
+    const tmpResult9 = projectId(10985);
     const sumTokenUsageResult = tmpResult9.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmpResult10 = projectId(10969);
+    const tmpResult10 = projectId(10985);
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmpResult10.usageOrEmpty(stateFromStores.compaction));
     const ActionSheet = tmp(7175).ActionSheet;
     const _Symbol = Symbol;
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       const formatToPlainString = intl2.formatToPlainString;
       const obj8 = { runes: runesFromUsdResult.toLocaleString() };
       const gMuw5d = tmp30(3883).gMuw5d;
-      const tmpResult11 = projectId(10969);
+      const tmpResult11 = projectId(10985);
       runesFromUsdResult = tmpResult11.runesFromUsd(stateFromStores.cost_usd);
       const formatToPlainStringResult = formatToPlainString(gMuw5d, obj8);
       cResult[27] = stateFromStores.cost_usd;
@@ -392,7 +392,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       tmp48 = cResult[37];
     }
     if (cResult[38] !== stateFromStores.compaction) {
-      const tmpResult12 = projectId(10969);
+      const tmpResult12 = projectId(10985);
       const usageOrEmptyResult = tmpResult12.usageOrEmpty(stateFromStores.compaction);
       cResult[38] = stateFromStores.compaction;
       cResult[39] = usageOrEmptyResult;
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       tmp56 = cResult[42];
     }
     if (cResult[43] !== stateFromStores.classifier) {
-      const tmpResult13 = projectId(10969);
+      const tmpResult13 = projectId(10985);
       const usageOrEmptyResult1 = tmpResult13.usageOrEmpty(stateFromStores.classifier);
       cResult[43] = stateFromStores.classifier;
       cResult[44] = usageOrEmptyResult1;
@@ -468,7 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
           }
           const Text2 = tmp(5187).Text;
           const _Math = Math;
-          const tmpResult14 = projectId(10969);
+          const tmpResult14 = projectId(10985);
           const roundResult = round(100 * tmpResult14.cacheHitRate(sumTokenUsageResult1));
           cResult[4] = tmp4.label;
           cResult[5] = tmp4.row;
@@ -555,11 +555,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
   if (null == stateFromStores) {
     return null;
   } else {
-    const sumTokenUsage = projectId(10969).sumTokenUsage;
-    projectId(10969);
-    const tmp2Result7 = projectId(10969);
+    const sumTokenUsage = projectId(10985).sumTokenUsage;
+    projectId(10985);
+    const tmp2Result7 = projectId(10985);
     const sumTokenUsageResult = tmp2Result7.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmp2Result8 = projectId(10969);
+    const tmp2Result8 = projectId(10985);
     const obj2 = { header: closure_5(BottomSheetTitleHeader, obj3), children: closure_5(View, obj4) };
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmp2Result8.usageOrEmpty(stateFromStores.compaction));
     const ActionSheet = tmp2(7175).ActionSheet;
@@ -575,7 +575,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { runes: runesFromUsdResult.toLocaleString() };
     gMuw5d = _modDef3883.gMuw5d;
-    const tmp2Result9 = projectId(10969);
+    const tmp2Result9 = projectId(10985);
     runesFromUsdResult = tmp2Result9.runesFromUsd(stateFromStores.cost_usd);
     items2 = [closure_5(Text, obj6), , ];
     const obj8 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items3 };
@@ -588,11 +588,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     items3[1] = closure_5(closure_8, obj10);
     const obj11 = { label: intl5.string(_modDef3883.ANCEo3), usage: tmp2Result10.usageOrEmpty(stateFromStores.compaction) };
     intl5 = tmp2(1128).intl;
-    tmp2Result10 = projectId(10969);
+    tmp2Result10 = projectId(10985);
     items3[2] = closure_5(closure_8, obj11);
     const obj12 = { label: intl6.string(_modDef3883.ugL6D4), usage: tmp2Result11.usageOrEmpty(stateFromStores.classifier) };
     intl6 = tmp2(1128).intl;
-    tmp2Result11 = projectId(10969);
+    tmp2Result11 = projectId(10985);
     items3[3] = closure_5(closure_8, obj12);
     items2[1] = closure_6(Stack2, obj8);
     const obj13 = { style: tmp.row, children: items4 };
@@ -606,7 +606,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const Text3 = tmp2(5187).Text;
     round = Math.round;
     const _HermesInternal = HermesInternal;
-    tmp2Result12 = projectId(10969);
+    tmp2Result12 = projectId(10985);
     items4[1] = closure_5(Text3, obj16);
     items2[2] = closure_6(View, obj13);
     return closure_5(ActionSheet, obj2);

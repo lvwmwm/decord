@@ -1,15 +1,15 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18202
+// Function ID: 18203
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5209, 5212, 5214, 558, 576, 12913, 9071, 573, 11504, 5236, 11445, 17359, 18199, 4904, 1128, 6567, 587, 2]
+// Dependencies: [19, 5209, 5212, 5214, 558, 576, 10679, 9071, 573, 11522, 5236, 11463, 17363, 18203, 4904, 1128, 6567, 587, 2]
 
-// Module 18198 (useVoicePanelCardUserStateIcons)
+// Module 18202 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
 import CallConstants from "CallConstants" /* 5214 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9071 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12913 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18199 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18203 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import VoiceStateStore from "VoiceStateStore" /* 5212 */;
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(11445);
-const useMuteAwareLocalVolumeDefault = tmp2(11504);
+const MobileAudioOutputExperimentDefault = tmp2(11463);
+const useMuteAwareLocalVolumeDefault = tmp2(11522);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2, arg3) {
@@ -255,7 +255,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(17359);
+  const tmp4Result6 = tmp4(17363);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

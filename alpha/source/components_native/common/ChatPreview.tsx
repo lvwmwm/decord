@@ -1,7 +1,7 @@
 // Module ID: 9679
 // Function ID: 9680
 // Name: ChatPreview
-// Dependencies: [19, 17, 5181, 4897, 2068, 1392, 8014, 21, 5191, 587, 4922, 9680, 8013, 9682, 9897, 9910, 4888, 1128, 9896, 12, 9637, 5202, 9911, 9971, 9976, 5545, 1896, 9977, 8257, 9684, 8167, 11097, 11098, 11136, 11137, 11560, 13334, 12618, 1384, 7092, 6462, 5187, 558, 576, 2044, 504, 1499, 6200, 6180, 2]
+// Dependencies: [19, 17, 5181, 4897, 2068, 1392, 8014, 21, 5191, 587, 4922, 9680, 8013, 9682, 9897, 9910, 4888, 1128, 9896, 12, 9637, 5202, 9911, 9971, 9976, 5545, 1896, 9977, 8257, 9684, 8167, 11116, 11117, 11155, 11156, 10675, 10677, 12635, 1384, 7092, 6462, 5187, 558, 576, 2044, 504, 1499, 6200, 6180, 2]
 
 // Module 9679 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
@@ -24,12 +24,12 @@ import handleMessagesTapLink2 from "handleMessagesTapLink" /* 9911 */;
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9971 */;
 import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9976 */;
 import showLongPressMessageActionSheet2 from "showLongPressMessageActionSheet" /* 9977 */;
-import handleMessagesTapImage from "handleMessagesTapImage" /* 11097 */;
-import handleMessagesTapChannel from "handleMessagesTapChannel" /* 11098 */;
-import contentHandlers2 from "contentHandlers" /* 11137 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11560 */;
-import ChatDefault from "Chat" /* 12618 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 13334 */;
+import GuildNSFWDefault from "GuildNSFW" /* 10675 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 10677 */;
+import handleMessagesTapImage from "handleMessagesTapImage" /* 11116 */;
+import handleMessagesTapChannel from "handleMessagesTapChannel" /* 11117 */;
+import contentHandlers2 from "contentHandlers" /* 11156 */;
+import ChatDefault from "Chat" /* 12635 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
@@ -56,7 +56,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const handleMessagesLongPressChannel = tmp(11136);
+const handleMessagesLongPressChannel = tmp(11155);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ Changeset: c10, RowType: unpackModuleId, SeparatorType: closure_12 } = RowGeneratorConstants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f159369 = (message) => {
+          const f159477 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f159369);
+            const item = arr.forEach(f159477);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f159369);
+            const item1 = arr.forEach(f159477);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -256,7 +256,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = require.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "test", shouldInitialScroll: "Array", animated: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}", scrollPosition: "toCharArray$esjava$1", focusTargetId: "toCharArray$esjava$1" };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "test", shouldInitialScroll: "Array", animated: 0, scrollPosition: 2, focusTargetId: 0 };
         require.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {

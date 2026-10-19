@@ -1,10 +1,10 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12300
+// Function ID: 12301
 // Name: ConjureAppBuildRequest
-// Dependencies: [32, 5, 19, 11042, 1128, 3883, 558, 576, 12278, 12117, 2]
+// Dependencies: [32, 5, 19, 11004, 1128, 3883, 558, 576, 12296, 12136, 2]
 
-// Module 12282 (ConjureAppBuildRequest)
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12278 */;
+// Module 12300 (ConjureAppBuildRequest)
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;

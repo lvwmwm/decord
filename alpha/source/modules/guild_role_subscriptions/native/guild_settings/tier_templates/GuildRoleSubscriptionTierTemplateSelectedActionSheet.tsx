@@ -1,9 +1,9 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 18999
+// Function ID: 19000
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: [19, 17, 2065, 21, 5191, 587, 558, 576, 1633, 5187, 1128, 1202, 5480, 6584, 7118, 2]
 
-// Module 18995 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 18999 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

@@ -1,14 +1,14 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11483
+// Function ID: 11484
 // Name: VideoBackgroundOptionsRadioGroup
-// Dependencies: [19, 1087, 21, 558, 576, 9837, 5358, 11466, 5353, 5356, 1128, 6539, 6540, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 9837, 5358, 11484, 5353, 5356, 1128, 6539, 6540, 2]
 
-// Module 11465 (VideoBackgroundOptionsRadioGroup)
+// Module 11483 (VideoBackgroundOptionsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import applyBackgroundOption from "applyBackgroundOption" /* 5353 */;
 import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5356 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11466 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11484 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackg
   analyticsContext = obj2.useAnalyticsContext();
   let obj3 = analyticsContext(5358);
   const lastUsedVideoBackgroundOption = obj3.useLastUsedVideoBackgroundOption();
-  let obj4 = analyticsContext(11466);
+  let obj4 = analyticsContext(11484);
   const videoBackgroundRadioOptions = obj4.useVideoBackgroundRadioOptions();
   if (cResult[0] !== analyticsContext.location) {
     function handleChange(arg0) {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackg
     tmp6 = cResult[1];
   }
   if (cResult[2] !== lastUsedVideoBackgroundOption) {
-    const tmpResult = analyticsContext(11466);
+    const tmpResult = analyticsContext(11484);
     let result = tmpResult.toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption);
     cResult[2] = lastUsedVideoBackgroundOption;
     cResult[3] = result;

@@ -1,9 +1,9 @@
-// Module ID: 18954
-// Function ID: 18955
+// Module ID: 18958
+// Function ID: 18959
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1633, 38, 18955, 5187, 1202, 5479, 5155, 1128, 6584, 7118, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1633, 38, 18959, 5187, 1202, 5479, 5155, 1128, 6584, 7118, 2]
 
-// Module 18954 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18958 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import BottomSheetModal from "BottomSheetModal" /* 6584 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18955 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18959 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

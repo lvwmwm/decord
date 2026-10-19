@@ -1,16 +1,16 @@
-// Module ID: 18084
-// Function ID: 18085
+// Module ID: 18088
+// Function ID: 18089
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1392, 1087, 2065, 21, 558, 576, 4929, 5065, 5127, 6940, 504, 4864, 15624, 1128, 2981, 5033, 2052, 15692, 7370, 7003, 7122, 18085, 1384, 5128, 18089, 9303, 5187, 5479, 7092, 7118, 5191, 587, 2]
+// Dependencies: [19, 17, 1392, 1087, 2065, 21, 558, 576, 4929, 5065, 5127, 6940, 504, 4864, 15628, 1128, 2981, 5033, 2052, 15696, 7370, 7003, 7122, 18089, 1384, 5128, 18093, 9303, 5187, 5479, 7092, 7118, 5191, 587, 2]
 
-// Module 18084 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 18088 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
 import openUserSettings from "openUserSettings" /* 7370 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15692 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15696 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -74,7 +74,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     tmp13 = cResult[3];
   }
   dependencyMap = tmp13;
-  const tmpResult2 = tmp(15624);
+  const tmpResult2 = tmp(15628);
   enabled2 = tmpResult2.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   if (cResult[4] !== tmp13) {
     let stringResult;
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          tmp25 = closure_9(tmp(18085).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+          tmp25 = closure_9(tmp(18089).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
         }
         cResult[16] = enabled;
         cResult[17] = tmp25;
@@ -208,7 +208,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          const obj6 = { uri: ref(18089) };
+          const obj6 = { uri: ref(18093) };
           tmp32[0] = obj6;
           tmp32[1] = tmp7.image;
           tmp32[3] = !enabled;
@@ -221,7 +221,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const APNGPlayer = tmp(9303).APNGPlayer;
-          tmp29[0] = ref(18089);
+          tmp29[0] = ref(18093);
           tmp29[1] = tmp7.image;
           tmp28Result = tmp28(APNGPlayer, tmp29);
         }
@@ -296,7 +296,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const obj5 = ref(4864);
   let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj6 = markAsDismissed(15624);
+  const obj6 = markAsDismissed(15628);
   enabled2 = obj6.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1128).intl;
   const string = intl.string;
@@ -360,19 +360,19 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   };
   items4[0] = closure_9(tmp2(7122).ActionSheetHeaderBar, obj9);
   const obj10 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp15(tmp2(18085).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp15(tmp2(18089).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp19 = !enabled;
-  enabled && tmp15(tmp2(18085).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && tmp15(tmp2(18089).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp19) {
     let tmp15Result;
     const tmp2Result = tmp2(1384);
     if (tmp2Result.isIOS()) {
       const obj11 = { source: obj12, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
-      obj12 = { uri: ref(18089) };
+      obj12 = { uri: ref(18093) };
       const tmp4Result = ref(5128);
       tmp15Result = tmp15(tmp4Result, obj11);
     } else {
-      const obj13 = { url: ref(18089), style: tmp6.image, autoplay: true };
+      const obj13 = { url: ref(18093), style: tmp6.image, autoplay: true };
       const APNGPlayer = tmp2(9303).APNGPlayer;
       tmp15Result = tmp15(APNGPlayer, obj13);
     }

@@ -1,9 +1,9 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16733
+// Function ID: 16734
 // Name: DevToolsQuickActionsScreen
-// Dependencies: [32, 5, 19, 17, 5181, 6013, 1393, 2132, 1207, 1209, 1392, 7673, 1087, 13371, 1394, 10690, 1210, 21, 5191, 587, 13455, 13370, 5360, 15462, 6190, 16730, 2002, 16746, 10743, 2049, 2052, 15796, 15798, 14773, 4904, 16621, 558, 576, 5560, 1633, 504, 2044, 16750, 16637, 6542, 7172, 1202, 16323, 5065, 16383, 16751, 10023, 1128, 9415, 6466, 6457, 6917, 12726, 12723, 4903, 16752, 6927, 1257, 562, 584, 1384, 2]
+// Dependencies: [32, 5, 19, 17, 5181, 6013, 1393, 2132, 1207, 1209, 1392, 7673, 1087, 13376, 1394, 10706, 1210, 21, 5191, 587, 13460, 13375, 5360, 15466, 6190, 16734, 2002, 16750, 10759, 2049, 2052, 15800, 15802, 14777, 4904, 16625, 558, 576, 5560, 1633, 504, 2044, 16754, 16641, 6542, 7172, 1202, 16327, 5065, 16387, 16755, 10023, 1128, 9415, 6466, 6457, 6917, 12743, 12740, 4903, 16756, 6927, 1257, 562, 584, 1384, 2]
 
-// Module 16729 (DevToolsQuickActionsScreen)
+// Module 16733 (DevToolsQuickActionsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,14 +14,14 @@ import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /*
 import dismissible_content from "dismissible_content" /* 2052 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import Constants2 from "Constants" /* 10690 */;
-import NUFActionCreators from "NUFActionCreators" /* 13370 */;
-import NUFConstants from "NUFConstants" /* 13371 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13455 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14773 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15462 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 16637 */;
-import OverridePremiumTypeActions from "OverridePremiumTypeActions" /* 16751 */;
+import Constants2 from "Constants" /* 10706 */;
+import NUFActionCreators from "NUFActionCreators" /* 13375 */;
+import NUFConstants from "NUFConstants" /* 13376 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13460 */;
+import requestReviewModalDefault from "requestReviewModal" /* 14777 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15466 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 16641 */;
+import OverridePremiumTypeActions from "OverridePremiumTypeActions" /* 16755 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ function handleReducedMotionChange(arg0) {
 function launchPasskeyPromoSheet() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const promise = asyncRequire(16746, dependencyMap.paths);
+  const promise = asyncRequire(16750, dependencyMap.paths);
   promise.then((result) => {
     const _default = result.default;
     result = _default.openPasskeyUpsellPromoSheet();
@@ -83,7 +83,7 @@ function showVibingWumpus() {
 
     }
   };
-  obj.pushLazy(asyncRequire(10743, dependencyMap.paths), obj2, VIBING_WUMPUS_MODAL_KEY);
+  obj.pushLazy(asyncRequire(10759, dependencyMap.paths), obj2, VIBING_WUMPUS_MODAL_KEY);
 }
 function handleResetDoubleTapState() {
   obj = UserSettingsProtoActionCreators;
@@ -98,7 +98,7 @@ function handleResetDoubleTapState() {
 function launchTotpSetupSuccess() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const items = [asyncRequire(15796, dependencyMap.paths), asyncRequire(15798, dependencyMap.paths)];
+  const items = [asyncRequire(15800, dependencyMap.paths), asyncRequire(15802, dependencyMap.paths)];
   const allResult = all(items);
   allResult.then((result) => {
     const iter = result[Symbol.iterator]();
@@ -207,7 +207,7 @@ let closure_24 = createStyles(obj);
 function launchMFA() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const promise = asyncRequire(16730, dependencyMap.paths);
+  const promise = asyncRequire(16734, dependencyMap.paths);
   promise.then((openMFAModal) => {
     let items;
     obj = { ticket: "ticket", methods: items };
@@ -524,7 +524,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
   [][0] = locale;
   const stateFromStores = obj5.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   if (tmp9) {
-    return closure_21(tmp2(16750).default, {});
+    return closure_21(tmp2(16754).default, {});
   } else {
     const tmp13 = closure_22;
     let obj6 = { style: tmp.container, contentContainerStyle: items4, children: items5 };
@@ -555,10 +555,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
       str = "(using system theme)";
     }
     const obj11 = { title: "Appearance", hasIcons: true, children: items6 };
-    const obj12 = { label: str, disabled: usingSystemTheme, icon: tmp15(tmp2(16323).ThemeLightIcon, {}), value: tmp2Result.isThemeLight(theme), onValueChange: handleThemeChange };
+    const obj12 = { label: str, disabled: usingSystemTheme, icon: tmp15(tmp2(16327).ThemeLightIcon, {}), value: tmp2Result.isThemeLight(theme), onValueChange: handleThemeChange };
     tmp2Result = tmp2(5065);
     items6 = [tmp15(TableSwitchRow, obj12), ];
-    const obj13 = { label: "Reduced Motion", icon: tmp15(tmp2(16383).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
+    const obj13 = { label: "Reduced Motion", icon: tmp15(tmp2(16387).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
     const TableSwitchRow2 = tmp2(7172).TableSwitchRow;
     items6[1] = tmp15(TableSwitchRow2, obj13);
     items5[2] = tmp13(TableRowGroup2, obj11);
@@ -604,7 +604,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const obj19 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: handleResetDoubleTapState, icon: tmp15(tmp2(6917).KeyIcon, {}), trailing: tmp15(tmp2(6466).TableRowArrow, {}) };
     const TableRow2 = tmp2(6457).TableRow;
     items7[1] = tmp15(TableRow2, obj19);
-    const obj20 = { label: intl2.string(tmp2(1128).t.yoWDXU), subLabel: "Dismisses dev tools when launching.", onPress: handleNewUserOnboarding, icon: tmp15(tmp2(16621).WrenchIcon, {}), trailing: tmp15(tmp2(6466).TableRowArrow, {}) };
+    const obj20 = { label: intl2.string(tmp2(1128).t.yoWDXU), subLabel: "Dismisses dev tools when launching.", onPress: handleNewUserOnboarding, icon: tmp15(tmp2(16625).WrenchIcon, {}), trailing: tmp15(tmp2(6466).TableRowArrow, {}) };
     const TableRow3 = tmp2(6457).TableRow;
     intl2 = tmp2(1128).intl;
     items7[2] = tmp15(TableRow3, obj20);
@@ -721,7 +721,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
       isCheckpointEnabled = tmp15(TableRow10, obj27);
     }
     items7[9] = isCheckpointEnabled;
-    const obj28 = { label: "Test captcha", onPress: tmp2(16752).showCaptchaTestModal, icon: tmp15(tmp2(6917).KeyIcon, {}), trailing: tmp15(tmp2(6466).TableRowArrow, {}) };
+    const obj28 = { label: "Test captcha", onPress: tmp2(16756).showCaptchaTestModal, icon: tmp15(tmp2(6917).KeyIcon, {}), trailing: tmp15(tmp2(6466).TableRowArrow, {}) };
     const TableRow11 = tmp2(6457).TableRow;
     items7[10] = tmp15(TableRow11, obj28);
     const obj29 = {
@@ -736,7 +736,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     };
     const TableSwitchRow3 = tmp2(7172).TableSwitchRow;
     items7[11] = tmp15(TableSwitchRow3, obj29);
-    const obj30 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: handleShowAppRatingModal, icon: tmp15(tmp2(16621).WrenchIcon, {}) };
+    const obj30 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: handleShowAppRatingModal, icon: tmp15(tmp2(16625).WrenchIcon, {}) };
     const TableRow12 = tmp2(6457).TableRow;
     items7[12] = tmp15(TableRow12, obj30);
     items5[6] = tmp13(TableRowGroup4, obj17);
@@ -746,7 +746,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const obj32 = { title: "Crash Actions", hasIcons: true, children: items8 };
     const TableRowGroup5 = tmp2(6542).TableRowGroup;
     const obj33 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force Native Crash",
       onPress() {
           obj = showDevWidget(closure_2[62]);
@@ -756,7 +756,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const TableRow13 = tmp2(6457).TableRow;
     items8 = [tmp15(TableRow13, obj33), , , , , ];
     const obj34 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force JS Crash",
       onPress() {
           const error = new Error("Force JS Crash");
@@ -766,7 +766,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const TableRow14 = tmp2(6457).TableRow;
     items8[1] = tmp15(TableRow14, obj34);
     const obj35 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force JS Boundary Crash",
       onPress() {
           _asyncToGenerator(true);
@@ -775,7 +775,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const TableRow15 = tmp2(6457).TableRow;
     items8[2] = tmp15(TableRow15, obj35);
     const obj36 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force libdiscore Crash",
       onPress() {
           obj = locale(closure_2[63]);
@@ -785,7 +785,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const TableRow16 = tmp2(6457).TableRow;
     items8[3] = tmp15(TableRow16, obj36);
     const obj37 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force libdiscore Store Crash",
       subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore",
       onPress() {
@@ -796,7 +796,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     const TableRow17 = tmp2(6457).TableRow;
     items8[4] = tmp15(TableRow17, obj37);
     const obj38 = {
-      icon: tmp15(tmp2(16621).WrenchIcon, {}),
+      icon: tmp15(tmp2(16625).WrenchIcon, {}),
       label: "Force libdiscore Store Error",
       subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset",
       onPress() {
@@ -822,7 +822,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
       const obj41 = { title: "Memory Actions", hasIcons: true, children: tmp15(TableRow19, obj42) };
       const TableRowGroup6 = tmp2(6542).TableRowGroup;
       obj42 = {
-        icon: tmp15(tmp2(16621).WrenchIcon, {}),
+        icon: tmp15(tmp2(16625).WrenchIcon, {}),
         label: "Trigger Memory Warning",
         subLabel: "Simulates a memory warning to test cache-eviction behavior (e.g. SDWebImage).",
         onPress() {

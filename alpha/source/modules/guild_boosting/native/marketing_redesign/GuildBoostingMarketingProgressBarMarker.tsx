@@ -1,16 +1,16 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14660
+// Function ID: 14661
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1087, 21, 14657, 14658, 14659, 5191, 587, 558, 576, 5127, 4945, 5063, 5065, 5478, 13267, 5128, 11115, 8294, 5187, 2]
+// Dependencies: [19, 17, 1087, 21, 14661, 14662, 14663, 5191, 587, 558, 576, 5127, 4945, 5063, 5065, 5478, 13275, 5128, 11134, 8294, 5187, 2]
 
-// Module 14656 (GuildBoostingMarketingProgressBarMarker)
+// Module 14660 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import spring from "spring" /* 5478 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14657 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14658 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14661 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14662 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14663 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -501,7 +501,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                           }
                           let tmp35 = tmp11 && tier !== BoostedGuildTiers.NONE;
                           if (tmp35) {
-                            const obj8 = { source: sharedValue(11115), style: tmp4.progressBarMarkerUnlockedIcon };
+                            const obj8 = { source: sharedValue(11134), style: tmp4.progressBarMarkerUnlockedIcon };
                             const tmp5Result = sharedValue(5128);
                             tmp35 = closure_6(tmp5Result, obj8);
                           }
@@ -651,7 +651,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11115), style: tmp.progressBarMarkerUnlockedIcon };
+      const obj8 = { source: sharedValue(11134), style: tmp.progressBarMarkerUnlockedIcon };
       const tmp2Result = sharedValue(5128);
       tmp20Result = tmp20(tmp2Result, obj8);
     }

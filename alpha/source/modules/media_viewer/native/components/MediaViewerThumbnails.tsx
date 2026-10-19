@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 13991
+// Function ID: 13992
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8692, 21, 558, 576, 13988, 4913, 587, 5465, 1384, 4945, 5191, 5128, 8666, 4946, 7038, 2]
+// Dependencies: [32, 19, 17, 8692, 21, 558, 576, 13992, 4913, 587, 5465, 1384, 4945, 5191, 5128, 8666, 4946, 7038, 2]
 // Exports: default
 
-// Module 13987 (MediaViewerThumbnails)
+// Module 13991 (MediaViewerThumbnails)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4913 */;
@@ -12,7 +12,7 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
 import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4946 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5465 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13988 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

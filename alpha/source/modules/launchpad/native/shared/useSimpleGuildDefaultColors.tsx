@@ -1,9 +1,9 @@
-// Module ID: 18377
-// Function ID: 18378
+// Module ID: 18381
+// Function ID: 18382
 // Name: useSimpleGuildDefaultColors
 // Dependencies: [5191, 587, 2]
 
-// Module 18377 (useSimpleGuildDefaultColors)
+// Module 18381 (useSimpleGuildDefaultColors)
 import nativeDefault from "native" /* 587 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;

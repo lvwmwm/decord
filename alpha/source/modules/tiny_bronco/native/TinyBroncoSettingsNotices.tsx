@@ -1,10 +1,10 @@
-// Module ID: 15858
-// Function ID: 15859
+// Module ID: 15862
+// Function ID: 15863
 // Name: TinyBroncoSettingsNotices
-// Dependencies: [19, 17, 1392, 6183, 7295, 21, 5191, 587, 558, 576, 15727, 9922, 7764, 6174, 1128, 7834, 3175, 15767, 6184, 6177, 6165, 15859, 8004, 2]
+// Dependencies: [19, 17, 1392, 6183, 7295, 21, 5191, 587, 558, 576, 15731, 9922, 7764, 6174, 1128, 7834, 3175, 15771, 6184, 6177, 6165, 15863, 8004, 2]
 // Exports: shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled
 
-// Module 15858 (TinyBroncoSettingsNotices)
+// Module 15862 (TinyBroncoSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -18,9 +18,9 @@ import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6184 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
 import useUserIsTeen from "useUserIsTeen" /* 8004 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9922 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 15727 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 15767 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15859 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 15731 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 15771 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 7295 */;

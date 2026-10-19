@@ -1,9 +1,9 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 18955
+// Function ID: 18956
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 5187, 16271, 7092, 1128, 1633, 5479, 1505, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 5187, 16275, 7092, 1128, 1633, 5479, 1505, 2]
 
-// Module 18951 (GuildRoleSubscriptionTierEditStep)
+// Module 18955 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,7 +11,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
-import FormSeparatorDefault from "FormSeparator" /* 16271 */;
+import FormSeparatorDefault from "FormSeparator" /* 16275 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

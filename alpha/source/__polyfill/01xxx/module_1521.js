@@ -106,7 +106,7 @@ export const BaseNavigationContainer = react.forwardRef(function BaseNavigationC
     let routeNames;
     let routes;
     let tmp2;
-    const f86967 = (state) => {
+    const f87016 = (state) => {
       let key;
       let routeNames;
       let routes;
@@ -119,7 +119,7 @@ export const BaseNavigationContainer = react.forwardRef(function BaseNavigationC
           let tmp2;
           if (undefined !== state) {
             ({ key, routeNames } = state);
-            const obj = { stale: true, routes: routes.map(f86967) };
+            const obj = { stale: true, routes: routes.map(f87016) };
             const merged1 = Object.assign(getState(state, closure_1_3));
             routes = state.routes;
             tmp2 = obj;
@@ -140,7 +140,7 @@ export const BaseNavigationContainer = react.forwardRef(function BaseNavigationC
       let tmp3;
       if (undefined !== tmp2) {
         ({ key, routeNames } = tmp2);
-        let obj = { stale: true, routes: routes.map(f86967) };
+        let obj = { stale: true, routes: routes.map(f87016) };
         let merged = Object.assign(_objectWithoutProperties(tmp2, closure_3));
         routes = tmp2.routes;
         tmp3 = obj;

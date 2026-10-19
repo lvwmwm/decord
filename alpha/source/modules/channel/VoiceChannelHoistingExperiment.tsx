@@ -1,9 +1,9 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18468
+// Function ID: 18469
 // Name: VoiceChannelHoistingExperiment
 // Dependencies: [5113, 5110, 558, 576, 2]
 
-// Module 18464 (VoiceChannelHoistingExperiment)
+// Module 18468 (VoiceChannelHoistingExperiment)
 import react from "react" /* 576 */;
 import ExperimentConstants from "ExperimentConstants" /* 5113 */;
 import createExperiment from "module_5110" /* 5110 */;

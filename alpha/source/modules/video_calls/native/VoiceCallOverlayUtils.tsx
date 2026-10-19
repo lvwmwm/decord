@@ -1,10 +1,10 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11251
+// Function ID: 11252
 // Name: VoiceCallOverlayUtils
 // Dependencies: [10663, 584, 2]
 // Exports: doesTargetPositionIntersectOtherOverlaysWorklet, setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 11232 (VoiceCallOverlayUtils)
+// Module 11251 (VoiceCallOverlayUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 10663 */;
 import size from "module_2" /* 2 */;

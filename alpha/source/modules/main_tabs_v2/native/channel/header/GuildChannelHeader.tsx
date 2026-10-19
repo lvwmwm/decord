@@ -1,9 +1,9 @@
-// Module ID: 13799
-// Function ID: 13800
+// Module ID: 13803
+// Function ID: 13804
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 13800, 6013, 2072, 7249, 2068, 5116, 2090, 4855, 1392, 1087, 2065, 21, 558, 576, 4913, 587, 504, 6577, 13793, 9760, 1128, 5521, 13791, 2052, 7376, 2131, 8431, 9742, 9994, 13786, 2]
+// Dependencies: [32, 19, 17, 13804, 6013, 2072, 7249, 2068, 5116, 2090, 4855, 1392, 1087, 2065, 21, 558, 576, 4913, 587, 504, 6577, 13797, 9760, 1128, 5521, 13795, 2052, 7376, 2131, 8431, 9742, 9994, 13790, 2]
 
-// Module 13799 (GuildChannelHeader)
+// Module 13803 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import ChannelRecord from "ChannelRecord" /* 2072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import useChannelName2 from "useChannelName" /* 5521 */;
 import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9760 */;
-import ChannelHeader from "ChannelHeader" /* 13786 */;
+import ChannelHeader from "ChannelHeader" /* 13790 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 13800 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 13804 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7249 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -131,7 +131,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
             }
           }
         }
-        const tmpResult4 = tmp(13793);
+        const tmpResult4 = tmp(13797);
         const result = tmpResult4.renderMemberCountText(online, total, tmp4, tmp18);
         cResult[8] = online;
         cResult[9] = tmp18;
@@ -254,7 +254,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
     if (null != online) {
       let tmp7 = c22;
     }
-    const tmpResult = tmp(13793);
+    const tmpResult = tmp(13797);
     let tmp8 = tmpResult;
     let tmp9 = online;
     return tmpResult.renderMemberCountText(online, total, flag, tmp(6577).ICON_SIZE[token]);
@@ -321,8 +321,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                 tmp20 = cResult[13];
               }
               let id;
-              const useShouldChannelShowLoadingIndicator = guildId(13791).useShouldChannelShowLoadingIndicator;
-              guildId(13791);
+              const useShouldChannelShowLoadingIndicator = guildId(13795).useShouldChannelShowLoadingIndicator;
+              guildId(13795);
               if (channel != null) {
                 id = channel.id;
               }
@@ -348,7 +348,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                           tmp27 = null != tmp15;
                         }
                         const obj4 = { accessibleTitle: tmp14, subtitle: tmp30, disableArrow, guildId, icon };
-                        const tmpResult8 = guildId(13793);
+                        const tmpResult8 = guildId(13797);
                         const renderChannelTitleResult = tmpResult8.renderChannelTitle(tmp7, obj4);
                         if (cResult[23] === tmp27) {
                           let tmp40;
@@ -367,7 +367,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                   }
                 }
                 if (tmp27) {
-                  tmp31Result = closure_19(tmp(13791).ChannelHeaderLoadingIndicator, {});
+                  tmp31Result = closure_19(tmp(13795).ChannelHeaderLoadingIndicator, {});
                 } else {
                   let tmp33 = tmp20;
                   const tmp31 = closure_21;
@@ -420,7 +420,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
       let result;
       if (tmp8) {
         if (null != parentChannel) {
-          const tmpResult9 = guildId(13793);
+          const tmpResult9 = guildId(13797);
           result = tmpResult9.renderParentChannelSubTitle(parentChannel);
         }
       }
@@ -488,7 +488,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
   const formatToPlainStringResult = formatToPlainString(tmp5 ? t["OkzL+Q"] : t.UbNmGc, { channelName: tmp3 });
   if (tmp5) {
     if (null != parentChannel) {
-      const tmpResult = guildId(13793);
+      const tmpResult = guildId(13797);
       result = tmpResult.renderParentChannelSubTitle(parentChannel);
     }
   }
@@ -508,8 +508,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
     tmp12 = !showCreateThread;
   }
   let id;
-  const useShouldChannelShowLoadingIndicator = guildId(13791).useShouldChannelShowLoadingIndicator;
-  guildId(13791);
+  const useShouldChannelShowLoadingIndicator = guildId(13795).useShouldChannelShowLoadingIndicator;
+  guildId(13795);
   if (channel != null) {
     id = channel.id;
   }
@@ -520,7 +520,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
   }
   let tmp19 = !isForumLikeChannelResult && shouldChannelShowLoadingIndicator;
   if (tmp19) {
-    tmp20Result = closure_19(tmp(13791).ChannelHeaderLoadingIndicator, {});
+    tmp20Result = closure_19(tmp(13795).ChannelHeaderLoadingIndicator, {});
   } else {
     let tmp22 = tmp12;
     const tmp20 = closure_21;
@@ -536,7 +536,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
     tmp20Result = tmp20(tmp21, obj5);
   }
   const obj6 = { node: tmpResult6.renderChannelTitle(tmp3, { accessibleTitle: formatToPlainStringResult, subtitle: tmp20Result, disableArrow, guildId, icon }), hasSubtitle: tmp19 };
-  tmpResult6 = guildId(13793);
+  tmpResult6 = guildId(13797);
   if (!tmp19) {
     tmp19 = tmp12;
   }

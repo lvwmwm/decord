@@ -1,10 +1,10 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11490
+// Function ID: 11491
 // Name: VoiceActionUtils
 // Dependencies: [9058, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 11472 (VoiceActionUtils)
+// Module 11490 (VoiceActionUtils)
 import CallsUtils from "CallsUtils" /* 9058 */;
 import size from "module_2" /* 2 */;
 

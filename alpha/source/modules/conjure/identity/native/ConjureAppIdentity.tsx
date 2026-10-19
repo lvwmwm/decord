@@ -1,9 +1,9 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 11656
+// Function ID: 11657
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 587, 5191, 8026, 8036, 11595, 1128, 3883, 1496, 11636, 558, 576, 11641, 5128, 6459, 11643, 6563, 6294, 5187, 5477, 7051, 2]
+// Dependencies: [32, 5, 19, 17, 21, 587, 5191, 8026, 8036, 11611, 1128, 3883, 1496, 11652, 558, 576, 11657, 5128, 6459, 11659, 6563, 6294, 5187, 5477, 7051, 2]
 
-// Module 11640 (ConjureAppIdentity)
+// Module 11656 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3883 from "module_3883" /* 3883 */;
@@ -269,7 +269,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                         tmp21 = null;
                         if (!disabled) {
                           const obj3 = { style: tmp4.editIcon };
-                          tmp21 = closure_7(onError(11643), obj3);
+                          tmp21 = closure_7(onError(11659), obj3);
                         }
                       }
                       cResult[22] = disabled;
@@ -296,7 +296,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         }
         if (null == iconURL) {
           const obj5 = { size: "md", color: onError(587).colors.ICON_MUTED };
-          const ImagePlusIcon = tmp(11641).ImagePlusIcon;
+          const ImagePlusIcon = tmp(11657).ImagePlusIcon;
           tmp13Result = tmp13(ImagePlusIcon, obj5);
         } else {
           const obj6 = { source: obj7, style: tmp4.tileImage, resizeMode: "cover" };
@@ -381,7 +381,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   t = tmp7(1128).t;
   if (null == iconURL) {
     const obj2 = { size: "md", color: onError(587).colors.ICON_MUTED };
-    const ImagePlusIcon = tmp7(11641).ImagePlusIcon;
+    const ImagePlusIcon = tmp7(11657).ImagePlusIcon;
     tmp6Result = tmp6(ImagePlusIcon, obj2);
     tmp9 = onError;
   } else {
@@ -396,7 +396,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     tmp6Result2 = null;
     if (!disabled) {
       const obj5 = { style: tmp.editIcon };
-      tmp6Result2 = tmp6(tmp9(11643), obj5);
+      tmp6Result2 = tmp6(tmp9(11659), obj5);
     }
   }
   children[1] = tmp6Result2;

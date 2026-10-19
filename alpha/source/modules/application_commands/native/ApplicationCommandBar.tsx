@@ -1,9 +1,9 @@
-// Module ID: 13061
-// Function ID: 13062
+// Module ID: 13069
+// Function ID: 13070
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 2128, 21, 5191, 587, 6225, 558, 576, 1128, 1202, 6462, 504, 12876, 5128, 5187, 8855, 6178, 13062, 2]
+// Dependencies: [32, 109, 19, 17, 2128, 21, 5191, 587, 6225, 558, 576, 1128, 1202, 6462, 504, 12893, 5128, 5187, 8855, 6178, 13070, 2]
 
-// Module 13061 (ApplicationCommandBar)
+// Module 13069 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1202 */;
 import usePreviousDefault from "usePrevious" /* 6178 */;
 import LegacyTokens from "LegacyTokens" /* 6225 */;
 import Pressables from "Pressables" /* 6462 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12876 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
@@ -45,7 +45,7 @@ let tmp;
 let tmp5;
 let unpackModuleId;
 const Text_Text = tmp(5187);
-const DescriptionEllipsisDefault = tmp5(13062);
+const DescriptionEllipsisDefault = tmp5(13070);
 let closure_3 = ["option", "optionState"];
 let react = react_mod;
 ({ View: metroImportDefault, ScrollView: metroImportAll, StyleSheet } = react_native);

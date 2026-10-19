@@ -1,28 +1,28 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11618
+// Function ID: 11619
 // Name: ConjureTemplateWizardSheet
-// Dependencies: [5, 32, 19, 17, 2090, 4845, 10963, 10962, 21, 5191, 587, 11603, 11605, 8489, 504, 11607, 10983, 10986, 11609, 5155, 5187, 6433, 7175, 7117, 1128, 3883, 6540, 6539, 7051, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 2090, 4845, 10979, 10978, 21, 5191, 587, 11619, 11621, 8489, 504, 11623, 10999, 11003, 11625, 5155, 5187, 6433, 7175, 7117, 1128, 3883, 6540, 6539, 7051, 5479, 2]
 // Exports: default
 
-// Module 11602 (ConjureTemplateWizardSheet)
+// Module 11618 (ConjureTemplateWizardSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import TableRadioRow from "TableRadioRow" /* 6539 */;
 import GroupIcon from "GroupIcon" /* 8489 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
-import ConjureCreateErrors from "ConjureCreateErrors" /* 10986 */;
-import ChatShieldIcon from "ChatShieldIcon" /* 11603 */;
-import HammerIcon from "HammerIcon" /* 11605 */;
-import ConjureTemplateWizard from "ConjureTemplateWizard" /* 11607 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjureCreateErrors from "ConjureCreateErrors" /* 11003 */;
+import ChatShieldIcon from "ChatShieldIcon" /* 11619 */;
+import HammerIcon from "HammerIcon" /* 11621 */;
+import ConjureTemplateWizard from "ConjureTemplateWizard" /* 11623 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
-import ConjureChatStore from "ConjureChatStore" /* 10963 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
@@ -234,7 +234,7 @@ export default function ConjureTemplateWizardSheet(template) {
   }, items4);
   let tmp26 = null == tmp12;
   let id = template.id;
-  const tmp25 = guildId(11609);
+  const tmp25 = guildId(11625);
   if (tmp26) {
     tmp26 = null != stateFromStores1;
   }
@@ -258,13 +258,13 @@ export default function ConjureTemplateWizardSheet(template) {
       tmp9(tmp10, current);
     }
   }, items5);
-  const tmp2Result7 = tmp2(11607);
+  const tmp2Result7 = tmp2(11623);
   const conjureWizardIntroResult = tmp2Result7.conjureWizardIntro(tmp22);
-  const tmp2Result8 = tmp2(11607);
+  const tmp2Result8 = tmp2(11623);
   let result = tmp2Result8.conjureWizardServerCopy(tmp22);
-  const tmp2Result9 = tmp2(11607);
+  const tmp2Result9 = tmp2(11623);
   result1 = tmp2Result9.conjureWizardQuestions(tmp22);
-  const tmp2Result10 = tmp2(11607);
+  const tmp2Result10 = tmp2(11623);
   const result2 = tmp2Result10.conjureTemplateWizardSteps(result1, first1);
   const tmp32 = result2[Math.min(Math, tmp5, result2.length - 1)];
   length = result2.length;
@@ -577,7 +577,7 @@ export default function ConjureTemplateWizardSheet(template) {
       intl5 = tmp2(1128).intl;
       tmp57 = null == first2 || null == first;
       if (!tmp57) {
-        const tmp2Result11 = tmp2(11607);
+        const tmp2Result11 = tmp2(11623);
         tmp57 = !tmp2Result11.isConjureWizardComplete(result1, first3);
       }
       obj24 = obj23;
@@ -599,7 +599,7 @@ export default function ConjureTemplateWizardSheet(template) {
       if (!tmp49) {
         let tmp56 = typeof tmp32 === "object";
         if (typeof tmp32 === "object") {
-          const tmp2Result12 = tmp2(11607);
+          const tmp2Result12 = tmp2(11623);
           tmp56 = !tmp2Result12.canLeaveConjureWizardQuestion(tmp33, str);
         }
         tmp49 = tmp56;

@@ -1,14 +1,14 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11674
+// Function ID: 11675
 // Name: ConjurePublishScheduleSection
-// Dependencies: [19, 21, 558, 576, 11656, 5405, 1128, 3883, 5187, 5477, 587, 11657, 5479, 2]
+// Dependencies: [19, 21, 558, 576, 11675, 5405, 1128, 3883, 5187, 5477, 587, 11676, 5479, 2]
 
-// Module 11655 (ConjurePublishScheduleSection)
+// Module 11674 (ConjurePublishScheduleSection)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import AlertModal from "AlertModal" /* 5405 */;
-import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 11656 */;
+import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 11675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -176,7 +176,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
         if (null != tmp5.saved) {
           const obj10 = { spacing: nativeDefault.space.PX_8, children: items2 };
           const Stack = tmp(5477).Stack;
-          const tmpResult = tmp(11657);
+          const tmpResult = tmp(11676);
           const result = tmpResult.publishScheduleDetails(tmp5.saved);
           items2 = [
             result.map((children, index) => {
@@ -273,7 +273,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
       if (null != tmp3.saved) {
         const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
         const Stack2 = tmp6(5477).Stack;
-        const tmp6Result = projectId(11657);
+        const tmp6Result = projectId(11676);
         const result = tmp6Result.publishScheduleDetails(tmp3.saved);
         items2 = [
           result.map((children, index) => {

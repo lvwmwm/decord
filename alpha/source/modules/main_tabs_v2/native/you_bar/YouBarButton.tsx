@@ -1,16 +1,16 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17537
+// Function ID: 17538
 // Name: YouBarButton
-// Dependencies: [19, 17, 16136, 21, 5191, 587, 558, 576, 9308, 9604, 7840, 2]
+// Dependencies: [19, 17, 16140, 21, 5191, 587, 558, 576, 9308, 9604, 7840, 2]
 
-// Module 17533 (YouBarButton)
+// Module 17537 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ClipViewDefault from "ClipView" /* 9308 */;
 import shared_components_BadgeDefault from "shared_components/Badge" /* 9604 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16136 */;
+import YouBarConstants from "YouBarConstants" /* 16140 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "ix", bottom: "kind", padding: "right", minWidth: "application" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "ix", bottom: "Number", padding: "format", minWidth: "application" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -149,7 +149,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
   }
   const items = [size, badgeSize, num2, num];
   return react.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "ix", bottom: "kind", padding: "right", minWidth: "application" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "ix", bottom: "Number", padding: "format", minWidth: "application" };
     return rect;
   }, items);
 });

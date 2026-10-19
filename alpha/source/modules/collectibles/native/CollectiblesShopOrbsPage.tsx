@@ -1,15 +1,15 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16946
+// Function ID: 16947
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 7530, 1089, 21, 5191, 558, 576, 7130, 9262, 16900, 5155, 8574, 16907, 1202, 8632, 1128, 16941, 2]
+// Dependencies: [19, 17, 7530, 1089, 21, 5191, 558, 576, 7130, 9262, 16904, 5155, 8574, 16911, 1202, 8632, 1128, 16945, 2]
 
-// Module 16942 (CollectiblesShopOrbsPage)
+// Module 16946 (CollectiblesShopOrbsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8574 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16907 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16911 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
 import createStyles from "createStyles" /* 5191 */;

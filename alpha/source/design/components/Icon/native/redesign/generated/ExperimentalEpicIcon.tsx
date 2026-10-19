@@ -1,14 +1,14 @@
-// Module ID: 10903
-// Function ID: 10904
+// Module ID: 10919
+// Function ID: 10920
 // Name: ExperimentalEpicIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10904, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10920, 4912, 2]
 
-// Module 10903 (ExperimentalEpicIcon)
+// Module 10919 (ExperimentalEpicIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 10904 */;
+import AssetRegistry from "AssetRegistry" /* 10920 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

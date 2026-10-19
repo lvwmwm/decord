@@ -1,11 +1,11 @@
 // Module ID: 11768
 // Function ID: 11769
 // Name: default_1
-// Dependencies: [11732]
+// Dependencies: [11751]
 // Exports: default
 
 // Module 11768 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11732 */;
+import captureStackTrace2 from "captureStackTrace" /* 11751 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Ongeldige invoer: verwacht instanceof " + code.expected + ", ontving " + tmp52;
+                combined = "Entrada inv\u00E1lida: se esperaba instanceof " + code.expected + ", recibido " + tmp56;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Ongeldige invoer: verwacht " + expected + ", ontving " + tmp52;
+                combined = "Entrada inv\u00E1lida: se esperaba " + expected + ", recibido " + tmp56;
               }
               return combined;
             }
@@ -121,74 +121,57 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Ongeldige invoer: verwacht " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Entrada inv\u00E1lida: se esperaba " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Ongeldige optie: verwacht \u00E9\u00E9n van " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Opci\u00F3n inv\u00E1lida: se esperaba una de " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str34 = "<";
+              let str27 = "<";
               if (code.inclusive) {
-                str34 = "<=";
+                str27 = "<=";
               }
-              let str35 = "laat";
-              if ("date" !== code.origin) {
-                let str37 = "groot";
-                if ("string" === code.origin) {
-                  str37 = "lang";
-                }
-                str35 = str37;
-              }
-              let str39 = code.origin;
+              let str28 = closure_2[code.origin] ?? code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str39 == null) {
-                  str39 = "waarde";
+                if (str28 == null) {
+                  str28 = "valor";
                 }
-                const str46 = code.maximum;
+                const str33 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str46.toString();
-                const str47 = (obj2[code.origin] ?? null).unit ?? "elementen";
-                combined2 = "Te " + str35 + ": verwacht dat " + str39 + " " + str34 + str1 + " " + str47 + " " + tmp29.verb;
+                const str1 = str33.toString();
+                const str34 = (obj2[code.origin] ?? null).unit ?? "elementos";
+                combined2 = "Demasiado grande: se esperaba que " + str28 + " tuviera " + str27 + str1 + " " + str34;
               } else {
-                let str40 = str39;
-                if (str39 == null) {
-                  str40 = "waarde";
+                let str29 = str28;
+                if (str28 == null) {
+                  str29 = "valor";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str41 = code.maximum;
-                combined2 = "Te " + str35 + ": verwacht dat " + str40 + " " + str34 + str41.toString() + " is";
+                const str30 = code.maximum;
+                combined2 = "Demasiado grande: se esperaba que " + str29 + " fuera " + str27 + str30.toString();
               }
               return combined2;
             }
             case "too_small":
             {
               let combined3;
-              let minimum;
-              let origin;
-              let str19 = ">";
+              let str20 = ">";
               if (code.inclusive) {
-                str19 = ">=";
+                str20 = ">=";
               }
-              let str20 = "vroeg";
-              if ("date" !== code.origin) {
-                let str22 = "klein";
-                if ("string" === code.origin) {
-                  str22 = "kort";
-                }
-                str20 = str22;
-              }
-              ({ origin, minimum } = code);
-              const str64 = minimum.toString();
+              const origin3 = closure_2[code.origin] ?? code.origin;
+              const str21 = code.minimum;
+              const str48 = str21.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "Te " + str20 + ": verwacht dat " + origin + " " + str19 + str64 + " " + tmp15.unit + " " + tmp15.verb;
+                combined3 = "Demasiado peque\u00F1o: se esperaba que " + origin3 + " tuviera " + str20 + str48 + " " + tmp21.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "Te " + str20 + ": verwacht dat " + origin + " " + str19 + str64 + " is";
+                combined3 = "Demasiado peque\u00F1o: se esperaba que " + origin3 + " fuera " + str20 + str48;
               }
               return combined3;
             }
@@ -197,61 +180,67 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Ongeldige tekst: moet met \"" + code.prefix + "\" beginnen";
+                combined4 = "Cadena inv\u00E1lida: debe comenzar con \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Ongeldige tekst: moet op \"" + code.suffix + "\" eindigen";
+                combined4 = "Cadena inv\u00E1lida: debe terminar en \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Ongeldige tekst: moet \"" + code.includes + "\" bevatten";
+                combined4 = "Cadena inv\u00E1lida: debe incluir \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Ongeldige tekst: moet overeenkomen met patroon " + code.pattern;
+                combined4 = "Cadena inv\u00E1lida: debe coincidir con el patr\u00F3n " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Ongeldig: " + format;
+                combined4 = "Inv\u00E1lido " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Ongeldig getal: moet een veelvoud van " + code.divisor + " zijn";
+              return "N\u00FAmero inv\u00E1lido: debe ser m\u00FAltiplo de " + code.divisor;
             }
             case "unrecognized_keys":
             {
               let str3 = "";
+              let str4 = "";
+              if (code.keys.length > 1) {
+                str4 = "s";
+              }
               if (code.keys.length > 1) {
                 str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Onbekende key" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Llave" + str4 + " desconocida" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
+              const origin2 = closure_2[code.origin] ?? code.origin;
               const _HermesInternal2 = HermesInternal;
-              return "Ongeldige key in " + code.origin;
+              return "Llave inv\u00E1lida en " + origin2;
             }
             case "invalid_union":
             {
-              return "Ongeldige invoer";
+              return "Entrada inv\u00E1lida";
             }
             case "invalid_element":
             {
+              const origin = closure_2[code.origin] ?? code.origin;
               const _HermesInternal = HermesInternal;
-              return "Ongeldige waarde in " + code.origin;
+              return "Valor inv\u00E1lido en " + origin;
             }
             default:
             {
-              return "Ongeldige invoer";
+              return "Entrada inv\u00E1lida";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "tekens", verb: "heeft" }, file: { unit: "bytes", verb: "heeft" }, array: { unit: "elementen", verb: "heeft" }, set: { unit: "elementen", verb: "heeft" } };
-    closure_1 = { regex: "invoer", email: "emailadres", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum en tijd", date: "ISO datum", time: "ISO tijd", duration: "ISO duur", ipv4: "IPv4-adres", ipv6: "IPv6-adres", cidrv4: "IPv4-bereik", cidrv6: "IPv6-bereik", base64: "base64-gecodeerde tekst", base64url: "base64 URL-gecodeerde tekst", json_string: "JSON string", e164: "E.164-nummer", jwt: "JWT", template_literal: "invoer" };
-    let closure_2 = { nan: "NaN", number: "getal" };
+    const obj2 = { string: { unit: "caracteres", verb: "tener" }, file: { unit: "bytes", verb: "tener" }, array: { unit: "elementos", verb: "tener" }, set: { unit: "elementos", verb: "tener" } };
+    closure_1 = { regex: "entrada", email: "direcci\u00F3n de correo electr\u00F3nico", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "fecha y hora ISO", date: "fecha ISO", time: "hora ISO", duration: "duraci\u00F3n ISO", ipv4: "direcci\u00F3n IPv4", ipv6: "direcci\u00F3n IPv6", cidrv4: "rango IPv4", cidrv6: "rango IPv6", base64: "cadena codificada en base64", base64url: "URL codificada en base64", json_string: "cadena JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
+    let closure_2 = { nan: "NaN", string: "texto", number: "n\u00FAmero", boolean: "booleano", array: "arreglo", object: "objeto", set: "conjunto", file: "archivo", date: "fecha", bigint: "n\u00FAmero grande", symbol: "s\u00EDmbolo", undefined: "indefinido", null: "nulo", function: "funci\u00F3n", map: "mapa", record: "registro", tuple: "tupla", enum: "enumeraci\u00F3n", union: "uni\u00F3n", literal: "literal", promise: "promesa", void: "vac\u00EDo", never: "nunca", unknown: "desconocido", any: "cualquiera" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

@@ -1,9 +1,9 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17353
+// Function ID: 17354
 // Name: useTotalPossibleBoostCount
 // Dependencies: [19, 5104, 1087, 558, 576, 2]
 
-// Module 17349 (useTotalPossibleBoostCount)
+// Module 17353 (useTotalPossibleBoostCount)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;

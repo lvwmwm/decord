@@ -1,10 +1,10 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16062
+// Function ID: 16063
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 6228, 21, 558, 576, 16059, 9484, 9504, 16060, 6233, 7681, 7672, 6235, 13893, 13876, 2]
+// Dependencies: [19, 6228, 21, 558, 576, 16063, 9484, 9504, 16064, 6233, 7681, 7672, 6235, 13897, 13880, 2]
 // Exports: canUseBountyVideoEndAppStoreOverlay
 
-// Module 16058 (useBountyVideoEndAppStoreOverlay)
+// Module 16062 (useBountyVideoEndAppStoreOverlay)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import QuestConstants from "QuestConstants" /* 6228 */;
@@ -12,7 +12,7 @@ import QuestContent from "QuestContent" /* 6233 */;
 import AnalyticsActions from "AnalyticsActions" /* 7672 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9484 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16059 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16063 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

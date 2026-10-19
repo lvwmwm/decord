@@ -1,9 +1,9 @@
-// Module ID: 18261
-// Function ID: 18262
+// Module ID: 18265
+// Function ID: 18266
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 2068, 1392, 21, 5191, 587, 558, 576, 12913, 5509, 504, 6439, 5128, 1128, 5187, 2]
+// Dependencies: [32, 19, 502, 2068, 1392, 21, 5191, 587, 558, 576, 10679, 5509, 504, 6439, 5128, 1128, 5187, 2]
 
-// Module 18261 (VoicePanelCTACardCallerDisconnected)
+// Module 18265 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 587 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -53,7 +53,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp6;
   const obj = channelId(576);
   const cResult = obj.c(35);
-  channelId = react.useContext(first(12913)).channelId;
+  channelId = react.useContext(first(10679)).channelId;
   const tmp5 = closure_10();
   if (cResult[0] !== channelId) {
     const channel = ChannelStore.getChannel(channelId);
@@ -288,7 +288,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f133833 = () => {
+  const f133930 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -320,9 +320,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[12]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f133833, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f133930, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f133833, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f133930, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[13]);

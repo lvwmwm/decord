@@ -1,30 +1,37 @@
 // Module ID: 15312
 // Function ID: 15313
-// Dependencies: [15223, 15313]
-// Exports: getSupportedUnits
+// Dependencies: [15227, 15313]
+// Exports: getSupportedNumberingSystems
 
 // Module 15312
 const require = globalThis.__r;
 let _require;
 
 
-export const getSupportedUnits = function getSupportedUnits(locale) {
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
   _require = locale;
-  const units = require("module_15313").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
       let str = arg1;
       if (undefined === arg1) {
         str = "en";
       }
       try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
       } catch (err) {
-        return false;
       }
     }
-    return isSupported(item, locale);
+    return isSupportedNumberingSystem(item, locale);
   });
 };

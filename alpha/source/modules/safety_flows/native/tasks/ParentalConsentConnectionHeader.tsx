@@ -1,9 +1,9 @@
-// Module ID: 19095
-// Function ID: 19096
+// Module ID: 19099
+// Function ID: 19100
 // Name: ParentalConsentConnectionHeader
 // Dependencies: [19, 17, 1392, 21, 5191, 6536, 587, 558, 576, 1633, 504, 6186, 1128, 2885, 5187, 2]
 
-// Module 19095 (ParentalConsentConnectionHeader)
+// Module 19099 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

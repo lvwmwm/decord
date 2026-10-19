@@ -1,9 +1,9 @@
-// Module ID: 18681
-// Function ID: 18682
+// Module ID: 18685
+// Function ID: 18686
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 2086, 1392, 1087, 21, 558, 576, 504, 1128, 6457, 18682, 18683, 18684, 18685, 6542, 7237, 2]
+// Dependencies: [19, 2086, 1392, 1087, 21, 558, 576, 504, 1128, 6457, 18686, 18687, 18688, 18689, 6542, 7237, 2]
 
-// Module 18681 (GuildSettingsRoleSubscriptionsSection)
+// Module 18685 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
@@ -11,10 +11,10 @@ import GuildRecord from "GuildRecord" /* 2086 */;
 import TableRow5 from "TableRow" /* 6457 */;
 import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7237 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18682 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18683 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18684 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18685 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18686 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18687 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18688 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18689 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -84,7 +84,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: pushScreen(18682) };
+    const obj2 = { source: pushScreen(18686) };
     const Icon = tmp(6457).TableRow.Icon;
     const tmp15 = closure_7(Icon, obj2);
     cResult[5] = tmp15;
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
     tmp19 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { source: pushScreen(18683) };
+    const obj4 = { source: pushScreen(18687) };
     const Icon2 = tmp(6457).TableRow.Icon;
     const tmp24 = closure_7(Icon2, obj4);
     cResult[9] = tmp24;
@@ -161,7 +161,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
       }
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj6 = { source: pushScreen(18685) };
+        const obj6 = { source: pushScreen(18689) };
         const Icon4 = tmp(6457).TableRow.Icon;
         const tmp37 = closure_7(Icon4, obj6);
         cResult[17] = tmp37;
@@ -220,7 +220,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasCrea
     };
     const TableRow = tmp(6457).TableRow;
     intl4 = tmp(1128).intl;
-    obj10 = { source: pushScreen(18684) };
+    obj10 = { source: pushScreen(18688) };
     Icon3 = tmp(6457).TableRow.Icon;
     tmp29 = closure_7(TableRow, obj9, "guild-role-subscriptions-payments");
   }

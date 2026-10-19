@@ -1,14 +1,14 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12795
+// Function ID: 12796
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5538, 1128, 3141, 5187, 9693, 7155, 12737, 12779, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5538, 1128, 3141, 5187, 9693, 7155, 12754, 12796, 2]
 
-// Module 12778 (TraitOptionDetails)
+// Module 12795 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3141 from "module_3141" /* 3141 */;
-import RarityBadgeDefault from "RarityBadge" /* 12779 */;
+import RarityBadgeDefault from "RarityBadge" /* 12796 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -78,7 +78,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
       }
     }
     if (cResult[2] !== asset) {
-      const tmpResult = tmp(12737);
+      const tmpResult = tmp(12754);
       const assetDescription = tmpResult.getAssetDescription(asset);
       cResult[2] = asset;
       cResult[3] = assetDescription;

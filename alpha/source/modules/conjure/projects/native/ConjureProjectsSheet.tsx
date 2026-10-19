@@ -1,9 +1,9 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13930
+// Function ID: 13931
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 5034, 6293, 7198, 21, 5191, 587, 5155, 5073, 13287, 558, 576, 12279, 11663, 6457, 6542, 6436, 504, 5187, 1128, 3883, 5477, 5479, 10983, 1633, 5496, 7117, 7175, 6584, 2]
+// Dependencies: [19, 17, 5034, 6293, 7198, 21, 5191, 587, 5155, 5073, 13295, 558, 576, 12297, 11682, 6457, 6542, 6436, 504, 5187, 1128, 3883, 5477, 5479, 10999, 1633, 5496, 7117, 7175, 6584, 2]
 
-// Module 13926 (ConjureProjectsSheet)
+// Module 13930 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import BottomSheetModal from "BottomSheetModal" /* 6584 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import ActionSheet2 from "ActionSheet" /* 7175 */;
-import openConjureProject from "openConjureProject" /* 13287 */;
+import openConjureProject from "openConjureProject" /* 13295 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
@@ -57,7 +57,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     fallbackGuildId = entry.fallbackGuildId;
   }
   if (cResult[0] !== entry) {
-    const tmpResult = tmp(12279);
+    const tmpResult = tmp(12297);
     const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
@@ -69,7 +69,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   ({ serverName, label } = tmp4);
   if (cResult[2] !== entry.project) {
     let obj2 = { project: entry.project, size: "list" };
-    const tmp9 = closure_6(fallbackGuildId(11663), obj2);
+    const tmp9 = closure_6(fallbackGuildId(11682), obj2);
     cResult[2] = entry.project;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -167,14 +167,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let obj = entry(12279);
+  let obj = entry(12297);
   const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
   let obj2 = {
     label: entry.name,
     subLabel: serverName,
     accessibilityLabel: label,
-    icon: closure_6(fallbackGuildId(11663), obj3),
+    icon: closure_6(fallbackGuildId(11682), obj3),
     trailing: tmp2Result,
     disabled: null == fallbackGuildId,
     onPress() {
@@ -456,9 +456,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(46);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(12279);
+  const obj2 = stateFromStores1(12297);
   const conjureProjects = obj2.useConjureProjects(ConjureProjectsSheet_str);
-  const obj3 = stateFromStores1(12279);
+  const obj3 = stateFromStores1(12297);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(ConjureProjectsSheet_str);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];

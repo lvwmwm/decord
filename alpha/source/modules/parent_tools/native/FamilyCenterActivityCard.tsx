@@ -1,9 +1,9 @@
-// Module ID: 15931
-// Function ID: 15932
+// Module ID: 15935
+// Function ID: 15936
 // Name: FamilyCenterActivityCard
-// Dependencies: [32, 19, 17, 7526, 1087, 21, 5191, 587, 8006, 8005, 8008, 12653, 1128, 2589, 1202, 15932, 5187, 8946, 6190, 15933, 2002, 14463, 558, 576, 15934, 15935, 12650, 5155, 4903, 5057, 8829, 1267, 11392, 15936, 15937, 15938, 15941, 15948, 2]
+// Dependencies: [32, 19, 17, 7526, 1087, 21, 5191, 587, 8006, 8005, 8008, 12670, 1128, 2589, 1202, 15936, 5187, 8946, 6190, 15937, 2002, 14467, 558, 576, 15938, 15939, 12667, 5155, 4903, 5057, 8829, 1267, 11410, 15940, 15941, 15942, 15945, 15952, 2]
 
-// Module 15931 (FamilyCenterActivityCard)
+// Module 15935 (FamilyCenterActivityCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,15 +18,15 @@ import useUserLinks from "useUserLinks" /* 8005 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 12653 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14463 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15932 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 15934 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 15935 */;
-import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 15937 */;
-import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 15938 */;
-import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 15941 */;
-import FamilyCenterSettingsControlsDefault from "FamilyCenterSettingsControls" /* 15948 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 12670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14467 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15936 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 15938 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 15939 */;
+import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 15941 */;
+import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 15942 */;
+import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 15945 */;
+import FamilyCenterSettingsControlsDefault from "FamilyCenterSettingsControls" /* 15952 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
@@ -866,7 +866,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCente
     items2[2] = tmp11Result;
     items1[1] = closure_10(View, obj5);
     items[1] = closure_10(View, obj4);
-    const obj8 = { style: tmp.settingsControls, children: closure_9(tmp14(15948), {}) };
+    const obj8 = { style: tmp.settingsControls, children: closure_9(tmp14(15952), {}) };
     items[2] = closure_9(View, obj8);
     return closure_10(View, obj2);
   }

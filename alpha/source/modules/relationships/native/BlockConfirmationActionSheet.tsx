@@ -1,9 +1,9 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 10740
+// Function ID: 10741
 // Name: BlockConfirmationActionSheet
-// Dependencies: [32, 19, 17, 2068, 4855, 1392, 7294, 10723, 1087, 21, 5191, 587, 8583, 1128, 5147, 558, 576, 6542, 6457, 1202, 1633, 7130, 7155, 504, 8579, 7118, 1267, 6584, 8598, 5187, 5509, 6928, 5155, 10725, 2002, 1275, 5479, 7293, 7301, 2131, 4901, 2]
+// Dependencies: [32, 19, 17, 2068, 4855, 1392, 7294, 10739, 1087, 21, 5191, 587, 8583, 1128, 5147, 558, 576, 6542, 6457, 1202, 1633, 7130, 7155, 504, 8579, 7118, 1267, 6584, 8598, 5187, 5509, 6928, 5155, 10741, 2002, 1275, 5479, 7293, 7301, 2131, 4901, 2]
 
-// Module 10724 (BlockConfirmationActionSheet)
+// Module 10740 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -25,7 +25,7 @@ import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10723 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10739 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -299,7 +299,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(map1.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(10725, dependencyMap.paths);
+              const tmp3 = asyncRequire(10741, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: react, onIgnore: _slicedToArray, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore, obj3, "replaceTopSheet");
             },

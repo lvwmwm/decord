@@ -1,9 +1,9 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 14977
+// Function ID: 14978
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9036, 2090, 8970, 1098, 21, 5191, 587, 8957, 4904, 1128, 558, 576, 8965, 504, 8987, 14974, 2459, 7175, 5477, 5187, 7016, 14977, 2]
+// Dependencies: [32, 19, 17, 9036, 2090, 8970, 1098, 21, 5191, 587, 8957, 4904, 1128, 558, 576, 8965, 504, 8987, 14978, 2459, 7175, 5477, 5187, 7016, 14981, 2]
 
-// Module 14973 (GameOrganizationInviteActionSheet)
+// Module 14977 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import InstantInviteUtils from "InstantInviteUtils" /* 8957 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8965 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8987 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9036 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 14974 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 14978 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -555,7 +555,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     tmp15Result = tmp15(closure_15, {});
   } else {
     const obj9 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp15Result = tmp15(tmp13(14977), obj9);
+    tmp15Result = tmp15(tmp13(14981), obj9);
   }
   return closure_10(ActionSheet, obj3);
 });

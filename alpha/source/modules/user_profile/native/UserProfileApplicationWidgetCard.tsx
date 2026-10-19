@@ -1,11 +1,11 @@
-// Module ID: 11716
-// Function ID: 11717
+// Module ID: 11735
+// Function ID: 11736
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2132, 502, 21, 5191, 587, 11717, 11718, 11809, 11810, 11811, 11812, 558, 576, 504, 11719, 7134, 7285, 9150, 9151, 11813, 7131, 11816, 11817, 11689, 5128, 8731, 11821, 11826, 5187, 1128, 7180, 6462, 11616, 2]
+// Dependencies: [19, 17, 2132, 502, 21, 5191, 587, 11736, 11737, 11828, 11829, 11830, 11831, 558, 576, 504, 11738, 7134, 7285, 9150, 9151, 11832, 7131, 11835, 11836, 11708, 5128, 8731, 11840, 11845, 5187, 1128, 7180, 6462, 11632, 2]
 
-// Module 11716 (UserProfileApplicationWidgetCard)
+// Module 11735 (UserProfileApplicationWidgetCard)
 import nativeDefault from "native" /* 587 */;
-import _mod11719 from "module_11719" /* 11719 */;
+import _mod11738 from "module_11738" /* 11738 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
@@ -354,7 +354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const items1 = [stateFromStores];
   const memo = token.useMemo(() => {
-    const obj = _mod11719;
+    const obj = _mod11738;
     return obj.createCompactNumberFormat(stateFromStores);
   }, items1);
   const items2 = [AuthenticationStore];
@@ -383,17 +383,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   dependencyMap = tmp11Result;
   let tmp14 = rendererProps;
   if (rendererProps == null) {
-    tmp14 = tmp10(11813)(userId, widget.applicationId);
+    tmp14 = tmp10(11832)(userId, widget.applicationId);
   }
   ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = tmp14);
   const tmp15 = stateFromStores(7131)(getOrFetchApplication);
   token = tmp15.token;
   ({ fetched, canStartAuthorization } = tmp15);
-  const tmp16 = stateFromStores(11816)(widget.applicationId, stateFromStores1);
-  ({ pending, refresh } = stateFromStores(11817)(widget.applicationId));
-  stateFromStores(11817)(widget.applicationId);
-  const tmp18 = surfaceConfigs[userId(undefined, 11689).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp19 = surfaceConfigs[userId(undefined, 11689).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  const tmp16 = stateFromStores(11835)(widget.applicationId, stateFromStores1);
+  ({ pending, refresh } = stateFromStores(11836)(widget.applicationId));
+  stateFromStores(11836)(widget.applicationId);
+  const tmp18 = surfaceConfigs[userId(undefined, 11708).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp19 = surfaceConfigs[userId(undefined, 11708).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   let tmp20 = null;
   if (null != iconURL) {
     const obj5 = { source: obj6, style: tmp.appIcon };
@@ -431,9 +431,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
         const obj7 = { style: cardStyle, title: tmp2Result5.getWidgetTitle(widget), titleLeadingIcon: tmp20, children: closure_9(closure_5, obj8) };
         const tmp10Result = stateFromStores(7180);
         obj8 = { style: tmp.stillSyncing, children: items3 };
-        tmp2Result5 = userId(11821);
+        tmp2Result5 = userId(11840);
         const obj9 = { size: "xs", color: stateFromStores(587).colors.TEXT_MUTED };
-        const HourglassIcon = tmp2(11826).HourglassIcon;
+        const HourglassIcon = tmp2(11845).HourglassIcon;
         items3 = [closure_8(HourglassIcon, obj9), ];
         const obj10 = { variant: "text-sm/medium", color: "text-muted", children: intl.string(userId(1128).t.z5K4Uv) };
         const Text = tmp2(5187).Text;
@@ -443,7 +443,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       }
     }
   }
-  const tmp2Result6 = userId(11719);
+  const tmp2Result6 = userId(11738);
   const result = tmp2Result6.bindResolveFieldValue(resolutionContext);
   const obj11 = {
     style: tmp.header,
@@ -460,10 +460,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
     children: items4
   };
   items4 = [tmp20, ];
-  tmp2Result7 = userId(11821);
+  tmp2Result7 = userId(11840);
   const obj12 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: tmp2Result8.getWidgetTitle(widget) };
   const Text2 = tmp2(5187).Text;
-  tmp2Result8 = userId(11821);
+  tmp2Result8 = userId(11840);
   items4[1] = closure_8(Text2, obj12);
   const tmp33 = closure_9(closure_4, obj11);
   if (tmp18 != null) {
@@ -471,14 +471,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   }
   let tmp32Result = null;
   if (null != tmp18) {
-    if (userId(11717).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+    if (userId(11736).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
       const obj13 = { header: tmp33, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-      tmp32Result = tmp32(tmp10(11718), obj13);
+      tmp32Result = tmp32(tmp10(11737), obj13);
     } else {
       tmp32Result = null;
-      if (userId(11717).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+      if (userId(11736).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
         const obj14 = { header: tmp33, topConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
-        tmp32Result = tmp32(tmp10(11809), obj14);
+        tmp32Result = tmp32(tmp10(11828), obj14);
       }
     }
   }
@@ -487,17 +487,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   }
   let tmp32Result2 = null;
   if (null != tmp19) {
-    if (userId(11717).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+    if (userId(11736).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
       const obj15 = { bottomConfig: tmp19, resolveFieldValue: result, numberFormat: memo };
-      tmp32Result2 = tmp32(tmp10(11810), obj15);
-    } else if (userId(11717).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      tmp32Result2 = tmp32(tmp10(11829), obj15);
+    } else if (userId(11736).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
       const obj16 = { bottomConfig: tmp19, resolveFieldValue: result };
-      tmp32Result2 = tmp32(tmp10(11811), obj16);
+      tmp32Result2 = tmp32(tmp10(11830), obj16);
     } else {
       tmp32Result2 = null;
-      if (userId(11717).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+      if (userId(11736).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
         const obj17 = { bottomConfig: tmp19, resolveFieldValue: result };
-        tmp32Result2 = tmp32(tmp10(11812), obj17);
+        tmp32Result2 = tmp32(tmp10(11831), obj17);
       }
     }
   }
@@ -519,7 +519,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
           const PressableOpacity = tmp2(6462).PressableOpacity;
           intl2 = tmp2(1128).intl;
           const obj21 = { size: "xs", color: stateFromStores(587).colors.TEXT_MUTED };
-          const RetryIcon = tmp2(11616).RetryIcon;
+          const RetryIcon = tmp2(11632).RetryIcon;
           items6 = [closure_8(RetryIcon, obj21), ];
           const obj22 = { variant: "text-xs/medium", color: "text-muted", children: intl3.string(userId(1128).t.wzzjk9) };
           const Text3 = tmp2(5187).Text;

@@ -1,18 +1,18 @@
-// Module ID: 13796
-// Function ID: 13797
+// Module ID: 13800
+// Function ID: 13801
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 11149, 2065, 21, 5191, 558, 576, 11147, 11154, 11150, 2052, 7376, 1128, 1202, 10640, 9327, 587, 11146, 9742, 2]
+// Dependencies: [32, 19, 17, 11168, 2065, 21, 5191, 558, 576, 11166, 11173, 11169, 2052, 7376, 1128, 1202, 10640, 9327, 587, 11165, 9742, 2]
 
-// Module 13796 (GroupDMNitroCapCoachmark)
+// Module 13800 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10640 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11146 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11147 */;
-import GroupDMConstants from "GroupDMConstants" /* 11149 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11165 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11166 */;
+import GroupDMConstants from "GroupDMConstants" /* 11168 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   const _location = location.location;
   const tmp4 = closure_9();
   react.useRef(null);
-  const obj2 = channelId(11147);
+  const obj2 = channelId(11166);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   dependencyMap = tmp7;
   if (cResult[0] === groupDMNitroAudience) {
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
     if (cResult[1] === _location) {
       tmp8 = cResult[2];
     }
-    const tmp10 = _location(11154)(tmp8);
+    const tmp10 = _location(11173)(tmp8);
     _slicedToArray = tmp10;
     const tmp9 = _location;
     if (cResult[3] !== _location) {
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       tmp11 = cResult[4];
     }
     const tmp12 = "staff" === groupDMNitroAudience;
-    const tmp9Result = tmp9(11150);
+    const tmp9Result = tmp9(11169);
     const enabled = tmp9Result.useConfig(tmp11).enabled;
     if (cResult[5] === enabled) {
       let tmp30;
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
           }
         }
         const string = tmp27.string;
-        const tmpResult2 = tmp(11147);
+        const tmpResult2 = tmp(11166);
         cResult[13] = groupDMNitroAudience;
         cResult[14] = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
         const stringResult1 = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
@@ -221,7 +221,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
     }
     items = [];
   }
-  const obj6 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(11147).GroupDMNitroAcquisitionStrategy.MARKETING };
+  const obj6 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(11166).GroupDMNitroAcquisitionStrategy.MARKETING };
   cResult[0] = groupDMNitroAudience;
   cResult[1] = _location;
   cResult[2] = obj6;
@@ -240,15 +240,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   let obj = react;
   const ref = react.useRef(null);
   const tmp3 = channelId;
-  let obj2 = channelId(11147);
+  let obj2 = channelId(11166);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   const tmp6 = "entitled" === groupDMNitroAudience;
   react = tmp6;
-  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(11147).GroupDMNitroAcquisitionStrategy.MARKETING };
-  let tmp7 = _location(11154);
+  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(11166).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let tmp7 = _location(11173);
   const tmp7Result = tmp7(obj3);
   let closure_5 = tmp7Result;
-  const obj4 = _location(11150);
+  const obj4 = _location(11169);
   const enabled = obj4.useConfig({ location: _location }).enabled;
   channelId(7376);
   if (enabled) {

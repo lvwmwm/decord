@@ -1,13 +1,13 @@
-// Module ID: 11049
-// Function ID: 11050
+// Module ID: 11068
+// Function ID: 11069
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 584, 11042, 10982, 2]
+// Dependencies: [32, 5, 584, 11004, 10998, 2]
 // Exports: acceptRemix, sendRetryRemix
 
-// Module 11049 (conjureRemixConnection)
+// Module 11068 (conjureRemixConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10982 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11042 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,6 @@ let c4, c5, c7;
 
 let obj = function _acceptRemix() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let closure_2;
     let obj9;
     let closure_0 = arg0;
     let closure_1 = value;
@@ -34,7 +33,7 @@ let obj = function _acceptRemix() {
       }
     } else {
       try {
-        let tmp;
+        let closure_2;
         let ticket;
         let uRLSearchParams;
         let closure_5;
@@ -51,16 +50,14 @@ let obj = function _acceptRemix() {
           } else {
             closure_0 = undefined;
             closure_1 = undefined;
-            tmp = undefined;
+            closure_2 = undefined;
             ticket = undefined;
             uRLSearchParams = undefined;
             closure_5 = undefined;
             closure_6 = undefined;
-            const items = [, ];
+            const items = [closure_0, ];
             const obj12 = ConjureWorkerTickets;
-            items[0] = obj12.mintRemixTicket(closure_0);
-            const obj13 = ConjureWorkerTickets;
-            items[1] = obj13.mintWorkerTicket(closure_1);
+            items[1] = obj12.mintWorkerTicket(closure_1);
             c4 = 1;
             c5 = 1;
             const obj4 = { value: all(items), done: false };
@@ -78,10 +75,10 @@ let obj = function _acceptRemix() {
             } else {
               closure_0 = value;
               closure_1 = closure_131_3(closure_0, 2);
-              tmp = closure_1[0];
+              closure_2 = closure_1[0];
               ticket = closure_1[1];
               const _URLSearchParams = URLSearchParams;
-              const obj6 = { ticket: tmp.ticket };
+              const obj6 = { ticket: closure_2.ticket };
               const self3 = this;
               const self4 = this;
               uRLSearchParams = new URLSearchParams(obj6);
@@ -144,7 +141,7 @@ let obj = function _acceptRemix() {
           const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj9) };
           const _JSON = JSON;
           obj9 = { dest_ticket: ticket.ticket };
-          const combined = "" + tmp.baseUrl + "/agent/fork?" + uRLSearchParams;
+          const combined = "" + closure_2.baseUrl + "/agent/fork?" + uRLSearchParams;
           const response = fetch(combined, request);
           c4 = 2;
           c5 = 1;
@@ -265,7 +262,7 @@ export const remixFrameHandlers = obj;
 export const acceptRemix = function acceptRemix() {
   return obj(...arguments);
 };
-export const sendRetryRemix = function sendRetryRemix(arg0) {
+export const sendRetryRemix = function sendRetryRemix(projectId) {
   obj = conjureProjectSockets;
-  return obj.sendOnConjureSocket(arg0, "retry remix", (sendRetryRemix) => sendRetryRemix.sendRetryRemix());
+  return obj.sendOnConjureSocket(projectId, "retry remix", (sendRetryRemix) => sendRetryRemix.sendRetryRemix());
 };

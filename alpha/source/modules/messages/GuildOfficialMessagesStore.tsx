@@ -1,9 +1,9 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14798
+// Function ID: 14799
 // Name: GuildOfficialMessagesStore
 // Dependencies: [2068, 2128, 2090, 4855, 1392, 1087, 5534, 1405, 504, 584, 2]
 
-// Module 14794 (GuildOfficialMessagesStore)
+// Module 14798 (GuildOfficialMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

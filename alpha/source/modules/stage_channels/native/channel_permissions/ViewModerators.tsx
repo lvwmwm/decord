@@ -1,10 +1,10 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 17972
+// Function ID: 17973
 // Name: ViewModerators
-// Dependencies: [5, 19, 2128, 2122, 2090, 1087, 7756, 21, 1267, 5155, 17969, 2002, 558, 576, 1505, 504, 6149, 8877, 2076, 2000, 5400, 1128, 7290, 8878, 4903, 1202, 8894, 5477, 6542, 6457, 10920, 2]
+// Dependencies: [5, 19, 2128, 2122, 2090, 1087, 7756, 21, 1267, 5155, 17973, 2002, 558, 576, 1505, 504, 6149, 8877, 2076, 2000, 5400, 1128, 7290, 8878, 4903, 1202, 8894, 5477, 6542, 6457, 10936, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 17968 (ViewModerators)
+// Module 17972 (ViewModerators)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
               const TableRowGroup = tmp(6542).TableRowGroup;
               intl = tmp(1128).intl;
               obj6 = {
-                icon: closure_10(tmp(10920).CirclePlusIcon, {}),
+                icon: closure_10(tmp(10936).CirclePlusIcon, {}),
                 label: intl2.string(tmp(1128).t.n3bcy8),
                 onPress() {
                               if (null != channel) {
@@ -281,7 +281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
                                 const _HermesInternal = HermesInternal;
                                 ActionSheetActionCreatorsDefault;
                                 const obj2 = { channel, canSkip: false };
-                                const tmp8 = asyncRequire(17969, dependencyMap.paths);
+                                const tmp8 = asyncRequire(17973, dependencyMap.paths);
                                 openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                               }
                             },
@@ -506,7 +506,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerato
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(17969, dependencyMap.paths);
+                    const tmp8 = asyncRequire(17973, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -555,7 +555,7 @@ function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(17969, dependencyMap.paths);
+  const tmp3 = asyncRequire(17973, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16807
+// Function ID: 16808
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1505, 1633, 16641, 6542, 6457, 15595, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1505, 1633, 16645, 6542, 6457, 15599, 2]
 
-// Module 16803 (DevToolsPerformanceTestingScreen)
+// Module 16807 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15595 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15599 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -46,7 +46,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
-    const entries = Object.entries(tmp(16641).PerformanceTestingScreens);
+    const entries = Object.entries(tmp(16645).PerformanceTestingScreens);
     cResult[2] = entries;
     arr = entries;
   } else {

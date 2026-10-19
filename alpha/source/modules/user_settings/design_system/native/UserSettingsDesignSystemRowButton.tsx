@@ -1,9 +1,9 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16841
+// Function ID: 16842
 // Name: UserSettingsDesignSystemRowButton
 // Dependencies: [19, 17, 21, 558, 576, 8855, 5477, 587, 5187, 8857, 7369, 2]
 
-// Module 16837 (UserSettingsDesignSystemRowButton)
+// Module 16841 (UserSettingsDesignSystemRowButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;

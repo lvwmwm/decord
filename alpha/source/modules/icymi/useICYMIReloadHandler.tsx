@@ -1,9 +1,9 @@
-// Module ID: 17629
-// Function ID: 17630
+// Module ID: 17633
+// Function ID: 17634
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 576, 15424, 8745, 2]
+// Dependencies: [5, 19, 558, 576, 15428, 8745, 2]
 
-// Module 17629 (useICYMIReloadHandler)
+// Module 17633 (useICYMIReloadHandler)
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14180
+// Function ID: 14181
 // Name: UserProfilePrivacyNotice
 // Dependencies: [32, 19, 17, 1087, 2065, 21, 5191, 587, 1211, 1128, 558, 576, 8004, 2044, 2052, 7376, 5187, 7370, 5145, 6485, 6462, 2]
 
-// Module 14176 (UserProfilePrivacyNotice)
+// Module 14180 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

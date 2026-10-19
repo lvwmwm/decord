@@ -1,9 +1,9 @@
-// Module ID: 15565
-// Function ID: 15566
+// Module ID: 15569
+// Function ID: 15570
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6292, 2072, 502, 2068, 5209, 2119, 1392, 15495, 2067, 1087, 15494, 1297, 4834, 11246, 5396, 1267, 11021, 11237, 11238, 5205, 1281, 2034, 9554, 2004, 1123, 584, 10789, 6299, 11027, 11033, 6357, 11228, 1128, 11298, 11230, 11300, 11857, 5542, 7155, 2]
+// Dependencies: [5, 6292, 2072, 502, 2068, 5209, 2119, 1392, 15499, 2067, 1087, 15498, 1297, 4834, 11265, 5396, 1267, 11042, 11256, 11257, 5205, 1281, 2034, 9554, 2004, 1123, 584, 10805, 6299, 11048, 11054, 6357, 11247, 1128, 11316, 11249, 11318, 11876, 5542, 7155, 2]
 
-// Module 15565 (EmbeddedActivitiesManager)
+// Module 15569 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -17,11 +17,11 @@ import InteractionTypes from "InteractionTypes" /* 5542 */;
 import getURLForApplication from "getURLForApplication" /* 6299 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 9554 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11021 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11237 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 11238 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 11246 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15494 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11042 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11256 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 11257 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 11265 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15498 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -29,7 +29,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import UserStore from "UserStore" /* 1392 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15495 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15499 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import Constants from "Constants" /* 1087 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;

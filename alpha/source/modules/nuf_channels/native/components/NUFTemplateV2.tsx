@@ -1,9 +1,9 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14376
+// Function ID: 14377
 // Name: NUFTemplateV2
 // Dependencies: [19, 17, 21, 5191, 558, 576, 5187, 5479, 2]
 
-// Module 14372 (NUFTemplateV2)
+// Module 14376 (NUFTemplateV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5187 */;

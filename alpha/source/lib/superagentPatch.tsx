@@ -1,19 +1,19 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18407
+// Function ID: 18408
 // Name: superagentPatch
-// Dependencies: [5, 5112, 1087, 1298, 18404, 1386, 1455, 584, 1297, 502, 1372, 2132, 1392, 1267, 1384, 18405, 1129, 18406, 18407, 7, 1257, 18410, 2002, 5983, 16730, 7297, 6379, 18420, 6159, 18421, 1483, 2]
+// Dependencies: [5, 5112, 1087, 1298, 18408, 1386, 1455, 584, 1297, 502, 1372, 2132, 1392, 1267, 1384, 18409, 1129, 18410, 18411, 7, 1257, 18414, 2002, 5983, 16734, 7297, 6379, 18424, 6159, 18425, 1483, 2]
 
-// Module 18403 (superagentPatch)
+// Module 18407 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import RequestDefault from "Request" /* 1298 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7297 */;
-import IdGenerator from "IdGenerator" /* 18404 */;
-import getTimeZoneDefault from "getTimeZone" /* 18406 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 18407 */;
-import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 18420 */;
+import IdGenerator from "IdGenerator" /* 18408 */;
+import getTimeZoneDefault from "getTimeZone" /* 18410 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 18411 */;
+import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 18424 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ExperimentStore from "ExperimentStore" /* 5112 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
@@ -296,7 +296,7 @@ let obj3 = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [asyncRequire(18410, dependencyMap.paths), asyncRequire(5983, dependencyMap.paths)];
+        const items = [asyncRequire(18414, dependencyMap.paths), asyncRequire(5983, dependencyMap.paths)];
         const allResult = all(items);
         const nextPromise = allResult.then((result) => {
           const iter = result[Symbol.iterator]();
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(16730, dependencyMap.paths);
+          const promise4 = asyncRequire(16734, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });
@@ -377,7 +377,7 @@ let obj3 = {
     } else {
       const body5 = statusCode.body;
       let code2;
-      const isLimitedAccessErrorCode2 = tmp7(18420).isLimitedAccessErrorCode;
+      const isLimitedAccessErrorCode2 = tmp7(18424).isLimitedAccessErrorCode;
       const statusCode2 = statusCode.statusCode;
       GuildLimitedAccessUtils;
       if (body5 != null) {
@@ -406,7 +406,7 @@ let obj3 = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          const promise = asyncRequire(18421, dependencyMap.paths);
+          const promise = asyncRequire(18425, dependencyMap.paths);
           promise.then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });

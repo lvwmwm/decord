@@ -1,9 +1,9 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12548
+// Function ID: 12549
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 2068, 1087, 5185, 21, 5191, 587, 7445, 7635, 1267, 7155, 558, 576, 6942, 504, 7051, 1128, 12532, 10033, 5479, 6190, 6478, 6447, 6965, 2]
+// Dependencies: [32, 5, 19, 17, 2068, 1087, 5185, 21, 5191, 587, 7445, 7635, 1267, 7155, 558, 576, 6942, 504, 7051, 1128, 12549, 10033, 5479, 6190, 6478, 6447, 6965, 2]
 
-// Module 12531 (GiftIntentGifModal)
+// Module 12548 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
   tmp5 = fn2;
 }) : (function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f113392 = () => {
+  const f113520 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -489,8 +489,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f113392) };
-  require("useInitialValue")(f113392);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f113520) };
+  require("useInitialValue")(f113520);
   return closure_10(require("Navigator").Navigator, obj);
 });
 const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");

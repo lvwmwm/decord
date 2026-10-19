@@ -1,13 +1,13 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12311
+// Function ID: 12312
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10963, 21, 5191, 587, 558, 576, 504, 12189, 9863, 5187, 1128, 3883, 12186, 6459, 2]
+// Dependencies: [19, 17, 10979, 21, 5191, 587, 558, 576, 504, 12207, 9863, 5187, 1128, 3883, 12204, 6459, 2]
 
-// Module 12294 (ConjureThinkingOverlay)
+// Module 12311 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10963 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -83,8 +83,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     tmp12 = cResult[5];
   }
   let str2;
-  const useConjureRevealedText = projectId(12189).useConjureRevealedText;
-  projectId(12189);
+  const useConjureRevealedText = projectId(12207).useConjureRevealedText;
+  projectId(12207);
   if (stateFromStores != null) {
     str2 = stateFromStores.text;
   }
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12186), obj11)
+      children: closure_7(ref(12204), obj11)
     };
     obj11 = { source: text };
     tmp29 = closure_7(closure_4, obj10);
@@ -215,8 +215,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12189).useConjureRevealedText;
-  projectId(12189);
+  const useConjureRevealedText = projectId(12207).useConjureRevealedText;
+  projectId(12207);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12186), obj9)
+      children: closure_7(ref(12204), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);

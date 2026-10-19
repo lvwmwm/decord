@@ -1,9 +1,9 @@
-// Module ID: 19104
-// Function ID: 19105
+// Module ID: 19108
+// Function ID: 19109
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4901, 1128, 2885, 5187, 5477, 7782, 19088, 12659, 12709, 7972, 7781, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4901, 1128, 2885, 5187, 5477, 7782, 19092, 12676, 12726, 7972, 7781, 2]
 
-// Module 19104 (AppStoreParentalRevocationScreen)
+// Module 19108 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,9 +15,9 @@ import Stack_Stack from "Stack/Stack" /* 5477 */;
 import ModalScreen2 from "ModalScreen" /* 7781 */;
 import ModalContent2 from "ModalContent" /* 7782 */;
 import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 7972 */;
-import ModalFooter2 from "ModalFooter" /* 12659 */;
-import ModalActionButton2 from "ModalActionButton" /* 12709 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19088 */;
+import ModalFooter2 from "ModalFooter" /* 12676 */;
+import ModalActionButton2 from "ModalActionButton" /* 12726 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -169,9 +169,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { children: items };
                 items = [tmp43, ];
-                const ModalFooter = tmp(12659).ModalFooter;
+                const ModalFooter = tmp(12676).ModalFooter;
                 const obj7 = { variant: "primary", text: intl4.string(_modDef2885["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj8), iconPosition: "end", onPress: first };
-                const ModalActionButton = tmp(12709).ModalActionButton;
+                const ModalActionButton = tmp(12726).ModalActionButton;
                 intl4 = tmp(1128).intl;
                 obj8 = { color: nativeDefault.colors.WHITE };
                 LinkExternalSmallIcon = tmp(7972).LinkExternalSmallIcon;

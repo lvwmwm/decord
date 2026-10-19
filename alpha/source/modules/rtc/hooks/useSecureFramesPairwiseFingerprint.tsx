@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = t8();
-              promise.then(() => { /* body not rendered: F156227 */ });
+              promise.then(() => { /* body not rendered: F156332 */ });
             }, 0);
           } else {
             tmp4 = closure_10;

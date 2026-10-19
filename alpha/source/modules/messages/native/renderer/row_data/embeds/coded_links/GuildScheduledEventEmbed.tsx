@@ -1,10 +1,10 @@
-// Module ID: 14297
-// Function ID: 14298
+// Module ID: 14301
+// Function ID: 14302
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 6332, 2086, 2068, 2090, 4855, 1392, 9907, 2074, 7689, 5179, 8156, 8158, 8807, 8802, 8794, 9048, 1128, 8161, 8998, 8017, 587, 14298, 8797, 5521, 8921, 8791, 14299, 8792, 2082, 8798, 8799, 2]
+// Dependencies: [5, 32, 17, 6332, 2086, 2068, 2090, 4855, 1392, 9907, 2074, 7689, 5179, 8156, 8158, 8807, 8802, 8794, 9048, 1128, 8161, 8998, 8017, 587, 14302, 8797, 5521, 8921, 8791, 14303, 8792, 2082, 8798, 8799, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 14297 (GuildScheduledEventEmbed)
+// Module 14301 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1128 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
@@ -24,7 +24,7 @@ import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8807 */;
 import GuildEventUtils from "GuildEventUtils" /* 8921 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9048 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 9907 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14299 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6332 */;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14298));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14302));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;

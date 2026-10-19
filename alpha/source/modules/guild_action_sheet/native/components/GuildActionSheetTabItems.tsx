@@ -1,9 +1,9 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 14994
+// Function ID: 14995
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 2068, 4843, 2119, 1087, 21, 558, 576, 14972, 8299, 504, 8958, 8955, 1128, 9709, 587, 5206, 5155, 6215, 7840, 10640, 8161, 7086, 7369, 8910, 6214, 2]
+// Dependencies: [19, 2068, 4843, 2119, 1087, 21, 558, 576, 14976, 8299, 504, 8958, 8955, 1128, 9709, 587, 5206, 5155, 6215, 7840, 10640, 8161, 7086, 7369, 8910, 6214, 2]
 
-// Module 14990 (GuildActionSheetTabItems)
+// Module 14994 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
 import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6215 */;
@@ -45,7 +45,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let obj = guild(576);
   const cResult = obj.c(32);
   guild = guild.guild;
-  let obj2 = guild(14972);
+  let obj2 = guild(14976);
   const canAccessSettings = obj2.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(8299)(guild.id).total;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -629,7 +629,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(14972);
+  let obj = guild(14976);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
   const total = stateFromStores(8299)(guild.id).total;

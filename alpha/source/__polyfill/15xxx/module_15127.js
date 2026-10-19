@@ -1,41 +1,65 @@
 // Module ID: 15127
 // Function ID: 15128
-// Dependencies: [15122, 15093]
+// Dependencies: [41, 42]
 
 // Module 15127
-import _mod15093 from "module_15093" /* 15093 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
+let map;
 
-
-export default function(arr, arg1, arg2) {
-  let closure_0;
-  _require = arg2;
-  dependencyMap = null;
-  let closure_2 = null;
-  let regex = null;
-  try {
-    let tmp = arg1;
-    let self = this;
-    let self2 = this;
-    const tmp6 = new require("module_15122")(arg1, arg2);
-    let tmp7 = tmp6;
-    regex = tmp6;
-    const item = arr.forEach(function(item) {
-      if (regex.test(item)) {
-        const tmp = c1 && 1 !== closure_2.compare(item);
-        if (!tmp) {
-          c1 = item;
-          const self = this;
-          const self2 = this;
-          closure_2 = new _mod15093(c1, closure_0);
-          const tmp7 = new _mod15093(c1, closure_0);
-        }
-      }
-    });
-    return dependencyMap;
-  } catch (err) {
-    return null;
+class LRUCache {
+  constructor() {
+    _classCallCheck(this, LRUCache);
+    this.max = 1000;
+    this.map = new Map();
+    new Map();
+  }
+}
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    const self = this;
+    map = this.map;
+    const value = map.get(arg0);
+    let tmp2;
+    if (undefined !== value) {
+      const map2 = self.map;
+      map2.delete(arg0);
+      const map3 = self.map;
+      const result = map3.set(arg0, value);
+      tmp2 = value;
+    }
+    return tmp2;
   }
 };
+const items = [
+  entry,
+  {
+    key: "delete",
+    value: function _delete(arg0) {
+      map = this.map;
+      return map.delete(arg0);
+    }
+  },
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      const self = this;
+      if (!this.delete(arg0)) {
+        if (undefined !== arg1) {
+          if (self.map.size >= self.max) {
+            map = self.map;
+            const iter = map.keys();
+            self.delete(iter.next().value);
+          }
+          const map2 = self.map;
+          const result = map2.set(arg0, arg1);
+        }
+      }
+      return self;
+    }
+  }
+];
+
+export default _createClass(LRUCache, items);

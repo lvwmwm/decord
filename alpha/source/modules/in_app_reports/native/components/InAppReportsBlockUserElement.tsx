@@ -1,9 +1,9 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14353
+// Function ID: 14354
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2068, 4855, 1087, 21, 558, 576, 504, 5509, 5206, 7293, 7301, 1128, 9671, 14347, 2]
+// Dependencies: [19, 2068, 4855, 1087, 21, 558, 576, 504, 5509, 5206, 7293, 7301, 1128, 9671, 14351, 2]
 
-// Module 14349 (InAppReportsBlockUserElement)
+// Module 14353 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;

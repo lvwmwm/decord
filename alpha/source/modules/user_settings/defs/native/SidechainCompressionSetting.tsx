@@ -1,9 +1,9 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16316
+// Function ID: 16317
 // Name: SidechainCompressionSetting
-// Dependencies: [2014, 8260, 5216, 558, 576, 504, 11065, 1128, 5343, 2]
+// Dependencies: [2014, 8260, 5216, 558, 576, 504, 11084, 1128, 5343, 2]
 
-// Module 16312 (SidechainCompressionSetting)
+// Module 16316 (SidechainCompressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import Constants from "Constants" /* 5216 */;
@@ -11,7 +11,7 @@ import AudioActionCreatorsDefault from "AudioActionCreators" /* 5343 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

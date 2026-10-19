@@ -1,16 +1,16 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13029
+// Function ID: 13030
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 12981, 12982, 1087, 569, 13020, 13004, 584, 1297, 2]
+// Dependencies: [5, 12989, 12990, 1087, 569, 13028, 13012, 584, 1297, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 13021 (SuggestedSearchActionCreators)
+// Module 13029 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 13020 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 13028 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12981 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12982 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12989 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12990 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _performSuggestedSearchesFetch() {
       const guildId = smartSearchQuery.guildId;
       const channelIds = smartSearchQuery.channelIds;
       const obj12 = closure_133_1(closure_133_2[6]);
-      parentSuggestedSearch = obj12.getParentSuggestedSearch();
+      parentSuggestedSearch = obj12.getParentSuggestedSearch(smartSearchQuery.queryText);
       const obj6 = { type: "SUGGESTED_SEARCHES_FETCH_START", scope: smartSearchQuery };
       const obj13 = closure_133_1(closure_133_2[7]);
       obj13.dispatch(obj6);

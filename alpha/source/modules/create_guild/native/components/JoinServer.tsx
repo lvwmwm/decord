@@ -1,9 +1,9 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13424
+// Function ID: 13425
 // Name: components/JoinServer
-// Dependencies: [32, 19, 6939, 21, 5191, 6536, 558, 576, 1505, 6478, 13348, 8770, 1128, 6938, 7092, 2]
+// Dependencies: [32, 19, 6939, 21, 5191, 6536, 558, 576, 1505, 6478, 13353, 8770, 1128, 6938, 7092, 2]
 
-// Module 13419 (components/JoinServer)
+// Module 13424 (components/JoinServer)
 import Fragment from "Fragment" /* 21 */;
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;

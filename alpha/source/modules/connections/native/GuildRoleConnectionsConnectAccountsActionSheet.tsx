@@ -1,9 +1,9 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11132
+// Function ID: 11133
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7074, 2132, 1406, 502, 2068, 6017, 2128, 4845, 7153, 1087, 21, 5191, 587, 558, 576, 5127, 6019, 1417, 5065, 1202, 8431, 5521, 5187, 1128, 7152, 11114, 7131, 9039, 11115, 11116, 12, 4913, 11117, 38, 4904, 5145, 11120, 5496, 7151, 8855, 504, 7154, 6377, 1267, 5206, 5155, 7370, 11121, 9507, 584, 6190, 11003, 2002, 9536, 11126, 7118, 11127, 7176, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 7074, 2132, 1406, 502, 2068, 6017, 2128, 4845, 7153, 1087, 21, 5191, 587, 558, 576, 5127, 6019, 1417, 5065, 1202, 8431, 5521, 5187, 1128, 7152, 11133, 7131, 9039, 11134, 11135, 12, 4913, 11136, 38, 4904, 5145, 11139, 5496, 7151, 8855, 504, 7154, 6377, 1267, 5206, 5155, 7370, 11140, 9507, 584, 6190, 11024, 2002, 9536, 11145, 7118, 11146, 7176, 5479, 2]
 
-// Module 11113 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11132 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -29,7 +29,7 @@ import ConnectionsUtils from "ConnectionsUtils" /* 7152 */;
 import getConnectionsRolesDefault from "getConnectionsRoles" /* 7154 */;
 import openUserSettings from "openUserSettings" /* 7370 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11126 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -539,7 +539,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                 if (someResult) {
                   tmp6 = closure_14;
                   accounts = closure_14.getAccounts();
-                  someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                  someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                 }
                 connection_type = null;
                 tmp7 = onAttempted;
@@ -607,7 +607,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -676,7 +676,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -843,7 +843,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                     if (someResult) {
                                                       tmp6 = closure_14;
                                                       accounts = closure_14.getAccounts();
-                                                      someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                                      someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                                     }
                                                     connection_type = null;
                                                     tmp7 = onAttempted;
@@ -913,7 +913,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                 if (someResult) {
                                                   tmp6 = closure_14;
                                                   accounts = closure_14.getAccounts();
-                                                  someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                                  someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                                 }
                                                 connection_type = null;
                                                 tmp7 = onAttempted;
@@ -990,7 +990,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                             if (someResult) {
                                               tmp6 = closure_14;
                                               accounts = closure_14.getAccounts();
-                                              someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                              someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                             }
                                             connection_type = null;
                                             tmp7 = onAttempted;
@@ -1053,7 +1053,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                         if (someResult) {
                                           tmp6 = closure_14;
                                           accounts = closure_14.getAccounts();
-                                          someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                          someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                         }
                                         connection_type = null;
                                         tmp7 = onAttempted;
@@ -1108,7 +1108,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                               }
                               let tmp41 = null;
                               if (null != obj4) {
-                                const obj13 = { style: tmp4.appIcon, user: obj4, size: tmp(tmp2[23]).AvatarSizes.XSMALL, guildId: "Reflect" };
+                                const obj13 = { style: tmp4.appIcon, user: obj4, size: tmp(tmp2[23]).AvatarSizes.XSMALL, guildId: "a" };
                                 const Avatar = tmp(tmp2[23]).Avatar;
                                 tmp41 = closure_29(Avatar, obj13);
                               }
@@ -1126,7 +1126,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                       if (someResult) {
                                         tmp6 = closure_14;
                                         accounts = closure_14.getAccounts();
-                                        someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                        someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                       }
                                       connection_type = null;
                                       tmp7 = onAttempted;
@@ -1187,7 +1187,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                   if (someResult) {
                                     tmp6 = closure_14;
                                     accounts = closure_14.getAccounts();
-                                    someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                                    someResult = accounts.some(() => { /* body not rendered: F145121 */ });
                                   }
                                   connection_type = null;
                                   tmp7 = onAttempted;
@@ -1258,7 +1258,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
               if (someResult) {
                 tmp6 = closure_14;
                 accounts = closure_14.getAccounts();
-                someResult = accounts.some(() => { /* body not rendered: F145014 */ });
+                someResult = accounts.some(() => { /* body not rendered: F145121 */ });
               }
               connection_type = null;
               tmp7 = onAttempted;
@@ -1492,7 +1492,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
     items2[2] = prop1;
     let tmp15Result = null;
     if (null != memo) {
-      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[23]).AvatarSizes.XSMALL, guildId: "Reflect" };
+      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[23]).AvatarSizes.XSMALL, guildId: "a" };
       const Avatar = tmp2(tmp3[23]).Avatar;
       tmp15Result = tmp15(Avatar, obj8);
     }
@@ -1955,7 +1955,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       items1[1] = tmp22Result6;
       let tmp22Result7 = null;
       if (null != tmp11) {
-        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[23]).AvatarSizes.XSMALL, guildId: "Reflect" };
+        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[23]).AvatarSizes.XSMALL, guildId: "a" };
         const Avatar = tmp13(tmp6[23]).Avatar;
         tmp22Result7 = tmp22(Avatar, obj13);
       }
@@ -2503,7 +2503,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f107870 = () => {
+    const f107990 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -2610,8 +2610,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f107870);
-    _slicedToArray(react.useState(f107870), 2);
+    [tmp27, c16] = react.useState(f107990);
+    _slicedToArray(react.useState(f107990), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[19])();

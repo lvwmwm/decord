@@ -1,20 +1,20 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17003
+// Function ID: 17004
 // Name: ParentalControlsFriendRequestsEveryoneSetting
-// Dependencies: [19, 7525, 8260, 1087, 558, 576, 8007, 15860, 6961, 11065, 1128, 2]
+// Dependencies: [19, 7525, 8260, 1087, 558, 576, 8007, 15864, 6961, 11084, 1128, 2]
 
-// Module 16999 (ParentalControlsFriendRequestsEveryoneSetting)
+// Module 17003 (ParentalControlsFriendRequestsEveryoneSetting)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6961 */;
 import useSelectedTeen from "useSelectedTeen" /* 8007 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15860 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15864 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendR
   const cResult = obj.c(2);
   const obj2 = useSelectedTeen;
   const selectedTeenId = obj2.useSelectedTeenId();
-  const ParentalControlledFriendSourceFlags = tmp(15860).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = tmp(15864).ParentalControlledFriendSourceFlags;
   const controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
   if (cResult[0] !== controlledSetting) {
     const tmpResult = UserSettingsUtils;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendR
   let controlledSetting;
   let obj = controlledSetting(8007);
   const selectedTeenId = obj.useSelectedTeenId();
-  const ParentalControlledFriendSourceFlags = controlledSetting(15860).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(15864).ParentalControlledFriendSourceFlags;
   controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
   const items = [controlledSetting];
   return react.useMemo(() => {

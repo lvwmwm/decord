@@ -19,7 +19,7 @@ let _null, closure_11, obj, stats;
 
 let c9;
 let metroImportAll;
-const f92790 = (item) => {
+const f92839 = (item) => {
   closure_1_12[item] = {};
 };
 function updateStats(arr, arg1, timestamp) {
@@ -163,7 +163,7 @@ let c16 = false;
 let c17 = null;
 const map1 = new Map();
 let values = Object.values(MediaEngineContextTypes);
-let item = values.forEach(f92790);
+let item = values.forEach(f92839);
 const Store = get_initializedDefault.Store;
 class RTCDebugStore extends Store {
   initialize() {
@@ -364,7 +364,7 @@ let obj2 = {
     if (null != channelId.channelId) {
       const _Object = Object;
       const values = Object.values(MediaEngineContextTypes);
-      const item = values.forEach(f92790);
+      const item = values.forEach(f92839);
       map.clear();
       map1.clear();
     }

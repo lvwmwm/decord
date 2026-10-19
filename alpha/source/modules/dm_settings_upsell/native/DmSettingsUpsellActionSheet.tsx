@@ -1,17 +1,17 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 18478
+// Function ID: 18479
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 2090, 21, 5191, 587, 558, 576, 504, 18471, 18475, 5155, 14918, 6961, 2044, 4904, 1128, 5128, 10709, 5187, 6436, 5479, 7175, 2]
+// Dependencies: [19, 17, 2090, 21, 5191, 587, 558, 576, 504, 18475, 18479, 5155, 14922, 6961, 2044, 4904, 1128, 5128, 10725, 5187, 6436, 5479, 7175, 2]
 
-// Module 18474 (DmSettingsUpsellActionSheet)
+// Module 18478 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettings from "UserSettings" /* 2044 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6961 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14918 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 18471 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 18475 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14922 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 18475 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 18479 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
       }
       const container = tmp4.container;
       if (cResult[13] !== tmp4.headerImage) {
-        let obj2 = { source: stateFromStores(10709), style: tmp4.headerImage };
+        let obj2 = { source: stateFromStores(10725), style: tmp4.headerImage };
         const tmp18 = stateFromStores(5128);
         const tmp19 = closure_6(tmp18, obj2);
         cResult[13] = tmp4.headerImage;
@@ -398,7 +398,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
     const ActionSheet = tmp2(7175).ActionSheet;
-    let obj4 = { source: stateFromStores(10709), style: tmp.headerImage };
+    let obj4 = { source: stateFromStores(10725), style: tmp.headerImage };
     const tmp11 = stateFromStores(5128);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1128).t.w2BvnL) };

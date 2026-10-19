@@ -1,9 +1,9 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13485
+// Function ID: 13486
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 2068, 7640, 21, 5191, 587, 558, 576, 7130, 504, 13479, 6484, 6942, 13481, 5202, 5155, 10769, 2002, 1128, 6462, 6485, 5187, 3819, 7051, 7256, 6542, 6457, 7172, 12832, 5479, 2]
+// Dependencies: [32, 19, 17, 2068, 7640, 21, 5191, 587, 558, 576, 7130, 504, 13484, 6484, 6942, 13486, 5202, 5155, 10785, 2002, 1128, 6462, 6485, 5187, 3819, 7051, 7256, 6542, 6457, 7172, 12849, 5479, 2]
 
-// Module 13480 (CreateGameInvitePostModal)
+// Module 13485 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(13481);
+  let obj = parentChannel(13486);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -124,7 +124,7 @@ function CreateGameInvitePostContent(parentChannel) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { parentChannel, onSave, title: intl.string(intl10.t.HPu3kq), tags };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(10769, dependencyMap.paths);
+    const tmp2 = asyncRequire(10785, dependencyMap.paths);
     intl = intl10.intl;
     openLazy(tmp2, "ForumPostTagsActionSheet", obj);
   }, items2);
@@ -188,7 +188,7 @@ function CreateGameInvitePostContent(parentChannel) {
   items8 = [tmp.footer, { marginBottom: insets.bottom }];
   let tmp15Result4 = null;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12832), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12849), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }

@@ -1,12 +1,12 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19160
+// Function ID: 19161
 // Name: ToggleSelfMute
-// Dependencies: [2068, 19152, 7333, 11472, 2]
+// Dependencies: [2068, 19156, 7333, 11490, 2]
 
-// Module 19156 (ToggleSelfMute)
+// Module 19160 (ToggleSelfMute)
 import useMuteStates from "useMuteStates" /* 7333 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11472 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19152 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11490 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19156 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 

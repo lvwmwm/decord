@@ -1,12 +1,12 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14051
+// Function ID: 14052
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 2067, 14048, 558, 576, 504, 7134, 2]
+// Dependencies: [32, 2067, 14052, 558, 576, 504, 7134, 2]
 
-// Module 14047 (useEntryActivityAndApplication)
+// Module 14051 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 14048 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 14052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

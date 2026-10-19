@@ -1,9 +1,9 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18341
+// Function ID: 18342
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2067, 6292, 1209, 11213, 6153, 502, 2014, 5212, 1087, 18338, 5216, 21, 5400, 18339, 2002, 1128, 558, 576, 11478, 6542, 11390, 504, 4904, 13955, 13956, 6465, 6457, 12913, 18297, 8506, 8471, 18325, 13209, 11422, 1267, 11504, 1384, 11451, 587, 5343, 9074, 18233, 7172, 9058, 9065, 6466, 18193, 18194, 10639, 11470, 5205, 11168, 11421, 18340, 9711, 11025, 10708, 18341, 584, 14361, 11441, 7368, 18232, 2]
+// Dependencies: [32, 19, 2067, 6292, 1209, 11232, 6153, 502, 2014, 5212, 1087, 18342, 5216, 21, 5400, 18343, 2002, 1128, 558, 576, 11496, 6542, 11408, 504, 4904, 13959, 13960, 6465, 6457, 10679, 18301, 8506, 8471, 18329, 13217, 11440, 1267, 11522, 1384, 11469, 587, 5343, 9074, 18237, 7172, 9058, 9065, 6466, 18197, 18198, 10639, 11488, 5205, 11187, 11439, 18344, 9711, 11046, 10724, 18345, 584, 14365, 11459, 7368, 18236, 2]
 
-// Module 18337 (VoicePanelVoiceControlsButtons)
+// Module 18341 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -24,27 +24,27 @@ import CallsUtils from "CallsUtils" /* 9058 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 9065 */;
 import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9074 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10639 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10708 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11390 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11441 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11451 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11504 */;
-import SoundboardIcon from "SoundboardIcon" /* 13209 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14361 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 18193 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 18194 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18232 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 18233 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 18325 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18338 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 18340 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 18341 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10724 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11408 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11459 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11469 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11522 */;
+import SoundboardIcon from "SoundboardIcon" /* 13217 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14365 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 18197 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 18198 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18236 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 18237 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18329 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 18342 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 18344 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 18345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11213 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11232 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -59,7 +59,7 @@ let _require, currentEmbeddedActivity, dependencyMap, importDefault, lastActiveS
 let closure_14;
 let map1;
 let tmp5;
-const AssetRegistryDefault2 = tmp5(11470);
+const AssetRegistryDefault2 = tmp5(11488);
 function importer() {
   let onConfirm;
   let type;
@@ -125,7 +125,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoles
   const cResult = obj.c(4);
   channel = channel.channel;
   const connected = channel.connected;
-  const arr = connected(11478)();
+  const arr = connected(11496)();
   let tmp4 = null;
   if (!channel.isGuildStageVoice()) {
     if (cResult[0] === channel) {
@@ -153,7 +153,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoles
 }) : (function GameConsoles(channel) {
   channel = channel.channel;
   const connected = channel.connected;
-  const arr = connected(11478)();
+  const arr = connected(11496)();
   let tmp2 = null;
   if (!channel.isGuildStageVoice()) {
     let tmp3 = null;
@@ -415,7 +415,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
   let obj = openTab(576);
   const cResult = obj.c(7);
   openTab = openTab.openTab;
-  dismissPanel = react.useContext(dismissPanel(12913)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(10679)).dismissPanel;
   if (cResult[0] === dismissPanel) {
     let tmp4;
     let tmp7;
@@ -462,7 +462,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
 }) : (function ActivitiesButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(12913)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(10679)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -484,7 +484,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
   let obj = openTab(576);
   const cResult = obj.c(7);
   openTab = openTab.openTab;
-  dismissPanel = react.useContext(dismissPanel(12913)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(10679)).dismissPanel;
   if (cResult[0] === dismissPanel) {
     let tmp4;
     let tmp7;
@@ -531,7 +531,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
 }) : (function ChatButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(12913)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(10679)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -605,7 +605,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenshareB
   let text;
   let obj = onPress(576);
   const cResult = obj.c(10);
-  const tmp4 = isActive(11422)(channel.channel);
+  const tmp4 = isActive(11440)(channel.channel);
   onPress = tmp4.onPress;
   ({ imgSource, text, isActive } = tmp4);
   if (cResult[0] === isActive) {
@@ -656,7 +656,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenshareB
   let isFeatureEnabled;
   let text;
   let isActive;
-  const tmp = isActive(11422)(channel.channel);
+  const tmp = isActive(11440)(channel.channel);
   const onPress = tmp.onPress;
   isActive = tmp.isActive;
   const items = [isActive, onPress];
@@ -1053,7 +1053,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideNonVide
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const TableRowIcon = tmp(6465).TableRowIcon;
-      const tmp13 = <TableRowIcon IconComponent={channelId(11168).VideoIcon} source={stateFromStores(11421)} />;
+      const tmp13 = <TableRowIcon IconComponent={channelId(11187).VideoIcon} source={stateFromStores(11439)} />;
       const intl = tmp(1128).intl;
       const stringResult = intl.string(channelId(1128).t.ZMTRyc);
       cResult[6] = tmp13;
@@ -1110,7 +1110,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideNonVide
     const result = obj.toggleVoiceParticipantsHidden(channelId, !stateFromStores);
   }, items1);
   const TableSwitchRow = channelId(7172).TableSwitchRow;
-  ({ IconComponent: channelId(11168).VideoIcon, source: stateFromStores(11421) });
+  ({ IconComponent: channelId(11187).VideoIcon, source: stateFromStores(11439) });
   const TableRowIcon = channelId(6465).TableRowIcon;
   const intl = channelId(1128).intl;
   const intl2 = channelId(1128).intl;
@@ -1194,7 +1194,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
       const tmp2 = _require;
       if (!tmp2) {
         const VIDEO = constants.VIDEO;
-        const f153058 = () => f153058(!VIDEO);
+        const f153163 = () => f153163(!VIDEO);
         const obj2 = { importer, isDismissable: false };
         const obj = actions_AlertActionCreatorsDefault;
         obj.openLazy(obj2);
@@ -1231,7 +1231,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
         const tmp2 = closure_0;
         if (!tmp2) {
           const VIDEO = constants.VIDEO;
-          const f153059 = () => f153059(!VIDEO);
+          const f153164 = () => f153164(!VIDEO);
           let obj = actions_AlertActionCreatorsDefault;
           const obj2 = { importer, isDismissable: false };
           obj.openLazy(obj2);

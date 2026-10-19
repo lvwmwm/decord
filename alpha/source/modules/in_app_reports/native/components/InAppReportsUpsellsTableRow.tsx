@@ -1,9 +1,9 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14351
+// Function ID: 14352
 // Name: InAppReportsUpsellsTableRow
 // Dependencies: [19, 21, 558, 576, 6457, 2]
 
-// Module 14347 (InAppReportsUpsellsTableRow)
+// Module 14351 (InAppReportsUpsellsTableRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

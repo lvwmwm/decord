@@ -1,9 +1,9 @@
-// Module ID: 13960
-// Function ID: 13961
+// Module ID: 13964
+// Function ID: 13965
 // Name: VoicePanelSpoilerAlert
 // Dependencies: [19, 21, 558, 576, 5405, 6377, 6145, 1128, 5405, 2]
 
-// Module 13960 (VoicePanelSpoilerAlert)
+// Module 13964 (VoicePanelSpoilerAlert)
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5405 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;

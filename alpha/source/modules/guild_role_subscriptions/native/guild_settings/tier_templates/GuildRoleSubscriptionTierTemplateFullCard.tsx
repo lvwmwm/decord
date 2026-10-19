@@ -1,17 +1,17 @@
-// Module ID: 19002
-// Function ID: 19003
+// Module ID: 19006
+// Function ID: 19007
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 17256, 5187, 16291, 6940, 1633, 19003, 1128, 19004, 19005, 9859, 6584, 7118, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 17260, 5187, 16295, 6940, 1633, 19007, 1128, 19008, 19009, 9859, 6584, 7118, 2]
 
-// Module 19002 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 19006 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16291 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17256 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19005 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16295 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17260 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19009 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;

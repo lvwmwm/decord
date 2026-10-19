@@ -1,9 +1,9 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17268
+// Function ID: 17269
 // Name: useFavoritesGuildHideAction
 // Dependencies: [19, 5034, 1087, 558, 576, 10624, 2093, 1114, 1128, 3465, 2]
 
-// Module 17264 (useFavoritesGuildHideAction)
+// Module 17268 (useFavoritesGuildHideAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;

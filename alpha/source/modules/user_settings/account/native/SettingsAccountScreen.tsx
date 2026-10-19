@@ -1,9 +1,9 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15724
+// Function ID: 15725
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 15721, 8260, 1087, 21, 5191, 587, 558, 576, 1505, 5128, 15722, 5187, 1128, 5479, 6459, 504, 15723, 6910, 6195, 6542, 15724, 11065, 15725, 15728, 12605, 5496, 2]
+// Dependencies: [32, 19, 17, 15725, 8260, 1087, 21, 5191, 587, 558, 576, 1505, 5128, 15726, 5187, 1128, 5479, 6459, 504, 15727, 6910, 6195, 6542, 15728, 11084, 15729, 15732, 12622, 5496, 2]
 
-// Module 15720 (SettingsAccountScreen)
+// Module 15724 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,14 +15,14 @@ import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6195 */;
 import TableRowGroup from "TableRowGroup" /* 6542 */;
 import MFAUtils from "MFAUtils" /* 6910 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12605 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15724 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15725 */;
-import SettingLayoutDefault from "SettingLayout" /* 15728 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12622 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15728 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15729 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15721 */;
+import WebAuthnStore from "WebAuthnStore" /* 15725 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -125,7 +125,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
   }
   if (cResult[4] !== tmp4.upsellImagePasswordless) {
     const obj4 = { style: tmp8, children: closure_10(tmp13, obj5) };
-    obj5 = { source: navigation(15722), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
+    obj5 = { source: navigation(15726), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
     tmp13 = FastImageDefault;
     const tmp14 = closure_10(View, obj4);
     cResult[4] = tmp4.upsellImagePasswordless;
@@ -323,7 +323,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   const tmp7 = _slicedToArray(tmpResult.useStateFromStoresObject(tmp4, tmp5), 2);
   _require = tmp9;
   const first = tmp7[0];
-  const tmpResult2 = tmp(15723);
+  const tmpResult2 = tmp(15727);
   const isUserVerified = tmpResult2.useIsUserVerified();
   const tmp11 = tmp(6910).hasWebAuthn && isUserVerified && tmp7[1] && !first;
   if (cResult[2] !== tmp7[1]) {
@@ -387,7 +387,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(15723);
+  const obj2 = first(15727);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {
@@ -463,7 +463,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAccountSettings(), ListHeaderComponent: SettingsAccountHeaderDefault };
-    const createList = tmp(11065).createList;
+    const createList = tmp(11084).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

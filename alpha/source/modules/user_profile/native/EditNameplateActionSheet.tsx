@@ -1,9 +1,9 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15662
+// Function ID: 15663
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 7546, 1993, 2128, 1087, 21, 5191, 587, 558, 576, 8568, 7130, 7155, 1267, 8562, 8569, 1128, 5187, 8570, 7118, 10394, 504, 15659, 8564, 15660, 14258, 14259, 8571, 9312, 5491, 10938, 2]
+// Dependencies: [32, 19, 17, 7546, 1993, 2128, 1087, 21, 5191, 587, 558, 576, 8568, 7130, 7155, 1267, 8562, 8569, 1128, 5187, 8570, 7118, 10394, 504, 15663, 8564, 15664, 14262, 14263, 8571, 9312, 5491, 10954, 2]
 
-// Module 15658 (EditNameplateActionSheet)
+// Module 15662 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,8 +14,8 @@ import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators
 import useShopProductItems from "useShopProductItems" /* 8569 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
 import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9312 */;
-import NameplatePreview from "NameplatePreview" /* 10938 */;
-import EditNameplateSection from "EditNameplateSection" /* 15660 */;
+import NameplatePreview from "NameplatePreview" /* 10954 */;
+import EditNameplateSection from "EditNameplateSection" /* 15664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
@@ -863,7 +863,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const tmp2Result = purchase(5491);
   items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
   items1[2] = closure_10(tmp2Result, obj4);
-  items3 = [closure_11(View, obj3), closure_10(tmp10(10938).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  items3 = [closure_11(View, obj3), closure_10(tmp10(10954).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
   const obj5 = { style: tmp.nameplateGradientContainer, children: items4 };
   items4 = [closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 100 }), ];
   const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };

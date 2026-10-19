@@ -1,7 +1,7 @@
 // Module ID: 5218
 // Function ID: 5219
 // Name: RTCConnection
-// Dependencies: [5, 5219, 5229, 5230, 5231, 502, 2068, 2090, 2014, 5209, 5234, 5310, 1392, 1087, 5311, 5312, 5216, 569, 5220, 5239, 1257, 3, 5313, 5314, 1281, 5316, 5322, 5319, 5323, 1483, 1384, 4826, 1386, 584, 2013, 1405, 5325, 14, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 1267, 5186, 5333, 5283, 5334, 5336, 4864, 5337, 5339, 5340, 5341, 5236, 5342, 5374, 5387, 5383, 5388, 5389, 5390, 5391, 5393, 5396, 5398, 5399, 1128, 551, 14841, 1266, 2]
+// Dependencies: [5, 5219, 5229, 5230, 5231, 502, 2068, 2090, 2014, 5209, 5234, 5310, 1392, 1087, 5311, 5312, 5216, 569, 5220, 5239, 1257, 3, 5313, 5314, 1281, 5316, 5322, 5319, 5323, 1483, 1384, 4826, 1386, 584, 2013, 1405, 5325, 14, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 1267, 5186, 5333, 5283, 5334, 5336, 4864, 5337, 5339, 5340, 5341, 5236, 5342, 5374, 5387, 5383, 5388, 5389, 5390, 5391, 5393, 5396, 5398, 5399, 1128, 551, 14845, 1266, 2]
 
 // Module 5218 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -40,7 +40,7 @@ import VideoHealthManager from "VideoHealthManager" /* 5393 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5396 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5398 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 14841 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 14845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5219 */;
 import MediaEngineStatsStore_mod from "MediaEngineStatsStore" /* 5229 */;

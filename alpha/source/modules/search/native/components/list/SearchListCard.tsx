@@ -1,9 +1,9 @@
-// Module ID: 17802
-// Function ID: 17803
+// Module ID: 17806
+// Function ID: 17807
 // Name: SearchListCard
 // Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 5057, 5187, 5521, 10592, 8488, 1128, 8431, 6459, 2]
 
-// Module 17802 (SearchListCard)
+// Module 17806 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

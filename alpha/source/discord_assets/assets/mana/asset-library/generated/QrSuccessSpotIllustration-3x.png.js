@@ -1,8 +1,8 @@
-// Module ID: 14877
-// Function ID: 14878
+// Module ID: 14881
+// Function ID: 14882
 // Dependencies: [2]
 
-// Module 14877
+// Module 14881
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QrSuccessSpotIllustration-3x.png.js");

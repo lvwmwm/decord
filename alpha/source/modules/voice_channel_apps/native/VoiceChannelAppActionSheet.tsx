@@ -1,9 +1,9 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 17965
+// Function ID: 17966
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1128, 3981, 558, 576, 17959, 5155, 7117, 6539, 8885, 7175, 6540, 2]
+// Dependencies: [19, 21, 1128, 3981, 558, 576, 17963, 5155, 7117, 6539, 8885, 7175, 6540, 2]
 
-// Module 17961 (VoiceChannelAppActionSheet)
+// Module 17965 (VoiceChannelAppActionSheet)
 import _modDef3981 from "module_3981" /* 3981 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
 import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8885 */;
@@ -35,7 +35,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   const cResult = obj.c(15);
   ({ selectedApplicationId, onChange } = guildId);
   guildId = guildId.guildId;
-  const obj2 = onChange(17959);
+  const obj2 = onChange(17963);
   const voiceChannelAppSettingOptions = obj2.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   if (cResult[0] !== onChange) {
@@ -208,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   let tmp = onChange;
   let tmp2 = dependencyMap;
   guildId = guildId.guildId;
-  let obj = onChange(17959);
+  let obj = onChange(17963);
   const voiceChannelAppSettingOptions = obj.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   const items = [onChange];

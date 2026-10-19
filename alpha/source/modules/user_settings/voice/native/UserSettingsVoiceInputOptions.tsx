@@ -1,15 +1,15 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11466
+// Function ID: 11467
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 2014, 1087, 21, 5191, 7167, 1128, 5343, 558, 576, 504, 6457, 5187, 7172, 11449, 11442, 2]
+// Dependencies: [19, 17, 2014, 1087, 21, 5191, 7167, 1128, 5343, 558, 576, 504, 6457, 5187, 7172, 11467, 11460, 2]
 
-// Module 11448 (UserSettingsVoiceInputOptions)
+// Module 11466 (UserSettingsVoiceInputOptions)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5343 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7167 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 11449 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 11467 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Fragment from "Fragment" /* 21 */;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           tmp22[0] = tmp8;
           const items1 = [tmp15, tmp17];
           tmp22[2] = items1;
-          const tmp23 = closure_8(inputMode(11442).UserSettingsTableRowGroup, tmp22);
+          const tmp23 = closure_8(inputMode(11460).UserSettingsTableRowGroup, tmp22);
           cResult[14] = tmp15;
           cResult[15] = tmp17;
           cResult[16] = tmp23;
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const vadAutoThreshold = stateFromStoresObject.vadAutoThreshold;
   const vadThreshold = stateFromStoresObject.vadThreshold;
   let obj2 = { title: intl.string(inputMode(1128).t.LKCupB), hasIcons: false, children: items1 };
-  const UserSettingsTableRowGroup = inputMode(11442).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = inputMode(11460).UserSettingsTableRowGroup;
   intl = inputMode(1128).intl;
   const obj3 = { label: intl2.string(inputMode(1128).t["pS+K2L"]), trailing: closure_6(Text, obj4), onPress: handleInputModePress };
   const TableRow = inputMode(6457).TableRow;

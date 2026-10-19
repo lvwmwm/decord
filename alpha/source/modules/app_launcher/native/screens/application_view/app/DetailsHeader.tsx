@@ -1,7 +1,7 @@
 // Module ID: 9547
 // Function ID: 9548
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 4945, 9548, 10925, 8600, 6178, 5192, 5195, 6438, 5187, 1128, 6520, 5491, 1107, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 4945, 9548, 10941, 8600, 6178, 5192, 5195, 6438, 5187, 1128, 6520, 5491, 1107, 2]
 
 // Module 9547 (DetailsHeader)
 import react2 from "react" /* 576 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import timing from "timing" /* 5192 */;
 import timingPresets from "timingPresets" /* 5195 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 10925 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 10941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -189,7 +189,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != tmp16) {
     let tmp28;
     if (cResult[7] !== tmp16) {
-      const tmpResult7 = tmp(10925);
+      const tmpResult7 = tmp(10941);
       let result = tmpResult7.parseBioReactWithCachedAST(tmp16);
       cResult[7] = tmp16;
       cResult[8] = result;

@@ -1,10 +1,10 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 18670
+// Function ID: 18671
 // Name: VerifyPhone
-// Dependencies: [19, 21, 8633, 18667, 18668, 18669, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8633, 18671, 18672, 18673, 558, 576, 5065, 5128, 2]
 // Exports: getVerifyPhoneSource
 
-// Module 18666 (VerifyPhone)
+// Module 18670 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 5065 */;

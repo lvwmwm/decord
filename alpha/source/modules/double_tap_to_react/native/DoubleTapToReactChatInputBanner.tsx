@@ -1,9 +1,9 @@
-// Module ID: 12932
-// Function ID: 12933
+// Module ID: 12940
+// Function ID: 12941
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5181, 2065, 1395, 21, 5191, 587, 1384, 558, 576, 573, 1417, 7098, 5187, 1128, 12933, 6485, 6462, 9263, 1275, 4945, 5192, 1202, 5155, 13034, 2002, 6178, 5497, 8817, 2044, 8257, 8254, 2052, 10312, 2]
+// Dependencies: [32, 19, 17, 5181, 2065, 1395, 21, 5191, 587, 1384, 558, 576, 573, 1417, 7098, 5187, 1128, 12941, 6485, 6462, 9263, 1275, 4945, 5192, 1202, 5155, 13042, 2002, 6178, 5497, 8817, 2044, 8257, 8254, 2052, 10312, 2]
 
-// Module 12932 (DoubleTapToReactChatInputBanner)
+// Module 12940 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -22,7 +22,7 @@ import timing from "timing" /* 5192 */;
 import XSmallIcon from "XSmallIcon" /* 6485 */;
 import EmojiDefault from "Emoji" /* 7098 */;
 import canAddNewReactionsDefault from "canAddNewReactions" /* 8257 */;
-import _mod12933 from "module_12933" /* 12933 */;
+import _mod12941 from "module_12941" /* 12941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
@@ -112,7 +112,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emoji };
-    obj.openLazy(asyncRequire(13034, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
+    obj.openLazy(asyncRequire(13042, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items2);
   const callback2 = react.useCallback(() => {
@@ -238,7 +238,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                   const Text = tmp(5187).Text;
                   intl = tmp(1128).intl;
                   const tmp28 = React4(Text, obj2);
-                  const tmp29 = React4(_mod12933.NewBadge, {});
+                  const tmp29 = React4(_mod12941.NewBadge, {});
                   cResult[16] = tmp28;
                   cResult[17] = tmp29;
                   tmp26 = tmp29;
@@ -451,7 +451,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
   const Text = tmp2(5187).Text;
   intl = tmp2(1128).intl;
-  items3 = [React4(Text, obj8), React4(_mod12933.NewBadge, {})];
+  items3 = [React4(Text, obj8), React4(_mod12941.NewBadge, {})];
   items4 = [authStore(View, obj7), ];
   const obj9 = { variant: "text-xs/medium", color: "text-default", children: intl2.format(intl4.t["5/l2rR"], obj10) };
   const Text2 = tmp2(5187).Text;

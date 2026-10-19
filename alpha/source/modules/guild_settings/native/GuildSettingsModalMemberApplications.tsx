@@ -1,16 +1,16 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17729
+// Function ID: 17730
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6397, 21, 5191, 587, 558, 576, 5057, 5187, 17726, 1417, 1202, 6457, 1633, 5037, 17731, 17732, 504, 1128, 7091, 8632, 7005, 2]
+// Dependencies: [19, 17, 6397, 21, 5191, 587, 558, 576, 5057, 5187, 17730, 1417, 1202, 6457, 1633, 5037, 17735, 17736, 504, 1128, 7091, 8632, 7005, 2]
 
-// Module 17725 (GuildSettingsModalMemberApplications)
+// Module 17729 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
 import Text_Text from "Text/Text" /* 5187 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17726 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17730 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6397 */;

@@ -1,9 +1,9 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13123
+// Function ID: 13124
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 9683, 21, 5191, 587, 681, 558, 576, 9609, 12903, 12902, 10529, 1384, 12908, 7840, 10604, 9939, 5187, 6457, 5479, 6214, 8817, 2]
+// Dependencies: [19, 17, 9683, 21, 5191, 587, 681, 558, 576, 9609, 12920, 12919, 10529, 1384, 12925, 7840, 10604, 9939, 5187, 6457, 5479, 6214, 8817, 2]
 
-// Module 13115 (ChatInputGuard)
+// Module 13123 (ChatInputGuard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Radius from "Radius" /* 681 */;
@@ -12,7 +12,7 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import TableRow from "TableRow" /* 6457 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9609 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9683 */;
-import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 12902 */;
+import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 12919 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
   screenIndex = screenIndex.screenIndex;
   ({ channelId, onJumpToPresent, children } = screenIndex);
   const tmp5 = useIsUsingClientThemeDefault();
-  const obj2 = screenIndex(12903);
+  const obj2 = screenIndex(12920);
   const chatInputFloatingOverlayStyle = obj2.useChatInputFloatingOverlayStyle();
   const tmp7 = closure_9(tmp5);
   if (cResult[0] !== screenIndex) {
@@ -96,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
     tmp11 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = closure_7(screenIndex(12903).ChatInputScrimGradient, {});
+    const tmp14 = closure_7(screenIndex(12920).ChatInputScrimGradient, {});
     cResult[5] = tmp14;
     tmp12 = tmp14;
   } else {
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
           tmp28 = null;
           if (null != channelId) {
             const obj5 = { channelId, screenIndex, onJumpToPresent };
-            tmp28 = closure_7(tmp4(12908), obj5);
+            tmp28 = closure_7(tmp4(12925), obj5);
           }
         }
         cResult[15] = channelId;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
   const tmp3 = useIsUsingClientThemeDefault();
-  const obj = screenIndex(12903);
+  const obj = screenIndex(12920);
   const chatInputFloatingOverlayStyle = obj.useChatInputFloatingOverlayStyle();
   const tmp6 = closure_9(tmp3);
   const items = [screenIndex];
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
     closure_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
   items1 = [getChatInputPositionStyleDefault({ isCreatingThread: false }), chatInputFloatingOverlayStyle];
-  items2 = [closure_7(screenIndex(12903).ChatInputScrimGradient, {}), ];
+  items2 = [closure_7(screenIndex(12920).ChatInputScrimGradient, {}), ];
   let tmp10Result = null;
   const obj3 = { style: tmp6.container, children: items3 };
   const tmp4 = screenIndex;
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGua
     tmp10Result4 = null;
     if (null != channelId) {
       const obj6 = { channelId, screenIndex, onJumpToPresent };
-      tmp10Result4 = tmp10(tmp(12908), obj6);
+      tmp10Result4 = tmp10(tmp(12925), obj6);
     }
   }
   items3[2] = tmp10Result4;

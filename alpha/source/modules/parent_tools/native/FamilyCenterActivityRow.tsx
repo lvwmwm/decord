@@ -1,9 +1,9 @@
-// Module ID: 15942
-// Function ID: 15943
+// Module ID: 15946
+// Function ID: 15947
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1392, 7525, 7526, 1087, 21, 5191, 587, 1202, 558, 576, 38, 573, 11, 5057, 5187, 8008, 6436, 6440, 1128, 2589, 15943, 15946, 15947, 2]
+// Dependencies: [19, 17, 1392, 7525, 7526, 1087, 21, 5191, 587, 1202, 558, 576, 38, 573, 11, 5057, 5187, 8008, 6436, 6440, 1128, 2589, 15947, 15950, 15951, 2]
 
-// Module 15942 (FamilyCenterActivityRow)
+// Module 15946 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -17,9 +17,9 @@ import GuildIconDefault from "GuildIcon" /* 6436 */;
 import GuildBadgeDefault from "GuildBadge" /* 6440 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15943 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 15946 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15947 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15947 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 15950 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15951 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;

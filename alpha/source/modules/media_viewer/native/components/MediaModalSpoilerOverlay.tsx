@@ -1,9 +1,9 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14009
+// Function ID: 14010
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 5191, 587, 1384, 558, 576, 4913, 13988, 5465, 8481, 5187, 1128, 4945, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 1384, 558, 576, 4913, 13992, 5465, 8481, 5187, 1128, 4945, 2]
 
-// Module 14005 (MediaModalSpoilerOverlay)
+// Module 14009 (MediaModalSpoilerOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,7 +11,7 @@ import useToken from "useToken" /* 4913 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5465 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8481 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13988 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

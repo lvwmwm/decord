@@ -1,150 +1,274 @@
 // Module ID: 12392
 // Function ID: 12393
-// Dependencies: [12368, 12369, 12393, 12383, 12380, 12375]
-// Exports: closeSession, makeSession
+// Dependencies: [12385, 12386, 12393, 12394, 12395]
+// Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify, urlEncode
 
 // Module 12392
-import _mod12375 from "module_12375" /* 12375 */;
-import _mod12380 from "module_12380" /* 12380 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12383 */;
+import _mod12385 from "module_12385" /* 12385 */;
 import _mod12393 from "module_12393" /* 12393 */;
-import DEBUG_BUILD from "module_12368" /* 12368 */;
-import CONSOLE_LEVELS from "module_12369" /* 12369 */;
+import _mod12395 from "module_12395" /* 12395 */;
 
-function updateSession(ipAddress) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  if (obj.user) {
-    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
-    if (tmp) {
-      ipAddress.ipAddress = obj.user.ip_address;
+let hasOwnProperty;
+
+function addNonEnumerableProperty(arg0, arg1, value) {
+  try {
+    const _Object = Object;
+    const obj = { value, writable: true, configurable: true };
+    Object.defineProperty(arg0, arg1, obj);
+  } catch (err) {
+    const tmp4 = require;
+    if (_mod12385.DEBUG_BUILD) {
+      const logger = tmp4(12386).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
     }
-    const tmp2 = ipAddress.did || obj.did;
-    if (!tmp2) {
-      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
-    }
-  }
-  let timestamp = obj.timestamp;
-  if (!timestamp) {
-    const obj2 = _browserPerformanceTimeOriginMode;
-    timestamp = obj2.timestampInSeconds();
-  }
-  ipAddress.timestamp = timestamp;
-  if (obj.abnormal_mechanism) {
-    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
-  }
-  if (obj.ignoreDuration) {
-    ipAddress.ignoreDuration = obj.ignoreDuration;
-  }
-  if (obj.sid) {
-    let sid;
-    if (32 === obj.sid.length) {
-      sid = obj.sid;
-    } else {
-      const obj3 = _mod12380;
-      sid = obj3.uuid4();
-    }
-    ipAddress.sid = sid;
-  }
-  if (undefined !== obj.init) {
-    ipAddress.init = obj.init;
-  }
-  const tmp7 = !ipAddress.did && obj.did;
-  if (tmp7) {
-    const _HermesInternal = HermesInternal;
-    ipAddress.did = "" + obj.did;
-  }
-  if (typeof obj.started === "number") {
-    ipAddress.started = obj.started;
-  }
-  if (ipAddress.ignoreDuration) {
-    ipAddress.duration = undefined;
-  } else if (typeof obj.duration === "number") {
-    ipAddress.duration = obj.duration;
-  } else {
-    const diff = ipAddress.timestamp - ipAddress.started;
-    let num2 = 0;
-    if (diff >= 0) {
-      num2 = diff;
-    }
-    ipAddress.duration = num2;
-  }
-  if (obj.release) {
-    ipAddress.release = obj.release;
-  }
-  if (obj.environment) {
-    ipAddress.environment = obj.environment;
-  }
-  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
-  if (tmp9) {
-    ipAddress.ipAddress = obj.ipAddress;
-  }
-  const tmp10 = !ipAddress.userAgent && obj.userAgent;
-  if (tmp10) {
-    ipAddress.userAgent = obj.userAgent;
-  }
-  if (typeof obj.errors === "number") {
-    ipAddress.errors = obj.errors;
-  }
-  if (obj.status) {
-    ipAddress.status = obj.status;
   }
 }
-_mod12393;
-
-export const closeSession = function closeSession(status, status2) {
-  let obj;
-  const tmp = status2;
-  if (tmp) {
-    obj = { status: status2 };
-    const obj2 = { status: status2 };
-  } else {
-    obj = {};
-    if ("ok" === status.status) {
-      obj = { status: "exited" };
-    }
+function markFunctionWrapped(arg0, arg1) {
+  try {
+    const prototype = arg1.prototype || {};
+    arg1.prototype = prototype;
+    arg0.prototype = prototype;
+    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
+  } catch (err) {
   }
-  updateSession(status, obj);
-};
-export const makeSession = function makeSession(arg0) {
-  let obj2;
-  let obj3;
-  let obj = obj2(12383);
-  const timestampInSecondsResult = obj.timestampInSeconds();
-  obj2 = {
-    sid: obj3.uuid4(),
-    init: true,
-    timestamp: timestampInSecondsResult,
-    started: timestampInSecondsResult,
-    duration: 0,
-    status: "ok",
-    errors: 0,
-    ignoreDuration: false,
-    toJSON() {
-      let combined;
-      let date;
-      let date1;
-      const tmp2 = _mod12375;
-      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
-      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
-      date = new Date(1000 * obj2.started);
-      ({ status: obj.status, errors: obj.errors } = obj2);
-      date1 = new Date(1000 * obj2.timestamp);
-      if (typeof obj2.did === "number") {
-        const _HermesInternal = HermesInternal;
-        combined = "" + tmp.did;
+}
+function convertToPlainObject(type) {
+  const obj = _mod12393;
+  if (obj.isError(type)) {
+    const error = { message: null, name: null, stack: null };
+    ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
+    if (typeof type === "object") {
+      let obj3;
+      if (null !== type) {
+        const obj2 = {};
+        obj3 = obj2;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          obj3 = obj2;
+          while (keys[tmp] !== undefined) {
+            let _Object2 = Object;
+            let hasOwnProperty2 = Object.prototype.hasOwnProperty;
+            if (!hasOwnProperty2.call(type, tmp17)) {
+              continue;
+            } else {
+              obj2[tmp17] = type[tmp17];
+              continue;
+            }
+            continue;
+          }
+        }
       }
-      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
-      return dropUndefinedKeys(obj);
+      const merged = Object.assign(obj3);
+      return error;
     }
-  };
-  obj3 = obj2(12380);
-  if (arg0) {
-    let tmp2 = updateSession;
-    updateSession(obj2, arg0);
+    obj3 = {};
+  } else {
+    const tmp2Result = _mod12393;
+    if (tmp2Result.isEvent(type)) {
+      const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
+      if (typeof type === "object") {
+        let obj7;
+        if (null !== type) {
+          const obj5 = {};
+          obj7 = obj5;
+          const keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            obj7 = obj5;
+            while (keys1[tmp] !== undefined) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              if (!hasOwnProperty.call(type, tmp8)) {
+                continue;
+              } else {
+                obj5[tmp8] = type[tmp8];
+                continue;
+              }
+              continue;
+            }
+          }
+        }
+        const merged1 = Object.assign(obj7);
+        let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
+        if (typeof globalThis.CustomEvent !== "undefined") {
+          const CustomEvent2 = globalThis.CustomEvent;
+          const tmp2Result2 = _mod12393;
+          isInstanceOfResult = tmp2Result2.isInstanceOf(type, globalThis.CustomEvent);
+        }
+        if (isInstanceOfResult) {
+          obj4.detail = type.detail;
+        }
+        return obj4;
+      }
+      obj7 = {};
+    } else {
+      return type;
+    }
   }
-  return obj2;
+}
+function serializeEventTarget(arg0) {
+  try {
+    let htmlTreeAsStringResult;
+    const obj = _mod12393;
+    const tmp2 = require;
+    if (obj.isElement(arg0)) {
+      const tmp2Result = tmp2(12394);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
+    } else {
+      const _Object = Object;
+      htmlTreeAsStringResult = toString.call(arg0);
+    }
+    return htmlTreeAsStringResult;
+  } catch (err) {
+    return "<unknown>";
+  }
+}
+function _dropUndefinedKeys(arr, map) {
+  function isPojo(arr) {
+    const obj = map(items[2]);
+    if (obj.isPlainObject(arr)) {
+      try {
+        const _Object = Object;
+        const name = Object.getPrototypeOf(arr).constructor.name;
+        return !name || "Object" === tmp2;
+      } catch (err) {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  }
+  if (isPojo(arr)) {
+    const value = map.get(arr);
+    if (undefined !== value) {
+      return value;
+    } else {
+      let obj = {};
+      const result = map.set(arr, obj);
+      let _Object = Object;
+      const ownPropertyNames = Object.getOwnPropertyNames(arr);
+      for (const item10030 of ownPropertyNames) {
+        let tmp11 = item10030;
+        if (undefined !== arr[item10030]) {
+          obj[tmp11] = _dropUndefinedKeys(arr[tmp11], map);
+        }
+        continue;
+      }
+      return obj;
+    }
+  } else {
+    const _Array = Array;
+    if (Array.isArray(arr)) {
+      const value2 = map.get(arr);
+      if (undefined !== value2) {
+        return value2;
+      } else {
+        const items = [];
+        const result1 = map.set(arr, items);
+        const item = arr.forEach((item) => {
+          items.push(_dropUndefinedKeys(item, map));
+        });
+        return items;
+      }
+    } else {
+      return arr;
+    }
+  }
+}
+
+export { addNonEnumerableProperty };
+export { convertToPlainObject };
+export const dropUndefinedKeys = function dropUndefinedKeys(arr) {
+  map = new Map();
+  return _dropUndefinedKeys(arr, map);
 };
-export { updateSession };
+export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 40;
+  }
+  const keys = Object.keys(convertToPlainObject(arg0));
+  const sorted = keys.sort();
+  const first = keys[0];
+  if (first) {
+    if (first.length >= num) {
+      const obj3 = _mod12395;
+      return obj3.truncate(first, num);
+    } else {
+      let length = keys.length;
+      if (length > 0) {
+        const substr = keys.slice(0, length);
+        const joined = substr.join(", ");
+        while (joined.length > num) {
+          length = length - 1;
+        }
+        let truncateResult = joined;
+        if (length !== keys.length) {
+          const obj2 = _mod12395;
+          truncateResult = obj2.truncate(joined, num);
+        }
+        return truncateResult;
+      }
+      return "";
+    }
+  } else {
+    return "[object has no keys]";
+  }
+};
+export const fill = function fill(arg0, arg1, fn) {
+  if (arg1 in arg0) {
+    const tmp3 = fn(arg0[arg1]);
+    if (typeof tmp3 === "function") {
+      markFunctionWrapped(tmp3, arg0[arg1]);
+    }
+    try {
+      arg0[arg1] = tmp3;
+    } catch (err) {
+      const tmp4 = require;
+      if (_mod12385.DEBUG_BUILD) {
+        const logger = tmp4(12386).logger;
+        const _HermesInternal = HermesInternal;
+        logger.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
+      }
+    }
+  }
+};
+export const getOriginalFunction = function getOriginalFunction(__sentry_original__) {
+  return __sentry_original__.__sentry_original__;
+};
+export { markFunctionWrapped };
+export const objectify = function objectify(arg0) {
+  let string;
+  if (null == arg0 === true) {
+    const _String = String;
+    const self3 = this;
+    const self4 = this;
+    string = new String(arg0);
+  } else {
+    const tmp = typeof arg0 === "symbol" || typeof arg0 === "bigint";
+    if (tmp === true) {
+      const _Object = Object;
+      string = Object(arg0);
+    } else {
+      string = arg0;
+      const obj = _mod12393;
+      if (obj.isPrimitive(arg0) === true) {
+        const self = this;
+        const self2 = this;
+        string = new arg0.constructor(arg0);
+      }
+    }
+  }
+  return string;
+};
+export const urlEncode = function urlEncode(arg0) {
+  const entries = Object.entries(arg0);
+  const mapped = entries.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    const encodeURIComponentResult = encodeURIComponent(tmp);
+    return "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
+  });
+  return mapped.join("&");
+};

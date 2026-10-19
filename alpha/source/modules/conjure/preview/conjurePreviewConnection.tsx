@@ -1,22 +1,22 @@
-// Module ID: 10993
-// Function ID: 10994
+// Module ID: 11014
+// Function ID: 11015
 // Name: conjurePreviewConnection
-// Dependencies: [5, 10994, 10996, 11035, 11016, 584, 10980, 10983, 11036, 10982, 11041, 11044, 11045, 2]
+// Dependencies: [5, 11015, 11017, 11056, 11037, 584, 10996, 10999, 11057, 10998, 11062, 11063, 11064, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 10993 (conjurePreviewConnection)
+// Module 11014 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10980 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10982 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10994 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10996 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11016 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 11035 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11036 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 11041 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11044 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11045 */;
+import conjureChatConnection from "conjureChatConnection" /* 10996 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11015 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11017 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11037 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 11056 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11057 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 11062 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

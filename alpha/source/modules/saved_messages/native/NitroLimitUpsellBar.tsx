@@ -1,9 +1,9 @@
-// Module ID: 13811
-// Function ID: 13812
+// Module ID: 13815
+// Function ID: 13816
 // Name: NitroLimitUpsellBar
 // Dependencies: [17, 21, 5191, 587, 558, 576, 7838, 5128, 9836, 5187, 1128, 10081, 5479, 2]
 
-// Module 13811 (NitroLimitUpsellBar)
+// Module 13815 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

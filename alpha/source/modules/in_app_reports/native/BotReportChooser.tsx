@@ -1,9 +1,9 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14037
+// Function ID: 14038
 // Name: BotReportChooser
 // Dependencies: [19, 5540, 21, 558, 576, 5187, 1128, 7175, 7171, 5155, 7988, 504, 6357, 2]
 
-// Module 14033 (BotReportChooser)
+// Module 14037 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;

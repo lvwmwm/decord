@@ -1,9 +1,9 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11343
+// Function ID: 11344
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 6311, 1087, 2026, 21, 5191, 3, 1384, 558, 576, 11326, 7788, 11327, 1383, 11314, 11328, 11324, 1267, 573, 5399, 1128, 11329, 6299, 1297, 11330, 1386, 11014, 6178, 2]
+// Dependencies: [5, 32, 19, 17, 6311, 1087, 2026, 21, 5191, 3, 1384, 558, 576, 11344, 7788, 11345, 1383, 11332, 11346, 11342, 1267, 573, 5399, 1128, 11347, 6299, 1297, 11348, 1386, 11035, 6178, 2]
 
-// Module 11325 (BaseEmbeddedAppWebView)
+// Module 11343 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

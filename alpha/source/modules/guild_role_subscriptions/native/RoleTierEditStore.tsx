@@ -1,14 +1,14 @@
-// Module ID: 18949
-// Function ID: 18950
+// Module ID: 18953
+// Function ID: 18954
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1274, 1269, 7233, 558, 576, 4828, 5496, 16266, 2]
+// Dependencies: [32, 5, 1274, 1269, 7233, 558, 576, 4828, 5496, 16270, 2]
 // Exports: resetImperatively
 
-// Module 18949 (RoleTierEditStore)
+// Module 18953 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;
 import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7233 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16266 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16270 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;

@@ -1,9 +1,9 @@
-// Module ID: 10785
-// Function ID: 10786
+// Module ID: 10801
+// Function ID: 10802
 // Name: ChatBanner
-// Dependencies: [19, 17, 6013, 6291, 10786, 1087, 21, 5191, 587, 558, 576, 10787, 10788, 11, 504, 1267, 5206, 7080, 1128, 5187, 5479, 8169, 7246, 6462, 7077, 10790, 2]
+// Dependencies: [19, 17, 6013, 6291, 10802, 1087, 21, 5191, 587, 558, 576, 10803, 10804, 11, 504, 1267, 5206, 7080, 1128, 5187, 5479, 8169, 7246, 6462, 7077, 10806, 2]
 
-// Module 10785 (ChatBanner)
+// Module 10801 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -11,9 +11,9 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7077 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7080 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8169 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 10786 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10787 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10788 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10802 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 10803 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 10804 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
@@ -893,7 +893,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
                   }
                 }
                 const obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-                const XSmallBoldIcon = tmp(10790).XSmallBoldIcon;
+                const XSmallBoldIcon = tmp(10806).XSmallBoldIcon;
                 const tmp25 = closure_12(XSmallBoldIcon, obj3);
                 cResult[16] = tmp25;
                 tmp23 = tmp25;
@@ -1013,7 +1013,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMes
       const PressableOpacity2 = tmp2(6462).PressableOpacity;
       intl2 = tmp2(1128).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(10790).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(10806).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

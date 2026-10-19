@@ -1,9 +1,9 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17520
+// Function ID: 17521
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 5058, 1392, 13071, 13072, 17517, 1087, 21, 9644, 5191, 587, 558, 576, 504, 1202, 5400, 1128, 13075, 16368, 6462, 17066, 4945, 5192, 6178, 1267, 17067, 13081, 17518, 6469, 8855, 10920, 17519, 7092, 6965, 9599, 9934, 17092, 6186, 6900, 17091, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 5058, 1392, 13079, 13080, 17521, 1087, 21, 9644, 5191, 587, 558, 576, 504, 1202, 5400, 1128, 13083, 16372, 6462, 17070, 4945, 5192, 6178, 1267, 17071, 13089, 17522, 6469, 8855, 10936, 17523, 7092, 6965, 9599, 9934, 17096, 6186, 6900, 17095, 2]
 
-// Module 17516 (ManageAccountsModal)
+// Module 17520 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import timing from "timing" /* 5192 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9934 */;
-import MultiAccountStore from "MultiAccountStore" /* 13071 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13075 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 17517 */;
+import MultiAccountStore from "MultiAccountStore" /* 13079 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13083 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 17521 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -22,7 +22,7 @@ import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StreamerModeStore from "StreamerModeStore" /* 5058 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants_mod from "Constants" /* 13072 */;
+import Constants_mod from "Constants" /* 13080 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9644 */;
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(16368).CircleMinusIcon;
+            const CircleMinusIcon = tmp(16372).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -364,7 +364,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     const PressableOpacity = tmp(6462).PressableOpacity;
     intl = tmp(1128).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(16368).CircleMinusIcon;
+    CircleMinusIcon = tmp(16372).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });

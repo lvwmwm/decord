@@ -1,17 +1,16 @@
 // Module ID: 15332
 // Function ID: 15333
-// Dependencies: [15333, 15347]
+// Dependencies: [15328]
 
 // Module 15332
-import _mod15333 from "module_15333" /* 15333 */;
-import _mod15347 from "module_15347" /* 15347 */;
+import _mod15328 from "module_15328" /* 15328 */;
 
 
-export default (arg0) => {
-  const tmp = _mod15333(arg0, "string");
-  let text = tmp;
-  if (!_mod15347(tmp)) {
-    text = `${tmp}`;
-  }
-  return text;
-};
+export default !_mod15328(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

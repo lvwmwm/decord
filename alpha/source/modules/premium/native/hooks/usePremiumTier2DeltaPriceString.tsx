@@ -1,9 +1,9 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14629
+// Function ID: 14630
 // Name: usePremiumTier2DeltaPriceString
 // Dependencies: [19, 7415, 7403, 1394, 7397, 7398, 1384, 7216, 558, 576, 4879, 504, 2]
 
-// Module 14625 (usePremiumTier2DeltaPriceString)
+// Module 14629 (usePremiumTier2DeltaPriceString)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import BillingUtils from "BillingUtils" /* 4879 */;

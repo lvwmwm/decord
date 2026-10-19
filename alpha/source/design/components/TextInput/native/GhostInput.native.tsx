@@ -1,9 +1,9 @@
-// Module ID: 15052
-// Function ID: 15053
+// Module ID: 15056
+// Function ID: 15057
 // Name: GhostInput
 // Dependencies: [109, 19, 21, 5191, 5187, 587, 558, 576, 6578, 4928, 6571, 6895, 6565, 6581, 6564, 2]
 
-// Module 15052 (GhostInput)
+// Module 15056 (GhostInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

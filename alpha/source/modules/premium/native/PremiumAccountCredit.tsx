@@ -1,9 +1,9 @@
-// Module ID: 14466
-// Function ID: 14467
+// Module ID: 14470
+// Function ID: 14471
 // Name: PremiumAccountCredit
 // Dependencies: [19, 17, 7386, 1087, 21, 5191, 587, 7138, 558, 576, 4864, 1128, 3303, 9709, 5187, 504, 12, 2]
 
-// Module 14466 (PremiumAccountCredit)
+// Module 14470 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16859
+// Function ID: 16860
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 5479, 6459, 5477, 4905, 4904, 5145, 5141, 4863, 15046, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 5479, 6459, 5477, 4905, 4904, 5145, 5141, 4863, 15050, 2]
 
-// Module 16855 (UserSettingsDesignSystemToast)
+// Module 16859 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import Stack_Stack from "Stack/Stack" /* 5477 */;
 import components_Button_Button from "components/Button/Button" /* 5479 */;
 import Card_Card from "Card/Card" /* 6459 */;
-import Toast4 from "Toast" /* 15046 */;
+import Toast4 from "Toast" /* 15050 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -449,10 +449,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     const obj5 = { text, variant: "default" };
     const tmp31 = React3(Toast4.Toast, obj5);
     const obj6 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
-    const Toast = tmp(15046).Toast;
+    const Toast = tmp(15050).Toast;
     const tmp32 = React3(Toast, obj6);
     const obj7 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
-    const Toast2 = tmp(15046).Toast;
+    const Toast2 = tmp(15050).Toast;
     const tmp34 = React3(Toast2, obj7);
     const obj8 = { text, variant: "success" };
     const tmp35 = React3(Toast4.Toast, obj8);
@@ -484,7 +484,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     let obj11;
-    const Toast3 = tmp(15046).Toast;
+    const Toast3 = tmp(15050).Toast;
     const tmp39 = React3;
     if ("" !== first) {
       obj11 = { type: "emoji", src: first, alt: "\u{1F525}" };

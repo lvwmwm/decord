@@ -1,14 +1,14 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16943
+// Function ID: 16944
 // Name: MenuIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16940, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16944, 4912, 2]
 
-// Module 16939 (MenuIcon)
+// Module 16943 (MenuIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 16940 */;
+import AssetRegistry from "AssetRegistry" /* 16944 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

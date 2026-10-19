@@ -1,9 +1,9 @@
-// Module ID: 14588
-// Function ID: 14589
+// Module ID: 14592
+// Function ID: 14593
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5191, 587, 5155, 14589, 2002, 1128, 558, 576, 5187, 2]
+// Dependencies: [17, 21, 5191, 587, 5155, 14593, 2002, 1128, 558, 576, 5187, 2]
 
-// Module 14588 (BoostingCountDownPill)
+// Module 14592 (BoostingCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14589, dependencyMap.paths);
+  const tmp2 = asyncRequire(14593, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }

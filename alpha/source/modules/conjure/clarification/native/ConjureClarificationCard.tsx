@@ -1,14 +1,14 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12286
+// Function ID: 12287
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5191, 587, 1128, 3883, 558, 576, 12269, 12270, 12271, 12272, 6563, 5187, 7840, 6485, 12273, 6542, 6454, 6459, 12277, 5479, 12149, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 1128, 3883, 558, 576, 12287, 12288, 12289, 12290, 6563, 5187, 7840, 6485, 12291, 6542, 6454, 6459, 12295, 5479, 11662, 2]
 
-// Module 12268 (ConjureClarificationCard)
+// Module 12286 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureClarification from "ConjureClarification" /* 12271 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import ConjureClarification from "ConjureClarification" /* 12289 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,8 +19,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-const f112414 = (item) => "" !== item;
-let _slicedToArray = _slicedToArray_mod;
+const f112544 = (item) => "" !== item;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -35,19 +35,19 @@ let closure_10 = [];
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClarificationCard(projectId) {
   let answeredOptionIdsResult;
   let first;
-  let first1;
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
-  let intl6;
   let items;
   let items1;
   let items2;
   let items3;
   let obj22;
   let obj24;
+  let onDismiss;
+  let onInputFocusChange;
   let onSubmit;
   let optionHeader;
   let options;
@@ -59,9 +59,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp19;
   let tmp21;
   let tmp27;
-  let tmp9;
   let tmp92;
   let tmp93;
+  let tmpResult11;
   let w1nRmT;
   let tmp = projectId;
   let tmp2 = onSubmit;
@@ -70,9 +70,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   projectId = projectId.projectId;
   const clarification = projectId.clarification;
   onSubmit = projectId.onSubmit;
-  const onDismiss = projectId.onDismiss;
+  ({ onDismiss, onInputFocusChange } = projectId);
   let tmp4 = closure_8();
-  _slicedToArray = tmp4;
+  react = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = {};
     cResult[0] = obj2;
@@ -80,9 +80,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     first = cResult[0];
   }
-  let obj3 = first1;
-  [first1, tmp9] = first1.useState(first);
-  let closure_5 = tmp9;
+  let obj3 = react;
+  let tmp7 = onInputFocusChange(react.useState(first), 2);
+  const first1 = tmp7[0];
+  let closure_6 = tmp9;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = {};
     cResult[1] = obj4;
@@ -90,8 +91,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp10 = cResult[1];
   }
-  const tmp6Result = _slicedToArray(obj3.useState(tmp10), 2);
-  let closure_6 = tmp6Result[1];
+  const tmp6Result = onInputFocusChange(obj3.useState(tmp10), 2);
+  let closure_7 = tmp6Result[1];
   const first2 = tmp6Result[0];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj5 = {};
@@ -100,8 +101,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp13 = cResult[2];
   }
-  const tmp6Result5 = _slicedToArray(obj3.useState(tmp13), 2);
-  let closure_7 = tmp6Result5[1];
+  const tmp6Result5 = onInputFocusChange(obj3.useState(tmp13), 2);
+  closure_8 = tmp6Result5[1];
   const first3 = tmp6Result5[0];
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     let obj6 = {};
@@ -110,8 +111,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp16 = cResult[3];
   }
-  [tmp18, closure_8] = _slicedToArray(obj3.useState(tmp16), 2);
-  _slicedToArray(obj3.useState(tmp16), 2);
+  [tmp18, closure_9] = onInputFocusChange(obj3.useState(tmp16), 2);
+  onInputFocusChange(obj3.useState(tmp16), 2);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = {};
     cResult[4] = obj7;
@@ -119,17 +120,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp19 = cResult[4];
   }
-  [tmp21, closure_9] = _slicedToArray(obj3.useState(tmp19), 2);
-  _slicedToArray(obj3.useState(tmp19), 2);
-  const tmp6Result8 = _slicedToArray(obj3.useState(0), 2);
-  closure_10 = tmp6Result8[1];
+  [tmp21, closure_10] = onInputFocusChange(obj3.useState(tmp19), 2);
+  onInputFocusChange(obj3.useState(tmp19), 2);
+  const tmp6Result8 = onInputFocusChange(obj3.useState(0), 2);
+  let closure_11 = tmp6Result8[1];
   const disabled = tmp23;
   const bound = Math.min(tmp6Result8[0], length - 1);
   const tmp25 = clarification.questions[bound];
   let id = tmp25;
-  let closure_14 = tmp26;
+  let closure_15 = tmp26;
   if (cResult[5] !== tmp25) {
-    const tmpResult = tmp(tmp2[10]);
+    let tmpResult = tmp(tmp2[10]);
     const isImageQuestionResult = tmpResult.isImageQuestion(tmp25);
     cResult[5] = tmp25;
     cResult[6] = isImageQuestionResult;
@@ -137,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp27 = cResult[6];
   }
-  let closure_15 = tmp27;
+  let closure_16 = tmp27;
   if (true === tmp25.multi_select) {
     let tmp30 = first3[tmp25.id];
     if (tmp30 == null) {
@@ -145,11 +146,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     answeredOptionIdsResult = tmp30;
   } else {
-    const tmpResult5 = tmp(tmp2[10]);
-    answeredOptionIdsResult = tmpResult5.answeredOptionIds(first1[tmp25.id]);
+    const tmpResult7 = tmp(tmp2[10]);
+    answeredOptionIdsResult = tmpResult7.answeredOptionIds(first1[tmp25.id]);
   }
-  const tmpResult6 = tmp(tmp2[11]);
-  const conjureOwnImages = tmpResult6.useConjureOwnImages(projectId, first1, tmp9);
+  const tmpResult8 = tmp(tmp2[11]);
+  const conjureOwnImages = tmpResult8.useConjureOwnImages(projectId, first1, tmp9);
   if (cResult[7] === first1) {
     if (cResult[8] === clarification) {
       if (cResult[9] === bound) {
@@ -159,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             if (cResult[12] === tmp25.id) {
               tmp31 = cResult[13];
             }
-            let closure_17 = tmp31;
+            let closure_18 = tmp31;
             if (cResult[14] === true === tmp25.multi_select) {
               if (cResult[15] === tmp27) {
                 if (cResult[16] === tmp25) {
@@ -167,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                   if (cResult[17] === tmp31) {
                     tmp32 = cResult[18];
                   }
-                  let closure_18 = tmp32;
+                  let closure_19 = tmp32;
                   if (cResult[19] === null == onSubmit) {
                     let tmp33;
                     if (cResult[20] === bound) {
@@ -179,8 +180,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                     }
                     let multiSelectAnswerResult = null;
                     if (true === tmp25.multi_select) {
-                      const tmpResult7 = tmp(tmp2[12]);
-                      multiSelectAnswerResult = tmpResult7.multiSelectAnswer(tmp25, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp25));
+                      const tmpResult9 = tmp(tmp2[12]);
+                      multiSelectAnswerResult = tmpResult9.multiSelectAnswer(tmp25, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp25));
                     }
                     if (cResult[22] === str) {
                       if (cResult[23] === tmp18) {
@@ -193,17 +194,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                             }
                             const text = tmp39;
                             if (cResult[28] !== tmp25.id) {
-                              function fe(arg0, arg1) {
+                              function pe(arg0, arg1) {
                                 let user;
                                 let closure_0 = arg0;
                                 let closure_1 = arg1;
-                                closure_8((arg0) => {
+                                closure_9((arg0) => {
                                   const obj = {};
                                   const merged = Object.assign(arg0);
                                   obj[user.id] = closure_0;
                                   return obj;
                                 });
-                                closure_9((arg0) => {
+                                closure_10((arg0) => {
                                   const obj = {};
                                   const merged = Object.assign(arg0);
                                   obj[user.id] = closure_1;
@@ -211,8 +212,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                 });
                               }
                               cResult[28] = tmp25.id;
-                              cResult[29] = fe;
-                              tmp47 = fe;
+                              cResult[29] = pe;
+                              tmp47 = pe;
                             } else {
                               tmp47 = cResult[29];
                             }
@@ -232,13 +233,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                           if (cResult[39] === tmp25.id) {
                                             tmp49 = cResult[40];
                                           }
-                                          let closure_22 = tmp49;
+                                          let closure_23 = tmp49;
                                           if (cResult[41] === tmp48) {
                                             if (cResult[42] === str) {
-                                              if (cResult[43] === tmp27) {
-                                                if (cResult[44] === tmp25.id) {
+                                              if (cResult[43] === onInputFocusChange) {
+                                                if (cResult[44] === tmp27) {
                                                   let tmp54;
-                                                  if (cResult[45] === tmp25.question) {
+                                                  if (cResult[45] === tmp25) {
                                                     tmp54 = cResult[46];
                                                   }
                                                   if (cResult[47] === bound) {
@@ -266,9 +267,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                         if (cResult[56] !== onDismiss) {
                                                           let tmp70 = null;
                                                           if (null != onDismiss) {
-                                                            const obj9 = { variant: "tertiary", size: "sm", icon: closure_6(tmp(tmp2[17]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(clarification(tmp2[7]).qVXlk0) };
+                                                            const obj9 = { variant: "tertiary", size: "sm", icon: closure_6(tmp(tmp2[17]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl3.string(clarification(tmp2[7]).qVXlk0) };
                                                             const IconButton = tmp(tmp2[16]).IconButton;
-                                                            intl4 = tmp(tmp2[6]).intl;
+                                                            intl3 = tmp(tmp2[6]).intl;
                                                             tmp70 = closure_6(IconButton, obj9);
                                                           }
                                                           cResult[56] = onDismiss;
@@ -288,9 +289,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                             if (cResult[62] !== (true === tmp25.multi_select)) {
                                                               let tmp78 = null;
                                                               if (true === tmp25.multi_select) {
-                                                                const obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl5.string(clarification(tmp2[7]).tE8qbz) };
+                                                                const obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl4.string(clarification(tmp2[7]).tE8qbz) };
                                                                 const Text2 = tmp(tmp2[15]).Text;
-                                                                intl5 = tmp(tmp2[6]).intl;
+                                                                intl4 = tmp(tmp2[6]).intl;
                                                                 tmp78 = closure_6(Text2, obj10);
                                                               }
                                                               cResult[62] = true === tmp25.multi_select;
@@ -331,7 +332,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                             if (cResult[84] === true === tmp25.multi_select) {
                                                                                               if (cResult[85] === tmp49) {
                                                                                                 if (cResult[86] === tmp27) {
-                                                                                                  if (cResult[87] === tmp25.input) {
+                                                                                                  if (cResult[87] === tmp25) {
                                                                                                     if (cResult[88] === tmp31) {
                                                                                                       if (cResult[89] === tmp4.customField) {
                                                                                                         if (cResult[90] === tmp4.footer) {
@@ -381,24 +382,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                       }
                                                                                       if (clarification.questions.length <= 1) {
                                                                                         if (true !== tmp25.multi_select) {
-                                                                                          let tmp98Result;
                                                                                           if (!tmp27) {
-                                                                                            tmp98Result = null;
+                                                                                            let tmp98Result;
+                                                                                            if (null == tmp25.input) {
+                                                                                              tmp98Result = null;
+                                                                                              tmp(tmp2[12]);
+                                                                                            }
+                                                                                            cResult[81] = null == onSubmit;
+                                                                                            cResult[82] = tmp33;
+                                                                                            cResult[83] = bound;
+                                                                                            cResult[84] = true === tmp25.multi_select;
+                                                                                            cResult[85] = tmp49;
+                                                                                            cResult[86] = tmp27;
+                                                                                            cResult[87] = tmp25;
+                                                                                            cResult[88] = tmp31;
+                                                                                            cResult[89] = tmp4.customField;
+                                                                                            cResult[90] = tmp4.footer;
+                                                                                            cResult[91] = bound === tmp53;
+                                                                                            cResult[92] = clarification.questions.length;
+                                                                                            cResult[93] = tmp98Result;
+                                                                                            tmp96 = tmp98Result;
                                                                                           }
-                                                                                          cResult[81] = null == onSubmit;
-                                                                                          cResult[82] = tmp33;
-                                                                                          cResult[83] = bound;
-                                                                                          cResult[84] = true === tmp25.multi_select;
-                                                                                          cResult[85] = tmp49;
-                                                                                          cResult[86] = tmp27;
-                                                                                          cResult[87] = tmp25.input;
-                                                                                          cResult[88] = tmp31;
-                                                                                          cResult[89] = tmp4.customField;
-                                                                                          cResult[90] = tmp4.footer;
-                                                                                          cResult[91] = bound === tmp53;
-                                                                                          cResult[92] = clarification.questions.length;
-                                                                                          cResult[93] = tmp98Result;
-                                                                                          tmp96 = tmp98Result;
                                                                                         }
                                                                                       }
                                                                                       let tmp100 = null;
@@ -407,15 +411,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                       if (bound > 0) {
                                                                                         tmp100 = null;
                                                                                         if (null != onSubmit) {
-                                                                                          const obj13 = { variant: "tertiary", size: "sm", text: intl6.string(clarification(tmp2[7]).Pk5lfA), onPress: tmp33 };
+                                                                                          const obj13 = { variant: "tertiary", size: "sm", text: intl5.string(clarification(tmp2[7]).Pk5lfA), onPress: tmp33 };
                                                                                           const Button = tmp(tmp2[23]).Button;
-                                                                                          intl6 = tmp(tmp2[6]).intl;
+                                                                                          intl5 = tmp(tmp2[6]).intl;
                                                                                           tmp100 = closure_6(Button, obj13);
                                                                                         }
                                                                                       }
                                                                                       items1 = [tmp100, , ];
                                                                                       const obj14 = { style: tmp4.customField };
-                                                                                      items1[1] = closure_6(closure_5, obj14);
+                                                                                      items1[1] = closure_6(first1, obj14);
                                                                                       let tmp104 = tmp23;
                                                                                       const Button2 = tmp(tmp2[23]).Button;
                                                                                       const tmp103 = closure_6;
@@ -428,13 +432,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                         disabled: tmp104,
                                                                                         text: string(w1nRmT),
                                                                                         onPress() {
-                                                                                                                                                                              if (null != closure_22) {
-                                                                                                                                                                                closure_17(tmp);
+                                                                                                                                                                              if (null != closure_23) {
+                                                                                                                                                                                closure_18(tmp);
                                                                                                                                                                               }
                                                                                                                                                                             }
                                                                                       };
-                                                                                      const intl7 = tmp(tmp2[6]).intl;
-                                                                                      string = intl7.string;
+                                                                                      const intl6 = tmp(tmp2[6]).intl;
+                                                                                      string = intl6.string;
                                                                                       if (bound === tmp53) {
                                                                                         w1nRmT = tmp(tmp2[6]).t.geKm7t;
                                                                                       } else {
@@ -495,7 +499,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                                                                 checked: answeredOptionIdsResult.includes(label.id),
                                                                                                                                 disabled,
                                                                                                                                 onPress() {
-                                                                                                                                  return closure_18(label);
+                                                                                                                                  return closure_19(label);
                                                                                                                                 }
                                                                                                                               };
                                                                                                                               const TableCheckboxRow = projectId(onSubmit[20]).TableCheckboxRow;
@@ -511,7 +515,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                                                                 str2 = "";
                                                                                                                               }
                                                                                                                               items[1] = str2;
-                                                                                                                              const found = items.filter(f112414);
+                                                                                                                              const found = items.filter(f112544);
                                                                                                                               joined = undefined;
                                                                                                                               if (found.length > 0) {
                                                                                                                                 joined = found.join(" \u00B7 ");
@@ -535,8 +539,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                 let closure_0 = answer;
                                                                 let fn;
                                                                 const Card = projectId(onSubmit[21]).Card;
-                                                                if (!closure_11) {
-                                                                  fn = () => closure_18(answer);
+                                                                if (!closure_12) {
+                                                                  fn = () => closure_19(answer);
                                                                 }
                                                                 const obj = { onPress: fn, accessibilityLabel: formatToPlainString(AQbxhf, obj2), children: items1 };
                                                                 const intl = tmp2(tmp3[6]).intl;
@@ -554,7 +558,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                 const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
                                                                 items[0] = closure_6(projectId(onSubmit[15]).Text, obj4);
                                                                 let tmp8Result = null;
-                                                                const tmp7 = closure_5;
+                                                                const tmp7 = first1;
                                                                 if (true === answer.recommended) {
                                                                   const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(onSubmit[7]).zku6r1) };
                                                                   const Text = tmp2(tmp3[15]).Text;
@@ -590,7 +594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                         }
                                                         const obj19 = { style: tmp4.footer, children: items2 };
                                                         items2 = [tmp65, tmp69];
-                                                        const tmp76 = closure_7(closure_5, obj19);
+                                                        const tmp76 = closure_7(first1, obj19);
                                                         cResult[58] = tmp4.footer;
                                                         cResult[59] = tmp65;
                                                         cResult[60] = tmp69;
@@ -600,7 +604,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                     }
                                                     const obj20 = { style: tmp4.customField, children: items3 };
                                                     items3 = [tmp58, tmp62];
-                                                    const tmp68 = closure_7(closure_5, obj20);
+                                                    const tmp68 = closure_7(first1, obj20);
                                                     cResult[52] = tmp4.customField;
                                                     cResult[53] = tmp58;
                                                     cResult[54] = tmp62;
@@ -609,9 +613,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                   }
                                                   let tmp59 = null;
                                                   if (clarification.questions.length > 1) {
-                                                    const obj21 = { variant: "text-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(clarification(tmp2[7]).yzYUjq, obj22) };
+                                                    const obj21 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.formatToPlainString(clarification(tmp2[7]).yzYUjq, obj22) };
                                                     let Text = tmp(tmp2[15]).Text;
-                                                    intl3 = tmp(tmp2[6]).intl;
+                                                    intl2 = tmp(tmp2[6]).intl;
                                                     obj22 = { index: bound + 1, total: clarification.questions.length };
                                                     tmp59 = closure_6(Text, obj21);
                                                   }
@@ -627,12 +631,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                           if (!tmp27) {
                                             const obj23 = {
                                               size: "md",
-                                              placeholder: intl.string(clarification(tmp2[7])["tOC+tn"]),
-                                              accessibilityLabel: intl2.formatToPlainString(clarification(tmp2[7])["4JeYPB"], obj24),
+                                              placeholder: tmpResult11.clarificationDraftPlaceholder(tmp25),
+                                              accessibilityLabel: intl.formatToPlainString(clarification(tmp2[7])["4JeYPB"], obj24),
                                               value: str,
                                               onChange(arg0) {
                                                                                           let closure_0 = arg0;
-                                                                                          return closure_6((arg0) => {
+                                                                                          return closure_7((arg0) => {
                                                                                             const obj = {};
                                                                                             const merged = Object.assign(arg0);
                                                                                             obj[id.id] = closure_0;
@@ -640,19 +644,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                           });
                                                                                         },
                                               onSubmitEditing: tmp48,
+                                              onFocus() {
+                                                                                          let tmpResult;
+                                                                                          if (onInputFocusChange != null) {
+                                                                                            tmpResult = tmp(true);
+                                                                                          }
+                                                                                          return tmpResult;
+                                                                                        },
+                                              onBlur() {
+                                                                                          let tmpResult;
+                                                                                          if (onInputFocusChange != null) {
+                                                                                            tmpResult = tmp(false);
+                                                                                          }
+                                                                                          return tmpResult;
+                                                                                        },
                                               returnKeyType: "send"
                                             };
                                             const TextInput = tmp(tmp2[14]).TextInput;
+                                            tmpResult11 = tmp(tmp2[12]);
                                             intl = tmp(tmp2[6]).intl;
-                                            intl2 = tmp(tmp2[6]).intl;
                                             obj24 = { question: tmp25.question };
                                             tmp55 = closure_6(TextInput, obj23);
                                           }
                                           cResult[41] = tmp48;
                                           cResult[42] = str;
-                                          cResult[43] = tmp27;
-                                          cResult[44] = tmp25.id;
-                                          cResult[45] = tmp25.question;
+                                          cResult[43] = onInputFocusChange;
+                                          cResult[44] = tmp27;
+                                          cResult[45] = tmp25;
                                           cResult[46] = tmp55;
                                           tmp54 = tmp55;
                                         }
@@ -699,13 +717,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                   const trimmed = str.trim();
                                   if ("" !== trimmed) {
                                     const obj = { kind: "custom", text: trimmed };
-                                    closure_17(obj);
+                                    closure_18(obj);
                                   }
                                 } else if ("" !== multiSelectAnswerResult.text) {
-                                  closure_17(multiSelectAnswerResult);
+                                  closure_18(multiSelectAnswerResult);
                                 }
                               } else if ("" !== text.text) {
-                                closure_17(text);
+                                closure_18(text);
                               }
                             }
                             cResult[30] = str;
@@ -723,7 +741,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                       const input = tmp25.input;
                       let tmp42 = tmp18[tmp25.id];
                       const entityAnswer = tmp(tmp2[12]).entityAnswer;
-                      const tmpResult8 = tmp(tmp2[12]);
+                      const tmpResult12 = tmp(tmp2[12]);
                       if (tmp42 == null) {
                         tmp42 = closure_10;
                       }
@@ -737,25 +755,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                     cResult[27] = entityAnswerResult;
                     tmp39 = entityAnswerResult;
                   }
-                  function de() {
+                  function ue() {
                     const tmp = disabled || 0 === bound;
                     if (!tmp) {
-                      closure_10(bound - 1);
+                      closure_11(bound - 1);
                     }
                   }
                   cResult[19] = null == onSubmit;
                   cResult[20] = bound;
-                  cResult[21] = de;
-                  tmp33 = de;
+                  cResult[21] = ue;
+                  tmp33 = ue;
                 }
               }
             }
-            function re(arg0) {
+            function se(arg0) {
               let user;
               id = arg0;
-              const tmp = closure_14;
+              const tmp = closure_15;
               if (tmp) {
-                closure_7((arr) => {
+                closure_8((arr) => {
                   obj = {};
                   const merged = Object.assign(arr);
                   id = user.id;
@@ -770,8 +788,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                   return obj;
                 });
               } else {
-                let tmp2 = closure_6;
-                const tmp3 = closure_6((arg0) => {
+                let tmp2 = closure_7;
+                const tmp3 = closure_7((arg0) => {
                   obj = {};
                   const merged = Object.assign(arg0);
                   obj[user.id] = "";
@@ -779,16 +797,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                 });
                 let obj = { kind: "option", optionId: null, text: null };
                 ({ id: obj.optionId, label: obj.text } = arg0);
-                let tmp4 = closure_15;
+                let tmp4 = closure_16;
                 if (tmp4) {
-                  closure_5((arg0) => {
+                  closure_6((arg0) => {
                     obj = {};
                     const merged = Object.assign(arg0);
                     obj[user.id] = obj;
                     return obj;
                   });
                 } else {
-                  closure_17(obj);
+                  closure_18(obj);
                 }
               }
             }
@@ -796,20 +814,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             cResult[15] = tmp27;
             cResult[16] = tmp25;
             cResult[17] = tmp31;
-            cResult[18] = re;
-            tmp32 = re;
+            cResult[18] = se;
+            tmp32 = se;
           }
         }
       }
     }
   }
-  function le(arg0) {
+  function ne(arg0) {
     let result1;
     if (null != onSubmit) {
       let obj = {};
       const merged = Object.assign(first1);
       obj[id.id] = arg0;
-      closure_5(obj);
+      closure_6(obj);
       const obj4 = projectId(onSubmit[12]);
       let result = obj4.followingClarificationStep(result1, obj, bound);
       if (null == result) {
@@ -825,7 +843,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
           });
         }
       } else {
-        closure_10(result);
+        closure_11(result);
       }
     }
   }
@@ -835,17 +853,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   cResult[10] = onSubmit;
   cResult[11] = projectId;
   cResult[12] = tmp25.id;
-  cResult[13] = le;
-  tmp31 = le;
+  cResult[13] = ne;
+  tmp31 = ne;
 }) : (function ConjureClarificationCard(projectId) {
   let _undefined;
   let _undefined2;
   let _undefined3;
   let _undefined4;
   let answeredOptionIdsResult;
-  let c6;
   let c7;
   let c8;
+  let c9;
   let first;
   let first1;
   let intl;
@@ -853,16 +871,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let intl3;
   let intl4;
   let intl5;
-  let intl6;
   let items5;
   let items6;
   let items8;
   let obj10;
   let obj5;
+  let onDismiss;
   let optionHeader;
   let options;
   let string;
   let tmp10;
+  let tmp18Result9;
   let tmp4;
   let tmp40;
   let tmp52Result6;
@@ -874,55 +893,55 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   projectId = projectId.projectId;
   const clarification = projectId.clarification;
   const onSubmit = projectId.onSubmit;
-  const onDismiss = projectId.onDismiss;
+  ({ onDismiss, onInputFocusChange: _slicedToArray } = projectId);
   first = undefined;
-  c6 = undefined;
   c7 = undefined;
   c8 = undefined;
-  closure_9 = undefined;
-  let c16;
+  c9 = undefined;
+  closure_10 = undefined;
+  let c17;
   let callback;
   let callback1;
   let str;
-  let c20;
   let c21;
   let c22;
+  let c23;
   let tmp = c8();
-  _slicedToArray = tmp;
-  let obj = first;
-  [first, tmp4] = first.useState({});
-  let closure_5 = tmp4;
-  let tmp5 = _slicedToArray(first.useState({}), 2);
-  [tmp6, c6] = tmp5;
-  let tmp7 = _slicedToArray(first.useState({}), 2);
-  [tmp8, c7] = tmp7;
-  [tmp10, c8] = _slicedToArray(first.useState({}), 2);
-  const tmp9 = _slicedToArray(first.useState({}), 2);
-  [first1, closure_9] = first.useState({});
-  const tmp13 = _slicedToArray(first.useState(0), 2);
-  closure_10 = tmp13[1];
+  react = tmp;
+  let obj = react;
+  [first, tmp4] = react.useState({});
+  let closure_6 = tmp4;
+  let tmp5 = _slicedToArray(react.useState({}), 2);
+  [tmp6, c7] = tmp5;
+  let tmp7 = _slicedToArray(react.useState({}), 2);
+  [tmp8, c8] = tmp7;
+  [tmp10, c9] = _slicedToArray(react.useState({}), 2);
+  const tmp9 = _slicedToArray(react.useState({}), 2);
+  [first1, closure_10] = react.useState({});
+  const tmp13 = _slicedToArray(react.useState(0), 2);
+  let closure_11 = tmp13[1];
   let tmp14 = null == onSubmit;
   const disabled = tmp14;
   const bound = Math.min(tmp13[0], length - 1);
   let id = tmp16;
-  let closure_14 = tmp17;
+  let closure_15 = tmp17;
   const tmp18 = projectId;
   let obj2 = projectId(onSubmit[10]);
   const isImageQuestionResult = obj2.isImageQuestion(clarification.questions[bound]);
-  let c15 = isImageQuestionResult;
+  let c16 = isImageQuestionResult;
   if (true === clarification.questions[bound].multi_select) {
     let tmp22 = tmp8[tmp16.id];
     if (tmp22 == null) {
-      tmp22 = closure_9;
+      tmp22 = c9;
     }
     answeredOptionIdsResult = tmp22;
   } else {
     const tmp18Result = tmp18(onSubmit[10]);
     answeredOptionIdsResult = tmp18Result.answeredOptionIds(first[tmp16.id]);
   }
-  c16 = answeredOptionIdsResult;
-  const tmp18Result4 = tmp18(onSubmit[11]);
-  const conjureOwnImages = tmp18Result4.useConjureOwnImages(projectId, first, tmp4);
+  c17 = answeredOptionIdsResult;
+  const tmp18Result6 = tmp18(onSubmit[11]);
+  const conjureOwnImages = tmp18Result6.useConjureOwnImages(projectId, first, tmp4);
   let items = [first, clarification, bound, onSubmit, projectId, tmp16.id];
   callback = obj.useCallback((arg0) => {
     let result1;
@@ -930,7 +949,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       let obj = {};
       const merged = Object.assign(first);
       obj[id.id] = arg0;
-      closure_5(obj);
+      closure_6(obj);
       const obj4 = projectId(onSubmit[12]);
       let result = obj4.followingClarificationStep(result1, obj, bound);
       if (null == result) {
@@ -946,7 +965,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
           });
         }
       } else {
-        closure_10(result);
+        closure_11(result);
       }
     }
   }, items);
@@ -954,7 +973,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   callback1 = obj.useCallback((arg0) => {
     let user;
     id = arg0;
-    const tmp = closure_14;
+    const tmp = closure_15;
     if (tmp) {
       _undefined2((arr) => {
         obj = {};
@@ -980,9 +999,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       });
       let obj = { kind: "option", optionId: null, text: null };
       ({ id: obj.optionId, label: obj.text } = arg0);
-      let tmp4 = c15;
+      let tmp4 = c16;
       if (tmp4) {
-        closure_5((arg0) => {
+        closure_6((arg0) => {
           obj = {};
           const merged = Object.assign(arg0);
           obj[user.id] = obj;
@@ -998,7 +1017,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   const callback2 = obj.useCallback(() => {
     const tmp = disabled || 0 === bound;
     if (!tmp) {
-      closure_10(bound - 1);
+      closure_11(bound - 1);
     }
   }, items2);
   if (str == null) {
@@ -1006,22 +1025,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   }
   let multiSelectAnswerResult = null;
   if (true === clarification.questions[bound].multi_select) {
-    const tmp18Result5 = tmp18(onSubmit[12]);
-    multiSelectAnswerResult = tmp18Result5.multiSelectAnswer(tmp16, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp16));
+    const tmp18Result7 = tmp18(onSubmit[12]);
+    multiSelectAnswerResult = tmp18Result7.multiSelectAnswer(tmp16, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp16));
   }
-  c20 = multiSelectAnswerResult;
+  c21 = multiSelectAnswerResult;
   let entityAnswerResult = null;
   if (null != clarification.questions[bound].input) {
     const input = tmp16.input;
     let tmp33 = tmp10[tmp16.id];
     const entityAnswer = tmp18(onSubmit[12]).entityAnswer;
-    const tmp18Result6 = tmp18(onSubmit[12]);
+    const tmp18Result8 = tmp18(onSubmit[12]);
     if (tmp33 == null) {
       tmp33 = closure_10;
     }
     entityAnswerResult = entityAnswer(input, tmp33, str, first1[tmp16.id]);
   }
-  c21 = entityAnswerResult;
+  c22 = entityAnswerResult;
   const items3 = [tmp16.id];
   const items4 = [str, multiSelectAnswerResult, entityAnswerResult, callback];
   const callback3 = obj.useCallback((arg0, arg1) => {
@@ -1034,7 +1053,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       obj[user.id] = closure_0;
       return obj;
     });
-    closure_9((arg0) => {
+    closure_10((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
       obj[user.id] = closure_1;
@@ -1042,18 +1061,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     });
   }, items3);
   const callback4 = obj.useCallback(() => {
-    if (null == _undefined4) {
-      if (null == _undefined3) {
+    if (null == _undefined3) {
+      if (null == _undefined2) {
         const trimmed = str.trim();
         if ("" !== trimmed) {
           const obj = { kind: "custom", text: trimmed };
           callback(obj);
         }
-      } else if ("" !== _undefined3.text) {
-        callback(_undefined3);
+      } else if ("" !== _undefined2.text) {
+        callback(_undefined2);
       }
-    } else if ("" !== _undefined4.text) {
-      callback(_undefined4);
+    } else if ("" !== _undefined3.text) {
+      callback(_undefined3);
     }
   }, items4);
   if (null != entityAnswerResult) {
@@ -1080,13 +1099,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       }
     }
   }
-  c22 = tmp40;
+  c23 = tmp40;
   let tmp43 = null;
   if (!isImageQuestionResult) {
     let obj4 = {
       size: "md",
-      placeholder: intl.string(clarification(tmp19[7])["tOC+tn"]),
-      accessibilityLabel: intl2.formatToPlainString(clarification(tmp19[7])["4JeYPB"], obj5),
+      placeholder: tmp18Result9.clarificationDraftPlaceholder(tmp16),
+      accessibilityLabel: intl.formatToPlainString(clarification(tmp19[7])["4JeYPB"], obj5),
       value: str,
       onChange(arg0) {
           let closure_0 = arg0;
@@ -1098,13 +1117,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
           });
         },
       onSubmitEditing: callback4,
+      onFocus() {
+          let tmpResult;
+          if (_slicedToArray != null) {
+            tmpResult = tmp(true);
+          }
+          return tmpResult;
+        },
+      onBlur() {
+          let tmpResult;
+          if (_slicedToArray != null) {
+            tmpResult = tmp(false);
+          }
+          return tmpResult;
+        },
       returnKeyType: "send"
     };
     const TextInput = tmp18(tmp19[14]).TextInput;
+    tmp18Result9 = tmp18(onSubmit[12]);
     intl = tmp18(tmp19[6]).intl;
-    intl2 = tmp18(tmp19[6]).intl;
     obj5 = { question: tmp16.question };
-    tmp43 = c6(TextInput, obj4);
+    tmp43 = closure_6(TextInput, obj4);
   }
   let obj6 = { style: tmp.card, children: null };
   let tmp50 = null;
@@ -1112,30 +1145,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   const obj8 = { style: tmp.customField, children: items5 };
   const tmp48 = clarification(onSubmit[24]);
   if (clarification.questions.length > 1) {
-    const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(clarification(onSubmit[7]).yzYUjq, obj10) };
+    const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.formatToPlainString(clarification(onSubmit[7]).yzYUjq, obj10) };
     let Text = tmp18(tmp19[15]).Text;
-    intl3 = tmp18(tmp19[6]).intl;
+    intl2 = tmp18(tmp19[6]).intl;
     obj10 = { index: bound + 1, total: clarification.questions.length };
-    tmp50 = c6(Text, obj9);
+    tmp50 = closure_6(Text, obj9);
   }
   items5 = [tmp50, ];
   const obj11 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: clarification.questions[bound].question };
-  items5[1] = c6(tmp18(onSubmit[15]).Text, obj11);
-  items6 = [c7(closure_5, obj8), ];
+  items5[1] = closure_6(tmp18(onSubmit[15]).Text, obj11);
+  items6 = [c7(first, obj8), ];
   let tmp52Result = null;
   if (null != onDismiss) {
-    const obj12 = { variant: "tertiary", size: "sm", icon: c6(tmp18(onSubmit[17]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(clarification(onSubmit[7]).qVXlk0) };
+    const obj12 = { variant: "tertiary", size: "sm", icon: closure_6(tmp18(onSubmit[17]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl3.string(clarification(onSubmit[7]).qVXlk0) };
     const IconButton = tmp18(tmp19[16]).IconButton;
-    intl4 = tmp18(tmp19[6]).intl;
+    intl3 = tmp18(tmp19[6]).intl;
     tmp52Result = tmp52(IconButton, obj12);
   }
   items6[1] = tmp52Result;
-  const items7 = [c7(closure_5, obj7), , , , , ];
+  const items7 = [c7(first, obj7), , , , , ];
   let tmp52Result5 = null;
   if (true === clarification.questions[bound].multi_select) {
-    const obj13 = { variant: "text-xs/normal", color: "text-muted", children: intl5.string(clarification(onSubmit[7]).tE8qbz) };
+    const obj13 = { variant: "text-xs/normal", color: "text-muted", children: intl4.string(clarification(onSubmit[7]).tE8qbz) };
     const Text2 = tmp18(tmp19[15]).Text;
-    intl5 = tmp18(tmp19[6]).intl;
+    intl4 = tmp18(tmp19[6]).intl;
     tmp52Result5 = tmp52(Text2, obj13);
   }
   items7[1] = tmp52Result5;
@@ -1160,7 +1193,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             }
           };
           const TableCheckboxRow = projectId(onSubmit[20]).TableCheckboxRow;
-          const tmp = c6;
+          const tmp = closure_6;
           const tmp2 = projectId;
           if (true === label.recommended) {
             const intl = tmp2(tmp3[6]).intl;
@@ -1172,7 +1205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f112414);
+          const found = items.filter(f112544);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");
@@ -1196,7 +1229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       let closure_0 = answer;
       let fn;
       const Card = projectId(onSubmit[21]).Card;
-      if (!closure_11) {
+      if (!closure_12) {
         fn = () => callback1(answer);
       }
       const obj = { onPress: fn, accessibilityLabel: formatToPlainString(AQbxhf, obj2), children: items1 };
@@ -1213,9 +1246,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       items = [, ];
       obj2 = { answer: answer.label };
       const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
-      items[0] = _undefined(projectId(onSubmit[15]).Text, obj4);
+      items[0] = closure_6(projectId(onSubmit[15]).Text, obj4);
       let tmp8Result = null;
-      const tmp7 = closure_5;
+      const tmp7 = first;
       if (true === answer.recommended) {
         const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(onSubmit[7]).zku6r1) };
         const Text = tmp2(tmp3[15]).Text;
@@ -1223,7 +1256,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         tmp8Result = tmp8(Text, obj5);
       }
       items[1] = tmp8Result;
-      items1 = [_undefined2(tmp7, obj3), ];
+      items1 = [_undefined(tmp7, obj3), ];
       let tmp8Result2 = null;
       if (null != answer.detail) {
         tmp8Result2 = null;
@@ -1233,7 +1266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         }
       }
       items1[1] = tmp8Result2;
-      return _undefined2(Card, obj, answer.id);
+      return _undefined(Card, obj, answer.id);
     });
   }
   items7[2] = tmp52Result6;
@@ -1259,13 +1292,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   items7[4] = tmp61;
   if (clarification.questions.length <= 1) {
     if (true !== clarification.questions[bound].multi_select) {
-      let tmp46Result;
       if (!isImageQuestionResult) {
-        tmp46Result = null;
+        let tmp46Result;
+        if (null == clarification.questions[bound].input) {
+          tmp46Result = null;
+          tmp18(onSubmit[12]);
+        }
+        items7[5] = tmp46Result;
+        obj6.children = items7;
+        return c7(tmp48, obj6);
       }
-      items7[5] = tmp46Result;
-      obj6.children = items7;
-      return c7(tmp48, obj6);
     }
   }
   let tmp52Result8 = null;
@@ -1273,15 +1309,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   if (bound > 0) {
     tmp52Result8 = null;
     if (!tmp14) {
-      const obj18 = { variant: "tertiary", size: "sm", text: intl6.string(clarification(onSubmit[7]).Pk5lfA), onPress: callback2 };
+      const obj18 = { variant: "tertiary", size: "sm", text: intl5.string(clarification(onSubmit[7]).Pk5lfA), onPress: callback2 };
       const Button = tmp18(tmp19[23]).Button;
-      intl6 = tmp18(tmp19[6]).intl;
+      intl5 = tmp18(tmp19[6]).intl;
       tmp52Result8 = tmp52(Button, obj18);
     }
   }
   items8 = [tmp52Result8, , ];
   const obj19 = { style: tmp.customField };
-  items8[1] = c6(closure_5, obj19);
+  items8[1] = closure_6(first, obj19);
   const Button2 = tmp18(tmp19[23]).Button;
   if (!tmp14) {
     tmp14 = null == tmp40;
@@ -1292,19 +1328,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     disabled: tmp14,
     text: string(w1nRmT),
     onPress() {
-      if (null != c22) {
+      if (null != c23) {
         callback(tmp);
       }
     }
   };
-  const intl7 = tmp18(tmp19[6]).intl;
-  string = intl7.string;
+  const intl6 = tmp18(tmp19[6]).intl;
+  string = intl6.string;
   if (bound === clarification.questions.length - 1) {
     w1nRmT = tmp18(tmp19[6]).t.geKm7t;
   } else {
     w1nRmT = tmp47(tmp19[7]).w1nRmT;
   }
-  items8[2] = c6(Button2, obj20);
+  items8[2] = closure_6(Button2, obj20);
   tmp46Result = tmp46(tmp49, obj17);
 });
 let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureClarificationCard.tsx");

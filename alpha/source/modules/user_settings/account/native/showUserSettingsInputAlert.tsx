@@ -1,10 +1,10 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15816
+// Function ID: 15817
 // Name: showUserSettingsInputAlert
-// Dependencies: [19, 21, 5400, 15813, 2002, 1128, 5498, 2]
+// Dependencies: [19, 21, 5400, 15817, 2002, 1128, 5498, 2]
 // Exports: default
 
-// Module 15812 (showUserSettingsInputAlert)
+// Module 15816 (showUserSettingsInputAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -27,7 +27,7 @@ export default function showUserSettingsInputAlert(arg0) {
       let onError;
       let onSubmit;
       let onSuccess;
-      const promise = asyncRequire(15813, dependencyMap.paths);
+      const promise = asyncRequire(15817, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

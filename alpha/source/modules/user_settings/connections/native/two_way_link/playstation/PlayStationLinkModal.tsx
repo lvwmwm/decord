@@ -1,9 +1,9 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13855
+// Function ID: 13856
 // Name: PlayStationLinkModal
-// Dependencies: [19, 13852, 21, 558, 576, 13850, 7365, 7995, 1128, 13853, 9518, 13855, 13857, 13859, 13860, 9517, 13849, 6965, 2]
+// Dependencies: [19, 13856, 21, 558, 576, 13854, 7365, 7995, 1128, 13857, 9518, 13859, 13861, 13863, 13864, 9517, 13853, 6965, 2]
 
-// Module 13851 (PlayStationLinkModal)
+// Module 13855 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -11,14 +11,14 @@ import Navigator2 from "Navigator" /* 6965 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7995 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
-import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13849 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13850 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 13852 */;
-import PlayStationLinkLanding from "PlayStationLinkLanding" /* 13853 */;
-import PlayStationLinkPreConnect from "PlayStationLinkPreConnect" /* 13855 */;
-import PlayStationLinkDiscordConsent from "PlayStationLinkDiscordConsent" /* 13857 */;
-import PlayStationLinkSuccess from "PlayStationLinkSuccess" /* 13859 */;
-import PlayStationLinkError from "PlayStationLinkError" /* 13860 */;
+import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13853 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13854 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 13856 */;
+import PlayStationLinkLanding from "PlayStationLinkLanding" /* 13857 */;
+import PlayStationLinkPreConnect from "PlayStationLinkPreConnect" /* 13859 */;
+import PlayStationLinkDiscordConsent from "PlayStationLinkDiscordConsent" /* 13861 */;
+import PlayStationLinkSuccess from "PlayStationLinkSuccess" /* 13863 */;
+import PlayStationLinkError from "PlayStationLinkError" /* 13864 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -174,7 +174,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(platformType, twoWayLinkStyles), items);
-  const obj2 = platformType(13849);
+  const obj2 = platformType(13853);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(platformType, locationStack);
   const Navigator = platformType(6965).Navigator;
   const intl = platformType(1128).intl;

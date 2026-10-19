@@ -1,10 +1,10 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 11090
+// Function ID: 11091
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 9906, 9683, 6221, 2090, 5207, 558, 576, 12, 504, 568, 6357, 1388, 7688, 11072, 9682, 11073, 2]
+// Dependencies: [32, 19, 17, 9906, 9683, 6221, 2090, 5207, 558, 576, 12, 504, 568, 6357, 1388, 7688, 11091, 9682, 11092, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11071 (MessagesHooks)
+// Module 11090 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
@@ -13,7 +13,7 @@ import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6357
 import InviteTypeUtils from "InviteTypeUtils" /* 7688 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 9682 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9683 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11073 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9906 */;
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11072);
+            let tmp4Result = tmp4(11091);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11072);
+            let tmp4Result = tmp4(11091);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

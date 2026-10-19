@@ -1,9 +1,9 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12262
+// Function ID: 12263
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 10843, 7182, 8817, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 10859, 7182, 8817, 2]
 
-// Module 12244 (ConjureNativeCollapsibleSection)
+// Module 12262 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -87,7 +87,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
   }
   const tmp7 = closure_6();
   if (undefined === expanded || expanded) {
-    ChevronSmallRightIcon = tmp(10843).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(10859).ChevronSmallDownIcon;
   } else {
     ChevronSmallRightIcon = tmp(7182).ChevronSmallRightIcon;
   }
@@ -206,7 +206,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(10843).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(10859).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
     ChevronSmallRightIcon = tmp2(7182).ChevronSmallRightIcon;

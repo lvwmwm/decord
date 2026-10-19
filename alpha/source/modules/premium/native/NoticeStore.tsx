@@ -1,9 +1,9 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14800
+// Function ID: 14801
 // Name: NoticeStore
 // Dependencies: [7439, 1394, 1087, 510, 4797, 504, 584, 2]
 
-// Module 14796 (NoticeStore)
+// Module 14800 (NoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

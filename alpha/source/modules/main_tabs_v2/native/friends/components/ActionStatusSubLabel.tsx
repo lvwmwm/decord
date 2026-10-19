@@ -1,9 +1,9 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17584
+// Function ID: 17585
 // Name: ActionStatusSubLabel
 // Dependencies: [19, 21, 5191, 4923, 4945, 5187, 558, 576, 5486, 5192, 2]
 
-// Module 17580 (ActionStatusSubLabel)
+// Module 17584 (ActionStatusSubLabel)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
 import Text_Text from "Text/Text" /* 5187 */;

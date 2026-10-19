@@ -1,9 +1,9 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10943
+// Function ID: 10944
 // Name: useBotProfileCommands
 // Dependencies: [19, 558, 576, 10107, 2000, 2]
 
-// Module 10927 (useBotProfileCommands)
+// Module 10943 (useBotProfileCommands)
 import react2 from "react" /* 576 */;
 import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10107 */;
 import react from "react" /* 19 */;

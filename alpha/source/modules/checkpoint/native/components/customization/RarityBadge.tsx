@@ -1,16 +1,16 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12796
+// Function ID: 12797
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 5537, 21, 5191, 587, 558, 576, 5538, 7843, 12737, 1128, 5187, 9327, 2]
+// Dependencies: [32, 19, 17, 5537, 21, 5191, 587, 558, 576, 5538, 7843, 12754, 1128, 5187, 9327, 2]
 
-// Module 12779 (RarityBadge)
+// Module 12796 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
 import inlineStyles from "inlineStyles" /* 7843 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12737 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;

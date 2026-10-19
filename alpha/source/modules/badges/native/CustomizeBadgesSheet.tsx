@@ -1,10 +1,10 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15643
+// Function ID: 15644
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8558, 1392, 8590, 1087, 7119, 1394, 21, 5191, 587, 5156, 9664, 15640, 558, 576, 1128, 6929, 6927, 9662, 5145, 10880, 5187, 6459, 10889, 8817, 6923, 4945, 5192, 5195, 14168, 9663, 6612, 4923, 10882, 1633, 504, 4864, 7130, 7155, 7120, 9693, 9694, 8589, 1267, 8595, 4904, 1499, 11892, 15641, 6433, 7118, 7117, 6584, 2]
+// Dependencies: [19, 17, 8558, 1392, 8590, 1087, 7119, 1394, 21, 5191, 587, 5156, 9664, 15644, 558, 576, 1128, 6929, 6927, 9662, 5145, 10896, 5187, 6459, 10905, 8817, 6923, 4945, 5192, 5195, 14172, 9663, 6612, 4923, 10898, 1633, 504, 4864, 7130, 7155, 7120, 9693, 9694, 8589, 1267, 8595, 4904, 1499, 11911, 15645, 6433, 7118, 7117, 6584, 2]
 // Exports: default
 
-// Module 15639 (CustomizeBadgesSheet)
+// Module 15643 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -29,11 +29,11 @@ import ContextMenuState from "ContextMenuState" /* 9663 */;
 import ContextMenuConstants from "ContextMenuConstants" /* 9664 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10880 */;
-import BadgeUtils from "BadgeUtils" /* 10889 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11892 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14168 */;
-import BadgeGrid from "BadgeGrid" /* 15640 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10896 */;
+import BadgeUtils from "BadgeUtils" /* 10905 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11911 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14172 */;
+import BadgeGrid from "BadgeGrid" /* 15644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
@@ -129,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(15640).BADGE_GRID_COLUMNS;
+            const result = index % tmp(15644).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -211,7 +211,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(15640).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(15644).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

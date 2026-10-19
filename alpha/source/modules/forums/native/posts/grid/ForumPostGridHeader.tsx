@@ -1,17 +1,17 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 12864
+// Function ID: 12865
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7257, 2075, 21, 5191, 558, 576, 12848, 12850, 12860, 12861, 12862, 2]
+// Dependencies: [19, 17, 7257, 2075, 21, 5191, 558, 576, 12865, 12867, 12877, 12878, 12879, 2]
 
-// Module 12847 (ForumPostGridHeader)
+// Module 12864 (ForumPostGridHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ChannelConstants from "ChannelConstants" /* 2075 */;
 import ForumConstants from "ForumConstants" /* 7257 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12848 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12860 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 12861 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 12862 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12865 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12877 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 12878 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 12879 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostUsername = tmp(12850);
+const ForumPostUsername = tmp(12867);
 const View = react_native.View;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   const obj4 = { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText };
   items[2] = metroRequire(ForumPostTimestampDefault, obj4);
   if (isNew) {
-    isNew = tmp8(tmp10(12861), {});
+    isNew = tmp8(tmp10(12878), {});
   }
   items[3] = isNew;
   items1 = [metroImportDefault(View, obj2), ];

@@ -1,9 +1,9 @@
-// Module ID: 16382
-// Function ID: 16383
+// Module ID: 16386
+// Function ID: 16387
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1087, 2065, 21, 2052, 558, 576, 7376, 1202, 1128, 11065, 16383, 16385, 2]
+// Dependencies: [32, 19, 1087, 2065, 21, 2052, 558, 576, 7376, 1202, 1128, 11084, 16387, 16389, 2]
 
-// Module 16382 (AccessibilitySetting)
+// Module 16386 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,11 +11,11 @@ import intl2 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 2052 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7376 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 16383 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 16387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

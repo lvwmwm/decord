@@ -1,19 +1,19 @@
-// Module ID: 14085
-// Function ID: 14086
+// Module ID: 14089
+// Function ID: 14090
 // Name: getActivityJoinability
-// Dependencies: [1087, 11196, 11193, 11297, 11228, 7288, 14086, 1384, 11190, 11191, 11192, 2]
+// Dependencies: [1087, 11215, 11212, 11315, 11247, 7288, 14090, 1384, 11209, 11210, 11211, 2]
 // Exports: default
 
-// Module 14085 (getActivityJoinability)
+// Module 14089 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import hasFlagDefault from "hasFlag" /* 7288 */;
-import _slicedToArray from "_slicedToArray" /* 11190 */;
-import hasPartySize from "hasPartySize" /* 11191 */;
-import getIsInParty from "getIsInParty" /* 11193 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11196 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11228 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11297 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14086 */;
+import _slicedToArray from "_slicedToArray" /* 11209 */;
+import hasPartySize from "hasPartySize" /* 11210 */;
+import getIsInParty from "getIsInParty" /* 11212 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11215 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11247 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11315 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14090 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ export default function getActivityJoinability(arg0) {
       const obj4 = hasPartySize;
       const tmp28 = require;
       if (obj4.hasPartySize(partySize)) {
-        const tmp28Result = tmp28(11192);
+        const tmp28Result = tmp28(11211);
         if (!tmp28Result.isPartyFull(partySize)) {
           const tmp31 = importDefault;
           const tmp32 = constants;

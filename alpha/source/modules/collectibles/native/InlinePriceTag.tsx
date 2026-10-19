@@ -1,9 +1,9 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14227
+// Function ID: 14228
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 7403, 1089, 1087, 21, 5191, 587, 558, 576, 5187, 1995, 7541, 7542, 9331, 1128, 683, 4913, 5155, 14224, 2002, 7155, 5491, 1384, 9327, 7182, 8576, 4864, 14229, 9373, 14230, 9350, 14231, 504, 9364, 9365, 2]
+// Dependencies: [19, 17, 7403, 1089, 1087, 21, 5191, 587, 558, 576, 5187, 1995, 7541, 7542, 9331, 1128, 683, 4913, 5155, 14228, 2002, 7155, 5491, 1384, 9327, 7182, 8576, 4864, 14233, 9373, 14234, 9350, 14235, 504, 9364, 9365, 2]
 
-// Module 14223 (InlinePriceTag)
+// Module 14227 (InlinePriceTag)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -27,8 +27,8 @@ import OrbsIcon from "OrbsIcon" /* 9331 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9350 */;
 import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9364 */;
 import useProductDisableState from "useProductDisableState" /* 9373 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14229 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 14231 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14233 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 14235 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import IAPStore from "IAPStore" /* 7403 */;
@@ -53,7 +53,7 @@ let obj4;
 let obj5;
 let tmp10;
 let unpackModuleId;
-const MobileNitroUpsellInShopPdpExperimentDefault = tmp10(14230);
+const MobileNitroUpsellInShopPdpExperimentDefault = tmp10(14234);
 function ExpressiveNitroUpsell(arg0) {
   let defaultPriceFormatted;
   let intl;
@@ -87,7 +87,7 @@ function ExpressiveNitroUpsell(arg0) {
       const tmp4 = dependencyMap;
       if (tmp4) {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        const tmp11 = asyncRequire(14224, dependencyMap.paths);
+        const tmp11 = asyncRequire(14228, dependencyMap.paths);
         const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
         items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL];
         intl = intl3.intl;

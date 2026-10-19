@@ -1,7 +1,7 @@
 // Module ID: 7750
 // Function ID: 7751
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6352, 7751, 6148, 5155, 7753, 2002, 7984, 7987, 14363, 7748, 5072, 6190, 11207, 8577, 7986, 2]
+// Dependencies: [6352, 7751, 6148, 5155, 7753, 2002, 7984, 7987, 14367, 7748, 5072, 6190, 11226, 8577, 7986, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 7750 (StageChannelActionCreatorExtras)
@@ -46,7 +46,7 @@ export const openStageSettingsSheet = function openStageSettingsSheet(channelId,
 export const openEndStageModal = function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(14363, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(14367, dependencyMap.paths), metroImportAll, obj2);
 };
 export const openStageChannel = function openStageChannel(isGuildStageVoice) {
   if (isGuildStageVoice.isGuildStageVoice()) {
@@ -60,7 +60,7 @@ export const openStageChannel = function openStageChannel(isGuildStageVoice) {
     if (!obj3.isModalOpen(voiceChannelKey)) {
       const obj = { channel: isGuildStageVoice };
       const obj4 = ModalActionCreatorsDefault;
-      obj4.pushLazy(tmp3(2002)(11207, tmp4.paths), obj, voiceChannelKey);
+      obj4.pushLazy(tmp3(2002)(11226, tmp4.paths), obj, voiceChannelKey);
     }
   }
 };
@@ -92,7 +92,7 @@ export const navigateToStage = function navigateToStage(id, arg1) {
     if (!obj3.isModalOpen(voiceChannelKey)) {
       const obj = { channel: id };
       const obj4 = ModalActionCreatorsDefault;
-      obj4.pushLazy(tmp5(2002)(11207, tmp6.paths), obj, voiceChannelKey);
+      obj4.pushLazy(tmp5(2002)(11226, tmp6.paths), obj, voiceChannelKey);
     }
   }
 };

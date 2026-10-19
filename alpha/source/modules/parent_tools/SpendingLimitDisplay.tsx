@@ -1,15 +1,15 @@
-// Module ID: 15951
-// Function ID: 15952
+// Module ID: 15955
+// Function ID: 15956
 // Name: SpendingLimitDisplay
-// Dependencies: [1246, 7525, 1394, 558, 576, 504, 15862, 7216, 7217, 1128, 2589, 2]
+// Dependencies: [1246, 7525, 1394, 558, 576, 504, 15866, 7216, 7217, 1128, 2589, 2]
 
-// Module 15951 (SpendingLimitDisplay)
+// Module 15955 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _modDef2589 from "module_2589" /* 2589 */;
 import PriceUtils from "PriceUtils" /* 7216 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15862 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15866 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7525 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

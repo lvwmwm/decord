@@ -1,9 +1,9 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14174
+// Function ID: 14175
 // Name: UserProfileRecentActivityMobileExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 14170 (UserProfileRecentActivityMobileExperiment)
+// Module 14174 (UserProfileRecentActivityMobileExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

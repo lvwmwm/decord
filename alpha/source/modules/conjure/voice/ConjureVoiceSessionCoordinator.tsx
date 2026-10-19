@@ -1,20 +1,20 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15486
+// Function ID: 15487
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [11703, 502, 2014, 5209, 1392, 5212, 1087, 5216, 5346, 9169, 15483, 1281, 15486, 12, 5343, 15487, 15484, 6313, 2]
+// Dependencies: [11722, 502, 2014, 5209, 1392, 5212, 1087, 5216, 5346, 9169, 15487, 1281, 15490, 12, 5343, 15491, 15488, 6313, 2]
 
-// Module 15482 (ConjureVoiceSessionCoordinator)
+// Module 15486 (ConjureVoiceSessionCoordinator)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1087 */;
 import v1 from "v1" /* 1281 */;
 import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5346 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
 import RPCErrorDefault from "RPCError" /* 9169 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15483 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15484 */;
-import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 15486 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15487 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 11703 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15487 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15488 */;
+import ConjureVoiceAcoustics from "ConjureVoiceAcoustics" /* 15490 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15491 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 11722 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
@@ -250,7 +250,7 @@ class ConjureVoiceSessionCoordinator {
         const tmp18 = new RPCErrorDefault(obj3, roomError);
         throw tmp18;
       } else {
-        const tmp9Result = tmp9(15486);
+        const tmp9Result = tmp9(15490);
         validateSessionResult.acoustics = tmp9Result.toSpatialAudioOverrides(acoustics);
         const result = self.syncSpatialAudioOverrides();
       }

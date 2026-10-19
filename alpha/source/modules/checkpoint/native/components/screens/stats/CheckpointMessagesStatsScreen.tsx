@@ -1,9 +1,9 @@
-// Module ID: 12755
-// Function ID: 12756
+// Module ID: 12772
+// Function ID: 12773
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 12725, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3109, 3141, 12749, 12751, 12756, 8471, 12747, 12753, 12754, 2]
+// Dependencies: [17, 12742, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3109, 3141, 12766, 12768, 12773, 8471, 12764, 12770, 12771, 2]
 
-// Module 12755 (CheckpointMessagesStatsScreen)
+// Module 12772 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -12,13 +12,13 @@ import _modDef3109 from "module_3109" /* 3109 */;
 import _modDef3141 from "module_3141" /* 3141 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import ChatIcon from "ChatIcon" /* 8471 */;
-import CheckpointTextDefault from "CheckpointText" /* 12747 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12749 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12751 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12753 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12754 */;
-import _modDef12756 from "module_12756" /* 12756 */;
-import CheckpointStore from "CheckpointStore" /* 12725 */;
+import CheckpointTextDefault from "CheckpointText" /* 12764 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12766 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12768 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12770 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12771 */;
+import _modDef12773 from "module_12773" /* 12773 */;
+import CheckpointStore from "CheckpointStore" /* 12742 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   const tmp31Result = CheckpointScreenDefault;
   const container = tmp4.container;
   if (cResult[27] !== tmp4.image) {
-    const obj13 = { uri: _modDef12756, style: tmp4.image };
+    const obj13 = { uri: _modDef12773, style: tmp4.image };
     const tmp31Result3 = CheckpointApngPlayerDefault;
     const tmp38 = metroRequire(tmp31Result3, obj13);
     cResult[27] = tmp4.image;
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   }
   const obj3 = { style: tmp.container, children: items1 };
   const obj4 = { style: tmp.imageContainer, children: metroRequire(tmp8Result4, obj5) };
-  obj5 = { uri: _modDef12756, style: tmp.image };
+  obj5 = { uri: _modDef12773, style: tmp.image };
   const tmp8Result = CheckpointScreenDefault;
   tmp8Result4 = CheckpointApngPlayerDefault;
   items1 = [metroRequire(View, obj4), ];

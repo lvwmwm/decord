@@ -1,65 +1,88 @@
 // Module ID: 15123
 // Function ID: 15124
-// Dependencies: [41, 42]
+// Dependencies: [15119, 15120, 15117, 15121, 15118, 15122]
 
 // Module 15123
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod15117 from "module_15117" /* 15117 */;
+import _mod15118 from "module_15118" /* 15118 */;
+import _mod15119 from "module_15119" /* 15119 */;
+import _mod15120 from "module_15120" /* 15120 */;
+import _mod15121 from "module_15121" /* 15121 */;
+import _mod15122 from "module_15122" /* 15122 */;
 
-let map;
 
-class LRUCache {
-  constructor() {
-    _classCallCheck(this, LRUCache);
-    this.max = 1000;
-    this.map = new Map();
-    new Map();
-  }
-}
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    map = this.map;
-    const value = map.get(arg0);
-    let tmp2;
-    if (undefined !== value) {
-      const map2 = self.map;
-      map2.delete(arg0);
-      const map3 = self.map;
-      const result = map3.set(arg0, value);
-      tmp2 = value;
+export default function(version, arg1, version2, arg3) {
+  let tmp13;
+  let tmp13Result;
+  switch (arg1) {
+    case "===":
+    {
+      let version3 = version;
+      if (typeof version === "object") {
+        version3 = version.version;
+      }
+      let version4 = version2;
+      if (typeof version2 === "object") {
+        version4 = version2.version;
+      }
+      return version3 === version4;
     }
-    return tmp2;
+    case "!==":
+    {
+      if (typeof version === "object") {
+        const versionValue = version.version;
+      }
+      if (typeof version2 === "object") {
+        version2 = version2.version;
+      }
+      return version !== version2;
+    }
+    case "":
+    {
+      tmp13 = _mod15119;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "=":
+    {
+      tmp13 = _mod15119;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "==":
+    {
+      tmp13 = _mod15119;
+      tmp13Result = tmp13(version, version2, arg3);
+      return tmp13Result;
+    }
+    case "!=":
+    {
+      return _mod15120(version, version2, arg3);
+    }
+    case ">":
+    {
+      return _mod15117(version, version2, arg3);
+    }
+    case ">=":
+    {
+      return _mod15121(version, version2, arg3);
+    }
+    case "<":
+    {
+      return _mod15118(version, version2, arg3);
+    }
+    case "<=":
+    {
+      return _mod15122(version, version2, arg3);
+    }
+    default:
+    {
+      const _TypeError = TypeError;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const typeError = new TypeError("Invalid operator: " + arg1);
+      throw typeError;
+    }
   }
 };
-const items = [
-  entry,
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      map = this.map;
-      return map.delete(arg0);
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      const self = this;
-      if (!this.delete(arg0)) {
-        if (undefined !== arg1) {
-          if (self.map.size >= self.max) {
-            map = self.map;
-            const iter = map.keys();
-            self.delete(iter.next().value);
-          }
-          const map2 = self.map;
-          const result = map2.set(arg0, arg1);
-        }
-      }
-      return self;
-    }
-  }
-];
-
-export default _createClass(LRUCache, items);

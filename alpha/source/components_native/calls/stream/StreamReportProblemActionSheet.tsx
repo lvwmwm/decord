@@ -1,9 +1,9 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18348
+// Function ID: 18349
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 5207, 1087, 21, 5191, 587, 558, 576, 7691, 1267, 5496, 18345, 5155, 4903, 18346, 7171, 7117, 1128, 7175, 6584, 2]
+// Dependencies: [19, 5207, 1087, 21, 5191, 587, 558, 576, 7691, 1267, 5496, 18349, 5155, 4903, 18350, 7171, 7117, 1128, 7175, 6584, 2]
 
-// Module 18344 (StreamReportProblemActionSheet)
+// Module 18348 (StreamReportProblemActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -17,8 +17,8 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
 import ActionSheetRow from "ActionSheetRow" /* 7171 */;
 import ActionSheet2 from "ActionSheet" /* 7175 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 18345 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 18346 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 18349 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 18350 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5207 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -111,7 +111,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProb
     cResult[10] = tmp19;
     tmp17 = tmp19;
   }
-  const arr = tmp6(18346)({ isStreamer: false, isEndStream: false });
+  const arr = tmp6(18350)({ isStreamer: false, isEndStream: false });
   const mapped = arr.map((label, index) => {
     let value;
     stream = label.value;

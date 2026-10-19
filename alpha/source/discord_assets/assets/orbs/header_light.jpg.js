@@ -1,8 +1,8 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 16928
+// Function ID: 16929
 // Dependencies: [2]
 
-// Module 16924
+// Module 16928
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/header_light.jpg.js");

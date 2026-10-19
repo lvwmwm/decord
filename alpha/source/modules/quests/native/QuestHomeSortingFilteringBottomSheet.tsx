@@ -1,9 +1,9 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16046
+// Function ID: 16047
 // Name: QuestHomeSortingFilteringBottomSheet
 // Dependencies: [32, 19, 17, 6228, 21, 5191, 587, 558, 576, 1128, 5479, 7092, 6214, 5462, 5065, 5155, 9473, 7117, 6539, 6540, 6542, 6454, 9495, 5477, 6584, 7118, 2]
 
-// Module 16042 (QuestHomeSortingFilteringBottomSheet)
+// Module 16046 (QuestHomeSortingFilteringBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -235,7 +235,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F157850 */ });
+            found = arr.filter(() => { /* body not rendered: F157958 */ });
           }
           return found;
         });
@@ -257,7 +257,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F157850 */ });
+            found = arr.filter(() => { /* body not rendered: F157958 */ });
           }
           return found;
         });

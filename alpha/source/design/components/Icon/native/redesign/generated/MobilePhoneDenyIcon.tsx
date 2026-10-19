@@ -1,14 +1,14 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18333
+// Function ID: 18334
 // Name: MobilePhoneDenyIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18330, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18334, 4912, 2]
 
-// Module 18329 (MobilePhoneDenyIcon)
+// Module 18333 (MobilePhoneDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 18330 */;
+import AssetRegistry from "AssetRegistry" /* 18334 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

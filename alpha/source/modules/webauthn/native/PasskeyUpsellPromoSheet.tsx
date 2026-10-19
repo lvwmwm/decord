@@ -1,15 +1,15 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16751
+// Function ID: 16752
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1087, 2065, 21, 558, 576, 5128, 16748, 16749, 16746, 6908, 7370, 1128, 1384, 5479, 10635, 6214, 2]
+// Dependencies: [19, 1087, 2065, 21, 558, 576, 5128, 16752, 16753, 16750, 6908, 7370, 1128, 1384, 5479, 10635, 6214, 2]
 
-// Module 16747 (PasskeyUpsellPromoSheet)
+// Module 16751 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import FastImageDefault from "FastImage" /* 5128 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 6908 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 16746 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 16749 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 16750 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 16753 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(16748), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(16752), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = FastImageDefault;
     const tmp8 = closure_6(tmp7, obj2);
     cResult[0] = tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14387
+// Function ID: 14388
 // Name: VoiceMemberUser
-// Dependencies: [109, 19, 17, 1207, 502, 6014, 2068, 2128, 2014, 5207, 1087, 21, 5191, 587, 558, 576, 6316, 11284, 504, 5065, 14384, 14385, 1202, 14386, 14387, 14388, 14389, 11287, 5187, 1128, 8855, 7691, 11540, 5072, 7748, 5155, 7292, 6462, 5509, 7302, 5057, 2]
+// Dependencies: [109, 19, 17, 1207, 502, 6014, 2068, 2128, 2014, 5207, 1087, 21, 5191, 587, 558, 576, 6316, 11302, 504, 5065, 14388, 14389, 1202, 14390, 14391, 14392, 14393, 11305, 5187, 1128, 8855, 7691, 11558, 5072, 7748, 5155, 7292, 6462, 5509, 7302, 5057, 2]
 
-// Module 14383 (VoiceMemberUser)
+// Module 14387 (VoiceMemberUser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
@@ -17,11 +17,11 @@ import useIsSpeakingDefault from "useIsSpeaking" /* 6316 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7292 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11287 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14386 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14387 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14388 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14389 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11305 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14390 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14391 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14392 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14393 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -168,7 +168,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     if (cResult[14] === tmp11.id) {
       tmp24 = cResult[15];
     }
-    const tmpResult = tmp(11284);
+    const tmpResult = tmp(11302);
     const avatarSpeakingColor = tmpResult.useAvatarSpeakingColor(tmp24);
     const _Symbol = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
@@ -603,8 +603,8 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   const obj3 = { userId: user.id, guildId: guild_id };
   guild_id = undefined;
   const tmp7 = channel(6316)(obj2);
-  const useAvatarSpeakingColor = user(11284).useAvatarSpeakingColor;
-  user(11284);
+  const useAvatarSpeakingColor = user(11302).useAvatarSpeakingColor;
+  user(11302);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
@@ -691,7 +691,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       const tmp27 = closure_14;
       const tmp28 = closure_5;
       if (isSpectating) {
-        const obj7 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14389), style: tmp23 };
+        const obj7 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14393), style: tmp23 };
         const Icon = tmp8(1202).Icon;
         tmp24Result = tmp24(Icon, obj7);
       }
@@ -701,9 +701,9 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let tmp5Result;
         const tmp8Result6 = user(5065);
         if (tmp8Result6.isThemeDark(stateFromStores)) {
-          tmp5Result = tmp5(14384);
+          tmp5Result = tmp5(14388);
         } else {
-          tmp5Result = tmp5(14385);
+          tmp5Result = tmp5(14389);
         }
         const obj8 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp23.tintColor, disableColor: localMute };
         const Icon2 = tmp8(1202).Icon;
@@ -712,7 +712,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       items3[1] = tmp24Result5;
       let tmp24Result6 = null;
       if (tmp17) {
-        const obj9 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14386), style: tmp23 };
+        const obj9 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14390), style: tmp23 };
         const Icon3 = tmp8(1202).Icon;
         tmp24Result6 = tmp24(Icon3, obj9);
       }
@@ -722,10 +722,10 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let obj11;
         const Icon4 = tmp8(1202).Icon;
         if (localVideoDisabled) {
-          obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14387), style: tmp2.voiceStatusIconMargin, disableColor: true };
-          const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14387), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14391), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14391), style: tmp2.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14388), style: tmp23 };
+          obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14392), style: tmp23 };
         }
         tmp24Result7 = tmp24(Icon4, obj11);
       }
@@ -762,7 +762,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   if (localVideoAutoDisabled) {
     const obj17 = { style: tmp2.autoDisabledVideo, children: items6 };
-    const obj18 = { source: channel(11287), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj18 = { source: channel(11305), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp8(1202).Icon;
     items6 = [closure_13(Icon5, obj18), ];
     const obj19 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: intl3.string(user(1128).t.m2Hyj0) };
@@ -880,7 +880,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
         let guildId;
         const obj4 = { style: tmp4.streamPreview, children: closure_13(tmp30, obj5) };
         const tmp28 = closure_5;
-        tmp30 = channel(11540);
+        tmp30 = channel(11558);
         if (channel != null) {
           guildId = channel.getGuildId();
         }
@@ -977,7 +977,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_5;
-    tmp17 = channel(11540);
+    tmp17 = channel(11558);
     if (channel != null) {
       guildId = channel.getGuildId();
     }

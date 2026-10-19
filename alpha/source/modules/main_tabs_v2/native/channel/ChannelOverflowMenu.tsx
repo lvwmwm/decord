@@ -1,17 +1,17 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13776
+// Function ID: 13777
 // Name: ChannelOverflowMenu
-// Dependencies: [109, 19, 1087, 21, 558, 576, 13773, 9543, 1128, 9662, 13774, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 13777, 9543, 1128, 9662, 13778, 2]
 // Exports: hasChannelOverflowMenu
 
-// Module 13772 (ChannelOverflowMenu)
+// Module 13776 (ChannelOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9543 */;
-import IconActionButtonDefault from "IconActionButton" /* 13773 */;
-import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 13774 */;
+import IconActionButtonDefault from "IconActionButton" /* 13777 */;
+import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 13778 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

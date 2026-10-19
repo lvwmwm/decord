@@ -112,13 +112,13 @@ export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHer
   return flag;
 };
 export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFilters(filters) {
-  const f97750 = (group) => "task" === group.group;
-  const f97751 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
-  let tmp2 = !filters.some(f97750);
-  filters.some(f97750);
+  const f97799 = (group) => "task" === group.group;
+  const f97800 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
+  let tmp2 = !filters.some(f97799);
+  filters.some(f97799);
   if (tmp2) {
-    tmp2 = 0 === filters.length || filters.some(f97751);
-    0 === filters.length || filters.some(f97751);
+    tmp2 = 0 === filters.length || filters.some(f97800);
+    0 === filters.length || filters.some(f97800);
   }
   return tmp2;
 };

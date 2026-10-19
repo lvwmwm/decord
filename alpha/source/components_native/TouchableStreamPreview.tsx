@@ -1,9 +1,9 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11558
+// Function ID: 11559
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 5210, 6153, 502, 2068, 2090, 4845, 5212, 1087, 21, 5191, 5063, 587, 558, 576, 5514, 504, 1128, 6145, 7710, 7747, 5205, 6156, 5496, 5187, 11541, 2]
+// Dependencies: [19, 17, 5210, 6153, 502, 2068, 2090, 4845, 5212, 1087, 21, 5191, 5063, 587, 558, 576, 5514, 504, 1128, 6145, 7710, 7747, 5205, 6156, 5496, 5187, 11559, 2]
 
-// Module 11540 (TouchableStreamPreview)
+// Module 11558 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

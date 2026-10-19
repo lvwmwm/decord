@@ -1,9 +1,9 @@
-// Module ID: 16025
-// Function ID: 16026
+// Module ID: 16029
+// Function ID: 16030
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4870, 1394, 7423, 21, 5191, 587, 558, 576, 4925, 5065, 5127, 5187, 1275, 10399, 9263, 1202, 16026, 7436, 8359, 4864, 5033, 2052, 504, 7376, 8355, 8354, 14492, 16027, 1128, 1384, 5491, 1107, 2]
+// Dependencies: [32, 19, 17, 4870, 1394, 7423, 21, 5191, 587, 558, 576, 4925, 5065, 5127, 5187, 1275, 10399, 9263, 1202, 16030, 7436, 8359, 4864, 5033, 2052, 504, 7376, 8355, 8354, 14496, 16031, 1128, 1384, 5491, 1107, 2]
 
-// Module 16025 (PremiumTabBadge)
+// Module 16029 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -29,8 +29,8 @@ import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferra
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 9263 */;
 import MarketingComponentType from "MarketingComponentType" /* 10399 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14492 */;
-import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 16027 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14496 */;
+import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 16031 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4870 */;
@@ -52,7 +52,7 @@ let obj9;
 let tmp;
 let tmp5;
 const Text_Text = tmp(5187);
-const AssetRegistryDefault = tmp5(16026);
+const AssetRegistryDefault = tmp5(16030);
 const View = react_native.View;
 let closure_6 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 const Gradients = ColorConstants.Gradients;
@@ -197,7 +197,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfferB
     if (acked) {
       let tmp16;
       if (cResult[5] !== tmp5.icon) {
-        const obj4 = { source: tmp10(16026), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
+        const obj4 = { source: tmp10(16030), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
         const Icon = tmp(1202).Icon;
         const tmp18 = metroImportAll(Icon, obj4);
         cResult[5] = tmp5.icon;

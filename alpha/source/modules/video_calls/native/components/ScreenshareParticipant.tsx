@@ -1,9 +1,9 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11529
+// Function ID: 11530
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6153, 1087, 21, 5191, 587, 558, 576, 11259, 504, 5128, 11260, 1128, 5187, 5479, 11422, 6612, 2]
+// Dependencies: [19, 17, 6153, 1087, 21, 5191, 587, 558, 576, 11278, 504, 5128, 11279, 1128, 5187, 5479, 11440, 6612, 2]
 
-// Module 11511 (ScreenshareParticipant)
+// Module 11529 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

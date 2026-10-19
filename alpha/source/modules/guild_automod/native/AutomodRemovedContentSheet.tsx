@@ -1,9 +1,9 @@
-// Module ID: 18443
-// Function ID: 18444
+// Module ID: 18447
+// Function ID: 18448
 // Name: AutomodRemovedContentSheet
 // Dependencies: [19, 17, 1087, 21, 8013, 5191, 587, 558, 576, 1128, 5534, 7117, 9673, 5187, 7175, 2]
 
-// Module 18443 (AutomodRemovedContentSheet)
+// Module 18447 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

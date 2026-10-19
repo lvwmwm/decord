@@ -1,9 +1,9 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15502
+// Function ID: 15503
 // Name: channels
-// Dependencies: [2072, 2068, 2090, 4845, 2119, 5212, 5895, 1087, 15483, 6297, 9169, 15499, 8731, 9172, 11317, 12, 9163, 6313, 6145, 5514, 1114, 8770, 2]
+// Dependencies: [2072, 2068, 2090, 4845, 2119, 5212, 5895, 1087, 15487, 6297, 9169, 15503, 8731, 9172, 11335, 12, 9163, 6313, 6145, 5514, 1114, 8770, 2]
 
-// Module 15498 (channels)
+// Module 15502 (channels)
 import router_utils from "router_utils" /* 1114 */;
 import ChannelUtils from "ChannelUtils" /* 5514 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
@@ -13,7 +13,7 @@ import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 9163 */;
 import RPCErrorDefault from "RPCError" /* 9169 */;
 import botScopedAccess from "botScopedAccess" /* 9172 */;
-import RPCHelpers from "RPCHelpers" /* 11317 */;
+import RPCHelpers from "RPCHelpers" /* 11335 */;
 import ChannelRecord from "ChannelRecord" /* 2072 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -22,7 +22,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import VoiceStateStore from "VoiceStateStore" /* 5212 */;
 import Constants_mod from "Constants" /* 5895 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15499 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

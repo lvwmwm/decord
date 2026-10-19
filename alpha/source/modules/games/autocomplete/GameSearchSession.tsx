@@ -14,7 +14,7 @@ let results;
 
 let tmp;
 const AnalyticsUtils = tmp(1267);
-const f100771 = (id) => id.id;
+const f100820 = (id) => id.id;
 function onQuery(c2) {
   let tmpResult;
   const obj = GameAutocompleteUtils;
@@ -115,7 +115,7 @@ class GameSearchSession {
             }
           }
           obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f100771), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f100820), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
           ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
           query = undefined;
           const track = AnalyticsUtilsDefault.track;
@@ -167,7 +167,7 @@ class GameSearchSession {
     this.state = null;
     this.selectedQuery = null;
     if (null != state) {
-      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f100771), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
+      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f100820), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
       ({ surface: obj.surface, filterGroup: obj.filter_group } = this);
       ({ maxQueryLength: obj.max_query_length, displayed: displayed3 } = state);
       query = undefined;
@@ -282,7 +282,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, 
               }
             }
             obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f100771), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f100820), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
             ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
             query = undefined;
             const track = AnalyticsUtilsDefault.track;

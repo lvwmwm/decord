@@ -1,9 +1,9 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15850
+// Function ID: 15851
 // Name: RestrictedUserRowLabel
 // Dependencies: [19, 17, 21, 558, 576, 4913, 587, 1128, 5187, 2]
 
-// Module 15846 (RestrictedUserRowLabel)
+// Module 15850 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

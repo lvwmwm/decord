@@ -1,18 +1,18 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17318
+// Function ID: 17319
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1087, 2065, 21, 587, 17315, 10823, 5484, 5191, 558, 576, 17316, 1128, 14149, 6485, 6462, 5187, 7972, 5479, 7309, 7313, 6459, 2]
+// Dependencies: [5, 19, 17, 1087, 2065, 21, 587, 17319, 10839, 5484, 5191, 558, 576, 17320, 1128, 14153, 6485, 6462, 5187, 7972, 5479, 7309, 7313, 6459, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 17314 (GameClaimCoachmark)
+// Module 17318 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import ButtonConstants from "ButtonConstants" /* 5484 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10823 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14149 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 17315 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17316 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14153 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 17319 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17320 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
@@ -41,7 +41,7 @@ const Card_Card = tmp2(6459);
 const Pressables = tmp2(6462);
 const XSmallIcon = tmp2(6485);
 const LinkExternalSmallIcon = tmp2(7972);
-const GameClaimCardStackDefault = tmp8(17315);
+const GameClaimCardStackDefault = tmp8(17319);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -70,7 +70,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(36);
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
-  let obj2 = markAsDismissed(17316);
+  let obj2 = markAsDismissed(17320);
   let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;

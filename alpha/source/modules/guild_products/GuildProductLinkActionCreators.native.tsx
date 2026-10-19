@@ -1,10 +1,10 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 13975
+// Function ID: 13976
 // Name: GuildProductLinkActionCreators
 // Dependencies: [5400, 1128, 2]
 // Exports: openGuildProductLink
 
-// Module 13971 (GuildProductLinkActionCreators)
+// Module 13975 (GuildProductLinkActionCreators)
 import intl3 from "intl" /* 1128 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import size from "module_2" /* 2 */;

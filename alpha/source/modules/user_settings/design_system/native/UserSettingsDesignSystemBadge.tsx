@@ -1,9 +1,9 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16878
+// Function ID: 16879
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5191, 587, 10899, 10901, 10903, 10905, 9851, 558, 576, 5187, 13090, 6539, 6540, 6563, 7172, 5477, 6459, 1202, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 10915, 10917, 10919, 10921, 9851, 558, 576, 5187, 13098, 6539, 6540, 6563, 7172, 5477, 6459, 1202, 2]
 
-// Module 16874 (UserSettingsDesignSystemBadge)
+// Module 16878 (UserSettingsDesignSystemBadge)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -13,8 +13,8 @@ import Card_Card from "Card/Card" /* 6459 */;
 import TableRadioGroup3 from "TableRadioGroup" /* 6540 */;
 import TableSwitchRow from "TableSwitchRow" /* 7172 */;
 import StarIcon3 from "StarIcon" /* 9851 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10903 */;
-import Badge_Badge from "Badge/Badge" /* 13090 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10919 */;
+import Badge_Badge from "Badge/Badge" /* 13098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -209,13 +209,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
     if (first3) {
       let StarIcon;
       if ("rarity-common" === first) {
-        StarIcon = tmp(10899).ExperimentalCommonIcon;
+        StarIcon = tmp(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === first) {
-        StarIcon = tmp(10901).ExperimentalRareIcon;
+        StarIcon = tmp(10917).ExperimentalRareIcon;
       } else if ("rarity-epic" === first) {
-        StarIcon = tmp(10903).ExperimentalEpicIcon;
+        StarIcon = tmp(10919).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === first) {
-        StarIcon = tmp(10905).ExperimentalMythicIcon;
+        StarIcon = tmp(10921).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp(9851).StarIcon;
       }
@@ -277,13 +277,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
   if (first3) {
     let StarIcon;
     if ("rarity-common" === first) {
-      StarIcon = tmp14(10899).ExperimentalCommonIcon;
+      StarIcon = tmp14(10915).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(10901).ExperimentalRareIcon;
+      StarIcon = tmp14(10917).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(10903).ExperimentalEpicIcon;
+      StarIcon = tmp14(10919).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(10905).ExperimentalMythicIcon;
+      StarIcon = tmp14(10921).ExperimentalMythicIcon;
     } else {
       StarIcon = tmp14(9851).StarIcon;
     }
@@ -369,27 +369,27 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("rarity-common" === variant) {
-        StarIcon = tmp2(10899).ExperimentalCommonIcon;
+        StarIcon = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(10901).ExperimentalRareIcon;
+        StarIcon = tmp2(10917).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(10903).ExperimentalEpicIcon;
+        StarIcon = tmp2(10919).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(10905).ExperimentalMythicIcon;
+        StarIcon = tmp2(10921).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp2(9851).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(13090).Badge;
+      const Badge2 = tmp2(13098).Badge;
       if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(10899).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(10901).ExperimentalRareIcon;
+        StarIcon2 = tmp2(10917).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(10903).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(10919).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(10905).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(10921).ExperimentalMythicIcon;
       } else {
         StarIcon2 = tmp2(9851).StarIcon;
       }
@@ -450,27 +450,27 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("rarity-common" === variant) {
-        StarIcon = tmp2(10899).ExperimentalCommonIcon;
+        StarIcon = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(10901).ExperimentalRareIcon;
+        StarIcon = tmp2(10917).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(10903).ExperimentalEpicIcon;
+        StarIcon = tmp2(10919).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(10905).ExperimentalMythicIcon;
+        StarIcon = tmp2(10921).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp2(9851).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(13090).Badge;
+      const Badge2 = tmp2(13098).Badge;
       if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(10899).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(10915).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(10901).ExperimentalRareIcon;
+        StarIcon2 = tmp2(10917).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(10903).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(10919).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(10905).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(10921).ExperimentalMythicIcon;
       } else {
         StarIcon2 = tmp2(9851).StarIcon;
       }
@@ -530,7 +530,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { type: obj6, variant: "primary", icon: StarIcon3.StarIcon };
     obj6 = { text };
-    const Badge = tmp(13090).Badge;
+    const Badge = tmp(13098).Badge;
     const tmp21 = metroImportDefault(Badge, obj5);
     cResult[5] = tmp21;
     tmp18 = tmp21;
@@ -549,7 +549,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { type: obj9, variant: "rarity-epic", icon: ExperimentalEpicIcon.ExperimentalEpicIcon };
     obj9 = { text };
-    const Badge2 = tmp(13090).Badge;
+    const Badge2 = tmp(13098).Badge;
     const tmp29 = metroImportDefault(Badge2, obj8);
     cResult[8] = tmp29;
     tmp26 = tmp29;

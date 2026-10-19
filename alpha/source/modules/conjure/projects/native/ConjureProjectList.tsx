@@ -1,22 +1,22 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11593
+// Function ID: 11594
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1246, 6293, 21, 5191, 587, 558, 576, 1633, 1505, 504, 7222, 11578, 11576, 5155, 11579, 11611, 11613, 10985, 11625, 11630, 7168, 6487, 10915, 1128, 5187, 3883, 5479, 10983, 11661, 6542, 10984, 6337, 11663, 11665, 11666, 9543, 6457, 2]
+// Dependencies: [19, 17, 1246, 6293, 21, 5191, 587, 558, 576, 1633, 1505, 504, 7222, 11594, 11592, 5155, 11595, 11627, 11629, 11002, 11641, 11646, 7168, 6487, 10931, 1128, 5187, 3883, 5479, 10999, 11680, 6542, 11001, 6337, 11682, 11684, 11685, 9543, 6457, 2]
 
-// Module 11577 (ConjureProjectList)
+// Module 11593 (ConjureProjectList)
 import nativeDefault from "native" /* 587 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
 import ConjureUtils from "ConjureUtils" /* 7222 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10983 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11576 */;
-import ConjureActivity from "ConjureActivity" /* 11578 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11579 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11611 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11630 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11663 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 11665 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11666 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11592 */;
+import ConjureActivity from "ConjureActivity" /* 11594 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11595 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11627 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11646 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11682 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 11684 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11685 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
@@ -615,7 +615,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   project = project.project;
   ({ onPress, onMore } = project);
   const tmp4 = closure_11(0);
-  const obj2 = project(10984);
+  const obj2 = project(11001);
   const conjureProjectBadge = obj2.useConjureProjectBadge(project.id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
@@ -813,7 +813,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   const onMore = project.onMore;
   const onPress = project.onPress;
   const tmp = closure_11(0);
-  const obj = project(10984);
+  const obj = project(11001);
   const conjureProjectBadge = obj.useConjureProjectBadge(project.id);
   const items = [ConjureProjectStore];
   const items1 = [project.id];
@@ -851,7 +851,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { mentionsCount: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(11665), obj6);
+      tmp14Result3 = tmp14(tmp18(11684), obj6);
     }
     items2 = [tmp14Result3, ];
     const obj7 = { IconComponent: project(9543).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };

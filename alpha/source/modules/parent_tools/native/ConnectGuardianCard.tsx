@@ -1,15 +1,15 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15927
+// Function ID: 15928
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1392, 7526, 21, 5191, 587, 558, 576, 573, 7433, 15919, 15920, 7162, 4903, 1128, 2589, 9006, 8054, 5187, 5477, 13981, 5479, 6214, 2]
+// Dependencies: [19, 17, 1392, 7526, 21, 5191, 587, 558, 576, 573, 7433, 15923, 15924, 7162, 4903, 1128, 2589, 9006, 8054, 5187, 5477, 13985, 5479, 6214, 2]
 
-// Module 15923 (ConnectGuardianCard)
+// Module 15927 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 4903 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15920 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15924 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17453
+// Function ID: 17454
 // Name: HomeDrawerShared
 // Dependencies: [19, 17, 21, 5191, 558, 576, 2]
 
-// Module 17449 (HomeDrawerShared)
+// Module 17453 (HomeDrawerShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

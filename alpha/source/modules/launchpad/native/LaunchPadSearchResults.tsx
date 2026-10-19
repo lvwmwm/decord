@@ -1,9 +1,9 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 18386
+// Function ID: 18387
 // Name: LaunchPadSearchResults
-// Dependencies: [19, 17, 2132, 6362, 2090, 6223, 21, 5191, 587, 558, 576, 17793, 7329, 504, 5486, 18383, 6436, 17796, 18384, 17794, 18385, 6462, 8972, 18386, 18391, 18392, 18394, 17232, 5187, 1128, 1499, 17795, 7038, 2]
+// Dependencies: [19, 17, 2132, 6362, 2090, 6223, 21, 5191, 587, 558, 576, 17797, 7329, 504, 5486, 18387, 6436, 17800, 18388, 17798, 18389, 6462, 8972, 18390, 18395, 18396, 18398, 17236, 5187, 1128, 1499, 17799, 7038, 2]
 
-// Module 18382 (LaunchPadSearchResults)
+// Module 18386 (LaunchPadSearchResults)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,18 +13,18 @@ import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import GuildIconDefault from "GuildIcon" /* 6436 */;
 import transitionToGuild from "transitionToGuild" /* 7329 */;
 import _mod8972 from "module_8972" /* 8972 */;
-import RedesignCategory from "RedesignCategory" /* 17232 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17793 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 17794 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 17795 */;
-import renderChannelContentDefault from "renderChannelContent" /* 17796 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 18383 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 18384 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 18385 */;
-import shared_TextChannelDefault from "shared/TextChannel" /* 18386 */;
-import shared_DMChannelDefault from "shared/DMChannel" /* 18391 */;
-import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 18392 */;
-import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 18394 */;
+import RedesignCategory from "RedesignCategory" /* 17236 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17797 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17798 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 17799 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17800 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 18387 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 18388 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 18389 */;
+import shared_TextChannelDefault from "shared/TextChannel" /* 18390 */;
+import shared_DMChannelDefault from "shared/DMChannel" /* 18395 */;
+import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 18396 */;
+import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 18398 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6362 */;

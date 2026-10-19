@@ -1,9 +1,9 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17043
+// Function ID: 17044
 // Name: VEVOOSlider
 // Dependencies: [19, 21, 5191, 1384, 587, 558, 576, 8678, 2]
 
-// Module 17039 (VEVOOSlider)
+// Module 17043 (VEVOOSlider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

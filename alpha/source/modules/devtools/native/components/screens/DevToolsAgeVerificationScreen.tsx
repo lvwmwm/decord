@@ -1,9 +1,9 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16787
+// Function ID: 16788
 // Name: DevToolsAgeVerificationScreen
 // Dependencies: [5, 19, 17, 21, 5191, 587, 7777, 7764, 4904, 6174, 558, 576, 1633, 6457, 6917, 6466, 6542, 2]
 
-// Module 16783 (DevToolsAgeVerificationScreen)
+// Module 16787 (DevToolsAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

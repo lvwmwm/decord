@@ -1,12 +1,12 @@
-// Module ID: 13630
-// Function ID: 13631
+// Module ID: 13634
+// Function ID: 13635
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1087, 558, 576, 13631, 2093, 1128, 3465, 2]
+// Dependencies: [19, 1087, 558, 576, 13635, 2093, 1128, 3465, 2]
 
-// Module 13630 (useFavoritesGuildCategoryAddAction)
+// Module 13634 (useFavoritesGuildCategoryAddAction)
 import Constants from "Constants" /* 1087 */;
 import _modDef3465 from "module_3465" /* 3465 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13631 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13635 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

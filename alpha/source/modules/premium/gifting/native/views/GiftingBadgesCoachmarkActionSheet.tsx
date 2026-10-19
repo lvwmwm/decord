@@ -1,9 +1,9 @@
-// Module ID: 18090
-// Function ID: 18091
+// Module ID: 18094
+// Function ID: 18095
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8590, 2065, 21, 5191, 587, 558, 576, 10406, 5155, 5073, 10409, 1128, 2685, 5187, 5479, 7118, 10350, 7155, 18091, 5128, 12656, 8582, 504, 2]
+// Dependencies: [19, 17, 8590, 2065, 21, 5191, 587, 558, 576, 10406, 5155, 5073, 10409, 1128, 2685, 5187, 5479, 7118, 10350, 7155, 18095, 5128, 12673, 8582, 504, 2]
 
-// Module 18090 (GiftingBadgesCoachmarkActionSheet)
+// Module 18094 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10350 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10409 */;
-import _modDef18091 from "module_18091" /* 18091 */;
+import _modDef18095 from "module_18095" /* 18095 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8590 */;
 import Fragment from "Fragment" /* 21 */;
@@ -525,7 +525,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp8[0] = _modDef18091;
+    tmp8[0] = _modDef18095;
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {
@@ -688,7 +688,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   BottomSheet = markAsDismissed(7118).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef18091 };
+  obj5 = { uri: _modDef18095 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -706,7 +706,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   Button = markAsDismissed(5479).Button;
   intl3 = markAsDismissed(1128).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(12656).GiftIcon;
+  GiftIcon = markAsDismissed(12673).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 });

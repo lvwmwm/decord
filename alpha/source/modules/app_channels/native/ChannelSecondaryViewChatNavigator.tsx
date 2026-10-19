@@ -1,9 +1,9 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18013
+// Function ID: 18014
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9644, 5191, 587, 9599, 1384, 558, 576, 10671, 13504, 5068, 6965, 13786, 9611, 4922, 2]
+// Dependencies: [19, 21, 9644, 5191, 587, 9599, 1384, 558, 576, 10671, 13509, 5068, 6965, 13790, 9611, 4922, 2]
 
-// Module 18009 (ChannelSecondaryViewChatNavigator)
+// Module 18013 (ChannelSecondaryViewChatNavigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
 import ChannelActionsDefault from "ChannelActions" /* 9611 */;
 import ChatViewDefault from "ChatView" /* 10671 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13786 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13790 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 9644 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -23,7 +23,7 @@ let dependencyMap, importDefault;
 
 let obj2;
 let tmp;
-const ChannelContainer2 = tmp(13504);
+const ChannelContainer2 = tmp(13509);
 function renderChannelSecondaryViewChatHeader(arg0) {
   let obj2;
   const obj = { shouldHandleSafeArea: obj2.isAndroid() };

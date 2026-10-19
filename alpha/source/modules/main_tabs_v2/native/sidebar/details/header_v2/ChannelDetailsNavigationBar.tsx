@@ -1,9 +1,9 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17881
+// Function ID: 17882
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4846, 4847, 2068, 6222, 9612, 9927, 1087, 9613, 21, 5191, 13022, 587, 558, 576, 4913, 504, 1505, 1128, 10655, 8161, 7840, 12941, 13001, 6180, 7018, 10595, 9996, 7369, 17878, 4922, 4945, 5192, 17751, 5195, 11167, 6482, 6462, 2]
+// Dependencies: [19, 17, 4846, 4847, 2068, 6222, 9612, 9927, 1087, 9613, 21, 5191, 13030, 587, 558, 576, 4913, 504, 1505, 1128, 10655, 8161, 7840, 12949, 13009, 6180, 7018, 10595, 9996, 7369, 17882, 4922, 4945, 5192, 17755, 5195, 11186, 6482, 6462, 2]
 
-// Module 17877 (ChannelDetailsNavigationBar)
+// Module 17881 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,11 +15,11 @@ import AssetRegistryDefault from "AssetRegistry" /* 7018 */;
 import TrackingConstants from "TrackingConstants" /* 9613 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11167 */;
-import useSearchContext from "useSearchContext" /* 12941 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13001 */;
-import SearchButton2 from "SearchButton" /* 13022 */;
-import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17878 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11186 */;
+import useSearchContext from "useSearchContext" /* 12949 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
+import SearchButton2 from "SearchButton" /* 13030 */;
+import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17882 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4846 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
@@ -506,7 +506,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     const obj8 = { ref: cleanUp.ref, channelId: null, guildId: null, showBackButton: true };
     ({ id: obj4.channelId, guild_id: obj4.guildId } = channel);
-    const tmp10 = closure_15(cleanUp(17751), obj8);
+    const tmp10 = closure_15(cleanUp(17755), obj8);
     let num = 3;
     cResult[3] = channel.guild_id;
     cResult[4] = channel.id;
@@ -571,7 +571,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   fn.__workletHash = 14243423616139;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(17751), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(17755), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(4945).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };

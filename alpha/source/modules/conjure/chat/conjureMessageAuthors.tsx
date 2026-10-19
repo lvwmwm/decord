@@ -1,10 +1,10 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12173
+// Function ID: 12174
 // Name: conjureMessageAuthors
 // Dependencies: [19, 1392, 8579, 558, 576, 504, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 12155 (conjureMessageAuthors)
+// Module 12173 (conjureMessageAuthors)
 import UserActionCreatorsAll from "UserActionCreators" /* 8579 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f112167 = () => {
+const f112297 = () => {
 
 };
 const set = new Set();
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageAu
               const obj = UserActionCreatorsAll;
               const user = obj.getUser(tmp);
               const cleanupPromise = user.finally(() => set.delete(closure_0));
-              cleanupPromise.catch(f112167);
+              cleanupPromise.catch(f112297);
             }
           }
         }
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageAu
             const obj = UserActionCreatorsAll;
             const user = obj.getUser(tmp);
             const cleanupPromise = user.finally(() => set.delete(closure_0));
-            cleanupPromise.catch(f112167);
+            cleanupPromise.catch(f112297);
           }
         }
       }
@@ -180,7 +180,7 @@ function requestMessageAuthor(actor_user_id) {
           const obj = UserActionCreatorsAll;
           const user = obj.getUser(actor_user_id);
           const cleanupPromise = user.finally(() => set.delete(closure_0));
-          cleanupPromise.catch(f112167);
+          cleanupPromise.catch(f112297);
         }
       }
     }

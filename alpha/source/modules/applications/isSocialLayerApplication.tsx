@@ -1,10 +1,10 @@
-// Module ID: 11085
-// Function ID: 11086
+// Module ID: 11104
+// Function ID: 11105
 // Name: isSocialLayerApplication
 // Dependencies: [1087, 6359, 9529, 2]
 // Exports: default, isSocialLayerSDKAuthorization
 
-// Module 11085 (isSocialLayerApplication)
+// Module 11104 (isSocialLayerApplication)
 import Constants from "Constants" /* 1087 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6359 */;
 import scopes2 from "scopes" /* 9529 */;

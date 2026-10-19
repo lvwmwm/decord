@@ -1,19 +1,19 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11896
+// Function ID: 11897
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1504, 1087, 21, 9644, 5191, 587, 558, 576, 7130, 7155, 1506, 5475, 5083, 1631, 6965, 5206, 11878, 11939, 11965, 12027, 10932, 2]
+// Dependencies: [109, 19, 1504, 1087, 21, 9644, 5191, 587, 558, 576, 7130, 7155, 1506, 5475, 5083, 1631, 6965, 5206, 11897, 11958, 11984, 12046, 10948, 2]
 
-// Module 11877 (AppLauncherNavigator)
+// Module 11896 (AppLauncherNavigator)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11878 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11939 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11965 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12027 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11897 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 11958 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 11984 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12046 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -226,7 +226,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                             return tmp72;
                                                           }
                                                           const obj4 = { value: tmp71, children: tmp62 };
-                                                          const tmp74 = closure_9(entrypoint(10932).AppLauncherContext.Provider, obj4);
+                                                          const tmp74 = closure_9(entrypoint(10948).AppLauncherContext.Provider, obj4);
                                                           cResult[66] = tmp71;
                                                           cResult[67] = tmp62;
                                                           cResult[68] = tmp74;

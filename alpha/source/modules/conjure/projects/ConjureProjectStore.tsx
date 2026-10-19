@@ -85,8 +85,8 @@ class ConjureProjectStore extends Store {
     }
     return items;
   }
-  getIntegrationStatus(projectId) {
-    let value = map1.get(projectId);
+  getIntegrationStatus(arg0) {
+    let value = map1.get(arg0);
     if (value == null) {
       value = null;
     }

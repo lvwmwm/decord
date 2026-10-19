@@ -1,10 +1,10 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16620
+// Function ID: 16621
 // Name: CopyClientInfoSetting
-// Dependencies: [10792, 21, 1383, 5155, 12502, 7162, 4903, 558, 576, 1128, 11094, 7171, 7117, 1384, 7175, 5141, 5167, 11065, 6393, 2044, 2]
+// Dependencies: [10808, 21, 1383, 5155, 12519, 7162, 4903, 558, 576, 1128, 11113, 7171, 7117, 1384, 7175, 5141, 5167, 11084, 6393, 2044, 2]
 // Exports: getClientInfoString
 
-// Module 16616 (CopyClientInfoSetting)
+// Module 16620 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 2044 */;
@@ -13,13 +13,13 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155
 import DeviceUtils from "DeviceUtils" /* 5167 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6393 */;
 import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11094 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12502 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10792 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12519 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -92,7 +92,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    const tmpResult = subLabel(11094);
+    const tmpResult = subLabel(11113);
     let result = tmpResult.isIOSAnchoredChatScrollerEnabled();
     const t = tmp(1128).t;
     const stringResult = string(result ? t.LfEwvz : t["pe/6Ma"]);

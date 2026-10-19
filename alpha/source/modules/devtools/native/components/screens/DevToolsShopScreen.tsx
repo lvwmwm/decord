@@ -1,9 +1,9 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16795
+// Function ID: 16796
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 5190, 21, 5191, 587, 558, 576, 6942, 504, 16679, 2052, 16764, 6457, 7173, 7172, 5477, 6542, 2]
+// Dependencies: [19, 17, 5190, 21, 5191, 587, 558, 576, 6942, 504, 16683, 2052, 16768, 6457, 7173, 7172, 5477, 6542, 2]
 
-// Module 16791 (DevToolsShopScreen)
+// Module 16795 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -15,7 +15,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6542 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
 import TableSwitchRow from "TableSwitchRow" /* 7172 */;
 import FormSwitch from "FormSwitch" /* 7173 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16679 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16683 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5190 */;
 import Fragment from "Fragment" /* 21 */;

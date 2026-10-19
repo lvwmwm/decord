@@ -1,15 +1,15 @@
-// Module ID: 18331
-// Function ID: 18332
+// Module ID: 18335
+// Function ID: 18336
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 5191, 587, 558, 576, 18310, 18296, 6439, 10843, 14646, 18311, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 18314, 18300, 6439, 10859, 14650, 18315, 2]
 
-// Module 18331 (VoicePanelDrawerToggleButton)
+// Module 18335 (VoicePanelDrawerToggleButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import NativeViewDefault from "NativeView" /* 6439 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 18296 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 18310 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 18311 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 18300 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 18314 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 18315 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -100,9 +100,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDr
     }
     const tmp12 = _false;
     if (isDrawerOpen) {
-      ChevronSmallUpIcon = tmp(10843).ChevronSmallDownIcon;
+      ChevronSmallUpIcon = tmp(10859).ChevronSmallDownIcon;
     } else {
-      ChevronSmallUpIcon = tmp(14646).ChevronSmallUpIcon;
+      ChevronSmallUpIcon = tmp(14650).ChevronSmallUpIcon;
     }
     const obj5 = { color };
     const tmp12Result = tmp12(ChevronSmallUpIcon, obj5);
@@ -146,9 +146,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDr
   const tmp6 = React3;
   const tmp9 = NativeViewDefault;
   if (isDrawerOpen) {
-    ChevronSmallUpIcon = tmp2(10843).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp2(10859).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(14646).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(14650).ChevronSmallUpIcon;
   }
   items1[1] = _false(tmp9, obj3);
   return tmp6(tmp7, element);

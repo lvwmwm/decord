@@ -1,12 +1,12 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14183
+// Function ID: 14184
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 14180, 14181, 7134, 1388, 6019, 2]
+// Dependencies: [19, 558, 576, 14184, 14185, 7134, 1388, 6019, 2]
 
-// Module 14179 (useVisibleUserProfileConnectionsAndAppIdentities)
+// Module 14183 (useVisibleUserProfileConnectionsAndAppIdentities)
 import PlatformsDefault from "Platforms" /* 6019 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14180 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14181 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14184 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14185 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

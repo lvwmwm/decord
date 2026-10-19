@@ -1,14 +1,14 @@
-// Module ID: 18629
-// Function ID: 18630
+// Module ID: 18633
+// Function ID: 18634
 // Name: RTCLatencyTestManager
-// Dependencies: [2014, 5310, 5216, 1104, 3, 7085, 18630, 1384, 2]
+// Dependencies: [2014, 5310, 5216, 1104, 3, 7085, 18634, 1384, 2]
 
-// Module 18629 (RTCLatencyTestManager)
+// Module 18633 (RTCLatencyTestManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import Constants from "Constants" /* 5216 */;
-import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 18630 */;
+import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 18634 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCRegionStore from "RTCRegionStore" /* 5310 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;

@@ -1,9 +1,9 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15859
+// Function ID: 15860
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1392, 21, 5191, 587, 8008, 15856, 15857, 6177, 6176, 6165, 15864, 15865, 558, 576, 2]
+// Dependencies: [19, 17, 1392, 21, 5191, 587, 8008, 15860, 15861, 6177, 6176, 6165, 15868, 15869, 558, 576, 2]
 
-// Module 15855 (SettingsScreenNotices)
+// Module 15859 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,10 +11,10 @@ import nativeDefault from "native" /* 587 */;
 import AgeGatedFeature from "AgeGatedFeature" /* 6176 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15856 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15857 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15864 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 15865 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15860 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15861 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15868 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 15869 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 5191 */;

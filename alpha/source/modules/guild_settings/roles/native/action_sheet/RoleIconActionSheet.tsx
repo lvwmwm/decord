@@ -1,16 +1,16 @@
-// Module ID: 18819
-// Function ID: 18820
+// Module ID: 18823
+// Function ID: 18824
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 18802, 1087, 1395, 21, 558, 576, 504, 5155, 8035, 1496, 18820, 4903, 1128, 18816, 9726, 7117, 5187, 6457, 7175, 6542, 2]
+// Dependencies: [5, 19, 18806, 1087, 1395, 21, 558, 576, 504, 5155, 8035, 1496, 18824, 4903, 1128, 18820, 9726, 7117, 5187, 6457, 7175, 6542, 2]
 
-// Module 18819 (RoleIconActionSheet)
+// Module 18823 (RoleIconActionSheet)
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18816 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18802 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18806 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

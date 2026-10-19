@@ -1,13 +1,13 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17238
+// Function ID: 17239
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1087, 558, 576, 2093, 1128, 17235, 2]
+// Dependencies: [19, 1087, 558, 576, 2093, 1128, 17239, 2]
 
-// Module 17234 (useFavoritesGuildCategoryLongPress)
+// Module 17238 (useFavoritesGuildCategoryLongPress)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 17235 */;
+import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 17239 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

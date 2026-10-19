@@ -1,9 +1,9 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15758
+// Function ID: 15759
 // Name: AccountPhoneSetting
-// Dependencies: [1392, 8260, 7009, 558, 576, 504, 6190, 7008, 2002, 7011, 11065, 1128, 2]
+// Dependencies: [1392, 8260, 7009, 558, 576, 504, 6190, 7008, 2002, 7011, 11084, 1128, 2]
 
-// Module 15754 (AccountPhoneSetting)
+// Module 15758 (AccountPhoneSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -13,7 +13,7 @@ import PhoneActionCreators from "PhoneActionCreators" /* 7011 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

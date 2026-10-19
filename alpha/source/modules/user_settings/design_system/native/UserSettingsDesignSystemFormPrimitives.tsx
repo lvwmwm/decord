@@ -1,9 +1,9 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16883
+// Function ID: 16884
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 5187, 6540, 6539, 6542, 7172, 13835, 6454, 6457, 15061, 11452, 8501, 5477, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 5187, 6540, 6539, 6542, 7172, 13839, 6454, 6457, 15065, 11470, 8501, 5477, 2]
 
-// Module 16879 (UserSettingsDesignSystemFormPrimitives)
+// Module 16883 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,8 +15,8 @@ import TableRadioGroup2 from "TableRadioGroup" /* 6540 */;
 import TableRowGroup3 from "TableRowGroup" /* 6542 */;
 import TableSwitchRow5 from "TableSwitchRow" /* 7172 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8501 */;
-import VoiceXIcon from "VoiceXIcon" /* 11452 */;
-import Slider2 from "Slider" /* 15061 */;
+import VoiceXIcon from "VoiceXIcon" /* 11470 */;
+import Slider2 from "Slider" /* 15065 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const Stack_Stack = tmp(5477);
-const Checkbox = tmp(13835);
+const Checkbox = tmp(13839);
 const ScrollView = react_native.ScrollView;
 const NOOP = Constants.NOOP;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -467,7 +467,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider
     const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
     const TableRow = tmp(6457).TableRow;
     obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onValueChange: NOOP };
-    Slider = tmp(15061).Slider;
+    Slider = tmp(15065).Slider;
     items[1] = metroRequire(TableRow, obj3);
     const tmp12 = metroImportDefault(metroImportAll, obj2);
     cResult[1] = tmp12;

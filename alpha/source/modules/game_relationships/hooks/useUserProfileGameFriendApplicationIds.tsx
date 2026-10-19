@@ -1,9 +1,9 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14171
+// Function ID: 14172
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4855, 1392, 558, 576, 504, 14114, 2]
+// Dependencies: [19, 4855, 1392, 558, 576, 504, 14118, 2]
 
-// Module 14167 (useUserProfileGameFriendApplicationIds)
+// Module 14171 (useUserProfileGameFriendApplicationIds)
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = tmp(14114);
+  const tmpResult2 = tmp(14118);
   const gameFriendsForUser = tmpResult2.useGameFriendsForUser(userId);
   if (stateFromStores) {
     tmp9 = closure_5;

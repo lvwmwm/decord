@@ -1,13 +1,13 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13997
+// Function ID: 13998
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 5191, 587, 558, 576, 1633, 2044, 11088, 5187, 1128, 6462, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 1633, 2044, 11107, 5187, 1128, 6462, 2]
 
-// Module 13993 (MediaModalOverlayAltText)
+// Module 13997 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11088 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11107 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

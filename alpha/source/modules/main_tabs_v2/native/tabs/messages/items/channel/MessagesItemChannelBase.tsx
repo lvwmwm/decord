@@ -1,9 +1,9 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17161
+// Function ID: 17162
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5207, 6291, 4855, 2119, 6222, 1392, 1087, 21, 5191, 587, 558, 576, 504, 17158, 8616, 1384, 7290, 5202, 10595, 8923, 9313, 17159, 9615, 8658, 17160, 9309, 17161, 6462, 2]
+// Dependencies: [19, 17, 5207, 6291, 4855, 2119, 6222, 1392, 1087, 21, 5191, 587, 558, 576, 504, 17162, 8616, 1384, 7290, 5202, 10595, 8923, 9313, 17163, 9615, 8658, 17164, 9309, 17165, 6462, 2]
 
-// Module 17157 (MessagesItemChannelBase)
+// Module 17161 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -304,9 +304,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult9 = channel(504);
     const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(17158)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(17162)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(17158)(channel.id);
+    setIsPressed(17162)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {

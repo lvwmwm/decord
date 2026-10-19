@@ -1,9 +1,9 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11939
+// Function ID: 11940
 // Name: ExpandableList
 // Dependencies: [32, 19, 17, 21, 5191, 558, 576, 6178, 4945, 5192, 5195, 6457, 1128, 5187, 2]
 
-// Module 11920 (ExpandableList)
+// Module 11939 (ExpandableList)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5192 */;
 import timingPresets from "timingPresets" /* 5195 */;
@@ -452,7 +452,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f145822 = (fn, index) => {
+  const f145933 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -562,7 +562,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f145822)
+    children: memo.map(f145933)
   };
   View = tmp4(4945).View;
   const tmp16 = bound;
@@ -580,7 +580,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f145822)
+      children: memo1.map(f145933)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }

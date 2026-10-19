@@ -1,7 +1,7 @@
 // Module ID: 10594
 // Function ID: 10595
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2068, 2090, 6291, 4855, 1392, 10520, 6223, 21, 5191, 587, 558, 576, 504, 5521, 10595, 12712, 8488, 8480, 5187, 4888, 4797, 6454, 6457, 2]
+// Dependencies: [109, 19, 17, 2068, 2090, 6291, 4855, 1392, 10520, 6223, 21, 5191, 587, 558, 576, 504, 5521, 10595, 12729, 8488, 8480, 5187, 4888, 4797, 6454, 6457, 2]
 
 // Module 10594 (ChannelRow)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 5521 */;
 import ReadStateConstants from "ReadStateConstants" /* 6223 */;
 import UserRowConstants from "UserRowConstants" /* 10520 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12712 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12729 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12712).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12729).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(12712).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(12729).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;

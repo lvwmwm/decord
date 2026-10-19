@@ -1,12 +1,12 @@
-// Module ID: 17642
-// Function ID: 17643
+// Module ID: 17646
+// Function ID: 17647
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4855, 21, 558, 576, 504, 8540, 17643, 17650, 2]
+// Dependencies: [19, 4855, 21, 558, 576, 504, 8540, 17647, 17654, 2]
 
-// Module 17642 (ContentInventoryEntryRow)
+// Module 17646 (ContentInventoryEntryRow)
 import Fragment from "Fragment" /* 21 */;
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 17643 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 17650 */;
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 17647 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 17654 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

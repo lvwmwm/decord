@@ -1,9 +1,9 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14649
+// Function ID: 14650
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8590, 21, 5191, 587, 558, 576, 7130, 7155, 8582, 504, 5187, 1128, 2685, 10406, 10409, 12656, 5479, 10350, 14646, 10843, 2]
+// Dependencies: [32, 19, 17, 8590, 21, 5191, 587, 558, 576, 7130, 7155, 8582, 504, 5187, 1128, 2685, 10406, 10409, 12673, 5479, 10350, 14650, 10859, 2]
 
-// Module 14645 (UserSettingsGiftingBadgeProgress)
+// Module 14649 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 587 */;
 import _modDef2685 from "module_2685" /* 2685 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                                 const _Symbol = Symbol;
                                                 if (cResult[84] === Symbol.for("react.memo_cache_sentinel")) {
                                                   let obj3 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-                                                  const GiftIcon = tmp(12656).GiftIcon;
+                                                  const GiftIcon = tmp(12673).GiftIcon;
                                                   const tmp83 = closure_9(GiftIcon, obj3);
                                                   const intl4 = tmp(1128).intl;
                                                   const stringResult = intl4.string(_modDef2685.DZnomS);
@@ -548,9 +548,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                                     let ChevronSmallDownIcon;
                                                     const tmp97 = closure_9;
                                                     if (tmp6) {
-                                                      ChevronSmallDownIcon = tmp(14646).ChevronSmallUpIcon;
+                                                      ChevronSmallDownIcon = tmp(14650).ChevronSmallUpIcon;
                                                     } else {
-                                                      ChevronSmallDownIcon = tmp(10843).ChevronSmallDownIcon;
+                                                      ChevronSmallDownIcon = tmp(10859).ChevronSmallDownIcon;
                                                     }
                                                     let obj6 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
                                                     const tmp97Result = tmp97(ChevronSmallDownIcon, obj6);
@@ -1184,7 +1184,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     };
     const Button = tmp7(5479).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(12656).GiftIcon;
+    GiftIcon = tmp7(12673).GiftIcon;
     intl4 = tmp7(1128).intl;
     items5[1] = closure_9(Button, obj18);
     const obj20 = { style: tmp.divider };
@@ -1202,9 +1202,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(14646).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(14650).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(10843).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(10859).ChevronSmallDownIcon;
     }
     const obj23 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj23);

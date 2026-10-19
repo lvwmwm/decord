@@ -1,9 +1,9 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12615
+// Function ID: 12616
 // Name: useContentHarmTypes
 // Dependencies: [19, 1246, 2068, 4855, 1392, 558, 576, 7266, 504, 7275, 7270, 2]
 
-// Module 12598 (useContentHarmTypes)
+// Module 12615 (useContentHarmTypes)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;

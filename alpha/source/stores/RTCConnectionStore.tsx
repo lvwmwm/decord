@@ -1,7 +1,7 @@
 // Module ID: 5209
 // Function ID: 5210
 // Name: RTCConnectionStore
-// Dependencies: [5210, 502, 5215, 1087, 5216, 3, 5218, 5325, 584, 14842, 2063, 5220, 504, 14843, 1267, 2002, 2]
+// Dependencies: [5210, 502, 5215, 1087, 5216, 3, 5218, 5325, 584, 14846, 2063, 5220, 504, 14847, 1267, 2002, 2]
 
 // Module 5209 (RTCConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,8 +10,8 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import Constants2 from "Constants" /* 5216 */;
 import TimeUtils from "TimeUtils" /* 5220 */;
-import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 14842 */;
-import trackVideoToggle from "trackVideoToggle" /* 14843 */;
+import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 14846 */;
+import trackVideoToggle from "trackVideoToggle" /* 14847 */;
 import GameConsoleStore from "GameConsoleStore" /* 5210 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;

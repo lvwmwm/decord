@@ -1,9 +1,9 @@
-// Module ID: 13576
-// Function ID: 13577
+// Module ID: 13580
+// Function ID: 13581
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 5187, 13566, 5155, 6539, 6942, 12, 6374, 7015, 10530, 7117, 1128, 7016, 7021, 7118, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 5187, 13571, 5155, 6539, 6942, 12, 6374, 7015, 10530, 7117, 1128, 7016, 7021, 7118, 2]
 
-// Module 13576 (BugReporterFeatureActionSheet)
+// Module 13580 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -110,7 +110,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   ({ feature, setFeature } = item);
   ({ start, end } = item);
   if (cResult[0] !== item) {
-    const tmpResult = item(13566);
+    const tmpResult = item(13571);
     const featureId = tmpResult.getFeatureId(item);
     cResult[0] = item;
     cResult[1] = featureId;
@@ -120,7 +120,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   }
   const name = item.name;
   if (cResult[2] !== item) {
-    const tmpResult3 = item(13566);
+    const tmpResult3 = item(13571);
     const featureId1 = tmpResult3.getFeatureId(item);
     cResult[2] = item;
     cResult[3] = featureId1;
@@ -129,7 +129,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     tmp6 = cResult[3];
   }
   if (cResult[4] !== feature) {
-    const tmpResult4 = item(13566);
+    const tmpResult4 = item(13571);
     const featureId2 = tmpResult4.getFeatureId(feature);
     cResult[4] = feature;
     cResult[5] = featureId2;
@@ -200,10 +200,10 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     }
   };
   const TableRadioRow = item(6539).TableRadioRow;
-  obj2 = item(13566);
-  const obj3 = item(13566);
+  obj2 = item(13571);
+  const obj3 = item(13571);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(13566);
+  obj4 = item(13571);
   return closure_6(TableRadioRow, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;

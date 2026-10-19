@@ -1,17 +1,17 @@
-// Module ID: 12279
-// Function ID: 12280
+// Module ID: 12297
+// Function ID: 12298
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5540, 7586, 4843, 2090, 4845, 5034, 10963, 6293, 1128, 3883, 558, 576, 6356, 11578, 10987, 1455, 504, 7222, 2]
+// Dependencies: [32, 19, 5540, 7586, 4843, 2090, 4845, 5034, 10979, 6293, 1128, 3883, 558, 576, 6356, 11594, 11006, 1455, 504, 7222, 2]
 // Exports: describeConjureProjectRow
 
-// Module 12279 (useConjureProjects)
+// Module 12297 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6356 */;
 import ConjureUtils from "ConjureUtils" /* 7222 */;
-import conjureAppInServer from "conjureAppInServer" /* 10987 */;
-import ConjureActivity from "ConjureActivity" /* 11578 */;
+import conjureAppInServer from "conjureAppInServer" /* 11006 */;
+import ConjureActivity from "ConjureActivity" /* 11594 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
@@ -20,7 +20,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import ConjureChatStore from "ConjureChatStore" /* 10963 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11578).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11594).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;

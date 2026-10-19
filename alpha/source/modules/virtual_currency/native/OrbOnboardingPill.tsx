@@ -1,9 +1,9 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16774
+// Function ID: 16775
 // Name: OrbOnboardingPill
 // Dependencies: [19, 17, 21, 558, 576, 9331, 5187, 1128, 5191, 587, 2]
 
-// Module 16770 (OrbOnboardingPill)
+// Module 16774 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

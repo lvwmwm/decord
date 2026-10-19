@@ -1,9 +1,9 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14204
+// Function ID: 14205
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4855, 1087, 21, 5191, 587, 558, 576, 5479, 7130, 8588, 14114, 504, 5057, 14201, 5131, 1128, 13304, 7293, 10935, 5155, 6190, 7290, 14203, 8471, 7840, 9621, 13784, 2]
+// Dependencies: [109, 19, 17, 4855, 1087, 21, 5191, 587, 558, 576, 5479, 7130, 8588, 14118, 504, 5057, 14205, 5131, 1128, 13312, 7293, 10951, 5155, 6190, 7290, 14207, 8471, 7840, 9621, 13788, 2]
 
-// Module 14200 (UserProfileContactButtons)
+// Module 14204 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 10935 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13304 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13784 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 10951 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13312 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 13788 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -170,7 +170,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(14114);
+  const tmpResult = tmp(14118);
   const gameFriendsForUser = tmpResult.useGameFriendsForUser(user.id);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
@@ -204,7 +204,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let tmp12;
         let tmp14;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp(14201).UserClockIcon;
+          UserPlusIcon = tmp(14205).UserClockIcon;
         } else {
           UserPlusIcon = tmp(5131).UserPlusIcon;
         }
@@ -329,7 +329,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14114);
+  const tmp3Result = user(14118);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [RelationshipStore];
   const tmp3Result2 = user(504);
@@ -347,7 +347,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14201).UserClockIcon;
+          UserPlusIcon = tmp3(14205).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(5131).UserPlusIcon;
         }
@@ -442,7 +442,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   const tmpResult = user(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = user(14114);
+  const tmpResult2 = user(14118);
   const gameFriendsForUser = tmpResult2.useGameFriendsForUser(user.id);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     function closeUserProfile() {
@@ -486,7 +486,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
         }
       }
     }
-    const tmp14 = trackUserProfileAction(14203)(user.id, false, tmp12);
+    const tmp14 = trackUserProfileAction(14207)(user.id, false, tmp12);
     const handlePress = tmp14.handlePress;
     ({ text, inCall, accessibilityHint } = tmp14);
     if (hasCustomProfileTheme) {

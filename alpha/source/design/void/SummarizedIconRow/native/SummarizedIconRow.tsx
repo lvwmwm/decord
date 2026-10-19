@@ -1,9 +1,9 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15177
+// Function ID: 15178
 // Name: SummarizedIconRow
 // Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 2]
 
-// Module 15173 (SummarizedIconRow)
+// Module 15177 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

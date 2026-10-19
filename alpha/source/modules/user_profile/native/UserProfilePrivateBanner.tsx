@@ -1,9 +1,9 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14208
+// Function ID: 14209
 // Name: UserProfilePrivateBanner
 // Dependencies: [19, 17, 7181, 21, 5191, 587, 558, 576, 1105, 8495, 5187, 1128, 2]
 
-// Module 14204 (UserProfilePrivateBanner)
+// Module 14208 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

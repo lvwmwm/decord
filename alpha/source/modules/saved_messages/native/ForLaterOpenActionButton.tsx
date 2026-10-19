@@ -1,9 +1,9 @@
-// Module ID: 17545
-// Function ID: 17546
+// Module ID: 17549
+// Function ID: 17550
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 9980, 21, 9308, 13928, 5191, 587, 558, 576, 5127, 4913, 5485, 9981, 5150, 13593, 504, 13582, 1128, 7840, 2]
+// Dependencies: [19, 17, 9980, 21, 9308, 13932, 5191, 587, 558, 576, 5127, 4913, 5485, 9981, 5150, 13597, 504, 13586, 1128, 7840, 2]
 
-// Module 17545 (ForLaterOpenActionButton)
+// Module 17549 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import useThemeDefault from "useTheme" /* 5127 */;
 import ButtonHooks from "ButtonHooks" /* 5485 */;
 import ClipView from "ClipView" /* 9308 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 9981 */;
-import showForLaterModal from "showForLaterModal" /* 13582 */;
-import getIconSize from "getIconSize" /* 13928 */;
+import showForLaterModal from "showForLaterModal" /* 13586 */;
+import getIconSize from "getIconSize" /* 13932 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,7 +56,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badged
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
     BookmarkIcon = tmp(5150).ClockIcon;
   } else {
-    BookmarkIcon = tmp(13593).BookmarkIcon;
+    BookmarkIcon = tmp(13597).BookmarkIcon;
   }
   if (cResult[0] === iconSizeStyles) {
     let tmp9;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badged
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
     BookmarkIcon = tmp4(5150).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(13593).BookmarkIcon;
+    BookmarkIcon = tmp4(13597).BookmarkIcon;
   }
   const obj3 = { style: items, children: tmp8Result };
   items = [tmp6.container, iconSizeStyles];

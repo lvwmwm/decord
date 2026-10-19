@@ -1,10 +1,10 @@
-// Module ID: 13539
-// Function ID: 13540
+// Module ID: 13544
+// Function ID: 13545
 // Name: NotificationSettingsMuteBanner
 // Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 5479, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 13539 (NotificationSettingsMuteBanner)
+// Module 13544 (NotificationSettingsMuteBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,112 +1,50 @@
 // Module ID: 15381
 // Function ID: 15382
-// Dependencies: [15345, 15320, 15382, 15336, 15383, 15365, 15343, 15376]
+// Dependencies: [15350, 15382, 15325, 15378]
 
 // Module 15381
-import _mod15320 from "module_15320" /* 15320 */;
-import _mod15336 from "module_15336" /* 15336 */;
-import _mod15345 from "module_15345" /* 15345 */;
-import _mod15365 from "module_15365" /* 15365 */;
-import _mod15376 from "module_15376" /* 15376 */;
+import _mod15325 from "module_15325" /* 15325 */;
+import _mod15350 from "module_15350" /* 15350 */;
+import defineProperty2 from "defineProperty2" /* 15378 */;
 import _mod15382 from "module_15382" /* 15382 */;
-import _mod15383 from "module_15383" /* 15383 */;
 
-const require = globalThis.__r;
 
-let fn4;
-let fn5;
-let fn6;
-if (!_mod15382) {
-  let fn;
-  let fn2;
-  let fn3;
-  if (!_mod15336.state) {
-    let tmp = _mod15383("state");
-    let closure_6 = tmp;
-    _mod15365[tmp] = true;
-    fn = function t(facade, arg1) {
-      const tmp3 = closure_6;
-      if (require("module_15343")(facade, closure_6)) {
-        const self = this;
-        const self2 = this;
-        const typeError = new tmp(15320).TypeError("Object already initialized");
-        throw typeError;
-      } else {
-        arg1.facade = facade;
-        _mod15376(facade, tmp3, arg1);
-        return arg1;
-      }
-    };
-    fn4 = fn;
-    fn2 = function n(arg0) {
-      return require("module_15343")(arg0, closure_6) ? arg0[closure_6] : {};
-    };
-    fn5 = fn2;
-    fn3 = function u(arg0) {
-      return require("module_15343")(arg0, closure_6);
-    };
-    fn6 = fn3;
+export default (arg0, arg1, value, arg3) => {
+  const obj = arg3 || {};
+  let flag = obj.enumerable;
+  let name = arg1;
+  const tmp = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
   }
-  let obj = {
-    set: fn,
-    get: fn2,
-    has: fn3,
-    enforce(toString) {
-        let tmp2;
-        if (fn6(toString)) {
-          tmp2 = fn5(toString);
-        } else {
-          tmp2 = fn4(toString, {});
-        }
-        return tmp2;
-      },
-    getterFor(arg0) {
-        let closure_0 = arg0;
-        return (arg0) => {
-          if (_mod15345(arg0)) {
-            const tmp4 = fn5(arg0);
-            if (tmp4.type === closure_0) {
-              return tmp4;
-            }
-          }
-          const typeError = new _mod15320.TypeError("Incompatible receiver, " + closure_0 + " required");
-          throw typeError;
-        };
-      }
-  };
-  module.exports = obj;
-}
-let state = _mod15336.state;
-if (!state) {
-  const _module = _mod15336;
-  let self = this;
-  let self2 = this;
-  const weakMap = new _mod15320.WeakMap();
-  let tmp4 = weakMap;
-  _module.state = weakMap;
-  state = weakMap;
-}
-({ get: state.get, has: state.has, set: state.set } = state);
-fn4 = function t(facade, arg1) {
-  const obj = state;
-  if (state.has(facade)) {
-    const self = this;
-    const self2 = this;
-    const typeError = new _mod15320.TypeError("Object already initialized");
-    throw typeError;
+  if (_mod15350(value)) {
+    _mod15382(value, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = value;
+    } else {
+      _mod15325(arg1, value);
+    }
   } else {
-    arg1.facade = facade;
-    const result = obj.set(facade, arg1);
-    return arg1;
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp5[tmp];
+      }
+    } catch (err) {
+    }
+    const tmp6 = flag;
+    if (tmp6) {
+      arg0[arg1] = value;
+    } else {
+      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+      const tmp2Result = defineProperty2;
+      tmp2Result.f(arg0, arg1, obj2);
+    }
   }
+  return arg0;
 };
-fn5 = function n(arg0) {
-  const tmp = state.get(arg0) || {};
-  return tmp;
-};
-fn6 = function u(arg0) {
-  return state.has(arg0);
-};
-fn3 = fn6;
-fn2 = fn5;
-fn = fn4;

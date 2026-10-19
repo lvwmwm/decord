@@ -1,9 +1,9 @@
-// Module ID: 16833
-// Function ID: 16834
+// Module ID: 16837
+// Function ID: 16838
 // Name: UserSettingsDesignSystemLegacyButton
 // Dependencies: [32, 19, 17, 21, 1202, 558, 576, 5187, 5479, 5191, 587, 5477, 8855, 2]
 
-// Module 16833 (UserSettingsDesignSystemLegacyButton)
+// Module 16837 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

@@ -1,9 +1,9 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13509
+// Function ID: 13510
 // Name: ChannelContainer
-// Dependencies: [19, 17, 4846, 2068, 2119, 1087, 2065, 21, 5191, 558, 576, 5075, 13505, 504, 11231, 6178, 5033, 2052, 13624, 13625, 11408, 2]
+// Dependencies: [19, 17, 4846, 2068, 2119, 1087, 2065, 21, 5191, 558, 576, 5075, 13510, 504, 11250, 6178, 5033, 2052, 13628, 13629, 11426, 2]
 
-// Module 13504 (ChannelContainer)
+// Module 13509 (ChannelContainer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -27,8 +27,8 @@ let c10;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const common_NotificationsDefault = tmp4(13505);
-const useChannelStylesShared = tmp(13624);
+const common_NotificationsDefault = tmp4(13510);
+const useChannelStylesShared = tmp(13628);
 let react = react_mod;
 const View = react_native.View;
 const ChannelTypes = Constants.ChannelTypes;
@@ -127,7 +127,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp10 = !isStageChannel;
   if (isStageChannel) {
-    tmp10 = channelId(11231)(voiceChannelId);
+    tmp10 = channelId(11250)(voiceChannelId);
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [LurkingStore];
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
           tmp21 = cResult[13];
         }
         const effect = react.useEffect(tmp20, tmp21);
-        const tmpResult4 = tmp(13624);
+        const tmpResult4 = tmp(13628);
         const channelStyles = tmpResult4.useChannelStyles();
         if (cResult[14] === channel) {
           let tmp25;
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
           let tmp32 = tmp10;
           if (tmp32) {
             const obj4 = { style: channelStyles.callPTTButton };
-            tmp32 = closure_10(tmp9(11408), obj4);
+            tmp32 = closure_10(tmp9(11426), obj4);
           }
           cResult[17] = channelStyles.callPTTButton;
           cResult[18] = tmp10;
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
           tmp29 = null;
           if (stateFromStores) {
             const obj5 = { channel };
-            tmp29 = closure_10(tmp9(13625), obj5);
+            tmp29 = closure_10(tmp9(13629), obj5);
           }
         }
         cResult[14] = channel;
@@ -317,7 +317,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(11231)(voiceChannelId);
+    tmp5 = channelId(11250)(voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -366,13 +366,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(13625), obj4);
+      tmp15 = closure_10(tmp4(13629), obj4);
     }
   }
   items3 = [tmp15, children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(11408), obj5);
+    tmp5 = closure_10(tmp4(11426), obj5);
   }
   items3[2] = tmp5;
   items4 = [closure_11(closure_4, obj3), closure_10(closure_13, {})];

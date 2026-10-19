@@ -1,9 +1,9 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 18442
+// Function ID: 18443
 // Name: AgeVerificationManager
-// Dependencies: [2068, 5532, 2119, 1392, 1087, 7295, 3, 1109, 12643, 7983, 7445, 7280, 7085, 2000, 6177, 6176, 6008, 2]
+// Dependencies: [2068, 5532, 2119, 1392, 1087, 7295, 3, 1109, 12660, 7983, 7445, 7280, 7085, 2000, 6177, 6176, 6008, 2]
 
-// Module 18438 (AgeVerificationManager)
+// Module 18442 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1109 */;
 import UserStore2 from "UserStore" /* 1392 */;
@@ -13,7 +13,7 @@ import AgeGatedFeature from "AgeGatedFeature" /* 6176 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
 import Constants2 from "Constants" /* 7295 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7983 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12643 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12660 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import MessageStore from "MessageStore" /* 5532 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;

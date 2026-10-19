@@ -1,9 +1,9 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17485
+// Function ID: 17486
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6014, 2068, 6362, 4855, 1392, 1087, 21, 5191, 587, 558, 576, 17437, 504, 8923, 1128, 17440, 5202, 10595, 17482, 10592, 1202, 5128, 2]
+// Dependencies: [19, 502, 6014, 2068, 6362, 4855, 1392, 1087, 21, 5191, 587, 558, 576, 17441, 504, 8923, 1128, 17444, 5202, 10595, 17486, 10592, 1202, 5128, 2]
 
-// Module 17481 (GuildsBarDirectMessage)
+// Module 17485 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

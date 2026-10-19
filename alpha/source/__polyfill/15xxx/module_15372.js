@@ -1,18 +1,16 @@
 // Module ID: 15372
 // Function ID: 15373
-// Dependencies: [15345]
+// Dependencies: [15373]
 
 // Module 15372
-import _mod15345 from "module_15345" /* 15345 */;
+import _mod15373 from "module_15373" /* 15373 */;
 
 
-export default function(arg0) {
-  if (_mod15345(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
+export default (arg0) => {
+  const tmp = _mod15373(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
+  return num;
 };

@@ -159,7 +159,7 @@ function handleUpdateOptionStates(changedOptionStates) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "application", length: "hideActionSheet" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "IconComponent" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

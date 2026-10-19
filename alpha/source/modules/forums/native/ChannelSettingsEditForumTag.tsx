@@ -1,9 +1,9 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18004
+// Function ID: 18005
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 6243, 2068, 1395, 21, 5191, 587, 558, 576, 1505, 504, 5187, 1128, 9628, 7365, 9726, 5400, 7098, 1417, 9252, 6462, 1202, 6573, 6542, 6457, 7172, 5477, 2]
 
-// Module 18000 (ChannelSettingsEditForumTag)
+// Module 18004 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;

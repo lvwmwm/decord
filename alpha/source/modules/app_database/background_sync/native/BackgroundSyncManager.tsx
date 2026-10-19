@@ -1,10 +1,10 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18453
+// Function ID: 18454
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1392, 7085, 18450, 2]
+// Dependencies: [502, 1392, 7085, 18454, 2]
 
-// Module 18449 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 18450 */;
+// Module 18453 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 18454 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1392 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;

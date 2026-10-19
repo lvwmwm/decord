@@ -1,19 +1,19 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13255
+// Function ID: 13256
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5104, 1087, 13248, 21, 5191, 587, 558, 576, 5491, 9709, 6941, 13231, 13208, 5187, 1128, 2621, 13183, 13200, 13249, 13205, 13250, 2]
+// Dependencies: [19, 17, 5104, 1087, 13256, 21, 5191, 587, 558, 576, 5491, 9709, 6941, 13239, 13216, 5187, 1128, 2621, 13191, 13208, 13257, 13213, 13258, 2]
 
-// Module 13247 (GuildPowerupsLevelCard)
+// Module 13255 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13183 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13200 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13208 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13248 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13249 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13191 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13208 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 13216 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13256 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13257 */;
 import react from "react" /* 19 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
 import Constants from "Constants" /* 1087 */;
@@ -47,8 +47,8 @@ let tmp6;
 let unpackModuleId;
 const Text_Text = tmp(5187);
 const BoostGemIcon2 = tmp(9709);
-const GuildPowerupsCardFooter = tmp(13205);
-const GuildPowerupsCardDefault = tmp6(13250);
+const GuildPowerupsCardFooter = tmp(13213);
+const GuildPowerupsCardDefault = tmp6(13258);
 const View = react_native.View;
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 ({ BoostedGuildTiers: metroImportDefault, HorizontalGradient: metroImportAll } = Constants);

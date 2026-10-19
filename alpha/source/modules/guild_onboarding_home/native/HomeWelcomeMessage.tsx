@@ -1,9 +1,9 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17711
+// Function ID: 17712
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2090, 1392, 7202, 21, 5191, 587, 558, 576, 573, 8584, 8627, 7287, 8585, 5057, 1105, 8656, 1202, 5509, 5187, 8896, 10841, 4922, 2]
+// Dependencies: [19, 17, 2090, 1392, 7202, 21, 5191, 587, 558, 576, 573, 8584, 8627, 7287, 8585, 5057, 1105, 8656, 1202, 5509, 5187, 8896, 10857, 4922, 2]
 
-// Module 17707 (HomeWelcomeMessage)
+// Module 17711 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;

@@ -1,10 +1,10 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 18848
+// Function ID: 18849
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 2068, 4845, 7446, 1087, 558, 576, 504, 7304, 5891, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 18844 (GuildTemplateSettingsUtils)
+// Module 18848 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1087 */;
 import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

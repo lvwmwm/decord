@@ -1,7 +1,7 @@
 // Module ID: 8769
 // Function ID: 8770
 // Name: getOnClick
-// Dependencies: [32, 5, 5540, 6332, 7209, 502, 2128, 2090, 5173, 5532, 2119, 5034, 6219, 1087, 1089, 7210, 584, 5174, 8770, 8792, 2002, 6377, 7224, 8787, 5172, 5177, 7644, 4895, 1267, 12787, 13967, 11235, 7290, 11857, 13971, 11086, 10459, 9468, 1386, 9470, 6233, 13972, 7529, 5206, 5522, 8537, 11140, 2]
+// Dependencies: [32, 5, 5540, 6332, 7209, 502, 2128, 2090, 5173, 5532, 2119, 5034, 6219, 1087, 1089, 7210, 584, 5174, 8770, 8792, 2002, 6377, 7224, 8787, 5172, 5177, 7644, 4895, 1267, 12804, 13971, 11254, 7290, 11876, 13975, 11105, 10459, 9468, 1386, 9470, 6233, 13976, 7529, 5206, 5522, 8537, 11159, 2]
 // Exports: default
 
 // Module 8769 (getOnClick)
@@ -17,8 +17,8 @@ import safeTransitionToDefault from "safeTransitionTo" /* 7224 */;
 import _slicedToArray2 from "_slicedToArray" /* 7644 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8770 */;
 import QuestUtils from "QuestUtils" /* 9470 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11086 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11140 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11105 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11159 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
@@ -335,7 +335,7 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "a" };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -544,7 +544,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(13971, dependencyMap.paths);
+        const promise = asyncRequire(13975, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

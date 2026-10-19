@@ -1,10 +1,10 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16568
+// Function ID: 16569
 // Name: FriendGamingActivityNotificationUtils
 // Dependencies: [4858, 1087, 2044, 1267, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 16564 (FriendGamingActivityNotificationUtils)
+// Module 16568 (FriendGamingActivityNotificationUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 2044 */;

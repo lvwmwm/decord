@@ -1,14 +1,14 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16648
+// Function ID: 16649
 // Name: HashmarkIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16645, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16649, 4912, 2]
 
-// Module 16644 (HashmarkIcon)
+// Module 16648 (HashmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 16645 */;
+import AssetRegistry from "AssetRegistry" /* 16649 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

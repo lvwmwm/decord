@@ -1,9 +1,9 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16102
+// Function ID: 16103
 // Name: BountiesModalCloseButton
 // Dependencies: [19, 21, 5191, 587, 558, 576, 1128, 6485, 6462, 2]
 
-// Module 16098 (BountiesModalCloseButton)
+// Module 16102 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

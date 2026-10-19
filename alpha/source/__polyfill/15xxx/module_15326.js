@@ -1,27 +1,34 @@
 // Module ID: 15326
 // Function ID: 15327
-// Dependencies: [15327, 15324, 15329]
+// Dependencies: [15327, 15329, 15336, 15359, 15347, 15361, 15357, 15362]
 
 // Module 15326
-import _mod15324 from "module_15324" /* 15324 */;
 import _mod15327 from "module_15327" /* 15327 */;
 import _mod15329 from "module_15329" /* 15329 */;
+import _mod15336 from "module_15336" /* 15336 */;
+import _mod15347 from "module_15347" /* 15347 */;
+import _mod15357 from "module_15357" /* 15357 */;
+import _mod15359 from "module_15359" /* 15359 */;
+import _mod15361 from "module_15361" /* 15361 */;
+import propertyIsEnumerable from "propertyIsEnumerable" /* 15362 */;
 
-let fn = Object;
-let closure_3 = _mod15327("".split);
-if (_mod15324(() => {
-  const obj = Object("z");
-  return !obj.propertyIsEnumerable(0);
-})) {
-  fn = (arg0) => {
-    let tmp2;
-    if ("String" === _mod15329(arg0)) {
-      tmp2 = closure_3(arg0, "");
+if (!_mod15327) {
+  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
+    const tmp3 = _mod15329(arg0);
+    const tmp4 = _mod15336(arg1);
+    if (!_mod15359) {
+      if (_mod15347(tmp3, tmp4)) {
+        const tmpResult = _mod15361;
+        const tmpResult2 = _mod15357;
+        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
+      }
     } else {
-      tmp2 = Object(arg0);
+      try {
+        return getOwnPropertyDescriptor(tmp3, tmp4);
+      } catch (err) {
+      }
     }
-    return tmp2;
   };
 }
 
-export default fn;
+export const f = getOwnPropertyDescriptor;

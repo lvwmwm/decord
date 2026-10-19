@@ -1,15 +1,15 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12299
+// Function ID: 12300
 // Name: ConjureAppBuildRequestCard
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12282, 1128, 3883, 5155, 12280, 5187, 6485, 7840, 6542, 6457, 7051, 5479, 12149, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12300, 1128, 3883, 5155, 12298, 5187, 6485, 7840, 6542, 6457, 7051, 5479, 11662, 2]
 
-// Module 12281 (ConjureAppBuildRequestCard)
+// Module 12299 (ConjureAppBuildRequestCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12149 */;
-import ConjureClarificationProjectSheetDefault from "ConjureClarificationProjectSheet" /* 12280 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11662 */;
+import ConjureClarificationProjectSheetDefault from "ConjureClarificationProjectSheet" /* 12298 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -53,7 +53,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
   ({ request, onDismiss } = arg0);
   ({ projectId, canSend } = arg0);
   const tmp4 = closure_7();
-  let obj2 = conjureAppBuildRequestForm(12282);
+  let obj2 = conjureAppBuildRequestForm(12300);
   conjureAppBuildRequestForm = obj2.useConjureAppBuildRequestForm(projectId, request, canSend);
   if (cResult[0] === conjureAppBuildRequestForm.projects) {
     let tmp6;
@@ -261,7 +261,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
                     }
                   }
                   ({ prompt: obj9.value, setPrompt: obj9.onChange } = conjureAppBuildRequestForm);
-                  const obj8 = { label: tmp49, value: null, onChange: null, maxLength: tmp(12282).CONJURE_APP_BUILD_PROMPT_MAX_LENGTH, disabled: conjureAppBuildRequestForm.sending, errorMessage: tmp52 };
+                  const obj8 = { label: tmp49, value: null, onChange: null, maxLength: tmp(12300).CONJURE_APP_BUILD_PROMPT_MAX_LENGTH, disabled: conjureAppBuildRequestForm.sending, errorMessage: tmp52 };
                   const TextArea = tmp(7051).TextArea;
                   const tmp57 = closure_4(TextArea, obj8);
                   cResult[30] = conjureAppBuildRequestForm.prompt;
@@ -370,7 +370,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
   let conjureAppBuildRequestForm;
   ({ projectId, canSend, onDismiss } = request);
   const tmp = closure_7();
-  let obj = conjureAppBuildRequestForm(12282);
+  let obj = conjureAppBuildRequestForm(12300);
   conjureAppBuildRequestForm = obj.useConjureAppBuildRequestForm(projectId, request, canSend);
   const projects = conjureAppBuildRequestForm.projects;
   const found = projects.find((projectId) => projectId.projectId === conjureAppBuildRequestForm.targetId);
@@ -436,7 +436,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
     tmp11Result = tmp11(TableRowGroup, obj8);
   }
   items1[1] = tmp11Result;
-  const obj12 = { label: intl5.string(_modDef3883.XZNsDA), value: null, onChange: null, maxLength: conjureAppBuildRequestForm(12282).CONJURE_APP_BUILD_PROMPT_MAX_LENGTH, disabled: conjureAppBuildRequestForm.sending, errorMessage: stringResult1 };
+  const obj12 = { label: intl5.string(_modDef3883.XZNsDA), value: null, onChange: null, maxLength: conjureAppBuildRequestForm(12300).CONJURE_APP_BUILD_PROMPT_MAX_LENGTH, disabled: conjureAppBuildRequestForm.sending, errorMessage: stringResult1 };
   const TextArea = tmp2(7051).TextArea;
   intl5 = tmp2(1128).intl;
   ({ prompt: obj9.value, setPrompt: obj9.onChange } = conjureAppBuildRequestForm);

@@ -1,9 +1,9 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 17923
+// Function ID: 17924
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6335, 4855, 1392, 10520, 1087, 10536, 21, 5191, 587, 17920, 2002, 5401, 558, 576, 6336, 573, 2044, 17554, 6337, 11, 7130, 7155, 1267, 14114, 7134, 17921, 1357, 8577, 1128, 1505, 6542, 6457, 5187, 8805, 10529, 9051, 6462, 12695, 16152, 10526, 2]
+// Dependencies: [32, 19, 17, 6335, 4855, 1392, 10520, 1087, 10536, 21, 5191, 587, 17924, 2002, 5401, 558, 576, 6336, 573, 2044, 17558, 6337, 11, 7130, 7155, 1267, 14118, 7134, 17925, 1357, 8577, 1128, 1505, 6542, 6457, 5187, 8805, 10529, 9051, 6462, 12712, 16156, 10526, 2]
 
-// Module 17919 (FriendRequestsScreen)
+// Module 17923 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import useAlertStore from "useAlertStore" /* 5401 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
 import UserRowConstants from "UserRowConstants" /* 10520 */;
 import Constants2 from "Constants" /* 10536 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17554 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17921 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17558 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6335 */;
@@ -305,9 +305,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   }), 2);
   first = tmp8[0];
   dependencyMap = tmp10;
-  let obj2 = analyticsLocations(14114);
+  let obj2 = analyticsLocations(14118);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = analyticsLocations(14114);
+  let obj3 = analyticsLocations(14118);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -554,7 +554,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   if (tmp25) {
     let stringResult;
     const obj15 = { style: tmp.noResultsContainer, children: outgoingData(tmp2Result, obj16) };
-    tmp2Result = tmp2(12695);
+    tmp2Result = tmp2(12712);
     if (first1 === Outgoing.Incoming) {
       const intl5 = tmp7(1128).intl;
       stringResult = intl5.string(tmp7(1128).t["7uvAKe"]);
@@ -562,7 +562,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
       const intl4 = tmp7(1128).intl;
       stringResult = intl4.string(tmp7(1128).t["yvzX/Z"]);
     }
-    obj16 = { title: stringResult, illustration: analyticsLocations(16152).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj16 = { title: stringResult, illustration: analyticsLocations(16156).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp32Result2 = tmp32(tmp33, obj15);
   } else {
     const UsersFastList = tmp7(10526).UsersFastList;

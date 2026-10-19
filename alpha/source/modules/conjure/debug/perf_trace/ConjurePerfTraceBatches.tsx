@@ -1,10 +1,10 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 10984
+// Function ID: 10985
 // Name: ConjurePerfTraceBatches
 // Dependencies: [2]
 // Exports: applyTimingTraceBatch
 
-// Module 10968 (ConjurePerfTraceBatches)
+// Module 10984 (ConjurePerfTraceBatches)
 import size from "module_2" /* 2 */;
 
 function foldRecord(_Map1, nextResult) {

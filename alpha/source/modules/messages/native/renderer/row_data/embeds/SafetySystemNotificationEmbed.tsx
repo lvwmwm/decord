@@ -1,10 +1,10 @@
-// Module ID: 14334
-// Function ID: 14335
+// Module ID: 14338
+// Function ID: 14339
 // Name: SafetySystemNotificationEmbed
 // Dependencies: [17, 1087, 4797, 7839, 8439, 7778, 8158, 1128, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 14334 (SafetySystemNotificationEmbed)
+// Module 14338 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef4797 from "module_4797" /* 4797 */;

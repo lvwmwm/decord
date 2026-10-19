@@ -1,9 +1,9 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16519
+// Function ID: 16520
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1392, 4870, 8260, 1087, 21, 5191, 587, 558, 576, 1505, 4864, 573, 5187, 1128, 6459, 1202, 10070, 6957, 11065, 15728, 2]
+// Dependencies: [19, 17, 1392, 4870, 8260, 1087, 21, 5191, 587, 558, 576, 1505, 4864, 573, 5187, 1128, 6459, 1202, 10070, 6957, 11084, 15732, 2]
 
-// Module 16515 (SettingsChatScreen)
+// Module 16519 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import intl14 from "intl" /* 1128 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6957 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10070 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
-import SettingLayoutDefault from "SettingLayout" /* 15728 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 4870 */;
@@ -267,7 +267,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsChat
   }
   if (first !== initialSetting) {
     const obj2 = { sections: getChatSettings(), scrollTarget: initialSetting1 };
-    const createList = tmp(11065).createList;
+    const createList = tmp(11084).createList;
     SettingBuilders;
     initialSetting1 = undefined;
     if (route != null) {

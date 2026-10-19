@@ -1,9 +1,9 @@
-// Module ID: 18440
-// Function ID: 18441
+// Module ID: 18444
+// Function ID: 18445
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1392, 9767, 1087, 3, 9768, 7085, 1384, 14528, 4864, 1267, 2]
+// Dependencies: [5, 1392, 9767, 1087, 3, 9768, 7085, 1384, 14532, 4864, 1267, 2]
 
-// Module 18440 (AppIconPremiumManager)
+// Module 18444 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

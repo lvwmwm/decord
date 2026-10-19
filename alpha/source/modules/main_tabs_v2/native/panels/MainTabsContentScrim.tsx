@@ -1,9 +1,9 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 17671
+// Function ID: 17672
 // Name: MainTabsContentScrim
 // Dependencies: [17, 21, 5191, 587, 558, 576, 4945, 2]
 
-// Module 17667 (MainTabsContentScrim)
+// Module 17671 (MainTabsContentScrim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

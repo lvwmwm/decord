@@ -1,9 +1,9 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 18353
+// Function ID: 18354
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2068, 2119, 1087, 558, 576, 4834, 10789, 11255, 11206, 1123, 2]
+// Dependencies: [5, 19, 2068, 2119, 1087, 558, 576, 4834, 10805, 11274, 11225, 1123, 2]
 
-// Module 18349 (useTransitionToConnectedActivityInVoice)
+// Module 18353 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

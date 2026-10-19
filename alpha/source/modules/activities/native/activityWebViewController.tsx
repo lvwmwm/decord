@@ -1,16 +1,16 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11323
+// Function ID: 11324
 // Name: activityWebViewController
-// Dependencies: [2067, 11306, 11307, 6312, 11025, 5400, 1128, 2]
+// Dependencies: [2067, 11324, 11325, 6312, 11046, 5400, 1128, 2]
 // Exports: getOrCreateActivityWebViewController, releaseActivityWebView
 
-// Module 11305 (activityWebViewController)
+// Module 11323 (activityWebViewController)
 import intl3 from "intl" /* 1128 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6312 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11025 */;
-import makeIframeIdDefault from "makeIframeId" /* 11306 */;
-import createWebViewControllerDefault from "createWebViewController" /* 11307 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11046 */;
+import makeIframeIdDefault from "makeIframeId" /* 11324 */;
+import createWebViewControllerDefault from "createWebViewController" /* 11325 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import size from "module_2" /* 2 */;
 

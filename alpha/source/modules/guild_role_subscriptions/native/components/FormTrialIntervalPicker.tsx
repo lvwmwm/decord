@@ -1,15 +1,15 @@
-// Module ID: 18964
-// Function ID: 18965
+// Module ID: 18968
+// Function ID: 18969
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 14906, 1128, 16285, 5155, 8829, 2002, 2]
+// Dependencies: [19, 21, 14910, 1128, 16289, 5155, 8829, 2002, 2]
 // Exports: default
 
-// Module 18964 (FormTrialIntervalPicker)
+// Module 18968 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import FormDropdownDefault from "FormDropdown" /* 14906 */;
+import FormDropdownDefault from "FormDropdown" /* 14910 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export default function FormTrialIntervalPicker(interval) {
     stringResult = intl.string(interval(1128).t.WZG1BU);
   } else {
     let tmp4 = interval;
-    let obj = interval(16285);
+    let obj = interval(16289);
     stringResult = obj.formatPlanIntervalDuration(interval);
   }
   const obj2 = {

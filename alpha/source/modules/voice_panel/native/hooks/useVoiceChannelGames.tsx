@@ -1,9 +1,9 @@
-// Module ID: 18284
-// Function ID: 18285
+// Module ID: 18288
+// Function ID: 18289
 // Name: useVoiceChannelGames
 // Dependencies: [19, 502, 5207, 6015, 1392, 558, 576, 9128, 504, 9129, 8510, 2]
 
-// Module 18284 (useVoiceChannelGames)
+// Module 18288 (useVoiceChannelGames)
 import useGameProfileObscured from "useGameProfileObscured" /* 8510 */;
 import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9128 */;
 import react from "react" /* 19 */;

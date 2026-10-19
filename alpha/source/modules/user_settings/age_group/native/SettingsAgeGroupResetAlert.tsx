@@ -1,9 +1,9 @@
-// Module ID: 15774
-// Function ID: 15775
+// Module ID: 15778
+// Function ID: 15779
 // Name: SettingsAgeGroupResetAlert
 // Dependencies: [5, 21, 558, 576, 1505, 6179, 5401, 4903, 1128, 3143, 5405, 5405, 2]
 
-// Module 15774 (SettingsAgeGroupResetAlert)
+// Module 15778 (SettingsAgeGroupResetAlert)
 import _modDef3143 from "module_3143" /* 3143 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;

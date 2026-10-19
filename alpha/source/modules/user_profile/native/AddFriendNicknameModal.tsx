@@ -1,10 +1,10 @@
-// Module ID: 14032
-// Function ID: 14033
+// Module ID: 14036
+// Function ID: 14037
 // Name: AddFriendNicknameModal
 // Dependencies: [5, 32, 19, 17, 4855, 1392, 21, 5191, 587, 9936, 504, 1128, 6190, 7293, 7006, 5498, 5187, 6570, 5057, 2]
 // Exports: default
 
-// Module 14032 (AddFriendNicknameModal)
+// Module 14036 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;

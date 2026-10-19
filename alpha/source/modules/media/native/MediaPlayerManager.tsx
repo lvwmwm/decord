@@ -1,10 +1,10 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15573
+// Function ID: 15574
 // Name: MediaPlayerManager
-// Dependencies: [17, 2067, 6352, 2068, 5532, 4845, 2001, 1087, 6298, 15570, 1098, 3, 570, 1274, 2004, 5073, 584, 1384, 568, 7445, 6350, 2]
+// Dependencies: [17, 2067, 6352, 2068, 5532, 4845, 2001, 1087, 6298, 15574, 1098, 3, 570, 1274, 2004, 5073, 584, 1384, 568, 7445, 6350, 2]
 // Exports: isPlaybackComplete
 
-// Module 15569 (MediaPlayerManager)
+// Module 15573 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 2068 */;
 import MessageStore from "MessageStore" /* 5532 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15570 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15574 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: 2482,
+    showPip: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 2485
+    currentlyDisplayedChannelId: "function ChatInputContextBarTsx4(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}"
   };
   return obj;
 });

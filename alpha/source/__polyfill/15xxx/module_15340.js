@@ -1,47 +1,24 @@
 // Module ID: 15340
 // Function ID: 15341
-// Dependencies: [15320, 15341]
+// Dependencies: [15324, 15325, 15341]
 
 // Module 15340
-import _mod15320 from "module_15320" /* 15320 */;
+import _mod15324 from "module_15324" /* 15324 */;
+import _mod15325 from "module_15325" /* 15325 */;
 import _mod15341 from "module_15341" /* 15341 */;
 
-let tmp4;
-let tmp = _mod15320.process && _mod15320.process.versions;
-if (!tmp) {
-  tmp = _mod15320.Deno && _mod15320.Deno.version;
-  _mod15320.Deno && _mod15320.Deno.version;
+const prop = _mod15324["__core-js_shared__"] || _mod15325("__core-js_shared__", {});
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
 }
-let tmp3;
-if (tmp && tmp.v8) {
-  let num3;
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    num3 = +parts[0] + parts[1];
-  } else {
-    num3 = 1;
-  }
-  tmp3 = num3;
-  tmp4 = parts;
+const push = versions.push;
+let str2 = "global";
+if (_mod15341) {
+  str2 = "pure";
 }
-let match1 = !tmp3 && _mod15341;
-if (match1) {
-  const str3 = _mod15341;
-  const match = str3.match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (match) {
-    tmp8 = match[1] >= 74;
-  }
-  match1 = tmp8;
-  tmp4 = match;
-}
-if (match1) {
-  const str4 = _mod15341;
-  match1 = str4.match(/Chrome\/(\d+)/);
-  tmp4 = match1;
-}
-if (match1) {
-  tmp3 = +tmp4[1];
-}
+push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export default tmp3;
+export default prop;

@@ -1,12 +1,12 @@
-// Module ID: 11011
-// Function ID: 11012
+// Module ID: 11032
+// Function ID: 11033
 // Name: conjurePreviewSurface
-// Dependencies: [6295, 6296, 6297, 11012, 2]
+// Dependencies: [6295, 6296, 6297, 11033, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewSurface
 
-// Module 11011 (conjurePreviewSurface)
+// Module 11032 (conjurePreviewSurface)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11012 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11033 */;
 import FramesStore from "FramesStore" /* 6295 */;
 import FramesConstants from "FramesConstants" /* 6296 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let _require;
 
 let c3;
 let closure_4;
-const f107354 = (item) => null != item;
+const f107475 = (item) => null != item;
 ({ isLaunched: c3, makeFrameId: closure_4 } = FramesConstants);
 let c5 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -88,7 +88,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f107354);
+  return mapped.filter(f107475);
 };
 export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -111,7 +111,7 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f107354);
+  const found = mapped.filter(f107475);
   let found1 = found.find(closure_3);
   if (found1 == null) {
     found1 = found[0];

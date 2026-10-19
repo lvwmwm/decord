@@ -1,9 +1,9 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15655
+// Function ID: 15656
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7536, 9293, 21, 5191, 14254, 558, 576, 15650, 14255, 7155, 8626, 9318, 5128, 9296, 2]
+// Dependencies: [19, 17, 7536, 9293, 21, 5191, 14258, 558, 576, 15654, 14259, 7155, 8626, 9318, 5128, 9296, 2]
 
-// Module 15651 (EditProfileEffectSection)
+// Module 15655 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5128 */;
@@ -13,8 +13,8 @@ import useProfileEffectDefault from "useProfileEffect" /* 8626 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9293 */;
 import ProfileEffectDefault from "ProfileEffect" /* 9296 */;
 import _modDef9318 from "module_9318" /* 9318 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14254 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 15650 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14258 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 15654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(14255);
+const CollectiblesEditUserProfileListItems = tmp(14259);
 const View = react_native.View;
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 const SAMPLE_PROFILE_ASPECT_RATIO = CollectiblesPreviewConstants.SAMPLE_PROFILE_ASPECT_RATIO;
@@ -133,7 +133,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (item === useProfileEffectSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-      const EditCollectiblesListItemShop = tmp(14255).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
       return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileEffectRecord(item)) {
       const obj4 = { item, isSelected: selectedSkuId === item.skuId, setSelectedProfileEffect, isTryItOut, size };
@@ -180,7 +180,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (item === useProfileEffectSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-        const EditCollectiblesListItemShop = tmp(14255).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileEffectRecord(item)) {
         const obj4 = { item, isSelected: require === item.skuId, setSelectedProfileEffect, isTryItOut, size };

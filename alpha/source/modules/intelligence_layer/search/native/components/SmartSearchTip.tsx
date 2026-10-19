@@ -1,9 +1,9 @@
-// Module ID: 17822
-// Function ID: 17823
+// Module ID: 17826
+// Function ID: 17827
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 4127, 5187, 14078, 1202, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 4127, 5187, 14082, 1202, 2]
 
-// Module 17822 (SmartSearchTip)
+// Module 17826 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -40,7 +40,7 @@ const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, header: obj3, titleContainer: obj4, title: { flexShrink: 1 } };
-obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_24 };
+obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_20 };
 obj4 = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_6 };
@@ -170,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               return hasOwnProperty(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp(14078).AvatarPile;
+      const AvatarPile = tmp(14082).AvatarPile;
       substr = arr.slice(0, 3);
       tmp20 = closure_5(AvatarPile, obj7);
     }
@@ -224,7 +224,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(14078).AvatarPile;
+    const AvatarPile = tmp5(14082).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }

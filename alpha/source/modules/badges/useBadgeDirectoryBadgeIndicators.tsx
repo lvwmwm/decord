@@ -1,13 +1,13 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10906
+// Function ID: 10907
 // Name: useBadgeDirectoryBadgeIndicators
-// Dependencies: [19, 10891, 10889, 8595, 558, 576, 504, 2]
+// Dependencies: [19, 10907, 10905, 8595, 558, 576, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId
 
-// Module 10890 (useBadgeDirectoryBadgeIndicators)
-import BadgeUtils from "BadgeUtils" /* 10889 */;
+// Module 10906 (useBadgeDirectoryBadgeIndicators)
+import BadgeUtils from "BadgeUtils" /* 10905 */;
 import react from "react" /* 19 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10891 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10907 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

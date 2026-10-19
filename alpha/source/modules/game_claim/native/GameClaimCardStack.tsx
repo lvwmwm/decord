@@ -1,9 +1,9 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17319
+// Function ID: 17320
 // Name: GameClaimCardStack
 // Dependencies: [19, 17, 21, 587, 683, 5191, 558, 576, 5128, 9371, 2]
 
-// Module 17315 (GameClaimCardStack)
+// Module 17319 (GameClaimCardStack)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

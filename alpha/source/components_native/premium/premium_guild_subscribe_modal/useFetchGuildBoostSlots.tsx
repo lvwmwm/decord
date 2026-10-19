@@ -1,9 +1,9 @@
-// Module ID: 14647
-// Function ID: 14648
+// Module ID: 14651
+// Function ID: 14652
 // Name: useFetchGuildBoostSlots
 // Dependencies: [5, 32, 19, 7390, 2001, 558, 576, 504, 1107, 7410, 8296, 2]
 
-// Module 14647 (useFetchGuildBoostSlots)
+// Module 14651 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

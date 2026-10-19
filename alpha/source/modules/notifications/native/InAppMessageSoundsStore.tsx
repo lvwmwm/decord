@@ -1,10 +1,10 @@
-// Module ID: 13524
-// Function ID: 13525
+// Module ID: 13529
+// Function ID: 13530
 // Name: InAppMessageSoundsStore
 // Dependencies: [510, 1269, 558, 576, 4828, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
 
-// Module 13524 (InAppMessageSoundsStore)
+// Module 13529 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import module_1269 from "module_1269" /* 1269 */;

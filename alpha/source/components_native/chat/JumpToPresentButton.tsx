@@ -1,9 +1,9 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 12925
+// Function ID: 12926
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9683, 6013, 5532, 21, 5191, 587, 1384, 4913, 558, 576, 504, 11400, 1128, 12909, 12910, 12911, 2]
+// Dependencies: [19, 17, 9683, 6013, 5532, 21, 5191, 587, 1384, 4913, 558, 576, 504, 11418, 1128, 12926, 12927, 12928, 2]
 
-// Module 12908 (JumpToPresentButton)
+// Module 12925 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -239,9 +239,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function JumpToPresen
     }
     return tmp;
   });
-  const obj2 = channelId(11400);
+  const obj2 = channelId(11418);
   const isVoicePanelMounted = obj2.useIsVoicePanelMounted(channelId);
-  const obj3 = channelId(11400);
+  const obj3 = channelId(11418);
   const isVoicePanelOpen = obj3.useIsVoicePanelOpen(channelId);
   const items1 = [MessageStore];
   const obj4 = channelId(504);
@@ -265,11 +265,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function JumpToPresen
   }
   const items3 = [tmp.container, tmp10];
   if (tmp5) {
-    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(12910), onPress: onJumpToPresent };
-    const tmp16 = screenIndex(12909);
+    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(12927), onPress: onJumpToPresent };
+    const tmp16 = screenIndex(12926);
     tmp12Result = tmp12(tmp16, obj6);
   } else {
-    tmp12Result = tmp12(tmp3(12911).MemoedVoicePanelDismissChatButton, {});
+    tmp12Result = tmp12(tmp3(12928).MemoedVoicePanelDismissChatButton, {});
   }
   return <tmp13 style={items3}>{tmp12Result}</tmp13>;
 });

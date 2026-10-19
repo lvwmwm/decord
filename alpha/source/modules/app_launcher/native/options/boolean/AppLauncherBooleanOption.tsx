@@ -1,9 +1,9 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12028
+// Function ID: 12029
 // Name: AppLauncherBooleanOption
 // Dependencies: [32, 19, 21, 5191, 587, 558, 576, 8855, 2]
 
-// Module 12009 (AppLauncherBooleanOption)
+// Module 12028 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

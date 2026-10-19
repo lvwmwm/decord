@@ -1,382 +1,336 @@
 // Module ID: 12417
 // Function ID: 12418
-// Dependencies: [5, 12396, 12418, 12397, 12369, 12380, 12383, 12376, 12406, 12370, 12392]
-// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
+// Dependencies: [729, 12413, 12418, 12419, 12391, 12400, 12408, 12401, 12386, 12403, 12414, 12420]
+// Exports: startIdleSpan
 
 // Module 12417
-import _mod12370 from "module_12370" /* 12370 */;
-import _mod12376 from "module_12376" /* 12376 */;
-import _mod12380 from "module_12380" /* 12380 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12383 */;
-import _mod12392 from "module_12392" /* 12392 */;
-import _mod12396 from "module_12396" /* 12396 */;
-import _mod12397 from "module_12397" /* 12397 */;
-import _mod12418 from "module_12418" /* 12418 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _mod12386 from "module_12386" /* 12386 */;
+import _mod12391 from "module_12391" /* 12391 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12400 */;
+import _mod12403 from "module_12403" /* 12403 */;
+import _mod12414 from "module_12414" /* 12414 */;
+import _toArray from "_toArray" /* 729 */;
 
 const require = globalThis.__r;
-let _require, c1, dependencyMap;
+let _require, closure_0, closure_1, heartbeatFailed, map;
 
-let obj = function _flush() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
+const TRACING_DEFAULTS = { idleTimeout: 1000, finalTimeout: 30000, childSpanTimeout: 15000 };
+
+export { TRACING_DEFAULTS };
+export const startIdleSpan = function startIdleSpan(arg0) {
+  let _undefined;
+  let closure_10;
+  let closure_11;
+  const f146552 = () => {
+    const tmp = !c2 && 0 === map.size && closure_4;
+    if (tmp) {
+      idleTimeout = "idleTimeout";
+      c12.end(closure_0);
+    }
+  };
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  _require = undefined;
+  let finalTimeout;
+  let childSpanTimeout;
+  let beforeSpanEnd;
+  let currentScope;
+  let activeSpan;
+  let c12;
+  function onIdleSpanEnded(arg0) {
+    closure_0 = arg0;
+    c2 = true;
+    map.clear();
+    const item = items.forEach((fn) => fn());
+    let obj = closure_0(map[6]);
+    obj._setSpanForScope(closure_10, closure_11);
+    let obj2 = closure_0(map[4]);
+    let obj3 = c12;
+    let spanToJSONResult = obj2.spanToJSON(c12);
+    if (spanToJSONResult.start_timestamp) {
+      const tmp7 = spanToJSONResult.data || {};
+      if (!tmp7[closure_0(undefined, map[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON]) {
+        const attr = obj3.setAttribute(tmp3(tmp4[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON, idleTimeout);
       }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let flushResult;
-          const obj4 = require("module_12396");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            flushResult = client.flush(tmp10);
-          } else {
-            if (require("module_12397").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events. No client defined.");
-            }
-            flushResult = Promise.resolve(false);
+      let logger = tmp3(tmp4[8]).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Idle span \"" + spanToJSONResult.op + "\" finished");
+      const tmp3Result = closure_0(map[4]);
+      const spanDescendants = tmp3Result.getSpanDescendants(obj3);
+      const found = spanDescendants.filter((item) => item !== _undefined);
+      const item1 = found.forEach((isRecording) => {
+        if (isRecording.isRecording()) {
+          const setStatus = isRecording.setStatus;
+          const obj = { code: _mod12403.SPAN_STATUS_ERROR, message: "cancelled" };
+          setStatus(obj);
+          isRecording.end(closure_0);
+          if (_mod12414.DEBUG_BUILD) {
+            const logger = _mod12386.logger;
+            const _JSON = JSON;
+            logger.log("[Tracing] Cancelling span since span ended early", JSON.stringify(isRecording, undefined, 2));
           }
-          c1 = 3;
-          obj = { value: flushResult, done: true };
-          return obj;
         }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
+        const obj2 = _mod12391;
+        const spanToJSONResult = obj2.spanToJSON(isRecording);
+        const timestamp = spanToJSONResult.timestamp;
+        let num2 = 0;
+        if (undefined !== timestamp) {
+          num2 = timestamp;
+        }
+        const start_timestamp = spanToJSONResult.start_timestamp;
+        let num3 = 0;
+        if (undefined !== start_timestamp) {
+          num3 = start_timestamp;
+        }
+        let tmp14 = num2 - num3 <= (finalTimeout + idleTimeout) / 1000;
+        if (_mod12414.DEBUG_BUILD) {
+          const _JSON2 = JSON;
+          const json = JSON.stringify(isRecording, undefined, 2);
+          if (num3 <= closure_0) {
+            if (!tmp14) {
+              const logger3 = _mod12386.logger;
+              logger3.log("[Tracing] Discarding span since it finished after idle span final timeout", json);
+            }
+          } else {
+            const logger2 = _mod12386.logger;
+            logger2.log("[Tracing] Discarding span since it happened after idle span was finished", json);
+          }
+        }
+        if (tmp14) {
+          tmp14 = tmp13;
+        }
+        if (!tmp14) {
+          const obj3 = _mod12391;
+          const result = obj3.removeChildSpanFromSpan(c12, isRecording);
+          closure_1 = closure_1 + 1;
+        }
+      });
+      const tmp13 = map;
+      if (0 > 0) {
+        let tmp14 = map;
+        const attr1 = obj3.setAttribute("sentry.idle_span_discarded_spans", map);
       }
     }
-  });
-  return obj(...arguments);
-};
-obj = function _close() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let closeResult;
-          const obj4 = require("module_12396");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            closeResult = client.close(tmp10);
-          } else {
-            if (require("module_12397").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events and disable SDK. No client defined.");
-            }
-            closeResult = Promise.resolve(false);
-          }
-          c1 = 3;
-          obj = { value: closeResult, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
-    }
-  });
-  return obj(...arguments);
-};
-function endSession() {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  const obj3 = _mod12396;
-  const currentScope = obj3.getCurrentScope();
-  const tmp3 = currentScope.getSession() || isolationScope.getSession();
-  if (tmp3) {
-    const tmpResult = _mod12392;
-    tmpResult.closeSession(tmp3);
   }
-  const tmpResult4 = _mod12396;
-  const isolationScope1 = tmpResult4.getIsolationScope();
-  const tmpResult5 = _mod12396;
-  const currentScope1 = tmpResult5.getCurrentScope();
-  const tmpResult6 = _mod12396;
-  const client = tmpResult6.getClient();
-  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
-  const tmp6 = tmp5 && client;
-  if (tmp6) {
-    client.captureSession(tmp5);
+  map = new Map();
+  let c2 = false;
+  let idleTimeout = "externalFinish";
+  let closure_4 = !obj.disableAutoFinish;
+  let items = [];
+  idleTimeout = obj.idleTimeout;
+  if (undefined === idleTimeout) {
+    const tmp2 = idleTimeout;
+    idleTimeout = idleTimeout.idleTimeout;
   }
-  isolationScope.setSession();
-  currentScope.setSession();
-}
-let _asyncToGenerator = _asyncToGenerator_mod;
-
-export const addEventProcessor = function addEventProcessor(arg0) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.addEventProcessor(arg0);
-};
-export const captureCheckIn = function captureCheckIn(arg0, arg1) {
-  obj = _mod12396;
-  const currentScope = obj.getCurrentScope();
-  const obj2 = _mod12396;
+  finalTimeout = obj.finalTimeout;
+  if (undefined === finalTimeout) {
+    const tmp3 = idleTimeout;
+    finalTimeout = idleTimeout.finalTimeout;
+  }
+  childSpanTimeout = obj.childSpanTimeout;
+  if (undefined === childSpanTimeout) {
+    const tmp4 = idleTimeout;
+    childSpanTimeout = idleTimeout.childSpanTimeout;
+  }
+  beforeSpanEnd = obj.beforeSpanEnd;
+  let tmp6 = map;
+  let obj2 = require("module_12413");
   const client = obj2.getClient();
   if (client) {
-    if (client.captureCheckIn) {
-      return client.captureCheckIn(arg0, arg1, currentScope);
-    } else if (_mod12397.DEBUG_BUILD) {
-      const logger2 = tmp(12369).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
-    }
-  } else if (_mod12397.DEBUG_BUILD) {
-    const logger = tmp(12369).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
-  }
-  const tmpResult = _mod12380;
-  return tmpResult.uuid4();
-};
-export const captureEvent = function captureEvent(arg0, arg1) {
-  obj = _mod12396;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureEvent(arg0, arg1);
-};
-export const captureException = function captureException(arg0, arg1) {
-  obj = _mod12396;
-  const currentScope = obj.getCurrentScope();
-  const captureException = currentScope.captureException;
-  const obj2 = _mod12418;
-  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
-};
-export const captureMessage = function captureMessage(arg0, captureContext) {
-  let tmp;
-  if (typeof captureContext === "string") {
-    tmp = captureContext;
-  }
-  let tmp2;
-  if (typeof captureContext !== "string") {
-    tmp2 = { captureContext };
-    const obj2 = { captureContext };
-  }
-  obj = _mod12396;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureMessage(arg0, tmp, tmp2);
-};
-export const captureSession = function captureSession() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = false;
-  }
-  if (flag) {
-    endSession();
-  } else {
-    obj = _mod12396;
-    const isolationScope = obj.getIsolationScope();
-    const obj3 = _mod12396;
-    const currentScope = obj3.getCurrentScope();
-    const obj5 = _mod12396;
-    const client = obj5.getClient();
-    const tmp3 = currentScope.getSession() || isolationScope.getSession();
-    const tmp4 = tmp3 && client;
-    if (tmp4) {
-      client.captureSession(tmp3);
-    }
-  }
-};
-export const close = function close(arg0) {
-  return obj(...arguments);
-};
-export { endSession };
-export const flush = function flush(arg0) {
-  return obj(...arguments);
-};
-export const isEnabled = function isEnabled() {
-  obj = _mod12396;
-  const client = obj.getClient();
-  const transport = client && false !== client.getOptions().enabled && client.getTransport();
-  return transport;
-};
-export const isInitialized = function isInitialized() {
-  obj = _mod12396;
-  return obj.getClient();
-};
-export const lastEventId = function lastEventId() {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  return isolationScope.lastEventId();
-};
-export const setContext = function setContext(arg0, arg1) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setContext(arg0, arg1);
-};
-export const setExtra = function setExtra(arg0, arg1) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtra(arg0, arg1);
-};
-export const setExtras = function setExtras(arg0) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtras(arg0);
-};
-export const setTag = function setTag(arg0, arg1) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTag(arg0, arg1);
-};
-export const setTags = function setTags(arg0) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTags(arg0);
-};
-export const setUser = function setUser(arg0) {
-  obj = _mod12396;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setUser(arg0);
-};
-export const startSession = function startSession(arg0) {
-  let environment;
-  let release;
-  obj = _mod12396;
-  const client = obj.getClient();
-  const obj3 = _mod12396;
-  const isolationScope = obj3.getIsolationScope();
-  const obj5 = _mod12396;
-  const currentScope = obj5.getCurrentScope();
-  ({ environment, release } = client && client.getOptions() || {});
-  client && client.getOptions() || {};
-  if (undefined === environment) {
-    environment = tmp(12406).DEFAULT_ENVIRONMENT;
-  }
-  const userAgent = (_mod12370.GLOBAL_OBJ.navigator || {}).userAgent;
-  _mod12370.GLOBAL_OBJ.navigator || {};
-  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
-  const makeSession = _mod12392.makeSession;
-  _mod12392;
-  let tmp7 = userAgent;
-  currentScope.getUser() || isolationScope.getUser();
-  if (tmp7) {
-    tmp7 = { userAgent };
-    const obj4 = { userAgent };
-  }
-  const merged = Object.assign(tmp7);
-  const merged1 = Object.assign(arg0);
-  const session = makeSession(obj2);
-  const session1 = isolationScope.getSession();
-  const tmp12 = session1 && "ok" === session1.status;
-  if (tmp12) {
-    const tmpResult2 = _mod12392;
-    tmpResult2.updateSession(session1, { status: "exited" });
-  }
-  endSession();
-  isolationScope.setSession(session);
-  currentScope.setSession(session);
-  return session;
-};
-export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
-  let closure_1;
-  _require = monitorSlug;
-  dependencyMap = arg1;
-  function finishCheckIn(status) {
-    let obj2;
-    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
-    obj2 = _browserPerformanceTimeOriginMode;
-    const obj3 = _mod12396;
-    const currentScope = obj3.getCurrentScope();
-    const obj4 = _mod12396;
-    const client = obj4.getClient();
-    if (client) {
-      if (client.captureCheckIn) {
-        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
-      } else if (_mod12397.DEBUG_BUILD) {
-        const logger2 = tmp(12369).logger;
-        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    const tmp5Result = require("module_12418");
+    if (tmp5Result.hasTracingEnabled()) {
+      const tmp5Result6 = require("module_12413");
+      currentScope = tmp5Result6.getCurrentScope();
+      const tmp5Result7 = require("module_12391");
+      activeSpan = tmp5Result7.getActiveSpan();
+      const tmp5Result8 = require("module_12420");
+      const startInactiveSpanResult = tmp5Result8.startInactiveSpan(arg0);
+      const _setSpanForScope = tmp5(tmp6[6])._setSpanForScope;
+      require("module_12408");
+      const tmp5Result10 = require("module_12413");
+      _setSpanForScope(tmp5Result10.getCurrentScope(), startInactiveSpanResult);
+      if (require("module_12414").DEBUG_BUILD) {
+        let logger = tmp5(tmp6[8]).logger;
+        const str = "[Tracing] Started span is an idle span";
+        const logResult = logger.log("[Tracing] Started span is an idle span");
       }
-    } else if (_mod12397.DEBUG_BUILD) {
-      const logger = tmp(12369).logger;
-      logger.warn("Cannot capture check-in. No client defined.");
-    }
-    const tmpResult = _mod12380;
-    tmpResult.uuid4();
-  }
-  obj = { monitorSlug, status: "in_progress" };
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj2 = require("module_12396");
-  let currentScope = obj2.getCurrentScope();
-  let obj3 = require("module_12396");
-  let client = obj3.getClient();
-  if (client) {
-    let captureCheckInResult;
-    if (client.captureCheckIn) {
-      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
-    } else if (tmp(12397).DEBUG_BUILD) {
-      let logger2 = tmp(12369).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
-    }
-    _asyncToGenerator = captureCheckInResult;
-    let tmpResult = tmp(12383);
-    let closure_3 = tmpResult.timestampInSeconds();
-    const tmpResult3 = tmp(12396);
-    return tmpResult3.withIsolationScope(() => {
-      try {
-        const tmp2 = closure_1();
-        obj = _mod12376;
-        if (obj.isThenable(tmp2)) {
-          const resolved = Promise.resolve(tmp2);
-          resolved.then(() => {
-            finishCheckIn("ok");
-          }, (arg0) => {
-            finishCheckIn("error");
-            throw arg0;
-          });
-        } else {
-          finishCheckIn("ok");
+      c12 = startInactiveSpanResult;
+      const _Proxy = Proxy;
+      let obj3 = {
+        apply(arg0, arg1, alerts) {
+              if (beforeSpanEnd) {
+                tmp2(c12);
+              }
+              const arr = _toArray(alerts);
+              let first = arr[0];
+              const substr = arr.slice(1);
+              if (!first) {
+                let obj = _browserPerformanceTimeOriginMode;
+                first = obj.timestampInSeconds();
+              }
+              const obj2 = _mod12391;
+              const result = obj2.spanTimeInputToSeconds(first);
+              const obj3 = _mod12391;
+              const spanDescendants = obj3.getSpanDescendants(c12);
+              const found = spanDescendants.filter((item) => item !== _undefined);
+              const tmp12 = c12;
+              if (found.length) {
+                const mapped = found.map((item) => {
+                  const obj = closure_1_0(map[4]);
+                  return obj.spanToJSON(item).timestamp;
+                });
+                const found1 = mapped.filter((item) => item);
+                let num2;
+                if (found1.length) {
+                  const _Math = Math;
+                  items = [];
+                  HermesBuiltin.arraySpread(items, found1, 0);
+                  const _Math2 = Math;
+                  num2 = HermesBuiltin.apply(max, items, Math);
+                }
+                const tmp9Result = _mod12391;
+                let num4 = tmp9Result.spanToJSON(tmp12).start_timestamp;
+                let num6 = Infinity;
+                const _Math3 = Math;
+                if (num4) {
+                  num6 = num4 + finalTimeout / 1000;
+                }
+                const _Math4 = Math;
+                const max2 = Math.max;
+                if (!num4) {
+                  num4 = -Infinity;
+                }
+                const _Math5 = Math;
+                const min2 = Math.min;
+                if (!num2) {
+                  num2 = Infinity;
+                }
+                const minResult = min(num6, max2(num4, min2(result, num2)));
+                onIdleSpanEnded(minResult);
+                const _Reflect2 = Reflect;
+                const items1 = [minResult];
+                const apply2 = Reflect.apply;
+                HermesBuiltin.arraySpread(items1, substr, 1);
+                return apply2(arg0, arg1, items1);
+              } else {
+                onIdleSpanEnded(result);
+                const _Reflect = Reflect;
+                const items2 = [result];
+                HermesBuiltin.arraySpread(items2, substr, 1);
+                return apply(arg0, arg1, items2);
+              }
+            }
+      };
+      const self = this;
+      const self2 = this;
+      let tmp13 = obj3;
+      const proxy = new Proxy(startInactiveSpanResult.end, obj3);
+      startInactiveSpanResult.end = proxy;
+      const str2 = "spanStart";
+      let arr = items.push(client.on("spanStart", (spanContext) => {
+        let timeout;
+        let timestamp = c2 || spanContext === c12;
+        if (!timestamp) {
+          const obj = timeout(map[4]);
+          timestamp = obj.spanToJSON(spanContext).timestamp;
         }
-        return tmp2;
-      } catch (tmp11) {
-        finishCheckIn("error");
-        throw tmp11;
+        if (!timestamp) {
+          const obj2 = timeout(map[4]);
+          const spanDescendants = obj2.getSpanDescendants(c12);
+          if (spanDescendants.includes(spanContext)) {
+            const spanId = spanContext.spanContext().spanId;
+            if (timeout) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+              timeout = undefined;
+            }
+            const result = map.set(spanId, true);
+            const obj4 = timeout(map[5]);
+            obj4.timestampInSeconds() + childSpanTimeout / 1000;
+            const _setTimeout = setTimeout;
+            timeout = setTimeout(() => {
+              const tmp = !closure_2_2 && c4;
+              if (tmp) {
+                heartbeatFailed = "heartbeatFailed";
+                _undefined.end(closure_1_0);
+              }
+            }, childSpanTimeout);
+          }
+        }
+      }));
+      const str3 = "spanEnd";
+      items.push(client.on("spanEnd", (spanContext) => {
+        let timeout;
+        const tmp = c2;
+        if (!tmp) {
+          const spanId = spanContext.spanContext().spanId;
+          if (map.has(spanId)) {
+            map.delete(spanId);
+          }
+          if (0 === map.size) {
+            const obj2 = timeout(map[5]);
+            timeout = obj2.timestampInSeconds() + idleTimeout / 1000;
+            const tmp6 = idleTimeout;
+            if (timeout) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+              timeout = undefined;
+            }
+            const _setTimeout = setTimeout;
+            timeout = setTimeout(f146552, tmp6);
+          }
+        }
+      }));
+      items.push(client.on("idleSpanEnableAutoFinish", (arg0) => {
+        if (arg0 === c12) {
+          let c4 = true;
+          let timeout;
+          let tmp = timeout;
+          if (tmp) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(timeout);
+            timeout = undefined;
+          }
+          const _setTimeout = setTimeout;
+          timeout = setTimeout(f146552, idleTimeout);
+          if (map.size) {
+            const _setTimeout2 = setTimeout;
+            timeout = setTimeout(() => {
+              const tmp = !closure_2_2 && c4;
+              if (tmp) {
+                heartbeatFailed = "heartbeatFailed";
+                _undefined.end(closure_1_0);
+              }
+            }, childSpanTimeout);
+          }
+        }
+      }));
+      if (!obj.disableAutoFinish) {
+        const tmp19 = _require;
+        if (tmp19) {
+          let _clearTimeout = clearTimeout;
+          clearTimeout(_require);
+          _require = undefined;
+        }
+        let _setTimeout = setTimeout;
+        _require = setTimeout(f146552, idleTimeout);
       }
-    });
-  } else if (tmp(12397).DEBUG_BUILD) {
-    let logger = tmp(12369).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
+      let _setTimeout2 = setTimeout;
+      const timerId = setTimeout(() => {
+        const tmp = c2;
+        if (!tmp) {
+          const setStatus = _undefined.setStatus;
+          const obj = { code: _mod12403.SPAN_STATUS_ERROR, message: "deadline_exceeded" };
+          setStatus(obj);
+          idleTimeout = "finalTimeout";
+          _undefined.end();
+        }
+      }, finalTimeout);
+      return startInactiveSpanResult;
+    }
   }
-  const tmpResult4 = tmp(12380);
-  captureCheckInResult = tmpResult4.uuid4();
+  const sentryNonRecordingSpan = new tmp5(tmp6[3]).SentryNonRecordingSpan();
+  return sentryNonRecordingSpan;
 };

@@ -1,9 +1,9 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 12998
+// Function ID: 12999
 // Name: SelectedSearchContextStore
 // Dependencies: [5301, 504, 584, 2]
 
-// Module 12990 (SelectedSearchContextStore)
+// Module 12998 (SelectedSearchContextStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import isEqualDefault from "isEqual" /* 5301 */;

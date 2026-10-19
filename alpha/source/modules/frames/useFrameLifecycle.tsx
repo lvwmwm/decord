@@ -1,11 +1,11 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 17738
+// Function ID: 17739
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6296, 558, 576, 13628, 11021, 17735, 17736, 6357, 2032, 6299, 2]
+// Dependencies: [32, 5, 19, 6296, 558, 576, 13632, 11042, 17739, 17740, 6357, 2032, 6299, 2]
 
-// Module 17734 (useFrameLifecycle)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11021 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13628 */;
+// Module 17738 (useFrameLifecycle)
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11042 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13632 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -62,8 +62,8 @@ function useFrameLifecycleState(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "a" };
-      const obj8 = { state: obj.Loading, frame: "a" };
+      obj10 = { state: obj.Loading, frame: "r" };
+      const obj8 = { state: obj.Loading, frame: "r" };
     } else {
       if (null != data) {
         if (tmp7) {

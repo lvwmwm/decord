@@ -1,9 +1,9 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14349
+// Function ID: 14350
 // Name: InAppReportsRemediationsElement
 // Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 6542, 2]
 
-// Module 14345 (InAppReportsRemediationsElement)
+// Module 14349 (InAppReportsRemediationsElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

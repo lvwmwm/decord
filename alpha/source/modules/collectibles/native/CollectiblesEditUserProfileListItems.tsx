@@ -1,9 +1,9 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14259
+// Function ID: 14260
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [109, 19, 17, 1392, 1089, 21, 5191, 587, 558, 576, 5156, 5157, 6462, 1202, 14256, 1128, 5187, 7130, 7529, 5155, 14257, 9325, 504, 4864, 8571, 7542, 2]
+// Dependencies: [109, 19, 17, 1392, 1089, 21, 5191, 587, 558, 576, 5156, 5157, 6462, 1202, 14260, 1128, 5187, 7130, 7529, 5155, 14261, 9325, 504, 4864, 8571, 7542, 2]
 
-// Module 14255 (CollectiblesEditUserProfileListItems)
+// Module 14259 (CollectiblesEditUserProfileListItems)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -21,7 +21,7 @@ import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
 import CollectiblesBadges from "CollectiblesBadges" /* 9325 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14256 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14260 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -332,7 +332,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
     const _Symbol = Symbol;
     const optionCell = tmp9.optionCell;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { source: tmp10(14257), size: require("native").IconSizes.LARGE };
+      let obj2 = { source: tmp10(14261), size: require("native").IconSizes.LARGE };
       const Icon = tmp(1202).Icon;
       const tmp15 = closure_10(Icon, obj2);
       cResult[6] = tmp15;
@@ -426,7 +426,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
     children: items1
   };
   const merged1 = Object.assign(merged);
-  let obj2 = { source: analyticsLocations(14257), size: analyticsSource(1202).IconSizes.LARGE };
+  let obj2 = { source: analyticsLocations(14261), size: analyticsSource(1202).IconSizes.LARGE };
   const Icon = analyticsSource(1202).Icon;
   items1 = [closure_10(Icon, obj2), , ];
   let obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: intl.string(analyticsSource(1128).t.pWG4ze) };

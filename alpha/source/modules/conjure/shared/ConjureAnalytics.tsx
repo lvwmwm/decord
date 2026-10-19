@@ -1,10 +1,10 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 10997
+// Function ID: 10998
 // Name: ConjureAnalytics
 // Dependencies: [6293, 1087, 7222, 5206, 2]
 // Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
 
-// Module 10981 (ConjureAnalytics)
+// Module 10997 (ConjureAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import ConjureUtils from "ConjureUtils" /* 7222 */;

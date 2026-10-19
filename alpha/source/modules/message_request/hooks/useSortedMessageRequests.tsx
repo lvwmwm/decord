@@ -1,9 +1,9 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 18031
+// Function ID: 18032
 // Name: useSortedMessageRequests
-// Dependencies: [19, 2068, 1392, 6333, 558, 576, 504, 18028, 2]
+// Dependencies: [19, 2068, 1392, 6333, 558, 576, 504, 18032, 2]
 
-// Module 18027 (useSortedMessageRequests)
+// Module 18031 (useSortedMessageRequests)
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;

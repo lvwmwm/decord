@@ -1,9 +1,9 @@
-// Module ID: 17284
-// Function ID: 17285
+// Module ID: 17288
+// Function ID: 17289
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 5034, 5102, 2065, 21, 3, 5191, 587, 558, 576, 17285, 5123, 504, 5155, 1128, 17286, 5187, 6539, 6540, 7834, 5479, 7118, 2]
+// Dependencies: [5, 32, 19, 17, 5034, 5102, 2065, 21, 3, 5191, 587, 558, 576, 17289, 5123, 504, 5155, 1128, 17290, 5187, 6539, 6540, 7834, 5479, 7118, 2]
 
-// Module 17284 (GuildThemeNuxActionSheet)
+// Module 17288 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -67,8 +67,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   const markAsDismissed = guildId.markAsDismissed;
   const tmp4 = closure_14();
   let obj2 = react;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(17285).getInitialGuildThemeNuxSelection), 2);
-  const tmp5 = _slicedToArray(react.useState(guildId(17285).getInitialGuildThemeNuxSelection), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(17289).getInitialGuildThemeNuxSelection), 2);
+  const tmp5 = _slicedToArray(react.useState(guildId(17289).getInitialGuildThemeNuxSelection), 2);
   [r10028, _asyncToGenerator] = _slicedToArray(react.useState(null), 2);
   const tmp7 = _slicedToArray(react.useState(null), 2);
   const tmp8 = _slicedToArray(react.useState(false), 2);
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(17285).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(17289).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -488,7 +488,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1128).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
   BottomSheet = tmp2(7118).BottomSheet;
   intl2 = tmp2(1128).intl;
-  items7 = [closure_10(markAsDismissed(17286), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(17290), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1128).t.Q9zFy9) };
   const Text = tmp2(5187).Text;
   intl3 = tmp2(1128).intl;

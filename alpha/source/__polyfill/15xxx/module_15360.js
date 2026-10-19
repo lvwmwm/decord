@@ -1,27 +1,26 @@
 // Module ID: 15360
 // Function ID: 15361
-// Dependencies: [15361, 15374, 15322, 15343]
+// Dependencies: [15349, 15324]
 
 // Module 15360
-import _mod15343 from "module_15343" /* 15343 */;
-import _mod15361 from "module_15361" /* 15361 */;
-import defineProperty2 from "defineProperty2" /* 15374 */;
+import _mod15324 from "module_15324" /* 15324 */;
+import module_15349 from "module_15349" /* 15349 */;
 
+let _moduleResult = module_15349(_mod15324.document);
+if (_moduleResult) {
+  const _module1 = module_15349;
+  _moduleResult = _module1(_mod15324.document.createElement);
+}
+let c2 = _moduleResult;
 
-export default (arg0, arg1, arg2) => {
-  let num;
-  const arr = _mod15361(arg1);
-  const f = defineProperty2.f;
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp2 = arr[num];
-    let tmp3 = require;
-    let tmp5 = _mod15343(arg0, tmp2);
-    if (!tmp5) {
-      let tmp7 = arg2 && tmp3(15343)(arg2, tmp2);
-      tmp5 = tmp7;
-    }
-    if (!tmp5) {
-      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
-    }
+export default (arg0) => {
+  let element;
+  const tmp = c2;
+  if (tmp) {
+    const _document = _mod15324.document;
+    element = _document.createElement(arg0);
+  } else {
+    element = {};
   }
+  return element;
 };

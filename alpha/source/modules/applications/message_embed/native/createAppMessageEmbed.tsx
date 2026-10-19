@@ -1,10 +1,10 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12801
+// Function ID: 12802
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1392, 8548, 5540, 1504, 9907, 6357, 12785, 8156, 1128, 12786, 9548, 8547, 11201, 12787, 12788, 1417, 1386, 12789, 7155, 12790, 7513, 12791, 5081, 1631, 10998, 7162, 4903, 1388, 2]
+// Dependencies: [32, 1392, 8548, 5540, 1504, 9907, 6357, 12802, 8156, 1128, 12803, 9548, 8547, 11220, 12804, 12805, 1417, 1386, 12806, 7155, 12807, 7513, 12808, 5081, 1631, 11019, 7162, 4903, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 12784 (createAppMessageEmbed)
+// Module 12801 (createAppMessageEmbed)
 import intl7 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -21,15 +21,15 @@ import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8547 */;
 import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8548 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 9907 */;
-import ApplicationUtils from "ApplicationUtils" /* 10998 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11201 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12785 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12786 */;
-import getPlayInContext from "getPlayInContext" /* 12787 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12788 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12789 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12790 */;
-import playFrameFromEmbedDefault from "playFrameFromEmbed" /* 12791 */;
+import ApplicationUtils from "ApplicationUtils" /* 11019 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11220 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12802 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12803 */;
+import getPlayInContext from "getPlayInContext" /* 12804 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12805 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12806 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12807 */;
+import playFrameFromEmbedDefault from "playFrameFromEmbed" /* 12808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1392 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;

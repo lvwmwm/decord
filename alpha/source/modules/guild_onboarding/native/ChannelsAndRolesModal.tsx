@@ -1,9 +1,9 @@
-// Module ID: 11100
-// Function ID: 11101
+// Module ID: 11119
+// Function ID: 11120
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2090, 7067, 21, 5191, 587, 558, 576, 573, 7321, 1128, 8805, 9051, 11101, 11107, 9933, 2]
+// Dependencies: [32, 19, 17, 2090, 7067, 21, 5191, 587, 558, 576, 573, 7321, 1128, 8805, 9051, 11120, 11126, 9933, 2]
 
-// Module 11100 (ChannelsAndRolesModal)
+// Module 11119 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;

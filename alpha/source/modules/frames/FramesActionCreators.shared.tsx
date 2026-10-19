@@ -1,16 +1,16 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11044
+// Function ID: 11045
 // Name: launchFrame
-// Dependencies: [5, 6295, 6296, 6298, 11024, 584, 11026, 6313, 11027, 11033, 11020, 2]
+// Dependencies: [5, 6295, 6296, 6298, 11045, 584, 11047, 6313, 11048, 11054, 11041, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 11023 (launchFrame)
+// Module 11044 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
-import leaveFrame from "leaveFrame" /* 11020 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11024 */;
-import createProxyTicket from "createProxyTicket" /* 11026 */;
+import leaveFrame from "leaveFrame" /* 11041 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11045 */;
+import createProxyTicket from "createProxyTicket" /* 11047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import FramesStore from "FramesStore" /* 6295 */;
 import FramesConstants from "FramesConstants" /* 6296 */;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(11020);
+        const tmp4Result = tmp4(11041);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

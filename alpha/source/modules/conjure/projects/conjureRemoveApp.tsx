@@ -1,16 +1,16 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11641
+// Function ID: 11642
 // Name: conjureRemoveApp
-// Dependencies: [19, 5540, 7586, 4843, 2128, 2090, 4845, 4855, 1392, 10977, 6293, 1087, 10987, 5521, 558, 576, 504, 12, 6377, 1128, 3883, 2]
+// Dependencies: [19, 5540, 7586, 4843, 2128, 2090, 4845, 4855, 1392, 10993, 6293, 1087, 11006, 5521, 558, 576, 504, 12, 6377, 1128, 3883, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjurePreviewAppItem, conjureRemoveAppItems, conjureRemoveAppKeptChannels, conjureRemoveAppSuccess, conjureTitleWithAppTag, isPublishedConjureUserApp
 
-// Module 11625 (conjureRemoveApp)
+// Module 11641 (conjureRemoveApp)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3883 from "module_3883" /* 3883 */;
 import useChannelName from "useChannelName" /* 5521 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import conjureAppInServer from "conjureAppInServer" /* 10987 */;
+import conjureAppInServer from "conjureAppInServer" /* 11006 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5540 */;
 import UserProfileStore from "UserProfileStore" /* 7586 */;
@@ -20,7 +20,7 @@ import GuildStore from "GuildStore" /* 2090 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10977 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10993 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, tmp5;
 
-const f109458 = (item) => {
+const f109562 = (item) => {
   const obj = { key: "channel:" + item, kind: "channel", label: "#" + item };
   return obj;
 };
@@ -45,9 +45,9 @@ function readConjureRemoveTarget(project) {
     guild = GuildStore.getGuild(project.guild_id);
   }
   if (null != guild) {
-    const obj3 = found(10987);
+    const obj3 = found(11006);
     if ("in_server" === obj3.readConjureAppServerPresence(project)) {
-      const tmp12Result = found(10987);
+      const tmp12Result = found(11006);
       const result = tmp12Result.findConjureAppChannels(guild.id, project.application_id);
       found = result.filter((item) => PermissionStore.can(constants.MANAGE_CHANNELS, item));
       const obj = { projectName: project.name, appName: name, previewAppName: tmp4, guildName: guild.name, channelNames: found.map(channelName), keptChannelNames: found1.map(channelName), canRemoveBot: canRemoveConjureBot(guild, tmp12Result6.conjureProductionBotUserId(project)), canRemovePreviewBot: canRemoveConjureBot2Result };
@@ -74,14 +74,14 @@ function readConjureRemoveTarget(project) {
         tmp4 = name1;
       }
       found1 = result.filter((item) => !found.includes(item));
-      canRemoveConjureBot = found(10987).canRemoveConjureBot;
-      found(10987);
+      canRemoveConjureBot = found(11006).canRemoveConjureBot;
+      found(11006);
       canRemoveConjureBot2Result = null == project.preview_application_id;
-      tmp12Result6 = found(10987);
+      tmp12Result6 = found(11006);
       if (!canRemoveConjureBot2Result) {
-        const canRemoveConjureBot2 = found(10987).canRemoveConjureBot;
-        found(10987);
-        const tmp12Result8 = found(10987);
+        const canRemoveConjureBot2 = found(11006).canRemoveConjureBot;
+        found(11006);
+        const tmp12Result8 = found(11006);
         canRemoveConjureBot2Result = canRemoveConjureBot2(guild, tmp12Result8.conjurePreviewBotUserId(project));
       }
       return obj;
@@ -403,13 +403,13 @@ export { readConjureRemoveTarget };
 export const useConjureRemoveTarget = tmp2;
 export const conjureRemoveAppItems = function conjureRemoveAppItems(target) {
   const channelNames = target.channelNames;
-  return channelNames.map(f109458);
+  return channelNames.map(f109562);
 };
 export const conjureDeleteProjectItems = function conjureDeleteProjectItems(target) {
   let obj = { key: "project", kind: "project", label: target.projectName };
   const items = [obj];
   const channelNames = target.channelNames;
-  const items1 = [...channelNames.map(f109458)];
+  const items1 = [...channelNames.map(f109562)];
   items.push.apply(items1);
   const previewAppName = target.previewAppName;
   let tmp2 = null;

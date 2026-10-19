@@ -1,9 +1,9 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16160
+// Function ID: 16161
 // Name: useQuestForPlacement
 // Dependencies: [19, 7653, 7656, 1104, 9468, 6349, 9474, 558, 576, 504, 7654, 7662, 6235, 2]
 
-// Module 16156 (useQuestForPlacement)
+// Module 16160 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1104 */;
 import AdCreativeType from "AdCreativeType" /* 6235 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6349 */;

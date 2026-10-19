@@ -1,18 +1,18 @@
-// Module ID: 16817
-// Function ID: 16818
+// Module ID: 16821
+// Function ID: 16822
 // Name: InternalBuildUpdateSetting
-// Dependencies: [15417, 21, 14917, 558, 576, 504, 4797, 15884, 5143, 11614, 11065, 2]
+// Dependencies: [15421, 21, 14921, 558, 576, 504, 4797, 15888, 5143, 11630, 11084, 2]
 
-// Module 16817 (InternalBuildUpdateSetting)
+// Module 16821 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import _modDef4797 from "module_4797" /* 4797 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14917 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15884 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15417 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14921 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15888 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15421 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
     if (stateFromStores) {
       RefreshIcon = tmp(5143).DownloadIcon;
     } else {
-      RefreshIcon = tmp(11614).RefreshIcon;
+      RefreshIcon = tmp(11630).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
     RefreshIcon = tmp(5143).DownloadIcon;
   } else {
-    RefreshIcon = tmp(11614).RefreshIcon;
+    RefreshIcon = tmp(11630).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

@@ -1,13 +1,13 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 14371
+// Function ID: 14372
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2065, 21, 558, 576, 5155, 14368, 1128, 14372, 7118, 2]
+// Dependencies: [19, 2065, 21, 558, 576, 5155, 14372, 1128, 14376, 7118, 2]
 
-// Module 14367 (NUFChannelsActionSheet)
+// Module 14371 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 14372 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 14376 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsA
     tmp5 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(tmp(14368).ServerChannelsAbstractUI, {});
+    const tmp11 = jsx(tmp(14372).ServerChannelsAbstractUI, {});
     const intl = tmp(1128).intl;
     const stringResult = intl.string(tmp(1128).t.Ay9424);
     const intl2 = tmp(1128).intl;

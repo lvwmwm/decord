@@ -1,9 +1,9 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10760
+// Function ID: 10761
 // Name: InappropriateConversationsConstants
 // Dependencies: [2]
 
-// Module 10744 (InappropriateConversationsConstants)
+// Module 10760 (InappropriateConversationsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsConstants.tsx");

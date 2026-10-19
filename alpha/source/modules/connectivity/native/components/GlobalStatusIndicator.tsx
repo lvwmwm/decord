@@ -1,14 +1,14 @@
-// Module ID: 11402
-// Function ID: 11403
+// Module ID: 11420
+// Function ID: 11421
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4897, 6292, 9993, 2068, 5209, 21, 558, 576, 11399, 504, 10668, 7748, 1128, 11403, 4945, 11397, 2]
+// Dependencies: [19, 17, 4897, 6292, 9993, 2068, 5209, 21, 558, 576, 11417, 504, 10668, 7748, 1128, 11421, 4945, 11415, 2]
 
-// Module 11402 (GlobalStatusIndicator)
+// Module 11420 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11397 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11415 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ActionSheetStore from "ActionSheetStore" /* 4897 */;

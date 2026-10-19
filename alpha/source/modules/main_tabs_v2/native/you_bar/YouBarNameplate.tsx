@@ -1,12 +1,12 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17529
+// Function ID: 17530
 // Name: YouBarNameplate
-// Dependencies: [19, 5181, 16136, 21, 558, 576, 4913, 587, 16222, 504, 4945, 5478, 9313, 2]
+// Dependencies: [19, 5181, 16140, 21, 558, 576, 4913, 587, 16226, 504, 4945, 5478, 9313, 2]
 
-// Module 17525 (YouBarNameplate)
+// Module 17529 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5478 */;
-import YouBarConstants from "YouBarConstants" /* 16136 */;
+import YouBarConstants from "YouBarConstants" /* 16140 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ avatarSize, barWidth } = arg0);
   const obj2 = isQuestRendered(4913);
   token = obj2.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp6 = token(16222)(token);
+  const tmp6 = token(16226)(token);
   dependencyMap = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -139,7 +139,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = isQuestRendered(4913);
   const tmp2 = token;
   token = obj.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(16222)(token);
+  const tmp4 = token(16226)(token);
   dependencyMap = tmp4;
   const items = [AccessibilityStore];
   const obj2 = isQuestRendered(504);

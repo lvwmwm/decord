@@ -1,9 +1,9 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14240
+// Function ID: 14241
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6567, 5477, 5187, 13650, 1128, 13652, 14235, 7219, 5127, 14237, 5065, 9331, 5479, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6567, 5477, 5187, 13654, 1128, 13656, 14239, 7219, 5127, 14241, 5065, 9331, 5479, 2]
 
-// Module 14236 (OrbCheckoutModalComponents)
+// Module 14240 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -15,10 +15,10 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6567 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7219 */;
 import OrbsIcon2 from "OrbsIcon" /* 9331 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13650 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13652 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14235 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 14237 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13654 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13656 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14239 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 14241 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -363,7 +363,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutL
 }) : (function OrbCheckoutLegalFinePrint() {
   let skuId;
   const tmp = closure_8();
-  let obj = skuId(14235);
+  let obj = skuId(14239);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {

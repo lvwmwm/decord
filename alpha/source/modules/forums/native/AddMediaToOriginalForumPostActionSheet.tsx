@@ -1,9 +1,9 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12860
+// Function ID: 12861
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2068, 7510, 2090, 5532, 1087, 21, 5191, 587, 9999, 8031, 8047, 5155, 9567, 9564, 11, 8026, 9566, 8169, 1297, 12844, 7445, 8515, 5400, 1128, 558, 576, 504, 7130, 8171, 8035, 12845, 5187, 5480, 7118, 2]
+// Dependencies: [32, 5, 19, 17, 2068, 7510, 2090, 5532, 1087, 21, 5191, 587, 9999, 8031, 8047, 5155, 9567, 9564, 11, 8026, 9566, 8169, 1297, 12861, 7445, 8515, 5400, 1128, 558, 576, 504, 7130, 8171, 8035, 12862, 5187, 5480, 7118, 2]
 
-// Module 12843 (AddMediaToOriginalForumPostActionSheet)
+// Module 12860 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;

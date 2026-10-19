@@ -1,9 +1,9 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 17567
+// Function ID: 17568
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2086, 2090, 1392, 17564, 21, 5191, 587, 6336, 9023, 17565, 17566, 17567, 17568, 5128, 17569, 1202, 17570, 17571, 558, 576, 7130, 504, 8577, 8647, 6462, 17572, 5187, 2]
+// Dependencies: [19, 17, 2086, 2090, 1392, 17568, 21, 5191, 587, 6336, 9023, 17569, 17570, 17571, 17572, 5128, 17573, 1202, 17574, 17575, 558, 576, 7130, 504, 8577, 8647, 6462, 17576, 5187, 2]
 
-// Module 17563 (ForYouItemImage)
+// Module 17567 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,17 +15,17 @@ import Pressables from "Pressables" /* 6462 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
 import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8647 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9023 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17565 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17566 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17567 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17568 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 17569 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 17570 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 17571 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17569 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17570 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17571 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17572 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 17573 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 17574 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 17575 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2090 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 17564 */;
+import Constants from "Constants" /* 17568 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

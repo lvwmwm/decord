@@ -1,17 +1,17 @@
-// Module ID: 12590
-// Function ID: 12591
+// Module ID: 12607
+// Function ID: 12608
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 10888, 502, 2128, 2090, 4845, 5034, 1087, 4831, 1097, 558, 576, 4851, 573, 1128, 10952, 10953, 7370, 2]
+// Dependencies: [19, 10904, 502, 2128, 2090, 4845, 5034, 1087, 4831, 1097, 558, 576, 4851, 573, 1128, 10968, 10969, 7370, 2]
 
-// Module 12590 (AutomodQuarantineUtils)
+// Module 12607 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
 import openUserSettings2 from "openUserSettings" /* 7370 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10953 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10969 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10888 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10904 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import GuildStore from "GuildStore" /* 2090 */;

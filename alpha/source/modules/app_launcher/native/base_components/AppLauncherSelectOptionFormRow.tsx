@@ -1,16 +1,16 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12027
+// Function ID: 12028
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 5191, 587, 558, 576, 11980, 5187, 1202, 7111, 8855, 2]
+// Dependencies: [109, 19, 21, 5191, 587, 558, 576, 11999, 5187, 1202, 7111, 8855, 2]
 
-// Module 12008 (AppLauncherSelectOptionFormRow)
+// Module 12027 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7111 */;
 import Form from "Form" /* 8855 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11980 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11999 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5191 */;

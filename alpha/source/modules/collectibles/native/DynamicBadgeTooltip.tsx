@@ -1,9 +1,9 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14214
+// Function ID: 14215
 // Name: DynamicBadgeTooltip
 // Dependencies: [32, 19, 21, 558, 576, 1128, 9743, 6462, 2]
 
-// Module 14210 (DynamicBadgeTooltip)
+// Module 14214 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -81,8 +81,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F148286 */ }, 2500);
-            return () => { /* body not rendered: F148287 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F148391 */ }, 2500);
+            return () => { /* body not rendered: F148392 */ };
           } else {
             return;
           }
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F148286 */ }, 2500);
-            return () => { /* body not rendered: F148287 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F148391 */ }, 2500);
+            return () => { /* body not rendered: F148392 */ };
           } else {
             return;
           }
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148288 */ });
+          tmp = closure_1(() => { /* body not rendered: F148393 */ });
           return;
         }
       }
@@ -124,7 +124,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     } else {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148288 */ });
+          tmp = closure_1(() => { /* body not rendered: F148393 */ });
           return;
         }
       }
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[9] === accessibilityLabel) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F148288 */ });
+          tmp = closure_1(() => { /* body not rendered: F148393 */ });
           return;
         }
       }

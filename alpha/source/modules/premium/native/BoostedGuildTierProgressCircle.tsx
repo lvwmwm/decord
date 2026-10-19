@@ -1,9 +1,9 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14582
+// Function ID: 14583
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 14579, 14583, 14584, 14585, 558, 576, 8299, 5128, 8294, 5187, 13276, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 14583, 14587, 14588, 14589, 558, 576, 8299, 5128, 8294, 5187, 13284, 2]
 
-// Module 14578 (BoostedGuildTierProgressCircle)
+// Module 14582 (BoostedGuildTierProgressCircle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import FastImageDefault from "FastImage" /* 5128 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8299 */;
-import ProgressCircleDefault from "ProgressCircle" /* 13276 */;
-import Tier048Px from "Tier048Px" /* 14579 */;
+import ProgressCircleDefault from "ProgressCircle" /* 13284 */;
+import Tier048Px from "Tier048Px" /* 14583 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -172,11 +172,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostedGui
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tier048PxSource1 = tmp5(14583);
+          tier048PxSource1 = tmp5(14587);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tier048PxSource1 = tmp5(14584);
+          tier048PxSource1 = tmp5(14588);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tier048PxSource1 = tmp5(14585);
+          tier048PxSource1 = tmp5(14589);
         }
       }
       cResult[8] = guild;
@@ -230,11 +230,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostedGui
       if (guild.premiumTier !== hasOwnProperty.NONE) {
         const premiumTier = guild.premiumTier;
         if (hasOwnProperty.TIER_1 === premiumTier) {
-          tmp2Result4 = tmp2(14583);
+          tmp2Result4 = tmp2(14587);
         } else if (hasOwnProperty.TIER_2 === premiumTier) {
-          tmp2Result4 = tmp2(14584);
+          tmp2Result4 = tmp2(14588);
         } else if (hasOwnProperty.TIER_3 === premiumTier) {
-          tmp2Result4 = tmp2(14585);
+          tmp2Result4 = tmp2(14589);
         }
       }
       const obj5 = { source: tmp2Result4, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

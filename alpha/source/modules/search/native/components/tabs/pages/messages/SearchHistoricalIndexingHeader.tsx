@@ -1,11 +1,11 @@
-// Module ID: 17850
-// Function ID: 17851
+// Module ID: 17854
+// Function ID: 17855
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2132, 9614, 21, 5191, 558, 576, 13001, 1128, 5187, 6459, 2]
+// Dependencies: [19, 2132, 9614, 21, 5191, 558, 576, 13009, 1128, 5187, 6459, 2]
 
-// Module 17850 (SearchHistoricalIndexingHeader)
+// Module 17854 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13001 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13009 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2132 */;
 import SearchConstants from "SearchConstants" /* 9614 */;

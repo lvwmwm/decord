@@ -1,9 +1,9 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 11716
+// Function ID: 11717
 // Name: useFrameBySurface
 // Dependencies: [6295, 558, 576, 504, 2]
 
-// Module 11697 (useFrameBySurface)
+// Module 11716 (useFrameBySurface)
 import FramesStore from "FramesStore" /* 6295 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

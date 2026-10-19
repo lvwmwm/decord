@@ -1,9 +1,9 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16119
+// Function ID: 16120
 // Name: useBadBundleFilter
 // Dependencies: [19, 1392, 7546, 558, 576, 573, 4864, 9336, 7542, 7541, 2]
 
-// Module 16115 (useBadBundleFilter)
+// Module 16119 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F157876 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F157984 */ }, 0);
                           }
                           return result.amount < num2;
                         }
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F157876 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F157984 */ }, 0);
                           }
                           return result.amount < num2;
                         }

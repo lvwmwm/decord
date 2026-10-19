@@ -1,9 +1,9 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14872
+// Function ID: 14873
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 587, 558, 576, 1633, 5128, 14869, 14867, 6944, 1297, 6190, 12, 14870, 5187, 1128, 1202, 5479, 6214, 14874, 6433, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 587, 558, 576, 1633, 5128, 14873, 14871, 6944, 1297, 6190, 12, 14874, 5187, 1128, 1202, 5479, 6214, 14878, 6433, 2]
 
-// Module 14868 (RemoteAuthModal)
+// Module 14872 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,10 +18,10 @@ import components_Button_Button from "components/Button/Button" /* 5479 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import ButtonGroup2 from "ButtonGroup" /* 6214 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6944 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14867 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14869 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 14870 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 14874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14871 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14873 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 14874 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 14878 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -405,7 +405,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { scale };
-      const tmp19 = closure_7(tmp(14870).QrLoginSpotIllustration, obj4);
+      const tmp19 = closure_7(tmp(14874).QrLoginSpotIllustration, obj4);
       cResult[7] = tmp19;
       tmp16 = tmp19;
     } else {

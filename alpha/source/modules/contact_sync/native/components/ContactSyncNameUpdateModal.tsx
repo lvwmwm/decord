@@ -1,17 +1,17 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15891
+// Function ID: 15892
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 13343, 21, 6190, 5191, 587, 6536, 558, 576, 13345, 13349, 4904, 1128, 13363, 6478, 6965, 2]
+// Dependencies: [5, 32, 19, 17, 13348, 21, 6190, 5191, 587, 6536, 558, 576, 13350, 13354, 4904, 1128, 13368, 6478, 6965, 2]
 
-// Module 15887 (ContactSyncNameUpdateModal)
+// Module 15891 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13343 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13345 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13348 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(13363), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(13368), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;

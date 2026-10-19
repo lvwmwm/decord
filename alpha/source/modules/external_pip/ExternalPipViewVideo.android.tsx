@@ -1,16 +1,16 @@
-// Module ID: 18132
-// Function ID: 18133
+// Module ID: 18136
+// Function ID: 18137
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2068, 1392, 5214, 21, 5191, 587, 558, 576, 11265, 5145, 1128, 5187, 504, 6330, 11284, 18133, 5491, 1202, 5331, 4913, 18134, 11276, 18135, 5320, 2]
+// Dependencies: [32, 19, 17, 2068, 1392, 5214, 21, 5191, 587, 558, 576, 11284, 5145, 1128, 5187, 504, 6330, 11302, 18137, 5491, 1202, 5331, 4913, 18138, 11295, 18139, 5320, 2]
 
-// Module 18132 (ExternalPipViewVideo)
+// Module 18136 (ExternalPipViewVideo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import CallConstants from "CallConstants" /* 5214 */;
 import ExternalPipDefault from "ExternalPip" /* 5320 */;
-import VideoActionCreators from "VideoActionCreators" /* 18134 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 18135 */;
+import VideoActionCreators from "VideoActionCreators" /* 18138 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 18139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -232,7 +232,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
   }
   if (wasStream) {
     const obj4 = { style: tmp4.unavaiableImage };
-    tmp6Result = tmp6(tmp(11265).StreamEnded, obj4);
+    tmp6Result = tmp6(tmp(11284).StreamEnded, obj4);
   } else {
     tmp6Result = tmp6(tmp(5145).CircleInformationIcon, {});
   }
@@ -253,7 +253,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
   const tmp3 = metroImportDefault;
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    tmp4Result = tmp4(tmp5(11265).StreamEnded, obj2);
+    tmp4Result = tmp4(tmp5(11284).StreamEnded, obj2);
     tmp8 = tmp4;
     tmp10 = tmp5;
   } else {
@@ -352,7 +352,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
         return guild_id;
       }
     }
-    const tmpResult6 = userId(11284);
+    const tmpResult6 = userId(11302);
     const avatarSpeakingColor = tmpResult6.useAvatarSpeakingColor(obj3);
     if (cResult[9] === stateFromStores1) {
       class C {
@@ -432,11 +432,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
   });
   const obj4 = userId(6330);
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
-  const obj5 = userId(11284);
+  const obj5 = userId(11302);
   const avatarSpeakingColor = obj5.useAvatarSpeakingColor({ userId, guildId: stateFromStores1 });
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp8 = channelId(18133);
+  const tmp8 = channelId(18137);
   const tmp7 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);
@@ -591,7 +591,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
       }
     }
     const obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: tmp9, streamId, onReady: streamReadyCallback, onLayout: tmp13 };
-    const tmp16 = closure_12(tmp10(11276), obj7);
+    const tmp16 = closure_12(tmp10(11295), obj7);
     cResult[8] = tmp13;
     cResult[9] = streamId;
     cResult[10] = streamReadyCallback;
@@ -644,7 +644,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Extern
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items1);
-  const children = [closure_12(streamReady(11276), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
+  const children = [closure_12(streamReady(11295), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
   let tmp10Result = null;
   const tmp8 = closure_13;
   const tmp9 = closure_14;

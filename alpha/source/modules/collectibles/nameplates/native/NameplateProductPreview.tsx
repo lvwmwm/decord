@@ -1,9 +1,9 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14220
+// Function ID: 14221
 // Name: NameplateProductPreview
 // Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 8569, 1992, 1128, 5187, 5491, 8576, 8564, 8657, 504, 5057, 5884, 10565, 10566, 1202, 10590, 6457, 2]
 
-// Module 14216 (NameplateProductPreview)
+// Module 14220 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

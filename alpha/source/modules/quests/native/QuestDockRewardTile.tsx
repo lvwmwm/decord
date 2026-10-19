@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13912
+// Function ID: 13913
 // Name: QuestDockRewardTile
 // Dependencies: [32, 19, 17, 5181, 21, 5191, 587, 558, 576, 1384, 504, 9487, 8699, 5128, 2]
 
-// Module 13908 (QuestDockRewardTile)
+// Module 13912 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AssetUtils from "AssetUtils" /* 9487 */;
@@ -83,8 +83,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F147996 */ });
-          return () => { /* body not rendered: F147997 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148101 */ });
+          return () => { /* body not rendered: F148102 */ };
         } else {
           return;
         }
@@ -108,8 +108,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F147996 */ });
-          return () => { /* body not rendered: F147997 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148101 */ });
+          return () => { /* body not rendered: F148102 */ };
         } else {
           return;
         }
@@ -125,8 +125,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F147996 */ });
-          return () => { /* body not rendered: F147997 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148101 */ });
+          return () => { /* body not rendered: F148102 */ };
         } else {
           return;
         }

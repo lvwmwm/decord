@@ -1,9 +1,9 @@
-// Module ID: 11261
-// Function ID: 11262
+// Module ID: 11280
+// Function ID: 11281
 // Name: StreamTile
-// Dependencies: [19, 17, 6153, 502, 1087, 5216, 21, 5191, 587, 5063, 558, 576, 5187, 1202, 504, 11262, 11264, 1128, 5509, 11268, 11270, 11271, 11259, 6612, 11280, 6462, 2]
+// Dependencies: [19, 17, 6153, 502, 1087, 5216, 21, 5191, 587, 5063, 558, 576, 5187, 1202, 504, 11281, 11283, 1128, 5509, 11287, 11289, 11290, 11278, 6612, 11299, 6462, 2]
 
-// Module 11261 (StreamTile)
+// Module 11280 (StreamTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,12 +11,12 @@ import Text_Text from "Text/Text" /* 5187 */;
 import Constants2 from "Constants" /* 5216 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
 import Pressables from "Pressables" /* 6462 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11259 */;
-import useVideoStreamErrorDefault from "useVideoStreamError" /* 11262 */;
-import VideoEmptyStateDefault from "VideoEmptyState" /* 11264 */;
-import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 11268 */;
-import VideoRendererDefault from "VideoRenderer" /* 11271 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11280 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11278 */;
+import useVideoStreamErrorDefault from "useVideoStreamError" /* 11281 */;
+import VideoEmptyStateDefault from "VideoEmptyState" /* 11283 */;
+import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 11287 */;
+import VideoRendererDefault from "VideoRenderer" /* 11290 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11299 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
@@ -43,7 +43,7 @@ let tmp5;
 let unpackModuleId;
 const native = tmp5(1202);
 const LegacyBaseButton = tmp(6612);
-const VideoRenderer = tmp(11271);
+const VideoRenderer = tmp(11290);
 ({ View: closure_4, StyleSheet } = react_native);
 const ApplicationStreamStates = Constants.ApplicationStreamStates;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
@@ -185,7 +185,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
           return tmp40;
         }
       }
-      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
       const tmp9Result = VideoEmptyStateDefault;
       const tmp44 = closure_10(tmp9Result, obj2);
       cResult[3] = stateFromStores;
@@ -203,7 +203,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
           return tmp35;
         }
       }
-      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
       const tmp9Result4 = VideoEmptyStateDefault;
       const tmp39 = closure_10(tmp9Result4, obj3);
       cResult[7] = stateFromStores;
@@ -269,7 +269,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
             }
           }
         }
-        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp10 };
+        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp10 };
         const tmp9Result6 = VideoEmptyStateDefault;
         const tmp34 = closure_10(tmp9Result6, obj7);
         cResult[19] = stateFromStores;
@@ -287,9 +287,9 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
             tmp25 = cResult[26];
           }
           if (ownerId === tmp46) {
-            REMOTE_STREAM = tmp(11270).VideoSpinnerContext.SELF_STREAM;
+            REMOTE_STREAM = tmp(11289).VideoSpinnerContext.SELF_STREAM;
           } else {
-            REMOTE_STREAM = tmp(11270).VideoSpinnerContext.REMOTE_STREAM;
+            REMOTE_STREAM = tmp(11289).VideoSpinnerContext.REMOTE_STREAM;
           }
           class P {
             constructor() {
@@ -350,11 +350,11 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
       const tmp4Result = VideoEmptyStateDefault;
       return closure_10(tmp4Result, obj2);
     } else if (ApplicationStreamStates.ENDED === state) {
-      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
       const tmp4Result5 = VideoEmptyStateDefault;
       return closure_10(tmp4Result5, obj3);
     } else {
@@ -377,7 +377,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
         }
       }
       if (null != tmp5) {
-        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11264).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
+        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(11283).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
         const tmp4Result7 = VideoEmptyStateDefault;
         return closure_10(tmp4Result7, obj7);
       } else {
@@ -400,9 +400,9 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
         const tmp25 = closure_10;
         const tmp4Result8 = VideoRendererDefault;
         if (ownerId === id) {
-          REMOTE_STREAM = tmp(11270).VideoSpinnerContext.SELF_STREAM;
+          REMOTE_STREAM = tmp(11289).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = tmp(11270).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = tmp(11289).VideoSpinnerContext.REMOTE_STREAM;
         }
         const obj9 = { children: items1 };
         items1 = [tmp25(tmp4Result8, obj8), tmp9];

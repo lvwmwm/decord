@@ -1,9 +1,9 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 12191
+// Function ID: 12192
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11637, 11156, 5187, 5401, 5405, 1128, 3883, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11653, 11175, 5187, 5401, 5405, 1128, 3883, 2]
 
-// Module 12173 (ConjureContextBoundaryRow)
+// Module 12191 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   const cResult = obj.c(32);
   ({ projectId, contextSwitch } = arg0);
   const tmp4 = closure_7();
-  const obj2 = action(11637);
+  const obj2 = action(11653);
   const conjureContextSwitchRow = obj2.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const ChatPlusIcon = tmp(11156).ChatPlusIcon;
+      const ChatPlusIcon = tmp(11175).ChatPlusIcon;
       const tmp14 = closure_4(ChatPlusIcon, obj4);
       cResult[2] = tmp14;
       tmp11 = tmp14;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  const obj = action(11637);
+  const obj = action(11653);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -284,7 +284,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     items = [closure_4(View, obj4), , ];
     const obj5 = { style: tmp.contextLabel, accessible: true, accessibilityRole: "header", children: items1 };
     const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const ChatPlusIcon = tmp2(11156).ChatPlusIcon;
+    const ChatPlusIcon = tmp2(11175).ChatPlusIcon;
     items1 = [closure_4(ChatPlusIcon, obj6), ];
     const obj7 = { variant: "text-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
     items1[1] = closure_4(action(5187).Text, obj7);

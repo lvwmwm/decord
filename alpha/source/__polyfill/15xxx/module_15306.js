@@ -1,58 +1,36 @@
 // Module ID: 15306
 // Function ID: 15307
-// Dependencies: [15223, 15307]
-// Exports: getSupportedCurrencies
+// Dependencies: [15227, 15307]
+// Exports: getSupportedCalendars
 
 // Module 15306
-import _mod15223 from "module_15223" /* 15223 */;
-import currencies2 from "currencies" /* 15307 */;
+const require = globalThis.__r;
+let _require;
 
-function isSupportedCurrency(arr3, locale) {
-  let str = locale;
-  if (undefined === locale) {
-    str = "en";
-  }
-  try {
-    const obj = { style: "currency", currencyDisplay: "name", currency: arr3 };
-    const memoizedNumberFormat = _mod15223.createMemoizedNumberFormat(str, obj);
-    const str2 = memoizedNumberFormat.format(123);
-    if (str2.substring(0, 3) !== arr3) {
-      if (str2.substring(str2.length - 3) !== arr3) {
-        return true;
-      }
-    }
-    return false;
-  } catch (err) {
-  }
-}
 
-export const getSupportedCurrencies = function getSupportedCurrencies(locale) {
-  let num;
-  const items = [];
-  const currencies = currencies2.currencies;
-  for (let num = 0; num < currencies.length; num = num + 1) {
-    let arr3 = currencies[num];
-    if (3 === arr3.length) {
-      if (isSupportedCurrency(arr3, locale)) {
-        let arr = items.push(arr3);
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_15307").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
       }
-    } else if (5 === arr3.length) {
-      if ("~" === arr3[3]) {
-        let indexOf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
-        let index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[2]);
-        let indexOf2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
-        let index1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[4]);
-        if (index <= index1) {
-          do {
-            let sum = arr3.substring(0, 2) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index];
-            if (isSupportedCurrency(sum, locale)) {
-              let arr2 = items.push(sum);
-            }
-            index = index + 1;
-          } while (index <= index1);
+      try {
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
         }
+        return true;
+      } catch (err) {
       }
     }
-  }
-  return items;
+    return isSupportedCalendar(item, locale);
+  });
 };

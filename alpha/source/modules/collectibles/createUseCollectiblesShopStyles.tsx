@@ -1,10 +1,10 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13722
+// Function ID: 13723
 // Name: createUseCollectiblesShopStyles
 // Dependencies: [32, 5181, 8629, 7540, 573, 2]
 // Exports: default
 
-// Module 13718 (createUseCollectiblesShopStyles)
+// Module 13722 (createUseCollectiblesShopStyles)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import _modDef7540 from "module_7540" /* 7540 */;
 import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8629 */;

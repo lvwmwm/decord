@@ -1,17 +1,17 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12754
+// Function ID: 12755
 // Name: CheckpointCustomizationUtils
-// Dependencies: [5537, 3141, 1128, 5561, 12730, 12738, 12739, 5538, 5882, 2]
+// Dependencies: [5537, 3141, 1128, 5561, 12747, 12755, 12756, 5538, 5882, 2]
 // Exports: getAssetAccessibilityLabel, getChamferedRectPoints, getCustomizationOptionForCharacterStage, getCustomizationOptionName, getTraitOptions, isNoneOption
 
-// Module 12737 (CheckpointCustomizationUtils)
+// Module 12754 (CheckpointCustomizationUtils)
 import intl6 from "intl" /* 1128 */;
 import _modDef3141 from "module_3141" /* 3141 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
 import CheckpointTrait from "CheckpointTrait" /* 5561 */;
 import CheckpointTraitConfig from "CheckpointTraitConfig" /* 5882 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 12730 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 12738 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 12747 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 12755 */;
 import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let TRAIT_OPTION_WIDTH;
 let WEARABLE;
 let WEARABLE2;
 let c3;
-const f114233 = (item) => {
+const f114361 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -121,7 +121,7 @@ let items4 = [TRAIT_OPTION_WIDTH - 1, TRAIT_OPTION_HEIGHT - 1];
 items1[3] = items4;
 let items5 = [1, TRAIT_OPTION_HEIGHT - 1];
 items1[4] = items5;
-let mapped = items1.map(f114233);
+let mapped = items1.map(f114361);
 const joined = mapped.join(" ");
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointCustomizationUtils.tsx");
 
@@ -153,7 +153,7 @@ export const getTraitOptions = function getTraitOptions(OUTFIT, OUTFIT_DEFAULT_O
     tmp5 = _require;
     CHECKPOINT_OUTFIT_COLOR_OPTION_NAMES = require("CheckpointTraitOptionNames").CHECKPOINT_TRAIT_OPTION_NAMES[tmp4];
   }
-  dependencyMap = tmp5(12738).CHECKPOINT_TRAIT_OPTION_ASSETS[tmp4];
+  dependencyMap = tmp5(12755).CHECKPOINT_TRAIT_OPTION_ASSETS[tmp4];
   return arr.map((optionId) => {
     let thumbnail;
     trait = optionId;
@@ -214,7 +214,7 @@ export const getChamferedRectPoints = function getChamferedRectPoints(width, hei
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f114233);
+  const mapped = items1.map(f114361);
   return mapped.join(" ");
 };
 export const TRAIT_OPTION_STROKE_WIDTH = 2;

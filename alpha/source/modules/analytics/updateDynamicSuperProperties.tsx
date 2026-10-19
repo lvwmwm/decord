@@ -1,10 +1,10 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18409
+// Function ID: 18410
 // Name: updateDynamicSuperProperties
 // Dependencies: [7450, 1275, 6349, 2]
 // Exports: updateDynamicSuperProperties
 
-// Module 18405 (updateDynamicSuperProperties)
+// Module 18409 (updateDynamicSuperProperties)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6349 */;
 import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7450 */;

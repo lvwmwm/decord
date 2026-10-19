@@ -1,9 +1,9 @@
-// Module ID: 19022
-// Function ID: 19023
+// Module ID: 19026
+// Function ID: 19027
 // Name: clips/ClipsManager
-// Dependencies: [5, 7696, 502, 2068, 2014, 5209, 7694, 2020, 8029, 1087, 6154, 7085, 14399, 5236, 6156, 1267, 2044, 584, 4826, 1384, 14398, 2]
+// Dependencies: [5, 7696, 502, 2068, 2014, 5209, 7694, 2020, 8029, 1087, 6154, 7085, 14403, 5236, 6156, 1267, 2044, 584, 4826, 1384, 14402, 2]
 
-// Module 19022 (clips/ClipsManager)
+// Module 19026 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -13,7 +13,7 @@ import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
 import Constants2 from "Constants" /* 6154 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
 import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7696 */;
-import ClipsExperiment from "ClipsExperiment" /* 14399 */;
+import ClipsExperiment from "ClipsExperiment" /* 14403 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -37,7 +37,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(14398);
+const isClipsEnabled = tmp(14402);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);

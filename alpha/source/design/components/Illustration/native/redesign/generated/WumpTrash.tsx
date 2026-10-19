@@ -1,10 +1,10 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17097
+// Function ID: 17098
 // Name: WumpTrash
-// Dependencies: [19, 21, 8633, 17094, 17095, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8633, 17098, 17099, 558, 576, 5065, 5128, 2]
 // Exports: getWumpTrashSource
 
-// Module 17093 (WumpTrash)
+// Module 17097 (WumpTrash)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 5065 */;

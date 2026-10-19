@@ -1,10 +1,10 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19110
+// Function ID: 19111
 // Name: UserApplicationIdentityManager
-// Dependencies: [11688, 7085, 2]
+// Dependencies: [11707, 7085, 2]
 
-// Module 19106 (UserApplicationIdentityManager)
-import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 11688 */;
+// Module 19110 (UserApplicationIdentityManager)
+import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 11707 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 

@@ -172,15 +172,15 @@ class I18N extends EventEmitter {
     let getLanguages;
     let getMessages;
     let tmp12;
-    const f88056 = (resolveLanguageLoaded) => {
+    const f88105 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     initialLocale = initialLocale.initialLocale;
     ({ getMessages, getLanguages } = initialLocale);
     const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f88056);
-    new Promise(f88056);
+    obj.initialLanguageLoad = new Promise(f88105);
+    new Promise(f88105);
     if (Intl.__addLocaleData) {
       const _Intl = Intl;
       Intl.__addLocaleData(_mod1948);

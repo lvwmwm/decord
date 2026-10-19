@@ -1,9 +1,9 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11536
+// Function ID: 11537
 // Name: useMyCurrentStageChannelRole
 // Dependencies: [502, 2119, 6204, 558, 576, 504, 2]
 
-// Module 11518 (useMyCurrentStageChannelRole)
+// Module 11536 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6204 */;

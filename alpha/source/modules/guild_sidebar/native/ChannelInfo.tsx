@@ -1,19 +1,19 @@
-// Module ID: 17353
-// Function ID: 17354
+// Module ID: 17357
+// Function ID: 17358
 // Name: ChannelInfo
-// Dependencies: [19, 7521, 2090, 4845, 6291, 5212, 1087, 21, 5191, 558, 576, 504, 11855, 9626, 17354, 17342, 5515, 1202, 17355, 17356, 17256, 6151, 12936, 17242, 17357, 14059, 2]
+// Dependencies: [19, 7521, 2090, 4845, 6291, 5212, 1087, 21, 5191, 558, 576, 504, 11874, 9626, 17358, 17346, 5515, 1202, 17359, 17360, 17260, 6151, 12944, 17246, 17361, 14063, 2]
 
-// Module 17353 (ChannelInfo)
+// Module 17357 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import StageMediaHooks from "StageMediaHooks" /* 6151 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11855 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 12936 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17256 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 17342 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 17354 */;
-import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 17356 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17357 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11874 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 12944 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17260 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 17346 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 17358 */;
+import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 17360 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17361 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 7521 */;
 import GuildStore from "GuildStore" /* 2090 */;
@@ -29,7 +29,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp;
-const Badges = tmp(14059);
+const Badges = tmp(14063);
 ({ GuildFeatures: metroImportAll, Permissions: c9, Fonts } = Constants);
 const jsx = Fragment.jsx;
 let obj = { activeTimestamp: { fontFamily: Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 } };
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelInfo(
       }
       if (null != enableActivities) {
         if (enableActivities) {
-          const tmpResult6 = channel(17355);
+          const tmpResult6 = channel(17359);
           if (tmpResult6.showChannelItemEmbeddedActivities(tmp11)) {
             if (cResult[14] === tmp11) {
               let tmp23;
@@ -260,16 +260,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelInfo(
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(17355);
+        const tmpResult2 = channel(17359);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(17356), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(17360), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(17256), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(17260), { locked: needSubscriptionToAccess });
         }
       }
     }
@@ -354,7 +354,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitA
               return tmp16;
             }
           }
-          const tmp18 = jsx(tmp(17242).ConnectedUserLimit, { userCount: voiceStatesCount, video: hasVideo, channel });
+          const tmp18 = jsx(tmp(17246).ConnectedUserLimit, { userCount: voiceStatesCount, video: hasVideo, channel });
           cResult[8] = channel;
           cResult[9] = hasVideo;
           cResult[10] = voiceStatesCount;
@@ -413,7 +413,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitA
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(17242).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(17246).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }

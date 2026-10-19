@@ -1,9 +1,9 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 13262
+// Function ID: 13263
 // Name: GuildPowerupsPerkCard
-// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 5127, 5065, 6941, 13204, 5491, 5187, 13205, 1202, 1128, 13250, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 5127, 5065, 6941, 13212, 5491, 5187, 13213, 1202, 1128, 13258, 2]
 
-// Module 13254 (GuildPowerupsPerkCard)
+// Module 13262 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,8 +14,8 @@ import useThemeDefault from "useTheme" /* 5127 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import LinearGradientDefault from "LinearGradient" /* 5491 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6941 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13204 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13250 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13212 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13258 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -267,7 +267,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
                           tmp55 = tmp58;
                         }
                         const obj6 = { status: tmp10 };
-                        const GuildPowerupsCardFooter = tmp(13205).GuildPowerupsCardFooter;
+                        const GuildPowerupsCardFooter = tmp(13213).GuildPowerupsCardFooter;
                         const merged = Object.assign(tmp6);
                         const tmp54 = metroRequire(GuildPowerupsCardFooter, obj6);
                         cResult[40] = tmp6;
@@ -414,7 +414,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   items3[1] = metroRequire(Text2, { variant: str3, children: description });
   items4 = [metroImportDefault(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(13205).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(13213).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = metroRequire(GuildPowerupsCardFooter, obj10);
   items2[1] = metroImportDefault(View, obj7);

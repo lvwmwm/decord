@@ -1,16 +1,16 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17044
+// Function ID: 17045
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5466, 21, 5191, 587, 558, 576, 17037, 5063, 7173, 8855, 17039, 15609, 1105, 2]
+// Dependencies: [32, 19, 17, 5466, 21, 5191, 587, 558, 576, 17041, 5063, 7173, 8855, 17043, 15613, 1105, 2]
 
-// Module 17040 (VEVOOPropTintColor)
+// Module 17044 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import ColorUtils from "ColorUtils" /* 5063 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15609 */;
-import VEVOO from "VEVOO" /* 17037 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15613 */;
+import VEVOO from "VEVOO" /* 17041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import VEVOOStore from "VEVOOStore" /* 5466 */;
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150418 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -165,7 +165,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150418 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -212,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150418 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -257,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp15 = closure_7(obj4);
             tmp16 = globalThis;
             _setTimeout = setTimeout;
-            timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+            timerId = setTimeout(() => { /* body not rendered: F150418 */ });
           } else {
             tmp9 = closure_7;
             tmp10 = closure_7(obj1);
@@ -302,7 +302,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150418 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -350,7 +350,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150418 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -396,7 +396,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150418 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -442,7 +442,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 tmp15 = closure_7(obj4);
                 tmp16 = globalThis;
                 _setTimeout = setTimeout;
-                timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+                timerId = setTimeout(() => { /* body not rendered: F150418 */ });
               } else {
                 tmp9 = closure_7;
                 tmp10 = closure_7(obj1);
@@ -487,7 +487,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   tmp15 = closure_7(obj4);
                   tmp16 = globalThis;
                   _setTimeout = setTimeout;
-                  timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+                  timerId = setTimeout(() => { /* body not rendered: F150418 */ });
                 } else {
                   tmp9 = closure_7;
                   tmp10 = closure_7(obj1);
@@ -533,7 +533,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     tmp15 = closure_7(obj4);
                     tmp16 = globalThis;
                     _setTimeout = setTimeout;
-                    timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+                    timerId = setTimeout(() => { /* body not rendered: F150418 */ });
                   } else {
                     tmp9 = closure_7;
                     tmp10 = closure_7(obj1);
@@ -580,7 +580,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     tmp15 = closure_7(obj4);
                     tmp16 = globalThis;
                     _setTimeout = setTimeout;
-                    timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+                    timerId = setTimeout(() => { /* body not rendered: F150418 */ });
                   } else {
                     tmp9 = closure_7;
                     tmp10 = closure_7(obj1);
@@ -629,7 +629,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   tmp15 = closure_7(obj4);
                   tmp16 = globalThis;
                   _setTimeout = setTimeout;
-                  timerId = setTimeout(() => { /* body not rendered: F150313 */ });
+                  timerId = setTimeout(() => { /* body not rendered: F150418 */ });
                 } else {
                   tmp9 = closure_7;
                   tmp10 = closure_7(obj1);
@@ -683,8 +683,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj5 = { disabled: !tmp8, initialValue: ref, onValueChange: tmp38 };
           cResult[21] = !tmp8;
           cResult[22] = tmp38;
-          cResult[23] = closure_8(first1(17039), obj5);
-          const tmp42 = closure_8(first1(17039), obj5);
+          cResult[23] = closure_8(first1(17043), obj5);
+          const tmp42 = closure_8(first1(17043), obj5);
         }
         const obj6 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: tmp26 };
         cResult[14] = visualEffectViewOverrideSharedStyles.zeroPadding;
@@ -821,7 +821,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items = [tmp.tintColor, { backgroundColor }];
   const FormRow2 = tmp2(8855).FormRow;
   const items1 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(17039), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(17043), obj9) };
   str2 = undefined;
   const FormRow3 = tmp2(8855).FormRow;
   tmp14 = closure_10;

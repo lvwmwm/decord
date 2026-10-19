@@ -1,18 +1,18 @@
-// Module ID: 13774
-// Function ID: 13775
+// Module ID: 13778
+// Function ID: 13779
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6296, 558, 576, 6297, 11697, 1128, 11614, 11019, 11366, 11020, 9873, 13775, 2]
+// Dependencies: [19, 6296, 558, 576, 6297, 11716, 1128, 11630, 11040, 11384, 11041, 9873, 13779, 2]
 
-// Module 13774 (useAppChannelOverflowMenuItems)
+// Module 13778 (useAppChannelOverflowMenuItems)
 import intl4 from "intl" /* 1128 */;
 import FramesConstants from "FramesConstants" /* 6296 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
 import FlagIcon from "FlagIcon" /* 9873 */;
-import restartFrames from "restartFrames" /* 11019 */;
-import leaveFrame from "leaveFrame" /* 11020 */;
-import DoorExitIcon from "DoorExitIcon" /* 11366 */;
-import RefreshIcon from "RefreshIcon" /* 11614 */;
-import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 13775 */;
+import restartFrames from "restartFrames" /* 11040 */;
+import leaveFrame from "leaveFrame" /* 11041 */;
+import DoorExitIcon from "DoorExitIcon" /* 11384 */;
+import RefreshIcon from "RefreshIcon" /* 11630 */;
+import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 13779 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     if (cResult[1] === application_id.id) {
       tmp5 = cResult[2];
     }
-    const tmp7 = application_id(11697)(application_id, tmp5);
+    const tmp7 = application_id(11716)(application_id, tmp5);
     dependencyMap = tmp7;
     if (null != application_id) {
       let tmp22;
@@ -169,7 +169,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: application_id.id, guildId: application_id.guild_id };
     return obj;
   }, items);
-  const tmp3 = application_id(11697)(application_id, memo);
+  const tmp3 = application_id(11716)(application_id, memo);
   dependencyMap = tmp3;
   const items1 = [application_id, application_id, tmp3];
   return react.useMemo(() => {

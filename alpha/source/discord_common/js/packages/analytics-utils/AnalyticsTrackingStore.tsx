@@ -354,14 +354,14 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
       obj = {
         type: "timeout",
         id: setTimeout(() => {
-            const f158880 = () => {
+            const f158988 = () => {
               sendTelemetryEvent();
               if (typeof scheduleNextHeartbeat === "function") {
                 const result = 0.1 * scheduleDrain;
                 const _Math = Math;
                 const _Math2 = Math;
                 const _Math3 = Math;
-                ({ type: "timeout", id: setTimeout(f158880, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
+                ({ type: "timeout", id: setTimeout(f158988, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
                 const _setTimeout = setTimeout;
               } else {
                 throw new TypeError("Trying to call a non-function");
@@ -373,7 +373,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
               let _Math = Math;
               let _Math2 = Math;
               let _Math3 = Math;
-              obj = { type: "timeout", id: setTimeout(f158880, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
+              obj = { type: "timeout", id: setTimeout(f158988, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
               let _setTimeout = setTimeout;
             } else {
               throw new TypeError("Trying to call a non-function");

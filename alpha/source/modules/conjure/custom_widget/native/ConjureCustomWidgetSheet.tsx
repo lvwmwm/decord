@@ -1,10 +1,10 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14147
+// Function ID: 14148
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10962, 1087, 2075, 21, 5191, 587, 7222, 1128, 3883, 1114, 5155, 10983, 14142, 10986, 7175, 7117, 7051, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 10978, 1087, 2075, 21, 5191, 587, 7222, 1128, 3883, 1114, 5155, 10999, 14146, 11003, 7175, 7117, 7051, 5479, 2]
 // Exports: default
 
-// Module 14143 (ConjureCustomWidgetSheet)
+// Module 14147 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,7 +13,7 @@ import _modDef3883 from "module_3883" /* 3883 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10962 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
@@ -199,7 +199,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7117).BottomSheetTitleHeader;
   intl = value(1128).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3883["09BSx3"]), placeholder: intl3.string(_modDef3883.K7zdCZ), description: intl4.string(_modDef3883.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14142).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef3883["09BSx3"]), placeholder: intl3.string(_modDef3883.K7zdCZ), description: intl4.string(_modDef3883.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14146).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7051).TextArea;
   intl2 = value(1128).intl;
   intl3 = value(1128).intl;

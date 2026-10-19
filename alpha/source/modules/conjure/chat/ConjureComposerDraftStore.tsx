@@ -1,9 +1,9 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12138
+// Function ID: 12139
 // Name: ConjureComposerDraftStore
 // Dependencies: [32, 510, 12, 504, 584, 2]
 
-// Module 12119 (ConjureComposerDraftStore)
+// Module 12138 (ConjureComposerDraftStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

@@ -1,9 +1,9 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18203
+// Function ID: 18204
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6292, 18200, 6332, 2068, 2074, 21, 558, 576, 5127, 12913, 18167, 8927, 573, 8848, 8794, 8790, 5155, 8810, 18201, 9048, 8857, 8952, 1128, 6485, 18194, 10639, 18202, 7377, 8668, 5033, 6567, 2052, 18203, 13209, 8233, 2]
+// Dependencies: [32, 19, 17, 6292, 18204, 6332, 2068, 2074, 21, 558, 576, 5127, 10679, 18171, 8927, 573, 8848, 8794, 8790, 5155, 8810, 18205, 9048, 8857, 8952, 1128, 6485, 18198, 10639, 18206, 7377, 8668, 5033, 6567, 2052, 18207, 13217, 8233, 2]
 
-// Module 18199 (VoicePanelFloatingCTAUtils)
+// Module 18203 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -15,15 +15,15 @@ import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
 import XSmallIcon from "XSmallIcon" /* 6485 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8668 */;
 import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8810 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12913 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18167 */;
-import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 18201 */;
-import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 18202 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18203 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18171 */;
+import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 18205 */;
+import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 18206 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18207 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import EventBannerStore from "EventBannerStore" /* 18200 */;
+import EventBannerStore from "EventBannerStore" /* 18204 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let _require, dependencyMap;
 let tmp;
 const intl4 = tmp(1128);
 const getDeviceSpecificString2 = tmp(8233);
-const SoundboardIcon = tmp(13209);
+const SoundboardIcon = tmp(13217);
 function getBadConnectionCTAProps(arg0) {
   let closure_0;
   let intl;
@@ -131,7 +131,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
   const cResult = obj.c(28);
   stateFromStores(5127)();
   id = undefined;
-  const tmp6 = stateFromStores(18167)(react.useContext(stateFromStores(12913)).channelId);
+  const tmp6 = stateFromStores(18171)(react.useContext(stateFromStores(10679)).channelId);
   const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(8927).useImminentUpcomingGuildEvents;
   imminentUpcomingGuildEvents(8927);
   const tmp4 = stateFromStores;
@@ -360,7 +360,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCal
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   id = undefined;
-  const useInviteMembersCallback = tmp(18194).useInviteMembersCallback;
+  const useInviteMembersCallback = tmp(18198).useInviteMembersCallback;
   if (id != null) {
     id = id.id;
   }
@@ -545,7 +545,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOve
 }) : (function useOverrideFloatingCTAProps(arg0) {
   let setShowFloatingCTA;
   let closure_0 = arg0;
-  setShowFloatingCTA = react.useContext(setShowFloatingCTA(12913)).setShowFloatingCTA;
+  setShowFloatingCTA = react.useContext(setShowFloatingCTA(10679)).setShowFloatingCTA;
   const items = [setShowFloatingCTA, arg0];
   return react.useMemo(() => {
     let tmp = null;

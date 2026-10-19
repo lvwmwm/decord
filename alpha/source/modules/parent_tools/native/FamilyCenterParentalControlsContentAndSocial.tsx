@@ -1,9 +1,9 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 15978
+// Function ID: 15979
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1087, 8260, 21, 558, 576, 11065, 1128, 2131, 15728, 2]
+// Dependencies: [19, 17, 1087, 8260, 21, 558, 576, 11084, 1128, 2131, 15732, 2]
 
-// Module 15974 (FamilyCenterParentalControlsContentAndSocial)
+// Module 15978 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

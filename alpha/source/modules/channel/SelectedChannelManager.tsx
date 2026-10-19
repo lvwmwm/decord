@@ -1,9 +1,9 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18640
+// Function ID: 18641
 // Name: SelectedChannelManager
 // Dependencies: [2014, 2119, 5034, 1087, 7085, 7329, 6145, 1114, 584, 2]
 
-// Module 18636 (SelectedChannelManager)
+// Module 18640 (SelectedChannelManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import SelectedChannelStore2 from "SelectedChannelStore" /* 2119 */;

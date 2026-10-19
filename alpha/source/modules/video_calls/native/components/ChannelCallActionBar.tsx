@@ -1,9 +1,9 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11434
+// Function ID: 11435
 // Name: ChannelCallActionBar
-// Dependencies: [19, 17, 2067, 6292, 5210, 6153, 502, 2014, 11213, 5214, 5216, 21, 5191, 11222, 558, 576, 11417, 504, 9061, 6151, 11418, 9058, 11233, 1128, 11223, 11421, 11422, 10666, 11437, 5205, 7710, 6156, 11438, 11025, 11439, 7255, 11440, 7130, 7155, 11226, 11441, 11471, 11499, 2]
+// Dependencies: [19, 17, 2067, 6292, 5210, 6153, 502, 2014, 11232, 5214, 5216, 21, 5191, 11241, 558, 576, 11435, 504, 9061, 6151, 11436, 9058, 11252, 1128, 11242, 11439, 11440, 10666, 11455, 5205, 7710, 6156, 11456, 11046, 11457, 7255, 11458, 7130, 7155, 11245, 11459, 11489, 11517, 2]
 
-// Module 11416 (ChannelCallActionBar)
+// Module 11434 (ChannelCallActionBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -17,16 +17,16 @@ import useIsRemoteDefault from "useIsRemote" /* 7255 */;
 import StreamActionCreators from "StreamActionCreators" /* 7710 */;
 import CallsUtils from "CallsUtils" /* 9058 */;
 import VoiceChatHooks from "VoiceChatHooks" /* 10666 */;
-import useActionBarHeight from "useActionBarHeight" /* 11222 */;
-import CallBarActionAll from "CallBarAction" /* 11223 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11226 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11233 */;
-import CameraLottie2 from "CameraLottie" /* 11418 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11422 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11437 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11438 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11439 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 11471 */;
+import useActionBarHeight from "useActionBarHeight" /* 11241 */;
+import CallBarActionAll from "CallBarAction" /* 11242 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11245 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11252 */;
+import CameraLottie2 from "CameraLottie" /* 11436 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11440 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11455 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11456 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11457 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 11489 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
@@ -34,7 +34,7 @@ import GameConsoleStore from "GameConsoleStore" /* 5210 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11213 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11232 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -684,8 +684,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisconnectSt
           stopStream(obj2.encodeStreamKey(stateFromStores1));
         }
       }
-      const PrimaryActionButton = stateFromStores1(11223).PrimaryActionButton;
-      tmp20[0] = stateFromStores(11438);
+      const PrimaryActionButton = stateFromStores1(11242).PrimaryActionButton;
+      tmp20[0] = stateFromStores(11456);
       tmp20[1] = tmp14;
       tmp20[2] = isSmallSize;
       tmp20[3] = tmp16;
@@ -757,7 +757,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisconnectSt
           stopStream(obj2.encodeStreamKey(stateFromStores));
         }
     };
-    const PrimaryActionButton = stateFromStores(11223).PrimaryActionButton;
+    const PrimaryActionButton = stateFromStores(11242).PrimaryActionButton;
     intl = tmp(1128).intl;
     tmp4 = closure_15(PrimaryActionButton, obj3);
   }
@@ -1333,7 +1333,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCall
   }
   if (undefined !== shouldShowConnectingScreen && shouldShowConnectingScreen) {
     const obj6 = { channel };
-    tmp16Result = authStore3(tmp(11441).CallConnectingActionBar, obj6);
+    tmp16Result = authStore3(tmp(11459).CallConnectingActionBar, obj6);
   } else {
     let tmp22;
     let tmp27Result;
@@ -1363,7 +1363,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCall
     items[2] = authStore3(ChannelCallMicButton.ChannelCallMicButton, obj10);
     if (obj5.END_REMOTE === tmp11) {
       const obj11 = { channel, isSmallSize: isFiveButtonLayout };
-      tmp27Result = tmp27(tmp(11499).DisconnectRemoteButton, obj11);
+      tmp27Result = tmp27(tmp(11517).DisconnectRemoteButton, obj11);
     } else if (obj5.END_STREAM === tmp11) {
       const obj12 = { channel, isSmallSize: isFiveButtonLayout };
       tmp27Result = tmp27(closure_23, obj12);
@@ -1413,7 +1413,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCall
   tmp10 = View;
   if (shouldShowConnectingScreen) {
     obj4 = { channel };
-    tmp11Result = tmp9(tmp7(11441).CallConnectingActionBar, obj4);
+    tmp11Result = tmp9(tmp7(11459).CallConnectingActionBar, obj4);
   } else {
     let tmp9Result5;
     let tmp9Result6;
@@ -1443,7 +1443,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCall
     items[2] = authStore3(ChannelCallMicButton.ChannelCallMicButton, obj8);
     if (obj5.END_REMOTE === tmp5) {
       const obj9 = { channel, isSmallSize: isFiveButtonLayout };
-      tmp9Result6 = tmp9(tmp7(11499).DisconnectRemoteButton, obj9);
+      tmp9Result6 = tmp9(tmp7(11517).DisconnectRemoteButton, obj9);
     } else if (obj5.END_STREAM === tmp5) {
       const obj10 = { channel, isSmallSize: isFiveButtonLayout };
       tmp9Result6 = tmp9(closure_23, obj10);

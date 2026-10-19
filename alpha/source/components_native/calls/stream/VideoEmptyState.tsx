@@ -1,9 +1,9 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 11283
+// Function ID: 11284
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 2068, 1087, 21, 5191, 587, 558, 576, 11265, 1202, 1128, 5389, 504, 7710, 6156, 5496, 5187, 5479, 2]
+// Dependencies: [109, 19, 17, 2068, 1087, 21, 5191, 587, 558, 576, 11284, 1202, 1128, 5389, 504, 7710, 6156, 5496, 5187, 5479, 2]
 
-// Module 11264 (VideoEmptyState)
+// Module 11283 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1202 */;
 import useMountEffectDefault from "useMountEffect" /* 5496 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
 import StreamActionCreators from "StreamActionCreators" /* 7710 */;
-import StreamEnded from "StreamEnded" /* 11265 */;
+import StreamEnded from "StreamEnded" /* 11284 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2068 */;
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     const tmp9 = closure_8;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_7(stream(11265).StreamEnded, obj2);
+      tmp10 = closure_7(stream(11284).StreamEnded, obj2);
     }
     const obj3 = { children: items };
     items = [tmp10, ];

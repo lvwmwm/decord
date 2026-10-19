@@ -1,140 +1,48 @@
 // Module ID: 12459
 // Function ID: 12460
-// Dependencies: [12425, 12376, 12414, 12375, 12378, 12397, 12369]
+// Dependencies: [12413, 12400, 12386]
+// Exports: addBreadcrumb
 
 // Module 12459
-import _mod12375 from "module_12375" /* 12375 */;
-import _mod12376 from "module_12376" /* 12376 */;
-import module_12425 from "module_12425" /* 12425 */;
+import _mod12386 from "module_12386" /* 12386 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12400 */;
+import _mod12413 from "module_12413" /* 12413 */;
 
 
-export const extraErrorDataIntegration = module_12425.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_1;
-  const depth = obj.depth;
-  let num = 3;
-  if (undefined !== depth) {
-    num = depth;
-  }
-  const captureErrorCause = obj.captureErrorCause;
-  closure_1 = undefined === captureErrorCause || captureErrorCause;
-  let obj2 = {
-    name: "ExtraErrorData",
-    processEvent(contexts, arg1, getOptions) {
-      function _extractErrorData(originalException, arg1, maxValueLength) {
-        try {
-          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
-          const obj = {};
-          const _Object = Object;
-          const keys = Object.keys(originalException);
-          const iter = keys[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let tmp8 = nextResult;
-            if (-1 === items.indexOf(nextResult)) {
-              let tmp11 = originalException[tmp8];
-              let tmp12 = tmp11;
-              let tmp15 = num;
-              let tmp17 = closure_1_1;
-              let obj2 = num(closure_1_1[1]);
-              if (!obj2.isError(tmp11)) {
-                let truncateResult;
-                if (typeof tmp12 !== "string") {
-                  truncateResult = tmp11;
-                }
-                obj[tmp8] = truncateResult;
-              }
-              let tmp15Result = tmp15(tmp17[4]);
-              let _HermesInternal = HermesInternal;
-              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
-            }
-            continue;
-          }
-          const tmp23 = arg1 && undefined !== originalException.cause;
-          if (tmp23) {
-            let str1;
-            const obj4 = -1(closure_1_1[1]);
-            if (obj4.isError(originalException.cause)) {
-              str1 = str2.toString();
-            } else {
-              str1 = str2;
-            }
-            obj.cause = str1;
-          }
-          if (typeof originalException.toJSON === "function") {
-            const toJSONResult = originalException.toJSON();
-            const _Object2 = Object;
-            const keys1 = Object.keys(toJSONResult);
-            const tmp48 = toJSONResult;
-            for (const item10067 of keys1) {
-              let str5;
-              let tmp32 = tmp48[item10067];
-              let str3 = tmp32;
-              let obj5 = num(closure_1_1[1]);
-              if (obj5.isError(tmp32)) {
-                str5 = str3.toString();
-              } else {
-                str5 = str3;
-              }
-              obj[item10067] = str5;
-              continue;
-            }
-          }
-          return obj;
-        } catch (tmp40) {
-          const tmp41 = num;
-          const tmp43 = closure_1_1;
-          if (num(closure_1_1[5]).DEBUG_BUILD) {
-            const logger = tmp41(tmp43[6]).logger;
-            logger.error("Unable to extract extra data from the Error object:", tmp40);
-          }
-          return null;
-        }
-      }
-      const maxValueLength = getOptions.getOptions().maxValueLength;
-      num = 250;
-      const tmp = num;
-      const tmp2 = closure_1;
-      if (undefined !== maxValueLength) {
-        num = maxValueLength;
-      }
-      let obj = arg1;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      let tmp3 = contexts;
-      if (obj.originalException) {
-        let obj2 = _mod12376;
-        tmp3 = contexts;
-        if (obj2.isError(obj.originalException)) {
-          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
-          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
-          tmp3 = contexts;
-          if (tmp7) {
-            const obj3 = {};
-            let tmp8 = obj3;
-            const merged = Object.assign(contexts.contexts);
-            const normalizer = tmp4(12414);
-            const normalizeResult = normalizer.normalize(tmp7, tmp);
-            const tmp4Result = _mod12376;
-            if (tmp4Result.isPlainObject(normalizeResult)) {
-              const tmp4Result2 = _mod12375;
-              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
-              obj3[tmp6] = normalizeResult;
-            }
-            let obj4 = { contexts: obj3 };
-            let tmp12 = obj4;
-            let tmp13 = contexts;
-            const merged1 = Object.assign(contexts);
-            tmp3 = obj4;
-          }
-        }
-      }
-      return tmp3;
+export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
+  let tmpResult;
+  let closure_0 = arg1;
+  const obj = _mod12413;
+  const client = obj.getClient();
+  const obj3 = _mod12413;
+  const isolationScope = obj3.getIsolationScope();
+  if (client) {
+    const options = client.getOptions();
+    let beforeBreadcrumb = options.beforeBreadcrumb;
+    let tmp5 = null;
+    if (undefined !== beforeBreadcrumb) {
+      tmp5 = beforeBreadcrumb;
     }
-  };
-  return obj2;
-});
+    beforeBreadcrumb = tmp5;
+    const maxBreadcrumbs = options.maxBreadcrumbs;
+    let num = 100;
+    if (undefined !== maxBreadcrumbs) {
+      num = maxBreadcrumbs;
+    }
+    if (num > 0) {
+      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
+      tmpResult = _browserPerformanceTimeOriginMode;
+      const merged = Object.assign(arg0);
+      if (tmp5) {
+        const tmpResult2 = _mod12386;
+        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
+      }
+      if (null !== obj2) {
+        if (client.emit) {
+          client.emit("beforeAddBreadcrumb", obj2, arg1);
+        }
+        isolationScope.addBreadcrumb(obj2, num);
+      }
+    }
+  }
+};

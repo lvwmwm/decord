@@ -1,9 +1,9 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 13724
+// Function ID: 13725
 // Name: useFetchCollectiblesProductCategory
 // Dependencies: [32, 7530, 558, 576, 10395, 573, 2]
 
-// Module 13720 (useFetchCollectiblesProductCategory)
+// Module 13724 (useFetchCollectiblesProductCategory)
 import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;

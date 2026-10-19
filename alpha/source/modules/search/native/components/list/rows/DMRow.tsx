@@ -1,9 +1,9 @@
-// Module ID: 17782
-// Function ID: 17783
+// Module ID: 17786
+// Function ID: 17787
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5181, 5207, 4855, 1087, 21, 5191, 587, 558, 576, 5057, 5187, 10538, 504, 9039, 1202, 8896, 14573, 17768, 2]
+// Dependencies: [5, 32, 19, 17, 5181, 5207, 4855, 1087, 21, 5191, 587, 558, 576, 5057, 5187, 10538, 504, 9039, 1202, 8896, 14577, 17772, 2]
 
-// Module 17782 (DMRow)
+// Module 17786 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5187 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8896 */;
 import BotTagDefault from "BotTag" /* 9039 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10538 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14573 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

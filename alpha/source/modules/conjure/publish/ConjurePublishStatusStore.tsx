@@ -1,9 +1,9 @@
-// Module ID: 10977
-// Function ID: 10978
+// Module ID: 10993
+// Function ID: 10994
 // Name: ConjurePublishStatusStore
 // Dependencies: [6293, 504, 584, 2]
 
-// Module 10977 (ConjurePublishStatusStore)
+// Module 10993 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
@@ -64,6 +64,8 @@ let obj = {
   },
   CONJURE_PROJECT_PUBLISH_STATUS_UPDATE: function handleProjectPublishStatusUpdate(publishedRevision) {
     let hasUnpublishedChanges;
+    let newUiUnpublished;
+    let patchNotesSent;
     let previewAppChannels;
     let projectId;
     let published;
@@ -82,7 +84,10 @@ let obj = {
     if (flag === undefined) {
       flag = false;
     }
-    let patchNotesSent = publishedRevision.patchNotesSent;
+    ({ patchNotesSent, newUiUnpublished } = publishedRevision);
+    if (newUiUnpublished === undefined) {
+      newUiUnpublished = false;
+    }
     let str = "unpublished";
     if (published) {
       let str2 = "up_to_date";
@@ -125,7 +130,9 @@ let obj = {
               if (value.publishedAt === publishedAt) {
                 if (value.publishing === flag) {
                   if (value.patchNotesSent === patchNotesSent) {
-                    return false;
+                    if (value.newUiUnpublished === newUiUnpublished) {
+                      return false;
+                    }
                   }
                 }
               }
@@ -134,7 +141,7 @@ let obj = {
         }
       }
     }
-    const result = obj.set(projectId, { state: str, surface, previewAppChannels, publishedRevision, publishedAt, publishing: flag, patchNotesSent });
+    const result = obj.set(projectId, { state: str, surface, previewAppChannels, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished });
   },
   CONJURE_PROJECT_PUBLISH_START: function handleProjectPublishStart(projectId) {
     set.add(projectId.projectId);
@@ -172,7 +179,7 @@ let obj = {
         patchNotesSent = closure_4;
       }
       items = [];
-      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== publishedRevision.publishedRevision), 0)] = sent;
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== remove_host.publishedRevision), 0)] = sent;
       const result = set(projectId, obj);
     }
   },

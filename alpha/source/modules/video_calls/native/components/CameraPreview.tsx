@@ -1,9 +1,9 @@
-// Module ID: 11212
-// Function ID: 11213
+// Module ID: 11231
+// Function ID: 11232
 // Name: CameraPreview
-// Dependencies: [32, 19, 17, 2067, 6292, 9683, 6153, 502, 11213, 10662, 10663, 1087, 5214, 21, 6612, 4945, 1202, 558, 576, 504, 11214, 11209, 11222, 11210, 8600, 1633, 11220, 8724, 6178, 11215, 6536, 5192, 11232, 1128, 11233, 11256, 11338, 11217, 10665, 6315, 11339, 11340, 2]
+// Dependencies: [32, 19, 17, 2067, 6292, 9683, 6153, 502, 11232, 10662, 10663, 1087, 5214, 21, 6612, 4945, 1202, 558, 576, 504, 11233, 11228, 11241, 11229, 8600, 1633, 11239, 8724, 6178, 11234, 6536, 5192, 11251, 1128, 11252, 11275, 11356, 11236, 10665, 6315, 11357, 11358, 2]
 
-// Module 11212 (CameraPreview)
+// Module 11231 (CameraPreview)
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
@@ -13,8 +13,8 @@ import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9683 */;
 import ChannelCallStore from "ChannelCallStore" /* 10662 */;
 import useSelectedParticipantDefault from "useSelectedParticipant" /* 10665 */;
-import PictureInPicture from "PictureInPicture" /* 11215 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11217 */;
+import PictureInPicture from "PictureInPicture" /* 11234 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11236 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelCallLifecycleStore_mod from "ChannelCallLifecycleStore" /* 11213 */;
+import ChannelCallLifecycleStore_mod from "ChannelCallLifecycleStore" /* 11232 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 10663 */;
 import CallConstants from "CallConstants" /* 5214 */;
 import Fragment from "Fragment" /* 21 */;
@@ -98,16 +98,16 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  [r10037, tmp11] = reveal(stateFromStores(11214)(), 2);
+  [r10037, tmp11] = reveal(stateFromStores(11233)(), 2);
   dependencyMap = tmp11;
   let obj3 = react;
-  const tmp10 = reveal(stateFromStores(11214)(), 2);
-  reveal = react.useContext(tmp(11209).RevealContext).reveal;
-  const tmp12 = stateFromStores(11222)();
+  const tmp10 = reveal(stateFromStores(11233)(), 2);
+  reveal = react.useContext(tmp(11228).RevealContext).reveal;
+  const tmp12 = stateFromStores(11241)();
   react = tmp12;
   const tmp13 = closure_9();
   let closure_5 = tmp13;
-  const tmp14 = stateFromStores(11210)(channel.id);
+  const tmp14 = stateFromStores(11229)(channel.id);
   let closure_6 = tmp14;
   const tmpResult5 = tmp(8600);
   const isScreenLandscape = tmpResult5.useIsScreenLandscape();
@@ -123,7 +123,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   } else {
     tmp16 = cResult[3];
   }
-  const tmpResult6 = tmp(11220);
+  const tmpResult6 = tmp(11239);
   let isViewingActivity = tmpResult6.useIsViewingActivity(tmp16);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelCallLifecycleStore];
@@ -238,7 +238,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
                   } else if (tmp45.HANDLE_THERMAL_EVENT === tmp44) {
                     const _Symbol3 = Symbol;
                     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                      const obj7 = { text: null, onClick: tmp(11233).openIgnoreThermalStateAlert };
+                      const obj7 = { text: null, onClick: tmp(11252).openIgnoreThermalStateAlert };
                       const string = tmp(1128).intl.string;
                       class Z {
                         constructor() {
@@ -312,8 +312,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
                         cResult[33] = channel;
                         cResult[34] = nonSelfPipParticipant;
                         cResult[35] = selfParticipant;
-                        cResult[36] = closure_21(stateFromStores(11256), obj8);
-                        const tmp61 = closure_21(stateFromStores(11256), obj8);
+                        cResult[36] = closure_21(stateFromStores(11275), obj8);
+                        const tmp61 = closure_21(stateFromStores(11275), obj8);
                       }
                       const items6 = [, ];
                       class Z {
@@ -446,16 +446,16 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   const items = [closure_12];
   const stateFromStores = TIMING_CONFIG.useStateFromStores(items, () => closure_12.isReactingToThermalState());
   const tmp4 = stateFromStores;
-  let tmp6 = reveal(stateFromStores(11214)(), 2);
+  let tmp6 = reveal(stateFromStores(11233)(), 2);
   dependencyMap = tmp8;
   let obj2 = react;
   const first = tmp6[0];
-  reveal = react.useContext(participantScreenIsFocused(11209).RevealContext).reveal;
-  const tmp9 = stateFromStores(11222)();
+  reveal = react.useContext(participantScreenIsFocused(11228).RevealContext).reveal;
+  const tmp9 = stateFromStores(11241)();
   react = tmp9;
   const tmp10 = closure_9();
   let closure_5 = tmp10;
-  const tmp11 = stateFromStores(11210)(channel.id);
+  const tmp11 = stateFromStores(11229)(channel.id);
   let closure_6 = tmp11;
   let obj3 = participantScreenIsFocused(8600);
   const isScreenLandscape = obj3.useIsScreenLandscape();
@@ -463,7 +463,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   const bottom = rect.bottom;
   const top = rect.top;
   ({ left, right } = rect);
-  const obj4 = participantScreenIsFocused(11220);
+  const obj4 = participantScreenIsFocused(11239);
   const obj5 = { channelId: channel.id };
   let isViewingActivity = obj4.useIsViewingActivity(obj5);
   const items1 = [closure_12];
@@ -545,7 +545,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
     const items4 = [obj8];
     items6 = items4;
   } else if (tmp29.HANDLE_THERMAL_EVENT === tmp28) {
-    const obj9 = { text: intl.string(tmp(1128).t["1fRDnT"]), onClick: tmp(11233).openIgnoreThermalStateAlert };
+    const obj9 = { text: intl.string(tmp(1128).t["1fRDnT"]), onClick: tmp(11252).openIgnoreThermalStateAlert };
     intl = tmp(1128).intl;
     const items5 = [obj9];
     items6 = items5;
@@ -574,7 +574,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
   obj16 = {
     ref,
     disabled: !isViewingActivity,
-    trigger: closure_21(tmp4(11256), { channel, selfParticipant, pipParticipant: nonSelfPipParticipant }),
+    trigger: closure_21(tmp4(11275), { channel, selfParticipant, pipParticipant: nonSelfPipParticipant }),
     rows: items6,
     onOpen() {
       _undefined(stateFromStores ? constants4.HANDLE_THERMAL_EVENT : constants4.HIDE_PIP);
@@ -583,9 +583,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
       _undefined(null);
     }
   };
-  tmp4Result = tmp4(11215);
+  tmp4Result = tmp4(11234);
   const tmp38 = closure_6;
-  tmp4Result2 = tmp4(11338);
+  tmp4Result2 = tmp4(11356);
   if (isViewingActivity) {
     isViewingActivity = stateFromStores;
   }
@@ -836,7 +836,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraPrevie
           }
         }
       }
-      const tmpResult5 = tmp(11339);
+      const tmpResult5 = tmp(11357);
       const isStreamFocused = tmpResult5.useIsStreamFocused(channel.id);
       if (cResult[9] !== channel.id) {
         class A {
@@ -858,7 +858,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraPrevie
         }
       }
       const _Symbol3 = Symbol;
-      const tmpResult6 = tmp(11220);
+      const tmpResult6 = tmp(11239);
       const isViewingActivity = tmpResult6.useIsViewingActivity(tmp26);
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         class A {
@@ -1045,10 +1045,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraPrevie
   if (!tmp10) {
     tmp13 = stateFromStores1;
   }
-  const tmp4Result = tmp4(11339);
+  const tmp4Result = tmp4(11357);
   const isStreamFocused = tmp4Result.useIsStreamFocused(channel.id);
   const obj3 = { channelId: channel.id };
-  const tmp4Result6 = tmp4(11220);
+  const tmp4Result6 = tmp4(11239);
   const isViewingActivity = tmp4Result6.useIsViewingActivity(obj3);
   const items2 = [tmp5, tmp6];
   const tmp4Result7 = tmp4(504);
@@ -1174,7 +1174,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraPrevie
   if (flag2) {
     flag2 = flag;
   }
-  tmp(11340)(channel);
+  tmp(11358)(channel);
   if (tmp10) {
     if (!stateFromStores4) {
       tmp22 = null;

@@ -1,18 +1,18 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15877
+// Function ID: 15878
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8260, 558, 576, 15867, 8515, 7276, 15868, 1128, 11065, 15870, 2]
+// Dependencies: [8260, 558, 576, 15871, 8515, 7276, 15872, 1128, 11084, 15874, 2]
 
-// Module 15873 (GoreMediaFiltersFriendsDMsSetting)
+// Module 15877 (GoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7276 */;
 import SettingsConstants from "SettingsConstants" /* 8260 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15867 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15868 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15870 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15871 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15872 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15874 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11065 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

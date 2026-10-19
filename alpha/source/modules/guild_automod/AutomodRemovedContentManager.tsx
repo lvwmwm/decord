@@ -1,10 +1,10 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18445
+// Function ID: 18446
 // Name: AutomodRemovedContentManager
-// Dependencies: [5532, 2119, 18442, 7085, 2]
+// Dependencies: [5532, 2119, 18446, 7085, 2]
 
-// Module 18441 (AutomodRemovedContentManager)
-import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 18442 */;
+// Module 18445 (AutomodRemovedContentManager)
+import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 18446 */;
 import MessageStore from "MessageStore" /* 5532 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;

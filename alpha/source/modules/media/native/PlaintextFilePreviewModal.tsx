@@ -1,9 +1,9 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11158
+// Function ID: 11159
 // Name: PlaintextFilePreviewModal
-// Dependencies: [109, 32, 19, 17, 1098, 21, 5191, 587, 6190, 11138, 8537, 11140, 4901, 558, 576, 11142, 5187, 1128, 6433, 7101, 6478, 9662, 7365, 9543, 10913, 2]
+// Dependencies: [109, 32, 19, 17, 1098, 21, 5191, 587, 6190, 11157, 8537, 11159, 4901, 558, 576, 11161, 5187, 1128, 6433, 7101, 6478, 9662, 7365, 9543, 10929, 2]
 
-// Module 11139 (PlaintextFilePreviewModal)
+// Module 11158 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,9 +16,9 @@ import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndic
 import NavigatorHeader from "NavigatorHeader" /* 6478 */;
 import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8537 */;
 import ContextMenu from "ContextMenu" /* 9662 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11138 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11140 */;
-import useDownloadedFile from "useDownloadedFile" /* 11142 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11157 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11159 */;
+import useDownloadedFile from "useDownloadedFile" /* 11161 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(10913).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(10929).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 });
 const result = size.fileFinishedImporting("modules/media/native/PlaintextFilePreviewModal.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10702
-// Function ID: 10703
+// Module ID: 10718
+// Function ID: 10719
 // Name: Constants
 // Dependencies: [1128, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 10702 (Constants)
+// Module 10718 (Constants)
 import intl7 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 

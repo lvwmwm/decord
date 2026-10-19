@@ -1,16 +1,16 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11469
+// Function ID: 11470
 // Name: VolumeSlider
-// Dependencies: [109, 19, 17, 5216, 21, 1384, 5191, 558, 576, 587, 4913, 11452, 5351, 1128, 8678, 8501, 2]
+// Dependencies: [109, 19, 17, 5216, 21, 1384, 5191, 558, 576, 587, 4913, 11470, 5351, 1128, 8678, 8501, 2]
 
-// Module 11451 (VolumeSlider)
+// Module 11469 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useToken2 from "useToken" /* 4913 */;
 import Constants from "Constants" /* 5216 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5351 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8501 */;
-import VoiceXIcon from "VoiceXIcon" /* 11452 */;
+import VoiceXIcon from "VoiceXIcon" /* 11470 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

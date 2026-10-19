@@ -1,9 +1,9 @@
-// Module ID: 15707
-// Function ID: 15708
+// Module ID: 15711
+// Function ID: 15712
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1087, 21, 7155, 5191, 558, 576, 5187, 15641, 1505, 6957, 1128, 7435, 7130, 9693, 9694, 9818, 15698, 1633, 2]
+// Dependencies: [19, 1087, 21, 7155, 5191, 558, 576, 5187, 15645, 1505, 6957, 1128, 7435, 7130, 9693, 9694, 9818, 15702, 1633, 2]
 
-// Module 15707 (UserProfilePremiumUpsellCard)
+// Module 15711 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -13,7 +13,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9818 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15641 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15645 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 5191 */;
@@ -178,7 +178,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, tmp7, constants2.USER_SETTINGS, undefined, items);
-  const tmpResult = tmp(15698);
+  const tmpResult = tmp(15702);
   const mobileNitroPreviewDirectCheckoutEnabled = tmpResult.useMobileNitroPreviewDirectCheckoutEnabled();
   if (cResult[2] !== nitroTrialCtaOverride) {
     let stringResult = nitroTrialCtaOverride;
@@ -241,7 +241,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetNit
   }, items);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items));
   usePremiumFeatureUpsellGetNitroDefault(false, callback, constants2.USER_SETTINGS, undefined, items);
-  let obj2 = analyticsLocations(15698);
+  let obj2 = analyticsLocations(15702);
   const mobileNitroPreviewDirectCheckoutEnabled = obj2.useMobileNitroPreviewDirectCheckoutEnabled();
   const obj3 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1128).t.ZFR9LF), disabled: mobileNitroPreviewDirectCheckoutEnabled && loading, onPress: callback };
   const tmp7 = jsx;

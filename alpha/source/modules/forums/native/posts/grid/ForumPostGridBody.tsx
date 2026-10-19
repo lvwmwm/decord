@@ -1,9 +1,9 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12868
+// Function ID: 12869
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1202, 12852, 12853, 12854, 5187, 1499, 1388, 12855, 7259, 8752, 12859, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 1202, 12869, 12870, 12871, 5187, 1499, 1388, 12872, 7259, 8752, 12876, 2]
 
-// Module 12851 (ForumPostGridBody)
+// Module 12868 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import native from "native" /* 1202 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8752 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12852 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12853 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12854 */;
-import ForumPostMedia from "ForumPostMedia" /* 12855 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12869 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12870 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12871 */;
+import ForumPostMedia from "ForumPostMedia" /* 12872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -784,7 +784,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   items3[1] = tmp15;
   items4 = [closure_6(View, obj3), , , ];
   if (tmp14Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(12859).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(12876).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp14Result = tmp14(tmp12, obj4);
   }

@@ -1,12 +1,9 @@
 // Module ID: 15112
 // Function ID: 15113
-// Dependencies: [15110]
+// Dependencies: [15111]
 
 // Module 15112
-import _mod15110 from "module_15110" /* 15110 */;
+import _mod15111 from "module_15111" /* 15111 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15110(arg1, arg0, closure_0));
-};
+export default (arg0, arg1, arg2) => _mod15111(arg1, arg0, arg2);

@@ -1,12 +1,12 @@
-// Module ID: 17257
-// Function ID: 17258
+// Module ID: 17261
+// Function ID: 17262
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 2119, 5215, 21, 558, 576, 504, 5514, 17253, 2]
+// Dependencies: [19, 2119, 5215, 21, 558, 576, 504, 5514, 17257, 2]
 
-// Module 17257 (RedesignVoiceUserSummary)
+// Module 17261 (RedesignVoiceUserSummary)
 import Fragment from "Fragment" /* 21 */;
 import ChannelUtils from "ChannelUtils" /* 5514 */;
-import VoiceUserSummaryDefault from "VoiceUserSummary" /* 17253 */;
+import VoiceUserSummaryDefault from "VoiceUserSummary" /* 17257 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;

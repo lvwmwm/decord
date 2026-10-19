@@ -1,9 +1,9 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16851
+// Function ID: 16852
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 5187, 8805, 9051, 10911, 4923, 5479, 5477, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 5187, 8805, 9051, 10927, 4923, 5479, 5477, 2]
 
-// Module 16847 (UserSettingsDesignSystemSegmentedControl)
+// Module 16851 (UserSettingsDesignSystemSegmentedControl)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;

@@ -1,9 +1,9 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15423
+// Function ID: 15424
 // Name: ShareStore
 // Dependencies: [502, 2068, 2090, 2119, 5034, 1392, 1087, 1388, 8756, 1275, 1267, 504, 584, 2]
 
-// Module 15419 (ShareStore)
+// Module 15423 (ShareStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

@@ -1,16 +1,16 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18201
+// Function ID: 18202
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6292, 21, 4945, 8817, 5191, 587, 558, 576, 18198, 18196, 9070, 6439, 12913, 504, 5192, 2]
+// Dependencies: [19, 6292, 21, 4945, 8817, 5191, 587, 558, 576, 18202, 18200, 9070, 6439, 10679, 504, 5192, 2]
 
-// Module 18197 (VoicePanelHeaderUserState)
+// Module 18201 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5192 */;
 import NativeViewDefault from "NativeView" /* 6439 */;
 import native from "native" /* 8817 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 18198 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 18202 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
@@ -24,7 +24,7 @@ let rect;
 let size;
 let size1;
 let tmp2;
-const useStableParticipant = tmp2(18196);
+const useStableParticipant = tmp2(18200);
 const jsx = Fragment.jsx;
 let closure_6 = ReanimatedRexport.createAnimatedComponent(native.BackgroundBlurView);
 const OPACITY_TIMING = { duration: 100 };
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
       let obj4 = { style: tmp6.floatingIcon, state: tmp12.videoIconState };
       let arr2 = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp6.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp12.type === tmp14(18198).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp12.type === tmp14(18202).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp41 = jsx;
       let push2 = items1.push;
       let tmp42 = jsx;
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePa
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(18198).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(18202).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
@@ -176,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = isHeaderHidden(576);
   const cResult = obj.c(9);
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
-  const context = react.useContext(channelId(12913));
+  const context = react.useContext(channelId(10679));
   const tmp4 = channelId;
   channelId = context.channelId;
   const guildId = context.guildId;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-  const tmp11 = closure_9(tmp4(18196)(stateFromStores, channelId, guildId), guildId);
+  const tmp11 = closure_9(tmp4(18200)(stateFromStores, channelId, guildId), guildId);
   const tmpResult2 = tmp(4945);
   class P {
     constructor() {
@@ -255,7 +255,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
 }) : (function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = react.useContext(channelId(12913));
+  const context = react.useContext(channelId(10679));
   channelId = context.channelId;
   const guildId = context.guildId;
   const tmp2 = closure_8();
@@ -269,7 +269,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return id;
   });
-  const tmp4 = closure_9(channelId(18196)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = closure_9(channelId(18200)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4945);
   const fn = function f() {
     const withTiming = timing.withTiming;

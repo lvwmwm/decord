@@ -1,19 +1,19 @@
-// Module ID: 18978
-// Function ID: 18979
+// Module ID: 18982
+// Function ID: 18983
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 16259, 21, 5191, 558, 576, 16294, 1202, 11392, 5187, 4859, 16287, 5521, 8431, 1128, 2]
+// Dependencies: [19, 17, 16263, 21, 5191, 558, 576, 16298, 1202, 11410, 5187, 4859, 16291, 5521, 8431, 1128, 2]
 
-// Module 18978 (GuildRoleSubscriptionBenefitPreview)
+// Module 18982 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
 import useChannelNameDefault from "useChannelName" /* 5521 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11392 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16259 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16287 */;
-import EmojiIconDefault from "EmojiIcon" /* 16294 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11410 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16291 */;
+import EmojiIconDefault from "EmojiIcon" /* 16298 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5191 */;

@@ -1,9 +1,9 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18255
+// Function ID: 18256
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6292, 12914, 12912, 18183, 12917, 5214, 21, 18252, 558, 4945, 9878, 12913, 4913, 587, 12918, 11892, 5478, 576, 18184, 6438, 5430, 7039, 18281, 504, 12, 4923, 1128, 4922, 2]
+// Dependencies: [32, 19, 17, 6292, 10680, 10678, 18187, 10683, 5214, 21, 18256, 558, 4945, 9878, 10679, 4913, 587, 10686, 11911, 5478, 576, 18188, 6438, 5430, 7039, 18285, 504, 12, 4923, 1128, 4922, 2]
 
-// Module 18251 (VoicePanelCardView)
+// Module 18255 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,16 +13,16 @@ import CallConstants from "CallConstants" /* 5214 */;
 import spring from "spring" /* 5478 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7039 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12912 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12917 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12918 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18183 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 18252 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10686 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18187 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 18256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12914 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp2;
 let tmp3;
 const ReanimatedRexport = tmp2(4945);
 const react3 = tmp(5430);
-const roundToNearestPixelDefault = tmp3(11892);
+const roundToNearestPixelDefault = tmp3(11911);
 function getCardKey(type) {
   return "" + type.type + "-" + type.id;
 }
@@ -367,7 +367,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaz
   let tmp = dependencyMap;
   const obj = mode(576);
   const cResult = obj.c(6);
-  const obj2 = mode(18184);
+  const obj2 = mode(18188);
   mode = obj2.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   const tmp3 = VoicePanelPIPModes;
@@ -424,7 +424,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaz
 }) : (function useLazyContentFreeze() {
   let closure_2;
   let mode;
-  const obj = mode(18184);
+  const obj = mode(18188);
   mode = obj.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
@@ -518,9 +518,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(11);
   let obj2 = react;
   viewableChunks = viewableChunks.viewableChunks;
-  channelId = react.useContext(stateFromStoresArray(12913)).channelId;
+  channelId = react.useContext(stateFromStoresArray(10679)).channelId;
   const tmp4 = closure_23(viewableChunks);
-  const obj3 = channelId(18281);
+  const obj3 = channelId(18285);
   const chunkedParticipants = obj3.useChunkedParticipants(channelId, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];

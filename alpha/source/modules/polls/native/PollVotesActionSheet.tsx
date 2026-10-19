@@ -1,10 +1,10 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 12063
+// Function ID: 12064
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5181, 6243, 2068, 5532, 1392, 21, 5191, 587, 558, 576, 1417, 504, 7098, 1128, 5187, 6462, 8165, 6612, 12045, 7130, 12051, 9883, 8168, 5509, 5057, 6457, 1202, 9038, 8577, 4945, 5192, 7091, 5127, 5065, 12052, 12053, 5128, 7155, 5155, 7118, 2]
+// Dependencies: [32, 5, 19, 17, 5181, 6243, 2068, 5532, 1392, 21, 5191, 587, 558, 576, 1417, 504, 7098, 1128, 5187, 6462, 8165, 6612, 12064, 7130, 12070, 9883, 8168, 5509, 5057, 6457, 1202, 9038, 8577, 4945, 5192, 7091, 5127, 5065, 12071, 12072, 5128, 7155, 5155, 7118, 2]
 // Exports: default
 
-// Module 12044 (PollVotesActionSheet)
+// Module 12063 (PollVotesActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -19,7 +19,7 @@ import Pressables from "Pressables" /* 6462 */;
 import EmojiDefault from "Emoji" /* 7098 */;
 import PollsUtils from "PollsUtils" /* 8165 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12045 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -515,7 +515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -524,7 +524,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   } else {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -532,7 +532,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   if (cResult[3] !== selectedAnswerId) {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -543,7 +543,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   } else {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -552,7 +552,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -561,7 +561,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   } else {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -571,14 +571,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   if (null == message.poll) {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
   } else {
     class T {
       constructor() {
-        timerId = setTimeout(closure_4(function() { /* body not rendered: F146026 */ }), 0);
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F146137 */ }), 0);
         return;
       }
     }
@@ -803,9 +803,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(12052);
+    tmp5Result = tmp5(12071);
   } else {
-    tmp5Result = tmp5(12053);
+    tmp5Result = tmp5(12072);
   }
   if (cResult[0] === tmp4.noResultsImage) {
     let tmp8;
@@ -895,9 +895,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
   const tmp5 = syncedClientThemes;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12052);
+    tmp2Result = tmp2(12071);
   } else {
-    tmp2Result = tmp2(12053);
+    tmp2Result = tmp2(12072);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
